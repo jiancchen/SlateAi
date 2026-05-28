@@ -1,7 +1,115 @@
 import { createSportsMatchModel } from './sports-model.js'
+import { rawGames, bullpenChainByTeam } from './day-2026-05-28-data.js'
+import {
+  standingsContextByTeam,
+  teamOffenseContextByTeam,
+  teamBullpenContextByTeam,
+  teamSavantContextByTeam
+} from './mlb-context-2026-05-28.js'
+import { lineupBoardsByGameId, lineupMatchupContextByGameId } from './day-2026-05-28-lineups.js'
+import { parkContextByHomeTeam } from './day-2026-05-13-mlb-data.js'
 import tennisClayContext from './day-2026-05-28-tennis-clay-context.generated.json' with { type: 'json' }
 import tennisOpponentQualityContext from './day-2026-05-28-tennis-opponent-quality.generated.json' with { type: 'json' }
 import tennisWarehouseContext from './day-2026-05-28-tennis-warehouse-context.generated.json' with { type: 'json' }
+
+const mlbOddsProvider = 'Official MLB data + ScoresAndOdds live board'
+
+const mlbMarket = (label, book, value) => ({ label, book, value })
+
+const buildMlbBoardOdds = ({ spread = '', total = '', moneyline = '', provider = mlbOddsProvider }) => ({
+  participantOrder: [0, 1],
+  markets: [
+    ...(spread ? [mlbMarket('Spread', provider, spread)] : []),
+    ...(total ? [mlbMarket('Total', provider, total)] : []),
+    ...(moneyline ? [mlbMarket('Moneyline', provider, moneyline)] : [])
+  ],
+  note: 'Board snapshot plus model context.',
+  provider
+})
+
+const formatPitcherMetric = (value, suffix = '') => {
+  const parsed = Number(value)
+  return Number.isFinite(parsed) ? `${parsed.toFixed(2)}${suffix}` : `${value || '-'}${suffix}`
+}
+
+const pitcherDetail = (pitcher) =>
+  `${pitcher.fullName} (${pitcher.pitchHand || '?'}HP) | ${pitcher.wins}-${pitcher.losses} | ${pitcher.era} ERA | ${pitcher.strikeOuts} SO | ${formatPitcherMetric(pitcher.whip, ' WHIP')} | ${pitcher.inningsPitched} IP`
+
+const getWindowLabel = (startMinutes = 0) => {
+  if (startMinutes < 720) return 'Morning MLB Board'
+  if (startMinutes < 900) return 'Afternoon MLB Board'
+  return 'Evening MLB Board'
+}
+
+const buildMlbGame = (raw, instanceIndex = 0) => {
+  const uniqueId = instanceIndex > 0 ? `${raw.id}-${raw.gamePk}` : raw.id
+  const factors = [
+    `Current board: ${raw.moneyline} | ${raw.total} | ${raw.spread}.`,
+    `${raw.awayPitcher.fullName} vs ${raw.homePitcher.fullName}.`
+  ]
+
+  return createSportsMatchModel(
+    {
+      id: uniqueId,
+      gamePk: Number.isFinite(Number(raw.gamePk)) ? Number(raw.gamePk) : null,
+      league: 'MLB',
+      title: `${raw.away} @ ${raw.home}`,
+      start: raw.start,
+      startMinutes: raw.startMinutes,
+      stage: getWindowLabel(raw.startMinutes),
+      spotlight: false,
+      tags: ['MLB'],
+      matchup: [
+        { side: 'Away', name: raw.away, detail: pitcherDetail(raw.awayPitcher) },
+        { side: 'Home', name: raw.home, detail: pitcherDetail(raw.homePitcher) }
+      ],
+      summary: `${raw.away} @ ${raw.home} with ${raw.awayPitcher.fullName} against ${raw.homePitcher.fullName}.`,
+      lean: 'Lean on the modeled side, but respect the split between starter phase and late-game hold.',
+      factors,
+      swingFactor: 'Swing factor: whether the starter edge survives the bridge innings.',
+      teamContext: {
+        away: standingsContextByTeam[raw.away] ?? null,
+        home: standingsContextByTeam[raw.home] ?? null
+      },
+      parkContext: parkContextByHomeTeam[raw.home] ?? null,
+      offenseContext: {
+        away: teamOffenseContextByTeam[raw.away] ?? null,
+        home: teamOffenseContextByTeam[raw.home] ?? null
+      },
+      bullpenContext: {
+        away: teamBullpenContextByTeam[raw.away] ?? null,
+        home: teamBullpenContextByTeam[raw.home] ?? null
+      },
+      bullpenChainContext: {
+        away: bullpenChainByTeam[raw.away] ?? null,
+        home: bullpenChainByTeam[raw.home] ?? null
+      },
+      savantContext: {
+        away: teamSavantContextByTeam[raw.away] ?? null,
+        home: teamSavantContextByTeam[raw.home] ?? null
+      },
+      storyContext: {
+        away: null,
+        home: null
+      },
+      tierTwoContext: raw.tierTwoContext ?? null,
+      tierThreeContext: raw.tierThreeContext ?? null,
+      stateContext: raw.stateContext ?? null,
+      lineupContext: lineupMatchupContextByGameId[raw.id] ?? null,
+      lineupBoard: lineupBoardsByGameId[raw.id] ?? null,
+      starterContext: { away: raw.awayPitcher, home: raw.homePitcher },
+      pitcherSourceNote: raw.pitcherSourceNote || '',
+      odds: buildMlbBoardOdds({
+        spread: raw.spread,
+        total: raw.total,
+        moneyline: raw.moneyline
+      })
+    },
+    {
+      structuredAnalysis: true
+    }
+  )
+}
 
 const rawTennisGames = [
   {
@@ -114,6 +222,9 @@ const rawTennisGames = [
         "impliedPct": 76.7,
         "edgePct": -12.7,
         "evPer100": -16.6,
+        "netEvPer100": -18.6,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -126,6 +237,9 @@ const rawTennisGames = [
         "impliedPct": 51.9,
         "edgePct": 2.1,
         "evPer100": 4,
+        "netEvPer100": 2,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
         "valueGrade": "Near fair",
         "betGrade": false
       },
@@ -338,8 +452,8 @@ const rawTennisGames = [
     "court": "Court Simonne-Mathieu",
     "round": "Round 2",
     "pickName": "Naomi Osaka",
-    "confidence": 55,
-    "volatility": 53,
+    "confidence": 57,
+    "volatility": 51,
     "tags": [
       "Clay",
       "Roland Garros",
@@ -349,12 +463,12 @@ const rawTennisGames = [
       "WTA volatility tax",
       "Controlled volatility"
     ],
-    "reason": "Donna Vekic has the recent service-hold edge 84% to 70%, so Naomi Osaka needs the rank/form edge to show up on return games. Opponent-adjusted recent form is basically even: Naomi Osaka 66, Donna Vekic 65. Lean, not a chase.",
+    "reason": "Recent service hold is close: Naomi Osaka 72%, Donna Vekic 75%. Opponent-adjusted recent form is basically even: Naomi Osaka 66, Donna Vekic 65. Lean, not a chase.",
     "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
       "edgeType": "No clear weakness edge",
       "target": "Both sides",
-      "scoreGap": -2,
+      "scoreGap": 2,
       "attackingSide": null,
       "vulnerableSide": null,
       "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
@@ -363,21 +477,21 @@ const rawTennisGames = [
       "totalRead": "No total edge without posted number and first-set hold data.",
       "pick": {
         "name": "Naomi Osaka",
-        "serviceHoldPct": 70,
-        "firstServeWonPct": 66,
-        "secondServeWonPct": 54,
+        "serviceHoldPct": 72,
+        "firstServeWonPct": 69,
+        "secondServeWonPct": 52,
         "firstServePct": 57,
-        "avgAces": 3.6,
-        "avgDoubleFaults": 3,
+        "avgAces": 5.2,
+        "avgDoubleFaults": 2.7,
         "avgWinners": 27,
         "avgUnforcedErrors": 34,
-        "avgBreakPointsFaced": 7.6,
-        "returnPointsWonPct": 44,
-        "servicePointsWonPct": 61,
+        "avgBreakPointsFaced": 7,
+        "returnPointsWonPct": 42,
+        "servicePointsWonPct": 62,
         "weakServeMatches": 2,
         "pressureMatches": 3,
-        "matchesWithStats": 5,
-        "weaknessScore": 8,
+        "matchesWithStats": 6,
+        "weaknessScore": 7,
         "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
           "negative winner/error balance (27.0 winners, 34.0 unforced)"
@@ -387,29 +501,26 @@ const rawTennisGames = [
       },
       "opponent": {
         "name": "Donna Vekic",
-        "serviceHoldPct": 84,
-        "firstServeWonPct": 71,
-        "secondServeWonPct": 59,
+        "serviceHoldPct": 75,
+        "firstServeWonPct": 68,
+        "secondServeWonPct": 50,
         "firstServePct": 61,
-        "avgAces": 3.5,
+        "avgAces": 3,
         "avgDoubleFaults": 4,
         "avgWinners": 27,
         "avgUnforcedErrors": 24,
-        "avgBreakPointsFaced": 7,
-        "returnPointsWonPct": 44,
-        "servicePointsWonPct": 66,
-        "weakServeMatches": 1,
+        "avgBreakPointsFaced": 7.3,
+        "returnPointsWonPct": 40,
+        "servicePointsWonPct": 61,
+        "weakServeMatches": 2,
         "pressureMatches": 2,
-        "matchesWithStats": 2,
-        "weaknessScore": 6,
+        "matchesWithStats": 3,
+        "weaknessScore": 9,
         "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
           "double-fault pressure (4.0 avg)"
         ],
         "strengths": [
-          "protects serve well (84% hold)",
-          "wins enough first-serve points (71%)",
-          "second serve holds up (59%)",
           "positive winner/error balance (27.0 winners, 24.0 unforced)"
         ],
         "gameFlowRead": "Donna Vekic can drop points quickly through double-fault pressure (4.0 avg)."
@@ -418,14 +529,14 @@ const rawTennisGames = [
     "setWinProjections": [
       {
         "name": "Donna Vekic",
-        "confidence": 61,
-        "modelPct": 45,
+        "confidence": 58,
+        "modelPct": 43,
         "label": "Needs early hold pressure"
       },
       {
         "name": "Naomi Osaka",
-        "confidence": 71,
-        "modelPct": 55,
+        "confidence": 72,
+        "modelPct": 57,
         "label": "Live to win a set"
       }
     ],
@@ -435,10 +546,13 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Naomi Osaka",
         "americanOdds": -315,
-        "modelPct": 55,
+        "modelPct": 57,
         "impliedPct": 75.9,
-        "edgePct": -20.9,
-        "evPer100": -27.5,
+        "edgePct": -18.9,
+        "evPer100": -24.9,
+        "netEvPer100": -26.9,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -447,11 +561,14 @@ const rawTennisGames = [
         "selection": "Naomi Osaka",
         "line": -4.5,
         "americanOdds": -110,
-        "modelPct": 49,
+        "modelPct": 51,
         "impliedPct": 52.4,
-        "edgePct": -3.4,
-        "evPer100": -6.5,
-        "valueGrade": "Negative EV",
+        "edgePct": -1.4,
+        "evPer100": -2.6,
+        "netEvPer100": -4.6,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Near fair",
         "betGrade": false
       },
       "total": {
@@ -463,8 +580,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Donna Vekic",
-          "confidence": 61,
-          "modelPct": 45,
+          "confidence": 58,
+          "modelPct": 43,
           "label": "Needs early hold pressure",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -472,8 +589,8 @@ const rawTennisGames = [
         },
         {
           "name": "Naomi Osaka",
-          "confidence": 71,
-          "modelPct": 55,
+          "confidence": 72,
+          "modelPct": 57,
           "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -494,8 +611,8 @@ const rawTennisGames = [
           "americanLabel": "+250",
           "impliedPct": 28.6,
           "decimalOdds": 3.5,
-          "modelPct": 45,
-          "edgePct": 16.4,
+          "modelPct": 43,
+          "edgePct": 14.4,
           "priceBand": "Underdog",
           "grossProfitPct": 250,
           "grossPayoutMultiple": 3.5,
@@ -508,8 +625,8 @@ const rawTennisGames = [
           "americanLabel": "-315",
           "impliedPct": 75.9,
           "decimalOdds": 1.317,
-          "modelPct": 55,
-          "edgePct": -20.9,
+          "modelPct": 57,
+          "edgePct": -18.9,
           "priceBand": "Low-payout favorite",
           "grossProfitPct": 31.7,
           "grossPayoutMultiple": 1.317,
@@ -523,8 +640,8 @@ const rawTennisGames = [
         "americanLabel": "-315",
         "impliedPct": 75.9,
         "decimalOdds": 1.317,
-        "modelPct": 55,
-        "edgePct": -20.9,
+        "modelPct": 57,
+        "edgePct": -18.9,
         "priceBand": "Low-payout favorite",
         "grossProfitPct": 31.7,
         "grossPayoutMultiple": 1.317,
@@ -559,7 +676,7 @@ const rawTennisGames = [
       "totalLean": "Total needs live serve data before entry",
       "mlValue": "Donna Vekic +250 / Naomi Osaka -315",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
-      "noVigNote": "Model 55% vs FanDuel implied 75.9% (-20.9 pts)."
+      "noVigNote": "Model 57% vs FanDuel implied 75.9% (-18.9 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Donna-Vekic-Vs-Naomi-Osaka/",
     "players": [
@@ -578,33 +695,30 @@ const rawTennisGames = [
           "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
         },
         "qualityName": "Donna Vekic",
-        "profile": "Live rank #72 | CRO | age 29.9 | 2026 clay 12-4, 75% | adj form 65 | hold 84%",
-        "modelPct": 45,
+        "profile": "Live rank #72 | CRO | age 29.9 | 2026 clay 12-4, 75% | adj form 65 | hold 75%",
+        "modelPct": 43,
         "weakness": {
           "name": "Donna Vekic",
-          "serviceHoldPct": 84,
-          "firstServeWonPct": 71,
-          "secondServeWonPct": 59,
+          "serviceHoldPct": 75,
+          "firstServeWonPct": 68,
+          "secondServeWonPct": 50,
           "firstServePct": 61,
-          "avgAces": 3.5,
+          "avgAces": 3,
           "avgDoubleFaults": 4,
           "avgWinners": 27,
           "avgUnforcedErrors": 24,
-          "avgBreakPointsFaced": 7,
-          "returnPointsWonPct": 44,
-          "servicePointsWonPct": 66,
-          "weakServeMatches": 1,
+          "avgBreakPointsFaced": 7.3,
+          "returnPointsWonPct": 40,
+          "servicePointsWonPct": 61,
+          "weakServeMatches": 2,
           "pressureMatches": 2,
-          "matchesWithStats": 2,
-          "weaknessScore": 6,
+          "matchesWithStats": 3,
+          "weaknessScore": 9,
           "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
             "double-fault pressure (4.0 avg)"
           ],
           "strengths": [
-            "protects serve well (84% hold)",
-            "wins enough first-serve points (71%)",
-            "second serve holds up (59%)",
             "positive winner/error balance (27.0 winners, 24.0 unforced)"
           ],
           "gameFlowRead": "Donna Vekic can drop points quickly through double-fault pressure (4.0 avg)."
@@ -625,25 +739,25 @@ const rawTennisGames = [
           "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
         },
         "qualityName": "Naomi Osaka",
-        "profile": "Live rank #16 | JPN | age 28.6 | 2026 clay 5-2, 71% | adj form 66 | hold 70%",
-        "modelPct": 55,
+        "profile": "Live rank #16 | JPN | age 28.6 | 2026 clay 5-2, 71% | adj form 66 | hold 72%",
+        "modelPct": 57,
         "weakness": {
           "name": "Naomi Osaka",
-          "serviceHoldPct": 70,
-          "firstServeWonPct": 66,
-          "secondServeWonPct": 54,
+          "serviceHoldPct": 72,
+          "firstServeWonPct": 69,
+          "secondServeWonPct": 52,
           "firstServePct": 57,
-          "avgAces": 3.6,
-          "avgDoubleFaults": 3,
+          "avgAces": 5.2,
+          "avgDoubleFaults": 2.7,
           "avgWinners": 27,
           "avgUnforcedErrors": 34,
-          "avgBreakPointsFaced": 7.6,
-          "returnPointsWonPct": 44,
-          "servicePointsWonPct": 61,
+          "avgBreakPointsFaced": 7,
+          "returnPointsWonPct": 42,
+          "servicePointsWonPct": 62,
           "weakServeMatches": 2,
           "pressureMatches": 3,
-          "matchesWithStats": 5,
-          "weaknessScore": 8,
+          "matchesWithStats": 6,
+          "weaknessScore": 7,
           "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
             "negative winner/error balance (27.0 winners, 34.0 unforced)"
@@ -767,6 +881,9 @@ const rawTennisGames = [
         "impliedPct": 77.8,
         "edgePct": -17.8,
         "evPer100": -22.9,
+        "netEvPer100": -24.9,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -779,6 +896,9 @@ const rawTennisGames = [
         "impliedPct": 55.8,
         "edgePct": -7.8,
         "evPer100": -13.9,
+        "netEvPer100": -15.9,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -791,6 +911,9 @@ const rawTennisGames = [
         "impliedPct": 52.4,
         "edgePct": -0.4,
         "evPer100": -0.7,
+        "netEvPer100": -2.7,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
         "valueGrade": "Near fair",
         "betGrade": false
       },
@@ -1092,6 +1215,9 @@ const rawTennisGames = [
         "impliedPct": 77.8,
         "edgePct": -16.8,
         "evPer100": -21.6,
+        "netEvPer100": -23.6,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -1104,6 +1230,9 @@ const rawTennisGames = [
         "impliedPct": 54.1,
         "edgePct": 0.9,
         "evPer100": 1.6,
+        "netEvPer100": -0.4,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
         "valueGrade": "Near fair",
         "betGrade": false
       },
@@ -1410,6 +1539,9 @@ const rawTennisGames = [
         "impliedPct": 55,
         "edgePct": -5,
         "evPer100": -9,
+        "netEvPer100": -11,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -1422,6 +1554,9 @@ const rawTennisGames = [
         "impliedPct": 54.5,
         "edgePct": -6.5,
         "evPer100": -12,
+        "netEvPer100": -14,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -1434,6 +1569,9 @@ const rawTennisGames = [
         "impliedPct": 54.5,
         "edgePct": -12.5,
         "evPer100": -23,
+        "netEvPer100": -25,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -1735,6 +1873,9 @@ const rawTennisGames = [
         "impliedPct": 40,
         "edgePct": 10,
         "evPer100": 25,
+        "netEvPer100": 23,
+        "feePer100": 2,
+        "valueIssue": "Validated ML candidate",
         "valueGrade": "Bet-grade value",
         "betGrade": true
       },
@@ -1747,6 +1888,9 @@ const rawTennisGames = [
         "impliedPct": 55,
         "edgePct": -11,
         "evPer100": -19.9,
+        "netEvPer100": -21.9,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -1951,8 +2095,8 @@ const rawTennisGames = [
     "court": "Court 10",
     "round": "Round 2",
     "pickName": "Oleksandra Oliynykova",
-    "confidence": 58,
-    "volatility": 50,
+    "confidence": 55,
+    "volatility": 54,
     "tags": [
       "Clay",
       "Roland Garros",
@@ -1962,16 +2106,16 @@ const rawTennisGames = [
       "WTA volatility tax",
       "Controlled volatility"
     ],
-    "reason": "Oleksandra Oliynykova has the recent service-hold edge 62% to 46%. Oleksandra Oliynykova grades 13 points better on opponent-adjusted recent form. Lean, not a chase.",
+    "reason": "Oleksandra Oliynykova has the recent service-hold edge 62% to 56%. Oleksandra Oliynykova grades 13 points better on opponent-adjusted recent form. Lean, not a chase.",
     "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Weakness edge",
-      "target": "Kimberly Birrell",
-      "scoreGap": 25,
-      "attackingSide": "Oleksandra Oliynykova",
-      "vulnerableSide": "Kimberly Birrell",
-      "gameFlow": "Oleksandra Oliynykova has a real path if Kimberly Birrell's first two service games show the same weakness: low recent hold rate (46%); first-serve points won below comfort (52%).",
-      "liveTrigger": "Look for Kimberly Birrell facing break points or second-serve pressure before 3-3.",
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 7,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
       "spreadRead": "Spread needs the posted number before grading.",
       "totalRead": "Weak service profile points to breaks; be careful with low unders.",
       "pick": {
@@ -2006,46 +2150,46 @@ const rawTennisGames = [
       },
       "opponent": {
         "name": "Kimberly Birrell",
-        "serviceHoldPct": 46,
-        "firstServeWonPct": 52,
-        "secondServeWonPct": 38,
-        "firstServePct": 69,
-        "avgAces": 1.3,
-        "avgDoubleFaults": 3.7,
+        "serviceHoldPct": 56,
+        "firstServeWonPct": 59,
+        "secondServeWonPct": 40,
+        "firstServePct": 66,
+        "avgAces": 2.2,
+        "avgDoubleFaults": 3.2,
         "avgWinners": 24,
         "avgUnforcedErrors": 28,
-        "avgBreakPointsFaced": 9.3,
-        "returnPointsWonPct": 46,
-        "servicePointsWonPct": 48,
+        "avgBreakPointsFaced": 9.2,
+        "returnPointsWonPct": 48,
+        "servicePointsWonPct": 52,
         "weakServeMatches": 3,
         "pressureMatches": 6,
-        "matchesWithStats": 3,
-        "weaknessScore": 52,
+        "matchesWithStats": 5,
+        "weaknessScore": 34,
         "firstGameComfort": "Fragile opening-service profile",
         "liabilities": [
-          "low recent hold rate (46%)",
-          "first-serve points won below comfort (52%)",
-          "second-serve points won are attackable (38%)",
-          "faces too many break points (9.3 avg)",
+          "low recent hold rate (56%)",
+          "first-serve points won below comfort (59%)",
+          "second-serve points won are attackable (40%)",
+          "faces too many break points (9.2 avg)",
           "3 recent matches with serve instability"
         ],
         "strengths": [
-          "creates return pressure (46% return points won)"
+          "creates return pressure (48% return points won)"
         ],
-        "gameFlowRead": "Kimberly Birrell can drop points quickly through low recent hold rate (46%) and first-serve points won below comfort (52%)."
+        "gameFlowRead": "Kimberly Birrell can drop points quickly through low recent hold rate (56%) and first-serve points won below comfort (59%)."
       }
     },
     "setWinProjections": [
       {
         "name": "Oleksandra Oliynykova",
-        "confidence": 70,
-        "modelPct": 58,
+        "confidence": 69,
+        "modelPct": 55,
         "label": "Live to win a set"
       },
       {
         "name": "Kimberly Birrell",
-        "confidence": 52,
-        "modelPct": 42,
+        "confidence": 57,
+        "modelPct": 45,
         "label": "Needs early hold pressure"
       }
     ],
@@ -2055,10 +2199,13 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Oleksandra Oliynykova",
         "americanOdds": -225,
-        "modelPct": 58,
+        "modelPct": 55,
         "impliedPct": 69.2,
-        "edgePct": -11.2,
-        "evPer100": -16.2,
+        "edgePct": -14.2,
+        "evPer100": -20.6,
+        "netEvPer100": -22.6,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -2067,11 +2214,14 @@ const rawTennisGames = [
         "selection": "Oleksandra Oliynykova",
         "line": -3.5,
         "americanOdds": -126,
-        "modelPct": 56,
+        "modelPct": 49,
         "impliedPct": 55.8,
-        "edgePct": 0.2,
-        "evPer100": 0.4,
-        "valueGrade": "Near fair",
+        "edgePct": -6.8,
+        "evPer100": -12.1,
+        "netEvPer100": -14.1,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Negative EV",
         "betGrade": false
       },
       "total": {
@@ -2079,18 +2229,21 @@ const rawTennisGames = [
         "selection": "Over",
         "line": 21.5,
         "americanOdds": -110,
-        "modelPct": 50,
+        "modelPct": 47,
         "impliedPct": 52.4,
-        "edgePct": -2.4,
-        "evPer100": -4.5,
+        "edgePct": -5.4,
+        "evPer100": -10.3,
+        "netEvPer100": -12.3,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
       "setWin": [
         {
           "name": "Oleksandra Oliynykova",
-          "confidence": 70,
-          "modelPct": 58,
+          "confidence": 69,
+          "modelPct": 55,
           "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -2098,8 +2251,8 @@ const rawTennisGames = [
         },
         {
           "name": "Kimberly Birrell",
-          "confidence": 52,
-          "modelPct": 42,
+          "confidence": 57,
+          "modelPct": 45,
           "label": "Needs early hold pressure",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -2120,8 +2273,8 @@ const rawTennisGames = [
           "americanLabel": "-225",
           "impliedPct": 69.2,
           "decimalOdds": 1.444,
-          "modelPct": 58,
-          "edgePct": -11.2,
+          "modelPct": 55,
+          "edgePct": -14.2,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 44.4,
           "grossPayoutMultiple": 1.444,
@@ -2134,8 +2287,8 @@ const rawTennisGames = [
           "americanLabel": "+184",
           "impliedPct": 35.2,
           "decimalOdds": 2.84,
-          "modelPct": 42,
-          "edgePct": 6.8,
+          "modelPct": 45,
+          "edgePct": 9.8,
           "priceBand": "Underdog",
           "grossProfitPct": 184,
           "grossPayoutMultiple": 2.84,
@@ -2149,8 +2302,8 @@ const rawTennisGames = [
         "americanLabel": "-225",
         "impliedPct": 69.2,
         "decimalOdds": 1.444,
-        "modelPct": 58,
-        "edgePct": -11.2,
+        "modelPct": 55,
+        "edgePct": -14.2,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 44.4,
         "grossPayoutMultiple": 1.444,
@@ -2181,11 +2334,11 @@ const rawTennisGames = [
       "priceAction": "FanDuel price is richer than the model; pass ML unless live state improves.",
       "spreadValue": "Oleksandra Oliynykova -3.5 (-126)",
       "totalValue": "21.5 games: Over -110 / Under -122",
-      "spreadLean": "Oleksandra Oliynykova spread is playable only if early return pressure shows",
+      "spreadLean": "Spread is number-dependent; verify first service cycle",
       "totalLean": "Over or pass if early service games are loose",
       "mlValue": "Oleksandra Oliynykova -225 / Kimberly Birrell +184",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. FanDuel price is richer than the model; pass ML unless live state improves.",
-      "noVigNote": "Model 58% vs FanDuel implied 69.2% (-11.2 pts)."
+      "noVigNote": "Model 55% vs FanDuel implied 69.2% (-14.2 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Oleksandra-Oliynykova-Vs-Kimberly-Birrell/",
     "players": [
@@ -2205,7 +2358,7 @@ const rawTennisGames = [
         },
         "qualityName": "Oleksandra Oliynykova",
         "profile": "Live rank #54 | UKR | age 25.3 | 2026 clay 13-7, 65% | adj form 75 | hold 62%",
-        "modelPct": 58,
+        "modelPct": 55,
         "weakness": {
           "name": "Oleksandra Oliynykova",
           "serviceHoldPct": 62,
@@ -2252,37 +2405,37 @@ const rawTennisGames = [
           "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
         },
         "qualityName": "Kimberly Birrell",
-        "profile": "Live rank #70 | AUS | age 28 | 2026 clay 1-3, 25% | adj form 62 | hold 46%",
-        "modelPct": 42,
+        "profile": "Live rank #70 | AUS | age 28 | 2026 clay 1-3, 25% | adj form 62 | hold 56%",
+        "modelPct": 45,
         "weakness": {
           "name": "Kimberly Birrell",
-          "serviceHoldPct": 46,
-          "firstServeWonPct": 52,
-          "secondServeWonPct": 38,
-          "firstServePct": 69,
-          "avgAces": 1.3,
-          "avgDoubleFaults": 3.7,
+          "serviceHoldPct": 56,
+          "firstServeWonPct": 59,
+          "secondServeWonPct": 40,
+          "firstServePct": 66,
+          "avgAces": 2.2,
+          "avgDoubleFaults": 3.2,
           "avgWinners": 24,
           "avgUnforcedErrors": 28,
-          "avgBreakPointsFaced": 9.3,
-          "returnPointsWonPct": 46,
-          "servicePointsWonPct": 48,
+          "avgBreakPointsFaced": 9.2,
+          "returnPointsWonPct": 48,
+          "servicePointsWonPct": 52,
           "weakServeMatches": 3,
           "pressureMatches": 6,
-          "matchesWithStats": 3,
-          "weaknessScore": 52,
+          "matchesWithStats": 5,
+          "weaknessScore": 34,
           "firstGameComfort": "Fragile opening-service profile",
           "liabilities": [
-            "low recent hold rate (46%)",
-            "first-serve points won below comfort (52%)",
-            "second-serve points won are attackable (38%)",
-            "faces too many break points (9.3 avg)",
+            "low recent hold rate (56%)",
+            "first-serve points won below comfort (59%)",
+            "second-serve points won are attackable (40%)",
+            "faces too many break points (9.2 avg)",
             "3 recent matches with serve instability"
           ],
           "strengths": [
-            "creates return pressure (46% return points won)"
+            "creates return pressure (48% return points won)"
           ],
-          "gameFlowRead": "Kimberly Birrell can drop points quickly through low recent hold rate (46%) and first-serve points won below comfort (52%)."
+          "gameFlowRead": "Kimberly Birrell can drop points quickly through low recent hold rate (56%) and first-serve points won below comfort (59%)."
         }
       }
     ]
@@ -2297,8 +2450,8 @@ const rawTennisGames = [
     "court": "Court 13",
     "round": "Round 2",
     "pickName": "Adam Walton",
-    "confidence": 55,
-    "volatility": 45,
+    "confidence": 56,
+    "volatility": 44,
     "tags": [
       "Clay",
       "Roland Garros",
@@ -2308,12 +2461,12 @@ const rawTennisGames = [
       "Men more stable",
       "Controlled volatility"
     ],
-    "reason": "Adam Walton has the recent service-hold edge 74% to 68%. Adam Walton grades 52 points better on opponent-adjusted recent form. Lean, not a chase.",
+    "reason": "Adam Walton has the recent service-hold edge 74% to 67%. Adam Walton grades 52 points better on opponent-adjusted recent form. Lean, not a chase.",
     "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
       "edgeType": "Weakness warning",
       "target": "Adam Walton",
-      "scoreGap": -17,
+      "scoreGap": -16,
       "attackingSide": null,
       "vulnerableSide": "Adam Walton",
       "gameFlow": "Adam Walton is the model side, but the fragile profile is on our pick: second-serve points won are attackable (43%); negative winner/error balance (34.0 winners, 46.0 unforced). Avoid laying a bad price until early holds are confirmed.",
@@ -2348,40 +2501,41 @@ const rawTennisGames = [
       },
       "opponent": {
         "name": "Zachary Svajda",
-        "serviceHoldPct": 68,
+        "serviceHoldPct": 67,
         "firstServeWonPct": 69,
-        "secondServeWonPct": 45,
-        "firstServePct": 62,
-        "avgAces": 6,
-        "avgDoubleFaults": 2,
-        "avgWinners": 25.8,
-        "avgUnforcedErrors": 27.6,
-        "avgBreakPointsFaced": 7.2,
-        "returnPointsWonPct": 25,
+        "secondServeWonPct": 48,
+        "firstServePct": 60,
+        "avgAces": 5.7,
+        "avgDoubleFaults": 1.9,
+        "avgWinners": 26,
+        "avgUnforcedErrors": 30,
+        "avgBreakPointsFaced": 6.6,
+        "returnPointsWonPct": 26,
         "servicePointsWonPct": 60,
-        "weakServeMatches": 2,
+        "weakServeMatches": 3,
         "pressureMatches": 5,
-        "matchesWithStats": 5,
-        "weaknessScore": 10,
+        "matchesWithStats": 7,
+        "weaknessScore": 11,
         "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "limited return pressure (25% return points won)"
+          "3 recent matches with serve instability",
+          "limited return pressure (26% return points won)"
         ],
         "strengths": [],
-        "gameFlowRead": "Zachary Svajda can drop points quickly through limited return pressure (25% return points won)."
+        "gameFlowRead": "Zachary Svajda can drop points quickly through 3 recent matches with serve instability and limited return pressure (26% return points won)."
       }
     },
     "setWinProjections": [
       {
         "name": "Zachary Svajda",
-        "confidence": 73,
-        "modelPct": 45,
+        "confidence": 72,
+        "modelPct": 44,
         "label": "Live to win a set"
       },
       {
         "name": "Adam Walton",
-        "confidence": 82,
-        "modelPct": 55,
+        "confidence": 83,
+        "modelPct": 56,
         "label": "Strong set-win path"
       }
     ],
@@ -2391,11 +2545,14 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Adam Walton",
         "americanOdds": 100,
-        "modelPct": 55,
+        "modelPct": 56,
         "impliedPct": 50,
-        "edgePct": 5,
-        "evPer100": 10,
-        "valueGrade": "Thin value",
+        "edgePct": 6,
+        "evPer100": 12,
+        "netEvPer100": 10,
+        "feePer100": 2,
+        "valueIssue": "Raw ML edge only",
+        "valueGrade": "Raw ML edge only",
         "betGrade": false
       },
       "spread": {
@@ -2403,10 +2560,13 @@ const rawTennisGames = [
         "selection": "Adam Walton",
         "line": 0.5,
         "americanOdds": -112,
-        "modelPct": 43,
+        "modelPct": 44,
         "impliedPct": 52.8,
-        "edgePct": -9.8,
-        "evPer100": -18.6,
+        "edgePct": -8.8,
+        "evPer100": -16.7,
+        "netEvPer100": -18.7,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -2415,18 +2575,21 @@ const rawTennisGames = [
         "selection": "Over",
         "line": 38.5,
         "americanOdds": -118,
-        "modelPct": 47,
+        "modelPct": 48,
         "impliedPct": 54.1,
-        "edgePct": -7.1,
-        "evPer100": -13.2,
+        "edgePct": -6.1,
+        "evPer100": -11.3,
+        "netEvPer100": -13.3,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
       "setWin": [
         {
           "name": "Zachary Svajda",
-          "confidence": 73,
-          "modelPct": 45,
+          "confidence": 72,
+          "modelPct": 44,
           "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -2434,8 +2597,8 @@ const rawTennisGames = [
         },
         {
           "name": "Adam Walton",
-          "confidence": 82,
-          "modelPct": 55,
+          "confidence": 83,
+          "modelPct": 56,
           "label": "Strong set-win path",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -2456,8 +2619,8 @@ const rawTennisGames = [
           "americanLabel": "-120",
           "impliedPct": 54.5,
           "decimalOdds": 1.833,
-          "modelPct": 45,
-          "edgePct": -9.5,
+          "modelPct": 44,
+          "edgePct": -10.5,
           "priceBand": "Coinflip",
           "grossProfitPct": 83.3,
           "grossPayoutMultiple": 1.833,
@@ -2470,8 +2633,8 @@ const rawTennisGames = [
           "americanLabel": "+100",
           "impliedPct": 50,
           "decimalOdds": 2,
-          "modelPct": 55,
-          "edgePct": 5,
+          "modelPct": 56,
+          "edgePct": 6,
           "priceBand": "Coinflip",
           "grossProfitPct": 100,
           "grossPayoutMultiple": 2,
@@ -2485,8 +2648,8 @@ const rawTennisGames = [
         "americanLabel": "+100",
         "impliedPct": 50,
         "decimalOdds": 2,
-        "modelPct": 55,
-        "edgePct": 5,
+        "modelPct": 56,
+        "edgePct": 6,
         "priceBand": "Coinflip",
         "grossProfitPct": 100,
         "grossPayoutMultiple": 2,
@@ -2521,7 +2684,7 @@ const rawTennisGames = [
       "totalLean": "Over or pass if early service games are loose",
       "mlValue": "Zachary Svajda -120 / Adam Walton +100",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. ML is close to fair; derivative or live entry needs to carry the edge.",
-      "noVigNote": "Model 55% vs FanDuel implied 50% (+5 pts)."
+      "noVigNote": "Model 56% vs FanDuel implied 50% (+6 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Zachary-Svajda-Vs-Adam-Walton/",
     "players": [
@@ -2540,31 +2703,32 @@ const rawTennisGames = [
           "liveRankSource": "https://live-tennis.eu/en/atp-live-ranking browser snapshot"
         },
         "qualityName": "Zachary Svajda",
-        "profile": "Live rank #80 | USA | age 23.4 | 2026 clay 2-5, 29% | adj form 44 | hold 68%",
-        "modelPct": 45,
+        "profile": "Live rank #80 | USA | age 23.4 | 2026 clay 2-5, 29% | adj form 44 | hold 67%",
+        "modelPct": 44,
         "weakness": {
           "name": "Zachary Svajda",
-          "serviceHoldPct": 68,
+          "serviceHoldPct": 67,
           "firstServeWonPct": 69,
-          "secondServeWonPct": 45,
-          "firstServePct": 62,
-          "avgAces": 6,
-          "avgDoubleFaults": 2,
-          "avgWinners": 25.8,
-          "avgUnforcedErrors": 27.6,
-          "avgBreakPointsFaced": 7.2,
-          "returnPointsWonPct": 25,
+          "secondServeWonPct": 48,
+          "firstServePct": 60,
+          "avgAces": 5.7,
+          "avgDoubleFaults": 1.9,
+          "avgWinners": 26,
+          "avgUnforcedErrors": 30,
+          "avgBreakPointsFaced": 6.6,
+          "returnPointsWonPct": 26,
           "servicePointsWonPct": 60,
-          "weakServeMatches": 2,
+          "weakServeMatches": 3,
           "pressureMatches": 5,
-          "matchesWithStats": 5,
-          "weaknessScore": 10,
+          "matchesWithStats": 7,
+          "weaknessScore": 11,
           "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "limited return pressure (25% return points won)"
+            "3 recent matches with serve instability",
+            "limited return pressure (26% return points won)"
           ],
           "strengths": [],
-          "gameFlowRead": "Zachary Svajda can drop points quickly through limited return pressure (25% return points won)."
+          "gameFlowRead": "Zachary Svajda can drop points quickly through 3 recent matches with serve instability and limited return pressure (26% return points won)."
         }
       },
       {
@@ -2583,7 +2747,7 @@ const rawTennisGames = [
         },
         "qualityName": "Adam Walton",
         "profile": "Live rank #99 | AUS | age 27.1 | 2026 clay 2-2, 50% | adj form 96 | hold 74%",
-        "modelPct": 55,
+        "modelPct": 56,
         "weakness": {
           "name": "Adam Walton",
           "serviceHoldPct": 74,
@@ -2726,7 +2890,10 @@ const rawTennisGames = [
         "impliedPct": 99,
         "edgePct": -16,
         "evPer100": -16.2,
-        "valueGrade": "Negative EV",
+        "netEvPer100": -18.2,
+        "feePer100": 2,
+        "valueIssue": "Fee/tax trap",
+        "valueGrade": "Fee/tax trap",
         "betGrade": false
       },
       "spread": {
@@ -2738,8 +2905,11 @@ const rawTennisGames = [
         "impliedPct": 49,
         "edgePct": 24,
         "evPer100": 48.9,
-        "valueGrade": "Bet-grade value",
-        "betGrade": true
+        "netEvPer100": 46.9,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Watch only",
+        "betGrade": false
       },
       "total": {
         "marketType": "Total",
@@ -2750,8 +2920,11 @@ const rawTennisGames = [
         "impliedPct": 56.1,
         "edgePct": 11.9,
         "evPer100": 21.1,
-        "valueGrade": "Bet-grade value",
-        "betGrade": true
+        "netEvPer100": 19.1,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
+        "valueGrade": "Watch only",
+        "betGrade": false
       },
       "setWin": [
         {
@@ -3064,7 +3237,10 @@ const rawTennisGames = [
         "impliedPct": 48.1,
         "edgePct": 3.9,
         "evPer100": 8.2,
-        "valueGrade": "Thin value",
+        "netEvPer100": 6.2,
+        "feePer100": 2,
+        "valueIssue": "Raw ML edge only",
+        "valueGrade": "Raw ML edge only",
         "betGrade": false
       },
       "spread": {
@@ -3076,6 +3252,9 @@ const rawTennisGames = [
         "impliedPct": 54.1,
         "edgePct": -12.1,
         "evPer100": -22.4,
+        "netEvPer100": -24.4,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -3088,6 +3267,9 @@ const rawTennisGames = [
         "impliedPct": 54.5,
         "edgePct": -10.5,
         "evPer100": -19.3,
+        "netEvPer100": -21.3,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -3299,8 +3481,8 @@ const rawTennisGames = [
     "court": "Court Simonne-Mathieu",
     "round": "Round 2",
     "pickName": "Francisco Cerundolo",
-    "confidence": 69,
-    "volatility": 31,
+    "confidence": 68,
+    "volatility": 32,
     "tags": [
       "Clay",
       "Roland Garros",
@@ -3310,12 +3492,12 @@ const rawTennisGames = [
       "Men more stable",
       "Controlled volatility"
     ],
-    "reason": "Francisco Cerundolo has the recent service-hold edge 78% to 63%. Francisco Cerundolo grades 19 points better on opponent-adjusted recent form. Lean, not a chase.",
+    "reason": "Francisco Cerundolo has the recent service-hold edge 74% to 63%. Francisco Cerundolo grades 19 points better on opponent-adjusted recent form. Lean, not a chase.",
     "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
       "edgeType": "No clear weakness edge",
       "target": "Both sides",
-      "scoreGap": 7,
+      "scoreGap": 4,
       "attackingSide": null,
       "vulnerableSide": null,
       "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
@@ -3324,30 +3506,30 @@ const rawTennisGames = [
       "totalRead": "No total edge without posted number and first-set hold data.",
       "pick": {
         "name": "Francisco Cerundolo",
-        "serviceHoldPct": 78,
-        "firstServeWonPct": 69,
-        "secondServeWonPct": 57,
-        "firstServePct": 58,
-        "avgAces": 3.9,
-        "avgDoubleFaults": 2.4,
-        "avgWinners": 23.1,
-        "avgUnforcedErrors": 35.4,
-        "avgBreakPointsFaced": 7,
-        "returnPointsWonPct": 43,
-        "servicePointsWonPct": 64,
-        "weakServeMatches": 2,
+        "serviceHoldPct": 74,
+        "firstServeWonPct": 67,
+        "secondServeWonPct": 55,
+        "firstServePct": 57,
+        "avgAces": 3.5,
+        "avgDoubleFaults": 2.6,
+        "avgWinners": 22.5,
+        "avgUnforcedErrors": 36,
+        "avgBreakPointsFaced": 7.6,
+        "returnPointsWonPct": 42,
+        "servicePointsWonPct": 62,
+        "weakServeMatches": 3,
         "pressureMatches": 5,
-        "matchesWithStats": 7,
-        "weaknessScore": 12,
-        "firstGameComfort": "Comfortable enough if first serve lands",
+        "matchesWithStats": 8,
+        "weaknessScore": 15,
+        "firstGameComfort": "Needs early holds confirmed",
         "liabilities": [
-          "negative winner/error balance (23.1 winners, 35.4 unforced)"
+          "negative winner/error balance (22.5 winners, 36.0 unforced)",
+          "3 recent matches with serve instability"
         ],
         "strengths": [
-          "protects serve well (78% hold)",
-          "second serve holds up (57%)"
+          "second serve holds up (55%)"
         ],
-        "gameFlowRead": "Francisco Cerundolo can drop points quickly through negative winner/error balance (23.1 winners, 35.4 unforced)."
+        "gameFlowRead": "Francisco Cerundolo can drop points quickly through negative winner/error balance (22.5 winners, 36.0 unforced) and 3 recent matches with serve instability."
       },
       "opponent": {
         "name": "Hugo Gaston",
@@ -3378,14 +3560,14 @@ const rawTennisGames = [
     "setWinProjections": [
       {
         "name": "Francisco Cerundolo",
-        "confidence": 88,
-        "modelPct": 69,
+        "confidence": 87,
+        "modelPct": 68,
         "label": "Strong set-win path"
       },
       {
         "name": "Hugo Gaston",
-        "confidence": 58,
-        "modelPct": 31,
+        "confidence": 59,
+        "modelPct": 32,
         "label": "Needs early hold pressure"
       }
     ],
@@ -3395,11 +3577,14 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Francisco Cerundolo",
         "americanOdds": -1000,
-        "modelPct": 69,
+        "modelPct": 68,
         "impliedPct": 90.9,
-        "edgePct": -21.9,
-        "evPer100": -24.1,
-        "valueGrade": "Negative EV",
+        "edgePct": -22.9,
+        "evPer100": -25.2,
+        "netEvPer100": -27.2,
+        "feePer100": 2,
+        "valueIssue": "Favorite tax trap",
+        "valueGrade": "Favorite tax trap",
         "betGrade": false
       },
       "spread": {
@@ -3407,12 +3592,15 @@ const rawTennisGames = [
         "selection": "Francisco Cerundolo",
         "line": -8.5,
         "americanOdds": 100,
-        "modelPct": 59,
+        "modelPct": 58,
         "impliedPct": 50,
-        "edgePct": 9,
-        "evPer100": 18,
-        "valueGrade": "Bet-grade value",
-        "betGrade": true
+        "edgePct": 8,
+        "evPer100": 16,
+        "netEvPer100": 14,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Watch only",
+        "betGrade": false
       },
       "total": {
         "marketType": "Total",
@@ -3423,8 +3611,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Francisco Cerundolo",
-          "confidence": 88,
-          "modelPct": 69,
+          "confidence": 87,
+          "modelPct": 68,
           "label": "Strong set-win path",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -3432,8 +3620,8 @@ const rawTennisGames = [
         },
         {
           "name": "Hugo Gaston",
-          "confidence": 58,
-          "modelPct": 31,
+          "confidence": 59,
+          "modelPct": 32,
           "label": "Needs early hold pressure",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -3454,8 +3642,8 @@ const rawTennisGames = [
           "americanLabel": "-1000",
           "impliedPct": 90.9,
           "decimalOdds": 1.1,
-          "modelPct": 69,
-          "edgePct": -21.9,
+          "modelPct": 68,
+          "edgePct": -22.9,
           "priceBand": "Very expensive favorite",
           "grossProfitPct": 10,
           "grossPayoutMultiple": 1.1,
@@ -3468,8 +3656,8 @@ const rawTennisGames = [
           "americanLabel": "+640",
           "impliedPct": 13.5,
           "decimalOdds": 7.4,
-          "modelPct": 31,
-          "edgePct": 17.5,
+          "modelPct": 32,
+          "edgePct": 18.5,
           "priceBand": "Underdog",
           "grossProfitPct": 640,
           "grossPayoutMultiple": 7.4,
@@ -3483,8 +3671,8 @@ const rawTennisGames = [
         "americanLabel": "-1000",
         "impliedPct": 90.9,
         "decimalOdds": 1.1,
-        "modelPct": 69,
-        "edgePct": -21.9,
+        "modelPct": 68,
+        "edgePct": -22.9,
         "priceBand": "Very expensive favorite",
         "grossProfitPct": 10,
         "grossPayoutMultiple": 1.1,
@@ -3519,7 +3707,7 @@ const rawTennisGames = [
       "totalLean": "Total needs live serve data before entry",
       "mlValue": "Francisco Cerundolo -1000 / Hugo Gaston +640",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. ML payout is tiny; use spread/total or pass unless the number moves.",
-      "noVigNote": "Model 69% vs FanDuel implied 90.9% (-21.9 pts)."
+      "noVigNote": "Model 68% vs FanDuel implied 90.9% (-22.9 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Francisco-Cerundolo-Vs-Hugo-Gaston/",
     "players": [
@@ -3538,34 +3726,34 @@ const rawTennisGames = [
           "liveRankSource": "https://live-tennis.eu/en/atp-live-ranking browser snapshot"
         },
         "qualityName": "Francisco Cerundolo",
-        "profile": "Live rank #23 | ARG | age 27.7 | 2026 clay 14-7, 67% | adj form 69 | hold 78%",
-        "modelPct": 69,
+        "profile": "Live rank #23 | ARG | age 27.7 | 2026 clay 14-7, 67% | adj form 69 | hold 74%",
+        "modelPct": 68,
         "weakness": {
           "name": "Francisco Cerundolo",
-          "serviceHoldPct": 78,
-          "firstServeWonPct": 69,
-          "secondServeWonPct": 57,
-          "firstServePct": 58,
-          "avgAces": 3.9,
-          "avgDoubleFaults": 2.4,
-          "avgWinners": 23.1,
-          "avgUnforcedErrors": 35.4,
-          "avgBreakPointsFaced": 7,
-          "returnPointsWonPct": 43,
-          "servicePointsWonPct": 64,
-          "weakServeMatches": 2,
+          "serviceHoldPct": 74,
+          "firstServeWonPct": 67,
+          "secondServeWonPct": 55,
+          "firstServePct": 57,
+          "avgAces": 3.5,
+          "avgDoubleFaults": 2.6,
+          "avgWinners": 22.5,
+          "avgUnforcedErrors": 36,
+          "avgBreakPointsFaced": 7.6,
+          "returnPointsWonPct": 42,
+          "servicePointsWonPct": 62,
+          "weakServeMatches": 3,
           "pressureMatches": 5,
-          "matchesWithStats": 7,
-          "weaknessScore": 12,
-          "firstGameComfort": "Comfortable enough if first serve lands",
+          "matchesWithStats": 8,
+          "weaknessScore": 15,
+          "firstGameComfort": "Needs early holds confirmed",
           "liabilities": [
-            "negative winner/error balance (23.1 winners, 35.4 unforced)"
+            "negative winner/error balance (22.5 winners, 36.0 unforced)",
+            "3 recent matches with serve instability"
           ],
           "strengths": [
-            "protects serve well (78% hold)",
-            "second serve holds up (57%)"
+            "second serve holds up (55%)"
           ],
-          "gameFlowRead": "Francisco Cerundolo can drop points quickly through negative winner/error balance (23.1 winners, 35.4 unforced)."
+          "gameFlowRead": "Francisco Cerundolo can drop points quickly through negative winner/error balance (22.5 winners, 36.0 unforced) and 3 recent matches with serve instability."
         }
       },
       {
@@ -3584,7 +3772,7 @@ const rawTennisGames = [
         },
         "qualityName": "Hugo Gaston",
         "profile": "Live rank #119 | FRA | age 25.6 | 2026 clay 5-8, 39% | adj form 50 | hold 63%",
-        "modelPct": 31,
+        "modelPct": 32,
         "weakness": {
           "name": "Hugo Gaston",
           "serviceHoldPct": 63,
@@ -3649,25 +3837,25 @@ const rawTennisGames = [
       "pick": {
         "name": "Frances Tiafoe",
         "serviceHoldPct": 80,
-        "firstServeWonPct": 72,
-        "secondServeWonPct": 50,
-        "firstServePct": 55,
-        "avgAces": 4.8,
-        "avgDoubleFaults": 3,
-        "avgWinners": 27.8,
-        "avgUnforcedErrors": 31,
-        "avgBreakPointsFaced": 6.4,
-        "returnPointsWonPct": 40,
+        "firstServeWonPct": 71,
+        "secondServeWonPct": 52,
+        "firstServePct": 56,
+        "avgAces": 4.7,
+        "avgDoubleFaults": 2.5,
+        "avgWinners": 26.4,
+        "avgUnforcedErrors": 30.4,
+        "avgBreakPointsFaced": 6.5,
+        "returnPointsWonPct": 39,
         "servicePointsWonPct": 62,
         "weakServeMatches": 2,
         "pressureMatches": 7,
-        "matchesWithStats": 5,
+        "matchesWithStats": 6,
         "weaknessScore": 12,
         "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [],
         "strengths": [
           "protects serve well (80% hold)",
-          "wins enough first-serve points (72%)"
+          "wins enough first-serve points (71%)"
         ],
         "gameFlowRead": "Frances Tiafoe has no major service weakness in the joined Flashscore sample."
       },
@@ -3724,6 +3912,9 @@ const rawTennisGames = [
         "impliedPct": 44.2,
         "edgePct": 8.8,
         "evPer100": 19.8,
+        "netEvPer100": 17.8,
+        "feePer100": 2,
+        "valueIssue": "Validated ML candidate",
         "valueGrade": "Bet-grade value",
         "betGrade": true
       },
@@ -3736,6 +3927,9 @@ const rawTennisGames = [
         "impliedPct": 52.4,
         "edgePct": -5.4,
         "evPer100": -10.3,
+        "netEvPer100": -12.3,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -3748,6 +3942,9 @@ const rawTennisGames = [
         "impliedPct": 54.1,
         "edgePct": -9.1,
         "evPer100": -16.9,
+        "netEvPer100": -18.9,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -3920,25 +4117,25 @@ const rawTennisGames = [
         "weakness": {
           "name": "Frances Tiafoe",
           "serviceHoldPct": 80,
-          "firstServeWonPct": 72,
-          "secondServeWonPct": 50,
-          "firstServePct": 55,
-          "avgAces": 4.8,
-          "avgDoubleFaults": 3,
-          "avgWinners": 27.8,
-          "avgUnforcedErrors": 31,
-          "avgBreakPointsFaced": 6.4,
-          "returnPointsWonPct": 40,
+          "firstServeWonPct": 71,
+          "secondServeWonPct": 52,
+          "firstServePct": 56,
+          "avgAces": 4.7,
+          "avgDoubleFaults": 2.5,
+          "avgWinners": 26.4,
+          "avgUnforcedErrors": 30.4,
+          "avgBreakPointsFaced": 6.5,
+          "returnPointsWonPct": 39,
           "servicePointsWonPct": 62,
           "weakServeMatches": 2,
           "pressureMatches": 7,
-          "matchesWithStats": 5,
+          "matchesWithStats": 6,
           "weaknessScore": 12,
           "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [],
           "strengths": [
             "protects serve well (80% hold)",
-            "wins enough first-serve points (72%)"
+            "wins enough first-serve points (71%)"
           ],
           "gameFlowRead": "Frances Tiafoe has no major service weakness in the joined Flashscore sample."
         }
@@ -3955,8 +4152,8 @@ const rawTennisGames = [
     "court": "Court 6",
     "round": "Round 2",
     "pickName": "Anna Kalinskaya",
-    "confidence": 54,
-    "volatility": 55,
+    "confidence": 53,
+    "volatility": 56,
     "tags": [
       "Clay",
       "Roland Garros",
@@ -3966,46 +4163,48 @@ const rawTennisGames = [
       "WTA volatility tax",
       "Controlled volatility"
     ],
-    "reason": "Alina Korneeva has the recent service-hold edge 71% to 59%, so Anna Kalinskaya needs the rank/form edge to show up on return games. Alina Korneeva grades 21 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
+    "reason": "Alina Korneeva has the recent service-hold edge 71% to 57%, so Anna Kalinskaya needs the rank/form edge to show up on return games. Alina Korneeva grades 21 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
     "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
       "edgeType": "Weakness warning",
       "target": "Anna Kalinskaya",
-      "scoreGap": -14,
+      "scoreGap": -21,
       "attackingSide": null,
       "vulnerableSide": "Anna Kalinskaya",
-      "gameFlow": "Anna Kalinskaya is the model side, but the fragile profile is on our pick: low recent hold rate (59%); first-serve points won below comfort (60%). Avoid laying a bad price until early holds are confirmed.",
+      "gameFlow": "Anna Kalinskaya is the model side, but the fragile profile is on our pick: low recent hold rate (57%); first-serve points won below comfort (58%). Avoid laying a bad price until early holds are confirmed.",
       "liveTrigger": "Do not upgrade Anna Kalinskaya unless they hold cleanly in the first service game and keep double faults down.",
       "spreadRead": "Spread needs the posted number before grading.",
       "totalRead": "Weak service profile points to breaks; be careful with low unders.",
       "pick": {
         "name": "Anna Kalinskaya",
-        "serviceHoldPct": 59,
-        "firstServeWonPct": 60,
-        "secondServeWonPct": 39,
-        "firstServePct": 64,
-        "avgAces": 1.4,
-        "avgDoubleFaults": 4.6,
+        "serviceHoldPct": 57,
+        "firstServeWonPct": 58,
+        "secondServeWonPct": 40,
+        "firstServePct": 63,
+        "avgAces": 1.7,
+        "avgDoubleFaults": 4.3,
         "avgWinners": 18,
         "avgUnforcedErrors": 22,
-        "avgBreakPointsFaced": 9,
-        "returnPointsWonPct": 43,
-        "servicePointsWonPct": 52,
-        "weakServeMatches": 4,
+        "avgBreakPointsFaced": 9.3,
+        "returnPointsWonPct": 45,
+        "servicePointsWonPct": 51,
+        "weakServeMatches": 6,
         "pressureMatches": 1,
-        "matchesWithStats": 5,
-        "weaknessScore": 33,
+        "matchesWithStats": 7,
+        "weaknessScore": 40,
         "firstGameComfort": "Fragile opening-service profile",
         "liabilities": [
-          "low recent hold rate (59%)",
-          "first-serve points won below comfort (60%)",
-          "second-serve points won are attackable (39%)",
-          "double-fault pressure (4.6 avg)",
-          "faces too many break points (9.0 avg)",
-          "4 recent matches with serve instability"
+          "low recent hold rate (57%)",
+          "first-serve points won below comfort (58%)",
+          "second-serve points won are attackable (40%)",
+          "double-fault pressure (4.3 avg)",
+          "faces too many break points (9.3 avg)",
+          "6 recent matches with serve instability"
         ],
-        "strengths": [],
-        "gameFlowRead": "Anna Kalinskaya can drop points quickly through low recent hold rate (59%) and first-serve points won below comfort (60%)."
+        "strengths": [
+          "creates return pressure (45% return points won)"
+        ],
+        "gameFlowRead": "Anna Kalinskaya can drop points quickly through low recent hold rate (57%) and first-serve points won below comfort (58%)."
       },
       "opponent": {
         "name": "Alina Korneeva",
@@ -4041,14 +4240,14 @@ const rawTennisGames = [
     "setWinProjections": [
       {
         "name": "Anna Kalinskaya",
-        "confidence": 68,
-        "modelPct": 54,
-        "label": "Live to win a set"
+        "confidence": 66,
+        "modelPct": 53,
+        "label": "Needs early hold pressure"
       },
       {
         "name": "Alina Korneeva",
-        "confidence": 60,
-        "modelPct": 46,
+        "confidence": 61,
+        "modelPct": 47,
         "label": "Needs early hold pressure"
       }
     ],
@@ -4058,10 +4257,13 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Anna Kalinskaya",
         "americanOdds": -260,
-        "modelPct": 54,
+        "modelPct": 53,
         "impliedPct": 72.2,
-        "edgePct": -18.2,
-        "evPer100": -25.2,
+        "edgePct": -19.2,
+        "evPer100": -26.6,
+        "netEvPer100": -28.6,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -4074,6 +4276,9 @@ const rawTennisGames = [
         "impliedPct": 51,
         "edgePct": -9,
         "evPer100": -17.6,
+        "netEvPer100": -19.6,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -4082,27 +4287,30 @@ const rawTennisGames = [
         "selection": "Over",
         "line": 20.5,
         "americanOdds": -122,
-        "modelPct": 46,
+        "modelPct": 45,
         "impliedPct": 55,
-        "edgePct": -9,
-        "evPer100": -16.3,
+        "edgePct": -10,
+        "evPer100": -18.1,
+        "netEvPer100": -20.1,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
       "setWin": [
         {
           "name": "Anna Kalinskaya",
-          "confidence": 68,
-          "modelPct": 54,
-          "label": "Live to win a set",
+          "confidence": 66,
+          "modelPct": 53,
+          "label": "Needs early hold pressure",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
           "betGrade": false
         },
         {
           "name": "Alina Korneeva",
-          "confidence": 60,
-          "modelPct": 46,
+          "confidence": 61,
+          "modelPct": 47,
           "label": "Needs early hold pressure",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -4123,8 +4331,8 @@ const rawTennisGames = [
           "americanLabel": "-260",
           "impliedPct": 72.2,
           "decimalOdds": 1.385,
-          "modelPct": 54,
-          "edgePct": -18.2,
+          "modelPct": 53,
+          "edgePct": -19.2,
           "priceBand": "Low-payout favorite",
           "grossProfitPct": 38.5,
           "grossPayoutMultiple": 1.385,
@@ -4137,8 +4345,8 @@ const rawTennisGames = [
           "americanLabel": "+210",
           "impliedPct": 32.3,
           "decimalOdds": 3.1,
-          "modelPct": 46,
-          "edgePct": 13.7,
+          "modelPct": 47,
+          "edgePct": 14.7,
           "priceBand": "Underdog",
           "grossProfitPct": 210,
           "grossPayoutMultiple": 3.1,
@@ -4152,8 +4360,8 @@ const rawTennisGames = [
         "americanLabel": "-260",
         "impliedPct": 72.2,
         "decimalOdds": 1.385,
-        "modelPct": 54,
-        "edgePct": -18.2,
+        "modelPct": 53,
+        "edgePct": -19.2,
         "priceBand": "Low-payout favorite",
         "grossProfitPct": 38.5,
         "grossPayoutMultiple": 1.385,
@@ -4188,7 +4396,7 @@ const rawTennisGames = [
       "totalLean": "Over or pass if early service games are loose",
       "mlValue": "Anna Kalinskaya -260 / Alina Korneeva +210",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
-      "noVigNote": "Model 54% vs FanDuel implied 72.2% (-18.2 pts)."
+      "noVigNote": "Model 53% vs FanDuel implied 72.2% (-19.2 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Anna-Kalinskaya-Vs-Alina-Korneeva/",
     "players": [
@@ -4207,36 +4415,38 @@ const rawTennisGames = [
           "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
         },
         "qualityName": "Anna Kalinskaya",
-        "profile": "Live rank #20 | RUS | age 27.4 | 2026 clay 5-3, 63% | adj form 62 | hold 59%",
-        "modelPct": 54,
+        "profile": "Live rank #20 | RUS | age 27.4 | 2026 clay 5-3, 63% | adj form 62 | hold 57%",
+        "modelPct": 53,
         "weakness": {
           "name": "Anna Kalinskaya",
-          "serviceHoldPct": 59,
-          "firstServeWonPct": 60,
-          "secondServeWonPct": 39,
-          "firstServePct": 64,
-          "avgAces": 1.4,
-          "avgDoubleFaults": 4.6,
+          "serviceHoldPct": 57,
+          "firstServeWonPct": 58,
+          "secondServeWonPct": 40,
+          "firstServePct": 63,
+          "avgAces": 1.7,
+          "avgDoubleFaults": 4.3,
           "avgWinners": 18,
           "avgUnforcedErrors": 22,
-          "avgBreakPointsFaced": 9,
-          "returnPointsWonPct": 43,
-          "servicePointsWonPct": 52,
-          "weakServeMatches": 4,
+          "avgBreakPointsFaced": 9.3,
+          "returnPointsWonPct": 45,
+          "servicePointsWonPct": 51,
+          "weakServeMatches": 6,
           "pressureMatches": 1,
-          "matchesWithStats": 5,
-          "weaknessScore": 33,
+          "matchesWithStats": 7,
+          "weaknessScore": 40,
           "firstGameComfort": "Fragile opening-service profile",
           "liabilities": [
-            "low recent hold rate (59%)",
-            "first-serve points won below comfort (60%)",
-            "second-serve points won are attackable (39%)",
-            "double-fault pressure (4.6 avg)",
-            "faces too many break points (9.0 avg)",
-            "4 recent matches with serve instability"
+            "low recent hold rate (57%)",
+            "first-serve points won below comfort (58%)",
+            "second-serve points won are attackable (40%)",
+            "double-fault pressure (4.3 avg)",
+            "faces too many break points (9.3 avg)",
+            "6 recent matches with serve instability"
           ],
-          "strengths": [],
-          "gameFlowRead": "Anna Kalinskaya can drop points quickly through low recent hold rate (59%) and first-serve points won below comfort (60%)."
+          "strengths": [
+            "creates return pressure (45% return points won)"
+          ],
+          "gameFlowRead": "Anna Kalinskaya can drop points quickly through low recent hold rate (57%) and first-serve points won below comfort (58%)."
         }
       },
       {
@@ -4255,7 +4465,7 @@ const rawTennisGames = [
         },
         "qualityName": "Alina Korneeva",
         "profile": "Live rank #94 | RUS | age 18.9 | 2026 clay 7-4, 64% | adj form 84 | hold 71%",
-        "modelPct": 46,
+        "modelPct": 47,
         "weakness": {
           "name": "Alina Korneeva",
           "serviceHoldPct": 71,
@@ -4299,8 +4509,8 @@ const rawTennisGames = [
     "court": "Court 7",
     "round": "Round 2",
     "pickName": "Diana Shnaider",
-    "confidence": 50,
-    "volatility": 60,
+    "confidence": 51,
+    "volatility": 59,
     "tags": [
       "Clay",
       "Roland Garros",
@@ -4310,12 +4520,12 @@ const rawTennisGames = [
       "WTA volatility tax",
       "Controlled volatility"
     ],
-    "reason": "Diana Shnaider has the recent service-hold edge 58% to 54%. Opponent-adjusted recent form is basically even: Diana Shnaider 57, McCartney Kessler 58. Lean, not a chase.",
+    "reason": "Diana Shnaider has the recent service-hold edge 63% to 54%. Opponent-adjusted recent form is basically even: Diana Shnaider 57, McCartney Kessler 58. Lean, not a chase.",
     "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
       "edgeType": "No clear weakness edge",
       "target": "Both sides",
-      "scoreGap": 4,
+      "scoreGap": 6,
       "attackingSide": null,
       "vulnerableSide": null,
       "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
@@ -4324,32 +4534,29 @@ const rawTennisGames = [
       "totalRead": "Weak service profile points to breaks; be careful with low unders.",
       "pick": {
         "name": "Diana Shnaider",
-        "serviceHoldPct": 58,
-        "firstServeWonPct": 55,
-        "secondServeWonPct": 47,
+        "serviceHoldPct": 63,
+        "firstServeWonPct": 59,
+        "secondServeWonPct": 45,
         "firstServePct": 64,
         "avgAces": 0.8,
-        "avgDoubleFaults": 2.8,
+        "avgDoubleFaults": 3.6,
         "avgWinners": 22,
         "avgUnforcedErrors": 27,
-        "avgBreakPointsFaced": 10.8,
-        "returnPointsWonPct": 46,
-        "servicePointsWonPct": 52,
-        "weakServeMatches": 5,
+        "avgBreakPointsFaced": 9.6,
+        "returnPointsWonPct": 43,
+        "servicePointsWonPct": 54,
+        "weakServeMatches": 7,
         "pressureMatches": 4,
-        "matchesWithStats": 5,
-        "weaknessScore": 34,
+        "matchesWithStats": 8,
+        "weaknessScore": 32,
         "firstGameComfort": "Fragile opening-service profile",
         "liabilities": [
-          "low recent hold rate (58%)",
-          "first-serve points won below comfort (55%)",
-          "faces too many break points (10.8 avg)",
-          "5 recent matches with serve instability"
+          "first-serve points won below comfort (59%)",
+          "faces too many break points (9.6 avg)",
+          "7 recent matches with serve instability"
         ],
-        "strengths": [
-          "creates return pressure (46% return points won)"
-        ],
-        "gameFlowRead": "Diana Shnaider can drop points quickly through low recent hold rate (58%) and first-serve points won below comfort (55%)."
+        "strengths": [],
+        "gameFlowRead": "Diana Shnaider can drop points quickly through first-serve points won below comfort (59%) and faces too many break points (9.6 avg)."
       },
       "opponent": {
         "name": "McCartney Kessler",
@@ -4386,13 +4593,13 @@ const rawTennisGames = [
       {
         "name": "Diana Shnaider",
         "confidence": 66,
-        "modelPct": 50,
+        "modelPct": 51,
         "label": "Needs early hold pressure"
       },
       {
         "name": "McCartney Kessler",
-        "confidence": 65,
-        "modelPct": 50,
+        "confidence": 62,
+        "modelPct": 49,
         "label": "Needs early hold pressure"
       }
     ],
@@ -4402,10 +4609,13 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Diana Shnaider",
         "americanOdds": -400,
-        "modelPct": 50,
+        "modelPct": 51,
         "impliedPct": 80,
-        "edgePct": -30,
-        "evPer100": -37.5,
+        "edgePct": -29,
+        "evPer100": -36.3,
+        "netEvPer100": -38.3,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -4414,10 +4624,13 @@ const rawTennisGames = [
         "selection": "Diana Shnaider",
         "line": -5.5,
         "americanOdds": 102,
-        "modelPct": 44,
+        "modelPct": 45,
         "impliedPct": 49.5,
-        "edgePct": -5.5,
-        "evPer100": -11.1,
+        "edgePct": -4.5,
+        "evPer100": -9.1,
+        "netEvPer100": -11.1,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -4426,10 +4639,13 @@ const rawTennisGames = [
         "selection": "Over",
         "line": 19.5,
         "americanOdds": -122,
-        "modelPct": 42,
+        "modelPct": 43,
         "impliedPct": 55,
-        "edgePct": -13,
-        "evPer100": -23.6,
+        "edgePct": -12,
+        "evPer100": -21.8,
+        "netEvPer100": -23.8,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -4437,7 +4653,7 @@ const rawTennisGames = [
         {
           "name": "Diana Shnaider",
           "confidence": 66,
-          "modelPct": 50,
+          "modelPct": 51,
           "label": "Needs early hold pressure",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -4445,8 +4661,8 @@ const rawTennisGames = [
         },
         {
           "name": "McCartney Kessler",
-          "confidence": 65,
-          "modelPct": 50,
+          "confidence": 62,
+          "modelPct": 49,
           "label": "Needs early hold pressure",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -4467,8 +4683,8 @@ const rawTennisGames = [
           "americanLabel": "-400",
           "impliedPct": 80,
           "decimalOdds": 1.25,
-          "modelPct": 50,
-          "edgePct": -30,
+          "modelPct": 51,
+          "edgePct": -29,
           "priceBand": "Low-payout favorite",
           "grossProfitPct": 25,
           "grossPayoutMultiple": 1.25,
@@ -4481,8 +4697,8 @@ const rawTennisGames = [
           "americanLabel": "+315",
           "impliedPct": 24.1,
           "decimalOdds": 4.15,
-          "modelPct": 50,
-          "edgePct": 25.9,
+          "modelPct": 49,
+          "edgePct": 24.9,
           "priceBand": "Underdog",
           "grossProfitPct": 315,
           "grossPayoutMultiple": 4.15,
@@ -4496,8 +4712,8 @@ const rawTennisGames = [
         "americanLabel": "-400",
         "impliedPct": 80,
         "decimalOdds": 1.25,
-        "modelPct": 50,
-        "edgePct": -30,
+        "modelPct": 51,
+        "edgePct": -29,
         "priceBand": "Low-payout favorite",
         "grossProfitPct": 25,
         "grossPayoutMultiple": 1.25,
@@ -4532,7 +4748,7 @@ const rawTennisGames = [
       "totalLean": "Over or pass if early service games are loose",
       "mlValue": "Diana Shnaider -400 / McCartney Kessler +315",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
-      "noVigNote": "Model 50% vs FanDuel implied 80% (-30 pts)."
+      "noVigNote": "Model 51% vs FanDuel implied 80% (-29 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Diana-Shnaider-Vs-McCartney-Kessler/",
     "players": [
@@ -4551,36 +4767,33 @@ const rawTennisGames = [
           "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
         },
         "qualityName": "Diana Shnaider",
-        "profile": "Live rank #23 | RUS | age 22.1 | 2026 clay 6-4, 60% | adj form 57 | hold 58%",
-        "modelPct": 50,
+        "profile": "Live rank #23 | RUS | age 22.1 | 2026 clay 6-4, 60% | adj form 57 | hold 63%",
+        "modelPct": 51,
         "weakness": {
           "name": "Diana Shnaider",
-          "serviceHoldPct": 58,
-          "firstServeWonPct": 55,
-          "secondServeWonPct": 47,
+          "serviceHoldPct": 63,
+          "firstServeWonPct": 59,
+          "secondServeWonPct": 45,
           "firstServePct": 64,
           "avgAces": 0.8,
-          "avgDoubleFaults": 2.8,
+          "avgDoubleFaults": 3.6,
           "avgWinners": 22,
           "avgUnforcedErrors": 27,
-          "avgBreakPointsFaced": 10.8,
-          "returnPointsWonPct": 46,
-          "servicePointsWonPct": 52,
-          "weakServeMatches": 5,
+          "avgBreakPointsFaced": 9.6,
+          "returnPointsWonPct": 43,
+          "servicePointsWonPct": 54,
+          "weakServeMatches": 7,
           "pressureMatches": 4,
-          "matchesWithStats": 5,
-          "weaknessScore": 34,
+          "matchesWithStats": 8,
+          "weaknessScore": 32,
           "firstGameComfort": "Fragile opening-service profile",
           "liabilities": [
-            "low recent hold rate (58%)",
-            "first-serve points won below comfort (55%)",
-            "faces too many break points (10.8 avg)",
-            "5 recent matches with serve instability"
+            "first-serve points won below comfort (59%)",
+            "faces too many break points (9.6 avg)",
+            "7 recent matches with serve instability"
           ],
-          "strengths": [
-            "creates return pressure (46% return points won)"
-          ],
-          "gameFlowRead": "Diana Shnaider can drop points quickly through low recent hold rate (58%) and first-serve points won below comfort (55%)."
+          "strengths": [],
+          "gameFlowRead": "Diana Shnaider can drop points quickly through first-serve points won below comfort (59%) and faces too many break points (9.6 avg)."
         }
       },
       {
@@ -4599,7 +4812,7 @@ const rawTennisGames = [
         },
         "qualityName": "Mccartney Kessler",
         "profile": "Live rank #37 | USA | age 26.8 | 2026 clay 7-5, 58% | adj form 58 | hold 54%",
-        "modelPct": 50,
+        "modelPct": 49,
         "weakness": {
           "name": "McCartney Kessler",
           "serviceHoldPct": 54,
@@ -4643,8 +4856,8 @@ const rawTennisGames = [
     "court": "Court Suzanne-Lenglen",
     "round": "Round 2",
     "pickName": "Amanda Anisimova",
-    "confidence": 67,
-    "volatility": 38,
+    "confidence": 69,
+    "volatility": 36,
     "tags": [
       "Clay",
       "Roland Garros",
@@ -4654,12 +4867,12 @@ const rawTennisGames = [
       "WTA volatility tax",
       "Controlled volatility"
     ],
-    "reason": "Recent service hold is close: Amanda Anisimova 63%, Julia Grabher 62%. Opponent-adjusted recent form is basically even: Amanda Anisimova 63, Julia Grabher 62. Lean, not a chase.",
+    "reason": "Amanda Anisimova has the recent service-hold edge 73% to 62%. Opponent-adjusted recent form is basically even: Amanda Anisimova 63, Julia Grabher 62. Lean, not a chase.",
     "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
       "edgeType": "Weakness edge",
       "target": "Julia Grabher",
-      "scoreGap": 10,
+      "scoreGap": 20,
       "attackingSide": "Amanda Anisimova",
       "vulnerableSide": "Julia Grabher",
       "gameFlow": "Amanda Anisimova has a real path if Julia Grabher's first two service games show the same weakness: first-serve points won below comfort (58%); double-fault pressure (4.6 avg).",
@@ -4668,31 +4881,29 @@ const rawTennisGames = [
       "totalRead": "Weak service profile points to breaks; be careful with low unders.",
       "pick": {
         "name": "Amanda Anisimova",
-        "serviceHoldPct": 63,
+        "serviceHoldPct": 73,
         "firstServeWonPct": 67,
-        "secondServeWonPct": 43,
-        "firstServePct": 59,
-        "avgAces": 3,
-        "avgDoubleFaults": 5,
+        "secondServeWonPct": 52,
+        "firstServePct": 62,
+        "avgAces": 3.4,
+        "avgDoubleFaults": 3.4,
         "avgWinners": 24,
         "avgUnforcedErrors": 24,
-        "avgBreakPointsFaced": 8,
-        "returnPointsWonPct": 69,
-        "servicePointsWonPct": 57,
-        "weakServeMatches": 1,
+        "avgBreakPointsFaced": 6,
+        "returnPointsWonPct": 57,
+        "servicePointsWonPct": 61,
+        "weakServeMatches": 3,
         "pressureMatches": 3,
-        "matchesWithStats": 1,
-        "weaknessScore": 18,
-        "firstGameComfort": "Needs early holds confirmed",
+        "matchesWithStats": 5,
+        "weaknessScore": 8,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "second-serve points won are attackable (43%)",
-          "double-fault pressure (5.0 avg)",
-          "faces too many break points (8.0 avg)"
+          "3 recent matches with serve instability"
         ],
         "strengths": [
-          "creates return pressure (69% return points won)"
+          "creates return pressure (57% return points won)"
         ],
-        "gameFlowRead": "Amanda Anisimova can drop points quickly through second-serve points won are attackable (43%) and double-fault pressure (5.0 avg)."
+        "gameFlowRead": "Amanda Anisimova can drop points quickly through 3 recent matches with serve instability."
       },
       "opponent": {
         "name": "Julia Grabher",
@@ -4709,7 +4920,7 @@ const rawTennisGames = [
         "servicePointsWonPct": 56,
         "weakServeMatches": 4,
         "pressureMatches": 5,
-        "matchesWithStats": 5,
+        "matchesWithStats": 8,
         "weaknessScore": 28,
         "firstGameComfort": "Fragile opening-service profile",
         "liabilities": [
@@ -4727,14 +4938,14 @@ const rawTennisGames = [
     "setWinProjections": [
       {
         "name": "Julia Grabher",
-        "confidence": 44,
-        "modelPct": 33,
+        "confidence": 41,
+        "modelPct": 31,
         "label": "Thin set-win path"
       },
       {
         "name": "Amanda Anisimova",
-        "confidence": 75,
-        "modelPct": 67,
+        "confidence": 77,
+        "modelPct": 69,
         "label": "Live to win a set"
       }
     ],
@@ -4744,11 +4955,14 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Amanda Anisimova",
         "americanOdds": -600,
-        "modelPct": 67,
+        "modelPct": 69,
         "impliedPct": 85.7,
-        "edgePct": -18.7,
-        "evPer100": -21.8,
-        "valueGrade": "Negative EV",
+        "edgePct": -16.7,
+        "evPer100": -19.5,
+        "netEvPer100": -21.5,
+        "feePer100": 2,
+        "valueIssue": "Favorite tax trap",
+        "valueGrade": "Favorite tax trap",
         "betGrade": false
       },
       "spread": {
@@ -4756,30 +4970,36 @@ const rawTennisGames = [
         "selection": "Amanda Anisimova",
         "line": -5.5,
         "americanOdds": -110,
-        "modelPct": 65,
+        "modelPct": 67,
         "impliedPct": 52.4,
-        "edgePct": 12.6,
-        "evPer100": 24.1,
-        "valueGrade": "Bet-grade value",
-        "betGrade": true
+        "edgePct": 14.6,
+        "evPer100": 27.9,
+        "netEvPer100": 25.9,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Watch only",
+        "betGrade": false
       },
       "total": {
         "marketType": "Total",
         "selection": "Over",
         "line": 19.5,
         "americanOdds": -120,
-        "modelPct": 59,
+        "modelPct": 61,
         "impliedPct": 54.5,
-        "edgePct": 4.5,
-        "evPer100": 8.2,
-        "valueGrade": "Thin value",
+        "edgePct": 6.5,
+        "evPer100": 11.8,
+        "netEvPer100": 9.8,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
+        "valueGrade": "Watch only",
         "betGrade": false
       },
       "setWin": [
         {
           "name": "Julia Grabher",
-          "confidence": 44,
-          "modelPct": 33,
+          "confidence": 41,
+          "modelPct": 31,
           "label": "Thin set-win path",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -4787,8 +5007,8 @@ const rawTennisGames = [
         },
         {
           "name": "Amanda Anisimova",
-          "confidence": 75,
-          "modelPct": 67,
+          "confidence": 77,
+          "modelPct": 69,
           "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -4809,8 +5029,8 @@ const rawTennisGames = [
           "americanLabel": "+420",
           "impliedPct": 19.2,
           "decimalOdds": 5.2,
-          "modelPct": 33,
-          "edgePct": 13.8,
+          "modelPct": 31,
+          "edgePct": 11.8,
           "priceBand": "Underdog",
           "grossProfitPct": 420,
           "grossPayoutMultiple": 5.2,
@@ -4823,8 +5043,8 @@ const rawTennisGames = [
           "americanLabel": "-600",
           "impliedPct": 85.7,
           "decimalOdds": 1.167,
-          "modelPct": 67,
-          "edgePct": -18.7,
+          "modelPct": 69,
+          "edgePct": -16.7,
           "priceBand": "Very expensive favorite",
           "grossProfitPct": 16.7,
           "grossPayoutMultiple": 1.167,
@@ -4838,8 +5058,8 @@ const rawTennisGames = [
         "americanLabel": "-600",
         "impliedPct": 85.7,
         "decimalOdds": 1.167,
-        "modelPct": 67,
-        "edgePct": -18.7,
+        "modelPct": 69,
+        "edgePct": -16.7,
         "priceBand": "Very expensive favorite",
         "grossProfitPct": 16.7,
         "grossPayoutMultiple": 1.167,
@@ -4874,7 +5094,7 @@ const rawTennisGames = [
       "totalLean": "Over or pass if early service games are loose",
       "mlValue": "Julia Grabher +420 / Amanda Anisimova -600",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. ML payout is tiny; use spread/total or pass unless the number moves.",
-      "noVigNote": "Model 67% vs FanDuel implied 85.7% (-18.7 pts)."
+      "noVigNote": "Model 69% vs FanDuel implied 85.7% (-16.7 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Julia-Grabher-Vs-Amanda-Anisimova/",
     "players": [
@@ -4894,7 +5114,7 @@ const rawTennisGames = [
         },
         "qualityName": "Julia Grabher",
         "profile": "Live rank #113 | AUT | age 29.8 | 2026 clay 7-8, 47% | adj form 62 | hold 62%",
-        "modelPct": 33,
+        "modelPct": 31,
         "weakness": {
           "name": "Julia Grabher",
           "serviceHoldPct": 62,
@@ -4910,7 +5130,7 @@ const rawTennisGames = [
           "servicePointsWonPct": 56,
           "weakServeMatches": 4,
           "pressureMatches": 5,
-          "matchesWithStats": 5,
+          "matchesWithStats": 8,
           "weaknessScore": 28,
           "firstGameComfort": "Fragile opening-service profile",
           "liabilities": [
@@ -4940,35 +5160,33 @@ const rawTennisGames = [
           "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
         },
         "qualityName": "Amanda Anisimova",
-        "profile": "Live rank #5 | USA | age 24.7 | 2026 clay 1-0, 100% | adj form 63 | hold 63%",
-        "modelPct": 67,
+        "profile": "Live rank #5 | USA | age 24.7 | 2026 clay 1-0, 100% | adj form 63 | hold 73%",
+        "modelPct": 69,
         "weakness": {
           "name": "Amanda Anisimova",
-          "serviceHoldPct": 63,
+          "serviceHoldPct": 73,
           "firstServeWonPct": 67,
-          "secondServeWonPct": 43,
-          "firstServePct": 59,
-          "avgAces": 3,
-          "avgDoubleFaults": 5,
+          "secondServeWonPct": 52,
+          "firstServePct": 62,
+          "avgAces": 3.4,
+          "avgDoubleFaults": 3.4,
           "avgWinners": 24,
           "avgUnforcedErrors": 24,
-          "avgBreakPointsFaced": 8,
-          "returnPointsWonPct": 69,
-          "servicePointsWonPct": 57,
-          "weakServeMatches": 1,
+          "avgBreakPointsFaced": 6,
+          "returnPointsWonPct": 57,
+          "servicePointsWonPct": 61,
+          "weakServeMatches": 3,
           "pressureMatches": 3,
-          "matchesWithStats": 1,
-          "weaknessScore": 18,
-          "firstGameComfort": "Needs early holds confirmed",
+          "matchesWithStats": 5,
+          "weaknessScore": 8,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "second-serve points won are attackable (43%)",
-            "double-fault pressure (5.0 avg)",
-            "faces too many break points (8.0 avg)"
+            "3 recent matches with serve instability"
           ],
           "strengths": [
-            "creates return pressure (69% return points won)"
+            "creates return pressure (57% return points won)"
           ],
-          "gameFlowRead": "Amanda Anisimova can drop points quickly through second-serve points won are attackable (43%) and double-fault pressure (5.0 avg)."
+          "gameFlowRead": "Amanda Anisimova can drop points quickly through 3 recent matches with serve instability."
         }
       }
     ]
@@ -4983,8 +5201,8 @@ const rawTennisGames = [
     "court": "Court 12",
     "round": "Round 2",
     "pickName": "Elise Mertens",
-    "confidence": 56,
-    "volatility": 52,
+    "confidence": 55,
+    "volatility": 53,
     "tags": [
       "Clay",
       "Roland Garros",
@@ -4994,12 +5212,12 @@ const rawTennisGames = [
       "WTA volatility tax",
       "Controlled volatility"
     ],
-    "reason": "Recent service hold is close: Elise Mertens 76%, Maja Chwalinska 77%. Maja Chwalinska grades 27 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
+    "reason": "Maja Chwalinska has the recent service-hold edge 77% to 73%, so Elise Mertens needs the rank/form edge to show up on return games. Maja Chwalinska grades 27 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
     "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
       "edgeType": "No clear weakness edge",
       "target": "Both sides",
-      "scoreGap": 0,
+      "scoreGap": -4,
       "attackingSide": null,
       "vulnerableSide": null,
       "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
@@ -5008,26 +5226,24 @@ const rawTennisGames = [
       "totalRead": "No total edge without posted number and first-set hold data.",
       "pick": {
         "name": "Elise Mertens",
-        "serviceHoldPct": 76,
-        "firstServeWonPct": 71,
-        "secondServeWonPct": 49,
+        "serviceHoldPct": 73,
+        "firstServeWonPct": 69,
+        "secondServeWonPct": 48,
         "firstServePct": 62,
-        "avgAces": 4.2,
-        "avgDoubleFaults": 2.7,
+        "avgAces": 4,
+        "avgDoubleFaults": 3.5,
         "avgWinners": 36,
         "avgUnforcedErrors": 22,
-        "avgBreakPointsFaced": 6.3,
+        "avgBreakPointsFaced": 6.9,
         "returnPointsWonPct": 47,
-        "servicePointsWonPct": 63,
-        "weakServeMatches": 1,
+        "servicePointsWonPct": 61,
+        "weakServeMatches": 2,
         "pressureMatches": 3,
-        "matchesWithStats": 6,
-        "weaknessScore": 3,
+        "matchesWithStats": 8,
+        "weaknessScore": 7,
         "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [],
         "strengths": [
-          "protects serve well (76% hold)",
-          "wins enough first-serve points (71%)",
           "positive winner/error balance (36.0 winners, 22.0 unforced)",
           "creates return pressure (47% return points won)"
         ],
@@ -5048,7 +5264,7 @@ const rawTennisGames = [
         "servicePointsWonPct": 63,
         "weakServeMatches": 1,
         "pressureMatches": 3,
-        "matchesWithStats": 3,
+        "matchesWithStats": 6,
         "weaknessScore": 3,
         "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [],
@@ -5064,14 +5280,14 @@ const rawTennisGames = [
     "setWinProjections": [
       {
         "name": "Maja Chwalinska",
-        "confidence": 60,
-        "modelPct": 44,
+        "confidence": 61,
+        "modelPct": 45,
         "label": "Needs early hold pressure"
       },
       {
         "name": "Elise Mertens",
-        "confidence": 73,
-        "modelPct": 56,
+        "confidence": 72,
+        "modelPct": 55,
         "label": "Live to win a set"
       }
     ],
@@ -5081,10 +5297,13 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Elise Mertens",
         "americanOdds": -210,
-        "modelPct": 56,
+        "modelPct": 55,
         "impliedPct": 67.7,
-        "edgePct": -11.7,
-        "evPer100": -17.3,
+        "edgePct": -12.7,
+        "evPer100": -18.8,
+        "netEvPer100": -20.8,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -5093,10 +5312,13 @@ const rawTennisGames = [
         "selection": "Elise Mertens",
         "line": -3.5,
         "americanOdds": -118,
-        "modelPct": 50,
+        "modelPct": 49,
         "impliedPct": 54.1,
-        "edgePct": -4.1,
-        "evPer100": -7.6,
+        "edgePct": -5.1,
+        "evPer100": -9.5,
+        "netEvPer100": -11.5,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -5109,8 +5331,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Maja Chwalinska",
-          "confidence": 60,
-          "modelPct": 44,
+          "confidence": 61,
+          "modelPct": 45,
           "label": "Needs early hold pressure",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -5118,8 +5340,8 @@ const rawTennisGames = [
         },
         {
           "name": "Elise Mertens",
-          "confidence": 73,
-          "modelPct": 56,
+          "confidence": 72,
+          "modelPct": 55,
           "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -5140,8 +5362,8 @@ const rawTennisGames = [
           "americanLabel": "+172",
           "impliedPct": 36.8,
           "decimalOdds": 2.72,
-          "modelPct": 44,
-          "edgePct": 7.2,
+          "modelPct": 45,
+          "edgePct": 8.2,
           "priceBand": "Underdog",
           "grossProfitPct": 172,
           "grossPayoutMultiple": 2.72,
@@ -5154,8 +5376,8 @@ const rawTennisGames = [
           "americanLabel": "-210",
           "impliedPct": 67.7,
           "decimalOdds": 1.476,
-          "modelPct": 56,
-          "edgePct": -11.7,
+          "modelPct": 55,
+          "edgePct": -12.7,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 47.6,
           "grossPayoutMultiple": 1.476,
@@ -5169,8 +5391,8 @@ const rawTennisGames = [
         "americanLabel": "-210",
         "impliedPct": 67.7,
         "decimalOdds": 1.476,
-        "modelPct": 56,
-        "edgePct": -11.7,
+        "modelPct": 55,
+        "edgePct": -12.7,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 47.6,
         "grossPayoutMultiple": 1.476,
@@ -5205,7 +5427,7 @@ const rawTennisGames = [
       "totalLean": "Total needs live serve data before entry",
       "mlValue": "Maja Chwalinska +172 / Elise Mertens -210",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. FanDuel price is richer than the model; pass ML unless live state improves.",
-      "noVigNote": "Model 56% vs FanDuel implied 67.7% (-11.7 pts)."
+      "noVigNote": "Model 55% vs FanDuel implied 67.7% (-12.7 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Maja-Chwalinska-Vs-Elise-Mertens/",
     "players": [
@@ -5225,7 +5447,7 @@ const rawTennisGames = [
         },
         "qualityName": "Maja Chwalinska",
         "profile": "Live rank #98 | POL | age 24.6 | 2026 clay 14-5, 74% | adj form 99 | hold 77%",
-        "modelPct": 44,
+        "modelPct": 45,
         "weakness": {
           "name": "Maja Chwalinska",
           "serviceHoldPct": 77,
@@ -5241,7 +5463,7 @@ const rawTennisGames = [
           "servicePointsWonPct": 63,
           "weakServeMatches": 1,
           "pressureMatches": 3,
-          "matchesWithStats": 3,
+          "matchesWithStats": 6,
           "weaknessScore": 3,
           "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [],
@@ -5269,30 +5491,28 @@ const rawTennisGames = [
           "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
         },
         "qualityName": "Elise Mertens",
-        "profile": "Live rank #19 | BEL | age 30.5 | 2026 clay 6-3, 67% | adj form 73 | hold 76%",
-        "modelPct": 56,
+        "profile": "Live rank #19 | BEL | age 30.5 | 2026 clay 6-3, 67% | adj form 73 | hold 73%",
+        "modelPct": 55,
         "weakness": {
           "name": "Elise Mertens",
-          "serviceHoldPct": 76,
-          "firstServeWonPct": 71,
-          "secondServeWonPct": 49,
+          "serviceHoldPct": 73,
+          "firstServeWonPct": 69,
+          "secondServeWonPct": 48,
           "firstServePct": 62,
-          "avgAces": 4.2,
-          "avgDoubleFaults": 2.7,
+          "avgAces": 4,
+          "avgDoubleFaults": 3.5,
           "avgWinners": 36,
           "avgUnforcedErrors": 22,
-          "avgBreakPointsFaced": 6.3,
+          "avgBreakPointsFaced": 6.9,
           "returnPointsWonPct": 47,
-          "servicePointsWonPct": 63,
-          "weakServeMatches": 1,
+          "servicePointsWonPct": 61,
+          "weakServeMatches": 2,
           "pressureMatches": 3,
-          "matchesWithStats": 6,
-          "weaknessScore": 3,
+          "matchesWithStats": 8,
+          "weaknessScore": 7,
           "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [],
           "strengths": [
-            "protects serve well (76% hold)",
-            "wins enough first-serve points (71%)",
             "positive winner/error balance (36.0 winners, 22.0 unforced)",
             "creates return pressure (47% return points won)"
           ],
@@ -5403,7 +5623,10 @@ const rawTennisGames = [
         "impliedPct": 44.4,
         "edgePct": 5.6,
         "evPer100": 12.5,
-        "valueGrade": "Thin value",
+        "netEvPer100": 10.5,
+        "feePer100": 2,
+        "valueIssue": "Raw ML edge only",
+        "valueGrade": "Raw ML edge only",
         "betGrade": false
       },
       "spread": {
@@ -5415,6 +5638,9 @@ const rawTennisGames = [
         "impliedPct": 54.5,
         "edgePct": -10.5,
         "evPer100": -19.3,
+        "netEvPer100": -21.3,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -5717,6 +5943,9 @@ const rawTennisGames = [
         "impliedPct": 73.3,
         "edgePct": -16.3,
         "evPer100": -22.3,
+        "netEvPer100": -24.3,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -5729,6 +5958,9 @@ const rawTennisGames = [
         "impliedPct": 52.4,
         "edgePct": 2.6,
         "evPer100": 5,
+        "netEvPer100": 3,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
         "valueGrade": "Near fair",
         "betGrade": false
       },
@@ -5741,6 +5973,9 @@ const rawTennisGames = [
         "impliedPct": 54.1,
         "edgePct": -5.1,
         "evPer100": -9.5,
+        "netEvPer100": -11.5,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -5945,8 +6180,8 @@ const rawTennisGames = [
     "court": "Court 13",
     "round": "Round 2",
     "pickName": "Valentin Vacherot",
-    "confidence": 55,
-    "volatility": 45,
+    "confidence": 54,
+    "volatility": 46,
     "tags": [
       "Clay",
       "Roland Garros",
@@ -5956,46 +6191,44 @@ const rawTennisGames = [
       "Men more stable",
       "Controlled volatility"
     ],
-    "reason": "Valentin Vacherot has the recent service-hold edge 88% to 71%. Opponent-adjusted recent form is basically even: Valentin Vacherot 72, Alejandro Tabilo 69. Lean, not a chase.",
+    "reason": "Valentin Vacherot has the recent service-hold edge 82% to 71%. Opponent-adjusted recent form is basically even: Valentin Vacherot 72, Alejandro Tabilo 69. Lean, not a chase.",
     "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
       "edgeType": "Weakness warning",
       "target": "Valentin Vacherot",
-      "scoreGap": -11,
+      "scoreGap": -8,
       "attackingSide": null,
       "vulnerableSide": "Valentin Vacherot",
-      "gameFlow": "Valentin Vacherot is the model side, but the fragile profile is on our pick: double-fault pressure (5.0 avg); limited return pressure (35% return points won). Avoid laying a bad price until early holds are confirmed.",
+      "gameFlow": "Valentin Vacherot is the model side, but the fragile profile is on our pick: faces too many break points (8.4 avg). Avoid laying a bad price until early holds are confirmed.",
       "liveTrigger": "Do not upgrade Valentin Vacherot unless they hold cleanly in the first service game and keep double faults down.",
       "spreadRead": "Spread needs the posted number before grading.",
       "totalRead": "No total edge without posted number and first-set hold data.",
       "pick": {
         "name": "Valentin Vacherot",
-        "serviceHoldPct": 88,
-        "firstServeWonPct": 76,
-        "secondServeWonPct": 60,
-        "firstServePct": 61,
-        "avgAces": 10.5,
-        "avgDoubleFaults": 5,
-        "avgWinners": 39,
-        "avgUnforcedErrors": 39,
-        "avgBreakPointsFaced": 6,
-        "returnPointsWonPct": 35,
-        "servicePointsWonPct": 69,
+        "serviceHoldPct": 82,
+        "firstServeWonPct": 74,
+        "secondServeWonPct": 51,
+        "firstServePct": 62,
+        "avgAces": 6.3,
+        "avgDoubleFaults": 2.9,
+        "avgWinners": 26.9,
+        "avgUnforcedErrors": 31.7,
+        "avgBreakPointsFaced": 8.4,
+        "returnPointsWonPct": 38,
+        "servicePointsWonPct": 65,
         "weakServeMatches": 2,
         "pressureMatches": 6,
-        "matchesWithStats": 2,
-        "weaknessScore": 15,
-        "firstGameComfort": "Needs early holds confirmed",
+        "matchesWithStats": 7,
+        "weaknessScore": 12,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "double-fault pressure (5.0 avg)",
-          "limited return pressure (35% return points won)"
+          "faces too many break points (8.4 avg)"
         ],
         "strengths": [
-          "protects serve well (88% hold)",
-          "wins enough first-serve points (76%)",
-          "second serve holds up (60%)"
+          "protects serve well (82% hold)",
+          "wins enough first-serve points (74%)"
         ],
-        "gameFlowRead": "Valentin Vacherot can drop points quickly through double-fault pressure (5.0 avg) and limited return pressure (35% return points won)."
+        "gameFlowRead": "Valentin Vacherot can drop points quickly through faces too many break points (8.4 avg)."
       },
       "opponent": {
         "name": "Alejandro Tabilo",
@@ -6026,14 +6259,14 @@ const rawTennisGames = [
     "setWinProjections": [
       {
         "name": "Alejandro Tabilo",
-        "confidence": 74,
-        "modelPct": 45,
+        "confidence": 75,
+        "modelPct": 46,
         "label": "Live to win a set"
       },
       {
         "name": "Valentin Vacherot",
         "confidence": 84,
-        "modelPct": 55,
+        "modelPct": 54,
         "label": "Strong set-win path"
       }
     ],
@@ -6045,14 +6278,14 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Alejandro Tabilo",
-          "confidence": 74,
-          "modelPct": 45,
+          "confidence": 75,
+          "modelPct": 46,
           "label": "Live to win a set"
         },
         {
           "name": "Valentin Vacherot",
           "confidence": 84,
-          "modelPct": 55,
+          "modelPct": 54,
           "label": "Strong set-win path"
         }
       ]
@@ -6076,7 +6309,7 @@ const rawTennisGames = [
         },
         "qualityName": "Alejandro Tabilo",
         "profile": "Live rank #36 | CHI | age 28.9 | 2026 clay 23-9, 72% | adj form 69 | hold 71%",
-        "modelPct": 45,
+        "modelPct": 46,
         "weakness": {
           "name": "Alejandro Tabilo",
           "serviceHoldPct": 71,
@@ -6118,36 +6351,34 @@ const rawTennisGames = [
           "liveRankSource": "https://live-tennis.eu/en/atp-live-ranking browser snapshot"
         },
         "qualityName": "Valentin Vacherot",
-        "profile": "Live rank #19 | MON | age 27.5 | 2026 clay 5-2, 71% | adj form 72 | hold 88%",
-        "modelPct": 55,
+        "profile": "Live rank #19 | MON | age 27.5 | 2026 clay 5-2, 71% | adj form 72 | hold 82%",
+        "modelPct": 54,
         "weakness": {
           "name": "Valentin Vacherot",
-          "serviceHoldPct": 88,
-          "firstServeWonPct": 76,
-          "secondServeWonPct": 60,
-          "firstServePct": 61,
-          "avgAces": 10.5,
-          "avgDoubleFaults": 5,
-          "avgWinners": 39,
-          "avgUnforcedErrors": 39,
-          "avgBreakPointsFaced": 6,
-          "returnPointsWonPct": 35,
-          "servicePointsWonPct": 69,
+          "serviceHoldPct": 82,
+          "firstServeWonPct": 74,
+          "secondServeWonPct": 51,
+          "firstServePct": 62,
+          "avgAces": 6.3,
+          "avgDoubleFaults": 2.9,
+          "avgWinners": 26.9,
+          "avgUnforcedErrors": 31.7,
+          "avgBreakPointsFaced": 8.4,
+          "returnPointsWonPct": 38,
+          "servicePointsWonPct": 65,
           "weakServeMatches": 2,
           "pressureMatches": 6,
-          "matchesWithStats": 2,
-          "weaknessScore": 15,
-          "firstGameComfort": "Needs early holds confirmed",
+          "matchesWithStats": 7,
+          "weaknessScore": 12,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "double-fault pressure (5.0 avg)",
-            "limited return pressure (35% return points won)"
+            "faces too many break points (8.4 avg)"
           ],
           "strengths": [
-            "protects serve well (88% hold)",
-            "wins enough first-serve points (76%)",
-            "second serve holds up (60%)"
+            "protects serve well (82% hold)",
+            "wins enough first-serve points (74%)"
           ],
-          "gameFlowRead": "Valentin Vacherot can drop points quickly through double-fault pressure (5.0 avg) and limited return pressure (35% return points won)."
+          "gameFlowRead": "Valentin Vacherot can drop points quickly through faces too many break points (8.4 avg)."
         }
       }
     ]
@@ -6163,7 +6394,7 @@ const rawTennisGames = [
     "round": "Round 2",
     "pickName": "Madison Keys",
     "confidence": 72,
-    "volatility": 32,
+    "volatility": 31,
     "tags": [
       "Clay",
       "Roland Garros",
@@ -6173,15 +6404,15 @@ const rawTennisGames = [
       "WTA volatility tax",
       "Controlled volatility"
     ],
-    "reason": "Madison Keys has the recent service-hold edge 85% to 47%. Madison Keys grades 41 points better on opponent-adjusted recent form. Lean, not a chase.",
+    "reason": "Madison Keys has the recent service-hold edge 85% to 46%. Madison Keys grades 41 points better on opponent-adjusted recent form. Lean, not a chase.",
     "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
       "edgeType": "Weakness edge",
       "target": "Antonia Ruzic",
-      "scoreGap": 50,
+      "scoreGap": 53,
       "attackingSide": "Madison Keys",
       "vulnerableSide": "Antonia Ruzic",
-      "gameFlow": "Madison Keys has a real path if Antonia Ruzic's first two service games show the same weakness: low recent hold rate (47%); first-serve points won below comfort (57%).",
+      "gameFlow": "Madison Keys has a real path if Antonia Ruzic's first two service games show the same weakness: low recent hold rate (46%); first-serve points won below comfort (55%).",
       "liveTrigger": "Look for Antonia Ruzic facing break points or second-serve pressure before 3-3.",
       "spreadRead": "Madison Keys game spread is more interesting than ML if the number is short.",
       "totalRead": "Weak service profile points to breaks; be careful with low unders.",
@@ -6213,38 +6444,38 @@ const rawTennisGames = [
       },
       "opponent": {
         "name": "Antonia Ruzic",
-        "serviceHoldPct": 47,
-        "firstServeWonPct": 57,
-        "secondServeWonPct": 35,
-        "firstServePct": 63,
-        "avgAces": 0.6,
-        "avgDoubleFaults": 3.4,
+        "serviceHoldPct": 46,
+        "firstServeWonPct": 55,
+        "secondServeWonPct": 37,
+        "firstServePct": 64,
+        "avgAces": 0.5,
+        "avgDoubleFaults": 3.3,
         "avgWinners": 19,
         "avgUnforcedErrors": 35,
-        "avgBreakPointsFaced": 11.2,
-        "returnPointsWonPct": 41,
-        "servicePointsWonPct": 50,
-        "weakServeMatches": 3,
+        "avgBreakPointsFaced": 10.3,
+        "returnPointsWonPct": 39,
+        "servicePointsWonPct": 49,
+        "weakServeMatches": 4,
         "pressureMatches": 5,
-        "matchesWithStats": 5,
-        "weaknessScore": 52,
+        "matchesWithStats": 6,
+        "weaknessScore": 55,
         "firstGameComfort": "Fragile opening-service profile",
         "liabilities": [
-          "low recent hold rate (47%)",
-          "first-serve points won below comfort (57%)",
-          "second-serve points won are attackable (35%)",
+          "low recent hold rate (46%)",
+          "first-serve points won below comfort (55%)",
+          "second-serve points won are attackable (37%)",
           "negative winner/error balance (19.0 winners, 35.0 unforced)",
-          "faces too many break points (11.2 avg)",
-          "3 recent matches with serve instability"
+          "faces too many break points (10.3 avg)",
+          "4 recent matches with serve instability"
         ],
         "strengths": [],
-        "gameFlowRead": "Antonia Ruzic can drop points quickly through low recent hold rate (47%) and first-serve points won below comfort (57%)."
+        "gameFlowRead": "Antonia Ruzic can drop points quickly through low recent hold rate (46%) and first-serve points won below comfort (55%)."
       }
     },
     "setWinProjections": [
       {
         "name": "Antonia Ruzic",
-        "confidence": 35,
+        "confidence": 34,
         "modelPct": 28,
         "label": "Thin set-win path"
       },
@@ -6265,7 +6496,10 @@ const rawTennisGames = [
         "impliedPct": 87.8,
         "edgePct": -15.8,
         "evPer100": -18,
-        "valueGrade": "Negative EV",
+        "netEvPer100": -20,
+        "feePer100": 2,
+        "valueIssue": "Favorite tax trap",
+        "valueGrade": "Favorite tax trap",
         "betGrade": false
       },
       "spread": {
@@ -6277,8 +6511,11 @@ const rawTennisGames = [
         "impliedPct": 56.9,
         "edgePct": 13.1,
         "evPer100": 23,
-        "valueGrade": "Bet-grade value",
-        "betGrade": true
+        "netEvPer100": 21,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Watch only",
+        "betGrade": false
       },
       "total": {
         "marketType": "Total",
@@ -6289,13 +6526,16 @@ const rawTennisGames = [
         "impliedPct": 51,
         "edgePct": 13,
         "evPer100": 25.5,
-        "valueGrade": "Bet-grade value",
-        "betGrade": true
+        "netEvPer100": 23.5,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
+        "valueGrade": "Watch only",
+        "betGrade": false
       },
       "setWin": [
         {
           "name": "Antonia Ruzic",
-          "confidence": 35,
+          "confidence": 34,
           "modelPct": 28,
           "label": "Thin set-win path",
           "marketType": "Win a set",
@@ -6410,36 +6650,36 @@ const rawTennisGames = [
           "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
         },
         "qualityName": "Antonia Ruzic",
-        "profile": "Live rank #53 | CRO | age 23.3 | 2026 clay 5-6, 46% | adj form 45 | hold 47%",
+        "profile": "Live rank #53 | CRO | age 23.3 | 2026 clay 5-6, 46% | adj form 45 | hold 46%",
         "modelPct": 28,
         "weakness": {
           "name": "Antonia Ruzic",
-          "serviceHoldPct": 47,
-          "firstServeWonPct": 57,
-          "secondServeWonPct": 35,
-          "firstServePct": 63,
-          "avgAces": 0.6,
-          "avgDoubleFaults": 3.4,
+          "serviceHoldPct": 46,
+          "firstServeWonPct": 55,
+          "secondServeWonPct": 37,
+          "firstServePct": 64,
+          "avgAces": 0.5,
+          "avgDoubleFaults": 3.3,
           "avgWinners": 19,
           "avgUnforcedErrors": 35,
-          "avgBreakPointsFaced": 11.2,
-          "returnPointsWonPct": 41,
-          "servicePointsWonPct": 50,
-          "weakServeMatches": 3,
+          "avgBreakPointsFaced": 10.3,
+          "returnPointsWonPct": 39,
+          "servicePointsWonPct": 49,
+          "weakServeMatches": 4,
           "pressureMatches": 5,
-          "matchesWithStats": 5,
-          "weaknessScore": 52,
+          "matchesWithStats": 6,
+          "weaknessScore": 55,
           "firstGameComfort": "Fragile opening-service profile",
           "liabilities": [
-            "low recent hold rate (47%)",
-            "first-serve points won below comfort (57%)",
-            "second-serve points won are attackable (35%)",
+            "low recent hold rate (46%)",
+            "first-serve points won below comfort (55%)",
+            "second-serve points won are attackable (37%)",
             "negative winner/error balance (19.0 winners, 35.0 unforced)",
-            "faces too many break points (11.2 avg)",
-            "3 recent matches with serve instability"
+            "faces too many break points (10.3 avg)",
+            "4 recent matches with serve instability"
           ],
           "strengths": [],
-          "gameFlowRead": "Antonia Ruzic can drop points quickly through low recent hold rate (47%) and first-serve points won below comfort (57%)."
+          "gameFlowRead": "Antonia Ruzic can drop points quickly through low recent hold rate (46%) and first-serve points won below comfort (55%)."
         }
       },
       {
@@ -6590,7 +6830,10 @@ const rawTennisGames = [
         "impliedPct": 96.2,
         "edgePct": -32.2,
         "evPer100": -33.4,
-        "valueGrade": "Negative EV",
+        "netEvPer100": -35.4,
+        "feePer100": 2,
+        "valueIssue": "Favorite tax trap",
+        "valueGrade": "Favorite tax trap",
         "betGrade": false
       },
       "spread": {
@@ -6602,6 +6845,9 @@ const rawTennisGames = [
         "impliedPct": 60.3,
         "edgePct": -6.3,
         "evPer100": -10.5,
+        "netEvPer100": -12.5,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -6915,8 +7161,11 @@ const rawTennisGames = [
         "impliedPct": 13.2,
         "edgePct": 37.8,
         "evPer100": 287.6,
-        "valueGrade": "Bet-grade value",
-        "betGrade": true
+        "netEvPer100": 285.6,
+        "feePer100": 2,
+        "valueIssue": "Outlier price/manual review",
+        "valueGrade": "Outlier price/manual review",
+        "betGrade": false
       },
       "spread": null,
       "total": {
@@ -6928,6 +7177,9 @@ const rawTennisGames = [
         "impliedPct": 54.5,
         "edgePct": -11.5,
         "evPer100": -21.2,
+        "netEvPer100": -23.2,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -7238,6 +7490,9 @@ const rawTennisGames = [
         "impliedPct": 75.9,
         "edgePct": -11.9,
         "evPer100": -15.7,
+        "netEvPer100": -17.7,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -7250,6 +7505,9 @@ const rawTennisGames = [
         "impliedPct": 52.4,
         "edgePct": -0.4,
         "evPer100": -0.7,
+        "netEvPer100": -2.7,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
         "valueGrade": "Near fair",
         "betGrade": false
       },
@@ -7462,8 +7720,8 @@ const rawTennisGames = [
     "court": "Court 7",
     "round": "Round 2",
     "pickName": "Claire Liu",
-    "confidence": 56,
-    "volatility": 52,
+    "confidence": 58,
+    "volatility": 50,
     "tags": [
       "Clay",
       "Roland Garros",
@@ -7478,13 +7736,13 @@ const rawTennisGames = [
     "weaknessEdge": {
       "edgeType": "Weakness edge",
       "target": "Maria Sakkari",
-      "scoreGap": 14,
+      "scoreGap": 24,
       "attackingSide": "Claire Liu",
       "vulnerableSide": "Maria Sakkari",
-      "gameFlow": "Claire Liu has a real path if Maria Sakkari's first two service games show the same weakness: low recent hold rate (60%); first-serve points won below comfort (59%).",
+      "gameFlow": "Claire Liu has a real path if Maria Sakkari's first two service games show the same weakness: low recent hold rate (58%); first-serve points won below comfort (59%).",
       "liveTrigger": "Look for Maria Sakkari facing break points or second-serve pressure before 3-3.",
       "spreadRead": "Spread needs the posted number before grading.",
-      "totalRead": "No total edge without posted number and first-set hold data.",
+      "totalRead": "Weak service profile points to breaks; be careful with low unders.",
       "pick": {
         "name": "Claire Liu",
         "serviceHoldPct": null,
@@ -7509,41 +7767,44 @@ const rawTennisGames = [
       },
       "opponent": {
         "name": "Maria Sakkari",
-        "serviceHoldPct": 60,
+        "serviceHoldPct": 58,
         "firstServeWonPct": 59,
-        "secondServeWonPct": 51,
-        "firstServePct": 61,
-        "avgAces": 2.8,
-        "avgDoubleFaults": 2.4,
+        "secondServeWonPct": 46,
+        "firstServePct": 63,
+        "avgAces": 2.3,
+        "avgDoubleFaults": 2.1,
         "avgWinners": 24,
         "avgUnforcedErrors": 26,
-        "avgBreakPointsFaced": 7.8,
-        "returnPointsWonPct": 38,
-        "servicePointsWonPct": 55,
-        "weakServeMatches": 2,
+        "avgBreakPointsFaced": 8.8,
+        "returnPointsWonPct": 37,
+        "servicePointsWonPct": 54,
+        "weakServeMatches": 4,
         "pressureMatches": 3,
-        "matchesWithStats": 5,
-        "weaknessScore": 16,
-        "firstGameComfort": "Needs early holds confirmed",
+        "matchesWithStats": 8,
+        "weaknessScore": 26,
+        "firstGameComfort": "Fragile opening-service profile",
         "liabilities": [
-          "low recent hold rate (60%)",
-          "first-serve points won below comfort (59%)"
+          "low recent hold rate (58%)",
+          "first-serve points won below comfort (59%)",
+          "faces too many break points (8.8 avg)",
+          "4 recent matches with serve instability",
+          "limited return pressure (37% return points won)"
         ],
         "strengths": [],
-        "gameFlowRead": "Maria Sakkari can drop points quickly through low recent hold rate (60%) and first-serve points won below comfort (59%)."
+        "gameFlowRead": "Maria Sakkari can drop points quickly through low recent hold rate (58%) and first-serve points won below comfort (59%)."
       }
     },
     "setWinProjections": [
       {
         "name": "Maria Sakkari",
-        "confidence": 58,
-        "modelPct": 44,
+        "confidence": 55,
+        "modelPct": 42,
         "label": "Needs early hold pressure"
       },
       {
         "name": "Claire Liu",
-        "confidence": 73,
-        "modelPct": 56,
+        "confidence": 74,
+        "modelPct": 58,
         "label": "Live to win a set"
       }
     ],
@@ -7553,10 +7814,13 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Claire Liu",
         "americanOdds": 180,
-        "modelPct": 56,
+        "modelPct": 58,
         "impliedPct": 35.7,
-        "edgePct": 20.3,
-        "evPer100": 56.8,
+        "edgePct": 22.3,
+        "evPer100": 62.4,
+        "netEvPer100": 60.4,
+        "feePer100": 2,
+        "valueIssue": "Validated ML candidate",
         "valueGrade": "Bet-grade value",
         "betGrade": true
       },
@@ -7565,24 +7829,36 @@ const rawTennisGames = [
         "selection": "Claire Liu",
         "line": 3.5,
         "americanOdds": -112,
-        "modelPct": 54,
+        "modelPct": 56,
         "impliedPct": 52.8,
-        "edgePct": 1.2,
-        "evPer100": 2.2,
-        "valueGrade": "Near fair",
+        "edgePct": 3.2,
+        "evPer100": 6,
+        "netEvPer100": 4,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Raw positive EV",
         "betGrade": false
       },
       "total": {
         "marketType": "Total",
-        "selection": "No bet",
-        "valueGrade": "No direction",
+        "selection": "Over",
+        "line": 21.5,
+        "americanOdds": -116,
+        "modelPct": 50,
+        "impliedPct": 53.7,
+        "edgePct": -3.7,
+        "evPer100": -6.9,
+        "netEvPer100": -8.9,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
+        "valueGrade": "Negative EV",
         "betGrade": false
       },
       "setWin": [
         {
           "name": "Maria Sakkari",
-          "confidence": 58,
-          "modelPct": 44,
+          "confidence": 55,
+          "modelPct": 42,
           "label": "Needs early hold pressure",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -7590,8 +7866,8 @@ const rawTennisGames = [
         },
         {
           "name": "Claire Liu",
-          "confidence": 73,
-          "modelPct": 56,
+          "confidence": 74,
+          "modelPct": 58,
           "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -7612,8 +7888,8 @@ const rawTennisGames = [
           "americanLabel": "-220",
           "impliedPct": 68.8,
           "decimalOdds": 1.455,
-          "modelPct": 44,
-          "edgePct": -24.8,
+          "modelPct": 42,
+          "edgePct": -26.8,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 45.5,
           "grossPayoutMultiple": 1.455,
@@ -7626,8 +7902,8 @@ const rawTennisGames = [
           "americanLabel": "+180",
           "impliedPct": 35.7,
           "decimalOdds": 2.8,
-          "modelPct": 56,
-          "edgePct": 20.3,
+          "modelPct": 58,
+          "edgePct": 22.3,
           "priceBand": "Underdog",
           "grossProfitPct": 180,
           "grossPayoutMultiple": 2.8,
@@ -7641,8 +7917,8 @@ const rawTennisGames = [
         "americanLabel": "+180",
         "impliedPct": 35.7,
         "decimalOdds": 2.8,
-        "modelPct": 56,
-        "edgePct": 20.3,
+        "modelPct": 58,
+        "edgePct": 22.3,
         "priceBand": "Underdog",
         "grossProfitPct": 180,
         "grossPayoutMultiple": 2.8,
@@ -7674,10 +7950,10 @@ const rawTennisGames = [
       "spreadValue": "Claire Liu +3.5 (-112)",
       "totalValue": "21.5 games: Over -116 / Under -116",
       "spreadLean": "Claire Liu spread is playable only if early return pressure shows",
-      "totalLean": "Total needs live serve data before entry",
+      "totalLean": "Over or pass if early service games are loose",
       "mlValue": "Maria Sakkari -220 / Claire Liu +180",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. Model is meaningfully above FanDuel implied price.",
-      "noVigNote": "Model 56% vs FanDuel implied 35.7% (+20.3 pts)."
+      "noVigNote": "Model 58% vs FanDuel implied 35.7% (+22.3 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Maria-Sakkari-Vs-Claire-Liu/",
     "players": [
@@ -7696,32 +7972,35 @@ const rawTennisGames = [
           "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
         },
         "qualityName": "Maria Sakkari",
-        "profile": "Live rank #38 | GRE | age 30.8 | 2026 clay 2-4, 33% | adj form 36 | hold 60%",
-        "modelPct": 44,
+        "profile": "Live rank #38 | GRE | age 30.8 | 2026 clay 2-4, 33% | adj form 36 | hold 58%",
+        "modelPct": 42,
         "weakness": {
           "name": "Maria Sakkari",
-          "serviceHoldPct": 60,
+          "serviceHoldPct": 58,
           "firstServeWonPct": 59,
-          "secondServeWonPct": 51,
-          "firstServePct": 61,
-          "avgAces": 2.8,
-          "avgDoubleFaults": 2.4,
+          "secondServeWonPct": 46,
+          "firstServePct": 63,
+          "avgAces": 2.3,
+          "avgDoubleFaults": 2.1,
           "avgWinners": 24,
           "avgUnforcedErrors": 26,
-          "avgBreakPointsFaced": 7.8,
-          "returnPointsWonPct": 38,
-          "servicePointsWonPct": 55,
-          "weakServeMatches": 2,
+          "avgBreakPointsFaced": 8.8,
+          "returnPointsWonPct": 37,
+          "servicePointsWonPct": 54,
+          "weakServeMatches": 4,
           "pressureMatches": 3,
-          "matchesWithStats": 5,
-          "weaknessScore": 16,
-          "firstGameComfort": "Needs early holds confirmed",
+          "matchesWithStats": 8,
+          "weaknessScore": 26,
+          "firstGameComfort": "Fragile opening-service profile",
           "liabilities": [
-            "low recent hold rate (60%)",
-            "first-serve points won below comfort (59%)"
+            "low recent hold rate (58%)",
+            "first-serve points won below comfort (59%)",
+            "faces too many break points (8.8 avg)",
+            "4 recent matches with serve instability",
+            "limited return pressure (37% return points won)"
           ],
           "strengths": [],
-          "gameFlowRead": "Maria Sakkari can drop points quickly through low recent hold rate (60%) and first-serve points won below comfort (59%)."
+          "gameFlowRead": "Maria Sakkari can drop points quickly through low recent hold rate (58%) and first-serve points won below comfort (59%)."
         }
       },
       {
@@ -7740,7 +8019,7 @@ const rawTennisGames = [
         },
         "qualityName": "Claire Liu",
         "profile": "Live rank #142 | USA | age 26 | 2026 clay 15-4, 79% | adj form 117",
-        "modelPct": 56,
+        "modelPct": 58,
         "weakness": {
           "name": "Claire Liu",
           "serviceHoldPct": null,
@@ -7776,7 +8055,7 @@ const rawTennisGames = [
     "court": "Court Philippe-Chatrier",
     "round": "Round 2",
     "pickName": "Aryna Sabalenka",
-    "confidence": 77,
+    "confidence": 78,
     "volatility": 28,
     "tags": [
       "Clay",
@@ -7787,88 +8066,88 @@ const rawTennisGames = [
       "WTA volatility tax",
       "Controlled volatility"
     ],
-    "reason": "Aryna Sabalenka has the recent service-hold edge 78% to 58%. Aryna Sabalenka grades 51 points better on opponent-adjusted recent form. High win probability, but the ML still needs enough payout after comparing the book price to the model.",
+    "reason": "Aryna Sabalenka has the recent service-hold edge 80% to 55%. Aryna Sabalenka grades 51 points better on opponent-adjusted recent form. High win probability, but the ML still needs enough payout after comparing the book price to the model.",
     "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
       "edgeType": "Weakness edge",
       "target": "Elsa Jacquemot",
-      "scoreGap": 23,
+      "scoreGap": 28,
       "attackingSide": "Aryna Sabalenka",
       "vulnerableSide": "Elsa Jacquemot",
-      "gameFlow": "Aryna Sabalenka has a real path if Elsa Jacquemot's first two service games show the same weakness: low recent hold rate (58%); second-serve points won are attackable (39%).",
+      "gameFlow": "Aryna Sabalenka has a real path if Elsa Jacquemot's first two service games show the same weakness: low recent hold rate (55%); second-serve points won are attackable (38%).",
       "liveTrigger": "Look for Elsa Jacquemot facing break points or second-serve pressure before 3-3.",
       "spreadRead": "Aryna Sabalenka game spread is more interesting than ML if the number is short.",
       "totalRead": "Weak service profile points to breaks; be careful with low unders.",
       "pick": {
         "name": "Aryna Sabalenka",
-        "serviceHoldPct": 78,
-        "firstServeWonPct": 69,
-        "secondServeWonPct": 52,
-        "firstServePct": 66,
-        "avgAces": 2.7,
-        "avgDoubleFaults": 2.9,
+        "serviceHoldPct": 80,
+        "firstServeWonPct": 70,
+        "secondServeWonPct": 53,
+        "firstServePct": 65,
+        "avgAces": 2.8,
+        "avgDoubleFaults": 2.5,
         "avgWinners": 29,
         "avgUnforcedErrors": 25,
-        "avgBreakPointsFaced": 6.7,
-        "returnPointsWonPct": 47,
-        "servicePointsWonPct": 63,
+        "avgBreakPointsFaced": 6.1,
+        "returnPointsWonPct": 46,
+        "servicePointsWonPct": 64,
         "weakServeMatches": 4,
         "pressureMatches": 4,
-        "matchesWithStats": 7,
+        "matchesWithStats": 8,
         "weaknessScore": 11,
         "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
           "4 recent matches with serve instability"
         ],
         "strengths": [
-          "protects serve well (78% hold)",
+          "protects serve well (80% hold)",
           "positive winner/error balance (29.0 winners, 25.0 unforced)",
-          "creates return pressure (47% return points won)"
+          "creates return pressure (46% return points won)"
         ],
         "gameFlowRead": "Aryna Sabalenka can drop points quickly through 4 recent matches with serve instability."
       },
       "opponent": {
         "name": "Elsa Jacquemot",
-        "serviceHoldPct": 58,
-        "firstServeWonPct": 63,
-        "secondServeWonPct": 39,
+        "serviceHoldPct": 55,
+        "firstServeWonPct": 62,
+        "secondServeWonPct": 38,
         "firstServePct": 67,
-        "avgAces": 2.3,
-        "avgDoubleFaults": 5.5,
+        "avgAces": 2.4,
+        "avgDoubleFaults": 5.2,
         "avgWinners": 31,
         "avgUnforcedErrors": 23,
-        "avgBreakPointsFaced": 8.8,
-        "returnPointsWonPct": 40,
-        "servicePointsWonPct": 55,
-        "weakServeMatches": 3,
+        "avgBreakPointsFaced": 8.6,
+        "returnPointsWonPct": 41,
+        "servicePointsWonPct": 54,
+        "weakServeMatches": 4,
         "pressureMatches": 4,
-        "matchesWithStats": 4,
-        "weaknessScore": 34,
+        "matchesWithStats": 5,
+        "weaknessScore": 39,
         "firstGameComfort": "Fragile opening-service profile",
         "liabilities": [
-          "low recent hold rate (58%)",
-          "second-serve points won are attackable (39%)",
-          "double-fault pressure (5.5 avg)",
-          "faces too many break points (8.8 avg)",
-          "3 recent matches with serve instability"
+          "low recent hold rate (55%)",
+          "second-serve points won are attackable (38%)",
+          "double-fault pressure (5.2 avg)",
+          "faces too many break points (8.6 avg)",
+          "4 recent matches with serve instability"
         ],
         "strengths": [
           "positive winner/error balance (31.0 winners, 23.0 unforced)"
         ],
-        "gameFlowRead": "Elsa Jacquemot can drop points quickly through low recent hold rate (58%) and second-serve points won are attackable (39%)."
+        "gameFlowRead": "Elsa Jacquemot can drop points quickly through low recent hold rate (55%) and second-serve points won are attackable (38%)."
       }
     },
     "setWinProjections": [
       {
         "name": "Aryna Sabalenka",
         "confidence": 81,
-        "modelPct": 77,
+        "modelPct": 78,
         "label": "Live to win a set"
       },
       {
         "name": "Elsa Jacquemot",
-        "confidence": 31,
-        "modelPct": 23,
+        "confidence": 30,
+        "modelPct": 22,
         "label": "Thin set-win path"
       }
     ],
@@ -7878,11 +8157,14 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Aryna Sabalenka",
         "americanOdds": -8000,
-        "modelPct": 77,
+        "modelPct": 78,
         "impliedPct": 98.8,
-        "edgePct": -21.8,
-        "evPer100": -22,
-        "valueGrade": "Negative EV",
+        "edgePct": -20.8,
+        "evPer100": -21,
+        "netEvPer100": -23,
+        "feePer100": 2,
+        "valueIssue": "Fee/tax trap",
+        "valueGrade": "Fee/tax trap",
         "betGrade": false
       },
       "spread": {
@@ -7890,12 +8172,15 @@ const rawTennisGames = [
         "selection": "Aryna Sabalenka",
         "line": -7.5,
         "americanOdds": -134,
-        "modelPct": 71,
+        "modelPct": 72,
         "impliedPct": 57.3,
-        "edgePct": 13.7,
-        "evPer100": 24,
-        "valueGrade": "Bet-grade value",
-        "betGrade": true
+        "edgePct": 14.7,
+        "evPer100": 25.7,
+        "netEvPer100": 23.7,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Watch only",
+        "betGrade": false
       },
       "total": {
         "marketType": "Total",
@@ -7906,14 +8191,17 @@ const rawTennisGames = [
         "impliedPct": 51.9,
         "edgePct": 16.1,
         "evPer100": 31,
-        "valueGrade": "Bet-grade value",
-        "betGrade": true
+        "netEvPer100": 29,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
+        "valueGrade": "Watch only",
+        "betGrade": false
       },
       "setWin": [
         {
           "name": "Aryna Sabalenka",
           "confidence": 81,
-          "modelPct": 77,
+          "modelPct": 78,
           "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -7921,8 +8209,8 @@ const rawTennisGames = [
         },
         {
           "name": "Elsa Jacquemot",
-          "confidence": 31,
-          "modelPct": 23,
+          "confidence": 30,
+          "modelPct": 22,
           "label": "Thin set-win path",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -7943,8 +8231,8 @@ const rawTennisGames = [
           "americanLabel": "-8000",
           "impliedPct": 98.8,
           "decimalOdds": 1.012,
-          "modelPct": 77,
-          "edgePct": -21.8,
+          "modelPct": 78,
+          "edgePct": -20.8,
           "priceBand": "Very expensive favorite",
           "grossProfitPct": 1.3,
           "grossPayoutMultiple": 1.012,
@@ -7957,8 +8245,8 @@ const rawTennisGames = [
           "americanLabel": "+2200",
           "impliedPct": 4.3,
           "decimalOdds": 23,
-          "modelPct": 23,
-          "edgePct": 18.7,
+          "modelPct": 22,
+          "edgePct": 17.7,
           "priceBand": "Underdog",
           "grossProfitPct": 2200,
           "grossPayoutMultiple": 23,
@@ -7972,8 +8260,8 @@ const rawTennisGames = [
         "americanLabel": "-8000",
         "impliedPct": 98.8,
         "decimalOdds": 1.012,
-        "modelPct": 77,
-        "edgePct": -21.8,
+        "modelPct": 78,
+        "edgePct": -20.8,
         "priceBand": "Very expensive favorite",
         "grossProfitPct": 1.3,
         "grossPayoutMultiple": 1.012,
@@ -8008,7 +8296,7 @@ const rawTennisGames = [
       "totalLean": "Over or pass if early service games are loose",
       "mlValue": "Aryna Sabalenka -8000 / Elsa Jacquemot +2200",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. ML payout is tiny; use spread/total or pass unless the number moves.",
-      "noVigNote": "Model 77% vs FanDuel implied 98.8% (-21.8 pts)."
+      "noVigNote": "Model 78% vs FanDuel implied 98.8% (-20.8 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Aryna-Sabalenka-Vs-Elsa-Jacquemot/",
     "players": [
@@ -8027,33 +8315,33 @@ const rawTennisGames = [
           "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
         },
         "qualityName": "Aryna Sabalenka",
-        "profile": "Live rank #1 | BLR | age 28 | 2026 clay 5-2, 71% | adj form 89 | hold 78%",
-        "modelPct": 77,
+        "profile": "Live rank #1 | BLR | age 28 | 2026 clay 5-2, 71% | adj form 89 | hold 80%",
+        "modelPct": 78,
         "weakness": {
           "name": "Aryna Sabalenka",
-          "serviceHoldPct": 78,
-          "firstServeWonPct": 69,
-          "secondServeWonPct": 52,
-          "firstServePct": 66,
-          "avgAces": 2.7,
-          "avgDoubleFaults": 2.9,
+          "serviceHoldPct": 80,
+          "firstServeWonPct": 70,
+          "secondServeWonPct": 53,
+          "firstServePct": 65,
+          "avgAces": 2.8,
+          "avgDoubleFaults": 2.5,
           "avgWinners": 29,
           "avgUnforcedErrors": 25,
-          "avgBreakPointsFaced": 6.7,
-          "returnPointsWonPct": 47,
-          "servicePointsWonPct": 63,
+          "avgBreakPointsFaced": 6.1,
+          "returnPointsWonPct": 46,
+          "servicePointsWonPct": 64,
           "weakServeMatches": 4,
           "pressureMatches": 4,
-          "matchesWithStats": 7,
+          "matchesWithStats": 8,
           "weaknessScore": 11,
           "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
             "4 recent matches with serve instability"
           ],
           "strengths": [
-            "protects serve well (78% hold)",
+            "protects serve well (80% hold)",
             "positive winner/error balance (29.0 winners, 25.0 unforced)",
-            "creates return pressure (47% return points won)"
+            "creates return pressure (46% return points won)"
           ],
           "gameFlowRead": "Aryna Sabalenka can drop points quickly through 4 recent matches with serve instability."
         }
@@ -8073,37 +8361,37 @@ const rawTennisGames = [
           "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
         },
         "qualityName": "Elsa Jacquemot",
-        "profile": "Live rank #76 | FRA | age 23 | 2026 clay 4-6, 40% | adj form 39 | hold 58%",
-        "modelPct": 23,
+        "profile": "Live rank #76 | FRA | age 23 | 2026 clay 4-6, 40% | adj form 39 | hold 55%",
+        "modelPct": 22,
         "weakness": {
           "name": "Elsa Jacquemot",
-          "serviceHoldPct": 58,
-          "firstServeWonPct": 63,
-          "secondServeWonPct": 39,
+          "serviceHoldPct": 55,
+          "firstServeWonPct": 62,
+          "secondServeWonPct": 38,
           "firstServePct": 67,
-          "avgAces": 2.3,
-          "avgDoubleFaults": 5.5,
+          "avgAces": 2.4,
+          "avgDoubleFaults": 5.2,
           "avgWinners": 31,
           "avgUnforcedErrors": 23,
-          "avgBreakPointsFaced": 8.8,
-          "returnPointsWonPct": 40,
-          "servicePointsWonPct": 55,
-          "weakServeMatches": 3,
+          "avgBreakPointsFaced": 8.6,
+          "returnPointsWonPct": 41,
+          "servicePointsWonPct": 54,
+          "weakServeMatches": 4,
           "pressureMatches": 4,
-          "matchesWithStats": 4,
-          "weaknessScore": 34,
+          "matchesWithStats": 5,
+          "weaknessScore": 39,
           "firstGameComfort": "Fragile opening-service profile",
           "liabilities": [
-            "low recent hold rate (58%)",
-            "second-serve points won are attackable (39%)",
-            "double-fault pressure (5.5 avg)",
-            "faces too many break points (8.8 avg)",
-            "3 recent matches with serve instability"
+            "low recent hold rate (55%)",
+            "second-serve points won are attackable (38%)",
+            "double-fault pressure (5.2 avg)",
+            "faces too many break points (8.6 avg)",
+            "4 recent matches with serve instability"
           ],
           "strengths": [
             "positive winner/error balance (31.0 winners, 23.0 unforced)"
           ],
-          "gameFlowRead": "Elsa Jacquemot can drop points quickly through low recent hold rate (58%) and second-serve points won are attackable (39%)."
+          "gameFlowRead": "Elsa Jacquemot can drop points quickly through low recent hold rate (55%) and second-serve points won are attackable (38%)."
         }
       }
     ]
@@ -8210,6 +8498,9 @@ const rawTennisGames = [
         "impliedPct": 73.7,
         "edgePct": -7.7,
         "evPer100": -10.4,
+        "netEvPer100": -12.4,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -8222,7 +8513,10 @@ const rawTennisGames = [
         "impliedPct": 56.5,
         "edgePct": 3.5,
         "evPer100": 6.2,
-        "valueGrade": "Thin value",
+        "netEvPer100": 4.2,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Raw positive EV",
         "betGrade": false
       },
       "total": {
@@ -8426,8 +8720,8 @@ const rawTennisGames = [
     "court": "Court 7",
     "round": "Round 2",
     "pickName": "Brandon Nakashima",
-    "confidence": 66,
-    "volatility": 34,
+    "confidence": 64,
+    "volatility": 36,
     "tags": [
       "Clay",
       "Roland Garros",
@@ -8437,12 +8731,12 @@ const rawTennisGames = [
       "Men more stable",
       "Controlled volatility"
     ],
-    "reason": "Brandon Nakashima has the recent service-hold edge 89% to 60%. Brandon Nakashima grades 24 points better on opponent-adjusted recent form. Lean, not a chase.",
+    "reason": "Brandon Nakashima has the recent service-hold edge 80% to 60%. Brandon Nakashima grades 24 points better on opponent-adjusted recent form. Lean, not a chase.",
     "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
       "edgeType": "Weakness edge",
       "target": "Luca Van Assche",
-      "scoreGap": 20,
+      "scoreGap": 18,
       "attackingSide": "Brandon Nakashima",
       "vulnerableSide": "Luca Van Assche",
       "gameFlow": "Brandon Nakashima has a real path if Luca Van Assche's first two service games show the same weakness: low recent hold rate (60%); second-serve points won are attackable (44%).",
@@ -8451,26 +8745,26 @@ const rawTennisGames = [
       "totalRead": "No total edge without posted number and first-set hold data.",
       "pick": {
         "name": "Brandon Nakashima",
-        "serviceHoldPct": 89,
-        "firstServeWonPct": 78,
+        "serviceHoldPct": 80,
+        "firstServeWonPct": 74,
         "secondServeWonPct": 51,
-        "firstServePct": 69,
-        "avgAces": 8,
-        "avgDoubleFaults": 0.5,
-        "avgWinners": 22.5,
-        "avgUnforcedErrors": 24,
-        "avgBreakPointsFaced": 3,
-        "returnPointsWonPct": 38,
-        "servicePointsWonPct": 69,
-        "weakServeMatches": 0,
+        "firstServePct": 65,
+        "avgAces": 6.3,
+        "avgDoubleFaults": 0.8,
+        "avgWinners": 20.9,
+        "avgUnforcedErrors": 23.9,
+        "avgBreakPointsFaced": 3.8,
+        "returnPointsWonPct": 39,
+        "servicePointsWonPct": 66,
+        "weakServeMatches": 1,
         "pressureMatches": 5,
-        "matchesWithStats": 4,
-        "weaknessScore": 3,
+        "matchesWithStats": 8,
+        "weaknessScore": 5,
         "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [],
         "strengths": [
-          "protects serve well (89% hold)",
-          "wins enough first-serve points (78%)"
+          "protects serve well (80% hold)",
+          "wins enough first-serve points (74%)"
         ],
         "gameFlowRead": "Brandon Nakashima has no major service weakness in the joined Flashscore sample."
       },
@@ -8506,14 +8800,14 @@ const rawTennisGames = [
     "setWinProjections": [
       {
         "name": "Luca Van Assche",
-        "confidence": 61,
-        "modelPct": 34,
+        "confidence": 63,
+        "modelPct": 36,
         "label": "Needs early hold pressure"
       },
       {
         "name": "Brandon Nakashima",
-        "confidence": 88,
-        "modelPct": 66,
+        "confidence": 87,
+        "modelPct": 64,
         "label": "Strong set-win path"
       }
     ],
@@ -8523,10 +8817,13 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Brandon Nakashima",
         "americanOdds": -255,
-        "modelPct": 66,
+        "modelPct": 64,
         "impliedPct": 71.8,
-        "edgePct": -5.8,
-        "evPer100": -8.1,
+        "edgePct": -7.8,
+        "evPer100": -10.9,
+        "netEvPer100": -12.9,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -8535,12 +8832,15 @@ const rawTennisGames = [
         "selection": "Brandon Nakashima",
         "line": -4.5,
         "americanOdds": -120,
-        "modelPct": 64,
+        "modelPct": 62,
         "impliedPct": 54.5,
-        "edgePct": 9.5,
-        "evPer100": 17.3,
-        "valueGrade": "Bet-grade value",
-        "betGrade": true
+        "edgePct": 7.5,
+        "evPer100": 13.7,
+        "netEvPer100": 11.7,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Watch only",
+        "betGrade": false
       },
       "total": {
         "marketType": "Total",
@@ -8551,8 +8851,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Luca Van Assche",
-          "confidence": 61,
-          "modelPct": 34,
+          "confidence": 63,
+          "modelPct": 36,
           "label": "Needs early hold pressure",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -8560,8 +8860,8 @@ const rawTennisGames = [
         },
         {
           "name": "Brandon Nakashima",
-          "confidence": 88,
-          "modelPct": 66,
+          "confidence": 87,
+          "modelPct": 64,
           "label": "Strong set-win path",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -8582,8 +8882,8 @@ const rawTennisGames = [
           "americanLabel": "+205",
           "impliedPct": 32.8,
           "decimalOdds": 3.05,
-          "modelPct": 34,
-          "edgePct": 1.2,
+          "modelPct": 36,
+          "edgePct": 3.2,
           "priceBand": "Underdog",
           "grossProfitPct": 205,
           "grossPayoutMultiple": 3.05,
@@ -8596,8 +8896,8 @@ const rawTennisGames = [
           "americanLabel": "-255",
           "impliedPct": 71.8,
           "decimalOdds": 1.392,
-          "modelPct": 66,
-          "edgePct": -5.8,
+          "modelPct": 64,
+          "edgePct": -7.8,
           "priceBand": "Low-payout favorite",
           "grossProfitPct": 39.2,
           "grossPayoutMultiple": 1.392,
@@ -8611,8 +8911,8 @@ const rawTennisGames = [
         "americanLabel": "-255",
         "impliedPct": 71.8,
         "decimalOdds": 1.392,
-        "modelPct": 66,
-        "edgePct": -5.8,
+        "modelPct": 64,
+        "edgePct": -7.8,
         "priceBand": "Low-payout favorite",
         "grossProfitPct": 39.2,
         "grossPayoutMultiple": 1.392,
@@ -8647,7 +8947,7 @@ const rawTennisGames = [
       "totalLean": "Total needs live serve data before entry",
       "mlValue": "Luca Van Assche +205 / Brandon Nakashima -255",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
-      "noVigNote": "Model 66% vs FanDuel implied 71.8% (-5.8 pts)."
+      "noVigNote": "Model 64% vs FanDuel implied 71.8% (-7.8 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Luca-Van-Assche-Vs-Brandon-Nakashima/",
     "players": [
@@ -8667,7 +8967,7 @@ const rawTennisGames = [
         },
         "qualityName": "Luca Van Assche",
         "profile": "Live rank #92 | FRA | age 22 | 2026 clay 6-7, 46% | adj form 42 | hold 60%",
-        "modelPct": 34,
+        "modelPct": 36,
         "weakness": {
           "name": "Luca Van Assche",
           "serviceHoldPct": 60,
@@ -8712,30 +9012,30 @@ const rawTennisGames = [
           "liveRankSource": "https://live-tennis.eu/en/atp-live-ranking browser snapshot"
         },
         "qualityName": "Brandon Nakashima",
-        "profile": "Live rank #32 | USA | age 24.8 | 2026 clay 4-4, 50% | adj form 66 | hold 89%",
-        "modelPct": 66,
+        "profile": "Live rank #32 | USA | age 24.8 | 2026 clay 4-4, 50% | adj form 66 | hold 80%",
+        "modelPct": 64,
         "weakness": {
           "name": "Brandon Nakashima",
-          "serviceHoldPct": 89,
-          "firstServeWonPct": 78,
+          "serviceHoldPct": 80,
+          "firstServeWonPct": 74,
           "secondServeWonPct": 51,
-          "firstServePct": 69,
-          "avgAces": 8,
-          "avgDoubleFaults": 0.5,
-          "avgWinners": 22.5,
-          "avgUnforcedErrors": 24,
-          "avgBreakPointsFaced": 3,
-          "returnPointsWonPct": 38,
-          "servicePointsWonPct": 69,
-          "weakServeMatches": 0,
+          "firstServePct": 65,
+          "avgAces": 6.3,
+          "avgDoubleFaults": 0.8,
+          "avgWinners": 20.9,
+          "avgUnforcedErrors": 23.9,
+          "avgBreakPointsFaced": 3.8,
+          "returnPointsWonPct": 39,
+          "servicePointsWonPct": 66,
+          "weakServeMatches": 1,
           "pressureMatches": 5,
-          "matchesWithStats": 4,
-          "weaknessScore": 3,
+          "matchesWithStats": 8,
+          "weaknessScore": 5,
           "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [],
           "strengths": [
-            "protects serve well (89% hold)",
-            "wins enough first-serve points (78%)"
+            "protects serve well (80% hold)",
+            "wins enough first-serve points (74%)"
           ],
           "gameFlowRead": "Brandon Nakashima has no major service weakness in the joined Flashscore sample."
         }
@@ -8854,6 +9154,9 @@ const rawTennisGames = [
         "impliedPct": 40.7,
         "edgePct": 9.3,
         "evPer100": 23,
+        "netEvPer100": 21,
+        "feePer100": 2,
+        "valueIssue": "Validated ML candidate",
         "valueGrade": "Bet-grade value",
         "betGrade": true
       },
@@ -8866,6 +9169,9 @@ const rawTennisGames = [
         "impliedPct": 54.5,
         "edgePct": -12.5,
         "evPer100": -23,
+        "netEvPer100": -25,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -8878,6 +9184,9 @@ const rawTennisGames = [
         "impliedPct": 54.5,
         "edgePct": -12.5,
         "evPer100": -23,
+        "netEvPer100": -25,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -9086,23 +9395,23 @@ const rawTennisGames = [
     "court": "Court Suzanne-Lenglen",
     "round": "Round 2",
     "pickName": "Ben Shelton",
-    "confidence": 63,
+    "confidence": 64,
     "volatility": 37,
     "tags": [
       "Clay",
       "Roland Garros",
       "ATP",
-      "Watch only",
+      "Lean",
       "No blind bet",
       "Men more stable",
       "Controlled volatility"
     ],
-    "reason": "Ben Shelton has the recent service-hold edge 88% to 80%. Raphael Collignon grades 9 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
+    "reason": "Ben Shelton has the recent service-hold edge 92% to 80%. Raphael Collignon grades 9 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
     "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets.",
     "weaknessEdge": {
       "edgeType": "No clear weakness edge",
       "target": "Both sides",
-      "scoreGap": 0,
+      "scoreGap": 2,
       "attackingSide": null,
       "vulnerableSide": null,
       "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
@@ -9111,30 +9420,31 @@ const rawTennisGames = [
       "totalRead": "No total edge without posted number and first-set hold data.",
       "pick": {
         "name": "Ben Shelton",
-        "serviceHoldPct": 88,
-        "firstServeWonPct": 78,
-        "secondServeWonPct": 54,
-        "firstServePct": 68,
-        "avgAces": 7.6,
-        "avgDoubleFaults": 3.6,
-        "avgWinners": 37.4,
-        "avgUnforcedErrors": 39.6,
-        "avgBreakPointsFaced": 6,
-        "returnPointsWonPct": 33,
-        "servicePointsWonPct": 69,
+        "serviceHoldPct": 92,
+        "firstServeWonPct": 79,
+        "secondServeWonPct": 56,
+        "firstServePct": 65,
+        "avgAces": 6.9,
+        "avgDoubleFaults": 3.1,
+        "avgWinners": 32.3,
+        "avgUnforcedErrors": 34.6,
+        "avgBreakPointsFaced": 4.8,
+        "returnPointsWonPct": 34,
+        "servicePointsWonPct": 71,
         "weakServeMatches": 1,
         "pressureMatches": 6,
-        "matchesWithStats": 5,
-        "weaknessScore": 9,
+        "matchesWithStats": 8,
+        "weaknessScore": 7,
         "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "limited return pressure (33% return points won)"
+          "limited return pressure (34% return points won)"
         ],
         "strengths": [
-          "protects serve well (88% hold)",
-          "wins enough first-serve points (78%)"
+          "protects serve well (92% hold)",
+          "wins enough first-serve points (79%)",
+          "second serve holds up (56%)"
         ],
-        "gameFlowRead": "Ben Shelton can drop points quickly through limited return pressure (33% return points won)."
+        "gameFlowRead": "Ben Shelton can drop points quickly through limited return pressure (34% return points won)."
       },
       "opponent": {
         "name": "Raphael Collignon",
@@ -9167,14 +9477,14 @@ const rawTennisGames = [
     "setWinProjections": [
       {
         "name": "Raphael Collignon",
-        "confidence": 65,
-        "modelPct": 37,
+        "confidence": 64,
+        "modelPct": 36,
         "label": "Needs early hold pressure"
       },
       {
         "name": "Ben Shelton",
         "confidence": 87,
-        "modelPct": 63,
+        "modelPct": 64,
         "label": "Strong set-win path"
       }
     ],
@@ -9184,10 +9494,13 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Ben Shelton",
         "americanOdds": -210,
-        "modelPct": 63,
+        "modelPct": 64,
         "impliedPct": 67.7,
-        "edgePct": -4.7,
-        "evPer100": -7,
+        "edgePct": -3.7,
+        "evPer100": -5.5,
+        "netEvPer100": -7.5,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -9196,11 +9509,14 @@ const rawTennisGames = [
         "selection": "Ben Shelton",
         "line": -3.5,
         "americanOdds": -118,
-        "modelPct": 57,
+        "modelPct": 58,
         "impliedPct": 54.1,
-        "edgePct": 2.9,
-        "evPer100": 5.3,
-        "valueGrade": "Near fair",
+        "edgePct": 3.9,
+        "evPer100": 7.2,
+        "netEvPer100": 5.2,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Raw positive EV",
         "betGrade": false
       },
       "total": {
@@ -9208,18 +9524,21 @@ const rawTennisGames = [
         "selection": "Over",
         "line": 39.5,
         "americanOdds": -116,
-        "modelPct": 55,
+        "modelPct": 56,
         "impliedPct": 53.7,
-        "edgePct": 1.3,
-        "evPer100": 2.4,
+        "edgePct": 2.3,
+        "evPer100": 4.3,
+        "netEvPer100": 2.3,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
         "valueGrade": "Near fair",
         "betGrade": false
       },
       "setWin": [
         {
           "name": "Raphael Collignon",
-          "confidence": 65,
-          "modelPct": 37,
+          "confidence": 64,
+          "modelPct": 36,
           "label": "Needs early hold pressure",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -9228,7 +9547,7 @@ const rawTennisGames = [
         {
           "name": "Ben Shelton",
           "confidence": 87,
-          "modelPct": 63,
+          "modelPct": 64,
           "label": "Strong set-win path",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -9249,8 +9568,8 @@ const rawTennisGames = [
           "americanLabel": "+172",
           "impliedPct": 36.8,
           "decimalOdds": 2.72,
-          "modelPct": 37,
-          "edgePct": 0.2,
+          "modelPct": 36,
+          "edgePct": -0.8,
           "priceBand": "Underdog",
           "grossProfitPct": 172,
           "grossPayoutMultiple": 2.72,
@@ -9263,8 +9582,8 @@ const rawTennisGames = [
           "americanLabel": "-210",
           "impliedPct": 67.7,
           "decimalOdds": 1.476,
-          "modelPct": 63,
-          "edgePct": -4.7,
+          "modelPct": 64,
+          "edgePct": -3.7,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 47.6,
           "grossPayoutMultiple": 1.476,
@@ -9278,8 +9597,8 @@ const rawTennisGames = [
         "americanLabel": "-210",
         "impliedPct": 67.7,
         "decimalOdds": 1.476,
-        "modelPct": 63,
-        "edgePct": -4.7,
+        "modelPct": 64,
+        "edgePct": -3.7,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 47.6,
         "grossPayoutMultiple": 1.476,
@@ -9307,14 +9626,14 @@ const rawTennisGames = [
         "side": "Under",
         "odds": -116
       },
-      "priceAction": "FanDuel price is richer than the model; pass ML unless live state improves.",
+      "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge.",
       "spreadValue": "Ben Shelton -3.5 (-118)",
       "totalValue": "39.5 games: Over -116 / Under -116",
       "spreadLean": "Spread is number-dependent; verify first service cycle",
       "totalLean": "Over lean if both players hold early",
       "mlValue": "Raphael Collignon +172 / Ben Shelton -210",
-      "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. FanDuel price is richer than the model; pass ML unless live state improves.",
-      "noVigNote": "Model 63% vs FanDuel implied 67.7% (-4.7 pts)."
+      "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. ML is close to fair; derivative or live entry needs to carry the edge.",
+      "noVigNote": "Model 64% vs FanDuel implied 67.7% (-3.7 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Raphael-Collignon-Vs-Ben-Shelton/",
     "players": [
@@ -9334,7 +9653,7 @@ const rawTennisGames = [
         },
         "qualityName": "Raphael Collignon",
         "profile": "Live rank #52 | BEL | age 24.3 | 2026 clay 11-2, 85% | adj form 93 | hold 80%",
-        "modelPct": 37,
+        "modelPct": 36,
         "weakness": {
           "name": "Raphael Collignon",
           "serviceHoldPct": 80,
@@ -9378,34 +9697,35 @@ const rawTennisGames = [
           "liveRankSource": "https://live-tennis.eu/en/atp-live-ranking browser snapshot"
         },
         "qualityName": "Ben Shelton",
-        "profile": "Live rank #5 | USA | age 23.6 | 2026 clay 8-4, 67% | adj form 85 | hold 88%",
-        "modelPct": 63,
+        "profile": "Live rank #5 | USA | age 23.6 | 2026 clay 8-4, 67% | adj form 85 | hold 92%",
+        "modelPct": 64,
         "weakness": {
           "name": "Ben Shelton",
-          "serviceHoldPct": 88,
-          "firstServeWonPct": 78,
-          "secondServeWonPct": 54,
-          "firstServePct": 68,
-          "avgAces": 7.6,
-          "avgDoubleFaults": 3.6,
-          "avgWinners": 37.4,
-          "avgUnforcedErrors": 39.6,
-          "avgBreakPointsFaced": 6,
-          "returnPointsWonPct": 33,
-          "servicePointsWonPct": 69,
+          "serviceHoldPct": 92,
+          "firstServeWonPct": 79,
+          "secondServeWonPct": 56,
+          "firstServePct": 65,
+          "avgAces": 6.9,
+          "avgDoubleFaults": 3.1,
+          "avgWinners": 32.3,
+          "avgUnforcedErrors": 34.6,
+          "avgBreakPointsFaced": 4.8,
+          "returnPointsWonPct": 34,
+          "servicePointsWonPct": 71,
           "weakServeMatches": 1,
           "pressureMatches": 6,
-          "matchesWithStats": 5,
-          "weaknessScore": 9,
+          "matchesWithStats": 8,
+          "weaknessScore": 7,
           "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "limited return pressure (33% return points won)"
+            "limited return pressure (34% return points won)"
           ],
           "strengths": [
-            "protects serve well (88% hold)",
-            "wins enough first-serve points (78%)"
+            "protects serve well (92% hold)",
+            "wins enough first-serve points (79%)",
+            "second serve holds up (56%)"
           ],
-          "gameFlowRead": "Ben Shelton can drop points quickly through limited return pressure (33% return points won)."
+          "gameFlowRead": "Ben Shelton can drop points quickly through limited return pressure (34% return points won)."
         }
       }
     ]
@@ -9420,8 +9740,8 @@ const rawTennisGames = [
     "court": "Court 6",
     "round": "Round 2",
     "pickName": "Anastasia Potapova",
-    "confidence": 58,
-    "volatility": 49,
+    "confidence": 60,
+    "volatility": 47,
     "tags": [
       "Clay",
       "Roland Garros",
@@ -9431,12 +9751,12 @@ const rawTennisGames = [
       "WTA volatility tax",
       "Controlled volatility"
     ],
-    "reason": "Katie Boulter has the recent service-hold edge 79% to 66%, so Anastasia Potapova needs the rank/form edge to show up on return games. Anastasia Potapova grades 23 points better on opponent-adjusted recent form. Lean, not a chase.",
+    "reason": "Recent service hold is close: Anastasia Potapova 66%, Katie Boulter 65%. Anastasia Potapova grades 23 points better on opponent-adjusted recent form. Lean, not a chase.",
     "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
       "edgeType": "No clear weakness edge",
       "target": "Both sides",
-      "scoreGap": -6,
+      "scoreGap": 2,
       "attackingSide": null,
       "vulnerableSide": null,
       "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
@@ -9475,45 +9795,44 @@ const rawTennisGames = [
       },
       "opponent": {
         "name": "Katie Boulter",
-        "serviceHoldPct": 79,
-        "firstServeWonPct": 74,
-        "secondServeWonPct": 44,
-        "firstServePct": 61,
-        "avgAces": 3,
-        "avgDoubleFaults": 5.3,
+        "serviceHoldPct": 65,
+        "firstServeWonPct": 68,
+        "secondServeWonPct": 40,
+        "firstServePct": 63,
+        "avgAces": 2.8,
+        "avgDoubleFaults": 4.8,
         "avgWinners": 24,
         "avgUnforcedErrors": 35,
-        "avgBreakPointsFaced": 6.7,
-        "returnPointsWonPct": 41,
-        "servicePointsWonPct": 62,
-        "weakServeMatches": 2,
+        "avgBreakPointsFaced": 8.8,
+        "returnPointsWonPct": 44,
+        "servicePointsWonPct": 58,
+        "weakServeMatches": 3,
         "pressureMatches": 5,
-        "matchesWithStats": 3,
-        "weaknessScore": 19,
-        "firstGameComfort": "Needs early holds confirmed",
+        "matchesWithStats": 5,
+        "weaknessScore": 27,
+        "firstGameComfort": "Fragile opening-service profile",
         "liabilities": [
-          "second-serve points won are attackable (44%)",
-          "double-fault pressure (5.3 avg)",
-          "negative winner/error balance (24.0 winners, 35.0 unforced)"
+          "second-serve points won are attackable (40%)",
+          "double-fault pressure (4.8 avg)",
+          "negative winner/error balance (24.0 winners, 35.0 unforced)",
+          "faces too many break points (8.8 avg)",
+          "3 recent matches with serve instability"
         ],
-        "strengths": [
-          "protects serve well (79% hold)",
-          "wins enough first-serve points (74%)"
-        ],
-        "gameFlowRead": "Katie Boulter can drop points quickly through second-serve points won are attackable (44%) and double-fault pressure (5.3 avg)."
+        "strengths": [],
+        "gameFlowRead": "Katie Boulter can drop points quickly through second-serve points won are attackable (40%) and double-fault pressure (4.8 avg)."
       }
     },
     "setWinProjections": [
       {
         "name": "Katie Boulter",
-        "confidence": 55,
-        "modelPct": 42,
+        "confidence": 52,
+        "modelPct": 40,
         "label": "Needs early hold pressure"
       },
       {
         "name": "Anastasia Potapova",
-        "confidence": 70,
-        "modelPct": 58,
+        "confidence": 71,
+        "modelPct": 60,
         "label": "Live to win a set"
       }
     ],
@@ -9523,11 +9842,14 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Anastasia Potapova",
         "americanOdds": -465,
-        "modelPct": 58,
+        "modelPct": 60,
         "impliedPct": 82.3,
-        "edgePct": -24.3,
-        "evPer100": -29.5,
-        "valueGrade": "Negative EV",
+        "edgePct": -22.3,
+        "evPer100": -27.1,
+        "netEvPer100": -29.1,
+        "feePer100": 2,
+        "valueIssue": "Favorite tax trap",
+        "valueGrade": "Favorite tax trap",
         "betGrade": false
       },
       "spread": {
@@ -9535,11 +9857,14 @@ const rawTennisGames = [
         "selection": "Anastasia Potapova",
         "line": -5.5,
         "americanOdds": 104,
-        "modelPct": 52,
+        "modelPct": 54,
         "impliedPct": 49,
-        "edgePct": 3,
-        "evPer100": 6.1,
-        "valueGrade": "Thin value",
+        "edgePct": 5,
+        "evPer100": 10.2,
+        "netEvPer100": 8.2,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Watch only",
         "betGrade": false
       },
       "total": {
@@ -9547,18 +9872,21 @@ const rawTennisGames = [
         "selection": "Over",
         "line": 20.5,
         "americanOdds": -106,
-        "modelPct": 50,
+        "modelPct": 52,
         "impliedPct": 51.5,
-        "edgePct": -1.5,
-        "evPer100": -2.8,
+        "edgePct": 0.5,
+        "evPer100": 1.1,
+        "netEvPer100": -0.9,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
         "valueGrade": "Near fair",
         "betGrade": false
       },
       "setWin": [
         {
           "name": "Katie Boulter",
-          "confidence": 55,
-          "modelPct": 42,
+          "confidence": 52,
+          "modelPct": 40,
           "label": "Needs early hold pressure",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -9566,8 +9894,8 @@ const rawTennisGames = [
         },
         {
           "name": "Anastasia Potapova",
-          "confidence": 70,
-          "modelPct": 58,
+          "confidence": 71,
+          "modelPct": 60,
           "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -9588,8 +9916,8 @@ const rawTennisGames = [
           "americanLabel": "+350",
           "impliedPct": 22.2,
           "decimalOdds": 4.5,
-          "modelPct": 42,
-          "edgePct": 19.8,
+          "modelPct": 40,
+          "edgePct": 17.8,
           "priceBand": "Underdog",
           "grossProfitPct": 350,
           "grossPayoutMultiple": 4.5,
@@ -9602,8 +9930,8 @@ const rawTennisGames = [
           "americanLabel": "-465",
           "impliedPct": 82.3,
           "decimalOdds": 1.215,
-          "modelPct": 58,
-          "edgePct": -24.3,
+          "modelPct": 60,
+          "edgePct": -22.3,
           "priceBand": "Very expensive favorite",
           "grossProfitPct": 21.5,
           "grossPayoutMultiple": 1.215,
@@ -9617,8 +9945,8 @@ const rawTennisGames = [
         "americanLabel": "-465",
         "impliedPct": 82.3,
         "decimalOdds": 1.215,
-        "modelPct": 58,
-        "edgePct": -24.3,
+        "modelPct": 60,
+        "edgePct": -22.3,
         "priceBand": "Very expensive favorite",
         "grossProfitPct": 21.5,
         "grossPayoutMultiple": 1.215,
@@ -9653,7 +9981,7 @@ const rawTennisGames = [
       "totalLean": "Over or pass if early service games are loose",
       "mlValue": "Katie Boulter +350 / Anastasia Potapova -465",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. ML payout is tiny; use spread/total or pass unless the number moves.",
-      "noVigNote": "Model 58% vs FanDuel implied 82.3% (-24.3 pts)."
+      "noVigNote": "Model 60% vs FanDuel implied 82.3% (-22.3 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Katie-Boulter-Vs-Anastasia-Potapova/",
     "players": [
@@ -9672,36 +10000,35 @@ const rawTennisGames = [
           "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
         },
         "qualityName": "Katie Boulter",
-        "profile": "Live rank #69 | GBR | age 29.8 | 2026 clay 5-5, 50% | adj form 61 | hold 79%",
-        "modelPct": 42,
+        "profile": "Live rank #69 | GBR | age 29.8 | 2026 clay 5-5, 50% | adj form 61 | hold 65%",
+        "modelPct": 40,
         "weakness": {
           "name": "Katie Boulter",
-          "serviceHoldPct": 79,
-          "firstServeWonPct": 74,
-          "secondServeWonPct": 44,
-          "firstServePct": 61,
-          "avgAces": 3,
-          "avgDoubleFaults": 5.3,
+          "serviceHoldPct": 65,
+          "firstServeWonPct": 68,
+          "secondServeWonPct": 40,
+          "firstServePct": 63,
+          "avgAces": 2.8,
+          "avgDoubleFaults": 4.8,
           "avgWinners": 24,
           "avgUnforcedErrors": 35,
-          "avgBreakPointsFaced": 6.7,
-          "returnPointsWonPct": 41,
-          "servicePointsWonPct": 62,
-          "weakServeMatches": 2,
+          "avgBreakPointsFaced": 8.8,
+          "returnPointsWonPct": 44,
+          "servicePointsWonPct": 58,
+          "weakServeMatches": 3,
           "pressureMatches": 5,
-          "matchesWithStats": 3,
-          "weaknessScore": 19,
-          "firstGameComfort": "Needs early holds confirmed",
+          "matchesWithStats": 5,
+          "weaknessScore": 27,
+          "firstGameComfort": "Fragile opening-service profile",
           "liabilities": [
-            "second-serve points won are attackable (44%)",
-            "double-fault pressure (5.3 avg)",
-            "negative winner/error balance (24.0 winners, 35.0 unforced)"
+            "second-serve points won are attackable (40%)",
+            "double-fault pressure (4.8 avg)",
+            "negative winner/error balance (24.0 winners, 35.0 unforced)",
+            "faces too many break points (8.8 avg)",
+            "3 recent matches with serve instability"
           ],
-          "strengths": [
-            "protects serve well (79% hold)",
-            "wins enough first-serve points (74%)"
-          ],
-          "gameFlowRead": "Katie Boulter can drop points quickly through second-serve points won are attackable (44%) and double-fault pressure (5.3 avg)."
+          "strengths": [],
+          "gameFlowRead": "Katie Boulter can drop points quickly through second-serve points won are attackable (40%) and double-fault pressure (4.8 avg)."
         }
       },
       {
@@ -9720,7 +10047,7 @@ const rawTennisGames = [
         },
         "qualityName": "Anastasia Potapova",
         "profile": "Live rank #29 | AUT | age 25.1 | 2026 clay 15-4, 79% | adj form 85 | hold 66%",
-        "modelPct": 58,
+        "modelPct": 60,
         "weakness": {
           "name": "Anastasia Potapova",
           "serviceHoldPct": 66,
@@ -9775,45 +10102,44 @@ const rawTennisGames = [
       "WTA volatility tax",
       "Controlled volatility"
     ],
-    "reason": "Katerina Siniakova has the recent service-hold edge 75% to 70%, so Victoria Mboko needs the rank/form edge to show up on return games. Victoria Mboko grades 7 points better on opponent-adjusted recent form. Lean, not a chase.",
+    "reason": "Recent service hold is close: Victoria Mboko 76%, Katerina Siniakova 75%. Victoria Mboko grades 7 points better on opponent-adjusted recent form. Lean, not a chase.",
     "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Weakness edge",
-      "target": "Katerina Siniakova",
-      "scoreGap": 8,
-      "attackingSide": "Victoria Mboko",
-      "vulnerableSide": "Katerina Siniakova",
-      "gameFlow": "Victoria Mboko has a real path if Katerina Siniakova's first two service games show the same weakness: double-fault pressure (4.4 avg); negative winner/error balance (17.0 winners, 39.0 unforced).",
-      "liveTrigger": "Look for Katerina Siniakova facing break points or second-serve pressure before 3-3.",
-      "spreadRead": "Victoria Mboko game spread is more interesting than ML if the number is short.",
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 6,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "Spread needs the posted number before grading.",
       "totalRead": "Weak service profile points to breaks; be careful with low unders.",
       "pick": {
         "name": "Victoria Mboko",
-        "serviceHoldPct": 70,
-        "firstServeWonPct": 64,
+        "serviceHoldPct": 76,
+        "firstServeWonPct": 67,
         "secondServeWonPct": 52,
-        "firstServePct": 64,
-        "avgAces": 3.5,
-        "avgDoubleFaults": 4.3,
+        "firstServePct": 66,
+        "avgAces": 4.5,
+        "avgDoubleFaults": 4.9,
         "avgWinners": 22,
         "avgUnforcedErrors": 15,
-        "avgBreakPointsFaced": 8.3,
-        "returnPointsWonPct": 44,
-        "servicePointsWonPct": 59,
-        "weakServeMatches": 4,
+        "avgBreakPointsFaced": 7,
+        "returnPointsWonPct": 42,
+        "servicePointsWonPct": 61,
+        "weakServeMatches": 5,
         "pressureMatches": 4,
-        "matchesWithStats": 6,
-        "weaknessScore": 17,
+        "matchesWithStats": 8,
+        "weaknessScore": 19,
         "firstGameComfort": "Needs early holds confirmed",
         "liabilities": [
-          "double-fault pressure (4.3 avg)",
-          "faces too many break points (8.3 avg)",
-          "4 recent matches with serve instability"
+          "double-fault pressure (4.9 avg)",
+          "5 recent matches with serve instability"
         ],
         "strengths": [
           "positive winner/error balance (22.0 winners, 15.0 unforced)"
         ],
-        "gameFlowRead": "Victoria Mboko can drop points quickly through double-fault pressure (4.3 avg) and faces too many break points (8.3 avg)."
+        "gameFlowRead": "Victoria Mboko can drop points quickly through double-fault pressure (4.9 avg) and 5 recent matches with serve instability."
       },
       "opponent": {
         "name": "Katerina Siniakova",
@@ -9848,7 +10174,7 @@ const rawTennisGames = [
     "setWinProjections": [
       {
         "name": "Victoria Mboko",
-        "confidence": 73,
+        "confidence": 72,
         "modelPct": 61,
         "label": "Live to win a set"
       },
@@ -9869,6 +10195,9 @@ const rawTennisGames = [
         "impliedPct": 73.7,
         "edgePct": -12.7,
         "evPer100": -17.2,
+        "netEvPer100": -19.2,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
@@ -9877,12 +10206,15 @@ const rawTennisGames = [
         "selection": "Victoria Mboko",
         "line": -4.5,
         "americanOdds": -108,
-        "modelPct": 59,
+        "modelPct": 55,
         "impliedPct": 51.9,
-        "edgePct": 7.1,
-        "evPer100": 13.6,
-        "valueGrade": "Bet-grade value",
-        "betGrade": true
+        "edgePct": 3.1,
+        "evPer100": 5.9,
+        "netEvPer100": 3.9,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Raw positive EV",
+        "betGrade": false
       },
       "total": {
         "marketType": "Total",
@@ -9893,13 +10225,16 @@ const rawTennisGames = [
         "impliedPct": 55,
         "edgePct": -2,
         "evPer100": -3.6,
+        "netEvPer100": -5.6,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
         "valueGrade": "Near fair",
         "betGrade": false
       },
       "setWin": [
         {
           "name": "Victoria Mboko",
-          "confidence": 73,
+          "confidence": 72,
           "modelPct": 61,
           "label": "Live to win a set",
           "marketType": "Win a set",
@@ -10014,35 +10349,34 @@ const rawTennisGames = [
           "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
         },
         "qualityName": "Victoria Mboko",
-        "profile": "Live rank #9 | CAN | age 19.7 | 2026 clay 4-2, 67% | adj form 74 | hold 70%",
+        "profile": "Live rank #9 | CAN | age 19.7 | 2026 clay 4-2, 67% | adj form 74 | hold 76%",
         "modelPct": 61,
         "weakness": {
           "name": "Victoria Mboko",
-          "serviceHoldPct": 70,
-          "firstServeWonPct": 64,
+          "serviceHoldPct": 76,
+          "firstServeWonPct": 67,
           "secondServeWonPct": 52,
-          "firstServePct": 64,
-          "avgAces": 3.5,
-          "avgDoubleFaults": 4.3,
+          "firstServePct": 66,
+          "avgAces": 4.5,
+          "avgDoubleFaults": 4.9,
           "avgWinners": 22,
           "avgUnforcedErrors": 15,
-          "avgBreakPointsFaced": 8.3,
-          "returnPointsWonPct": 44,
-          "servicePointsWonPct": 59,
-          "weakServeMatches": 4,
+          "avgBreakPointsFaced": 7,
+          "returnPointsWonPct": 42,
+          "servicePointsWonPct": 61,
+          "weakServeMatches": 5,
           "pressureMatches": 4,
-          "matchesWithStats": 6,
-          "weaknessScore": 17,
+          "matchesWithStats": 8,
+          "weaknessScore": 19,
           "firstGameComfort": "Needs early holds confirmed",
           "liabilities": [
-            "double-fault pressure (4.3 avg)",
-            "faces too many break points (8.3 avg)",
-            "4 recent matches with serve instability"
+            "double-fault pressure (4.9 avg)",
+            "5 recent matches with serve instability"
           ],
           "strengths": [
             "positive winner/error balance (22.0 winners, 15.0 unforced)"
           ],
-          "gameFlowRead": "Victoria Mboko can drop points quickly through double-fault pressure (4.3 avg) and faces too many break points (8.3 avg)."
+          "gameFlowRead": "Victoria Mboko can drop points quickly through double-fault pressure (4.9 avg) and 5 recent matches with serve instability."
         }
       },
       {
@@ -10104,8 +10438,8 @@ const rawTennisGames = [
     "court": "Court Philippe-Chatrier",
     "round": "Round 2",
     "pickName": "Arthur Rinderknech",
-    "confidence": 59,
-    "volatility": 41,
+    "confidence": 58,
+    "volatility": 43,
     "tags": [
       "Clay",
       "Roland Garros",
@@ -10115,12 +10449,12 @@ const rawTennisGames = [
       "Men more stable",
       "Controlled volatility"
     ],
-    "reason": "Arthur Rinderknech has the recent service-hold edge 92% to 79%. Opponent-adjusted recent form is basically even: Arthur Rinderknech 61, Matteo Berrettini 64. Lean, not a chase.",
+    "reason": "Arthur Rinderknech has the recent service-hold edge 87% to 79%. Opponent-adjusted recent form is basically even: Arthur Rinderknech 61, Matteo Berrettini 64. Lean, not a chase.",
     "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets.",
     "weaknessEdge": {
       "edgeType": "No clear weakness edge",
       "target": "Both sides",
-      "scoreGap": -3,
+      "scoreGap": -6,
       "attackingSide": null,
       "vulnerableSide": null,
       "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
@@ -10129,29 +10463,31 @@ const rawTennisGames = [
       "totalRead": "No total edge without posted number and first-set hold data.",
       "pick": {
         "name": "Arthur Rinderknech",
-        "serviceHoldPct": 92,
-        "firstServeWonPct": 81,
-        "secondServeWonPct": 55,
+        "serviceHoldPct": 87,
+        "firstServeWonPct": 78,
+        "secondServeWonPct": 52,
         "firstServePct": 65,
-        "avgAces": 12,
-        "avgDoubleFaults": 3,
-        "avgWinners": 33.7,
-        "avgUnforcedErrors": 25.5,
-        "avgBreakPointsFaced": 5,
-        "returnPointsWonPct": 40,
-        "servicePointsWonPct": 71,
-        "weakServeMatches": 2,
+        "avgAces": 10.9,
+        "avgDoubleFaults": 3.3,
+        "avgWinners": 32.3,
+        "avgUnforcedErrors": 25.3,
+        "avgBreakPointsFaced": 5.3,
+        "returnPointsWonPct": 39,
+        "servicePointsWonPct": 69,
+        "weakServeMatches": 3,
         "pressureMatches": 4,
-        "matchesWithStats": 6,
-        "weaknessScore": 6,
+        "matchesWithStats": 7,
+        "weaknessScore": 9,
         "firstGameComfort": "Comfortable enough if first serve lands",
-        "liabilities": [],
-        "strengths": [
-          "protects serve well (92% hold)",
-          "wins enough first-serve points (81%)",
-          "positive winner/error balance (33.7 winners, 25.5 unforced)"
+        "liabilities": [
+          "3 recent matches with serve instability"
         ],
-        "gameFlowRead": "Arthur Rinderknech has no major service weakness in the joined Flashscore sample."
+        "strengths": [
+          "protects serve well (87% hold)",
+          "wins enough first-serve points (78%)",
+          "positive winner/error balance (32.3 winners, 25.3 unforced)"
+        ],
+        "gameFlowRead": "Arthur Rinderknech can drop points quickly through 3 recent matches with serve instability."
       },
       "opponent": {
         "name": "Matteo Berrettini",
@@ -10184,14 +10520,14 @@ const rawTennisGames = [
     "setWinProjections": [
       {
         "name": "Arthur Rinderknech",
-        "confidence": 86,
-        "modelPct": 59,
+        "confidence": 85,
+        "modelPct": 58,
         "label": "Strong set-win path"
       },
       {
         "name": "Matteo Berrettini",
-        "confidence": 70,
-        "modelPct": 41,
+        "confidence": 71,
+        "modelPct": 42,
         "label": "Live to win a set"
       }
     ],
@@ -10201,11 +10537,14 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Arthur Rinderknech",
         "americanOdds": -110,
-        "modelPct": 59,
+        "modelPct": 58,
         "impliedPct": 52.4,
-        "edgePct": 6.6,
-        "evPer100": 12.6,
-        "valueGrade": "Thin value",
+        "edgePct": 5.6,
+        "evPer100": 10.7,
+        "netEvPer100": 8.7,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Favorite price needs better proof",
         "betGrade": false
       },
       "spread": {
@@ -10213,10 +10552,13 @@ const rawTennisGames = [
         "selection": "Arthur Rinderknech",
         "line": -0.5,
         "americanOdds": -110,
-        "modelPct": 53,
+        "modelPct": 52,
         "impliedPct": 52.4,
-        "edgePct": 0.6,
-        "evPer100": 1.2,
+        "edgePct": -0.4,
+        "evPer100": -0.7,
+        "netEvPer100": -2.7,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
         "valueGrade": "Near fair",
         "betGrade": false
       },
@@ -10225,18 +10567,21 @@ const rawTennisGames = [
         "selection": "Over",
         "line": 40.5,
         "americanOdds": -120,
-        "modelPct": 51,
+        "modelPct": 50,
         "impliedPct": 54.5,
-        "edgePct": -3.5,
-        "evPer100": -6.5,
+        "edgePct": -4.5,
+        "evPer100": -8.3,
+        "netEvPer100": -10.3,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
       "setWin": [
         {
           "name": "Arthur Rinderknech",
-          "confidence": 86,
-          "modelPct": 59,
+          "confidence": 85,
+          "modelPct": 58,
           "label": "Strong set-win path",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -10244,8 +10589,8 @@ const rawTennisGames = [
         },
         {
           "name": "Matteo Berrettini",
-          "confidence": 70,
-          "modelPct": 41,
+          "confidence": 71,
+          "modelPct": 42,
           "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -10266,8 +10611,8 @@ const rawTennisGames = [
           "americanLabel": "-110",
           "impliedPct": 52.4,
           "decimalOdds": 1.909,
-          "modelPct": 59,
-          "edgePct": 6.6,
+          "modelPct": 58,
+          "edgePct": 5.6,
           "priceBand": "Coinflip",
           "grossProfitPct": 90.9,
           "grossPayoutMultiple": 1.909,
@@ -10280,8 +10625,8 @@ const rawTennisGames = [
           "americanLabel": "-110",
           "impliedPct": 52.4,
           "decimalOdds": 1.909,
-          "modelPct": 41,
-          "edgePct": -11.4,
+          "modelPct": 42,
+          "edgePct": -10.4,
           "priceBand": "Coinflip",
           "grossProfitPct": 90.9,
           "grossPayoutMultiple": 1.909,
@@ -10295,8 +10640,8 @@ const rawTennisGames = [
         "americanLabel": "-110",
         "impliedPct": 52.4,
         "decimalOdds": 1.909,
-        "modelPct": 59,
-        "edgePct": 6.6,
+        "modelPct": 58,
+        "edgePct": 5.6,
         "priceBand": "Coinflip",
         "grossProfitPct": 90.9,
         "grossPayoutMultiple": 1.909,
@@ -10331,7 +10676,7 @@ const rawTennisGames = [
       "totalLean": "Over lean if both players hold early",
       "mlValue": "Arthur Rinderknech -110 / Matteo Berrettini -110",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. ML is close to fair; derivative or live entry needs to carry the edge.",
-      "noVigNote": "Model 59% vs FanDuel implied 52.4% (+6.6 pts)."
+      "noVigNote": "Model 58% vs FanDuel implied 52.4% (+5.6 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Arthur-Rinderknech-Vs-Matteo-Berrettini/",
     "players": [
@@ -10350,33 +10695,35 @@ const rawTennisGames = [
           "liveRankSource": "https://live-tennis.eu/en/atp-live-ranking browser snapshot"
         },
         "qualityName": "Arthur Rinderknech",
-        "profile": "Live rank #22 | FRA | age 30.8 | 2026 clay 6-5, 55% | adj form 61 | hold 92%",
-        "modelPct": 59,
+        "profile": "Live rank #22 | FRA | age 30.8 | 2026 clay 6-5, 55% | adj form 61 | hold 87%",
+        "modelPct": 58,
         "weakness": {
           "name": "Arthur Rinderknech",
-          "serviceHoldPct": 92,
-          "firstServeWonPct": 81,
-          "secondServeWonPct": 55,
+          "serviceHoldPct": 87,
+          "firstServeWonPct": 78,
+          "secondServeWonPct": 52,
           "firstServePct": 65,
-          "avgAces": 12,
-          "avgDoubleFaults": 3,
-          "avgWinners": 33.7,
-          "avgUnforcedErrors": 25.5,
-          "avgBreakPointsFaced": 5,
-          "returnPointsWonPct": 40,
-          "servicePointsWonPct": 71,
-          "weakServeMatches": 2,
+          "avgAces": 10.9,
+          "avgDoubleFaults": 3.3,
+          "avgWinners": 32.3,
+          "avgUnforcedErrors": 25.3,
+          "avgBreakPointsFaced": 5.3,
+          "returnPointsWonPct": 39,
+          "servicePointsWonPct": 69,
+          "weakServeMatches": 3,
           "pressureMatches": 4,
-          "matchesWithStats": 6,
-          "weaknessScore": 6,
+          "matchesWithStats": 7,
+          "weaknessScore": 9,
           "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [],
-          "strengths": [
-            "protects serve well (92% hold)",
-            "wins enough first-serve points (81%)",
-            "positive winner/error balance (33.7 winners, 25.5 unforced)"
+          "liabilities": [
+            "3 recent matches with serve instability"
           ],
-          "gameFlowRead": "Arthur Rinderknech has no major service weakness in the joined Flashscore sample."
+          "strengths": [
+            "protects serve well (87% hold)",
+            "wins enough first-serve points (78%)",
+            "positive winner/error balance (32.3 winners, 25.3 unforced)"
+          ],
+          "gameFlowRead": "Arthur Rinderknech can drop points quickly through 3 recent matches with serve instability."
         }
       },
       {
@@ -10395,7 +10742,7 @@ const rawTennisGames = [
         },
         "qualityName": "Matteo Berrettini",
         "profile": "Live rank #90 | ITA | age 30.1 | 2026 clay 9-9, 50% | adj form 64 | hold 79%",
-        "modelPct": 41,
+        "modelPct": 42,
         "weakness": {
           "name": "Matteo Berrettini",
           "serviceHoldPct": 79,
@@ -10576,9 +10923,39 @@ const buildGame = (raw) => {
 }
 
 const matches = rawTennisGames.map(buildGame)
+const mlbIdCounts = new Map()
+const mlbGames = rawGames.map((raw) => {
+  const seen = mlbIdCounts.get(raw.id) ?? 0
+  mlbIdCounts.set(raw.id, seen + 1)
+  return buildMlbGame(raw, seen)
+})
 
-export const slateMeta = { title: 'Roland Garros May 28 Tennis Desk', date: 'May 28, 2026', isoDate: '2026-05-28', timeZone: 'America/Los_Angeles', subtitle: 'Singles-only Roland Garros Round 2 slate with weakness-edge, game-flow gates, and FanDuel ML/spread/total lines.', notes: ['No doubles included.', 'FanDuel ML, game handicap, and total-games lines are attached where the sportsbook board exposed a May 28 singles event.', 'May 28 uses live rank, clay record, opponent-adjusted recent form, and Flashscore recent service rows where joined.'] }
-export const filters = ['All', 'Tennis']
-export const oddsMeta = { provider: 'FanDuel Sportsbook + Tennis warehouse model', snapshot: 'May 28, 2026 Roland Garros desk', note: 'FanDuel lines are stored for priced matches; very expensive favorites are marked as low-payout or pass-first instead of automatic bets.' }
-export const sources = [{ label: 'ESPN tennis scoreboard', url: 'https://www.espn.com/tennis/scoreboard/_/date/20260528' }, { label: 'Live Tennis rankings warehouse', url: 'https://live-tennis.eu/' }, { label: 'FanDuel sportsbook tennis', url: 'https://sportsbook.fanduel.com/tennis' }]
-export const games = matches.sort((left, right) => left.startMinutes - right.startMinutes || left.title.localeCompare(right.title))
+export const slateMeta = {
+  title: 'Thursday MLB + Roland Garros Desk',
+  date: 'May 28, 2026',
+  isoDate: '2026-05-28',
+  timeZone: 'America/Los_Angeles',
+  subtitle: 'A combined Thursday slate with the live May 28 MLB board plus the Roland Garros singles desk.',
+  notes: [
+    'MLB is coming from the generated May 28 split files, including starter context, lineup boards, park context, bullpen-chain context, and the current state / mistake-shape layers.',
+    'The tennis portion remains singles-only; doubles are intentionally excluded from the prediction desk.',
+    'Where no public market split was saved locally for tennis, the card is using official schedule context and manual clay matchup reads only.'
+  ]
+}
+export const filters = ['All', 'MLB', 'Tennis']
+export const oddsMeta = {
+  provider: 'Official MLB data + ScoresAndOdds live board / FanDuel Sportsbook + Tennis warehouse model',
+  snapshot: 'May 28, 2026 MLB + Roland Garros desk',
+  note: 'MLB uses the generated live board pipeline with official data and accessible odds snapshots. Tennis uses FanDuel lines where captured plus the warehouse model.'
+}
+export const sources = [
+  { label: 'MLB probable pitchers', url: 'https://www.mlb.com/probable-pitchers' },
+  { label: 'MLB starting lineups', url: 'https://www.mlb.com/starting-lineups' },
+  { label: 'ScoresAndOdds MLB board', url: 'https://www.scoresandodds.com/mlb' },
+  { label: 'ESPN tennis scoreboard', url: 'https://www.espn.com/tennis/scoreboard/_/date/20260528' },
+  { label: 'Live Tennis rankings warehouse', url: 'https://live-tennis.eu/' },
+  { label: 'FanDuel sportsbook tennis', url: 'https://sportsbook.fanduel.com/tennis' }
+]
+export const games = [...mlbGames, ...matches].sort(
+  (left, right) => left.startMinutes - right.startMinutes || left.title.localeCompare(right.title)
+)

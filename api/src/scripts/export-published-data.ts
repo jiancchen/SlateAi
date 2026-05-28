@@ -183,6 +183,17 @@ const buildSummaryOdds = (odds: any) => {
 }
 
 const buildTennisValueSummary = (games: any[] = [], isoDate = '') => {
+  const feePer100 = 2
+  const isValidatedValue = (row: any) => {
+    const marketType = String(row.marketType ?? '').toLowerCase()
+    const netEv = Number(row.netEvPer100 ?? Number(row.evPer100) - feePer100)
+    const edge = Number(row.edgePct)
+    const model = Number(row.modelPct)
+    const odds = Number(row.americanOdds)
+    if (marketType !== 'ml') return false
+    if (!Number.isFinite(netEv) || !Number.isFinite(edge) || !Number.isFinite(model) || !Number.isFinite(odds)) return false
+    return odds >= 100 && odds <= 250 && model >= 45 && model <= 60 && edge >= 7 && edge <= 24 && netEv >= 8
+  }
   const rows = games
     .filter((game) => game?.league === 'Tennis')
     .flatMap((game) =>
@@ -200,8 +211,12 @@ const buildTennisValueSummary = (games: any[] = [], isoDate = '') => {
         impliedPct: market.impliedPct ?? null,
         edgePct: market.edgePct ?? null,
         evPer100: market.evPer100 ?? null,
+        netEvPer100: market.netEvPer100 ?? null,
+        feePer100: market.feePer100 ?? feePer100,
+        valueIssue: market.valueIssue ?? '',
         valueGrade: market.valueGrade ?? 'No grade',
         betGrade: Boolean(market.betGrade),
+        validatedValue: false,
         reason: market.reason ?? ''
       }))
     )
@@ -216,6 +231,8 @@ const buildTennisValueSummary = (games: any[] = [], isoDate = '') => {
   const byEvAsc = (left: any, right: any) => Number(left.evPer100 ?? 999) - Number(right.evPer100 ?? 999)
   const pricedRows = rows.filter((row) => Number.isFinite(Number(row.evPer100)))
   const noPriceRows = rows.filter((row) => /needs posted price|no price/i.test(String(row.valueGrade)))
+  const rowsWithValidation = rows.map((row) => ({ ...row, validatedValue: isValidatedValue(row) }))
+  const validatedRows = rowsWithValidation.filter((row) => row.validatedValue).sort(byEvDesc)
 
   return {
     date: isoDate,
@@ -223,9 +240,15 @@ const buildTennisValueSummary = (games: any[] = [], isoDate = '') => {
     pricedRows: pricedRows.length,
     noPriceRows: noPriceRows.length,
     countByGrade,
-    betGradeRows: rows.filter((row) => row.valueGrade === 'Bet-grade value').sort(byEvDesc).slice(0, 8),
-    thinRows: rows.filter((row) => row.valueGrade === 'Thin value').sort(byEvDesc).slice(0, 6),
-    negativeMlRows: rows
+    rows: rowsWithValidation,
+    validatedRows: validatedRows.slice(0, 8),
+    betGradeRows: validatedRows.slice(0, 8),
+    rawPositiveRows: rowsWithValidation
+      .filter((row) => Number(row.evPer100) > 0 && !row.validatedValue)
+      .sort(byEvDesc)
+      .slice(0, 8),
+    thinRows: rowsWithValidation.filter((row) => row.valueGrade === 'Thin value').sort(byEvDesc).slice(0, 6),
+    negativeMlRows: rowsWithValidation
       .filter((row) => row.valueGrade === 'Negative EV' && String(row.marketType).toLowerCase() === 'ml')
       .sort(byEvAsc)
       .slice(0, 6),

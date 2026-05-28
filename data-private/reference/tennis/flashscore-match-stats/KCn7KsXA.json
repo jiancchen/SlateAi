@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-hubert-hurkacz-frances-tiafoe-2026-05-28",
+  "boardTitle": "Hubert Hurkacz vs Frances Tiafoe",
+  "boardPlayerName": "Frances Tiafoe",
+  "recentOpponentName": "Tommy Paul",
+  "recentIndex": 5,
+  "recentEvent": "Houston",
+  "recentDate": "04 Apr 26",
+  "recentIsoDate": "2026-04-04",
+  "recentResult": "USA   Loss 7-5 4-6 7-67 1/2",
+  "flashscoreLabel": "Paul T. - Tiafoe F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/houston/results/",
+  "players": [
+    "Paul T.",
+    "Tiafoe F."
+  ],
+  "generatedAt": "2026-05-28T04:36:37.028Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/KCn7KsXA/",
+  "matchId": "KCn7KsXA",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_KCn7KsXA",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_KCn7KsXA"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:47"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:52"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 9,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:47"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "14",
+              "right": "4",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "61%",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (52/73)",
+              "right": "65% (44/68)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (17/32)",
+              "right": "61% (27/44)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "4/7",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (24/68)",
+              "right": "29% (21/73)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "39% (17/44)",
+              "right": "47% (15/32)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "3/3",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "42",
+              "right": "21",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "50",
+              "right": "28",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Net points won",
+              "left": "74% (14/19)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (69/105)",
+              "right": "63% (71/112)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (41/112)",
+              "right": "34% (36/105)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (110/217)",
+              "right": "49% (107/217)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "82% (14/17)",
+              "right": "82% (14/17)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Return games won",
+              "left": "18% (3/17)",
+              "right": "18% (3/17)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (17/34)",
+              "right": "50% (17/34)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "66%",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (19/24)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (7/21)",
+              "right": "29% (7/24)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "7",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "9",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (25/34)",
+              "right": "66% (21/32)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (11/32)",
+              "right": "26% (9/34)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (36/66)",
+              "right": "45% (30/66)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "55%",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (15/21)",
+              "right": "73% (16/22)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/1",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (6/22)",
+              "right": "19% (4/21)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (8/18)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/1",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "5",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "7",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (18/26)",
+              "right": "65% (26/40)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (14/40)",
+              "right": "31% (8/26)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (32/66)",
+              "right": "52% (34/66)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "63%",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (18/28)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (6/15)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "3/5",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (11/25)",
+              "right": "36% (10/28)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (5/15)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "2/2",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "9",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "12",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (26/45)",
+              "right": "60% (24/40)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (16/40)",
+              "right": "42% (19/45)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (42/85)",
+              "right": "51% (43/85)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Paul T.",
+              "rightPlayer": "Tiafoe F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

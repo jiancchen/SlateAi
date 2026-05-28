@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-oleksandra-oliynykova-kimberly-birrell-2026-05-28",
+  "boardTitle": "Oleksandra Oliynykova vs Kimberly Birrell",
+  "boardPlayerName": "Kimberly Birrell",
+  "recentOpponentName": "Viktoriya Tomova",
+  "recentIndex": 7,
+  "recentEvent": "",
+  "recentDate": "16 Mar 26",
+  "recentIsoDate": "2026-03-16",
+  "recentResult": "BUL  6-3 6-2 q1",
+  "flashscoreLabel": "Birrell K. - Tomova V.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/miami/results/",
+  "players": [
+    "Birrell K.",
+    "Tomova V."
+  ],
+  "generatedAt": "2026-05-28T04:37:17.916Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/xrUWeddc/",
+  "matchId": "xrUWeddc",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_xrUWeddc",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_xrUWeddc"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:36"
+      }
+    ],
+    "totalDuration": "1:17"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "76%",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (20/29)",
+              "right": "53% (28/53)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "37% (7/19)",
+              "right": "24% (4/17)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "5/11",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (25/53)",
+              "right": "31% (9/29)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "76% (13/17)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/11",
+              "right": "2/3",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "56% (27/48)",
+              "right": "46% (32/70)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (38/70)",
+              "right": "44% (21/48)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (65/118)",
+              "right": "45% (53/118)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (6/8)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (6/9)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "71%",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (9/13)",
+              "right": "57% (17/30)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "3/6",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (13/30)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (9/12)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "1/1",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "57% (12/21)",
+              "right": "48% (20/42)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (22/42)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (34/63)",
+              "right": "46% (29/63)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "82%",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (11/16)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "2/5",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "52% (12/23)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "80% (4/5)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "1/2",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "56% (15/27)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (16/28)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (31/55)",
+              "right": "44% (24/55)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Tomova V."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

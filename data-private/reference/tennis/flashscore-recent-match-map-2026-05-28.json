@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-05-28T00:54:26.304Z",
-  "source": "/Users/jcchen/Documents/New project/web/src/lib/day-2026-05-28-tennis-opponent-quality.generated.json",
+  "generatedAt": "2026-05-28T04:37:24.052Z",
+  "source": "/Users/jcchen/Documents/New project/web/src/lib/day-2026-05-28-tennis-clay-context.generated.json",
   "outputDir": "/Users/jcchen/Documents/New project/data-private/reference/tennis/flashscore-match-stats",
   "coverage": {
     "recentRows": 432,
-    "tournamentRecords": 1492,
-    "matchedRows": 251,
-    "fetchedRows": 251,
-    "limited": 251,
+    "tournamentRecords": 3116,
+    "matchedRows": 299,
+    "fetchedRows": 299,
+    "limited": 299,
     "failed": 0
   },
   "map": {
@@ -3360,6 +3360,148 @@
         ]
       }
     },
+    "rg-m-francisco-cerundolo-hugo-gaston-2026-05-28::francisco cerundolo::7": {
+      "key": "rg-m-francisco-cerundolo-hugo-gaston-2026-05-28::francisco cerundolo::7",
+      "boardMatchId": "rg-m-francisco-cerundolo-hugo-gaston-2026-05-28",
+      "boardTitle": "Francisco Cerundolo vs Hugo Gaston",
+      "playerName": "Francisco Cerundolo",
+      "opponentName": "Alexander Zverev",
+      "recentIndex": 7,
+      "recentEvent": "Munich",
+      "recentDate": "17 Apr 26",
+      "recentIsoDate": "2026-04-17",
+      "recentResult": "GER   Loss 5-7 6-0 6-2 1/4",
+      "flashscoreId": "C29ZMfDl",
+      "flashscoreLabel": "Zverev A. - Cerundolo F.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/munich/results/",
+      "players": [
+        "Zverev A.",
+        "Cerundolo F."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "C29ZMfDl",
+        "sourceUrl": "https://www.flashscoreusa.com/match/C29ZMfDl/",
+        "aces": 1,
+        "doubleFaults": 4,
+        "firstServePct": 56,
+        "firstServeWonPct": 56,
+        "secondServeWonPct": 44,
+        "breakPointsSaved": "5/12",
+        "breakPointsSavedPct": null,
+        "winners": 18,
+        "unforcedErrors": 40,
+        "servicePointsWonPct": 51,
+        "returnPointsWonPct": 35,
+        "serviceGamesWon": "46% (6/13)",
+        "serviceHoldPct": 46,
+        "holdPct": 46,
+        "returnGamesWon": "23% (3/13)",
+        "returnGamesWonPct": 23,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "1"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "4"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "56%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "56% (29/52)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "44% (18/41)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "5/12"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "35% (18/52)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "35% (7/20)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "3/3"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "18"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "40"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "86% (6/7)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "51% (47/93)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "35% (25/72)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "44% (72/165)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "3"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "46% (6/13)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "23% (3/13)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "35% (9/26)"
+          }
+        ]
+      }
+    },
     "rg-m-francisco-cerundolo-hugo-gaston-2026-05-28::hugo gaston::0": {
       "key": "rg-m-francisco-cerundolo-hugo-gaston-2026-05-28::hugo gaston::0",
       "boardMatchId": "rg-m-francisco-cerundolo-hugo-gaston-2026-05-28",
@@ -4607,6 +4749,99 @@
         ]
       }
     },
+    "rg-w-julia-grabher-amanda-anisimova-2026-05-28::julia grabher::4": {
+      "key": "rg-w-julia-grabher-amanda-anisimova-2026-05-28::julia grabher::4",
+      "boardMatchId": "rg-w-julia-grabher-amanda-anisimova-2026-05-28",
+      "boardTitle": "Julia Grabher vs Amanda Anisimova",
+      "playerName": "Julia Grabher",
+      "opponentName": "Francesca Jones",
+      "recentIndex": 4,
+      "recentEvent": "W100 Wiesbaden",
+      "recentDate": "01 May 26",
+      "recentIsoDate": "2026-05-01",
+      "recentResult": "GBR   Loss 7-5 6-2 1/4",
+      "flashscoreId": "O0DidLK7",
+      "flashscoreLabel": "Grabher J. - Jones F.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-women-singles/w100-wiesbaden/results/",
+      "players": [
+        "Grabher J.",
+        "Jones F."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "O0DidLK7",
+        "sourceUrl": "https://www.flashscoreusa.com/match/O0DidLK7/",
+        "rows": [
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "4"
+          }
+        ]
+      }
+    },
+    "rg-w-julia-grabher-amanda-anisimova-2026-05-28::julia grabher::5": {
+      "key": "rg-w-julia-grabher-amanda-anisimova-2026-05-28::julia grabher::5",
+      "boardMatchId": "rg-w-julia-grabher-amanda-anisimova-2026-05-28",
+      "boardTitle": "Julia Grabher vs Amanda Anisimova",
+      "playerName": "Julia Grabher",
+      "opponentName": "Anastasia Gasanova",
+      "recentIndex": 5,
+      "recentEvent": "",
+      "recentDate": "30 Apr 26",
+      "recentIsoDate": "2026-04-30",
+      "recentResult": "RUS  6-3 1-6 6-2 2nd",
+      "flashscoreId": "faS8E1xP",
+      "flashscoreLabel": "Grabher J. - Gasanova A.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-women-singles/w100-wiesbaden/results/",
+      "players": [
+        "Grabher J.",
+        "Gasanova A."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "faS8E1xP",
+        "sourceUrl": "https://www.flashscoreusa.com/match/faS8E1xP/",
+        "rows": [
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "7"
+          }
+        ]
+      }
+    },
+    "rg-w-julia-grabher-amanda-anisimova-2026-05-28::julia grabher::6": {
+      "key": "rg-w-julia-grabher-amanda-anisimova-2026-05-28::julia grabher::6",
+      "boardMatchId": "rg-w-julia-grabher-amanda-anisimova-2026-05-28",
+      "boardTitle": "Julia Grabher vs Amanda Anisimova",
+      "playerName": "Julia Grabher",
+      "opponentName": "Jule Niemeier",
+      "recentIndex": 6,
+      "recentEvent": "",
+      "recentDate": "29 Apr 26",
+      "recentIsoDate": "2026-04-29",
+      "recentResult": "GER  4-6 7-64 6-3 1st",
+      "flashscoreId": "ABQZBcF4",
+      "flashscoreLabel": "Grabher J. - Niemeier J.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-women-singles/w100-wiesbaden/results/",
+      "players": [
+        "Grabher J.",
+        "Niemeier J."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "ABQZBcF4",
+        "sourceUrl": "https://www.flashscoreusa.com/match/ABQZBcF4/",
+        "rows": [
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "6"
+          }
+        ]
+      }
+    },
     "rg-w-julia-grabher-amanda-anisimova-2026-05-28::julia grabher::7": {
       "key": "rg-w-julia-grabher-amanda-anisimova-2026-05-28::julia grabher::7",
       "boardMatchId": "rg-w-julia-grabher-amanda-anisimova-2026-05-28",
@@ -4880,6 +5115,506 @@
             "section": "Games",
             "label": "Total games won",
             "value": "75% (12/16)"
+          }
+        ]
+      }
+    },
+    "rg-w-julia-grabher-amanda-anisimova-2026-05-28::amanda anisimova::2": {
+      "key": "rg-w-julia-grabher-amanda-anisimova-2026-05-28::amanda anisimova::2",
+      "boardMatchId": "rg-w-julia-grabher-amanda-anisimova-2026-05-28",
+      "boardTitle": "Julia Grabher vs Amanda Anisimova",
+      "playerName": "Amanda Anisimova",
+      "opponentName": "Yuliia Starodubtseva",
+      "recentIndex": 2,
+      "recentEvent": "",
+      "recentDate": "21 Mar 26",
+      "recentIsoDate": "2026-03-21",
+      "recentResult": "UKR  6-4 6-2 3rd",
+      "flashscoreId": "SfmJFoEr",
+      "flashscoreLabel": "Anisimova A. - Starodubtseva Y.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/miami/results/",
+      "players": [
+        "Anisimova A.",
+        "Starodubtseva Y."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "SfmJFoEr",
+        "sourceUrl": "https://www.flashscoreusa.com/match/SfmJFoEr/",
+        "aces": 3,
+        "doubleFaults": 2,
+        "firstServePct": 56,
+        "firstServeWonPct": 78,
+        "secondServeWonPct": 44,
+        "breakPointsSaved": "1/3",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 63,
+        "returnPointsWonPct": 53,
+        "serviceGamesWon": "78% (7/9)",
+        "serviceHoldPct": 78,
+        "holdPct": 78,
+        "returnGamesWon": "56% (5/9)",
+        "returnGamesWonPct": 56,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "3"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "56%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "78% (25/32)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "44% (11/25)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "1/3"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "42% (15/36)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "76% (13/17)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "5/8"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "63% (36/57)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "53% (28/53)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "58% (64/110)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "7"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "78% (7/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "56% (5/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "67% (12/18)"
+          }
+        ]
+      }
+    },
+    "rg-w-julia-grabher-amanda-anisimova-2026-05-28::amanda anisimova::3": {
+      "key": "rg-w-julia-grabher-amanda-anisimova-2026-05-28::amanda anisimova::3",
+      "boardMatchId": "rg-w-julia-grabher-amanda-anisimova-2026-05-28",
+      "boardTitle": "Julia Grabher vs Amanda Anisimova",
+      "playerName": "Amanda Anisimova",
+      "opponentName": "Ajla Tomljanovic",
+      "recentIndex": 3,
+      "recentEvent": "",
+      "recentDate": "20 Mar 26",
+      "recentIsoDate": "2026-03-20",
+      "recentResult": "AUS  6-1 5-7 6-4 2nd",
+      "flashscoreId": "Q17WK13E",
+      "flashscoreLabel": "Anisimova A. - Tomljanovic A.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/miami/results/",
+      "players": [
+        "Anisimova A.",
+        "Tomljanovic A."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "Q17WK13E",
+        "sourceUrl": "https://www.flashscoreusa.com/match/Q17WK13E/",
+        "aces": 2,
+        "doubleFaults": 4,
+        "firstServePct": 62,
+        "firstServeWonPct": 45,
+        "secondServeWonPct": 58,
+        "breakPointsSaved": "2/8",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 50,
+        "returnPointsWonPct": 55,
+        "serviceGamesWon": "57% (8/14)",
+        "serviceHoldPct": 57,
+        "holdPct": 57,
+        "returnGamesWon": "60% (9/15)",
+        "returnGamesWonPct": 60,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "4"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "62%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "45% (23/51)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "58% (18/31)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "2/8"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "46% (25/54)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "65% (28/43)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "9/14"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "50% (41/82)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "55% (53/97)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "53% (94/179)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "4"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "57% (8/14)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "60% (9/15)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "59% (17/29)"
+          }
+        ]
+      }
+    },
+    "rg-w-julia-grabher-amanda-anisimova-2026-05-28::amanda anisimova::5": {
+      "key": "rg-w-julia-grabher-amanda-anisimova-2026-05-28::amanda anisimova::5",
+      "boardMatchId": "rg-w-julia-grabher-amanda-anisimova-2026-05-28",
+      "boardTitle": "Julia Grabher vs Amanda Anisimova",
+      "playerName": "Amanda Anisimova",
+      "opponentName": "Emma Raducanu",
+      "recentIndex": 5,
+      "recentEvent": "",
+      "recentDate": "08 Mar 26",
+      "recentIsoDate": "2026-03-08",
+      "recentResult": "GBR  6-1 6-1 3rd",
+      "flashscoreId": "OjlzrNSF",
+      "flashscoreLabel": "Raducanu E. - Anisimova A.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/indian-wells/results/",
+      "players": [
+        "Raducanu E.",
+        "Anisimova A."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "OjlzrNSF",
+        "sourceUrl": "https://www.flashscoreusa.com/match/OjlzrNSF/",
+        "aces": 2,
+        "doubleFaults": 2,
+        "firstServePct": 60,
+        "firstServeWonPct": 86,
+        "secondServeWonPct": 71,
+        "breakPointsSaved": "0/0",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 80,
+        "returnPointsWonPct": 64,
+        "serviceGamesWon": "100% (7/7)",
+        "serviceHoldPct": 100,
+        "holdPct": 100,
+        "returnGamesWon": "71% (5/7)",
+        "returnGamesWonPct": 71,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "60%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "86% (18/21)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "71% (10/14)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "0/0"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "73% (16/22)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "53% (9/17)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "5/7"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "80% (28/35)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "64% (25/39)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "72% (53/74)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "8"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "100% (7/7)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "71% (5/7)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "86% (12/14)"
+          }
+        ]
+      }
+    },
+    "rg-w-julia-grabher-amanda-anisimova-2026-05-28::amanda anisimova::7": {
+      "key": "rg-w-julia-grabher-amanda-anisimova-2026-05-28::amanda anisimova::7",
+      "boardMatchId": "rg-w-julia-grabher-amanda-anisimova-2026-05-28",
+      "boardTitle": "Julia Grabher vs Amanda Anisimova",
+      "playerName": "Amanda Anisimova",
+      "opponentName": "Jessica Pegula",
+      "recentIndex": 7,
+      "recentEvent": "Dubai",
+      "recentDate": "20 Feb 26",
+      "recentIsoDate": "2026-02-20",
+      "recentResult": "USA   Loss 1-6 6-4 6-3 1/2",
+      "flashscoreId": "lbkRC5p3",
+      "flashscoreLabel": "Pegula J. - Anisimova A.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/dubai/results/",
+      "players": [
+        "Pegula J.",
+        "Anisimova A."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "lbkRC5p3",
+        "sourceUrl": "https://www.flashscoreusa.com/match/lbkRC5p3/",
+        "aces": 7,
+        "doubleFaults": 4,
+        "firstServePct": 73,
+        "firstServeWonPct": 59,
+        "secondServeWonPct": 46,
+        "breakPointsSaved": "7/11",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 56,
+        "returnPointsWonPct": 43,
+        "serviceGamesWon": "69% (9/13)",
+        "serviceHoldPct": 69,
+        "holdPct": 69,
+        "returnGamesWon": "31% (4/13)",
+        "returnGamesWonPct": 31,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "7"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "4"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "73%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "59% (41/69)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "46% (12/26)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "7/11"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "36% (21/58)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "55% (17/31)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "4/9"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "56% (53/95)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "43% (38/89)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "49% (91/184)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "4"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "69% (9/13)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "31% (4/13)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "50% (13/26)"
           }
         ]
       }
@@ -9044,6 +9779,381 @@
         ]
       }
     },
+    "rg-w-maria-sakkari-claire-liu-2026-05-28::maria sakkari::5": {
+      "key": "rg-w-maria-sakkari-claire-liu-2026-05-28::maria sakkari::5",
+      "boardMatchId": "rg-w-maria-sakkari-claire-liu-2026-05-28",
+      "boardTitle": "Maria Sakkari vs Claire Liu",
+      "playerName": "Maria Sakkari",
+      "opponentName": "Paula Badosa",
+      "recentIndex": 5,
+      "recentEvent": "Charleston",
+      "recentDate": "01 Apr 26",
+      "recentIsoDate": "2026-04-01",
+      "recentResult": "ESP   Loss 6-3 6-4 2nd",
+      "flashscoreId": "tzmLVQPc",
+      "flashscoreLabel": "Sakkari M. - Badosa P.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/charleston/results/",
+      "players": [
+        "Sakkari M.",
+        "Badosa P."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "tzmLVQPc",
+        "sourceUrl": "https://www.flashscoreusa.com/match/tzmLVQPc/",
+        "aces": 1,
+        "doubleFaults": 1,
+        "firstServePct": 55,
+        "firstServeWonPct": 58,
+        "secondServeWonPct": 41,
+        "breakPointsSaved": "7/11",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 51,
+        "returnPointsWonPct": 34,
+        "serviceGamesWon": "56% (5/9)",
+        "serviceHoldPct": 56,
+        "holdPct": 56,
+        "returnGamesWon": "20% (2/10)",
+        "returnGamesWonPct": 20,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "1"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "1"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "55%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "58% (21/36)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "41% (12/29)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "7/11"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "23% (8/35)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "56% (10/18)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "2/2"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "51% (33/65)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "34% (18/53)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "43% (51/118)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "5"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "2"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "56% (5/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "20% (2/10)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "37% (7/19)"
+          }
+        ]
+      }
+    },
+    "rg-w-maria-sakkari-claire-liu-2026-05-28::maria sakkari::6": {
+      "key": "rg-w-maria-sakkari-claire-liu-2026-05-28::maria sakkari::6",
+      "boardMatchId": "rg-w-maria-sakkari-claire-liu-2026-05-28",
+      "boardTitle": "Maria Sakkari vs Claire Liu",
+      "playerName": "Maria Sakkari",
+      "opponentName": "Alycia Parks",
+      "recentIndex": 6,
+      "recentEvent": "Miami",
+      "recentDate": "20 Mar 26",
+      "recentIsoDate": "2026-03-20",
+      "recentResult": "USA   Loss 6-3 6-3 2nd",
+      "flashscoreId": "EL0pVyqJ",
+      "flashscoreLabel": "Sakkari M. - Parks A.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/miami/results/",
+      "players": [
+        "Sakkari M.",
+        "Parks A."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "EL0pVyqJ",
+        "sourceUrl": "https://www.flashscoreusa.com/match/EL0pVyqJ/",
+        "aces": 0,
+        "doubleFaults": 3,
+        "firstServePct": 75,
+        "firstServeWonPct": 63,
+        "secondServeWonPct": 50,
+        "breakPointsSaved": "6/9",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 60,
+        "returnPointsWonPct": 35,
+        "serviceGamesWon": "67% (6/9)",
+        "serviceHoldPct": 67,
+        "holdPct": 67,
+        "returnGamesWon": "0% (0/9)",
+        "returnGamesWonPct": 0,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "0"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "3"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "75%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "63% (27/43)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "50% (7/14)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "6/9"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "29% (10/35)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "43% (12/28)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "0/6"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "60% (34/57)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "35% (22/63)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "47% (56/120)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "3"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "1"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "67% (6/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "0% (0/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "33% (6/18)"
+          }
+        ]
+      }
+    },
+    "rg-w-maria-sakkari-claire-liu-2026-05-28::maria sakkari::7": {
+      "key": "rg-w-maria-sakkari-claire-liu-2026-05-28::maria sakkari::7",
+      "boardMatchId": "rg-w-maria-sakkari-claire-liu-2026-05-28",
+      "boardTitle": "Maria Sakkari vs Claire Liu",
+      "playerName": "Maria Sakkari",
+      "opponentName": "Iga Swiatek",
+      "recentIndex": 7,
+      "recentEvent": "Indian Wells",
+      "recentDate": "09 Mar 26",
+      "recentIsoDate": "2026-03-09",
+      "recentResult": "POL   Loss 6-3 6-2 3rd",
+      "flashscoreId": "SWKU3sfo",
+      "flashscoreLabel": "Sakkari M. - Swiatek I.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/indian-wells/results/",
+      "players": [
+        "Sakkari M.",
+        "Swiatek I."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "SWKU3sfo",
+        "sourceUrl": "https://www.flashscoreusa.com/match/SWKU3sfo/",
+        "aces": 3,
+        "doubleFaults": 1,
+        "firstServePct": 69,
+        "firstServeWonPct": 56,
+        "secondServeWonPct": 21,
+        "breakPointsSaved": "6/11",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 45,
+        "returnPointsWonPct": 34,
+        "serviceGamesWon": "38% (3/8)",
+        "serviceHoldPct": 38,
+        "holdPct": 38,
+        "returnGamesWon": "22% (2/9)",
+        "returnGamesWonPct": 22,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "3"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "1"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "69%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "56% (24/43)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "21% (4/19)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "6/11"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "37% (15/41)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "37% (7/19)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "2/8"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "45% (28/62)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "34% (20/58)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "40% (48/120)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "3"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "38% (3/8)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "22% (2/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "29% (5/17)"
+          }
+        ]
+      }
+    },
     "rg-m-arthur-rinderknech-matteo-berrettini-2026-05-28::arthur rinderknech::0": {
       "key": "rg-m-arthur-rinderknech-matteo-berrettini-2026-05-28::arthur rinderknech::0",
       "boardMatchId": "rg-m-arthur-rinderknech-matteo-berrettini-2026-05-28",
@@ -9902,6 +11012,148 @@
             "section": "Games",
             "label": "Total games won",
             "value": "71% (12/17)"
+          }
+        ]
+      }
+    },
+    "rg-m-arthur-rinderknech-matteo-berrettini-2026-05-28::arthur rinderknech::7": {
+      "key": "rg-m-arthur-rinderknech-matteo-berrettini-2026-05-28::arthur rinderknech::7",
+      "boardMatchId": "rg-m-arthur-rinderknech-matteo-berrettini-2026-05-28",
+      "boardTitle": "Arthur Rinderknech vs Matteo Berrettini",
+      "playerName": "Arthur Rinderknech",
+      "opponentName": "Joao Fonseca",
+      "recentIndex": 7,
+      "recentEvent": "Munich",
+      "recentDate": "15 Apr 26",
+      "recentIsoDate": "2026-04-15",
+      "recentResult": "BRA   Loss 6-3 6-2 2nd",
+      "flashscoreId": "WfGkqCTg",
+      "flashscoreLabel": "Rinderknech A. - Fonseca J.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/munich/results/",
+      "players": [
+        "Rinderknech A.",
+        "Fonseca J."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "WfGkqCTg",
+        "sourceUrl": "https://www.flashscoreusa.com/match/WfGkqCTg/",
+        "aces": 4,
+        "doubleFaults": 5,
+        "firstServePct": 66,
+        "firstServeWonPct": 62,
+        "secondServeWonPct": 37,
+        "breakPointsSaved": "4/7",
+        "breakPointsSavedPct": null,
+        "winners": 24,
+        "unforcedErrors": 24,
+        "servicePointsWonPct": 54,
+        "returnPointsWonPct": 33,
+        "serviceGamesWon": "63% (5/8)",
+        "serviceHoldPct": 63,
+        "holdPct": 63,
+        "returnGamesWon": "0% (0/9)",
+        "returnGamesWonPct": 0,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "4"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "5"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "66%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "62% (23/37)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "37% (7/19)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "4/7"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "24% (10/41)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "50% (10/20)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "0/9"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "24"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "24"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "67% (8/12)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "54% (30/56)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "33% (20/61)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "43% (50/117)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "3"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "63% (5/8)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "0% (0/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "29% (5/17)"
           }
         ]
       }
@@ -11501,6 +12753,148 @@
         ]
       }
     },
+    "rg-m-hubert-hurkacz-frances-tiafoe-2026-05-28::frances tiafoe::5": {
+      "key": "rg-m-hubert-hurkacz-frances-tiafoe-2026-05-28::frances tiafoe::5",
+      "boardMatchId": "rg-m-hubert-hurkacz-frances-tiafoe-2026-05-28",
+      "boardTitle": "Hubert Hurkacz vs Frances Tiafoe",
+      "playerName": "Frances Tiafoe",
+      "opponentName": "Tommy Paul",
+      "recentIndex": 5,
+      "recentEvent": "Houston",
+      "recentDate": "04 Apr 26",
+      "recentIsoDate": "2026-04-04",
+      "recentResult": "USA   Loss 7-5 4-6 7-67 1/2",
+      "flashscoreId": "KCn7KsXA",
+      "flashscoreLabel": "Paul T. - Tiafoe F.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/houston/results/",
+      "players": [
+        "Paul T.",
+        "Tiafoe F."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "KCn7KsXA",
+        "sourceUrl": "https://www.flashscoreusa.com/match/KCn7KsXA/",
+        "aces": 4,
+        "doubleFaults": 0,
+        "firstServePct": 61,
+        "firstServeWonPct": 65,
+        "secondServeWonPct": 61,
+        "breakPointsSaved": "4/7",
+        "breakPointsSavedPct": null,
+        "winners": 21,
+        "unforcedErrors": 28,
+        "servicePointsWonPct": 63,
+        "returnPointsWonPct": 34,
+        "serviceGamesWon": "82% (14/17)",
+        "serviceHoldPct": 82,
+        "holdPct": 82,
+        "returnGamesWon": "18% (3/17)",
+        "returnGamesWonPct": 18,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "4"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "0"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "61%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "65% (44/68)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "61% (27/44)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "4/7"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "29% (21/73)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "47% (15/32)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "3/3"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "21"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "28"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "64% (7/11)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "63% (71/112)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "34% (36/105)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "49% (107/217)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "4"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "3"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "82% (14/17)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "18% (3/17)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "50% (17/34)"
+          }
+        ]
+      }
+    },
     "rg-w-anna-kalinskaya-alina-korneeva-2026-05-28::anna kalinskaya::0": {
       "key": "rg-w-anna-kalinskaya-alina-korneeva-2026-05-28::anna kalinskaya::0",
       "boardMatchId": "rg-w-anna-kalinskaya-alina-korneeva-2026-05-28",
@@ -12139,6 +13533,256 @@
             "section": "Games",
             "label": "Total games won",
             "value": "33% (6/18)"
+          }
+        ]
+      }
+    },
+    "rg-w-anna-kalinskaya-alina-korneeva-2026-05-28::anna kalinskaya::5": {
+      "key": "rg-w-anna-kalinskaya-alina-korneeva-2026-05-28::anna kalinskaya::5",
+      "boardMatchId": "rg-w-anna-kalinskaya-alina-korneeva-2026-05-28",
+      "boardTitle": "Anna Kalinskaya vs Alina Korneeva",
+      "playerName": "Anna Kalinskaya",
+      "opponentName": "Iva Jovic",
+      "recentIndex": 5,
+      "recentEvent": "Charleston",
+      "recentDate": "03 Apr 26",
+      "recentIsoDate": "2026-04-03",
+      "recentResult": "USA   Loss 6-3 6-4 1/4",
+      "flashscoreId": "On8cdwxo",
+      "flashscoreLabel": "Jovic I. - Kalinskaya A.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/charleston/results/",
+      "players": [
+        "Jovic I.",
+        "Kalinskaya A."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "On8cdwxo",
+        "sourceUrl": "https://www.flashscoreusa.com/match/On8cdwxo/",
+        "aces": 2,
+        "doubleFaults": 5,
+        "firstServePct": 60,
+        "firstServeWonPct": 55,
+        "secondServeWonPct": 32,
+        "breakPointsSaved": "3/8",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 45,
+        "returnPointsWonPct": 40,
+        "serviceGamesWon": "44% (4/9)",
+        "serviceHoldPct": 44,
+        "holdPct": 44,
+        "returnGamesWon": "30% (3/10)",
+        "returnGamesWonPct": 30,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "5"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "60%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "55% (18/33)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "32% (7/22)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "3/8"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "32% (12/37)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "56% (10/18)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "3/3"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "45% (25/55)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "40% (22/55)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "43% (47/110)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "3"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "1"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "44% (4/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "30% (3/10)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "37% (7/19)"
+          }
+        ]
+      }
+    },
+    "rg-w-anna-kalinskaya-alina-korneeva-2026-05-28::anna kalinskaya::7": {
+      "key": "rg-w-anna-kalinskaya-alina-korneeva-2026-05-28::anna kalinskaya::7",
+      "boardMatchId": "rg-w-anna-kalinskaya-alina-korneeva-2026-05-28",
+      "boardTitle": "Anna Kalinskaya vs Alina Korneeva",
+      "playerName": "Anna Kalinskaya",
+      "opponentName": "Viktoriya Tomova",
+      "recentIndex": 7,
+      "recentEvent": "",
+      "recentDate": "31 Mar 26",
+      "recentIsoDate": "2026-03-31",
+      "recentResult": "BUL  6-2 6-4 2nd",
+      "flashscoreId": "jRwQOsB6",
+      "flashscoreLabel": "Tomova V. - Kalinskaya A.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/charleston/results/",
+      "players": [
+        "Tomova V.",
+        "Kalinskaya A."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "jRwQOsB6",
+        "sourceUrl": "https://www.flashscoreusa.com/match/jRwQOsB6/",
+        "aces": 3,
+        "doubleFaults": 2,
+        "firstServePct": 62,
+        "firstServeWonPct": 50,
+        "secondServeWonPct": 56,
+        "breakPointsSaved": "8/12",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 52,
+        "returnPointsWonPct": 62,
+        "serviceGamesWon": "56% (5/9)",
+        "serviceHoldPct": 56,
+        "holdPct": 56,
+        "returnGamesWon": "78% (7/9)",
+        "returnGamesWonPct": 78,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "3"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "62%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "50% (22/44)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "56% (15/27)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "8/12"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "50% (16/32)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "78% (18/23)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "7/9"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "52% (37/71)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "62% (34/55)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "56% (71/126)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "6"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "56% (5/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "78% (7/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "67% (12/18)"
           }
         ]
       }
@@ -13410,6 +15054,99 @@
         ]
       }
     },
+    "rg-w-maja-chwalinska-elise-mertens-2026-05-28::maja chwalinska::5": {
+      "key": "rg-w-maja-chwalinska-elise-mertens-2026-05-28::maja chwalinska::5",
+      "boardMatchId": "rg-w-maja-chwalinska-elise-mertens-2026-05-28",
+      "boardTitle": "Maja Chwalinska vs Elise Mertens",
+      "playerName": "Maja Chwalinska",
+      "opponentName": "Jessika Ponchet",
+      "recentIndex": 5,
+      "recentEvent": "W75 Saint-Gaudens",
+      "recentDate": "08 May 26",
+      "recentIsoDate": "2026-05-08",
+      "recentResult": "FRA   Loss 4-6 6-3 6-2 1/4",
+      "flashscoreId": "SKC9mYee",
+      "flashscoreLabel": "Chwalinska M. - Ponchet J.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-women-singles/w75-saint-gaudens/results/",
+      "players": [
+        "Chwalinska M.",
+        "Ponchet J."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "SKC9mYee",
+        "sourceUrl": "https://www.flashscoreusa.com/match/SKC9mYee/",
+        "rows": [
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "6"
+          }
+        ]
+      }
+    },
+    "rg-w-maja-chwalinska-elise-mertens-2026-05-28::maja chwalinska::6": {
+      "key": "rg-w-maja-chwalinska-elise-mertens-2026-05-28::maja chwalinska::6",
+      "boardMatchId": "rg-w-maja-chwalinska-elise-mertens-2026-05-28",
+      "boardTitle": "Maja Chwalinska vs Elise Mertens",
+      "playerName": "Maja Chwalinska",
+      "opponentName": "Lisa Zaar",
+      "recentIndex": 6,
+      "recentEvent": "",
+      "recentDate": "07 May 26",
+      "recentIsoDate": "2026-05-07",
+      "recentResult": "SWE  3-6 7-5 6-2 2nd",
+      "flashscoreId": "h8a70qDj",
+      "flashscoreLabel": "Chwalinska M. - Zaar L.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-women-singles/w75-saint-gaudens/results/",
+      "players": [
+        "Chwalinska M.",
+        "Zaar L."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "h8a70qDj",
+        "sourceUrl": "https://www.flashscoreusa.com/match/h8a70qDj/",
+        "rows": [
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "5"
+          }
+        ]
+      }
+    },
+    "rg-w-maja-chwalinska-elise-mertens-2026-05-28::maja chwalinska::7": {
+      "key": "rg-w-maja-chwalinska-elise-mertens-2026-05-28::maja chwalinska::7",
+      "boardMatchId": "rg-w-maja-chwalinska-elise-mertens-2026-05-28",
+      "boardTitle": "Maja Chwalinska vs Elise Mertens",
+      "playerName": "Maja Chwalinska",
+      "opponentName": "Amandine Hesse",
+      "recentIndex": 7,
+      "recentEvent": "",
+      "recentDate": "06 May 26",
+      "recentIsoDate": "2026-05-06",
+      "recentResult": "FRA  6-4 6-0 1st",
+      "flashscoreId": "nT7NwAFj",
+      "flashscoreLabel": "Chwalinska M. - Hesse A.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-women-singles/w75-saint-gaudens/results/",
+      "players": [
+        "Chwalinska M.",
+        "Hesse A."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "nT7NwAFj",
+        "sourceUrl": "https://www.flashscoreusa.com/match/nT7NwAFj/",
+        "rows": [
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "8"
+          }
+        ]
+      }
+    },
     "rg-w-maja-chwalinska-elise-mertens-2026-05-28::elise mertens::0": {
       "key": "rg-w-maja-chwalinska-elise-mertens-2026-05-28::elise mertens::0",
       "boardMatchId": "rg-w-maja-chwalinska-elise-mertens-2026-05-28",
@@ -14183,6 +15920,256 @@
             "section": "Games",
             "label": "Total games won",
             "value": "80% (12/15)"
+          }
+        ]
+      }
+    },
+    "rg-w-maja-chwalinska-elise-mertens-2026-05-28::elise mertens::6": {
+      "key": "rg-w-maja-chwalinska-elise-mertens-2026-05-28::elise mertens::6",
+      "boardMatchId": "rg-w-maja-chwalinska-elise-mertens-2026-05-28",
+      "boardTitle": "Maja Chwalinska vs Elise Mertens",
+      "playerName": "Elise Mertens",
+      "opponentName": "Karolina Muchova",
+      "recentIndex": 6,
+      "recentEvent": "Stuttgart",
+      "recentDate": "16 Apr 26",
+      "recentIsoDate": "2026-04-16",
+      "recentResult": "CZE   Loss 1-6 6-3 6-0 2nd",
+      "flashscoreId": "xM6UBcbT",
+      "flashscoreLabel": "Muchova K. - Mertens E.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/stuttgart/results/",
+      "players": [
+        "Muchova K.",
+        "Mertens E."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "xM6UBcbT",
+        "sourceUrl": "https://www.flashscoreusa.com/match/xM6UBcbT/",
+        "aces": 1,
+        "doubleFaults": 9,
+        "firstServePct": 60,
+        "firstServeWonPct": 61,
+        "secondServeWonPct": 32,
+        "breakPointsSaved": "7/13",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 49,
+        "returnPointsWonPct": 49,
+        "serviceGamesWon": "45% (5/11)",
+        "serviceHoldPct": 45,
+        "holdPct": 45,
+        "returnGamesWon": "36% (4/11)",
+        "returnGamesWonPct": 36,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "1"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "9"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "60%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "61% (31/51)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "32% (11/34)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "7/13"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "44% (17/39)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "58% (14/24)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "4/6"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "49% (42/85)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "49% (31/63)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "49% (73/148)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "4"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "3"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "45% (5/11)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "36% (4/11)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "41% (9/22)"
+          }
+        ]
+      }
+    },
+    "rg-w-maja-chwalinska-elise-mertens-2026-05-28::elise mertens::7": {
+      "key": "rg-w-maja-chwalinska-elise-mertens-2026-05-28::elise mertens::7",
+      "boardMatchId": "rg-w-maja-chwalinska-elise-mertens-2026-05-28",
+      "boardTitle": "Maja Chwalinska vs Elise Mertens",
+      "playerName": "Elise Mertens",
+      "opponentName": "Ella Seidel",
+      "recentIndex": 7,
+      "recentEvent": "",
+      "recentDate": "14 Apr 26",
+      "recentIsoDate": "2026-04-14",
+      "recentResult": "GER  6-3 6-4 1st",
+      "flashscoreId": "tfcxpHJt",
+      "flashscoreLabel": "Mertens E. - Seidel E.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/stuttgart/results/",
+      "players": [
+        "Mertens E.",
+        "Seidel E."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "tfcxpHJt",
+        "sourceUrl": "https://www.flashscoreusa.com/match/tfcxpHJt/",
+        "aces": 6,
+        "doubleFaults": 3,
+        "firstServePct": 67,
+        "firstServeWonPct": 68,
+        "secondServeWonPct": 60,
+        "breakPointsSaved": "2/4",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 65,
+        "returnPointsWonPct": 47,
+        "serviceGamesWon": "80% (8/10)",
+        "serviceHoldPct": 80,
+        "holdPct": 80,
+        "returnGamesWon": "44% (4/9)",
+        "returnGamesWonPct": 44,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "6"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "3"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "67%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "68% (27/40)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "60% (12/20)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "2/4"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "38% (16/42)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "65% (13/20)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "4/11"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "65% (39/60)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "47% (29/62)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "56% (68/122)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "5"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "80% (8/10)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "44% (4/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "63% (12/19)"
           }
         ]
       }
@@ -15089,6 +17076,131 @@
         ]
       }
     },
+    "rg-w-aryna-sabalenka-elsa-jacquemot-2026-05-28::aryna sabalenka::7": {
+      "key": "rg-w-aryna-sabalenka-elsa-jacquemot-2026-05-28::aryna sabalenka::7",
+      "boardMatchId": "rg-w-aryna-sabalenka-elsa-jacquemot-2026-05-28",
+      "boardTitle": "Aryna Sabalenka vs Elsa Jacquemot",
+      "playerName": "Aryna Sabalenka",
+      "opponentName": "Cori Gauff",
+      "recentIndex": 7,
+      "recentEvent": "Miami",
+      "recentDate": "28 Mar 26",
+      "recentIsoDate": "2026-03-28",
+      "recentResult": "USA  6-2 4-6 6-3 Fin.",
+      "flashscoreId": "f3n96tE5",
+      "flashscoreLabel": "Sabalenka A. - Gauff C.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/miami/results/",
+      "players": [
+        "Sabalenka A.",
+        "Gauff C."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "f3n96tE5",
+        "sourceUrl": "https://www.flashscoreusa.com/match/f3n96tE5/",
+        "aces": 3,
+        "doubleFaults": 0,
+        "firstServePct": 60,
+        "firstServeWonPct": 74,
+        "secondServeWonPct": 61,
+        "breakPointsSaved": "1/2",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 69,
+        "returnPointsWonPct": 41,
+        "serviceGamesWon": "92% (12/13)",
+        "serviceHoldPct": 92,
+        "holdPct": 92,
+        "returnGamesWon": "29% (4/14)",
+        "returnGamesWonPct": 29,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "3"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "0"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "60%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "74% (35/47)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "61% (19/31)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "1/2"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "34% (22/65)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "53% (17/32)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "4/11"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "69% (54/78)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "41% (40/98)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "53% (94/176)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "8"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "92% (12/13)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "29% (4/14)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "59% (16/27)"
+          }
+        ]
+      }
+    },
     "rg-w-aryna-sabalenka-elsa-jacquemot-2026-05-28::elsa jacquemot::0": {
       "key": "rg-w-aryna-sabalenka-elsa-jacquemot-2026-05-28::elsa jacquemot::0",
       "boardMatchId": "rg-w-aryna-sabalenka-elsa-jacquemot-2026-05-28",
@@ -15602,6 +17714,131 @@
             "section": "Games",
             "label": "Total games won",
             "value": "20% (3/15)"
+          }
+        ]
+      }
+    },
+    "rg-w-aryna-sabalenka-elsa-jacquemot-2026-05-28::elsa jacquemot::5": {
+      "key": "rg-w-aryna-sabalenka-elsa-jacquemot-2026-05-28::elsa jacquemot::5",
+      "boardMatchId": "rg-w-aryna-sabalenka-elsa-jacquemot-2026-05-28",
+      "boardTitle": "Aryna Sabalenka vs Elsa Jacquemot",
+      "playerName": "Elsa Jacquemot",
+      "opponentName": "Tatjana Maria",
+      "recentIndex": 5,
+      "recentEvent": "Rouen",
+      "recentDate": "15 Apr 26",
+      "recentIsoDate": "2026-04-15",
+      "recentResult": "GER   Loss 6-4 6-3 1st",
+      "flashscoreId": "UNgJgVVN",
+      "flashscoreLabel": "Maria T. - Jacquemot E.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rouen/results/",
+      "players": [
+        "Maria T.",
+        "Jacquemot E."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "UNgJgVVN",
+        "sourceUrl": "https://www.flashscoreusa.com/match/UNgJgVVN/",
+        "aces": 3,
+        "doubleFaults": 4,
+        "firstServePct": 69,
+        "firstServeWonPct": 59,
+        "secondServeWonPct": 33,
+        "breakPointsSaved": "3/8",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 51,
+        "returnPointsWonPct": 45,
+        "serviceGamesWon": "44% (4/9)",
+        "serviceHoldPct": 44,
+        "holdPct": 44,
+        "returnGamesWon": "30% (3/10)",
+        "returnGamesWonPct": 30,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "3"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "4"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "69%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "59% (24/41)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "33% (6/18)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "3/8"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "37% (18/49)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "58% (18/31)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "3/10"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "51% (30/59)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "45% (36/80)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "47% (66/139)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "4"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "3"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "44% (4/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "30% (3/10)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "37% (7/19)"
           }
         ]
       }
@@ -16768,6 +19005,574 @@
             "section": "Games",
             "label": "Total games won",
             "value": "46% (13/28)"
+          }
+        ]
+      }
+    },
+    "rg-m-luca-van-assche-brandon-nakashima-2026-05-28::brandon nakashima::4": {
+      "key": "rg-m-luca-van-assche-brandon-nakashima-2026-05-28::brandon nakashima::4",
+      "boardMatchId": "rg-m-luca-van-assche-brandon-nakashima-2026-05-28",
+      "boardTitle": "Luca Van Assche vs Brandon Nakashima",
+      "playerName": "Brandon Nakashima",
+      "opponentName": "Arthur Fils",
+      "recentIndex": 4,
+      "recentEvent": "Barcelona",
+      "recentDate": "16 Apr 26",
+      "recentIsoDate": "2026-04-16",
+      "recentResult": "FRA   Loss 6-2 6-3 2nd",
+      "flashscoreId": "tIJGr3WO",
+      "flashscoreLabel": "Fils A. - Nakashima B.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/barcelona/results/",
+      "players": [
+        "Fils A.",
+        "Nakashima B."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "tIJGr3WO",
+        "sourceUrl": "https://www.flashscoreusa.com/match/tIJGr3WO/",
+        "aces": 2,
+        "doubleFaults": 0,
+        "firstServePct": 63,
+        "firstServeWonPct": 59,
+        "secondServeWonPct": 40,
+        "breakPointsSaved": "4/9",
+        "breakPointsSavedPct": null,
+        "winners": 6,
+        "unforcedErrors": 20,
+        "servicePointsWonPct": 52,
+        "returnPointsWonPct": 30,
+        "serviceGamesWon": "44% (4/9)",
+        "serviceHoldPct": 44,
+        "holdPct": 44,
+        "returnGamesWon": "13% (1/8)",
+        "returnGamesWonPct": 13,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "0"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "63%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "59% (20/34)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "40% (8/20)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "4/9"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "18% (5/28)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "50% (8/16)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "1/2"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "6"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "20"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "71% (5/7)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "52% (28/54)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "30% (13/44)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "42% (41/98)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "5"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "3"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "44% (4/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "13% (1/8)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "29% (5/17)"
+          }
+        ]
+      }
+    },
+    "rg-m-luca-van-assche-brandon-nakashima-2026-05-28::brandon nakashima::5": {
+      "key": "rg-m-luca-van-assche-brandon-nakashima-2026-05-28::brandon nakashima::5",
+      "boardMatchId": "rg-m-luca-van-assche-brandon-nakashima-2026-05-28",
+      "boardTitle": "Luca Van Assche vs Brandon Nakashima",
+      "playerName": "Brandon Nakashima",
+      "opponentName": "Juan Manuel Cerundolo",
+      "recentIndex": 5,
+      "recentEvent": "",
+      "recentDate": "14 Apr 26",
+      "recentIsoDate": "2026-04-14",
+      "recentResult": "ARG  6-3 7-5 1st",
+      "flashscoreId": "MDlJWv3M",
+      "flashscoreLabel": "Nakashima B. - Cerundolo J. M.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/barcelona/results/",
+      "players": [
+        "Nakashima B.",
+        "Cerundolo J. M."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "MDlJWv3M",
+        "sourceUrl": "https://www.flashscoreusa.com/match/MDlJWv3M/",
+        "aces": 6,
+        "doubleFaults": 0,
+        "firstServePct": 63,
+        "firstServeWonPct": 69,
+        "secondServeWonPct": 62,
+        "breakPointsSaved": "1/2",
+        "breakPointsSavedPct": null,
+        "winners": 25,
+        "unforcedErrors": 23,
+        "servicePointsWonPct": 66,
+        "returnPointsWonPct": 43,
+        "serviceGamesWon": "91% (10/11)",
+        "serviceHoldPct": 91,
+        "holdPct": 91,
+        "returnGamesWon": "30% (3/10)",
+        "returnGamesWonPct": 30,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "6"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "0"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "63%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "69% (31/45)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "62% (16/26)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "1/2"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "30% (9/30)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "55% (17/31)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "3/6"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "25"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "23"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "67% (10/15)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "66% (47/71)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "43% (26/61)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "55% (73/132)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "6"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "91% (10/11)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "30% (3/10)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "62% (13/21)"
+          }
+        ]
+      }
+    },
+    "rg-m-luca-van-assche-brandon-nakashima-2026-05-28::brandon nakashima::6": {
+      "key": "rg-m-luca-van-assche-brandon-nakashima-2026-05-28::brandon nakashima::6",
+      "boardMatchId": "rg-m-luca-van-assche-brandon-nakashima-2026-05-28",
+      "boardTitle": "Luca Van Assche vs Brandon Nakashima",
+      "playerName": "Brandon Nakashima",
+      "opponentName": "Roman Andres Burruchaga",
+      "recentIndex": 6,
+      "recentEvent": "Houston",
+      "recentDate": "02 Apr 26",
+      "recentIsoDate": "2026-04-02",
+      "recentResult": "ARG   Loss 6-4 2-6 6-4 2nd",
+      "flashscoreId": "zqFp3tu9",
+      "flashscoreLabel": "Burruchaga R. A. - Nakashima B.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/houston/results/",
+      "players": [
+        "Burruchaga R. A.",
+        "Nakashima B."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "zqFp3tu9",
+        "sourceUrl": "https://www.flashscoreusa.com/match/zqFp3tu9/",
+        "aces": 1,
+        "doubleFaults": 0,
+        "firstServePct": 62,
+        "firstServeWonPct": 71,
+        "secondServeWonPct": 50,
+        "breakPointsSaved": "1/5",
+        "breakPointsSavedPct": null,
+        "winners": 26,
+        "unforcedErrors": 34,
+        "servicePointsWonPct": 63,
+        "returnPointsWonPct": 36,
+        "serviceGamesWon": "71% (10/14)",
+        "serviceHoldPct": 71,
+        "holdPct": 71,
+        "returnGamesWon": "29% (4/14)",
+        "returnGamesWonPct": 29,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "1"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "0"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "62%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "71% (34/48)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "50% (15/30)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "1/5"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "29% (14/49)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "50% (13/26)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "4/8"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "26"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "34"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "81% (13/16)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "63% (49/78)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "36% (27/75)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "50% (76/153)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "4"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "71% (10/14)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "29% (4/14)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "50% (14/28)"
+          }
+        ]
+      }
+    },
+    "rg-m-luca-van-assche-brandon-nakashima-2026-05-28::brandon nakashima::7": {
+      "key": "rg-m-luca-van-assche-brandon-nakashima-2026-05-28::brandon nakashima::7",
+      "boardMatchId": "rg-m-luca-van-assche-brandon-nakashima-2026-05-28",
+      "boardTitle": "Luca Van Assche vs Brandon Nakashima",
+      "playerName": "Brandon Nakashima",
+      "opponentName": "Martin Damm",
+      "recentIndex": 7,
+      "recentEvent": "",
+      "recentDate": "31 Mar 26",
+      "recentIsoDate": "2026-03-31",
+      "recentResult": "USA  7-60 6-2 1st",
+      "flashscoreId": "vHJGtWpT",
+      "flashscoreLabel": "Damm M. - Nakashima B.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/houston/results/",
+      "players": [
+        "Damm M.",
+        "Nakashima B."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "vHJGtWpT",
+        "sourceUrl": "https://www.flashscoreusa.com/match/vHJGtWpT/",
+        "aces": 9,
+        "doubleFaults": 4,
+        "firstServePct": 53,
+        "firstServeWonPct": 84,
+        "secondServeWonPct": 50,
+        "breakPointsSaved": "0/2",
+        "breakPointsSavedPct": null,
+        "winners": 20,
+        "unforcedErrors": 18,
+        "servicePointsWonPct": 68,
+        "returnPointsWonPct": 48,
+        "serviceGamesWon": "80% (8/10)",
+        "serviceHoldPct": 80,
+        "holdPct": 80,
+        "returnGamesWon": "40% (4/10)",
+        "returnGamesWonPct": 40,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "9"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "4"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "53%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "84% (27/32)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "50% (14/28)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "0/2"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "35% (14/40)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "68% (17/25)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "4/9"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "20"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "18"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "67% (4/6)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "68% (41/60)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "48% (31/65)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "58% (72/125)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "7"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "80% (8/10)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "40% (4/10)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "60% (12/20)"
           }
         ]
       }
@@ -19408,6 +22213,432 @@
         ]
       }
     },
+    "rg-m-raphael-collignon-ben-shelton-2026-05-28::ben shelton::5": {
+      "key": "rg-m-raphael-collignon-ben-shelton-2026-05-28::ben shelton::5",
+      "boardMatchId": "rg-m-raphael-collignon-ben-shelton-2026-05-28",
+      "boardTitle": "Raphael Collignon vs Ben Shelton",
+      "playerName": "Ben Shelton",
+      "opponentName": "Flavio Cobolli",
+      "recentIndex": 5,
+      "recentEvent": "Munich",
+      "recentDate": "19 Apr 26",
+      "recentIsoDate": "2026-04-19",
+      "recentResult": "ITA  6-2 7-5 Fin.",
+      "flashscoreId": "MkYRydyg",
+      "flashscoreLabel": "Cobolli F. - Shelton B.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/munich/results/",
+      "players": [
+        "Cobolli F.",
+        "Shelton B."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "MkYRydyg",
+        "sourceUrl": "https://www.flashscoreusa.com/match/MkYRydyg/",
+        "aces": 4,
+        "doubleFaults": 3,
+        "firstServePct": 59,
+        "firstServeWonPct": 85,
+        "secondServeWonPct": 43,
+        "breakPointsSaved": "6/6",
+        "breakPointsSavedPct": null,
+        "winners": 17,
+        "unforcedErrors": 26,
+        "servicePointsWonPct": 68,
+        "returnPointsWonPct": 39,
+        "serviceGamesWon": "100% (10/10)",
+        "serviceHoldPct": 100,
+        "holdPct": 100,
+        "returnGamesWon": "30% (3/10)",
+        "returnGamesWonPct": 30,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "4"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "3"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "59%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "85% (34/40)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "43% (12/28)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "6/6"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "30% (10/33)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "50% (12/24)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "3/9"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "17"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "26"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "73% (11/15)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "68% (46/68)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "39% (22/57)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "54% (68/125)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "7"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "100% (10/10)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "30% (3/10)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "65% (13/20)"
+          }
+        ]
+      }
+    },
+    "rg-m-raphael-collignon-ben-shelton-2026-05-28::ben shelton::6": {
+      "key": "rg-m-raphael-collignon-ben-shelton-2026-05-28::ben shelton::6",
+      "boardMatchId": "rg-m-raphael-collignon-ben-shelton-2026-05-28",
+      "boardTitle": "Raphael Collignon vs Ben Shelton",
+      "playerName": "Ben Shelton",
+      "opponentName": "Alex Molcan",
+      "recentIndex": 6,
+      "recentEvent": "",
+      "recentDate": "18 Apr 26",
+      "recentIsoDate": "2026-04-18",
+      "recentResult": "SVK  6-3 6-4 1/2",
+      "flashscoreId": "4GQkaliJ",
+      "flashscoreLabel": "Molcan A. - Shelton B.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/munich/results/",
+      "players": [
+        "Molcan A.",
+        "Shelton B."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "4GQkaliJ",
+        "sourceUrl": "https://www.flashscoreusa.com/match/4GQkaliJ/",
+        "aces": 6,
+        "doubleFaults": 2,
+        "firstServePct": 60,
+        "firstServeWonPct": 73,
+        "secondServeWonPct": 68,
+        "breakPointsSaved": "1/1",
+        "breakPointsSavedPct": null,
+        "winners": 24,
+        "unforcedErrors": 21,
+        "servicePointsWonPct": 71,
+        "returnPointsWonPct": 37,
+        "serviceGamesWon": "100% (10/10)",
+        "serviceHoldPct": 100,
+        "holdPct": 100,
+        "returnGamesWon": "22% (2/9)",
+        "returnGamesWonPct": 22,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "6"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "60%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "73% (27/37)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "68% (17/25)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "1/1"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "26% (9/35)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "50% (16/32)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "2/8"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "24"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "21"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "53% (10/19)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "71% (44/62)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "37% (25/67)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "53% (69/129)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "7"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "100% (10/10)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "22% (2/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "63% (12/19)"
+          }
+        ]
+      }
+    },
+    "rg-m-raphael-collignon-ben-shelton-2026-05-28::ben shelton::7": {
+      "key": "rg-m-raphael-collignon-ben-shelton-2026-05-28::ben shelton::7",
+      "boardMatchId": "rg-m-raphael-collignon-ben-shelton-2026-05-28",
+      "boardTitle": "Raphael Collignon vs Ben Shelton",
+      "playerName": "Ben Shelton",
+      "opponentName": "Joao Fonseca",
+      "recentIndex": 7,
+      "recentEvent": "",
+      "recentDate": "17 Apr 26",
+      "recentIsoDate": "2026-04-17",
+      "recentResult": "BRA  6-3 3-6 6-3 1/4",
+      "flashscoreId": "Y53pXGO8",
+      "flashscoreLabel": "Fonseca J. - Shelton B.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/munich/results/",
+      "players": [
+        "Fonseca J.",
+        "Shelton B."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "Y53pXGO8",
+        "sourceUrl": "https://www.flashscoreusa.com/match/Y53pXGO8/",
+        "aces": 7,
+        "doubleFaults": 2,
+        "firstServePct": 64,
+        "firstServeWonPct": 84,
+        "secondServeWonPct": 68,
+        "breakPointsSaved": "0/1",
+        "breakPointsSavedPct": null,
+        "winners": 30,
+        "unforcedErrors": 32,
+        "servicePointsWonPct": 79,
+        "returnPointsWonPct": 32,
+        "serviceGamesWon": "93% (13/14)",
+        "serviceHoldPct": 93,
+        "holdPct": 93,
+        "returnGamesWon": "15% (2/13)",
+        "returnGamesWonPct": 15,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "7"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "64%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "84% (38/45)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "68% (17/25)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "0/1"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "32% (16/50)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "35% (9/26)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "2/7"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "30"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "32"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "0% (0/0)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "79% (55/70)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "32% (24/76)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "54% (79/146)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "6"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "93% (13/14)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "15% (2/13)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "56% (15/27)"
+          }
+        ]
+      }
+    },
     "rg-w-donna-vekic-naomi-osaka-2026-05-28::donna vekic::0": {
       "key": "rg-w-donna-vekic-naomi-osaka-2026-05-28::donna vekic::0",
       "boardMatchId": "rg-w-donna-vekic-naomi-osaka-2026-05-28",
@@ -19681,6 +22912,131 @@
             "section": "Games",
             "label": "Total games won",
             "value": "46% (13/28)"
+          }
+        ]
+      }
+    },
+    "rg-w-donna-vekic-naomi-osaka-2026-05-28::donna vekic::7": {
+      "key": "rg-w-donna-vekic-naomi-osaka-2026-05-28::donna vekic::7",
+      "boardMatchId": "rg-w-donna-vekic-naomi-osaka-2026-05-28",
+      "boardTitle": "Donna Vekic vs Naomi Osaka",
+      "playerName": "Donna Vekic",
+      "opponentName": "Anastasia Potapova",
+      "recentIndex": 7,
+      "recentEvent": "Linz",
+      "recentDate": "11 Apr 26",
+      "recentIsoDate": "2026-04-11",
+      "recentResult": "AUT   Loss 6-4 6-2 1/2",
+      "flashscoreId": "bcdug4Mh",
+      "flashscoreLabel": "Potapova A. - Vekic D.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/linz/results/",
+      "players": [
+        "Potapova A.",
+        "Vekic D."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "bcdug4Mh",
+        "sourceUrl": "https://www.flashscoreusa.com/match/bcdug4Mh/",
+        "aces": 2,
+        "doubleFaults": 4,
+        "firstServePct": 63,
+        "firstServeWonPct": 63,
+        "secondServeWonPct": 33,
+        "breakPointsSaved": "4/8",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 52,
+        "returnPointsWonPct": 33,
+        "serviceGamesWon": "56% (5/9)",
+        "serviceHoldPct": 56,
+        "holdPct": 56,
+        "returnGamesWon": "11% (1/9)",
+        "returnGamesWonPct": 11,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "4"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "63%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "63% (19/30)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "33% (6/18)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "4/8"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "35% (14/40)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "46% (12/26)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "1/7"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "52% (25/48)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "33% (21/63)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "41% (46/111)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "5"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "56% (5/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "11% (1/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "33% (6/18)"
           }
         ]
       }
@@ -20323,6 +23679,131 @@
             "section": "Games",
             "label": "Total games won",
             "value": "75% (12/16)"
+          }
+        ]
+      }
+    },
+    "rg-w-donna-vekic-naomi-osaka-2026-05-28::naomi osaka::7": {
+      "key": "rg-w-donna-vekic-naomi-osaka-2026-05-28::naomi osaka::7",
+      "boardMatchId": "rg-w-donna-vekic-naomi-osaka-2026-05-28",
+      "boardTitle": "Donna Vekic vs Naomi Osaka",
+      "playerName": "Naomi Osaka",
+      "opponentName": "Talia Gibson",
+      "recentIndex": 7,
+      "recentEvent": "Miami",
+      "recentDate": "21 Mar 26",
+      "recentIsoDate": "2026-03-21",
+      "recentResult": "AUS   Loss 7-5 6-4 2nd",
+      "flashscoreId": "OG1zbbL6",
+      "flashscoreLabel": "Gibson T. - Osaka N.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/miami/results/",
+      "players": [
+        "Gibson T.",
+        "Osaka N."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "OG1zbbL6",
+        "sourceUrl": "https://www.flashscoreusa.com/match/OG1zbbL6/",
+        "aces": 13,
+        "doubleFaults": 1,
+        "firstServePct": 57,
+        "firstServeWonPct": 85,
+        "secondServeWonPct": 42,
+        "breakPointsSaved": "2/4",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 67,
+        "returnPointsWonPct": 31,
+        "serviceGamesWon": "82% (9/11)",
+        "serviceHoldPct": 82,
+        "holdPct": 82,
+        "returnGamesWon": "0% (0/11)",
+        "returnGamesWonPct": 0,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "13"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "1"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "57%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "85% (29/34)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "42% (11/26)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "2/4"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "22% (10/46)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "50% (12/24)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "0/4"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "67% (40/60)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "31% (22/70)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "48% (62/130)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "4"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "1"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "82% (9/11)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "0% (0/11)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "41% (9/22)"
           }
         ]
       }
@@ -22835,6 +26316,256 @@
         ]
       }
     },
+    "rg-w-katie-boulter-anastasia-potapova-2026-05-28::katie boulter::6": {
+      "key": "rg-w-katie-boulter-anastasia-potapova-2026-05-28::katie boulter::6",
+      "boardMatchId": "rg-w-katie-boulter-anastasia-potapova-2026-05-28",
+      "boardTitle": "Katie Boulter vs Anastasia Potapova",
+      "playerName": "Katie Boulter",
+      "opponentName": "Veronika Podrez",
+      "recentIndex": 6,
+      "recentEvent": "Rouen",
+      "recentDate": "17 Apr 26",
+      "recentIsoDate": "2026-04-17",
+      "recentResult": "UKR   Loss 6-4 6-1 1/4",
+      "flashscoreId": "jkSZVQjo",
+      "flashscoreLabel": "Podrez V. - Boulter K.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rouen/results/",
+      "players": [
+        "Podrez V.",
+        "Boulter K."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "jkSZVQjo",
+        "sourceUrl": "https://www.flashscoreusa.com/match/jkSZVQjo/",
+        "aces": 0,
+        "doubleFaults": 6,
+        "firstServePct": 68,
+        "firstServeWonPct": 49,
+        "secondServeWonPct": 17,
+        "breakPointsSaved": "8/16",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 40,
+        "returnPointsWonPct": 50,
+        "serviceGamesWon": "11% (1/9)",
+        "serviceHoldPct": 11,
+        "holdPct": 11,
+        "returnGamesWon": "50% (4/8)",
+        "returnGamesWonPct": 50,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "0"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "6"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "68%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "49% (25/51)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "17% (4/24)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "8/16"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "56% (14/25)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "42% (8/19)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "4/6"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "40% (32/81)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "50% (22/44)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "43% (54/125)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "3"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "11% (1/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "50% (4/8)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "29% (5/17)"
+          }
+        ]
+      }
+    },
+    "rg-w-katie-boulter-anastasia-potapova-2026-05-28::katie boulter::7": {
+      "key": "rg-w-katie-boulter-anastasia-potapova-2026-05-28::katie boulter::7",
+      "boardMatchId": "rg-w-katie-boulter-anastasia-potapova-2026-05-28",
+      "boardTitle": "Katie Boulter vs Anastasia Potapova",
+      "playerName": "Katie Boulter",
+      "opponentName": "Jaqueline Cristian",
+      "recentIndex": 7,
+      "recentEvent": "",
+      "recentDate": "15 Apr 26",
+      "recentIsoDate": "2026-04-15",
+      "recentResult": "ROU  7-65 4-6 6-1 2nd",
+      "flashscoreId": "fJItimyg",
+      "flashscoreLabel": "Boulter K. - Cristian J.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rouen/results/",
+      "players": [
+        "Boulter K.",
+        "Cristian J."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "fJItimyg",
+        "sourceUrl": "https://www.flashscoreusa.com/match/fJItimyg/",
+        "aces": 5,
+        "doubleFaults": 2,
+        "firstServePct": 64,
+        "firstServeWonPct": 70,
+        "secondServeWonPct": 49,
+        "breakPointsSaved": "5/8",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 63,
+        "returnPointsWonPct": 44,
+        "serviceGamesWon": "80% (12/15)",
+        "serviceHoldPct": 80,
+        "holdPct": 80,
+        "returnGamesWon": "29% (4/14)",
+        "returnGamesWonPct": 29,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "5"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "64%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "70% (43/61)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "49% (17/35)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "5/8"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "36% (27/76)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "63% (19/30)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "4/13"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "63% (60/96)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "44% (49/112)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "52% (109/208)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "9"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "80% (12/15)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "29% (4/14)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "55% (16/29)"
+          }
+        ]
+      }
+    },
     "rg-w-katie-boulter-anastasia-potapova-2026-05-28::anastasia potapova::0": {
       "key": "rg-w-katie-boulter-anastasia-potapova-2026-05-28::anastasia potapova::0",
       "boardMatchId": "rg-w-katie-boulter-anastasia-potapova-2026-05-28",
@@ -24577,6 +28308,290 @@
         ]
       }
     },
+    "rg-m-zachary-svajda-adam-walton-2026-05-28::zachary svajda::6": {
+      "key": "rg-m-zachary-svajda-adam-walton-2026-05-28::zachary svajda::6",
+      "boardMatchId": "rg-m-zachary-svajda-adam-walton-2026-05-28",
+      "boardTitle": "Zachary Svajda vs Adam Walton",
+      "playerName": "Zachary Svajda",
+      "opponentName": "Adolfo Daniel Vallejo",
+      "recentIndex": 6,
+      "recentEvent": "Houston",
+      "recentDate": "30 Mar 26",
+      "recentIsoDate": "2026-03-30",
+      "recentResult": "PAR   Loss 6-1 6-4 1st",
+      "flashscoreId": "2gcYbD0c",
+      "flashscoreLabel": "Vallejo D. - Svajda Z.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/houston/results/",
+      "players": [
+        "Vallejo D.",
+        "Svajda Z."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "2gcYbD0c",
+        "sourceUrl": "https://www.flashscoreusa.com/match/2gcYbD0c/",
+        "aces": 1,
+        "doubleFaults": 0,
+        "firstServePct": 48,
+        "firstServeWonPct": 60,
+        "secondServeWonPct": 55,
+        "breakPointsSaved": "2/6",
+        "breakPointsSavedPct": null,
+        "winners": 19,
+        "unforcedErrors": 24,
+        "servicePointsWonPct": 57,
+        "returnPointsWonPct": 24,
+        "serviceGamesWon": "50% (4/8)",
+        "serviceHoldPct": 50,
+        "holdPct": 50,
+        "returnGamesWon": "11% (1/9)",
+        "returnGamesWonPct": 11,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "1"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "0"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "48%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "60% (12/20)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "55% (12/22)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "2/6"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "21% (7/33)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "33% (4/12)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "1/1"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "19"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "24"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "33% (2/6)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "57% (24/42)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "24% (11/45)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "40% (35/87)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "4"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "50% (4/8)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "11% (1/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "29% (5/17)"
+          }
+        ]
+      }
+    },
+    "rg-m-zachary-svajda-adam-walton-2026-05-28::zachary svajda::7": {
+      "key": "rg-m-zachary-svajda-adam-walton-2026-05-28::zachary svajda::7",
+      "boardMatchId": "rg-m-zachary-svajda-adam-walton-2026-05-28",
+      "boardTitle": "Zachary Svajda vs Adam Walton",
+      "playerName": "Zachary Svajda",
+      "opponentName": "Moise Kouame",
+      "recentIndex": 7,
+      "recentEvent": "Miami",
+      "recentDate": "19 Mar 26",
+      "recentIsoDate": "2026-03-19",
+      "recentResult": "FRA   Loss 5-7 6-4 6-4 1st",
+      "flashscoreId": "vJKsdSBG",
+      "flashscoreLabel": "Kouame M. - Svajda Z.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/miami/results/",
+      "players": [
+        "Kouame M.",
+        "Svajda Z."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "vJKsdSBG",
+        "sourceUrl": "https://www.flashscoreusa.com/match/vJKsdSBG/",
+        "aces": 9,
+        "doubleFaults": 3,
+        "firstServePct": 64,
+        "firstServeWonPct": 76,
+        "secondServeWonPct": 52,
+        "breakPointsSaved": "1/4",
+        "breakPointsSavedPct": null,
+        "winners": 34,
+        "unforcedErrors": 48,
+        "servicePointsWonPct": 67,
+        "returnPointsWonPct": 36,
+        "serviceGamesWon": "81% (13/16)",
+        "serviceHoldPct": 81,
+        "holdPct": 81,
+        "returnGamesWon": "13% (2/16)",
+        "returnGamesWonPct": 13,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "9"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "3"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "64%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "76% (44/58)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "52% (17/33)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "1/4"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "23% (15/64)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "52% (25/48)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "2/12"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "34"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "48"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "77% (10/13)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "67% (61/91)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "36% (40/112)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "50% (101/203)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "5"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "1"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "81% (13/16)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "13% (2/16)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "47% (15/32)"
+          }
+        ]
+      }
+    },
     "rg-m-zachary-svajda-adam-walton-2026-05-28::adam walton::0": {
       "key": "rg-m-zachary-svajda-adam-walton-2026-05-28::adam walton::0",
       "boardMatchId": "rg-m-zachary-svajda-adam-walton-2026-05-28",
@@ -25459,6 +29474,716 @@
         ]
       }
     },
+    "rg-m-alejandro-tabilo-valentin-vacherot-2026-05-28::valentin vacherot::3": {
+      "key": "rg-m-alejandro-tabilo-valentin-vacherot-2026-05-28::valentin vacherot::3",
+      "boardMatchId": "rg-m-alejandro-tabilo-valentin-vacherot-2026-05-28",
+      "boardTitle": "Alejandro Tabilo vs Valentin Vacherot",
+      "playerName": "Valentin Vacherot",
+      "opponentName": "Carlos Alcaraz",
+      "recentIndex": 3,
+      "recentEvent": "Monte-Carlo",
+      "recentDate": "11 Apr 26",
+      "recentIsoDate": "2026-04-11",
+      "recentResult": "ESP   Loss 6-4 6-4 1/2",
+      "flashscoreId": "tYmITb13",
+      "flashscoreLabel": "Alcaraz C. - Vacherot V.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/monte-carlo/results/",
+      "players": [
+        "Alcaraz C.",
+        "Vacherot V."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "tYmITb13",
+        "sourceUrl": "https://www.flashscoreusa.com/match/tYmITb13/",
+        "aces": 3,
+        "doubleFaults": 1,
+        "firstServePct": 68,
+        "firstServeWonPct": 70,
+        "secondServeWonPct": 47,
+        "breakPointsSaved": "1/4",
+        "breakPointsSavedPct": null,
+        "winners": 11,
+        "unforcedErrors": 21,
+        "servicePointsWonPct": 63,
+        "returnPointsWonPct": 27,
+        "serviceGamesWon": "70% (7/10)",
+        "serviceHoldPct": 70,
+        "holdPct": 70,
+        "returnGamesWon": "10% (1/10)",
+        "returnGamesWonPct": 10,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "3"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "1"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "68%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "70% (28/40)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "47% (9/19)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "1/4"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "19% (6/31)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "40% (8/20)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "1/1"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "11"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "21"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "46% (6/13)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "63% (37/59)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "27% (14/51)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "46% (51/110)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "2"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "70% (7/10)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "10% (1/10)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "40% (8/20)"
+          }
+        ]
+      }
+    },
+    "rg-m-alejandro-tabilo-valentin-vacherot-2026-05-28::valentin vacherot::4": {
+      "key": "rg-m-alejandro-tabilo-valentin-vacherot-2026-05-28::valentin vacherot::4",
+      "boardMatchId": "rg-m-alejandro-tabilo-valentin-vacherot-2026-05-28",
+      "boardTitle": "Alejandro Tabilo vs Valentin Vacherot",
+      "playerName": "Valentin Vacherot",
+      "opponentName": "Alex De Minaur",
+      "recentIndex": 4,
+      "recentEvent": "",
+      "recentDate": "10 Apr 26",
+      "recentIsoDate": "2026-04-10",
+      "recentResult": "AUS  6-4 3-6 6-3 1/4",
+      "flashscoreId": "fm41gShg",
+      "flashscoreLabel": "Vacherot V. - De Minaur A.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/monte-carlo/results/",
+      "players": [
+        "Vacherot V.",
+        "De Minaur A."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "fm41gShg",
+        "sourceUrl": "https://www.flashscoreusa.com/match/fm41gShg/",
+        "aces": 6,
+        "doubleFaults": 3,
+        "firstServePct": 58,
+        "firstServeWonPct": 73,
+        "secondServeWonPct": 41,
+        "breakPointsSaved": "14/17",
+        "breakPointsSavedPct": null,
+        "winners": 21,
+        "unforcedErrors": 34,
+        "servicePointsWonPct": 60,
+        "returnPointsWonPct": 43,
+        "serviceGamesWon": "79% (11/14)",
+        "serviceHoldPct": 79,
+        "holdPct": 79,
+        "returnGamesWon": "29% (4/14)",
+        "returnGamesWonPct": 29,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "6"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "3"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "58%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "73% (41/56)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "41% (17/41)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "14/17"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "33% (14/42)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "51% (23/45)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "4/10"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "21"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "34"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "52% (13/25)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "60% (58/97)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "43% (37/87)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "52% (95/184)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "7"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "79% (11/14)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "29% (4/14)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "54% (15/28)"
+          }
+        ]
+      }
+    },
+    "rg-m-alejandro-tabilo-valentin-vacherot-2026-05-28::valentin vacherot::5": {
+      "key": "rg-m-alejandro-tabilo-valentin-vacherot-2026-05-28::valentin vacherot::5",
+      "boardMatchId": "rg-m-alejandro-tabilo-valentin-vacherot-2026-05-28",
+      "boardTitle": "Alejandro Tabilo vs Valentin Vacherot",
+      "playerName": "Valentin Vacherot",
+      "opponentName": "Hubert Hurkacz",
+      "recentIndex": 5,
+      "recentEvent": "",
+      "recentDate": "09 Apr 26",
+      "recentIsoDate": "2026-04-09",
+      "recentResult": "POL  6-74 6-3 6-4 3rd",
+      "flashscoreId": "r9SUg0wA",
+      "flashscoreLabel": "Vacherot V. - Hurkacz H.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/monte-carlo/results/",
+      "players": [
+        "Vacherot V.",
+        "Hurkacz H."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "r9SUg0wA",
+        "sourceUrl": "https://www.flashscoreusa.com/match/r9SUg0wA/",
+        "aces": 3,
+        "doubleFaults": 2,
+        "firstServePct": 64,
+        "firstServeWonPct": 74,
+        "secondServeWonPct": 44,
+        "breakPointsSaved": "11/13",
+        "breakPointsSavedPct": null,
+        "winners": 24,
+        "unforcedErrors": 31,
+        "servicePointsWonPct": 63,
+        "returnPointsWonPct": 38,
+        "serviceGamesWon": "88% (14/16)",
+        "serviceHoldPct": 88,
+        "holdPct": 88,
+        "returnGamesWon": "27% (4/15)",
+        "returnGamesWonPct": 27,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "3"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "64%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "74% (57/77)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "44% (19/43)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "11/13"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "30% (17/57)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "49% (19/39)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "4/8"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "24"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "31"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "50% (12/24)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "63% (76/120)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "38% (36/96)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "52% (112/216)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "6"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "88% (14/16)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "27% (4/15)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "58% (18/31)"
+          }
+        ]
+      }
+    },
+    "rg-m-alejandro-tabilo-valentin-vacherot-2026-05-28::valentin vacherot::6": {
+      "key": "rg-m-alejandro-tabilo-valentin-vacherot-2026-05-28::valentin vacherot::6",
+      "boardMatchId": "rg-m-alejandro-tabilo-valentin-vacherot-2026-05-28",
+      "boardTitle": "Alejandro Tabilo vs Valentin Vacherot",
+      "playerName": "Valentin Vacherot",
+      "opponentName": "Lorenzo Musetti",
+      "recentIndex": 6,
+      "recentEvent": "",
+      "recentDate": "08 Apr 26",
+      "recentIsoDate": "2026-04-08",
+      "recentResult": "ITA  7-66 7-5 2nd",
+      "flashscoreId": "tGOoFeU0",
+      "flashscoreLabel": "Musetti L. - Vacherot V.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/monte-carlo/results/",
+      "players": [
+        "Musetti L.",
+        "Vacherot V."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "tGOoFeU0",
+        "sourceUrl": "https://www.flashscoreusa.com/match/tGOoFeU0/",
+        "aces": 4,
+        "doubleFaults": 1,
+        "firstServePct": 61,
+        "firstServeWonPct": 79,
+        "secondServeWonPct": 54,
+        "breakPointsSaved": "3/5",
+        "breakPointsSavedPct": null,
+        "winners": 22,
+        "unforcedErrors": 23,
+        "servicePointsWonPct": 69,
+        "returnPointsWonPct": 42,
+        "serviceGamesWon": "83% (10/12)",
+        "serviceHoldPct": 83,
+        "holdPct": 83,
+        "returnGamesWon": "25% (3/12)",
+        "returnGamesWonPct": 25,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "4"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "1"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "61%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "79% (34/43)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "54% (15/28)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "3/5"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "38% (21/55)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "48% (19/40)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "3/9"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "22"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "23"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "65% (15/23)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "69% (49/71)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "42% (40/95)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "54% (89/166)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "8"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "83% (10/12)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "25% (3/12)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "54% (13/24)"
+          }
+        ]
+      }
+    },
+    "rg-m-alejandro-tabilo-valentin-vacherot-2026-05-28::valentin vacherot::7": {
+      "key": "rg-m-alejandro-tabilo-valentin-vacherot-2026-05-28::valentin vacherot::7",
+      "boardMatchId": "rg-m-alejandro-tabilo-valentin-vacherot-2026-05-28",
+      "boardTitle": "Alejandro Tabilo vs Valentin Vacherot",
+      "playerName": "Valentin Vacherot",
+      "opponentName": "Juan Manuel Cerundolo",
+      "recentIndex": 7,
+      "recentEvent": "",
+      "recentDate": "06 Apr 26",
+      "recentIsoDate": "2026-04-06",
+      "recentResult": "ARG  5-7 6-2 6-1 1st",
+      "flashscoreId": "AFYbaLQ1",
+      "flashscoreLabel": "Vacherot V. - Cerundolo J. M.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/monte-carlo/results/",
+      "players": [
+        "Vacherot V.",
+        "Cerundolo J. M."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "AFYbaLQ1",
+        "sourceUrl": "https://www.flashscoreusa.com/match/AFYbaLQ1/",
+        "aces": 7,
+        "doubleFaults": 3,
+        "firstServePct": 63,
+        "firstServeWonPct": 73,
+        "secondServeWonPct": 48,
+        "breakPointsSaved": "5/8",
+        "breakPointsSavedPct": null,
+        "winners": 32,
+        "unforcedErrors": 35,
+        "servicePointsWonPct": 64,
+        "returnPointsWonPct": 48,
+        "serviceGamesWon": "79% (11/14)",
+        "serviceHoldPct": 79,
+        "holdPct": 79,
+        "returnGamesWon": "46% (6/13)",
+        "returnGamesWonPct": 46,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "7"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "3"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "63%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "73% (40/55)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "48% (16/33)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "5/8"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "49% (24/49)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "48% (21/44)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "6/18"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "32"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "35"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "70% (23/33)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "64% (56/88)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "48% (45/93)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "56% (101/181)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "6"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "79% (11/14)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "46% (6/13)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "63% (17/27)"
+          }
+        ]
+      }
+    },
     "rg-w-antonia-ruzic-madison-keys-2026-05-28::antonia ruzic::0": {
       "key": "rg-w-antonia-ruzic-madison-keys-2026-05-28::antonia ruzic::0",
       "boardMatchId": "rg-w-antonia-ruzic-madison-keys-2026-05-28",
@@ -26097,6 +30822,131 @@
             "section": "Games",
             "label": "Total games won",
             "value": "36% (9/25)"
+          }
+        ]
+      }
+    },
+    "rg-w-antonia-ruzic-madison-keys-2026-05-28::antonia ruzic::7": {
+      "key": "rg-w-antonia-ruzic-madison-keys-2026-05-28::antonia ruzic::7",
+      "boardMatchId": "rg-w-antonia-ruzic-madison-keys-2026-05-28",
+      "boardTitle": "Antonia Ruzic vs Madison Keys",
+      "playerName": "Antonia Ruzic",
+      "opponentName": "Liudmila Samsonova",
+      "recentIndex": 7,
+      "recentEvent": "Stuttgart",
+      "recentDate": "13 Apr 26",
+      "recentIsoDate": "2026-04-13",
+      "recentResult": "RUS   Loss 6-0 6-4 1st",
+      "flashscoreId": "jRoRx0CD",
+      "flashscoreLabel": "Ruzic A. - Samsonova L.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/stuttgart/results/",
+      "players": [
+        "Ruzic A.",
+        "Samsonova L."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "jRoRx0CD",
+        "sourceUrl": "https://www.flashscoreusa.com/match/jRoRx0CD/",
+        "aces": 0,
+        "doubleFaults": 3,
+        "firstServePct": 68,
+        "firstServeWonPct": 41,
+        "secondServeWonPct": 47,
+        "breakPointsSaved": "1/6",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 43,
+        "returnPointsWonPct": 30,
+        "serviceGamesWon": "38% (3/8)",
+        "serviceHoldPct": 38,
+        "holdPct": 38,
+        "returnGamesWon": "13% (1/8)",
+        "returnGamesWonPct": 13,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "0"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "3"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "68%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "41% (13/32)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "47% (7/15)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "1/6"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "14% (3/22)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "48% (10/21)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "1/2"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "43% (20/47)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "30% (13/43)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "37% (33/90)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "5"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "2"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "38% (3/8)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "13% (1/8)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "25% (4/16)"
           }
         ]
       }
@@ -27256,6 +32106,256 @@
             "section": "Games",
             "label": "Total games won",
             "value": "29% (5/17)"
+          }
+        ]
+      }
+    },
+    "rg-w-victoria-mboko-katerina-siniakova-2026-05-28::victoria mboko::6": {
+      "key": "rg-w-victoria-mboko-katerina-siniakova-2026-05-28::victoria mboko::6",
+      "boardMatchId": "rg-w-victoria-mboko-katerina-siniakova-2026-05-28",
+      "boardTitle": "Victoria Mboko vs Katerina Siniakova",
+      "playerName": "Victoria Mboko",
+      "opponentName": "Karolina Muchova",
+      "recentIndex": 6,
+      "recentEvent": "Miami",
+      "recentDate": "24 Mar 26",
+      "recentIsoDate": "2026-03-24",
+      "recentResult": "CZE   Loss 7-5 7-65 1/4",
+      "flashscoreId": "QN0g9XA4",
+      "flashscoreLabel": "Mboko V. - Muchova K.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/miami/results/",
+      "players": [
+        "Mboko V.",
+        "Muchova K."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "QN0g9XA4",
+        "sourceUrl": "https://www.flashscoreusa.com/match/QN0g9XA4/",
+        "aces": 7,
+        "doubleFaults": 3,
+        "firstServePct": 78,
+        "firstServeWonPct": 71,
+        "secondServeWonPct": 59,
+        "breakPointsSaved": "1/2",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 68,
+        "returnPointsWonPct": 30,
+        "serviceGamesWon": "92% (11/12)",
+        "serviceHoldPct": 92,
+        "holdPct": 92,
+        "returnGamesWon": "0% (0/12)",
+        "returnGamesWonPct": 0,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "7"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "3"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "78%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "71% (42/59)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "59% (10/17)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "1/2"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "28% (16/58)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "36% (9/25)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "0/2"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "68% (52/76)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "30% (25/83)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "48% (77/159)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "5"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "1"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "92% (11/12)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "0% (0/12)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "46% (11/24)"
+          }
+        ]
+      }
+    },
+    "rg-w-victoria-mboko-katerina-siniakova-2026-05-28::victoria mboko::7": {
+      "key": "rg-w-victoria-mboko-katerina-siniakova-2026-05-28::victoria mboko::7",
+      "boardMatchId": "rg-w-victoria-mboko-katerina-siniakova-2026-05-28",
+      "boardTitle": "Victoria Mboko vs Katerina Siniakova",
+      "playerName": "Victoria Mboko",
+      "opponentName": "Mirra Andreeva",
+      "recentIndex": 7,
+      "recentEvent": "",
+      "recentDate": "23 Mar 26",
+      "recentIsoDate": "2026-03-23",
+      "recentResult": "RUS  7-64 4-6 6-0 4th",
+      "flashscoreId": "vHLSe2oI",
+      "flashscoreLabel": "Andreeva M. - Mboko V.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/miami/results/",
+      "players": [
+        "Andreeva M.",
+        "Mboko V."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "vHLSe2oI",
+        "sourceUrl": "https://www.flashscoreusa.com/match/vHLSe2oI/",
+        "aces": 8,
+        "doubleFaults": 10,
+        "firstServePct": 69,
+        "firstServeWonPct": 80,
+        "secondServeWonPct": 41,
+        "breakPointsSaved": "3/4",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 68,
+        "returnPointsWonPct": 40,
+        "serviceGamesWon": "93% (13/14)",
+        "serviceHoldPct": 93,
+        "holdPct": 93,
+        "returnGamesWon": "21% (3/14)",
+        "returnGamesWonPct": 21,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "8"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "10"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "69%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "80% (51/64)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "41% (12/29)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "3/4"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "36% (21/59)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "47% (21/45)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "3/9"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "68% (63/93)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "40% (42/104)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "53% (105/197)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "8"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "93% (13/14)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "21% (3/14)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "57% (16/28)"
           }
         ]
       }
@@ -31115,6 +36215,256 @@
         ]
       }
     },
+    "rg-w-oleksandra-oliynykova-kimberly-birrell-2026-05-28::kimberly birrell::6": {
+      "key": "rg-w-oleksandra-oliynykova-kimberly-birrell-2026-05-28::kimberly birrell::6",
+      "boardMatchId": "rg-w-oleksandra-oliynykova-kimberly-birrell-2026-05-28",
+      "boardTitle": "Oleksandra Oliynykova vs Kimberly Birrell",
+      "playerName": "Kimberly Birrell",
+      "opponentName": "Yue Yuan",
+      "recentIndex": 6,
+      "recentEvent": "",
+      "recentDate": "17 Mar 26",
+      "recentIsoDate": "2026-03-17",
+      "recentResult": "CHN  6-2 2-6 6-4 Q.",
+      "flashscoreId": "p0Ry9pcc",
+      "flashscoreLabel": "Birrell K. - Yuan Y.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/miami/results/",
+      "players": [
+        "Birrell K.",
+        "Yuan Y."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "p0Ry9pcc",
+        "sourceUrl": "https://www.flashscoreusa.com/match/p0Ry9pcc/",
+        "aces": 5,
+        "doubleFaults": 2,
+        "firstServePct": 62,
+        "firstServeWonPct": 70,
+        "secondServeWonPct": 48,
+        "breakPointsSaved": "11/15",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 62,
+        "returnPointsWonPct": 46,
+        "serviceGamesWon": "69% (9/13)",
+        "serviceHoldPct": 69,
+        "holdPct": 69,
+        "returnGamesWon": "38% (5/13)",
+        "returnGamesWonPct": 38,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "5"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "62%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "70% (35/50)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "48% (15/31)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "11/15"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "40% (23/57)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "51% (22/43)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "5/14"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "62% (50/81)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "46% (46/101)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "53% (96/182)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "6"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "69% (9/13)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "38% (5/13)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "54% (14/26)"
+          }
+        ]
+      }
+    },
+    "rg-w-oleksandra-oliynykova-kimberly-birrell-2026-05-28::kimberly birrell::7": {
+      "key": "rg-w-oleksandra-oliynykova-kimberly-birrell-2026-05-28::kimberly birrell::7",
+      "boardMatchId": "rg-w-oleksandra-oliynykova-kimberly-birrell-2026-05-28",
+      "boardTitle": "Oleksandra Oliynykova vs Kimberly Birrell",
+      "playerName": "Kimberly Birrell",
+      "opponentName": "Viktoriya Tomova",
+      "recentIndex": 7,
+      "recentEvent": "",
+      "recentDate": "16 Mar 26",
+      "recentIsoDate": "2026-03-16",
+      "recentResult": "BUL  6-3 6-2 q1",
+      "flashscoreId": "xrUWeddc",
+      "flashscoreLabel": "Birrell K. - Tomova V.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/miami/results/",
+      "players": [
+        "Birrell K.",
+        "Tomova V."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "xrUWeddc",
+        "sourceUrl": "https://www.flashscoreusa.com/match/xrUWeddc/",
+        "aces": 2,
+        "doubleFaults": 3,
+        "firstServePct": 60,
+        "firstServeWonPct": 69,
+        "secondServeWonPct": 37,
+        "breakPointsSaved": "1/3",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 56,
+        "returnPointsWonPct": 54,
+        "serviceGamesWon": "75% (6/8)",
+        "serviceHoldPct": 75,
+        "holdPct": 75,
+        "returnGamesWon": "67% (6/9)",
+        "returnGamesWonPct": 67,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "3"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "60%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "69% (20/29)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "37% (7/19)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "1/3"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "47% (25/53)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "76% (13/17)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "6/11"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "56% (27/48)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "54% (38/70)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "55% (65/118)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "7"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "75% (6/8)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "67% (6/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "71% (12/17)"
+          }
+        ]
+      }
+    },
     "rg-w-diana-shnaider-mccartney-kessler-2026-05-28::diana shnaider::0": {
       "key": "rg-w-diana-shnaider-mccartney-kessler-2026-05-28::diana shnaider::0",
       "boardMatchId": "rg-w-diana-shnaider-mccartney-kessler-2026-05-28",
@@ -31763,6 +37113,381 @@
             "section": "Games",
             "label": "Total games won",
             "value": "57% (16/28)"
+          }
+        ]
+      }
+    },
+    "rg-w-diana-shnaider-mccartney-kessler-2026-05-28::diana shnaider::5": {
+      "key": "rg-w-diana-shnaider-mccartney-kessler-2026-05-28::diana shnaider::5",
+      "boardMatchId": "rg-w-diana-shnaider-mccartney-kessler-2026-05-28",
+      "boardTitle": "Diana Shnaider vs McCartney Kessler",
+      "playerName": "Diana Shnaider",
+      "opponentName": "Elena Rybakina",
+      "recentIndex": 5,
+      "recentEvent": "Stuttgart",
+      "recentDate": "16 Apr 26",
+      "recentIsoDate": "2026-04-16",
+      "recentResult": "KAZ   Loss 6-3 6-4 2nd",
+      "flashscoreId": "E5ttOKnC",
+      "flashscoreLabel": "Rybakina E. - Shnaider D.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/stuttgart/results/",
+      "players": [
+        "Rybakina E.",
+        "Shnaider D."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "E5ttOKnC",
+        "sourceUrl": "https://www.flashscoreusa.com/match/E5ttOKnC/",
+        "aces": 1,
+        "doubleFaults": 5,
+        "firstServePct": 58,
+        "firstServeWonPct": 66,
+        "secondServeWonPct": 48,
+        "breakPointsSaved": "2/4",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 58,
+        "returnPointsWonPct": 17,
+        "serviceGamesWon": "78% (7/9)",
+        "serviceHoldPct": 78,
+        "holdPct": 78,
+        "returnGamesWon": "0% (0/10)",
+        "returnGamesWonPct": 0,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "1"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "5"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "58%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "66% (25/38)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "48% (13/27)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "2/4"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "9% (3/33)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "33% (5/15)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "0/0"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "58% (38/65)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "17% (8/48)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "41% (46/113)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "3"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "78% (7/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "0% (0/10)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "37% (7/19)"
+          }
+        ]
+      }
+    },
+    "rg-w-diana-shnaider-mccartney-kessler-2026-05-28::diana shnaider::6": {
+      "key": "rg-w-diana-shnaider-mccartney-kessler-2026-05-28::diana shnaider::6",
+      "boardMatchId": "rg-w-diana-shnaider-mccartney-kessler-2026-05-28",
+      "boardTitle": "Diana Shnaider vs McCartney Kessler",
+      "playerName": "Diana Shnaider",
+      "opponentName": "Tamara Korpatsch",
+      "recentIndex": 6,
+      "recentEvent": "",
+      "recentDate": "14 Apr 26",
+      "recentIsoDate": "2026-04-14",
+      "recentResult": "GER  6-3 6-1 1st",
+      "flashscoreId": "SAeprelg",
+      "flashscoreLabel": "Korpatsch T. - Shnaider D.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/stuttgart/results/",
+      "players": [
+        "Korpatsch T.",
+        "Shnaider D."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "SAeprelg",
+        "sourceUrl": "https://www.flashscoreusa.com/match/SAeprelg/",
+        "aces": 0,
+        "doubleFaults": 4,
+        "firstServePct": 68,
+        "firstServeWonPct": 72,
+        "secondServeWonPct": 35,
+        "breakPointsSaved": "0/2",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 60,
+        "returnPointsWonPct": 57,
+        "serviceGamesWon": "75% (6/8)",
+        "serviceHoldPct": 75,
+        "holdPct": 75,
+        "returnGamesWon": "75% (6/8)",
+        "returnGamesWonPct": 75,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "0"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "4"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "68%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "72% (26/36)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "35% (6/17)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "0/2"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "56% (20/36)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "59% (13/22)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "6/11"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "60% (32/53)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "57% (33/58)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "59% (65/111)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "7"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "75% (6/8)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "75% (6/8)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "75% (12/16)"
+          }
+        ]
+      }
+    },
+    "rg-w-diana-shnaider-mccartney-kessler-2026-05-28::diana shnaider::7": {
+      "key": "rg-w-diana-shnaider-mccartney-kessler-2026-05-28::diana shnaider::7",
+      "boardMatchId": "rg-w-diana-shnaider-mccartney-kessler-2026-05-28",
+      "boardTitle": "Diana Shnaider vs McCartney Kessler",
+      "playerName": "Diana Shnaider",
+      "opponentName": "Jessica Pegula",
+      "recentIndex": 7,
+      "recentEvent": "Charleston",
+      "recentDate": "03 Apr 26",
+      "recentIsoDate": "2026-04-03",
+      "recentResult": "USA   Loss 3-6 6-3 6-2 1/4",
+      "flashscoreId": "n3xo5zcR",
+      "flashscoreLabel": "Pegula J. - Shnaider D.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/charleston/results/",
+      "players": [
+        "Pegula J.",
+        "Shnaider D."
+      ],
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "n3xo5zcR",
+        "sourceUrl": "https://www.flashscoreusa.com/match/n3xo5zcR/",
+        "aces": 1,
+        "doubleFaults": 6,
+        "firstServePct": 64,
+        "firstServeWonPct": 59,
+        "secondServeWonPct": 47,
+        "breakPointsSaved": "12/17",
+        "breakPointsSavedPct": null,
+        "servicePointsWonPct": 55,
+        "returnPointsWonPct": 38,
+        "serviceGamesWon": "62% (8/13)",
+        "serviceHoldPct": 62,
+        "holdPct": 62,
+        "returnGamesWon": "23% (3/13)",
+        "returnGamesWonPct": 23,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "1"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "6"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "64%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "59% (37/63)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "47% (17/36)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "12/17"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "34% (23/68)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "48% (13/27)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "3/9"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "55% (54/99)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "38% (36/95)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "46% (90/194)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "3"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "3"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "62% (8/13)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "23% (3/13)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "42% (11/26)"
           }
         ]
       }

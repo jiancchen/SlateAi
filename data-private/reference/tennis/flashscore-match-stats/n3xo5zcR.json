@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-diana-shnaider-mccartney-kessler-2026-05-28",
+  "boardTitle": "Diana Shnaider vs McCartney Kessler",
+  "boardPlayerName": "Diana Shnaider",
+  "recentOpponentName": "Jessica Pegula",
+  "recentIndex": 7,
+  "recentEvent": "Charleston",
+  "recentDate": "03 Apr 26",
+  "recentIsoDate": "2026-04-03",
+  "recentResult": "USA   Loss 3-6 6-3 6-2 1/4",
+  "flashscoreLabel": "Pegula J. - Shnaider D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/charleston/results/",
+  "players": [
+    "Pegula J.",
+    "Shnaider D."
+  ],
+  "generatedAt": "2026-05-28T04:37:19.694Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/n3xo5zcR/",
+  "matchId": "n3xo5zcR",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_n3xo5zcR",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_n3xo5zcR"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:12"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "1",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "6",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "64%",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "66% (45/68)",
+              "right": "59% (37/63)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (14/27)",
+              "right": "47% (17/36)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/9",
+              "right": "12/17",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (26/63)",
+              "right": "34% (23/68)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (19/36)",
+              "right": "48% (13/27)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/17",
+              "right": "3/9",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "62% (59/95)",
+              "right": "55% (54/99)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (45/99)",
+              "right": "38% (36/95)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (104/194)",
+              "right": "46% (90/194)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "77% (10/13)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (5/13)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (15/26)",
+              "right": "42% (11/26)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "59%",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (15/27)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (2/7)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "3/4",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (5/17)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "2/4",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "50% (17/34)",
+              "right": "66% (19/29)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (10/29)",
+              "right": "50% (17/34)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (27/63)",
+              "right": "57% (36/63)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "62%",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (14/16)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "86% (6/7)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "4/5",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (9/23)",
+              "right": "13% (2/16)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (7/14)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "0/0",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "87% (20/23)",
+              "right": "57% (21/37)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (16/37)",
+              "right": "13% (3/23)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (36/60)",
+              "right": "40% (24/60)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "70%",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (16/25)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (6/13)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "5/8",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "52% (12/23)",
+              "right": "36% (9/25)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (7/10)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "1/5",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "58% (22/38)",
+              "right": "42% (14/33)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "58% (19/33)",
+              "right": "42% (16/38)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (41/71)",
+              "right": "42% (30/71)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Pegula J.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

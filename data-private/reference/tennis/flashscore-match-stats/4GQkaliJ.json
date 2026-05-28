@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-raphael-collignon-ben-shelton-2026-05-28",
+  "boardTitle": "Raphael Collignon vs Ben Shelton",
+  "boardPlayerName": "Ben Shelton",
+  "recentOpponentName": "Alex Molcan",
+  "recentIndex": 6,
+  "recentEvent": "",
+  "recentDate": "18 Apr 26",
+  "recentIsoDate": "2026-04-18",
+  "recentResult": "SVK  6-3 6-4 1/2",
+  "flashscoreLabel": "Molcan A. - Shelton B.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/munich/results/",
+  "players": [
+    "Molcan A.",
+    "Shelton B."
+  ],
+  "generatedAt": "2026-05-28T04:36:53.906Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/4GQkaliJ/",
+  "matchId": "4GQkaliJ",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_4GQkaliJ",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_4GQkaliJ"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:46"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:51"
+      }
+    ],
+    "totalDuration": "1:37"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "60%",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (26/35)",
+              "right": "73% (27/37)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (16/32)",
+              "right": "68% (17/25)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "1/1",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (11/37)",
+              "right": "26% (9/35)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "32% (8/25)",
+              "right": "50% (16/32)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "2/8",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "24",
+              "right": "24",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "21",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Net points won",
+              "left": "64% (7/11)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (42/67)",
+              "right": "71% (44/62)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (18/62)",
+              "right": "37% (25/67)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (60/129)",
+              "right": "53% (69/129)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "78% (7/9)",
+              "right": "100% (10/10)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/10)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total games won",
+              "left": "37% (7/19)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "48%",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (13/17)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (5/13)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "1/1",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (5/16)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (5/17)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/4",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "15",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "12",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (18/30)",
+              "right": "69% (22/32)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (10/32)",
+              "right": "40% (12/30)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (28/62)",
+              "right": "55% (34/62)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "49%",
+              "right": "72%",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (13/18)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (11/19)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "0/0",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (6/21)",
+              "right": "11% (2/18)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/4",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "9",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "9",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (24/37)",
+              "right": "73% (22/30)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (8/30)",
+              "right": "35% (13/37)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (32/67)",
+              "right": "52% (35/67)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

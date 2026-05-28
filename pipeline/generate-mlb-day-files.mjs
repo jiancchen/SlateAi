@@ -979,6 +979,117 @@ const buildStarterLeashByPitcherId = ({ date, games, windowStarts = 5 }) => {
   )
 }
 
+const buildPitcherStartHistoryByPitcherId = ({ date, games, seasonYear = season }) => {
+  const pitcherIds = [
+    ...new Set(
+      games.flatMap((game) => [game.awayPitcher?.id, game.homePitcher?.id]).filter((value) => Number.isFinite(value))
+    )
+  ]
+
+  if (!pitcherIds.length) return {}
+
+  const seasonStart = `${seasonYear}-01-01`
+  const rows = runSqliteJson(
+    `with first_inning as (
+      select
+        game_pk,
+        pitcher_id,
+        sum(coalesce(run_delta, 0)) as first_inning_runs_allowed
+      from mlb_plate_appearances
+      where inning = 1
+        and pitcher_id in (${pitcherIds.join(',')})
+      group by game_pk, pitcher_id
+    )
+    select
+      gl.game_pk,
+      gl.game_date,
+      gl.team_role,
+      gl.team_name,
+      gl.opponent_name,
+      gl.pitcher_id,
+      gl.pitcher_name,
+      gl.pitch_hand,
+      gl.innings_pitched,
+      gl.outs_recorded,
+      gl.runs_allowed,
+      gl.earned_runs,
+      gl.hits_allowed,
+      gl.home_runs_allowed,
+      gl.walks_allowed,
+      gl.strikeouts,
+      gl.pitches_thrown,
+      g.venue_name,
+      case when gl.team_role = 'away' then g.away_score else g.home_score end as team_runs,
+      case when gl.team_role = 'away' then g.home_score else g.away_score end as opponent_runs,
+      coalesce(fi.first_inning_runs_allowed, 0) as first_inning_runs_allowed
+    from mlb_starting_pitcher_game_logs gl
+    join mlb_games g
+      on g.game_pk = gl.game_pk
+    left join first_inning fi
+      on fi.game_pk = gl.game_pk
+     and fi.pitcher_id = gl.pitcher_id
+    where gl.pitcher_id in (${pitcherIds.join(',')})
+      and gl.game_date < '${date}'
+      and gl.game_date >= '${seasonStart}'
+    order by gl.pitcher_id, gl.game_date desc, gl.game_pk desc;`
+  )
+
+  const grouped = rows.reduce((map, row) => {
+    const pitcherId = Number(row.pitcher_id || 0)
+    if (!pitcherId) return map
+    if (!map.has(pitcherId)) map.set(pitcherId, [])
+    map.get(pitcherId).push(row)
+    return map
+  }, new Map())
+
+  return Object.fromEntries(
+    [...grouped.entries()].map(([pitcherId, pitcherRows]) => [
+      pitcherId,
+      pitcherRows.map((row) => {
+        const inningsFloat = Number(row.innings_pitched || 0) || 0
+        const teamRuns = Number(row.team_runs)
+        const opponentRuns = Number(row.opponent_runs)
+        const teamResult =
+          Number.isFinite(teamRuns) && Number.isFinite(opponentRuns)
+            ? teamRuns > opponentRuns
+              ? 'W'
+              : teamRuns < opponentRuns
+                ? 'L'
+                : 'T'
+            : ''
+        const earnedRuns = Number(row.earned_runs || 0) || 0
+        const firstInningRunsAllowed = Number(row.first_inning_runs_allowed || 0) || 0
+        return {
+          gamePk: Number(row.game_pk || 0) || null,
+          date: row.game_date || '',
+          venueRole: row.team_role === 'home' ? 'home' : 'road',
+          venueName: row.venue_name || '',
+          teamName: officialToDeskTeam[row.team_name] || row.team_name || '',
+          opponentName: officialToDeskTeam[row.opponent_name] || row.opponent_name || '',
+          pitcherName: row.pitcher_name || '',
+          pitchHand: row.pitch_hand || '',
+          inningsPitched: roundMaybe(inningsFloat, 1),
+          inningsPitchedLabel: inningsFloat > 0 ? formatInningsString(inningsFloat) : '-',
+          outsRecorded: Number(row.outs_recorded || 0) || 0,
+          runsAllowed: Number(row.runs_allowed || 0) || 0,
+          earnedRuns,
+          hitsAllowed: Number(row.hits_allowed || 0) || 0,
+          walksAllowed: Number(row.walks_allowed || 0) || 0,
+          strikeouts: Number(row.strikeouts || 0) || 0,
+          homeRunsAllowed: Number(row.home_runs_allowed || 0) || 0,
+          pitchesThrown: Number(row.pitches_thrown || 0) || 0,
+          teamRuns: Number.isFinite(teamRuns) ? teamRuns : null,
+          opponentRuns: Number.isFinite(opponentRuns) ? opponentRuns : null,
+          teamResult,
+          qualityStart: inningsFloat >= 6 && earnedRuns <= 3,
+          firstInningRunsAllowed,
+          firstInningOutcome: firstInningRunsAllowed > 0 ? (firstInningRunsAllowed === 1 ? 'RFI' : `${firstInningRunsAllowed}RFI`) : 'NRFI'
+        }
+      })
+    ])
+  )
+}
+
 const buildTeamStoryPriorsByTeam = ({ date, games, windowGames = 10 }) => {
   const teams = [...new Set(games.flatMap((game) => [game.away, game.home]).filter(Boolean))]
 
@@ -2635,6 +2746,7 @@ const main = async () => {
   const recentStarterFormByPitcherId = buildRecentStarterFormByPitcherId({ date: options.date, games: rawGames })
   const starterUsageContextByPitcherId = buildStarterUsageContextByPitcherId({ date: options.date, games: rawGames })
   const starterLeashByPitcherId = buildStarterLeashByPitcherId({ date: options.date, games: rawGames })
+  const pitcherStartHistoryByPitcherId = buildPitcherStartHistoryByPitcherId({ date: options.date, games: rawGames })
   const teamStoryPriorsByTeam = buildTeamStoryPriorsByTeam({ date: options.date, games: rawGames })
   const teamStateByTeam = buildTeamStateByTeam({ date: options.date, games: rawGames })
   const hitterStateByTeam = buildHitterStateByTeam({ date: options.date, games: rawGames })
@@ -2658,6 +2770,14 @@ const main = async () => {
     ...game,
     awayPitcher: {
       ...game.awayPitcher,
+      startHistoryLast5: Number.isFinite(game.awayPitcher?.id)
+        ? (pitcherStartHistoryByPitcherId[game.awayPitcher.id] ?? []).slice(0, 5)
+        : [],
+      opponentHistoryThisSeason: Number.isFinite(game.awayPitcher?.id)
+        ? (pitcherStartHistoryByPitcherId[game.awayPitcher.id] ?? []).filter(
+            (start) => start.opponentName === game.home
+          )
+        : [],
       strikeoutMarket: Number.isFinite(game.gamePk) ? pitcherStrikeoutMarketsByGamePk[game.gamePk]?.away ?? null : null,
       recentForm: Number.isFinite(game.awayPitcher?.id)
         ? recentStarterFormByPitcherId[game.awayPitcher.id] ?? null
@@ -2677,6 +2797,14 @@ const main = async () => {
     },
     homePitcher: {
       ...game.homePitcher,
+      startHistoryLast5: Number.isFinite(game.homePitcher?.id)
+        ? (pitcherStartHistoryByPitcherId[game.homePitcher.id] ?? []).slice(0, 5)
+        : [],
+      opponentHistoryThisSeason: Number.isFinite(game.homePitcher?.id)
+        ? (pitcherStartHistoryByPitcherId[game.homePitcher.id] ?? []).filter(
+            (start) => start.opponentName === game.away
+          )
+        : [],
       strikeoutMarket: Number.isFinite(game.gamePk) ? pitcherStrikeoutMarketsByGamePk[game.gamePk]?.home ?? null : null,
       recentForm: Number.isFinite(game.homePitcher?.id)
         ? recentStarterFormByPitcherId[game.homePitcher.id] ?? null

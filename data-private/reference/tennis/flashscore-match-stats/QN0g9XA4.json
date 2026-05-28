@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-victoria-mboko-katerina-siniakova-2026-05-28",
+  "boardTitle": "Victoria Mboko vs Katerina Siniakova",
+  "boardPlayerName": "Victoria Mboko",
+  "recentOpponentName": "Karolina Muchova",
+  "recentIndex": 6,
+  "recentEvent": "Miami",
+  "recentDate": "24 Mar 26",
+  "recentIsoDate": "2026-03-24",
+  "recentResult": "CZE   Loss 7-5 7-65 1/4",
+  "flashscoreLabel": "Mboko V. - Muchova K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/miami/results/",
+  "players": [
+    "Mboko V.",
+    "Muchova K."
+  ],
+  "generatedAt": "2026-05-28T04:37:10.759Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/QN0g9XA4/",
+  "matchId": "QN0g9XA4",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_QN0g9XA4",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_QN0g9XA4"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:49"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:59"
+      }
+    ],
+    "totalDuration": "1:48"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "5",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "78%",
+              "right": "70%",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (42/59)",
+              "right": "72% (42/58)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (10/17)",
+              "right": "64% (16/25)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "2/2",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (16/58)",
+              "right": "29% (17/59)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (9/25)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "1/2",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "68% (52/76)",
+              "right": "70% (58/83)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (25/83)",
+              "right": "32% (24/76)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (77/159)",
+              "right": "52% (82/159)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "92% (11/12)",
+              "right": "100% (12/12)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/12)",
+              "right": "8% (1/12)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "46% (11/24)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "75%",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (17/26)",
+              "right": "77% (23/30)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/1",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (7/30)",
+              "right": "35% (9/26)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/1",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "67% (22/33)",
+              "right": "70% (28/40)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (12/40)",
+              "right": "33% (11/33)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (34/73)",
+              "right": "53% (39/73)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "65%",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (25/33)",
+              "right": "68% (19/28)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "1/1",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (9/28)",
+              "right": "24% (8/33)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "27% (4/15)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "0/1",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "70% (30/43)",
+              "right": "70% (30/43)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (13/43)",
+              "right": "30% (13/43)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (43/86)",
+              "right": "50% (43/86)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -457,5 +457,51 @@ export const mlbPropPerformanceByDate: Record<string, DailyPropSummary> = {
       "Alejandro Osuna Over 0.5 singles",
       "Corbin Carroll Over 1.5 total bases"
     ]
+  },
+  "2026-05-27": {
+    "overall": {
+      "hits": 18,
+      "total": 49,
+      "hitRate": 36.7
+    },
+    "byType": {
+      "rbi": {
+        "hits": 0,
+        "total": 3,
+        "hitRate": 0
+      },
+      "totalBases": {
+        "hits": 13,
+        "total": 27,
+        "hitRate": 48.1
+      },
+      "singles": {
+        "hits": 0,
+        "total": 5,
+        "hitRate": 0
+      },
+      "pitcherStrikeouts": {
+        "hits": 4,
+        "total": 12,
+        "hitRate": 33.3
+      },
+      "walks": {
+        "hits": 1,
+        "total": 2,
+        "hitRate": 50
+      }
+    },
+    "topHits": [
+      "Randal Grichuk Over 1.5 total bases",
+      "Juan Soto Over 1.5 total bases",
+      "CJ Abrams Over 1.5 total bases",
+      "Jonathan Aranda Over 1.5 total bases"
+    ],
+    "topMisses": [
+      "James Wood Over 0.5 RBI",
+      "Amed Rosario Over 1.5 total bases",
+      "Casey Schmitt Over 1.5 total bases",
+      "Esmerlyn Valdez Over 1.5 total bases"
+    ]
   }
 }

@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-zachary-svajda-adam-walton-2026-05-28",
+  "boardTitle": "Zachary Svajda vs Adam Walton",
+  "boardPlayerName": "Zachary Svajda",
+  "recentOpponentName": "Adolfo Daniel Vallejo",
+  "recentIndex": 6,
+  "recentEvent": "Houston",
+  "recentDate": "30 Mar 26",
+  "recentIsoDate": "2026-03-30",
+  "recentResult": "PAR   Loss 6-1 6-4 1st",
+  "flashscoreLabel": "Vallejo D. - Svajda Z.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/houston/results/",
+  "players": [
+    "Vallejo D.",
+    "Svajda Z."
+  ],
+  "generatedAt": "2026-05-28T04:37:04.491Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/2gcYbD0c/",
+  "matchId": "2gcYbD0c",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_2gcYbD0c",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_2gcYbD0c"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:26"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:36"
+      }
+    ],
+    "totalDuration": "1:02"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "1",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "48%",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (26/33)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (8/12)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "2/6",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (8/20)",
+              "right": "21% (7/33)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (10/22)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/6",
+              "right": "1/1",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "19",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "24",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (34/45)",
+              "right": "57% (24/42)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (18/42)",
+              "right": "24% (11/45)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (52/87)",
+              "right": "40% (35/87)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "89% (8/9)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (4/8)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "39%",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "92% (11/12)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "100% (5/5)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "57% (4/7)",
+              "right": "8% (1/12)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "4",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "3",
+              "right": "12",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "94% (16/17)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (10/18)",
+              "right": "6% (1/17)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "74% (26/35)",
+              "right": "26% (9/35)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "54%",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (15/21)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/2",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (4/13)",
+              "right": "29% (6/21)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/1",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "15",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "3",
+              "right": "12",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (18/28)",
+              "right": "67% (16/24)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (8/24)",
+              "right": "36% (10/28)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (26/52)",
+              "right": "50% (26/52)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Vallejo D.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-diana-shnaider-mccartney-kessler-2026-05-28",
+  "boardTitle": "Diana Shnaider vs McCartney Kessler",
+  "boardPlayerName": "Diana Shnaider",
+  "recentOpponentName": "Tamara Korpatsch",
+  "recentIndex": 6,
+  "recentEvent": "",
+  "recentDate": "14 Apr 26",
+  "recentIsoDate": "2026-04-14",
+  "recentResult": "GER  6-3 6-1 1st",
+  "flashscoreLabel": "Korpatsch T. - Shnaider D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/stuttgart/results/",
+  "players": [
+    "Korpatsch T.",
+    "Shnaider D."
+  ],
+  "generatedAt": "2026-05-28T04:37:19.299Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/SAeprelg/",
+  "matchId": "SAeprelg",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_SAeprelg",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_SAeprelg"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:49"
+      }
+    ],
+    "totalDuration": "1:31"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "68%",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "44% (16/36)",
+              "right": "72% (26/36)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (9/22)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/11",
+              "right": "0/2",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (11/36)",
+              "right": "56% (20/36)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "65% (11/17)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "6/11",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "43% (25/58)",
+              "right": "60% (32/53)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (21/53)",
+              "right": "57% (33/58)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (46/111)",
+              "right": "59% (65/111)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (4/16)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "41%",
+              "right": "59%",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "45% (5/11)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (6/16)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "0/2",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (6/16)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (5/11)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "3/5",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "41% (11/27)",
+              "right": "59% (16/27)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (11/27)",
+              "right": "59% (16/27)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (22/54)",
+              "right": "59% (32/54)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "81%",
+              "right": "77%",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "44% (11/25)",
+              "right": "80% (16/20)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (3/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "0/0",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (5/20)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "100% (6/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/6",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "45% (14/31)",
+              "right": "62% (16/26)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (10/26)",
+              "right": "55% (17/31)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (24/57)",
+              "right": "58% (33/57)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Korpatsch T.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

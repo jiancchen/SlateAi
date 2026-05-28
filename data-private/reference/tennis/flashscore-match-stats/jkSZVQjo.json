@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-katie-boulter-anastasia-potapova-2026-05-28",
+  "boardTitle": "Katie Boulter vs Anastasia Potapova",
+  "boardPlayerName": "Katie Boulter",
+  "recentOpponentName": "Veronika Podrez",
+  "recentIndex": 6,
+  "recentEvent": "Rouen",
+  "recentDate": "17 Apr 26",
+  "recentIsoDate": "2026-04-17",
+  "recentResult": "UKR   Loss 6-4 6-1 1/4",
+  "flashscoreLabel": "Podrez V. - Boulter K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rouen/results/",
+  "players": [
+    "Podrez V.",
+    "Boulter K."
+  ],
+  "generatedAt": "2026-05-28T04:37:00.672Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/jkSZVQjo/",
+  "matchId": "jkSZVQjo",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_jkSZVQjo",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_jkSZVQjo"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:33"
+      }
+    ],
+    "totalDuration": "1:18"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "68%",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "44% (11/25)",
+              "right": "49% (25/51)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (11/19)",
+              "right": "17% (4/24)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/6",
+              "right": "8/16",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "51% (26/51)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "83% (20/24)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "8/16",
+              "right": "4/6",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "50% (22/44)",
+              "right": "40% (32/81)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "60% (49/81)",
+              "right": "50% (22/44)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (71/125)",
+              "right": "43% (54/125)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (4/8)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Return games won",
+              "left": "89% (8/9)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "66%",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "41% (7/17)",
+              "right": "55% (16/29)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "13% (2/15)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "8/12",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (13/29)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "87% (13/15)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/12",
+              "right": "3/4",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "42% (11/26)",
+              "right": "42% (21/50)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "58% (29/50)",
+              "right": "58% (15/26)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (40/76)",
+              "right": "47% (36/76)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Return games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "71%",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (4/8)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (6/9)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/4",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "59% (13/22)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "78% (7/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/4",
+              "right": "1/2",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "61% (11/18)",
+              "right": "35% (11/31)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "65% (20/31)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (31/49)",
+              "right": "37% (18/49)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Podrez V.",
+              "rightPlayer": "Boulter K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

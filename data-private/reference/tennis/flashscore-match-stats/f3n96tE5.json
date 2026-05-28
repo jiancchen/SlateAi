@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-aryna-sabalenka-elsa-jacquemot-2026-05-28",
+  "boardTitle": "Aryna Sabalenka vs Elsa Jacquemot",
+  "boardPlayerName": "Aryna Sabalenka",
+  "recentOpponentName": "Cori Gauff",
+  "recentIndex": 7,
+  "recentEvent": "Miami",
+  "recentDate": "28 Mar 26",
+  "recentIsoDate": "2026-03-28",
+  "recentResult": "USA  6-2 4-6 6-3 Fin.",
+  "flashscoreLabel": "Sabalenka A. - Gauff C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/miami/results/",
+  "players": [
+    "Sabalenka A.",
+    "Gauff C."
+  ],
+  "generatedAt": "2026-05-28T04:36:45.149Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/f3n96tE5/",
+  "matchId": "f3n96tE5",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_f3n96tE5",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_f3n96tE5"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:54"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:11"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "7",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "67%",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (35/47)",
+              "right": "66% (43/65)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "61% (19/31)",
+              "right": "47% (15/32)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "7/11",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (22/65)",
+              "right": "26% (12/47)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (17/32)",
+              "right": "39% (12/31)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/11",
+              "right": "1/2",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "69% (54/78)",
+              "right": "59% (58/98)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (40/98)",
+              "right": "31% (24/78)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (94/176)",
+              "right": "47% (82/176)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "92% (12/13)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Return games won",
+              "left": "29% (4/14)",
+              "right": "8% (1/13)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Total games won",
+              "left": "59% (16/27)",
+              "right": "41% (11/27)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "62%",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (11/14)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "5/7",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (8/18)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "0/0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "70% (16/23)",
+              "right": "52% (15/29)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (14/29)",
+              "right": "30% (7/23)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (30/52)",
+              "right": "42% (22/52)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "69%",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (14/21)",
+              "right": "74% (20/27)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "2/2",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (7/27)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (6/12)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "1/2",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "62% (21/34)",
+              "right": "67% (26/39)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (13/39)",
+              "right": "38% (13/34)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (34/73)",
+              "right": "53% (39/73)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "69%",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (10/12)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "78% (7/9)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (7/20)",
+              "right": "17% (2/12)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (5/9)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "81% (17/21)",
+              "right": "57% (17/30)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (13/30)",
+              "right": "19% (4/21)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (30/51)",
+              "right": "41% (21/51)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Sabalenka A.",
+              "rightPlayer": "Gauff C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

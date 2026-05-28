@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-donna-vekic-naomi-osaka-2026-05-28",
+  "boardTitle": "Donna Vekic vs Naomi Osaka",
+  "boardPlayerName": "Naomi Osaka",
+  "recentOpponentName": "Talia Gibson",
+  "recentIndex": 7,
+  "recentEvent": "Miami",
+  "recentDate": "21 Mar 26",
+  "recentIsoDate": "2026-03-21",
+  "recentResult": "AUS   Loss 7-5 6-4 2nd",
+  "flashscoreLabel": "Gibson T. - Osaka N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/miami/results/",
+  "players": [
+    "Gibson T.",
+    "Osaka N."
+  ],
+  "generatedAt": "2026-05-28T04:36:56.105Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/OG1zbbL6/",
+  "matchId": "OG1zbbL6",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_OG1zbbL6",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_OG1zbbL6"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:48"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:40"
+      }
+    ],
+    "totalDuration": "1:28"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "13",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "57%",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (36/46)",
+              "right": "85% (29/34)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (12/24)",
+              "right": "42% (11/26)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "2/4",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (5/34)",
+              "right": "22% (10/46)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (15/26)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/4",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "69% (48/70)",
+              "right": "67% (40/60)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (20/60)",
+              "right": "31% (22/70)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (68/130)",
+              "right": "48% (62/130)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (11/11)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return games won",
+              "left": "18% (2/11)",
+              "right": "0% (0/11)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total games won",
+              "left": "59% (13/22)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "53%",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (23/30)",
+              "right": "94% (16/17)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "1/2",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "6% (1/17)",
+              "right": "23% (7/30)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (9/15)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/4",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "68% (28/41)",
+              "right": "69% (22/32)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (10/32)",
+              "right": "32% (13/41)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (38/73)",
+              "right": "48% (35/73)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "61%",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (13/16)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (4/17)",
+              "right": "19% (3/16)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "69% (20/29)",
+              "right": "64% (18/28)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (10/28)",
+              "right": "31% (9/29)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (30/57)",
+              "right": "47% (27/57)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Gibson T.",
+              "rightPlayer": "Osaka N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

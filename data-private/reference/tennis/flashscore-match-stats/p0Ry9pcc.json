@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-oleksandra-oliynykova-kimberly-birrell-2026-05-28",
+  "boardTitle": "Oleksandra Oliynykova vs Kimberly Birrell",
+  "boardPlayerName": "Kimberly Birrell",
+  "recentOpponentName": "Yue Yuan",
+  "recentIndex": 6,
+  "recentEvent": "",
+  "recentDate": "17 Mar 26",
+  "recentIsoDate": "2026-03-17",
+  "recentResult": "CHN  6-2 2-6 6-4 Q.",
+  "flashscoreLabel": "Birrell K. - Yuan Y.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/miami/results/",
+  "players": [
+    "Birrell K.",
+    "Yuan Y."
+  ],
+  "generatedAt": "2026-05-28T04:37:17.696Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/p0Ry9pcc/",
+  "matchId": "p0Ry9pcc",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_p0Ry9pcc",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_p0Ry9pcc"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:47"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:18"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "57%",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (35/50)",
+              "right": "60% (34/57)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (15/31)",
+              "right": "49% (21/43)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "11/15",
+              "right": "9/14",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (23/57)",
+              "right": "30% (15/50)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "51% (22/43)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/14",
+              "right": "4/15",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "62% (50/81)",
+              "right": "54% (55/101)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (46/101)",
+              "right": "38% (31/81)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (96/182)",
+              "right": "47% (86/182)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "69% (9/13)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (5/13)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "54% (14/26)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "56%",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (12/19)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "4/7",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (10/20)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (9/16)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "1/5",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "58% (18/31)",
+              "right": "46% (17/37)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (20/37)",
+              "right": "42% (13/31)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (38/68)",
+              "right": "44% (30/68)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "75%",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (10/16)",
+              "right": "78% (14/18)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (4/12)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "1/1",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (4/18)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (3/6)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "2/8",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "50% (14/28)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (7/24)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (21/52)",
+              "right": "60% (31/52)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "48%",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "87% (13/15)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "4/6",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (9/19)",
+              "right": "13% (2/15)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (10/21)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "1/2",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "82% (18/22)",
+              "right": "53% (21/40)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (19/40)",
+              "right": "18% (4/22)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (37/62)",
+              "right": "40% (25/62)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Birrell K.",
+              "rightPlayer": "Yuan Y."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

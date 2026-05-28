@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-aryna-sabalenka-elsa-jacquemot-2026-05-28",
+  "boardTitle": "Aryna Sabalenka vs Elsa Jacquemot",
+  "boardPlayerName": "Elsa Jacquemot",
+  "recentOpponentName": "Tatjana Maria",
+  "recentIndex": 5,
+  "recentEvent": "Rouen",
+  "recentDate": "15 Apr 26",
+  "recentIsoDate": "2026-04-15",
+  "recentResult": "GER   Loss 6-4 6-3 1st",
+  "flashscoreLabel": "Maria T. - Jacquemot E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rouen/results/",
+  "players": [
+    "Maria T.",
+    "Jacquemot E."
+  ],
+  "generatedAt": "2026-05-28T04:36:46.358Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UNgJgVVN/",
+  "matchId": "UNgJgVVN",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UNgJgVVN",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UNgJgVVN"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:50"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:56"
+      }
+    ],
+    "totalDuration": "1:46"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "3",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "69%",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (31/49)",
+              "right": "59% (24/41)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (13/31)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/10",
+              "right": "3/8",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (17/41)",
+              "right": "37% (18/49)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (12/18)",
+              "right": "58% (18/31)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/8",
+              "right": "3/10",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "55% (44/80)",
+              "right": "51% (30/59)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (29/59)",
+              "right": "45% (36/80)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (73/139)",
+              "right": "47% (66/139)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "70% (7/10)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Return games won",
+              "left": "56% (5/9)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Total games won",
+              "left": "63% (12/19)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "85%",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (20/30)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (6/16)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/7",
+              "right": "0/2",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (9/23)",
+              "right": "33% (10/30)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (2/4)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/7",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "57% (26/46)",
+              "right": "59% (16/27)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (11/27)",
+              "right": "43% (20/46)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (37/73)",
+              "right": "49% (36/73)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "56%",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (11/19)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (7/15)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "3/6",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (8/18)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (10/14)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "2/3",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "53% (18/34)",
+              "right": "44% (14/32)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (18/32)",
+              "right": "47% (16/34)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (36/66)",
+              "right": "45% (30/66)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Maria T.",
+              "rightPlayer": "Jacquemot E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

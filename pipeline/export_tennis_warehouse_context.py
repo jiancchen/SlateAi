@@ -115,6 +115,128 @@ def average(values: list[float]) -> float | None:
     return round(sum(clean) / len(clean), 1)
 
 
+def weighted_average(values: list[dict[str, Any]]) -> float | None:
+    clean = [
+        row for row in values
+        if isinstance(row.get("score"), (int, float)) and isinstance(row.get("weight"), (int, float)) and row.get("weight") > 0
+    ]
+    if not clean:
+        return None
+    total = sum(float(row["weight"]) for row in clean)
+    return round(sum(float(row["score"]) * float(row["weight"]) for row in clean) / total, 1) if total else None
+
+
+def recent_form_metrics(conn: sqlite3.Connection, match_id: str) -> dict[str, dict[str, Any]]:
+    rows = [
+        dict(row)
+        for row in conn.execute(
+            """
+            select normalized_name, player_name, recent_index, metric_key, metric_label,
+                   score, estimated, source, weight, opponent_name, opponent_rank,
+                   event, event_tier, match_date_label, surface, raw_json
+            from tennis_recent_form_metrics
+            where match_id = ?
+            order by normalized_name, recent_index, metric_key
+            """,
+            (match_id,),
+        )
+    ]
+    by_player: dict[str, dict[str, Any]] = {}
+    metric_order = ["hold", "secondServe", "errorControl", "returnPressure", "closeout"]
+    for row in rows:
+        normalized = row["normalized_name"]
+        bucket = by_player.setdefault(
+            normalized,
+            {
+                "playerName": row["player_name"],
+                "matches": {},
+                "summary": [],
+                "coverage": {"cells": 0, "exactCells": 0, "estimatedCells": 0, "missingCells": 0},
+            },
+        )
+        match_key = str(row["recent_index"])
+        match_bucket = bucket["matches"].setdefault(
+            match_key,
+            {
+                "recentIndex": row["recent_index"],
+                "opponentName": row["opponent_name"],
+                "opponentRank": row["opponent_rank"],
+                "event": row["event"],
+                "eventTier": row["event_tier"],
+                "dateLabel": row["match_date_label"],
+                "surface": row["surface"],
+                "metrics": {},
+            },
+        )
+        score = row["score"]
+        metric = {
+            "key": row["metric_key"],
+            "label": row["metric_label"],
+            "score": score,
+            "estimated": bool(row["estimated"]),
+            "source": row["source"],
+            "weight": row["weight"],
+            "raw": as_json(row["raw_json"]),
+        }
+        match_bucket["metrics"][row["metric_key"]] = metric
+        bucket["coverage"]["cells"] += 1
+        if score is None:
+            bucket["coverage"]["missingCells"] += 1
+        elif row["estimated"]:
+            bucket["coverage"]["estimatedCells"] += 1
+        else:
+            bucket["coverage"]["exactCells"] += 1
+
+    for bucket in by_player.values():
+        match_list = [bucket["matches"][key] for key in sorted(bucket["matches"], key=lambda value: int(value))]
+        bucket["matches"] = match_list
+        summary = []
+        for metric_key in metric_order:
+            metric_rows = [
+                {
+                    "score": match["metrics"].get(metric_key, {}).get("score"),
+                    "weight": match["metrics"].get(metric_key, {}).get("weight"),
+                }
+                for match in match_list[:5]
+            ]
+            labels = [match["metrics"].get(metric_key, {}).get("label") for match in match_list if match["metrics"].get(metric_key)]
+            summary.append({
+                "key": metric_key,
+                "label": next((label for label in labels if label), metric_key),
+                "score": weighted_average(metric_rows),
+            })
+        bucket["summary"] = summary
+    return by_player
+
+
+def h2h_match_rows(conn: sqlite3.Connection, match_id: str) -> list[dict[str, Any]]:
+    return [
+        {
+            "sourceName": row["source_name"],
+            "playerName": row["player_name"],
+            "opponentName": row["opponent_name"],
+            "winnerName": row["winner_name"],
+            "resultText": row["result_text"],
+            "event": row["event"],
+            "eventTier": row["event_tier"],
+            "dateLabel": row["match_date_label"],
+            "isoDate": row["iso_date"],
+            "surface": row["surface"],
+            "weight": row["weight"],
+            "raw": as_json(row["raw_json"]),
+        }
+        for row in conn.execute(
+            """
+            select *
+            from tennis_h2h_matches
+            where match_id = ?
+            order by coalesce(iso_date, match_date_label) desc, h2h_index
+            """,
+            (match_id,),
+        )
+    ]
+
+
 def expected_stats(conn: sqlite3.Connection, match_id: str) -> dict[str, dict[str, Any]]:
     rows = conn.execute(
         """
@@ -272,6 +394,8 @@ def export_context(date: str) -> dict[str, Any]:
             row.get("home_player_name"),
             row.get("away_player_name"),
         )
+        form_metrics_by_player = recent_form_metrics(conn, row["board_match_id"])
+        h2h_rows = h2h_match_rows(conn, row["board_match_id"])
         season_stats = sofascore_signals.get("seasonStats") or {}
         home_season_stats = season_stats.get("home") or {}
         away_season_stats = season_stats.get("away") or {}
@@ -331,6 +455,9 @@ def export_context(date: str) -> dict[str, Any]:
         for bucket in players.values():
             if not bucket.get("expectedStats"):
                 bucket["expectedStats"] = merged_expected(bucket.get("name"), bucket.get("side"))
+            form_metrics = form_metrics_by_player.get(normalize_name(bucket.get("name")))
+            if form_metrics:
+                bucket["recentFormMetrics"] = form_metrics
         for side, player_name in (("home", row.get("home_player_name")), ("away", row.get("away_player_name"))):
             if player_name and player_name not in players:
                 players[player_name] = {
@@ -339,6 +466,8 @@ def export_context(date: str) -> dict[str, Any]:
                     "stats": {},
                     "expectedStats": merged_expected(player_name, side),
                 }
+            if player_name and form_metrics_by_player.get(normalize_name(player_name)):
+                players[player_name]["recentFormMetrics"] = form_metrics_by_player.get(normalize_name(player_name))
         matches[row["board_match_id"]] = {
             "source": "SofaScore warehouse",
             "eventId": event_id,
@@ -355,6 +484,12 @@ def export_context(date: str) -> dict[str, Any]:
                 "homeWins": row["h2h_home_wins"],
                 "awayWins": row["h2h_away_wins"],
                 "draws": row["h2h_draws"],
+                "matches": h2h_rows,
+                "coverage": {
+                    "datedRows": len([item for item in h2h_rows if item.get("dateLabel") or item.get("isoDate")]),
+                    "surfaceRows": len([item for item in h2h_rows if item.get("surface")]),
+                    "weightedRows": len([item for item in h2h_rows if isinstance(item.get("weight"), (int, float))]),
+                },
             },
             "score": {
                 "home": as_json(row["home_score_json"]),

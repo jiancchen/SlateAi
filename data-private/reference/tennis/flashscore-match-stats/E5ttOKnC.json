@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-diana-shnaider-mccartney-kessler-2026-05-28",
+  "boardTitle": "Diana Shnaider vs McCartney Kessler",
+  "boardPlayerName": "Diana Shnaider",
+  "recentOpponentName": "Elena Rybakina",
+  "recentIndex": 5,
+  "recentEvent": "Stuttgart",
+  "recentDate": "16 Apr 26",
+  "recentIsoDate": "2026-04-16",
+  "recentResult": "KAZ   Loss 6-3 6-4 2nd",
+  "flashscoreLabel": "Rybakina E. - Shnaider D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/stuttgart/results/",
+  "players": [
+    "Rybakina E.",
+    "Shnaider D."
+  ],
+  "generatedAt": "2026-05-28T04:37:19.068Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/E5ttOKnC/",
+  "matchId": "E5ttOKnC",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_E5ttOKnC",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_E5ttOKnC"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:30"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:44"
+      }
+    ],
+    "totalDuration": "1:14"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "9",
+              "right": "1",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "58%",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "91% (30/33)",
+              "right": "66% (25/38)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (10/15)",
+              "right": "48% (13/27)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (13/38)",
+              "right": "9% (3/33)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (14/27)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "83% (40/48)",
+              "right": "58% (38/65)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (27/65)",
+              "right": "17% (8/48)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (67/113)",
+              "right": "41% (46/113)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (10/10)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return games won",
+              "left": "22% (2/9)",
+              "right": "0% (0/10)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total games won",
+              "left": "63% (12/19)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "52%",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (15/17)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "83% (5/6)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (3/13)",
+              "right": "12% (2/17)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (8/12)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "87% (20/23)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (11/25)",
+              "right": "13% (3/23)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "65% (31/48)",
+              "right": "35% (17/48)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "1",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "63%",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "94% (15/16)",
+              "right": "60% (15/25)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/3",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (10/25)",
+              "right": "6% (1/16)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (6/15)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "0/0",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "80% (20/25)",
+              "right": "60% (24/40)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (16/40)",
+              "right": "20% (5/25)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (36/65)",
+              "right": "45% (29/65)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Rybakina E.",
+              "rightPlayer": "Shnaider D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

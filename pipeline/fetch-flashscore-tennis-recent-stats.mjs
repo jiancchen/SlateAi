@@ -27,9 +27,33 @@ const TOURNAMENT_URLS = [
   ['wta-singles', 'parma', 'Parma'],
   ['wta-singles', 'stuttgart', 'Stuttgart'],
   ['wta-singles', 'charleston', 'Charleston'],
+  ['atp-singles', 'munich', 'Munich'],
+  ['atp-singles', 'houston', 'Houston'],
+  ['atp-singles', 'indian-wells', 'Indian Wells'],
+  ['wta-singles', 'indian-wells', 'Indian Wells'],
+  ['atp-singles', 'monte-carlo', 'Monte-Carlo'],
+  ['wta-singles', 'rouen', 'Rouen'],
+  ['wta-singles', 'istanbul', 'Istanbul'],
+  ['wta-singles', 'linz', 'Linz'],
+  ['wta-125k-singles', 'saint-malo', 'Saint-Malo'],
+  ['wta-125k-singles', 'la-bisbal-d-emporda', "La Bisbal D'Emporda"],
   ['atp-challenger-men-singles', 'cagliari-challenger-men', 'Cagliari Challenger'],
   ['atp-challenger-men-singles', 'aix-en-provence-challenger-men', 'Aix En Provence Challenger'],
-  ['atp-challenger-men-singles', 'tunis-challenger-men', 'Tunis Challenger']
+  ['atp-challenger-men-singles', 'tunis-challenger-men', 'Tunis Challenger'],
+  ['atp-challenger-men-singles', 'bordeaux-challenger-men', 'Bordeaux Challenger'],
+  ['atp-challenger-men-singles', 'valencia-challenger-men', 'Valencia Challenger'],
+  ['atp-challenger-men-singles', 'cervia-challenger-men', 'Cervia Challenger'],
+  ['atp-challenger-men-singles', 'oeiras-4-challenger-men', 'Oeiras 4 Challenger'],
+  ['atp-challenger-men-singles', 'oeiras-3-challenger-men', 'Oeiras 3 Challenger'],
+  ['atp-challenger-men-singles', 'francavilla-challenger-men', 'Francavilla Challenger'],
+  ['atp-challenger-men-singles', 'mauthausen-challenger-men', 'Mauthausen Challenger'],
+  ['atp-challenger-men-singles', 'monza-challenger-men', 'Monza Challenger'],
+  ['atp-challenger-men-singles', 'wuxi-challenger-men', 'Wuxi Challenger'],
+  ['atp-challenger-men-singles', 'jiujiang-challenger-men', 'Jiujiang Challenger'],
+  ['itf-women-singles', 'w100-wiesbaden', 'W100 Wiesbaden'],
+  ['itf-women-singles', 'w75-trnava', 'W75 Trnava'],
+  ['itf-women-singles', 'w75-saint-gaudens', 'W75 Saint-Gaudens'],
+  ['itf-men-singles', 'm25-santa-margherita-di-pula', 'M25 Santa Margherita di Pula']
 ]
 
 const parseArgs = () => {
@@ -276,11 +300,7 @@ const main = async () => {
   const mapOutput = path.resolve(options.mapOutput)
   const quality = JSON.parse(await fs.readFile(inputPath, 'utf8'))
   const rows = collectRecentRows(quality)
-  const allowedEvents = new Set(
-    (options.events ? options.events.split(',') : ['Paris', 'Rome', 'Madrid', 'Hamburg', 'Geneva', 'Strasbourg', 'Rabat', 'Parma'])
-      .map(normalize)
-      .filter(Boolean)
-  )
+  const allowedEvents = new Set((options.events ? options.events.split(',') : []).map(normalize).filter(Boolean))
   const tournamentRecords = await fetchTournamentRecords(allowedEvents)
   const map = {}
   const matchedRows = []
@@ -288,12 +308,17 @@ const main = async () => {
 
   for (const row of rows) {
     if (row.recentIsoDate) {
-      const recordIndex = tournamentRecords.findIndex(
+      let recordIndex = tournamentRecords.findIndex(
         (record) =>
           record.isoDate === row.recentIsoDate &&
           samePair([row.playerName, row.opponentName], record.players) &&
           (!row.recentEvent || !record.event || normalize(row.recentEvent) === normalize(record.event))
       )
+      if (recordIndex < 0) {
+        recordIndex = tournamentRecords.findIndex(
+          (record) => record.isoDate === row.recentIsoDate && samePair([row.playerName, row.opponentName], record.players)
+        )
+      }
       if (recordIndex >= 0) {
         matchedRows.push({ row, record: tournamentRecords[recordIndex] })
       }

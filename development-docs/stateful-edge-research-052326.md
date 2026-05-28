@@ -37,8 +37,8 @@ This pass tests the exact hidden-edge idea that game-to-game state matters more 
 | Window | Predictions | Hit rate | Avg edge | Avg confidence |
 | --- | --- | --- | --- | --- |
 | Reserve (`05-10` to `05-15`) | 75 | 0.653 | 6.3 | 58.5 |
-| Current (`05-16` to `05-22`) | 93 | 0.581 | 6.6 | 57.5 |
-| Combined | 168 | 0.613 | 6.5 | 58.0 |
+| Current (`05-16` to `05-22`) | 93 | 0.581 | 6.6 | 57.4 |
+| Combined | 168 | 0.613 | 6.5 | 57.9 |
 
 ### Opponent snapback trap
 
@@ -104,12 +104,12 @@ Note: This is the multi-state version of the hidden edge idea: the numeric edge 
 
 | Edge cut | Confidence cut | Score | Reserve `10+` delta | Reserve `60+` delta | Current `10+` delta | Current `60+` delta | Combined `10+` delta | Combined `60+` delta |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| -5.0 | -10 | 0.189 | -0.024 | 0.022 | 0.107 | 0.013 | 0.037 | 0.017 |
+| -5.0 | -10 | 0.190 | -0.024 | 0.022 | 0.107 | 0.013 | 0.037 | 0.018 |
 | -5.0 | -6 | 0.109 | -0.024 | 0.022 | 0.107 | 0.000 | 0.037 | 0.012 |
 | -5.0 | -8 | 0.109 | -0.024 | 0.022 | 0.107 | 0.000 | 0.037 | 0.012 |
 | -5.0 | -4 | 0.063 | -0.024 | 0.000 | 0.107 | 0.000 | 0.037 | 0.000 |
-| -3.0 | -10 | -0.036 | -0.029 | 0.022 | 0.050 | 0.013 | 0.000 | 0.017 |
-| -4.0 | -10 | -0.095 | -0.062 | 0.022 | 0.050 | 0.013 | -0.012 | 0.017 |
+| -3.0 | -10 | -0.034 | -0.029 | 0.022 | 0.050 | 0.013 | 0.000 | 0.018 |
+| -4.0 | -10 | -0.093 | -0.062 | 0.022 | 0.050 | 0.013 | -0.012 | 0.018 |
 
 ## Soft Haircut Grid For The Combined Stateful Trap
 

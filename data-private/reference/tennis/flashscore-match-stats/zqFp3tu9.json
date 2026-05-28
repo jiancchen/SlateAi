@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-luca-van-assche-brandon-nakashima-2026-05-28",
+  "boardTitle": "Luca Van Assche vs Brandon Nakashima",
+  "boardPlayerName": "Brandon Nakashima",
+  "recentOpponentName": "Roman Andres Burruchaga",
+  "recentIndex": 6,
+  "recentEvent": "Houston",
+  "recentDate": "02 Apr 26",
+  "recentIsoDate": "2026-04-02",
+  "recentResult": "ARG   Loss 6-4 2-6 6-4 2nd",
+  "flashscoreLabel": "Burruchaga R. A. - Nakashima B.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/houston/results/",
+  "players": [
+    "Burruchaga R. A.",
+    "Nakashima B."
+  ],
+  "generatedAt": "2026-05-28T04:36:49.062Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/zqFp3tu9/",
+  "matchId": "zqFp3tu9",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_zqFp3tu9",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_zqFp3tu9"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:09"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "62%",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (35/49)",
+              "right": "71% (34/48)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (13/26)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/8",
+              "right": "1/5",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (14/48)",
+              "right": "29% (14/49)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (15/30)",
+              "right": "50% (13/26)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/5",
+              "right": "4/8",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "26",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "27",
+              "right": "34",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (48/75)",
+              "right": "63% (49/78)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (29/78)",
+              "right": "36% (27/75)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (77/153)",
+              "right": "50% (76/153)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "71% (10/14)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Return games won",
+              "left": "29% (4/14)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (14/28)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "61%",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (12/15)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/3",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (5/17)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (7/11)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "1/1",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "8",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "11",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (17/23)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (12/28)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (29/51)",
+              "right": "43% (22/51)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "68%",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (10/18)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/0",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (4/15)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (2/7)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/5",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "6",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "9",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (14/27)",
+              "right": "73% (16/22)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (6/22)",
+              "right": "48% (13/27)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (20/49)",
+              "right": "59% (29/49)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "57%",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (13/16)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/2",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (5/16)",
+              "right": "13% (2/16)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (6/12)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/2",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "12",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "14",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (17/25)",
+              "right": "61% (17/28)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (11/28)",
+              "right": "32% (8/25)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (28/53)",
+              "right": "47% (25/53)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Nakashima B."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

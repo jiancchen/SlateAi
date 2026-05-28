@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-maja-chwalinska-elise-mertens-2026-05-28",
+  "boardTitle": "Maja Chwalinska vs Elise Mertens",
+  "boardPlayerName": "Elise Mertens",
+  "recentOpponentName": "Ella Seidel",
+  "recentIndex": 7,
+  "recentEvent": "",
+  "recentDate": "14 Apr 26",
+  "recentIsoDate": "2026-04-14",
+  "recentResult": "GER  6-3 6-4 1st",
+  "flashscoreLabel": "Mertens E. - Seidel E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/stuttgart/results/",
+  "players": [
+    "Mertens E.",
+    "Seidel E."
+  ],
+  "generatedAt": "2026-05-28T04:36:43.207Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/tfcxpHJt/",
+  "matchId": "tfcxpHJt",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_tfcxpHJt",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_tfcxpHJt"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:52"
+      }
+    ],
+    "totalDuration": "1:32"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "0",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "68%",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (27/40)",
+              "right": "62% (26/42)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (12/20)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "7/11",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (16/42)",
+              "right": "33% (13/40)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "65% (13/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/11",
+              "right": "2/4",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "65% (39/60)",
+              "right": "53% (33/62)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (29/62)",
+              "right": "35% (21/60)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (68/122)",
+              "right": "44% (54/122)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (8/10)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Return games won",
+              "left": "44% (4/9)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Total games won",
+              "left": "63% (12/19)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "68%",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (14/22)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (7/12)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "1/3",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (7/15)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (4/7)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "1/2",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "62% (21/34)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (11/22)",
+              "right": "38% (13/34)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (32/56)",
+              "right": "43% (24/56)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "68%",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (13/18)",
+              "right": "67% (18/27)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "6/8",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (9/27)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "69% (9/13)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/8",
+              "right": "1/2",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "69% (18/26)",
+              "right": "55% (22/40)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (18/40)",
+              "right": "31% (8/26)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (36/66)",
+              "right": "45% (30/66)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Mertens E.",
+              "rightPlayer": "Seidel E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

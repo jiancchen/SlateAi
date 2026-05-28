@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-julia-grabher-amanda-anisimova-2026-05-28",
+  "boardTitle": "Julia Grabher vs Amanda Anisimova",
+  "boardPlayerName": "Amanda Anisimova",
+  "recentOpponentName": "Ajla Tomljanovic",
+  "recentIndex": 3,
+  "recentEvent": "",
+  "recentDate": "20 Mar 26",
+  "recentIsoDate": "2026-03-20",
+  "recentResult": "AUS  6-1 5-7 6-4 2nd",
+  "flashscoreLabel": "Anisimova A. - Tomljanovic A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/miami/results/",
+  "players": [
+    "Anisimova A.",
+    "Tomljanovic A."
+  ],
+  "generatedAt": "2026-05-28T04:36:23.863Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Q17WK13E/",
+  "matchId": "Q17WK13E",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Q17WK13E",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Q17WK13E"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:33"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:53"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:14"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "11",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "56%",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "45% (23/51)",
+              "right": "54% (29/54)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (18/31)",
+              "right": "35% (15/43)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/8",
+              "right": "5/14",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (25/54)",
+              "right": "55% (28/51)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "65% (28/43)",
+              "right": "42% (13/31)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "9/14",
+              "right": "6/8",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "50% (41/82)",
+              "right": "45% (44/97)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (53/97)",
+              "right": "50% (41/82)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (94/179)",
+              "right": "47% (85/179)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "57% (8/14)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (9/15)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Total games won",
+              "left": "59% (17/29)",
+              "right": "41% (12/29)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "69%",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (7/10)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/5",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "56% (10/18)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "0/0",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "65% (13/20)",
+              "right": "42% (11/26)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "58% (15/26)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (28/46)",
+              "right": "39% (18/46)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "5",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "47%",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "30% (6/20)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/4",
+              "right": "1/4",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (7/18)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "65% (13/20)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "4/4",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "40% (12/30)",
+              "right": "47% (18/38)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (20/38)",
+              "right": "60% (18/30)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (32/68)",
+              "right": "53% (36/68)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "55%",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "48% (10/21)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (6/11)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "2/5",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (8/18)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (10/15)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "2/4",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "50% (16/32)",
+              "right": "45% (15/33)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (18/33)",
+              "right": "50% (16/32)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (34/65)",
+              "right": "48% (31/65)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Anisimova A.",
+              "rightPlayer": "Tomljanovic A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

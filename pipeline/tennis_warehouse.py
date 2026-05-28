@@ -195,6 +195,49 @@ def init_db(conn: sqlite3.Connection) -> None:
           primary key (match_id, normalized_name, recent_index)
         );
 
+        create table if not exists tennis_recent_form_metrics (
+          match_id text not null,
+          normalized_name text not null,
+          recent_index integer not null,
+          metric_key text not null,
+          player_name text not null,
+          metric_label text not null,
+          score real,
+          estimated integer not null default 0,
+          source text,
+          weight real,
+          opponent_name text,
+          opponent_normalized_name text,
+          opponent_rank integer,
+          event text,
+          event_tier text,
+          match_date_label text,
+          surface text,
+          raw_json text not null,
+          updated_at text not null default current_timestamp,
+          primary key (match_id, normalized_name, recent_index, metric_key)
+        );
+
+        create table if not exists tennis_h2h_matches (
+          match_id text not null,
+          h2h_index integer not null,
+          slate_date text not null,
+          source_name text not null,
+          player_name text,
+          opponent_name text,
+          winner_name text,
+          result_text text,
+          event text,
+          event_tier text,
+          match_date_label text,
+          iso_date text,
+          surface text,
+          weight real,
+          raw_json text not null,
+          updated_at text not null default current_timestamp,
+          primary key (match_id, h2h_index)
+        );
+
         create table if not exists tennis_predictions (
           slate_date text not null,
           match_id text not null,
@@ -416,6 +459,8 @@ def init_db(conn: sqlite3.Connection) -> None:
 
         create index if not exists idx_tennis_matches_slate_date on tennis_matches(slate_date);
         create index if not exists idx_tennis_recent_opponent_rank on tennis_recent_matches(opponent_rank);
+        create index if not exists idx_tennis_recent_form_metrics_match on tennis_recent_form_metrics(match_id, normalized_name);
+        create index if not exists idx_tennis_h2h_matches_match on tennis_h2h_matches(match_id);
         create index if not exists idx_tennis_context_rank on tennis_player_match_context(rank);
         create index if not exists idx_tennis_predictions_date on tennis_predictions(slate_date);
         create index if not exists idx_tennis_flashscore_recent_links_flashscore
@@ -563,6 +608,294 @@ def bool_int(value: Any) -> int | None:
     return 1 if bool(value) else 0
 
 
+def clamp(value: float | None, low: float = 0, high: float = 100) -> float | None:
+    if value is None:
+        return None
+    return max(low, min(high, value))
+
+
+def opponent_rank_weight(rank: Any) -> float:
+    numeric = as_float(rank)
+    if numeric is None:
+        return 0.96
+    if numeric <= 10:
+        return 1.14
+    if numeric <= 25:
+        return 1.10
+    if numeric <= 50:
+        return 1.06
+    if numeric <= 100:
+        return 1.02
+    if numeric <= 200:
+        return 0.98
+    return 0.94
+
+
+def infer_tennis_surface(event: Any) -> str | None:
+    text = str(event or "").lower()
+    if not text:
+        return None
+    if any(token in text for token in ("roland", "paris", "rome", "madrid", "hamburg", "geneva", "strasbourg", "valencia", "bordeaux", "cervia", "oeiras", "pula")):
+        return "Clay"
+    if any(token in text for token in ("grass", "halle", "queen", "s hertogenbosch", "nottingham", "wimbledon")):
+        return "Grass"
+    if "indoor" in text:
+        return "Indoor hard"
+    if any(token in text for token in ("miami", "indian wells", "australian", "us open", "dubai", "doha")):
+        return "Hard"
+    return None
+
+
+def parse_recent_iso_date(value: Any) -> str | None:
+    text = str(value or "").strip()
+    match = re.search(r"(\d{1,2})\s+([A-Za-z]{3,})\s+(\d{2,4})", text)
+    if not match:
+        return None
+    day = int(match.group(1))
+    month_name = match.group(2).lower()[:3]
+    year = int(match.group(3))
+    if year < 100:
+        year += 2000
+    months = {
+        "jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
+        "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12,
+    }
+    month = months.get(month_name)
+    if not month:
+        return None
+    return f"{year:04d}-{month:02d}-{day:02d}"
+
+
+def numeric_stat_value(match: dict[str, Any], keys: list[str]) -> float | None:
+    stats = match.get("serviceStats") or match.get("flashscoreStats") or match.get("stats") or {}
+    for key in keys:
+        value = stats.get(key)
+        if value is None or value == "":
+            continue
+        parsed = as_float(value)
+        if parsed is not None:
+            return parsed
+        found = re.search(r"-?\d+(?:\.\d+)?", str(value))
+        if found:
+            return as_float(found.group(0))
+    return None
+
+
+def fraction_stat_value(match: dict[str, Any], labels: list[str], direct_keys: list[str] | None = None) -> dict[str, float] | None:
+    stats = match.get("serviceStats") or match.get("flashscoreStats") or match.get("stats") or {}
+    for key in direct_keys or []:
+        value = stats.get(key)
+        found = re.search(r"(\d+)\s*/\s*(\d+)", str(value or ""))
+        if found:
+            return {"made": float(found.group(1)), "attempts": float(found.group(2))}
+    for row in stats.get("rows") or []:
+        label = str((row or {}).get("label") or "").lower()
+        if not any(item.lower() in label for item in labels):
+            continue
+        found = re.search(r"(\d+)\s*/\s*(\d+)", str((row or {}).get("value") or ""))
+        if found:
+            return {"made": float(found.group(1)), "attempts": float(found.group(2))}
+    return None
+
+
+def expected_stats_for_recent_player(player: dict[str, Any]) -> dict[str, float | None]:
+    service = player.get("serviceData") or {}
+    recent_stats = [
+        match.get("serviceStats") or {}
+        for match in player.get("recentMatches") or []
+        if match.get("serviceStats")
+    ]
+
+    def average_values(keys: list[str]) -> float | None:
+        values: list[float] = []
+        for stats in recent_stats:
+            for key in keys:
+                value = as_float(stats.get(key))
+                if value is not None:
+                    values.append(value)
+                    break
+        if not values:
+            return None
+        return sum(values) / len(values)
+
+    return {
+        "holdPct": average_values(["holdPct", "serviceHoldPct"]),
+        "aces": average_values(["aces"]),
+        "doubleFaults": average_values(["doubleFaults"]),
+        "firstServePct": average_values(["firstServePct"]),
+        "firstServeWonPct": average_values(["firstServeWonPct", "firstServePointsWon"]) or as_float(service.get("avgFirstServeWonPct")),
+        "secondServeWonPct": average_values(["secondServeWonPct"]),
+        "returnPointsWonPct": average_values(["returnPointsWonPct"]),
+        "winners": average_values(["winners"]),
+        "unforcedErrors": average_values(["unforcedErrors"]),
+    }
+
+
+def fallback_form_score(expected: dict[str, float | None], key: str) -> tuple[float | None, bool]:
+    hold = expected.get("holdPct")
+    first_won = expected.get("firstServeWonPct")
+    first_in = expected.get("firstServePct")
+    second_won = expected.get("secondServeWonPct")
+    double_faults = expected.get("doubleFaults")
+    return_won = expected.get("returnPointsWonPct")
+    winners = expected.get("winners")
+    unforced = expected.get("unforcedErrors")
+    df_penalty = max(0, float(double_faults) - 2.5) * 2.2 if isinstance(double_faults, (int, float)) else 0
+    if key == "hold" and (hold is not None or first_won is not None):
+        return clamp((hold if hold is not None else 72) * 0.72 + (first_won if first_won is not None else 64) * 0.22 + ((first_in if first_in is not None else 60) - 60) * 0.1), True
+    if key == "secondServe" and (second_won is not None or hold is not None):
+        return clamp((second_won if second_won is not None else 48) * 0.78 + (hold if hold is not None else 72) * 0.22 - df_penalty), True
+    if key == "errorControl" and (unforced is not None or double_faults is not None or winners is not None):
+        winner_balance = (winners - unforced) if winners is not None and unforced is not None else 0
+        return clamp(72 - max(0, ((unforced / 2.6) if unforced is not None else 10) - 8) * 4.2 - max(0, ((double_faults / 2.6) if double_faults is not None else 1.5) - 1.5) * 4 + max(-10, min(10, winner_balance * 0.25))), True
+    if key == "returnPressure" and return_won is not None:
+        return clamp(return_won * 1.28 + 35 * 0.18 + 6), True
+    return None, False
+
+
+def build_recent_form_metric_rows(player: dict[str, Any]) -> list[dict[str, Any]]:
+    expected = expected_stats_for_recent_player(player)
+    rows: list[dict[str, Any]] = []
+    metric_labels = {
+        "hold": "Hold",
+        "secondServe": "2nd",
+        "errorControl": "Err",
+        "returnPressure": "Ret",
+        "closeout": "Close",
+    }
+    for index, recent in enumerate(player.get("recentMatches") or []):
+        parsed = recent.get("parsed") or {}
+        sets_played = max(1, as_float(parsed.get("setsPlayed")) or 1)
+        weight = opponent_rank_weight((recent.get("opponentRanking") or {}).get("rank"))
+        first_won = numeric_stat_value(recent, ["firstServeWonPct", "firstServePointsWon"])
+        first_in = numeric_stat_value(recent, ["firstServePct"])
+        second_won = numeric_stat_value(recent, ["secondServeWonPct"])
+        service_hold = numeric_stat_value(recent, ["holdPct", "serviceHoldPct"])
+        return_points_won = numeric_stat_value(recent, ["returnPointsWonPct"])
+        unforced_errors = numeric_stat_value(recent, ["unforcedErrors"])
+        double_faults = numeric_stat_value(recent, ["doubleFaults"])
+        winners = numeric_stat_value(recent, ["winners"])
+        converted = fraction_stat_value(recent, ["Break Points Converted"], ["breakPointsConverted"])
+        saved = fraction_stat_value(recent, ["Break Points Saved"], ["breakPointsSaved"])
+        break_chances_per_set = converted["attempts"] / sets_played if converted else None
+        break_conversion_pct = converted["made"] / converted["attempts"] * 100 if converted and converted["attempts"] else None
+        bp_saved_pct = saved["made"] / saved["attempts"] * 100 if saved and saved["attempts"] else numeric_stat_value(recent, ["breakPointsSavedPct"])
+        ufe_per_set = unforced_errors / sets_played if unforced_errors is not None else None
+        df_per_set = double_faults / sets_played if double_faults is not None else None
+        winner_balance = winners - unforced_errors if winners is not None and unforced_errors is not None else None
+
+        closeout = None
+        if parsed.get("playerWon") is True:
+            closeout = 78 if parsed.get("straightSetWin") else 72 if parsed.get("decidingSet") else 66
+        elif parsed.get("playerWon") is False:
+            closeout = 28 if parsed.get("straightSetLoss") else 36 if parsed.get("decidingSet") else 42
+        if service_hold is not None:
+            closeout = (closeout if closeout is not None else 50) * 0.65 + service_hold * 0.35
+        if bp_saved_pct is not None:
+            closeout = (closeout if closeout is not None else 50) + (bp_saved_pct - 62) * 0.08
+
+        metric_scores: dict[str, tuple[float | None, bool, str]] = {}
+        if service_hold is not None or first_won is not None:
+            metric_scores["hold"] = (clamp((service_hold if service_hold is not None else 72) * 0.72 + (first_won if first_won is not None else 64) * 0.22 + ((first_in if first_in is not None else 60) - 60) * 0.1), False, "Flashscore recent match")
+        else:
+            score, estimated = fallback_form_score(expected, "hold")
+            metric_scores["hold"] = (score, estimated, "Expected stats fallback" if estimated else "No stat row")
+        if second_won is not None or service_hold is not None:
+            metric_scores["secondServe"] = (clamp((second_won if second_won is not None else 48) * 0.78 + (service_hold if service_hold is not None else 72) * 0.22 - max(0, (df_per_set or 0) - 1.8) * 3.5), False, "Flashscore recent match")
+        else:
+            score, estimated = fallback_form_score(expected, "secondServe")
+            metric_scores["secondServe"] = (score, estimated, "Expected stats fallback" if estimated else "No stat row")
+        if ufe_per_set is not None or df_per_set is not None or winner_balance is not None:
+            metric_scores["errorControl"] = (clamp(72 - max(0, (ufe_per_set if ufe_per_set is not None else 10) - 8) * 4.2 - max(0, (df_per_set if df_per_set is not None else 1.5) - 1.5) * 4 + max(-10, min(10, (winner_balance or 0) * 0.45))), False, "Flashscore recent match")
+        else:
+            score, estimated = fallback_form_score(expected, "errorControl")
+            metric_scores["errorControl"] = (score, estimated, "Expected stats fallback" if estimated else "No stat row")
+        if return_points_won is not None or converted:
+            metric_scores["returnPressure"] = (clamp((return_points_won if return_points_won is not None else 34) * 1.28 + (break_conversion_pct if break_conversion_pct is not None else 35) * 0.18 + min(18, (break_chances_per_set if break_chances_per_set is not None else 1.2) * 5)), False, "Flashscore recent match")
+        else:
+            score, estimated = fallback_form_score(expected, "returnPressure")
+            metric_scores["returnPressure"] = (score, estimated, "Expected stats fallback" if estimated else "No stat row")
+        metric_scores["closeout"] = (clamp(closeout), False, "Scoreline and pressure stats" if closeout is not None else "No scoreline row")
+
+        for metric_key, (score, estimated, source) in metric_scores.items():
+            rows.append({
+                "recent_index": index,
+                "metric_key": metric_key,
+                "metric_label": metric_labels[metric_key],
+                "score": round(score, 1) if score is not None else None,
+                "estimated": bool(estimated),
+                "source": source,
+                "weight": weight,
+                "opponent_name": recent.get("opponent"),
+                "opponent_normalized_name": normalize_name(recent.get("opponent")),
+                "opponent_rank": as_int((recent.get("opponentRanking") or {}).get("rank")),
+                "event": recent.get("event"),
+                "event_tier": recent.get("eventTier"),
+                "match_date_label": recent.get("date"),
+                "surface": infer_tennis_surface(recent.get("event")),
+                "raw": {"recent": recent, "scoreSource": source},
+            })
+    return rows
+
+
+def h2h_weight_for_row(row: dict[str, Any]) -> float:
+    weight = 1.0
+    if str(row.get("surface") or "").lower() == "clay":
+        weight += 0.18
+    event_tier = str(row.get("event_tier") or "").lower()
+    if event_tier in {"tour", "tour-1000", "grand-slam"}:
+        weight += 0.12
+    if row.get("iso_date"):
+        weight += 0.08
+    return round(weight, 2)
+
+
+def extract_h2h_recent_rows(match_id: str, slate_date: str, players: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    if len(players) < 2:
+        return []
+    names = [player.get("name") for player in players[:2]]
+    normalized_names = [normalize_name(name) for name in names]
+    rows: list[dict[str, Any]] = []
+    seen: set[tuple[str | None, str]] = set()
+    for player in players[:2]:
+        player_name = player.get("name")
+        player_normalized = normalize_name(player_name)
+        opponent_name = names[1] if player_normalized == normalized_names[0] else names[0]
+        opponent_normalized = normalize_name(opponent_name)
+        for recent in player.get("recentMatches") or []:
+            if normalize_name(recent.get("opponent")) != opponent_normalized:
+                continue
+            parsed = recent.get("parsed") or {}
+            winner = player_name if parsed.get("playerWon") is True else opponent_name if parsed.get("playerWon") is False else None
+            iso_date = parse_recent_iso_date(recent.get("date"))
+            row = {
+                "match_id": match_id,
+                "slate_date": slate_date,
+                "source_name": "recent_match_log",
+                "player_name": player_name,
+                "opponent_name": opponent_name,
+                "winner_name": winner,
+                "result_text": recent.get("result"),
+                "event": recent.get("event"),
+                "event_tier": recent.get("eventTier"),
+                "match_date_label": recent.get("date"),
+                "iso_date": iso_date,
+                "surface": infer_tennis_surface(recent.get("event")),
+                "raw": recent,
+            }
+            row["weight"] = h2h_weight_for_row(row)
+            fingerprint = (
+                iso_date or str(recent.get("date") or ""),
+                "|".join(sorted([player_normalized, opponent_normalized])),
+            )
+            if fingerprint in seen:
+                continue
+            seen.add(fingerprint)
+            rows.append(row)
+    rows.sort(key=lambda item: item.get("iso_date") or "", reverse=True)
+    return rows
+
+
 def parse_flashscore_stat_value(value: Any) -> dict[str, float | None]:
     text = str(value or "").strip()
     parsed: dict[str, float | None] = {
@@ -613,8 +946,10 @@ def import_slate(conn: sqlite3.Connection, slate_date: str) -> dict[str, int]:
     counts = {
         "matches": 0,
         "h2h": 0,
+        "h2h_matches": 0,
         "player_context": 0,
         "recent_matches": 0,
+        "recent_form_metrics": 0,
         "desk_predictions": 0,
         "source_predictions": 0,
         "source_rows": 0,
@@ -863,6 +1198,37 @@ def import_slate(conn: sqlite3.Connection, slate_date: str) -> dict[str, int]:
                 counts["source_predictions"] += 1
 
         quality = context.get("opponentQualityData") or {}
+        conn.execute("delete from tennis_h2h_matches where match_id = ?", (match_id,))
+        for h2h_index, h2h_row in enumerate(extract_h2h_recent_rows(match_id, slate_date, quality.get("players") or [])):
+            conn.execute(
+                """
+                insert into tennis_h2h_matches(
+                  match_id, h2h_index, slate_date, source_name, player_name,
+                  opponent_name, winner_name, result_text, event, event_tier,
+                  match_date_label, iso_date, surface, weight, raw_json
+                )
+                values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    match_id,
+                    h2h_index,
+                    slate_date,
+                    h2h_row.get("source_name"),
+                    h2h_row.get("player_name"),
+                    h2h_row.get("opponent_name"),
+                    h2h_row.get("winner_name"),
+                    h2h_row.get("result_text"),
+                    h2h_row.get("event"),
+                    h2h_row.get("event_tier"),
+                    h2h_row.get("match_date_label"),
+                    h2h_row.get("iso_date"),
+                    h2h_row.get("surface"),
+                    as_float(h2h_row.get("weight")),
+                    dumps(h2h_row.get("raw")),
+                ),
+            )
+            counts["h2h_matches"] += 1
+
         for player_slot, player in enumerate(quality.get("players") or [], start=1):
             name = player.get("name")
             normalized = normalize_name(name)
@@ -983,6 +1349,44 @@ def import_slate(conn: sqlite3.Connection, slate_date: str) -> dict[str, int]:
                 ),
             )
             counts["player_context"] += 1
+
+            conn.execute(
+                "delete from tennis_recent_form_metrics where match_id = ? and normalized_name = ?",
+                (match_id, normalized),
+            )
+            for metric in build_recent_form_metric_rows(player):
+                conn.execute(
+                    """
+                    insert into tennis_recent_form_metrics(
+                      match_id, normalized_name, recent_index, metric_key,
+                      player_name, metric_label, score, estimated, source, weight,
+                      opponent_name, opponent_normalized_name, opponent_rank, event,
+                      event_tier, match_date_label, surface, raw_json
+                    )
+                    values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        match_id,
+                        normalized,
+                        as_int(metric.get("recent_index")),
+                        metric.get("metric_key"),
+                        name,
+                        metric.get("metric_label"),
+                        as_float(metric.get("score")),
+                        bool_int(metric.get("estimated")),
+                        metric.get("source"),
+                        as_float(metric.get("weight")),
+                        metric.get("opponent_name"),
+                        metric.get("opponent_normalized_name"),
+                        as_int(metric.get("opponent_rank")),
+                        metric.get("event"),
+                        metric.get("event_tier"),
+                        metric.get("match_date_label"),
+                        metric.get("surface"),
+                        dumps(metric.get("raw")),
+                    ),
+                )
+                counts["recent_form_metrics"] += 1
 
             for index, recent in enumerate(player.get("recentMatches") or []):
                 opponent = recent.get("opponent")

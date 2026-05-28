@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-anna-kalinskaya-alina-korneeva-2026-05-28",
+  "boardTitle": "Anna Kalinskaya vs Alina Korneeva",
+  "boardPlayerName": "Anna Kalinskaya",
+  "recentOpponentName": "Iva Jovic",
+  "recentIndex": 5,
+  "recentEvent": "Charleston",
+  "recentDate": "03 Apr 26",
+  "recentIsoDate": "2026-04-03",
+  "recentResult": "USA   Loss 6-3 6-4 1/4",
+  "flashscoreLabel": "Jovic I. - Kalinskaya A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/charleston/results/",
+  "players": [
+    "Jovic I.",
+    "Kalinskaya A."
+  ],
+  "generatedAt": "2026-05-28T04:36:38.352Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/On8cdwxo/",
+  "matchId": "On8cdwxo",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_On8cdwxo",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_On8cdwxo"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:43"
+      }
+    ],
+    "totalDuration": "1:23"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "60%",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (25/37)",
+              "right": "55% (18/33)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (8/18)",
+              "right": "32% (7/22)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "3/8",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (15/33)",
+              "right": "32% (12/37)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "68% (15/22)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/8",
+              "right": "3/3",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "60% (33/55)",
+              "right": "45% (25/55)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (30/55)",
+              "right": "40% (22/55)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (63/110)",
+              "right": "43% (47/110)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "70% (7/10)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Return games won",
+              "left": "56% (5/9)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Total games won",
+              "left": "63% (12/19)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "55%",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (15/18)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "2/4",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (5/17)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "79% (11/14)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/1",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "64% (18/28)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (15/30)",
+              "right": "36% (10/28)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (33/58)",
+              "right": "43% (25/58)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "67%",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (10/19)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (2/8)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "1/4",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "63% (10/16)",
+              "right": "32% (6/19)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "2/2",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "56% (15/27)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "60% (15/25)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (30/52)",
+              "right": "42% (22/52)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Jovic I.",
+              "rightPlayer": "Kalinskaya A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

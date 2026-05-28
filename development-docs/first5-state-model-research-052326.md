@@ -7,24 +7,24 @@ This is a separate first-five research lane built on the new state snapshots, no
 | Window | Picks | Strict hit rate | Decision-only hit rate | Push rate | Avg edge | Avg starter leverage |
 | --- | --- | --- | --- | --- | --- | --- |
 | Reserve (`05-10` to `05-15`) | 75 | 0.600 | 0.703 | 0.147 | 6.3 | 59.9 |
-| Current (`05-16` to `05-22`) | 93 | 0.452 | 0.553 | 0.183 | 6.6 | 72.1 |
-| Combined | 168 | 0.518 | 0.621 | 0.167 | 6.5 | 66.7 |
+| Current (`05-16` to `05-22`) | 93 | 0.452 | 0.553 | 0.183 | 6.6 | 71.7 |
+| Combined | 168 | 0.518 | 0.621 | 0.167 | 6.5 | 66.4 |
 
 ## First-Five Buckets
 
 ### Starter Leverage Buckets
 | Bucket | Picks | Strict | Decision-only | Push rate |
 | --- | --- | --- | --- | --- |
-| `<65` | 84 | 0.560 | 0.671 | 0.167 |
-| `65-74` | 26 | 0.500 | 0.591 | 0.154 |
+| `<65` | 86 | 0.558 | 0.676 | 0.174 |
+| `65-74` | 24 | 0.500 | 0.571 | 0.125 |
 | `75+` | 58 | 0.466 | 0.562 | 0.172 |
 
 ### Point Edge Buckets
 | Bucket | Picks | Strict | Decision-only | Push rate |
 | --- | --- | --- | --- | --- |
 | `<8` | 111 | 0.495 | 0.604 | 0.180 |
-| `8-11.9` | 32 | 0.531 | 0.630 | 0.156 |
-| `12+` | 25 | 0.600 | 0.682 | 0.120 |
+| `8-11.9` | 33 | 0.515 | 0.630 | 0.182 |
+| `12+` | 24 | 0.625 | 0.682 | 0.083 |
 
 ### Opponent Snapback Buckets
 | Bucket | Picks | Strict | Decision-only | Push rate |
@@ -54,8 +54,8 @@ Flag if `pointEdge < 8 && starter leverage < 72`
 | Window | Picks | Strict hit rate | Decision-only hit rate | Push rate | Pushes |
 | --- | --- | --- | --- | --- | --- |
 | Reserve | 48 | 0.625 | 0.732 | 0.146 | 7 |
-| Current | 38 | 0.368 | 0.467 | 0.211 | 8 |
-| Combined | 86 | 0.512 | 0.620 | 0.174 | 15 |
+| Current | 39 | 0.385 | 0.484 | 0.205 | 8 |
+| Combined | 87 | 0.517 | 0.625 | 0.172 | 15 |
 
 Note: This is the simplest tie-prone lane: not enough early edge and not enough starter separation.
 

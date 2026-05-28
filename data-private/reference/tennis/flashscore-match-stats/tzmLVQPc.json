@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-maria-sakkari-claire-liu-2026-05-28",
+  "boardTitle": "Maria Sakkari vs Claire Liu",
+  "boardPlayerName": "Maria Sakkari",
+  "recentOpponentName": "Paula Badosa",
+  "recentIndex": 5,
+  "recentEvent": "Charleston",
+  "recentDate": "01 Apr 26",
+  "recentIsoDate": "2026-04-01",
+  "recentResult": "ESP   Loss 6-3 6-4 2nd",
+  "flashscoreLabel": "Sakkari M. - Badosa P.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/charleston/results/",
+  "players": [
+    "Sakkari M.",
+    "Badosa P."
+  ],
+  "generatedAt": "2026-05-28T04:36:31.985Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/tzmLVQPc/",
+  "matchId": "tzmLVQPc",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_tzmLVQPc",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_tzmLVQPc"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:50"
+      }
+    ],
+    "totalDuration": "1:30"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "66%",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (21/36)",
+              "right": "77% (27/35)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (12/29)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/11",
+              "right": "0/2",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (8/35)",
+              "right": "42% (15/36)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (10/18)",
+              "right": "59% (17/29)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "4/11",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "51% (33/65)",
+              "right": "66% (35/53)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (18/53)",
+              "right": "49% (32/65)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (51/118)",
+              "right": "57% (67/118)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "56% (5/9)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Total games won",
+              "left": "37% (7/19)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "78%",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (11/19)",
+              "right": "81% (17/21)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (5/12)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/1",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (4/21)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "100% (6/6)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/5",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "52% (15/29)",
+              "right": "63% (17/27)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (10/27)",
+              "right": "48% (14/29)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (25/56)",
+              "right": "55% (31/56)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "54%",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (10/17)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (7/17)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "0/1",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (4/14)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (4/12)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/6",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "50% (18/36)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (8/26)",
+              "right": "50% (18/36)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (26/62)",
+              "right": "58% (36/62)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Sakkari M.",
+              "rightPlayer": "Badosa P."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

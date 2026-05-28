@@ -57,18 +57,18 @@ This is not asking “who wins more often.” It is asking:
 
 | Lane | Reserve n | Reserve hit | Reserve ROI | Current n | Current hit | Current ROI | Combined n | Combined hit | Combined ROI |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Moderate favorite clean | 19 | 0.632 | 0.097 | 29 | 0.621 | 0.078 | 48 | 0.625 | 0.086 |
+| Moderate favorite clean | 19 | 0.632 | 0.097 | 28 | 0.607 | 0.059 | 47 | 0.617 | 0.075 |
 | Heavy favorite danger | 4 | 0.75 | 0.101 | 4 | 0.5 | -0.244 | 8 | 0.625 | -0.071 |
 | Market underdog bets | 23 | 0.652 | 0.403 | 22 | 0.591 | 0.297 | 45 | 0.622 | 0.351 |
-| 70+ confidence | 8 | 0.625 | -0.036 | 10 | 0.7 | 0.167 | 18 | 0.667 | 0.077 |
+| 70+ confidence | 8 | 0.625 | -0.036 | 9 | 0.667 | 0.119 | 17 | 0.647 | 0.046 |
 | 70+ confidence market dogs | 0 | 0.0 | n/a | 0 | 0.0 | n/a | 0 | 0.0 | n/a |
 
 ## High-Confidence Context
 
 `70+` confidence combined:
-- picks: `18`
-- hit rate: `0.667`
-- flat-unit ROI: `0.077`
+- picks: `17`
+- hit rate: `0.647`
+- flat-unit ROI: `0.046`
 
 ## Read
 

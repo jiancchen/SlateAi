@@ -9,53 +9,74 @@ export const historyArchive: HistoryEntry[] = [
     label: 'May 27, 2026',
     status: 'graded',
     summary:
-      'Roland Garros May 27 graded 23-8, but the shape mattered more than the headline record: ATP structure held up at 12-3 while WTA volatility, retirements, and taxed favorites created most of the damage.',
+      'May 27 was a mixed day: Roland Garros still graded 23-8, but the MLB card slipped below the bar at 7-8 full game, 5-10 first five, and 8-7 first inning with the better damage pushed into HR and tracked-prop hits instead of sides.',
     sports: ['Tennis', 'MLB'],
-    trackedMarkets: ['Match winner', 'Model fair value', 'O/U watch angles', 'MLB first inning'],
+    trackedMarkets: ['Match winner', 'Model fair value', 'O/U watch angles', 'MLB moneyline', 'MLB first 5', 'MLB first inning', 'HR props', 'Player props'],
     performance: {
       tennis: { wins: 23, losses: 8 },
       atp: { wins: 12, losses: 3 },
       wta: { wins: 11, losses: 5 },
-      mlbFirstInning: { wins: 2, losses: 13 }
+      mlbFullGame: { wins: 7, losses: 8 },
+      mlbFirst5: { wins: 5, losses: 10 },
+      mlbFirstInning: { wins: 8, losses: 7 },
+      hrBoard: { hits: 6, total: 12 },
+      mlbProps: { hits: 18, total: 49 }
     },
     journal: {
-      path: 'data-private/reports/tennis-backtest-2026-05-27.md',
-      records: 31,
-      note: 'May 27 tennis was graded from the ESPN result import and the tennis warehouse desk_predictions table; the de Minaur walkover was excluded from the tracked desk record.'
+      path: 'data-private/history/mlb-results-2026-05-27.jsonl',
+      records: 91,
+      sideRows: 15,
+      hrRows: 12,
+      propRows: 49,
+      note: 'Tennis was graded from the ESPN import and tennis warehouse desk_predictions table; MLB was pulled from the settled results journal with 15 side rows, 15 first-inning rows, 12 HR rows, and 49 tracked props.'
     },
     metrics: [
       { label: 'Tennis desk', value: '23-8', tone: 'positive' },
       { label: 'ATP board', value: '12-3', note: 'The more stable side of the tournament again', tone: 'positive' },
       { label: 'WTA board', value: '11-5', note: 'Still profitable on record, but most of the severe misses came here', tone: 'warning' },
+      { label: 'MLB full game', value: '7-8', note: 'The side lane slipped under water', tone: 'negative' },
+      { label: 'MLB first 5', value: '5-10', note: 'Early-script sides were worse than final result sides again', tone: 'negative' },
+      { label: 'MLB 1st inning', value: '8-7', note: 'Better than May 25, still too thin to trust blindly', tone: 'warning' },
+      { label: 'HR board', value: '6/12', note: 'A real positive day for the HR lane', tone: 'positive' },
+      { label: 'Tracked props', value: '18/49', note: 'Finally positive, but still top-heavy', tone: 'warning' },
       { label: 'High-profile favorite misses', value: 'Rybakina, Paolini', note: 'Good names were not enough without price and volatility gates', tone: 'negative' },
       { label: 'May 28 change', value: 'Pass-first pricing', note: 'High probability now needs a playable payout before it becomes a bet', tone: 'positive' }
     ],
     notableHits: [
       'The ATP core held with Ruud, Rublev, Djokovic, Paul, Fonseca, Zverev, Khachanov, Mensik, Michelsen, Jodar, De Jong, and Carreno Busta.',
       'The WTA board still landed Swiatek, Svitolina, Muchova, Stearns, Andreeva, Bouzkova, Bencic, Kostyuk, Cirstea, Golubic, and Linette.',
-      'Flashscore service joins improved the match-detail evidence stack compared with the earlier rank-heavy slate.'
+      'Flashscore service joins improved the match-detail evidence stack compared with the earlier rank-heavy slate.',
+      'On the MLB card, Yankees, Dodgers, Padres, Diamondbacks, Mets, Brewers, and Tigers landed full game while the HR board found six homers.'
     ],
     notableMisses: [
       'Elena Rybakina over Yuliia Starodubtseva and Jasmine Paolini over Solana Sierra were the two biggest reminder misses: name strength and ranking did not price the upset risk correctly.',
       'The ATP misses were Davidovich Fokina over Tirante, Kecmanovic over Borges, and Humbert over Halys.',
-      'The WTA misses also included Wang Xinyu over Korpatsch, Frech over Teichmann, and Baptiste over Wang Xiyu by retirement.'
+      'The WTA misses also included Wang Xinyu over Korpatsch, Frech over Teichmann, and Baptiste over Wang Xiyu by retirement.',
+      'The MLB side damage clustered around Angels, Rangers, Braves, Blue Jays, Cubs, White Sox, Athletics, and Mariners.'
     ],
     whatWorked: [
       'Mens best-of-five structure was more stable than the women’s card, especially when the pick had rank, surface profile, and service data aligned.',
       'Recent clay opponent quality and Flashscore hold/ace/first-serve rows gave the detail pages a much stronger factual base.',
-      'Separating the source-site pick from our own desk pick made stale Tennistonic reads less dangerous.'
+      'Separating the source-site pick from our own desk pick made stale Tennistonic reads less dangerous.',
+      'The MLB journal/warehouse path is now current enough to grade HR and tracked props on the same day instead of leaving them as blanks.'
     ],
     whatMissed: [
       'The board still treated some big-name WTA favorites as cleaner than they were.',
       'Win probability was shown too close to bet confidence; a 70% favorite with poor payout can still be a bad trade.',
-      'Totals and spread thinking were not prominent enough before the match, even though several matches projected as close or set-extended.'
+      'Totals and spread thinking were not prominent enough before the match, even though several matches projected as close or set-extended.',
+      'The MLB side board still overreached on mediocre favorite lanes, and first five remained weaker than full game.'
     ],
     takeaways: [
       'For May 28, ATP remains the cleaner lane, but only high-confidence favorites with usable price should graduate beyond a lean.',
       'WTA favorites need a volatility discount unless recent hold, return, and opponent-strength data all agree.',
-      'O/U and game-spread angles should start from service holds and break frequency, not from the match-winner pick.'
+      'O/U and game-spread angles should start from service holds and break frequency, not from the match-winner pick.',
+      'For MLB, May 27 is another argument for pass-first gating and for leaning harder on totals/HR/prop pockets than on broad side confidence.'
     ],
     artifacts: [
+      {
+        label: 'May 27 MLB results journal',
+        path: 'data-private/history/mlb-results-2026-05-27.jsonl'
+      },
       {
         label: 'May 27 tennis backtest',
         path: 'data-private/reports/tennis-backtest-2026-05-27.md'

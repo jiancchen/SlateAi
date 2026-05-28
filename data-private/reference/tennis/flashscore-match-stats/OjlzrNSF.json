@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-julia-grabher-amanda-anisimova-2026-05-28",
+  "boardTitle": "Julia Grabher vs Amanda Anisimova",
+  "boardPlayerName": "Amanda Anisimova",
+  "recentOpponentName": "Emma Raducanu",
+  "recentIndex": 5,
+  "recentEvent": "",
+  "recentDate": "08 Mar 26",
+  "recentIsoDate": "2026-03-08",
+  "recentResult": "GBR  6-1 6-1 3rd",
+  "flashscoreLabel": "Raducanu E. - Anisimova A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/indian-wells/results/",
+  "players": [
+    "Raducanu E.",
+    "Anisimova A."
+  ],
+  "generatedAt": "2026-05-28T04:36:24.088Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/OjlzrNSF/",
+  "matchId": "OjlzrNSF",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_OjlzrNSF",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_OjlzrNSF"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:27"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:27"
+      }
+    ],
+    "totalDuration": "0:54"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "60%",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "27% (6/22)",
+              "right": "86% (18/21)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (8/17)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/7",
+              "right": "0/0",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (3/21)",
+              "right": "73% (16/22)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (4/14)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "5/7",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "36% (14/39)",
+              "right": "80% (28/35)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (7/35)",
+              "right": "64% (25/39)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "28% (21/74)",
+              "right": "72% (53/74)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "29% (2/7)",
+              "right": "100% (7/7)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/7)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (2/14)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "60%",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "17% (2/12)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (6/11)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "0/0",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "11% (1/9)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (2/6)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/5",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "35% (8/23)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (3/15)",
+              "right": "65% (15/23)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "29% (11/38)",
+              "right": "71% (27/38)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "60%",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "40% (4/10)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (2/6)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/0",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (2/12)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (2/8)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/2",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "38% (6/16)",
+              "right": "80% (16/20)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (4/20)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "28% (10/36)",
+              "right": "72% (26/36)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Raducanu E.",
+              "rightPlayer": "Anisimova A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

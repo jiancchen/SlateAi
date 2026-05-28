@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-raphael-collignon-ben-shelton-2026-05-28",
+  "boardTitle": "Raphael Collignon vs Ben Shelton",
+  "boardPlayerName": "Ben Shelton",
+  "recentOpponentName": "Flavio Cobolli",
+  "recentIndex": 5,
+  "recentEvent": "Munich",
+  "recentDate": "19 Apr 26",
+  "recentIsoDate": "2026-04-19",
+  "recentResult": "ITA  6-2 7-5 Fin.",
+  "flashscoreLabel": "Cobolli F. - Shelton B.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/munich/results/",
+  "players": [
+    "Cobolli F.",
+    "Shelton B."
+  ],
+  "generatedAt": "2026-05-28T04:36:53.681Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/MkYRydyg/",
+  "matchId": "MkYRydyg",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_MkYRydyg",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_MkYRydyg"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:47"
+      }
+    ],
+    "totalDuration": "1:31"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "59%",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (23/33)",
+              "right": "85% (34/40)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (12/24)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/9",
+              "right": "6/6",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (6/40)",
+              "right": "30% (10/33)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (16/28)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/6",
+              "right": "3/9",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "17",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "26",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (5/8)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (35/57)",
+              "right": "68% (46/68)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (22/68)",
+              "right": "39% (22/57)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (57/125)",
+              "right": "54% (68/125)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "70% (7/10)",
+              "right": "100% (10/10)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/10)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total games won",
+              "left": "35% (7/20)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "58%",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (9/15)",
+              "right": "81% (17/21)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "31% (4/13)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "6/6",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (4/21)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (10/15)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/6",
+              "right": "2/8",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "12",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "11",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "46% (13/28)",
+              "right": "61% (22/36)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (14/36)",
+              "right": "54% (15/28)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (27/64)",
+              "right": "58% (37/64)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "59%",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (14/18)",
+              "right": "89% (17/19)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "73% (8/11)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "11% (2/19)",
+              "right": "22% (4/18)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (6/13)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "5",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "15",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (22/29)",
+              "right": "75% (24/32)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (8/32)",
+              "right": "24% (7/29)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (30/61)",
+              "right": "51% (31/61)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

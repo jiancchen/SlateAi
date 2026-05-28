@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-zachary-svajda-adam-walton-2026-05-28",
+  "boardTitle": "Zachary Svajda vs Adam Walton",
+  "boardPlayerName": "Zachary Svajda",
+  "recentOpponentName": "Moise Kouame",
+  "recentIndex": 7,
+  "recentEvent": "Miami",
+  "recentDate": "19 Mar 26",
+  "recentIsoDate": "2026-03-19",
+  "recentResult": "FRA   Loss 5-7 6-4 6-4 1st",
+  "flashscoreLabel": "Kouame M. - Svajda Z.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/miami/results/",
+  "players": [
+    "Kouame M.",
+    "Svajda Z."
+  ],
+  "generatedAt": "2026-05-28T04:37:04.713Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/vJKsdSBG/",
+  "matchId": "vJKsdSBG",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_vJKsdSBG",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_vJKsdSBG"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:50"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:18"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "11",
+              "right": "9",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "11",
+              "right": "3",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "64%",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (49/64)",
+              "right": "76% (44/58)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (23/48)",
+              "right": "52% (17/33)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "10/12",
+              "right": "1/4",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (14/58)",
+              "right": "23% (15/64)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (16/33)",
+              "right": "52% (25/48)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "2/12",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "30",
+              "right": "34",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "32",
+              "right": "48",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (6/6)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (72/112)",
+              "right": "67% (61/91)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (30/91)",
+              "right": "36% (40/112)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (102/203)",
+              "right": "50% (101/203)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "88% (14/16)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "19% (3/16)",
+              "right": "13% (2/16)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "53% (17/32)",
+              "right": "47% (15/32)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "49%",
+              "right": "56%",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (15/20)",
+              "right": "89% (16/18)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (9/21)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/1",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "11% (2/18)",
+              "right": "25% (5/20)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (7/14)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/5",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "16",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "15",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (24/41)",
+              "right": "72% (23/32)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (9/32)",
+              "right": "41% (17/41)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (33/73)",
+              "right": "55% (40/73)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "4",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "66%",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (12/16)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (10/15)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "1/2",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (7/21)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/3",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "10",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "16",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (22/31)",
+              "right": "59% (19/32)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (13/32)",
+              "right": "29% (9/31)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (35/63)",
+              "right": "44% (28/63)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "7",
+              "right": "2",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "70%",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (22/28)",
+              "right": "74% (14/19)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (4/12)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "0/1",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (5/19)",
+              "right": "21% (6/28)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/4",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "8",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "17",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (26/40)",
+              "right": "70% (19/27)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (8/27)",
+              "right": "35% (14/40)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (34/67)",
+              "right": "49% (33/67)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Svajda Z."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

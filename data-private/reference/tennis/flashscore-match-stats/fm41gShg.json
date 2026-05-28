@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-alejandro-tabilo-valentin-vacherot-2026-05-28",
+  "boardTitle": "Alejandro Tabilo vs Valentin Vacherot",
+  "boardPlayerName": "Valentin Vacherot",
+  "recentOpponentName": "Alex De Minaur",
+  "recentIndex": 4,
+  "recentEvent": "",
+  "recentDate": "10 Apr 26",
+  "recentIsoDate": "2026-04-10",
+  "recentResult": "AUS  6-4 3-6 6-3 1/4",
+  "flashscoreLabel": "Vacherot V. - De Minaur A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/monte-carlo/results/",
+  "players": [
+    "Vacherot V.",
+    "De Minaur A."
+  ],
+  "generatedAt": "2026-05-28T04:37:06.437Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/fm41gShg/",
+  "matchId": "fm41gShg",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_fm41gShg",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_fm41gShg"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:46"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:25"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "3",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "6",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "48%",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (41/56)",
+              "right": "67% (28/42)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (17/41)",
+              "right": "49% (22/45)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "14/17",
+              "right": "6/10",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (14/42)",
+              "right": "27% (15/56)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "51% (23/45)",
+              "right": "59% (24/41)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/10",
+              "right": "3/17",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "32",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "34",
+              "right": "43",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Net points won",
+              "left": "52% (13/25)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (58/97)",
+              "right": "57% (50/87)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (37/87)",
+              "right": "40% (39/97)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (95/184)",
+              "right": "48% (89/184)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "79% (11/14)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return games won",
+              "left": "29% (4/14)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total games won",
+              "left": "54% (15/28)",
+              "right": "46% (13/28)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "53%",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (16/22)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (5/13)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "2/4",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (7/16)",
+              "right": "27% (6/22)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (8/14)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/5",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "13",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Net points won",
+              "left": "43% (3/7)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (21/35)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (15/30)",
+              "right": "40% (14/35)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (36/65)",
+              "right": "45% (29/65)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "48%",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (13/17)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "27% (3/11)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "1/1",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (3/14)",
+              "right": "24% (4/17)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (7/15)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "2/6",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "12",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "14",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Net points won",
+              "left": "44% (4/9)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (16/28)",
+              "right": "66% (19/29)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (10/29)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (26/57)",
+              "right": "54% (31/57)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "43%",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (12/17)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (9/17)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/6",
+              "right": "3/5",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (4/12)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (8/16)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/6",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "13",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "16",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (6/9)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (21/34)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (12/28)",
+              "right": "38% (13/34)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (33/62)",
+              "right": "47% (29/62)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Vacherot V.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

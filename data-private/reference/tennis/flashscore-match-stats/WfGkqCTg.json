@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-arthur-rinderknech-matteo-berrettini-2026-05-28",
+  "boardTitle": "Arthur Rinderknech vs Matteo Berrettini",
+  "boardPlayerName": "Arthur Rinderknech",
+  "recentOpponentName": "Joao Fonseca",
+  "recentIndex": 7,
+  "recentEvent": "Munich",
+  "recentDate": "15 Apr 26",
+  "recentIsoDate": "2026-04-15",
+  "recentResult": "BRA   Loss 6-3 6-2 2nd",
+  "flashscoreLabel": "Rinderknech A. - Fonseca J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/munich/results/",
+  "players": [
+    "Rinderknech A.",
+    "Fonseca J."
+  ],
+  "generatedAt": "2026-05-28T04:36:34.313Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/WfGkqCTg/",
+  "matchId": "WfGkqCTg",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_WfGkqCTg",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_WfGkqCTg"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:40"
+      }
+    ],
+    "totalDuration": "1:22"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "67%",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (23/37)",
+              "right": "76% (31/41)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "37% (7/19)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "9/9",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (10/41)",
+              "right": "38% (14/37)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (10/20)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/9",
+              "right": "3/7",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "24",
+              "right": "21",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "11",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (8/12)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (30/56)",
+              "right": "67% (41/61)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (20/61)",
+              "right": "46% (26/56)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (50/117)",
+              "right": "57% (67/117)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "63% (5/8)",
+              "right": "100% (9/9)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/9)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total games won",
+              "left": "29% (5/17)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "70%",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (12/19)",
+              "right": "73% (19/26)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "6/6",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (8/26)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/6",
+              "right": "1/1",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "15",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "9",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (14/25)",
+              "right": "65% (24/37)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (13/37)",
+              "right": "44% (11/25)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (27/62)",
+              "right": "56% (35/62)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "63%",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (11/18)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (4/12)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "3/3",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "13% (2/15)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (4/9)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "2/6",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "6",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "2",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (6/8)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (16/31)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (7/24)",
+              "right": "48% (15/31)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (23/55)",
+              "right": "58% (32/55)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Rinderknech A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

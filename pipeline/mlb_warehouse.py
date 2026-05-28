@@ -38,6 +38,16 @@ STATCAST_HOME_RUNS_CSV_URL = (
     "https://baseballsavant.mlb.com/leaderboard/home-runs"
     "?year={season}&player_type=Batter&cat=xhr&team=&min=0&csv=true"
 )
+STATCAST_HITTER_GAME_SEARCH_CSV_URL = (
+    "https://baseballsavant.mlb.com/statcast_search/csv"
+    "?all=true&player_type=batter&group_by=name-date&sort_col=player_name&sort_order=asc"
+    "&game_date_gt={start_date}&game_date_lt={end_date}"
+)
+STATCAST_HITTER_DETAIL_SEARCH_CSV_URL = (
+    "https://baseballsavant.mlb.com/statcast_search/csv"
+    "?all=true&player_type=batter&type=details&sort_col=player_name&sort_order=asc"
+    "&game_date_gt={start_date}&game_date_lt={end_date}"
+)
 
 TEAM_DIVISIONS = {
     "Baltimore Orioles": "AL East",
@@ -845,6 +855,84 @@ CREATE TABLE IF NOT EXISTS mlb_hitter_state_snapshots (
   PRIMARY KEY (as_of_date, player_id)
 );
 
+CREATE TABLE IF NOT EXISTS mlb_hitter_statcast_game_logs (
+  game_date TEXT NOT NULL,
+  game_pk INTEGER NOT NULL,
+  player_id INTEGER NOT NULL,
+  player_name TEXT NOT NULL,
+  team_name TEXT,
+  opponent_name TEXT,
+  plate_appearances INTEGER,
+  at_bats INTEGER,
+  hits INTEGER,
+  singles INTEGER,
+  doubles INTEGER,
+  triples INTEGER,
+  home_runs INTEGER,
+  strikeouts INTEGER,
+  walks INTEGER,
+  batted_ball_events INTEGER,
+  hard_hit_events INTEGER,
+  sweet_spot_events INTEGER,
+  barrels_total INTEGER,
+  batting_average REAL,
+  slugging REAL,
+  woba REAL,
+  xwoba REAL,
+  xba REAL,
+  xobp REAL,
+  xslg REAL,
+  avg_launch_speed REAL,
+  avg_launch_angle REAL,
+  avg_bat_speed REAL,
+  avg_swing_length REAL,
+  hard_hit_percent REAL,
+  sweet_spot_percent REAL,
+  barrel_bbe_percent REAL,
+  barrel_pa_percent REAL,
+  source_json TEXT,
+  PRIMARY KEY (game_pk, player_id)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_hitter_statcast_trend_snapshots (
+  as_of_date TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  player_id INTEGER NOT NULL,
+  player_name TEXT NOT NULL,
+  games_sample_7 INTEGER,
+  games_sample_14 INTEGER,
+  games_sample_30 INTEGER,
+  pa_sample_7 INTEGER,
+  pa_sample_14 INTEGER,
+  pa_sample_30 INTEGER,
+  bbe_sample_7 INTEGER,
+  bbe_sample_14 INTEGER,
+  bbe_sample_30 INTEGER,
+  rolling_7_xwoba REAL,
+  rolling_14_xwoba REAL,
+  rolling_30_xwoba REAL,
+  rolling_7_xba REAL,
+  rolling_14_xba REAL,
+  rolling_30_xba REAL,
+  rolling_7_xslg REAL,
+  rolling_14_xslg REAL,
+  rolling_30_xslg REAL,
+  rolling_7_barrel_pct REAL,
+  rolling_14_barrel_pct REAL,
+  rolling_30_barrel_pct REAL,
+  rolling_7_hard_hit_pct REAL,
+  rolling_14_hard_hit_pct REAL,
+  rolling_30_hard_hit_pct REAL,
+  rolling_7_sweet_spot_pct REAL,
+  rolling_14_sweet_spot_pct REAL,
+  rolling_30_sweet_spot_pct REAL,
+  xwoba_trend_7_minus_30 REAL,
+  barrel_trend_7_minus_30 REAL,
+  hard_hit_trend_7_minus_30 REAL,
+  sweet_spot_trend_7_minus_30 REAL,
+  PRIMARY KEY (as_of_date, player_id)
+);
+
 CREATE TABLE IF NOT EXISTS mlb_team_mistake_shape_daily (
   as_of_date TEXT NOT NULL,
   team_name TEXT NOT NULL,
@@ -1133,6 +1221,14 @@ CREATE INDEX IF NOT EXISTS idx_mlb_hitter_state_snapshots_team_date
   ON mlb_hitter_state_snapshots(team_name, as_of_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_hitter_state_snapshots_player_date
   ON mlb_hitter_state_snapshots(player_id, as_of_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_hitter_statcast_game_logs_player_date
+  ON mlb_hitter_statcast_game_logs(player_id, game_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_hitter_statcast_game_logs_team_date
+  ON mlb_hitter_statcast_game_logs(team_name, game_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_hitter_statcast_trends_team_date
+  ON mlb_hitter_statcast_trend_snapshots(team_name, as_of_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_hitter_statcast_trends_player_date
+  ON mlb_hitter_statcast_trend_snapshots(player_id, as_of_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_team_state_snapshots_team_date
   ON mlb_team_state_snapshots(team_name, as_of_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_team_first_inning_profiles_team_date
@@ -1193,6 +1289,18 @@ def fetch_text(url: str) -> str:
     request = Request(url, headers={"User-Agent": USER_AGENT, "X-Requested-With": "XMLHttpRequest"})
     with urlopen(request, timeout=30) as response:
         return response.read().decode("utf-8", "ignore")
+
+
+def parse_csv_rows(text: str) -> list[dict[str, str]]:
+    reader = csv.DictReader(io.StringIO(text))
+    rows: list[dict[str, str]] = []
+    for raw_row in reader:
+        row: dict[str, str] = {}
+        for key, value in raw_row.items():
+            clean_key = str(key or "").lstrip("\ufeff").strip().strip('"')
+            row[clean_key] = value or ""
+        rows.append(row)
+    return rows
 
 
 def fetch_pitcher_season_snapshot(player_id: int | None, season: int) -> dict[str, Any]:
@@ -7706,6 +7814,541 @@ def refresh_state_snapshots(
     conn.commit()
 
 
+def ingest_hitter_statcast_date_range(conn: sqlite3.Connection, start_date: str, end_date: str) -> int:
+    init_db(conn)
+    start = datetime.strptime(start_date, "%Y-%m-%d").date()
+    end = datetime.strptime(end_date, "%Y-%m-%d").date()
+    if end < start:
+        raise ValueError("end_date must be on or after start_date")
+
+    total_rows = 0
+    current = start
+    while current <= end:
+        total_rows += ingest_hitter_statcast_day(conn, current.isoformat())
+        current += timedelta(days=1)
+    return total_rows
+
+
+def ingest_hitter_statcast_day(conn: sqlite3.Connection, date_text: str) -> int:
+    init_db(conn)
+    game_date = datetime.strptime(date_text, "%Y-%m-%d").date()
+    next_date = (game_date + timedelta(days=1)).isoformat()
+    grouped_url = STATCAST_HITTER_GAME_SEARCH_CSV_URL.format(start_date=date_text, end_date=next_date)
+    detail_url = STATCAST_HITTER_DETAIL_SEARCH_CSV_URL.format(start_date=date_text, end_date=next_date)
+
+    grouped_text = fetch_text(grouped_url)
+    detail_text = fetch_text(detail_url)
+
+    raw_dir = RAW_DIR / "baseballsavant" / "hitter-statcast" / date_text
+    grouped_path = raw_dir / "grouped.csv"
+    detail_path = raw_dir / "details.csv"
+    write_text(grouped_path, grouped_text)
+    write_text(detail_path, detail_text)
+    record_snapshot(
+        conn,
+        source_key="baseballsavant:hitter-statcast-grouped",
+        url=grouped_url,
+        content_path=grouped_path,
+        content_text=grouped_text,
+        meta={"date": date_text, "group_by": "name-date"},
+    )
+    record_snapshot(
+        conn,
+        source_key="baseballsavant:hitter-statcast-details",
+        url=detail_url,
+        content_path=detail_path,
+        content_text=detail_text,
+        meta={"date": date_text, "type": "details"},
+    )
+
+    grouped_rows = parse_csv_rows(grouped_text)
+    detail_rows = parse_csv_rows(detail_text)
+
+    detail_summary_by_key: dict[tuple[int, int], dict[str, int]] = {}
+    for row in detail_rows:
+        player_id = to_int(row.get("batter"))
+        game_pk = to_int(row.get("game_pk"))
+        if not player_id or not game_pk:
+            continue
+        launch_angle = to_float(row.get("launch_angle"))
+        launch_speed = to_float(row.get("launch_speed"))
+        bb_type = (row.get("bb_type") or "").strip()
+        is_batted_ball = launch_angle is not None or launch_speed is not None or bool(bb_type)
+        if not is_batted_ball:
+            continue
+        key = (game_pk, player_id)
+        summary = detail_summary_by_key.setdefault(key, {"bbe": 0, "hard_hit": 0, "sweet_spot": 0})
+        summary["bbe"] += 1
+        if launch_speed is not None and launch_speed >= 95:
+            summary["hard_hit"] += 1
+        if launch_angle is not None and 8 <= launch_angle <= 32:
+            summary["sweet_spot"] += 1
+
+    context_by_key = {
+        (to_int(row["game_pk"]) or 0, to_int(row["player_id"]) or 0): row
+        for row in conn.execute(
+            """
+            SELECT game_pk, player_id, team_name, opponent_name
+            FROM mlb_player_game_batting
+            WHERE game_date = ?
+            """,
+            (date_text,),
+        ).fetchall()
+    }
+
+    conn.execute("DELETE FROM mlb_hitter_statcast_game_logs WHERE game_date = ?", (date_text,))
+
+    inserted = 0
+    grouped_rows_by_key: dict[tuple[int, int], dict[str, str]] = {}
+    for row in grouped_rows:
+        player_id = to_int(row.get("player_id"))
+        game_pk = to_int(row.get("game_pk"))
+        if not player_id or not game_pk:
+            continue
+        key = (game_pk, player_id)
+        existing = grouped_rows_by_key.get(key)
+        if existing is None:
+            grouped_rows_by_key[key] = row
+            continue
+        existing_pa = to_int(existing.get("pa")) or 0
+        candidate_pa = to_int(row.get("pa")) or 0
+        existing_xwoba = to_float(existing.get("xwoba"))
+        candidate_xwoba = to_float(row.get("xwoba"))
+        if candidate_pa > existing_pa or (candidate_pa == existing_pa and candidate_xwoba is not None and existing_xwoba is None):
+            grouped_rows_by_key[key] = row
+
+    for row in grouped_rows_by_key.values():
+        player_id = to_int(row.get("player_id"))
+        game_pk = to_int(row.get("game_pk"))
+        if not player_id or not game_pk:
+            continue
+
+        detail_summary = detail_summary_by_key.get((game_pk, player_id), {})
+        bbe = detail_summary.get("bbe")
+        hard_hit_events = detail_summary.get("hard_hit")
+        sweet_spot_events = detail_summary.get("sweet_spot")
+        if not bbe:
+            bbe = to_int(row.get("bip"))
+        hard_hit_percent = round((hard_hit_events or 0) * 100 / bbe, 1) if bbe and hard_hit_events is not None else to_float(row.get("hardhit_percent"))
+        sweet_spot_percent = round((sweet_spot_events or 0) * 100 / bbe, 1) if bbe and sweet_spot_events is not None else None
+
+        context = context_by_key.get((game_pk, player_id))
+        team_name = context["team_name"] if context else None
+        opponent_name = context["opponent_name"] if context else None
+
+        source_json = json.dumps(
+            {
+                "grouped": row,
+                "detailSummary": {
+                    "battedBallEvents": bbe,
+                    "hardHitEvents": hard_hit_events,
+                    "sweetSpotEvents": sweet_spot_events,
+                },
+            },
+            sort_keys=True,
+        )
+
+        conn.execute(
+            """
+            INSERT INTO mlb_hitter_statcast_game_logs (
+              game_date, game_pk, player_id, player_name, team_name, opponent_name,
+              plate_appearances, at_bats, hits, singles, doubles, triples, home_runs,
+              strikeouts, walks, batted_ball_events, hard_hit_events, sweet_spot_events,
+              barrels_total, batting_average, slugging, woba, xwoba, xba, xobp, xslg,
+              avg_launch_speed, avg_launch_angle, avg_bat_speed, avg_swing_length,
+              hard_hit_percent, sweet_spot_percent, barrel_bbe_percent, barrel_pa_percent,
+              source_json
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(game_pk, player_id) DO UPDATE SET
+              game_date=excluded.game_date,
+              player_name=excluded.player_name,
+              team_name=excluded.team_name,
+              opponent_name=excluded.opponent_name,
+              plate_appearances=excluded.plate_appearances,
+              at_bats=excluded.at_bats,
+              hits=excluded.hits,
+              singles=excluded.singles,
+              doubles=excluded.doubles,
+              triples=excluded.triples,
+              home_runs=excluded.home_runs,
+              strikeouts=excluded.strikeouts,
+              walks=excluded.walks,
+              batted_ball_events=excluded.batted_ball_events,
+              hard_hit_events=excluded.hard_hit_events,
+              sweet_spot_events=excluded.sweet_spot_events,
+              barrels_total=excluded.barrels_total,
+              batting_average=excluded.batting_average,
+              slugging=excluded.slugging,
+              woba=excluded.woba,
+              xwoba=excluded.xwoba,
+              xba=excluded.xba,
+              xobp=excluded.xobp,
+              xslg=excluded.xslg,
+              avg_launch_speed=excluded.avg_launch_speed,
+              avg_launch_angle=excluded.avg_launch_angle,
+              avg_bat_speed=excluded.avg_bat_speed,
+              avg_swing_length=excluded.avg_swing_length,
+              hard_hit_percent=excluded.hard_hit_percent,
+              sweet_spot_percent=excluded.sweet_spot_percent,
+              barrel_bbe_percent=excluded.barrel_bbe_percent,
+              barrel_pa_percent=excluded.barrel_pa_percent,
+              source_json=excluded.source_json
+            """,
+            (
+                date_text,
+                game_pk,
+                player_id,
+                row.get("player_name") or "",
+                team_name,
+                opponent_name,
+                to_int(row.get("pa")),
+                to_int(row.get("abs")),
+                to_int(row.get("hits")),
+                to_int(row.get("singles")),
+                to_int(row.get("doubles")),
+                to_int(row.get("triples")),
+                to_int(row.get("hrs")),
+                to_int(row.get("so")),
+                to_int(row.get("bb")),
+                bbe,
+                hard_hit_events,
+                sweet_spot_events,
+                to_int(row.get("barrels_total")),
+                to_float(row.get("ba")),
+                to_float(row.get("slg")),
+                to_float(row.get("woba")),
+                to_float(row.get("xwoba")),
+                to_float(row.get("xba")),
+                to_float(row.get("xobp")),
+                to_float(row.get("xslg")),
+                to_float(row.get("launch_speed")),
+                to_float(row.get("launch_angle")),
+                to_float(row.get("bat_speed")),
+                to_float(row.get("swing_length")),
+                hard_hit_percent,
+                sweet_spot_percent,
+                to_float(row.get("barrels_per_bbe_percent")),
+                to_float(row.get("barrels_per_pa_percent")),
+                source_json,
+            ),
+        )
+        inserted += 1
+
+    conn.commit()
+    return inserted
+
+
+def _build_hitter_statcast_window_summary(rows: list[sqlite3.Row]) -> dict[str, int | float | None]:
+    if not rows:
+        return {
+            "games": 0,
+            "pa": 0,
+            "bbe": 0,
+            "xwoba": None,
+            "xba": None,
+            "xslg": None,
+            "barrel_pct": None,
+            "hard_hit_pct": None,
+            "sweet_spot_pct": None,
+        }
+
+    pa_total = sum(to_int(row["plate_appearances"]) or 0 for row in rows)
+    ab_total = sum(to_int(row["at_bats"]) or 0 for row in rows)
+    bbe_total = sum(to_int(row["batted_ball_events"]) or 0 for row in rows)
+    barrels_total = sum(to_int(row["barrels_total"]) or 0 for row in rows)
+    hard_hit_total = sum(to_int(row["hard_hit_events"]) or 0 for row in rows)
+    sweet_spot_total = sum(to_int(row["sweet_spot_events"]) or 0 for row in rows)
+
+    def weighted_average(column: str, weight_total: int, weight_column: str) -> float | None:
+        if weight_total <= 0:
+            return None
+        weighted_sum = 0.0
+        used_weight = 0
+        for sample_row in rows:
+            value = to_float(sample_row[column])
+            weight = to_int(sample_row[weight_column]) or 0
+            if value is None or weight <= 0:
+                continue
+            weighted_sum += value * weight
+            used_weight += weight
+        if used_weight <= 0:
+            return None
+        return round(weighted_sum / used_weight, 3)
+
+    return {
+        "games": len(rows),
+        "pa": pa_total,
+        "bbe": bbe_total,
+        "xwoba": weighted_average("xwoba", pa_total, "plate_appearances"),
+        "xba": weighted_average("xba", ab_total, "at_bats"),
+        "xslg": weighted_average("xslg", ab_total, "at_bats"),
+        "barrel_pct": round((barrels_total * 100) / bbe_total, 1) if bbe_total else None,
+        "hard_hit_pct": round((hard_hit_total * 100) / bbe_total, 1) if bbe_total else None,
+        "sweet_spot_pct": round((sweet_spot_total * 100) / bbe_total, 1) if bbe_total else None,
+    }
+
+
+def build_recent_hitter_statcast_trend_row(
+    conn: sqlite3.Connection,
+    current_date: str,
+    team_name: str,
+    player_id: int,
+    player_name: str,
+) -> dict[str, Any] | None:
+    rows = conn.execute(
+        """
+        SELECT *
+        FROM mlb_hitter_statcast_game_logs
+        WHERE player_id = ?
+          AND game_date < ?
+          AND game_date >= date(?, '-30 day')
+        ORDER BY game_date DESC
+        """,
+        (player_id, current_date, current_date),
+    ).fetchall()
+    if not rows:
+        return None
+
+    current_day = datetime.strptime(current_date, "%Y-%m-%d").date()
+    windows: dict[int, list[sqlite3.Row]] = {7: [], 14: [], 30: []}
+
+    for row in rows:
+        row_date = datetime.strptime(row["game_date"], "%Y-%m-%d").date()
+        delta_days = (current_day - row_date).days
+        if delta_days <= 0 or delta_days > 30:
+            continue
+        if delta_days <= 7:
+            windows[7].append(row)
+            windows[14].append(row)
+            windows[30].append(row)
+        elif delta_days <= 14:
+            windows[14].append(row)
+            windows[30].append(row)
+        else:
+            windows[30].append(row)
+
+    if not windows[30]:
+        return None
+
+    summary7 = _build_hitter_statcast_window_summary(windows[7])
+    summary14 = _build_hitter_statcast_window_summary(windows[14])
+    summary30 = _build_hitter_statcast_window_summary(windows[30])
+
+    def trend(short_value: float | None, long_value: float | None, digits: int = 3) -> float | None:
+        if short_value is None or long_value is None:
+            return None
+        return round(short_value - long_value, digits)
+
+    return {
+        "as_of_date": current_date,
+        "team_name": team_name,
+        "player_id": player_id,
+        "player_name": player_name,
+        "games_sample_7": summary7["games"],
+        "games_sample_14": summary14["games"],
+        "games_sample_30": summary30["games"],
+        "pa_sample_7": summary7["pa"],
+        "pa_sample_14": summary14["pa"],
+        "pa_sample_30": summary30["pa"],
+        "bbe_sample_7": summary7["bbe"],
+        "bbe_sample_14": summary14["bbe"],
+        "bbe_sample_30": summary30["bbe"],
+        "rolling_7_xwoba": summary7["xwoba"],
+        "rolling_14_xwoba": summary14["xwoba"],
+        "rolling_30_xwoba": summary30["xwoba"],
+        "rolling_7_xba": summary7["xba"],
+        "rolling_14_xba": summary14["xba"],
+        "rolling_30_xba": summary30["xba"],
+        "rolling_7_xslg": summary7["xslg"],
+        "rolling_14_xslg": summary14["xslg"],
+        "rolling_30_xslg": summary30["xslg"],
+        "rolling_7_barrel_pct": summary7["barrel_pct"],
+        "rolling_14_barrel_pct": summary14["barrel_pct"],
+        "rolling_30_barrel_pct": summary30["barrel_pct"],
+        "rolling_7_hard_hit_pct": summary7["hard_hit_pct"],
+        "rolling_14_hard_hit_pct": summary14["hard_hit_pct"],
+        "rolling_30_hard_hit_pct": summary30["hard_hit_pct"],
+        "rolling_7_sweet_spot_pct": summary7["sweet_spot_pct"],
+        "rolling_14_sweet_spot_pct": summary14["sweet_spot_pct"],
+        "rolling_30_sweet_spot_pct": summary30["sweet_spot_pct"],
+        "xwoba_trend_7_minus_30": trend(summary7["xwoba"], summary30["xwoba"]),
+        "barrel_trend_7_minus_30": trend(summary7["barrel_pct"], summary30["barrel_pct"], 1),
+        "hard_hit_trend_7_minus_30": trend(summary7["hard_hit_pct"], summary30["hard_hit_pct"], 1),
+        "sweet_spot_trend_7_minus_30": trend(summary7["sweet_spot_pct"], summary30["sweet_spot_pct"], 1),
+    }
+
+
+def refresh_hitter_statcast_trend_snapshots(
+    conn: sqlite3.Connection,
+    through_date: str | None = None,
+    as_of_date: str | None = None,
+) -> None:
+    init_db(conn)
+
+    if as_of_date:
+        dates = [
+            row["game_date"]
+            for row in conn.execute(
+                "SELECT DISTINCT game_date FROM mlb_games WHERE game_date = ? ORDER BY game_date",
+                (as_of_date,),
+            ).fetchall()
+        ]
+        conn.execute("DELETE FROM mlb_hitter_statcast_trend_snapshots WHERE as_of_date = ?", (as_of_date,))
+    else:
+        params: tuple[Any, ...] = (through_date,) if through_date else ()
+        date_filter = "WHERE game_date <= ?" if through_date else ""
+        dates = [
+            row["game_date"]
+            for row in conn.execute(
+                f"SELECT DISTINCT game_date FROM mlb_games {date_filter} ORDER BY game_date", params
+            ).fetchall()
+        ]
+        if through_date:
+            conn.execute("DELETE FROM mlb_hitter_statcast_trend_snapshots WHERE as_of_date <= ?", (through_date,))
+        else:
+            conn.execute("DELETE FROM mlb_hitter_statcast_trend_snapshots")
+
+    for current_date in dates:
+        teams = [
+            row["team_name"]
+            for row in conn.execute(
+                """
+                SELECT away_team AS team_name
+                FROM mlb_games
+                WHERE game_date = ?
+                UNION
+                SELECT home_team AS team_name
+                FROM mlb_games
+                WHERE game_date = ?
+                ORDER BY team_name
+                """,
+                (current_date, current_date),
+            ).fetchall()
+        ]
+
+        for team_name in teams:
+            player_rows = conn.execute(
+                """
+                SELECT
+                  player_id,
+                  player_name,
+                  MAX(game_date) AS last_game_date
+                FROM mlb_hitter_statcast_game_logs
+                WHERE team_name = ?
+                  AND game_date < ?
+                GROUP BY player_id, player_name
+                HAVING julianday(?) - julianday(MAX(game_date)) <= 35
+                ORDER BY last_game_date DESC, player_name ASC
+                """,
+                (team_name, current_date, current_date),
+            ).fetchall()
+
+            for player_row in player_rows:
+                player_id = to_int(player_row["player_id"]) or 0
+                if not player_id:
+                    continue
+                trend_row = build_recent_hitter_statcast_trend_row(
+                    conn,
+                    current_date,
+                    team_name,
+                    player_id,
+                    player_row["player_name"],
+                )
+                if not trend_row:
+                    continue
+                conn.execute(
+                    """
+                    INSERT INTO mlb_hitter_statcast_trend_snapshots (
+                      as_of_date, team_name, player_id, player_name,
+                      games_sample_7, games_sample_14, games_sample_30,
+                      pa_sample_7, pa_sample_14, pa_sample_30,
+                      bbe_sample_7, bbe_sample_14, bbe_sample_30,
+                      rolling_7_xwoba, rolling_14_xwoba, rolling_30_xwoba,
+                      rolling_7_xba, rolling_14_xba, rolling_30_xba,
+                      rolling_7_xslg, rolling_14_xslg, rolling_30_xslg,
+                      rolling_7_barrel_pct, rolling_14_barrel_pct, rolling_30_barrel_pct,
+                      rolling_7_hard_hit_pct, rolling_14_hard_hit_pct, rolling_30_hard_hit_pct,
+                      rolling_7_sweet_spot_pct, rolling_14_sweet_spot_pct, rolling_30_sweet_spot_pct,
+                      xwoba_trend_7_minus_30, barrel_trend_7_minus_30,
+                      hard_hit_trend_7_minus_30, sweet_spot_trend_7_minus_30
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    ON CONFLICT(as_of_date, player_id) DO UPDATE SET
+                      team_name=excluded.team_name,
+                      player_name=excluded.player_name,
+                      games_sample_7=excluded.games_sample_7,
+                      games_sample_14=excluded.games_sample_14,
+                      games_sample_30=excluded.games_sample_30,
+                      pa_sample_7=excluded.pa_sample_7,
+                      pa_sample_14=excluded.pa_sample_14,
+                      pa_sample_30=excluded.pa_sample_30,
+                      bbe_sample_7=excluded.bbe_sample_7,
+                      bbe_sample_14=excluded.bbe_sample_14,
+                      bbe_sample_30=excluded.bbe_sample_30,
+                      rolling_7_xwoba=excluded.rolling_7_xwoba,
+                      rolling_14_xwoba=excluded.rolling_14_xwoba,
+                      rolling_30_xwoba=excluded.rolling_30_xwoba,
+                      rolling_7_xba=excluded.rolling_7_xba,
+                      rolling_14_xba=excluded.rolling_14_xba,
+                      rolling_30_xba=excluded.rolling_30_xba,
+                      rolling_7_xslg=excluded.rolling_7_xslg,
+                      rolling_14_xslg=excluded.rolling_14_xslg,
+                      rolling_30_xslg=excluded.rolling_30_xslg,
+                      rolling_7_barrel_pct=excluded.rolling_7_barrel_pct,
+                      rolling_14_barrel_pct=excluded.rolling_14_barrel_pct,
+                      rolling_30_barrel_pct=excluded.rolling_30_barrel_pct,
+                      rolling_7_hard_hit_pct=excluded.rolling_7_hard_hit_pct,
+                      rolling_14_hard_hit_pct=excluded.rolling_14_hard_hit_pct,
+                      rolling_30_hard_hit_pct=excluded.rolling_30_hard_hit_pct,
+                      rolling_7_sweet_spot_pct=excluded.rolling_7_sweet_spot_pct,
+                      rolling_14_sweet_spot_pct=excluded.rolling_14_sweet_spot_pct,
+                      rolling_30_sweet_spot_pct=excluded.rolling_30_sweet_spot_pct,
+                      xwoba_trend_7_minus_30=excluded.xwoba_trend_7_minus_30,
+                      barrel_trend_7_minus_30=excluded.barrel_trend_7_minus_30,
+                      hard_hit_trend_7_minus_30=excluded.hard_hit_trend_7_minus_30,
+                      sweet_spot_trend_7_minus_30=excluded.sweet_spot_trend_7_minus_30
+                    """,
+                    (
+                        trend_row["as_of_date"],
+                        trend_row["team_name"],
+                        trend_row["player_id"],
+                        trend_row["player_name"],
+                        trend_row["games_sample_7"],
+                        trend_row["games_sample_14"],
+                        trend_row["games_sample_30"],
+                        trend_row["pa_sample_7"],
+                        trend_row["pa_sample_14"],
+                        trend_row["pa_sample_30"],
+                        trend_row["bbe_sample_7"],
+                        trend_row["bbe_sample_14"],
+                        trend_row["bbe_sample_30"],
+                        trend_row["rolling_7_xwoba"],
+                        trend_row["rolling_14_xwoba"],
+                        trend_row["rolling_30_xwoba"],
+                        trend_row["rolling_7_xba"],
+                        trend_row["rolling_14_xba"],
+                        trend_row["rolling_30_xba"],
+                        trend_row["rolling_7_xslg"],
+                        trend_row["rolling_14_xslg"],
+                        trend_row["rolling_30_xslg"],
+                        trend_row["rolling_7_barrel_pct"],
+                        trend_row["rolling_14_barrel_pct"],
+                        trend_row["rolling_30_barrel_pct"],
+                        trend_row["rolling_7_hard_hit_pct"],
+                        trend_row["rolling_14_hard_hit_pct"],
+                        trend_row["rolling_30_hard_hit_pct"],
+                        trend_row["rolling_7_sweet_spot_pct"],
+                        trend_row["rolling_14_sweet_spot_pct"],
+                        trend_row["rolling_30_sweet_spot_pct"],
+                        trend_row["xwoba_trend_7_minus_30"],
+                        trend_row["barrel_trend_7_minus_30"],
+                        trend_row["hard_hit_trend_7_minus_30"],
+                        trend_row["sweet_spot_trend_7_minus_30"],
+                    ),
+                )
+
+    conn.commit()
+
+
 def import_predictions(conn: sqlite3.Connection, file_path: Path) -> None:
     init_db(conn)
     payload = json.loads(file_path.read_text(encoding="utf-8"))
@@ -8398,6 +9041,25 @@ def parse_args() -> argparse.Namespace:
     ingest_hr.add_argument("--date", required=True, help="Snapshot date in YYYY-MM-DD format.")
     ingest_hr.add_argument("--season", required=True, type=int, help="Season year.")
 
+    ingest_hitter_statcast = subparsers.add_parser(
+        "ingest-hitter-statcast-range",
+        help="Fetch and store per-player, per-game Statcast batting aggregates for an inclusive date range.",
+    )
+    ingest_hitter_statcast.add_argument("--start-date", required=True, help="Start date in YYYY-MM-DD format.")
+    ingest_hitter_statcast.add_argument("--end-date", required=True, help="End date in YYYY-MM-DD format.")
+
+    derive_hitter_statcast = subparsers.add_parser(
+        "derive-hitter-statcast-trends",
+        help="Refresh rolling hitter Statcast trend snapshots for scheduled teams.",
+    )
+    derive_hitter_statcast.add_argument(
+        "--through-date", help="Optional YYYY-MM-DD cutoff. Defaults to every loaded date."
+    )
+    derive_hitter_statcast.add_argument(
+        "--as-of-date",
+        help="Optional single as-of date to rebuild incrementally without touching earlier Statcast trend rows.",
+    )
+
     import_picks = subparsers.add_parser("import-predictions", help="Import a saved HR prediction snapshot JSON file.")
     import_picks.add_argument("--file", required=True, help="Path to the JSON prediction file.")
 
@@ -8579,6 +9241,23 @@ def main() -> None:
         if args.command == "ingest-statcast-hr":
             ingest_statcast_hr_leaderboard(conn, args.date, args.season)
             print(f"Ingested Statcast HR leaderboard for {args.season} using snapshot date {args.date}")
+            return
+
+        if args.command == "ingest-hitter-statcast-range":
+            rows_loaded = ingest_hitter_statcast_date_range(conn, args.start_date, args.end_date)
+            print(
+                f"Ingested hitter Statcast game logs from {args.start_date} through {args.end_date} ({rows_loaded} player-game rows)"
+            )
+            return
+
+        if args.command == "derive-hitter-statcast-trends":
+            refresh_hitter_statcast_trend_snapshots(conn, args.through_date, args.as_of_date)
+            if args.as_of_date:
+                print(f"Refreshed hitter Statcast trend snapshots for {args.as_of_date}")
+            elif args.through_date:
+                print(f"Refreshed hitter Statcast trend snapshots through {args.through_date}")
+            else:
+                print("Refreshed hitter Statcast trend snapshots for all loaded dates")
             return
 
         if args.command == "import-predictions":

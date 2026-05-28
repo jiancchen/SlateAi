@@ -15,14 +15,14 @@ This pass uses standard Python and SQLite because `pandas` is not bundled in the
 | Window | Games | Hit rate | Avg edge | Avg volatility |
 | --- | --- | --- | --- | --- |
 | Reserve (`05-10` to `05-15`) | 75 | 0.653 | 6.3 | 83.2 |
-| Current (`05-16` to `05-22`) | 93 | 0.581 | 6.7 | 88.7 |
-| Combined | 168 | 0.613 | 6.5 | 86.2 |
+| Current (`05-16` to `05-22`) | 93 | 0.581 | 6.6 | 88.8 |
+| Combined | 168 | 0.613 | 6.5 | 86.3 |
 
 ## Hidden Edge Inventory
 
-- `mlb_team_whiff_persistence_profiles`: 3268 rows
-- `mlb_team_lead_surrender_profiles`: 3268 rows
-- `mlb_team_form_carryover_profiles`: 3208 rows
+- `mlb_team_whiff_persistence_profiles`: 3292 rows
+- `mlb_team_lead_surrender_profiles`: 3292 rows
+- `mlb_team_form_carryover_profiles`: 3232 rows
 
 All three are keyed by:
 - `as_of_date`

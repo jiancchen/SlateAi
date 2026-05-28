@@ -16,7 +16,7 @@ This pass looks at the new label tables and asks a better question than `did the
 | --- | --- |
 | expensive_favorite_failed | 15 |
 | underdog_beat_market | 26 |
-| favorite_held | 50 |
+| favorite_held | 51 |
 | market_neutral | 36 |
 
 ## Phase Label Shapes
@@ -53,9 +53,9 @@ This pass looks at the new label tables and asks a better question than `did the
 
 | Rule | Games | Precision | Recall |
 | --- | --- | --- | --- |
-| Market dog baseline | 45 | 0.578 | 1.000 |
+| Market dog baseline | 44 | 0.591 | 1.000 |
 | Dog + opponent chaos gap >= 8 | 14 | 0.857 | 0.462 |
-| Dog + opponent snapback gap >= 10 | 21 | 0.571 | 0.462 |
+| Dog + opponent snapback gap >= 10 | 20 | 0.600 | 0.462 |
 | Dog + lineup edge >= 10 | 20 | 0.550 | 0.423 |
 | Dog + opponent bullpen gap >= 8 | 14 | 0.714 | 0.385 |
 

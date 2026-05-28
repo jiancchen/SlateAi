@@ -7,6 +7,12 @@ const __dirname = path.dirname(__filename)
 const rootDir = path.resolve(__dirname, '..')
 const playerPropModelName = 'mlb-player-props-v2'
 
+const shiftIsoDate = (dateText, days) => {
+  const base = new Date(`${dateText}T00:00:00Z`)
+  base.setUTCDate(base.getUTCDate() + days)
+  return base.toISOString().slice(0, 10)
+}
+
 const parseArgs = () => {
   const args = process.argv.slice(2)
   const options = {
@@ -51,6 +57,7 @@ const runPythonScript = (scriptName, extraArgs = []) => {
 const main = () => {
   const options = parseArgs()
   const seasonYear = Number(options.date.slice(0, 4))
+  const statcastLookbackStart = shiftIsoDate(options.date, -3)
   const generateArgs = ['--date', options.date]
 
   if (options.baselineContextDate) {
@@ -69,6 +76,9 @@ const main = () => {
   runPythonWarehouse('derive-first-inning-profiles', ['--as-of-date', options.date])
   // Keep rolling team and hitter pressure/state snapshots collecting automatically for regime research.
   runPythonWarehouse('derive-state-snapshots', ['--as-of-date', options.date])
+  // Track rolling hitter contact-quality windows so batter props can separate hot contact from lucky box scores.
+  runPythonWarehouse('ingest-hitter-statcast-range', ['--start-date', statcastLookbackStart, '--end-date', options.date])
+  runPythonWarehouse('derive-hitter-statcast-trends', ['--as-of-date', options.date])
   // Keep Tier 3 research tables collecting automatically even while the live model ignores them.
   runPythonWarehouse('derive-tier3-features', ['--as-of-date', options.date])
   // Capture today's FanDuel pitcher strikeout lines before we build the slate and prop board.

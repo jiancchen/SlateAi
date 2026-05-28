@@ -303,6 +303,10 @@ const profitOn100 = (odds) => {
 }
 
 const clamp = (value, min, max) => Math.max(min, Math.min(max, value))
+const FEE_PER_100_RISKED = 2
+const MIN_VALID_PLUS_ODDS = 100
+const MAX_VALID_PLUS_ODDS = 250
+const MAX_VALID_MODEL_EDGE = 24
 
 const evPer100 = (modelPct, odds) => {
   const probability = Number(modelPct) / 100
@@ -311,15 +315,57 @@ const evPer100 = (modelPct, odds) => {
   return Number((probability * profit - (1 - probability) * 100).toFixed(1))
 }
 
-const valueGrade = ({ edgePct, ev }) => {
+const netEvPer100 = (modelPct, odds, fee = FEE_PER_100_RISKED) => {
+  const gross = evPer100(modelPct, odds)
+  if (!Number.isFinite(gross)) return null
+  return Number((gross - fee).toFixed(1))
+}
+
+const valueIssue = ({ marketType, edgePct, odds, modelPct, ev, netEv }) => {
+  const type = String(marketType || '').toLowerCase()
+  const edge = Number(edgePct)
+  const price = Number(odds)
+  const model = Number(modelPct)
+  const grossValue = Number(ev)
+  const netValue = Number(netEv)
+  const profit = profitOn100(price)
+  if (!Number.isFinite(price) || !Number.isFinite(model) || !Number.isFinite(edge) || !Number.isFinite(grossValue)) return 'No price validation'
+  if (Number.isFinite(profit) && profit <= FEE_PER_100_RISKED) return 'Fee/tax trap'
+  if (type !== 'ml') return type === 'spread' ? 'Spread watch only' : type === 'total' ? 'Total watch only' : 'Raw edge only'
+  if (price < -400) return 'Favorite tax trap'
+  if (price <= 0) return 'Favorite price needs better proof'
+  if (price < MIN_VALID_PLUS_ODDS || price > MAX_VALID_PLUS_ODDS) return 'Outlier price/manual review'
+  if (edge < 7) return 'Raw ML edge only'
+  if (edge > MAX_VALID_MODEL_EDGE) return 'Model-market outlier'
+  if (model < 45 || model > 60) return 'Model probability outside validated lane'
+  if (!Number.isFinite(netValue) || netValue < 8) return 'Fee-adjusted EV too thin'
+  return 'Validated ML candidate'
+}
+
+const valueGrade = ({ edgePct, ev, marketType, odds, modelPct }) => {
   const edge = Number(edgePct)
   const value = Number(ev)
   if (!Number.isFinite(edge) || !Number.isFinite(value)) return 'No price'
-  if (edge >= 7 && value >= 8) return 'Bet-grade value'
+  const type = String(marketType || '').toLowerCase()
+  const price = Number(odds)
+  const model = Number(modelPct)
+  const netValue = netEvPer100(model, price)
+  const issue = valueIssue({ marketType, edgePct: edge, odds: price, modelPct: model, ev: value, netEv: netValue })
+  if (issue === 'Fee/tax trap') return 'Fee/tax trap'
+  if (type !== 'ml') {
+    if (edge >= 5 && value >= 5) return 'Watch only'
+    if (edge >= 3 && value > 0) return 'Raw positive EV'
+  }
+  if (type === 'ml' && price < -400) return 'Favorite tax trap'
+  if (type === 'ml' && issue === 'Validated ML candidate') return 'Bet-grade value'
+  if (type === 'ml' && value > 0 && issue !== 'Validated ML candidate') return issue
   if (edge >= 3 && value > 0) return 'Thin value'
   if (edge <= -4 || value < -4) return 'Negative EV'
   return 'Near fair'
 }
+
+const isBetGradeValue = ({ marketType, edgePct, ev, odds, modelPct }) =>
+  valueGrade({ marketType, edgePct, ev, odds, modelPct }) === 'Bet-grade value'
 
 const edgeVsOdds = (modelPct, odds) => {
   const impliedPct = americanToImpliedPct(odds)
@@ -610,6 +656,7 @@ const buildValueBoard = ({ marketData, pickName, confidence, volatility, weaknes
   const mlOdds = marketData.desk?.odds
   const mlEdge = marketData.desk?.edgePct
   const mlEv = evPer100(confidence, mlOdds)
+  const mlNetEv = netEvPer100(confidence, mlOdds)
   const spreadOdds = marketData.spread?.odds
   const spreadLine = Number(marketData.spread?.spread)
   const spreadPenalty = Number.isFinite(spreadLine) && Math.abs(spreadLine) >= 6 ? 4 : 0
@@ -619,6 +666,7 @@ const buildValueBoard = ({ marketData, pickName, confidence, volatility, weaknes
     : null
   const spreadEdge = Number.isFinite(Number(spreadModelPct)) ? edgeVsOdds(spreadModelPct, spreadOdds) : null
   const spreadEv = Number.isFinite(Number(spreadModelPct)) ? evPer100(spreadModelPct, spreadOdds) : null
+  const spreadNetEv = Number.isFinite(Number(spreadModelPct)) ? netEvPer100(spreadModelPct, spreadOdds) : null
   const totalSelection =
     marketData.totalLean?.toLowerCase().includes('over') || weaknessEdge?.totalRead?.toLowerCase().includes('breaks')
       ? 'Over'
@@ -629,6 +677,7 @@ const buildValueBoard = ({ marketData, pickName, confidence, volatility, weaknes
   const totalModelPct = totalLine ? clamp(Math.round(confidence - 8 + (volatility >= 62 ? 4 : 0)), 41, 68) : null
   const totalEdge = totalLine ? edgeVsOdds(totalModelPct, totalLine.odds) : null
   const totalEv = totalLine ? evPer100(totalModelPct, totalLine.odds) : null
+  const totalNetEv = totalLine ? netEvPer100(totalModelPct, totalLine.odds) : null
   return {
     note: 'EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.',
     ml: {
@@ -639,8 +688,11 @@ const buildValueBoard = ({ marketData, pickName, confidence, volatility, weaknes
       impliedPct: marketData.desk?.impliedPct,
       edgePct: mlEdge,
       evPer100: mlEv,
-      valueGrade: valueGrade({ edgePct: mlEdge, ev: mlEv }),
-      betGrade: Number(mlEdge) >= 7 && Number(mlEv) >= 8
+      netEvPer100: mlNetEv,
+      feePer100: FEE_PER_100_RISKED,
+      valueIssue: valueIssue({ marketType: 'ML', edgePct: mlEdge, ev: mlEv, netEv: mlNetEv, odds: mlOdds, modelPct: confidence }),
+      valueGrade: valueGrade({ marketType: 'ML', edgePct: mlEdge, ev: mlEv, odds: mlOdds, modelPct: confidence }),
+      betGrade: isBetGradeValue({ marketType: 'ML', edgePct: mlEdge, ev: mlEv, odds: mlOdds, modelPct: confidence })
     },
     spread: marketData.spread
       ? {
@@ -652,8 +704,11 @@ const buildValueBoard = ({ marketData, pickName, confidence, volatility, weaknes
           impliedPct: Number.isFinite(americanToImpliedPct(spreadOdds)) ? Number(americanToImpliedPct(spreadOdds).toFixed(1)) : null,
           edgePct: spreadEdge,
           evPer100: spreadEv,
-          valueGrade: valueGrade({ edgePct: spreadEdge, ev: spreadEv }),
-          betGrade: Number(spreadEdge) >= 5 && Number(spreadEv) >= 5
+          netEvPer100: spreadNetEv,
+          feePer100: FEE_PER_100_RISKED,
+          valueIssue: valueIssue({ marketType: 'Spread', edgePct: spreadEdge, ev: spreadEv, netEv: spreadNetEv, odds: spreadOdds, modelPct: spreadModelPct }),
+          valueGrade: valueGrade({ marketType: 'Spread', edgePct: spreadEdge, ev: spreadEv, odds: spreadOdds, modelPct: spreadModelPct }),
+          betGrade: false
         }
       : null,
     total: totalLine
@@ -666,8 +721,11 @@ const buildValueBoard = ({ marketData, pickName, confidence, volatility, weaknes
           impliedPct: Number.isFinite(americanToImpliedPct(totalLine.odds)) ? Number(americanToImpliedPct(totalLine.odds).toFixed(1)) : null,
           edgePct: totalEdge,
           evPer100: totalEv,
-          valueGrade: valueGrade({ edgePct: totalEdge, ev: totalEv }),
-          betGrade: Number(totalEdge) >= 5 && Number(totalEv) >= 5
+          netEvPer100: totalNetEv,
+          feePer100: FEE_PER_100_RISKED,
+          valueIssue: valueIssue({ marketType: 'Total', edgePct: totalEdge, ev: totalEv, netEv: totalNetEv, odds: totalLine.odds, modelPct: totalModelPct }),
+          valueGrade: valueGrade({ marketType: 'Total', edgePct: totalEdge, ev: totalEv, odds: totalLine.odds, modelPct: totalModelPct }),
+          betGrade: false
         }
       : {
           marketType: 'Total',

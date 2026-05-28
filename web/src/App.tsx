@@ -246,6 +246,48 @@ const formatSignedNumber = (value: any, digits = 1) => {
   return `${numericValue >= 0 ? '+' : ''}${numericValue.toFixed(digits)}`
 }
 
+const formatTennisValueSelection = (row: AnyRecord) => {
+  const marketType = String(row?.marketType || '').toLowerCase()
+  const selection = row?.selection || row?.lean || 'Selection'
+  const odds = Number.isFinite(Number(row?.americanOdds)) ? ` ${formatAmericanOdds(row.americanOdds)}` : ''
+  if (marketType === 'spread' && Number.isFinite(Number(row?.line))) {
+    return `${selection} ${formatSignedNumber(row.line, 1)}${odds}`
+  }
+  if (marketType === 'total' && Number.isFinite(Number(row?.line))) {
+    return `${selection} ${formatNumber(row.line, 1)}${odds}`
+  }
+  if (marketType === 'ml' && odds) {
+    return `${selection} ML${odds}`
+  }
+  return selection
+}
+
+const tennisValueValidity = (row: AnyRecord) => {
+  const marketType = String(row?.marketType || '').toLowerCase()
+  const netEv = Number(row?.netEvPer100 ?? Number(row?.evPer100) - 2)
+  const modelPct = Number(row?.modelPct)
+  const edgePct = Number(row?.edgePct)
+  const odds = Number(row?.americanOdds)
+  if (!Number.isFinite(netEv) || !Number.isFinite(edgePct) || !Number.isFinite(odds)) {
+    return { valid: false, label: 'No price validation', reason: 'Missing EV or edge data.' }
+  }
+  if (marketType === 'ml') {
+    if (odds >= 100 && odds <= 250 && netEv >= 8 && edgePct >= 7 && edgePct <= 24 && Number.isFinite(modelPct) && modelPct >= 45 && modelPct <= 60) {
+      return { valid: true, label: 'Fee-adjusted ML candidate', reason: 'Plus-money ML inside the validated price lane, after fee haircut and model-outlier checks.' }
+    }
+    if (odds < 0) return { valid: false, label: 'Favorite tax trap', reason: 'Favorite payout is too small after price and fee haircut.' }
+    if (odds > 250) return { valid: false, label: 'Outlier price/manual review', reason: 'The market disagreement is too large to call validated without manual matchup confirmation.' }
+    return { valid: false, label: 'Raw ML edge only', reason: 'ML edge does not clear the fee-adjusted plus-money lane.' }
+  }
+  if (marketType === 'spread') {
+    return { valid: false, label: 'Spread downgraded', reason: 'May 27 spread rows backtested poorly, so positive spread EV is watch-only until the next settled pass.' }
+  }
+  if (marketType === 'total') {
+    return { valid: false, label: 'Total needs proof', reason: 'Totals do not have enough settled Roland Garros backtest yet; treat as watch-only unless live hold/break pattern confirms it.' }
+  }
+  return { valid: false, label: 'Raw edge only', reason: 'Market type is not in a validated lane yet.' }
+}
+
 const normalizeNameToken = (value = '') =>
   `${value}`
     .toLowerCase()
@@ -589,6 +631,8 @@ const buildPitcherSummary = (
     primary: `${record} | ${era} | ${whip}`,
     detailStats,
     recent,
+    recentStarts: Array.isArray(pitcher.startHistoryLast5) ? pitcher.startHistoryLast5 : [],
+    opponentStarts: Array.isArray(pitcher.opponentHistoryThisSeason) ? pitcher.opponentHistoryThisSeason : [],
     firstInningSeasonLine,
     warLine,
     strikeoutLine,
@@ -837,6 +881,80 @@ const formatStarterFirstInningLabel = (starter: AnyRecord | null | undefined) =>
   return `${shortName} ${runsAllowed}RFI`
 }
 
+const buildPitcherStartHistoryDetail = (start: AnyRecord = {}) => {
+  const venueLabel = start.venueRole === 'road' ? '@' : 'vs'
+  const teamResult = start.teamResult || '?'
+  const scoreLabel =
+    Number.isFinite(Number(start.teamRuns)) && Number.isFinite(Number(start.opponentRuns))
+      ? `${start.teamRuns}-${start.opponentRuns}`
+      : 'n/a'
+  const lines = [
+    `${formatMatchupHistoryDate(start.date)} ${venueLabel} ${start.opponentName || 'Opponent'}`,
+    `${teamResult} ${scoreLabel}`,
+    `${start.inningsPitchedLabel || '-'} IP · ${Number(start.earnedRuns || 0) || 0} ER · ${Number(start.hitsAllowed || 0) || 0} H · ${Number(start.walksAllowed || 0) || 0} BB · ${Number(start.strikeouts || 0) || 0} K · ${Number(start.homeRunsAllowed || 0) || 0} HR`
+  ]
+  if (Number.isFinite(Number(start.pitchesThrown)) && Number(start.pitchesThrown) > 0) {
+    lines.push(`${Number(start.pitchesThrown)} pitches`)
+  }
+  if (start.firstInningOutcome) {
+    lines.push(`${start.firstInningOutcome} · ${Number(start.firstInningRunsAllowed || 0) || 0} 1st-inning runs allowed`)
+  }
+  if (start.qualityStart) {
+    lines.push('Quality start')
+  }
+  if (start.venueName) {
+    lines.push(start.venueName)
+  }
+  return lines.join('\n')
+}
+
+const renderPitcherStartHistory = (label: string, starts: AnyRecord[] = [], emptyNote = '') => {
+  if (!starts.length && !emptyNote) return null
+
+  return (
+    <section className="pitcher-history-section">
+      <div className="pitcher-history-head">
+        <small>{label}</small>
+        {starts.length ? <span>{starts.length} start{starts.length === 1 ? '' : 's'}</span> : null}
+      </div>
+      {starts.length ? (
+        <div className="pitcher-history-bubble-row">
+          {starts.map((start, index) => {
+            const venueLabel = start.venueRole === 'road' ? '@' : 'vs'
+            const teamResult = start.teamResult || '?'
+            return (
+              <span
+                key={`${label}-${start.gamePk || `${start.date}-${index}`}`}
+                className={`pitcher-history-bubble ${start.qualityStart ? 'quality' : ''}`}
+                tabIndex={0}
+                title={buildPitcherStartHistoryDetail(start)}
+              >
+                <small>{formatMatchupHistoryDate(start.date)}</small>
+                <strong>{teamResult} {venueLabel} {start.opponentName || 'Opp'}</strong>
+                <span>{start.inningsPitchedLabel || '-'} IP · {Number(start.earnedRuns || 0) || 0} ER · {Number(start.strikeouts || 0) || 0} K</span>
+                <span className="pitcher-history-popover">
+                  <strong>{formatMatchupHistoryDate(start.date)} {venueLabel} {start.opponentName || 'Opponent'}</strong>
+                  <small>{teamResult} {Number.isFinite(Number(start.teamRuns)) && Number.isFinite(Number(start.opponentRuns)) ? `${start.teamRuns}-${start.opponentRuns}` : 'n/a'}</small>
+                  <small>{start.inningsPitchedLabel || '-'} IP · {Number(start.earnedRuns || 0) || 0} ER · {Number(start.hitsAllowed || 0) || 0} H · {Number(start.walksAllowed || 0) || 0} BB · {Number(start.strikeouts || 0) || 0} K · {Number(start.homeRunsAllowed || 0) || 0} HR</small>
+                  {Number.isFinite(Number(start.pitchesThrown)) && Number(start.pitchesThrown) > 0 ? (
+                    <small>{Number(start.pitchesThrown)} pitches</small>
+                  ) : null}
+                  {start.firstInningOutcome ? (
+                    <small>{start.firstInningOutcome} · {Number(start.firstInningRunsAllowed || 0) || 0} 1st-inning runs allowed</small>
+                  ) : null}
+                  {start.qualityStart ? <small>Quality start</small> : null}
+                </span>
+              </span>
+            )
+          })}
+        </div>
+      ) : (
+        <small>{emptyNote}</small>
+      )}
+    </section>
+  )
+}
+
 const renderMatchupStoryChart = (teamName: string, headerLabel: string, games: AnyRecord[] = []) => {
   if (!games.length) return null
 
@@ -891,7 +1009,12 @@ const renderMatchupStoryChart = (teamName: string, headerLabel: string, games: A
   )
 }
 
-const renderInningHistoryTable = (teamName: string, headerLabel: string, games: AnyRecord[] = []) => {
+const renderInningHistoryTable = (
+  teamName: string,
+  headerLabel: string,
+  games: AnyRecord[] = [],
+  highlightPitcherName = ''
+) => {
   if (!games.length) return null
 
   const maxInning = Math.max(
@@ -919,6 +1042,9 @@ const renderInningHistoryTable = (teamName: string, headerLabel: string, games: 
               Number.isFinite(Number(game.runsFor)) && Number.isFinite(Number(game.runsAgainst))
                 ? `${game.runsFor}-${game.runsAgainst}`
                 : 'n/a'
+            const starterMatchesToday =
+              highlightPitcherName &&
+              normalizeNameToken(game.starters?.team?.pitcherName || '') === normalizeNameToken(highlightPitcherName)
             return (
               <div
                 key={`${teamName}-${headerLabel}-${game.gamePk || `${game.date}-${index}`}`}
@@ -933,6 +1059,11 @@ const renderInningHistoryTable = (teamName: string, headerLabel: string, games: 
                       {formatStarterFirstInningLabel(game.starters?.team)}
                       {game.starters?.team && game.starters?.opponent ? ' / ' : ''}
                       {formatStarterFirstInningLabel(game.starters?.opponent)}
+                    </small>
+                  ) : null}
+                  {starterMatchesToday ? (
+                    <small>
+                      <span className="matchup-history-starter-pill">Today SP</span>
                     </small>
                   ) : null}
                 </span>
@@ -958,8 +1089,12 @@ const renderInningHistoryTable = (teamName: string, headerLabel: string, games: 
   )
 }
 
-const renderMatchupInningHistory = (teamName: string, opponentName: string, games: AnyRecord[] = []) =>
-  renderInningHistoryTable(teamName, `vs ${opponentName}`, games)
+const renderMatchupInningHistory = (
+  teamName: string,
+  opponentName: string,
+  games: AnyRecord[] = [],
+  highlightPitcherName = ''
+) => renderInningHistoryTable(teamName, `vs ${opponentName}`, games, highlightPitcherName)
 
 const renderRecentInningHistory = (teamName: string, games: AnyRecord[] = []) =>
   renderInningHistoryTable(teamName, 'Last 5 overall', games)
@@ -1595,7 +1730,10 @@ function App() {
   const slateMeta = activeDay?.slateMeta ?? activeDayShell?.slateMeta ?? { date: 'Slate', isoDate: '' }
   const oddsMeta = activeDay?.oddsMeta ?? { snapshot: pacificClock.label }
   const games = activeDay?.games ?? []
-  const filterOptions = activeDay?.filters?.length ? activeDay.filters : ['All']
+  const baseFilterOptions = activeDay?.filters?.length ? activeDay.filters : ['All']
+  const filterOptions = games.some((game: AnyRecord) => game.league === 'Tennis') && !baseFilterOptions.includes('Value')
+    ? [...baseFilterOptions, 'Value']
+    : baseFilterOptions
   const activeDayIsoDate = activeDay?.slateMeta?.isoDate ?? activeDayShell?.id ?? ''
 
   useEffect(() => {
@@ -1654,6 +1792,7 @@ function App() {
   }, [activeStoryDay, activeStoryGameSummary, activeStoryId, loadedStoryGamesByDay, loadingStoryGamesByDay])
 
   const visibleGames = useMemo(() => {
+    if (activeFilter === 'Value') return []
     const search = marketSearch.trim().toLowerCase()
     return games.filter((game: AnyRecord) => {
       if (activeFilter !== 'All' && game.league !== activeFilter) return false
@@ -2419,12 +2558,18 @@ function App() {
       const summary = publishedValueSummary as AnyRecord
       const attachGame = (row: AnyRecord) => ({
         ...row,
-        game: games.find((game: AnyRecord) => game.id === row.gameId) ?? null
+        game: games.find((game: AnyRecord) => game.id === row.gameId) ?? null,
+        validity: tennisValueValidity(row)
       })
+      const rawRows = (summary.rows || []).map(attachGame).filter((row: AnyRecord) => row.game)
+      const rawBetGradeRows = (summary.betGradeRows || []).map(attachGame).filter((row: AnyRecord) => row.game)
+      const validatedRows = rawBetGradeRows.filter((row: AnyRecord) => row.validity?.valid)
       return {
         ...summary,
-        rows: (summary.rows || []).map(attachGame).filter((row: AnyRecord) => row.game),
-        betGradeRows: (summary.betGradeRows || []).map(attachGame).filter((row: AnyRecord) => row.game),
+        rows: rawRows,
+        betGradeRows: rawBetGradeRows,
+        validatedRows,
+        rawPositiveRows: (summary.rawPositiveRows || []).map(attachGame).filter((row: AnyRecord) => row.game),
         thinRows: (summary.thinRows || []).map(attachGame).filter((row: AnyRecord) => row.game),
         negativeMlRows: (summary.negativeMlRows || []).map(attachGame).filter((row: AnyRecord) => row.game)
       }
@@ -2450,6 +2595,13 @@ function App() {
     }, {})
     const betGradeRows = rows
       .filter((row: AnyRecord) => row.valueGrade === 'Bet-grade value')
+      .map((row: AnyRecord) => ({ ...row, validity: tennisValueValidity(row) }))
+      .sort((left: AnyRecord, right: AnyRecord) => (right.evPer100 ?? -999) - (left.evPer100 ?? -999))
+    const validatedRows = betGradeRows.filter((row: AnyRecord) => row.validity?.valid)
+    const rawPositiveRows = rows
+      .filter((row: AnyRecord) => Number(row.evPer100) > 0)
+      .map((row: AnyRecord) => ({ ...row, validity: tennisValueValidity(row) }))
+      .filter((row: AnyRecord) => !row.validity?.valid)
       .sort((left: AnyRecord, right: AnyRecord) => (right.evPer100 ?? -999) - (left.evPer100 ?? -999))
     const thinRows = rows
       .filter((row: AnyRecord) => row.valueGrade === 'Thin value')
@@ -2467,6 +2619,8 @@ function App() {
       noPriceRows: noPriceRows.length,
       countByGrade,
       betGradeRows,
+      validatedRows,
+      rawPositiveRows,
       thinRows,
       negativeMlRows,
       note:
@@ -2924,7 +3078,7 @@ function App() {
               <span className="builder-status-pill open">{lineupStatusLabel(game.lineupBoard?.status?.away)}</span>
             </div>
             {renderRecentInningHistory(awayTeam, awayRecentInningHistory)}
-            {renderMatchupInningHistory(awayTeam, homeTeam, awayMatchupHistory)}
+            {renderMatchupInningHistory(awayTeam, homeTeam, awayMatchupHistory, awayStarter.headline.replace(/\s*\([LR?]HP\)$/, ''))}
             <div className="pitcher-summary-block">
               <strong className="pitcher-summary-headline">{awayStarter.headline}</strong>
               <p className="pitcher-summary-line">{awayStarter.primary}</p>
@@ -2968,6 +3122,16 @@ function App() {
                   ) : null}
                 </div>
               ) : null}
+              {renderPitcherStartHistory(
+                'Last 5 starts',
+                awayStarter.recentStarts,
+                'No prior MLB starts loaded yet.'
+              )}
+              {renderPitcherStartHistory(
+                `vs ${homeTeam} this season`,
+                awayStarter.opponentStarts,
+                `${awayStarter.headline.replace(/\s*\([LR?]HP\)$/, '')} has not started against ${homeTeam} this season.`
+              )}
             </div>
             {awayStarter.recent ? <small>{awayStarter.recent}</small> : null}
             {awayStarter.firstInningSeasonLine ? <small>{awayStarter.firstInningSeasonLine}</small> : null}
@@ -3014,7 +3178,7 @@ function App() {
               <span className="builder-status-pill open">{lineupStatusLabel(game.lineupBoard?.status?.home)}</span>
             </div>
             {renderRecentInningHistory(homeTeam, homeRecentInningHistory)}
-            {renderMatchupInningHistory(homeTeam, awayTeam, homeMatchupHistory)}
+            {renderMatchupInningHistory(homeTeam, awayTeam, homeMatchupHistory, homeStarter.headline.replace(/\s*\([LR?]HP\)$/, ''))}
             <div className="pitcher-summary-block">
               <strong className="pitcher-summary-headline">{homeStarter.headline}</strong>
               <p className="pitcher-summary-line">{homeStarter.primary}</p>
@@ -3058,6 +3222,16 @@ function App() {
                   ) : null}
                 </div>
               ) : null}
+              {renderPitcherStartHistory(
+                'Last 5 starts',
+                homeStarter.recentStarts,
+                'No prior MLB starts loaded yet.'
+              )}
+              {renderPitcherStartHistory(
+                `vs ${awayTeam} this season`,
+                homeStarter.opponentStarts,
+                `${homeStarter.headline.replace(/\s*\([LR?]HP\)$/, '')} has not started against ${awayTeam} this season.`
+              )}
             </div>
             {homeStarter.recent ? <small>{homeStarter.recent}</small> : null}
             {homeStarter.firstInningSeasonLine ? <small>{homeStarter.firstInningSeasonLine}</small> : null}
@@ -3540,6 +3714,53 @@ function App() {
       const awayWins = Number.isFinite(Number(h2h.awayWins)) ? h2h.awayWins : 'N/A'
       return `${h2h.homeName || 'Home'} ${homeWins}-${awayWins} ${h2h.awayName || 'Away'}`
     }
+    const renderH2hPanel = () => {
+      const h2h = warehouseContext?.h2h || {}
+      const h2hRows = h2h.matches || []
+      const sourceRecord = clayMatchupData?.h2hRecord || clayMatchupData?.h2hText || warehouseH2hLabel()
+      return (
+        <article className="react-mini-panel tennis-h2h-panel">
+          <div className="tennis-h2h-panel-top">
+            <div>
+              <span className="eyebrow">H2H</span>
+              <strong>{sourceRecord || 'No H2H data'}</strong>
+            </div>
+            <small>
+              {h2hRows.length
+                ? `${h2hRows.length} dated row${h2hRows.length === 1 ? '' : 's'} · ${h2h.coverage?.surfaceRows || 0} with surface`
+                : 'Aggregate only; no dated direct meetings found in source logs'}
+            </small>
+          </div>
+          {h2hRows.length ? (
+            <div className="tennis-h2h-table" role="table" aria-label="Head to head match history">
+              <div className="tennis-h2h-row tennis-h2h-head" role="row">
+                <span>Date</span>
+                <span>Event</span>
+                <span>Court</span>
+                <span>Winner</span>
+                <span>Score</span>
+                <span>Wt</span>
+              </div>
+              {h2hRows.map((row: AnyRecord, index: number) => (
+                <div className="tennis-h2h-row" role="row" key={`${game.id}-h2h-${row.isoDate || row.dateLabel || index}`}>
+                  <span>{row.dateLabel || row.isoDate || 'Date missing'}</span>
+                  <span>{row.event || 'Event missing'}</span>
+                  <span>{row.surface || 'Court missing'}</span>
+                  <span>{row.winnerName || 'Winner unclear'}</span>
+                  <span>{row.resultText || 'Score missing'}</span>
+                  <span>{Number.isFinite(Number(row.weight)) ? Number(row.weight).toFixed(2) : 'N/A'}</span>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <p className="tennis-data-note">
+              SofaScore/Tennistonic currently expose the matchup record but not a dated H2H ledger for this match. Direct
+              meetings will populate here once they appear in the recent-match feed or a richer source payload.
+            </p>
+          )}
+        </article>
+      )
+    }
     const weaknessRiskPct = (score: any) => {
       const numericScore = Number(score)
       if (!Number.isFinite(numericScore)) return null
@@ -3598,6 +3819,297 @@ function App() {
         return `Avg ${Math.round(Number(fallbackValue))}${fallbackKey?.toLowerCase().includes('pct') ? '%' : ''}`
       }
       return 'No FS row'
+    }
+    const numericStatValue = (match: AnyRecord, keys: string[]) => {
+      const stats = match?.serviceStats || match?.flashscoreStats || match?.stats || {}
+      for (const key of keys) {
+        const value = stats?.[key]
+        if (value !== undefined && value !== null && value !== '') {
+          const numericValue = Number(value)
+          if (Number.isFinite(numericValue)) return numericValue
+          const matchValue = String(value).match(/-?\d+(?:\.\d+)?/)
+          if (matchValue) return Number(matchValue[0])
+        }
+      }
+      return null
+    }
+    const fractionStatValue = (match: AnyRecord, labels: string[], directKeys: string[] = []) => {
+      const stats = match?.serviceStats || match?.flashscoreStats || match?.stats || {}
+      for (const key of directKeys) {
+        const value = stats?.[key]
+        const matchValue = String(value || '').match(/(\d+)\s*\/\s*(\d+)/)
+        if (matchValue) return { made: Number(matchValue[1]), attempts: Number(matchValue[2]) }
+      }
+      const row = (stats?.rows || []).find((entry: AnyRecord) =>
+        labels.some((label) => String(entry?.label || '').toLowerCase().includes(label.toLowerCase()))
+      )
+      const matchValue = String(row?.value || '').match(/(\d+)\s*\/\s*(\d+)/)
+      if (matchValue) return { made: Number(matchValue[1]), attempts: Number(matchValue[2]) }
+      return null
+    }
+    const opponentRankWeight = (rank: any) => {
+      const numericRank = Number(rank)
+      if (!Number.isFinite(numericRank)) return 0.96
+      if (numericRank <= 10) return 1.14
+      if (numericRank <= 25) return 1.1
+      if (numericRank <= 50) return 1.06
+      if (numericRank <= 100) return 1.02
+      if (numericRank <= 200) return 0.98
+      return 0.94
+    }
+    const weightedAverage = (items: Array<{ value: number; weight: number }>) => {
+      const clean = items.filter((item) => Number.isFinite(item.value) && Number.isFinite(item.weight) && item.weight > 0)
+      const totalWeight = clean.reduce((sum, item) => sum + item.weight, 0)
+      if (!totalWeight) return null
+      return clean.reduce((sum, item) => sum + item.value * item.weight, 0) / totalWeight
+    }
+    const bubbleTone = (score: any) => {
+      const numericScore = Number(score)
+      if (!Number.isFinite(numericScore)) return 'missing'
+      if (numericScore >= 68) return 'strong'
+      if (numericScore >= 54) return 'ok'
+      if (numericScore >= 42) return 'watch'
+      return 'risk'
+    }
+    const bubbleLabel = (score: any) => {
+      const numericScore = Number(score)
+      if (!Number.isFinite(numericScore)) return 'No row'
+      if (numericScore >= 68) return 'Strong'
+      if (numericScore >= 54) return 'Playable'
+      if (numericScore >= 42) return 'Watch'
+      return 'Risk'
+    }
+    const tennisFormRows = [
+      { key: 'hold', label: 'Hold' },
+      { key: 'secondServe', label: '2nd' },
+      { key: 'errorControl', label: 'Err' },
+      { key: 'returnPressure', label: 'Ret' },
+      { key: 'closeout', label: 'Close' }
+    ]
+    const formatTennisFormDate = (match: AnyRecord, index: number) => {
+      const parsed = Date.parse(String(match?.date || '').replace(/(\d{2})$/, '20$1'))
+      if (Number.isFinite(parsed)) {
+        return new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' }).format(new Date(parsed))
+      }
+      if (match?.date) return String(match.date).replace(/\s+26$/, '')
+      return `Match ${index + 1}`
+    }
+    const expectedStatsForPlayer = (playerName: string) =>
+      warehouseContext?.players?.find((entry: AnyRecord) => normalizeTennisName(entry.name) === normalizeTennisName(playerName))
+        ?.expectedStats?.stats || null
+    const warehouseFormMetricsForPlayer = (playerName: string) =>
+      warehouseContext?.players?.find((entry: AnyRecord) => normalizeTennisName(entry.name) === normalizeTennisName(playerName))
+        ?.recentFormMetrics || null
+    const scoreValue = (score: number | null, estimated = false) => ({ score, estimated })
+    const fallbackTennisFormScore = (expectedStats: AnyRecord | null, key: string) => {
+      if (!expectedStats) return scoreValue(null)
+      const hold = Number(expectedStats.holdPct)
+      const firstWon = Number(expectedStats.firstServeWonPct)
+      const firstIn = Number(expectedStats.firstServePct)
+      const secondWon = Number(expectedStats.secondServeWonPct)
+      const doubleFaults = Number(expectedStats.doubleFaults)
+      const returnWon = Number(expectedStats.returnPointsWonPct)
+      const bpConverted = Number(expectedStats.breakPointsConvertedPct)
+      const winners = Number(expectedStats.winners)
+      const unforced = Number(expectedStats.unforcedErrors)
+      const dfPenalty = Number.isFinite(doubleFaults) ? Math.max(0, doubleFaults - 2.5) * 2.2 : 0
+      if (key === 'hold' && (Number.isFinite(hold) || Number.isFinite(firstWon))) {
+        return scoreValue(Math.max(0, Math.min(100, (Number.isFinite(hold) ? hold : 72) * 0.72 + (Number.isFinite(firstWon) ? firstWon : 64) * 0.22 + ((Number.isFinite(firstIn) ? firstIn : 60) - 60) * 0.1)), true)
+      }
+      if (key === 'secondServe' && (Number.isFinite(secondWon) || Number.isFinite(hold))) {
+        return scoreValue(Math.max(0, Math.min(100, (Number.isFinite(secondWon) ? secondWon : 48) * 0.78 + (Number.isFinite(hold) ? hold : 72) * 0.22 - dfPenalty)), true)
+      }
+      if (key === 'errorControl' && (Number.isFinite(unforced) || Number.isFinite(doubleFaults) || Number.isFinite(winners))) {
+        const winnerBalance = Number.isFinite(winners) && Number.isFinite(unforced) ? winners - unforced : 0
+        return scoreValue(Math.max(0, Math.min(100, 72 - Math.max(0, (Number.isFinite(unforced) ? unforced / 2.6 : 10) - 8) * 4.2 - Math.max(0, (Number.isFinite(doubleFaults) ? doubleFaults / 2.6 : 1.5) - 1.5) * 4 + Math.max(-10, Math.min(10, winnerBalance * 0.25)))), true)
+      }
+      if (key === 'returnPressure' && (Number.isFinite(returnWon) || Number.isFinite(bpConverted))) {
+        return scoreValue(Math.max(0, Math.min(100, (Number.isFinite(returnWon) ? returnWon : 34) * 1.28 + (Number.isFinite(bpConverted) ? bpConverted : 35) * 0.18 + 6)), true)
+      }
+      return scoreValue(null)
+    }
+    const buildTennisFormMatrix = (player: AnyRecord) => {
+      const persistedForm = warehouseFormMetricsForPlayer(player.name)
+      if (persistedForm?.matches?.length) {
+        const persistedMatches = (persistedForm.matches || []).slice(0, 5).map((entry: AnyRecord) => {
+          const rawRecent = entry?.metrics?.hold?.raw?.recent || entry?.metrics?.closeout?.raw?.recent || {}
+          const metrics = tennisFormRows.reduce((acc: AnyRecord, row) => {
+            const metric = entry.metrics?.[row.key] || {}
+            acc[row.key] = {
+              score: Number.isFinite(Number(metric.score)) ? Number(metric.score) : null,
+              estimated: Boolean(metric.estimated),
+              source: metric.source,
+              weight: metric.weight
+            }
+            return acc
+          }, {})
+          return {
+            ...metrics,
+            match: {
+              ...rawRecent,
+              opponent: entry.opponentName || rawRecent.opponent,
+              opponentRanking: {
+                ...(rawRecent.opponentRanking || {}),
+                rank: entry.opponentRank ?? rawRecent?.opponentRanking?.rank
+              },
+              event: entry.event || rawRecent.event,
+              date: entry.dateLabel || rawRecent.date,
+              surface: entry.surface
+            },
+            dateLabel: entry.dateLabel ? formatTennisFormDate({ date: entry.dateLabel }, Number(entry.recentIndex) || 0) : `Match ${(Number(entry.recentIndex) || 0) + 1}`,
+            resultLabel: rawRecent?.parsed?.playerWon === true ? 'W' : rawRecent?.parsed?.playerWon === false ? 'L' : '?',
+            weight: Number.isFinite(Number(entry.metrics?.hold?.weight)) ? Number(entry.metrics.hold.weight) : opponentRankWeight(entry.opponentRank)
+          }
+        })
+        return {
+          sample: persistedMatches.length,
+          exactCells: persistedForm.coverage?.exactCells ?? 0,
+          estimatedRows: persistedForm.coverage?.estimatedCells ?? 0,
+          missingCells: persistedForm.coverage?.missingCells ?? 0,
+          persisted: true,
+          matches: persistedMatches,
+          summary: (persistedForm.summary || tennisFormRows).map((row: AnyRecord) => ({
+            key: row.key,
+            label: row.label,
+            score: row.score == null ? null : Math.round(Number(row.score))
+          }))
+        }
+      }
+      const recent = (player.recentMatches || []).slice(0, 5)
+      const expectedStats = expectedStatsForPlayer(player.name)
+      const matchRows = recent.map((match: AnyRecord, index: number) => {
+        const setsPlayed = Math.max(1, Number(match?.parsed?.setsPlayed || 0) || 1)
+        const weight = opponentRankWeight(match?.opponentRanking?.rank)
+        const firstServeWon = numericStatValue(match, ['firstServeWonPct', 'firstServePointsWon'])
+        const firstServeIn = numericStatValue(match, ['firstServePct'])
+        const secondServeWon = numericStatValue(match, ['secondServeWonPct'])
+        const serviceHold = numericStatValue(match, ['holdPct', 'serviceHoldPct'])
+        const returnPointsWon = numericStatValue(match, ['returnPointsWonPct'])
+        const unforcedErrors = numericStatValue(match, ['unforcedErrors'])
+        const doubleFaults = numericStatValue(match, ['doubleFaults'])
+        const winners = numericStatValue(match, ['winners'])
+        const converted = fractionStatValue(match, ['Break Points Converted'], ['breakPointsConverted'])
+        const saved = fractionStatValue(match, ['Break Points Saved'], ['breakPointsSaved'])
+        const breakChancesPerSet = converted ? converted.attempts / setsPlayed : null
+        const breakConversionPct = converted && converted.attempts ? (converted.made / converted.attempts) * 100 : null
+        const bpSavedPct = saved && saved.attempts ? (saved.made / saved.attempts) * 100 : numericStatValue(match, ['breakPointsSavedPct'])
+        const ufePerSet = unforcedErrors != null ? unforcedErrors / setsPlayed : null
+        const dfPerSet = doubleFaults != null ? doubleFaults / setsPlayed : null
+        const winnerBalance = winners != null && unforcedErrors != null ? winners - unforcedErrors : null
+        const parsed = match?.parsed || {}
+        let closeout = null
+        if (parsed.playerWon === true) {
+          closeout = parsed.straightSetWin ? 78 : parsed.decidingSet ? 72 : 66
+        } else if (parsed.playerWon === false) {
+          closeout = parsed.straightSetLoss ? 28 : parsed.decidingSet ? 36 : 42
+        }
+        if (Number.isFinite(Number(serviceHold))) closeout = (closeout ?? 50) * 0.65 + Number(serviceHold) * 0.35
+        if (Number.isFinite(Number(bpSavedPct))) closeout = (closeout ?? 50) + (Number(bpSavedPct) - 62) * 0.08
+
+        const holdScore =
+          serviceHold != null || firstServeWon != null
+            ? scoreValue(Math.max(0, Math.min(100, (serviceHold ?? 72) * 0.72 + (firstServeWon ?? 64) * 0.22 + ((firstServeIn ?? 60) - 60) * 0.1)))
+            : fallbackTennisFormScore(expectedStats, 'hold')
+        const secondServeScore =
+          secondServeWon != null || serviceHold != null
+            ? scoreValue(Math.max(0, Math.min(100, (secondServeWon ?? 48) * 0.78 + (serviceHold ?? 72) * 0.22 - Math.max(0, (dfPerSet ?? 0) - 1.8) * 3.5)))
+            : fallbackTennisFormScore(expectedStats, 'secondServe')
+        const errorControlScore =
+          ufePerSet != null || dfPerSet != null || winnerBalance != null
+            ? scoreValue(Math.max(0, Math.min(100, 72 - Math.max(0, (ufePerSet ?? 10) - 8) * 4.2 - Math.max(0, (dfPerSet ?? 1.5) - 1.5) * 4 + Math.max(-10, Math.min(10, (winnerBalance ?? 0) * 0.45)))))
+            : fallbackTennisFormScore(expectedStats, 'errorControl')
+        const returnPressureScore =
+          returnPointsWon != null || converted
+            ? scoreValue(Math.max(0, Math.min(100, (returnPointsWon ?? 34) * 1.28 + (breakConversionPct ?? 35) * 0.18 + Math.min(18, (breakChancesPerSet ?? 1.2) * 5))))
+            : fallbackTennisFormScore(expectedStats, 'returnPressure')
+
+        return {
+          match,
+          dateLabel: formatTennisFormDate(match, index),
+          resultLabel: match?.parsed?.playerWon === true ? 'W' : match?.parsed?.playerWon === false ? 'L' : '?',
+          weight,
+          hold: holdScore,
+          secondServe: secondServeScore,
+          errorControl: errorControlScore,
+          returnPressure: returnPressureScore,
+          closeout: scoreValue(closeout == null ? null : Math.max(0, Math.min(100, closeout)))
+        }
+      })
+      const scoreFor = (key: string) => {
+        const score = weightedAverage(
+          matchRows
+            .filter((row) => row[key as keyof typeof row]?.score != null)
+            .map((row) => ({ value: Number(row[key as keyof typeof row].score), weight: row.weight }))
+        )
+        return score == null ? null : Math.round(score)
+      }
+      const sample = recent.length
+      const serviceRows = recent.filter((match: AnyRecord) => match?.serviceStats || match?.flashscoreStats || match?.stats).length
+      const estimatedRows = matchRows.reduce((sum, row: AnyRecord) => sum + tennisFormRows.filter((metric) => row[metric.key]?.estimated).length, 0)
+      return {
+        sample,
+        serviceRows,
+        exactCells: serviceRows,
+        estimatedRows,
+        missingCells: 0,
+        persisted: false,
+        matches: matchRows,
+        summary: [
+          { key: 'hold', label: 'Hold', score: scoreFor('hold') },
+          { key: 'secondServe', label: '2nd serve', score: scoreFor('secondServe') },
+          { key: 'errorControl', label: 'Error control', score: scoreFor('errorControl') },
+          { key: 'returnPressure', label: 'Return pressure', score: scoreFor('returnPressure') },
+          { key: 'closeout', label: 'Closeout', score: scoreFor('closeout') }
+        ]
+      }
+    }
+    const renderTennisFormMatrix = (player: AnyRecord) => {
+      const form = buildTennisFormMatrix(player)
+      if (!form.sample) return null
+      const gridTemplateColumns = `52px repeat(${form.matches.length}, minmax(74px, 1fr))`
+      return (
+        <div className="tennis-form-matrix" aria-label={`${player.name} last ${form.sample} tennis form matrix`}>
+          <div className="tennis-form-matrix-meta">
+            <span>
+              {form.persisted ? 'Warehouse' : 'Live'} · {form.exactCells ?? 0} exact cells
+              {form.estimatedRows ? ` · ${form.estimatedRows} est cells` : ''}
+              {form.missingCells ? ` · ${form.missingCells} missing` : ''} · opponent adjusted
+            </span>
+          </div>
+          <div className="tennis-form-matrix-scroll">
+            <div className="tennis-form-matrix-grid">
+              <div className="tennis-form-matrix-row tennis-form-matrix-header" style={{ gridTemplateColumns }}>
+                <span className="tennis-form-matrix-label">Story</span>
+                {form.matches.map((entry: AnyRecord, index: number) => (
+                  <span key={`${player.name}-form-date-${entry.dateLabel}-${index}`} className="tennis-form-matrix-date">
+                    <strong>{entry.dateLabel}</strong>
+                    <small>{entry.resultLabel}</small>
+                  </span>
+                ))}
+              </div>
+              {tennisFormRows.map((row) => (
+                <div key={`${player.name}-form-row-${row.key}`} className="tennis-form-matrix-row" style={{ gridTemplateColumns }}>
+                  <span className="tennis-form-matrix-label">{row.label}</span>
+                  {form.matches.map((entry: AnyRecord, index: number) => {
+                    const metric = entry[row.key] || {}
+                    const roundedScore = metric.score == null ? null : Math.round(Number(metric.score))
+                    const tone = bubbleTone(roundedScore)
+                    return (
+                      <span
+                        key={`${player.name}-${row.key}-${index}`}
+                        className={`tennis-form-matrix-cell ${tone} ${metric.estimated ? 'estimated' : ''}`}
+                        title={`${row.label}: ${roundedScore ?? 'No row'}${metric.estimated ? ' estimated from player recent averages' : ''} vs ${entry.match?.opponent || 'opponent'}`}
+                      >
+                        {roundedScore == null ? 'N/A' : `${metric.estimated ? '~' : ''}${roundedScore}`}
+                      </span>
+                    )
+                  })}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )
     }
     const renderRecentMatchCard = (player: AnyRecord, match: AnyRecord, index: number, variant = 'quality') => {
       const rank = match.opponentRanking?.rank
@@ -3967,8 +4479,10 @@ function App() {
                         : ''}
                     </p>
 
+                    {renderTennisFormMatrix(player)}
+
                     <div className="tennis-match-log">
-                      {(player.recentMatches || []).slice(0, 4).map((match: AnyRecord, index: number) => renderRecentMatchCard(player, match, index))}
+                      {(player.recentMatches || []).slice(0, 5).map((match: AnyRecord, index: number) => renderRecentMatchCard(player, match, index))}
                     </div>
 
                     <small className="tennis-data-note">
@@ -4129,11 +4643,7 @@ function App() {
             {clayMatchupData.players?.length ? (
               <>
                 <div className="react-card-grid">
-                  <article className="react-mini-panel">
-                    <span className="eyebrow">H2H</span>
-                    <strong>{clayMatchupData.h2hRecord || clayMatchupData.h2hText || 'No H2H data'}</strong>
-                    <small>{clayMatchupData.h2hText || clayMatchupData.prediction || 'No page summary loaded'}</small>
-                  </article>
+                  {renderH2hPanel()}
                   <article className="react-mini-panel">
                     <span className="eyebrow">Source-site call</span>
                     <strong>{clayMatchupData.prediction || 'No page prediction'}</strong>
@@ -4340,11 +4850,15 @@ function App() {
               <div>
                 <p className="eyebrow">Games</p>
                 <h2>
-                  {slateMeta.date} · {activeFilter === 'All' ? 'full board' : activeFilter}
+                  {slateMeta.date} · {activeFilter === 'All' ? 'full board' : activeFilter === 'Value' ? 'value board' : activeFilter}
                 </h2>
               </div>
               <div className="games-rail-meta mono">
-                <span>{visibleGames.length} visible</span>
+                <span>
+                  {activeFilter === 'Value'
+                    ? `${tennisValueSummary?.validatedRows?.length || 0} validated`
+                    : `${visibleGames.length} visible`}
+                </span>
                 {games.some((game: AnyRecord) => game.league === 'MLB') ? (
                   <span>
                     {lineupStatusCounts.posted}/{lineupStatusCounts.total} posted
@@ -4366,51 +4880,6 @@ function App() {
               ))}
             </div>
 
-            {tennisValueSummary ? (
-              <section className="tennis-value-slate-card">
-                <div className="tennis-value-slate-head">
-                  <div>
-                    <p className="eyebrow">Tennis value board</p>
-                    <h3>{activeDayIsoDate} EV pass</h3>
-                  </div>
-                  <span>{tennisValueSummary.pricedRows}/{tennisValueSummary.totalRows} priced</span>
-                </div>
-                <p>{tennisValueSummary.note}</p>
-                <div className="tennis-value-pill-row">
-                  <span>Bet-grade {tennisValueSummary.countByGrade['Bet-grade value'] || 0}</span>
-                  <span>Thin {tennisValueSummary.countByGrade['Thin value'] || 0}</span>
-                  <span>Negative EV {tennisValueSummary.countByGrade['Negative EV'] || 0}</span>
-                  <span>Need price {tennisValueSummary.noPriceRows}</span>
-                </div>
-                {tennisValueSummary.betGradeRows.length ? (
-                  <div className="tennis-value-list">
-                    {tennisValueSummary.betGradeRows.slice(0, 5).map((row: AnyRecord) => (
-                      <button
-                        key={`${row.game.id}-${row.label}-${row.value}`}
-                        type="button"
-                        className="tennis-value-row"
-                        onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.game.id }))}
-                      >
-                        <span>
-                          <strong>{row.selection || row.lean}</strong>
-                          <small>{row.marketType} · {row.gameTitle}</small>
-                        </span>
-                        <span>
-                          <strong>{formatSignedNumber(row.evPer100, 1)}</strong>
-                          <small>EV/100</small>
-                        </span>
-                      </button>
-                    ))}
-                  </div>
-                ) : null}
-                {tennisValueSummary.negativeMlRows.length ? (
-                  <small className="tennis-value-warning">
-                    ML traps: {tennisValueSummary.negativeMlRows.slice(0, 3).map((row: AnyRecord) => `${row.selection} ${formatSignedNumber(row.evPer100, 1)}`).join(' · ')}
-                  </small>
-                ) : null}
-              </section>
-            ) : null}
-
             <div className="games-rail-list no-scrollbar">
               {isActiveDayLoading ? (
                 <div className="placeholder-panel compact">
@@ -4418,6 +4887,63 @@ function App() {
                   <h3>Pulling board data for {slateMeta.date}</h3>
                   <p>The day module is loading on demand so the initial app bundle can stay lighter.</p>
                 </div>
+              ) : activeFilter === 'Value' ? (
+                tennisValueSummary ? (
+                  <section className="tennis-value-slate-card">
+                    <div className="tennis-value-slate-head">
+                      <div>
+                        <p className="eyebrow">Tennis value board</p>
+                        <h3>{activeDayIsoDate} EV pass</h3>
+                      </div>
+                      <span>{tennisValueSummary.pricedRows}/{tennisValueSummary.totalRows} priced</span>
+                    </div>
+                    <p>{tennisValueSummary.note}</p>
+                    <div className="tennis-value-pill-row">
+                      <span>Validated {tennisValueSummary.validatedRows?.length || 0}</span>
+                      <span>Watch EV {tennisValueSummary.rawPositiveRows?.length || 0}</span>
+                      <span>Thin {tennisValueSummary.countByGrade['Thin value'] || 0}</span>
+                      <span>Negative EV {tennisValueSummary.countByGrade['Negative EV'] || 0}</span>
+                      <span>Need price {tennisValueSummary.noPriceRows}</span>
+                    </div>
+                    {tennisValueSummary.validatedRows?.length ? (
+                      <div className="tennis-value-list">
+                        {tennisValueSummary.validatedRows.slice(0, 5).map((row: AnyRecord) => (
+                          <button
+                            key={`${row.game.id}-${row.label}-${row.value}`}
+                            type="button"
+                            className="tennis-value-row"
+                            onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.game.id }))}
+                          >
+                            <span>
+                              <strong>{formatTennisValueSelection(row)}</strong>
+                              <small>{row.validity?.label || row.marketType} · {row.gameTitle}</small>
+                            </span>
+                            <span>
+                              <strong>{formatSignedNumber(row.evPer100, 1)}</strong>
+                              <small>EV/100</small>
+                            </span>
+                          </button>
+                        ))}
+                      </div>
+                    ) : (
+                      <p className="tennis-value-warning">
+                        No blind-bet values pass validation. Raw EV rows are still useful for watchlist/live-entry work, but
+                        spreads and totals are downgraded until the next settled backtest supports them.
+                      </p>
+                    )}
+                    {tennisValueSummary.negativeMlRows.length ? (
+                      <small className="tennis-value-warning">
+                        ML traps: {tennisValueSummary.negativeMlRows.slice(0, 3).map((row: AnyRecord) => `${row.selection} ${formatSignedNumber(row.evPer100, 1)}`).join(' · ')}
+                      </small>
+                    ) : null}
+                  </section>
+                ) : (
+                  <div className="placeholder-panel compact">
+                    <p className="eyebrow">Value board</p>
+                    <h3>No value board for this slate</h3>
+                    <p>Once priced tennis rows are present, this tab will show the top EV board.</p>
+                  </div>
+                )
               ) : visibleGames.length === 0 ? (
                 <div className="placeholder-panel compact">
                   <p className="eyebrow">No markets</p>
