@@ -27,6 +27,7 @@
     "data:derive:state-snapshots": "python3 pipeline/mlb_warehouse.py derive-state-snapshots",
     "data:derive:mistake-shapes": "python3 pipeline/mlb_warehouse.py derive-mistake-shapes",
     "data:derive:first-inning-profiles": "python3 pipeline/mlb_warehouse.py derive-first-inning-profiles",
+    "data:ingest:pitcher-war": "python3 pipeline/mlb_warehouse.py ingest-pitcher-war",
     "data:ingest:statcast-hr": "python3 pipeline/mlb_warehouse.py ingest-statcast-hr",
     "data:refresh:mlb-live": "node pipeline/refresh-mlb-live-board.mjs",
     "data:close:mlb-day": "node pipeline/close-mlb-day.mjs",

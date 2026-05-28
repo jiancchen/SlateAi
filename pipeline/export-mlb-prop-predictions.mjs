@@ -1,9 +1,10 @@
+import { execFileSync } from 'node:child_process'
 import { mkdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 import { loadMlbDayGames } from './lib/load-mlb-day-games.mjs'
-import { rankMlbPlayerProps, rankMlbPlayerPropCandidatesLegacy } from '../web/src/lib/sports-model.js'
+import { formatAmericanOdds, rankMlbPlayerProps, rankMlbPlayerPropCandidatesLegacy } from '../web/src/lib/sports-model.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -48,7 +49,41 @@ const propThresholdByType = {
   totalBases: 1.5,
   hits: 1.5,
   walks: 0.5,
-  singles: 0.5
+  singles: 0.5,
+  pitcherStrikeouts: null
+}
+
+const warehouseDbPath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db')
+
+const parseBaseballInnings = (value = 0) => {
+  const stringValue = `${value}`.trim()
+  const match = stringValue.match(/^(\d+)(?:\.(\d))?$/)
+
+  if (!match) return Number(stringValue) || 0
+
+  const wholeInnings = Number(match[1])
+  const partialOuts = Number(match[2] || 0)
+  return wholeInnings + (partialOuts === 1 ? 1 / 3 : partialOuts === 2 ? 2 / 3 : 0)
+}
+
+const normalizeNameToken = (value = '') =>
+  `${value}`
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
+
+const clamp = (value, min, max) => Math.min(max, Math.max(min, value))
+
+const roundToTenths = (value) => Math.round(Number(value) * 10) / 10
+
+const runSqliteJson = (sql) => {
+  const output = execFileSync('sqlite3', ['-json', warehouseDbPath, sql], {
+    cwd: rootDir,
+    encoding: 'utf8'
+  })
+  return JSON.parse(output || '[]')
 }
 
 const parseArgs = () => {
@@ -150,12 +185,222 @@ const summarizeByType = (picks) =>
     return summary
   }, {})
 
+const sortAndRankProps = (picks) =>
+  [...picks]
+    .sort((left, right) => {
+      if (Number(right.confidence || 0) !== Number(left.confidence || 0)) {
+        return Number(right.confidence || 0) - Number(left.confidence || 0)
+      }
+      if (Number(right.expectedValue || 0) !== Number(left.expectedValue || 0)) {
+        return Number(right.expectedValue || 0) - Number(left.expectedValue || 0)
+      }
+      return Number(right.probability || 0) - Number(left.probability || 0)
+    })
+    .map((pick, index) => ({ ...pick, rank: index + 1 }))
+
+const loadPitcherStrikeoutOddsByGame = (date) => {
+  const rows = runSqliteJson(`
+    SELECT
+      game_pk,
+      player_name,
+      point,
+      MAX(CASE WHEN outcome_name='Over' THEN price END) AS over_price,
+      MAX(CASE WHEN outcome_name='Under' THEN price END) AS under_price
+    FROM mlb_player_prop_odds_snapshots
+    WHERE market_date='${date}'
+      AND market_key='pitcher_strikeouts'
+    GROUP BY game_pk, player_name, point
+    ORDER BY game_pk, player_name
+  `)
+
+  return rows.reduce((acc, row) => {
+    const gamePk = Number(row.game_pk)
+    if (!Number.isFinite(gamePk)) return acc
+    if (!acc[gamePk]) acc[gamePk] = {}
+    acc[gamePk][normalizeNameToken(row.player_name)] = {
+      playerName: row.player_name,
+      line: Number.isFinite(Number(row.point)) ? Number(row.point) : null,
+      overPrice: Number.isFinite(Number(row.over_price)) ? Number(row.over_price) : null,
+      underPrice: Number.isFinite(Number(row.under_price)) ? Number(row.under_price) : null
+    }
+    return acc
+  }, {})
+}
+
+const average = (values = [], fallback = 0) => {
+  const valid = values.map((value) => Number(value)).filter(Number.isFinite)
+  return valid.length ? valid.reduce((sum, value) => sum + value, 0) / valid.length : fallback
+}
+
+const buildPitcherStrikeoutPick = ({ game, starter, teamName, opponentName, opponentLineup, lineupStatus, projectedRunsAgainst, market }) => {
+  if (!starter?.fullName || !market || !Number.isFinite(Number(market.line))) return null
+
+  const inningsPitched = parseBaseballInnings(starter.inningsPitched ?? 0)
+  const strikeouts = Number(starter.strikeOuts)
+  const gamesStarted = Number(starter.gamesStarted || 0)
+  const seasonKPer9 = inningsPitched > 0 && Number.isFinite(strikeouts) ? (strikeouts / inningsPitched) * 9 : null
+  const recentForm = starter.recentForm || null
+  const recentKPerStart = Number(recentForm?.strikeoutsPerStart)
+  const recentIpPerStart = Number(recentForm?.inningsPerStart)
+  const recentKPer9 =
+    Number.isFinite(recentKPerStart) && Number.isFinite(recentIpPerStart) && recentIpPerStart > 0
+      ? (recentKPerStart / recentIpPerStart) * 9
+      : null
+  const expectedInnings = Number(starter.usageContext?.expectedInnings)
+  const seasonIpPerStart = inningsPitched > 0 && gamesStarted > 0 ? inningsPitched / gamesStarted : null
+  const workloadIp =
+    Number.isFinite(expectedInnings) && expectedInnings > 0
+      ? expectedInnings
+      : Number.isFinite(recentIpPerStart) && recentIpPerStart > 0
+        ? recentIpPerStart
+        : Number.isFinite(seasonIpPerStart) && seasonIpPerStart > 0
+          ? seasonIpPerStart
+          : 4.9
+  const usageStatus = String(starter.usageContext?.status || '')
+  const adjustedWorkloadIp =
+    usageStatus === 'debut-window'
+      ? Math.min(workloadIp, 4.3)
+      : usageStatus === 'tiny-sample'
+        ? Math.min(workloadIp, 4.7)
+        : workloadIp
+  const baseKPer9 =
+    Number.isFinite(recentKPer9) && Number.isFinite(seasonKPer9)
+      ? recentKPer9 * 0.58 + seasonKPer9 * 0.42
+      : Number.isFinite(recentKPer9)
+        ? recentKPer9
+        : Number.isFinite(seasonKPer9)
+          ? seasonKPer9
+          : null
+  if (!Number.isFinite(baseKPer9)) return null
+
+  const lineup = Array.isArray(opponentLineup) ? opponentLineup : []
+  const contactAvg = average(lineup.map((hitter) => hitter?.metrics?.contactScore), 50)
+  const patienceAvg = average(lineup.map((hitter) => hitter?.metrics?.patienceScore), 50)
+  const whiffResistance = clamp(1 + (55 - contactAvg) / 105 + (50 - patienceAvg) / 210, 0.76, 1.24)
+  const runPressure = clamp(1 - Math.max(Number(projectedRunsAgainst || 0) - 4.4, 0) * 0.045, 0.82, 1.05)
+  const whip = Number(starter.whip)
+  const trafficPenalty = Number.isFinite(whip) ? clamp(1 - Math.max(whip - 1.28, 0) * 0.12, 0.84, 1.04) : 1
+  const expectedStrikeouts = adjustedWorkloadIp * (baseKPer9 / 9) * whiffResistance * runPressure * trafficPenalty
+  const edge = expectedStrikeouts - Number(market.line)
+  if (Math.abs(edge) < 0.35) return null
+
+  const lean = edge > 0 ? 'Over' : 'Under'
+  const selectedPrice = lean === 'Over' ? market.overPrice : market.underPrice
+  const baseConfidence =
+    56 +
+    Math.abs(edge) * 17 +
+    (lineupStatus === 'posted' ? 4 : lineupStatus === 'partial' ? -2 : -8) +
+    (recentForm?.startsSample ? 4 : 0) +
+    (usageStatus === 'tiny-sample' ? -6 : usageStatus === 'debut-window' ? -10 : usageStatus === 'season-only' ? -2 : 0)
+  const confidence = Math.round(clamp(baseConfidence, 42, 81))
+  if (confidence < 60) return null
+
+  const probability = roundToTenths(clamp(50 + edge * 13.5, 36, 78))
+  const priceLabel = Number.isFinite(Number(selectedPrice)) ? formatAmericanOdds(Number(selectedPrice)) : 'n/a'
+  const overLabel = Number.isFinite(Number(market.overPrice)) ? formatAmericanOdds(Number(market.overPrice)) : 'n/a'
+  const underLabel = Number.isFinite(Number(market.underPrice)) ? formatAmericanOdds(Number(market.underPrice)) : 'n/a'
+  const reasons = []
+  reasons.push(`${adjustedWorkloadIp.toFixed(1)} IP lane`)
+  reasons.push(`${baseKPer9.toFixed(1)} K/9 base`)
+  reasons.push(
+    whiffResistance >= 1
+      ? `${opponentName} are whiff-friendly`
+      : `${opponentName} suppress Ks`
+  )
+
+  const scriptTags = [
+    lineupStatus === 'posted' ? 'posted-lineup' : lineupStatus === 'partial' ? 'partial-lineup' : 'pending-lineup',
+    'starter-k-lane',
+    whiffResistance >= 1.03 ? 'opponent-whiff-lane' : 'contact-resistance',
+    usageStatus === 'tiny-sample' || usageStatus === 'debut-window' ? 'short-leash-risk' : 'starter-volume-live'
+  ]
+
+  return {
+    rank: 0,
+    id: `${game.id}:${starter.id || normalizeNameToken(starter.fullName)}:pitcherStrikeouts`,
+    gameId: game.id,
+    gameTitle: game.title,
+    start: game.start,
+    stage: game.stage,
+    awayTeam: game.matchup?.[0]?.name || '',
+    homeTeam: game.matchup?.[1]?.name || '',
+    awayTeamFull: fullNameForTeam(game.matchup?.[0]?.name || ''),
+    homeTeamFull: fullNameForTeam(game.matchup?.[1]?.name || ''),
+    playerId: starter.id ?? null,
+    playerName: starter.fullName,
+    teamName,
+    teamNameFull: fullNameForTeam(teamName),
+    opponentName,
+    opponentNameFull: fullNameForTeam(opponentName),
+    slot: null,
+    propType: 'pitcherStrikeouts',
+    propLabel: 'K',
+    marketLabel: `${lean} ${market.line} strikeouts`,
+    lineThreshold: Number(market.line),
+    confidence,
+    probability,
+    expectedValue: roundToTenths(expectedStrikeouts),
+    statValueLabel: `${roundToTenths(expectedStrikeouts)} exp K · O ${overLabel} / U ${underLabel}`,
+    recommendationTier: confidence >= 76 ? 'Core' : confidence >= 68 ? 'Strong' : 'Lean',
+    reason: reasons.join(' | '),
+    scriptTags,
+    matchupNote: `FanDuel K line ${market.line} · ${lean} price ${priceLabel}`,
+    teamScriptLabel: starter.usageContext?.workloadLabel || '',
+    lineupStatus,
+    playerSummary: `${starter.era} ERA | ${starter.inningsPitched} IP | ${starter.strikeOuts} SO | ${starter.usageContext?.note || starter.usageContext?.label || ''}`
+  }
+}
+
+const buildPitcherStrikeoutProps = (games, date) => {
+  const oddsByGame = loadPitcherStrikeoutOddsByGame(date)
+  const picks = []
+
+  games.forEach((game) => {
+    const gamePk = Number(game.gamePk)
+    if (!Number.isFinite(gamePk)) return
+    const gameOdds = oddsByGame[gamePk] || {}
+    const awayStarter = game.starterContext?.away
+    const homeStarter = game.starterContext?.home
+    const awayMarket = gameOdds[normalizeNameToken(awayStarter?.fullName)]
+    const homeMarket = gameOdds[normalizeNameToken(homeStarter?.fullName)]
+    const projection = game.analysis?.mlbProjection || {}
+
+    const awayPick = buildPitcherStrikeoutPick({
+      game,
+      starter: awayStarter,
+      teamName: game.matchup?.[0]?.name || '',
+      opponentName: game.matchup?.[1]?.name || '',
+      opponentLineup: game.lineupBoard?.home?.lineup || [],
+      lineupStatus: game.lineupBoard?.status?.home || 'pending',
+      projectedRunsAgainst: projection.homeProjectedRuns,
+      market: awayMarket
+    })
+    if (awayPick) picks.push(awayPick)
+
+    const homePick = buildPitcherStrikeoutPick({
+      game,
+      starter: homeStarter,
+      teamName: game.matchup?.[1]?.name || '',
+      opponentName: game.matchup?.[0]?.name || '',
+      opponentLineup: game.lineupBoard?.away?.lineup || [],
+      lineupStatus: game.lineupBoard?.status?.away || 'pending',
+      projectedRunsAgainst: projection.awayProjectedRuns,
+      market: homeMarket
+    })
+    if (homePick) picks.push(homePick)
+  })
+
+  return picks
+}
+
 const main = async () => {
   const { date, out, legacyOut } = parseArgs()
   const games = await loadDayGames(date)
   const rankedProps = rankMlbPlayerProps(games)
     .filter((target) => target.propType !== 'homeRun')
     .map(serializePropPick)
+  const pitcherStrikeoutProps = buildPitcherStrikeoutProps(games, date)
+  const combinedProps = sortAndRankProps([...rankedProps, ...pitcherStrikeoutProps])
   const legacyProps = rankMlbPlayerPropCandidatesLegacy(games)
     .filter((target) => target.propType !== 'homeRun')
     .map(serializePropPick)
@@ -164,13 +409,13 @@ const main = async () => {
     modelName: 'mlb-player-props-v2',
     date,
     generatedAt: new Date().toISOString(),
-    sources: ['day-file-live-board', 'web/src/lib/sports-model.js'],
+    sources: ['day-file-live-board', 'web/src/lib/sports-model.js', 'FanDuel Research strikeout props'],
     summary: {
       totalGames: games.length,
-      totalPicks: rankedProps.length,
-      byType: summarizeByType(rankedProps)
+      totalPicks: combinedProps.length,
+      byType: summarizeByType(combinedProps)
     },
-    picks: rankedProps
+    picks: combinedProps
   }
 
   const legacyPayload = {
@@ -190,7 +435,7 @@ const main = async () => {
   await mkdir(path.dirname(legacyOut), { recursive: true })
   await writeFile(out, JSON.stringify(payload, null, 2), 'utf8')
   await writeFile(legacyOut, JSON.stringify(legacyPayload, null, 2), 'utf8')
-  console.log(`Saved ${rankedProps.length} tracked player props to ${out}`)
+  console.log(`Saved ${combinedProps.length} tracked player props to ${out}`)
   console.log(`Saved ${legacyProps.length} legacy player props to ${legacyOut}`)
 }
 

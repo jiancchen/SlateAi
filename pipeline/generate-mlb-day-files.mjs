@@ -350,6 +350,14 @@ const starterUsageOverridesByPitcherId = {
     note: 'Opened 2026 on the injured list with right shoulder inflammation and only recently returned, so the first few outings should still be treated as short-leash and high-variance.',
     expectedInnings: 4.2,
     workloadLabel: 'Short leash'
+  },
+  689818: {
+    when: ({ seasonStarts, startsLoaded }) => seasonStarts === 0 && startsLoaded === 0,
+    status: 'milb-callup',
+    label: 'MiLB call-up prior',
+    note: 'Freshly recalled from Charlotte on May 26. 2026 MiLB line before the call-up: 6 GS, 16.1 IP, 0.55 ERA, 26 SO, 1.41 WHIP, so this is a live-arm promotion with real strikeout shape but still a short-leash MLB debut lane.',
+    expectedInnings: 3.8,
+    workloadLabel: 'Short leash'
   }
 }
 
@@ -706,7 +714,7 @@ const buildStartingPitcherFirstInningByGamePk = ({ gamePks = [] }) => {
 
 const buildBullpenChainByTeam = ({ date, games }) => {
   const rows = runSqliteJson(
-    `select team_name, pitcher_id, pitcher_name, likely_role, first_reliever_likelihood, availability_score, bridge_score, worked_yesterday_flag, back_to_back_flag, last_appearance_date, avg_outs_per_appearance from mlb_bullpen_usage where as_of_date='${date}' order by team_name, first_reliever_likelihood desc;`
+    `select team_name, pitcher_id, pitcher_name, likely_role, first_reliever_likelihood, availability_score, bridge_score, worked_yesterday_flag, back_to_back_flag, last_appearance_date, avg_outs_per_appearance, raw_json from mlb_bullpen_usage where as_of_date='${date}' order by team_name, first_reliever_likelihood desc;`
   )
 
   const starterNames = new Set(
@@ -739,6 +747,7 @@ const buildBullpenChainByTeam = ({ date, games }) => {
         {
           opponent: opponentByTeam[teamName] || '',
           topRelievers: chosen.map((reliever) => ({
+            ...(safeJsonParse(reliever.raw_json) || {}),
             pitcherId: Number(reliever.pitcher_id || 0) || null,
             name: reliever.pitcher_name,
             role: reliever.likely_role || 'middle',
@@ -750,6 +759,69 @@ const buildBullpenChainByTeam = ({ date, games }) => {
             backToBack: Boolean(reliever.back_to_back_flag),
             lastAppearanceDate: reliever.last_appearance_date || ''
           }))
+        }
+      ]
+    })
+  )
+}
+
+const buildRecentBullpenTrendByTeam = ({ date, games }) => {
+  const teams = [...new Set(games.flatMap((game) => [game.away, game.home]).filter(Boolean))]
+  if (!teams.length) return {}
+
+  const quotedTeams = teams
+    .map((team) => deskToOfficialTeam[team] || team)
+    .map((team) => `'${team.replace(/'/g, "''")}'`)
+    .join(',')
+
+  const rows = runSqliteJson(
+    `select team_name, game_pk, game_date, outs_recorded, runs_allowed, earned_runs, hits_allowed, walks_allowed, strikeouts
+     from mlb_pitcher_appearances
+     where pitcher_role='reliever'
+       and game_date < '${date}'
+       and team_name in (${quotedTeams})
+     order by team_name, game_date desc, game_pk desc, entry_order asc;`
+  )
+
+  const grouped = rows.reduce((map, row) => {
+    const deskTeam = officialToDeskTeam[row.team_name] || row.team_name
+    if (!map.has(deskTeam)) map.set(deskTeam, [])
+    map.get(deskTeam).push(row)
+    return map
+  }, new Map())
+
+  return Object.fromEntries(
+    [...grouped.entries()].map(([teamName, appearances]) => {
+      const recentGameIds = []
+      const seen = new Set()
+      for (const row of appearances) {
+        const gamePk = Number(row.game_pk || 0) || 0
+        if (!gamePk || seen.has(gamePk)) continue
+        seen.add(gamePk)
+        recentGameIds.push(gamePk)
+        if (recentGameIds.length >= 5) break
+      }
+      const recentGameIdSet = new Set(recentGameIds)
+      const recentRows = appearances.filter((row) => recentGameIdSet.has(Number(row.game_pk || 0) || 0))
+      const outsRecorded = recentRows.reduce((sum, row) => sum + (Number(row.outs_recorded || 0) || 0), 0)
+      const inningsPitched = outsRecorded / 3
+      const earnedRuns = recentRows.reduce((sum, row) => sum + (Number(row.earned_runs || 0) || 0), 0)
+      const runsAllowed = recentRows.reduce((sum, row) => sum + (Number(row.runs_allowed || 0) || 0), 0)
+      const hitsAllowed = recentRows.reduce((sum, row) => sum + (Number(row.hits_allowed || 0) || 0), 0)
+      const walksAllowed = recentRows.reduce((sum, row) => sum + (Number(row.walks_allowed || 0) || 0), 0)
+      const strikeouts = recentRows.reduce((sum, row) => sum + (Number(row.strikeouts || 0) || 0), 0)
+      const gamesSample = recentGameIds.length
+      const era = inningsPitched > 0 ? (earnedRuns * 9) / inningsPitched : null
+      const whip = inningsPitched > 0 ? (hitsAllowed + walksAllowed) / inningsPitched : null
+      return [
+        teamName,
+        {
+          gamesSample,
+          inningsPitched: roundMaybe(inningsPitched),
+          era: roundMaybe(era),
+          whip: roundMaybe(whip),
+          runsAllowedPerGame: gamesSample > 0 ? roundMaybe(runsAllowed / gamesSample) : null,
+          strikeoutsPerGame: gamesSample > 0 ? roundMaybe(strikeouts / gamesSample) : null
         }
       ]
     })
@@ -1353,6 +1425,110 @@ const buildSeasonFirstInningByPitcherId = ({ date, games }) => {
       ]
     })
   )
+}
+
+const buildPitcherWarByPitcherId = ({ date, games }) => {
+  const pitcherIds = [
+    ...new Set(
+      games
+        .flatMap((game) => [Number(game.awayPitcher?.id), Number(game.homePitcher?.id)])
+        .filter((value) => Number.isFinite(value) && value > 0)
+    )
+  ]
+
+  if (!pitcherIds.length) return {}
+
+  const season = Number(date.slice(0, 4))
+  const previousSeason = season - 1
+  const rows = runSqliteJson(
+    `select season, pitcher_id, pitcher_name, bref_player_id, team_ids, games, games_started, war
+     from mlb_pitcher_war_by_season
+     where pitcher_id in (${pitcherIds.join(',')})
+       and season in (${previousSeason}, ${season})
+     order by pitcher_id, season;`
+  )
+
+  return rows.reduce((map, row) => {
+    const pitcherId = Number(row.pitcher_id || 0) || 0
+    const rowSeason = Number(row.season || 0) || 0
+    if (!pitcherId || !rowSeason) return map
+    if (!map[pitcherId]) {
+      map[pitcherId] = {
+        pitcherName: row.pitcher_name || null,
+        currentSeason: season,
+        previousSeason,
+        currentSeasonWar: null,
+        previousSeasonWar: null,
+        currentSeasonGames: null,
+        previousSeasonGames: null,
+        currentSeasonGamesStarted: null,
+        previousSeasonGamesStarted: null,
+        warDelta: null
+      }
+    }
+    const entry = map[pitcherId]
+    if (rowSeason === season) {
+      entry.currentSeasonWar = roundMaybe(row.war)
+      entry.currentSeasonGames = Number(row.games || 0) || 0
+      entry.currentSeasonGamesStarted = Number(row.games_started || 0) || 0
+    } else if (rowSeason === previousSeason) {
+      entry.previousSeasonWar = roundMaybe(row.war)
+      entry.previousSeasonGames = Number(row.games || 0) || 0
+      entry.previousSeasonGamesStarted = Number(row.games_started || 0) || 0
+    }
+    if (Number.isFinite(Number(entry.currentSeasonWar)) && Number.isFinite(Number(entry.previousSeasonWar))) {
+      entry.warDelta = roundMaybe(Number(entry.currentSeasonWar) - Number(entry.previousSeasonWar))
+    }
+    return map
+  }, {})
+}
+
+const buildPitcherStrikeoutMarketsByGamePk = ({ date, games }) => {
+  const gamePks = [...new Set(games.map((game) => Number(game.gamePk)).filter(Number.isFinite))]
+  if (!gamePks.length) return {}
+
+  const rows = runSqliteJson(`
+    SELECT
+      game_pk,
+      player_name,
+      point,
+      MAX(CASE WHEN outcome_name='Over' THEN price END) AS over_price,
+      MAX(CASE WHEN outcome_name='Under' THEN price END) AS under_price
+    FROM mlb_player_prop_odds_snapshots
+    WHERE market_date='${date}'
+      AND market_key='pitcher_strikeouts'
+      AND game_pk IN (${gamePks.join(',')})
+    GROUP BY game_pk, player_name, point
+    ORDER BY game_pk, player_name
+  `)
+
+  const byGamePk = {}
+  rows.forEach((row) => {
+    const gamePk = Number(row.game_pk)
+    if (!Number.isFinite(gamePk)) return
+    if (!byGamePk[gamePk]) byGamePk[gamePk] = {}
+    byGamePk[gamePk][normalizeNameToken(row.player_name)] = {
+      playerName: row.player_name,
+      line: Number.isFinite(Number(row.point)) ? Number(row.point) : null,
+      overPrice: Number.isFinite(Number(row.over_price)) ? Number(row.over_price) : null,
+      underPrice: Number.isFinite(Number(row.under_price)) ? Number(row.under_price) : null
+    }
+  })
+
+  const resolved = {}
+  games.forEach((game) => {
+    const gamePk = Number(game.gamePk)
+    if (!Number.isFinite(gamePk)) return
+    const marketRows = byGamePk[gamePk] ?? {}
+    const awayKey = normalizeNameToken(game.awayPitcher?.fullName)
+    const homeKey = normalizeNameToken(game.homePitcher?.fullName)
+    resolved[gamePk] = {
+      away: awayKey ? marketRows[awayKey] ?? null : null,
+      home: homeKey ? marketRows[homeKey] ?? null : null
+    }
+  })
+
+  return resolved
 }
 
 const buildRecentGamesByTeam = ({ date, games, limit = 8 }) => {
@@ -2450,6 +2626,12 @@ const main = async () => {
   rawGames.sort((left, right) => left.startMinutes - right.startMinutes || left.id.localeCompare(right.id))
 
   const bullpenChainByTeam = buildBullpenChainByTeam({ date: options.date, games: rawGames })
+  const recentBullpenTrendByTeam = buildRecentBullpenTrendByTeam({ date: options.date, games: rawGames })
+  Object.entries(bullpenChainByTeam).forEach(([teamName, profile]) => {
+    if (recentBullpenTrendByTeam[teamName]) {
+      profile.recentBullpenSummary = recentBullpenTrendByTeam[teamName]
+    }
+  })
   const recentStarterFormByPitcherId = buildRecentStarterFormByPitcherId({ date: options.date, games: rawGames })
   const starterUsageContextByPitcherId = buildStarterUsageContextByPitcherId({ date: options.date, games: rawGames })
   const starterLeashByPitcherId = buildStarterLeashByPitcherId({ date: options.date, games: rawGames })
@@ -2462,6 +2644,8 @@ const main = async () => {
   const firstInningTeamProfilesByTeam = buildFirstInningTeamProfilesByTeam({ date: options.date, games: rawGames })
   const firstInningPitcherProfilesByPitcherId = buildFirstInningPitcherProfilesByPitcherId({ date: options.date, games: rawGames })
   const seasonFirstInningByPitcherId = buildSeasonFirstInningByPitcherId({ date: options.date, games: rawGames })
+  const pitcherWarByPitcherId = buildPitcherWarByPitcherId({ date: options.date, games: rawGames })
+  const pitcherStrikeoutMarketsByGamePk = buildPitcherStrikeoutMarketsByGamePk({ date: options.date, games: rawGames })
   const seriesEarlyPhaseByTeam = buildSeriesEarlyPhaseByTeam({ date: options.date, games: rawGames })
   const recentGamesByTeam = buildRecentGamesByTeam({ date: options.date, games: rawGames })
   const recentInningHistoryByTeam = buildRecentInningHistoryByTeam({ date: options.date, games: rawGames })
@@ -2474,6 +2658,7 @@ const main = async () => {
     ...game,
     awayPitcher: {
       ...game.awayPitcher,
+      strikeoutMarket: Number.isFinite(game.gamePk) ? pitcherStrikeoutMarketsByGamePk[game.gamePk]?.away ?? null : null,
       recentForm: Number.isFinite(game.awayPitcher?.id)
         ? recentStarterFormByPitcherId[game.awayPitcher.id] ?? null
         : null,
@@ -2492,6 +2677,7 @@ const main = async () => {
     },
     homePitcher: {
       ...game.homePitcher,
+      strikeoutMarket: Number.isFinite(game.gamePk) ? pitcherStrikeoutMarketsByGamePk[game.gamePk]?.home ?? null : null,
       recentForm: Number.isFinite(game.homePitcher?.id)
         ? recentStarterFormByPitcherId[game.homePitcher.id] ?? null
         : null,
@@ -2547,6 +2733,14 @@ const main = async () => {
       firstInningPitcherSeason: {
         away: Number.isFinite(game.awayPitcher?.id) ? seasonFirstInningByPitcherId[game.awayPitcher.id] ?? null : null,
         home: Number.isFinite(game.homePitcher?.id) ? seasonFirstInningByPitcherId[game.homePitcher.id] ?? null : null
+      },
+      pitcherWar: {
+        away: Number.isFinite(game.awayPitcher?.id) ? pitcherWarByPitcherId[game.awayPitcher.id] ?? null : null,
+        home: Number.isFinite(game.homePitcher?.id) ? pitcherWarByPitcherId[game.homePitcher.id] ?? null : null
+      },
+      pitcherStrikeoutMarket: {
+        away: Number.isFinite(game.gamePk) ? pitcherStrikeoutMarketsByGamePk[game.gamePk]?.away ?? null : null,
+        home: Number.isFinite(game.gamePk) ? pitcherStrikeoutMarketsByGamePk[game.gamePk]?.home ?? null : null
       },
       seriesEarlyPhase: {
         away: seriesEarlyPhaseByTeam[game.away] ?? null,

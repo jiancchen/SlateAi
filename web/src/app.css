@@ -3791,6 +3791,10 @@ h3 {
   gap: 3px;
 }
 
+.team-snapshot-chip-row {
+  margin-top: 4px;
+}
+
 .recent-games-strip {
   display: flex;
   flex-wrap: wrap;
@@ -4521,10 +4525,8 @@ h3 {
 }
 
 .lineup-matchup-head {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 10px;
+  display: grid;
+  gap: 4px;
 }
 
 .lineup-matchup-head strong {

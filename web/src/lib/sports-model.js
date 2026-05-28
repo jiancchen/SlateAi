@@ -896,7 +896,7 @@ const buildStarterRecentFormScore = (starter = {}) => {
   )
 }
 
-const buildStarterProfile = (starterContext = null, detail = '') => {
+const buildStarterProfile = (starterContext = null, detail = '', warProfile = null) => {
   const parsed = parsePitcherDetail(detail)
 
   if (!starterContext && !parsed) return null
@@ -1006,7 +1006,20 @@ const buildStarterProfile = (starterContext = null, detail = '') => {
     hitsPerNine,
     hrPerNine,
     recentForm,
-    recentFormWeight
+    recentFormWeight,
+    currentSeasonWar: Number.isFinite(Number(warProfile?.currentSeasonWar))
+      ? Number(warProfile.currentSeasonWar)
+      : null,
+    previousSeasonWar: Number.isFinite(Number(warProfile?.previousSeasonWar))
+      ? Number(warProfile.previousSeasonWar)
+      : null,
+    warDelta: Number.isFinite(Number(warProfile?.warDelta)) ? Number(warProfile.warDelta) : null,
+    currentSeasonWarGamesStarted: Number.isFinite(Number(warProfile?.currentSeasonGamesStarted))
+      ? Number(warProfile.currentSeasonGamesStarted)
+      : null,
+    previousSeasonWarGamesStarted: Number.isFinite(Number(warProfile?.previousSeasonGamesStarted))
+      ? Number(warProfile.previousSeasonGamesStarted)
+      : null
   }
 
   const profileType = classifyPitcherType(starter)
@@ -1252,6 +1265,7 @@ const buildMlbBullpenSignal = (game, participants) => {
 
 const buildMlbBullpenChainScore = (profile = {}) => {
   const relievers = Array.isArray(profile?.topRelievers) ? profile.topRelievers.slice(0, 2) : []
+  const recentBullpenSummary = profile?.recentBullpenSummary ?? null
 
   if (!relievers.length) return null
 
@@ -1281,8 +1295,20 @@ const buildMlbBullpenChainScore = (profile = {}) => {
 
   const primary = relieverScores[0]
   const secondary = relieverScores[1] ?? clamp(primary - 6, 18, 96)
+  let score = primary * 0.62 + secondary * 0.38
 
-  return clamp(primary * 0.62 + secondary * 0.38, 18, 96)
+  if (Number(recentBullpenSummary?.gamesSample || 0) >= 3) {
+    const recentEra = Number(recentBullpenSummary?.era)
+    const recentWhip = Number(recentBullpenSummary?.whip)
+    const recentRunsAllowedPerGame = Number(recentBullpenSummary?.runsAllowedPerGame)
+    if (Number.isFinite(recentEra)) score += clamp((4.1 - recentEra) * 1.7, -6, 6)
+    if (Number.isFinite(recentWhip)) score += clamp((1.31 - recentWhip) * 10, -4, 4)
+    if (Number.isFinite(recentRunsAllowedPerGame)) {
+      score += clamp((3.9 - recentRunsAllowedPerGame) * 1.2, -4, 4)
+    }
+  }
+
+  return clamp(score, 18, 96)
 }
 
 const buildMlbBullpenChainSignal = (game, participants) => {
@@ -1632,6 +1658,37 @@ const buildProjectedHitProfile = ({
       qualityNotes.push('starter uncertainty')
     }
 
+    if (
+      Number.isFinite(opposingStarter.currentSeasonWar) &&
+      Number(opposingStarter.currentSeasonWarGamesStarted || 0) >= 4
+    ) {
+      starterPhaseProjection -= Math.min(0.55, Math.max(opposingStarter.currentSeasonWar, 0) * 0.18)
+      starterPhaseProjection += Math.min(0.65, Math.max(-opposingStarter.currentSeasonWar, 0) * 0.22)
+      qualityNotes.push('starter WAR baseline')
+    }
+
+    if (
+      Number.isFinite(opposingStarter.previousSeasonWar) &&
+      Number(opposingStarter.previousSeasonWarGamesStarted || 0) >= 10
+    ) {
+      starterPhaseProjection -= Math.min(
+        0.28,
+        Math.max(opposingStarter.previousSeasonWar - 1.5, 0) * 0.08
+      )
+      starterPhaseProjection += Math.min(
+        0.22,
+        Math.max(0.5 - opposingStarter.previousSeasonWar, 0) * 0.08
+      )
+    }
+
+    if (
+      Number.isFinite(opposingStarter.warDelta) &&
+      Number(opposingStarter.currentSeasonWarGamesStarted || 0) >= 4
+    ) {
+      starterPhaseProjection += Math.min(0.3, Math.max(-opposingStarter.warDelta - 1, 0) * 0.08)
+      starterPhaseProjection -= Math.min(0.2, Math.max(opposingStarter.warDelta - 0.8, 0) * 0.06)
+    }
+
     if (opposingStarter.recentForm && Number.isFinite(opposingStarter.recentFormWeight) && opposingStarter.recentFormWeight > 0) {
       const weight = opposingStarter.recentFormWeight
       const recent = opposingStarter.recentForm
@@ -1753,6 +1810,22 @@ const buildProjectedHitProfile = ({
     if (Number.isFinite(recent.runVolatility)) {
       starterCoverageFirst5 -= clamp(recent.runVolatility - 1.1, 0, 2.6) * 0.018 * (0.45 + weight)
     }
+  }
+
+  if (
+    Number.isFinite(opposingStarter?.currentSeasonWar) &&
+    Number(opposingStarter?.currentSeasonWarGamesStarted || 0) >= 4
+  ) {
+    starterCoverageFirst5 += Math.min(0.035, Math.max(opposingStarter.currentSeasonWar, 0) * 0.012)
+    starterCoverageFirst5 -= Math.min(0.045, Math.max(-opposingStarter.currentSeasonWar, 0) * 0.016)
+  }
+
+  if (
+    Number.isFinite(opposingStarter?.warDelta) &&
+    Number(opposingStarter?.currentSeasonWarGamesStarted || 0) >= 4
+  ) {
+    starterCoverageFirst5 += Math.min(0.02, Math.max(opposingStarter.warDelta - 0.5, 0) * 0.01)
+    starterCoverageFirst5 -= Math.min(0.03, Math.max(-opposingStarter.warDelta - 1, 0) * 0.012)
   }
 
   if (lineupProfile) {
@@ -1877,6 +1950,27 @@ const buildStarterHoldConfidence = ({ starter = null, lineupProfile = null }) =>
     if (Number.isFinite(recent.homeRunsAllowedPerStart)) {
       score -= Math.max(recent.homeRunsAllowedPerStart - 0.7, 0) * 7 * (0.45 + weight)
     }
+  }
+
+  if (
+    Number.isFinite(starter.currentSeasonWar) &&
+    Number(starter.currentSeasonWarGamesStarted || 0) >= 4
+  ) {
+    score += clamp(starter.currentSeasonWar, -2.5, 3.5) * 3.6
+  }
+
+  if (
+    Number.isFinite(starter.previousSeasonWar) &&
+    Number(starter.previousSeasonWarGamesStarted || 0) >= 10
+  ) {
+    score += clamp(starter.previousSeasonWar, -1, 4) * 1.4
+  }
+
+  if (
+    Number.isFinite(starter.warDelta) &&
+    Number(starter.currentSeasonWarGamesStarted || 0) >= 4
+  ) {
+    score += clamp(starter.warDelta, -3, 3) * 1.8
   }
 
   if (lineupProfile) {
@@ -2062,6 +2156,7 @@ const buildFirstInningRunProfile = ({
   opposingTeamFirstInningProfile = null,
   opposingPitcherFirstInningProfile = null,
   opposingPitcherFirstInningSeasonProfile = null,
+  opposingPitcherWarProfile = null,
   weatherProfile = null
 }) => {
   if (!projectedRunProfile && !teamFirstInningProfile && !opposingPitcherFirstInningProfile) {
@@ -2127,6 +2222,15 @@ const buildFirstInningRunProfile = ({
   const opposingPitcherSeasonHomeRunGameRate = Number(
     opposingPitcherFirstInningSeasonProfile?.firstInningHomeRunGames
   )
+  const opposingPitcherCurrentWar = Number(opposingPitcherWarProfile?.currentSeasonWar)
+  const opposingPitcherCurrentWarGamesStarted = Number(
+    opposingPitcherWarProfile?.currentSeasonGamesStarted || 0
+  ) || 0
+  const opposingPitcherPreviousWar = Number(opposingPitcherWarProfile?.previousSeasonWar)
+  const opposingPitcherPreviousWarGamesStarted = Number(
+    opposingPitcherWarProfile?.previousSeasonGamesStarted || 0
+  ) || 0
+  const opposingPitcherWarDelta = Number(opposingPitcherWarProfile?.warDelta)
   const projectedBaselineRuns = Number.isFinite(projectedRunProfile?.first5Runs)
     ? projectedRunProfile.first5Runs * 0.19
     : null
@@ -2261,6 +2365,39 @@ const buildFirstInningRunProfile = ({
       )
     }
   }
+  if (Number.isFinite(opposingPitcherCurrentWar) && opposingPitcherCurrentWarGamesStarted >= 4) {
+    if (opposingPitcherCurrentWar >= 1) {
+      suppressingReasons.push(
+        `${opposingTeamName} starter is in the green this year (${roundToTenths(opposingPitcherCurrentWar)} WAR)`
+      )
+    } else if (opposingPitcherCurrentWar <= -0.4) {
+      supportingReasons.push(
+        `${opposingTeamName} starter is underwater this year (${roundToTenths(opposingPitcherCurrentWar)} WAR)`
+      )
+    }
+  }
+  if (Number.isFinite(opposingPitcherPreviousWar) && opposingPitcherPreviousWarGamesStarted >= 8) {
+    if (opposingPitcherPreviousWar >= 2) {
+      suppressingReasons.push(
+        `${opposingTeamName} starter carried a real green season last year (${roundToTenths(opposingPitcherPreviousWar)} WAR)`
+      )
+    } else if (opposingPitcherPreviousWar <= 0) {
+      supportingReasons.push(
+        `${opposingTeamName} starter did not carry positive WAR last year`
+      )
+    }
+  }
+  if (Number.isFinite(opposingPitcherWarDelta) && opposingPitcherCurrentWarGamesStarted >= 4) {
+    if (opposingPitcherWarDelta <= -1.5) {
+      supportingReasons.push(
+        `${opposingTeamName} starter has slipped hard from last year (${roundToTenths(opposingPitcherWarDelta)} WAR delta)`
+      )
+    } else if (opposingPitcherWarDelta >= 0.8 && Number.isFinite(opposingPitcherCurrentWar) && opposingPitcherCurrentWar > 0) {
+      suppressingReasons.push(
+        `${opposingTeamName} starter has improved sharply from last year (${roundToTenths(opposingPitcherWarDelta)} WAR delta)`
+      )
+    }
+  }
   if (Number.isFinite(opposingTeamAllowedRate) && opposingTeamAllowedRate >= 0.35) {
     supportingReasons.push(`${opposingTeamName} are allowing a 1st-inning run ${roundToTenths(opposingTeamAllowedRate * 100)}% lately`)
   }
@@ -2330,6 +2467,24 @@ const buildFirstInningRunProfile = ({
       ) *
       0.08 *
       opposingPitcherSeasonReliability
+    : 0
+  runProbability -= Number.isFinite(opposingPitcherCurrentWar) && opposingPitcherCurrentWarGamesStarted >= 4
+    ? Math.min(0.05, Math.max(opposingPitcherCurrentWar, 0) * 0.018)
+    : 0
+  runProbability += Number.isFinite(opposingPitcherCurrentWar) && opposingPitcherCurrentWarGamesStarted >= 4
+    ? Math.min(0.05, Math.max(-opposingPitcherCurrentWar, 0) * 0.02)
+    : 0
+  runProbability -= Number.isFinite(opposingPitcherPreviousWar) && opposingPitcherPreviousWarGamesStarted >= 10
+    ? Math.min(0.025, Math.max(opposingPitcherPreviousWar - 1.5, 0) * 0.006)
+    : 0
+  runProbability += Number.isFinite(opposingPitcherPreviousWar) && opposingPitcherPreviousWarGamesStarted >= 10
+    ? Math.min(0.02, Math.max(0.5 - opposingPitcherPreviousWar, 0) * 0.01)
+    : 0
+  runProbability += Number.isFinite(opposingPitcherWarDelta) && opposingPitcherCurrentWarGamesStarted >= 4
+    ? Math.min(0.03, Math.max(-opposingPitcherWarDelta - 0.8, 0) * 0.01)
+    : 0
+  runProbability -= Number.isFinite(opposingPitcherWarDelta) && opposingPitcherCurrentWarGamesStarted >= 4
+    ? Math.min(0.02, Math.max(opposingPitcherWarDelta - 0.8, 0) * 0.008)
     : 0
   runProbability -= Number.isFinite(teamScoredRate)
     ? Math.max(0.25 - teamScoredRate, 0) * 0.55
@@ -2492,8 +2647,8 @@ const buildFirstInningLean = ({ awayTeam, homeTeam, awayProfile, homeProfile }) 
     line: 0.5,
     summary:
       pick === 'YRFI'
-        ? `${pick} with a ${Math.round(pickedProbability * 100)}% modeled chance of at least one first-inning run. ${awayTeam} score ${awayProfile.runProbability}% of the time and ${homeTeam} ${homeProfile.runProbability}% of the time in this setup.`
-        : `${pick} with a ${Math.round(pickedProbability * 100)}% modeled chance that the first inning stays scoreless. ${awayTeam} score ${awayProfile.runProbability}% of the time and ${homeTeam} ${homeProfile.runProbability}% of the time in this setup.`
+        ? `${pick} with a ${Math.round(pickedProbability * 100)}% modeled chance of at least one first-inning run. ${awayTeam} score ${awayProfile.runProbability}% of the time and ${homeTeam} ${homeProfile.runProbability}% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.`
+        : `${pick} with a ${Math.round(pickedProbability * 100)}% modeled chance that the first inning stays scoreless. ${awayTeam} score ${awayProfile.runProbability}% of the time and ${homeTeam} ${homeProfile.runProbability}% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.`
   }
 }
 
@@ -2878,18 +3033,47 @@ const pitcherEraScore = (pitcher) =>
 
 const pitcherStrikeoutScore = (pitcher) => clamp(34 + pitcher.strikeouts * 1.08, 24, 88)
 
+const pitcherWarScore = (pitcher) => {
+  const currentWar = Number(pitcher?.currentSeasonWar)
+  const previousWar = Number(pitcher?.previousSeasonWar)
+  const currentGamesStarted = Number(pitcher?.currentSeasonWarGamesStarted || 0) || 0
+  const previousGamesStarted = Number(pitcher?.previousSeasonWarGamesStarted || 0) || 0
+  const warDelta = Number(pitcher?.warDelta)
+  const components = []
+
+  if (Number.isFinite(currentWar) && currentGamesStarted >= 4) {
+    const currentWeight = currentGamesStarted >= 8 ? 1 : 0.7
+    components.push((50 + currentWar * 13) * currentWeight + 50 * (1 - currentWeight))
+  }
+
+  if (Number.isFinite(previousWar) && previousGamesStarted >= 8) {
+    components.push(48 + previousWar * 7)
+  }
+
+  if (!components.length) return 50
+
+  let score = average(components)
+  if (Number.isFinite(warDelta) && currentGamesStarted >= 4) {
+    score += clamp(warDelta, -3, 3) * 1.8
+  }
+
+  return clamp(score, 18, 92)
+}
+
 const starterScore = (pitcher) =>
-  pitcherRecordScore(pitcher) * 0.28 +
-  pitcherEraScore(pitcher) * 0.44 +
-  pitcherStrikeoutScore(pitcher) * 0.28
+  pitcherRecordScore(pitcher) * 0.24 +
+  pitcherEraScore(pitcher) * 0.36 +
+  pitcherStrikeoutScore(pitcher) * 0.22 +
+  pitcherWarScore(pitcher) * 0.18
 
 const buildMlbAnalysisContext = (game, participants) => {
   const starterContexts = [
     game.starterContext?.away ?? game.startingPitcherContext?.away ?? null,
     game.starterContext?.home ?? game.startingPitcherContext?.home ?? null
   ]
+  const starterWarProfiles = [game.stateContext?.pitcherWar?.away ?? null, game.stateContext?.pitcherWar?.home ?? null]
   const starters = participants.map((participant, index) =>
-    buildStarterProfile(starterContexts[index], participant.detail)
+    buildStarterProfile(starterContexts[index], participant.detail, starterWarProfiles[index])
   )
   const offenseProfiles = [game.offenseContext?.away, game.offenseContext?.home]
   const bullpenProfiles = [game.bullpenContext?.away, game.bullpenContext?.home]
@@ -3249,6 +3433,8 @@ const buildMlbAnalysisContext = (game, participants) => {
             index === 0
               ? game.stateContext?.firstInningPitcherSeason?.home
               : game.stateContext?.firstInningPitcherSeason?.away,
+          opposingPitcherWarProfile:
+            index === 0 ? game.stateContext?.pitcherWar?.home : game.stateContext?.pitcherWar?.away,
           weatherProfile
         })
       )

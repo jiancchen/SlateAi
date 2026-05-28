@@ -33,6 +33,7 @@ MLB_PLAYER_PITCHING_URL = (
     "https://statsapi.mlb.com/api/v1/people/{player_id}"
     "?hydrate=stats(group=[pitching],type=[season],season={season})"
 )
+BREF_WAR_DAILY_PITCH_URL = "https://www.baseball-reference.com/data/war_daily_pitch.txt"
 STATCAST_HOME_RUNS_CSV_URL = (
     "https://baseballsavant.mlb.com/leaderboard/home-runs"
     "?year={season}&player_type=Batter&cat=xhr&team=&min=0&csv=true"
@@ -135,6 +136,20 @@ CREATE TABLE IF NOT EXISTS mlb_starting_pitcher_game_logs (
   batters_faced INTEGER,
   raw_json TEXT,
   PRIMARY KEY (game_pk, team_role)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_pitcher_war_by_season (
+  season INTEGER NOT NULL,
+  pitcher_id INTEGER NOT NULL,
+  pitcher_name TEXT,
+  bref_player_id TEXT,
+  team_ids TEXT,
+  games INTEGER,
+  games_started INTEGER,
+  war REAL,
+  fetched_at TEXT NOT NULL,
+  source TEXT,
+  PRIMARY KEY (season, pitcher_id)
 );
 
 CREATE TABLE IF NOT EXISTS mlb_game_team_stats (
@@ -1197,6 +1212,88 @@ def fetch_pitcher_season_snapshot(player_id: int | None, season: int) -> dict[st
         "era": stat.get("era"),
         "strikeouts": to_int(stat.get("strikeOuts")),
     }
+
+
+def ingest_pitcher_war(conn: sqlite3.Connection, seasons: list[int] | None = None) -> int:
+    init_db(conn)
+    fetched_at = datetime.utcnow().isoformat(timespec="seconds") + "Z"
+    content_text = fetch_text(BREF_WAR_DAILY_PITCH_URL)
+    snapshot_date = datetime.utcnow().date().isoformat()
+    raw_path = RAW_DIR / "baseball-reference" / "war-daily-pitch" / snapshot_date / "war_daily_pitch.txt"
+    write_text(raw_path, content_text)
+    record_snapshot(
+        conn,
+        source_key="baseball-reference:war-daily-pitch",
+        url=BREF_WAR_DAILY_PITCH_URL,
+        content_path=raw_path,
+        content_text=content_text,
+        meta={"seasons": sorted(seasons) if seasons else "all"},
+    )
+
+    target_seasons = {int(season) for season in seasons} if seasons else None
+    aggregates: dict[tuple[int, int], dict[str, Any]] = {}
+    reader = csv.DictReader(io.StringIO(content_text))
+
+    for row in reader:
+        pitcher_id = to_int(row.get("mlb_ID"))
+        season = to_int(row.get("year_ID"))
+        if not pitcher_id or not season:
+            continue
+        if target_seasons and season not in target_seasons:
+            continue
+
+        key = (season, pitcher_id)
+        entry = aggregates.setdefault(
+            key,
+            {
+                "season": season,
+                "pitcher_id": pitcher_id,
+                "pitcher_name": row.get("name_common") or "",
+                "bref_player_id": row.get("player_ID") or "",
+                "team_ids": set(),
+                "games": 0,
+                "games_started": 0,
+                "war": 0.0,
+            },
+        )
+
+        team_id = (row.get("team_ID") or "").strip()
+        if team_id:
+            entry["team_ids"].add(team_id)
+        entry["games"] += to_int(row.get("G")) or 0
+        entry["games_started"] += to_int(row.get("GS")) or 0
+        entry["war"] += to_float(row.get("WAR")) or 0.0
+
+    if target_seasons:
+        for season in target_seasons:
+            conn.execute("DELETE FROM mlb_pitcher_war_by_season WHERE season = ?", (season,))
+    else:
+        conn.execute("DELETE FROM mlb_pitcher_war_by_season")
+
+    for entry in aggregates.values():
+        conn.execute(
+            """
+            INSERT INTO mlb_pitcher_war_by_season (
+              season, pitcher_id, pitcher_name, bref_player_id, team_ids,
+              games, games_started, war, fetched_at, source
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                entry["season"],
+                entry["pitcher_id"],
+                entry["pitcher_name"],
+                entry["bref_player_id"],
+                ",".join(sorted(entry["team_ids"])),
+                entry["games"],
+                entry["games_started"],
+                round(entry["war"], 2),
+                fetched_at,
+                "baseball-reference:war-daily-pitch",
+            ),
+        )
+
+    conn.commit()
+    return len(aggregates)
 
 
 def write_text(path: Path, text: str) -> None:
@@ -6411,6 +6508,9 @@ def build_bullpen_usage_and_chain_rows(
     as_of = datetime.strptime(as_of_date, "%Y-%m-%d").date()
     recent3_cutoff = (as_of - timedelta(days=3)).isoformat()
     recent10_cutoff = (as_of - timedelta(days=10)).isoformat()
+    recent_team_game_ids: list[int] = []
+    recent_team_game_dates: list[str] = []
+    seen_recent_games: set[int] = set()
     by_pitcher: dict[int, list[sqlite3.Row]] = {}
 
     for row in rows:
@@ -6418,14 +6518,30 @@ def build_bullpen_usage_and_chain_rows(
         if pitcher_id is None:
             continue
         by_pitcher.setdefault(pitcher_id, []).append(row)
+        game_pk = row["game_pk"]
+        if game_pk is not None and game_pk not in seen_recent_games and len(recent_team_game_ids) < 5:
+            seen_recent_games.add(game_pk)
+            recent_team_game_ids.append(game_pk)
+            recent_team_game_dates.append(row["game_date"])
+
+    recent_team_game_id_set = set(recent_team_game_ids)
+    recent_team_games_sample = len(recent_team_game_ids)
 
     usage_rows: list[dict[str, Any]] = []
     chain_candidates: list[dict[str, Any]] = []
 
     for pitcher_id, appearances in by_pitcher.items():
-        appearances.sort(key=lambda row: (row["game_date"], row["entry_order"] or 99), reverse=True)
+        appearances.sort(
+            key=lambda row: (row["game_date"], row["game_pk"] or 0, -(row["entry_order"] or 99)),
+            reverse=True,
+        )
         last10 = [row for row in appearances if row["game_date"] >= recent10_cutoff][:8]
         recent3 = [row for row in last10 if row["game_date"] >= recent3_cutoff]
+        recent_team_window = (
+            [row for row in appearances if row["game_pk"] in recent_team_game_id_set]
+            if recent_team_game_id_set
+            else []
+        )
         if not last10:
             continue
 
@@ -6444,8 +6560,19 @@ def build_bullpen_usage_and_chain_rows(
         avg_outs_per_appearance = safe_mean([row["outs_recorded"] or 0 for row in last10])
         avg_pitches_per_appearance = safe_mean([row["pitches_thrown"] or 0 for row in last10])
         likely_role = classify_reliever_role(avg_entry_order, avg_outs_per_appearance)
-        recent_first_reliever_count = sum(1 for row in last10 if (row["entry_order"] or 99) == 2)
-        recent_first_two_count = sum(1 for row in last10 if (row["entry_order"] or 99) in (2, 3))
+        recent_entry_order = (
+            safe_mean([row["entry_order"] or 5 for row in recent_team_window])
+            if recent_team_window
+            else avg_entry_order
+        )
+        recent_outs_per_appearance = (
+            safe_mean([row["outs_recorded"] or 0 for row in recent_team_window])
+            if recent_team_window
+            else avg_outs_per_appearance
+        )
+        recent_first_reliever_count = sum(1 for row in recent_team_window if (row["entry_order"] or 99) == 2)
+        recent_first_two_count = sum(1 for row in recent_team_window if (row["entry_order"] or 99) in (2, 3))
+        recent_appearance_share = len(recent_team_window) / max(recent_team_games_sample, 1)
 
         fatigue_score = clamp_value(
             appearances_last3 * 14
@@ -6458,13 +6585,21 @@ def build_bullpen_usage_and_chain_rows(
         )
         rest_bonus = 8 if days_since_last >= 2 else (2 if days_since_last == 1 else -8)
         availability_score = clamp_value(92 - fatigue_score + rest_bonus, 5, 95)
-        entry_anchor = clamp_value(88 - abs(avg_entry_order - 2.2) * 18, 10, 92)
-        length_anchor = clamp_value(86 - abs(avg_outs_per_appearance - 4.0) * 12, 10, 90)
-        bridge_bonus = min(28.0, recent_first_reliever_count * 10 + recent_first_two_count * 4)
+        entry_anchor = clamp_value(88 - abs(recent_entry_order - 2.2) * 18, 10, 92)
+        length_anchor = clamp_value(86 - abs(recent_outs_per_appearance - 4.0) * 12, 10, 90)
+        bridge_bonus = min(
+            34.0,
+            recent_first_reliever_count * 12
+            + recent_first_two_count * 5
+            + recent_appearance_share * 10,
+        )
         role_bonus = 10 if likely_role == "bridge" else 5 if likely_role == "bulk" else -6 if likely_role == "late" else 0
         bridge_score = clamp_value(entry_anchor * 0.5 + length_anchor * 0.35 + bridge_bonus + role_bonus, 5, 95)
         first_reliever_likelihood = clamp_value(
-            bridge_score * 0.55 + availability_score * 0.35 + min(10.0, recent_first_two_count * 2.5),
+            bridge_score * 0.46
+            + availability_score * 0.26
+            + min(28.0, recent_first_reliever_count * 16 + recent_first_two_count * 6)
+            + min(12.0, recent_appearance_share * 18),
             0,
             100,
         )
@@ -6497,6 +6632,12 @@ def build_bullpen_usage_and_chain_rows(
                     "recentDates": [row["game_date"] for row in last10],
                     "recentOuts": [row["outs_recorded"] for row in last10],
                     "recentPitches": [row["pitches_thrown"] for row in last10],
+                    "recentTeamGameIds": recent_team_game_ids,
+                    "recentTeamGameDates": recent_team_game_dates,
+                    "recentTeamGamesSample": recent_team_games_sample,
+                    "recentPitcherGamesSample": len(recent_team_window),
+                    "recentFirstRelieverCountLast5Games": recent_first_reliever_count,
+                    "recentFirstTwoCountLast5Games": recent_first_two_count,
                 },
                 sort_keys=True,
             ),
@@ -7791,6 +7932,7 @@ def grade_prop_picks(
           b.rbi,
           b.walks,
           b.home_runs,
+          sp.strikeouts AS pitcher_strikeouts,
           s.story_tags_json,
           s.summary_json
         FROM mlb_prop_predictions p
@@ -7799,8 +7941,13 @@ def grade_prop_picks(
          AND b.player_id = p.player_id
          AND b.team_name = COALESCE(p.team_name_full, p.team_name)
          AND b.opponent_name = COALESCE(p.opponent_name_full, p.opponent_name)
+        LEFT JOIN mlb_starting_pitcher_game_logs sp
+          ON sp.game_date = p.prediction_date
+         AND sp.pitcher_id = p.player_id
+         AND sp.team_name = COALESCE(p.team_name_full, p.team_name)
+         AND sp.opponent_name = COALESCE(p.opponent_name_full, p.opponent_name)
         LEFT JOIN mlb_game_story_signals s
-          ON s.game_pk = b.game_pk
+          ON s.game_pk = COALESCE(b.game_pk, sp.game_pk)
         WHERE p.prediction_date = ?
           AND p.model_name = ?
           {prop_type_sql}
@@ -7821,6 +7968,8 @@ def grade_prop_picks(
             actual_value = to_float(row["total_bases"])
         elif row["prop_type"] == "rbi":
             actual_value = to_float(row["rbi"])
+        elif row["prop_type"] == "pitcherStrikeouts":
+            actual_value = to_float(row["pitcher_strikeouts"])
 
         line_threshold = to_float(row["line_threshold"])
         hit_flag = int(actual_value is not None and line_threshold is not None and actual_value > line_threshold)
@@ -7834,6 +7983,7 @@ def grade_prop_picks(
             "plateAppearances": row["plate_appearances"],
             "atBats": row["at_bats"],
             "gamePk": row["game_pk"],
+            "pitcherStrikeouts": row["pitcher_strikeouts"],
             "storyTags": json.loads(row["story_tags_json"] or "[]"),
             "storySummary": json.loads(row["summary_json"] or "{}"),
         }
@@ -7997,6 +8147,7 @@ def print_prop_backtest_summary(rows: list[sqlite3.Row]) -> None:
         "walks": "walks",
         "totalBases": "total_bases",
         "rbi": "rbi",
+        "pitcherStrikeouts": "pitcher_strikeouts",
     }
 
     grouped: dict[str, list[sqlite3.Row]] = {}
@@ -8228,6 +8379,18 @@ def parse_args() -> argparse.Namespace:
         help="Optional single date to rebuild incrementally without touching earlier label rows.",
     )
 
+    ingest_pitcher_war_parser = subparsers.add_parser(
+        "ingest-pitcher-war",
+        help="Fetch and store season-level pitcher WAR snapshots from Baseball-Reference.",
+    )
+    ingest_pitcher_war_parser.add_argument(
+        "--season",
+        action="append",
+        type=int,
+        dest="seasons",
+        help="Season year to store. Repeat to load multiple seasons. Defaults to all rows in the feed.",
+    )
+
     ingest_hr = subparsers.add_parser(
         "ingest-statcast-hr",
         help="Fetch and store a Statcast home-run leaderboard snapshot for a season.",
@@ -8401,6 +8564,16 @@ def main() -> None:
                 print(f"Refreshed MLB story/phase label tables through {args.through_date}")
             else:
                 print("Refreshed MLB story/phase label tables for all loaded dates")
+            return
+
+        if args.command == "ingest-pitcher-war":
+            rows_loaded = ingest_pitcher_war(conn, args.seasons)
+            if args.seasons:
+                print(
+                    f"Ingested Baseball-Reference pitcher WAR rows for seasons {', '.join(str(season) for season in sorted(set(args.seasons)))} ({rows_loaded} player-seasons)"
+                )
+            else:
+                print(f"Ingested Baseball-Reference pitcher WAR rows for all seasons in the feed ({rows_loaded} player-seasons)")
             return
 
         if args.command == "ingest-statcast-hr":

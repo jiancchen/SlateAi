@@ -113,6 +113,7 @@ const propTypeFilters = [
   { id: 'homeRun', label: 'HR' },
   { id: 'rbi', label: 'RBI' },
   { id: 'totalBases', label: 'TB' },
+  { id: 'pitcherStrikeouts', label: 'Pitcher K' },
   { id: 'hits', label: 'Hits' },
   { id: 'walks', label: 'Walks' },
   { id: 'singles', label: 'Singles' }
@@ -235,6 +236,14 @@ const formatSignedNumber = (value: any, digits = 1) => {
   if (!Number.isFinite(numericValue)) return 'N/A'
   return `${numericValue >= 0 ? '+' : ''}${numericValue.toFixed(digits)}`
 }
+
+const normalizeNameToken = (value = '') =>
+  `${value}`
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
 
 const percentageFromRecord = (record?: HistoryRecord | null) => {
   if (!record) return null
@@ -487,7 +496,9 @@ const getEventState = (game: AnyRecord, dayIsoDate: string, pacificClock: Return
 const buildPitcherSummary = (
   pitcher: AnyRecord = {},
   holdConfidence?: number | null,
-  firstInningSeason: AnyRecord | null = null
+  firstInningSeason: AnyRecord | null = null,
+  warProfile: AnyRecord | null = null,
+  strikeoutProp: AnyRecord | null = null
 ) => {
   const pitcherName = pitcher.fullName || pitcher.name || 'TBD starter'
   const pitchHand = pitcher.pitchHand ? `${pitcher.pitchHand}HP` : '?HP'
@@ -521,9 +532,47 @@ const buildPitcherSummary = (
     trendStats.push({ label: 'EXP IP', value: formatNumber(usageContext.expectedInnings, 1) })
   }
 
+  const firstInningStartsSample = Number(firstInningSeason?.startsSample || 0)
+  const firstInningRunGames = Number(firstInningSeason?.firstInningRunGames || 0)
+  const firstInningCleanGames =
+    firstInningStartsSample > 0 ? Math.max(firstInningStartsSample - firstInningRunGames, 0) : 0
   const firstInningSeasonLine =
-    firstInningSeason && Number(firstInningSeason.startsSample || 0) > 0
-      ? `1st inning season: ${Number(firstInningSeason.firstInningRunsAllowedTotal || 0)} runs in ${Number(firstInningSeason.startsSample || 0)} starts (${formatNumber(firstInningSeason.firstInningRunsAllowedPerStart, 2)}/start) · damage in ${Number(firstInningSeason.firstInningRunGames || 0)} games`
+    firstInningSeason && firstInningStartsSample > 0
+      ? `1st inning season: ${Number(firstInningSeason.firstInningRunsAllowedTotal || 0)} runs in ${firstInningStartsSample} starts (${formatNumber(firstInningSeason.firstInningRunsAllowedPerStart, 2)}/start) · RFI in ${firstInningRunGames}/${firstInningStartsSample} starts · NRFI in ${firstInningCleanGames}/${firstInningStartsSample} starts`
+      : ''
+  const warLine =
+    warProfile &&
+    (Number.isFinite(Number(warProfile.currentSeasonWar)) || Number.isFinite(Number(warProfile.previousSeasonWar)))
+      ? `${warProfile.currentSeason ?? 'This year'} WAR ${
+          Number.isFinite(Number(warProfile.currentSeasonWar)) ? formatNumber(warProfile.currentSeasonWar, 2) : 'n/a'
+        }${
+          Number(warProfile.currentSeasonGamesStarted || 0) > 0
+            ? ` in ${Number(warProfile.currentSeasonGamesStarted || 0)} GS`
+            : ''
+        } · ${warProfile.previousSeason ?? 'Last year'} WAR ${
+          Number.isFinite(Number(warProfile.previousSeasonWar)) ? formatNumber(warProfile.previousSeasonWar, 2) : 'n/a'
+        }${
+          Number(warProfile.previousSeasonGamesStarted || 0) > 0
+            ? ` in ${Number(warProfile.previousSeasonGamesStarted || 0)} GS`
+            : ''
+        }${
+          Number.isFinite(Number(warProfile.warDelta))
+            ? ` · Δ ${Number(warProfile.warDelta) > 0 ? '+' : ''}${formatNumber(warProfile.warDelta, 2)}`
+            : ''
+        }`
+      : ''
+  const strikeoutMarket = pitcher?.strikeoutMarket ?? null
+  const strikeoutLine =
+    strikeoutMarket && Number.isFinite(Number(strikeoutMarket.line))
+      ? `FanDuel K line: O/U ${formatNumber(strikeoutMarket.line, 1)}${
+          Number.isFinite(Number(strikeoutMarket.overPrice)) || Number.isFinite(Number(strikeoutMarket.underPrice))
+            ? ` · O ${Number.isFinite(Number(strikeoutMarket.overPrice)) ? formatAmericanOdds(Number(strikeoutMarket.overPrice)) : 'n/a'} / U ${Number.isFinite(Number(strikeoutMarket.underPrice)) ? formatAmericanOdds(Number(strikeoutMarket.underPrice)) : 'n/a'}`
+            : ''
+        }`
+      : ''
+  const strikeoutPickLine =
+    strikeoutProp && strikeoutProp.marketLabel
+      ? `K prop lean: ${strikeoutProp.marketLabel} · ${strikeoutProp.statValueLabel || ''}`.trim()
       : ''
 
   return {
@@ -532,6 +581,9 @@ const buildPitcherSummary = (
     detailStats,
     recent,
     firstInningSeasonLine,
+    warLine,
+    strikeoutLine,
+    strikeoutPickLine,
     trendStats,
     usageLabel: usageContext.workloadLabel || '',
     usageNote: usageContext.note || '',
@@ -566,6 +618,125 @@ const buildTeamContextSummary = (team: AnyRecord = {}) => {
   const rankLabel = team.divisionLeader ? '1st in division' : `${formatOrdinal(team.divisionRank)} in division`
   const streak = team.streakCode ? ` | ${team.streakCode}` : ''
   return `${record} | ${rankLabel}${streak}`
+}
+
+const buildRecentRecordLabel = (winPct: number | null | undefined, sample: number | null | undefined) => {
+  const numericSample = Number(sample)
+  const numericWinPct = Number(winPct)
+  if (!Number.isFinite(numericSample) || numericSample <= 0 || !Number.isFinite(numericWinPct)) return ''
+  const wins = Math.round(numericWinPct * numericSample)
+  const losses = Math.max(numericSample - wins, 0)
+  return `${wins}-${losses}`
+}
+
+const buildEdgeHeadline = (teamName = '', edge: number | null | undefined, unit = 'H', emptyLabel = 'Even board') => {
+  const numericEdge = Number(edge)
+  if (!teamName || !Number.isFinite(numericEdge) || Math.abs(numericEdge) < 0.05) return emptyLabel
+  return `${teamName} +${formatNumber(Math.abs(numericEdge), 1)} ${unit}`
+}
+
+const buildPitcherTypeLabel = (pitcher: AnyRecord = {}, fallbackType = '') => {
+  const usageStatus = pitcher?.usageContext?.status || ''
+  const hand = pitcher?.pitchHand ? `${pitcher.pitchHand.toLowerCase()}y` : 'arm'
+  if (usageStatus === 'debut-window' || usageStatus === 'milb-callup') return `MiLB call-up ${hand}`
+  if (usageStatus === 'tiny-sample') return `Tiny-sample ${hand}`
+  if (usageStatus === 'new-look') return `New-look ${hand}`
+  return fallbackType || 'Unknown lane'
+}
+
+const buildTeamSnapshotChips = ({
+  teamState,
+  lineupConversion,
+  offenseContext,
+  firstInningTeam
+}: {
+  teamState?: AnyRecord | null
+  lineupConversion?: AnyRecord | null
+  offenseContext?: AnyRecord | null
+  firstInningTeam?: AnyRecord | null
+}) => {
+  const chips: Array<{ label: string; value: string }> = []
+
+  if (teamState && Number(teamState.gamesSample || 0) > 0) {
+    const gamesSample = Number(teamState.gamesSample || 0)
+    const recordLabel = buildRecentRecordLabel(teamState.winPctLast5, gamesSample)
+    chips.push({
+      label: `Last ${gamesSample}`,
+      value: `${recordLabel || 'n/a'} · ${formatSignedNumber(teamState.runDiffLast5, 1)} RD/G`
+    })
+  }
+
+  if (lineupConversion && Number(lineupConversion.gamesSample || 0) > 0) {
+    chips.push({
+      label: `Recent ${Number(lineupConversion.gamesSample || 0)}`,
+      value: `Conv ${formatNumber(lineupConversion.lineupConversionIndex, 0)} · Quiet F5 ${formatPercent(Number(lineupConversion.quietFirst5Rate || 0) * 100, 0)}`
+    })
+  }
+
+  if (firstInningTeam && Number(firstInningTeam.gamesSample || 0) > 0) {
+    chips.push({
+      label: `1st ${Number(firstInningTeam.gamesSample || 0)}`,
+      value: `Score ${formatPercent(Number(firstInningTeam.scoredFirstInningRate || 0) * 100, 0)} · Allow ${formatPercent(Number(firstInningTeam.allowedFirstInningRate || 0) * 100, 0)}`
+    })
+  }
+
+  if (offenseContext && (Number.isFinite(Number(offenseContext.hitsPerGame)) || Number.isFinite(Number(offenseContext.last3HitsPerGame)))) {
+    chips.push({
+      label: 'Season',
+      value: `${formatNumber(offenseContext.hitsPerGame, 1)} H/G · last 3 ${formatNumber(offenseContext.last3HitsPerGame, 1)}`
+    })
+  }
+
+  return chips
+}
+
+const buildBullpenPulseLine = (recentBullpenSummary: AnyRecord | null, seasonBullpenSummary: AnyRecord | null) => {
+  if (!recentBullpenSummary || Number(recentBullpenSummary.gamesSample || 0) <= 0) return ''
+  const recentGames = Number(recentBullpenSummary.gamesSample || 0)
+  const recentLabel = `Bullpen last ${recentGames}: ${formatNumber(recentBullpenSummary.era, 2)} ERA / ${formatNumber(recentBullpenSummary.whip, 2)} WHIP`
+  if (!seasonBullpenSummary || seasonBullpenSummary.staleFeed) return recentLabel
+  return `${recentLabel} vs season ${formatNumber(seasonBullpenSummary.era, 2)} ERA / ${formatNumber(seasonBullpenSummary.whip, 2)} WHIP`
+}
+
+const buildGameFlowOverview = ({
+  projection,
+  analysis,
+  awayTeam,
+  homeTeam,
+  awayHold,
+  homeHold
+}: {
+  projection?: AnyRecord | null
+  analysis?: AnyRecord | null
+  awayTeam: string
+  homeTeam: string
+  awayHold: number
+  homeHold: number
+}) => {
+  const sidePick = analysis?.participant?.name || ''
+  const trafficLeader = projection?.edgeTeam || ''
+  const first5Leader = projection?.first5EdgeTeam || ''
+  const bridgeLeader = projection?.bridgeEdgeTeam || ''
+  const starterLeader = awayHold >= homeHold ? awayTeam : homeTeam
+  const trafficEdge = Number(projection?.edgeHits || 0)
+
+  if (projection?.lineupSimulation?.overview) {
+    const summary = String(projection.lineupSimulation.overview)
+    if (sidePick && trafficLeader && sidePick !== trafficLeader) {
+      return `${summary} The actual side pick still leans ${sidePick}, but only as a pass-grade conflict because ${trafficLeader} own the raw traffic script while ${starterLeader}${bridgeLeader ? ` and ${bridgeLeader}` : ''} keep the cleaner survival lanes.`
+    }
+    return summary
+  }
+
+  if (sidePick && trafficLeader && sidePick !== trafficLeader) {
+    return `${trafficLeader} own the raw full-game traffic edge by ${formatNumber(trafficEdge, 1)} hits, but ${sidePick} still hold the cleaner starter or bridge safety profile. Treat this as a split-script pass, not a clean recommendation.`
+  }
+
+  if (trafficLeader) {
+    return `${trafficLeader} carry the cleaner full-game traffic path, ${first5Leader || trafficLeader} have the better starter-window lane, and ${bridgeLeader || starterLeader} control the bridge innings.`
+  }
+
+  return 'No clean script leader is stored on this pass.'
 }
 
 const recentGamesSeriesPalette = ['#52d6b3', '#f4b860', '#5f8dff', '#e77df5', '#ff7f66', '#7be3ff']
@@ -2323,23 +2494,34 @@ function App() {
 
   const renderMlbDetail = (game: AnyRecord) => {
     const projection = game.analysis?.mlbProjection
+    const featuredProps = game.playerProps?.featured ?? []
+    const allTrackedProps = game.playerProps?.targets ?? featuredProps
+    const findPitcherStrikeoutProp = (pitcherName: string) =>
+      allTrackedProps.find(
+        (prop: AnyRecord) =>
+          prop.propType === 'pitcherStrikeouts' &&
+          normalizeNameToken(prop.playerName) === normalizeNameToken(pitcherName)
+      ) ?? null
     const awayHold = Number(projection?.awayStarterHoldConfidence)
     const homeHold = Number(projection?.homeStarterHoldConfidence)
     const awayStarter = buildPitcherSummary(
       game.starterContext?.away,
       awayHold,
-      game.stateContext?.firstInningPitcherSeason?.away ?? null
+      game.stateContext?.firstInningPitcherSeason?.away ?? null,
+      game.stateContext?.pitcherWar?.away ?? null,
+      findPitcherStrikeoutProp(game.starterContext?.away?.fullName || '')
     )
     const homeStarter = buildPitcherSummary(
       game.starterContext?.home,
       homeHold,
-      game.stateContext?.firstInningPitcherSeason?.home ?? null
+      game.stateContext?.firstInningPitcherSeason?.home ?? null,
+      game.stateContext?.pitcherWar?.home ?? null,
+      findPitcherStrikeoutProp(game.starterContext?.home?.fullName || '')
     )
     const awayTeam = game.matchup?.[0]?.name ?? 'Away'
     const homeTeam = game.matchup?.[1]?.name ?? 'Home'
     const awayLineup = game.lineupBoard?.away
     const homeLineup = game.lineupBoard?.home
-    const featuredProps = game.playerProps?.featured ?? []
     const homeRunTargets = game.homeRunTargets?.featured ?? game.homeRunTargets?.targets ?? []
     const awayScript = projection?.teamScripts?.find((entry: AnyRecord) => entry.teamName === awayTeam)
     const homeScript = projection?.teamScripts?.find((entry: AnyRecord) => entry.teamName === homeTeam)
@@ -2353,21 +2535,6 @@ function App() {
         ...reliever
       }))
     }
-    const awayProjectionLead = projection
-      ? projection.edgeTeam === awayTeam
-        ? Number(projection.edgeHits || 0)
-        : -Number(projection.edgeHits || 0)
-      : null
-    const first5Lead = projection
-      ? projection.first5EdgeTeam === awayTeam
-        ? Number(projection.first5EdgeHits || 0)
-        : -Number(projection.first5EdgeHits || 0)
-      : null
-    const lateLead = projection
-      ? projection.lateEdgeTeam === awayTeam
-        ? Number(projection.lateEdgeHits || 0)
-        : -Number(projection.lateEdgeHits || 0)
-      : null
     const awayBridge = mergeBridgeChain(
       projection?.awayLikelyRelievers?.length
         ? projection.awayLikelyRelievers
@@ -2386,10 +2553,34 @@ function App() {
     const homeBridgeScore = Number.isFinite(Number(projection?.homeBullpenChainScore))
       ? Number(projection?.homeBullpenChainScore)
       : Number(homeSummary?.bullpenPitchTypeSummary?.pressureIndex)
+    const awayRecentBullpenSummary = game.bullpenChainContext?.away?.recentBullpenSummary ?? null
+    const homeRecentBullpenSummary = game.bullpenChainContext?.home?.recentBullpenSummary ?? null
+    const awaySeasonBullpenSummary = game.bullpenContext?.away ?? null
+    const homeSeasonBullpenSummary = game.bullpenContext?.home ?? null
     const awayStory = game.storyContext?.away?.summary
     const homeStory = game.storyContext?.home?.summary
     const awayRecentGames = game.stateContext?.recentGames?.away ?? []
     const homeRecentGames = game.stateContext?.recentGames?.home ?? []
+    const awayTeamState = game.stateContext?.teamState?.away ?? null
+    const homeTeamState = game.stateContext?.teamState?.home ?? null
+    const awayLineupConversion = game.stateContext?.lineupConversion?.away ?? null
+    const homeLineupConversion = game.stateContext?.lineupConversion?.home ?? null
+    const awayFirstInningTeam = game.stateContext?.firstInningTeam?.away ?? null
+    const homeFirstInningTeam = game.stateContext?.firstInningTeam?.home ?? null
+    const awaySnapshotChips = buildTeamSnapshotChips({
+      teamState: awayTeamState,
+      lineupConversion: awayLineupConversion,
+      offenseContext: game.offenseContext?.away ?? null,
+      firstInningTeam: awayFirstInningTeam
+    })
+    const homeSnapshotChips = buildTeamSnapshotChips({
+      teamState: homeTeamState,
+      lineupConversion: homeLineupConversion,
+      offenseContext: game.offenseContext?.home ?? null,
+      firstInningTeam: homeFirstInningTeam
+    })
+    const awayBullpenPulse = buildBullpenPulseLine(awayRecentBullpenSummary, awaySeasonBullpenSummary)
+    const homeBullpenPulse = buildBullpenPulseLine(homeRecentBullpenSummary, homeSeasonBullpenSummary)
     const awayRecentInningHistory = game.stateContext?.recentInningHistory?.away ?? []
     const homeRecentInningHistory = game.stateContext?.recentInningHistory?.home ?? []
     const awayMatchupHistory = game.stateContext?.matchupInningHistory?.away ?? []
@@ -2438,12 +2629,30 @@ function App() {
             : [])
         ]
       : []
+    const gameFlowOverview = buildGameFlowOverview({
+      projection,
+      analysis: game.analysis,
+      awayTeam,
+      homeTeam,
+      awayHold,
+      homeHold
+    })
+    const pointEdgeHeadline = buildEdgeHeadline(projection?.edgeTeam || '', projection?.edgeHits, 'H', 'Even board')
+    const first5EdgeHeadline = buildEdgeHeadline(projection?.first5EdgeTeam || '', projection?.first5EdgeHits, 'H', 'Even first 5')
+    const lateEdgeHeadline = buildEdgeHeadline(projection?.lateEdgeTeam || '', projection?.lateEdgeHits, 'H', 'Even late')
+    const sidePickName = game.analysis?.participant?.name || projection?.edgeTeam || 'Pass'
+    const sidePickConflict =
+      sidePickName && projection?.edgeTeam && sidePickName !== projection.edgeTeam && game.analysis?.tier === 'Pass'
+    const awayPitcherTypeLabel = buildPitcherTypeLabel(game.starterContext?.away ?? {}, projection?.awayPitcherType)
+    const homePitcherTypeLabel = buildPitcherTypeLabel(game.starterContext?.home ?? {}, projection?.homePitcherType)
     const renderBridgeChainCard = (
       teamName: string,
       relievers: AnyRecord[],
       chainScore: number,
       workloadLabel: string,
-      advantage: boolean
+      advantage: boolean,
+      recentBullpenSummary: AnyRecord | null,
+      seasonBullpenSummary: AnyRecord | null
     ) => (
       <article className={`bridge-chain-card-react ${advantage ? 'advantage' : ''}`}>
         <div className="bridge-chain-card-head">
@@ -2455,6 +2664,14 @@ function App() {
             {workloadLabel === 'unknown' ? 'Unknown workload' : workloadLabel}
           </span>
         </div>
+        {recentBullpenSummary && Number(recentBullpenSummary.gamesSample || 0) > 0 ? (
+          <p className="react-section-copy">
+            Last {Number(recentBullpenSummary.gamesSample || 0)} bullpen games: {formatNumber(recentBullpenSummary.era, 2)} ERA / {formatNumber(recentBullpenSummary.whip, 2)} WHIP
+            {seasonBullpenSummary && !seasonBullpenSummary.staleFeed
+              ? ` vs season ${formatNumber(seasonBullpenSummary.era, 2)} ERA / ${formatNumber(seasonBullpenSummary.whip, 2)} WHIP`
+              : ''}
+          </p>
+        ) : null}
         {relievers.length ? (
           <div className="bridge-chain-list">
             {relievers.slice(0, 2).map((reliever) => (
@@ -2462,6 +2679,11 @@ function App() {
                 <div>
                   <strong>{reliever.name}</strong>
                   <small>{reliever.role || 'middle'} · {formatNumber(reliever.expectedOuts, 2)} outs</small>
+                  {Number(reliever.recentTeamGamesSample || 0) > 0 ? (
+                    <small>
+                      First up in {Number(reliever.recentFirstRelieverCountLast5Games || 0)}/{Number(reliever.recentTeamGamesSample || 0)} recent team games
+                    </small>
+                  ) : null}
                   {reliever.pitchMixSummary ? <small>{reliever.pitchMixSummary}</small> : null}
                 </div>
                 <div className="bridge-chain-meta">
@@ -2520,6 +2742,17 @@ function App() {
                   <strong>{awayTeam}</strong>
                   <small>{buildTeamContextSummary(game.teamContext?.away)}</small>
                   {renderRecentGamesStrip(awayTeam, awayRecentGames)}
+                  {awaySnapshotChips.length ? (
+                    <div className="pitcher-summary-chip-row secondary team-snapshot-chip-row">
+                      {awaySnapshotChips.map((stat) => (
+                        <span key={`${awayTeam}-snapshot-${stat.label}`} className="pitcher-summary-chip muted">
+                          <small>{stat.label}</small>
+                          <strong>{stat.value}</strong>
+                        </span>
+                      ))}
+                    </div>
+                  ) : null}
+                  {awayBullpenPulse ? <small>{awayBullpenPulse}</small> : null}
                 </div>
               </div>
               <span className="builder-status-pill open">{lineupStatusLabel(game.lineupBoard?.status?.away)}</span>
@@ -2572,6 +2805,9 @@ function App() {
             </div>
             {awayStarter.recent ? <small>{awayStarter.recent}</small> : null}
             {awayStarter.firstInningSeasonLine ? <small>{awayStarter.firstInningSeasonLine}</small> : null}
+            {awayStarter.warLine ? <small>{awayStarter.warLine}</small> : null}
+            {awayStarter.strikeoutLine ? <small>{awayStarter.strikeoutLine}</small> : null}
+            {awayStarter.strikeoutPickLine ? <small>{awayStarter.strikeoutPickLine}</small> : null}
             {!awayStarter.recent && awayStarter.usageNote ? <small>{awayStarter.usageNote}</small> : null}
             {awayStory ? <p className="react-section-copy">{awayStory}</p> : null}
             {awayScript ? (
@@ -2596,6 +2832,17 @@ function App() {
                   <strong>{homeTeam}</strong>
                   <small>{buildTeamContextSummary(game.teamContext?.home)}</small>
                   {renderRecentGamesStrip(homeTeam, homeRecentGames)}
+                  {homeSnapshotChips.length ? (
+                    <div className="pitcher-summary-chip-row secondary team-snapshot-chip-row">
+                      {homeSnapshotChips.map((stat) => (
+                        <span key={`${homeTeam}-snapshot-${stat.label}`} className="pitcher-summary-chip muted">
+                          <small>{stat.label}</small>
+                          <strong>{stat.value}</strong>
+                        </span>
+                      ))}
+                    </div>
+                  ) : null}
+                  {homeBullpenPulse ? <small>{homeBullpenPulse}</small> : null}
                 </div>
               </div>
               <span className="builder-status-pill open">{lineupStatusLabel(game.lineupBoard?.status?.home)}</span>
@@ -2648,6 +2895,9 @@ function App() {
             </div>
             {homeStarter.recent ? <small>{homeStarter.recent}</small> : null}
             {homeStarter.firstInningSeasonLine ? <small>{homeStarter.firstInningSeasonLine}</small> : null}
+            {homeStarter.warLine ? <small>{homeStarter.warLine}</small> : null}
+            {homeStarter.strikeoutLine ? <small>{homeStarter.strikeoutLine}</small> : null}
+            {homeStarter.strikeoutPickLine ? <small>{homeStarter.strikeoutPickLine}</small> : null}
             {!homeStarter.recent && homeStarter.usageNote ? <small>{homeStarter.usageNote}</small> : null}
             {homeStory ? <p className="react-section-copy">{homeStory}</p> : null}
             {homeScript ? (
@@ -2671,44 +2921,54 @@ function App() {
               <p className="eyebrow">Game flow</p>
               <span>{projection.weather?.label || 'No weather note'}</span>
             </div>
+            <p className="react-section-copy">{gameFlowOverview}</p>
+            {projection?.lineupSimulation?.phases?.length ? (
+              <div className="react-pill-row">
+                {projection.lineupSimulation.phases.slice(0, 3).map((phase: AnyRecord) => (
+                  <span key={`${game.id}-${phase.label}`} className="game-highlight-chip neutral">
+                    {phase.label}: {phase.edgeTeam} {phase.projection}
+                  </span>
+                ))}
+              </div>
+            ) : null}
             <div className="mlb-signal-grid">
-              <article className={`mlb-signal-card ${getMetricTone(Number(awayProjectionLead))}`}>
+              <article className={`mlb-signal-card ${getMetricTone(Number(projection?.edgeHits))}`}>
                 <div className="mlb-signal-head">
                   <MetricHelp
                     label="Point edge"
-                    help="Projected full-game hit and traffic gap. Positive means the away side is expected to create more base traffic; negative means the home side is."
+                    help="Projected full-game hit and traffic gap. This is the raw traffic script leader, not automatically the final side pick."
                   />
                   <span>{projection.edgeTeam || 'Even'}</span>
                 </div>
-                <strong>{Number.isFinite(awayProjectionLead) ? `${awayTeam} ${formatSignedNumber(awayProjectionLead, 1)} H` : 'Even board'}</strong>
+                <strong>{pointEdgeHeadline}</strong>
                 <small>
                   {awayTeam} {projection.awayProjectedHits} H at {projection.awayHitEfficiencyPct}% vs {homeTeam} {projection.homeProjectedHits} H at {projection.homeHitEfficiencyPct}%
                 </small>
               </article>
 
-              <article className={`mlb-signal-card ${getMetricTone(Number(first5Lead))}`}>
+              <article className={`mlb-signal-card ${getMetricTone(Number(projection?.first5EdgeHits))}`}>
                 <div className="mlb-signal-head">
                   <MetricHelp
                     label="First 5 edge"
-                    help="Projected first-five hit edge after folding in lineup fit, starter form, and starter hold confidence."
+                    help="Projected first-five hit edge after folding in lineup fit, starter form, and starter hold confidence. This is the starter-window traffic script."
                   />
                   <span>{projection.first5EdgeTeam || 'Even'}</span>
                 </div>
-                <strong>{Number.isFinite(first5Lead) ? `${awayTeam} ${formatSignedNumber(first5Lead, 1)} H` : 'Even first 5'}</strong>
+                <strong>{first5EdgeHeadline}</strong>
                 <small>
                   {awayTeam} {projection.awayFirst5ProjectedHits} H vs {homeTeam} {projection.homeFirst5ProjectedHits} H
                 </small>
               </article>
 
-              <article className={`mlb-signal-card ${getMetricTone(Number(lateLead))}`}>
+              <article className={`mlb-signal-card ${getMetricTone(Number(projection?.lateEdgeHits))}`}>
                 <div className="mlb-signal-head">
                   <MetricHelp
                     label="Late edge"
-                    help="Projected rest-of-game hit edge once the starters hand the game to the likely bridge relievers."
+                    help="Projected rest-of-game hit edge once the starters hand the game to the likely bridge relievers. This is the bridge-and-finish traffic script."
                   />
                   <span>{projection.lateEdgeTeam || 'Even'}</span>
                 </div>
-                <strong>{Number.isFinite(lateLead) ? `${awayTeam} ${formatSignedNumber(lateLead, 1)} H` : 'Even late'}</strong>
+                <strong>{lateEdgeHeadline}</strong>
                 <small>
                   {awayTeam} {projection.awayLateProjectedHits} H vs {homeTeam} {projection.homeLateProjectedHits} H
                 </small>
@@ -2723,7 +2983,7 @@ function App() {
                   <span>{awayHold >= homeHold ? awayTeam : homeTeam}</span>
                 </div>
                 <strong>{awayTeam} {formatNumber(awayHold, 1)} vs {homeTeam} {formatNumber(homeHold, 1)}</strong>
-                <small>{awayTeam}: {projection.awayPitcherType} · {homeTeam}: {projection.homePitcherType}</small>
+                <small>{awayTeam}: {awayPitcherTypeLabel} · {homeTeam}: {homePitcherTypeLabel}</small>
               </article>
 
               <article className={`mlb-signal-card ${projection.bridgeEdgeTeam ? 'warning' : 'neutral'}`}>
@@ -2743,27 +3003,29 @@ function App() {
             <div className="react-card-grid">
               <article className="react-mini-panel">
                 <span className="eyebrow">Model edge</span>
-                <strong>{game.analysis?.modelEdgeLabel || 'No edge stored'}</strong>
+                <strong>{sidePickConflict ? `${sidePickName} pass-grade dog` : game.analysis?.modelEdgeLabel || 'No edge stored'}</strong>
                 <small>
-                  {game.analysis?.indicators?.projectedHitEdgeForPick !== undefined
-                    ? Number(game.analysis.indicators.projectedHitEdgeForPick) >= 0
-                      ? `${game.analysis?.participant?.name || projection.edgeTeam} carry ${formatNumber(game.analysis.indicators.projectedHitEdgeForPick, 1)} projected-hit edge for the side pick.`
-                      : `${game.analysis?.participant?.name || projection.edgeTeam} trail by ${formatNumber(Math.abs(Number(game.analysis.indicators.projectedHitEdgeForPick)), 1)} projected hits against the side pick.`
-                    : 'Use together with hit edge, bridge chain, and lineup pressure.'}
+                  {sidePickConflict
+                    ? `${sidePickName} only survives here as a protected-dog or pass lane. ${projection.edgeTeam} own the raw traffic script, while ${awayHold >= homeHold ? awayTeam : homeTeam}${projection.bridgeEdgeTeam ? ` and ${projection.bridgeEdgeTeam}` : ''} carry the cleaner survival phases.`
+                    : game.analysis?.indicators?.projectedHitEdgeForPick !== undefined
+                      ? Number(game.analysis.indicators.projectedHitEdgeForPick) >= 0
+                        ? `${game.analysis?.participant?.name || projection.edgeTeam} carry a real ${formatNumber(game.analysis.indicators.projectedHitEdgeForPick, 1)}-hit edge behind the side pick.`
+                        : `${game.analysis?.participant?.name || projection.edgeTeam} trail the raw hit script by ${formatNumber(Math.abs(Number(game.analysis.indicators.projectedHitEdgeForPick)), 1)} hits, so this side needs its starter or bridge edge to hold.`
+                      : 'Use together with traffic script, bridge chain, and lineup pressure.'}
                 </small>
               </article>
               <article className="react-mini-panel">
-                <span className="eyebrow">First 5</span>
+                <span className="eyebrow">First 5 traffic</span>
                 <strong>{projection.first5EdgeTeam || 'Even'}</strong>
                 <small>{projection.totals?.first5?.summary}</small>
               </article>
               <article className="react-mini-panel">
-                <span className="eyebrow">Bridge</span>
+                <span className="eyebrow">Bridge traffic</span>
                 <strong>{projection.bridgeEdgeTeam || 'Even'}</strong>
                 <small>{projection.totals?.late?.summary}</small>
               </article>
               <article className="react-mini-panel">
-                <span className="eyebrow">Full game</span>
+                <span className="eyebrow">Full-game traffic</span>
                 <strong>{projection.edgeTeam || game.analysis?.participant?.name}</strong>
                 <small>{projection.totals?.fullGame?.summary}</small>
               </article>
@@ -2832,14 +3094,18 @@ function App() {
                 awayBridge,
                 awayBridgeScore,
                 projection.awayBullpenExhaustionLabel || 'unknown',
-                projection.bridgeEdgeTeam === awayTeam
+                projection.bridgeEdgeTeam === awayTeam,
+                awayRecentBullpenSummary,
+                awaySeasonBullpenSummary
               )}
               {renderBridgeChainCard(
                 homeTeam,
                 homeBridge,
                 homeBridgeScore,
                 projection.homeBullpenExhaustionLabel || 'unknown',
-                projection.bridgeEdgeTeam === homeTeam
+                projection.bridgeEdgeTeam === homeTeam,
+                homeRecentBullpenSummary,
+                homeSeasonBullpenSummary
               )}
             </div>
           </section>
@@ -2886,7 +3152,12 @@ function App() {
                         <strong>
                           Vs {lineupTeam.opposingStarter?.name} ({lineupTeam.opposingStarter?.hand}HP, {lineupTeam.opposingStarter?.type?.toLowerCase() || 'unknown lane'})
                         </strong>
-                        <small>{lineupTeam.opposingStarter?.pitchMixSummary || 'Pitch mix not stored'}</small>
+                        <small>Starter mix: {lineupTeam.opposingStarter?.pitchMixSummary || 'Pitch mix not stored'}</small>
+                        {lineupTeam.summary?.bullpenPitchTypeSummary?.firstReliever?.pitchMixSummary ? (
+                          <small>
+                            1st bridge mix: {lineupTeam.summary.bullpenPitchTypeSummary.firstReliever.name} · {lineupTeam.summary.bullpenPitchTypeSummary.firstReliever.pitchMixSummary}
+                          </small>
+                        ) : null}
                       </div>
                       <p className="react-section-copy">{lineupTeam.summary?.overview || lineupTeam.summary?.bullpenOverview || lineupTeam.opposingStarter?.pitchMixSummary}</p>
                       <div className="react-pill-row">

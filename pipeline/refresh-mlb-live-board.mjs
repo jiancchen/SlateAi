@@ -41,8 +41,16 @@ const runPythonWarehouse = (command, extraArgs = []) => {
   })
 }
 
+const runPythonScript = (scriptName, extraArgs = []) => {
+  execFileSync('python3', [path.join(rootDir, 'pipeline', scriptName), ...extraArgs], {
+    cwd: rootDir,
+    stdio: 'inherit'
+  })
+}
+
 const main = () => {
   const options = parseArgs()
+  const seasonYear = Number(options.date.slice(0, 4))
   const generateArgs = ['--date', options.date]
 
   if (options.baselineContextDate) {
@@ -51,6 +59,8 @@ const main = () => {
 
   // Refresh rolling bullpen and starter-form context before rebuilding the board.
   runPythonWarehouse('prepare-mlb-day', ['--date', options.date, '--lookback-days', '3'])
+  // Keep current and previous season starter WAR context available for the NRFI lane and pitcher cards.
+  runPythonWarehouse('ingest-pitcher-war', ['--season', String(seasonYear), '--season', String(seasonYear - 1)])
   // Keep hidden behavioral profiles collecting automatically for offline research.
   runPythonWarehouse('derive-hidden-edge-features', ['--as-of-date', options.date])
   // Track mistake-shape vectors so the model stops flattening chaos into averages.
@@ -61,6 +71,8 @@ const main = () => {
   runPythonWarehouse('derive-state-snapshots', ['--as-of-date', options.date])
   // Keep Tier 3 research tables collecting automatically even while the live model ignores them.
   runPythonWarehouse('derive-tier3-features', ['--as-of-date', options.date])
+  // Capture today's FanDuel pitcher strikeout lines before we build the slate and prop board.
+  runPythonScript('fetch_fanduel_research_mlb.py', ['--start-date', options.date, '--end-date', options.date, '--markets', 'strikeouts'])
   runNodeScript('generate-mlb-day-files.mjs', generateArgs)
   runNodeScript('export-mlb-lineup-model.mjs', ['--date', options.date])
   runNodeScript('export-mlb-veto-artifact.mjs', ['--date', options.date])
