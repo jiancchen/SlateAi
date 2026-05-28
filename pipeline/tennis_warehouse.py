@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
 RANKINGS_PATH = ROOT / "data-private" / "reference" / "tennis" / "player-rankings.json"
 FLASHSCORE_DIR = ROOT / "data-private" / "reference" / "tennis" / "flashscore-match-stats"
+SOFASCORE_DIR = ROOT / "data-private" / "reference" / "tennis" / "sofascore-match-data"
 TENNIS_REFERENCE_DIR = ROOT / "data-private" / "reference" / "tennis"
 PUBLISHED_SLATES_DIR = ROOT / "published-data" / "slates"
 
@@ -342,6 +343,77 @@ def init_db(conn: sqlite3.Connection) -> None:
           primary key (board_match_id, board_player_name, recent_index)
         );
 
+        create table if not exists tennis_sofascore_matches (
+          sofascore_event_id text primary key,
+          slate_date text,
+          board_match_id text,
+          source_url text,
+          captured_at text,
+          status_code integer,
+          slug text,
+          tournament_name text,
+          tournament_category text,
+          surface text,
+          start_timestamp integer,
+          home_player_name text,
+          away_player_name text,
+          home_normalized_name text,
+          away_normalized_name text,
+          home_player_id integer,
+          away_player_id integer,
+          home_rank integer,
+          away_rank integer,
+          home_current_rank integer,
+          away_current_rank integer,
+          home_country text,
+          away_country text,
+          home_score_json text,
+          away_score_json text,
+          h2h_home_wins integer,
+          h2h_away_wins integer,
+          h2h_draws integer,
+          raw_json text not null,
+          updated_at text not null default current_timestamp
+        );
+
+        create table if not exists tennis_sofascore_stat_rows (
+          sofascore_event_id text not null,
+          period text not null,
+          group_name text not null,
+          stat_key text not null,
+          stat_name text not null,
+          home_player_name text,
+          away_player_name text,
+          home_value text,
+          away_value text,
+          home_numeric real,
+          away_numeric real,
+          home_percentage real,
+          away_percentage real,
+          raw_json text not null,
+          updated_at text not null default current_timestamp,
+          primary key (sofascore_event_id, period, group_name, stat_key)
+        );
+
+        create table if not exists tennis_sofascore_player_stat_rows (
+          sofascore_event_id text not null,
+          slate_date text,
+          board_match_id text,
+          player_side text not null,
+          period text not null,
+          group_name text not null,
+          stat_key text not null,
+          stat_name text not null,
+          player_name text,
+          normalized_name text,
+          raw_value text,
+          numeric_value real,
+          percentage real,
+          raw_json text not null,
+          updated_at text not null default current_timestamp,
+          primary key (sofascore_event_id, player_side, period, group_name, stat_key)
+        );
+
         create index if not exists idx_tennis_matches_slate_date on tennis_matches(slate_date);
         create index if not exists idx_tennis_recent_opponent_rank on tennis_recent_matches(opponent_rank);
         create index if not exists idx_tennis_context_rank on tennis_player_match_context(rank);
@@ -351,6 +423,10 @@ def init_db(conn: sqlite3.Connection) -> None:
         create index if not exists idx_tennis_prediction_market_snapshots_date on tennis_prediction_market_snapshots(slate_date);
         create index if not exists idx_tennis_match_results_date on tennis_match_results(slate_date);
         create index if not exists idx_tennis_prediction_grades_date on tennis_prediction_grades(slate_date);
+        create index if not exists idx_tennis_sofascore_matches_board on tennis_sofascore_matches(board_match_id);
+        create index if not exists idx_tennis_sofascore_stat_rows_event on tennis_sofascore_stat_rows(sofascore_event_id);
+        create index if not exists idx_tennis_sofascore_player_stat_rows_board
+          on tennis_sofascore_player_stat_rows(board_match_id, normalized_name);
         """
     )
     existing_market_columns = {
@@ -507,6 +583,26 @@ def parse_flashscore_stat_value(value: Any) -> dict[str, float | None]:
     if numeric_match:
         parsed["numeric_value"] = as_float(text)
     return parsed
+
+
+def parse_sofascore_stat_value(value: Any) -> dict[str, float | None]:
+    text = str(value or "").strip()
+    parsed: dict[str, float | None] = {
+        "percentage": None,
+        "numeric_value": None,
+    }
+    percent_match = re.search(r"(-?\d+(?:\.\d+)?)%", text)
+    numeric_match = re.search(r"^-?\d+(?:\.\d+)?$", text)
+    if percent_match:
+        parsed["percentage"] = as_float(percent_match.group(1))
+    if numeric_match:
+        parsed["numeric_value"] = as_float(text)
+    return parsed
+
+
+def country_alpha3(team: dict[str, Any] | None) -> str | None:
+    country = (team or {}).get("country") or {}
+    return country.get("alpha3") or country.get("alpha2") or country.get("name")
 
 
 def import_slate(conn: sqlite3.Connection, slate_date: str) -> dict[str, int]:
@@ -1214,6 +1310,211 @@ def import_flashscore(conn: sqlite3.Connection, directory: Path = FLASHSCORE_DIR
     return counts
 
 
+def import_sofascore(conn: sqlite3.Connection, directory: Path = SOFASCORE_DIR) -> dict[str, int]:
+    counts = {"matches": 0, "stat_rows": 0, "player_stat_rows": 0}
+    if not directory.exists():
+        return counts
+
+    for file_path in sorted(directory.glob("*.json")):
+        payload = read_json(file_path)
+        if not payload.get("eventId") or not ((payload.get("payloads") or {}).get("event")):
+            continue
+        event_id = str(payload.get("eventId") or file_path.stem)
+        event_response = (payload.get("payloads") or {}).get("event") or {}
+        event = ((event_response.get("body") or {}).get("event")) or payload.get("compactEvent") or {}
+        stats_response = (payload.get("payloads") or {}).get("statistics") or {}
+        stats_body = stats_response.get("body") or {}
+        h2h_response = (payload.get("payloads") or {}).get("h2h") or {}
+        h2h_body = h2h_response.get("body") or {}
+        team_duel = h2h_body.get("teamDuel") or {}
+        tournament = event.get("tournament") or {}
+        category = tournament.get("category") or {}
+        if isinstance(category, dict):
+            tournament_category = category.get("name")
+        else:
+            tournament_category = category
+        home = event.get("homeTeam") or {}
+        away = event.get("awayTeam") or {}
+        home_info = home.get("playerTeamInfo") or {}
+        away_info = away.get("playerTeamInfo") or {}
+        home_name = home.get("name")
+        away_name = away.get("name")
+        upsert_player(conn, home_name)
+        upsert_player(conn, away_name)
+
+        conn.execute(
+            """
+            insert into tennis_sofascore_matches(
+              sofascore_event_id, slate_date, board_match_id, source_url,
+              captured_at, status_code, slug, tournament_name, tournament_category,
+              surface, start_timestamp, home_player_name, away_player_name,
+              home_normalized_name, away_normalized_name, home_player_id,
+              away_player_id, home_rank, away_rank, home_current_rank,
+              away_current_rank, home_country, away_country, home_score_json,
+              away_score_json, h2h_home_wins, h2h_away_wins, h2h_draws,
+              raw_json
+            )
+            values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            on conflict(sofascore_event_id) do update set
+              slate_date=excluded.slate_date,
+              board_match_id=excluded.board_match_id,
+              source_url=excluded.source_url,
+              captured_at=excluded.captured_at,
+              status_code=excluded.status_code,
+              slug=excluded.slug,
+              tournament_name=excluded.tournament_name,
+              tournament_category=excluded.tournament_category,
+              surface=excluded.surface,
+              start_timestamp=excluded.start_timestamp,
+              home_player_name=excluded.home_player_name,
+              away_player_name=excluded.away_player_name,
+              home_normalized_name=excluded.home_normalized_name,
+              away_normalized_name=excluded.away_normalized_name,
+              home_player_id=excluded.home_player_id,
+              away_player_id=excluded.away_player_id,
+              home_rank=excluded.home_rank,
+              away_rank=excluded.away_rank,
+              home_current_rank=excluded.home_current_rank,
+              away_current_rank=excluded.away_current_rank,
+              home_country=excluded.home_country,
+              away_country=excluded.away_country,
+              home_score_json=excluded.home_score_json,
+              away_score_json=excluded.away_score_json,
+              h2h_home_wins=excluded.h2h_home_wins,
+              h2h_away_wins=excluded.h2h_away_wins,
+              h2h_draws=excluded.h2h_draws,
+              raw_json=excluded.raw_json,
+              updated_at=current_timestamp
+            """,
+            (
+                event_id,
+                payload.get("slateDate"),
+                payload.get("boardMatchId"),
+                payload.get("sourceUrl"),
+                payload.get("capturedAt"),
+                as_int(event_response.get("status")),
+                event.get("slug"),
+                tournament.get("name"),
+                tournament_category,
+                event.get("groundType"),
+                as_int(event.get("startTimestamp")),
+                home_name,
+                away_name,
+                normalize_name(home_name),
+                normalize_name(away_name),
+                as_int(home.get("id")),
+                as_int(away.get("id")),
+                as_int(home.get("ranking")),
+                as_int(away.get("ranking")),
+                as_int(home_info.get("currentRanking")),
+                as_int(away_info.get("currentRanking")),
+                country_alpha3(home),
+                country_alpha3(away),
+                dumps(event.get("homeScore")),
+                dumps(event.get("awayScore")),
+                as_int(team_duel.get("homeWins")),
+                as_int(team_duel.get("awayWins")),
+                as_int(team_duel.get("draws")),
+                dumps(payload),
+            ),
+        )
+        counts["matches"] += 1
+
+        for period in stats_body.get("statistics") or []:
+            period_label = period.get("period") or "ALL"
+            for group in period.get("groups") or []:
+                group_name = group.get("groupName") or ""
+                for item in group.get("statisticsItems") or []:
+                    stat_name = item.get("name") or ""
+                    stat_key = item.get("key") or normalize_name(stat_name).replace(" ", "_")
+                    home_parsed = parse_sofascore_stat_value(item.get("home"))
+                    away_parsed = parse_sofascore_stat_value(item.get("away"))
+                    conn.execute(
+                        """
+                        insert into tennis_sofascore_stat_rows(
+                          sofascore_event_id, period, group_name, stat_key, stat_name,
+                          home_player_name, away_player_name, home_value, away_value,
+                          home_numeric, away_numeric, home_percentage, away_percentage,
+                          raw_json
+                        )
+                        values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        on conflict(sofascore_event_id, period, group_name, stat_key) do update set
+                          stat_name=excluded.stat_name,
+                          home_player_name=excluded.home_player_name,
+                          away_player_name=excluded.away_player_name,
+                          home_value=excluded.home_value,
+                          away_value=excluded.away_value,
+                          home_numeric=excluded.home_numeric,
+                          away_numeric=excluded.away_numeric,
+                          home_percentage=excluded.home_percentage,
+                          away_percentage=excluded.away_percentage,
+                          raw_json=excluded.raw_json,
+                          updated_at=current_timestamp
+                        """,
+                        (
+                            event_id,
+                            period_label,
+                            group_name,
+                            stat_key,
+                            stat_name,
+                            home_name,
+                            away_name,
+                            item.get("home"),
+                            item.get("away"),
+                            as_float(item.get("homeValue")) if item.get("homeValue") is not None else home_parsed["numeric_value"],
+                            as_float(item.get("awayValue")) if item.get("awayValue") is not None else away_parsed["numeric_value"],
+                            home_parsed["percentage"],
+                            away_parsed["percentage"],
+                            dumps(item),
+                        ),
+                    )
+                    counts["stat_rows"] += 1
+                    for side, player_name, raw_value, parsed_value, numeric_value in (
+                        ("home", home_name, item.get("home"), home_parsed, item.get("homeValue")),
+                        ("away", away_name, item.get("away"), away_parsed, item.get("awayValue")),
+                    ):
+                        conn.execute(
+                            """
+                            insert into tennis_sofascore_player_stat_rows(
+                              sofascore_event_id, slate_date, board_match_id, player_side,
+                              period, group_name, stat_key, stat_name, player_name,
+                              normalized_name, raw_value, numeric_value, percentage, raw_json
+                            )
+                            values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                            on conflict(sofascore_event_id, player_side, period, group_name, stat_key) do update set
+                              slate_date=excluded.slate_date,
+                              board_match_id=excluded.board_match_id,
+                              stat_name=excluded.stat_name,
+                              player_name=excluded.player_name,
+                              normalized_name=excluded.normalized_name,
+                              raw_value=excluded.raw_value,
+                              numeric_value=excluded.numeric_value,
+                              percentage=excluded.percentage,
+                              raw_json=excluded.raw_json,
+                              updated_at=current_timestamp
+                            """,
+                            (
+                                event_id,
+                                payload.get("slateDate"),
+                                payload.get("boardMatchId"),
+                                side,
+                                period_label,
+                                group_name,
+                                stat_key,
+                                stat_name,
+                                player_name,
+                                normalize_name(player_name),
+                                raw_value,
+                                as_float(numeric_value) if numeric_value is not None else parsed_value["numeric_value"],
+                                parsed_value["percentage"],
+                                dumps({"stat": item, "side": side}),
+                            ),
+                        )
+                        counts["player_stat_rows"] += 1
+    conn.commit()
+    return counts
+
+
 def import_results(conn: sqlite3.Connection, slate_date: str, file_path: Path | None = None) -> dict[str, int]:
     path = file_path or (TENNIS_REFERENCE_DIR / f"espn-scoreboard-{slate_date}.json")
     payload = read_json(path)
@@ -1385,6 +1686,9 @@ def print_summary(conn: sqlite3.Connection) -> None:
         "tennis_recent_matches": "select count(*) as count from tennis_recent_matches",
         "tennis_flashscore_stat_rows": "select count(*) as count from tennis_flashscore_stat_rows",
         "tennis_flashscore_player_stat_rows": "select count(*) as count from tennis_flashscore_player_stat_rows",
+        "tennis_sofascore_matches": "select slate_date, count(*) as count from tennis_sofascore_matches group by slate_date order by slate_date",
+        "tennis_sofascore_stat_rows": "select count(*) as count from tennis_sofascore_stat_rows",
+        "tennis_sofascore_player_stat_rows": "select count(*) as count from tennis_sofascore_player_stat_rows",
         "tennis_match_results": "select slate_date, count(*) as count from tennis_match_results group by slate_date order by slate_date",
         "tennis_prediction_grades": "select slate_date, hit, count(*) as count from tennis_prediction_grades group by slate_date, hit order by slate_date, hit",
     }
@@ -1407,6 +1711,9 @@ def main() -> None:
 
     flashscore_parser = subparsers.add_parser("import-flashscore")
     flashscore_parser.add_argument("--dir", default=str(FLASHSCORE_DIR))
+
+    sofascore_parser = subparsers.add_parser("import-sofascore")
+    sofascore_parser.add_argument("--dir", default=str(SOFASCORE_DIR))
 
     results_parser = subparsers.add_parser("import-results")
     results_parser.add_argument("--date", required=True)
@@ -1431,6 +1738,9 @@ def main() -> None:
         print(json.dumps(counts, indent=2, sort_keys=True))
     elif args.command == "import-flashscore":
         counts = import_flashscore(conn, Path(args.dir))
+        print(json.dumps(counts, indent=2, sort_keys=True))
+    elif args.command == "import-sofascore":
+        counts = import_sofascore(conn, Path(args.dir))
         print(json.dumps(counts, indent=2, sort_keys=True))
     elif args.command == "import-results":
         counts = import_results(conn, args.date, Path(args.file) if args.file else None)

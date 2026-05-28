@@ -1,0 +1,477 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/daria-kasatkina-susan-bandecchi#id:16198586",
+  "eventId": "16198586",
+  "slateDate": "2026-05-28",
+  "boardMatchId": "rg-w-daria-kasatkina-susan-bandecchi-2026-05-28",
+  "boardTitle": "Daria Kasatkina vs Susan Bandecchi",
+  "capturedAt": "2026-05-28T02:55:47.252Z",
+  "compactEvent": {
+    "id": 16198586,
+    "slug": "daria-kasatkina-susan-bandecchi",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1779969000,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "WTA",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 32,
+      "name": "Round of 64",
+      "slug": "round-of-64"
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 132370,
+      "name": "Daria Kasatkina",
+      "shortName": "D. Kasatkina",
+      "ranking": 53,
+      "currentRanking": 42,
+      "country": {
+        "alpha2": "AU",
+        "alpha3": "AUS",
+        "name": "Australia",
+        "slug": "australia"
+      },
+      "playerTeamInfo": {
+        "height": 1.7,
+        "weight": 62,
+        "plays": "right-handed",
+        "turnedPro": "2014",
+        "prizeCurrent": 284412,
+        "prizeTotal": 12672990,
+        "birthCity": {
+          "name": "Togliatty",
+          "country": {
+            "alpha2": "RU",
+            "alpha3": "RUS",
+            "name": "Russia",
+            "slug": "russia"
+          },
+          "id": 35401
+        },
+        "residenceCity": {
+          "name": "Melbourne",
+          "country": {
+            "alpha2": "AU",
+            "alpha3": "AUS",
+            "name": "Australia",
+            "slug": "australia"
+          },
+          "id": 17959
+        },
+        "id": 126,
+        "birthplace": "Togliatty, Russia",
+        "birthDateTimestamp": 862963200,
+        "residence": "Melbourne, Australia",
+        "prizeCurrentRaw": {
+          "value": 284412,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 12672990,
+          "currency": "EUR"
+        },
+        "currentRanking": 42
+      }
+    },
+    "awayTeam": {
+      "id": 96061,
+      "name": "Susan Bandecchi",
+      "shortName": "S. Bandecchi",
+      "ranking": 215,
+      "currentRanking": 168,
+      "country": {
+        "alpha2": "CH",
+        "alpha3": "CHE",
+        "name": "Switzerland",
+        "slug": "switzerland"
+      },
+      "playerTeamInfo": {
+        "plays": "right-handed",
+        "prizeCurrent": 16152,
+        "prizeTotal": 413956,
+        "id": 2593,
+        "birthDateTimestamp": 899251200,
+        "prizeCurrentRaw": {
+          "value": 16152,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 413956,
+          "currency": "EUR"
+        },
+        "currentRanking": 168
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "awayTeamSeed": "Q",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "WTA",
+              "slug": "wta",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 6,
+              "country": {},
+              "id": 6,
+              "flag": "wta",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "رابطة لاعبات التنس",
+                  "hi": "चैलेंजर",
+                  "bn": "ডব্লিউটিএ",
+                  "ru": "WTA"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "WTA",
+                "slug": "wta",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 6,
+                "country": {},
+                "id": 6,
+                "flag": "wta",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "ar": "رابطة لاعبات التنس",
+                    "hi": "चैलेंजर",
+                    "bn": "ডব্লিউটিএ",
+                    "ru": "WTA"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 11467,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2577,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गारोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185246,
+            "endTimestamp": 1780704000,
+            "startTimestamp": 1779580800
+          },
+          "season": {
+            "name": "French Open Women Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85953
+          },
+          "roundInfo": {
+            "round": 32,
+            "name": "Round of 64",
+            "slug": "round-of-64"
+          },
+          "customId": "lwNsvXcb",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-12",
+            "name": "Court 12",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 21831,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب 12",
+                "hi": "कोर्ट 12",
+                "bn": "কোর্ট 12"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court 12"
+            }
+          },
+          "homeTeam": {
+            "name": "Daria Kasatkina",
+            "slug": "kasatkina-daria",
+            "shortName": "D. Kasatkina",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 7908,
+            "playerTeamInfo": {
+              "height": 1.7,
+              "weight": 62,
+              "plays": "right-handed",
+              "turnedPro": "2014",
+              "prizeCurrent": 284412,
+              "prizeTotal": 12672990,
+              "birthCity": {
+                "name": "Togliatty",
+                "country": {
+                  "alpha2": "RU",
+                  "alpha3": "RUS",
+                  "name": "Russia",
+                  "slug": "russia"
+                },
+                "id": 35401
+              },
+              "residenceCity": {
+                "name": "Melbourne",
+                "country": {
+                  "alpha2": "AU",
+                  "alpha3": "AUS",
+                  "name": "Australia",
+                  "slug": "australia"
+                },
+                "id": 17959
+              },
+              "id": 126,
+              "birthplace": "Togliatty, Russia",
+              "birthDateTimestamp": 862963200,
+              "residence": "Melbourne, Australia",
+              "prizeCurrentRaw": {
+                "value": 284412,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 12672990,
+                "currency": "EUR"
+              },
+              "currentRanking": 42
+            },
+            "nameCode": "KAS",
+            "ranking": 53,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "AU",
+              "alpha3": "AUS",
+              "name": "Australia",
+              "slug": "australia"
+            },
+            "id": 132370,
+            "fullName": "Daria Kasatkina",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "داريا كاساتكينا",
+                "ru": "Касаткина, Дарья"
+              },
+              "shortNameTranslation": {
+                "ar": "د. كاساتكينا",
+                "bn": "ডি. কাসাটকিনা",
+                "hi": "डी. कासात्किना"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Susan Bandecchi",
+            "slug": "bandecchi-susan",
+            "shortName": "S. Bandecchi",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 954,
+            "playerTeamInfo": {
+              "plays": "right-handed",
+              "prizeCurrent": 16152,
+              "prizeTotal": 413956,
+              "id": 2593,
+              "birthDateTimestamp": 899251200,
+              "prizeCurrentRaw": {
+                "value": 16152,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 413956,
+                "currency": "EUR"
+              },
+              "currentRanking": 168
+            },
+            "nameCode": "BAN",
+            "ranking": 215,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "CH",
+              "alpha3": "CHE",
+              "name": "Switzerland",
+              "slug": "switzerland"
+            },
+            "id": 96061,
+            "fullName": "Susan Bandecchi",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "سوزان باندكشي",
+                "bn": "সুসান বন্দেচি",
+                "hi": "सुसान बांदेक्की",
+                "ru": "Сусан Бандеччи"
+              },
+              "shortNameTranslation": {
+                "ar": "س. باندكشي"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198586,
+          "defaultPeriodCount": 3,
+          "slug": "daria-kasatkina-susan-bandecchi",
+          "startTimestamp": 1779969000,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "SG",
+            "IR",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "F"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": null,
+        "managerDuel": null
+      }
+    },
+    "odds": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

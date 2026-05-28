@@ -1,0 +1,528 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/francisco-cerundolo-hugo-gaston#id:16198492",
+  "eventId": "16198492",
+  "slateDate": "2026-05-28",
+  "boardMatchId": "rg-m-francisco-cerundolo-hugo-gaston-2026-05-28",
+  "boardTitle": "Francisco Cerundolo vs Hugo Gaston",
+  "capturedAt": "2026-05-28T02:55:40.471Z",
+  "compactEvent": {
+    "id": 16198492,
+    "slug": "francisco-cerundolo-hugo-gaston",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1779963000,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "ATP",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 32,
+      "name": "Round of 64",
+      "slug": "round-of-64"
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 221012,
+      "name": "Francisco Cerundolo",
+      "shortName": "F. Cerundolo",
+      "ranking": 26,
+      "currentRanking": 9,
+      "country": {
+        "alpha2": "AR",
+        "alpha3": "ARG",
+        "name": "Argentina",
+        "slug": "argentina"
+      },
+      "playerTeamInfo": {
+        "height": 1.85,
+        "weight": 80,
+        "plays": "right-handed",
+        "prizeCurrent": 948875,
+        "prizeTotal": 8757484,
+        "birthCity": {
+          "name": "Buenos Aires",
+          "country": {
+            "alpha2": "AR",
+            "alpha3": "ARG",
+            "name": "Argentina",
+            "slug": "argentina"
+          },
+          "id": 18696
+        },
+        "residenceCity": {
+          "name": "Buenos Aires",
+          "country": {
+            "alpha2": "AR",
+            "alpha3": "ARG",
+            "name": "Argentina",
+            "slug": "argentina"
+          },
+          "id": 18696
+        },
+        "id": 2868,
+        "birthplace": "Buenos Aires, Argentina",
+        "birthDateTimestamp": 902966400,
+        "residence": "Buenos Aires, Argentina",
+        "prizeCurrentRaw": {
+          "value": 948875,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 8757484,
+          "currency": "EUR"
+        },
+        "currentRanking": 9
+      }
+    },
+    "awayTeam": {
+      "id": 205906,
+      "name": "Hugo Gaston",
+      "shortName": "H. Gaston",
+      "ranking": 118,
+      "currentRanking": 118,
+      "country": {
+        "alpha2": "FR",
+        "alpha3": "FRA",
+        "name": "France",
+        "slug": "france"
+      },
+      "playerTeamInfo": {
+        "height": 1.73,
+        "weight": 68,
+        "plays": "left-handed",
+        "prizeCurrent": 175914,
+        "prizeTotal": 3342019,
+        "birthCity": {
+          "name": "Toulouse",
+          "country": {
+            "alpha2": "FR",
+            "alpha3": "FRA",
+            "name": "France",
+            "slug": "france"
+          },
+          "id": 19430
+        },
+        "residenceCity": {
+          "name": "Fonsorbes",
+          "country": {
+            "alpha2": "FR",
+            "alpha3": "FRA",
+            "name": "France",
+            "slug": "france"
+          },
+          "id": 36093
+        },
+        "id": 2731,
+        "birthplace": "Toulouse, France",
+        "birthDateTimestamp": 969926400,
+        "residence": "Fonsorbes, France",
+        "prizeCurrentRaw": {
+          "value": 175914,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 3342019,
+          "currency": "EUR"
+        },
+        "currentRanking": 118
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "homeTeamSeed": "25",
+          "awayTeamSeed": "WC",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "ATP",
+              "slug": "atp",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 7,
+              "country": {},
+              "id": 3,
+              "flag": "atp",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "এটিপি",
+                  "hi": "डब्ल्यूटीए",
+                  "ar": "رابطة محترفي التنس",
+                  "ru": "ATP"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "ATP",
+                "slug": "atp",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 7,
+                "country": {},
+                "id": 3,
+                "flag": "atp",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "এটিপি",
+                    "hi": "डब्ल्यूटीए",
+                    "ar": "رابطة محترفي التنس",
+                    "ru": "ATP"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 35147,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2480,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गर्रोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185245,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1779580800
+          },
+          "season": {
+            "name": "French Open Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85951
+          },
+          "roundInfo": {
+            "round": 32,
+            "name": "Round of 64",
+            "slug": "round-of-64"
+          },
+          "customId": "gtHbsmvNb",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-simonne-mathieu",
+            "name": "Court Simonne Mathieu",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 25283,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب سيمون ماتيو",
+                "hi": "कोर्ट सिमोन मैथ्यू",
+                "bn": "কোর্ট সাইমন ম্যাথিউ"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court Simonne Mathieu"
+            }
+          },
+          "homeTeam": {
+            "name": "Francisco Cerundolo",
+            "slug": "cerundolo-francisco",
+            "shortName": "F. Cerundolo",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 21598,
+            "playerTeamInfo": {
+              "height": 1.85,
+              "weight": 80,
+              "plays": "right-handed",
+              "prizeCurrent": 948875,
+              "prizeTotal": 8757484,
+              "birthCity": {
+                "name": "Buenos Aires",
+                "country": {
+                  "alpha2": "AR",
+                  "alpha3": "ARG",
+                  "name": "Argentina",
+                  "slug": "argentina"
+                },
+                "id": 18696
+              },
+              "residenceCity": {
+                "name": "Buenos Aires",
+                "country": {
+                  "alpha2": "AR",
+                  "alpha3": "ARG",
+                  "name": "Argentina",
+                  "slug": "argentina"
+                },
+                "id": 18696
+              },
+              "id": 2868,
+              "birthplace": "Buenos Aires, Argentina",
+              "birthDateTimestamp": 902966400,
+              "residence": "Buenos Aires, Argentina",
+              "prizeCurrentRaw": {
+                "value": 948875,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 8757484,
+                "currency": "EUR"
+              },
+              "currentRanking": 9
+            },
+            "nameCode": "CER",
+            "ranking": 26,
+            "class": 1,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "AR",
+              "alpha3": "ARG",
+              "name": "Argentina",
+              "slug": "argentina"
+            },
+            "id": 221012,
+            "fullName": "Francisco Cerundolo",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "فرانسيسكو سيروندولو",
+                "ru": "Серундоло, Франсиско"
+              },
+              "shortNameTranslation": {
+                "ar": "ف. سيروندولو",
+                "bn": "এফ. সেরুন্ডলো",
+                "hi": "एफ. सेरुंडोलो"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Hugo Gaston",
+            "slug": "gaston-hugo",
+            "shortName": "H. Gaston",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 5172,
+            "playerTeamInfo": {
+              "height": 1.73,
+              "weight": 68,
+              "plays": "left-handed",
+              "prizeCurrent": 175914,
+              "prizeTotal": 3342019,
+              "birthCity": {
+                "name": "Toulouse",
+                "country": {
+                  "alpha2": "FR",
+                  "alpha3": "FRA",
+                  "name": "France",
+                  "slug": "france"
+                },
+                "id": 19430
+              },
+              "residenceCity": {
+                "name": "Fonsorbes",
+                "country": {
+                  "alpha2": "FR",
+                  "alpha3": "FRA",
+                  "name": "France",
+                  "slug": "france"
+                },
+                "id": 36093
+              },
+              "id": 2731,
+              "birthplace": "Toulouse, France",
+              "birthDateTimestamp": 969926400,
+              "residence": "Fonsorbes, France",
+              "prizeCurrentRaw": {
+                "value": 175914,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 3342019,
+                "currency": "EUR"
+              },
+              "currentRanking": 118
+            },
+            "nameCode": "GAS",
+            "ranking": 118,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 205906,
+            "fullName": "Hugo Gaston",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "هوجو غاستون",
+                "bn": "হুগো গ্যাস্টন",
+                "hi": "ह्यूगो गैस्टोन",
+                "ru": "Гастон, Юго"
+              },
+              "shortNameTranslation": {
+                "ar": "ه. غاستون"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198492,
+          "defaultPeriodCount": 5,
+          "slug": "francisco-cerundolo-hugo-gaston",
+          "startTimestamp": 1779963000,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "SG",
+            "IR",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": {
+          "homeWins": 1,
+          "awayWins": 1,
+          "draws": 0
+        },
+        "managerDuel": null
+      }
+    },
+    "odds": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

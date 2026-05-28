@@ -1,0 +1,935 @@
+{
+  "date": "2026-05-28",
+  "generatedAt": "2026-05-28T02:56:50.142358+00:00",
+  "source": "SQLite tennis warehouse",
+  "matches": {
+    "rg-m-adolfo-daniel-vallejo-moise-kouame-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198496",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/moise-kouame-adolfo-daniel-vallejo#id:16198496",
+      "capturedAt": "2026-05-28T02:55:38.851Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "ATP",
+      "startTimestamp": 1779958800,
+      "players": [],
+      "h2h": {
+        "homeName": "Adolfo Daniel Vallejo",
+        "awayName": "Moise Kouame",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-m-alejandro-tabilo-valentin-vacherot-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198494",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/valentin-vacherot-alejandro-tabilo#id:16198494",
+      "capturedAt": "2026-05-28T02:55:41.228Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "ATP",
+      "startTimestamp": 1779969000,
+      "players": [],
+      "h2h": {
+        "homeName": "Alejandro Tabilo",
+        "awayName": "Valentin Vacherot",
+        "homeWins": 1,
+        "awayWins": 1,
+        "draws": 0
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": true,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-m-arthur-rinderknech-matteo-berrettini-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198470",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/matteo-berrettini-arthur-rinderknech#id:16198470",
+      "capturedAt": "2026-05-28T02:55:43.860Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "ATP",
+      "startTimestamp": 1779992100,
+      "players": [],
+      "h2h": {
+        "homeName": "Arthur Rinderknech",
+        "awayName": "Matteo Berrettini",
+        "homeWins": 1,
+        "awayWins": 0,
+        "draws": 0
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": true,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-m-facundo-diaz-acosta-learner-tien-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198493",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/learner-tien-facundo-diaz-acosta#id:16198493",
+      "capturedAt": "2026-05-28T02:55:39.188Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "ATP",
+      "startTimestamp": 1779958800,
+      "players": [],
+      "h2h": {
+        "homeName": "Facundo Diaz Acosta",
+        "awayName": "Learner Tien",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-m-felix-auger-aliassime-roman-andres-burruchaga-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198490",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/roman-andres-burruchaga-felix-auger-aliassime#id:16198490",
+      "capturedAt": "2026-05-28T02:55:43.596Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "ATP",
+      "startTimestamp": 1779976800,
+      "players": [],
+      "h2h": {
+        "homeName": "Felix Auger-Aliassime",
+        "awayName": "Roman Andres Burruchaga",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-m-flavio-cobolli-wu-yibing-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198491",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/flavio-cobolli-yibing-wu#id:16198491",
+      "capturedAt": "2026-05-28T02:55:39.445Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "ATP",
+      "startTimestamp": 1779958800,
+      "players": [],
+      "h2h": {
+        "homeName": "Flavio Cobolli",
+        "awayName": "Yibing Wu",
+        "homeWins": 1,
+        "awayWins": 0,
+        "draws": 0
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": true,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-m-francisco-cerundolo-hugo-gaston-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198492",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/francisco-cerundolo-hugo-gaston#id:16198492",
+      "capturedAt": "2026-05-28T02:55:40.471Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "ATP",
+      "startTimestamp": 1779963000,
+      "players": [],
+      "h2h": {
+        "homeName": "Francisco Cerundolo",
+        "awayName": "Hugo Gaston",
+        "homeWins": 1,
+        "awayWins": 1,
+        "draws": 0
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": true,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-m-francisco-comesana-luciano-darderi-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198502",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/luciano-darderi-francisco-comesana#id:16198502",
+      "capturedAt": "2026-05-28T02:55:41.473Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "ATP",
+      "startTimestamp": 1779969000,
+      "players": [],
+      "h2h": {
+        "homeName": "Francisco Comesaña",
+        "awayName": "Luciano Darderi",
+        "homeWins": 2,
+        "awayWins": 0,
+        "draws": 0
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": true,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-m-hubert-hurkacz-frances-tiafoe-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198501",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/hubert-hurkacz-frances-tiafoe#id:16198501",
+      "capturedAt": "2026-05-28T02:55:40.710Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "ATP",
+      "startTimestamp": 1779963000,
+      "players": [],
+      "h2h": {
+        "homeName": "Hubert Hurkacz",
+        "awayName": "Frances Tiafoe",
+        "homeWins": 3,
+        "awayWins": 4,
+        "draws": 0
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": true,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-m-jan-lennard-struff-jaime-faria-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198497",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/jaime-faria-jan-lennard-struff#id:16198497",
+      "capturedAt": "2026-05-28T02:55:39.680Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "ATP",
+      "startTimestamp": 1779958800,
+      "players": [],
+      "h2h": {
+        "homeName": "Jan-Lennard Struff",
+        "awayName": "Jaime Faria",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-m-jannik-sinner-juan-manuel-cerundolo-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198471",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/juan-manuel-cerundolo-jannik-sinner#id:16198471",
+      "capturedAt": "2026-05-28T02:55:40.235Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "ATP",
+      "startTimestamp": 1779962400,
+      "players": [],
+      "h2h": {
+        "homeName": "Jannik Sinner",
+        "awayName": "Juan Manuel Cerundolo",
+        "homeWins": 1,
+        "awayWins": 0,
+        "draws": 0
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": true,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-m-luca-van-assche-brandon-nakashima-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198488",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/luca-van-assche-brandon-nakashima#id:16198488",
+      "capturedAt": "2026-05-28T02:55:42.841Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "ATP",
+      "startTimestamp": 1779973200,
+      "players": [],
+      "h2h": {
+        "homeName": "Luca Van Assche",
+        "awayName": "Brandon Nakashima",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-m-martin-landaluce-vit-kopriva-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198472",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/martin-landaluce-vit-kopriva#id:16198472",
+      "capturedAt": "2026-05-28T02:55:40.959Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "ATP",
+      "startTimestamp": 1779963000,
+      "players": [],
+      "h2h": {
+        "homeName": "Martin Landaluce",
+        "awayName": "Vit Kopřiva",
+        "homeWins": 0,
+        "awayWins": 1,
+        "draws": 0
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": true,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-m-matteo-arnaldi-stefanos-tsitsipas-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198500",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/matteo-arnaldi-stefanos-tsitsipas#id:16198500",
+      "capturedAt": "2026-05-28T02:55:43.097Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "ATP",
+      "startTimestamp": 1779973200,
+      "players": [],
+      "h2h": {
+        "homeName": "Matteo Arnaldi",
+        "awayName": "Stefanos Tsitsipas",
+        "homeWins": 0,
+        "awayWins": 1,
+        "draws": 0
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": true,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-m-raphael-collignon-ben-shelton-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198489",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/ben-shelton-raphael-collignon#id:16198489",
+      "capturedAt": "2026-05-28T02:55:43.345Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "ATP",
+      "startTimestamp": 1779973200,
+      "players": [],
+      "h2h": {
+        "homeName": "Raphael Collignon",
+        "awayName": "Ben Shelton",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-m-zachary-svajda-adam-walton-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198487",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/zachary-svajda-adam-walton#id:16198487",
+      "capturedAt": "2026-05-28T02:55:39.929Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "ATP",
+      "startTimestamp": 1779958800,
+      "players": [],
+      "h2h": {
+        "homeName": "Zachary Svajda",
+        "awayName": "Adam Walton",
+        "homeWins": 2,
+        "awayWins": 1,
+        "draws": 0
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": true,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-w-ann-li-diane-parry-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198549",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/diane-parry-ann-li#id:16198549",
+      "capturedAt": "2026-05-28T02:55:46.368Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "WTA",
+      "startTimestamp": 1779968400,
+      "players": [],
+      "h2h": {
+        "homeName": "Ann Li",
+        "awayName": "Diane Parry",
+        "homeWins": 1,
+        "awayWins": 0,
+        "draws": 0
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": true,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-w-anna-kalinskaya-alina-korneeva-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198543",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/alina-korneeva-anna-kalinskaya#id:16198543",
+      "capturedAt": "2026-05-28T02:55:44.963Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "WTA",
+      "startTimestamp": 1779964800,
+      "players": [],
+      "h2h": {
+        "homeName": "Anna Kalinskaya",
+        "awayName": "Alina Korneeva",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-w-antonia-ruzic-madison-keys-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198583",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/antonia-ruzic-madison-keys#id:16198583",
+      "capturedAt": "2026-05-28T02:55:46.617Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "WTA",
+      "startTimestamp": 1779969000,
+      "players": [],
+      "h2h": {
+        "homeName": "Antonia Ružić",
+        "awayName": "Madison Keys",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-w-aryna-sabalenka-elsa-jacquemot-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198578",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/elsa-jacquemot-aryna-sabalenka#id:16198578",
+      "capturedAt": "2026-05-28T02:55:48.050Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "WTA",
+      "startTimestamp": 1779972600,
+      "players": [],
+      "h2h": {
+        "homeName": "Aryna Sabalenka",
+        "awayName": "Elsa Jacquemot",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-w-coco-gauff-mayar-sherif-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198536",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/coco-gauff-mayar-sherif#id:16198536",
+      "capturedAt": "2026-05-28T02:55:47.010Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "WTA",
+      "startTimestamp": 1779969000,
+      "players": [],
+      "h2h": {
+        "homeName": "Coco Gauff",
+        "awayName": "Mayar Sherif",
+        "homeWins": 1,
+        "awayWins": 0,
+        "draws": 0
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": true,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-w-daria-kasatkina-susan-bandecchi-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198586",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/daria-kasatkina-susan-bandecchi#id:16198586",
+      "capturedAt": "2026-05-28T02:55:47.252Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "WTA",
+      "startTimestamp": 1779969000,
+      "players": [],
+      "h2h": {
+        "homeName": "Daria Kasatkina",
+        "awayName": "Susan Bandecchi",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-w-diana-shnaider-mccartney-kessler-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198581",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/diana-shnaider-mccartney-kessler#id:16198581",
+      "capturedAt": "2026-05-28T02:55:45.195Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "WTA",
+      "startTimestamp": 1779964800,
+      "players": [],
+      "h2h": {
+        "homeName": "Diana Shnaider",
+        "awayName": "McCartney Kessler",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-w-donna-vekic-naomi-osaka-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198590",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/naomi-osaka-donna-vekic#id:16198590",
+      "capturedAt": "2026-05-28T02:55:44.098Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "WTA",
+      "startTimestamp": 1779958800,
+      "players": [],
+      "h2h": {
+        "homeName": "Donna Vekić",
+        "awayName": "Naomi Osaka",
+        "homeWins": 0,
+        "awayWins": 2,
+        "draws": 0
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": true,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-w-iva-jovic-emma-navarro-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198585",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/iva-jovic-emma-navarro#id:16198585",
+      "capturedAt": "2026-05-28T02:55:44.334Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "WTA",
+      "startTimestamp": 1779958800,
+      "players": [],
+      "h2h": {
+        "homeName": "Iva Jovic",
+        "awayName": "Emma Navarro",
+        "homeWins": 0,
+        "awayWins": 1,
+        "draws": 0
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": true,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-w-julia-grabher-amanda-anisimova-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198534",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/amanda-anisimova-julia-grabher#id:16198534",
+      "capturedAt": "2026-05-28T02:55:45.579Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "WTA",
+      "startTimestamp": 1779964800,
+      "players": [],
+      "h2h": {
+        "homeName": "Julia Grabher",
+        "awayName": "Amanda Anisimova",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-w-katie-boulter-anastasia-potapova-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198550",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/anastasia-potapova-katie-boulter#id:16198550",
+      "capturedAt": "2026-05-28T02:55:48.279Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "WTA",
+      "startTimestamp": 1779975000,
+      "players": [],
+      "h2h": {
+        "homeName": "Katie Boulter",
+        "awayName": "Anastasia Potapova",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-w-maja-chwalinska-elise-mertens-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198548",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/maja-chwalinska-elise-mertens#id:16198548",
+      "capturedAt": "2026-05-28T02:55:45.829Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "WTA",
+      "startTimestamp": 1779964800,
+      "players": [],
+      "h2h": {
+        "homeName": "Maja Chwalinska",
+        "awayName": "Elise Mertens",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-w-maria-sakkari-claire-liu-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198544",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/claire-liu-maria-sakkari#id:16198544",
+      "capturedAt": "2026-05-28T02:55:47.660Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "WTA",
+      "startTimestamp": 1779969000,
+      "players": [],
+      "h2h": {
+        "homeName": "Maria Sakkari",
+        "awayName": "Claire Liu",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-w-oleksandra-oliynykova-kimberly-birrell-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198587",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/oleksandra-oliynykova-kimberly-birrell#id:16198587",
+      "capturedAt": "2026-05-28T02:55:44.579Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "WTA",
+      "startTimestamp": 1779958800,
+      "players": [],
+      "h2h": {
+        "homeName": "Oleksandra Oliynykova",
+        "awayName": "Kimberly Birrell",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-w-victoria-mboko-katerina-siniakova-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198580",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/victoria-mboko-katerina-siniakova#id:16198580",
+      "capturedAt": "2026-05-28T02:55:48.516Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "WTA",
+      "startTimestamp": 1779982800,
+      "players": [],
+      "h2h": {
+        "homeName": "Victoria Mboko",
+        "awayName": "Katerina Siniakova",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    },
+    "rg-w-yulia-putintseva-camila-osorio-2026-05-28": {
+      "source": "SofaScore warehouse",
+      "eventId": "16198552",
+      "sourceUrl": "https://www.sofascore.com/tennis/match/camila-osorio-yulia-putintseva#id:16198552",
+      "capturedAt": "2026-05-28T02:55:46.119Z",
+      "surface": "Red clay",
+      "tournament": "French Open, Paris, France",
+      "category": "WTA",
+      "startTimestamp": 1779964800,
+      "players": [],
+      "h2h": {
+        "homeName": "Yulia Putintseva",
+        "awayName": "Camila Osorio",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null
+      },
+      "score": {
+        "home": {},
+        "away": {}
+      },
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": true,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0
+      }
+    }
+  }
+}

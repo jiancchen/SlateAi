@@ -1,0 +1,495 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/luca-van-assche-brandon-nakashima#id:16198488",
+  "eventId": "16198488",
+  "slateDate": "2026-05-28",
+  "boardMatchId": "rg-m-luca-van-assche-brandon-nakashima-2026-05-28",
+  "boardTitle": "Luca Van Assche vs Brandon Nakashima",
+  "capturedAt": "2026-05-28T02:55:42.841Z",
+  "compactEvent": {
+    "id": 16198488,
+    "slug": "luca-van-assche-brandon-nakashima",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1779973200,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "ATP",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 32,
+      "name": "Round of 64",
+      "slug": "round-of-64"
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 335102,
+      "name": "Luca Van Assche",
+      "shortName": "L. Van Assche",
+      "ranking": 100,
+      "currentRanking": 93,
+      "country": {
+        "alpha2": "FR",
+        "alpha3": "FRA",
+        "name": "France",
+        "slug": "france"
+      },
+      "playerTeamInfo": {
+        "height": 1.78,
+        "weight": 72,
+        "plays": "right-handed",
+        "prizeCurrent": 192765,
+        "prizeTotal": 2078517,
+        "birthCity": {
+          "name": "Woluwe St Lambert",
+          "country": {
+            "alpha2": "BE",
+            "alpha3": "BEL",
+            "name": "Belgium",
+            "slug": "belgium"
+          },
+          "id": 35272
+        },
+        "id": 4788,
+        "birthplace": "Woluwe St Lambert, Belgium",
+        "birthDateTimestamp": 1084233600,
+        "prizeCurrentRaw": {
+          "value": 192765,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 2078517,
+          "currency": "EUR"
+        },
+        "currentRanking": 93
+      }
+    },
+    "awayTeam": {
+      "id": 235576,
+      "name": "Brandon Nakashima",
+      "shortName": "B. Nakashima",
+      "ranking": 35,
+      "currentRanking": 22,
+      "country": {
+        "alpha2": "US",
+        "alpha3": "USA",
+        "name": "USA",
+        "slug": "usa"
+      },
+      "playerTeamInfo": {
+        "height": 1.88,
+        "weight": 83,
+        "plays": "right-handed",
+        "turnedPro": "2020",
+        "prizeCurrent": 532825,
+        "prizeTotal": 6546369,
+        "birthCity": {
+          "name": "San Diego",
+          "state": "US-CA",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 24732
+        },
+        "residenceCity": {
+          "name": "United States",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 23990
+        },
+        "id": 2981,
+        "birthplace": "San Diego, California, USA",
+        "birthDateTimestamp": 996796800,
+        "residence": "United States, USA",
+        "prizeCurrentRaw": {
+          "value": 532825,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 6546369,
+          "currency": "EUR"
+        },
+        "currentRanking": 22
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "awayTeamSeed": "31",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "ATP",
+              "slug": "atp",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 7,
+              "country": {},
+              "id": 3,
+              "flag": "atp",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "এটিপি",
+                  "hi": "डब्ल्यूटीए",
+                  "ar": "رابطة محترفي التنس",
+                  "ru": "ATP"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "ATP",
+                "slug": "atp",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 7,
+                "country": {},
+                "id": 3,
+                "flag": "atp",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "এটিপি",
+                    "hi": "डब्ल्यूटीए",
+                    "ar": "رابطة محترفي التنس",
+                    "ru": "ATP"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 35147,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2480,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गर्रोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185245,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1779580800
+          },
+          "season": {
+            "name": "French Open Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85951
+          },
+          "roundInfo": {
+            "round": 32,
+            "name": "Round of 64",
+            "slug": "round-of-64"
+          },
+          "customId": "BlUbsccJc",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-7",
+            "name": "Court 7",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 21829,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب 7",
+                "hi": "कोर्ट 7",
+                "bn": "কোর্ট 7"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court 7"
+            }
+          },
+          "homeTeam": {
+            "name": "Luca Van Assche",
+            "slug": "van-assche-luca",
+            "shortName": "L. Van Assche",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 4025,
+            "playerTeamInfo": {
+              "height": 1.78,
+              "weight": 72,
+              "plays": "right-handed",
+              "prizeCurrent": 192765,
+              "prizeTotal": 2078517,
+              "birthCity": {
+                "name": "Woluwe St Lambert",
+                "country": {
+                  "alpha2": "BE",
+                  "alpha3": "BEL",
+                  "name": "Belgium",
+                  "slug": "belgium"
+                },
+                "id": 35272
+              },
+              "id": 4788,
+              "birthplace": "Woluwe St Lambert, Belgium",
+              "birthDateTimestamp": 1084233600,
+              "prizeCurrentRaw": {
+                "value": 192765,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 2078517,
+                "currency": "EUR"
+              },
+              "currentRanking": 93
+            },
+            "nameCode": "VAN",
+            "ranking": 100,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 335102,
+            "fullName": "Luca Van Assche",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "لوكا فان أسيش"
+              },
+              "shortNameTranslation": {
+                "ar": "ل. فان أسيش",
+                "bn": "এল. ভ্যান অ্যাশে",
+                "hi": "एल. वान एस्च"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Brandon Nakashima",
+            "slug": "nakashima-brandon",
+            "shortName": "B. Nakashima",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 7709,
+            "playerTeamInfo": {
+              "height": 1.88,
+              "weight": 83,
+              "plays": "right-handed",
+              "turnedPro": "2020",
+              "prizeCurrent": 532825,
+              "prizeTotal": 6546369,
+              "birthCity": {
+                "name": "San Diego",
+                "state": "US-CA",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 24732
+              },
+              "residenceCity": {
+                "name": "United States",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 23990
+              },
+              "id": 2981,
+              "birthplace": "San Diego, California, USA",
+              "birthDateTimestamp": 996796800,
+              "residence": "United States, USA",
+              "prizeCurrentRaw": {
+                "value": 532825,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 6546369,
+                "currency": "EUR"
+              },
+              "currentRanking": 22
+            },
+            "nameCode": "NAK",
+            "ranking": 35,
+            "class": 4,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "US",
+              "alpha3": "USA",
+              "name": "USA",
+              "slug": "usa"
+            },
+            "id": 235576,
+            "fullName": "Brandon Nakashima",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "براندون ناكاشيما",
+                "bn": "বি ল্যান্ডন নাকাজিমা",
+                "hi": "ब्रैंडन नकशिमा",
+                "ru": "Накасима, Брэндон"
+              },
+              "shortNameTranslation": {
+                "ar": "ب. ناكاشيما"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198488,
+          "defaultPeriodCount": 5,
+          "slug": "luca-van-assche-brandon-nakashima",
+          "startTimestamp": 1779973200,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": null,
+        "managerDuel": null
+      }
+    },
+    "odds": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

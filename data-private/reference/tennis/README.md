@@ -37,3 +37,12 @@ Flashscore service/return stats:
 - For slate detail pages, run `npm run data:fetch:tennis-flashscore-recent -- --input web/src/lib/day-YYYY-MM-DD-tennis-opponent-quality.generated.json --map-output data-private/reference/tennis/flashscore-recent-match-map-YYYY-MM-DD.json`.
 - The recent-match pass resolves known tournament result pages, fetches each matched Flashscore stat feed, stores the raw match JSON, and writes a join map keyed by board match, player, and recent-match index.
 - Import the stored Flashscore rows into SQLite with `npm run data:import:tennis-flashscore` so service/return stats are available in `tennis_flashscore_player_stat_rows` and recent-card joins are queryable from `tennis_flashscore_recent_links`.
+
+SofaScore match/H2H stats:
+- Use SofaScore when we have an event page URL and need confirmed event metadata, H2H counts, red-clay surface, completed score, and detailed match statistics by set.
+- Fetch a match with `npm run data:fetch:tennis-sofascore-match -- --date YYYY-MM-DD --url "https://www.sofascore.com/tennis/match/...#id:SOFASCORE_EVENT_ID"`.
+- Fetch a whole published slate with `npm run data:fetch:tennis-sofascore-slate -- --date YYYY-MM-DD`; it reads SofaScore's daily tennis schedule, keeps Roland Garros singles, and joins each event back to `published-data/slates/YYYY-MM-DD/games` by player names.
+- The fetcher opens the event in a browser context before calling SofaScore's event, statistics, H2H, and featured-odds endpoints because direct `curl` requests can return 403.
+- Raw files are stored in `sofascore-match-data/SOFASCORE_EVENT_ID.json` and are mapped back to the board match id when `--date` can match the two player names in `published-data/slates/YYYY-MM-DD/games`.
+- Import with `npm run data:import:tennis-sofascore`. Query match metadata in `tennis_sofascore_matches`, flattened home/away stat rows in `tennis_sofascore_stat_rows`, and player-tied rows in `tennis_sofascore_player_stat_rows`.
+- Daily slate warehouse loop: import the published slate with `npm run data:import:tennis-slate -- --date YYYY-MM-DD`, then import Flashscore and SofaScore rows. The slate import warehouses the Tennistonic H2H/clay context already used by the model in `tennis_h2h_snapshots`, `tennis_player_match_context`, and `tennis_recent_matches`.

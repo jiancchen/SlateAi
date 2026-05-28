@@ -1,0 +1,500 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/elsa-jacquemot-aryna-sabalenka#id:16198578",
+  "eventId": "16198578",
+  "slateDate": "2026-05-28",
+  "boardMatchId": "rg-w-aryna-sabalenka-elsa-jacquemot-2026-05-28",
+  "boardTitle": "Aryna Sabalenka vs Elsa Jacquemot",
+  "capturedAt": "2026-05-28T02:55:48.050Z",
+  "compactEvent": {
+    "id": 16198578,
+    "slug": "elsa-jacquemot-aryna-sabalenka",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1779972600,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "WTA",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 32,
+      "name": "Round of 64",
+      "slug": "round-of-64"
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 157754,
+      "name": "Aryna Sabalenka",
+      "shortName": "A. Sabalenka",
+      "ranking": 1,
+      "currentRanking": 1,
+      "country": {
+        "alpha2": "BY",
+        "alpha3": "BLR",
+        "name": "Belarus",
+        "slug": "belarus"
+      },
+      "playerTeamInfo": {
+        "height": 1.82,
+        "plays": "right-handed",
+        "turnedPro": "2015",
+        "prizeCurrent": 3538853,
+        "prizeTotal": 42841643,
+        "birthCity": {
+          "name": "Minsk",
+          "country": {
+            "alpha2": "BY",
+            "alpha3": "BLR",
+            "name": "Belarus",
+            "slug": "belarus"
+          },
+          "id": 19492
+        },
+        "residenceCity": {
+          "name": "Miami",
+          "state": "US-FL",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 18016
+        },
+        "id": 115,
+        "birthplace": "Minsk, Belarus",
+        "birthDateTimestamp": 894326400,
+        "residence": "Miami, Florida, USA",
+        "prizeCurrentRaw": {
+          "value": 3538853,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 42841643,
+          "currency": "EUR"
+        },
+        "currentRanking": 1
+      }
+    },
+    "awayTeam": {
+      "id": 275530,
+      "name": "Elsa Jacquemot",
+      "shortName": "E. Jacquemot",
+      "ranking": 67,
+      "currentRanking": 67,
+      "country": {
+        "alpha2": "FR",
+        "alpha3": "FRA",
+        "name": "France",
+        "slug": "france"
+      },
+      "playerTeamInfo": {
+        "height": 1.76,
+        "plays": "right-handed",
+        "prizeCurrent": 295275,
+        "prizeTotal": 1724272,
+        "birthCity": {
+          "name": "Lyon",
+          "country": {
+            "alpha2": "FR",
+            "alpha3": "FRA",
+            "name": "France",
+            "slug": "france"
+          },
+          "id": 19067
+        },
+        "id": 3609,
+        "birthplace": "Lyon, France",
+        "birthDateTimestamp": 1051920000,
+        "prizeCurrentRaw": {
+          "value": 295275,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 1724272,
+          "currency": "EUR"
+        },
+        "currentRanking": 67
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "homeTeamSeed": "1",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "WTA",
+              "slug": "wta",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 6,
+              "country": {},
+              "id": 6,
+              "flag": "wta",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "رابطة لاعبات التنس",
+                  "hi": "चैलेंजर",
+                  "bn": "ডব্লিউটিএ",
+                  "ru": "WTA"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "WTA",
+                "slug": "wta",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 6,
+                "country": {},
+                "id": 6,
+                "flag": "wta",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "ar": "رابطة لاعبات التنس",
+                    "hi": "चैलेंजर",
+                    "bn": "ডব্লিউটিএ",
+                    "ru": "WTA"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 11467,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2577,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गारोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185246,
+            "endTimestamp": 1780704000,
+            "startTimestamp": 1779580800
+          },
+          "season": {
+            "name": "French Open Women Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85953
+          },
+          "roundInfo": {
+            "round": 32,
+            "name": "Round of 64",
+            "slug": "round-of-64"
+          },
+          "customId": "efnbsFkkc",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-philippe-chatrier",
+            "name": "Court Philippe Chatrier",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 17178,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب فيليب شاترييه",
+                "hi": "कोर्ट फिलिप चैट्रियर",
+                "bn": "কোর্ট ফিলিপ চ্যাট্রিয়ার"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court Philippe Chatrier"
+            }
+          },
+          "homeTeam": {
+            "name": "Aryna Sabalenka",
+            "slug": "sabalenka-aryna",
+            "shortName": "A. Sabalenka",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 74855,
+            "playerTeamInfo": {
+              "height": 1.82,
+              "plays": "right-handed",
+              "turnedPro": "2015",
+              "prizeCurrent": 3538853,
+              "prizeTotal": 42841643,
+              "birthCity": {
+                "name": "Minsk",
+                "country": {
+                  "alpha2": "BY",
+                  "alpha3": "BLR",
+                  "name": "Belarus",
+                  "slug": "belarus"
+                },
+                "id": 19492
+              },
+              "residenceCity": {
+                "name": "Miami",
+                "state": "US-FL",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 18016
+              },
+              "id": 115,
+              "birthplace": "Minsk, Belarus",
+              "birthDateTimestamp": 894326400,
+              "residence": "Miami, Florida, USA",
+              "prizeCurrentRaw": {
+                "value": 3538853,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 42841643,
+                "currency": "EUR"
+              },
+              "currentRanking": 1
+            },
+            "nameCode": "SAB",
+            "ranking": 1,
+            "class": 4,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "BY",
+              "alpha3": "BLR",
+              "name": "Belarus",
+              "slug": "belarus"
+            },
+            "id": 157754,
+            "fullName": "Aryna Sabalenka",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "أريانا سابالينكا",
+                "ru": "Соболенко, Арина"
+              },
+              "shortNameTranslation": {
+                "ar": "أ. سابالينكا",
+                "bn": "এ সাবালেঙ্কা",
+                "hi": "ए. सबलेंका"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Elsa Jacquemot",
+            "slug": "jacquemot-elsa",
+            "shortName": "E. Jacquemot",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 3538,
+            "playerTeamInfo": {
+              "height": 1.76,
+              "plays": "right-handed",
+              "prizeCurrent": 295275,
+              "prizeTotal": 1724272,
+              "birthCity": {
+                "name": "Lyon",
+                "country": {
+                  "alpha2": "FR",
+                  "alpha3": "FRA",
+                  "name": "France",
+                  "slug": "france"
+                },
+                "id": 19067
+              },
+              "id": 3609,
+              "birthplace": "Lyon, France",
+              "birthDateTimestamp": 1051920000,
+              "prizeCurrentRaw": {
+                "value": 295275,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 1724272,
+                "currency": "EUR"
+              },
+              "currentRanking": 67
+            },
+            "nameCode": "JAC",
+            "ranking": 67,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 275530,
+            "fullName": "Elsa Jacquemot",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "إلسا جاكيمو",
+                "bn": "এলসা জ্যাকমোট",
+                "hi": "एल्सा जैक्वेमोट",
+                "ru": "Жакемо, Эльза"
+              },
+              "shortNameTranslation": {
+                "ar": "إ. جاكيمو"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198578,
+          "defaultPeriodCount": 3,
+          "slug": "elsa-jacquemot-aryna-sabalenka",
+          "startTimestamp": 1779972600,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "SG",
+            "IR",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "F"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": null,
+        "managerDuel": null
+      }
+    },
+    "odds": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

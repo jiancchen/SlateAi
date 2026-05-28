@@ -1,0 +1,530 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/matteo-berrettini-arthur-rinderknech#id:16198470",
+  "eventId": "16198470",
+  "slateDate": "2026-05-28",
+  "boardMatchId": "rg-m-arthur-rinderknech-matteo-berrettini-2026-05-28",
+  "boardTitle": "Arthur Rinderknech vs Matteo Berrettini",
+  "capturedAt": "2026-05-28T02:55:43.860Z",
+  "compactEvent": {
+    "id": 16198470,
+    "slug": "matteo-berrettini-arthur-rinderknech",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1779992100,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "ATP",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 32,
+      "name": "Round of 64",
+      "slug": "round-of-64"
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 63606,
+      "name": "Arthur Rinderknech",
+      "shortName": "A. Rinderknech",
+      "ranking": 25,
+      "currentRanking": 22,
+      "country": {
+        "alpha2": "FR",
+        "alpha3": "FRA",
+        "name": "France",
+        "slug": "france"
+      },
+      "playerTeamInfo": {
+        "height": 1.96,
+        "weight": 88,
+        "plays": "right-handed",
+        "prizeCurrent": 579671,
+        "prizeTotal": 6064397,
+        "birthCity": {
+          "name": "Gassin",
+          "country": {
+            "alpha2": "FR",
+            "alpha3": "FRA",
+            "name": "France",
+            "slug": "france"
+          },
+          "id": 35375
+        },
+        "residenceCity": {
+          "name": "Paris",
+          "country": {
+            "alpha2": "FR",
+            "alpha3": "FRA",
+            "name": "France",
+            "slug": "france"
+          },
+          "id": 17983
+        },
+        "id": 626,
+        "birthplace": "Gassin, France",
+        "birthDateTimestamp": 806457600,
+        "residence": "Paris, France",
+        "prizeCurrentRaw": {
+          "value": 579671,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 6064397,
+          "currency": "EUR"
+        },
+        "currentRanking": 22
+      }
+    },
+    "awayTeam": {
+      "id": 112783,
+      "name": "Matteo Berrettini",
+      "shortName": "M. Berrettini",
+      "ranking": 105,
+      "currentRanking": 74,
+      "country": {
+        "alpha2": "IT",
+        "alpha3": "ITA",
+        "name": "Italy",
+        "slug": "italy"
+      },
+      "playerTeamInfo": {
+        "height": 1.96,
+        "weight": 95,
+        "plays": "right-handed",
+        "turnedPro": "2015",
+        "prizeCurrent": 310440,
+        "prizeTotal": 12293645,
+        "birthCity": {
+          "name": "Rome",
+          "country": {
+            "alpha2": "IT",
+            "alpha3": "ITA",
+            "name": "Italy",
+            "slug": "italy"
+          },
+          "id": 18725
+        },
+        "residenceCity": {
+          "name": "Rome",
+          "country": {
+            "alpha2": "IT",
+            "alpha3": "ITA",
+            "name": "Italy",
+            "slug": "italy"
+          },
+          "id": 18725
+        },
+        "id": 56,
+        "birthplace": "Rome, Italy",
+        "birthDateTimestamp": 829267200,
+        "residence": "Rome, Italy",
+        "prizeCurrentRaw": {
+          "value": 310440,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 12293645,
+          "currency": "EUR"
+        },
+        "currentRanking": 74
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "homeTeamSeed": "22",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "ATP",
+              "slug": "atp",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 7,
+              "country": {},
+              "id": 3,
+              "flag": "atp",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "এটিপি",
+                  "hi": "डब्ल्यूटीए",
+                  "ar": "رابطة محترفي التنس",
+                  "ru": "ATP"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "ATP",
+                "slug": "atp",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 7,
+                "country": {},
+                "id": 3,
+                "flag": "atp",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "এটিপি",
+                    "hi": "डब्ल्यूटीए",
+                    "ar": "رابطة محترفي التنس",
+                    "ru": "ATP"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 35147,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2480,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गर्रोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185245,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1779580800
+          },
+          "season": {
+            "name": "French Open Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85951
+          },
+          "roundInfo": {
+            "round": 32,
+            "name": "Round of 64",
+            "slug": "round-of-64"
+          },
+          "customId": "gxAsIfV",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-philippe-chatrier",
+            "name": "Court Philippe Chatrier",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 17178,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب فيليب شاترييه",
+                "hi": "कोर्ट फिलिप चैट्रियर",
+                "bn": "কোর্ট ফিলিপ চ্যাট্রিয়ার"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court Philippe Chatrier"
+            }
+          },
+          "homeTeam": {
+            "name": "Arthur Rinderknech",
+            "slug": "rinderknech-arthur",
+            "shortName": "A. Rinderknech",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 9340,
+            "playerTeamInfo": {
+              "height": 1.96,
+              "weight": 88,
+              "plays": "right-handed",
+              "prizeCurrent": 579671,
+              "prizeTotal": 6064397,
+              "birthCity": {
+                "name": "Gassin",
+                "country": {
+                  "alpha2": "FR",
+                  "alpha3": "FRA",
+                  "name": "France",
+                  "slug": "france"
+                },
+                "id": 35375
+              },
+              "residenceCity": {
+                "name": "Paris",
+                "country": {
+                  "alpha2": "FR",
+                  "alpha3": "FRA",
+                  "name": "France",
+                  "slug": "france"
+                },
+                "id": 17983
+              },
+              "id": 626,
+              "birthplace": "Gassin, France",
+              "birthDateTimestamp": 806457600,
+              "residence": "Paris, France",
+              "prizeCurrentRaw": {
+                "value": 579671,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 6064397,
+                "currency": "EUR"
+              },
+              "currentRanking": 22
+            },
+            "nameCode": "RIN",
+            "ranking": 25,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 63606,
+            "fullName": "Arthur Rinderknech",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "آرثر ريندركنش",
+                "bn": "আর্থার রিন্ডারকনেচ",
+                "hi": "आर्थर रिंडरक्नेक",
+                "ru": "Риндеркнеч, Артур"
+              },
+              "shortNameTranslation": {
+                "ar": "آ. ريندركنش"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Matteo Berrettini",
+            "slug": "berrettini-matteo",
+            "shortName": "M. Berrettini",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 39756,
+            "playerTeamInfo": {
+              "height": 1.96,
+              "weight": 95,
+              "plays": "right-handed",
+              "turnedPro": "2015",
+              "prizeCurrent": 310440,
+              "prizeTotal": 12293645,
+              "birthCity": {
+                "name": "Rome",
+                "country": {
+                  "alpha2": "IT",
+                  "alpha3": "ITA",
+                  "name": "Italy",
+                  "slug": "italy"
+                },
+                "id": 18725
+              },
+              "residenceCity": {
+                "name": "Rome",
+                "country": {
+                  "alpha2": "IT",
+                  "alpha3": "ITA",
+                  "name": "Italy",
+                  "slug": "italy"
+                },
+                "id": 18725
+              },
+              "id": 56,
+              "birthplace": "Rome, Italy",
+              "birthDateTimestamp": 829267200,
+              "residence": "Rome, Italy",
+              "prizeCurrentRaw": {
+                "value": 310440,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 12293645,
+                "currency": "EUR"
+              },
+              "currentRanking": 74
+            },
+            "nameCode": "BER",
+            "ranking": 105,
+            "class": 4,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "IT",
+              "alpha3": "ITA",
+              "name": "Italy",
+              "slug": "italy"
+            },
+            "id": 112783,
+            "fullName": "Matteo Berrettini",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ماتيو بيريتيني",
+                "ru": "Берреттини, Маттео"
+              },
+              "shortNameTranslation": {
+                "ar": "م. بيريتيني",
+                "bn": "এম. বেরেটিনি",
+                "hi": "एम. बेरेटिनी"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198470,
+          "defaultPeriodCount": 5,
+          "slug": "matteo-berrettini-arthur-rinderknech",
+          "startTimestamp": 1779992100,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "SG",
+            "IR",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": {
+          "homeWins": 1,
+          "awayWins": 0,
+          "draws": 0
+        },
+        "managerDuel": null
+      }
+    },
+    "odds": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

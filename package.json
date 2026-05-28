@@ -79,9 +79,13 @@
     "data:fetch:tennis-scoreboard": "node pipeline/fetch-espn-tennis-scoreboard.mjs",
     "data:fetch:tennis-flashscore-slate": "node pipeline/fetch-flashscore-tennis-slate.mjs",
     "data:fetch:tennis-flashscore-recent": "node pipeline/fetch-flashscore-tennis-recent-stats.mjs",
+    "data:fetch:tennis-sofascore-match": "node pipeline/fetch-sofascore-tennis-match.mjs",
+    "data:fetch:tennis-sofascore-slate": "node pipeline/fetch-sofascore-tennis-slate.mjs",
     "data:import:tennis-results": "python3 pipeline/tennis_warehouse.py import-results",
     "data:grade:tennis": "python3 pipeline/tennis_warehouse.py grade",
     "data:import:tennis-flashscore": "python3 pipeline/tennis_warehouse.py import-flashscore",
+    "data:import:tennis-sofascore": "python3 pipeline/tennis_warehouse.py import-sofascore",
+    "data:export:tennis-warehouse-context": "python3 pipeline/export_tennis_warehouse_context.py",
     "data:summary:tennis": "python3 pipeline/tennis_warehouse.py summary",
     "data:import:mlb-props": "python3 pipeline/mlb_warehouse.py import-prop-predictions",
     "data:grade:mlb-props": "python3 pipeline/mlb_warehouse.py grade-prop-picks"

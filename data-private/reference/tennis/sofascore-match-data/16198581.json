@@ -1,0 +1,473 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/diana-shnaider-mccartney-kessler#id:16198581",
+  "eventId": "16198581",
+  "slateDate": "2026-05-28",
+  "boardMatchId": "rg-w-diana-shnaider-mccartney-kessler-2026-05-28",
+  "boardTitle": "Diana Shnaider vs McCartney Kessler",
+  "capturedAt": "2026-05-28T02:55:45.195Z",
+  "compactEvent": {
+    "id": 16198581,
+    "slug": "diana-shnaider-mccartney-kessler",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1779964800,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "WTA",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 32,
+      "name": "Round of 64",
+      "slug": "round-of-64"
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 318575,
+      "name": "Diana Shnaider",
+      "shortName": "D. Shnaider",
+      "ranking": 23,
+      "currentRanking": 17,
+      "country": {
+        "alpha2": "RU",
+        "alpha3": "RUS",
+        "name": "Russia",
+        "slug": "russia"
+      },
+      "playerTeamInfo": {
+        "height": 1.7,
+        "plays": "left-handed",
+        "prizeCurrent": 828337,
+        "prizeTotal": 4501610,
+        "birthCity": {
+          "name": "Zhigulevsk",
+          "country": {
+            "alpha2": "RU",
+            "alpha3": "RUS",
+            "name": "Russia",
+            "slug": "russia"
+          },
+          "id": 24526
+        },
+        "id": 5086,
+        "birthplace": "Zhigulevsk, Russia",
+        "birthDateTimestamp": 1080864000,
+        "prizeCurrentRaw": {
+          "value": 828337,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 4501610,
+          "currency": "EUR"
+        },
+        "currentRanking": 17
+      }
+    },
+    "awayTeam": {
+      "id": 233214,
+      "name": "McCartney Kessler",
+      "shortName": "M. Kessler",
+      "ranking": 48,
+      "currentRanking": 37,
+      "country": {
+        "alpha2": "US",
+        "alpha3": "USA",
+        "name": "USA",
+        "slug": "usa"
+      },
+      "playerTeamInfo": {
+        "height": 1.75,
+        "plays": "right-handed",
+        "prizeCurrent": 323372,
+        "prizeTotal": 1958123,
+        "birthCity": {
+          "name": "Lawrenceville",
+          "country": {
+            "alpha2": "GE",
+            "alpha3": "GEO",
+            "name": "Georgia",
+            "slug": "georgia"
+          },
+          "id": 35034
+        },
+        "id": 3522,
+        "birthplace": "Lawrenceville, Georgia",
+        "birthDateTimestamp": 931392000,
+        "prizeCurrentRaw": {
+          "value": 323372,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 1958123,
+          "currency": "EUR"
+        },
+        "currentRanking": 37
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "homeTeamSeed": "25",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "WTA",
+              "slug": "wta",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 6,
+              "country": {},
+              "id": 6,
+              "flag": "wta",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "رابطة لاعبات التنس",
+                  "hi": "चैलेंजर",
+                  "bn": "ডব্লিউটিএ",
+                  "ru": "WTA"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "WTA",
+                "slug": "wta",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 6,
+                "country": {},
+                "id": 6,
+                "flag": "wta",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "ar": "رابطة لاعبات التنس",
+                    "hi": "चैलेंजर",
+                    "bn": "ডব্লিউটিএ",
+                    "ru": "WTA"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 11467,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2577,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गारोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185246,
+            "endTimestamp": 1780704000,
+            "startTimestamp": 1779580800
+          },
+          "season": {
+            "name": "French Open Women Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85953
+          },
+          "roundInfo": {
+            "round": 32,
+            "name": "Round of 64",
+            "slug": "round-of-64"
+          },
+          "customId": "ooTbsAwCc",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-7",
+            "name": "Court 7",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 21829,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب 7",
+                "hi": "कोर्ट 7",
+                "bn": "কোর্ট 7"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court 7"
+            }
+          },
+          "homeTeam": {
+            "name": "Diana Shnaider",
+            "slug": "shnaider-diana",
+            "shortName": "D. Shnaider",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 6132,
+            "playerTeamInfo": {
+              "height": 1.7,
+              "plays": "left-handed",
+              "prizeCurrent": 828337,
+              "prizeTotal": 4501610,
+              "birthCity": {
+                "name": "Zhigulevsk",
+                "country": {
+                  "alpha2": "RU",
+                  "alpha3": "RUS",
+                  "name": "Russia",
+                  "slug": "russia"
+                },
+                "id": 24526
+              },
+              "id": 5086,
+              "birthplace": "Zhigulevsk, Russia",
+              "birthDateTimestamp": 1080864000,
+              "prizeCurrentRaw": {
+                "value": 828337,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 4501610,
+                "currency": "EUR"
+              },
+              "currentRanking": 17
+            },
+            "nameCode": "SHN",
+            "ranking": 23,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "RU",
+              "alpha3": "RUS",
+              "name": "Russia",
+              "slug": "russia"
+            },
+            "id": 318575,
+            "fullName": "Diana Shnaider",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ديانا شنايدر",
+                "ru": "Шнайдер, Диана"
+              },
+              "shortNameTranslation": {
+                "ar": "د. شنايدر",
+                "bn": "ডি. শনাইদার",
+                "hi": "डी. श्नाइडर"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "McCartney Kessler",
+            "slug": "kessler-mccartney",
+            "shortName": "M. Kessler",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 4145,
+            "playerTeamInfo": {
+              "height": 1.75,
+              "plays": "right-handed",
+              "prizeCurrent": 323372,
+              "prizeTotal": 1958123,
+              "birthCity": {
+                "name": "Lawrenceville",
+                "country": {
+                  "alpha2": "GE",
+                  "alpha3": "GEO",
+                  "name": "Georgia",
+                  "slug": "georgia"
+                },
+                "id": 35034
+              },
+              "id": 3522,
+              "birthplace": "Lawrenceville, Georgia",
+              "birthDateTimestamp": 931392000,
+              "prizeCurrentRaw": {
+                "value": 323372,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 1958123,
+                "currency": "EUR"
+              },
+              "currentRanking": 37
+            },
+            "nameCode": "KES",
+            "ranking": 48,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "US",
+              "alpha3": "USA",
+              "name": "USA",
+              "slug": "usa"
+            },
+            "id": 233214,
+            "fullName": "McCartney Kessler",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ماكنتني كيسلر",
+                "bn": "ম্যাককার্টনি কেসলার",
+                "hi": "मैककार्टनी केसलर"
+              },
+              "shortNameTranslation": {
+                "ar": "م. كيسلر"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198581,
+          "defaultPeriodCount": 3,
+          "slug": "diana-shnaider-mccartney-kessler",
+          "startTimestamp": 1779964800,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "SG",
+            "IR",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "F"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": null,
+        "managerDuel": null
+      }
+    },
+    "odds": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

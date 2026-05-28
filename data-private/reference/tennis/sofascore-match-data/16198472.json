@@ -1,0 +1,499 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/martin-landaluce-vit-kopriva#id:16198472",
+  "eventId": "16198472",
+  "slateDate": "2026-05-28",
+  "boardMatchId": "rg-m-martin-landaluce-vit-kopriva-2026-05-28",
+  "boardTitle": "Martin Landaluce vs Vit Kopriva",
+  "capturedAt": "2026-05-28T02:55:40.959Z",
+  "compactEvent": {
+    "id": 16198472,
+    "slug": "martin-landaluce-vit-kopriva",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1779963000,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "ATP",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 32,
+      "name": "Round of 64",
+      "slug": "round-of-64"
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 417196,
+      "name": "Martin Landaluce",
+      "shortName": "M. Landaluce",
+      "ranking": 69,
+      "currentRanking": 59,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "playerTeamInfo": {
+        "height": 1.93,
+        "weight": 80,
+        "plays": "right-handed",
+        "prizeCurrent": 442981,
+        "prizeTotal": 1143722,
+        "birthCity": {
+          "name": "Madrid",
+          "country": {
+            "alpha2": "ES",
+            "alpha3": "ESP",
+            "name": "Spain",
+            "slug": "spain"
+          },
+          "id": 18283
+        },
+        "id": 6802,
+        "birthplace": "Madrid, Spain",
+        "birthDateTimestamp": 1136678400,
+        "prizeCurrentRaw": {
+          "value": 442981,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 1143722,
+          "currency": "EUR"
+        },
+        "currentRanking": 59
+      }
+    },
+    "awayTeam": {
+      "id": 199395,
+      "name": "Vit Kopřiva",
+      "shortName": "V. Kopřiva",
+      "ranking": 66,
+      "currentRanking": 62,
+      "country": {
+        "alpha2": "CZ",
+        "alpha3": "CZE",
+        "name": "Czechia",
+        "slug": "czechia"
+      },
+      "playerTeamInfo": {
+        "height": 1.78,
+        "weight": 69,
+        "plays": "right-handed",
+        "prizeCurrent": 546281,
+        "prizeTotal": 1923138,
+        "birthCity": {
+          "name": "Bilovec",
+          "country": {
+            "alpha2": "CZ",
+            "alpha3": "CZE",
+            "name": "Czechia",
+            "slug": "czechia"
+          },
+          "id": 35455
+        },
+        "residenceCity": {
+          "name": "Fulnek",
+          "country": {
+            "alpha2": "CZ",
+            "alpha3": "CZE",
+            "name": "Czechia",
+            "slug": "czechia"
+          },
+          "id": 36131
+        },
+        "id": 2652,
+        "birthplace": "Bilovec, Czechia",
+        "birthDateTimestamp": 866332800,
+        "residence": "Fulnek, Czechia",
+        "prizeCurrentRaw": {
+          "value": 546281,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 1923138,
+          "currency": "EUR"
+        },
+        "currentRanking": 62
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "ATP",
+              "slug": "atp",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 7,
+              "country": {},
+              "id": 3,
+              "flag": "atp",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "এটিপি",
+                  "hi": "डब्ल्यूटीए",
+                  "ar": "رابطة محترفي التنس",
+                  "ru": "ATP"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "ATP",
+                "slug": "atp",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 7,
+                "country": {},
+                "id": 3,
+                "flag": "atp",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "এটিপি",
+                    "hi": "डब्ल्यूटीए",
+                    "ar": "رابطة محترفي التنس",
+                    "ru": "ATP"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 35147,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2480,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गर्रोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185245,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1779580800
+          },
+          "season": {
+            "name": "French Open Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85951
+          },
+          "roundInfo": {
+            "round": 32,
+            "name": "Round of 64",
+            "slug": "round-of-64"
+          },
+          "customId": "VMEbsWTqd",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-9",
+            "name": "Court 9",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 21828,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب 9",
+                "hi": "कोर्ट 9",
+                "bn": "কোর্ট 9"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court 9"
+            }
+          },
+          "homeTeam": {
+            "name": "Martin Landaluce",
+            "slug": "landaluce-martin",
+            "shortName": "M. Landaluce",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 7757,
+            "playerTeamInfo": {
+              "height": 1.93,
+              "weight": 80,
+              "plays": "right-handed",
+              "prizeCurrent": 442981,
+              "prizeTotal": 1143722,
+              "birthCity": {
+                "name": "Madrid",
+                "country": {
+                  "alpha2": "ES",
+                  "alpha3": "ESP",
+                  "name": "Spain",
+                  "slug": "spain"
+                },
+                "id": 18283
+              },
+              "id": 6802,
+              "birthplace": "Madrid, Spain",
+              "birthDateTimestamp": 1136678400,
+              "prizeCurrentRaw": {
+                "value": 442981,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 1143722,
+                "currency": "EUR"
+              },
+              "currentRanking": 59
+            },
+            "nameCode": "LAN",
+            "ranking": 69,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "ES",
+              "alpha3": "ESP",
+              "name": "Spain",
+              "slug": "spain"
+            },
+            "id": 417196,
+            "fullName": "Martin Landaluce",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "مارتين لاندالوسي"
+              },
+              "shortNameTranslation": {
+                "ar": "م. لاندالوسي"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Vit Kopřiva",
+            "slug": "kopriva-vit",
+            "shortName": "V. Kopřiva",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 4415,
+            "playerTeamInfo": {
+              "height": 1.78,
+              "weight": 69,
+              "plays": "right-handed",
+              "prizeCurrent": 546281,
+              "prizeTotal": 1923138,
+              "birthCity": {
+                "name": "Bilovec",
+                "country": {
+                  "alpha2": "CZ",
+                  "alpha3": "CZE",
+                  "name": "Czechia",
+                  "slug": "czechia"
+                },
+                "id": 35455
+              },
+              "residenceCity": {
+                "name": "Fulnek",
+                "country": {
+                  "alpha2": "CZ",
+                  "alpha3": "CZE",
+                  "name": "Czechia",
+                  "slug": "czechia"
+                },
+                "id": 36131
+              },
+              "id": 2652,
+              "birthplace": "Bilovec, Czechia",
+              "birthDateTimestamp": 866332800,
+              "residence": "Fulnek, Czechia",
+              "prizeCurrentRaw": {
+                "value": 546281,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 1923138,
+                "currency": "EUR"
+              },
+              "currentRanking": 62
+            },
+            "nameCode": "KOP",
+            "ranking": 66,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "CZ",
+              "alpha3": "CZE",
+              "name": "Czechia",
+              "slug": "czechia"
+            },
+            "id": 199395,
+            "fullName": "Vit Kopřiva",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "فيت كوبريفا"
+              },
+              "shortNameTranslation": {
+                "ar": "ف. كوبريفا",
+                "bn": "ভি. কোপ্রিভা",
+                "hi": "वी. कोप्रिवा"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198472,
+          "defaultPeriodCount": 5,
+          "slug": "martin-landaluce-vit-kopriva",
+          "startTimestamp": 1779963000,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "SG",
+            "IR",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": {
+          "homeWins": 0,
+          "awayWins": 1,
+          "draws": 0
+        },
+        "managerDuel": null
+      }
+    },
+    "odds": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

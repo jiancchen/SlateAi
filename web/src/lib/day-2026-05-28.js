@@ -1,6 +1,7 @@
 import { createSportsMatchModel } from './sports-model.js'
 import tennisClayContext from './day-2026-05-28-tennis-clay-context.generated.json' with { type: 'json' }
 import tennisOpponentQualityContext from './day-2026-05-28-tennis-opponent-quality.generated.json' with { type: 'json' }
+import tennisWarehouseContext from './day-2026-05-28-tennis-warehouse-context.generated.json' with { type: 'json' }
 
 const rawTennisGames = [
   {
@@ -82,6 +83,20 @@ const rawTennisGames = [
         "gameFlowRead": "Moise Kouame can drop points quickly through double-fault pressure (4.0 avg) and faces too many break points (8.0 avg)."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Adolfo Daniel Vallejo",
+        "confidence": 87,
+        "modelPct": 64,
+        "label": "Strong set-win path"
+      },
+      {
+        "name": "Moise Kouame",
+        "confidence": 64,
+        "modelPct": 36,
+        "label": "Needs early hold pressure"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -324,6 +339,20 @@ const rawTennisGames = [
         "gameFlowRead": "Donna Vekic can drop points quickly through double-fault pressure (4.0 avg)."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Donna Vekic",
+        "confidence": 59,
+        "modelPct": 44,
+        "label": "Needs early hold pressure"
+      },
+      {
+        "name": "Naomi Osaka",
+        "confidence": 72,
+        "modelPct": 56,
+        "label": "Live to win a set"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -567,6 +596,20 @@ const rawTennisGames = [
         "gameFlowRead": "Facundo Diaz Acosta has no major service weakness in the joined Flashscore sample."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Facundo Diaz Acosta",
+        "confidence": 69,
+        "modelPct": 40,
+        "label": "Live to win a set"
+      },
+      {
+        "name": "Learner Tien",
+        "confidence": 85,
+        "modelPct": 60,
+        "label": "Strong set-win path"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -805,6 +848,20 @@ const rawTennisGames = [
         "gameFlowRead": "Wu Yibing has no major service weakness in the joined Flashscore sample."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Flavio Cobolli",
+        "confidence": 87,
+        "modelPct": 61,
+        "label": "Strong set-win path"
+      },
+      {
+        "name": "Wu Yibing",
+        "confidence": 68,
+        "modelPct": 39,
+        "label": "Live to win a set"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -1043,6 +1100,20 @@ const rawTennisGames = [
         "gameFlowRead": "Iva Jovic can drop points quickly through 3 recent matches with serve instability."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Iva Jovic",
+        "confidence": 65,
+        "modelPct": 49,
+        "label": "Needs early hold pressure"
+      },
+      {
+        "name": "Emma Navarro",
+        "confidence": 68,
+        "modelPct": 51,
+        "label": "Live to win a set"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -1282,6 +1353,20 @@ const rawTennisGames = [
         "gameFlowRead": "Jaime Faria has no major service weakness in the joined Flashscore sample."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Jan-Lennard Struff",
+        "confidence": 84,
+        "modelPct": 50,
+        "label": "Strong set-win path"
+      },
+      {
+        "name": "Jaime Faria",
+        "confidence": 84,
+        "modelPct": 50,
+        "label": "Strong set-win path"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -1525,6 +1610,20 @@ const rawTennisGames = [
         "gameFlowRead": "Kimberly Birrell can drop points quickly through low recent hold rate (46%) and first-serve points won below comfort (52%)."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Oleksandra Oliynykova",
+        "confidence": 71,
+        "modelPct": 58,
+        "label": "Live to win a set"
+      },
+      {
+        "name": "Kimberly Birrell",
+        "confidence": 52,
+        "modelPct": 42,
+        "label": "Needs early hold pressure"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -1772,6 +1871,20 @@ const rawTennisGames = [
         "gameFlowRead": "Zachary Svajda can drop points quickly through limited return pressure (25% return points won)."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Zachary Svajda",
+        "confidence": 71,
+        "modelPct": 43,
+        "label": "Live to win a set"
+      },
+      {
+        "name": "Adam Walton",
+        "confidence": 83,
+        "modelPct": 57,
+        "label": "Strong set-win path"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -2015,6 +2128,20 @@ const rawTennisGames = [
         "gameFlowRead": "Juan Manuel Cerundolo can drop points quickly through double-fault pressure (4.0 avg) and faces too many break points (8.5 avg)."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Jannik Sinner",
+        "confidence": 94,
+        "modelPct": 82,
+        "label": "Strong set-win path"
+      },
+      {
+        "name": "Juan Manuel Cerundolo",
+        "confidence": 48,
+        "modelPct": 18,
+        "label": "Thin set-win path"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -2266,6 +2393,20 @@ const rawTennisGames = [
         "gameFlowRead": "Vit Kopriva can drop points quickly through limited return pressure (37% return points won)."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Martin Landaluce",
+        "confidence": 82,
+        "modelPct": 52,
+        "label": "Strong set-win path"
+      },
+      {
+        "name": "Vit Kopriva",
+        "confidence": 77,
+        "modelPct": 48,
+        "label": "Live to win a set"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -2513,6 +2654,20 @@ const rawTennisGames = [
         "gameFlowRead": "Hugo Gaston can drop points quickly through faces too many break points (10.2 avg) and 3 recent matches with serve instability."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Francisco Cerundolo",
+        "confidence": 88,
+        "modelPct": 69,
+        "label": "Strong set-win path"
+      },
+      {
+        "name": "Hugo Gaston",
+        "confidence": 58,
+        "modelPct": 31,
+        "label": "Needs early hold pressure"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -2757,6 +2912,20 @@ const rawTennisGames = [
         "gameFlowRead": "Hubert Hurkacz can drop points quickly through faces too many break points (8.0 avg) and limited return pressure (35% return points won)."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Hubert Hurkacz",
+        "confidence": 75,
+        "modelPct": 47,
+        "label": "Live to win a set"
+      },
+      {
+        "name": "Frances Tiafoe",
+        "confidence": 83,
+        "modelPct": 53,
+        "label": "Strong set-win path"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -3008,6 +3177,20 @@ const rawTennisGames = [
         "gameFlowRead": "Alina Korneeva can drop points quickly through double-fault pressure (4.2 avg) and faces too many break points (9.2 avg)."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Anna Kalinskaya",
+        "confidence": 68,
+        "modelPct": 54,
+        "label": "Live to win a set"
+      },
+      {
+        "name": "Alina Korneeva",
+        "confidence": 61,
+        "modelPct": 46,
+        "label": "Needs early hold pressure"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -3264,6 +3447,20 @@ const rawTennisGames = [
         "gameFlowRead": "McCartney Kessler can drop points quickly through low recent hold rate (54%) and first-serve points won below comfort (59%)."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Diana Shnaider",
+        "confidence": 66,
+        "modelPct": 50,
+        "label": "Needs early hold pressure"
+      },
+      {
+        "name": "McCartney Kessler",
+        "confidence": 66,
+        "modelPct": 50,
+        "label": "Needs early hold pressure"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -3518,6 +3715,20 @@ const rawTennisGames = [
         "gameFlowRead": "Julia Grabher can drop points quickly through first-serve points won below comfort (58%) and double-fault pressure (4.6 avg)."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Julia Grabher",
+        "confidence": 42,
+        "modelPct": 32,
+        "label": "Thin set-win path"
+      },
+      {
+        "name": "Amanda Anisimova",
+        "confidence": 76,
+        "modelPct": 68,
+        "label": "Live to win a set"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -3765,6 +3976,20 @@ const rawTennisGames = [
         "gameFlowRead": "Maja Chwalinska has no major service weakness in the joined Flashscore sample."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Maja Chwalinska",
+        "confidence": 60,
+        "modelPct": 44,
+        "label": "Needs early hold pressure"
+      },
+      {
+        "name": "Elise Mertens",
+        "confidence": 73,
+        "modelPct": 56,
+        "label": "Live to win a set"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -4002,6 +4227,20 @@ const rawTennisGames = [
         "gameFlowRead": "Camila Osorio has no major service weakness in the joined Flashscore sample."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Yulia Putintseva",
+        "confidence": 70,
+        "modelPct": 50,
+        "label": "Live to win a set"
+      },
+      {
+        "name": "Camila Osorio",
+        "confidence": 70,
+        "modelPct": 50,
+        "label": "Live to win a set"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -4237,6 +4476,20 @@ const rawTennisGames = [
         "gameFlowRead": "Diane Parry can drop points quickly through low recent hold rate (61%) and first-serve points won below comfort (59%)."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Ann Li",
+        "confidence": 73,
+        "modelPct": 56,
+        "label": "Live to win a set"
+      },
+      {
+        "name": "Diane Parry",
+        "confidence": 57,
+        "modelPct": 44,
+        "label": "Needs early hold pressure"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -4480,6 +4733,20 @@ const rawTennisGames = [
         "gameFlowRead": "Alejandro Tabilo has no major service weakness in the joined Flashscore sample."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Alejandro Tabilo",
+        "confidence": 74,
+        "modelPct": 45,
+        "label": "Live to win a set"
+      },
+      {
+        "name": "Valentin Vacherot",
+        "confidence": 84,
+        "modelPct": 55,
+        "label": "Strong set-win path"
+      }
+    ],
     "marketData": null,
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Alejandro-Tabilo-Vs-Valentin-Vacherot/",
     "players": [
@@ -4647,6 +4914,20 @@ const rawTennisGames = [
         "gameFlowRead": "Antonia Ruzic can drop points quickly through low recent hold rate (47%) and first-serve points won below comfort (57%)."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Antonia Ruzic",
+        "confidence": 40,
+        "modelPct": 31,
+        "label": "Thin set-win path"
+      },
+      {
+        "name": "Madison Keys",
+        "confidence": 78,
+        "modelPct": 69,
+        "label": "Live to win a set"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -4885,6 +5166,20 @@ const rawTennisGames = [
         "gameFlowRead": "Mayar Sherif has no major service weakness in the joined Flashscore sample."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Coco Gauff",
+        "confidence": 76,
+        "modelPct": 64,
+        "label": "Live to win a set"
+      },
+      {
+        "name": "Mayar Sherif",
+        "confidence": 50,
+        "modelPct": 36,
+        "label": "Thin set-win path"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -5128,6 +5423,20 @@ const rawTennisGames = [
         "gameFlowRead": "Susan Bandecchi can drop points quickly through first-serve points won below comfort (59%) and faces too many break points (11.3 avg)."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Daria Kasatkina",
+        "confidence": 68,
+        "modelPct": 52,
+        "label": "Live to win a set"
+      },
+      {
+        "name": "Susan Bandecchi",
+        "confidence": 63,
+        "modelPct": 48,
+        "label": "Needs early hold pressure"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -5372,6 +5681,20 @@ const rawTennisGames = [
         "gameFlowRead": "Francisco Comesana can drop points quickly through limited return pressure (29% return points won)."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Francisco Comesana",
+        "confidence": 65,
+        "modelPct": 36,
+        "label": "Needs early hold pressure"
+      },
+      {
+        "name": "Luciano Darderi",
+        "confidence": 86,
+        "modelPct": 64,
+        "label": "Strong set-win path"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -5611,6 +5934,20 @@ const rawTennisGames = [
         "gameFlowRead": "Maria Sakkari can drop points quickly through low recent hold rate (60%) and first-serve points won below comfort (59%)."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Maria Sakkari",
+        "confidence": 58,
+        "modelPct": 44,
+        "label": "Needs early hold pressure"
+      },
+      {
+        "name": "Claire Liu",
+        "confidence": 73,
+        "modelPct": 56,
+        "label": "Live to win a set"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -5854,6 +6191,20 @@ const rawTennisGames = [
         "gameFlowRead": "Elsa Jacquemot can drop points quickly through low recent hold rate (58%) and double-fault pressure (5.5 avg)."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Aryna Sabalenka",
+        "confidence": 80,
+        "modelPct": 76,
+        "label": "Live to win a set"
+      },
+      {
+        "name": "Elsa Jacquemot",
+        "confidence": 33,
+        "modelPct": 24,
+        "label": "Thin set-win path"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -6094,6 +6445,20 @@ const rawTennisGames = [
         "gameFlowRead": "Roman Andres Burruchaga has no major service weakness in the joined Flashscore sample."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Felix Auger-Aliassime",
+        "confidence": 89,
+        "modelPct": 66,
+        "label": "Strong set-win path"
+      },
+      {
+        "name": "Roman Andres Burruchaga",
+        "confidence": 63,
+        "modelPct": 34,
+        "label": "Needs early hold pressure"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -6331,6 +6696,20 @@ const rawTennisGames = [
         "gameFlowRead": "Luca Van Assche can drop points quickly through low recent hold rate (60%) and faces too many break points (11.3 avg)."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Luca Van Assche",
+        "confidence": 63,
+        "modelPct": 36,
+        "label": "Needs early hold pressure"
+      },
+      {
+        "name": "Brandon Nakashima",
+        "confidence": 88,
+        "modelPct": 64,
+        "label": "Strong set-win path"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -6577,6 +6956,20 @@ const rawTennisGames = [
         "gameFlowRead": "Stefanos Tsitsipas has no major service weakness in the joined Flashscore sample."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Matteo Arnaldi",
+        "confidence": 82,
+        "modelPct": 50,
+        "label": "Strong set-win path"
+      },
+      {
+        "name": "Stefanos Tsitsipas",
+        "confidence": 84,
+        "modelPct": 50,
+        "label": "Strong set-win path"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -6826,6 +7219,20 @@ const rawTennisGames = [
         "gameFlowRead": "Raphael Collignon can drop points quickly through limited return pressure (37% return points won)."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Raphael Collignon",
+        "confidence": 66,
+        "modelPct": 38,
+        "label": "Needs early hold pressure"
+      },
+      {
+        "name": "Ben Shelton",
+        "confidence": 86,
+        "modelPct": 62,
+        "label": "Strong set-win path"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -7077,6 +7484,20 @@ const rawTennisGames = [
         "gameFlowRead": "Katie Boulter can drop points quickly through double-fault pressure (5.3 avg)."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Katie Boulter",
+        "confidence": 56,
+        "modelPct": 42,
+        "label": "Needs early hold pressure"
+      },
+      {
+        "name": "Anastasia Potapova",
+        "confidence": 71,
+        "modelPct": 58,
+        "label": "Live to win a set"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -7328,6 +7749,20 @@ const rawTennisGames = [
         "gameFlowRead": "Katerina Siniakova can drop points quickly through double-fault pressure (4.4 avg) and faces too many break points (10.3 avg)."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Victoria Mboko",
+        "confidence": 72,
+        "modelPct": 59,
+        "label": "Live to win a set"
+      },
+      {
+        "name": "Katerina Siniakova",
+        "confidence": 54,
+        "modelPct": 41,
+        "label": "Needs early hold pressure"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -7576,6 +8011,20 @@ const rawTennisGames = [
         "gameFlowRead": "Matteo Berrettini can drop points quickly through limited return pressure (34% return points won)."
       }
     },
+    "setWinProjections": [
+      {
+        "name": "Arthur Rinderknech",
+        "confidence": 86,
+        "modelPct": 58,
+        "label": "Strong set-win path"
+      },
+      {
+        "name": "Matteo Berrettini",
+        "confidence": 71,
+        "modelPct": 42,
+        "label": "Live to win a set"
+      }
+    ],
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -7744,6 +8193,11 @@ const rawTennisGames = [
   }
 ]
 
+const normalizePlayerName = (value) => {
+  const normalized = String(value || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/gi, ' ').trim().toLowerCase()
+  return ({ 'xinyu wang': 'wang xinyu', 'xiyu wang': 'wang xiyu', 'yibing wu': 'wu yibing' })[normalized] || normalized
+}
+
 const participant = (id, index, role, player) => ({
   id: `${id}:${index}`,
   index,
@@ -7766,6 +8220,7 @@ const buildGame = (raw) => {
   const opponent = participants[pickIndex === 0 ? 1 : 0]
   const qualityContext = tennisOpponentQualityContext.matches?.[raw.id] ?? null
   const clayData = tennisClayContext.matches?.[raw.id] ?? null
+  const warehouseContext = tennisWarehouseContext.matches?.[raw.id] ?? null
   const marketPlayers = market?.players ?? []
   const deskMarket = market?.desk ?? null
   const marketEconomics = market ? {
@@ -7840,6 +8295,8 @@ const buildGame = (raw) => {
       fatigueFlag: false,
       liveDog: false,
       weaknessEdge: raw.weaknessEdge,
+      warehouseContext,
+      sofascoreData: warehouseContext,
       players: players.map((player) => ({
         name: player.name,
         rank: player.ranking?.rank ?? null,
@@ -7850,6 +8307,7 @@ const buildGame = (raw) => {
         marketLabel: player.market ? `${player.market.americanLabel} / ${player.market.impliedPct}% implied` : `Model fair ${player.modelPct}%`,
         clayLine: player.profile || 'Profile pending',
         weakness: player.weakness,
+        warehouseStats: warehouseContext?.players?.find((entry) => normalizePlayerName(entry.name) === normalizePlayerName(player.name)) ?? null,
         record2026: '',
         notes: player.name === raw.pickName ? `Pick: model ${raw.confidence}%` : `Opponent case: model ${100 - raw.confidence}%`,
         matchupNote: player.name === raw.pickName ? `Why pick: ${raw.reason}` : 'Upset path: needs early scoreboard pressure or a market price that pays for volatility.'
@@ -7861,10 +8319,11 @@ const buildGame = (raw) => {
         { label: 'Volatility', metric: 'Lower is cleaner', leftScore: raw.volatility, rightScore: 100 - raw.volatility, leftLabel: 'Risk', rightLabel: 'Stability', winner: raw.volatility <= 55 ? 'Stable enough' : 'Pass-first' }
       ].filter(Boolean),
       predictionMarket,
-      projection: { projectedWinner: raw.pickName, projectedSetLine: raw.tour === 'ATP' ? '3-1/3-2 range' : '2-0/2-1 range', totalGames: market?.total?.line ?? null, straightSetsProbability: raw.tour === 'ATP' ? null : Math.max(48, Math.min(68, raw.confidence - 8)), upsetRisk: 100 - raw.confidence, overview: raw.weaknessEdge?.gameFlow || raw.reason, fantasy: [] },
+      projection: { projectedWinner: raw.pickName, projectedSetLine: raw.tour === 'ATP' ? '3-1/3-2 range' : '2-0/2-1 range', setWinProjections: raw.setWinProjections, totalGames: market?.total?.line ?? null, straightSetsProbability: raw.tour === 'ATP' ? null : Math.max(48, Math.min(68, raw.confidence - 8)), upsetRisk: 100 - raw.confidence, overview: raw.weaknessEdge?.gameFlow || raw.reason, fantasy: [] },
       tradePlan: { laneLabel: raw.tags.includes('High confidence') ? 'High confidence, price required' : market?.priceAction || 'Pass-first', summary: raw.weaknessEdge?.gameFlow || raw.totals, trigger: raw.weaknessEdge?.liveTrigger, headline: raw.weaknessEdge?.edgeType, exit: market?.spreadLean || raw.weaknessEdge?.spreadRead, tone: raw.tags.includes('High confidence') ? 'accent' : 'warning' },
       derivativeMarkets: [
         { label: 'ML', value: market ? `${raw.pickName} ${deskMarket?.americanLabel || ''}; ${market.noVigNote}` : 'Need market price', lean: market?.priceAction || raw.weaknessEdge?.edgeType || 'Fair only', confidence: raw.confidence, tone: market?.desk?.edgePct >= 7 ? 'accent' : market?.desk?.edgePct <= -4 ? 'warning' : 'neutral', reason: market?.marketNote || raw.weaknessEdge?.gameFlow || raw.reason },
+        { label: 'Win a set', value: raw.setWinProjections?.map((entry) => entry.name + ' ' + entry.confidence + '%').join(' / ') || 'No set projection', lean: raw.setWinProjections?.find((entry) => entry.name !== raw.pickName)?.label || 'Set-win path', confidence: Math.max(...(raw.setWinProjections || []).map((entry) => Number(entry.confidence) || 0), 0), tone: raw.tour === 'ATP' ? 'accent' : 'neutral', reason: raw.tour === 'ATP' ? 'Best-of-five gives the non-ML side more room to win a set; use this to separate upset risk from match-winner confidence.' : 'Best-of-three set-win confidence is more fragile; early service holds matter more.' },
         { label: 'Spread', value: market?.spreadValue || 'Need posted game spread', lean: market?.spreadLean || raw.weaknessEdge?.spreadRead || 'Need number', confidence: Math.max(50, raw.confidence - 6), tone: raw.weaknessEdge?.edgeType === 'Weakness edge' ? 'accent' : 'neutral', reason: raw.weaknessEdge?.liveTrigger || 'Wait for first service cycle.' },
         { label: 'O/U', value: market?.totalValue || 'Need posted total', lean: market?.totalLean || raw.weaknessEdge?.totalRead || raw.totals, confidence: Math.max(50, raw.confidence - 8), tone: raw.totals.includes('over') || raw.weaknessEdge?.totalRead?.includes('breaks') ? 'accent' : 'neutral', reason: raw.totals }
       ],

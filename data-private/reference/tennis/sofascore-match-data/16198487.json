@@ -1,0 +1,508 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/zachary-svajda-adam-walton#id:16198487",
+  "eventId": "16198487",
+  "slateDate": "2026-05-28",
+  "boardMatchId": "rg-m-zachary-svajda-adam-walton-2026-05-28",
+  "boardTitle": "Zachary Svajda vs Adam Walton",
+  "capturedAt": "2026-05-28T02:55:39.929Z",
+  "compactEvent": {
+    "id": 16198487,
+    "slug": "zachary-svajda-adam-walton",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1779958800,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "ATP",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 32,
+      "name": "Round of 64",
+      "slug": "round-of-64"
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 298247,
+      "name": "Zachary Svajda",
+      "shortName": "Z. Svajda",
+      "ranking": 85,
+      "currentRanking": 81,
+      "country": {
+        "alpha2": "US",
+        "alpha3": "USA",
+        "name": "USA",
+        "slug": "usa"
+      },
+      "playerTeamInfo": {
+        "height": 1.75,
+        "weight": 70,
+        "plays": "right-handed",
+        "turnedPro": "2019",
+        "prizeCurrent": 251038,
+        "prizeTotal": 1376866,
+        "birthCity": {
+          "name": "La Jolla",
+          "state": "US-CA",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 33302
+        },
+        "residenceCity": {
+          "name": "California",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 21509
+        },
+        "id": 4041,
+        "birthplace": "La Jolla, California, USA",
+        "birthDateTimestamp": 1038528000,
+        "residence": "California, USA",
+        "prizeCurrentRaw": {
+          "value": 251038,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 1376866,
+          "currency": "EUR"
+        },
+        "currentRanking": 81
+      }
+    },
+    "awayTeam": {
+      "id": 207575,
+      "name": "Adam Walton",
+      "shortName": "A. Walton",
+      "ranking": 97,
+      "currentRanking": 97,
+      "country": {
+        "alpha2": "AU",
+        "alpha3": "AUS",
+        "name": "Australia",
+        "slug": "australia"
+      },
+      "playerTeamInfo": {
+        "height": 1.83,
+        "weight": 77,
+        "plays": "right-handed",
+        "prizeCurrent": 281826,
+        "prizeTotal": 1829652,
+        "birthCity": {
+          "name": "Brisbane",
+          "country": {
+            "alpha2": "AU",
+            "alpha3": "AUS",
+            "name": "Australia",
+            "slug": "australia"
+          },
+          "id": 17962
+        },
+        "id": 4322,
+        "birthplace": "Brisbane, Australia",
+        "birthDateTimestamp": 924307200,
+        "prizeCurrentRaw": {
+          "value": 281826,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 1829652,
+          "currency": "EUR"
+        },
+        "currentRanking": 97
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "awayTeamSeed": "WC",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "ATP",
+              "slug": "atp",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 7,
+              "country": {},
+              "id": 3,
+              "flag": "atp",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "এটিপি",
+                  "hi": "डब्ल्यूटीए",
+                  "ar": "رابطة محترفي التنس",
+                  "ru": "ATP"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "ATP",
+                "slug": "atp",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 7,
+                "country": {},
+                "id": 3,
+                "flag": "atp",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "এটিপি",
+                    "hi": "डब्ल्यूटीए",
+                    "ar": "رابطة محترفي التنس",
+                    "ru": "ATP"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 35147,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2480,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गर्रोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185245,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1779580800
+          },
+          "season": {
+            "name": "French Open Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85951
+          },
+          "roundInfo": {
+            "round": 32,
+            "name": "Round of 64",
+            "slug": "round-of-64"
+          },
+          "customId": "AbIbsXouc",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-13",
+            "name": "Court 13",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 21830,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب 13",
+                "hi": "कोर्ट 13",
+                "bn": "কোর্ট 13"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court 13"
+            }
+          },
+          "homeTeam": {
+            "name": "Zachary Svajda",
+            "slug": "svajda-zachary",
+            "shortName": "Z. Svajda",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 2872,
+            "playerTeamInfo": {
+              "height": 1.75,
+              "weight": 70,
+              "plays": "right-handed",
+              "turnedPro": "2019",
+              "prizeCurrent": 251038,
+              "prizeTotal": 1376866,
+              "birthCity": {
+                "name": "La Jolla",
+                "state": "US-CA",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 33302
+              },
+              "residenceCity": {
+                "name": "California",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 21509
+              },
+              "id": 4041,
+              "birthplace": "La Jolla, California, USA",
+              "birthDateTimestamp": 1038528000,
+              "residence": "California, USA",
+              "prizeCurrentRaw": {
+                "value": 251038,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 1376866,
+                "currency": "EUR"
+              },
+              "currentRanking": 81
+            },
+            "nameCode": "SVA",
+            "ranking": 85,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "US",
+              "alpha3": "USA",
+              "name": "USA",
+              "slug": "usa"
+            },
+            "id": 298247,
+            "fullName": "Zachary Svajda",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "زاكاري سفايدا",
+                "ru": "Свайда, Захари"
+              },
+              "shortNameTranslation": {
+                "ar": "ز. سفايدا",
+                "bn": "জেড. শভাজদা",
+                "hi": "ज़ेड. स्वैज्दा"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Adam Walton",
+            "slug": "walton-adam",
+            "shortName": "A. Walton",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 4146,
+            "playerTeamInfo": {
+              "height": 1.83,
+              "weight": 77,
+              "plays": "right-handed",
+              "prizeCurrent": 281826,
+              "prizeTotal": 1829652,
+              "birthCity": {
+                "name": "Brisbane",
+                "country": {
+                  "alpha2": "AU",
+                  "alpha3": "AUS",
+                  "name": "Australia",
+                  "slug": "australia"
+                },
+                "id": 17962
+              },
+              "id": 4322,
+              "birthplace": "Brisbane, Australia",
+              "birthDateTimestamp": 924307200,
+              "prizeCurrentRaw": {
+                "value": 281826,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 1829652,
+                "currency": "EUR"
+              },
+              "currentRanking": 97
+            },
+            "nameCode": "WAL",
+            "ranking": 97,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "AU",
+              "alpha3": "AUS",
+              "name": "Australia",
+              "slug": "australia"
+            },
+            "id": 207575,
+            "fullName": "Adam Walton",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "آدم والتون",
+                "ru": "Уолтон, Адам"
+              },
+              "shortNameTranslation": {
+                "ar": "آ. والتون"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198487,
+          "defaultPeriodCount": 5,
+          "slug": "zachary-svajda-adam-walton",
+          "startTimestamp": 1779958800,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "SG",
+            "IR",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": {
+          "homeWins": 2,
+          "awayWins": 1,
+          "draws": 0
+        },
+        "managerDuel": null
+      }
+    },
+    "odds": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

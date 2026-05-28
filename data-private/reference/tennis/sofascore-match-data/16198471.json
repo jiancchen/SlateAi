@@ -1,0 +1,530 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/juan-manuel-cerundolo-jannik-sinner#id:16198471",
+  "eventId": "16198471",
+  "slateDate": "2026-05-28",
+  "boardMatchId": "rg-m-jannik-sinner-juan-manuel-cerundolo-2026-05-28",
+  "boardTitle": "Jannik Sinner vs Juan Manuel Cerundolo",
+  "capturedAt": "2026-05-28T02:55:40.235Z",
+  "compactEvent": {
+    "id": 16198471,
+    "slug": "juan-manuel-cerundolo-jannik-sinner",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1779962400,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "ATP",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 32,
+      "name": "Round of 64",
+      "slug": "round-of-64"
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 206570,
+      "name": "Jannik Sinner",
+      "shortName": "J. Sinner",
+      "ranking": 1,
+      "currentRanking": 1,
+      "country": {
+        "alpha2": "IT",
+        "alpha3": "ITA",
+        "name": "Italy",
+        "slug": "italy"
+      },
+      "playerTeamInfo": {
+        "height": 1.91,
+        "weight": 77,
+        "plays": "right-handed",
+        "turnedPro": "2018",
+        "prizeCurrent": 5831145,
+        "prizeTotal": 56277623,
+        "birthCity": {
+          "name": "San Candido",
+          "country": {
+            "alpha2": "IT",
+            "alpha3": "ITA",
+            "name": "Italy",
+            "slug": "italy"
+          },
+          "id": 35456
+        },
+        "residenceCity": {
+          "name": "Monte Carlo",
+          "country": {
+            "alpha2": "MC",
+            "alpha3": "MCO",
+            "name": "Monaco",
+            "slug": "monaco"
+          },
+          "id": 21098
+        },
+        "id": 481,
+        "birthplace": "San Candido, Italy",
+        "birthDateTimestamp": 997920000,
+        "residence": "Monte Carlo, Monaco",
+        "prizeCurrentRaw": {
+          "value": 5831145,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 56277623,
+          "currency": "EUR"
+        },
+        "currentRanking": 1
+      }
+    },
+    "awayTeam": {
+      "id": 248861,
+      "name": "Juan Manuel Cerundolo",
+      "shortName": "J. Cerundolo",
+      "ranking": 56,
+      "currentRanking": 55,
+      "country": {
+        "alpha2": "AR",
+        "alpha3": "ARG",
+        "name": "Argentina",
+        "slug": "argentina"
+      },
+      "playerTeamInfo": {
+        "height": 1.83,
+        "weight": 75,
+        "plays": "left-handed",
+        "prizeCurrent": 366872,
+        "prizeTotal": 1802050,
+        "birthCity": {
+          "name": "Buenos Aires",
+          "country": {
+            "alpha2": "AR",
+            "alpha3": "ARG",
+            "name": "Argentina",
+            "slug": "argentina"
+          },
+          "id": 18696
+        },
+        "residenceCity": {
+          "name": "Buenos Aires",
+          "country": {
+            "alpha2": "AR",
+            "alpha3": "ARG",
+            "name": "Argentina",
+            "slug": "argentina"
+          },
+          "id": 18696
+        },
+        "id": 3898,
+        "birthplace": "Buenos Aires, Argentina",
+        "birthDateTimestamp": 1005782400,
+        "residence": "Buenos Aires, Argentina",
+        "prizeCurrentRaw": {
+          "value": 366872,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 1802050,
+          "currency": "EUR"
+        },
+        "currentRanking": 55
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "homeTeamSeed": "1",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "ATP",
+              "slug": "atp",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 7,
+              "country": {},
+              "id": 3,
+              "flag": "atp",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "এটিপি",
+                  "hi": "डब्ल्यूटीए",
+                  "ar": "رابطة محترفي التنس",
+                  "ru": "ATP"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "ATP",
+                "slug": "atp",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 7,
+                "country": {},
+                "id": 3,
+                "flag": "atp",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "এটিপি",
+                    "hi": "डब्ल्यूटीए",
+                    "ar": "رابطة محترفي التنس",
+                    "ru": "ATP"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 35147,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2480,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गर्रोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185245,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1779580800
+          },
+          "season": {
+            "name": "French Open Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85951
+          },
+          "roundInfo": {
+            "round": 32,
+            "name": "Round of 64",
+            "slug": "round-of-64"
+          },
+          "customId": "vGHbslCZb",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-philippe-chatrier",
+            "name": "Court Philippe Chatrier",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 17178,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب فيليب شاترييه",
+                "hi": "कोर्ट फिलिप चैट्रियर",
+                "bn": "কোর্ট ফিলিপ চ্যাট্রিয়ার"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court Philippe Chatrier"
+            }
+          },
+          "homeTeam": {
+            "name": "Jannik Sinner",
+            "slug": "sinner-jannik",
+            "shortName": "J. Sinner",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 239516,
+            "playerTeamInfo": {
+              "height": 1.91,
+              "weight": 77,
+              "plays": "right-handed",
+              "turnedPro": "2018",
+              "prizeCurrent": 5831145,
+              "prizeTotal": 56277623,
+              "birthCity": {
+                "name": "San Candido",
+                "country": {
+                  "alpha2": "IT",
+                  "alpha3": "ITA",
+                  "name": "Italy",
+                  "slug": "italy"
+                },
+                "id": 35456
+              },
+              "residenceCity": {
+                "name": "Monte Carlo",
+                "country": {
+                  "alpha2": "MC",
+                  "alpha3": "MCO",
+                  "name": "Monaco",
+                  "slug": "monaco"
+                },
+                "id": 21098
+              },
+              "id": 481,
+              "birthplace": "San Candido, Italy",
+              "birthDateTimestamp": 997920000,
+              "residence": "Monte Carlo, Monaco",
+              "prizeCurrentRaw": {
+                "value": 5831145,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 56277623,
+                "currency": "EUR"
+              },
+              "currentRanking": 1
+            },
+            "nameCode": "SIN",
+            "ranking": 1,
+            "class": 4,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "IT",
+              "alpha3": "ITA",
+              "name": "Italy",
+              "slug": "italy"
+            },
+            "id": 206570,
+            "fullName": "Jannik Sinner",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "يانك سينر",
+                "ru": "Синнер, Янник"
+              },
+              "shortNameTranslation": {
+                "ar": "ي. سينر",
+                "bn": "জে সিনার",
+                "hi": "जे. सिनर"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Juan Manuel Cerundolo",
+            "slug": "cerundolo-juan-manuel",
+            "shortName": "J. Cerundolo",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 6793,
+            "playerTeamInfo": {
+              "height": 1.83,
+              "weight": 75,
+              "plays": "left-handed",
+              "prizeCurrent": 366872,
+              "prizeTotal": 1802050,
+              "birthCity": {
+                "name": "Buenos Aires",
+                "country": {
+                  "alpha2": "AR",
+                  "alpha3": "ARG",
+                  "name": "Argentina",
+                  "slug": "argentina"
+                },
+                "id": 18696
+              },
+              "residenceCity": {
+                "name": "Buenos Aires",
+                "country": {
+                  "alpha2": "AR",
+                  "alpha3": "ARG",
+                  "name": "Argentina",
+                  "slug": "argentina"
+                },
+                "id": 18696
+              },
+              "id": 3898,
+              "birthplace": "Buenos Aires, Argentina",
+              "birthDateTimestamp": 1005782400,
+              "residence": "Buenos Aires, Argentina",
+              "prizeCurrentRaw": {
+                "value": 366872,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 1802050,
+                "currency": "EUR"
+              },
+              "currentRanking": 55
+            },
+            "nameCode": "CER",
+            "ranking": 56,
+            "class": 1,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "AR",
+              "alpha3": "ARG",
+              "name": "Argentina",
+              "slug": "argentina"
+            },
+            "id": 248861,
+            "fullName": "Juan Manuel Cerundolo",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "خوان مانويل سيروندولو",
+                "ru": "Серундоло, Хуан Мануэл"
+              },
+              "shortNameTranslation": {
+                "ar": "خ. سيروندولو",
+                "bn": "জে. সেরুন্ডোলো",
+                "hi": "जे. सेरुंडोलो"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198471,
+          "defaultPeriodCount": 5,
+          "slug": "juan-manuel-cerundolo-jannik-sinner",
+          "startTimestamp": 1779962400,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "SG",
+            "IR",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": {
+          "homeWins": 1,
+          "awayWins": 0,
+          "draws": 0
+        },
+        "managerDuel": null
+      }
+    },
+    "odds": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

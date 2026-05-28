@@ -1,0 +1,499 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/victoria-mboko-katerina-siniakova#id:16198580",
+  "eventId": "16198580",
+  "slateDate": "2026-05-28",
+  "boardMatchId": "rg-w-victoria-mboko-katerina-siniakova-2026-05-28",
+  "boardTitle": "Victoria Mboko vs Katerina Siniakova",
+  "capturedAt": "2026-05-28T02:55:48.516Z",
+  "compactEvent": {
+    "id": 16198580,
+    "slug": "victoria-mboko-katerina-siniakova",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1779982800,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "WTA",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 32,
+      "name": "Round of 64",
+      "slug": "round-of-64"
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 386338,
+      "name": "Victoria Mboko",
+      "shortName": "V. Mboko",
+      "ranking": 9,
+      "currentRanking": 4,
+      "country": {
+        "alpha2": "CA",
+        "alpha3": "CAN",
+        "name": "Canada",
+        "slug": "canada"
+      },
+      "playerTeamInfo": {
+        "height": 1.8,
+        "plays": "right-handed",
+        "prizeCurrent": 1357199,
+        "prizeTotal": 2667940,
+        "birthCity": {
+          "name": "Charlotte",
+          "state": "US-NC",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 18680
+        },
+        "id": 5345,
+        "birthplace": "Charlotte, North Carolina, USA",
+        "birthDateTimestamp": 1156550400,
+        "prizeCurrentRaw": {
+          "value": 1357199,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 2667940,
+          "currency": "EUR"
+        },
+        "currentRanking": 4
+      }
+    },
+    "awayTeam": {
+      "id": 72376,
+      "name": "Katerina Siniakova",
+      "shortName": "K. Siniakova",
+      "ranking": 36,
+      "currentRanking": 27,
+      "country": {
+        "alpha2": "CZ",
+        "alpha3": "CZE",
+        "name": "Czechia",
+        "slug": "czechia"
+      },
+      "playerTeamInfo": {
+        "height": 1.74,
+        "weight": 69,
+        "plays": "right-handed",
+        "turnedPro": "2013",
+        "prizeCurrent": 1039839,
+        "prizeTotal": 14041423,
+        "birthCity": {
+          "name": "Hradec Kralove",
+          "country": {
+            "alpha2": "CZ",
+            "alpha3": "CZE",
+            "name": "Czechia",
+            "slug": "czechia"
+          },
+          "id": 19054
+        },
+        "residenceCity": {
+          "name": "Hradec Kralove",
+          "country": {
+            "alpha2": "CZ",
+            "alpha3": "CZE",
+            "name": "Czechia",
+            "slug": "czechia"
+          },
+          "id": 19054
+        },
+        "id": 195,
+        "birthplace": "Hradec Kralove, Czechia",
+        "birthDateTimestamp": 831686400,
+        "residence": "Hradec Kralove, Czechia",
+        "prizeCurrentRaw": {
+          "value": 1039839,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 14041423,
+          "currency": "EUR"
+        },
+        "currentRanking": 27
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "homeTeamSeed": "9",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "WTA",
+              "slug": "wta",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 6,
+              "country": {},
+              "id": 6,
+              "flag": "wta",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "رابطة لاعبات التنس",
+                  "hi": "चैलेंजर",
+                  "bn": "ডব্লিউটিএ",
+                  "ru": "WTA"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "WTA",
+                "slug": "wta",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 6,
+                "country": {},
+                "id": 6,
+                "flag": "wta",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "ar": "رابطة لاعبات التنس",
+                    "hi": "चैलेंजर",
+                    "bn": "ডব্লিউটিএ",
+                    "ru": "WTA"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 11467,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2577,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गारोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185246,
+            "endTimestamp": 1780704000,
+            "startTimestamp": 1779580800
+          },
+          "season": {
+            "name": "French Open Women Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85953
+          },
+          "roundInfo": {
+            "round": 32,
+            "name": "Round of 64",
+            "slug": "round-of-64"
+          },
+          "customId": "BXDsNBed",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-simonne-mathieu",
+            "name": "Court Simonne Mathieu",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 25283,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب سيمون ماتيو",
+                "hi": "कोर्ट सिमोन मैथ्यू",
+                "bn": "কোর্ট সাইমন ম্যাথিউ"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court Simonne Mathieu"
+            }
+          },
+          "homeTeam": {
+            "name": "Victoria Mboko",
+            "slug": "mboko-victoria",
+            "shortName": "V. Mboko",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 10742,
+            "playerTeamInfo": {
+              "height": 1.8,
+              "plays": "right-handed",
+              "prizeCurrent": 1357199,
+              "prizeTotal": 2667940,
+              "birthCity": {
+                "name": "Charlotte",
+                "state": "US-NC",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 18680
+              },
+              "id": 5345,
+              "birthplace": "Charlotte, North Carolina, USA",
+              "birthDateTimestamp": 1156550400,
+              "prizeCurrentRaw": {
+                "value": 1357199,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 2667940,
+                "currency": "EUR"
+              },
+              "currentRanking": 4
+            },
+            "nameCode": "MBO",
+            "ranking": 9,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "CA",
+              "alpha3": "CAN",
+              "name": "Canada",
+              "slug": "canada"
+            },
+            "id": 386338,
+            "fullName": "Victoria Mboko",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "فيكتوريا مبوكوا"
+              },
+              "shortNameTranslation": {
+                "ar": "ف. مبوكوا"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Katerina Siniakova",
+            "slug": "siniakova-katerina",
+            "shortName": "K. Siniakova",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 5675,
+            "playerTeamInfo": {
+              "height": 1.74,
+              "weight": 69,
+              "plays": "right-handed",
+              "turnedPro": "2013",
+              "prizeCurrent": 1039839,
+              "prizeTotal": 14041423,
+              "birthCity": {
+                "name": "Hradec Kralove",
+                "country": {
+                  "alpha2": "CZ",
+                  "alpha3": "CZE",
+                  "name": "Czechia",
+                  "slug": "czechia"
+                },
+                "id": 19054
+              },
+              "residenceCity": {
+                "name": "Hradec Kralove",
+                "country": {
+                  "alpha2": "CZ",
+                  "alpha3": "CZE",
+                  "name": "Czechia",
+                  "slug": "czechia"
+                },
+                "id": 19054
+              },
+              "id": 195,
+              "birthplace": "Hradec Kralove, Czechia",
+              "birthDateTimestamp": 831686400,
+              "residence": "Hradec Kralove, Czechia",
+              "prizeCurrentRaw": {
+                "value": 1039839,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 14041423,
+                "currency": "EUR"
+              },
+              "currentRanking": 27
+            },
+            "nameCode": "SIN",
+            "ranking": 36,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "CZ",
+              "alpha3": "CZE",
+              "name": "Czechia",
+              "slug": "czechia"
+            },
+            "id": 72376,
+            "fullName": "Katerina Siniakova",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كاترينا سينيكوفا",
+                "ru": "Синякова, Катерина"
+              },
+              "shortNameTranslation": {
+                "ar": "ك. سينيكوفا",
+                "bn": "কে. সিনিয়াকোভা",
+                "hi": "के. सिनियाकोवा"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198580,
+          "defaultPeriodCount": 3,
+          "slug": "victoria-mboko-katerina-siniakova",
+          "startTimestamp": 1779982800,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "SG",
+            "IR",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "F"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": null,
+        "managerDuel": null
+      }
+    },
+    "odds": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,480 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/diane-parry-ann-li#id:16198549",
+  "eventId": "16198549",
+  "slateDate": "2026-05-28",
+  "boardMatchId": "rg-w-ann-li-diane-parry-2026-05-28",
+  "boardTitle": "Ann Li vs Diane Parry",
+  "capturedAt": "2026-05-28T02:55:46.368Z",
+  "compactEvent": {
+    "id": 16198549,
+    "slug": "diane-parry-ann-li",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1779968400,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "WTA",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 32,
+      "name": "Round of 64",
+      "slug": "round-of-64"
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 222826,
+      "name": "Ann Li",
+      "shortName": "A. Li",
+      "ranking": 29,
+      "currentRanking": 27,
+      "country": {
+        "alpha2": "US",
+        "alpha3": "USA",
+        "name": "USA",
+        "slug": "usa"
+      },
+      "playerTeamInfo": {
+        "height": 1.7,
+        "plays": "right-handed",
+        "prizeCurrent": 464354,
+        "prizeTotal": 3140818,
+        "birthCity": {
+          "name": "King of Prussia",
+          "state": "US-PA",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 34613
+        },
+        "id": 775,
+        "birthplace": "King of Prussia, Pennsylvania, USA",
+        "birthDateTimestamp": 961977600,
+        "prizeCurrentRaw": {
+          "value": 464354,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 3140818,
+          "currency": "EUR"
+        },
+        "currentRanking": 27
+      }
+    },
+    "awayTeam": {
+      "id": 247791,
+      "name": "Diane Parry",
+      "shortName": "D. Parry",
+      "ranking": 92,
+      "currentRanking": 81,
+      "country": {
+        "alpha2": "FR",
+        "alpha3": "FRA",
+        "name": "France",
+        "slug": "france"
+      },
+      "playerTeamInfo": {
+        "height": 1.7,
+        "plays": "right-handed",
+        "prizeCurrent": 120833,
+        "prizeTotal": 2943643,
+        "birthCity": {
+          "name": "Nice",
+          "country": {
+            "alpha2": "FR",
+            "alpha3": "FRA",
+            "name": "France",
+            "slug": "france"
+          },
+          "id": 21547
+        },
+        "id": 3549,
+        "birthplace": "Nice, France",
+        "birthDateTimestamp": 1030838400,
+        "prizeCurrentRaw": {
+          "value": 120833,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 2943643,
+          "currency": "EUR"
+        },
+        "currentRanking": 81
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "homeTeamSeed": "30",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "WTA",
+              "slug": "wta",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 6,
+              "country": {},
+              "id": 6,
+              "flag": "wta",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "رابطة لاعبات التنس",
+                  "hi": "चैलेंजर",
+                  "bn": "ডব্লিউটিএ",
+                  "ru": "WTA"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "WTA",
+                "slug": "wta",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 6,
+                "country": {},
+                "id": 6,
+                "flag": "wta",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "ar": "رابطة لاعبات التنس",
+                    "hi": "चैलेंजर",
+                    "bn": "ডব্লিউটিএ",
+                    "ru": "WTA"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 11467,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2577,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गारोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185246,
+            "endTimestamp": 1780704000,
+            "startTimestamp": 1779580800
+          },
+          "season": {
+            "name": "French Open Women Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85953
+          },
+          "roundInfo": {
+            "round": 32,
+            "name": "Round of 64",
+            "slug": "round-of-64"
+          },
+          "customId": "BgObsQfZb",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-philippe-chatrier",
+            "name": "Court Philippe Chatrier",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 17178,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب فيليب شاترييه",
+                "hi": "कोर्ट फिलिप चैट्रियर",
+                "bn": "কোর্ট ফিলিপ চ্যাট্রিয়ার"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court Philippe Chatrier"
+            }
+          },
+          "homeTeam": {
+            "name": "Ann Li",
+            "slug": "li-ann",
+            "shortName": "A. Li",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 4102,
+            "playerTeamInfo": {
+              "height": 1.7,
+              "plays": "right-handed",
+              "prizeCurrent": 464354,
+              "prizeTotal": 3140818,
+              "birthCity": {
+                "name": "King of Prussia",
+                "state": "US-PA",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 34613
+              },
+              "id": 775,
+              "birthplace": "King of Prussia, Pennsylvania, USA",
+              "birthDateTimestamp": 961977600,
+              "prizeCurrentRaw": {
+                "value": 464354,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 3140818,
+                "currency": "EUR"
+              },
+              "currentRanking": 27
+            },
+            "nameCode": "ANN",
+            "ranking": 29,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "US",
+              "alpha3": "USA",
+              "name": "USA",
+              "slug": "usa"
+            },
+            "id": 222826,
+            "fullName": "Ann Li",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "آن لي",
+                "ru": "Ли, Энн"
+              },
+              "shortNameTranslation": {
+                "ar": "آ. لي",
+                "bn": "এ. লি",
+                "hi": "ए. ली"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Diane Parry",
+            "slug": "parry-diane",
+            "shortName": "D. Parry",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 3780,
+            "playerTeamInfo": {
+              "height": 1.7,
+              "plays": "right-handed",
+              "prizeCurrent": 120833,
+              "prizeTotal": 2943643,
+              "birthCity": {
+                "name": "Nice",
+                "country": {
+                  "alpha2": "FR",
+                  "alpha3": "FRA",
+                  "name": "France",
+                  "slug": "france"
+                },
+                "id": 21547
+              },
+              "id": 3549,
+              "birthplace": "Nice, France",
+              "birthDateTimestamp": 1030838400,
+              "prizeCurrentRaw": {
+                "value": 120833,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 2943643,
+                "currency": "EUR"
+              },
+              "currentRanking": 81
+            },
+            "nameCode": "PAR",
+            "ranking": 92,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 247791,
+            "fullName": "Diane Parry",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ديان باري",
+                "bn": "ডায়ান প্যারি",
+                "hi": "डायन पेरी",
+                "ru": "Парри, Диан"
+              },
+              "shortNameTranslation": {
+                "ar": "د. باري"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198549,
+          "defaultPeriodCount": 3,
+          "slug": "diane-parry-ann-li",
+          "startTimestamp": 1779968400,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "SG",
+            "IR",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "F"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": {
+          "homeWins": 1,
+          "awayWins": 0,
+          "draws": 0
+        },
+        "managerDuel": null
+      }
+    },
+    "odds": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

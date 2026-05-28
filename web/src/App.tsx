@@ -1834,6 +1834,7 @@ function App() {
     }
   }, [historyTrendPoints])
   const latestHistoryTrendLabel = historyTrendPoints.at(-1)?.label ?? historyArchive[0]?.label ?? 'the latest graded day'
+  const dailyHistoryTrendPoints = useMemo(() => [...historyTrendPoints].reverse(), [historyTrendPoints])
 
   const storyRailDays = useMemo(() => [...storyArchive].sort((left, right) => right.id.localeCompare(left.id)), [storyArchive])
 
@@ -3297,6 +3298,8 @@ function App() {
     const projection = context?.projection
     const tradePlan = context?.tradePlan
     const weaknessEdge = context?.weaknessEdge
+    const marketEconomics = context?.marketEconomics
+    const warehouseContext = context?.warehouseContext || context?.sofascoreData
     const clayMatchupData = context?.clayMatchupData
     const opponentQualityData = context?.opponentQualityData
     const qualityPlayers = Array.isArray(opponentQualityData?.players) ? opponentQualityData.players : []
@@ -3316,6 +3319,64 @@ function App() {
         Number.isFinite(Number(ranking?.points)) ? `${Number(ranking.points).toLocaleString('en-US')} pts` : null
       ].filter(Boolean)
       return parts.length ? parts.join(' · ') : 'No profile data'
+    }
+    const marketValueTone = (edgePct: any) => {
+      const edge = Number(edgePct)
+      if (!Number.isFinite(edge)) return ''
+      if (edge >= 7) return 'accent'
+      if (edge <= -4) return 'warning'
+      return ''
+    }
+    const marketValueLabel = (edgePct: any) => {
+      const edge = Number(edgePct)
+      if (!Number.isFinite(edge)) return 'No model edge'
+      if (edge >= 7) return 'Positive value'
+      if (edge <= -4) return 'Bad price'
+      return 'Near fair'
+    }
+    const statDisplay = (stat?: AnyRecord | null) => {
+      if (!stat) return 'N/A'
+      if (stat.raw !== undefined && stat.raw !== null && stat.raw !== '') return String(stat.raw)
+      if (Number.isFinite(Number(stat.percentage))) return `${Math.round(Number(stat.percentage))}%`
+      if (Number.isFinite(Number(stat.numeric))) return formatNumber(Number(stat.numeric), 0)
+      return 'N/A'
+    }
+    const normalizeTennisName = (value: string) => {
+      const normalized = String(value || '')
+        .normalize('NFKD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9]+/gi, ' ')
+        .trim()
+        .toLowerCase()
+      const aliases: Record<string, string> = {
+        'xinyu wang': 'wang xinyu',
+        'xiyu wang': 'wang xiyu',
+        'yibing wu': 'wu yibing'
+      }
+      return aliases[normalized] || normalized
+    }
+    const playerWarehouseStats = (playerName: string) =>
+      (warehouseContext?.players || []).find((entry: AnyRecord) => normalizeTennisName(entry.name) === normalizeTennisName(playerName))
+        ?.stats || null
+    const warehouseH2hLabel = () => {
+      const h2h = warehouseContext?.h2h
+      if (!h2h) return 'No SofaScore H2H row'
+      const homeWins = Number.isFinite(Number(h2h.homeWins)) ? h2h.homeWins : 'N/A'
+      const awayWins = Number.isFinite(Number(h2h.awayWins)) ? h2h.awayWins : 'N/A'
+      return `${h2h.homeName || 'Home'} ${homeWins}-${awayWins} ${h2h.awayName || 'Away'}`
+    }
+    const weaknessRiskPct = (score: any) => {
+      const numericScore = Number(score)
+      if (!Number.isFinite(numericScore)) return null
+      return Math.max(0, Math.min(100, Math.round((numericScore / 35) * 100)))
+    }
+    const weaknessRiskLabel = (score: any) => {
+      const riskPct = weaknessRiskPct(score)
+      if (riskPct == null) return 'No serve risk score'
+      if (riskPct < 23) return 'Clean serve profile'
+      if (riskPct < 43) return 'Mild serve risk'
+      if (riskPct < 69) return 'Watch serve pressure'
+      return 'Fragile serve profile'
     }
     const formatRecentScore = (match: AnyRecord) => {
       const tokens = match?.parsed?.scoreTokens
@@ -3424,12 +3485,19 @@ function App() {
                 </div>
                 <p>{player.clayLine}</p>
                 {player.weakness ? (
-                  <div className="react-pill-row">
-                    <span className="history-pill neutral">Weakness {player.weakness.weaknessScore}</span>
-                    <span className="history-pill neutral">{player.weakness.firstGameComfort}</span>
-                    {player.weakness.avgDoubleFaults != null ? (
-                      <span className="history-pill neutral">DF {player.weakness.avgDoubleFaults}</span>
-                    ) : null}
+                  <div className="tennis-risk-meter">
+                    <div className="tennis-risk-meter-head">
+                      <span>Serve risk</span>
+                      <strong>{weaknessRiskPct(player.weakness.weaknessScore) ?? 'N/A'}/100</strong>
+                    </div>
+                    <div className="meter-track volatility tennis-risk-track">
+                      <span style={{ width: `${weaknessRiskPct(player.weakness.weaknessScore) ?? 0}%` }} />
+                    </div>
+                    <small>
+                      {weaknessRiskLabel(player.weakness.weaknessScore)} · raw {player.weakness.weaknessScore ?? 'N/A'} internal
+                      {player.weakness.avgDoubleFaults != null ? ` · double faults ${player.weakness.avgDoubleFaults}/match` : ''}
+                    </small>
+                    <small>{player.weakness.firstGameComfort}</small>
                   </div>
                 ) : null}
                 <small>{player.notes}</small>
@@ -3504,6 +3572,79 @@ function App() {
                 <small>{weaknessEdge.totalRead}</small>
               </article>
             </div>
+          </section>
+        ) : null}
+
+        {warehouseContext ? (
+          <section className="detail-panel">
+            <div className="detail-panel-header">
+              <p className="eyebrow">Warehouse match data</p>
+              <span>{warehouseContext.source || 'SofaScore / warehouse'}</span>
+            </div>
+            <div className="react-card-grid">
+              <article className="react-mini-panel">
+                <span className="eyebrow">Surface / H2H</span>
+                <strong>{warehouseContext.surface || 'Surface pending'}</strong>
+                <small>{warehouseH2hLabel()}</small>
+              </article>
+              <article className="react-mini-panel">
+                <span className="eyebrow">Coverage</span>
+                <strong>{warehouseContext.coverage?.playerStatRows ?? 0} player stat rows</strong>
+                <small>{warehouseContext.sourceUrl ? 'SofaScore event mapped to board match' : 'No event URL mapped'}</small>
+              </article>
+              <article className="react-mini-panel">
+                <span className="eyebrow">Score state</span>
+                <strong>
+                  {warehouseContext.score?.home?.current != null || warehouseContext.score?.away?.current != null
+                    ? `${warehouseContext.score?.home?.current ?? 0}-${warehouseContext.score?.away?.current ?? 0}`
+                    : 'Pregame / no score'}
+                </strong>
+                <small>{warehouseContext.tournament || 'Tournament row pending'}</small>
+              </article>
+            </div>
+            {context?.players?.length ? (
+              <div className="tennis-warehouse-grid">
+                {context.players.map((player: AnyRecord) => {
+                  const stats = player.warehouseStats?.stats || playerWarehouseStats(player.name)
+                  return (
+                    <article key={`${game.id}-${player.name}-warehouse`} className="tennis-warehouse-card">
+                      <div className="tennis-recent-head">
+                        <div>
+                          <strong>{player.name}</strong>
+                          <span>{stats ? 'SofaScore ALL-period stats' : 'No completed stat row yet'}</span>
+                        </div>
+                      </div>
+                      <div className="tennis-recent-stat-grid">
+                        <div>
+                          <span>Aces</span>
+                          <strong>{statDisplay(stats?.aces)}</strong>
+                        </div>
+                        <div>
+                          <span>DF</span>
+                          <strong>{statDisplay(stats?.doubleFaults)}</strong>
+                        </div>
+                        <div>
+                          <span>1st won</span>
+                          <strong>{statDisplay(stats?.firstServeWonPct)}</strong>
+                        </div>
+                        <div>
+                          <span>Service games</span>
+                          <strong>{statDisplay(stats?.serviceGamesPlayed)}</strong>
+                        </div>
+                        <div>
+                          <span>BP saved</span>
+                          <strong>{statDisplay(stats?.breakPointsSaved)}</strong>
+                        </div>
+                        <div>
+                          <span>BP converted</span>
+                          <strong>{statDisplay(stats?.breakPointsConverted)}</strong>
+                        </div>
+                      </div>
+                    </article>
+                  )
+                })}
+              </div>
+            ) : null}
           </section>
         ) : null}
 
@@ -3623,6 +3764,41 @@ function App() {
                 <strong>{tradePlan.headline}</strong>
                 <small>{tradePlan.exit}</small>
               </article>
+            </div>
+          </section>
+        ) : null}
+
+        {marketEconomics?.players?.length ? (
+          <section className="detail-panel">
+            <div className="detail-panel-header">
+              <p className="eyebrow">Moneyline value math</p>
+              <span>{marketEconomics.source || 'Market price'}</span>
+            </div>
+            <p className="react-section-copy">
+              Confidence is the model win estimate. Implied is the sportsbook break-even price. Edge is model minus implied;
+              negative edge means the pick can be likely to win and still be a bad ML bet.
+            </p>
+            <div className="react-card-grid">
+              {marketEconomics.players.map((player: AnyRecord) => (
+                <article
+                  key={`${game.id}-${player.name}-value`}
+                  className={`react-mini-panel ${marketValueTone(player.edgePct)}`}
+                >
+                  <span className="eyebrow">{player.name}</span>
+                  <strong>{marketValueLabel(player.edgePct)}</strong>
+                  <small>
+                    Model {formatPercent(player.modelPct, 1)} vs implied {formatPercent(player.impliedPct, 1)} ={' '}
+                    {formatSignedNumber(player.edgePct, 1)} pts
+                  </small>
+                  <p className="react-section-copy">
+                    {formatAmericanOdds(player.americanOdds)} · risk 100 to win{' '}
+                    {Number.isFinite(Number(player.centsProfitIfWin))
+                      ? `${formatNumber(player.centsProfitIfWin, 1)}`
+                      : 'N/A'}
+                    ; {player.priceBand || 'price band pending'}.
+                  </p>
+                </article>
+              ))}
             </div>
           </section>
         ) : null}
@@ -4770,7 +4946,7 @@ function App() {
                 </div>
 
                 <div className="models-daily-grid">
-                  {historyTrendPoints.map((entry) => (
+                  {dailyHistoryTrendPoints.map((entry) => (
                     <article key={`daily-${entry.id}`} className="history-ledger-card models-daily-card">
                       <span className="parlay-stat-label">{entry.label}</span>
                       <div className="models-daily-rows">

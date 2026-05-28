@@ -1,0 +1,521 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/flavio-cobolli-yibing-wu#id:16198491",
+  "eventId": "16198491",
+  "slateDate": "2026-05-28",
+  "boardMatchId": "rg-m-flavio-cobolli-wu-yibing-2026-05-28",
+  "boardTitle": "Flavio Cobolli vs Wu Yibing",
+  "capturedAt": "2026-05-28T02:55:39.445Z",
+  "compactEvent": {
+    "id": 16198491,
+    "slug": "flavio-cobolli-yibing-wu",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1779958800,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "ATP",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 32,
+      "name": "Round of 64",
+      "slug": "round-of-64"
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 273680,
+      "name": "Flavio Cobolli",
+      "shortName": "F. Cobolli",
+      "ranking": 14,
+      "currentRanking": 14,
+      "country": {
+        "alpha2": "IT",
+        "alpha3": "ITA",
+        "name": "Italy",
+        "slug": "italy"
+      },
+      "playerTeamInfo": {
+        "height": 1.83,
+        "weight": 74,
+        "plays": "right-handed",
+        "prizeCurrent": 1321908,
+        "prizeTotal": 5881790,
+        "birthCity": {
+          "name": "Florence",
+          "country": {
+            "alpha2": "IT",
+            "alpha3": "ITA",
+            "name": "Italy",
+            "slug": "italy"
+          },
+          "id": 19275
+        },
+        "residenceCity": {
+          "name": "Rome",
+          "country": {
+            "alpha2": "IT",
+            "alpha3": "ITA",
+            "name": "Italy",
+            "slug": "italy"
+          },
+          "id": 18725
+        },
+        "id": 4435,
+        "birthplace": "Florence, Italy",
+        "birthDateTimestamp": 1020643200,
+        "residence": "Rome, Italy",
+        "prizeCurrentRaw": {
+          "value": 1321908,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 5881790,
+          "currency": "EUR"
+        },
+        "currentRanking": 14
+      }
+    },
+    "awayTeam": {
+      "id": 194186,
+      "name": "Yibing Wu",
+      "shortName": "Y. Wu",
+      "ranking": 92,
+      "currentRanking": 80,
+      "country": {
+        "alpha2": "CN",
+        "alpha3": "CHN",
+        "name": "China",
+        "slug": "china"
+      },
+      "playerTeamInfo": {
+        "height": 1.83,
+        "weight": 80,
+        "plays": "right-handed",
+        "turnedPro": "2017",
+        "prizeCurrent": 268463,
+        "prizeTotal": 1548689,
+        "birthCity": {
+          "name": "Hangzhou",
+          "country": {
+            "alpha2": "CN",
+            "alpha3": "CHN",
+            "name": "China",
+            "slug": "china"
+          },
+          "id": 21357
+        },
+        "residenceCity": {
+          "name": "Hangzhou",
+          "country": {
+            "alpha2": "CN",
+            "alpha3": "CHN",
+            "name": "China",
+            "slug": "china"
+          },
+          "id": 21357
+        },
+        "id": 456,
+        "birthplace": "Hangzhou, China",
+        "birthDateTimestamp": 939859200,
+        "residence": "Hangzhou, China",
+        "prizeCurrentRaw": {
+          "value": 268463,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 1548689,
+          "currency": "EUR"
+        },
+        "currentRanking": 80
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "homeTeamSeed": "10",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "ATP",
+              "slug": "atp",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 7,
+              "country": {},
+              "id": 3,
+              "flag": "atp",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "এটিপি",
+                  "hi": "डब्ल्यूटीए",
+                  "ar": "رابطة محترفي التنس",
+                  "ru": "ATP"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "ATP",
+                "slug": "atp",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 7,
+                "country": {},
+                "id": 3,
+                "flag": "atp",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "এটিপি",
+                    "hi": "डब्ल्यूटीए",
+                    "ar": "رابطة محترفي التنس",
+                    "ru": "ATP"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 35147,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2480,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गर्रोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185245,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1779580800
+          },
+          "season": {
+            "name": "French Open Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85951
+          },
+          "roundInfo": {
+            "round": 32,
+            "name": "Round of 64",
+            "slug": "round-of-64"
+          },
+          "customId": "LICbsFyjc",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-7",
+            "name": "Court 7",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 21829,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب 7",
+                "hi": "कोर्ट 7",
+                "bn": "কোর্ট 7"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court 7"
+            }
+          },
+          "homeTeam": {
+            "name": "Flavio Cobolli",
+            "slug": "flavio-cobolli",
+            "shortName": "F. Cobolli",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 28422,
+            "playerTeamInfo": {
+              "height": 1.83,
+              "weight": 74,
+              "plays": "right-handed",
+              "prizeCurrent": 1321908,
+              "prizeTotal": 5881790,
+              "birthCity": {
+                "name": "Florence",
+                "country": {
+                  "alpha2": "IT",
+                  "alpha3": "ITA",
+                  "name": "Italy",
+                  "slug": "italy"
+                },
+                "id": 19275
+              },
+              "residenceCity": {
+                "name": "Rome",
+                "country": {
+                  "alpha2": "IT",
+                  "alpha3": "ITA",
+                  "name": "Italy",
+                  "slug": "italy"
+                },
+                "id": 18725
+              },
+              "id": 4435,
+              "birthplace": "Florence, Italy",
+              "birthDateTimestamp": 1020643200,
+              "residence": "Rome, Italy",
+              "prizeCurrentRaw": {
+                "value": 1321908,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 5881790,
+                "currency": "EUR"
+              },
+              "currentRanking": 14
+            },
+            "nameCode": "COB",
+            "ranking": 14,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "IT",
+              "alpha3": "ITA",
+              "name": "Italy",
+              "slug": "italy"
+            },
+            "id": 273680,
+            "fullName": "Flavio Cobolli",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "فلافيو كوبولي",
+                "ru": "Коболли, Флавио"
+              },
+              "shortNameTranslation": {
+                "ar": "ف. كوبولي",
+                "bn": "এফ. কোবলি",
+                "hi": "एफ. कोबोल्ली"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Yibing Wu",
+            "slug": "wu-yibing",
+            "shortName": "Y. Wu",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 4622,
+            "playerTeamInfo": {
+              "height": 1.83,
+              "weight": 80,
+              "plays": "right-handed",
+              "turnedPro": "2017",
+              "prizeCurrent": 268463,
+              "prizeTotal": 1548689,
+              "birthCity": {
+                "name": "Hangzhou",
+                "country": {
+                  "alpha2": "CN",
+                  "alpha3": "CHN",
+                  "name": "China",
+                  "slug": "china"
+                },
+                "id": 21357
+              },
+              "residenceCity": {
+                "name": "Hangzhou",
+                "country": {
+                  "alpha2": "CN",
+                  "alpha3": "CHN",
+                  "name": "China",
+                  "slug": "china"
+                },
+                "id": 21357
+              },
+              "id": 456,
+              "birthplace": "Hangzhou, China",
+              "birthDateTimestamp": 939859200,
+              "residence": "Hangzhou, China",
+              "prizeCurrentRaw": {
+                "value": 268463,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 1548689,
+                "currency": "EUR"
+              },
+              "currentRanking": 80
+            },
+            "nameCode": "YIB",
+            "ranking": 92,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "CN",
+              "alpha3": "CHN",
+              "name": "China",
+              "slug": "china"
+            },
+            "id": 194186,
+            "fullName": "Yibing Wu",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ييبينغ وو",
+                "ru": "Ву, Жибин"
+              },
+              "shortNameTranslation": {
+                "ar": "ي. وو",
+                "bn": "ডব্লিউ. ইবিং",
+                "hi": "डब्ल्यू. यीबिंग"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198491,
+          "defaultPeriodCount": 5,
+          "slug": "flavio-cobolli-yibing-wu",
+          "startTimestamp": 1779958800,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": {
+          "homeWins": 1,
+          "awayWins": 0,
+          "draws": 0
+        },
+        "managerDuel": null
+      }
+    },
+    "odds": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

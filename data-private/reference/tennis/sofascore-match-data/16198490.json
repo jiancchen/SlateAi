@@ -1,0 +1,492 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/roman-andres-burruchaga-felix-auger-aliassime#id:16198490",
+  "eventId": "16198490",
+  "slateDate": "2026-05-28",
+  "boardMatchId": "rg-m-felix-auger-aliassime-roman-andres-burruchaga-2026-05-28",
+  "boardTitle": "Felix Auger-Aliassime vs Roman Andres Burruchaga",
+  "capturedAt": "2026-05-28T02:55:43.596Z",
+  "compactEvent": {
+    "id": 16198490,
+    "slug": "roman-andres-burruchaga-felix-auger-aliassime",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1779976800,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "ATP",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 32,
+      "name": "Round of 64",
+      "slug": "round-of-64"
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 192013,
+      "name": "Felix Auger-Aliassime",
+      "shortName": "F. Auger-Aliassime",
+      "ranking": 6,
+      "currentRanking": 4,
+      "country": {
+        "alpha2": "CA",
+        "alpha3": "CAN",
+        "name": "Canada",
+        "slug": "canada"
+      },
+      "playerTeamInfo": {
+        "height": 1.93,
+        "weight": 88,
+        "plays": "right-handed",
+        "turnedPro": "2017",
+        "prizeCurrent": 1286854,
+        "prizeTotal": 19192198,
+        "birthCity": {
+          "name": "Montréal",
+          "country": {
+            "alpha2": "CA",
+            "alpha3": "CAN",
+            "name": "Canada",
+            "slug": "canada"
+          },
+          "id": 18221
+        },
+        "residenceCity": {
+          "name": "Monte Carlo",
+          "country": {
+            "alpha2": "MC",
+            "alpha3": "MCO",
+            "name": "Monaco",
+            "slug": "monaco"
+          },
+          "id": 21098
+        },
+        "id": 60,
+        "birthplace": "Montréal, Canada",
+        "birthDateTimestamp": 965692800,
+        "residence": "Monte Carlo, Monaco",
+        "prizeCurrentRaw": {
+          "value": 1286854,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 19192198,
+          "currency": "EUR"
+        },
+        "currentRanking": 4
+      }
+    },
+    "awayTeam": {
+      "id": 287181,
+      "name": "Roman Andres Burruchaga",
+      "shortName": "R. Burruchaga",
+      "ranking": 68,
+      "currentRanking": 58,
+      "country": {
+        "alpha2": "AR",
+        "alpha3": "ARG",
+        "name": "Argentina",
+        "slug": "argentina"
+      },
+      "playerTeamInfo": {
+        "height": 1.83,
+        "weight": 80,
+        "plays": "right-handed",
+        "prizeCurrent": 257017,
+        "prizeTotal": 937876,
+        "birthCity": {
+          "name": "Buenos Aires",
+          "country": {
+            "alpha2": "AR",
+            "alpha3": "ARG",
+            "name": "Argentina",
+            "slug": "argentina"
+          },
+          "id": 18696
+        },
+        "id": 4709,
+        "birthplace": "Buenos Aires, Argentina",
+        "birthDateTimestamp": 1011744000,
+        "prizeCurrentRaw": {
+          "value": 257017,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 937876,
+          "currency": "EUR"
+        },
+        "currentRanking": 58
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "homeTeamSeed": "4",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "ATP",
+              "slug": "atp",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 7,
+              "country": {},
+              "id": 3,
+              "flag": "atp",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "এটিপি",
+                  "hi": "डब्ल्यूटीए",
+                  "ar": "رابطة محترفي التنس",
+                  "ru": "ATP"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "ATP",
+                "slug": "atp",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 7,
+                "country": {},
+                "id": 3,
+                "flag": "atp",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "এটিপি",
+                    "hi": "डब्ल्यूटीए",
+                    "ar": "رابطة محترفي التنس",
+                    "ru": "ATP"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 35147,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2480,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गर्रोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185245,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1779580800
+          },
+          "season": {
+            "name": "French Open Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85951
+          },
+          "roundInfo": {
+            "round": 32,
+            "name": "Round of 64",
+            "slug": "round-of-64"
+          },
+          "customId": "nPBbsGToc",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-simonne-mathieu",
+            "name": "Court Simonne Mathieu",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 25283,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب سيمون ماتيو",
+                "hi": "कोर्ट सिमोन मैथ्यू",
+                "bn": "কোর্ট সাইমন ম্যাথিউ"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court Simonne Mathieu"
+            }
+          },
+          "homeTeam": {
+            "name": "Felix Auger-Aliassime",
+            "slug": "auger-aliassime-felix",
+            "shortName": "F. Auger-Aliassime",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 29807,
+            "playerTeamInfo": {
+              "height": 1.93,
+              "weight": 88,
+              "plays": "right-handed",
+              "turnedPro": "2017",
+              "prizeCurrent": 1286854,
+              "prizeTotal": 19192198,
+              "birthCity": {
+                "name": "Montréal",
+                "country": {
+                  "alpha2": "CA",
+                  "alpha3": "CAN",
+                  "name": "Canada",
+                  "slug": "canada"
+                },
+                "id": 18221
+              },
+              "residenceCity": {
+                "name": "Monte Carlo",
+                "country": {
+                  "alpha2": "MC",
+                  "alpha3": "MCO",
+                  "name": "Monaco",
+                  "slug": "monaco"
+                },
+                "id": 21098
+              },
+              "id": 60,
+              "birthplace": "Montréal, Canada",
+              "birthDateTimestamp": 965692800,
+              "residence": "Monte Carlo, Monaco",
+              "prizeCurrentRaw": {
+                "value": 1286854,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 19192198,
+                "currency": "EUR"
+              },
+              "currentRanking": 4
+            },
+            "nameCode": "AUG",
+            "ranking": 6,
+            "class": 4,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "CA",
+              "alpha3": "CAN",
+              "name": "Canada",
+              "slug": "canada"
+            },
+            "id": 192013,
+            "fullName": "Felix Auger-Aliassime",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "فيليكس أوجر-علياسيم",
+                "ru": "Оже-Альяссим, Феликс"
+              },
+              "shortNameTranslation": {
+                "ar": "ف. أوجر-علياسيم",
+                "bn": "এফ অগার-আলিয়াসিম",
+                "hi": "एफ. ऑगर-अलियासिम"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Roman Andres Burruchaga",
+            "slug": "burruchaga-roman-andres",
+            "shortName": "R. Burruchaga",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 4024,
+            "playerTeamInfo": {
+              "height": 1.83,
+              "weight": 80,
+              "plays": "right-handed",
+              "prizeCurrent": 257017,
+              "prizeTotal": 937876,
+              "birthCity": {
+                "name": "Buenos Aires",
+                "country": {
+                  "alpha2": "AR",
+                  "alpha3": "ARG",
+                  "name": "Argentina",
+                  "slug": "argentina"
+                },
+                "id": 18696
+              },
+              "id": 4709,
+              "birthplace": "Buenos Aires, Argentina",
+              "birthDateTimestamp": 1011744000,
+              "prizeCurrentRaw": {
+                "value": 257017,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 937876,
+                "currency": "EUR"
+              },
+              "currentRanking": 58
+            },
+            "nameCode": "BUR",
+            "ranking": 68,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "AR",
+              "alpha3": "ARG",
+              "name": "Argentina",
+              "slug": "argentina"
+            },
+            "id": 287181,
+            "fullName": "Roman Andres Burruchaga",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "رومان أندريس بوروتشاغا",
+                "ru": "Бурручага, Роман Андрес"
+              },
+              "shortNameTranslation": {
+                "ar": "ر. بوروتشاغا"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198490,
+          "defaultPeriodCount": 5,
+          "slug": "roman-andres-burruchaga-felix-auger-aliassime",
+          "startTimestamp": 1779976800,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": null,
+        "managerDuel": null
+      }
+    },
+    "odds": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,536 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/hubert-hurkacz-frances-tiafoe#id:16198501",
+  "eventId": "16198501",
+  "slateDate": "2026-05-28",
+  "boardMatchId": "rg-m-hubert-hurkacz-frances-tiafoe-2026-05-28",
+  "boardTitle": "Hubert Hurkacz vs Frances Tiafoe",
+  "capturedAt": "2026-05-28T02:55:40.710Z",
+  "compactEvent": {
+    "id": 16198501,
+    "slug": "hubert-hurkacz-frances-tiafoe",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1779963000,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "ATP",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 32,
+      "name": "Round of 64",
+      "slug": "round-of-64"
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 158896,
+      "name": "Hubert Hurkacz",
+      "shortName": "H. Hurkacz",
+      "ranking": 99,
+      "currentRanking": 62,
+      "country": {
+        "alpha2": "PL",
+        "alpha3": "POL",
+        "name": "Poland",
+        "slug": "poland"
+      },
+      "playerTeamInfo": {
+        "height": 1.96,
+        "weight": 81,
+        "plays": "right-handed",
+        "turnedPro": "2015",
+        "prizeCurrent": 972678,
+        "prizeTotal": 17320816,
+        "birthCity": {
+          "name": "Wroclaw",
+          "country": {
+            "alpha2": "PL",
+            "alpha3": "POL",
+            "name": "Poland",
+            "slug": "poland"
+          },
+          "id": 19416
+        },
+        "residenceCity": {
+          "name": "Wroclaw",
+          "country": {
+            "alpha2": "PL",
+            "alpha3": "POL",
+            "name": "Poland",
+            "slug": "poland"
+          },
+          "id": 19416
+        },
+        "id": 77,
+        "birthplace": "Wroclaw, Poland",
+        "birthDateTimestamp": 855619200,
+        "residence": "Wroclaw, Poland",
+        "prizeCurrentRaw": {
+          "value": 972678,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 17320816,
+          "currency": "EUR"
+        },
+        "currentRanking": 62
+      }
+    },
+    "awayTeam": {
+      "id": 101101,
+      "name": "Frances Tiafoe",
+      "shortName": "F. Tiafoe",
+      "ranking": 22,
+      "currentRanking": 22,
+      "country": {
+        "alpha2": "US",
+        "alpha3": "USA",
+        "name": "USA",
+        "slug": "usa"
+      },
+      "playerTeamInfo": {
+        "height": 1.88,
+        "weight": 86,
+        "plays": "right-handed",
+        "turnedPro": "2015",
+        "prizeCurrent": 852516,
+        "prizeTotal": 14662618,
+        "birthCity": {
+          "name": "Hyattsville",
+          "state": "US-MD",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 35503
+        },
+        "residenceCity": {
+          "name": "Orlando",
+          "state": "US-FL",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 29957
+        },
+        "id": 34,
+        "birthplace": "Hyattsville, Maryland, USA",
+        "birthDateTimestamp": 885254400,
+        "residence": "Orlando, Florida, USA",
+        "prizeCurrentRaw": {
+          "value": 852516,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 14662618,
+          "currency": "EUR"
+        },
+        "currentRanking": 22
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "awayTeamSeed": "19",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "ATP",
+              "slug": "atp",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 7,
+              "country": {},
+              "id": 3,
+              "flag": "atp",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "এটিপি",
+                  "hi": "डब्ल्यूटीए",
+                  "ar": "رابطة محترفي التنس",
+                  "ru": "ATP"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "ATP",
+                "slug": "atp",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 7,
+                "country": {},
+                "id": 3,
+                "flag": "atp",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "এটিপি",
+                    "hi": "डब्ल्यूटीए",
+                    "ar": "رابطة محترفي التنس",
+                    "ru": "ATP"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 35147,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2480,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गर्रोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185245,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1779580800
+          },
+          "season": {
+            "name": "French Open Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85951
+          },
+          "roundInfo": {
+            "round": 32,
+            "name": "Round of 64",
+            "slug": "round-of-64"
+          },
+          "customId": "bxPsWCnb",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-14",
+            "name": "Court 14",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 17174,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب 14",
+                "hi": "कोर्ट 14",
+                "bn": "কোর্ট 14"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court 14"
+            }
+          },
+          "homeTeam": {
+            "name": "Hubert Hurkacz",
+            "slug": "hurkacz-hubert",
+            "shortName": "H. Hurkacz",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 29602,
+            "playerTeamInfo": {
+              "height": 1.96,
+              "weight": 81,
+              "plays": "right-handed",
+              "turnedPro": "2015",
+              "prizeCurrent": 972678,
+              "prizeTotal": 17320816,
+              "birthCity": {
+                "name": "Wroclaw",
+                "country": {
+                  "alpha2": "PL",
+                  "alpha3": "POL",
+                  "name": "Poland",
+                  "slug": "poland"
+                },
+                "id": 19416
+              },
+              "residenceCity": {
+                "name": "Wroclaw",
+                "country": {
+                  "alpha2": "PL",
+                  "alpha3": "POL",
+                  "name": "Poland",
+                  "slug": "poland"
+                },
+                "id": 19416
+              },
+              "id": 77,
+              "birthplace": "Wroclaw, Poland",
+              "birthDateTimestamp": 855619200,
+              "residence": "Wroclaw, Poland",
+              "prizeCurrentRaw": {
+                "value": 972678,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 17320816,
+                "currency": "EUR"
+              },
+              "currentRanking": 62
+            },
+            "nameCode": "HUR",
+            "ranking": 99,
+            "class": 1,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "PL",
+              "alpha3": "POL",
+              "name": "Poland",
+              "slug": "poland"
+            },
+            "id": 158896,
+            "fullName": "Hubert Hurkacz",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "هوبرت هوركاش",
+                "ru": "Гуркач, Хуберт"
+              },
+              "shortNameTranslation": {
+                "ar": "ه. هوركاش",
+                "bn": "এইচ. হুরকাজ",
+                "hi": "एच. हुरकाच"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Frances Tiafoe",
+            "slug": "tiafoe-frances",
+            "shortName": "F. Tiafoe",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 22085,
+            "playerTeamInfo": {
+              "height": 1.88,
+              "weight": 86,
+              "plays": "right-handed",
+              "turnedPro": "2015",
+              "prizeCurrent": 852516,
+              "prizeTotal": 14662618,
+              "birthCity": {
+                "name": "Hyattsville",
+                "state": "US-MD",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 35503
+              },
+              "residenceCity": {
+                "name": "Orlando",
+                "state": "US-FL",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 29957
+              },
+              "id": 34,
+              "birthplace": "Hyattsville, Maryland, USA",
+              "birthDateTimestamp": 885254400,
+              "residence": "Orlando, Florida, USA",
+              "prizeCurrentRaw": {
+                "value": 852516,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 14662618,
+                "currency": "EUR"
+              },
+              "currentRanking": 22
+            },
+            "nameCode": "TIA",
+            "ranking": 22,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "US",
+              "alpha3": "USA",
+              "name": "USA",
+              "slug": "usa"
+            },
+            "id": 101101,
+            "fullName": "Frances Tiafoe",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "فرانسيس تيافوي",
+                "ru": "Тиафо, Фрэнсис"
+              },
+              "shortNameTranslation": {
+                "ar": "ف. تيافوي",
+                "bn": "এফ. টিয়াফো",
+                "hi": "एफ. टियाफो"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198501,
+          "defaultPeriodCount": 5,
+          "slug": "hubert-hurkacz-frances-tiafoe",
+          "startTimestamp": 1779963000,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "SG",
+            "IR",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": {
+          "homeWins": 3,
+          "awayWins": 4,
+          "draws": 0
+        },
+        "managerDuel": null
+      }
+    },
+    "odds": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

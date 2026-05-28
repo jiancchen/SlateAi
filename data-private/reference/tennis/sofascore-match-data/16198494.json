@@ -1,0 +1,496 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/valentin-vacherot-alejandro-tabilo#id:16198494",
+  "eventId": "16198494",
+  "slateDate": "2026-05-28",
+  "boardMatchId": "rg-m-alejandro-tabilo-valentin-vacherot-2026-05-28",
+  "boardTitle": "Alejandro Tabilo vs Valentin Vacherot",
+  "capturedAt": "2026-05-28T02:55:41.228Z",
+  "compactEvent": {
+    "id": 16198494,
+    "slug": "valentin-vacherot-alejandro-tabilo",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1779969000,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "ATP",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 32,
+      "name": "Round of 64",
+      "slug": "round-of-64"
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 102151,
+      "name": "Alejandro Tabilo",
+      "shortName": "A. Tabilo",
+      "ranking": 36,
+      "currentRanking": 20,
+      "country": {
+        "alpha2": "CL",
+        "alpha3": "CHL",
+        "name": "Chile",
+        "slug": "chile"
+      },
+      "playerTeamInfo": {
+        "height": 1.88,
+        "weight": 75,
+        "plays": "left-handed",
+        "turnedPro": "2015",
+        "prizeCurrent": 645907,
+        "prizeTotal": 4711028,
+        "birthCity": {
+          "name": "Toronto",
+          "country": {
+            "alpha2": "CA",
+            "alpha3": "CAN",
+            "name": "Canada",
+            "slug": "canada"
+          },
+          "id": 19314
+        },
+        "residenceCity": {
+          "name": "Huechuraba, Santiago",
+          "country": {
+            "alpha2": "CL",
+            "alpha3": "CHL",
+            "name": "Chile",
+            "slug": "chile"
+          },
+          "id": 36116
+        },
+        "id": 1931,
+        "birthplace": "Toronto, Canada",
+        "birthDateTimestamp": 865209600,
+        "residence": "Huechuraba, Santiago, Chile",
+        "prizeCurrentRaw": {
+          "value": 645907,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 4711028,
+          "currency": "EUR"
+        },
+        "currentRanking": 20
+      }
+    },
+    "awayTeam": {
+      "id": 158912,
+      "name": "Valentin Vacherot",
+      "shortName": "V. Vacherot",
+      "ranking": 19,
+      "currentRanking": 16,
+      "country": {
+        "alpha2": "MC",
+        "alpha3": "MCO",
+        "name": "Monaco",
+        "slug": "monaco"
+      },
+      "playerTeamInfo": {
+        "height": 1.93,
+        "weight": 83,
+        "plays": "right-handed",
+        "prizeCurrent": 750628,
+        "prizeTotal": 2950752,
+        "birthCity": {
+          "name": "Monaco",
+          "country": {
+            "alpha2": "MC",
+            "alpha3": "MCO",
+            "name": "Monaco",
+            "slug": "monaco"
+          },
+          "id": 27827
+        },
+        "id": 2304,
+        "birthplace": "Monaco, Monaco",
+        "birthDateTimestamp": 911174400,
+        "prizeCurrentRaw": {
+          "value": 750628,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 2950752,
+          "currency": "EUR"
+        },
+        "currentRanking": 16
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "awayTeamSeed": "16",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "ATP",
+              "slug": "atp",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 7,
+              "country": {},
+              "id": 3,
+              "flag": "atp",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "এটিপি",
+                  "hi": "डब्ल्यूटीए",
+                  "ar": "رابطة محترفي التنس",
+                  "ru": "ATP"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "ATP",
+                "slug": "atp",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 7,
+                "country": {},
+                "id": 3,
+                "flag": "atp",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "এটিপি",
+                    "hi": "डब्ल्यूटीए",
+                    "ar": "رابطة محترفي التنس",
+                    "ru": "ATP"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 35147,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2480,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गर्रोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185245,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1779580800
+          },
+          "season": {
+            "name": "French Open Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85951
+          },
+          "roundInfo": {
+            "round": 32,
+            "name": "Round of 64",
+            "slug": "round-of-64"
+          },
+          "customId": "bTPsmDnb",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-13",
+            "name": "Court 13",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 21830,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب 13",
+                "hi": "कोर्ट 13",
+                "bn": "কোর্ট 13"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court 13"
+            }
+          },
+          "homeTeam": {
+            "name": "Alejandro Tabilo",
+            "slug": "tabilo-alejandro",
+            "shortName": "A. Tabilo",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 13663,
+            "playerTeamInfo": {
+              "height": 1.88,
+              "weight": 75,
+              "plays": "left-handed",
+              "turnedPro": "2015",
+              "prizeCurrent": 645907,
+              "prizeTotal": 4711028,
+              "birthCity": {
+                "name": "Toronto",
+                "country": {
+                  "alpha2": "CA",
+                  "alpha3": "CAN",
+                  "name": "Canada",
+                  "slug": "canada"
+                },
+                "id": 19314
+              },
+              "residenceCity": {
+                "name": "Huechuraba, Santiago",
+                "country": {
+                  "alpha2": "CL",
+                  "alpha3": "CHL",
+                  "name": "Chile",
+                  "slug": "chile"
+                },
+                "id": 36116
+              },
+              "id": 1931,
+              "birthplace": "Toronto, Canada",
+              "birthDateTimestamp": 865209600,
+              "residence": "Huechuraba, Santiago, Chile",
+              "prizeCurrentRaw": {
+                "value": 645907,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 4711028,
+                "currency": "EUR"
+              },
+              "currentRanking": 20
+            },
+            "nameCode": "TAB",
+            "ranking": 36,
+            "class": 1,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "CL",
+              "alpha3": "CHL",
+              "name": "Chile",
+              "slug": "chile"
+            },
+            "id": 102151,
+            "fullName": "Alejandro Tabilo",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "أليخاندرو تابيلو",
+                "bn": "আলেকজান্ডার তাবিলো",
+                "hi": "एलेजांद्रो टाबिलो",
+                "ru": "Табило, Алехандро"
+              },
+              "shortNameTranslation": {
+                "ar": "أ. تابيلو"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Valentin Vacherot",
+            "slug": "vacherot-valentin",
+            "shortName": "V. Vacherot",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 11221,
+            "playerTeamInfo": {
+              "height": 1.93,
+              "weight": 83,
+              "plays": "right-handed",
+              "prizeCurrent": 750628,
+              "prizeTotal": 2950752,
+              "birthCity": {
+                "name": "Monaco",
+                "country": {
+                  "alpha2": "MC",
+                  "alpha3": "MCO",
+                  "name": "Monaco",
+                  "slug": "monaco"
+                },
+                "id": 27827
+              },
+              "id": 2304,
+              "birthplace": "Monaco, Monaco",
+              "birthDateTimestamp": 911174400,
+              "prizeCurrentRaw": {
+                "value": 750628,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 2950752,
+                "currency": "EUR"
+              },
+              "currentRanking": 16
+            },
+            "nameCode": "VAC",
+            "ranking": 19,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "MC",
+              "alpha3": "MCO",
+              "name": "Monaco",
+              "slug": "monaco"
+            },
+            "id": 158912,
+            "fullName": "Valentin Vacherot",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "فالنتين فاشيرو"
+              },
+              "shortNameTranslation": {
+                "ar": "ف. فاشيرو"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198494,
+          "defaultPeriodCount": 5,
+          "slug": "valentin-vacherot-alejandro-tabilo",
+          "startTimestamp": 1779969000,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": {
+          "homeWins": 1,
+          "awayWins": 1,
+          "draws": 0
+        },
+        "managerDuel": null
+      }
+    },
+    "odds": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,478 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/ben-shelton-raphael-collignon#id:16198489",
+  "eventId": "16198489",
+  "slateDate": "2026-05-28",
+  "boardMatchId": "rg-m-raphael-collignon-ben-shelton-2026-05-28",
+  "boardTitle": "Raphael Collignon vs Ben Shelton",
+  "capturedAt": "2026-05-28T02:55:43.345Z",
+  "compactEvent": {
+    "id": 16198489,
+    "slug": "ben-shelton-raphael-collignon",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1779973200,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "ATP",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 32,
+      "name": "Round of 64",
+      "slug": "round-of-64"
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 355525,
+      "name": "Raphael Collignon",
+      "shortName": "R. Collignon",
+      "ranking": 62,
+      "currentRanking": 33,
+      "country": {
+        "alpha2": "BE",
+        "alpha3": "BEL",
+        "name": "Belgium",
+        "slug": "belgium"
+      },
+      "playerTeamInfo": {
+        "height": 1.91,
+        "weight": 86,
+        "plays": "right-handed",
+        "prizeCurrent": 290597,
+        "prizeTotal": 1027588,
+        "birthCity": {
+          "name": "Rochester, Olmsted",
+          "country": {
+            "alpha2": "BE",
+            "alpha3": "BEL",
+            "name": "Belgium",
+            "slug": "belgium"
+          },
+          "id": 35217
+        },
+        "id": 4830,
+        "birthplace": "Rochester, Olmsted, Belgium",
+        "birthDateTimestamp": 1010880000,
+        "prizeCurrentRaw": {
+          "value": 290597,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 1027588,
+          "currency": "EUR"
+        },
+        "currentRanking": 33
+      }
+    },
+    "awayTeam": {
+      "id": 385485,
+      "name": "Ben Shelton",
+      "shortName": "B. Shelton",
+      "ranking": 5,
+      "currentRanking": 5,
+      "country": {
+        "alpha2": "US",
+        "alpha3": "USA",
+        "name": "USA",
+        "slug": "usa"
+      },
+      "playerTeamInfo": {
+        "height": 1.93,
+        "weight": 88,
+        "plays": "left-handed",
+        "prizeCurrent": 1604431,
+        "prizeTotal": 11576606,
+        "birthCity": {
+          "name": "Atlanta",
+          "state": "US-GA",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 24659
+        },
+        "id": 4948,
+        "birthplace": "Atlanta, Georgia US, USA",
+        "birthDateTimestamp": 1034121600,
+        "prizeCurrentRaw": {
+          "value": 1604431,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 11576606,
+          "currency": "EUR"
+        },
+        "currentRanking": 5
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "awayTeamSeed": "5",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "ATP",
+              "slug": "atp",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 7,
+              "country": {},
+              "id": 3,
+              "flag": "atp",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "এটিপি",
+                  "hi": "डब्ल्यूटीए",
+                  "ar": "رابطة محترفي التنس",
+                  "ru": "ATP"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "ATP",
+                "slug": "atp",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 7,
+                "country": {},
+                "id": 3,
+                "flag": "atp",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "এটিপি",
+                    "hi": "डब्ल्यूटीए",
+                    "ar": "رابطة محترفي التنس",
+                    "ru": "ATP"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 35147,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2480,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गर्रोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185245,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1779580800
+          },
+          "season": {
+            "name": "French Open Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85951
+          },
+          "roundInfo": {
+            "round": 32,
+            "name": "Round of 64",
+            "slug": "round-of-64"
+          },
+          "customId": "AkRcsKjed",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-suzanne-lenglen",
+            "name": "Court Suzanne Lenglen",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 17177,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب سوزان لانغلين",
+                "hi": "कोर्ट सुज़ैन लेंग्लेन",
+                "bn": "কোর্ট সুজান লেংলেন"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court Suzanne Lenglen"
+            }
+          },
+          "homeTeam": {
+            "name": "Raphael Collignon",
+            "slug": "collignon-raphael",
+            "shortName": "R. Collignon",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 5066,
+            "playerTeamInfo": {
+              "height": 1.91,
+              "weight": 86,
+              "plays": "right-handed",
+              "prizeCurrent": 290597,
+              "prizeTotal": 1027588,
+              "birthCity": {
+                "name": "Rochester, Olmsted",
+                "country": {
+                  "alpha2": "BE",
+                  "alpha3": "BEL",
+                  "name": "Belgium",
+                  "slug": "belgium"
+                },
+                "id": 35217
+              },
+              "id": 4830,
+              "birthplace": "Rochester, Olmsted, Belgium",
+              "birthDateTimestamp": 1010880000,
+              "prizeCurrentRaw": {
+                "value": 290597,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 1027588,
+                "currency": "EUR"
+              },
+              "currentRanking": 33
+            },
+            "nameCode": "COL",
+            "ranking": 62,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "BE",
+              "alpha3": "BEL",
+              "name": "Belgium",
+              "slug": "belgium"
+            },
+            "id": 355525,
+            "fullName": "Raphael Collignon",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "رافائيل كولينجون"
+              },
+              "shortNameTranslation": {
+                "ar": "ر. كولينجون"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Ben Shelton",
+            "slug": "shelton-ben",
+            "shortName": "B. Shelton",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 42581,
+            "playerTeamInfo": {
+              "height": 1.93,
+              "weight": 88,
+              "plays": "left-handed",
+              "prizeCurrent": 1604431,
+              "prizeTotal": 11576606,
+              "birthCity": {
+                "name": "Atlanta",
+                "state": "US-GA",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 24659
+              },
+              "id": 4948,
+              "birthplace": "Atlanta, Georgia US, USA",
+              "birthDateTimestamp": 1034121600,
+              "prizeCurrentRaw": {
+                "value": 1604431,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 11576606,
+                "currency": "EUR"
+              },
+              "currentRanking": 5
+            },
+            "nameCode": "SHE",
+            "ranking": 5,
+            "class": 4,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "US",
+              "alpha3": "USA",
+              "name": "USA",
+              "slug": "usa"
+            },
+            "id": 385485,
+            "fullName": "Ben Shelton",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "بن شيلتون"
+              },
+              "shortNameTranslation": {
+                "ar": "ب. شيلتون",
+                "bn": "বি. শেলটন,",
+                "hi": "बी. शेल्टन"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198489,
+          "defaultPeriodCount": 5,
+          "slug": "ben-shelton-raphael-collignon",
+          "startTimestamp": 1779973200,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "SG",
+            "IR",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": null,
+        "managerDuel": null
+      }
+    },
+    "odds": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,507 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/matteo-arnaldi-stefanos-tsitsipas#id:16198500",
+  "eventId": "16198500",
+  "slateDate": "2026-05-28",
+  "boardMatchId": "rg-m-matteo-arnaldi-stefanos-tsitsipas-2026-05-28",
+  "boardTitle": "Matteo Arnaldi vs Stefanos Tsitsipas",
+  "capturedAt": "2026-05-28T02:55:43.097Z",
+  "compactEvent": {
+    "id": 16198500,
+    "slug": "matteo-arnaldi-stefanos-tsitsipas",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1779973200,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "ATP",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 32,
+      "name": "Round of 64",
+      "slug": "round-of-64"
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 299538,
+      "name": "Matteo Arnaldi",
+      "shortName": "M. Arnaldi",
+      "ranking": 104,
+      "currentRanking": 104,
+      "country": {
+        "alpha2": "IT",
+        "alpha3": "ITA",
+        "name": "Italy",
+        "slug": "italy"
+      },
+      "playerTeamInfo": {
+        "height": 1.85,
+        "weight": 77,
+        "plays": "right-handed",
+        "prizeCurrent": 262523,
+        "prizeTotal": 4259699,
+        "birthCity": {
+          "name": "Sanremo",
+          "country": {
+            "alpha2": "IT",
+            "alpha3": "ITA",
+            "name": "Italy",
+            "slug": "italy"
+          },
+          "id": 22840
+        },
+        "id": 3979,
+        "birthplace": "Sanremo, Italy",
+        "birthDateTimestamp": 982800000,
+        "prizeCurrentRaw": {
+          "value": 262523,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 4259699,
+          "currency": "EUR"
+        },
+        "currentRanking": 104
+      }
+    },
+    "awayTeam": {
+      "id": 122366,
+      "name": "Stefanos Tsitsipas",
+      "shortName": "S. Tsitsipas",
+      "ranking": 79,
+      "currentRanking": 68,
+      "country": {
+        "alpha2": "GR",
+        "alpha3": "GRC",
+        "name": "Greece",
+        "slug": "greece"
+      },
+      "playerTeamInfo": {
+        "height": 1.93,
+        "weight": 90,
+        "plays": "right-handed",
+        "turnedPro": "2016",
+        "prizeCurrent": 731779,
+        "prizeTotal": 32799966,
+        "birthCity": {
+          "name": "Athens",
+          "country": {
+            "alpha2": "GR",
+            "alpha3": "GRC",
+            "name": "Greece",
+            "slug": "greece"
+          },
+          "id": 18392
+        },
+        "residenceCity": {
+          "name": "Nicosia",
+          "country": {
+            "alpha2": "CY",
+            "alpha3": "CYP",
+            "name": "Cyprus",
+            "slug": "cyprus"
+          },
+          "id": 19410
+        },
+        "id": 11,
+        "birthplace": "Athens, Greece",
+        "birthDateTimestamp": 902880000,
+        "residence": "Nicosia, Cyprus",
+        "prizeCurrentRaw": {
+          "value": 731779,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 32799966,
+          "currency": "EUR"
+        },
+        "currentRanking": 68
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "ATP",
+              "slug": "atp",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 7,
+              "country": {},
+              "id": 3,
+              "flag": "atp",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "এটিপি",
+                  "hi": "डब्ल्यूटीए",
+                  "ar": "رابطة محترفي التنس",
+                  "ru": "ATP"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "ATP",
+                "slug": "atp",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 7,
+                "country": {},
+                "id": 3,
+                "flag": "atp",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "এটিপি",
+                    "hi": "डब्ल्यूटीए",
+                    "ar": "رابطة محترفي التنس",
+                    "ru": "ATP"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 35147,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2480,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गर्रोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185245,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1779580800
+          },
+          "season": {
+            "name": "French Open Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85951
+          },
+          "roundInfo": {
+            "round": 32,
+            "name": "Round of 64",
+            "slug": "round-of-64"
+          },
+          "customId": "qXYsNPuc",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-14",
+            "name": "Court 14",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 17174,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب 14",
+                "hi": "कोर्ट 14",
+                "bn": "কোর্ট 14"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court 14"
+            }
+          },
+          "homeTeam": {
+            "name": "Matteo Arnaldi",
+            "slug": "arnaldi-matteo",
+            "shortName": "M. Arnaldi",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 16966,
+            "playerTeamInfo": {
+              "height": 1.85,
+              "weight": 77,
+              "plays": "right-handed",
+              "prizeCurrent": 262523,
+              "prizeTotal": 4259699,
+              "birthCity": {
+                "name": "Sanremo",
+                "country": {
+                  "alpha2": "IT",
+                  "alpha3": "ITA",
+                  "name": "Italy",
+                  "slug": "italy"
+                },
+                "id": 22840
+              },
+              "id": 3979,
+              "birthplace": "Sanremo, Italy",
+              "birthDateTimestamp": 982800000,
+              "prizeCurrentRaw": {
+                "value": 262523,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 4259699,
+                "currency": "EUR"
+              },
+              "currentRanking": 104
+            },
+            "nameCode": "ARN",
+            "ranking": 104,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "IT",
+              "alpha3": "ITA",
+              "name": "Italy",
+              "slug": "italy"
+            },
+            "id": 299538,
+            "fullName": "Matteo Arnaldi",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ماتيو أرنالد",
+                "ru": "Арнальди, Маттео"
+              },
+              "shortNameTranslation": {
+                "ar": "م. أرنالد",
+                "bn": "এম. আর্নাল্ডি",
+                "hi": "एम. अर्नाल्डी"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Stefanos Tsitsipas",
+            "slug": "tsitsipas-stefanos",
+            "shortName": "S. Tsitsipas",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 50232,
+            "playerTeamInfo": {
+              "height": 1.93,
+              "weight": 90,
+              "plays": "right-handed",
+              "turnedPro": "2016",
+              "prizeCurrent": 731779,
+              "prizeTotal": 32799966,
+              "birthCity": {
+                "name": "Athens",
+                "country": {
+                  "alpha2": "GR",
+                  "alpha3": "GRC",
+                  "name": "Greece",
+                  "slug": "greece"
+                },
+                "id": 18392
+              },
+              "residenceCity": {
+                "name": "Nicosia",
+                "country": {
+                  "alpha2": "CY",
+                  "alpha3": "CYP",
+                  "name": "Cyprus",
+                  "slug": "cyprus"
+                },
+                "id": 19410
+              },
+              "id": 11,
+              "birthplace": "Athens, Greece",
+              "birthDateTimestamp": 902880000,
+              "residence": "Nicosia, Cyprus",
+              "prizeCurrentRaw": {
+                "value": 731779,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 32799966,
+                "currency": "EUR"
+              },
+              "currentRanking": 68
+            },
+            "nameCode": "TSI",
+            "ranking": 79,
+            "class": 4,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "GR",
+              "alpha3": "GRC",
+              "name": "Greece",
+              "slug": "greece"
+            },
+            "id": 122366,
+            "fullName": "Stefanos Tsitsipas",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ستيفانوس تسيتسيباس",
+                "ru": "Циципас, Стефанос"
+              },
+              "shortNameTranslation": {
+                "ar": "س. تسيتسيباس",
+                "bn": "এস সিটসিপাস",
+                "hi": "एस. त्सित्सिपास"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198500,
+          "defaultPeriodCount": 5,
+          "slug": "matteo-arnaldi-stefanos-tsitsipas",
+          "startTimestamp": 1779973200,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "SG",
+            "IR",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": {
+          "homeWins": 0,
+          "awayWins": 1,
+          "draws": 0
+        },
+        "managerDuel": null
+      }
+    },
+    "odds": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

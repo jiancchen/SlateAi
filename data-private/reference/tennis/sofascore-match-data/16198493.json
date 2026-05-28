@@ -1,0 +1,495 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/learner-tien-facundo-diaz-acosta#id:16198493",
+  "eventId": "16198493",
+  "slateDate": "2026-05-28",
+  "boardMatchId": "rg-m-facundo-diaz-acosta-learner-tien-2026-05-28",
+  "boardTitle": "Facundo Diaz Acosta vs Learner Tien",
+  "capturedAt": "2026-05-28T02:55:39.188Z",
+  "compactEvent": {
+    "id": 16198493,
+    "slug": "learner-tien-facundo-diaz-acosta",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1779958800,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "ATP",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 32,
+      "name": "Round of 64",
+      "slug": "round-of-64"
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 264372,
+      "name": "Facundo Diaz Acosta",
+      "shortName": "F. Diaz Acosta",
+      "ranking": 151,
+      "currentRanking": 124,
+      "country": {
+        "alpha2": "AR",
+        "alpha3": "ARG",
+        "name": "Argentina",
+        "slug": "argentina"
+      },
+      "playerTeamInfo": {
+        "height": 1.83,
+        "weight": 75,
+        "plays": "left-handed",
+        "prizeCurrent": 84543,
+        "prizeTotal": 1362149,
+        "birthCity": {
+          "name": "Buenos Aires",
+          "country": {
+            "alpha2": "AR",
+            "alpha3": "ARG",
+            "name": "Argentina",
+            "slug": "argentina"
+          },
+          "id": 18696
+        },
+        "residenceCity": {
+          "name": "Buenos Aires",
+          "country": {
+            "alpha2": "AR",
+            "alpha3": "ARG",
+            "name": "Argentina",
+            "slug": "argentina"
+          },
+          "id": 18696
+        },
+        "id": 3088,
+        "birthplace": "Buenos Aires, Argentina",
+        "birthDateTimestamp": 976838400,
+        "residence": "Buenos Aires, Argentina",
+        "prizeCurrentRaw": {
+          "value": 84543,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 1362149,
+          "currency": "EUR"
+        },
+        "currentRanking": 124
+      }
+    },
+    "awayTeam": {
+      "id": 412818,
+      "name": "Learner Tien",
+      "shortName": "L. Tien",
+      "ranking": 18,
+      "currentRanking": 18,
+      "country": {
+        "alpha2": "US",
+        "alpha3": "USA",
+        "name": "USA",
+        "slug": "usa"
+      },
+      "playerTeamInfo": {
+        "height": 1.8,
+        "weight": 73,
+        "plays": "left-handed",
+        "prizeCurrent": 937145,
+        "prizeTotal": 3612232,
+        "birthCity": {
+          "name": "Irvine",
+          "state": "US-CA",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 27753
+        },
+        "id": 5357,
+        "birthplace": "Irvine, California, USA",
+        "birthDateTimestamp": 1133481600,
+        "prizeCurrentRaw": {
+          "value": 937145,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 3612232,
+          "currency": "EUR"
+        },
+        "currentRanking": 18
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "homeTeamSeed": "Q",
+          "awayTeamSeed": "18",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "ATP",
+              "slug": "atp",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 7,
+              "country": {},
+              "id": 3,
+              "flag": "atp",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "এটিপি",
+                  "hi": "डब्ल्यूटीए",
+                  "ar": "رابطة محترفي التنس",
+                  "ru": "ATP"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "ATP",
+                "slug": "atp",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 7,
+                "country": {},
+                "id": 3,
+                "flag": "atp",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "এটিপি",
+                    "hi": "डब्ल्यूटीए",
+                    "ar": "رابطة محترفي التنس",
+                    "ru": "ATP"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 35147,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2480,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गर्रोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185245,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1779580800
+          },
+          "season": {
+            "name": "French Open Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85951
+          },
+          "roundInfo": {
+            "round": 32,
+            "name": "Round of 64",
+            "slug": "round-of-64"
+          },
+          "customId": "xMfcstgpd",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-6",
+            "name": "Court 6",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 17170,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب 6",
+                "hi": "कोर्ट 6",
+                "bn": "কোর্ট 6"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court 6"
+            }
+          },
+          "homeTeam": {
+            "name": "Facundo Diaz Acosta",
+            "slug": "diaz-acosta-facundo",
+            "shortName": "F. Diaz Acosta",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 3391,
+            "playerTeamInfo": {
+              "height": 1.83,
+              "weight": 75,
+              "plays": "left-handed",
+              "prizeCurrent": 84543,
+              "prizeTotal": 1362149,
+              "birthCity": {
+                "name": "Buenos Aires",
+                "country": {
+                  "alpha2": "AR",
+                  "alpha3": "ARG",
+                  "name": "Argentina",
+                  "slug": "argentina"
+                },
+                "id": 18696
+              },
+              "residenceCity": {
+                "name": "Buenos Aires",
+                "country": {
+                  "alpha2": "AR",
+                  "alpha3": "ARG",
+                  "name": "Argentina",
+                  "slug": "argentina"
+                },
+                "id": 18696
+              },
+              "id": 3088,
+              "birthplace": "Buenos Aires, Argentina",
+              "birthDateTimestamp": 976838400,
+              "residence": "Buenos Aires, Argentina",
+              "prizeCurrentRaw": {
+                "value": 84543,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 1362149,
+                "currency": "EUR"
+              },
+              "currentRanking": 124
+            },
+            "nameCode": "DIA",
+            "ranking": 151,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "AR",
+              "alpha3": "ARG",
+              "name": "Argentina",
+              "slug": "argentina"
+            },
+            "id": 264372,
+            "fullName": "Facundo Diaz Acosta",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "فاكوندو دياز أكوستا",
+                "ru": "Диас Акоста, Факундо"
+              },
+              "shortNameTranslation": {
+                "ar": "ف. أكوستا",
+                "bn": "এফ. দিয়াজ অ্যাকোস্টা",
+                "hi": "एफ. डियाज़ अकॉस्टा"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Learner Tien",
+            "slug": "tien-learner",
+            "shortName": "L. Tien",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 12544,
+            "playerTeamInfo": {
+              "height": 1.8,
+              "weight": 73,
+              "plays": "left-handed",
+              "prizeCurrent": 937145,
+              "prizeTotal": 3612232,
+              "birthCity": {
+                "name": "Irvine",
+                "state": "US-CA",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 27753
+              },
+              "id": 5357,
+              "birthplace": "Irvine, California, USA",
+              "birthDateTimestamp": 1133481600,
+              "prizeCurrentRaw": {
+                "value": 937145,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 3612232,
+                "currency": "EUR"
+              },
+              "currentRanking": 18
+            },
+            "nameCode": "TIE",
+            "ranking": 18,
+            "class": 4,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "US",
+              "alpha3": "USA",
+              "name": "USA",
+              "slug": "usa"
+            },
+            "id": 412818,
+            "fullName": "Learner Tien",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ليرنر تيان",
+                "bn": "লার্নার তিয়েন",
+                "hi": "लर्नर टिएन",
+                "ru": "Лёрнер Тьен"
+              },
+              "shortNameTranslation": {
+                "ar": "ل. تيان",
+                "ru": "Л. Тьен"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198493,
+          "defaultPeriodCount": 5,
+          "slug": "learner-tien-facundo-diaz-acosta",
+          "startTimestamp": 1779958800,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": null,
+        "managerDuel": null
+      }
+    },
+    "odds": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

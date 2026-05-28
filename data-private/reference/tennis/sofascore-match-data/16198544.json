@@ -1,0 +1,529 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/claire-liu-maria-sakkari#id:16198544",
+  "eventId": "16198544",
+  "slateDate": "2026-05-28",
+  "boardMatchId": "rg-w-maria-sakkari-claire-liu-2026-05-28",
+  "boardTitle": "Maria Sakkari vs Claire Liu",
+  "capturedAt": "2026-05-28T02:55:47.660Z",
+  "compactEvent": {
+    "id": 16198544,
+    "slug": "claire-liu-maria-sakkari",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1779969000,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "WTA",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 32,
+      "name": "Round of 64",
+      "slug": "round-of-64"
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 65950,
+      "name": "Maria Sakkari",
+      "shortName": "M. Sakkari",
+      "ranking": 49,
+      "currentRanking": 38,
+      "country": {
+        "alpha2": "GR",
+        "alpha3": "GRC",
+        "name": "Greece",
+        "slug": "greece"
+      },
+      "playerTeamInfo": {
+        "height": 1.72,
+        "weight": 62,
+        "plays": "right-handed",
+        "turnedPro": "2015",
+        "prizeCurrent": 581968,
+        "prizeTotal": 12502113,
+        "birthCity": {
+          "name": "Athens",
+          "country": {
+            "alpha2": "GR",
+            "alpha3": "GRC",
+            "name": "Greece",
+            "slug": "greece"
+          },
+          "id": 18392
+        },
+        "residenceCity": {
+          "name": "Monte Carlo",
+          "country": {
+            "alpha2": "MC",
+            "alpha3": "MCO",
+            "name": "Monaco",
+            "slug": "monaco"
+          },
+          "id": 21098
+        },
+        "id": 185,
+        "birthplace": "Athens, Greece",
+        "birthDateTimestamp": 806630400,
+        "residence": "Monte Carlo, Monaco",
+        "prizeCurrentRaw": {
+          "value": 581968,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 12502113,
+          "currency": "EUR"
+        },
+        "currentRanking": 38
+      }
+    },
+    "awayTeam": {
+      "id": 179300,
+      "name": "Claire Liu",
+      "shortName": "C. Liu",
+      "ranking": 182,
+      "currentRanking": 135,
+      "country": {
+        "alpha2": "US",
+        "alpha3": "USA",
+        "name": "USA",
+        "slug": "usa"
+      },
+      "playerTeamInfo": {
+        "height": 1.7,
+        "plays": "right-handed",
+        "turnedPro": "2015",
+        "prizeCurrent": 51586,
+        "prizeTotal": 2099668,
+        "birthCity": {
+          "name": "Thousand Oaks",
+          "state": "US-CA",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 22165
+        },
+        "residenceCity": {
+          "name": "Thousand Oaks",
+          "state": "US-CA",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 22165
+        },
+        "id": 429,
+        "birthplace": "Thousand Oaks, California, USA",
+        "birthDateTimestamp": 959212800,
+        "residence": "Thousand Oaks, California, USA",
+        "prizeCurrentRaw": {
+          "value": 51586,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 2099668,
+          "currency": "EUR"
+        },
+        "currentRanking": 135
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "awayTeamSeed": "Q",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "WTA",
+              "slug": "wta",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 6,
+              "country": {},
+              "id": 6,
+              "flag": "wta",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "رابطة لاعبات التنس",
+                  "hi": "चैलेंजर",
+                  "bn": "ডব্লিউটিএ",
+                  "ru": "WTA"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "WTA",
+                "slug": "wta",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 6,
+                "country": {},
+                "id": 6,
+                "flag": "wta",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "ar": "رابطة لاعبات التنس",
+                    "hi": "चैलेंजर",
+                    "bn": "ডব্লিউটিএ",
+                    "ru": "WTA"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 11467,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2577,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गारोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185246,
+            "endTimestamp": 1780704000,
+            "startTimestamp": 1779580800
+          },
+          "season": {
+            "name": "French Open Women Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85953
+          },
+          "roundInfo": {
+            "round": 32,
+            "name": "Round of 64",
+            "slug": "round-of-64"
+          },
+          "customId": "auBsaLwb",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-7",
+            "name": "Court 7",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 21829,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب 7",
+                "hi": "कोर्ट 7",
+                "bn": "কোর্ট 7"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court 7"
+            }
+          },
+          "homeTeam": {
+            "name": "Maria Sakkari",
+            "slug": "sakkari-maria",
+            "shortName": "M. Sakkari",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 16874,
+            "playerTeamInfo": {
+              "height": 1.72,
+              "weight": 62,
+              "plays": "right-handed",
+              "turnedPro": "2015",
+              "prizeCurrent": 581968,
+              "prizeTotal": 12502113,
+              "birthCity": {
+                "name": "Athens",
+                "country": {
+                  "alpha2": "GR",
+                  "alpha3": "GRC",
+                  "name": "Greece",
+                  "slug": "greece"
+                },
+                "id": 18392
+              },
+              "residenceCity": {
+                "name": "Monte Carlo",
+                "country": {
+                  "alpha2": "MC",
+                  "alpha3": "MCO",
+                  "name": "Monaco",
+                  "slug": "monaco"
+                },
+                "id": 21098
+              },
+              "id": 185,
+              "birthplace": "Athens, Greece",
+              "birthDateTimestamp": 806630400,
+              "residence": "Monte Carlo, Monaco",
+              "prizeCurrentRaw": {
+                "value": 581968,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 12502113,
+                "currency": "EUR"
+              },
+              "currentRanking": 38
+            },
+            "nameCode": "SAK",
+            "ranking": 49,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "GR",
+              "alpha3": "GRC",
+              "name": "Greece",
+              "slug": "greece"
+            },
+            "id": 65950,
+            "fullName": "Maria Sakkari",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ماريا ساكاري",
+                "bn": "মারিয়া সাচারি",
+                "hi": "मारिया सकारी",
+                "ru": "Саккари, Мария"
+              },
+              "shortNameTranslation": {
+                "ar": "م. ساكاري"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Claire Liu",
+            "slug": "liu-claire",
+            "shortName": "C. Liu",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 1494,
+            "playerTeamInfo": {
+              "height": 1.7,
+              "plays": "right-handed",
+              "turnedPro": "2015",
+              "prizeCurrent": 51586,
+              "prizeTotal": 2099668,
+              "birthCity": {
+                "name": "Thousand Oaks",
+                "state": "US-CA",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 22165
+              },
+              "residenceCity": {
+                "name": "Thousand Oaks",
+                "state": "US-CA",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 22165
+              },
+              "id": 429,
+              "birthplace": "Thousand Oaks, California, USA",
+              "birthDateTimestamp": 959212800,
+              "residence": "Thousand Oaks, California, USA",
+              "prizeCurrentRaw": {
+                "value": 51586,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 2099668,
+                "currency": "EUR"
+              },
+              "currentRanking": 135
+            },
+            "nameCode": "LIU",
+            "ranking": 182,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "US",
+              "alpha3": "USA",
+              "name": "USA",
+              "slug": "usa"
+            },
+            "id": 179300,
+            "fullName": "Claire Liu",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كلير ليو",
+                "ru": "Лю, Клэр"
+              },
+              "shortNameTranslation": {
+                "ar": "ك. ليو",
+                "bn": "সি. লিউ",
+                "hi": "सी. लियू"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198544,
+          "defaultPeriodCount": 3,
+          "slug": "claire-liu-maria-sakkari",
+          "startTimestamp": 1779969000,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "SG",
+            "IR",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "F"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": null,
+        "managerDuel": null
+      }
+    },
+    "odds": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

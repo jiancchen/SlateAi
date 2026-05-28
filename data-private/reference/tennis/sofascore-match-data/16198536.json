@@ -1,0 +1,495 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/coco-gauff-mayar-sherif#id:16198536",
+  "eventId": "16198536",
+  "slateDate": "2026-05-28",
+  "boardMatchId": "rg-w-coco-gauff-mayar-sherif-2026-05-28",
+  "boardTitle": "Coco Gauff vs Mayar Sherif",
+  "capturedAt": "2026-05-28T02:55:47.010Z",
+  "compactEvent": {
+    "id": 16198536,
+    "slug": "coco-gauff-mayar-sherif",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1779969000,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "WTA",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 32,
+      "name": "Round of 64",
+      "slug": "round-of-64"
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 264983,
+      "name": "Coco Gauff",
+      "shortName": "C. Gauff",
+      "ranking": 4,
+      "currentRanking": 4,
+      "country": {
+        "alpha2": "US",
+        "alpha3": "USA",
+        "name": "USA",
+        "slug": "usa"
+      },
+      "playerTeamInfo": {
+        "height": 1.75,
+        "plays": "right-handed",
+        "turnedPro": "2018",
+        "prizeCurrent": 2317141,
+        "prizeTotal": 28207576,
+        "birthCity": {
+          "name": "Delray Beach, Fl. USA",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 35675
+        },
+        "residenceCity": {
+          "name": "Delray Beach, Fl. USA",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 35675
+        },
+        "id": 3595,
+        "birthplace": "Delray Beach, Fl. USA, USA",
+        "birthDateTimestamp": 1079136000,
+        "residence": "Delray Beach, Fl. USA, USA",
+        "prizeCurrentRaw": {
+          "value": 2317141,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 28207576,
+          "currency": "EUR"
+        },
+        "currentRanking": 4
+      }
+    },
+    "awayTeam": {
+      "id": 88310,
+      "name": "Mayar Sherif",
+      "shortName": "M. Sherif",
+      "ranking": 129,
+      "currentRanking": 115,
+      "country": {
+        "alpha2": "EG",
+        "alpha3": "EGY",
+        "name": "Egypt",
+        "slug": "egypt"
+      },
+      "playerTeamInfo": {
+        "height": 1.8,
+        "plays": "right-handed",
+        "prizeCurrent": 68071,
+        "prizeTotal": 2732234,
+        "birthCity": {
+          "name": "Cairo",
+          "country": {
+            "alpha2": "EG",
+            "alpha3": "EGY",
+            "name": "Egypt",
+            "slug": "egypt"
+          },
+          "id": 17999
+        },
+        "id": 2492,
+        "birthplace": "Cairo, Egypt",
+        "birthDateTimestamp": 831254400,
+        "prizeCurrentRaw": {
+          "value": 68071,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 2732234,
+          "currency": "EUR"
+        },
+        "currentRanking": 115
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "homeTeamSeed": "4",
+          "awayTeamSeed": "Q",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "WTA",
+              "slug": "wta",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 6,
+              "country": {},
+              "id": 6,
+              "flag": "wta",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "رابطة لاعبات التنس",
+                  "hi": "चैलेंजर",
+                  "bn": "ডব্লিউটিএ",
+                  "ru": "WTA"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "WTA",
+                "slug": "wta",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 6,
+                "country": {},
+                "id": 6,
+                "flag": "wta",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "ar": "رابطة لاعبات التنس",
+                    "hi": "चैलेंजर",
+                    "bn": "ডব্লিউটিএ",
+                    "ru": "WTA"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 11467,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2577,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गारोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185246,
+            "endTimestamp": 1780704000,
+            "startTimestamp": 1779580800
+          },
+          "season": {
+            "name": "French Open Women Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85953
+          },
+          "roundInfo": {
+            "round": 32,
+            "name": "Round of 64",
+            "slug": "round-of-64"
+          },
+          "customId": "kqKsIZfc",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-suzanne-lenglen",
+            "name": "Court Suzanne Lenglen",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 17177,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب سوزان لانغلين",
+                "hi": "कोर्ट सुज़ैन लेंग्लेन",
+                "bn": "কোর্ট সুজান লেংলেন"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court Suzanne Lenglen"
+            }
+          },
+          "homeTeam": {
+            "name": "Coco Gauff",
+            "slug": "gauff-cori",
+            "shortName": "C. Gauff",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 45931,
+            "playerTeamInfo": {
+              "height": 1.75,
+              "plays": "right-handed",
+              "turnedPro": "2018",
+              "prizeCurrent": 2317141,
+              "prizeTotal": 28207576,
+              "birthCity": {
+                "name": "Delray Beach, Fl. USA",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 35675
+              },
+              "residenceCity": {
+                "name": "Delray Beach, Fl. USA",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 35675
+              },
+              "id": 3595,
+              "birthplace": "Delray Beach, Fl. USA, USA",
+              "birthDateTimestamp": 1079136000,
+              "residence": "Delray Beach, Fl. USA, USA",
+              "prizeCurrentRaw": {
+                "value": 2317141,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 28207576,
+                "currency": "EUR"
+              },
+              "currentRanking": 4
+            },
+            "nameCode": "GAU",
+            "ranking": 4,
+            "class": 4,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "US",
+              "alpha3": "USA",
+              "name": "USA",
+              "slug": "usa"
+            },
+            "id": 264983,
+            "fullName": "Coco Gauff",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كوكو غوف",
+                "ru": "Гауфф, Кори"
+              },
+              "shortNameTranslation": {
+                "ar": "ك. غوف",
+                "bn": "সি. গফ",
+                "hi": "सी. गॉफ़"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Mayar Sherif",
+            "slug": "sherif-mayar",
+            "shortName": "M. Sherif",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 5741,
+            "playerTeamInfo": {
+              "height": 1.8,
+              "plays": "right-handed",
+              "prizeCurrent": 68071,
+              "prizeTotal": 2732234,
+              "birthCity": {
+                "name": "Cairo",
+                "country": {
+                  "alpha2": "EG",
+                  "alpha3": "EGY",
+                  "name": "Egypt",
+                  "slug": "egypt"
+                },
+                "id": 17999
+              },
+              "id": 2492,
+              "birthplace": "Cairo, Egypt",
+              "birthDateTimestamp": 831254400,
+              "prizeCurrentRaw": {
+                "value": 68071,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 2732234,
+                "currency": "EUR"
+              },
+              "currentRanking": 115
+            },
+            "nameCode": "SHE",
+            "ranking": 129,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "EG",
+              "alpha3": "EGY",
+              "name": "Egypt",
+              "slug": "egypt"
+            },
+            "id": 88310,
+            "fullName": "Mayar Sherif",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "مايار شريف",
+                "bn": "মায়ার শেরিফ",
+                "hi": "मायर शेरिफ",
+                "ru": "Шериф, Майар"
+              },
+              "shortNameTranslation": {
+                "ar": "م. شريف"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198536,
+          "defaultPeriodCount": 3,
+          "slug": "coco-gauff-mayar-sherif",
+          "startTimestamp": 1779969000,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "F"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": {
+          "homeWins": 1,
+          "awayWins": 0,
+          "draws": 0
+        },
+        "managerDuel": null
+      }
+    },
+    "odds": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

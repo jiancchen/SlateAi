@@ -1789,8 +1789,9 @@ h3 {
 
 .models-daily-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 10px;
+  align-items: stretch;
 }
 
 .models-daily-card {
@@ -4248,6 +4249,38 @@ h3 {
   align-content: start;
 }
 
+.tennis-risk-meter {
+  display: grid;
+  gap: 6px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.tennis-risk-meter-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.tennis-risk-meter-head span,
+.tennis-risk-meter small {
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.tennis-risk-meter-head strong {
+  color: var(--heading);
+  font: 700 0.9rem/1 var(--mono);
+}
+
+.tennis-risk-track {
+  margin-top: 0;
+}
+
 .tennis-quality-metrics {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -4374,6 +4407,20 @@ h3 {
 .tennis-recent-stat-grid strong {
   color: var(--heading);
   font: 700 0.78rem/1.05 var(--mono);
+}
+
+.tennis-warehouse-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.8rem;
+  margin-top: 0.9rem;
+}
+
+.tennis-warehouse-card {
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.035);
+  padding: 0.85rem;
 }
 
 .tennis-match-log-row span {

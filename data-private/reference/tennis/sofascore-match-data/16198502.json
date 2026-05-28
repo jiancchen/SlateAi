@@ -1,0 +1,482 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/luciano-darderi-francisco-comesana#id:16198502",
+  "eventId": "16198502",
+  "slateDate": "2026-05-28",
+  "boardMatchId": "rg-m-francisco-comesana-luciano-darderi-2026-05-28",
+  "boardTitle": "Francisco Comesana vs Luciano Darderi",
+  "capturedAt": "2026-05-28T02:55:41.473Z",
+  "compactEvent": {
+    "id": 16198502,
+    "slug": "luciano-darderi-francisco-comesana",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1779969000,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "ATP",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 32,
+      "name": "Round of 64",
+      "slug": "round-of-64"
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 255420,
+      "name": "Francisco Comesaña",
+      "shortName": "F. Comesaña",
+      "ranking": 102,
+      "currentRanking": 91,
+      "country": {
+        "alpha2": "AR",
+        "alpha3": "ARG",
+        "name": "Argentina",
+        "slug": "argentina"
+      },
+      "playerTeamInfo": {
+        "height": 1.78,
+        "weight": 72,
+        "plays": "right-handed",
+        "prizeCurrent": 315559,
+        "prizeTotal": 1958828,
+        "birthCity": {
+          "name": "Mar del Plata",
+          "country": {
+            "alpha2": "AR",
+            "alpha3": "ARG",
+            "name": "Argentina",
+            "slug": "argentina"
+          },
+          "id": 23594
+        },
+        "id": 3062,
+        "birthplace": "Mar del Plata, Argentina",
+        "birthDateTimestamp": 970790400,
+        "prizeCurrentRaw": {
+          "value": 315559,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 1958828,
+          "currency": "EUR"
+        },
+        "currentRanking": 91
+      }
+    },
+    "awayTeam": {
+      "id": 308084,
+      "name": "Luciano Darderi",
+      "shortName": "L. Darderi",
+      "ranking": 17,
+      "currentRanking": 16,
+      "country": {
+        "alpha2": "IT",
+        "alpha3": "ITA",
+        "name": "Italy",
+        "slug": "italy"
+      },
+      "playerTeamInfo": {
+        "height": 1.83,
+        "weight": 82,
+        "plays": "right-handed",
+        "prizeCurrent": 1037398,
+        "prizeTotal": 3914909,
+        "birthCity": {
+          "name": "Villa Gesell",
+          "country": {
+            "alpha2": "AR",
+            "alpha3": "ARG",
+            "name": "Argentina",
+            "slug": "argentina"
+          },
+          "id": 35284
+        },
+        "id": 4475,
+        "birthplace": "Villa Gesell, Argentina",
+        "birthDateTimestamp": 1013644800,
+        "prizeCurrentRaw": {
+          "value": 1037398,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 3914909,
+          "currency": "EUR"
+        },
+        "currentRanking": 16
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "awayTeamSeed": "14",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "ATP",
+              "slug": "atp",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 7,
+              "country": {},
+              "id": 3,
+              "flag": "atp",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "এটিপি",
+                  "hi": "डब्ल्यूटीए",
+                  "ar": "رابطة محترفي التنس",
+                  "ru": "ATP"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "ATP",
+                "slug": "atp",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 7,
+                "country": {},
+                "id": 3,
+                "flag": "atp",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "এটিপি",
+                    "hi": "डब्ल्यूटीए",
+                    "ar": "رابطة محترفي التنس",
+                    "ru": "ATP"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 35147,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2480,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गर्रोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185245,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1779580800
+          },
+          "season": {
+            "name": "French Open Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85951
+          },
+          "roundInfo": {
+            "round": 32,
+            "name": "Round of 64",
+            "slug": "round-of-64"
+          },
+          "customId": "viccsJlyc",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-6",
+            "name": "Court 6",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 17170,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب 6",
+                "hi": "कोर्ट 6",
+                "bn": "কোর্ট 6"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court 6"
+            }
+          },
+          "homeTeam": {
+            "name": "Francisco Comesaña",
+            "slug": "comesana-francisco",
+            "shortName": "F. Comesaña",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 6251,
+            "playerTeamInfo": {
+              "height": 1.78,
+              "weight": 72,
+              "plays": "right-handed",
+              "prizeCurrent": 315559,
+              "prizeTotal": 1958828,
+              "birthCity": {
+                "name": "Mar del Plata",
+                "country": {
+                  "alpha2": "AR",
+                  "alpha3": "ARG",
+                  "name": "Argentina",
+                  "slug": "argentina"
+                },
+                "id": 23594
+              },
+              "id": 3062,
+              "birthplace": "Mar del Plata, Argentina",
+              "birthDateTimestamp": 970790400,
+              "prizeCurrentRaw": {
+                "value": 315559,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 1958828,
+                "currency": "EUR"
+              },
+              "currentRanking": 91
+            },
+            "nameCode": "COM",
+            "ranking": 102,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "AR",
+              "alpha3": "ARG",
+              "name": "Argentina",
+              "slug": "argentina"
+            },
+            "id": 255420,
+            "fullName": "Francisco Comesaña",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "فرانسيسكو كوميسانيا"
+              },
+              "shortNameTranslation": {
+                "ar": "ف. كوميسانيا",
+                "bn": "এফ. কমসানা",
+                "hi": "एफ. कोमेसाना"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Luciano Darderi",
+            "slug": "darderi-luciano",
+            "shortName": "L. Darderi",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 18075,
+            "playerTeamInfo": {
+              "height": 1.83,
+              "weight": 82,
+              "plays": "right-handed",
+              "prizeCurrent": 1037398,
+              "prizeTotal": 3914909,
+              "birthCity": {
+                "name": "Villa Gesell",
+                "country": {
+                  "alpha2": "AR",
+                  "alpha3": "ARG",
+                  "name": "Argentina",
+                  "slug": "argentina"
+                },
+                "id": 35284
+              },
+              "id": 4475,
+              "birthplace": "Villa Gesell, Argentina",
+              "birthDateTimestamp": 1013644800,
+              "prizeCurrentRaw": {
+                "value": 1037398,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 3914909,
+                "currency": "EUR"
+              },
+              "currentRanking": 16
+            },
+            "nameCode": "DAR",
+            "ranking": 17,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "IT",
+              "alpha3": "ITA",
+              "name": "Italy",
+              "slug": "italy"
+            },
+            "id": 308084,
+            "fullName": "Luciano Darderi",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "لوتشيانو دارديري",
+                "bn": "লুসিয়ানো দারদেরি",
+                "hi": "लूसियानो डर्डेरी"
+              },
+              "shortNameTranslation": {
+                "ar": "ل. دارديري"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198502,
+          "defaultPeriodCount": 5,
+          "slug": "luciano-darderi-francisco-comesana",
+          "startTimestamp": 1779969000,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "SG",
+            "IR",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": {
+          "homeWins": 2,
+          "awayWins": 0,
+          "draws": 0
+        },
+        "managerDuel": null
+      }
+    },
+    "odds": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}
