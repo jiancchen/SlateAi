@@ -115,6 +115,30 @@ Do **not** overtrade:
 - matchups where the dog’s only path is a miracle, not a real service-hold pattern
 - grass-style reads on clay
 
+## Stabilization Veto
+
+Cheap is not enough. A low-priced underdog only works if they can survive long enough for the market to panic.
+
+Before marking a dog as tradeable, run the stabilization veto:
+
+- If the favorite is top-20, has strong current clay/recent form, and has been breaking opponents quickly, the dog needs proof they can hold early.
+- Veto or downgrade dogs with weak hold, weak second serve, or poor error control when they also lack a return-pressure edge.
+- Do not let "opponent error risk" override a hot favorite profile unless the dog has a real service-hold path.
+- For these vetoed rows, lower any sell target to a simple double at most, or pass entirely if the spread/fees make exit expensive.
+
+The miss pattern to avoid: the dog never stabilizes, gets broken immediately, and the contract never creates a tradable spike. This is different from a dog losing after reaching a sell window.
+
+## Kalshi Price-History Check
+
+Every candidate should carry its own mini price-history context before it is promoted:
+
+- Same favorite history: previous Roland Garros contracts where the current favorite faced other underdogs. Store entry, max bid, max trade, scoreline, and whether the contract doubled.
+- Similar entry history: comparable cheap-underdog entries against `85c+` favorites, bucketed by entry price.
+- If prior underdogs against this exact favorite mostly failed to double, the candidate needs a much stronger hold/return-pressure profile or it should be passed.
+- If prior underdogs did spike, inspect how: first-set win, early break, deep opening set, or just a temporary hold sequence. Do not treat a first-set-win spike as proof that a weaker dog can reach the same target.
+
+This turns the contract into a tiny stock chart. A model row is not fully researched until we know whether similar contracts actually traded upward, not just whether the tennis stats look interesting.
+
 ## What Counts As Success
 
 Success is not:

@@ -1,0 +1,302 @@
+{
+  "targetDate": "2026-05-29",
+  "source": "tennis_model_training_rows underdog side rows; actual match win labels",
+  "coverage": {
+    "underdogRows": 113,
+    "labeledRows": 97,
+    "scoredBacktestRows": 58,
+    "featureCount": 122
+  },
+  "backtest": {
+    "rows": 58,
+    "baseUpsetRate": 0.276,
+    "betEveryUnderdogRoiCents": -2.5,
+    "thresholds": [
+      {
+        "edgeThreshold": 0.04,
+        "bets": 38,
+        "hitRate": 0.211,
+        "roiCents": -5.3,
+        "avgEntryCents": 24.8
+      },
+      {
+        "edgeThreshold": 0.07,
+        "bets": 33,
+        "hitRate": 0.182,
+        "roiCents": -5.6,
+        "avgEntryCents": 22.2
+      },
+      {
+        "edgeThreshold": 0.1,
+        "bets": 28,
+        "hitRate": 0.179,
+        "roiCents": -6.4,
+        "avgEntryCents": 22.8
+      },
+      {
+        "edgeThreshold": 0.13,
+        "bets": 21,
+        "hitRate": 0.143,
+        "roiCents": -7.1,
+        "avgEntryCents": 20.0
+      },
+      {
+        "edgeThreshold": 0.16,
+        "bets": 14,
+        "hitRate": 0.071,
+        "roiCents": -8.2,
+        "avgEntryCents": 14.2
+      }
+    ],
+    "byDateAtEdge10": [
+      {
+        "date": "2026-05-27",
+        "rows": 28,
+        "baseUpsetRate": 0.25,
+        "baseRoiCents": -3.9,
+        "modelBets": 18,
+        "modelHitRate": 0.111,
+        "modelRoiCents": -11.5
+      },
+      {
+        "date": "2026-05-28",
+        "rows": 30,
+        "baseUpsetRate": 0.3,
+        "baseRoiCents": -1.2,
+        "modelBets": 10,
+        "modelHitRate": 0.3,
+        "modelRoiCents": 2.7
+      }
+    ]
+  },
+  "recommendation": {
+    "approvedForHoldUpsets": false,
+    "reason": "Actual underdog win thresholds did not beat buy-every-underdog on the leave-day-forward backtest."
+  },
+  "currentUnderdogs": [
+    {
+      "tier": "not-approved",
+      "matchId": "rg-m-quentin-halys-alexander-zverev-2026-05-29",
+      "match": "Quentin Halys vs Alexander Zverev",
+      "selection": "Quentin Halys",
+      "opponent": "Alexander Zverev",
+      "entryCents": 8.6,
+      "winProbability": 0.532,
+      "edgePct": 44.6,
+      "settlementEvCents": 43.6,
+      "returnPressureEdge": -14.9,
+      "favoriteErrorControl": 69.9,
+      "favoriteBreaksLostRate": 0.037
+    },
+    {
+      "tier": "not-approved",
+      "matchId": "rg-m-alex-michelsen-rafael-jodar-2026-05-29",
+      "match": "Alex Michelsen vs Rafael Jodar",
+      "selection": "Alex Michelsen",
+      "opponent": "Rafael Jodar",
+      "entryCents": 20.4,
+      "winProbability": 0.489,
+      "edgePct": 28.5,
+      "settlementEvCents": 26.5,
+      "returnPressureEdge": -12.2,
+      "favoriteErrorControl": 55.5,
+      "favoriteBreaksLostRate": 0.061
+    },
+    {
+      "tier": "not-approved",
+      "matchId": "rg-m-casper-ruud-tommy-paul-2026-05-29",
+      "match": "Casper Ruud vs Tommy Paul",
+      "selection": "Tommy Paul",
+      "opponent": "Casper Ruud",
+      "entryCents": 29.0,
+      "winProbability": 0.513,
+      "edgePct": 22.3,
+      "settlementEvCents": 20.3,
+      "returnPressureEdge": 1.4,
+      "favoriteErrorControl": 65.4,
+      "favoriteBreaksLostRate": 0.167
+    },
+    {
+      "tier": "not-approved",
+      "matchId": "rg-m-alex-de-minaur-jakub-mensik-2026-05-29",
+      "match": "Alex de Minaur vs Jakub Mensik",
+      "selection": "Jakub Mensik",
+      "opponent": "Alex de Minaur",
+      "entryCents": 23.3,
+      "winProbability": 0.414,
+      "edgePct": 18.1,
+      "settlementEvCents": 16.1,
+      "returnPressureEdge": -14.3,
+      "favoriteErrorControl": 49.0,
+      "favoriteBreaksLostRate": 0.071
+    },
+    {
+      "tier": "not-approved",
+      "matchId": "rg-w-elina-svitolina-tamara-korpatsch-2026-05-29",
+      "match": "Elina Svitolina vs Tamara Korpatsch",
+      "selection": "Tamara Korpatsch",
+      "opponent": "Elina Svitolina",
+      "entryCents": 7.9,
+      "winProbability": 0.246,
+      "edgePct": 16.7,
+      "settlementEvCents": 15.7,
+      "returnPressureEdge": -9.6,
+      "favoriteErrorControl": 61.3,
+      "favoriteBreaksLostRate": 0.227
+    },
+    {
+      "tier": "not-approved",
+      "matchId": "rg-w-wang-xiyu-yuliia-starodubtseva-2026-05-29",
+      "match": "Wang Xiyu vs Yuliia Starodubtseva",
+      "selection": "Wang Xiyu",
+      "opponent": "Yuliia Starodubtseva",
+      "entryCents": 40.0,
+      "winProbability": 0.546,
+      "edgePct": 14.6,
+      "settlementEvCents": 12.6,
+      "returnPressureEdge": -1.4,
+      "favoriteErrorControl": 47.7,
+      "favoriteBreaksLostRate": 0.267
+    },
+    {
+      "tier": "not-approved",
+      "matchId": "rg-w-jil-teichmann-karolina-muchova-2026-05-29",
+      "match": "Jil Teichmann vs Karolina Muchova",
+      "selection": "Jil Teichmann",
+      "opponent": "Karolina Muchova",
+      "entryCents": 14.1,
+      "winProbability": 0.283,
+      "edgePct": 14.2,
+      "settlementEvCents": 13.2,
+      "returnPressureEdge": 3.7,
+      "favoriteErrorControl": 61.4,
+      "favoriteBreaksLostRate": 0.222
+    },
+    {
+      "tier": "not-approved",
+      "matchId": "rg-w-marta-kostyuk-viktorija-golubic-2026-05-29",
+      "match": "Marta Kostyuk vs Viktorija Golubic",
+      "selection": "Viktorija Golubic",
+      "opponent": "Marta Kostyuk",
+      "entryCents": 10.4,
+      "winProbability": 0.233,
+      "edgePct": 12.9,
+      "settlementEvCents": 11.9,
+      "returnPressureEdge": -4.3,
+      "favoriteErrorControl": 54.0,
+      "favoriteBreaksLostRate": 0.25
+    },
+    {
+      "tier": "not-approved",
+      "matchId": "rg-w-magda-linette-iga-swiatek-2026-05-29",
+      "match": "Magda Linette vs Iga Swiatek",
+      "selection": "Magda Linette",
+      "opponent": "Iga Swiatek",
+      "entryCents": 6.7,
+      "winProbability": 0.195,
+      "edgePct": 12.8,
+      "settlementEvCents": 11.8,
+      "returnPressureEdge": -29.8,
+      "favoriteErrorControl": 57.5,
+      "favoriteBreaksLostRate": 0.353
+    },
+    {
+      "tier": "not-approved",
+      "matchId": "rg-m-karen-khachanov-jesper-de-jong-2026-05-29",
+      "match": "Karen Khachanov vs Jesper de Jong",
+      "selection": "Jesper de Jong",
+      "opponent": "Karen Khachanov",
+      "entryCents": 29.9,
+      "winProbability": 0.399,
+      "edgePct": 10.0,
+      "settlementEvCents": 8.0,
+      "returnPressureEdge": -6.9,
+      "favoriteErrorControl": 55.3,
+      "favoriteBreaksLostRate": 0.184
+    },
+    {
+      "tier": "not-approved",
+      "matchId": "rg-w-mirra-andreeva-marie-bouzkova-2026-05-29",
+      "match": "Mirra Andreeva vs Marie Bouzkova",
+      "selection": "Marie Bouzkova",
+      "opponent": "Mirra Andreeva",
+      "entryCents": 15.9,
+      "winProbability": 0.237,
+      "edgePct": 7.8,
+      "settlementEvCents": 6.8,
+      "returnPressureEdge": -1.1,
+      "favoriteErrorControl": 58.4,
+      "favoriteBreaksLostRate": 0.15
+    },
+    {
+      "tier": "not-approved",
+      "matchId": "rg-m-nuno-borges-andrey-rublev-2026-05-29",
+      "match": "Nuno Borges vs Andrey Rublev",
+      "selection": "Nuno Borges",
+      "opponent": "Andrey Rublev",
+      "entryCents": 29.0,
+      "winProbability": 0.342,
+      "edgePct": 5.2,
+      "settlementEvCents": 3.2,
+      "returnPressureEdge": 5.2,
+      "favoriteErrorControl": 58.7,
+      "favoriteBreaksLostRate": 0.244
+    },
+    {
+      "tier": "not-approved",
+      "matchId": "rg-m-joao-fonseca-novak-djokovic-2026-05-29",
+      "match": "Joao Fonseca vs Novak Djokovic",
+      "selection": "Joao Fonseca",
+      "opponent": "Novak Djokovic",
+      "entryCents": 35.7,
+      "winProbability": 0.388,
+      "edgePct": 3.1,
+      "settlementEvCents": 1.1,
+      "returnPressureEdge": 1.9,
+      "favoriteErrorControl": 66.2,
+      "favoriteBreaksLostRate": 0.098
+    },
+    {
+      "tier": "not-approved",
+      "matchId": "rg-w-solana-sierra-sorana-cirstea-2026-05-29",
+      "match": "Solana Sierra vs Sorana Cirstea",
+      "selection": "Solana Sierra",
+      "opponent": "Sorana Cirstea",
+      "entryCents": 26.0,
+      "winProbability": 0.242,
+      "edgePct": -1.8,
+      "settlementEvCents": -3.8,
+      "returnPressureEdge": 0.1,
+      "favoriteErrorControl": 64.3,
+      "favoriteBreaksLostRate": 0.2
+    },
+    {
+      "tier": "not-approved",
+      "matchId": "rg-w-peyton-stearns-belinda-bencic-2026-05-29",
+      "match": "Peyton Stearns vs Belinda Bencic",
+      "selection": "Peyton Stearns",
+      "opponent": "Belinda Bencic",
+      "entryCents": 29.9,
+      "winProbability": 0.217,
+      "edgePct": -8.2,
+      "settlementEvCents": -10.2,
+      "returnPressureEdge": -4.9,
+      "favoriteErrorControl": 66.0,
+      "favoriteBreaksLostRate": 0.188
+    },
+    {
+      "tier": "not-approved",
+      "matchId": "rg-m-thiago-agustin-tirante-pablo-carreno-busta-2026-05-29",
+      "match": "Thiago Agustin Tirante vs Pablo Carreno Busta",
+      "selection": "Pablo Carreno Busta",
+      "opponent": "Thiago Agustin Tirante",
+      "entryCents": 33.1,
+      "winProbability": 0.184,
+      "edgePct": -14.7,
+      "settlementEvCents": -16.7,
+      "returnPressureEdge": null,
+      "favoriteErrorControl": null,
+      "favoriteBreaksLostRate": null
+    }
+  ]
+}

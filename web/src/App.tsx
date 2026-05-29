@@ -33,6 +33,7 @@ import {
   type SlateManifestEntry
 } from './lib/slate-loaders'
 import kalshiTennisTradeCandidates from './lib/kalshi-tennis-trade-candidates.generated.json' with { type: 'json' }
+import kalshiTennisSpikeModel from './lib/kalshi-tennis-spike-model.generated.json' with { type: 'json' }
 
 type AnyRecord = Record<string, any>
 type DeskTabId = 'board' | 'parlay' | 'tickets' | 'models' | 'history' | 'stories'
@@ -122,6 +123,19 @@ const tennisValueTone = (grade?: string | null) => {
 const kalshiTradeCandidateRows = Array.isArray((kalshiTennisTradeCandidates as AnyRecord).candidates)
   ? ((kalshiTennisTradeCandidates as AnyRecord).candidates as AnyRecord[])
   : []
+
+const kalshiSpikeCandidateRows = Array.isArray((kalshiTennisSpikeModel as AnyRecord).currentCandidates)
+  ? ((kalshiTennisSpikeModel as AnyRecord).currentCandidates as AnyRecord[])
+  : []
+
+const kalshiTradeCandidateKey = (row: AnyRecord) =>
+  String(row.marketTicker || row.eventTicker || row.boardMatchId || row.selection || '')
+
+const mergeKalshiSpikeCandidate = (row: AnyRecord) => {
+  const key = kalshiTradeCandidateKey(row)
+  const spikeRow = kalshiSpikeCandidateRows.find((candidate: AnyRecord) => kalshiTradeCandidateKey(candidate) === key)
+  return spikeRow ? { ...row, ...spikeRow } : row
+}
 
 const propTypeFilters = [
   { id: 'all', label: 'All' },
@@ -1453,7 +1467,8 @@ const kalshiCandidateMatchesGame = (row: AnyRecord, game: AnyRecord) => {
 }
 
 const findKalshiTradeCandidateForGame = (game: AnyRecord) =>
-  kalshiTradeCandidateRows.find((row: AnyRecord) => kalshiCandidateMatchesGame(row, game))
+  [...kalshiSpikeCandidateRows, ...kalshiTradeCandidateRows.map(mergeKalshiSpikeCandidate)]
+    .find((row: AnyRecord) => kalshiCandidateMatchesGame(row, game))
 
 const getGameWinnerLabel = (game: AnyRecord) =>
   String(game?.winnerTeam || game?.winnerName || game?.winner || game?.result?.winner || '').trim()
@@ -2665,7 +2680,14 @@ function App() {
   ])
 
   const activeKalshiTradeRows = useMemo(() => {
-    return kalshiTradeCandidateRows
+    const mergedRowsByKey = new Map<string, AnyRecord>()
+    ;[...kalshiTradeCandidateRows, ...kalshiSpikeCandidateRows].forEach((row: AnyRecord) => {
+      const key = kalshiTradeCandidateKey(row)
+      if (!key) return
+      const existing = mergedRowsByKey.get(key) || {}
+      mergedRowsByKey.set(key, { ...existing, ...row })
+    })
+    return [...mergedRowsByKey.values()]
       .map((row: AnyRecord) => {
         const game = games.find((entry: AnyRecord) => kalshiCandidateMatchesGame(row, entry)) || null
         const occurrenceDate = row.occurrenceDatetime ? String(row.occurrenceDatetime).slice(0, 10) : ''
@@ -2677,7 +2699,10 @@ function App() {
         }
       })
       .filter((row: AnyRecord) => row.game && (!activeDayIsoDate || !row.occurrenceDate || row.occurrenceDate === activeDayIsoDate))
-      .sort((left: AnyRecord, right: AnyRecord) => Number(right.tradeEvPctOfEntry || 0) - Number(left.tradeEvPctOfEntry || 0))
+      .sort((left: AnyRecord, right: AnyRecord) =>
+        Number(right.spikeModelEvPctOfEntry25x ?? right.tradeEvPctOfEntry ?? -9) -
+        Number(left.spikeModelEvPctOfEntry25x ?? left.tradeEvPctOfEntry ?? -9)
+      )
   }, [activeDayIsoDate, games])
 
   const tennisValueSummary = useMemo(() => {
@@ -4300,13 +4325,18 @@ function App() {
       )
     }
     const kalshiTradeCandidate = findKalshiTradeCandidateForGame(game)
+    const kalshiTradeTier = kalshiTradeCandidate?.spikeModelTier || kalshiTradeCandidate?.candidateTier
+    const kalshiTradeTarget = Number(kalshiTradeCandidate?.spikeModelTarget25x ?? kalshiTradeCandidate?.projectedExit ?? 0)
+    const kalshiTradeEvPct = Number(kalshiTradeCandidate?.spikeModelEvPctOfEntry25x ?? kalshiTradeCandidate?.tradeEvPctOfEntry ?? 0)
+    const kalshiTradeEv = Number(kalshiTradeCandidate?.spikeModelEv25x ?? kalshiTradeCandidate?.tradeEvPerContract ?? 0)
+    const kalshiTradeHitProbability = Number(kalshiTradeCandidate?.spikeModelProbability25x ?? kalshiTradeCandidate?.targetHitProbability ?? 0)
     return (
       <>
         {kalshiTradeCandidate ? (
           <section className="detail-panel tennis-trade-chart-panel">
             <div className="detail-panel-header">
               <p className="eyebrow">Prediction market trade</p>
-              <span>{kalshiTradeCandidate.candidateTier === 'trade' ? 'Trade-to-sell candidate' : `${kalshiTradeCandidate.candidateTier} lane`}</span>
+              <span>{kalshiTradeTier === 'trade' ? 'Model trade candidate' : `${kalshiTradeTier || 'watch'} lane`}</span>
             </div>
             <div className="tennis-trade-chart-layout">
               <div className="tennis-trade-ticket">
@@ -4322,28 +4352,28 @@ function App() {
                   </div>
                   <div>
                     <span>Sell target</span>
-                    <strong>{Math.round(Number(kalshiTradeCandidate.projectedExit || 0) * 100)}c</strong>
+                    <strong>{Math.round(kalshiTradeTarget * 100)}c</strong>
                   </div>
                   <div>
                     <span>EV/contract</span>
-                    <strong>{formatSignedNumber(kalshiTradeCandidate.tradeEvPerContract, 2)}</strong>
+                    <strong>{formatSignedNumber(kalshiTradeEv * 100, 1)}c</strong>
                   </div>
                   <div>
                     <span>EV/entry</span>
-                    <strong>{formatSignedNumber(Number(kalshiTradeCandidate.tradeEvPctOfEntry || 0) * 100, 0)}%</strong>
+                    <strong>{formatSignedNumber(kalshiTradeEvPct * 100, 0)}%</strong>
                   </div>
                 </div>
               </div>
               <div className="tennis-trade-context-grid">
                 <div>
+                  <span>Spike model</span>
+                  <strong>{kalshiTradeTier || 'watch'}</strong>
+                  <small>{formatPercent(kalshiTradeHitProbability * 100, 0)} target-hit estimate</small>
+                </div>
+                <div>
                   <span>Entry band</span>
                   <strong>{kalshiTradeCandidate.entryBand || 'N/A'}</strong>
                   <small>{Number(kalshiTradeCandidate.historicalN || 0)} historical comps</small>
-                </div>
-                <div>
-                  <span>Target hit</span>
-                  <strong>{formatPercent(Number(kalshiTradeCandidate.targetHitProbability || 0) * 100, 0)}</strong>
-                  <small>Projected touch before settlement</small>
                 </div>
                 <div>
                   <span>Open interest</span>
@@ -4361,10 +4391,10 @@ function App() {
             </div>
             <div className="tennis-trade-summary-row">
               <span>
-                Sell around <strong>{Math.round(Number(kalshiTradeCandidate.projectedExit || 0) * 100)}c</strong>
+                Sell around <strong>{Math.round(kalshiTradeTarget * 100)}c</strong>
               </span>
               <span>
-                30c touch rate <strong>{formatPercent(Number(kalshiTradeCandidate.historical30HitRate || 0) * 100, 0)}</strong>
+                Model target hit <strong>{formatPercent(kalshiTradeHitProbability * 100, 0)}</strong>
               </span>
               {kalshiTradeCandidate.projectionReasons?.slice(0, 2).map((reason: string) => (
                 <span key={`${game.id}-${reason}`}>{reason}</span>
@@ -5186,10 +5216,13 @@ function App() {
                         spreads and totals are downgraded until the next settled backtest supports them.
                       </p>
                     )}
-                    {tennisValueSummary.kalshiTradeRows?.length ? (
+                    {tennisValueSummary.kalshiTradeRows?.some((row: AnyRecord) => row.spikeModelTier === 'trade' || row.candidateTier === 'trade') ? (
                       <div className="tennis-value-list tennis-trade-list">
                         <div className="tennis-value-section-label">Prediction market trade-to-sell</div>
-                        {tennisValueSummary.kalshiTradeRows.slice(0, 6).map((row: AnyRecord) => (
+                        {tennisValueSummary.kalshiTradeRows
+                          .filter((row: AnyRecord) => row.spikeModelTier === 'trade' || row.candidateTier === 'trade')
+                          .slice(0, 6)
+                          .map((row: AnyRecord) => (
                           <button
                             key={`${row.marketTicker}-${row.boardMatchId}`}
                             type="button"
@@ -5199,12 +5232,41 @@ function App() {
                             <span>
                               <strong>{row.selection} {Math.round(Number(row.yesAsk || 0) * 100)}c</strong>
                               <small>
-                                Target {Math.round(Number(row.projectedExit || 0) * 100)}c · {row.gameTitle}
+                                Target {Math.round(Number(row.spikeModelTarget25x ?? row.projectedExit ?? 0) * 100)}c · {row.gameTitle}
                               </small>
                             </span>
                             <span>
-                              <strong>{formatSignedNumber(Number(row.tradeEvPctOfEntry || 0) * 100, 0)}%</strong>
-                              <small>{formatPercent(Number(row.targetHitProbability || 0) * 100, 0)} hit target</small>
+                              <strong>{formatSignedNumber(Number(row.spikeModelEvPctOfEntry25x ?? row.tradeEvPctOfEntry ?? 0) * 100, 0)}%</strong>
+                              <small>
+                                {(row.spikeModelTier || row.candidateTier || 'watch')} · {formatPercent(Number(row.spikeModelProbability25x ?? row.targetHitProbability ?? 0) * 100, 0)}
+                              </small>
+                            </span>
+                          </button>
+                        ))}
+                      </div>
+                    ) : null}
+                    {tennisValueSummary.kalshiTradeRows?.some((row: AnyRecord) => row.spikeModelTier === 'watch' || row.candidateTier === 'watch') ? (
+                      <div className="tennis-value-list tennis-trade-list">
+                        <div className="tennis-value-section-label">Prediction market watchlist</div>
+                        {tennisValueSummary.kalshiTradeRows
+                          .filter((row: AnyRecord) => row.spikeModelTier === 'watch' || row.candidateTier === 'watch')
+                          .slice(0, 4)
+                          .map((row: AnyRecord) => (
+                          <button
+                            key={`${row.marketTicker}-${row.boardMatchId}-watch`}
+                            type="button"
+                            className="tennis-value-row tennis-value-row--trade"
+                            onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.game.id }))}
+                          >
+                            <span>
+                              <strong>{row.selection} {Math.round(Number(row.yesAsk || 0) * 100)}c</strong>
+                              <small>
+                                Watch target {Math.round(Number(row.spikeModelTarget25x ?? row.projectedExit ?? 0) * 100)}c · {row.gameTitle}
+                              </small>
+                            </span>
+                            <span>
+                              <strong>{formatSignedNumber(Number(row.spikeModelEvPctOfEntry25x ?? row.tradeEvPctOfEntry ?? 0) * 100, 0)}%</strong>
+                              <small>{formatPercent(Number(row.spikeModelProbability25x ?? row.targetHitProbability ?? 0) * 100, 0)} target hit</small>
                             </span>
                           </button>
                         ))}

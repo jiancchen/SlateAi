@@ -254,7 +254,7 @@ def load_player_flow(board_match_id: str | None, selection_name: str | None) -> 
     try:
         context = conn.execute(
             """
-            select normalized_name, player_name, rank, clay_win_pct, recent_win_pct,
+            select player_slot, normalized_name, player_name, rank, clay_win_pct, recent_win_pct,
                    resistance_matches, opponent_adjusted_form_score, avg_known_opponent_rank
             from tennis_player_match_context
             where match_id = ?
@@ -264,10 +264,10 @@ def load_player_flow(board_match_id: str | None, selection_name: str | None) -> 
         metrics = conn.execute(
             """
             select normalized_name,
-                   avg(case when metric_key = 'first_serve' then score end) first_serve,
-                   avg(case when metric_key = 'second_serve' then score end) second_serve,
-                   avg(case when metric_key = 'error_control' then score end) error_control,
-                   avg(case when metric_key = 'break_pressure' then score end) break_pressure,
+                   avg(case when metric_key = 'hold' then score end) hold,
+                   avg(case when metric_key = 'secondServe' then score end) second_serve,
+                   avg(case when metric_key = 'errorControl' then score end) error_control,
+                   avg(case when metric_key = 'returnPressure' then score end) return_pressure,
                    avg(case when metric_key = 'closeout' then score end) closeout
             from tennis_recent_form_metrics
             where match_id = ?
@@ -275,6 +275,15 @@ def load_player_flow(board_match_id: str | None, selection_name: str | None) -> 
             """,
             (board_match_id,),
         ).fetchall()
+        training = conn.execute(
+            """
+            select *
+            from tennis_model_training_rows
+            where match_id = ?
+            limit 1
+            """,
+            (board_match_id,),
+        ).fetchone()
     finally:
         conn.close()
     selection = normalize(selection_name)
@@ -293,54 +302,190 @@ def load_player_flow(board_match_id: str | None, selection_name: str | None) -> 
     opponent = context_map.get(opponent_key, {}) if opponent_key else {}
     player_metrics = metric_map.get(selected_key, {})
     opponent_metrics = metric_map.get(opponent_key, {}) if opponent_key else {}
+    selected_slot = int(player.get("player_slot") or 0)
+    selected_prefix = "p1" if selected_slot == 1 else "p2" if selected_slot == 2 else ""
+    opponent_prefix = "p2" if selected_prefix == "p1" else "p1" if selected_prefix == "p2" else ""
+
+    def training_value(prefix: str, key: str) -> Any:
+        if not training or not prefix:
+            return None
+        return training[f"{prefix}_{key}"] if f"{prefix}_{key}" in training.keys() else None
+
+    return_pressure = player_metrics.get("return_pressure")
+    opponent_closeout = opponent_metrics.get("closeout")
+    opponent_error_control = opponent_metrics.get("error_control")
+    opponent_hold = opponent_metrics.get("hold")
+    selected_rg_games = training_value(selected_prefix, "rg_flow_games")
+    opponent_rg_breaks_lost = training_value(opponent_prefix, "rg_flow_breaks_lost_rate")
+    selected_rg_long_games = training_value(selected_prefix, "rg_flow_long_game_rate")
+    opponent_rg_long_games = training_value(opponent_prefix, "rg_flow_long_game_rate")
     return {
+        "playerName": player.get("player_name"),
+        "opponentName": opponent.get("player_name"),
         "rank": player.get("rank"),
         "opponentRank": opponent.get("rank"),
         "clayWinPct": player.get("clay_win_pct"),
+        "opponentClayWinPct": opponent.get("clay_win_pct"),
         "recentWinPct": player.get("recent_win_pct"),
+        "opponentRecentWinPct": opponent.get("recent_win_pct"),
         "resistanceMatches": player.get("resistance_matches"),
         "adjForm": player.get("opponent_adjusted_form_score"),
         "opponentAdjForm": opponent.get("opponent_adjusted_form_score"),
-        "breakPressure": player_metrics.get("break_pressure"),
-        "opponentCloseout": opponent_metrics.get("closeout"),
-        "opponentErrorControl": opponent_metrics.get("error_control"),
+        "hold": player_metrics.get("hold"),
+        "secondServe": player_metrics.get("second_serve"),
+        "errorControl": player_metrics.get("error_control"),
+        "returnPressure": return_pressure,
+        "opponentHold": opponent_hold,
+        "opponentCloseout": opponent_closeout,
+        "opponentErrorControl": opponent_error_control,
+        "selectedRgFlowGames": selected_rg_games,
+        "opponentRgBreaksLostRate": opponent_rg_breaks_lost,
+        "selectedRgLongGameRate": selected_rg_long_games,
+        "opponentRgLongGameRate": opponent_rg_long_games,
+        "returnPressureEdge": (
+            return_pressure - opponent_metrics.get("return_pressure")
+            if return_pressure is not None and opponent_metrics.get("return_pressure") is not None
+            else None
+        ),
+        "clayEdge": (
+            player.get("clay_win_pct") - opponent.get("clay_win_pct")
+            if player.get("clay_win_pct") is not None and opponent.get("clay_win_pct") is not None
+            else None
+        ),
+        "adjFormEdge": (
+            player.get("opponent_adjusted_form_score") - opponent.get("opponent_adjusted_form_score")
+            if player.get("opponent_adjusted_form_score") is not None and opponent.get("opponent_adjusted_form_score") is not None
+            else None
+        ),
     }
 
 
-def projected_exit(entry: float, bucket: dict[str, Any], player_flow: dict[str, Any]) -> dict[str, Any]:
+def load_kalshi_price_history(board_match_id: str | None, player_flow: dict[str, Any], entry: float) -> dict[str, Any]:
+    if not board_match_id:
+        return {"sameFavorite": [], "similarEntry": {}}
+    opponent_name = player_flow.get("opponentName")
+    opponent_normalized = normalize(opponent_name)
+    conn = sqlite3.connect(DB_PATH)
+    conn.row_factory = sqlite3.Row
+    try:
+        same_favorite_rows = conn.execute(
+            """
+            select k.slate_date, k.board_match_id, k.selection_name, k.entry_ask, k.max_bid, k.max_trade,
+                   k.target_20_hit, k.target_30_hit, m.title, m.actual_winner_name, m.result_scoreline
+            from tennis_kalshi_intramatch_trade_features k
+            join tennis_model_training_rows m on m.match_id = k.board_match_id
+            where k.board_match_id != ?
+              and k.slate_date < (select slate_date from tennis_model_training_rows where match_id = ? limit 1)
+              and (m.player1_normalized_name = ? or m.player2_normalized_name = ?)
+              and k.normalized_selection_name != ?
+            order by k.slate_date desc
+            limit 6
+            """,
+            (board_match_id, board_match_id, opponent_normalized, opponent_normalized, opponent_normalized),
+        ).fetchall()
+        similar_entry = conn.execute(
+            """
+            select count(*) as n,
+                   avg(case when max_bid >= entry_ask * 2 then 1.0 else 0.0 end) as hit_2x,
+                   avg(case when max_bid >= entry_ask * 2.5 then 1.0 else 0.0 end) as hit_25x,
+                   avg(max_bid) as avg_max_bid,
+                   avg(entry_ask) as avg_entry
+            from tennis_kalshi_intramatch_trade_features
+            where board_match_id != ?
+              and entry_ask between ? and ?
+              and favorite_entry_ask >= 0.85
+            """,
+            (board_match_id, max(0.01, entry - 0.04), min(0.50, entry + 0.04)),
+        ).fetchone()
+    finally:
+        conn.close()
+    same_favorite = [dict(row) for row in same_favorite_rows]
+    return {
+        "sameFavorite": [
+            {
+                "date": row.get("slate_date"),
+                "matchId": row.get("board_match_id"),
+                "match": row.get("title"),
+                "selection": row.get("selection_name"),
+                "entry": row.get("entry_ask"),
+                "maxBid": row.get("max_bid"),
+                "maxTrade": row.get("max_trade"),
+                "hit2x": bool(row.get("target_20_hit")),
+                "hit30c": bool(row.get("target_30_hit")),
+                "winner": row.get("actual_winner_name"),
+                "scoreline": row.get("result_scoreline"),
+            }
+            for row in same_favorite
+        ],
+        "similarEntry": dict(similar_entry) if similar_entry else {},
+    }
+
+
+def projected_exit(entry: float, bucket: dict[str, Any], player_flow: dict[str, Any], price_history: dict[str, Any] | None = None) -> dict[str, Any]:
     base_rate = float(bucket.get("target_30_rate") or 0)
-    target = 0.30
+    target_multiple = 2.5
+    target = min(round(entry * target_multiple, 2), 0.55)
     reason = []
     if entry <= 0.05:
-        target = 0.25
+        target_multiple = 3.0
+        target = min(round(entry * target_multiple, 2), 0.25)
         reason.append("ultra-cheap entry")
-    if 0.11 <= entry <= 0.15:
-        target = 0.36
+    elif 0.11 <= entry <= 0.15:
+        target_multiple = 2.5
+        target = min(round(entry * target_multiple, 2), 0.38)
         reason.append("historically better 11-15c band")
-    if entry > 0.15:
-        target = 0.34
+    elif entry > 0.15:
+        target_multiple = 2.0
+        target = min(round(entry * target_multiple, 2), 0.45)
         reason.append("higher entry needs stricter flow")
-    if (player_flow.get("breakPressure") or 0) >= 62:
+    if (player_flow.get("returnPressure") or 0) >= 62:
         base_rate += 0.08
-        target += 0.03
-        reason.append("break pressure support")
+        reason.append("return-pressure support")
+    if (player_flow.get("returnPressureEdge") or 0) >= 5:
+        base_rate += 0.07
+        reason.append("underdog return-pressure edge")
     if (player_flow.get("opponentCloseout") or 100) < 55:
         base_rate += 0.07
-        target += 0.03
         reason.append("opponent closeout risk")
-    if (player_flow.get("opponentErrorControl") or 100) < 50:
-        base_rate += 0.05
+    if (player_flow.get("opponentErrorControl") or 100) < 55:
+        base_rate += 0.09
         reason.append("opponent error risk")
+    if (player_flow.get("opponentHold") or 100) < 60:
+        base_rate += 0.04
+        reason.append("favorite hold risk")
+    if (player_flow.get("selectedRgFlowGames") or 0) >= 5:
+        base_rate += 0.05
+        reason.append("prior RG replay flow")
+    if (player_flow.get("opponentRgBreaksLostRate") or 0) >= 0.25:
+        base_rate += 0.06
+        reason.append("favorite break-leak profile")
+    if (player_flow.get("selectedRgLongGameRate") or 0) >= 0.25 or (player_flow.get("opponentRgLongGameRate") or 0) >= 0.25:
+        base_rate += 0.03
+        reason.append("long-game pressure environment")
+    if (player_flow.get("clayEdge") or 0) > 0.12:
+        base_rate += 0.05
+        reason.append("clay-form edge")
+    if (player_flow.get("adjFormEdge") or 0) > 8:
+        base_rate += 0.04
+        reason.append("opponent-adjusted form edge")
     if (player_flow.get("resistanceMatches") or 0) >= 3:
         base_rate += 0.04
         reason.append("recent resistance")
     if entry_band(entry) in {"9-10c", "16-20c"}:
         base_rate -= 0.08
         reason.append("weak historical entry band")
+    vetoes = stabilization_vetoes(entry, player_flow, price_history or {})
+    if vetoes:
+        target_multiple = min(target_multiple, 2.0)
+        target = min(round(entry * target_multiple, 2), target)
+        base_rate -= 0.18
+        reason.extend(vetoes)
     return {
         "target": min(round(target, 2), 0.55),
+        "targetMultiple": round(target_multiple, 2),
         "targetHitProbability": round(max(0.05, min(0.85, base_rate)), 3),
         "reason": reason,
+        "vetoes": vetoes,
     }
 
 
@@ -352,6 +497,48 @@ def expected_trade_value(entry: float, target: float, probability: float) -> flo
 
 def kalshi_fee(price: float) -> float:
     return math.ceil((0.07 * price * (1 - price)) * 100) / 100
+
+
+def stabilization_vetoes(entry: float, player_flow: dict[str, Any], price_history: dict[str, Any] | None = None) -> list[str]:
+    """Hard-check that a cheap underdog can survive long enough to be tradable.
+
+    The Golubic/Korpatsch miss pattern was not "underdog lost"; it was "the
+    underdog never stabilized, so there was no spike window." This veto keeps a
+    low entry price from outweighing a top-form favorite plus weak hold/error
+    profile.
+    """
+    vetoes: list[str] = []
+    opponent_rank = player_flow.get("opponentRank")
+    opponent_clay = player_flow.get("opponentClayWinPct")
+    opponent_recent = player_flow.get("opponentRecentWinPct")
+    adj_edge = player_flow.get("adjFormEdge")
+    return_edge = player_flow.get("returnPressureEdge")
+    hold = player_flow.get("hold")
+    error_control = player_flow.get("errorControl")
+    second_serve = player_flow.get("secondServe")
+    favorite_is_hot = (
+        opponent_rank is not None
+        and opponent_rank <= 20
+        and (opponent_clay or 0) >= 0.78
+        and (opponent_recent or 0) >= 0.75
+    )
+    cannot_stabilize = (
+        (hold is not None and hold < 65)
+        or (error_control is not None and error_control < 55)
+        or (second_serve is not None and second_serve < 50)
+    )
+    no_pressure_edge = return_edge is not None and return_edge <= 0
+    severe_form_gap = adj_edge is not None and adj_edge <= -18
+    if entry <= 0.12 and favorite_is_hot and cannot_stabilize and (no_pressure_edge or severe_form_gap):
+        vetoes.append("stabilization veto: top-form favorite can bury this before a spike")
+    if entry <= 0.12 and severe_form_gap and no_pressure_edge and (hold or 100) < 65:
+        vetoes.append("stabilization veto: weak hold plus no return-pressure edge")
+    same_favorite = (price_history or {}).get("sameFavorite") or []
+    if same_favorite:
+        hit_2x_rate = sum(1 for row in same_favorite if row.get("hit2x")) / len(same_favorite)
+        if favorite_is_hot and cannot_stabilize and hit_2x_rate < 0.5:
+            vetoes.append("price-history veto: prior underdogs vs this favorite usually failed to double")
+    return vetoes
 
 
 def main() -> None:
@@ -404,8 +591,10 @@ def main() -> None:
         band = entry_band(dog["yesAsk"])
         bucket = empirical.get(band, {})
         flow = load_player_flow(dog.get("boardMatchId"), dog.get("selection"))
-        projection = projected_exit(dog["yesAsk"], bucket, flow)
+        price_history = load_kalshi_price_history(dog.get("boardMatchId"), flow, dog["yesAsk"])
+        projection = projected_exit(dog["yesAsk"], bucket, flow, price_history)
         ev = expected_trade_value(dog["yesAsk"], projection["target"], projection["targetHitProbability"])
+        vetoes = projection.get("vetoes") or []
         row = {
             **{k: dog.get(k) for k in [
                 "eventTicker", "marketTicker", "selection", "title", "occurrenceDatetime", "boardMatchId",
@@ -416,11 +605,14 @@ def main() -> None:
             "historical30HitRate": bucket.get("target_30_rate"),
             "historicalN": bucket.get("n"),
             "projectedExit": projection["target"],
+            "targetMultiple": projection["targetMultiple"],
             "targetHitProbability": projection["targetHitProbability"],
             "tradeEvPerContract": round(ev, 3),
             "tradeEvPctOfEntry": round(ev / dog["yesAsk"], 3) if dog["yesAsk"] else None,
-            "candidateTier": "trade" if ev > 0 and dog["yesAsk"] <= 0.18 else "watch" if ev > -0.02 else "pass",
+            "candidateTier": "pass" if vetoes else "trade" if ev > 0 and dog["yesAsk"] <= 0.18 else "watch" if ev > -0.02 else "pass",
             "projectionReasons": projection["reason"],
+            "stabilizationVetoes": vetoes,
+            "kalshiPriceHistory": price_history,
             "playerFlow": flow,
         }
         rows.append(row)

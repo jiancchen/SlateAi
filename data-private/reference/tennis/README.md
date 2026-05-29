@@ -46,3 +46,9 @@ SofaScore match/H2H stats:
 - Raw files are stored in `sofascore-match-data/SOFASCORE_EVENT_ID.json` and are mapped back to the board match id when `--date` can match the two player names in `published-data/slates/YYYY-MM-DD/games`.
 - Import with `npm run data:import:tennis-sofascore`. Query match metadata in `tennis_sofascore_matches`, flattened home/away stat rows in `tennis_sofascore_stat_rows`, and player-tied rows in `tennis_sofascore_player_stat_rows`.
 - Daily slate warehouse loop: import the published slate with `npm run data:import:tennis-slate -- --date YYYY-MM-DD`, then import Flashscore and SofaScore rows. The slate import warehouses the Tennistonic H2H/clay context already used by the model in `tennis_h2h_snapshots`, `tennis_player_match_context`, and `tennis_recent_matches`.
+
+Kalshi trade-to-sell checks:
+- Treat cheap-underdog prediction-market rows as trade candidates only after a stabilization check. A dog needs enough hold, second-serve, error-control, or return-pressure evidence to survive the first service cycles.
+- Query `tennis_kalshi_market_candles` and `tennis_kalshi_intramatch_trade_features` before promoting a row. Store same-favorite history and similar-entry history on the candidate payload.
+- Same-favorite history should include the prior opponent, entry ask, max bid/trade, scoreline, and whether the contract doubled. This catches hot favorites whose opponents do not actually re-rate upward.
+- If the favorite is top-20 and in strong clay/recent form, and the dog has weak hold/error profile with no return-pressure edge, veto or downgrade even when the raw entry price is attractive.
