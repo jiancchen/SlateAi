@@ -145,3 +145,20 @@ export const loadMlbPropBoardData = async (date: string): Promise<Record<string,
 
   return null
 }
+
+export const loadMlbHomeRunBoardData = async (date: string): Promise<Record<string, unknown> | null> => {
+  const apiBase = getApiBaseUrl()
+
+  if (apiBase) {
+    try {
+      const payload = await fetchJsonWithTimeout<{ date: string; homeRuns: Record<string, unknown> }>(
+        `${apiBase}/api/mlb/${date}/home-runs`
+      )
+      if (payload.homeRuns) return payload.homeRuns
+    } catch (error) {
+      console.warn(`MLB home-run board API unavailable for ${date}.`, error)
+    }
+  }
+
+  return null
+}

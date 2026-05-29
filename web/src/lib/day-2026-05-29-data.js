@@ -391,9 +391,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +120 / +1.5 -140",
-    "total": "o9.5 even / u9.5 -110",
-    "moneyline": "Braves -132 / Reds +120",
+    "spread": "-1.5 +115 / +1.5 -130",
+    "total": "o9.5 -102 / u9.5 -115",
+    "moneyline": "Braves -132 / Reds +118",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/braves-vs-reds",
     "tierTwoContext": {
@@ -961,6 +961,429 @@ export const rawGames = [
       "recentInningHistory": {
         "away": [
           {
+            "gamePk": 823867,
+            "date": "2026-05-18",
+            "opponent": "Marlins",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 12,
+            "starters": {
+              "team": {
+                "pitcherId": 702275,
+                "pitcherName": "JR Ritchie",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 676974,
+                "pitcherName": "Max Meyer",
+                "teamName": "Miami Marlins",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823865,
+            "date": "2026-05-19",
+            "opponent": "Marlins",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 8,
+            "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 527048,
+                "pitcherName": "Martín Pérez",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 3,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 666129,
+                "pitcherName": "Braxton Garrett",
+                "teamName": "Miami Marlins",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 3
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 823866,
+            "date": "2026-05-20",
+            "opponent": "Marlins",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 519242,
+                "pitcherName": "Chris Sale",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 676083,
+                "pitcherName": "Janson Junk",
+                "teamName": "Miami Marlins",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 3
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 5
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823864,
+            "date": "2026-05-21",
+            "opponent": "Marlins",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 675911,
+                "pitcherName": "Spencer Strider",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 645261,
+                "pitcherName": "Sandy Alcantara",
+                "teamName": "Miami Marlins",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 2
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 2
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 824922,
+            "date": "2026-05-22",
+            "opponent": "Nationals",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 693821,
+                "pitcherName": "Bryce Elder",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 663992,
+                "pitcherName": "Richard Lovelady",
+                "teamName": "Washington Nationals",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 2
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              },
+              {
+                "inning": 10,
+                "runs": 2
+              },
+              {
+                "inning": 11,
+                "runs": 1
+              }
+            ]
+          },
+          {
             "gamePk": 824920,
             "date": "2026-05-23",
             "opponent": "Nationals",
@@ -1377,6 +1800,421 @@ export const rawGames = [
           }
         ],
         "home": [
+          {
+            "gamePk": 824435,
+            "date": "2026-05-16",
+            "opponent": "Guardians",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 7,
+            "starters": {
+              "team": {
+                "pitcherId": 663978,
+                "pitcherName": "Chris Paddack",
+                "teamName": "Cincinnati Reds",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 676282,
+                "pitcherName": "Joey Cantillo",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Cincinnati Reds",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Blew",
+                "tone": "negative"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 3
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824436,
+            "date": "2026-05-17",
+            "opponent": "Guardians",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 10,
+            "starters": {
+              "team": {
+                "pitcherId": 663903,
+                "pitcherName": "Brady Singer",
+                "teamName": "Cincinnati Reds",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 668909,
+                "pitcherName": "Gavin Williams",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Cincinnati Reds",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Stranded",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 823465,
+            "date": "2026-05-18",
+            "opponent": "Phillies",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 666157,
+                "pitcherName": "Nick Lodolo",
+                "teamName": "Cincinnati Reds",
+                "opponentName": "Philadelphia Phillies",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 691725,
+                "pitcherName": "Andrew Painter",
+                "teamName": "Philadelphia Phillies",
+                "opponentName": "Cincinnati Reds",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 2
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823464,
+            "date": "2026-05-19",
+            "opponent": "Phillies",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 695505,
+                "pitcherName": "Chase Burns",
+                "teamName": "Cincinnati Reds",
+                "opponentName": "Philadelphia Phillies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 666200,
+                "pitcherName": "Jesús Luzardo",
+                "teamName": "Philadelphia Phillies",
+                "opponentName": "Cincinnati Reds",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 2
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823462,
+            "date": "2026-05-20",
+            "opponent": "Phillies",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 671096,
+                "pitcherName": "Andrew Abbott",
+                "teamName": "Cincinnati Reds",
+                "opponentName": "Philadelphia Phillies",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 605400,
+                "pitcherName": "Aaron Nola",
+                "teamName": "Philadelphia Phillies",
+                "opponentName": "Cincinnati Reds",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 3
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 2
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 2
+              }
+            ]
+          },
           {
             "gamePk": 824518,
             "date": "2026-05-23",
@@ -2003,9 +2841,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -190 / +1.5 -176",
-    "total": "o9.5 +101 / u9.5 -115",
-    "moneyline": "Padres even / Nationals -120",
+    "spread": "+1.5 -205 / +1.5 -175",
+    "total": "o9 -120 / u9.5 -120",
+    "moneyline": "Padres -102 / Nationals -115",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/padres-vs-nationals",
     "tierTwoContext": {
@@ -2556,6 +3394,421 @@ export const rawGames = [
       "recentInningHistory": {
         "away": [
           {
+            "gamePk": 823138,
+            "date": "2026-05-17",
+            "opponent": "Mariners",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 8,
+            "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 608337,
+                "pitcherName": "Lucas Giolito",
+                "teamName": "San Diego Padres",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669923,
+                "pitcherName": "George Kirby",
+                "teamName": "Seattle Mariners",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 5
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823301,
+            "date": "2026-05-18",
+            "opponent": "Dodgers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 1,
+            "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 650633,
+                "pitcherName": "Michael King",
+                "teamName": "San Diego Padres",
+                "opponentName": "Los Angeles Dodgers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 808967,
+                "pitcherName": "Yoshinobu Yamamoto",
+                "teamName": "Los Angeles Dodgers",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Quiet",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823302,
+            "date": "2026-05-19",
+            "opponent": "Dodgers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 656288,
+                "pitcherName": "Griffin Canning",
+                "teamName": "San Diego Padres",
+                "opponentName": "Los Angeles Dodgers",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 686218,
+                "pitcherName": "Emmet Sheehan",
+                "teamName": "Los Angeles Dodgers",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Blew",
+                "tone": "negative"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 2
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823299,
+            "date": "2026-05-20",
+            "opponent": "Dodgers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 681190,
+                "pitcherName": "Randy Vásquez",
+                "teamName": "San Diego Padres",
+                "opponentName": "Los Angeles Dodgers",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 660271,
+                "pitcherName": "Shohei Ohtani",
+                "teamName": "Los Angeles Dodgers",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823298,
+            "date": "2026-05-22",
+            "opponent": "Athletics",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 621111,
+                "pitcherName": "Walker Buehler",
+                "teamName": "San Diego Padres",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 605488,
+                "pitcherName": "Jeffrey Springs",
+                "teamName": "Athletics",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 3
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
             "gamePk": 823300,
             "date": "2026-05-23",
             "opponent": "Athletics",
@@ -2972,6 +4225,441 @@ export const rawGames = [
           }
         ],
         "home": [
+          {
+            "gamePk": 822734,
+            "date": "2026-05-18",
+            "opponent": "Mets",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 7,
+            "runsAgainst": 16,
+            "starters": {
+              "team": {
+                "pitcherId": 663623,
+                "pitcherName": "Jake Irvin",
+                "teamName": "Washington Nationals",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 681035,
+                "pitcherName": "Christian Scott",
+                "teamName": "New York Mets",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 2
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              },
+              {
+                "inning": 10,
+                "runs": 0
+              },
+              {
+                "inning": 11,
+                "runs": 1
+              },
+              {
+                "inning": 12,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 822736,
+            "date": "2026-05-19",
+            "opponent": "Mets",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 656492,
+                "pitcherName": "Foster Griffin",
+                "teamName": "Washington Nationals",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 3,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 690997,
+                "pitcherName": "Nolan McLean",
+                "teamName": "New York Mets",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 4
+              },
+              {
+                "inning": 3,
+                "runs": 3
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822735,
+            "date": "2026-05-20",
+            "opponent": "Mets",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 8,
+            "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 641793,
+                "pitcherName": "Zack Littell",
+                "teamName": "Washington Nationals",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 804267,
+                "pitcherName": "Zach Thornton",
+                "teamName": "New York Mets",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 3,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 3
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 2
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 2
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822733,
+            "date": "2026-05-21",
+            "opponent": "Mets",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 676917,
+                "pitcherName": "Cade Cavalli",
+                "teamName": "Washington Nationals",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 656849,
+                "pitcherName": "David Peterson",
+                "teamName": "New York Mets",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824922,
+            "date": "2026-05-22",
+            "opponent": "Braves",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 663992,
+                "pitcherName": "Richard Lovelady",
+                "teamName": "Washington Nationals",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 693821,
+                "pitcherName": "Bryce Elder",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Late cash",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              },
+              {
+                "inning": 10,
+                "runs": 2
+              },
+              {
+                "inning": 11,
+                "runs": 0
+              }
+            ]
+          },
           {
             "gamePk": 824920,
             "date": "2026-05-23",
@@ -3668,8 +5356,8 @@ export const rawGames = [
         "workloadLabel": "Unknown leash"
       }
     },
-    "spread": "+1.5 -190 / -1.5 +160",
-    "total": "o8 -110 / u8 -110",
+    "spread": "+1.5 -182 / -1.5 +160",
+    "total": "o8 -110 / u8 -105",
     "moneyline": "Twins +115 / Pirates -130",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/twins-vs-pirates",
@@ -4210,6 +5898,421 @@ export const rawGames = [
       "recentInningHistory": {
         "away": [
           {
+            "gamePk": 823705,
+            "date": "2026-05-18",
+            "opponent": "Astros",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 696070,
+                "pitcherName": "Kendry Rojas",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 837227,
+                "pitcherName": "Tatsuya Imai",
+                "teamName": "Houston Astros",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 3
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823704,
+            "date": "2026-05-19",
+            "opponent": "Astros",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 805673,
+                "pitcherName": "Zebby Matthews",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 669920,
+                "pitcherName": "Jason Alexander",
+                "teamName": "Houston Astros",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823703,
+            "date": "2026-05-20",
+            "opponent": "Astros",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 657746,
+                "pitcherName": "Joe Ryan",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 681347,
+                "pitcherName": "Mike Burrows",
+                "teamName": "Houston Astros",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 3
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824761,
+            "date": "2026-05-22",
+            "opponent": "Red Sox",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 8,
+            "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 687570,
+                "pitcherName": "Connor Prielipp",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 4,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 801139,
+                "pitcherName": "Payton Tolle",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 3
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 4
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 824760,
+            "date": "2026-05-23",
+            "opponent": "Red Sox",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 671737,
+                "pitcherName": "Taj Bradley",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 663558,
+                "pitcherName": "Jovani Morán",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Dog upset",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 2
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
             "gamePk": 824759,
             "date": "2026-05-24",
             "opponent": "Red Sox",
@@ -4634,6 +6737,425 @@ export const rawGames = [
           }
         ],
         "home": [
+          {
+            "gamePk": 823059,
+            "date": "2026-05-19",
+            "opponent": "Cardinals",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 9,
+            "starters": {
+              "team": {
+                "pitcherId": 656605,
+                "pitcherName": "Mitch Keller",
+                "teamName": "Pittsburgh Pirates",
+                "opponentName": "St. Louis Cardinals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669461,
+                "pitcherName": "Matthew Liberatore",
+                "teamName": "St. Louis Cardinals",
+                "opponentName": "Pittsburgh Pirates",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Blew",
+                "tone": "negative"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 4
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 2
+              },
+              {
+                "inning": 10,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823057,
+            "date": "2026-05-20",
+            "opponent": "Cardinals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 669387,
+                "pitcherName": "Carmen Mlodzinski",
+                "teamName": "Pittsburgh Pirates",
+                "opponentName": "St. Louis Cardinals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 700241,
+                "pitcherName": "Michael McGreevy",
+                "teamName": "St. Louis Cardinals",
+                "opponentName": "Pittsburgh Pirates",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 4
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823056,
+            "date": "2026-05-21",
+            "opponent": "Cardinals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 677952,
+                "pitcherName": "Braxton Ashcraft",
+                "teamName": "Pittsburgh Pirates",
+                "opponentName": "St. Louis Cardinals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669160,
+                "pitcherName": "Dustin May",
+                "teamName": "St. Louis Cardinals",
+                "opponentName": "Pittsburgh Pirates",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 2
+              },
+              {
+                "inning": 7,
+                "runs": 2
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822816,
+            "date": "2026-05-22",
+            "opponent": "Blue Jays",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 696149,
+                "pitcherName": "Bubba Chandler",
+                "teamName": "Pittsburgh Pirates",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 592332,
+                "pitcherName": "Kevin Gausman",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "Pittsburgh Pirates",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822814,
+            "date": "2026-05-23",
+            "opponent": "Blue Jays",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 694973,
+                "pitcherName": "Paul Skenes",
+                "teamName": "Pittsburgh Pirates",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 571578,
+                "pitcherName": "Patrick Corbin",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "Pittsburgh Pirates",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Exp L",
+                "tone": "warning"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
           {
             "gamePk": 822813,
             "date": "2026-05-24",
@@ -5308,7 +7830,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "Trevor Rogers",
         "line": 4.5,
-        "overPrice": 112,
+        "overPrice": 118,
         "underPrice": -134
       },
       "recentForm": null,
@@ -5330,9 +7852,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -185 / +1.5 -180",
-    "total": "o8.5 -122 / u9 -107",
-    "moneyline": "Blue Jays +110 / Orioles -115",
+    "spread": "+1.5 -180 / -1.5 +164",
+    "total": "o9 -105 / u9 -110",
+    "moneyline": "Blue Jays +110 / Orioles -130",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/blue-jays-vs-orioles",
     "tierTwoContext": {
@@ -5706,7 +8228,7 @@ export const rawGames = [
         "home": {
           "playerName": "Trevor Rogers",
           "line": 4.5,
-          "overPrice": 112,
+          "overPrice": 118,
           "underPrice": -134
         }
       },
@@ -5902,6 +8424,421 @@ export const rawGames = [
       },
       "recentInningHistory": {
         "away": [
+          {
+            "gamePk": 823548,
+            "date": "2026-05-19",
+            "opponent": "Yankees",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 656302,
+                "pitcherName": "Dylan Cease",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "New York Yankees",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 701542,
+                "pitcherName": "Will Warren",
+                "teamName": "New York Yankees",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 3
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 823547,
+            "date": "2026-05-20",
+            "opponent": "Yankees",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 702056,
+                "pitcherName": "Trey Yesavage",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "New York Yankees",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 693645,
+                "pitcherName": "Cam Schlittler",
+                "teamName": "New York Yankees",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 2
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823545,
+            "date": "2026-05-21",
+            "opponent": "Yankees",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 680755,
+                "pitcherName": "Braydon Fisher",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "New York Yankees",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 607074,
+                "pitcherName": "Carlos Rodón",
+                "teamName": "New York Yankees",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822816,
+            "date": "2026-05-22",
+            "opponent": "Pirates",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 592332,
+                "pitcherName": "Kevin Gausman",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "Pittsburgh Pirates",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 696149,
+                "pitcherName": "Bubba Chandler",
+                "teamName": "Pittsburgh Pirates",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 3
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 3
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822814,
+            "date": "2026-05-23",
+            "opponent": "Pirates",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 571578,
+                "pitcherName": "Patrick Corbin",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "Pittsburgh Pirates",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 694973,
+                "pitcherName": "Paul Skenes",
+                "teamName": "Pittsburgh Pirates",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Fav held",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 3
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
           {
             "gamePk": 822813,
             "date": "2026-05-24",
@@ -6319,6 +9256,421 @@ export const rawGames = [
           }
         ],
         "home": [
+          {
+            "gamePk": 822980,
+            "date": "2026-05-18",
+            "opponent": "Rays",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 16,
+            "starters": {
+              "team": {
+                "pitcherId": 669432,
+                "pitcherName": "Trevor Rogers",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Tampa Bay Rays",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 663556,
+                "pitcherName": "Shane McClanahan",
+                "teamName": "Tampa Bay Rays",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 3
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822979,
+            "date": "2026-05-19",
+            "opponent": "Rays",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 680694,
+                "pitcherName": "Kyle Bradish",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Tampa Bay Rays",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 643377,
+                "pitcherName": "Griffin Jax",
+                "teamName": "Tampa Bay Rays",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Quiet",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822977,
+            "date": "2026-05-20",
+            "opponent": "Rays",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 669358,
+                "pitcherName": "Shane Baz",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Tampa Bay Rays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 571927,
+                "pitcherName": "Steven Matz",
+                "teamName": "Tampa Bay Rays",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Stranded",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 2
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824842,
+            "date": "2026-05-22",
+            "opponent": "Tigers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 669211,
+                "pitcherName": "Keegan Akin",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 656427,
+                "pitcherName": "Jack Flaherty",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 3
+              },
+              {
+                "inning": 4,
+                "runs": 3
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824839,
+            "date": "2026-05-24",
+            "opponent": "Tigers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 687064,
+                "pitcherName": "Brandon Young",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 664285,
+                "pitcherName": "Framber Valdez",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Fav held",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Late cash",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 3
+              }
+            ]
+          },
           {
             "gamePk": 824840,
             "date": "2026-05-24",
@@ -7326,9 +10678,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -150 / -1.5 +134",
+    "spread": "+1.5 -150 / -1.5 +140",
     "total": "o8 -110 / u8 -110",
-    "moneyline": "Angels +143 / Rays -162",
+    "moneyline": "Angels +143 / Rays -155",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/angels-vs-rays",
     "tierTwoContext": {
@@ -7901,6 +11253,429 @@ export const rawGames = [
       "recentInningHistory": {
         "away": [
           {
+            "gamePk": 824035,
+            "date": "2026-05-18",
+            "opponent": "Athletics",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 700712,
+                "pitcherName": "Walbert Ureña",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669372,
+                "pitcherName": "J.T. Ginn",
+                "teamName": "Athletics",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 2
+              }
+            ]
+          },
+          {
+            "gamePk": 824033,
+            "date": "2026-05-19",
+            "opponent": "Athletics",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 14,
+            "starters": {
+              "team": {
+                "pitcherId": 672282,
+                "pitcherName": "Reid Detmers",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 682052,
+                "pitcherName": "Jacob Lopez",
+                "teamName": "Athletics",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 3
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 2
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824032,
+            "date": "2026-05-20",
+            "opponent": "Athletics",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 5,
+            "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 686799,
+                "pitcherName": "Jack Kochanowicz",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 650644,
+                "pitcherName": "Aaron Civale",
+                "teamName": "Athletics",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Blew",
+                "tone": "negative"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 3
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              },
+              {
+                "inning": 10,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824031,
+            "date": "2026-05-21",
+            "opponent": "Athletics",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 667755,
+                "pitcherName": "José Soriano",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 622663,
+                "pitcherName": "Luis Severino",
+                "teamName": "Athletics",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Blew",
+                "tone": "negative"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              },
+              {
+                "inning": 10,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824029,
+            "date": "2026-05-22",
+            "opponent": "Rangers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 680570,
+                "pitcherName": "Grayson Rodriguez",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Texas Rangers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 594798,
+                "pitcherName": "Jacob deGrom",
+                "teamName": "Texas Rangers",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 4,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 4
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 2
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 2
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
             "gamePk": 824030,
             "date": "2026-05-23",
             "opponent": "Rangers",
@@ -8317,6 +12092,425 @@ export const rawGames = [
           }
         ],
         "home": [
+          {
+            "gamePk": 822981,
+            "date": "2026-05-16",
+            "opponent": "Marlins",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 5,
+            "runsAgainst": 10,
+            "starters": {
+              "team": {
+                "pitcherId": 607259,
+                "pitcherName": "Nick Martinez",
+                "teamName": "Tampa Bay Rays",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 645261,
+                "pitcherName": "Sandy Alcantara",
+                "teamName": "Miami Marlins",
+                "opponentName": "Tampa Bay Rays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Blew",
+                "tone": "negative"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              },
+              {
+                "inning": 10,
+                "runs": 3
+              }
+            ]
+          },
+          {
+            "gamePk": 822982,
+            "date": "2026-05-17",
+            "opponent": "Marlins",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 656876,
+                "pitcherName": "Drew Rasmussen",
+                "teamName": "Tampa Bay Rays",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 691587,
+                "pitcherName": "Eury Pérez",
+                "teamName": "Miami Marlins",
+                "opponentName": "Tampa Bay Rays",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 3
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822980,
+            "date": "2026-05-18",
+            "opponent": "Orioles",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 16,
+            "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 663556,
+                "pitcherName": "Shane McClanahan",
+                "teamName": "Tampa Bay Rays",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669432,
+                "pitcherName": "Trevor Rogers",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Tampa Bay Rays",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 5
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 4
+              },
+              {
+                "inning": 6,
+                "runs": 4
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822979,
+            "date": "2026-05-19",
+            "opponent": "Orioles",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 643377,
+                "pitcherName": "Griffin Jax",
+                "teamName": "Tampa Bay Rays",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 680694,
+                "pitcherName": "Kyle Bradish",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Tampa Bay Rays",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Late cash",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 2
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822977,
+            "date": "2026-05-20",
+            "opponent": "Orioles",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 571927,
+                "pitcherName": "Steven Matz",
+                "teamName": "Tampa Bay Rays",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669358,
+                "pitcherName": "Shane Baz",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Tampa Bay Rays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Late cash",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 4
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
           {
             "gamePk": 823546,
             "date": "2026-05-22",
@@ -9193,7 +13387,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "Freddy Peralta",
         "line": 5.5,
-        "overPrice": -110,
+        "overPrice": -108,
         "underPrice": 122
       },
       "recentForm": null,
@@ -9215,9 +13409,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -220 / +1.5 -185",
-    "total": "o7 -120 / u7.5 -118",
-    "moneyline": "Marlins -102 / Mets -110",
+    "spread": "+1.5 -220 / +1.5 -194",
+    "total": "o7.5 +102 / u7.5 -115",
+    "moneyline": "Marlins -103 / Mets -110",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/marlins-vs-mets",
     "tierTwoContext": {
@@ -9618,7 +13812,7 @@ export const rawGames = [
         "home": {
           "playerName": "Freddy Peralta",
           "line": 5.5,
-          "overPrice": -110,
+          "overPrice": -108,
           "underPrice": 122
         }
       },
@@ -9814,6 +14008,421 @@ export const rawGames = [
       },
       "recentInningHistory": {
         "away": [
+          {
+            "gamePk": 823867,
+            "date": "2026-05-18",
+            "opponent": "Braves",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 12,
+            "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 676974,
+                "pitcherName": "Max Meyer",
+                "teamName": "Miami Marlins",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 702275,
+                "pitcherName": "JR Ritchie",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 5
+              },
+              {
+                "inning": 5,
+                "runs": 6
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823865,
+            "date": "2026-05-19",
+            "opponent": "Braves",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 8,
+            "starters": {
+              "team": {
+                "pitcherId": 666129,
+                "pitcherName": "Braxton Garrett",
+                "teamName": "Miami Marlins",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 527048,
+                "pitcherName": "Martín Pérez",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 3,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "Blew",
+                "tone": "negative"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 3
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823866,
+            "date": "2026-05-20",
+            "opponent": "Braves",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 9,
+            "starters": {
+              "team": {
+                "pitcherId": 676083,
+                "pitcherName": "Janson Junk",
+                "teamName": "Miami Marlins",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 519242,
+                "pitcherName": "Chris Sale",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Quiet",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823864,
+            "date": "2026-05-21",
+            "opponent": "Braves",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 9,
+            "starters": {
+              "team": {
+                "pitcherId": 645261,
+                "pitcherName": "Sandy Alcantara",
+                "teamName": "Miami Marlins",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 675911,
+                "pitcherName": "Spencer Strider",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823863,
+            "date": "2026-05-22",
+            "opponent": "Mets",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 691587,
+                "pitcherName": "Eury Pérez",
+                "teamName": "Miami Marlins",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 668964,
+                "pitcherName": "Tobias Myers",
+                "teamName": "New York Mets",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
           {
             "gamePk": 823862,
             "date": "2026-05-23",
@@ -10231,6 +14840,433 @@ export const rawGames = [
           }
         ],
         "home": [
+          {
+            "gamePk": 822734,
+            "date": "2026-05-18",
+            "opponent": "Nationals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 16,
+            "runsAgainst": 7,
+            "starters": {
+              "team": {
+                "pitcherId": 681035,
+                "pitcherName": "Christian Scott",
+                "teamName": "New York Mets",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 663623,
+                "pitcherName": "Jake Irvin",
+                "teamName": "Washington Nationals",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 2
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              },
+              {
+                "inning": 10,
+                "runs": 0
+              },
+              {
+                "inning": 11,
+                "runs": 1
+              },
+              {
+                "inning": 12,
+                "runs": 10
+              }
+            ]
+          },
+          {
+            "gamePk": 822736,
+            "date": "2026-05-19",
+            "opponent": "Nationals",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 9,
+            "starters": {
+              "team": {
+                "pitcherId": 690997,
+                "pitcherName": "Nolan McLean",
+                "teamName": "New York Mets",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 656492,
+                "pitcherName": "Foster Griffin",
+                "teamName": "Washington Nationals",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 3,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 3
+              },
+              {
+                "inning": 2,
+                "runs": 2
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822735,
+            "date": "2026-05-20",
+            "opponent": "Nationals",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 8,
+            "starters": {
+              "team": {
+                "pitcherId": 804267,
+                "pitcherName": "Zach Thornton",
+                "teamName": "New York Mets",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 3,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 641793,
+                "pitcherName": "Zack Littell",
+                "teamName": "Washington Nationals",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 2
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 822733,
+            "date": "2026-05-21",
+            "opponent": "Nationals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 656849,
+                "pitcherName": "David Peterson",
+                "teamName": "New York Mets",
+                "opponentName": "Washington Nationals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 676917,
+                "pitcherName": "Cade Cavalli",
+                "teamName": "Washington Nationals",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 2
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823863,
+            "date": "2026-05-22",
+            "opponent": "Marlins",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 668964,
+                "pitcherName": "Tobias Myers",
+                "teamName": "New York Mets",
+                "opponentName": "Miami Marlins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 691587,
+                "pitcherName": "Eury Pérez",
+                "teamName": "Miami Marlins",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Quiet",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
           {
             "gamePk": 823862,
             "date": "2026-05-23",
@@ -11427,7 +16463,7 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -190 / -1.5 +170",
+    "spread": "+1.5 -195 / -1.5 +170",
     "total": "o8 -105 / u8 -110",
     "moneyline": "Red Sox +110 / Guardians -125",
     "pitcherSourceNote": "",
@@ -11980,6 +17016,421 @@ export const rawGames = [
       "recentInningHistory": {
         "away": [
           {
+            "gamePk": 824923,
+            "date": "2026-05-17",
+            "opponent": "Braves",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 8,
+            "starters": {
+              "team": {
+                "pitcherId": 678394,
+                "pitcherName": "Brayan Bello",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Atlanta Braves",
+                "firstInningRunsAllowed": 3,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 656550,
+                "pitcherName": "Grant Holmes",
+                "teamName": "Atlanta Braves",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Stranded",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 824114,
+            "date": "2026-05-18",
+            "opponent": "Royals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 543243,
+                "pitcherName": "Sonny Gray",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 607625,
+                "pitcherName": "Seth Lugo",
+                "teamName": "Kansas City Royals",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Stranded",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 2
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824112,
+            "date": "2026-05-19",
+            "opponent": "Royals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 624133,
+                "pitcherName": "Ranger Suarez",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 663559,
+                "pitcherName": "Bailey Falter",
+                "teamName": "Kansas City Royals",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 4
+              }
+            ]
+          },
+          {
+            "gamePk": 824111,
+            "date": "2026-05-20",
+            "opponent": "Royals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 813349,
+                "pitcherName": "Connelly Early",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 608379,
+                "pitcherName": "Michael Wacha",
+                "teamName": "Kansas City Royals",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 2
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 2
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824761,
+            "date": "2026-05-22",
+            "opponent": "Twins",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 8,
+            "starters": {
+              "team": {
+                "pitcherId": 801139,
+                "pitcherName": "Payton Tolle",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 687570,
+                "pitcherName": "Connor Prielipp",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 4,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Blew",
+                "tone": "negative"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 4
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
             "gamePk": 824760,
             "date": "2026-05-23",
             "opponent": "Twins",
@@ -12396,6 +17847,425 @@ export const rawGames = [
           }
         ],
         "home": [
+          {
+            "gamePk": 824277,
+            "date": "2026-05-18",
+            "opponent": "Tigers",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 8,
+            "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 677944,
+                "pitcherName": "Slade Cecconi",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 664285,
+                "pitcherName": "Framber Valdez",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 2
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 2
+              },
+              {
+                "inning": 6,
+                "runs": 3
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 824276,
+            "date": "2026-05-19",
+            "opponent": "Tigers",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 800048,
+                "pitcherName": "Parker Messick",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 672456,
+                "pitcherName": "Keider Montero",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824273,
+            "date": "2026-05-20",
+            "opponent": "Tigers",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 676440,
+                "pitcherName": "Tanner Bibee",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 623454,
+                "pitcherName": "Drew Anderson",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Late cash",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              },
+              {
+                "inning": 10,
+                "runs": 2
+              }
+            ]
+          },
+          {
+            "gamePk": 824274,
+            "date": "2026-05-21",
+            "opponent": "Tigers",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 676282,
+                "pitcherName": "Joey Cantillo",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 663554,
+                "pitcherName": "Casey Mize",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 2
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823461,
+            "date": "2026-05-22",
+            "opponent": "Phillies",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 1,
+            "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 668909,
+                "pitcherName": "Gavin Williams",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Philadelphia Phillies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 650911,
+                "pitcherName": "Cristopher Sánchez",
+                "teamName": "Philadelphia Phillies",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
           {
             "gamePk": 823458,
             "date": "2026-05-23",
@@ -13022,7 +18892,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "Shota Imanaga",
         "line": 5.5,
-        "overPrice": 120,
+        "overPrice": 138,
         "underPrice": -154
       },
       "recentForm": null,
@@ -13207,7 +19077,7 @@ export const rawGames = [
         "playerName": "Andre Pallante",
         "line": 3.5,
         "overPrice": -122,
-        "underPrice": 102
+        "underPrice": 110
       },
       "recentForm": null,
       "usageContext": {
@@ -13230,7 +19100,7 @@ export const rawGames = [
     },
     "spread": "-1.5 +135 / +1.5 -151",
     "total": "o7.5 -112 / u7.5 -105",
-    "moneyline": "Cubs -130 / Cardinals +114",
+    "moneyline": "Cubs -130 / Cardinals +115",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/cubs-vs-cardinals",
     "tierTwoContext": {
@@ -13625,14 +19495,14 @@ export const rawGames = [
         "away": {
           "playerName": "Shota Imanaga",
           "line": 5.5,
-          "overPrice": 120,
+          "overPrice": 138,
           "underPrice": -154
         },
         "home": {
           "playerName": "Andre Pallante",
           "line": 3.5,
           "overPrice": -122,
-          "underPrice": 102
+          "underPrice": 110
         }
       },
       "seriesEarlyPhase": {
@@ -13807,6 +19677,421 @@ export const rawGames = [
       },
       "recentInningHistory": {
         "away": [
+          {
+            "gamePk": 824680,
+            "date": "2026-05-18",
+            "opponent": "Brewers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 9,
+            "starters": {
+              "team": {
+                "pitcherId": 684007,
+                "pitcherName": "Shota Imanaga",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Milwaukee Brewers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 687075,
+                "pitcherName": "Brandon Sproat",
+                "teamName": "Milwaukee Brewers",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 3
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824677,
+            "date": "2026-05-19",
+            "opponent": "Brewers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 676962,
+                "pitcherName": "Ben Brown",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Milwaukee Brewers",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 694819,
+                "pitcherName": "Jacob Misiorowski",
+                "teamName": "Milwaukee Brewers",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 2
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824678,
+            "date": "2026-05-20",
+            "opponent": "Brewers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 665795,
+                "pitcherName": "Edward Cabrera",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Milwaukee Brewers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 690986,
+                "pitcherName": "Kyle Harrison",
+                "teamName": "Milwaukee Brewers",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824679,
+            "date": "2026-05-22",
+            "opponent": "Astros",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 592791,
+                "pitcherName": "Jameson Taillon",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 681293,
+                "pitcherName": "Spencer Arrighetti",
+                "teamName": "Houston Astros",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 2
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824674,
+            "date": "2026-05-23",
+            "opponent": "Astros",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 607067,
+                "pitcherName": "Colin Rea",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 678906,
+                "pitcherName": "Kai-Wei Teng",
+                "teamName": "Houston Astros",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Fav failed",
+                "tone": "negative"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
           {
             "gamePk": 824676,
             "date": "2026-05-24",
@@ -14224,6 +20509,425 @@ export const rawGames = [
           }
         ],
         "home": [
+          {
+            "gamePk": 823060,
+            "date": "2026-05-16",
+            "opponent": "Royals",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 681517,
+                "pitcherName": "Kyle Leahy",
+                "teamName": "St. Louis Cardinals",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 702070,
+                "pitcherName": "Noah Cameron",
+                "teamName": "Kansas City Royals",
+                "opponentName": "St. Louis Cardinals",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 2
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823058,
+            "date": "2026-05-17",
+            "opponent": "Royals",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 669467,
+                "pitcherName": "Andre Pallante",
+                "teamName": "St. Louis Cardinals",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 663568,
+                "pitcherName": "Stephen Kolek",
+                "teamName": "Kansas City Royals",
+                "opponentName": "St. Louis Cardinals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823059,
+            "date": "2026-05-19",
+            "opponent": "Pirates",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 669461,
+                "pitcherName": "Matthew Liberatore",
+                "teamName": "St. Louis Cardinals",
+                "opponentName": "Pittsburgh Pirates",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 656605,
+                "pitcherName": "Mitch Keller",
+                "teamName": "Pittsburgh Pirates",
+                "opponentName": "St. Louis Cardinals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 2
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 2
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              },
+              {
+                "inning": 10,
+                "runs": 3
+              }
+            ]
+          },
+          {
+            "gamePk": 823057,
+            "date": "2026-05-20",
+            "opponent": "Pirates",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 7,
+            "starters": {
+              "team": {
+                "pitcherId": 700241,
+                "pitcherName": "Michael McGreevy",
+                "teamName": "St. Louis Cardinals",
+                "opponentName": "Pittsburgh Pirates",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669387,
+                "pitcherName": "Carmen Mlodzinski",
+                "teamName": "Pittsburgh Pirates",
+                "opponentName": "St. Louis Cardinals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823056,
+            "date": "2026-05-21",
+            "opponent": "Pirates",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 669160,
+                "pitcherName": "Dustin May",
+                "teamName": "St. Louis Cardinals",
+                "opponentName": "Pittsburgh Pirates",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 677952,
+                "pitcherName": "Braxton Ashcraft",
+                "teamName": "Pittsburgh Pirates",
+                "opponentName": "St. Louis Cardinals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
           {
             "gamePk": 824518,
             "date": "2026-05-23",
@@ -14960,9 +21664,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +155 / +1.5 -170",
-    "total": "o8.5 -113 / u8.5 even",
-    "moneyline": "Tigers -105 / White Sox -105",
+    "spread": "-1.5 +155 / +1.5 -175",
+    "total": "o8.5 -114 / u8.5 +101",
+    "moneyline": "Tigers -108 / White Sox -108",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/tigers-vs-white-sox",
     "tierTwoContext": {
@@ -15540,6 +22244,425 @@ export const rawGames = [
       "recentInningHistory": {
         "away": [
           {
+            "gamePk": 824277,
+            "date": "2026-05-18",
+            "opponent": "Guardians",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 8,
+            "starters": {
+              "team": {
+                "pitcherId": 664285,
+                "pitcherName": "Framber Valdez",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 677944,
+                "pitcherName": "Slade Cecconi",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824276,
+            "date": "2026-05-19",
+            "opponent": "Guardians",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 672456,
+                "pitcherName": "Keider Montero",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 800048,
+                "pitcherName": "Parker Messick",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 2
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824273,
+            "date": "2026-05-20",
+            "opponent": "Guardians",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 623454,
+                "pitcherName": "Drew Anderson",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 676440,
+                "pitcherName": "Tanner Bibee",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              },
+              {
+                "inning": 10,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 824274,
+            "date": "2026-05-21",
+            "opponent": "Guardians",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 663554,
+                "pitcherName": "Casey Mize",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 676282,
+                "pitcherName": "Joey Cantillo",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824842,
+            "date": "2026-05-22",
+            "opponent": "Orioles",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 7,
+            "starters": {
+              "team": {
+                "pitcherId": 656427,
+                "pitcherName": "Jack Flaherty",
+                "teamName": "Detroit Tigers",
+                "opponentName": "Baltimore Orioles",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669211,
+                "pitcherName": "Keegan Akin",
+                "teamName": "Baltimore Orioles",
+                "opponentName": "Detroit Tigers",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
             "gamePk": 824839,
             "date": "2026-05-24",
             "opponent": "Orioles",
@@ -15956,6 +23079,421 @@ export const rawGames = [
           }
         ],
         "home": [
+          {
+            "gamePk": 823137,
+            "date": "2026-05-18",
+            "opponent": "Mariners",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 702273,
+                "pitcherName": "Noah Schultz",
+                "teamName": "Chicago White Sox",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 693433,
+                "pitcherName": "Bryan Woo",
+                "teamName": "Seattle Mariners",
+                "opponentName": "Chicago White Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823136,
+            "date": "2026-05-19",
+            "opponent": "Mariners",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 641743,
+                "pitcherName": "Anthony Kay",
+                "teamName": "Chicago White Sox",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 682243,
+                "pitcherName": "Bryce Miller",
+                "teamName": "Seattle Mariners",
+                "opponentName": "Chicago White Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 2
+              }
+            ]
+          },
+          {
+            "gamePk": 823134,
+            "date": "2026-05-20",
+            "opponent": "Mariners",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 680732,
+                "pitcherName": "Sean Burke",
+                "teamName": "Chicago White Sox",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 676106,
+                "pitcherName": "Emerson Hancock",
+                "teamName": "Seattle Mariners",
+                "opponentName": "Chicago White Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 823223,
+            "date": "2026-05-22",
+            "opponent": "Giants",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 663436,
+                "pitcherName": "Davis Martin",
+                "teamName": "Chicago White Sox",
+                "opponentName": "San Francisco Giants",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 686790,
+                "pitcherName": "Trevor McDonald",
+                "teamName": "San Francisco Giants",
+                "opponentName": "Chicago White Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 9
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823222,
+            "date": "2026-05-23",
+            "opponent": "Giants",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 10,
+            "starters": {
+              "team": {
+                "pitcherId": 663542,
+                "pitcherName": "Bryan Hudson",
+                "teamName": "Chicago White Sox",
+                "opponentName": "San Francisco Giants",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 605288,
+                "pitcherName": "Adrian Houser",
+                "teamName": "San Francisco Giants",
+                "opponentName": "Chicago White Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Coin L",
+                "tone": "warning"
+              },
+              "hitters": {
+                "label": "Stranded",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 3
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
           {
             "gamePk": 823220,
             "date": "2026-05-24",
@@ -16770,9 +24308,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -193 / -1.5 +172",
-    "total": "o7.5 even / u7.5 -112",
-    "moneyline": "Royals +114 / Rangers -126",
+    "spread": "+1.5 -193 / -1.5 +175",
+    "total": "o7.5 -102 / u7.5 -110",
+    "moneyline": "Royals +114 / Rangers -125",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/royals-vs-rangers",
     "tierTwoContext": {
@@ -17350,6 +24888,421 @@ export const rawGames = [
       "recentInningHistory": {
         "away": [
           {
+            "gamePk": 823058,
+            "date": "2026-05-17",
+            "opponent": "Cardinals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 663568,
+                "pitcherName": "Stephen Kolek",
+                "teamName": "Kansas City Royals",
+                "opponentName": "St. Louis Cardinals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669467,
+                "pitcherName": "Andre Pallante",
+                "teamName": "St. Louis Cardinals",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Stranded",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824114,
+            "date": "2026-05-18",
+            "opponent": "Red Sox",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 607625,
+                "pitcherName": "Seth Lugo",
+                "teamName": "Kansas City Royals",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 543243,
+                "pitcherName": "Sonny Gray",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824112,
+            "date": "2026-05-19",
+            "opponent": "Red Sox",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 7,
+            "starters": {
+              "team": {
+                "pitcherId": 663559,
+                "pitcherName": "Bailey Falter",
+                "teamName": "Kansas City Royals",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 624133,
+                "pitcherName": "Ranger Suarez",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824111,
+            "date": "2026-05-20",
+            "opponent": "Red Sox",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 608379,
+                "pitcherName": "Michael Wacha",
+                "teamName": "Kansas City Royals",
+                "opponentName": "Boston Red Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 813349,
+                "pitcherName": "Connelly Early",
+                "teamName": "Boston Red Sox",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Blew",
+                "tone": "negative"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 2
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824110,
+            "date": "2026-05-22",
+            "opponent": "Mariners",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 702070,
+                "pitcherName": "Noah Cameron",
+                "teamName": "Kansas City Royals",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669302,
+                "pitcherName": "Logan Gilbert",
+                "teamName": "Seattle Mariners",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
             "gamePk": 824109,
             "date": "2026-05-23",
             "opponent": "Mariners",
@@ -17766,6 +25719,421 @@ export const rawGames = [
           }
         ],
         "home": [
+          {
+            "gamePk": 824357,
+            "date": "2026-05-18",
+            "opponent": "Rockies",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 7,
+            "starters": {
+              "team": {
+                "pitcherId": 669022,
+                "pitcherName": "MacKenzie Gore",
+                "teamName": "Texas Rangers",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 500779,
+                "pitcherName": "Jose Quintana",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Texas Rangers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 3
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824356,
+            "date": "2026-05-19",
+            "opponent": "Rockies",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 10,
+            "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 641302,
+                "pitcherName": "Tyler Alexander",
+                "teamName": "Texas Rangers",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 671111,
+                "pitcherName": "Sammy Peralta",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Texas Rangers",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 3
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824355,
+            "date": "2026-05-20",
+            "opponent": "Rockies",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 683004,
+                "pitcherName": "Jack Leiter",
+                "teamName": "Texas Rangers",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 607536,
+                "pitcherName": "Kyle Freeland",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Texas Rangers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 3
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 2
+              }
+            ]
+          },
+          {
+            "gamePk": 824029,
+            "date": "2026-05-22",
+            "opponent": "Angels",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 9,
+            "starters": {
+              "team": {
+                "pitcherId": 594798,
+                "pitcherName": "Jacob deGrom",
+                "teamName": "Texas Rangers",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 4,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 680570,
+                "pitcherName": "Grayson Rodriguez",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Texas Rangers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 3
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 824030,
+            "date": "2026-05-23",
+            "opponent": "Angels",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 543135,
+                "pitcherName": "Nathan Eovaldi",
+                "teamName": "Texas Rangers",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 700712,
+                "pitcherName": "Walbert Ureña",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Texas Rangers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Coin L",
+                "tone": "warning"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
           {
             "gamePk": 824028,
             "date": "2026-05-24",
@@ -18473,7 +26841,7 @@ export const rawGames = [
         "playerName": "Kai-Wei Teng",
         "line": 4.5,
         "overPrice": -120,
-        "underPrice": 104
+        "underPrice": 112
       },
       "recentForm": null,
       "usageContext": {
@@ -18494,9 +26862,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +135 / +1.5 -160",
-    "total": "o8 -121 / u8.5 -115",
-    "moneyline": "Brewers -118 / Astros +105",
+    "spread": "-1.5 +120 / +1.5 -130",
+    "total": "o8.5 -104 / u8.5 -112",
+    "moneyline": "Brewers -138 / Astros +120",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/brewers-vs-astros",
     "tierTwoContext": {
@@ -18898,7 +27266,7 @@ export const rawGames = [
           "playerName": "Kai-Wei Teng",
           "line": 4.5,
           "overPrice": -120,
-          "underPrice": 104
+          "underPrice": 112
         }
       },
       "seriesEarlyPhase": {
@@ -19073,6 +27441,421 @@ export const rawGames = [
       },
       "recentInningHistory": {
         "away": [
+          {
+            "gamePk": 823708,
+            "date": "2026-05-17",
+            "opponent": "Twins",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 688107,
+                "pitcherName": "Robert Gasser",
+                "teamName": "Milwaukee Brewers",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 641927,
+                "pitcherName": "Bailey Ober",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Milwaukee Brewers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 824680,
+            "date": "2026-05-18",
+            "opponent": "Cubs",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 9,
+            "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 687075,
+                "pitcherName": "Brandon Sproat",
+                "teamName": "Milwaukee Brewers",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 684007,
+                "pitcherName": "Shota Imanaga",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Milwaukee Brewers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 4
+              },
+              {
+                "inning": 5,
+                "runs": 3
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824677,
+            "date": "2026-05-19",
+            "opponent": "Cubs",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 694819,
+                "pitcherName": "Jacob Misiorowski",
+                "teamName": "Milwaukee Brewers",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 676962,
+                "pitcherName": "Ben Brown",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Milwaukee Brewers",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 2
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 2
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824678,
+            "date": "2026-05-20",
+            "opponent": "Cubs",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 690986,
+                "pitcherName": "Kyle Harrison",
+                "teamName": "Milwaukee Brewers",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 665795,
+                "pitcherName": "Edward Cabrera",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Milwaukee Brewers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 3
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823788,
+            "date": "2026-05-22",
+            "opponent": "Dodgers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 701656,
+                "pitcherName": "Logan Henderson",
+                "teamName": "Milwaukee Brewers",
+                "opponentName": "Los Angeles Dodgers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 680736,
+                "pitcherName": "Justin Wrobleski",
+                "teamName": "Los Angeles Dodgers",
+                "opponentName": "Milwaukee Brewers",
+                "firstInningRunsAllowed": 4,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 4
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
           {
             "gamePk": 823787,
             "date": "2026-05-23",
@@ -19490,6 +28273,421 @@ export const rawGames = [
           }
         ],
         "home": [
+          {
+            "gamePk": 823705,
+            "date": "2026-05-18",
+            "opponent": "Twins",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 837227,
+                "pitcherName": "Tatsuya Imai",
+                "teamName": "Houston Astros",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 696070,
+                "pitcherName": "Kendry Rojas",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Late cash",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 3
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823704,
+            "date": "2026-05-19",
+            "opponent": "Twins",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 669920,
+                "pitcherName": "Jason Alexander",
+                "teamName": "Houston Astros",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 805673,
+                "pitcherName": "Zebby Matthews",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823703,
+            "date": "2026-05-20",
+            "opponent": "Twins",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 681347,
+                "pitcherName": "Mike Burrows",
+                "teamName": "Houston Astros",
+                "opponentName": "Minnesota Twins",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 657746,
+                "pitcherName": "Joe Ryan",
+                "teamName": "Minnesota Twins",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Quiet",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824679,
+            "date": "2026-05-22",
+            "opponent": "Cubs",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 681293,
+                "pitcherName": "Spencer Arrighetti",
+                "teamName": "Houston Astros",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 592791,
+                "pitcherName": "Jameson Taillon",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824674,
+            "date": "2026-05-23",
+            "opponent": "Cubs",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 678906,
+                "pitcherName": "Kai-Wei Teng",
+                "teamName": "Houston Astros",
+                "opponentName": "Chicago Cubs",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 607067,
+                "pitcherName": "Colin Rea",
+                "teamName": "Chicago Cubs",
+                "opponentName": "Houston Astros",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Dog upset",
+                "tone": "positive"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
           {
             "gamePk": 824676,
             "date": "2026-05-24",
@@ -20317,8 +29515,8 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 even / +1.5 -120",
-    "total": "o10.5 -120 / u10.5 even",
+    "spread": "-1.5 +102 / +1.5 -118",
+    "total": "o10.5 even / u10.5 -110",
     "moneyline": "Giants -150 / Rockies +130",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/giants-vs-rockies",
@@ -20892,6 +30090,421 @@ export const rawGames = [
       "recentInningHistory": {
         "away": [
           {
+            "gamePk": 825006,
+            "date": "2026-05-17",
+            "opponent": "Athletics",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 10,
+            "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 605288,
+                "pitcherName": "Adrian Houser",
+                "teamName": "San Francisco Giants",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 605488,
+                "pitcherName": "Jeffrey Springs",
+                "teamName": "Athletics",
+                "opponentName": "San Francisco Giants",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 8
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 825087,
+            "date": "2026-05-18",
+            "opponent": "Diamondbacks",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 12,
+            "starters": {
+              "team": {
+                "pitcherId": 592662,
+                "pitcherName": "Robbie Ray",
+                "teamName": "San Francisco Giants",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 4,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 668678,
+                "pitcherName": "Zac Gallen",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "San Francisco Giants",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 825086,
+            "date": "2026-05-19",
+            "opponent": "Diamondbacks",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 694738,
+                "pitcherName": "Landen Roupp",
+                "teamName": "San Francisco Giants",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 669194,
+                "pitcherName": "Ryne Nelson",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "San Francisco Giants",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Blew",
+                "tone": "negative"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 3
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 825084,
+            "date": "2026-05-20",
+            "opponent": "Diamondbacks",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 641816,
+                "pitcherName": "Tyler Mahle",
+                "teamName": "San Francisco Giants",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 518876,
+                "pitcherName": "Merrill Kelly",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "San Francisco Giants",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823223,
+            "date": "2026-05-22",
+            "opponent": "White Sox",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 9,
+            "starters": {
+              "team": {
+                "pitcherId": 686790,
+                "pitcherName": "Trevor McDonald",
+                "teamName": "San Francisco Giants",
+                "opponentName": "Chicago White Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 663436,
+                "pitcherName": "Davis Martin",
+                "teamName": "Chicago White Sox",
+                "opponentName": "San Francisco Giants",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 3
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
             "gamePk": 823222,
             "date": "2026-05-23",
             "opponent": "White Sox",
@@ -21308,6 +30921,421 @@ export const rawGames = [
           }
         ],
         "home": [
+          {
+            "gamePk": 824357,
+            "date": "2026-05-18",
+            "opponent": "Rangers",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 500779,
+                "pitcherName": "Jose Quintana",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Texas Rangers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 669022,
+                "pitcherName": "MacKenzie Gore",
+                "teamName": "Texas Rangers",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 2
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824356,
+            "date": "2026-05-19",
+            "opponent": "Rangers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 10,
+            "starters": {
+              "team": {
+                "pitcherId": 671111,
+                "pitcherName": "Sammy Peralta",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Texas Rangers",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 641302,
+                "pitcherName": "Tyler Alexander",
+                "teamName": "Texas Rangers",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824355,
+            "date": "2026-05-20",
+            "opponent": "Rangers",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 607536,
+                "pitcherName": "Kyle Freeland",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Texas Rangers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 683004,
+                "pitcherName": "Jack Leiter",
+                "teamName": "Texas Rangers",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "Blew",
+                "tone": "negative"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 2
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 825083,
+            "date": "2026-05-21",
+            "opponent": "Diamondbacks",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 688642,
+                "pitcherName": "Zach Agnos",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 593958,
+                "pitcherName": "Eduardo Rodriguez",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 825082,
+            "date": "2026-05-22",
+            "opponent": "Diamondbacks",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 608372,
+                "pitcherName": "Tomoyuki Sugano",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 647336,
+                "pitcherName": "Michael Soroka",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Stranded",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
           {
             "gamePk": 825080,
             "date": "2026-05-23",
@@ -21882,7 +31910,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "Carlos Rodon",
         "line": 6.5,
-        "overPrice": 118,
+        "overPrice": 124,
         "underPrice": -142
       },
       "recentForm": null,
@@ -22115,9 +32143,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +120 / +1.5 -134",
-    "total": "o9.5 -108 / u9.5 -110",
-    "moneyline": "Yankees -140 / Athletics +120",
+    "spread": "-1.5 +120 / +1.5 -130",
+    "total": "o9.5 -107 / u9.5 -110",
+    "moneyline": "Yankees -140 / Athletics +123",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/yankees-vs-athletics",
     "tierTwoContext": {
@@ -22512,7 +32540,7 @@ export const rawGames = [
         "away": {
           "playerName": "Carlos Rodon",
           "line": 6.5,
-          "overPrice": 118,
+          "overPrice": 124,
           "underPrice": -142
         },
         "home": {
@@ -22694,6 +32722,425 @@ export const rawGames = [
       },
       "recentInningHistory": {
         "away": [
+          {
+            "gamePk": 823628,
+            "date": "2026-05-17",
+            "opponent": "Mets",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 6,
+            "runsAgainst": 7,
+            "starters": {
+              "team": {
+                "pitcherId": 695684,
+                "pitcherName": "Elmer Rodríguez",
+                "teamName": "New York Yankees",
+                "opponentName": "New York Mets",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 642547,
+                "pitcherName": "Freddy Peralta",
+                "teamName": "New York Mets",
+                "opponentName": "New York Yankees",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Short",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 4
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              },
+              {
+                "inning": 10,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823549,
+            "date": "2026-05-18",
+            "opponent": "Blue Jays",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 7,
+            "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 677960,
+                "pitcherName": "Ryan Weathers",
+                "teamName": "New York Yankees",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 571578,
+                "pitcherName": "Patrick Corbin",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "New York Yankees",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 2
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 4
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823548,
+            "date": "2026-05-19",
+            "opponent": "Blue Jays",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 701542,
+                "pitcherName": "Will Warren",
+                "teamName": "New York Yankees",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 656302,
+                "pitcherName": "Dylan Cease",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "New York Yankees",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 3
+              },
+              {
+                "inning": 5,
+                "runs": 2
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823547,
+            "date": "2026-05-20",
+            "opponent": "Blue Jays",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 693645,
+                "pitcherName": "Cam Schlittler",
+                "teamName": "New York Yankees",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 702056,
+                "pitcherName": "Trey Yesavage",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "New York Yankees",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 823545,
+            "date": "2026-05-21",
+            "opponent": "Blue Jays",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 607074,
+                "pitcherName": "Carlos Rodón",
+                "teamName": "New York Yankees",
+                "opponentName": "Toronto Blue Jays",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 680755,
+                "pitcherName": "Braydon Fisher",
+                "teamName": "Toronto Blue Jays",
+                "opponentName": "New York Yankees",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
           {
             "gamePk": 823546,
             "date": "2026-05-22",
@@ -23111,6 +33558,429 @@ export const rawGames = [
           }
         ],
         "home": [
+          {
+            "gamePk": 824035,
+            "date": "2026-05-18",
+            "opponent": "Angels",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 669372,
+                "pitcherName": "J.T. Ginn",
+                "teamName": "Athletics",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 700712,
+                "pitcherName": "Walbert Ureña",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 824033,
+            "date": "2026-05-19",
+            "opponent": "Angels",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 14,
+            "runsAgainst": 6,
+            "starters": {
+              "team": {
+                "pitcherId": 682052,
+                "pitcherName": "Jacob Lopez",
+                "teamName": "Athletics",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 672282,
+                "pitcherName": "Reid Detmers",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 6
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 2
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 4
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 824032,
+            "date": "2026-05-20",
+            "opponent": "Angels",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 650644,
+                "pitcherName": "Aaron Civale",
+                "teamName": "Athletics",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 686799,
+                "pitcherName": "Jack Kochanowicz",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              },
+              {
+                "inning": 10,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 824031,
+            "date": "2026-05-21",
+            "opponent": "Angels",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 3,
+            "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 622663,
+                "pitcherName": "Luis Severino",
+                "teamName": "Athletics",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 667755,
+                "pitcherName": "José Soriano",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Late cash",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              },
+              {
+                "inning": 10,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 823298,
+            "date": "2026-05-22",
+            "opponent": "Padres",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 7,
+            "starters": {
+              "team": {
+                "pitcherId": 605488,
+                "pitcherName": "Jeffrey Springs",
+                "teamName": "Athletics",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 621111,
+                "pitcherName": "Walker Buehler",
+                "teamName": "San Diego Padres",
+                "opponentName": "Athletics",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
           {
             "gamePk": 823300,
             "date": "2026-05-23",
@@ -24438,9 +35308,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -180 / -1.5 +158",
-    "total": "o7 -117 / u7.5 -124",
-    "moneyline": "Diamondbacks +122 / Mariners -137",
+    "spread": "+1.5 -180 / -1.5 +160",
+    "total": "o7 -120 / u7.5 -124",
+    "moneyline": "Diamondbacks +122 / Mariners -135",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/diamondbacks-vs-mariners",
     "tierTwoContext": {
@@ -25013,6 +35883,421 @@ export const rawGames = [
       "recentInningHistory": {
         "away": [
           {
+            "gamePk": 825087,
+            "date": "2026-05-18",
+            "opponent": "Giants",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 12,
+            "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 668678,
+                "pitcherName": "Zac Gallen",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "San Francisco Giants",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 592662,
+                "pitcherName": "Robbie Ray",
+                "teamName": "San Francisco Giants",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 4,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 4
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 2
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 5
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 825086,
+            "date": "2026-05-19",
+            "opponent": "Giants",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 669194,
+                "pitcherName": "Ryne Nelson",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "San Francisco Giants",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 694738,
+                "pitcherName": "Landen Roupp",
+                "teamName": "San Francisco Giants",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 4
+              }
+            ]
+          },
+          {
+            "gamePk": 825084,
+            "date": "2026-05-20",
+            "opponent": "Giants",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 518876,
+                "pitcherName": "Merrill Kelly",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "San Francisco Giants",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 641816,
+                "pitcherName": "Tyler Mahle",
+                "teamName": "San Francisco Giants",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 2
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 3
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 825083,
+            "date": "2026-05-21",
+            "opponent": "Rockies",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 593958,
+                "pitcherName": "Eduardo Rodriguez",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 688642,
+                "pitcherName": "Zach Agnos",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 825082,
+            "date": "2026-05-22",
+            "opponent": "Rockies",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 2,
+            "runsAgainst": 3,
+            "starters": {
+              "team": {
+                "pitcherId": 647336,
+                "pitcherName": "Michael Soroka",
+                "teamName": "Arizona Diamondbacks",
+                "opponentName": "Colorado Rockies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 608372,
+                "pitcherName": "Tomoyuki Sugano",
+                "teamName": "Colorado Rockies",
+                "opponentName": "Arizona Diamondbacks",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Mixed",
+                "tone": "info"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Blew",
+                "tone": "negative"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
             "gamePk": 825080,
             "date": "2026-05-23",
             "opponent": "Rockies",
@@ -25429,6 +36714,421 @@ export const rawGames = [
           }
         ],
         "home": [
+          {
+            "gamePk": 823138,
+            "date": "2026-05-17",
+            "opponent": "Padres",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 3,
+            "runsAgainst": 8,
+            "starters": {
+              "team": {
+                "pitcherId": 669923,
+                "pitcherName": "George Kirby",
+                "teamName": "Seattle Mariners",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 608337,
+                "pitcherName": "Lucas Giolito",
+                "teamName": "San Diego Padres",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Late cash",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 3
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823137,
+            "date": "2026-05-18",
+            "opponent": "White Sox",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 693433,
+                "pitcherName": "Bryan Woo",
+                "teamName": "Seattle Mariners",
+                "opponentName": "Chicago White Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 702273,
+                "pitcherName": "Noah Schultz",
+                "teamName": "Chicago White Sox",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 3
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823136,
+            "date": "2026-05-19",
+            "opponent": "White Sox",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 2,
+            "starters": {
+              "team": {
+                "pitcherId": 682243,
+                "pitcherName": "Bryce Miller",
+                "teamName": "Seattle Mariners",
+                "opponentName": "Chicago White Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 641743,
+                "pitcherName": "Anthony Kay",
+                "teamName": "Chicago White Sox",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Quiet",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Blew",
+                "tone": "negative"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823134,
+            "date": "2026-05-20",
+            "opponent": "White Sox",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 676106,
+                "pitcherName": "Emerson Hancock",
+                "teamName": "Seattle Mariners",
+                "opponentName": "Chicago White Sox",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 680732,
+                "pitcherName": "Sean Burke",
+                "teamName": "Chicago White Sox",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Late cash",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 1
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 3
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 824110,
+            "date": "2026-05-22",
+            "opponent": "Royals",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 2,
+            "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 669302,
+                "pitcherName": "Logan Gilbert",
+                "teamName": "Seattle Mariners",
+                "opponentName": "Kansas City Royals",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 702070,
+                "pitcherName": "Noah Cameron",
+                "teamName": "Kansas City Royals",
+                "opponentName": "Seattle Mariners",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 2
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
           {
             "gamePk": 824109,
             "date": "2026-05-23",
@@ -26256,8 +37956,8 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -205 / +1.5 -191",
-    "total": "o8 -115 / u8 -105",
+    "spread": "+1.5 -205 / +1.5 -190",
+    "total": "o8 -114 / u8.5 -124",
     "moneyline": "Phillies even / Dodgers -118",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/phillies-vs-dodgers",
@@ -26831,6 +38531,421 @@ export const rawGames = [
       "recentInningHistory": {
         "away": [
           {
+            "gamePk": 823381,
+            "date": "2026-05-17",
+            "opponent": "Pirates",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 6,
+            "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 554430,
+                "pitcherName": "Zack Wheeler",
+                "teamName": "Philadelphia Phillies",
+                "opponentName": "Pittsburgh Pirates",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 694973,
+                "pitcherName": "Paul Skenes",
+                "teamName": "Pittsburgh Pirates",
+                "opponentName": "Philadelphia Phillies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 2
+              },
+              {
+                "inning": 6,
+                "runs": 3
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 1
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823465,
+            "date": "2026-05-18",
+            "opponent": "Reds",
+            "venueRole": "home",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 691725,
+                "pitcherName": "Andrew Painter",
+                "teamName": "Philadelphia Phillies",
+                "opponentName": "Cincinnati Reds",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 666157,
+                "pitcherName": "Nick Lodolo",
+                "teamName": "Cincinnati Reds",
+                "opponentName": "Philadelphia Phillies",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Late cash",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Won late",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 2
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823464,
+            "date": "2026-05-19",
+            "opponent": "Reds",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 666200,
+                "pitcherName": "Jesús Luzardo",
+                "teamName": "Philadelphia Phillies",
+                "opponentName": "Cincinnati Reds",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 695505,
+                "pitcherName": "Chase Burns",
+                "teamName": "Cincinnati Reds",
+                "opponentName": "Philadelphia Phillies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Quiet",
+                "tone": "negative"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 1
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823462,
+            "date": "2026-05-20",
+            "opponent": "Reds",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 4,
+            "runsAgainst": 9,
+            "starters": {
+              "team": {
+                "pitcherId": 605400,
+                "pitcherName": "Aaron Nola",
+                "teamName": "Philadelphia Phillies",
+                "opponentName": "Cincinnati Reds",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 671096,
+                "pitcherName": "Andrew Abbott",
+                "teamName": "Cincinnati Reds",
+                "opponentName": "Philadelphia Phillies",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Late cash",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 3
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823461,
+            "date": "2026-05-22",
+            "opponent": "Guardians",
+            "venueRole": "home",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 650911,
+                "pitcherName": "Cristopher Sánchez",
+                "teamName": "Philadelphia Phillies",
+                "opponentName": "Cleveland Guardians",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 668909,
+                "pitcherName": "Gavin Williams",
+                "teamName": "Cleveland Guardians",
+                "opponentName": "Philadelphia Phillies",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Lost late",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
             "gamePk": 823458,
             "date": "2026-05-23",
             "opponent": "Guardians",
@@ -27247,6 +39362,421 @@ export const rawGames = [
           }
         ],
         "home": [
+          {
+            "gamePk": 824034,
+            "date": "2026-05-17",
+            "opponent": "Angels",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 10,
+            "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 808963,
+                "pitcherName": "Roki Sasaki",
+                "teamName": "Los Angeles Dodgers",
+                "opponentName": "Los Angeles Angels",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 680570,
+                "pitcherName": "Grayson Rodriguez",
+                "teamName": "Los Angeles Angels",
+                "opponentName": "Los Angeles Dodgers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Cashed",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 2
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 5
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 3
+              }
+            ]
+          },
+          {
+            "gamePk": 823301,
+            "date": "2026-05-18",
+            "opponent": "Padres",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 0,
+            "runsAgainst": 1,
+            "starters": {
+              "team": {
+                "pitcherId": 808967,
+                "pitcherName": "Yoshinobu Yamamoto",
+                "teamName": "Los Angeles Dodgers",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 650633,
+                "pitcherName": "Michael King",
+                "teamName": "San Diego Padres",
+                "opponentName": "Los Angeles Dodgers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
+          {
+            "gamePk": 823302,
+            "date": "2026-05-19",
+            "opponent": "Padres",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 5,
+            "runsAgainst": 4,
+            "starters": {
+              "team": {
+                "pitcherId": 686218,
+                "pitcherName": "Emmet Sheehan",
+                "teamName": "Los Angeles Dodgers",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 656288,
+                "pitcherName": "Griffin Canning",
+                "teamName": "San Diego Padres",
+                "opponentName": "Los Angeles Dodgers",
+                "firstInningRunsAllowed": 2,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Cracked",
+                "tone": "negative"
+              },
+              "relief": {
+                "label": "Rescued",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 2
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 1
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 823299,
+            "date": "2026-05-20",
+            "opponent": "Padres",
+            "venueRole": "road",
+            "result": "W",
+            "runsFor": 4,
+            "runsAgainst": 0,
+            "starters": {
+              "team": {
+                "pitcherId": 660271,
+                "pitcherName": "Shohei Ohtani",
+                "teamName": "Los Angeles Dodgers",
+                "opponentName": "San Diego Padres",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              },
+              "opponent": {
+                "pitcherId": 681190,
+                "pitcherName": "Randy Vásquez",
+                "teamName": "San Diego Padres",
+                "opponentName": "Los Angeles Dodgers",
+                "firstInningRunsAllowed": 1,
+                "firstInningOutcome": "RFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Won",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "starter": {
+                "label": "Met",
+                "tone": "positive"
+              },
+              "relief": {
+                "label": "Held",
+                "tone": "positive"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 1
+              },
+              {
+                "inning": 2,
+                "runs": 1
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 1
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 0
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 1
+              }
+            ]
+          },
+          {
+            "gamePk": 823788,
+            "date": "2026-05-22",
+            "opponent": "Brewers",
+            "venueRole": "road",
+            "result": "L",
+            "runsFor": 1,
+            "runsAgainst": 5,
+            "starters": {
+              "team": {
+                "pitcherId": 680736,
+                "pitcherName": "Justin Wrobleski",
+                "teamName": "Los Angeles Dodgers",
+                "opponentName": "Milwaukee Brewers",
+                "firstInningRunsAllowed": 4,
+                "firstInningOutcome": "RFI"
+              },
+              "opponent": {
+                "pitcherId": 701656,
+                "pitcherName": "Logan Henderson",
+                "teamName": "Milwaukee Brewers",
+                "opponentName": "Los Angeles Dodgers",
+                "firstInningRunsAllowed": 0,
+                "firstInningOutcome": "NRFI"
+              }
+            },
+            "storyAxes": {
+              "market": {
+                "label": "Lost",
+                "tone": "info"
+              },
+              "hitters": {
+                "label": "Flat",
+                "tone": "warning"
+              },
+              "starter": {
+                "label": "Mixed",
+                "tone": "warning"
+              },
+              "relief": {
+                "label": "No rescue",
+                "tone": "warning"
+              }
+            },
+            "innings": [
+              {
+                "inning": 1,
+                "runs": 0
+              },
+              {
+                "inning": 2,
+                "runs": 0
+              },
+              {
+                "inning": 3,
+                "runs": 0
+              },
+              {
+                "inning": 4,
+                "runs": 0
+              },
+              {
+                "inning": 5,
+                "runs": 0
+              },
+              {
+                "inning": 6,
+                "runs": 0
+              },
+              {
+                "inning": 7,
+                "runs": 1
+              },
+              {
+                "inning": 8,
+                "runs": 0
+              },
+              {
+                "inning": 9,
+                "runs": 0
+              }
+            ]
+          },
           {
             "gamePk": 823787,
             "date": "2026-05-23",

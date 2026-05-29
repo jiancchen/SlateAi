@@ -1809,7 +1809,7 @@ const buildSeriesEarlyPhaseByTeam = ({ date, games, lookbackDays = 5, limit = 3 
   )
 }
 
-const buildMatchupInningHistoryByTeam = ({ date, games, limit = 5, maxInnings = 12 }) => {
+const buildMatchupInningHistoryByTeam = ({ date, games, limit = 10, maxInnings = 12 }) => {
   const matchupPairs = [
     ...new Map(
       games
@@ -2009,7 +2009,7 @@ const buildMatchupInningHistoryByTeam = ({ date, games, limit = 5, maxInnings = 
   )
 }
 
-const buildRecentInningHistoryByTeam = ({ date, games, limit = 5, maxInnings = 12 }) => {
+const buildRecentInningHistoryByTeam = ({ date, games, limit = 10, maxInnings = 12 }) => {
   const teams = [...new Set(games.flatMap((game) => [game.away, game.home]).filter(Boolean))]
 
   if (!teams.length) return {}

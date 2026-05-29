@@ -24,6 +24,7 @@ import {
 import {
   defaultSlateDayId,
   fallbackSlateDayManifest,
+  loadMlbHomeRunBoardData,
   loadMlbPropBoardData,
   searchSlateGamesData,
   loadSlateDayData,
@@ -748,13 +749,60 @@ const buildPitcherTypeLabel = (pitcher: AnyRecord = {}, fallbackType = '') => {
   return fallbackType || 'Unknown lane'
 }
 
+const buildPerformancePulse = (teamState?: AnyRecord | null, teamContext?: AnyRecord | null) => {
+  const recentGamesSample = Number(teamState?.gamesSample || 0)
+  const recentWinPct = Number(teamState?.winPctLast5)
+  const recentRunDiffPerGame = Number(teamState?.runDiffLast5)
+  const seasonWins = Number(teamContext?.wins)
+  const seasonLosses = Number(teamContext?.losses)
+  const seasonGames = seasonWins + seasonLosses
+  const seasonWinPct =
+    Number.isFinite(Number(teamContext?.winningPercentage))
+      ? Number(teamContext?.winningPercentage)
+      : seasonGames > 0
+        ? seasonWins / seasonGames
+        : Number.NaN
+  const seasonRunDiffPerGame =
+    seasonGames > 0 && Number.isFinite(Number(teamContext?.runDifferential))
+      ? Number(teamContext?.runDifferential) / seasonGames
+      : Number.NaN
+
+  if (
+    recentGamesSample <= 0 ||
+    !Number.isFinite(recentWinPct) ||
+    !Number.isFinite(recentRunDiffPerGame) ||
+    !Number.isFinite(seasonWinPct) ||
+    !Number.isFinite(seasonRunDiffPerGame)
+  ) {
+    return null
+  }
+
+  const toPerformanceScore = (winPct: number, runDiffPerGame: number) =>
+    Math.round(clamp(50 + (winPct - 0.5) * 60 + runDiffPerGame * 5, 1, 99))
+
+  const recentScore = toPerformanceScore(recentWinPct, recentRunDiffPerGame)
+  const seasonScore = toPerformanceScore(seasonWinPct, seasonRunDiffPerGame)
+  const ratio = seasonScore > 0 ? recentScore / seasonScore : null
+
+  if (!Number.isFinite(ratio)) return null
+
+  return {
+    recentGamesSample,
+    recentScore,
+    seasonScore,
+    ratio
+  }
+}
+
 const buildTeamSnapshotChips = ({
   teamState,
+  teamContext,
   lineupConversion,
   offenseContext,
   firstInningTeam
 }: {
   teamState?: AnyRecord | null
+  teamContext?: AnyRecord | null
   lineupConversion?: AnyRecord | null
   offenseContext?: AnyRecord | null
   firstInningTeam?: AnyRecord | null
@@ -767,6 +815,14 @@ const buildTeamSnapshotChips = ({
     chips.push({
       label: `Last ${gamesSample}`,
       value: `${recordLabel || 'n/a'} · ${formatSignedNumber(teamState.runDiffLast5, 1)} RD/G`
+    })
+  }
+
+  const performancePulse = buildPerformancePulse(teamState, teamContext)
+  if (performancePulse) {
+    chips.push({
+      label: `Perf ${performancePulse.recentGamesSample}/Szn`,
+      value: `${performancePulse.recentScore}/${performancePulse.seasonScore} · x${formatNumber(performancePulse.ratio, 2)}`
     })
   }
 
@@ -1064,18 +1120,44 @@ const renderInningHistoryTable = (
   teamName: string,
   headerLabel: string,
   games: AnyRecord[] = [],
-  highlightPitcherName = ''
+  highlightPitcherName = '',
+  historyWindow: 5 | 10 = 5,
+  onHistoryWindowChange: ((nextWindow: 5 | 10) => void) | null = null
 ) => {
   if (!games.length) return null
 
+  const visibleCount = Math.min(games.length, historyWindow)
+  const visibleGames = games.slice(-visibleCount)
   const maxInning = Math.max(
     9,
-    ...games.map((game) => Array.isArray(game.innings) ? game.innings.length : 0)
+    ...visibleGames.map((game) => Array.isArray(game.innings) ? game.innings.length : 0)
   )
   const gridTemplateColumns = `84px repeat(${maxInning}, minmax(22px, 1fr)) 28px`
+  const canToggleWindow = games.length > 5 && typeof onHistoryWindowChange === 'function'
 
   return (
     <section className="matchup-history-block" aria-label={`${teamName} ${headerLabel} inning history`}>
+      {canToggleWindow ? (
+        <div className="matchup-history-toolbar">
+          <span className="matchup-history-toggle-label">Window</span>
+          <div className="matchup-history-toggle" role="group" aria-label={`${teamName} ${headerLabel} window toggle`}>
+            {[5, 10].map((windowSize) => {
+              const typedWindow = windowSize as 5 | 10
+              return (
+                <button
+                  key={`${teamName}-${headerLabel}-window-${windowSize}`}
+                  type="button"
+                  className={typedWindow === historyWindow ? 'active' : ''}
+                  onClick={() => onHistoryWindowChange(typedWindow)}
+                  aria-pressed={typedWindow === historyWindow}
+                >
+                  {windowSize}
+                </button>
+              )
+            })}
+          </div>
+        </div>
+      ) : null}
       <div className="matchup-history-scroll">
         <div className="matchup-history-table">
           <div className="matchup-history-row matchup-history-header" style={{ gridTemplateColumns }}>
@@ -1087,7 +1169,7 @@ const renderInningHistoryTable = (
             ))}
             <span className="matchup-history-cell heading">R</span>
           </div>
-          {games.map((game, index) => {
+          {visibleGames.map((game, index) => {
             const venueLabel = game.venueRole === 'road' ? '@' : 'vs'
             const scoreLabel =
               Number.isFinite(Number(game.runsFor)) && Number.isFinite(Number(game.runsAgainst))
@@ -1135,7 +1217,7 @@ const renderInningHistoryTable = (
           })}
         </div>
       </div>
-      {renderMatchupStoryChart(teamName, headerLabel, games)}
+      {renderMatchupStoryChart(teamName, headerLabel, visibleGames)}
     </section>
   )
 }
@@ -1144,11 +1226,18 @@ const renderMatchupInningHistory = (
   teamName: string,
   opponentName: string,
   games: AnyRecord[] = [],
-  highlightPitcherName = ''
-) => renderInningHistoryTable(teamName, `vs ${opponentName}`, games, highlightPitcherName)
+  highlightPitcherName = '',
+  historyWindow: 5 | 10 = 5,
+  onHistoryWindowChange: ((nextWindow: 5 | 10) => void) | null = null
+) => renderInningHistoryTable(teamName, `vs ${opponentName}`, games, highlightPitcherName, historyWindow, onHistoryWindowChange)
 
-const renderRecentInningHistory = (teamName: string, games: AnyRecord[] = []) =>
-  renderInningHistoryTable(teamName, 'Last 5 overall', games)
+const renderRecentInningHistory = (
+  teamName: string,
+  games: AnyRecord[] = [],
+  historyWindow: 5 | 10 = 5,
+  onHistoryWindowChange: ((nextWindow: 5 | 10) => void) | null = null
+) =>
+  renderInningHistoryTable(teamName, `Last ${Math.min(historyWindow, games.length)} overall`, games, '', historyWindow, onHistoryWindowChange)
 
 const buildMlbGameStory = ({
   game,
@@ -1729,6 +1818,7 @@ function App() {
   const [loadedGameDetailsByDay, setLoadedGameDetailsByDay] = useState<Record<string, Record<string, AnyRecord>>>({})
   const [loadingGameDetailsByDay, setLoadingGameDetailsByDay] = useState<Record<string, Record<string, boolean>>>({})
   const [loadedPropBoardsByDay, setLoadedPropBoardsByDay] = useState<Record<string, AnyRecord | null>>({})
+  const [loadedHomeRunBoardsByDay, setLoadedHomeRunBoardsByDay] = useState<Record<string, AnyRecord | null>>({})
   const [loadingSlateIds, setLoadingSlateIds] = useState<Record<string, boolean>>({})
   const [historyArchive, setHistoryArchive] = useState<HistoryEntry[]>([])
   const [historyLoaded, setHistoryLoaded] = useState(false)
@@ -1740,6 +1830,8 @@ function App() {
   const [loadingStoryGamesByDay, setLoadingStoryGamesByDay] = useState<Record<string, Record<number, boolean>>>({})
   const [activeStoryId, setActiveStoryId] = useState('')
   const [selectedStoryGamePk, setSelectedStoryGamePk] = useState<number | null>(null)
+  const [mlbHistoryWindowByKey, setMlbHistoryWindowByKey] = useState<Record<string, 5 | 10>>({})
+  const [activeValueScopeByDay, setActiveValueScopeByDay] = useState<Record<string, string>>({})
 
   useEffect(() => {
     const updateClock = () => setPacificClock(getPacificClock())
@@ -2027,10 +2119,26 @@ function App() {
       })
   }, [activeDayId, games, loadedPropBoardsByDay])
 
+  useEffect(() => {
+    if (!activeDayId) return
+    if (!games.some((game: AnyRecord) => game.league === 'MLB')) return
+    if (loadedHomeRunBoardsByDay[activeDayId] !== undefined) return
+
+    loadMlbHomeRunBoardData(activeDayId)
+      .then((homeRunPayload) => {
+        setLoadedHomeRunBoardsByDay((current) => ({ ...current, [activeDayId]: homeRunPayload }))
+      })
+      .catch((error) => {
+        console.error(`Failed to load MLB home-run board for ${activeDayId}`, error)
+        setLoadedHomeRunBoardsByDay((current) => ({ ...current, [activeDayId]: null }))
+      })
+  }, [activeDayId, games, loadedHomeRunBoardsByDay])
+
   const activePropBoardByGame = useMemo(
     () => buildTrackedPropBoardByGame(loadedPropBoardsByDay[activeDayId] ?? null),
     [activeDayId, loadedPropBoardsByDay]
   )
+  const activeHomeRunBoard = loadedHomeRunBoardsByDay[activeDayId] ?? null
 
   const selectedGameDetail = loadedGameDetailsByDay[activeDayId]?.[selectedGameId] ?? null
   const selectedGame =
@@ -2296,13 +2404,18 @@ function App() {
           if ((right.confidence ?? 0) !== (left.confidence ?? 0)) return (right.confidence ?? 0) - (left.confidence ?? 0)
           return (right.expectedValue ?? 0) - (left.expectedValue ?? 0)
         })
-        .map((prop: AnyRecord, index: number) => ({
-          ...prop,
-          rank: index + 1,
-          game:
+        .map((prop: AnyRecord, index: number) => {
+          const matchedGame =
             games.find((game: AnyRecord) => game.id === prop.gameId) ??
             ({ id: prop.gameId, league: 'MLB', start: prop.start, stage: prop.stage, startMinutes: 0 } as AnyRecord)
-        }))
+
+          return {
+            ...prop,
+            rank: index + 1,
+            league: prop.league || matchedGame.league || 'MLB',
+            game: matchedGame
+          }
+        })
     }
     return rankMlbPlayerProps(games)
   }, [activePropBoardByGame, games])
@@ -2886,37 +2999,215 @@ function App() {
       )
       .sort((left: AnyRecord, right: AnyRecord) => right.sortConfidence - left.sortConfidence || right.sortEdge - left.sortEdge)
 
+    const totalBaseRows = propCatalogEntries
+      .filter((entry: AnyRecord) => entry.league === 'MLB' && !entry.invalid && entry.raw?.propType === 'totalBases')
+      .sort((left: AnyRecord, right: AnyRecord) => right.sortConfidence - left.sortConfidence || right.sortEdge - left.sortEdge)
+
     const strikeoutRows = propCatalogEntries
       .filter(
         (entry: AnyRecord) =>
           entry.league === 'MLB' &&
           !entry.invalid &&
           entry.raw?.propType === 'pitcherStrikeouts' &&
-          entry.raw?.lineupStatus === 'posted' &&
-          Number(entry.confidence) >= 72
+          Number(entry.confidence) >= 68
       )
       .sort((left: AnyRecord, right: AnyRecord) => right.sortConfidence - left.sortConfidence || right.sortEdge - left.sortEdge)
 
-    const homeRunRows = mlbGames
+    const strikeoutOverRows = strikeoutRows.filter((entry: AnyRecord) => /over/i.test(String(entry.raw?.marketLabel || entry.title || '')))
+    const strikeoutUnderRows = strikeoutRows.filter((entry: AnyRecord) => /under/i.test(String(entry.raw?.marketLabel || entry.title || '')))
+
+    const battingImpactRows = propCatalogEntries
+      .filter(
+        (entry: AnyRecord) =>
+          entry.league === 'MLB' &&
+          !entry.invalid &&
+          ['hits', 'rbi', 'hitRunRbi', 'hitsRunsRbis', 'runs', 'walks', 'singles'].includes(String(entry.raw?.propType || ''))
+      )
+      .sort((left: AnyRecord, right: AnyRecord) => right.sortConfidence - left.sortConfidence || right.sortEdge - left.sortEdge)
+
+    const hitRunRbiRows = battingImpactRows.filter((entry: AnyRecord) =>
+      ['hits', 'rbi', 'hitRunRbi', 'hitsRunsRbis', 'runs'].includes(String(entry.raw?.propType || ''))
+    )
+
+    const battingImpactFallbackRows = battingImpactRows.filter((entry: AnyRecord) =>
+      ['walks', 'singles'].includes(String(entry.raw?.propType || ''))
+    )
+
+    const battingProductionRows = mlbGames
       .flatMap((game: AnyRecord) => {
-        const likely = Array.isArray(game.homeRunTargets?.likely) ? game.homeRunTargets.likely : []
-        const possible = Array.isArray(game.homeRunTargets?.possible) ? game.homeRunTargets.possible : []
-        return [...likely, ...possible].map((target: AnyRecord) => ({
+        const gameDetail = loadedGameDetailsByDay[activeDayId]?.[game.id] ?? null
+        const lineupBoard = gameDetail?.lineupBoard ?? null
+        if (!lineupBoard) return []
+
+        return (['away', 'home'] as const).flatMap((sideKey) => {
+          const team = lineupBoard?.[sideKey] ?? {}
+          const lineup = Array.isArray(team.lineup) ? team.lineup : []
+          const lineupStatus = lineupBoard?.status?.[sideKey] || 'partial'
+          const opposingHand = team.opposingStarter?.handedness || team.opposingStarter?.throws || ''
+          const aggregate = team.aggregate || {}
+
+          return lineup.map((player: AnyRecord) => {
+            const recentXops = computeXops(player.recent)
+            const splitXops = computeXops(player.split)
+            const seasonXops = computeXops(player.season)
+            const statcast = player.statcastTrend || {}
+            const opponentContext = player.opponentContext || {}
+            const metrics = player.metrics || {}
+            const slot = Number(player.slot || 9)
+            const slotBonus = Math.max(0, 12 - (slot - 1) * 1.4)
+            const recentXwoba = Number(statcast.rolling7Xwoba || 0)
+            const recentHitRate = Number(player.recent?.hitRate || 0)
+            const splitHitRate = Number(player.split?.hitRate || 0)
+            const seasonHitRate = Number(player.season?.hitRate || 0)
+            const recentObp = Number(player.recent?.obp || 0)
+            const splitObp = Number(player.split?.obp || 0)
+            const seasonObp = Number(player.season?.obp || 0)
+            const recentTbRate = Number(player.recent?.totalBasesRate || 0)
+            const splitTbRate = Number(player.split?.totalBasesRate || 0)
+            const seasonTbRate = Number(player.season?.totalBasesRate || 0)
+            const weightedHitRate = recentHitRate * 0.45 + splitHitRate * 0.35 + seasonHitRate * 0.2
+            const weightedObp = recentObp * 0.45 + splitObp * 0.35 + seasonObp * 0.2
+            const weightedTbRate = recentTbRate * 0.45 + splitTbRate * 0.35 + seasonTbRate * 0.2
+            const projectedPa = clamp(4.85 - (slot - 1) * 0.11, 3.75, 4.9)
+            const lineupPressure = Number(aggregate.overallPressureIndex || 50) / 100
+            const matchupPressure = clamp(Number(metrics.matchupScore || 50) / 100, 0.2, 1.2)
+            const pitchFitPressure = clamp(0.85 + Number(metrics.pitchTypeFitScore || 50) / 200, 0.65, 1.35)
+            const runSlotFactor = slot === 1 ? 1.12 : slot <= 3 ? 1.06 : slot <= 5 ? 1 : 0.9
+            const rbiSlotFactor = slot === 1 ? 0.78 : slot <= 3 ? 1.12 : slot <= 5 ? 1.02 : 0.88
+            const expectedHits = projectedPa * weightedHitRate
+            const expectedRuns =
+              projectedPa *
+              (
+                weightedObp * 0.22 +
+                recentXwoba * 0.1 +
+                lineupPressure * 0.06
+              ) *
+              matchupPressure *
+              runSlotFactor
+            const expectedRbis =
+              projectedPa *
+              (
+                weightedTbRate * 0.16 +
+                recentXwoba * 0.08 +
+                weightedHitRate * 0.08 +
+                lineupPressure * 0.04
+              ) *
+              matchupPressure *
+              pitchFitPressure *
+              rbiSlotFactor
+            const expectedHrr = expectedHits + expectedRuns + expectedRbis
+            const productionScore =
+              (Number(recentXops || 0) * 140) +
+              (Number(splitXops || 0) * 120) +
+              (Number(seasonXops || 0) * 70) +
+              (recentXwoba * 55) +
+              (Number(metrics.contactScore || 0) * 0.12) +
+              (Number(metrics.patienceScore || 0) * 0.1) +
+              (Number(metrics.formScore || 0) * 0.16) +
+              (Number(metrics.matchupScore || 0) * 0.16) +
+              (Number(metrics.pitchTypeFitScore || 0) * 0.08) +
+              (Number(opponentContext.hitsPerPaWeightDeltaLast10 || 0) * 120) +
+              (Number(opponentContext.totalBasesPerPaWeightDeltaLast10 || 0) * 80) +
+              slotBonus
+
+            const summaryBits = [
+              game.title,
+              `slot ${slot}${player.primaryTag ? ` ${player.primaryTag}` : ''}`,
+              recentXops != null ? `Recent XOPS ${formatSlashMetric(recentXops)}` : null,
+              splitXops != null ? `Split XOPS ${formatSlashMetric(splitXops)}${opposingHand ? ` vs ${opposingHand}HP` : ''}` : null,
+              Number.isFinite(recentXwoba) && recentXwoba > 0 ? `7d xwOBA ${formatSlashMetric(recentXwoba)}` : null,
+              Number.isFinite(Number(metrics.matchupScore)) ? `matchup ${Math.round(Number(metrics.matchupScore))}` : null,
+              Number.isFinite(Number(metrics.pitchTypeGrade)) ? `fit ${formatSignedNumber(metrics.pitchTypeGrade, 1)}` : null
+            ].filter(Boolean)
+
+            return {
+              id: `impact:${game.id}:${sideKey}:${player.playerId ?? player.name}`,
+              gameId: game.id,
+              league: 'MLB',
+              title: `${player.name} H+R+RBI watch`,
+              summary: summaryBits.join(' · '),
+              confidence: 0,
+              sortConfidence: 0,
+              sortEdge: productionScore,
+              priceLabel: `Exp H ${formatNumber(expectedHits, 2)} · R ${formatNumber(expectedRuns, 2)} · RBI ${formatNumber(expectedRbis, 2)} · Total ${formatNumber(expectedHrr, 2)} · ${lineupStatus} order`,
+              raw: {
+                propType: 'hitRunRbiModel',
+                lineupStatus,
+                productionScore,
+                expectedHits,
+                expectedRuns,
+                expectedRbis,
+                expectedHrr,
+                slot,
+                playerName: player.name
+              }
+            }
+          })
+        })
+      })
+      .sort((left: AnyRecord, right: AnyRecord) => right.sortEdge - left.sortEdge || right.confidence - left.confidence)
+      .map((row: AnyRecord, index: number, allRows: AnyRecord[]) => {
+        const maxEdge = Number(allRows[0]?.sortEdge || 0)
+        const minEdge = Number(allRows[allRows.length - 1]?.sortEdge || maxEdge)
+        const normalizedEdge = maxEdge > minEdge
+          ? clamp((Number(row.sortEdge || 0) - minEdge) / (maxEdge - minEdge), 0, 1)
+          : 0.5
+        const confidence = clamp(Math.round(54 + normalizedEdge * 34), 48, 88)
+        return {
+          ...row,
+          confidence,
+          sortConfidence: confidence
+        }
+      })
+
+    const displayHitRunRbiRows = hitRunRbiRows.length ? hitRunRbiRows : battingProductionRows
+
+    const gameIdByTitle = Object.fromEntries(mlbGames.map((game: AnyRecord) => [game.title, game.id]))
+    const homeRunPayloadRows = Array.isArray(activeHomeRunBoard?.picks) ? activeHomeRunBoard.picks : []
+    const fallbackPerGameRows = mlbGames.flatMap((game: AnyRecord) => {
+      const groupedTargets = [
+        ...(Array.isArray(game.homeRunTargets?.featured) ? game.homeRunTargets.featured : []),
+        ...(Array.isArray(game.homeRunTargets?.likely) ? game.homeRunTargets.likely : []),
+        ...(Array.isArray(game.homeRunTargets?.possible) ? game.homeRunTargets.possible : []),
+        ...(Array.isArray(game.homeRunTargets?.targets) ? game.homeRunTargets.targets : [])
+      ]
+      const seenPlayers = new Set<string>()
+      return groupedTargets
+        .filter((target: AnyRecord) => {
+          const dedupeKey = `${game.id}:${target.playerId ?? target.playerName ?? target.name ?? 'hr'}`
+          if (seenPlayers.has(dedupeKey)) return false
+          seenPlayers.add(dedupeKey)
+          return true
+        })
+        .map((target: AnyRecord) => ({
           ...target,
           gameTitle: game.title,
           gameId: game.id,
           lineupStatus: target.lineupContext?.lineupStatus || 'partial'
         }))
-      })
-      .filter((target: AnyRecord) => hrScoreBandRank(String(target.scoreBand || '')) > 0)
+    })
+
+    const homeRunRows = (homeRunPayloadRows.length ? homeRunPayloadRows : fallbackPerGameRows)
+      .map((target: AnyRecord, index: number) => ({
+        ...target,
+        gameId: target.gameId || gameIdByTitle[target.gameTitle] || null,
+        lineupStatus: target.lineupStatus || target.lineupContext?.lineupStatus || 'partial',
+        rank: Number.isFinite(Number(target.rank)) ? Number(target.rank) : index + 1
+      }))
+      .filter((target: AnyRecord) => target.playerName && hrScoreBandRank(String(target.scoreBand || '')) > 0)
       .sort((left: AnyRecord, right: AnyRecord) => {
         const postedDelta =
           Number(right.lineupStatus === 'posted') - Number(left.lineupStatus === 'posted')
         if (postedDelta) return postedDelta
         const scoreBandDelta = hrScoreBandRank(String(right.scoreBand || '')) - hrScoreBandRank(String(left.scoreBand || ''))
         if (scoreBandDelta) return scoreBandDelta
-        return Number(right.baseScore || 0) - Number(left.baseScore || 0)
+        return Number(right.score || right.baseScore || 0) - Number(left.score || left.baseScore || 0)
       })
+
+    const premiumHomeRunRows = homeRunRows.filter((row: AnyRecord) => String(row.scoreBand || '') === 'premium')
+    const strongHomeRunRows = homeRunRows.filter((row: AnyRecord) => String(row.scoreBand || '') === 'strong')
+    const viableHomeRunRows = homeRunRows.filter((row: AnyRecord) => String(row.scoreBand || '') === 'viable')
+    const postedHomeRunRows = homeRunRows.filter((row: AnyRecord) => row.lineupStatus === 'posted')
 
     const topRows = [...tbBackedRows, ...strikeoutRows, ...totalRows, ...sideRows]
       .sort((left: AnyRecord, right: AnyRecord) => right.sortConfidence - left.sortConfidence || right.sortEdge - left.sortEdge)
@@ -2929,17 +3220,95 @@ function App() {
       mappedKalshiGames: Object.keys(activeKalshiMlbMarketByGame).length,
       sideRows,
       totalRows,
+      totalBaseRows,
       tbBackedRows,
       tbSoftHeatRows,
       strikeoutRows,
+      strikeoutOverRows,
+      strikeoutUnderRows,
+      battingImpactRows,
+      hitRunRbiRows,
+      battingProductionRows,
+      displayHitRunRbiRows,
+      battingImpactFallbackRows,
       homeRunRows,
+      premiumHomeRunRows,
+      strongHomeRunRows,
+      viableHomeRunRows,
+      postedHomeRunRows,
       topRows,
       note:
         fullyPostedGames === mlbGames.length
-          ? 'MLB value board is the strongest current model-edge board for today: price-sensitive sides, strongest totals, TB-backed bats, posted-lineup K overs, an HR watch lane, and live Kalshi pricing context.'
-          : `MLB value board is live, but only ${fullyPostedGames}/${mlbGames.length} games are fully posted. TB-backed rows are the cleanest current prop lane; HR stays a watchlist until the contact-quality lane proves more.`
+          ? 'MLB value center is fully posted for today: sides, totals, first-inning price gaps, TB-backed bats, strikeout O/U, HR watch, and batting-impact lanes.'
+          : `MLB value center is live, but only ${fullyPostedGames}/${mlbGames.length} games are fully posted. TB-backed rows are the cleanest current prop lane; the H+R+RBI board now uses a batting-production ladder when no true market export is present.`
     }
-  }, [activeKalshiMlbMarketByGame, favoriteCatalogEntries, games, propCatalogEntries, totalCatalogEntries])
+  }, [
+    activeDayId,
+    activeHomeRunBoard,
+    activeKalshiMlbMarketByGame,
+    favoriteCatalogEntries,
+    games,
+    loadedGameDetailsByDay,
+    propCatalogEntries,
+    totalCatalogEntries
+  ])
+
+  const mlbFirstInningValueSummary = useMemo(() => {
+    const mlbGames = games.filter((game: AnyRecord) => game.league === 'MLB')
+    if (!mlbGames.length) return null
+
+    const rows = mlbGames
+      .map((game: AnyRecord) => {
+        const firstInning = game.analysis?.mlbProjection?.firstInning
+        const kalshiFirstInning = activeKalshiMlbMarketByGame[game.id]?.firstInning ?? null
+        if (!firstInning || !kalshiFirstInning) return null
+
+        const yesModel = Number(firstInning.yesProbabilityPct)
+        const noModel = Number(firstInning.noProbabilityPct)
+        const yesAsk = Number(kalshiFirstInning.yesAskCents)
+        const noAsk = Number(kalshiFirstInning.noAskCents)
+        if (![yesModel, noModel, yesAsk, noAsk].every(Number.isFinite)) return null
+
+        const yesEdge = yesModel - yesAsk
+        const noEdge = noModel - noAsk
+        const awayRunPct = Number(firstInning.awayRunProbabilityPct)
+        const homeRunPct = Number(firstInning.homeRunProbabilityPct)
+
+        return {
+          gameId: game.id,
+          title: game.title,
+          pick: firstInning.pick,
+          strength: firstInning.strength,
+          yesModel,
+          noModel,
+          yesAsk,
+          noAsk,
+          yesEdge,
+          noEdge,
+          awayRunPct,
+          homeRunPct,
+          summary: firstInning.summary
+        }
+      })
+      .filter(Boolean)
+
+    const yrfiRows = rows
+      .filter((row: AnyRecord) => row.yesEdge > 0)
+      .sort((left: AnyRecord, right: AnyRecord) => right.yesEdge - left.yesEdge || right.yesModel - left.yesModel)
+
+    const nrfiRows = rows
+      .filter((row: AnyRecord) => row.noEdge > 0)
+      .sort((left: AnyRecord, right: AnyRecord) => right.noEdge - left.noEdge || right.noModel - left.noModel)
+
+    return {
+      totalGames: mlbGames.length,
+      mappedGames: rows.length,
+      yrfiRows,
+      nrfiRows,
+      note:
+        'First-inning value uses live Kalshi YES/NO asks against the model YES/NO probabilities. Positive edge means the model is above the current ask.'
+    }
+  }, [activeKalshiMlbMarketByGame, games])
 
   const mlbScalpSummary = useMemo(() => {
     const mlbGames = games.filter((game: AnyRecord) => game.league === 'MLB')
@@ -3038,6 +3407,115 @@ function App() {
         'Scalp board assumes a pregame NRFI / NO entry and asks what happens if the top 1st stays scoreless. When Kalshi first-inning pricing is mapped, it uses the live NO ask; otherwise it falls back to a generic 50c reference entry and a 70c target exit.'
     }
   }, [activeKalshiMlbMarketByGame, games])
+
+  const availableValueScopes = useMemo(() => {
+    const scopes: Array<{ id: string; label: string }> = [{ id: 'all', label: 'All' }]
+
+    if (tennisValueSummary) scopes.push({ id: 'tennis', label: 'Tennis' })
+    if (mlbValueSummary && (mlbValueSummary.sideRows.length || mlbValueSummary.totalRows.length)) {
+      scopes.push({ id: 'mlb-overview', label: 'Overview' })
+    }
+    if (mlbFirstInningValueSummary && (mlbFirstInningValueSummary.yrfiRows.length || mlbFirstInningValueSummary.nrfiRows.length)) {
+      scopes.push({ id: 'mlb-first-inning', label: '1st inning' })
+    }
+    if (mlbValueSummary?.totalBaseRows.length) scopes.push({ id: 'mlb-tb', label: 'TB' })
+    if (mlbValueSummary?.strikeoutRows.length) scopes.push({ id: 'mlb-strikeouts', label: 'K O/U' })
+    if (mlbValueSummary && (mlbValueSummary.hitRunRbiRows.length || mlbValueSummary.battingProductionRows.length)) {
+      scopes.push({ id: 'mlb-impact', label: 'H+R+RBI' })
+    }
+    if (mlbValueSummary?.homeRunRows.length) scopes.push({ id: 'mlb-hr', label: 'HR' })
+    if (mlbScalpSummary?.scalpRows.length) scopes.push({ id: 'mlb-scalp', label: 'Scalp' })
+
+    return scopes
+  }, [mlbFirstInningValueSummary, mlbScalpSummary, mlbValueSummary, tennisValueSummary])
+
+  const activeValueScope = activeValueScopeByDay[activeDayId] ?? 'all'
+  const shouldShowValueScope = (scopeId: string) => activeValueScope === 'all' || activeValueScope === scopeId
+
+  useEffect(() => {
+    const validScopeIds = new Set(availableValueScopes.map((scope) => scope.id))
+    const currentScope = activeValueScopeByDay[activeDayId] ?? 'all'
+    if (validScopeIds.has(currentScope)) return
+    setActiveValueScopeByDay((current) => ({ ...current, [activeDayId]: 'all' }))
+  }, [activeDayId, activeValueScopeByDay, availableValueScopes])
+
+  useEffect(() => {
+    if (activeFilter !== 'Value') return
+    if (!['all', 'mlb-impact'].includes(activeValueScope)) return
+
+    const mlbGameIds = games.filter((game: AnyRecord) => game.league === 'MLB').map((game: AnyRecord) => game.id)
+    mlbGameIds.forEach((gameId: string) => {
+      if (loadedGameDetailsByDay[activeDayId]?.[gameId]) return
+      if (loadingGameDetailsByDay[activeDayId]?.[gameId]) return
+
+      setLoadingGameDetailsByDay((current) => ({
+        ...current,
+        [activeDayId]: { ...(current[activeDayId] || {}), [gameId]: true }
+      }))
+
+      loadSlateGameDetailData(activeDayId, gameId)
+        .then((gameDetail) => {
+          setLoadedGameDetailsByDay((current) => ({
+            ...current,
+            [activeDayId]: { ...(current[activeDayId] || {}), [gameId]: gameDetail as AnyRecord }
+          }))
+        })
+        .catch((error) => {
+          console.error(`Failed to preload MLB impact detail ${activeDayId}/${gameId}`, error)
+        })
+        .finally(() => {
+          setLoadingGameDetailsByDay((current) => ({
+            ...current,
+            [activeDayId]: { ...(current[activeDayId] || {}), [gameId]: false }
+          }))
+        })
+    })
+  }, [activeDayId, activeFilter, activeValueScope, games, loadedGameDetailsByDay, loadingGameDetailsByDay])
+
+  useEffect(() => {
+    if (activeFilter !== 'Value') return
+    if (activeValueScope !== 'mlb-hr') return
+    if (!mlbValueSummary?.homeRunRows?.length) return
+
+    const topHrGameIds = mlbValueSummary.homeRunRows
+      .slice(0, 10)
+      .map((row: AnyRecord) => row.gameId)
+      .filter((gameId: string | null) => Boolean(gameId))
+
+    topHrGameIds.forEach((gameId: string) => {
+      if (loadedGameDetailsByDay[activeDayId]?.[gameId]) return
+      if (loadingGameDetailsByDay[activeDayId]?.[gameId]) return
+
+      setLoadingGameDetailsByDay((current) => ({
+        ...current,
+        [activeDayId]: { ...(current[activeDayId] || {}), [gameId]: true }
+      }))
+
+      loadSlateGameDetailData(activeDayId, gameId)
+        .then((gameDetail) => {
+          setLoadedGameDetailsByDay((current) => ({
+            ...current,
+            [activeDayId]: { ...(current[activeDayId] || {}), [gameId]: gameDetail as AnyRecord }
+          }))
+        })
+        .catch((error) => {
+          console.error(`Failed to preload MLB HR detail ${activeDayId}/${gameId}`, error)
+        })
+        .finally(() => {
+          setLoadingGameDetailsByDay((current) => ({
+            ...current,
+            [activeDayId]: { ...(current[activeDayId] || {}), [gameId]: false }
+          }))
+        })
+    })
+  }, [
+    activeDayId,
+    activeFilter,
+    activeValueScope,
+    loadedGameDetailsByDay,
+    loadingGameDetailsByDay,
+    mlbValueSummary?.homeRunRows
+  ])
 
   const parlayLegs = useMemo(() => {
     return Object.entries(selectedPicks)
@@ -3311,12 +3789,14 @@ function App() {
     const homeFirstInningTeam = game.stateContext?.firstInningTeam?.home ?? null
     const awaySnapshotChips = buildTeamSnapshotChips({
       teamState: awayTeamState,
+      teamContext: game.teamContext?.away ?? null,
       lineupConversion: awayLineupConversion,
       offenseContext: game.offenseContext?.away ?? null,
       firstInningTeam: awayFirstInningTeam
     })
     const homeSnapshotChips = buildTeamSnapshotChips({
       teamState: homeTeamState,
+      teamContext: game.teamContext?.home ?? null,
       lineupConversion: homeLineupConversion,
       offenseContext: game.offenseContext?.home ?? null,
       firstInningTeam: homeFirstInningTeam
@@ -3327,6 +3807,19 @@ function App() {
     const homeRecentInningHistory = game.stateContext?.recentInningHistory?.home ?? []
     const awayMatchupHistory = game.stateContext?.matchupInningHistory?.away ?? []
     const homeMatchupHistory = game.stateContext?.matchupInningHistory?.home ?? []
+    const historyScopeKey = `${activeDayId}:${game.gamePk || `${awayTeam}-${homeTeam}`}`
+    const getMlbHistoryWindow = (sectionKey: string, games: AnyRecord[]) => {
+      const storedWindow = mlbHistoryWindowByKey[sectionKey] ?? 5
+      if (storedWindow === 10 && games.length <= 5) return 5
+      return storedWindow
+    }
+    const updateMlbHistoryWindow = (sectionKey: string, nextWindow: 5 | 10) => {
+      setMlbHistoryWindowByKey((current) => ({ ...current, [sectionKey]: nextWindow }))
+    }
+    const awayRecentHistoryKey = `${historyScopeKey}:away:recent`
+    const awayMatchupHistoryKey = `${historyScopeKey}:away:matchup`
+    const homeRecentHistoryKey = `${historyScopeKey}:home:recent`
+    const homeMatchupHistoryKey = `${historyScopeKey}:home:matchup`
     const gameStory = buildMlbGameStory({ game, projection, awayTeam, homeTeam })
     const totals = projection?.totals
     const formatKalshiQuote = (row: AnyRecord | null | undefined) => {
@@ -3517,8 +4010,20 @@ function App() {
               </div>
               <span className="builder-status-pill open">{lineupStatusLabel(game.lineupBoard?.status?.away)}</span>
             </div>
-            {renderRecentInningHistory(awayTeam, awayRecentInningHistory)}
-            {renderMatchupInningHistory(awayTeam, homeTeam, awayMatchupHistory, awayStarter.headline.replace(/\s*\([LR?]HP\)$/, ''))}
+            {renderRecentInningHistory(
+              awayTeam,
+              awayRecentInningHistory,
+              getMlbHistoryWindow(awayRecentHistoryKey, awayRecentInningHistory),
+              (nextWindow) => updateMlbHistoryWindow(awayRecentHistoryKey, nextWindow)
+            )}
+            {renderMatchupInningHistory(
+              awayTeam,
+              homeTeam,
+              awayMatchupHistory,
+              awayStarter.headline.replace(/\s*\([LR?]HP\)$/, ''),
+              getMlbHistoryWindow(awayMatchupHistoryKey, awayMatchupHistory),
+              (nextWindow) => updateMlbHistoryWindow(awayMatchupHistoryKey, nextWindow)
+            )}
             <div className="pitcher-summary-block">
               <strong className="pitcher-summary-headline">{awayStarter.headline}</strong>
               <p className="pitcher-summary-line">{awayStarter.primary}</p>
@@ -3617,8 +4122,20 @@ function App() {
               </div>
               <span className="builder-status-pill open">{lineupStatusLabel(game.lineupBoard?.status?.home)}</span>
             </div>
-            {renderRecentInningHistory(homeTeam, homeRecentInningHistory)}
-            {renderMatchupInningHistory(homeTeam, awayTeam, homeMatchupHistory, homeStarter.headline.replace(/\s*\([LR?]HP\)$/, ''))}
+            {renderRecentInningHistory(
+              homeTeam,
+              homeRecentInningHistory,
+              getMlbHistoryWindow(homeRecentHistoryKey, homeRecentInningHistory),
+              (nextWindow) => updateMlbHistoryWindow(homeRecentHistoryKey, nextWindow)
+            )}
+            {renderMatchupInningHistory(
+              homeTeam,
+              awayTeam,
+              homeMatchupHistory,
+              homeStarter.headline.replace(/\s*\([LR?]HP\)$/, ''),
+              getMlbHistoryWindow(homeMatchupHistoryKey, homeMatchupHistory),
+              (nextWindow) => updateMlbHistoryWindow(homeMatchupHistoryKey, nextWindow)
+            )}
             <div className="pitcher-summary-block">
               <strong className="pitcher-summary-headline">{homeStarter.headline}</strong>
               <p className="pitcher-summary-line">{homeStarter.primary}</p>
@@ -5567,7 +6084,31 @@ function App() {
               ) : activeFilter === 'Value' ? (
                 tennisValueSummary || mlbValueSummary || mlbScalpSummary ? (
                   <>
-                    {tennisValueSummary ? (
+                    {availableValueScopes.length > 1 ? (
+                      <section className="tennis-value-slate-card value-scope-card">
+                        <div className="tennis-value-slate-head">
+                          <div>
+                            <p className="eyebrow">Value board selector</p>
+                            <h3>{activeDayIsoDate} board scope</h3>
+                          </div>
+                          <span>{availableValueScopes.find((scope) => scope.id === activeValueScope)?.label || 'All'}</span>
+                        </div>
+                        <p>Use the scope chips to jump straight to the board you care about instead of scrolling the full stack.</p>
+                        <div className="value-scope-row">
+                          {availableValueScopes.map((scope) => (
+                            <button
+                              key={scope.id}
+                              type="button"
+                              className={`value-scope-chip ${activeValueScope === scope.id ? 'active' : ''}`}
+                              onClick={() => setActiveValueScopeByDay((current) => ({ ...current, [activeDayId]: scope.id }))}
+                            >
+                              {scope.label}
+                            </button>
+                          ))}
+                        </div>
+                      </section>
+                    ) : null}
+                    {tennisValueSummary && shouldShowValueScope('tennis') ? (
                       <section className="tennis-value-slate-card">
                         <div className="tennis-value-slate-head">
                           <div>
@@ -5681,125 +6222,147 @@ function App() {
                         ) : null}
                       </section>
                     ) : null}
-                    {mlbValueSummary ? (
+                    {mlbValueSummary && shouldShowValueScope('mlb-overview') ? (
                       <section className="tennis-value-slate-card">
                         <div className="tennis-value-slate-head">
                           <div>
-                            <p className="eyebrow">MLB value board</p>
-                            <h3>{activeDayIsoDate} strongest current edges</h3>
+                            <p className="eyebrow">MLB value center</p>
+                            <h3>{activeDayIsoDate} board map</h3>
                           </div>
                           <span>{mlbValueSummary.fullyPostedGames}/{mlbValueSummary.totalGames} fully posted</span>
                         </div>
                         <p>{mlbValueSummary.note}</p>
                         <div className="tennis-value-pill-row">
-                          <span>Sides {mlbValueSummary.sideRows.length}</span>
+                          <span>1st inning {(mlbFirstInningValueSummary?.yrfiRows.length || 0) + (mlbFirstInningValueSummary?.nrfiRows.length || 0)}</span>
+                          <span>Side {mlbValueSummary.sideRows.length}</span>
                           <span>Totals {mlbValueSummary.totalRows.length}</span>
-                          <span>TB backed {mlbValueSummary.tbBackedRows.length}</span>
-                          <span>Soft heat {mlbValueSummary.tbSoftHeatRows.length}</span>
-                          <span>Pitcher K {mlbValueSummary.strikeoutRows.length}</span>
-                          <span>HR watch {mlbValueSummary.homeRunRows.length}</span>
+                          <span>TB {mlbValueSummary.totalBaseRows.length}</span>
+                          <span>K O/U {mlbValueSummary.strikeoutRows.length}</span>
+                          <span>H+R+RBI {mlbValueSummary.displayHitRunRbiRows.length}</span>
+                          <span>HR {mlbValueSummary.homeRunRows.length}</span>
                           <span>Kalshi {mlbValueSummary.mappedKalshiGames}</span>
-                          <span>Partials {mlbValueSummary.partialGames}</span>
                         </div>
-                        {mlbValueSummary.topRows.length ? (
+                        {mlbValueSummary.sideRows.length || mlbValueSummary.totalRows.length ? (
                           <div className="tennis-value-list">
-                            <div className="tennis-value-section-label">Best current board edges</div>
-                            {mlbValueSummary.topRows.slice(0, 8).map((row: AnyRecord) => (
-                              <button
-                                key={`${row.id}-mlb-value`}
-                                type="button"
-                                className="tennis-value-row"
-                                onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
-                              >
-                                <span>
-                                  <strong>{row.title}</strong>
-                                  <small>{row.subtitle} · {row.priceLabel || row.metaLabel}</small>
-                                </span>
-                                <span>
-                                  <strong>{row.confidence}%</strong>
-                                  <small>{row.tags?.join(' · ') || row.metaLabel}</small>
-                                </span>
-                              </button>
-                            ))}
-                          </div>
-                        ) : null}
-                        {mlbValueSummary.tbBackedRows.length ? (
-                          <div className="tennis-value-list">
-                            <div className="tennis-value-section-label">TB backed</div>
-                            {mlbValueSummary.tbBackedRows.slice(0, 5).map((row: AnyRecord) => (
-                              <button
-                                key={`${row.id}-tb-backed`}
-                                type="button"
-                                className="tennis-value-row"
-                                onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
-                              >
-                                <span>
-                                  <strong>{row.title}</strong>
-                                  <small>{row.summary}</small>
-                                </span>
-                                <span>
-                                  <strong>{row.confidence}%</strong>
-                                  <small>{row.priceLabel}</small>
-                                </span>
-                              </button>
-                            ))}
-                          </div>
-                        ) : null}
-                        {mlbValueSummary.strikeoutRows.length ? (
-                          <div className="tennis-value-list">
-                            <div className="tennis-value-section-label">Posted-lineup K overs</div>
-                            {mlbValueSummary.strikeoutRows.slice(0, 5).map((row: AnyRecord) => (
-                              <button
-                                key={`${row.id}-k-value`}
-                                type="button"
-                                className="tennis-value-row"
-                                onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
-                              >
-                                <span>
-                                  <strong>{row.title}</strong>
-                                  <small>{row.summary}</small>
-                                </span>
-                                <span>
-                                  <strong>{row.confidence}%</strong>
-                                  <small>{row.priceLabel}</small>
-                                </span>
-                              </button>
-                            ))}
-                          </div>
-                        ) : null}
-                        {mlbValueSummary.homeRunRows.length ? (
-                          <div className="tennis-value-list">
-                            <div className="tennis-value-section-label">HR watch</div>
-                            {mlbValueSummary.homeRunRows.slice(0, 6).map((row: AnyRecord) => {
-                              const pitchFit = row.lineupContext?.pitchType?.summary
-                              const hr9 = Number.isFinite(Number(row.opposingPitcherHr9)) ? `${formatNumber(row.opposingPitcherHr9, 2)} HR/9` : null
-                              const park = Number.isFinite(Number(row.parkHrIndex)) ? `${Math.round(Number(row.parkHrIndex))} park HR index` : null
-                              const slot = Number.isFinite(Number(row.lineupContext?.slot)) ? `slot ${Number(row.lineupContext.slot)}` : null
-                              const statusLabel = row.lineupStatus === 'posted' ? 'posted order' : 'partial order'
-                              const detailLine = [statusLabel, slot, hr9, park].filter(Boolean).join(' · ')
-                              const whyLine =
-                                pitchFit ||
-                                (Array.isArray(row.contextLabels) ? row.contextLabels.slice(0, 2).join(' · ') : '') ||
-                                `${row.opposingPitcher} matchup watch`
-                              const supportLine = detailLine ? `${detailLine} · ${whyLine}` : whyLine
-                              return (
+                            <div className="tennis-value-section-label">Side + totals board</div>
+                            {[...mlbValueSummary.sideRows.slice(0, 4), ...mlbValueSummary.totalRows.slice(0, 4)]
+                              .sort((left: AnyRecord, right: AnyRecord) => right.confidence - left.confidence || right.sortEdge - left.sortEdge)
+                              .slice(0, 8)
+                              .map((row: AnyRecord) => (
                                 <button
-                                  key={`${row.gameId}-${row.playerId ?? row.playerName}-hr`}
+                                  key={`${row.id}-mlb-value`}
                                   type="button"
                                   className="tennis-value-row"
                                   onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
                                 >
                                   <span>
-                                    <strong>{row.playerName}</strong>
-                                    <small>{row.teamName} · {row.gameTitle}</small>
+                                    <strong>{row.title}</strong>
+                                    <small>{row.subtitle} · {row.priceLabel || row.metaLabel}</small>
                                   </span>
                                   <span>
-                                    <strong>{String(row.scoreBand || 'watch').toUpperCase()}</strong>
-                                    <small>{supportLine}</small>
+                                    <strong>{row.confidence}%</strong>
+                                    <small>{row.tags?.join(' · ') || row.metaLabel}</small>
                                   </span>
                                 </button>
-                              )
-                            })}
+                              ))}
+                          </div>
+                        ) : null}
+                      </section>
+                    ) : null}
+                    {mlbFirstInningValueSummary && shouldShowValueScope('mlb-first-inning') ? (
+                      <section className="tennis-value-slate-card">
+                        <div className="tennis-value-slate-head">
+                          <div>
+                            <p className="eyebrow">MLB 1st-inning value board</p>
+                            <h3>{activeDayIsoDate} YRFI / NRFI price edges</h3>
+                          </div>
+                          <span>{mlbFirstInningValueSummary.mappedGames}/{mlbFirstInningValueSummary.totalGames} mapped</span>
+                        </div>
+                        <p>{mlbFirstInningValueSummary.note}</p>
+                        <div className="tennis-value-pill-row">
+                          <span>YRFI value {mlbFirstInningValueSummary.yrfiRows.length}</span>
+                          <span>NRFI value {mlbFirstInningValueSummary.nrfiRows.length}</span>
+                        </div>
+                        {mlbFirstInningValueSummary.yrfiRows.length ? (
+                          <div className="tennis-value-list">
+                            <div className="tennis-value-section-label">YRFI value</div>
+                            {mlbFirstInningValueSummary.yrfiRows.slice(0, 5).map((row: AnyRecord) => (
+                              <button
+                                key={`${row.gameId}-yrfi-value`}
+                                type="button"
+                                className="tennis-value-row"
+                                onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
+                              >
+                                <span>
+                                  <strong>{row.title}</strong>
+                                  <small>{row.summary}</small>
+                                </span>
+                                <span>
+                                  <strong>{`+${formatNumber(row.yesEdge, 1)} pts`}</strong>
+                                  <small>{`YES ${formatNumber(row.yesModel, 1)}% vs ask ${formatNumber(row.yesAsk, 1)}c`}</small>
+                                </span>
+                              </button>
+                            ))}
+                          </div>
+                        ) : null}
+                        {mlbFirstInningValueSummary.nrfiRows.length ? (
+                          <div className="tennis-value-list">
+                            <div className="tennis-value-section-label">NRFI value</div>
+                            {mlbFirstInningValueSummary.nrfiRows.slice(0, 5).map((row: AnyRecord) => (
+                              <button
+                                key={`${row.gameId}-nrfi-value`}
+                                type="button"
+                                className="tennis-value-row"
+                                onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
+                              >
+                                <span>
+                                  <strong>{row.title}</strong>
+                                  <small>{row.summary}</small>
+                                </span>
+                                <span>
+                                  <strong>{`+${formatNumber(row.noEdge, 1)} pts`}</strong>
+                                  <small>{`NO ${formatNumber(row.noModel, 1)}% vs ask ${formatNumber(row.noAsk, 1)}c`}</small>
+                                </span>
+                              </button>
+                            ))}
+                          </div>
+                        ) : null}
+                      </section>
+                    ) : null}
+                    {mlbValueSummary && shouldShowValueScope('mlb-tb') ? (
+                      <section className="tennis-value-slate-card">
+                        <div className="tennis-value-slate-head">
+                          <div>
+                            <p className="eyebrow">MLB total-bases value board</p>
+                            <h3>{activeDayIsoDate} TB lanes</h3>
+                          </div>
+                          <span>{mlbValueSummary.tbBackedRows.length} backed / {mlbValueSummary.totalBaseRows.length} total</span>
+                        </div>
+                        <p>TB is the strongest current batter-prop lane. `TB backed` means the deeper Statcast + opponent-strength shadow layer agrees; `soft heat` means the live board likes it but the tougher confirmation is thinner.</p>
+                        <div className="tennis-value-pill-row">
+                          <span>TB backed {mlbValueSummary.tbBackedRows.length}</span>
+                          <span>Soft heat {mlbValueSummary.tbSoftHeatRows.length}</span>
+                        </div>
+                        {mlbValueSummary.totalBaseRows.length ? (
+                          <div className="tennis-value-list">
+                            <div className="tennis-value-section-label">Top TB values</div>
+                            {mlbValueSummary.totalBaseRows.slice(0, 10).map((row: AnyRecord) => (
+                              <button
+                                key={`${row.id}-tb-board`}
+                                type="button"
+                                className="tennis-value-row"
+                                onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
+                              >
+                                <span>
+                                  <strong>{row.title}</strong>
+                                  <small>{row.summary}</small>
+                                </span>
+                                <span>
+                                  <strong>{row.confidence}%</strong>
+                                  <small>{`${row.priceLabel} · ${row.raw?.shadowSupportTag || 'Model-only'}`}</small>
+                                </span>
+                              </button>
+                            ))}
                           </div>
                         ) : null}
                         {mlbValueSummary.tbSoftHeatRows.length ? (
@@ -5809,7 +6372,267 @@ function App() {
                         ) : null}
                       </section>
                     ) : null}
-                    {mlbScalpSummary ? (
+                    {mlbValueSummary && shouldShowValueScope('mlb-strikeouts') ? (
+                      <section className="tennis-value-slate-card">
+                        <div className="tennis-value-slate-head">
+                          <div>
+                            <p className="eyebrow">MLB strikeout O/U value board</p>
+                            <h3>{activeDayIsoDate} pitcher strikeouts</h3>
+                          </div>
+                          <span>{mlbValueSummary.strikeoutRows.filter((row: AnyRecord) => row.raw?.lineupStatus === 'posted').length}/{mlbValueSummary.strikeoutRows.length} posted</span>
+                        </div>
+                        <p>Strikeout overs are currently the healthier sub-lane, but this board shows both directions so you can still see the under calls the model is producing.</p>
+                        <div className="tennis-value-pill-row">
+                          <span>Over {mlbValueSummary.strikeoutOverRows.length}</span>
+                          <span>Under {mlbValueSummary.strikeoutUnderRows.length}</span>
+                        </div>
+                        {mlbValueSummary.strikeoutOverRows.length ? (
+                          <div className="tennis-value-list">
+                            <div className="tennis-value-section-label">Strikeout overs</div>
+                            {mlbValueSummary.strikeoutOverRows.slice(0, 6).map((row: AnyRecord) => (
+                              <button
+                                key={`${row.id}-k-over-board`}
+                                type="button"
+                                className="tennis-value-row"
+                                onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
+                              >
+                                <span>
+                                  <strong>{row.title}</strong>
+                                  <small>{row.summary}</small>
+                                </span>
+                                <span>
+                                  <strong>{row.confidence}%</strong>
+                                  <small>{`${row.priceLabel} · ${row.raw?.lineupStatus || 'partial'} order`}</small>
+                                </span>
+                              </button>
+                            ))}
+                          </div>
+                        ) : null}
+                        {mlbValueSummary.strikeoutUnderRows.length ? (
+                          <div className="tennis-value-list">
+                            <div className="tennis-value-section-label">Strikeout unders</div>
+                            {mlbValueSummary.strikeoutUnderRows.slice(0, 6).map((row: AnyRecord) => (
+                              <button
+                                key={`${row.id}-k-under-board`}
+                                type="button"
+                                className="tennis-value-row"
+                                onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
+                              >
+                                <span>
+                                  <strong>{row.title}</strong>
+                                  <small>{row.summary}</small>
+                                </span>
+                                <span>
+                                  <strong>{row.confidence}%</strong>
+                                  <small>{`${row.priceLabel} · ${row.raw?.lineupStatus || 'partial'} order`}</small>
+                                </span>
+                              </button>
+                            ))}
+                          </div>
+                        ) : null}
+                      </section>
+                    ) : null}
+                    {mlbValueSummary && shouldShowValueScope('mlb-impact') ? (
+                      <section className="tennis-value-slate-card">
+                        <div className="tennis-value-slate-head">
+                          <div>
+                            <p className="eyebrow">MLB H+R+RBI value board</p>
+                            <h3>{activeDayIsoDate} batting-impact lanes</h3>
+                          </div>
+                          <span>
+                            {mlbValueSummary.hitRunRbiRows.length
+                              ? `${mlbValueSummary.hitRunRbiRows.length} exported`
+                              : `${mlbValueSummary.battingProductionRows.length} model`}
+                          </span>
+                        </div>
+                        <p>
+                          This board is meant to surface combined hitting production, not singles/walks. If a true H+R+RBI market is exported we show it directly;
+                          otherwise we rank hitters with a batting-production ladder built from XOPS, xwOBA, slot, matchup, and pitch-fit context.
+                        </p>
+                        {mlbValueSummary.displayHitRunRbiRows.length ? (
+                          <div className="tennis-value-list">
+                            <div className="tennis-value-section-label">
+                              {mlbValueSummary.hitRunRbiRows.length ? 'Live H+R+RBI style props' : 'Modeled H+R+RBI production ladder'}
+                            </div>
+                            {mlbValueSummary.displayHitRunRbiRows.slice(0, 8).map((row: AnyRecord) => (
+                              <button
+                                key={`${row.id}-impact-board`}
+                                type="button"
+                                className="tennis-value-row"
+                                onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
+                              >
+                                <span>
+                                  <strong>{row.title}</strong>
+                                  <small>{row.summary}</small>
+                                </span>
+                                <span>
+                                  <strong>{row.confidence}%</strong>
+                                  <small>{row.priceLabel}</small>
+                                </span>
+                              </button>
+                            ))}
+                          </div>
+                        ) : (
+                          <small className="tennis-value-warning">
+                            No H+R+RBI ladder is available yet. Open this scope once the MLB game-detail payloads finish loading.
+                          </small>
+                        )}
+                      </section>
+                    ) : null}
+                    {mlbValueSummary && shouldShowValueScope('mlb-hr') ? (
+                      <section className="tennis-value-slate-card">
+                        <div className="tennis-value-slate-head">
+                          <div>
+                            <p className="eyebrow">MLB HR value board</p>
+                            <h3>{activeDayIsoDate} current home-run ladder</h3>
+                          </div>
+                          <span>{mlbValueSummary.postedHomeRunRows.length}/{mlbValueSummary.homeRunRows.length} posted orders</span>
+                        </div>
+                        <p>
+                          HR is still a lower-trust lane than TB or posted-lineup strikeout props, but this board surfaces the
+                          strongest current barrel, hard-hit, park, weather, and pitcher-matchup stacks.
+                        </p>
+                        <small className="tennis-value-warning">
+                          Thresholds come from the saved HR score bands: <strong>premium</strong>, <strong>strong</strong>, and <strong>viable</strong>.
+                          The ladder below now always shows the top current 10 targets, even if you just want the best available watchlist.
+                        </small>
+                        <div className="tennis-value-pill-row">
+                          <span>Premium {mlbValueSummary.premiumHomeRunRows.length}</span>
+                          <span>Strong {mlbValueSummary.strongHomeRunRows.length}</span>
+                          <span>Viable {mlbValueSummary.viableHomeRunRows.length}</span>
+                          <span>Posted {mlbValueSummary.postedHomeRunRows.length}</span>
+                        </div>
+                        {mlbValueSummary.homeRunRows.length ? (
+                          <div className="tennis-value-list">
+                            <div className="tennis-value-section-label">Top 10 HR ladder</div>
+                            {mlbValueSummary.homeRunRows.slice(0, 10).map((row: AnyRecord) => {
+                              const matchedGameSummary = games.find((game: AnyRecord) => game.id === row.gameId) ?? null
+                              const matchedGameDetail = row.gameId ? loadedGameDetailsByDay[activeDayId]?.[row.gameId] ?? null : null
+                              const matchedGame = matchedGameDetail ?? matchedGameSummary ?? null
+                              const isHomeTeam =
+                                matchedGame && matchedGame.participants?.[1]?.name === row.teamName
+                              const teamContext =
+                                matchedGame && isHomeTeam !== null
+                                  ? matchedGame.teamContext?.[isHomeTeam ? 'home' : 'away'] ?? null
+                                  : null
+                              const opponentStarter =
+                                matchedGame && isHomeTeam !== null
+                                  ? matchedGame.starterContext?.[isHomeTeam ? 'away' : 'home'] ?? null
+                                  : null
+                              const teamGamesPlayed =
+                                Number(teamContext?.wins || 0) + Number(teamContext?.losses || 0)
+                              const xhrPerTeamGame =
+                                Number.isFinite(Number(row.seasonXHR)) && teamGamesPlayed > 0
+                                  ? Number(row.seasonXHR) / teamGamesPlayed
+                                  : null
+                              const pitchFit = row.lineupContext?.pitchType?.summary
+                              const hr9 =
+                                Number.isFinite(Number(row.opposingPitcherHr9))
+                                  ? `starter HR/9 ${formatNumber(row.opposingPitcherHr9, 2)}${
+                                      Number.isFinite(Number(opponentStarter?.inningsPitched))
+                                        ? ` over ${formatNumber(opponentStarter?.inningsPitched, 1)} IP`
+                                        : ''
+                                    }`
+                                  : null
+                              const park = Number.isFinite(Number(row.parkHrIndex)) ? `${Math.round(Number(row.parkHrIndex))} park HR index` : null
+                              const slot = Number.isFinite(Number(row.lineupContext?.slot)) ? `slot ${Number(row.lineupContext.slot)}` : null
+                              const statusLabel = row.lineupStatus === 'posted' ? 'posted order' : 'partial order'
+                              const expectedHr =
+                                xhrPerTeamGame != null ? `xHR/team game ${formatNumber(xhrPerTeamGame, 2)}` : null
+                              const recentHr10 =
+                                Number.isFinite(Number(row.homeRunsLast10Days)) && Number(row.homeRunsLast10Days) > 0
+                                  ? `${Number(row.homeRunsLast10Days)} HR last 10d`
+                                  : null
+                              const recentHr7 =
+                                Number.isFinite(Number(row.homeRunsLast7Days)) && Number(row.homeRunsLast7Days) > 0
+                                  ? `${Number(row.homeRunsLast7Days)} HR last 7d`
+                                  : null
+                              const recentSinceMay =
+                                Number.isFinite(Number(row.recentHrSinceMay1)) && Number(row.recentHrSinceMay1) > 0
+                                  ? `${Number(row.recentHrSinceMay1)} since May 1`
+                                  : null
+                              const seasonHrLine = [
+                                Number.isFinite(Number(row.seasonHr)) ? `${Number(row.seasonHr)} HR season` : null,
+                                Number.isFinite(Number(row.seasonXHR)) ? `${formatNumber(row.seasonXHR, 1)} xHR season` : null,
+                                expectedHr,
+                              ]
+                                .filter(Boolean)
+                                .join(' · ')
+                              const recentBurstLine = [
+                                recentHr10 || recentHr7,
+                                recentSinceMay,
+                                Number.isFinite(Number(row.daysSinceLastHr)) ? `${Number(row.daysSinceLastHr)}d since last HR` : null,
+                              ]
+                                .filter(Boolean)
+                                .join(' · ')
+                              const versusPitcherLine = [
+                                row.opposingPitcher
+                                  ? `vs ${row.opposingPitcher}${row.opposingPitcherHand ? ` (${row.opposingPitcherHand}HP)` : ''}`
+                                  : null,
+                                hr9,
+                                park,
+                              ]
+                                .filter(Boolean)
+                                .join(' · ')
+                              const lineupLine = [statusLabel, slot].filter(Boolean).join(' · ')
+                              const contextSummary = String(row.signalSummary || '')
+                                .replace(/\s*\|\s*/g, ' · ')
+                                .replace(/^slot\s+\d+\s*·\s*/i, '')
+                                .replace(/\s*·\s*[0-9.]+\s*HR\/9 starter$/i, '')
+                                .trim()
+                              const scoreBandLabel = String(row.scoreBand || 'watch').toUpperCase()
+                              const hrScore = Number.isFinite(Number(row.score || row.baseScore))
+                                ? Number(row.score || row.baseScore)
+                                : null
+                              const topScore = Number(mlbValueSummary.homeRunRows[0]?.score || mlbValueSummary.homeRunRows[0]?.baseScore || 0)
+                              const slateConfidencePct =
+                                hrScore && topScore > 0 ? Math.max(1, Math.min(99, Math.round((hrScore / topScore) * 100))) : null
+                              const overallConfidenceLabel =
+                                slateConfidencePct != null ? `${slateConfidencePct}% overall HR conf` : 'HR watch'
+                              const scoreLabel = hrScore != null ? `${scoreBandLabel} ${formatNumber(hrScore, 1)}` : scoreBandLabel
+                              return (
+                                <button
+                                  key={`${row.gameId}-${row.playerId ?? row.playerName}-hr-board`}
+                                  type="button"
+                                  className="tennis-value-row hr-value-row"
+                                  onClick={() => {
+                                    if (!row.gameId) return
+                                    setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))
+                                  }}
+                                >
+                                  <div className="hr-value-top">
+                                    <div className="hr-value-title-block">
+                                      <strong>#{row.rank || '?'} {row.playerName}</strong>
+                                      <small>{row.teamName} · {row.gameTitle}</small>
+                                    </div>
+                                    <div className="hr-value-score-block">
+                                      <strong>{scoreLabel}</strong>
+                                      <small>{overallConfidenceLabel}</small>
+                                    </div>
+                                  </div>
+                                  {seasonHrLine ? <div className="hr-value-line"><span className="hr-value-label">Overall</span><small>{seasonHrLine}</small></div> : null}
+                                  {recentBurstLine ? <div className="hr-value-line"><span className="hr-value-label">Recent</span><small>{recentBurstLine}</small></div> : null}
+                                  {versusPitcherLine ? <div className="hr-value-line"><span className="hr-value-label">Vs pitcher</span><small>{versusPitcherLine}</small></div> : null}
+                                  {pitchFit ? <div className="hr-value-line"><span className="hr-value-label">Pitch mix</span><small>{pitchFit}</small></div> : null}
+                                  {lineupLine || contextSummary ? (
+                                    <div className="hr-value-line">
+                                      <span className="hr-value-label">Context</span>
+                                      <small>{[lineupLine, contextSummary].filter(Boolean).join(' · ')}</small>
+                                    </div>
+                                  ) : null}
+                                </button>
+                              )
+                            })}
+                          </div>
+                        ) : (
+                          <small className="tennis-value-warning">
+                            No HR board payload is available for this slate yet. Once the saved home-run board lands, this ladder
+                            will populate automatically.
+                          </small>
+                        )}
+                      </section>
+                    ) : null}
+                    {mlbScalpSummary && shouldShowValueScope('mlb-scalp') ? (
                       <section className="tennis-value-slate-card">
                         <div className="tennis-value-slate-head">
                           <div>

@@ -3097,6 +3097,47 @@ h3 {
   text-transform: uppercase;
 }
 
+.value-scope-card {
+  background: rgba(79, 210, 166, 0.03);
+}
+
+.value-scope-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.value-scope-chip {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 11px;
+  background: rgba(255, 255, 255, 0.035);
+  color: var(--muted);
+  font: 700 0.68rem/1 var(--mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    border-color 140ms ease,
+    color 140ms ease,
+    background 140ms ease,
+    transform 140ms ease;
+}
+
+.value-scope-chip:hover,
+.value-scope-chip:focus-visible {
+  border-color: rgba(79, 210, 166, 0.35);
+  color: var(--heading);
+  outline: none;
+}
+
+.value-scope-chip.active {
+  border-color: rgba(79, 210, 166, 0.55);
+  background: rgba(79, 210, 166, 0.12);
+  color: var(--heading);
+  transform: translateY(-1px);
+}
+
 .tennis-value-list {
   display: grid;
   gap: 6px;
@@ -3156,6 +3197,50 @@ h3 {
 .tennis-value-row span:last-child {
   min-width: 58px;
   text-align: right;
+}
+
+.hr-value-row {
+  display: grid;
+  gap: 7px;
+  align-items: stretch;
+}
+
+.hr-value-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.hr-value-title-block,
+.hr-value-score-block {
+  display: grid;
+  gap: 3px;
+}
+
+.hr-value-score-block {
+  min-width: 108px;
+  text-align: right;
+}
+
+.hr-value-line {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 8px;
+  align-items: start;
+}
+
+.hr-value-label {
+  color: var(--accent);
+  font: 700 0.61rem/1.1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hr-value-line small {
+  color: var(--muted);
+  font-size: 0.7rem;
+  line-height: 1.4;
 }
 
 .tennis-value-detail-grid {
@@ -4128,6 +4213,51 @@ h3 {
 .matchup-history-block {
   display: grid;
   gap: 6px;
+}
+
+.matchup-history-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.matchup-history-toggle-label {
+  color: var(--muted);
+  font: 600 0.58rem/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.matchup-history-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.matchup-history-toggle button {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: 600 0.62rem/1 var(--mono);
+  padding: 4px 8px;
+  border-radius: 999px;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.matchup-history-toggle button.active {
+  background: rgba(82, 214, 179, 0.14);
+  color: #dffcf3;
+  box-shadow: inset 0 0 0 1px rgba(82, 214, 179, 0.28);
+}
+
+.matchup-history-toggle button:hover {
+  color: var(--heading);
 }
 
 .matchup-history-scroll {
