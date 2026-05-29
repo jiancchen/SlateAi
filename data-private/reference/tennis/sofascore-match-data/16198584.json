@@ -5,7 +5,7 @@
   "slateDate": "2026-05-29",
   "boardMatchId": "rg-w-magda-linette-iga-swiatek-2026-05-29",
   "boardTitle": "Magda Linette vs Iga Swiatek",
-  "capturedAt": "2026-05-29T02:04:10.817Z",
+  "capturedAt": "2026-05-29T04:54:43.972Z",
   "compactEvent": {
     "id": 16198584,
     "slug": "iga-swiatek-magda-linette",
@@ -500,13 +500,23 @@
         "managerDuel": null
       }
     },
+    "pointByPoint": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
     "votes": {
       "status": 200,
       "ok": true,
       "body": {
         "vote": {
-          "vote1": 591,
-          "vote2": 4049,
+          "vote1": 732,
+          "vote2": 4806,
           "voteX": null
         },
         "bothTeamsToScoreVote": {

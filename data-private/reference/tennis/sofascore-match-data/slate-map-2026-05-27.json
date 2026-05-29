@@ -269,28 +269,13 @@
       "tournament": "French Open, Paris, France"
     },
     {
-      "eventId": 16198492,
-      "title": "Francisco Cerundolo vs Hugo Gaston",
-      "tournament": "French Open, Paris, France"
-    },
-    {
       "eventId": 16198501,
       "title": "Hubert Hurkacz vs Frances Tiafoe",
       "tournament": "French Open, Paris, France"
     },
     {
-      "eventId": 16198472,
-      "title": "Martin Landaluce vs Vit Kopřiva",
-      "tournament": "French Open, Paris, France"
-    },
-    {
-      "eventId": 16198494,
-      "title": "Alejandro Tabilo vs Valentin Vacherot",
-      "tournament": "French Open, Paris, France"
-    },
-    {
-      "eventId": 16198502,
-      "title": "Francisco Comesaña vs Luciano Darderi",
+      "eventId": 16198492,
+      "title": "Francisco Cerundolo vs Hugo Gaston",
       "tournament": "French Open, Paris, France"
     },
     {
@@ -389,53 +374,13 @@
       "tournament": "French Open, Paris, France"
     },
     {
-      "eventId": 16198543,
-      "title": "Anna Kalinskaya vs Alina Korneeva",
-      "tournament": "French Open, Paris, France"
-    },
-    {
       "eventId": 16198581,
       "title": "Diana Shnaider vs McCartney Kessler",
       "tournament": "French Open, Paris, France"
     },
     {
-      "eventId": 16198534,
-      "title": "Julia Grabher vs Amanda Anisimova",
-      "tournament": "French Open, Paris, France"
-    },
-    {
       "eventId": 16198548,
       "title": "Maja Chwalinska vs Elise Mertens",
-      "tournament": "French Open, Paris, France"
-    },
-    {
-      "eventId": 16198552,
-      "title": "Yulia Putintseva vs Camila Osorio",
-      "tournament": "French Open, Paris, France"
-    },
-    {
-      "eventId": 16198549,
-      "title": "Ann Li vs Diane Parry",
-      "tournament": "French Open, Paris, France"
-    },
-    {
-      "eventId": 16198583,
-      "title": "Antonia Ružić vs Madison Keys",
-      "tournament": "French Open, Paris, France"
-    },
-    {
-      "eventId": 16198536,
-      "title": "Coco Gauff vs Mayar Sherif",
-      "tournament": "French Open, Paris, France"
-    },
-    {
-      "eventId": 16198586,
-      "title": "Daria Kasatkina vs Susan Bandecchi",
-      "tournament": "French Open, Paris, France"
-    },
-    {
-      "eventId": 16198544,
-      "title": "Maria Sakkari vs Claire Liu",
       "tournament": "French Open, Paris, France"
     }
   ],

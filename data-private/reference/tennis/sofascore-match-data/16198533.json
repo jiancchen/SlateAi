@@ -5,7 +5,7 @@
   "slateDate": "2026-05-27",
   "boardMatchId": "rg-w-sara-bejlek-iga-swiatek-2026-05-27",
   "boardTitle": "Sara Bejlek vs Iga Swiatek",
-  "capturedAt": "2026-05-28T04:05:07.694Z",
+  "capturedAt": "2026-05-29T04:54:12.317Z",
   "compactEvent": {
     "id": 16198533,
     "slug": "sara-bejlek-iga-swiatek",
@@ -1569,6 +1569,883 @@
           "draws": 0
         },
         "managerDuel": null
+      }
+    },
+    "pointByPoint": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "pointByPoint": [
+          {
+            "set": 2,
+            "games": [
+              {
+                "game": 9,
+                "points": [
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 3
+                  }
+                ],
+                "score": {
+                  "homeScore": 3,
+                  "awayScore": 6,
+                  "serving": 2,
+                  "scoring": 2
+                }
+              },
+              {
+                "game": 8,
+                "points": [
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 2
+                  }
+                ],
+                "score": {
+                  "homeScore": 3,
+                  "awayScore": 5,
+                  "serving": 1,
+                  "scoring": 2
+                }
+              },
+              {
+                "game": 7,
+                "points": [
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "0",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "0",
+                    "pointDescription": 2,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 2,
+                    "awayPointType": 5
+                  }
+                ],
+                "score": {
+                  "homeScore": 3,
+                  "awayScore": 4,
+                  "serving": 2,
+                  "scoring": 1
+                }
+              },
+              {
+                "game": 6,
+                "points": [
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "0",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "0",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "0",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  }
+                ],
+                "score": {
+                  "homeScore": 2,
+                  "awayScore": 4,
+                  "serving": 1,
+                  "scoring": 1
+                }
+              },
+              {
+                "game": 5,
+                "points": [
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "30",
+                    "pointDescription": 2,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  }
+                ],
+                "score": {
+                  "homeScore": 1,
+                  "awayScore": 4,
+                  "serving": 2,
+                  "scoring": 2
+                }
+              },
+              {
+                "game": 4,
+                "points": [
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "0",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 2
+                  }
+                ],
+                "score": {
+                  "homeScore": 1,
+                  "awayScore": 3,
+                  "serving": 1,
+                  "scoring": 2
+                }
+              },
+              {
+                "game": 3,
+                "points": [
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "0",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "0",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 2,
+                    "awayPointType": 5
+                  }
+                ],
+                "score": {
+                  "homeScore": 1,
+                  "awayScore": 2,
+                  "serving": 2,
+                  "scoring": 1
+                }
+              },
+              {
+                "game": 2,
+                "points": [
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 2
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 2
+                  }
+                ],
+                "score": {
+                  "homeScore": 0,
+                  "awayScore": 2,
+                  "serving": 1,
+                  "scoring": 2
+                }
+              },
+              {
+                "game": 1,
+                "points": [
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "0",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "A",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "A",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 2,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "A",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "A",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  }
+                ],
+                "score": {
+                  "homeScore": 0,
+                  "awayScore": 1,
+                  "serving": 2,
+                  "scoring": 2
+                }
+              }
+            ]
+          },
+          {
+            "set": 1,
+            "games": [
+              {
+                "game": 8,
+                "points": [
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 3
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 3
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "A",
+                    "pointDescription": 2,
+                    "homePointType": 5,
+                    "awayPointType": 3
+                  }
+                ],
+                "score": {
+                  "homeScore": 2,
+                  "awayScore": 6,
+                  "serving": 1,
+                  "scoring": 2
+                }
+              },
+              {
+                "game": 7,
+                "points": [
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "0",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 2,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "A",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 3
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "A",
+                    "awayPoint": "40",
+                    "pointDescription": 2,
+                    "homePointType": 2,
+                    "awayPointType": 5
+                  }
+                ],
+                "score": {
+                  "homeScore": 2,
+                  "awayScore": 5,
+                  "serving": 2,
+                  "scoring": 1
+                }
+              },
+              {
+                "game": 6,
+                "points": [
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "A",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 2
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "A",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 2
+                  }
+                ],
+                "score": {
+                  "homeScore": 1,
+                  "awayScore": 5,
+                  "serving": 1,
+                  "scoring": 2
+                }
+              },
+              {
+                "game": 5,
+                "points": [
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "0",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  }
+                ],
+                "score": {
+                  "homeScore": 1,
+                  "awayScore": 4,
+                  "serving": 2,
+                  "scoring": 2
+                }
+              },
+              {
+                "game": 4,
+                "points": [
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "40",
+                    "pointDescription": 2,
+                    "homePointType": 5,
+                    "awayPointType": 2
+                  }
+                ],
+                "score": {
+                  "homeScore": 1,
+                  "awayScore": 3,
+                  "serving": 1,
+                  "scoring": 2
+                }
+              },
+              {
+                "game": 3,
+                "points": [
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 2,
+                    "awayPointType": 5
+                  }
+                ],
+                "score": {
+                  "homeScore": 1,
+                  "awayScore": 2,
+                  "serving": 2,
+                  "scoring": 1
+                }
+              },
+              {
+                "game": 2,
+                "points": [
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "0",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "15",
+                    "pointDescription": 2,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 2
+                  }
+                ],
+                "score": {
+                  "homeScore": 0,
+                  "awayScore": 2,
+                  "serving": 1,
+                  "scoring": 2
+                }
+              },
+              {
+                "game": 1,
+                "points": [
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "0",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "40",
+                    "pointDescription": 2,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  }
+                ],
+                "score": {
+                  "homeScore": 0,
+                  "awayScore": 1,
+                  "serving": 2,
+                  "scoring": 2
+                }
+              }
+            ]
+          }
+        ]
       }
     },
     "votes": {

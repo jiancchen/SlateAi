@@ -5,7 +5,7 @@
   "slateDate": "2026-05-29",
   "boardMatchId": "rg-m-casper-ruud-tommy-paul-2026-05-29",
   "boardTitle": "Casper Ruud vs Tommy Paul",
-  "capturedAt": "2026-05-29T02:04:08.815Z",
+  "capturedAt": "2026-05-29T04:54:41.469Z",
   "compactEvent": {
     "id": 16198530,
     "slug": "tommy-paul-casper-ruud",
@@ -531,13 +531,23 @@
         "managerDuel": null
       }
     },
+    "pointByPoint": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
     "votes": {
       "status": 200,
       "ok": true,
       "body": {
         "vote": {
-          "vote1": 6767,
-          "vote2": 1259,
+          "vote1": 8082,
+          "vote2": 1552,
           "voteX": null
         },
         "bothTeamsToScoreVote": {

@@ -5,7 +5,7 @@
   "slateDate": "2026-05-29",
   "boardMatchId": "rg-w-marta-kostyuk-viktorija-golubic-2026-05-29",
   "boardTitle": "Marta Kostyuk vs Viktorija Golubic",
-  "capturedAt": "2026-05-29T02:04:10.251Z",
+  "capturedAt": "2026-05-29T04:54:43.205Z",
   "compactEvent": {
     "id": 16198579,
     "slug": "marta-kostyuk-viktorija-golubic",
@@ -501,13 +501,23 @@
         "managerDuel": null
       }
     },
+    "pointByPoint": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
     "votes": {
       "status": 200,
       "ok": true,
       "body": {
         "vote": {
-          "vote1": 3153,
-          "vote2": 354,
+          "vote1": 3918,
+          "vote2": 463,
           "voteX": null
         },
         "bothTeamsToScoreVote": {

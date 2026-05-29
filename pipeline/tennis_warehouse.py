@@ -457,6 +457,48 @@ def init_db(conn: sqlite3.Connection) -> None:
           primary key (sofascore_event_id, player_side, period, group_name, stat_key)
         );
 
+        create table if not exists tennis_sofascore_replay_games (
+          sofascore_event_id text not null,
+          slate_date text,
+          board_match_id text,
+          set_number integer not null,
+          game_number integer not null,
+          response_set_index integer,
+          response_game_index integer,
+          home_player_name text,
+          away_player_name text,
+          serving_side text,
+          scoring_side text,
+          home_games_after integer,
+          away_games_after integer,
+          point_count integer,
+          break_game integer,
+          raw_json text not null,
+          updated_at text not null default current_timestamp,
+          primary key (sofascore_event_id, set_number, game_number)
+        );
+
+        create table if not exists tennis_sofascore_replay_points (
+          sofascore_event_id text not null,
+          slate_date text,
+          board_match_id text,
+          set_number integer not null,
+          game_number integer not null,
+          point_index integer not null,
+          home_player_name text,
+          away_player_name text,
+          serving_side text,
+          scoring_side text,
+          home_point text,
+          away_point text,
+          point_description integer,
+          home_point_type integer,
+          away_point_type integer,
+          raw_json text not null,
+          updated_at text not null default current_timestamp,
+          primary key (sofascore_event_id, set_number, game_number, point_index)
+        );
+
         create index if not exists idx_tennis_matches_slate_date on tennis_matches(slate_date);
         create index if not exists idx_tennis_recent_opponent_rank on tennis_recent_matches(opponent_rank);
         create index if not exists idx_tennis_recent_form_metrics_match on tennis_recent_form_metrics(match_id, normalized_name);
@@ -472,6 +514,10 @@ def init_db(conn: sqlite3.Connection) -> None:
         create index if not exists idx_tennis_sofascore_stat_rows_event on tennis_sofascore_stat_rows(sofascore_event_id);
         create index if not exists idx_tennis_sofascore_player_stat_rows_board
           on tennis_sofascore_player_stat_rows(board_match_id, normalized_name);
+        create index if not exists idx_tennis_sofascore_replay_games_board
+          on tennis_sofascore_replay_games(board_match_id, set_number, game_number);
+        create index if not exists idx_tennis_sofascore_replay_points_board
+          on tennis_sofascore_replay_points(board_match_id, set_number, game_number, point_index);
         """
     )
     existing_market_columns = {
@@ -606,6 +652,15 @@ def bool_int(value: Any) -> int | None:
     if value is None:
         return None
     return 1 if bool(value) else 0
+
+
+def sofascore_side(code: Any) -> str | None:
+    side_code = as_int(code)
+    if side_code == 1:
+        return "home"
+    if side_code == 2:
+        return "away"
+    return None
 
 
 def clamp(value: float | None, low: float = 0, high: float = 100) -> float | None:
@@ -1715,7 +1770,7 @@ def import_flashscore(conn: sqlite3.Connection, directory: Path = FLASHSCORE_DIR
 
 
 def import_sofascore(conn: sqlite3.Connection, directory: Path = SOFASCORE_DIR) -> dict[str, int]:
-    counts = {"matches": 0, "stat_rows": 0, "player_stat_rows": 0}
+    counts = {"matches": 0, "stat_rows": 0, "player_stat_rows": 0, "replay_games": 0, "replay_points": 0}
     if not directory.exists():
         return counts
 
@@ -1728,6 +1783,8 @@ def import_sofascore(conn: sqlite3.Connection, directory: Path = SOFASCORE_DIR) 
         event = ((event_response.get("body") or {}).get("event")) or payload.get("compactEvent") or {}
         stats_response = (payload.get("payloads") or {}).get("statistics") or {}
         stats_body = stats_response.get("body") or {}
+        point_by_point_response = (payload.get("payloads") or {}).get("pointByPoint") or {}
+        point_by_point_body = point_by_point_response.get("body") or {}
         h2h_response = (payload.get("payloads") or {}).get("h2h") or {}
         h2h_body = h2h_response.get("body") or {}
         team_duel = h2h_body.get("teamDuel") or {}
@@ -1915,6 +1972,108 @@ def import_sofascore(conn: sqlite3.Connection, directory: Path = SOFASCORE_DIR) 
                             ),
                         )
                         counts["player_stat_rows"] += 1
+        for set_index, set_payload in enumerate(point_by_point_body.get("pointByPoint") or []):
+            set_number = as_int(set_payload.get("set"))
+            if set_number is None:
+                continue
+            for game_index, game_payload in enumerate(set_payload.get("games") or []):
+                game_number = as_int(game_payload.get("game"))
+                if game_number is None:
+                    continue
+                score = game_payload.get("score") or {}
+                serving_side = sofascore_side(score.get("serving"))
+                scoring_side = sofascore_side(score.get("scoring"))
+                conn.execute(
+                    """
+                    insert into tennis_sofascore_replay_games(
+                      sofascore_event_id, slate_date, board_match_id, set_number,
+                      game_number, response_set_index, response_game_index,
+                      home_player_name, away_player_name, serving_side, scoring_side,
+                      home_games_after, away_games_after, point_count, break_game,
+                      raw_json
+                    )
+                    values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    on conflict(sofascore_event_id, set_number, game_number) do update set
+                      slate_date=excluded.slate_date,
+                      board_match_id=excluded.board_match_id,
+                      response_set_index=excluded.response_set_index,
+                      response_game_index=excluded.response_game_index,
+                      home_player_name=excluded.home_player_name,
+                      away_player_name=excluded.away_player_name,
+                      serving_side=excluded.serving_side,
+                      scoring_side=excluded.scoring_side,
+                      home_games_after=excluded.home_games_after,
+                      away_games_after=excluded.away_games_after,
+                      point_count=excluded.point_count,
+                      break_game=excluded.break_game,
+                      raw_json=excluded.raw_json,
+                      updated_at=current_timestamp
+                    """,
+                    (
+                        event_id,
+                        payload.get("slateDate"),
+                        payload.get("boardMatchId"),
+                        set_number,
+                        game_number,
+                        set_index,
+                        game_index,
+                        home_name,
+                        away_name,
+                        serving_side,
+                        scoring_side,
+                        as_int(score.get("homeScore")),
+                        as_int(score.get("awayScore")),
+                        len(game_payload.get("points") or []),
+                        bool_int(serving_side is not None and scoring_side is not None and serving_side != scoring_side),
+                        dumps(game_payload),
+                    ),
+                )
+                counts["replay_games"] += 1
+                for point_index, point_payload in enumerate(game_payload.get("points") or []):
+                    conn.execute(
+                        """
+                        insert into tennis_sofascore_replay_points(
+                          sofascore_event_id, slate_date, board_match_id, set_number,
+                          game_number, point_index, home_player_name, away_player_name,
+                          serving_side, scoring_side, home_point, away_point,
+                          point_description, home_point_type, away_point_type, raw_json
+                        )
+                        values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        on conflict(sofascore_event_id, set_number, game_number, point_index) do update set
+                          slate_date=excluded.slate_date,
+                          board_match_id=excluded.board_match_id,
+                          home_player_name=excluded.home_player_name,
+                          away_player_name=excluded.away_player_name,
+                          serving_side=excluded.serving_side,
+                          scoring_side=excluded.scoring_side,
+                          home_point=excluded.home_point,
+                          away_point=excluded.away_point,
+                          point_description=excluded.point_description,
+                          home_point_type=excluded.home_point_type,
+                          away_point_type=excluded.away_point_type,
+                          raw_json=excluded.raw_json,
+                          updated_at=current_timestamp
+                        """,
+                        (
+                            event_id,
+                            payload.get("slateDate"),
+                            payload.get("boardMatchId"),
+                            set_number,
+                            game_number,
+                            point_index,
+                            home_name,
+                            away_name,
+                            serving_side,
+                            scoring_side,
+                            point_payload.get("homePoint"),
+                            point_payload.get("awayPoint"),
+                            as_int(point_payload.get("pointDescription")),
+                            as_int(point_payload.get("homePointType")),
+                            as_int(point_payload.get("awayPointType")),
+                            dumps(point_payload),
+                        ),
+                    )
+                    counts["replay_points"] += 1
     conn.commit()
     return counts
 

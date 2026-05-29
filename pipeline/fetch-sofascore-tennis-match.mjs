@@ -175,6 +175,7 @@ const main = async () => {
   const endpoints = {
     statistics: `event/${eventId}/statistics`,
     h2h: `event/${eventId}/h2h`,
+    pointByPoint: `event/${eventId}/point-by-point`,
     votes: `event/${eventId}/votes`,
     tennisPower: `event/${eventId}/tennis-power`,
     winningOdds: `event/${eventId}/provider/1/winning-odds`,

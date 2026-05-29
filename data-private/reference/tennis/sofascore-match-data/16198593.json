@@ -5,7 +5,7 @@
   "slateDate": "2026-05-29",
   "boardMatchId": "rg-w-mirra-andreeva-marie-bouzkova-2026-05-29",
   "boardTitle": "Mirra Andreeva vs Marie Bouzkova",
-  "capturedAt": "2026-05-29T02:04:11.709Z",
+  "capturedAt": "2026-05-29T04:54:44.918Z",
   "compactEvent": {
     "id": 16198593,
     "slug": "mirra-andreeva-marie-bouzkova",
@@ -505,6 +505,16 @@
           "draws": 0
         },
         "managerDuel": null
+      }
+    },
+    "pointByPoint": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
       }
     },
     "votes": {

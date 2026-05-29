@@ -5,16 +5,16 @@
   "slateDate": "2026-05-28",
   "boardMatchId": "rg-m-alejandro-tabilo-valentin-vacherot-2026-05-28",
   "boardTitle": "Alejandro Tabilo vs Valentin Vacherot",
-  "capturedAt": "2026-05-28T04:04:58.406Z",
+  "capturedAt": "2026-05-29T04:54:24.960Z",
   "compactEvent": {
     "id": 16198494,
     "slug": "valentin-vacherot-alejandro-tabilo",
     "status": {
-      "code": 0,
-      "description": "Not started",
-      "type": "notstarted"
+      "code": 91,
+      "description": "Walkover",
+      "type": "finished"
     },
-    "startTimestamp": 1779969000,
+    "startTimestamp": 1779974100,
     "tournament": {
       "name": "French Open, Paris, France",
       "slug": "french-open-paris-france",
@@ -125,7 +125,7 @@
     },
     "homeScore": {},
     "awayScore": {},
-    "winnerCode": null,
+    "winnerCode": 1,
     "firstToServe": null
   },
   "payloads": {
@@ -187,7 +187,7 @@
                   "shortNameTranslation": {}
                 }
               },
-              "userCount": 35147,
+              "userCount": 35324,
               "groundType": "Red clay",
               "tennisPoints": 2000,
               "hasRounds": true,
@@ -225,10 +225,11 @@
           },
           "customId": "bTPsmDnb",
           "status": {
-            "code": 0,
-            "description": "Not started",
-            "type": "notstarted"
+            "code": 91,
+            "description": "Walkover",
+            "type": "finished"
           },
+          "winnerCode": 1,
           "venue": {
             "city": {
               "name": "Paris",
@@ -272,7 +273,7 @@
               "slug": "tennis",
               "id": 5
             },
-            "userCount": 13663,
+            "userCount": 13682,
             "playerTeamInfo": {
               "height": 1.88,
               "weight": 75,
@@ -357,7 +358,7 @@
               "slug": "tennis",
               "id": 5
             },
-            "userCount": 11221,
+            "userCount": 11235,
             "playerTeamInfo": {
               "height": 1.93,
               "weight": 83,
@@ -419,16 +420,23 @@
           },
           "homeScore": {},
           "awayScore": {},
-          "time": {},
+          "time": {
+            "currentPeriodStartTimestamp": 1779971514
+          },
           "changes": {
-            "changeTimestamp": 0
+            "changes": [
+              "time.currentPeriodStart"
+            ],
+            "changeTimestamp": 1779971516
           },
           "hasGlobalHighlights": false,
           "crowdsourcingDataDisplayEnabled": false,
+          "correctAiInsight": false,
           "id": 16198494,
           "defaultPeriodCount": 5,
           "slug": "valentin-vacherot-alejandro-tabilo",
-          "startTimestamp": 1779969000,
+          "currentPeriodStartTimestamp": 1779971514,
+          "startTimestamp": 1779974100,
           "periods": {
             "point": "Game",
             "current": "Match",
@@ -475,11 +483,21 @@
       "ok": true,
       "body": {
         "teamDuel": {
-          "homeWins": 1,
+          "homeWins": 2,
           "awayWins": 1,
           "draws": 0
         },
         "managerDuel": null
+      }
+    },
+    "pointByPoint": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
       }
     },
     "votes": {
@@ -487,8 +505,8 @@
       "ok": true,
       "body": {
         "vote": {
-          "vote1": 3029,
-          "vote2": 3951,
+          "vote1": 4342,
+          "vote2": 5752,
           "voteX": null
         },
         "bothTeamsToScoreVote": {
@@ -533,58 +551,56 @@
         "featured": {
           "default": {
             "sourceId": 195291774,
-            "structureType": 2,
-            "marketId": 12,
-            "marketName": "Total games won",
-            "choiceGroup": "36.5",
+            "structureType": 1,
+            "marketId": 11,
+            "marketName": "First set winner",
             "isLive": false,
             "fid": 195291774,
             "suspended": true,
-            "id": 311871438,
-            "marketGroup": "Total sets/games",
-            "marketPeriod": "Extra time",
+            "id": 311871437,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "1st set",
             "choices": [
               {
-                "initialFractionalValue": "5/6",
-                "fractionalValue": "5/6",
-                "sourceId": 1377464233,
-                "name": "Over",
+                "initialFractionalValue": "4/7",
+                "fractionalValue": "4/7",
+                "sourceId": 1377464286,
+                "name": "1",
                 "change": 0
               },
               {
-                "initialFractionalValue": "5/6",
-                "fractionalValue": "5/6",
-                "sourceId": 1377464131,
-                "name": "Under",
+                "initialFractionalValue": "11/8",
+                "fractionalValue": "11/8",
+                "sourceId": 1377464294,
+                "name": "2",
                 "change": 0
               }
             ]
           },
           "asian": {
             "sourceId": 195291774,
-            "structureType": 2,
-            "marketId": 12,
-            "marketName": "Total games won",
-            "choiceGroup": "36.5",
+            "structureType": 1,
+            "marketId": 11,
+            "marketName": "First set winner",
             "isLive": false,
             "fid": 195291774,
             "suspended": true,
-            "id": 311871438,
-            "marketGroup": "Total sets/games",
-            "marketPeriod": "Extra time",
+            "id": 311871437,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "1st set",
             "choices": [
               {
-                "initialFractionalValue": "5/6",
-                "fractionalValue": "5/6",
-                "sourceId": 1377464233,
-                "name": "Over",
+                "initialFractionalValue": "4/7",
+                "fractionalValue": "4/7",
+                "sourceId": 1377464286,
+                "name": "1",
                 "change": 0
               },
               {
-                "initialFractionalValue": "5/6",
-                "fractionalValue": "5/6",
-                "sourceId": 1377464131,
-                "name": "Under",
+                "initialFractionalValue": "11/8",
+                "fractionalValue": "11/8",
+                "sourceId": 1377464294,
+                "name": "2",
                 "change": 0
               }
             ]
@@ -606,6 +622,7 @@
                 "fractionalValue": "0/1",
                 "sourceId": 1376814549,
                 "name": "1",
+                "winning": true,
                 "change": -1
               },
               {
@@ -613,6 +630,7 @@
                 "fractionalValue": "0/1",
                 "sourceId": 1376814570,
                 "name": "2",
+                "winning": false,
                 "change": -1
               }
             ]

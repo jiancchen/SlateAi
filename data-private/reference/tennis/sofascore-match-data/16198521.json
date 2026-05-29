@@ -5,7 +5,7 @@
   "slateDate": "2026-05-29",
   "boardMatchId": "rg-m-nuno-borges-andrey-rublev-2026-05-29",
   "boardTitle": "Nuno Borges vs Andrey Rublev",
-  "capturedAt": "2026-05-29T02:04:06.408Z",
+  "capturedAt": "2026-05-29T04:54:40.108Z",
   "compactEvent": {
     "id": 16198521,
     "slug": "nuno-borges-andrey-rublev",
@@ -523,13 +523,23 @@
         "managerDuel": null
       }
     },
+    "pointByPoint": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
     "votes": {
       "status": 200,
       "ok": true,
       "body": {
         "vote": {
-          "vote1": 1782,
-          "vote2": 7592,
+          "vote1": 2220,
+          "vote2": 9576,
           "voteX": null
         },
         "bothTeamsToScoreVote": {

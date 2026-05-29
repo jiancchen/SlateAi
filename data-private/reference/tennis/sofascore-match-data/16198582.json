@@ -5,7 +5,7 @@
   "slateDate": "2026-05-29",
   "boardMatchId": "rg-w-jil-teichmann-karolina-muchova-2026-05-29",
   "boardTitle": "Jil Teichmann vs Karolina Muchova",
-  "capturedAt": "2026-05-29T02:04:11.514Z",
+  "capturedAt": "2026-05-29T04:54:44.701Z",
   "compactEvent": {
     "id": 16198582,
     "slug": "jil-teichmann-karolina-muchova",
@@ -500,13 +500,23 @@
         "managerDuel": null
       }
     },
+    "pointByPoint": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
     "votes": {
       "status": 200,
       "ok": true,
       "body": {
         "vote": {
-          "vote1": 276,
-          "vote2": 2438,
+          "vote1": 347,
+          "vote2": 2999,
           "voteX": null
         },
         "bothTeamsToScoreVote": {

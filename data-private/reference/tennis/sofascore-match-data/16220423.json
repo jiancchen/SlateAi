@@ -1,0 +1,3198 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/moyuka-uchijima-claire-liu#id:16220423",
+  "eventId": "16220423",
+  "slateDate": "2026-05-26",
+  "boardMatchId": "rg-w-liu-uchijima-2026-05-26",
+  "boardTitle": "Claire Liu vs Moyuka Uchijima",
+  "capturedAt": "2026-05-29T04:53:37.855Z",
+  "compactEvent": {
+    "id": 16220423,
+    "slug": "moyuka-uchijima-claire-liu",
+    "status": {
+      "code": 92,
+      "description": "Retired",
+      "type": "finished"
+    },
+    "startTimestamp": 1779786000,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "WTA",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 64,
+      "name": "Round of 128",
+      "slug": "round-of-128"
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 179300,
+      "name": "Claire Liu",
+      "shortName": "C. Liu",
+      "ranking": 182,
+      "currentRanking": 135,
+      "country": {
+        "alpha2": "US",
+        "alpha3": "USA",
+        "name": "USA",
+        "slug": "usa"
+      },
+      "playerTeamInfo": {
+        "height": 1.7,
+        "plays": "right-handed",
+        "turnedPro": "2015",
+        "prizeCurrent": 51586,
+        "prizeTotal": 2099668,
+        "birthCity": {
+          "name": "Thousand Oaks",
+          "state": "US-CA",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 22165
+        },
+        "residenceCity": {
+          "name": "Thousand Oaks",
+          "state": "US-CA",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 22165
+        },
+        "id": 429,
+        "birthplace": "Thousand Oaks, California, USA",
+        "birthDateTimestamp": 959212800,
+        "residence": "Thousand Oaks, California, USA",
+        "prizeCurrentRaw": {
+          "value": 51586,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 2099668,
+          "currency": "EUR"
+        },
+        "currentRanking": 135
+      }
+    },
+    "awayTeam": {
+      "id": 253356,
+      "name": "Moyuka Uchijima",
+      "shortName": "M. Uchijima",
+      "ranking": 107,
+      "currentRanking": 107,
+      "country": {
+        "alpha2": "JP",
+        "alpha3": "JPN",
+        "name": "Japan",
+        "slug": "japan"
+      },
+      "playerTeamInfo": {
+        "height": 1.74,
+        "plays": "right-handed",
+        "prizeCurrent": 231248,
+        "prizeTotal": 2039056,
+        "birthCity": {
+          "name": "Kuala Lumpur",
+          "country": {
+            "alpha2": "MY",
+            "alpha3": "MYS",
+            "name": "Malaysia",
+            "slug": "malaysia"
+          },
+          "id": 17985
+        },
+        "id": 861,
+        "birthplace": "Kuala Lumpur, Malaysia",
+        "birthDateTimestamp": 997488000,
+        "prizeCurrentRaw": {
+          "value": 231248,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 2039056,
+          "currency": "EUR"
+        },
+        "currentRanking": 107
+      }
+    },
+    "homeScore": {
+      "current": 1,
+      "display": 1,
+      "period1": 3,
+      "period2": 6,
+      "period3": 4,
+      "point": "0"
+    },
+    "awayScore": {
+      "current": 1,
+      "display": 1,
+      "period1": 6,
+      "period2": 0,
+      "period3": 1,
+      "point": "0"
+    },
+    "winnerCode": 1,
+    "firstToServe": 1
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "firstToServe": 1,
+          "homeTeamSeed": "Q",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "WTA",
+              "slug": "wta",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 6,
+              "country": {},
+              "id": 6,
+              "flag": "wta",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "رابطة لاعبات التنس",
+                  "hi": "चैलेंजर",
+                  "bn": "ডব্লিউটিএ",
+                  "ru": "WTA"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "WTA",
+                "slug": "wta",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 6,
+                "country": {},
+                "id": 6,
+                "flag": "wta",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "ar": "رابطة لاعبات التنس",
+                    "hi": "चैलेंजर",
+                    "bn": "ডব্লিউটিএ",
+                    "ru": "WTA"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 11562,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2577,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गारोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185246,
+            "endTimestamp": 1780704000,
+            "startTimestamp": 1779580800
+          },
+          "season": {
+            "name": "French Open Women Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85953
+          },
+          "roundInfo": {
+            "round": 64,
+            "name": "Round of 128",
+            "slug": "round-of-128"
+          },
+          "customId": "aLwbsgrbc",
+          "status": {
+            "code": 92,
+            "description": "Retired",
+            "type": "finished"
+          },
+          "winnerCode": 1,
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-9",
+            "name": "Court 9",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 21828,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب 9",
+                "hi": "कोर्ट 9",
+                "bn": "কোর্ট 9"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court 9"
+            }
+          },
+          "homeTeam": {
+            "name": "Claire Liu",
+            "slug": "liu-claire",
+            "shortName": "C. Liu",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 1511,
+            "playerTeamInfo": {
+              "height": 1.7,
+              "plays": "right-handed",
+              "turnedPro": "2015",
+              "prizeCurrent": 51586,
+              "prizeTotal": 2099668,
+              "birthCity": {
+                "name": "Thousand Oaks",
+                "state": "US-CA",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 22165
+              },
+              "residenceCity": {
+                "name": "Thousand Oaks",
+                "state": "US-CA",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 22165
+              },
+              "id": 429,
+              "birthplace": "Thousand Oaks, California, USA",
+              "birthDateTimestamp": 959212800,
+              "residence": "Thousand Oaks, California, USA",
+              "prizeCurrentRaw": {
+                "value": 51586,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 2099668,
+                "currency": "EUR"
+              },
+              "currentRanking": 135
+            },
+            "nameCode": "LIU",
+            "ranking": 182,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "US",
+              "alpha3": "USA",
+              "name": "USA",
+              "slug": "usa"
+            },
+            "id": 179300,
+            "fullName": "Claire Liu",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كلير ليو",
+                "ru": "Лю, Клэр"
+              },
+              "shortNameTranslation": {
+                "ar": "ك. ليو",
+                "bn": "সি. লিউ",
+                "hi": "सी. लियू"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Moyuka Uchijima",
+            "slug": "uchijima-moyuka",
+            "shortName": "M. Uchijima",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 2586,
+            "playerTeamInfo": {
+              "height": 1.74,
+              "plays": "right-handed",
+              "prizeCurrent": 231248,
+              "prizeTotal": 2039056,
+              "birthCity": {
+                "name": "Kuala Lumpur",
+                "country": {
+                  "alpha2": "MY",
+                  "alpha3": "MYS",
+                  "name": "Malaysia",
+                  "slug": "malaysia"
+                },
+                "id": 17985
+              },
+              "id": 861,
+              "birthplace": "Kuala Lumpur, Malaysia",
+              "birthDateTimestamp": 997488000,
+              "prizeCurrentRaw": {
+                "value": 231248,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 2039056,
+                "currency": "EUR"
+              },
+              "currentRanking": 107
+            },
+            "nameCode": "UCH",
+            "ranking": 107,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "JP",
+              "alpha3": "JPN",
+              "name": "Japan",
+              "slug": "japan"
+            },
+            "id": 253356,
+            "fullName": "Moyuka Uchijima",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "مويكا أوتشيجيما",
+                "bn": "ময়ুকা উচিজিমা",
+                "hi": "मोयुका उचिजिमा",
+                "ru": "Учижима, Моюка"
+              },
+              "shortNameTranslation": {
+                "ar": "م. أوتشيجيما"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {
+            "current": 1,
+            "display": 1,
+            "period1": 3,
+            "period2": 6,
+            "period3": 4,
+            "point": "0"
+          },
+          "awayScore": {
+            "current": 1,
+            "display": 1,
+            "period1": 6,
+            "period2": 0,
+            "period3": 1,
+            "point": "0"
+          },
+          "time": {
+            "period1": 2855,
+            "period2": 2348,
+            "period3": 1942,
+            "currentPeriodStartTimestamp": 1779791931
+          },
+          "changes": {
+            "changes": [
+              "time.currentPeriodStart"
+            ],
+            "changeTimestamp": 1779793937
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "correctAiInsight": true,
+          "id": 16220423,
+          "defaultPeriodCount": 3,
+          "slug": "moyuka-uchijima-claire-liu",
+          "currentPeriodStartTimestamp": 1779791931,
+          "startTimestamp": 1779786000,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "SG",
+            "IR",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "F"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": [
+          {
+            "period": "ALL",
+            "groups": [
+              {
+                "groupName": "Service",
+                "statisticsItems": [
+                  {
+                    "name": "Aces",
+                    "home": "1",
+                    "away": "3",
+                    "compareCode": 2,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 1,
+                    "awayValue": 3,
+                    "renderType": 1,
+                    "key": "aces"
+                  },
+                  {
+                    "name": "Double faults",
+                    "home": "2",
+                    "away": "7",
+                    "compareCode": 2,
+                    "statisticsType": "negative",
+                    "valueType": "event",
+                    "homeValue": 2,
+                    "awayValue": 7,
+                    "renderType": 1,
+                    "key": "doubleFaults"
+                  },
+                  {
+                    "name": "First serve",
+                    "home": "51/74 (69%)",
+                    "away": "37/72 (51%)",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 51,
+                    "awayValue": 37,
+                    "homeTotal": 74,
+                    "awayTotal": 72,
+                    "renderType": 1,
+                    "key": "firstServeAccuracy"
+                  },
+                  {
+                    "name": "Second serve",
+                    "home": "21/23 (91%)",
+                    "away": "28/35 (80%)",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 21,
+                    "awayValue": 28,
+                    "homeTotal": 23,
+                    "awayTotal": 35,
+                    "renderType": 1,
+                    "key": "secondServeAccuracy"
+                  },
+                  {
+                    "name": "First serve points",
+                    "home": "28/51 (55%)",
+                    "away": "19/37 (51%)",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 28,
+                    "awayValue": 19,
+                    "homeTotal": 51,
+                    "awayTotal": 37,
+                    "renderType": 1,
+                    "key": "firstServePointsAccuracy"
+                  },
+                  {
+                    "name": "Second serve points",
+                    "home": "11/23 (48%)",
+                    "away": "11/35 (31%)",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 11,
+                    "awayValue": 11,
+                    "homeTotal": 23,
+                    "awayTotal": 35,
+                    "renderType": 1,
+                    "key": "secondServePointsAccuracy"
+                  },
+                  {
+                    "name": "Service games played",
+                    "home": "10",
+                    "away": "10",
+                    "compareCode": 3,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 10,
+                    "awayValue": 10,
+                    "renderType": 1,
+                    "key": "serviceGamesTotal"
+                  },
+                  {
+                    "name": "Break points saved",
+                    "home": "4/8 (50%)",
+                    "away": "6/13 (46%)",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 4,
+                    "awayValue": 6,
+                    "homeTotal": 8,
+                    "awayTotal": 13,
+                    "renderType": 1,
+                    "key": "breakPointsSaved"
+                  }
+                ]
+              },
+              {
+                "groupName": "Points",
+                "statisticsItems": [
+                  {
+                    "name": "Total",
+                    "home": "81",
+                    "away": "65",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 81,
+                    "awayValue": 65,
+                    "renderType": 1,
+                    "key": "pointsTotal"
+                  },
+                  {
+                    "name": "Service points won",
+                    "home": "39",
+                    "away": "30",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 39,
+                    "awayValue": 30,
+                    "renderType": 1,
+                    "key": "servicePointsScored"
+                  },
+                  {
+                    "name": "Receiver points won",
+                    "home": "42",
+                    "away": "35",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 42,
+                    "awayValue": 35,
+                    "renderType": 1,
+                    "key": "receiverPointsScored"
+                  },
+                  {
+                    "name": "Max points in a row",
+                    "home": "7",
+                    "away": "5",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 7,
+                    "awayValue": 5,
+                    "renderType": 1,
+                    "key": "maxPointsInRow"
+                  }
+                ]
+              },
+              {
+                "groupName": "Games",
+                "statisticsItems": [
+                  {
+                    "name": "Total won",
+                    "home": "13",
+                    "away": "7",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 13,
+                    "awayValue": 7,
+                    "renderType": 1,
+                    "key": "gamesWon"
+                  },
+                  {
+                    "name": "Service games won",
+                    "home": "6",
+                    "away": "3",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 6,
+                    "awayValue": 3,
+                    "renderType": 1,
+                    "key": "serviceGamesWon"
+                  },
+                  {
+                    "name": "Max games in a row",
+                    "home": "8",
+                    "away": "3",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 8,
+                    "awayValue": 3,
+                    "renderType": 1,
+                    "key": "maxGamesInRow"
+                  }
+                ]
+              },
+              {
+                "groupName": "Winners",
+                "statisticsItems": [
+                  {
+                    "name": "Total",
+                    "home": "21",
+                    "away": "12",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 21,
+                    "awayValue": 12,
+                    "renderType": 1,
+                    "key": "winnersTotal"
+                  },
+                  {
+                    "name": "Forehand",
+                    "home": "11",
+                    "away": "5",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 11,
+                    "awayValue": 5,
+                    "renderType": 1,
+                    "key": "forehandWinners"
+                  },
+                  {
+                    "name": "Backhand",
+                    "home": "9",
+                    "away": "4",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 9,
+                    "awayValue": 4,
+                    "renderType": 1,
+                    "key": "backhandWinners"
+                  },
+                  {
+                    "name": "Volley",
+                    "home": "0",
+                    "away": "0",
+                    "compareCode": 3,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 0,
+                    "awayValue": 0,
+                    "renderType": 1,
+                    "key": "volleyWinners"
+                  },
+                  {
+                    "name": "Groundstroke",
+                    "home": "19",
+                    "away": "9",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 19,
+                    "awayValue": 9,
+                    "renderType": 1,
+                    "key": "groundstrokeWinners"
+                  },
+                  {
+                    "name": "Lob",
+                    "home": "0",
+                    "away": "0",
+                    "compareCode": 3,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 0,
+                    "awayValue": 0,
+                    "renderType": 1,
+                    "key": "lobWinners"
+                  },
+                  {
+                    "name": "Overhead",
+                    "home": "0",
+                    "away": "0",
+                    "compareCode": 3,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 0,
+                    "awayValue": 0,
+                    "renderType": 1,
+                    "key": "overheadWinners"
+                  },
+                  {
+                    "name": "Drop shot",
+                    "home": "1",
+                    "away": "0",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 1,
+                    "awayValue": 0,
+                    "renderType": 1,
+                    "key": "dropShotWinners"
+                  },
+                  {
+                    "name": "Return",
+                    "home": "1",
+                    "away": "0",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 1,
+                    "awayValue": 0,
+                    "renderType": 1,
+                    "key": "returnWinners"
+                  }
+                ]
+              },
+              {
+                "groupName": "Errors",
+                "statisticsItems": [
+                  {
+                    "name": "Total",
+                    "home": "14",
+                    "away": "12",
+                    "compareCode": 1,
+                    "statisticsType": "negative",
+                    "valueType": "event",
+                    "homeValue": 14,
+                    "awayValue": 12,
+                    "renderType": 1,
+                    "key": "errorsTotal"
+                  },
+                  {
+                    "name": "Forehand",
+                    "home": "5",
+                    "away": "6",
+                    "compareCode": 2,
+                    "statisticsType": "negative",
+                    "valueType": "event",
+                    "homeValue": 5,
+                    "awayValue": 6,
+                    "renderType": 1,
+                    "key": "forehandErrors"
+                  },
+                  {
+                    "name": "Backhand",
+                    "home": "9",
+                    "away": "6",
+                    "compareCode": 1,
+                    "statisticsType": "negative",
+                    "valueType": "event",
+                    "homeValue": 9,
+                    "awayValue": 6,
+                    "renderType": 1,
+                    "key": "backhandErrors"
+                  },
+                  {
+                    "name": "Groundstroke",
+                    "home": "14",
+                    "away": "12",
+                    "compareCode": 1,
+                    "statisticsType": "negative",
+                    "valueType": "event",
+                    "homeValue": 14,
+                    "awayValue": 12,
+                    "renderType": 1,
+                    "key": "groundstrokeErrors"
+                  },
+                  {
+                    "name": "Overhead stroke",
+                    "home": "0",
+                    "away": "0",
+                    "compareCode": 3,
+                    "statisticsType": "negative",
+                    "valueType": "event",
+                    "homeValue": 0,
+                    "awayValue": 0,
+                    "renderType": 1,
+                    "key": "overheadStrokeErrors"
+                  },
+                  {
+                    "name": "Return",
+                    "home": "0",
+                    "away": "0",
+                    "compareCode": 3,
+                    "statisticsType": "negative",
+                    "valueType": "event",
+                    "homeValue": 0,
+                    "awayValue": 0,
+                    "renderType": 1,
+                    "key": "returnErrors"
+                  }
+                ]
+              },
+              {
+                "groupName": "Unforced errors",
+                "statisticsItems": [
+                  {
+                    "name": "Total",
+                    "home": "39",
+                    "away": "48",
+                    "compareCode": 2,
+                    "statisticsType": "negative",
+                    "valueType": "event",
+                    "homeValue": 39,
+                    "awayValue": 48,
+                    "renderType": 1,
+                    "key": "unforcedErrorsTotal"
+                  },
+                  {
+                    "name": "Forehand",
+                    "home": "20",
+                    "away": "20",
+                    "compareCode": 3,
+                    "statisticsType": "negative",
+                    "valueType": "event",
+                    "homeValue": 20,
+                    "awayValue": 20,
+                    "renderType": 1,
+                    "key": "forehandUnforcedErrors"
+                  },
+                  {
+                    "name": "Backhand",
+                    "home": "17",
+                    "away": "21",
+                    "compareCode": 2,
+                    "statisticsType": "negative",
+                    "valueType": "event",
+                    "homeValue": 17,
+                    "awayValue": 21,
+                    "renderType": 1,
+                    "key": "backhandUnforcedErrors"
+                  },
+                  {
+                    "name": "Volley",
+                    "home": "0",
+                    "away": "0",
+                    "compareCode": 3,
+                    "statisticsType": "negative",
+                    "valueType": "event",
+                    "homeValue": 0,
+                    "awayValue": 0,
+                    "renderType": 1,
+                    "key": "volleyUnforcedErrors"
+                  },
+                  {
+                    "name": "Groundstroke",
+                    "home": "36",
+                    "away": "41",
+                    "compareCode": 2,
+                    "statisticsType": "negative",
+                    "valueType": "event",
+                    "homeValue": 36,
+                    "awayValue": 41,
+                    "renderType": 1,
+                    "key": "groundstrokeUnforcedErrors"
+                  },
+                  {
+                    "name": "Lob",
+                    "home": "0",
+                    "away": "0",
+                    "compareCode": 3,
+                    "statisticsType": "negative",
+                    "valueType": "event",
+                    "homeValue": 0,
+                    "awayValue": 0,
+                    "renderType": 1,
+                    "key": "lobUnforcedErrors"
+                  },
+                  {
+                    "name": "Drop shot",
+                    "home": "0",
+                    "away": "0",
+                    "compareCode": 3,
+                    "statisticsType": "negative",
+                    "valueType": "event",
+                    "homeValue": 0,
+                    "awayValue": 0,
+                    "renderType": 1,
+                    "key": "dropShotUnforcedErrors"
+                  }
+                ]
+              },
+              {
+                "groupName": "Return",
+                "statisticsItems": [
+                  {
+                    "name": "First serve return points",
+                    "home": "18/37 (48%)",
+                    "away": "23/51 (45%)",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 18,
+                    "awayValue": 23,
+                    "homeTotal": 37,
+                    "awayTotal": 51,
+                    "renderType": 1,
+                    "key": "firstReturnPoints"
+                  },
+                  {
+                    "name": "Second serve return points",
+                    "home": "24/35 (68%)",
+                    "away": "12/23 (52%)",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 24,
+                    "awayValue": 12,
+                    "homeTotal": 35,
+                    "awayTotal": 23,
+                    "renderType": 1,
+                    "key": "secondReturnPoints"
+                  },
+                  {
+                    "name": "Return games played",
+                    "home": "10",
+                    "away": "10",
+                    "compareCode": 3,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 10,
+                    "awayValue": 10,
+                    "renderType": 1,
+                    "key": "serviceGamesTotal"
+                  },
+                  {
+                    "name": "Break points converted",
+                    "home": "7",
+                    "away": "4",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 7,
+                    "awayValue": 4,
+                    "renderType": 1,
+                    "key": "breakPointsScored"
+                  }
+                ]
+              },
+              {
+                "groupName": "Miscellaneous",
+                "statisticsItems": [
+                  {
+                    "name": "Tiebreaks",
+                    "home": "0",
+                    "away": "0",
+                    "compareCode": 3,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 0,
+                    "awayValue": 0,
+                    "renderType": 1,
+                    "key": "tiebreaks"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "period": "1ST",
+            "groups": [
+              {
+                "groupName": "Service",
+                "statisticsItems": [
+                  {
+                    "name": "Aces",
+                    "home": "0",
+                    "away": "1",
+                    "compareCode": 2,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 0,
+                    "awayValue": 1,
+                    "renderType": 1,
+                    "key": "aces"
+                  },
+                  {
+                    "name": "Double faults",
+                    "home": "1",
+                    "away": "1",
+                    "compareCode": 3,
+                    "statisticsType": "negative",
+                    "valueType": "event",
+                    "homeValue": 1,
+                    "awayValue": 1,
+                    "renderType": 1,
+                    "key": "doubleFaults"
+                  },
+                  {
+                    "name": "First serve",
+                    "home": "22/34 (65%)",
+                    "away": "21/34 (62%)",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 22,
+                    "awayValue": 21,
+                    "homeTotal": 34,
+                    "awayTotal": 34,
+                    "renderType": 1,
+                    "key": "firstServeAccuracy"
+                  },
+                  {
+                    "name": "Second serve",
+                    "home": "11/12 (92%)",
+                    "away": "12/13 (92%)",
+                    "compareCode": 2,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 11,
+                    "awayValue": 12,
+                    "homeTotal": 12,
+                    "awayTotal": 13,
+                    "renderType": 1,
+                    "key": "secondServeAccuracy"
+                  },
+                  {
+                    "name": "First serve points",
+                    "home": "9/22 (41%)",
+                    "away": "10/21 (48%)",
+                    "compareCode": 2,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 9,
+                    "awayValue": 10,
+                    "homeTotal": 22,
+                    "awayTotal": 21,
+                    "renderType": 1,
+                    "key": "firstServePointsAccuracy"
+                  },
+                  {
+                    "name": "Second serve points",
+                    "home": "5/12 (42%)",
+                    "away": "7/13 (54%)",
+                    "compareCode": 2,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 5,
+                    "awayValue": 7,
+                    "homeTotal": 12,
+                    "awayTotal": 13,
+                    "renderType": 1,
+                    "key": "secondServePointsAccuracy"
+                  },
+                  {
+                    "name": "Service games played",
+                    "home": "5",
+                    "away": "4",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 5,
+                    "awayValue": 4,
+                    "renderType": 1,
+                    "key": "serviceGamesTotal"
+                  },
+                  {
+                    "name": "Break points saved",
+                    "home": "2/6 (33%)",
+                    "away": "2/4 (50%)",
+                    "compareCode": 2,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 2,
+                    "awayValue": 2,
+                    "homeTotal": 6,
+                    "awayTotal": 4,
+                    "renderType": 1,
+                    "key": "breakPointsSaved"
+                  }
+                ]
+              },
+              {
+                "groupName": "Points",
+                "statisticsItems": [
+                  {
+                    "name": "Service points won",
+                    "home": "14",
+                    "away": "17",
+                    "compareCode": 2,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 14,
+                    "awayValue": 17,
+                    "renderType": 1,
+                    "key": "servicePointsScored"
+                  },
+                  {
+                    "name": "Receiver points won",
+                    "home": "17",
+                    "away": "20",
+                    "compareCode": 2,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 17,
+                    "awayValue": 20,
+                    "renderType": 1,
+                    "key": "receiverPointsScored"
+                  },
+                  {
+                    "name": "Max points in a row",
+                    "home": "4",
+                    "away": "5",
+                    "compareCode": 2,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 4,
+                    "awayValue": 5,
+                    "renderType": 1,
+                    "key": "maxPointsInRow"
+                  }
+                ]
+              },
+              {
+                "groupName": "Games",
+                "statisticsItems": [
+                  {
+                    "name": "Max games in a row",
+                    "home": "2",
+                    "away": "3",
+                    "compareCode": 2,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 2,
+                    "awayValue": 3,
+                    "renderType": 1,
+                    "key": "maxGamesInRow"
+                  }
+                ]
+              },
+              {
+                "groupName": "Return",
+                "statisticsItems": [
+                  {
+                    "name": "First serve return points",
+                    "home": "11/21 (52%)",
+                    "away": "13/22 (59%)",
+                    "compareCode": 2,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 11,
+                    "awayValue": 13,
+                    "homeTotal": 21,
+                    "awayTotal": 22,
+                    "renderType": 1,
+                    "key": "firstReturnPoints"
+                  },
+                  {
+                    "name": "Second serve return points",
+                    "home": "6/13 (46%)",
+                    "away": "7/12 (58%)",
+                    "compareCode": 2,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 6,
+                    "awayValue": 7,
+                    "homeTotal": 13,
+                    "awayTotal": 12,
+                    "renderType": 1,
+                    "key": "secondReturnPoints"
+                  },
+                  {
+                    "name": "Return games played",
+                    "home": "4",
+                    "away": "5",
+                    "compareCode": 2,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 4,
+                    "awayValue": 5,
+                    "renderType": 1,
+                    "key": "serviceGamesTotal"
+                  },
+                  {
+                    "name": "Break points converted",
+                    "home": "2",
+                    "away": "4",
+                    "compareCode": 2,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 2,
+                    "awayValue": 4,
+                    "renderType": 1,
+                    "key": "breakPointsScored"
+                  }
+                ]
+              },
+              {
+                "groupName": "Miscellaneous",
+                "statisticsItems": [
+                  {
+                    "name": "Tiebreaks",
+                    "home": "0",
+                    "away": "0",
+                    "compareCode": 3,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 0,
+                    "awayValue": 0,
+                    "renderType": 1,
+                    "key": "tiebreaks"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "period": "2ND",
+            "groups": [
+              {
+                "groupName": "Service",
+                "statisticsItems": [
+                  {
+                    "name": "Aces",
+                    "home": "1",
+                    "away": "0",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 1,
+                    "awayValue": 0,
+                    "renderType": 1,
+                    "key": "aces"
+                  },
+                  {
+                    "name": "Double faults",
+                    "home": "0",
+                    "away": "3",
+                    "compareCode": 2,
+                    "statisticsType": "negative",
+                    "valueType": "event",
+                    "homeValue": 0,
+                    "awayValue": 3,
+                    "renderType": 1,
+                    "key": "doubleFaults"
+                  },
+                  {
+                    "name": "First serve",
+                    "home": "18/26 (69%)",
+                    "away": "8/19 (42%)",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 18,
+                    "awayValue": 8,
+                    "homeTotal": 26,
+                    "awayTotal": 19,
+                    "renderType": 1,
+                    "key": "firstServeAccuracy"
+                  },
+                  {
+                    "name": "Second serve",
+                    "home": "8/8 (100%)",
+                    "away": "8/11 (73%)",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 8,
+                    "awayValue": 8,
+                    "homeTotal": 8,
+                    "awayTotal": 11,
+                    "renderType": 1,
+                    "key": "secondServeAccuracy"
+                  },
+                  {
+                    "name": "First serve points",
+                    "home": "12/18 (67%)",
+                    "away": "3/8 (38%)",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 12,
+                    "awayValue": 3,
+                    "homeTotal": 18,
+                    "awayTotal": 8,
+                    "renderType": 1,
+                    "key": "firstServePointsAccuracy"
+                  },
+                  {
+                    "name": "Second serve points",
+                    "home": "4/8 (50%)",
+                    "away": "2/11 (18%)",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 4,
+                    "awayValue": 2,
+                    "homeTotal": 8,
+                    "awayTotal": 11,
+                    "renderType": 1,
+                    "key": "secondServePointsAccuracy"
+                  },
+                  {
+                    "name": "Service games played",
+                    "home": "3",
+                    "away": "3",
+                    "compareCode": 3,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 3,
+                    "awayValue": 3,
+                    "renderType": 1,
+                    "key": "serviceGamesTotal"
+                  },
+                  {
+                    "name": "Break points saved",
+                    "home": "2/2 (100%)",
+                    "away": "2/5 (40%)",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 2,
+                    "awayValue": 2,
+                    "homeTotal": 2,
+                    "awayTotal": 5,
+                    "renderType": 1,
+                    "key": "breakPointsSaved"
+                  }
+                ]
+              },
+              {
+                "groupName": "Points",
+                "statisticsItems": [
+                  {
+                    "name": "Service points won",
+                    "home": "16",
+                    "away": "5",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 16,
+                    "awayValue": 5,
+                    "renderType": 1,
+                    "key": "servicePointsScored"
+                  },
+                  {
+                    "name": "Receiver points won",
+                    "home": "14",
+                    "away": "10",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 14,
+                    "awayValue": 10,
+                    "renderType": 1,
+                    "key": "receiverPointsScored"
+                  },
+                  {
+                    "name": "Max points in a row",
+                    "home": "7",
+                    "away": "2",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 7,
+                    "awayValue": 2,
+                    "renderType": 1,
+                    "key": "maxPointsInRow"
+                  }
+                ]
+              },
+              {
+                "groupName": "Games",
+                "statisticsItems": [
+                  {
+                    "name": "Max games in a row",
+                    "home": "6",
+                    "away": "0",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 6,
+                    "awayValue": 0,
+                    "renderType": 1,
+                    "key": "maxGamesInRow"
+                  }
+                ]
+              },
+              {
+                "groupName": "Return",
+                "statisticsItems": [
+                  {
+                    "name": "First serve return points",
+                    "home": "5/8 (62%)",
+                    "away": "6/18 (33%)",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 5,
+                    "awayValue": 6,
+                    "homeTotal": 8,
+                    "awayTotal": 18,
+                    "renderType": 1,
+                    "key": "firstReturnPoints"
+                  },
+                  {
+                    "name": "Second serve return points",
+                    "home": "9/11 (81%)",
+                    "away": "4/8 (50%)",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 9,
+                    "awayValue": 4,
+                    "homeTotal": 11,
+                    "awayTotal": 8,
+                    "renderType": 1,
+                    "key": "secondReturnPoints"
+                  },
+                  {
+                    "name": "Return games played",
+                    "home": "3",
+                    "away": "3",
+                    "compareCode": 3,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 3,
+                    "awayValue": 3,
+                    "renderType": 1,
+                    "key": "serviceGamesTotal"
+                  },
+                  {
+                    "name": "Break points converted",
+                    "home": "3",
+                    "away": "0",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 3,
+                    "awayValue": 0,
+                    "renderType": 1,
+                    "key": "breakPointsScored"
+                  }
+                ]
+              },
+              {
+                "groupName": "Miscellaneous",
+                "statisticsItems": [
+                  {
+                    "name": "Tiebreaks",
+                    "home": "0",
+                    "away": "0",
+                    "compareCode": 3,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 0,
+                    "awayValue": 0,
+                    "renderType": 1,
+                    "key": "tiebreaks"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "period": "3RD",
+            "groups": [
+              {
+                "groupName": "Service",
+                "statisticsItems": [
+                  {
+                    "name": "Aces",
+                    "home": "0",
+                    "away": "2",
+                    "compareCode": 2,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 0,
+                    "awayValue": 2,
+                    "renderType": 1,
+                    "key": "aces"
+                  },
+                  {
+                    "name": "Double faults",
+                    "home": "1",
+                    "away": "3",
+                    "compareCode": 2,
+                    "statisticsType": "negative",
+                    "valueType": "event",
+                    "homeValue": 1,
+                    "awayValue": 3,
+                    "renderType": 1,
+                    "key": "doubleFaults"
+                  },
+                  {
+                    "name": "First serve",
+                    "home": "10/14 (71%)",
+                    "away": "12/19 (63%)",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 10,
+                    "awayValue": 12,
+                    "homeTotal": 14,
+                    "awayTotal": 19,
+                    "renderType": 1,
+                    "key": "firstServeAccuracy"
+                  },
+                  {
+                    "name": "Second serve",
+                    "home": "3/4 (75%)",
+                    "away": "5/8 (63%)",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 3,
+                    "awayValue": 5,
+                    "homeTotal": 4,
+                    "awayTotal": 8,
+                    "renderType": 1,
+                    "key": "secondServeAccuracy"
+                  },
+                  {
+                    "name": "First serve points",
+                    "home": "7/10 (70%)",
+                    "away": "6/12 (50%)",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 7,
+                    "awayValue": 6,
+                    "homeTotal": 10,
+                    "awayTotal": 12,
+                    "renderType": 1,
+                    "key": "firstServePointsAccuracy"
+                  },
+                  {
+                    "name": "Second serve points",
+                    "home": "2/4 (50%)",
+                    "away": "2/7 (29%)",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 2,
+                    "awayValue": 2,
+                    "homeTotal": 4,
+                    "awayTotal": 7,
+                    "renderType": 1,
+                    "key": "secondServePointsAccuracy"
+                  },
+                  {
+                    "name": "Service games played",
+                    "home": "2",
+                    "away": "3",
+                    "compareCode": 2,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 2,
+                    "awayValue": 3,
+                    "renderType": 1,
+                    "key": "serviceGamesTotal"
+                  },
+                  {
+                    "name": "Break points saved",
+                    "home": "0/0 (0%)",
+                    "away": "2/4 (50%)",
+                    "compareCode": 2,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 0,
+                    "awayValue": 2,
+                    "homeTotal": 0,
+                    "awayTotal": 4,
+                    "renderType": 1,
+                    "key": "breakPointsSaved"
+                  }
+                ]
+              },
+              {
+                "groupName": "Points",
+                "statisticsItems": [
+                  {
+                    "name": "Service points won",
+                    "home": "9",
+                    "away": "8",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 9,
+                    "awayValue": 8,
+                    "renderType": 1,
+                    "key": "servicePointsScored"
+                  },
+                  {
+                    "name": "Receiver points won",
+                    "home": "11",
+                    "away": "5",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 11,
+                    "awayValue": 5,
+                    "renderType": 1,
+                    "key": "receiverPointsScored"
+                  },
+                  {
+                    "name": "Max points in a row",
+                    "home": "6",
+                    "away": "2",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 6,
+                    "awayValue": 2,
+                    "renderType": 1,
+                    "key": "maxPointsInRow"
+                  }
+                ]
+              },
+              {
+                "groupName": "Games",
+                "statisticsItems": [
+                  {
+                    "name": "Max games in a row",
+                    "home": "2",
+                    "away": "1",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 2,
+                    "awayValue": 1,
+                    "renderType": 1,
+                    "key": "maxGamesInRow"
+                  }
+                ]
+              },
+              {
+                "groupName": "Return",
+                "statisticsItems": [
+                  {
+                    "name": "First serve return points",
+                    "home": "6/12 (50%)",
+                    "away": "3/10 (30%)",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 6,
+                    "awayValue": 3,
+                    "homeTotal": 12,
+                    "awayTotal": 10,
+                    "renderType": 1,
+                    "key": "firstReturnPoints"
+                  },
+                  {
+                    "name": "Second serve return points",
+                    "home": "5/7 (71%)",
+                    "away": "2/4 (50%)",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "team",
+                    "homeValue": 5,
+                    "awayValue": 2,
+                    "homeTotal": 7,
+                    "awayTotal": 4,
+                    "renderType": 1,
+                    "key": "secondReturnPoints"
+                  },
+                  {
+                    "name": "Return games played",
+                    "home": "3",
+                    "away": "2",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 3,
+                    "awayValue": 2,
+                    "renderType": 1,
+                    "key": "serviceGamesTotal"
+                  },
+                  {
+                    "name": "Break points converted",
+                    "home": "2",
+                    "away": "0",
+                    "compareCode": 1,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 2,
+                    "awayValue": 0,
+                    "renderType": 1,
+                    "key": "breakPointsScored"
+                  }
+                ]
+              },
+              {
+                "groupName": "Miscellaneous",
+                "statisticsItems": [
+                  {
+                    "name": "Tiebreaks",
+                    "home": "0",
+                    "away": "0",
+                    "compareCode": 3,
+                    "statisticsType": "positive",
+                    "valueType": "event",
+                    "homeValue": 0,
+                    "awayValue": 0,
+                    "renderType": 1,
+                    "key": "tiebreaks"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": {
+          "homeWins": 1,
+          "awayWins": 0,
+          "draws": 0
+        },
+        "managerDuel": null
+      }
+    },
+    "pointByPoint": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "pointByPoint": [
+          {
+            "set": 3,
+            "games": [
+              {
+                "game": 5,
+                "points": [
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "0",
+                    "pointDescription": 2,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "0",
+                    "pointDescription": 2,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "0",
+                    "pointDescription": 0,
+                    "homePointType": 2,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 2,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "30",
+                    "pointDescription": 1,
+                    "homePointType": 2,
+                    "awayPointType": 1
+                  }
+                ],
+                "score": {
+                  "homeScore": 4,
+                  "awayScore": 1,
+                  "serving": 2,
+                  "scoring": 1
+                }
+              },
+              {
+                "game": 4,
+                "points": [
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "0",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "15",
+                    "pointDescription": 2,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  }
+                ],
+                "score": {
+                  "homeScore": 3,
+                  "awayScore": 1,
+                  "serving": 1,
+                  "scoring": 1
+                }
+              },
+              {
+                "game": 3,
+                "points": [
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "30",
+                    "pointDescription": 1,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "A",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  }
+                ],
+                "score": {
+                  "homeScore": 2,
+                  "awayScore": 1,
+                  "serving": 2,
+                  "scoring": 2
+                }
+              },
+              {
+                "game": 2,
+                "points": [
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "0",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "0",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "A",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  }
+                ],
+                "score": {
+                  "homeScore": 2,
+                  "awayScore": 0,
+                  "serving": 1,
+                  "scoring": 1
+                }
+              }
+            ]
+          },
+          {
+            "set": 2,
+            "games": [
+              {
+                "game": 7,
+                "points": [
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "15",
+                    "pointDescription": 2,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 3,
+                    "awayPointType": 5
+                  }
+                ],
+                "score": {
+                  "homeScore": 6,
+                  "awayScore": 0,
+                  "serving": 2,
+                  "scoring": -1
+                }
+              },
+              {
+                "game": 6,
+                "points": [
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 3,
+                    "awayPointType": 5
+                  }
+                ],
+                "score": {
+                  "homeScore": 6,
+                  "awayScore": 0,
+                  "serving": 1,
+                  "scoring": 1
+                }
+              },
+              {
+                "game": 5,
+                "points": [
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "0",
+                    "pointDescription": 2,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "0",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "0",
+                    "pointDescription": 0,
+                    "homePointType": 2,
+                    "awayPointType": 5
+                  }
+                ],
+                "score": {
+                  "homeScore": 5,
+                  "awayScore": 0,
+                  "serving": 2,
+                  "scoring": 1
+                }
+              },
+              {
+                "game": 4,
+                "points": [
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "0",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "0",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "A",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "A",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 2
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "A",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  }
+                ],
+                "score": {
+                  "homeScore": 4,
+                  "awayScore": 0,
+                  "serving": 1,
+                  "scoring": 1
+                }
+              },
+              {
+                "game": 3,
+                "points": [
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "0",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "30",
+                    "pointDescription": 2,
+                    "homePointType": 2,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "A",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 2,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "A",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 2,
+                    "awayPointType": 5
+                  }
+                ],
+                "score": {
+                  "homeScore": 3,
+                  "awayScore": 0,
+                  "serving": 2,
+                  "scoring": 1
+                }
+              },
+              {
+                "game": 2,
+                "points": [
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 2
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "A",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  }
+                ],
+                "score": {
+                  "homeScore": 2,
+                  "awayScore": 0,
+                  "serving": 1,
+                  "scoring": 1
+                }
+              },
+              {
+                "game": 1,
+                "points": [
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "15",
+                    "pointDescription": 2,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 2,
+                    "awayPointType": 5
+                  }
+                ],
+                "score": {
+                  "homeScore": 1,
+                  "awayScore": 0,
+                  "serving": 2,
+                  "scoring": 1
+                }
+              }
+            ]
+          },
+          {
+            "set": 1,
+            "games": [
+              {
+                "game": 9,
+                "points": [
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "15",
+                    "pointDescription": 2,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 3
+                  }
+                ],
+                "score": {
+                  "homeScore": 3,
+                  "awayScore": 6,
+                  "serving": 1,
+                  "scoring": 2
+                }
+              },
+              {
+                "game": 8,
+                "points": [
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 3
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 3
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 2,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "A",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 2,
+                    "awayPointType": 5
+                  }
+                ],
+                "score": {
+                  "homeScore": 3,
+                  "awayScore": 5,
+                  "serving": 2,
+                  "scoring": 1
+                }
+              },
+              {
+                "game": 7,
+                "points": [
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 2
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "A",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 2
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "A",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 2
+                  }
+                ],
+                "score": {
+                  "homeScore": 2,
+                  "awayScore": 5,
+                  "serving": 1,
+                  "scoring": 2
+                }
+              },
+              {
+                "game": 6,
+                "points": [
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  }
+                ],
+                "score": {
+                  "homeScore": 2,
+                  "awayScore": 4,
+                  "serving": 2,
+                  "scoring": 2
+                }
+              },
+              {
+                "game": 5,
+                "points": [
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  }
+                ],
+                "score": {
+                  "homeScore": 2,
+                  "awayScore": 3,
+                  "serving": 1,
+                  "scoring": 1
+                }
+              },
+              {
+                "game": 4,
+                "points": [
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "0",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 2,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "A",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "A",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 2,
+                    "awayPointType": 5
+                  }
+                ],
+                "score": {
+                  "homeScore": 1,
+                  "awayScore": 3,
+                  "serving": 2,
+                  "scoring": 1
+                }
+              },
+              {
+                "game": 3,
+                "points": [
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "A",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 2
+                  }
+                ],
+                "score": {
+                  "homeScore": 0,
+                  "awayScore": 3,
+                  "serving": 1,
+                  "scoring": 2
+                }
+              },
+              {
+                "game": 2,
+                "points": [
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "15",
+                    "pointDescription": 1,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "30",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 2,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "A",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "40",
+                    "awayPoint": "A",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  }
+                ],
+                "score": {
+                  "homeScore": 0,
+                  "awayScore": 2,
+                  "serving": 2,
+                  "scoring": 2
+                }
+              },
+              {
+                "game": 1,
+                "points": [
+                  {
+                    "homePoint": "0",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "15",
+                    "pointDescription": 0,
+                    "homePointType": 1,
+                    "awayPointType": 5
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "30",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 1
+                  },
+                  {
+                    "homePoint": "15",
+                    "awayPoint": "40",
+                    "pointDescription": 0,
+                    "homePointType": 5,
+                    "awayPointType": 2
+                  }
+                ],
+                "score": {
+                  "homeScore": 0,
+                  "awayScore": 1,
+                  "serving": 1,
+                  "scoring": 2
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "votes": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "vote": {
+          "vote1": 2627,
+          "vote2": 1559,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": []
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "home": {
+          "fractionalValue": "67/100",
+          "expected": 60,
+          "actual": 43,
+          "id": 22076600
+        },
+        "away": {
+          "fractionalValue": "6/5",
+          "expected": 45,
+          "actual": 40,
+          "id": 22076601
+        }
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "featured": {
+          "default": {
+            "sourceId": 195088876,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195088876,
+            "suspended": false,
+            "id": 311120031,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "31/50",
+                "fractionalValue": "67/100",
+                "sourceId": 1351732641,
+                "name": "1",
+                "winning": true,
+                "change": 1
+              },
+              {
+                "initialFractionalValue": "13/10",
+                "fractionalValue": "6/5",
+                "sourceId": 1351732728,
+                "name": "2",
+                "winning": false,
+                "change": -1
+              }
+            ]
+          },
+          "asian": {
+            "sourceId": 195088876,
+            "structureType": 2,
+            "marketId": 12,
+            "marketName": "Total games won",
+            "choiceGroup": "21.5",
+            "isLive": false,
+            "fid": 195088876,
+            "suspended": false,
+            "id": 311125940,
+            "marketGroup": "Total sets/games",
+            "marketPeriod": "Extra time",
+            "choices": [
+              {
+                "initialFractionalValue": "10/11",
+                "fractionalValue": "5/6",
+                "sourceId": 1353362439,
+                "name": "Over",
+                "winning": false,
+                "change": -1
+              },
+              {
+                "initialFractionalValue": "4/5",
+                "fractionalValue": "5/6",
+                "sourceId": 1353362430,
+                "name": "Under",
+                "winning": true,
+                "change": 1
+              }
+            ]
+          },
+          "fullTime": {
+            "sourceId": 195088876,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195088876,
+            "suspended": false,
+            "id": 311120031,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "31/50",
+                "fractionalValue": "67/100",
+                "sourceId": 1351732641,
+                "name": "1",
+                "winning": true,
+                "change": 1
+              },
+              {
+                "initialFractionalValue": "13/10",
+                "fractionalValue": "6/5",
+                "sourceId": 1351732728,
+                "name": "2",
+                "winning": false,
+                "change": -1
+              }
+            ]
+          }
+        },
+        "hasMoreOdds": true
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 396,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 1,
+          "wins": 4,
+          "aces": 5,
+          "firstServePointsScored": 140,
+          "firstServePointsTotal": 228,
+          "firstServeTotal": 312,
+          "secondServePointsScored": 49,
+          "secondServePointsTotal": 79,
+          "secondServeTotal": 84,
+          "breakPointsScored": 26,
+          "breakPointsTotal": 44,
+          "opponentBreakPointsTotal": 25,
+          "opponentBreakPointsScored": 12,
+          "winnersTotal": 53,
+          "unforcedErrorsTotal": 72,
+          "doubleFaults": 5,
+          "avgDoubleFaults": 1,
+          "firstServePercentage": 73.076923076923,
+          "firstServePointsWonPercentage": 61.40350877193,
+          "secondServePercentage": 94.047619047619,
+          "secondServePointsWonPercentage": 58.333333333333,
+          "avgAces": 1,
+          "breakPointsSavedPercentage": 52,
+          "breakPointsSavedConvertedPercentage": 59.090909090909,
+          "tiebreakWinPercentage": 100,
+          "id": 92803,
+          "matches": 5,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 107,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 0,
+          "wins": 0,
+          "aces": 3,
+          "firstServePointsScored": 19,
+          "firstServePointsTotal": 37,
+          "firstServeTotal": 72,
+          "secondServePointsScored": 11,
+          "secondServePointsTotal": 28,
+          "secondServeTotal": 35,
+          "breakPointsScored": 4,
+          "breakPointsTotal": 8,
+          "opponentBreakPointsTotal": 13,
+          "opponentBreakPointsScored": 7,
+          "winnersTotal": 12,
+          "unforcedErrorsTotal": 48,
+          "doubleFaults": 7,
+          "avgDoubleFaults": 7,
+          "firstServePercentage": 51.388888888889,
+          "firstServePointsWonPercentage": 51.351351351351,
+          "secondServePercentage": 80,
+          "secondServePointsWonPercentage": 31.428571428571,
+          "avgAces": 3,
+          "breakPointsSavedPercentage": 46.153846153846,
+          "breakPointsSavedConvertedPercentage": 50,
+          "tiebreakWinPercentage": 0,
+          "id": 93430,
+          "matches": 1,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    }
+  }
+}

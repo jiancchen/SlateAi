@@ -5,7 +5,7 @@
   "slateDate": "2026-05-29",
   "boardMatchId": "rg-m-quentin-halys-alexander-zverev-2026-05-29",
   "boardTitle": "Quentin Halys vs Alexander Zverev",
-  "capturedAt": "2026-05-29T02:04:09.747Z",
+  "capturedAt": "2026-05-29T04:54:42.836Z",
   "compactEvent": {
     "id": 16198516,
     "slug": "quentin-halys-alexander-zverev",
@@ -525,13 +525,23 @@
         "managerDuel": null
       }
     },
+    "pointByPoint": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
     "votes": {
       "status": 200,
       "ok": true,
       "body": {
         "vote": {
-          "vote1": 782,
-          "vote2": 6708,
+          "vote1": 904,
+          "vote2": 7803,
           "voteX": null
         },
         "bothTeamsToScoreVote": {
@@ -562,8 +572,8 @@
       "body": {
         "home": null,
         "away": {
-          "fractionalValue": "3/50",
-          "expected": 94,
+          "fractionalValue": "1/20",
+          "expected": 95,
           "actual": 91,
           "id": 22127005
         }
@@ -588,14 +598,14 @@
             "choices": [
               {
                 "initialFractionalValue": "9/1",
-                "fractionalValue": "12/1",
+                "fractionalValue": "10/1",
                 "sourceId": 1385864578,
                 "name": "1",
                 "change": 1
               },
               {
                 "initialFractionalValue": "3/50",
-                "fractionalValue": "1/25",
+                "fractionalValue": "1/20",
                 "sourceId": 1385864583,
                 "name": "2",
                 "change": -1
@@ -617,17 +627,17 @@
             "choices": [
               {
                 "initialFractionalValue": "5/6",
-                "fractionalValue": "10/11",
+                "fractionalValue": "5/6",
                 "sourceId": 1386587933,
                 "name": "Over",
-                "change": 1
+                "change": 0
               },
               {
                 "initialFractionalValue": "5/6",
-                "fractionalValue": "4/5",
+                "fractionalValue": "5/6",
                 "sourceId": 1386587650,
                 "name": "Under",
-                "change": -1
+                "change": 0
               }
             ]
           },
@@ -645,14 +655,14 @@
             "choices": [
               {
                 "initialFractionalValue": "9/1",
-                "fractionalValue": "12/1",
+                "fractionalValue": "10/1",
                 "sourceId": 1385864578,
                 "name": "1",
                 "change": 1
               },
               {
                 "initialFractionalValue": "3/50",
-                "fractionalValue": "1/25",
+                "fractionalValue": "1/20",
                 "sourceId": 1385864583,
                 "name": "2",
                 "change": -1

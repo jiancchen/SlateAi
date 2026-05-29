@@ -5,7 +5,7 @@
   "slateDate": "2026-05-29",
   "boardMatchId": "rg-m-alex-michelsen-rafael-jodar-2026-05-29",
   "boardTitle": "Alex Michelsen vs Rafael Jodar",
-  "capturedAt": "2026-05-29T02:04:07.091Z",
+  "capturedAt": "2026-05-29T04:54:40.666Z",
   "compactEvent": {
     "id": 16198528,
     "slug": "rafael-jodar-alex-michelsen",
@@ -471,13 +471,23 @@
         "managerDuel": null
       }
     },
+    "pointByPoint": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
     "votes": {
       "status": 200,
       "ok": true,
       "body": {
         "vote": {
-          "vote1": 878,
-          "vote2": 8665,
+          "vote1": 1112,
+          "vote2": 10287,
           "voteX": null
         },
         "bothTeamsToScoreVote": {
@@ -508,8 +518,8 @@
       "body": {
         "home": null,
         "away": {
-          "fractionalValue": "1/5",
-          "expected": 83,
+          "fractionalValue": "17/100",
+          "expected": 86,
           "actual": 94,
           "id": 22125029
         }

@@ -5,7 +5,7 @@
   "slateDate": "2026-05-29",
   "boardMatchId": "rg-m-thiago-agustin-tirante-pablo-carreno-busta-2026-05-29",
   "boardTitle": "Thiago Agustin Tirante vs Pablo Carreno Busta",
-  "capturedAt": "2026-05-29T02:04:06.910Z",
+  "capturedAt": "2026-05-29T04:54:40.313Z",
   "compactEvent": {
     "id": 16198520,
     "slug": "thiago-agustin-tirante-pablo-carreno-busta",
@@ -507,13 +507,23 @@
         "managerDuel": null
       }
     },
+    "pointByPoint": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
     "votes": {
       "status": 200,
       "ok": true,
       "body": {
         "vote": {
-          "vote1": 6277,
-          "vote2": 1653,
+          "vote1": 7850,
+          "vote2": 2082,
           "voteX": null
         },
         "bothTeamsToScoreVote": {

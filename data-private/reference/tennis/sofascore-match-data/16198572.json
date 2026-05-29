@@ -5,7 +5,7 @@
   "slateDate": "2026-05-29",
   "boardMatchId": "rg-w-solana-sierra-sorana-cirstea-2026-05-29",
   "boardTitle": "Solana Sierra vs Sorana Cirstea",
-  "capturedAt": "2026-05-29T02:04:11.306Z",
+  "capturedAt": "2026-05-29T04:54:44.181Z",
   "compactEvent": {
     "id": 16198572,
     "slug": "solana-sierra-sorana-cirstea",
@@ -495,13 +495,23 @@
         "managerDuel": null
       }
     },
+    "pointByPoint": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
     "votes": {
       "status": 200,
       "ok": true,
       "body": {
         "vote": {
-          "vote1": 709,
-          "vote2": 3338,
+          "vote1": 889,
+          "vote2": 4152,
           "voteX": null
         },
         "bothTeamsToScoreVote": {

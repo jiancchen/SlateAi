@@ -5,7 +5,7 @@
   "slateDate": "2026-05-29",
   "boardMatchId": "rg-m-alex-de-minaur-jakub-mensik-2026-05-29",
   "boardTitle": "Alex de Minaur vs Jakub Mensik",
-  "capturedAt": "2026-05-29T02:04:07.452Z",
+  "capturedAt": "2026-05-29T04:54:40.887Z",
   "compactEvent": {
     "id": 16198527,
     "slug": "jakub-mensik-alex-de-minaur",
@@ -493,13 +493,23 @@
         "managerDuel": null
       }
     },
+    "pointByPoint": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
     "votes": {
       "status": 200,
       "ok": true,
       "body": {
         "vote": {
-          "vote1": 6994,
-          "vote2": 1373,
+          "vote1": 8492,
+          "vote2": 1667,
           "voteX": null
         },
         "bothTeamsToScoreVote": {

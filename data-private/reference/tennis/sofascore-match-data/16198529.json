@@ -5,7 +5,7 @@
   "slateDate": "2026-05-29",
   "boardMatchId": "rg-m-karen-khachanov-jesper-de-jong-2026-05-29",
   "boardTitle": "Karen Khachanov vs Jesper de Jong",
-  "capturedAt": "2026-05-29T02:04:07.826Z",
+  "capturedAt": "2026-05-29T04:54:41.098Z",
   "compactEvent": {
     "id": 16198529,
     "slug": "jesper-de-jong-karen-khachanov",
@@ -510,13 +510,23 @@
         "managerDuel": null
       }
     },
+    "pointByPoint": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
     "votes": {
       "status": 200,
       "ok": true,
       "body": {
         "vote": {
-          "vote1": 6535,
-          "vote2": 1034,
+          "vote1": 7872,
+          "vote2": 1224,
           "voteX": null
         },
         "bothTeamsToScoreVote": {

@@ -210,6 +210,7 @@ const main = async () => {
       event: eventPayload,
       statistics: await fetchJson(page, `event/${eventId}/statistics`, sourceUrl),
       h2h: await fetchJson(page, `event/${eventId}/h2h`, sourceUrl),
+      pointByPoint: await fetchJson(page, `event/${eventId}/point-by-point`, sourceUrl),
       votes: await fetchJson(page, `event/${eventId}/votes`, sourceUrl),
       tennisPower: await fetchJson(page, `event/${eventId}/tennis-power`, sourceUrl),
       winningOdds: await fetchJson(page, `event/${eventId}/provider/1/winning-odds`, sourceUrl),

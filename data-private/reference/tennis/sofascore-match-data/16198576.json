@@ -5,7 +5,7 @@
   "slateDate": "2026-05-29",
   "boardMatchId": "rg-w-elina-svitolina-tamara-korpatsch-2026-05-29",
   "boardTitle": "Elina Svitolina vs Tamara Korpatsch",
-  "capturedAt": "2026-05-29T02:04:12.054Z",
+  "capturedAt": "2026-05-29T04:54:45.279Z",
   "compactEvent": {
     "id": 16198576,
     "slug": "tamara-korpatsch-elina-svitolina",
@@ -520,13 +520,23 @@
         "managerDuel": null
       }
     },
+    "pointByPoint": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
     "votes": {
       "status": 200,
       "ok": true,
       "body": {
         "vote": {
-          "vote1": 3338,
-          "vote2": 249,
+          "vote1": 3969,
+          "vote2": 317,
           "voteX": null
         },
         "bothTeamsToScoreVote": {

@@ -5,7 +5,7 @@
   "slateDate": "2026-05-29",
   "boardMatchId": "rg-w-peyton-stearns-belinda-bencic-2026-05-29",
   "boardTitle": "Peyton Stearns vs Belinda Bencic",
-  "capturedAt": "2026-05-29T02:04:12.407Z",
+  "capturedAt": "2026-05-29T04:54:45.656Z",
   "compactEvent": {
     "id": 16198574,
     "slug": "peyton-stearns-belinda-bencic",
@@ -496,13 +496,23 @@
         "managerDuel": null
       }
     },
+    "pointByPoint": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
     "votes": {
       "status": 200,
       "ok": true,
       "body": {
         "vote": {
-          "vote1": 317,
-          "vote2": 3268,
+          "vote1": 418,
+          "vote2": 4008,
           "voteX": null
         },
         "bothTeamsToScoreVote": {

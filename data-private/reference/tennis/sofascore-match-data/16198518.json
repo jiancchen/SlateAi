@@ -5,7 +5,7 @@
   "slateDate": "2026-05-29",
   "boardMatchId": "rg-m-joao-fonseca-novak-djokovic-2026-05-29",
   "boardTitle": "Joao Fonseca vs Novak Djokovic",
-  "capturedAt": "2026-05-29T02:04:09.356Z",
+  "capturedAt": "2026-05-29T04:54:42.457Z",
   "compactEvent": {
     "id": 16198518,
     "slug": "joao-fonseca-novak-djokovic",
@@ -498,13 +498,23 @@
         "managerDuel": null
       }
     },
+    "pointByPoint": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
     "votes": {
       "status": 200,
       "ok": true,
       "body": {
         "vote": {
-          "vote1": 6070,
-          "vote2": 12052,
+          "vote1": 6862,
+          "vote2": 13915,
           "voteX": null
         },
         "bothTeamsToScoreVote": {
