@@ -5,6 +5,7 @@ import argparse
 import json
 import re
 import sqlite3
+import unicodedata
 from pathlib import Path
 from typing import Any
 
@@ -18,9 +19,21 @@ PUBLISHED_SLATES_DIR = ROOT / "published-data" / "slates"
 
 
 def normalize_name(value: str | None) -> str:
-    value = value or ""
+    value = unicodedata.normalize("NFKD", value or "").encode("ascii", "ignore").decode("ascii")
     value = re.sub(r"[^a-zA-Z0-9]+", " ", value).strip().lower()
     return re.sub(r"\s+", " ", value)
+
+
+def names_likely_match(left: str | None, right: str | None) -> bool:
+    left_norm = normalize_name(left)
+    right_norm = normalize_name(right)
+    if not left_norm or not right_norm:
+        return False
+    if left_norm == right_norm or left_norm in right_norm or right_norm in left_norm:
+        return True
+    left_tokens = set(left_norm.split())
+    right_tokens = set(right_norm.split())
+    return left_tokens.issubset(right_tokens) or right_tokens.issubset(left_tokens)
 
 
 def read_json(path: Path) -> Any:
@@ -2257,6 +2270,15 @@ def grade_predictions(conn: sqlite3.Connection, slate_date: str) -> dict[str, An
         for result in results:
             result_names = {result["player1_normalized_name"], result["player2_normalized_name"]}
             if player_names == result_names:
+                return result
+        for result in results:
+            if (
+                names_likely_match(match["player1_name"], result["player1_name"])
+                and names_likely_match(match["player2_name"], result["player2_name"])
+            ) or (
+                names_likely_match(match["player1_name"], result["player2_name"])
+                and names_likely_match(match["player2_name"], result["player1_name"])
+            ):
                 return result
         return None
 

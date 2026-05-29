@@ -6,6 +6,7 @@ import json
 import math
 import re
 import sqlite3
+import unicodedata
 import warnings
 from dataclasses import dataclass
 from pathlib import Path
@@ -41,7 +42,7 @@ def normalize_name(value: str | None) -> str:
         if pd.isna(value):
             return ""
         value = str(value)
-    value = value or ""
+    value = unicodedata.normalize("NFKD", value or "").encode("ascii", "ignore").decode("ascii")
     value = re.sub(r"[^a-zA-Z0-9]+", " ", value).strip().lower()
     return re.sub(r"\s+", " ", value)
 
@@ -58,6 +59,39 @@ def match_pair_key(left: str | None, right: str | None) -> str:
     if not all(names):
         return ""
     return " vs ".join(sorted(names))
+
+
+def names_likely_match(left: str | None, right: str | None) -> bool:
+    left_norm = normalize_name(left)
+    right_norm = normalize_name(right)
+    if not left_norm or not right_norm:
+        return False
+    if left_norm == right_norm or left_norm in right_norm or right_norm in left_norm:
+        return True
+    left_tokens = set(left_norm.split())
+    right_tokens = set(right_norm.split())
+    return left_tokens.issubset(right_tokens) or right_tokens.issubset(left_tokens)
+
+
+def result_matches_players(result: pd.Series, player1: str | None, player2: str | None) -> bool:
+    result_p1 = result.get("player1_normalized_name") or result.get("player1_name")
+    result_p2 = result.get("player2_normalized_name") or result.get("player2_name")
+    return (
+        names_likely_match(player1, result_p1) and names_likely_match(player2, result_p2)
+    ) or (
+        names_likely_match(player1, result_p2) and names_likely_match(player2, result_p1)
+    )
+
+
+def fuzzy_result_for_match(match: pd.Series, results_for_day: pd.DataFrame) -> pd.Series | None:
+    if results_for_day.empty:
+        return None
+    player1 = match.get("player1_normalized_name") or match.get("player1_name")
+    player2 = match.get("player2_normalized_name") or match.get("player2_name")
+    for _, result in results_for_day.iterrows():
+        if result_matches_players(result, player1, player2):
+            return result
+    return None
 
 
 def implied_from_american(odds: float | None) -> float | None:
@@ -396,6 +430,23 @@ def build_samples(tables: dict[str, pd.DataFrame]) -> pd.DataFrame:
         base["result_status"] = base["result_status"].combine_first(base["status"])
         base["result_completed"] = pd.to_numeric(base["completed"], errors="coerce")
         base["result_scoreline"] = base["scoreline"]
+        missing_result = base["actual_winner_name"].isna()
+        if missing_result.any():
+            for index, row in base[missing_result].iterrows():
+                day_results = result_labels[result_labels["slate_date"].astype(str) == str(row.get("slate_date") or "")]
+                fuzzy = fuzzy_result_for_match(row, day_results)
+                if fuzzy is None:
+                    continue
+                base.at[index, "winner_name"] = fuzzy.get("winner_name")
+                base.at[index, "winner_normalized_name"] = fuzzy.get("winner_normalized_name")
+                base.at[index, "status"] = fuzzy.get("status")
+                base.at[index, "completed"] = fuzzy.get("completed")
+                base.at[index, "scoreline"] = fuzzy.get("scoreline")
+                base.at[index, "event_id"] = fuzzy.get("event_id")
+                base.at[index, "actual_winner_name"] = fuzzy.get("winner_name")
+                base.at[index, "result_status"] = fuzzy.get("status")
+                base.at[index, "result_completed"] = pd.to_numeric(pd.Series([fuzzy.get("completed")]), errors="coerce").iloc[0]
+                base.at[index, "result_scoreline"] = fuzzy.get("scoreline")
         direct_hit = base["desk_pick_name"].map(normalize_name).eq(base["winner_normalized_name"].fillna(""))
         base["hit"] = base["hit"].combine_first(direct_hit.where(base["winner_normalized_name"].notna()).astype("float"))
     else:
@@ -452,11 +503,15 @@ def build_samples(tables: dict[str, pd.DataFrame]) -> pd.DataFrame:
             df = df.drop(columns=[col for col in df.columns if col.startswith(drop_prefixes)], errors="ignore")
 
     df["winner_norm"] = df["actual_winner_name"].map(normalize_name)
-    df["label_p1_win"] = np.where(
-        df["winner_norm"].eq(df["player1_normalized_name"]),
-        1,
-        np.where(df["winner_norm"].eq(df["player2_normalized_name"]), 0, np.nan),
-    )
+    p1_win = [
+        1 if names_likely_match(winner, player1) else 0 if names_likely_match(winner, player2) else np.nan
+        for winner, player1, player2 in zip(
+            df["actual_winner_name"],
+            df["player1_name"],
+            df["player2_name"],
+        )
+    ]
+    df["label_p1_win"] = p1_win
     feature_bases = [
         "rank_quality",
         "ranking_points",
