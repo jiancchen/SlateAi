@@ -503,5 +503,41 @@ export const mlbPropPerformanceByDate: Record<string, DailyPropSummary> = {
       "Casey Schmitt Over 1.5 total bases",
       "Esmerlyn Valdez Over 1.5 total bases"
     ]
+  },
+  "2026-05-28": {
+    "overall": {
+      "hits": 8,
+      "total": 26,
+      "hitRate": 30.8
+    },
+    "byType": {
+      "totalBases": {
+        "hits": 3,
+        "total": 13,
+        "hitRate": 23.1
+      },
+      "singles": {
+        "hits": 1,
+        "total": 4,
+        "hitRate": 25
+      },
+      "pitcherStrikeouts": {
+        "hits": 4,
+        "total": 9,
+        "hitRate": 44.4
+      }
+    },
+    "topHits": [
+      "Munetaka Murakami Over 1.5 total bases",
+      "Nathan Lukes Over 0.5 singles",
+      "Payton Tolle Over 5.5 strikeouts",
+      "Zach Neto Over 1.5 total bases"
+    ],
+    "topMisses": [
+      "Brandon Lowe Over 1.5 total bases",
+      "Gunnar Henderson Over 1.5 total bases",
+      "Wade Meckler Over 1.5 total bases",
+      "Dillon Dingler Over 1.5 total bases"
+    ]
   }
 }

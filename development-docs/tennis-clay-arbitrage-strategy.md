@@ -1,5 +1,7 @@
 # Tennis Clay Arbitrage Strategy
 
+For the full daily slate workflow, use `development-docs/daily-tennis-slate-playbook.md`. This file is the strategy background; the playbook is the checklist that should run before publishing a slate.
+
 ## Core Idea
 
 This is not a pure `pick the winner` strategy.

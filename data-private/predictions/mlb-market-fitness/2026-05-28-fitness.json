@@ -1,0 +1,328 @@
+{
+  "generatedAt": "2026-05-29T10:44:09.357301Z",
+  "scoreDate": "2026-05-28",
+  "markets": {
+    "moneyline": {
+      "bestModel": "forest",
+      "candidates": {
+        "forest": {
+          "logLoss": 0.6973,
+          "brier": 0.252,
+          "accuracy": 0.525,
+          "sampleSize": 1560
+        },
+        "hist_gb": {
+          "logLoss": 0.7902,
+          "brier": 0.2833,
+          "accuracy": 0.5135,
+          "sampleSize": 1560
+        },
+        "catboost": {
+          "logLoss": 0.7066,
+          "brier": 0.256,
+          "accuracy": 0.5064,
+          "sampleSize": 1560
+        },
+        "lightgbm": {
+          "logLoss": 0.7616,
+          "brier": 0.277,
+          "accuracy": 0.5224,
+          "sampleSize": 1560
+        },
+        "xgboost": {
+          "logLoss": 0.7399,
+          "brier": 0.2692,
+          "accuracy": 0.5128,
+          "sampleSize": 1560
+        }
+      },
+      "metrics": {
+        "logLoss": 0.6973,
+        "brier": 0.252,
+        "accuracy": 0.525,
+        "sampleSize": 1560
+      },
+      "threshold": {
+        "threshold": 0.56,
+        "plays": 255,
+        "hits": 131,
+        "losses": 124,
+        "accuracy": 0.5137254901960784,
+        "utility": -55.0
+      },
+      "promotable": false,
+      "today": [
+        {
+          "matchup": "Cubs @ Pirates",
+          "probability": 0.5415,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Twins @ White Sox",
+          "probability": 0.5278,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Astros @ Rangers",
+          "probability": 0.5228,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Braves @ Red Sox",
+          "probability": 0.5112,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Blue Jays @ Orioles",
+          "probability": 0.5098,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Angels @ Tigers",
+          "probability": 0.5079,
+          "action": "Pass",
+          "pick": null
+        }
+      ]
+    },
+    "first5": {
+      "bestModel": "forest",
+      "candidates": {
+        "forest": {
+          "logLoss": 0.702,
+          "brier": 0.2541,
+          "accuracy": 0.4856,
+          "sampleSize": 1318
+        },
+        "hist_gb": {
+          "logLoss": 0.7953,
+          "brier": 0.2831,
+          "accuracy": 0.5129,
+          "sampleSize": 1318
+        },
+        "catboost": {
+          "logLoss": 0.7161,
+          "brier": 0.2603,
+          "accuracy": 0.503,
+          "sampleSize": 1318
+        },
+        "lightgbm": {
+          "logLoss": 0.7629,
+          "brier": 0.279,
+          "accuracy": 0.5023,
+          "sampleSize": 1318
+        },
+        "xgboost": {
+          "logLoss": 0.7464,
+          "brier": 0.2716,
+          "accuracy": 0.5076,
+          "sampleSize": 1318
+        }
+      },
+      "metrics": {
+        "logLoss": 0.702,
+        "brier": 0.2541,
+        "accuracy": 0.4856,
+        "sampleSize": 1318
+      },
+      "threshold": {
+        "threshold": 0.57,
+        "plays": 211,
+        "hits": 110,
+        "losses": 101,
+        "accuracy": 0.5213270142180095,
+        "utility": -41.5
+      },
+      "promotable": false,
+      "today": [
+        {
+          "matchup": "Angels @ Tigers",
+          "probability": 0.5306,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Blue Jays @ Orioles",
+          "probability": 0.5194,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Twins @ White Sox",
+          "probability": 0.5193,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Cubs @ Pirates",
+          "probability": 0.5182,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Braves @ Red Sox",
+          "probability": 0.5145,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Astros @ Rangers",
+          "probability": 0.4889,
+          "action": "Pass",
+          "pick": null
+        }
+      ]
+    },
+    "totals": {
+      "bestModel": "forest",
+      "candidates": {
+        "forest": {
+          "logLoss": 0.7052,
+          "brier": 0.2551,
+          "accuracy": 0.5072,
+          "sampleSize": 138
+        },
+        "hist_gb": {
+          "logLoss": 0.9831,
+          "brier": 0.3247,
+          "accuracy": 0.5435,
+          "sampleSize": 138
+        },
+        "catboost": {
+          "logLoss": 0.7381,
+          "brier": 0.2688,
+          "accuracy": 0.4928,
+          "sampleSize": 138
+        },
+        "lightgbm": {
+          "logLoss": 0.7687,
+          "brier": 0.2822,
+          "accuracy": 0.4855,
+          "sampleSize": 138
+        },
+        "xgboost": {
+          "logLoss": 0.7887,
+          "brier": 0.2866,
+          "accuracy": 0.4928,
+          "sampleSize": 138
+        }
+      },
+      "metrics": {
+        "logLoss": 0.7052,
+        "brier": 0.2551,
+        "accuracy": 0.5072,
+        "sampleSize": 138
+      },
+      "threshold": {
+        "threshold": 0.66,
+        "plays": 32,
+        "hits": 20,
+        "losses": 12,
+        "accuracy": 0.625,
+        "utility": 2.0
+      },
+      "promotable": true,
+      "today": [
+        {
+          "matchup": "Astros @ Rangers",
+          "probability": 0.5071,
+          "action": "Pass",
+          "pick": null
+        }
+      ]
+    },
+    "firstInning": {
+      "bestModel": "forest",
+      "candidates": {
+        "forest": {
+          "logLoss": 0.7165,
+          "brier": 0.2603,
+          "accuracy": 0.5205,
+          "sampleSize": 171
+        },
+        "hist_gb": {
+          "logLoss": 0.9118,
+          "brier": 0.3076,
+          "accuracy": 0.5322,
+          "sampleSize": 171
+        },
+        "catboost": {
+          "logLoss": 0.7628,
+          "brier": 0.2816,
+          "accuracy": 0.5029,
+          "sampleSize": 171
+        },
+        "lightgbm": {
+          "logLoss": 0.7332,
+          "brier": 0.2674,
+          "accuracy": 0.5205,
+          "sampleSize": 171
+        },
+        "xgboost": {
+          "logLoss": 0.7818,
+          "brier": 0.2842,
+          "accuracy": 0.5088,
+          "sampleSize": 171
+        }
+      },
+      "metrics": {
+        "logLoss": 0.7165,
+        "brier": 0.2603,
+        "accuracy": 0.5205,
+        "sampleSize": 171
+      },
+      "threshold": {
+        "threshold": 0.62,
+        "plays": 45,
+        "hits": 25,
+        "losses": 20,
+        "accuracy": 0.5555555555555556,
+        "utility": -5.0
+      },
+      "promotable": false,
+      "today": [
+        {
+          "matchup": "Cubs @ Pirates",
+          "probability": 0.667,
+          "action": "Play",
+          "pick": "YRFI"
+        },
+        {
+          "matchup": "Blue Jays @ Orioles",
+          "probability": 0.5952,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Angels @ Tigers",
+          "probability": 0.5672,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Astros @ Rangers",
+          "probability": 0.5307,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Braves @ Red Sox",
+          "probability": 0.5191,
+          "action": "Pass",
+          "pick": null
+        },
+        {
+          "matchup": "Twins @ White Sox",
+          "probability": 0.4461,
+          "action": "Pass",
+          "pick": null
+        }
+      ]
+    }
+  }
+}

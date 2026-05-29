@@ -1,0 +1,395 @@
+{
+  "fetchedAt": "2026-05-29T13:46:45Z",
+  "games": [
+    {
+      "awayPitcher": {
+        "era": 3.78,
+        "losses": 2,
+        "pitchHand": "R",
+        "pitcherId": 656550,
+        "pitcherName": "Grant Holmes",
+        "strikeouts": 48,
+        "wins": 3
+      },
+      "awayTeam": "Atlanta Braves",
+      "gameDate": "2026-05-29",
+      "gameDatetime": "2026-05-29T22:40:00Z",
+      "gamePk": 824515,
+      "gameTitle": "Atlanta Braves @ Cincinnati Reds",
+      "homePitcher": {
+        "era": 6.86,
+        "losses": 6,
+        "pitchHand": "R",
+        "pitcherId": 663978,
+        "pitcherName": "Chris Paddack",
+        "strikeouts": 35,
+        "wins": 0
+      },
+      "homeTeam": "Cincinnati Reds"
+    },
+    {
+      "awayPitcher": {
+        "era": 2.77,
+        "losses": 1,
+        "pitchHand": "R",
+        "pitcherId": 671737,
+        "pitcherName": "Taj Bradley",
+        "strikeouts": 59,
+        "wins": 5
+      },
+      "awayTeam": "Minnesota Twins",
+      "gameDate": "2026-05-29",
+      "gameDatetime": "2026-05-29T22:45:00Z",
+      "gamePk": 823377,
+      "gameTitle": "Minnesota Twins @ Pittsburgh Pirates",
+      "homePitcher": {
+        "era": null,
+        "losses": null,
+        "pitchHand": "R",
+        "pitcherId": 683003,
+        "pitcherName": "Jared Jones",
+        "strikeouts": null,
+        "wins": null
+      },
+      "homeTeam": "Pittsburgh Pirates"
+    },
+    {
+      "awayPitcher": {
+        "era": 2.7,
+        "losses": 0,
+        "pitchHand": "R",
+        "pitcherId": 608337,
+        "pitcherName": "Lucas Giolito",
+        "strikeouts": 5,
+        "wins": 2
+      },
+      "awayTeam": "San Diego Padres",
+      "gameDate": "2026-05-29",
+      "gameDatetime": "2026-05-29T22:45:00Z",
+      "gamePk": 822732,
+      "gameTitle": "San Diego Padres @ Washington Nationals",
+      "homePitcher": {
+        "era": 5.3,
+        "losses": 2,
+        "pitchHand": "R",
+        "pitcherId": 687606,
+        "pitcherName": "Paxton Schultz",
+        "strikeouts": 21,
+        "wins": 0
+      },
+      "homeTeam": "Washington Nationals"
+    },
+    {
+      "awayPitcher": {
+        "era": null,
+        "losses": null,
+        "pitchHand": "",
+        "pitcherId": null,
+        "pitcherName": "TBD",
+        "strikeouts": null,
+        "wins": null
+      },
+      "awayTeam": "Toronto Blue Jays",
+      "gameDate": "2026-05-29",
+      "gameDatetime": "2026-05-29T23:05:00Z",
+      "gamePk": 824835,
+      "gameTitle": "Toronto Blue Jays @ Baltimore Orioles",
+      "homePitcher": {
+        "era": 6.96,
+        "losses": 6,
+        "pitchHand": "L",
+        "pitcherId": 669432,
+        "pitcherName": "Trevor Rogers",
+        "strikeouts": 35,
+        "wins": 2
+      },
+      "homeTeam": "Baltimore Orioles"
+    },
+    {
+      "awayPitcher": {
+        "era": 1.04,
+        "losses": 2,
+        "pitchHand": "L",
+        "pitcherId": 701719,
+        "pitcherName": "Tyler Samaniego",
+        "strikeouts": 13,
+        "wins": 0
+      },
+      "awayTeam": "Boston Red Sox",
+      "gameDate": "2026-05-29",
+      "gameDatetime": "2026-05-29T23:10:00Z",
+      "gamePk": 824433,
+      "gameTitle": "Boston Red Sox @ Cleveland Guardians",
+      "homePitcher": {
+        "era": 5.18,
+        "losses": 5,
+        "pitchHand": "R",
+        "pitcherId": 677944,
+        "pitcherName": "Slade Cecconi",
+        "strikeouts": 47,
+        "wins": 3
+      },
+      "homeTeam": "Cleveland Guardians"
+    },
+    {
+      "awayPitcher": {
+        "era": 2.58,
+        "losses": 4,
+        "pitchHand": "R",
+        "pitcherId": 700712,
+        "pitcherName": "Walbert Ure\u00f1a",
+        "strikeouts": 36,
+        "wins": 2
+      },
+      "awayTeam": "Los Angeles Angels",
+      "gameDate": "2026-05-29",
+      "gameDatetime": "2026-05-29T23:10:00Z",
+      "gamePk": 822978,
+      "gameTitle": "Los Angeles Angels @ Tampa Bay Rays",
+      "homePitcher": {
+        "era": 1.51,
+        "losses": 1,
+        "pitchHand": "R",
+        "pitcherId": 607259,
+        "pitcherName": "Nick Martinez",
+        "strikeouts": 36,
+        "wins": 4
+      },
+      "homeTeam": "Tampa Bay Rays"
+    },
+    {
+      "awayPitcher": {
+        "era": 2.52,
+        "losses": 0,
+        "pitchHand": "R",
+        "pitcherId": 676974,
+        "pitcherName": "Max Meyer",
+        "strikeouts": 68,
+        "wins": 5
+      },
+      "awayTeam": "Miami Marlins",
+      "gameDate": "2026-05-29",
+      "gameDatetime": "2026-05-29T23:10:00Z",
+      "gamePk": 823623,
+      "gameTitle": "Miami Marlins @ New York Mets",
+      "homePitcher": {
+        "era": 3.52,
+        "losses": 4,
+        "pitchHand": "R",
+        "pitcherId": 642547,
+        "pitcherName": "Freddy Peralta",
+        "strikeouts": 63,
+        "wins": 3
+      },
+      "homeTeam": "New York Mets"
+    },
+    {
+      "awayPitcher": {
+        "era": 4.04,
+        "losses": 5,
+        "pitchHand": "L",
+        "pitcherId": 684007,
+        "pitcherName": "Shota Imanaga",
+        "strikeouts": 67,
+        "wins": 4
+      },
+      "awayTeam": "Chicago Cubs",
+      "gameDate": "2026-05-29",
+      "gameDatetime": "2026-05-29T23:15:00Z",
+      "gamePk": 823055,
+      "gameTitle": "Chicago Cubs @ St. Louis Cardinals",
+      "homePitcher": {
+        "era": 3.76,
+        "losses": 4,
+        "pitchHand": "R",
+        "pitcherId": 669467,
+        "pitcherName": "Andre Pallante",
+        "strikeouts": 43,
+        "wins": 5
+      },
+      "homeTeam": "St. Louis Cardinals"
+    },
+    {
+      "awayPitcher": {
+        "era": 1.59,
+        "losses": 0,
+        "pitchHand": "R",
+        "pitcherId": 675512,
+        "pitcherName": "Troy Melton",
+        "strikeouts": 3,
+        "wins": 1
+      },
+      "awayTeam": "Detroit Tigers",
+      "gameDate": "2026-05-29",
+      "gameDatetime": "2026-05-29T23:40:00Z",
+      "gamePk": 824594,
+      "gameTitle": "Detroit Tigers @ Chicago White Sox",
+      "homePitcher": {
+        "era": 5.47,
+        "losses": 5,
+        "pitchHand": "R",
+        "pitcherId": 607200,
+        "pitcherName": "Erick Fedde",
+        "strikeouts": 31,
+        "wins": 0
+      },
+      "homeTeam": "Chicago White Sox"
+    },
+    {
+      "awayPitcher": {
+        "era": 2.77,
+        "losses": 0,
+        "pitchHand": "R",
+        "pitcherId": 663568,
+        "pitcherName": "Stephen Kolek",
+        "strikeouts": 14,
+        "wins": 3
+      },
+      "awayTeam": "Kansas City Royals",
+      "gameDate": "2026-05-29",
+      "gameDatetime": "2026-05-30T00:05:00Z",
+      "gamePk": 822894,
+      "gameTitle": "Kansas City Royals @ Texas Rangers",
+      "homePitcher": {
+        "era": 4.42,
+        "losses": 4,
+        "pitchHand": "L",
+        "pitcherId": 669022,
+        "pitcherName": "MacKenzie Gore",
+        "strikeouts": 62,
+        "wins": 3
+      },
+      "homeTeam": "Texas Rangers"
+    },
+    {
+      "awayPitcher": {
+        "era": 2.61,
+        "losses": 0,
+        "pitchHand": "R",
+        "pitcherId": 689441,
+        "pitcherName": "Coleman Crow",
+        "strikeouts": 7,
+        "wins": 0
+      },
+      "awayTeam": "Milwaukee Brewers",
+      "gameDate": "2026-05-29",
+      "gameDatetime": "2026-05-30T00:10:00Z",
+      "gamePk": 824191,
+      "gameTitle": "Milwaukee Brewers @ Houston Astros",
+      "homePitcher": {
+        "era": 2.19,
+        "losses": 3,
+        "pitchHand": "R",
+        "pitcherId": 678906,
+        "pitcherName": "Kai-Wei Teng",
+        "strikeouts": 36,
+        "wins": 3
+      },
+      "homeTeam": "Houston Astros"
+    },
+    {
+      "awayPitcher": {
+        "era": 5.06,
+        "losses": 4,
+        "pitchHand": "R",
+        "pitcherId": 657277,
+        "pitcherName": "Logan Webb",
+        "strikeouts": 42,
+        "wins": 2
+      },
+      "awayTeam": "San Francisco Giants",
+      "gameDate": "2026-05-29",
+      "gameDatetime": "2026-05-30T00:40:00Z",
+      "gamePk": 824353,
+      "gameTitle": "San Francisco Giants @ Colorado Rockies",
+      "homePitcher": {
+        "era": 7.21,
+        "losses": 7,
+        "pitchHand": "R",
+        "pitcherId": 547179,
+        "pitcherName": "Michael Lorenzen",
+        "strikeouts": 41,
+        "wins": 2
+      },
+      "homeTeam": "Colorado Rockies"
+    },
+    {
+      "awayPitcher": {
+        "era": 4.15,
+        "losses": 2,
+        "pitchHand": "L",
+        "pitcherId": 607074,
+        "pitcherName": "Carlos Rod\u00f3n",
+        "strikeouts": 17,
+        "wins": 0
+      },
+      "awayTeam": "New York Yankees",
+      "gameDate": "2026-05-29",
+      "gameDatetime": "2026-05-30T01:40:00Z",
+      "gamePk": 825002,
+      "gameTitle": "New York Yankees @ Athletics",
+      "homePitcher": {
+        "era": 4.23,
+        "losses": 5,
+        "pitchHand": "R",
+        "pitcherId": 622663,
+        "pitcherName": "Luis Severino",
+        "strikeouts": 64,
+        "wins": 2
+      },
+      "homeTeam": "Athletics"
+    },
+    {
+      "awayPitcher": {
+        "era": 4.8,
+        "losses": 4,
+        "pitchHand": "R",
+        "pitcherId": 668678,
+        "pitcherName": "Zac Gallen",
+        "strikeouts": 40,
+        "wins": 3
+      },
+      "awayTeam": "Arizona Diamondbacks",
+      "gameDate": "2026-05-29",
+      "gameDatetime": "2026-05-30T02:10:00Z",
+      "gamePk": 823135,
+      "gameTitle": "Arizona Diamondbacks @ Seattle Mariners",
+      "homePitcher": {
+        "era": 3.54,
+        "losses": 4,
+        "pitchHand": "R",
+        "pitcherId": 669923,
+        "pitcherName": "George Kirby",
+        "strikeouts": 55,
+        "wins": 5
+      },
+      "homeTeam": "Seattle Mariners"
+    },
+    {
+      "awayPitcher": {
+        "era": 1.67,
+        "losses": 0,
+        "pitchHand": "R",
+        "pitcherId": 554430,
+        "pitcherName": "Zack Wheeler",
+        "strikeouts": 36,
+        "wins": 4
+      },
+      "awayTeam": "Philadelphia Phillies",
+      "gameDate": "2026-05-29",
+      "gameDatetime": "2026-05-30T02:15:00Z",
+      "gamePk": 823946,
+      "gameTitle": "Philadelphia Phillies @ Los Angeles Dodgers",
+      "homePitcher": {
+        "era": 3.07,
+        "losses": 2,
+        "pitchHand": "L",
+        "pitcherId": 680736,
+        "pitcherName": "Justin Wrobleski",
+        "strikeouts": 31,
+        "wins": 6
+      },
+      "homeTeam": "Los Angeles Dodgers"
+    }
+  ]
+}

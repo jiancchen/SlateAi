@@ -38,6 +38,8 @@ Reference report:
 |E11|2026-05-25|Full-season raw-event warehouse backfill|ML / F5 / Totals / 1st inning|Completed|Data depth fixed, signal still mostly unchanged|Backfilled pitch events and plate appearances to Opening Day, rebuilt season state tables, and reran the forest baseline|
 |E12|2026-05-25|Pass-first classifier|ML / F5 / 1st inning|Queued|TBD|Decide if a market is playable before picking a side|
 |E13|2026-05-25|Collapse / hold framing|ML / F5|Queued|TBD|Model game path, not just who wins|
+|E14|2026-05-29|Expanded walk-forward rerun through May 28|ML / F5 / Totals / 1st inning|Completed|Totals still only promotable lane|OOF samples grew to `1560` ML, `1318` F5, `138` totals, `171` first inning; totals stayed weakly positive, everything else remained unpromotable|
+|E15|2026-05-29|Live hitter Statcast trend integration|TB / singles / HR props|Completed|Promoted for TB, cautious for singles, HR stays filter-only|Rolling `7/14/30` xwOBA, hard-hit, barrel, and sweet-spot trends now feed the live prop scorer|
 
 ## Honest Baseline Metrics
 
@@ -49,6 +51,26 @@ After leakage fixes, the current benchmark is:
 |First 5|`RandomForestClassifier`|48.38%|110-98 on 208 plays (52.9%)|No|
 |Totals|`RandomForestClassifier`|55.66%|31-14 on 45 plays (68.9%)|Yes|
 |First inning|`RandomForestClassifier`|54.47%|22-15 on 37 plays (59.5%)|No|
+
+## Latest Rerun Through May 28
+
+Reference files:
+
+- [/Users/jcchen/Documents/New project/development-docs/mlb-market-ml-training-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-market-ml-training-052926.md)
+- [/Users/jcchen/Documents/New project/data-private/predictions/mlb-market-fitness/2026-05-28-fitness.json](/Users/jcchen/Documents/New%20project/data-private/predictions/mlb-market-fitness/2026-05-28-fitness.json)
+
+|Market|Best model|OOF accuracy|Threshold record|Threshold utility|Promotable|
+|---|---|---:|---|---:|---|
+|Moneyline|`forest`|52.50%|131-124 on 255 plays (51.4%)|-55.0|No|
+|First 5|`forest`|48.56%|110-101 on 211 plays (52.1%)|-41.5|No|
+|Totals|`forest`|50.72%|20-12 on 32 plays (62.5%)|2.0|Yes|
+|First inning|`forest`|52.05%|25-20 on 45 plays (55.6%)|-5.0|No|
+
+### Rerun takeaway
+
+- More rows did not rescue `moneyline`, `first 5`, or `first inning`.
+- `Totals` remains the only lane the ML layer can even weakly justify promoting.
+- The deployment lesson is still the same: abstention matters more than squeezing extra plays out of weak side probabilities.
 
 ## First Boosted-Tree Moneyline Results
 

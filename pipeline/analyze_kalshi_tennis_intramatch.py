@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import argparse
 import json
 import math
 import re
 import sqlite3
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlencode
@@ -17,7 +18,19 @@ OUT_JSON = ROOT / "data-private" / "reports" / "kalshi-tennis-intramatch-low-dog
 OUT_MD = ROOT / "data-private" / "reports" / "kalshi-tennis-intramatch-low-dog-audit.md"
 BASE_URL = "https://external-api.kalshi.com/trade-api/v2"
 SERIES = ("KXATPMATCH", "KXWTAMATCH")
-DATE_PATTERN = re.compile(r"-26MAY(2[5-8])")
+DATE_PATTERN = re.compile(r"-26MAY(\d{2})")
+TARGET_DATES: set[str] = set()
+
+
+def date_range(start: str, end: str) -> set[str]:
+    start_date = date.fromisoformat(start)
+    end_date = date.fromisoformat(end)
+    days = set()
+    current = start_date
+    while current <= end_date:
+        days.add(current.isoformat())
+        current += timedelta(days=1)
+    return days
 
 
 def api_get(path: str, params: dict[str, Any]) -> dict[str, Any]:
@@ -38,7 +51,10 @@ def slate_date_from_event_ticker(value: str | None) -> str | None:
     match = DATE_PATTERN.search(value or "")
     if not match:
         return None
-    return f"2026-05-{match.group(1)}"
+    slate_date = f"2026-05-{match.group(1)}"
+    if TARGET_DATES and slate_date not in TARGET_DATES:
+        return None
+    return slate_date
 
 
 def dollars(value: Any) -> float | None:
@@ -67,7 +83,7 @@ def fetch_settled_match_markets() -> list[dict[str, Any]]:
             batch = data.get("markets") or []
             for market in batch:
                 event_ticker = market.get("event_ticker") or ""
-                if DATE_PATTERN.search(event_ticker):
+                if slate_date_from_event_ticker(event_ticker):
                     markets.append(market)
             cursor = data.get("cursor") or ""
             if not cursor:
@@ -218,13 +234,16 @@ def init_kalshi_tables(conn: sqlite3.Connection) -> None:
 def load_result_map() -> dict[tuple[str, str], dict[str, Any]]:
     conn = sqlite3.connect(DB_PATH)
     try:
+        dates = sorted(TARGET_DATES) or ["2026-05-25", "2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29"]
+        placeholders = ",".join("?" for _ in dates)
         rows = conn.execute(
-            """
+            f"""
             select slate_date, match_id, title, player1_name, player2_name, winner_name
             from tennis_match_results
             where completed = 1
-              and slate_date between '2026-05-25' and '2026-05-28'
-            """
+              and slate_date in ({placeholders})
+            """,
+            dates,
         ).fetchall()
     finally:
         conn.close()
@@ -241,13 +260,20 @@ def load_result_map() -> dict[tuple[str, str], dict[str, Any]]:
 def load_board_match_candidates() -> list[dict[str, Any]]:
     conn = sqlite3.connect(DB_PATH)
     try:
+        dates = sorted(TARGET_DATES) or ["2026-05-25", "2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29"]
+        neighbor_set = set(dates)
+        for slate_date in dates:
+            neighbor_set.update(neighbor_dates(slate_date))
+        scoped_dates = sorted(neighbor_set)
+        placeholders = ",".join("?" for _ in scoped_dates)
         rows = conn.execute(
-            """
+            f"""
             select slate_date, match_id, title, player1_name, player2_name
             from tennis_matches
-            where slate_date between '2026-05-25' and '2026-05-29'
+            where slate_date in ({placeholders})
               and league = 'Tennis'
-            """
+            """,
+            scoped_dates,
         ).fetchall()
     finally:
         conn.close()
@@ -565,6 +591,19 @@ def upsert_trade_feature(conn: sqlite3.Connection, row: dict[str, Any]) -> None:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description="Analyze settled Kalshi tennis intramatch dog-contract price action.")
+    parser.add_argument("--target-date", help="Single slate date to analyze, YYYY-MM-DD.")
+    parser.add_argument("--start-date", help="Start slate date for a settled range, YYYY-MM-DD.")
+    parser.add_argument("--end-date", help="End slate date for a settled range, YYYY-MM-DD.")
+    args = parser.parse_args()
+    global TARGET_DATES
+    if args.target_date:
+        TARGET_DATES = {args.target_date}
+    elif args.start_date and args.end_date:
+        TARGET_DATES = date_range(args.start_date, args.end_date)
+    else:
+        TARGET_DATES = date_range("2026-05-25", "2026-05-29")
+
     conn = sqlite3.connect(DB_PATH)
     init_kalshi_tables(conn)
 

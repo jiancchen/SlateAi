@@ -80,15 +80,25 @@ npm run data:export:published
 Before generating or refreshing a tennis slate, capture the ranking snapshot for that calendar date. This updates the latest join file and also writes a dated history file so we can build player ranking-history charts later.
 
 ```bash
+npm run data:init:tennis
 npm run data:fetch:tennis-rankings -- --date YYYY-MM-DD
 npm run data:import:tennis-rankings
 npm run data:fetch:tennis-scoreboard -- --date YYYY-MM-DD
 npm run data:generate:tennis-clay-context -- --date YYYY-MM-DD
 node pipeline/enrich-tennis-opponent-quality.mjs --input web/src/lib/day-YYYY-MM-DD-tennis-clay-context.generated.json --output web/src/lib/day-YYYY-MM-DD-tennis-opponent-quality.generated.json
-npm run data:fetch:tennis-flashscore-slate -- --date YYYY-MM-DD
 npm run data:import:tennis-slate -- --date YYYY-MM-DD
+npm run data:fetch:tennis-sofascore-slate -- --date YYYY-MM-DD
+npm run data:import:tennis-sofascore
+npm run data:fetch:tennis-flashscore-slate -- --date YYYY-MM-DD
 npm run data:import:tennis-flashscore
+python3 pipeline/tennis_multimodel_backtest.py --target-date YYYY-MM-DD
+python3 pipeline/analyze_kalshi_tennis_intramatch.py --target-date YYYY-MM-DD
+python3 pipeline/project_kalshi_tennis_trade_candidates.py
+python3 pipeline/model_kalshi_tennis_spike.py --target-date YYYY-MM-DD
+python3 pipeline/model_tennis_upset_wins.py --target-date YYYY-MM-DD
 ```
+
+Daily tennis operating rules live in `development-docs/daily-tennis-slate-playbook.md`. Use that playbook before publishing a tennis value board. It requires the slate to separate winner picks, prediction-market trade-to-sell candidates, watch rows, hard vetoes, and data-incomplete rows.
 
 Ranking notes:
 - `data-private/reference/tennis/player-rankings.json` is the current join file for predictions and opponent-quality enrichment.

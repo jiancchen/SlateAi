@@ -1370,8 +1370,10 @@ def main() -> None:
         "markets": {},
     }
 
+    score_date_label = __import__("datetime").datetime.strptime(args.score_date, "%Y-%m-%d").strftime("%B %-d, %Y")
+
     report_lines = [
-        "# MLB Market ML Training — May 25, 2026",
+        f"# MLB Market ML Training — {score_date_label}",
         "",
         "This pass replaces the old `50% is acceptable` mindset with walk-forward machine learning, calibration-oriented scoring, and hard abstention thresholds.",
         "",

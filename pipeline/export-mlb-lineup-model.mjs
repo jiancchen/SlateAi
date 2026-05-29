@@ -1,4 +1,6 @@
 import { mkdir, writeFile } from 'node:fs/promises'
+import { execFileSync } from 'node:child_process'
+import { existsSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 
@@ -6,6 +8,7 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const rootDir = path.resolve(__dirname, '..')
 const season = 2026
+const warehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db')
 
 const deskToOfficialTeam = {
   Nationals: 'Washington Nationals',
@@ -102,6 +105,14 @@ const formatRate = (value, digits = 3) => {
   return value.toFixed(digits).replace(/^0/, '')
 }
 
+const quoteSqlText = (value = '') => `'${String(value).replace(/'/g, "''")}'`
+
+const runSqliteJson = (sql) => {
+  if (!existsSync(warehousePath)) return []
+  const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim()
+  return raw ? JSON.parse(raw) : []
+}
+
 const toSlug = (value = '') =>
   value
     .normalize('NFD')
@@ -176,6 +187,70 @@ const fetchJson = async (url) => {
   }
 
   return response.json()
+}
+
+const buildStatcastTrendSignal = (row = {}) => {
+  const xwobaTrend = Number(row.xwoba_trend_7_minus_30)
+  const hardHitTrend = Number(row.hard_hit_trend_7_minus_30)
+  const sweetSpotTrend = Number(row.sweet_spot_trend_7_minus_30)
+  if (
+    !Number.isFinite(xwobaTrend) &&
+    !Number.isFinite(hardHitTrend) &&
+    !Number.isFinite(sweetSpotTrend)
+  ) {
+    return null
+  }
+  if (xwobaTrend >= 0.012 || hardHitTrend >= 2.5 || sweetSpotTrend >= 2) return 'improving'
+  if (xwobaTrend <= -0.012 || hardHitTrend <= -2.5 || sweetSpotTrend <= -2) return 'fading'
+  return 'flat'
+}
+
+const fetchHitterStatcastTrendMap = (asOfDate, playerIds = []) => {
+  const normalizedIds = [...new Set(playerIds.map((value) => Number(value)).filter(Number.isFinite))]
+  if (!normalizedIds.length) return new Map()
+
+  const rows = runSqliteJson(`
+    select
+      player_id,
+      games_sample_7,
+      pa_sample_7,
+      bbe_sample_7,
+      rolling_7_xwoba,
+      rolling_7_xba,
+      rolling_7_xslg,
+      rolling_7_barrel_pct,
+      rolling_7_hard_hit_pct,
+      rolling_7_sweet_spot_pct,
+      xwoba_trend_7_minus_30,
+      barrel_trend_7_minus_30,
+      hard_hit_trend_7_minus_30,
+      sweet_spot_trend_7_minus_30
+    from mlb_hitter_statcast_trend_snapshots
+    where as_of_date = ${quoteSqlText(asOfDate)}
+      and player_id in (${normalizedIds.join(',')})
+  `)
+
+  return new Map(
+    rows.map((row) => [
+      Number(row.player_id),
+      {
+        gamesSample7: Number(row.games_sample_7 || 0) || 0,
+        paSample7: Number(row.pa_sample_7 || 0) || 0,
+        bbeSample7: Number(row.bbe_sample_7 || 0) || 0,
+        rolling7Xwoba: parseNumber(row.rolling_7_xwoba),
+        rolling7Xba: parseNumber(row.rolling_7_xba),
+        rolling7Xslg: parseNumber(row.rolling_7_xslg),
+        rolling7BarrelPct: parseNumber(row.rolling_7_barrel_pct),
+        rolling7HardHitPct: parseNumber(row.rolling_7_hard_hit_pct),
+        rolling7SweetSpotPct: parseNumber(row.rolling_7_sweet_spot_pct),
+        xwobaTrend: parseNumber(row.xwoba_trend_7_minus_30),
+        barrelTrend: parseNumber(row.barrel_trend_7_minus_30),
+        hardHitTrend: parseNumber(row.hard_hit_trend_7_minus_30),
+        sweetSpotTrend: parseNumber(row.sweet_spot_trend_7_minus_30),
+        trendSignal: buildStatcastTrendSignal(row)
+      }
+    ])
+  )
 }
 
 const fetchRotoWireBvpRows = async ({ date, type }) => {
@@ -1054,7 +1129,8 @@ const buildPlayerLineupEntry = ({
   recentStats,
   splitStats,
   pitchTypeStatsByType,
-  opposingPitcher
+  opposingPitcher,
+  statcastTrend = null
 }) => {
   const seasonOps = Number.isFinite(seasonStats?.ops) ? seasonStats.ops : 0.72
   const recentOps =
@@ -1165,6 +1241,16 @@ const buildPlayerLineupEntry = ({
   }
   if (Number(pitchTypeFit?.fitGrade || 0) <= -1.4) tags.push('arsenal risk')
   if (formScore <= 42 || matchupGrade <= -1.4) tags.push('cold')
+  if (statcastTrend?.trendSignal === 'improving') tags.push('statcast up')
+  if (statcastTrend?.trendSignal === 'fading') tags.push('statcast fade')
+  if (
+    Number.isFinite(Number(statcastTrend?.rolling7BarrelPct)) &&
+    Number.isFinite(Number(statcastTrend?.rolling7HardHitPct)) &&
+    Number(statcastTrend.rolling7BarrelPct) >= 9 &&
+    Number(statcastTrend.rolling7HardHitPct) >= 42
+  ) {
+    tags.push('barrel lane')
+  }
 
   const primaryTag = tags[0] || (matchupGrade >= 1.5 ? 'live' : matchupGrade <= -1 ? 'suppressed' : 'thin')
   const summary = [
@@ -1269,6 +1355,21 @@ const buildPlayerLineupEntry = ({
       matchupGrade: roundToHundredths(matchupGrade)
     },
     pitchType: pitchTypeFit,
+    statcastTrend: statcastTrend
+      ? {
+          ...statcastTrend,
+          rolling7Xwoba: parseNumber(statcastTrend.rolling7Xwoba),
+          rolling7Xba: parseNumber(statcastTrend.rolling7Xba),
+          rolling7Xslg: parseNumber(statcastTrend.rolling7Xslg),
+          rolling7BarrelPct: parseNumber(statcastTrend.rolling7BarrelPct),
+          rolling7HardHitPct: parseNumber(statcastTrend.rolling7HardHitPct),
+          rolling7SweetSpotPct: parseNumber(statcastTrend.rolling7SweetSpotPct),
+          xwobaTrend: parseNumber(statcastTrend.xwobaTrend),
+          barrelTrend: parseNumber(statcastTrend.barrelTrend),
+          hardHitTrend: parseNumber(statcastTrend.hardHitTrend),
+          sweetSpotTrend: parseNumber(statcastTrend.sweetSpotTrend)
+        }
+      : null,
     tags,
     primaryTag,
     summary,
@@ -1452,6 +1553,7 @@ const extractLineupPlayers = (boxscoreSide = {}, playerStatMaps = {}, opposingPi
           ? getStatRecord(playerStatMaps.vsLeft, playerId)
           : getStatRecord(playerStatMaps.vsRight, playerId)
       const pitchTypeStatsByType = playerStatMaps.pitchArsenal?.get(playerId) || null
+      const statcastTrend = playerStatMaps.statcastTrends?.get(playerId) || null
       const playerDetails = playerStatMaps.season.get(playerId) || playerStatMaps.recent.get(playerId) || null
       const lineupPlayer = {
         playerId,
@@ -1467,7 +1569,8 @@ const extractLineupPlayers = (boxscoreSide = {}, playerStatMaps = {}, opposingPi
         recentStats,
         splitStats,
         pitchTypeStatsByType,
-        opposingPitcher
+        opposingPitcher,
+        statcastTrend
       })
     })
     .filter(Boolean)
@@ -1498,6 +1601,7 @@ const extractSupplementalLineupPlayers = ({
           ? getStatRecord(playerStatMaps.vsLeft, playerId)
           : getStatRecord(playerStatMaps.vsRight, playerId)
       const pitchTypeStatsByType = playerStatMaps.pitchArsenal?.get(playerId) || null
+      const statcastTrend = playerStatMaps.statcastTrends?.get(playerId) || null
       const playerDetails = playerStatMaps.season.get(playerId) || playerStatMaps.recent.get(playerId) || null
       if (!matchesExpectedOfficialTeam({ expectedOfficialTeam, playerRecord, playerDetails })) return null
       const lineupPlayer = {
@@ -1514,7 +1618,8 @@ const extractSupplementalLineupPlayers = ({
         recentStats,
         splitStats,
         pitchTypeStatsByType,
-        opposingPitcher
+        opposingPitcher,
+        statcastTrend
       })
     })
     .filter(Boolean)
@@ -1650,13 +1755,15 @@ const main = async () => {
     pitcherIds: [...starterIds, ...relieverIds],
     year: Number(options.date.slice(0, 4))
   })
+  const hitterStatcastTrendMap = fetchHitterStatcastTrendMap(options.date, allPlayerIds)
 
   const playerStatMaps = {
     season: seasonMap,
     recent: recentMap,
     vsRight: vsRightMap,
     vsLeft: vsLeftMap,
-    pitchArsenal: batterPitchTypeStatsByPlayerId
+    pitchArsenal: batterPitchTypeStatsByPlayerId,
+    statcastTrends: hitterStatcastTrendMap
   }
 
   const lineupBoardsByGameId = {}

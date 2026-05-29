@@ -84,13 +84,25 @@ const loadSplitMlbDayGames = async (id: string): Promise<Record<string, unknown>
   return loaderModule.loadMlbDayGames(id)
 }
 
+const mergeWrappedAndSplitGames = async (
+  id: string,
+  wrappedGames: Record<string, unknown>[]
+): Promise<Record<string, unknown>[]> => {
+  const hasWrappedMlb = wrappedGames.some((game) => game?.league === 'MLB')
+  const splitDataModulePath = path.join(webLibRoot, `day-${id}-data.js`)
+  if (hasWrappedMlb || !fs.existsSync(splitDataModulePath)) return wrappedGames
+  const splitMlbGames = await loadSplitMlbDayGames(id)
+  return [...wrappedGames, ...splitMlbGames]
+}
+
 export const listSlateManifestFromModules = async (): Promise<SlateManifestEntry[]> => {
   const wrappedEntries = listMainDayFiles()
 
   const wrappedResults = await Promise.all(
     wrappedEntries.map(async ({ id, fileName }) => {
       const module = await import(`${pathToFileURL(path.join(webLibRoot, fileName)).href}?t=${Date.now()}`)
-      const games = Array.isArray(module.games) ? module.games : []
+      const wrappedGames = Array.isArray(module.games) ? module.games : []
+      const games = await mergeWrappedAndSplitGames(id, wrappedGames)
       const slateMeta = module.slateMeta ?? { date: formatDateLabel(id), isoDate: id }
 
       return {
@@ -131,8 +143,12 @@ export const loadSlateDayFromModules = async (id: string): Promise<LoadedSlateDa
 
   if (fs.existsSync(modulePath)) {
     const module = await import(`${pathToFileURL(modulePath).href}?t=${Date.now()}`)
-    const games = Array.isArray(module.games) ? module.games : []
+    const wrappedGames = Array.isArray(module.games) ? module.games : []
+    const games = await mergeWrappedAndSplitGames(id, wrappedGames)
     const slateMeta = module.slateMeta ?? { date: formatDateLabel(id), isoDate: id }
+    const filters = Array.isArray(module.filters) ? [...module.filters] : ['All']
+    if (games.some((game) => game?.league === 'MLB') && !filters.includes('MLB')) filters.push('MLB')
+    if (games.some((game) => game?.league === 'Tennis') && !filters.includes('Tennis')) filters.push('Tennis')
 
     return {
       id,
@@ -145,7 +161,7 @@ export const loadSlateDayFromModules = async (id: string): Promise<LoadedSlateDa
       summary: {
         totalGames: games.length
       },
-      filters: Array.isArray(module.filters) ? module.filters : ['All'],
+      filters,
       oddsMeta: module.oddsMeta ?? {},
       games,
       sources: Array.isArray(module.sources) ? module.sources : []

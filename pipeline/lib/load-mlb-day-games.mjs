@@ -1,3 +1,4 @@
+import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 
@@ -129,10 +130,15 @@ export const loadMlbDayGames = async (date) => {
   const dayWrapperPath = path.join(rootDir, 'web', 'src', 'lib', `day-${date}.js`)
   const wrappedDay = await importMaybeFresh(dayWrapperPath)
   if (wrappedDay?.games) {
-    return wrappedDay.games.filter((game) => game.league === 'MLB')
+    const wrappedMlbGames = wrappedDay.games.filter((game) => game.league === 'MLB')
+    if (wrappedMlbGames.length) return wrappedMlbGames
   }
 
-  const dataModule = await importFresh(path.join(rootDir, 'web', 'src', 'lib', `day-${date}-data.js`))
+  const splitDataModulePath = path.join(rootDir, 'web', 'src', 'lib', `day-${date}-data.js`)
+  if (!fs.existsSync(splitDataModulePath)) {
+    return []
+  }
+  const dataModule = await importFresh(splitDataModulePath)
   const contextModule = await importFresh(path.join(rootDir, 'web', 'src', 'lib', `mlb-context-${date}.js`))
   const lineupModule = await importFresh(path.join(rootDir, 'web', 'src', 'lib', `day-${date}-lineups.js`))
   const storyModule =

@@ -17,6 +17,12 @@ FEATURES = [
     "rolling_7_xwoba",
     "rolling_14_xwoba",
     "rolling_30_xwoba",
+    "rolling_7_xba",
+    "rolling_14_xba",
+    "rolling_30_xba",
+    "rolling_7_xslg",
+    "rolling_14_xslg",
+    "rolling_30_xslg",
     "xwoba_trend_7_minus_30",
     "rolling_7_barrel_pct",
     "rolling_30_barrel_pct",
@@ -37,6 +43,12 @@ class Row:
     rolling_7_xwoba: float | None
     rolling_14_xwoba: float | None
     rolling_30_xwoba: float | None
+    rolling_7_xba: float | None
+    rolling_14_xba: float | None
+    rolling_30_xba: float | None
+    rolling_7_xslg: float | None
+    rolling_14_xslg: float | None
+    rolling_30_xslg: float | None
     xwoba_trend_7_minus_30: float | None
     rolling_7_barrel_pct: float | None
     rolling_30_barrel_pct: float | None
@@ -74,6 +86,12 @@ def read_rows(conn: sqlite3.Connection) -> list[Row]:
       s.rolling_7_xwoba,
       s.rolling_14_xwoba,
       s.rolling_30_xwoba,
+      s.rolling_7_xba,
+      s.rolling_14_xba,
+      s.rolling_30_xba,
+      s.rolling_7_xslg,
+      s.rolling_14_xslg,
+      s.rolling_30_xslg,
       s.xwoba_trend_7_minus_30,
       s.rolling_7_barrel_pct,
       s.rolling_30_barrel_pct,
@@ -99,16 +117,22 @@ def read_rows(conn: sqlite3.Connection) -> list[Row]:
                 rolling_7_xwoba=_to_float(result[2]),
                 rolling_14_xwoba=_to_float(result[3]),
                 rolling_30_xwoba=_to_float(result[4]),
-                xwoba_trend_7_minus_30=_to_float(result[5]),
-                rolling_7_barrel_pct=_to_float(result[6]),
-                rolling_30_barrel_pct=_to_float(result[7]),
-                barrel_trend_7_minus_30=_to_float(result[8]),
-                rolling_7_hard_hit_pct=_to_float(result[9]),
-                rolling_30_hard_hit_pct=_to_float(result[10]),
-                hard_hit_trend_7_minus_30=_to_float(result[11]),
-                rolling_7_sweet_spot_pct=_to_float(result[12]),
-                rolling_30_sweet_spot_pct=_to_float(result[13]),
-                sweet_spot_trend_7_minus_30=_to_float(result[14]),
+                rolling_7_xba=_to_float(result[5]),
+                rolling_14_xba=_to_float(result[6]),
+                rolling_30_xba=_to_float(result[7]),
+                rolling_7_xslg=_to_float(result[8]),
+                rolling_14_xslg=_to_float(result[9]),
+                rolling_30_xslg=_to_float(result[10]),
+                xwoba_trend_7_minus_30=_to_float(result[11]),
+                rolling_7_barrel_pct=_to_float(result[12]),
+                rolling_30_barrel_pct=_to_float(result[13]),
+                barrel_trend_7_minus_30=_to_float(result[14]),
+                rolling_7_hard_hit_pct=_to_float(result[15]),
+                rolling_30_hard_hit_pct=_to_float(result[16]),
+                hard_hit_trend_7_minus_30=_to_float(result[17]),
+                rolling_7_sweet_spot_pct=_to_float(result[18]),
+                rolling_30_sweet_spot_pct=_to_float(result[19]),
+                sweet_spot_trend_7_minus_30=_to_float(result[20]),
             )
         )
 
@@ -119,6 +143,12 @@ def read_rows(conn: sqlite3.Connection) -> list[Row]:
       s.rolling_7_xwoba,
       s.rolling_14_xwoba,
       s.rolling_30_xwoba,
+      s.rolling_7_xba,
+      s.rolling_14_xba,
+      s.rolling_30_xba,
+      s.rolling_7_xslg,
+      s.rolling_14_xslg,
+      s.rolling_30_xslg,
       s.xwoba_trend_7_minus_30,
       s.rolling_7_barrel_pct,
       s.rolling_30_barrel_pct,
@@ -143,16 +173,22 @@ def read_rows(conn: sqlite3.Connection) -> list[Row]:
                 rolling_7_xwoba=_to_float(result[2]),
                 rolling_14_xwoba=_to_float(result[3]),
                 rolling_30_xwoba=_to_float(result[4]),
-                xwoba_trend_7_minus_30=_to_float(result[5]),
-                rolling_7_barrel_pct=_to_float(result[6]),
-                rolling_30_barrel_pct=_to_float(result[7]),
-                barrel_trend_7_minus_30=_to_float(result[8]),
-                rolling_7_hard_hit_pct=_to_float(result[9]),
-                rolling_30_hard_hit_pct=_to_float(result[10]),
-                hard_hit_trend_7_minus_30=_to_float(result[11]),
-                rolling_7_sweet_spot_pct=_to_float(result[12]),
-                rolling_30_sweet_spot_pct=_to_float(result[13]),
-                sweet_spot_trend_7_minus_30=_to_float(result[14]),
+                rolling_7_xba=_to_float(result[5]),
+                rolling_14_xba=_to_float(result[6]),
+                rolling_30_xba=_to_float(result[7]),
+                rolling_7_xslg=_to_float(result[8]),
+                rolling_14_xslg=_to_float(result[9]),
+                rolling_30_xslg=_to_float(result[10]),
+                xwoba_trend_7_minus_30=_to_float(result[11]),
+                rolling_7_barrel_pct=_to_float(result[12]),
+                rolling_30_barrel_pct=_to_float(result[13]),
+                barrel_trend_7_minus_30=_to_float(result[14]),
+                rolling_7_hard_hit_pct=_to_float(result[15]),
+                rolling_30_hard_hit_pct=_to_float(result[16]),
+                hard_hit_trend_7_minus_30=_to_float(result[17]),
+                rolling_7_sweet_spot_pct=_to_float(result[18]),
+                rolling_30_sweet_spot_pct=_to_float(result[19]),
+                sweet_spot_trend_7_minus_30=_to_float(result[20]),
             )
         )
     return rows
@@ -197,6 +233,8 @@ def build_compound_notes(rows: list[Row], market: str) -> list[str]:
         return notes
 
     xwoba_q3 = quantile([row.rolling_7_xwoba for row in usable if row.rolling_7_xwoba is not None], 0.75)
+    xba_q3 = quantile([row.rolling_7_xba for row in usable if row.rolling_7_xba is not None], 0.75)
+    xslg_q3 = quantile([row.rolling_7_xslg for row in usable if row.rolling_7_xslg is not None], 0.75)
     hard_hit_q3 = quantile([row.rolling_7_hard_hit_pct for row in usable if row.rolling_7_hard_hit_pct is not None], 0.75)
     barrel_q3 = quantile([row.rolling_7_barrel_pct for row in usable if row.rolling_7_barrel_pct is not None], 0.75)
     sweet_q3 = quantile([row.rolling_7_sweet_spot_pct for row in usable if row.rolling_7_sweet_spot_pct is not None], 0.75)
@@ -205,43 +243,43 @@ def build_compound_notes(rows: list[Row], market: str) -> list[str]:
         bucket = [
             row
             for row in usable
-            if row.rolling_7_xwoba is not None
-            and row.rolling_7_hard_hit_pct is not None
-            and row.xwoba_trend_7_minus_30 is not None
-            and row.rolling_7_xwoba >= xwoba_q3
-            and row.rolling_7_hard_hit_pct >= hard_hit_q3
-            and row.xwoba_trend_7_minus_30 > 0
+            if row.rolling_7_xba is not None
+            and row.rolling_7_sweet_spot_pct is not None
+            and row.rolling_7_xba >= xba_q3
+            and row.rolling_7_sweet_spot_pct >= sweet_q3
         ]
         if bucket:
-            notes.append(f"`high 7d xwOBA + hard-hit + positive xwOBA trend`: {len(bucket)} bets, {hit_rate(bucket):.1%} hit.")
+            notes.append(f"`high 7d xBA + sweet-spot`: {len(bucket)} bets, {hit_rate(bucket):.1%} hit.")
     elif market == "totalBases":
         bucket = [
             row
             for row in usable
-            if row.rolling_7_xwoba is not None
+            if row.rolling_7_xslg is not None
             and row.rolling_7_barrel_pct is not None
             and row.rolling_7_hard_hit_pct is not None
-            and row.rolling_7_xwoba >= xwoba_q3
+            and row.rolling_7_xslg >= xslg_q3
             and row.rolling_7_barrel_pct >= barrel_q3
             and row.rolling_7_hard_hit_pct >= hard_hit_q3
         ]
         if bucket:
-            notes.append(f"`high 7d xwOBA + barrel + hard-hit`: {len(bucket)} bets, {hit_rate(bucket):.1%} hit.")
+            notes.append(f"`high 7d xSLG + barrel + hard-hit`: {len(bucket)} bets, {hit_rate(bucket):.1%} hit.")
     elif market == "homeRuns":
         bucket = [
             row
             for row in usable
-            if row.rolling_7_barrel_pct is not None
+            if row.rolling_7_xslg is not None
+            and row.rolling_7_barrel_pct is not None
             and row.rolling_7_hard_hit_pct is not None
             and row.rolling_7_sweet_spot_pct is not None
             and row.barrel_trend_7_minus_30 is not None
+            and row.rolling_7_xslg >= xslg_q3
             and row.rolling_7_barrel_pct >= barrel_q3
             and row.rolling_7_hard_hit_pct >= hard_hit_q3
             and row.rolling_7_sweet_spot_pct >= sweet_q3
             and row.barrel_trend_7_minus_30 > 0
         ]
         if bucket:
-            notes.append(f"`high barrel + hard-hit + sweet-spot + positive barrel trend`: {len(bucket)} bets, {hit_rate(bucket):.1%} hit.")
+            notes.append(f"`high 7d xSLG + barrel + hard-hit + sweet-spot + positive barrel trend`: {len(bucket)} bets, {hit_rate(bucket):.1%} hit.")
     return notes
 
 
@@ -299,17 +337,17 @@ def build_markdown(rows: list[Row]) -> str:
             lines.append("- Not enough covered rows yet for a meaningful compound-bucket read.")
         lines.append("")
 
-    lines.extend(
+        lines.extend(
         [
             "## Early read",
             "",
-            "- `singles`: the Statcast layer is not a clean win yet. In this sample, `7d xwOBA` and short-term xwOBA trend are actually noisy-to-negative, while `7d sweet-spot%` is the clearest positive filter.",
-            "- `totalBases`: this is where the new layer really looks useful. `7d xwOBA`, `7d hard-hit%`, `7d barrel%`, and the `7d vs 30d xwOBA` trend all improve the hit rate materially.",
-            "- `homeRuns`: still too noisy. A little `7d hard-hit%` lift is there, but the small HR sample does not yet prove that `barrel%` or `sweet-spot%` are strong enough filters by themselves.",
+            "- `singles`: the Statcast layer still is not a clean all-green win. `7d xwOBA` remains noisy-to-negative, but `7d sweet-spot%` and the compound `7d xBA + sweet-spot` bucket are materially better than the base singles hit rate.",
+            "- `totalBases`: this is still the clearest Statcast win. `7d xwOBA`, `7d xSLG`, `7d hard-hit%`, `7d barrel%`, and the `7d xSLG + barrel + hard-hit` bucket all improve the hit rate materially.",
+            "- `homeRuns`: still too noisy. `xBA` and `hard-hit%` show small lifts, but the HR sample still does not justify turning barrel/sweet-spot/xSLG into a primary trigger by themselves.",
             "",
             "## Next step",
             "",
-            "- Promote the Statcast trend layer into the batter-prop exporter first for `totalBases` filters, cautiously for `singles`, and not yet as a primary `homeRuns` trigger.",
+            "- Keep the Statcast trend layer live for `totalBases`, cautiously let the `xBA + sweet-spot` filter influence `singles`, and keep `homeRuns` in filter-only mode until the sample matures.",
         ]
     )
     return "\n".join(lines) + "\n"

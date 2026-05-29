@@ -6223,6 +6223,94 @@ const describeHomeRunPropLane = (target = null) =>
   target?.contextLabels?.[1] ||
   (target?.burstTag ? `${target.burstTag} HR lane` : 'HR lane')
 
+const buildHitterStatcastPropSignal = (trend = null) => {
+  if (!trend) {
+    return {
+      tbMultiplier: 1,
+      singlesMultiplier: 1,
+      hrMultiplier: 1,
+      tbConfidenceDelta: 0,
+      singlesConfidenceDelta: 0,
+      hrConfidenceDelta: 0,
+      tags: [],
+      tbReason: null,
+      singlesReason: null,
+      hrReason: null
+    }
+  }
+
+  const rolling7Xwoba = Number(trend.rolling7Xwoba)
+  const rolling7Xba = Number(trend.rolling7Xba)
+  const rolling7Xslg = Number(trend.rolling7Xslg)
+  const rolling7BarrelPct = Number(trend.rolling7BarrelPct)
+  const rolling7HardHitPct = Number(trend.rolling7HardHitPct)
+  const rolling7SweetSpotPct = Number(trend.rolling7SweetSpotPct)
+  const xwobaTrend = Number(trend.xwobaTrend)
+  const barrelTrend = Number(trend.barrelTrend)
+  const hardHitTrend = Number(trend.hardHitTrend)
+  const sweetSpotTrend = Number(trend.sweetSpotTrend)
+  const trendSignal = trend.trendSignal || null
+
+  let tbDelta = 0
+  let singlesDelta = 0
+  let hrDelta = 0
+  const tags = []
+
+  if (Number.isFinite(rolling7Xwoba) && rolling7Xwoba >= 0.365) tbDelta += 0.06
+  if (Number.isFinite(rolling7Xslg) && rolling7Xslg >= 0.52) tbDelta += 0.05
+  if (Number.isFinite(rolling7HardHitPct) && rolling7HardHitPct >= 42) tbDelta += 0.05
+  if (Number.isFinite(rolling7BarrelPct) && rolling7BarrelPct >= 9) tbDelta += 0.04
+  if (Number.isFinite(xwobaTrend) && xwobaTrend >= 0.012) tbDelta += 0.05
+  if (trendSignal === 'improving') tbDelta += 0.04
+  if (trendSignal === 'fading') tbDelta -= 0.08
+  else if (Number.isFinite(xwobaTrend) && xwobaTrend <= -0.012) tbDelta -= 0.06
+
+  if (Number.isFinite(rolling7SweetSpotPct) && rolling7SweetSpotPct >= 34) singlesDelta += 0.06
+  if (Number.isFinite(sweetSpotTrend) && sweetSpotTrend >= 2) singlesDelta += 0.05
+  if (Number.isFinite(rolling7Xba) && rolling7Xba >= 0.275) singlesDelta += 0.03
+  if (trendSignal === 'fading') singlesDelta -= 0.05
+  else if (Number.isFinite(sweetSpotTrend) && sweetSpotTrend <= -2) singlesDelta -= 0.04
+
+  if (Number.isFinite(rolling7HardHitPct) && rolling7HardHitPct >= 44) hrDelta += 0.03
+  if (Number.isFinite(rolling7BarrelPct) && rolling7BarrelPct >= 10) hrDelta += 0.03
+  if (Number.isFinite(barrelTrend) && barrelTrend >= 1.5) hrDelta += 0.02
+  if (Number.isFinite(hardHitTrend) && hardHitTrend >= 2.5) hrDelta += 0.02
+  if (trendSignal === 'fading') hrDelta -= 0.03
+
+  if (tbDelta >= 0.08) tags.push('statcast-power-up')
+  if (singlesDelta >= 0.06) tags.push('statcast-contact-up')
+  if (hrDelta >= 0.04) tags.push('statcast-hr-carry')
+  if (tbDelta < 0 || singlesDelta < 0 || hrDelta < 0) tags.push('statcast-fade')
+
+  return {
+    tbMultiplier: clamp(1 + tbDelta, 0.82, 1.28),
+    singlesMultiplier: clamp(1 + singlesDelta, 0.86, 1.18),
+    hrMultiplier: clamp(1 + hrDelta, 0.92, 1.12),
+    tbConfidenceDelta: tbDelta >= 0.08 ? 3 : tbDelta > 0.02 ? 1 : tbDelta < 0 ? -4 : 0,
+    singlesConfidenceDelta: singlesDelta >= 0.06 ? 2 : singlesDelta > 0.02 ? 1 : singlesDelta < 0 ? -3 : 0,
+    hrConfidenceDelta: hrDelta >= 0.04 ? 1 : hrDelta < 0 ? -2 : 0,
+    tags,
+    tbReason:
+      tbDelta >= 0.08
+        ? 'rolling Statcast power is live'
+        : tbDelta < 0
+          ? 'Statcast contact is fading'
+          : null,
+    singlesReason:
+      singlesDelta >= 0.06
+        ? 'sweet-spot contact is live'
+        : singlesDelta < 0
+          ? 'contact quality has cooled'
+          : null,
+    hrReason:
+      hrDelta >= 0.04
+        ? 'hard-hit / barrel trend is live'
+        : hrDelta < 0
+          ? 'HR contact trend is cooling'
+          : null
+  }
+}
+
 const calibrateMlbPropConfidence = ({
   config,
   propType,
@@ -6236,6 +6324,7 @@ const calibrateMlbPropConfidence = ({
   const probabilityWeight = Number(config?.probabilityWeight || 0.8)
   const probabilityLift = Math.max(probability - 0.46, 0) * 72 * probabilityWeight
   let confidence = 34 + probabilityLift + Number(config?.baseOffset || 12) * 0.45
+  const statcastSignal = buildHitterStatcastPropSignal(hitter?.statcastTrend)
 
   confidence += Math.max(0, Number(hitter?.metrics?.matchupGrade || 0)) * 1.05
   confidence += Math.max(0, (Number(hitter?.metrics?.formScore || 50) - 50) * 0.08)
@@ -6254,6 +6343,10 @@ const calibrateMlbPropConfidence = ({
       confidence += 2
     }
   }
+
+  if (propType === 'totalBases') confidence += statcastSignal.tbConfidenceDelta
+  if (propType === 'singles') confidence += statcastSignal.singlesConfidenceDelta
+  if (propType === 'homeRun') confidence += statcastSignal.hrConfidenceDelta
 
   if (weatherProfile?.label) {
     const weatherRunLift = Number(weatherProfile.runBoostFirst5 || 0) + Number(weatherProfile.runBoostLate || 0)
@@ -6287,6 +6380,7 @@ const buildPropScriptTags = ({
   starterWalkPressure
 }) => {
   const tags = []
+  const statcastSignal = buildHitterStatcastPropSignal(hitter?.statcastTrend)
   const topThirdScore = Number(teamScript?.topThirdScore || 50)
   const middleScore = Number(teamScript?.middleScore || 50)
   const depthScore = Number(teamScript?.depthScore || 50)
@@ -6318,6 +6412,7 @@ const buildPropScriptTags = ({
     tags.push('weather-run-lift')
   }
   if (propType === 'homeRun' && homeRunBoost?.target?.scoreBand) tags.push(`hr-${homeRunBoost.target.scoreBand}-lane`)
+  tags.push(...statcastSignal.tags)
 
   return [...new Set(tags)]
 }
@@ -6348,6 +6443,7 @@ const buildMlbPropCandidate = ({
   const formFactor = clamp(0.82 + (Number(hitter.metrics.formScore || 50) - 50) / 115, 0.58, 1.35)
   const teamTrafficFactor = clamp((Number(projectedHits || 8.3) / 8.3) * 0.72 + (Number(projectedRuns || 4.3) / 4.3) * 0.28, 0.68, 1.38)
   const homeRunBoost = getHomeRunTargetBoost(game, teamName, hitter.name)
+  const statcastSignal = buildHitterStatcastPropSignal(hitter.statcastTrend)
   const slotPressure =
     hitter.slot <= 2 ? 1.08 : hitter.slot <= 4 ? 1.12 : hitter.slot <= 6 ? 1.02 : 0.91
   const overperformBoost = (teamScript?.overperformHitters || []).some(
@@ -6392,7 +6488,8 @@ const buildMlbPropCandidate = ({
       formFactor *
       matchupFactor *
       (0.94 + (Number(hitter.metrics.powerScore || 50) < 58 ? 0.08 : -0.02)) *
-      teamTrafficFactor
+      teamTrafficFactor *
+      statcastSignal.singlesMultiplier
     probability = 1 - Math.exp(-Math.max(expectedValue, 0))
     line = config.marketLabel
     statValueLabel = `${expectedValue.toFixed(2)} exp singles`
@@ -6409,7 +6506,8 @@ const buildMlbPropCandidate = ({
       formFactor *
       matchupFactor *
       teamTrafficFactor *
-      (1 + homeRunBoost.scoreBoost * 0.6)
+      (1 + homeRunBoost.scoreBoost * 0.6) *
+      statcastSignal.tbMultiplier
     probability = poissonProbabilityAtLeast(expectedValue, 1)
     line = config.marketLabel
     statValueLabel = `${expectedValue.toFixed(2)} exp TB`
@@ -6423,7 +6521,8 @@ const buildMlbPropCandidate = ({
       slotPressure *
       overperformBoost *
       (1 + homeRunBoost.scoreBoost) *
-      (Number(homeRunBoost.target?.opposingPitcherHr9 || 1) >= 1.2 ? 1.08 : 0.96)
+      (Number(homeRunBoost.target?.opposingPitcherHr9 || 1) >= 1.2 ? 1.08 : 0.96) *
+      statcastSignal.hrMultiplier
     probability = 1 - Math.exp(-Math.max(expectedValue, 0))
     line = config.marketLabel
     statValueLabel = `${expectedValue.toFixed(2)} exp HR`
@@ -6464,6 +6563,9 @@ const buildMlbPropCandidate = ({
 
   const reasons = []
   if (hitter.primaryTag) reasons.push(`slot ${hitter.slot} ${hitter.primaryTag}`)
+  if (propType === 'totalBases' && statcastSignal.tbReason) reasons.push(statcastSignal.tbReason)
+  if (propType === 'singles' && statcastSignal.singlesReason) reasons.push(statcastSignal.singlesReason)
+  if (propType === 'homeRun' && statcastSignal.hrReason) reasons.push(statcastSignal.hrReason)
   if ((hitter.tags || []).includes('heater')) reasons.push('recent form up')
   if ((hitter.tags || []).includes('split edge')) reasons.push('split fit live')
   if (propType === 'homeRun' && homeRunBoost.target) reasons.push(describeHomeRunPropLane(homeRunBoost.target))
@@ -6661,6 +6763,11 @@ const buildTrackedPropSelection = (game, target) => {
     if (Number(target.slot || 9) <= 5) supportCount += 1
     if ((target.reason || '').includes('power lane')) supportCount += 1
     if (Number(context.teamScript?.topThirdScore || 0) >= 58) supportCount += 1
+    if ((target.scriptTags || []).includes('statcast-power-up')) {
+      supportCount += 1
+      trackingScore += 4
+    }
+    if ((target.scriptTags || []).includes('statcast-fade')) trackingScore -= 5
     if (Number(target.expectedValue || 0) >= 2.2) trackingScore += 4
   } else if (target.propType === 'singles') {
     if (context.projectedHits >= 8.4) supportCount += 1
@@ -6668,6 +6775,11 @@ const buildTrackedPropSelection = (game, target) => {
     if ((target.reason || '').includes('clean traffic lane')) supportCount += 1
     if (Number(target.slot || 9) <= 6) supportCount += 1
     if (Number(context.teamScript?.middleScore || 0) >= 56) supportCount += 1
+    if ((target.scriptTags || []).includes('statcast-contact-up')) {
+      supportCount += 1
+      trackingScore += 3
+    }
+    if ((target.scriptTags || []).includes('statcast-fade')) trackingScore -= 4
     if (Number(target.expectedValue || 0) >= 0.82) trackingScore += 3
   } else if (target.propType === 'walks') {
     if ((target.reason || '').includes('starter walk pressure')) supportCount += 2

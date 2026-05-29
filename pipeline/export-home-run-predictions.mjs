@@ -324,6 +324,7 @@ const buildLineupLookup = (lineupBoardsByGameId = {}) => {
           matchupScore: Number(hitter.metrics?.matchupScore ?? 50),
           varianceScore: Number(hitter.metrics?.varianceScore ?? 50),
           pitchType: hitter.pitchType || null,
+          statcastTrend: hitter.statcastTrend || null,
           recentHomeRuns: Number(hitter.recent?.homeRuns ?? 0),
           seasonHomeRuns: Number(hitter.season?.homeRuns ?? 0),
           splitHomeRuns: Number(hitter.split?.homeRuns ?? 0),
@@ -805,6 +806,15 @@ const scoreCandidateDetails = async (candidate, detailRows, season, targetDate, 
   const pitchTrapPenalty = hasTopPitchTrap(candidate) ? -12 : 0
   const reliefMismatchPenalty =
     homeRunContext?.reliefShare >= 0.55 && candidate.opposingBullpenVulnerability <= 0 ? -3 : 0
+  const statcastTrend = candidate.lineupContext?.statcastTrend || null
+  const statcastHrBoost =
+    statcastTrend
+      ? (Number(statcastTrend.rolling7HardHitPct || 0) >= 44 ? 2 : 0) +
+        (Number(statcastTrend.rolling7BarrelPct || 0) >= 10 ? 2 : 0) +
+        (Number(statcastTrend.hardHitTrend || 0) >= 2.5 ? 1.5 : 0) +
+        (Number(statcastTrend.barrelTrend || 0) >= 1.5 ? 1 : 0) +
+        (statcastTrend.trendSignal === 'fading' ? -2.5 : 0)
+      : 0
 
   candidate.score = Number(
     (
@@ -826,7 +836,8 @@ const scoreCandidateDetails = async (candidate, detailRows, season, targetDate, 
       falseCarryoverPenalty +
       volatileStarPenalty +
       pitchTrapPenalty +
-      reliefMismatchPenalty
+      reliefMismatchPenalty +
+      statcastHrBoost
     ).toFixed(1)
   )
   candidate.scoreBand =
@@ -888,6 +899,10 @@ const scoreCandidateDetails = async (candidate, detailRows, season, targetDate, 
     candidate.lineupContext
       ? `Slot ${candidate.lineupContext.slot} | ${candidate.lineupContext.primaryTag || 'posted lineup'} | lineup priority ${candidate.lineupPriority} | bullpen vulnerability ${candidate.opposingBullpenVulnerability}`
       : 'Lineup slot not posted yet'
+    ,
+    statcastTrend
+      ? `Statcast trend ${statcastTrend.trendSignal || 'flat'} | HH ${Number(statcastTrend.rolling7HardHitPct || 0).toFixed(1)}% | Barrel ${Number(statcastTrend.rolling7BarrelPct || 0).toFixed(1)}%`
+      : 'Rolling Statcast trend not loaded yet'
   ]
 
   candidate.avoidHrChase =

@@ -31,8 +31,7 @@ const fetchJson = async (url) => {
   return response.json()
 }
 
-const importFresh = async (absolutePath) =>
-  import(`${pathToFileURL(absolutePath).href}?t=${Date.now()}`)
+const importFresh = async (absolutePath) => import(`${pathToFileURL(absolutePath).href}?t=${Date.now()}`)
 
 const isPostponedScheduleGame = (game = {}) =>
   `${game?.status?.detailedState || ''}`.toLowerCase() === 'postponed' ||
@@ -91,15 +90,10 @@ const main = async () => {
   const activeOfficialGames = officialGames.filter((game) => !isPostponedScheduleGame(game))
   const postponedGames = officialGames.filter((game) => isPostponedScheduleGame(game))
 
-  const wrappedDay = await importFresh(path.join(rootDir, 'web', 'src', 'lib', `day-${options.date}.js`)).catch(
-    () => null
-  )
   const lineupModule = await importFresh(path.join(rootDir, 'web', 'src', 'lib', `day-${options.date}-lineups.js`))
   const hrModule = await importFresh(path.join(rootDir, 'web', 'src', 'lib', `day-${options.date}-home-run-data.js`))
 
-  const games = wrappedDay?.games
-    ? wrappedDay.games.filter((game) => game.league === 'MLB')
-    : await loadMlbDayGames(options.date)
+  const games = await loadMlbDayGames(options.date)
   const lineupBoardsByGameId = lineupModule.lineupBoardsByGameId || {}
   const lineupBoards = Object.values(lineupBoardsByGameId)
   const homeRunTargetsByGame = hrModule.homeRunTargetsByGame || {}
@@ -147,6 +141,7 @@ const main = async () => {
     )
   }).length
   const hrTargetCount = countHomeRunTargets(homeRunTargetsByGame)
+  const expectLineupDrivenBoards = lineupCounts.posted > 0
 
   const checks = []
   checks.push({
@@ -213,8 +208,9 @@ const main = async () => {
   const hardFailures = checks.filter((check) => !check.ok && (
     check.label === 'Active game count matches official schedule' ||
     check.label === 'Lineup boards generated for each active game' ||
-    check.label === 'Home-run board generated' ||
-    check.label === 'Non-HR prop board generated'
+    ((check.label === 'Home-run board generated' ||
+      check.label === 'Non-HR prop board generated') &&
+      expectLineupDrivenBoards)
   ))
 
   console.log(`MLB refresh verification for ${options.date}`)
