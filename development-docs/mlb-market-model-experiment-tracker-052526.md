@@ -40,6 +40,7 @@ Reference report:
 |E13|2026-05-25|Collapse / hold framing|ML / F5|Queued|TBD|Model game path, not just who wins|
 |E14|2026-05-29|Expanded walk-forward rerun through May 28|ML / F5 / Totals / 1st inning|Completed|Totals still only promotable lane|OOF samples grew to `1560` ML, `1318` F5, `138` totals, `171` first inning; totals stayed weakly positive, everything else remained unpromotable|
 |E15|2026-05-29|Live hitter Statcast trend integration|TB / singles / HR props|Completed|Promoted for TB, cautious for singles, HR stays filter-only|Rolling `7/14/30` xwOBA, hard-hit, barrel, and sweet-spot trends now feed the live prop scorer|
+|E16|2026-05-29|Phase 1 context warehousing: opponent strength + market memory|ML / F5 / Totals / run-production props|Completed|Warehoused, not yet deployed|`mlb_team_opponent_quality_daily` is dense enough to research now; `mlb_team_market_context_daily` moneyline memory is partial and totals memory is blocked until historical totals lines are backfilled|
 
 ## Honest Baseline Metrics
 

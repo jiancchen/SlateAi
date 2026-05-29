@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T17:59:43.363Z",
+  "generatedAt": "2026-05-29T18:25:09.662Z",
   "predictionDate": "2026-05-29",
   "picks": [
     {
@@ -374,9 +374,9 @@
       "predictedTeam": "Mariners",
       "predictedSide": "home",
       "confidence": 70,
-      "modelEdge": 8.7,
-      "marketProbability": 0.5620357024060317,
-      "marketProbabilityLabel": "56.2%",
+      "modelEdge": 8.8,
+      "marketProbability": 0.5642701525054467,
+      "marketProbabilityLabel": "56.4%",
       "pickIsMarketFavorite": true,
       "pickIsMarketUnderdog": false,
       "vetoCount": 0,

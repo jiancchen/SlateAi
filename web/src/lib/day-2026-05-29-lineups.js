@@ -1,6 +1,6 @@
 export const lineupSnapshotMeta = {
   "date": "2026-05-29",
-  "snapshot": "2026-05-29T17:59:43.201Z",
+  "snapshot": "2026-05-29T18:25:09.524Z",
   "recentWindow": {
     "start": "2026-05-22",
     "end": "2026-05-28"
@@ -14,7 +14,7 @@ export const lineupBoardsByGameId = {
   "braves-reds": {
     "gameId": "braves-reds",
     "title": "Braves @ Reds",
-    "snapshot": "2026-05-29T17:59:43.188Z",
+    "snapshot": "2026-05-29T18:25:09.515Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -2895,7 +2895,7 @@ export const lineupBoardsByGameId = {
   "padres-nationals": {
     "gameId": "padres-nationals",
     "title": "Padres @ Nationals",
-    "snapshot": "2026-05-29T17:59:43.189Z",
+    "snapshot": "2026-05-29T18:25:09.516Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -2910,8 +2910,8 @@ export const lineupBoardsByGameId = {
       "label": "77°F | 0% precip"
     },
     "marketWeatherContext": {
-      "line": "WSH -115",
-      "total": "9.0 Runs",
+      "line": "WSH -116",
+      "total": "9.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
     "away": {
@@ -5737,7 +5737,7 @@ export const lineupBoardsByGameId = {
   "twins-pirates": {
     "gameId": "twins-pirates",
     "title": "Twins @ Pirates",
-    "snapshot": "2026-05-29T17:59:43.190Z",
+    "snapshot": "2026-05-29T18:25:09.516Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -5752,7 +5752,7 @@ export const lineupBoardsByGameId = {
       "label": "76°F | Wind 10 mph Out | 0% precip"
     },
     "marketWeatherContext": {
-      "line": "PIT -138",
+      "line": "PIT -136",
       "total": "8.0 Runs",
       "source": "RotoWire daily lineups + weather"
     },
@@ -8604,7 +8604,7 @@ export const lineupBoardsByGameId = {
   "blue-jays-orioles": {
     "gameId": "blue-jays-orioles",
     "title": "Blue Jays @ Orioles",
-    "snapshot": "2026-05-29T17:59:43.191Z",
+    "snapshot": "2026-05-29T18:25:09.517Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -11498,7 +11498,7 @@ export const lineupBoardsByGameId = {
   "angels-rays": {
     "gameId": "angels-rays",
     "title": "Angels @ Rays",
-    "snapshot": "2026-05-29T17:59:43.192Z",
+    "snapshot": "2026-05-29T18:25:09.518Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -11513,7 +11513,7 @@ export const lineupBoardsByGameId = {
       "label": "Dome In Domed Stadium"
     },
     "marketWeatherContext": {
-      "line": "TB -165",
+      "line": "TB -166",
       "total": "8.0 Runs",
       "source": "RotoWire daily lineups + weather"
     },
@@ -14500,7 +14500,7 @@ export const lineupBoardsByGameId = {
   "marlins-mets": {
     "gameId": "marlins-mets",
     "title": "Marlins @ Mets",
-    "snapshot": "2026-05-29T17:59:43.193Z",
+    "snapshot": "2026-05-29T18:25:09.518Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -17656,7 +17656,7 @@ export const lineupBoardsByGameId = {
   "red-sox-guardians": {
     "gameId": "red-sox-guardians",
     "title": "Red Sox @ Guardians",
-    "snapshot": "2026-05-29T17:59:43.194Z",
+    "snapshot": "2026-05-29T18:25:09.519Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -20815,7 +20815,7 @@ export const lineupBoardsByGameId = {
   "cubs-cardinals": {
     "gameId": "cubs-cardinals",
     "title": "Cubs @ Cardinals",
-    "snapshot": "2026-05-29T17:59:43.195Z",
+    "snapshot": "2026-05-29T18:25:09.519Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -20842,7 +20842,7 @@ export const lineupBoardsByGameId = {
         "name": "Andre Pallante",
         "hand": "R",
         "type": "Balanced",
-        "pitchMixSummary": "4-Seam Fastball 31% / Slider 28% / Curveball 19%"
+        "pitchMixSummary": "4-Seam Fastball 31% / Slider 28% / Sinker 19%"
       },
       "opposingRelievers": [
         {
@@ -20957,7 +20957,7 @@ export const lineupBoardsByGameId = {
             "fitScore": 68.4,
             "fitGrade": 2.74,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +2.7",
+            "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +2.7",
             "topPitches": [
               {
                 "pitchType": "FF",
@@ -20976,12 +20976,12 @@ export const lineupBoardsByGameId = {
                 "qualityScore": 94
               },
               {
-                "pitchType": "CU",
-                "pitchName": "Curveball",
+                "pitchType": "SI",
+                "pitchName": "Sinker",
                 "pitchUsage": 18.9,
-                "fitGrade": -2.67,
-                "batterFitScore": 30.8,
-                "qualityScore": 45.5
+                "fitGrade": 9.85,
+                "batterFitScore": 94,
+                "qualityScore": 39.8
               }
             ]
           },
@@ -21009,7 +21009,7 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "carry",
-          "summary": ".224 AVG | .677 OPS | 46 H | 6 HR | 14g: .217 AVG | .798 OPS | 10 H | 2 HR | vs RHP: .201 AVG | .637 OPS | 4 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +2.7 | +7.3 matchup grade in a neutral lane",
+          "summary": ".224 AVG | .677 OPS | 46 H | 6 HR | 14g: .217 AVG | .798 OPS | 10 H | 2 HR | vs RHP: .201 AVG | .637 OPS | 4 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +2.7 | +7.3 matchup grade in a neutral lane",
           "matchupNote": "+7.32 vs Andre Pallante"
         },
         {
@@ -21108,7 +21108,7 @@ export const lineupBoardsByGameId = {
             "fitScore": 52.3,
             "fitGrade": 0.96,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +1.0",
+            "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +1.0",
             "topPitches": [
               {
                 "pitchType": "FF",
@@ -21127,12 +21127,12 @@ export const lineupBoardsByGameId = {
                 "qualityScore": 94
               },
               {
-                "pitchType": "CU",
-                "pitchName": "Curveball",
+                "pitchType": "SI",
+                "pitchName": "Sinker",
                 "pitchUsage": 18.9,
-                "fitGrade": -3.2,
-                "batterFitScore": 27.9,
-                "qualityScore": 45.5
+                "fitGrade": 9.85,
+                "batterFitScore": 94,
+                "qualityScore": 39.8
               }
             ]
           },
@@ -21158,7 +21158,7 @@ export const lineupBoardsByGameId = {
             "statcast fade"
           ],
           "primaryTag": "traffic",
-          "summary": ".254 AVG | .705 OPS | 57 H | 4 HR | 14g: .185 AVG | .452 OPS | 10 H | 0 HR | vs RHP: .242 AVG | .668 OPS | 2 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +1.0 | -8.0 matchup grade in a neutral lane",
+          "summary": ".254 AVG | .705 OPS | 57 H | 4 HR | 14g: .185 AVG | .452 OPS | 10 H | 0 HR | vs RHP: .242 AVG | .668 OPS | 2 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +1.0 | -8.0 matchup grade in a neutral lane",
           "matchupNote": "-8.00 vs Andre Pallante"
         },
         {
@@ -21257,7 +21257,7 @@ export const lineupBoardsByGameId = {
             "fitScore": 53.2,
             "fitGrade": 1.86,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +1.9",
+            "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +1.9",
             "topPitches": [
               {
                 "pitchType": "FF",
@@ -21276,12 +21276,12 @@ export const lineupBoardsByGameId = {
                 "qualityScore": 94
               },
               {
-                "pitchType": "CU",
-                "pitchName": "Curveball",
+                "pitchType": "SI",
+                "pitchName": "Sinker",
                 "pitchUsage": 18.9,
-                "fitGrade": -2.27,
-                "batterFitScore": 33,
-                "qualityScore": 45.5
+                "fitGrade": 9.85,
+                "batterFitScore": 94,
+                "qualityScore": 39.8
               }
             ]
           },
@@ -21309,7 +21309,7 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "carry",
-          "summary": ".229 AVG | .750 OPS | 46 H | 6 HR | 14g: .200 AVG | .852 OPS | 10 H | 4 HR | vs RHP: .243 AVG | .799 OPS | 5 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +1.9 | +8.8 matchup grade in a neutral lane",
+          "summary": ".229 AVG | .750 OPS | 46 H | 6 HR | 14g: .200 AVG | .852 OPS | 10 H | 4 HR | vs RHP: .243 AVG | .799 OPS | 5 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +1.9 | +8.8 matchup grade in a neutral lane",
           "matchupNote": "+8.75 vs Andre Pallante"
         },
         {
@@ -21408,7 +21408,7 @@ export const lineupBoardsByGameId = {
             "fitScore": 46.5,
             "fitGrade": 0.64,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +0.6",
+            "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +0.6",
             "topPitches": [
               {
                 "pitchType": "FF",
@@ -21427,12 +21427,12 @@ export const lineupBoardsByGameId = {
                 "qualityScore": 94
               },
               {
-                "pitchType": "CU",
-                "pitchName": "Curveball",
+                "pitchType": "SI",
+                "pitchName": "Sinker",
                 "pitchUsage": 18.9,
-                "fitGrade": -5,
-                "batterFitScore": 18,
-                "qualityScore": 45.5
+                "fitGrade": 3.67,
+                "batterFitScore": 60,
+                "qualityScore": 39.8
               }
             ]
           },
@@ -21456,7 +21456,7 @@ export const lineupBoardsByGameId = {
             "statcast fade"
           ],
           "primaryTag": "statcast fade",
-          "summary": ".260 AVG | .697 OPS | 59 H | 4 HR | 14g: .333 AVG | .794 OPS | 20 H | 0 HR | vs RHP: .256 AVG | .691 OPS | 3 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +0.6 | +4.3 matchup grade in a neutral lane",
+          "summary": ".260 AVG | .697 OPS | 59 H | 4 HR | 14g: .333 AVG | .794 OPS | 20 H | 0 HR | vs RHP: .256 AVG | .691 OPS | 3 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +0.6 | +4.3 matchup grade in a neutral lane",
           "matchupNote": "+4.30 vs Andre Pallante"
         },
         {
@@ -21555,7 +21555,7 @@ export const lineupBoardsByGameId = {
             "fitScore": 75.6,
             "fitGrade": 3.77,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +3.8",
+            "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +3.8",
             "topPitches": [
               {
                 "pitchType": "FF",
@@ -21574,12 +21574,12 @@ export const lineupBoardsByGameId = {
                 "qualityScore": 94
               },
               {
-                "pitchType": "CU",
-                "pitchName": "Curveball",
+                "pitchType": "SI",
+                "pitchName": "Sinker",
                 "pitchUsage": 18.9,
-                "fitGrade": -2.4,
-                "batterFitScore": 32.3,
-                "qualityScore": 45.5
+                "fitGrade": 9.13,
+                "batterFitScore": 90,
+                "qualityScore": 39.8
               }
             ]
           },
@@ -21607,7 +21607,7 @@ export const lineupBoardsByGameId = {
             "statcast fade"
           ],
           "primaryTag": "carry",
-          "summary": ".225 AVG | .806 OPS | 45 H | 12 HR | 10g: .304 AVG | .986 OPS | 14 H | 4 HR | vs RHP: .246 AVG | .882 OPS | 9 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +3.8 | +10.0 matchup grade in a neutral lane",
+          "summary": ".225 AVG | .806 OPS | 45 H | 12 HR | 10g: .304 AVG | .986 OPS | 14 H | 4 HR | vs RHP: .246 AVG | .882 OPS | 9 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +3.8 | +10.0 matchup grade in a neutral lane",
           "matchupNote": "+10.00 vs Andre Pallante"
         },
         {
@@ -21706,7 +21706,7 @@ export const lineupBoardsByGameId = {
             "fitScore": 58.6,
             "fitGrade": 1.83,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +1.8",
+            "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +1.8",
             "topPitches": [
               {
                 "pitchType": "FF",
@@ -21725,12 +21725,12 @@ export const lineupBoardsByGameId = {
                 "qualityScore": 94
               },
               {
-                "pitchType": "CU",
-                "pitchName": "Curveball",
+                "pitchType": "SI",
+                "pitchName": "Sinker",
                 "pitchUsage": 18.9,
-                "fitGrade": -5,
-                "batterFitScore": 18,
-                "qualityScore": 45.5
+                "fitGrade": 9.85,
+                "batterFitScore": 94,
+                "qualityScore": 39.8
               }
             ]
           },
@@ -21756,7 +21756,7 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "arsenal edge",
-          "summary": ".239 AVG | .730 OPS | 38 H | 7 HR | 14g: .120 AVG | .274 OPS | 6 H | 0 HR | vs RHP: .225 AVG | .709 OPS | 6 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +1.8 | -8.0 matchup grade in a neutral lane",
+          "summary": ".239 AVG | .730 OPS | 38 H | 7 HR | 14g: .120 AVG | .274 OPS | 6 H | 0 HR | vs RHP: .225 AVG | .709 OPS | 6 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +1.8 | -8.0 matchup grade in a neutral lane",
           "matchupNote": "-8.00 vs Andre Pallante"
         },
         {
@@ -21855,7 +21855,7 @@ export const lineupBoardsByGameId = {
             "fitScore": 37.8,
             "fitGrade": -1.22,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit -1.2",
+            "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit -1.2",
             "topPitches": [
               {
                 "pitchType": "FF",
@@ -21874,12 +21874,12 @@ export const lineupBoardsByGameId = {
                 "qualityScore": 94
               },
               {
-                "pitchType": "CU",
-                "pitchName": "Curveball",
+                "pitchType": "SI",
+                "pitchName": "Sinker",
                 "pitchUsage": 18.9,
-                "fitGrade": -5,
-                "batterFitScore": 18,
-                "qualityScore": 45.5
+                "fitGrade": 3.91,
+                "batterFitScore": 61.3,
+                "qualityScore": 39.8
               }
             ]
           },
@@ -21905,7 +21905,7 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".232 AVG | .726 OPS | 29 H | 6 HR | 14g: .143 AVG | .511 OPS | 4 H | 0 HR | vs RHP: .237 AVG | .737 OPS | 6 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit -1.2 | -7.6 matchup grade in a neutral lane",
+          "summary": ".232 AVG | .726 OPS | 29 H | 6 HR | 14g: .143 AVG | .511 OPS | 4 H | 0 HR | vs RHP: .237 AVG | .737 OPS | 6 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit -1.2 | -7.6 matchup grade in a neutral lane",
           "matchupNote": "-7.61 vs Andre Pallante"
         },
         {
@@ -22004,7 +22004,7 @@ export const lineupBoardsByGameId = {
             "fitScore": 62.1,
             "fitGrade": 2.77,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +2.8",
+            "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +2.8",
             "topPitches": [
               {
                 "pitchType": "FF",
@@ -22023,12 +22023,12 @@ export const lineupBoardsByGameId = {
                 "qualityScore": 94
               },
               {
-                "pitchType": "CU",
-                "pitchName": "Curveball",
+                "pitchType": "SI",
+                "pitchName": "Sinker",
                 "pitchUsage": 18.9,
-                "fitGrade": 5.13,
-                "batterFitScore": 73.7,
-                "qualityScore": 45.5
+                "fitGrade": 7.84,
+                "batterFitScore": 82.9,
+                "qualityScore": 39.8
               }
             ]
           },
@@ -22054,7 +22054,7 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "arsenal edge",
-          "summary": ".306 AVG | .784 OPS | 41 H | 2 HR | 12g: .375 AVG | .819 OPS | 12 H | 0 HR | vs RHP: .282 AVG | .669 OPS | 0 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +2.8 | +2.0 matchup grade in a neutral lane",
+          "summary": ".306 AVG | .784 OPS | 41 H | 2 HR | 12g: .375 AVG | .819 OPS | 12 H | 0 HR | vs RHP: .282 AVG | .669 OPS | 0 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +2.8 | +2.0 matchup grade in a neutral lane",
           "matchupNote": "+1.96 vs Andre Pallante"
         },
         {
@@ -22153,7 +22153,7 @@ export const lineupBoardsByGameId = {
             "fitScore": 52.4,
             "fitGrade": 1.75,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +1.8",
+            "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +1.8",
             "topPitches": [
               {
                 "pitchType": "FF",
@@ -22172,12 +22172,12 @@ export const lineupBoardsByGameId = {
                 "qualityScore": 94
               },
               {
-                "pitchType": "CU",
-                "pitchName": "Curveball",
+                "pitchType": "SI",
+                "pitchName": "Sinker",
                 "pitchUsage": 18.9,
-                "fitGrade": -5,
-                "batterFitScore": 18,
-                "qualityScore": 45.5
+                "fitGrade": 9.85,
+                "batterFitScore": 94,
+                "qualityScore": 39.8
               }
             ]
           },
@@ -22203,7 +22203,7 @@ export const lineupBoardsByGameId = {
             "statcast fade"
           ],
           "primaryTag": "arsenal edge",
-          "summary": ".187 AVG | .632 OPS | 34 H | 7 HR | 12g: .150 AVG | .461 OPS | 6 H | 0 HR | vs RHP: .187 AVG | .640 OPS | 4 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +1.8 | -6.4 matchup grade in a neutral lane",
+          "summary": ".187 AVG | .632 OPS | 34 H | 7 HR | 12g: .150 AVG | .461 OPS | 6 H | 0 HR | vs RHP: .187 AVG | .640 OPS | 4 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +1.8 | -6.4 matchup grade in a neutral lane",
           "matchupNote": "-6.36 vs Andre Pallante"
         }
       ],
@@ -23820,7 +23820,7 @@ export const lineupBoardsByGameId = {
   "tigers-white-sox": {
     "gameId": "tigers-white-sox",
     "title": "Tigers @ White Sox",
-    "snapshot": "2026-05-29T17:59:43.196Z",
+    "snapshot": "2026-05-29T18:25:09.520Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -26963,7 +26963,7 @@ export const lineupBoardsByGameId = {
   "royals-rangers": {
     "gameId": "royals-rangers",
     "title": "Royals @ Rangers",
-    "snapshot": "2026-05-29T17:59:43.197Z",
+    "snapshot": "2026-05-29T18:25:09.520Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -29975,7 +29975,7 @@ export const lineupBoardsByGameId = {
   "brewers-astros": {
     "gameId": "brewers-astros",
     "title": "Brewers @ Astros",
-    "snapshot": "2026-05-29T17:59:43.197Z",
+    "snapshot": "2026-05-29T18:25:09.521Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -29990,7 +29990,7 @@ export const lineupBoardsByGameId = {
       "label": "Dome In Domed Stadium"
     },
     "marketWeatherContext": {
-      "line": "MIL -119",
+      "line": "MIL -120",
       "total": "8.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
@@ -33120,7 +33120,7 @@ export const lineupBoardsByGameId = {
   "giants-rockies": {
     "gameId": "giants-rockies",
     "title": "Giants @ Rockies",
-    "snapshot": "2026-05-29T17:59:43.199Z",
+    "snapshot": "2026-05-29T18:25:09.522Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -33135,7 +33135,7 @@ export const lineupBoardsByGameId = {
       "label": "80°F | Wind 8 mph R-L | 11% precip"
     },
     "marketWeatherContext": {
-      "line": "SF -157",
+      "line": "SF -155",
       "total": "10.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
@@ -36294,7 +36294,7 @@ export const lineupBoardsByGameId = {
   "yankees-athletics": {
     "gameId": "yankees-athletics",
     "title": "Yankees @ Athletics",
-    "snapshot": "2026-05-29T17:59:43.200Z",
+    "snapshot": "2026-05-29T18:25:09.523Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -39312,7 +39312,7 @@ export const lineupBoardsByGameId = {
   "diamondbacks-mariners": {
     "gameId": "diamondbacks-mariners",
     "title": "Diamondbacks @ Mariners",
-    "snapshot": "2026-05-29T17:59:43.200Z",
+    "snapshot": "2026-05-29T18:25:09.523Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -39327,7 +39327,7 @@ export const lineupBoardsByGameId = {
       "label": "Dome In Domed Stadium"
     },
     "marketWeatherContext": {
-      "line": "SEA -143",
+      "line": "SEA -144",
       "total": "7.0 Runs",
       "source": "RotoWire daily lineups + weather"
     },
@@ -42477,7 +42477,7 @@ export const lineupBoardsByGameId = {
   "phillies-dodgers": {
     "gameId": "phillies-dodgers",
     "title": "Phillies @ Dodgers",
-    "snapshot": "2026-05-29T17:59:43.201Z",
+    "snapshot": "2026-05-29T18:25:09.524Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -42492,7 +42492,7 @@ export const lineupBoardsByGameId = {
       "label": "64°F | Wind 13 mph Out | 0% precip"
     },
     "marketWeatherContext": {
-      "line": "LAD -120",
+      "line": "LAD -119",
       "total": "8.0 Runs",
       "source": "RotoWire daily lineups + weather"
     },

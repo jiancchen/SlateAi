@@ -1934,7 +1934,7 @@ export const rawGames = [
         "playerName": "Lucas Giolito",
         "line": 3.5,
         "overPrice": -124,
-        "underPrice": 102
+        "underPrice": 108
       },
       "recentForm": null,
       "usageContext": {
@@ -2379,7 +2379,7 @@ export const rawGames = [
           "playerName": "Lucas Giolito",
           "line": 3.5,
           "overPrice": -124,
-          "underPrice": 102
+          "underPrice": 108
         },
         "home": null
       },
@@ -3598,7 +3598,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "Taj Bradley",
         "line": 5.5,
-        "overPrice": -138,
+        "overPrice": -130,
         "underPrice": 112
       },
       "recentForm": null,
@@ -4032,7 +4032,7 @@ export const rawGames = [
         "away": {
           "playerName": "Taj Bradley",
           "line": 5.5,
-          "overPrice": -138,
+          "overPrice": -130,
           "underPrice": 112
         },
         "home": null
@@ -5308,7 +5308,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "Trevor Rogers",
         "line": 4.5,
-        "overPrice": 110,
+        "overPrice": 112,
         "underPrice": -134
       },
       "recentForm": null,
@@ -5330,7 +5330,7 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -210 / +1.5 -183",
+    "spread": "+1.5 -210 / +1.5 -184",
     "total": "o8.5 -118 / u9 -115",
     "moneyline": "Blue Jays even / Orioles -115",
     "pitcherSourceNote": "",
@@ -5706,7 +5706,7 @@ export const rawGames = [
         "home": {
           "playerName": "Trevor Rogers",
           "line": 4.5,
-          "overPrice": 110,
+          "overPrice": 112,
           "underPrice": -134
         }
       },
@@ -7125,7 +7125,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "Walbert Urena",
         "line": 3.5,
-        "overPrice": -168,
+        "overPrice": -144,
         "underPrice": 136
       },
       "recentForm": null,
@@ -7723,7 +7723,7 @@ export const rawGames = [
         "away": {
           "playerName": "Walbert Urena",
           "line": 3.5,
-          "overPrice": -168,
+          "overPrice": -144,
           "underPrice": 136
         },
         "home": null
@@ -8983,7 +8983,7 @@ export const rawGames = [
         "playerName": "Max Meyer",
         "line": 5.5,
         "overPrice": -112,
-        "underPrice": -110
+        "underPrice": 116
       },
       "recentForm": null,
       "usageContext": {
@@ -9193,7 +9193,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "Freddy Peralta",
         "line": 5.5,
-        "overPrice": -134,
+        "overPrice": -110,
         "underPrice": 122
       },
       "recentForm": null,
@@ -9613,12 +9613,12 @@ export const rawGames = [
           "playerName": "Max Meyer",
           "line": 5.5,
           "overPrice": -112,
-          "underPrice": -110
+          "underPrice": 116
         },
         "home": {
           "playerName": "Freddy Peralta",
           "line": 5.5,
-          "overPrice": -134,
+          "overPrice": -110,
           "underPrice": 122
         }
       },
@@ -13022,7 +13022,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "Shota Imanaga",
         "line": 5.5,
-        "overPrice": 116,
+        "overPrice": 120,
         "underPrice": -154
       },
       "recentForm": null,
@@ -13207,7 +13207,7 @@ export const rawGames = [
         "playerName": "Andre Pallante",
         "line": 3.5,
         "overPrice": -122,
-        "underPrice": 100
+        "underPrice": 102
       },
       "recentForm": null,
       "usageContext": {
@@ -13229,7 +13229,7 @@ export const rawGames = [
       }
     },
     "spread": "-1.5 +135 / +1.5 -155",
-    "total": "o7.5 -115 / u8 -115",
+    "total": "o7.5 -115 / u8 -121",
     "moneyline": "Cubs -130 / Cardinals +110",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/cubs-vs-cardinals",
@@ -13625,14 +13625,14 @@ export const rawGames = [
         "away": {
           "playerName": "Shota Imanaga",
           "line": 5.5,
-          "overPrice": 116,
+          "overPrice": 120,
           "underPrice": -154
         },
         "home": {
           "playerName": "Andre Pallante",
           "line": 3.5,
           "overPrice": -122,
-          "underPrice": 100
+          "underPrice": 102
         }
       },
       "seriesEarlyPhase": {
@@ -14754,7 +14754,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "Troy Melton",
         "line": 4.5,
-        "overPrice": 128,
+        "overPrice": 132,
         "underPrice": -158
       },
       "recentForm": null,
@@ -15357,7 +15357,7 @@ export const rawGames = [
         "away": {
           "playerName": "Troy Melton",
           "line": 4.5,
-          "overPrice": 128,
+          "overPrice": 132,
           "underPrice": -158
         },
         "home": {
@@ -16748,7 +16748,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "MacKenzie Gore",
         "line": 5.5,
-        "overPrice": -102,
+        "overPrice": 126,
         "underPrice": -118
       },
       "recentForm": null,
@@ -17173,7 +17173,7 @@ export const rawGames = [
         "home": {
           "playerName": "MacKenzie Gore",
           "line": 5.5,
-          "overPrice": -102,
+          "overPrice": 126,
           "underPrice": -118
         }
       },
@@ -18473,7 +18473,7 @@ export const rawGames = [
         "playerName": "Kai-Wei Teng",
         "line": 4.5,
         "overPrice": -120,
-        "underPrice": -102
+        "underPrice": 104
       },
       "recentForm": null,
       "usageContext": {
@@ -18898,7 +18898,7 @@ export const rawGames = [
           "playerName": "Kai-Wei Teng",
           "line": 4.5,
           "overPrice": -120,
-          "underPrice": -102
+          "underPrice": 104
         }
       },
       "seriesEarlyPhase": {
@@ -22093,7 +22093,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "Luis Severino",
         "line": 5.5,
-        "overPrice": 102,
+        "overPrice": 112,
         "underPrice": -124
       },
       "recentForm": null,
@@ -22518,7 +22518,7 @@ export const rawGames = [
         "home": {
           "playerName": "Luis Severino",
           "line": 5.5,
-          "overPrice": 102,
+          "overPrice": 112,
           "underPrice": -124
         }
       },
@@ -24416,7 +24416,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "George Kirby",
         "line": 5.5,
-        "overPrice": 108,
+        "overPrice": 110,
         "underPrice": -128
       },
       "recentForm": null,
@@ -24440,7 +24440,7 @@ export const rawGames = [
     },
     "spread": "+1.5 -185 / -1.5 +158",
     "total": "o7 -119 / u7.5 -124",
-    "moneyline": "Diamondbacks +122 / Mariners -137",
+    "moneyline": "Diamondbacks +122 / Mariners -140",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/diamondbacks-vs-mariners",
     "tierTwoContext": {
@@ -24836,7 +24836,7 @@ export const rawGames = [
         "home": {
           "playerName": "George Kirby",
           "line": 5.5,
-          "overPrice": 108,
+          "overPrice": 110,
           "underPrice": -128
         }
       },

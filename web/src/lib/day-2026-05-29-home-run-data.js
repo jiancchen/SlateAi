@@ -1,7 +1,7 @@
 export const homeRunBoardMeta = {
   "modelName": "statcast-hr-prototype-v3",
   "date": "2026-05-29",
-  "generatedAt": "2026-05-29T17:59:59.871Z",
+  "generatedAt": "2026-05-29T18:25:15.387Z",
   "sources": [
     "https://baseballsavant.mlb.com/leaderboard/home-runs",
     "https://baseballsavant.mlb.com/leaderboard/home-runs?year=2026&player_type=Batter&cat=xhr&team=&min=0&csv=true",
@@ -2236,7 +2236,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 15,
         "seasonXHR": 15.4,
         "xhrDiff": -0.4,
-        "baseScore": 96.18555,
+        "baseScore": 97.18555,
         "lineupContext": {
           "gameTitle": "Padres @ Nationals",
           "teamName": "Nationals",
@@ -2323,9 +2323,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "77°F | 0% precip"
           },
-          "total": 9
+          "total": 9.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": 1,
         "recentHrSinceMay1": 5,
         "homeRunsLast7Days": 2,
         "homeRunsLast10Days": 3,
@@ -2349,7 +2349,7 @@ export const homeRunTargetsByGame = {
             "Four-Seam Fastball"
           ]
         },
-        "score": 112.3,
+        "score": 113.3,
         "scoreBand": "premium",
         "burstTag": "active",
         "contextLabels": [
@@ -2374,9 +2374,9 @@ export const homeRunTargetsByGame = {
           "Statcast trend improving | HH 29.7% | Barrel 10.8%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 50.02635941990633,
-        "modelShare": 0.402,
-        "modelSharePct": 40.2,
+        "rawWeight": 50.68067231387008,
+        "modelShare": 0.398,
+        "modelSharePct": 39.8,
         "lane": "anchor"
       },
       {
@@ -2394,7 +2394,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 12,
         "seasonXHR": 12.4,
         "xhrDiff": -0.4,
-        "baseScore": 83.3485,
+        "baseScore": 84.3485,
         "lineupContext": {
           "gameTitle": "Padres @ Nationals",
           "teamName": "Nationals",
@@ -2482,9 +2482,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "77°F | 0% precip"
           },
-          "total": 9
+          "total": 9.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": 1,
         "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 2,
         "homeRunsLast10Days": 3,
@@ -2508,7 +2508,7 @@ export const homeRunTargetsByGame = {
             "Four-Seam Fastball"
           ]
         },
-        "score": 83.7,
+        "score": 84.7,
         "scoreBand": "strong",
         "burstTag": "watch",
         "contextLabels": [
@@ -2533,9 +2533,9 @@ export const homeRunTargetsByGame = {
           "Statcast trend improving | HH 26.3% | Barrel 7.9%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 30.940346324356053,
-        "modelShare": 0.249,
-        "modelSharePct": 24.9,
+        "rawWeight": 31.622313872924074,
+        "modelShare": 0.248,
+        "modelSharePct": 24.8,
         "lane": "anchor"
       }
     ],
@@ -2555,7 +2555,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 7,
         "seasonXHR": 6.1,
         "xhrDiff": 0.9,
-        "baseScore": 60.9213,
+        "baseScore": 61.9213,
         "lineupContext": {
           "gameTitle": "Padres @ Nationals",
           "teamName": "Nationals",
@@ -2641,9 +2641,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "77°F | 0% precip"
           },
-          "total": 9
+          "total": 9.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": 1,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 3,
         "homeRunsLast10Days": 3,
@@ -2667,7 +2667,7 @@ export const homeRunTargetsByGame = {
             "Cutter"
           ]
         },
-        "score": 78.6,
+        "score": 79.6,
         "scoreBand": "live",
         "burstTag": "watch",
         "contextLabels": [
@@ -2692,9 +2692,9 @@ export const homeRunTargetsByGame = {
           "Statcast trend improving | HH 34.4% | Barrel 12.5%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 27.441168373893383,
-        "modelShare": 0.22,
-        "modelSharePct": 22,
+        "rawWeight": 28.130199832359537,
+        "modelShare": 0.221,
+        "modelSharePct": 22.1,
         "lane": "secondary"
       },
       {
@@ -2712,7 +2712,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 7,
         "seasonXHR": 7.5,
         "xhrDiff": -0.5,
-        "baseScore": 41.765150000000006,
+        "baseScore": 42.765150000000006,
         "lineupContext": {
           "gameTitle": "Padres @ Nationals",
           "teamName": "Nationals",
@@ -2798,9 +2798,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "77°F | 0% precip"
           },
-          "total": 9
+          "total": 9.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": 1,
         "recentHrSinceMay1": 5,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 2,
@@ -2824,7 +2824,7 @@ export const homeRunTargetsByGame = {
             "Cutter"
           ]
         },
-        "score": 62.5,
+        "score": 63.5,
         "scoreBand": "thin",
         "burstTag": "active",
         "contextLabels": [
@@ -2849,9 +2849,9 @@ export const homeRunTargetsByGame = {
           "Statcast trend improving | HH 47.4% | Barrel 10.5%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 16.099543141006695,
-        "modelShare": 0.129,
-        "modelSharePct": 12.9,
+        "rawWeight": 16.820673583475074,
+        "modelShare": 0.132,
+        "modelSharePct": 13.2,
         "lane": "live"
       }
     ],
@@ -2872,7 +2872,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 15,
         "seasonXHR": 15.4,
         "xhrDiff": -0.4,
-        "baseScore": 96.18555,
+        "baseScore": 97.18555,
         "lineupContext": {
           "gameTitle": "Padres @ Nationals",
           "teamName": "Nationals",
@@ -2959,9 +2959,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "77°F | 0% precip"
           },
-          "total": 9
+          "total": 9.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": 1,
         "recentHrSinceMay1": 5,
         "homeRunsLast7Days": 2,
         "homeRunsLast10Days": 3,
@@ -2985,7 +2985,7 @@ export const homeRunTargetsByGame = {
             "Four-Seam Fastball"
           ]
         },
-        "score": 112.3,
+        "score": 113.3,
         "scoreBand": "premium",
         "burstTag": "active",
         "contextLabels": [
@@ -3010,9 +3010,9 @@ export const homeRunTargetsByGame = {
           "Statcast trend improving | HH 29.7% | Barrel 10.8%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 50.02635941990633,
-        "modelShare": 0.402,
-        "modelSharePct": 40.2,
+        "rawWeight": 50.68067231387008,
+        "modelShare": 0.398,
+        "modelSharePct": 39.8,
         "lane": "anchor"
       },
       {
@@ -3030,7 +3030,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 12,
         "seasonXHR": 12.4,
         "xhrDiff": -0.4,
-        "baseScore": 83.3485,
+        "baseScore": 84.3485,
         "lineupContext": {
           "gameTitle": "Padres @ Nationals",
           "teamName": "Nationals",
@@ -3118,9 +3118,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "77°F | 0% precip"
           },
-          "total": 9
+          "total": 9.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": 1,
         "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 2,
         "homeRunsLast10Days": 3,
@@ -3144,7 +3144,7 @@ export const homeRunTargetsByGame = {
             "Four-Seam Fastball"
           ]
         },
-        "score": 83.7,
+        "score": 84.7,
         "scoreBand": "strong",
         "burstTag": "watch",
         "contextLabels": [
@@ -3169,9 +3169,9 @@ export const homeRunTargetsByGame = {
           "Statcast trend improving | HH 26.3% | Barrel 7.9%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 30.940346324356053,
-        "modelShare": 0.249,
-        "modelSharePct": 24.9,
+        "rawWeight": 31.622313872924074,
+        "modelShare": 0.248,
+        "modelSharePct": 24.8,
         "lane": "anchor"
       },
       {
@@ -3189,7 +3189,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 7,
         "seasonXHR": 6.1,
         "xhrDiff": 0.9,
-        "baseScore": 60.9213,
+        "baseScore": 61.9213,
         "lineupContext": {
           "gameTitle": "Padres @ Nationals",
           "teamName": "Nationals",
@@ -3275,9 +3275,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "77°F | 0% precip"
           },
-          "total": 9
+          "total": 9.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": 1,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 3,
         "homeRunsLast10Days": 3,
@@ -3301,7 +3301,7 @@ export const homeRunTargetsByGame = {
             "Cutter"
           ]
         },
-        "score": 78.6,
+        "score": 79.6,
         "scoreBand": "live",
         "burstTag": "watch",
         "contextLabels": [
@@ -3326,9 +3326,9 @@ export const homeRunTargetsByGame = {
           "Statcast trend improving | HH 34.4% | Barrel 12.5%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 27.441168373893383,
-        "modelShare": 0.22,
-        "modelSharePct": 22,
+        "rawWeight": 28.130199832359537,
+        "modelShare": 0.221,
+        "modelSharePct": 22.1,
         "lane": "secondary"
       },
       {
@@ -3346,7 +3346,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 7,
         "seasonXHR": 7.5,
         "xhrDiff": -0.5,
-        "baseScore": 41.765150000000006,
+        "baseScore": 42.765150000000006,
         "lineupContext": {
           "gameTitle": "Padres @ Nationals",
           "teamName": "Nationals",
@@ -3432,9 +3432,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "77°F | 0% precip"
           },
-          "total": 9
+          "total": 9.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": 1,
         "recentHrSinceMay1": 5,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 2,
@@ -3458,7 +3458,7 @@ export const homeRunTargetsByGame = {
             "Cutter"
           ]
         },
-        "score": 62.5,
+        "score": 63.5,
         "scoreBand": "thin",
         "burstTag": "active",
         "contextLabels": [
@@ -3483,9 +3483,9 @@ export const homeRunTargetsByGame = {
           "Statcast trend improving | HH 47.4% | Barrel 10.5%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 16.099543141006695,
-        "modelShare": 0.129,
-        "modelSharePct": 12.9,
+        "rawWeight": 16.820673583475074,
+        "modelShare": 0.132,
+        "modelSharePct": 13.2,
         "lane": "live"
       }
     ],
@@ -10350,7 +10350,7 @@ export const homeRunTargetsByGame = {
             "fitScore": 75.6,
             "fitGrade": 3.77,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +3.8",
+            "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +3.8",
             "topPitches": [
               {
                 "pitchType": "FF",
@@ -10369,12 +10369,12 @@ export const homeRunTargetsByGame = {
                 "qualityScore": 94
               },
               {
-                "pitchType": "CU",
-                "pitchName": "Curveball",
+                "pitchType": "SI",
+                "pitchName": "Sinker",
                 "pitchUsage": 18.9,
-                "fitGrade": -2.4,
-                "batterFitScore": 32.3,
-                "qualityScore": 45.5
+                "fitGrade": 9.13,
+                "batterFitScore": 90,
+                "qualityScore": 39.8
               }
             ]
           },
@@ -10510,7 +10510,7 @@ export const homeRunTargetsByGame = {
             "fitScore": 53.2,
             "fitGrade": 1.86,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +1.9",
+            "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +1.9",
             "topPitches": [
               {
                 "pitchType": "FF",
@@ -10529,12 +10529,12 @@ export const homeRunTargetsByGame = {
                 "qualityScore": 94
               },
               {
-                "pitchType": "CU",
-                "pitchName": "Curveball",
+                "pitchType": "SI",
+                "pitchName": "Sinker",
                 "pitchUsage": 18.9,
-                "fitGrade": -2.27,
-                "batterFitScore": 33,
-                "qualityScore": 45.5
+                "fitGrade": 9.85,
+                "batterFitScore": 94,
+                "qualityScore": 39.8
               }
             ]
           },
@@ -10668,7 +10668,7 @@ export const homeRunTargetsByGame = {
             "fitScore": 68.4,
             "fitGrade": 2.74,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +2.7",
+            "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +2.7",
             "topPitches": [
               {
                 "pitchType": "FF",
@@ -10687,12 +10687,12 @@ export const homeRunTargetsByGame = {
                 "qualityScore": 94
               },
               {
-                "pitchType": "CU",
-                "pitchName": "Curveball",
+                "pitchType": "SI",
+                "pitchName": "Sinker",
                 "pitchUsage": 18.9,
-                "fitGrade": -2.67,
-                "batterFitScore": 30.8,
-                "qualityScore": 45.5
+                "fitGrade": 9.85,
+                "batterFitScore": 94,
+                "qualityScore": 39.8
               }
             ]
           },
@@ -10987,7 +10987,7 @@ export const homeRunTargetsByGame = {
             "fitScore": 75.6,
             "fitGrade": 3.77,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +3.8",
+            "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +3.8",
             "topPitches": [
               {
                 "pitchType": "FF",
@@ -11006,12 +11006,12 @@ export const homeRunTargetsByGame = {
                 "qualityScore": 94
               },
               {
-                "pitchType": "CU",
-                "pitchName": "Curveball",
+                "pitchType": "SI",
+                "pitchName": "Sinker",
                 "pitchUsage": 18.9,
-                "fitGrade": -2.4,
-                "batterFitScore": 32.3,
-                "qualityScore": 45.5
+                "fitGrade": 9.13,
+                "batterFitScore": 90,
+                "qualityScore": 39.8
               }
             ]
           },
@@ -11145,7 +11145,7 @@ export const homeRunTargetsByGame = {
             "fitScore": 53.2,
             "fitGrade": 1.86,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +1.9",
+            "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +1.9",
             "topPitches": [
               {
                 "pitchType": "FF",
@@ -11164,12 +11164,12 @@ export const homeRunTargetsByGame = {
                 "qualityScore": 94
               },
               {
-                "pitchType": "CU",
-                "pitchName": "Curveball",
+                "pitchType": "SI",
+                "pitchName": "Sinker",
                 "pitchUsage": 18.9,
-                "fitGrade": -2.27,
-                "batterFitScore": 33,
-                "qualityScore": 45.5
+                "fitGrade": 9.85,
+                "batterFitScore": 94,
+                "qualityScore": 39.8
               }
             ]
           },
@@ -11303,7 +11303,7 @@ export const homeRunTargetsByGame = {
             "fitScore": 68.4,
             "fitGrade": 2.74,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +2.7",
+            "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +2.7",
             "topPitches": [
               {
                 "pitchType": "FF",
@@ -11322,12 +11322,12 @@ export const homeRunTargetsByGame = {
                 "qualityScore": 94
               },
               {
-                "pitchType": "CU",
-                "pitchName": "Curveball",
+                "pitchType": "SI",
+                "pitchName": "Sinker",
                 "pitchUsage": 18.9,
-                "fitGrade": -2.67,
-                "batterFitScore": 30.8,
-                "qualityScore": 45.5
+                "fitGrade": 9.85,
+                "batterFitScore": 94,
+                "qualityScore": 39.8
               }
             ]
           },

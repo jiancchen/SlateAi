@@ -8,6 +8,7 @@ import gzip
 import hashlib
 import io
 import json
+import re
 import sqlite3
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -80,6 +81,70 @@ TEAM_DIVISIONS = {
     "Los Angeles Dodgers": "NL West",
     "San Diego Padres": "NL West",
     "San Francisco Giants": "NL West",
+}
+
+TEAM_MARKET_ALIASES = {
+    "braves": "Atlanta Braves",
+    "orioles": "Baltimore Orioles",
+    "red sox": "Boston Red Sox",
+    "boston red sox": "Boston Red Sox",
+    "cubs": "Chicago Cubs",
+    "chicago cubs": "Chicago Cubs",
+    "reds": "Cincinnati Reds",
+    "cincinnati reds": "Cincinnati Reds",
+    "guardians": "Cleveland Guardians",
+    "cleveland guardians": "Cleveland Guardians",
+    "rockies": "Colorado Rockies",
+    "colorado rockies": "Colorado Rockies",
+    "white sox": "Chicago White Sox",
+    "chicago white sox": "Chicago White Sox",
+    "tigers": "Detroit Tigers",
+    "detroit tigers": "Detroit Tigers",
+    "astros": "Houston Astros",
+    "houston astros": "Houston Astros",
+    "royals": "Kansas City Royals",
+    "kansas city royals": "Kansas City Royals",
+    "angels": "Los Angeles Angels",
+    "los angeles angels": "Los Angeles Angels",
+    "dodgers": "Los Angeles Dodgers",
+    "los angeles dodgers": "Los Angeles Dodgers",
+    "marlins": "Miami Marlins",
+    "miami marlins": "Miami Marlins",
+    "brewers": "Milwaukee Brewers",
+    "milwaukee brewers": "Milwaukee Brewers",
+    "twins": "Minnesota Twins",
+    "minnesota twins": "Minnesota Twins",
+    "mets": "New York Mets",
+    "new york mets": "New York Mets",
+    "yankees": "New York Yankees",
+    "new york yankees": "New York Yankees",
+    "athletics": "Athletics",
+    "a s": "Athletics",
+    "as": "Athletics",
+    "phillies": "Philadelphia Phillies",
+    "philadelphia phillies": "Philadelphia Phillies",
+    "pirates": "Pittsburgh Pirates",
+    "pittsburgh pirates": "Pittsburgh Pirates",
+    "padres": "San Diego Padres",
+    "san diego padres": "San Diego Padres",
+    "mariners": "Seattle Mariners",
+    "seattle mariners": "Seattle Mariners",
+    "giants": "San Francisco Giants",
+    "san francisco giants": "San Francisco Giants",
+    "cardinals": "St. Louis Cardinals",
+    "st louis cardinals": "St. Louis Cardinals",
+    "rays": "Tampa Bay Rays",
+    "tampa bay rays": "Tampa Bay Rays",
+    "rangers": "Texas Rangers",
+    "texas rangers": "Texas Rangers",
+    "blue jays": "Toronto Blue Jays",
+    "toronto blue jays": "Toronto Blue Jays",
+    "nationals": "Washington Nationals",
+    "washington nationals": "Washington Nationals",
+    "d backs": "Arizona Diamondbacks",
+    "dbacks": "Arizona Diamondbacks",
+    "diamondbacks": "Arizona Diamondbacks",
+    "arizona diamondbacks": "Arizona Diamondbacks",
 }
 
 
@@ -831,6 +896,60 @@ CREATE TABLE IF NOT EXISTS mlb_team_state_snapshots (
   PRIMARY KEY (as_of_date, team_name)
 );
 
+CREATE TABLE IF NOT EXISTS mlb_team_market_context_daily (
+  as_of_date TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  scheduled_opponent TEXT,
+  games_sample_last5 INTEGER NOT NULL,
+  games_sample_last10 INTEGER NOT NULL,
+  moneyline_games_with_odds_last5 INTEGER NOT NULL,
+  moneyline_games_with_odds_last10 INTEGER NOT NULL,
+  favorite_rate_last5 REAL,
+  favorite_rate_last10 REAL,
+  underdog_rate_last5 REAL,
+  underdog_rate_last10 REAL,
+  favorite_hold_rate_last5 REAL,
+  favorite_hold_rate_last10 REAL,
+  underdog_upset_rate_last5 REAL,
+  underdog_upset_rate_last10 REAL,
+  totals_games_with_lines_last5 INTEGER NOT NULL,
+  totals_games_with_lines_last10 INTEGER NOT NULL,
+  over_rate_last5 REAL,
+  over_rate_last10 REAL,
+  under_rate_last5 REAL,
+  under_rate_last10 REAL,
+  push_rate_last5 REAL,
+  push_rate_last10 REAL,
+  avg_total_runs_minus_line_last5 REAL,
+  avg_total_runs_minus_line_last10 REAL,
+  market_volatility_index REAL,
+  PRIMARY KEY (as_of_date, team_name)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_team_opponent_quality_daily (
+  as_of_date TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  scheduled_opponent TEXT,
+  games_sample_last5 INTEGER NOT NULL,
+  games_sample_last10 INTEGER NOT NULL,
+  avg_opponent_season_win_pct_last5 REAL,
+  avg_opponent_season_win_pct_last10 REAL,
+  avg_opponent_recent10_win_pct_last5 REAL,
+  avg_opponent_recent10_win_pct_last10 REAL,
+  avg_opponent_recent10_run_diff_last5 REAL,
+  avg_opponent_recent10_run_diff_last10 REAL,
+  games_vs_winning_record_last5 INTEGER NOT NULL,
+  games_vs_winning_record_last10 INTEGER NOT NULL,
+  games_vs_550_last5 INTEGER NOT NULL,
+  games_vs_550_last10 INTEGER NOT NULL,
+  win_rate_vs_winning_record_last10 REAL,
+  win_rate_vs_550_last10 REAL,
+  close_losses_vs_winning_record_last10 INTEGER NOT NULL,
+  schedule_toughness_index_last5 REAL,
+  schedule_toughness_index_last10 REAL,
+  PRIMARY KEY (as_of_date, team_name)
+);
+
 CREATE TABLE IF NOT EXISTS mlb_hitter_state_snapshots (
   as_of_date TEXT NOT NULL,
   team_name TEXT NOT NULL,
@@ -1221,6 +1340,10 @@ CREATE INDEX IF NOT EXISTS idx_mlb_hitter_state_snapshots_team_date
   ON mlb_hitter_state_snapshots(team_name, as_of_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_hitter_state_snapshots_player_date
   ON mlb_hitter_state_snapshots(player_id, as_of_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_team_market_context_daily_team_date
+  ON mlb_team_market_context_daily(team_name, as_of_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_team_opponent_quality_daily_team_date
+  ON mlb_team_opponent_quality_daily(team_name, as_of_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_hitter_statcast_game_logs_player_date
   ON mlb_hitter_statcast_game_logs(player_id, game_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_hitter_statcast_game_logs_team_date
@@ -1470,6 +1593,16 @@ def to_float(value: Any) -> float | None:
         return float(value)
     except (TypeError, ValueError):
         return None
+
+
+def normalize_team_name_for_market(value: Any) -> str:
+    text = str(value or "").casefold()
+    text = text.replace("st.", "st")
+    text = text.replace("-", " ")
+    text = text.replace("'", "")
+    text = re.sub(r"[^a-z0-9 ]+", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return TEAM_MARKET_ALIASES.get(text, str(value or ""))
 
 
 def innings_to_float(value: Any) -> float | None:
@@ -4671,6 +4804,543 @@ def build_recent_hitter_state_row(
         "cold_streak_index": cold_streak_index,
         "heat_regression_index": heat_regression_index,
     }
+
+
+def build_recent_team_market_packets(
+    conn: sqlite3.Connection,
+    team_name: str,
+    as_of_date: str,
+    window_games: int,
+) -> list[dict[str, Any]]:
+    rows = conn.execute(
+        """
+        SELECT
+          g.game_pk,
+          g.game_date,
+          g.away_team,
+          g.home_team,
+          o.away_runs_final,
+          o.home_runs_final,
+          o.total_runs_final
+        FROM mlb_games g
+        JOIN mlb_game_outcomes o
+          USING (game_pk)
+        WHERE g.game_date < ?
+          AND (g.away_team = ? OR g.home_team = ?)
+        ORDER BY g.game_date DESC, g.game_pk DESC
+        LIMIT ?
+        """,
+        (as_of_date, team_name, team_name, window_games),
+    ).fetchall()
+
+    packets: list[dict[str, Any]] = []
+    for row in rows:
+        team_role = "away" if row["away_team"] == team_name else "home"
+        opponent_team = row["home_team"] if team_role == "away" else row["away_team"]
+        team_runs_final = (to_int(row["away_runs_final"]) or 0) if team_role == "away" else (to_int(row["home_runs_final"]) or 0)
+        opponent_runs_final = (to_int(row["home_runs_final"]) or 0) if team_role == "away" else (to_int(row["away_runs_final"]) or 0)
+        packets.append(
+            {
+                "game_pk": to_int(row["game_pk"]) or 0,
+                "game_date": row["game_date"],
+                "team_name": team_name,
+                "team_role": team_role,
+                "opponent_team": opponent_team,
+                "team_runs_final": team_runs_final,
+                "opponent_runs_final": opponent_runs_final,
+                "total_runs_final": to_int(row["total_runs_final"]) or (team_runs_final + opponent_runs_final),
+                "won_flag": 1 if team_runs_final > opponent_runs_final else 0,
+                "run_diff": team_runs_final - opponent_runs_final,
+            }
+        )
+    return packets
+
+
+def american_implied_probability(price: Any) -> float | None:
+    odds = to_float(price)
+    if odds is None or odds == 0:
+        return None
+    if odds > 0:
+        return 100.0 / (odds + 100.0)
+    return abs(odds) / (abs(odds) + 100.0)
+
+
+def load_latest_featured_market_rows(
+    conn: sqlite3.Connection,
+    game_pk: int,
+    market_key: str,
+    cache: dict[tuple[int, str], list[sqlite3.Row]],
+) -> list[sqlite3.Row]:
+    cache_key = (game_pk, market_key)
+    if cache_key not in cache:
+        cache[cache_key] = conn.execute(
+            """
+            WITH latest_snapshot AS (
+              SELECT MAX(snapshot_time) AS snapshot_time
+              FROM mlb_featured_market_odds_snapshots
+              WHERE game_pk = ?
+                AND market_key = ?
+            )
+            SELECT *
+            FROM mlb_featured_market_odds_snapshots
+            WHERE game_pk = ?
+              AND market_key = ?
+              AND snapshot_time = (SELECT snapshot_time FROM latest_snapshot)
+            ORDER BY outcome_name
+            """,
+            (game_pk, market_key, game_pk, market_key),
+        ).fetchall()
+    return cache[cache_key]
+
+
+def resolve_moneyline_market_snapshot(
+    conn: sqlite3.Connection,
+    game_pk: int,
+    team_name: str,
+    cache: dict[tuple[int, str], list[sqlite3.Row]],
+) -> dict[str, Any] | None:
+    rows = load_latest_featured_market_rows(conn, game_pk, "h2h", cache)
+    if len(rows) < 2:
+        return None
+
+    normalized_team_name = normalize_team_name_for_market(team_name)
+    team_row = next(
+        (
+            row
+            for row in rows
+            if normalize_team_name_for_market(row["outcome_name"]) == normalized_team_name
+        ),
+        None,
+    )
+    if not team_row:
+        return None
+    opponent_row = next(
+        (
+            row
+            for row in rows
+            if normalize_team_name_for_market(row["outcome_name"]) != normalized_team_name
+        ),
+        None,
+    )
+    if not opponent_row:
+        return None
+
+    team_prob = american_implied_probability(team_row["price"])
+    opponent_prob = american_implied_probability(opponent_row["price"])
+    if team_prob is None or opponent_prob is None:
+        return None
+
+    favorite_flag = int(team_prob > opponent_prob)
+    underdog_flag = int(team_prob < opponent_prob)
+    return {
+        "team_prob": team_prob,
+        "opponent_prob": opponent_prob,
+        "favorite_flag": favorite_flag,
+        "underdog_flag": underdog_flag,
+    }
+
+
+def resolve_totals_market_snapshot(
+    conn: sqlite3.Connection,
+    game_pk: int,
+    cache: dict[tuple[int, str], list[sqlite3.Row]],
+) -> dict[str, Any] | None:
+    rows = load_latest_featured_market_rows(conn, game_pk, "totals", cache)
+    if len(rows) < 2:
+        return None
+
+    point_values = [to_float(row["point"]) for row in rows if to_float(row["point"]) is not None]
+    if not point_values:
+        return None
+    line = point_values[0]
+    if any(abs((value or line) - line) > 1e-9 for value in point_values):
+        return None
+
+    over_row = next((row for row in rows if str(row["outcome_name"] or "").lower() == "over"), None)
+    under_row = next((row for row in rows if str(row["outcome_name"] or "").lower() == "under"), None)
+    if not over_row or not under_row:
+        return None
+    return {"line": line}
+
+
+def build_team_market_context_row(
+    conn: sqlite3.Connection,
+    as_of_date: str,
+    team_name: str,
+    packets: list[dict[str, Any]],
+    market_cache: dict[tuple[int, str], list[sqlite3.Row]],
+) -> dict[str, Any] | None:
+    if not packets:
+        return None
+
+    schedule_context = build_team_schedule_context(conn, as_of_date, team_name)
+    last5 = packets[:5]
+    last10 = packets[:10]
+
+    def summarize(window_packets: list[dict[str, Any]]) -> dict[str, Any]:
+        moneyline_packets: list[dict[str, Any]] = []
+        totals_packets: list[dict[str, Any]] = []
+        for packet in window_packets:
+            moneyline_snapshot = resolve_moneyline_market_snapshot(conn, packet["game_pk"], team_name, market_cache)
+            if moneyline_snapshot:
+                moneyline_packets.append({**packet, **moneyline_snapshot})
+            totals_snapshot = resolve_totals_market_snapshot(conn, packet["game_pk"], market_cache)
+            if totals_snapshot:
+                total_delta = (packet["total_runs_final"] or 0) - (totals_snapshot["line"] or 0.0)
+                totals_packets.append(
+                    {
+                        **packet,
+                        "line": totals_snapshot["line"],
+                        "over_flag": 1 if total_delta > 0 else 0,
+                        "under_flag": 1 if total_delta < 0 else 0,
+                        "push_flag": 1 if abs(total_delta) <= 1e-9 else 0,
+                        "total_delta": total_delta,
+                    }
+                )
+
+        favorite_packets = [packet for packet in moneyline_packets if packet["favorite_flag"]]
+        underdog_packets = [packet for packet in moneyline_packets if packet["underdog_flag"]]
+        favorite_hold_rate = conditional_rate([packet["won_flag"] for packet in favorite_packets])
+        underdog_upset_rate = conditional_rate([packet["won_flag"] for packet in underdog_packets])
+        avg_total_delta = safe_mean([packet["total_delta"] for packet in totals_packets]) if totals_packets else None
+        volatility_index = clamp_value(
+            18
+            + max(0.0, 0.6 - (favorite_hold_rate if favorite_hold_rate is not None else 0.6)) * 34
+            + (underdog_upset_rate or 0.0) * 18
+            + max(0.0, abs(avg_total_delta or 0.0) - 0.5) * 10,
+            0,
+            100,
+        )
+        return {
+            "games_sample": len(window_packets),
+            "moneyline_games_with_odds": len(moneyline_packets),
+            "favorite_rate": safe_mean([packet["favorite_flag"] for packet in moneyline_packets]) if moneyline_packets else None,
+            "underdog_rate": safe_mean([packet["underdog_flag"] for packet in moneyline_packets]) if moneyline_packets else None,
+            "favorite_hold_rate": favorite_hold_rate,
+            "underdog_upset_rate": underdog_upset_rate,
+            "totals_games_with_lines": len(totals_packets),
+            "over_rate": conditional_rate([packet["over_flag"] for packet in totals_packets]),
+            "under_rate": conditional_rate([packet["under_flag"] for packet in totals_packets]),
+            "push_rate": conditional_rate([packet["push_flag"] for packet in totals_packets]),
+            "avg_total_runs_minus_line": avg_total_delta,
+            "market_volatility_index": volatility_index,
+        }
+
+    last5_summary = summarize(last5)
+    last10_summary = summarize(last10)
+    return {
+        "as_of_date": as_of_date,
+        "team_name": team_name,
+        "scheduled_opponent": schedule_context["scheduled_opponent"],
+        "games_sample_last5": last5_summary["games_sample"],
+        "games_sample_last10": last10_summary["games_sample"],
+        "moneyline_games_with_odds_last5": last5_summary["moneyline_games_with_odds"],
+        "moneyline_games_with_odds_last10": last10_summary["moneyline_games_with_odds"],
+        "favorite_rate_last5": last5_summary["favorite_rate"],
+        "favorite_rate_last10": last10_summary["favorite_rate"],
+        "underdog_rate_last5": last5_summary["underdog_rate"],
+        "underdog_rate_last10": last10_summary["underdog_rate"],
+        "favorite_hold_rate_last5": last5_summary["favorite_hold_rate"],
+        "favorite_hold_rate_last10": last10_summary["favorite_hold_rate"],
+        "underdog_upset_rate_last5": last5_summary["underdog_upset_rate"],
+        "underdog_upset_rate_last10": last10_summary["underdog_upset_rate"],
+        "totals_games_with_lines_last5": last5_summary["totals_games_with_lines"],
+        "totals_games_with_lines_last10": last10_summary["totals_games_with_lines"],
+        "over_rate_last5": last5_summary["over_rate"],
+        "over_rate_last10": last10_summary["over_rate"],
+        "under_rate_last5": last5_summary["under_rate"],
+        "under_rate_last10": last10_summary["under_rate"],
+        "push_rate_last5": last5_summary["push_rate"],
+        "push_rate_last10": last10_summary["push_rate"],
+        "avg_total_runs_minus_line_last5": last5_summary["avg_total_runs_minus_line"],
+        "avg_total_runs_minus_line_last10": last10_summary["avg_total_runs_minus_line"],
+        "market_volatility_index": max(
+            to_float(last5_summary["market_volatility_index"]) or 0.0,
+            to_float(last10_summary["market_volatility_index"]) or 0.0,
+        ),
+    }
+
+
+def load_team_strength_before_date(
+    conn: sqlite3.Connection,
+    team_name: str,
+    before_date: str,
+    cache: dict[tuple[str, str], dict[str, Any]],
+) -> dict[str, Any]:
+    cache_key = (team_name, before_date)
+    if cache_key in cache:
+        return cache[cache_key]
+
+    rows = conn.execute(
+        """
+        SELECT
+          g.game_date,
+          g.game_pk,
+          CASE
+            WHEN g.away_team = ? THEN (COALESCE(o.away_runs_final, 0) - COALESCE(o.home_runs_final, 0))
+            WHEN g.home_team = ? THEN (COALESCE(o.home_runs_final, 0) - COALESCE(o.away_runs_final, 0))
+            ELSE NULL
+          END AS run_diff,
+          CASE
+            WHEN g.away_team = ? AND COALESCE(o.away_runs_final, 0) > COALESCE(o.home_runs_final, 0) THEN 1
+            WHEN g.home_team = ? AND COALESCE(o.home_runs_final, 0) > COALESCE(o.away_runs_final, 0) THEN 1
+            ELSE 0
+          END AS won_flag
+        FROM mlb_games g
+        JOIN mlb_game_outcomes o
+          USING (game_pk)
+        WHERE g.game_date < ?
+          AND (g.away_team = ? OR g.home_team = ?)
+        ORDER BY g.game_date DESC, g.game_pk DESC
+        """,
+        (team_name, team_name, team_name, team_name, before_date, team_name, team_name),
+    ).fetchall()
+
+    recent10 = rows[:10]
+    payload = {
+        "games_sample": len(rows),
+        "season_win_pct": safe_mean([to_int(row["won_flag"]) or 0 for row in rows]) if rows else None,
+        "recent10_win_pct": safe_mean([to_int(row["won_flag"]) or 0 for row in recent10]) if recent10 else None,
+        "recent10_run_diff": safe_mean([to_float(row["run_diff"]) or 0.0 for row in recent10]) if recent10 else None,
+    }
+    cache[cache_key] = payload
+    return payload
+
+
+def build_team_opponent_quality_row(
+    conn: sqlite3.Connection,
+    as_of_date: str,
+    team_name: str,
+    packets: list[dict[str, Any]],
+    strength_cache: dict[tuple[str, str], dict[str, Any]],
+) -> dict[str, Any] | None:
+    if not packets:
+        return None
+
+    schedule_context = build_team_schedule_context(conn, as_of_date, team_name)
+
+    def summarize(window_packets: list[dict[str, Any]]) -> dict[str, Any]:
+        opponent_rows: list[dict[str, Any]] = []
+        for packet in window_packets:
+            strength = load_team_strength_before_date(conn, packet["opponent_team"], packet["game_date"], strength_cache)
+            opponent_rows.append({**packet, **strength})
+
+        winning_record_rows = [
+            row for row in opponent_rows if (to_float(row["season_win_pct"]) or 0.0) >= 0.5
+        ]
+        strong_rows = [
+            row for row in opponent_rows if (to_float(row["season_win_pct"]) or 0.0) >= 0.55
+        ]
+        close_losses_vs_winning = sum(
+            1
+            for row in winning_record_rows
+            if not row["won_flag"] and (to_int(row["run_diff"]) or 0) >= -2
+        )
+        avg_season_win_pct = safe_mean(
+            [to_float(row["season_win_pct"]) for row in opponent_rows if to_float(row["season_win_pct"]) is not None]
+        ) if opponent_rows else None
+        avg_recent10_win_pct = safe_mean(
+            [to_float(row["recent10_win_pct"]) for row in opponent_rows if to_float(row["recent10_win_pct"]) is not None]
+        ) if opponent_rows else None
+        avg_recent10_run_diff = safe_mean(
+            [to_float(row["recent10_run_diff"]) for row in opponent_rows if to_float(row["recent10_run_diff"]) is not None]
+        ) if opponent_rows else None
+        toughness_index = clamp_value(
+            18
+            + max(0.0, (avg_season_win_pct or 0.5) - 0.5) * 120
+            + max(0.0, (avg_recent10_win_pct or 0.5) - 0.5) * 90
+            + max(0.0, avg_recent10_run_diff or 0.0) * 10
+            + len(strong_rows) * 2,
+            0,
+            100,
+        )
+        return {
+            "games_sample": len(window_packets),
+            "avg_opponent_season_win_pct": avg_season_win_pct,
+            "avg_opponent_recent10_win_pct": avg_recent10_win_pct,
+            "avg_opponent_recent10_run_diff": avg_recent10_run_diff,
+            "games_vs_winning_record": len(winning_record_rows),
+            "games_vs_550": len(strong_rows),
+            "win_rate_vs_winning_record": conditional_rate([row["won_flag"] for row in winning_record_rows]),
+            "win_rate_vs_550": conditional_rate([row["won_flag"] for row in strong_rows]),
+            "close_losses_vs_winning_record": close_losses_vs_winning,
+            "schedule_toughness_index": toughness_index,
+        }
+
+    last5_summary = summarize(packets[:5])
+    last10_summary = summarize(packets[:10])
+    return {
+        "as_of_date": as_of_date,
+        "team_name": team_name,
+        "scheduled_opponent": schedule_context["scheduled_opponent"],
+        "games_sample_last5": last5_summary["games_sample"],
+        "games_sample_last10": last10_summary["games_sample"],
+        "avg_opponent_season_win_pct_last5": last5_summary["avg_opponent_season_win_pct"],
+        "avg_opponent_season_win_pct_last10": last10_summary["avg_opponent_season_win_pct"],
+        "avg_opponent_recent10_win_pct_last5": last5_summary["avg_opponent_recent10_win_pct"],
+        "avg_opponent_recent10_win_pct_last10": last10_summary["avg_opponent_recent10_win_pct"],
+        "avg_opponent_recent10_run_diff_last5": last5_summary["avg_opponent_recent10_run_diff"],
+        "avg_opponent_recent10_run_diff_last10": last10_summary["avg_opponent_recent10_run_diff"],
+        "games_vs_winning_record_last5": last5_summary["games_vs_winning_record"],
+        "games_vs_winning_record_last10": last10_summary["games_vs_winning_record"],
+        "games_vs_550_last5": last5_summary["games_vs_550"],
+        "games_vs_550_last10": last10_summary["games_vs_550"],
+        "win_rate_vs_winning_record_last10": last10_summary["win_rate_vs_winning_record"],
+        "win_rate_vs_550_last10": last10_summary["win_rate_vs_550"],
+        "close_losses_vs_winning_record_last10": last10_summary["close_losses_vs_winning_record"],
+        "schedule_toughness_index_last5": last5_summary["schedule_toughness_index"],
+        "schedule_toughness_index_last10": last10_summary["schedule_toughness_index"],
+    }
+
+
+def refresh_market_context_profiles(
+    conn: sqlite3.Connection,
+    through_date: str | None = None,
+    as_of_date: str | None = None,
+) -> None:
+    init_db(conn)
+
+    if as_of_date:
+        dates = [
+            row["game_date"]
+            for row in conn.execute(
+                "SELECT DISTINCT game_date FROM mlb_games WHERE game_date = ? ORDER BY game_date",
+                (as_of_date,),
+            ).fetchall()
+        ]
+        conn.execute("DELETE FROM mlb_team_market_context_daily WHERE as_of_date = ?", (as_of_date,))
+        conn.execute("DELETE FROM mlb_team_opponent_quality_daily WHERE as_of_date = ?", (as_of_date,))
+    else:
+        params: tuple[Any, ...] = (through_date,) if through_date else ()
+        date_filter = "WHERE game_date <= ?" if through_date else ""
+        dates = [
+            row["game_date"]
+            for row in conn.execute(
+                f"SELECT DISTINCT game_date FROM mlb_games {date_filter} ORDER BY game_date", params
+            ).fetchall()
+        ]
+        if through_date:
+            conn.execute("DELETE FROM mlb_team_market_context_daily WHERE as_of_date <= ?", (through_date,))
+            conn.execute("DELETE FROM mlb_team_opponent_quality_daily WHERE as_of_date <= ?", (through_date,))
+        else:
+            conn.execute("DELETE FROM mlb_team_market_context_daily")
+            conn.execute("DELETE FROM mlb_team_opponent_quality_daily")
+
+    market_cache: dict[tuple[int, str], list[sqlite3.Row]] = {}
+    strength_cache: dict[tuple[str, str], dict[str, Any]] = {}
+
+    for current_date in dates:
+        teams = [
+            row["team_name"]
+            for row in conn.execute(
+                """
+                SELECT away_team AS team_name
+                FROM mlb_games
+                WHERE game_date = ?
+                UNION
+                SELECT home_team AS team_name
+                FROM mlb_games
+                WHERE game_date = ?
+                ORDER BY team_name
+                """,
+                (current_date, current_date),
+            ).fetchall()
+        ]
+
+        for team_name in teams:
+            packets = build_recent_team_market_packets(conn, team_name, current_date, 10)
+            market_row = build_team_market_context_row(conn, current_date, team_name, packets, market_cache)
+            if market_row:
+                conn.execute(
+                    """
+                    INSERT INTO mlb_team_market_context_daily (
+                      as_of_date, team_name, scheduled_opponent,
+                      games_sample_last5, games_sample_last10,
+                      moneyline_games_with_odds_last5, moneyline_games_with_odds_last10,
+                      favorite_rate_last5, favorite_rate_last10,
+                      underdog_rate_last5, underdog_rate_last10,
+                      favorite_hold_rate_last5, favorite_hold_rate_last10,
+                      underdog_upset_rate_last5, underdog_upset_rate_last10,
+                      totals_games_with_lines_last5, totals_games_with_lines_last10,
+                      over_rate_last5, over_rate_last10,
+                      under_rate_last5, under_rate_last10,
+                      push_rate_last5, push_rate_last10,
+                      avg_total_runs_minus_line_last5, avg_total_runs_minus_line_last10,
+                      market_volatility_index
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        market_row["as_of_date"],
+                        market_row["team_name"],
+                        market_row["scheduled_opponent"],
+                        market_row["games_sample_last5"],
+                        market_row["games_sample_last10"],
+                        market_row["moneyline_games_with_odds_last5"],
+                        market_row["moneyline_games_with_odds_last10"],
+                        market_row["favorite_rate_last5"],
+                        market_row["favorite_rate_last10"],
+                        market_row["underdog_rate_last5"],
+                        market_row["underdog_rate_last10"],
+                        market_row["favorite_hold_rate_last5"],
+                        market_row["favorite_hold_rate_last10"],
+                        market_row["underdog_upset_rate_last5"],
+                        market_row["underdog_upset_rate_last10"],
+                        market_row["totals_games_with_lines_last5"],
+                        market_row["totals_games_with_lines_last10"],
+                        market_row["over_rate_last5"],
+                        market_row["over_rate_last10"],
+                        market_row["under_rate_last5"],
+                        market_row["under_rate_last10"],
+                        market_row["push_rate_last5"],
+                        market_row["push_rate_last10"],
+                        market_row["avg_total_runs_minus_line_last5"],
+                        market_row["avg_total_runs_minus_line_last10"],
+                        market_row["market_volatility_index"],
+                    ),
+                )
+
+            opponent_row = build_team_opponent_quality_row(conn, current_date, team_name, packets, strength_cache)
+            if opponent_row:
+                conn.execute(
+                    """
+                    INSERT INTO mlb_team_opponent_quality_daily (
+                      as_of_date, team_name, scheduled_opponent,
+                      games_sample_last5, games_sample_last10,
+                      avg_opponent_season_win_pct_last5, avg_opponent_season_win_pct_last10,
+                      avg_opponent_recent10_win_pct_last5, avg_opponent_recent10_win_pct_last10,
+                      avg_opponent_recent10_run_diff_last5, avg_opponent_recent10_run_diff_last10,
+                      games_vs_winning_record_last5, games_vs_winning_record_last10,
+                      games_vs_550_last5, games_vs_550_last10,
+                      win_rate_vs_winning_record_last10, win_rate_vs_550_last10,
+                      close_losses_vs_winning_record_last10,
+                      schedule_toughness_index_last5, schedule_toughness_index_last10
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        opponent_row["as_of_date"],
+                        opponent_row["team_name"],
+                        opponent_row["scheduled_opponent"],
+                        opponent_row["games_sample_last5"],
+                        opponent_row["games_sample_last10"],
+                        opponent_row["avg_opponent_season_win_pct_last5"],
+                        opponent_row["avg_opponent_season_win_pct_last10"],
+                        opponent_row["avg_opponent_recent10_win_pct_last5"],
+                        opponent_row["avg_opponent_recent10_win_pct_last10"],
+                        opponent_row["avg_opponent_recent10_run_diff_last5"],
+                        opponent_row["avg_opponent_recent10_run_diff_last10"],
+                        opponent_row["games_vs_winning_record_last5"],
+                        opponent_row["games_vs_winning_record_last10"],
+                        opponent_row["games_vs_550_last5"],
+                        opponent_row["games_vs_550_last10"],
+                        opponent_row["win_rate_vs_winning_record_last10"],
+                        opponent_row["win_rate_vs_550_last10"],
+                        opponent_row["close_losses_vs_winning_record_last10"],
+                        opponent_row["schedule_toughness_index_last5"],
+                        opponent_row["schedule_toughness_index_last10"],
+                    ),
+                )
+
+    conn.commit()
 
 
 def build_team_mistake_shape_game_packet(
@@ -8991,6 +9661,18 @@ def parse_args() -> argparse.Namespace:
         help="Optional single as-of date to rebuild incrementally without touching earlier snapshot rows.",
     )
 
+    derive_market_context = subparsers.add_parser(
+        "derive-market-context",
+        help="Refresh rolling team market-history and opponent-quality context tables for scheduled teams.",
+    )
+    derive_market_context.add_argument(
+        "--through-date", help="Optional YYYY-MM-DD cutoff. Defaults to every loaded date."
+    )
+    derive_market_context.add_argument(
+        "--as-of-date",
+        help="Optional single as-of date to rebuild incrementally without touching earlier market-context rows.",
+    )
+
     derive_mistake_shapes = subparsers.add_parser(
         "derive-mistake-shapes",
         help="Refresh daily team, starter, bullpen, and lineup mistake-shape profile tables.",
@@ -9199,6 +9881,16 @@ def main() -> None:
                 print(f"Refreshed MLB rolling state snapshots through {args.through_date}")
             else:
                 print("Refreshed MLB rolling state snapshots for all loaded dates")
+            return
+
+        if args.command == "derive-market-context":
+            refresh_market_context_profiles(conn, args.through_date, args.as_of_date)
+            if args.as_of_date:
+                print(f"Refreshed MLB market/opponent context tables for {args.as_of_date}")
+            elif args.through_date:
+                print(f"Refreshed MLB market/opponent context tables through {args.through_date}")
+            else:
+                print("Refreshed MLB market/opponent context tables for all loaded dates")
             return
 
         if args.command == "derive-mistake-shapes":

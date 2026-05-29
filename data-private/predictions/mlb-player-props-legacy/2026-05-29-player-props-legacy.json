@@ -1,7 +1,7 @@
 {
   "modelName": "mlb-player-props-v1-legacy",
   "date": "2026-05-29",
-  "generatedAt": "2026-05-29T18:00:00.066Z",
+  "generatedAt": "2026-05-29T18:25:15.569Z",
   "sources": [
     "day-file-live-board",
     "web/src/lib/sports-model.js",
@@ -2115,7 +2115,7 @@
       "matchupNote": "+10.00 vs Andre Pallante",
       "teamScriptLabel": "",
       "lineupStatus": "partial",
-      "playerSummary": ".225 AVG | .806 OPS | 45 H | 12 HR | 10g: .304 AVG | .986 OPS | 14 H | 4 HR | vs RHP: .246 AVG | .882 OPS | 9 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +3.8 | +10.0 matchup grade in a neutral lane"
+      "playerSummary": ".225 AVG | .806 OPS | 45 H | 12 HR | 10g: .304 AVG | .986 OPS | 14 H | 4 HR | vs RHP: .246 AVG | .882 OPS | 9 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +3.8 | +10.0 matchup grade in a neutral lane"
     },
     {
       "rank": 51,
@@ -2829,7 +2829,7 @@
       "matchupNote": "+8.75 vs Andre Pallante",
       "teamScriptLabel": "",
       "lineupStatus": "partial",
-      "playerSummary": ".229 AVG | .750 OPS | 46 H | 6 HR | 14g: .200 AVG | .852 OPS | 10 H | 4 HR | vs RHP: .243 AVG | .799 OPS | 5 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +1.9 | +8.8 matchup grade in a neutral lane"
+      "playerSummary": ".229 AVG | .750 OPS | 46 H | 6 HR | 14g: .200 AVG | .852 OPS | 10 H | 4 HR | vs RHP: .243 AVG | .799 OPS | 5 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +1.9 | +8.8 matchup grade in a neutral lane"
     },
     {
       "rank": 68,
@@ -5393,7 +5393,7 @@
       "matchupNote": "+10.00 vs Andre Pallante",
       "teamScriptLabel": "",
       "lineupStatus": "partial",
-      "playerSummary": ".225 AVG | .806 OPS | 45 H | 12 HR | 10g: .304 AVG | .986 OPS | 14 H | 4 HR | vs RHP: .246 AVG | .882 OPS | 9 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +3.8 | +10.0 matchup grade in a neutral lane"
+      "playerSummary": ".225 AVG | .806 OPS | 45 H | 12 HR | 10g: .304 AVG | .986 OPS | 14 H | 4 HR | vs RHP: .246 AVG | .882 OPS | 9 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +3.8 | +10.0 matchup grade in a neutral lane"
     },
     {
       "rank": 133,
@@ -6507,7 +6507,7 @@
       "matchupNote": "+8.75 vs Andre Pallante",
       "teamScriptLabel": "",
       "lineupStatus": "partial",
-      "playerSummary": ".229 AVG | .750 OPS | 46 H | 6 HR | 14g: .200 AVG | .852 OPS | 10 H | 4 HR | vs RHP: .243 AVG | .799 OPS | 5 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +1.9 | +8.8 matchup grade in a neutral lane"
+      "playerSummary": ".229 AVG | .750 OPS | 46 H | 6 HR | 14g: .200 AVG | .852 OPS | 10 H | 4 HR | vs RHP: .243 AVG | .799 OPS | 5 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +1.9 | +8.8 matchup grade in a neutral lane"
     },
     {
       "rank": 160,
@@ -6626,7 +6626,7 @@
       "matchupNote": "+10.00 vs Andre Pallante",
       "teamScriptLabel": "",
       "lineupStatus": "partial",
-      "playerSummary": ".225 AVG | .806 OPS | 45 H | 12 HR | 10g: .304 AVG | .986 OPS | 14 H | 4 HR | vs RHP: .246 AVG | .882 OPS | 9 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +3.8 | +10.0 matchup grade in a neutral lane"
+      "playerSummary": ".225 AVG | .806 OPS | 45 H | 12 HR | 10g: .304 AVG | .986 OPS | 14 H | 4 HR | vs RHP: .246 AVG | .882 OPS | 9 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +3.8 | +10.0 matchup grade in a neutral lane"
     },
     {
       "rank": 163,
@@ -7267,7 +7267,7 @@
       "matchupNote": "+10.00 vs Andre Pallante",
       "teamScriptLabel": "",
       "lineupStatus": "partial",
-      "playerSummary": ".225 AVG | .806 OPS | 45 H | 12 HR | 10g: .304 AVG | .986 OPS | 14 H | 4 HR | vs RHP: .246 AVG | .882 OPS | 9 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +3.8 | +10.0 matchup grade in a neutral lane"
+      "playerSummary": ".225 AVG | .806 OPS | 45 H | 12 HR | 10g: .304 AVG | .986 OPS | 14 H | 4 HR | vs RHP: .246 AVG | .882 OPS | 9 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +3.8 | +10.0 matchup grade in a neutral lane"
     },
     {
       "rank": 180,
@@ -7801,7 +7801,7 @@
       "matchupNote": "+8.75 vs Andre Pallante",
       "teamScriptLabel": "",
       "lineupStatus": "partial",
-      "playerSummary": ".229 AVG | .750 OPS | 46 H | 6 HR | 14g: .200 AVG | .852 OPS | 10 H | 4 HR | vs RHP: .243 AVG | .799 OPS | 5 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +1.9 | +8.8 matchup grade in a neutral lane"
+      "playerSummary": ".229 AVG | .750 OPS | 46 H | 6 HR | 14g: .200 AVG | .852 OPS | 10 H | 4 HR | vs RHP: .243 AVG | .799 OPS | 5 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +1.9 | +8.8 matchup grade in a neutral lane"
     },
     {
       "rank": 194,

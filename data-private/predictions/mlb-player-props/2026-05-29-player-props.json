@@ -1,7 +1,7 @@
 {
   "modelName": "mlb-player-props-v2",
   "date": "2026-05-29",
-  "generatedAt": "2026-05-29T18:00:00.066Z",
+  "generatedAt": "2026-05-29T18:25:15.569Z",
   "sources": [
     "day-file-live-board",
     "web/src/lib/sports-model.js",
@@ -503,7 +503,7 @@
       "confidence": 79,
       "probability": 36,
       "expectedValue": 2.7,
-      "statValueLabel": "2.7 exp K · O +128 / U -158",
+      "statValueLabel": "2.7 exp K · O +132 / U -158",
       "recommendationTier": "Core",
       "reason": "4.7 IP lane | 4.8 K/9 base | White Sox are whiff-friendly",
       "scriptTags": [
@@ -754,7 +754,7 @@
       "confidence": 73,
       "probability": 66.3,
       "expectedValue": 6.7,
-      "statValueLabel": "6.7 exp K · O -138 / U +112",
+      "statValueLabel": "6.7 exp K · O -130 / U +112",
       "recommendationTier": "Strong",
       "reason": "5.8 IP lane | 10.2 K/9 base | Pirates are whiff-friendly",
       "scriptTags": [
@@ -763,7 +763,7 @@
         "contact-resistance",
         "starter-volume-live"
       ],
-      "matchupNote": "FanDuel K line 5.5 · Over price -138",
+      "matchupNote": "FanDuel K line 5.5 · Over price -130",
       "teamScriptLabel": "5-inning lane",
       "lineupStatus": "partial",
       "playerSummary": "2.77 ERA | 52.0 IP | 59 SO | Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass."
@@ -793,7 +793,7 @@
       "confidence": 72,
       "probability": 65.5,
       "expectedValue": 6.6,
-      "statValueLabel": "6.6 exp K · O -112 / U -110",
+      "statValueLabel": "6.6 exp K · O -112 / U +116",
       "recommendationTier": "Strong",
       "reason": "5.5 IP lane | 10.1 K/9 base | Mets are whiff-friendly",
       "scriptTags": [
@@ -832,7 +832,7 @@
       "confidence": 72,
       "probability": 65.5,
       "expectedValue": 4.6,
-      "statValueLabel": "4.6 exp K · O -168 / U +136",
+      "statValueLabel": "4.6 exp K · O -144 / U +136",
       "recommendationTier": "Strong",
       "reason": "5.2 IP lane | 8.5 K/9 base | Rays suppress Ks",
       "scriptTags": [
@@ -841,7 +841,7 @@
         "contact-resistance",
         "starter-volume-live"
       ],
-      "matchupNote": "FanDuel K line 3.5 · Over price -168",
+      "matchupNote": "FanDuel K line 3.5 · Over price -144",
       "teamScriptLabel": "5-inning lane",
       "lineupStatus": "partial",
       "playerSummary": "2.58 ERA | 38.1 IP | 36 SO | Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass."
@@ -954,7 +954,7 @@
       "confidence": 71,
       "probability": 36.2,
       "expectedValue": 2.5,
-      "statValueLabel": "2.5 exp K · O -124 / U +102",
+      "statValueLabel": "2.5 exp K · O -124 / U +108",
       "recommendationTier": "Strong",
       "reason": "5.0 IP lane | 4.5 K/9 base | Nationals suppress Ks",
       "scriptTags": [
@@ -963,7 +963,7 @@
         "contact-resistance",
         "starter-volume-live"
       ],
-      "matchupNote": "FanDuel K line 3.5 · Under price +102",
+      "matchupNote": "FanDuel K line 3.5 · Under price +108",
       "teamScriptLabel": "5-inning lane",
       "lineupStatus": "partial",
       "playerSummary": "2.70 ERA | 10.0 IP | 5 SO | This is still a low-sample MLB starter look with only 2 starts on file, so innings expectation matters more than the raw ERA line."
@@ -1111,7 +1111,7 @@
       "confidence": 66,
       "probability": 60.7,
       "expectedValue": 6.3,
-      "statValueLabel": "6.3 exp K · O +116 / U -154",
+      "statValueLabel": "6.3 exp K · O +120 / U -154",
       "recommendationTier": "Lean",
       "reason": "5.9 IP lane | 9.3 K/9 base | Cardinals are whiff-friendly",
       "scriptTags": [
@@ -1120,7 +1120,7 @@
         "opponent-whiff-lane",
         "starter-volume-live"
       ],
-      "matchupNote": "FanDuel K line 5.5 · Over price +116",
+      "matchupNote": "FanDuel K line 5.5 · Over price +120",
       "teamScriptLabel": "Workhorse lane",
       "lineupStatus": "partial",
       "playerSummary": "4.04 ERA | 64.2 IP | 67 SO | Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass."
@@ -1150,7 +1150,7 @@
       "confidence": 66,
       "probability": 38.6,
       "expectedValue": 4.7,
-      "statValueLabel": "4.7 exp K · O +108 / U -128",
+      "statValueLabel": "4.7 exp K · O +110 / U -128",
       "recommendationTier": "Lean",
       "reason": "6.2 IP lane | 7.2 K/9 base | Diamondbacks suppress Ks",
       "scriptTags": [
@@ -1268,7 +1268,7 @@
       "confidence": 64,
       "probability": 59.4,
       "expectedValue": 4.2,
-      "statValueLabel": "4.2 exp K · O -122 / U +100",
+      "statValueLabel": "4.2 exp K · O -122 / U +102",
       "recommendationTier": "Lean",
       "reason": "5.5 IP lane | 7.0 K/9 base | Cubs suppress Ks",
       "scriptTags": [
@@ -1307,7 +1307,7 @@
       "confidence": 64,
       "probability": 40.8,
       "expectedValue": 3.8,
-      "statValueLabel": "3.8 exp K · O +110 / U -134",
+      "statValueLabel": "3.8 exp K · O +112 / U -134",
       "recommendationTier": "Lean",
       "reason": "4.7 IP lane | 7.4 K/9 base | Blue Jays are whiff-friendly",
       "scriptTags": [
@@ -1385,7 +1385,7 @@
       "confidence": 61,
       "probability": 43,
       "expectedValue": 4,
-      "statValueLabel": "4 exp K · O -120 / U -102",
+      "statValueLabel": "4 exp K · O -120 / U +104",
       "recommendationTier": "Lean",
       "reason": "4.3 IP lane | 8.8 K/9 base | Brewers suppress Ks",
       "scriptTags": [
@@ -1394,7 +1394,7 @@
         "contact-resistance",
         "starter-volume-live"
       ],
-      "matchupNote": "FanDuel K line 4.5 · Under price -102",
+      "matchupNote": "FanDuel K line 4.5 · Under price +104",
       "teamScriptLabel": "Short leash",
       "lineupStatus": "partial",
       "playerSummary": "2.19 ERA | 37.0 IP | 36 SO | Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass."

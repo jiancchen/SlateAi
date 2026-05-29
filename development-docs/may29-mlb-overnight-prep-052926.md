@@ -98,6 +98,8 @@ HR-specific follow-up:
 New research:
 
 - [/Users/jcchen/Documents/New project/development-docs/mlb-bounceback-cohort-research-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-bounceback-cohort-research-052926.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb-phase1-context-research-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-phase1-context-research-052926.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb-opponent-quality-side-gates-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-opponent-quality-side-gates-052926.md)
 - backed by [/Users/jcchen/Documents/New project/pipeline/research_mlb_bounceback_cohorts.py](/Users/jcchen/Documents/New%20project/pipeline/research_mlb_bounceback_cohorts.py)
 
 Most useful takeaway:
@@ -109,6 +111,12 @@ Most useful takeaway:
   - `high snapback, low form`: only `30.4%` next-game win rate even though it avoids a first-five loss `60.9%` of the time
 
 This matters because a losing team with real competitive shape is not the same thing as a dead-bat loser, and the board should stop treating them the same.
+
+The new phase-1 context pass adds an important schedule-quality wrinkle:
+
+- `loss but not dead + hard schedule` is the better resistance / bounceback lane
+- `slumping loser + hard schedule` is the really ugly bucket
+- `slumping loser + soft schedule` unexpectedly rebounded well in this sample, so a bad recent record against soft teams should not be auto-faded without checking opponent quality first
 
 ## 5. May 29 board status right now
 
