@@ -117,6 +117,49 @@ def load_warehouse() -> dict[str, pd.DataFrame]:
             "markets": read_sql(conn, "select * from tennis_prediction_market_snapshots"),
             "grades": read_sql(conn, "select * from tennis_prediction_grades where prediction_source = 'desk'"),
             "results": read_sql(conn, "select * from tennis_match_results"),
+            "replay_flow": read_sql(
+                conn,
+                """
+                select slate_date, normalized_name, player_name,
+                       sum(replay_games) as rg_flow_games,
+                       sum(service_games) as rg_flow_service_games,
+                       sum(holds) as rg_flow_holds,
+                       sum(breaks_lost) as rg_flow_breaks_lost,
+                       sum(return_games) as rg_flow_return_games,
+                       sum(breaks_won) as rg_flow_breaks_won,
+                       sum(long_games) as rg_flow_long_games
+                from (
+                  select m.slate_date,
+                         m.home_normalized_name as normalized_name,
+                         m.home_player_name as player_name,
+                         count(*) as replay_games,
+                         sum(case when g.serving_side = 'home' then 1 else 0 end) as service_games,
+                         sum(case when g.serving_side = 'home' and g.scoring_side = 'home' then 1 else 0 end) as holds,
+                         sum(case when g.serving_side = 'home' and g.scoring_side = 'away' then 1 else 0 end) as breaks_lost,
+                         sum(case when g.serving_side = 'away' then 1 else 0 end) as return_games,
+                         sum(case when g.serving_side = 'away' and g.scoring_side = 'home' then 1 else 0 end) as breaks_won,
+                         sum(case when g.point_count >= 8 then 1 else 0 end) as long_games
+                  from tennis_sofascore_matches m
+                  join tennis_sofascore_replay_games g using(sofascore_event_id)
+                  group by m.slate_date, m.home_normalized_name
+                  union all
+                  select m.slate_date,
+                         m.away_normalized_name as normalized_name,
+                         m.away_player_name as player_name,
+                         count(*) as replay_games,
+                         sum(case when g.serving_side = 'away' then 1 else 0 end) as service_games,
+                         sum(case when g.serving_side = 'away' and g.scoring_side = 'away' then 1 else 0 end) as holds,
+                         sum(case when g.serving_side = 'away' and g.scoring_side = 'home' then 1 else 0 end) as breaks_lost,
+                         sum(case when g.serving_side = 'home' then 1 else 0 end) as return_games,
+                         sum(case when g.serving_side = 'home' and g.scoring_side = 'away' then 1 else 0 end) as breaks_won,
+                         sum(case when g.point_count >= 8 then 1 else 0 end) as long_games
+                  from tennis_sofascore_matches m
+                  join tennis_sofascore_replay_games g using(sofascore_event_id)
+                  group by m.slate_date, m.away_normalized_name
+                )
+                group by slate_date, normalized_name
+                """,
+            ),
         }
     finally:
         conn.close()
@@ -171,14 +214,68 @@ def market_table(markets: pd.DataFrame) -> pd.DataFrame:
     return out[keep].drop_duplicates(["match_id", "normalized_name"], keep="last")
 
 
+def prior_replay_flow_table(matches: pd.DataFrame, replay_flow: pd.DataFrame) -> pd.DataFrame:
+    columns = [
+        "match_id",
+        "normalized_name",
+        "rg_flow_games",
+        "rg_flow_service_games",
+        "rg_flow_hold_rate",
+        "rg_flow_breaks_lost_rate",
+        "rg_flow_return_games",
+        "rg_flow_break_rate",
+        "rg_flow_long_game_rate",
+    ]
+    if matches.empty or replay_flow.empty:
+        return pd.DataFrame(columns=columns)
+    flow = replay_flow.copy()
+    for column in [
+        "rg_flow_games",
+        "rg_flow_service_games",
+        "rg_flow_holds",
+        "rg_flow_breaks_lost",
+        "rg_flow_return_games",
+        "rg_flow_breaks_won",
+        "rg_flow_long_games",
+    ]:
+        flow[column] = pd.to_numeric(flow[column], errors="coerce").fillna(0)
+    flow["slate_date"] = flow["slate_date"].astype(str)
+    rows = []
+    for _, match in matches.iterrows():
+        slate_date = str(match.get("slate_date") or "")
+        for normalized_name in [match.get("player1_normalized_name"), match.get("player2_normalized_name")]:
+            if not normalized_name:
+                continue
+            prior = flow[(flow["normalized_name"] == normalized_name) & (flow["slate_date"] < slate_date)]
+            service_games = float(prior["rg_flow_service_games"].sum()) if not prior.empty else 0.0
+            return_games = float(prior["rg_flow_return_games"].sum()) if not prior.empty else 0.0
+            replay_games = float(prior["rg_flow_games"].sum()) if not prior.empty else 0.0
+            rows.append(
+                {
+                    "match_id": match.get("match_id"),
+                    "normalized_name": normalized_name,
+                    "rg_flow_games": replay_games,
+                    "rg_flow_service_games": service_games,
+                    "rg_flow_hold_rate": float(prior["rg_flow_holds"].sum()) / service_games if service_games else np.nan,
+                    "rg_flow_breaks_lost_rate": float(prior["rg_flow_breaks_lost"].sum()) / service_games if service_games else np.nan,
+                    "rg_flow_return_games": return_games,
+                    "rg_flow_break_rate": float(prior["rg_flow_breaks_won"].sum()) / return_games if return_games else np.nan,
+                    "rg_flow_long_game_rate": float(prior["rg_flow_long_games"].sum()) / replay_games if replay_games else np.nan,
+                }
+            )
+    return pd.DataFrame(rows, columns=columns)
+
+
 def build_player_rows(tables: dict[str, pd.DataFrame]) -> pd.DataFrame:
     ctx = tables["context"].copy()
     metric_df = weighted_metric_table(tables["metrics"])
     market_df = market_table(tables["markets"])
+    replay_df = prior_replay_flow_table(tables["matches"], tables.get("replay_flow", pd.DataFrame()))
     ctx["name_key"] = ctx["normalized_name"].map(name_key)
     metric_df["name_key"] = metric_df["normalized_name"].map(name_key) if "normalized_name" in metric_df.columns else ""
     rows = ctx.merge(metric_df, how="left", on=["match_id", "normalized_name"])
     rows = rows.merge(market_df, how="left", on=["match_id", "normalized_name"])
+    rows = rows.merge(replay_df, how="left", on=["match_id", "normalized_name"])
 
     missing_market = rows["market_prob"].isna() if "market_prob" in rows.columns else pd.Series(False, index=rows.index)
     if missing_market.any() and not market_df.empty:
@@ -235,6 +332,13 @@ def build_player_rows(tables: dict[str, pd.DataFrame]) -> pd.DataFrame:
         "market_total_volume",
         "cents_at_risk",
         "cents_profit_if_win",
+        "rg_flow_games",
+        "rg_flow_service_games",
+        "rg_flow_hold_rate",
+        "rg_flow_breaks_lost_rate",
+        "rg_flow_return_games",
+        "rg_flow_break_rate",
+        "rg_flow_long_game_rate",
     ]
     for column in numeric_cols:
         if column in rows.columns:
@@ -380,6 +484,13 @@ def build_samples(tables: dict[str, pd.DataFrame]) -> pd.DataFrame:
         "metric_errorControl",
         "metric_returnPressure",
         "metric_closeout",
+        "rg_flow_games",
+        "rg_flow_service_games",
+        "rg_flow_hold_rate",
+        "rg_flow_breaks_lost_rate",
+        "rg_flow_return_games",
+        "rg_flow_break_rate",
+        "rg_flow_long_game_rate",
         "market_prob",
         "cents_at_risk",
         "cents_profit_if_win",
@@ -840,6 +951,16 @@ def persist_training_corpus(samples: pd.DataFrame, target_date: str) -> dict[str
         "p2_cents_at_risk",
         "p1_cents_profit_if_win",
         "p2_cents_profit_if_win",
+        "p1_rg_flow_games",
+        "p2_rg_flow_games",
+        "p1_rg_flow_hold_rate",
+        "p2_rg_flow_hold_rate",
+        "p1_rg_flow_break_rate",
+        "p2_rg_flow_break_rate",
+        "p1_rg_flow_breaks_lost_rate",
+        "p2_rg_flow_breaks_lost_rate",
+        "p1_rg_flow_long_game_rate",
+        "p2_rg_flow_long_game_rate",
     ]
     feature_cols = sorted(
         column

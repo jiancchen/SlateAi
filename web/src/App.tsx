@@ -32,6 +32,7 @@ import {
   type LoadedSlateDay,
   type SlateManifestEntry
 } from './lib/slate-loaders'
+import kalshiTennisTradeCandidates from './lib/kalshi-tennis-trade-candidates.generated.json' with { type: 'json' }
 
 type AnyRecord = Record<string, any>
 type DeskTabId = 'board' | 'parlay' | 'tickets' | 'models' | 'history' | 'stories'
@@ -117,6 +118,10 @@ const tennisValueTone = (grade?: string | null) => {
   if (/negative ev/i.test(String(grade || ''))) return 'warning'
   return ''
 }
+
+const kalshiTradeCandidateRows = Array.isArray((kalshiTennisTradeCandidates as AnyRecord).candidates)
+  ? ((kalshiTennisTradeCandidates as AnyRecord).candidates as AnyRecord[])
+  : []
 
 const propTypeFilters = [
   { id: 'all', label: 'All' },
@@ -1403,6 +1408,53 @@ const getCompetitorDisplayName = (game: AnyRecord, side: AnyRecord, index: numbe
   return side?.name || ''
 }
 
+const getTennisNameVariants = (name = '') => {
+  const normalized = normalizeNameToken(name)
+  if (!normalized) return []
+  const parts = normalized.split(' ').filter(Boolean)
+  const variants = new Set([normalized])
+  if (parts.length >= 2) {
+    variants.add([...parts].reverse().join(' '))
+    const familyName = parts[parts.length - 1]
+    if (familyName.length >= 5) variants.add(familyName)
+  }
+  return [...variants].filter((entry) => entry.length >= 4)
+}
+
+const kalshiCandidateSearchText = (row: AnyRecord) =>
+  normalizeNameToken([
+    row.selection,
+    row.title,
+    row.boardTitle,
+    row.eventTicker,
+    row.marketTicker
+  ].filter(Boolean).join(' '))
+
+const kalshiCandidateMatchesName = (row: AnyRecord, playerName: string) => {
+  const searchText = kalshiCandidateSearchText(row)
+  const compactSearchText = searchText.replace(/\s+/g, '')
+  return getTennisNameVariants(playerName).some((variant) => {
+    const compactVariant = variant.replace(/\s+/g, '')
+    return searchText.includes(variant) || compactSearchText.includes(compactVariant)
+  })
+}
+
+const kalshiCandidateMatchesGame = (row: AnyRecord, game: AnyRecord) => {
+  if (!row || !game || game.league !== 'Tennis') return false
+  if (row.boardMatchId) return row.boardMatchId === game.id
+  const occurrenceDate = row.occurrenceDatetime ? String(row.occurrenceDatetime).slice(0, 10) : ''
+  const gameId = String(game.id || '')
+  if (occurrenceDate && /\d{4}-\d{2}-\d{2}/.test(gameId) && !gameId.includes(occurrenceDate)) return false
+  const playerNames = (game.matchup || [])
+    .map((entry: AnyRecord, index: number) => getCompetitorDisplayName(game, entry, index))
+    .filter(Boolean)
+  if (playerNames.length < 2) return false
+  return playerNames.every((playerName: string) => kalshiCandidateMatchesName(row, playerName))
+}
+
+const findKalshiTradeCandidateForGame = (game: AnyRecord) =>
+  kalshiTradeCandidateRows.find((row: AnyRecord) => kalshiCandidateMatchesGame(row, game))
+
 const getGameWinnerLabel = (game: AnyRecord) =>
   String(game?.winnerTeam || game?.winnerName || game?.winner || game?.result?.winner || '').trim()
 
@@ -2612,6 +2664,22 @@ function App() {
     builderValidityFilter
   ])
 
+  const activeKalshiTradeRows = useMemo(() => {
+    return kalshiTradeCandidateRows
+      .map((row: AnyRecord) => {
+        const game = games.find((entry: AnyRecord) => kalshiCandidateMatchesGame(row, entry)) || null
+        const occurrenceDate = row.occurrenceDatetime ? String(row.occurrenceDatetime).slice(0, 10) : ''
+        return {
+          ...row,
+          game,
+          gameTitle: game?.title || row.boardTitle || row.title,
+          occurrenceDate
+        }
+      })
+      .filter((row: AnyRecord) => row.game && (!activeDayIsoDate || !row.occurrenceDate || row.occurrenceDate === activeDayIsoDate))
+      .sort((left: AnyRecord, right: AnyRecord) => Number(right.tradeEvPctOfEntry || 0) - Number(left.tradeEvPctOfEntry || 0))
+  }, [activeDayIsoDate, games])
+
   const tennisValueSummary = useMemo(() => {
     const tennisGames = games.filter((game: AnyRecord) => game.league === 'Tennis')
     if (!tennisGames.length) return null
@@ -2631,6 +2699,7 @@ function App() {
         rows: rawRows,
         betGradeRows: rawBetGradeRows,
         validatedRows,
+        kalshiTradeRows: activeKalshiTradeRows,
         rawPositiveRows: (summary.rawPositiveRows || []).map(attachGame).filter((row: AnyRecord) => row.game),
         thinRows: (summary.thinRows || []).map(attachGame).filter((row: AnyRecord) => row.game),
         negativeMlRows: (summary.negativeMlRows || []).map(attachGame).filter((row: AnyRecord) => row.game)
@@ -2682,6 +2751,7 @@ function App() {
       countByGrade,
       betGradeRows,
       validatedRows,
+      kalshiTradeRows: activeKalshiTradeRows,
       rawPositiveRows,
       thinRows,
       negativeMlRows,
@@ -2690,7 +2760,7 @@ function App() {
           ? 'May 28 is pre-match. May 27 backtest: ML value rows went 3-1 with +21.9% flat ROI; spreads went 1-3 and stay downgraded until the next settled pass.'
           : 'EV is model probability against the posted price. A likely winner can still be a bad bet if the payout is too small.'
     }
-  }, [activeDay, activeDayIsoDate, games])
+  }, [activeDay, activeDayIsoDate, activeKalshiTradeRows, games])
 
   const parlayLegs = useMemo(() => {
     return Object.entries(selectedPicks)
@@ -4229,8 +4299,80 @@ function App() {
         </article>
       )
     }
+    const kalshiTradeCandidate = findKalshiTradeCandidateForGame(game)
     return (
       <>
+        {kalshiTradeCandidate ? (
+          <section className="detail-panel tennis-trade-chart-panel">
+            <div className="detail-panel-header">
+              <p className="eyebrow">Prediction market trade</p>
+              <span>{kalshiTradeCandidate.candidateTier === 'trade' ? 'Trade-to-sell candidate' : `${kalshiTradeCandidate.candidateTier} lane`}</span>
+            </div>
+            <div className="tennis-trade-chart-layout">
+              <div className="tennis-trade-ticket">
+                <div className="tennis-trade-contract-id">
+                  <span className="eyebrow">Kalshi contract</span>
+                  <strong>{kalshiTradeCandidate.selection}</strong>
+                  <small>{kalshiTradeCandidate.eventTicker}</small>
+                </div>
+                <div className="tennis-trade-ticket-grid">
+                  <div>
+                    <span>Entry</span>
+                    <strong>{Math.round(Number(kalshiTradeCandidate.yesAsk || 0) * 100)}c</strong>
+                  </div>
+                  <div>
+                    <span>Sell target</span>
+                    <strong>{Math.round(Number(kalshiTradeCandidate.projectedExit || 0) * 100)}c</strong>
+                  </div>
+                  <div>
+                    <span>EV/contract</span>
+                    <strong>{formatSignedNumber(kalshiTradeCandidate.tradeEvPerContract, 2)}</strong>
+                  </div>
+                  <div>
+                    <span>EV/entry</span>
+                    <strong>{formatSignedNumber(Number(kalshiTradeCandidate.tradeEvPctOfEntry || 0) * 100, 0)}%</strong>
+                  </div>
+                </div>
+              </div>
+              <div className="tennis-trade-context-grid">
+                <div>
+                  <span>Entry band</span>
+                  <strong>{kalshiTradeCandidate.entryBand || 'N/A'}</strong>
+                  <small>{Number(kalshiTradeCandidate.historicalN || 0)} historical comps</small>
+                </div>
+                <div>
+                  <span>Target hit</span>
+                  <strong>{formatPercent(Number(kalshiTradeCandidate.targetHitProbability || 0) * 100, 0)}</strong>
+                  <small>Projected touch before settlement</small>
+                </div>
+                <div>
+                  <span>Open interest</span>
+                  <strong>{formatNumber(kalshiTradeCandidate.openInterest, 0)}</strong>
+                  <small>Contract liquidity context</small>
+                </div>
+                <div>
+                  <span>Bid / ask</span>
+                  <strong>
+                    {Math.round(Number(kalshiTradeCandidate.yesBid || 0) * 100)}c / {Math.round(Number(kalshiTradeCandidate.yesAsk || 0) * 100)}c
+                  </strong>
+                  <small>Current orderbook snapshot</small>
+                </div>
+              </div>
+            </div>
+            <div className="tennis-trade-summary-row">
+              <span>
+                Sell around <strong>{Math.round(Number(kalshiTradeCandidate.projectedExit || 0) * 100)}c</strong>
+              </span>
+              <span>
+                30c touch rate <strong>{formatPercent(Number(kalshiTradeCandidate.historical30HitRate || 0) * 100, 0)}</strong>
+              </span>
+              {kalshiTradeCandidate.projectionReasons?.slice(0, 2).map((reason: string) => (
+                <span key={`${game.id}-${reason}`}>{reason}</span>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
         {context?.players?.length ? (
           <section className="detail-panel react-card-grid">
             {context.players.map((player: AnyRecord) => (
@@ -5011,6 +5153,7 @@ function App() {
                     <p>{tennisValueSummary.note}</p>
                     <div className="tennis-value-pill-row">
                       <span>Validated {tennisValueSummary.validatedRows?.length || 0}</span>
+                      <span>PM trades {tennisValueSummary.kalshiTradeRows?.length || 0}</span>
                       <span>Watch EV {tennisValueSummary.rawPositiveRows?.length || 0}</span>
                       <span>Thin {tennisValueSummary.countByGrade['Thin value'] || 0}</span>
                       <span>Negative EV {tennisValueSummary.countByGrade['Negative EV'] || 0}</span>
@@ -5018,6 +5161,7 @@ function App() {
                     </div>
                     {tennisValueSummary.validatedRows?.length ? (
                       <div className="tennis-value-list">
+                        <div className="tennis-value-section-label">Winner / sportsbook EV</div>
                         {tennisValueSummary.validatedRows.slice(0, 5).map((row: AnyRecord) => (
                           <button
                             key={`${row.game.id}-${row.label}-${row.value}`}
@@ -5042,6 +5186,30 @@ function App() {
                         spreads and totals are downgraded until the next settled backtest supports them.
                       </p>
                     )}
+                    {tennisValueSummary.kalshiTradeRows?.length ? (
+                      <div className="tennis-value-list tennis-trade-list">
+                        <div className="tennis-value-section-label">Prediction market trade-to-sell</div>
+                        {tennisValueSummary.kalshiTradeRows.slice(0, 6).map((row: AnyRecord) => (
+                          <button
+                            key={`${row.marketTicker}-${row.boardMatchId}`}
+                            type="button"
+                            className="tennis-value-row tennis-value-row--trade"
+                            onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.game.id }))}
+                          >
+                            <span>
+                              <strong>{row.selection} {Math.round(Number(row.yesAsk || 0) * 100)}c</strong>
+                              <small>
+                                Target {Math.round(Number(row.projectedExit || 0) * 100)}c · {row.gameTitle}
+                              </small>
+                            </span>
+                            <span>
+                              <strong>{formatSignedNumber(Number(row.tradeEvPctOfEntry || 0) * 100, 0)}%</strong>
+                              <small>{formatPercent(Number(row.targetHitProbability || 0) * 100, 0)} hit target</small>
+                            </span>
+                          </button>
+                        ))}
+                      </div>
+                    ) : null}
                     {tennisValueSummary.negativeMlRows.length ? (
                       <small className="tennis-value-warning">
                         ML traps: {tennisValueSummary.negativeMlRows.slice(0, 3).map((row: AnyRecord) => `${row.selection} ${formatSignedNumber(row.evPer100, 1)}`).join(' · ')}

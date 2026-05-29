@@ -3102,6 +3102,19 @@ h3 {
   gap: 6px;
 }
 
+.tennis-value-section-label {
+  margin-top: 2px;
+  color: var(--muted);
+  font: 700 0.62rem/1 var(--mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.tennis-trade-list {
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
 .tennis-value-row {
   width: 100%;
   border: 1px solid var(--line);
@@ -3117,6 +3130,11 @@ h3 {
 .tennis-value-row:focus-visible {
   border-color: rgba(79, 210, 166, 0.35);
   outline: none;
+}
+
+.tennis-value-row--trade {
+  border-color: rgba(123, 227, 255, 0.16);
+  background: linear-gradient(90deg, rgba(123, 227, 255, 0.06), rgba(56, 211, 153, 0.035));
 }
 
 .tennis-value-row span {
@@ -4935,6 +4953,133 @@ h3 {
   padding: 0.85rem;
 }
 
+.tennis-trade-chart-panel {
+  border-color: rgba(123, 227, 255, 0.18);
+  background: linear-gradient(180deg, rgba(123, 227, 255, 0.045), rgba(56, 211, 153, 0.025));
+}
+
+.tennis-trade-chart-layout {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: minmax(430px, 1.05fr) minmax(330px, 0.95fr);
+  gap: 10px;
+  align-items: center;
+}
+
+.tennis-trade-ticket,
+.tennis-trade-context-grid {
+  border: 1px solid rgba(255, 255, 255, 0.075);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.tennis-trade-ticket {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: minmax(180px, 0.8fr) minmax(260px, 1.2fr);
+  gap: 10px;
+  align-items: center;
+}
+
+.tennis-trade-contract-id {
+  display: grid;
+  gap: 5px;
+}
+
+.tennis-trade-contract-id .eyebrow {
+  display: block;
+}
+
+.tennis-trade-ticket strong {
+  display: block;
+  color: var(--heading);
+  font-size: 1rem;
+  line-height: 1.18;
+}
+
+.tennis-trade-ticket small {
+  display: block;
+  color: var(--muted);
+  font: 600 0.63rem/1.25 var(--mono);
+  overflow-wrap: anywhere;
+}
+
+.tennis-trade-ticket-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.tennis-trade-ticket-grid div {
+  padding: 7px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.065);
+  background: rgba(0, 0, 0, 0.16);
+  display: grid;
+  gap: 3px;
+}
+
+.tennis-trade-ticket-grid span {
+  color: var(--muted);
+  font-size: 0.68rem;
+}
+
+.tennis-trade-ticket-grid strong {
+  color: var(--heading);
+  font: 800 0.82rem/1 var(--mono);
+}
+
+.tennis-trade-context-grid {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.tennis-trade-context-grid div {
+  min-height: 64px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.065);
+  background: rgba(0, 0, 0, 0.13);
+  display: grid;
+  gap: 4px;
+  align-content: center;
+}
+
+.tennis-trade-context-grid strong {
+  color: var(--heading);
+  font: 800 0.82rem/1 var(--mono);
+}
+
+.tennis-trade-context-grid span,
+.tennis-trade-context-grid small {
+  color: var(--muted);
+  font-size: 0.68rem;
+  line-height: 1.25;
+}
+
+.tennis-trade-summary-row {
+  margin-top: 8px;
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tennis-trade-summary-row span {
+  padding: 5px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(123, 227, 255, 0.18);
+  background: rgba(123, 227, 255, 0.055);
+  color: var(--muted);
+  font: 700 0.62rem/1 var(--mono);
+}
+
+.tennis-trade-summary-row strong {
+  color: var(--heading);
+}
+
 .tennis-match-log-row span {
   color: var(--heading);
   font-size: 0.78rem;
@@ -5527,6 +5672,7 @@ h3 {
   .simulation-phase-grid,
   .lineup-board-grid,
   .tennis-risk-strip,
+  .tennis-trade-chart-layout,
   .tennis-player-grid,
   .tennis-projection-grid,
   .tennis-quality-metrics,

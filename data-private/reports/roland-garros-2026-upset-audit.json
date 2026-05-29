@@ -1,0 +1,623 @@
+{
+  "coverage": {
+    "warehouseResultRows": 222,
+    "qualifyingFinalRows": 30,
+    "round1Rows": 128,
+    "round2Rows": 64,
+    "marketPricedMatches": 99,
+    "replayMatchesThroughRound2": 210,
+    "note": "Market ROI uses only matches with captured prediction-market prices. Qualifying has outcomes but very thin price/replay coverage."
+  },
+  "roundSummary": [
+    {
+      "round": "Qualifying Final",
+      "matches": 30,
+      "rankKnown": 27,
+      "rankUpsets": 8,
+      "rankUpsetRate": 0.296,
+      "avgWinnerGameMargin": 5.6,
+      "decidingSetRate": 0.333
+    },
+    {
+      "round": "Round 1",
+      "matches": 128,
+      "rankKnown": 124,
+      "rankUpsets": 42,
+      "rankUpsetRate": 0.339,
+      "avgWinnerGameMargin": 6.12,
+      "decidingSetRate": 0.203
+    },
+    {
+      "round": "Round 2",
+      "matches": 64,
+      "rankKnown": 64,
+      "rankUpsets": 20,
+      "rankUpsetRate": 0.312,
+      "avgWinnerGameMargin": 5.37,
+      "decidingSetRate": 0.339
+    }
+  ],
+  "marketFavoriteBuckets": [
+    {
+      "bucket": "50-54% coinflip favorite",
+      "matches": 7,
+      "upsets": 3,
+      "upsetRate": 0.429,
+      "betFavoriteRoi": -0.105,
+      "betUnderdogRoi": -0.296
+    },
+    {
+      "bucket": "55-64% modest favorite",
+      "matches": 21,
+      "upsets": 9,
+      "upsetRate": 0.429,
+      "betFavoriteRoi": -0.154,
+      "betUnderdogRoi": -0.218
+    },
+    {
+      "bucket": "65-74% favorite",
+      "matches": 24,
+      "upsets": 7,
+      "upsetRate": 0.292,
+      "betFavoriteRoi": -0.051,
+      "betUnderdogRoi": -0.36
+    },
+    {
+      "bucket": "75-84% heavy favorite",
+      "matches": 23,
+      "upsets": 5,
+      "upsetRate": 0.217,
+      "betFavoriteRoi": -0.032,
+      "betUnderdogRoi": -0.462
+    },
+    {
+      "bucket": "85%+ extreme favorite",
+      "matches": 24,
+      "upsets": 4,
+      "upsetRate": 0.167,
+      "betFavoriteRoi": -0.09,
+      "betUnderdogRoi": 0.282
+    }
+  ],
+  "marketByRound": [
+    {
+      "round": "Round 1",
+      "matches": 39,
+      "favoriteHitRate": 0.718,
+      "favoriteRoi": -0.091,
+      "underdogHitRate": 0.282,
+      "underdogRoi": -0.512
+    },
+    {
+      "round": "Round 2",
+      "matches": 60,
+      "favoriteHitRate": 0.717,
+      "favoriteRoi": -0.076,
+      "underdogHitRate": 0.283,
+      "underdogRoi": 0.014
+    }
+  ],
+  "rankGapBucketsByRound": [
+    {
+      "round": "Qualifying Final",
+      "rankGap": "0-10",
+      "matches": 1,
+      "rankUpsets": 0,
+      "rankUpsetRate": 0.0
+    },
+    {
+      "round": "Qualifying Final",
+      "rankGap": "11-25",
+      "matches": 6,
+      "rankUpsets": 1,
+      "rankUpsetRate": 0.167
+    },
+    {
+      "round": "Qualifying Final",
+      "rankGap": "26-50",
+      "matches": 8,
+      "rankUpsets": 4,
+      "rankUpsetRate": 0.5
+    },
+    {
+      "round": "Qualifying Final",
+      "rankGap": "51-100",
+      "matches": 8,
+      "rankUpsets": 1,
+      "rankUpsetRate": 0.125
+    },
+    {
+      "round": "Qualifying Final",
+      "rankGap": "101-250",
+      "matches": 4,
+      "rankUpsets": 2,
+      "rankUpsetRate": 0.5
+    },
+    {
+      "round": "Round 1",
+      "rankGap": "0-10",
+      "matches": 7,
+      "rankUpsets": 4,
+      "rankUpsetRate": 0.571
+    },
+    {
+      "round": "Round 1",
+      "rankGap": "11-25",
+      "matches": 19,
+      "rankUpsets": 9,
+      "rankUpsetRate": 0.474
+    },
+    {
+      "round": "Round 1",
+      "rankGap": "26-50",
+      "matches": 30,
+      "rankUpsets": 11,
+      "rankUpsetRate": 0.367
+    },
+    {
+      "round": "Round 1",
+      "rankGap": "51-100",
+      "matches": 43,
+      "rankUpsets": 13,
+      "rankUpsetRate": 0.302
+    },
+    {
+      "round": "Round 1",
+      "rankGap": "101-250",
+      "matches": 21,
+      "rankUpsets": 4,
+      "rankUpsetRate": 0.19
+    },
+    {
+      "round": "Round 1",
+      "rankGap": "250+",
+      "matches": 4,
+      "rankUpsets": 1,
+      "rankUpsetRate": 0.25
+    },
+    {
+      "round": "Round 2",
+      "rankGap": "0-10",
+      "matches": 5,
+      "rankUpsets": 2,
+      "rankUpsetRate": 0.4
+    },
+    {
+      "round": "Round 2",
+      "rankGap": "11-25",
+      "matches": 7,
+      "rankUpsets": 1,
+      "rankUpsetRate": 0.143
+    },
+    {
+      "round": "Round 2",
+      "rankGap": "26-50",
+      "matches": 16,
+      "rankUpsets": 6,
+      "rankUpsetRate": 0.375
+    },
+    {
+      "round": "Round 2",
+      "rankGap": "51-100",
+      "matches": 27,
+      "rankUpsets": 8,
+      "rankUpsetRate": 0.296
+    },
+    {
+      "round": "Round 2",
+      "rankGap": "101-250",
+      "matches": 8,
+      "rankUpsets": 3,
+      "rankUpsetRate": 0.375
+    },
+    {
+      "round": "Round 2",
+      "rankGap": "250+",
+      "matches": 1,
+      "rankUpsets": 0,
+      "rankUpsetRate": 0.0
+    }
+  ],
+  "replayFlowByMarketOutcome": [
+    {
+      "marketFavoriteOutcome": "favorite won",
+      "matches": 71,
+      "replayKnown": 69,
+      "avgBreaksInMatch": 7.99,
+      "avgLongGameRate": 0.147,
+      "avgPointsPerGame": 5.52,
+      "avgWinnerGameMargin": 6.23
+    },
+    {
+      "marketFavoriteOutcome": "favorite lost",
+      "matches": 28,
+      "replayKnown": 28,
+      "avgBreaksInMatch": 8.14,
+      "avgLongGameRate": 0.141,
+      "avgPointsPerGame": 5.5,
+      "avgWinnerGameMargin": 3.82
+    }
+  ],
+  "strategies": [
+    {
+      "strategy": "Bet every market favorite",
+      "bets": 99,
+      "wins": 71,
+      "hitRate": 0.717,
+      "profitPer100Flat": -809.9,
+      "roi": -0.082
+    },
+    {
+      "strategy": "Bet every market underdog",
+      "bets": 99,
+      "wins": 28,
+      "hitRate": 0.283,
+      "profitPer100Flat": -1914.1,
+      "roi": -0.193
+    },
+    {
+      "strategy": "Bet favorites only under 70%",
+      "bets": 40,
+      "wins": 24,
+      "hitRate": 0.6,
+      "profitPer100Flat": -509.8,
+      "roi": -0.127
+    },
+    {
+      "strategy": "Bet favorites only 55-70%",
+      "bets": 33,
+      "wins": 20,
+      "hitRate": 0.606,
+      "profitPer100Flat": -436.1,
+      "roi": -0.132
+    },
+    {
+      "strategy": "Fade favorites 75%+ / bet the dog",
+      "bets": 47,
+      "wins": 9,
+      "hitRate": 0.191,
+      "profitPer100Flat": -386.0,
+      "roi": -0.082
+    },
+    {
+      "strategy": "Bet dogs priced 25-49%",
+      "bets": 60,
+      "wins": 21,
+      "hitRate": 0.35,
+      "profitPer100Flat": -1635.0,
+      "roi": -0.273
+    },
+    {
+      "strategy": "Bet dogs priced 30-49%",
+      "bets": 47,
+      "wins": 18,
+      "hitRate": 0.383,
+      "profitPer100Flat": -1219.0,
+      "roi": -0.259
+    },
+    {
+      "strategy": "Pass 75%+ favorites; bet all other favorites",
+      "bets": 52,
+      "wins": 33,
+      "hitRate": 0.635,
+      "profitPer100Flat": -520.7,
+      "roi": -0.1
+    }
+  ],
+  "biggestMarketUpsets": [
+    {
+      "date": "2026-05-28",
+      "round": "Round 2",
+      "matchId": "rg-m-jannik-sinner-juan-manuel-cerundolo-2026-05-28",
+      "match": "Jannik Sinner vs Juan Manuel Cerundolo",
+      "favorite": "Jannik Sinner",
+      "favoriteProb": 99.0,
+      "underdog": "Juan Manuel Cerundolo",
+      "underdogProb": 4.0,
+      "winner": "Juan Manuel Cerundolo",
+      "upset": true,
+      "favoriteProfit": -100.0,
+      "underdogProfit": 2400.0,
+      "favoriteBucket": "85%+ extreme favorite",
+      "scoreline": "6-3 6-2 5-7 1-6 1-6",
+      "gameMargin": 5.0,
+      "rankGap": 54.0,
+      "rankUpset": true
+    },
+    {
+      "date": "2026-05-26",
+      "round": "Round 1",
+      "matchId": "rg-w-pegula-birrell-2026-05-26",
+      "match": "Kimberly Birrell vs Jessica Pegula",
+      "favorite": "Jessica Pegula",
+      "favoriteProb": 98.0,
+      "underdog": "Kimberly Birrell",
+      "underdogProb": 3.0,
+      "winner": "Kimberly Birrell",
+      "upset": true,
+      "favoriteProfit": -100.0,
+      "underdogProfit": 97.0,
+      "favoriteBucket": "85%+ extreme favorite",
+      "scoreline": "1-6 6-3 6-3",
+      "gameMargin": 1.0,
+      "rankGap": 78.0,
+      "rankUpset": true
+    },
+    {
+      "date": "2026-05-26",
+      "round": "Round 1",
+      "matchId": "rg-m-medvedev-walton-2026-05-26",
+      "match": "Adam Walton vs Daniil Medvedev",
+      "favorite": "Daniil Medvedev",
+      "favoriteProb": 94.0,
+      "underdog": "Adam Walton",
+      "underdogProb": 7.0,
+      "winner": "Adam Walton",
+      "upset": true,
+      "favoriteProfit": -100.0,
+      "underdogProfit": 93.0,
+      "favoriteBucket": "85%+ extreme favorite",
+      "scoreline": "6-2 1-6 6-1 1-6 6-4",
+      "gameMargin": 1.0,
+      "rankGap": 89.0,
+      "rankUpset": true
+    },
+    {
+      "date": "2026-05-26",
+      "round": "Round 1",
+      "matchId": "rg-m-popyrin-svajda-2026-05-26",
+      "match": "Alexei Popyrin vs Zachary Svajda",
+      "favorite": "Alexei Popyrin",
+      "favoriteProb": 89.0,
+      "underdog": "Zachary Svajda",
+      "underdogProb": 13.0,
+      "winner": "Zachary Svajda",
+      "upset": true,
+      "favoriteProfit": -100.0,
+      "underdogProfit": 87.0,
+      "favoriteBucket": "85%+ extreme favorite",
+      "scoreline": "6-3 3-6 6-7(3-7) 5-7",
+      "gameMargin": 3.0,
+      "rankGap": 24.0,
+      "rankUpset": true
+    },
+    {
+      "date": "2026-05-26",
+      "round": "Round 1",
+      "matchId": "rg-m-bublik-struff-2026-05-26",
+      "match": "Alexander Bublik vs Jan-Lennard Struff",
+      "favorite": "Alexander Bublik",
+      "favoriteProb": 78.0,
+      "underdog": "Jan-Lennard Struff",
+      "underdogProb": 24.0,
+      "winner": "Jan-Lennard Struff",
+      "upset": true,
+      "favoriteProfit": -100.0,
+      "underdogProfit": 76.0,
+      "favoriteBucket": "75-84% heavy favorite",
+      "scoreline": "5-7 7-6(8-6) 4-6 5-7",
+      "gameMargin": 5.0,
+      "rankGap": 62.0,
+      "rankUpset": true
+    },
+    {
+      "date": "2026-05-27",
+      "round": "Round 2",
+      "matchId": "rg-w-jelena-ostapenko-magda-linette-2026-05-27",
+      "match": "Jelena Ostapenko vs Magda Linette",
+      "favorite": "Jelena Ostapenko",
+      "favoriteProb": 78.0,
+      "underdog": "Magda Linette",
+      "underdogProb": 23.0,
+      "winner": "Magda Linette",
+      "upset": true,
+      "favoriteProfit": -100.0,
+      "underdogProfit": 77.0,
+      "favoriteBucket": "75-84% heavy favorite",
+      "scoreline": "2-6 6-2 2-6",
+      "gameMargin": 4.0,
+      "rankGap": 28.0,
+      "rankUpset": true
+    },
+    {
+      "date": "2026-05-26",
+      "round": "Round 1",
+      "matchId": "rg-m-cilic-kouame-2026-05-26",
+      "match": "Marin Cilic vs Moise Kouame",
+      "favorite": "Marin Cilic",
+      "favoriteProb": 77.0,
+      "underdog": "Moise Kouame",
+      "underdogProb": 26.0,
+      "winner": "Moise Kouame",
+      "upset": true,
+      "favoriteProfit": -100.0,
+      "underdogProfit": 74.0,
+      "favoriteBucket": "75-84% heavy favorite",
+      "scoreline": "6-7(4-7) 2-6 1-6",
+      "gameMargin": 10.0,
+      "rankGap": 207.0,
+      "rankUpset": true
+    },
+    {
+      "date": "2026-05-28",
+      "round": "Round 2",
+      "matchId": "rg-m-adolfo-daniel-vallejo-moise-kouame-2026-05-28",
+      "match": "Adolfo Daniel Vallejo vs Moise Kouame",
+      "favorite": "Adolfo Daniel Vallejo",
+      "favoriteProb": 76.7,
+      "underdog": "Moise Kouame",
+      "underdogProb": 27.8,
+      "winner": "Moise Kouame",
+      "upset": true,
+      "favoriteProfit": -100.0,
+      "underdogProfit": 260.0,
+      "favoriteBucket": "75-84% heavy favorite",
+      "scoreline": "3-6 5-7 6-3 6-2 6-7(8-10)",
+      "gameMargin": -1.0,
+      "rankGap": 185.0,
+      "rankUpset": true
+    },
+    {
+      "date": "2026-05-28",
+      "round": "Round 2",
+      "matchId": "rg-m-francisco-comesana-luciano-darderi-2026-05-28",
+      "match": "Francisco Comesana vs Luciano Darderi",
+      "favorite": "Luciano Darderi",
+      "favoriteProb": 75.9,
+      "underdog": "Francisco Comesana",
+      "underdogProb": 28.6,
+      "winner": "Francisco Comesana",
+      "upset": true,
+      "favoriteProfit": -100.0,
+      "underdogProfit": 250.0,
+      "favoriteBucket": "75-84% heavy favorite",
+      "scoreline": "7-6(7-5) 4-6 6-4 2-6 6-4",
+      "gameMargin": -1.0,
+      "rankGap": 75.0,
+      "rankUpset": true
+    },
+    {
+      "date": "2026-05-28",
+      "round": "Round 2",
+      "matchId": "rg-w-ann-li-diane-parry-2026-05-28",
+      "match": "Ann Li vs Diane Parry",
+      "favorite": "Ann Li",
+      "favoriteProb": 73.3,
+      "underdog": "Diane Parry",
+      "underdogProb": 31.3,
+      "winner": "Diane Parry",
+      "upset": true,
+      "favoriteProfit": -100.0,
+      "underdogProfit": 220.0,
+      "favoriteBucket": "65-74% favorite",
+      "scoreline": "3-6 4-6",
+      "gameMargin": 5.0,
+      "rankGap": 54.0,
+      "rankUpset": true
+    },
+    {
+      "date": "2026-05-26",
+      "round": "Round 1",
+      "matchId": "rg-w-noskova-sakkari-2026-05-26",
+      "match": "Linda Noskova vs Maria Sakkari",
+      "favorite": "Linda Noskova",
+      "favoriteProb": 72.0,
+      "underdog": "Maria Sakkari",
+      "underdogProb": 30.0,
+      "winner": "Maria Sakkari",
+      "upset": true,
+      "favoriteProfit": -100.0,
+      "underdogProfit": 70.0,
+      "favoriteBucket": "65-74% favorite",
+      "scoreline": "5-7 6-7(3-7)",
+      "gameMargin": 3.0,
+      "rankGap": 37.0,
+      "rankUpset": true
+    },
+    {
+      "date": "2026-05-26",
+      "round": "Round 1",
+      "matchId": "rg-w-parry-kalinina-2026-05-26",
+      "match": "Anhelina Kalinina vs Diane Parry",
+      "favorite": "Anhelina Kalinina",
+      "favoriteProb": 71.0,
+      "underdog": "Diane Parry",
+      "underdogProb": 30.0,
+      "winner": "Diane Parry",
+      "upset": true,
+      "favoriteProfit": -100.0,
+      "underdogProfit": 70.0,
+      "favoriteBucket": "65-74% favorite",
+      "scoreline": "6-0 2-6 4-6",
+      "gameMargin": 0.0,
+      "rankGap": 32.0,
+      "rankUpset": true
+    },
+    {
+      "date": "2026-05-28",
+      "round": "Round 2",
+      "matchId": "rg-w-maja-chwalinska-elise-mertens-2026-05-28",
+      "match": "Maja Chwalinska vs Elise Mertens",
+      "favorite": "Elise Mertens",
+      "favoriteProb": 67.7,
+      "underdog": "Maja Chwalinska",
+      "underdogProb": 36.8,
+      "winner": "Maja Chwalinska",
+      "upset": true,
+      "favoriteProfit": -100.0,
+      "underdogProfit": 172.0,
+      "favoriteBucket": "65-74% favorite",
+      "scoreline": "6-4 6-0",
+      "gameMargin": 8.0,
+      "rankGap": 79.0,
+      "rankUpset": true
+    },
+    {
+      "date": "2026-05-28",
+      "round": "Round 2",
+      "matchId": "rg-m-raphael-collignon-ben-shelton-2026-05-28",
+      "match": "Raphael Collignon vs Ben Shelton",
+      "favorite": "Ben Shelton",
+      "favoriteProb": 67.7,
+      "underdog": "Raphael Collignon",
+      "underdogProb": 36.8,
+      "winner": "Raphael Collignon",
+      "upset": true,
+      "favoriteProfit": -100.0,
+      "underdogProfit": 172.0,
+      "favoriteBucket": "65-74% favorite",
+      "scoreline": "6-4 7-5 6-4",
+      "gameMargin": 6.0,
+      "rankGap": 47.0,
+      "rankUpset": true
+    },
+    {
+      "date": "2026-05-27",
+      "round": "Round 2",
+      "matchId": "rg-w-hailey-baptiste-wang-xiyu-2026-05-27",
+      "match": "Hailey Baptiste vs Wang Xiyu",
+      "favorite": "Hailey Baptiste",
+      "favoriteProb": 67.0,
+      "underdog": "Wang Xiyu",
+      "underdogProb": 33.0,
+      "winner": "Wang Xiyu",
+      "upset": true,
+      "favoriteProfit": -100.0,
+      "underdogProfit": 67.0,
+      "favoriteBucket": "65-74% favorite",
+      "scoreline": "4-5",
+      "gameMargin": 1.0,
+      "rankGap": 120.0,
+      "rankUpset": true
+    }
+  ],
+  "rankUpsetsByRound": [
+    {
+      "round": "Qualifying Final",
+      "matches": 30,
+      "rankKnown": 27,
+      "rankUpsets": 8,
+      "rankUpsetRate": 0.296,
+      "avgWinnerGameMargin": 5.6,
+      "decidingSetRate": 0.333
+    },
+    {
+      "round": "Round 1",
+      "matches": 128,
+      "rankKnown": 124,
+      "rankUpsets": 42,
+      "rankUpsetRate": 0.339,
+      "avgWinnerGameMargin": 6.12,
+      "decidingSetRate": 0.203
+    },
+    {
+      "round": "Round 2",
+      "matches": 64,
+      "rankKnown": 64,
+      "rankUpsets": 20,
+      "rankUpsetRate": 0.312,
+      "avgWinnerGameMargin": 5.37,
+      "decidingSetRate": 0.339
+    }
+  ]
+}

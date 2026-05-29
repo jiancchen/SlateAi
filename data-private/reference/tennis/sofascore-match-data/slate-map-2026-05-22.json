@@ -1,0 +1,138 @@
+{
+  "date": "2026-05-22",
+  "matched": [
+    {
+      "eventId": "16211085",
+      "boardMatchId": "rg-qualifying-gojo-rodionov-2026-05-22",
+      "title": "Borna Gojo vs Jurij Rodionov"
+    },
+    {
+      "eventId": "16211083",
+      "boardMatchId": "rg-qualifying-dellien-carballes-baena-2026-05-22",
+      "title": "Roberto Carballes Baena vs Hugo Dellien"
+    },
+    {
+      "eventId": "16211086",
+      "boardMatchId": "rg-qualifying-gaubas-llamas-ruiz-2026-05-22",
+      "title": "Vilius Gaubas vs Pablo Llamas Ruiz"
+    },
+    {
+      "eventId": "16211095",
+      "boardMatchId": "rg-qualifying-herbert-riedi-2026-05-22",
+      "title": "Pierre-Hugues Herbert vs Leandro Riedi"
+    },
+    {
+      "eventId": "16211087",
+      "boardMatchId": "rg-qualifying-gentzsch-safiullin-2026-05-22",
+      "title": "Tom Gentzsch vs Roman Safiullin"
+    },
+    {
+      "eventId": "16211082",
+      "boardMatchId": "rg-qualifying-nava-martinez-2026-05-22",
+      "title": "Emilio Nava vs Pedro Martinez"
+    },
+    {
+      "eventId": "16211088",
+      "boardMatchId": "rg-qualifying-blanch-pavlovic-2026-05-22",
+      "title": "Darwin Blanch vs Luka Pavlovic"
+    },
+    {
+      "eventId": "16211084",
+      "boardMatchId": "rg-qualifying-gill-jacquet-2026-05-22",
+      "title": "Felix Gill vs Kyrian Jacquet"
+    },
+    {
+      "eventId": "16209983",
+      "boardMatchId": "rg-qualifying-sasnovich-bassols-ribera-2026-05-22",
+      "title": "Aliaksandra Sasnovich vs Marina Bassols Ribera"
+    },
+    {
+      "eventId": "16211089",
+      "boardMatchId": "rg-qualifying-tan-fruhvirtova-2026-05-22",
+      "title": "Harmony Tan vs Linda Fruhvirtova"
+    },
+    {
+      "eventId": "16211092",
+      "boardMatchId": "rg-qualifying-bandecchi-hruncakova-2026-05-22",
+      "title": "Susan Bandecchi vs Viktoria Hrunčáková"
+    },
+    {
+      "eventId": "16211091",
+      "boardMatchId": "rg-qualifying-zavatska-bronzetti-2026-05-22",
+      "title": "Katarina Zavatska vs Lucia Bronzetti"
+    },
+    {
+      "eventId": "16211090",
+      "boardMatchId": "rg-qualifying-sun-liu-2026-05-22",
+      "title": "Lulu Sun vs Claire Liu"
+    },
+    {
+      "eventId": "16211093",
+      "boardMatchId": "rg-qualifying-kudermetova-wang-2026-05-22",
+      "title": "Polina Kudermetova vs Xiyu Wang"
+    }
+  ],
+  "unmatched": [
+    {
+      "eventId": 16209917,
+      "title": "Toby Samuel vs Gonzalo Bueno",
+      "tournament": "French Open, Paris, France, Qualifying"
+    },
+    {
+      "eventId": 16209923,
+      "title": "Alexis Galarneau vs Federico Cinà",
+      "tournament": "French Open, Paris, France, Qualifying"
+    },
+    {
+      "eventId": 16209360,
+      "title": "Dalibor Svrčina vs Thomas Faurel",
+      "tournament": "French Open, Paris, France, Qualifying"
+    },
+    {
+      "eventId": 16209919,
+      "title": "Coleman Wong vs Juan Carlos Prado Angelo",
+      "tournament": "French Open, Paris, France, Qualifying"
+    },
+    {
+      "eventId": 16209916,
+      "title": "Jaime Faria vs Lukas Neumayer",
+      "tournament": "French Open, Paris, France, Qualifying"
+    },
+    {
+      "eventId": 16209918,
+      "title": "Mayar Sherif vs Greet Minnen",
+      "tournament": "French Open, Paris, France, Qualifying"
+    },
+    {
+      "eventId": 16209361,
+      "title": "Hanyu Guo vs Sofia Costoulas",
+      "tournament": "French Open, Paris, France, Qualifying"
+    },
+    {
+      "eventId": 16209365,
+      "title": "Elena Pridankina vs Himeno Sakatsume",
+      "tournament": "French Open, Paris, France, Qualifying"
+    },
+    {
+      "eventId": 16209932,
+      "title": "Alina Korneeva vs Julia Riera",
+      "tournament": "French Open, Paris, France, Qualifying"
+    },
+    {
+      "eventId": 16209924,
+      "title": "Ashlyn Krueger vs Mary Stoiana",
+      "tournament": "French Open, Paris, France, Qualifying"
+    },
+    {
+      "eventId": 16209982,
+      "title": "Guiomar Maristany vs Kaitlin Quevedo",
+      "tournament": "French Open, Paris, France, Qualifying"
+    },
+    {
+      "eventId": 16211094,
+      "title": "Rebecca Šramková vs Maria Carle",
+      "tournament": "French Open, Paris, France, Qualifying"
+    }
+  ],
+  "scheduleStatus": 200
+}

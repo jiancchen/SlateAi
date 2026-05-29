@@ -499,6 +499,76 @@ def init_db(conn: sqlite3.Connection) -> None:
           primary key (sofascore_event_id, set_number, game_number, point_index)
         );
 
+        create table if not exists tennis_kalshi_match_markets (
+          market_ticker text primary key,
+          event_ticker text not null,
+          series_ticker text,
+          slate_date text,
+          board_match_id text,
+          pair_key text,
+          title text,
+          selection_name text,
+          normalized_selection_name text,
+          result text,
+          expiration_value text,
+          status text,
+          close_time text,
+          last_price_dollars real,
+          raw_json text not null,
+          updated_at text not null default current_timestamp
+        );
+
+        create table if not exists tennis_kalshi_market_candles (
+          market_ticker text not null,
+          end_period_ts integer not null,
+          event_ticker text,
+          slate_date text,
+          board_match_id text,
+          price_open real,
+          price_high real,
+          price_low real,
+          price_close real,
+          price_previous real,
+          yes_bid_open real,
+          yes_bid_high real,
+          yes_bid_low real,
+          yes_bid_close real,
+          yes_ask_open real,
+          yes_ask_high real,
+          yes_ask_low real,
+          yes_ask_close real,
+          volume_fp real,
+          open_interest_fp real,
+          raw_json text not null,
+          updated_at text not null default current_timestamp,
+          primary key (market_ticker, end_period_ts)
+        );
+
+        create table if not exists tennis_kalshi_intramatch_trade_features (
+          market_ticker text primary key,
+          event_ticker text not null,
+          slate_date text,
+          board_match_id text,
+          pair_key text,
+          selection_name text,
+          normalized_selection_name text,
+          is_lowest_priced_side integer,
+          entry_ask real,
+          favorite_entry_ask real,
+          max_bid real,
+          max_trade real,
+          volume_minutes integer,
+          won integer,
+          target_20_hit integer,
+          target_30_hit integer,
+          target_20_profit real,
+          target_30_profit real,
+          target_20_fee_adjusted_profit real,
+          target_30_fee_adjusted_profit real,
+          raw_json text not null,
+          updated_at text not null default current_timestamp
+        );
+
         create index if not exists idx_tennis_matches_slate_date on tennis_matches(slate_date);
         create index if not exists idx_tennis_recent_opponent_rank on tennis_recent_matches(opponent_rank);
         create index if not exists idx_tennis_recent_form_metrics_match on tennis_recent_form_metrics(match_id, normalized_name);
@@ -518,6 +588,14 @@ def init_db(conn: sqlite3.Connection) -> None:
           on tennis_sofascore_replay_games(board_match_id, set_number, game_number);
         create index if not exists idx_tennis_sofascore_replay_points_board
           on tennis_sofascore_replay_points(board_match_id, set_number, game_number, point_index);
+        create index if not exists idx_tennis_kalshi_markets_event
+          on tennis_kalshi_match_markets(event_ticker);
+        create index if not exists idx_tennis_kalshi_markets_slate
+          on tennis_kalshi_match_markets(slate_date, board_match_id);
+        create index if not exists idx_tennis_kalshi_candles_market
+          on tennis_kalshi_market_candles(market_ticker, end_period_ts);
+        create index if not exists idx_tennis_kalshi_trade_features_slate
+          on tennis_kalshi_intramatch_trade_features(slate_date, entry_ask, max_bid);
         """
     )
     existing_market_columns = {
