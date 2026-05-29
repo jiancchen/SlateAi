@@ -118,6 +118,29 @@ Important note:
 - use `--include-idle` only when you want a baseline snapshot outside those live windows
 - use `--include-final` only when you want to store final/postgame market states for audit work
 
+Recommended cadence:
+
+- midday or early afternoon:
+  - capture one baseline snapshot only
+  - `npm run data:watch:kalshi-mlb-live -- --date YYYY-MM-DD --once --include-idle`
+- about `20` minutes before the earliest first pitch:
+  - start the normal watcher
+  - `npm run data:watch:kalshi-mlb-live -- --date YYYY-MM-DD --interval-seconds 60`
+- once games go live:
+  - keep the watcher running during active windows
+  - this is where the useful repricing path is collected
+- after the last game if you want a research audit:
+  - optional one-shot final-state capture
+  - `npm run data:watch:kalshi-mlb-live -- --date YYYY-MM-DD --once --include-final`
+
+Do not think of this as a minute-by-minute all-day poller. The useful research states are:
+
+- baseline pregame
+- near first pitch
+- early live innings
+- later live state changes
+- optional final/postgame
+
 ## Daily pattern
 
 ### Before first pitch

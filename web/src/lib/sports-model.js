@@ -7029,17 +7029,31 @@ const buildMlbPlayerProps = (game, analysis) => {
       .map((propType) => [propType, trackedTargets.filter((target) => target.propType === propType).slice(0, 4)])
   )
 
-  const featured = trackedTargets.slice(0, 6)
+  const featured = []
+  const featuredIds = new Set()
+  for (const propType of Object.keys(mlbPropTypeConfig)) {
+    const topOfType = legacyBoard.byType?.[propType]?.[0]
+    if (topOfType && !featuredIds.has(topOfType.id)) {
+      featured.push(topOfType)
+      featuredIds.add(topOfType.id)
+    }
+  }
+
+  legacyBoard.targets.forEach((target) => {
+    if (featured.length >= 8 || featuredIds.has(target.id)) return
+    featured.push(target)
+    featuredIds.add(target.id)
+  })
 
   return {
-    available: trackedTargets.length > 0,
+    available: featured.length > 0,
     targets: trackedTargets,
     featured,
     byType,
     candidateCount: legacyBoard.targets.length,
     summary: trackedTargets.length
-      ? `${trackedTargets[0].playerName} leads the tracked prop board, with ${trackedTargets.length} narrower lanes surviving script and volatility filters out of ${legacyBoard.targets.length} raw candidates.`
-      : 'The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass.'
+      ? `${trackedTargets[0].playerName} leads the tracked prop board, with ${trackedTargets.length} narrower lanes surviving script and volatility filters out of ${legacyBoard.targets.length} raw candidates. Featured props now show a broader mix than the tracked-only shortlist.`
+      : 'The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass. Featured props still show the broader board for context.'
   }
 }
 

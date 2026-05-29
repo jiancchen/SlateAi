@@ -511,15 +511,29 @@ const buildTrackedPropBoardByGame = (payload: AnyRecord | null) => {
         return acc
       }, {})
       const leader = sorted[0]
+      const featured = []
+      const featuredIds = new Set<string>()
+      Object.keys(byType).forEach((propType) => {
+        const topOfType = byType[propType]?.[0]
+        if (topOfType && !featuredIds.has(topOfType.id)) {
+          featured.push(topOfType)
+          featuredIds.add(topOfType.id)
+        }
+      })
+      sorted.forEach((pick) => {
+        if (featured.length >= 6 || featuredIds.has(pick.id)) return
+        featured.push(pick)
+        featuredIds.add(pick.id)
+      })
       return [
         gameId,
         {
           available: sorted.length > 0,
           targets: sorted,
-          featured: sorted.slice(0, 6),
+          featured,
           byType,
           summary: leader
-            ? `${leader.playerName} leads the tracked prop board for this game, with ${sorted.length} narrower lanes surviving the current filters.`
+            ? `${leader.playerName} leads the tracked prop board for this game, with ${sorted.length} narrower lanes surviving the current filters. Featured props are diversified by market type first.`
             : 'No tracked prop lanes survived the current filters.'
         }
       ]
@@ -671,17 +685,33 @@ const formatSlashMetric = (value: number | null | undefined, digits = 3) => {
   return Number(value).toFixed(digits).replace(/^0/, '.')
 }
 
+const computeXops = (stats: AnyRecord | null | undefined) => {
+  const obp = Number(stats?.obp)
+  const slg = Number(stats?.slg)
+  if (!Number.isFinite(obp) || !Number.isFinite(slg)) return null
+  return obp * slg
+}
+
 const buildLineupPlayerInspectionLine = (player: AnyRecord = {}, opposingHand = '') => {
   const notes = []
   if (Number.isFinite(Number(player.recent?.ops))) {
-    notes.push(`Recent OPS ${formatSlashMetric(player.recent.ops)}`)
+    const recentXops = computeXops(player.recent)
+    notes.push(
+      `Recent OPS ${formatSlashMetric(player.recent.ops)}${recentXops !== null ? ` · XOPS ${formatSlashMetric(recentXops)}` : ''}`
+    )
   }
   if (Number.isFinite(Number(player.split?.ops))) {
     const handLabel = opposingHand ? ` vs ${opposingHand}HP` : ''
-    notes.push(`Split OPS ${formatSlashMetric(player.split.ops)}${handLabel}`)
+    const splitXops = computeXops(player.split)
+    notes.push(
+      `Split OPS ${formatSlashMetric(player.split.ops)}${splitXops !== null ? ` · XOPS ${formatSlashMetric(splitXops)}` : ''}${handLabel}`
+    )
   }
   if (Number.isFinite(Number(player.season?.ops))) {
-    notes.push(`Season OPS ${formatSlashMetric(player.season.ops)}`)
+    const seasonXops = computeXops(player.season)
+    notes.push(
+      `Season OPS ${formatSlashMetric(player.season.ops)}${seasonXops !== null ? ` · XOPS ${formatSlashMetric(seasonXops)}` : ''}`
+    )
   }
   return notes.join(' · ')
 }
@@ -2812,6 +2842,12 @@ function App() {
   const mlbValueSummary = useMemo(() => {
     const mlbGames = games.filter((game: AnyRecord) => game.league === 'MLB')
     if (!mlbGames.length) return null
+    const hrScoreBandRank = (band: string) => {
+      if (band === 'premium') return 3
+      if (band === 'strong') return 2
+      if (band === 'viable') return 1
+      return 0
+    }
 
     const fullyPostedGames = mlbGames.filter(
       (game: AnyRecord) => game.lineupBoard?.status?.away === 'posted' && game.lineupBoard?.status?.home === 'posted'
@@ -2861,6 +2897,27 @@ function App() {
       )
       .sort((left: AnyRecord, right: AnyRecord) => right.sortConfidence - left.sortConfidence || right.sortEdge - left.sortEdge)
 
+    const homeRunRows = mlbGames
+      .flatMap((game: AnyRecord) => {
+        const likely = Array.isArray(game.homeRunTargets?.likely) ? game.homeRunTargets.likely : []
+        const possible = Array.isArray(game.homeRunTargets?.possible) ? game.homeRunTargets.possible : []
+        return [...likely, ...possible].map((target: AnyRecord) => ({
+          ...target,
+          gameTitle: game.title,
+          gameId: game.id,
+          lineupStatus: target.lineupContext?.lineupStatus || 'partial'
+        }))
+      })
+      .filter((target: AnyRecord) => hrScoreBandRank(String(target.scoreBand || '')) > 0)
+      .sort((left: AnyRecord, right: AnyRecord) => {
+        const postedDelta =
+          Number(right.lineupStatus === 'posted') - Number(left.lineupStatus === 'posted')
+        if (postedDelta) return postedDelta
+        const scoreBandDelta = hrScoreBandRank(String(right.scoreBand || '')) - hrScoreBandRank(String(left.scoreBand || ''))
+        if (scoreBandDelta) return scoreBandDelta
+        return Number(right.baseScore || 0) - Number(left.baseScore || 0)
+      })
+
     const topRows = [...tbBackedRows, ...strikeoutRows, ...totalRows, ...sideRows]
       .sort((left: AnyRecord, right: AnyRecord) => right.sortConfidence - left.sortConfidence || right.sortEdge - left.sortEdge)
       .slice(0, 12)
@@ -2875,11 +2932,12 @@ function App() {
       tbBackedRows,
       tbSoftHeatRows,
       strikeoutRows,
+      homeRunRows,
       topRows,
       note:
         fullyPostedGames === mlbGames.length
-          ? 'MLB value board is the strongest current model-edge board for today: price-sensitive sides, strongest totals, TB-backed bats, posted-lineup K overs, and live Kalshi pricing context.'
-          : `MLB value board is live, but only ${fullyPostedGames}/${mlbGames.length} games are fully posted. TB-backed rows are the cleanest current prop lane; soft-heat rows stay watch-only until more lineups lock.`
+          ? 'MLB value board is the strongest current model-edge board for today: price-sensitive sides, strongest totals, TB-backed bats, posted-lineup K overs, an HR watch lane, and live Kalshi pricing context.'
+          : `MLB value board is live, but only ${fullyPostedGames}/${mlbGames.length} games are fully posted. TB-backed rows are the cleanest current prop lane; HR stays a watchlist until the contact-quality lane proves more.`
     }
   }, [activeKalshiMlbMarketByGame, favoriteCatalogEntries, games, propCatalogEntries, totalCatalogEntries])
 
@@ -5639,6 +5697,7 @@ function App() {
                           <span>TB backed {mlbValueSummary.tbBackedRows.length}</span>
                           <span>Soft heat {mlbValueSummary.tbSoftHeatRows.length}</span>
                           <span>Pitcher K {mlbValueSummary.strikeoutRows.length}</span>
+                          <span>HR watch {mlbValueSummary.homeRunRows.length}</span>
                           <span>Kalshi {mlbValueSummary.mappedKalshiGames}</span>
                           <span>Partials {mlbValueSummary.partialGames}</span>
                         </div>
@@ -5706,6 +5765,41 @@ function App() {
                                 </span>
                               </button>
                             ))}
+                          </div>
+                        ) : null}
+                        {mlbValueSummary.homeRunRows.length ? (
+                          <div className="tennis-value-list">
+                            <div className="tennis-value-section-label">HR watch</div>
+                            {mlbValueSummary.homeRunRows.slice(0, 6).map((row: AnyRecord) => {
+                              const pitchFit = row.lineupContext?.pitchType?.summary
+                              const hr9 = Number.isFinite(Number(row.opposingPitcherHr9)) ? `${formatNumber(row.opposingPitcherHr9, 2)} HR/9` : null
+                              const park = Number.isFinite(Number(row.parkHrIndex)) ? `${Math.round(Number(row.parkHrIndex))} park HR index` : null
+                              const slot = Number.isFinite(Number(row.lineupContext?.slot)) ? `slot ${Number(row.lineupContext.slot)}` : null
+                              const statusLabel = row.lineupStatus === 'posted' ? 'posted order' : 'partial order'
+                              const detailLine = [statusLabel, slot, hr9, park].filter(Boolean).join(' · ')
+                              const whyLine =
+                                pitchFit ||
+                                (Array.isArray(row.contextLabels) ? row.contextLabels.slice(0, 2).join(' · ') : '') ||
+                                `${row.opposingPitcher} matchup watch`
+                              const supportLine = detailLine ? `${detailLine} · ${whyLine}` : whyLine
+                              return (
+                                <button
+                                  key={`${row.gameId}-${row.playerId ?? row.playerName}-hr`}
+                                  type="button"
+                                  className="tennis-value-row"
+                                  onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
+                                >
+                                  <span>
+                                    <strong>{row.playerName}</strong>
+                                    <small>{row.teamName} · {row.gameTitle}</small>
+                                  </span>
+                                  <span>
+                                    <strong>{String(row.scoreBand || 'watch').toUpperCase()}</strong>
+                                    <small>{supportLine}</small>
+                                  </span>
+                                </button>
+                              )
+                            })}
                           </div>
                         ) : null}
                         {mlbValueSummary.tbSoftHeatRows.length ? (
