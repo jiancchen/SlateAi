@@ -253,6 +253,45 @@ const fetchHitterStatcastTrendMap = (asOfDate, playerIds = []) => {
   )
 }
 
+const fetchHitterOpponentContextMap = (asOfDate, playerIds = []) => {
+  const normalizedIds = [...new Set(playerIds.map((value) => Number(value)).filter(Number.isFinite))]
+  if (!normalizedIds.length) return new Map()
+
+  const rows = runSqliteJson(`
+    select
+      player_id,
+      games_sample_last10,
+      avg_opponent_win_pct_last5_last10,
+      avg_opponent_run_diff_last5_last10,
+      avg_opponent_run_diff_per_game_last10,
+      games_vs_winning_last10,
+      weighted_hits_per_pa_last10,
+      weighted_total_bases_per_pa_last10,
+      hits_per_pa_weight_delta_last10,
+      total_bases_per_pa_weight_delta_last10
+    from mlb_hitter_opponent_context_snapshots
+    where as_of_date = ${quoteSqlText(asOfDate)}
+      and player_id in (${normalizedIds.join(',')})
+  `)
+
+  return new Map(
+    rows.map((row) => [
+      Number(row.player_id),
+      {
+        gamesSampleLast10: Number(row.games_sample_last10 || 0) || 0,
+        avgOpponentWinPctLast10: parseNumber(row.avg_opponent_win_pct_last5_last10),
+        avgOpponentRunDiffLast10: parseNumber(row.avg_opponent_run_diff_last5_last10),
+        avgOpponentRunDiffPerGameLast10: parseNumber(row.avg_opponent_run_diff_per_game_last10),
+        gamesVsWinningLast10: Number(row.games_vs_winning_last10 || 0) || 0,
+        weightedHitsPerPaLast10: parseNumber(row.weighted_hits_per_pa_last10),
+        weightedTotalBasesPerPaLast10: parseNumber(row.weighted_total_bases_per_pa_last10),
+        hitsPerPaWeightDeltaLast10: parseNumber(row.hits_per_pa_weight_delta_last10),
+        totalBasesPerPaWeightDeltaLast10: parseNumber(row.total_bases_per_pa_weight_delta_last10)
+      }
+    ])
+  )
+}
+
 const fetchRotoWireBvpRows = async ({ date, type }) => {
   const url =
     'https://www.rotowire.com/baseball/tables/matchup.php?' +
@@ -1130,7 +1169,8 @@ const buildPlayerLineupEntry = ({
   splitStats,
   pitchTypeStatsByType,
   opposingPitcher,
-  statcastTrend = null
+  statcastTrend = null,
+  opponentContext = null
 }) => {
   const seasonOps = Number.isFinite(seasonStats?.ops) ? seasonStats.ops : 0.72
   const recentOps =
@@ -1370,6 +1410,18 @@ const buildPlayerLineupEntry = ({
           sweetSpotTrend: parseNumber(statcastTrend.sweetSpotTrend)
         }
       : null,
+    opponentContext: opponentContext
+      ? {
+          ...opponentContext,
+          avgOpponentWinPctLast10: parseNumber(opponentContext.avgOpponentWinPctLast10),
+          avgOpponentRunDiffLast10: parseNumber(opponentContext.avgOpponentRunDiffLast10),
+          avgOpponentRunDiffPerGameLast10: parseNumber(opponentContext.avgOpponentRunDiffPerGameLast10),
+          weightedHitsPerPaLast10: parseNumber(opponentContext.weightedHitsPerPaLast10),
+          weightedTotalBasesPerPaLast10: parseNumber(opponentContext.weightedTotalBasesPerPaLast10),
+          hitsPerPaWeightDeltaLast10: parseNumber(opponentContext.hitsPerPaWeightDeltaLast10),
+          totalBasesPerPaWeightDeltaLast10: parseNumber(opponentContext.totalBasesPerPaWeightDeltaLast10)
+        }
+      : null,
     tags,
     primaryTag,
     summary,
@@ -1554,6 +1606,7 @@ const extractLineupPlayers = (boxscoreSide = {}, playerStatMaps = {}, opposingPi
           : getStatRecord(playerStatMaps.vsRight, playerId)
       const pitchTypeStatsByType = playerStatMaps.pitchArsenal?.get(playerId) || null
       const statcastTrend = playerStatMaps.statcastTrends?.get(playerId) || null
+      const opponentContext = playerStatMaps.opponentContext?.get(playerId) || null
       const playerDetails = playerStatMaps.season.get(playerId) || playerStatMaps.recent.get(playerId) || null
       const lineupPlayer = {
         playerId,
@@ -1570,7 +1623,8 @@ const extractLineupPlayers = (boxscoreSide = {}, playerStatMaps = {}, opposingPi
         splitStats,
         pitchTypeStatsByType,
         opposingPitcher,
-        statcastTrend
+        statcastTrend,
+        opponentContext
       })
     })
     .filter(Boolean)
@@ -1602,6 +1656,7 @@ const extractSupplementalLineupPlayers = ({
           : getStatRecord(playerStatMaps.vsRight, playerId)
       const pitchTypeStatsByType = playerStatMaps.pitchArsenal?.get(playerId) || null
       const statcastTrend = playerStatMaps.statcastTrends?.get(playerId) || null
+      const opponentContext = playerStatMaps.opponentContext?.get(playerId) || null
       const playerDetails = playerStatMaps.season.get(playerId) || playerStatMaps.recent.get(playerId) || null
       if (!matchesExpectedOfficialTeam({ expectedOfficialTeam, playerRecord, playerDetails })) return null
       const lineupPlayer = {
@@ -1619,7 +1674,8 @@ const extractSupplementalLineupPlayers = ({
         splitStats,
         pitchTypeStatsByType,
         opposingPitcher,
-        statcastTrend
+        statcastTrend,
+        opponentContext
       })
     })
     .filter(Boolean)
@@ -1756,6 +1812,7 @@ const main = async () => {
     year: Number(options.date.slice(0, 4))
   })
   const hitterStatcastTrendMap = fetchHitterStatcastTrendMap(options.date, allPlayerIds)
+  const hitterOpponentContextMap = fetchHitterOpponentContextMap(options.date, allPlayerIds)
 
   const playerStatMaps = {
     season: seasonMap,
@@ -1763,7 +1820,8 @@ const main = async () => {
     vsRight: vsRightMap,
     vsLeft: vsLeftMap,
     pitchArsenal: batterPitchTypeStatsByPlayerId,
-    statcastTrends: hitterStatcastTrendMap
+    statcastTrends: hitterStatcastTrendMap,
+    opponentContext: hitterOpponentContextMap
   }
 
   const lineupBoardsByGameId = {}

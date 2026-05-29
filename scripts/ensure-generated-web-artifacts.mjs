@@ -45,3 +45,13 @@ export type DailyPropSummary = {
 
 export const mlbPropPerformanceByDate: Record<string, DailyPropSummary> = {}\n`
 )
+
+await ensureFile(
+  path.join(webLibDir, 'kalshi-mlb-markets.generated.json'),
+  `{
+  "source": "Kalshi external API",
+  "fetchedAt": null,
+  "dates": {}
+}
+`
+)

@@ -1344,6 +1344,35 @@ CREATE TABLE IF NOT EXISTS weather_observations (
   PRIMARY KEY (game_pk, observed_at)
 );
 
+CREATE TABLE IF NOT EXISTS mlb_kalshi_market_snapshots (
+  snapshot_ts TEXT NOT NULL,
+  game_date TEXT NOT NULL,
+  game_pk INTEGER,
+  game_id TEXT,
+  game_title TEXT,
+  away_team TEXT,
+  home_team TEXT,
+  game_status TEXT,
+  game_status_detail TEXT,
+  capture_window TEXT,
+  market_family TEXT NOT NULL,
+  series_ticker TEXT,
+  event_ticker TEXT NOT NULL,
+  market_ticker TEXT NOT NULL,
+  selection_code TEXT,
+  market_title TEXT,
+  line REAL,
+  yes_bid_cents INTEGER,
+  yes_ask_cents INTEGER,
+  no_bid_cents INTEGER,
+  no_ask_cents INTEGER,
+  last_price_cents INTEGER,
+  open_interest_fp REAL,
+  volume_fp REAL,
+  raw_json TEXT NOT NULL,
+  PRIMARY KEY (snapshot_ts, market_ticker)
+);
+
 CREATE INDEX IF NOT EXISTS idx_mlb_games_game_date ON mlb_games(game_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_game_outcomes_game_date ON mlb_game_outcomes(game_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_starting_pitchers_game_pk_role ON mlb_starting_pitchers(game_pk, team_role);
@@ -1420,6 +1449,10 @@ CREATE INDEX IF NOT EXISTS idx_mlb_reliever_first_batter_profiles_pitcher_date
   ON mlb_reliever_first_batter_command_profiles(pitcher_id, as_of_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_starter_tttp_profiles_pitcher_date
   ON mlb_starter_third_time_penalty_profiles(pitcher_id, as_of_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_kalshi_market_snapshots_game_date
+  ON mlb_kalshi_market_snapshots(game_date, market_family, event_ticker);
+CREATE INDEX IF NOT EXISTS idx_mlb_kalshi_market_snapshots_game_pk
+  ON mlb_kalshi_market_snapshots(game_pk, snapshot_ts);
 """
 
 

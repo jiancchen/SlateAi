@@ -391,9 +391,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +110 / +1.5 -125",
+    "spread": "-1.5 +120 / +1.5 -140",
     "total": "o9.5 even / u9.5 -110",
-    "moneyline": "Braves -138 / Reds +120",
+    "moneyline": "Braves -130 / Reds +120",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/braves-vs-reds",
     "tierTwoContext": {
@@ -2003,9 +2003,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -200 / +1.5 -182",
-    "total": "o9.5 even / u9.5 -115",
-    "moneyline": "Padres even / Nationals -120",
+    "spread": "+1.5 -190 / +1.5 -182",
+    "total": "o9 -122 / u9.5 -115",
+    "moneyline": "Padres +101 / Nationals -120",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/padres-vs-nationals",
     "tierTwoContext": {
@@ -5330,9 +5330,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -210 / +1.5 -180",
+    "spread": "+1.5 -210 / +1.5 -179",
     "total": "o8.5 -120 / u9 -115",
-    "moneyline": "Blue Jays -101 / Orioles -115",
+    "moneyline": "Blue Jays -102 / Orioles -115",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/blue-jays-vs-orioles",
     "tierTwoContext": {
@@ -7326,9 +7326,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -150 / -1.5 +130",
+    "spread": "+1.5 -155 / -1.5 +134",
     "total": "o8 -110 / u8 -110",
-    "moneyline": "Angels +148 / Rays -162",
+    "moneyline": "Angels +140 / Rays -162",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/angels-vs-rays",
     "tierTwoContext": {
@@ -9215,7 +9215,7 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -220 / +1.5 -186",
+    "spread": "+1.5 -220 / +1.5 -188",
     "total": "o7 -120 / u7.5 -118",
     "moneyline": "Marlins -102 / Mets -110",
     "pitcherSourceNote": "",
@@ -11427,7 +11427,7 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -190 / -1.5 +175",
+    "spread": "+1.5 -190 / +1.5 -225",
     "total": "o8 -105 / u8 -112",
     "moneyline": "Red Sox +110 / Guardians -124",
     "pitcherSourceNote": "",
@@ -13228,9 +13228,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +135 / +1.5 -155",
-    "total": "o7.5 -115 / u8 -121",
-    "moneyline": "Cubs -130 / Cardinals +110",
+    "spread": "-1.5 +135 / +1.5 -154",
+    "total": "o7.5 -112 / u7.5 even",
+    "moneyline": "Cubs -130 / Cardinals +112",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/cubs-vs-cardinals",
     "tierTwoContext": {
@@ -18494,8 +18494,8 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +140 / +1.5 -162",
-    "total": "o8 -118 / u8.5 -114",
+    "spread": "-1.5 +140 / +1.5 -155",
+    "total": "o8 -120 / u8.5 -114",
     "moneyline": "Brewers -118 / Astros +101",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/brewers-vs-astros",
@@ -20317,8 +20317,8 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +101 / +1.5 -120",
-    "total": "o10.5 -115 / u10.5 even",
+    "spread": "-1.5 +101 / +1.5 -118",
+    "total": "o10.5 -120 / u10.5 even",
     "moneyline": "Giants -150 / Rockies +132",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/giants-vs-rockies",
@@ -22115,8 +22115,8 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +120 / +1.5 -134",
-    "total": "o9.5 -107 / u9.5 -110",
+    "spread": "-1.5 +120 / +1.5 -140",
+    "total": "o9.5 -108 / u9.5 -110",
     "moneyline": "Yankees -140 / Athletics +120",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/yankees-vs-athletics",
@@ -26257,8 +26257,8 @@ export const rawGames = [
       }
     },
     "spread": "+1.5 -205 / +1.5 -191",
-    "total": "o8 -115 / u8 -105",
-    "moneyline": "Phillies +102 / Dodgers -118",
+    "total": "o8 -114 / u8 -105",
+    "moneyline": "Phillies even / Dodgers -118",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/phillies-vs-dodgers",
     "tierTwoContext": {

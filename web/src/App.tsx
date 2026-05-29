@@ -34,6 +34,7 @@ import {
 } from './lib/slate-loaders'
 import kalshiTennisTradeCandidates from './lib/kalshi-tennis-trade-candidates.generated.json' with { type: 'json' }
 import kalshiTennisSpikeModel from './lib/kalshi-tennis-spike-model.generated.json' with { type: 'json' }
+import kalshiMlbMarkets from './lib/kalshi-mlb-markets.generated.json' with { type: 'json' }
 
 type AnyRecord = Record<string, any>
 type DeskTabId = 'board' | 'parlay' | 'tickets' | 'models' | 'history' | 'stories'
@@ -1860,7 +1861,7 @@ function App() {
   const oddsMeta = activeDay?.oddsMeta ?? { snapshot: pacificClock.label }
   const games = activeDay?.games ?? []
   const baseFilterOptions = activeDay?.filters?.length ? activeDay.filters : ['All']
-  const filterOptions = games.some((game: AnyRecord) => game.league === 'Tennis') && !baseFilterOptions.includes('Value')
+  const filterOptions = games.some((game: AnyRecord) => game.league === 'Tennis' || game.league === 'MLB') && !baseFilterOptions.includes('Value')
     ? [...baseFilterOptions, 'Value']
     : baseFilterOptions
   const activeDayIsoDate = activeDay?.slateMeta?.isoDate ?? activeDayShell?.id ?? ''
@@ -2616,7 +2617,7 @@ function App() {
           priceLabel: prop.statValueLabel,
           metaLabel: `${prop.probability}% model`,
           summary: prop.reason || prop.matchupNote,
-          tags: [prop.recommendationTier, prop.propLabel, prop.lineupStatus].filter(Boolean).slice(0, 3),
+          tags: [prop.recommendationTier, prop.propLabel, prop.shadowSupportTag, prop.lineupStatus].filter(Boolean).slice(0, 4),
           invalid: eventState.invalid,
           statusLabel: eventState.label,
           tone: eventState.tone,
@@ -2799,9 +2800,186 @@ function App() {
           ? 'May 29 uses the hardened PM gate: trade rows require mapped Kalshi history plus positive spike EV. No-history rows are forced to pass until a price-history comp exists.'
           : activeDayIsoDate === '2026-05-28'
             ? 'May 28 is pre-match. May 27 backtest: ML value rows went 3-1 with +21.9% flat ROI; spreads went 1-3 and stay downgraded until the next settled pass.'
-            : 'EV is model probability against the posted price. A likely winner can still be a bad bet if the payout is too small.'
+        : 'EV is model probability against the posted price. A likely winner can still be a bad bet if the payout is too small.'
     }
   }, [activeDay, activeDayIsoDate, activeKalshiTradeRows, games])
+
+  const activeKalshiMlbMarketByGame = useMemo(() => {
+    const byDate = (kalshiMlbMarkets as AnyRecord)?.dates?.[activeDayIsoDate]?.byGameId
+    return byDate && typeof byDate === 'object' ? byDate : {}
+  }, [activeDayIsoDate])
+
+  const mlbValueSummary = useMemo(() => {
+    const mlbGames = games.filter((game: AnyRecord) => game.league === 'MLB')
+    if (!mlbGames.length) return null
+
+    const fullyPostedGames = mlbGames.filter(
+      (game: AnyRecord) => game.lineupBoard?.status?.away === 'posted' && game.lineupBoard?.status?.home === 'posted'
+    ).length
+    const partialGames = mlbGames.filter((game: AnyRecord) => {
+      const away = game.lineupBoard?.status?.away
+      const home = game.lineupBoard?.status?.home
+      return away === 'partial' || home === 'partial'
+    }).length
+
+    const sideRows = favoriteCatalogEntries
+      .filter((entry: AnyRecord) => entry.league === 'MLB' && !entry.invalid && payoffIsPlayable(entry))
+      .sort((left: AnyRecord, right: AnyRecord) => right.sortEdge - left.sortEdge || right.confidence - left.confidence)
+
+    const totalRows = totalCatalogEntries
+      .filter((entry: AnyRecord) => entry.league === 'MLB' && !entry.invalid && Number(entry.confidence) >= 60)
+      .sort((left: AnyRecord, right: AnyRecord) => right.sortEdge - left.sortEdge || right.confidence - left.confidence)
+
+    const tbBackedRows = propCatalogEntries
+      .filter(
+        (entry: AnyRecord) =>
+          entry.league === 'MLB' &&
+          !entry.invalid &&
+          entry.raw?.propType === 'totalBases' &&
+          entry.raw?.shadowSupportTag === 'TB backed'
+      )
+      .sort((left: AnyRecord, right: AnyRecord) => right.sortConfidence - left.sortConfidence || right.sortEdge - left.sortEdge)
+
+    const tbSoftHeatRows = propCatalogEntries
+      .filter(
+        (entry: AnyRecord) =>
+          entry.league === 'MLB' &&
+          !entry.invalid &&
+          entry.raw?.propType === 'totalBases' &&
+          entry.raw?.shadowSupportTag === 'Soft heat'
+      )
+      .sort((left: AnyRecord, right: AnyRecord) => right.sortConfidence - left.sortConfidence || right.sortEdge - left.sortEdge)
+
+    const strikeoutRows = propCatalogEntries
+      .filter(
+        (entry: AnyRecord) =>
+          entry.league === 'MLB' &&
+          !entry.invalid &&
+          entry.raw?.propType === 'pitcherStrikeouts' &&
+          entry.raw?.lineupStatus === 'posted' &&
+          Number(entry.confidence) >= 72
+      )
+      .sort((left: AnyRecord, right: AnyRecord) => right.sortConfidence - left.sortConfidence || right.sortEdge - left.sortEdge)
+
+    const topRows = [...tbBackedRows, ...strikeoutRows, ...totalRows, ...sideRows]
+      .sort((left: AnyRecord, right: AnyRecord) => right.sortConfidence - left.sortConfidence || right.sortEdge - left.sortEdge)
+      .slice(0, 12)
+
+    return {
+      totalGames: mlbGames.length,
+      fullyPostedGames,
+      partialGames,
+      mappedKalshiGames: Object.keys(activeKalshiMlbMarketByGame).length,
+      sideRows,
+      totalRows,
+      tbBackedRows,
+      tbSoftHeatRows,
+      strikeoutRows,
+      topRows,
+      note:
+        fullyPostedGames === mlbGames.length
+          ? 'MLB value board is the strongest current model-edge board for today: price-sensitive sides, strongest totals, TB-backed bats, posted-lineup K overs, and live Kalshi pricing context.'
+          : `MLB value board is live, but only ${fullyPostedGames}/${mlbGames.length} games are fully posted. TB-backed rows are the cleanest current prop lane; soft-heat rows stay watch-only until more lineups lock.`
+    }
+  }, [activeKalshiMlbMarketByGame, favoriteCatalogEntries, games, propCatalogEntries, totalCatalogEntries])
+
+  const mlbScalpSummary = useMemo(() => {
+    const mlbGames = games.filter((game: AnyRecord) => game.league === 'MLB')
+    if (!mlbGames.length) return null
+
+    const scalpRows = mlbGames
+      .map((game: AnyRecord) => {
+        const firstInning = game.analysis?.mlbProjection?.firstInning
+        if (!firstInning) return null
+
+        const awayRunPct = Number(firstInning.awayRunProbabilityPct)
+        const homeRunPct = Number(firstInning.homeRunProbabilityPct)
+        const pregameNoPct = Number(firstInning.noProbabilityPct)
+        const pregameYesPct = Number(firstInning.yesProbabilityPct)
+        if (![awayRunPct, homeRunPct, pregameNoPct, pregameYesPct].every((value) => Number.isFinite(value))) return null
+
+        const postScorelessTopNoPct = Math.max(0, Math.min(100, 100 - homeRunPct))
+        const maxEntryFor70Pct = (100 - awayRunPct) * 0.7
+        const maxEntryFor75Pct = (100 - awayRunPct) * 0.75
+        const modelFairEdgeAt70 = maxEntryFor70Pct - pregameNoPct
+        const generic50EdgeAt70 = maxEntryFor70Pct - 50
+        const fairMoveOnScorelessTop = postScorelessTopNoPct - pregameNoPct
+        const kalshiFirstInning = activeKalshiMlbMarketByGame[game.id]?.firstInning ?? null
+        const liveNoAskPct = Number(kalshiFirstInning?.noAskCents)
+        const liveYesAskPct = Number(kalshiFirstInning?.yesAskCents)
+        const hasLiveNoAsk = Number.isFinite(liveNoAskPct)
+        const entryNoAskPct = hasLiveNoAsk ? liveNoAskPct : 50
+        const liveEntryEdgeAt70 = maxEntryFor70Pct - entryNoAskPct
+
+        const teams = Array.isArray(game.matchup) ? game.matchup : []
+        const awayTeam = teams[0]?.name || game.title?.split('@')[0]?.trim() || 'Away'
+        const homeTeam = teams[1]?.name || game.title?.split('@')[1]?.trim() || 'Home'
+
+        const reaches70Fairly = postScorelessTopNoPct >= 70
+        const generic50Ready = reaches70Fairly && liveEntryEdgeAt70 >= 0
+        const cheapEntryOnly = reaches70Fairly && liveEntryEdgeAt70 < 0
+        const take70IfOffered = postScorelessTopNoPct < 70
+        const seventyTooCheap = postScorelessTopNoPct >= 78
+
+        let scalpLabel = 'Scalp watch'
+        if (generic50Ready) scalpLabel = seventyTooCheap ? 'Current NO ask works · 70 too cheap' : 'Current NO ask works'
+        else if (cheapEntryOnly) scalpLabel = seventyTooCheap ? 'Needs cheaper entry · 70 too cheap' : 'Needs cheaper entry'
+        else if (take70IfOffered) scalpLabel = '70c take-it if offered'
+
+        return {
+          id: `${game.id}-nrfi-scalp`,
+          gameId: game.id,
+          title: game.title,
+          awayTeam,
+          homeTeam,
+          pregameNoPct,
+          pregameYesPct,
+          awayRunPct,
+          homeRunPct,
+          postScorelessTopNoPct,
+          maxEntryFor70Pct,
+          maxEntryFor75Pct,
+          modelFairEdgeAt70,
+          generic50EdgeAt70,
+          entryNoAskPct,
+          liveYesAskPct,
+          liveEntryEdgeAt70,
+          hasLiveNoAsk,
+          fairMoveOnScorelessTop,
+          reaches70Fairly,
+          generic50Ready,
+          cheapEntryOnly,
+          take70IfOffered,
+          seventyTooCheap,
+          scalpLabel,
+          score:
+            (generic50Ready ? 20 : 0) +
+            Math.max(0, postScorelessTopNoPct - 70) +
+            Math.max(0, generic50EdgeAt70) * 1.5 +
+            Math.max(0, fairMoveOnScorelessTop - 20) * 0.5,
+          summary:
+            `NO fair ${formatNumber(pregameNoPct, 1)}c -> ${formatNumber(postScorelessTopNoPct, 1)}c after scoreless top · max ${formatNumber(maxEntryFor70Pct, 1)}c for a 70c exit`,
+          detail:
+            `${awayTeam} top-1 score ${formatPercent(awayRunPct, 1)}% · ${homeTeam} bottom-1 score ${formatPercent(homeRunPct, 1)}% · ${hasLiveNoAsk ? `Kalshi NO ask ${formatNumber(entryNoAskPct, 1)}c` : 'live NO ask unavailable'}`
+        }
+      })
+      .filter(Boolean)
+      .sort((left: AnyRecord, right: AnyRecord) => Number(right.score || 0) - Number(left.score || 0))
+
+    const generic50ReadyRows = scalpRows.filter((row: AnyRecord) => row.generic50Ready)
+    const cheapEntryRows = scalpRows.filter((row: AnyRecord) => row.cheapEntryOnly)
+    const take70Rows = scalpRows.filter((row: AnyRecord) => row.take70IfOffered)
+
+    return {
+      totalGames: mlbGames.length,
+      scalpRows,
+      generic50ReadyRows,
+      cheapEntryRows,
+      take70Rows,
+      note:
+        'Scalp board assumes a pregame NRFI / NO entry and asks what happens if the top 1st stays scoreless. When Kalshi first-inning pricing is mapped, it uses the live NO ask; otherwise it falls back to a generic 50c reference entry and a 70c target exit.'
+    }
+  }, [activeKalshiMlbMarketByGame, games])
 
   const parlayLegs = useMemo(() => {
     return Object.entries(selectedPicks)
@@ -2999,6 +3177,7 @@ function App() {
 
   const renderMlbDetail = (game: AnyRecord) => {
     const projection = game.analysis?.mlbProjection
+    const kalshiContext = activeKalshiMlbMarketByGame[game.id] ?? null
     const featuredProps = game.playerProps?.featured ?? []
     const allTrackedProps = game.playerProps?.targets ?? featuredProps
     const findPitcherStrikeoutProp = (pitcherName: string) =>
@@ -3092,6 +3271,24 @@ function App() {
     const homeMatchupHistory = game.stateContext?.matchupInningHistory?.home ?? []
     const gameStory = buildMlbGameStory({ game, projection, awayTeam, homeTeam })
     const totals = projection?.totals
+    const formatKalshiQuote = (row: AnyRecord | null | undefined) => {
+      if (!row) return 'N/A'
+      const yesAsk = Number(row.yesAskCents)
+      const noAsk = Number(row.noAskCents)
+      if (Number.isFinite(yesAsk) && Number.isFinite(noAsk)) return `${formatNumber(yesAsk, 0)}c / ${formatNumber(noAsk, 0)}c`
+      if (Number.isFinite(yesAsk)) return `${formatNumber(yesAsk, 0)}c YES`
+      if (Number.isFinite(noAsk)) return `${formatNumber(noAsk, 0)}c NO`
+      return 'N/A'
+    }
+    const kalshiWinnerAway = kalshiContext?.winner?.rows?.find((row: AnyRecord) => row.side === 'away') ?? null
+    const kalshiWinnerHome = kalshiContext?.winner?.rows?.find((row: AnyRecord) => row.side === 'home') ?? null
+    const kalshiF5Away = kalshiContext?.first5Winner?.rows?.find((row: AnyRecord) => row.side === 'away') ?? null
+    const kalshiF5Home = kalshiContext?.first5Winner?.rows?.find((row: AnyRecord) => row.side === 'home') ?? null
+    const kalshiF5Tie = kalshiContext?.first5Winner?.rows?.find((row: AnyRecord) => row.side === 'tie') ?? null
+    const kalshiTotal = kalshiContext?.total?.selected ?? null
+    const kalshiFirstInning = kalshiContext?.firstInning ?? null
+    const kalshiFirst5Total = kalshiContext?.first5Total?.selected ?? null
+    const kalshiSpread = kalshiContext?.spread?.selected ?? null
     const totalsCards = totals
       ? [
           {
@@ -3346,7 +3543,7 @@ function App() {
                 <div>
                   <strong>{homeTeam}</strong>
                   <small>{buildTeamContextSummary(game.teamContext?.home)}</small>
-                  {renderRecentGamesStrip(homeTeam, homeRecentGames)}
+        {renderRecentGamesStrip(homeTeam, homeRecentGames)}
                   {homeSnapshotChips.length ? (
                     <div className="pitcher-summary-chip-row secondary team-snapshot-chip-row">
                       {homeSnapshotChips.map((stat) => (
@@ -3439,6 +3636,79 @@ function App() {
             ) : null}
           </article>
         </section>
+
+        {kalshiContext ? (
+          <section className="detail-panel">
+            <div className="detail-panel-header">
+              <p className="eyebrow">Kalshi markets</p>
+              <span>{(kalshiMlbMarkets as AnyRecord).source || 'Kalshi external API'}</span>
+            </div>
+            <p className="react-section-copy">
+              Live Kalshi snapshot for this matchup. Prices are shown as YES / NO ask when available.
+            </p>
+            <div className="react-card-grid compact">
+              <article className="react-prop-card odds-market-card">
+                <div>
+                  <strong>Winner</strong>
+                  <small>{kalshiContext.title}</small>
+                </div>
+                <p>{awayTeam}: {formatKalshiQuote(kalshiWinnerAway)}</p>
+                <p>{homeTeam}: {formatKalshiQuote(kalshiWinnerHome)}</p>
+              </article>
+              {kalshiTotal ? (
+                <article className="react-prop-card odds-market-card">
+                  <div>
+                    <strong>Total</strong>
+                    <small>{kalshiTotal.label}</small>
+                  </div>
+                  <p>Over / under {formatKalshiQuote(kalshiTotal)}</p>
+                  <small>{kalshiTotal.rules}</small>
+                </article>
+              ) : null}
+              {kalshiFirstInning ? (
+                <article className="react-prop-card odds-market-card">
+                  <div>
+                    <strong>1st inning</strong>
+                    <small>YRFI / NRFI</small>
+                  </div>
+                  <p>YRFI / NRFI {formatKalshiQuote(kalshiFirstInning)}</p>
+                  <small>{kalshiFirstInning.rules}</small>
+                </article>
+              ) : null}
+              {(kalshiF5Away || kalshiF5Home || kalshiF5Tie) ? (
+                <article className="react-prop-card odds-market-card">
+                  <div>
+                    <strong>First 5 winner</strong>
+                    <small>YES prices</small>
+                  </div>
+                  {kalshiF5Away ? <p>{awayTeam}: {formatKalshiQuote(kalshiF5Away)}</p> : null}
+                  {kalshiF5Home ? <p>{homeTeam}: {formatKalshiQuote(kalshiF5Home)}</p> : null}
+                  {kalshiF5Tie ? <p>Tie: {formatKalshiQuote(kalshiF5Tie)}</p> : null}
+                </article>
+              ) : null}
+              {kalshiFirst5Total ? (
+                <article className="react-prop-card odds-market-card">
+                  <div>
+                    <strong>First 5 total</strong>
+                    <small>{kalshiFirst5Total.label}</small>
+                  </div>
+                  <p>Over / under {formatKalshiQuote(kalshiFirst5Total)}</p>
+                  <small>{kalshiFirst5Total.rules}</small>
+                </article>
+              ) : null}
+              {kalshiSpread ? (
+                <article className="react-prop-card odds-market-card">
+                  <div>
+                    <strong>Spread</strong>
+                    <small>{kalshiSpread.title}</small>
+                  </div>
+                  <p>{formatKalshiQuote(kalshiSpread)}</p>
+                  <small>{kalshiSpread.rules}</small>
+                </article>
+              ) : null}
+            </div>
+          </section>
+        ) : null}
 
         {projection ? (
           <section className="detail-panel">
@@ -3785,6 +4055,13 @@ function App() {
                     <span>{prop.confidence}%</span>
                   </div>
                   <p>{prop.marketLabel}</p>
+                  {prop.shadowSupportTag ? (
+                    <div className="react-pill-row">
+                      <span className={`game-highlight-chip ${prop.shadowSupportLevel === 'backed' ? 'accent' : 'warning'}`}>
+                        {prop.shadowSupportTag}
+                      </span>
+                    </div>
+                  ) : null}
                   <small>{prop.statValueLabel}</small>
                   <small>{prop.reason}</small>
                 </article>
@@ -5230,124 +5507,303 @@ function App() {
                   <p>The day module is loading on demand so the initial app bundle can stay lighter.</p>
                 </div>
               ) : activeFilter === 'Value' ? (
-                tennisValueSummary ? (
-                  <section className="tennis-value-slate-card">
-                    <div className="tennis-value-slate-head">
-                      <div>
-                        <p className="eyebrow">Tennis value board</p>
-                        <h3>{activeDayIsoDate} EV pass</h3>
-                      </div>
-                      <span>{tennisValueSummary.pricedRows}/{tennisValueSummary.totalRows} priced</span>
-                    </div>
-                    <p>{tennisValueSummary.note}</p>
-                    <div className="tennis-value-pill-row">
-                      <span>Validated {tennisValueSummary.validatedRows?.length || 0}</span>
-                      <span>PM trades {tennisValueSummary.kalshiTradeCandidates?.length || 0}</span>
-                      <span>PM watch {tennisValueSummary.kalshiWatchRows?.length || 0}</span>
-                      <span>PM pass {tennisValueSummary.kalshiPassRows?.length || 0}</span>
-                      <span>No history {tennisValueSummary.kalshiNoHistoryRows?.length || 0}</span>
-                      <span>Watch EV {tennisValueSummary.rawPositiveRows?.length || 0}</span>
-                      <span>Thin {tennisValueSummary.countByGrade['Thin value'] || 0}</span>
-                      <span>Negative EV {tennisValueSummary.countByGrade['Negative EV'] || 0}</span>
-                      <span>Need price {tennisValueSummary.noPriceRows}</span>
-                    </div>
-                    {tennisValueSummary.validatedRows?.length ? (
-                      <div className="tennis-value-list">
-                        <div className="tennis-value-section-label">Winner / sportsbook EV</div>
-                        {tennisValueSummary.validatedRows.slice(0, 5).map((row: AnyRecord) => (
-                          <button
-                            key={`${row.game.id}-${row.label}-${row.value}`}
-                            type="button"
-                            className="tennis-value-row"
-                            onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.game.id }))}
-                          >
-                            <span>
-                              <strong>{formatTennisValueSelection(row)}</strong>
-                              <small>{row.validity?.label || row.marketType} · {row.gameTitle}</small>
-                            </span>
-                            <span>
-                              <strong>{formatSignedNumber(row.evPer100, 1)}</strong>
-                              <small>EV/100</small>
-                            </span>
-                          </button>
-                        ))}
-                      </div>
-                    ) : (
-                      <p className="tennis-value-warning">
-                        No blind-bet sportsbook values pass validation. PM rows below are separate trade-to-sell candidates;
-                        rows without mapped Kalshi history are pass-only and should not be sized from generic matchup text.
-                      </p>
-                    )}
-                    {tennisValueSummary.kalshiTradeCandidates?.length ? (
-                      <div className="tennis-value-list tennis-trade-list">
-                        <div className="tennis-value-section-label">Prediction market trade-to-sell</div>
-                        {tennisValueSummary.kalshiTradeCandidates
-                          .slice(0, 6)
-                          .map((row: AnyRecord) => (
-                          <button
-                            key={`${row.marketTicker}-${row.boardMatchId}`}
-                            type="button"
-                            className="tennis-value-row tennis-value-row--trade"
-                            onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.game.id }))}
-                          >
-                            <span>
-                              <strong>{row.selection} {Math.round(Number(row.yesAsk || 0) * 100)}c</strong>
-                              <small>
-                                Target {Math.round(Number(row.spikeModelTarget25x ?? row.projectedExit ?? 0) * 100)}c · hist {row.sameFavoriteHistoryCount}/{row.similarEntryHistoryCount} · {row.gameTitle}
-                              </small>
-                            </span>
-                            <span>
-                              <strong>{formatSignedNumber(Number(row.spikeModelEvPctOfEntry25x ?? row.tradeEvPctOfEntry ?? 0) * 100, 0)}%</strong>
-                              <small>
-                                {(row.spikeModelTier || row.candidateTier || 'watch')} · {formatPercent(Number(row.spikeModelProbability25x ?? row.targetHitProbability ?? 0) * 100, 0)}
-                              </small>
-                            </span>
-                          </button>
-                        ))}
-                      </div>
+                tennisValueSummary || mlbValueSummary || mlbScalpSummary ? (
+                  <>
+                    {tennisValueSummary ? (
+                      <section className="tennis-value-slate-card">
+                        <div className="tennis-value-slate-head">
+                          <div>
+                            <p className="eyebrow">Tennis value board</p>
+                            <h3>{activeDayIsoDate} EV pass</h3>
+                          </div>
+                          <span>{tennisValueSummary.pricedRows}/{tennisValueSummary.totalRows} priced</span>
+                        </div>
+                        <p>{tennisValueSummary.note}</p>
+                        <div className="tennis-value-pill-row">
+                          <span>Validated {tennisValueSummary.validatedRows?.length || 0}</span>
+                          <span>PM trades {tennisValueSummary.kalshiTradeCandidates?.length || 0}</span>
+                          <span>PM watch {tennisValueSummary.kalshiWatchRows?.length || 0}</span>
+                          <span>PM pass {tennisValueSummary.kalshiPassRows?.length || 0}</span>
+                          <span>No history {tennisValueSummary.kalshiNoHistoryRows?.length || 0}</span>
+                          <span>Watch EV {tennisValueSummary.rawPositiveRows?.length || 0}</span>
+                          <span>Thin {tennisValueSummary.countByGrade['Thin value'] || 0}</span>
+                          <span>Negative EV {tennisValueSummary.countByGrade['Negative EV'] || 0}</span>
+                          <span>Need price {tennisValueSummary.noPriceRows}</span>
+                        </div>
+                        {tennisValueSummary.validatedRows?.length ? (
+                          <div className="tennis-value-list">
+                            <div className="tennis-value-section-label">Winner / sportsbook EV</div>
+                            {tennisValueSummary.validatedRows.slice(0, 5).map((row: AnyRecord) => (
+                              <button
+                                key={`${row.game.id}-${row.label}-${row.value}`}
+                                type="button"
+                                className="tennis-value-row"
+                                onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.game.id }))}
+                              >
+                                <span>
+                                  <strong>{formatTennisValueSelection(row)}</strong>
+                                  <small>{row.validity?.label || row.marketType} · {row.gameTitle}</small>
+                                </span>
+                                <span>
+                                  <strong>{formatSignedNumber(row.evPer100, 1)}</strong>
+                                  <small>EV/100</small>
+                                </span>
+                              </button>
+                            ))}
+                          </div>
+                        ) : (
+                          <p className="tennis-value-warning">
+                            No blind-bet sportsbook values pass validation. PM rows below are separate trade-to-sell candidates;
+                            rows without mapped Kalshi history are pass-only and should not be sized from generic matchup text.
+                          </p>
+                        )}
+                        {tennisValueSummary.kalshiTradeCandidates?.length ? (
+                          <div className="tennis-value-list tennis-trade-list">
+                            <div className="tennis-value-section-label">Prediction market trade-to-sell</div>
+                            {tennisValueSummary.kalshiTradeCandidates
+                              .slice(0, 6)
+                              .map((row: AnyRecord) => (
+                              <button
+                                key={`${row.marketTicker}-${row.boardMatchId}`}
+                                type="button"
+                                className="tennis-value-row tennis-value-row--trade"
+                                onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.game.id }))}
+                              >
+                                <span>
+                                  <strong>{row.selection} {Math.round(Number(row.yesAsk || 0) * 100)}c</strong>
+                                  <small>
+                                    Target {Math.round(Number(row.spikeModelTarget25x ?? row.projectedExit ?? 0) * 100)}c · hist {row.sameFavoriteHistoryCount}/{row.similarEntryHistoryCount} · {row.gameTitle}
+                                  </small>
+                                </span>
+                                <span>
+                                  <strong>{formatSignedNumber(Number(row.spikeModelEvPctOfEntry25x ?? row.tradeEvPctOfEntry ?? 0) * 100, 0)}%</strong>
+                                  <small>
+                                    {(row.spikeModelTier || row.candidateTier || 'watch')} · {formatPercent(Number(row.spikeModelProbability25x ?? row.targetHitProbability ?? 0) * 100, 0)}
+                                  </small>
+                                </span>
+                              </button>
+                            ))}
+                          </div>
+                        ) : null}
+                        {tennisValueSummary.kalshiWatchRows?.length ? (
+                          <div className="tennis-value-list tennis-trade-list">
+                            <div className="tennis-value-section-label">Prediction market watchlist</div>
+                            {tennisValueSummary.kalshiWatchRows
+                              .slice(0, 4)
+                              .map((row: AnyRecord) => (
+                              <button
+                                key={`${row.marketTicker}-${row.boardMatchId}-watch`}
+                                type="button"
+                                className="tennis-value-row tennis-value-row--trade"
+                                onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.game.id }))}
+                              >
+                                <span>
+                                  <strong>{row.selection} {Math.round(Number(row.yesAsk || 0) * 100)}c</strong>
+                                  <small>
+                                    Watch target {Math.round(Number(row.spikeModelTarget25x ?? row.projectedExit ?? 0) * 100)}c · hist {row.sameFavoriteHistoryCount}/{row.similarEntryHistoryCount} · {row.gameTitle}
+                                  </small>
+                                </span>
+                                <span>
+                                  <strong>{formatSignedNumber(Number(row.spikeModelEvPctOfEntry25x ?? row.tradeEvPctOfEntry ?? 0) * 100, 0)}%</strong>
+                                  <small>{formatPercent(Number(row.spikeModelProbability25x ?? row.targetHitProbability ?? 0) * 100, 0)} target hit</small>
+                                </span>
+                              </button>
+                            ))}
+                          </div>
+                        ) : null}
+                        {tennisValueSummary.kalshiNoHistoryRows?.length ? (
+                          <small className="tennis-value-warning">
+                            No-history PM pass: {tennisValueSummary.kalshiNoHistoryRows.slice(0, 4).map((row: AnyRecord) => row.selection).join(' · ')}
+                          </small>
+                        ) : null}
+                        {tennisValueSummary.negativeMlRows.length ? (
+                          <small className="tennis-value-warning">
+                            ML traps: {tennisValueSummary.negativeMlRows.slice(0, 3).map((row: AnyRecord) => `${row.selection} ${formatSignedNumber(row.evPer100, 1)}`).join(' · ')}
+                          </small>
+                        ) : null}
+                      </section>
                     ) : null}
-                    {tennisValueSummary.kalshiWatchRows?.length ? (
-                      <div className="tennis-value-list tennis-trade-list">
-                        <div className="tennis-value-section-label">Prediction market watchlist</div>
-                        {tennisValueSummary.kalshiWatchRows
-                          .slice(0, 4)
-                          .map((row: AnyRecord) => (
-                          <button
-                            key={`${row.marketTicker}-${row.boardMatchId}-watch`}
-                            type="button"
-                            className="tennis-value-row tennis-value-row--trade"
-                            onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.game.id }))}
-                          >
-                            <span>
-                              <strong>{row.selection} {Math.round(Number(row.yesAsk || 0) * 100)}c</strong>
-                              <small>
-                                Watch target {Math.round(Number(row.spikeModelTarget25x ?? row.projectedExit ?? 0) * 100)}c · hist {row.sameFavoriteHistoryCount}/{row.similarEntryHistoryCount} · {row.gameTitle}
-                              </small>
-                            </span>
-                            <span>
-                              <strong>{formatSignedNumber(Number(row.spikeModelEvPctOfEntry25x ?? row.tradeEvPctOfEntry ?? 0) * 100, 0)}%</strong>
-                              <small>{formatPercent(Number(row.spikeModelProbability25x ?? row.targetHitProbability ?? 0) * 100, 0)} target hit</small>
-                            </span>
-                          </button>
-                        ))}
-                      </div>
+                    {mlbValueSummary ? (
+                      <section className="tennis-value-slate-card">
+                        <div className="tennis-value-slate-head">
+                          <div>
+                            <p className="eyebrow">MLB value board</p>
+                            <h3>{activeDayIsoDate} strongest current edges</h3>
+                          </div>
+                          <span>{mlbValueSummary.fullyPostedGames}/{mlbValueSummary.totalGames} fully posted</span>
+                        </div>
+                        <p>{mlbValueSummary.note}</p>
+                        <div className="tennis-value-pill-row">
+                          <span>Sides {mlbValueSummary.sideRows.length}</span>
+                          <span>Totals {mlbValueSummary.totalRows.length}</span>
+                          <span>TB backed {mlbValueSummary.tbBackedRows.length}</span>
+                          <span>Soft heat {mlbValueSummary.tbSoftHeatRows.length}</span>
+                          <span>Pitcher K {mlbValueSummary.strikeoutRows.length}</span>
+                          <span>Kalshi {mlbValueSummary.mappedKalshiGames}</span>
+                          <span>Partials {mlbValueSummary.partialGames}</span>
+                        </div>
+                        {mlbValueSummary.topRows.length ? (
+                          <div className="tennis-value-list">
+                            <div className="tennis-value-section-label">Best current board edges</div>
+                            {mlbValueSummary.topRows.slice(0, 8).map((row: AnyRecord) => (
+                              <button
+                                key={`${row.id}-mlb-value`}
+                                type="button"
+                                className="tennis-value-row"
+                                onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
+                              >
+                                <span>
+                                  <strong>{row.title}</strong>
+                                  <small>{row.subtitle} · {row.priceLabel || row.metaLabel}</small>
+                                </span>
+                                <span>
+                                  <strong>{row.confidence}%</strong>
+                                  <small>{row.tags?.join(' · ') || row.metaLabel}</small>
+                                </span>
+                              </button>
+                            ))}
+                          </div>
+                        ) : null}
+                        {mlbValueSummary.tbBackedRows.length ? (
+                          <div className="tennis-value-list">
+                            <div className="tennis-value-section-label">TB backed</div>
+                            {mlbValueSummary.tbBackedRows.slice(0, 5).map((row: AnyRecord) => (
+                              <button
+                                key={`${row.id}-tb-backed`}
+                                type="button"
+                                className="tennis-value-row"
+                                onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
+                              >
+                                <span>
+                                  <strong>{row.title}</strong>
+                                  <small>{row.summary}</small>
+                                </span>
+                                <span>
+                                  <strong>{row.confidence}%</strong>
+                                  <small>{row.priceLabel}</small>
+                                </span>
+                              </button>
+                            ))}
+                          </div>
+                        ) : null}
+                        {mlbValueSummary.strikeoutRows.length ? (
+                          <div className="tennis-value-list">
+                            <div className="tennis-value-section-label">Posted-lineup K overs</div>
+                            {mlbValueSummary.strikeoutRows.slice(0, 5).map((row: AnyRecord) => (
+                              <button
+                                key={`${row.id}-k-value`}
+                                type="button"
+                                className="tennis-value-row"
+                                onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
+                              >
+                                <span>
+                                  <strong>{row.title}</strong>
+                                  <small>{row.summary}</small>
+                                </span>
+                                <span>
+                                  <strong>{row.confidence}%</strong>
+                                  <small>{row.priceLabel}</small>
+                                </span>
+                              </button>
+                            ))}
+                          </div>
+                        ) : null}
+                        {mlbValueSummary.tbSoftHeatRows.length ? (
+                          <small className="tennis-value-warning">
+                            Soft-heat watchlist: {mlbValueSummary.tbSoftHeatRows.slice(0, 5).map((row: AnyRecord) => row.raw?.playerName || row.title).join(' · ')}
+                          </small>
+                        ) : null}
+                      </section>
                     ) : null}
-                    {tennisValueSummary.kalshiNoHistoryRows?.length ? (
-                      <small className="tennis-value-warning">
-                        No-history PM pass: {tennisValueSummary.kalshiNoHistoryRows.slice(0, 4).map((row: AnyRecord) => row.selection).join(' · ')}
-                      </small>
+                    {mlbScalpSummary ? (
+                      <section className="tennis-value-slate-card">
+                        <div className="tennis-value-slate-head">
+                          <div>
+                            <p className="eyebrow">MLB 1st-inning scalp board</p>
+                            <h3>{activeDayIsoDate} NRFI / NO scalp map</h3>
+                          </div>
+                          <span>{mlbScalpSummary.scalpRows.length}/{mlbScalpSummary.totalGames} mapped</span>
+                        </div>
+                        <p>{mlbScalpSummary.note}</p>
+                        <div className="tennis-value-pill-row">
+                          <span>Live ask works {mlbScalpSummary.generic50ReadyRows.length}</span>
+                          <span>Need cheaper entry {mlbScalpSummary.cheapEntryRows.length}</span>
+                          <span>70c take-it {mlbScalpSummary.take70Rows.length}</span>
+                        </div>
+                        {mlbScalpSummary.generic50ReadyRows.length ? (
+                          <div className="tennis-value-list">
+                            <div className="tennis-value-section-label">Current NO ask already works</div>
+                            {mlbScalpSummary.generic50ReadyRows.slice(0, 5).map((row: AnyRecord) => (
+                              <button
+                                key={`${row.id}-generic50`}
+                                type="button"
+                                className="tennis-value-row"
+                                onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
+                              >
+                                <span>
+                                  <strong>{row.title}</strong>
+                                  <small>{row.summary}</small>
+                                </span>
+                                <span>
+                                  <strong>{row.scalpLabel}</strong>
+                                  <small>{row.detail}</small>
+                                </span>
+                              </button>
+                            ))}
+                          </div>
+                        ) : null}
+                        {mlbScalpSummary.cheapEntryRows.length ? (
+                          <div className="tennis-value-list">
+                            <div className="tennis-value-section-label">Only if you get a cheaper NO entry</div>
+                            {mlbScalpSummary.cheapEntryRows.slice(0, 5).map((row: AnyRecord) => (
+                              <button
+                                key={`${row.id}-cheap`}
+                                type="button"
+                                className="tennis-value-row"
+                                onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
+                              >
+                                <span>
+                                  <strong>{row.title}</strong>
+                                  <small>{row.summary}</small>
+                                </span>
+                                <span>
+                                  <strong>{`< ${formatNumber(row.maxEntryFor70Pct, 1)}c`}</strong>
+                                  <small>{row.detail}</small>
+                                </span>
+                              </button>
+                            ))}
+                          </div>
+                        ) : null}
+                        {mlbScalpSummary.take70Rows.length ? (
+                          <div className="tennis-value-list">
+                            <div className="tennis-value-section-label">If 70c prints, take it</div>
+                            {mlbScalpSummary.take70Rows.slice(0, 5).map((row: AnyRecord) => (
+                              <button
+                                key={`${row.id}-take70`}
+                                type="button"
+                                className="tennis-value-row"
+                                onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
+                              >
+                                <span>
+                                  <strong>{row.title}</strong>
+                                  <small>{row.summary}</small>
+                                </span>
+                                <span>
+                                  <strong>{`${formatNumber(row.postScorelessTopNoPct, 1)}c fair`}</strong>
+                                  <small>{row.detail}</small>
+                                </span>
+                              </button>
+                            ))}
+                          </div>
+                        ) : null}
+                      </section>
                     ) : null}
-                    {tennisValueSummary.negativeMlRows.length ? (
-                      <small className="tennis-value-warning">
-                        ML traps: {tennisValueSummary.negativeMlRows.slice(0, 3).map((row: AnyRecord) => `${row.selection} ${formatSignedNumber(row.evPer100, 1)}`).join(' · ')}
-                      </small>
-                    ) : null}
-                  </section>
+                  </>
                 ) : (
                   <div className="placeholder-panel compact">
                     <p className="eyebrow">Value board</p>
                     <h3>No value board for this slate</h3>
-                    <p>Once priced tennis rows are present, this tab will show the top EV board.</p>
+                    <p>Once priced tennis rows or MLB edge rows are present, this tab will show the strongest board.</p>
                   </div>
                 )
               ) : visibleGames.length === 0 ? (

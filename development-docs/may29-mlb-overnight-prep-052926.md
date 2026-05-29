@@ -162,6 +162,20 @@ Newest phase-2 hitter findings:
 - the first shadow `hits` bundle:
   - `xBA + sweet-spot + fit + opponent strength`
   - improved rate on a tiny sample only, so it stays research-only for now
+- the stronger shadow `TB` bundle did hold up:
+  - `xSLG >= Q60 + hard-hit >= Q75 + positive opponent-strength delta`
+  - `48.6%` on `35` bets vs `31.0%` baseline
+  - this is the best current candidate for a future live `TB` gate
+
+Newest first-inning gate findings:
+
+- `Quiet + clean NRFI` is the best current NRFI keep lane:
+  - `63.6%` on `11` picks
+- `Pitcher-leak + double-live YRFI` is the best current YRFI keep lane:
+  - `87.5%` on `8` picks
+- `Double-live YRFI` is materially better than `one-side carry YRFI`:
+  - `64.7%` vs `35.7%`
+- `Quiet-shape YRFI` is the current danger bucket and should stay on a short leash
 
 ## 6. Specific flags for today
 

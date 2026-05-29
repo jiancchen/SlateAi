@@ -6387,6 +6387,58 @@ const buildHitterStatcastPropSignal = (trend = null) => {
   }
 }
 
+const buildTotalBasesShadowSignal = ({ hitter = null, weatherProfile = null } = {}) => {
+  if (!hitter) {
+    return {
+      supportTag: null,
+      reason: null,
+      scriptTag: null,
+      supportLevel: 'none'
+    }
+  }
+
+  const trend = hitter.statcastTrend || {}
+  const opponentContext = hitter.opponentContext || {}
+  const rolling7Xslg = Number(trend.rolling7Xslg)
+  const rolling7HardHitPct = Number(trend.rolling7HardHitPct)
+  const weightedTbDelta = Number(opponentContext.totalBasesPerPaWeightDeltaLast10)
+  const pitchTypeGrade = Number(hitter?.metrics?.pitchTypeGrade || 0)
+  const matchupGrade = Number(hitter?.metrics?.matchupGrade || 0)
+  const weatherLift = Number(weatherProfile?.runBoostFirst5 || 0) + Number(weatherProfile?.runBoostLate || 0)
+
+  const xslgReady = Number.isFinite(rolling7Xslg) && rolling7Xslg >= 0.61
+  const hardHitReady = Number.isFinite(rolling7HardHitPct) && rolling7HardHitPct >= 38.3
+  const oppReady = Number.isFinite(weightedTbDelta) && weightedTbDelta > 0
+  const backed = xslgReady && hardHitReady && oppReady
+
+  const extraSupports = []
+  if (pitchTypeGrade >= 1.5) extraSupports.push('arsenal fit')
+  if (matchupGrade >= 2.5) extraSupports.push('starter fit')
+  if (weatherLift >= 0.08) extraSupports.push('weather lift')
+
+  if (backed) {
+    const supportTail = extraSupports.length ? `; ${extraSupports.join(' + ')} supports it too` : ''
+    return {
+      supportTag: 'TB backed',
+      scriptTag: 'tb-backed',
+      supportLevel: 'backed',
+      reason: `TB backed by real damage contact and tougher-opponent hold${supportTail}`
+    }
+  }
+
+  const missing = []
+  if (!xslgReady) missing.push('xSLG')
+  if (!hardHitReady) missing.push('hard-hit')
+  if (!oppReady) missing.push('opponent-strength')
+
+  return {
+    supportTag: 'Soft heat',
+    scriptTag: 'soft-heat',
+    supportLevel: 'soft',
+    reason: `soft heat only: ${missing.slice(0, 2).join(' + ')} support is still thin`
+  }
+}
+
 const calibrateMlbPropConfidence = ({
   config,
   propType,
@@ -6457,6 +6509,7 @@ const buildPropScriptTags = ({
 }) => {
   const tags = []
   const statcastSignal = buildHitterStatcastPropSignal(hitter?.statcastTrend)
+  const tbShadowSignal = propType === 'totalBases' ? buildTotalBasesShadowSignal({ hitter, weatherProfile }) : null
   const topThirdScore = Number(teamScript?.topThirdScore || 50)
   const middleScore = Number(teamScript?.middleScore || 50)
   const depthScore = Number(teamScript?.depthScore || 50)
@@ -6488,6 +6541,7 @@ const buildPropScriptTags = ({
     tags.push('weather-run-lift')
   }
   if (propType === 'homeRun' && homeRunBoost?.target?.scoreBand) tags.push(`hr-${homeRunBoost.target.scoreBand}-lane`)
+  if (propType === 'totalBases' && tbShadowSignal?.scriptTag) tags.push(tbShadowSignal.scriptTag)
   tags.push(...statcastSignal.tags)
 
   return [...new Set(tags)]
@@ -6520,6 +6574,7 @@ const buildMlbPropCandidate = ({
   const teamTrafficFactor = clamp((Number(projectedHits || 8.3) / 8.3) * 0.72 + (Number(projectedRuns || 4.3) / 4.3) * 0.28, 0.68, 1.38)
   const homeRunBoost = getHomeRunTargetBoost(game, teamName, hitter.name)
   const statcastSignal = buildHitterStatcastPropSignal(hitter.statcastTrend)
+  const tbShadowSignal = propType === 'totalBases' ? buildTotalBasesShadowSignal({ hitter, weatherProfile }) : null
   const slotPressure =
     hitter.slot <= 2 ? 1.08 : hitter.slot <= 4 ? 1.12 : hitter.slot <= 6 ? 1.02 : 0.91
   const overperformBoost = (teamScript?.overperformHitters || []).some(
@@ -6639,6 +6694,7 @@ const buildMlbPropCandidate = ({
 
   const reasons = []
   if (hitter.primaryTag) reasons.push(`slot ${hitter.slot} ${hitter.primaryTag}`)
+  if (propType === 'totalBases' && tbShadowSignal?.reason) reasons.push(tbShadowSignal.reason)
   if (propType === 'totalBases' && statcastSignal.tbReason) reasons.push(statcastSignal.tbReason)
   if (propType === 'singles' && statcastSignal.singlesReason) reasons.push(statcastSignal.singlesReason)
   if (propType === 'homeRun' && statcastSignal.hrReason) reasons.push(statcastSignal.hrReason)
@@ -6670,7 +6726,9 @@ const buildMlbPropCandidate = ({
     expectedValue: roundToTenths(expectedValue),
     statValueLabel,
     recommendationTier: confidence >= 79 ? 'Core' : confidence >= 68 ? 'Strong' : 'Lean',
-    reason: reasons.slice(0, 3).join(' | '),
+    shadowSupportTag: propType === 'totalBases' ? tbShadowSignal?.supportTag || null : null,
+    shadowSupportLevel: propType === 'totalBases' ? tbShadowSignal?.supportLevel || null : null,
+    reason: reasons.slice(0, 4).join(' | '),
     scriptTags,
     matchupNote: hitter.matchupNote,
     teamScriptLabel: teamScript?.pressureLabel || '',

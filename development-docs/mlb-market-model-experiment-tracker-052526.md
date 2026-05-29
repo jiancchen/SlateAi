@@ -47,6 +47,7 @@ Reference report:
 |E20|2026-05-29|Hits shadow bundle: `xBA + sweet-spot + fit + opponent strength`|Hits props|Completed|Promising rate, sample too small|Best bundle variants hit `33.3%` but only on `3` bets; keep shadow-only until a larger backtest or looser gate confirms it|
 |E21|2026-05-29|Looser hits shadow-threshold sweep|Hits props|Completed|Did not hold up when broadened|Relaxing the `xBA + sweet-spot + fit + strength delta` gate produced worse-than-baseline hit rates, so the narrow early lift was likely too fragile to trust|
 |E22|2026-05-29|TB shadow sweep: `xSLG + hard-hit + opponent-strength delta`|TB props|Completed|Strongest new shadow candidate so far|Best usable lane was `xSLG >= Q60 + hard-hit >= Q75 + positive opponent-strength delta`: `48.6%` on `35` bets vs `31.0%` baseline|
+|E23|2026-05-29|First-inning keep/fade gate audit|YRFI / NRFI|Completed|Useful selector split found|`Quiet + clean NRFI` hit `63.6%`; `pitcher-leak + double-live YRFI` hit `87.5%` on `8`; `one-side carry YRFI` was a demotion lane at `35.7%`|
 
 ## Honest Baseline Metrics
 

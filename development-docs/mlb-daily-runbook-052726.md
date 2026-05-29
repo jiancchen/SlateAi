@@ -92,6 +92,32 @@ What it does:
 - writes alerts to `data-private/alerts/mlb-probable-changes/YYYY-MM-DD.jsonl`
 - triggers a quick live-slate rebuild and republish when a real change lands
 
+## Kalshi MLB snapshot watcher
+
+Run this when you want to warehouse MLB Kalshi quotes for later scalp research:
+
+```bash
+npm run data:watch:kalshi-mlb-live -- --date YYYY-MM-DD --interval-seconds 60
+```
+
+What it does:
+
+- fetches the current Kalshi MLB markets already mapped to our published game IDs
+- captures quotes into `mlb_kalshi_market_snapshots`
+- writes the raw payload to `data-private/raw/kalshi/mlb/YYYY-MM-DD/`
+- records a warehouse source snapshot under `kalshi.mlb.live`
+
+Important note:
+
+- this is a warehouse-first collector, not a high-frequency trading engine
+- pregame prices are usually stable enough that continuous polling is not the point
+- the useful windows are:
+  - a small pregame window before first pitch
+  - live innings once the game is in progress
+  - optional end-state captures for research
+- use `--include-idle` only when you want a baseline snapshot outside those live windows
+- use `--include-final` only when you want to store final/postgame market states for audit work
+
 ## Daily pattern
 
 ### Before first pitch
