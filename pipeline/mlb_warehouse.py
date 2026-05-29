@@ -997,6 +997,27 @@ CREATE TABLE IF NOT EXISTS mlb_hitter_classic_trend_snapshots (
   PRIMARY KEY (as_of_date, player_id)
 );
 
+CREATE TABLE IF NOT EXISTS mlb_hitter_opponent_context_snapshots (
+  as_of_date TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  player_id INTEGER NOT NULL,
+  player_name TEXT NOT NULL,
+  games_sample_last10 INTEGER NOT NULL,
+  avg_opponent_win_pct_last5_last10 REAL,
+  avg_opponent_run_diff_last5_last10 REAL,
+  avg_opponent_run_diff_per_game_last10 REAL,
+  games_vs_winning_last10 INTEGER,
+  games_vs_positive_run_diff_last10 INTEGER,
+  pa_vs_winning_last10 INTEGER,
+  hits_per_pa_vs_winning_last10 REAL,
+  total_bases_per_pa_vs_winning_last10 REAL,
+  weighted_hits_per_pa_last10 REAL,
+  weighted_total_bases_per_pa_last10 REAL,
+  hits_per_pa_weight_delta_last10 REAL,
+  total_bases_per_pa_weight_delta_last10 REAL,
+  PRIMARY KEY (as_of_date, player_id)
+);
+
 CREATE TABLE IF NOT EXISTS mlb_hitter_statcast_game_logs (
   game_date TEXT NOT NULL,
   game_pk INTEGER NOT NULL,
@@ -1367,6 +1388,10 @@ CREATE INDEX IF NOT EXISTS idx_mlb_hitter_classic_trends_team_date
   ON mlb_hitter_classic_trend_snapshots(team_name, as_of_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_hitter_classic_trends_player_date
   ON mlb_hitter_classic_trend_snapshots(player_id, as_of_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_hitter_opponent_context_team_date
+  ON mlb_hitter_opponent_context_snapshots(team_name, as_of_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_hitter_opponent_context_player_date
+  ON mlb_hitter_opponent_context_snapshots(player_id, as_of_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_team_market_context_daily_team_date
   ON mlb_team_market_context_daily(team_name, as_of_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_team_opponent_quality_daily_team_date
@@ -4922,6 +4947,123 @@ def build_recent_hitter_classic_trend_row(
             delta(last5["total_bases_per_pa"], last10["total_bases_per_pa"]) if last5 else None
         ),
         "strikeout_rate_last5_minus_last10": delta(last5["strikeout_rate"], last10["strikeout_rate"]) if last5 else None,
+    }
+
+
+def build_recent_hitter_opponent_context_row(
+    conn: sqlite3.Connection,
+    as_of_date: str,
+    team_name: str,
+    player_id: int,
+    player_name: str,
+) -> dict[str, Any] | None:
+    recent_rows = conn.execute(
+        """
+        SELECT
+          b.game_pk,
+          b.game_date,
+          b.plate_appearances,
+          b.hits,
+          b.total_bases,
+          s.win_pct_last5 AS opp_win_pct_last5,
+          s.run_diff_last5 AS opp_run_diff_last5,
+          rf.run_diff_per_game AS opp_run_diff_per_game_last10
+        FROM mlb_player_game_batting b
+        LEFT JOIN mlb_team_state_snapshots s
+          ON s.as_of_date = b.game_date
+         AND s.team_name = b.opponent_name
+        LEFT JOIN mlb_team_rolling_form rf
+          ON rf.as_of_date = b.game_date
+         AND rf.team_name = b.opponent_name
+         AND rf.window_games = 10
+        WHERE b.team_name = ?
+          AND b.player_id = ?
+          AND b.game_date < ?
+        ORDER BY b.game_date DESC, b.game_pk DESC
+        LIMIT 10
+        """,
+        (team_name, player_id, as_of_date),
+    ).fetchall()
+
+    if not recent_rows:
+        return None
+
+    total_pa = sum(to_int(row["plate_appearances"]) or 0 for row in recent_rows)
+    total_hits = sum(to_int(row["hits"]) or 0 for row in recent_rows)
+    total_tb = sum(to_int(row["total_bases"]) or 0 for row in recent_rows)
+    raw_hits_per_pa = (total_hits / total_pa) if total_pa else None
+    raw_tb_per_pa = (total_tb / total_pa) if total_pa else None
+
+    weighted_hits_numerator = 0.0
+    weighted_tb_numerator = 0.0
+    weighted_pa_denominator = 0.0
+    opp_win_values: list[float] = []
+    opp_run_diff_values: list[float] = []
+    opp_run_diff10_values: list[float] = []
+    games_vs_winning = 0
+    games_vs_positive_run_diff = 0
+    pa_vs_winning = 0
+    hits_vs_winning = 0
+    tb_vs_winning = 0
+
+    for row in recent_rows:
+        pa = to_int(row["plate_appearances"]) or 0
+        hits = to_int(row["hits"]) or 0
+        total_bases = to_int(row["total_bases"]) or 0
+        opp_win_pct = to_float(row["opp_win_pct_last5"])
+        opp_run_diff = to_float(row["opp_run_diff_last5"])
+        opp_run_diff10 = to_float(row["opp_run_diff_per_game_last10"])
+
+        if opp_win_pct is not None:
+            opp_win_values.append(opp_win_pct)
+        if opp_run_diff is not None:
+            opp_run_diff_values.append(opp_run_diff)
+        if opp_run_diff10 is not None:
+            opp_run_diff10_values.append(opp_run_diff10)
+
+        if opp_win_pct is not None and opp_win_pct >= 0.5:
+            games_vs_winning += 1
+            pa_vs_winning += pa
+            hits_vs_winning += hits
+            tb_vs_winning += total_bases
+
+        if opp_run_diff10 is not None and opp_run_diff10 > 0:
+            games_vs_positive_run_diff += 1
+
+        if pa > 0:
+            weight = 0.5 + (opp_win_pct if opp_win_pct is not None else 0.5)
+            weighted_hits_numerator += hits * weight
+            weighted_tb_numerator += total_bases * weight
+            weighted_pa_denominator += pa * weight
+
+    weighted_hits_per_pa = (weighted_hits_numerator / weighted_pa_denominator) if weighted_pa_denominator else None
+    weighted_tb_per_pa = (weighted_tb_numerator / weighted_pa_denominator) if weighted_pa_denominator else None
+    hits_vs_winning_per_pa = (hits_vs_winning / pa_vs_winning) if pa_vs_winning else None
+    tb_vs_winning_per_pa = (tb_vs_winning / pa_vs_winning) if pa_vs_winning else None
+
+    def delta(weighted_value: float | None, raw_value: float | None, digits: int = 3) -> float | None:
+        if weighted_value is None or raw_value is None:
+            return None
+        return round(weighted_value - raw_value, digits)
+
+    return {
+        "as_of_date": as_of_date,
+        "team_name": team_name,
+        "player_id": player_id,
+        "player_name": player_name,
+        "games_sample_last10": len(recent_rows),
+        "avg_opponent_win_pct_last5_last10": safe_mean(opp_win_values),
+        "avg_opponent_run_diff_last5_last10": safe_mean(opp_run_diff_values),
+        "avg_opponent_run_diff_per_game_last10": safe_mean(opp_run_diff10_values),
+        "games_vs_winning_last10": games_vs_winning,
+        "games_vs_positive_run_diff_last10": games_vs_positive_run_diff,
+        "pa_vs_winning_last10": pa_vs_winning,
+        "hits_per_pa_vs_winning_last10": hits_vs_winning_per_pa,
+        "total_bases_per_pa_vs_winning_last10": tb_vs_winning_per_pa,
+        "weighted_hits_per_pa_last10": weighted_hits_per_pa,
+        "weighted_total_bases_per_pa_last10": weighted_tb_per_pa,
+        "hits_per_pa_weight_delta_last10": delta(weighted_hits_per_pa, raw_hits_per_pa),
+        "total_bases_per_pa_weight_delta_last10": delta(weighted_tb_per_pa, raw_tb_per_pa),
     }
 
 
@@ -8737,6 +8879,137 @@ def refresh_hitter_classic_trend_snapshots(
     conn.commit()
 
 
+def refresh_hitter_opponent_context_snapshots(
+    conn: sqlite3.Connection,
+    through_date: str | None = None,
+    as_of_date: str | None = None,
+) -> None:
+    init_db(conn)
+
+    if as_of_date:
+        dates = [
+            row["game_date"]
+            for row in conn.execute(
+                "SELECT DISTINCT game_date FROM mlb_games WHERE game_date = ? ORDER BY game_date",
+                (as_of_date,),
+            ).fetchall()
+        ]
+        conn.execute("DELETE FROM mlb_hitter_opponent_context_snapshots WHERE as_of_date = ?", (as_of_date,))
+    else:
+        params: tuple[Any, ...] = (through_date,) if through_date else ()
+        date_filter = "WHERE game_date <= ?" if through_date else ""
+        dates = [
+            row["game_date"]
+            for row in conn.execute(
+                f"SELECT DISTINCT game_date FROM mlb_games {date_filter} ORDER BY game_date", params
+            ).fetchall()
+        ]
+        if through_date:
+            conn.execute("DELETE FROM mlb_hitter_opponent_context_snapshots WHERE as_of_date <= ?", (through_date,))
+        else:
+            conn.execute("DELETE FROM mlb_hitter_opponent_context_snapshots")
+
+    for current_date in dates:
+        teams = [
+            row["team_name"]
+            for row in conn.execute(
+                """
+                SELECT away_team AS team_name
+                FROM mlb_games
+                WHERE game_date = ?
+                UNION
+                SELECT home_team AS team_name
+                FROM mlb_games
+                WHERE game_date = ?
+                ORDER BY team_name
+                """,
+                (current_date, current_date),
+            ).fetchall()
+        ]
+
+        for team_name in teams:
+            player_rows = conn.execute(
+                """
+                SELECT
+                  player_id,
+                  player_name,
+                  MAX(game_date) AS last_game_date
+                FROM mlb_player_game_batting
+                WHERE team_name = ?
+                  AND game_date < ?
+                GROUP BY player_id, player_name
+                HAVING julianday(?) - julianday(MAX(game_date)) <= 21
+                ORDER BY last_game_date DESC, player_name ASC
+                """,
+                (team_name, current_date, current_date),
+            ).fetchall()
+
+            for player_row in player_rows:
+                player_id = to_int(player_row["player_id"]) or 0
+                if not player_id:
+                    continue
+                context_row = build_recent_hitter_opponent_context_row(
+                    conn,
+                    current_date,
+                    team_name,
+                    player_id,
+                    player_row["player_name"],
+                )
+                if not context_row:
+                    continue
+                conn.execute(
+                    """
+                    INSERT INTO mlb_hitter_opponent_context_snapshots (
+                      as_of_date, team_name, player_id, player_name,
+                      games_sample_last10, avg_opponent_win_pct_last5_last10,
+                      avg_opponent_run_diff_last5_last10, avg_opponent_run_diff_per_game_last10,
+                      games_vs_winning_last10, games_vs_positive_run_diff_last10,
+                      pa_vs_winning_last10, hits_per_pa_vs_winning_last10,
+                      total_bases_per_pa_vs_winning_last10, weighted_hits_per_pa_last10,
+                      weighted_total_bases_per_pa_last10, hits_per_pa_weight_delta_last10,
+                      total_bases_per_pa_weight_delta_last10
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    ON CONFLICT(as_of_date, player_id) DO UPDATE SET
+                      team_name=excluded.team_name,
+                      player_name=excluded.player_name,
+                      games_sample_last10=excluded.games_sample_last10,
+                      avg_opponent_win_pct_last5_last10=excluded.avg_opponent_win_pct_last5_last10,
+                      avg_opponent_run_diff_last5_last10=excluded.avg_opponent_run_diff_last5_last10,
+                      avg_opponent_run_diff_per_game_last10=excluded.avg_opponent_run_diff_per_game_last10,
+                      games_vs_winning_last10=excluded.games_vs_winning_last10,
+                      games_vs_positive_run_diff_last10=excluded.games_vs_positive_run_diff_last10,
+                      pa_vs_winning_last10=excluded.pa_vs_winning_last10,
+                      hits_per_pa_vs_winning_last10=excluded.hits_per_pa_vs_winning_last10,
+                      total_bases_per_pa_vs_winning_last10=excluded.total_bases_per_pa_vs_winning_last10,
+                      weighted_hits_per_pa_last10=excluded.weighted_hits_per_pa_last10,
+                      weighted_total_bases_per_pa_last10=excluded.weighted_total_bases_per_pa_last10,
+                      hits_per_pa_weight_delta_last10=excluded.hits_per_pa_weight_delta_last10,
+                      total_bases_per_pa_weight_delta_last10=excluded.total_bases_per_pa_weight_delta_last10
+                    """,
+                    (
+                        context_row["as_of_date"],
+                        context_row["team_name"],
+                        context_row["player_id"],
+                        context_row["player_name"],
+                        context_row["games_sample_last10"],
+                        context_row["avg_opponent_win_pct_last5_last10"],
+                        context_row["avg_opponent_run_diff_last5_last10"],
+                        context_row["avg_opponent_run_diff_per_game_last10"],
+                        context_row["games_vs_winning_last10"],
+                        context_row["games_vs_positive_run_diff_last10"],
+                        context_row["pa_vs_winning_last10"],
+                        context_row["hits_per_pa_vs_winning_last10"],
+                        context_row["total_bases_per_pa_vs_winning_last10"],
+                        context_row["weighted_hits_per_pa_last10"],
+                        context_row["weighted_total_bases_per_pa_last10"],
+                        context_row["hits_per_pa_weight_delta_last10"],
+                        context_row["total_bases_per_pa_weight_delta_last10"],
+                    ),
+                )
+
+    conn.commit()
+
+
 def ingest_hitter_statcast_date_range(conn: sqlite3.Connection, start_date: str, end_date: str) -> int:
     init_db(conn)
     start = datetime.strptime(start_date, "%Y-%m-%d").date()
@@ -9926,6 +10199,18 @@ def parse_args() -> argparse.Namespace:
         help="Optional single as-of date to rebuild incrementally without touching earlier classic trend rows.",
     )
 
+    derive_hitter_opponent_context = subparsers.add_parser(
+        "derive-hitter-opponent-context",
+        help="Refresh rolling hitter opponent-strength context snapshots for scheduled teams.",
+    )
+    derive_hitter_opponent_context.add_argument(
+        "--through-date", help="Optional YYYY-MM-DD cutoff. Defaults to every loaded date."
+    )
+    derive_hitter_opponent_context.add_argument(
+        "--as-of-date",
+        help="Optional single as-of date to rebuild incrementally without touching earlier opponent-context rows.",
+    )
+
     derive_market_context = subparsers.add_parser(
         "derive-market-context",
         help="Refresh rolling team market-history and opponent-quality context tables for scheduled teams.",
@@ -10156,6 +10441,16 @@ def main() -> None:
                 print(f"Refreshed hitter classic last-10 trend snapshots through {args.through_date}")
             else:
                 print("Refreshed hitter classic last-10 trend snapshots for all loaded dates")
+            return
+
+        if args.command == "derive-hitter-opponent-context":
+            refresh_hitter_opponent_context_snapshots(conn, args.through_date, args.as_of_date)
+            if args.as_of_date:
+                print(f"Refreshed hitter opponent-strength context snapshots for {args.as_of_date}")
+            elif args.through_date:
+                print(f"Refreshed hitter opponent-strength context snapshots through {args.through_date}")
+            else:
+                print("Refreshed hitter opponent-strength context snapshots for all loaded dates")
             return
 
         if args.command == "derive-market-context":

@@ -359,6 +359,36 @@ What we have already tested from this note:
     - `7d xBA Q4 + sweet-spot Q4 + fit >= +4`
     - `25.0%` hit rate on `12` bets vs `19.1%` baseline
   - read: this is a **shadow-only** candidate until it survives larger samples or a bundle test
+- `E19` Opponent-strength weighted hitter history
+  - result: raw weighted last-10 form was **not** the answer by itself
+  - useful part:
+    - `weighted minus raw hits/PA` improved by `+8.3` points
+    - `weighted minus raw singles proxy` improved by `+6.0` points
+    - `weighted minus raw TB/PA` improved by `+4.8` points
+  - read: the **delta** is better than the weighted raw stat
+- `E20` Shadow `hits` bundle with opponent strength
+  - result: best shadow variants reached `33.3%`, but only on `3` bets
+  - read: that is interesting enough to keep, but nowhere near enough to deploy
+- `E21` Looser `hits` shadow sweep
+  - result: failed
+  - read: once we loosened the gate enough to get a real sample, the rate fell **below baseline**
+  - takeaway: the `hits` lane is still too fragile for live promotion from this idea set
+- `E22` `TB` shadow sweep with `xSLG + hard-hit + opponent-strength delta`
+  - result: strongest new shadow candidate so far
+  - best lane:
+    - `xSLG >= Q60`
+    - `hard-hit >= Q75`
+    - positive opponent-strength delta
+    - `48.6%` on `35` bets vs `31.0%` baseline
+  - read: this is the best candidate to graduate into a larger backtest or shadow deployment next
+
+Current takeaway:
+
+- `last 10` should remain UI/context
+- `xBA` needs help
+- opponent strength helps more as a **correction layer** than as a standalone replacement stat
+- `hits` still looks too fragile
+- `TB` is where the new opponent-strength layer is starting to pay off
 
 So the feedback is still useful, but the first phase-2 tests already showed why we cannot just ship every idea directly into the board.
 

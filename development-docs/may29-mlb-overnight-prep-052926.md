@@ -151,6 +151,18 @@ The newest keeper/fade gates from the overnight pass:
 - `K overs`: best current keep lane is **posted lineup + opponent-whiff-lane + normal starter volume**
 - `K unders`: still weaker than the over lane; keep in caution mode until the sample grows
 
+Newest phase-2 hitter findings:
+
+- `Last 10` classic hitter windows did **not** beat the current short-window baseline for `hits` or `TB`
+- `xBA` alone was weak for `hits`; it only became mildly interesting when paired with:
+  - high sweet-spot contact
+  - positive pitch fit
+- opponent strength helped more as a **correction layer** than as a raw replacement stat
+  - `weighted minus raw hits/PA` was the useful signal, not raw weighted production itself
+- the first shadow `hits` bundle:
+  - `xBA + sweet-spot + fit + opponent strength`
+  - improved rate on a tiny sample only, so it stays research-only for now
+
 ## 6. Specific flags for today
 
 From the new bounceback cohort pass, the current `May 29` teams worth special handling are:

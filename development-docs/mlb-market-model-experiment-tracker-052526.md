@@ -43,6 +43,10 @@ Reference report:
 |E16|2026-05-29|Phase 1 context warehousing: opponent strength + market memory|ML / F5 / Totals / run-production props|Completed|Warehoused, not yet deployed|`mlb_team_opponent_quality_daily` is dense enough to research now; `mlb_team_market_context_daily` moneyline memory is partial and totals memory is blocked until historical totals lines are backfilled|
 |E17|2026-05-29|Classic last-10 hitter windows|Hits / Singles / TB props|Completed|Did not beat last-5 baseline|Raw last-10 box-score form was mostly negative for hits and TB; only longer whiff-rate memory helped singles a bit, so last-10 stays research/UI-only for now|
 |E18|2026-05-29|xBA + sweet-spot + pitch-fit hits gates|Hits props|Completed|Weak alone, small gated lift only|Pure high-xBA buckets were worse than baseline; the only positive isolated gate was `7d xBA Q4 + sweet-spot Q4 + fit >= +4` at `25.0%` on `12` bets, which is shadow-only at best|
+|E19|2026-05-29|Hitter opponent-strength context|Hits / Singles / TB props|Completed|Useful as a delta, weak as raw weighted form|Raw weighted last-10 production was mostly worse than baseline, but `weighted minus raw` deltas were modestly positive: `+8.3` points for hits, `+6.0` for singles, `+4.8` for TB|
+|E20|2026-05-29|Hits shadow bundle: `xBA + sweet-spot + fit + opponent strength`|Hits props|Completed|Promising rate, sample too small|Best bundle variants hit `33.3%` but only on `3` bets; keep shadow-only until a larger backtest or looser gate confirms it|
+|E21|2026-05-29|Looser hits shadow-threshold sweep|Hits props|Completed|Did not hold up when broadened|Relaxing the `xBA + sweet-spot + fit + strength delta` gate produced worse-than-baseline hit rates, so the narrow early lift was likely too fragile to trust|
+|E22|2026-05-29|TB shadow sweep: `xSLG + hard-hit + opponent-strength delta`|TB props|Completed|Strongest new shadow candidate so far|Best usable lane was `xSLG >= Q60 + hard-hit >= Q75 + positive opponent-strength delta`: `48.6%` on `35` bets vs `31.0%` baseline|
 
 ## Honest Baseline Metrics
 
