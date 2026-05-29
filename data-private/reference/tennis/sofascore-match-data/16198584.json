@@ -1,0 +1,726 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/iga-swiatek-magda-linette#id:16198584",
+  "eventId": "16198584",
+  "slateDate": "2026-05-29",
+  "boardMatchId": "rg-w-magda-linette-iga-swiatek-2026-05-29",
+  "boardTitle": "Magda Linette vs Iga Swiatek",
+  "capturedAt": "2026-05-29T02:04:10.817Z",
+  "compactEvent": {
+    "id": 16198584,
+    "slug": "iga-swiatek-magda-linette",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1780048800,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "WTA",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 6,
+      "name": "Round of 32",
+      "slug": "round-of-32",
+      "cupRoundType": 16
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 42289,
+      "name": "Magda Linette",
+      "shortName": "M. Linette",
+      "ranking": 73,
+      "currentRanking": 58,
+      "country": {
+        "alpha2": "PL",
+        "alpha3": "POL",
+        "name": "Poland",
+        "slug": "poland"
+      },
+      "playerTeamInfo": {
+        "height": 1.71,
+        "weight": 59,
+        "plays": "right-handed",
+        "turnedPro": "2009",
+        "prizeCurrent": 421740,
+        "prizeTotal": 7479023,
+        "birthCity": {
+          "name": "Poznan",
+          "country": {
+            "alpha2": "PL",
+            "alpha3": "POL",
+            "name": "Poland",
+            "slug": "poland"
+          },
+          "id": 18944
+        },
+        "residenceCity": {
+          "name": "Poznan",
+          "country": {
+            "alpha2": "PL",
+            "alpha3": "POL",
+            "name": "Poland",
+            "slug": "poland"
+          },
+          "id": 18944
+        },
+        "id": 304,
+        "birthplace": "Poznan, Poland",
+        "birthDateTimestamp": 697852800,
+        "residence": "Poznan, Poland",
+        "prizeCurrentRaw": {
+          "value": 421740,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 7479023,
+          "currency": "EUR"
+        },
+        "currentRanking": 58
+      }
+    },
+    "awayTeam": {
+      "id": 228272,
+      "name": "Iga Swiatek",
+      "shortName": "I. Swiatek",
+      "ranking": 3,
+      "currentRanking": 3,
+      "country": {
+        "alpha2": "PL",
+        "alpha3": "POL",
+        "name": "Poland",
+        "slug": "poland"
+      },
+      "playerTeamInfo": {
+        "height": 1.76,
+        "plays": "right-handed",
+        "turnedPro": "2016",
+        "prizeCurrent": 1433508,
+        "prizeTotal": 39400734,
+        "birthCity": {
+          "name": "Warsaw",
+          "country": {
+            "alpha2": "PL",
+            "alpha3": "POL",
+            "name": "Poland",
+            "slug": "poland"
+          },
+          "id": 18872
+        },
+        "id": 390,
+        "birthplace": "Warsaw, Poland",
+        "birthDateTimestamp": 991267200,
+        "prizeCurrentRaw": {
+          "value": 1433508,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 39400734,
+          "currency": "EUR"
+        },
+        "currentRanking": 3
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "awayTeamSeed": "3",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "WTA",
+              "slug": "wta",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 6,
+              "country": {},
+              "id": 6,
+              "flag": "wta",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "رابطة لاعبات التنس",
+                  "hi": "चैलेंजर",
+                  "bn": "ডব্লিউটিএ",
+                  "ru": "WTA"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "WTA",
+                "slug": "wta",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 6,
+                "country": {},
+                "id": 6,
+                "flag": "wta",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "ar": "رابطة لاعبات التنس",
+                    "hi": "चैलेंजर",
+                    "bn": "ডব্লিউটিএ",
+                    "ru": "WTA"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 11562,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2577,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गारोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185246,
+            "endTimestamp": 1780704000,
+            "startTimestamp": 1779580800,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "رولان غاروس، باريس، فرنسا"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "season": {
+            "name": "French Open Women Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85953
+          },
+          "roundInfo": {
+            "round": 6,
+            "name": "Round of 32",
+            "slug": "round-of-32",
+            "cupRoundType": 16
+          },
+          "customId": "OVqsxpQb",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-philippe-chatrier",
+            "name": "Court Philippe Chatrier",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 17178,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب فيليب شاترييه",
+                "hi": "कोर्ट फिलिप चैट्रियर",
+                "bn": "কোর্ট ফিলিপ চ্যাট্রিয়ার"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court Philippe Chatrier"
+            }
+          },
+          "homeTeam": {
+            "name": "Magda Linette",
+            "slug": "linette-magda",
+            "shortName": "M. Linette",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 11800,
+            "playerTeamInfo": {
+              "height": 1.71,
+              "weight": 59,
+              "plays": "right-handed",
+              "turnedPro": "2009",
+              "prizeCurrent": 421740,
+              "prizeTotal": 7479023,
+              "birthCity": {
+                "name": "Poznan",
+                "country": {
+                  "alpha2": "PL",
+                  "alpha3": "POL",
+                  "name": "Poland",
+                  "slug": "poland"
+                },
+                "id": 18944
+              },
+              "residenceCity": {
+                "name": "Poznan",
+                "country": {
+                  "alpha2": "PL",
+                  "alpha3": "POL",
+                  "name": "Poland",
+                  "slug": "poland"
+                },
+                "id": 18944
+              },
+              "id": 304,
+              "birthplace": "Poznan, Poland",
+              "birthDateTimestamp": 697852800,
+              "residence": "Poznan, Poland",
+              "prizeCurrentRaw": {
+                "value": 421740,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 7479023,
+                "currency": "EUR"
+              },
+              "currentRanking": 58
+            },
+            "nameCode": "LIN",
+            "ranking": 73,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "PL",
+              "alpha3": "POL",
+              "name": "Poland",
+              "slug": "poland"
+            },
+            "id": 42289,
+            "fullName": "Magda Linette",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ماجدا لينيت",
+                "bn": "ম্যাগদা লিনেট",
+                "hi": "मैग्डा लिनेते",
+                "ru": "Линетте, Магда"
+              },
+              "shortNameTranslation": {
+                "ar": "م. لينيت"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Iga Swiatek",
+            "slug": "swiatek-iga",
+            "shortName": "I. Swiatek",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 79742,
+            "playerTeamInfo": {
+              "height": 1.76,
+              "plays": "right-handed",
+              "turnedPro": "2016",
+              "prizeCurrent": 1433508,
+              "prizeTotal": 39400734,
+              "birthCity": {
+                "name": "Warsaw",
+                "country": {
+                  "alpha2": "PL",
+                  "alpha3": "POL",
+                  "name": "Poland",
+                  "slug": "poland"
+                },
+                "id": 18872
+              },
+              "id": 390,
+              "birthplace": "Warsaw, Poland",
+              "birthDateTimestamp": 991267200,
+              "prizeCurrentRaw": {
+                "value": 1433508,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 39400734,
+                "currency": "EUR"
+              },
+              "currentRanking": 3
+            },
+            "nameCode": "SWI",
+            "ranking": 3,
+            "class": 4,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "PL",
+              "alpha3": "POL",
+              "name": "Poland",
+              "slug": "poland"
+            },
+            "id": 228272,
+            "fullName": "Iga Swiatek",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "إيغا سوياتيك",
+                "ru": "Святек, Ига"
+              },
+              "shortNameTranslation": {
+                "ar": "إ. سوياتيك",
+                "bn": "আই সুইটেক",
+                "hi": "आई. स्वियाटेक"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198584,
+          "defaultPeriodCount": 3,
+          "slug": "iga-swiatek-magda-linette",
+          "startTimestamp": 1780048800,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "SG",
+            "IR",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "F"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": {
+          "homeWins": 1,
+          "awayWins": 1,
+          "draws": 0
+        },
+        "managerDuel": null
+      }
+    },
+    "votes": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "vote": {
+          "vote1": 591,
+          "vote2": 4049,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": []
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "home": null,
+        "away": {
+          "fractionalValue": "3/100",
+          "expected": 97,
+          "actual": 89,
+          "id": 22122354
+        }
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "featured": {
+          "default": {
+            "sourceId": 195346469,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195346469,
+            "suspended": false,
+            "id": 312389478,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "14/1",
+                "fractionalValue": "14/1",
+                "sourceId": 1384147006,
+                "name": "1",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "3/100",
+                "fractionalValue": "3/100",
+                "sourceId": 1384147031,
+                "name": "2",
+                "change": 0
+              }
+            ]
+          },
+          "asian": {
+            "sourceId": 195346469,
+            "structureType": 2,
+            "marketId": 12,
+            "marketName": "Total games won",
+            "choiceGroup": "17.5",
+            "isLive": false,
+            "fid": 195346469,
+            "suspended": false,
+            "id": 312422727,
+            "marketGroup": "Total sets/games",
+            "marketPeriod": "Extra time",
+            "choices": [
+              {
+                "initialFractionalValue": "1/1",
+                "fractionalValue": "10/11",
+                "sourceId": 1384270381,
+                "name": "Over",
+                "change": -1
+              },
+              {
+                "initialFractionalValue": "8/11",
+                "fractionalValue": "4/5",
+                "sourceId": 1384270130,
+                "name": "Under",
+                "change": 1
+              }
+            ]
+          },
+          "fullTime": {
+            "sourceId": 195346469,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195346469,
+            "suspended": false,
+            "id": 312389478,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "14/1",
+                "fractionalValue": "14/1",
+                "sourceId": 1384147006,
+                "name": "1",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "3/100",
+                "fractionalValue": "3/100",
+                "sourceId": 1384147031,
+                "name": "2",
+                "change": 0
+              }
+            ]
+          }
+        },
+        "hasMoreOdds": true
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 276,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 1,
+          "wins": 2,
+          "aces": 7,
+          "firstServePointsScored": 85,
+          "firstServePointsTotal": 128,
+          "firstServeTotal": 202,
+          "secondServePointsScored": 35,
+          "secondServePointsTotal": 68,
+          "secondServeTotal": 74,
+          "breakPointsScored": 11,
+          "breakPointsTotal": 22,
+          "opponentBreakPointsTotal": 23,
+          "opponentBreakPointsScored": 9,
+          "winnersTotal": 66,
+          "unforcedErrorsTotal": 38,
+          "doubleFaults": 6,
+          "avgDoubleFaults": 3,
+          "firstServePercentage": 63.366336633663,
+          "firstServePointsWonPercentage": 66.40625,
+          "secondServePercentage": 91.891891891892,
+          "secondServePointsWonPercentage": 47.297297297297,
+          "avgAces": 3.5,
+          "breakPointsSavedPercentage": 60.869565217391,
+          "breakPointsSavedConvertedPercentage": 50,
+          "tiebreakWinPercentage": 100,
+          "id": 93055,
+          "matches": 2,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 141,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 0,
+          "wins": 2,
+          "aces": 1,
+          "firstServePointsScored": 48,
+          "firstServePointsTotal": 67,
+          "firstServeTotal": 104,
+          "secondServePointsScored": 15,
+          "secondServePointsTotal": 30,
+          "secondServeTotal": 37,
+          "breakPointsScored": 13,
+          "breakPointsTotal": 21,
+          "opponentBreakPointsTotal": 9,
+          "opponentBreakPointsScored": 6,
+          "winnersTotal": 32,
+          "unforcedErrorsTotal": 53,
+          "doubleFaults": 7,
+          "avgDoubleFaults": 3.5,
+          "firstServePercentage": 64.423076923077,
+          "firstServePointsWonPercentage": 71.641791044776,
+          "secondServePercentage": 81.081081081081,
+          "secondServePointsWonPercentage": 40.540540540541,
+          "avgAces": 0.5,
+          "breakPointsSavedPercentage": 33.333333333333,
+          "breakPointsSavedConvertedPercentage": 61.904761904762,
+          "tiebreakWinPercentage": 0,
+          "id": 93221,
+          "matches": 2,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    }
+  }
+}

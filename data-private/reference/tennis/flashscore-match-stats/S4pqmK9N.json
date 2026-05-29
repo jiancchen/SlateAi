@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-casper-ruud-hamad-medjedovic-2026-05-27",
+  "boardTitle": "Casper Ruud vs Hamad Medjedovic",
+  "boardPlayerName": "Hamad Medjedovic",
+  "recentOpponentName": "Andrey Rublev",
+  "recentIndex": 5,
+  "recentEvent": "Barcelona",
+  "recentDate": "18 Apr 26",
+  "recentIsoDate": "2026-04-18",
+  "recentResult": "RUS   Loss 3-6 6-2 6-2 1/2",
+  "flashscoreLabel": "Rublev A. - Medjedovic H.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/barcelona/results/",
+  "players": [
+    "Rublev A.",
+    "Medjedovic H."
+  ],
+  "generatedAt": "2026-05-29T01:58:54.327Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/S4pqmK9N/",
+  "matchId": "S4pqmK9N",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_S4pqmK9N",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_S4pqmK9N"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:50"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:30"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:58"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "6",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "71%",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (33/47)",
+              "right": "63% (40/64)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "69% (22/32)",
+              "right": "50% (13/26)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/6",
+              "right": "5/9",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (24/64)",
+              "right": "30% (14/47)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (13/26)",
+              "right": "31% (10/32)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/9",
+              "right": "1/6",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "25",
+              "right": "25",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "38",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Net points won",
+              "left": "47% (7/15)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (57/83)",
+              "right": "59% (53/90)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (37/90)",
+              "right": "31% (26/83)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (94/173)",
+              "right": "46% (79/173)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "92% (11/12)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Return games won",
+              "left": "31% (4/13)",
+              "right": "8% (1/12)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (15/25)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "63%",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (12/20)",
+              "right": "73% (19/26)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (8/13)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "5/5",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (7/26)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (7/15)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/5",
+              "right": "1/4",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "11",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "10",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Net points won",
+              "left": "25% (2/8)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (22/37)",
+              "right": "66% (27/41)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (14/41)",
+              "right": "41% (15/37)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (36/78)",
+              "right": "54% (42/78)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "46%",
+              "right": "80%",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "91% (10/11)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "77% (10/13)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (7/16)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (2/4)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "5",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "11",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "84% (16/19)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (9/21)",
+              "right": "16% (3/19)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (25/40)",
+              "right": "38% (15/40)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "76%",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (11/16)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (4/6)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "0/2",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (10/22)",
+              "right": "19% (3/16)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (4/7)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/2",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "9",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "17",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (19/27)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (14/28)",
+              "right": "30% (8/27)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (33/55)",
+              "right": "40% (22/55)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Medjedovic H."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

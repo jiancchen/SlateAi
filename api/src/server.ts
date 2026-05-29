@@ -69,6 +69,69 @@ app.get('/api/slates', async () => {
   return { slates }
 })
 
+const normalizeSearchText = (value: unknown) =>
+  String(value ?? '')
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/gi, ' ')
+    .trim()
+    .toLowerCase()
+
+const searchScore = (haystack: string, query: string) => {
+  if (!query) return 0
+  if (haystack.includes(query)) return 100 + query.length
+  const terms = query.split(/\s+/).filter(Boolean)
+  const hits = terms.filter((term) => haystack.includes(term)).length
+  return hits ? hits * 20 + Math.round((hits / terms.length) * 20) : 0
+}
+
+app.get('/api/search/slates', async (request) => {
+  const { q, limit } = request.query as { q?: string; limit?: string }
+  const query = normalizeSearchText(q)
+  const maxRows = Math.min(100, Math.max(1, Number(limit) || 40))
+  if (!query) return { query, results: [] }
+
+  const slates = await listSlateManifest()
+  const results: Array<Record<string, unknown>> = []
+  for (const slateShell of slates) {
+    const slate = await loadSlateDay(slateShell.id)
+    for (const game of slate.games ?? []) {
+      const matchup = Array.isArray((game as any).matchup) ? (game as any).matchup : []
+      const haystack = normalizeSearchText([
+        slate.id,
+        slate.label,
+        (game as any).title,
+        (game as any).stage,
+        (game as any).summary,
+        (game as any).winnerName,
+        (game as any).scoreline,
+        (game as any).tennisResult?.winnerName,
+        (game as any).tennisResult?.scoreline,
+        (game as any).analysis?.participant?.name,
+        ...matchup.map((entry: any) => entry?.name || entry?.displayName)
+      ].join(' '))
+      const score = searchScore(haystack, query)
+      if (!score) continue
+      results.push({
+        score,
+        date: slate.id,
+        dateLabel: slate.label,
+        gameId: (game as any).id,
+        league: (game as any).league,
+        title: (game as any).title,
+        stage: (game as any).stage,
+        start: (game as any).start,
+        winnerName: (game as any).winnerName ?? (game as any).tennisResult?.winnerName ?? null,
+        scoreline: (game as any).scoreline ?? (game as any).tennisResult?.scoreline ?? null,
+        resultStatus: (game as any).result?.status ?? (game as any).tennisResult?.status ?? null,
+        confidence: (game as any).analysis?.confidence ?? (game as any).confidence ?? null
+      })
+    }
+  }
+  results.sort((left, right) => Number(right.score) - Number(left.score) || String(right.date).localeCompare(String(left.date)))
+  return { query, results: results.slice(0, maxRows) }
+})
+
 app.get('/api/slates/:date', async (request, reply) => {
   const { date } = request.params as { date: string }
 

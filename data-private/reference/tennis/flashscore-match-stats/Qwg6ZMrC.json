@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-ugo-humbert-quentin-halys-2026-05-27",
+  "boardTitle": "Ugo Humbert vs Quentin Halys",
+  "boardPlayerName": "Ugo Humbert",
+  "recentOpponentName": "Jannik Sinner",
+  "recentIndex": 7,
+  "recentEvent": "Monte-Carlo",
+  "recentDate": "07 Apr 26",
+  "recentIsoDate": "2026-04-07",
+  "recentResult": "ITA   Loss 6-3 6-0 2nd",
+  "flashscoreLabel": "Humbert U. - Sinner J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/monte-carlo/results/",
+  "players": [
+    "Humbert U.",
+    "Sinner J."
+  ],
+  "generatedAt": "2026-05-29T01:58:41.052Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Qwg6ZMrC/",
+  "matchId": "Qwg6ZMrC",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Qwg6ZMrC",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Qwg6ZMrC"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:23"
+      }
+    ],
+    "totalDuration": "1:05"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "6",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "43%",
+              "right": "62%",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "40% (8/20)",
+              "right": "91% (21/23)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (12/27)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/8",
+              "right": "0/0",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "9% (2/23)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (7/14)",
+              "right": "56% (15/27)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "5/8",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "19",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "13",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "43% (20/47)",
+              "right": "76% (28/37)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (9/37)",
+              "right": "57% (27/47)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "35% (29/84)",
+              "right": "65% (55/84)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "1",
+              "right": "9",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "38% (3/8)",
+              "right": "100% (7/7)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/7)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Total games won",
+              "left": "20% (3/15)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "52%",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (8/15)",
+              "right": "100% (11/11)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (10/18)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/11)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "9",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "8",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (18/33)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (5/21)",
+              "right": "45% (15/33)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (23/54)",
+              "right": "57% (31/54)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "36%",
+              "right": "75%",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "0% (0/5)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "22% (2/9)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "0/0",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (2/12)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (2/4)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/4",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "0",
+              "right": "10",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "5",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "14% (2/14)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (4/16)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "20% (6/30)",
+              "right": "80% (24/30)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Humbert U.",
+              "rightPlayer": "Sinner J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

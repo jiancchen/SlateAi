@@ -536,14 +536,14 @@ const buildWeaknessEdge = ({ pickName, opponentName, pickQuality, oppQuality, pi
         : 'Wait for a visible service-pressure split before entering.'
   const spreadRead =
     gap >= 8 && confidence >= 60
-      ? `${pickName} game spread is more interesting than ML if the number is short.`
+      ? `${pickName} spread only if the handicap is short and ${opponentName} is under pressure early.`
       : volatility >= 58
-        ? 'Game spread is fragile; prefer live entry after the first service cycle.'
-        : 'Spread needs the posted number before grading.'
+        ? 'Pre-match spread is fragile; wait for both players to serve once.'
+        : 'No spread edge without a posted handicap and first service-cycle read.'
   const totalRead =
     Math.max(pickWeakness?.weaknessScore || 0, oppWeakness?.weaknessScore || 0) >= 24
-      ? 'Weak service profile points to breaks; be careful with low unders.'
-      : 'No total edge without posted number and first-set hold data.'
+      ? `Avoid low unders if ${target === 'Both sides' ? 'either player' : target} faces early break points or second-serve pressure.`
+      : 'No total edge unless the posted number is low and both players hold comfortably early.'
   return {
     edgeType,
     target,

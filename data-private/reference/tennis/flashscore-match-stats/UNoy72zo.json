@@ -1,25 +1,856 @@
 {
+  "sourceKind": "recent-match",
   "slateDate": "2026-05-27",
-  "boardMatchId": "rg-m-valentin-royer-novak-djokovic-2026-05-27",
-  "boardTitle": "Valentin Royer vs Novak Djokovic",
-  "flashscoreLabel": "Djokovic Novak - Royer Valentin",
-  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
-  "generatedAt": "2026-05-26T23:49:16.499Z",
-  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/djokovic-novak-AZg49Et9/royer-valentin-IFGPWCuI/",
-  "matchId": "UNoy72zo",
+  "boardMatchId": "rg-m-joao-fonseca-novak-djokovic-2026-05-29",
+  "boardTitle": "Joao Fonseca vs Novak Djokovic",
+  "boardPlayerName": "Novak Djokovic",
+  "recentOpponentName": "Valentin Royer",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "27 May 26",
+  "recentIsoDate": "2026-05-27",
+  "recentResult": "FRA  6-3 6-2 6-77 6-3 2nd",
+  "flashscoreLabel": "Royer V. - Djokovic N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
   "players": [
-    "Novak Djokovic",
-    "Valentin Royer"
+    "Royer V.",
+    "Djokovic N."
   ],
+  "generatedAt": "2026-05-29T02:02:41.459Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UNoy72zo/",
+  "matchId": "UNoy72zo",
   "feedUrls": {
     "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UNoy72zo",
     "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UNoy72zo"
   },
   "scoreSummary": {
-    "sets": [],
-    "totalDuration": ""
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 9,
+        "rightGames": 7,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:47"
   },
-  "scopes": [],
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "10",
+              "right": "10",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "9",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "66%",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (46/69)",
+              "right": "78% (69/89)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "51% (21/41)",
+              "right": "47% (21/45)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/9",
+              "right": "5/7",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (20/89)",
+              "right": "33% (23/69)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (24/45)",
+              "right": "49% (20/41)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "6/9",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "40",
+              "right": "46",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "43",
+              "right": "38",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (9/18)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (67/110)",
+              "right": "67% (90/134)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (44/134)",
+              "right": "39% (43/110)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (111/244)",
+              "right": "55% (133/244)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (12/18)",
+              "right": "90% (18/20)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Return games won",
+              "left": "10% (2/20)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Total games won",
+              "left": "37% (14/38)",
+              "right": "63% (24/38)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "80%",
+              "right": "81%",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (12/20)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (2/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (5/22)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "20% (1/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "8",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "4",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Net points won",
+              "left": "25% (1/4)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (14/25)",
+              "right": "78% (21/27)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "22% (6/27)",
+              "right": "44% (11/25)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (20/52)",
+              "right": "62% (32/52)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "64%",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (8/13)",
+              "right": "93% (13/14)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (5/13)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "0/0",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "7% (1/14)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/3",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "11",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "9",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Net points won",
+              "left": "20% (1/5)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (13/26)",
+              "right": "73% (16/22)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (6/22)",
+              "right": "50% (13/26)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (19/48)",
+              "right": "60% (29/48)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "5",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "67%",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (17/23)",
+              "right": "76% (22/29)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (7/12)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "4/6",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (7/29)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (10/14)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "2/2",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "10",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "12",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (24/35)",
+              "right": "60% (26/43)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (17/43)",
+              "right": "31% (11/35)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (41/78)",
+              "right": "47% (37/78)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "57%",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (9/13)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (7/11)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "1/1",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (7/24)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (8/18)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/2",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "17",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "13",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (16/24)",
+              "right": "64% (27/42)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (15/42)",
+              "right": "33% (8/24)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (31/66)",
+              "right": "53% (35/66)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Royer V.",
+              "rightPlayer": "Djokovic N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "notes": [
     "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
     "Service games won and return games won are sourced directly from Flashscore match statistics."

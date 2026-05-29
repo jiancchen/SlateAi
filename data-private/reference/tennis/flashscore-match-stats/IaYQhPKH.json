@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-tamara-korpatsch-wang-xinyu-2026-05-27",
+  "boardTitle": "Tamara Korpatsch vs Wang Xinyu",
+  "boardPlayerName": "Xinyu Wang",
+  "recentOpponentName": "Chloe Paquet",
+  "recentIndex": 7,
+  "recentEvent": "",
+  "recentDate": "14 Apr 26",
+  "recentIsoDate": "2026-04-14",
+  "recentResult": "FRA  3-6 6-4 6-3 1st",
+  "flashscoreLabel": "Paquet C. - Wang Xin.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rouen/results/",
+  "players": [
+    "Paquet C.",
+    "Wang Xin."
+  ],
+  "generatedAt": "2026-05-29T01:57:57.527Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/IaYQhPKH/",
+  "matchId": "IaYQhPKH",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_IaYQhPKH",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_IaYQhPKH"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:53"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:20"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "3",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Double Faults",
+              "left": "7",
+              "right": "1",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "72%",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (47/61)",
+              "right": "68% (44/65)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (13/32)",
+              "right": "68% (17/25)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/9",
+              "right": "3/4",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (21/65)",
+              "right": "23% (14/61)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "32% (8/25)",
+              "right": "59% (19/32)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "2/9",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "65% (60/93)",
+              "right": "68% (61/90)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (29/90)",
+              "right": "35% (33/93)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (89/183)",
+              "right": "51% (94/183)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "86% (12/14)",
+              "right": "93% (13/14)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Return games won",
+              "left": "7% (1/14)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Total games won",
+              "left": "46% (13/28)",
+              "right": "54% (15/28)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "72%",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (17/20)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "1/2",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (6/18)",
+              "right": "15% (3/20)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (2/7)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/1",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "76% (22/29)",
+              "right": "68% (17/25)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (8/25)",
+              "right": "24% (7/29)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (30/54)",
+              "right": "44% (24/54)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "76%",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (17/23)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "22% (2/9)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/1",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (8/26)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/1",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "66% (19/29)",
+              "right": "67% (22/33)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (11/33)",
+              "right": "34% (10/29)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (30/62)",
+              "right": "52% (32/62)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "68%",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (13/18)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (6/14)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/7",
+              "right": "1/1",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (7/21)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "30% (3/10)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/7",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "54% (19/35)",
+              "right": "69% (22/32)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (10/32)",
+              "right": "46% (16/35)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (29/67)",
+              "right": "57% (38/67)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Paquet C.",
+              "rightPlayer": "Wang Xin."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

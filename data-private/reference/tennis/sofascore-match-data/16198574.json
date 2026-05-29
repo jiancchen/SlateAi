@@ -1,0 +1,727 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/peyton-stearns-belinda-bencic#id:16198574",
+  "eventId": "16198574",
+  "slateDate": "2026-05-29",
+  "boardMatchId": "rg-w-peyton-stearns-belinda-bencic-2026-05-29",
+  "boardTitle": "Peyton Stearns vs Belinda Bencic",
+  "capturedAt": "2026-05-29T02:04:12.407Z",
+  "compactEvent": {
+    "id": 16198574,
+    "slug": "peyton-stearns-belinda-bencic",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1780061400,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "WTA",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 6,
+      "name": "Round of 32",
+      "slug": "round-of-32",
+      "cupRoundType": 16
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 261095,
+      "name": "Peyton Stearns",
+      "shortName": "P. Stearns",
+      "ranking": 78,
+      "currentRanking": 59,
+      "country": {
+        "alpha2": "US",
+        "alpha3": "USA",
+        "name": "USA",
+        "slug": "usa"
+      },
+      "playerTeamInfo": {
+        "height": 1.73,
+        "plays": "right-handed",
+        "prizeCurrent": 452281,
+        "prizeTotal": 3292092,
+        "birthCity": {
+          "name": "Cincinnati",
+          "state": "US-OH",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 26746
+        },
+        "id": 3591,
+        "birthplace": "Cincinnati, Ohio, USA",
+        "birthDateTimestamp": 1002499200,
+        "prizeCurrentRaw": {
+          "value": 452281,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 3292092,
+          "currency": "EUR"
+        },
+        "currentRanking": 59
+      }
+    },
+    "awayTeam": {
+      "id": 63957,
+      "name": "Belinda Bencic",
+      "shortName": "B. Bencic",
+      "ranking": 11,
+      "currentRanking": 11,
+      "country": {
+        "alpha2": "CH",
+        "alpha3": "CHE",
+        "name": "Switzerland",
+        "slug": "switzerland"
+      },
+      "playerTeamInfo": {
+        "height": 1.75,
+        "weight": 63,
+        "plays": "right-handed",
+        "turnedPro": "2012",
+        "prizeCurrent": 1270166,
+        "prizeTotal": 14195181,
+        "birthCity": {
+          "name": "Flawil",
+          "country": {
+            "alpha2": "CH",
+            "alpha3": "CHE",
+            "name": "Switzerland",
+            "slug": "switzerland"
+          },
+          "id": 27392
+        },
+        "residenceCity": {
+          "name": "Wollerau",
+          "country": {
+            "alpha2": "CH",
+            "alpha3": "CHE",
+            "name": "Switzerland",
+            "slug": "switzerland"
+          },
+          "id": 36085
+        },
+        "id": 146,
+        "birthplace": "Flawil, Switzerland",
+        "birthDateTimestamp": 857952000,
+        "residence": "Wollerau, Switzerland",
+        "prizeCurrentRaw": {
+          "value": 1270166,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 14195181,
+          "currency": "EUR"
+        },
+        "currentRanking": 11
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "awayTeamSeed": "11",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "WTA",
+              "slug": "wta",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 6,
+              "country": {},
+              "id": 6,
+              "flag": "wta",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "رابطة لاعبات التنس",
+                  "hi": "चैलेंजर",
+                  "bn": "ডব্লিউটিএ",
+                  "ru": "WTA"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "WTA",
+                "slug": "wta",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 6,
+                "country": {},
+                "id": 6,
+                "flag": "wta",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "ar": "رابطة لاعبات التنس",
+                    "hi": "चैलेंजर",
+                    "bn": "ডব্লিউটিএ",
+                    "ru": "WTA"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 11562,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2577,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गारोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185246,
+            "endTimestamp": 1780704000,
+            "startTimestamp": 1779580800,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "رولان غاروس، باريس، فرنسا"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "season": {
+            "name": "French Open Women Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85953
+          },
+          "roundInfo": {
+            "round": 6,
+            "name": "Round of 32",
+            "slug": "round-of-32",
+            "cupRoundType": 16
+          },
+          "customId": "hEAsVwec",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-simonne-mathieu",
+            "name": "Court Simonne Mathieu",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 25283,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب سيمون ماتيو",
+                "hi": "कोर्ट सिमोन मैथ्यू",
+                "bn": "কোর্ট সাইমন ম্যাথিউ"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court Simonne Mathieu"
+            }
+          },
+          "homeTeam": {
+            "name": "Peyton Stearns",
+            "slug": "stearns-peyton",
+            "shortName": "P. Stearns",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 3916,
+            "playerTeamInfo": {
+              "height": 1.73,
+              "plays": "right-handed",
+              "prizeCurrent": 452281,
+              "prizeTotal": 3292092,
+              "birthCity": {
+                "name": "Cincinnati",
+                "state": "US-OH",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 26746
+              },
+              "id": 3591,
+              "birthplace": "Cincinnati, Ohio, USA",
+              "birthDateTimestamp": 1002499200,
+              "prizeCurrentRaw": {
+                "value": 452281,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 3292092,
+                "currency": "EUR"
+              },
+              "currentRanking": 59
+            },
+            "nameCode": "STE",
+            "ranking": 78,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "US",
+              "alpha3": "USA",
+              "name": "USA",
+              "slug": "usa"
+            },
+            "id": 261095,
+            "fullName": "Peyton Stearns",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "بيتون ستيرنز",
+                "bn": "পেটন স্টার্নস",
+                "hi": "पेटन स्टर्न्स"
+              },
+              "shortNameTranslation": {
+                "ar": "ب. ستيرنز"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Belinda Bencic",
+            "slug": "bencic-belinda",
+            "shortName": "B. Bencic",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 11796,
+            "playerTeamInfo": {
+              "height": 1.75,
+              "weight": 63,
+              "plays": "right-handed",
+              "turnedPro": "2012",
+              "prizeCurrent": 1270166,
+              "prizeTotal": 14195181,
+              "birthCity": {
+                "name": "Flawil",
+                "country": {
+                  "alpha2": "CH",
+                  "alpha3": "CHE",
+                  "name": "Switzerland",
+                  "slug": "switzerland"
+                },
+                "id": 27392
+              },
+              "residenceCity": {
+                "name": "Wollerau",
+                "country": {
+                  "alpha2": "CH",
+                  "alpha3": "CHE",
+                  "name": "Switzerland",
+                  "slug": "switzerland"
+                },
+                "id": 36085
+              },
+              "id": 146,
+              "birthplace": "Flawil, Switzerland",
+              "birthDateTimestamp": 857952000,
+              "residence": "Wollerau, Switzerland",
+              "prizeCurrentRaw": {
+                "value": 1270166,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 14195181,
+                "currency": "EUR"
+              },
+              "currentRanking": 11
+            },
+            "nameCode": "BEN",
+            "ranking": 11,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "CH",
+              "alpha3": "CHE",
+              "name": "Switzerland",
+              "slug": "switzerland"
+            },
+            "id": 63957,
+            "fullName": "Belinda Bencic",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "بليندا بينتش",
+                "ru": "Бенчич, Белинда"
+              },
+              "shortNameTranslation": {
+                "ar": "ب. بينتش",
+                "bn": "বি. বেনসিক",
+                "hi": "बी. बेनसिक"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198574,
+          "defaultPeriodCount": 3,
+          "slug": "peyton-stearns-belinda-bencic",
+          "startTimestamp": 1780061400,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "SG",
+            "IR",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "F"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": null,
+        "managerDuel": null
+      }
+    },
+    "votes": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "vote": {
+          "vote1": 317,
+          "vote2": 3268,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": []
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "home": {
+          "fractionalValue": "12/5",
+          "expected": 29,
+          "actual": 53,
+          "id": 22121430
+        },
+        "away": {
+          "fractionalValue": "33/100",
+          "expected": 75,
+          "actual": 79,
+          "id": 22121431
+        }
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "featured": {
+          "default": {
+            "sourceId": 195340463,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195340463,
+            "suspended": false,
+            "id": 312346685,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "12/5",
+                "fractionalValue": "12/5",
+                "sourceId": 1383328533,
+                "name": "1",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "33/100",
+                "fractionalValue": "33/100",
+                "sourceId": 1383328554,
+                "name": "2",
+                "change": 0
+              }
+            ]
+          },
+          "asian": {
+            "sourceId": 195340463,
+            "structureType": 2,
+            "marketId": 12,
+            "marketName": "Total games won",
+            "choiceGroup": "21.5",
+            "isLive": false,
+            "fid": 195340463,
+            "suspended": false,
+            "id": 312365716,
+            "marketGroup": "Total sets/games",
+            "marketPeriod": "Extra time",
+            "choices": [
+              {
+                "initialFractionalValue": "5/6",
+                "fractionalValue": "5/6",
+                "sourceId": 1383445899,
+                "name": "Over",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "5/6",
+                "fractionalValue": "5/6",
+                "sourceId": 1383445816,
+                "name": "Under",
+                "change": 0
+              }
+            ]
+          },
+          "fullTime": {
+            "sourceId": 195340463,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195340463,
+            "suspended": false,
+            "id": 312346685,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "12/5",
+                "fractionalValue": "12/5",
+                "sourceId": 1383328533,
+                "name": "1",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "33/100",
+                "fractionalValue": "33/100",
+                "sourceId": 1383328554,
+                "name": "2",
+                "change": 0
+              }
+            ]
+          }
+        },
+        "hasMoreOdds": true
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 174,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 0,
+          "wins": 2,
+          "aces": 11,
+          "firstServePointsScored": 49,
+          "firstServePointsTotal": 74,
+          "firstServeTotal": 124,
+          "secondServePointsScored": 27,
+          "secondServePointsTotal": 47,
+          "secondServeTotal": 50,
+          "breakPointsScored": 10,
+          "breakPointsTotal": 20,
+          "opponentBreakPointsTotal": 8,
+          "opponentBreakPointsScored": 3,
+          "winnersTotal": 51,
+          "unforcedErrorsTotal": 50,
+          "doubleFaults": 3,
+          "avgDoubleFaults": 1.5,
+          "firstServePercentage": 59.677419354839,
+          "firstServePointsWonPercentage": 66.216216216216,
+          "secondServePercentage": 94,
+          "secondServePointsWonPercentage": 54,
+          "avgAces": 5.5,
+          "breakPointsSavedPercentage": 62.5,
+          "breakPointsSavedConvertedPercentage": 50,
+          "tiebreakWinPercentage": 0,
+          "id": 93129,
+          "matches": 2,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 145,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 0,
+          "wins": 2,
+          "aces": 4,
+          "firstServePointsScored": 47,
+          "firstServePointsTotal": 63,
+          "firstServeTotal": 104,
+          "secondServePointsScored": 21,
+          "secondServePointsTotal": 33,
+          "secondServeTotal": 41,
+          "breakPointsScored": 10,
+          "breakPointsTotal": 15,
+          "opponentBreakPointsTotal": 9,
+          "opponentBreakPointsScored": 3,
+          "winnersTotal": 37,
+          "unforcedErrorsTotal": 28,
+          "doubleFaults": 8,
+          "avgDoubleFaults": 4,
+          "firstServePercentage": 60.576923076923,
+          "firstServePointsWonPercentage": 74.603174603175,
+          "secondServePercentage": 80.487804878049,
+          "secondServePointsWonPercentage": 51.219512195122,
+          "avgAces": 2,
+          "breakPointsSavedPercentage": 66.666666666667,
+          "breakPointsSavedConvertedPercentage": 66.666666666667,
+          "tiebreakWinPercentage": 0,
+          "id": 93001,
+          "matches": 2,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    }
+  }
+}

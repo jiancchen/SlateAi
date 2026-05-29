@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-joao-fonseca-novak-djokovic-2026-05-29",
+  "boardTitle": "Joao Fonseca vs Novak Djokovic",
+  "boardPlayerName": "Joao Fonseca",
+  "recentOpponentName": "Alejandro Tabilo",
+  "recentIndex": 7,
+  "recentEvent": "",
+  "recentDate": "14 Apr 26",
+  "recentIsoDate": "2026-04-14",
+  "recentResult": "CHI  7-61 6-3 1st",
+  "flashscoreLabel": "Tabilo A. - Fonseca J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/munich/results/",
+  "players": [
+    "Tabilo A.",
+    "Fonseca J."
+  ],
+  "generatedAt": "2026-05-29T02:02:41.238Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/x4VaenCd/",
+  "matchId": "x4VaenCd",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_x4VaenCd",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_x4VaenCd"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 7,
+        "duration": "0:51"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:43"
+      }
+    ],
+    "totalDuration": "1:34"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "65%",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (27/40)",
+              "right": "72% (31/43)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (12/28)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "2/3",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (12/43)",
+              "right": "33% (13/40)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "39% (9/23)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "3/7",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "28",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "28",
+              "right": "25",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Net points won",
+              "left": "73% (8/11)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (39/68)",
+              "right": "68% (45/66)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (21/66)",
+              "right": "43% (29/68)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (60/134)",
+              "right": "55% (74/134)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "73% (8/11)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return games won",
+              "left": "10% (1/10)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total games won",
+              "left": "43% (9/21)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "64%",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (14/18)",
+              "right": "78% (18/23)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (8/17)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/1",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (5/23)",
+              "right": "22% (4/18)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (6/13)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "1/1",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "16",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "16",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (22/35)",
+              "right": "69% (25/36)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (11/36)",
+              "right": "37% (13/35)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (33/71)",
+              "right": "54% (38/71)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "67%",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (13/22)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "2/2",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (7/20)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "30% (3/10)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/6",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "12",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "9",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (17/33)",
+              "right": "67% (20/30)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (10/30)",
+              "right": "48% (16/33)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (27/63)",
+              "right": "57% (36/63)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Tabilo A.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

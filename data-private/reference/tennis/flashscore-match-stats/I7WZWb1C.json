@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-kamilla-rakhimova-karolina-muchova-2026-05-27",
+  "boardTitle": "Kamilla Rakhimova vs Karolina Muchova",
+  "boardPlayerName": "Karolina Muchova",
+  "recentOpponentName": "Cori Gauff",
+  "recentIndex": 7,
+  "recentEvent": "Miami",
+  "recentDate": "26 Mar 26",
+  "recentIsoDate": "2026-03-26",
+  "recentResult": "USA   Loss 6-1 6-1 1/2",
+  "flashscoreLabel": "Gauff C. - Muchova K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/miami/results/",
+  "players": [
+    "Gauff C.",
+    "Muchova K."
+  ],
+  "generatedAt": "2026-05-29T01:59:02.793Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/I7WZWb1C/",
+  "matchId": "I7WZWb1C",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_I7WZWb1C",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_I7WZWb1C"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:49"
+      }
+    ],
+    "totalDuration": "1:30"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "67%",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (27/35)",
+              "right": "51% (21/41)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "35% (7/20)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/8",
+              "right": "5/11",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "49% (20/41)",
+              "right": "23% (8/35)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "80% (16/20)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/11",
+              "right": "1/8",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "62% (34/55)",
+              "right": "41% (25/61)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "59% (36/61)",
+              "right": "38% (21/55)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (70/116)",
+              "right": "40% (46/116)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (12/14)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "71%",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (14/18)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "3/6",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "55% (11/20)",
+              "right": "22% (4/18)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (6/8)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "1/4",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "62% (18/29)",
+              "right": "39% (11/28)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "61% (17/28)",
+              "right": "38% (11/29)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (35/57)",
+              "right": "39% (22/57)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "64%",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (13/17)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "17% (2/12)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "2/5",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (9/21)",
+              "right": "24% (4/17)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "83% (10/12)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "0/4",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "62% (16/26)",
+              "right": "42% (14/33)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "58% (19/33)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (35/59)",
+              "right": "41% (24/59)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-sara-bejlek-iga-swiatek-2026-05-27",
+  "boardTitle": "Sara Bejlek vs Iga Swiatek",
+  "boardPlayerName": "Sara Bejlek",
+  "recentOpponentName": "Talia Gibson",
+  "recentIndex": 6,
+  "recentEvent": "Miami",
+  "recentDate": "19 Mar 26",
+  "recentIsoDate": "2026-03-19",
+  "recentResult": "AUS   Loss 6-1 6-0 1st",
+  "flashscoreLabel": "Bejlek S. - Gibson T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/miami/results/",
+  "players": [
+    "Bejlek S.",
+    "Gibson T."
+  ],
+  "generatedAt": "2026-05-29T01:57:58.895Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/fc7k4Aom/",
+  "matchId": "fc7k4Aom",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_fc7k4Aom",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_fc7k4Aom"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:33"
+      }
+    ],
+    "totalDuration": "1:09"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "3",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "37%",
+              "right": "54%",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "38% (5/13)",
+              "right": "68% (21/31)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "18% (4/22)",
+              "right": "54% (14/26)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/6",
+              "right": "8/9",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (10/31)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (12/26)",
+              "right": "82% (18/22)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/9",
+              "right": "6/6",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "26% (9/35)",
+              "right": "61% (35/57)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (22/57)",
+              "right": "74% (26/35)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "34% (31/92)",
+              "right": "66% (61/92)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/6)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Return games won",
+              "left": "14% (1/7)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Total games won",
+              "left": "8% (1/13)",
+              "right": "92% (12/13)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "55%",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "33% (3/9)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (3/10)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "2/3",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (6/17)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (7/14)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "3/3",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "32% (6/19)",
+              "right": "58% (18/31)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (13/31)",
+              "right": "68% (13/19)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (19/50)",
+              "right": "62% (31/50)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "3",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "25%",
+              "right": "54%",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (2/4)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "8% (1/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "6/6",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (4/14)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "92% (11/12)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/6",
+              "right": "3/3",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "19% (3/16)",
+              "right": "65% (17/26)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (9/26)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "29% (12/42)",
+              "right": "71% (30/42)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Gibson T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

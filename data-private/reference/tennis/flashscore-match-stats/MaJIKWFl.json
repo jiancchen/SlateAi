@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-tomas-machac-alexander-zverev-2026-05-27",
+  "boardTitle": "Tomas Machac vs Alexander Zverev",
+  "boardPlayerName": "Tomas Machac",
+  "recentOpponentName": "Sebastian Baez",
+  "recentIndex": 7,
+  "recentEvent": "",
+  "recentDate": "14 Apr 26",
+  "recentIsoDate": "2026-04-14",
+  "recentResult": "ARG  2-6 6-4 6-1 1st",
+  "flashscoreLabel": "Machac T. - Baez S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/barcelona/results/",
+  "players": [
+    "Machac T.",
+    "Baez S."
+  ],
+  "generatedAt": "2026-05-29T01:59:06.527Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/MaJIKWFl/",
+  "matchId": "MaJIKWFl",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_MaJIKWFl",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_MaJIKWFl"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:30"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:42"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "71%",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (32/47)",
+              "right": "57% (31/54)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (10/22)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "4/9",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (23/54)",
+              "right": "32% (15/47)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "59% (13/22)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/9",
+              "right": "3/4",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "30",
+              "right": "16",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "36",
+              "right": "27",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Net points won",
+              "left": "58% (11/19)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (42/69)",
+              "right": "53% (40/76)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (36/76)",
+              "right": "39% (27/69)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (78/145)",
+              "right": "46% (67/145)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "10",
+              "right": "0",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (9/12)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (5/13)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Total games won",
+              "left": "56% (14/25)",
+              "right": "44% (11/25)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "78%",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (5/9)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "2/2",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (7/21)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (2/6)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/2",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "3",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "7",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "44% (8/18)",
+              "right": "67% (18/27)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (9/27)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (17/45)",
+              "right": "62% (28/45)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "78%",
+              "right": "74%",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "66% (19/29)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "2/4",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "48% (11/23)",
+              "right": "34% (10/29)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/2",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "11",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "12",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Net points won",
+              "left": "30% (3/10)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (22/37)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (15/31)",
+              "right": "41% (15/37)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (37/68)",
+              "right": "46% (31/68)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "56%",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "89% (8/9)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "80% (4/5)",
+              "right": "13% (1/8)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/3",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (5/10)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "88% (7/8)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "0/0",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "2",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "8",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (6/6)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "86% (12/14)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "67% (12/18)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "75% (24/32)",
+              "right": "25% (8/32)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Baez S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

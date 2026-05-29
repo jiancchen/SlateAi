@@ -1,25 +1,528 @@
 {
+  "sourceKind": "recent-match",
   "slateDate": "2026-05-27",
-  "boardMatchId": "rg-w-elina-svitolina-kaitlin-quevedo-2026-05-27",
-  "boardTitle": "Elina Svitolina vs Kaitlin Quevedo",
-  "flashscoreLabel": "Quevedo Kaitlin - Svitolina Elina",
-  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/",
-  "generatedAt": "2026-05-26T23:49:17.196Z",
-  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/monfils-elina-jyngIesG/quevedo-kaitlin-Ovyv04To/",
-  "matchId": "6DjGkOWi",
+  "boardMatchId": "rg-w-elina-svitolina-tamara-korpatsch-2026-05-29",
+  "boardTitle": "Elina Svitolina vs Tamara Korpatsch",
+  "boardPlayerName": "Elina Svitolina",
+  "recentOpponentName": "Kaitlin Quevedo",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "27 May 26",
+  "recentIsoDate": "2026-05-27",
+  "recentResult": "ESP  6-0 6-4 2nd",
+  "flashscoreLabel": "Svitolina E. - Quevedo K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
   "players": [
-    "Elina Monfils",
-    "Kaitlin Quevedo"
+    "Svitolina E.",
+    "Quevedo K."
   ],
+  "generatedAt": "2026-05-29T02:02:33.437Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/6DjGkOWi/",
+  "matchId": "6DjGkOWi",
   "feedUrls": {
     "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_6DjGkOWi",
     "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_6DjGkOWi"
   },
   "scoreSummary": {
-    "sets": [],
-    "totalDuration": ""
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 0,
+        "duration": "0:28"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:51"
+      }
+    ],
+    "totalDuration": "1:19"
   },
-  "scopes": [],
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "57%",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (27/38)",
+              "right": "55% (17/31)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (11/23)",
+              "right": "43% (10/23)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "2/7",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (14/31)",
+              "right": "29% (11/38)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (13/23)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/7",
+              "right": "1/4",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "5",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "23",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Net points won",
+              "left": "92% (11/12)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (38/61)",
+              "right": "50% (27/54)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (27/54)",
+              "right": "38% (23/61)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (65/115)",
+              "right": "43% (50/115)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "88% (7/8)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Return games won",
+              "left": "63% (5/8)",
+              "right": "13% (1/8)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (12/16)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "68%",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "91% (10/11)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/5",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "60% (9/15)",
+              "right": "9% (1/11)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (5/7)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "0/0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "1",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "12",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (14/21)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "64% (14/22)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "65% (28/43)",
+              "right": "35% (15/43)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (6/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "50%",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (17/27)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "0/2",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (5/16)",
+              "right": "37% (10/27)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (8/16)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/4",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "4",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "11",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (6/7)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (24/40)",
+              "right": "59% (19/32)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (13/32)",
+              "right": "40% (16/40)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (37/72)",
+              "right": "49% (35/72)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "notes": [
     "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
     "Service games won and return games won are sourced directly from Flashscore match statistics."

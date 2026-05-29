@@ -1,0 +1,751 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/quentin-halys-alexander-zverev#id:16198516",
+  "eventId": "16198516",
+  "slateDate": "2026-05-29",
+  "boardMatchId": "rg-m-quentin-halys-alexander-zverev-2026-05-29",
+  "boardTitle": "Quentin Halys vs Alexander Zverev",
+  "capturedAt": "2026-05-29T02:04:09.747Z",
+  "compactEvent": {
+    "id": 16198516,
+    "slug": "quentin-halys-alexander-zverev",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1780078500,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "ATP",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 6,
+      "name": "Round of 32",
+      "slug": "round-of-32",
+      "cupRoundType": 16
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 90798,
+      "name": "Quentin Halys",
+      "shortName": "Q. Halys",
+      "ranking": 90,
+      "currentRanking": 79,
+      "country": {
+        "alpha2": "FR",
+        "alpha3": "FRA",
+        "name": "France",
+        "slug": "france"
+      },
+      "playerTeamInfo": {
+        "height": 1.91,
+        "weight": 85,
+        "plays": "right-handed",
+        "turnedPro": "2012",
+        "prizeCurrent": 406922,
+        "prizeTotal": 4402324,
+        "birthCity": {
+          "name": "Bondy",
+          "country": {
+            "alpha2": "FR",
+            "alpha3": "FRA",
+            "name": "France",
+            "slug": "france"
+          },
+          "id": 35496
+        },
+        "residenceCity": {
+          "name": "Boulogne-Billancourt",
+          "country": {
+            "alpha2": "FR",
+            "alpha3": "FRA",
+            "name": "France",
+            "slug": "france"
+          },
+          "id": 29438
+        },
+        "id": 215,
+        "birthplace": "Bondy, France",
+        "birthDateTimestamp": 846288000,
+        "residence": "Boulogne-Billancourt, France",
+        "prizeCurrentRaw": {
+          "value": 406922,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 4402324,
+          "currency": "EUR"
+        },
+        "currentRanking": 79
+      }
+    },
+    "awayTeam": {
+      "id": 57163,
+      "name": "Alexander Zverev",
+      "shortName": "A. Zverev",
+      "ranking": 3,
+      "currentRanking": 3,
+      "country": {
+        "alpha2": "DE",
+        "alpha3": "DEU",
+        "name": "Germany",
+        "slug": "germany"
+      },
+      "playerTeamInfo": {
+        "height": 1.98,
+        "weight": 90,
+        "plays": "right-handed",
+        "turnedPro": "2013",
+        "prizeCurrent": 2692752,
+        "prizeTotal": 54458156,
+        "birthCity": {
+          "name": "Hamburg",
+          "country": {
+            "alpha2": "DE",
+            "alpha3": "DEU",
+            "name": "Germany",
+            "slug": "germany"
+          },
+          "id": 19484
+        },
+        "residenceCity": {
+          "name": "Monte Carlo",
+          "country": {
+            "alpha2": "MC",
+            "alpha3": "MCO",
+            "name": "Monaco",
+            "slug": "monaco"
+          },
+          "id": 21098
+        },
+        "id": 3,
+        "birthplace": "Hamburg, Germany",
+        "birthDateTimestamp": 861494400,
+        "residence": "Monte Carlo, Monaco",
+        "prizeCurrentRaw": {
+          "value": 2692752,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 54458156,
+          "currency": "EUR"
+        },
+        "currentRanking": 3
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "awayTeamSeed": "2",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "ATP",
+              "slug": "atp",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 7,
+              "country": {},
+              "id": 3,
+              "flag": "atp",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "এটিপি",
+                  "hi": "डब्ल्यूटीए",
+                  "ar": "رابطة محترفي التنس",
+                  "ru": "ATP"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "ATP",
+                "slug": "atp",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 7,
+                "country": {},
+                "id": 3,
+                "flag": "atp",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "এটিপি",
+                    "hi": "डब्ल्यूटीए",
+                    "ar": "رابطة محترفي التنس",
+                    "ru": "ATP"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 35324,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2480,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गर्रोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185245,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1779580800,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "رولان غاروس، باريس، فرنسا"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "season": {
+            "name": "French Open Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85951
+          },
+          "roundInfo": {
+            "round": 6,
+            "name": "Round of 32",
+            "slug": "round-of-32",
+            "cupRoundType": 16
+          },
+          "customId": "nTxsYpL",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-philippe-chatrier",
+            "name": "Court Philippe Chatrier",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 17178,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب فيليب شاترييه",
+                "hi": "कोर्ट फिलिप चैट्रियर",
+                "bn": "কোর্ট ফিলিপ চ্যাট্রিয়ার"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court Philippe Chatrier"
+            }
+          },
+          "homeTeam": {
+            "name": "Quentin Halys",
+            "slug": "halys-quentin",
+            "shortName": "Q. Halys",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 5560,
+            "playerTeamInfo": {
+              "height": 1.91,
+              "weight": 85,
+              "plays": "right-handed",
+              "turnedPro": "2012",
+              "prizeCurrent": 406922,
+              "prizeTotal": 4402324,
+              "birthCity": {
+                "name": "Bondy",
+                "country": {
+                  "alpha2": "FR",
+                  "alpha3": "FRA",
+                  "name": "France",
+                  "slug": "france"
+                },
+                "id": 35496
+              },
+              "residenceCity": {
+                "name": "Boulogne-Billancourt",
+                "country": {
+                  "alpha2": "FR",
+                  "alpha3": "FRA",
+                  "name": "France",
+                  "slug": "france"
+                },
+                "id": 29438
+              },
+              "id": 215,
+              "birthplace": "Bondy, France",
+              "birthDateTimestamp": 846288000,
+              "residence": "Boulogne-Billancourt, France",
+              "prizeCurrentRaw": {
+                "value": 406922,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 4402324,
+                "currency": "EUR"
+              },
+              "currentRanking": 79
+            },
+            "nameCode": "HAL",
+            "ranking": 90,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 90798,
+            "fullName": "Quentin Halys",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كوينتين هاليس",
+                "ru": "Гали, Квентин"
+              },
+              "shortNameTranslation": {
+                "ar": "ك. هاليس",
+                "bn": "কিউ. হ্যালিস",
+                "hi": "क्यू. हैलिस"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Alexander Zverev",
+            "slug": "zverev-alexander",
+            "shortName": "A. Zverev",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 83957,
+            "playerTeamInfo": {
+              "height": 1.98,
+              "weight": 90,
+              "plays": "right-handed",
+              "turnedPro": "2013",
+              "prizeCurrent": 2692752,
+              "prizeTotal": 54458156,
+              "birthCity": {
+                "name": "Hamburg",
+                "country": {
+                  "alpha2": "DE",
+                  "alpha3": "DEU",
+                  "name": "Germany",
+                  "slug": "germany"
+                },
+                "id": 19484
+              },
+              "residenceCity": {
+                "name": "Monte Carlo",
+                "country": {
+                  "alpha2": "MC",
+                  "alpha3": "MCO",
+                  "name": "Monaco",
+                  "slug": "monaco"
+                },
+                "id": 21098
+              },
+              "id": 3,
+              "birthplace": "Hamburg, Germany",
+              "birthDateTimestamp": 861494400,
+              "residence": "Monte Carlo, Monaco",
+              "prizeCurrentRaw": {
+                "value": 2692752,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 54458156,
+                "currency": "EUR"
+              },
+              "currentRanking": 3
+            },
+            "nameCode": "ZVE",
+            "ranking": 3,
+            "class": 4,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "DE",
+              "alpha3": "DEU",
+              "name": "Germany",
+              "slug": "germany"
+            },
+            "id": 57163,
+            "fullName": "Alexander Zverev",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ألكسندر زفيريف",
+                "bn": "আলেকজান্ডার জাভেরেভ",
+                "hi": "अलेक्ज़ेंडर ज़्वेरेव",
+                "ru": "Зверев, Александер"
+              },
+              "shortNameTranslation": {
+                "ar": "أ. زفيريف"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198516,
+          "defaultPeriodCount": 5,
+          "slug": "quentin-halys-alexander-zverev",
+          "startTimestamp": 1780078500,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "SG",
+            "IR",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": {
+          "homeWins": 0,
+          "awayWins": 1,
+          "draws": 0
+        },
+        "managerDuel": null
+      }
+    },
+    "votes": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "vote": {
+          "vote1": 782,
+          "vote2": 6708,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": []
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "home": null,
+        "away": {
+          "fractionalValue": "3/50",
+          "expected": 94,
+          "actual": 91,
+          "id": 22127005
+        }
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "featured": {
+          "default": {
+            "sourceId": 195359754,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195359754,
+            "suspended": false,
+            "id": 312677467,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "9/1",
+                "fractionalValue": "12/1",
+                "sourceId": 1385864578,
+                "name": "1",
+                "change": 1
+              },
+              {
+                "initialFractionalValue": "3/50",
+                "fractionalValue": "1/25",
+                "sourceId": 1385864583,
+                "name": "2",
+                "change": -1
+              }
+            ]
+          },
+          "asian": {
+            "sourceId": 195359754,
+            "structureType": 2,
+            "marketId": 12,
+            "marketName": "Total games won",
+            "choiceGroup": "30.5",
+            "isLive": false,
+            "fid": 195359754,
+            "suspended": false,
+            "id": 312708077,
+            "marketGroup": "Total sets/games",
+            "marketPeriod": "Extra time",
+            "choices": [
+              {
+                "initialFractionalValue": "5/6",
+                "fractionalValue": "10/11",
+                "sourceId": 1386587933,
+                "name": "Over",
+                "change": 1
+              },
+              {
+                "initialFractionalValue": "5/6",
+                "fractionalValue": "4/5",
+                "sourceId": 1386587650,
+                "name": "Under",
+                "change": -1
+              }
+            ]
+          },
+          "fullTime": {
+            "sourceId": 195359754,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195359754,
+            "suspended": false,
+            "id": 312677467,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "9/1",
+                "fractionalValue": "12/1",
+                "sourceId": 1385864578,
+                "name": "1",
+                "change": 1
+              },
+              {
+                "initialFractionalValue": "3/50",
+                "fractionalValue": "1/25",
+                "sourceId": 1385864583,
+                "name": "2",
+                "change": -1
+              }
+            ]
+          }
+        },
+        "hasMoreOdds": true
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 298,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 3,
+          "wins": 2,
+          "aces": 27,
+          "firstServePointsScored": 106,
+          "firstServePointsTotal": 132,
+          "firstServeTotal": 215,
+          "secondServePointsScored": 45,
+          "secondServePointsTotal": 75,
+          "secondServeTotal": 83,
+          "breakPointsScored": 7,
+          "breakPointsTotal": 17,
+          "opponentBreakPointsTotal": 12,
+          "opponentBreakPointsScored": 4,
+          "winnersTotal": 74,
+          "unforcedErrorsTotal": 57,
+          "doubleFaults": 8,
+          "avgDoubleFaults": 4,
+          "firstServePercentage": 61.395348837209,
+          "firstServePointsWonPercentage": 80.30303030303,
+          "secondServePercentage": 90.361445783133,
+          "secondServePointsWonPercentage": 54.21686746988,
+          "avgAces": 13.5,
+          "breakPointsSavedPercentage": 66.666666666667,
+          "breakPointsSavedConvertedPercentage": 41.176470588235,
+          "tiebreakWinPercentage": 100,
+          "id": 93123,
+          "matches": 2,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 198,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 0,
+          "wins": 2,
+          "aces": 24,
+          "firstServePointsScored": 77,
+          "firstServePointsTotal": 102,
+          "firstServeTotal": 150,
+          "secondServePointsScored": 37,
+          "secondServePointsTotal": 45,
+          "secondServeTotal": 48,
+          "breakPointsScored": 10,
+          "breakPointsTotal": 21,
+          "opponentBreakPointsTotal": 3,
+          "opponentBreakPointsScored": 1,
+          "winnersTotal": 88,
+          "unforcedErrorsTotal": 45,
+          "doubleFaults": 3,
+          "avgDoubleFaults": 1.5,
+          "firstServePercentage": 68,
+          "firstServePointsWonPercentage": 75.490196078431,
+          "secondServePercentage": 93.75,
+          "secondServePointsWonPercentage": 77.083333333333,
+          "avgAces": 12,
+          "breakPointsSavedPercentage": 66.666666666667,
+          "breakPointsSavedConvertedPercentage": 47.619047619048,
+          "tiebreakWinPercentage": 0,
+          "id": 93043,
+          "matches": 2,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    }
+  }
+}

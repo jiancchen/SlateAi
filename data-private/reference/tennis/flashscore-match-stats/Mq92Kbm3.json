@@ -1,25 +1,706 @@
 {
+  "sourceKind": "recent-match",
   "slateDate": "2026-05-27",
-  "boardMatchId": "rg-w-jelena-ostapenko-magda-linette-2026-05-27",
-  "boardTitle": "Jelena Ostapenko vs Magda Linette",
-  "flashscoreLabel": "Linette Magda - Ostapenko Jelena",
-  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/",
-  "generatedAt": "2026-05-26T23:49:19.056Z",
-  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/linette-magda-vXvzyRlq/ostapenko-jelena-Gloq9MUN/",
-  "matchId": "Mq92Kbm3",
+  "boardMatchId": "rg-w-magda-linette-iga-swiatek-2026-05-29",
+  "boardTitle": "Magda Linette vs Iga Swiatek",
+  "boardPlayerName": "Magda Linette",
+  "recentOpponentName": "Jelena Ostapenko",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "27 May 26",
+  "recentIsoDate": "2026-05-27",
+  "recentResult": "LAT  6-2 2-6 6-2 2nd",
+  "flashscoreLabel": "Ostapenko J. - Linette M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
   "players": [
-    "Magda Linette",
-    "Jelena Ostapenko"
+    "Ostapenko J.",
+    "Linette M."
   ],
+  "generatedAt": "2026-05-29T02:02:29.252Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Mq92Kbm3/",
+  "matchId": "Mq92Kbm3",
   "feedUrls": {
     "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Mq92Kbm3",
     "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Mq92Kbm3"
   },
   "scoreSummary": {
-    "sets": [],
-    "totalDuration": ""
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:00"
   },
-  "scopes": [],
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "9",
+              "right": "4",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "57%",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (33/45)",
+              "right": "78% (31/40)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "37% (13/35)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/11",
+              "right": "5/7",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "152 km/h",
+              "right": "166 km/h",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "135 km/h",
+              "right": "137 km/h",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (9/40)",
+              "right": "27% (12/45)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (15/30)",
+              "right": "63% (22/35)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "4/11",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "31",
+              "right": "23",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "40",
+              "right": "18",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (46/80)",
+              "right": "66% (46/70)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (24/70)",
+              "right": "43% (34/80)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (70/150)",
+              "right": "53% (80/150)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (8/12)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (2/12)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (10/24)",
+              "right": "58% (14/24)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "54%",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (12/19)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (5/15)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "2/2",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (2/13)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (5/11)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/8",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "10",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "7",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (17/34)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (7/24)",
+              "right": "50% (17/34)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (24/58)",
+              "right": "59% (34/58)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "61%",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "93% (14/15)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (2/4)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (5/14)",
+              "right": "7% (1/15)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (6/9)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "3",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "5",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "84% (16/19)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (11/23)",
+              "right": "16% (3/19)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "64% (27/42)",
+              "right": "36% (15/42)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "41%",
+              "right": "57%",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (7/11)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (6/16)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "2/2",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (2/13)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/3",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "10",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "6",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (13/27)",
+              "right": "74% (17/23)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (6/23)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (19/50)",
+              "right": "62% (31/50)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Ostapenko J.",
+              "rightPlayer": "Linette M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "notes": [
     "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
     "Service games won and return games won are sourced directly from Flashscore match statistics."

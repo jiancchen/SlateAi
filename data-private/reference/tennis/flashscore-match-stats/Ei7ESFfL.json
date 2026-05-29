@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-nuno-borges-andrey-rublev-2026-05-29",
+  "boardTitle": "Nuno Borges vs Andrey Rublev",
+  "boardPlayerName": "Nuno Borges",
+  "recentOpponentName": "Hamad Medjedovic",
+  "recentIndex": 7,
+  "recentEvent": "Barcelona",
+  "recentDate": "17 Apr 26",
+  "recentIsoDate": "2026-04-17",
+  "recentResult": "SRB   Loss 7-66 6-2 1/4",
+  "flashscoreLabel": "Medjedovic H. - Borges N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/barcelona/results/",
+  "players": [
+    "Medjedovic H.",
+    "Borges N."
+  ],
+  "generatedAt": "2026-05-29T02:02:36.040Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Ei7ESFfL/",
+  "matchId": "Ei7ESFfL",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Ei7ESFfL",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Ei7ESFfL"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 8,
+        "rightGames": 6,
+        "duration": "0:59"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:37"
+      }
+    ],
+    "totalDuration": "1:36"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "4",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "65%",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (31/39)",
+              "right": "71% (29/41)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (15/26)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "3/6",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (12/41)",
+              "right": "21% (8/39)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (10/22)",
+              "right": "42% (11/26)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "1/2",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "28",
+              "right": "14",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "28",
+              "right": "24",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (6/8)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (46/65)",
+              "right": "65% (41/63)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (22/63)",
+              "right": "29% (19/65)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (68/128)",
+              "right": "47% (60/128)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "90% (9/10)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Return games won",
+              "left": "30% (3/10)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "70%",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "84% (21/25)",
+              "right": "85% (22/26)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (12/19)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (4/26)",
+              "right": "16% (4/25)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "9",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "11",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (32/43)",
+              "right": "81% (29/36)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "19% (7/36)",
+              "right": "26% (11/43)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (39/79)",
+              "right": "51% (40/79)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "58%",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (10/14)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "3/6",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (8/15)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "1/1",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "5",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "13",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (14/22)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (15/27)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (29/49)",
+              "right": "41% (20/49)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Medjedovic H.",
+              "rightPlayer": "Borges N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

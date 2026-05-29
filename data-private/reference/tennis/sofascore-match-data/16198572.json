@@ -1,0 +1,721 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/solana-sierra-sorana-cirstea#id:16198572",
+  "eventId": "16198572",
+  "slateDate": "2026-05-29",
+  "boardMatchId": "rg-w-solana-sierra-sorana-cirstea-2026-05-29",
+  "boardTitle": "Solana Sierra vs Sorana Cirstea",
+  "capturedAt": "2026-05-29T02:04:11.306Z",
+  "compactEvent": {
+    "id": 16198572,
+    "slug": "solana-sierra-sorana-cirstea",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1780051200,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "WTA",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 6,
+      "name": "Round of 32",
+      "slug": "round-of-32",
+      "cupRoundType": 16
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 298913,
+      "name": "Solana Sierra",
+      "shortName": "S. Sierra",
+      "ranking": 68,
+      "currentRanking": 54,
+      "country": {
+        "alpha2": "AR",
+        "alpha3": "ARG",
+        "name": "Argentina",
+        "slug": "argentina"
+      },
+      "playerTeamInfo": {
+        "height": 1.72,
+        "plays": "right-handed",
+        "prizeCurrent": 388003,
+        "prizeTotal": 1215126,
+        "birthCity": {
+          "name": "Mar del Plata",
+          "country": {
+            "alpha2": "AR",
+            "alpha3": "ARG",
+            "name": "Argentina",
+            "slug": "argentina"
+          },
+          "id": 23594
+        },
+        "id": 4485,
+        "birthplace": "Mar del Plata, Argentina",
+        "birthDateTimestamp": 1087430400,
+        "prizeCurrentRaw": {
+          "value": 388003,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 1215126,
+          "currency": "EUR"
+        },
+        "currentRanking": 54
+      }
+    },
+    "awayTeam": {
+      "id": 19728,
+      "name": "Sorana Cirstea",
+      "shortName": "S. Cirstea",
+      "ranking": 18,
+      "currentRanking": 13,
+      "country": {
+        "alpha2": "RO",
+        "alpha3": "ROU",
+        "name": "Romania",
+        "slug": "romania"
+      },
+      "playerTeamInfo": {
+        "height": 1.76,
+        "weight": 59,
+        "plays": "right-handed",
+        "turnedPro": "2006",
+        "prizeCurrent": 773919,
+        "prizeTotal": 10191606,
+        "birthCity": {
+          "name": "Bucharest",
+          "country": {
+            "alpha2": "RO",
+            "alpha3": "ROU",
+            "name": "Romania",
+            "slug": "romania"
+          },
+          "id": 19129
+        },
+        "residenceCity": {
+          "name": "Targoviste",
+          "country": {
+            "alpha2": "RO",
+            "alpha3": "ROU",
+            "name": "Romania",
+            "slug": "romania"
+          },
+          "id": 21470
+        },
+        "id": 322,
+        "birthplace": "Bucharest, Romania",
+        "birthDateTimestamp": 639446400,
+        "residence": "Targoviste, Romania",
+        "prizeCurrentRaw": {
+          "value": 773919,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 10191606,
+          "currency": "EUR"
+        },
+        "currentRanking": 13
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "awayTeamSeed": "18",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "WTA",
+              "slug": "wta",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 6,
+              "country": {},
+              "id": 6,
+              "flag": "wta",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "رابطة لاعبات التنس",
+                  "hi": "चैलेंजर",
+                  "bn": "ডব্লিউটিএ",
+                  "ru": "WTA"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "WTA",
+                "slug": "wta",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 6,
+                "country": {},
+                "id": 6,
+                "flag": "wta",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "ar": "رابطة لاعبات التنس",
+                    "hi": "चैलेंजर",
+                    "bn": "ডব্লিউটিএ",
+                    "ru": "WTA"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 11562,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2577,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गारोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185246,
+            "endTimestamp": 1780704000,
+            "startTimestamp": 1779580800,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "رولان غاروس، باريس، فرنسا"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "season": {
+            "name": "French Open Women Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85953
+          },
+          "roundInfo": {
+            "round": 6,
+            "name": "Round of 32",
+            "slug": "round-of-32",
+            "cupRoundType": 16
+          },
+          "customId": "DUhsnDuc",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-14",
+            "name": "Court 14",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 17174,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب 14",
+                "hi": "कोर्ट 14",
+                "bn": "কোর্ট 14"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court 14"
+            }
+          },
+          "homeTeam": {
+            "name": "Solana Sierra",
+            "slug": "sierra-solana",
+            "shortName": "S. Sierra",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 4127,
+            "playerTeamInfo": {
+              "height": 1.72,
+              "plays": "right-handed",
+              "prizeCurrent": 388003,
+              "prizeTotal": 1215126,
+              "birthCity": {
+                "name": "Mar del Plata",
+                "country": {
+                  "alpha2": "AR",
+                  "alpha3": "ARG",
+                  "name": "Argentina",
+                  "slug": "argentina"
+                },
+                "id": 23594
+              },
+              "id": 4485,
+              "birthplace": "Mar del Plata, Argentina",
+              "birthDateTimestamp": 1087430400,
+              "prizeCurrentRaw": {
+                "value": 388003,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 1215126,
+                "currency": "EUR"
+              },
+              "currentRanking": 54
+            },
+            "nameCode": "SIE",
+            "ranking": 68,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "AR",
+              "alpha3": "ARG",
+              "name": "Argentina",
+              "slug": "argentina"
+            },
+            "id": 298913,
+            "fullName": "Solana Sierra",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "سولانا سييرا"
+              },
+              "shortNameTranslation": {
+                "ar": "س. سييرا"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Sorana Cirstea",
+            "slug": "cirstea-sorana",
+            "shortName": "S. Cirstea",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 8725,
+            "playerTeamInfo": {
+              "height": 1.76,
+              "weight": 59,
+              "plays": "right-handed",
+              "turnedPro": "2006",
+              "prizeCurrent": 773919,
+              "prizeTotal": 10191606,
+              "birthCity": {
+                "name": "Bucharest",
+                "country": {
+                  "alpha2": "RO",
+                  "alpha3": "ROU",
+                  "name": "Romania",
+                  "slug": "romania"
+                },
+                "id": 19129
+              },
+              "residenceCity": {
+                "name": "Targoviste",
+                "country": {
+                  "alpha2": "RO",
+                  "alpha3": "ROU",
+                  "name": "Romania",
+                  "slug": "romania"
+                },
+                "id": 21470
+              },
+              "id": 322,
+              "birthplace": "Bucharest, Romania",
+              "birthDateTimestamp": 639446400,
+              "residence": "Targoviste, Romania",
+              "prizeCurrentRaw": {
+                "value": 773919,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 10191606,
+                "currency": "EUR"
+              },
+              "currentRanking": 13
+            },
+            "nameCode": "CIR",
+            "ranking": 18,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "RO",
+              "alpha3": "ROU",
+              "name": "Romania",
+              "slug": "romania"
+            },
+            "id": 19728,
+            "fullName": "Sorana Cirstea",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "سورانا تشيرستيا",
+                "ru": "Кирстя, Сорана"
+              },
+              "shortNameTranslation": {
+                "ar": "س. تشيرستيا",
+                "bn": "এস. ক্রিস্টিয়া",
+                "hi": "एस. किर्स्टिया"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198572,
+          "defaultPeriodCount": 3,
+          "slug": "solana-sierra-sorana-cirstea",
+          "startTimestamp": 1780051200,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "SG",
+            "IR",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "F"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": {
+          "homeWins": 0,
+          "awayWins": 1,
+          "draws": 0
+        },
+        "managerDuel": null
+      }
+    },
+    "votes": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "vote": {
+          "vote1": 709,
+          "vote2": 3338,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": []
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "home": null,
+        "away": {
+          "fractionalValue": "7/25",
+          "expected": 78,
+          "actual": 89,
+          "id": 22125076
+        }
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "featured": {
+          "default": {
+            "sourceId": 195356321,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195356321,
+            "suspended": false,
+            "id": 312626977,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "11/5",
+                "fractionalValue": "11/4",
+                "sourceId": 1385368310,
+                "name": "1",
+                "change": 1
+              },
+              {
+                "initialFractionalValue": "9/25",
+                "fractionalValue": "7/25",
+                "sourceId": 1385368386,
+                "name": "2",
+                "change": -1
+              }
+            ]
+          },
+          "asian": {
+            "sourceId": 195356321,
+            "structureType": 2,
+            "marketId": 12,
+            "marketName": "Total games won",
+            "choiceGroup": "21.5",
+            "isLive": false,
+            "fid": 195356321,
+            "suspended": false,
+            "id": 312644747,
+            "marketGroup": "Total sets/games",
+            "marketPeriod": "Extra time",
+            "choices": [
+              {
+                "initialFractionalValue": "5/6",
+                "fractionalValue": "10/11",
+                "sourceId": 1385597387,
+                "name": "Over",
+                "change": 1
+              },
+              {
+                "initialFractionalValue": "5/6",
+                "fractionalValue": "4/5",
+                "sourceId": 1385597335,
+                "name": "Under",
+                "change": -1
+              }
+            ]
+          },
+          "fullTime": {
+            "sourceId": 195356321,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195356321,
+            "suspended": false,
+            "id": 312626977,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "11/5",
+                "fractionalValue": "11/4",
+                "sourceId": 1385368310,
+                "name": "1",
+                "change": 1
+              },
+              {
+                "initialFractionalValue": "9/25",
+                "fractionalValue": "7/25",
+                "sourceId": 1385368386,
+                "name": "2",
+                "change": -1
+              }
+            ]
+          }
+        },
+        "hasMoreOdds": true
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 229,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 1,
+          "wins": 2,
+          "aces": 3,
+          "firstServePointsScored": 63,
+          "firstServePointsTotal": 93,
+          "firstServeTotal": 161,
+          "secondServePointsScored": 34,
+          "secondServePointsTotal": 60,
+          "secondServeTotal": 68,
+          "breakPointsScored": 10,
+          "breakPointsTotal": 24,
+          "opponentBreakPointsTotal": 16,
+          "opponentBreakPointsScored": 6,
+          "winnersTotal": 54,
+          "unforcedErrorsTotal": 77,
+          "doubleFaults": 8,
+          "avgDoubleFaults": 4,
+          "firstServePercentage": 57.76397515528,
+          "firstServePointsWonPercentage": 67.741935483871,
+          "secondServePercentage": 88.235294117647,
+          "secondServePointsWonPercentage": 50,
+          "avgAces": 1.5,
+          "breakPointsSavedPercentage": 62.5,
+          "breakPointsSavedConvertedPercentage": 41.666666666667,
+          "tiebreakWinPercentage": 100,
+          "id": 93116,
+          "matches": 2,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 117,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 0,
+          "wins": 2,
+          "aces": 6,
+          "firstServePointsScored": 44,
+          "firstServePointsTotal": 55,
+          "firstServeTotal": 86,
+          "secondServePointsScored": 12,
+          "secondServePointsTotal": 28,
+          "secondServeTotal": 31,
+          "breakPointsScored": 12,
+          "breakPointsTotal": 21,
+          "opponentBreakPointsTotal": 5,
+          "opponentBreakPointsScored": 3,
+          "winnersTotal": 33,
+          "unforcedErrorsTotal": 35,
+          "doubleFaults": 3,
+          "avgDoubleFaults": 1.5,
+          "firstServePercentage": 63.953488372093,
+          "firstServePointsWonPercentage": 80,
+          "secondServePercentage": 90.322580645161,
+          "secondServePointsWonPercentage": 38.709677419355,
+          "avgAces": 3,
+          "breakPointsSavedPercentage": 40,
+          "breakPointsSavedConvertedPercentage": 57.142857142857,
+          "tiebreakWinPercentage": 0,
+          "id": 93169,
+          "matches": 2,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    }
+  }
+}

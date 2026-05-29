@@ -1,25 +1,692 @@
 {
+  "sourceKind": "recent-match",
   "slateDate": "2026-05-27",
-  "boardMatchId": "rg-w-mirra-andreeva-marina-bassols-ribera-2026-05-27",
-  "boardTitle": "Mirra Andreeva vs Marina Bassols Ribera",
-  "flashscoreLabel": "Bassols Ribera Marina - Andreeva Mirra",
-  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/",
-  "generatedAt": "2026-05-26T23:49:20.483Z",
-  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/andreeva-mirra-lI6fOOat/bassols-ribera-marina-dvDRCAx9/",
-  "matchId": "IkLM0CeL",
+  "boardMatchId": "rg-w-mirra-andreeva-marie-bouzkova-2026-05-29",
+  "boardTitle": "Mirra Andreeva vs Marie Bouzkova",
+  "boardPlayerName": "Mirra Andreeva",
+  "recentOpponentName": "Marina Bassols Ribera",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "27 May 26",
+  "recentIsoDate": "2026-05-27",
+  "recentResult": "ESP  3-6 6-1 6-1 2nd",
+  "flashscoreLabel": "Andreeva M. - Bassols M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
   "players": [
-    "Mirra Andreeva",
-    "Marina Bassols Ribera"
+    "Andreeva M.",
+    "Bassols M."
   ],
+  "generatedAt": "2026-05-29T02:02:47.785Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/IkLM0CeL/",
+  "matchId": "IkLM0CeL",
   "feedUrls": {
     "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_IkLM0CeL",
     "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_IkLM0CeL"
   },
   "scoreSummary": {
-    "sets": [],
-    "totalDuration": ""
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:53"
   },
-  "scopes": [],
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "49%",
+              "right": "77%",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (29/39)",
+              "right": "55% (28/51)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "49% (20/41)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "4/10",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (23/51)",
+              "right": "26% (10/39)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (8/15)",
+              "right": "51% (21/41)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/10",
+              "right": "2/6",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "24",
+              "right": "10",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "43",
+              "right": "26",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (12/17)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (49/80)",
+              "right": "53% (35/66)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (31/66)",
+              "right": "39% (31/80)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (80/146)",
+              "right": "45% (66/146)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "82% (9/11)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (6/12)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Total games won",
+              "left": "65% (15/23)",
+              "right": "35% (8/23)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "38%",
+              "right": "76%",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (6/8)",
+              "right": "79% (15/19)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (6/13)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/1",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (4/19)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (4/6)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/2",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "4",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "6",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Net points won",
+              "left": "20% (1/5)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (12/21)",
+              "right": "68% (17/25)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (8/25)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (20/46)",
+              "right": "57% (26/46)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "83%",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (11/16)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (10/17)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "2/4",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (8/15)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (1/3)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/4",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "10",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (21/33)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (9/18)",
+              "right": "36% (12/33)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (30/51)",
+              "right": "41% (21/51)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "74%",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (12/15)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/5",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "65% (11/17)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (3/6)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "0/0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "6",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "10",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (6/7)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (16/26)",
+              "right": "39% (9/23)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "61% (14/23)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (30/49)",
+              "right": "39% (19/49)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bassols M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "notes": [
     "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
     "Service games won and return games won are sourced directly from Flashscore match statistics."

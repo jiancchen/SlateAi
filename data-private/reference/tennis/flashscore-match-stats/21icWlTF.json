@@ -1,25 +1,528 @@
 {
+  "sourceKind": "recent-match",
   "slateDate": "2026-05-27",
-  "boardMatchId": "rg-w-daria-snigur-peyton-stearns-2026-05-27",
-  "boardTitle": "Daria Snigur vs Peyton Stearns",
-  "flashscoreLabel": "Stearns Peyton - Snigur Daria",
-  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/",
-  "generatedAt": "2026-05-26T23:49:16.958Z",
-  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/snigur-daria-YuOTpKxj/stearns-peyton-YsJXLo1O/",
-  "matchId": "21icWlTF",
+  "boardMatchId": "rg-w-peyton-stearns-belinda-bencic-2026-05-29",
+  "boardTitle": "Peyton Stearns vs Belinda Bencic",
+  "boardPlayerName": "Peyton Stearns",
+  "recentOpponentName": "Daria Snigur",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "27 May 26",
+  "recentIsoDate": "2026-05-27",
+  "recentResult": "UKR  6-4 6-0 2nd",
+  "flashscoreLabel": "Snigur D. - Stearns P.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
   "players": [
-    "Daria Snigur",
-    "Peyton Stearns"
+    "Snigur D.",
+    "Stearns P."
   ],
+  "generatedAt": "2026-05-29T02:02:45.639Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/21icWlTF/",
+  "matchId": "21icWlTF",
   "feedUrls": {
     "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_21icWlTF",
     "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_21icWlTF"
   },
   "scoreSummary": {
-    "sets": [],
-    "totalDuration": ""
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:26"
+      }
+    ],
+    "totalDuration": "1:09"
   },
-  "scopes": [],
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "69%",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (15/26)",
+              "right": "64% (30/47)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (5/20)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/11",
+              "right": "3/5",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (17/47)",
+              "right": "42% (11/26)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (11/21)",
+              "right": "75% (15/20)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "6/11",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "22",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "25",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "43% (20/46)",
+              "right": "59% (40/68)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (28/68)",
+              "right": "57% (26/46)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (48/114)",
+              "right": "58% (66/114)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (4/16)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "70%",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (12/19)",
+              "right": "56% (18/32)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "22% (2/9)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "1/3",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (14/32)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (7/14)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "3/6",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "15",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "19",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (14/28)",
+              "right": "54% (25/46)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (21/46)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (35/74)",
+              "right": "53% (39/74)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "39%",
+              "right": "68%",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "43% (3/7)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "27% (3/11)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "2/2",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (3/15)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (4/7)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "3/5",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "6",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "33% (6/18)",
+              "right": "68% (15/22)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (7/22)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "33% (13/40)",
+              "right": "68% (27/40)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Snigur D.",
+              "rightPlayer": "Stearns P."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "notes": [
     "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
     "Service games won and return games won are sourced directly from Flashscore match statistics."

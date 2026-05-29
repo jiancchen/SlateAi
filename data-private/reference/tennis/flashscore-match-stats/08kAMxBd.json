@@ -1,0 +1,100 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-elina-svitolina-kaitlin-quevedo-2026-05-27",
+  "boardTitle": "Elina Svitolina vs Kaitlin Quevedo",
+  "boardPlayerName": "Kaitlin Quevedo",
+  "recentOpponentName": "Caijsa Wilda Hennemann",
+  "recentIndex": 6,
+  "recentEvent": "",
+  "recentDate": "08 May 26",
+  "recentIsoDate": "2026-05-08",
+  "recentResult": "SWE  6-3 6-3 1/4",
+  "flashscoreLabel": "Hennemann C. W. - Quevedo K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-women-singles/w75-saint-gaudens/results/",
+  "players": [
+    "Hennemann C. W.",
+    "Quevedo K."
+  ],
+  "generatedAt": "2026-05-29T01:58:24.960Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/08kAMxBd/",
+  "matchId": "08kAMxBd",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_08kAMxBd",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_08kAMxBd"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:52"
+      }
+    ],
+    "totalDuration": "1:32"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Hennemann C. W.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hennemann C. W.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Hennemann C. W.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

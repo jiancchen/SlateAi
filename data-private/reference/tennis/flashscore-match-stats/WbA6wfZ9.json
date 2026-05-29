@@ -1,25 +1,856 @@
 {
+  "sourceKind": "recent-match",
   "slateDate": "2026-05-27",
-  "boardMatchId": "rg-m-karen-khachanov-marco-trungelliti-2026-05-27",
-  "boardTitle": "Karen Khachanov vs Marco Trungelliti",
-  "flashscoreLabel": "Trungelliti Marco - Khachanov Karen",
-  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
-  "generatedAt": "2026-05-26T23:49:14.306Z",
-  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/khachanov-karen-4bNPtZT5/trungelliti-marco-dQJqWoGg/",
-  "matchId": "WbA6wfZ9",
+  "boardMatchId": "rg-m-karen-khachanov-jesper-de-jong-2026-05-29",
+  "boardTitle": "Karen Khachanov vs Jesper de Jong",
+  "boardPlayerName": "Karen Khachanov",
+  "recentOpponentName": "Marco Trungelliti",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "27 May 26",
+  "recentIsoDate": "2026-05-27",
+  "recentResult": "ARG  7-65 5-7 6-1 7-64 2nd",
+  "flashscoreLabel": "Khachanov K. - Trungelliti M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
   "players": [
-    "Karen Khachanov",
-    "Marco Trungelliti"
+    "Khachanov K.",
+    "Trungelliti M."
   ],
+  "generatedAt": "2026-05-29T02:02:31.479Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/WbA6wfZ9/",
+  "matchId": "WbA6wfZ9",
   "feedUrls": {
     "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_WbA6wfZ9",
     "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_WbA6wfZ9"
   },
   "scoreSummary": {
-    "sets": [],
-    "totalDuration": ""
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:11"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:57"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 7,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:49"
   },
-  "scopes": [],
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "10",
+              "right": "5",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "8",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "56%",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (63/88)",
+              "right": "62% (47/76)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (28/49)",
+              "right": "57% (34/60)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/12",
+              "right": "6/12",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (29/76)",
+              "right": "28% (25/88)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (26/60)",
+              "right": "43% (21/49)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/12",
+              "right": "5/12",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "42",
+              "right": "41",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "55",
+              "right": "54",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Net points won",
+              "left": "61% (17/28)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (91/137)",
+              "right": "60% (81/136)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (55/136)",
+              "right": "34% (46/137)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (146/273)",
+              "right": "47% (127/273)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "77% (17/22)",
+              "right": "71% (15/21)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Return games won",
+              "left": "29% (6/21)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Total games won",
+              "left": "53% (23/43)",
+              "right": "47% (20/43)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "48%",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (21/28)",
+              "right": "67% (16/24)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (6/13)",
+              "right": "54% (14/26)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "5/6",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (8/24)",
+              "right": "25% (7/28)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (12/26)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/6",
+              "right": "1/3",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "13",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "19",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (27/41)",
+              "right": "60% (30/50)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (20/50)",
+              "right": "34% (14/41)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (47/91)",
+              "right": "48% (44/91)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "45%",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (12/19)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (8/16)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/1",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (3/14)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "35% (6/17)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/5",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "12",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "10",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Net points won",
+              "left": "29% (2/7)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (20/35)",
+              "right": "71% (22/31)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (9/31)",
+              "right": "43% (15/35)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (29/66)",
+              "right": "56% (37/66)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "63%",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (9/9)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "100% (7/7)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "60% (6/10)",
+              "right": "0% (0/9)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (4/6)",
+              "right": "0% (0/7)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "3",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "1",
+              "right": "15",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "100% (16/16)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "63% (10/16)",
+              "right": "0% (0/16)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "81% (26/32)",
+              "right": "19% (6/32)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "72%",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "66% (21/32)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "1/3",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (12/28)",
+              "right": "34% (11/32)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "2/4",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "13",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "10",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Net points won",
+              "left": "64% (7/11)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (28/45)",
+              "right": "59% (23/39)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (16/39)",
+              "right": "38% (17/45)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (44/84)",
+              "right": "48% (40/84)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "Trungelliti M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "notes": [
     "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
     "Service games won and return games won are sourced directly from Flashscore match statistics."

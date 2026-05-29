@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-alex-de-minaur-jakub-mensik-2026-05-29",
+  "boardTitle": "Alex de Minaur vs Jakub Mensik",
+  "boardPlayerName": "Alex De Minaur",
+  "recentOpponentName": "Rafael Jodar",
+  "recentIndex": 7,
+  "recentEvent": "Madrid",
+  "recentDate": "24 Apr 26",
+  "recentIsoDate": "2026-04-24",
+  "recentResult": "ESP   Loss 6-3 6-1 2nd",
+  "flashscoreLabel": "Jodar R. - De Minaur A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/madrid/results/",
+  "players": [
+    "Jodar R.",
+    "De Minaur A."
+  ],
+  "generatedAt": "2026-05-29T02:02:38.840Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/M3Zs2ep3/",
+  "matchId": "M3Zs2ep3",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_M3Zs2ep3",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_M3Zs2ep3"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:39"
+      }
+    ],
+    "totalDuration": "1:15"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "61%",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (17/25)",
+              "right": "39% (14/36)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (13/24)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "7/13",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "61% (22/36)",
+              "right": "32% (8/25)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (12/23)",
+              "right": "46% (11/24)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/13",
+              "right": "2/5",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "3",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "26",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (30/49)",
+              "right": "42% (25/59)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "58% (34/59)",
+              "right": "39% (19/49)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (64/108)",
+              "right": "41% (44/108)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (12/16)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "52%",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (12/16)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (7/15)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "1/3",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (5/11)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "1/3",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "1",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "11",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (19/31)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (11/21)",
+              "right": "39% (12/31)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (30/52)",
+              "right": "42% (22/52)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "66%",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (5/9)",
+              "right": "32% (8/25)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (6/9)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "6/10",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "68% (17/25)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (6/13)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/10",
+              "right": "1/2",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "15",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (11/18)",
+              "right": "39% (15/38)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "61% (23/38)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (34/56)",
+              "right": "39% (22/56)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "De Minaur A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

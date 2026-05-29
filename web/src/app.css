@@ -1929,6 +1929,21 @@ h3 {
   color: var(--text);
 }
 
+.game-rail-competitor {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-rail-competitor.winner {
+  min-width: 22px;
+  min-height: 22px;
+  padding: 0 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(56, 211, 153, 0.45);
+  box-shadow: inset 0 0 0 1px rgba(56, 211, 153, 0.1);
+}
+
 .game-rail-title-wrap small {
   color: var(--muted);
 }
@@ -3598,6 +3613,94 @@ h3 {
   padding: 9px;
   box-shadow: none;
   text-align: left;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  min-height: 56px;
+}
+
+.pick-button-name {
+  min-width: 0;
+  color: var(--heading);
+  font-size: 0.95rem;
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+}
+
+.pick-button-price {
+  display: grid;
+  justify-items: end;
+  gap: 3px;
+  white-space: nowrap;
+}
+
+.pick-button-price strong {
+  font: 700 0.96rem/1 var(--mono);
+  color: var(--heading);
+}
+
+.pick-button-price small {
+  color: var(--muted);
+  font-size: 0.7rem;
+}
+
+.global-search-results {
+  display: grid;
+  gap: 8px;
+  padding: 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+.global-search-results-head,
+.global-search-result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.global-search-results-head span {
+  color: var(--accent);
+  font: 700 0.68rem/1 var(--mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.global-search-results-head small,
+.global-search-result small {
+  color: var(--muted);
+}
+
+.global-search-result {
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.025);
+  color: var(--heading);
+  padding: 9px;
+  cursor: pointer;
+}
+
+.global-search-result.active {
+  border-color: var(--line-strong);
+  background: rgba(82, 214, 179, 0.12);
+}
+
+.global-search-result > span {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.global-search-result strong {
+  color: var(--heading);
+}
+
+.global-search-result-meta {
+  justify-items: end;
+  text-align: right;
 }
 
 .pick-badge {
@@ -3862,6 +3965,43 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
+}
+
+.react-comparison-grid.compact {
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 8px;
+}
+
+.react-comparison-grid.compact .react-comparison-row {
+  padding: 9px;
+  gap: 6px;
+}
+
+.tennis-risk-strip {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 0.8fr 1.15fr 1.15fr;
+  gap: 8px;
+}
+
+.tennis-risk-strip > div {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.028);
+  padding: 9px;
+  display: grid;
+  gap: 5px;
+  align-content: start;
+}
+
+.tennis-risk-strip strong {
+  color: var(--heading);
+  line-height: 1.15;
+}
+
+.tennis-risk-strip small {
+  color: var(--muted);
+  line-height: 1.3;
 }
 
 .react-team-card,
@@ -5386,6 +5526,7 @@ h3 {
   .simulation-boxscore-grid,
   .simulation-phase-grid,
   .lineup-board-grid,
+  .tennis-risk-strip,
   .tennis-player-grid,
   .tennis-projection-grid,
   .tennis-quality-metrics,

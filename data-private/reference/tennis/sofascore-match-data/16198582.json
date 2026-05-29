@@ -1,0 +1,726 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/jil-teichmann-karolina-muchova#id:16198582",
+  "eventId": "16198582",
+  "slateDate": "2026-05-29",
+  "boardMatchId": "rg-w-jil-teichmann-karolina-muchova-2026-05-29",
+  "boardTitle": "Jil Teichmann vs Karolina Muchova",
+  "capturedAt": "2026-05-29T02:04:11.514Z",
+  "compactEvent": {
+    "id": 16198582,
+    "slug": "jil-teichmann-karolina-muchova",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1780052400,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "WTA",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 6,
+      "name": "Round of 32",
+      "slug": "round-of-32",
+      "cupRoundType": 16
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 90814,
+      "name": "Jil Teichmann",
+      "shortName": "J. Teichmann",
+      "ranking": 170,
+      "currentRanking": 152,
+      "country": {
+        "alpha2": "CH",
+        "alpha3": "CHE",
+        "name": "Switzerland",
+        "slug": "switzerland"
+      },
+      "playerTeamInfo": {
+        "height": 1.7,
+        "plays": "left-handed",
+        "turnedPro": "2013",
+        "prizeCurrent": 25492,
+        "prizeTotal": 3640273,
+        "birthCity": {
+          "name": "Barcelona",
+          "country": {
+            "alpha2": "ES",
+            "alpha3": "ESP",
+            "name": "Spain",
+            "slug": "spain"
+          },
+          "id": 18512
+        },
+        "residenceCity": {
+          "name": "Switzerland",
+          "country": {
+            "alpha2": "CH",
+            "alpha3": "CHE",
+            "name": "Switzerland",
+            "slug": "switzerland"
+          },
+          "id": 34854
+        },
+        "id": 469,
+        "birthplace": "Barcelona, Spain",
+        "birthDateTimestamp": 868924800,
+        "residence": "Switzerland, Switzerland",
+        "prizeCurrentRaw": {
+          "value": 25492,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 3640273,
+          "currency": "EUR"
+        },
+        "currentRanking": 152
+      }
+    },
+    "awayTeam": {
+      "id": 85077,
+      "name": "Karolina Muchova",
+      "shortName": "K. Muchova",
+      "ranking": 10,
+      "currentRanking": 10,
+      "country": {
+        "alpha2": "CZ",
+        "alpha3": "CZE",
+        "name": "Czechia",
+        "slug": "czechia"
+      },
+      "playerTeamInfo": {
+        "height": 1.8,
+        "plays": "right-handed",
+        "turnedPro": "2014",
+        "prizeCurrent": 1412348,
+        "prizeTotal": 10479514,
+        "birthCity": {
+          "name": "Olomouc",
+          "country": {
+            "alpha2": "CZ",
+            "alpha3": "CZE",
+            "name": "Czechia",
+            "slug": "czechia"
+          },
+          "id": 19545
+        },
+        "id": 340,
+        "birthplace": "Olomouc, Czechia",
+        "birthDateTimestamp": 840585600,
+        "prizeCurrentRaw": {
+          "value": 1412348,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 10479514,
+          "currency": "EUR"
+        },
+        "currentRanking": 10
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "awayTeamSeed": "10",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "WTA",
+              "slug": "wta",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 6,
+              "country": {},
+              "id": 6,
+              "flag": "wta",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "رابطة لاعبات التنس",
+                  "hi": "चैलेंजर",
+                  "bn": "ডব্লিউটিএ",
+                  "ru": "WTA"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "WTA",
+                "slug": "wta",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 6,
+                "country": {},
+                "id": 6,
+                "flag": "wta",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "ar": "رابطة لاعبات التنس",
+                    "hi": "चैलेंजर",
+                    "bn": "ডব্লিউটিএ",
+                    "ru": "WTA"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 11562,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2577,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गारोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185246,
+            "endTimestamp": 1780704000,
+            "startTimestamp": 1779580800,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "رولان غاروس، باريس، فرنسا"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "season": {
+            "name": "French Open Women Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85953
+          },
+          "roundInfo": {
+            "round": 6,
+            "name": "Round of 32",
+            "slug": "round-of-32",
+            "cupRoundType": 16
+          },
+          "customId": "CbJsoqL",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-suzanne-lenglen",
+            "name": "Court Suzanne Lenglen",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 17177,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب سوزان لانغلين",
+                "hi": "कोर्ट सुज़ैन लेंग्लेन",
+                "bn": "কোর্ট সুজান লেংলেন"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court Suzanne Lenglen"
+            }
+          },
+          "homeTeam": {
+            "name": "Jil Teichmann",
+            "slug": "teichmann-jil",
+            "shortName": "J. Teichmann",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 3446,
+            "playerTeamInfo": {
+              "height": 1.7,
+              "plays": "left-handed",
+              "turnedPro": "2013",
+              "prizeCurrent": 25492,
+              "prizeTotal": 3640273,
+              "birthCity": {
+                "name": "Barcelona",
+                "country": {
+                  "alpha2": "ES",
+                  "alpha3": "ESP",
+                  "name": "Spain",
+                  "slug": "spain"
+                },
+                "id": 18512
+              },
+              "residenceCity": {
+                "name": "Switzerland",
+                "country": {
+                  "alpha2": "CH",
+                  "alpha3": "CHE",
+                  "name": "Switzerland",
+                  "slug": "switzerland"
+                },
+                "id": 34854
+              },
+              "id": 469,
+              "birthplace": "Barcelona, Spain",
+              "birthDateTimestamp": 868924800,
+              "residence": "Switzerland, Switzerland",
+              "prizeCurrentRaw": {
+                "value": 25492,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 3640273,
+                "currency": "EUR"
+              },
+              "currentRanking": 152
+            },
+            "nameCode": "TEI",
+            "ranking": 170,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "CH",
+              "alpha3": "CHE",
+              "name": "Switzerland",
+              "slug": "switzerland"
+            },
+            "id": 90814,
+            "fullName": "Jil Teichmann",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "جيل تيشمان",
+                "bn": "জিল টিচম্যান",
+                "hi": "जिल टेइचमान",
+                "ru": "Тейхманн, Жил Белен"
+              },
+              "shortNameTranslation": {
+                "ar": "ج. تيشمان"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Karolina Muchova",
+            "slug": "muchova-karolina",
+            "shortName": "K. Muchova",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 11614,
+            "playerTeamInfo": {
+              "height": 1.8,
+              "plays": "right-handed",
+              "turnedPro": "2014",
+              "prizeCurrent": 1412348,
+              "prizeTotal": 10479514,
+              "birthCity": {
+                "name": "Olomouc",
+                "country": {
+                  "alpha2": "CZ",
+                  "alpha3": "CZE",
+                  "name": "Czechia",
+                  "slug": "czechia"
+                },
+                "id": 19545
+              },
+              "id": 340,
+              "birthplace": "Olomouc, Czechia",
+              "birthDateTimestamp": 840585600,
+              "prizeCurrentRaw": {
+                "value": 1412348,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 10479514,
+                "currency": "EUR"
+              },
+              "currentRanking": 10
+            },
+            "nameCode": "MUC",
+            "ranking": 10,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "CZ",
+              "alpha3": "CZE",
+              "name": "Czechia",
+              "slug": "czechia"
+            },
+            "id": 85077,
+            "fullName": "Karolina Muchova",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كارولينا موخوفا",
+                "ru": "Каролина Мухова"
+              },
+              "shortNameTranslation": {
+                "ar": "ك. موخوفا",
+                "bn": "কে. মুচোভা",
+                "hi": "के. मुचोवा"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198582,
+          "defaultPeriodCount": 3,
+          "slug": "jil-teichmann-karolina-muchova",
+          "startTimestamp": 1780052400,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "SG",
+            "IR",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "F"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": {
+          "homeWins": 1,
+          "awayWins": 1,
+          "draws": 0
+        },
+        "managerDuel": null
+      }
+    },
+    "votes": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "vote": {
+          "vote1": 276,
+          "vote2": 2438,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": []
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "home": null,
+        "away": {
+          "fractionalValue": "2/25",
+          "expected": 92,
+          "actual": 92,
+          "id": 22126390
+        }
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "featured": {
+          "default": {
+            "sourceId": 195359693,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195359693,
+            "suspended": false,
+            "id": 312644663,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "11/2",
+                "fractionalValue": "7/1",
+                "sourceId": 1385854263,
+                "name": "1",
+                "change": 1
+              },
+              {
+                "initialFractionalValue": "11/100",
+                "fractionalValue": "2/25",
+                "sourceId": 1385854528,
+                "name": "2",
+                "change": -1
+              }
+            ]
+          },
+          "asian": {
+            "sourceId": 195359693,
+            "structureType": 2,
+            "marketId": 12,
+            "marketName": "Total games won",
+            "choiceGroup": "18.5",
+            "isLive": false,
+            "fid": 195359693,
+            "suspended": false,
+            "id": 312659996,
+            "marketGroup": "Total sets/games",
+            "marketPeriod": "Extra time",
+            "choices": [
+              {
+                "initialFractionalValue": "10/11",
+                "fractionalValue": "8/11",
+                "sourceId": 1385907764,
+                "name": "Over",
+                "change": -1
+              },
+              {
+                "initialFractionalValue": "4/5",
+                "fractionalValue": "1/1",
+                "sourceId": 1385907760,
+                "name": "Under",
+                "change": 1
+              }
+            ]
+          },
+          "fullTime": {
+            "sourceId": 195359693,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195359693,
+            "suspended": false,
+            "id": 312644663,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "11/2",
+                "fractionalValue": "7/1",
+                "sourceId": 1385854263,
+                "name": "1",
+                "change": 1
+              },
+              {
+                "initialFractionalValue": "11/100",
+                "fractionalValue": "2/25",
+                "sourceId": 1385854528,
+                "name": "2",
+                "change": -1
+              }
+            ]
+          }
+        },
+        "hasMoreOdds": true
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 171,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 0,
+          "wins": 2,
+          "aces": 2,
+          "firstServePointsScored": 50,
+          "firstServePointsTotal": 79,
+          "firstServeTotal": 125,
+          "secondServePointsScored": 25,
+          "secondServePointsTotal": 37,
+          "secondServeTotal": 46,
+          "breakPointsScored": 10,
+          "breakPointsTotal": 18,
+          "opponentBreakPointsTotal": 12,
+          "opponentBreakPointsScored": 6,
+          "winnersTotal": 38,
+          "unforcedErrorsTotal": 56,
+          "doubleFaults": 9,
+          "avgDoubleFaults": 4.5,
+          "firstServePercentage": 63.2,
+          "firstServePointsWonPercentage": 63.291139240506,
+          "secondServePercentage": 80.434782608696,
+          "secondServePointsWonPercentage": 54.347826086957,
+          "avgAces": 1,
+          "breakPointsSavedPercentage": 50,
+          "breakPointsSavedConvertedPercentage": 55.555555555556,
+          "tiebreakWinPercentage": 0,
+          "id": 93195,
+          "matches": 2,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 154,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 0,
+          "wins": 2,
+          "aces": 7,
+          "firstServePointsScored": 54,
+          "firstServePointsTotal": 74,
+          "firstServeTotal": 114,
+          "secondServePointsScored": 17,
+          "secondServePointsTotal": 31,
+          "secondServeTotal": 40,
+          "breakPointsScored": 11,
+          "breakPointsTotal": 18,
+          "opponentBreakPointsTotal": 9,
+          "opponentBreakPointsScored": 4,
+          "winnersTotal": 66,
+          "unforcedErrorsTotal": 28,
+          "doubleFaults": 9,
+          "avgDoubleFaults": 4.5,
+          "firstServePercentage": 64.912280701754,
+          "firstServePointsWonPercentage": 72.972972972973,
+          "secondServePercentage": 77.5,
+          "secondServePointsWonPercentage": 42.5,
+          "avgAces": 3.5,
+          "breakPointsSavedPercentage": 55.555555555556,
+          "breakPointsSavedConvertedPercentage": 61.111111111111,
+          "tiebreakWinPercentage": 0,
+          "id": 93377,
+          "matches": 2,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    }
+  }
+}

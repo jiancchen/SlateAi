@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-sara-bejlek-iga-swiatek-2026-05-27",
+  "boardTitle": "Sara Bejlek vs Iga Swiatek",
+  "boardPlayerName": "Sara Bejlek",
+  "recentOpponentName": "Akasha Urhobo",
+  "recentIndex": 5,
+  "recentEvent": "",
+  "recentDate": "31 Mar 26",
+  "recentIsoDate": "2026-03-31",
+  "recentResult": "USA  6-1 6-1 2nd",
+  "flashscoreLabel": "Bejlek S. - Urhobo A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/charleston/results/",
+  "players": [
+    "Bejlek S.",
+    "Urhobo A."
+  ],
+  "generatedAt": "2026-05-29T01:57:58.664Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/6gvUEPr9/",
+  "matchId": "6gvUEPr9",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_6gvUEPr9",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_6gvUEPr9"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:31"
+      }
+    ],
+    "totalDuration": "1:07"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "63%",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (25/32)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (11/26)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "1/6",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "60% (15/25)",
+              "right": "22% (7/32)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (8/15)",
+              "right": "58% (15/26)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/6",
+              "right": "0/4",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "62% (36/58)",
+              "right": "44% (17/39)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (22/39)",
+              "right": "38% (22/58)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (58/97)",
+              "right": "40% (39/97)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (7/7)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Return games won",
+              "left": "71% (5/7)",
+              "right": "0% (0/7)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (12/14)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "59%",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (17/22)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (6/16)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "1/3",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (5/10)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (5/7)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/3",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "61% (23/38)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (9/17)",
+              "right": "39% (15/38)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (32/55)",
+              "right": "42% (23/55)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "65%",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (8/10)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/3",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "67% (10/15)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "0/1",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "65% (13/20)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "59% (13/22)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (26/42)",
+              "right": "38% (16/42)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Bejlek S.",
+              "rightPlayer": "Urhobo A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

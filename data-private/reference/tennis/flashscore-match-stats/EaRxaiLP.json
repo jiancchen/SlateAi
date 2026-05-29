@@ -1,25 +1,692 @@
 {
+  "sourceKind": "recent-match",
   "slateDate": "2026-05-27",
-  "boardMatchId": "rg-m-lorenzo-sonego-tommy-paul-2026-05-27",
-  "boardTitle": "Lorenzo Sonego vs Tommy Paul",
-  "flashscoreLabel": "Paul Tommy - Sonego Lorenzo",
-  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
-  "generatedAt": "2026-05-26T23:49:14.375Z",
-  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/paul-tommy-pd3ye1BS/sonego-lorenzo-zVuMEJTT/",
-  "matchId": "EaRxaiLP",
+  "boardMatchId": "rg-m-casper-ruud-tommy-paul-2026-05-29",
+  "boardTitle": "Casper Ruud vs Tommy Paul",
+  "boardPlayerName": "Tommy Paul",
+  "recentOpponentName": "Lorenzo Sonego",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "27 May 26",
+  "recentIsoDate": "2026-05-27",
+  "recentResult": "ITA  6-3 6-2 6-4 2nd",
+  "flashscoreLabel": "Sonego L. - Paul T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
   "players": [
-    "Tommy Paul",
-    "Lorenzo Sonego"
+    "Sonego L.",
+    "Paul T."
   ],
+  "generatedAt": "2026-05-29T02:02:52.058Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/EaRxaiLP/",
+  "matchId": "EaRxaiLP",
   "feedUrls": {
     "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_EaRxaiLP",
     "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_EaRxaiLP"
   },
   "scoreSummary": {
-    "sets": [],
-    "totalDuration": ""
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:10"
   },
-  "scopes": [],
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "2",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "58%",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (40/58)",
+              "right": "78% (40/51)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "21% (4/19)",
+              "right": "51% (19/37)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/8",
+              "right": "5/6",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (11/51)",
+              "right": "31% (18/58)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "49% (18/37)",
+              "right": "79% (15/19)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/6",
+              "right": "5/8",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "23",
+              "right": "24",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "36",
+              "right": "25",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Net points won",
+              "left": "79% (11/14)",
+              "right": "84% (31/37)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (44/77)",
+              "right": "67% (59/88)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (29/88)",
+              "right": "43% (33/77)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (73/165)",
+              "right": "56% (92/165)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "62% (8/13)",
+              "right": "93% (13/14)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return games won",
+              "left": "7% (1/14)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (9/27)",
+              "right": "67% (18/27)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "87%",
+              "right": "57%",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (14/20)",
+              "right": "88% (15/17)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (1/3)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "12% (2/17)",
+              "right": "30% (6/20)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (7/13)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "8",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "9",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (15/23)",
+              "right": "70% (21/30)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (9/30)",
+              "right": "35% (8/23)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (24/53)",
+              "right": "55% (29/53)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "61%",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (13/19)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "20% (2/10)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (4/14)",
+              "right": "32% (6/19)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (3/9)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "6",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "7",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (15/29)",
+              "right": "70% (16/23)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (7/23)",
+              "right": "48% (14/29)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (22/52)",
+              "right": "58% (30/52)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "57%",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (13/19)",
+              "right": "75% (15/20)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "17% (1/6)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "5/6",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (5/20)",
+              "right": "32% (6/19)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (8/15)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/6",
+              "right": "2/3",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "10",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "9",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (14/25)",
+              "right": "63% (22/35)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (13/35)",
+              "right": "44% (11/25)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (27/60)",
+              "right": "55% (33/60)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "notes": [
     "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
     "Service games won and return games won are sourced directly from Flashscore match statistics."

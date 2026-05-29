@@ -1,25 +1,692 @@
 {
+  "sourceKind": "recent-match",
   "slateDate": "2026-05-27",
-  "boardMatchId": "rg-m-tomas-machac-alexander-zverev-2026-05-27",
-  "boardTitle": "Tomas Machac vs Alexander Zverev",
-  "flashscoreLabel": "Zverev Alexander - Machac Tomas",
-  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
-  "generatedAt": "2026-05-26T23:49:15.869Z",
-  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/machac-tomas-S44E7UYr/zverev-alexander-dGbUhw9m/",
-  "matchId": "bwEpNGFL",
+  "boardMatchId": "rg-m-quentin-halys-alexander-zverev-2026-05-29",
+  "boardTitle": "Quentin Halys vs Alexander Zverev",
+  "boardPlayerName": "Alexander Zverev",
+  "recentOpponentName": "Tomas Machac",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "27 May 26",
+  "recentIsoDate": "2026-05-27",
+  "recentResult": "CZE  6-4 6-2 6-2 2nd",
+  "flashscoreLabel": "Machac T. - Zverev A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
   "players": [
-    "Tomas Machac",
-    "Alexander Zverev"
+    "Machac T.",
+    "Zverev A."
   ],
+  "generatedAt": "2026-05-29T02:02:25.261Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/bwEpNGFL/",
+  "matchId": "bwEpNGFL",
   "feedUrls": {
     "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_bwEpNGFL",
     "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_bwEpNGFL"
   },
   "scoreSummary": {
-    "sets": [],
-    "totalDuration": ""
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:35"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:47"
   },
-  "scopes": [],
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "19",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "72%",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (38/66)",
+              "right": "85% (40/47)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (11/23)",
+              "right": "78% (14/18)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/11",
+              "right": "1/1",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (7/47)",
+              "right": "42% (28/66)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "22% (4/18)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "5/11",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "45",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "27",
+              "right": "17",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "43% (6/14)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (49/89)",
+              "right": "83% (54/65)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "17% (11/65)",
+              "right": "45% (40/89)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (60/154)",
+              "right": "61% (94/154)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "62% (8/13)",
+              "right": "100% (13/13)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/13)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "31% (8/26)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "6",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "71%",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (16/30)",
+              "right": "85% (17/20)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "78% (7/9)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "1/1",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (3/20)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/4",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "14",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "10",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "38% (3/8)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (23/39)",
+              "right": "79% (22/28)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "21% (6/28)",
+              "right": "41% (16/39)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (29/67)",
+              "right": "57% (38/67)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "8",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "74%",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (14/23)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "14% (1/7)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/0",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (3/14)",
+              "right": "39% (9/23)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/5)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/5",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "18",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "2",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (15/30)",
+              "right": "84% (16/19)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "16% (3/19)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (18/49)",
+              "right": "63% (31/49)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "5",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "72%",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (8/13)",
+              "right": "92% (12/13)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/0",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "8% (1/13)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "20% (1/5)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/2",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "2",
+              "right": "13",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "5",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (11/20)",
+              "right": "89% (16/18)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "11% (2/18)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "34% (13/38)",
+              "right": "66% (25/38)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Machac T.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "notes": [
     "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
     "Service games won and return games won are sourced directly from Flashscore match statistics."

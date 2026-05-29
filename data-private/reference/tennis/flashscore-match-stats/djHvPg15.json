@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-mariano-navone-jakub-mensik-2026-05-27",
+  "boardTitle": "Mariano Navone vs Jakub Mensik",
+  "boardPlayerName": "Jakub Mensik",
+  "recentOpponentName": "Frances Tiafoe",
+  "recentIndex": 7,
+  "recentEvent": "Miami",
+  "recentDate": "23 Mar 26",
+  "recentIsoDate": "2026-03-23",
+  "recentResult": "USA   Loss 7-64 4-6 7-611 3rd",
+  "flashscoreLabel": "Tiafoe F. - Mensik J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/miami/results/",
+  "players": [
+    "Tiafoe F.",
+    "Mensik J."
+  ],
+  "generatedAt": "2026-05-29T01:58:16.568Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/djHvPg15/",
+  "matchId": "djHvPg15",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_djHvPg15",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_djHvPg15"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 4,
+        "duration": "0:55"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 13,
+        "rightGames": 11,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:55"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "22",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "73%",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (59/75)",
+              "right": "83% (65/78)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (29/49)",
+              "right": "59% (17/29)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "2/2",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (13/78)",
+              "right": "21% (16/75)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "41% (12/29)",
+              "right": "41% (20/49)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "1/5",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "27",
+              "right": "59",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "48",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (16/28)",
+              "right": "80% (16/20)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (88/124)",
+              "right": "77% (82/107)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (25/107)",
+              "right": "29% (36/124)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (113/231)",
+              "right": "51% (118/231)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "94% (16/17)",
+              "right": "100% (17/17)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/17)",
+              "right": "6% (1/17)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total games won",
+              "left": "47% (16/34)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "81%",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (19/25)",
+              "right": "80% (24/30)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (12/19)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (6/30)",
+              "right": "24% (6/25)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (4/7)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "16",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "20",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Net points won",
+              "left": "38% (3/8)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (31/44)",
+              "right": "73% (27/37)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (10/37)",
+              "right": "30% (13/44)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (41/81)",
+              "right": "49% (40/81)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "8",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "64%",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "86% (18/21)",
+              "right": "94% (17/18)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (4/12)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "2/2",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "6% (1/18)",
+              "right": "14% (3/21)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "1/4",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "18",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "13",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Net points won",
+              "left": "78% (7/9)",
+              "right": "100% (7/7)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (22/33)",
+              "right": "79% (22/28)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "21% (6/28)",
+              "right": "33% (11/33)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (28/61)",
+              "right": "54% (33/61)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "10",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "71%",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (22/29)",
+              "right": "80% (24/30)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "72% (13/18)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (6/30)",
+              "right": "24% (7/29)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (3/12)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "25",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "15",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Net points won",
+              "left": "55% (6/11)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (35/47)",
+              "right": "79% (33/42)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "21% (9/42)",
+              "right": "26% (12/47)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (44/89)",
+              "right": "51% (45/89)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

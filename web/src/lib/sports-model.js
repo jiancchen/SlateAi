@@ -4254,6 +4254,14 @@ const buildMlbDecisionIndicators = ({
   const opponentTop6Cold = Number(opponentHitterState?.top6ColdIndex)
   const pickTop6Heat = Number(pickHitterState?.top6HeatIndex)
   const opponentTop6Heat = Number(opponentHitterState?.top6HeatIndex)
+  const pickTop6XwobaTrend = Number(pickHitterState?.top6XwobaTrend)
+  const opponentTop6XwobaTrend = Number(opponentHitterState?.top6XwobaTrend)
+  const pickTop6HardHitTrend = Number(pickHitterState?.top6HardHitTrend)
+  const opponentTop6HardHitTrend = Number(opponentHitterState?.top6HardHitTrend)
+  const pickTop6SweetSpotTrend = Number(pickHitterState?.top6SweetSpotTrend)
+  const opponentTop6SweetSpotTrend = Number(opponentHitterState?.top6SweetSpotTrend)
+  const pickContactTrendSignal = pickHitterState?.contactTrendSignal || null
+  const opponentContactTrendSignal = opponentHitterState?.contactTrendSignal || null
   const pickTeamMistakeChaos = Number(pickTeamMistakeShape?.mistakeChaosIndex)
   const opponentTeamMistakeChaos = Number(opponentTeamMistakeShape?.mistakeChaosIndex)
   const pickTeamRunClustering = Number(pickTeamMistakeShape?.runClusteringIndex)
@@ -4344,6 +4352,17 @@ const buildMlbDecisionIndicators = ({
     opponentSnapbackPressure >= 50 &&
     opponentTeamState?.streakDirection === 'L' &&
     Number(opponentTeamState?.streakLength || 0) >= 2
+  const opponentImprovingContactBouncebackFlag =
+    modelEdge >= 6 &&
+    opponentTeamState?.streakDirection === 'L' &&
+    Number(opponentTeamState?.streakLength || 0) >= 2 &&
+    Number(opponentTeamState?.closeLossCountLast5 || 0) >= 2 &&
+    (
+      opponentContactTrendSignal === 'improving' ||
+      opponentTop6XwobaTrend >= 0.012 ||
+      opponentTop6HardHitTrend >= 2.5 ||
+      opponentTop6SweetSpotTrend >= 2
+    )
   const pickHeatRegressionTrapFlag =
     modelEdge >= 8 &&
     Number.isFinite(pickHeatRegression) &&
@@ -4361,8 +4380,8 @@ const buildMlbDecisionIndicators = ({
     Number(pickTeamState?.scheduledSeriesGameNumber || 0) === 2 &&
     Number.isFinite(pickFormPressure) &&
     pickFormPressure >= 55
-  const stateSuggestedEdgeHaircut = opponentSnapbackTrapFlag ? 4 : 0
-  const stateSuggestedConfidenceHaircut = opponentSnapbackTrapFlag ? 8 : 0
+  const stateSuggestedEdgeHaircut = opponentSnapbackTrapFlag ? 4 : opponentImprovingContactBouncebackFlag ? 3 : 0
+  const stateSuggestedConfidenceHaircut = opponentSnapbackTrapFlag ? 8 : opponentImprovingContactBouncebackFlag ? 6 : 0
 
   let reliefPitchingRisk = 36
   let coinflipPressure = 18
@@ -4425,6 +4444,16 @@ const buildMlbDecisionIndicators = ({
     })
     volatilityDelta += 2
     coinflipPressure += 5
+  }
+
+  if (opponentImprovingContactBouncebackFlag) {
+    notes.push({
+      label: `${participants[loserIndex].name} are on a loss streak, but the recent contact-quality trend is improving and the losses have been close`,
+      delta: 4
+    })
+    confidenceDelta -= 3
+    volatilityDelta += 4
+    coinflipPressure += 8
   }
 
   if (hitEdgeAgainstPick) {
@@ -4649,6 +4678,26 @@ const buildMlbDecisionIndicators = ({
     oppTop6Heat: Number.isFinite(opponentTop6Heat)
       ? roundToTenths(opponentTop6Heat)
       : null,
+    pickTop6XwobaTrend: Number.isFinite(pickTop6XwobaTrend)
+      ? roundToTenths(pickTop6XwobaTrend)
+      : null,
+    oppTop6XwobaTrend: Number.isFinite(opponentTop6XwobaTrend)
+      ? roundToTenths(opponentTop6XwobaTrend)
+      : null,
+    pickTop6HardHitTrend: Number.isFinite(pickTop6HardHitTrend)
+      ? roundToTenths(pickTop6HardHitTrend)
+      : null,
+    oppTop6HardHitTrend: Number.isFinite(opponentTop6HardHitTrend)
+      ? roundToTenths(opponentTop6HardHitTrend)
+      : null,
+    pickTop6SweetSpotTrend: Number.isFinite(pickTop6SweetSpotTrend)
+      ? roundToTenths(pickTop6SweetSpotTrend)
+      : null,
+    oppTop6SweetSpotTrend: Number.isFinite(opponentTop6SweetSpotTrend)
+      ? roundToTenths(opponentTop6SweetSpotTrend)
+      : null,
+    pickContactTrendSignal,
+    oppContactTrendSignal: opponentContactTrendSignal,
     pickTeamMistakeChaos: Number.isFinite(pickTeamMistakeChaos)
       ? roundToTenths(pickTeamMistakeChaos)
       : null,
@@ -4719,6 +4768,7 @@ const buildMlbDecisionIndicators = ({
       ? roundToTenths(opponentThirdTimePenalty)
       : null,
     statefulOpponentSnapbackTrapFlag: opponentSnapbackTrapFlag,
+    statefulOpponentImprovingContactBouncebackFlag: opponentImprovingContactBouncebackFlag,
     statefulHeatRegressionTrapFlag: pickHeatRegressionTrapFlag,
     statefulTopOrderPressureTrapFlag: pickTopOrderPressureTrapFlag,
     statefulSeriesCarryoverTrapFlag: seriesCarryoverTrapFlag,

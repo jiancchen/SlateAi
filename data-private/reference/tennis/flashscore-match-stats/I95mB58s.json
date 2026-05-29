@@ -1,0 +1,610 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-jil-teichmann-karolina-muchova-2026-05-29",
+  "boardTitle": "Jil Teichmann vs Karolina Muchova",
+  "boardPlayerName": "Karolina Muchova",
+  "recentOpponentName": "Elina Svitolina",
+  "recentIndex": 4,
+  "recentEvent": "",
+  "recentDate": "18 Apr 26",
+  "recentIsoDate": "2026-04-18",
+  "recentResult": "UKR  6-4 2-6 6-4 1/2",
+  "flashscoreLabel": "Svitolina E. - Muchova K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/stuttgart/results/",
+  "players": [
+    "Svitolina E.",
+    "Muchova K."
+  ],
+  "generatedAt": "2026-05-29T02:02:28.453Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/I95mB58s/",
+  "matchId": "I95mB58s",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_I95mB58s",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_I95mB58s"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:39"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:53"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:16"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "62%",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (31/49)",
+              "right": "71% (41/58)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (16/30)",
+              "right": "47% (17/36)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/7",
+              "right": "7/11",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (18/58)",
+              "right": "37% (18/49)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (19/36)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/11",
+              "right": "4/7",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "59% (47/79)",
+              "right": "62% (58/94)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (36/94)",
+              "right": "41% (32/79)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (83/173)",
+              "right": "52% (90/173)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "71% (10/14)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "29% (4/14)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (14/28)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "63%",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (10/16)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/1",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (4/15)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (3/9)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/2",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "56% (15/27)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (7/25)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (22/52)",
+              "right": "58% (30/52)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "63%",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (9/14)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "7/10",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "56% (15/27)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "69% (11/16)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/10",
+              "right": "1/2",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "54% (13/24)",
+              "right": "45% (20/44)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (24/44)",
+              "right": "46% (11/24)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (37/68)",
+              "right": "46% (31/68)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "59%",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (12/19)",
+              "right": "106% (17/16)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "-6% (-1/16)",
+              "right": "26% (5/19)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (5/11)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "68% (19/28)",
+              "right": "80% (20/25)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (5/25)",
+              "right": "32% (9/28)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (24/53)",
+              "right": "55% (29/53)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Muchova K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

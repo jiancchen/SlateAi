@@ -468,6 +468,16 @@ def export_context(date: str) -> dict[str, Any]:
                 }
             if player_name and form_metrics_by_player.get(normalize_name(player_name)):
                 players[player_name]["recentFormMetrics"] = form_metrics_by_player.get(normalize_name(player_name))
+        expected_stat_rows = sum(
+            len((player.get("expectedStats") or {}).get("stats") or {})
+            for player in players.values()
+        )
+        season_stat_rows = sum(
+            len(stats or {})
+            for stats in (home_season_stats, away_season_stats)
+        )
+        stats_response = ((as_json(row.get("raw_json")) or {}).get("payloads") or {}).get("statistics") or {}
+        live_stats_status = stats_response.get("status")
         matches[row["board_match_id"]] = {
             "source": "SofaScore warehouse",
             "eventId": event_id,
@@ -502,6 +512,11 @@ def export_context(date: str) -> dict[str, Any]:
                 "hasH2h": row["h2h_home_wins"] is not None or row["h2h_away_wins"] is not None,
                 "allStatRows": len(rows),
                 "playerStatRows": len(rows),
+                "liveStatRows": len(rows),
+                "expectedStatRows": expected_stat_rows,
+                "seasonStatRows": season_stat_rows,
+                "liveStatsStatus": live_stats_status,
+                "isPregame": len(rows) == 0 and expected_stat_rows > 0,
             },
         }
     conn.close()

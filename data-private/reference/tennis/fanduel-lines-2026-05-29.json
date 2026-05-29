@@ -1,0 +1,188 @@
+{
+  "date": "2026-05-29",
+  "capturedAt": "2026-05-29T05:09:26.000Z",
+  "sourceUrls": [
+    "https://sportsbook.fanduel.com/tennis",
+    "https://sportsbook.fanduel.com/tennis?tab=women%27s-french-open"
+  ],
+  "mapped": 16,
+  "unmatched": [],
+  "matches": [
+    {
+      "match": "Nuno Borges vs Andrey Rublev",
+      "markets": {
+        "moneyline": [
+          { "player": "Nuno Borges", "odds": 245 },
+          { "player": "Andrey Rublev", "odds": -315 }
+        ]
+      },
+      "capturedAt": "2026-05-29T05:09:26.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Thiago Agustin Tirante vs Pablo Carreno Busta",
+      "markets": {
+        "moneyline": [
+          { "player": "Thiago Agustin Tirante", "odds": -245 },
+          { "player": "Pablo Carreno Busta", "odds": 202 }
+        ]
+      },
+      "capturedAt": "2026-05-29T05:09:26.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Alex Michelsen vs Rafael Jodar",
+      "markets": {
+        "moneyline": [
+          { "player": "Alex Michelsen", "odds": 390 },
+          { "player": "Rafael Jodar", "odds": -550 }
+        ]
+      },
+      "capturedAt": "2026-05-29T05:09:26.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Alex de Minaur vs Jakub Mensik",
+      "markets": {
+        "moneyline": [
+          { "player": "Alex de Minaur", "odds": -430 },
+          { "player": "Jakub Mensik", "odds": 330 }
+        ]
+      },
+      "capturedAt": "2026-05-29T05:09:26.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Karen Khachanov vs Jesper de Jong",
+      "markets": {
+        "moneyline": [
+          { "player": "Karen Khachanov", "odds": -295 },
+          { "player": "Jesper de Jong", "odds": 235 }
+        ]
+      },
+      "capturedAt": "2026-05-29T05:09:26.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Joao Fonseca vs Novak Djokovic",
+      "markets": {
+        "moneyline": [
+          { "player": "Joao Fonseca", "odds": 180 },
+          { "player": "Novak Djokovic", "odds": -220 }
+        ]
+      },
+      "capturedAt": "2026-05-29T05:09:26.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Casper Ruud vs Tommy Paul",
+      "markets": {
+        "moneyline": [
+          { "player": "Casper Ruud", "odds": -310 },
+          { "player": "Tommy Paul", "odds": 245 }
+        ]
+      },
+      "capturedAt": "2026-05-29T05:09:26.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Quentin Halys vs Alexander Zverev",
+      "markets": {
+        "moneyline": [
+          { "player": "Quentin Halys", "odds": 1060 },
+          { "player": "Alexander Zverev", "odds": -2300 }
+        ]
+      },
+      "capturedAt": "2026-05-29T05:09:26.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Marta Kostyuk vs Viktorija Golubic",
+      "markets": {
+        "moneyline": [
+          { "player": "Marta Kostyuk", "odds": -1600 },
+          { "player": "Viktorija Golubic", "odds": 860 }
+        ]
+      },
+      "capturedAt": "2026-05-29T05:09:26.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Wang Xiyu vs Yuliia Starodubtseva",
+      "markets": {
+        "moneyline": [
+          { "player": "Wang Xiyu", "odds": 150 },
+          { "player": "Yuliia Starodubtseva", "odds": -184 }
+        ]
+      },
+      "capturedAt": "2026-05-29T05:09:26.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Magda Linette vs Iga Swiatek",
+      "markets": {
+        "moneyline": [
+          { "player": "Magda Linette", "odds": 1400 },
+          { "player": "Iga Swiatek", "odds": -4000 }
+        ]
+      },
+      "capturedAt": "2026-05-29T05:09:26.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Solana Sierra vs Sorana Cirstea",
+      "markets": {
+        "moneyline": [
+          { "player": "Solana Sierra", "odds": 285 },
+          { "player": "Sorana Cirstea", "odds": -360 }
+        ]
+      },
+      "capturedAt": "2026-05-29T05:09:26.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Jil Teichmann vs Karolina Muchova",
+      "markets": {
+        "moneyline": [
+          { "player": "Jil Teichmann", "odds": 610 },
+          { "player": "Karolina Muchova", "odds": -950 }
+        ]
+      },
+      "capturedAt": "2026-05-29T05:09:26.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Mirra Andreeva vs Marie Bouzkova",
+      "markets": {
+        "moneyline": [
+          { "player": "Mirra Andreeva", "odds": -800 },
+          { "player": "Marie Bouzkova", "odds": 530 }
+        ]
+      },
+      "capturedAt": "2026-05-29T05:09:26.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Elina Svitolina vs Tamara Korpatsch",
+      "markets": {
+        "moneyline": [
+          { "player": "Elina Svitolina", "odds": -2800 },
+          { "player": "Tamara Korpatsch", "odds": 1160 }
+        ]
+      },
+      "capturedAt": "2026-05-29T05:09:26.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Peyton Stearns vs Belinda Bencic",
+      "markets": {
+        "moneyline": [
+          { "player": "Peyton Stearns", "odds": 235 },
+          { "player": "Belinda Bencic", "odds": -295 }
+        ]
+      },
+      "capturedAt": "2026-05-29T05:09:26.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-elina-svitolina-kaitlin-quevedo-2026-05-27",
+  "boardTitle": "Elina Svitolina vs Kaitlin Quevedo",
+  "boardPlayerName": "Kaitlin Quevedo",
+  "recentOpponentName": "Andrea Lazaro Garcia",
+  "recentIndex": 4,
+  "recentEvent": "W75 Saint-Gaudens",
+  "recentDate": "10 May 26",
+  "recentIsoDate": "2026-05-10",
+  "recentResult": "ESP  6-3 6-2 Fin.",
+  "flashscoreLabel": "Lazaro Garcia A. - Quevedo K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-women-singles/w75-saint-gaudens/results/",
+  "players": [
+    "Lazaro Garcia A.",
+    "Quevedo K."
+  ],
+  "generatedAt": "2026-05-29T01:58:24.505Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/M7qKm7Lj/",
+  "matchId": "M7qKm7Lj",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_M7qKm7Lj",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_M7qKm7Lj"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:53"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:38"
+      }
+    ],
+    "totalDuration": "1:31"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "1",
+              "right": "9",
+              "leftPlayer": "Lazaro Garcia A.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Lazaro Garcia A.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Lazaro Garcia A.",
+              "rightPlayer": "Quevedo K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

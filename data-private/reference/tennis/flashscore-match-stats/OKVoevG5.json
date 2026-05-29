@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-lorenzo-sonego-tommy-paul-2026-05-27",
+  "boardTitle": "Lorenzo Sonego vs Tommy Paul",
+  "boardPlayerName": "Lorenzo Sonego",
+  "recentOpponentName": "Andrey Rublev",
+  "recentIndex": 5,
+  "recentEvent": "Barcelona",
+  "recentDate": "16 Apr 26",
+  "recentIsoDate": "2026-04-16",
+  "recentResult": "RUS   Loss 6-2 6-3 2nd",
+  "flashscoreLabel": "Sonego L. - Rublev A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/barcelona/results/",
+  "players": [
+    "Sonego L.",
+    "Rublev A."
+  ],
+  "generatedAt": "2026-05-29T01:58:56.035Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/OKVoevG5/",
+  "matchId": "OKVoevG5",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_OKVoevG5",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_OKVoevG5"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:59"
+      }
+    ],
+    "totalDuration": "1:43"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "56%",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "51% (21/41)",
+              "right": "70% (21/30)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (14/29)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/11",
+              "right": "4/5",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (9/30)",
+              "right": "49% (20/41)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (11/24)",
+              "right": "52% (15/29)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "5/11",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "18",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "30",
+              "right": "25",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (8/10)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (35/70)",
+              "right": "63% (34/54)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (20/54)",
+              "right": "50% (35/70)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (55/124)",
+              "right": "56% (69/124)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "44% (4/9)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (1/8)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "29% (5/17)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "40%",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "47% (9/19)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (6/15)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "1/2",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (2/8)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "3/5",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "8",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "9",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "44% (15/34)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (7/20)",
+              "right": "56% (19/34)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (22/54)",
+              "right": "59% (32/54)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "65%",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (12/22)",
+              "right": "68% (15/22)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (8/14)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "3/3",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (7/22)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (6/12)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "2/6",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "10",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "16",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (20/36)",
+              "right": "62% (21/34)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (13/34)",
+              "right": "44% (16/36)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (33/70)",
+              "right": "53% (37/70)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Sonego L.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

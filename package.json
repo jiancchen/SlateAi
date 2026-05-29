@@ -91,6 +91,7 @@
     "data:import:tennis-flashscore": "python3 pipeline/tennis_warehouse.py import-flashscore",
     "data:import:tennis-sofascore": "python3 pipeline/tennis_warehouse.py import-sofascore",
     "data:export:tennis-warehouse-context": "python3 pipeline/export_tennis_warehouse_context.py",
+    "data:train:tennis": "python3 pipeline/tennis_multimodel_backtest.py",
     "data:backtest:tennis-value": "python3 pipeline/tennis_value_backtest.py",
     "data:summary:tennis": "python3 pipeline/tennis_warehouse.py summary",
     "data:import:mlb-props": "python3 pipeline/mlb_warehouse.py import-prop-predictions",

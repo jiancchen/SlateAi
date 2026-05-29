@@ -1,0 +1,467 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-jil-teichmann-karolina-muchova-2026-05-29",
+  "boardTitle": "Jil Teichmann vs Karolina Muchova",
+  "boardPlayerName": "Karolina Muchova",
+  "recentOpponentName": "Aliaksandra Sasnovich",
+  "recentIndex": 7,
+  "recentEvent": "",
+  "recentDate": "14 Apr 26",
+  "recentIsoDate": "2026-04-14",
+  "recentResult": "BLR  6-2 6-4 1st",
+  "flashscoreLabel": "Muchova K. - Sasnovich A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/stuttgart/results/",
+  "players": [
+    "Muchova K.",
+    "Sasnovich A."
+  ],
+  "generatedAt": "2026-05-29T02:02:29.034Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Iq2E8bdc/",
+  "matchId": "Iq2E8bdc",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Iq2E8bdc",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Iq2E8bdc"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:45"
+      }
+    ],
+    "totalDuration": "1:23"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "2",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "71%",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (28/35)",
+              "right": "60% (27/45)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (5/12)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "3/7",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (18/45)",
+              "right": "20% (7/35)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (12/18)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/7",
+              "right": "1/2",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "69% (34/49)",
+              "right": "52% (32/61)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (29/61)",
+              "right": "31% (15/49)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (63/110)",
+              "right": "43% (47/110)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "89% (8/9)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Return games won",
+              "left": "44% (4/9)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "73%",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "93% (13/14)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (3/6)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/5",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (9/24)",
+              "right": "7% (1/14)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "78% (7/9)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/0",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "77% (17/22)",
+              "right": "53% (17/32)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (15/32)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (32/54)",
+              "right": "41% (22/54)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "78%",
+              "right": "70%",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (15/21)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (2/6)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/2",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (9/21)",
+              "right": "29% (6/21)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (5/9)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/2",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "63% (17/27)",
+              "right": "52% (15/29)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (14/29)",
+              "right": "37% (10/27)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (31/56)",
+              "right": "45% (25/56)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Muchova K.",
+              "rightPlayer": "Sasnovich A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

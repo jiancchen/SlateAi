@@ -1,25 +1,692 @@
 {
+  "sourceKind": "recent-match",
   "slateDate": "2026-05-27",
-  "boardMatchId": "rg-w-yuliia-starodubtseva-elena-rybakina-2026-05-27",
-  "boardTitle": "Yuliia Starodubtseva vs Elena Rybakina",
-  "flashscoreLabel": "Rybakina Elena - Starodubtseva Yuliia",
-  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/",
-  "generatedAt": "2026-05-26T23:49:21.733Z",
-  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/rybakina-elena-UDzElXdm/starodubtsewa-yulia-GlqMuuhi/",
-  "matchId": "Ozf3unp3",
+  "boardMatchId": "rg-w-wang-xiyu-yuliia-starodubtseva-2026-05-29",
+  "boardTitle": "Wang Xiyu vs Yuliia Starodubtseva",
+  "boardPlayerName": "Yuliia Starodubtseva",
+  "recentOpponentName": "Elena Rybakina",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "27 May 26",
+  "recentIsoDate": "2026-05-27",
+  "recentResult": "KAZ  3-6 6-1 7-64 2nd",
+  "flashscoreLabel": "Starodubtseva Y. - Rybakina E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
   "players": [
-    "Elena Rybakina",
-    "Yulia Starodubtsewa"
+    "Starodubtseva Y.",
+    "Rybakina E."
   ],
+  "generatedAt": "2026-05-29T02:02:53.956Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Ozf3unp3/",
+  "matchId": "Ozf3unp3",
   "feedUrls": {
     "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Ozf3unp3",
     "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Ozf3unp3"
   },
   "scoreSummary": {
-    "sets": [],
-    "totalDuration": ""
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 10,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:30"
   },
-  "scopes": [],
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "53%",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (37/54)",
+              "right": "67% (37/55)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (18/33)",
+              "right": "40% (19/48)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/8",
+              "right": "6/11",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (18/55)",
+              "right": "31% (17/54)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (29/48)",
+              "right": "45% (15/33)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/11",
+              "right": "4/8",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "23",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "36",
+              "right": "71",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (6/8)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (55/87)",
+              "right": "54% (56/103)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (47/103)",
+              "right": "37% (32/87)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (102/190)",
+              "right": "46% (88/190)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "71% (10/14)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return games won",
+              "left": "36% (5/14)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total games won",
+              "left": "54% (15/28)",
+              "right": "46% (13/28)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "55%",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (7/14)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "3/4",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (5/18)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (8/15)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "2/2",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "1",
+              "right": "8",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "21",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (12/24)",
+              "right": "61% (20/33)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (13/33)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (25/57)",
+              "right": "56% (32/57)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "54%",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (12/15)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "83% (5/6)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "1/3",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (6/14)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (8/12)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/2",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "1",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "15",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "81% (17/21)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (14/26)",
+              "right": "19% (4/21)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "66% (31/47)",
+              "right": "34% (16/47)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "52%",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (18/25)",
+              "right": "70% (16/23)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (8/17)",
+              "right": "38% (8/21)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "2/4",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (7/23)",
+              "right": "28% (7/25)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (13/21)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "2/4",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "14",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "35",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (26/42)",
+              "right": "55% (24/44)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (20/44)",
+              "right": "38% (16/42)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (46/86)",
+              "right": "47% (40/86)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Starodubtseva Y.",
+              "rightPlayer": "Rybakina E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "notes": [
     "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
     "Service games won and return games won are sourced directly from Flashscore match statistics."

@@ -2211,28 +2211,40 @@ const buildHitterStateByTeam = ({ date, games, topSlots = 6 }) => {
   const rows = runSqliteJson(
     `with ranked as (
       select
-        team_name,
-        player_id,
-        player_name,
-        batting_order_avg_last5,
-        hit_streak_games,
-        hitless_streak_games,
-        home_run_streak_games,
-        hits_per_pa_last5,
-        total_bases_per_pa_last5,
-        strikeout_rate_last5,
-        walk_rate_last5,
-        whiff_rate_last5,
-        pressure_plate_index,
-        cold_streak_index,
-        heat_regression_index,
+        hs.team_name,
+        hs.player_id,
+        hs.player_name,
+        hs.batting_order_avg_last5,
+        hs.hit_streak_games,
+        hs.hitless_streak_games,
+        hs.home_run_streak_games,
+        hs.hits_per_pa_last5,
+        hs.total_bases_per_pa_last5,
+        hs.strikeout_rate_last5,
+        hs.walk_rate_last5,
+        hs.whiff_rate_last5,
+        hs.pressure_plate_index,
+        hs.cold_streak_index,
+        hs.heat_regression_index,
+        trends.rolling_7_xwoba,
+        trends.rolling_30_xwoba,
+        trends.rolling_7_hard_hit_pct,
+        trends.rolling_30_hard_hit_pct,
+        trends.rolling_7_sweet_spot_pct,
+        trends.rolling_30_sweet_spot_pct,
+        trends.xwoba_trend_7_minus_30,
+        trends.hard_hit_trend_7_minus_30,
+        trends.sweet_spot_trend_7_minus_30,
         row_number() over (
-          partition by team_name
-          order by coalesce(batting_order_avg_last5, 99), player_name asc
+          partition by hs.team_name
+          order by coalesce(hs.batting_order_avg_last5, 99), hs.player_name asc
         ) as rn
-      from mlb_hitter_state_snapshots
-      where as_of_date='${date}'
-        and team_name in (${quotedTeams})
+      from mlb_hitter_state_snapshots hs
+      left join mlb_hitter_statcast_trend_snapshots trends
+        on trends.as_of_date = hs.as_of_date
+       and trends.player_id = hs.player_id
+      where hs.as_of_date='${date}'
+        and hs.team_name in (${quotedTeams})
     )
     select *
     from ranked
@@ -2253,6 +2265,31 @@ const buildHitterStateByTeam = ({ date, games, topSlots = 6 }) => {
       const hottest = [...topRows].sort((left, right) => Number(right.heat_regression_index || 0) - Number(left.heat_regression_index || 0))[0]
       const coldest = [...topRows].sort((left, right) => Number(right.cold_streak_index || 0) - Number(left.cold_streak_index || 0))[0]
       const mostPressured = [...topRows].sort((left, right) => Number(right.pressure_plate_index || 0) - Number(left.pressure_plate_index || 0))[0]
+      const trendLeader = [...topRows]
+        .filter((row) => Number.isFinite(Number(row.xwoba_trend_7_minus_30)))
+        .sort((left, right) => Number(right.xwoba_trend_7_minus_30 || 0) - Number(left.xwoba_trend_7_minus_30 || 0))[0]
+      const averageFinite = (key) => {
+        const values = topRows.map((row) => Number(row[key])).filter(Number.isFinite)
+        if (!values.length) return null
+        return values.reduce((sum, value) => sum + value, 0) / values.length
+      }
+      const top6Rolling7Xwoba = averageFinite('rolling_7_xwoba')
+      const top6Rolling30Xwoba = averageFinite('rolling_30_xwoba')
+      const top6Rolling7HardHitPct = averageFinite('rolling_7_hard_hit_pct')
+      const top6Rolling30HardHitPct = averageFinite('rolling_30_hard_hit_pct')
+      const top6Rolling7SweetSpotPct = averageFinite('rolling_7_sweet_spot_pct')
+      const top6Rolling30SweetSpotPct = averageFinite('rolling_30_sweet_spot_pct')
+      const top6XwobaTrend = averageFinite('xwoba_trend_7_minus_30')
+      const top6HardHitTrend = averageFinite('hard_hit_trend_7_minus_30')
+      const top6SweetSpotTrend = averageFinite('sweet_spot_trend_7_minus_30')
+      const contactTrendSignal =
+        Number.isFinite(top6XwobaTrend) || Number.isFinite(top6HardHitTrend) || Number.isFinite(top6SweetSpotTrend)
+          ? top6XwobaTrend >= 0.012 || top6HardHitTrend >= 2.5 || top6SweetSpotTrend >= 2
+            ? 'improving'
+            : top6XwobaTrend <= -0.012 || top6HardHitTrend <= -2.5 || top6SweetSpotTrend <= -2
+              ? 'fading'
+              : 'flat'
+          : null
 
       return [
         deskTeam,
@@ -2265,6 +2302,16 @@ const buildHitterStateByTeam = ({ date, games, topSlots = 6 }) => {
           top6WhiffRate: roundMaybe(topRows.reduce((sum, row) => sum + Number(row.whiff_rate_last5 || 0), 0) / Math.max(topRows.length, 1)),
           top6StrikeoutRate: roundMaybe(topRows.reduce((sum, row) => sum + Number(row.strikeout_rate_last5 || 0), 0) / Math.max(topRows.length, 1)),
           top6WalkRate: roundMaybe(topRows.reduce((sum, row) => sum + Number(row.walk_rate_last5 || 0), 0) / Math.max(topRows.length, 1)),
+          top6Rolling7Xwoba: roundMaybe(top6Rolling7Xwoba, 3),
+          top6Rolling30Xwoba: roundMaybe(top6Rolling30Xwoba, 3),
+          top6Rolling7HardHitPct: roundMaybe(top6Rolling7HardHitPct, 1),
+          top6Rolling30HardHitPct: roundMaybe(top6Rolling30HardHitPct, 1),
+          top6Rolling7SweetSpotPct: roundMaybe(top6Rolling7SweetSpotPct, 1),
+          top6Rolling30SweetSpotPct: roundMaybe(top6Rolling30SweetSpotPct, 1),
+          top6XwobaTrend: roundMaybe(top6XwobaTrend, 3),
+          top6HardHitTrend: roundMaybe(top6HardHitTrend, 1),
+          top6SweetSpotTrend: roundMaybe(top6SweetSpotTrend, 1),
+          contactTrendSignal,
           hottestHitter:
             hottest
               ? {
@@ -2286,6 +2333,18 @@ const buildHitterStateByTeam = ({ date, games, topSlots = 6 }) => {
                   hitlessStreakGames: Number(coldest.hitless_streak_games || 0) || 0,
                   whiffRateLast5: roundMaybe(coldest.whiff_rate_last5),
                   strikeoutRateLast5: roundMaybe(coldest.strikeout_rate_last5)
+                }
+              : null,
+          trendLeader:
+            trendLeader
+              ? {
+                  playerId: Number(trendLeader.player_id || 0) || null,
+                  playerName: trendLeader.player_name || '',
+                  rolling7Xwoba: roundMaybe(trendLeader.rolling_7_xwoba, 3),
+                  rolling30Xwoba: roundMaybe(trendLeader.rolling_30_xwoba, 3),
+                  xwobaTrend: roundMaybe(trendLeader.xwoba_trend_7_minus_30, 3),
+                  hardHitTrend: roundMaybe(trendLeader.hard_hit_trend_7_minus_30, 1),
+                  sweetSpotTrend: roundMaybe(trendLeader.sweet_spot_trend_7_minus_30, 1)
                 }
               : null,
           pressureHitter:

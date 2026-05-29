@@ -401,6 +401,16 @@ export const rawGames = [
           "top6WhiffRate": 0.12,
           "top6StrikeoutRate": 0.19,
           "top6WalkRate": 0.07,
+          "top6Rolling7Xwoba": 0.368,
+          "top6Rolling30Xwoba": 0.327,
+          "top6Rolling7HardHitPct": 24.5,
+          "top6Rolling30HardHitPct": 26.3,
+          "top6Rolling7SweetSpotPct": 31,
+          "top6Rolling30SweetSpotPct": 29.1,
+          "top6XwobaTrend": 0.041,
+          "top6HardHitTrend": -1.7,
+          "top6SweetSpotTrend": 1.8,
+          "contactTrendSignal": "improving",
           "hottestHitter": {
             "playerId": 624585,
             "playerName": "Jorge Soler",
@@ -417,6 +427,15 @@ export const rawGames = [
             "hitlessStreakGames": 1,
             "whiffRateLast5": 0.12,
             "strikeoutRateLast5": 0.29
+          },
+          "trendLeader": {
+            "playerId": 694384,
+            "playerName": "Nolan Schanuel",
+            "rolling7Xwoba": 0.448,
+            "rolling30Xwoba": 0.333,
+            "xwobaTrend": 0.115,
+            "hardHitTrend": 7,
+            "sweetSpotTrend": 3.9
           },
           "pressureHitter": {
             "playerId": 545361,
@@ -436,6 +455,16 @@ export const rawGames = [
           "top6WhiffRate": 0.09,
           "top6StrikeoutRate": 0.24,
           "top6WalkRate": 0.08,
+          "top6Rolling7Xwoba": 0.31,
+          "top6Rolling30Xwoba": 0.307,
+          "top6Rolling7HardHitPct": 24.1,
+          "top6Rolling30HardHitPct": 23.2,
+          "top6Rolling7SweetSpotPct": 31.3,
+          "top6Rolling30SweetSpotPct": 31.1,
+          "top6XwobaTrend": 0.004,
+          "top6HardHitTrend": 0.9,
+          "top6SweetSpotTrend": 0.3,
+          "contactTrendSignal": "flat",
           "hottestHitter": {
             "playerId": 805808,
             "playerName": "Kevin McGonigle",
@@ -452,6 +481,15 @@ export const rawGames = [
             "hitlessStreakGames": 1,
             "whiffRateLast5": 0.12,
             "strikeoutRateLast5": 0.33
+          },
+          "trendLeader": {
+            "playerId": 690993,
+            "playerName": "Colt Keith",
+            "rolling7Xwoba": 0.343,
+            "rolling30Xwoba": 0.256,
+            "xwobaTrend": 0.087,
+            "hardHitTrend": 11.7,
+            "sweetSpotTrend": 11.4
           },
           "pressureHitter": {
             "playerId": 663330,
@@ -2583,6 +2621,16 @@ export const rawGames = [
           "top6WhiffRate": 0.09,
           "top6StrikeoutRate": 0.19,
           "top6WalkRate": 0.08,
+          "top6Rolling7Xwoba": 0.247,
+          "top6Rolling30Xwoba": 0.31,
+          "top6Rolling7HardHitPct": 19.4,
+          "top6Rolling30HardHitPct": 23.6,
+          "top6Rolling7SweetSpotPct": 21.7,
+          "top6Rolling30SweetSpotPct": 29.4,
+          "top6XwobaTrend": 0.003,
+          "top6HardHitTrend": 1,
+          "top6SweetSpotTrend": -2.4,
+          "contactTrendSignal": "fading",
           "hottestHitter": {
             "playerId": 680777,
             "playerName": "Ryan Jeffers",
@@ -2599,6 +2647,15 @@ export const rawGames = [
             "hitlessStreakGames": 3,
             "whiffRateLast5": 0.09,
             "strikeoutRateLast5": 0.21
+          },
+          "trendLeader": {
+            "playerId": 663616,
+            "playerName": "Trevor Larnach",
+            "rolling7Xwoba": 0.364,
+            "rolling30Xwoba": 0.278,
+            "xwobaTrend": 0.086,
+            "hardHitTrend": 2.8,
+            "sweetSpotTrend": 13
           },
           "pressureHitter": {
             "playerId": 605137,
@@ -2618,6 +2675,16 @@ export const rawGames = [
           "top6WhiffRate": 0.1,
           "top6StrikeoutRate": 0.23,
           "top6WalkRate": 0.1,
+          "top6Rolling7Xwoba": 0.346,
+          "top6Rolling30Xwoba": 0.374,
+          "top6Rolling7HardHitPct": 24.5,
+          "top6Rolling30HardHitPct": 26.7,
+          "top6Rolling7SweetSpotPct": 31.1,
+          "top6Rolling30SweetSpotPct": 31.9,
+          "top6XwobaTrend": -0.028,
+          "top6HardHitTrend": -2.2,
+          "top6SweetSpotTrend": -0.8,
+          "contactTrendSignal": "fading",
           "hottestHitter": {
             "playerId": 808959,
             "playerName": "Munetaka Murakami",
@@ -2634,6 +2701,15 @@ export const rawGames = [
             "hitlessStreakGames": 0,
             "whiffRateLast5": 0.1,
             "strikeoutRateLast5": 0.17
+          },
+          "trendLeader": {
+            "playerId": 805367,
+            "playerName": "Chase Meidroth",
+            "rolling7Xwoba": 0.346,
+            "rolling30Xwoba": 0.299,
+            "xwobaTrend": 0.047,
+            "hardHitTrend": -2.4,
+            "sweetSpotTrend": -1.7
           },
           "pressureHitter": {
             "playerId": 695657,
@@ -4964,6 +5040,16 @@ export const rawGames = [
           "top6WhiffRate": 0.08,
           "top6StrikeoutRate": 0.17,
           "top6WalkRate": 0.12,
+          "top6Rolling7Xwoba": 0.263,
+          "top6Rolling30Xwoba": 0.344,
+          "top6Rolling7HardHitPct": 19.4,
+          "top6Rolling30HardHitPct": 26.3,
+          "top6Rolling7SweetSpotPct": 26.2,
+          "top6Rolling30SweetSpotPct": 30.1,
+          "top6XwobaTrend": -0.008,
+          "top6HardHitTrend": -0.9,
+          "top6SweetSpotTrend": 1.7,
+          "contactTrendSignal": "flat",
           "hottestHitter": {
             "playerId": 643289,
             "playerName": "Mauricio Dubón",
@@ -4980,6 +5066,15 @@ export const rawGames = [
             "hitlessStreakGames": 4,
             "whiffRateLast5": 0.15,
             "strikeoutRateLast5": 0.18
+          },
+          "trendLeader": {
+            "playerId": 643289,
+            "playerName": "Mauricio Dubón",
+            "rolling7Xwoba": 0.32,
+            "rolling30Xwoba": 0.303,
+            "xwobaTrend": 0.017,
+            "hardHitTrend": 0.2,
+            "sweetSpotTrend": -4.8
           },
           "pressureHitter": {
             "playerId": 642201,
@@ -4999,6 +5094,16 @@ export const rawGames = [
           "top6WhiffRate": 0.12,
           "top6StrikeoutRate": 0.2,
           "top6WalkRate": 0.06,
+          "top6Rolling7Xwoba": 0.298,
+          "top6Rolling30Xwoba": 0.319,
+          "top6Rolling7HardHitPct": 25.9,
+          "top6Rolling30HardHitPct": 24.2,
+          "top6Rolling7SweetSpotPct": 30.2,
+          "top6Rolling30SweetSpotPct": 29.7,
+          "top6XwobaTrend": 0.019,
+          "top6HardHitTrend": 4.8,
+          "top6SweetSpotTrend": 5.6,
+          "contactTrendSignal": "improving",
           "hottestHitter": {
             "playerId": 575929,
             "playerName": "Willson Contreras",
@@ -5015,6 +5120,15 @@ export const rawGames = [
             "hitlessStreakGames": 1,
             "whiffRateLast5": 0.22,
             "strikeoutRateLast5": 0.42
+          },
+          "trendLeader": {
+            "playerId": 807799,
+            "playerName": "Masataka Yoshida",
+            "rolling7Xwoba": 0.408,
+            "rolling30Xwoba": 0.314,
+            "xwobaTrend": 0.094,
+            "hardHitTrend": 23.7,
+            "sweetSpotTrend": 20.1
           },
           "pressureHitter": {
             "playerId": 596115,
@@ -7182,14 +7296,14 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 2,
       "losses": 1,
-      "era": "3.86",
-      "strikeOuts": 32,
-      "inningsPitched": "44.1",
-      "hitsAllowed": 49,
+      "era": "3.77",
+      "strikeOuts": 34,
+      "inningsPitched": "45.1",
+      "hitsAllowed": 50,
       "walks": 13,
       "homeRunsAllowed": 4,
-      "whip": "1.40",
-      "gamesStarted": 9,
+      "whip": "1.39",
+      "gamesStarted": 10,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 571578,
@@ -7366,14 +7480,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 4,
       "losses": 3,
-      "era": "5.51",
+      "era": "5.29",
       "strikeOuts": 34,
-      "inningsPitched": "47.1",
-      "hitsAllowed": 60,
+      "inningsPitched": "49.1",
+      "hitsAllowed": 62,
       "walks": 19,
       "homeRunsAllowed": 4,
-      "whip": "1.67",
-      "gamesStarted": 8,
+      "whip": "1.64",
+      "gamesStarted": 9,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 605135,
@@ -7544,9 +7658,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -185 / -1.5 +162",
-    "total": "o8.5 -102 / u8.5 -105",
-    "moneyline": "Blue Jays +110 / Orioles -125",
+    "spread": "",
+    "total": "",
+    "moneyline": "",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/blue-jays-vs-orioles",
     "tierTwoContext": {
@@ -7617,6 +7731,16 @@ export const rawGames = [
           "top6WhiffRate": 0.11,
           "top6StrikeoutRate": 0.23,
           "top6WalkRate": 0.09,
+          "top6Rolling7Xwoba": 0.392,
+          "top6Rolling30Xwoba": 0.346,
+          "top6Rolling7HardHitPct": 22.5,
+          "top6Rolling30HardHitPct": 23.8,
+          "top6Rolling7SweetSpotPct": 42.8,
+          "top6Rolling30SweetSpotPct": 37.1,
+          "top6XwobaTrend": 0.045,
+          "top6HardHitTrend": -1.4,
+          "top6SweetSpotTrend": 5.7,
+          "contactTrendSignal": "improving",
           "hottestHitter": {
             "playerId": 664770,
             "playerName": "Nathan Lukes",
@@ -7633,6 +7757,15 @@ export const rawGames = [
             "hitlessStreakGames": 1,
             "whiffRateLast5": 0.07,
             "strikeoutRateLast5": 0.26
+          },
+          "trendLeader": {
+            "playerId": 660821,
+            "playerName": "Jesús Sánchez",
+            "rolling7Xwoba": 0.475,
+            "rolling30Xwoba": 0.312,
+            "xwobaTrend": 0.163,
+            "hardHitTrend": 2.7,
+            "sweetSpotTrend": 6.4
           },
           "pressureHitter": {
             "playerId": 660821,
@@ -7652,6 +7785,16 @@ export const rawGames = [
           "top6WhiffRate": 0.16,
           "top6StrikeoutRate": 0.33,
           "top6WalkRate": 0.09,
+          "top6Rolling7Xwoba": 0.313,
+          "top6Rolling30Xwoba": 0.289,
+          "top6Rolling7HardHitPct": 23.3,
+          "top6Rolling30HardHitPct": 22.9,
+          "top6Rolling7SweetSpotPct": 25.9,
+          "top6Rolling30SweetSpotPct": 25.7,
+          "top6XwobaTrend": 0.024,
+          "top6HardHitTrend": 0.4,
+          "top6SweetSpotTrend": 0.2,
+          "contactTrendSignal": "improving",
           "hottestHitter": {
             "playerId": 683002,
             "playerName": "Gunnar Henderson",
@@ -7668,6 +7811,15 @@ export const rawGames = [
             "hitlessStreakGames": 1,
             "whiffRateLast5": 0.5,
             "strikeoutRateLast5": 1
+          },
+          "trendLeader": {
+            "playerId": 668939,
+            "playerName": "Adley Rutschman",
+            "rolling7Xwoba": 0.451,
+            "rolling30Xwoba": 0.395,
+            "xwobaTrend": 0.056,
+            "hardHitTrend": -3.3,
+            "sweetSpotTrend": -0.5
           },
           "pressureHitter": {
             "playerId": 668974,
@@ -8984,14 +9136,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 4,
       "losses": 3,
-      "era": "4.83",
-      "strikeOuts": 44,
-      "inningsPitched": "54.0",
-      "hitsAllowed": 57,
-      "walks": 17,
+      "era": "4.75",
+      "strikeOuts": 46,
+      "inningsPitched": "55.0",
+      "hitsAllowed": 58,
+      "walks": 18,
       "homeRunsAllowed": 8,
-      "whip": "1.37",
-      "gamesStarted": 8,
+      "whip": "1.38",
+      "gamesStarted": 9,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 607067,
@@ -9168,14 +9320,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 6,
       "losses": 4,
-      "era": "3.00",
-      "strikeOuts": 65,
-      "inningsPitched": "60.0",
+      "era": "2.92",
+      "strikeOuts": 69,
+      "inningsPitched": "61.2",
       "hitsAllowed": 40,
       "walks": 9,
       "homeRunsAllowed": 6,
-      "whip": "0.82",
-      "gamesStarted": 11,
+      "whip": "0.79",
+      "gamesStarted": 12,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 694973,
@@ -9346,9 +9498,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -145 / -1.5 +125",
-    "total": "o7.5 -110 / u7.5 -110",
-    "moneyline": "Cubs +146 / Pirates -170",
+    "spread": "",
+    "total": "",
+    "moneyline": "",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/cubs-vs-pirates",
     "tierTwoContext": {
@@ -9419,6 +9571,16 @@ export const rawGames = [
           "top6WhiffRate": 0.12,
           "top6StrikeoutRate": 0.28,
           "top6WalkRate": 0.14,
+          "top6Rolling7Xwoba": 0.347,
+          "top6Rolling30Xwoba": 0.344,
+          "top6Rolling7HardHitPct": 21.5,
+          "top6Rolling30HardHitPct": 22.4,
+          "top6Rolling7SweetSpotPct": 46,
+          "top6Rolling30SweetSpotPct": 44.1,
+          "top6XwobaTrend": 0.003,
+          "top6HardHitTrend": -0.9,
+          "top6SweetSpotTrend": 1.9,
+          "contactTrendSignal": "flat",
           "hottestHitter": {
             "playerId": 608324,
             "playerName": "Alex Bregman",
@@ -9435,6 +9597,15 @@ export const rawGames = [
             "hitlessStreakGames": 3,
             "whiffRateLast5": 0.18,
             "strikeoutRateLast5": 0.67
+          },
+          "trendLeader": {
+            "playerId": 691718,
+            "playerName": "Pete Crow-Armstrong",
+            "rolling7Xwoba": 0.526,
+            "rolling30Xwoba": 0.395,
+            "xwobaTrend": 0.131,
+            "hardHitTrend": 7.2,
+            "sweetSpotTrend": 15.5
           },
           "pressureHitter": {
             "playerId": 682634,
@@ -9454,6 +9625,16 @@ export const rawGames = [
           "top6WhiffRate": 0.11,
           "top6StrikeoutRate": 0.21,
           "top6WalkRate": 0.07,
+          "top6Rolling7Xwoba": 0.276,
+          "top6Rolling30Xwoba": 0.351,
+          "top6Rolling7HardHitPct": 22.3,
+          "top6Rolling30HardHitPct": 26,
+          "top6Rolling7SweetSpotPct": 24.2,
+          "top6Rolling30SweetSpotPct": 28.3,
+          "top6XwobaTrend": -0.026,
+          "top6HardHitTrend": 0.3,
+          "top6SweetSpotTrend": 0.2,
+          "contactTrendSignal": "fading",
           "hottestHitter": {
             "playerId": 668804,
             "playerName": "Bryan Reynolds",
@@ -9470,6 +9651,15 @@ export const rawGames = [
             "hitlessStreakGames": 1,
             "whiffRateLast5": 0.08,
             "strikeoutRateLast5": 0.33
+          },
+          "trendLeader": {
+            "playerId": 687462,
+            "playerName": "Spencer Horwitz",
+            "rolling7Xwoba": 0.415,
+            "rolling30Xwoba": 0.362,
+            "xwobaTrend": 0.053,
+            "hardHitTrend": 6.6,
+            "sweetSpotTrend": -4.1
           },
           "pressureHitter": {
             "playerId": 656811,
@@ -12058,9 +12248,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -184 / -1.5 +163",
+    "spread": "+1.5 -184 / -1.5 +155",
     "total": "o7 -120 / u7.5 -122",
-    "moneyline": "Astros +125 / Rangers -137",
+    "moneyline": "Astros +125 / Rangers -150",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/astros-vs-rangers",
     "tierTwoContext": {
@@ -12131,6 +12321,16 @@ export const rawGames = [
           "top6WhiffRate": 0.12,
           "top6StrikeoutRate": 0.17,
           "top6WalkRate": 0.09,
+          "top6Rolling7Xwoba": 0.294,
+          "top6Rolling30Xwoba": 0.314,
+          "top6Rolling7HardHitPct": 16.1,
+          "top6Rolling30HardHitPct": 24.4,
+          "top6Rolling7SweetSpotPct": 21.4,
+          "top6Rolling30SweetSpotPct": 30.8,
+          "top6XwobaTrend": 0.058,
+          "top6HardHitTrend": 0.1,
+          "top6SweetSpotTrend": 0.6,
+          "contactTrendSignal": "improving",
           "hottestHitter": {
             "playerId": 670541,
             "playerName": "Yordan Alvarez",
@@ -12147,6 +12347,15 @@ export const rawGames = [
             "hitlessStreakGames": 3,
             "whiffRateLast5": 0.03,
             "strikeoutRateLast5": 0
+          },
+          "trendLeader": {
+            "playerId": 670541,
+            "playerName": "Yordan Alvarez",
+            "rolling7Xwoba": 0.683,
+            "rolling30Xwoba": 0.462,
+            "xwobaTrend": 0.221,
+            "hardHitTrend": 1.2,
+            "sweetSpotTrend": 1.3
           },
           "pressureHitter": {
             "playerId": 694376,
@@ -12166,6 +12375,16 @@ export const rawGames = [
           "top6WhiffRate": 0.11,
           "top6StrikeoutRate": 0.18,
           "top6WalkRate": 0.11,
+          "top6Rolling7Xwoba": 0.355,
+          "top6Rolling30Xwoba": 0.345,
+          "top6Rolling7HardHitPct": 28.8,
+          "top6Rolling30HardHitPct": 27.4,
+          "top6Rolling7SweetSpotPct": 34,
+          "top6Rolling30SweetSpotPct": 30.4,
+          "top6XwobaTrend": 0.01,
+          "top6HardHitTrend": 1.4,
+          "top6SweetSpotTrend": 3.6,
+          "contactTrendSignal": "improving",
           "hottestHitter": {
             "playerId": 592626,
             "playerName": "Joc Pederson",
@@ -12182,6 +12401,15 @@ export const rawGames = [
             "hitlessStreakGames": 5,
             "whiffRateLast5": 0.09,
             "strikeoutRateLast5": 0.23
+          },
+          "trendLeader": {
+            "playerId": 592626,
+            "playerName": "Joc Pederson",
+            "rolling7Xwoba": 0.477,
+            "rolling30Xwoba": 0.391,
+            "xwobaTrend": 0.086,
+            "hardHitTrend": 7.7,
+            "sweetSpotTrend": 0
           },
           "pressureHitter": {
             "playerId": 457705,

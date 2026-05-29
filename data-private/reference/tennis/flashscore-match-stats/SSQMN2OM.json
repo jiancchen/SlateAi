@@ -1,25 +1,528 @@
 {
+  "sourceKind": "recent-match",
   "slateDate": "2026-05-27",
-  "boardMatchId": "rg-w-francesca-jones-marie-bouzkova-2026-05-27",
-  "boardTitle": "Francesca Jones vs Marie Bouzkova",
-  "flashscoreLabel": "Bouzkova Marie - Jones Francesca",
-  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/",
-  "generatedAt": "2026-05-26T23:49:17.836Z",
-  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/bouzkova-marie-WMS3AdAb/jones-francesca-OU6w8nNa/",
-  "matchId": "SSQMN2OM",
+  "boardMatchId": "rg-w-mirra-andreeva-marie-bouzkova-2026-05-29",
+  "boardTitle": "Mirra Andreeva vs Marie Bouzkova",
+  "boardPlayerName": "Marie Bouzkova",
+  "recentOpponentName": "Francesca Jones",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "27 May 26",
+  "recentIsoDate": "2026-05-27",
+  "recentResult": "GBR  6-0 7-63 2nd",
+  "flashscoreLabel": "Jones F. - Bouzkova M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
   "players": [
-    "Marie Bouzkova",
-    "Francesca Jones"
+    "Jones F.",
+    "Bouzkova M."
   ],
+  "generatedAt": "2026-05-29T02:02:49.391Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/SSQMN2OM/",
+  "matchId": "SSQMN2OM",
   "feedUrls": {
     "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_SSQMN2OM",
     "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_SSQMN2OM"
   },
   "scoreSummary": {
-    "sets": [],
-    "totalDuration": ""
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:28"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 7,
+        "duration": "1:10"
+      }
+    ],
+    "totalDuration": "1:38"
   },
-  "scopes": [],
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "60%",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (19/34)",
+              "right": "72% (26/36)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "23% (5/22)",
+              "right": "46% (11/24)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/10",
+              "right": "2/5",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (10/36)",
+              "right": "44% (15/34)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (13/24)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "6/10",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "28",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "20",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (6/9)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "43% (24/56)",
+              "right": "62% (37/60)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (23/60)",
+              "right": "57% (32/56)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (47/116)",
+              "right": "59% (69/116)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (6/18)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "41%",
+              "right": "61%",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "43% (3/7)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "10% (1/10)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "0/0",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (4/11)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "14% (1/7)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/4",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "11",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "3",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "24% (4/17)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (5/18)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "26% (9/35)",
+              "right": "74% (26/35)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "60%",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (16/27)",
+              "right": "76% (19/25)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (4/12)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "2/5",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (6/25)",
+              "right": "41% (11/27)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (12/17)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "3/6",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "17",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "17",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "51% (20/39)",
+              "right": "57% (24/42)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (18/42)",
+              "right": "49% (19/39)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (38/81)",
+              "right": "53% (43/81)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Jones F.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "notes": [
     "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
     "Service games won and return games won are sourced directly from Flashscore match statistics."

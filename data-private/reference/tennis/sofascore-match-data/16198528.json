@@ -1,0 +1,697 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/rafael-jodar-alex-michelsen#id:16198528",
+  "eventId": "16198528",
+  "slateDate": "2026-05-29",
+  "boardMatchId": "rg-m-alex-michelsen-rafael-jodar-2026-05-29",
+  "boardTitle": "Alex Michelsen vs Rafael Jodar",
+  "capturedAt": "2026-05-29T02:04:07.091Z",
+  "compactEvent": {
+    "id": 16198528,
+    "slug": "rafael-jodar-alex-michelsen",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1780049400,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "ATP",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 6,
+      "name": "Round of 32",
+      "slug": "round-of-32",
+      "cupRoundType": 16
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 406728,
+      "name": "Alex Michelsen",
+      "shortName": "A. Michelsen",
+      "ranking": 42,
+      "currentRanking": 32,
+      "country": {
+        "alpha2": "US",
+        "alpha3": "USA",
+        "name": "USA",
+        "slug": "usa"
+      },
+      "playerTeamInfo": {
+        "height": 1.93,
+        "weight": 79,
+        "plays": "right-handed",
+        "prizeCurrent": 494548,
+        "prizeTotal": 3849847,
+        "birthCity": {
+          "name": "Laguna Hills",
+          "state": "US-CA",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 33010
+        },
+        "id": 5333,
+        "birthplace": "Laguna Hills, California, USA",
+        "birthDateTimestamp": 1093392000,
+        "prizeCurrentRaw": {
+          "value": 494548,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 3849847,
+          "currency": "EUR"
+        },
+        "currentRanking": 32
+      }
+    },
+    "awayTeam": {
+      "id": 458834,
+      "name": "Rafael Jodar",
+      "shortName": "R. Jódar",
+      "ranking": 29,
+      "currentRanking": 13,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "playerTeamInfo": {
+        "height": 1.91,
+        "weight": 70,
+        "plays": "right-handed",
+        "prizeCurrent": 877571,
+        "prizeTotal": 1173892,
+        "birthCity": {
+          "name": "Madrid",
+          "country": {
+            "alpha2": "ES",
+            "alpha3": "ESP",
+            "name": "Spain",
+            "slug": "spain"
+          },
+          "id": 18283
+        },
+        "id": 15332,
+        "birthplace": "Madrid, Spain",
+        "birthDateTimestamp": 1158451200,
+        "prizeCurrentRaw": {
+          "value": 877571,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 1173892,
+          "currency": "EUR"
+        },
+        "currentRanking": 13
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "awayTeamSeed": "27",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "ATP",
+              "slug": "atp",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 7,
+              "country": {},
+              "id": 3,
+              "flag": "atp",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "এটিপি",
+                  "hi": "डब्ल्यूटीए",
+                  "ar": "رابطة محترفي التنس",
+                  "ru": "ATP"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "ATP",
+                "slug": "atp",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 7,
+                "country": {},
+                "id": 3,
+                "flag": "atp",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "এটিপি",
+                    "hi": "डब्ल्यूटीए",
+                    "ar": "رابطة محترفي التنس",
+                    "ru": "ATP"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 35324,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2480,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गर्रोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185245,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1779580800,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "رولان غاروس، باريس، فرنسا"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "season": {
+            "name": "French Open Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85951
+          },
+          "roundInfo": {
+            "round": 6,
+            "name": "Round of 32",
+            "slug": "round-of-32",
+            "cupRoundType": 16
+          },
+          "customId": "DJmdsJBId",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-simonne-mathieu",
+            "name": "Court Simonne Mathieu",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 25283,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب سيمون ماتيو",
+                "hi": "कोर्ट सिमोन मैथ्यू",
+                "bn": "কোর্ট সাইমন ম্যাথিউ"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court Simonne Mathieu"
+            }
+          },
+          "homeTeam": {
+            "name": "Alex Michelsen",
+            "slug": "michelsen-alex",
+            "shortName": "A. Michelsen",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 6907,
+            "playerTeamInfo": {
+              "height": 1.93,
+              "weight": 79,
+              "plays": "right-handed",
+              "prizeCurrent": 494548,
+              "prizeTotal": 3849847,
+              "birthCity": {
+                "name": "Laguna Hills",
+                "state": "US-CA",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 33010
+              },
+              "id": 5333,
+              "birthplace": "Laguna Hills, California, USA",
+              "birthDateTimestamp": 1093392000,
+              "prizeCurrentRaw": {
+                "value": 494548,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 3849847,
+                "currency": "EUR"
+              },
+              "currentRanking": 32
+            },
+            "nameCode": "MIC",
+            "ranking": 42,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "US",
+              "alpha3": "USA",
+              "name": "USA",
+              "slug": "usa"
+            },
+            "id": 406728,
+            "fullName": "Alex Michelsen",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "أليكس ميشيلسن",
+                "bn": "অ্যালেক্স মিশেলসেন",
+                "hi": "एलेक्स मिकेलसन"
+              },
+              "shortNameTranslation": {
+                "ar": "أ. ميشيلسن"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Rafael Jodar",
+            "slug": "jodar-rafael",
+            "shortName": "R. Jódar",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 17864,
+            "playerTeamInfo": {
+              "height": 1.91,
+              "weight": 70,
+              "plays": "right-handed",
+              "prizeCurrent": 877571,
+              "prizeTotal": 1173892,
+              "birthCity": {
+                "name": "Madrid",
+                "country": {
+                  "alpha2": "ES",
+                  "alpha3": "ESP",
+                  "name": "Spain",
+                  "slug": "spain"
+                },
+                "id": 18283
+              },
+              "id": 15332,
+              "birthplace": "Madrid, Spain",
+              "birthDateTimestamp": 1158451200,
+              "prizeCurrentRaw": {
+                "value": 877571,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 1173892,
+                "currency": "EUR"
+              },
+              "currentRanking": 13
+            },
+            "nameCode": "JOD",
+            "ranking": 29,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "ES",
+              "alpha3": "ESP",
+              "name": "Spain",
+              "slug": "spain"
+            },
+            "id": 458834,
+            "fullName": "Rafael Jodar",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "رافائيل جودار"
+              },
+              "shortNameTranslation": {
+                "ar": "ر. جودار"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198528,
+          "defaultPeriodCount": 5,
+          "slug": "rafael-jodar-alex-michelsen",
+          "startTimestamp": 1780049400,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "SG",
+            "IR",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": null,
+        "managerDuel": null
+      }
+    },
+    "votes": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "vote": {
+          "vote1": 878,
+          "vote2": 8665,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": []
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "home": null,
+        "away": {
+          "fractionalValue": "1/5",
+          "expected": 83,
+          "actual": 94,
+          "id": 22125029
+        }
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "featured": {
+          "default": {
+            "sourceId": 195354110,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195354110,
+            "suspended": false,
+            "id": 312626974,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "3/1",
+                "fractionalValue": "4/1",
+                "sourceId": 1385117043,
+                "name": "1",
+                "change": 1
+              },
+              {
+                "initialFractionalValue": "1/4",
+                "fractionalValue": "17/100",
+                "sourceId": 1385117199,
+                "name": "2",
+                "change": -1
+              }
+            ]
+          },
+          "asian": {
+            "sourceId": 195354110,
+            "structureType": 2,
+            "marketId": 12,
+            "marketName": "Total games won",
+            "choiceGroup": "35.5",
+            "isLive": false,
+            "fid": 195354110,
+            "suspended": false,
+            "id": 312644742,
+            "marketGroup": "Total sets/games",
+            "marketPeriod": "Extra time",
+            "choices": [
+              {
+                "initialFractionalValue": "5/6",
+                "fractionalValue": "10/11",
+                "sourceId": 1385634707,
+                "name": "Over",
+                "change": 1
+              },
+              {
+                "initialFractionalValue": "5/6",
+                "fractionalValue": "4/5",
+                "sourceId": 1385634583,
+                "name": "Under",
+                "change": -1
+              }
+            ]
+          },
+          "fullTime": {
+            "sourceId": 195354110,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195354110,
+            "suspended": false,
+            "id": 312626974,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "3/1",
+                "fractionalValue": "4/1",
+                "sourceId": 1385117043,
+                "name": "1",
+                "change": 1
+              },
+              {
+                "initialFractionalValue": "1/4",
+                "fractionalValue": "17/100",
+                "sourceId": 1385117199,
+                "name": "2",
+                "change": -1
+              }
+            ]
+          }
+        },
+        "hasMoreOdds": true
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 280,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 1,
+          "wins": 2,
+          "aces": 19,
+          "firstServePointsScored": 83,
+          "firstServePointsTotal": 112,
+          "firstServeTotal": 196,
+          "secondServePointsScored": 51,
+          "secondServePointsTotal": 75,
+          "secondServeTotal": 84,
+          "breakPointsScored": 11,
+          "breakPointsTotal": 25,
+          "opponentBreakPointsTotal": 14,
+          "opponentBreakPointsScored": 5,
+          "winnersTotal": 78,
+          "unforcedErrorsTotal": 67,
+          "doubleFaults": 9,
+          "avgDoubleFaults": 4.5,
+          "firstServePercentage": 57.142857142857,
+          "firstServePointsWonPercentage": 74.107142857143,
+          "secondServePercentage": 89.285714285714,
+          "secondServePointsWonPercentage": 60.714285714286,
+          "avgAces": 9.5,
+          "breakPointsSavedPercentage": 64.285714285714,
+          "breakPointsSavedConvertedPercentage": 44,
+          "tiebreakWinPercentage": 100,
+          "id": 93202,
+          "matches": 2,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 254,
+          "tiebreakLosses": 1,
+          "tiebreaksWon": 0,
+          "wins": 2,
+          "aces": 11,
+          "firstServePointsScored": 96,
+          "firstServePointsTotal": 122,
+          "firstServeTotal": 188,
+          "secondServePointsScored": 43,
+          "secondServePointsTotal": 58,
+          "secondServeTotal": 66,
+          "breakPointsScored": 12,
+          "breakPointsTotal": 33,
+          "opponentBreakPointsTotal": 4,
+          "opponentBreakPointsScored": 2,
+          "winnersTotal": 65,
+          "unforcedErrorsTotal": 66,
+          "doubleFaults": 8,
+          "avgDoubleFaults": 4,
+          "firstServePercentage": 64.893617021277,
+          "firstServePointsWonPercentage": 78.688524590164,
+          "secondServePercentage": 87.878787878788,
+          "secondServePointsWonPercentage": 65.151515151515,
+          "avgAces": 5.5,
+          "breakPointsSavedPercentage": 50,
+          "breakPointsSavedConvertedPercentage": 36.363636363636,
+          "tiebreakWinPercentage": 0,
+          "id": 93237,
+          "matches": 2,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    }
+  }
+}

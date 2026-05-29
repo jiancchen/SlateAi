@@ -17,6 +17,7 @@ This project now keeps the deployable web app separate from the local event ware
 - `data-private/reference/tennis/player-rankings-history/YYYY-MM-DD.json`
   Dated ranking snapshots. Keep one per slate date so `tennis_rankings` can power historical ranking charts by player, tour, date, age, country, and points.
 - Tennis data now lands in the same SQLite warehouse via normalized tables for rankings, slate matches, H2H source snapshots, player clay/recent-form context, recent opponent logs, desk/source predictions, and Flashscore service/return stat rows.
+- `tennis_model_training_rows` is the flat tennis training/backtest table. It is rebuilt by `npm run data:train:tennis -- --target-date YYYY-MM-DD` from warehouse facts, not UI JSON, and includes normalized players, result labels, desk pick outcome, market probabilities, service/form metrics, and model-ready feature deltas.
 
 ## Why This Shape
 
@@ -53,6 +54,9 @@ npm run data:fetch:tennis-rankings -- --date 2026-05-26
 npm run data:import:tennis-rankings
 npm run data:import:tennis-slate -- --date 2026-05-26
 npm run data:import:tennis-flashscore
+npm run data:import:tennis-results -- --date 2026-05-26
+npm run data:grade:tennis -- --date 2026-05-26
+npm run data:train:tennis -- --target-date 2026-05-29
 npm run data:summary:tennis
 ```
 
@@ -66,3 +70,4 @@ npm run data:summary:tennis
 - The side-pick backtest flow is meant to expose pattern misses like `bullpen flip losses`, `thin-edge` misses, and `projected hit edge against pick` so we can tune first-5, spread, and moneyline models separately.
 - If we want semantic retrieval later, the best use would be embeddings for long-form notes, scouting blurbs, or source excerpts, while keeping game facts in SQLite.
 - For tennis, always fetch and import the ranking snapshot before opponent-quality enrichment. That preserves daily rank/points/age/country history in `tennis_rankings` instead of only keeping the latest player state.
+- After importing settled tennis results, run `data:grade:tennis` and `data:train:tennis`. The model script also labels rows directly from `tennis_match_results`, so the training corpus still remains usable if prediction grades need to be rebuilt.

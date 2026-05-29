@@ -1,25 +1,1020 @@
 {
+  "sourceKind": "recent-match",
   "slateDate": "2026-05-27",
-  "boardMatchId": "rg-m-mariano-navone-jakub-mensik-2026-05-27",
-  "boardTitle": "Mariano Navone vs Jakub Mensik",
-  "flashscoreLabel": "Mensik Jakub - Navone Mariano",
-  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
-  "generatedAt": "2026-05-26T23:49:14.608Z",
-  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/mensik-jakub-UFj257G8/navone-mariano-YoPUeL3o/",
-  "matchId": "zB9jZ2nB",
+  "boardMatchId": "rg-m-alex-de-minaur-jakub-mensik-2026-05-29",
+  "boardTitle": "Alex de Minaur vs Jakub Mensik",
+  "boardPlayerName": "Jakub Mensik",
+  "recentOpponentName": "Mariano Navone",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "27 May 26",
+  "recentIsoDate": "2026-05-27",
+  "recentResult": "ARG  6-3 2-6 6-4 1-6 7-611 2nd",
+  "flashscoreLabel": "Navone M. - Mensik J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
   "players": [
-    "Jakub Mensik",
-    "Mariano Navone"
+    "Navone M.",
+    "Mensik J."
   ],
+  "generatedAt": "2026-05-29T02:02:39.224Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/zB9jZ2nB/",
+  "matchId": "zB9jZ2nB",
   "feedUrls": {
     "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_zB9jZ2nB",
     "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_zB9jZ2nB"
   },
   "scoreSummary": {
-    "sets": [],
-    "totalDuration": ""
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:35"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": ""
+      },
+      {
+        "label": "Set 5",
+        "leftGames": 11,
+        "rightGames": 13,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "4:41"
   },
-  "scopes": [],
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "11",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "8",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "81%",
+              "right": "54%",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "66% (87/131)",
+              "right": "75% (67/89)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (15/30)",
+              "right": "45% (35/77)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "11/14",
+              "right": "11/16",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (22/89)",
+              "right": "34% (44/131)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (42/77)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/16",
+              "right": "3/14",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "44",
+              "right": "60",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "54",
+              "right": "85",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Net points won",
+              "left": "70% (16/23)",
+              "right": "67% (41/61)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (103/163)",
+              "right": "61% (102/166)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (64/166)",
+              "right": "37% (60/163)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (167/329)",
+              "right": "49% (162/329)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "7",
+              "right": "0",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "87% (20/23)",
+              "right": "78% (18/23)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return games won",
+              "left": "22% (5/23)",
+              "right": "13% (3/23)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total games won",
+              "left": "54% (25/46)",
+              "right": "46% (21/46)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "7",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "60%",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (12/17)",
+              "right": "89% (16/18)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (2/6)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "11% (2/18)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (6/12)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "12",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "9",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (14/23)",
+              "right": "73% (22/30)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (8/30)",
+              "right": "39% (9/23)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (22/53)",
+              "right": "58% (31/53)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "80%",
+              "right": "45%",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (14/16)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (2/4)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (4/9)",
+              "right": "13% (2/16)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (5/11)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "7",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "13",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "80% (16/20)",
+              "right": "55% (11/20)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (9/20)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (25/40)",
+              "right": "38% (15/40)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "82%",
+              "right": "50%",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (14/28)",
+              "right": "87% (13/15)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (4/6)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "2/3",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "13% (2/15)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (9/15)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/4",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "7",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "16",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (18/34)",
+              "right": "63% (19/30)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (11/30)",
+              "right": "47% (16/34)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (29/64)",
+              "right": "55% (35/64)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "85%",
+              "right": "70%",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "66% (19/29)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (3/5)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/5",
+              "right": "0/2",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (5/14)",
+              "right": "34% (10/29)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "100% (6/6)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/5",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "17",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (23/36)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (11/20)",
+              "right": "36% (13/36)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (34/56)",
+              "right": "39% (22/56)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 5",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "6",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "82%",
+              "right": "50%",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (28/41)",
+              "right": "73% (24/33)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "52% (17/33)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "9/9",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (9/33)",
+              "right": "32% (13/41)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (16/33)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/9",
+              "right": "0/4",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "27",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "30",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Net points won",
+              "left": "78% (7/9)",
+              "right": "70% (21/30)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (32/50)",
+              "right": "62% (41/66)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (25/66)",
+              "right": "36% (18/50)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (57/116)",
+              "right": "51% (59/116)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "7",
+              "right": "0",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Navone M.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "notes": [
     "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
     "Service games won and return games won are sourced directly from Flashscore match statistics."

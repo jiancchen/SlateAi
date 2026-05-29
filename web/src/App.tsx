@@ -25,6 +25,7 @@ import {
   defaultSlateDayId,
   fallbackSlateDayManifest,
   loadMlbPropBoardData,
+  searchSlateGamesData,
   loadSlateDayData,
   loadSlateGameDetailData,
   loadSlateManifestData,
@@ -1384,11 +1385,40 @@ const getTeamAccent = (league: string, teamName: string) => {
   return mlbTeamAccent[teamName] || '#4fd2a6'
 }
 
+const namesLikelyMatch = (left = '', right = '') => {
+  const normalizedLeft = normalizeNameToken(left)
+  const normalizedRight = normalizeNameToken(right)
+  if (!normalizedLeft || !normalizedRight) return false
+  return (
+    normalizedLeft === normalizedRight ||
+    normalizedLeft.includes(normalizedRight) ||
+    normalizedRight.includes(normalizedLeft)
+  )
+}
+
 const getCompetitorDisplayName = (game: AnyRecord, side: AnyRecord, index: number) => {
   if (game?.league === 'Tennis') {
     return side?.displayName || game.tennisContext?.players?.[index]?.label || side?.name || ''
   }
   return side?.name || ''
+}
+
+const getGameWinnerLabel = (game: AnyRecord) =>
+  String(game?.winnerTeam || game?.winnerName || game?.winner || game?.result?.winner || '').trim()
+
+const getGameResultLine = (game: AnyRecord) => {
+  const winnerLabel = getGameWinnerLabel(game)
+  if (!winnerLabel) return ''
+  const scoreline = String(game?.scoreline || game?.result?.scoreline || game?.tennisResult?.scoreline || '').trim()
+  const status = String(game?.result?.status || game?.tennisResult?.status || '').trim()
+  return `${winnerLabel} won${scoreline ? ` · ${scoreline}` : status ? ` · ${status}` : ''}`
+}
+
+const isWinningCompetitor = (game: AnyRecord, side: AnyRecord, index: number) => {
+  const winnerLabel = getGameWinnerLabel(game)
+  if (!winnerLabel) return false
+  const competitorLabel = getCompetitorDisplayName(game, side, index)
+  return namesLikelyMatch(competitorLabel, winnerLabel)
 }
 
 const getGameDisplayTitle = (game: AnyRecord) => {
@@ -1596,6 +1626,8 @@ function App() {
   const [selectedTotalsByDay, setSelectedTotalsByDay] = useState<Record<string, Record<string, AnyRecord>>>({})
   const [slateManifest, setSlateManifest] = useState<SlateManifestEntry[]>(fallbackSlateDayManifest)
   const [loadedSlates, setLoadedSlates] = useState<Record<string, LoadedSlateDay>>({})
+  const [globalSearchResults, setGlobalSearchResults] = useState<AnyRecord[]>([])
+  const [isGlobalSearchLoading, setIsGlobalSearchLoading] = useState(false)
   const [loadedGameDetailsByDay, setLoadedGameDetailsByDay] = useState<Record<string, Record<string, AnyRecord>>>({})
   const [loadingGameDetailsByDay, setLoadingGameDetailsByDay] = useState<Record<string, Record<string, boolean>>>({})
   const [loadedPropBoardsByDay, setLoadedPropBoardsByDay] = useState<Record<string, AnyRecord | null>>({})
@@ -1688,6 +1720,36 @@ function App() {
       cancelled = true
     }
   }, [activeDeskTab, historyLoaded])
+
+  useEffect(() => {
+    const query = marketSearch.trim()
+    if (query.length < 2) {
+      setGlobalSearchResults([])
+      setIsGlobalSearchLoading(false)
+      return
+    }
+
+    let cancelled = false
+    setIsGlobalSearchLoading(true)
+    const timer = window.setTimeout(() => {
+      searchSlateGamesData(query)
+        .then((results) => {
+          if (!cancelled) setGlobalSearchResults(results as AnyRecord[])
+        })
+        .catch((error) => {
+          console.error(`Failed to search slates for ${query}`, error)
+          if (!cancelled) setGlobalSearchResults([])
+        })
+        .finally(() => {
+          if (!cancelled) setIsGlobalSearchLoading(false)
+        })
+    }, 180)
+
+    return () => {
+      cancelled = true
+      window.clearTimeout(timer)
+    }
+  }, [marketSearch])
 
   useEffect(() => {
     if (storiesLoaded || activeDeskTab !== 'stories') return
@@ -2685,6 +2747,16 @@ function App() {
     setActiveFilter('All')
   }
 
+  const openGlobalSearchResult = (result: AnyRecord) => {
+    const date = String(result.date || '')
+    const gameId = String(result.gameId || '')
+    if (!date || !gameId) return
+    setActiveDayId(date)
+    setActiveFilter('All')
+    setSelectedGameIdByDay((current) => ({ ...current, [date]: gameId }))
+    setActiveDeskTab('board')
+  }
+
   const stepDay = (offset: number) => {
     const nextIndex = activeDayIndex + offset
     const target = orderedSlateDays[nextIndex]
@@ -2802,9 +2874,11 @@ function App() {
               className={`pick-button ${selectedPicks[game.id] === participant.id ? 'active' : ''}`}
               onClick={() => toggleMoneylineSelection(game, participant.id)}
             >
-              <span>{participant.name}</span>
-              <strong>{participant.americanLabel}</strong>
-              <small>{participant.impliedProbabilityLabel} implied</small>
+              <span className="pick-button-name">{participant.name}</span>
+              <span className="pick-button-price">
+                <strong>{participant.americanLabel}</strong>
+                <small>{participant.impliedProbabilityLabel} implied</small>
+              </span>
             </button>
           ))}
         </div>
@@ -4196,71 +4270,63 @@ function App() {
           </section>
         ) : null}
 
-        {context?.comparisonRows?.length ? (
+        {context?.comparisonRows?.length || weaknessEdge ? (
           <section className="detail-panel">
             <div className="detail-panel-header">
-              <p className="eyebrow">Matchup board</p>
-              <span>{projection?.overview || 'Clay comparison board'}</span>
+              <p className="eyebrow">Matchup + risk</p>
+              <span>{weaknessEdge?.edgeType || projection?.overview || 'Clay comparison board'}</span>
             </div>
-            <div className="react-comparison-grid">
-              {context.comparisonRows.map((row: AnyRecord) => {
-                const max = Math.max(row.leftScore || 1, row.rightScore || 1, 1)
-                return (
-                  <article key={row.label} className="react-comparison-row">
-                    <div className="react-comparison-meta">
-                      <strong>{row.label}</strong>
-                      <small>{row.metric}</small>
-                    </div>
-                    <div className="react-comparison-values">
-                      <span>{row.leftLabel}</span>
-                      <span>{row.rightLabel}</span>
-                    </div>
-                    <div className="react-comparison-bars">
-                      <div className="react-comparison-bar">
-                        <span style={{ width: `${Math.max(12, (row.leftScore / max) * 100)}%` }} />
+            {context?.comparisonRows?.length ? (
+              <div className="react-comparison-grid compact">
+                {context.comparisonRows.map((row: AnyRecord) => {
+                  const max = Math.max(row.leftScore || 1, row.rightScore || 1, 1)
+                  return (
+                    <article key={row.label} className="react-comparison-row">
+                      <div className="react-comparison-meta">
+                        <strong>{row.label}</strong>
+                        <small>{row.metric}</small>
                       </div>
-                      <div className="react-comparison-bar right">
-                        <span style={{ width: `${Math.max(12, (row.rightScore / max) * 100)}%` }} />
+                      <div className="react-comparison-values">
+                        <span>{row.leftLabel}</span>
+                        <span>{row.rightLabel}</span>
                       </div>
-                    </div>
-                    <div className="react-comparison-scoreline">
-                      <span>{row.leftScore}</span>
-                      <span>{row.winner}</span>
-                      <span>{row.rightScore}</span>
-                    </div>
-                  </article>
-                )
-              })}
-            </div>
-          </section>
-        ) : null}
-
-        {weaknessEdge ? (
-          <section className="detail-panel">
-            <div className="detail-panel-header">
-              <p className="eyebrow">Weakness edge</p>
-              <span>{weaknessEdge.edgeType || 'No clear weakness edge'}</span>
-            </div>
-            <p className="react-section-copy">{weaknessEdge.gameFlow}</p>
-            <div className="react-card-grid">
-              <article className={`react-mini-panel ${weaknessEdge.edgeType === 'Weakness warning' ? 'warning' : ''}`}>
-                <span className="eyebrow">Target</span>
-                <strong>{weaknessEdge.target || 'No target'}</strong>
-                <small>
-                  Score gap {Number.isFinite(Number(weaknessEdge.scoreGap)) ? formatNumber(weaknessEdge.scoreGap, 0) : 'N/A'}
-                </small>
-              </article>
-              <article className="react-mini-panel">
-                <span className="eyebrow">Live trigger</span>
-                <strong>{weaknessEdge.vulnerableSide || weaknessEdge.attackingSide || 'Wait'}</strong>
-                <small>{weaknessEdge.liveTrigger}</small>
-              </article>
-              <article className="react-mini-panel">
-                <span className="eyebrow">Spread / total</span>
-                <strong>{weaknessEdge.spreadRead}</strong>
-                <small>{weaknessEdge.totalRead}</small>
-              </article>
-            </div>
+                      <div className="react-comparison-bars">
+                        <div className="react-comparison-bar">
+                          <span style={{ width: `${Math.max(12, (row.leftScore / max) * 100)}%` }} />
+                        </div>
+                        <div className="react-comparison-bar right">
+                          <span style={{ width: `${Math.max(12, (row.rightScore / max) * 100)}%` }} />
+                        </div>
+                      </div>
+                      <div className="react-comparison-scoreline">
+                        <span>{row.leftScore}</span>
+                        <span>{row.winner}</span>
+                        <span>{row.rightScore}</span>
+                      </div>
+                    </article>
+                  )
+                })}
+              </div>
+            ) : null}
+            {weaknessEdge ? (
+              <div className="tennis-risk-strip">
+                <div>
+                  <span className="eyebrow">Attack target</span>
+                  <strong>{weaknessEdge.target || 'No target'}</strong>
+                  <small>Gap {Number.isFinite(Number(weaknessEdge.scoreGap)) ? formatNumber(weaknessEdge.scoreGap, 0) : 'N/A'}</small>
+                </div>
+                <div>
+                  <span className="eyebrow">Entry trigger</span>
+                  <strong>{weaknessEdge.vulnerableSide || weaknessEdge.attackingSide || 'Wait'}</strong>
+                  <small>{weaknessEdge.liveTrigger}</small>
+                </div>
+                <div>
+                  <span className="eyebrow">Spread / total</span>
+                  <strong>{weaknessEdge.spreadRead}</strong>
+                  <small>{weaknessEdge.totalRead}</small>
+                </div>
+              </div>
+            ) : null}
           </section>
         ) : null}
 
@@ -4278,8 +4344,22 @@ function App() {
               </article>
               <article className="react-mini-panel">
                 <span className="eyebrow">Coverage</span>
-                <strong>{warehouseContext.coverage?.playerStatRows ?? 0} player stat rows</strong>
-                <small>{warehouseContext.sourceUrl ? 'SofaScore event mapped to board match' : 'No event URL mapped'}</small>
+                <strong>
+                  {Number(warehouseContext.coverage?.liveStatRows || warehouseContext.coverage?.playerStatRows || 0) > 0
+                    ? `${warehouseContext.coverage?.liveStatRows || warehouseContext.coverage?.playerStatRows} live stat rows`
+                    : Number(warehouseContext.coverage?.expectedStatRows || 0) > 0
+                      ? `${warehouseContext.coverage.expectedStatRows} pregame stat fields`
+                      : 'No stat pack joined'}
+                </strong>
+                <small>
+                  {Number(warehouseContext.coverage?.liveStatRows || warehouseContext.coverage?.playerStatRows || 0) > 0
+                    ? 'In-match SofaScore statistics joined'
+                    : Number(warehouseContext.coverage?.expectedStatRows || 0) > 0
+                      ? `Season aggregates joined; live stats ${warehouseContext.coverage?.liveStatsStatus || 'unavailable'} before first ball`
+                      : warehouseContext.sourceUrl
+                        ? 'Event mapped, stats unavailable'
+                        : 'No event URL mapped'}
+                </small>
               </article>
               <article className="react-mini-panel">
                 <span className="eyebrow">Score state</span>
@@ -4881,6 +4961,37 @@ function App() {
             </div>
 
             <div className="games-rail-list no-scrollbar">
+              {marketSearch.trim().length >= 2 && globalSearchResults.length ? (
+                <section className="global-search-results">
+                  <div className="global-search-results-head">
+                    <span>All dates</span>
+                    <small>{globalSearchResults.length} match{globalSearchResults.length === 1 ? '' : 'es'}</small>
+                  </div>
+                  {globalSearchResults.slice(0, 12).map((result: AnyRecord) => (
+                    <button
+                      key={`${result.date}-${result.gameId}`}
+                      type="button"
+                      className={`global-search-result ${activeDayId === result.date && selectedGameId === result.gameId ? 'active' : ''}`}
+                      onClick={() => openGlobalSearchResult(result)}
+                    >
+                      <span>
+                        <strong>{result.title}</strong>
+                        <small>{result.dateLabel || result.date} · {result.start || 'TBD'} · {result.stage || result.league}</small>
+                      </span>
+                      <span className="global-search-result-meta">
+                        {result.winnerName ? <strong>{result.winnerName}</strong> : <strong>{result.confidence ?? ''}</strong>}
+                        <small>{result.scoreline || result.resultStatus || result.league}</small>
+                      </span>
+                    </button>
+                  ))}
+                </section>
+              ) : marketSearch.trim().length >= 2 && isGlobalSearchLoading ? (
+                <div className="placeholder-panel compact">
+                  <p className="eyebrow">Searching all dates</p>
+                  <h3>Looking across the archive</h3>
+                  <p>Checking every loaded slate for player, team, winner, and score matches.</p>
+                </div>
+              ) : null}
               {isActiveDayLoading ? (
                 <div className="placeholder-panel compact">
                   <p className="eyebrow">Loading slate</p>
@@ -4967,11 +5078,19 @@ function App() {
                     <div className="game-rail-row-main">
                       <div className="game-rail-title-wrap">
                         <div className="game-rail-title">
-                          <span>{getCompetitorDisplayName(game, game.matchup?.[0], 0)}</span>
+                          <span className={`game-rail-competitor ${isWinningCompetitor(game, game.matchup?.[0], 0) ? 'winner' : ''}`}>
+                            {getCompetitorDisplayName(game, game.matchup?.[0], 0)}
+                          </span>
                           <span className="versus-dot">vs</span>
-                          <span>{getCompetitorDisplayName(game, game.matchup?.[1], 1)}</span>
+                          <span className={`game-rail-competitor ${isWinningCompetitor(game, game.matchup?.[1], 1) ? 'winner' : ''}`}>
+                            {getCompetitorDisplayName(game, game.matchup?.[1], 1)}
+                          </span>
                         </div>
-                        <small>{game.analysis?.participant?.name} lean</small>
+                        <small>
+                          {game.winnerName
+                            ? getGameResultLine(game)
+                            : `${game.analysis?.participant?.name} lean`}
+                        </small>
                       </div>
                       <div className="game-rail-score mono">{game.analysis?.confidence}</div>
                     </div>

@@ -1,0 +1,123 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-francesca-jones-marie-bouzkova-2026-05-27",
+  "boardTitle": "Francesca Jones vs Marie Bouzkova",
+  "boardPlayerName": "Francesca Jones",
+  "recentOpponentName": "Lucia Bronzetti",
+  "recentIndex": 7,
+  "recentEvent": "",
+  "recentDate": "30 Apr 26",
+  "recentIsoDate": "2026-04-30",
+  "recentResult": "ITA  6-2 4-6 6-4 2nd",
+  "flashscoreLabel": "Bronzetti L. - Jones F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-women-singles/w100-wiesbaden/results/",
+  "players": [
+    "Bronzetti L.",
+    "Jones F."
+  ],
+  "generatedAt": "2026-05-29T01:58:28.302Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/WOBMCvzI/",
+  "matchId": "WOBMCvzI",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_WOBMCvzI",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_WOBMCvzI"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:30"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "1:01"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:20"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Jones F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Jones F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Jones F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Bronzetti L.",
+              "rightPlayer": "Jones F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

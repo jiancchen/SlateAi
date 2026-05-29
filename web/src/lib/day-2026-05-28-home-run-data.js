@@ -1,7 +1,7 @@
 export const homeRunBoardMeta = {
   "modelName": "statcast-hr-prototype-v3",
   "date": "2026-05-28",
-  "generatedAt": "2026-05-28T22:07:27.455Z",
+  "generatedAt": "2026-05-28T23:04:16.959Z",
   "sources": [
     "https://baseballsavant.mlb.com/leaderboard/home-runs",
     "https://baseballsavant.mlb.com/leaderboard/home-runs?year=2026&player_type=Batter&cat=xhr&team=&min=0&csv=true",
@@ -3660,6 +3660,145 @@ export const homeRunTargetsByGame = {
     "gameTitle": "Braves @ Red Sox",
     "likely": [
       {
+        "playerId": 671739,
+        "playerName": "Michael Harris II",
+        "teamAbbrev": "ATL",
+        "teamName": "Braves",
+        "gameTitle": "Braves @ Red Sox",
+        "opposingPitcher": "Payton Tolle",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0.66,
+        "parkHrIndex": 84,
+        "isHomeToday": false,
+        "opposingBullpenVulnerability": -3,
+        "seasonHr": 12,
+        "seasonXHR": 11.4,
+        "xhrDiff": 0.6,
+        "baseScore": 74.76200328467154,
+        "lineupContext": {
+          "gameTitle": "Braves @ Red Sox",
+          "teamName": "Braves",
+          "slot": 6,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "arsenal edge"
+          ],
+          "powerScore": 78.1,
+          "contactScore": 62.3,
+          "formScore": 92,
+          "splitScore": 18,
+          "matchupScore": 80.4,
+          "varianceScore": 92,
+          "pitchType": {
+            "fitScore": 82.5,
+            "fitGrade": 1.59,
+            "coveragePct": 100,
+            "summary": "4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit +1.6",
+            "topPitches": [
+              {
+                "pitchType": "FF",
+                "pitchName": "4-Seam Fastball",
+                "pitchUsage": 44.8,
+                "fitGrade": 0,
+                "batterFitScore": 94,
+                "qualityScore": 94
+              },
+              {
+                "pitchType": "SI",
+                "pitchName": "Sinker",
+                "pitchUsage": 24.2,
+                "fitGrade": 10,
+                "batterFitScore": 74.4,
+                "qualityScore": 18
+              },
+              {
+                "pitchType": "FC",
+                "pitchName": "Cutter",
+                "pitchUsage": 16,
+                "fitGrade": 0,
+                "batterFitScore": 94,
+                "qualityScore": 94
+              }
+            ]
+          },
+          "recentHomeRuns": 6,
+          "seasonHomeRuns": 13,
+          "splitHomeRuns": 3,
+          "lineupStatus": "posted",
+          "lineupCoverage": 9,
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
+        },
+        "lineupPriority": 34.7,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": {
+            "icon": "rain",
+            "summary": "100% Rain 64° Wind 8 mph Out",
+            "precipitationPct": 0,
+            "temperatureF": 64,
+            "windMph": 8,
+            "windDirection": "Out",
+            "label": "64°F | Wind 8 mph Out | 0% precip"
+          },
+          "total": 12
+        },
+        "weatherBoost": 3,
+        "recentHrSinceMay1": 6,
+        "homeRunsLast7Days": 3,
+        "homeRunsLast10Days": 4,
+        "daysSinceLastHr": 2,
+        "noDoubterRate": 0.17,
+        "avgExitVelocityOnHomers": 106.7,
+        "homeRunContext": {
+          "sampleSize": 12,
+          "homeShare": 0.25,
+          "awayShare": 0.75,
+          "starterShare": 0.5,
+          "reliefShare": 0.5,
+          "earlyShare": 0.33,
+          "lateShare": 0.33,
+          "highPressureShare": 0.25,
+          "trailingShare": 0.25,
+          "averageInning": 5.3,
+          "averageGapDays": 6.7,
+          "topPitchTypes": [
+            "Changeup",
+            "Sweeper"
+          ]
+        },
+        "score": 98.5,
+        "scoreBand": "strong",
+        "burstTag": "active",
+        "contextLabels": [
+          "Slot 6 | carry",
+          "road-heavy carry",
+          "mixed timing",
+          "late lane tighter"
+        ],
+        "signalSummary": "Slot 6 | carry | road-heavy carry | 0.66 HR/9 starter",
+        "rationale": [
+          "12 HR and 11.4 xHR on the season",
+          "6 HR since May 1 with 3 in the last 7 days and 4 in the last 10",
+          "Payton Tolle is allowing roughly 0.66 HR/9",
+          "Park HR index 84",
+          "Last HR came 2 days ago",
+          "Road today | historical split 75% on this side",
+          "50% off starters | 50% off relievers | avg inning 5.3",
+          "Most recent damage has skewed toward Changeup / Sweeper",
+          "No recent batting-leader signal stored yet",
+          "Weather lane: 64°F | Wind 8 mph Out | 0% precip",
+          "Slot 6 | carry | lineup priority 34.7 | bullpen vulnerability -3"
+        ],
+        "avoidHrChase": false,
+        "rawWeight": 40.915189973730975,
+        "modelShare": 0.304,
+        "modelSharePct": 30.4,
+        "lane": "anchor"
+      },
+      {
         "playerId": 575929,
         "playerName": "Willson Contreras",
         "teamAbbrev": "BOS",
@@ -3674,7 +3813,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 11,
         "seasonXHR": 10.6,
         "xhrDiff": 0.4,
-        "baseScore": 80.55559701492538,
+        "baseScore": 82.41604701492538,
         "lineupContext": {
           "gameTitle": "Braves @ Red Sox",
           "teamName": "Red Sox",
@@ -3687,9 +3826,9 @@ export const homeRunTargetsByGame = {
             "whiff risk",
             "arsenal risk"
           ],
-          "powerScore": 83.2,
+          "powerScore": 82.9,
           "contactScore": 57.4,
-          "formScore": 90,
+          "formScore": 91.1,
           "splitScore": 92,
           "matchupScore": 94,
           "varianceScore": 92,
@@ -3745,9 +3884,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "Out",
             "label": "64°F | Wind 8 mph Out | 0% precip"
           },
-          "total": 7.5
+          "total": 12
         },
-        "weatherBoost": 1.2,
+        "weatherBoost": 3,
         "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 2,
@@ -3771,7 +3910,7 @@ export const homeRunTargetsByGame = {
             "Slider"
           ]
         },
-        "score": 95.9,
+        "score": 97.8,
         "scoreBand": "strong",
         "burstTag": "carry",
         "contextLabels": [
@@ -3795,148 +3934,9 @@ export const homeRunTargetsByGame = {
           "Slot 4 | carry | lineup priority 46.5 | bullpen vulnerability -3"
         ],
         "avoidHrChase": false,
-        "rawWeight": 39.17975031313445,
-        "modelShare": 0.304,
-        "modelSharePct": 30.4,
-        "lane": "anchor"
-      },
-      {
-        "playerId": 671739,
-        "playerName": "Michael Harris II",
-        "teamAbbrev": "ATL",
-        "teamName": "Braves",
-        "gameTitle": "Braves @ Red Sox",
-        "opposingPitcher": "Payton Tolle",
-        "opposingPitcherHand": "L",
-        "opposingPitcherHr9": 0.66,
-        "parkHrIndex": 84,
-        "isHomeToday": false,
-        "opposingBullpenVulnerability": -3,
-        "seasonHr": 12,
-        "seasonXHR": 11.4,
-        "xhrDiff": 0.6,
-        "baseScore": 72.11835328467153,
-        "lineupContext": {
-          "gameTitle": "Braves @ Red Sox",
-          "teamName": "Braves",
-          "slot": 6,
-          "primaryTag": "carry",
-          "tags": [
-            "carry",
-            "heater",
-            "arsenal edge"
-          ],
-          "powerScore": 75.2,
-          "contactScore": 61.6,
-          "formScore": 92,
-          "splitScore": 18,
-          "matchupScore": 82.3,
-          "varianceScore": 92,
-          "pitchType": {
-            "fitScore": 82.5,
-            "fitGrade": 1.59,
-            "coveragePct": 100,
-            "summary": "4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit +1.6",
-            "topPitches": [
-              {
-                "pitchType": "FF",
-                "pitchName": "4-Seam Fastball",
-                "pitchUsage": 44.8,
-                "fitGrade": 0,
-                "batterFitScore": 94,
-                "qualityScore": 94
-              },
-              {
-                "pitchType": "SI",
-                "pitchName": "Sinker",
-                "pitchUsage": 24.2,
-                "fitGrade": 10,
-                "batterFitScore": 74.4,
-                "qualityScore": 18
-              },
-              {
-                "pitchType": "FC",
-                "pitchName": "Cutter",
-                "pitchUsage": 16,
-                "fitGrade": 0,
-                "batterFitScore": 94,
-                "qualityScore": 94
-              }
-            ]
-          },
-          "recentHomeRuns": 6,
-          "seasonHomeRuns": 12,
-          "splitHomeRuns": 3,
-          "lineupStatus": "posted",
-          "lineupCoverage": 9,
-          "lineupSource": "official-feed",
-          "lineupStateLabel": "posted order"
-        },
-        "lineupPriority": 33.7,
-        "battingImpactContext": null,
-        "weatherContext": {
-          "weather": {
-            "icon": "rain",
-            "summary": "100% Rain 64° Wind 8 mph Out",
-            "precipitationPct": 0,
-            "temperatureF": 64,
-            "windMph": 8,
-            "windDirection": "Out",
-            "label": "64°F | Wind 8 mph Out | 0% precip"
-          },
-          "total": 7.5
-        },
-        "weatherBoost": 1.2,
-        "recentHrSinceMay1": 6,
-        "homeRunsLast7Days": 3,
-        "homeRunsLast10Days": 4,
-        "daysSinceLastHr": 2,
-        "noDoubterRate": 0.17,
-        "avgExitVelocityOnHomers": 106.7,
-        "homeRunContext": {
-          "sampleSize": 12,
-          "homeShare": 0.25,
-          "awayShare": 0.75,
-          "starterShare": 0.5,
-          "reliefShare": 0.5,
-          "earlyShare": 0.33,
-          "lateShare": 0.33,
-          "highPressureShare": 0.25,
-          "trailingShare": 0.25,
-          "averageInning": 5.3,
-          "averageGapDays": 6.7,
-          "topPitchTypes": [
-            "Changeup",
-            "Sweeper"
-          ]
-        },
-        "score": 95.9,
-        "scoreBand": "strong",
-        "burstTag": "active",
-        "contextLabels": [
-          "Slot 6 | carry",
-          "road-heavy carry",
-          "mixed timing",
-          "late lane tighter"
-        ],
-        "signalSummary": "Slot 6 | carry | road-heavy carry | 0.66 HR/9 starter",
-        "rationale": [
-          "12 HR and 11.4 xHR on the season",
-          "6 HR since May 1 with 3 in the last 7 days and 4 in the last 10",
-          "Payton Tolle is allowing roughly 0.66 HR/9",
-          "Park HR index 84",
-          "Last HR came 2 days ago",
-          "Road today | historical split 75% on this side",
-          "50% off starters | 50% off relievers | avg inning 5.3",
-          "Most recent damage has skewed toward Changeup / Sweeper",
-          "No recent batting-leader signal stored yet",
-          "Weather lane: 64°F | Wind 8 mph Out | 0% precip",
-          "Slot 6 | carry | lineup priority 33.7 | bullpen vulnerability -3"
-        ],
-        "avoidHrChase": false,
-        "rawWeight": 39.17975031313445,
-        "modelShare": 0.304,
-        "modelSharePct": 30.4,
+        "rawWeight": 40.44859706995016,
+        "modelShare": 0.301,
+        "modelSharePct": 30.1,
         "lane": "anchor"
       }
     ],
@@ -3956,7 +3956,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 15,
         "seasonXHR": 17.1,
         "xhrDiff": -2.1,
-        "baseScore": 72.83625328467154,
+        "baseScore": 74.73090328467154,
         "lineupContext": {
           "gameTitle": "Braves @ Red Sox",
           "teamName": "Braves",
@@ -3966,10 +3966,10 @@ export const homeRunTargetsByGame = {
             "arsenal edge",
             "cold"
           ],
-          "powerScore": 79.6,
-          "contactScore": 53.4,
+          "powerScore": 79.9,
+          "contactScore": 54.1,
           "formScore": 18,
-          "splitScore": 31.1,
+          "splitScore": 30.5,
           "matchupScore": 18,
           "varianceScore": 92,
           "pitchType": {
@@ -4024,9 +4024,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "Out",
             "label": "64°F | Wind 8 mph Out | 0% precip"
           },
-          "total": 7.5
+          "total": 12
         },
-        "weatherBoost": 1.2,
+        "weatherBoost": 3,
         "recentHrSinceMay1": 6,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 1,
@@ -4050,7 +4050,7 @@ export const homeRunTargetsByGame = {
             "Slider"
           ]
         },
-        "score": 83.6,
+        "score": 85.5,
         "scoreBand": "strong",
         "burstTag": "active",
         "contextLabels": [
@@ -4074,10 +4074,10 @@ export const homeRunTargetsByGame = {
           "Slot 3 | arsenal edge | lineup priority 13.3 | bullpen vulnerability -3"
         ],
         "avoidHrChase": false,
-        "rawWeight": 30.87207809546971,
-        "modelShare": 0.24,
-        "modelSharePct": 24,
-        "lane": "anchor"
+        "rawWeight": 32.16696721314668,
+        "modelShare": 0.239,
+        "modelSharePct": 23.9,
+        "lane": "secondary"
       },
       {
         "playerId": 680776,
@@ -4094,7 +4094,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 8,
         "seasonXHR": 7.7,
         "xhrDiff": 0.3,
-        "baseScore": 53.06419701492538,
+        "baseScore": 54.959797014925364,
         "lineupContext": {
           "gameTitle": "Braves @ Red Sox",
           "teamName": "Red Sox",
@@ -4106,11 +4106,11 @@ export const homeRunTargetsByGame = {
             "whiff risk",
             "arsenal risk"
           ],
-          "powerScore": 35.7,
-          "contactScore": 42.4,
+          "powerScore": 35.4,
+          "contactScore": 42.5,
           "formScore": 92,
           "splitScore": 18,
-          "matchupScore": 74.4,
+          "matchupScore": 74.8,
           "varianceScore": 92,
           "pitchType": {
             "fitScore": 43.2,
@@ -4152,7 +4152,7 @@ export const homeRunTargetsByGame = {
           "lineupSource": "official-feed",
           "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 28.3,
+        "lineupPriority": 28.4,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -4164,9 +4164,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "Out",
             "label": "64°F | Wind 8 mph Out | 0% precip"
           },
-          "total": 7.5
+          "total": 12
         },
-        "weatherBoost": 1.2,
+        "weatherBoost": 3,
         "recentHrSinceMay1": 7,
         "homeRunsLast7Days": 2,
         "homeRunsLast10Days": 4,
@@ -4190,7 +4190,7 @@ export const homeRunTargetsByGame = {
             "Cutter"
           ]
         },
-        "score": 58.1,
+        "score": 60,
         "scoreBand": "thin",
         "burstTag": "active",
         "contextLabels": [
@@ -4211,12 +4211,12 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Four-Seam Fastball / Cutter",
           "No recent batting-leader signal stored yet",
           "Weather lane: 64°F | Wind 8 mph Out | 0% precip",
-          "Slot 1 | carry | lineup priority 28.3 | bullpen vulnerability -3"
+          "Slot 1 | carry | lineup priority 28.4 | bullpen vulnerability -3"
         ],
         "avoidHrChase": false,
-        "rawWeight": 12.89079808688617,
-        "modelShare": 0.1,
-        "modelSharePct": 10,
+        "rawWeight": 14.284028389939152,
+        "modelShare": 0.106,
+        "modelSharePct": 10.6,
         "lane": "live"
       }
     ],
@@ -4236,7 +4236,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 8,
         "seasonXHR": 8.3,
         "xhrDiff": -0.3,
-        "baseScore": 33.196253284671535,
+        "baseScore": 35.395353284671536,
         "lineupContext": {
           "gameTitle": "Braves @ Red Sox",
           "teamName": "Braves",
@@ -4246,12 +4246,12 @@ export const homeRunTargetsByGame = {
             "split edge",
             "cold"
           ],
-          "powerScore": 38.8,
-          "contactScore": 40,
-          "formScore": 38.7,
-          "splitScore": 35.2,
-          "matchupScore": 51.5,
-          "varianceScore": 73,
+          "powerScore": 38.3,
+          "contactScore": 39.1,
+          "formScore": 40.2,
+          "splitScore": 36.6,
+          "matchupScore": 52.3,
+          "varianceScore": 75.5,
           "pitchType": {
             "fitScore": 70.8,
             "fitGrade": -0.82,
@@ -4292,7 +4292,7 @@ export const homeRunTargetsByGame = {
           "lineupSource": "official-feed",
           "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 4.1,
+        "lineupPriority": 4.6,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -4304,9 +4304,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "Out",
             "label": "64°F | Wind 8 mph Out | 0% precip"
           },
-          "total": 7.5
+          "total": 12
         },
-        "weatherBoost": 1.2,
+        "weatherBoost": 3,
         "recentHrSinceMay1": 5,
         "homeRunsLast7Days": 0,
         "homeRunsLast10Days": 1,
@@ -4330,7 +4330,7 @@ export const homeRunTargetsByGame = {
             "Cutter"
           ]
         },
-        "score": 43.8,
+        "score": 46,
         "scoreBand": "thin",
         "burstTag": "cooling",
         "contextLabels": [
@@ -4351,16 +4351,155 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Four-Seam Fastball / Cutter",
           "No recent batting-leader signal stored yet",
           "Weather lane: 64°F | Wind 8 mph Out | 0% precip",
-          "Slot 5 | split edge | lineup priority 4.1 | bullpen vulnerability -3"
+          "Slot 5 | split edge | lineup priority 4.6 | bullpen vulnerability -3"
         ],
         "avoidHrChase": false,
         "rawWeight": 6.773962498900218,
-        "modelShare": 0.053,
-        "modelSharePct": 5.3,
+        "modelShare": 0.05,
+        "modelSharePct": 5,
         "lane": "thin"
       }
     ],
     "weightedPool": [
+      {
+        "playerId": 671739,
+        "playerName": "Michael Harris II",
+        "teamAbbrev": "ATL",
+        "teamName": "Braves",
+        "gameTitle": "Braves @ Red Sox",
+        "opposingPitcher": "Payton Tolle",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0.66,
+        "parkHrIndex": 84,
+        "isHomeToday": false,
+        "opposingBullpenVulnerability": -3,
+        "seasonHr": 12,
+        "seasonXHR": 11.4,
+        "xhrDiff": 0.6,
+        "baseScore": 74.76200328467154,
+        "lineupContext": {
+          "gameTitle": "Braves @ Red Sox",
+          "teamName": "Braves",
+          "slot": 6,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "arsenal edge"
+          ],
+          "powerScore": 78.1,
+          "contactScore": 62.3,
+          "formScore": 92,
+          "splitScore": 18,
+          "matchupScore": 80.4,
+          "varianceScore": 92,
+          "pitchType": {
+            "fitScore": 82.5,
+            "fitGrade": 1.59,
+            "coveragePct": 100,
+            "summary": "4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit +1.6",
+            "topPitches": [
+              {
+                "pitchType": "FF",
+                "pitchName": "4-Seam Fastball",
+                "pitchUsage": 44.8,
+                "fitGrade": 0,
+                "batterFitScore": 94,
+                "qualityScore": 94
+              },
+              {
+                "pitchType": "SI",
+                "pitchName": "Sinker",
+                "pitchUsage": 24.2,
+                "fitGrade": 10,
+                "batterFitScore": 74.4,
+                "qualityScore": 18
+              },
+              {
+                "pitchType": "FC",
+                "pitchName": "Cutter",
+                "pitchUsage": 16,
+                "fitGrade": 0,
+                "batterFitScore": 94,
+                "qualityScore": 94
+              }
+            ]
+          },
+          "recentHomeRuns": 6,
+          "seasonHomeRuns": 13,
+          "splitHomeRuns": 3,
+          "lineupStatus": "posted",
+          "lineupCoverage": 9,
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
+        },
+        "lineupPriority": 34.7,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": {
+            "icon": "rain",
+            "summary": "100% Rain 64° Wind 8 mph Out",
+            "precipitationPct": 0,
+            "temperatureF": 64,
+            "windMph": 8,
+            "windDirection": "Out",
+            "label": "64°F | Wind 8 mph Out | 0% precip"
+          },
+          "total": 12
+        },
+        "weatherBoost": 3,
+        "recentHrSinceMay1": 6,
+        "homeRunsLast7Days": 3,
+        "homeRunsLast10Days": 4,
+        "daysSinceLastHr": 2,
+        "noDoubterRate": 0.17,
+        "avgExitVelocityOnHomers": 106.7,
+        "homeRunContext": {
+          "sampleSize": 12,
+          "homeShare": 0.25,
+          "awayShare": 0.75,
+          "starterShare": 0.5,
+          "reliefShare": 0.5,
+          "earlyShare": 0.33,
+          "lateShare": 0.33,
+          "highPressureShare": 0.25,
+          "trailingShare": 0.25,
+          "averageInning": 5.3,
+          "averageGapDays": 6.7,
+          "topPitchTypes": [
+            "Changeup",
+            "Sweeper"
+          ]
+        },
+        "score": 98.5,
+        "scoreBand": "strong",
+        "burstTag": "active",
+        "contextLabels": [
+          "Slot 6 | carry",
+          "road-heavy carry",
+          "mixed timing",
+          "late lane tighter"
+        ],
+        "signalSummary": "Slot 6 | carry | road-heavy carry | 0.66 HR/9 starter",
+        "rationale": [
+          "12 HR and 11.4 xHR on the season",
+          "6 HR since May 1 with 3 in the last 7 days and 4 in the last 10",
+          "Payton Tolle is allowing roughly 0.66 HR/9",
+          "Park HR index 84",
+          "Last HR came 2 days ago",
+          "Road today | historical split 75% on this side",
+          "50% off starters | 50% off relievers | avg inning 5.3",
+          "Most recent damage has skewed toward Changeup / Sweeper",
+          "No recent batting-leader signal stored yet",
+          "Weather lane: 64°F | Wind 8 mph Out | 0% precip",
+          "Slot 6 | carry | lineup priority 34.7 | bullpen vulnerability -3"
+        ],
+        "avoidHrChase": false,
+        "rawWeight": 40.915189973730975,
+        "modelShare": 0.304,
+        "modelSharePct": 30.4,
+        "lane": "anchor"
+      },
       {
         "playerId": 575929,
         "playerName": "Willson Contreras",
@@ -4376,7 +4515,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 11,
         "seasonXHR": 10.6,
         "xhrDiff": 0.4,
-        "baseScore": 80.55559701492538,
+        "baseScore": 82.41604701492538,
         "lineupContext": {
           "gameTitle": "Braves @ Red Sox",
           "teamName": "Red Sox",
@@ -4389,9 +4528,9 @@ export const homeRunTargetsByGame = {
             "whiff risk",
             "arsenal risk"
           ],
-          "powerScore": 83.2,
+          "powerScore": 82.9,
           "contactScore": 57.4,
-          "formScore": 90,
+          "formScore": 91.1,
           "splitScore": 92,
           "matchupScore": 94,
           "varianceScore": 92,
@@ -4447,9 +4586,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "Out",
             "label": "64°F | Wind 8 mph Out | 0% precip"
           },
-          "total": 7.5
+          "total": 12
         },
-        "weatherBoost": 1.2,
+        "weatherBoost": 3,
         "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 2,
@@ -4473,7 +4612,7 @@ export const homeRunTargetsByGame = {
             "Slider"
           ]
         },
-        "score": 95.9,
+        "score": 97.8,
         "scoreBand": "strong",
         "burstTag": "carry",
         "contextLabels": [
@@ -4497,148 +4636,9 @@ export const homeRunTargetsByGame = {
           "Slot 4 | carry | lineup priority 46.5 | bullpen vulnerability -3"
         ],
         "avoidHrChase": false,
-        "rawWeight": 39.17975031313445,
-        "modelShare": 0.304,
-        "modelSharePct": 30.4,
-        "lane": "anchor"
-      },
-      {
-        "playerId": 671739,
-        "playerName": "Michael Harris II",
-        "teamAbbrev": "ATL",
-        "teamName": "Braves",
-        "gameTitle": "Braves @ Red Sox",
-        "opposingPitcher": "Payton Tolle",
-        "opposingPitcherHand": "L",
-        "opposingPitcherHr9": 0.66,
-        "parkHrIndex": 84,
-        "isHomeToday": false,
-        "opposingBullpenVulnerability": -3,
-        "seasonHr": 12,
-        "seasonXHR": 11.4,
-        "xhrDiff": 0.6,
-        "baseScore": 72.11835328467153,
-        "lineupContext": {
-          "gameTitle": "Braves @ Red Sox",
-          "teamName": "Braves",
-          "slot": 6,
-          "primaryTag": "carry",
-          "tags": [
-            "carry",
-            "heater",
-            "arsenal edge"
-          ],
-          "powerScore": 75.2,
-          "contactScore": 61.6,
-          "formScore": 92,
-          "splitScore": 18,
-          "matchupScore": 82.3,
-          "varianceScore": 92,
-          "pitchType": {
-            "fitScore": 82.5,
-            "fitGrade": 1.59,
-            "coveragePct": 100,
-            "summary": "4-Seam Fastball 45% / Sinker 24% / Cutter 16% | fit +1.6",
-            "topPitches": [
-              {
-                "pitchType": "FF",
-                "pitchName": "4-Seam Fastball",
-                "pitchUsage": 44.8,
-                "fitGrade": 0,
-                "batterFitScore": 94,
-                "qualityScore": 94
-              },
-              {
-                "pitchType": "SI",
-                "pitchName": "Sinker",
-                "pitchUsage": 24.2,
-                "fitGrade": 10,
-                "batterFitScore": 74.4,
-                "qualityScore": 18
-              },
-              {
-                "pitchType": "FC",
-                "pitchName": "Cutter",
-                "pitchUsage": 16,
-                "fitGrade": 0,
-                "batterFitScore": 94,
-                "qualityScore": 94
-              }
-            ]
-          },
-          "recentHomeRuns": 6,
-          "seasonHomeRuns": 12,
-          "splitHomeRuns": 3,
-          "lineupStatus": "posted",
-          "lineupCoverage": 9,
-          "lineupSource": "official-feed",
-          "lineupStateLabel": "posted order"
-        },
-        "lineupPriority": 33.7,
-        "battingImpactContext": null,
-        "weatherContext": {
-          "weather": {
-            "icon": "rain",
-            "summary": "100% Rain 64° Wind 8 mph Out",
-            "precipitationPct": 0,
-            "temperatureF": 64,
-            "windMph": 8,
-            "windDirection": "Out",
-            "label": "64°F | Wind 8 mph Out | 0% precip"
-          },
-          "total": 7.5
-        },
-        "weatherBoost": 1.2,
-        "recentHrSinceMay1": 6,
-        "homeRunsLast7Days": 3,
-        "homeRunsLast10Days": 4,
-        "daysSinceLastHr": 2,
-        "noDoubterRate": 0.17,
-        "avgExitVelocityOnHomers": 106.7,
-        "homeRunContext": {
-          "sampleSize": 12,
-          "homeShare": 0.25,
-          "awayShare": 0.75,
-          "starterShare": 0.5,
-          "reliefShare": 0.5,
-          "earlyShare": 0.33,
-          "lateShare": 0.33,
-          "highPressureShare": 0.25,
-          "trailingShare": 0.25,
-          "averageInning": 5.3,
-          "averageGapDays": 6.7,
-          "topPitchTypes": [
-            "Changeup",
-            "Sweeper"
-          ]
-        },
-        "score": 95.9,
-        "scoreBand": "strong",
-        "burstTag": "active",
-        "contextLabels": [
-          "Slot 6 | carry",
-          "road-heavy carry",
-          "mixed timing",
-          "late lane tighter"
-        ],
-        "signalSummary": "Slot 6 | carry | road-heavy carry | 0.66 HR/9 starter",
-        "rationale": [
-          "12 HR and 11.4 xHR on the season",
-          "6 HR since May 1 with 3 in the last 7 days and 4 in the last 10",
-          "Payton Tolle is allowing roughly 0.66 HR/9",
-          "Park HR index 84",
-          "Last HR came 2 days ago",
-          "Road today | historical split 75% on this side",
-          "50% off starters | 50% off relievers | avg inning 5.3",
-          "Most recent damage has skewed toward Changeup / Sweeper",
-          "No recent batting-leader signal stored yet",
-          "Weather lane: 64°F | Wind 8 mph Out | 0% precip",
-          "Slot 6 | carry | lineup priority 33.7 | bullpen vulnerability -3"
-        ],
-        "avoidHrChase": false,
-        "rawWeight": 39.17975031313445,
-        "modelShare": 0.304,
-        "modelSharePct": 30.4,
+        "rawWeight": 40.44859706995016,
+        "modelShare": 0.301,
+        "modelSharePct": 30.1,
         "lane": "anchor"
       },
       {
@@ -4656,7 +4656,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 15,
         "seasonXHR": 17.1,
         "xhrDiff": -2.1,
-        "baseScore": 72.83625328467154,
+        "baseScore": 74.73090328467154,
         "lineupContext": {
           "gameTitle": "Braves @ Red Sox",
           "teamName": "Braves",
@@ -4666,10 +4666,10 @@ export const homeRunTargetsByGame = {
             "arsenal edge",
             "cold"
           ],
-          "powerScore": 79.6,
-          "contactScore": 53.4,
+          "powerScore": 79.9,
+          "contactScore": 54.1,
           "formScore": 18,
-          "splitScore": 31.1,
+          "splitScore": 30.5,
           "matchupScore": 18,
           "varianceScore": 92,
           "pitchType": {
@@ -4724,9 +4724,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "Out",
             "label": "64°F | Wind 8 mph Out | 0% precip"
           },
-          "total": 7.5
+          "total": 12
         },
-        "weatherBoost": 1.2,
+        "weatherBoost": 3,
         "recentHrSinceMay1": 6,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 1,
@@ -4750,7 +4750,7 @@ export const homeRunTargetsByGame = {
             "Slider"
           ]
         },
-        "score": 83.6,
+        "score": 85.5,
         "scoreBand": "strong",
         "burstTag": "active",
         "contextLabels": [
@@ -4774,10 +4774,10 @@ export const homeRunTargetsByGame = {
           "Slot 3 | arsenal edge | lineup priority 13.3 | bullpen vulnerability -3"
         ],
         "avoidHrChase": false,
-        "rawWeight": 30.87207809546971,
-        "modelShare": 0.24,
-        "modelSharePct": 24,
-        "lane": "anchor"
+        "rawWeight": 32.16696721314668,
+        "modelShare": 0.239,
+        "modelSharePct": 23.9,
+        "lane": "secondary"
       },
       {
         "playerId": 680776,
@@ -4794,7 +4794,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 8,
         "seasonXHR": 7.7,
         "xhrDiff": 0.3,
-        "baseScore": 53.06419701492538,
+        "baseScore": 54.959797014925364,
         "lineupContext": {
           "gameTitle": "Braves @ Red Sox",
           "teamName": "Red Sox",
@@ -4806,11 +4806,11 @@ export const homeRunTargetsByGame = {
             "whiff risk",
             "arsenal risk"
           ],
-          "powerScore": 35.7,
-          "contactScore": 42.4,
+          "powerScore": 35.4,
+          "contactScore": 42.5,
           "formScore": 92,
           "splitScore": 18,
-          "matchupScore": 74.4,
+          "matchupScore": 74.8,
           "varianceScore": 92,
           "pitchType": {
             "fitScore": 43.2,
@@ -4852,7 +4852,7 @@ export const homeRunTargetsByGame = {
           "lineupSource": "official-feed",
           "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 28.3,
+        "lineupPriority": 28.4,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -4864,9 +4864,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "Out",
             "label": "64°F | Wind 8 mph Out | 0% precip"
           },
-          "total": 7.5
+          "total": 12
         },
-        "weatherBoost": 1.2,
+        "weatherBoost": 3,
         "recentHrSinceMay1": 7,
         "homeRunsLast7Days": 2,
         "homeRunsLast10Days": 4,
@@ -4890,7 +4890,7 @@ export const homeRunTargetsByGame = {
             "Cutter"
           ]
         },
-        "score": 58.1,
+        "score": 60,
         "scoreBand": "thin",
         "burstTag": "active",
         "contextLabels": [
@@ -4911,12 +4911,12 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Four-Seam Fastball / Cutter",
           "No recent batting-leader signal stored yet",
           "Weather lane: 64°F | Wind 8 mph Out | 0% precip",
-          "Slot 1 | carry | lineup priority 28.3 | bullpen vulnerability -3"
+          "Slot 1 | carry | lineup priority 28.4 | bullpen vulnerability -3"
         ],
         "avoidHrChase": false,
-        "rawWeight": 12.89079808688617,
-        "modelShare": 0.1,
-        "modelSharePct": 10,
+        "rawWeight": 14.284028389939152,
+        "modelShare": 0.106,
+        "modelSharePct": 10.6,
         "lane": "live"
       },
       {
@@ -4934,7 +4934,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 8,
         "seasonXHR": 8.3,
         "xhrDiff": -0.3,
-        "baseScore": 33.196253284671535,
+        "baseScore": 35.395353284671536,
         "lineupContext": {
           "gameTitle": "Braves @ Red Sox",
           "teamName": "Braves",
@@ -4944,12 +4944,12 @@ export const homeRunTargetsByGame = {
             "split edge",
             "cold"
           ],
-          "powerScore": 38.8,
-          "contactScore": 40,
-          "formScore": 38.7,
-          "splitScore": 35.2,
-          "matchupScore": 51.5,
-          "varianceScore": 73,
+          "powerScore": 38.3,
+          "contactScore": 39.1,
+          "formScore": 40.2,
+          "splitScore": 36.6,
+          "matchupScore": 52.3,
+          "varianceScore": 75.5,
           "pitchType": {
             "fitScore": 70.8,
             "fitGrade": -0.82,
@@ -4990,7 +4990,7 @@ export const homeRunTargetsByGame = {
           "lineupSource": "official-feed",
           "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 4.1,
+        "lineupPriority": 4.6,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -5002,9 +5002,9 @@ export const homeRunTargetsByGame = {
             "windDirection": "Out",
             "label": "64°F | Wind 8 mph Out | 0% precip"
           },
-          "total": 7.5
+          "total": 12
         },
-        "weatherBoost": 1.2,
+        "weatherBoost": 3,
         "recentHrSinceMay1": 5,
         "homeRunsLast7Days": 0,
         "homeRunsLast10Days": 1,
@@ -5028,7 +5028,7 @@ export const homeRunTargetsByGame = {
             "Cutter"
           ]
         },
-        "score": 43.8,
+        "score": 46,
         "scoreBand": "thin",
         "burstTag": "cooling",
         "contextLabels": [
@@ -5049,16 +5049,16 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Four-Seam Fastball / Cutter",
           "No recent batting-leader signal stored yet",
           "Weather lane: 64°F | Wind 8 mph Out | 0% precip",
-          "Slot 5 | split edge | lineup priority 4.1 | bullpen vulnerability -3"
+          "Slot 5 | split edge | lineup priority 4.6 | bullpen vulnerability -3"
         ],
         "avoidHrChase": false,
         "rawWeight": 6.773962498900218,
-        "modelShare": 0.053,
-        "modelSharePct": 5.3,
+        "modelShare": 0.05,
+        "modelSharePct": 5,
         "lane": "thin"
       }
     ],
-    "summary": "Willson Contreras is the cleanest likely bat here because the posted order still grades carry, the recent HR sample leans mixed timing, and today still profiles as a neutral venue split look. The better way to read this game is as a weighted cluster through Willson Contreras, Michael Harris II, Matt Olson, Jarren Duran rather than a solo-bat script."
+    "summary": "Michael Harris II is the cleanest likely bat here because the posted order still grades carry, the recent HR sample leans mixed timing, and today still profiles as a road-heavy carry look. The better way to read this game is as a weighted cluster through Michael Harris II, Willson Contreras, Matt Olson, Jarren Duran rather than a solo-bat script."
   },
   "Blue Jays @ Orioles": {
     "gameTitle": "Blue Jays @ Orioles",
@@ -5071,14 +5071,14 @@ export const homeRunTargetsByGame = {
         "gameTitle": "Blue Jays @ Orioles",
         "opposingPitcher": "Patrick Corbin",
         "opposingPitcherHand": "L",
-        "opposingPitcherHr9": 0.82,
+        "opposingPitcherHr9": 0.8,
         "parkHrIndex": 112,
         "isHomeToday": true,
         "opposingBullpenVulnerability": 0.6,
         "seasonHr": 13,
         "seasonXHR": 12.1,
         "xhrDiff": 0.9,
-        "baseScore": 92.61427040816328,
+        "baseScore": 91.60168791574281,
         "lineupContext": {
           "gameTitle": "Blue Jays @ Orioles",
           "teamName": "Orioles",
@@ -5090,8 +5090,8 @@ export const homeRunTargetsByGame = {
             "split edge",
             "arsenal edge"
           ],
-          "powerScore": 79.5,
-          "contactScore": 42.4,
+          "powerScore": 79.3,
+          "contactScore": 42.2,
           "formScore": 92,
           "splitScore": 92,
           "matchupScore": 94,
@@ -5136,21 +5136,21 @@ export const homeRunTargetsByGame = {
           "lineupSource": "official-feed",
           "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 56.8,
+        "lineupPriority": 56.7,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "0% 76° Wind 13 mph",
+            "summary": "0% 76° Wind 9 mph L-R",
             "precipitationPct": 0,
             "temperatureF": 76,
-            "windMph": null,
-            "windDirection": "",
-            "label": "76°F | 0% precip"
+            "windMph": 9,
+            "windDirection": "L-R",
+            "label": "76°F | Wind 9 mph L-R | 0% precip"
           },
-          "total": 8.5
+          "total": 7
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 3,
         "homeRunsLast10Days": 3,
@@ -5174,7 +5174,7 @@ export const homeRunTargetsByGame = {
             "Changeup"
           ]
         },
-        "score": 114.6,
+        "score": 113.6,
         "scoreBand": "premium",
         "burstTag": "carry",
         "contextLabels": [
@@ -5183,24 +5183,24 @@ export const homeRunTargetsByGame = {
           "close-game pop",
           "neutral bullpen"
         ],
-        "signalSummary": "Slot 2 | carry | close-game pop | 0.82 HR/9 starter",
+        "signalSummary": "Slot 2 | carry | close-game pop | 0.8 HR/9 starter",
         "rationale": [
           "13 HR and 12.1 xHR on the season",
           "4 HR since May 1 with 3 in the last 7 days and 3 in the last 10",
-          "Patrick Corbin is allowing roughly 0.82 HR/9",
+          "Patrick Corbin is allowing roughly 0.8 HR/9",
           "Park HR index 112",
           "Last HR came 1 day ago",
           "Home today | historical split 58% on this side",
           "50% off starters | 50% off relievers | avg inning 5.3",
           "Most recent damage has skewed toward Cutter / Changeup",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 76°F | 0% precip",
-          "Slot 2 | carry | lineup priority 56.8 | bullpen vulnerability 0.6"
+          "Weather lane: 76°F | Wind 9 mph L-R | 0% precip",
+          "Slot 2 | carry | lineup priority 56.7 | bullpen vulnerability 0.6"
         ],
         "avoidHrChase": false,
-        "rawWeight": 51.53018374312403,
-        "modelShare": 0.608,
-        "modelSharePct": 60.8,
+        "rawWeight": 50.876822593222705,
+        "modelShare": 0.613,
+        "modelSharePct": 61.3,
         "lane": "anchor"
       },
       {
@@ -5211,14 +5211,14 @@ export const homeRunTargetsByGame = {
         "gameTitle": "Blue Jays @ Orioles",
         "opposingPitcher": "Patrick Corbin",
         "opposingPitcherHand": "L",
-        "opposingPitcherHr9": 0.82,
+        "opposingPitcherHr9": 0.8,
         "parkHrIndex": 112,
         "isHomeToday": true,
         "opposingBullpenVulnerability": 0.6,
         "seasonHr": 10,
         "seasonXHR": 11.1,
         "xhrDiff": -1.1,
-        "baseScore": 51.38627040816327,
+        "baseScore": 50.7028379157428,
         "lineupContext": {
           "gameTitle": "Blue Jays @ Orioles",
           "teamName": "Orioles",
@@ -5227,12 +5227,12 @@ export const homeRunTargetsByGame = {
           "tags": [
             "split edge"
           ],
-          "powerScore": 53.3,
-          "contactScore": 47.9,
-          "formScore": 49.4,
-          "splitScore": 23.6,
-          "matchupScore": 58.9,
-          "varianceScore": 59.5,
+          "powerScore": 53,
+          "contactScore": 47.2,
+          "formScore": 50.2,
+          "splitScore": 24.4,
+          "matchupScore": 59.4,
+          "varianceScore": 60.1,
           "pitchType": {
             "fitScore": 61.8,
             "fitGrade": 1.14,
@@ -5273,21 +5273,21 @@ export const homeRunTargetsByGame = {
           "lineupSource": "official-feed",
           "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 11.9,
+        "lineupPriority": 12.1,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "0% 76° Wind 13 mph",
+            "summary": "0% 76° Wind 9 mph L-R",
             "precipitationPct": 0,
             "temperatureF": 76,
-            "windMph": null,
-            "windDirection": "",
-            "label": "76°F | 0% precip"
+            "windMph": 9,
+            "windDirection": "L-R",
+            "label": "76°F | Wind 9 mph L-R | 0% precip"
           },
-          "total": 8.5
+          "total": 7
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 6,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 2,
@@ -5311,7 +5311,7 @@ export const homeRunTargetsByGame = {
             "Sinker"
           ]
         },
-        "score": 66.7,
+        "score": 66,
         "scoreBand": "thin",
         "burstTag": "active",
         "contextLabels": [
@@ -5320,24 +5320,24 @@ export const homeRunTargetsByGame = {
           "mixed timing",
           "neutral bullpen"
         ],
-        "signalSummary": "Slot 4 | split edge | neutral bullpen | 0.82 HR/9 starter",
+        "signalSummary": "Slot 4 | split edge | neutral bullpen | 0.8 HR/9 starter",
         "rationale": [
           "10 HR and 11.1 xHR on the season",
           "6 HR since May 1 with 1 in the last 7 days and 2 in the last 10",
-          "Patrick Corbin is allowing roughly 0.82 HR/9",
+          "Patrick Corbin is allowing roughly 0.8 HR/9",
           "Park HR index 112",
           "Last HR came 6 days ago",
           "Home today | historical split 50% on this side",
           "70% off starters | 30% off relievers | avg inning 3.7",
           "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 76°F | 0% precip",
-          "Slot 4 | split edge | lineup priority 11.9 | bullpen vulnerability 0.6"
+          "Weather lane: 76°F | Wind 9 mph L-R | 0% precip",
+          "Slot 4 | split edge | lineup priority 12.1 | bullpen vulnerability 0.6"
         ],
         "avoidHrChase": false,
-        "rawWeight": 19.110902508088397,
-        "modelShare": 0.226,
-        "modelSharePct": 22.6,
+        "rawWeight": 18.612055648803814,
+        "modelShare": 0.224,
+        "modelSharePct": 22.4,
         "lane": "secondary"
       }
     ],
@@ -5351,14 +5351,14 @@ export const homeRunTargetsByGame = {
         "gameTitle": "Blue Jays @ Orioles",
         "opposingPitcher": "Patrick Corbin",
         "opposingPitcherHand": "L",
-        "opposingPitcherHr9": 0.82,
+        "opposingPitcherHr9": 0.8,
         "parkHrIndex": 112,
         "isHomeToday": true,
         "opposingBullpenVulnerability": 0.6,
         "seasonHr": 5,
         "seasonXHR": 5,
         "xhrDiff": 0,
-        "baseScore": 50.081770408163266,
+        "baseScore": 48.9796879157428,
         "lineupContext": {
           "gameTitle": "Blue Jays @ Orioles",
           "teamName": "Orioles",
@@ -5369,8 +5369,8 @@ export const homeRunTargetsByGame = {
             "heater",
             "split edge"
           ],
-          "powerScore": 57.5,
-          "contactScore": 37.7,
+          "powerScore": 57.1,
+          "contactScore": 36.8,
           "formScore": 92,
           "splitScore": 92,
           "matchupScore": 94,
@@ -5415,21 +5415,21 @@ export const homeRunTargetsByGame = {
           "lineupSource": "official-feed",
           "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 29.4,
+        "lineupPriority": 29.2,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "0% 76° Wind 13 mph",
+            "summary": "0% 76° Wind 9 mph L-R",
             "precipitationPct": 0,
             "temperatureF": 76,
-            "windMph": null,
-            "windDirection": "",
-            "label": "76°F | 0% precip"
+            "windMph": 9,
+            "windDirection": "L-R",
+            "label": "76°F | Wind 9 mph L-R | 0% precip"
           },
-          "total": 8.5
+          "total": 7
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 2,
         "homeRunsLast7Days": 0,
         "homeRunsLast10Days": 0,
@@ -5453,7 +5453,7 @@ export const homeRunTargetsByGame = {
             "Sinker"
           ]
         },
-        "score": 50.7,
+        "score": 49.6,
         "scoreBand": "thin",
         "burstTag": "cooling",
         "contextLabels": [
@@ -5462,24 +5462,24 @@ export const homeRunTargetsByGame = {
           "close-game pop",
           "neutral bullpen"
         ],
-        "signalSummary": "Slot 5 | carry | close-game pop | 0.82 HR/9 starter",
+        "signalSummary": "Slot 5 | carry | close-game pop | 0.8 HR/9 starter",
         "rationale": [
           "5 HR and 5 xHR on the season",
           "2 HR since May 1 with 0 in the last 7 days and 0 in the last 10",
-          "Patrick Corbin is allowing roughly 0.82 HR/9",
+          "Patrick Corbin is allowing roughly 0.8 HR/9",
           "Park HR index 112",
           "Last HR came 11 days ago",
           "Home today | historical split 40% on this side",
           "20% off starters | 80% off relievers | avg inning 4.4",
           "Most recent damage has skewed toward Slider / Sinker",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 76°F | 0% precip",
-          "Slot 5 | carry | lineup priority 29.4 | bullpen vulnerability 0.6"
+          "Weather lane: 76°F | Wind 9 mph L-R | 0% precip",
+          "Slot 5 | carry | lineup priority 29.2 | bullpen vulnerability 0.6"
         ],
         "avoidHrChase": false,
-        "rawWeight": 7.3174154396326845,
-        "modelShare": 0.086,
-        "modelSharePct": 8.6,
+        "rawWeight": 6.773962498900218,
+        "modelShare": 0.082,
+        "modelSharePct": 8.2,
         "lane": "thin"
       },
       {
@@ -5490,14 +5490,14 @@ export const homeRunTargetsByGame = {
         "gameTitle": "Blue Jays @ Orioles",
         "opposingPitcher": "Patrick Corbin",
         "opposingPitcherHand": "L",
-        "opposingPitcherHr9": 0.82,
+        "opposingPitcherHr9": 0.8,
         "parkHrIndex": 112,
         "isHomeToday": true,
         "opposingBullpenVulnerability": 0.6,
         "seasonHr": 7,
         "seasonXHR": 5.9,
         "xhrDiff": 1.1,
-        "baseScore": 45.84172040816326,
+        "baseScore": 45.0166379157428,
         "lineupContext": {
           "gameTitle": "Blue Jays @ Orioles",
           "teamName": "Orioles",
@@ -5509,12 +5509,12 @@ export const homeRunTargetsByGame = {
             "arsenal edge",
             "cold"
           ],
-          "powerScore": 69.6,
-          "contactScore": 62.5,
+          "powerScore": 69.2,
+          "contactScore": 62,
           "formScore": 18,
-          "splitScore": 40.1,
-          "matchupScore": 86.4,
-          "varianceScore": 55.8,
+          "splitScore": 41.4,
+          "matchupScore": 87.2,
+          "varianceScore": 55.9,
           "pitchType": {
             "fitScore": 82.2,
             "fitGrade": 3.84,
@@ -5555,21 +5555,21 @@ export const homeRunTargetsByGame = {
           "lineupSource": "official-feed",
           "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 21.3,
+        "lineupPriority": 21.4,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "0% 76° Wind 13 mph",
+            "summary": "0% 76° Wind 9 mph L-R",
             "precipitationPct": 0,
             "temperatureF": 76,
-            "windMph": null,
-            "windDirection": "",
-            "label": "76°F | 0% precip"
+            "windMph": 9,
+            "windDirection": "L-R",
+            "label": "76°F | Wind 9 mph L-R | 0% precip"
           },
-          "total": 8.5
+          "total": 7
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 0,
         "homeRunsLast10Days": 1,
@@ -5593,7 +5593,7 @@ export const homeRunTargetsByGame = {
             "Four-Seam Fastball"
           ]
         },
-        "score": 41,
+        "score": 40.2,
         "scoreBand": "thin",
         "burstTag": "cooling",
         "contextLabels": [
@@ -5602,24 +5602,24 @@ export const homeRunTargetsByGame = {
           "mixed timing",
           "neutral bullpen"
         ],
-        "signalSummary": "Slot 3 | carry | home-heavy carry | 0.82 HR/9 starter",
+        "signalSummary": "Slot 3 | carry | home-heavy carry | 0.8 HR/9 starter",
         "rationale": [
           "7 HR and 5.9 xHR on the season",
           "3 HR since May 1 with 0 in the last 7 days and 1 in the last 10",
-          "Patrick Corbin is allowing roughly 0.82 HR/9",
+          "Patrick Corbin is allowing roughly 0.8 HR/9",
           "Park HR index 112",
           "Last HR came 10 days ago",
           "Home today | historical split 71% on this side",
           "43% off starters | 57% off relievers | avg inning 5.1",
           "Most recent damage has skewed toward Cutter / Four-Seam Fastball",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 76°F | 0% precip",
-          "Slot 3 | carry | lineup priority 21.3 | bullpen vulnerability 0.6"
+          "Weather lane: 76°F | Wind 9 mph L-R | 0% precip",
+          "Slot 3 | carry | lineup priority 21.4 | bullpen vulnerability 0.6"
         ],
         "avoidHrChase": false,
         "rawWeight": 6.773962498900218,
-        "modelShare": 0.08,
-        "modelSharePct": 8,
+        "modelShare": 0.082,
+        "modelSharePct": 8.2,
         "lane": "thin"
       }
     ],
@@ -5632,14 +5632,14 @@ export const homeRunTargetsByGame = {
         "gameTitle": "Blue Jays @ Orioles",
         "opposingPitcher": "Patrick Corbin",
         "opposingPitcherHand": "L",
-        "opposingPitcherHr9": 0.82,
+        "opposingPitcherHr9": 0.8,
         "parkHrIndex": 112,
         "isHomeToday": true,
         "opposingBullpenVulnerability": 0.6,
         "seasonHr": 13,
         "seasonXHR": 12.1,
         "xhrDiff": 0.9,
-        "baseScore": 92.61427040816328,
+        "baseScore": 91.60168791574281,
         "lineupContext": {
           "gameTitle": "Blue Jays @ Orioles",
           "teamName": "Orioles",
@@ -5651,8 +5651,8 @@ export const homeRunTargetsByGame = {
             "split edge",
             "arsenal edge"
           ],
-          "powerScore": 79.5,
-          "contactScore": 42.4,
+          "powerScore": 79.3,
+          "contactScore": 42.2,
           "formScore": 92,
           "splitScore": 92,
           "matchupScore": 94,
@@ -5697,21 +5697,21 @@ export const homeRunTargetsByGame = {
           "lineupSource": "official-feed",
           "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 56.8,
+        "lineupPriority": 56.7,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "0% 76° Wind 13 mph",
+            "summary": "0% 76° Wind 9 mph L-R",
             "precipitationPct": 0,
             "temperatureF": 76,
-            "windMph": null,
-            "windDirection": "",
-            "label": "76°F | 0% precip"
+            "windMph": 9,
+            "windDirection": "L-R",
+            "label": "76°F | Wind 9 mph L-R | 0% precip"
           },
-          "total": 8.5
+          "total": 7
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 3,
         "homeRunsLast10Days": 3,
@@ -5735,7 +5735,7 @@ export const homeRunTargetsByGame = {
             "Changeup"
           ]
         },
-        "score": 114.6,
+        "score": 113.6,
         "scoreBand": "premium",
         "burstTag": "carry",
         "contextLabels": [
@@ -5744,24 +5744,24 @@ export const homeRunTargetsByGame = {
           "close-game pop",
           "neutral bullpen"
         ],
-        "signalSummary": "Slot 2 | carry | close-game pop | 0.82 HR/9 starter",
+        "signalSummary": "Slot 2 | carry | close-game pop | 0.8 HR/9 starter",
         "rationale": [
           "13 HR and 12.1 xHR on the season",
           "4 HR since May 1 with 3 in the last 7 days and 3 in the last 10",
-          "Patrick Corbin is allowing roughly 0.82 HR/9",
+          "Patrick Corbin is allowing roughly 0.8 HR/9",
           "Park HR index 112",
           "Last HR came 1 day ago",
           "Home today | historical split 58% on this side",
           "50% off starters | 50% off relievers | avg inning 5.3",
           "Most recent damage has skewed toward Cutter / Changeup",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 76°F | 0% precip",
-          "Slot 2 | carry | lineup priority 56.8 | bullpen vulnerability 0.6"
+          "Weather lane: 76°F | Wind 9 mph L-R | 0% precip",
+          "Slot 2 | carry | lineup priority 56.7 | bullpen vulnerability 0.6"
         ],
         "avoidHrChase": false,
-        "rawWeight": 51.53018374312403,
-        "modelShare": 0.608,
-        "modelSharePct": 60.8,
+        "rawWeight": 50.876822593222705,
+        "modelShare": 0.613,
+        "modelSharePct": 61.3,
         "lane": "anchor"
       },
       {
@@ -5772,14 +5772,14 @@ export const homeRunTargetsByGame = {
         "gameTitle": "Blue Jays @ Orioles",
         "opposingPitcher": "Patrick Corbin",
         "opposingPitcherHand": "L",
-        "opposingPitcherHr9": 0.82,
+        "opposingPitcherHr9": 0.8,
         "parkHrIndex": 112,
         "isHomeToday": true,
         "opposingBullpenVulnerability": 0.6,
         "seasonHr": 10,
         "seasonXHR": 11.1,
         "xhrDiff": -1.1,
-        "baseScore": 51.38627040816327,
+        "baseScore": 50.7028379157428,
         "lineupContext": {
           "gameTitle": "Blue Jays @ Orioles",
           "teamName": "Orioles",
@@ -5788,12 +5788,12 @@ export const homeRunTargetsByGame = {
           "tags": [
             "split edge"
           ],
-          "powerScore": 53.3,
-          "contactScore": 47.9,
-          "formScore": 49.4,
-          "splitScore": 23.6,
-          "matchupScore": 58.9,
-          "varianceScore": 59.5,
+          "powerScore": 53,
+          "contactScore": 47.2,
+          "formScore": 50.2,
+          "splitScore": 24.4,
+          "matchupScore": 59.4,
+          "varianceScore": 60.1,
           "pitchType": {
             "fitScore": 61.8,
             "fitGrade": 1.14,
@@ -5834,21 +5834,21 @@ export const homeRunTargetsByGame = {
           "lineupSource": "official-feed",
           "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 11.9,
+        "lineupPriority": 12.1,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "0% 76° Wind 13 mph",
+            "summary": "0% 76° Wind 9 mph L-R",
             "precipitationPct": 0,
             "temperatureF": 76,
-            "windMph": null,
-            "windDirection": "",
-            "label": "76°F | 0% precip"
+            "windMph": 9,
+            "windDirection": "L-R",
+            "label": "76°F | Wind 9 mph L-R | 0% precip"
           },
-          "total": 8.5
+          "total": 7
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 6,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 2,
@@ -5872,7 +5872,7 @@ export const homeRunTargetsByGame = {
             "Sinker"
           ]
         },
-        "score": 66.7,
+        "score": 66,
         "scoreBand": "thin",
         "burstTag": "active",
         "contextLabels": [
@@ -5881,24 +5881,24 @@ export const homeRunTargetsByGame = {
           "mixed timing",
           "neutral bullpen"
         ],
-        "signalSummary": "Slot 4 | split edge | neutral bullpen | 0.82 HR/9 starter",
+        "signalSummary": "Slot 4 | split edge | neutral bullpen | 0.8 HR/9 starter",
         "rationale": [
           "10 HR and 11.1 xHR on the season",
           "6 HR since May 1 with 1 in the last 7 days and 2 in the last 10",
-          "Patrick Corbin is allowing roughly 0.82 HR/9",
+          "Patrick Corbin is allowing roughly 0.8 HR/9",
           "Park HR index 112",
           "Last HR came 6 days ago",
           "Home today | historical split 50% on this side",
           "70% off starters | 30% off relievers | avg inning 3.7",
           "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 76°F | 0% precip",
-          "Slot 4 | split edge | lineup priority 11.9 | bullpen vulnerability 0.6"
+          "Weather lane: 76°F | Wind 9 mph L-R | 0% precip",
+          "Slot 4 | split edge | lineup priority 12.1 | bullpen vulnerability 0.6"
         ],
         "avoidHrChase": false,
-        "rawWeight": 19.110902508088397,
-        "modelShare": 0.226,
-        "modelSharePct": 22.6,
+        "rawWeight": 18.612055648803814,
+        "modelShare": 0.224,
+        "modelSharePct": 22.4,
         "lane": "secondary"
       },
       {
@@ -5909,14 +5909,14 @@ export const homeRunTargetsByGame = {
         "gameTitle": "Blue Jays @ Orioles",
         "opposingPitcher": "Patrick Corbin",
         "opposingPitcherHand": "L",
-        "opposingPitcherHr9": 0.82,
+        "opposingPitcherHr9": 0.8,
         "parkHrIndex": 112,
         "isHomeToday": true,
         "opposingBullpenVulnerability": 0.6,
         "seasonHr": 5,
         "seasonXHR": 5,
         "xhrDiff": 0,
-        "baseScore": 50.081770408163266,
+        "baseScore": 48.9796879157428,
         "lineupContext": {
           "gameTitle": "Blue Jays @ Orioles",
           "teamName": "Orioles",
@@ -5927,8 +5927,8 @@ export const homeRunTargetsByGame = {
             "heater",
             "split edge"
           ],
-          "powerScore": 57.5,
-          "contactScore": 37.7,
+          "powerScore": 57.1,
+          "contactScore": 36.8,
           "formScore": 92,
           "splitScore": 92,
           "matchupScore": 94,
@@ -5973,21 +5973,21 @@ export const homeRunTargetsByGame = {
           "lineupSource": "official-feed",
           "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 29.4,
+        "lineupPriority": 29.2,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "0% 76° Wind 13 mph",
+            "summary": "0% 76° Wind 9 mph L-R",
             "precipitationPct": 0,
             "temperatureF": 76,
-            "windMph": null,
-            "windDirection": "",
-            "label": "76°F | 0% precip"
+            "windMph": 9,
+            "windDirection": "L-R",
+            "label": "76°F | Wind 9 mph L-R | 0% precip"
           },
-          "total": 8.5
+          "total": 7
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 2,
         "homeRunsLast7Days": 0,
         "homeRunsLast10Days": 0,
@@ -6011,7 +6011,7 @@ export const homeRunTargetsByGame = {
             "Sinker"
           ]
         },
-        "score": 50.7,
+        "score": 49.6,
         "scoreBand": "thin",
         "burstTag": "cooling",
         "contextLabels": [
@@ -6020,24 +6020,24 @@ export const homeRunTargetsByGame = {
           "close-game pop",
           "neutral bullpen"
         ],
-        "signalSummary": "Slot 5 | carry | close-game pop | 0.82 HR/9 starter",
+        "signalSummary": "Slot 5 | carry | close-game pop | 0.8 HR/9 starter",
         "rationale": [
           "5 HR and 5 xHR on the season",
           "2 HR since May 1 with 0 in the last 7 days and 0 in the last 10",
-          "Patrick Corbin is allowing roughly 0.82 HR/9",
+          "Patrick Corbin is allowing roughly 0.8 HR/9",
           "Park HR index 112",
           "Last HR came 11 days ago",
           "Home today | historical split 40% on this side",
           "20% off starters | 80% off relievers | avg inning 4.4",
           "Most recent damage has skewed toward Slider / Sinker",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 76°F | 0% precip",
-          "Slot 5 | carry | lineup priority 29.4 | bullpen vulnerability 0.6"
+          "Weather lane: 76°F | Wind 9 mph L-R | 0% precip",
+          "Slot 5 | carry | lineup priority 29.2 | bullpen vulnerability 0.6"
         ],
         "avoidHrChase": false,
-        "rawWeight": 7.3174154396326845,
-        "modelShare": 0.086,
-        "modelSharePct": 8.6,
+        "rawWeight": 6.773962498900218,
+        "modelShare": 0.082,
+        "modelSharePct": 8.2,
         "lane": "thin"
       },
       {
@@ -6048,14 +6048,14 @@ export const homeRunTargetsByGame = {
         "gameTitle": "Blue Jays @ Orioles",
         "opposingPitcher": "Patrick Corbin",
         "opposingPitcherHand": "L",
-        "opposingPitcherHr9": 0.82,
+        "opposingPitcherHr9": 0.8,
         "parkHrIndex": 112,
         "isHomeToday": true,
         "opposingBullpenVulnerability": 0.6,
         "seasonHr": 7,
         "seasonXHR": 5.9,
         "xhrDiff": 1.1,
-        "baseScore": 45.84172040816326,
+        "baseScore": 45.0166379157428,
         "lineupContext": {
           "gameTitle": "Blue Jays @ Orioles",
           "teamName": "Orioles",
@@ -6067,12 +6067,12 @@ export const homeRunTargetsByGame = {
             "arsenal edge",
             "cold"
           ],
-          "powerScore": 69.6,
-          "contactScore": 62.5,
+          "powerScore": 69.2,
+          "contactScore": 62,
           "formScore": 18,
-          "splitScore": 40.1,
-          "matchupScore": 86.4,
-          "varianceScore": 55.8,
+          "splitScore": 41.4,
+          "matchupScore": 87.2,
+          "varianceScore": 55.9,
           "pitchType": {
             "fitScore": 82.2,
             "fitGrade": 3.84,
@@ -6113,21 +6113,21 @@ export const homeRunTargetsByGame = {
           "lineupSource": "official-feed",
           "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 21.3,
+        "lineupPriority": 21.4,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "0% 76° Wind 13 mph",
+            "summary": "0% 76° Wind 9 mph L-R",
             "precipitationPct": 0,
             "temperatureF": 76,
-            "windMph": null,
-            "windDirection": "",
-            "label": "76°F | 0% precip"
+            "windMph": 9,
+            "windDirection": "L-R",
+            "label": "76°F | Wind 9 mph L-R | 0% precip"
           },
-          "total": 8.5
+          "total": 7
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 0,
         "homeRunsLast10Days": 1,
@@ -6151,7 +6151,7 @@ export const homeRunTargetsByGame = {
             "Four-Seam Fastball"
           ]
         },
-        "score": 41,
+        "score": 40.2,
         "scoreBand": "thin",
         "burstTag": "cooling",
         "contextLabels": [
@@ -6160,28 +6160,28 @@ export const homeRunTargetsByGame = {
           "mixed timing",
           "neutral bullpen"
         ],
-        "signalSummary": "Slot 3 | carry | home-heavy carry | 0.82 HR/9 starter",
+        "signalSummary": "Slot 3 | carry | home-heavy carry | 0.8 HR/9 starter",
         "rationale": [
           "7 HR and 5.9 xHR on the season",
           "3 HR since May 1 with 0 in the last 7 days and 1 in the last 10",
-          "Patrick Corbin is allowing roughly 0.82 HR/9",
+          "Patrick Corbin is allowing roughly 0.8 HR/9",
           "Park HR index 112",
           "Last HR came 10 days ago",
           "Home today | historical split 71% on this side",
           "43% off starters | 57% off relievers | avg inning 5.1",
           "Most recent damage has skewed toward Cutter / Four-Seam Fastball",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 76°F | 0% precip",
-          "Slot 3 | carry | lineup priority 21.3 | bullpen vulnerability 0.6"
+          "Weather lane: 76°F | Wind 9 mph L-R | 0% precip",
+          "Slot 3 | carry | lineup priority 21.4 | bullpen vulnerability 0.6"
         ],
         "avoidHrChase": false,
         "rawWeight": 6.773962498900218,
-        "modelShare": 0.08,
-        "modelSharePct": 8,
+        "modelShare": 0.082,
+        "modelSharePct": 8.2,
         "lane": "thin"
       }
     ],
-    "summary": "Gunnar Henderson is the premium lane here because the posted order still grades like a carry bat, his recent HR sample leans close-game pop, and today lines up as a neutral venue split matchup into a 0.82 HR/9 starter lane. The better way to read this game is as a weighted cluster through Gunnar Henderson, Pete Alonso rather than a solo-bat script."
+    "summary": "Gunnar Henderson is the premium lane here because the posted order still grades like a carry bat, his recent HR sample leans close-game pop, and today lines up as a neutral venue split matchup into a 0.8 HR/9 starter lane. The better way to read this game is as a weighted cluster through Gunnar Henderson, Pete Alonso rather than a solo-bat script."
   },
   "Cubs @ Pirates": {
     "gameTitle": "Cubs @ Pirates",
@@ -6194,14 +6194,14 @@ export const homeRunTargetsByGame = {
         "gameTitle": "Cubs @ Pirates",
         "opposingPitcher": "Colin Rea",
         "opposingPitcherHand": "R",
-        "opposingPitcherHr9": 1.33,
+        "opposingPitcherHr9": 1.31,
         "parkHrIndex": 80,
         "isHomeToday": true,
         "opposingBullpenVulnerability": -1.7,
         "seasonHr": 14,
         "seasonXHR": 15.2,
         "xhrDiff": -1.2,
-        "baseScore": 108.5042666666667,
+        "baseScore": 109.7730181818182,
         "lineupContext": {
           "gameTitle": "Cubs @ Pirates",
           "teamName": "Pirates",
@@ -6213,10 +6213,10 @@ export const homeRunTargetsByGame = {
             "split edge",
             "arsenal edge"
           ],
-          "powerScore": 91.4,
-          "contactScore": 58.7,
+          "powerScore": 91,
+          "contactScore": 57.8,
           "formScore": 92,
-          "splitScore": 72.1,
+          "splitScore": 73.2,
           "matchupScore": 94,
           "varianceScore": 92,
           "pitchType": {
@@ -6254,24 +6254,24 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 4,
           "seasonHomeRuns": 14,
           "splitHomeRuns": 11,
-          "lineupStatus": "partial",
+          "lineupStatus": "posted",
           "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 56,
+        "lineupPriority": 58.8,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
             "icon": "clear-day",
-            "summary": "0% 70° Wind 14 mph Out",
+            "summary": "0% 71° Wind 12 mph Out",
             "precipitationPct": 0,
-            "temperatureF": 70,
-            "windMph": 14,
+            "temperatureF": 71,
+            "windMph": 12,
             "windDirection": "Out",
-            "label": "70°F | Wind 14 mph Out | 0% precip"
+            "label": "71°F | Wind 12 mph Out | 0% precip"
           },
-          "total": 7.5
+          "total": 7
         },
         "weatherBoost": 3.2,
         "recentHrSinceMay1": 6,
@@ -6297,7 +6297,7 @@ export const homeRunTargetsByGame = {
             "Changeup"
           ]
         },
-        "score": 136.6,
+        "score": 137.9,
         "scoreBand": "premium",
         "burstTag": "active",
         "contextLabels": [
@@ -6306,24 +6306,24 @@ export const homeRunTargetsByGame = {
           "starter ambush",
           "neutral bullpen"
         ],
-        "signalSummary": "Slot 2 | carry | starter ambush | 1.33 HR/9 starter",
+        "signalSummary": "Slot 2 | carry | starter ambush | 1.31 HR/9 starter",
         "rationale": [
           "14 HR and 15.2 xHR on the season",
           "6 HR since May 1 with 2 in the last 7 days and 2 in the last 10",
-          "Colin Rea is allowing roughly 1.33 HR/9",
+          "Colin Rea is allowing roughly 1.31 HR/9",
           "Park HR index 80",
           "Last HR came 1 day ago",
           "Home today | historical split 50% on this side",
           "75% off starters | 25% off relievers | avg inning 3.2",
           "Most recent damage has skewed toward Four-Seam Fastball / Changeup",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 70°F | Wind 14 mph Out | 0% precip",
-          "Slot 2 | carry | lineup priority 56 | bullpen vulnerability -1.7"
+          "Weather lane: 71°F | Wind 12 mph Out | 0% precip",
+          "Slot 2 | carry | lineup priority 58.8 | bullpen vulnerability -1.7"
         ],
         "avoidHrChase": false,
-        "rawWeight": 65.73850835904203,
-        "modelShare": 0.554,
-        "modelSharePct": 55.4,
+        "rawWeight": 66.56916639741445,
+        "modelShare": 0.543,
+        "modelSharePct": 54.3,
         "lane": "anchor"
       },
       {
@@ -6334,14 +6334,14 @@ export const homeRunTargetsByGame = {
         "gameTitle": "Cubs @ Pirates",
         "opposingPitcher": "Colin Rea",
         "opposingPitcherHand": "R",
-        "opposingPitcherHr9": 1.33,
+        "opposingPitcherHr9": 1.31,
         "parkHrIndex": 80,
         "isHomeToday": true,
         "opposingBullpenVulnerability": -1.7,
         "seasonHr": 6,
         "seasonXHR": 6.8,
         "xhrDiff": -0.8,
-        "baseScore": 65.84496666666668,
+        "baseScore": 67.1137181818182,
         "lineupContext": {
           "gameTitle": "Cubs @ Pirates",
           "teamName": "Pirates",
@@ -6354,12 +6354,12 @@ export const homeRunTargetsByGame = {
             "arsenal edge",
             "traffic"
           ],
-          "powerScore": 58.2,
-          "contactScore": 70.2,
+          "powerScore": 57.8,
+          "contactScore": 69.9,
           "formScore": 92,
-          "splitScore": 64.3,
+          "splitScore": 65.4,
           "matchupScore": 94,
-          "varianceScore": 75.4,
+          "varianceScore": 76.9,
           "pitchType": {
             "fitScore": 82.4,
             "fitGrade": 5.32,
@@ -6395,24 +6395,24 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 4,
           "seasonHomeRuns": 6,
           "splitHomeRuns": 6,
-          "lineupStatus": "partial",
+          "lineupStatus": "posted",
           "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 40.1,
+        "lineupPriority": 42.9,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
             "icon": "clear-day",
-            "summary": "0% 70° Wind 14 mph Out",
+            "summary": "0% 71° Wind 12 mph Out",
             "precipitationPct": 0,
-            "temperatureF": 70,
-            "windMph": 14,
+            "temperatureF": 71,
+            "windMph": 12,
             "windDirection": "Out",
-            "label": "70°F | Wind 14 mph Out | 0% precip"
+            "label": "71°F | Wind 12 mph Out | 0% precip"
           },
-          "total": 7.5
+          "total": 7
         },
         "weatherBoost": 3.2,
         "recentHrSinceMay1": 3,
@@ -6438,8 +6438,8 @@ export const homeRunTargetsByGame = {
             "Four-Seam Fastball"
           ]
         },
-        "score": 80.8,
-        "scoreBand": "live",
+        "score": 82.1,
+        "scoreBand": "strong",
         "burstTag": "watch",
         "contextLabels": [
           "Slot 1 | carry",
@@ -6447,24 +6447,24 @@ export const homeRunTargetsByGame = {
           "mixed timing",
           "neutral bullpen"
         ],
-        "signalSummary": "Slot 1 | carry | neutral bullpen | 1.33 HR/9 starter",
+        "signalSummary": "Slot 1 | carry | neutral bullpen | 1.31 HR/9 starter",
         "rationale": [
           "6 HR and 6.8 xHR on the season",
           "3 HR since May 1 with 2 in the last 7 days and 3 in the last 10",
-          "Colin Rea is allowing roughly 1.33 HR/9",
+          "Colin Rea is allowing roughly 1.31 HR/9",
           "Park HR index 80",
           "Last HR came 2 days ago",
           "Home today | historical split 67% on this side",
           "50% off starters | 50% off relievers | avg inning 4",
           "Most recent damage has skewed toward Splitter / Four-Seam Fastball",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 70°F | Wind 14 mph Out | 0% precip",
-          "Slot 1 | carry | lineup priority 40.1 | bullpen vulnerability -1.7"
+          "Weather lane: 71°F | Wind 12 mph Out | 0% precip",
+          "Slot 1 | carry | lineup priority 42.9 | bullpen vulnerability -1.7"
         ],
         "avoidHrChase": false,
-        "rawWeight": 28.955107892934024,
-        "modelShare": 0.244,
-        "modelSharePct": 24.4,
+        "rawWeight": 29.846459633677576,
+        "modelShare": 0.243,
+        "modelSharePct": 24.3,
         "lane": "anchor"
       }
     ],
@@ -6477,18 +6477,18 @@ export const homeRunTargetsByGame = {
         "gameTitle": "Cubs @ Pirates",
         "opposingPitcher": "Colin Rea",
         "opposingPitcherHand": "R",
-        "opposingPitcherHr9": 1.33,
+        "opposingPitcherHr9": 1.31,
         "parkHrIndex": 80,
         "isHomeToday": true,
         "opposingBullpenVulnerability": -1.7,
         "seasonHr": 11,
         "seasonXHR": 11.5,
         "xhrDiff": -0.5,
-        "baseScore": 58.32236666666667,
+        "baseScore": 61.46021818181818,
         "lineupContext": {
           "gameTitle": "Cubs @ Pirates",
           "teamName": "Pirates",
-          "slot": 5,
+          "slot": 4,
           "primaryTag": "split edge",
           "tags": [
             "split edge",
@@ -6496,11 +6496,11 @@ export const homeRunTargetsByGame = {
             "cold"
           ],
           "powerScore": 62.4,
-          "contactScore": 38.1,
-          "formScore": 35.9,
-          "splitScore": 34.2,
-          "matchupScore": 64.3,
-          "varianceScore": 83.6,
+          "contactScore": 37.9,
+          "formScore": 35.8,
+          "splitScore": 34,
+          "matchupScore": 66.7,
+          "varianceScore": 84.4,
           "pitchType": {
             "fitScore": 71.5,
             "fitGrade": 3.75,
@@ -6536,24 +6536,24 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 2,
           "seasonHomeRuns": 11,
           "splitHomeRuns": 7,
-          "lineupStatus": "partial",
+          "lineupStatus": "posted",
           "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 13.6,
+        "lineupPriority": 19,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
             "icon": "clear-day",
-            "summary": "0% 70° Wind 14 mph Out",
+            "summary": "0% 71° Wind 12 mph Out",
             "precipitationPct": 0,
-            "temperatureF": 70,
-            "windMph": 14,
+            "temperatureF": 71,
+            "windMph": 12,
             "windDirection": "Out",
-            "label": "70°F | Wind 14 mph Out | 0% precip"
+            "label": "71°F | Wind 12 mph Out | 0% precip"
           },
-          "total": 7.5
+          "total": 7
         },
         "weatherBoost": 3.2,
         "recentHrSinceMay1": 2,
@@ -6579,33 +6579,33 @@ export const homeRunTargetsByGame = {
             "Curveball"
           ]
         },
-        "score": 63.9,
+        "score": 67.1,
         "scoreBand": "thin",
         "burstTag": "watch",
         "contextLabels": [
-          "Slot 5 | split edge",
+          "Slot 4 | split edge",
           "better on the road",
           "mixed timing",
           "neutral bullpen"
         ],
-        "signalSummary": "Slot 5 | split edge | better on the road | 1.33 HR/9 starter",
+        "signalSummary": "Slot 4 | split edge | better on the road | 1.31 HR/9 starter",
         "rationale": [
           "11 HR and 11.5 xHR on the season",
           "2 HR since May 1 with 1 in the last 7 days and 1 in the last 10",
-          "Colin Rea is allowing roughly 1.33 HR/9",
+          "Colin Rea is allowing roughly 1.31 HR/9",
           "Park HR index 80",
           "Last HR came 4 days ago",
           "Home today | historical split 27% on this side",
           "64% off starters | 36% off relievers | avg inning 4.9",
           "Most recent damage has skewed toward Four-Seam Fastball / Curveball",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 70°F | Wind 14 mph Out | 0% precip",
-          "Slot 5 | split edge | lineup priority 13.6 | bullpen vulnerability -1.7"
+          "Weather lane: 71°F | Wind 12 mph Out | 0% precip",
+          "Slot 4 | split edge | lineup priority 19 | bullpen vulnerability -1.7"
         ],
         "avoidHrChase": false,
-        "rawWeight": 17.10836809133906,
-        "modelShare": 0.144,
-        "modelSharePct": 14.4,
+        "rawWeight": 19.395448370157716,
+        "modelShare": 0.158,
+        "modelSharePct": 15.8,
         "lane": "live"
       }
     ],
@@ -6618,14 +6618,14 @@ export const homeRunTargetsByGame = {
         "gameTitle": "Cubs @ Pirates",
         "opposingPitcher": "Colin Rea",
         "opposingPitcherHand": "R",
-        "opposingPitcherHr9": 1.33,
+        "opposingPitcherHr9": 1.31,
         "parkHrIndex": 80,
         "isHomeToday": true,
         "opposingBullpenVulnerability": -1.7,
         "seasonHr": 4,
         "seasonXHR": 5.5,
         "xhrDiff": -1.5,
-        "baseScore": 46.82906666666666,
+        "baseScore": 47.76021818181818,
         "lineupContext": {
           "gameTitle": "Cubs @ Pirates",
           "teamName": "Pirates",
@@ -6637,12 +6637,12 @@ export const homeRunTargetsByGame = {
             "split edge",
             "arsenal edge"
           ],
-          "powerScore": 36.9,
-          "contactScore": 53.5,
-          "formScore": 66.6,
-          "splitScore": 35.2,
+          "powerScore": 37.7,
+          "contactScore": 53.8,
+          "formScore": 64.8,
+          "splitScore": 33.3,
           "matchupScore": 94,
-          "varianceScore": 72.6,
+          "varianceScore": 72.2,
           "pitchType": {
             "fitScore": 86.6,
             "fitGrade": 5.09,
@@ -6678,24 +6678,24 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 0,
           "seasonHomeRuns": 4,
           "splitHomeRuns": 2,
-          "lineupStatus": "partial",
+          "lineupStatus": "posted",
           "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 17.7,
+        "lineupPriority": 20,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
             "icon": "clear-day",
-            "summary": "0% 70° Wind 14 mph Out",
+            "summary": "0% 71° Wind 12 mph Out",
             "precipitationPct": 0,
-            "temperatureF": 70,
-            "windMph": 14,
+            "temperatureF": 71,
+            "windMph": 12,
             "windDirection": "Out",
-            "label": "70°F | Wind 14 mph Out | 0% precip"
+            "label": "71°F | Wind 12 mph Out | 0% precip"
           },
-          "total": 7.5
+          "total": 7
         },
         "weatherBoost": 3.2,
         "recentHrSinceMay1": 1,
@@ -6721,7 +6721,7 @@ export const homeRunTargetsByGame = {
             "Curveball"
           ]
         },
-        "score": 48.4,
+        "score": 49.4,
         "scoreBand": "thin",
         "burstTag": "cooling",
         "contextLabels": [
@@ -6730,24 +6730,24 @@ export const homeRunTargetsByGame = {
           "mixed timing",
           "neutral bullpen"
         ],
-        "signalSummary": "Slot 3 | carry | better on the road | 1.33 HR/9 starter",
+        "signalSummary": "Slot 3 | carry | better on the road | 1.31 HR/9 starter",
         "rationale": [
           "4 HR and 5.5 xHR on the season",
           "1 HR since May 1 with 0 in the last 7 days and 0 in the last 10",
-          "Colin Rea is allowing roughly 1.33 HR/9",
+          "Colin Rea is allowing roughly 1.31 HR/9",
           "Park HR index 80",
           "Last HR came 27 days ago",
           "Home today | historical split 25% on this side",
           "50% off starters | 50% off relievers | avg inning 4.8",
           "Most recent damage has skewed toward Four-Seam Fastball / Curveball",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 70°F | Wind 14 mph Out | 0% precip",
-          "Slot 3 | carry | lineup priority 17.7 | bullpen vulnerability -1.7"
+          "Weather lane: 71°F | Wind 12 mph Out | 0% precip",
+          "Slot 3 | carry | lineup priority 20 | bullpen vulnerability -1.7"
         ],
         "avoidHrChase": false,
         "rawWeight": 6.773962498900218,
-        "modelShare": 0.057,
-        "modelSharePct": 5.7,
+        "modelShare": 0.055,
+        "modelSharePct": 5.5,
         "lane": "thin"
       }
     ],
@@ -6760,14 +6760,14 @@ export const homeRunTargetsByGame = {
         "gameTitle": "Cubs @ Pirates",
         "opposingPitcher": "Colin Rea",
         "opposingPitcherHand": "R",
-        "opposingPitcherHr9": 1.33,
+        "opposingPitcherHr9": 1.31,
         "parkHrIndex": 80,
         "isHomeToday": true,
         "opposingBullpenVulnerability": -1.7,
         "seasonHr": 14,
         "seasonXHR": 15.2,
         "xhrDiff": -1.2,
-        "baseScore": 108.5042666666667,
+        "baseScore": 109.7730181818182,
         "lineupContext": {
           "gameTitle": "Cubs @ Pirates",
           "teamName": "Pirates",
@@ -6779,10 +6779,10 @@ export const homeRunTargetsByGame = {
             "split edge",
             "arsenal edge"
           ],
-          "powerScore": 91.4,
-          "contactScore": 58.7,
+          "powerScore": 91,
+          "contactScore": 57.8,
           "formScore": 92,
-          "splitScore": 72.1,
+          "splitScore": 73.2,
           "matchupScore": 94,
           "varianceScore": 92,
           "pitchType": {
@@ -6820,24 +6820,24 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 4,
           "seasonHomeRuns": 14,
           "splitHomeRuns": 11,
-          "lineupStatus": "partial",
+          "lineupStatus": "posted",
           "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 56,
+        "lineupPriority": 58.8,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
             "icon": "clear-day",
-            "summary": "0% 70° Wind 14 mph Out",
+            "summary": "0% 71° Wind 12 mph Out",
             "precipitationPct": 0,
-            "temperatureF": 70,
-            "windMph": 14,
+            "temperatureF": 71,
+            "windMph": 12,
             "windDirection": "Out",
-            "label": "70°F | Wind 14 mph Out | 0% precip"
+            "label": "71°F | Wind 12 mph Out | 0% precip"
           },
-          "total": 7.5
+          "total": 7
         },
         "weatherBoost": 3.2,
         "recentHrSinceMay1": 6,
@@ -6863,7 +6863,7 @@ export const homeRunTargetsByGame = {
             "Changeup"
           ]
         },
-        "score": 136.6,
+        "score": 137.9,
         "scoreBand": "premium",
         "burstTag": "active",
         "contextLabels": [
@@ -6872,24 +6872,24 @@ export const homeRunTargetsByGame = {
           "starter ambush",
           "neutral bullpen"
         ],
-        "signalSummary": "Slot 2 | carry | starter ambush | 1.33 HR/9 starter",
+        "signalSummary": "Slot 2 | carry | starter ambush | 1.31 HR/9 starter",
         "rationale": [
           "14 HR and 15.2 xHR on the season",
           "6 HR since May 1 with 2 in the last 7 days and 2 in the last 10",
-          "Colin Rea is allowing roughly 1.33 HR/9",
+          "Colin Rea is allowing roughly 1.31 HR/9",
           "Park HR index 80",
           "Last HR came 1 day ago",
           "Home today | historical split 50% on this side",
           "75% off starters | 25% off relievers | avg inning 3.2",
           "Most recent damage has skewed toward Four-Seam Fastball / Changeup",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 70°F | Wind 14 mph Out | 0% precip",
-          "Slot 2 | carry | lineup priority 56 | bullpen vulnerability -1.7"
+          "Weather lane: 71°F | Wind 12 mph Out | 0% precip",
+          "Slot 2 | carry | lineup priority 58.8 | bullpen vulnerability -1.7"
         ],
         "avoidHrChase": false,
-        "rawWeight": 65.73850835904203,
-        "modelShare": 0.554,
-        "modelSharePct": 55.4,
+        "rawWeight": 66.56916639741445,
+        "modelShare": 0.543,
+        "modelSharePct": 54.3,
         "lane": "anchor"
       },
       {
@@ -6900,14 +6900,14 @@ export const homeRunTargetsByGame = {
         "gameTitle": "Cubs @ Pirates",
         "opposingPitcher": "Colin Rea",
         "opposingPitcherHand": "R",
-        "opposingPitcherHr9": 1.33,
+        "opposingPitcherHr9": 1.31,
         "parkHrIndex": 80,
         "isHomeToday": true,
         "opposingBullpenVulnerability": -1.7,
         "seasonHr": 6,
         "seasonXHR": 6.8,
         "xhrDiff": -0.8,
-        "baseScore": 65.84496666666668,
+        "baseScore": 67.1137181818182,
         "lineupContext": {
           "gameTitle": "Cubs @ Pirates",
           "teamName": "Pirates",
@@ -6920,12 +6920,12 @@ export const homeRunTargetsByGame = {
             "arsenal edge",
             "traffic"
           ],
-          "powerScore": 58.2,
-          "contactScore": 70.2,
+          "powerScore": 57.8,
+          "contactScore": 69.9,
           "formScore": 92,
-          "splitScore": 64.3,
+          "splitScore": 65.4,
           "matchupScore": 94,
-          "varianceScore": 75.4,
+          "varianceScore": 76.9,
           "pitchType": {
             "fitScore": 82.4,
             "fitGrade": 5.32,
@@ -6961,24 +6961,24 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 4,
           "seasonHomeRuns": 6,
           "splitHomeRuns": 6,
-          "lineupStatus": "partial",
+          "lineupStatus": "posted",
           "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 40.1,
+        "lineupPriority": 42.9,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
             "icon": "clear-day",
-            "summary": "0% 70° Wind 14 mph Out",
+            "summary": "0% 71° Wind 12 mph Out",
             "precipitationPct": 0,
-            "temperatureF": 70,
-            "windMph": 14,
+            "temperatureF": 71,
+            "windMph": 12,
             "windDirection": "Out",
-            "label": "70°F | Wind 14 mph Out | 0% precip"
+            "label": "71°F | Wind 12 mph Out | 0% precip"
           },
-          "total": 7.5
+          "total": 7
         },
         "weatherBoost": 3.2,
         "recentHrSinceMay1": 3,
@@ -7004,8 +7004,8 @@ export const homeRunTargetsByGame = {
             "Four-Seam Fastball"
           ]
         },
-        "score": 80.8,
-        "scoreBand": "live",
+        "score": 82.1,
+        "scoreBand": "strong",
         "burstTag": "watch",
         "contextLabels": [
           "Slot 1 | carry",
@@ -7013,24 +7013,24 @@ export const homeRunTargetsByGame = {
           "mixed timing",
           "neutral bullpen"
         ],
-        "signalSummary": "Slot 1 | carry | neutral bullpen | 1.33 HR/9 starter",
+        "signalSummary": "Slot 1 | carry | neutral bullpen | 1.31 HR/9 starter",
         "rationale": [
           "6 HR and 6.8 xHR on the season",
           "3 HR since May 1 with 2 in the last 7 days and 3 in the last 10",
-          "Colin Rea is allowing roughly 1.33 HR/9",
+          "Colin Rea is allowing roughly 1.31 HR/9",
           "Park HR index 80",
           "Last HR came 2 days ago",
           "Home today | historical split 67% on this side",
           "50% off starters | 50% off relievers | avg inning 4",
           "Most recent damage has skewed toward Splitter / Four-Seam Fastball",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 70°F | Wind 14 mph Out | 0% precip",
-          "Slot 1 | carry | lineup priority 40.1 | bullpen vulnerability -1.7"
+          "Weather lane: 71°F | Wind 12 mph Out | 0% precip",
+          "Slot 1 | carry | lineup priority 42.9 | bullpen vulnerability -1.7"
         ],
         "avoidHrChase": false,
-        "rawWeight": 28.955107892934024,
-        "modelShare": 0.244,
-        "modelSharePct": 24.4,
+        "rawWeight": 29.846459633677576,
+        "modelShare": 0.243,
+        "modelSharePct": 24.3,
         "lane": "anchor"
       },
       {
@@ -7041,18 +7041,18 @@ export const homeRunTargetsByGame = {
         "gameTitle": "Cubs @ Pirates",
         "opposingPitcher": "Colin Rea",
         "opposingPitcherHand": "R",
-        "opposingPitcherHr9": 1.33,
+        "opposingPitcherHr9": 1.31,
         "parkHrIndex": 80,
         "isHomeToday": true,
         "opposingBullpenVulnerability": -1.7,
         "seasonHr": 11,
         "seasonXHR": 11.5,
         "xhrDiff": -0.5,
-        "baseScore": 58.32236666666667,
+        "baseScore": 61.46021818181818,
         "lineupContext": {
           "gameTitle": "Cubs @ Pirates",
           "teamName": "Pirates",
-          "slot": 5,
+          "slot": 4,
           "primaryTag": "split edge",
           "tags": [
             "split edge",
@@ -7060,11 +7060,11 @@ export const homeRunTargetsByGame = {
             "cold"
           ],
           "powerScore": 62.4,
-          "contactScore": 38.1,
-          "formScore": 35.9,
-          "splitScore": 34.2,
-          "matchupScore": 64.3,
-          "varianceScore": 83.6,
+          "contactScore": 37.9,
+          "formScore": 35.8,
+          "splitScore": 34,
+          "matchupScore": 66.7,
+          "varianceScore": 84.4,
           "pitchType": {
             "fitScore": 71.5,
             "fitGrade": 3.75,
@@ -7100,24 +7100,24 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 2,
           "seasonHomeRuns": 11,
           "splitHomeRuns": 7,
-          "lineupStatus": "partial",
+          "lineupStatus": "posted",
           "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 13.6,
+        "lineupPriority": 19,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
             "icon": "clear-day",
-            "summary": "0% 70° Wind 14 mph Out",
+            "summary": "0% 71° Wind 12 mph Out",
             "precipitationPct": 0,
-            "temperatureF": 70,
-            "windMph": 14,
+            "temperatureF": 71,
+            "windMph": 12,
             "windDirection": "Out",
-            "label": "70°F | Wind 14 mph Out | 0% precip"
+            "label": "71°F | Wind 12 mph Out | 0% precip"
           },
-          "total": 7.5
+          "total": 7
         },
         "weatherBoost": 3.2,
         "recentHrSinceMay1": 2,
@@ -7143,33 +7143,33 @@ export const homeRunTargetsByGame = {
             "Curveball"
           ]
         },
-        "score": 63.9,
+        "score": 67.1,
         "scoreBand": "thin",
         "burstTag": "watch",
         "contextLabels": [
-          "Slot 5 | split edge",
+          "Slot 4 | split edge",
           "better on the road",
           "mixed timing",
           "neutral bullpen"
         ],
-        "signalSummary": "Slot 5 | split edge | better on the road | 1.33 HR/9 starter",
+        "signalSummary": "Slot 4 | split edge | better on the road | 1.31 HR/9 starter",
         "rationale": [
           "11 HR and 11.5 xHR on the season",
           "2 HR since May 1 with 1 in the last 7 days and 1 in the last 10",
-          "Colin Rea is allowing roughly 1.33 HR/9",
+          "Colin Rea is allowing roughly 1.31 HR/9",
           "Park HR index 80",
           "Last HR came 4 days ago",
           "Home today | historical split 27% on this side",
           "64% off starters | 36% off relievers | avg inning 4.9",
           "Most recent damage has skewed toward Four-Seam Fastball / Curveball",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 70°F | Wind 14 mph Out | 0% precip",
-          "Slot 5 | split edge | lineup priority 13.6 | bullpen vulnerability -1.7"
+          "Weather lane: 71°F | Wind 12 mph Out | 0% precip",
+          "Slot 4 | split edge | lineup priority 19 | bullpen vulnerability -1.7"
         ],
         "avoidHrChase": false,
-        "rawWeight": 17.10836809133906,
-        "modelShare": 0.144,
-        "modelSharePct": 14.4,
+        "rawWeight": 19.395448370157716,
+        "modelShare": 0.158,
+        "modelSharePct": 15.8,
         "lane": "live"
       },
       {
@@ -7180,14 +7180,14 @@ export const homeRunTargetsByGame = {
         "gameTitle": "Cubs @ Pirates",
         "opposingPitcher": "Colin Rea",
         "opposingPitcherHand": "R",
-        "opposingPitcherHr9": 1.33,
+        "opposingPitcherHr9": 1.31,
         "parkHrIndex": 80,
         "isHomeToday": true,
         "opposingBullpenVulnerability": -1.7,
         "seasonHr": 4,
         "seasonXHR": 5.5,
         "xhrDiff": -1.5,
-        "baseScore": 46.82906666666666,
+        "baseScore": 47.76021818181818,
         "lineupContext": {
           "gameTitle": "Cubs @ Pirates",
           "teamName": "Pirates",
@@ -7199,12 +7199,12 @@ export const homeRunTargetsByGame = {
             "split edge",
             "arsenal edge"
           ],
-          "powerScore": 36.9,
-          "contactScore": 53.5,
-          "formScore": 66.6,
-          "splitScore": 35.2,
+          "powerScore": 37.7,
+          "contactScore": 53.8,
+          "formScore": 64.8,
+          "splitScore": 33.3,
           "matchupScore": 94,
-          "varianceScore": 72.6,
+          "varianceScore": 72.2,
           "pitchType": {
             "fitScore": 86.6,
             "fitGrade": 5.09,
@@ -7240,24 +7240,24 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 0,
           "seasonHomeRuns": 4,
           "splitHomeRuns": 2,
-          "lineupStatus": "partial",
+          "lineupStatus": "posted",
           "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 17.7,
+        "lineupPriority": 20,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
             "icon": "clear-day",
-            "summary": "0% 70° Wind 14 mph Out",
+            "summary": "0% 71° Wind 12 mph Out",
             "precipitationPct": 0,
-            "temperatureF": 70,
-            "windMph": 14,
+            "temperatureF": 71,
+            "windMph": 12,
             "windDirection": "Out",
-            "label": "70°F | Wind 14 mph Out | 0% precip"
+            "label": "71°F | Wind 12 mph Out | 0% precip"
           },
-          "total": 7.5
+          "total": 7
         },
         "weatherBoost": 3.2,
         "recentHrSinceMay1": 1,
@@ -7283,7 +7283,7 @@ export const homeRunTargetsByGame = {
             "Curveball"
           ]
         },
-        "score": 48.4,
+        "score": 49.4,
         "scoreBand": "thin",
         "burstTag": "cooling",
         "contextLabels": [
@@ -7292,28 +7292,28 @@ export const homeRunTargetsByGame = {
           "mixed timing",
           "neutral bullpen"
         ],
-        "signalSummary": "Slot 3 | carry | better on the road | 1.33 HR/9 starter",
+        "signalSummary": "Slot 3 | carry | better on the road | 1.31 HR/9 starter",
         "rationale": [
           "4 HR and 5.5 xHR on the season",
           "1 HR since May 1 with 0 in the last 7 days and 0 in the last 10",
-          "Colin Rea is allowing roughly 1.33 HR/9",
+          "Colin Rea is allowing roughly 1.31 HR/9",
           "Park HR index 80",
           "Last HR came 27 days ago",
           "Home today | historical split 25% on this side",
           "50% off starters | 50% off relievers | avg inning 4.8",
           "Most recent damage has skewed toward Four-Seam Fastball / Curveball",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 70°F | Wind 14 mph Out | 0% precip",
-          "Slot 3 | carry | lineup priority 17.7 | bullpen vulnerability -1.7"
+          "Weather lane: 71°F | Wind 12 mph Out | 0% precip",
+          "Slot 3 | carry | lineup priority 20 | bullpen vulnerability -1.7"
         ],
         "avoidHrChase": false,
         "rawWeight": 6.773962498900218,
-        "modelShare": 0.057,
-        "modelSharePct": 5.7,
+        "modelShare": 0.055,
+        "modelSharePct": 5.5,
         "lane": "thin"
       }
     ],
-    "summary": "Brandon Lowe is the premium lane here because the projected order still grades like a carry bat, his recent HR sample leans starter ambush, and today lines up as a neutral venue split matchup into a 1.33 HR/9 starter lane. The better way to read this game is as a weighted cluster through Brandon Lowe, Spencer Horwitz, Oneil Cruz rather than a solo-bat script."
+    "summary": "Brandon Lowe is the premium lane here because the posted order still grades like a carry bat, his recent HR sample leans starter ambush, and today lines up as a neutral venue split matchup into a 1.31 HR/9 starter lane. The better way to read this game is as a weighted cluster through Brandon Lowe, Spencer Horwitz, Oneil Cruz rather than a solo-bat script."
   },
   "Astros @ Rangers": {
     "gameTitle": "Astros @ Rangers",

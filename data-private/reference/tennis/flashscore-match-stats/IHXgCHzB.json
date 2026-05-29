@@ -1,25 +1,706 @@
 {
+  "sourceKind": "recent-match",
   "slateDate": "2026-05-27",
-  "boardMatchId": "rg-w-marta-kostyuk-katie-volynets-2026-05-27",
-  "boardTitle": "Marta Kostyuk vs Katie Volynets",
-  "flashscoreLabel": "Volynets Katie - Kostyuk Marta",
-  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/",
-  "generatedAt": "2026-05-26T23:49:19.754Z",
-  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/kostyuk-marta-8CZqQdSa/volynets-katie-vw1oqIPi/",
-  "matchId": "IHXgCHzB",
+  "boardMatchId": "rg-w-marta-kostyuk-viktorija-golubic-2026-05-29",
+  "boardTitle": "Marta Kostyuk vs Viktorija Golubic",
+  "boardPlayerName": "Marta Kostyuk",
+  "recentOpponentName": "Katie Volynets",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "27 May 26",
+  "recentIsoDate": "2026-05-27",
+  "recentResult": "USA  6-74 6-3 6-3 2nd",
+  "flashscoreLabel": "Kostyuk M. - Volynets K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
   "players": [
-    "Marta Kostyuk",
-    "Katie Volynets"
+    "Kostyuk M.",
+    "Volynets K."
   ],
+  "generatedAt": "2026-05-29T02:02:42.140Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/IHXgCHzB/",
+  "matchId": "IHXgCHzB",
   "feedUrls": {
     "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_IHXgCHzB",
     "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_IHXgCHzB"
   },
   "scoreSummary": {
-    "sets": [],
-    "totalDuration": ""
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "1:11"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:50"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:45"
   },
-  "scopes": [],
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "1",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "7",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "77%",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (44/59)",
+              "right": "57% (50/88)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (22/46)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/8",
+              "right": "12/18",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "162 km/h",
+              "right": "153 km/h",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "138 km/h",
+              "right": "121 km/h",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (38/88)",
+              "right": "25% (15/59)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (13/27)",
+              "right": "52% (24/46)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/18",
+              "right": "3/8",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "60",
+              "right": "22",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "47",
+              "right": "24",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (17/27)",
+              "right": "52% (13/25)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (66/105)",
+              "right": "56% (64/115)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (51/115)",
+              "right": "37% (39/105)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (117/220)",
+              "right": "47% (103/220)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (12/15)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (6/15)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (18/30)",
+              "right": "40% (12/30)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "77%",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (20/27)",
+              "right": "57% (23/40)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "39% (9/23)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "6/8",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (17/40)",
+              "right": "26% (7/27)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (4/12)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/8",
+              "right": "2/4",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "23",
+              "right": "11",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "9",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Net points won",
+              "left": "69% (9/13)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (29/50)",
+              "right": "60% (31/52)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (21/52)",
+              "right": "42% (21/50)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (50/102)",
+              "right": "51% (52/102)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "46%",
+              "right": "78%",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (7/11)",
+              "right": "50% (16/32)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (8/13)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "6/9",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (16/32)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (5/9)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/9",
+              "right": "1/3",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "20",
+              "right": "6",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "9",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (4/7)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (15/24)",
+              "right": "49% (20/41)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (21/41)",
+              "right": "38% (9/24)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (36/65)",
+              "right": "45% (29/65)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "73%",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (17/21)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (5/16)",
+              "right": "19% (4/21)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (4/6)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "5",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "6",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (4/7)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (22/31)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (9/22)",
+              "right": "29% (9/31)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (31/53)",
+              "right": "42% (22/53)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Volynets K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "notes": [
     "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
     "Service games won and return games won are sourced directly from Flashscore match statistics."

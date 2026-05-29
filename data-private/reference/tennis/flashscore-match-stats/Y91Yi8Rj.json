@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-nuno-borges-andrey-rublev-2026-05-29",
+  "boardTitle": "Nuno Borges vs Andrey Rublev",
+  "boardPlayerName": "Andrey Rublev",
+  "recentOpponentName": "Arthur Fils",
+  "recentIndex": 7,
+  "recentEvent": "Barcelona",
+  "recentDate": "19 Apr 26",
+  "recentIsoDate": "2026-04-19",
+  "recentResult": "FRA   Loss 6-2 7-62 Fin.",
+  "flashscoreLabel": "Rublev A. - Fils A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/barcelona/results/",
+  "players": [
+    "Rublev A.",
+    "Fils A."
+  ],
+  "generatedAt": "2026-05-29T02:02:37.500Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Y91Yi8Rj/",
+  "matchId": "Y91Yi8Rj",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Y91Yi8Rj",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Y91Yi8Rj"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:31"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 7,
+        "duration": "1:10"
+      }
+    ],
+    "totalDuration": "1:41"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "5",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "57%",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (33/56)",
+              "right": "68% (26/38)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "32% (10/31)",
+              "right": "52% (15/29)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "14/19",
+              "right": "5/8",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (12/38)",
+              "right": "41% (23/56)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (14/29)",
+              "right": "68% (21/31)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "5/19",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "31",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "28",
+              "right": "33",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (5/8)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "49% (43/87)",
+              "right": "61% (41/67)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (26/67)",
+              "right": "51% (44/87)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (69/154)",
+              "right": "55% (85/154)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (5/10)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Return games won",
+              "left": "30% (3/10)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "65%",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (10/18)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "20% (2/10)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "1/2",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (3/13)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "3/6",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "1",
+              "right": "9",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "10",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "43% (12/28)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (6/20)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (18/48)",
+              "right": "63% (30/48)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "53%",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (23/38)",
+              "right": "64% (16/25)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (8/21)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "11/13",
+              "right": "4/6",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (9/25)",
+              "right": "39% (15/38)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (11/22)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "2/13",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "22",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "23",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (31/59)",
+              "right": "57% (27/47)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (20/47)",
+              "right": "47% (28/59)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (51/106)",
+              "right": "52% (55/106)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Rublev A.",
+              "rightPlayer": "Fils A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

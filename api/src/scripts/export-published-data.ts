@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises'
 import fsSync from 'node:fs'
 import path from 'node:path'
+import { execFileSync } from 'node:child_process'
 import {
   loadHistoryArchiveFromModules,
   loadStoryArchiveFromModules
@@ -9,7 +10,7 @@ import {
   listSlateManifestFromModules,
   loadSlateDayFromModules
 } from '../lib/day-loader.js'
-import { dataPrivateRoot, publishedDataRoot } from '../lib/paths.js'
+import { dataPrivateRoot, publishedDataRoot, warehousePath } from '../lib/paths.js'
 
 const historyJournalRoot = path.join(dataPrivateRoot, 'history')
 
@@ -19,6 +20,95 @@ const ensureDir = async (dirPath: string) => {
 
 const writeJson = async (filePath: string, payload: unknown) => {
   await fs.writeFile(filePath, JSON.stringify(payload), 'utf8')
+}
+
+const normalizeSearchToken = (value: unknown) =>
+  String(value ?? '')
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/gi, ' ')
+    .trim()
+    .toLowerCase()
+
+const pairKey = (left: unknown, right: unknown) =>
+  [normalizeSearchToken(left), normalizeSearchToken(right)].filter(Boolean).sort().join(' vs ')
+
+const titlePairKey = (title: unknown) => {
+  const [left, right] = String(title ?? '').split(/\s+vs\s+/i)
+  return pairKey(left, right)
+}
+
+const runWarehouseJson = <T,>(sql: string): T[] => {
+  if (!fsSync.existsSync(warehousePath)) return []
+  const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim()
+  return raw ? JSON.parse(raw) as T[] : []
+}
+
+const loadTennisResultsByDate = () => {
+  const rows = runWarehouseJson<any>(`
+    select slate_date, event_id, match_id, title, round_label, court, status, completed,
+           player1_name, player2_name, player1_normalized_name, player2_normalized_name,
+           winner_name, winner_normalized_name, scoreline, source_url
+    from tennis_match_results
+  `)
+  const byDate = new Map<string, Map<string, any>>()
+  for (const row of rows) {
+    const date = String(row.slate_date || '')
+    if (!date) continue
+    const dateMap = byDate.get(date) ?? new Map<string, any>()
+    const keys = [
+      row.match_id,
+      pairKey(row.player1_name, row.player2_name),
+      pairKey(row.player1_normalized_name, row.player2_normalized_name),
+      titlePairKey(row.title)
+    ].filter(Boolean)
+    for (const key of keys) dateMap.set(String(key), row)
+    byDate.set(date, dateMap)
+  }
+  return byDate
+}
+
+const tennisResultForGame = (resultsByDate: Map<string, Map<string, any>>, date: string, game: any) => {
+  if (game?.league !== 'Tennis') return null
+  const dateMap = resultsByDate.get(date)
+  if (!dateMap) return null
+  const matchup = Array.isArray(game.matchup) ? game.matchup : []
+  const left = matchup[0]?.name ?? matchup[0]?.displayName
+  const right = matchup[1]?.name ?? matchup[1]?.displayName
+  const keys = [game.id, pairKey(left, right), titlePairKey(game.title)].filter(Boolean)
+  for (const key of keys) {
+    const result = dateMap.get(String(key))
+    if (result) {
+      return {
+        status: result.status ?? null,
+        completed: Boolean(result.completed),
+        winnerName: result.winner_name ?? null,
+        winnerNormalizedName: result.winner_normalized_name ?? null,
+        scoreline: result.scoreline ?? null,
+        sourceUrl: result.source_url ?? null,
+        eventId: result.event_id ?? null,
+        title: result.title ?? game.title
+      }
+    }
+  }
+  return null
+}
+
+const applyTennisResult = (game: any, result: any) => {
+  if (!result) return game
+  return {
+    ...game,
+    winnerName: result.winnerName,
+    scoreline: result.scoreline,
+    tennisResult: result,
+    result: {
+      ...(game.result && typeof game.result === 'object' ? game.result : {}),
+      winner: result.winnerName,
+      scoreline: result.scoreline,
+      status: result.status,
+      completed: result.completed
+    }
+  }
 }
 
 const toTitleDate = (date: string) => {
@@ -194,6 +284,79 @@ const buildTennisValueSummary = (games: any[] = [], isoDate = '') => {
     if (!Number.isFinite(netEv) || !Number.isFinite(edge) || !Number.isFinite(model) || !Number.isFinite(odds)) return false
     return odds >= 100 && odds <= 250 && model >= 45 && model <= 60 && edge >= 7 && edge <= 24 && netEv >= 8
   }
+  const fromEnsemblePath = path.join(dataPrivateRoot, 'predictions', 'tennis', `${isoDate}-multimodel-ensemble.json`)
+  if (isoDate && fsSync.existsSync(fromEnsemblePath)) {
+    const payload = JSON.parse(fsSync.readFileSync(fromEnsemblePath, 'utf8'))
+    const ensembleRows = Array.isArray(payload?.rows) ? payload.rows : Array.isArray(payload) ? payload : []
+    const rows = ensembleRows
+      .map((row: any) => {
+        const game = games.find((entry) => entry.id === row.matchId)
+        if (!game) return null
+        const modelPct = Number(row.modelProbability)
+        const marketPct = Number(row.marketProbability)
+        const edgePct = Number.isFinite(modelPct) && Number.isFinite(marketPct) ? Number((modelPct - marketPct).toFixed(1)) : null
+        const valueGrade = row.grade === 'Bet-grade ML' ? 'Bet-grade value' : row.grade ?? 'No grade'
+        return {
+          gameId: game.id,
+          gameTitle: game.title,
+          start: row.start ?? game.start,
+          marketType: 'ML',
+          label: 'ML',
+          selection: row.selection ?? '',
+          line: null,
+          americanOdds: row.marketFairOdds ?? null,
+          confidence: modelPct,
+          modelPct,
+          impliedPct: Number.isFinite(marketPct) ? marketPct : null,
+          edgePct,
+          evPer100: row.netEvPer100 ?? null,
+          netEvPer100: row.netEvPer100 ?? null,
+          feePer100,
+          valueIssue: row.riskGate ?? '',
+          valueGrade,
+          betGrade: row.grade === 'Bet-grade ML',
+          validatedValue: false,
+          reason: row.riskGate ? `Model chain risk gate: ${row.riskGate}.` : 'Model chain price check.'
+        }
+      })
+      .filter(Boolean) as any[]
+
+    if (rows.length) {
+      const countByGrade = rows.reduce((acc: Record<string, number>, row: any) => {
+        acc[row.valueGrade] = (acc[row.valueGrade] ?? 0) + 1
+        return acc
+      }, {})
+      const byEvDesc = (left: any, right: any) => Number(right.evPer100 ?? -999) - Number(left.evPer100 ?? -999)
+      const byEvAsc = (left: any, right: any) => Number(left.evPer100 ?? 999) - Number(right.evPer100 ?? 999)
+      const pricedRows = rows.filter((row: any) => Number.isFinite(Number(row.evPer100)))
+      const noPriceRows = rows.filter((row: any) => /needs posted price|no price/i.test(String(row.valueGrade)))
+      const rowsWithValidation = rows.map((row: any) => ({ ...row, validatedValue: isValidatedValue(row) && row.betGrade }))
+      const validatedRows = rowsWithValidation.filter((row: any) => row.validatedValue).sort(byEvDesc)
+
+      return {
+        date: isoDate,
+        source: 'pandas tennis warehouse ensemble',
+        totalRows: rows.length,
+        pricedRows: pricedRows.length,
+        noPriceRows: noPriceRows.length,
+        countByGrade,
+        rows: rowsWithValidation,
+        validatedRows: validatedRows.slice(0, 8),
+        betGradeRows: validatedRows.slice(0, 8),
+        rawPositiveRows: rowsWithValidation
+          .filter((row: any) => Number(row.evPer100) > 0 && !row.validatedValue)
+          .sort(byEvDesc)
+          .slice(0, 8),
+        thinRows: rowsWithValidation.filter((row: any) => row.valueGrade === 'Thin value').sort(byEvDesc).slice(0, 6),
+        negativeMlRows: rowsWithValidation
+          .filter((row: any) => /negative ev|price taxed|favorite tax/i.test(String(row.valueGrade)) && String(row.marketType).toLowerCase() === 'ml')
+          .sort(byEvAsc)
+          .slice(0, 6),
+        note:
+          'Warehouse ensemble value pass. Bet-grade is deliberately empty unless a plus-money ML clears fee, edge, model-range, and risk gates; positive EV dogs stay watch-only when the weakness profile is not clean.'
+      }
+    }
+  }
   const rows = games
     .filter((game) => game?.league === 'Tennis')
     .flatMap((game) =>
@@ -259,7 +422,7 @@ const buildTennisValueSummary = (games: any[] = [], isoDate = '') => {
   }
 }
 
-const buildSlateGameSummary = (game: any) => ({
+const buildSlateGameSummary = (game: any, tennisResult: any = null) => ({
   id: game.id,
   league: game.league,
   start: game.start,
@@ -279,6 +442,12 @@ const buildSlateGameSummary = (game: any) => ({
   odds: buildSummaryOdds(game.odds),
   moneyline: game.moneyline ?? null,
   analysis: game.analysis ?? null,
+  winnerName: tennisResult?.winnerName ?? game.winnerName ?? null,
+  scoreline: tennisResult?.scoreline ?? game.scoreline ?? null,
+  tennisResult: tennisResult ?? game.tennisResult ?? null,
+  result: tennisResult
+    ? { winner: tennisResult.winnerName, scoreline: tennisResult.scoreline, status: tennisResult.status, completed: tennisResult.completed }
+    : game.result ?? null,
   metadata: game.metadata ?? null,
   lineupBoard: buildSummaryLineupBoard(game.lineupBoard),
   offenseContext: buildSlimTeamFeedContext(game.offenseContext),
@@ -286,9 +455,9 @@ const buildSlateGameSummary = (game: any) => ({
   detailLevel: 'summary'
 })
 
-const buildSlateGameDetail = (game: any) => {
+const buildSlateGameDetail = (game: any, tennisResult: any = null) => {
   const detail = {
-    ...game,
+    ...applyTennisResult(game, tennisResult),
     detailLevel: 'full',
     stateContext: game.stateContext ?? null
   }
@@ -301,6 +470,7 @@ const exportSlates = async () => {
   await ensureDir(slatesRoot)
 
   const manifest = await listSlateManifestFromModules()
+  const tennisResultsByDate = loadTennisResultsByDate()
   await writeJson(path.join(slatesRoot, 'index.json'), manifest)
 
   for (const slate of manifest) {
@@ -311,16 +481,17 @@ const exportSlates = async () => {
     await fs.rm(slateRoot, { recursive: true, force: true })
     await ensureDir(gamesRoot)
 
+    const tennisResultFor = (game: any) => tennisResultForGame(tennisResultsByDate, slate.id, game)
     const summaryDay = {
       ...day,
       tennisValueSummary: buildTennisValueSummary(day.games ?? [], day.slateMeta?.isoDate ?? slate.id),
-      games: Array.isArray(day.games) ? day.games.map(buildSlateGameSummary) : []
+      games: Array.isArray(day.games) ? day.games.map((game: any) => buildSlateGameSummary(game, tennisResultFor(game))) : []
     }
 
     await writeJson(path.join(slateRoot, 'summary.json'), summaryDay)
 
     for (const game of day.games ?? []) {
-      await writeJson(path.join(gamesRoot, `${game.id}.json`), buildSlateGameDetail(game))
+      await writeJson(path.join(gamesRoot, `${game.id}.json`), buildSlateGameDetail(game, tennisResultFor(game)))
     }
   }
 

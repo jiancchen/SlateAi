@@ -1,0 +1,324 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-tamara-korpatsch-wang-xinyu-2026-05-27",
+  "boardTitle": "Tamara Korpatsch vs Wang Xinyu",
+  "boardPlayerName": "Xinyu Wang",
+  "recentOpponentName": "Sorana Cirstea",
+  "recentIndex": 6,
+  "recentEvent": "Rouen",
+  "recentDate": "16 Apr 26",
+  "recentIsoDate": "2026-04-16",
+  "recentResult": "ROU   Loss 5-3 ret. 2nd",
+  "flashscoreLabel": "Wang Xin. - Cirstea S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/rouen/results/",
+  "players": [
+    "Wang Xin.",
+    "Cirstea S."
+  ],
+  "generatedAt": "2026-05-29T01:57:57.297Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/CUk5e7ke/",
+  "matchId": "CUk5e7ke",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_CUk5e7ke",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_CUk5e7ke"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 5,
+        "duration": "0:43"
+      }
+    ],
+    "totalDuration": "0:43"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "62%",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (13/25)",
+              "right": "78% (14/18)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "2/3",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (3/18)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/5",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "50% (17/34)",
+              "right": "65% (20/31)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (11/31)",
+              "right": "50% (17/34)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (28/65)",
+              "right": "57% (37/65)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total games won",
+              "left": "38% (3/8)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "62%",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (13/25)",
+              "right": "78% (14/18)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "2/3",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (3/18)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/5",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "50% (17/34)",
+              "right": "65% (20/31)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (11/31)",
+              "right": "50% (17/34)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (28/65)",
+              "right": "57% (37/65)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            },
+            {
+              "label": "Total games won",
+              "left": "38% (3/8)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Wang Xin.",
+              "rightPlayer": "Cirstea S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

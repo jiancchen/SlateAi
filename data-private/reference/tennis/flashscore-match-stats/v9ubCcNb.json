@@ -1,0 +1,35 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-sara-bejlek-iga-swiatek-2026-05-27",
+  "boardTitle": "Sara Bejlek vs Iga Swiatek",
+  "boardPlayerName": "Sara Bejlek",
+  "recentOpponentName": "Belinda Bencic",
+  "recentIndex": 7,
+  "recentEvent": "Dubai",
+  "recentDate": "17 Feb 26",
+  "recentIsoDate": "2026-02-17",
+  "recentResult": "SUI   Loss w/o 2nd",
+  "flashscoreLabel": "Bencic B. - Bejlek S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/dubai/results/",
+  "players": [
+    "Bencic B.",
+    "Bejlek S."
+  ],
+  "generatedAt": "2026-05-29T01:57:59.132Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/v9ubCcNb/",
+  "matchId": "v9ubCcNb",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_v9ubCcNb",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_v9ubCcNb"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

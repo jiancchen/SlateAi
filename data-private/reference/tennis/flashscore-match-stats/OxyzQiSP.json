@@ -1,25 +1,870 @@
 {
+  "sourceKind": "recent-match",
   "slateDate": "2026-05-27",
-  "boardMatchId": "rg-m-james-duckworth-rafael-jodar-2026-05-27",
-  "boardTitle": "James Duckworth vs Rafael Jodar",
-  "flashscoreLabel": "Jodar Rafael - Duckworth James",
-  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
-  "generatedAt": "2026-05-26T23:49:13.664Z",
-  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/duckworth-james-2JWHPUUb/jodar-rafael-OdngshVK/",
-  "matchId": "OxyzQiSP",
+  "boardMatchId": "rg-m-alex-michelsen-rafael-jodar-2026-05-29",
+  "boardTitle": "Alex Michelsen vs Rafael Jodar",
+  "boardPlayerName": "Rafael Jodar",
+  "recentOpponentName": "James Duckworth",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "27 May 26",
+  "recentIsoDate": "2026-05-27",
+  "recentResult": "AUS  6-1 6-75 6-4 7-5 2nd",
+  "flashscoreLabel": "Duckworth J. - Jodar R.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
   "players": [
-    "James Duckworth",
-    "Rafael Jodar"
+    "Duckworth J.",
+    "Jodar R."
   ],
+  "generatedAt": "2026-05-29T02:02:55.736Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/OxyzQiSP/",
+  "matchId": "OxyzQiSP",
   "feedUrls": {
     "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_OxyzQiSP",
     "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_OxyzQiSP"
   },
   "scoreSummary": {
-    "sets": [],
-    "totalDuration": ""
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:25"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:11"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:24"
   },
-  "scopes": [],
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "7",
+              "right": "6",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "63%",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (53/76)",
+              "right": "78% (62/80)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "49% (32/65)",
+              "right": "56% (27/48)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "15/21",
+              "right": "1/3",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "183 km/h",
+              "right": "184 km/h",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "160 km/h",
+              "right": "155 km/h",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (18/80)",
+              "right": "30% (23/76)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (21/48)",
+              "right": "51% (33/65)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "6/21",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "36",
+              "right": "38",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "71",
+              "right": "46",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Net points won",
+              "left": "68% (13/19)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (85/141)",
+              "right": "70% (89/128)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (39/128)",
+              "right": "40% (56/141)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (124/269)",
+              "right": "54% (145/269)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "70% (14/20)",
+              "right": "90% (19/21)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return games won",
+              "left": "10% (2/21)",
+              "right": "30% (6/20)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total games won",
+              "left": "39% (16/41)",
+              "right": "61% (25/41)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "56%",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (4/8)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (2/6)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/0",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (5/14)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "27% (3/11)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/2",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "6",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "9",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "43% (6/14)",
+              "right": "68% (17/25)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (8/25)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (14/39)",
+              "right": "64% (25/39)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "66%",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (22/30)",
+              "right": "79% (23/29)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (13/25)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/7",
+              "right": "1/2",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (6/29)",
+              "right": "27% (8/30)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (9/15)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "1/7",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "9",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "15",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Net points won",
+              "left": "64% (7/11)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (35/55)",
+              "right": "66% (29/44)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (15/44)",
+              "right": "36% (20/55)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (50/99)",
+              "right": "49% (49/99)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "44%",
+              "right": "67%",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (11/15)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (8/19)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/1",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (4/16)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/5",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "9",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "12",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (19/34)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (7/24)",
+              "right": "44% (15/34)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (26/58)",
+              "right": "55% (32/58)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "60%",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (16/23)",
+              "right": "86% (18/21)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (9/15)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/7",
+              "right": "0/0",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (3/21)",
+              "right": "30% (7/23)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (6/14)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/7",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "14",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "10",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (25/38)",
+              "right": "74% (26/35)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (9/35)",
+              "right": "34% (13/38)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (34/73)",
+              "right": "53% (39/73)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Duckworth J.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "notes": [
     "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
     "Service games won and return games won are sourced directly from Flashscore match statistics."

@@ -1,25 +1,364 @@
 {
+  "sourceKind": "recent-match",
   "slateDate": "2026-05-27",
-  "boardMatchId": "rg-w-hailey-baptiste-wang-xiyu-2026-05-27",
-  "boardTitle": "Hailey Baptiste vs Wang Xiyu",
-  "flashscoreLabel": "Wang Xiyu - Baptiste Hailey",
-  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/",
-  "generatedAt": "2026-05-26T23:49:18.074Z",
-  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/baptiste-hailey-Cjagsdf4/wang-xiyu-6XSnpS5h/",
-  "matchId": "rsQKg97c",
+  "boardMatchId": "rg-w-wang-xiyu-yuliia-starodubtseva-2026-05-29",
+  "boardTitle": "Wang Xiyu vs Yuliia Starodubtseva",
+  "boardPlayerName": "Xiyu Wang",
+  "recentOpponentName": "Hailey Baptiste",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "27 May 26",
+  "recentIsoDate": "2026-05-27",
+  "recentResult": "USA  5-4 ret. 2nd",
+  "flashscoreLabel": "Baptiste H. - Wang Xiy.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
   "players": [
-    "Hailey Baptiste",
-    "Wang Xiyu"
+    "Baptiste H.",
+    "Wang Xiy."
   ],
+  "generatedAt": "2026-05-29T02:02:53.504Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/rsQKg97c/",
+  "matchId": "rsQKg97c",
   "feedUrls": {
     "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_rsQKg97c",
     "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_rsQKg97c"
   },
   "scoreSummary": {
-    "sets": [],
-    "totalDuration": ""
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 5,
+        "duration": "0:52"
+      }
+    ],
+    "totalDuration": "0:52"
   },
-  "scopes": [],
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "72%",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (9/13)",
+              "right": "54% (14/26)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "4/5",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (12/26)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "30% (3/10)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "2/2",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "7",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "11",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (16/26)",
+              "right": "58% (21/36)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (15/36)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (31/62)",
+              "right": "50% (31/62)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Total games won",
+              "left": "44% (4/9)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "72%",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (9/13)",
+              "right": "54% (14/26)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "4/5",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (12/26)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "30% (3/10)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "2/2",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "7",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "11",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (16/26)",
+              "right": "58% (21/36)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (15/36)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (31/62)",
+              "right": "50% (31/62)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Total games won",
+              "left": "44% (4/9)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Baptiste H.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "notes": [
     "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
     "Service games won and return games won are sourced directly from Flashscore match statistics."

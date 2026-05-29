@@ -1,25 +1,1020 @@
 {
+  "sourceKind": "recent-match",
   "slateDate": "2026-05-27",
-  "boardMatchId": "rg-m-joao-fonseca-dino-prizmic-2026-05-27",
-  "boardTitle": "Joao Fonseca vs Dino Prizmic",
-  "flashscoreLabel": "Prizmic Dino - Fonseca Joao",
-  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
-  "generatedAt": "2026-05-26T23:49:14.062Z",
-  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/fonseca-joao-tv073LUc/prizmic-dino-YcluY2Zi/",
-  "matchId": "2qQroiwo",
+  "boardMatchId": "rg-m-joao-fonseca-novak-djokovic-2026-05-29",
+  "boardTitle": "Joao Fonseca vs Novak Djokovic",
+  "boardPlayerName": "Joao Fonseca",
+  "recentOpponentName": "Dino Prizmic",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "27 May 26",
+  "recentIsoDate": "2026-05-27",
+  "recentResult": "CRO  3-6 4-6 6-3 6-1 6-2 2nd",
+  "flashscoreLabel": "Fonseca J. - Prizmic D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
   "players": [
-    "Joao Fonseca",
-    "Dino Prizmic"
+    "Fonseca J.",
+    "Prizmic D."
   ],
+  "generatedAt": "2026-05-29T02:02:40.533Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/2qQroiwo/",
+  "matchId": "2qQroiwo",
   "feedUrls": {
     "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_2qQroiwo",
     "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_2qQroiwo"
   },
   "scoreSummary": {
-    "sets": [],
-    "totalDuration": ""
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": ""
+      },
+      {
+        "label": "Set 5",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:30"
   },
-  "scopes": [],
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "13",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "58%",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (63/88)",
+              "right": "68% (50/73)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (27/42)",
+              "right": "48% (25/52)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "1/7",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (23/73)",
+              "right": "28% (25/88)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (27/52)",
+              "right": "36% (15/42)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/7",
+              "right": "2/6",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "42",
+              "right": "51",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "38",
+              "right": "44",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Net points won",
+              "left": "66% (19/29)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (90/130)",
+              "right": "60% (75/125)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (50/125)",
+              "right": "31% (40/130)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (140/255)",
+              "right": "45% (115/255)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "90% (19/21)",
+              "right": "73% (16/22)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return games won",
+              "left": "27% (6/22)",
+              "right": "10% (2/21)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (25/43)",
+              "right": "42% (18/43)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "9",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "69%",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (11/15)",
+              "right": "85% (17/20)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (7/11)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (3/20)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (5/9)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "17",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "10",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Net points won",
+              "left": "40% (2/5)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (18/26)",
+              "right": "72% (21/29)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (8/29)",
+              "right": "31% (8/26)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (26/55)",
+              "right": "53% (29/55)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "59%",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (15/20)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (2/6)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (4/16)",
+              "right": "25% (5/20)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "27% (3/11)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "12",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "4",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (3/6)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (17/26)",
+              "right": "74% (20/27)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (7/27)",
+              "right": "35% (9/26)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (24/53)",
+              "right": "55% (29/53)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "52%",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (13/22)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "79% (11/14)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "1/2",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (2/12)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (7/11)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/1",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "12",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "12",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (5/8)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (24/36)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (9/23)",
+              "right": "33% (12/36)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (33/59)",
+              "right": "44% (26/59)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "48%",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (11/15)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (3/6)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "0/3",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (5/11)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (8/12)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "0/2",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "6",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "11",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (14/21)",
+              "right": "43% (10/23)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (13/23)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (27/44)",
+              "right": "39% (17/44)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 5",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "61%",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (13/16)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "80% (4/5)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "64% (9/14)",
+              "right": "19% (3/16)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (4/9)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "4",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (6/7)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "81% (17/21)",
+              "right": "43% (10/23)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (13/23)",
+              "right": "19% (4/21)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "68% (30/44)",
+              "right": "32% (14/44)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Fonseca J.",
+              "rightPlayer": "Prizmic D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "notes": [
     "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
     "Service games won and return games won are sourced directly from Flashscore match statistics."
