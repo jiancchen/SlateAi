@@ -79,6 +79,8 @@
     "data:research:mlb-pitcher-strikeout-gates": "python3 pipeline/research_mlb_pitcher_strikeout_gates.py",
     "data:research:mlb-context-phase1": "python3 pipeline/research_mlb_market_context_phase1.py",
     "data:research:mlb-opponent-quality-gates": "python3 pipeline/research_mlb_opponent_quality_side_gates.py",
+    "data:research:mlb-hitter-last10-windows": "python3 pipeline/research_mlb_hitter_last10_windows.py",
+    "data:research:mlb-hits-xba-gates": "python3 pipeline/research_mlb_hits_xba_gates.py",
     "data:train:mlb-market-models": "python3 pipeline/train_mlb_market_models.py",
     "data:generate:tennis-clay-context": "node pipeline/generate-tennis-clay-context.mjs",
     "data:fetch:tennis-rankings": "node pipeline/fetch-tennis-rankings-espn.mjs",

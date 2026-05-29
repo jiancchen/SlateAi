@@ -41,6 +41,8 @@ Reference report:
 |E14|2026-05-29|Expanded walk-forward rerun through May 28|ML / F5 / Totals / 1st inning|Completed|Totals still only promotable lane|OOF samples grew to `1560` ML, `1318` F5, `138` totals, `171` first inning; totals stayed weakly positive, everything else remained unpromotable|
 |E15|2026-05-29|Live hitter Statcast trend integration|TB / singles / HR props|Completed|Promoted for TB, cautious for singles, HR stays filter-only|Rolling `7/14/30` xwOBA, hard-hit, barrel, and sweet-spot trends now feed the live prop scorer|
 |E16|2026-05-29|Phase 1 context warehousing: opponent strength + market memory|ML / F5 / Totals / run-production props|Completed|Warehoused, not yet deployed|`mlb_team_opponent_quality_daily` is dense enough to research now; `mlb_team_market_context_daily` moneyline memory is partial and totals memory is blocked until historical totals lines are backfilled|
+|E17|2026-05-29|Classic last-10 hitter windows|Hits / Singles / TB props|Completed|Did not beat last-5 baseline|Raw last-10 box-score form was mostly negative for hits and TB; only longer whiff-rate memory helped singles a bit, so last-10 stays research/UI-only for now|
+|E18|2026-05-29|xBA + sweet-spot + pitch-fit hits gates|Hits props|Completed|Weak alone, small gated lift only|Pure high-xBA buckets were worse than baseline; the only positive isolated gate was `7d xBA Q4 + sweet-spot Q4 + fit >= +4` at `25.0%` on `12` bets, which is shadow-only at best|
 
 ## Honest Baseline Metrics
 

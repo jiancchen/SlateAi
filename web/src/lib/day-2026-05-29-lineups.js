@@ -1,12 +1,12 @@
 export const lineupSnapshotMeta = {
   "date": "2026-05-29",
-  "snapshot": "2026-05-29T18:25:09.524Z",
+  "snapshot": "2026-05-29T18:54:43.443Z",
   "recentWindow": {
     "start": "2026-05-22",
     "end": "2026-05-28"
   },
   "gameCount": 15,
-  "playerCount": 261,
+  "playerCount": 262,
   "sourceLabel": "Official MLB feed/live batting orders plus official player season, recent, handedness split, and Statcast pitch-arsenal matchup data, supplemented by RotoWire daily lineups and weather when the official order is still missing."
 }
 
@@ -14,10 +14,10 @@ export const lineupBoardsByGameId = {
   "braves-reds": {
     "gameId": "braves-reds",
     "title": "Braves @ Reds",
-    "snapshot": "2026-05-29T18:25:09.515Z",
+    "snapshot": "2026-05-29T18:54:43.432Z",
     "status": {
       "away": "partial",
-      "home": "partial"
+      "home": "posted"
     },
     "weather": {
       "icon": "partly-cloudy-day",
@@ -1336,7 +1336,7 @@ export const lineupBoardsByGameId = {
     },
     "home": {
       "teamName": "Reds",
-      "lineupSource": "rotowire-supplement",
+      "lineupSource": "official-feed",
       "opposingStarter": {
         "id": 656550,
         "name": "Grant Holmes",
@@ -1365,7 +1365,7 @@ export const lineupBoardsByGameId = {
           "playerId": 694362,
           "slot": 1,
           "name": "Blake Dunn",
-          "position": "CF",
+          "position": "RF",
           "bats": "R",
           "savant": {
             "playerId": 694362,
@@ -1962,7 +1962,7 @@ export const lineupBoardsByGameId = {
         {
           "playerId": 553993,
           "slot": 5,
-          "name": "Eugenio Suarez",
+          "name": "Eugenio Suárez",
           "position": "DH",
           "bats": "R",
           "savant": {
@@ -2261,7 +2261,7 @@ export const lineupBoardsByGameId = {
           "playerId": 668715,
           "slot": 7,
           "name": "Spencer Steer",
-          "position": "RF",
+          "position": "2B",
           "bats": "R",
           "savant": {
             "playerId": 668715,
@@ -2555,153 +2555,154 @@ export const lineupBoardsByGameId = {
           "matchupNote": "+10.00 vs Grant Holmes"
         },
         {
-          "playerId": 680574,
+          "playerId": 670770,
           "slot": 9,
-          "name": "Matt McLain",
-          "position": "2B",
-          "bats": "R",
+          "name": "TJ Friedl",
+          "position": "CF",
+          "bats": "L",
           "savant": {
-            "playerId": 680574,
-            "playerUrl": "https://baseballsavant.mlb.com/savant-player/matt-mclain-680574",
+            "playerId": 670770,
+            "playerUrl": "https://baseballsavant.mlb.com/savant-player/tj-friedl-670770",
             "statsSuffix": "r-hitting-mlb",
             "season": 2026,
             "statsUrls": {
-              "statcast": "https://baseballsavant.mlb.com/savant-player/matt-mclain-680574?stats=statcast-r-hitting-mlb&season=2026",
-              "splits": "https://baseballsavant.mlb.com/savant-player/matt-mclain-680574?stats=splits-r-hitting-mlb&season=2026",
-              "gamelogs": "https://baseballsavant.mlb.com/savant-player/matt-mclain-680574?stats=gamelogs-r-hitting-mlb&season=2026"
+              "statcast": "https://baseballsavant.mlb.com/savant-player/tj-friedl-670770?stats=statcast-r-hitting-mlb&season=2026",
+              "splits": "https://baseballsavant.mlb.com/savant-player/tj-friedl-670770?stats=splits-r-hitting-mlb&season=2026",
+              "gamelogs": "https://baseballsavant.mlb.com/savant-player/tj-friedl-670770?stats=gamelogs-r-hitting-mlb&season=2026"
             }
           },
           "season": {
-            "gamesPlayed": 54,
-            "hits": 38,
-            "singles": 24,
-            "doubles": 9,
+            "gamesPlayed": 44,
+            "hits": 27,
+            "singles": 19,
+            "doubles": 6,
             "triples": 0,
-            "homeRuns": 5,
-            "walks": 24,
-            "totalBases": 62,
-            "atBats": 191,
-            "plateAppearances": 218,
-            "avg": 0.199,
-            "obp": 0.295,
-            "slg": 0.325,
-            "ops": 0.62,
-            "hitRate": 0.1743,
-            "singlesRate": 0.1101,
-            "hrRate": 0.0229,
-            "walkRate": 0.1101,
-            "totalBasesRate": 0.2844
+            "homeRuns": 2,
+            "walks": 13,
+            "totalBases": 39,
+            "atBats": 150,
+            "plateAppearances": 172,
+            "avg": 0.18,
+            "obp": 0.262,
+            "slg": 0.26,
+            "ops": 0.522,
+            "hitRate": 0.157,
+            "singlesRate": 0.1105,
+            "hrRate": 0.0116,
+            "walkRate": 0.0756,
+            "totalBasesRate": 0.2267
           },
           "recent": {
-            "gamesPlayed": 8,
+            "gamesPlayed": 6,
             "hits": 2,
             "singles": 2,
             "doubles": 0,
             "triples": 0,
             "homeRuns": 0,
-            "walks": 0,
+            "walks": 2,
             "totalBases": 2,
-            "atBats": 26,
-            "plateAppearances": 26,
-            "avg": 0.077,
-            "obp": 0.077,
-            "slg": 0.077,
-            "ops": 0.154,
-            "hitRate": 0.07690000000000001,
-            "singlesRate": 0.07690000000000001,
+            "atBats": 8,
+            "plateAppearances": 12,
+            "avg": 0.25,
+            "obp": 0.4,
+            "slg": 0.25,
+            "ops": 0.65,
+            "hitRate": 0.16670000000000001,
+            "singlesRate": 0.16670000000000001,
             "hrRate": 0,
-            "walkRate": 0,
-            "totalBasesRate": 0.07690000000000001
+            "walkRate": 0.16670000000000001,
+            "totalBasesRate": 0.16670000000000001
           },
           "split": {
-            "hits": 29,
-            "singles": 17,
-            "doubles": 9,
+            "hits": 23,
+            "singles": 15,
+            "doubles": 6,
             "triples": 0,
-            "homeRuns": 3,
-            "walks": 15,
-            "totalBases": 47,
-            "atBats": 151,
-            "plateAppearances": 167,
-            "avg": 0.192,
-            "obp": 0.269,
-            "slg": 0.311,
-            "ops": 0.581,
-            "hitRate": 0.17370000000000002,
-            "singlesRate": 0.1018,
-            "hrRate": 0.018000000000000002,
-            "walkRate": 0.0898,
-            "totalBasesRate": 0.2814
+            "homeRuns": 2,
+            "walks": 12,
+            "totalBases": 35,
+            "atBats": 129,
+            "plateAppearances": 150,
+            "avg": 0.178,
+            "obp": 0.267,
+            "slg": 0.271,
+            "ops": 0.538,
+            "hitRate": 0.1533,
+            "singlesRate": 0.1,
+            "hrRate": 0.013300000000000001,
+            "walkRate": 0.08,
+            "totalBasesRate": 0.23329999999999998
           },
           "metrics": {
-            "powerScore": 32.3,
-            "contactScore": 39.1,
-            "patienceScore": 61.9,
-            "formScore": 18,
-            "splitScore": 38.9,
-            "varianceScore": 92,
-            "pitchTypeFitScore": 30.9,
-            "pitchTypeGrade": -2.53,
+            "powerScore": 20.1,
+            "contactScore": 35.2,
+            "patienceScore": 51.1,
+            "formScore": 64.1,
+            "splitScore": 53.5,
+            "varianceScore": 67.5,
+            "pitchTypeFitScore": 26.9,
+            "pitchTypeGrade": -3.85,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 18,
-            "matchupGrade": -8
+            "matchupScore": 45.3,
+            "matchupGrade": -1.06
           },
           "pitchType": {
-            "fitScore": 30.9,
-            "fitGrade": -2.53,
+            "fitScore": 26.9,
+            "fitGrade": -3.85,
             "coveragePct": 100,
-            "summary": "Slider 38% / 4-Seam Fastball 35% / Curveball 10% | fit -2.5",
+            "summary": "Slider 38% / 4-Seam Fastball 35% / Curveball 10% | fit -3.9",
             "topPitches": [
               {
                 "pitchType": "SL",
                 "pitchName": "Slider",
                 "pitchUsage": 38.3,
                 "fitGrade": -8,
-                "batterFitScore": 21.9,
+                "batterFitScore": 30.1,
                 "qualityScore": 74.4
               },
               {
                 "pitchType": "FF",
                 "pitchName": "4-Seam Fastball",
                 "pitchUsage": 35,
-                "fitGrade": 2.71,
-                "batterFitScore": 39.9,
+                "fitGrade": -1.27,
+                "batterFitScore": 18,
                 "qualityScore": 25
               },
               {
                 "pitchType": "CU",
                 "pitchName": "Curveball",
                 "pitchUsage": 10.3,
-                "fitGrade": -8,
-                "batterFitScore": 37.4,
+                "fitGrade": -6.09,
+                "batterFitScore": 60.5,
                 "qualityScore": 94
               }
             ]
           },
           "statcastTrend": {
             "gamesSample7": 3,
-            "paSample7": 13,
-            "bbeSample7": 14,
-            "rolling7Xwoba": 0.184,
-            "rolling7Xba": 0.144,
-            "rolling7Xslg": 0.297,
-            "rolling7BarrelPct": 7.1,
-            "rolling7HardHitPct": 21.4,
-            "rolling7SweetSpotPct": 28.6,
-            "xwobaTrend": -0.097,
-            "barrelTrend": 4.4,
-            "hardHitTrend": -4.3,
-            "sweetSpotTrend": -5.9,
-            "trendSignal": "fading"
+            "paSample7": 6,
+            "bbeSample7": 5,
+            "rolling7Xwoba": 0.287,
+            "rolling7Xba": 0.184,
+            "rolling7Xslg": 0.196,
+            "rolling7BarrelPct": 0,
+            "rolling7HardHitPct": 20,
+            "rolling7SweetSpotPct": 0,
+            "xwobaTrend": 0.018,
+            "barrelTrend": -1.4,
+            "hardHitTrend": 1.2,
+            "sweetSpotTrend": -24.6,
+            "trendSignal": "improving"
           },
           "tags": [
+            "heater",
+            "split edge",
             "arsenal risk",
-            "cold",
-            "statcast fade"
+            "statcast up"
           ],
-          "primaryTag": "arsenal risk",
-          "summary": ".199 AVG | .620 OPS | 38 H | 5 HR | 8g: .077 AVG | .154 OPS | 2 H | 0 HR | vs RHP: .192 AVG | .581 OPS | 3 HR | arsenal Slider 38% / 4-Seam Fastball 35% / Curveball 10% | fit -2.5 | -8.0 matchup grade in a neutral lane",
-          "matchupNote": "-8.00 vs Grant Holmes"
+          "primaryTag": "heater",
+          "summary": ".180 AVG | .522 OPS | 27 H | 2 HR | 6g: .250 AVG | .650 OPS | 2 H | 0 HR | vs RHP: .178 AVG | .538 OPS | 2 HR | arsenal Slider 38% / 4-Seam Fastball 35% / Curveball 10% | fit -3.9 | -1.1 matchup grade in a neutral lane",
+          "matchupNote": "-1.06 vs Grant Holmes"
         }
       ],
       "bvpHistory": {
@@ -2710,27 +2711,27 @@ export const lineupBoardsByGameId = {
         "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
       },
       "aggregate": {
-        "averageMatchupGrade": -0.24,
+        "averageMatchupGrade": 0.53,
         "trackedBatters": 9,
         "starterThreatCount": 3,
         "contactCount": 2,
         "powerCount": 4,
-        "platoonCount": 4,
+        "platoonCount": 5,
         "pitchTypeEdgeCount": 3,
-        "oppositeHandCount": 3,
-        "sameHandCount": 6,
+        "oppositeHandCount": 4,
+        "sameHandCount": 5,
         "switchCount": 1,
         "topThirdSplitCount": 3,
         "topThirdArsenalCount": 2,
-        "heaterCount": 2,
+        "heaterCount": 3,
         "suppressorCount": 2,
-        "platoonPressureIndex": 63,
-        "pitchTypePressureIndex": 78.1,
-        "bullpenPitchTypePressureIndex": 52.4,
-        "starterPressureIndex": 57.7,
-        "overallPressureIndex": 58.1,
+        "platoonPressureIndex": 68.8,
+        "pitchTypePressureIndex": 77.2,
+        "bullpenPitchTypePressureIndex": 52.1,
+        "starterPressureIndex": 66.9,
+        "overallPressureIndex": 67.2,
         "topThirdScore": 46.3,
-        "depthScore": 43.3,
+        "depthScore": 52.4,
         "bullpenOverperformHitters": [
           {
             "name": "JJ Bleday",
@@ -2761,7 +2762,7 @@ export const lineupBoardsByGameId = {
             "tag": "carry | +10.00 vs Grant Holmes"
           },
           {
-            "name": "Eugenio Suarez",
+            "name": "Eugenio Suárez",
             "tag": "arsenal risk | +4.32 vs Grant Holmes"
           }
         ],
@@ -2793,23 +2794,23 @@ export const lineupBoardsByGameId = {
           }
         ],
         "underperformNote": "Sal Stewart and Spencer Steer carry the softer form or split fit into a balanced lane.",
-        "overview": "Reds can lean on Nathaniel Lowe, Tyler Stephenson, Eugenio Suarez to drive early pressure against Grant Holmes.",
-        "bullpenOverview": "Didier Fuentes is the first bridge look, and this lineup grades -1.4 against that likely first-up arsenal.",
+        "overview": "Reds can lean on Nathaniel Lowe, Tyler Stephenson, Eugenio Suárez to drive early pressure against Grant Holmes.",
+        "bullpenOverview": "Didier Fuentes is the first bridge look, and this lineup grades -1.5 against that likely first-up arsenal.",
         "topThirdScore": 46.3,
         "middleScore": 59.3,
-        "depthScore": 43.3,
+        "depthScore": 52.4,
         "bullpenPitchTypeSummary": {
-          "pressureIndex": 52.4,
-          "averageFitScore": 58.1,
-          "averageFitGrade": -1.01,
+          "pressureIndex": 52.1,
+          "averageFitScore": 58,
+          "averageFitGrade": -1.06,
           "firstReliever": {
             "pitcherId": 800311,
             "name": "Didier Fuentes",
             "role": "middle",
             "availabilityScore": 76.05,
             "firstRelieverLikelihood": 98.67,
-            "fitScore": 62.7,
-            "fitGrade": -1.38,
+            "fitScore": 61.9,
+            "fitGrade": -1.5,
             "pitchMixSummary": "4-Seam Fastball 69% / Slider 23% / Split-Finger 8%",
             "topAttackers": [
               {
@@ -2831,8 +2832,8 @@ export const lineupBoardsByGameId = {
               "role": "middle",
               "availabilityScore": 76.05,
               "firstRelieverLikelihood": 98.67,
-              "fitScore": 62.7,
-              "fitGrade": -1.38,
+              "fitScore": 61.9,
+              "fitGrade": -1.5,
               "pitchMixSummary": "4-Seam Fastball 69% / Slider 23% / Split-Finger 8%",
               "topAttackers": [
                 {
@@ -2853,8 +2854,8 @@ export const lineupBoardsByGameId = {
               "role": "middle",
               "availabilityScore": 54.9,
               "firstRelieverLikelihood": 92.35,
-              "fitScore": 53.5,
-              "fitGrade": -0.64,
+              "fitScore": 54,
+              "fitGrade": -0.62,
               "pitchMixSummary": "Slider 67% / Curveball 17% / 4-Seam Fastball 16%",
               "topAttackers": [
                 {
@@ -2887,7 +2888,7 @@ export const lineupBoardsByGameId = {
               "tag": "split edge | fit +5.7"
             }
           ],
-          "overview": "Didier Fuentes is the first bridge look, and this lineup grades -1.4 against that likely first-up arsenal."
+          "overview": "Didier Fuentes is the first bridge look, and this lineup grades -1.5 against that likely first-up arsenal."
         }
       }
     }
@@ -2895,10 +2896,10 @@ export const lineupBoardsByGameId = {
   "padres-nationals": {
     "gameId": "padres-nationals",
     "title": "Padres @ Nationals",
-    "snapshot": "2026-05-29T18:25:09.516Z",
+    "snapshot": "2026-05-29T18:54:43.433Z",
     "status": {
       "away": "partial",
-      "home": "partial"
+      "home": "posted"
     },
     "weather": {
       "icon": "clear-day",
@@ -2910,7 +2911,7 @@ export const lineupBoardsByGameId = {
       "label": "77°F | 0% precip"
     },
     "marketWeatherContext": {
-      "line": "WSH -116",
+      "line": "WSH -117",
       "total": "9.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
@@ -4318,7 +4319,7 @@ export const lineupBoardsByGameId = {
     },
     "home": {
       "teamName": "Nationals",
-      "lineupSource": "rotowire-supplement",
+      "lineupSource": "official-feed",
       "opposingStarter": {
         "id": 608337,
         "name": "Lucas Giolito",
@@ -4493,6 +4494,156 @@ export const lineupBoardsByGameId = {
           "primaryTag": "carry",
           "summary": ".276 AVG | .967 OPS | 60 H | 15 HR | 12g: .500 AVG | 1.480 OPS | 20 H | 4 HR | vs RHP: .293 AVG | 1.027 OPS | 11 HR | arsenal 4-Seam Fastball 43% / Changeup 38% / Slider 16% | fit +5.7 | +10.0 matchup grade in a neutral lane",
           "matchupNote": "+10.00 vs Lucas Giolito"
+        },
+        {
+          "playerId": 671277,
+          "slot": 2,
+          "name": "Luis García Jr.",
+          "position": "1B",
+          "bats": "L",
+          "savant": {
+            "playerId": 671277,
+            "playerUrl": "https://baseballsavant.mlb.com/savant-player/luis-garcia-jr-671277",
+            "statsSuffix": "r-hitting-mlb",
+            "season": 2026,
+            "statsUrls": {
+              "statcast": "https://baseballsavant.mlb.com/savant-player/luis-garcia-jr-671277?stats=statcast-r-hitting-mlb&season=2026",
+              "splits": "https://baseballsavant.mlb.com/savant-player/luis-garcia-jr-671277?stats=splits-r-hitting-mlb&season=2026",
+              "gamelogs": "https://baseballsavant.mlb.com/savant-player/luis-garcia-jr-671277?stats=gamelogs-r-hitting-mlb&season=2026"
+            }
+          },
+          "season": {
+            "gamesPlayed": 51,
+            "hits": 44,
+            "singles": 28,
+            "doubles": 10,
+            "triples": 2,
+            "homeRuns": 4,
+            "walks": 6,
+            "totalBases": 70,
+            "atBats": 167,
+            "plateAppearances": 174,
+            "avg": 0.263,
+            "obp": 0.287,
+            "slg": 0.419,
+            "ops": 0.707,
+            "hitRate": 0.2529,
+            "singlesRate": 0.1609,
+            "hrRate": 0.023,
+            "walkRate": 0.0345,
+            "totalBasesRate": 0.4023
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 10,
+            "singles": 6,
+            "doubles": 2,
+            "triples": 0,
+            "homeRuns": 2,
+            "walks": 0,
+            "totalBases": 18,
+            "atBats": 34,
+            "plateAppearances": 34,
+            "avg": 0.294,
+            "obp": 0.294,
+            "slg": 0.529,
+            "ops": 0.824,
+            "hitRate": 0.29410000000000003,
+            "singlesRate": 0.1765,
+            "hrRate": 0.0588,
+            "walkRate": 0,
+            "totalBasesRate": 0.5294
+          },
+          "split": {
+            "hits": 38,
+            "singles": 23,
+            "doubles": 10,
+            "triples": 2,
+            "homeRuns": 3,
+            "walks": 6,
+            "totalBases": 61,
+            "atBats": 147,
+            "plateAppearances": 154,
+            "avg": 0.259,
+            "obp": 0.286,
+            "slg": 0.415,
+            "ops": 0.701,
+            "hitRate": 0.2468,
+            "singlesRate": 0.1494,
+            "hrRate": 0.0195,
+            "walkRate": 0.039,
+            "totalBasesRate": 0.3961
+          },
+          "metrics": {
+            "powerScore": 43.3,
+            "contactScore": 60.5,
+            "patienceScore": 30.8,
+            "formScore": 92,
+            "splitScore": 44.9,
+            "varianceScore": 56.2,
+            "pitchTypeFitScore": 66.1,
+            "pitchTypeGrade": 0.93,
+            "pitchTypeCoveragePct": 100,
+            "matchupScore": 85.3,
+            "matchupGrade": 6.93
+          },
+          "pitchType": {
+            "fitScore": 66.1,
+            "fitGrade": 0.93,
+            "coveragePct": 100,
+            "summary": "4-Seam Fastball 43% / Changeup 38% / Slider 16% | fit +0.9",
+            "topPitches": [
+              {
+                "pitchType": "FF",
+                "pitchName": "4-Seam Fastball",
+                "pitchUsage": 42.7,
+                "fitGrade": 4.33,
+                "batterFitScore": 67.5,
+                "qualityScore": 43.7
+              },
+              {
+                "pitchType": "CH",
+                "pitchName": "Changeup",
+                "pitchUsage": 38.4,
+                "fitGrade": -2.67,
+                "batterFitScore": 79.3,
+                "qualityScore": 94
+              },
+              {
+                "pitchType": "SL",
+                "pitchName": "Slider",
+                "pitchUsage": 15.9,
+                "fitGrade": 0.49,
+                "batterFitScore": 22.8,
+                "qualityScore": 20.1
+              }
+            ]
+          },
+          "statcastTrend": {
+            "gamesSample7": 5,
+            "paSample7": 17,
+            "bbeSample7": 25,
+            "rolling7Xwoba": 0.286,
+            "rolling7Xba": 0.265,
+            "rolling7Xslg": 0.404,
+            "rolling7BarrelPct": 8,
+            "rolling7HardHitPct": 32,
+            "rolling7SweetSpotPct": 20,
+            "xwobaTrend": -0.02,
+            "barrelTrend": 3.5,
+            "hardHitTrend": -2.5,
+            "sweetSpotTrend": -10.9,
+            "trendSignal": "fading"
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge",
+            "statcast fade"
+          ],
+          "primaryTag": "carry",
+          "summary": ".263 AVG | .707 OPS | 44 H | 4 HR | 10g: .294 AVG | .824 OPS | 10 H | 2 HR | vs RHP: .259 AVG | .701 OPS | 3 HR | arsenal 4-Seam Fastball 43% / Changeup 38% / Slider 16% | fit +0.9 | +6.9 matchup grade in a neutral lane",
+          "matchupNote": "+6.93 vs Lucas Giolito"
         },
         {
           "playerId": 678554,
@@ -5398,7 +5549,7 @@ export const lineupBoardsByGameId = {
         {
           "playerId": 683083,
           "slot": 9,
-          "name": "Nasim Nunez",
+          "name": "Nasim Nuñez",
           "position": "2B",
           "bats": "S",
           "savant": {
@@ -5552,27 +5703,27 @@ export const lineupBoardsByGameId = {
         "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
       },
       "aggregate": {
-        "averageMatchupGrade": 1.86,
-        "trackedBatters": 8,
-        "starterThreatCount": 4,
-        "contactCount": 2,
+        "averageMatchupGrade": 2.42,
+        "trackedBatters": 9,
+        "starterThreatCount": 5,
+        "contactCount": 3,
         "powerCount": 3,
-        "platoonCount": 8,
+        "platoonCount": 9,
         "pitchTypeEdgeCount": 3,
-        "oppositeHandCount": 5,
+        "oppositeHandCount": 6,
         "sameHandCount": 3,
         "switchCount": 2,
         "topThirdSplitCount": 3,
-        "topThirdArsenalCount": 2,
-        "heaterCount": 5,
+        "topThirdArsenalCount": 1,
+        "heaterCount": 6,
         "suppressorCount": 2,
-        "platoonPressureIndex": 91.4,
-        "pitchTypePressureIndex": 72,
-        "bullpenPitchTypePressureIndex": 47.7,
+        "platoonPressureIndex": 94,
+        "pitchTypePressureIndex": 66.1,
+        "bullpenPitchTypePressureIndex": 47.2,
         "starterPressureIndex": 94,
         "overallPressureIndex": 93.6,
-        "topThirdScore": 94,
-        "depthScore": 18.9,
+        "topThirdScore": 91.1,
+        "depthScore": 37.8,
         "bullpenOverperformHitters": [
           {
             "name": "James Wood",
@@ -5626,7 +5777,7 @@ export const lineupBoardsByGameId = {
         ],
         "underperformHitters": [
           {
-            "name": "Nasim Nunez",
+            "name": "Nasim Nuñez",
             "tag": "split edge | -8.00 vs Lucas Giolito"
           },
           {
@@ -5634,24 +5785,24 @@ export const lineupBoardsByGameId = {
             "tag": "split edge | -6.86 vs Lucas Giolito"
           }
         ],
-        "underperformNote": "Nasim Nunez and Daylen Lile carry the softer form or split fit into a unknown sample lane.",
+        "underperformNote": "Nasim Nuñez and Daylen Lile carry the softer form or split fit into a unknown sample lane.",
         "overview": "Nationals can lean on James Wood, Curtis Mead, CJ Abrams to drive early pressure against Lucas Giolito.",
-        "bullpenOverview": "Jeremiah Estrada is the first bridge look, and this lineup grades -3.0 against that likely first-up arsenal.",
-        "topThirdScore": 94,
-        "middleScore": 51.2,
-        "depthScore": 18.9,
+        "bullpenOverview": "Jeremiah Estrada is the first bridge look, and this lineup grades -3.3 against that likely first-up arsenal.",
+        "topThirdScore": 91.1,
+        "middleScore": 57.2,
+        "depthScore": 37.8,
         "bullpenPitchTypeSummary": {
-          "pressureIndex": 47.7,
-          "averageFitScore": 59.4,
-          "averageFitGrade": -1.45,
+          "pressureIndex": 47.2,
+          "averageFitScore": 59.1,
+          "averageFitGrade": -1.5,
           "firstReliever": {
             "pitcherId": 669093,
             "name": "Jeremiah Estrada",
             "role": "middle",
             "availabilityScore": 76.25,
             "firstRelieverLikelihood": 100,
-            "fitScore": 58.1,
-            "fitGrade": -3.02,
+            "fitScore": 55.8,
+            "fitGrade": -3.32,
             "pitchMixSummary": "4-Seam Fastball 58% / Split-Finger 31% / Slider 10%",
             "topAttackers": [
               {
@@ -5673,8 +5824,8 @@ export const lineupBoardsByGameId = {
               "role": "middle",
               "availabilityScore": 76.25,
               "firstRelieverLikelihood": 100,
-              "fitScore": 58.1,
-              "fitGrade": -3.02,
+              "fitScore": 55.8,
+              "fitGrade": -3.32,
               "pitchMixSummary": "4-Seam Fastball 58% / Split-Finger 31% / Slider 10%",
               "topAttackers": [
                 {
@@ -5695,8 +5846,8 @@ export const lineupBoardsByGameId = {
               "role": "middle",
               "availabilityScore": 54.1,
               "firstRelieverLikelihood": 93.94,
-              "fitScore": 60.7,
-              "fitGrade": 0.12,
+              "fitScore": 62.4,
+              "fitGrade": 0.31,
               "pitchMixSummary": "Sinker 47% / Slider 22% / Changeup 18%",
               "topAttackers": [
                 {
@@ -5729,7 +5880,7 @@ export const lineupBoardsByGameId = {
               "tag": "carry | fit +5.3"
             }
           ],
-          "overview": "Jeremiah Estrada is the first bridge look, and this lineup grades -3.0 against that likely first-up arsenal."
+          "overview": "Jeremiah Estrada is the first bridge look, and this lineup grades -3.3 against that likely first-up arsenal."
         }
       }
     }
@@ -5737,9 +5888,9 @@ export const lineupBoardsByGameId = {
   "twins-pirates": {
     "gameId": "twins-pirates",
     "title": "Twins @ Pirates",
-    "snapshot": "2026-05-29T18:25:09.516Z",
+    "snapshot": "2026-05-29T18:54:43.434Z",
     "status": {
-      "away": "partial",
+      "away": "posted",
       "home": "partial"
     },
     "weather": {
@@ -5758,7 +5909,7 @@ export const lineupBoardsByGameId = {
     },
     "away": {
       "teamName": "Twins",
-      "lineupSource": "rotowire-supplement",
+      "lineupSource": "official-feed",
       "opposingStarter": {
         "id": 683003,
         "name": "Jared Jones",
@@ -5787,7 +5938,7 @@ export const lineupBoardsByGameId = {
           "playerId": 621439,
           "slot": 1,
           "name": "Byron Buxton",
-          "position": "CF",
+          "position": "DH",
           "bats": "R",
           "savant": {
             "playerId": 621439,
@@ -6021,127 +6172,128 @@ export const lineupBoardsByGameId = {
           "matchupNote": "+5.82 vs Jared Jones"
         },
         {
-          "playerId": 663616,
+          "playerId": 665019,
           "slot": 3,
-          "name": "Trevor Larnach",
-          "position": "LF",
+          "name": "Kody Clemens",
+          "position": "CF",
           "bats": "L",
           "savant": {
-            "playerId": 663616,
-            "playerUrl": "https://baseballsavant.mlb.com/savant-player/trevor-larnach-663616",
+            "playerId": 665019,
+            "playerUrl": "https://baseballsavant.mlb.com/savant-player/kody-clemens-665019",
             "statsSuffix": "r-hitting-mlb",
             "season": 2026,
             "statsUrls": {
-              "statcast": "https://baseballsavant.mlb.com/savant-player/trevor-larnach-663616?stats=statcast-r-hitting-mlb&season=2026",
-              "splits": "https://baseballsavant.mlb.com/savant-player/trevor-larnach-663616?stats=splits-r-hitting-mlb&season=2026",
-              "gamelogs": "https://baseballsavant.mlb.com/savant-player/trevor-larnach-663616?stats=gamelogs-r-hitting-mlb&season=2026"
+              "statcast": "https://baseballsavant.mlb.com/savant-player/kody-clemens-665019?stats=statcast-r-hitting-mlb&season=2026",
+              "splits": "https://baseballsavant.mlb.com/savant-player/kody-clemens-665019?stats=splits-r-hitting-mlb&season=2026",
+              "gamelogs": "https://baseballsavant.mlb.com/savant-player/kody-clemens-665019?stats=gamelogs-r-hitting-mlb&season=2026"
             }
           },
           "season": {
             "gamesPlayed": 45,
-            "hits": 35,
-            "singles": 24,
-            "doubles": 8,
+            "hits": 34,
+            "singles": 18,
+            "doubles": 10,
             "triples": 1,
-            "homeRuns": 2,
-            "walks": 22,
-            "totalBases": 51,
-            "atBats": 135,
-            "plateAppearances": 159,
-            "avg": 0.259,
-            "obp": 0.371,
-            "slg": 0.378,
-            "ops": 0.749,
-            "hitRate": 0.22010000000000002,
-            "singlesRate": 0.1509,
-            "hrRate": 0.0126,
-            "walkRate": 0.1384,
-            "totalBasesRate": 0.3208
+            "homeRuns": 5,
+            "walks": 13,
+            "totalBases": 61,
+            "atBats": 150,
+            "plateAppearances": 170,
+            "avg": 0.227,
+            "obp": 0.31,
+            "slg": 0.407,
+            "ops": 0.716,
+            "hitRate": 0.2,
+            "singlesRate": 0.1059,
+            "hrRate": 0.0294,
+            "walkRate": 0.0765,
+            "totalBasesRate": 0.3588
           },
           "recent": {
             "gamesPlayed": 14,
-            "hits": 14,
-            "singles": 10,
-            "doubles": 4,
-            "triples": 0,
-            "homeRuns": 0,
+            "hits": 10,
+            "singles": 6,
+            "doubles": 0,
+            "triples": 2,
+            "homeRuns": 2,
             "walks": 2,
-            "totalBases": 18,
-            "atBats": 44,
-            "plateAppearances": 48,
-            "avg": 0.318,
-            "obp": 0.375,
-            "slg": 0.409,
-            "ops": 0.784,
-            "hitRate": 0.2917,
-            "singlesRate": 0.20829999999999999,
-            "hrRate": 0,
-            "walkRate": 0.0417,
-            "totalBasesRate": 0.375
-          },
-          "split": {
-            "hits": 33,
-            "singles": 23,
-            "doubles": 8,
-            "triples": 1,
-            "homeRuns": 1,
-            "walks": 20,
-            "totalBases": 46,
-            "atBats": 116,
-            "plateAppearances": 138,
-            "avg": 0.284,
-            "obp": 0.399,
-            "slg": 0.397,
-            "ops": 0.795,
-            "hitRate": 0.2391,
-            "singlesRate": 0.16670000000000001,
-            "hrRate": 0.0072,
-            "walkRate": 0.1449,
+            "totalBases": 20,
+            "atBats": 58,
+            "plateAppearances": 60,
+            "avg": 0.172,
+            "obp": 0.2,
+            "slg": 0.345,
+            "ops": 0.545,
+            "hitRate": 0.16670000000000001,
+            "singlesRate": 0.1,
+            "hrRate": 0.0333,
+            "walkRate": 0.0333,
             "totalBasesRate": 0.3333
           },
+          "split": {
+            "hits": 25,
+            "singles": 13,
+            "doubles": 8,
+            "triples": 1,
+            "homeRuns": 3,
+            "walks": 11,
+            "totalBases": 44,
+            "atBats": 120,
+            "plateAppearances": 136,
+            "avg": 0.208,
+            "obp": 0.296,
+            "slg": 0.367,
+            "ops": 0.663,
+            "hitRate": 0.1838,
+            "singlesRate": 0.0956,
+            "hrRate": 0.022099999999999998,
+            "walkRate": 0.0809,
+            "totalBasesRate": 0.3235
+          },
           "metrics": {
-            "powerScore": 30.7,
-            "contactScore": 57.8,
-            "patienceScore": 71.5,
-            "formScore": 50.6,
-            "splitScore": 55,
-            "varianceScore": 51,
+            "powerScore": 44.8,
+            "contactScore": 43.7,
+            "patienceScore": 51.5,
+            "formScore": 25,
+            "splitScore": 32.7,
+            "varianceScore": 80.1,
             "pitchTypeFitScore": 50,
             "pitchTypeGrade": 0,
             "pitchTypeCoveragePct": 0,
-            "matchupScore": 70.3,
-            "matchupGrade": 4.71
+            "matchupScore": 22.1,
+            "matchupGrade": -5.51
           },
           "pitchType": null,
           "statcastTrend": {
             "gamesSample7": 7,
-            "paSample7": 24,
-            "bbeSample7": 31,
-            "rolling7Xwoba": 0.332,
-            "rolling7Xba": 0.299,
-            "rolling7Xslg": 0.382,
-            "rolling7BarrelPct": 0,
-            "rolling7HardHitPct": 29,
-            "rolling7SweetSpotPct": 38.7,
-            "xwobaTrend": 0.06,
-            "barrelTrend": -1.1,
-            "hardHitTrend": 2.4,
-            "sweetSpotTrend": 8.9,
+            "paSample7": 30,
+            "bbeSample7": 41,
+            "rolling7Xwoba": 0.331,
+            "rolling7Xba": 0.278,
+            "rolling7Xslg": 0.469,
+            "rolling7BarrelPct": 7.3,
+            "rolling7HardHitPct": 29.3,
+            "rolling7SweetSpotPct": 22,
+            "xwobaTrend": 0.007,
+            "barrelTrend": 1.4,
+            "hardHitTrend": 3.4,
+            "sweetSpotTrend": 1.3,
             "trendSignal": "improving"
           },
           "tags": [
             "split edge",
+            "cold",
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".259 AVG | .749 OPS | 35 H | 2 HR | 14g: .318 AVG | .784 OPS | 14 H | 0 HR | vs RHP: .284 AVG | .795 OPS | 1 HR |  | +4.7 matchup grade in a neutral lane",
-          "matchupNote": "+4.71 vs Jared Jones"
+          "summary": ".227 AVG | .716 OPS | 34 H | 5 HR | 14g: .172 AVG | .545 OPS | 10 H | 2 HR | vs RHP: .208 AVG | .663 OPS | 3 HR |  | -5.5 matchup grade in a neutral lane",
+          "matchupNote": "-5.51 vs Jared Jones"
         },
         {
           "playerId": 605137,
           "slot": 4,
           "name": "Josh Bell",
-          "position": "DH",
+          "position": "1B",
           "bats": "S",
           "savant": {
             "playerId": 605137,
@@ -6256,122 +6408,121 @@ export const lineupBoardsByGameId = {
           "matchupNote": "-8.00 vs Jared Jones"
         },
         {
-          "playerId": 665019,
+          "playerId": 663616,
           "slot": 5,
-          "name": "Kody Clemens",
-          "position": "1B",
+          "name": "Trevor Larnach",
+          "position": "LF",
           "bats": "L",
           "savant": {
-            "playerId": 665019,
-            "playerUrl": "https://baseballsavant.mlb.com/savant-player/kody-clemens-665019",
+            "playerId": 663616,
+            "playerUrl": "https://baseballsavant.mlb.com/savant-player/trevor-larnach-663616",
             "statsSuffix": "r-hitting-mlb",
             "season": 2026,
             "statsUrls": {
-              "statcast": "https://baseballsavant.mlb.com/savant-player/kody-clemens-665019?stats=statcast-r-hitting-mlb&season=2026",
-              "splits": "https://baseballsavant.mlb.com/savant-player/kody-clemens-665019?stats=splits-r-hitting-mlb&season=2026",
-              "gamelogs": "https://baseballsavant.mlb.com/savant-player/kody-clemens-665019?stats=gamelogs-r-hitting-mlb&season=2026"
+              "statcast": "https://baseballsavant.mlb.com/savant-player/trevor-larnach-663616?stats=statcast-r-hitting-mlb&season=2026",
+              "splits": "https://baseballsavant.mlb.com/savant-player/trevor-larnach-663616?stats=splits-r-hitting-mlb&season=2026",
+              "gamelogs": "https://baseballsavant.mlb.com/savant-player/trevor-larnach-663616?stats=gamelogs-r-hitting-mlb&season=2026"
             }
           },
           "season": {
             "gamesPlayed": 45,
-            "hits": 34,
-            "singles": 18,
-            "doubles": 10,
+            "hits": 35,
+            "singles": 24,
+            "doubles": 8,
             "triples": 1,
-            "homeRuns": 5,
-            "walks": 13,
-            "totalBases": 61,
-            "atBats": 150,
-            "plateAppearances": 170,
-            "avg": 0.227,
-            "obp": 0.31,
-            "slg": 0.407,
-            "ops": 0.716,
-            "hitRate": 0.2,
-            "singlesRate": 0.1059,
-            "hrRate": 0.0294,
-            "walkRate": 0.0765,
-            "totalBasesRate": 0.3588
+            "homeRuns": 2,
+            "walks": 22,
+            "totalBases": 51,
+            "atBats": 135,
+            "plateAppearances": 159,
+            "avg": 0.259,
+            "obp": 0.371,
+            "slg": 0.378,
+            "ops": 0.749,
+            "hitRate": 0.22010000000000002,
+            "singlesRate": 0.1509,
+            "hrRate": 0.0126,
+            "walkRate": 0.1384,
+            "totalBasesRate": 0.3208
           },
           "recent": {
             "gamesPlayed": 14,
-            "hits": 10,
-            "singles": 6,
-            "doubles": 0,
-            "triples": 2,
-            "homeRuns": 2,
+            "hits": 14,
+            "singles": 10,
+            "doubles": 4,
+            "triples": 0,
+            "homeRuns": 0,
             "walks": 2,
-            "totalBases": 20,
-            "atBats": 58,
-            "plateAppearances": 60,
-            "avg": 0.172,
-            "obp": 0.2,
-            "slg": 0.345,
-            "ops": 0.545,
-            "hitRate": 0.16670000000000001,
-            "singlesRate": 0.1,
-            "hrRate": 0.0333,
-            "walkRate": 0.0333,
-            "totalBasesRate": 0.3333
+            "totalBases": 18,
+            "atBats": 44,
+            "plateAppearances": 48,
+            "avg": 0.318,
+            "obp": 0.375,
+            "slg": 0.409,
+            "ops": 0.784,
+            "hitRate": 0.2917,
+            "singlesRate": 0.20829999999999999,
+            "hrRate": 0,
+            "walkRate": 0.0417,
+            "totalBasesRate": 0.375
           },
           "split": {
-            "hits": 25,
-            "singles": 13,
+            "hits": 33,
+            "singles": 23,
             "doubles": 8,
             "triples": 1,
-            "homeRuns": 3,
-            "walks": 11,
-            "totalBases": 44,
-            "atBats": 120,
-            "plateAppearances": 136,
-            "avg": 0.208,
-            "obp": 0.296,
-            "slg": 0.367,
-            "ops": 0.663,
-            "hitRate": 0.1838,
-            "singlesRate": 0.0956,
-            "hrRate": 0.022099999999999998,
-            "walkRate": 0.0809,
-            "totalBasesRate": 0.3235
+            "homeRuns": 1,
+            "walks": 20,
+            "totalBases": 46,
+            "atBats": 116,
+            "plateAppearances": 138,
+            "avg": 0.284,
+            "obp": 0.399,
+            "slg": 0.397,
+            "ops": 0.795,
+            "hitRate": 0.2391,
+            "singlesRate": 0.16670000000000001,
+            "hrRate": 0.0072,
+            "walkRate": 0.1449,
+            "totalBasesRate": 0.3333
           },
           "metrics": {
-            "powerScore": 44.8,
-            "contactScore": 43.7,
-            "patienceScore": 51.5,
-            "formScore": 25,
-            "splitScore": 32.7,
-            "varianceScore": 80.1,
+            "powerScore": 30.7,
+            "contactScore": 57.8,
+            "patienceScore": 71.5,
+            "formScore": 50.6,
+            "splitScore": 55,
+            "varianceScore": 51,
             "pitchTypeFitScore": 50,
             "pitchTypeGrade": 0,
             "pitchTypeCoveragePct": 0,
-            "matchupScore": 19.6,
-            "matchupGrade": -6.11
+            "matchupScore": 67.8,
+            "matchupGrade": 4.11
           },
           "pitchType": null,
           "statcastTrend": {
             "gamesSample7": 7,
-            "paSample7": 30,
-            "bbeSample7": 41,
-            "rolling7Xwoba": 0.331,
-            "rolling7Xba": 0.278,
-            "rolling7Xslg": 0.469,
-            "rolling7BarrelPct": 7.3,
-            "rolling7HardHitPct": 29.3,
-            "rolling7SweetSpotPct": 22,
-            "xwobaTrend": 0.007,
-            "barrelTrend": 1.4,
-            "hardHitTrend": 3.4,
-            "sweetSpotTrend": 1.3,
+            "paSample7": 24,
+            "bbeSample7": 31,
+            "rolling7Xwoba": 0.332,
+            "rolling7Xba": 0.299,
+            "rolling7Xslg": 0.382,
+            "rolling7BarrelPct": 0,
+            "rolling7HardHitPct": 29,
+            "rolling7SweetSpotPct": 38.7,
+            "xwobaTrend": 0.06,
+            "barrelTrend": -1.1,
+            "hardHitTrend": 2.4,
+            "sweetSpotTrend": 8.9,
             "trendSignal": "improving"
           },
           "tags": [
             "split edge",
-            "cold",
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".227 AVG | .716 OPS | 34 H | 5 HR | 14g: .172 AVG | .545 OPS | 10 H | 2 HR | vs RHP: .208 AVG | .663 OPS | 3 HR |  | -6.1 matchup grade in a neutral lane",
-          "matchupNote": "-6.11 vs Jared Jones"
+          "summary": ".259 AVG | .749 OPS | 35 H | 2 HR | 14g: .318 AVG | .784 OPS | 14 H | 0 HR | vs RHP: .284 AVG | .795 OPS | 1 HR |  | +4.1 matchup grade in a neutral lane",
+          "matchupNote": "+4.11 vs Jared Jones"
         },
         {
           "playerId": 668885,
@@ -6869,9 +7020,9 @@ export const lineupBoardsByGameId = {
         "platoonPressureIndex": 77.8,
         "pitchTypePressureIndex": 35.6,
         "bullpenPitchTypePressureIndex": 45.2,
-        "starterPressureIndex": 59.5,
-        "overallPressureIndex": 58.7,
-        "topThirdScore": 76.7,
+        "starterPressureIndex": 50.7,
+        "overallPressureIndex": 49.9,
+        "topThirdScore": 60.6,
         "depthScore": 38.1,
         "bullpenOverperformHitters": [
           {
@@ -6881,7 +7032,7 @@ export const lineupBoardsByGameId = {
           },
           {
             "name": "Kody Clemens",
-            "slot": 5,
+            "slot": 3,
             "tag": "split edge | fit -1.3"
           },
           {
@@ -6904,7 +7055,7 @@ export const lineupBoardsByGameId = {
           },
           {
             "name": "Trevor Larnach",
-            "tag": "split edge | +4.71 vs Jared Jones"
+            "tag": "split edge | +4.11 vs Jared Jones"
           }
         ],
         "bullpenOverperformHitters": [
@@ -6915,7 +7066,7 @@ export const lineupBoardsByGameId = {
           },
           {
             "name": "Kody Clemens",
-            "slot": 5,
+            "slot": 3,
             "tag": "split edge | fit -1.3"
           },
           {
@@ -6937,21 +7088,21 @@ export const lineupBoardsByGameId = {
         "underperformNote": "Josh Bell and Victor Caratini carry the softer form or split fit into a unknown sample lane.",
         "overview": "Twins can lean on Byron Buxton, Brooks Lee, Trevor Larnach to drive early pressure against Jared Jones.",
         "bullpenOverview": "Mason Montgomery is the first bridge look, and this lineup grades -1.4 against that likely first-up arsenal.",
-        "topThirdScore": 76.7,
-        "middleScore": 23.5,
+        "topThirdScore": 60.6,
+        "middleScore": 39.6,
         "depthScore": 38.1,
         "bullpenPitchTypeSummary": {
           "pressureIndex": 45.2,
-          "averageFitScore": 53.3,
-          "averageFitGrade": -1.44,
+          "averageFitScore": 53.4,
+          "averageFitGrade": -1.45,
           "firstReliever": {
             "pitcherId": 682254,
             "name": "Mason Montgomery",
             "role": "middle",
             "availabilityScore": 45.85,
             "firstRelieverLikelihood": 89.99,
-            "fitScore": 59.9,
-            "fitGrade": -1.44,
+            "fitScore": 60.1,
+            "fitGrade": -1.43,
             "pitchMixSummary": "4-Seam Fastball 66% / Curveball 17% / Slider 14%",
             "topAttackers": [
               {
@@ -6961,7 +7112,7 @@ export const lineupBoardsByGameId = {
               },
               {
                 "name": "Kody Clemens",
-                "slot": 5,
+                "slot": 3,
                 "tag": "split edge | fit -1.3"
               }
             ]
@@ -6973,8 +7124,8 @@ export const lineupBoardsByGameId = {
               "role": "middle",
               "availabilityScore": 45.85,
               "firstRelieverLikelihood": 89.99,
-              "fitScore": 59.9,
-              "fitGrade": -1.44,
+              "fitScore": 60.1,
+              "fitGrade": -1.43,
               "pitchMixSummary": "4-Seam Fastball 66% / Curveball 17% / Slider 14%",
               "topAttackers": [
                 {
@@ -6984,7 +7135,7 @@ export const lineupBoardsByGameId = {
                 },
                 {
                   "name": "Kody Clemens",
-                  "slot": 5,
+                  "slot": 3,
                   "tag": "split edge | fit -1.3"
                 }
               ]
@@ -6995,8 +7146,8 @@ export const lineupBoardsByGameId = {
               "role": "bridge",
               "availabilityScore": 75.15,
               "firstRelieverLikelihood": 87.87,
-              "fitScore": 46.8,
-              "fitGrade": -1.44,
+              "fitScore": 46.6,
+              "fitGrade": -1.47,
               "pitchMixSummary": "Sinker 33% / Curveball 26% / Sweeper 19%",
               "topAttackers": [
                 {
@@ -7006,7 +7157,7 @@ export const lineupBoardsByGameId = {
                 },
                 {
                   "name": "Trevor Larnach",
-                  "slot": 3,
+                  "slot": 5,
                   "tag": "split edge | fit +0.8"
                 }
               ]
@@ -7020,7 +7171,7 @@ export const lineupBoardsByGameId = {
             },
             {
               "name": "Kody Clemens",
-              "slot": 5,
+              "slot": 3,
               "tag": "split edge | fit -1.3"
             },
             {
@@ -8604,7 +8755,7 @@ export const lineupBoardsByGameId = {
   "blue-jays-orioles": {
     "gameId": "blue-jays-orioles",
     "title": "Blue Jays @ Orioles",
-    "snapshot": "2026-05-29T18:25:09.517Z",
+    "snapshot": "2026-05-29T18:54:43.435Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -11498,7 +11649,7 @@ export const lineupBoardsByGameId = {
   "angels-rays": {
     "gameId": "angels-rays",
     "title": "Angels @ Rays",
-    "snapshot": "2026-05-29T18:25:09.518Z",
+    "snapshot": "2026-05-29T18:54:43.436Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -14500,7 +14651,7 @@ export const lineupBoardsByGameId = {
   "marlins-mets": {
     "gameId": "marlins-mets",
     "title": "Marlins @ Mets",
-    "snapshot": "2026-05-29T18:25:09.518Z",
+    "snapshot": "2026-05-29T18:54:43.437Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -17656,10 +17807,10 @@ export const lineupBoardsByGameId = {
   "red-sox-guardians": {
     "gameId": "red-sox-guardians",
     "title": "Red Sox @ Guardians",
-    "snapshot": "2026-05-29T18:25:09.519Z",
+    "snapshot": "2026-05-29T18:54:43.439Z",
     "status": {
       "away": "partial",
-      "home": "partial"
+      "home": "posted"
     },
     "weather": {
       "icon": "clear-day",
@@ -19244,7 +19395,7 @@ export const lineupBoardsByGameId = {
     },
     "home": {
       "teamName": "Guardians",
-      "lineupSource": "rotowire-supplement",
+      "lineupSource": "official-feed",
       "opposingStarter": {
         "id": 701719,
         "name": "Tyler Samaniego",
@@ -19423,7 +19574,7 @@ export const lineupBoardsByGameId = {
         {
           "playerId": 608070,
           "slot": 2,
-          "name": "Jose Ramirez",
+          "name": "José Ramírez",
           "position": "3B",
           "bats": "S",
           "savant": {
@@ -19721,8 +19872,159 @@ export const lineupBoardsByGameId = {
           "matchupNote": "-1.52 vs Tyler Samaniego"
         },
         {
-          "playerId": 700932,
+          "playerId": 656555,
           "slot": 4,
+          "name": "Rhys Hoskins",
+          "position": "DH",
+          "bats": "R",
+          "savant": {
+            "playerId": 656555,
+            "playerUrl": "https://baseballsavant.mlb.com/savant-player/rhys-hoskins-656555",
+            "statsSuffix": "r-hitting-mlb",
+            "season": 2026,
+            "statsUrls": {
+              "statcast": "https://baseballsavant.mlb.com/savant-player/rhys-hoskins-656555?stats=statcast-r-hitting-mlb&season=2026",
+              "splits": "https://baseballsavant.mlb.com/savant-player/rhys-hoskins-656555?stats=splits-r-hitting-mlb&season=2026",
+              "gamelogs": "https://baseballsavant.mlb.com/savant-player/rhys-hoskins-656555?stats=gamelogs-r-hitting-mlb&season=2026"
+            }
+          },
+          "season": {
+            "gamesPlayed": 45,
+            "hits": 23,
+            "singles": 9,
+            "doubles": 9,
+            "triples": 0,
+            "homeRuns": 5,
+            "walks": 28,
+            "totalBases": 47,
+            "atBats": 122,
+            "plateAppearances": 155,
+            "avg": 0.189,
+            "obp": 0.335,
+            "slg": 0.385,
+            "ops": 0.721,
+            "hitRate": 0.1484,
+            "singlesRate": 0.0581,
+            "hrRate": 0.0323,
+            "walkRate": 0.18059999999999998,
+            "totalBasesRate": 0.3032
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 6,
+            "singles": 0,
+            "doubles": 4,
+            "triples": 0,
+            "homeRuns": 2,
+            "walks": 2,
+            "totalBases": 16,
+            "atBats": 28,
+            "plateAppearances": 30,
+            "avg": 0.214,
+            "obp": 0.267,
+            "slg": 0.571,
+            "ops": 0.838,
+            "hitRate": 0.2,
+            "singlesRate": 0,
+            "hrRate": 0.0667,
+            "walkRate": 0.0667,
+            "totalBasesRate": 0.5333
+          },
+          "split": {
+            "hits": 6,
+            "singles": 2,
+            "doubles": 1,
+            "triples": 0,
+            "homeRuns": 3,
+            "walks": 10,
+            "totalBases": 16,
+            "atBats": 44,
+            "plateAppearances": 58,
+            "avg": 0.136,
+            "obp": 0.276,
+            "slg": 0.364,
+            "ops": 0.639,
+            "hitRate": 0.10339999999999999,
+            "singlesRate": 0.0345,
+            "hrRate": 0.051699999999999996,
+            "walkRate": 0.1724,
+            "totalBasesRate": 0.2759
+          },
+          "metrics": {
+            "powerScore": 55.7,
+            "contactScore": 23.2,
+            "patienceScore": 88,
+            "formScore": 92,
+            "splitScore": 49.9,
+            "varianceScore": 92,
+            "pitchTypeFitScore": 66.6,
+            "pitchTypeGrade": 3.36,
+            "pitchTypeCoveragePct": 100,
+            "matchupScore": 87,
+            "matchupGrade": 7.21
+          },
+          "pitchType": {
+            "fitScore": 66.6,
+            "fitGrade": 3.36,
+            "coveragePct": 100,
+            "summary": "Sinker 45% / 4-Seam Fastball 23% / Sweeper 19% | fit +3.4",
+            "topPitches": [
+              {
+                "pitchType": "SI",
+                "pitchName": "Sinker",
+                "pitchUsage": 45,
+                "fitGrade": 10,
+                "batterFitScore": 94,
+                "qualityScore": 38.4
+              },
+              {
+                "pitchType": "FF",
+                "pitchName": "4-Seam Fastball",
+                "pitchUsage": 22.9,
+                "fitGrade": -0.93,
+                "batterFitScore": 39.3,
+                "qualityScore": 44.4
+              },
+              {
+                "pitchType": "ST",
+                "pitchName": "Sweeper",
+                "pitchUsage": 19,
+                "fitGrade": -8,
+                "batterFitScore": 18,
+                "qualityScore": 94
+              }
+            ]
+          },
+          "statcastTrend": {
+            "gamesSample7": 5,
+            "paSample7": 15,
+            "bbeSample7": 20,
+            "rolling7Xwoba": 0.245,
+            "rolling7Xba": 0.142,
+            "rolling7Xslg": 0.412,
+            "rolling7BarrelPct": 10,
+            "rolling7HardHitPct": 15,
+            "rolling7SweetSpotPct": 30,
+            "xwobaTrend": -0.054,
+            "barrelTrend": 3.2,
+            "hardHitTrend": -10,
+            "sweetSpotTrend": -3,
+            "trendSignal": "fading"
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "split edge",
+            "arsenal edge",
+            "statcast fade"
+          ],
+          "primaryTag": "carry",
+          "summary": ".189 AVG | .721 OPS | 23 H | 5 HR | 10g: .214 AVG | .838 OPS | 6 H | 2 HR | vs LHP: .136 AVG | .639 OPS | 3 HR | arsenal Sinker 45% / 4-Seam Fastball 23% / Sweeper 19% | fit +3.4 | +7.2 matchup grade in a neutral lane",
+          "matchupNote": "+7.21 vs Tyler Samaniego"
+        },
+        {
+          "playerId": 700932,
+          "slot": 5,
           "name": "Kyle Manzardo",
           "position": "1B",
           "bats": "L",
@@ -19873,8 +20175,8 @@ export const lineupBoardsByGameId = {
         },
         {
           "playerId": 682657,
-          "slot": 5,
-          "name": "Angel Martinez",
+          "slot": 6,
+          "name": "Angel Martínez",
           "position": "LF",
           "bats": "S",
           "savant": {
@@ -20023,7 +20325,7 @@ export const lineupBoardsByGameId = {
         },
         {
           "playerId": 682177,
-          "slot": 6,
+          "slot": 7,
           "name": "Daniel Schneemann",
           "position": "CF",
           "bats": "L",
@@ -20110,8 +20412,8 @@ export const lineupBoardsByGameId = {
             "pitchTypeFitScore": 69.1,
             "pitchTypeGrade": 3.76,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 42.3,
-            "matchupGrade": -2.2
+            "matchupScore": 40.2,
+            "matchupGrade": -2.7
           },
           "pitchType": {
             "fitScore": 69.1,
@@ -20168,159 +20470,8 @@ export const lineupBoardsByGameId = {
             "statcast fade"
           ],
           "primaryTag": "split edge",
-          "summary": ".240 AVG | .707 OPS | 35 H | 4 HR | 8g: .167 AVG | .452 OPS | 4 H | 0 HR | vs LHP: .303 AVG | .880 OPS | 1 HR | arsenal Sinker 45% / 4-Seam Fastball 23% / Sweeper 19% | fit +3.8 | -2.2 matchup grade in a neutral lane",
-          "matchupNote": "-2.20 vs Tyler Samaniego"
-        },
-        {
-          "playerId": 656555,
-          "slot": 7,
-          "name": "Rhys Hoskins",
-          "position": "DH",
-          "bats": "R",
-          "savant": {
-            "playerId": 656555,
-            "playerUrl": "https://baseballsavant.mlb.com/savant-player/rhys-hoskins-656555",
-            "statsSuffix": "r-hitting-mlb",
-            "season": 2026,
-            "statsUrls": {
-              "statcast": "https://baseballsavant.mlb.com/savant-player/rhys-hoskins-656555?stats=statcast-r-hitting-mlb&season=2026",
-              "splits": "https://baseballsavant.mlb.com/savant-player/rhys-hoskins-656555?stats=splits-r-hitting-mlb&season=2026",
-              "gamelogs": "https://baseballsavant.mlb.com/savant-player/rhys-hoskins-656555?stats=gamelogs-r-hitting-mlb&season=2026"
-            }
-          },
-          "season": {
-            "gamesPlayed": 45,
-            "hits": 23,
-            "singles": 9,
-            "doubles": 9,
-            "triples": 0,
-            "homeRuns": 5,
-            "walks": 28,
-            "totalBases": 47,
-            "atBats": 122,
-            "plateAppearances": 155,
-            "avg": 0.189,
-            "obp": 0.335,
-            "slg": 0.385,
-            "ops": 0.721,
-            "hitRate": 0.1484,
-            "singlesRate": 0.0581,
-            "hrRate": 0.0323,
-            "walkRate": 0.18059999999999998,
-            "totalBasesRate": 0.3032
-          },
-          "recent": {
-            "gamesPlayed": 10,
-            "hits": 6,
-            "singles": 0,
-            "doubles": 4,
-            "triples": 0,
-            "homeRuns": 2,
-            "walks": 2,
-            "totalBases": 16,
-            "atBats": 28,
-            "plateAppearances": 30,
-            "avg": 0.214,
-            "obp": 0.267,
-            "slg": 0.571,
-            "ops": 0.838,
-            "hitRate": 0.2,
-            "singlesRate": 0,
-            "hrRate": 0.0667,
-            "walkRate": 0.0667,
-            "totalBasesRate": 0.5333
-          },
-          "split": {
-            "hits": 6,
-            "singles": 2,
-            "doubles": 1,
-            "triples": 0,
-            "homeRuns": 3,
-            "walks": 10,
-            "totalBases": 16,
-            "atBats": 44,
-            "plateAppearances": 58,
-            "avg": 0.136,
-            "obp": 0.276,
-            "slg": 0.364,
-            "ops": 0.639,
-            "hitRate": 0.10339999999999999,
-            "singlesRate": 0.0345,
-            "hrRate": 0.051699999999999996,
-            "walkRate": 0.1724,
-            "totalBasesRate": 0.2759
-          },
-          "metrics": {
-            "powerScore": 55.7,
-            "contactScore": 23.2,
-            "patienceScore": 88,
-            "formScore": 92,
-            "splitScore": 49.9,
-            "varianceScore": 92,
-            "pitchTypeFitScore": 66.6,
-            "pitchTypeGrade": 3.36,
-            "pitchTypeCoveragePct": 100,
-            "matchupScore": 82.3,
-            "matchupGrade": 6.11
-          },
-          "pitchType": {
-            "fitScore": 66.6,
-            "fitGrade": 3.36,
-            "coveragePct": 100,
-            "summary": "Sinker 45% / 4-Seam Fastball 23% / Sweeper 19% | fit +3.4",
-            "topPitches": [
-              {
-                "pitchType": "SI",
-                "pitchName": "Sinker",
-                "pitchUsage": 45,
-                "fitGrade": 10,
-                "batterFitScore": 94,
-                "qualityScore": 38.4
-              },
-              {
-                "pitchType": "FF",
-                "pitchName": "4-Seam Fastball",
-                "pitchUsage": 22.9,
-                "fitGrade": -0.93,
-                "batterFitScore": 39.3,
-                "qualityScore": 44.4
-              },
-              {
-                "pitchType": "ST",
-                "pitchName": "Sweeper",
-                "pitchUsage": 19,
-                "fitGrade": -8,
-                "batterFitScore": 18,
-                "qualityScore": 94
-              }
-            ]
-          },
-          "statcastTrend": {
-            "gamesSample7": 5,
-            "paSample7": 15,
-            "bbeSample7": 20,
-            "rolling7Xwoba": 0.245,
-            "rolling7Xba": 0.142,
-            "rolling7Xslg": 0.412,
-            "rolling7BarrelPct": 10,
-            "rolling7HardHitPct": 15,
-            "rolling7SweetSpotPct": 30,
-            "xwobaTrend": -0.054,
-            "barrelTrend": 3.2,
-            "hardHitTrend": -10,
-            "sweetSpotTrend": -3,
-            "trendSignal": "fading"
-          },
-          "tags": [
-            "carry",
-            "heater",
-            "split edge",
-            "arsenal edge",
-            "statcast fade"
-          ],
-          "primaryTag": "carry",
-          "summary": ".189 AVG | .721 OPS | 23 H | 5 HR | 10g: .214 AVG | .838 OPS | 6 H | 2 HR | vs LHP: .136 AVG | .639 OPS | 3 HR | arsenal Sinker 45% / 4-Seam Fastball 23% / Sweeper 19% | fit +3.4 | +6.1 matchup grade in a neutral lane",
-          "matchupNote": "+6.11 vs Tyler Samaniego"
+          "summary": ".240 AVG | .707 OPS | 35 H | 4 HR | 8g: .167 AVG | .452 OPS | 4 H | 0 HR | vs LHP: .303 AVG | .880 OPS | 1 HR | arsenal Sinker 45% / 4-Seam Fastball 23% / Sweeper 19% | fit +3.8 | -2.7 matchup grade in a neutral lane",
+          "matchupNote": "-2.70 vs Tyler Samaniego"
         },
         {
           "playerId": 672275,
@@ -20630,7 +20781,7 @@ export const lineupBoardsByGameId = {
         "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
       },
       "aggregate": {
-        "averageMatchupGrade": 1.12,
+        "averageMatchupGrade": 1.19,
         "trackedBatters": 9,
         "starterThreatCount": 4,
         "contactCount": 4,
@@ -20644,13 +20795,13 @@ export const lineupBoardsByGameId = {
         "topThirdArsenalCount": 2,
         "heaterCount": 3,
         "suppressorCount": 2,
-        "platoonPressureIndex": 70.8,
+        "platoonPressureIndex": 71.2,
         "pitchTypePressureIndex": 88.4,
-        "bullpenPitchTypePressureIndex": 53.3,
-        "starterPressureIndex": 78.5,
-        "overallPressureIndex": 79,
+        "bullpenPitchTypePressureIndex": 53.9,
+        "starterPressureIndex": 76.9,
+        "overallPressureIndex": 77.5,
         "topThirdScore": 54.8,
-        "depthScore": 62.7,
+        "depthScore": 48.6,
         "bullpenOverperformHitters": [
           {
             "name": "Chase DeLauter",
@@ -20659,7 +20810,7 @@ export const lineupBoardsByGameId = {
           },
           {
             "name": "Rhys Hoskins",
-            "slot": 7,
+            "slot": 4,
             "tag": "carry | fit +2.9"
           },
           {
@@ -20681,8 +20832,8 @@ export const lineupBoardsByGameId = {
             "tag": "carry | +10.00 vs Tyler Samaniego"
           },
           {
-            "name": "Brayan Rocchio",
-            "tag": "carry | +6.73 vs Tyler Samaniego"
+            "name": "Rhys Hoskins",
+            "tag": "carry | +7.21 vs Tyler Samaniego"
           }
         ],
         "bullpenOverperformHitters": [
@@ -20693,7 +20844,7 @@ export const lineupBoardsByGameId = {
           },
           {
             "name": "Rhys Hoskins",
-            "slot": 7,
+            "slot": 4,
             "tag": "carry | fit +2.9"
           },
           {
@@ -20704,7 +20855,7 @@ export const lineupBoardsByGameId = {
         ],
         "underperformHitters": [
           {
-            "name": "Angel Martinez",
+            "name": "Angel Martínez",
             "tag": "split edge | -8.00 vs Tyler Samaniego"
           },
           {
@@ -20712,24 +20863,24 @@ export const lineupBoardsByGameId = {
             "tag": "split edge | -5.71 vs Tyler Samaniego"
           }
         ],
-        "underperformNote": "Angel Martinez and Patrick Bailey carry the softer form or split fit into a unknown sample lane.",
-        "overview": "Guardians can lean on Travis Bazzana, Kyle Manzardo, Brayan Rocchio to drive early pressure against Tyler Samaniego.",
+        "underperformNote": "Angel Martínez and Patrick Bailey carry the softer form or split fit into a unknown sample lane.",
+        "overview": "Guardians can lean on Travis Bazzana, Kyle Manzardo, Rhys Hoskins to drive early pressure against Tyler Samaniego.",
         "bullpenOverview": "Danny Coulombe is the first bridge look, and this lineup grades +1.4 against that likely first-up arsenal.",
         "topThirdScore": 54.8,
-        "middleScore": 51.4,
-        "depthScore": 62.7,
+        "middleScore": 66.3,
+        "depthScore": 48.6,
         "bullpenPitchTypeSummary": {
-          "pressureIndex": 53.3,
-          "averageFitScore": 54.7,
-          "averageFitGrade": -0.63,
+          "pressureIndex": 53.9,
+          "averageFitScore": 55.2,
+          "averageFitGrade": -0.57,
           "firstReliever": {
             "pitcherId": 543056,
             "name": "Danny Coulombe",
             "role": "middle",
             "availabilityScore": 37.75,
             "firstRelieverLikelihood": 92.08,
-            "fitScore": 51.8,
-            "fitGrade": 1.4,
+            "fitScore": 52.2,
+            "fitGrade": 1.44,
             "pitchMixSummary": "Sinker 34% / Cutter 29% / Sweeper 23%",
             "topAttackers": [
               {
@@ -20739,7 +20890,7 @@ export const lineupBoardsByGameId = {
               },
               {
                 "name": "Rhys Hoskins",
-                "slot": 7,
+                "slot": 4,
                 "tag": "carry | fit +2.9"
               }
             ]
@@ -20751,8 +20902,8 @@ export const lineupBoardsByGameId = {
               "role": "middle",
               "availabilityScore": 37.75,
               "firstRelieverLikelihood": 92.08,
-              "fitScore": 51.8,
-              "fitGrade": 1.4,
+              "fitScore": 52.2,
+              "fitGrade": 1.44,
               "pitchMixSummary": "Sinker 34% / Cutter 29% / Sweeper 23%",
               "topAttackers": [
                 {
@@ -20762,7 +20913,7 @@ export const lineupBoardsByGameId = {
                 },
                 {
                   "name": "Rhys Hoskins",
-                  "slot": 7,
+                  "slot": 4,
                   "tag": "carry | fit +2.9"
                 }
               ]
@@ -20773,8 +20924,8 @@ export const lineupBoardsByGameId = {
               "role": "middle",
               "availabilityScore": 21,
               "firstRelieverLikelihood": 85.98,
-              "fitScore": 57.6,
-              "fitGrade": -2.66,
+              "fitScore": 58.1,
+              "fitGrade": -2.59,
               "pitchMixSummary": "Sinker 73% / Slider 18% / Changeup 8%",
               "topAttackers": [
                 {
@@ -20784,7 +20935,7 @@ export const lineupBoardsByGameId = {
                 },
                 {
                   "name": "Kyle Manzardo",
-                  "slot": 4,
+                  "slot": 5,
                   "tag": "carry | fit +0.1"
                 }
               ]
@@ -20798,7 +20949,7 @@ export const lineupBoardsByGameId = {
             },
             {
               "name": "Rhys Hoskins",
-              "slot": 7,
+              "slot": 4,
               "tag": "carry | fit +2.9"
             },
             {
@@ -20815,7 +20966,7 @@ export const lineupBoardsByGameId = {
   "cubs-cardinals": {
     "gameId": "cubs-cardinals",
     "title": "Cubs @ Cardinals",
-    "snapshot": "2026-05-29T18:25:09.519Z",
+    "snapshot": "2026-05-29T18:54:43.439Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -22208,9 +22359,33 @@ export const lineupBoardsByGameId = {
         }
       ],
       "bvpHistory": {
-        "hot": [],
-        "cold": [],
-        "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
+        "hot": [
+          {
+            "name": "Ian Happ",
+            "sample": "5/13",
+            "atBats": 13,
+            "avg": ".385",
+            "ops": "1.068",
+            "homeRuns": 0,
+            "rbi": 2,
+            "tone": "hot",
+            "summary": "5/13, 0 HR, 2 RBI, 1.068 OPS vs Andre Pallante"
+          }
+        ],
+        "cold": [
+          {
+            "name": "Dansby Swanson",
+            "sample": "1/12",
+            "atBats": 12,
+            "avg": ".083",
+            "ops": ".167",
+            "homeRuns": 0,
+            "rbi": 0,
+            "tone": "cold",
+            "summary": "1/12, 0 HR, 0 RBI, .167 OPS vs Andre Pallante"
+          }
+        ],
+        "summary": "BvP sample is mixed: Ian Happ owns the cleanest history, but Dansby Swanson shows the coldest prior lane."
       },
       "aggregate": {
         "averageMatchupGrade": 0.26,
@@ -23820,7 +23995,7 @@ export const lineupBoardsByGameId = {
   "tigers-white-sox": {
     "gameId": "tigers-white-sox",
     "title": "Tigers @ White Sox",
-    "snapshot": "2026-05-29T18:25:09.520Z",
+    "snapshot": "2026-05-29T18:54:43.440Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -26963,7 +27138,7 @@ export const lineupBoardsByGameId = {
   "royals-rangers": {
     "gameId": "royals-rangers",
     "title": "Royals @ Rangers",
-    "snapshot": "2026-05-29T18:25:09.520Z",
+    "snapshot": "2026-05-29T18:54:43.441Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -29975,7 +30150,7 @@ export const lineupBoardsByGameId = {
   "brewers-astros": {
     "gameId": "brewers-astros",
     "title": "Brewers @ Astros",
-    "snapshot": "2026-05-29T18:25:09.521Z",
+    "snapshot": "2026-05-29T18:54:43.441Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -29990,7 +30165,7 @@ export const lineupBoardsByGameId = {
       "label": "Dome In Domed Stadium"
     },
     "marketWeatherContext": {
-      "line": "MIL -120",
+      "line": "MIL -119",
       "total": "8.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
@@ -33120,7 +33295,7 @@ export const lineupBoardsByGameId = {
   "giants-rockies": {
     "gameId": "giants-rockies",
     "title": "Giants @ Rockies",
-    "snapshot": "2026-05-29T18:25:09.522Z",
+    "snapshot": "2026-05-29T18:54:43.442Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -36294,7 +36469,7 @@ export const lineupBoardsByGameId = {
   "yankees-athletics": {
     "gameId": "yankees-athletics",
     "title": "Yankees @ Athletics",
-    "snapshot": "2026-05-29T18:25:09.523Z",
+    "snapshot": "2026-05-29T18:54:43.442Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -36309,7 +36484,7 @@ export const lineupBoardsByGameId = {
       "label": "75°F | 2% precip"
     },
     "marketWeatherContext": {
-      "line": "NYY -142",
+      "line": "NYY -141",
       "total": "9.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
@@ -39312,7 +39487,7 @@ export const lineupBoardsByGameId = {
   "diamondbacks-mariners": {
     "gameId": "diamondbacks-mariners",
     "title": "Diamondbacks @ Mariners",
-    "snapshot": "2026-05-29T18:25:09.523Z",
+    "snapshot": "2026-05-29T18:54:43.443Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -42477,7 +42652,7 @@ export const lineupBoardsByGameId = {
   "phillies-dodgers": {
     "gameId": "phillies-dodgers",
     "title": "Phillies @ Dodgers",
-    "snapshot": "2026-05-29T18:25:09.524Z",
+    "snapshot": "2026-05-29T18:54:43.443Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -45676,27 +45851,27 @@ export const lineupMatchupContextByGameId = {
       ]
     },
     "Reds": {
-      "averageMatchupGrade": -0.24,
+      "averageMatchupGrade": 0.53,
       "trackedBatters": 9,
       "starterThreatCount": 3,
       "contactCount": 2,
       "powerCount": 4,
-      "platoonCount": 4,
+      "platoonCount": 5,
       "pitchTypeEdgeCount": 3,
-      "oppositeHandCount": 3,
-      "sameHandCount": 6,
+      "oppositeHandCount": 4,
+      "sameHandCount": 5,
       "switchCount": 1,
       "topThirdSplitCount": 3,
       "topThirdArsenalCount": 2,
-      "heaterCount": 2,
+      "heaterCount": 3,
       "suppressorCount": 2,
-      "platoonPressureIndex": 63,
-      "pitchTypePressureIndex": 78.1,
-      "bullpenPitchTypePressureIndex": 52.4,
-      "starterPressureIndex": 57.7,
-      "overallPressureIndex": 58.1,
+      "platoonPressureIndex": 68.8,
+      "pitchTypePressureIndex": 77.2,
+      "bullpenPitchTypePressureIndex": 52.1,
+      "starterPressureIndex": 66.9,
+      "overallPressureIndex": 67.2,
       "topThirdScore": 46.3,
-      "depthScore": 43.3,
+      "depthScore": 52.4,
       "bullpenOverperformHitters": [
         {
           "name": "JJ Bleday",
@@ -45758,27 +45933,27 @@ export const lineupMatchupContextByGameId = {
       ]
     },
     "Nationals": {
-      "averageMatchupGrade": 1.86,
-      "trackedBatters": 8,
-      "starterThreatCount": 4,
-      "contactCount": 2,
+      "averageMatchupGrade": 2.42,
+      "trackedBatters": 9,
+      "starterThreatCount": 5,
+      "contactCount": 3,
       "powerCount": 3,
-      "platoonCount": 8,
+      "platoonCount": 9,
       "pitchTypeEdgeCount": 3,
-      "oppositeHandCount": 5,
+      "oppositeHandCount": 6,
       "sameHandCount": 3,
       "switchCount": 2,
       "topThirdSplitCount": 3,
-      "topThirdArsenalCount": 2,
-      "heaterCount": 5,
+      "topThirdArsenalCount": 1,
+      "heaterCount": 6,
       "suppressorCount": 2,
-      "platoonPressureIndex": 91.4,
-      "pitchTypePressureIndex": 72,
-      "bullpenPitchTypePressureIndex": 47.7,
+      "platoonPressureIndex": 94,
+      "pitchTypePressureIndex": 66.1,
+      "bullpenPitchTypePressureIndex": 47.2,
       "starterPressureIndex": 94,
       "overallPressureIndex": 93.6,
-      "topThirdScore": 94,
-      "depthScore": 18.9,
+      "topThirdScore": 91.1,
+      "depthScore": 37.8,
       "bullpenOverperformHitters": [
         {
           "name": "James Wood",
@@ -45817,9 +45992,9 @@ export const lineupMatchupContextByGameId = {
       "platoonPressureIndex": 77.8,
       "pitchTypePressureIndex": 35.6,
       "bullpenPitchTypePressureIndex": 45.2,
-      "starterPressureIndex": 59.5,
-      "overallPressureIndex": 58.7,
-      "topThirdScore": 76.7,
+      "starterPressureIndex": 50.7,
+      "overallPressureIndex": 49.9,
+      "topThirdScore": 60.6,
       "depthScore": 38.1,
       "bullpenOverperformHitters": [
         {
@@ -45829,7 +46004,7 @@ export const lineupMatchupContextByGameId = {
         },
         {
           "name": "Kody Clemens",
-          "slot": 5,
+          "slot": 3,
           "tag": "split edge | fit -1.3"
         },
         {
@@ -46168,7 +46343,7 @@ export const lineupMatchupContextByGameId = {
       ]
     },
     "Guardians": {
-      "averageMatchupGrade": 1.12,
+      "averageMatchupGrade": 1.19,
       "trackedBatters": 9,
       "starterThreatCount": 4,
       "contactCount": 4,
@@ -46182,13 +46357,13 @@ export const lineupMatchupContextByGameId = {
       "topThirdArsenalCount": 2,
       "heaterCount": 3,
       "suppressorCount": 2,
-      "platoonPressureIndex": 70.8,
+      "platoonPressureIndex": 71.2,
       "pitchTypePressureIndex": 88.4,
-      "bullpenPitchTypePressureIndex": 53.3,
-      "starterPressureIndex": 78.5,
-      "overallPressureIndex": 79,
+      "bullpenPitchTypePressureIndex": 53.9,
+      "starterPressureIndex": 76.9,
+      "overallPressureIndex": 77.5,
       "topThirdScore": 54.8,
-      "depthScore": 62.7,
+      "depthScore": 48.6,
       "bullpenOverperformHitters": [
         {
           "name": "Chase DeLauter",
@@ -46197,7 +46372,7 @@ export const lineupMatchupContextByGameId = {
         },
         {
           "name": "Rhys Hoskins",
-          "slot": 7,
+          "slot": 4,
           "tag": "carry | fit +2.9"
         },
         {

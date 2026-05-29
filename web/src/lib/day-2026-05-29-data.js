@@ -391,7 +391,7 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +112 / +1.5 -125",
+    "spread": "-1.5 +110 / +1.5 -125",
     "total": "o9.5 even / u9.5 -110",
     "moneyline": "Braves -138 / Reds +120",
     "pitcherSourceNote": "",
@@ -2003,9 +2003,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -200 / +1.5 -185",
-    "total": "o9 -124 / u9.5 -115",
-    "moneyline": "Padres even / Nationals -110",
+    "spread": "+1.5 -200 / +1.5 -182",
+    "total": "o9.5 even / u9.5 -115",
+    "moneyline": "Padres even / Nationals -120",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/padres-vs-nationals",
     "tierTwoContext": {
@@ -3669,7 +3669,7 @@ export const rawGames = [
       }
     },
     "spread": "+1.5 -180 / -1.5 +158",
-    "total": "o8 -110 / u8.5 -121",
+    "total": "o8 -110 / u8 -110",
     "moneyline": "Twins +115 / Pirates -134",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/twins-vs-pirates",
@@ -5330,9 +5330,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -210 / +1.5 -184",
-    "total": "o8.5 -118 / u9 -115",
-    "moneyline": "Blue Jays even / Orioles -115",
+    "spread": "+1.5 -210 / +1.5 -180",
+    "total": "o8.5 -120 / u9 -115",
+    "moneyline": "Blue Jays -101 / Orioles -115",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/blue-jays-vs-orioles",
     "tierTwoContext": {
@@ -5537,8 +5537,8 @@ export const rawGames = [
           "trafficGameRate": 0.75,
           "deadBatTrafficRate": 0.25,
           "trafficNoConversionRate": 0.13,
-          "baseRunnerConversionRate": 0.42,
-          "strandedTrafficRate": 1.35,
+          "baseRunnerConversionRate": 0.41,
+          "strandedTrafficRate": 1.32,
           "topOrderPressureNoConversionRate": 0,
           "bullpenMeltdownRate": 0.25,
           "runClusteringIndex": 78.45,
@@ -5565,18 +5565,18 @@ export const rawGames = [
         "home": {
           "windowGames": 8,
           "gamesSample": 8,
-          "baserunnersPerGame": 12.88,
-          "runsPerBaserunner": 0.42,
-          "strandedTrafficRate": 1.35,
-          "earlyBaserunnersPerGame": 3.63,
-          "earlyConversionRate": 0.45,
+          "baserunnersPerGame": 13,
+          "runsPerBaserunner": 0.41,
+          "strandedTrafficRate": 1.32,
+          "earlyBaserunnersPerGame": 3.75,
+          "earlyConversionRate": 0.43,
           "topOrderBaserunnersFirst3PerGame": 1.75,
           "topOrderConversionShare": 0.93,
           "trafficNoConversionRate": 0.13,
           "deadBatTrafficRate": 0.25,
           "quietFirst5Rate": 0.5,
-          "conversionVolatility": 0.19,
-          "lineupConversionIndex": 46.25
+          "conversionVolatility": 0.18,
+          "lineupConversionIndex": 46.48
         }
       },
       "bullpenMistake": {

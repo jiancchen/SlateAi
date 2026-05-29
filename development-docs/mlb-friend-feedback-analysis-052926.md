@@ -346,6 +346,22 @@ These should become explicit experiment rows, not just ideas:
 - `F19` OBP-SLG interaction score for run production
 - `F20` Batting production score for `RBI / H+R+RBI`
 
+## Progress update
+
+What we have already tested from this note:
+
+- `E17` Classic last-10 hitter windows
+  - result: **did not beat** the current short-window baseline
+  - read: keep `last 10` for UI/context and future bundles, but do not promote raw last-10 box-score form into the live scorer by itself
+- `E18` Hits gates with `xBA + sweet-spot + pitch-fit`
+  - result: raw high-`xBA` buckets were **worse** than the baseline by themselves
+  - the only positive isolated gate was:
+    - `7d xBA Q4 + sweet-spot Q4 + fit >= +4`
+    - `25.0%` hit rate on `12` bets vs `19.1%` baseline
+  - read: this is a **shadow-only** candidate until it survives larger samples or a bundle test
+
+So the feedback is still useful, but the first phase-2 tests already showed why we cannot just ship every idea directly into the board.
+
 ## UI opportunities from this feedback
 
 Even before every model is live, this feedback can improve presentation:

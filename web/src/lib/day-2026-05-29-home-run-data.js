@@ -1,7 +1,7 @@
 export const homeRunBoardMeta = {
   "modelName": "statcast-hr-prototype-v3",
   "date": "2026-05-29",
-  "generatedAt": "2026-05-29T18:25:15.387Z",
+  "generatedAt": "2026-05-29T18:54:50.543Z",
   "sources": [
     "https://baseballsavant.mlb.com/leaderboard/home-runs",
     "https://baseballsavant.mlb.com/leaderboard/home-runs?year=2026&player_type=Batter&cat=xhr&team=&min=0&csv=true",
@@ -166,8 +166,8 @@ export const homeRunTargetsByGame = {
         ],
         "avoidHrChase": false,
         "rawWeight": 50.811446485681344,
-        "modelShare": 0.271,
-        "modelSharePct": 27.1,
+        "modelShare": 0.265,
+        "modelSharePct": 26.5,
         "lane": "anchor"
       },
       {
@@ -185,7 +185,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 8,
         "seasonXHR": 6.9,
         "xhrDiff": 1.1,
-        "baseScore": 78.50737696737046,
+        "baseScore": 80.04737696737045,
         "lineupContext": {
           "gameTitle": "Braves @ Reds",
           "teamName": "Reds",
@@ -255,12 +255,12 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 4,
           "seasonHomeRuns": 8,
           "splitHomeRuns": 8,
-          "lineupStatus": "partial",
+          "lineupStatus": "posted",
           "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 46.1,
+        "lineupPriority": 48.9,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -298,7 +298,7 @@ export const homeRunTargetsByGame = {
             "Knuckle Curve"
           ]
         },
-        "score": 110.4,
+        "score": 112,
         "scoreBand": "premium",
         "burstTag": "carry",
         "contextLabels": [
@@ -319,11 +319,11 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Changeup / Knuckle Curve",
           "No recent batting-leader signal stored yet",
           "Weather lane: 79°F | Wind 3 mph In | 0% precip",
-          "Slot 6 | carry | lineup priority 46.1 | bullpen vulnerability -3",
+          "Slot 6 | carry | lineup priority 48.9 | bullpen vulnerability -3",
           "Statcast trend improving | HH 22.7% | Barrel 9.1%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 48.78110272682457,
+        "rawWeight": 49.82992078990116,
         "modelShare": 0.26,
         "modelSharePct": 26,
         "lane": "anchor"
@@ -345,7 +345,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 7,
         "seasonXHR": 5.7,
         "xhrDiff": 1.3,
-        "baseScore": 56.16647696737044,
+        "baseScore": 57.70647696737045,
         "lineupContext": {
           "gameTitle": "Braves @ Reds",
           "teamName": "Reds",
@@ -414,12 +414,12 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 2,
           "seasonHomeRuns": 7,
           "splitHomeRuns": 6,
-          "lineupStatus": "partial",
+          "lineupStatus": "posted",
           "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 29.8,
+        "lineupPriority": 32.6,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -457,7 +457,7 @@ export const homeRunTargetsByGame = {
             "Cutter"
           ]
         },
-        "score": 71.8,
+        "score": 73.4,
         "scoreBand": "live",
         "burstTag": "active",
         "contextLabels": [
@@ -478,13 +478,13 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Four-Seam Fastball / Cutter",
           "No recent batting-leader signal stored yet",
           "Weather lane: 79°F | Wind 3 mph In | 0% precip",
-          "Slot 3 | split edge | lineup priority 29.8 | bullpen vulnerability -3",
+          "Slot 3 | split edge | lineup priority 32.6 | bullpen vulnerability -3",
           "Statcast trend fading | HH 13.3% | Barrel 3.3%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 22.71323336003851,
-        "modelShare": 0.121,
-        "modelSharePct": 12.1,
+        "rawWeight": 23.8328113997548,
+        "modelShare": 0.124,
+        "modelSharePct": 12.4,
         "lane": "live"
       },
       {
@@ -502,7 +502,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 12,
         "seasonXHR": 10.4,
         "xhrDiff": 1.6,
-        "baseScore": 59.019526967370446,
+        "baseScore": 60.55952696737045,
         "lineupContext": {
           "gameTitle": "Braves @ Reds",
           "teamName": "Reds",
@@ -571,12 +571,12 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 2,
           "seasonHomeRuns": 12,
           "splitHomeRuns": 7,
-          "lineupStatus": "partial",
+          "lineupStatus": "posted",
           "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 16.7,
+        "lineupPriority": 19.5,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -614,7 +614,7 @@ export const homeRunTargetsByGame = {
             "Sinker"
           ]
         },
-        "score": 71.7,
+        "score": 73.3,
         "scoreBand": "live",
         "burstTag": "watch",
         "contextLabels": [
@@ -635,13 +635,13 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
           "No recent batting-leader signal stored yet",
           "Weather lane: 79°F | Wind 3 mph In | 0% precip",
-          "Slot 2 | split edge | lineup priority 16.7 | bullpen vulnerability -3",
+          "Slot 2 | split edge | lineup priority 19.5 | bullpen vulnerability -3",
           "Statcast trend improving | HH 38.5% | Barrel 7.7%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 22.643102544799454,
-        "modelShare": 0.121,
-        "modelSharePct": 12.1,
+        "rawWeight": 23.762973874786017,
+        "modelShare": 0.124,
+        "modelSharePct": 12.4,
         "lane": "live"
       }
     ],
@@ -800,8 +800,8 @@ export const homeRunTargetsByGame = {
         ],
         "avoidHrChase": false,
         "rawWeight": 17.89738617882342,
-        "modelShare": 0.095,
-        "modelSharePct": 9.5,
+        "modelShare": 0.093,
+        "modelSharePct": 9.3,
         "lane": "thin"
       },
       {
@@ -956,8 +956,8 @@ export const homeRunTargetsByGame = {
         ],
         "avoidHrChase": false,
         "rawWeight": 16.892637050603042,
-        "modelShare": 0.09,
-        "modelSharePct": 9,
+        "modelShare": 0.088,
+        "modelSharePct": 8.8,
         "lane": "thin"
       },
       {
@@ -975,7 +975,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 12,
         "seasonXHR": 9.3,
         "xhrDiff": 2.7,
-        "baseScore": 46.67497696737044,
+        "baseScore": 48.21497696737044,
         "lineupContext": {
           "gameTitle": "Braves @ Reds",
           "teamName": "Reds",
@@ -1042,12 +1042,12 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 0,
           "seasonHomeRuns": 12,
           "splitHomeRuns": 8,
-          "lineupStatus": "partial",
+          "lineupStatus": "posted",
           "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 0.8,
+        "lineupPriority": 3.6,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -1085,7 +1085,7 @@ export const homeRunTargetsByGame = {
             "Sinker"
           ]
         },
-        "score": 51.2,
+        "score": 52.7,
         "scoreBand": "thin",
         "burstTag": "cooling",
         "contextLabels": [
@@ -1106,13 +1106,13 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
           "No recent batting-leader signal stored yet",
           "Weather lane: 79°F | Wind 3 mph In | 0% precip",
-          "Slot 4 | cold | lineup priority 0.8 | bullpen vulnerability -3",
+          "Slot 4 | cold | lineup priority 3.6 | bullpen vulnerability -3",
           "Statcast trend fading | HH 17.6% | Barrel 0.0%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 7.703441717780444,
-        "modelShare": 0.041,
-        "modelSharePct": 4.1,
+        "rawWeight": 8.851830219928537,
+        "modelShare": 0.046,
+        "modelSharePct": 4.6,
         "lane": "thin"
       }
     ],
@@ -1270,8 +1270,8 @@ export const homeRunTargetsByGame = {
         ],
         "avoidHrChase": false,
         "rawWeight": 50.811446485681344,
-        "modelShare": 0.271,
-        "modelSharePct": 27.1,
+        "modelShare": 0.265,
+        "modelSharePct": 26.5,
         "lane": "anchor"
       },
       {
@@ -1289,7 +1289,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 8,
         "seasonXHR": 6.9,
         "xhrDiff": 1.1,
-        "baseScore": 78.50737696737046,
+        "baseScore": 80.04737696737045,
         "lineupContext": {
           "gameTitle": "Braves @ Reds",
           "teamName": "Reds",
@@ -1359,12 +1359,12 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 4,
           "seasonHomeRuns": 8,
           "splitHomeRuns": 8,
-          "lineupStatus": "partial",
+          "lineupStatus": "posted",
           "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 46.1,
+        "lineupPriority": 48.9,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -1402,7 +1402,7 @@ export const homeRunTargetsByGame = {
             "Knuckle Curve"
           ]
         },
-        "score": 110.4,
+        "score": 112,
         "scoreBand": "premium",
         "burstTag": "carry",
         "contextLabels": [
@@ -1423,11 +1423,11 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Changeup / Knuckle Curve",
           "No recent batting-leader signal stored yet",
           "Weather lane: 79°F | Wind 3 mph In | 0% precip",
-          "Slot 6 | carry | lineup priority 46.1 | bullpen vulnerability -3",
+          "Slot 6 | carry | lineup priority 48.9 | bullpen vulnerability -3",
           "Statcast trend improving | HH 22.7% | Barrel 9.1%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 48.78110272682457,
+        "rawWeight": 49.82992078990116,
         "modelShare": 0.26,
         "modelSharePct": 26,
         "lane": "anchor"
@@ -1447,7 +1447,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 7,
         "seasonXHR": 5.7,
         "xhrDiff": 1.3,
-        "baseScore": 56.16647696737044,
+        "baseScore": 57.70647696737045,
         "lineupContext": {
           "gameTitle": "Braves @ Reds",
           "teamName": "Reds",
@@ -1516,12 +1516,12 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 2,
           "seasonHomeRuns": 7,
           "splitHomeRuns": 6,
-          "lineupStatus": "partial",
+          "lineupStatus": "posted",
           "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 29.8,
+        "lineupPriority": 32.6,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -1559,7 +1559,7 @@ export const homeRunTargetsByGame = {
             "Cutter"
           ]
         },
-        "score": 71.8,
+        "score": 73.4,
         "scoreBand": "live",
         "burstTag": "active",
         "contextLabels": [
@@ -1580,13 +1580,13 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Four-Seam Fastball / Cutter",
           "No recent batting-leader signal stored yet",
           "Weather lane: 79°F | Wind 3 mph In | 0% precip",
-          "Slot 3 | split edge | lineup priority 29.8 | bullpen vulnerability -3",
+          "Slot 3 | split edge | lineup priority 32.6 | bullpen vulnerability -3",
           "Statcast trend fading | HH 13.3% | Barrel 3.3%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 22.71323336003851,
-        "modelShare": 0.121,
-        "modelSharePct": 12.1,
+        "rawWeight": 23.8328113997548,
+        "modelShare": 0.124,
+        "modelSharePct": 12.4,
         "lane": "live"
       },
       {
@@ -1604,7 +1604,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 12,
         "seasonXHR": 10.4,
         "xhrDiff": 1.6,
-        "baseScore": 59.019526967370446,
+        "baseScore": 60.55952696737045,
         "lineupContext": {
           "gameTitle": "Braves @ Reds",
           "teamName": "Reds",
@@ -1673,12 +1673,12 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 2,
           "seasonHomeRuns": 12,
           "splitHomeRuns": 7,
-          "lineupStatus": "partial",
+          "lineupStatus": "posted",
           "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 16.7,
+        "lineupPriority": 19.5,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -1716,7 +1716,7 @@ export const homeRunTargetsByGame = {
             "Sinker"
           ]
         },
-        "score": 71.7,
+        "score": 73.3,
         "scoreBand": "live",
         "burstTag": "watch",
         "contextLabels": [
@@ -1737,13 +1737,13 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
           "No recent batting-leader signal stored yet",
           "Weather lane: 79°F | Wind 3 mph In | 0% precip",
-          "Slot 2 | split edge | lineup priority 16.7 | bullpen vulnerability -3",
+          "Slot 2 | split edge | lineup priority 19.5 | bullpen vulnerability -3",
           "Statcast trend improving | HH 38.5% | Barrel 7.7%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 22.643102544799454,
-        "modelShare": 0.121,
-        "modelSharePct": 12.1,
+        "rawWeight": 23.762973874786017,
+        "modelShare": 0.124,
+        "modelSharePct": 12.4,
         "lane": "live"
       },
       {
@@ -1900,8 +1900,8 @@ export const homeRunTargetsByGame = {
         ],
         "avoidHrChase": false,
         "rawWeight": 17.89738617882342,
-        "modelShare": 0.095,
-        "modelSharePct": 9.5,
+        "modelShare": 0.093,
+        "modelSharePct": 9.3,
         "lane": "thin"
       },
       {
@@ -2056,8 +2056,8 @@ export const homeRunTargetsByGame = {
         ],
         "avoidHrChase": false,
         "rawWeight": 16.892637050603042,
-        "modelShare": 0.09,
-        "modelSharePct": 9,
+        "modelShare": 0.088,
+        "modelSharePct": 8.8,
         "lane": "thin"
       },
       {
@@ -2075,7 +2075,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 12,
         "seasonXHR": 9.3,
         "xhrDiff": 2.7,
-        "baseScore": 46.67497696737044,
+        "baseScore": 48.21497696737044,
         "lineupContext": {
           "gameTitle": "Braves @ Reds",
           "teamName": "Reds",
@@ -2142,12 +2142,12 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 0,
           "seasonHomeRuns": 12,
           "splitHomeRuns": 8,
-          "lineupStatus": "partial",
+          "lineupStatus": "posted",
           "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 0.8,
+        "lineupPriority": 3.6,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -2185,7 +2185,7 @@ export const homeRunTargetsByGame = {
             "Sinker"
           ]
         },
-        "score": 51.2,
+        "score": 52.7,
         "scoreBand": "thin",
         "burstTag": "cooling",
         "contextLabels": [
@@ -2206,13 +2206,13 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
           "No recent batting-leader signal stored yet",
           "Weather lane: 79°F | Wind 3 mph In | 0% precip",
-          "Slot 4 | cold | lineup priority 0.8 | bullpen vulnerability -3",
+          "Slot 4 | cold | lineup priority 3.6 | bullpen vulnerability -3",
           "Statcast trend fading | HH 17.6% | Barrel 0.0%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 7.703441717780444,
-        "modelShare": 0.041,
-        "modelSharePct": 4.1,
+        "rawWeight": 8.851830219928537,
+        "modelShare": 0.046,
+        "modelSharePct": 4.6,
         "lane": "thin"
       }
     ],
@@ -2236,7 +2236,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 15,
         "seasonXHR": 15.4,
         "xhrDiff": -0.4,
-        "baseScore": 97.18555,
+        "baseScore": 99.11055000000002,
         "lineupContext": {
           "gameTitle": "Padres @ Nationals",
           "teamName": "Nationals",
@@ -2306,12 +2306,12 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 4,
           "seasonHomeRuns": 15,
           "splitHomeRuns": 11,
-          "lineupStatus": "partial",
-          "lineupCoverage": 8,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupStatus": "posted",
+          "lineupCoverage": 9,
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 54.3,
+        "lineupPriority": 57.8,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -2349,7 +2349,7 @@ export const homeRunTargetsByGame = {
             "Four-Seam Fastball"
           ]
         },
-        "score": 113.3,
+        "score": 115.2,
         "scoreBand": "premium",
         "burstTag": "active",
         "contextLabels": [
@@ -2370,13 +2370,13 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Slider / Four-Seam Fastball",
           "No recent batting-leader signal stored yet",
           "Weather lane: 77°F | 0% precip",
-          "Slot 1 | carry | lineup priority 54.3 | bullpen vulnerability -2.5",
+          "Slot 1 | carry | lineup priority 57.8 | bullpen vulnerability -2.5",
           "Statcast trend improving | HH 29.7% | Barrel 10.8%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 50.68067231387008,
-        "modelShare": 0.398,
-        "modelSharePct": 39.8,
+        "rawWeight": 51.92185435041286,
+        "modelShare": 0.392,
+        "modelSharePct": 39.2,
         "lane": "anchor"
       },
       {
@@ -2394,7 +2394,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 12,
         "seasonXHR": 12.4,
         "xhrDiff": -0.4,
-        "baseScore": 84.3485,
+        "baseScore": 86.27350000000001,
         "lineupContext": {
           "gameTitle": "Padres @ Nationals",
           "teamName": "Nationals",
@@ -2465,12 +2465,12 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 4,
           "seasonHomeRuns": 12,
           "splitHomeRuns": 11,
-          "lineupStatus": "partial",
-          "lineupCoverage": 8,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupStatus": "posted",
+          "lineupCoverage": 9,
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 48.7,
+        "lineupPriority": 52.2,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -2508,7 +2508,7 @@ export const homeRunTargetsByGame = {
             "Four-Seam Fastball"
           ]
         },
-        "score": 84.7,
+        "score": 86.7,
         "scoreBand": "strong",
         "burstTag": "watch",
         "contextLabels": [
@@ -2529,13 +2529,13 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Cutter / Four-Seam Fastball",
           "No recent batting-leader signal stored yet",
           "Weather lane: 77°F | 0% precip",
-          "Slot 4 | carry | lineup priority 48.7 | bullpen vulnerability -2.5",
+          "Slot 4 | carry | lineup priority 52.2 | bullpen vulnerability -2.5",
           "Statcast trend improving | HH 26.3% | Barrel 7.9%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 31.622313872924074,
-        "modelShare": 0.248,
-        "modelSharePct": 24.8,
+        "rawWeight": 32.98245064878943,
+        "modelShare": 0.249,
+        "modelSharePct": 24.9,
         "lane": "anchor"
       }
     ],
@@ -2555,7 +2555,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 7,
         "seasonXHR": 6.1,
         "xhrDiff": 0.9,
-        "baseScore": 61.9213,
+        "baseScore": 63.84630000000001,
         "lineupContext": {
           "gameTitle": "Padres @ Nationals",
           "teamName": "Nationals",
@@ -2624,12 +2624,12 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 6,
           "seasonHomeRuns": 7,
           "splitHomeRuns": 5,
-          "lineupStatus": "partial",
-          "lineupCoverage": 8,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupStatus": "posted",
+          "lineupCoverage": 9,
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 47.9,
+        "lineupPriority": 51.4,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -2667,7 +2667,7 @@ export const homeRunTargetsByGame = {
             "Cutter"
           ]
         },
-        "score": 79.6,
+        "score": 81.5,
         "scoreBand": "live",
         "burstTag": "watch",
         "contextLabels": [
@@ -2688,13 +2688,13 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Sinker / Cutter",
           "No recent batting-leader signal stored yet",
           "Weather lane: 77°F | 0% precip",
-          "Slot 3 | carry | lineup priority 47.9 | bullpen vulnerability -2.5",
+          "Slot 3 | carry | lineup priority 51.4 | bullpen vulnerability -2.5",
           "Statcast trend improving | HH 34.4% | Barrel 12.5%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 28.130199832359537,
-        "modelShare": 0.221,
-        "modelSharePct": 22.1,
+        "rawWeight": 29.43535839315443,
+        "modelShare": 0.222,
+        "modelSharePct": 22.2,
         "lane": "secondary"
       },
       {
@@ -2712,7 +2712,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 7,
         "seasonXHR": 7.5,
         "xhrDiff": -0.5,
-        "baseScore": 42.765150000000006,
+        "baseScore": 44.69015,
         "lineupContext": {
           "gameTitle": "Padres @ Nationals",
           "teamName": "Nationals",
@@ -2781,12 +2781,12 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 2,
           "seasonHomeRuns": 7,
           "splitHomeRuns": 6,
-          "lineupStatus": "partial",
-          "lineupCoverage": 8,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupStatus": "posted",
+          "lineupCoverage": 9,
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 19.2,
+        "lineupPriority": 22.7,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -2824,7 +2824,7 @@ export const homeRunTargetsByGame = {
             "Cutter"
           ]
         },
-        "score": 63.5,
+        "score": 65.4,
         "scoreBand": "thin",
         "burstTag": "active",
         "contextLabels": [
@@ -2845,13 +2845,13 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Four-Seam Fastball / Cutter",
           "No recent batting-leader signal stored yet",
           "Weather lane: 77°F | 0% precip",
-          "Slot 7 | heater | lineup priority 19.2 | bullpen vulnerability -2.5",
+          "Slot 7 | heater | lineup priority 22.7 | bullpen vulnerability -2.5",
           "Statcast trend improving | HH 47.4% | Barrel 10.5%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 16.820673583475074,
-        "modelShare": 0.132,
-        "modelSharePct": 13.2,
+        "rawWeight": 18.183546388036184,
+        "modelShare": 0.137,
+        "modelSharePct": 13.7,
         "lane": "live"
       }
     ],
@@ -2872,7 +2872,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 15,
         "seasonXHR": 15.4,
         "xhrDiff": -0.4,
-        "baseScore": 97.18555,
+        "baseScore": 99.11055000000002,
         "lineupContext": {
           "gameTitle": "Padres @ Nationals",
           "teamName": "Nationals",
@@ -2942,12 +2942,12 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 4,
           "seasonHomeRuns": 15,
           "splitHomeRuns": 11,
-          "lineupStatus": "partial",
-          "lineupCoverage": 8,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupStatus": "posted",
+          "lineupCoverage": 9,
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 54.3,
+        "lineupPriority": 57.8,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -2985,7 +2985,7 @@ export const homeRunTargetsByGame = {
             "Four-Seam Fastball"
           ]
         },
-        "score": 113.3,
+        "score": 115.2,
         "scoreBand": "premium",
         "burstTag": "active",
         "contextLabels": [
@@ -3006,13 +3006,13 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Slider / Four-Seam Fastball",
           "No recent batting-leader signal stored yet",
           "Weather lane: 77°F | 0% precip",
-          "Slot 1 | carry | lineup priority 54.3 | bullpen vulnerability -2.5",
+          "Slot 1 | carry | lineup priority 57.8 | bullpen vulnerability -2.5",
           "Statcast trend improving | HH 29.7% | Barrel 10.8%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 50.68067231387008,
-        "modelShare": 0.398,
-        "modelSharePct": 39.8,
+        "rawWeight": 51.92185435041286,
+        "modelShare": 0.392,
+        "modelSharePct": 39.2,
         "lane": "anchor"
       },
       {
@@ -3030,7 +3030,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 12,
         "seasonXHR": 12.4,
         "xhrDiff": -0.4,
-        "baseScore": 84.3485,
+        "baseScore": 86.27350000000001,
         "lineupContext": {
           "gameTitle": "Padres @ Nationals",
           "teamName": "Nationals",
@@ -3101,12 +3101,12 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 4,
           "seasonHomeRuns": 12,
           "splitHomeRuns": 11,
-          "lineupStatus": "partial",
-          "lineupCoverage": 8,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupStatus": "posted",
+          "lineupCoverage": 9,
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 48.7,
+        "lineupPriority": 52.2,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -3144,7 +3144,7 @@ export const homeRunTargetsByGame = {
             "Four-Seam Fastball"
           ]
         },
-        "score": 84.7,
+        "score": 86.7,
         "scoreBand": "strong",
         "burstTag": "watch",
         "contextLabels": [
@@ -3165,13 +3165,13 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Cutter / Four-Seam Fastball",
           "No recent batting-leader signal stored yet",
           "Weather lane: 77°F | 0% precip",
-          "Slot 4 | carry | lineup priority 48.7 | bullpen vulnerability -2.5",
+          "Slot 4 | carry | lineup priority 52.2 | bullpen vulnerability -2.5",
           "Statcast trend improving | HH 26.3% | Barrel 7.9%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 31.622313872924074,
-        "modelShare": 0.248,
-        "modelSharePct": 24.8,
+        "rawWeight": 32.98245064878943,
+        "modelShare": 0.249,
+        "modelSharePct": 24.9,
         "lane": "anchor"
       },
       {
@@ -3189,7 +3189,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 7,
         "seasonXHR": 6.1,
         "xhrDiff": 0.9,
-        "baseScore": 61.9213,
+        "baseScore": 63.84630000000001,
         "lineupContext": {
           "gameTitle": "Padres @ Nationals",
           "teamName": "Nationals",
@@ -3258,12 +3258,12 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 6,
           "seasonHomeRuns": 7,
           "splitHomeRuns": 5,
-          "lineupStatus": "partial",
-          "lineupCoverage": 8,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupStatus": "posted",
+          "lineupCoverage": 9,
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 47.9,
+        "lineupPriority": 51.4,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -3301,7 +3301,7 @@ export const homeRunTargetsByGame = {
             "Cutter"
           ]
         },
-        "score": 79.6,
+        "score": 81.5,
         "scoreBand": "live",
         "burstTag": "watch",
         "contextLabels": [
@@ -3322,13 +3322,13 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Sinker / Cutter",
           "No recent batting-leader signal stored yet",
           "Weather lane: 77°F | 0% precip",
-          "Slot 3 | carry | lineup priority 47.9 | bullpen vulnerability -2.5",
+          "Slot 3 | carry | lineup priority 51.4 | bullpen vulnerability -2.5",
           "Statcast trend improving | HH 34.4% | Barrel 12.5%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 28.130199832359537,
-        "modelShare": 0.221,
-        "modelSharePct": 22.1,
+        "rawWeight": 29.43535839315443,
+        "modelShare": 0.222,
+        "modelSharePct": 22.2,
         "lane": "secondary"
       },
       {
@@ -3346,7 +3346,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 7,
         "seasonXHR": 7.5,
         "xhrDiff": -0.5,
-        "baseScore": 42.765150000000006,
+        "baseScore": 44.69015,
         "lineupContext": {
           "gameTitle": "Padres @ Nationals",
           "teamName": "Nationals",
@@ -3415,12 +3415,12 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 2,
           "seasonHomeRuns": 7,
           "splitHomeRuns": 6,
-          "lineupStatus": "partial",
-          "lineupCoverage": 8,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupStatus": "posted",
+          "lineupCoverage": 9,
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 19.2,
+        "lineupPriority": 22.7,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -3458,7 +3458,7 @@ export const homeRunTargetsByGame = {
             "Cutter"
           ]
         },
-        "score": 63.5,
+        "score": 65.4,
         "scoreBand": "thin",
         "burstTag": "active",
         "contextLabels": [
@@ -3479,17 +3479,17 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Four-Seam Fastball / Cutter",
           "No recent batting-leader signal stored yet",
           "Weather lane: 77°F | 0% precip",
-          "Slot 7 | heater | lineup priority 19.2 | bullpen vulnerability -2.5",
+          "Slot 7 | heater | lineup priority 22.7 | bullpen vulnerability -2.5",
           "Statcast trend improving | HH 47.4% | Barrel 10.5%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 16.820673583475074,
-        "modelShare": 0.132,
-        "modelSharePct": 13.2,
+        "rawWeight": 18.183546388036184,
+        "modelShare": 0.137,
+        "modelSharePct": 13.7,
         "lane": "live"
       }
     ],
-    "summary": "James Wood is the premium lane here because the projected order still grades like a carry bat, his recent HR sample leans starter ambush, and today lines up as a neutral venue split matchup into a 0 HR/9 starter lane. The better way to read this game is as a weighted cluster through James Wood, CJ Abrams, Curtis Mead, Jacob Young rather than a solo-bat script."
+    "summary": "James Wood is the premium lane here because the posted order still grades like a carry bat, his recent HR sample leans starter ambush, and today lines up as a neutral venue split matchup into a 0 HR/9 starter lane. The better way to read this game is as a weighted cluster through James Wood, CJ Abrams, Curtis Mead, Jacob Young rather than a solo-bat script."
   },
   "Twins @ Pirates": {
     "gameTitle": "Twins @ Pirates",

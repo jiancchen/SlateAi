@@ -1,7 +1,7 @@
 {
   "modelName": "mlb-player-props-v2",
   "date": "2026-05-29",
-  "generatedAt": "2026-05-29T18:25:15.569Z",
+  "generatedAt": "2026-05-29T18:54:50.713Z",
   "sources": [
     "day-file-live-board",
     "web/src/lib/sports-model.js",
@@ -9,9 +9,9 @@
   ],
   "summary": {
     "totalGames": 15,
-    "totalPicks": 34,
+    "totalPicks": 35,
     "byType": {
-      "totalBases": 18,
+      "totalBases": 19,
       "singles": 3,
       "pitcherStrikeouts": 13
     }
@@ -19,6 +19,52 @@
   "picks": [
     {
       "rank": 1,
+      "id": "padres-nationals:695578:totalBases",
+      "gameId": "padres-nationals",
+      "gameTitle": "Padres @ Nationals",
+      "start": "3:45 PM PT",
+      "stage": "Evening MLB Board",
+      "awayTeam": "Padres",
+      "homeTeam": "Nationals",
+      "awayTeamFull": "San Diego Padres",
+      "homeTeamFull": "Washington Nationals",
+      "playerId": 695578,
+      "playerName": "James Wood",
+      "teamName": "Nationals",
+      "teamNameFull": "Washington Nationals",
+      "opponentName": "Padres",
+      "opponentNameFull": "San Diego Padres",
+      "slot": 1,
+      "propType": "totalBases",
+      "propLabel": "TB",
+      "marketLabel": "Over 1.5 total bases",
+      "lineThreshold": 1.5,
+      "confidence": 82,
+      "probability": 97.2,
+      "expectedValue": 5.4,
+      "statValueLabel": "5.44 exp TB",
+      "recommendationTier": "Core",
+      "reason": "slot 1 carry | rolling Statcast power is live | recent form up",
+      "scriptTags": [
+        "posted-lineup",
+        "top-third-pressure",
+        "middle-order-traffic",
+        "run-ceiling-live",
+        "traffic-lane-live",
+        "clean-conversion-lane",
+        "bullpen-carry-bat",
+        "carry-bat-live",
+        "power-lane",
+        "statcast-power-up",
+        "statcast-contact-up"
+      ],
+      "matchupNote": "+10.00 vs Lucas Giolito",
+      "teamScriptLabel": "",
+      "lineupStatus": "posted",
+      "playerSummary": ".276 AVG | .967 OPS | 60 H | 15 HR | 12g: .500 AVG | 1.480 OPS | 20 H | 4 HR | vs RHP: .293 AVG | 1.027 OPS | 11 HR | arsenal 4-Seam Fastball 43% / Changeup 38% / Slider 16% | fit +5.7 | +10.0 matchup grade in a neutral lane"
+    },
+    {
+      "rank": 2,
       "id": "giants-rockies:669477:totalBases",
       "gameId": "giants-rockies",
       "gameTitle": "Giants @ Rockies",
@@ -64,8 +110,8 @@
       "playerSummary": ".291 AVG | .887 OPS | 53 H | 12 HR | 12g: .280 AVG | 1.016 OPS | 14 H | 6 HR | vs RHP: .250 AVG | .823 OPS | 9 HR | arsenal Changeup 21% / 4-Seam Fastball 21% / Sinker 16% | fit +9.0 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 2,
-      "id": "padres-nationals:695578:totalBases",
+      "rank": 3,
+      "id": "padres-nationals:682928:totalBases",
       "gameId": "padres-nationals",
       "gameTitle": "Padres @ Nationals",
       "start": "3:45 PM PT",
@@ -74,38 +120,42 @@
       "homeTeam": "Nationals",
       "awayTeamFull": "San Diego Padres",
       "homeTeamFull": "Washington Nationals",
-      "playerId": 695578,
-      "playerName": "James Wood",
+      "playerId": 682928,
+      "playerName": "CJ Abrams",
       "teamName": "Nationals",
       "teamNameFull": "Washington Nationals",
       "opponentName": "Padres",
       "opponentNameFull": "San Diego Padres",
-      "slot": 1,
+      "slot": 4,
       "propType": "totalBases",
       "propLabel": "TB",
       "marketLabel": "Over 1.5 total bases",
       "lineThreshold": 1.5,
       "confidence": 82,
-      "probability": 94.1,
-      "expectedValue": 4.5,
-      "statValueLabel": "4.55 exp TB",
+      "probability": 95.9,
+      "expectedValue": 5,
+      "statValueLabel": "4.97 exp TB",
       "recommendationTier": "Core",
-      "reason": "slot 1 carry | rolling Statcast power is live | recent form up",
+      "reason": "slot 4 carry | rolling Statcast power is live | recent form up",
       "scriptTags": [
+        "posted-lineup",
         "top-third-pressure",
-        "bullpen-carry-bat",
+        "middle-order-traffic",
+        "run-ceiling-live",
+        "traffic-lane-live",
+        "clean-conversion-lane",
         "carry-bat-live",
         "power-lane",
         "statcast-power-up",
-        "statcast-contact-up"
+        "statcast-fade"
       ],
       "matchupNote": "+10.00 vs Lucas Giolito",
       "teamScriptLabel": "",
-      "lineupStatus": "partial",
-      "playerSummary": ".276 AVG | .967 OPS | 60 H | 15 HR | 12g: .500 AVG | 1.480 OPS | 20 H | 4 HR | vs RHP: .293 AVG | 1.027 OPS | 11 HR | arsenal 4-Seam Fastball 43% / Changeup 38% / Slider 16% | fit +5.7 | +10.0 matchup grade in a neutral lane"
+      "lineupStatus": "posted",
+      "playerSummary": ".294 AVG | .937 OPS | 60 H | 12 HR | 12g: .273 AVG | 1.042 OPS | 12 H | 4 HR | vs RHP: .299 AVG | 1.023 OPS | 11 HR | arsenal 4-Seam Fastball 43% / Changeup 38% / Slider 16% | fit +2.5 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "id": "brewers-astros:670541:totalBases",
       "gameId": "brewers-astros",
       "gameTitle": "Brewers @ Astros",
@@ -148,7 +198,7 @@
       "playerSummary": ".307 AVG | 1.073 OPS | 63 H | 20 HR | 12g: .350 AVG | 1.581 OPS | 14 H | 10 HR | vs RHP: .298 AVG | 1.046 OPS | 12 HR | arsenal Cutter 35% / Curveball 22% / Sinker 17% | fit +3.7 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "id": "cubs-cardinals:691023:totalBases",
       "gameId": "cubs-cardinals",
       "gameTitle": "Cubs @ Cardinals",
@@ -188,7 +238,7 @@
       "playerSummary": ".300 AVG | .944 OPS | 61 H | 15 HR | 10g: .350 AVG | 1.081 OPS | 14 H | 4 HR | vs LHP: .239 AVG | .857 OPS | 4 HR | arsenal 4-Seam Fastball 42% / Split-Finger 36% / Sweeper 14% | fit +4.7 | +10.0 matchup grade in a contact-suppressor lane"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "id": "marlins-mets:665742:totalBases",
       "gameId": "marlins-mets",
       "gameTitle": "Marlins @ Mets",
@@ -228,47 +278,48 @@
       "playerSummary": ".301 AVG | .986 OPS | 43 H | 12 HR | 8g: .385 AVG | 1.505 OPS | 10 H | 6 HR | vs RHP: .341 AVG | 1.135 OPS | 9 HR | arsenal Slider 27% / Sweeper 26% / 4-Seam Fastball 24% | fit +1.1 | +10.0 matchup grade in a contact-suppressor lane"
     },
     {
-      "rank": 6,
-      "id": "padres-nationals:682928:totalBases",
-      "gameId": "padres-nationals",
-      "gameTitle": "Padres @ Nationals",
-      "start": "3:45 PM PT",
+      "rank": 7,
+      "id": "braves-reds:663993:totalBases",
+      "gameId": "braves-reds",
+      "gameTitle": "Braves @ Reds",
+      "start": "3:40 PM PT",
       "stage": "Evening MLB Board",
-      "awayTeam": "Padres",
-      "homeTeam": "Nationals",
-      "awayTeamFull": "San Diego Padres",
-      "homeTeamFull": "Washington Nationals",
-      "playerId": 682928,
-      "playerName": "CJ Abrams",
-      "teamName": "Nationals",
-      "teamNameFull": "Washington Nationals",
-      "opponentName": "Padres",
-      "opponentNameFull": "San Diego Padres",
-      "slot": 4,
+      "awayTeam": "Braves",
+      "homeTeam": "Reds",
+      "awayTeamFull": "Atlanta Braves",
+      "homeTeamFull": "Cincinnati Reds",
+      "playerId": 663993,
+      "playerName": "Nathaniel Lowe",
+      "teamName": "Reds",
+      "teamNameFull": "Cincinnati Reds",
+      "opponentName": "Braves",
+      "opponentNameFull": "Atlanta Braves",
+      "slot": 6,
       "propType": "totalBases",
       "propLabel": "TB",
       "marketLabel": "Over 1.5 total bases",
       "lineThreshold": 1.5,
       "confidence": 82,
-      "probability": 91.9,
-      "expectedValue": 4.1,
-      "statValueLabel": "4.15 exp TB",
+      "probability": 91,
+      "expectedValue": 4,
+      "statValueLabel": "4.03 exp TB",
       "recommendationTier": "Core",
-      "reason": "slot 4 carry | rolling Statcast power is live | recent form up",
+      "reason": "slot 6 carry | rolling Statcast power is live | recent form up",
       "scriptTags": [
-        "top-third-pressure",
+        "posted-lineup",
+        "middle-order-traffic",
         "carry-bat-live",
         "power-lane",
         "statcast-power-up",
-        "statcast-fade"
+        "statcast-contact-up"
       ],
-      "matchupNote": "+10.00 vs Lucas Giolito",
+      "matchupNote": "+10.00 vs Grant Holmes",
       "teamScriptLabel": "",
-      "lineupStatus": "partial",
-      "playerSummary": ".294 AVG | .937 OPS | 60 H | 12 HR | 12g: .273 AVG | 1.042 OPS | 12 H | 4 HR | vs RHP: .299 AVG | 1.023 OPS | 11 HR | arsenal 4-Seam Fastball 43% / Changeup 38% / Slider 16% | fit +2.5 | +10.0 matchup grade in a neutral lane"
+      "lineupStatus": "posted",
+      "playerSummary": ".274 AVG | .912 OPS | 32 H | 8 HR | 8g: .385 AVG | 1.452 OPS | 10 H | 4 HR | vs RHP: .314 AVG | 1.034 OPS | 8 HR | arsenal Slider 38% / 4-Seam Fastball 35% / Curveball 10% | fit +1.8 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "id": "diamondbacks-mariners:606466:totalBases",
       "gameId": "diamondbacks-mariners",
       "gameTitle": "Diamondbacks @ Mariners",
@@ -309,7 +360,7 @@
       "playerSummary": ".276 AVG | .802 OPS | 58 H | 9 HR | 12g: .519 AVG | 1.425 OPS | 28 H | 4 HR | vs RHP: .270 AVG | .802 OPS | 7 HR | arsenal 4-Seam Fastball 31% / Sweeper 27% / Sinker 20% | fit +3.8 | +10.0 matchup grade in a in-zone lane"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "id": "phillies-dodgers:681624:totalBases",
       "gameId": "phillies-dodgers",
       "gameTitle": "Phillies @ Dodgers",
@@ -351,7 +402,7 @@
       "playerSummary": ".303 AVG | .899 OPS | 63 H | 13 HR | 12g: .417 AVG | 1.420 OPS | 20 H | 6 HR | vs RHP: .296 AVG | .863 OPS | 10 HR | arsenal 4-Seam Fastball 37% / Sinker 17% / Split-Finger 15% | fit +0.8 | +10.0 matchup grade in a contact-suppressor lane"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "id": "giants-rockies:650333:singles",
       "gameId": "giants-rockies",
       "gameTitle": "Giants @ Rockies",
@@ -396,7 +447,7 @@
       "playerSummary": ".325 AVG | .798 OPS | 67 H | 2 HR | 12g: .381 AVG | .959 OPS | 16 H | 0 HR | vs RHP: .340 AVG | .817 OPS | 1 HR | arsenal Changeup 21% / 4-Seam Fastball 21% / Sinker 16% | fit +6.0 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 10,
+      "rank": 11,
       "id": "angels-rays:666018:totalBases",
       "gameId": "angels-rays",
       "gameTitle": "Angels @ Rays",
@@ -437,7 +488,7 @@
       "playerSummary": ".286 AVG | .860 OPS | 54 H | 9 HR | 10g: .500 AVG | 1.302 OPS | 18 H | 2 HR | vs RHP: .288 AVG | .898 OPS | 8 HR | arsenal Changeup 36% / Sinker 30% / 4-Seam Fastball 21% | fit +0.7 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 11,
+      "rank": 12,
       "id": "brewers-astros:572233:totalBases",
       "gameId": "brewers-astros",
       "gameTitle": "Brewers @ Astros",
@@ -479,7 +530,7 @@
       "playerSummary": ".255 AVG | .850 OPS | 53 H | 15 HR | 12g: .250 AVG | 1.083 OPS | 12 H | 8 HR | vs RHP: .271 AVG | .868 OPS | 12 HR | arsenal Cutter 35% / Curveball 22% / Sinker 17% | fit +0.5 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 12,
+      "rank": 13,
       "id": "tigers-white-sox:675512:pitcherStrikeouts",
       "gameId": "tigers-white-sox",
       "gameTitle": "Tigers @ White Sox",
@@ -518,7 +569,7 @@
       "playerSummary": "1.59 ERA | 5.2 IP | 3 SO | Only 1 MLB start are loaded, so the board should assume a shorter leash and higher variance."
     },
     {
-      "rank": 13,
+      "rank": 14,
       "id": "red-sox-guardians:575929:totalBases",
       "gameId": "red-sox-guardians",
       "gameTitle": "Red Sox @ Guardians",
@@ -540,15 +591,17 @@
       "marketLabel": "Over 1.5 total bases",
       "lineThreshold": 1.5,
       "confidence": 78,
-      "probability": 82.2,
-      "expectedValue": 3.1,
-      "statValueLabel": "3.15 exp TB",
+      "probability": 82.9,
+      "expectedValue": 3.2,
+      "statValueLabel": "3.20 exp TB",
       "recommendationTier": "Strong",
       "reason": "slot 4 carry | rolling Statcast power is live | recent form up",
       "scriptTags": [
         "top-third-pressure",
         "middle-order-traffic",
         "deep-lineup",
+        "traffic-lane-live",
+        "clean-conversion-lane",
         "carry-bat-live",
         "power-lane",
         "statcast-power-up",
@@ -560,7 +613,7 @@
       "playerSummary": ".286 AVG | .894 OPS | 54 H | 11 HR | 12g: .409 AVG | 1.116 OPS | 18 H | 2 HR | vs RHP: .277 AVG | .828 OPS | 7 HR | arsenal 4-Seam Fastball 33% / Cutter 26% / Sinker 17% | fit +2.0 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 14,
+      "rank": 15,
       "id": "twins-pirates:687462:totalBases",
       "gameId": "twins-pirates",
       "gameTitle": "Twins @ Pirates",
@@ -582,9 +635,9 @@
       "marketLabel": "Over 1.5 total bases",
       "lineThreshold": 1.5,
       "confidence": 78,
-      "probability": 74.2,
-      "expectedValue": 2.6,
-      "statValueLabel": "2.65 exp TB",
+      "probability": 74.6,
+      "expectedValue": 2.7,
+      "statValueLabel": "2.67 exp TB",
       "recommendationTier": "Strong",
       "reason": "slot 1 carry | rolling Statcast power is live | recent form up",
       "scriptTags": [
@@ -603,7 +656,7 @@
       "playerSummary": ".283 AVG | .841 OPS | 45 H | 6 HR | 14g: .318 AVG | 1.005 OPS | 14 H | 4 HR | vs RHP: .294 AVG | .885 OPS | 6 HR | arsenal 4-Seam Fastball 47% / Split-Finger 22% / Cutter 21% | fit +1.1 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 15,
+      "rank": 16,
       "id": "twins-pirates:668804:totalBases",
       "gameId": "twins-pirates",
       "gameTitle": "Twins @ Pirates",
@@ -625,9 +678,9 @@
       "marketLabel": "Over 1.5 total bases",
       "lineThreshold": 1.5,
       "confidence": 78,
-      "probability": 73.1,
+      "probability": 73.5,
       "expectedValue": 2.6,
-      "statValueLabel": "2.59 exp TB",
+      "statValueLabel": "2.61 exp TB",
       "recommendationTier": "Strong",
       "reason": "slot 3 carry | rolling Statcast power is live | recent form up",
       "scriptTags": [
@@ -644,7 +697,46 @@
       "playerSummary": ".272 AVG | .817 OPS | 55 H | 5 HR | 14g: .500 AVG | 1.378 OPS | 22 H | 2 HR | vs RHP: .252 AVG | .778 OPS | 3 HR | arsenal 4-Seam Fastball 47% / Split-Finger 22% / Cutter 21% | fit +2.3 | +10.0 matchup grade in a power-arm lane"
     },
     {
-      "rank": 16,
+      "rank": 17,
+      "id": "padres-nationals:608337:pitcherStrikeouts",
+      "gameId": "padres-nationals",
+      "gameTitle": "Padres @ Nationals",
+      "start": "3:45 PM PT",
+      "stage": "Evening MLB Board",
+      "awayTeam": "Padres",
+      "homeTeam": "Nationals",
+      "awayTeamFull": "San Diego Padres",
+      "homeTeamFull": "Washington Nationals",
+      "playerId": 608337,
+      "playerName": "Lucas Giolito",
+      "teamName": "Padres",
+      "teamNameFull": "San Diego Padres",
+      "opponentName": "Nationals",
+      "opponentNameFull": "Washington Nationals",
+      "slot": null,
+      "propType": "pitcherStrikeouts",
+      "propLabel": "K",
+      "marketLabel": "Under 3.5 strikeouts",
+      "lineThreshold": 3.5,
+      "confidence": 78,
+      "probability": 36,
+      "expectedValue": 2.4,
+      "statValueLabel": "2.4 exp K · O -124 / U +108",
+      "recommendationTier": "Core",
+      "reason": "5.0 IP lane | 4.5 K/9 base | Nationals suppress Ks",
+      "scriptTags": [
+        "posted-lineup",
+        "starter-k-lane",
+        "contact-resistance",
+        "starter-volume-live"
+      ],
+      "matchupNote": "FanDuel K line 3.5 · Under price +108",
+      "teamScriptLabel": "5-inning lane",
+      "lineupStatus": "posted",
+      "playerSummary": "2.70 ERA | 10.0 IP | 5 SO | This is still a low-sample MLB starter look with only 2 starts on file, so innings expectation matters more than the raw ERA line."
+    },
+    {
+      "rank": 18,
       "id": "tigers-white-sox:690993:singles",
       "gameId": "tigers-white-sox",
       "gameTitle": "Tigers @ White Sox",
@@ -686,7 +778,7 @@
       "playerSummary": ".292 AVG | .694 OPS | 45 H | 0 HR | 12g: .429 AVG | 1.042 OPS | 12 H | 0 HR | vs RHP: .303 AVG | .719 OPS | 0 HR | arsenal Sweeper 37% / Sinker 28% / Cutter 23% | fit +1.7 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 17,
+      "rank": 19,
       "id": "diamondbacks-mariners:686527:totalBases",
       "gameId": "diamondbacks-mariners",
       "gameTitle": "Diamondbacks @ Mariners",
@@ -730,7 +822,7 @@
       "playerSummary": ".237 AVG | .763 OPS | 27 H | 5 HR | 8g: .167 AVG | .667 OPS | 4 H | 2 HR | vs RHP: .250 AVG | .781 OPS | 5 HR | arsenal 4-Seam Fastball 37% / Slider 25% / Curveball 20% | fit +7.3 | +6.8 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 18,
+      "rank": 20,
       "id": "twins-pirates:671737:pitcherStrikeouts",
       "gameId": "twins-pirates",
       "gameTitle": "Twins @ Pirates",
@@ -769,7 +861,50 @@
       "playerSummary": "2.77 ERA | 52.0 IP | 59 SO | Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass."
     },
     {
-      "rank": 19,
+      "rank": 21,
+      "id": "red-sox-guardians:680776:totalBases",
+      "gameId": "red-sox-guardians",
+      "gameTitle": "Red Sox @ Guardians",
+      "start": "4:10 PM PT",
+      "stage": "Evening MLB Board",
+      "awayTeam": "Red Sox",
+      "homeTeam": "Guardians",
+      "awayTeamFull": "Boston Red Sox",
+      "homeTeamFull": "Cleveland Guardians",
+      "playerId": 680776,
+      "playerName": "Jarren Duran",
+      "teamName": "Red Sox",
+      "teamNameFull": "Boston Red Sox",
+      "opponentName": "Guardians",
+      "opponentNameFull": "Cleveland Guardians",
+      "slot": 1,
+      "propType": "totalBases",
+      "propLabel": "TB",
+      "marketLabel": "Over 1.5 total bases",
+      "lineThreshold": 1.5,
+      "confidence": 73,
+      "probability": 67.7,
+      "expectedValue": 2.3,
+      "statValueLabel": "2.33 exp TB",
+      "recommendationTier": "Strong",
+      "reason": "slot 1 carry | rolling Statcast power is live | recent form up",
+      "scriptTags": [
+        "top-third-pressure",
+        "middle-order-traffic",
+        "deep-lineup",
+        "traffic-lane-live",
+        "clean-conversion-lane",
+        "carry-bat-live",
+        "statcast-power-up",
+        "statcast-contact-up"
+      ],
+      "matchupNote": "+10.00 vs Slade Cecconi",
+      "teamScriptLabel": "",
+      "lineupStatus": "partial",
+      "playerSummary": ".213 AVG | .665 OPS | 43 H | 8 HR | 12g: .321 AVG | .902 OPS | 18 H | 4 HR | vs RHP: .206 AVG | .683 OPS | 8 HR | arsenal 4-Seam Fastball 33% / Cutter 26% / Sinker 17% | fit +5.1 | +10.0 matchup grade in a traffic-risk lane"
+    },
+    {
+      "rank": 22,
       "id": "marlins-mets:676974:pitcherStrikeouts",
       "gameId": "marlins-mets",
       "gameTitle": "Marlins @ Mets",
@@ -808,7 +943,7 @@
       "playerSummary": "2.52 ERA | 60.2 IP | 68 SO | Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass."
     },
     {
-      "rank": 20,
+      "rank": 23,
       "id": "angels-rays:700712:pitcherStrikeouts",
       "gameId": "angels-rays",
       "gameTitle": "Angels @ Rays",
@@ -847,7 +982,7 @@
       "playerSummary": "2.58 ERA | 38.1 IP | 36 SO | Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass."
     },
     {
-      "rank": 21,
+      "rank": 24,
       "id": "blue-jays-orioles:691723:totalBases",
       "gameId": "blue-jays-orioles",
       "gameTitle": "Blue Jays @ Orioles",
@@ -889,87 +1024,7 @@
       "playerSummary": ".200 AVG | .644 OPS | 27 H | 6 HR | 6g: .444 AVG | 1.389 OPS | 8 H | 2 HR | vs LHP: .295 AVG | 1.013 OPS | 4 HR | arsenal Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit +0.2 | +10.0 matchup grade in a neutral lane"
     },
     {
-      "rank": 22,
-      "id": "red-sox-guardians:680776:totalBases",
-      "gameId": "red-sox-guardians",
-      "gameTitle": "Red Sox @ Guardians",
-      "start": "4:10 PM PT",
-      "stage": "Evening MLB Board",
-      "awayTeam": "Red Sox",
-      "homeTeam": "Guardians",
-      "awayTeamFull": "Boston Red Sox",
-      "homeTeamFull": "Cleveland Guardians",
-      "playerId": 680776,
-      "playerName": "Jarren Duran",
-      "teamName": "Red Sox",
-      "teamNameFull": "Boston Red Sox",
-      "opponentName": "Guardians",
-      "opponentNameFull": "Cleveland Guardians",
-      "slot": 1,
-      "propType": "totalBases",
-      "propLabel": "TB",
-      "marketLabel": "Over 1.5 total bases",
-      "lineThreshold": 1.5,
-      "confidence": 72,
-      "probability": 66.8,
-      "expectedValue": 2.3,
-      "statValueLabel": "2.29 exp TB",
-      "recommendationTier": "Strong",
-      "reason": "slot 1 carry | rolling Statcast power is live | recent form up",
-      "scriptTags": [
-        "top-third-pressure",
-        "middle-order-traffic",
-        "deep-lineup",
-        "carry-bat-live",
-        "statcast-power-up",
-        "statcast-contact-up"
-      ],
-      "matchupNote": "+10.00 vs Slade Cecconi",
-      "teamScriptLabel": "",
-      "lineupStatus": "partial",
-      "playerSummary": ".213 AVG | .665 OPS | 43 H | 8 HR | 12g: .321 AVG | .902 OPS | 18 H | 4 HR | vs RHP: .206 AVG | .683 OPS | 8 HR | arsenal 4-Seam Fastball 33% / Cutter 26% / Sinker 17% | fit +5.1 | +10.0 matchup grade in a traffic-risk lane"
-    },
-    {
-      "rank": 23,
-      "id": "padres-nationals:608337:pitcherStrikeouts",
-      "gameId": "padres-nationals",
-      "gameTitle": "Padres @ Nationals",
-      "start": "3:45 PM PT",
-      "stage": "Evening MLB Board",
-      "awayTeam": "Padres",
-      "homeTeam": "Nationals",
-      "awayTeamFull": "San Diego Padres",
-      "homeTeamFull": "Washington Nationals",
-      "playerId": 608337,
-      "playerName": "Lucas Giolito",
-      "teamName": "Padres",
-      "teamNameFull": "San Diego Padres",
-      "opponentName": "Nationals",
-      "opponentNameFull": "Washington Nationals",
-      "slot": null,
-      "propType": "pitcherStrikeouts",
-      "propLabel": "K",
-      "marketLabel": "Under 3.5 strikeouts",
-      "lineThreshold": 3.5,
-      "confidence": 71,
-      "probability": 36.2,
-      "expectedValue": 2.5,
-      "statValueLabel": "2.5 exp K · O -124 / U +108",
-      "recommendationTier": "Strong",
-      "reason": "5.0 IP lane | 4.5 K/9 base | Nationals suppress Ks",
-      "scriptTags": [
-        "partial-lineup",
-        "starter-k-lane",
-        "contact-resistance",
-        "starter-volume-live"
-      ],
-      "matchupNote": "FanDuel K line 3.5 · Under price +108",
-      "teamScriptLabel": "5-inning lane",
-      "lineupStatus": "partial",
-      "playerSummary": "2.70 ERA | 10.0 IP | 5 SO | This is still a low-sample MLB starter look with only 2 starts on file, so innings expectation matters more than the raw ERA line."
-    },
-    {
-      "rank": 24,
+      "rank": 25,
       "id": "angels-rays:687263:totalBases",
       "gameId": "angels-rays",
       "gameTitle": "Angels @ Rays",
@@ -1008,7 +1063,7 @@
       "playerSummary": ".233 AVG | .776 OPS | 52 H | 10 HR | 12g: .391 AVG | 1.264 OPS | 18 H | 4 HR | vs RHP: .228 AVG | .760 OPS | 8 HR | arsenal Sinker 30% / Changeup 29% / Cutter 19% | fit +1.3 | +10.0 matchup grade in a craft lane"
     },
     {
-      "rank": 25,
+      "rank": 26,
       "id": "yankees-athletics:663757:totalBases",
       "gameId": "yankees-athletics",
       "gameTitle": "Yankees @ Athletics",
@@ -1048,7 +1103,7 @@
       "playerSummary": ".206 AVG | .714 OPS | 36 H | 7 HR | 10g: .450 AVG | 1.200 OPS | 18 H | 2 HR | vs RHP: .202 AVG | .721 OPS | 5 HR | arsenal Sweeper 24% / Sinker 24% / 4-Seam Fastball 21% | fit +4.4 | +10.0 matchup grade in a traffic-risk lane"
     },
     {
-      "rank": 26,
+      "rank": 27,
       "id": "yankees-athletics:607074:pitcherStrikeouts",
       "gameId": "yankees-athletics",
       "gameTitle": "Yankees @ Athletics",
@@ -1087,7 +1142,7 @@
       "playerSummary": "4.15 ERA | 13.0 IP | 17 SO | This is still a low-sample MLB starter look with only 3 starts on file, so innings expectation matters more than the raw ERA line."
     },
     {
-      "rank": 27,
+      "rank": 28,
       "id": "cubs-cardinals:684007:pitcherStrikeouts",
       "gameId": "cubs-cardinals",
       "gameTitle": "Cubs @ Cardinals",
@@ -1126,7 +1181,7 @@
       "playerSummary": "4.04 ERA | 64.2 IP | 67 SO | Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass."
     },
     {
-      "rank": 28,
+      "rank": 29,
       "id": "diamondbacks-mariners:669923:pitcherStrikeouts",
       "gameId": "diamondbacks-mariners",
       "gameTitle": "Diamondbacks @ Mariners",
@@ -1165,7 +1220,7 @@
       "playerSummary": "3.54 ERA | 68.2 IP | 55 SO | Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass."
     },
     {
-      "rank": 29,
+      "rank": 30,
       "id": "brewers-astros:661388:singles",
       "gameId": "brewers-astros",
       "gameTitle": "Brewers @ Astros",
@@ -1205,7 +1260,7 @@
       "playerSummary": ".303 AVG | .780 OPS | 60 H | 4 HR | 10g: .389 AVG | 1.032 OPS | 14 H | 2 HR | vs RHP: .317 AVG | .798 OPS | 3 HR | arsenal Sweeper 37% / 4-Seam Fastball 26% / Sinker 17% | fit +0.3 | +7.6 matchup grade in a contact-suppressor lane"
     },
     {
-      "rank": 30,
+      "rank": 31,
       "id": "phillies-dodgers:680736:pitcherStrikeouts",
       "gameId": "phillies-dodgers",
       "gameTitle": "Phillies @ Dodgers",
@@ -1244,7 +1299,7 @@
       "playerSummary": "3.07 ERA | 55.2 IP | 31 SO | Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass."
     },
     {
-      "rank": 31,
+      "rank": 32,
       "id": "cubs-cardinals:669467:pitcherStrikeouts",
       "gameId": "cubs-cardinals",
       "gameTitle": "Cubs @ Cardinals",
@@ -1283,7 +1338,7 @@
       "playerSummary": "3.76 ERA | 55.0 IP | 43 SO | Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass."
     },
     {
-      "rank": 32,
+      "rank": 33,
       "id": "blue-jays-orioles:669432:pitcherStrikeouts",
       "gameId": "blue-jays-orioles",
       "gameTitle": "Blue Jays @ Orioles",
@@ -1322,7 +1377,7 @@
       "playerSummary": "6.96 ERA | 42.2 IP | 35 SO | Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass."
     },
     {
-      "rank": 33,
+      "rank": 34,
       "id": "red-sox-guardians:677944:pitcherStrikeouts",
       "gameId": "red-sox-guardians",
       "gameTitle": "Red Sox @ Guardians",
@@ -1361,7 +1416,7 @@
       "playerSummary": "5.18 ERA | 57.1 IP | 47 SO | Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass."
     },
     {
-      "rank": 34,
+      "rank": 35,
       "id": "brewers-astros:678906:pitcherStrikeouts",
       "gameId": "brewers-astros",
       "gameTitle": "Brewers @ Astros",

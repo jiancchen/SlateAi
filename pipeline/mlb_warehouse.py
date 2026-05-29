@@ -974,6 +974,29 @@ CREATE TABLE IF NOT EXISTS mlb_hitter_state_snapshots (
   PRIMARY KEY (as_of_date, player_id)
 );
 
+CREATE TABLE IF NOT EXISTS mlb_hitter_classic_trend_snapshots (
+  as_of_date TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  player_id INTEGER NOT NULL,
+  player_name TEXT NOT NULL,
+  days_since_last_game INTEGER,
+  games_sample_last10 INTEGER NOT NULL,
+  pa_sample_last10 INTEGER NOT NULL,
+  batting_order_avg_last10 REAL,
+  multi_hit_games_last10 INTEGER,
+  multi_tb_games_last10 INTEGER,
+  home_run_games_last10 INTEGER,
+  hits_per_pa_last10 REAL,
+  total_bases_per_pa_last10 REAL,
+  strikeout_rate_last10 REAL,
+  walk_rate_last10 REAL,
+  whiff_rate_last10 REAL,
+  hits_per_pa_last5_minus_last10 REAL,
+  total_bases_per_pa_last5_minus_last10 REAL,
+  strikeout_rate_last5_minus_last10 REAL,
+  PRIMARY KEY (as_of_date, player_id)
+);
+
 CREATE TABLE IF NOT EXISTS mlb_hitter_statcast_game_logs (
   game_date TEXT NOT NULL,
   game_pk INTEGER NOT NULL,
@@ -1340,6 +1363,10 @@ CREATE INDEX IF NOT EXISTS idx_mlb_hitter_state_snapshots_team_date
   ON mlb_hitter_state_snapshots(team_name, as_of_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_hitter_state_snapshots_player_date
   ON mlb_hitter_state_snapshots(player_id, as_of_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_hitter_classic_trends_team_date
+  ON mlb_hitter_classic_trend_snapshots(team_name, as_of_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_hitter_classic_trends_player_date
+  ON mlb_hitter_classic_trend_snapshots(player_id, as_of_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_team_market_context_daily_team_date
   ON mlb_team_market_context_daily(team_name, as_of_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_team_opponent_quality_daily_team_date
@@ -4803,6 +4830,98 @@ def build_recent_hitter_state_row(
         "pressure_plate_index": pressure_plate_index,
         "cold_streak_index": cold_streak_index,
         "heat_regression_index": heat_regression_index,
+    }
+
+
+def build_recent_hitter_classic_trend_row(
+    conn: sqlite3.Connection,
+    as_of_date: str,
+    team_name: str,
+    player_id: int,
+    player_name: str,
+) -> dict[str, Any] | None:
+    recent_rows = conn.execute(
+        """
+        SELECT
+          game_pk,
+          game_date,
+          batting_order,
+          plate_appearances,
+          hits,
+          total_bases,
+          home_runs,
+          walks,
+          strikeouts
+        FROM mlb_player_game_batting
+        WHERE team_name = ?
+          AND player_id = ?
+          AND game_date < ?
+        ORDER BY game_date DESC, game_pk DESC
+        LIMIT 10
+        """,
+        (team_name, player_id, as_of_date),
+    ).fetchall()
+
+    if not recent_rows:
+        return None
+
+    def summarize(rows: list[sqlite3.Row]) -> dict[str, Any]:
+        recent_game_pks = [to_int(row["game_pk"]) or 0 for row in rows if to_int(row["game_pk"]) is not None]
+        total_pa = sum(to_int(row["plate_appearances"]) or 0 for row in rows)
+        total_hits = sum(to_int(row["hits"]) or 0 for row in rows)
+        total_tb = sum(to_int(row["total_bases"]) or 0 for row in rows)
+        total_walks = sum(to_int(row["walks"]) or 0 for row in rows)
+        total_strikeouts = sum(to_int(row["strikeouts"]) or 0 for row in rows)
+        batting_orders = [to_int(row["batting_order"]) for row in rows if to_int(row["batting_order"]) is not None]
+        return {
+            "games_sample": len(rows),
+            "pa_sample": total_pa,
+            "batting_order_avg": safe_mean(batting_orders) if batting_orders else None,
+            "multi_hit_games": sum(1 for row in rows if (to_int(row["hits"]) or 0) >= 2),
+            "multi_tb_games": sum(1 for row in rows if (to_int(row["total_bases"]) or 0) >= 2),
+            "home_run_games": sum(1 for row in rows if (to_int(row["home_runs"]) or 0) >= 1),
+            "hits_per_pa": (total_hits / total_pa) if total_pa else None,
+            "total_bases_per_pa": (total_tb / total_pa) if total_pa else None,
+            "strikeout_rate": (total_strikeouts / total_pa) if total_pa else None,
+            "walk_rate": (total_walks / total_pa) if total_pa else None,
+            "whiff_rate": compute_recent_hitter_whiff_rate(conn, player_id, recent_game_pks),
+        }
+
+    def delta(short_value: float | None, long_value: float | None, digits: int = 3) -> float | None:
+        if short_value is None or long_value is None:
+            return None
+        return round(short_value - long_value, digits)
+
+    last5_rows = recent_rows[:5]
+    last5 = summarize(last5_rows) if last5_rows else None
+    last10 = summarize(recent_rows)
+    last_game_date = recent_rows[0]["game_date"]
+    days_since_last_game = (
+        datetime.strptime(as_of_date, "%Y-%m-%d").date() - datetime.strptime(last_game_date, "%Y-%m-%d").date()
+    ).days
+
+    return {
+        "as_of_date": as_of_date,
+        "team_name": team_name,
+        "player_id": player_id,
+        "player_name": player_name,
+        "days_since_last_game": days_since_last_game,
+        "games_sample_last10": last10["games_sample"],
+        "pa_sample_last10": last10["pa_sample"],
+        "batting_order_avg_last10": last10["batting_order_avg"],
+        "multi_hit_games_last10": last10["multi_hit_games"],
+        "multi_tb_games_last10": last10["multi_tb_games"],
+        "home_run_games_last10": last10["home_run_games"],
+        "hits_per_pa_last10": last10["hits_per_pa"],
+        "total_bases_per_pa_last10": last10["total_bases_per_pa"],
+        "strikeout_rate_last10": last10["strikeout_rate"],
+        "walk_rate_last10": last10["walk_rate"],
+        "whiff_rate_last10": last10["whiff_rate"],
+        "hits_per_pa_last5_minus_last10": delta(last5["hits_per_pa"], last10["hits_per_pa"]) if last5 else None,
+        "total_bases_per_pa_last5_minus_last10": (
+            delta(last5["total_bases_per_pa"], last10["total_bases_per_pa"]) if last5 else None
+        ),
+        "strikeout_rate_last5_minus_last10": delta(last5["strikeout_rate"], last10["strikeout_rate"]) if last5 else None,
     }
 
 
@@ -8484,6 +8603,140 @@ def refresh_state_snapshots(
     conn.commit()
 
 
+def refresh_hitter_classic_trend_snapshots(
+    conn: sqlite3.Connection,
+    through_date: str | None = None,
+    as_of_date: str | None = None,
+) -> None:
+    init_db(conn)
+
+    if as_of_date:
+        dates = [
+            row["game_date"]
+            for row in conn.execute(
+                "SELECT DISTINCT game_date FROM mlb_games WHERE game_date = ? ORDER BY game_date",
+                (as_of_date,),
+            ).fetchall()
+        ]
+        conn.execute("DELETE FROM mlb_hitter_classic_trend_snapshots WHERE as_of_date = ?", (as_of_date,))
+    else:
+        params: tuple[Any, ...] = (through_date,) if through_date else ()
+        date_filter = "WHERE game_date <= ?" if through_date else ""
+        dates = [
+            row["game_date"]
+            for row in conn.execute(
+                f"SELECT DISTINCT game_date FROM mlb_games {date_filter} ORDER BY game_date", params
+            ).fetchall()
+        ]
+        if through_date:
+            conn.execute("DELETE FROM mlb_hitter_classic_trend_snapshots WHERE as_of_date <= ?", (through_date,))
+        else:
+            conn.execute("DELETE FROM mlb_hitter_classic_trend_snapshots")
+
+    for current_date in dates:
+        teams = [
+            row["team_name"]
+            for row in conn.execute(
+                """
+                SELECT away_team AS team_name
+                FROM mlb_games
+                WHERE game_date = ?
+                UNION
+                SELECT home_team AS team_name
+                FROM mlb_games
+                WHERE game_date = ?
+                ORDER BY team_name
+                """,
+                (current_date, current_date),
+            ).fetchall()
+        ]
+
+        for team_name in teams:
+            player_rows = conn.execute(
+                """
+                SELECT
+                  player_id,
+                  player_name,
+                  MAX(game_date) AS last_game_date
+                FROM mlb_player_game_batting
+                WHERE team_name = ?
+                  AND game_date < ?
+                GROUP BY player_id, player_name
+                HAVING julianday(?) - julianday(MAX(game_date)) <= 21
+                ORDER BY last_game_date DESC, player_name ASC
+                """,
+                (team_name, current_date, current_date),
+            ).fetchall()
+
+            for player_row in player_rows:
+                player_id = to_int(player_row["player_id"]) or 0
+                if not player_id:
+                    continue
+                trend_row = build_recent_hitter_classic_trend_row(
+                    conn,
+                    current_date,
+                    team_name,
+                    player_id,
+                    player_row["player_name"],
+                )
+                if not trend_row:
+                    continue
+                conn.execute(
+                    """
+                    INSERT INTO mlb_hitter_classic_trend_snapshots (
+                      as_of_date, team_name, player_id, player_name, days_since_last_game,
+                      games_sample_last10, pa_sample_last10, batting_order_avg_last10,
+                      multi_hit_games_last10, multi_tb_games_last10, home_run_games_last10,
+                      hits_per_pa_last10, total_bases_per_pa_last10, strikeout_rate_last10,
+                      walk_rate_last10, whiff_rate_last10,
+                      hits_per_pa_last5_minus_last10, total_bases_per_pa_last5_minus_last10,
+                      strikeout_rate_last5_minus_last10
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    ON CONFLICT(as_of_date, player_id) DO UPDATE SET
+                      team_name=excluded.team_name,
+                      player_name=excluded.player_name,
+                      days_since_last_game=excluded.days_since_last_game,
+                      games_sample_last10=excluded.games_sample_last10,
+                      pa_sample_last10=excluded.pa_sample_last10,
+                      batting_order_avg_last10=excluded.batting_order_avg_last10,
+                      multi_hit_games_last10=excluded.multi_hit_games_last10,
+                      multi_tb_games_last10=excluded.multi_tb_games_last10,
+                      home_run_games_last10=excluded.home_run_games_last10,
+                      hits_per_pa_last10=excluded.hits_per_pa_last10,
+                      total_bases_per_pa_last10=excluded.total_bases_per_pa_last10,
+                      strikeout_rate_last10=excluded.strikeout_rate_last10,
+                      walk_rate_last10=excluded.walk_rate_last10,
+                      whiff_rate_last10=excluded.whiff_rate_last10,
+                      hits_per_pa_last5_minus_last10=excluded.hits_per_pa_last5_minus_last10,
+                      total_bases_per_pa_last5_minus_last10=excluded.total_bases_per_pa_last5_minus_last10,
+                      strikeout_rate_last5_minus_last10=excluded.strikeout_rate_last5_minus_last10
+                    """,
+                    (
+                        trend_row["as_of_date"],
+                        trend_row["team_name"],
+                        trend_row["player_id"],
+                        trend_row["player_name"],
+                        trend_row["days_since_last_game"],
+                        trend_row["games_sample_last10"],
+                        trend_row["pa_sample_last10"],
+                        trend_row["batting_order_avg_last10"],
+                        trend_row["multi_hit_games_last10"],
+                        trend_row["multi_tb_games_last10"],
+                        trend_row["home_run_games_last10"],
+                        trend_row["hits_per_pa_last10"],
+                        trend_row["total_bases_per_pa_last10"],
+                        trend_row["strikeout_rate_last10"],
+                        trend_row["walk_rate_last10"],
+                        trend_row["whiff_rate_last10"],
+                        trend_row["hits_per_pa_last5_minus_last10"],
+                        trend_row["total_bases_per_pa_last5_minus_last10"],
+                        trend_row["strikeout_rate_last5_minus_last10"],
+                    ),
+                )
+
+    conn.commit()
+
+
 def ingest_hitter_statcast_date_range(conn: sqlite3.Connection, start_date: str, end_date: str) -> int:
     init_db(conn)
     start = datetime.strptime(start_date, "%Y-%m-%d").date()
@@ -9661,6 +9914,18 @@ def parse_args() -> argparse.Namespace:
         help="Optional single as-of date to rebuild incrementally without touching earlier snapshot rows.",
     )
 
+    derive_hitter_classic = subparsers.add_parser(
+        "derive-hitter-classic-trends",
+        help="Refresh rolling hitter classic last-10 trend snapshots for scheduled teams.",
+    )
+    derive_hitter_classic.add_argument(
+        "--through-date", help="Optional YYYY-MM-DD cutoff. Defaults to every loaded date."
+    )
+    derive_hitter_classic.add_argument(
+        "--as-of-date",
+        help="Optional single as-of date to rebuild incrementally without touching earlier classic trend rows.",
+    )
+
     derive_market_context = subparsers.add_parser(
         "derive-market-context",
         help="Refresh rolling team market-history and opponent-quality context tables for scheduled teams.",
@@ -9881,6 +10146,16 @@ def main() -> None:
                 print(f"Refreshed MLB rolling state snapshots through {args.through_date}")
             else:
                 print("Refreshed MLB rolling state snapshots for all loaded dates")
+            return
+
+        if args.command == "derive-hitter-classic-trends":
+            refresh_hitter_classic_trend_snapshots(conn, args.through_date, args.as_of_date)
+            if args.as_of_date:
+                print(f"Refreshed hitter classic last-10 trend snapshots for {args.as_of_date}")
+            elif args.through_date:
+                print(f"Refreshed hitter classic last-10 trend snapshots through {args.through_date}")
+            else:
+                print("Refreshed hitter classic last-10 trend snapshots for all loaded dates")
             return
 
         if args.command == "derive-market-context":

@@ -76,6 +76,8 @@ const main = () => {
   runPythonWarehouse('derive-first-inning-profiles', ['--as-of-date', options.date])
   // Keep rolling team and hitter pressure/state snapshots collecting automatically for regime research.
   runPythonWarehouse('derive-state-snapshots', ['--as-of-date', options.date])
+  // Keep classic last-10 hitter context collecting so we can test longer windows without changing live props yet.
+  runPythonWarehouse('derive-hitter-classic-trends', ['--as-of-date', options.date])
   // Warehouse rolling market memory and opponent-strength context without changing live picks until backtests clear it.
   runPythonWarehouse('derive-market-context', ['--as-of-date', options.date])
   // Track rolling hitter contact-quality windows so batter props can separate hot contact from lucky box scores.
