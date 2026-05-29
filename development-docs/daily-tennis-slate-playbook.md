@@ -50,6 +50,13 @@ If any row is missing the core hold/return/error context, mark it "data incomple
 
 ## Prediction-Market Trade Screen
 
+Hard promotion gate:
+
+- A row cannot be labeled `trade-to-sell` unless it has mapped Kalshi price-history context: same-favorite history, similar-entry history, or both.
+- If both same-favorite and similar-entry history are missing, label the row `data incomplete` or `pass`, even when raw model EV is positive.
+- A generic sportsbook weakness read is not a prediction-market thesis. Do not publish entry/exit targets from text-only analysis.
+- The match-detail page must show the exact history evidence used: prior selection, entry, max bid/trade, scoreline, and hit-2x/hit-30c result.
+
 The ideal trade-to-sell candidate:
 
 - Favorite is priced `85c+`.
@@ -89,6 +96,15 @@ Before a candidate becomes a trade row, inspect:
 - Max bid and max trade, not only final result.
 - Scoreline context behind the spike.
 
+Required output fields before promotion:
+
+- Current contract ticker and selection.
+- Entry ask and bid/ask spread.
+- Sell target and target-hit probability.
+- Same-favorite comp count.
+- Similar-entry comp count and hit rate.
+- Explicit downgrade note when same-favorite history is negative or absent.
+
 Interpretation:
 
 - Prior underdog won set 1 and spiked: useful, but requires current dog to have a real first-set path.
@@ -107,6 +123,17 @@ Every slate should label rows as one of these:
 - `data incomplete`: missing hold/return/error/replay/price history.
 
 Do not show `watch` rows in the same top list as `trade-to-sell` rows.
+
+## Site Value Section Rules
+
+The left-rail `Value` tab is a publishing surface, not a scratchpad. Before shipping it:
+
+- `PM trades` must count only rows whose effective spike tier is `trade`.
+- `PM watch`, `PM pass`, and `No history` must be counted separately.
+- The trade list must show entry, sell target, target-hit estimate, and `hist same-favorite/similar-entry` counts.
+- No-history rows must appear only as pass/downgrade notes, never in the trade-to-sell list.
+- The note at the top of the value card must say which gate/backtest is active for that slate.
+- If the detail page has no mapped Kalshi row, the value tab cannot promote that match as a PM trade.
 
 ## Position Sizing Rules
 
@@ -184,5 +211,6 @@ Each daily slate should produce:
 - Hard veto list with exact veto reason.
 - Best actual upset candidates, only if the upset-win model backtests positively.
 - Same-favorite Kalshi history for every promoted underdog.
+- A mapping miss list: every match with no Kalshi contract, no same-favorite history, or no similar-entry bucket.
 - Backtest summary by lane: all candidates, model-selected candidates, stricter threshold candidates.
 - Post-slate grade the next day.

@@ -8,7 +8,7 @@
 - `70+` confidence sides: `0/0` = `0.0%`
 - Market dogs: `0/0` = `0.0%`
 - Market favorites: `3/6` = `50.0%`
-- Top `8` settled props: `3/8` = `37.5%`
+- Top `8` settled props: `2/8` = `25.0%`
 
 ## What the slate actually was
 - `1/6` games were labeled `dead_bat_grind`
@@ -22,7 +22,7 @@ This was a dead-early, low-conversion slate. The board still spent too much ener
 | Game | Pick | FG | F5 | 1st | Conf | Edge | Path |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Angels @ Tigers | Detroit Tigers | Miss | Miss | Miss | 52 | 4.0 | balanced_path |
-| Twins @ White Sox | Chicago White Sox | Hit | Hit | Hit | 62 | 19.4 | jumped_early_hold |
+| Twins @ White Sox | Chicago White Sox | Hit | Hit | Hit | 63 | 19.4 | jumped_early_hold |
 | Braves @ Red Sox | Atlanta Braves | Hit | Miss | Hit | 62 | 6.6 | late_push |
 | Blue Jays @ Orioles | Toronto Blue Jays | Hit | Miss | Miss | 52 | 2.8 | balanced_path |
 | Cubs @ Pirates | Pittsburgh Pirates | Miss | Miss | Miss | 64 | 11.5 | dead_early_loss |
@@ -57,9 +57,9 @@ What those misses have in common:
 Overall settled tracked props by lane:
 | Prop type | Hits | Settled | Hit rate |
 | --- | --- | --- | --- |
-| pitcherStrikeouts | 4 | 8 | 50.0% |
-| singles | 1 | 3 | 33.3% |
-| totalBases | 3 | 10 | 30.0% |
+| pitcherStrikeouts | 4 | 9 | 44.4% |
+| singles | 1 | 4 | 25.0% |
+| totalBases | 3 | 13 | 23.1% |
 
 Top `8` settled props:
 | Rank | Player | Market | Hit | Actual |
@@ -67,15 +67,15 @@ Top `8` settled props:
 | 1 | Brandon Lowe | Over 1.5 total bases | Miss | 0.0 |
 | 2 | Munetaka Murakami | Over 1.5 total bases | Hit | 2.0 |
 | 3 | Gunnar Henderson | Over 1.5 total bases | Miss | 0.0 |
+| 3 | Wade Meckler | Over 1.5 total bases | Miss | 0.0 |
 | 4 | Dillon Dingler | Over 1.5 total bases | Miss | 0.0 |
 | 5 | Spencer Horwitz | Over 1.5 total bases | Miss | 0.0 |
 | 6 | Colt Keith | Over 0.5 singles | Miss | 0.0 |
 | 7 | Nathan Lukes | Over 0.5 singles | Hit | 1.0 |
-| 8 | Payton Tolle | Over 5.5 strikeouts | Hit | 7.0 |
 
 The ugly part is the concentration:
-- the most common top-`8` market was `Over 1.5 total bases` (`5/8`)
-- the top `8` settled props went `3/8`
+- the most common top-`8` market was `Over 1.5 total bases` (`6/8`)
+- the top `8` settled props went `2/8`
 - the model was effectively repeating the same fragile market with fake precision
 
 ## Research-only veto artifact

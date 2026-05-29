@@ -4363,6 +4363,34 @@ const buildMlbDecisionIndicators = ({
       opponentTop6HardHitTrend >= 2.5 ||
       opponentTop6SweetSpotTrend >= 2
     )
+  const pickLossButNotDeadFlag =
+    pickTeamState?.previousResult === 'loss' &&
+    Number(pickTeamState?.closeLossCountLast5 || 0) >= 1 &&
+    Number(pickTeamState?.blowoutLossCountLast5 || 0) === 0
+  const opponentLossButNotDeadFlag =
+    opponentTeamState?.previousResult === 'loss' &&
+    Number(opponentTeamState?.closeLossCountLast5 || 0) >= 1 &&
+    Number(opponentTeamState?.blowoutLossCountLast5 || 0) === 0
+  const pickSlumpingLoserFlag =
+    pickTeamState?.previousResult === 'loss' &&
+    Number(pickTeamState?.runDiffLast5 ?? 0) <= -2 &&
+    Number(pickTeamState?.blowoutLossCountLast5 || 0) >= 1
+  const opponentSlumpingLoserFlag =
+    opponentTeamState?.previousResult === 'loss' &&
+    Number(opponentTeamState?.runDiffLast5 ?? 0) <= -2 &&
+    Number(opponentTeamState?.blowoutLossCountLast5 || 0) >= 1
+  const pickHighSnapbackLowFormFlag =
+    pickTeamState?.previousResult === 'loss' &&
+    Number.isFinite(pickSnapbackPressure) &&
+    Number.isFinite(pickFormPressure) &&
+    pickSnapbackPressure >= 55 &&
+    pickFormPressure <= 45
+  const opponentHighSnapbackLowFormFlag =
+    opponentTeamState?.previousResult === 'loss' &&
+    Number.isFinite(opponentSnapbackPressure) &&
+    Number.isFinite(opponentFormPressure) &&
+    opponentSnapbackPressure >= 55 &&
+    opponentFormPressure <= 45
   const pickHeatRegressionTrapFlag =
     modelEdge >= 8 &&
     Number.isFinite(pickHeatRegression) &&
@@ -4454,6 +4482,48 @@ const buildMlbDecisionIndicators = ({
     confidenceDelta -= 3
     volatilityDelta += 4
     coinflipPressure += 8
+  }
+
+  if (opponentSlumpingLoserFlag) {
+    notes.push({
+      label: `${participants[loserIndex].name} are carrying a real slumping-loser profile, which supports attacking them only if the rest of the script agrees`,
+      delta: -2
+    })
+    confidenceDelta += 1
+  }
+
+  if (pickLossButNotDeadFlag) {
+    notes.push({
+      label: `${participants[winnerIndex].name} are coming off a competitive loss rather than a dead-bat stretch, so this side deserves more leash than a generic fade`,
+      delta: -1
+    })
+  }
+
+  if (opponentLossButNotDeadFlag) {
+    notes.push({
+      label: `${participants[loserIndex].name} are coming off a competitive loss, which makes the fade less clean than the paper edge suggests`,
+      delta: 3
+    })
+    confidenceDelta -= 2
+    volatilityDelta += 2
+  }
+
+  if (pickHighSnapbackLowFormFlag) {
+    notes.push({
+      label: `${participants[winnerIndex].name} have high snapback pressure but weak recent form under it, which is a real side-risk bucket`,
+      delta: 6
+    })
+    confidenceDelta -= 5
+    volatilityDelta += 5
+    coinflipPressure += 9
+  }
+
+  if (opponentHighSnapbackLowFormFlag) {
+    notes.push({
+      label: `${participants[loserIndex].name} have the classic high-snapback / low-form resistance shape, so this still carries chaos even if the full-game pick is right`,
+      delta: 3
+    })
+    volatilityDelta += 2
   }
 
   if (hitEdgeAgainstPick) {
@@ -4752,6 +4822,12 @@ const buildMlbDecisionIndicators = ({
     oppStreakDirection: opponentTeamState?.streakDirection || null,
     pickStreakLength: Number(pickTeamState?.streakLength || 0) || 0,
     oppStreakLength: Number(opponentTeamState?.streakLength || 0) || 0,
+    pickLossButNotDeadFlag,
+    oppLossButNotDeadFlag: opponentLossButNotDeadFlag,
+    pickSlumpingLoserFlag,
+    oppSlumpingLoserFlag: opponentSlumpingLoserFlag,
+    pickHighSnapbackLowFormFlag,
+    oppHighSnapbackLowFormFlag: opponentHighSnapbackLowFormFlag,
     pickRelieverCommandRisk: Number.isFinite(pickRelieverCommandRisk)
       ? roundToTenths(pickRelieverCommandRisk)
       : null,

@@ -2691,11 +2691,17 @@ function App() {
       .map((row: AnyRecord) => {
         const game = games.find((entry: AnyRecord) => kalshiCandidateMatchesGame(row, entry)) || null
         const occurrenceDate = row.occurrenceDatetime ? String(row.occurrenceDatetime).slice(0, 10) : ''
+        const sameFavoriteHistory = Array.isArray(row.kalshiPriceHistory?.sameFavorite) ? row.kalshiPriceHistory.sameFavorite : []
+        const similarEntryCount = Number(row.kalshiPriceHistory?.similarEntry?.n || 0)
         return {
           ...row,
           game,
           gameTitle: game?.title || row.boardTitle || row.title,
-          occurrenceDate
+          occurrenceDate,
+          effectiveTier: row.spikeModelTier || row.candidateTier || 'watch',
+          sameFavoriteHistoryCount: sameFavoriteHistory.length,
+          similarEntryHistoryCount: similarEntryCount,
+          hasKalshiHistory: sameFavoriteHistory.length > 0 || similarEntryCount > 0
         }
       })
       .filter((row: AnyRecord) => row.game && (!activeDayIsoDate || !row.occurrenceDate || row.occurrenceDate === activeDayIsoDate))
@@ -2725,6 +2731,10 @@ function App() {
         betGradeRows: rawBetGradeRows,
         validatedRows,
         kalshiTradeRows: activeKalshiTradeRows,
+        kalshiTradeCandidates: activeKalshiTradeRows.filter((row: AnyRecord) => row.effectiveTier === 'trade'),
+        kalshiWatchRows: activeKalshiTradeRows.filter((row: AnyRecord) => row.effectiveTier === 'watch'),
+        kalshiPassRows: activeKalshiTradeRows.filter((row: AnyRecord) => row.effectiveTier === 'pass'),
+        kalshiNoHistoryRows: activeKalshiTradeRows.filter((row: AnyRecord) => !row.hasKalshiHistory),
         rawPositiveRows: (summary.rawPositiveRows || []).map(attachGame).filter((row: AnyRecord) => row.game),
         thinRows: (summary.thinRows || []).map(attachGame).filter((row: AnyRecord) => row.game),
         negativeMlRows: (summary.negativeMlRows || []).map(attachGame).filter((row: AnyRecord) => row.game)
@@ -2777,13 +2787,19 @@ function App() {
       betGradeRows,
       validatedRows,
       kalshiTradeRows: activeKalshiTradeRows,
+      kalshiTradeCandidates: activeKalshiTradeRows.filter((row: AnyRecord) => row.effectiveTier === 'trade'),
+      kalshiWatchRows: activeKalshiTradeRows.filter((row: AnyRecord) => row.effectiveTier === 'watch'),
+      kalshiPassRows: activeKalshiTradeRows.filter((row: AnyRecord) => row.effectiveTier === 'pass'),
+      kalshiNoHistoryRows: activeKalshiTradeRows.filter((row: AnyRecord) => !row.hasKalshiHistory),
       rawPositiveRows,
       thinRows,
       negativeMlRows,
       note:
-        activeDayIsoDate === '2026-05-28'
-          ? 'May 28 is pre-match. May 27 backtest: ML value rows went 3-1 with +21.9% flat ROI; spreads went 1-3 and stay downgraded until the next settled pass.'
-          : 'EV is model probability against the posted price. A likely winner can still be a bad bet if the payout is too small.'
+        activeDayIsoDate === '2026-05-29'
+          ? 'May 29 uses the hardened PM gate: trade rows require mapped Kalshi history plus positive spike EV. No-history rows are forced to pass until a price-history comp exists.'
+          : activeDayIsoDate === '2026-05-28'
+            ? 'May 28 is pre-match. May 27 backtest: ML value rows went 3-1 with +21.9% flat ROI; spreads went 1-3 and stay downgraded until the next settled pass.'
+            : 'EV is model probability against the posted price. A likely winner can still be a bad bet if the payout is too small.'
     }
   }, [activeDay, activeDayIsoDate, activeKalshiTradeRows, games])
 
@@ -4330,6 +4346,18 @@ function App() {
     const kalshiTradeEvPct = Number(kalshiTradeCandidate?.spikeModelEvPctOfEntry25x ?? kalshiTradeCandidate?.tradeEvPctOfEntry ?? 0)
     const kalshiTradeEv = Number(kalshiTradeCandidate?.spikeModelEv25x ?? kalshiTradeCandidate?.tradeEvPerContract ?? 0)
     const kalshiTradeHitProbability = Number(kalshiTradeCandidate?.spikeModelProbability25x ?? kalshiTradeCandidate?.targetHitProbability ?? 0)
+    const kalshiPriceHistory = kalshiTradeCandidate?.kalshiPriceHistory || {}
+    const sameFavoriteHistory = Array.isArray(kalshiPriceHistory.sameFavorite) ? kalshiPriceHistory.sameFavorite : []
+    const similarEntryHistory = kalshiPriceHistory.similarEntry || {}
+    const hasSimilarEntryHistory = Number(similarEntryHistory.n || 0) > 0
+    const hasKalshiHistory = sameFavoriteHistory.length > 0 || hasSimilarEntryHistory
+    const kalshiEntryCents = Math.round(Number(kalshiTradeCandidate?.yesAsk || 0) * 100)
+    const kalshiTargetCents = Math.round(kalshiTradeTarget * 100)
+    const kalshiTradeSummary = kalshiTradeCandidate
+      ? `${kalshiTradeCandidate.selection}: ${kalshiEntryCents}c entry, ${kalshiTargetCents}c sell target, ${formatPercent(kalshiTradeHitProbability * 100, 0)} target-hit estimate.`
+      : tradePlan
+        ? 'No mapped Kalshi contract/history is attached to this match detail yet. Treat this lane as sportsbook context only.'
+        : ''
     return (
       <>
         {kalshiTradeCandidate ? (
@@ -4752,29 +4780,60 @@ function App() {
           <section className="detail-panel">
             <div className="detail-panel-header">
               <p className="eyebrow">Trade lane</p>
-              <span>{tradePlan.laneLabel}</span>
+              <span>
+                {kalshiTradeCandidate
+                  ? `${kalshiTradeTier || 'watch'} · Kalshi mapped`
+                  : 'No Kalshi history mapped'}
+              </span>
             </div>
-            <p className="react-section-copy">{tradePlan.summary}</p>
+            <p className="react-section-copy">{kalshiTradeSummary || tradePlan.summary}</p>
             <div className="react-card-grid">
               <article className="react-mini-panel">
-                <span className="eyebrow">Entry side</span>
-                <strong>{tradePlan.entrySideName}</strong>
+                <span className="eyebrow">Entry contract</span>
+                <strong>{kalshiTradeCandidate?.selection || tradePlan.entrySideName || 'Not mapped'}</strong>
                 <small>
-                  Market {tradePlan.entryPricePct ?? tradePlan.dogMarketPct}% vs {tradePlan.otherSideName || tradePlan.favoriteName}{' '}
-                  {tradePlan.otherSideMarketPct ?? tradePlan.favoriteMarketPct}%
+                  {kalshiTradeCandidate
+                    ? `${kalshiTradeCandidate.marketTicker || kalshiTradeCandidate.eventTicker || 'Kalshi ticker pending'}`
+                    : `Market ${tradePlan.entryPricePct ?? tradePlan.dogMarketPct ?? 'N/A'}% vs ${tradePlan.otherSideName || tradePlan.favoriteName || 'other side'} ${tradePlan.otherSideMarketPct ?? tradePlan.favoriteMarketPct ?? 'N/A'}%`}
                 </small>
               </article>
               <article className="react-mini-panel">
-                <span className="eyebrow">Trigger</span>
-                <strong>{tradePlan.laneLabel}</strong>
-                <small>{tradePlan.trigger}</small>
+                <span className="eyebrow">Entry / exit</span>
+                <strong>
+                  {kalshiTradeCandidate ? `${kalshiEntryCents}c → ${kalshiTargetCents}c` : tradePlan.laneLabel}
+                </strong>
+                <small>
+                  {kalshiTradeCandidate
+                    ? `${formatSignedNumber(kalshiTradeEvPct * 100, 0)}% EV/entry · ${formatSignedNumber(kalshiTradeEv * 100, 1)}c EV/contract`
+                    : tradePlan.trigger}
+                </small>
               </article>
               <article className="react-mini-panel">
-                <span className="eyebrow">Exit map</span>
-                <strong>{tradePlan.headline}</strong>
-                <small>{tradePlan.exit}</small>
+                <span className="eyebrow">History check</span>
+                <strong>
+                  {hasKalshiHistory
+                    ? `${sameFavoriteHistory.length} same favorite · ${Number(similarEntryHistory.n || 0)} similar entry`
+                    : 'No historical line rows'}
+                </strong>
+                <small>
+                  {hasSimilarEntryHistory
+                    ? `${formatPercent(Number(similarEntryHistory.hit_2x || 0) * 100, 0)} hit 2x · avg max ${Math.round(Number(similarEntryHistory.avg_max_bid || 0) * 100)}c`
+                    : sameFavoriteHistory[0]
+                      ? `${sameFavoriteHistory[0].selection} ${Math.round(Number(sameFavoriteHistory[0].entry || 0) * 100)}c→${Math.round(Number(sameFavoriteHistory[0].maxBid || 0) * 100)}c`
+                      : 'Do not force a trade without a mapped price-history comp.'}
+                </small>
               </article>
             </div>
+            {sameFavoriteHistory.length ? (
+              <div className="tennis-trade-summary-row">
+                {sameFavoriteHistory.slice(0, 3).map((row: AnyRecord) => (
+                  <span key={`${game.id}-same-favorite-${row.matchId || row.selection}`}>
+                    {row.selection}: {Math.round(Number(row.entry || 0) * 100)}c→{Math.round(Number(row.maxBid || 0) * 100)}c ·{' '}
+                    {row.scoreline || row.match || 'prior comp'}
+                  </span>
+                ))}
+              </div>
+            ) : null}
           </section>
         ) : null}
 
@@ -5183,7 +5242,10 @@ function App() {
                     <p>{tennisValueSummary.note}</p>
                     <div className="tennis-value-pill-row">
                       <span>Validated {tennisValueSummary.validatedRows?.length || 0}</span>
-                      <span>PM trades {tennisValueSummary.kalshiTradeRows?.length || 0}</span>
+                      <span>PM trades {tennisValueSummary.kalshiTradeCandidates?.length || 0}</span>
+                      <span>PM watch {tennisValueSummary.kalshiWatchRows?.length || 0}</span>
+                      <span>PM pass {tennisValueSummary.kalshiPassRows?.length || 0}</span>
+                      <span>No history {tennisValueSummary.kalshiNoHistoryRows?.length || 0}</span>
                       <span>Watch EV {tennisValueSummary.rawPositiveRows?.length || 0}</span>
                       <span>Thin {tennisValueSummary.countByGrade['Thin value'] || 0}</span>
                       <span>Negative EV {tennisValueSummary.countByGrade['Negative EV'] || 0}</span>
@@ -5212,15 +5274,14 @@ function App() {
                       </div>
                     ) : (
                       <p className="tennis-value-warning">
-                        No blind-bet values pass validation. Raw EV rows are still useful for watchlist/live-entry work, but
-                        spreads and totals are downgraded until the next settled backtest supports them.
+                        No blind-bet sportsbook values pass validation. PM rows below are separate trade-to-sell candidates;
+                        rows without mapped Kalshi history are pass-only and should not be sized from generic matchup text.
                       </p>
                     )}
-                    {tennisValueSummary.kalshiTradeRows?.some((row: AnyRecord) => row.spikeModelTier === 'trade' || row.candidateTier === 'trade') ? (
+                    {tennisValueSummary.kalshiTradeCandidates?.length ? (
                       <div className="tennis-value-list tennis-trade-list">
                         <div className="tennis-value-section-label">Prediction market trade-to-sell</div>
-                        {tennisValueSummary.kalshiTradeRows
-                          .filter((row: AnyRecord) => row.spikeModelTier === 'trade' || row.candidateTier === 'trade')
+                        {tennisValueSummary.kalshiTradeCandidates
                           .slice(0, 6)
                           .map((row: AnyRecord) => (
                           <button
@@ -5232,7 +5293,7 @@ function App() {
                             <span>
                               <strong>{row.selection} {Math.round(Number(row.yesAsk || 0) * 100)}c</strong>
                               <small>
-                                Target {Math.round(Number(row.spikeModelTarget25x ?? row.projectedExit ?? 0) * 100)}c · {row.gameTitle}
+                                Target {Math.round(Number(row.spikeModelTarget25x ?? row.projectedExit ?? 0) * 100)}c · hist {row.sameFavoriteHistoryCount}/{row.similarEntryHistoryCount} · {row.gameTitle}
                               </small>
                             </span>
                             <span>
@@ -5245,11 +5306,10 @@ function App() {
                         ))}
                       </div>
                     ) : null}
-                    {tennisValueSummary.kalshiTradeRows?.some((row: AnyRecord) => row.spikeModelTier === 'watch' || row.candidateTier === 'watch') ? (
+                    {tennisValueSummary.kalshiWatchRows?.length ? (
                       <div className="tennis-value-list tennis-trade-list">
                         <div className="tennis-value-section-label">Prediction market watchlist</div>
-                        {tennisValueSummary.kalshiTradeRows
-                          .filter((row: AnyRecord) => row.spikeModelTier === 'watch' || row.candidateTier === 'watch')
+                        {tennisValueSummary.kalshiWatchRows
                           .slice(0, 4)
                           .map((row: AnyRecord) => (
                           <button
@@ -5261,7 +5321,7 @@ function App() {
                             <span>
                               <strong>{row.selection} {Math.round(Number(row.yesAsk || 0) * 100)}c</strong>
                               <small>
-                                Watch target {Math.round(Number(row.spikeModelTarget25x ?? row.projectedExit ?? 0) * 100)}c · {row.gameTitle}
+                                Watch target {Math.round(Number(row.spikeModelTarget25x ?? row.projectedExit ?? 0) * 100)}c · hist {row.sameFavoriteHistoryCount}/{row.similarEntryHistoryCount} · {row.gameTitle}
                               </small>
                             </span>
                             <span>
@@ -5271,6 +5331,11 @@ function App() {
                           </button>
                         ))}
                       </div>
+                    ) : null}
+                    {tennisValueSummary.kalshiNoHistoryRows?.length ? (
+                      <small className="tennis-value-warning">
+                        No-history PM pass: {tennisValueSummary.kalshiNoHistoryRows.slice(0, 4).map((row: AnyRecord) => row.selection).join(' · ')}
+                      </small>
                     ) : null}
                     {tennisValueSummary.negativeMlRows.length ? (
                       <small className="tennis-value-warning">

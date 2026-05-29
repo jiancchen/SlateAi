@@ -391,9 +391,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +106 / +1.5 -125",
-    "total": "o9.5 -105 / u9.5 -110",
-    "moneyline": "Braves -146 / Reds +130",
+    "spread": "-1.5 +112 / +1.5 -125",
+    "total": "o9.5 even / u9.5 -110",
+    "moneyline": "Braves -138 / Reds +120",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/braves-vs-reds",
     "tierTwoContext": {
@@ -2003,9 +2003,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +145 / +1.5 -170",
-    "total": "o9 -105 / u9 -110",
-    "moneyline": "Padres -110 / Nationals -102",
+    "spread": "+1.5 -200 / +1.5 -185",
+    "total": "o9 -124 / u9.5 -115",
+    "moneyline": "Padres even / Nationals -110",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/padres-vs-nationals",
     "tierTwoContext": {
@@ -3668,8 +3668,8 @@ export const rawGames = [
         "workloadLabel": "Unknown leash"
       }
     },
-    "spread": "+1.5 -170 / -1.5 +160",
-    "total": "o8 -110 / u8 -110",
+    "spread": "+1.5 -180 / -1.5 +158",
+    "total": "o8 -110 / u8.5 -121",
     "moneyline": "Twins +115 / Pirates -134",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/twins-vs-pirates",
@@ -5099,182 +5099,51 @@ export const rawGames = [
     "start": "4:05 PM PT",
     "startMinutes": 965,
     "awayPitcher": {
-      "id": 656302,
-      "fullName": "Dylan Cease",
-      "pitchHand": "R",
-      "wins": 3,
-      "losses": 3,
-      "era": "3.05",
-      "strikeOuts": 92,
-      "inningsPitched": "62.0",
-      "hitsAllowed": 49,
-      "walks": 26,
-      "homeRunsAllowed": 5,
-      "whip": "1.21",
-      "gamesStarted": 11,
-      "probableSource": "rtsports-fallback",
+      "id": 671936,
+      "fullName": "Adam Macko",
+      "pitchHand": "L",
+      "wins": 1,
+      "losses": 0,
+      "era": "0.00",
+      "strikeOuts": 4,
+      "inningsPitched": "4.1",
+      "hitsAllowed": 4,
+      "walks": 0,
+      "homeRunsAllowed": 0,
+      "whip": "0.92",
+      "gamesStarted": 0,
+      "probableSource": "mlb-api",
       "savant": {
-        "playerId": 656302,
-        "playerUrl": "https://baseballsavant.mlb.com/savant-player/dylan-cease-656302",
+        "playerId": 671936,
+        "playerUrl": "https://baseballsavant.mlb.com/savant-player/adam-macko-671936",
         "statsSuffix": "r-pitching-mlb",
         "season": 2026,
         "statsUrls": {
-          "statcast": "https://baseballsavant.mlb.com/savant-player/dylan-cease-656302?stats=statcast-r-pitching-mlb&season=2026",
-          "splits": "https://baseballsavant.mlb.com/savant-player/dylan-cease-656302?stats=splits-r-pitching-mlb&season=2026",
-          "gamelogs": "https://baseballsavant.mlb.com/savant-player/dylan-cease-656302?stats=gamelogs-r-pitching-mlb&season=2026"
+          "statcast": "https://baseballsavant.mlb.com/savant-player/adam-macko-671936?stats=statcast-r-pitching-mlb&season=2026",
+          "splits": "https://baseballsavant.mlb.com/savant-player/adam-macko-671936?stats=splits-r-pitching-mlb&season=2026",
+          "gamelogs": "https://baseballsavant.mlb.com/savant-player/adam-macko-671936?stats=gamelogs-r-pitching-mlb&season=2026"
         }
       },
-      "startHistoryLast5": [
-        {
-          "gamePk": 822813,
-          "date": "2026-05-24",
-          "venueRole": "home",
-          "venueName": "Rogers Centre",
-          "teamName": "Blue Jays",
-          "opponentName": "Pirates",
-          "pitcherName": "Dylan Cease",
-          "pitchHand": "",
-          "inningsPitched": 4.7,
-          "inningsPitchedLabel": "4.2",
-          "outsRecorded": 14,
-          "runsAllowed": 2,
-          "earnedRuns": 2,
-          "hitsAllowed": 4,
-          "walksAllowed": 1,
-          "strikeouts": 8,
-          "homeRunsAllowed": 2,
-          "pitchesThrown": 76,
-          "teamRuns": 1,
-          "opponentRuns": 4,
-          "teamResult": "L",
-          "qualityStart": false,
-          "firstInningRunsAllowed": 1,
-          "firstInningOutcome": "RFI"
-        },
-        {
-          "gamePk": 823548,
-          "date": "2026-05-19",
-          "venueRole": "road",
-          "venueName": "Yankee Stadium",
-          "teamName": "Blue Jays",
-          "opponentName": "Yankees",
-          "pitcherName": "Dylan Cease",
-          "pitchHand": "",
-          "inningsPitched": 5,
-          "inningsPitchedLabel": "5.0",
-          "outsRecorded": 15,
-          "runsAllowed": 5,
-          "earnedRuns": 5,
-          "hitsAllowed": 4,
-          "walksAllowed": 4,
-          "strikeouts": 9,
-          "homeRunsAllowed": 2,
-          "pitchesThrown": 100,
-          "teamRuns": 4,
-          "opponentRuns": 5,
-          "teamResult": "L",
-          "qualityStart": false,
-          "firstInningRunsAllowed": 0,
-          "firstInningOutcome": "NRFI"
-        },
-        {
-          "gamePk": 822815,
-          "date": "2026-05-13",
-          "venueRole": "home",
-          "venueName": "Rogers Centre",
-          "teamName": "Blue Jays",
-          "opponentName": "Rays",
-          "pitcherName": "Dylan Cease",
-          "pitchHand": "",
-          "inningsPitched": 7,
-          "inningsPitchedLabel": "7.0",
-          "outsRecorded": 21,
-          "runsAllowed": 1,
-          "earnedRuns": 1,
-          "hitsAllowed": 3,
-          "walksAllowed": 3,
-          "strikeouts": 9,
-          "homeRunsAllowed": 0,
-          "pitchesThrown": 99,
-          "teamRuns": 5,
-          "opponentRuns": 3,
-          "teamResult": "W",
-          "qualityStart": true,
-          "firstInningRunsAllowed": 0,
-          "firstInningOutcome": "NRFI"
-        },
-        {
-          "gamePk": 822822,
-          "date": "2026-05-08",
-          "venueRole": "home",
-          "venueName": "Rogers Centre",
-          "teamName": "Blue Jays",
-          "opponentName": "Angels",
-          "pitcherName": "Dylan Cease",
-          "pitchHand": "",
-          "inningsPitched": 7,
-          "inningsPitchedLabel": "7.0",
-          "outsRecorded": 21,
-          "runsAllowed": 0,
-          "earnedRuns": 0,
-          "hitsAllowed": 5,
-          "walksAllowed": 0,
-          "strikeouts": 10,
-          "homeRunsAllowed": 0,
-          "pitchesThrown": 97,
-          "teamRuns": 2,
-          "opponentRuns": 0,
-          "teamResult": "W",
-          "qualityStart": true,
-          "firstInningRunsAllowed": 0,
-          "firstInningOutcome": "NRFI"
-        },
-        {
-          "gamePk": 823715,
-          "date": "2026-05-02",
-          "venueRole": "road",
-          "venueName": "Target Field",
-          "teamName": "Blue Jays",
-          "opponentName": "Twins",
-          "pitcherName": "Dylan Cease",
-          "pitchHand": "",
-          "inningsPitched": 7,
-          "inningsPitchedLabel": "7.0",
-          "outsRecorded": 21,
-          "runsAllowed": 4,
-          "earnedRuns": 3,
-          "hitsAllowed": 7,
-          "walksAllowed": 1,
-          "strikeouts": 7,
-          "homeRunsAllowed": 1,
-          "pitchesThrown": 106,
-          "teamRuns": 11,
-          "opponentRuns": 4,
-          "teamResult": "W",
-          "qualityStart": true,
-          "firstInningRunsAllowed": 1,
-          "firstInningOutcome": "RFI"
-        }
-      ],
+      "startHistoryLast5": [],
       "opponentHistoryThisSeason": [],
       "strikeoutMarket": null,
       "recentForm": null,
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
-        "expectedInnings": 5.64,
-        "daysSinceLastStart": 5,
-        "startsLoaded": 11,
+        "status": "debut-window",
+        "label": "Debut / opener watch",
+        "note": "No MLB starts are loaded yet, so this looks like a debut, opener, or fresh call-up lane with very little reliable innings history.",
+        "expectedInnings": 0,
+        "daysSinceLastStart": null,
+        "startsLoaded": 0,
         "shortLeashRisk": 0,
-        "durableRate": 0.36,
+        "durableRate": 0,
         "leashScore": null,
         "leashVolatility": null,
         "recent3OutsDelta": null,
         "fivePlusInningRate": null,
         "sixPlusInningRate": null,
         "ninetyPitchRate": null,
-        "workloadLabel": "5-inning lane"
+        "workloadLabel": "Unknown leash"
       }
     },
     "homePitcher": {
@@ -5436,7 +5305,12 @@ export const rawGames = [
         }
       ],
       "opponentHistoryThisSeason": [],
-      "strikeoutMarket": null,
+      "strikeoutMarket": {
+        "playerName": "Trevor Rogers",
+        "line": 4.5,
+        "overPrice": 110,
+        "underPrice": -134
+      },
       "recentForm": null,
       "usageContext": {
         "status": "season-only",
@@ -5456,8 +5330,8 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +168 / +1.5 -178",
-    "total": "o8.5 -110 / u8.5 -105",
+    "spread": "+1.5 -210 / +1.5 -183",
+    "total": "o8.5 -118 / u9 -115",
     "moneyline": "Blue Jays even / Orioles -115",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/blue-jays-vs-orioles",
@@ -5772,20 +5646,7 @@ export const rawGames = [
         }
       },
       "firstInningPitcher": {
-        "away": {
-          "pitcherName": "Dylan Cease",
-          "windowStarts": 5,
-          "startsSample": 5,
-          "firstBatterReachRate": 0.6,
-          "firstInningRunAllowedRate": 0.4,
-          "firstInningRunsAllowedPerStart": 0.4,
-          "firstInningMultiRunAllowedRate": 0,
-          "firstInningBaserunnersPerStart": 0.8,
-          "firstInningWalkRate": 0.2,
-          "firstInningHomeRunRate": 0.4,
-          "firstInningCleanRate": 0.6,
-          "firstInningPressureIndex": 50
-        },
+        "away": null,
         "home": {
           "pitcherName": "Trevor Rogers",
           "windowStarts": 5,
@@ -5802,16 +5663,7 @@ export const rawGames = [
         }
       },
       "firstInningPitcherSeason": {
-        "away": {
-          "pitcherName": "Dylan Cease",
-          "startsSample": 11,
-          "firstInningRunsAllowedTotal": 4,
-          "firstInningRunGames": 4,
-          "firstInningWalkGames": 3,
-          "firstInningHomeRunGames": 2,
-          "firstInningRunsAllowedPerStart": 0.36,
-          "firstInningRunGameRate": 0.36
-        },
+        "away": null,
         "home": {
           "pitcherName": "Trevor Rogers",
           "startsSample": 9,
@@ -5825,16 +5677,16 @@ export const rawGames = [
       },
       "pitcherWar": {
         "away": {
-          "pitcherName": "Dylan Cease",
+          "pitcherName": "Adam Macko",
           "currentSeason": 2026,
           "previousSeason": 2025,
-          "currentSeasonWar": 1.69,
-          "previousSeasonWar": 1.02,
-          "currentSeasonGames": 11,
-          "previousSeasonGames": 32,
-          "currentSeasonGamesStarted": 11,
-          "previousSeasonGamesStarted": 32,
-          "warDelta": 0.67
+          "currentSeasonWar": 0.24,
+          "previousSeasonWar": null,
+          "currentSeasonGames": 6,
+          "previousSeasonGames": null,
+          "currentSeasonGamesStarted": 0,
+          "previousSeasonGamesStarted": null,
+          "warDelta": 0.24
         },
         "home": {
           "pitcherName": "Trevor Rogers",
@@ -5851,7 +5703,12 @@ export const rawGames = [
       },
       "pitcherStrikeoutMarket": {
         "away": null,
-        "home": null
+        "home": {
+          "playerName": "Trevor Rogers",
+          "line": 4.5,
+          "overPrice": 110,
+          "underPrice": -134
+        }
       },
       "seriesEarlyPhase": {
         "away": {
@@ -7469,9 +7326,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -137 / -1.5 +123",
-    "total": "o8 -110 / u8 -109",
-    "moneyline": "Angels +152 / Rays -174",
+    "spread": "+1.5 -150 / -1.5 +130",
+    "total": "o8 -110 / u8 -110",
+    "moneyline": "Angels +148 / Rays -162",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/angels-vs-rays",
     "tierTwoContext": {
@@ -9336,7 +9193,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "Freddy Peralta",
         "line": 5.5,
-        "overPrice": -150,
+        "overPrice": -134,
         "underPrice": 122
       },
       "recentForm": null,
@@ -9358,9 +9215,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -210 / +1.5 -202",
-    "total": "o7 -120 / u7.5 -120",
-    "moneyline": "Marlins +106 / Mets -120",
+    "spread": "+1.5 -220 / +1.5 -186",
+    "total": "o7 -120 / u7.5 -118",
+    "moneyline": "Marlins -102 / Mets -110",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/marlins-vs-mets",
     "tierTwoContext": {
@@ -9761,7 +9618,7 @@ export const rawGames = [
         "home": {
           "playerName": "Freddy Peralta",
           "line": 5.5,
-          "overPrice": -150,
+          "overPrice": -134,
           "underPrice": 122
         }
       },
@@ -11549,7 +11406,7 @@ export const rawGames = [
         "playerName": "Slade Cecconi",
         "line": 4.5,
         "overPrice": 116,
-        "underPrice": -142
+        "underPrice": -140
       },
       "recentForm": null,
       "usageContext": {
@@ -11570,9 +11427,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -210 / +1.5 -195",
+    "spread": "+1.5 -190 / -1.5 +175",
     "total": "o8 -105 / u8 -112",
-    "moneyline": "Red Sox +104 / Guardians -120",
+    "moneyline": "Red Sox +110 / Guardians -124",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/red-sox-vs-guardians",
     "tierTwoContext": {
@@ -11947,7 +11804,7 @@ export const rawGames = [
           "playerName": "Slade Cecconi",
           "line": 4.5,
           "overPrice": 116,
-          "underPrice": -142
+          "underPrice": -140
         }
       },
       "seriesEarlyPhase": {
@@ -13162,7 +13019,12 @@ export const rawGames = [
         }
       ],
       "opponentHistoryThisSeason": [],
-      "strikeoutMarket": null,
+      "strikeoutMarket": {
+        "playerName": "Shota Imanaga",
+        "line": 5.5,
+        "overPrice": 116,
+        "underPrice": -154
+      },
       "recentForm": null,
       "usageContext": {
         "status": "season-only",
@@ -13341,7 +13203,12 @@ export const rawGames = [
         }
       ],
       "opponentHistoryThisSeason": [],
-      "strikeoutMarket": null,
+      "strikeoutMarket": {
+        "playerName": "Andre Pallante",
+        "line": 3.5,
+        "overPrice": -122,
+        "underPrice": 100
+      },
       "recentForm": null,
       "usageContext": {
         "status": "season-only",
@@ -13361,9 +13228,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +125 / +1.5 -140",
-    "total": "o8 -108 / u8 -110",
-    "moneyline": "Cubs -136 / Cardinals +123",
+    "spread": "-1.5 +135 / +1.5 -155",
+    "total": "o7.5 -115 / u8 -115",
+    "moneyline": "Cubs -130 / Cardinals +110",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/cubs-vs-cardinals",
     "tierTwoContext": {
@@ -13755,8 +13622,18 @@ export const rawGames = [
         }
       },
       "pitcherStrikeoutMarket": {
-        "away": null,
-        "home": null
+        "away": {
+          "playerName": "Shota Imanaga",
+          "line": 5.5,
+          "overPrice": 116,
+          "underPrice": -154
+        },
+        "home": {
+          "playerName": "Andre Pallante",
+          "line": 3.5,
+          "overPrice": -122,
+          "underPrice": 100
+        }
       },
       "seriesEarlyPhase": {
         "away": null,
@@ -15083,9 +14960,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +140 / +1.5 -160",
-    "total": "o8.5 even / u8.5 -115",
-    "moneyline": "Tigers -118 / White Sox +106",
+    "spread": "-1.5 +145 / +1.5 -167",
+    "total": "o8.5 -114 / u8.5 even",
+    "moneyline": "Tigers -115 / White Sox +102",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/tigers-vs-white-sox",
     "tierTwoContext": {
@@ -16687,7 +16564,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "Stephen Kolek",
         "line": 3.5,
-        "overPrice": -140,
+        "overPrice": -138,
         "underPrice": 114
       },
       "recentForm": null,
@@ -16871,7 +16748,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "MacKenzie Gore",
         "line": 5.5,
-        "overPrice": -104,
+        "overPrice": -102,
         "underPrice": -118
       },
       "recentForm": null,
@@ -16893,8 +16770,8 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -195 / -1.5 +175",
-    "total": "o7.5 even / u7.5 -105",
+    "spread": "+1.5 -195 / -1.5 +170",
+    "total": "o7.5 even / u7.5 -115",
     "moneyline": "Royals +110 / Rangers -125",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/royals-vs-rangers",
@@ -17290,13 +17167,13 @@ export const rawGames = [
         "away": {
           "playerName": "Stephen Kolek",
           "line": 3.5,
-          "overPrice": -140,
+          "overPrice": -138,
           "underPrice": 114
         },
         "home": {
           "playerName": "MacKenzie Gore",
           "line": 5.5,
-          "overPrice": -104,
+          "overPrice": -102,
           "underPrice": -118
         }
       },
@@ -18438,7 +18315,7 @@ export const rawGames = [
         "playerName": "Coleman Crow",
         "line": 3.5,
         "overPrice": -144,
-        "underPrice": 118
+        "underPrice": 124
       },
       "recentForm": null,
       "usageContext": {
@@ -18618,7 +18495,7 @@ export const rawGames = [
       }
     },
     "spread": "-1.5 +140 / +1.5 -162",
-    "total": "o8 -120 / u8.5 -114",
+    "total": "o8 -118 / u8.5 -114",
     "moneyline": "Brewers -118 / Astros +101",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/brewers-vs-astros",
@@ -19015,7 +18892,7 @@ export const rawGames = [
           "playerName": "Coleman Crow",
           "line": 3.5,
           "overPrice": -144,
-          "underPrice": 118
+          "underPrice": 124
         },
         "home": {
           "playerName": "Kai-Wei Teng",
@@ -20440,9 +20317,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 -105 / +1.5 -109",
-    "total": "o10.5 -115 / u10.5 -103",
-    "moneyline": "Giants -166 / Rockies +145",
+    "spread": "-1.5 +101 / +1.5 -120",
+    "total": "o10.5 -115 / u10.5 even",
+    "moneyline": "Giants -150 / Rockies +132",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/giants-vs-rockies",
     "tierTwoContext": {
@@ -22005,7 +21882,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "Carlos Rodon",
         "line": 6.5,
-        "overPrice": 116,
+        "overPrice": 118,
         "underPrice": -142
       },
       "recentForm": null,
@@ -22238,9 +22115,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +106 / +1.5 -122",
-    "total": "o10 -110 / u10 -110",
-    "moneyline": "Yankees -148 / Athletics +130",
+    "spread": "-1.5 +120 / +1.5 -134",
+    "total": "o9.5 -107 / u9.5 -110",
+    "moneyline": "Yankees -140 / Athletics +120",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/yankees-vs-athletics",
     "tierTwoContext": {
@@ -22635,7 +22512,7 @@ export const rawGames = [
         "away": {
           "playerName": "Carlos Rodon",
           "line": 6.5,
-          "overPrice": 116,
+          "overPrice": 118,
           "underPrice": -142
         },
         "home": {
@@ -24539,7 +24416,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "George Kirby",
         "line": 5.5,
-        "overPrice": 104,
+        "overPrice": 108,
         "underPrice": -128
       },
       "recentForm": null,
@@ -24561,9 +24438,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -166 / -1.5 +145",
-    "total": "o7 -110 / u7.5 -124",
-    "moneyline": "Diamondbacks +134 / Mariners -150",
+    "spread": "+1.5 -185 / -1.5 +158",
+    "total": "o7 -119 / u7.5 -124",
+    "moneyline": "Diamondbacks +122 / Mariners -137",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/diamondbacks-vs-mariners",
     "tierTwoContext": {
@@ -24959,7 +24836,7 @@ export const rawGames = [
         "home": {
           "playerName": "George Kirby",
           "line": 5.5,
-          "overPrice": 104,
+          "overPrice": 108,
           "underPrice": -128
         }
       },
@@ -26357,7 +26234,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "Justin Wrobleski",
         "line": 4.5,
-        "overPrice": -122,
+        "overPrice": -115,
         "underPrice": 100
       },
       "recentForm": null,
@@ -26379,9 +26256,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -205 / +1.5 -189",
-    "total": "o8 -110 / u8.5 -120",
-    "moneyline": "Phillies +104 / Dodgers -115",
+    "spread": "+1.5 -205 / +1.5 -191",
+    "total": "o8 -115 / u8 -105",
+    "moneyline": "Phillies +102 / Dodgers -118",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/phillies-vs-dodgers",
     "tierTwoContext": {
@@ -26777,7 +26654,7 @@ export const rawGames = [
         "home": {
           "playerName": "Justin Wrobleski",
           "line": 4.5,
-          "overPrice": -122,
+          "overPrice": -115,
           "underPrice": 100
         }
       },

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-29T10:28:39.548Z",
+  "generatedAt": "2026-05-29T14:57:12.449Z",
   "predictionDate": "2026-05-28",
   "picks": [
     {
@@ -37,7 +37,7 @@
       "gameTitle": "Twins @ White Sox",
       "predictedTeam": "White Sox",
       "predictedSide": "home",
-      "confidence": 62,
+      "confidence": 63,
       "modelEdge": 19.4,
       "marketProbability": 0.5,
       "marketProbabilityLabel": "50.0%",

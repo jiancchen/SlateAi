@@ -1,7 +1,7 @@
 {
   "meta": {
     "date": "2026-05-29",
-    "snapshot": "2026-05-29T11:49:33.616Z",
+    "snapshot": "2026-05-29T17:59:43.201Z",
     "recentWindow": {
       "start": "2026-05-22",
       "end": "2026-05-28"
@@ -14,7 +14,7 @@
     "braves-reds": {
       "gameId": "braves-reds",
       "title": "Braves @ Reds",
-      "snapshot": "2026-05-29T11:49:33.602Z",
+      "snapshot": "2026-05-29T17:59:43.188Z",
       "status": {
         "away": "partial",
         "home": "partial"
@@ -29,7 +29,7 @@
         "label": "79°F | Wind 3 mph In | 0% precip"
       },
       "marketWeatherContext": {
-        "line": "ATL -151",
+        "line": "ATL -141",
         "total": "9.5 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -2895,22 +2895,22 @@
     "padres-nationals": {
       "gameId": "padres-nationals",
       "title": "Padres @ Nationals",
-      "snapshot": "2026-05-29T11:49:33.603Z",
+      "snapshot": "2026-05-29T17:59:43.189Z",
       "status": {
         "away": "partial",
         "home": "partial"
       },
       "weather": {
         "icon": "clear-day",
-        "summary": "0% 78° Wind 8 mph",
+        "summary": "0% 77° Wind 8 mph",
         "precipitationPct": 0,
-        "temperatureF": 78,
+        "temperatureF": 77,
         "windMph": null,
         "windDirection": "",
-        "label": "78°F | 0% precip"
+        "label": "77°F | 0% precip"
       },
       "marketWeatherContext": {
-        "line": "SD -113",
+        "line": "WSH -115",
         "total": "9.0 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -5737,7 +5737,7 @@
     "twins-pirates": {
       "gameId": "twins-pirates",
       "title": "Twins @ Pirates",
-      "snapshot": "2026-05-29T11:49:33.605Z",
+      "snapshot": "2026-05-29T17:59:43.190Z",
       "status": {
         "away": "partial",
         "home": "partial"
@@ -5752,7 +5752,7 @@
         "label": "76°F | Wind 10 mph Out | 0% precip"
       },
       "marketWeatherContext": {
-        "line": "PIT -137",
+        "line": "PIT -138",
         "total": "8.0 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -8604,7 +8604,7 @@
     "blue-jays-orioles": {
       "gameId": "blue-jays-orioles",
       "title": "Blue Jays @ Orioles",
-      "snapshot": "2026-05-29T11:49:33.606Z",
+      "snapshot": "2026-05-29T17:59:43.191Z",
       "status": {
         "away": "partial",
         "home": "partial"
@@ -8620,7 +8620,7 @@
       },
       "marketWeatherContext": {
         "line": "BAL -116",
-        "total": "8.5 Runs",
+        "total": "9.0 Runs",
         "source": "RotoWire daily lineups + weather"
       },
       "away": {
@@ -9938,11 +9938,11 @@
         "teamName": "Orioles",
         "lineupSource": "rotowire-supplement",
         "opposingStarter": {
-          "id": 656302,
-          "name": "Dylan Cease",
-          "hand": "R",
-          "type": "Volatile bat-misser",
-          "pitchMixSummary": "4-Seam Fastball 35% / Slider 29% / Changeup 11%"
+          "id": 671936,
+          "name": "Adam Macko",
+          "hand": "L",
+          "type": "Unknown sample",
+          "pitchMixSummary": "Slider 40% / 4-Seam Fastball 36% / Changeup 13%"
         },
         "opposingRelievers": [
           {
@@ -10021,67 +10021,67 @@
               "totalBasesRate": 0.22579999999999997
             },
             "split": {
-              "hits": 39,
-              "singles": 26,
-              "doubles": 12,
+              "hits": 13,
+              "singles": 9,
+              "doubles": 3,
               "triples": 0,
               "homeRuns": 1,
-              "walks": 33,
-              "totalBases": 54,
-              "atBats": 151,
-              "plateAppearances": 186,
-              "avg": 0.258,
-              "obp": 0.392,
-              "slg": 0.358,
-              "ops": 0.75,
-              "hitRate": 0.2097,
-              "singlesRate": 0.1398,
-              "hrRate": 0.0054,
-              "walkRate": 0.17739999999999997,
-              "totalBasesRate": 0.2903
+              "walks": 16,
+              "totalBases": 19,
+              "atBats": 52,
+              "plateAppearances": 69,
+              "avg": 0.25,
+              "obp": 0.42,
+              "slg": 0.365,
+              "ops": 0.786,
+              "hitRate": 0.1884,
+              "singlesRate": 0.1304,
+              "hrRate": 0.014499999999999999,
+              "walkRate": 0.23190000000000002,
+              "totalBasesRate": 0.2754
             },
             "metrics": {
-              "powerScore": 26.6,
-              "contactScore": 56.1,
+              "powerScore": 30.4,
+              "contactScore": 55.4,
               "patienceScore": 90.2,
               "formScore": 18,
-              "splitScore": 46.7,
-              "varianceScore": 78.8,
-              "pitchTypeFitScore": 53.2,
-              "pitchTypeGrade": -1.46,
+              "splitScore": 58.8,
+              "varianceScore": 81.2,
+              "pitchTypeFitScore": 47.8,
+              "pitchTypeGrade": 0.33,
               "pitchTypeCoveragePct": 100,
-              "matchupScore": 28.7,
-              "matchupGrade": -4.14
+              "matchupScore": 29.9,
+              "matchupGrade": -4.03
             },
             "pitchType": {
-              "fitScore": 53.2,
-              "fitGrade": -1.46,
+              "fitScore": 47.8,
+              "fitGrade": 0.33,
               "coveragePct": 100,
-              "summary": "4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit -1.5",
+              "summary": "Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit +0.3",
               "topPitches": [
-                {
-                  "pitchType": "FF",
-                  "pitchName": "4-Seam Fastball",
-                  "pitchUsage": 35.3,
-                  "fitGrade": 6.11,
-                  "batterFitScore": 80.7,
-                  "qualityScore": 47.1
-                },
                 {
                   "pitchType": "SL",
                   "pitchName": "Slider",
-                  "pitchUsage": 29.4,
+                  "pitchUsage": 39.7,
                   "fitGrade": -8,
                   "batterFitScore": 18,
                   "qualityScore": 94
                 },
                 {
+                  "pitchType": "FF",
+                  "pitchName": "4-Seam Fastball",
+                  "pitchUsage": 35.9,
+                  "fitGrade": 10,
+                  "batterFitScore": 80.7,
+                  "qualityScore": 18
+                },
+                {
                   "pitchType": "CH",
                   "pitchName": "Changeup",
-                  "pitchUsage": 11.2,
-                  "fitGrade": -7.58,
+                  "pitchUsage": 12.8,
+                  "fitGrade": 6.24,
                   "batterFitScore": 52.3,
-                  "qualityScore": 94
+                  "qualityScore": 18
                 }
               ]
             },
@@ -10102,13 +10102,13 @@
               "trendSignal": "improving"
             },
             "tags": [
-              "arsenal risk",
+              "split edge",
               "cold",
               "statcast up"
             ],
-            "primaryTag": "arsenal risk",
-            "summary": ".256 AVG | .760 OPS | 52 H | 2 HR | 14g: .250 AVG | .540 OPS | 14 H | 0 HR | vs RHP: .258 AVG | .750 OPS | 1 HR | arsenal 4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit -1.5 | -4.1 matchup grade in a whiff-variance lane",
-            "matchupNote": "-4.14 vs Dylan Cease"
+            "primaryTag": "split edge",
+            "summary": ".256 AVG | .760 OPS | 52 H | 2 HR | 14g: .250 AVG | .540 OPS | 14 H | 0 HR | vs LHP: .250 AVG | .786 OPS | 1 HR | arsenal Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit +0.3 | -4.0 matchup grade in a neutral lane",
+            "matchupNote": "-4.03 vs Adam Macko"
           },
           {
             "playerId": 683002,
@@ -10170,67 +10170,67 @@
               "totalBasesRate": 0.5161
             },
             "split": {
-              "hits": 37,
-              "singles": 21,
-              "doubles": 8,
-              "triples": 1,
-              "homeRuns": 7,
-              "walks": 10,
-              "totalBases": 68,
-              "atBats": 168,
-              "plateAppearances": 179,
-              "avg": 0.22,
-              "obp": 0.263,
-              "slg": 0.405,
-              "ops": 0.667,
-              "hitRate": 0.20670000000000002,
-              "singlesRate": 0.1173,
-              "hrRate": 0.0391,
-              "walkRate": 0.0559,
-              "totalBasesRate": 0.3799
+              "hits": 15,
+              "singles": 7,
+              "doubles": 2,
+              "triples": 0,
+              "homeRuns": 6,
+              "walks": 5,
+              "totalBases": 35,
+              "atBats": 70,
+              "plateAppearances": 77,
+              "avg": 0.214,
+              "obp": 0.286,
+              "slg": 0.5,
+              "ops": 0.786,
+              "hitRate": 0.1948,
+              "singlesRate": 0.0909,
+              "hrRate": 0.0779,
+              "walkRate": 0.0649,
+              "totalBasesRate": 0.4545
             },
             "metrics": {
-              "powerScore": 60.8,
-              "contactScore": 41.6,
+              "powerScore": 77.2,
+              "contactScore": 41.1,
               "patienceScore": 41.5,
               "formScore": 92,
-              "splitScore": 34.3,
-              "varianceScore": 78.8,
-              "pitchTypeFitScore": 36.2,
-              "pitchTypeGrade": -3.94,
+              "splitScore": 86.8,
+              "varianceScore": 92,
+              "pitchTypeFitScore": 38.8,
+              "pitchTypeGrade": -0.56,
               "pitchTypeCoveragePct": 100,
-              "matchupScore": 47.3,
-              "matchupGrade": -1.13
+              "matchupScore": 83.3,
+              "matchupGrade": 6.11
             },
             "pitchType": {
-              "fitScore": 36.2,
-              "fitGrade": -3.94,
+              "fitScore": 38.8,
+              "fitGrade": -0.56,
               "coveragePct": 100,
-              "summary": "4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit -3.9",
+              "summary": "Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit -0.6",
               "topPitches": [
-                {
-                  "pitchType": "FF",
-                  "pitchName": "4-Seam Fastball",
-                  "pitchUsage": 35.3,
-                  "fitGrade": -0.04,
-                  "batterFitScore": 46.9,
-                  "qualityScore": 47.1
-                },
                 {
                   "pitchType": "SL",
                   "pitchName": "Slider",
-                  "pitchUsage": 29.4,
+                  "pitchUsage": 39.7,
                   "fitGrade": -8,
                   "batterFitScore": 18,
                   "qualityScore": 94
                 },
                 {
+                  "pitchType": "FF",
+                  "pitchName": "4-Seam Fastball",
+                  "pitchUsage": 35.9,
+                  "fitGrade": 5.25,
+                  "batterFitScore": 46.9,
+                  "qualityScore": 18
+                },
+                {
                   "pitchType": "CH",
                   "pitchName": "Changeup",
-                  "pitchUsage": 11.2,
-                  "fitGrade": -6.44,
+                  "pitchUsage": 12.8,
+                  "fitGrade": 7.38,
                   "batterFitScore": 58.6,
-                  "qualityScore": 94
+                  "qualityScore": 18
                 }
               ]
             },
@@ -10251,15 +10251,14 @@
               "trendSignal": "improving"
             },
             "tags": [
+              "carry",
               "heater",
               "split edge",
-              "whiff risk",
-              "arsenal risk",
               "statcast up"
             ],
-            "primaryTag": "heater",
-            "summary": ".218 AVG | .702 OPS | 52 H | 13 HR | 14g: .207 AVG | .810 OPS | 12 H | 6 HR | vs RHP: .220 AVG | .667 OPS | 7 HR | arsenal 4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit -3.9 | -1.1 matchup grade in a whiff-variance lane",
-            "matchupNote": "-1.13 vs Dylan Cease"
+            "primaryTag": "carry",
+            "summary": ".218 AVG | .702 OPS | 52 H | 13 HR | 14g: .207 AVG | .810 OPS | 12 H | 6 HR | vs LHP: .214 AVG | .786 OPS | 6 HR | arsenal Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit -0.6 | +6.1 matchup grade in a neutral lane",
+            "matchupNote": "+6.11 vs Adam Macko"
           },
           {
             "playerId": 668939,
@@ -10321,67 +10320,67 @@
               "totalBasesRate": 0.3214
             },
             "split": {
-              "hits": 25,
-              "singles": 12,
-              "doubles": 9,
+              "hits": 14,
+              "singles": 8,
+              "doubles": 3,
               "triples": 0,
-              "homeRuns": 4,
-              "walks": 7,
-              "totalBases": 46,
-              "atBats": 88,
-              "plateAppearances": 96,
-              "avg": 0.284,
-              "obp": 0.344,
-              "slg": 0.523,
-              "ops": 0.866,
-              "hitRate": 0.26039999999999996,
-              "singlesRate": 0.125,
-              "hrRate": 0.0417,
-              "walkRate": 0.0729,
-              "totalBasesRate": 0.4792
+              "homeRuns": 3,
+              "walks": 8,
+              "totalBases": 26,
+              "atBats": 58,
+              "plateAppearances": 67,
+              "avg": 0.241,
+              "obp": 0.328,
+              "slg": 0.448,
+              "ops": 0.777,
+              "hitRate": 0.209,
+              "singlesRate": 0.11939999999999999,
+              "hrRate": 0.044800000000000006,
+              "walkRate": 0.11939999999999999,
+              "totalBasesRate": 0.3881
             },
             "metrics": {
-              "powerScore": 66.4,
-              "contactScore": 67.2,
+              "powerScore": 67.7,
+              "contactScore": 63.3,
               "patienceScore": 52.9,
               "formScore": 18,
-              "splitScore": 56.3,
-              "varianceScore": 40.2,
-              "pitchTypeFitScore": 78.4,
-              "pitchTypeGrade": 0.93,
+              "splitScore": 40.5,
+              "varianceScore": 44.4,
+              "pitchTypeFitScore": 78.8,
+              "pitchTypeGrade": 3.27,
               "pitchTypeCoveragePct": 100,
-              "matchupScore": 77.9,
-              "matchupGrade": 6.73
+              "matchupScore": 70.5,
+              "matchupGrade": 5.34
             },
             "pitchType": {
-              "fitScore": 78.4,
-              "fitGrade": 0.93,
+              "fitScore": 78.8,
+              "fitGrade": 3.27,
               "coveragePct": 100,
-              "summary": "4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit +0.9",
+              "summary": "Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit +3.3",
               "topPitches": [
-                {
-                  "pitchType": "FF",
-                  "pitchName": "4-Seam Fastball",
-                  "pitchUsage": 35.3,
-                  "fitGrade": 5.13,
-                  "batterFitScore": 75.3,
-                  "qualityScore": 47.1
-                },
                 {
                   "pitchType": "SL",
                   "pitchName": "Slider",
-                  "pitchUsage": 29.4,
+                  "pitchUsage": 39.7,
                   "fitGrade": 0,
                   "batterFitScore": 94,
                   "qualityScore": 94
                 },
                 {
+                  "pitchType": "FF",
+                  "pitchName": "4-Seam Fastball",
+                  "pitchUsage": 35.9,
+                  "fitGrade": 10,
+                  "batterFitScore": 75.3,
+                  "qualityScore": 18
+                },
+                {
                   "pitchType": "CH",
                   "pitchName": "Changeup",
-                  "pitchUsage": 11.2,
-                  "fitGrade": -8,
+                  "pitchUsage": 12.8,
+                  "fitGrade": 2.53,
                   "batterFitScore": 31.9,
-                  "qualityScore": 94
+                  "qualityScore": 18
                 }
               ]
             },
@@ -10404,13 +10403,14 @@
             "tags": [
               "carry",
               "split edge",
+              "arsenal edge",
               "traffic",
               "cold",
               "statcast up"
             ],
             "primaryTag": "carry",
-            "summary": ".267 AVG | .831 OPS | 39 H | 7 HR | 12g: .273 AVG | .838 OPS | 12 H | 0 HR | vs RHP: .284 AVG | .866 OPS | 4 HR | arsenal 4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit +0.9 | +6.7 matchup grade in a whiff-variance lane",
-            "matchupNote": "+6.73 vs Dylan Cease"
+            "summary": ".267 AVG | .831 OPS | 39 H | 7 HR | 12g: .273 AVG | .838 OPS | 12 H | 0 HR | vs LHP: .241 AVG | .777 OPS | 3 HR | arsenal Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit +3.3 | +5.3 matchup grade in a neutral lane",
+            "matchupNote": "+5.34 vs Adam Macko"
           },
           {
             "playerId": 624413,
@@ -10472,67 +10472,67 @@
               "totalBasesRate": 0.3125
             },
             "split": {
-              "hits": 35,
-              "singles": 18,
-              "doubles": 9,
+              "hits": 15,
+              "singles": 10,
+              "doubles": 3,
               "triples": 0,
-              "homeRuns": 8,
-              "walks": 21,
-              "totalBases": 68,
-              "atBats": 148,
-              "plateAppearances": 172,
-              "avg": 0.236,
-              "obp": 0.331,
-              "slg": 0.459,
-              "ops": 0.791,
-              "hitRate": 0.20350000000000001,
-              "singlesRate": 0.1047,
-              "hrRate": 0.04650000000000001,
-              "walkRate": 0.12210000000000001,
-              "totalBasesRate": 0.3953
+              "homeRuns": 2,
+              "walks": 5,
+              "totalBases": 24,
+              "atBats": 68,
+              "plateAppearances": 73,
+              "avg": 0.221,
+              "obp": 0.274,
+              "slg": 0.353,
+              "ops": 0.627,
+              "hitRate": 0.20550000000000002,
+              "singlesRate": 0.13699999999999998,
+              "hrRate": 0.0274,
+              "walkRate": 0.06849999999999999,
+              "totalBasesRate": 0.32880000000000004
             },
             "metrics": {
-              "powerScore": 60.4,
-              "contactScore": 48.3,
+              "powerScore": 52.4,
+              "contactScore": 46.9,
               "patienceScore": 58.6,
               "formScore": 41.2,
-              "splitScore": 62.9,
-              "varianceScore": 59.5,
-              "pitchTypeFitScore": 67.2,
-              "pitchTypeGrade": 0.56,
+              "splitScore": 20.5,
+              "varianceScore": 65.8,
+              "pitchTypeFitScore": 56.1,
+              "pitchTypeGrade": 0.77,
               "pitchTypeCoveragePct": 100,
-              "matchupScore": 62.7,
-              "matchupGrade": 2.56
+              "matchupScore": 44.4,
+              "matchupGrade": -0.51
             },
             "pitchType": {
-              "fitScore": 67.2,
-              "fitGrade": 0.56,
+              "fitScore": 56.1,
+              "fitGrade": 0.77,
               "coveragePct": 100,
-              "summary": "4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit +0.6",
+              "summary": "Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit +0.8",
               "topPitches": [
-                {
-                  "pitchType": "FF",
-                  "pitchName": "4-Seam Fastball",
-                  "pitchUsage": 35.3,
-                  "fitGrade": 8.53,
-                  "batterFitScore": 94,
-                  "qualityScore": 47.1
-                },
                 {
                   "pitchType": "SL",
                   "pitchName": "Slider",
-                  "pitchUsage": 29.4,
+                  "pitchUsage": 39.7,
                   "fitGrade": -8,
                   "batterFitScore": 18,
                   "qualityScore": 94
                 },
                 {
+                  "pitchType": "FF",
+                  "pitchName": "4-Seam Fastball",
+                  "pitchUsage": 35.9,
+                  "fitGrade": 10,
+                  "batterFitScore": 94,
+                  "qualityScore": 18
+                },
+                {
                   "pitchType": "CH",
                   "pitchName": "Changeup",
-                  "pitchUsage": 11.2,
-                  "fitGrade": -2.05,
+                  "pitchUsage": 12.8,
+                  "fitGrade": 10,
                   "batterFitScore": 82.7,
-                  "qualityScore": 94
+                  "qualityScore": 18
                 }
               ]
             },
@@ -10558,8 +10558,8 @@
               "statcast up"
             ],
             "primaryTag": "split edge",
-            "summary": ".231 AVG | .740 OPS | 50 H | 10 HR | 14g: .259 AVG | .714 OPS | 14 H | 2 HR | vs RHP: .236 AVG | .791 OPS | 8 HR | arsenal 4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit +0.6 | +2.6 matchup grade in a whiff-variance lane",
-            "matchupNote": "+2.56 vs Dylan Cease"
+            "summary": ".231 AVG | .740 OPS | 50 H | 10 HR | 14g: .259 AVG | .714 OPS | 14 H | 2 HR | vs LHP: .221 AVG | .627 OPS | 2 HR | arsenal Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit +0.8 | -0.5 matchup grade in a neutral lane",
+            "matchupNote": "-0.51 vs Adam Macko"
           },
           {
             "playerId": 694212,
@@ -10621,67 +10621,67 @@
               "totalBasesRate": 0.3125
             },
             "split": {
-              "hits": 32,
-              "singles": 17,
-              "doubles": 7,
-              "triples": 1,
-              "homeRuns": 7,
-              "walks": 10,
-              "totalBases": 62,
-              "atBats": 118,
-              "plateAppearances": 129,
-              "avg": 0.271,
-              "obp": 0.326,
-              "slg": 0.525,
-              "ops": 0.851,
-              "hitRate": 0.2481,
-              "singlesRate": 0.1318,
-              "hrRate": 0.054299999999999994,
-              "walkRate": 0.0775,
-              "totalBasesRate": 0.4806
+              "hits": 8,
+              "singles": 7,
+              "doubles": 0,
+              "triples": 0,
+              "homeRuns": 1,
+              "walks": 3,
+              "totalBases": 11,
+              "atBats": 33,
+              "plateAppearances": 36,
+              "avg": 0.242,
+              "obp": 0.306,
+              "slg": 0.333,
+              "ops": 0.639,
+              "hitRate": 0.22219999999999998,
+              "singlesRate": 0.19440000000000002,
+              "hrRate": 0.0278,
+              "walkRate": 0.0833,
+              "totalBasesRate": 0.3056
             },
             "metrics": {
-              "powerScore": 72.1,
-              "contactScore": 49.6,
+              "powerScore": 61,
+              "contactScore": 47,
               "patienceScore": 47.2,
               "formScore": 18,
-              "splitScore": 62.7,
+              "splitScore": 18,
               "varianceScore": 92,
-              "pitchTypeFitScore": 75.2,
-              "pitchTypeGrade": 0.73,
+              "pitchTypeFitScore": 64.8,
+              "pitchTypeGrade": 0.59,
               "pitchTypeCoveragePct": 100,
-              "matchupScore": 37.6,
-              "matchupGrade": -2.94
+              "matchupScore": 18,
+              "matchupGrade": -8
             },
             "pitchType": {
-              "fitScore": 75.2,
-              "fitGrade": 0.73,
+              "fitScore": 64.8,
+              "fitGrade": 0.59,
               "coveragePct": 100,
-              "summary": "4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit +0.7",
+              "summary": "Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit +0.6",
               "topPitches": [
-                {
-                  "pitchType": "FF",
-                  "pitchName": "4-Seam Fastball",
-                  "pitchUsage": 35.3,
-                  "fitGrade": 8.53,
-                  "batterFitScore": 94,
-                  "qualityScore": 47.1
-                },
                 {
                   "pitchType": "SL",
                   "pitchName": "Slider",
-                  "pitchUsage": 29.4,
+                  "pitchUsage": 39.7,
                   "fitGrade": -5.25,
                   "batterFitScore": 65.1,
                   "qualityScore": 94
                 },
                 {
+                  "pitchType": "FF",
+                  "pitchName": "4-Seam Fastball",
+                  "pitchUsage": 35.9,
+                  "fitGrade": 10,
+                  "batterFitScore": 94,
+                  "qualityScore": 18
+                },
+                {
                   "pitchType": "CH",
                   "pitchName": "Changeup",
-                  "pitchUsage": 11.2,
-                  "fitGrade": -8,
+                  "pitchUsage": 12.8,
+                  "fitGrade": 0,
                   "batterFitScore": 18,
-                  "qualityScore": 94
+                  "qualityScore": 18
                 }
               ]
             },
@@ -10702,14 +10702,12 @@
               "trendSignal": "improving"
             },
             "tags": [
-              "split edge",
-              "whiff risk",
               "cold",
               "statcast up"
             ],
-            "primaryTag": "split edge",
-            "summary": ".265 AVG | .805 OPS | 40 H | 8 HR | 12g: .143 AVG | .545 OPS | 4 H | 2 HR | vs RHP: .271 AVG | .851 OPS | 7 HR | arsenal 4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit +0.7 | -2.9 matchup grade in a whiff-variance lane",
-            "matchupNote": "-2.94 vs Dylan Cease"
+            "primaryTag": "cold",
+            "summary": ".265 AVG | .805 OPS | 40 H | 8 HR | 12g: .143 AVG | .545 OPS | 4 H | 2 HR | vs LHP: .242 AVG | .639 OPS | 1 HR | arsenal Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit +0.6 | -8.0 matchup grade in a neutral lane",
+            "matchupNote": "-8.00 vs Adam Macko"
           },
           {
             "playerId": 665750,
@@ -10771,67 +10769,67 @@
               "totalBasesRate": 0.4
             },
             "split": {
-              "hits": 30,
-              "singles": 20,
-              "doubles": 7,
-              "triples": 1,
-              "homeRuns": 2,
-              "walks": 13,
-              "totalBases": 45,
-              "atBats": 94,
-              "plateAppearances": 109,
-              "avg": 0.319,
-              "obp": 0.407,
-              "slg": 0.479,
-              "ops": 0.886,
-              "hitRate": 0.2752,
-              "singlesRate": 0.18350000000000002,
-              "hrRate": 0.0183,
-              "walkRate": 0.1193,
-              "totalBasesRate": 0.4128
+              "hits": 8,
+              "singles": 7,
+              "doubles": 1,
+              "triples": 0,
+              "homeRuns": 0,
+              "walks": 7,
+              "totalBases": 9,
+              "atBats": 43,
+              "plateAppearances": 52,
+              "avg": 0.186,
+              "obp": 0.3,
+              "slg": 0.209,
+              "ops": 0.509,
+              "hitRate": 0.15380000000000002,
+              "singlesRate": 0.1346,
+              "hrRate": 0,
+              "walkRate": 0.1346,
+              "totalBasesRate": 0.17309999999999998
             },
             "metrics": {
-              "powerScore": 37.1,
-              "contactScore": 59.8,
+              "powerScore": 29.4,
+              "contactScore": 47.8,
               "patienceScore": 65.3,
               "formScore": 72.2,
-              "splitScore": 78.3,
-              "varianceScore": 81.8,
-              "pitchTypeFitScore": 41.4,
-              "pitchTypeGrade": -4.16,
+              "splitScore": 18,
+              "varianceScore": 92,
+              "pitchTypeFitScore": 46.6,
+              "pitchTypeGrade": -1.28,
               "pitchTypeCoveragePct": 100,
-              "matchupScore": 82.5,
-              "matchupGrade": 6.64
+              "matchupScore": 49.6,
+              "matchupGrade": 0.11
             },
             "pitchType": {
-              "fitScore": 41.4,
-              "fitGrade": -4.16,
+              "fitScore": 46.6,
+              "fitGrade": -1.28,
               "coveragePct": 100,
-              "summary": "4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit -4.2",
+              "summary": "Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit -1.3",
               "topPitches": [
-                {
-                  "pitchType": "FF",
-                  "pitchName": "4-Seam Fastball",
-                  "pitchUsage": 35.3,
-                  "fitGrade": -1.84,
-                  "batterFitScore": 37,
-                  "qualityScore": 47.1
-                },
                 {
                   "pitchType": "SL",
                   "pitchName": "Slider",
-                  "pitchUsage": 29.4,
+                  "pitchUsage": 39.7,
                   "fitGrade": -7.04,
                   "batterFitScore": 55.3,
                   "qualityScore": 94
                 },
                 {
+                  "pitchType": "FF",
+                  "pitchName": "4-Seam Fastball",
+                  "pitchUsage": 35.9,
+                  "fitGrade": 3.45,
+                  "batterFitScore": 37,
+                  "qualityScore": 18
+                },
+                {
                   "pitchType": "CH",
                   "pitchName": "Changeup",
-                  "pitchUsage": 11.2,
-                  "fitGrade": -8,
+                  "pitchUsage": 12.8,
+                  "fitGrade": 0,
                   "batterFitScore": 18,
-                  "qualityScore": 94
+                  "qualityScore": 18
                 }
               ]
             },
@@ -10852,15 +10850,13 @@
               "trendSignal": "improving"
             },
             "tags": [
-              "carry",
               "heater",
               "split edge",
-              "arsenal risk",
               "statcast up"
             ],
-            "primaryTag": "carry",
-            "summary": ".277 AVG | .768 OPS | 38 H | 2 HR | 14g: .385 AVG | .910 OPS | 20 H | 0 HR | vs RHP: .319 AVG | .886 OPS | 2 HR | arsenal 4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit -4.2 | +6.6 matchup grade in a whiff-variance lane",
-            "matchupNote": "+6.64 vs Dylan Cease"
+            "primaryTag": "heater",
+            "summary": ".277 AVG | .768 OPS | 38 H | 2 HR | 14g: .385 AVG | .910 OPS | 20 H | 0 HR | vs LHP: .186 AVG | .509 OPS | 0 HR | arsenal Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit -1.3 | +0.1 matchup grade in a neutral lane",
+            "matchupNote": "+0.11 vs Adam Macko"
           },
           {
             "playerId": 681297,
@@ -10922,67 +10918,67 @@
               "totalBasesRate": 0.6111
             },
             "split": {
-              "hits": 20,
-              "singles": 15,
-              "doubles": 2,
+              "hits": 1,
+              "singles": 1,
+              "doubles": 0,
               "triples": 0,
-              "homeRuns": 3,
-              "walks": 13,
-              "totalBases": 31,
-              "atBats": 94,
-              "plateAppearances": 108,
-              "avg": 0.213,
-              "obp": 0.306,
-              "slg": 0.33,
-              "ops": 0.635,
-              "hitRate": 0.1852,
-              "singlesRate": 0.1389,
-              "hrRate": 0.0278,
-              "walkRate": 0.1204,
-              "totalBasesRate": 0.287
+              "homeRuns": 0,
+              "walks": 0,
+              "totalBases": 1,
+              "atBats": 8,
+              "plateAppearances": 9,
+              "avg": 0.125,
+              "obp": 0.125,
+              "slg": 0.125,
+              "ops": 0.25,
+              "hitRate": 0.11109999999999999,
+              "singlesRate": 0.11109999999999999,
+              "hrRate": 0,
+              "walkRate": 0,
+              "totalBasesRate": 0.11109999999999999
             },
             "metrics": {
-              "powerScore": 36,
-              "contactScore": 25.8,
+              "powerScore": 24.3,
+              "contactScore": 18,
               "patienceScore": 60.6,
               "formScore": 92,
-              "splitScore": 56.9,
+              "splitScore": 18,
               "varianceScore": 92,
-              "pitchTypeFitScore": 69.9,
-              "pitchTypeGrade": -0.03,
+              "pitchTypeFitScore": 60.9,
+              "pitchTypeGrade": 0.47,
               "pitchTypeCoveragePct": 100,
               "matchupScore": 94,
               "matchupGrade": 10
             },
             "pitchType": {
-              "fitScore": 69.9,
-              "fitGrade": -0.03,
+              "fitScore": 60.9,
+              "fitGrade": 0.47,
               "coveragePct": 100,
-              "summary": "4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit -0.0",
+              "summary": "Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit +0.5",
               "topPitches": [
-                {
-                  "pitchType": "FF",
-                  "pitchName": "4-Seam Fastball",
-                  "pitchUsage": 35.3,
-                  "fitGrade": 6.93,
-                  "batterFitScore": 85.2,
-                  "qualityScore": 47.1
-                },
                 {
                   "pitchType": "SL",
                   "pitchName": "Slider",
-                  "pitchUsage": 29.4,
+                  "pitchUsage": 39.7,
                   "fitGrade": -5.55,
                   "batterFitScore": 63.5,
                   "qualityScore": 94
                 },
                 {
+                  "pitchType": "FF",
+                  "pitchName": "4-Seam Fastball",
+                  "pitchUsage": 35.9,
+                  "fitGrade": 10,
+                  "batterFitScore": 85.2,
+                  "qualityScore": 18
+                },
+                {
                   "pitchType": "CH",
                   "pitchName": "Changeup",
-                  "pitchUsage": 11.2,
-                  "fitGrade": -8,
+                  "pitchUsage": 12.8,
+                  "fitGrade": 0,
                   "batterFitScore": 18,
-                  "qualityScore": 94
+                  "qualityScore": 18
                 }
               ]
             },
@@ -11005,13 +11001,11 @@
             "tags": [
               "carry",
               "heater",
-              "split edge",
-              "whiff risk",
               "statcast up"
             ],
             "primaryTag": "carry",
-            "summary": ".206 AVG | .607 OPS | 21 H | 3 HR | 14g: .313 AVG | 1.076 OPS | 10 H | 4 HR | vs RHP: .213 AVG | .635 OPS | 3 HR | arsenal 4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit -0.0 | +10.0 matchup grade in a whiff-variance lane",
-            "matchupNote": "+10.00 vs Dylan Cease"
+            "summary": ".206 AVG | .607 OPS | 21 H | 3 HR | 14g: .313 AVG | 1.076 OPS | 10 H | 4 HR | vs LHP: .125 AVG | .250 OPS | 0 HR | arsenal Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit +0.5 | +10.0 matchup grade in a neutral lane",
+            "matchupNote": "+10.00 vs Adam Macko"
           },
           {
             "playerId": 691723,
@@ -11073,67 +11067,67 @@
               "totalBasesRate": 0.8
             },
             "split": {
-              "hits": 14,
-              "singles": 11,
-              "doubles": 1,
+              "hits": 13,
+              "singles": 5,
+              "doubles": 4,
               "triples": 0,
-              "homeRuns": 2,
-              "walks": 9,
-              "totalBases": 21,
-              "atBats": 91,
-              "plateAppearances": 102,
-              "avg": 0.154,
-              "obp": 0.235,
-              "slg": 0.231,
-              "ops": 0.466,
-              "hitRate": 0.1373,
-              "singlesRate": 0.10779999999999999,
-              "hrRate": 0.0196,
-              "walkRate": 0.0882,
-              "totalBasesRate": 0.2059
+              "homeRuns": 4,
+              "walks": 4,
+              "totalBases": 29,
+              "atBats": 44,
+              "plateAppearances": 48,
+              "avg": 0.295,
+              "obp": 0.354,
+              "slg": 0.659,
+              "ops": 1.013,
+              "hitRate": 0.2708,
+              "singlesRate": 0.1042,
+              "hrRate": 0.0833,
+              "walkRate": 0.0833,
+              "totalBasesRate": 0.6042000000000001
             },
             "metrics": {
-              "powerScore": 42.8,
-              "contactScore": 25.9,
+              "powerScore": 69.5,
+              "contactScore": 38.6,
               "patienceScore": 52.2,
               "formScore": 92,
-              "splitScore": 18,
+              "splitScore": 92,
               "varianceScore": 92,
-              "pitchTypeFitScore": 71.3,
+              "pitchTypeFitScore": 61,
               "pitchTypeGrade": 0.17,
               "pitchTypeCoveragePct": 100,
               "matchupScore": 94,
               "matchupGrade": 10
             },
             "pitchType": {
-              "fitScore": 71.3,
+              "fitScore": 61,
               "fitGrade": 0.17,
               "coveragePct": 100,
-              "summary": "4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit +0.2",
+              "summary": "Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit +0.2",
               "topPitches": [
-                {
-                  "pitchType": "FF",
-                  "pitchName": "4-Seam Fastball",
-                  "pitchUsage": 35.3,
-                  "fitGrade": 8.05,
-                  "batterFitScore": 91.4,
-                  "qualityScore": 47.1
-                },
                 {
                   "pitchType": "SL",
                   "pitchName": "Slider",
-                  "pitchUsage": 29.4,
+                  "pitchUsage": 39.7,
                   "fitGrade": -6.31,
                   "batterFitScore": 59.3,
                   "qualityScore": 94
                 },
                 {
+                  "pitchType": "FF",
+                  "pitchName": "4-Seam Fastball",
+                  "pitchUsage": 35.9,
+                  "fitGrade": 10,
+                  "batterFitScore": 91.4,
+                  "qualityScore": 18
+                },
+                {
                   "pitchType": "CH",
                   "pitchName": "Changeup",
-                  "pitchUsage": 11.2,
-                  "fitGrade": -8,
+                  "pitchUsage": 12.8,
+                  "fitGrade": 0,
                   "batterFitScore": 18,
-                  "qualityScore": 94
+                  "qualityScore": 18
                 }
               ]
             },
@@ -11156,12 +11150,12 @@
             "tags": [
               "carry",
               "heater",
-              "whiff risk",
+              "split edge",
               "statcast up"
             ],
             "primaryTag": "carry",
-            "summary": ".200 AVG | .644 OPS | 27 H | 6 HR | 6g: .444 AVG | 1.389 OPS | 8 H | 2 HR | vs RHP: .154 AVG | .466 OPS | 2 HR | arsenal 4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit +0.2 | +10.0 matchup grade in a whiff-variance lane",
-            "matchupNote": "+10.00 vs Dylan Cease"
+            "summary": ".200 AVG | .644 OPS | 27 H | 6 HR | 6g: .444 AVG | 1.389 OPS | 8 H | 2 HR | vs LHP: .295 AVG | 1.013 OPS | 4 HR | arsenal Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit +0.2 | +10.0 matchup grade in a neutral lane",
+            "matchupNote": "+10.00 vs Adam Macko"
           },
           {
             "playerId": 702616,
@@ -11223,67 +11217,67 @@
               "totalBasesRate": 0.3478
             },
             "split": {
-              "hits": 5,
-              "singles": 4,
+              "hits": 0,
+              "singles": 0,
               "doubles": 0,
               "triples": 0,
-              "homeRuns": 1,
-              "walks": 2,
-              "totalBases": 8,
-              "atBats": 19,
-              "plateAppearances": 22,
-              "avg": 0.263,
-              "obp": 0.318,
-              "slg": 0.421,
-              "ops": 0.739,
-              "hitRate": 0.2273,
-              "singlesRate": 0.1818,
-              "hrRate": 0.0455,
-              "walkRate": 0.0909,
-              "totalBasesRate": 0.3636
+              "homeRuns": 0,
+              "walks": 1,
+              "totalBases": 0,
+              "atBats": 4,
+              "plateAppearances": 5,
+              "avg": 0,
+              "obp": 0.2,
+              "slg": 0,
+              "ops": 0.2,
+              "hitRate": 0,
+              "singlesRate": 0,
+              "hrRate": 0,
+              "walkRate": 0.2,
+              "totalBasesRate": 0
             },
             "metrics": {
-              "powerScore": 50.3,
-              "contactScore": 40.9,
+              "powerScore": 31.2,
+              "contactScore": 18,
               "patienceScore": 59.1,
               "formScore": 80.6,
-              "splitScore": 78.5,
-              "varianceScore": 84.4,
-              "pitchTypeFitScore": 34.8,
-              "pitchTypeGrade": -4.7,
+              "splitScore": 18,
+              "varianceScore": 72.6,
+              "pitchTypeFitScore": 38.1,
+              "pitchTypeGrade": -2.2,
               "pitchTypeCoveragePct": 100,
-              "matchupScore": 67.4,
-              "matchupGrade": 2.94
+              "matchupScore": 53.3,
+              "matchupGrade": 0.96
             },
             "pitchType": {
-              "fitScore": 34.8,
-              "fitGrade": -4.7,
+              "fitScore": 38.1,
+              "fitGrade": -2.2,
               "coveragePct": 100,
-              "summary": "4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit -4.7",
+              "summary": "Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit -2.2",
               "topPitches": [
-                {
-                  "pitchType": "FF",
-                  "pitchName": "4-Seam Fastball",
-                  "pitchUsage": 35.3,
-                  "fitGrade": 0,
-                  "batterFitScore": 47.1,
-                  "qualityScore": 47.1
-                },
                 {
                   "pitchType": "SL",
                   "pitchName": "Slider",
-                  "pitchUsage": 29.4,
+                  "pitchUsage": 39.7,
                   "fitGrade": -8,
                   "batterFitScore": 48.9,
                   "qualityScore": 94
                 },
                 {
+                  "pitchType": "FF",
+                  "pitchName": "4-Seam Fastball",
+                  "pitchUsage": 35.9,
+                  "fitGrade": 5.29,
+                  "batterFitScore": 47.1,
+                  "qualityScore": 18
+                },
+                {
                   "pitchType": "CH",
                   "pitchName": "Changeup",
-                  "pitchUsage": 11.2,
-                  "fitGrade": -8,
+                  "pitchUsage": 12.8,
+                  "fitGrade": 0,
                   "batterFitScore": 18,
-                  "qualityScore": 94
+                  "qualityScore": 18
                 }
               ]
             },
@@ -11305,14 +11299,12 @@
             },
             "tags": [
               "heater",
-              "split edge",
-              "whiff risk",
               "arsenal risk",
               "statcast up"
             ],
             "primaryTag": "heater",
-            "summary": ".217 AVG | .644 OPS | 5 H | 1 HR | 14g: .263 AVG | .769 OPS | 10 H | 2 HR | vs RHP: .263 AVG | .739 OPS | 1 HR | arsenal 4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit -4.7 | +2.9 matchup grade in a whiff-variance lane",
-            "matchupNote": "+2.94 vs Dylan Cease"
+            "summary": ".217 AVG | .644 OPS | 5 H | 1 HR | 14g: .263 AVG | .769 OPS | 10 H | 2 HR | vs LHP: .000 AVG | .200 OPS | 0 HR | arsenal Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit -2.2 | +1.0 matchup grade in a neutral lane",
+            "matchupNote": "+0.96 vs Adam Macko"
           }
         ],
         "bvpHistory": {
@@ -11321,27 +11313,27 @@
           "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
         },
         "aggregate": {
-          "averageMatchupGrade": 3.41,
+          "averageMatchupGrade": 2.22,
           "trackedBatters": 9,
-          "starterThreatCount": 6,
+          "starterThreatCount": 4,
           "contactCount": 1,
-          "powerCount": 2,
-          "platoonCount": 7,
-          "pitchTypeEdgeCount": 0,
-          "oppositeHandCount": 6,
-          "sameHandCount": 3,
+          "powerCount": 3,
+          "platoonCount": 6,
+          "pitchTypeEdgeCount": 1,
+          "oppositeHandCount": 5,
+          "sameHandCount": 4,
           "switchCount": 2,
-          "topThirdSplitCount": 2,
-          "topThirdArsenalCount": 0,
+          "topThirdSplitCount": 3,
+          "topThirdArsenalCount": 1,
           "heaterCount": 5,
           "suppressorCount": 2,
-          "platoonPressureIndex": 92,
-          "pitchTypePressureIndex": 31.5,
+          "platoonPressureIndex": 85.5,
+          "pitchTypePressureIndex": 47.3,
           "bullpenPitchTypePressureIndex": 46.2,
-          "starterPressureIndex": 94,
-          "overallPressureIndex": 93.4,
-          "topThirdScore": 51.3,
-          "depthScore": 85.1,
+          "starterPressureIndex": 90,
+          "overallPressureIndex": 89.4,
+          "topThirdScore": 61.2,
+          "depthScore": 80.4,
           "bullpenOverperformHitters": [
             {
               "name": "Jackson Holliday",
@@ -11365,15 +11357,15 @@
           "overperformHitters": [
             {
               "name": "Colton Cowser",
-              "tag": "carry | +10.00 vs Dylan Cease"
+              "tag": "carry | +10.00 vs Adam Macko"
             },
             {
               "name": "Coby Mayo",
-              "tag": "carry | +10.00 vs Dylan Cease"
+              "tag": "carry | +10.00 vs Adam Macko"
             },
             {
-              "name": "Adley Rutschman",
-              "tag": "carry | +6.73 vs Dylan Cease"
+              "name": "Gunnar Henderson",
+              "tag": "carry | +6.11 vs Adam Macko"
             }
           ],
           "bullpenOverperformHitters": [
@@ -11395,20 +11387,20 @@
           ],
           "underperformHitters": [
             {
-              "name": "Taylor Ward",
-              "tag": "arsenal risk | -4.14 vs Dylan Cease"
+              "name": "Samuel Basallo",
+              "tag": "cold | -8.00 vs Adam Macko"
             },
             {
-              "name": "Samuel Basallo",
-              "tag": "split edge | -2.94 vs Dylan Cease"
+              "name": "Taylor Ward",
+              "tag": "split edge | -4.03 vs Adam Macko"
             }
           ],
-          "underperformNote": "Taylor Ward and Samuel Basallo carry the softer form or split fit into a volatile bat-misser lane.",
-          "overview": "Orioles can lean on Colton Cowser, Coby Mayo, Adley Rutschman to drive early pressure against Dylan Cease.",
+          "underperformNote": "Samuel Basallo and Taylor Ward carry the softer form or split fit into a unknown sample lane.",
+          "overview": "Orioles can lean on Colton Cowser, Coby Mayo, Gunnar Henderson to drive early pressure against Adam Macko.",
           "bullpenOverview": "Mason Fluharty is the first bridge look, and this lineup grades +1.0 against that likely first-up arsenal.",
-          "topThirdScore": 51.3,
-          "middleScore": 60.9,
-          "depthScore": 85.1,
+          "topThirdScore": 61.2,
+          "middleScore": 37.3,
+          "depthScore": 80.4,
           "bullpenPitchTypeSummary": {
             "pressureIndex": 46.2,
             "averageFitScore": 52.6,
@@ -11476,7 +11468,7 @@
                   {
                     "name": "Leody Taveras",
                     "slot": 6,
-                    "tag": "carry | fit -1.3"
+                    "tag": "heater | fit -1.3"
                   }
                 ]
               }
@@ -11506,7 +11498,7 @@
     "angels-rays": {
       "gameId": "angels-rays",
       "title": "Angels @ Rays",
-      "snapshot": "2026-05-29T11:49:33.607Z",
+      "snapshot": "2026-05-29T17:59:43.192Z",
       "status": {
         "away": "partial",
         "home": "partial"
@@ -11521,7 +11513,7 @@
         "label": "Dome In Domed Stadium"
       },
       "marketWeatherContext": {
-        "line": "TB -179",
+        "line": "TB -165",
         "total": "8.0 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -14508,7 +14500,7 @@
     "marlins-mets": {
       "gameId": "marlins-mets",
       "title": "Marlins @ Mets",
-      "snapshot": "2026-05-29T11:49:33.608Z",
+      "snapshot": "2026-05-29T17:59:43.193Z",
       "status": {
         "away": "partial",
         "home": "partial"
@@ -14523,7 +14515,7 @@
         "label": "75°F | Wind 11 mph Out | 1% precip"
       },
       "marketWeatherContext": {
-        "line": "NYM -122",
+        "line": "NYM -112",
         "total": "7.5 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -17664,7 +17656,7 @@
     "red-sox-guardians": {
       "gameId": "red-sox-guardians",
       "title": "Red Sox @ Guardians",
-      "snapshot": "2026-05-29T11:49:33.609Z",
+      "snapshot": "2026-05-29T17:59:43.194Z",
       "status": {
         "away": "partial",
         "home": "partial"
@@ -17679,7 +17671,7 @@
         "label": "77°F | Wind 6 mph L-R | 0% precip"
       },
       "marketWeatherContext": {
-        "line": "CLE -120",
+        "line": "CLE -127",
         "total": "8.0 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -18461,8 +18453,159 @@
             "matchupNote": "+5.08 vs Slade Cecconi"
           },
           {
-            "playerId": 686765,
+            "playerId": 681508,
             "slot": 6,
+            "name": "Mickey Gasper",
+            "position": "C",
+            "bats": "S",
+            "savant": {
+              "playerId": 681508,
+              "playerUrl": "https://baseballsavant.mlb.com/savant-player/mickey-gasper-681508",
+              "statsSuffix": "r-hitting-mlb",
+              "season": 2026,
+              "statsUrls": {
+                "statcast": "https://baseballsavant.mlb.com/savant-player/mickey-gasper-681508?stats=statcast-r-hitting-mlb&season=2026",
+                "splits": "https://baseballsavant.mlb.com/savant-player/mickey-gasper-681508?stats=splits-r-hitting-mlb&season=2026",
+                "gamelogs": "https://baseballsavant.mlb.com/savant-player/mickey-gasper-681508?stats=gamelogs-r-hitting-mlb&season=2026"
+              }
+            },
+            "season": {
+              "gamesPlayed": 15,
+              "hits": 14,
+              "singles": 12,
+              "doubles": 2,
+              "triples": 0,
+              "homeRuns": 0,
+              "walks": 2,
+              "totalBases": 16,
+              "atBats": 43,
+              "plateAppearances": 47,
+              "avg": 0.326,
+              "obp": 0.37,
+              "slg": 0.372,
+              "ops": 0.742,
+              "hitRate": 0.2979,
+              "singlesRate": 0.2553,
+              "hrRate": 0,
+              "walkRate": 0.0426,
+              "totalBasesRate": 0.3404
+            },
+            "recent": {
+              "gamesPlayed": 10,
+              "hits": 6,
+              "singles": 6,
+              "doubles": 0,
+              "triples": 0,
+              "homeRuns": 0,
+              "walks": 4,
+              "totalBases": 6,
+              "atBats": 22,
+              "plateAppearances": 28,
+              "avg": 0.273,
+              "obp": 0.385,
+              "slg": 0.273,
+              "ops": 0.657,
+              "hitRate": 0.2143,
+              "singlesRate": 0.2143,
+              "hrRate": 0,
+              "walkRate": 0.1429,
+              "totalBasesRate": 0.2143
+            },
+            "split": {
+              "hits": 12,
+              "singles": 10,
+              "doubles": 2,
+              "triples": 0,
+              "homeRuns": 0,
+              "walks": 2,
+              "totalBases": 14,
+              "atBats": 37,
+              "plateAppearances": 40,
+              "avg": 0.324,
+              "obp": 0.375,
+              "slg": 0.378,
+              "ops": 0.753,
+              "hitRate": 0.3,
+              "singlesRate": 0.25,
+              "hrRate": 0,
+              "walkRate": 0.05,
+              "totalBasesRate": 0.35
+            },
+            "metrics": {
+              "powerScore": 23.5,
+              "contactScore": 65.2,
+              "patienceScore": 36.3,
+              "formScore": 30.2,
+              "splitScore": 51.2,
+              "varianceScore": 57.2,
+              "pitchTypeFitScore": 78.3,
+              "pitchTypeGrade": 5.09,
+              "pitchTypeCoveragePct": 100,
+              "matchupScore": 60,
+              "matchupGrade": 2.25
+            },
+            "pitchType": {
+              "fitScore": 78.3,
+              "fitGrade": 5.09,
+              "coveragePct": 100,
+              "summary": "4-Seam Fastball 33% / Cutter 26% / Sinker 17% | fit +5.1",
+              "topPitches": [
+                {
+                  "pitchType": "FF",
+                  "pitchName": "4-Seam Fastball",
+                  "pitchUsage": 33.2,
+                  "fitGrade": 9.4,
+                  "batterFitScore": 94,
+                  "qualityScore": 42.3
+                },
+                {
+                  "pitchType": "FC",
+                  "pitchName": "Cutter",
+                  "pitchUsage": 26.3,
+                  "fitGrade": 0.93,
+                  "batterFitScore": 65.9,
+                  "qualityScore": 60.8
+                },
+                {
+                  "pitchType": "SI",
+                  "pitchName": "Sinker",
+                  "pitchUsage": 16.9,
+                  "fitGrade": 8.78,
+                  "batterFitScore": 80.5,
+                  "qualityScore": 32.2
+                }
+              ]
+            },
+            "statcastTrend": {
+              "gamesSample7": 5,
+              "paSample7": 14,
+              "bbeSample7": 14,
+              "rolling7Xwoba": 0.314,
+              "rolling7Xba": 0.276,
+              "rolling7Xslg": 0.39,
+              "rolling7BarrelPct": 7.1,
+              "rolling7HardHitPct": 14.3,
+              "rolling7SweetSpotPct": 35.7,
+              "xwobaTrend": 0.004,
+              "barrelTrend": 2.3,
+              "hardHitTrend": -12.7,
+              "sweetSpotTrend": 13.5,
+              "trendSignal": "improving"
+            },
+            "tags": [
+              "split edge",
+              "arsenal edge",
+              "traffic",
+              "cold",
+              "statcast up"
+            ],
+            "primaryTag": "split edge",
+            "summary": ".326 AVG | .742 OPS | 14 H | 0 HR | 10g: .273 AVG | .657 OPS | 6 H | 0 HR | vs RHP: .324 AVG | .753 OPS | 0 HR | arsenal 4-Seam Fastball 33% / Cutter 26% / Sinker 17% | fit +5.1 | +2.3 matchup grade in a traffic-risk lane",
+            "matchupNote": "+2.25 vs Slade Cecconi"
+          },
+          {
+            "playerId": 686765,
+            "slot": 7,
             "name": "Nick Sogard",
             "position": "2B",
             "bats": "S",
@@ -18549,8 +18692,8 @@
               "pitchTypeFitScore": 76.2,
               "pitchTypeGrade": 4.78,
               "pitchTypeCoveragePct": 100,
-              "matchupScore": 91.1,
-              "matchupGrade": 8.8
+              "matchupScore": 89,
+              "matchupGrade": 8.3
             },
             "pitchType": {
               "fitScore": 76.2,
@@ -18608,156 +18751,8 @@
               "statcast fade"
             ],
             "primaryTag": "carry",
-            "summary": ".273 AVG | .762 OPS | 9 H | 0 HR | 12g: .263 AVG | .785 OPS | 10 H | 0 HR | vs RHP: .292 AVG | .851 OPS | 0 HR | arsenal 4-Seam Fastball 33% / Cutter 26% / Sinker 17% | fit +4.8 | +8.8 matchup grade in a traffic-risk lane",
-            "matchupNote": "+8.80 vs Slade Cecconi"
-          },
-          {
-            "playerId": 665966,
-            "slot": 7,
-            "name": "Carlos Narvaez",
-            "position": "C",
-            "bats": "R",
-            "savant": {
-              "playerId": 665966,
-              "playerUrl": "https://baseballsavant.mlb.com/savant-player/carlos-narvaez-665966",
-              "statsSuffix": "r-hitting-mlb",
-              "season": 2026,
-              "statsUrls": {
-                "statcast": "https://baseballsavant.mlb.com/savant-player/carlos-narvaez-665966?stats=statcast-r-hitting-mlb&season=2026",
-                "splits": "https://baseballsavant.mlb.com/savant-player/carlos-narvaez-665966?stats=splits-r-hitting-mlb&season=2026",
-                "gamelogs": "https://baseballsavant.mlb.com/savant-player/carlos-narvaez-665966?stats=gamelogs-r-hitting-mlb&season=2026"
-              }
-            },
-            "season": {
-              "gamesPlayed": 36,
-              "hits": 22,
-              "singles": 15,
-              "doubles": 5,
-              "triples": 0,
-              "homeRuns": 2,
-              "walks": 10,
-              "totalBases": 33,
-              "atBats": 105,
-              "plateAppearances": 118,
-              "avg": 0.21,
-              "obp": 0.291,
-              "slg": 0.314,
-              "ops": 0.605,
-              "hitRate": 0.1864,
-              "singlesRate": 0.12710000000000002,
-              "hrRate": 0.0169,
-              "walkRate": 0.08470000000000001,
-              "totalBasesRate": 0.2797
-            },
-            "recent": {
-              "gamesPlayed": 6,
-              "hits": 2,
-              "singles": 2,
-              "doubles": 0,
-              "triples": 0,
-              "homeRuns": 0,
-              "walks": 4,
-              "totalBases": 2,
-              "atBats": 20,
-              "plateAppearances": 24,
-              "avg": 0.1,
-              "obp": 0.25,
-              "slg": 0.1,
-              "ops": 0.35,
-              "hitRate": 0.0833,
-              "singlesRate": 0.0833,
-              "hrRate": 0,
-              "walkRate": 0.16670000000000001,
-              "totalBasesRate": 0.0833
-            },
-            "split": {
-              "hits": 15,
-              "singles": 10,
-              "doubles": 3,
-              "triples": 0,
-              "homeRuns": 2,
-              "walks": 8,
-              "totalBases": 24,
-              "atBats": 87,
-              "plateAppearances": 98,
-              "avg": 0.172,
-              "obp": 0.258,
-              "slg": 0.276,
-              "ops": 0.534,
-              "hitRate": 0.1531,
-              "singlesRate": 0.102,
-              "hrRate": 0.0204,
-              "walkRate": 0.0816,
-              "totalBasesRate": 0.24489999999999998
-            },
-            "metrics": {
-              "powerScore": 30.5,
-              "contactScore": 28.7,
-              "patienceScore": 53.1,
-              "formScore": 18,
-              "splitScore": 37.9,
-              "varianceScore": 92,
-              "pitchTypeFitScore": 43.7,
-              "pitchTypeGrade": -0.4,
-              "pitchTypeCoveragePct": 100,
-              "matchupScore": 18,
-              "matchupGrade": -8
-            },
-            "pitchType": {
-              "fitScore": 43.7,
-              "fitGrade": -0.4,
-              "coveragePct": 100,
-              "summary": "4-Seam Fastball 33% / Cutter 26% / Sinker 17% | fit -0.4",
-              "topPitches": [
-                {
-                  "pitchType": "FF",
-                  "pitchName": "4-Seam Fastball",
-                  "pitchUsage": 33.2,
-                  "fitGrade": -4.42,
-                  "batterFitScore": 18,
-                  "qualityScore": 42.3
-                },
-                {
-                  "pitchType": "FC",
-                  "pitchName": "Cutter",
-                  "pitchUsage": 26.3,
-                  "fitGrade": -7.78,
-                  "batterFitScore": 18,
-                  "qualityScore": 60.8
-                },
-                {
-                  "pitchType": "SI",
-                  "pitchName": "Sinker",
-                  "pitchUsage": 16.9,
-                  "fitGrade": 10,
-                  "batterFitScore": 94,
-                  "qualityScore": 32.2
-                }
-              ]
-            },
-            "statcastTrend": {
-              "gamesSample7": 3,
-              "paSample7": 12,
-              "bbeSample7": 11,
-              "rolling7Xwoba": 0.224,
-              "rolling7Xba": 0.131,
-              "rolling7Xslg": 0.168,
-              "rolling7BarrelPct": 0,
-              "rolling7HardHitPct": 18.2,
-              "rolling7SweetSpotPct": 18.2,
-              "xwobaTrend": -0.12,
-              "barrelTrend": -1.5,
-              "hardHitTrend": 3.3,
-              "sweetSpotTrend": -11.7,
-              "trendSignal": "improving"
-            },
-            "tags": [
-              "cold",
-              "statcast up"
-            ],
-            "primaryTag": "cold",
-            "summary": ".210 AVG | .605 OPS | 22 H | 2 HR | 6g: .100 AVG | .350 OPS | 2 H | 0 HR | vs RHP: .172 AVG | .534 OPS | 2 HR | arsenal 4-Seam Fastball 33% / Cutter 26% / Sinker 17% | fit -0.4 | -8.0 matchup grade in a traffic-risk lane",
-            "matchupNote": "-8.00 vs Slade Cecconi"
+            "summary": ".273 AVG | .762 OPS | 9 H | 0 HR | 12g: .263 AVG | .785 OPS | 10 H | 0 HR | vs RHP: .292 AVG | .851 OPS | 0 HR | arsenal 4-Seam Fastball 33% / Cutter 26% / Sinker 17% | fit +4.8 | +8.3 matchup grade in a traffic-risk lane",
+            "matchupNote": "+8.30 vs Slade Cecconi"
           },
           {
             "playerId": 691785,
@@ -19066,37 +19061,37 @@
           "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
         },
         "aggregate": {
-          "averageMatchupGrade": 3.75,
+          "averageMatchupGrade": 4.84,
           "trackedBatters": 9,
-          "starterThreatCount": 7,
-          "contactCount": 4,
+          "starterThreatCount": 8,
+          "contactCount": 5,
           "powerCount": 1,
-          "platoonCount": 5,
-          "pitchTypeEdgeCount": 5,
-          "oppositeHandCount": 5,
-          "sameHandCount": 4,
-          "switchCount": 1,
+          "platoonCount": 6,
+          "pitchTypeEdgeCount": 6,
+          "oppositeHandCount": 6,
+          "sameHandCount": 3,
+          "switchCount": 2,
           "topThirdSplitCount": 2,
           "topThirdArsenalCount": 3,
           "heaterCount": 4,
           "suppressorCount": 2,
-          "platoonPressureIndex": 79.4,
-          "pitchTypePressureIndex": 88.9,
-          "bullpenPitchTypePressureIndex": 56,
+          "platoonPressureIndex": 87.7,
+          "pitchTypePressureIndex": 94,
+          "bullpenPitchTypePressureIndex": 57.5,
           "starterPressureIndex": 94,
           "overallPressureIndex": 94,
           "topThirdScore": 72.4,
-          "depthScore": 43.3,
+          "depthScore": 67,
           "bullpenOverperformHitters": [
+            {
+              "name": "Mickey Gasper",
+              "slot": 6,
+              "tag": "split edge | fit +5.7"
+            },
             {
               "name": "Ceddanne Rafaela",
               "slot": 2,
               "tag": "arsenal edge | fit +3.0"
-            },
-            {
-              "name": "Wilyer Abreu",
-              "slot": 3,
-              "tag": "split edge | fit +2.8"
             },
             {
               "name": "Wilyer Abreu",
@@ -19123,14 +19118,14 @@
           ],
           "bullpenOverperformHitters": [
             {
+              "name": "Mickey Gasper",
+              "slot": 6,
+              "tag": "split edge | fit +5.7"
+            },
+            {
               "name": "Ceddanne Rafaela",
               "slot": 2,
               "tag": "arsenal edge | fit +3.0"
-            },
-            {
-              "name": "Wilyer Abreu",
-              "slot": 3,
-              "tag": "split edge | fit +2.8"
             },
             {
               "name": "Wilyer Abreu",
@@ -19140,43 +19135,43 @@
           ],
           "underperformHitters": [
             {
-              "name": "Carlos Narvaez",
-              "tag": "cold | -8.00 vs Slade Cecconi"
-            },
-            {
               "name": "Marcelo Mayer",
               "tag": "split edge | -8.00 vs Slade Cecconi"
+            },
+            {
+              "name": "Mickey Gasper",
+              "tag": "split edge | +2.25 vs Slade Cecconi"
             }
           ],
-          "underperformNote": "Carlos Narvaez and Marcelo Mayer carry the softer form or split fit into a traffic-risk lane.",
+          "underperformNote": "Marcelo Mayer and Mickey Gasper carry the softer form or split fit into a traffic-risk lane.",
           "overview": "Red Sox can lean on Jarren Duran, Willson Contreras, Isiah Kiner-Falefa to drive early pressure against Slade Cecconi.",
-          "bullpenOverview": "Matt Festa is the first bridge look, and this lineup grades +0.7 against that likely first-up arsenal.",
+          "bullpenOverview": "Matt Festa is the first bridge look, and this lineup grades +1.2 against that likely first-up arsenal.",
           "topThirdScore": 72.4,
-          "middleScore": 87.1,
-          "depthScore": 43.3,
+          "middleScore": 76.7,
+          "depthScore": 67,
           "bullpenPitchTypeSummary": {
-            "pressureIndex": 56,
-            "averageFitScore": 54.5,
-            "averageFitGrade": -0.18,
+            "pressureIndex": 57.5,
+            "averageFitScore": 55.8,
+            "averageFitGrade": -0.03,
             "firstReliever": {
               "pitcherId": 670036,
               "name": "Matt Festa",
               "role": "bridge",
               "availabilityScore": 95,
               "firstRelieverLikelihood": 100,
-              "fitScore": 57.2,
-              "fitGrade": 0.68,
+              "fitScore": 60.9,
+              "fitGrade": 1.16,
               "pitchMixSummary": "Sweeper 46% / 4-Seam Fastball 41% / Cutter 8%",
               "topAttackers": [
+                {
+                  "name": "Mickey Gasper",
+                  "slot": 6,
+                  "tag": "split edge | fit +5.7"
+                },
                 {
                   "name": "Ceddanne Rafaela",
                   "slot": 2,
                   "tag": "arsenal edge | fit +3.0"
-                },
-                {
-                  "name": "Wilyer Abreu",
-                  "slot": 3,
-                  "tag": "split edge | fit +2.8"
                 }
               ]
             },
@@ -19187,19 +19182,19 @@
                 "role": "bridge",
                 "availabilityScore": 95,
                 "firstRelieverLikelihood": 100,
-                "fitScore": 57.2,
-                "fitGrade": 0.68,
+                "fitScore": 60.9,
+                "fitGrade": 1.16,
                 "pitchMixSummary": "Sweeper 46% / 4-Seam Fastball 41% / Cutter 8%",
                 "topAttackers": [
+                  {
+                    "name": "Mickey Gasper",
+                    "slot": 6,
+                    "tag": "split edge | fit +5.7"
+                  },
                   {
                     "name": "Ceddanne Rafaela",
                     "slot": 2,
                     "tag": "arsenal edge | fit +3.0"
-                  },
-                  {
-                    "name": "Wilyer Abreu",
-                    "slot": 3,
-                    "tag": "split edge | fit +2.8"
                   }
                 ]
               },
@@ -19209,8 +19204,8 @@
                 "role": "middle",
                 "availabilityScore": 74.9,
                 "firstRelieverLikelihood": 96.58,
-                "fitScore": 51.7,
-                "fitGrade": -1.04,
+                "fitScore": 50.7,
+                "fitGrade": -1.22,
                 "pitchMixSummary": "Slider 31% / Curveball 27% / Sinker 21%",
                 "topAttackers": [
                   {
@@ -19228,6 +19223,11 @@
             ],
             "topAttackers": [
               {
+                "name": "Mickey Gasper",
+                "slot": 6,
+                "tag": "split edge | fit +5.7"
+              },
+              {
                 "name": "Ceddanne Rafaela",
                 "slot": 2,
                 "tag": "arsenal edge | fit +3.0"
@@ -19236,14 +19236,9 @@
                 "name": "Wilyer Abreu",
                 "slot": 3,
                 "tag": "split edge | fit +2.8"
-              },
-              {
-                "name": "Wilyer Abreu",
-                "slot": 3,
-                "tag": "split edge | fit +2.8"
               }
             ],
-            "overview": "Matt Festa is the first bridge look, and this lineup grades +0.7 against that likely first-up arsenal."
+            "overview": "Matt Festa is the first bridge look, and this lineup grades +1.2 against that likely first-up arsenal."
           }
         }
       },
@@ -20820,23 +20815,23 @@
     "cubs-cardinals": {
       "gameId": "cubs-cardinals",
       "title": "Cubs @ Cardinals",
-      "snapshot": "2026-05-29T11:49:33.610Z",
+      "snapshot": "2026-05-29T17:59:43.195Z",
       "status": {
         "away": "partial",
         "home": "partial"
       },
       "weather": {
         "icon": "partly-cloudy-day",
-        "summary": "26% Precipitation 81° Wind 7 mph R-L",
-        "precipitationPct": 26,
+        "summary": "15% Rain 81° Wind 7 mph R-L",
+        "precipitationPct": 0,
         "temperatureF": 81,
         "windMph": 7,
         "windDirection": "R-L",
-        "label": "81°F | Wind 7 mph R-L | 26% precip"
+        "label": "81°F | Wind 7 mph R-L | 0% precip"
       },
       "marketWeatherContext": {
-        "line": "CHC -139",
-        "total": "8.0 Runs",
+        "line": "CHC -131",
+        "total": "7.5 Runs",
         "source": "RotoWire daily lineups + weather"
       },
       "away": {
@@ -20847,7 +20842,7 @@
           "name": "Andre Pallante",
           "hand": "R",
           "type": "Balanced",
-          "pitchMixSummary": "4-Seam Fastball 31% / Slider 28% / Sinker 19%"
+          "pitchMixSummary": "4-Seam Fastball 31% / Slider 28% / Curveball 19%"
         },
         "opposingRelievers": [
           {
@@ -20962,7 +20957,7 @@
               "fitScore": 68.4,
               "fitGrade": 2.74,
               "coveragePct": 100,
-              "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +2.7",
+              "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +2.7",
               "topPitches": [
                 {
                   "pitchType": "FF",
@@ -20981,12 +20976,12 @@
                   "qualityScore": 94
                 },
                 {
-                  "pitchType": "SI",
-                  "pitchName": "Sinker",
+                  "pitchType": "CU",
+                  "pitchName": "Curveball",
                   "pitchUsage": 18.9,
-                  "fitGrade": 9.85,
-                  "batterFitScore": 94,
-                  "qualityScore": 39.8
+                  "fitGrade": -2.67,
+                  "batterFitScore": 30.8,
+                  "qualityScore": 45.5
                 }
               ]
             },
@@ -21014,7 +21009,7 @@
               "statcast up"
             ],
             "primaryTag": "carry",
-            "summary": ".224 AVG | .677 OPS | 46 H | 6 HR | 14g: .217 AVG | .798 OPS | 10 H | 2 HR | vs RHP: .201 AVG | .637 OPS | 4 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +2.7 | +7.3 matchup grade in a neutral lane",
+            "summary": ".224 AVG | .677 OPS | 46 H | 6 HR | 14g: .217 AVG | .798 OPS | 10 H | 2 HR | vs RHP: .201 AVG | .637 OPS | 4 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +2.7 | +7.3 matchup grade in a neutral lane",
             "matchupNote": "+7.32 vs Andre Pallante"
           },
           {
@@ -21113,7 +21108,7 @@
               "fitScore": 52.3,
               "fitGrade": 0.96,
               "coveragePct": 100,
-              "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +1.0",
+              "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +1.0",
               "topPitches": [
                 {
                   "pitchType": "FF",
@@ -21132,12 +21127,12 @@
                   "qualityScore": 94
                 },
                 {
-                  "pitchType": "SI",
-                  "pitchName": "Sinker",
+                  "pitchType": "CU",
+                  "pitchName": "Curveball",
                   "pitchUsage": 18.9,
-                  "fitGrade": 9.85,
-                  "batterFitScore": 94,
-                  "qualityScore": 39.8
+                  "fitGrade": -3.2,
+                  "batterFitScore": 27.9,
+                  "qualityScore": 45.5
                 }
               ]
             },
@@ -21163,7 +21158,7 @@
               "statcast fade"
             ],
             "primaryTag": "traffic",
-            "summary": ".254 AVG | .705 OPS | 57 H | 4 HR | 14g: .185 AVG | .452 OPS | 10 H | 0 HR | vs RHP: .242 AVG | .668 OPS | 2 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +1.0 | -8.0 matchup grade in a neutral lane",
+            "summary": ".254 AVG | .705 OPS | 57 H | 4 HR | 14g: .185 AVG | .452 OPS | 10 H | 0 HR | vs RHP: .242 AVG | .668 OPS | 2 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +1.0 | -8.0 matchup grade in a neutral lane",
             "matchupNote": "-8.00 vs Andre Pallante"
           },
           {
@@ -21262,7 +21257,7 @@
               "fitScore": 53.2,
               "fitGrade": 1.86,
               "coveragePct": 100,
-              "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +1.9",
+              "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +1.9",
               "topPitches": [
                 {
                   "pitchType": "FF",
@@ -21281,12 +21276,12 @@
                   "qualityScore": 94
                 },
                 {
-                  "pitchType": "SI",
-                  "pitchName": "Sinker",
+                  "pitchType": "CU",
+                  "pitchName": "Curveball",
                   "pitchUsage": 18.9,
-                  "fitGrade": 9.85,
-                  "batterFitScore": 94,
-                  "qualityScore": 39.8
+                  "fitGrade": -2.27,
+                  "batterFitScore": 33,
+                  "qualityScore": 45.5
                 }
               ]
             },
@@ -21314,7 +21309,7 @@
               "statcast up"
             ],
             "primaryTag": "carry",
-            "summary": ".229 AVG | .750 OPS | 46 H | 6 HR | 14g: .200 AVG | .852 OPS | 10 H | 4 HR | vs RHP: .243 AVG | .799 OPS | 5 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +1.9 | +8.8 matchup grade in a neutral lane",
+            "summary": ".229 AVG | .750 OPS | 46 H | 6 HR | 14g: .200 AVG | .852 OPS | 10 H | 4 HR | vs RHP: .243 AVG | .799 OPS | 5 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +1.9 | +8.8 matchup grade in a neutral lane",
             "matchupNote": "+8.75 vs Andre Pallante"
           },
           {
@@ -21413,7 +21408,7 @@
               "fitScore": 46.5,
               "fitGrade": 0.64,
               "coveragePct": 100,
-              "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +0.6",
+              "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +0.6",
               "topPitches": [
                 {
                   "pitchType": "FF",
@@ -21432,12 +21427,12 @@
                   "qualityScore": 94
                 },
                 {
-                  "pitchType": "SI",
-                  "pitchName": "Sinker",
+                  "pitchType": "CU",
+                  "pitchName": "Curveball",
                   "pitchUsage": 18.9,
-                  "fitGrade": 3.67,
-                  "batterFitScore": 60,
-                  "qualityScore": 39.8
+                  "fitGrade": -5,
+                  "batterFitScore": 18,
+                  "qualityScore": 45.5
                 }
               ]
             },
@@ -21461,7 +21456,7 @@
               "statcast fade"
             ],
             "primaryTag": "statcast fade",
-            "summary": ".260 AVG | .697 OPS | 59 H | 4 HR | 14g: .333 AVG | .794 OPS | 20 H | 0 HR | vs RHP: .256 AVG | .691 OPS | 3 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +0.6 | +4.3 matchup grade in a neutral lane",
+            "summary": ".260 AVG | .697 OPS | 59 H | 4 HR | 14g: .333 AVG | .794 OPS | 20 H | 0 HR | vs RHP: .256 AVG | .691 OPS | 3 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +0.6 | +4.3 matchup grade in a neutral lane",
             "matchupNote": "+4.30 vs Andre Pallante"
           },
           {
@@ -21560,7 +21555,7 @@
               "fitScore": 75.6,
               "fitGrade": 3.77,
               "coveragePct": 100,
-              "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +3.8",
+              "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +3.8",
               "topPitches": [
                 {
                   "pitchType": "FF",
@@ -21579,12 +21574,12 @@
                   "qualityScore": 94
                 },
                 {
-                  "pitchType": "SI",
-                  "pitchName": "Sinker",
+                  "pitchType": "CU",
+                  "pitchName": "Curveball",
                   "pitchUsage": 18.9,
-                  "fitGrade": 9.13,
-                  "batterFitScore": 90,
-                  "qualityScore": 39.8
+                  "fitGrade": -2.4,
+                  "batterFitScore": 32.3,
+                  "qualityScore": 45.5
                 }
               ]
             },
@@ -21612,7 +21607,7 @@
               "statcast fade"
             ],
             "primaryTag": "carry",
-            "summary": ".225 AVG | .806 OPS | 45 H | 12 HR | 10g: .304 AVG | .986 OPS | 14 H | 4 HR | vs RHP: .246 AVG | .882 OPS | 9 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +3.8 | +10.0 matchup grade in a neutral lane",
+            "summary": ".225 AVG | .806 OPS | 45 H | 12 HR | 10g: .304 AVG | .986 OPS | 14 H | 4 HR | vs RHP: .246 AVG | .882 OPS | 9 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +3.8 | +10.0 matchup grade in a neutral lane",
             "matchupNote": "+10.00 vs Andre Pallante"
           },
           {
@@ -21711,7 +21706,7 @@
               "fitScore": 58.6,
               "fitGrade": 1.83,
               "coveragePct": 100,
-              "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +1.8",
+              "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +1.8",
               "topPitches": [
                 {
                   "pitchType": "FF",
@@ -21730,12 +21725,12 @@
                   "qualityScore": 94
                 },
                 {
-                  "pitchType": "SI",
-                  "pitchName": "Sinker",
+                  "pitchType": "CU",
+                  "pitchName": "Curveball",
                   "pitchUsage": 18.9,
-                  "fitGrade": 9.85,
-                  "batterFitScore": 94,
-                  "qualityScore": 39.8
+                  "fitGrade": -5,
+                  "batterFitScore": 18,
+                  "qualityScore": 45.5
                 }
               ]
             },
@@ -21761,7 +21756,7 @@
               "statcast up"
             ],
             "primaryTag": "arsenal edge",
-            "summary": ".239 AVG | .730 OPS | 38 H | 7 HR | 14g: .120 AVG | .274 OPS | 6 H | 0 HR | vs RHP: .225 AVG | .709 OPS | 6 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +1.8 | -8.0 matchup grade in a neutral lane",
+            "summary": ".239 AVG | .730 OPS | 38 H | 7 HR | 14g: .120 AVG | .274 OPS | 6 H | 0 HR | vs RHP: .225 AVG | .709 OPS | 6 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +1.8 | -8.0 matchup grade in a neutral lane",
             "matchupNote": "-8.00 vs Andre Pallante"
           },
           {
@@ -21860,7 +21855,7 @@
               "fitScore": 37.8,
               "fitGrade": -1.22,
               "coveragePct": 100,
-              "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit -1.2",
+              "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit -1.2",
               "topPitches": [
                 {
                   "pitchType": "FF",
@@ -21879,12 +21874,12 @@
                   "qualityScore": 94
                 },
                 {
-                  "pitchType": "SI",
-                  "pitchName": "Sinker",
+                  "pitchType": "CU",
+                  "pitchName": "Curveball",
                   "pitchUsage": 18.9,
-                  "fitGrade": 3.91,
-                  "batterFitScore": 61.3,
-                  "qualityScore": 39.8
+                  "fitGrade": -5,
+                  "batterFitScore": 18,
+                  "qualityScore": 45.5
                 }
               ]
             },
@@ -21910,7 +21905,7 @@
               "statcast up"
             ],
             "primaryTag": "split edge",
-            "summary": ".232 AVG | .726 OPS | 29 H | 6 HR | 14g: .143 AVG | .511 OPS | 4 H | 0 HR | vs RHP: .237 AVG | .737 OPS | 6 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit -1.2 | -7.6 matchup grade in a neutral lane",
+            "summary": ".232 AVG | .726 OPS | 29 H | 6 HR | 14g: .143 AVG | .511 OPS | 4 H | 0 HR | vs RHP: .237 AVG | .737 OPS | 6 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit -1.2 | -7.6 matchup grade in a neutral lane",
             "matchupNote": "-7.61 vs Andre Pallante"
           },
           {
@@ -22009,7 +22004,7 @@
               "fitScore": 62.1,
               "fitGrade": 2.77,
               "coveragePct": 100,
-              "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +2.8",
+              "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +2.8",
               "topPitches": [
                 {
                   "pitchType": "FF",
@@ -22028,12 +22023,12 @@
                   "qualityScore": 94
                 },
                 {
-                  "pitchType": "SI",
-                  "pitchName": "Sinker",
+                  "pitchType": "CU",
+                  "pitchName": "Curveball",
                   "pitchUsage": 18.9,
-                  "fitGrade": 7.84,
-                  "batterFitScore": 82.9,
-                  "qualityScore": 39.8
+                  "fitGrade": 5.13,
+                  "batterFitScore": 73.7,
+                  "qualityScore": 45.5
                 }
               ]
             },
@@ -22059,7 +22054,7 @@
               "statcast up"
             ],
             "primaryTag": "arsenal edge",
-            "summary": ".306 AVG | .784 OPS | 41 H | 2 HR | 12g: .375 AVG | .819 OPS | 12 H | 0 HR | vs RHP: .282 AVG | .669 OPS | 0 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +2.8 | +2.0 matchup grade in a neutral lane",
+            "summary": ".306 AVG | .784 OPS | 41 H | 2 HR | 12g: .375 AVG | .819 OPS | 12 H | 0 HR | vs RHP: .282 AVG | .669 OPS | 0 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +2.8 | +2.0 matchup grade in a neutral lane",
             "matchupNote": "+1.96 vs Andre Pallante"
           },
           {
@@ -22158,7 +22153,7 @@
               "fitScore": 52.4,
               "fitGrade": 1.75,
               "coveragePct": 100,
-              "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +1.8",
+              "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +1.8",
               "topPitches": [
                 {
                   "pitchType": "FF",
@@ -22177,12 +22172,12 @@
                   "qualityScore": 94
                 },
                 {
-                  "pitchType": "SI",
-                  "pitchName": "Sinker",
+                  "pitchType": "CU",
+                  "pitchName": "Curveball",
                   "pitchUsage": 18.9,
-                  "fitGrade": 9.85,
-                  "batterFitScore": 94,
-                  "qualityScore": 39.8
+                  "fitGrade": -5,
+                  "batterFitScore": 18,
+                  "qualityScore": 45.5
                 }
               ]
             },
@@ -22208,7 +22203,7 @@
               "statcast fade"
             ],
             "primaryTag": "arsenal edge",
-            "summary": ".187 AVG | .632 OPS | 34 H | 7 HR | 12g: .150 AVG | .461 OPS | 6 H | 0 HR | vs RHP: .187 AVG | .640 OPS | 4 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +1.8 | -6.4 matchup grade in a neutral lane",
+            "summary": ".187 AVG | .632 OPS | 34 H | 7 HR | 12g: .150 AVG | .461 OPS | 6 H | 0 HR | vs RHP: .187 AVG | .640 OPS | 4 HR | arsenal 4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +1.8 | -6.4 matchup grade in a neutral lane",
             "matchupNote": "-6.36 vs Andre Pallante"
           }
         ],
@@ -23825,7 +23820,7 @@
     "tigers-white-sox": {
       "gameId": "tigers-white-sox",
       "title": "Tigers @ White Sox",
-      "snapshot": "2026-05-29T11:49:33.611Z",
+      "snapshot": "2026-05-29T17:59:43.196Z",
       "status": {
         "away": "partial",
         "home": "partial"
@@ -23840,7 +23835,7 @@
         "label": "67°F | Wind 8 mph L-R | 0% precip"
       },
       "marketWeatherContext": {
-        "line": "DET -120",
+        "line": "DET -117",
         "total": "8.5 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -26968,7 +26963,7 @@
     "royals-rangers": {
       "gameId": "royals-rangers",
       "title": "Royals @ Rangers",
-      "snapshot": "2026-05-29T11:49:33.612Z",
+      "snapshot": "2026-05-29T17:59:43.197Z",
       "status": {
         "away": "partial",
         "home": "partial"
@@ -26983,7 +26978,7 @@
         "label": "Dome In Domed Stadium"
       },
       "marketWeatherContext": {
-        "line": "TEX -128",
+        "line": "TEX -129",
         "total": "7.5 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -29980,7 +29975,7 @@
     "brewers-astros": {
       "gameId": "brewers-astros",
       "title": "Brewers @ Astros",
-      "snapshot": "2026-05-29T11:49:33.613Z",
+      "snapshot": "2026-05-29T17:59:43.197Z",
       "status": {
         "away": "partial",
         "home": "partial"
@@ -33125,7 +33120,7 @@
     "giants-rockies": {
       "gameId": "giants-rockies",
       "title": "Giants @ Rockies",
-      "snapshot": "2026-05-29T11:49:33.614Z",
+      "snapshot": "2026-05-29T17:59:43.199Z",
       "status": {
         "away": "partial",
         "home": "partial"
@@ -33140,7 +33135,7 @@
         "label": "80°F | Wind 8 mph R-L | 11% precip"
       },
       "marketWeatherContext": {
-        "line": "SF -169",
+        "line": "SF -157",
         "total": "10.5 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -36299,7 +36294,7 @@
     "yankees-athletics": {
       "gameId": "yankees-athletics",
       "title": "Yankees @ Athletics",
-      "snapshot": "2026-05-29T11:49:33.615Z",
+      "snapshot": "2026-05-29T17:59:43.200Z",
       "status": {
         "away": "partial",
         "home": "partial"
@@ -36314,8 +36309,8 @@
         "label": "75°F | 2% precip"
       },
       "marketWeatherContext": {
-        "line": "NYY -152",
-        "total": "10.0 Runs",
+        "line": "NYY -142",
+        "total": "9.5 Runs",
         "source": "RotoWire daily lineups + weather"
       },
       "away": {
@@ -39317,7 +39312,7 @@
     "diamondbacks-mariners": {
       "gameId": "diamondbacks-mariners",
       "title": "Diamondbacks @ Mariners",
-      "snapshot": "2026-05-29T11:49:33.615Z",
+      "snapshot": "2026-05-29T17:59:43.200Z",
       "status": {
         "away": "partial",
         "home": "partial"
@@ -39332,7 +39327,7 @@
         "label": "Dome In Domed Stadium"
       },
       "marketWeatherContext": {
-        "line": "SEA -154",
+        "line": "SEA -143",
         "total": "7.0 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -42482,7 +42477,7 @@
     "phillies-dodgers": {
       "gameId": "phillies-dodgers",
       "title": "Phillies @ Dodgers",
-      "snapshot": "2026-05-29T11:49:33.616Z",
+      "snapshot": "2026-05-29T17:59:43.201Z",
       "status": {
         "away": "partial",
         "home": "partial"
@@ -42497,7 +42492,7 @@
         "label": "64°F | Wind 13 mph Out | 0% precip"
       },
       "marketWeatherContext": {
-        "line": "LAD -119",
+        "line": "LAD -120",
         "total": "8.0 Runs",
         "source": "RotoWire daily lineups + weather"
       },
@@ -45926,27 +45921,27 @@
         ]
       },
       "Orioles": {
-        "averageMatchupGrade": 3.41,
+        "averageMatchupGrade": 2.22,
         "trackedBatters": 9,
-        "starterThreatCount": 6,
+        "starterThreatCount": 4,
         "contactCount": 1,
-        "powerCount": 2,
-        "platoonCount": 7,
-        "pitchTypeEdgeCount": 0,
-        "oppositeHandCount": 6,
-        "sameHandCount": 3,
+        "powerCount": 3,
+        "platoonCount": 6,
+        "pitchTypeEdgeCount": 1,
+        "oppositeHandCount": 5,
+        "sameHandCount": 4,
         "switchCount": 2,
-        "topThirdSplitCount": 2,
-        "topThirdArsenalCount": 0,
+        "topThirdSplitCount": 3,
+        "topThirdArsenalCount": 1,
         "heaterCount": 5,
         "suppressorCount": 2,
-        "platoonPressureIndex": 92,
-        "pitchTypePressureIndex": 31.5,
+        "platoonPressureIndex": 85.5,
+        "pitchTypePressureIndex": 47.3,
         "bullpenPitchTypePressureIndex": 46.2,
-        "starterPressureIndex": 94,
-        "overallPressureIndex": 93.4,
-        "topThirdScore": 51.3,
-        "depthScore": 85.1,
+        "starterPressureIndex": 90,
+        "overallPressureIndex": 89.4,
+        "topThirdScore": 61.2,
+        "depthScore": 80.4,
         "bullpenOverperformHitters": [
           {
             "name": "Jackson Holliday",
@@ -46132,37 +46127,37 @@
     },
     "red-sox-guardians": {
       "Red Sox": {
-        "averageMatchupGrade": 3.75,
+        "averageMatchupGrade": 4.84,
         "trackedBatters": 9,
-        "starterThreatCount": 7,
-        "contactCount": 4,
+        "starterThreatCount": 8,
+        "contactCount": 5,
         "powerCount": 1,
-        "platoonCount": 5,
-        "pitchTypeEdgeCount": 5,
-        "oppositeHandCount": 5,
-        "sameHandCount": 4,
-        "switchCount": 1,
+        "platoonCount": 6,
+        "pitchTypeEdgeCount": 6,
+        "oppositeHandCount": 6,
+        "sameHandCount": 3,
+        "switchCount": 2,
         "topThirdSplitCount": 2,
         "topThirdArsenalCount": 3,
         "heaterCount": 4,
         "suppressorCount": 2,
-        "platoonPressureIndex": 79.4,
-        "pitchTypePressureIndex": 88.9,
-        "bullpenPitchTypePressureIndex": 56,
+        "platoonPressureIndex": 87.7,
+        "pitchTypePressureIndex": 94,
+        "bullpenPitchTypePressureIndex": 57.5,
         "starterPressureIndex": 94,
         "overallPressureIndex": 94,
         "topThirdScore": 72.4,
-        "depthScore": 43.3,
+        "depthScore": 67,
         "bullpenOverperformHitters": [
+          {
+            "name": "Mickey Gasper",
+            "slot": 6,
+            "tag": "split edge | fit +5.7"
+          },
           {
             "name": "Ceddanne Rafaela",
             "slot": 2,
             "tag": "arsenal edge | fit +3.0"
-          },
-          {
-            "name": "Wilyer Abreu",
-            "slot": 3,
-            "tag": "split edge | fit +2.8"
           },
           {
             "name": "Wilyer Abreu",

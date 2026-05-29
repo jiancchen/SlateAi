@@ -82,6 +82,8 @@ For the current `May 29` prop export:
 Reference files:
 
 - [/Users/jcchen/Documents/New project/development-docs/mlb-hitter-statcast-signal-052826.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-hitter-statcast-signal-052826.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb-live-gate-candidates-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-live-gate-candidates-052926.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb-pitcher-strikeout-gates-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-pitcher-strikeout-gates-052926.md)
 - [/Users/jcchen/Documents/New project/data-private/predictions/mlb-player-props/2026-05-29-player-props.json](/Users/jcchen/Documents/New%20project/data-private/predictions/mlb-player-props/2026-05-29-player-props.json)
 - [/Users/jcchen/Documents/New project/development-docs/mlb-hr-filter-signal-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-hr-filter-signal-052926.md)
 
@@ -116,7 +118,10 @@ The `May 29` site payload is refreshed and published, but lineup maturity is sti
 - `0` posted team lineups
 - `30` partial team lineups
 - `12` HR picks
-- `29` tracked props
+- `33` tracked props
+  - `17` total bases
+  - `3` singles
+  - `13` pitcher strikeouts
 
 That means the current board is usable as a live pre-lineup desk, but not as a fully locked final board.
 
@@ -127,6 +132,16 @@ Trust hierarchy for this snapshot:
 - cautious lane: singles
 - low-trust lane: HR
 - still low-trust on model-fitness grounds: moneyline, first 5, first inning as standalone ML recommendations
+
+The newest keeper/fade gates from the overnight pass:
+
+- `TB`: keep hitters with **high 7d xSLG + high 7d hard-hit%**
+- `TB`: fade hitters with **low 7d xSLG + high cold-streak**
+- `Singles`: keep hitters with **high 7d xBA + high sweet-spot%**
+- `Singles`: fade **low xBA + high whiff**
+- `F5`: haircut or pass **dead-early-risk + low-conversion** side picks
+- `K overs`: best current keep lane is **posted lineup + opponent-whiff-lane + normal starter volume**
+- `K unders`: still weaker than the over lane; keep in caution mode until the sample grows
 
 ## 6. Specific flags for today
 
@@ -180,3 +195,11 @@ It is set to keep working through the overnight window by:
   - pitcher `hard-hit` / `barrel` / `xSLG` allowed
 - Do not promote HR off Statcast alone yet; keep using it as a stricter filter.
 - Keep ML/F5/1st-inning deployment conservative until a pass-first or hold/collapse framing model beats the current baseline.
+
+## 9. Live side flags now surfaced
+
+- The MLB side analysis layer now surfaces the new state buckets directly in its note stack:
+  - `opponent slumping loser`
+  - `loss but not dead` resistance
+  - `pick high snapback / low form` danger
+- This is intentionally a light-touch confidence/volatility haircut, not a full side-model replacement.

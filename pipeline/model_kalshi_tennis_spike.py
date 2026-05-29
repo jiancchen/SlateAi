@@ -52,6 +52,10 @@ def profit_for_target(entry: float, max_bid: float, target: float) -> float:
 
 def stabilization_vetoes(entry: float, flow: dict[str, Any], price_history: dict[str, Any] | None = None) -> list[str]:
     vetoes: list[str] = []
+    same_favorite = (price_history or {}).get("sameFavorite") or []
+    similar_entry = (price_history or {}).get("similarEntry") or {}
+    if not same_favorite and not (similar_entry.get("n") or 0):
+        vetoes.append("no Kalshi price-history comp; do not promote pre-match")
     opponent_rank = flow.get("opponentRank")
     favorite_is_hot = (
         opponent_rank is not None
@@ -70,7 +74,6 @@ def stabilization_vetoes(entry: float, flow: dict[str, Any], price_history: dict
         vetoes.append("top-form favorite can bury this before a spike")
     if entry <= 0.12 and severe_form_gap and no_pressure_edge and (flow.get("hold") or 100) < 65:
         vetoes.append("weak hold plus no return-pressure edge")
-    same_favorite = (price_history or {}).get("sameFavorite") or []
     if same_favorite:
         hit_2x_rate = sum(1 for row in same_favorite if row.get("hit2x")) / len(same_favorite)
         if favorite_is_hot and cannot_stabilize and hit_2x_rate < 0.5:

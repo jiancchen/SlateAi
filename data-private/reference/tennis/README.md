@@ -51,4 +51,6 @@ Kalshi trade-to-sell checks:
 - Treat cheap-underdog prediction-market rows as trade candidates only after a stabilization check. A dog needs enough hold, second-serve, error-control, or return-pressure evidence to survive the first service cycles.
 - Query `tennis_kalshi_market_candles` and `tennis_kalshi_intramatch_trade_features` before promoting a row. Store same-favorite history and similar-entry history on the candidate payload.
 - Same-favorite history should include the prior opponent, entry ask, max bid/trade, scoreline, and whether the contract doubled. This catches hot favorites whose opponents do not actually re-rate upward.
+- Promotion gate: no same-favorite history and no similar-entry bucket means no pre-match `trade-to-sell` label. Mark it `data incomplete` or `pass` until a contract history comp exists.
+- User-facing trade detail must display the exact price-history rows used. Generic weakness text is not enough evidence for an entry/exit recommendation.
 - If the favorite is top-20 and in strong clay/recent form, and the dog has weak hold/error profile with no return-pressure edge, veto or downgrade even when the raw entry price is attractive.

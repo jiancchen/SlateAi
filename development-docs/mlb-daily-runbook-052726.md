@@ -40,6 +40,37 @@ What it does:
 - republishes site/API payloads so `History`, `Models`, and `Stories` update automatically
 - reruns the MLB research reports tied to daily follow-up
 
+## Backward analysis checklist
+
+After the follow-up run finishes, the default review should answer these questions:
+
+1. Did the side board fail because the wrong team was picked, or because the game stayed `dead early` and the pick never got going?
+2. Were `F5` misses really starter misses, or were they timing / scoring-shape misses?
+3. Did the `YRFI/NRFI` lane miss because:
+   - the wrong offense was expected to score,
+   - the timing was wrong,
+   - or a tiny pitcher sample was overweighted?
+4. Which prop lanes actually worked by type:
+   - `pitcher strikeouts`
+   - `total bases`
+   - `singles`
+   - `home runs`
+5. Did any current research flags show up again:
+   - `dead_early_loss`
+   - `slumping loser`
+   - `loss but not dead`
+   - `high snapback, low form`
+6. Did the side-import / backtest tables write correctly, or did the warehouse miss a grading path?
+
+Daily backward-analysis artifacts should include:
+
+- the settled history journal
+- the postmortem markdown
+- the chaos / follow-up markdown
+- any refreshed market-model or prop-signal research docs touched by the day
+
+If the day exposed a repeat failure mode, update the relevant research doc or add a new one before moving on to the next slate.
+
 ## Probable starter watcher
 
 Run this when you want the board to react to listed-starter changes in near real time:
@@ -92,4 +123,5 @@ npm run data:run:mlb-followup -- --date 2026-05-28
 - The pregame run is safe to rerun multiple times in one day as lineups and probable pitchers change.
 - The watcher is designed for probable-starter changes specifically, especially call-up/debut swaps that should force an immediate board rebuild.
 - The follow-up run is the source of truth for daily MLB history, models, and postmortem output.
+- The backward-analysis checklist above is part of the default postgame routine now, not an optional extra.
 - If a day uses a different prop or HR model name, pass the same optional flags already supported by `data:close:mlb-day`.

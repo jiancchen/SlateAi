@@ -307,6 +307,34 @@ def build_side_rows(prediction_date: str) -> tuple[list[SideRow], dict[str, int 
 
 
 def load_prop_rows(prediction_date: str) -> tuple[list[PropRow], list[PropRow]]:
+    journal_path = ROOT / "data-private" / "history" / f"mlb-results-{prediction_date}.jsonl"
+    if journal_path.exists():
+        settled_rows: list[PropRow] = []
+        for line in journal_path.read_text().splitlines():
+            if not line.strip():
+                continue
+            row = json.loads(line)
+            if row.get("marketType") != "playerProp":
+                continue
+            result = row.get("result") or {}
+            hit_flag = result.get("hit")
+            if hit_flag not in (True, False):
+                continue
+            settled_rows.append(
+                PropRow(
+                    rank=int(row.get("confidenceRank") or row.get("rank") or 999),
+                    confidence=int(row.get("confidence") or 0),
+                    player_name=str(row.get("playerName") or ""),
+                    prop_type=str(row.get("propType") or ""),
+                    market_label=str(row.get("marketLabel") or row.get("predictedPick") or ""),
+                    hit_flag=bool(hit_flag),
+                    actual_value=float(result.get("actualValue") or 0.0),
+                    result_label=str(row.get("resultJustification") or ""),
+                )
+            )
+        top_eight = sorted(settled_rows, key=lambda row: (-row.confidence, row.rank))[:8]
+        return settled_rows, top_eight
+
     props_path = ROOT / "data-private" / "predictions" / "mlb-player-props" / f"{prediction_date}-player-props.json"
     props = load_json(props_path)["picks"]
 

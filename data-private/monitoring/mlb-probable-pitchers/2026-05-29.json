@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-29T13:46:45Z",
+  "fetchedAt": "2026-05-29T17:56:59Z",
   "games": [
     {
       "awayPitcher": {
@@ -81,13 +81,13 @@
     },
     {
       "awayPitcher": {
-        "era": null,
-        "losses": null,
-        "pitchHand": "",
-        "pitcherId": null,
-        "pitcherName": "TBD",
-        "strikeouts": null,
-        "wins": null
+        "era": 0.0,
+        "losses": 0,
+        "pitchHand": "L",
+        "pitcherId": 671936,
+        "pitcherName": "Adam Macko",
+        "strikeouts": 4,
+        "wins": 1
       },
       "awayTeam": "Toronto Blue Jays",
       "gameDate": "2026-05-29",

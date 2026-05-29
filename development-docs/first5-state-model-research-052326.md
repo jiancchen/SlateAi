@@ -8,7 +8,7 @@ This is a separate first-five research lane built on the new state snapshots, no
 | --- | --- | --- | --- | --- | --- | --- |
 | Reserve (`05-10` to `05-15`) | 75 | 0.600 | 0.703 | 0.147 | 6.3 | 59.9 |
 | Current (`05-16` to `05-22`) | 93 | 0.452 | 0.553 | 0.183 | 6.6 | 71.7 |
-| Combined | 168 | 0.518 | 0.621 | 0.167 | 6.5 | 66.4 |
+| Combined | 168 | 0.518 | 0.621 | 0.167 | 6.4 | 66.4 |
 
 ## First-Five Buckets
 

@@ -27,12 +27,12 @@ Target date: 2026-05-29
 |watch|Tommy Paul|27c|68c|54%|6.2|Casper Ruud vs Tommy Paul|
 |watch|Solana Sierra|25c|62c|52%|4.7|Solana Sierra vs Sorana Cirstea|
 |watch|Jesper De Jong|29c|72c|47%|2.0|Karen Khachanov vs Jesper de Jong|
-|watch|Xiyu Wang|31c|78c|46%|2.0|Wang Xiyu vs Yuliia Starodubtseva|
 |watch|Nuno Borges|26c|65c|46%|0.7|Nuno Borges vs Andrey Rublev|
 |pass|Peyton Stearns|29c|72c|40%|-2.4|Peyton Stearns vs Belinda Bencic|
 |pass|Joao Fonseca|33c|82c|40%|-2.9|Joao Fonseca vs Novak Djokovic|
 |pass|Jakub Mensik|19c|48c|39%|-3.4|Alex de Minaur vs Jakub Mensik|
-|pass|Pablo Carreno Busta|43c|95c|35%|-12.0|Thiago Agustin Tirante vs Pablo Carreno Busta|
 |pass|Tamara Korpatsch|8c|16c|36%|-3.6|Elina Svitolina vs Tamara Korpatsch|
+|pass|Xiyu Wang|31c|62c|28%|-16.0|Wang Xiyu vs Yuliia Starodubtseva|
 |pass|Magda Linette|7c|14c|32%|-3.8|Magda Linette vs Iga Swiatek|
 |pass|Viktorija Golubic|8c|16c|30%|-4.5|Marta Kostyuk vs Viktorija Golubic|
+|pass|Pablo Carreno Busta|43c|86c|17%|-30.5|Thiago Agustin Tirante vs Pablo Carreno Busta|

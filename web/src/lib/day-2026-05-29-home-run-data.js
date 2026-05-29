@@ -1,7 +1,7 @@
 export const homeRunBoardMeta = {
   "modelName": "statcast-hr-prototype-v3",
   "date": "2026-05-29",
-  "generatedAt": "2026-05-29T11:49:50.412Z",
+  "generatedAt": "2026-05-29T17:59:59.871Z",
   "sources": [
     "https://baseballsavant.mlb.com/leaderboard/home-runs",
     "https://baseballsavant.mlb.com/leaderboard/home-runs?year=2026&player_type=Batter&cat=xhr&team=&min=0&csv=true",
@@ -2316,12 +2316,12 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "clear-day",
-            "summary": "0% 78° Wind 8 mph",
+            "summary": "0% 77° Wind 8 mph",
             "precipitationPct": 0,
-            "temperatureF": 78,
+            "temperatureF": 77,
             "windMph": null,
             "windDirection": "",
-            "label": "78°F | 0% precip"
+            "label": "77°F | 0% precip"
           },
           "total": 9
         },
@@ -2369,7 +2369,7 @@ export const homeRunTargetsByGame = {
           "83% off starters | 17% off relievers | avg inning 2.8",
           "Most recent damage has skewed toward Slider / Four-Seam Fastball",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 78°F | 0% precip",
+          "Weather lane: 77°F | 0% precip",
           "Slot 1 | carry | lineup priority 54.3 | bullpen vulnerability -2.5",
           "Statcast trend improving | HH 29.7% | Barrel 10.8%"
         ],
@@ -2475,12 +2475,12 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "clear-day",
-            "summary": "0% 78° Wind 8 mph",
+            "summary": "0% 77° Wind 8 mph",
             "precipitationPct": 0,
-            "temperatureF": 78,
+            "temperatureF": 77,
             "windMph": null,
             "windDirection": "",
-            "label": "78°F | 0% precip"
+            "label": "77°F | 0% precip"
           },
           "total": 9
         },
@@ -2528,7 +2528,7 @@ export const homeRunTargetsByGame = {
           "50% off starters | 50% off relievers | avg inning 5",
           "Most recent damage has skewed toward Cutter / Four-Seam Fastball",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 78°F | 0% precip",
+          "Weather lane: 77°F | 0% precip",
           "Slot 4 | carry | lineup priority 48.7 | bullpen vulnerability -2.5",
           "Statcast trend improving | HH 26.3% | Barrel 7.9%"
         ],
@@ -2634,12 +2634,12 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "clear-day",
-            "summary": "0% 78° Wind 8 mph",
+            "summary": "0% 77° Wind 8 mph",
             "precipitationPct": 0,
-            "temperatureF": 78,
+            "temperatureF": 77,
             "windMph": null,
             "windDirection": "",
-            "label": "78°F | 0% precip"
+            "label": "77°F | 0% precip"
           },
           "total": 9
         },
@@ -2687,7 +2687,7 @@ export const homeRunTargetsByGame = {
           "57% off starters | 43% off relievers | avg inning 5.6",
           "Most recent damage has skewed toward Sinker / Cutter",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 78°F | 0% precip",
+          "Weather lane: 77°F | 0% precip",
           "Slot 3 | carry | lineup priority 47.9 | bullpen vulnerability -2.5",
           "Statcast trend improving | HH 34.4% | Barrel 12.5%"
         ],
@@ -2791,12 +2791,12 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "clear-day",
-            "summary": "0% 78° Wind 8 mph",
+            "summary": "0% 77° Wind 8 mph",
             "precipitationPct": 0,
-            "temperatureF": 78,
+            "temperatureF": 77,
             "windMph": null,
             "windDirection": "",
-            "label": "78°F | 0% precip"
+            "label": "77°F | 0% precip"
           },
           "total": 9
         },
@@ -2844,7 +2844,7 @@ export const homeRunTargetsByGame = {
           "43% off starters | 57% off relievers | avg inning 4.4",
           "Most recent damage has skewed toward Four-Seam Fastball / Cutter",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 78°F | 0% precip",
+          "Weather lane: 77°F | 0% precip",
           "Slot 7 | heater | lineup priority 19.2 | bullpen vulnerability -2.5",
           "Statcast trend improving | HH 47.4% | Barrel 10.5%"
         ],
@@ -2952,12 +2952,12 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "clear-day",
-            "summary": "0% 78° Wind 8 mph",
+            "summary": "0% 77° Wind 8 mph",
             "precipitationPct": 0,
-            "temperatureF": 78,
+            "temperatureF": 77,
             "windMph": null,
             "windDirection": "",
-            "label": "78°F | 0% precip"
+            "label": "77°F | 0% precip"
           },
           "total": 9
         },
@@ -3005,7 +3005,7 @@ export const homeRunTargetsByGame = {
           "83% off starters | 17% off relievers | avg inning 2.8",
           "Most recent damage has skewed toward Slider / Four-Seam Fastball",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 78°F | 0% precip",
+          "Weather lane: 77°F | 0% precip",
           "Slot 1 | carry | lineup priority 54.3 | bullpen vulnerability -2.5",
           "Statcast trend improving | HH 29.7% | Barrel 10.8%"
         ],
@@ -3111,12 +3111,12 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "clear-day",
-            "summary": "0% 78° Wind 8 mph",
+            "summary": "0% 77° Wind 8 mph",
             "precipitationPct": 0,
-            "temperatureF": 78,
+            "temperatureF": 77,
             "windMph": null,
             "windDirection": "",
-            "label": "78°F | 0% precip"
+            "label": "77°F | 0% precip"
           },
           "total": 9
         },
@@ -3164,7 +3164,7 @@ export const homeRunTargetsByGame = {
           "50% off starters | 50% off relievers | avg inning 5",
           "Most recent damage has skewed toward Cutter / Four-Seam Fastball",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 78°F | 0% precip",
+          "Weather lane: 77°F | 0% precip",
           "Slot 4 | carry | lineup priority 48.7 | bullpen vulnerability -2.5",
           "Statcast trend improving | HH 26.3% | Barrel 7.9%"
         ],
@@ -3268,12 +3268,12 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "clear-day",
-            "summary": "0% 78° Wind 8 mph",
+            "summary": "0% 77° Wind 8 mph",
             "precipitationPct": 0,
-            "temperatureF": 78,
+            "temperatureF": 77,
             "windMph": null,
             "windDirection": "",
-            "label": "78°F | 0% precip"
+            "label": "77°F | 0% precip"
           },
           "total": 9
         },
@@ -3321,7 +3321,7 @@ export const homeRunTargetsByGame = {
           "57% off starters | 43% off relievers | avg inning 5.6",
           "Most recent damage has skewed toward Sinker / Cutter",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 78°F | 0% precip",
+          "Weather lane: 77°F | 0% precip",
           "Slot 3 | carry | lineup priority 47.9 | bullpen vulnerability -2.5",
           "Statcast trend improving | HH 34.4% | Barrel 12.5%"
         ],
@@ -3425,12 +3425,12 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "clear-day",
-            "summary": "0% 78° Wind 8 mph",
+            "summary": "0% 77° Wind 8 mph",
             "precipitationPct": 0,
-            "temperatureF": 78,
+            "temperatureF": 77,
             "windMph": null,
             "windDirection": "",
-            "label": "78°F | 0% precip"
+            "label": "77°F | 0% precip"
           },
           "total": 9
         },
@@ -3478,7 +3478,7 @@ export const homeRunTargetsByGame = {
           "43% off starters | 57% off relievers | avg inning 4.4",
           "Most recent damage has skewed toward Four-Seam Fastball / Cutter",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 78°F | 0% precip",
+          "Weather lane: 77°F | 0% precip",
           "Slot 7 | heater | lineup priority 19.2 | bullpen vulnerability -2.5",
           "Statcast trend improving | HH 47.4% | Barrel 10.5%"
         ],
@@ -4771,6 +4771,163 @@ export const homeRunTargetsByGame = {
     "gameTitle": "Blue Jays @ Orioles",
     "likely": [
       {
+        "playerId": 683002,
+        "playerName": "Gunnar Henderson",
+        "teamAbbrev": "BAL",
+        "teamName": "Orioles",
+        "gameTitle": "Blue Jays @ Orioles",
+        "opposingPitcher": "Adam Macko",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0,
+        "parkHrIndex": 112,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": 0.6,
+        "seasonHr": 13,
+        "seasonXHR": 12.1,
+        "xhrDiff": 0.9,
+        "baseScore": 81.5935,
+        "lineupContext": {
+          "gameTitle": "Blue Jays @ Orioles",
+          "teamName": "Orioles",
+          "slot": 2,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "split edge",
+            "statcast up"
+          ],
+          "powerScore": 77.2,
+          "contactScore": 41.1,
+          "formScore": 92,
+          "splitScore": 86.8,
+          "matchupScore": 83.3,
+          "varianceScore": 92,
+          "pitchType": {
+            "fitScore": 38.8,
+            "fitGrade": -0.56,
+            "coveragePct": 100,
+            "summary": "Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit -0.6",
+            "topPitches": [
+              {
+                "pitchType": "SL",
+                "pitchName": "Slider",
+                "pitchUsage": 39.7,
+                "fitGrade": -8,
+                "batterFitScore": 18,
+                "qualityScore": 94
+              },
+              {
+                "pitchType": "FF",
+                "pitchName": "4-Seam Fastball",
+                "pitchUsage": 35.9,
+                "fitGrade": 5.25,
+                "batterFitScore": 46.9,
+                "qualityScore": 18
+              },
+              {
+                "pitchType": "CH",
+                "pitchName": "Changeup",
+                "pitchUsage": 12.8,
+                "fitGrade": 7.38,
+                "batterFitScore": 58.6,
+                "qualityScore": 18
+              }
+            ]
+          },
+          "statcastTrend": {
+            "gamesSample7": 7,
+            "paSample7": 31,
+            "bbeSample7": 47,
+            "rolling7Xwoba": 0.309,
+            "rolling7Xba": 0.229,
+            "rolling7Xslg": 0.435,
+            "rolling7BarrelPct": 4.3,
+            "rolling7HardHitPct": 27.7,
+            "rolling7SweetSpotPct": 19.1,
+            "xwobaTrend": 0.043,
+            "barrelTrend": 0.5,
+            "hardHitTrend": 2.1,
+            "sweetSpotTrend": -4.6,
+            "trendSignal": "improving"
+          },
+          "recentHomeRuns": 6,
+          "seasonHomeRuns": 13,
+          "splitHomeRuns": 6,
+          "lineupStatus": "partial",
+          "lineupCoverage": 9,
+          "lineupSource": "rotowire-supplement",
+          "lineupStateLabel": "projected order"
+        },
+        "lineupPriority": 50.4,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": {
+            "icon": "clear-day",
+            "summary": "0% 77° Wind 6 mph L-R",
+            "precipitationPct": 0,
+            "temperatureF": 77,
+            "windMph": 6,
+            "windDirection": "L-R",
+            "label": "77°F | Wind 6 mph L-R | 0% precip"
+          },
+          "total": 9
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 4,
+        "homeRunsLast7Days": 3,
+        "homeRunsLast10Days": 3,
+        "daysSinceLastHr": 2,
+        "noDoubterRate": 0.75,
+        "avgExitVelocityOnHomers": 105,
+        "homeRunContext": {
+          "sampleSize": 12,
+          "homeShare": 0.58,
+          "awayShare": 0.42,
+          "starterShare": 0.5,
+          "reliefShare": 0.5,
+          "earlyShare": 0.33,
+          "lateShare": 0.33,
+          "highPressureShare": 0.42,
+          "trailingShare": 0.42,
+          "averageInning": 5.3,
+          "averageGapDays": 5.4,
+          "topPitchTypes": [
+            "Cutter",
+            "Changeup"
+          ]
+        },
+        "score": 91.6,
+        "scoreBand": "strong",
+        "burstTag": "carry",
+        "contextLabels": [
+          "Slot 2 | carry",
+          "neutral venue split",
+          "close-game pop",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 2 | carry | close-game pop | 0 HR/9 starter",
+        "rationale": [
+          "13 HR and 12.1 xHR on the season",
+          "4 HR since May 1 with 3 in the last 7 days and 3 in the last 10",
+          "Adam Macko is allowing roughly 0 HR/9",
+          "Park HR index 112",
+          "Last HR came 2 days ago",
+          "Home today | historical split 58% on this side",
+          "50% off starters | 50% off relievers | avg inning 5.3",
+          "Most recent damage has skewed toward Cutter / Changeup",
+          "No recent batting-leader signal stored yet",
+          "Weather lane: 77°F | Wind 6 mph L-R | 0% precip",
+          "Slot 2 | carry | lineup priority 50.4 | bullpen vulnerability 0.6",
+          "Statcast trend improving | HH 27.7% | Barrel 4.3%"
+        ],
+        "avoidHrChase": false,
+        "rawWeight": 36.29469426293679,
+        "modelShare": 0.299,
+        "modelSharePct": 29.9,
+        "lane": "anchor"
+      },
+      {
         "playerId": 672960,
         "playerName": "Kazuma Okamoto",
         "teamAbbrev": "TOR",
@@ -4872,7 +5029,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "L-R",
             "label": "77°F | Wind 6 mph L-R | 0% precip"
           },
-          "total": 8.5
+          "total": 9
         },
         "weatherBoost": 0,
         "recentHrSinceMay1": 6,
@@ -4924,166 +5081,8 @@ export const homeRunTargetsByGame = {
         ],
         "avoidHrChase": false,
         "rawWeight": 28.81776664552931,
-        "modelShare": 0.252,
-        "modelSharePct": 25.2,
-        "lane": "anchor"
-      },
-      {
-        "playerId": 683002,
-        "playerName": "Gunnar Henderson",
-        "teamAbbrev": "BAL",
-        "teamName": "Orioles",
-        "gameTitle": "Blue Jays @ Orioles",
-        "opposingPitcher": "Dylan Cease",
-        "opposingPitcherHand": "R",
-        "opposingPitcherHr9": 0.73,
-        "parkHrIndex": 112,
-        "isHomeToday": true,
-        "opposingBullpenVulnerability": 0.6,
-        "seasonHr": 13,
-        "seasonXHR": 12.1,
-        "xhrDiff": 0.9,
-        "baseScore": 67.74648387096775,
-        "lineupContext": {
-          "gameTitle": "Blue Jays @ Orioles",
-          "teamName": "Orioles",
-          "slot": 2,
-          "primaryTag": "heater",
-          "tags": [
-            "heater",
-            "split edge",
-            "whiff risk",
-            "arsenal risk",
-            "statcast up"
-          ],
-          "powerScore": 60.8,
-          "contactScore": 41.6,
-          "formScore": 92,
-          "splitScore": 34.3,
-          "matchupScore": 47.3,
-          "varianceScore": 78.8,
-          "pitchType": {
-            "fitScore": 36.2,
-            "fitGrade": -3.94,
-            "coveragePct": 100,
-            "summary": "4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit -3.9",
-            "topPitches": [
-              {
-                "pitchType": "FF",
-                "pitchName": "4-Seam Fastball",
-                "pitchUsage": 35.3,
-                "fitGrade": -0.04,
-                "batterFitScore": 46.9,
-                "qualityScore": 47.1
-              },
-              {
-                "pitchType": "SL",
-                "pitchName": "Slider",
-                "pitchUsage": 29.4,
-                "fitGrade": -8,
-                "batterFitScore": 18,
-                "qualityScore": 94
-              },
-              {
-                "pitchType": "CH",
-                "pitchName": "Changeup",
-                "pitchUsage": 11.2,
-                "fitGrade": -6.44,
-                "batterFitScore": 58.6,
-                "qualityScore": 94
-              }
-            ]
-          },
-          "statcastTrend": {
-            "gamesSample7": 7,
-            "paSample7": 31,
-            "bbeSample7": 47,
-            "rolling7Xwoba": 0.309,
-            "rolling7Xba": 0.229,
-            "rolling7Xslg": 0.435,
-            "rolling7BarrelPct": 4.3,
-            "rolling7HardHitPct": 27.7,
-            "rolling7SweetSpotPct": 19.1,
-            "xwobaTrend": 0.043,
-            "barrelTrend": 0.5,
-            "hardHitTrend": 2.1,
-            "sweetSpotTrend": -4.6,
-            "trendSignal": "improving"
-          },
-          "recentHomeRuns": 6,
-          "seasonHomeRuns": 13,
-          "splitHomeRuns": 7,
-          "lineupStatus": "partial",
-          "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
-        },
-        "lineupPriority": 30.7,
-        "battingImpactContext": null,
-        "weatherContext": {
-          "weather": {
-            "icon": "clear-day",
-            "summary": "0% 77° Wind 6 mph L-R",
-            "precipitationPct": 0,
-            "temperatureF": 77,
-            "windMph": 6,
-            "windDirection": "L-R",
-            "label": "77°F | Wind 6 mph L-R | 0% precip"
-          },
-          "total": 8.5
-        },
-        "weatherBoost": 0,
-        "recentHrSinceMay1": 4,
-        "homeRunsLast7Days": 3,
-        "homeRunsLast10Days": 3,
-        "daysSinceLastHr": 2,
-        "noDoubterRate": 0.75,
-        "avgExitVelocityOnHomers": 105,
-        "homeRunContext": {
-          "sampleSize": 12,
-          "homeShare": 0.58,
-          "awayShare": 0.42,
-          "starterShare": 0.5,
-          "reliefShare": 0.5,
-          "earlyShare": 0.33,
-          "lateShare": 0.33,
-          "highPressureShare": 0.42,
-          "trailingShare": 0.42,
-          "averageInning": 5.3,
-          "averageGapDays": 5.4,
-          "topPitchTypes": [
-            "Cutter",
-            "Changeup"
-          ]
-        },
-        "score": 77.7,
-        "scoreBand": "live",
-        "burstTag": "carry",
-        "contextLabels": [
-          "Slot 2 | heater",
-          "neutral venue split",
-          "close-game pop",
-          "neutral bullpen"
-        ],
-        "signalSummary": "Slot 2 | heater | close-game pop | 0.73 HR/9 starter",
-        "rationale": [
-          "13 HR and 12.1 xHR on the season",
-          "4 HR since May 1 with 3 in the last 7 days and 3 in the last 10",
-          "Dylan Cease is allowing roughly 0.73 HR/9",
-          "Park HR index 112",
-          "Last HR came 2 days ago",
-          "Home today | historical split 58% on this side",
-          "50% off starters | 50% off relievers | avg inning 5.3",
-          "Most recent damage has skewed toward Cutter / Changeup",
-          "No recent batting-leader signal stored yet",
-          "Weather lane: 77°F | Wind 6 mph L-R | 0% precip",
-          "Slot 2 | heater | lineup priority 30.7 | bullpen vulnerability 0.6",
-          "Statcast trend improving | HH 27.7% | Barrel 4.3%"
-        ],
-        "avoidHrChase": false,
-        "rawWeight": 26.819752072485453,
-        "modelShare": 0.235,
-        "modelSharePct": 23.5,
+        "modelShare": 0.238,
+        "modelSharePct": 23.8,
         "lane": "secondary"
       }
     ],
@@ -5190,7 +5189,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "L-R",
             "label": "77°F | Wind 6 mph L-R | 0% precip"
           },
-          "total": 8.5
+          "total": 9
         },
         "weatherBoost": 0,
         "recentHrSinceMay1": 3,
@@ -5242,8 +5241,8 @@ export const homeRunTargetsByGame = {
         ],
         "avoidHrChase": false,
         "rawWeight": 21.729657087778527,
-        "modelShare": 0.19,
-        "modelSharePct": 19,
+        "modelShare": 0.179,
+        "modelSharePct": 17.9,
         "lane": "secondary"
       },
       {
@@ -5349,7 +5348,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "L-R",
             "label": "77°F | Wind 6 mph L-R | 0% precip"
           },
-          "total": 8.5
+          "total": 9
         },
         "weatherBoost": 0,
         "recentHrSinceMay1": 4,
@@ -5401,9 +5400,168 @@ export const homeRunTargetsByGame = {
         ],
         "avoidHrChase": false,
         "rawWeight": 16.171780676069115,
-        "modelShare": 0.141,
-        "modelSharePct": 14.1,
+        "modelShare": 0.133,
+        "modelSharePct": 13.3,
         "lane": "live"
+      }
+    ],
+    "alternates": [
+      {
+        "playerId": 691723,
+        "playerName": "Coby Mayo",
+        "teamAbbrev": "BAL",
+        "teamName": "Orioles",
+        "gameTitle": "Blue Jays @ Orioles",
+        "opposingPitcher": "Adam Macko",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0,
+        "parkHrIndex": 112,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": 0.6,
+        "seasonHr": 6,
+        "seasonXHR": 5.7,
+        "xhrDiff": 0.3,
+        "baseScore": 48.90325,
+        "lineupContext": {
+          "gameTitle": "Blue Jays @ Orioles",
+          "teamName": "Orioles",
+          "slot": 8,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "split edge",
+            "statcast up"
+          ],
+          "powerScore": 69.5,
+          "contactScore": 38.6,
+          "formScore": 92,
+          "splitScore": 92,
+          "matchupScore": 94,
+          "varianceScore": 92,
+          "pitchType": {
+            "fitScore": 61,
+            "fitGrade": 0.17,
+            "coveragePct": 100,
+            "summary": "Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit +0.2",
+            "topPitches": [
+              {
+                "pitchType": "SL",
+                "pitchName": "Slider",
+                "pitchUsage": 39.7,
+                "fitGrade": -6.31,
+                "batterFitScore": 59.3,
+                "qualityScore": 94
+              },
+              {
+                "pitchType": "FF",
+                "pitchName": "4-Seam Fastball",
+                "pitchUsage": 35.9,
+                "fitGrade": 10,
+                "batterFitScore": 91.4,
+                "qualityScore": 18
+              },
+              {
+                "pitchType": "CH",
+                "pitchName": "Changeup",
+                "pitchUsage": 12.8,
+                "fitGrade": 0,
+                "batterFitScore": 18,
+                "qualityScore": 18
+              }
+            ]
+          },
+          "statcastTrend": {
+            "gamesSample7": 3,
+            "paSample7": 10,
+            "bbeSample7": 12,
+            "rolling7Xwoba": 0.506,
+            "rolling7Xba": 0.364,
+            "rolling7Xslg": 0.793,
+            "rolling7BarrelPct": 8.3,
+            "rolling7HardHitPct": 50,
+            "rolling7SweetSpotPct": 50,
+            "xwobaTrend": 0.199,
+            "barrelTrend": 3.7,
+            "hardHitTrend": 14.4,
+            "sweetSpotTrend": 24.7,
+            "trendSignal": "improving"
+          },
+          "recentHomeRuns": 2,
+          "seasonHomeRuns": 6,
+          "splitHomeRuns": 4,
+          "lineupStatus": "partial",
+          "lineupCoverage": 9,
+          "lineupSource": "rotowire-supplement",
+          "lineupStateLabel": "projected order"
+        },
+        "lineupPriority": 33.4,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": {
+            "icon": "clear-day",
+            "summary": "0% 77° Wind 6 mph L-R",
+            "precipitationPct": 0,
+            "temperatureF": 77,
+            "windMph": 6,
+            "windDirection": "L-R",
+            "label": "77°F | Wind 6 mph L-R | 0% precip"
+          },
+          "total": 9
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 3,
+        "homeRunsLast7Days": 1,
+        "homeRunsLast10Days": 1,
+        "daysSinceLastHr": 1,
+        "noDoubterRate": 0.67,
+        "avgExitVelocityOnHomers": 107.7,
+        "homeRunContext": {
+          "sampleSize": 6,
+          "homeShare": 0.5,
+          "awayShare": 0.5,
+          "starterShare": 0.33,
+          "reliefShare": 0.67,
+          "earlyShare": 0.33,
+          "lateShare": 0.17,
+          "highPressureShare": 0.33,
+          "trailingShare": 0.33,
+          "averageInning": 4.3,
+          "averageGapDays": 7.4,
+          "topPitchTypes": [
+            "Sinker",
+            "Slider"
+          ]
+        },
+        "score": 56.1,
+        "scoreBand": "thin",
+        "burstTag": "carry",
+        "contextLabels": [
+          "Slot 8 | carry",
+          "neutral venue split",
+          "close-game pop",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 8 | carry | close-game pop | 0 HR/9 starter",
+        "rationale": [
+          "6 HR and 5.7 xHR on the season",
+          "3 HR since May 1 with 1 in the last 7 days and 1 in the last 10",
+          "Adam Macko is allowing roughly 0 HR/9",
+          "Park HR index 112",
+          "Last HR came 1 day ago",
+          "Home today | historical split 50% on this side",
+          "33% off starters | 67% off relievers | avg inning 4.3",
+          "Most recent damage has skewed toward Sinker / Slider",
+          "No recent batting-leader signal stored yet",
+          "Weather lane: 77°F | Wind 6 mph L-R | 0% precip",
+          "Slot 8 | carry | lineup priority 33.4 | bullpen vulnerability 0.6",
+          "Statcast trend improving | HH 50.0% | Barrel 8.3%"
+        ],
+        "avoidHrChase": false,
+        "rawWeight": 11.409893313797227,
+        "modelShare": 0.094,
+        "modelSharePct": 9.4,
+        "lane": "thin"
       },
       {
         "playerId": 624413,
@@ -5411,16 +5569,16 @@ export const homeRunTargetsByGame = {
         "teamAbbrev": "BAL",
         "teamName": "Orioles",
         "gameTitle": "Blue Jays @ Orioles",
-        "opposingPitcher": "Dylan Cease",
-        "opposingPitcherHand": "R",
-        "opposingPitcherHr9": 0.73,
+        "opposingPitcher": "Adam Macko",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0,
         "parkHrIndex": 112,
         "isHomeToday": true,
         "opposingBullpenVulnerability": 0.6,
         "seasonHr": 10,
         "seasonXHR": 11.1,
         "xhrDiff": -1.1,
-        "baseScore": 56.28358387096774,
+        "baseScore": 40.415,
         "lineupContext": {
           "gameTitle": "Blue Jays @ Orioles",
           "teamName": "Orioles",
@@ -5431,41 +5589,41 @@ export const homeRunTargetsByGame = {
             "cold",
             "statcast up"
           ],
-          "powerScore": 60.4,
-          "contactScore": 48.3,
+          "powerScore": 52.4,
+          "contactScore": 46.9,
           "formScore": 41.2,
-          "splitScore": 62.9,
-          "matchupScore": 62.7,
-          "varianceScore": 59.5,
+          "splitScore": 20.5,
+          "matchupScore": 44.4,
+          "varianceScore": 65.8,
           "pitchType": {
-            "fitScore": 67.2,
-            "fitGrade": 0.56,
+            "fitScore": 56.1,
+            "fitGrade": 0.77,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit +0.6",
+            "summary": "Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit +0.8",
             "topPitches": [
-              {
-                "pitchType": "FF",
-                "pitchName": "4-Seam Fastball",
-                "pitchUsage": 35.3,
-                "fitGrade": 8.53,
-                "batterFitScore": 94,
-                "qualityScore": 47.1
-              },
               {
                 "pitchType": "SL",
                 "pitchName": "Slider",
-                "pitchUsage": 29.4,
+                "pitchUsage": 39.7,
                 "fitGrade": -8,
                 "batterFitScore": 18,
                 "qualityScore": 94
               },
               {
+                "pitchType": "FF",
+                "pitchName": "4-Seam Fastball",
+                "pitchUsage": 35.9,
+                "fitGrade": 10,
+                "batterFitScore": 94,
+                "qualityScore": 18
+              },
+              {
                 "pitchType": "CH",
                 "pitchName": "Changeup",
-                "pitchUsage": 11.2,
-                "fitGrade": -2.05,
+                "pitchUsage": 12.8,
+                "fitGrade": 10,
                 "batterFitScore": 82.7,
-                "qualityScore": 94
+                "qualityScore": 18
               }
             ]
           },
@@ -5487,13 +5645,13 @@ export const homeRunTargetsByGame = {
           },
           "recentHomeRuns": 2,
           "seasonHomeRuns": 10,
-          "splitHomeRuns": 8,
+          "splitHomeRuns": 2,
           "lineupStatus": "partial",
           "lineupCoverage": 9,
           "lineupSource": "rotowire-supplement",
           "lineupStateLabel": "projected order"
         },
-        "lineupPriority": 19.3,
+        "lineupPriority": 4.6,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -5505,7 +5663,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "L-R",
             "label": "77°F | Wind 6 mph L-R | 0% precip"
           },
-          "total": 8.5
+          "total": 9
         },
         "weatherBoost": 0,
         "recentHrSinceMay1": 6,
@@ -5531,7 +5689,7 @@ export const homeRunTargetsByGame = {
             "Sinker"
           ]
         },
-        "score": 59.6,
+        "score": 43.8,
         "scoreBand": "thin",
         "burstTag": "active",
         "contextLabels": [
@@ -5540,11 +5698,11 @@ export const homeRunTargetsByGame = {
           "mixed timing",
           "neutral bullpen"
         ],
-        "signalSummary": "Slot 4 | split edge | neutral bullpen | 0.73 HR/9 starter",
+        "signalSummary": "Slot 4 | split edge | neutral bullpen | 0 HR/9 starter",
         "rationale": [
           "10 HR and 11.1 xHR on the season",
           "6 HR since May 1 with 1 in the last 7 days and 2 in the last 10",
-          "Dylan Cease is allowing roughly 0.73 HR/9",
+          "Adam Macko is allowing roughly 0 HR/9",
           "Park HR index 112",
           "Last HR came 7 days ago",
           "Home today | historical split 50% on this side",
@@ -5552,107 +5710,107 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
           "No recent batting-leader signal stored yet",
           "Weather lane: 77°F | Wind 6 mph L-R | 0% precip",
-          "Slot 4 | split edge | lineup priority 19.3 | bullpen vulnerability 0.6",
+          "Slot 4 | split edge | lineup priority 4.6 | bullpen vulnerability 0.6",
           "Statcast trend improving | HH 35.6% | Barrel 4.4%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 13.99173768274151,
-        "modelShare": 0.122,
-        "modelSharePct": 12.2,
-        "lane": "live"
+        "rawWeight": 6.773962498900218,
+        "modelShare": 0.056,
+        "modelSharePct": 5.6,
+        "lane": "thin"
       }
     ],
-    "alternates": [
+    "weightedPool": [
       {
-        "playerId": 694212,
-        "playerName": "Samuel Basallo",
+        "playerId": 683002,
+        "playerName": "Gunnar Henderson",
         "teamAbbrev": "BAL",
         "teamName": "Orioles",
         "gameTitle": "Blue Jays @ Orioles",
-        "opposingPitcher": "Dylan Cease",
-        "opposingPitcherHand": "R",
-        "opposingPitcherHr9": 0.73,
+        "opposingPitcher": "Adam Macko",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0,
         "parkHrIndex": 112,
         "isHomeToday": true,
         "opposingBullpenVulnerability": 0.6,
-        "seasonHr": 8,
-        "seasonXHR": 7.8,
-        "xhrDiff": 0.2,
-        "baseScore": 42.46433387096774,
+        "seasonHr": 13,
+        "seasonXHR": 12.1,
+        "xhrDiff": 0.9,
+        "baseScore": 81.5935,
         "lineupContext": {
           "gameTitle": "Blue Jays @ Orioles",
           "teamName": "Orioles",
-          "slot": 5,
-          "primaryTag": "split edge",
+          "slot": 2,
+          "primaryTag": "carry",
           "tags": [
+            "carry",
+            "heater",
             "split edge",
-            "whiff risk",
-            "cold",
             "statcast up"
           ],
-          "powerScore": 72.1,
-          "contactScore": 49.6,
-          "formScore": 18,
-          "splitScore": 62.7,
-          "matchupScore": 37.6,
+          "powerScore": 77.2,
+          "contactScore": 41.1,
+          "formScore": 92,
+          "splitScore": 86.8,
+          "matchupScore": 83.3,
           "varianceScore": 92,
           "pitchType": {
-            "fitScore": 75.2,
-            "fitGrade": 0.73,
+            "fitScore": 38.8,
+            "fitGrade": -0.56,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit +0.7",
+            "summary": "Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit -0.6",
             "topPitches": [
-              {
-                "pitchType": "FF",
-                "pitchName": "4-Seam Fastball",
-                "pitchUsage": 35.3,
-                "fitGrade": 8.53,
-                "batterFitScore": 94,
-                "qualityScore": 47.1
-              },
               {
                 "pitchType": "SL",
                 "pitchName": "Slider",
-                "pitchUsage": 29.4,
-                "fitGrade": -5.25,
-                "batterFitScore": 65.1,
+                "pitchUsage": 39.7,
+                "fitGrade": -8,
+                "batterFitScore": 18,
                 "qualityScore": 94
+              },
+              {
+                "pitchType": "FF",
+                "pitchName": "4-Seam Fastball",
+                "pitchUsage": 35.9,
+                "fitGrade": 5.25,
+                "batterFitScore": 46.9,
+                "qualityScore": 18
               },
               {
                 "pitchType": "CH",
                 "pitchName": "Changeup",
-                "pitchUsage": 11.2,
-                "fitGrade": -8,
-                "batterFitScore": 18,
-                "qualityScore": 94
+                "pitchUsage": 12.8,
+                "fitGrade": 7.38,
+                "batterFitScore": 58.6,
+                "qualityScore": 18
               }
             ]
           },
           "statcastTrend": {
-            "gamesSample7": 6,
-            "paSample7": 16,
-            "bbeSample7": 20,
-            "rolling7Xwoba": 0.346,
-            "rolling7Xba": 0.259,
-            "rolling7Xslg": 0.524,
-            "rolling7BarrelPct": 5,
-            "rolling7HardHitPct": 25,
-            "rolling7SweetSpotPct": 25,
-            "xwobaTrend": 0.02,
-            "barrelTrend": -1.3,
-            "hardHitTrend": -4.5,
-            "sweetSpotTrend": -0.3,
+            "gamesSample7": 7,
+            "paSample7": 31,
+            "bbeSample7": 47,
+            "rolling7Xwoba": 0.309,
+            "rolling7Xba": 0.229,
+            "rolling7Xslg": 0.435,
+            "rolling7BarrelPct": 4.3,
+            "rolling7HardHitPct": 27.7,
+            "rolling7SweetSpotPct": 19.1,
+            "xwobaTrend": 0.043,
+            "barrelTrend": 0.5,
+            "hardHitTrend": 2.1,
+            "sweetSpotTrend": -4.6,
             "trendSignal": "improving"
           },
-          "recentHomeRuns": 2,
-          "seasonHomeRuns": 8,
-          "splitHomeRuns": 7,
+          "recentHomeRuns": 6,
+          "seasonHomeRuns": 13,
+          "splitHomeRuns": 6,
           "lineupStatus": "partial",
           "lineupCoverage": 9,
           "lineupSource": "rotowire-supplement",
           "lineupStateLabel": "projected order"
         },
-        "lineupPriority": 14.1,
+        "lineupPriority": 50.4,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -5664,64 +5822,62 @@ export const homeRunTargetsByGame = {
             "windDirection": "L-R",
             "label": "77°F | Wind 6 mph L-R | 0% precip"
           },
-          "total": 8.5
+          "total": 9
         },
         "weatherBoost": 0,
-        "recentHrSinceMay1": 3,
-        "homeRunsLast7Days": 1,
-        "homeRunsLast10Days": 2,
-        "daysSinceLastHr": 3,
-        "noDoubterRate": 0.33,
-        "avgExitVelocityOnHomers": 108,
+        "recentHrSinceMay1": 4,
+        "homeRunsLast7Days": 3,
+        "homeRunsLast10Days": 3,
+        "daysSinceLastHr": 2,
+        "noDoubterRate": 0.75,
+        "avgExitVelocityOnHomers": 105,
         "homeRunContext": {
-          "sampleSize": 8,
-          "homeShare": 0.75,
-          "awayShare": 0.25,
-          "starterShare": 0.75,
-          "reliefShare": 0.25,
-          "earlyShare": 0.38,
-          "lateShare": 0.13,
-          "highPressureShare": 0.13,
-          "trailingShare": 0.25,
-          "averageInning": 4.3,
-          "averageGapDays": 7.9,
+          "sampleSize": 12,
+          "homeShare": 0.58,
+          "awayShare": 0.42,
+          "starterShare": 0.5,
+          "reliefShare": 0.5,
+          "earlyShare": 0.33,
+          "lateShare": 0.33,
+          "highPressureShare": 0.42,
+          "trailingShare": 0.42,
+          "averageInning": 5.3,
+          "averageGapDays": 5.4,
           "topPitchTypes": [
             "Cutter",
-            "Four-Seam Fastball"
+            "Changeup"
           ]
         },
-        "score": 45,
-        "scoreBand": "thin",
-        "burstTag": "watch",
+        "score": 91.6,
+        "scoreBand": "strong",
+        "burstTag": "carry",
         "contextLabels": [
-          "Slot 5 | split edge",
-          "home-heavy carry",
-          "mixed timing",
+          "Slot 2 | carry",
+          "neutral venue split",
+          "close-game pop",
           "neutral bullpen"
         ],
-        "signalSummary": "Slot 5 | split edge | home-heavy carry | 0.73 HR/9 starter",
+        "signalSummary": "Slot 2 | carry | close-game pop | 0 HR/9 starter",
         "rationale": [
-          "8 HR and 7.8 xHR on the season",
-          "3 HR since May 1 with 1 in the last 7 days and 2 in the last 10",
-          "Dylan Cease is allowing roughly 0.73 HR/9",
+          "13 HR and 12.1 xHR on the season",
+          "4 HR since May 1 with 3 in the last 7 days and 3 in the last 10",
+          "Adam Macko is allowing roughly 0 HR/9",
           "Park HR index 112",
-          "Last HR came 3 days ago",
-          "Home today | historical split 75% on this side",
-          "75% off starters | 25% off relievers | avg inning 4.3",
-          "Most recent damage has skewed toward Cutter / Four-Seam Fastball",
+          "Last HR came 2 days ago",
+          "Home today | historical split 58% on this side",
+          "50% off starters | 50% off relievers | avg inning 5.3",
+          "Most recent damage has skewed toward Cutter / Changeup",
           "No recent batting-leader signal stored yet",
           "Weather lane: 77°F | Wind 6 mph L-R | 0% precip",
-          "Slot 5 | split edge | lineup priority 14.1 | bullpen vulnerability 0.6",
-          "Statcast trend improving | HH 25.0% | Barrel 5.0%"
+          "Slot 2 | carry | lineup priority 50.4 | bullpen vulnerability 0.6",
+          "Statcast trend improving | HH 27.7% | Barrel 4.3%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 6.773962498900218,
-        "modelShare": 0.059,
-        "modelSharePct": 5.9,
-        "lane": "thin"
-      }
-    ],
-    "weightedPool": [
+        "rawWeight": 36.29469426293679,
+        "modelShare": 0.299,
+        "modelSharePct": 29.9,
+        "lane": "anchor"
+      },
       {
         "playerId": 672960,
         "playerName": "Kazuma Okamoto",
@@ -5824,7 +5980,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "L-R",
             "label": "77°F | Wind 6 mph L-R | 0% precip"
           },
-          "total": 8.5
+          "total": 9
         },
         "weatherBoost": 0,
         "recentHrSinceMay1": 6,
@@ -5876,166 +6032,8 @@ export const homeRunTargetsByGame = {
         ],
         "avoidHrChase": false,
         "rawWeight": 28.81776664552931,
-        "modelShare": 0.252,
-        "modelSharePct": 25.2,
-        "lane": "anchor"
-      },
-      {
-        "playerId": 683002,
-        "playerName": "Gunnar Henderson",
-        "teamAbbrev": "BAL",
-        "teamName": "Orioles",
-        "gameTitle": "Blue Jays @ Orioles",
-        "opposingPitcher": "Dylan Cease",
-        "opposingPitcherHand": "R",
-        "opposingPitcherHr9": 0.73,
-        "parkHrIndex": 112,
-        "isHomeToday": true,
-        "opposingBullpenVulnerability": 0.6,
-        "seasonHr": 13,
-        "seasonXHR": 12.1,
-        "xhrDiff": 0.9,
-        "baseScore": 67.74648387096775,
-        "lineupContext": {
-          "gameTitle": "Blue Jays @ Orioles",
-          "teamName": "Orioles",
-          "slot": 2,
-          "primaryTag": "heater",
-          "tags": [
-            "heater",
-            "split edge",
-            "whiff risk",
-            "arsenal risk",
-            "statcast up"
-          ],
-          "powerScore": 60.8,
-          "contactScore": 41.6,
-          "formScore": 92,
-          "splitScore": 34.3,
-          "matchupScore": 47.3,
-          "varianceScore": 78.8,
-          "pitchType": {
-            "fitScore": 36.2,
-            "fitGrade": -3.94,
-            "coveragePct": 100,
-            "summary": "4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit -3.9",
-            "topPitches": [
-              {
-                "pitchType": "FF",
-                "pitchName": "4-Seam Fastball",
-                "pitchUsage": 35.3,
-                "fitGrade": -0.04,
-                "batterFitScore": 46.9,
-                "qualityScore": 47.1
-              },
-              {
-                "pitchType": "SL",
-                "pitchName": "Slider",
-                "pitchUsage": 29.4,
-                "fitGrade": -8,
-                "batterFitScore": 18,
-                "qualityScore": 94
-              },
-              {
-                "pitchType": "CH",
-                "pitchName": "Changeup",
-                "pitchUsage": 11.2,
-                "fitGrade": -6.44,
-                "batterFitScore": 58.6,
-                "qualityScore": 94
-              }
-            ]
-          },
-          "statcastTrend": {
-            "gamesSample7": 7,
-            "paSample7": 31,
-            "bbeSample7": 47,
-            "rolling7Xwoba": 0.309,
-            "rolling7Xba": 0.229,
-            "rolling7Xslg": 0.435,
-            "rolling7BarrelPct": 4.3,
-            "rolling7HardHitPct": 27.7,
-            "rolling7SweetSpotPct": 19.1,
-            "xwobaTrend": 0.043,
-            "barrelTrend": 0.5,
-            "hardHitTrend": 2.1,
-            "sweetSpotTrend": -4.6,
-            "trendSignal": "improving"
-          },
-          "recentHomeRuns": 6,
-          "seasonHomeRuns": 13,
-          "splitHomeRuns": 7,
-          "lineupStatus": "partial",
-          "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
-        },
-        "lineupPriority": 30.7,
-        "battingImpactContext": null,
-        "weatherContext": {
-          "weather": {
-            "icon": "clear-day",
-            "summary": "0% 77° Wind 6 mph L-R",
-            "precipitationPct": 0,
-            "temperatureF": 77,
-            "windMph": 6,
-            "windDirection": "L-R",
-            "label": "77°F | Wind 6 mph L-R | 0% precip"
-          },
-          "total": 8.5
-        },
-        "weatherBoost": 0,
-        "recentHrSinceMay1": 4,
-        "homeRunsLast7Days": 3,
-        "homeRunsLast10Days": 3,
-        "daysSinceLastHr": 2,
-        "noDoubterRate": 0.75,
-        "avgExitVelocityOnHomers": 105,
-        "homeRunContext": {
-          "sampleSize": 12,
-          "homeShare": 0.58,
-          "awayShare": 0.42,
-          "starterShare": 0.5,
-          "reliefShare": 0.5,
-          "earlyShare": 0.33,
-          "lateShare": 0.33,
-          "highPressureShare": 0.42,
-          "trailingShare": 0.42,
-          "averageInning": 5.3,
-          "averageGapDays": 5.4,
-          "topPitchTypes": [
-            "Cutter",
-            "Changeup"
-          ]
-        },
-        "score": 77.7,
-        "scoreBand": "live",
-        "burstTag": "carry",
-        "contextLabels": [
-          "Slot 2 | heater",
-          "neutral venue split",
-          "close-game pop",
-          "neutral bullpen"
-        ],
-        "signalSummary": "Slot 2 | heater | close-game pop | 0.73 HR/9 starter",
-        "rationale": [
-          "13 HR and 12.1 xHR on the season",
-          "4 HR since May 1 with 3 in the last 7 days and 3 in the last 10",
-          "Dylan Cease is allowing roughly 0.73 HR/9",
-          "Park HR index 112",
-          "Last HR came 2 days ago",
-          "Home today | historical split 58% on this side",
-          "50% off starters | 50% off relievers | avg inning 5.3",
-          "Most recent damage has skewed toward Cutter / Changeup",
-          "No recent batting-leader signal stored yet",
-          "Weather lane: 77°F | Wind 6 mph L-R | 0% precip",
-          "Slot 2 | heater | lineup priority 30.7 | bullpen vulnerability 0.6",
-          "Statcast trend improving | HH 27.7% | Barrel 4.3%"
-        ],
-        "avoidHrChase": false,
-        "rawWeight": 26.819752072485453,
-        "modelShare": 0.235,
-        "modelSharePct": 23.5,
+        "modelShare": 0.238,
+        "modelSharePct": 23.8,
         "lane": "secondary"
       },
       {
@@ -6140,7 +6138,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "L-R",
             "label": "77°F | Wind 6 mph L-R | 0% precip"
           },
-          "total": 8.5
+          "total": 9
         },
         "weatherBoost": 0,
         "recentHrSinceMay1": 3,
@@ -6192,8 +6190,8 @@ export const homeRunTargetsByGame = {
         ],
         "avoidHrChase": false,
         "rawWeight": 21.729657087778527,
-        "modelShare": 0.19,
-        "modelSharePct": 19,
+        "modelShare": 0.179,
+        "modelSharePct": 17.9,
         "lane": "secondary"
       },
       {
@@ -6299,7 +6297,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "L-R",
             "label": "77°F | Wind 6 mph L-R | 0% precip"
           },
-          "total": 8.5
+          "total": 9
         },
         "weatherBoost": 0,
         "recentHrSinceMay1": 4,
@@ -6351,9 +6349,166 @@ export const homeRunTargetsByGame = {
         ],
         "avoidHrChase": false,
         "rawWeight": 16.171780676069115,
-        "modelShare": 0.141,
-        "modelSharePct": 14.1,
+        "modelShare": 0.133,
+        "modelSharePct": 13.3,
         "lane": "live"
+      },
+      {
+        "playerId": 691723,
+        "playerName": "Coby Mayo",
+        "teamAbbrev": "BAL",
+        "teamName": "Orioles",
+        "gameTitle": "Blue Jays @ Orioles",
+        "opposingPitcher": "Adam Macko",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0,
+        "parkHrIndex": 112,
+        "isHomeToday": true,
+        "opposingBullpenVulnerability": 0.6,
+        "seasonHr": 6,
+        "seasonXHR": 5.7,
+        "xhrDiff": 0.3,
+        "baseScore": 48.90325,
+        "lineupContext": {
+          "gameTitle": "Blue Jays @ Orioles",
+          "teamName": "Orioles",
+          "slot": 8,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "split edge",
+            "statcast up"
+          ],
+          "powerScore": 69.5,
+          "contactScore": 38.6,
+          "formScore": 92,
+          "splitScore": 92,
+          "matchupScore": 94,
+          "varianceScore": 92,
+          "pitchType": {
+            "fitScore": 61,
+            "fitGrade": 0.17,
+            "coveragePct": 100,
+            "summary": "Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit +0.2",
+            "topPitches": [
+              {
+                "pitchType": "SL",
+                "pitchName": "Slider",
+                "pitchUsage": 39.7,
+                "fitGrade": -6.31,
+                "batterFitScore": 59.3,
+                "qualityScore": 94
+              },
+              {
+                "pitchType": "FF",
+                "pitchName": "4-Seam Fastball",
+                "pitchUsage": 35.9,
+                "fitGrade": 10,
+                "batterFitScore": 91.4,
+                "qualityScore": 18
+              },
+              {
+                "pitchType": "CH",
+                "pitchName": "Changeup",
+                "pitchUsage": 12.8,
+                "fitGrade": 0,
+                "batterFitScore": 18,
+                "qualityScore": 18
+              }
+            ]
+          },
+          "statcastTrend": {
+            "gamesSample7": 3,
+            "paSample7": 10,
+            "bbeSample7": 12,
+            "rolling7Xwoba": 0.506,
+            "rolling7Xba": 0.364,
+            "rolling7Xslg": 0.793,
+            "rolling7BarrelPct": 8.3,
+            "rolling7HardHitPct": 50,
+            "rolling7SweetSpotPct": 50,
+            "xwobaTrend": 0.199,
+            "barrelTrend": 3.7,
+            "hardHitTrend": 14.4,
+            "sweetSpotTrend": 24.7,
+            "trendSignal": "improving"
+          },
+          "recentHomeRuns": 2,
+          "seasonHomeRuns": 6,
+          "splitHomeRuns": 4,
+          "lineupStatus": "partial",
+          "lineupCoverage": 9,
+          "lineupSource": "rotowire-supplement",
+          "lineupStateLabel": "projected order"
+        },
+        "lineupPriority": 33.4,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": {
+            "icon": "clear-day",
+            "summary": "0% 77° Wind 6 mph L-R",
+            "precipitationPct": 0,
+            "temperatureF": 77,
+            "windMph": 6,
+            "windDirection": "L-R",
+            "label": "77°F | Wind 6 mph L-R | 0% precip"
+          },
+          "total": 9
+        },
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 3,
+        "homeRunsLast7Days": 1,
+        "homeRunsLast10Days": 1,
+        "daysSinceLastHr": 1,
+        "noDoubterRate": 0.67,
+        "avgExitVelocityOnHomers": 107.7,
+        "homeRunContext": {
+          "sampleSize": 6,
+          "homeShare": 0.5,
+          "awayShare": 0.5,
+          "starterShare": 0.33,
+          "reliefShare": 0.67,
+          "earlyShare": 0.33,
+          "lateShare": 0.17,
+          "highPressureShare": 0.33,
+          "trailingShare": 0.33,
+          "averageInning": 4.3,
+          "averageGapDays": 7.4,
+          "topPitchTypes": [
+            "Sinker",
+            "Slider"
+          ]
+        },
+        "score": 56.1,
+        "scoreBand": "thin",
+        "burstTag": "carry",
+        "contextLabels": [
+          "Slot 8 | carry",
+          "neutral venue split",
+          "close-game pop",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 8 | carry | close-game pop | 0 HR/9 starter",
+        "rationale": [
+          "6 HR and 5.7 xHR on the season",
+          "3 HR since May 1 with 1 in the last 7 days and 1 in the last 10",
+          "Adam Macko is allowing roughly 0 HR/9",
+          "Park HR index 112",
+          "Last HR came 1 day ago",
+          "Home today | historical split 50% on this side",
+          "33% off starters | 67% off relievers | avg inning 4.3",
+          "Most recent damage has skewed toward Sinker / Slider",
+          "No recent batting-leader signal stored yet",
+          "Weather lane: 77°F | Wind 6 mph L-R | 0% precip",
+          "Slot 8 | carry | lineup priority 33.4 | bullpen vulnerability 0.6",
+          "Statcast trend improving | HH 50.0% | Barrel 8.3%"
+        ],
+        "avoidHrChase": false,
+        "rawWeight": 11.409893313797227,
+        "modelShare": 0.094,
+        "modelSharePct": 9.4,
+        "lane": "thin"
       },
       {
         "playerId": 624413,
@@ -6361,16 +6516,16 @@ export const homeRunTargetsByGame = {
         "teamAbbrev": "BAL",
         "teamName": "Orioles",
         "gameTitle": "Blue Jays @ Orioles",
-        "opposingPitcher": "Dylan Cease",
-        "opposingPitcherHand": "R",
-        "opposingPitcherHr9": 0.73,
+        "opposingPitcher": "Adam Macko",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0,
         "parkHrIndex": 112,
         "isHomeToday": true,
         "opposingBullpenVulnerability": 0.6,
         "seasonHr": 10,
         "seasonXHR": 11.1,
         "xhrDiff": -1.1,
-        "baseScore": 56.28358387096774,
+        "baseScore": 40.415,
         "lineupContext": {
           "gameTitle": "Blue Jays @ Orioles",
           "teamName": "Orioles",
@@ -6381,41 +6536,41 @@ export const homeRunTargetsByGame = {
             "cold",
             "statcast up"
           ],
-          "powerScore": 60.4,
-          "contactScore": 48.3,
+          "powerScore": 52.4,
+          "contactScore": 46.9,
           "formScore": 41.2,
-          "splitScore": 62.9,
-          "matchupScore": 62.7,
-          "varianceScore": 59.5,
+          "splitScore": 20.5,
+          "matchupScore": 44.4,
+          "varianceScore": 65.8,
           "pitchType": {
-            "fitScore": 67.2,
-            "fitGrade": 0.56,
+            "fitScore": 56.1,
+            "fitGrade": 0.77,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit +0.6",
+            "summary": "Slider 40% / 4-Seam Fastball 36% / Changeup 13% | fit +0.8",
             "topPitches": [
-              {
-                "pitchType": "FF",
-                "pitchName": "4-Seam Fastball",
-                "pitchUsage": 35.3,
-                "fitGrade": 8.53,
-                "batterFitScore": 94,
-                "qualityScore": 47.1
-              },
               {
                 "pitchType": "SL",
                 "pitchName": "Slider",
-                "pitchUsage": 29.4,
+                "pitchUsage": 39.7,
                 "fitGrade": -8,
                 "batterFitScore": 18,
                 "qualityScore": 94
               },
               {
+                "pitchType": "FF",
+                "pitchName": "4-Seam Fastball",
+                "pitchUsage": 35.9,
+                "fitGrade": 10,
+                "batterFitScore": 94,
+                "qualityScore": 18
+              },
+              {
                 "pitchType": "CH",
                 "pitchName": "Changeup",
-                "pitchUsage": 11.2,
-                "fitGrade": -2.05,
+                "pitchUsage": 12.8,
+                "fitGrade": 10,
                 "batterFitScore": 82.7,
-                "qualityScore": 94
+                "qualityScore": 18
               }
             ]
           },
@@ -6437,13 +6592,13 @@ export const homeRunTargetsByGame = {
           },
           "recentHomeRuns": 2,
           "seasonHomeRuns": 10,
-          "splitHomeRuns": 8,
+          "splitHomeRuns": 2,
           "lineupStatus": "partial",
           "lineupCoverage": 9,
           "lineupSource": "rotowire-supplement",
           "lineupStateLabel": "projected order"
         },
-        "lineupPriority": 19.3,
+        "lineupPriority": 4.6,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -6455,7 +6610,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "L-R",
             "label": "77°F | Wind 6 mph L-R | 0% precip"
           },
-          "total": 8.5
+          "total": 9
         },
         "weatherBoost": 0,
         "recentHrSinceMay1": 6,
@@ -6481,7 +6636,7 @@ export const homeRunTargetsByGame = {
             "Sinker"
           ]
         },
-        "score": 59.6,
+        "score": 43.8,
         "scoreBand": "thin",
         "burstTag": "active",
         "contextLabels": [
@@ -6490,11 +6645,11 @@ export const homeRunTargetsByGame = {
           "mixed timing",
           "neutral bullpen"
         ],
-        "signalSummary": "Slot 4 | split edge | neutral bullpen | 0.73 HR/9 starter",
+        "signalSummary": "Slot 4 | split edge | neutral bullpen | 0 HR/9 starter",
         "rationale": [
           "10 HR and 11.1 xHR on the season",
           "6 HR since May 1 with 1 in the last 7 days and 2 in the last 10",
-          "Dylan Cease is allowing roughly 0.73 HR/9",
+          "Adam Macko is allowing roughly 0 HR/9",
           "Park HR index 112",
           "Last HR came 7 days ago",
           "Home today | historical split 50% on this side",
@@ -6502,174 +6657,17 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
           "No recent batting-leader signal stored yet",
           "Weather lane: 77°F | Wind 6 mph L-R | 0% precip",
-          "Slot 4 | split edge | lineup priority 19.3 | bullpen vulnerability 0.6",
+          "Slot 4 | split edge | lineup priority 4.6 | bullpen vulnerability 0.6",
           "Statcast trend improving | HH 35.6% | Barrel 4.4%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 13.99173768274151,
-        "modelShare": 0.122,
-        "modelSharePct": 12.2,
-        "lane": "live"
-      },
-      {
-        "playerId": 694212,
-        "playerName": "Samuel Basallo",
-        "teamAbbrev": "BAL",
-        "teamName": "Orioles",
-        "gameTitle": "Blue Jays @ Orioles",
-        "opposingPitcher": "Dylan Cease",
-        "opposingPitcherHand": "R",
-        "opposingPitcherHr9": 0.73,
-        "parkHrIndex": 112,
-        "isHomeToday": true,
-        "opposingBullpenVulnerability": 0.6,
-        "seasonHr": 8,
-        "seasonXHR": 7.8,
-        "xhrDiff": 0.2,
-        "baseScore": 42.46433387096774,
-        "lineupContext": {
-          "gameTitle": "Blue Jays @ Orioles",
-          "teamName": "Orioles",
-          "slot": 5,
-          "primaryTag": "split edge",
-          "tags": [
-            "split edge",
-            "whiff risk",
-            "cold",
-            "statcast up"
-          ],
-          "powerScore": 72.1,
-          "contactScore": 49.6,
-          "formScore": 18,
-          "splitScore": 62.7,
-          "matchupScore": 37.6,
-          "varianceScore": 92,
-          "pitchType": {
-            "fitScore": 75.2,
-            "fitGrade": 0.73,
-            "coveragePct": 100,
-            "summary": "4-Seam Fastball 35% / Slider 29% / Changeup 11% | fit +0.7",
-            "topPitches": [
-              {
-                "pitchType": "FF",
-                "pitchName": "4-Seam Fastball",
-                "pitchUsage": 35.3,
-                "fitGrade": 8.53,
-                "batterFitScore": 94,
-                "qualityScore": 47.1
-              },
-              {
-                "pitchType": "SL",
-                "pitchName": "Slider",
-                "pitchUsage": 29.4,
-                "fitGrade": -5.25,
-                "batterFitScore": 65.1,
-                "qualityScore": 94
-              },
-              {
-                "pitchType": "CH",
-                "pitchName": "Changeup",
-                "pitchUsage": 11.2,
-                "fitGrade": -8,
-                "batterFitScore": 18,
-                "qualityScore": 94
-              }
-            ]
-          },
-          "statcastTrend": {
-            "gamesSample7": 6,
-            "paSample7": 16,
-            "bbeSample7": 20,
-            "rolling7Xwoba": 0.346,
-            "rolling7Xba": 0.259,
-            "rolling7Xslg": 0.524,
-            "rolling7BarrelPct": 5,
-            "rolling7HardHitPct": 25,
-            "rolling7SweetSpotPct": 25,
-            "xwobaTrend": 0.02,
-            "barrelTrend": -1.3,
-            "hardHitTrend": -4.5,
-            "sweetSpotTrend": -0.3,
-            "trendSignal": "improving"
-          },
-          "recentHomeRuns": 2,
-          "seasonHomeRuns": 8,
-          "splitHomeRuns": 7,
-          "lineupStatus": "partial",
-          "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
-        },
-        "lineupPriority": 14.1,
-        "battingImpactContext": null,
-        "weatherContext": {
-          "weather": {
-            "icon": "clear-day",
-            "summary": "0% 77° Wind 6 mph L-R",
-            "precipitationPct": 0,
-            "temperatureF": 77,
-            "windMph": 6,
-            "windDirection": "L-R",
-            "label": "77°F | Wind 6 mph L-R | 0% precip"
-          },
-          "total": 8.5
-        },
-        "weatherBoost": 0,
-        "recentHrSinceMay1": 3,
-        "homeRunsLast7Days": 1,
-        "homeRunsLast10Days": 2,
-        "daysSinceLastHr": 3,
-        "noDoubterRate": 0.33,
-        "avgExitVelocityOnHomers": 108,
-        "homeRunContext": {
-          "sampleSize": 8,
-          "homeShare": 0.75,
-          "awayShare": 0.25,
-          "starterShare": 0.75,
-          "reliefShare": 0.25,
-          "earlyShare": 0.38,
-          "lateShare": 0.13,
-          "highPressureShare": 0.13,
-          "trailingShare": 0.25,
-          "averageInning": 4.3,
-          "averageGapDays": 7.9,
-          "topPitchTypes": [
-            "Cutter",
-            "Four-Seam Fastball"
-          ]
-        },
-        "score": 45,
-        "scoreBand": "thin",
-        "burstTag": "watch",
-        "contextLabels": [
-          "Slot 5 | split edge",
-          "home-heavy carry",
-          "mixed timing",
-          "neutral bullpen"
-        ],
-        "signalSummary": "Slot 5 | split edge | home-heavy carry | 0.73 HR/9 starter",
-        "rationale": [
-          "8 HR and 7.8 xHR on the season",
-          "3 HR since May 1 with 1 in the last 7 days and 2 in the last 10",
-          "Dylan Cease is allowing roughly 0.73 HR/9",
-          "Park HR index 112",
-          "Last HR came 3 days ago",
-          "Home today | historical split 75% on this side",
-          "75% off starters | 25% off relievers | avg inning 4.3",
-          "Most recent damage has skewed toward Cutter / Four-Seam Fastball",
-          "No recent batting-leader signal stored yet",
-          "Weather lane: 77°F | Wind 6 mph L-R | 0% precip",
-          "Slot 5 | split edge | lineup priority 14.1 | bullpen vulnerability 0.6",
-          "Statcast trend improving | HH 25.0% | Barrel 5.0%"
-        ],
-        "avoidHrChase": false,
         "rawWeight": 6.773962498900218,
-        "modelShare": 0.059,
-        "modelSharePct": 5.9,
+        "modelShare": 0.056,
+        "modelSharePct": 5.6,
         "lane": "thin"
       }
     ],
-    "summary": "Kazuma Okamoto is the cleanest likely bat here because the projected order still grades carry, the recent HR sample leans mixed timing, and today still profiles as a neutral venue split look. The better way to read this game is as a weighted cluster through Kazuma Okamoto, Gunnar Henderson, George Springer, Ernie Clement rather than a solo-bat script."
+    "summary": "Gunnar Henderson is the cleanest likely bat here because the projected order still grades carry, the recent HR sample leans close-game pop, and today still profiles as a neutral venue split look. The better way to read this game is as a weighted cluster through Gunnar Henderson, Kazuma Okamoto, George Springer, Ernie Clement rather than a solo-bat script."
   },
   "Angels @ Rays": {
     "gameTitle": "Angels @ Rays",
@@ -10171,7 +10169,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 15,
         "seasonXHR": 12,
         "xhrDiff": 3,
-        "baseScore": 92.47591028037385,
+        "baseScore": 91.67591028037384,
         "lineupContext": {
           "gameTitle": "Cubs @ Cardinals",
           "teamName": "Cardinals",
@@ -10251,16 +10249,16 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "26% Precipitation 81° Wind 7 mph R-L",
-            "precipitationPct": 26,
+            "summary": "15% Rain 81° Wind 7 mph R-L",
+            "precipitationPct": 0,
             "temperatureF": 81,
             "windMph": 7,
             "windDirection": "R-L",
-            "label": "81°F | Wind 7 mph R-L | 26% precip"
+            "label": "81°F | Wind 7 mph R-L | 0% precip"
           },
-          "total": 8
+          "total": 7.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 6,
         "homeRunsLast7Days": 2,
         "homeRunsLast10Days": 2,
@@ -10284,7 +10282,7 @@ export const homeRunTargetsByGame = {
             "Sinker"
           ]
         },
-        "score": 123.3,
+        "score": 122.5,
         "scoreBand": "premium",
         "burstTag": "active",
         "contextLabels": [
@@ -10304,14 +10302,14 @@ export const homeRunTargetsByGame = {
           "67% off starters | 33% off relievers | avg inning 4.9",
           "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 81°F | Wind 7 mph R-L | 26% precip",
+          "Weather lane: 81°F | Wind 7 mph R-L | 0% precip",
           "Slot 3 | carry | lineup priority 46.4 | bullpen vulnerability -1.7",
           "Statcast trend improving | HH 28.1% | Barrel 6.2%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 57.18515491416232,
-        "modelShare": 0.409,
-        "modelSharePct": 40.9,
+        "rawWeight": 56.66725947611035,
+        "modelShare": 0.411,
+        "modelSharePct": 41.1,
         "lane": "anchor"
       },
       {
@@ -10329,7 +10327,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 12,
         "seasonXHR": 13.4,
         "xhrDiff": -1.4,
-        "baseScore": 85.6928409090909,
+        "baseScore": 84.89284090909092,
         "lineupContext": {
           "gameTitle": "Cubs @ Cardinals",
           "teamName": "Cubs",
@@ -10352,7 +10350,7 @@ export const homeRunTargetsByGame = {
             "fitScore": 75.6,
             "fitGrade": 3.77,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +3.8",
+            "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +3.8",
             "topPitches": [
               {
                 "pitchType": "FF",
@@ -10371,12 +10369,12 @@ export const homeRunTargetsByGame = {
                 "qualityScore": 94
               },
               {
-                "pitchType": "SI",
-                "pitchName": "Sinker",
+                "pitchType": "CU",
+                "pitchName": "Curveball",
                 "pitchUsage": 18.9,
-                "fitGrade": 9.13,
-                "batterFitScore": 90,
-                "qualityScore": 39.8
+                "fitGrade": -2.4,
+                "batterFitScore": 32.3,
+                "qualityScore": 45.5
               }
             ]
           },
@@ -10409,16 +10407,16 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "26% Precipitation 81° Wind 7 mph R-L",
-            "precipitationPct": 26,
+            "summary": "15% Rain 81° Wind 7 mph R-L",
+            "precipitationPct": 0,
             "temperatureF": 81,
             "windMph": 7,
             "windDirection": "R-L",
-            "label": "81°F | Wind 7 mph R-L | 26% precip"
+            "label": "81°F | Wind 7 mph R-L | 0% precip"
           },
-          "total": 8
+          "total": 7.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 5,
         "homeRunsLast7Days": 2,
         "homeRunsLast10Days": 2,
@@ -10442,7 +10440,7 @@ export const homeRunTargetsByGame = {
             "Slider"
           ]
         },
-        "score": 108.5,
+        "score": 107.7,
         "scoreBand": "premium",
         "burstTag": "active",
         "contextLabels": [
@@ -10462,14 +10460,14 @@ export const homeRunTargetsByGame = {
           "50% off starters | 50% off relievers | avg inning 5.1",
           "Most recent damage has skewed toward Four-Seam Fastball / Slider",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 81°F | Wind 7 mph R-L | 26% precip",
+          "Weather lane: 81°F | Wind 7 mph R-L | 0% precip",
           "Slot 5 | carry | lineup priority 37.2 | bullpen vulnerability -0.3",
           "Statcast trend fading | HH 21.2% | Barrel 6.1%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 47.53307534861495,
-        "modelShare": 0.34,
-        "modelSharePct": 34,
+        "rawWeight": 47.0067407411717,
+        "modelShare": 0.341,
+        "modelSharePct": 34.1,
         "lane": "anchor"
       }
     ],
@@ -10489,7 +10487,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 6,
         "seasonXHR": 4.7,
         "xhrDiff": 1.3,
-        "baseScore": 51.457990909090924,
+        "baseScore": 50.65799090909093,
         "lineupContext": {
           "gameTitle": "Cubs @ Cardinals",
           "teamName": "Cubs",
@@ -10512,7 +10510,7 @@ export const homeRunTargetsByGame = {
             "fitScore": 53.2,
             "fitGrade": 1.86,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +1.9",
+            "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +1.9",
             "topPitches": [
               {
                 "pitchType": "FF",
@@ -10531,12 +10529,12 @@ export const homeRunTargetsByGame = {
                 "qualityScore": 94
               },
               {
-                "pitchType": "SI",
-                "pitchName": "Sinker",
+                "pitchType": "CU",
+                "pitchName": "Curveball",
                 "pitchUsage": 18.9,
-                "fitGrade": 9.85,
-                "batterFitScore": 94,
-                "qualityScore": 39.8
+                "fitGrade": -2.27,
+                "batterFitScore": 33,
+                "qualityScore": 45.5
               }
             ]
           },
@@ -10569,16 +10567,16 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "26% Precipitation 81° Wind 7 mph R-L",
-            "precipitationPct": 26,
+            "summary": "15% Rain 81° Wind 7 mph R-L",
+            "precipitationPct": 0,
             "temperatureF": 81,
             "windMph": 7,
             "windDirection": "R-L",
-            "label": "81°F | Wind 7 mph R-L | 26% precip"
+            "label": "81°F | Wind 7 mph R-L | 0% precip"
           },
-          "total": 8
+          "total": 7.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 2,
         "homeRunsLast10Days": 2,
@@ -10602,7 +10600,7 @@ export const homeRunTargetsByGame = {
             "Sinker"
           ]
         },
-        "score": 68,
+        "score": 67.2,
         "scoreBand": "thin",
         "burstTag": "watch",
         "contextLabels": [
@@ -10622,14 +10620,14 @@ export const homeRunTargetsByGame = {
           "50% off starters | 50% off relievers | avg inning 4.5",
           "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 81°F | Wind 7 mph R-L | 26% precip",
+          "Weather lane: 81°F | Wind 7 mph R-L | 0% precip",
           "Slot 3 | carry | lineup priority 32.2 | bullpen vulnerability -0.3",
           "Statcast trend improving | HH 23.3% | Barrel 9.3%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 20.034360310526733,
-        "modelShare": 0.143,
-        "modelSharePct": 14.3,
+        "rawWeight": 19.46652794360465,
+        "modelShare": 0.141,
+        "modelSharePct": 14.1,
         "lane": "live"
       },
       {
@@ -10647,7 +10645,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 6,
         "seasonXHR": 5.4,
         "xhrDiff": 0.6,
-        "baseScore": 46.051890909090915,
+        "baseScore": 45.25189090909092,
         "lineupContext": {
           "gameTitle": "Cubs @ Cardinals",
           "teamName": "Cubs",
@@ -10670,7 +10668,7 @@ export const homeRunTargetsByGame = {
             "fitScore": 68.4,
             "fitGrade": 2.74,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +2.7",
+            "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +2.7",
             "topPitches": [
               {
                 "pitchType": "FF",
@@ -10689,12 +10687,12 @@ export const homeRunTargetsByGame = {
                 "qualityScore": 94
               },
               {
-                "pitchType": "SI",
-                "pitchName": "Sinker",
+                "pitchType": "CU",
+                "pitchName": "Curveball",
                 "pitchUsage": 18.9,
-                "fitGrade": 9.85,
-                "batterFitScore": 94,
-                "qualityScore": 39.8
+                "fitGrade": -2.67,
+                "batterFitScore": 30.8,
+                "qualityScore": 45.5
               }
             ]
           },
@@ -10727,16 +10725,16 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "26% Precipitation 81° Wind 7 mph R-L",
-            "precipitationPct": 26,
+            "summary": "15% Rain 81° Wind 7 mph R-L",
+            "precipitationPct": 0,
             "temperatureF": 81,
             "windMph": 7,
             "windDirection": "R-L",
-            "label": "81°F | Wind 7 mph R-L | 26% precip"
+            "label": "81°F | Wind 7 mph R-L | 0% precip"
           },
-          "total": 8
+          "total": 7.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 1,
@@ -10760,7 +10758,7 @@ export const homeRunTargetsByGame = {
             "Four-Seam Fastball"
           ]
         },
-        "score": 61.2,
+        "score": 60.4,
         "scoreBand": "thin",
         "burstTag": "carry",
         "contextLabels": [
@@ -10780,14 +10778,14 @@ export const homeRunTargetsByGame = {
           "17% off starters | 83% off relievers | avg inning 7",
           "Most recent damage has skewed toward Slider / Four-Seam Fastball",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 81°F | Wind 7 mph R-L | 26% precip",
+          "Weather lane: 81°F | Wind 7 mph R-L | 0% precip",
           "Slot 1 | carry | lineup priority 25.4 | bullpen vulnerability -0.3",
           "Statcast trend improving | HH 34.7% | Barrel 6.1%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 15.157833434521917,
-        "modelShare": 0.108,
-        "modelSharePct": 10.8,
+        "rawWeight": 14.575799886422292,
+        "modelShare": 0.106,
+        "modelSharePct": 10.6,
         "lane": "live"
       }
     ],
@@ -10808,7 +10806,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 15,
         "seasonXHR": 12,
         "xhrDiff": 3,
-        "baseScore": 92.47591028037385,
+        "baseScore": 91.67591028037384,
         "lineupContext": {
           "gameTitle": "Cubs @ Cardinals",
           "teamName": "Cardinals",
@@ -10888,16 +10886,16 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "26% Precipitation 81° Wind 7 mph R-L",
-            "precipitationPct": 26,
+            "summary": "15% Rain 81° Wind 7 mph R-L",
+            "precipitationPct": 0,
             "temperatureF": 81,
             "windMph": 7,
             "windDirection": "R-L",
-            "label": "81°F | Wind 7 mph R-L | 26% precip"
+            "label": "81°F | Wind 7 mph R-L | 0% precip"
           },
-          "total": 8
+          "total": 7.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 6,
         "homeRunsLast7Days": 2,
         "homeRunsLast10Days": 2,
@@ -10921,7 +10919,7 @@ export const homeRunTargetsByGame = {
             "Sinker"
           ]
         },
-        "score": 123.3,
+        "score": 122.5,
         "scoreBand": "premium",
         "burstTag": "active",
         "contextLabels": [
@@ -10941,14 +10939,14 @@ export const homeRunTargetsByGame = {
           "67% off starters | 33% off relievers | avg inning 4.9",
           "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 81°F | Wind 7 mph R-L | 26% precip",
+          "Weather lane: 81°F | Wind 7 mph R-L | 0% precip",
           "Slot 3 | carry | lineup priority 46.4 | bullpen vulnerability -1.7",
           "Statcast trend improving | HH 28.1% | Barrel 6.2%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 57.18515491416232,
-        "modelShare": 0.409,
-        "modelSharePct": 40.9,
+        "rawWeight": 56.66725947611035,
+        "modelShare": 0.411,
+        "modelSharePct": 41.1,
         "lane": "anchor"
       },
       {
@@ -10966,7 +10964,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 12,
         "seasonXHR": 13.4,
         "xhrDiff": -1.4,
-        "baseScore": 85.6928409090909,
+        "baseScore": 84.89284090909092,
         "lineupContext": {
           "gameTitle": "Cubs @ Cardinals",
           "teamName": "Cubs",
@@ -10989,7 +10987,7 @@ export const homeRunTargetsByGame = {
             "fitScore": 75.6,
             "fitGrade": 3.77,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +3.8",
+            "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +3.8",
             "topPitches": [
               {
                 "pitchType": "FF",
@@ -11008,12 +11006,12 @@ export const homeRunTargetsByGame = {
                 "qualityScore": 94
               },
               {
-                "pitchType": "SI",
-                "pitchName": "Sinker",
+                "pitchType": "CU",
+                "pitchName": "Curveball",
                 "pitchUsage": 18.9,
-                "fitGrade": 9.13,
-                "batterFitScore": 90,
-                "qualityScore": 39.8
+                "fitGrade": -2.4,
+                "batterFitScore": 32.3,
+                "qualityScore": 45.5
               }
             ]
           },
@@ -11046,16 +11044,16 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "26% Precipitation 81° Wind 7 mph R-L",
-            "precipitationPct": 26,
+            "summary": "15% Rain 81° Wind 7 mph R-L",
+            "precipitationPct": 0,
             "temperatureF": 81,
             "windMph": 7,
             "windDirection": "R-L",
-            "label": "81°F | Wind 7 mph R-L | 26% precip"
+            "label": "81°F | Wind 7 mph R-L | 0% precip"
           },
-          "total": 8
+          "total": 7.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 5,
         "homeRunsLast7Days": 2,
         "homeRunsLast10Days": 2,
@@ -11079,7 +11077,7 @@ export const homeRunTargetsByGame = {
             "Slider"
           ]
         },
-        "score": 108.5,
+        "score": 107.7,
         "scoreBand": "premium",
         "burstTag": "active",
         "contextLabels": [
@@ -11099,14 +11097,14 @@ export const homeRunTargetsByGame = {
           "50% off starters | 50% off relievers | avg inning 5.1",
           "Most recent damage has skewed toward Four-Seam Fastball / Slider",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 81°F | Wind 7 mph R-L | 26% precip",
+          "Weather lane: 81°F | Wind 7 mph R-L | 0% precip",
           "Slot 5 | carry | lineup priority 37.2 | bullpen vulnerability -0.3",
           "Statcast trend fading | HH 21.2% | Barrel 6.1%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 47.53307534861495,
-        "modelShare": 0.34,
-        "modelSharePct": 34,
+        "rawWeight": 47.0067407411717,
+        "modelShare": 0.341,
+        "modelSharePct": 34.1,
         "lane": "anchor"
       },
       {
@@ -11124,7 +11122,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 6,
         "seasonXHR": 4.7,
         "xhrDiff": 1.3,
-        "baseScore": 51.457990909090924,
+        "baseScore": 50.65799090909093,
         "lineupContext": {
           "gameTitle": "Cubs @ Cardinals",
           "teamName": "Cubs",
@@ -11147,7 +11145,7 @@ export const homeRunTargetsByGame = {
             "fitScore": 53.2,
             "fitGrade": 1.86,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +1.9",
+            "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +1.9",
             "topPitches": [
               {
                 "pitchType": "FF",
@@ -11166,12 +11164,12 @@ export const homeRunTargetsByGame = {
                 "qualityScore": 94
               },
               {
-                "pitchType": "SI",
-                "pitchName": "Sinker",
+                "pitchType": "CU",
+                "pitchName": "Curveball",
                 "pitchUsage": 18.9,
-                "fitGrade": 9.85,
-                "batterFitScore": 94,
-                "qualityScore": 39.8
+                "fitGrade": -2.27,
+                "batterFitScore": 33,
+                "qualityScore": 45.5
               }
             ]
           },
@@ -11204,16 +11202,16 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "26% Precipitation 81° Wind 7 mph R-L",
-            "precipitationPct": 26,
+            "summary": "15% Rain 81° Wind 7 mph R-L",
+            "precipitationPct": 0,
             "temperatureF": 81,
             "windMph": 7,
             "windDirection": "R-L",
-            "label": "81°F | Wind 7 mph R-L | 26% precip"
+            "label": "81°F | Wind 7 mph R-L | 0% precip"
           },
-          "total": 8
+          "total": 7.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 4,
         "homeRunsLast7Days": 2,
         "homeRunsLast10Days": 2,
@@ -11237,7 +11235,7 @@ export const homeRunTargetsByGame = {
             "Sinker"
           ]
         },
-        "score": 68,
+        "score": 67.2,
         "scoreBand": "thin",
         "burstTag": "watch",
         "contextLabels": [
@@ -11257,14 +11255,14 @@ export const homeRunTargetsByGame = {
           "50% off starters | 50% off relievers | avg inning 4.5",
           "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 81°F | Wind 7 mph R-L | 26% precip",
+          "Weather lane: 81°F | Wind 7 mph R-L | 0% precip",
           "Slot 3 | carry | lineup priority 32.2 | bullpen vulnerability -0.3",
           "Statcast trend improving | HH 23.3% | Barrel 9.3%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 20.034360310526733,
-        "modelShare": 0.143,
-        "modelSharePct": 14.3,
+        "rawWeight": 19.46652794360465,
+        "modelShare": 0.141,
+        "modelSharePct": 14.1,
         "lane": "live"
       },
       {
@@ -11282,7 +11280,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 6,
         "seasonXHR": 5.4,
         "xhrDiff": 0.6,
-        "baseScore": 46.051890909090915,
+        "baseScore": 45.25189090909092,
         "lineupContext": {
           "gameTitle": "Cubs @ Cardinals",
           "teamName": "Cubs",
@@ -11305,7 +11303,7 @@ export const homeRunTargetsByGame = {
             "fitScore": 68.4,
             "fitGrade": 2.74,
             "coveragePct": 100,
-            "summary": "4-Seam Fastball 31% / Slider 28% / Sinker 19% | fit +2.7",
+            "summary": "4-Seam Fastball 31% / Slider 28% / Curveball 19% | fit +2.7",
             "topPitches": [
               {
                 "pitchType": "FF",
@@ -11324,12 +11322,12 @@ export const homeRunTargetsByGame = {
                 "qualityScore": 94
               },
               {
-                "pitchType": "SI",
-                "pitchName": "Sinker",
+                "pitchType": "CU",
+                "pitchName": "Curveball",
                 "pitchUsage": 18.9,
-                "fitGrade": 9.85,
-                "batterFitScore": 94,
-                "qualityScore": 39.8
+                "fitGrade": -2.67,
+                "batterFitScore": 30.8,
+                "qualityScore": 45.5
               }
             ]
           },
@@ -11362,16 +11360,16 @@ export const homeRunTargetsByGame = {
         "weatherContext": {
           "weather": {
             "icon": "partly-cloudy-day",
-            "summary": "26% Precipitation 81° Wind 7 mph R-L",
-            "precipitationPct": 26,
+            "summary": "15% Rain 81° Wind 7 mph R-L",
+            "precipitationPct": 0,
             "temperatureF": 81,
             "windMph": 7,
             "windDirection": "R-L",
-            "label": "81°F | Wind 7 mph R-L | 26% precip"
+            "label": "81°F | Wind 7 mph R-L | 0% precip"
           },
-          "total": 8
+          "total": 7.5
         },
-        "weatherBoost": 0,
+        "weatherBoost": -0.8,
         "recentHrSinceMay1": 3,
         "homeRunsLast7Days": 1,
         "homeRunsLast10Days": 1,
@@ -11395,7 +11393,7 @@ export const homeRunTargetsByGame = {
             "Four-Seam Fastball"
           ]
         },
-        "score": 61.2,
+        "score": 60.4,
         "scoreBand": "thin",
         "burstTag": "carry",
         "contextLabels": [
@@ -11415,14 +11413,14 @@ export const homeRunTargetsByGame = {
           "17% off starters | 83% off relievers | avg inning 7",
           "Most recent damage has skewed toward Slider / Four-Seam Fastball",
           "No recent batting-leader signal stored yet",
-          "Weather lane: 81°F | Wind 7 mph R-L | 26% precip",
+          "Weather lane: 81°F | Wind 7 mph R-L | 0% precip",
           "Slot 1 | carry | lineup priority 25.4 | bullpen vulnerability -0.3",
           "Statcast trend improving | HH 34.7% | Barrel 6.1%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 15.157833434521917,
-        "modelShare": 0.108,
-        "modelSharePct": 10.8,
+        "rawWeight": 14.575799886422292,
+        "modelShare": 0.106,
+        "modelSharePct": 10.6,
         "lane": "live"
       }
     ],
@@ -15326,7 +15324,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "75°F | 2% precip"
           },
-          "total": 10
+          "total": 9.5
         },
         "weatherBoost": 1,
         "recentHrSinceMay1": 5,
@@ -15484,7 +15482,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "75°F | 2% precip"
           },
-          "total": 10
+          "total": 9.5
         },
         "weatherBoost": 1,
         "recentHrSinceMay1": 6,
@@ -15645,7 +15643,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "75°F | 2% precip"
           },
-          "total": 10
+          "total": 9.5
         },
         "weatherBoost": 1,
         "recentHrSinceMay1": 5,
@@ -15803,7 +15801,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "75°F | 2% precip"
           },
-          "total": 10
+          "total": 9.5
         },
         "weatherBoost": 1,
         "recentHrSinceMay1": 3,
@@ -15964,7 +15962,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "75°F | 2% precip"
           },
-          "total": 10
+          "total": 9.5
         },
         "weatherBoost": 1,
         "recentHrSinceMay1": 5,
@@ -16122,7 +16120,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "75°F | 2% precip"
           },
-          "total": 10
+          "total": 9.5
         },
         "weatherBoost": 1,
         "recentHrSinceMay1": 6,
@@ -16281,7 +16279,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "75°F | 2% precip"
           },
-          "total": 10
+          "total": 9.5
         },
         "weatherBoost": 1,
         "recentHrSinceMay1": 5,
@@ -16439,7 +16437,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "75°F | 2% precip"
           },
-          "total": 10
+          "total": 9.5
         },
         "weatherBoost": 1,
         "recentHrSinceMay1": 3,

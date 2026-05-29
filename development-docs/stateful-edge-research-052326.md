@@ -38,7 +38,7 @@ This pass tests the exact hidden-edge idea that game-to-game state matters more 
 | --- | --- | --- | --- | --- |
 | Reserve (`05-10` to `05-15`) | 75 | 0.653 | 6.3 | 58.5 |
 | Current (`05-16` to `05-22`) | 93 | 0.581 | 6.6 | 57.4 |
-| Combined | 168 | 0.613 | 6.5 | 57.9 |
+| Combined | 168 | 0.613 | 6.4 | 57.9 |
 
 ### Opponent snapback trap
 
