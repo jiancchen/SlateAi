@@ -297,6 +297,33 @@ CREATE TABLE IF NOT EXISTS mlb_player_game_batting (
   PRIMARY KEY (game_pk, team_role, player_id)
 );
 
+CREATE TABLE IF NOT EXISTS mlb_batter_game_outcomes (
+  game_pk INTEGER NOT NULL,
+  game_date TEXT NOT NULL,
+  team_role TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  opponent_name TEXT NOT NULL,
+  player_id INTEGER NOT NULL,
+  player_name TEXT NOT NULL,
+  batting_order INTEGER,
+  plate_appearances INTEGER,
+  at_bats INTEGER,
+  runs INTEGER,
+  hits INTEGER,
+  rbi INTEGER,
+  hit_run_rbi_total INTEGER,
+  singles INTEGER,
+  doubles INTEGER,
+  triples INTEGER,
+  home_runs INTEGER,
+  total_bases INTEGER,
+  walks INTEGER,
+  strikeouts INTEGER,
+  summary TEXT,
+  raw_json TEXT,
+  PRIMARY KEY (game_pk, team_role, player_id)
+);
+
 CREATE TABLE IF NOT EXISTS mlb_pitcher_appearances (
   game_pk INTEGER NOT NULL,
   game_date TEXT NOT NULL,
@@ -1385,6 +1412,10 @@ CREATE INDEX IF NOT EXISTS idx_mlb_player_game_batting_player_date
   ON mlb_player_game_batting(player_id, game_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_player_game_batting_team_date
   ON mlb_player_game_batting(team_name, game_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_batter_game_outcomes_player_date
+  ON mlb_batter_game_outcomes(player_id, game_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_batter_game_outcomes_team_date
+  ON mlb_batter_game_outcomes(team_name, game_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_pitcher_appearances_pitcher_date
   ON mlb_pitcher_appearances(pitcher_id, game_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_pitcher_appearances_team_date
@@ -3052,6 +3083,102 @@ def upsert_player_game_batting(conn: sqlite3.Connection, row: dict[str, Any]) ->
             row["raw_json"],
         ),
     )
+    upsert_batter_game_outcome(conn, row)
+
+
+def upsert_batter_game_outcome(conn: sqlite3.Connection, row: dict[str, Any]) -> None:
+    runs = to_int(row.get("runs")) or 0
+    hits = to_int(row.get("hits")) or 0
+    rbi = to_int(row.get("rbi")) or 0
+    conn.execute(
+        """
+        INSERT INTO mlb_batter_game_outcomes (
+          game_pk, game_date, team_role, team_name, opponent_name, player_id, player_name,
+          batting_order, plate_appearances, at_bats, runs, hits, rbi, hit_run_rbi_total,
+          singles, doubles, triples, home_runs, total_bases, walks, strikeouts, summary, raw_json
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ON CONFLICT(game_pk, team_role, player_id) DO UPDATE SET
+          game_date=excluded.game_date,
+          team_name=excluded.team_name,
+          opponent_name=excluded.opponent_name,
+          player_name=excluded.player_name,
+          batting_order=excluded.batting_order,
+          plate_appearances=excluded.plate_appearances,
+          at_bats=excluded.at_bats,
+          runs=excluded.runs,
+          hits=excluded.hits,
+          rbi=excluded.rbi,
+          hit_run_rbi_total=excluded.hit_run_rbi_total,
+          singles=excluded.singles,
+          doubles=excluded.doubles,
+          triples=excluded.triples,
+          home_runs=excluded.home_runs,
+          total_bases=excluded.total_bases,
+          walks=excluded.walks,
+          strikeouts=excluded.strikeouts,
+          summary=excluded.summary,
+          raw_json=excluded.raw_json
+        """,
+        (
+            row["game_pk"],
+            row["game_date"],
+            row["team_role"],
+            row["team_name"],
+            row["opponent_name"],
+            row["player_id"],
+            row["player_name"],
+            row["batting_order"],
+            row["plate_appearances"],
+            row["at_bats"],
+            runs,
+            hits,
+            rbi,
+            hits + runs + rbi,
+            row["singles"],
+            row["doubles"],
+            row["triples"],
+            row["home_runs"],
+            row["total_bases"],
+            row["walks"],
+            row["strikeouts"],
+            row["summary"],
+            row["raw_json"],
+        ),
+    )
+
+
+def refresh_batter_game_outcomes(
+    conn: sqlite3.Connection, through_date: str | None = None, as_of_date: str | None = None
+) -> int:
+    init_db(conn)
+    params: list[Any] = []
+    where_sql = ""
+    if as_of_date:
+        conn.execute("DELETE FROM mlb_batter_game_outcomes WHERE game_date = ?", (as_of_date,))
+        where_sql = "WHERE game_date = ?"
+        params.append(as_of_date)
+    elif through_date:
+        conn.execute("DELETE FROM mlb_batter_game_outcomes WHERE game_date <= ?", (through_date,))
+        where_sql = "WHERE game_date <= ?"
+        params.append(through_date)
+    else:
+        conn.execute("DELETE FROM mlb_batter_game_outcomes")
+
+    rows = conn.execute(
+        f"""
+        SELECT *
+        FROM mlb_player_game_batting
+        {where_sql}
+        ORDER BY game_date, game_pk, team_role, player_id
+        """,
+        params,
+    ).fetchall()
+
+    for row in rows:
+        upsert_batter_game_outcome(conn, dict(row))
+
+    conn.commit()
+    return len(rows)
 
 
 def upsert_game_outcome(conn: sqlite3.Connection, row: dict[str, Any]) -> None:
@@ -9798,6 +9925,7 @@ def grade_prop_picks(
           b.game_pk,
           b.plate_appearances,
           b.at_bats,
+          b.runs,
           b.hits,
           b.singles,
           b.total_bases,
@@ -9832,6 +9960,8 @@ def grade_prop_picks(
         actual_value = None
         if row["prop_type"] == "hits":
             actual_value = to_float(row["hits"])
+        elif row["prop_type"] == "runs":
+            actual_value = to_float(row["runs"])
         elif row["prop_type"] == "singles":
             actual_value = to_float(row["singles"])
         elif row["prop_type"] == "walks":
@@ -9840,6 +9970,11 @@ def grade_prop_picks(
             actual_value = to_float(row["total_bases"])
         elif row["prop_type"] == "rbi":
             actual_value = to_float(row["rbi"])
+        elif row["prop_type"] in ("hitRunRbi", "hitsRunsRbis"):
+            hits = to_float(row["hits"])
+            runs = to_float(row["runs"])
+            rbi = to_float(row["rbi"])
+            actual_value = None if hits is None or runs is None or rbi is None else hits + runs + rbi
         elif row["prop_type"] == "pitcherStrikeouts":
             actual_value = to_float(row["pitcher_strikeouts"])
 
@@ -9854,6 +9989,9 @@ def grade_prop_picks(
         result_metadata = {
             "plateAppearances": row["plate_appearances"],
             "atBats": row["at_bats"],
+            "runs": row["runs"],
+            "hits": row["hits"],
+            "rbi": row["rbi"],
             "gamePk": row["game_pk"],
             "pitcherStrikeouts": row["pitcher_strikeouts"],
             "storyTags": json.loads(row["story_tags_json"] or "[]"),
@@ -10015,10 +10153,13 @@ def print_prop_backtest_summary(rows: list[sqlite3.Row]) -> None:
 
     stat_field_by_prop = {
         "hits": "hits",
+        "runs": "runs",
         "singles": "singles",
         "walks": "walks",
         "totalBases": "total_bases",
         "rbi": "rbi",
+        "hitRunRbi": "hit_run_rbi_total",
+        "hitsRunsRbis": "hit_run_rbi_total",
         "pitcherStrikeouts": "pitcher_strikeouts",
     }
 
@@ -10031,7 +10172,17 @@ def print_prop_backtest_summary(rows: list[sqlite3.Row]) -> None:
         hits = 0
         for row in prop_rows:
             line_threshold = to_float(row["line_threshold"])
-            actual_value = to_float(row[stat_field]) if stat_field else None
+            if prop_type in ("hitRunRbi", "hitsRunsRbis"):
+                hit_value = to_float(row["hits"])
+                run_value = to_float(row["runs"])
+                rbi_value = to_float(row["rbi"])
+                actual_value = (
+                    None
+                    if hit_value is None or run_value is None or rbi_value is None
+                    else hit_value + run_value + rbi_value
+                )
+            else:
+                actual_value = to_float(row[stat_field]) if stat_field else None
             if actual_value is not None and line_threshold is not None and actual_value > line_threshold:
                 hits += 1
         print(f"- {prop_type}: {hits}/{len(prop_rows)}")
@@ -10328,6 +10479,18 @@ def parse_args() -> argparse.Namespace:
         help="Optional single as-of date to rebuild incrementally without touching earlier Statcast trend rows.",
     )
 
+    derive_batter_outcomes = subparsers.add_parser(
+        "derive-batter-outcomes",
+        help="Refresh explicit daily batter outcome rows from stored MLB batting box scores.",
+    )
+    derive_batter_outcomes.add_argument(
+        "--through-date", help="Optional YYYY-MM-DD cutoff. Defaults to every loaded date."
+    )
+    derive_batter_outcomes.add_argument(
+        "--as-of-date",
+        help="Optional single game date to rebuild incrementally without touching earlier outcome rows.",
+    )
+
     import_picks = subparsers.add_parser("import-predictions", help="Import a saved HR prediction snapshot JSON file.")
     import_picks.add_argument("--file", required=True, help="Path to the JSON prediction file.")
 
@@ -10345,7 +10508,10 @@ def parse_args() -> argparse.Namespace:
     )
     grade_props.add_argument("--date", required=True, help="Prediction date in YYYY-MM-DD format.")
     grade_props.add_argument("--model-name", required=True, help="Model name stored in the prediction snapshot.")
-    grade_props.add_argument("--prop-type", help="Optional prop type filter, e.g. hits, totalBases, rbi, walks, singles.")
+    grade_props.add_argument(
+        "--prop-type",
+        help="Optional prop type filter, e.g. hits, runs, totalBases, rbi, hitRunRbi, walks, singles.",
+    )
 
     list_events = subparsers.add_parser("list-home-runs", help="Print all actual home runs stored for a date.")
     list_events.add_argument("--date", required=True, help="Date in YYYY-MM-DD format.")
@@ -10556,6 +10722,16 @@ def main() -> None:
                 print(f"Refreshed hitter Statcast trend snapshots through {args.through_date}")
             else:
                 print("Refreshed hitter Statcast trend snapshots for all loaded dates")
+            return
+
+        if args.command == "derive-batter-outcomes":
+            rows_loaded = refresh_batter_game_outcomes(conn, args.through_date, args.as_of_date)
+            if args.as_of_date:
+                print(f"Refreshed explicit batter outcome rows for {args.as_of_date} ({rows_loaded} batter-games)")
+            elif args.through_date:
+                print(f"Refreshed explicit batter outcome rows through {args.through_date} ({rows_loaded} batter-games)")
+            else:
+                print(f"Refreshed explicit batter outcome rows for all loaded dates ({rows_loaded} batter-games)")
             return
 
         if args.command == "import-predictions":

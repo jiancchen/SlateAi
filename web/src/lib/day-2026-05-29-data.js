@@ -12,14 +12,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 3,
       "losses": 2,
-      "era": "3.78",
-      "strikeOuts": 48,
-      "inningsPitched": "52.1",
+      "era": "3.71",
+      "strikeOuts": 49,
+      "inningsPitched": "53.1",
       "hitsAllowed": 44,
-      "walks": 24,
+      "walks": 25,
       "homeRunsAllowed": 9,
-      "whip": "1.30",
-      "gamesStarted": 10,
+      "whip": "1.29",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 656550,
@@ -191,14 +191,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 0,
       "losses": 6,
-      "era": "6.86",
+      "era": "6.91",
       "strikeOuts": 35,
-      "inningsPitched": "40.2",
-      "hitsAllowed": 54,
-      "walks": 14,
-      "homeRunsAllowed": 6,
-      "whip": "1.67",
-      "gamesStarted": 8,
+      "inningsPitched": "41.2",
+      "hitsAllowed": 57,
+      "walks": 15,
+      "homeRunsAllowed": 7,
+      "whip": "1.73",
+      "gamesStarted": 9,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 663978,
@@ -391,9 +391,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +115 / +1.5 -130",
-    "total": "o9.5 -102 / u9.5 -115",
-    "moneyline": "Braves -132 / Reds +118",
+    "spread": "-1.5 +130 / +1.5 -140",
+    "total": "o9 -120 / u9.5 -120",
+    "moneyline": "Braves -132 / Reds +120",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/braves-vs-reds",
     "tierTwoContext": {
@@ -2799,14 +2799,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 0,
       "losses": 2,
-      "era": "5.30",
-      "strikeOuts": 21,
-      "inningsPitched": "18.2",
-      "hitsAllowed": 22,
-      "walks": 5,
+      "era": "5.49",
+      "strikeOuts": 22,
+      "inningsPitched": "19.2",
+      "hitsAllowed": 24,
+      "walks": 6,
       "homeRunsAllowed": 2,
-      "whip": "1.45",
-      "gamesStarted": 0,
+      "whip": "1.53",
+      "gamesStarted": 1,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 687606,
@@ -2826,7 +2826,7 @@ export const rawGames = [
       "usageContext": {
         "status": "warehouse-gap",
         "label": "Warehouse sample incomplete",
-        "note": "The season line shows 18.2 MLB innings, but only 0 logged starts cleared the warehouse on this pass, so trust the starter lane more than the thin rolling sample.",
+        "note": "The season line shows 19.2 MLB innings, but only 1 logged start cleared the warehouse on this pass, so trust the starter lane more than the thin rolling sample.",
         "expectedInnings": 4.6,
         "daysSinceLastStart": null,
         "startsLoaded": 0,
@@ -2841,9 +2841,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -205 / +1.5 -175",
-    "total": "o9 -120 / u9.5 -120",
-    "moneyline": "Padres -102 / Nationals -115",
+    "spread": "-1.5 +135 / +1.5 -154",
+    "total": "o7.5 -110 / u8 -125",
+    "moneyline": "Padres -130 / Nationals +118",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/padres-vs-nationals",
     "tierTwoContext": {
@@ -5130,14 +5130,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 5,
       "losses": 1,
-      "era": "2.77",
+      "era": "2.92",
       "strikeOuts": 59,
-      "inningsPitched": "52.0",
-      "hitsAllowed": 42,
-      "walks": 19,
+      "inningsPitched": "52.1",
+      "hitsAllowed": 43,
+      "walks": 21,
       "homeRunsAllowed": 5,
-      "whip": "1.17",
-      "gamesStarted": 9,
+      "whip": "1.22",
+      "gamesStarted": 10,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 671737,
@@ -5314,14 +5314,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 0,
       "losses": 0,
-      "era": "-",
-      "strikeOuts": 0,
-      "inningsPitched": "-",
-      "hitsAllowed": 0,
+      "era": "9.00",
+      "strikeOuts": 1,
+      "inningsPitched": "1.0",
+      "hitsAllowed": 1,
       "walks": 0,
-      "homeRunsAllowed": 0,
-      "whip": null,
-      "gamesStarted": 0,
+      "homeRunsAllowed": 1,
+      "whip": "1.00",
+      "gamesStarted": 1,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 683003,
@@ -5339,9 +5339,9 @@ export const rawGames = [
       "strikeoutMarket": null,
       "recentForm": null,
       "usageContext": {
-        "status": "debut-window",
-        "label": "Debut / opener watch",
-        "note": "No MLB starts are loaded yet, so this looks like a debut, opener, or fresh call-up lane with very little reliable innings history.",
+        "status": "tiny-sample",
+        "label": "Tiny MLB sample",
+        "note": "Only 1 MLB start are loaded, so the board should assume a shorter leash and higher variance.",
         "expectedInnings": 0,
         "daysSinceLastStart": null,
         "startsLoaded": 0,
@@ -5356,9 +5356,9 @@ export const rawGames = [
         "workloadLabel": "Unknown leash"
       }
     },
-    "spread": "+1.5 -182 / -1.5 +160",
-    "total": "o8 -110 / u8 -105",
-    "moneyline": "Twins +115 / Pirates -130",
+    "spread": "+1.5 -170 / -1.5 +154",
+    "total": "o8 -113 / u8.5 -125",
+    "moneyline": "Twins +125 / Pirates -142",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/twins-vs-pirates",
     "tierTwoContext": {
@@ -7852,9 +7852,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -180 / -1.5 +164",
-    "total": "o9 -105 / u9 -110",
-    "moneyline": "Blue Jays +110 / Orioles -130",
+    "spread": "+1.5 -180 / +1.5 -187",
+    "total": "o9 -118 / u9.5 -117",
+    "moneyline": "Blue Jays +108 / Orioles -125",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/blue-jays-vs-orioles",
     "tierTwoContext": {
@@ -10679,8 +10679,8 @@ export const rawGames = [
       }
     },
     "spread": "+1.5 -150 / -1.5 +140",
-    "total": "o8 -110 / u8 -110",
-    "moneyline": "Angels +143 / Rays -155",
+    "total": "o8 -105 / u8 -110",
+    "moneyline": "Angels +143 / Rays -150",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/angels-vs-rays",
     "tierTwoContext": {
@@ -13409,8 +13409,8 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -220 / +1.5 -194",
-    "total": "o7.5 +102 / u7.5 -115",
+    "spread": "+1.5 -225 / +1.5 -190",
+    "total": "o7.5 -103 / u7.5 -105",
     "moneyline": "Marlins -103 / Mets -110",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/marlins-vs-mets",
@@ -16463,9 +16463,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -195 / -1.5 +170",
-    "total": "o8 -105 / u8 -110",
-    "moneyline": "Red Sox +110 / Guardians -125",
+    "spread": "+1.5 -200 / +1.5 -202",
+    "total": "o8 -110 / u8 -108",
+    "moneyline": "Red Sox +108 / Guardians -121",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/red-sox-vs-guardians",
     "tierTwoContext": {
@@ -19098,8 +19098,8 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +135 / +1.5 -151",
-    "total": "o7.5 -112 / u7.5 -105",
+    "spread": "-1.5 +130 / +1.5 -150",
+    "total": "o7.5 -110 / u7.5 even",
     "moneyline": "Cubs -130 / Cardinals +115",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/cubs-vs-cardinals",
@@ -21664,8 +21664,8 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +155 / +1.5 -175",
-    "total": "o8.5 -114 / u8.5 +101",
+    "spread": "-1.5 +160 / +1.5 -178",
+    "total": "o8.5 -114 / u9 -130",
     "moneyline": "Tigers -108 / White Sox -108",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/tigers-vs-white-sox",
@@ -24308,9 +24308,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -193 / -1.5 +175",
-    "total": "o7.5 -102 / u7.5 -110",
-    "moneyline": "Royals +114 / Rangers -125",
+    "spread": "+1.5 -193 / -1.5 +176",
+    "total": "o7.5 -103 / u7.5 -110",
+    "moneyline": "Royals +114 / Rangers -124",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/royals-vs-rangers",
     "tierTwoContext": {
@@ -26864,7 +26864,7 @@ export const rawGames = [
     },
     "spread": "-1.5 +120 / +1.5 -130",
     "total": "o8.5 -104 / u8.5 -112",
-    "moneyline": "Brewers -138 / Astros +120",
+    "moneyline": "Brewers -140 / Astros +120",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/brewers-vs-astros",
     "tierTwoContext": {
@@ -29515,9 +29515,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +102 / +1.5 -118",
-    "total": "o10.5 even / u10.5 -110",
-    "moneyline": "Giants -150 / Rockies +130",
+    "spread": "-1.5 +105 / +1.5 -120",
+    "total": "o10.5 -105 / u10.5 -110",
+    "moneyline": "Giants -145 / Rockies +132",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/giants-vs-rockies",
     "tierTwoContext": {
@@ -32143,9 +32143,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +120 / +1.5 -130",
-    "total": "o9.5 -107 / u9.5 -110",
-    "moneyline": "Yankees -140 / Athletics +123",
+    "spread": "-1.5 +120 / +1.5 -134",
+    "total": "o9.5 -105 / u9.5 -108",
+    "moneyline": "Yankees -135 / Athletics +120",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/yankees-vs-athletics",
     "tierTwoContext": {
@@ -35308,9 +35308,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -180 / -1.5 +160",
-    "total": "o7 -120 / u7.5 -124",
-    "moneyline": "Diamondbacks +122 / Mariners -135",
+    "spread": "+1.5 -178 / -1.5 +157",
+    "total": "o7 -118 / u7.5 -124",
+    "moneyline": "Diamondbacks +120 / Mariners -140",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/diamondbacks-vs-mariners",
     "tierTwoContext": {
