@@ -38,7 +38,8 @@ export const slateDayManifest: SlateManifestEntry[] = [
   { id: '2026-05-26', label: 'May 26, 2026', status: 'ready', slateMeta: { date: 'May 26, 2026', isoDate: '2026-05-26' }, summary: { totalGames: 55 } },
   { id: '2026-05-27', label: 'May 27, 2026', status: 'ready', slateMeta: { date: 'May 27, 2026', isoDate: '2026-05-27' }, summary: { totalGames: 46 } },
   { id: '2026-05-28', label: 'May 28, 2026', status: 'ready', slateMeta: { date: 'May 28, 2026', isoDate: '2026-05-28' }, summary: { totalGames: 38 } },
-  { id: '2026-05-29', label: 'May 29, 2026', status: 'ready', slateMeta: { date: 'May 29, 2026', isoDate: '2026-05-29' }, summary: { totalGames: 16 } }
+  { id: '2026-05-29', label: 'May 29, 2026', status: 'ready', slateMeta: { date: 'May 29, 2026', isoDate: '2026-05-29' }, summary: { totalGames: 31 } },
+  { id: '2026-05-30', label: 'May 30, 2026', status: 'ready', slateMeta: { date: 'May 30, 2026', isoDate: '2026-05-30' }, summary: { totalGames: 16 } }
 ]
 
 const dayModules = import.meta.glob('./day-*.js')

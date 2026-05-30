@@ -28,11 +28,11 @@ Target date: 2026-05-30
 |pass|Jaime Faria|37c|92c|36%|-5.8|Jaime Faria vs Frances Tiafoe|
 |pass|Diane Parry|18c|45c|39%|-3.3|Diane Parry vs Amanda Anisimova|
 |pass|Zachary Svajda|12c|30c|38%|-2.3|Francisco Cerundolo vs Zachary Svajda|
-|watch|Daria Kasatkina|10c|25c|39%|-2.0|Aryna Sabalenka vs Daria Kasatkina|
+|pass|Daria Kasatkina|10c|25c|39%|-2.0|Aryna Sabalenka vs Daria Kasatkina|
 |pass|Francisco Comesana|35c|88c|34%|-7.6|Matteo Berrettini vs Francisco Comesana|
 |pass|Madison Keys|48c|95c|41%|-11.1|Victoria Mboko vs Madison Keys|
 |pass|Camila Osorio|48c|95c|26%|-25.8|Anna Kalinskaya vs Camila Osorio|
-|pass|Maria Sakkari|46c|92c|22%|-27.6|Maria Sakkari vs Maja Chwalinska|
+|pass|Maria Sakkari|46c|92c|22%|-27.5|Maria Sakkari vs Maja Chwalinska|
 |pass|Brandon Nakashima|27c|54c|24%|-16.4|Felix Auger-Aliassime vs Brandon Nakashima|
 |pass|Anastasia Potapova|24c|48c|25%|-14.6|Coco Gauff vs Anastasia Potapova|
 |pass|Learner Tien|36c|72c|15%|-27.4|Flavio Cobolli vs Learner Tien|

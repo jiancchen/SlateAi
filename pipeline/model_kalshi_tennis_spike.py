@@ -361,7 +361,13 @@ def score_current_candidates(rows: pd.DataFrame, features: list[str], target_dat
         candidate["spikeModelEv25x"] = round(float(ev), 3)
         candidate["spikeModelEvPctOfEntry25x"] = round(float(ev / entry), 3) if entry else None
         candidate["spikeModelTarget25x"] = round(float(target), 3)
-        candidate["spikeModelTier"] = "pass" if vetoes else "trade" if ev > 0 and entry <= 0.2 else "watch" if ev > -0.02 else "pass"
+        candidate_tier = str(candidate.get("candidateTier") or "").lower()
+        candidate["spikeModelTier"] = (
+            "pass" if vetoes
+            else "trade" if ev > 0 and entry <= 0.2 and candidate_tier == "trade"
+            else "watch" if ev > 0
+            else "pass"
+        )
         candidate["stabilizationVetoes"] = vetoes or candidate.get("stabilizationVetoes") or []
         out.append(candidate)
     return sorted(out, key=lambda row: (row.get("spikeModelTier") != "trade", -(row.get("spikeModelEvPctOfEntry25x") or -9)))

@@ -353,7 +353,9 @@ const buildTennisValueSummary = (games: any[] = [], isoDate = '') => {
           .sort(byEvAsc)
           .slice(0, 6),
         note:
-          'Warehouse ensemble value pass. Bet-grade is deliberately empty unless a plus-money ML clears fee, edge, model-range, and risk gates; positive EV dogs stay watch-only when the weakness profile is not clean.'
+          isoDate === '2026-05-30'
+            ? 'May 30 uses the hardened tennis gate: sportsbook ML candidates must be plus-money, fee-adjusted, and inside the model range; prediction-market rows need positive spike EV and history support before they appear as trades.'
+            : 'Warehouse ensemble value pass. Bet-grade is deliberately empty unless a plus-money ML clears fee, edge, model-range, and risk gates; positive EV dogs stay watch-only when the weakness profile is not clean.'
       }
     }
   }

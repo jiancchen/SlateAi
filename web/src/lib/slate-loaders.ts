@@ -4,6 +4,7 @@ import {
   type LoadedSlateDay,
   type SlateManifestEntry
 } from './slate-fallback'
+import { loadSlateDay } from './slate-manifest'
 import { fetchJsonWithTimeout, getApiBaseUrl } from './api-client'
 import type { StoryArchiveDaySummary } from './story-types'
 
@@ -98,7 +99,7 @@ export const loadSlateDayData = async (id: string): Promise<LoadedSlateDay> => {
     }
   }
 
-  throw new Error(`No API slate payload available for ${id}`)
+  return loadSlateDay(id)
 }
 
 export const loadSlateGameDetailData = async (date: string, gameId: string): Promise<Record<string, unknown>> => {
@@ -116,7 +117,12 @@ export const loadSlateGameDetailData = async (date: string, gameId: string): Pro
     }
   }
 
-  return {}
+  try {
+    const slate = await loadSlateDay(date)
+    return slate.games.find((game) => String(game.id) === String(gameId)) ?? {}
+  } catch {
+    return {}
+  }
 }
 
 export const searchSlateGamesData = async (query: string, limit = 80): Promise<Record<string, unknown>[]> => {
