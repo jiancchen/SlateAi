@@ -1,0 +1,858 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-francisco-cerundolo-zachary-svajda-2026-05-30",
+  "boardTitle": "Francisco Cerundolo vs Zachary Svajda",
+  "boardPlayerName": "Francisco Cerundolo",
+  "recentOpponentName": "Hugo Gaston",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "28 May 26",
+  "recentIsoDate": "2026-05-28",
+  "recentResult": "FRA  2-6 6-4 6-2 6-1 2nd",
+  "flashscoreLabel": "Cerundolo F. - Gaston H.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Cerundolo F.",
+    "Gaston H."
+  ],
+  "generatedAt": "2026-05-30T02:48:54.429Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UFom2Ls3/",
+  "matchId": "UFom2Ls3",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UFom2Ls3",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UFom2Ls3"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:48"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:46"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "60%",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (43/63)",
+              "right": "54% (42/78)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (18/33)",
+              "right": "54% (28/52)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "13/20",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (36/78)",
+              "right": "32% (20/63)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (24/52)",
+              "right": "45% (15/33)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "7/20",
+              "right": "3/5",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "53",
+              "right": "28",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "56",
+              "right": "40",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Net points won",
+              "left": "73% (24/33)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (61/96)",
+              "right": "54% (71/132)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (61/132)",
+              "right": "36% (35/96)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (122/228)",
+              "right": "46% (106/228)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "81% (13/16)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Return games won",
+              "left": "41% (7/17)",
+              "right": "19% (3/16)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Total games won",
+              "left": "61% (20/33)",
+              "right": "39% (13/33)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "56%",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (7/12)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "23% (3/13)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "1/2",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (7/15)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (4/12)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "3/3",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "6",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "5",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (8/10)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "40% (10/25)",
+              "right": "59% (17/29)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (12/29)",
+              "right": "60% (15/25)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (22/54)",
+              "right": "59% (32/54)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "59%",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (14/21)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "80% (8/10)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "2/3",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (7/19)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (5/13)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "0/2",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "7",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "10",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (7/7)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (22/31)",
+              "right": "63% (20/32)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (12/32)",
+              "right": "29% (9/31)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (34/63)",
+              "right": "46% (29/63)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "71%",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (14/19)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (3/5)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (10/20)",
+              "right": "26% (5/19)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "9",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "10",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (6/9)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (17/24)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (14/28)",
+              "right": "29% (7/24)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (31/52)",
+              "right": "40% (21/52)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "56%",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (8/11)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "80% (4/5)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "8/11",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (12/24)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (11/19)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/11",
+              "right": "0/0",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "6",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "15",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Net points won",
+              "left": "43% (3/7)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (12/16)",
+              "right": "47% (20/43)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (23/43)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (35/59)",
+              "right": "41% (24/59)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Cerundolo F.",
+              "rightPlayer": "Gaston H."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1810,6 +1810,8 @@ def import_flashscore(conn: sqlite3.Connection, directory: Path = FLASHSCORE_DIR
                         counts["player_stat_rows"] += 1
     maps_dir = directory.parent
     for map_path in sorted(maps_dir.glob("flashscore-recent-match-map-*.json")):
+        slate_date_match = re.search(r"(\d{4}-\d{2}-\d{2})", map_path.name)
+        slate_date = slate_date_match.group(1) if slate_date_match else None
         map_payload = read_json(map_path)
         for link in (map_payload.get("map") or {}).values():
             board_player_name = link.get("boardPlayerName") or link.get("playerName")
@@ -1843,7 +1845,7 @@ def import_flashscore(conn: sqlite3.Connection, directory: Path = FLASHSCORE_DIR
                     board_player_name,
                     link.get("recentIndex"),
                     link.get("flashscoreId"),
-                    "2026-05-27" if "2026-05-27" in map_path.name else None,
+                    slate_date,
                     link.get("boardTitle"),
                     link.get("opponentName"),
                     link.get("recentEvent"),

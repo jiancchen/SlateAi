@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-matteo-arnaldi-raphael-collignon-2026-05-30",
+  "boardTitle": "Matteo Arnaldi vs Raphael Collignon",
+  "boardPlayerName": "Raphael Collignon",
+  "recentOpponentName": "Ben Shelton",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "28 May 26",
+  "recentIsoDate": "2026-05-28",
+  "recentResult": "USA  6-4 7-5 6-4 2nd",
+  "flashscoreLabel": "Collignon R. - Shelton B.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Collignon R.",
+    "Shelton B."
+  ],
+  "generatedAt": "2026-05-30T02:49:02.844Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/URZmmlN6/",
+  "matchId": "URZmmlN6",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_URZmmlN6",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_URZmmlN6"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:03"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "10",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "65%",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (43/49)",
+              "right": "69% (40/58)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "70% (21/30)",
+              "right": "65% (20/31)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/6",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (18/58)",
+              "right": "12% (6/49)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "35% (11/31)",
+              "right": "30% (9/30)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "0/0",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "31",
+              "right": "33",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "27",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Net points won",
+              "left": "88% (15/17)",
+              "right": "48% (15/31)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "81% (64/79)",
+              "right": "67% (60/89)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (29/89)",
+              "right": "19% (15/79)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (93/168)",
+              "right": "45% (75/168)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (16/16)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return games won",
+              "left": "19% (3/16)",
+              "right": "0% (0/16)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total games won",
+              "left": "59% (19/32)",
+              "right": "41% (13/32)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "74%",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "92% (11/12)",
+              "right": "70% (16/23)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "82% (9/11)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (7/23)",
+              "right": "8% (1/12)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "11",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "3",
+              "right": "12",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "87% (20/23)",
+              "right": "65% (20/31)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (11/31)",
+              "right": "13% (3/23)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (31/54)",
+              "right": "43% (23/54)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "53%",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (18/22)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (3/16)",
+              "right": "14% (3/22)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (6/14)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "12",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "8",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Net points won",
+              "left": "89% (8/9)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (24/32)",
+              "right": "70% (21/30)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (9/30)",
+              "right": "25% (8/32)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (33/62)",
+              "right": "47% (29/62)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "68%",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "93% (14/15)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (6/9)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (8/19)",
+              "right": "13% (2/15)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "11% (1/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "10",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "83% (20/24)",
+              "right": "68% (19/28)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (9/28)",
+              "right": "17% (4/24)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (29/52)",
+              "right": "44% (23/52)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Collignon R.",
+              "rightPlayer": "Shelton B."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

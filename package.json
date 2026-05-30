@@ -106,6 +106,7 @@
     "data:grade:tennis": "python3 pipeline/tennis_warehouse.py grade",
     "data:import:tennis-flashscore": "python3 pipeline/tennis_warehouse.py import-flashscore",
     "data:import:tennis-sofascore": "python3 pipeline/tennis_warehouse.py import-sofascore",
+    "data:backfill:tennis-recent-form": "python3 pipeline/backfill_tennis_recent_form_metrics.py",
     "data:export:tennis-replays": "python3 pipeline/export_tennis_sofascore_replays.py",
     "data:export:tennis-warehouse-context": "python3 pipeline/export_tennis_warehouse_context.py",
     "data:train:tennis": "python3 pipeline/tennis_multimodel_backtest.py",

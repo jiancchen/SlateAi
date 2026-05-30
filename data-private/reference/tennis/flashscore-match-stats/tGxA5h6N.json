@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-flavio-cobolli-learner-tien-2026-05-30",
+  "boardTitle": "Flavio Cobolli vs Learner Tien",
+  "boardPlayerName": "Flavio Cobolli",
+  "recentOpponentName": "Terence Atmane",
+  "recentIndex": 4,
+  "recentEvent": "",
+  "recentDate": "09 May 26",
+  "recentIsoDate": "2026-05-09",
+  "recentResult": "FRA  7-61 6-3 2nd",
+  "flashscoreLabel": "Cobolli F. - Atmane T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/results/",
+  "players": [
+    "Cobolli F.",
+    "Atmane T."
+  ],
+  "generatedAt": "2026-05-30T02:49:10.211Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/tGxA5h6N/",
+  "matchId": "tGxA5h6N",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_tGxA5h6N",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_tGxA5h6N"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 1,
+        "duration": "1:03"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:43"
+      }
+    ],
+    "totalDuration": "1:46"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "9",
+              "right": "5",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "67%",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (29/36)",
+              "right": "74% (34/46)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "61% (25/41)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "1/2",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (12/46)",
+              "right": "19% (7/36)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (12/23)",
+              "right": "39% (16/41)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/2",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "25",
+              "right": "15",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "26",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (5/8)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (54/77)",
+              "right": "65% (45/69)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (24/69)",
+              "right": "30% (23/77)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (78/146)",
+              "right": "47% (68/146)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (11/11)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Return games won",
+              "left": "10% (1/10)",
+              "right": "0% (0/11)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Total games won",
+              "left": "57% (12/21)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "4",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "49%",
+              "right": "70%",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (18/22)",
+              "right": "75% (24/32)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "61% (14/23)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (9/32)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (7/14)",
+              "right": "39% (9/23)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "11",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "14",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (32/45)",
+              "right": "65% (30/46)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (16/46)",
+              "right": "29% (13/45)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (48/91)",
+              "right": "47% (43/91)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "44%",
+              "right": "61%",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (11/14)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "61% (11/18)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (3/14)",
+              "right": "-7% (-1/14)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (5/9)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "4",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "12",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (22/32)",
+              "right": "65% (15/23)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (8/23)",
+              "right": "31% (10/32)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (30/55)",
+              "right": "45% (25/55)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Atmane T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

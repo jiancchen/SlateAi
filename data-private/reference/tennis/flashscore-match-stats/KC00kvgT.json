@@ -1,0 +1,1022 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-matteo-berrettini-francisco-comesana-2026-05-30",
+  "boardTitle": "Matteo Berrettini vs Francisco Comesana",
+  "boardPlayerName": "Francisco Comesana",
+  "recentOpponentName": "Luciano Darderi",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "28 May 26",
+  "recentIsoDate": "2026-05-28",
+  "recentResult": "ITA  7-65 4-6 6-4 2-6 6-4 2nd",
+  "flashscoreLabel": "Comesana F. - Darderi L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Comesana F.",
+    "Darderi L."
+  ],
+  "generatedAt": "2026-05-30T02:49:13.534Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/KC00kvgT/",
+  "matchId": "KC00kvgT",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_KC00kvgT",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_KC00kvgT"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:02"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      },
+      {
+        "label": "Set 5",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "4:14"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "7",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "57%",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (67/91)",
+              "right": "73% (62/85)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (30/47)",
+              "right": "62% (40/65)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/7",
+              "right": "1/4",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (23/85)",
+              "right": "26% (24/91)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (25/65)",
+              "right": "36% (17/47)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "4/7",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "64",
+              "right": "44",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "49",
+              "right": "35",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "68% (40/59)",
+              "right": "56% (25/45)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (97/138)",
+              "right": "68% (102/150)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (48/150)",
+              "right": "30% (41/138)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (145/288)",
+              "right": "50% (143/288)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "84% (21/25)",
+              "right": "88% (22/25)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "12% (3/25)",
+              "right": "16% (4/25)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "48% (24/50)",
+              "right": "52% (26/50)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "47%",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (21/27)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/2",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (8/22)",
+              "right": "22% (6/27)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (11/25)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "1/1",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "7",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "12",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "82% (18/22)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (26/36)",
+              "right": "60% (28/47)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (19/47)",
+              "right": "28% (10/36)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (45/83)",
+              "right": "46% (38/83)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "82%",
+              "right": "71%",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (13/18)",
+              "right": "80% (16/20)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "100% (4/4)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (4/20)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "7",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (4/7)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (17/25)",
+              "right": "75% (21/28)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (7/28)",
+              "right": "32% (8/25)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (24/53)",
+              "right": "55% (29/53)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "50%",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "92% (12/13)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (8/14)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (4/14)",
+              "right": "8% (1/13)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (5/14)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "10",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "9",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "54% (7/13)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "83% (20/24)",
+              "right": "68% (19/28)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (9/28)",
+              "right": "17% (4/24)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (29/52)",
+              "right": "44% (23/52)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "70%",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "40% (8/20)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (6/9)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (2/14)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (2/6)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "10",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "4",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (6/10)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (14/29)",
+              "right": "80% (16/20)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (4/20)",
+              "right": "52% (15/29)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (18/49)",
+              "right": "63% (31/49)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 5",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "56%",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (13/13)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (7/11)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (5/15)",
+              "right": "0% (0/13)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (4/12)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "10",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "7",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "83% (20/24)",
+              "right": "67% (18/27)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (9/27)",
+              "right": "17% (4/24)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (29/51)",
+              "right": "43% (22/51)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Darderi L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

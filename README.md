@@ -86,11 +86,17 @@ npm run data:import:tennis-rankings
 npm run data:fetch:tennis-scoreboard -- --date YYYY-MM-DD
 npm run data:generate:tennis-clay-context -- --date YYYY-MM-DD
 node pipeline/enrich-tennis-opponent-quality.mjs --input web/src/lib/day-YYYY-MM-DD-tennis-clay-context.generated.json --output web/src/lib/day-YYYY-MM-DD-tennis-opponent-quality.generated.json
+npm run data:fetch:tennis-flashscore-recent -- --input web/src/lib/day-YYYY-MM-DD-tennis-opponent-quality.generated.json --map-output data-private/reference/tennis/flashscore-recent-match-map-YYYY-MM-DD.json
+node pipeline/enrich-tennis-opponent-quality.mjs --input web/src/lib/day-YYYY-MM-DD-tennis-clay-context.generated.json --output web/src/lib/day-YYYY-MM-DD-tennis-opponent-quality.generated.json --flashscore-recent-map data-private/reference/tennis/flashscore-recent-match-map-YYYY-MM-DD.json
 npm run data:import:tennis-slate -- --date YYYY-MM-DD
 npm run data:fetch:tennis-sofascore-slate -- --date YYYY-MM-DD
 npm run data:import:tennis-sofascore
 npm run data:fetch:tennis-flashscore-slate -- --date YYYY-MM-DD
 npm run data:import:tennis-flashscore
+npm run data:backfill:tennis-recent-form -- --date YYYY-MM-DD
+npm run data:export:tennis-warehouse-context -- --date YYYY-MM-DD
+node pipeline/generate-tennis-day-module.mjs --date YYYY-MM-DD
+npm run data:export:published
 python3 pipeline/tennis_multimodel_backtest.py --target-date YYYY-MM-DD
 python3 pipeline/analyze_kalshi_tennis_intramatch.py --target-date YYYY-MM-DD
 python3 pipeline/project_kalshi_tennis_trade_candidates.py

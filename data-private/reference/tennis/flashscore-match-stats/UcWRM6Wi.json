@@ -1,0 +1,1022 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-juan-manuel-cerundolo-martin-landaluce-2026-05-30",
+  "boardTitle": "Juan Manuel Cerundolo vs Martin Landaluce",
+  "boardPlayerName": "Juan Manuel Cerundolo",
+  "recentOpponentName": "Jannik Sinner",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "28 May 26",
+  "recentIsoDate": "2026-05-28",
+  "recentResult": "ITA  3-6 2-6 7-5 6-1 6-1 2nd",
+  "flashscoreLabel": "Sinner J. - Cerundolo J. M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Sinner J.",
+    "Cerundolo J. M."
+  ],
+  "generatedAt": "2026-05-30T02:49:15.265Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UcWRM6Wi/",
+  "matchId": "UcWRM6Wi",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UcWRM6Wi",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UcWRM6Wi"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:46"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": ""
+      },
+      {
+        "label": "Set 5",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:31"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "14",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "7",
+              "right": "5",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "62%",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (52/82)",
+              "right": "68% (53/78)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (21/51)",
+              "right": "55% (26/47)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/14",
+              "right": "11/16",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (25/78)",
+              "right": "37% (30/82)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (21/47)",
+              "right": "59% (30/51)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/16",
+              "right": "8/14",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "51",
+              "right": "52",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "64",
+              "right": "33",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Net points won",
+              "left": "64% (37/58)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (73/133)",
+              "right": "63% (79/125)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (46/125)",
+              "right": "45% (60/133)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (119/258)",
+              "right": "54% (139/258)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "64% (14/22)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Return games won",
+              "left": "24% (5/21)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Total games won",
+              "left": "44% (19/43)",
+              "right": "56% (24/43)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "62%",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (14/16)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/3",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (3/13)",
+              "right": "13% (2/16)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "0/0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "4",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "6",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Net points won",
+              "left": "89% (8/9)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "77% (20/26)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (7/21)",
+              "right": "23% (6/26)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (27/47)",
+              "right": "43% (20/47)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "75%",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "86% (12/14)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (8/16)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "1/3",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (7/18)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "83% (5/6)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/1",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "9",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "10",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (8/12)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (20/30)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (12/24)",
+              "right": "33% (10/30)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (32/54)",
+              "right": "41% (22/54)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "53%",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (12/20)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "23% (3/13)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "0/2",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (7/17)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (5/15)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "3/3",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "15",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "8",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Net points won",
+              "left": "61% (11/18)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "45% (15/33)",
+              "right": "63% (20/32)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (12/32)",
+              "right": "55% (18/33)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (27/65)",
+              "right": "58% (38/65)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "63%",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "43% (3/7)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "6/6",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (7/19)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "27% (3/11)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/6",
+              "right": "2/2",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "14",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "6",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Net points won",
+              "left": "43% (3/7)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "40% (6/15)",
+              "right": "67% (20/30)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (10/30)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (16/45)",
+              "right": "64% (29/45)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 5",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "86%",
+              "right": "61%",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "44% (11/25)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (1/4)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/8",
+              "right": "2/2",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "9% (1/11)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (4/7)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "3/8",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "10",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "3",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Net points won",
+              "left": "58% (7/12)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "41% (12/29)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (5/18)",
+              "right": "59% (17/29)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (17/47)",
+              "right": "64% (30/47)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Sinner J.",
+              "rightPlayer": "Cerundolo J. M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

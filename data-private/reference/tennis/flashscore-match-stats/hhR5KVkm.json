@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-maria-sakkari-maja-chwalinska-2026-05-30",
+  "boardTitle": "Maria Sakkari vs Maja Chwalinska",
+  "boardPlayerName": "Maja Chwalinska",
+  "recentOpponentName": "Elise Mertens",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "28 May 26",
+  "recentIsoDate": "2026-05-28",
+  "recentResult": "BEL  6-4 6-0 2nd",
+  "flashscoreLabel": "Chwalinska M. - Mertens E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Chwalinska M.",
+    "Mertens E."
+  ],
+  "generatedAt": "2026-05-30T02:48:53.550Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/hhR5KVkm/",
+  "matchId": "hhR5KVkm",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_hhR5KVkm",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_hhR5KVkm"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:55"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 0,
+        "duration": "0:37"
+      }
+    ],
+    "totalDuration": "1:32"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "81%",
+              "right": "71%",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (30/47)",
+              "right": "53% (24/45)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "22% (4/18)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "3/9",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (21/45)",
+              "right": "36% (17/47)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "78% (14/18)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/9",
+              "right": "2/6",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "21",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "41",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (6/8)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (35/58)",
+              "right": "44% (28/63)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (35/63)",
+              "right": "40% (23/58)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (70/121)",
+              "right": "42% (51/121)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (12/16)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "80%",
+              "right": "80%",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (16/28)",
+              "right": "52% (17/33)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "1/4",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "48% (16/33)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "2/5",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "13",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "25",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (19/35)",
+              "right": "49% (20/41)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (21/41)",
+              "right": "46% (16/35)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (40/76)",
+              "right": "47% (36/76)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "83%",
+              "right": "55%",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (14/19)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (2/4)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "2/5",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (5/12)",
+              "right": "26% (5/19)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "90% (9/10)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "0/1",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "8",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "16",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (16/23)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "64% (14/22)",
+              "right": "30% (7/23)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "67% (30/45)",
+              "right": "33% (15/45)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (6/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Mertens E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

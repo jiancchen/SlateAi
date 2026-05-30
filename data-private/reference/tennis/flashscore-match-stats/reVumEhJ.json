@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-victoria-mboko-madison-keys-2026-05-30",
+  "boardTitle": "Victoria Mboko vs Madison Keys",
+  "boardPlayerName": "Madison Keys",
+  "recentOpponentName": "Antonia Ruzic",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "28 May 26",
+  "recentIsoDate": "2026-05-28",
+  "recentResult": "CRO  6-4 6-4 2nd",
+  "flashscoreLabel": "Ruzic A. - Keys M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Ruzic A.",
+    "Keys M."
+  ],
+  "generatedAt": "2026-05-30T02:49:05.562Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/reVumEhJ/",
+  "matchId": "reVumEhJ",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_reVumEhJ",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_reVumEhJ"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:49"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:48"
+      }
+    ],
+    "totalDuration": "1:37"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "85%",
+              "right": "77%",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "49% (31/63)",
+              "right": "65% (32/49)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "73% (8/11)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/9",
+              "right": "4/6",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (17/49)",
+              "right": "51% (32/63)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (7/15)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "4/9",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "19",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "33",
+              "right": "34",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (39/74)",
+              "right": "63% (40/64)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (24/64)",
+              "right": "47% (35/74)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (63/138)",
+              "right": "54% (75/138)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (6/10)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "86%",
+              "right": "77%",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "47% (17/36)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "83% (5/6)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "2/3",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (9/24)",
+              "right": "53% (19/36)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/4",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "8",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "18",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (22/42)",
+              "right": "61% (19/31)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (12/31)",
+              "right": "48% (20/42)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (34/73)",
+              "right": "53% (39/73)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "84%",
+              "right": "76%",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (14/27)",
+              "right": "68% (17/25)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (3/5)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "2/3",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (8/25)",
+              "right": "48% (13/27)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/5",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "11",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "16",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (17/32)",
+              "right": "64% (21/33)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (12/33)",
+              "right": "47% (15/32)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (29/65)",
+              "right": "55% (36/65)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Ruzic A.",
+              "rightPlayer": "Keys M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

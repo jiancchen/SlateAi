@@ -37,6 +37,8 @@ Flashscore service/return stats:
 - For slate detail pages, run `npm run data:fetch:tennis-flashscore-recent -- --input web/src/lib/day-YYYY-MM-DD-tennis-opponent-quality.generated.json --map-output data-private/reference/tennis/flashscore-recent-match-map-YYYY-MM-DD.json`.
 - The recent-match pass resolves known tournament result pages, fetches each matched Flashscore stat feed, stores the raw match JSON, and writes a join map keyed by board match, player, and recent-match index.
 - Import the stored Flashscore rows into SQLite with `npm run data:import:tennis-flashscore` so service/return stats are available in `tennis_flashscore_player_stat_rows` and recent-card joins are queryable from `tennis_flashscore_recent_links`.
+- After importing, run `npm run data:backfill:tennis-recent-form -- --date YYYY-MM-DD`. This is the required bridge from raw Flashscore rows into `tennis_recent_form_metrics`, which powers the last-5 form bubbles on match detail pages.
+- Quality gate before publishing: `select match_id, normalized_name, sum(score is null) from tennis_recent_form_metrics where match_id like '%YYYY-MM-DD%' and recent_index < 5 group by 1,2 having sum(score is null) > 0;` should return no rows for promoted slate matches. If it returns rows, the slate is data-incomplete and should not be treated as analysis-ready.
 
 SofaScore match/H2H stats:
 - Use SofaScore when we have an event page URL and need confirmed event metadata, H2H counts, red-clay surface, completed score, and detailed match statistics by set.

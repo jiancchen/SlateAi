@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-flavio-cobolli-learner-tien-2026-05-30",
+  "boardTitle": "Flavio Cobolli vs Learner Tien",
+  "boardPlayerName": "Flavio Cobolli",
+  "recentOpponentName": "Daniil Medvedev",
+  "recentIndex": 6,
+  "recentEvent": "",
+  "recentDate": "28 Apr 26",
+  "recentIsoDate": "2026-04-28",
+  "recentResult": "RUS  6-3 5-7 6-4 4th",
+  "flashscoreLabel": "Medvedev D. - Cobolli F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/madrid/results/",
+  "players": [
+    "Medvedev D.",
+    "Cobolli F."
+  ],
+  "generatedAt": "2026-05-30T02:49:10.640Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/2gq6kjBE/",
+  "matchId": "2gq6kjBE",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_2gq6kjBE",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_2gq6kjBE"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:50"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:54"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:21"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "5",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "7",
+              "right": "2",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "58%",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (47/60)",
+              "right": "70% (43/61)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (16/40)",
+              "right": "61% (27/44)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "4/6",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (18/61)",
+              "right": "22% (13/60)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "39% (17/44)",
+              "right": "60% (24/40)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "3/6",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "27",
+              "right": "37",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "34",
+              "right": "31",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Net points won",
+              "left": "53% (10/19)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (63/100)",
+              "right": "67% (70/105)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (35/105)",
+              "right": "37% (37/100)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (98/205)",
+              "right": "52% (107/205)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "1",
+              "right": "9",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (12/15)",
+              "right": "88% (14/16)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (2/16)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Total games won",
+              "left": "45% (14/31)",
+              "right": "55% (17/31)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "56%",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (15/21)",
+              "right": "83% (19/23)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (5/14)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "4/4",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (4/23)",
+              "right": "29% (6/21)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (9/18)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/4",
+              "right": "1/2",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "11",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "12",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (20/35)",
+              "right": "68% (28/41)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (13/41)",
+              "right": "43% (15/35)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (33/76)",
+              "right": "57% (43/76)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "59%",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (21/26)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (6/16)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "0/2",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (9/22)",
+              "right": "19% (5/26)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (6/15)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/3",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "16",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "14",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (5/10)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (27/42)",
+              "right": "59% (22/37)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (15/37)",
+              "right": "36% (15/42)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (42/79)",
+              "right": "47% (37/79)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "59%",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (11/13)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (5/16)",
+              "right": "15% (2/13)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "18% (2/11)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "10",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "5",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (16/23)",
+              "right": "74% (20/27)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (7/27)",
+              "right": "30% (7/23)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (23/50)",
+              "right": "54% (27/50)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Medvedev D.",
+              "rightPlayer": "Cobolli F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -243,6 +243,11 @@ export function TennisDetail(props: TennisDetailProps) {
     if (!totalWeight) return null
     return clean.reduce((sum, item) => sum + item.value * item.weight, 0) / totalWeight
   }
+  const finiteMetricNumber = (value: any) => {
+    if (value === null || value === undefined || value === '') return null
+    const numericValue = Number(value)
+    return Number.isFinite(numericValue) ? numericValue : null
+  }
   const bubbleTone = (score: any) => {
     const numericScore = Number(score)
     if (!Number.isFinite(numericScore)) return 'missing'
@@ -315,8 +320,9 @@ export function TennisDetail(props: TennisDetailProps) {
         const rawRecent = entry?.metrics?.hold?.raw?.recent || entry?.metrics?.closeout?.raw?.recent || {}
         const metrics = tennisFormRows.reduce((acc: AnyRecord, row) => {
           const metric = entry.metrics?.[row.key] || {}
+          const score = finiteMetricNumber(metric.score)
           acc[row.key] = {
-            score: Number.isFinite(Number(metric.score)) ? Number(metric.score) : null,
+            score,
             estimated: Boolean(metric.estimated),
             source: metric.source,
             weight: metric.weight
@@ -351,7 +357,7 @@ export function TennisDetail(props: TennisDetailProps) {
         summary: (persistedForm.summary || tennisFormRows).map((row: AnyRecord) => ({
           key: row.key,
           label: row.label,
-          score: row.score == null ? null : Math.round(Number(row.score))
+          score: finiteMetricNumber(row.score) == null ? null : Math.round(Number(row.score))
         }))
       }
     }

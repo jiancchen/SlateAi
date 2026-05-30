@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-jaime-faria-frances-tiafoe-2026-05-30",
+  "boardTitle": "Jaime Faria vs Frances Tiafoe",
+  "boardPlayerName": "Jaime Faria",
+  "recentOpponentName": "Jan-Lennard Struff",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "28 May 26",
+  "recentIsoDate": "2026-05-28",
+  "recentResult": "GER  7-5 7-61 6-2 2nd",
+  "flashscoreLabel": "Struff J-L. - Faria J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Struff J-L.",
+    "Faria J."
+  ],
+  "generatedAt": "2026-05-30T02:48:49.945Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/fiQHhIOs/",
+  "matchId": "fiQHhIOs",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_fiQHhIOs",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_fiQHhIOs"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:59"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 7,
+        "duration": "0:50"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:32"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "9",
+              "right": "6",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "3",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "50%",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "66% (37/56)",
+              "right": "80% (37/46)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (36/69)",
+              "right": "61% (28/46)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "11/16",
+              "right": "2/4",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (9/46)",
+              "right": "34% (19/56)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "39% (18/46)",
+              "right": "48% (33/69)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "5/16",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "42",
+              "right": "34",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "50",
+              "right": "23",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Net points won",
+              "left": "56% (15/27)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (73/125)",
+              "right": "71% (65/92)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (27/92)",
+              "right": "42% (52/125)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (100/217)",
+              "right": "54% (117/217)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "69% (11/16)",
+              "right": "88% (14/16)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (2/16)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total games won",
+              "left": "41% (13/32)",
+              "right": "59% (19/32)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "53%",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (17/27)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (15/30)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/7",
+              "right": "0/1",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (7/18)",
+              "right": "37% (10/27)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (6/16)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/7",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "12",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "12",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (6/9)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (32/57)",
+              "right": "62% (21/34)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (13/34)",
+              "right": "44% (25/57)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (45/91)",
+              "right": "51% (46/91)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "5",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "41%",
+              "right": "55%",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (11/15)",
+              "right": "95% (20/21)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (14/22)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "2/3",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "5% (1/21)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (9/17)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "1/4",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "20",
+              "right": "15",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "7",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Net points won",
+              "left": "45% (5/11)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (25/37)",
+              "right": "74% (28/38)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (10/38)",
+              "right": "32% (12/37)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (35/75)",
+              "right": "53% (40/75)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "35%",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (9/14)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (7/17)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/0",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (1/7)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "23% (3/13)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/5",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "4",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (4/7)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (16/31)",
+              "right": "80% (16/20)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (4/20)",
+              "right": "48% (15/31)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (20/51)",
+              "right": "61% (31/51)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Struff J-L.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

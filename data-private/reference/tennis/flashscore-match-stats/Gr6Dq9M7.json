@@ -1,0 +1,694 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-victoria-mboko-madison-keys-2026-05-30",
+  "boardTitle": "Victoria Mboko vs Madison Keys",
+  "boardPlayerName": "Victoria Mboko",
+  "recentOpponentName": "Katerina Siniakova",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "28 May 26",
+  "recentIsoDate": "2026-05-28",
+  "recentResult": "CZE  5-7 6-4 6-2 2nd",
+  "flashscoreLabel": "Mboko V. - Siniakova K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Mboko V.",
+    "Siniakova K."
+  ],
+  "generatedAt": "2026-05-30T02:49:03.760Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Gr6Dq9M7/",
+  "matchId": "Gr6Dq9M7",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Gr6Dq9M7",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Gr6Dq9M7"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:01"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:56"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:41"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "5",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "59%",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "54% (34/63)",
+              "right": "48% (32/67)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (21/42)",
+              "right": "53% (25/47)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/10",
+              "right": "6/14",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "52% (35/67)",
+              "right": "46% (29/63)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (22/47)",
+              "right": "50% (21/42)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "8/14",
+              "right": "6/10",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "29",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "59",
+              "right": "58",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (8/14)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (55/105)",
+              "right": "50% (57/114)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (57/114)",
+              "right": "48% (50/105)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (112/219)",
+              "right": "49% (107/219)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (9/15)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "53% (8/15)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "57% (17/30)",
+              "right": "43% (13/30)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "54%",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "45% (13/29)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (9/18)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/7",
+              "right": "3/6",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (10/22)",
+              "right": "55% (16/29)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (10/19)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "4/7",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "8",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "29",
+              "right": "19",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (5/8)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "47% (22/47)",
+              "right": "51% (21/41)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (20/41)",
+              "right": "53% (25/47)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (42/88)",
+              "right": "52% (46/88)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "58%",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (9/18)",
+              "right": "43% (10/23)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (6/13)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "2/5",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "57% (13/23)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (8/17)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "2/3",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "6",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "23",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (15/31)",
+              "right": "48% (19/40)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (21/40)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (36/71)",
+              "right": "49% (35/71)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "67%",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (12/16)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (6/11)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "55% (12/22)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "15",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "16",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (18/27)",
+              "right": "52% (17/33)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (16/33)",
+              "right": "33% (9/27)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (34/60)",
+              "right": "43% (26/60)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Mboko V.",
+              "rightPlayer": "Siniakova K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}
