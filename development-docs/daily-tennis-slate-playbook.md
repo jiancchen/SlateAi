@@ -29,6 +29,9 @@ python3 pipeline/analyze_kalshi_tennis_intramatch.py --target-date YYYY-MM-DD
 python3 pipeline/project_kalshi_tennis_trade_candidates.py
 python3 pipeline/model_kalshi_tennis_spike.py --target-date YYYY-MM-DD
 python3 pipeline/model_tennis_upset_wins.py --target-date YYYY-MM-DD
+# Required before site generation once FanDuel spread/total lines are captured:
+# build data-private/predictions/tennis/YYYY-MM-DD-derivative-markets.json
+# with expected match games, expected first-set games, spread lean, and O/U lean.
 npm --prefix web run build
 ```
 
@@ -46,6 +49,112 @@ Before generating the value board, complete the sportsbook line pass. Open each 
 
 Do this before match start. FanDuel can remove spread/total sections or mark the event ended once the match is live or settled. If a market is unavailable, record the reason (`ended`, `not offered`, `blocked`, or `not mapped`) instead of leaving the field silently empty. Do not treat ML/spread/O-U EV as analysis-ready until this coverage is checked and the slate is regenerated.
 
+## Derivative Market Prediction Pass
+
+Every singles match needs a stored derivative-market prediction before publishing. Tennis is not ML-first: the winner model is one input, and the published detail page must lead with a betting decision matrix comparing ML value, game spread, O/U games, win-a-set probability, and first-set games. This is separate from prediction-market trade-to-sell. The output file is:
+
+`data-private/predictions/tennis/YYYY-MM-DD-derivative-markets.json`
+
+Each match row must include:
+
+```json
+{
+  "date": "YYYY-MM-DD",
+  "matchId": "rg-w-coco-gauff-anastasia-potapova-YYYY-MM-DD",
+  "match": "Coco Gauff vs Anastasia Potapova",
+  "expectedMatchGames": 19.8,
+  "expectedFirstSetGames": 9.4,
+  "totalGames": {
+    "postedLine": 20.5,
+    "overOdds": -120,
+    "underOdds": -110,
+    "lean": "Under",
+    "edgeGames": -0.7,
+    "confidence": 57,
+    "grade": "thin",
+    "reason": "Favorite control path plus opponent second-serve pressure keeps the median below the posted total."
+  },
+  "gameHandicap": {
+    "selection": "Coco Gauff",
+    "postedSpread": -4.5,
+    "odds": -118,
+    "projectedMarginGames": 5.2,
+    "edgeGames": 0.7,
+    "confidence": 55,
+    "grade": "thin",
+    "reason": "Break-pressure gap supports the favorite spread, but WTA volatility caps stake."
+  },
+  "firstSet": {
+    "expectedGames": 9.4,
+    "lean": "Under 9.5 if posted; pass at 9.0 or worse",
+    "tiebreakRisk": 0.08,
+    "earlyBreakRisk": 0.62,
+    "confidence": 56
+  },
+  "writeup": {
+    "headline": "Gauff control path, but spread is thin.",
+    "betPlan": "Use Under 20.5 only as a small derivative lean; do not chase ML.",
+    "whyItWorks": [
+      "Potapova's low first-serve rate and error load give Gauff enough break paths to shorten the match.",
+      "Gauff's return pressure can create a 6-3 or 6-4 first-set shape."
+    ],
+    "whyItFails": [
+      "Gauff's own second-serve volatility can give breaks back.",
+      "The 2-2 H2H history says this is not a clean domination profile."
+    ],
+    "entryExit": {
+      "preMatch": "Under 20.5 only if price is playable; pass if it moves to 19.5.",
+      "live": "If both players hold their first two service games comfortably, cancel the under lean."
+    }
+  },
+  "evidence": [
+    "Recent hold and second-serve scores",
+    "Return-pressure edge",
+    "Roland Garros replay hold/break flow",
+    "H2H surface context",
+    "FanDuel total and game handicap"
+  ],
+  "dataQuality": {
+    "fanDuelTotalCaptured": true,
+    "fanDuelSpreadCaptured": true,
+    "warehouseRowsUsed": 8,
+    "replayRowsUsed": 2,
+    "status": "complete"
+  }
+}
+```
+
+Decision rules:
+- If model ML is basically fair versus implied price, mark ML as no edge even when the player is likely to win. Example: model 65.8% versus 66% implied is a pass on ML.
+- If ML is fair/taxed, look for derivative value first: spread, total games, win-a-set, first-set total, or live set-win after the opponent wins early.
+- Spread grading must use projected game margin versus posted handicap. Do not publish generic text like "spread needs the posted number" once the FanDuel event page has been captured.
+- O/U grading must use expected match games and expected first-set games, not only winner confidence.
+- Win-a-set probability must be visible for both players. It is especially important for best-of-five matches and for live hedge paths where the underdog wins early but the favorite remains likely to take a set.
+- Each match detail must show both players' pressure stats near the decision matrix: hold %, break points saved %, and break points converted %. If the warehouse lacks direct hold %, derive it from expected first-serve-in, first-serve-won, and second-serve-won so the UI does not hide serve stability.
+- Every match writeup must name the best market, not just the projected winner. "Pass" is acceptable only when all four price lanes fail.
+
+Minimum modeling inputs:
+
+- Current match winner probabilities from the ensemble, but never as the only input.
+- Recent hold, second serve, error control, return pressure, and closeout scores for both players.
+- Roland Garros replay flow: service games, hold rate, breaks lost, return games, breaks won, long-game rate, first-set shape where available.
+- FanDuel `totalGames` and `gameHandicap` lines when offered.
+- Men/Women and best-of-five/best-of-three adjustment.
+- Clay form, opponent quality, H2H surface context, and current tournament fatigue.
+
+Required health behavior:
+
+- If `markets.totalGames` exists in the FanDuel file, the generated site row must not say `No direction` unless the derivative row explicitly grades it `pass` with a reason.
+- If `markets.gameHandicap` exists, the generated site row must not say `No price`.
+- If first-set expected games are missing, mark the match `data incomplete` for derivative markets and keep it off the value board.
+- Health checks should fail when captured FanDuel totals/spreads are not joined into the generated match payload.
+
+Display requirements:
+
+- Match detail should show `Expected match games`, `Expected first-set games`, O/U lean, spread lean, posted line, projected edge in games, confidence, and the evidence list.
+- Match detail should show the stored `writeup` block: headline, bet plan, why it works, why it fails, and entry/exit or pass rules.
+- The board/value tab should show only derivative rows with positive edge and usable confidence; passes should stay visible in detail but not promoted as plays.
+
 ## Required Warehouse Checks
 
 Each singles match needs:
@@ -56,6 +165,7 @@ Each singles match needs:
 - Roland Garros replay flow where available: service games, holds, breaks lost, return games, breaks won, long-game rate.
 - H2H with dates and surfaces, not just total count.
 - FanDuel or sportsbook ML/spread/total from event pages, keyed as `moneyline`, `gameHandicap`, and `totalGames`.
+- Stored derivative predictions for expected match games, first-set games, O/U, and game handicap.
 - Kalshi contract data: entry, orderbook, candles, max bid/trade, same-favorite history, similar-entry history.
 
 If any row is missing the core hold/return/error context, mark it "data incomplete" and do not promote it above watch.

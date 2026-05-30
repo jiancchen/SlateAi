@@ -22,7 +22,21 @@ export function TennisDetail(props: TennisDetailProps) {
   const warehouseContext = context?.warehouseContext || context?.sofascoreData
   const clayMatchupData = context?.clayMatchupData
   const opponentQualityData = context?.opponentQualityData
-  const qualityPlayers = Array.isArray(opponentQualityData?.players) ? opponentQualityData.players : []
+  const rawQualityPlayers = Array.isArray(opponentQualityData?.players) ? opponentQualityData.players : []
+  const normalizeTennisName = (value: string) => {
+    const normalized = String(value || '')
+      .normalize('NFKD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9]+/gi, ' ')
+      .trim()
+      .toLowerCase()
+    const aliases: Record<string, string> = {
+      'xinyu wang': 'wang xinyu',
+      'xiyu wang': 'wang xiyu',
+      'yibing wu': 'wu yibing'
+    }
+    return aliases[normalized] || normalized
+  }
   const formatRecord = (record?: AnyRecord | null) => {
     if (!record || !Number.isFinite(Number(record.wins)) || !Number.isFinite(Number(record.losses))) return 'N/A'
     const pct = Number.isFinite(Number(record.winPct)) ? ` | ${formatPercent(Number(record.winPct) * 100, 1)}` : ''
@@ -76,8 +90,113 @@ export function TennisDetail(props: TennisDetailProps) {
       ?.expectedStats?.stats || null
   const expectedNumber = (stats: AnyRecord | null | undefined, key: string) => {
     const value = stats?.[key]
+    if (value === null || value === undefined || value === '') return null
     return Number.isFinite(Number(value)) ? Number(value) : null
   }
+  const derivedHoldPct = (stats: AnyRecord | null | undefined) => {
+    const explicitHold = expectedNumber(stats, 'holdPct') ?? expectedNumber(stats, 'serviceHoldPct') ?? expectedNumber(stats, 'avgServiceHoldPct')
+    if (explicitHold != null) return explicitHold
+    const firstIn = expectedNumber(stats, 'firstServePct')
+    const firstWon = expectedNumber(stats, 'firstServeWonPct')
+    const secondWon = expectedNumber(stats, 'secondServeWonPct')
+    if (firstIn == null || firstWon == null || secondWon == null) return null
+    const pointWin = (firstIn / 100) * (firstWon / 100) + (1 - firstIn / 100) * (secondWon / 100)
+    if (!Number.isFinite(pointWin) || pointWin <= 0 || pointWin >= 1) return null
+    const q = 1 - pointWin
+    const preDeuce = pointWin ** 4 * (1 + 4 * q + 10 * q ** 2)
+    const reachDeuce = 20 * pointWin ** 3 * q ** 3
+    const winFromDeuce = pointWin ** 2 / (pointWin ** 2 + q ** 2)
+    return Math.max(0, Math.min(100, (preDeuce + reachDeuce * winFromDeuce) * 100))
+  }
+  const pressureStatsForPlayer = (player: AnyRecord) => {
+    const expectedStats = player?.warehouseStats?.expectedStats?.stats || expectedStatsObjectForPlayer(player.name)
+    const weakness = player?.weakness || {}
+    const hold =
+      expectedNumber(weakness, 'serviceHoldPct') ??
+      expectedNumber(weakness, 'holdPct') ??
+      derivedHoldPct(expectedStats)
+    return {
+      name: player.name || player.label,
+      source: player?.warehouseStats?.expectedStats?.source || 'Expected stats',
+      sample: player?.warehouseStats?.expectedStats?.matches ?? expectedNumber(expectedStats, 'matches'),
+      hold,
+      bpSaved: expectedNumber(expectedStats, 'breakPointsSavedPct') ?? expectedNumber(weakness, 'breakPointsSavedPct'),
+      bpConverted: expectedNumber(expectedStats, 'breakPointsConvertedPct') ?? expectedNumber(weakness, 'breakPointsConvertedPct')
+    }
+  }
+  const fallbackQualityPlayer = (player: AnyRecord) => {
+    const warehousePlayer = warehouseContext?.players?.find(
+      (entry: AnyRecord) => normalizeTennisName(entry.name) === normalizeTennisName(player.name)
+    )
+    const expectedStats = warehousePlayer?.expectedStats?.stats || {}
+    const ranking = player?.rank
+      ? { rank: player.rank, tour: game?.stage?.includes('Women') ? 'WTA' : 'ATP' }
+      : null
+    const holdPct = derivedHoldPct(expectedStats)
+    const secondServeWon = expectedNumber(expectedStats, 'secondServeWonPct')
+    const bpConverted = expectedNumber(expectedStats, 'breakPointsConvertedPct')
+    const unforcedErrors = expectedNumber(expectedStats, 'unforcedErrors')
+    const winners = expectedNumber(expectedStats, 'winners')
+    const doubleFaults = expectedNumber(expectedStats, 'avgDoubleFaults') ?? expectedNumber(expectedStats, 'doubleFaults')
+    const errorScore =
+      unforcedErrors != null || winners != null || doubleFaults != null
+        ? Math.max(
+            0,
+            Math.min(
+              100,
+              72 -
+                Math.max(0, (unforcedErrors ?? 26) / 2.6 - 8) * 4.2 -
+                Math.max(0, (doubleFaults ?? 1.5) - 1.5) * 4 +
+                Math.max(-10, Math.min(10, ((winners ?? 0) - (unforcedErrors ?? 0)) * 0.25))
+            )
+          )
+        : null
+    return {
+      name: player.name,
+      ranking,
+      records: {
+        overall2026: null,
+        clay2026: null,
+        raw: {}
+      },
+      recentWindow: {
+        matches: Number(expectedStats.matches) || warehousePlayer?.expectedStats?.matches || 0,
+        completed: Number(expectedStats.matches) || warehousePlayer?.expectedStats?.matches || 0,
+        wins: expectedNumber(expectedStats, 'wins'),
+        losses: null,
+        gamePct: null,
+        knownOpponentRanks: 0,
+        missingOpponentRanks: 0,
+        avgKnownOpponentRank: null,
+        top50Opponents: null,
+        resistanceMatches: null,
+        scorelineFormScore: null,
+        opponentAdjustedFormScore: null,
+        rankingCoveragePct: null
+      },
+      serviceData: {
+        source: warehousePlayer?.expectedStats?.source || 'SofaScore expected stats fallback',
+        matchesWithStats: warehousePlayer?.expectedStats?.matches ?? expectedNumber(expectedStats, 'matches'),
+        avgServiceHoldPct: holdPct == null ? null : Number(holdPct.toFixed(1)),
+        avgAces: expectedNumber(expectedStats, 'avgAces') ?? expectedNumber(expectedStats, 'aces'),
+        avgFirstServeWonPct: expectedNumber(expectedStats, 'firstServeWonPct'),
+        note:
+          warehousePlayer?.expectedStats?.note ||
+          'Opponent-quality scrape was empty; this card is filled from SofaScore tournament expected stats until recent-match rows are joined.'
+      },
+      expectedFallback: {
+        hold: holdPct,
+        secondServe: secondServeWon,
+        errorControl: errorScore,
+        returnPressure: bpConverted != null ? Math.max(0, Math.min(100, bpConverted * 0.86 + 18)) : null,
+        closeout: holdPct != null || secondServeWon != null ? Math.max(0, Math.min(100, (holdPct ?? 66) * 0.55 + (secondServeWon ?? 48) * 0.35 + 8)) : null
+      },
+      recentMatches: []
+    }
+  }
+  const qualityPlayers = rawQualityPlayers.length
+    ? rawQualityPlayers
+    : (context?.players || []).map((player: AnyRecord) => fallbackQualityPlayer(player))
   const formatStatNumber = (value: number | null, suffix = '') =>
     value == null ? 'N/A' : `${formatNumber(value, Math.abs(value) >= 10 ? 1 : 1)}${suffix}`
   const buildEnsembleEvidenceBullets = () => {
@@ -115,20 +234,6 @@ export function TennisDetail(props: TennisDetailProps) {
       )
     }
     return bullets
-  }
-  const normalizeTennisName = (value: string) => {
-    const normalized = String(value || '')
-      .normalize('NFKD')
-      .replace(/[\u0300-\u036f]/g, '')
-      .replace(/[^a-z0-9]+/gi, ' ')
-      .trim()
-      .toLowerCase()
-    const aliases: Record<string, string> = {
-      'xinyu wang': 'wang xinyu',
-      'xiyu wang': 'wang xiyu',
-      'yibing wu': 'wu yibing'
-    }
-    return aliases[normalized] || normalized
   }
   const playerWarehouseStats = (playerName: string) =>
     (warehouseContext?.players || []).find((entry: AnyRecord) => normalizeTennisName(entry.name) === normalizeTennisName(playerName))
@@ -409,6 +514,37 @@ export function TennisDetail(props: TennisDetailProps) {
     }
     const recent = (player.recentMatches || []).slice(0, 5)
     const expectedStats = expectedStatsForPlayer(player.name)
+    if (!recent.length && player.expectedFallback) {
+      const fallbackMatch = {
+        dateLabel: 'RG avg',
+        resultLabel: 'Est',
+        weight: 1,
+        match: {
+          opponent: 'Tournament sample',
+          event: 'Roland Garros',
+          date: '2026-05-30'
+        },
+        hold: scoreValue(finiteMetricNumber(player.expectedFallback.hold), true),
+        secondServe: scoreValue(finiteMetricNumber(player.expectedFallback.secondServe), true),
+        errorControl: scoreValue(finiteMetricNumber(player.expectedFallback.errorControl), true),
+        returnPressure: scoreValue(finiteMetricNumber(player.expectedFallback.returnPressure), true),
+        closeout: scoreValue(finiteMetricNumber(player.expectedFallback.closeout), true)
+      }
+      return {
+        sample: 1,
+        exactCells: 0,
+        estimatedRows: tennisFormRows.filter((row) => fallbackMatch[row.key]?.score != null).length,
+        missingCells: tennisFormRows.filter((row) => fallbackMatch[row.key]?.score == null).length,
+        persisted: false,
+        fallback: true,
+        matches: [fallbackMatch],
+        summary: tennisFormRows.map((row) => ({
+          key: row.key,
+          label: row.label,
+          score: fallbackMatch[row.key]?.score == null ? null : Math.round(Number(fallbackMatch[row.key].score))
+        }))
+      }
+    }
     const matchRows = recent.map((match: AnyRecord, index: number) => {
       const setsPlayed = Math.max(1, Number(match?.parsed?.setsPlayed || 0) || 1)
       const weight = opponentRankWeight(match?.opponentRanking?.rank)
@@ -503,7 +639,7 @@ export function TennisDetail(props: TennisDetailProps) {
       <div className="tennis-form-matrix" aria-label={`${player.name} last ${form.sample} tennis form matrix`}>
         <div className="tennis-form-matrix-meta">
           <span>
-            {form.persisted ? 'Warehouse' : 'Live'} | {form.exactCells ?? 0} exact cells
+            {form.persisted ? 'Warehouse' : form.fallback ? 'SofaScore fallback' : 'Live'} | {form.exactCells ?? 0} exact cells
             {form.estimatedRows ? ` | ${form.estimatedRows} est cells` : ''}
             {form.missingCells ? ` | ${form.missingCells} missing` : ''} | opponent adjusted
           </span>
@@ -605,9 +741,142 @@ export function TennisDetail(props: TennisDetailProps) {
     : tradePlan
       ? 'No mapped Kalshi contract/history is attached to this match detail yet. Treat this lane as sportsbook context only.'
       : ''
+  const bettingMatrix = Array.isArray(context?.bettingMatrix) ? context.bettingMatrix : []
+  const bettingMatrixTone = (entry: AnyRecord) => {
+    const grade = String(entry.grade || entry.valueGrade || '').toLowerCase()
+    const edge = Number(entry.edgePct)
+    const edgeGames = Number(entry.edgeGames)
+    if (grade.includes('tax') || grade.includes('negative') || grade.includes('pass') || edge <= -4 || edgeGames <= -1) return 'warning'
+    if (grade.includes('value') || grade.includes('actionable') || edge >= 7 || edgeGames >= 1) return 'accent'
+    return ''
+  }
+  const hasNumber = (value: any) => value !== null && value !== undefined && value !== '' && Number.isFinite(Number(value))
+  const bettingMatrixPrice = (entry: AnyRecord) => {
+    const pieces = []
+    if (hasNumber(entry.line)) {
+      const numericLine = Number(entry.line)
+      pieces.push(entry.marketType === 'Game spread' && numericLine > 0 ? `+${entry.line}` : `${entry.line}`)
+    }
+    if (hasNumber(entry.americanOdds)) pieces.push(formatAmericanOdds(entry.americanOdds))
+    return pieces.join(' ')
+  }
+  const pressureStats = Array.isArray(context?.players) ? context.players.map(pressureStatsForPlayer) : []
   const ensembleEvidenceBullets = buildEnsembleEvidenceBullets()
   return (
     <>
+      {bettingMatrix.length ? (
+        <section className="detail-panel tennis-betting-matrix-panel">
+          <div className="detail-panel-header">
+            <p className="eyebrow">Betting decision matrix</p>
+            <span>ML, spread, total, set-win</span>
+          </div>
+          <div className="tennis-betting-matrix-grid">
+            {bettingMatrix.map((entry: AnyRecord) => (
+              <article key={`${game.id}-betting-matrix-${entry.label}`} className={`tennis-betting-matrix-card ${bettingMatrixTone(entry)}`}>
+                <div className="tennis-betting-card-head">
+                  <span className="eyebrow">{entry.label || entry.marketType}</span>
+                  <strong>{entry.grade || entry.valueGrade || 'Price required'}</strong>
+                </div>
+                <div className="tennis-betting-mainline">
+                  <strong>{entry.selection || 'No selection'}</strong>
+                  {bettingMatrixPrice(entry) ? <span>{bettingMatrixPrice(entry)}</span> : null}
+                </div>
+                <div className="tennis-betting-number-grid">
+                  {hasNumber(entry.modelPct) ? (
+                    <div>
+                      <span>Model</span>
+                      <strong>{formatPercent(entry.modelPct, 1)}</strong>
+                    </div>
+                  ) : null}
+                  {hasNumber(entry.impliedPct) ? (
+                    <div>
+                      <span>Implied</span>
+                      <strong>{formatPercent(entry.impliedPct, 1)}</strong>
+                    </div>
+                  ) : null}
+                  {hasNumber(entry.edgePct) ? (
+                    <div>
+                      <span>Edge</span>
+                      <strong>{formatSignedNumber(entry.edgePct, 1)} pts</strong>
+                    </div>
+                  ) : null}
+                  {hasNumber(entry.netEvPer100 ?? entry.evPer100) ? (
+                    <div>
+                      <span>EV/100</span>
+                      <strong>{formatSignedNumber(entry.netEvPer100 ?? entry.evPer100, 1)}</strong>
+                    </div>
+                  ) : null}
+                  {hasNumber(entry.expectedGames) ? (
+                    <div>
+                      <span>{entry.marketType === 'Game spread' ? 'Proj margin' : 'Exp games'}</span>
+                      <strong>{formatNumber(entry.expectedGames, 1)}</strong>
+                    </div>
+                  ) : null}
+                  {hasNumber(entry.edgeGames) ? (
+                    <div>
+                      <span>Game edge</span>
+                      <strong>{formatSignedNumber(entry.edgeGames, 1)}</strong>
+                    </div>
+                  ) : null}
+                  {hasNumber(entry.confidence) ? (
+                    <div>
+                      <span>Conf</span>
+                      <strong>{formatPercent(entry.confidence, 0)}</strong>
+                    </div>
+                  ) : null}
+                </div>
+                {Array.isArray(entry.rows) && entry.rows.length ? (
+                  <div className="tennis-set-win-row">
+                    {entry.rows.map((row: AnyRecord) => (
+                      <span key={`${game.id}-${entry.label}-${row.name}`}>
+                        {row.name} <strong>{formatPercent(row.confidence, 0)}</strong>
+                      </span>
+                    ))}
+                  </div>
+                ) : null}
+                <p>{entry.reason || entry.issue || 'No market-specific writeup stored yet.'}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
+      {pressureStats.length ? (
+        <section className="detail-panel tennis-pressure-panel">
+          <div className="detail-panel-header">
+            <p className="eyebrow">Serve + break pressure</p>
+            <span>Hold, BP saved, BP converted</span>
+          </div>
+          <div className="tennis-pressure-grid">
+            {pressureStats.map((player: AnyRecord) => (
+              <article key={`${game.id}-pressure-${player.name}`} className="tennis-pressure-card">
+                <div className="tennis-pressure-card-head">
+                  <strong>{player.name}</strong>
+                  <small>
+                    {player.sample ? `${player.sample} match sample` : 'sample pending'}
+                    {player.source ? ` | ${player.source}` : ''}
+                  </small>
+                </div>
+                <div className="tennis-pressure-metrics">
+                  <div>
+                    <span>Hold</span>
+                    <strong>{hasNumber(player.hold) ? formatPercent(player.hold, 1) : 'N/A'}</strong>
+                  </div>
+                  <div>
+                    <span>BP saved</span>
+                    <strong>{hasNumber(player.bpSaved) ? formatPercent(player.bpSaved, 1) : 'N/A'}</strong>
+                  </div>
+                  <div>
+                    <span>BP conv</span>
+                    <strong>{hasNumber(player.bpConverted) ? formatPercent(player.bpConverted, 1) : 'N/A'}</strong>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
       {kalshiTradeCandidate ? (
         <section className="detail-panel tennis-trade-chart-panel">
           <div className="detail-panel-header">

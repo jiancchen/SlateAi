@@ -1,13 +1,13 @@
 {
   "date": "2026-05-30",
-  "generatedAt": "2026-05-30T03:20:13.125148+00:00",
+  "generatedAt": "2026-05-30T15:54:20.305677+00:00",
   "source": "SQLite tennis warehouse",
   "matches": {
     "rg-m-felix-auger-aliassime-brandon-nakashima-2026-05-30": {
       "source": "SofaScore warehouse",
       "eventId": "16198526",
       "sourceUrl": "https://www.sofascore.com/tennis/match/brandon-nakashima-felix-auger-aliassime#id:16198526",
-      "capturedAt": "2026-05-30T01:21:33.981Z",
+      "capturedAt": "2026-05-30T15:53:35.844Z",
       "surface": "Red clay",
       "tournament": "French Open, Paris, France",
       "category": "ATP",
@@ -87,10 +87,10 @@
         "votes": {
           "homeName": "Felix Auger-Aliassime",
           "awayName": "Brandon Nakashima",
-          "homeVotes": 6569,
-          "awayVotes": 879,
-          "homePct": 88.2,
-          "awayPct": 11.8
+          "homeVotes": 13063,
+          "awayVotes": 1817,
+          "homePct": 87.8,
+          "awayPct": 12.2
         },
         "winningOdds": {
           "home": {

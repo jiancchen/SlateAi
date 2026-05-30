@@ -58,6 +58,7 @@ const buildGenericMlbGame = (
     teamSavantContextByTeam,
     teamStoryContextByTeam,
     bullpenChainByTeam,
+    relieverShadowByTeam,
     lineupBoardsByGameId,
     lineupMatchupContextByGameId
   }
@@ -102,6 +103,10 @@ const buildGenericMlbGame = (
       away: bullpenChainByTeam[raw.away] ?? null,
       home: bullpenChainByTeam[raw.home] ?? null
     },
+    relieverShadowContext: {
+      away: relieverShadowByTeam[raw.away] ?? null,
+      home: relieverShadowByTeam[raw.home] ?? null
+    },
     savantContext: {
       away: teamSavantContextByTeam[raw.away] ?? null,
       home: teamSavantContextByTeam[raw.home] ?? null
@@ -141,6 +146,8 @@ export const loadMlbDayGames = async (date) => {
   const dataModule = await importFresh(splitDataModulePath)
   const contextModule = await importFresh(path.join(rootDir, 'web', 'src', 'lib', `mlb-context-${date}.js`))
   const lineupModule = await importFresh(path.join(rootDir, 'web', 'src', 'lib', `day-${date}-lineups.js`))
+  const relieverShadowModule =
+    (await importMaybeFresh(path.join(rootDir, 'web', 'src', 'lib', `day-${date}-reliever-shadow.js`))) ?? {}
   const storyModule =
     (await importMaybeFresh(path.join(rootDir, 'web', 'src', 'lib', `mlb-story-context-${date}.js`))) ?? {}
 
@@ -152,6 +159,7 @@ export const loadMlbDayGames = async (date) => {
     teamSavantContextByTeam: contextModule.teamSavantContextByTeam ?? {},
     teamStoryContextByTeam: storyModule.teamStoryContextByTeam ?? {},
     bullpenChainByTeam: dataModule.bullpenChainByTeam ?? {},
+    relieverShadowByTeam: relieverShadowModule.relieverShadowByTeam ?? {},
     lineupBoardsByGameId: lineupModule.lineupBoardsByGameId ?? {},
     lineupMatchupContextByGameId: lineupModule.lineupMatchupContextByGameId ?? {}
   }

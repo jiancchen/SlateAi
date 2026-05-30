@@ -5809,6 +5809,187 @@ h3 {
   background: rgba(255, 255, 255, 0.024);
 }
 
+.tennis-betting-matrix-panel {
+  border-color: rgba(123, 227, 255, 0.22);
+  background: linear-gradient(180deg, rgba(123, 227, 255, 0.055), rgba(255, 255, 255, 0.018));
+}
+
+.tennis-betting-matrix-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.tennis-betting-matrix-card {
+  min-width: 0;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.18);
+  padding: 11px;
+  display: grid;
+  gap: 9px;
+}
+
+.tennis-betting-matrix-card.accent {
+  border-color: rgba(56, 211, 153, 0.32);
+  background: rgba(56, 211, 153, 0.075);
+}
+
+.tennis-betting-matrix-card.warning {
+  border-color: rgba(255, 126, 99, 0.32);
+  background: rgba(255, 126, 99, 0.065);
+}
+
+.tennis-betting-card-head,
+.tennis-betting-mainline {
+  min-width: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.tennis-betting-card-head strong {
+  color: var(--muted);
+  font: 800 0.68rem/1 var(--mono);
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.tennis-betting-mainline strong {
+  min-width: 0;
+  color: var(--heading);
+  font-size: 1rem;
+  line-height: 1.15;
+}
+
+.tennis-betting-mainline span {
+  flex: 0 0 auto;
+  color: var(--heading);
+  font: 850 0.82rem/1 var(--mono);
+}
+
+.tennis-betting-number-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.tennis-betting-number-grid div {
+  min-width: 0;
+  padding: 7px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.tennis-betting-number-grid span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.64rem;
+}
+
+.tennis-betting-number-grid strong {
+  display: block;
+  margin-top: 3px;
+  color: var(--heading);
+  font: 850 0.78rem/1 var(--mono);
+}
+
+.tennis-set-win-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tennis-set-win-row span {
+  padding: 6px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  color: var(--muted);
+  font: 700 0.64rem/1 var(--mono);
+}
+
+.tennis-set-win-row strong {
+  color: var(--heading);
+}
+
+.tennis-betting-matrix-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+.tennis-pressure-panel {
+  border-color: rgba(56, 211, 153, 0.2);
+  background: rgba(56, 211, 153, 0.035);
+}
+
+.tennis-pressure-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.tennis-pressure-card {
+  min-width: 0;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 11px;
+  background: rgba(0, 0, 0, 0.16);
+  display: grid;
+  gap: 10px;
+}
+
+.tennis-pressure-card-head {
+  min-width: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.tennis-pressure-card-head strong {
+  min-width: 0;
+  color: var(--heading);
+  font-size: 1rem;
+  line-height: 1.1;
+}
+
+.tennis-pressure-card-head small {
+  flex: 0 1 auto;
+  color: var(--muted);
+  font: 700 0.62rem/1.2 var(--mono);
+  text-align: right;
+}
+
+.tennis-pressure-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.tennis-pressure-metrics div {
+  min-width: 0;
+  border-radius: 8px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.tennis-pressure-metrics span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.65rem;
+}
+
+.tennis-pressure-metrics strong {
+  display: block;
+  margin-top: 4px;
+  color: var(--heading);
+  font: 850 0.86rem/1 var(--mono);
+}
+
 .tennis-match-log-row span {
   color: var(--heading);
   font-size: 0.78rem;
@@ -5913,6 +6094,69 @@ h3 {
 .bridge-chain-list {
   display: grid;
   gap: 10px;
+}
+
+.bridge-shadow-box {
+  border: 1px solid rgba(82, 214, 179, 0.12);
+  border-radius: 12px;
+  background: rgba(82, 214, 179, 0.05);
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.bridge-shadow-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.bridge-shadow-head strong {
+  color: var(--heading);
+}
+
+.bridge-shadow-head small {
+  color: var(--muted);
+  text-align: right;
+}
+
+.bridge-shadow-list {
+  display: grid;
+  gap: 10px;
+}
+
+.bridge-shadow-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.bridge-shadow-row:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.bridge-shadow-row > div:first-child {
+  display: grid;
+  gap: 4px;
+}
+
+.bridge-shadow-row strong {
+  color: var(--heading);
+}
+
+.bridge-shadow-row small {
+  color: var(--muted);
+}
+
+.bridge-shadow-meta {
+  display: grid;
+  gap: 4px;
+  justify-items: end;
+  text-align: right;
 }
 
 .bridge-chain-row {

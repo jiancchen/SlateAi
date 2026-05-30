@@ -70,6 +70,155 @@
         }
       },
       "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": {
+        "date": "2026-05-30",
+        "matchId": "rg-m-francisco-cerundolo-zachary-svajda-2026-05-30",
+        "match": "Francisco Cerundolo vs Zachary Svajda",
+        "start": "2:00 AM",
+        "expectedMatchGames": 31.8,
+        "expectedFirstSetGames": 9.8,
+        "totalGames": {
+          "postedLine": 30.5,
+          "overOdds": -122,
+          "underOdds": -110,
+          "lean": "Over",
+          "edgeGames": 1.3,
+          "confidence": 56,
+          "grade": "playable",
+          "reason": "Cerundolo ML is badly taxed, but best-of-five plus Svajda set-win resistance makes the total more interesting than the winner price."
+        },
+        "gameHandicap": {
+          "selection": "Zachary Svajda",
+          "postedSpread": 8.5,
+          "odds": -134,
+          "projectedMarginGames": 7.2,
+          "edgeGames": 1.3,
+          "confidence": 56,
+          "grade": "watch",
+          "reason": "The favorite can win cleanly and still fail -8.5. Svajda needs only one 7-5/7-6 pocket or a 6-4 set to keep the handicap alive."
+        },
+        "firstSet": {
+          "expectedGames": 9.8,
+          "lean": "Over 9.5 if posted; pass if Cerundolo breaks before both players serve twice.",
+          "tiebreakRisk": 0.12,
+          "earlyBreakRisk": 0.45,
+          "confidence": 55
+        },
+        "writeup": {
+          "headline": "Francisco Cerundolo vs Zachary Svajda: derivative lane before ML.",
+          "betPlan": "No blind bet; use the listed lane only at a good number.",
+          "whyItWorks": [
+            "The favorite can win cleanly and still fail -8.5. Svajda needs only one 7-5/7-6 pocket or a 6-4 set to keep the handicap alive.",
+            null,
+            "The matrix separates likely winner from the market that actually pays."
+          ],
+          "whyItFails": [
+            "One-sided first-set breaks can wreck spread and total projections quickly.",
+            "If early service games contradict the projected hold/return shape, downgrade before adding exposure."
+          ],
+          "entryExit": {
+            "preMatch": "Over total edge +1.3 games; spread edge +1.3 games.",
+            "live": "Over 9.5 if posted; pass if Cerundolo breaks before both players serve twice."
+          }
+        },
+        "evidence": [
+          "FanDuel total 30.5 captured.",
+          "FanDuel handicap captured for Zachary Svajda.",
+          "Model match confidence 63% with volatility 37%.",
+          "Set-win projections: Francisco Cerundolo 87% / Zachary Svajda 66%."
+        ],
+        "dataQuality": {
+          "fanDuelTotalCaptured": true,
+          "fanDuelSpreadCaptured": true,
+          "warehouseRowsUsed": 2,
+          "replayRowsUsed": 0,
+          "status": "complete"
+        }
+      },
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Francisco Cerundolo",
+          "line": null,
+          "americanOdds": -1450,
+          "modelPct": 63,
+          "impliedPct": 93.5,
+          "edgePct": -30.5,
+          "evPer100": -32.7,
+          "netEvPer100": -34.7,
+          "grade": "Favorite tax trap",
+          "issue": "Favorite tax trap",
+          "reason": "Likely winner can still be a bad ML bet after payout and fees. Check spread, total, and set-win instead."
+        },
+        {
+          "marketType": "Game spread",
+          "label": "Game spread",
+          "selection": "Zachary Svajda",
+          "line": 8.5,
+          "americanOdds": -134,
+          "modelPct": 53,
+          "impliedPct": 49.5,
+          "edgePct": 3.5,
+          "evPer100": 7.1,
+          "netEvPer100": 5.1,
+          "expectedGames": 7.2,
+          "edgeGames": 1.3,
+          "confidence": 56,
+          "grade": "watch",
+          "reason": "The favorite can win cleanly and still fail -8.5. Svajda needs only one 7-5/7-6 pocket or a 6-4 set to keep the handicap alive."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "Over",
+          "line": 30.5,
+          "americanOdds": -122,
+          "modelPct": 56,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 31.8,
+          "edgeGames": 1.3,
+          "confidence": 56,
+          "grade": "playable",
+          "reason": "Cerundolo ML is badly taxed, but best-of-five plus Svajda set-win resistance makes the total more interesting than the winner price."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Francisco Cerundolo 87% / Zachary Svajda 66%",
+          "rows": [
+            {
+              "name": "Francisco Cerundolo",
+              "confidence": 87,
+              "modelPct": 63,
+              "label": "Strong set-win path"
+            },
+            {
+              "name": "Zachary Svajda",
+              "confidence": 66,
+              "modelPct": 37,
+              "label": "Needs early hold pressure"
+            }
+          ],
+          "confidence": 87,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First set games",
+          "label": "1st set games",
+          "selection": "Over 9.5 if posted; pass if Cerundolo breaks before both players serve twice.",
+          "expectedGames": 9.8,
+          "confidence": 55,
+          "tiebreakRisk": 0.12,
+          "earlyBreakRisk": 0.45,
+          "grade": "Thin",
+          "reason": "Over 9.5 if posted; pass if Cerundolo breaks before both players serve twice."
+        }
+      ],
       "market": {
         "source": "FanDuel Sportsbook",
         "capturedAt": "2026-05-30T04:26:27.278Z",
@@ -165,6 +314,155 @@
         }
       },
       "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": {
+        "date": "2026-05-30",
+        "matchId": "rg-w-iva-jovic-naomi-osaka-2026-05-30",
+        "match": "Iva Jovic vs Naomi Osaka",
+        "start": "2:00 AM",
+        "expectedMatchGames": 22.8,
+        "expectedFirstSetGames": 10.1,
+        "totalGames": {
+          "postedLine": 22.5,
+          "overOdds": -106,
+          "underOdds": -128,
+          "lean": "Over",
+          "edgeGames": 0.3,
+          "confidence": 52,
+          "grade": "thin",
+          "reason": "The ML is basically fair and both players have enough break volatility for a three-set path, but 22.5 leaves little margin."
+        },
+        "gameHandicap": {
+          "selection": "Iva Jovic",
+          "postedSpread": 0.5,
+          "odds": -112,
+          "projectedMarginGames": 0.2,
+          "edgeGames": 0.7,
+          "confidence": 53,
+          "grade": "thin",
+          "reason": "Osaka is the model lean, but -0.5 at a taxed price is not attractive. Jovic +0.5 is the better side if playing the close-match shape."
+        },
+        "firstSet": {
+          "expectedGames": 10.1,
+          "lean": "Over 9.5 only if both first service games are comfortable.",
+          "tiebreakRisk": 0.13,
+          "earlyBreakRisk": 0.43,
+          "confidence": 53
+        },
+        "writeup": {
+          "headline": "Iva Jovic vs Naomi Osaka: derivative lane before ML.",
+          "betPlan": "No blind bet; use the listed lane only at a good number.",
+          "whyItWorks": [
+            "Osaka is the model lean, but -0.5 at a taxed price is not attractive. Jovic +0.5 is the better side if playing the close-match shape.",
+            null,
+            "The matrix separates likely winner from the market that actually pays."
+          ],
+          "whyItFails": [
+            "One-sided first-set breaks can wreck spread and total projections quickly.",
+            "If early service games contradict the projected hold/return shape, downgrade before adding exposure."
+          ],
+          "entryExit": {
+            "preMatch": "Over total edge +0.3 games; spread edge +0.7 games.",
+            "live": "Over 9.5 only if both first service games are comfortable."
+          }
+        },
+        "evidence": [
+          "FanDuel total 22.5 captured.",
+          "FanDuel handicap captured for Iva Jovic.",
+          "Model match confidence 52% with volatility 57%.",
+          "Set-win projections: Iva Jovic 65% / Naomi Osaka 71%."
+        ],
+        "dataQuality": {
+          "fanDuelTotalCaptured": true,
+          "fanDuelSpreadCaptured": true,
+          "warehouseRowsUsed": 2,
+          "replayRowsUsed": 0,
+          "status": "complete"
+        }
+      },
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Naomi Osaka",
+          "line": null,
+          "americanOdds": -118,
+          "modelPct": 52,
+          "impliedPct": 54.1,
+          "edgePct": -2.1,
+          "evPer100": -3.9,
+          "netEvPer100": -5.9,
+          "grade": "Near fair",
+          "issue": "Favorite price needs better proof",
+          "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
+        },
+        {
+          "marketType": "Game spread",
+          "label": "Game spread",
+          "selection": "Iva Jovic",
+          "line": 0.5,
+          "americanOdds": -112,
+          "modelPct": 46,
+          "impliedPct": 54.1,
+          "edgePct": -8.1,
+          "evPer100": -15,
+          "netEvPer100": -17,
+          "expectedGames": 0.2,
+          "edgeGames": 0.7,
+          "confidence": 53,
+          "grade": "thin",
+          "reason": "Osaka is the model lean, but -0.5 at a taxed price is not attractive. Jovic +0.5 is the better side if playing the close-match shape."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "Over",
+          "line": 22.5,
+          "americanOdds": -106,
+          "modelPct": 52,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 22.8,
+          "edgeGames": 0.3,
+          "confidence": 52,
+          "grade": "thin",
+          "reason": "The ML is basically fair and both players have enough break volatility for a three-set path, but 22.5 leaves little margin."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Iva Jovic 65% / Naomi Osaka 71%",
+          "rows": [
+            {
+              "name": "Iva Jovic",
+              "confidence": 65,
+              "modelPct": 48,
+              "label": "Needs early hold pressure"
+            },
+            {
+              "name": "Naomi Osaka",
+              "confidence": 71,
+              "modelPct": 52,
+              "label": "Live to win a set"
+            }
+          ],
+          "confidence": 71,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First set games",
+          "label": "1st set games",
+          "selection": "Over 9.5 only if both first service games are comfortable.",
+          "expectedGames": 10.1,
+          "confidence": 53,
+          "tiebreakRisk": 0.13,
+          "earlyBreakRisk": 0.43,
+          "grade": "Thin",
+          "reason": "Over 9.5 only if both first service games are comfortable."
+        }
+      ],
       "market": {
         "source": "FanDuel Sportsbook",
         "capturedAt": "2026-05-30T04:26:30.840Z",
@@ -260,6 +558,155 @@
         }
       },
       "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": {
+        "date": "2026-05-30",
+        "matchId": "rg-w-maria-sakkari-maja-chwalinska-2026-05-30",
+        "match": "Maria Sakkari vs Maja Chwalinska",
+        "start": "2:00 AM",
+        "expectedMatchGames": 22.4,
+        "expectedFirstSetGames": 9.9,
+        "totalGames": {
+          "postedLine": 21.5,
+          "overOdds": -118,
+          "underOdds": -112,
+          "lean": "Over",
+          "edgeGames": 0.9,
+          "confidence": 55,
+          "grade": "watch",
+          "reason": "Sakkari is the data-side at plus money, but her recent volatility makes the cleaner read a longer match rather than a pure ML."
+        },
+        "gameHandicap": {
+          "selection": "Maria Sakkari",
+          "postedSpread": 1.5,
+          "odds": -110,
+          "projectedMarginGames": 0.6,
+          "edgeGames": 2.1,
+          "confidence": 57,
+          "grade": "playable",
+          "reason": "The model prefers Sakkari while the book gives her +1.5. That is a better expression than chasing the winner if confidence stays moderate."
+        },
+        "firstSet": {
+          "expectedGames": 9.9,
+          "lean": "Over 9.5 if plus price appears; pass after an early break with no response.",
+          "tiebreakRisk": 0.1,
+          "earlyBreakRisk": 0.47,
+          "confidence": 54
+        },
+        "writeup": {
+          "headline": "Maria Sakkari vs Maja Chwalinska: derivative lane before ML.",
+          "betPlan": "Primary: Maria Sakkari spread if the posted number is still available.",
+          "whyItWorks": [
+            "The model prefers Sakkari while the book gives her +1.5. That is a better expression than chasing the winner if confidence stays moderate.",
+            null,
+            "The matrix separates likely winner from the market that actually pays."
+          ],
+          "whyItFails": [
+            "One-sided first-set breaks can wreck spread and total projections quickly.",
+            "If early service games contradict the projected hold/return shape, downgrade before adding exposure."
+          ],
+          "entryExit": {
+            "preMatch": "Over total edge +0.9 games; spread edge +2.1 games.",
+            "live": "Over 9.5 if plus price appears; pass after an early break with no response."
+          }
+        },
+        "evidence": [
+          "FanDuel total 21.5 captured.",
+          "FanDuel handicap captured for Maria Sakkari.",
+          "Model match confidence 56% with volatility 52%.",
+          "Set-win projections: Maria Sakkari 73% / Maja Chwalinska 60%."
+        ],
+        "dataQuality": {
+          "fanDuelTotalCaptured": true,
+          "fanDuelSpreadCaptured": true,
+          "warehouseRowsUsed": 2,
+          "replayRowsUsed": 0,
+          "status": "complete"
+        }
+      },
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Maria Sakkari",
+          "line": null,
+          "americanOdds": 118,
+          "modelPct": 56,
+          "impliedPct": 45.9,
+          "edgePct": 10.1,
+          "evPer100": 22.1,
+          "netEvPer100": 20.1,
+          "grade": "Bet-grade value",
+          "issue": "Validated ML candidate",
+          "reason": "Model is meaningfully above FanDuel implied price."
+        },
+        {
+          "marketType": "Game spread",
+          "label": "Game spread",
+          "selection": "Maria Sakkari",
+          "line": 1.5,
+          "americanOdds": -110,
+          "modelPct": 50,
+          "impliedPct": 52.4,
+          "edgePct": -2.4,
+          "evPer100": -4.5,
+          "netEvPer100": -6.5,
+          "expectedGames": 0.6,
+          "edgeGames": 2.1,
+          "confidence": 57,
+          "grade": "playable",
+          "reason": "The model prefers Sakkari while the book gives her +1.5. That is a better expression than chasing the winner if confidence stays moderate."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "Over",
+          "line": 21.5,
+          "americanOdds": -118,
+          "modelPct": 55,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 22.4,
+          "edgeGames": 0.9,
+          "confidence": 55,
+          "grade": "watch",
+          "reason": "Sakkari is the data-side at plus money, but her recent volatility makes the cleaner read a longer match rather than a pure ML."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Maria Sakkari 73% / Maja Chwalinska 60%",
+          "rows": [
+            {
+              "name": "Maria Sakkari",
+              "confidence": 73,
+              "modelPct": 56,
+              "label": "Live to win a set"
+            },
+            {
+              "name": "Maja Chwalinska",
+              "confidence": 60,
+              "modelPct": 44,
+              "label": "Needs early hold pressure"
+            }
+          ],
+          "confidence": 73,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First set games",
+          "label": "1st set games",
+          "selection": "Over 9.5 if plus price appears; pass after an early break with no response.",
+          "expectedGames": 9.9,
+          "confidence": 54,
+          "tiebreakRisk": 0.1,
+          "earlyBreakRisk": 0.47,
+          "grade": "Thin",
+          "reason": "Over 9.5 if plus price appears; pass after an early break with no response."
+        }
+      ],
       "market": {
         "source": "FanDuel Sportsbook",
         "capturedAt": "2026-05-30T04:26:33.874Z",
@@ -355,6 +802,155 @@
         }
       },
       "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": {
+        "date": "2026-05-30",
+        "matchId": "rg-w-diana-shnaider-oleksandra-oliynykova-2026-05-30",
+        "match": "Diana Shnaider vs Oleksandra Oliynykova",
+        "start": "3:00 AM",
+        "expectedMatchGames": 21.7,
+        "expectedFirstSetGames": 9.8,
+        "totalGames": {
+          "postedLine": 20.5,
+          "overOdds": -118,
+          "underOdds": -112,
+          "lean": "Over",
+          "edgeGames": 1.2,
+          "confidence": 56,
+          "grade": "watch",
+          "reason": "Shnaider is overpriced on ML. Oliynykova has enough game-winning path to push this past a short WTA total."
+        },
+        "gameHandicap": {
+          "selection": "Oleksandra Oliynykova",
+          "postedSpread": 4.5,
+          "odds": -120,
+          "projectedMarginGames": 2.7,
+          "edgeGames": 1.8,
+          "confidence": 57,
+          "grade": "playable",
+          "reason": "The dog does not need to win; she needs to avoid a straight-sets collapse. The model-market gap supports taking games over ML."
+        },
+        "firstSet": {
+          "expectedGames": 9.8,
+          "lean": "Over 9.5 if Oliynykova holds once without facing multiple break points.",
+          "tiebreakRisk": 0.09,
+          "earlyBreakRisk": 0.51,
+          "confidence": 54
+        },
+        "writeup": {
+          "headline": "Diana Shnaider vs Oleksandra Oliynykova: derivative lane before ML.",
+          "betPlan": "Primary: Oleksandra Oliynykova spread if the posted number is still available.",
+          "whyItWorks": [
+            "The dog does not need to win; she needs to avoid a straight-sets collapse. The model-market gap supports taking games over ML.",
+            null,
+            "The matrix separates likely winner from the market that actually pays."
+          ],
+          "whyItFails": [
+            "One-sided first-set breaks can wreck spread and total projections quickly.",
+            "If early service games contradict the projected hold/return shape, downgrade before adding exposure."
+          ],
+          "entryExit": {
+            "preMatch": "Over total edge +1.2 games; spread edge +1.8 games.",
+            "live": "Over 9.5 if Oliynykova holds once without facing multiple break points."
+          }
+        },
+        "evidence": [
+          "FanDuel total 20.5 captured.",
+          "FanDuel handicap captured for Oleksandra Oliynykova.",
+          "Model match confidence 53% with volatility 56%.",
+          "Set-win projections: Diana Shnaider 71% / Oleksandra Oliynykova 64%."
+        ],
+        "dataQuality": {
+          "fanDuelTotalCaptured": true,
+          "fanDuelSpreadCaptured": true,
+          "warehouseRowsUsed": 2,
+          "replayRowsUsed": 0,
+          "status": "complete"
+        }
+      },
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Diana Shnaider",
+          "line": null,
+          "americanOdds": -300,
+          "modelPct": 53,
+          "impliedPct": 75,
+          "edgePct": -22,
+          "evPer100": -29.3,
+          "netEvPer100": -31.3,
+          "grade": "Negative EV",
+          "issue": "Favorite price needs better proof",
+          "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+        },
+        {
+          "marketType": "Game spread",
+          "label": "Game spread",
+          "selection": "Oleksandra Oliynykova",
+          "line": 4.5,
+          "americanOdds": -120,
+          "modelPct": 47,
+          "impliedPct": 52.4,
+          "edgePct": -5.4,
+          "evPer100": -10.3,
+          "netEvPer100": -12.3,
+          "expectedGames": 2.7,
+          "edgeGames": 1.8,
+          "confidence": 57,
+          "grade": "playable",
+          "reason": "The dog does not need to win; she needs to avoid a straight-sets collapse. The model-market gap supports taking games over ML."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "Over",
+          "line": 20.5,
+          "americanOdds": -118,
+          "modelPct": 56,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 21.7,
+          "edgeGames": 1.2,
+          "confidence": 56,
+          "grade": "watch",
+          "reason": "Shnaider is overpriced on ML. Oliynykova has enough game-winning path to push this past a short WTA total."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Diana Shnaider 71% / Oleksandra Oliynykova 64%",
+          "rows": [
+            {
+              "name": "Diana Shnaider",
+              "confidence": 71,
+              "modelPct": 53,
+              "label": "Live to win a set"
+            },
+            {
+              "name": "Oleksandra Oliynykova",
+              "confidence": 64,
+              "modelPct": 47,
+              "label": "Needs early hold pressure"
+            }
+          ],
+          "confidence": 71,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First set games",
+          "label": "1st set games",
+          "selection": "Over 9.5 if Oliynykova holds once without facing multiple break points.",
+          "expectedGames": 9.8,
+          "confidence": 54,
+          "tiebreakRisk": 0.09,
+          "earlyBreakRisk": 0.51,
+          "grade": "Thin",
+          "reason": "Over 9.5 if Oliynykova holds once without facing multiple break points."
+        }
+      ],
       "market": {
         "source": "FanDuel Sportsbook",
         "capturedAt": "2026-05-30T04:26:37.489Z",
@@ -450,6 +1046,155 @@
         }
       },
       "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": {
+        "date": "2026-05-30",
+        "matchId": "rg-m-flavio-cobolli-learner-tien-2026-05-30",
+        "match": "Flavio Cobolli vs Learner Tien",
+        "start": "3:00 AM",
+        "expectedMatchGames": 40.2,
+        "expectedFirstSetGames": 10.3,
+        "totalGames": {
+          "postedLine": 37.5,
+          "overOdds": -118,
+          "underOdds": -112,
+          "lean": "Over",
+          "edgeGames": 2.7,
+          "confidence": 59,
+          "grade": "playable",
+          "reason": "The model liked Tien more than market, but the better pre-match expression is extension: best-of-five, close pricing gap, and Tien set-win path."
+        },
+        "gameHandicap": {
+          "selection": "Learner Tien",
+          "postedSpread": 3.5,
+          "odds": 104,
+          "projectedMarginGames": 1.7,
+          "edgeGames": 1.8,
+          "confidence": 57,
+          "grade": "playable",
+          "reason": "Tien +3.5 aligns with the model disagreement and avoids needing him to finish the upset."
+        },
+        "firstSet": {
+          "expectedGames": 10.3,
+          "lean": "Over 9.5; tiebreak/7-5 path is live unless Cobolli gets immediate return pressure.",
+          "tiebreakRisk": 0.18,
+          "earlyBreakRisk": 0.37,
+          "confidence": 58
+        },
+        "writeup": {
+          "headline": "Flavio Cobolli vs Learner Tien: derivative lane before ML.",
+          "betPlan": "Primary: Learner Tien spread if the posted number is still available.",
+          "whyItWorks": [
+            "Tien +3.5 aligns with the model disagreement and avoids needing him to finish the upset.",
+            null,
+            "The matrix separates likely winner from the market that actually pays."
+          ],
+          "whyItFails": [
+            "One-sided first-set breaks can wreck spread and total projections quickly.",
+            "If early service games contradict the projected hold/return shape, downgrade before adding exposure."
+          ],
+          "entryExit": {
+            "preMatch": "Over total edge +2.7 games; spread edge +1.8 games.",
+            "live": "Over 9.5; tiebreak/7-5 path is live unless Cobolli gets immediate return pressure."
+          }
+        },
+        "evidence": [
+          "FanDuel total 37.5 captured.",
+          "FanDuel handicap captured for Learner Tien.",
+          "Model match confidence 54% with volatility 46%.",
+          "Set-win projections: Flavio Cobolli 75% / Learner Tien 84%."
+        ],
+        "dataQuality": {
+          "fanDuelTotalCaptured": true,
+          "fanDuelSpreadCaptured": true,
+          "warehouseRowsUsed": 2,
+          "replayRowsUsed": 0,
+          "status": "complete"
+        }
+      },
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Learner Tien",
+          "line": null,
+          "americanOdds": 164,
+          "modelPct": 54,
+          "impliedPct": 37.9,
+          "edgePct": 16.1,
+          "evPer100": 42.6,
+          "netEvPer100": 40.6,
+          "grade": "Bet-grade value",
+          "issue": "Validated ML candidate",
+          "reason": "Model is meaningfully above FanDuel implied price."
+        },
+        {
+          "marketType": "Game spread",
+          "label": "Game spread",
+          "selection": "Learner Tien",
+          "line": 3.5,
+          "americanOdds": 104,
+          "modelPct": 48,
+          "impliedPct": 49,
+          "edgePct": -1,
+          "evPer100": -2.1,
+          "netEvPer100": -4.1,
+          "expectedGames": 1.7,
+          "edgeGames": 1.8,
+          "confidence": 57,
+          "grade": "playable",
+          "reason": "Tien +3.5 aligns with the model disagreement and avoids needing him to finish the upset."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "Over",
+          "line": 37.5,
+          "americanOdds": -118,
+          "modelPct": 59,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 40.2,
+          "edgeGames": 2.7,
+          "confidence": 59,
+          "grade": "playable",
+          "reason": "The model liked Tien more than market, but the better pre-match expression is extension: best-of-five, close pricing gap, and Tien set-win path."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Flavio Cobolli 75% / Learner Tien 84%",
+          "rows": [
+            {
+              "name": "Flavio Cobolli",
+              "confidence": 75,
+              "modelPct": 46,
+              "label": "Live to win a set"
+            },
+            {
+              "name": "Learner Tien",
+              "confidence": 84,
+              "modelPct": 54,
+              "label": "Strong set-win path"
+            }
+          ],
+          "confidence": 84,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First set games",
+          "label": "1st set games",
+          "selection": "Over 9.5; tiebreak/7-5 path is live unless Cobolli gets immediate return pressure.",
+          "expectedGames": 10.3,
+          "confidence": 58,
+          "tiebreakRisk": 0.18,
+          "earlyBreakRisk": 0.37,
+          "grade": "Actionable live watch",
+          "reason": "Over 9.5; tiebreak/7-5 path is live unless Cobolli gets immediate return pressure."
+        }
+      ],
       "market": {
         "source": "FanDuel Sportsbook",
         "capturedAt": "2026-05-30T04:26:41.075Z",
@@ -545,6 +1290,155 @@
         }
       },
       "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": {
+        "date": "2026-05-30",
+        "matchId": "rg-w-aryna-sabalenka-daria-kasatkina-2026-05-30",
+        "match": "Aryna Sabalenka vs Daria Kasatkina",
+        "start": "3:30 AM",
+        "expectedMatchGames": 19.2,
+        "expectedFirstSetGames": 8.9,
+        "totalGames": {
+          "postedLine": 18.5,
+          "overOdds": 100,
+          "underOdds": -134,
+          "lean": "Over",
+          "edgeGames": 0.7,
+          "confidence": 52,
+          "grade": "thin",
+          "reason": "Kasatkina has the return craft to create a games pocket, but her first-set collapse risk keeps this from being clean."
+        },
+        "gameHandicap": {
+          "selection": "Daria Kasatkina",
+          "postedSpread": 6.5,
+          "odds": -116,
+          "projectedMarginGames": 6.2,
+          "edgeGames": 0.3,
+          "confidence": 51,
+          "grade": "pass",
+          "reason": "Kasatkina +6.5 has a path only if she avoids a 6-1/6-0 set. The spread is too exposed to one bad service patch."
+        },
+        "firstSet": {
+          "expectedGames": 8.9,
+          "lean": "Pass first-set total pre-match; only play over after Kasatkina shows hold stability.",
+          "tiebreakRisk": 0.04,
+          "earlyBreakRisk": 0.68,
+          "confidence": 51
+        },
+        "writeup": {
+          "headline": "Aryna Sabalenka vs Daria Kasatkina: derivative lane before ML.",
+          "betPlan": "No blind bet; use the listed lane only at a good number.",
+          "whyItWorks": [
+            "Kasatkina +6.5 has a path only if she avoids a 6-1/6-0 set. The spread is too exposed to one bad service patch.",
+            null,
+            "The matrix separates likely winner from the market that actually pays."
+          ],
+          "whyItFails": [
+            "One-sided first-set breaks can wreck spread and total projections quickly.",
+            "If early service games contradict the projected hold/return shape, downgrade before adding exposure."
+          ],
+          "entryExit": {
+            "preMatch": "Over total edge +0.7 games; spread edge +0.3 games.",
+            "live": "Pass first-set total pre-match; only play over after Kasatkina shows hold stability."
+          }
+        },
+        "evidence": [
+          "FanDuel total 18.5 captured.",
+          "FanDuel handicap captured for Daria Kasatkina.",
+          "Model match confidence 65% with volatility 40%.",
+          "Set-win projections: Aryna Sabalenka 77% / Daria Kasatkina 49%."
+        ],
+        "dataQuality": {
+          "fanDuelTotalCaptured": true,
+          "fanDuelSpreadCaptured": true,
+          "warehouseRowsUsed": 2,
+          "replayRowsUsed": 0,
+          "status": "complete"
+        }
+      },
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Aryna Sabalenka",
+          "line": null,
+          "americanOdds": -1450,
+          "modelPct": 65,
+          "impliedPct": 93.5,
+          "edgePct": -28.5,
+          "evPer100": -30.5,
+          "netEvPer100": -32.5,
+          "grade": "Favorite tax trap",
+          "issue": "Favorite tax trap",
+          "reason": "Likely winner can still be a bad ML bet after payout and fees. Check spread, total, and set-win instead."
+        },
+        {
+          "marketType": "Game spread",
+          "label": "Game spread",
+          "selection": "Daria Kasatkina",
+          "line": 6.5,
+          "americanOdds": -116,
+          "modelPct": 55,
+          "impliedPct": 53.7,
+          "edgePct": 1.3,
+          "evPer100": 2.4,
+          "netEvPer100": 0.4,
+          "expectedGames": 6.2,
+          "edgeGames": 0.3,
+          "confidence": 51,
+          "grade": "pass",
+          "reason": "Kasatkina +6.5 has a path only if she avoids a 6-1/6-0 set. The spread is too exposed to one bad service patch."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "Over",
+          "line": 18.5,
+          "americanOdds": 100,
+          "modelPct": 52,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 19.2,
+          "edgeGames": 0.7,
+          "confidence": 52,
+          "grade": "thin",
+          "reason": "Kasatkina has the return craft to create a games pocket, but her first-set collapse risk keeps this from being clean."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Aryna Sabalenka 77% / Daria Kasatkina 49%",
+          "rows": [
+            {
+              "name": "Aryna Sabalenka",
+              "confidence": 77,
+              "modelPct": 65,
+              "label": "Live to win a set"
+            },
+            {
+              "name": "Daria Kasatkina",
+              "confidence": 49,
+              "modelPct": 35,
+              "label": "Thin set-win path"
+            }
+          ],
+          "confidence": 77,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First set games",
+          "label": "1st set games",
+          "selection": "Pass first-set total pre-match; only play over after Kasatkina shows hold stability.",
+          "expectedGames": 8.9,
+          "confidence": 51,
+          "tiebreakRisk": 0.04,
+          "earlyBreakRisk": 0.68,
+          "grade": "Thin",
+          "reason": "Pass first-set total pre-match; only play over after Kasatkina shows hold stability."
+        }
+      ],
       "market": {
         "source": "FanDuel Sportsbook",
         "capturedAt": "2026-05-30T04:26:44.126Z",
@@ -640,6 +1534,155 @@
         }
       },
       "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": {
+        "date": "2026-05-30",
+        "matchId": "rg-w-anna-kalinskaya-camila-osorio-2026-05-30",
+        "match": "Anna Kalinskaya vs Camila Osorio",
+        "start": "4:00 AM",
+        "expectedMatchGames": 22.6,
+        "expectedFirstSetGames": 10,
+        "totalGames": {
+          "postedLine": 21.5,
+          "overOdds": -126,
+          "underOdds": -106,
+          "lean": "Over",
+          "edgeGames": 1.1,
+          "confidence": 55,
+          "grade": "watch",
+          "reason": "Near-pickem ML pricing plus WTA break-back volatility makes the total more useful than choosing a winner."
+        },
+        "gameHandicap": {
+          "selection": "Camila Osorio",
+          "postedSpread": 0.5,
+          "odds": -116,
+          "projectedMarginGames": 0.1,
+          "edgeGames": 0.6,
+          "confidence": 52,
+          "grade": "thin",
+          "reason": "Kalinskaya is only a tiny model lean, so Osorio +0.5 has the slightly better risk shape."
+        },
+        "firstSet": {
+          "expectedGames": 10,
+          "lean": "Over 9.5 if both players hold once; pass after an immediate one-way break.",
+          "tiebreakRisk": 0.11,
+          "earlyBreakRisk": 0.45,
+          "confidence": 54
+        },
+        "writeup": {
+          "headline": "Anna Kalinskaya vs Camila Osorio: derivative lane before ML.",
+          "betPlan": "No blind bet; use the listed lane only at a good number.",
+          "whyItWorks": [
+            "Kalinskaya is only a tiny model lean, so Osorio +0.5 has the slightly better risk shape.",
+            null,
+            "The matrix separates likely winner from the market that actually pays."
+          ],
+          "whyItFails": [
+            "One-sided first-set breaks can wreck spread and total projections quickly.",
+            "If early service games contradict the projected hold/return shape, downgrade before adding exposure."
+          ],
+          "entryExit": {
+            "preMatch": "Over total edge +1.1 games; spread edge +0.6 games.",
+            "live": "Over 9.5 if both players hold once; pass after an immediate one-way break."
+          }
+        },
+        "evidence": [
+          "FanDuel total 21.5 captured.",
+          "FanDuel handicap captured for Camila Osorio.",
+          "Model match confidence 54% with volatility 55%.",
+          "Set-win projections: Anna Kalinskaya 72% / Camila Osorio 63%."
+        ],
+        "dataQuality": {
+          "fanDuelTotalCaptured": true,
+          "fanDuelSpreadCaptured": true,
+          "warehouseRowsUsed": 2,
+          "replayRowsUsed": 0,
+          "status": "complete"
+        }
+      },
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Anna Kalinskaya",
+          "line": null,
+          "americanOdds": -118,
+          "modelPct": 54,
+          "impliedPct": 54.1,
+          "edgePct": -0.1,
+          "evPer100": -0.2,
+          "netEvPer100": -2.2,
+          "grade": "Near fair",
+          "issue": "Favorite price needs better proof",
+          "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
+        },
+        {
+          "marketType": "Game spread",
+          "label": "Game spread",
+          "selection": "Camila Osorio",
+          "line": 0.5,
+          "americanOdds": -116,
+          "modelPct": 48,
+          "impliedPct": 53.7,
+          "edgePct": -5.7,
+          "evPer100": -10.6,
+          "netEvPer100": -12.6,
+          "expectedGames": 0.1,
+          "edgeGames": 0.6,
+          "confidence": 52,
+          "grade": "thin",
+          "reason": "Kalinskaya is only a tiny model lean, so Osorio +0.5 has the slightly better risk shape."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "Over",
+          "line": 21.5,
+          "americanOdds": -126,
+          "modelPct": 55,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 22.6,
+          "edgeGames": 1.1,
+          "confidence": 55,
+          "grade": "watch",
+          "reason": "Near-pickem ML pricing plus WTA break-back volatility makes the total more useful than choosing a winner."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Anna Kalinskaya 72% / Camila Osorio 63%",
+          "rows": [
+            {
+              "name": "Anna Kalinskaya",
+              "confidence": 72,
+              "modelPct": 54,
+              "label": "Live to win a set"
+            },
+            {
+              "name": "Camila Osorio",
+              "confidence": 63,
+              "modelPct": 46,
+              "label": "Needs early hold pressure"
+            }
+          ],
+          "confidence": 72,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First set games",
+          "label": "1st set games",
+          "selection": "Over 9.5 if both players hold once; pass after an immediate one-way break.",
+          "expectedGames": 10,
+          "confidence": 54,
+          "tiebreakRisk": 0.11,
+          "earlyBreakRisk": 0.45,
+          "grade": "Thin",
+          "reason": "Over 9.5 if both players hold once; pass after an immediate one-way break."
+        }
+      ],
       "market": {
         "source": "FanDuel Sportsbook",
         "capturedAt": "2026-05-30T04:26:47.341Z",
@@ -735,6 +1778,155 @@
         }
       },
       "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": {
+        "date": "2026-05-30",
+        "matchId": "rg-m-matteo-berrettini-francisco-comesana-2026-05-30",
+        "match": "Matteo Berrettini vs Francisco Comesana",
+        "start": "4:00 AM",
+        "expectedMatchGames": 39.3,
+        "expectedFirstSetGames": 10.2,
+        "totalGames": {
+          "postedLine": 37.5,
+          "overOdds": -120,
+          "underOdds": -110,
+          "lean": "Over",
+          "edgeGames": 1.8,
+          "confidence": 57,
+          "grade": "watch",
+          "reason": "Berrettini is price-taxed and Comesana has enough set-win projection to extend the match."
+        },
+        "gameHandicap": {
+          "selection": "Francisco Comesana",
+          "postedSpread": 4.5,
+          "odds": -120,
+          "projectedMarginGames": 3.1,
+          "edgeGames": 1.4,
+          "confidence": 55,
+          "grade": "watch",
+          "reason": "Comesana +4.5 fits the model-market disagreement better than Berrettini ML."
+        },
+        "firstSet": {
+          "expectedGames": 10.2,
+          "lean": "Over 9.5 if Berrettini serve rhythm is clean; pass if Comesana leaks early second-serve points.",
+          "tiebreakRisk": 0.17,
+          "earlyBreakRisk": 0.39,
+          "confidence": 56
+        },
+        "writeup": {
+          "headline": "Matteo Berrettini vs Francisco Comesana: derivative lane before ML.",
+          "betPlan": "No blind bet; use the listed lane only at a good number.",
+          "whyItWorks": [
+            "Comesana +4.5 fits the model-market disagreement better than Berrettini ML.",
+            null,
+            "The matrix separates likely winner from the market that actually pays."
+          ],
+          "whyItFails": [
+            "One-sided first-set breaks can wreck spread and total projections quickly.",
+            "If early service games contradict the projected hold/return shape, downgrade before adding exposure."
+          ],
+          "entryExit": {
+            "preMatch": "Over total edge +1.8 games; spread edge +1.4 games.",
+            "live": "Over 9.5 if Berrettini serve rhythm is clean; pass if Comesana leaks early second-serve points."
+          }
+        },
+        "evidence": [
+          "FanDuel total 37.5 captured.",
+          "FanDuel handicap captured for Francisco Comesana.",
+          "Model match confidence 52% with volatility 48%.",
+          "Set-win projections: Matteo Berrettini 84% / Francisco Comesana 77%."
+        ],
+        "dataQuality": {
+          "fanDuelTotalCaptured": true,
+          "fanDuelSpreadCaptured": true,
+          "warehouseRowsUsed": 2,
+          "replayRowsUsed": 0,
+          "status": "complete"
+        }
+      },
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Matteo Berrettini",
+          "line": null,
+          "americanOdds": -230,
+          "modelPct": 52,
+          "impliedPct": 69.7,
+          "edgePct": -17.7,
+          "evPer100": -25.4,
+          "netEvPer100": -27.4,
+          "grade": "Negative EV",
+          "issue": "Favorite price needs better proof",
+          "reason": "FanDuel price is richer than the model; pass ML unless live state improves."
+        },
+        {
+          "marketType": "Game spread",
+          "label": "Game spread",
+          "selection": "Francisco Comesana",
+          "line": 4.5,
+          "americanOdds": -120,
+          "modelPct": 46,
+          "impliedPct": 52.4,
+          "edgePct": -6.4,
+          "evPer100": -12.2,
+          "netEvPer100": -14.2,
+          "expectedGames": 3.1,
+          "edgeGames": 1.4,
+          "confidence": 55,
+          "grade": "watch",
+          "reason": "Comesana +4.5 fits the model-market disagreement better than Berrettini ML."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "Over",
+          "line": 37.5,
+          "americanOdds": -120,
+          "modelPct": 57,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 39.3,
+          "edgeGames": 1.8,
+          "confidence": 57,
+          "grade": "watch",
+          "reason": "Berrettini is price-taxed and Comesana has enough set-win projection to extend the match."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Matteo Berrettini 84% / Francisco Comesana 77%",
+          "rows": [
+            {
+              "name": "Matteo Berrettini",
+              "confidence": 84,
+              "modelPct": 52,
+              "label": "Strong set-win path"
+            },
+            {
+              "name": "Francisco Comesana",
+              "confidence": 77,
+              "modelPct": 48,
+              "label": "Live to win a set"
+            }
+          ],
+          "confidence": 84,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First set games",
+          "label": "1st set games",
+          "selection": "Over 9.5 if Berrettini serve rhythm is clean; pass if Comesana leaks early second-serve points.",
+          "expectedGames": 10.2,
+          "confidence": 56,
+          "tiebreakRisk": 0.17,
+          "earlyBreakRisk": 0.39,
+          "grade": "Thin",
+          "reason": "Over 9.5 if Berrettini serve rhythm is clean; pass if Comesana leaks early second-serve points."
+        }
+      ],
       "market": {
         "source": "FanDuel Sportsbook",
         "capturedAt": "2026-05-30T04:26:50.340Z",
@@ -830,6 +2022,155 @@
         }
       },
       "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": {
+        "date": "2026-05-30",
+        "matchId": "rg-m-juan-manuel-cerundolo-martin-landaluce-2026-05-30",
+        "match": "Juan Manuel Cerundolo vs Martin Landaluce",
+        "start": "4:30 AM",
+        "expectedMatchGames": 40,
+        "expectedFirstSetGames": 10.3,
+        "totalGames": {
+          "postedLine": 38.5,
+          "overOdds": -110,
+          "underOdds": -122,
+          "lean": "Over",
+          "edgeGames": 1.5,
+          "confidence": 57,
+          "grade": "watch",
+          "reason": "The match grades close and both set-win projections are live, so the best-of-five total is the better lane."
+        },
+        "gameHandicap": {
+          "selection": "Martin Landaluce",
+          "postedSpread": 1.5,
+          "odds": -110,
+          "projectedMarginGames": 0.4,
+          "edgeGames": 1.1,
+          "confidence": 54,
+          "grade": "thin",
+          "reason": "Cerundolo is a small model lean, but -1.5 is not worth paying for. Landaluce +1.5 fits the close-match read."
+        },
+        "firstSet": {
+          "expectedGames": 10.3,
+          "lean": "Over 9.5; pass 10.5 unless plus money.",
+          "tiebreakRisk": 0.16,
+          "earlyBreakRisk": 0.38,
+          "confidence": 57
+        },
+        "writeup": {
+          "headline": "Juan Manuel Cerundolo vs Martin Landaluce: derivative lane before ML.",
+          "betPlan": "No blind bet; use the listed lane only at a good number.",
+          "whyItWorks": [
+            "Cerundolo is a small model lean, but -1.5 is not worth paying for. Landaluce +1.5 fits the close-match read.",
+            null,
+            "The matrix separates likely winner from the market that actually pays."
+          ],
+          "whyItFails": [
+            "One-sided first-set breaks can wreck spread and total projections quickly.",
+            "If early service games contradict the projected hold/return shape, downgrade before adding exposure."
+          ],
+          "entryExit": {
+            "preMatch": "Over total edge +1.5 games; spread edge +1.1 games.",
+            "live": "Over 9.5; pass 10.5 unless plus money."
+          }
+        },
+        "evidence": [
+          "FanDuel total 38.5 captured.",
+          "FanDuel handicap captured for Martin Landaluce.",
+          "Model match confidence 52% with volatility 48%.",
+          "Set-win projections: Juan Manuel Cerundolo 84% / Martin Landaluce 77%."
+        ],
+        "dataQuality": {
+          "fanDuelTotalCaptured": true,
+          "fanDuelSpreadCaptured": true,
+          "warehouseRowsUsed": 2,
+          "replayRowsUsed": 0,
+          "status": "complete"
+        }
+      },
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Juan Manuel Cerundolo",
+          "line": null,
+          "americanOdds": -140,
+          "modelPct": 52,
+          "impliedPct": 58.3,
+          "edgePct": -6.3,
+          "evPer100": -10.9,
+          "netEvPer100": -12.9,
+          "grade": "Negative EV",
+          "issue": "Favorite price needs better proof",
+          "reason": "FanDuel price is richer than the model; pass ML unless live state improves."
+        },
+        {
+          "marketType": "Game spread",
+          "label": "Game spread",
+          "selection": "Martin Landaluce",
+          "line": 1.5,
+          "americanOdds": -110,
+          "modelPct": 46,
+          "impliedPct": 54.5,
+          "edgePct": -8.5,
+          "evPer100": -15.7,
+          "netEvPer100": -17.7,
+          "expectedGames": 0.4,
+          "edgeGames": 1.1,
+          "confidence": 54,
+          "grade": "thin",
+          "reason": "Cerundolo is a small model lean, but -1.5 is not worth paying for. Landaluce +1.5 fits the close-match read."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "Over",
+          "line": 38.5,
+          "americanOdds": -110,
+          "modelPct": 57,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 40,
+          "edgeGames": 1.5,
+          "confidence": 57,
+          "grade": "watch",
+          "reason": "The match grades close and both set-win projections are live, so the best-of-five total is the better lane."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Juan Manuel Cerundolo 84% / Martin Landaluce 77%",
+          "rows": [
+            {
+              "name": "Juan Manuel Cerundolo",
+              "confidence": 84,
+              "modelPct": 52,
+              "label": "Strong set-win path"
+            },
+            {
+              "name": "Martin Landaluce",
+              "confidence": 77,
+              "modelPct": 48,
+              "label": "Live to win a set"
+            }
+          ],
+          "confidence": 84,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First set games",
+          "label": "1st set games",
+          "selection": "Over 9.5; pass 10.5 unless plus money.",
+          "expectedGames": 10.3,
+          "confidence": 57,
+          "tiebreakRisk": 0.16,
+          "earlyBreakRisk": 0.38,
+          "grade": "Thin",
+          "reason": "Over 9.5; pass 10.5 unless plus money."
+        }
+      ],
       "market": {
         "source": "FanDuel Sportsbook",
         "capturedAt": "2026-05-30T04:26:53.476Z",
@@ -925,6 +2266,155 @@
         }
       },
       "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": {
+        "date": "2026-05-30",
+        "matchId": "rg-w-diane-parry-amanda-anisimova-2026-05-30",
+        "match": "Diane Parry vs Amanda Anisimova",
+        "start": "5:00 AM",
+        "expectedMatchGames": 21.2,
+        "expectedFirstSetGames": 9.5,
+        "totalGames": {
+          "postedLine": 19.5,
+          "overOdds": -130,
+          "underOdds": -102,
+          "lean": "Over",
+          "edgeGames": 1.7,
+          "confidence": 57,
+          "grade": "watch",
+          "reason": "Anisimova ML is expensive and Parry has enough volatility leverage to make a short total dangerous."
+        },
+        "gameHandicap": {
+          "selection": "Diane Parry",
+          "postedSpread": 5.5,
+          "odds": -136,
+          "projectedMarginGames": 4,
+          "edgeGames": 1.5,
+          "confidence": 56,
+          "grade": "watch",
+          "reason": "Parry +5.5 is a better lane than laying Anisimova games because one loose favorite service set can wreck the cover."
+        },
+        "firstSet": {
+          "expectedGames": 9.5,
+          "lean": "Pass 9.5 pre-match; over only after Parry shows she can hold early.",
+          "tiebreakRisk": 0.08,
+          "earlyBreakRisk": 0.54,
+          "confidence": 52
+        },
+        "writeup": {
+          "headline": "Diane Parry vs Amanda Anisimova: derivative lane before ML.",
+          "betPlan": "No blind bet; use the listed lane only at a good number.",
+          "whyItWorks": [
+            "Parry +5.5 is a better lane than laying Anisimova games because one loose favorite service set can wreck the cover.",
+            null,
+            "The matrix separates likely winner from the market that actually pays."
+          ],
+          "whyItFails": [
+            "One-sided first-set breaks can wreck spread and total projections quickly.",
+            "If early service games contradict the projected hold/return shape, downgrade before adding exposure."
+          ],
+          "entryExit": {
+            "preMatch": "Over total edge +1.7 games; spread edge +1.5 games.",
+            "live": "Pass 9.5 pre-match; over only after Parry shows she can hold early."
+          }
+        },
+        "evidence": [
+          "FanDuel total 19.5 captured.",
+          "FanDuel handicap captured for Diane Parry.",
+          "Model match confidence 61% with volatility 46%.",
+          "Set-win projections: Diane Parry 54% / Amanda Anisimova 75%."
+        ],
+        "dataQuality": {
+          "fanDuelTotalCaptured": true,
+          "fanDuelSpreadCaptured": true,
+          "warehouseRowsUsed": 2,
+          "replayRowsUsed": 0,
+          "status": "complete"
+        }
+      },
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Amanda Anisimova",
+          "line": null,
+          "americanOdds": -530,
+          "modelPct": 61,
+          "impliedPct": 84.1,
+          "edgePct": -23.1,
+          "evPer100": -27.5,
+          "netEvPer100": -29.5,
+          "grade": "Favorite tax trap",
+          "issue": "Favorite tax trap",
+          "reason": "Likely winner can still be a bad ML bet after payout and fees. Check spread, total, and set-win instead."
+        },
+        {
+          "marketType": "Game spread",
+          "label": "Game spread",
+          "selection": "Diane Parry",
+          "line": 5.5,
+          "americanOdds": -136,
+          "modelPct": 55,
+          "impliedPct": 49,
+          "edgePct": 6,
+          "evPer100": 12.2,
+          "netEvPer100": 10.2,
+          "expectedGames": 4,
+          "edgeGames": 1.5,
+          "confidence": 56,
+          "grade": "watch",
+          "reason": "Parry +5.5 is a better lane than laying Anisimova games because one loose favorite service set can wreck the cover."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "Over",
+          "line": 19.5,
+          "americanOdds": -130,
+          "modelPct": 57,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 21.2,
+          "edgeGames": 1.7,
+          "confidence": 57,
+          "grade": "watch",
+          "reason": "Anisimova ML is expensive and Parry has enough volatility leverage to make a short total dangerous."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Diane Parry 54% / Amanda Anisimova 75%",
+          "rows": [
+            {
+              "name": "Diane Parry",
+              "confidence": 54,
+              "modelPct": 39,
+              "label": "Needs early hold pressure"
+            },
+            {
+              "name": "Amanda Anisimova",
+              "confidence": 75,
+              "modelPct": 61,
+              "label": "Live to win a set"
+            }
+          ],
+          "confidence": 75,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First set games",
+          "label": "1st set games",
+          "selection": "Pass 9.5 pre-match; over only after Parry shows she can hold early.",
+          "expectedGames": 9.5,
+          "confidence": 52,
+          "tiebreakRisk": 0.08,
+          "earlyBreakRisk": 0.54,
+          "grade": "Thin",
+          "reason": "Pass 9.5 pre-match; over only after Parry shows she can hold early."
+        }
+      ],
       "market": {
         "source": "FanDuel Sportsbook",
         "capturedAt": "2026-05-30T04:26:56.557Z",
@@ -1020,6 +2510,155 @@
         }
       },
       "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": {
+        "date": "2026-05-30",
+        "matchId": "rg-m-moise-kouame-alejandro-tabilo-2026-05-30",
+        "match": "Moise Kouame vs Alejandro Tabilo",
+        "start": "5:00 AM",
+        "expectedMatchGames": 36,
+        "expectedFirstSetGames": 9.7,
+        "totalGames": {
+          "postedLine": 34.5,
+          "overOdds": -110,
+          "underOdds": -120,
+          "lean": "Over",
+          "edgeGames": 1.5,
+          "confidence": 56,
+          "grade": "watch",
+          "reason": "Tabilo is the stronger side, but Kouame set-win pressure and home/young-player volatility point away from a quick total."
+        },
+        "gameHandicap": {
+          "selection": "Moise Kouame",
+          "postedSpread": 6.5,
+          "odds": -104,
+          "projectedMarginGames": 5.2,
+          "edgeGames": 1.3,
+          "confidence": 55,
+          "grade": "watch",
+          "reason": "Kouame +6.5 has room if he produces one extended set; Tabilo ML is too expensive."
+        },
+        "firstSet": {
+          "expectedGames": 9.7,
+          "lean": "Over 9.5 only if Kouame holds his first service game.",
+          "tiebreakRisk": 0.1,
+          "earlyBreakRisk": 0.48,
+          "confidence": 54
+        },
+        "writeup": {
+          "headline": "Moise Kouame vs Alejandro Tabilo: derivative lane before ML.",
+          "betPlan": "No blind bet; use the listed lane only at a good number.",
+          "whyItWorks": [
+            "Kouame +6.5 has room if he produces one extended set; Tabilo ML is too expensive.",
+            null,
+            "The matrix separates likely winner from the market that actually pays."
+          ],
+          "whyItFails": [
+            "One-sided first-set breaks can wreck spread and total projections quickly.",
+            "If early service games contradict the projected hold/return shape, downgrade before adding exposure."
+          ],
+          "entryExit": {
+            "preMatch": "Over total edge +1.5 games; spread edge +1.3 games.",
+            "live": "Over 9.5 only if Kouame holds his first service game."
+          }
+        },
+        "evidence": [
+          "FanDuel total 34.5 captured.",
+          "FanDuel handicap captured for Moise Kouame.",
+          "Model match confidence 61% with volatility 40%.",
+          "Set-win projections: Moise Kouame 68% / Alejandro Tabilo 87%."
+        ],
+        "dataQuality": {
+          "fanDuelTotalCaptured": true,
+          "fanDuelSpreadCaptured": true,
+          "warehouseRowsUsed": 2,
+          "replayRowsUsed": 0,
+          "status": "complete"
+        }
+      },
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Alejandro Tabilo",
+          "line": null,
+          "americanOdds": -520,
+          "modelPct": 61,
+          "impliedPct": 83.9,
+          "edgePct": -22.9,
+          "evPer100": -27.3,
+          "netEvPer100": -29.3,
+          "grade": "Favorite tax trap",
+          "issue": "Favorite tax trap",
+          "reason": "Likely winner can still be a bad ML bet after payout and fees. Check spread, total, and set-win instead."
+        },
+        {
+          "marketType": "Game spread",
+          "label": "Game spread",
+          "selection": "Moise Kouame",
+          "line": 6.5,
+          "americanOdds": -104,
+          "modelPct": 51,
+          "impliedPct": 56.1,
+          "edgePct": -5.1,
+          "evPer100": -9.2,
+          "netEvPer100": -11.2,
+          "expectedGames": 5.2,
+          "edgeGames": 1.3,
+          "confidence": 55,
+          "grade": "watch",
+          "reason": "Kouame +6.5 has room if he produces one extended set; Tabilo ML is too expensive."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "Over",
+          "line": 34.5,
+          "americanOdds": -110,
+          "modelPct": 56,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 36,
+          "edgeGames": 1.5,
+          "confidence": 56,
+          "grade": "watch",
+          "reason": "Tabilo is the stronger side, but Kouame set-win pressure and home/young-player volatility point away from a quick total."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Moise Kouame 68% / Alejandro Tabilo 87%",
+          "rows": [
+            {
+              "name": "Moise Kouame",
+              "confidence": 68,
+              "modelPct": 39,
+              "label": "Live to win a set"
+            },
+            {
+              "name": "Alejandro Tabilo",
+              "confidence": 87,
+              "modelPct": 61,
+              "label": "Strong set-win path"
+            }
+          ],
+          "confidence": 87,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First set games",
+          "label": "1st set games",
+          "selection": "Over 9.5 only if Kouame holds his first service game.",
+          "expectedGames": 9.7,
+          "confidence": 54,
+          "tiebreakRisk": 0.1,
+          "earlyBreakRisk": 0.48,
+          "grade": "Thin",
+          "reason": "Over 9.5 only if Kouame holds his first service game."
+        }
+      ],
       "market": {
         "source": "FanDuel Sportsbook",
         "capturedAt": "2026-05-30T04:26:59.591Z",
@@ -1115,6 +2754,156 @@
         }
       },
       "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": {
+        "date": "2026-05-30",
+        "matchId": "rg-m-matteo-arnaldi-raphael-collignon-2026-05-30",
+        "match": "Matteo Arnaldi vs Raphael Collignon",
+        "start": "5:30 AM",
+        "expectedMatchGames": 39.5,
+        "expectedFirstSetGames": 10.2,
+        "totalGames": {
+          "postedLine": null,
+          "overOdds": null,
+          "underOdds": null,
+          "lean": "Over if line is 37.5 or lower; pass 39.5+",
+          "edgeGames": null,
+          "confidence": 56,
+          "grade": "data-incomplete",
+          "reason": "No FanDuel total was captured. Both players show strong service indicators and enough resistance profile for a longer best-of-five shape."
+        },
+        "gameHandicap": {
+          "selection": "Raphael Collignon",
+          "postedSpread": null,
+          "odds": null,
+          "projectedMarginGames": 3.8,
+          "edgeGames": null,
+          "confidence": 54,
+          "grade": "data-incomplete",
+          "reason": "No FanDuel handicap was captured. Collignon is the winner lean, but Arnaldi's first-serve and break-save profile argues against a blind large spread."
+        },
+        "firstSet": {
+          "expectedGames": 10.2,
+          "lean": "Over 9.5 if posted; pass 10.5 unless plus money.",
+          "tiebreakRisk": 0.16,
+          "earlyBreakRisk": 0.39,
+          "confidence": 57
+        },
+        "writeup": {
+          "headline": "Service stability points to a longer men's match.",
+          "betPlan": "No pre-match derivative bet without a posted line; look for first-set over or full-match over if the book hangs a low number.",
+          "whyItWorks": [
+            "Arnaldi has strong tournament first-serve percentage, second-serve points won, and break-point saved numbers.",
+            "Collignon has the better winner profile and stronger break conversion, but not enough to assume a rout.",
+            "Both have recent resistance profiles that support at least one extended set."
+          ],
+          "whyItFails": [
+            "Collignon could separate if Arnaldi's return pressure stays low.",
+            "Arnaldi's underdog price is not attractive enough for a trade-to-sell entry at the captured Kalshi level.",
+            "No captured spread or total means this is a projection, not a priced EV row."
+          ],
+          "entryExit": {
+            "preMatch": "Over only if total is 37.5 or lower. First-set over 9.5 is the cleaner derivative if offered.",
+            "live": "Upgrade over if the first four service games stay mostly clean; downgrade if Collignon breaks twice before 4-1."
+          }
+        },
+        "evidence": [
+          "FanDuel moneyline captured, but no total or handicap captured.",
+          "Arnaldi tournament stats: 79.0% first serve, 66.7% second-serve points won, 81.8% break points saved.",
+          "Collignon tournament stats: 82.1% first-serve points won and 56.3% break points converted.",
+          "Kalshi flow shows Arnaldi resistance, but the 36c entry is too high for a clean trade-to-sell."
+        ],
+        "dataQuality": {
+          "fanDuelTotalCaptured": false,
+          "fanDuelSpreadCaptured": false,
+          "warehouseRowsUsed": 2,
+          "replayRowsUsed": 2,
+          "status": "priced-lines-missing"
+        }
+      },
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Raphael Collignon",
+          "line": null,
+          "americanOdds": -205,
+          "modelPct": 57,
+          "impliedPct": 67.2,
+          "edgePct": -10.2,
+          "evPer100": -15.2,
+          "netEvPer100": -17.2,
+          "grade": "Negative EV",
+          "issue": "Favorite price needs better proof",
+          "reason": "FanDuel price is richer than the model; pass ML unless live state improves."
+        },
+        {
+          "marketType": "Game spread",
+          "label": "Game spread",
+          "selection": "Raphael Collignon",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 3.8,
+          "edgeGames": null,
+          "confidence": 54,
+          "grade": "data-incomplete",
+          "reason": "No FanDuel handicap was captured. Collignon is the winner lean, but Arnaldi's first-serve and break-save profile argues against a blind large spread."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "Over if line is 37.5 or lower; pass 39.5+",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": 56,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 39.5,
+          "edgeGames": null,
+          "confidence": 56,
+          "grade": "data-incomplete",
+          "reason": "No FanDuel total was captured. Both players show strong service indicators and enough resistance profile for a longer best-of-five shape."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Matteo Arnaldi 72% / Raphael Collignon 85%",
+          "rows": [
+            {
+              "name": "Matteo Arnaldi",
+              "confidence": 72,
+              "modelPct": 43,
+              "label": "Live to win a set"
+            },
+            {
+              "name": "Raphael Collignon",
+              "confidence": 85,
+              "modelPct": 57,
+              "label": "Strong set-win path"
+            }
+          ],
+          "confidence": 85,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First set games",
+          "label": "1st set games",
+          "selection": "Over 9.5 if posted; pass 10.5 unless plus money.",
+          "expectedGames": 10.2,
+          "confidence": 57,
+          "tiebreakRisk": 0.16,
+          "earlyBreakRisk": 0.39,
+          "grade": "Thin",
+          "reason": "Over 9.5 if posted; pass 10.5 unless plus money."
+        }
+      ],
       "market": {
         "source": "FanDuel Sportsbook",
         "capturedAt": "2026-05-30T04:27:01.715Z",
@@ -1210,6 +2999,156 @@
         }
       },
       "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": {
+        "date": "2026-05-30",
+        "matchId": "rg-w-victoria-mboko-madison-keys-2026-05-30",
+        "match": "Victoria Mboko vs Madison Keys",
+        "start": "6:00 AM",
+        "expectedMatchGames": 22.9,
+        "expectedFirstSetGames": 10.4,
+        "totalGames": {
+          "postedLine": 22.5,
+          "overOdds": -108,
+          "underOdds": -126,
+          "lean": "Over",
+          "edgeGames": 0.4,
+          "confidence": 53,
+          "grade": "thin",
+          "reason": "The matchup grades close, Keys owns the steadier serve indicators, and Mboko's break-point saved profile creates enough three-set or 7-5 risk for a small over lean."
+        },
+        "gameHandicap": {
+          "selection": "Madison Keys",
+          "postedSpread": 0.5,
+          "odds": -112,
+          "projectedMarginGames": 0.4,
+          "edgeGames": 0.9,
+          "confidence": 54,
+          "grade": "thin",
+          "reason": "Winner model is nearly even, but Keys has the better hold, second-serve, break-point saved, and adjusted-form profile."
+        },
+        "firstSet": {
+          "expectedGames": 10.4,
+          "lean": "Over 9.5 if posted at a playable price; pass 10.5 unless plus money.",
+          "tiebreakRisk": 0.14,
+          "earlyBreakRisk": 0.43,
+          "confidence": 55
+        },
+        "writeup": {
+          "headline": "Close-match script with Keys stability underneath.",
+          "betPlan": "Over 22.5 is the derivative lean; Keys +0.5 games is playable only small.",
+          "whyItWorks": [
+            "The model has the match almost even, not a real Mboko favorite despite the board lean.",
+            "Keys has stronger first-serve points won, second-serve stability, break-point saved rate, and adjusted form.",
+            "Mboko's tournament break-point saved rate is weak enough to create momentum swings rather than a clean straight-set favorite path."
+          ],
+          "whyItFails": [
+            "Mboko has crowd/market support and can create return pressure if Keys' first serve dips.",
+            "Keys can run hot and cold with errors, so the spread edge is thinner than the stat edge.",
+            "A one-sided first set from either player damages the over."
+          ],
+          "entryExit": {
+            "preMatch": "Over 22.5 at -108 is playable small. Keys +0.5 at -112 is a thin value, not a max play.",
+            "live": "Keep over only if both players show service comfort early or if each creates break chances. Downgrade if Mboko is broken twice in the first set."
+          }
+        },
+        "evidence": [
+          "FanDuel total 22.5 and Mboko -0.5 / Keys +0.5 were captured.",
+          "Keys tournament stats: 70.8% first-serve points won, 51.7% second-serve points won, 84.6% break points saved.",
+          "Mboko tournament stats: 57.3% first-serve points won and 41.7% break points saved.",
+          "Kalshi flow for Keys shows stronger clay form, return pressure, and adjusted-form edge, but entry price is too high for trade-to-sell promotion."
+        ],
+        "dataQuality": {
+          "fanDuelTotalCaptured": true,
+          "fanDuelSpreadCaptured": true,
+          "warehouseRowsUsed": 2,
+          "replayRowsUsed": 1,
+          "status": "complete"
+        }
+      },
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Victoria Mboko",
+          "line": null,
+          "americanOdds": -120,
+          "modelPct": 51,
+          "impliedPct": 54.5,
+          "edgePct": -3.5,
+          "evPer100": -6.5,
+          "netEvPer100": -8.5,
+          "grade": "Negative EV",
+          "issue": "Favorite price needs better proof",
+          "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
+        },
+        {
+          "marketType": "Game spread",
+          "label": "Game spread",
+          "selection": "Madison Keys",
+          "line": 0.5,
+          "americanOdds": -112,
+          "modelPct": 45,
+          "impliedPct": 54.5,
+          "edgePct": -9.5,
+          "evPer100": -17.5,
+          "netEvPer100": -19.5,
+          "expectedGames": 0.4,
+          "edgeGames": 0.9,
+          "confidence": 54,
+          "grade": "thin",
+          "reason": "Winner model is nearly even, but Keys has the better hold, second-serve, break-point saved, and adjusted-form profile."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "Over",
+          "line": 22.5,
+          "americanOdds": -108,
+          "modelPct": 53,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 22.9,
+          "edgeGames": 0.4,
+          "confidence": 53,
+          "grade": "thin",
+          "reason": "The matchup grades close, Keys owns the steadier serve indicators, and Mboko's break-point saved profile creates enough three-set or 7-5 risk for a small over lean."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Victoria Mboko 71% / Madison Keys 66%",
+          "rows": [
+            {
+              "name": "Victoria Mboko",
+              "confidence": 71,
+              "modelPct": 51,
+              "label": "Live to win a set"
+            },
+            {
+              "name": "Madison Keys",
+              "confidence": 66,
+              "modelPct": 49,
+              "label": "Needs early hold pressure"
+            }
+          ],
+          "confidence": 71,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First set games",
+          "label": "1st set games",
+          "selection": "Over 9.5 if posted at a playable price; pass 10.5 unless plus money.",
+          "expectedGames": 10.4,
+          "confidence": 55,
+          "tiebreakRisk": 0.14,
+          "earlyBreakRisk": 0.43,
+          "grade": "Thin",
+          "reason": "Over 9.5 if posted at a playable price; pass 10.5 unless plus money."
+        }
+      ],
       "market": {
         "source": "FanDuel Sportsbook",
         "capturedAt": "2026-05-30T04:27:04.792Z",
@@ -1305,6 +3244,156 @@
         }
       },
       "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": {
+        "date": "2026-05-30",
+        "matchId": "rg-w-coco-gauff-anastasia-potapova-2026-05-30",
+        "match": "Coco Gauff vs Anastasia Potapova",
+        "start": "7:00 AM",
+        "expectedMatchGames": 20,
+        "expectedFirstSetGames": 9.6,
+        "totalGames": {
+          "postedLine": 20.5,
+          "overOdds": -120,
+          "underOdds": -110,
+          "lean": "Under",
+          "edgeGames": -0.5,
+          "confidence": 54,
+          "grade": "thin",
+          "reason": "Gauff has enough return pressure against Potapova's low first-serve profile to create a control path, but Gauff's own second-serve volatility keeps the edge small."
+        },
+        "gameHandicap": {
+          "selection": "Coco Gauff",
+          "postedSpread": -4.5,
+          "odds": -118,
+          "projectedMarginGames": 4.8,
+          "edgeGames": 0.3,
+          "confidence": 51,
+          "grade": "pass",
+          "reason": "Gauff can cover if Potapova's error count shows early, but the 2-2 H2H and Gauff service volatility make -4.5 too thin."
+        },
+        "firstSet": {
+          "expectedGames": 9.6,
+          "lean": "Under 9.5 only if plus price appears; otherwise pass.",
+          "tiebreakRisk": 0.07,
+          "earlyBreakRisk": 0.61,
+          "confidence": 54
+        },
+        "writeup": {
+          "headline": "Gauff control path, but not a clean blowout spread.",
+          "betPlan": "Small Under 20.5 lean; pass the -4.5 unless Potapova's first serve looks shaky immediately.",
+          "whyItWorks": [
+            "Potapova's tournament first-serve rate is only about 51%, and her unforced-error load is high.",
+            "Gauff's return profile can turn second-serve games into breaks quickly.",
+            "A 6-3 or 6-4 first set puts the full-match under in range."
+          ],
+          "whyItFails": [
+            "Gauff's second-serve won rate is also fragile, so she can give breaks back.",
+            "The H2H is split 2-2, which argues against treating this like a pure mismatch.",
+            "If Potapova holds the first two service games without pressure, the under edge is mostly gone."
+          ],
+          "entryExit": {
+            "preMatch": "Under 20.5 at -110 or better is playable only small; pass at 19.5.",
+            "live": "Cancel the under if both players hold comfortably through 2-2. Upgrade Gauff spread only if Potapova's first-serve percentage is under 55% with early break points faced."
+          }
+        },
+        "evidence": [
+          "FanDuel total 20.5 and Gauff -4.5 were captured.",
+          "Gauff tournament stats: 67.6% first-serve points won, 40.5% second-serve points won, 46.4% break points converted.",
+          "Potapova tournament stats: 51.4% first serve, 65 unforced errors, 53.3% break points saved.",
+          "SofaScore public vote leans Gauff 78.7%, but the warehouse ensemble says Gauff ML is price-taxed."
+        ],
+        "dataQuality": {
+          "fanDuelTotalCaptured": true,
+          "fanDuelSpreadCaptured": true,
+          "warehouseRowsUsed": 2,
+          "replayRowsUsed": 0,
+          "status": "complete"
+        }
+      },
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Coco Gauff",
+          "line": null,
+          "americanOdds": -365,
+          "modelPct": 58,
+          "impliedPct": 78.5,
+          "edgePct": -20.5,
+          "evPer100": -26.1,
+          "netEvPer100": -28.1,
+          "grade": "Negative EV",
+          "issue": "Favorite price needs better proof",
+          "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+        },
+        {
+          "marketType": "Game spread",
+          "label": "Game spread",
+          "selection": "Coco Gauff",
+          "line": -4.5,
+          "americanOdds": -118,
+          "modelPct": 52,
+          "impliedPct": 54.1,
+          "edgePct": -2.1,
+          "evPer100": -3.9,
+          "netEvPer100": -5.9,
+          "expectedGames": 4.8,
+          "edgeGames": 0.3,
+          "confidence": 51,
+          "grade": "pass",
+          "reason": "Gauff can cover if Potapova's error count shows early, but the 2-2 H2H and Gauff service volatility make -4.5 too thin."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "Under",
+          "line": 20.5,
+          "americanOdds": -110,
+          "modelPct": 54,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 20,
+          "edgeGames": -0.5,
+          "confidence": 54,
+          "grade": "thin",
+          "reason": "Gauff has enough return pressure against Potapova's low first-serve profile to create a control path, but Gauff's own second-serve volatility keeps the edge small."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Coco Gauff 74% / Anastasia Potapova 58%",
+          "rows": [
+            {
+              "name": "Coco Gauff",
+              "confidence": 74,
+              "modelPct": 58,
+              "label": "Live to win a set"
+            },
+            {
+              "name": "Anastasia Potapova",
+              "confidence": 58,
+              "modelPct": 42,
+              "label": "Needs early hold pressure"
+            }
+          ],
+          "confidence": 74,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First set games",
+          "label": "1st set games",
+          "selection": "Under 9.5 only if plus price appears; otherwise pass.",
+          "expectedGames": 9.6,
+          "confidence": 54,
+          "tiebreakRisk": 0.07,
+          "earlyBreakRisk": 0.61,
+          "grade": "Thin",
+          "reason": "Under 9.5 only if plus price appears; otherwise pass."
+        }
+      ],
       "market": {
         "source": "FanDuel Sportsbook",
         "capturedAt": "2026-05-30T04:27:07.841Z",
@@ -1400,6 +3489,156 @@
         }
       },
       "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": {
+        "date": "2026-05-30",
+        "matchId": "rg-m-jaime-faria-frances-tiafoe-2026-05-30",
+        "match": "Jaime Faria vs Frances Tiafoe",
+        "start": "7:00 AM",
+        "expectedMatchGames": 41,
+        "expectedFirstSetGames": 10.5,
+        "totalGames": {
+          "postedLine": null,
+          "overOdds": null,
+          "underOdds": null,
+          "lean": "Over if line is 38.5 or lower; pass 40.5+",
+          "edgeGames": null,
+          "confidence": 58,
+          "grade": "data-incomplete",
+          "reason": "No FanDuel total was captured. Faria's hold and resistance profile plus Tiafoe's ace/first-serve scoring point to an extended best-of-five path."
+        },
+        "gameHandicap": {
+          "selection": "Jaime Faria",
+          "postedSpread": null,
+          "odds": null,
+          "projectedMarginGames": 0.8,
+          "edgeGames": null,
+          "confidence": 55,
+          "grade": "data-incomplete",
+          "reason": "No FanDuel handicap was captured. The ensemble makes Faria live, but Tiafoe still has tour-level weaponry and serve ceiling."
+        },
+        "firstSet": {
+          "expectedGames": 10.5,
+          "lean": "Over 9.5; pass 10.5 unless plus money.",
+          "tiebreakRisk": 0.2,
+          "earlyBreakRisk": 0.34,
+          "confidence": 59
+        },
+        "writeup": {
+          "headline": "Faria is live, and the game-flow case is extension rather than quick upset.",
+          "betPlan": "Best angle is first-set over or full-match over if a low line appears. Faria ML is value, but not the same as a derivative play.",
+          "whyItWorks": [
+            "Faria's recent hold, second-serve, and resistance profile are strong enough to keep sets alive.",
+            "Tiafoe brings a high ace count and strong first-serve points won, which lowers immediate break risk.",
+            "The ensemble/data-only model likes Faria more than the market, so the favorite should not be priced as a clean straight-set path."
+          ],
+          "whyItFails": [
+            "Tiafoe can blow open a set if his first serve lands and Faria's return pressure fades.",
+            "Faria's adjusted-form field is incomplete, so the model is leaning on partial warehouse context.",
+            "At 37c, Faria's Kalshi contract is too expensive for a pure trade-to-sell setup."
+          ],
+          "entryExit": {
+            "preMatch": "First-set over 9.5 is playable if offered. Full-match over only at 38.5 or lower.",
+            "live": "If Faria holds his first two service games, over and Faria spread become stronger. If he is broken early with low first-serve percentage, drop the position."
+          }
+        },
+        "evidence": [
+          "FanDuel moneyline captured, but no total or handicap captured.",
+          "Faria clay win rate 70.3%, recent win rate 87.5%, hold 82.1, second serve 67.6.",
+          "Tiafoe tournament stats: 13.5 average aces, 84.8% first-serve points won, 56.8% second-serve points won.",
+          "Ensemble row: Faria model 50.3%, data-only 54.0%, market 39.2%, net EV +26.4."
+        ],
+        "dataQuality": {
+          "fanDuelTotalCaptured": false,
+          "fanDuelSpreadCaptured": false,
+          "warehouseRowsUsed": 3,
+          "replayRowsUsed": 2,
+          "status": "priced-lines-missing"
+        }
+      },
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Frances Tiafoe",
+          "line": null,
+          "americanOdds": -192,
+          "modelPct": 66,
+          "impliedPct": 65.8,
+          "edgePct": 0.2,
+          "evPer100": 0.4,
+          "netEvPer100": -1.6,
+          "grade": "Favorite price needs better proof",
+          "issue": "Favorite price needs better proof",
+          "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
+        },
+        {
+          "marketType": "Game spread",
+          "label": "Game spread",
+          "selection": "Jaime Faria",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 0.8,
+          "edgeGames": null,
+          "confidence": 55,
+          "grade": "data-incomplete",
+          "reason": "No FanDuel handicap was captured. The ensemble makes Faria live, but Tiafoe still has tour-level weaponry and serve ceiling."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "Over if line is 38.5 or lower; pass 40.5+",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": 58,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 41,
+          "edgeGames": null,
+          "confidence": 58,
+          "grade": "data-incomplete",
+          "reason": "No FanDuel total was captured. Faria's hold and resistance profile plus Tiafoe's ace/first-serve scoring point to an extended best-of-five path."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Jaime Faria 63% / Frances Tiafoe 88%",
+          "rows": [
+            {
+              "name": "Jaime Faria",
+              "confidence": 63,
+              "modelPct": 34,
+              "label": "Needs early hold pressure"
+            },
+            {
+              "name": "Frances Tiafoe",
+              "confidence": 88,
+              "modelPct": 66,
+              "label": "Strong set-win path"
+            }
+          ],
+          "confidence": 88,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First set games",
+          "label": "1st set games",
+          "selection": "Over 9.5; pass 10.5 unless plus money.",
+          "expectedGames": 10.5,
+          "confidence": 59,
+          "tiebreakRisk": 0.2,
+          "earlyBreakRisk": 0.34,
+          "grade": "Actionable live watch",
+          "reason": "Over 9.5; pass 10.5 unless plus money."
+        }
+      ],
       "market": {
         "source": "FanDuel Sportsbook",
         "capturedAt": "2026-05-30T04:27:09.944Z",
@@ -1495,6 +3734,156 @@
         }
       },
       "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": {
+        "date": "2026-05-30",
+        "matchId": "rg-m-felix-auger-aliassime-brandon-nakashima-2026-05-30",
+        "match": "Felix Auger-Aliassime vs Brandon Nakashima",
+        "start": "11:15 AM",
+        "expectedMatchGames": 40.2,
+        "expectedFirstSetGames": 10.4,
+        "totalGames": {
+          "postedLine": null,
+          "overOdds": null,
+          "underOdds": null,
+          "lean": "Over if line is 38.5 or lower; pass 40.5+",
+          "edgeGames": null,
+          "confidence": 57,
+          "grade": "data-incomplete",
+          "reason": "No FanDuel total was captured. Nakashima's serve numbers and model value case make the match more extendable than the favorite ML price implies."
+        },
+        "gameHandicap": {
+          "selection": "Brandon Nakashima",
+          "postedSpread": null,
+          "odds": null,
+          "projectedMarginGames": 1.2,
+          "edgeGames": null,
+          "confidence": 56,
+          "grade": "data-incomplete",
+          "reason": "No FanDuel handicap was captured. Nakashima is the value side against the favorite tax, but his Kalshi spike profile lacks price-history support."
+        },
+        "firstSet": {
+          "expectedGames": 10.4,
+          "lean": "Over 9.5 if posted; pass 10.5 unless plus money.",
+          "tiebreakRisk": 0.18,
+          "earlyBreakRisk": 0.36,
+          "confidence": 58
+        },
+        "writeup": {
+          "headline": "Nakashima value points to extension, not a cheap spike trade.",
+          "betPlan": "Prefer Nakashima game spread or first-set over if offered; avoid FAA ML at taxed price.",
+          "whyItWorks": [
+            "Nakashima's tournament serve profile is cleaner: more aces, no double-fault issue in the aggregate, better first-serve and second-serve points won.",
+            "FAA has a high ace ceiling but also 7 average double faults and weak second-serve points won.",
+            "The ensemble gives Nakashima a much better chance than the market, so the match should be more competitive than the ML suggests."
+          ],
+          "whyItFails": [
+            "FAA still has top-six rank, five-set experience, and first-strike power.",
+            "Nakashima's Kalshi trade profile lacks enough price-history support, so this is not a strong trade-to-sell.",
+            "No captured total or handicap means derivative EV cannot be fully priced pre-match."
+          ],
+          "entryExit": {
+            "preMatch": "Look for Nakashima spread at +4.5 or better, or first-set over 9.5. Full-match over only at 38.5 or lower.",
+            "live": "Upgrade Nakashima spread/over if he holds twice with first-serve points above 70%. Downgrade if FAA attacks second serves immediately."
+          }
+        },
+        "evidence": [
+          "FanDuel moneyline captured, but no total or handicap captured.",
+          "Nakashima tournament stats: 11.5 average aces, 80.8% first-serve points won, 54.1% second-serve points won.",
+          "FAA tournament stats: 8 average aces, 7 average double faults, 41.7% second-serve points won.",
+          "Ensemble row: Nakashima model 46.0%, data-only 50.8%, market 29.0%, net EV +56.6."
+        ],
+        "dataQuality": {
+          "fanDuelTotalCaptured": false,
+          "fanDuelSpreadCaptured": false,
+          "warehouseRowsUsed": 2,
+          "replayRowsUsed": 0,
+          "status": "priced-lines-missing"
+        }
+      },
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Felix Auger-Aliassime",
+          "line": null,
+          "americanOdds": -315,
+          "modelPct": 60,
+          "impliedPct": 75.9,
+          "edgePct": -15.9,
+          "evPer100": -21,
+          "netEvPer100": -23,
+          "grade": "Negative EV",
+          "issue": "Favorite price needs better proof",
+          "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+        },
+        {
+          "marketType": "Game spread",
+          "label": "Game spread",
+          "selection": "Brandon Nakashima",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 1.2,
+          "edgeGames": null,
+          "confidence": 56,
+          "grade": "data-incomplete",
+          "reason": "No FanDuel handicap was captured. Nakashima is the value side against the favorite tax, but his Kalshi spike profile lacks price-history support."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "Over if line is 38.5 or lower; pass 40.5+",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": 57,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 40.2,
+          "edgeGames": null,
+          "confidence": 57,
+          "grade": "data-incomplete",
+          "reason": "No FanDuel total was captured. Nakashima's serve numbers and model value case make the match more extendable than the favorite ML price implies."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Felix Auger-Aliassime 87% / Brandon Nakashima 69%",
+          "rows": [
+            {
+              "name": "Felix Auger-Aliassime",
+              "confidence": 87,
+              "modelPct": 60,
+              "label": "Strong set-win path"
+            },
+            {
+              "name": "Brandon Nakashima",
+              "confidence": 69,
+              "modelPct": 40,
+              "label": "Live to win a set"
+            }
+          ],
+          "confidence": 87,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First set games",
+          "label": "1st set games",
+          "selection": "Over 9.5 if posted; pass 10.5 unless plus money.",
+          "expectedGames": 10.4,
+          "confidence": 58,
+          "tiebreakRisk": 0.18,
+          "earlyBreakRisk": 0.36,
+          "grade": "Actionable live watch",
+          "reason": "Over 9.5 if posted; pass 10.5 unless plus money."
+        }
+      ],
       "market": {
         "source": "FanDuel Sportsbook",
         "capturedAt": "2026-05-30T04:27:11.831Z",

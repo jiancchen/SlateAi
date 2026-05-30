@@ -140,6 +140,8 @@ export function MlbDetail(props: MlbDetailProps) {
   const homeRecentBullpenSummary = game.bullpenChainContext?.home?.recentBullpenSummary ?? null
   const awaySeasonBullpenSummary = game.bullpenContext?.away ?? null
   const homeSeasonBullpenSummary = game.bullpenContext?.home ?? null
+  const awayRelieverShadow = game.relieverShadowContext?.away ?? null
+  const homeRelieverShadow = game.relieverShadowContext?.home ?? null
   const awayStory = game.storyContext?.away?.summary
   const homeStory = game.storyContext?.home?.summary
   const awayRecentGames = game.stateContext?.recentGames?.away ?? []
@@ -268,7 +270,8 @@ export function MlbDetail(props: MlbDetailProps) {
     workloadLabel: string,
     advantage: boolean,
     recentBullpenSummary: AnyRecord | null,
-    seasonBullpenSummary: AnyRecord | null
+    seasonBullpenSummary: AnyRecord | null,
+    shadowContext: AnyRecord | null
   ) => (
     <article className={`bridge-chain-card-react ${advantage ? 'advantage' : ''}`}>
       <div className="bridge-chain-card-head">
@@ -287,6 +290,50 @@ export function MlbDetail(props: MlbDetailProps) {
             ? ` vs season ${formatNumber(seasonBullpenSummary.era, 2)} ERA / ${formatNumber(seasonBullpenSummary.whip, 2)} WHIP`
             : ''}
         </p>
+      ) : null}
+      {shadowContext?.relievers?.length ? (
+        <div className="bridge-shadow-box">
+          <div className="bridge-shadow-head">
+            <div>
+              <p className="eyebrow">E34 shadow</p>
+              <strong>{shadowContext.summaryLine || 'First-up reliever shadow board'}</strong>
+            </div>
+            <small>
+              {formatNumber(shadowContext.researchRates?.exactRate, 1)}% exact · {formatNumber(shadowContext.researchRates?.top2Rate, 1)}% top-2
+            </small>
+          </div>
+          <p className="react-section-copy">
+            Lead {shadowContext.relievers[0]?.name || '—'}
+            {shadowContext.relievers[1]?.name ? ` · Alt ${shadowContext.relievers[1].name}` : ''}
+            {Number.isFinite(Number(shadowContext.topTwoSharePct))
+              ? ` · top-2 share ${formatNumber(shadowContext.topTwoSharePct, 1)}%`
+              : ''}
+            {Number.isFinite(Number(shadowContext.starterHookRiskPct))
+              ? ` · hook risk ${formatNumber(shadowContext.starterHookRiskPct, 1)}%`
+              : ''}
+          </p>
+          <div className="bridge-shadow-list">
+            {shadowContext.relievers.slice(0, 2).map((reliever: AnyRecord) => (
+              <div key={`${teamName}-shadow-${reliever.pitcherId || reliever.name}`} className="bridge-shadow-row">
+                <div>
+                  <strong>{reliever.name}</strong>
+                  <small>
+                    {reliever.role || 'bridge'} · {formatNumber(reliever.expectedOuts, 2)} outs · shadow share {formatNumber(reliever.shadowSharePct, 1)}%
+                  </small>
+                  {reliever.summary ? <small>{reliever.summary}</small> : null}
+                </div>
+                <div className="bridge-shadow-meta">
+                  <span>{formatNumber(reliever.shadowScorePct, 1)} score</span>
+                  <small>
+                    Availability {formatNumber(reliever.availabilityScore, 0)}/100
+                    {reliever.backToBack ? ' | B2B' : reliever.workedYesterday ? ' | worked yesterday' : ''}
+                  </small>
+                  {reliever.reasonTags?.length ? <small>{reliever.reasonTags.join(' · ')}</small> : null}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       ) : null}
       {relievers.length ? (
         <div className="bridge-chain-list">
@@ -829,7 +876,8 @@ export function MlbDetail(props: MlbDetailProps) {
               projection.awayBullpenExhaustionLabel || 'unknown',
               projection.bridgeEdgeTeam === awayTeam,
               awayRecentBullpenSummary,
-              awaySeasonBullpenSummary
+              awaySeasonBullpenSummary,
+              awayRelieverShadow
             )}
             {renderBridgeChainCard(
               homeTeam,
@@ -838,7 +886,8 @@ export function MlbDetail(props: MlbDetailProps) {
               projection.homeBullpenExhaustionLabel || 'unknown',
               projection.bridgeEdgeTeam === homeTeam,
               homeRecentBullpenSummary,
-              homeSeasonBullpenSummary
+              homeSeasonBullpenSummary,
+              homeRelieverShadow
             )}
           </div>
         </section>

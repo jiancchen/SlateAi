@@ -100,6 +100,10 @@ npm run data:export:tennis-warehouse-context -- --date YYYY-MM-DD
 # Capture Moneyline, Game Handicap, and Total Match Games into markets.moneyline,
 # markets.gameHandicap, and markets.totalGames. Record unavailable reasons
 # such as ended, not offered, or blocked before generating the slate.
+# Required derivative prediction step:
+# Build data-private/predictions/tennis/YYYY-MM-DD-derivative-markets.json with
+# expectedMatchGames, expectedFirstSetGames, totalGames lean, gameHandicap lean,
+# confidence, edgeGames, writeup, evidence, and dataQuality for every singles match.
 node pipeline/generate-tennis-day-module.mjs --date YYYY-MM-DD
 npm run data:export:published
 npm run data:health:tennis -- --date YYYY-MM-DD --pregame
@@ -118,12 +122,22 @@ Tennis health gate:
 - The gate verifies source files, dated ranking snapshots, imported ranking rows, the dated Flashscore recent-match map, recent Flashscore links imported into SQLite under the correct slate date, warehouse recent-form metrics, SofaScore match mappings, Kalshi/prediction-market coverage, and published match-detail payloads.
 - In settled mode, it also requires SofaScore stats/replay rows, Kalshi candles/trade features, completed match results, and model-training labels. If a day has passed and this fails, the warehouse is incomplete.
 - Published tennis detail payloads must have no missing Hold / 2nd / Err / Ret / Close cells in the visible last-five grid.
+- Published tennis detail payloads must join derivative market predictions whenever FanDuel totals/spreads were captured; missing expected games, first-set games, O/U lean, or spread lean is a failed pregame pass.
 - `npm test` includes a regression test for the bug that previously imported May 28/29/30 Flashscore recent maps with `slate_date = NULL`.
 
 FanDuel event-page lines:
 - The slate file must include per-match FanDuel event URLs when available, then each event page must be opened before match start to expand the primary `Moneyline`, `Game Handicap`, and `Total Match Games` sections.
 - Store those pulls in `data-private/reference/tennis/fanduel-lines-YYYY-MM-DD.json` as `markets.moneyline`, `markets.gameHandicap`, and `markets.totalGames`. Example: `gameHandicap` rows carry `{ "player": "Naomi Osaka", "spread": -0.5, "odds": -118 }`; `totalGames` rows carry `{ "side": "Over", "line": 22.5, "odds": -106 }`.
 - If FanDuel marks the event ended, removes a market, or blocks the page, record that reason for the match instead of silently leaving spread/total empty. ML/spread/O-U EV should not be trusted until coverage is checked.
+
+Derivative tennis markets:
+- Before publishing, write `data-private/predictions/tennis/YYYY-MM-DD-derivative-markets.json` for every singles match.
+- Each row must store `expectedMatchGames`, `expectedFirstSetGames`, `totalGames.postedLine`, `totalGames.lean`, `totalGames.edgeGames`, `gameHandicap.postedSpread`, `gameHandicap.projectedMarginGames`, `firstSet.expectedGames`, confidence, `writeup`, evidence, and data-quality flags.
+- The `writeup` block must include a headline, bet plan, why it works, why it fails, and pre-match/live entry-exit rules.
+- The match detail page must surface a top betting matrix for ML value, game spread, O/U games, win-a-set probability, and first-set games. ML is not allowed to be the only headline market.
+- The match detail page must also surface each player's top pressure stats near the betting matrix: hold %, break points saved %, and break points converted %. If direct hold % is missing, derive a pre-match hold estimate from first-serve-in, first-serve-won, and second-serve-won instead of showing a blank.
+- If model ML probability is fair versus implied price, mark ML as no edge and move the actionable read to derivative markets. Example: a 65.8% model against 66% implied is not an ML bet; it may still create a live win-a-set or spread entry.
+- If FanDuel captured a total or spread but the generated site row says `No direction` or `No price`, treat that as a failed join/modeling pass, not an acceptable no-play.
 
 Ranking notes:
 - `data-private/reference/tennis/player-rankings.json` is the current join file for predictions and opponent-quality enrichment.

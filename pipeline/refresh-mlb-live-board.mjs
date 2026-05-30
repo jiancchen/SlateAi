@@ -91,6 +91,8 @@ const main = () => {
   runPythonScript('fetch_fanduel_research_mlb.py', ['--start-date', options.date, '--end-date', options.date, '--markets', 'strikeouts'])
   runNodeScript('generate-mlb-day-files.mjs', generateArgs)
   runNodeScript('export-mlb-lineup-model.mjs', ['--date', options.date])
+  // Keep the bullpen upgrade path in shadow mode on real game cards before promoting it into live picks.
+  runPythonScript('export_mlb_reliever_shadow_board.py', ['--date', options.date])
   runNodeScript('export-mlb-veto-artifact.mjs', ['--date', options.date])
   runNodeScript('export-home-run-predictions.mjs', ['--date', options.date])
   runNodeScript('export-mlb-prop-predictions.mjs', ['--date', options.date])

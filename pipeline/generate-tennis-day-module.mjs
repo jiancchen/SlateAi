@@ -404,6 +404,21 @@ const buildFanDuelIndex = (lines) => {
 const findFanDuelLine = (index, playerA, playerB) =>
   index.get(normalizeName(`${playerA} vs ${playerB}`)) ?? index.get(normalizeName(`${playerB} vs ${playerA}`)) ?? null
 
+const buildDerivativeIndex = (rows) => {
+  const index = new Map()
+  for (const row of rows || []) {
+    if (row.matchId) index.set(row.matchId, row)
+    if (row.match) index.set(normalizeName(row.match), row)
+  }
+  return index
+}
+
+const findDerivativeCase = (index, matchId, playerA, playerB) =>
+  index.get(matchId) ??
+  index.get(normalizeName(`${playerA} vs ${playerB}`)) ??
+  index.get(normalizeName(`${playerB} vs ${playerA}`)) ??
+  null
+
 const setWinConfidence = ({ playerModelPct, opponentModelPct, volatility, weaknessScore, isAtp }) => {
   const modelPct = Number(playerModelPct)
   const oppPct = Number(opponentModelPct)
@@ -832,7 +847,126 @@ const buildValueBoard = ({ marketData, pickName, confidence, volatility, weaknes
   }
 }
 
-const buildGame = (match, rankings, quality, date, fanduelIndex, ensembleIndex) => {
+const buildBettingMatrix = ({ marketData, valueBoard, setWinProjections, derivativeCase, pickName, confidence }) => {
+  const matrix = []
+  const ml = valueBoard?.ml
+  if (ml) {
+    matrix.push({
+      marketType: 'Moneyline',
+      label: 'ML value',
+      selection: ml.selection || pickName,
+      line: null,
+      americanOdds: ml.americanOdds,
+      modelPct: ml.modelPct ?? confidence,
+      impliedPct: ml.impliedPct ?? marketData?.desk?.impliedPct ?? null,
+      edgePct: ml.edgePct ?? marketData?.desk?.edgePct ?? null,
+      evPer100: ml.evPer100 ?? null,
+      netEvPer100: ml.netEvPer100 ?? null,
+      grade: ml.valueGrade || 'No price',
+      issue: ml.valueIssue || null,
+      reason:
+        ml.valueGrade === 'Favorite tax trap'
+          ? 'Likely winner can still be a bad ML bet after payout and fees. Check spread, total, and set-win instead.'
+          : marketData?.priceAction || 'Compare model probability to break-even price before betting ML.'
+    })
+  }
+
+  const spread = derivativeCase?.gameHandicap
+  if (spread || valueBoard?.spread) {
+    matrix.push({
+      marketType: 'Game spread',
+      label: 'Game spread',
+      selection: spread?.selection || valueBoard?.spread?.selection || pickName,
+      line:
+        spread?.postedSpread !== null && spread?.postedSpread !== undefined && Number.isFinite(Number(spread.postedSpread))
+          ? Number(spread.postedSpread)
+          : valueBoard?.spread?.line ?? null,
+      americanOdds: spread?.odds ?? valueBoard?.spread?.americanOdds ?? null,
+      modelPct: valueBoard?.spread?.modelPct ?? null,
+      impliedPct: valueBoard?.spread?.impliedPct ?? null,
+      edgePct: valueBoard?.spread?.edgePct ?? null,
+      evPer100: valueBoard?.spread?.evPer100 ?? null,
+      netEvPer100: valueBoard?.spread?.netEvPer100 ?? null,
+      expectedGames:
+        spread?.projectedMarginGames !== null && spread?.projectedMarginGames !== undefined && Number.isFinite(Number(spread.projectedMarginGames))
+          ? Number(spread.projectedMarginGames)
+          : null,
+      edgeGames:
+        spread?.edgeGames !== null && spread?.edgeGames !== undefined && Number.isFinite(Number(spread.edgeGames))
+          ? Number(spread.edgeGames)
+          : null,
+      confidence: spread?.confidence ?? valueBoard?.spread?.modelPct ?? null,
+      grade: spread?.grade || valueBoard?.spread?.valueGrade || 'Needs posted number',
+      reason: spread?.reason || marketData?.spreadLean || 'Spread needs projected margin and posted number before grading.'
+    })
+  }
+
+  const total = derivativeCase?.totalGames
+  if (total || valueBoard?.total) {
+    matrix.push({
+      marketType: 'Total games',
+      label: 'O/U games',
+      selection: total?.lean || valueBoard?.total?.selection || 'No bet',
+      line:
+        total?.postedLine !== null && total?.postedLine !== undefined && Number.isFinite(Number(total.postedLine))
+          ? Number(total.postedLine)
+          : valueBoard?.total?.line ?? null,
+      americanOdds:
+        total?.lean === 'Over'
+          ? total?.overOdds
+          : total?.lean === 'Under'
+            ? total?.underOdds
+            : valueBoard?.total?.americanOdds ?? null,
+      modelPct: valueBoard?.total?.modelPct ?? total?.confidence ?? null,
+      impliedPct: valueBoard?.total?.impliedPct ?? null,
+      edgePct: valueBoard?.total?.edgePct ?? null,
+      evPer100: valueBoard?.total?.evPer100 ?? null,
+      netEvPer100: valueBoard?.total?.netEvPer100 ?? null,
+      expectedGames:
+        derivativeCase?.expectedMatchGames !== null && derivativeCase?.expectedMatchGames !== undefined && Number.isFinite(Number(derivativeCase.expectedMatchGames))
+          ? Number(derivativeCase.expectedMatchGames)
+          : null,
+      edgeGames:
+        total?.edgeGames !== null && total?.edgeGames !== undefined && Number.isFinite(Number(total.edgeGames))
+          ? Number(total.edgeGames)
+          : null,
+      confidence: total?.confidence ?? valueBoard?.total?.modelPct ?? null,
+      grade: total?.grade || valueBoard?.total?.valueGrade || 'Needs posted total',
+      reason: total?.reason || 'Total games need expected match games vs the posted line.'
+    })
+  }
+
+  if (setWinProjections?.length) {
+    matrix.push({
+      marketType: 'Win a set',
+      label: 'Win a set %',
+      selection: setWinProjections.map((entry) => `${entry.name} ${entry.confidence}%`).join(' / '),
+      rows: setWinProjections,
+      confidence: Math.max(...setWinProjections.map((entry) => Number(entry.confidence) || 0)),
+      grade: 'Price required',
+      reason: 'Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early.'
+    })
+  }
+
+  const firstSet = derivativeCase?.firstSet
+  if (firstSet) {
+    matrix.push({
+      marketType: 'First set games',
+      label: '1st set games',
+      selection: firstSet.lean || 'Pass',
+      expectedGames: Number.isFinite(Number(firstSet.expectedGames)) ? Number(firstSet.expectedGames) : null,
+      confidence: firstSet.confidence ?? null,
+      tiebreakRisk: Number.isFinite(Number(firstSet.tiebreakRisk)) ? Number(firstSet.tiebreakRisk) : null,
+      earlyBreakRisk: Number.isFinite(Number(firstSet.earlyBreakRisk)) ? Number(firstSet.earlyBreakRisk) : null,
+      grade: firstSet.confidence >= 58 ? 'Actionable live watch' : 'Thin',
+      reason: firstSet.lean || 'First-set entry needs early serve pressure.'
+    })
+  }
+
+  return matrix
+}
+
+const buildGame = (match, rankings, quality, date, fanduelIndex, ensembleIndex, derivativeIndex) => {
   const [a, b] = match.players
   const isAtp = /Men/i.test(match.round) || /ATP|Men/i.test(match.raw?.league || '') || !/^[A-Z][a-z]+a\b/.test(a.name)
   const idPrefix = match.raw?.lg?.includes?.('WTA') || /Women/i.test(match.raw?.league || '') ? 'w' : guessTour(a.name, b.name, rankings)
@@ -869,6 +1003,8 @@ const buildGame = (match, rankings, quality, date, fanduelIndex, ensembleIndex) 
   }))
   const setWinProjections = buildSetWinProjections({ players, tour, volatility })
   const valueBoard = buildValueBoard({ marketData, pickName, confidence, volatility, weaknessEdge, setWinProjections })
+  const derivativeCase = findDerivativeCase(derivativeIndex, matchId, a.name, b.name)
+  const bettingMatrix = buildBettingMatrix({ marketData, valueBoard, setWinProjections, derivativeCase, pickName, confidence })
   const ensembleRow = ensembleIndex.get(matchId) || null
   const ensembleSelectionIsA = ensembleRow?.selection === a.name
   const ensembleSelectionQuality = ensembleRow ? (ensembleSelectionIsA ? qualityA : qualityB) : null
@@ -911,6 +1047,8 @@ const buildGame = (match, rankings, quality, date, fanduelIndex, ensembleIndex) 
     weaknessEdge,
     setWinProjections,
     valueBoard,
+    derivativeCase,
+    bettingMatrix,
     ensembleValueCase,
     marketData,
     h2hUrl: buildTennistonicH2HUrl(a.name, b.name),
@@ -933,6 +1071,7 @@ const main = async () => {
   const quality = await readJson(`web/src/lib/day-${options.date}-tennis-opponent-quality.generated.json`, { matches: {} })
   const fanduelLines = await readJson(`data-private/reference/tennis/fanduel-lines-${options.date}.json`, { matches: [] })
   const ensemblePredictions = await readJson(`data-private/predictions/tennis/${options.date}-multimodel-ensemble.json`, { rows: [] })
+  const derivativeMarkets = await readJson(`data-private/predictions/tennis/${options.date}-derivative-markets.json`, { rows: [] })
   const ensembleIndex = new Map()
   for (const row of ensemblePredictions.rows || []) {
     const current = ensembleIndex.get(row.matchId)
@@ -941,10 +1080,11 @@ const main = async () => {
     }
   }
   const fanduelIndex = buildFanDuelIndex(fanduelLines)
+  const derivativeIndex = buildDerivativeIndex(derivativeMarkets.rows || [])
   const games = scoreboard.singles
     .filter((match) => !match.doubles && match.players?.length === 2)
     .filter((match) => !/qualifying/i.test(String(match.round || '')))
-    .map((match) => buildGame(match, rankings, quality, options.date, fanduelIndex, ensembleIndex))
+    .map((match) => buildGame(match, rankings, quality, options.date, fanduelIndex, ensembleIndex, derivativeIndex))
     .sort((left, right) => left.startMinutes - right.startMinutes || left.title.localeCompare(right.title))
   const dayLabel = titleDate(options.date)
   const compact = options.date.replaceAll('-', '')
@@ -952,7 +1092,7 @@ const main = async () => {
 
   moduleText = moduleText.replace(
     '      valueBoard: raw.valueBoard,\n',
-    '      valueBoard: raw.valueBoard,\n      ensembleValueCase: raw.ensembleValueCase,\n'
+    '      bettingMatrix: raw.bettingMatrix,\n      derivativeMarketCase: raw.derivativeCase,\n      valueBoard: raw.valueBoard,\n      ensembleValueCase: raw.ensembleValueCase,\n'
   )
 
   await fs.mkdir(path.dirname(path.resolve(ROOT, options.output)), { recursive: true })
@@ -978,6 +1118,8 @@ const main = async () => {
           rationale: game.reason,
           weaknessEdge: game.weaknessEdge,
           totals: game.totals,
+          derivativeMarketCase: game.derivativeCase,
+          bettingMatrix: game.bettingMatrix,
           market: game.marketData
             ? {
                 source: game.marketData.source,
