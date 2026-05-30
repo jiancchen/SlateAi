@@ -3091,7 +3091,7 @@ function App() {
           entry.league === 'MLB' &&
           !entry.invalid &&
           entry.raw?.propType === 'pitcherStrikeouts' &&
-          Number(entry.confidence) >= 68
+          Number(entry.confidence) >= 60
       )
       .sort((left: AnyRecord, right: AnyRecord) => right.sortConfidence - left.sortConfidence || right.sortEdge - left.sortEdge)
 
@@ -3331,7 +3331,7 @@ function App() {
       topRows,
       note:
         fullyPostedGames === mlbGames.length
-          ? 'MLB value center is fully posted for today: sides, totals, first-inning price gaps, TB-backed bats, strikeout O/U, HR watch, and batting-impact lanes.'
+          ? 'MLB value center is fully posted for today: sides, totals, TB-backed bats, strikeout O/U, HR watch, and batting-impact lanes.'
           : `MLB value center is live, but only ${fullyPostedGames}/${mlbGames.length} games are fully posted. TB-backed rows are the cleanest current prop lane; the H+R+RBI board now uses a batting-production ladder when no true market export is present.`
     }
   }, [
@@ -3352,53 +3352,73 @@ function App() {
     const rows = mlbGames
       .map((game: AnyRecord) => {
         const firstInning = game.analysis?.mlbProjection?.firstInning
-        const kalshiFirstInning = activeKalshiMlbMarketByGame[game.id]?.firstInning ?? null
-        if (!firstInning || !kalshiFirstInning) return null
+        if (!firstInning || String(firstInning.pick || '').toLowerCase() === 'pass') return null
 
         const yesModel = Number(firstInning.yesProbabilityPct)
         const noModel = Number(firstInning.noProbabilityPct)
-        const yesAsk = Number(kalshiFirstInning.yesAskCents)
-        const noAsk = Number(kalshiFirstInning.noAskCents)
-        if (![yesModel, noModel, yesAsk, noAsk].every(Number.isFinite)) return null
-
-        const yesEdge = yesModel - yesAsk
-        const noEdge = noModel - noAsk
         const awayRunPct = Number(firstInning.awayRunProbabilityPct)
         const homeRunPct = Number(firstInning.homeRunProbabilityPct)
+        if (![yesModel, noModel, awayRunPct, homeRunPct].every(Number.isFinite)) return null
+
+        const kalshiFirstInning = activeKalshiMlbMarketByGame[game.id]?.firstInning ?? null
+        const yesAsk = Number(kalshiFirstInning?.yesAskCents)
+        const noAsk = Number(kalshiFirstInning?.noAskCents)
+        const hasKalshi = [yesAsk, noAsk].every(Number.isFinite)
+        const yesEdge = hasKalshi ? yesModel - yesAsk : null
+        const noEdge = hasKalshi ? noModel - noAsk : null
+        const modelConfidence = clamp(
+          Math.round(52 + Math.abs(Number(firstInning.edge) || 0) * 1.1 + Math.max(yesModel, noModel) * 0.18),
+          52,
+          92
+        )
 
         return {
           gameId: game.id,
           title: game.title,
           pick: firstInning.pick,
           strength: firstInning.strength,
+          confidence: modelConfidence,
           yesModel,
           noModel,
           yesAsk,
           noAsk,
           yesEdge,
           noEdge,
+          hasKalshi,
           awayRunPct,
           homeRunPct,
+          edge: Number(firstInning.edge) || 0,
           summary: firstInning.summary
         }
       })
       .filter(Boolean)
 
     const yrfiRows = rows
-      .filter((row: AnyRecord) => row.yesEdge > 0)
-      .sort((left: AnyRecord, right: AnyRecord) => right.yesEdge - left.yesEdge || right.yesModel - left.yesModel)
+      .filter((row: AnyRecord) => String(row.pick || '').toUpperCase() === 'YRFI')
+      .sort(
+        (left: AnyRecord, right: AnyRecord) =>
+          right.confidence - left.confidence ||
+          right.edge - left.edge ||
+          right.yesModel - left.yesModel
+      )
 
     const nrfiRows = rows
-      .filter((row: AnyRecord) => row.noEdge > 0)
-      .sort((left: AnyRecord, right: AnyRecord) => right.noEdge - left.noEdge || right.noModel - left.noModel)
+      .filter((row: AnyRecord) => String(row.pick || '').toUpperCase() === 'NRFI')
+      .sort(
+        (left: AnyRecord, right: AnyRecord) =>
+          right.confidence - left.confidence ||
+          right.edge - left.edge ||
+          right.noModel - left.noModel
+      )
 
     return {
       totalGames: mlbGames.length,
-      mappedGames: rows.length,
+      modeledGames: rows.length,
+      mappedGames: rows.filter((row: AnyRecord) => row.hasKalshi).length,
       yrfiRows,
       nrfiRows,
       note:
-        'First-inning value uses live Kalshi YES/NO asks against the model YES/NO probabilities. Positive edge means the model is above the current ask.'
+        'First-inning board is model-first. It ranks the strongest YRFI / NRFI lanes from lineup pressure, early scoring shape, and starter leakage; Kalshi asks only show up as optional context when mapped.'
     }
   }, [activeKalshiMlbMarketByGame, games])
 

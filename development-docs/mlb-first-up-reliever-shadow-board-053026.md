@@ -10,9 +10,9 @@ Goal:
 
 Target slate:
 
-- date: `2026-05-29`
+- date: `2026-05-30`
 - team-side shadow cards: `30`
-- reliever candidates scored: `284`
+- reliever candidates scored: `287`
 - conversion window: `8`
 - dependency window: `5`
 
@@ -26,39 +26,39 @@ Target slate:
 
 | Team-side games | Exact 1st | Top-2 | Top-3 |
 | --- | --- | --- | --- |
-| 30 | 23.3% | 40.0% | 50.0% |
+| 0 | N/A | N/A | N/A |
 
 ## Top Shadow Clusters
 
 | Team | Opponent | Lead | Alt | Starter hook | Top-2 share |
 | --- | --- | --- | --- | --- | --- |
-| Pirates | Twins | Evan Sisk | Gregory Soto | 0.0% | 56.1% |
-| Astros | Brewers | Bryan King | AJ Blubaugh | 0.0% | 52.9% |
-| Braves | Reds | Didier Fuentes | Dylan Lee | 0.0% | 51.0% |
-| Cubs | Cardinals | Ethan Roberts | Jacob Webb | 0.0% | 50.7% |
-| Blue Jays | Orioles | Mason Fluharty | Yariel Rodríguez | 0.0% | 47.8% |
-| Royals | Rangers | Daniel Lynch IV | John Schreiber | 0.0% | 44.3% |
-| Nationals | Padres | Brad Lord | Andrew Alvarez | 0.0% | 43.0% |
-| Twins | Pirates | Simeon Woods Richardson | Anthony Banda | 0.0% | 41.1% |
-| Giants | Rockies | Sam Hentges | Matt Gage | 0.0% | 40.4% |
-| Mariners | Diamondbacks | José A. Ferrer | Gabe Speier | 0.0% | 40.0% |
+| Astros | Brewers | Nate Pearson | AJ Blubaugh | 0.0% | 52.1% |
+| Cubs | Cardinals | Ryan Rolison | Jacob Webb | 0.0% | 39.0% |
+| Pirates | Twins | Mason Montgomery | Gregory Soto | 0.0% | 37.2% |
+| Twins | Pirates | Simeon Woods Richardson | Andrew Morris | 0.0% | 36.9% |
+| Phillies | Dodgers | Jonathan Bowlan | Tanner Banks | 0.0% | 36.7% |
+| Padres | Nationals | Wandy Peralta | Bradgley Rodriguez | 0.0% | 36.6% |
+| Athletics | Yankees | Jacob Lopez | Justin Sterner | 0.0% | 34.8% |
+| Mariners | Diamondbacks | Alex Hoppe | José A. Ferrer | 0.0% | 34.4% |
+| Diamondbacks | Mariners | Taylor Clarke | Kevin Ginkel | 0.0% | 34.1% |
+| Brewers | Astros | Shane Drohan | Carlos Rodriguez | 0.0% | 34.0% |
 
 ## Top Shadow Features
 
+- `first_reliever_likelihood` `0.028`
 - `quality_entry_order_avg_last10` `0.028`
 - `availability_score` `0.028`
 - `days_since_last_appearance` `0.027`
-- `first_reliever_likelihood` `0.027`
 - `fatigue_score` `0.025`
-- `bridge_score` `0.018`
-- `avg_pitches_per_appearance` `0.017`
-- `quality_pitches_per_app_last10` `0.016`
+- `bridge_score` `0.017`
+- `avg_pitches_per_appearance` `0.016`
 - `quality_strikeouts_per_bf_last10` `0.016`
-- `quality_traffic_per_bf_last10` `0.016`
 - `starter_prob_15` `0.016`
+- `quality_traffic_per_bf_last10` `0.016`
+- `quality_pitches_per_app_last10` `0.016`
 - `pitches_last3` `0.015`
-- `starter_prob_12` `0.014`
 - `quality_strike_rate_last10` `0.014`
+- `starter_prob_12` `0.014`
 
 ## Read
 

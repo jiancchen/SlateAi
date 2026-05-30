@@ -268,6 +268,77 @@ export function BoardView(props: BoardViewProps) {
     )
   }
   const selectedMiniLineupOrder = selectedGame?.league === 'MLB' ? renderMiniLineupOrder(selectedGame) : null
+  const mlbOverviewBoardRows = (() => {
+    if (!mlbValueSummary) return []
+    const maxRows = Math.min(10, Number(mlbValueSummary.totalGames || 0))
+    const rankedRows = [...(mlbValueSummary.sideRows || []), ...(mlbValueSummary.totalRows || [])]
+      .sort((left: AnyRecord, right: AnyRecord) => right.confidence - left.confidence || right.sortEdge - left.sortEdge)
+    const rowsByGame = new Map<string, AnyRecord>()
+    rankedRows.forEach((row: AnyRecord) => {
+      const gameId = String(row.gameId || '')
+      if (!gameId || rowsByGame.has(gameId)) return
+      rowsByGame.set(gameId, row)
+    })
+    if (rowsByGame.size < maxRows) {
+      const fallbackRows = games
+        .filter((game: AnyRecord) => game.league === 'MLB' && !rowsByGame.has(String(game.id || '')))
+        .map((game: AnyRecord) => {
+          const totals = game.analysis?.mlbProjection?.totals
+          if (!totals) return null
+          const phases = [
+            {
+              id: 'full',
+              label: 'Full game',
+              lean: totals.fullGame,
+              projectedLabel: `Proj ${totals.projectedFullTotalRuns} vs ${game.analysis?.mlbProjection?.postedTotal ?? 'N/A'}`
+            },
+            {
+              id: 'first5',
+              label: 'First 5',
+              lean: totals.first5,
+              projectedLabel: `Proj ${totals.projectedFirst5TotalRuns} vs ${totals.derivedFirst5TotalLine ?? 'N/A'}`
+            },
+            {
+              id: 'late',
+              label: 'Rest of game',
+              lean: totals.late,
+              projectedLabel: `Proj ${totals.projectedLateTotalRuns} vs ${totals.derivedLateTotalLine ?? 'N/A'}`
+            }
+          ]
+            .filter((phase) => phase.lean?.label && phase.lean?.lean && phase.lean.lean !== 'Pass')
+            .map((phase) => {
+              const confidence = Math.round(
+                Math.min(
+                  90,
+                  54 + Math.abs(Number(phase.lean.edge) || 0) * 18 + Math.max((game.analysis?.confidence || 50) - 56, 0) * 0.2
+                )
+              )
+              return {
+                id: `${game.id}:overview-fallback:${phase.id}`,
+                gameId: game.id,
+                title: phase.lean.label,
+                subtitle: `${game.title} · ${phase.label}`,
+                confidence,
+                sortConfidence: confidence,
+                sortEdge: Math.abs(Number(phase.lean.edge) || 0),
+                priceLabel: phase.projectedLabel,
+                metaLabel: phase.lean.strength,
+                tags: [phase.label, totals.bullpenExhaustionNote ? 'Bullpen live' : 'Model total'].slice(0, 2)
+              }
+            })
+            .sort((left: AnyRecord, right: AnyRecord) => right.confidence - left.confidence || right.sortEdge - left.sortEdge)
+          return phases[0] || null
+        })
+        .filter(Boolean)
+        .sort((left: AnyRecord, right: AnyRecord) => right.confidence - left.confidence || right.sortEdge - left.sortEdge)
+      fallbackRows.forEach((row: AnyRecord) => {
+        const gameId = String(row.gameId || '')
+        if (!gameId || rowsByGame.has(gameId) || rowsByGame.size >= maxRows) return
+        rowsByGame.set(gameId, row)
+      })
+    }
+    return Array.from(rowsByGame.values()).slice(0, maxRows)
+  })()
 
   return (
     <div className="desk-board-workspace">
@@ -496,22 +567,21 @@ export function BoardView(props: BoardViewProps) {
                     </div>
                     <p>{mlbValueSummary.note}</p>
                     <div className="tennis-value-pill-row">
-                      <span>1st inning {(mlbFirstInningValueSummary?.yrfiRows.length || 0) + (mlbFirstInningValueSummary?.nrfiRows.length || 0)}</span>
                       <span>Side {mlbValueSummary.sideRows.length}</span>
                       <span>Totals {mlbValueSummary.totalRows.length}</span>
                       <span>TB {mlbValueSummary.totalBaseRows.length}</span>
                       <span>K O/U {mlbValueSummary.strikeoutRows.length}</span>
                       <span>H+R+RBI {mlbValueSummary.displayHitRunRbiRows.length}</span>
                       <span>HR {mlbValueSummary.homeRunRows.length}</span>
+                      <span>Scalp {mlbScalpSummary?.scalpRows.length || 0}</span>
                       <span>Kalshi {mlbValueSummary.mappedKalshiGames}</span>
+                      <span>Posted {mlbValueSummary.fullyPostedGames}</span>
+                      <span>Partial {mlbValueSummary.partialGames}</span>
                     </div>
                     {mlbValueSummary.sideRows.length || mlbValueSummary.totalRows.length ? (
                       <div className="tennis-value-list">
                         <div className="tennis-value-section-label">Side + totals board</div>
-                        {[...mlbValueSummary.sideRows.slice(0, 4), ...mlbValueSummary.totalRows.slice(0, 4)]
-                          .sort((left: AnyRecord, right: AnyRecord) => right.confidence - left.confidence || right.sortEdge - left.sortEdge)
-                          .slice(0, 8)
-                          .map((row: AnyRecord) => (
+                        {mlbOverviewBoardRows.map((row: AnyRecord) => (
                             <button
                               key={`${row.id}-mlb-value`}
                               type="button"
@@ -537,19 +607,20 @@ export function BoardView(props: BoardViewProps) {
                     <div className="tennis-value-slate-head">
                       <div>
                         <p className="eyebrow">MLB 1st-inning value board</p>
-                        <h3>{activeDayIsoDate} YRFI / NRFI price edges</h3>
+                        <h3>{activeDayIsoDate} YRFI / NRFI model lanes</h3>
                       </div>
-                      <span>{mlbFirstInningValueSummary.mappedGames}/{mlbFirstInningValueSummary.totalGames} mapped</span>
+                      <span>{mlbFirstInningValueSummary.modeledGames}/{mlbFirstInningValueSummary.totalGames} modeled</span>
                     </div>
                     <p>{mlbFirstInningValueSummary.note}</p>
                     <div className="tennis-value-pill-row">
-                      <span>YRFI value {mlbFirstInningValueSummary.yrfiRows.length}</span>
-                      <span>NRFI value {mlbFirstInningValueSummary.nrfiRows.length}</span>
+                      <span>YRFI lanes {mlbFirstInningValueSummary.yrfiRows.length}</span>
+                      <span>NRFI lanes {mlbFirstInningValueSummary.nrfiRows.length}</span>
+                      <span>Kalshi mapped {mlbFirstInningValueSummary.mappedGames}</span>
                     </div>
                     {mlbFirstInningValueSummary.yrfiRows.length ? (
                       <div className="tennis-value-list">
-                        <div className="tennis-value-section-label">YRFI value</div>
-                        {mlbFirstInningValueSummary.yrfiRows.slice(0, 5).map((row: AnyRecord) => (
+                        <div className="tennis-value-section-label">YRFI lanes</div>
+                        {mlbFirstInningValueSummary.yrfiRows.slice(0, 10).map((row: AnyRecord) => (
                           <button
                             key={`${row.gameId}-yrfi-value`}
                             type="button"
@@ -561,8 +632,11 @@ export function BoardView(props: BoardViewProps) {
                               <small>{row.summary}</small>
                             </span>
                             <span>
-                              <strong>{`+${formatNumber(row.yesEdge, 1)} pts`}</strong>
-                              <small>{`YES ${formatNumber(row.yesModel, 1)}% vs ask ${formatNumber(row.yesAsk, 1)}c`}</small>
+                              <strong>{`${row.confidence}%`}</strong>
+                              <small>
+                                {`YES ${formatNumber(row.yesModel, 1)}% · away ${formatNumber(row.awayRunPct, 1)}% · home ${formatNumber(row.homeRunPct, 1)}%`}
+                                {row.hasKalshi ? ` · ask ${formatNumber(row.yesAsk, 1)}c` : ''}
+                              </small>
                             </span>
                           </button>
                         ))}
@@ -570,8 +644,8 @@ export function BoardView(props: BoardViewProps) {
                     ) : null}
                     {mlbFirstInningValueSummary.nrfiRows.length ? (
                       <div className="tennis-value-list">
-                        <div className="tennis-value-section-label">NRFI value</div>
-                        {mlbFirstInningValueSummary.nrfiRows.slice(0, 5).map((row: AnyRecord) => (
+                        <div className="tennis-value-section-label">NRFI lanes</div>
+                        {mlbFirstInningValueSummary.nrfiRows.slice(0, 10).map((row: AnyRecord) => (
                           <button
                             key={`${row.gameId}-nrfi-value`}
                             type="button"
@@ -583,8 +657,11 @@ export function BoardView(props: BoardViewProps) {
                               <small>{row.summary}</small>
                             </span>
                             <span>
-                              <strong>{`+${formatNumber(row.noEdge, 1)} pts`}</strong>
-                              <small>{`NO ${formatNumber(row.noModel, 1)}% vs ask ${formatNumber(row.noAsk, 1)}c`}</small>
+                              <strong>{`${row.confidence}%`}</strong>
+                              <small>
+                                {`NO ${formatNumber(row.noModel, 1)}% · away ${formatNumber(row.awayRunPct, 1)}% · home ${formatNumber(row.homeRunPct, 1)}%`}
+                                {row.hasKalshi ? ` · ask ${formatNumber(row.noAsk, 1)}c` : ''}
+                              </small>
                             </span>
                           </button>
                         ))}
@@ -648,11 +725,12 @@ export function BoardView(props: BoardViewProps) {
                     <div className="tennis-value-pill-row">
                       <span>Over {mlbValueSummary.strikeoutOverRows.length}</span>
                       <span>Under {mlbValueSummary.strikeoutUnderRows.length}</span>
+                      <span>60+ conf {mlbValueSummary.strikeoutRows.length}</span>
                     </div>
                     {mlbValueSummary.strikeoutOverRows.length ? (
                       <div className="tennis-value-list">
                         <div className="tennis-value-section-label">Strikeout overs</div>
-                        {mlbValueSummary.strikeoutOverRows.slice(0, 6).map((row: AnyRecord) => (
+                        {mlbValueSummary.strikeoutOverRows.map((row: AnyRecord) => (
                           <button
                             key={`${row.id}-k-over-board`}
                             type="button"
@@ -674,7 +752,7 @@ export function BoardView(props: BoardViewProps) {
                     {mlbValueSummary.strikeoutUnderRows.length ? (
                       <div className="tennis-value-list">
                         <div className="tennis-value-section-label">Strikeout unders</div>
-                        {mlbValueSummary.strikeoutUnderRows.slice(0, 6).map((row: AnyRecord) => (
+                        {mlbValueSummary.strikeoutUnderRows.map((row: AnyRecord) => (
                           <button
                             key={`${row.id}-k-under-board`}
                             type="button"

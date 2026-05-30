@@ -1,0 +1,2287 @@
+{
+  "meta": {
+    "date": "2026-05-30",
+    "modelTag": "E34 shadow",
+    "candidateCount": 287,
+    "teamCount": 30,
+    "conversionWindow": 8,
+    "dependencyWindow": 5,
+    "researchRates": {
+      "exactRate": 26.5,
+      "top2Rate": 44.5,
+      "top3Rate": 59.6
+    }
+  },
+  "relieverShadowByTeam": {
+    "Diamondbacks": {
+      "teamName": "Diamondbacks",
+      "officialTeamName": "Arizona Diamondbacks",
+      "opponentName": "Mariners",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 34.1,
+      "summaryLine": "Taylor Clarke leads the shadow board; Kevin Ginkel is the main alt with 34.1% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 664199,
+          "name": "Taylor Clarke",
+          "role": "middle",
+          "shadowScorePct": 22.8,
+          "shadowSharePct": 17.3,
+          "availabilityScore": 62.6,
+          "bridgeScore": 89.0,
+          "firstRelieverLikelihood": 92.4,
+          "expectedOuts": 2.2,
+          "workedYesterday": true,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 0.0,
+          "reasonTags": [],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 656464,
+          "name": "Kevin Ginkel",
+          "role": "middle",
+          "shadowScorePct": 22.1,
+          "shadowSharePct": 16.8,
+          "availabilityScore": 77.2,
+          "bridgeScore": 83.7,
+          "firstRelieverLikelihood": 87.8,
+          "expectedOuts": 2.4,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 0.0,
+          "reasonTags": [
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 657044,
+          "name": "Ryan Thompson",
+          "role": "middle",
+          "shadowScorePct": 19.5,
+          "shadowSharePct": 14.8,
+          "availabilityScore": 77.8,
+          "bridgeScore": 82.9,
+          "firstRelieverLikelihood": 84.0,
+          "expectedOuts": 2.5,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 0.0,
+          "reasonTags": [],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "Athletics": {
+      "teamName": "Athletics",
+      "officialTeamName": "Athletics",
+      "opponentName": "Yankees",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 34.8,
+      "summaryLine": "Jacob Lopez leads the shadow board; Justin Sterner is the main alt with 34.8% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 682052,
+          "name": "Jacob Lopez",
+          "role": "bridge",
+          "shadowScorePct": 18.4,
+          "shadowSharePct": 17.8,
+          "availabilityScore": 95.0,
+          "bridgeScore": 74.7,
+          "firstRelieverLikelihood": 84.7,
+          "expectedOuts": 8.5,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 40.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "unknown-sample arm"
+          ],
+          "summary": "standard mid-game bridge; unknown-sample relief lane; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 686993,
+          "name": "Justin Sterner",
+          "role": "middle",
+          "shadowScorePct": 17.5,
+          "shadowSharePct": 17.0,
+          "availabilityScore": 56.2,
+          "bridgeScore": 74.1,
+          "firstRelieverLikelihood": 71.5,
+          "expectedOuts": 2.6,
+          "workedYesterday": true,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 40.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 678022,
+          "name": "Jack Perkins",
+          "role": "bridge",
+          "shadowScorePct": 15.9,
+          "shadowSharePct": 15.4,
+          "availabilityScore": 95.0,
+          "bridgeScore": 74.7,
+          "firstRelieverLikelihood": 84.7,
+          "expectedOuts": 4.7,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 40.0,
+          "reasonTags": [
+            "bulk first-up live"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "Braves": {
+      "teamName": "Braves",
+      "officialTeamName": "Atlanta Braves",
+      "opponentName": "Reds",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 31.9,
+      "summaryLine": "Reynaldo L\u00f3pez leads the shadow board; Dylan Dodd is the main alt with 31.9% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 625643,
+          "name": "Reynaldo L\u00f3pez",
+          "role": "bulk",
+          "shadowScorePct": 20.3,
+          "shadowSharePct": 17.1,
+          "availabilityScore": 67.8,
+          "bridgeScore": 77.5,
+          "firstRelieverLikelihood": 72.5,
+          "expectedOuts": 5.43,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 689266,
+          "name": "Dylan Dodd",
+          "role": "middle",
+          "shadowScorePct": 17.5,
+          "shadowSharePct": 14.8,
+          "availabilityScore": 46.5,
+          "bridgeScore": 81.6,
+          "firstRelieverLikelihood": 78.8,
+          "expectedOuts": 4.83,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 669276,
+          "name": "Dylan Lee",
+          "role": "middle",
+          "shadowScorePct": 17.0,
+          "shadowSharePct": 14.3,
+          "availabilityScore": 54.5,
+          "bridgeScore": 78.8,
+          "firstRelieverLikelihood": 69.6,
+          "expectedOuts": 3.0,
+          "workedYesterday": true,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "Orioles": {
+      "teamName": "Orioles",
+      "officialTeamName": "Baltimore Orioles",
+      "opponentName": "Blue Jays",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 23.9,
+      "summaryLine": "Grant Wolfram leads the shadow board; Dietrich Enns is the main alt with 23.9% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 664991,
+          "name": "Grant Wolfram",
+          "role": "bridge",
+          "shadowScorePct": 20.8,
+          "shadowSharePct": 12.6,
+          "availabilityScore": 73.5,
+          "bridgeScore": 95.0,
+          "firstRelieverLikelihood": 100.0,
+          "expectedOuts": 2.1,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 10.0,
+          "reasonTags": [
+            "scramble risk"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 608650,
+          "name": "Dietrich Enns",
+          "role": "late",
+          "shadowScorePct": 18.6,
+          "shadowSharePct": 11.3,
+          "availabilityScore": 95.0,
+          "bridgeScore": 26.9,
+          "firstRelieverLikelihood": 40.7,
+          "expectedOuts": 3.5,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 10.0,
+          "reasonTags": [
+            "scramble risk",
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 669330,
+          "name": "Tyler Wells",
+          "role": "middle",
+          "shadowScorePct": 17.9,
+          "shadowSharePct": 10.8,
+          "availabilityScore": 58.5,
+          "bridgeScore": 76.8,
+          "firstRelieverLikelihood": 79.7,
+          "expectedOuts": 4.0,
+          "workedYesterday": true,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 10.0,
+          "reasonTags": [
+            "scramble risk"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "Red Sox": {
+      "teamName": "Red Sox",
+      "officialTeamName": "Boston Red Sox",
+      "opponentName": "Guardians",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 25.5,
+      "summaryLine": "Garrett Whitlock leads the shadow board; Danny Coulombe is the main alt with 25.5% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 676477,
+          "name": "Garrett Whitlock",
+          "role": "late",
+          "shadowScorePct": 18.5,
+          "shadowSharePct": 12.8,
+          "availabilityScore": 95.0,
+          "bridgeScore": 41.3,
+          "firstRelieverLikelihood": 47.3,
+          "expectedOuts": 2.9,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 30.0,
+          "reasonTags": [
+            "bulk first-up live"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 543056,
+          "name": "Danny Coulombe",
+          "role": "middle",
+          "shadowScorePct": 18.5,
+          "shadowSharePct": 12.7,
+          "availabilityScore": 81.5,
+          "bridgeScore": 94.5,
+          "firstRelieverLikelihood": 100.0,
+          "expectedOuts": 2.0,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 30.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 701719,
+          "name": "Tyler Samaniego",
+          "role": "middle",
+          "shadowScorePct": 18.0,
+          "shadowSharePct": 12.4,
+          "availabilityScore": 95.0,
+          "bridgeScore": 51.9,
+          "firstRelieverLikelihood": 48.6,
+          "expectedOuts": 2.1,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 30.0,
+          "reasonTags": [
+            "bulk first-up live"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "Cubs": {
+      "teamName": "Cubs",
+      "officialTeamName": "Chicago Cubs",
+      "opponentName": "Cardinals",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 39.0,
+      "summaryLine": "Ryan Rolison leads the shadow board; Jacob Webb is the main alt with 39.0% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 669020,
+          "name": "Ryan Rolison",
+          "role": "middle",
+          "shadowScorePct": 22.7,
+          "shadowSharePct": 20.3,
+          "availabilityScore": 95.0,
+          "bridgeScore": 87.1,
+          "firstRelieverLikelihood": 90.4,
+          "expectedOuts": 3.0,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 0.0,
+          "reasonTags": [],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 657097,
+          "name": "Jacob Webb",
+          "role": "middle",
+          "shadowScorePct": 21.0,
+          "shadowSharePct": 18.7,
+          "availabilityScore": 73.5,
+          "bridgeScore": 93.2,
+          "firstRelieverLikelihood": 97.2,
+          "expectedOuts": 3.3,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 0.0,
+          "reasonTags": [],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 663423,
+          "name": "Trent Thornton",
+          "role": "bridge",
+          "shadowScorePct": 18.8,
+          "shadowSharePct": 16.8,
+          "availabilityScore": 66.5,
+          "bridgeScore": 95.0,
+          "firstRelieverLikelihood": 90.2,
+          "expectedOuts": 3.89,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 0.0,
+          "reasonTags": [
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "White Sox": {
+      "teamName": "White Sox",
+      "officialTeamName": "Chicago White Sox",
+      "opponentName": "Tigers",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 30.4,
+      "summaryLine": "Grant Taylor leads the shadow board; Tyler Davis is the main alt with 30.4% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 691799,
+          "name": "Grant Taylor",
+          "role": "middle",
+          "shadowScorePct": 25.1,
+          "shadowSharePct": 16.1,
+          "availabilityScore": 74.9,
+          "bridgeScore": 83.7,
+          "firstRelieverLikelihood": 87.2,
+          "expectedOuts": 3.7,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 50.0,
+          "reasonTags": [
+            "bulk first-up live"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 699823,
+          "name": "Tyler Davis",
+          "role": "middle",
+          "shadowScorePct": 22.3,
+          "shadowSharePct": 14.3,
+          "availabilityScore": 75.3,
+          "bridgeScore": 67.2,
+          "firstRelieverLikelihood": 63.7,
+          "expectedOuts": 3.8,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 50.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 670950,
+          "name": "Trevor Richards",
+          "role": "middle",
+          "shadowScorePct": 19.6,
+          "shadowSharePct": 12.6,
+          "availabilityScore": 79.4,
+          "bridgeScore": 69.7,
+          "firstRelieverLikelihood": 62.3,
+          "expectedOuts": 4.33,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 50.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "Reds": {
+      "teamName": "Reds",
+      "officialTeamName": "Cincinnati Reds",
+      "opponentName": "Braves",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 26.0,
+      "summaryLine": "Sam Moll leads the shadow board; Brock Burke is the main alt with 26.0% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 594580,
+          "name": "Sam Moll",
+          "role": "middle",
+          "shadowScorePct": 23.5,
+          "shadowSharePct": 13.6,
+          "availabilityScore": 95.0,
+          "bridgeScore": 95.0,
+          "firstRelieverLikelihood": 100.0,
+          "expectedOuts": 3.0,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 0.0,
+          "reasonTags": [],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 656271,
+          "name": "Brock Burke",
+          "role": "middle",
+          "shadowScorePct": 21.5,
+          "shadowSharePct": 12.4,
+          "availabilityScore": 95.0,
+          "bridgeScore": 77.4,
+          "firstRelieverLikelihood": 89.5,
+          "expectedOuts": 2.7,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 0.0,
+          "reasonTags": [
+            "clean-entry form"
+          ],
+          "summary": "standard mid-game bridge; clean early-command form; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 572955,
+          "name": "Pierce Johnson",
+          "role": "middle",
+          "shadowScorePct": 19.8,
+          "shadowSharePct": 11.4,
+          "availabilityScore": 95.0,
+          "bridgeScore": 65.5,
+          "firstRelieverLikelihood": 64.4,
+          "expectedOuts": 3.0,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 0.0,
+          "reasonTags": [
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "Guardians": {
+      "teamName": "Guardians",
+      "officialTeamName": "Cleveland Guardians",
+      "opponentName": "Red Sox",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 27.3,
+      "summaryLine": "Codi Heuer leads the shadow board; Matt Festa is the main alt with 27.3% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 676051,
+          "name": "Codi Heuer",
+          "role": "middle",
+          "shadowScorePct": 22.2,
+          "shadowSharePct": 13.7,
+          "availabilityScore": 95.0,
+          "bridgeScore": 82.9,
+          "firstRelieverLikelihood": 88.4,
+          "expectedOuts": 4.67,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [
+            "scramble risk",
+            "unknown-sample arm"
+          ],
+          "summary": "standard mid-game bridge; unknown-sample relief lane; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 670036,
+          "name": "Matt Festa",
+          "role": "bridge",
+          "shadowScorePct": 22.0,
+          "shadowSharePct": 13.6,
+          "availabilityScore": 95.0,
+          "bridgeScore": 92.9,
+          "firstRelieverLikelihood": 93.0,
+          "expectedOuts": 2.7,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [
+            "scramble risk"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 542888,
+          "name": "Shawn Armstrong",
+          "role": "middle",
+          "shadowScorePct": 20.4,
+          "shadowSharePct": 12.7,
+          "availabilityScore": 59.6,
+          "bridgeScore": 65.1,
+          "firstRelieverLikelihood": 58.7,
+          "expectedOuts": 2.5,
+          "workedYesterday": true,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [
+            "scramble risk"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "Rockies": {
+      "teamName": "Rockies",
+      "officialTeamName": "Colorado Rockies",
+      "opponentName": "Giants",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 26.4,
+      "summaryLine": "Blas Casta\u00f1o leads the shadow board; Zach Agnos is the main alt with 26.4% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 680604,
+          "name": "Blas Casta\u00f1o",
+          "role": "bulk",
+          "shadowScorePct": 22.3,
+          "shadowSharePct": 13.4,
+          "availabilityScore": 76.7,
+          "bridgeScore": 80.3,
+          "firstRelieverLikelihood": 86.1,
+          "expectedOuts": 6.75,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 50.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "unknown-sample arm"
+          ],
+          "summary": "standard mid-game bridge; unknown-sample relief lane; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 688642,
+          "name": "Zach Agnos",
+          "role": "bridge",
+          "shadowScorePct": 21.7,
+          "shadowSharePct": 13.0,
+          "availabilityScore": 95.0,
+          "bridgeScore": 92.9,
+          "firstRelieverLikelihood": 93.0,
+          "expectedOuts": 7.2,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 50.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 622608,
+          "name": "Antonio Senzatela",
+          "role": "middle",
+          "shadowScorePct": 19.2,
+          "shadowSharePct": 11.5,
+          "availabilityScore": 69.5,
+          "bridgeScore": 69.7,
+          "firstRelieverLikelihood": 59.7,
+          "expectedOuts": 5.6,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 50.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "Tigers": {
+      "teamName": "Tigers",
+      "officialTeamName": "Detroit Tigers",
+      "opponentName": "White Sox",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 23.6,
+      "summaryLine": "Brant Hurter leads the shadow board; Tyler Holton is the main alt with 23.6% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 676428,
+          "name": "Brant Hurter",
+          "role": "bridge",
+          "shadowScorePct": 20.9,
+          "shadowSharePct": 12.2,
+          "availabilityScore": 95.0,
+          "bridgeScore": 81.4,
+          "firstRelieverLikelihood": 62.1,
+          "expectedOuts": 4.3,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [
+            "clean-entry form"
+          ],
+          "summary": "standard mid-game bridge; clean early-command form; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 663947,
+          "name": "Tyler Holton",
+          "role": "middle",
+          "shadowScorePct": 19.6,
+          "shadowSharePct": 11.4,
+          "availabilityScore": 95.0,
+          "bridgeScore": 87.9,
+          "firstRelieverLikelihood": 94.3,
+          "expectedOuts": 3.6,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 669724,
+          "name": "Brenan Hanifee",
+          "role": "middle",
+          "shadowScorePct": 19.1,
+          "shadowSharePct": 11.1,
+          "availabilityScore": 58.4,
+          "bridgeScore": 83.5,
+          "firstRelieverLikelihood": 92.4,
+          "expectedOuts": 3.62,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "Astros": {
+      "teamName": "Astros",
+      "officialTeamName": "Houston Astros",
+      "opponentName": "Brewers",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 52.1,
+      "summaryLine": "Nate Pearson leads the shadow board; AJ Blubaugh is the main alt with 52.1% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 663878,
+          "name": "Nate Pearson",
+          "role": "middle",
+          "shadowScorePct": 28.1,
+          "shadowSharePct": 27.0,
+          "availabilityScore": 73.8,
+          "bridgeScore": 82.9,
+          "firstRelieverLikelihood": 82.9,
+          "expectedOuts": 2.67,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 30.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "unknown-sample arm"
+          ],
+          "summary": "standard mid-game bridge; unknown-sample relief lane; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 805123,
+          "name": "AJ Blubaugh",
+          "role": "bridge",
+          "shadowScorePct": 26.0,
+          "shadowSharePct": 25.1,
+          "availabilityScore": 95.0,
+          "bridgeScore": 92.9,
+          "firstRelieverLikelihood": 93.0,
+          "expectedOuts": 4.9,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 30.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 695001,
+          "name": "Alimber Santa",
+          "role": "middle",
+          "shadowScorePct": 15.3,
+          "shadowSharePct": 14.7,
+          "availabilityScore": 56.2,
+          "bridgeScore": 64.8,
+          "firstRelieverLikelihood": 57.6,
+          "expectedOuts": 4.5,
+          "workedYesterday": true,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 30.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "unknown-sample arm"
+          ],
+          "summary": "standard mid-game bridge; unknown-sample relief lane; lineup fit is neutral."
+        }
+      ]
+    },
+    "Royals": {
+      "teamName": "Royals",
+      "officialTeamName": "Kansas City Royals",
+      "opponentName": "Rangers",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 25.9,
+      "summaryLine": "Daniel Lynch IV leads the shadow board; John Schreiber is the main alt with 25.9% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 663738,
+          "name": "Daniel Lynch IV",
+          "role": "bridge",
+          "shadowScorePct": 25.8,
+          "shadowSharePct": 13.7,
+          "availabilityScore": 95.0,
+          "bridgeScore": 95.0,
+          "firstRelieverLikelihood": 100.0,
+          "expectedOuts": 3.1,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 670167,
+          "name": "John Schreiber",
+          "role": "bridge",
+          "shadowScorePct": 23.0,
+          "shadowSharePct": 12.2,
+          "availabilityScore": 78.0,
+          "bridgeScore": 95.0,
+          "firstRelieverLikelihood": 99.2,
+          "expectedOuts": 2.9,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 656638,
+          "name": "Alex Lange",
+          "role": "middle",
+          "shadowScorePct": 22.1,
+          "shadowSharePct": 11.7,
+          "availabilityScore": 80.3,
+          "bridgeScore": 47.3,
+          "firstRelieverLikelihood": 46.2,
+          "expectedOuts": 3.2,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "Angels": {
+      "teamName": "Angels",
+      "officialTeamName": "Los Angeles Angels",
+      "opponentName": "Rays",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 33.0,
+      "summaryLine": "Sam Bachman leads the shadow board; Jos\u00e9 Fermin is the main alt with 33.0% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 696147,
+          "name": "Sam Bachman",
+          "role": "middle",
+          "shadowScorePct": 24.1,
+          "shadowSharePct": 16.8,
+          "availabilityScore": 71.8,
+          "bridgeScore": 83.7,
+          "firstRelieverLikelihood": 86.4,
+          "expectedOuts": 3.7,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 10.0,
+          "reasonTags": [
+            "scramble risk"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 820862,
+          "name": "Jos\u00e9 Fermin",
+          "role": "middle",
+          "shadowScorePct": 23.3,
+          "shadowSharePct": 16.2,
+          "availabilityScore": 75.3,
+          "bridgeScore": 78.8,
+          "firstRelieverLikelihood": 75.0,
+          "expectedOuts": 2.7,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 10.0,
+          "reasonTags": [
+            "scramble risk"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 815083,
+          "name": "Mitch Farris",
+          "role": "middle",
+          "shadowScorePct": 21.4,
+          "shadowSharePct": 14.9,
+          "availabilityScore": 95.0,
+          "bridgeScore": 87.1,
+          "firstRelieverLikelihood": 90.4,
+          "expectedOuts": 6.56,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 10.0,
+          "reasonTags": [
+            "scramble risk",
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "Dodgers": {
+      "teamName": "Dodgers",
+      "officialTeamName": "Los Angeles Dodgers",
+      "opponentName": "Phillies",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 28.7,
+      "summaryLine": "Blake Treinen leads the shadow board; Jonathan Hern\u00e1ndez is the main alt with 28.7% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 595014,
+          "name": "Blake Treinen",
+          "role": "late",
+          "shadowScorePct": 24.5,
+          "shadowSharePct": 14.4,
+          "availabilityScore": 95.0,
+          "bridgeScore": 32.3,
+          "firstRelieverLikelihood": 43.2,
+          "expectedOuts": 2.4,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 642546,
+          "name": "Jonathan Hern\u00e1ndez",
+          "role": "middle",
+          "shadowScorePct": 24.4,
+          "shadowSharePct": 14.3,
+          "availabilityScore": 95.0,
+          "bridgeScore": 82.9,
+          "firstRelieverLikelihood": 88.4,
+          "expectedOuts": 4.0,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [
+            "unknown-sample arm"
+          ],
+          "summary": "standard mid-game bridge; unknown-sample relief lane; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 681911,
+          "name": "Alex Vesia",
+          "role": "middle",
+          "shadowScorePct": 23.1,
+          "shadowSharePct": 13.5,
+          "availabilityScore": 61.7,
+          "bridgeScore": 60.9,
+          "firstRelieverLikelihood": 57.3,
+          "expectedOuts": 2.2,
+          "workedYesterday": true,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "Marlins": {
+      "teamName": "Marlins",
+      "officialTeamName": "Miami Marlins",
+      "opponentName": "Mets",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 29.5,
+      "summaryLine": "Lake Bachar leads the shadow board; Andrew Nardi is the main alt with 29.5% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 669199,
+          "name": "Lake Bachar",
+          "role": "bridge",
+          "shadowScorePct": 25.3,
+          "shadowSharePct": 15.2,
+          "availabilityScore": 95.0,
+          "bridgeScore": 95.0,
+          "firstRelieverLikelihood": 94.0,
+          "expectedOuts": 4.5,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 30.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 677053,
+          "name": "Andrew Nardi",
+          "role": "middle",
+          "shadowScorePct": 23.8,
+          "shadowSharePct": 14.3,
+          "availabilityScore": 73.3,
+          "bridgeScore": 76.7,
+          "firstRelieverLikelihood": 73.5,
+          "expectedOuts": 2.9,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 30.0,
+          "reasonTags": [
+            "bulk first-up live"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 667463,
+          "name": "John King",
+          "role": "middle",
+          "shadowScorePct": 23.8,
+          "shadowSharePct": 14.3,
+          "availabilityScore": 76.2,
+          "bridgeScore": 66.3,
+          "firstRelieverLikelihood": 67.1,
+          "expectedOuts": 2.5,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 30.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "Brewers": {
+      "teamName": "Brewers",
+      "officialTeamName": "Milwaukee Brewers",
+      "opponentName": "Astros",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 34.0,
+      "summaryLine": "Shane Drohan leads the shadow board; Carlos Rodriguez is the main alt with 34.0% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 675660,
+          "name": "Shane Drohan",
+          "role": "bridge",
+          "shadowScorePct": 19.7,
+          "shadowSharePct": 17.2,
+          "availabilityScore": 64.2,
+          "bridgeScore": 95.0,
+          "firstRelieverLikelihood": 95.6,
+          "expectedOuts": 7.4,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 60.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 692230,
+          "name": "Carlos Rodriguez",
+          "role": "bulk",
+          "shadowScorePct": 19.2,
+          "shadowSharePct": 16.8,
+          "availabilityScore": 95.0,
+          "bridgeScore": 70.5,
+          "firstRelieverLikelihood": 66.7,
+          "expectedOuts": 6.0,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 60.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "unknown-sample arm"
+          ],
+          "summary": "standard mid-game bridge; unknown-sample relief lane; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 663765,
+          "name": "Jake Woodford",
+          "role": "middle",
+          "shadowScorePct": 16.2,
+          "shadowSharePct": 14.1,
+          "availabilityScore": 95.0,
+          "bridgeScore": 53.7,
+          "firstRelieverLikelihood": 49.4,
+          "expectedOuts": 4.7,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 60.0,
+          "reasonTags": [
+            "bulk first-up live"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "Twins": {
+      "teamName": "Twins",
+      "officialTeamName": "Minnesota Twins",
+      "opponentName": "Pirates",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 36.9,
+      "summaryLine": "Simeon Woods Richardson leads the shadow board; Andrew Morris is the main alt with 36.9% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 680573,
+          "name": "Simeon Woods Richardson",
+          "role": "bridge",
+          "shadowScorePct": 21.9,
+          "shadowSharePct": 19.1,
+          "availabilityScore": 95.0,
+          "bridgeScore": 92.9,
+          "firstRelieverLikelihood": 93.0,
+          "expectedOuts": 4.5,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 40.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "unknown-sample arm"
+          ],
+          "summary": "standard mid-game bridge; unknown-sample relief lane; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 702193,
+          "name": "Andrew Morris",
+          "role": "middle",
+          "shadowScorePct": 20.4,
+          "shadowSharePct": 17.8,
+          "availabilityScore": 66.5,
+          "bridgeScore": 93.2,
+          "firstRelieverLikelihood": 95.4,
+          "expectedOuts": 3.4,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 40.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 606115,
+          "name": "Orlando Arcia",
+          "role": "late",
+          "shadowScorePct": 18.1,
+          "shadowSharePct": 15.8,
+          "availabilityScore": 74.9,
+          "bridgeScore": 49.7,
+          "firstRelieverLikelihood": 45.9,
+          "expectedOuts": 3.0,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 40.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "unknown-sample arm"
+          ],
+          "summary": "standard mid-game bridge; unknown-sample relief lane; lineup fit is neutral."
+        }
+      ]
+    },
+    "Mets": {
+      "teamName": "Mets",
+      "officialTeamName": "New York Mets",
+      "opponentName": "Marlins",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 24.8,
+      "summaryLine": "A.J. Minter leads the shadow board; Jonathan Pintaro is the main alt with 24.8% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 621345,
+          "name": "A.J. Minter",
+          "role": "bridge",
+          "shadowScorePct": 19.1,
+          "shadowSharePct": 12.4,
+          "availabilityScore": 54.9,
+          "bridgeScore": 95.0,
+          "firstRelieverLikelihood": 93.2,
+          "expectedOuts": 3.0,
+          "workedYesterday": true,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 40.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "unknown-sample arm"
+          ],
+          "summary": "standard mid-game bridge; unknown-sample relief lane; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 702752,
+          "name": "Jonathan Pintaro",
+          "role": "bridge",
+          "shadowScorePct": 19.0,
+          "shadowSharePct": 12.4,
+          "availabilityScore": 95.0,
+          "bridgeScore": 67.1,
+          "firstRelieverLikelihood": 65.2,
+          "expectedOuts": 5.5,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 40.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "unknown-sample arm"
+          ],
+          "summary": "standard mid-game bridge; unknown-sample relief lane; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 640455,
+          "name": "Sean Manaea",
+          "role": "bridge",
+          "shadowScorePct": 18.9,
+          "shadowSharePct": 12.3,
+          "availabilityScore": 95.0,
+          "bridgeScore": 80.3,
+          "firstRelieverLikelihood": 87.2,
+          "expectedOuts": 8.7,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 40.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "clean-entry form"
+          ],
+          "summary": "standard mid-game bridge; clean early-command form; lineup fit is neutral."
+        }
+      ]
+    },
+    "Yankees": {
+      "teamName": "Yankees",
+      "officialTeamName": "New York Yankees",
+      "opponentName": "Athletics",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 30.9,
+      "summaryLine": "Jake Bird leads the shadow board; Ryan Yarbrough is the main alt with 30.9% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 656234,
+          "name": "Jake Bird",
+          "role": "bridge",
+          "shadowScorePct": 23.1,
+          "shadowSharePct": 15.9,
+          "availabilityScore": 95.0,
+          "bridgeScore": 75.5,
+          "firstRelieverLikelihood": 69.0,
+          "expectedOuts": 2.1,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 10.0,
+          "reasonTags": [
+            "clean-entry form"
+          ],
+          "summary": "standard mid-game bridge; clean early-command form; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 642232,
+          "name": "Ryan Yarbrough",
+          "role": "bridge",
+          "shadowScorePct": 21.9,
+          "shadowSharePct": 15.0,
+          "availabilityScore": 95.0,
+          "bridgeScore": 80.3,
+          "firstRelieverLikelihood": 87.2,
+          "expectedOuts": 5.6,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 10.0,
+          "reasonTags": [],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 666808,
+          "name": "Camilo Doval",
+          "role": "late",
+          "shadowScorePct": 18.4,
+          "shadowSharePct": 12.6,
+          "availabilityScore": 76.2,
+          "bridgeScore": 63.7,
+          "firstRelieverLikelihood": 58.7,
+          "expectedOuts": 2.7,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 10.0,
+          "reasonTags": [
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "Phillies": {
+      "teamName": "Phillies",
+      "officialTeamName": "Philadelphia Phillies",
+      "opponentName": "Dodgers",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 36.7,
+      "summaryLine": "Jonathan Bowlan leads the shadow board; Tanner Banks is the main alt with 36.7% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 680742,
+          "name": "Jonathan Bowlan",
+          "role": "bridge",
+          "shadowScorePct": 24.0,
+          "shadowSharePct": 18.5,
+          "availabilityScore": 73.1,
+          "bridgeScore": 95.0,
+          "firstRelieverLikelihood": 97.9,
+          "expectedOuts": 3.1,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 10.0,
+          "reasonTags": [],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 621383,
+          "name": "Tanner Banks",
+          "role": "late",
+          "shadowScorePct": 23.5,
+          "shadowSharePct": 18.2,
+          "availabilityScore": 95.0,
+          "bridgeScore": 49.7,
+          "firstRelieverLikelihood": 51.2,
+          "expectedOuts": 2.9,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 10.0,
+          "reasonTags": [],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 661395,
+          "name": "Jhoan Duran",
+          "role": "middle",
+          "shadowScorePct": 21.4,
+          "shadowSharePct": 16.6,
+          "availabilityScore": 95.0,
+          "bridgeScore": 57.7,
+          "firstRelieverLikelihood": 58.4,
+          "expectedOuts": 3.0,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 10.0,
+          "reasonTags": [],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "Pirates": {
+      "teamName": "Pirates",
+      "officialTeamName": "Pittsburgh Pirates",
+      "opponentName": "Twins",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 37.2,
+      "summaryLine": "Mason Montgomery leads the shadow board; Gregory Soto is the main alt with 37.2% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 682254,
+          "name": "Mason Montgomery",
+          "role": "middle",
+          "shadowScorePct": 22.3,
+          "shadowSharePct": 19.1,
+          "availabilityScore": 65.8,
+          "bridgeScore": 87.1,
+          "firstRelieverLikelihood": 82.8,
+          "expectedOuts": 3.3,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 10.0,
+          "reasonTags": [],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 642397,
+          "name": "Gregory Soto",
+          "role": "middle",
+          "shadowScorePct": 21.1,
+          "shadowSharePct": 18.1,
+          "availabilityScore": 57.6,
+          "bridgeScore": 67.2,
+          "firstRelieverLikelihood": 59.1,
+          "expectedOuts": 3.2,
+          "workedYesterday": true,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 10.0,
+          "reasonTags": [],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 684049,
+          "name": "Brandan Bidois",
+          "role": "bridge",
+          "shadowScorePct": 15.7,
+          "shadowSharePct": 13.4,
+          "availabilityScore": 67.2,
+          "bridgeScore": 95.0,
+          "firstRelieverLikelihood": 96.4,
+          "expectedOuts": 3.43,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 10.0,
+          "reasonTags": [
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "Padres": {
+      "teamName": "Padres",
+      "officialTeamName": "San Diego Padres",
+      "opponentName": "Nationals",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 36.6,
+      "summaryLine": "Wandy Peralta leads the shadow board; Bradgley Rodriguez is the main alt with 36.6% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 593974,
+          "name": "Wandy Peralta",
+          "role": "middle",
+          "shadowScorePct": 22.1,
+          "shadowSharePct": 18.5,
+          "availabilityScore": 95.0,
+          "bridgeScore": 78.8,
+          "firstRelieverLikelihood": 80.2,
+          "expectedOuts": 3.9,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [
+            "scramble risk"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 699134,
+          "name": "Bradgley Rodriguez",
+          "role": "middle",
+          "shadowScorePct": 21.6,
+          "shadowSharePct": 18.1,
+          "availabilityScore": 95.0,
+          "bridgeScore": 85.8,
+          "firstRelieverLikelihood": 93.4,
+          "expectedOuts": 3.5,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [
+            "scramble risk",
+            "clean-entry form"
+          ],
+          "summary": "standard mid-game bridge; clean early-command form; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 676760,
+          "name": "Ron Marinaccio",
+          "role": "bulk",
+          "shadowScorePct": 20.9,
+          "shadowSharePct": 17.4,
+          "availabilityScore": 74.9,
+          "bridgeScore": 80.0,
+          "firstRelieverLikelihood": 85.5,
+          "expectedOuts": 4.9,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [
+            "bulk first-up live"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "Giants": {
+      "teamName": "Giants",
+      "officialTeamName": "San Francisco Giants",
+      "opponentName": "Rockies",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 33.2,
+      "summaryLine": "Sam Hentges leads the shadow board; JT Brubaker is the main alt with 33.2% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 656529,
+          "name": "Sam Hentges",
+          "role": "middle",
+          "shadowScorePct": 23.0,
+          "shadowSharePct": 17.0,
+          "availabilityScore": 95.0,
+          "bridgeScore": 65.5,
+          "firstRelieverLikelihood": 64.4,
+          "expectedOuts": 2.71,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 10.0,
+          "reasonTags": [
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 664141,
+          "name": "JT Brubaker",
+          "role": "bulk",
+          "shadowScorePct": 21.9,
+          "shadowSharePct": 16.2,
+          "availabilityScore": 95.0,
+          "bridgeScore": 43.9,
+          "firstRelieverLikelihood": 48.5,
+          "expectedOuts": 5.1,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 10.0,
+          "reasonTags": [
+            "bulk first-up live"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 621366,
+          "name": "Ryan Borucki",
+          "role": "middle",
+          "shadowScorePct": 20.8,
+          "shadowSharePct": 15.4,
+          "availabilityScore": 95.0,
+          "bridgeScore": 51.5,
+          "firstRelieverLikelihood": 52.0,
+          "expectedOuts": 3.9,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 10.0,
+          "reasonTags": [
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "Mariners": {
+      "teamName": "Mariners",
+      "officialTeamName": "Seattle Mariners",
+      "opponentName": "Diamondbacks",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 34.4,
+      "summaryLine": "Alex Hoppe leads the shadow board; Jos\u00e9 A. Ferrer is the main alt with 34.4% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 695380,
+          "name": "Alex Hoppe",
+          "role": "middle",
+          "shadowScorePct": 23.1,
+          "shadowSharePct": 18.8,
+          "availabilityScore": 95.0,
+          "bridgeScore": 55.7,
+          "firstRelieverLikelihood": 53.9,
+          "expectedOuts": 3.4,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 10.0,
+          "reasonTags": [],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 678606,
+          "name": "Jos\u00e9 A. Ferrer",
+          "role": "middle",
+          "shadowScorePct": 19.2,
+          "shadowSharePct": 15.6,
+          "availabilityScore": 57.4,
+          "bridgeScore": 95.0,
+          "firstRelieverLikelihood": 97.4,
+          "expectedOuts": 2.6,
+          "workedYesterday": true,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 10.0,
+          "reasonTags": [],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 642100,
+          "name": "Gabe Speier",
+          "role": "late",
+          "shadowScorePct": 18.4,
+          "shadowSharePct": 15.0,
+          "availabilityScore": 63.0,
+          "bridgeScore": 52.5,
+          "firstRelieverLikelihood": 53.7,
+          "expectedOuts": 2.3,
+          "workedYesterday": true,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 10.0,
+          "reasonTags": [
+            "clean-entry form"
+          ],
+          "summary": "standard mid-game bridge; clean early-command form; lineup fit is neutral."
+        }
+      ]
+    },
+    "Cardinals": {
+      "teamName": "Cardinals",
+      "officialTeamName": "St. Louis Cardinals",
+      "opponentName": "Cubs",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 26.7,
+      "summaryLine": "Ryan Fernandez leads the shadow board; George Soriano is the main alt with 26.7% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 681676,
+          "name": "Ryan Fernandez",
+          "role": "middle",
+          "shadowScorePct": 22.1,
+          "shadowSharePct": 13.7,
+          "availabilityScore": 95.0,
+          "bridgeScore": 87.1,
+          "firstRelieverLikelihood": 90.4,
+          "expectedOuts": 4.33,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 666277,
+          "name": "George Soriano",
+          "role": "middle",
+          "shadowScorePct": 21.0,
+          "shadowSharePct": 13.0,
+          "availabilityScore": 55.8,
+          "bridgeScore": 67.2,
+          "firstRelieverLikelihood": 58.6,
+          "expectedOuts": 2.8,
+          "workedYesterday": true,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 700669,
+          "name": "Gordon Graceffo",
+          "role": "middle",
+          "shadowScorePct": 17.7,
+          "shadowSharePct": 10.9,
+          "availabilityScore": 56.7,
+          "bridgeScore": 69.7,
+          "firstRelieverLikelihood": 56.4,
+          "expectedOuts": 3.0,
+          "workedYesterday": true,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "Rays": {
+      "teamName": "Rays",
+      "officialTeamName": "Tampa Bay Rays",
+      "opponentName": "Angels",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 27.0,
+      "summaryLine": "Garrett Cleavinger leads the shadow board; Casey Legumina is the main alt with 27.0% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 664076,
+          "name": "Garrett Cleavinger",
+          "role": "bridge",
+          "shadowScorePct": 21.9,
+          "shadowSharePct": 14.4,
+          "availabilityScore": 95.0,
+          "bridgeScore": 92.9,
+          "firstRelieverLikelihood": 93.0,
+          "expectedOuts": 2.7,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 30.0,
+          "reasonTags": [
+            "bulk first-up live"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 668984,
+          "name": "Casey Legumina",
+          "role": "bulk",
+          "shadowScorePct": 19.2,
+          "shadowSharePct": 12.6,
+          "availabilityScore": 95.0,
+          "bridgeScore": 70.5,
+          "firstRelieverLikelihood": 66.7,
+          "expectedOuts": 4.0,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 30.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 687330,
+          "name": "Kevin Kelly",
+          "role": "middle",
+          "shadowScorePct": 17.8,
+          "shadowSharePct": 11.7,
+          "availabilityScore": 56.2,
+          "bridgeScore": 93.2,
+          "firstRelieverLikelihood": 92.7,
+          "expectedOuts": 3.0,
+          "workedYesterday": true,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 30.0,
+          "reasonTags": [
+            "bulk first-up live"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "Rangers": {
+      "teamName": "Rangers",
+      "officialTeamName": "Texas Rangers",
+      "opponentName": "Royals",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 25.9,
+      "summaryLine": "Peyton Gray leads the shadow board; Cal Quantrill is the main alt with 25.9% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 682608,
+          "name": "Peyton Gray",
+          "role": "bridge",
+          "shadowScorePct": 22.1,
+          "shadowSharePct": 13.7,
+          "availabilityScore": 95.0,
+          "bridgeScore": 92.9,
+          "firstRelieverLikelihood": 93.0,
+          "expectedOuts": 5.0,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 50.0,
+          "reasonTags": [
+            "bulk first-up live"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 615698,
+          "name": "Cal Quantrill",
+          "role": "bridge",
+          "shadowScorePct": 19.6,
+          "shadowSharePct": 12.2,
+          "availabilityScore": 63.4,
+          "bridgeScore": 92.9,
+          "firstRelieverLikelihood": 84.8,
+          "expectedOuts": 7.11,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 50.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 596001,
+          "name": "Jakob Junis",
+          "role": "bridge",
+          "shadowScorePct": 18.5,
+          "shadowSharePct": 11.5,
+          "availabilityScore": 95.0,
+          "bridgeScore": 95.0,
+          "firstRelieverLikelihood": 94.0,
+          "expectedOuts": 3.3,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 50.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "clean-entry form"
+          ],
+          "summary": "standard mid-game bridge; clean early-command form; lineup fit is neutral."
+        }
+      ]
+    },
+    "Blue Jays": {
+      "teamName": "Blue Jays",
+      "officialTeamName": "Toronto Blue Jays",
+      "opponentName": "Orioles",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 23.6,
+      "summaryLine": "Spencer Miles leads the shadow board; Tanner Andrews is the main alt with 23.6% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 693686,
+          "name": "Spencer Miles",
+          "role": "bridge",
+          "shadowScorePct": 20.7,
+          "shadowSharePct": 12.8,
+          "availabilityScore": 95.0,
+          "bridgeScore": 74.7,
+          "firstRelieverLikelihood": 84.7,
+          "expectedOuts": 7.4,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [
+            "scramble risk"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 681084,
+          "name": "Tanner Andrews",
+          "role": "middle",
+          "shadowScorePct": 17.5,
+          "shadowSharePct": 10.8,
+          "availabilityScore": 95.0,
+          "bridgeScore": 50.8,
+          "firstRelieverLikelihood": 55.3,
+          "expectedOuts": 4.5,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [
+            "scramble risk",
+            "unknown-sample arm"
+          ],
+          "summary": "standard mid-game bridge; unknown-sample relief lane; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 671936,
+          "name": "Adam Macko",
+          "role": "middle",
+          "shadowScorePct": 16.9,
+          "shadowSharePct": 10.5,
+          "availabilityScore": 95.0,
+          "bridgeScore": 60.9,
+          "firstRelieverLikelihood": 65.9,
+          "expectedOuts": 2.17,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [
+            "scramble risk"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        }
+      ]
+    },
+    "Nationals": {
+      "teamName": "Nationals",
+      "officialTeamName": "Washington Nationals",
+      "opponentName": "Padres",
+      "modelTag": "E34 shadow",
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      },
+      "starterHookRiskPct": 0.0,
+      "topTwoSharePct": 27.0,
+      "summaryLine": "Richard Lovelady leads the shadow board; Gus Varland is the main alt with 27.0% of the shadow share.",
+      "relievers": [
+        {
+          "pitcherId": 663992,
+          "name": "Richard Lovelady",
+          "role": "middle",
+          "shadowScorePct": 19.5,
+          "shadowSharePct": 14.1,
+          "availabilityScore": 79.0,
+          "bridgeScore": 58.8,
+          "firstRelieverLikelihood": 60.8,
+          "expectedOuts": 2.1,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 80.0,
+          "reasonTags": [
+            "bulk first-up live"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 681402,
+          "name": "Gus Varland",
+          "role": "late",
+          "shadowScorePct": 17.8,
+          "shadowSharePct": 12.9,
+          "availabilityScore": 76.7,
+          "bridgeScore": 50.1,
+          "firstRelieverLikelihood": 56.2,
+          "expectedOuts": 3.0,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 80.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "first-five wildness"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 641793,
+          "name": "Zack Littell",
+          "role": "bridge",
+          "shadowScorePct": 17.6,
+          "shadowSharePct": 12.7,
+          "availabilityScore": 95.0,
+          "bridgeScore": 74.7,
+          "firstRelieverLikelihood": 84.7,
+          "expectedOuts": 14.75,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 80.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "unknown-sample arm"
+          ],
+          "summary": "standard mid-game bridge; unknown-sample relief lane; lineup fit is neutral."
+        }
+      ]
+    }
+  }
+}

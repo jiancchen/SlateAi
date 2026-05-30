@@ -195,6 +195,28 @@ npm run data:watch:mlb-probables -- --date 2026-05-28 --interval-seconds 120 --r
 npm run data:run:mlb-followup -- --date 2026-05-28
 ```
 
+## Saved automations
+
+These are the default MLB automation patterns:
+
+- `mlb-daytime-refresh-window`
+  - thread-attached heartbeat
+  - checks today's MLB slate every `15` minutes during the daytime window
+  - no-ops if there is no MLB slate
+  - no-ops once the current local time is later than `30` minutes before the last scheduled MLB first pitch
+  - otherwise checks for probable-pitcher / lineup movement and reruns the full pregame workflow only when the board is stale or materially changed
+
+- nightly follow-up remains part of the runbook command flow:
+  - `npm run data:run:mlb-followup -- --date YYYY-MM-DD`
+  - this is the standard closeout / history / stories / postmortem path once the slate is done
+  - it also refreshes batter-outcome follow-up research tied to the settled day
+
+Important note:
+
+- the daytime automation is intentionally `windowed`
+- it is not supposed to keep pushing pregame refreshes into the late live-game hours
+- live Kalshi warehousing and deeper in-game research remain separate from the daytime lineup / probable refresh loop
+
 ## Notes
 
 - The pregame run is safe to rerun multiple times in one day as lineups and probable pitchers change.

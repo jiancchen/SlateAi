@@ -174,6 +174,7 @@ const enrichSlateWithStoryWinners = async (
       })
     }
   } catch (error) {
+    if (String(error).includes('404')) return slate
     console.warn(`Story day API unavailable for winner enrichment on ${id}.`, error)
     return slate
   }
