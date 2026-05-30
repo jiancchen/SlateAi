@@ -72,7 +72,7 @@
       "totals": "Best O/U angle: no play without a posted total.",
       "market": {
         "source": "FanDuel Sportsbook",
-        "capturedAt": "2026-05-30T04:25:05.000Z",
+        "capturedAt": "2026-05-30T04:26:27.278Z",
         "moneyline": [
           {
             "name": "Francisco Cerundolo",
@@ -85,16 +85,16 @@
           },
           {
             "name": "Zachary Svajda",
-            "americanOdds": 810,
-            "impliedPct": 11,
+            "americanOdds": 860,
+            "impliedPct": 10.4,
             "modelPct": 37,
-            "edgePct": 26,
-            "grossProfitPct": 810,
+            "edgePct": 26.6,
+            "grossProfitPct": 860,
             "priceBand": "Underdog"
           }
         ],
-        "spread": "No primary game spread captured",
-        "totalGames": "No total captured",
+        "spread": "Francisco Cerundolo -8.5 (+102)",
+        "totalGames": "30.5 games: Over -122 / Under -110",
         "priceAction": "ML payout is tiny; use spread/total or pass unless the number moves."
       }
     },
@@ -167,7 +167,7 @@
       "totals": "Best O/U angle: no play without a posted total.",
       "market": {
         "source": "FanDuel Sportsbook",
-        "capturedAt": "2026-05-30T04:25:05.000Z",
+        "capturedAt": "2026-05-30T04:26:30.840Z",
         "moneyline": [
           {
             "name": "Iva Jovic",
@@ -188,8 +188,8 @@
             "priceBand": "Coinflip"
           }
         ],
-        "spread": "No primary game spread captured",
-        "totalGames": "No total captured",
+        "spread": "Naomi Osaka -0.5 (-118)",
+        "totalGames": "22.5 games: Over -106 / Under -128",
         "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge."
       }
     },
@@ -262,7 +262,7 @@
       "totals": "Best O/U angle: no play without a posted total.",
       "market": {
         "source": "FanDuel Sportsbook",
-        "capturedAt": "2026-05-30T04:25:05.000Z",
+        "capturedAt": "2026-05-30T04:26:33.874Z",
         "moneyline": [
           {
             "name": "Maria Sakkari",
@@ -283,8 +283,8 @@
             "priceBand": "Moderate favorite"
           }
         ],
-        "spread": "No primary game spread captured",
-        "totalGames": "No total captured",
+        "spread": "Maria Sakkari +1.5 (-110)",
+        "totalGames": "21.5 games: Over -118 / Under -112",
         "priceAction": "Model is meaningfully above FanDuel implied price."
       }
     },
@@ -357,29 +357,29 @@
       "totals": "Best O/U angle: no play without a posted total.",
       "market": {
         "source": "FanDuel Sportsbook",
-        "capturedAt": "2026-05-30T04:25:05.000Z",
+        "capturedAt": "2026-05-30T04:26:37.489Z",
         "moneyline": [
           {
             "name": "Diana Shnaider",
-            "americanOdds": -320,
-            "impliedPct": 76.2,
+            "americanOdds": -300,
+            "impliedPct": 75,
             "modelPct": 53,
-            "edgePct": -23.2,
-            "grossProfitPct": 31.3,
+            "edgePct": -22,
+            "grossProfitPct": 33.3,
             "priceBand": "Low-payout favorite"
           },
           {
             "name": "Oleksandra Oliynykova",
-            "americanOdds": 255,
-            "impliedPct": 28.2,
+            "americanOdds": 235,
+            "impliedPct": 29.9,
             "modelPct": 47,
-            "edgePct": 18.8,
-            "grossProfitPct": 255,
+            "edgePct": 17.1,
+            "grossProfitPct": 235,
             "priceBand": "Underdog"
           }
         ],
-        "spread": "No primary game spread captured",
-        "totalGames": "No total captured",
+        "spread": "Diana Shnaider -4.5 (-110)",
+        "totalGames": "20.5 games: Over -118 / Under -112",
         "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
       }
     },
@@ -452,7 +452,7 @@
       "totals": "Best O/U angle: no play without a posted total.",
       "market": {
         "source": "FanDuel Sportsbook",
-        "capturedAt": "2026-05-30T04:25:05.000Z",
+        "capturedAt": "2026-05-30T04:26:41.075Z",
         "moneyline": [
           {
             "name": "Flavio Cobolli",
@@ -473,8 +473,8 @@
             "priceBand": "Underdog"
           }
         ],
-        "spread": "No primary game spread captured",
-        "totalGames": "No total captured",
+        "spread": "Learner Tien +3.5 (+104)",
+        "totalGames": "37.5 games: Over -118 / Under -112",
         "priceAction": "Model is meaningfully above FanDuel implied price."
       }
     },
@@ -547,29 +547,29 @@
       "totals": "Best O/U angle: no play without a posted total.",
       "market": {
         "source": "FanDuel Sportsbook",
-        "capturedAt": "2026-05-30T04:25:05.000Z",
+        "capturedAt": "2026-05-30T04:26:44.126Z",
         "moneyline": [
           {
             "name": "Aryna Sabalenka",
-            "americanOdds": -1300,
-            "impliedPct": 92.9,
+            "americanOdds": -1450,
+            "impliedPct": 93.5,
             "modelPct": 65,
-            "edgePct": -27.9,
-            "grossProfitPct": 7.7,
+            "edgePct": -28.5,
+            "grossProfitPct": 6.9,
             "priceBand": "Very expensive favorite"
           },
           {
             "name": "Daria Kasatkina",
-            "americanOdds": 760,
-            "impliedPct": 11.6,
+            "americanOdds": 810,
+            "impliedPct": 11,
             "modelPct": 35,
-            "edgePct": 23.4,
-            "grossProfitPct": 760,
+            "edgePct": 24,
+            "grossProfitPct": 810,
             "priceBand": "Underdog"
           }
         ],
-        "spread": "No primary game spread captured",
-        "totalGames": "No total captured",
+        "spread": "Aryna Sabalenka -6.5 (-116)",
+        "totalGames": "18.5 games: Over +100 / Under -134",
         "priceAction": "ML payout is tiny; use spread/total or pass unless the number moves."
       }
     },
@@ -642,15 +642,15 @@
       "totals": "Best O/U angle: no play without a posted total.",
       "market": {
         "source": "FanDuel Sportsbook",
-        "capturedAt": "2026-05-30T04:25:05.000Z",
+        "capturedAt": "2026-05-30T04:26:47.341Z",
         "moneyline": [
           {
             "name": "Anna Kalinskaya",
-            "americanOdds": -120,
-            "impliedPct": 54.5,
+            "americanOdds": -118,
+            "impliedPct": 54.1,
             "modelPct": 54,
-            "edgePct": -0.5,
-            "grossProfitPct": 83.3,
+            "edgePct": -0.1,
+            "grossProfitPct": 84.7,
             "priceBand": "Coinflip"
           },
           {
@@ -663,8 +663,8 @@
             "priceBand": "Coinflip"
           }
         ],
-        "spread": "No primary game spread captured",
-        "totalGames": "No total captured",
+        "spread": "Anna Kalinskaya -0.5 (-116)",
+        "totalGames": "21.5 games: Over -126 / Under -106",
         "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge."
       }
     },
@@ -737,7 +737,7 @@
       "totals": "Best O/U angle: no play without a posted total.",
       "market": {
         "source": "FanDuel Sportsbook",
-        "capturedAt": "2026-05-30T04:25:05.000Z",
+        "capturedAt": "2026-05-30T04:26:50.340Z",
         "moneyline": [
           {
             "name": "Matteo Berrettini",
@@ -758,8 +758,8 @@
             "priceBand": "Underdog"
           }
         ],
-        "spread": "No primary game spread captured",
-        "totalGames": "No total captured",
+        "spread": "Matteo Berrettini -4.5 (-110)",
+        "totalGames": "37.5 games: Over -120 / Under -110",
         "priceAction": "FanDuel price is richer than the model; pass ML unless live state improves."
       }
     },
@@ -832,29 +832,29 @@
       "totals": "Best O/U angle: no play without a posted total.",
       "market": {
         "source": "FanDuel Sportsbook",
-        "capturedAt": "2026-05-30T04:25:05.000Z",
+        "capturedAt": "2026-05-30T04:26:53.476Z",
         "moneyline": [
           {
             "name": "Juan Manuel Cerundolo",
-            "americanOdds": -152,
-            "impliedPct": 60.3,
+            "americanOdds": -140,
+            "impliedPct": 58.3,
             "modelPct": 52,
-            "edgePct": -8.3,
-            "grossProfitPct": 65.8,
+            "edgePct": -6.3,
+            "grossProfitPct": 71.4,
             "priceBand": "Moderate favorite"
           },
           {
             "name": "Martin Landaluce",
-            "americanOdds": 126,
-            "impliedPct": 44.2,
+            "americanOdds": 116,
+            "impliedPct": 46.3,
             "modelPct": 48,
-            "edgePct": 3.8,
-            "grossProfitPct": 126,
-            "priceBand": "Underdog"
+            "edgePct": 1.7,
+            "grossProfitPct": 116,
+            "priceBand": "Coinflip"
           }
         ],
-        "spread": "No primary game spread captured",
-        "totalGames": "No total captured",
+        "spread": "Juan Manuel Cerundolo -1.5 (-120)",
+        "totalGames": "38.5 games: Over -110 / Under -122",
         "priceAction": "FanDuel price is richer than the model; pass ML unless live state improves."
       }
     },
@@ -927,29 +927,29 @@
       "totals": "Best O/U angle: no play without a posted total.",
       "market": {
         "source": "FanDuel Sportsbook",
-        "capturedAt": "2026-05-30T04:25:05.000Z",
+        "capturedAt": "2026-05-30T04:26:56.557Z",
         "moneyline": [
           {
             "name": "Diane Parry",
-            "americanOdds": 420,
-            "impliedPct": 19.2,
+            "americanOdds": 385,
+            "impliedPct": 20.6,
             "modelPct": 39,
-            "edgePct": 19.8,
-            "grossProfitPct": 420,
+            "edgePct": 18.4,
+            "grossProfitPct": 385,
             "priceBand": "Underdog"
           },
           {
             "name": "Amanda Anisimova",
-            "americanOdds": -580,
-            "impliedPct": 85.3,
+            "americanOdds": -530,
+            "impliedPct": 84.1,
             "modelPct": 61,
-            "edgePct": -24.3,
-            "grossProfitPct": 17.2,
+            "edgePct": -23.1,
+            "grossProfitPct": 18.9,
             "priceBand": "Very expensive favorite"
           }
         ],
-        "spread": "No primary game spread captured",
-        "totalGames": "No total captured",
+        "spread": "Amanda Anisimova -5.5 (+104)",
+        "totalGames": "19.5 games: Over -130 / Under -102",
         "priceAction": "ML payout is tiny; use spread/total or pass unless the number moves."
       }
     },
@@ -1022,29 +1022,29 @@
       "totals": "Best O/U angle: no play without a posted total.",
       "market": {
         "source": "FanDuel Sportsbook",
-        "capturedAt": "2026-05-30T04:25:05.000Z",
+        "capturedAt": "2026-05-30T04:26:59.591Z",
         "moneyline": [
           {
             "name": "Moise Kouame",
-            "americanOdds": 365,
-            "impliedPct": 21.5,
+            "americanOdds": 390,
+            "impliedPct": 20.4,
             "modelPct": 39,
-            "edgePct": 17.5,
-            "grossProfitPct": 365,
+            "edgePct": 18.6,
+            "grossProfitPct": 390,
             "priceBand": "Underdog"
           },
           {
             "name": "Alejandro Tabilo",
-            "americanOdds": -490,
-            "impliedPct": 83.1,
+            "americanOdds": -520,
+            "impliedPct": 83.9,
             "modelPct": 61,
-            "edgePct": -22.1,
-            "grossProfitPct": 20.4,
+            "edgePct": -22.9,
+            "grossProfitPct": 19.2,
             "priceBand": "Very expensive favorite"
           }
         ],
-        "spread": "No primary game spread captured",
-        "totalGames": "No total captured",
+        "spread": "Alejandro Tabilo -6.5 (-128)",
+        "totalGames": "34.5 games: Over -110 / Under -120",
         "priceAction": "ML payout is tiny; use spread/total or pass unless the number moves."
       }
     },
@@ -1117,7 +1117,7 @@
       "totals": "Best O/U angle: no play without a posted total.",
       "market": {
         "source": "FanDuel Sportsbook",
-        "capturedAt": "2026-05-30T04:25:05.000Z",
+        "capturedAt": "2026-05-30T04:27:01.715Z",
         "moneyline": [
           {
             "name": "Matteo Arnaldi",
@@ -1212,7 +1212,7 @@
       "totals": "Best O/U angle: no play without a posted total.",
       "market": {
         "source": "FanDuel Sportsbook",
-        "capturedAt": "2026-05-30T04:25:05.000Z",
+        "capturedAt": "2026-05-30T04:27:04.792Z",
         "moneyline": [
           {
             "name": "Victoria Mboko",
@@ -1233,8 +1233,8 @@
             "priceBand": "Coinflip"
           }
         ],
-        "spread": "No primary game spread captured",
-        "totalGames": "No total captured",
+        "spread": "Victoria Mboko -0.5 (-120)",
+        "totalGames": "22.5 games: Over -108 / Under -126",
         "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge."
       }
     },
@@ -1307,7 +1307,7 @@
       "totals": "Best O/U angle: no play without a posted total.",
       "market": {
         "source": "FanDuel Sportsbook",
-        "capturedAt": "2026-05-30T04:25:05.000Z",
+        "capturedAt": "2026-05-30T04:27:07.841Z",
         "moneyline": [
           {
             "name": "Coco Gauff",
@@ -1328,8 +1328,8 @@
             "priceBand": "Underdog"
           }
         ],
-        "spread": "No primary game spread captured",
-        "totalGames": "No total captured",
+        "spread": "Coco Gauff -4.5 (-118)",
+        "totalGames": "20.5 games: Over -120 / Under -110",
         "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
       }
     },
@@ -1402,7 +1402,7 @@
       "totals": "Best O/U angle: no play without a posted total.",
       "market": {
         "source": "FanDuel Sportsbook",
-        "capturedAt": "2026-05-30T04:25:05.000Z",
+        "capturedAt": "2026-05-30T04:27:09.944Z",
         "moneyline": [
           {
             "name": "Jaime Faria",
@@ -1497,7 +1497,7 @@
       "totals": "Best O/U angle: no play without a posted total.",
       "market": {
         "source": "FanDuel Sportsbook",
-        "capturedAt": "2026-05-30T04:25:05.000Z",
+        "capturedAt": "2026-05-30T04:27:11.831Z",
         "moneyline": [
           {
             "name": "Felix Auger-Aliassime",

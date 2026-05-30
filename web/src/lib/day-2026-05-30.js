@@ -112,7 +112,21 @@ const rawTennisGames = [
         "valueGrade": "Favorite tax trap",
         "betGrade": false
       },
-      "spread": null,
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Francisco Cerundolo",
+        "line": -8.5,
+        "americanOdds": 102,
+        "modelPct": 53,
+        "impliedPct": 49.5,
+        "edgePct": 3.5,
+        "evPer100": 7.1,
+        "netEvPer100": 5.1,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Raw positive EV",
+        "betGrade": false
+      },
       "total": {
         "marketType": "Total",
         "selection": "No bet",
@@ -164,8 +178,8 @@ const rawTennisGames = [
     },
     "marketData": {
       "source": "FanDuel Sportsbook",
-      "sourceDetail": "FanDuel Sportsbook browser scrape",
-      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "sourceDetail": "FanDuel Sportsbook event-page browser scrape",
+      "capturedAt": "2026-05-30T04:26:27.278Z",
       "eventUrl": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/francisco-cerundolo-v-zachary-svajda-35660507",
       "players": [
         {
@@ -184,17 +198,17 @@ const rawTennisGames = [
         },
         {
           "name": "Zachary Svajda",
-          "odds": 810,
-          "americanLabel": "+810",
-          "impliedPct": 11,
-          "decimalOdds": 9.1,
+          "odds": 860,
+          "americanLabel": "+860",
+          "impliedPct": 10.4,
+          "decimalOdds": 9.6,
           "modelPct": 37,
-          "edgePct": 26,
+          "edgePct": 26.6,
           "priceBand": "Underdog",
-          "grossProfitPct": 810,
-          "grossPayoutMultiple": 9.1,
+          "grossProfitPct": 860,
+          "grossPayoutMultiple": 9.6,
           "centsAtRisk": 100,
-          "centsProfitIfWin": 810
+          "centsProfitIfWin": 860
         }
       ],
       "desk": {
@@ -211,13 +225,32 @@ const rawTennisGames = [
         "centsAtRisk": 100,
         "centsProfitIfWin": 6.9
       },
-      "spread": null,
+      "spread": {
+        "player": "Francisco Cerundolo",
+        "spread": -8.5,
+        "odds": 102
+      },
+      "total": {
+        "side": "Over",
+        "line": 30.5,
+        "odds": -122
+      },
+      "totalOver": {
+        "side": "Over",
+        "line": 30.5,
+        "odds": -122
+      },
+      "totalUnder": {
+        "side": "Under",
+        "line": 30.5,
+        "odds": -110
+      },
       "priceAction": "ML payout is tiny; use spread/total or pass unless the number moves.",
-      "spreadValue": "No primary game spread captured",
-      "totalValue": "No total captured",
-      "spreadLean": "No spread line",
-      "totalLean": "No total line",
-      "mlValue": "Francisco Cerundolo -1450 / Zachary Svajda +810",
+      "spreadValue": "Francisco Cerundolo -8.5 (+102)",
+      "totalValue": "30.5 games: Over -122 / Under -110",
+      "spreadLean": "Large game spread; ML may be cleaner than laying games",
+      "totalLean": "Total needs live serve data before entry",
+      "mlValue": "Francisco Cerundolo -1450 / Zachary Svajda +860",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. ML payout is tiny; use spread/total or pass unless the number moves.",
       "noVigNote": "Model 63% vs FanDuel implied 93.5% (-30.5 pts)."
     },
@@ -411,7 +444,21 @@ const rawTennisGames = [
         "valueGrade": "Near fair",
         "betGrade": false
       },
-      "spread": null,
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Naomi Osaka",
+        "line": -0.5,
+        "americanOdds": -118,
+        "modelPct": 46,
+        "impliedPct": 54.1,
+        "edgePct": -8.1,
+        "evPer100": -15,
+        "netEvPer100": -17,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Negative EV",
+        "betGrade": false
+      },
       "total": {
         "marketType": "Total",
         "selection": "No bet",
@@ -462,8 +509,8 @@ const rawTennisGames = [
     },
     "marketData": {
       "source": "FanDuel Sportsbook",
-      "sourceDetail": "FanDuel Sportsbook browser scrape",
-      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "sourceDetail": "FanDuel Sportsbook event-page browser scrape",
+      "capturedAt": "2026-05-30T04:26:30.840Z",
       "eventUrl": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/iva-jovic-v-naomi-osaka-35660141",
       "players": [
         {
@@ -509,12 +556,31 @@ const rawTennisGames = [
         "centsAtRisk": 100,
         "centsProfitIfWin": 84.7
       },
-      "spread": null,
+      "spread": {
+        "player": "Naomi Osaka",
+        "spread": -0.5,
+        "odds": -118
+      },
+      "total": {
+        "side": "Over",
+        "line": 22.5,
+        "odds": -106
+      },
+      "totalOver": {
+        "side": "Over",
+        "line": 22.5,
+        "odds": -106
+      },
+      "totalUnder": {
+        "side": "Under",
+        "line": 22.5,
+        "odds": -128
+      },
       "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge.",
-      "spreadValue": "No primary game spread captured",
-      "totalValue": "No total captured",
-      "spreadLean": "No spread line",
-      "totalLean": "No total line",
+      "spreadValue": "Naomi Osaka -0.5 (-118)",
+      "totalValue": "22.5 games: Over -106 / Under -128",
+      "spreadLean": "Spread is number-dependent; verify first service cycle",
+      "totalLean": "Total needs live serve data before entry",
       "mlValue": "Iva Jovic +100 / Naomi Osaka -118",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. ML is close to fair; derivative or live entry needs to carry the edge.",
       "noVigNote": "Model 52% vs FanDuel implied 54.1% (-2.1 pts)."
@@ -709,7 +775,21 @@ const rawTennisGames = [
         "valueGrade": "Bet-grade value",
         "betGrade": true
       },
-      "spread": null,
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Maria Sakkari",
+        "line": 1.5,
+        "americanOdds": -110,
+        "modelPct": 50,
+        "impliedPct": 52.4,
+        "edgePct": -2.4,
+        "evPer100": -4.5,
+        "netEvPer100": -6.5,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Negative EV",
+        "betGrade": false
+      },
       "total": {
         "marketType": "Total",
         "selection": "No bet",
@@ -760,8 +840,8 @@ const rawTennisGames = [
     },
     "marketData": {
       "source": "FanDuel Sportsbook",
-      "sourceDetail": "FanDuel Sportsbook browser scrape",
-      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "sourceDetail": "FanDuel Sportsbook event-page browser scrape",
+      "capturedAt": "2026-05-30T04:26:33.874Z",
       "eventUrl": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/maria-sakkari-v-maja-chwalinska-35661307",
       "players": [
         {
@@ -807,12 +887,31 @@ const rawTennisGames = [
         "centsAtRisk": 100,
         "centsProfitIfWin": 118
       },
-      "spread": null,
+      "spread": {
+        "player": "Maria Sakkari",
+        "spread": 1.5,
+        "odds": -110
+      },
+      "total": {
+        "side": "Over",
+        "line": 21.5,
+        "odds": -118
+      },
+      "totalOver": {
+        "side": "Over",
+        "line": 21.5,
+        "odds": -118
+      },
+      "totalUnder": {
+        "side": "Under",
+        "line": 21.5,
+        "odds": -112
+      },
       "priceAction": "Model is meaningfully above FanDuel implied price.",
-      "spreadValue": "No primary game spread captured",
-      "totalValue": "No total captured",
-      "spreadLean": "No spread line",
-      "totalLean": "No total line",
+      "spreadValue": "Maria Sakkari +1.5 (-110)",
+      "totalValue": "21.5 games: Over -118 / Under -112",
+      "spreadLean": "Spread is number-dependent; verify first service cycle",
+      "totalLean": "Total needs live serve data before entry",
       "mlValue": "Maria Sakkari +118 / Maja Chwalinska -142",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. Model is meaningfully above FanDuel implied price.",
       "noVigNote": "Model 56% vs FanDuel implied 45.9% (+10.1 pts)."
@@ -996,18 +1095,32 @@ const rawTennisGames = [
       "ml": {
         "marketType": "ML",
         "selection": "Diana Shnaider",
-        "americanOdds": -320,
+        "americanOdds": -300,
         "modelPct": 53,
-        "impliedPct": 76.2,
-        "edgePct": -23.2,
-        "evPer100": -30.4,
-        "netEvPer100": -32.4,
+        "impliedPct": 75,
+        "edgePct": -22,
+        "evPer100": -29.3,
+        "netEvPer100": -31.3,
         "feePer100": 2,
         "valueIssue": "Favorite price needs better proof",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
-      "spread": null,
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Diana Shnaider",
+        "line": -4.5,
+        "americanOdds": -110,
+        "modelPct": 47,
+        "impliedPct": 52.4,
+        "edgePct": -5.4,
+        "evPer100": -10.3,
+        "netEvPer100": -12.3,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Negative EV",
+        "betGrade": false
+      },
       "total": {
         "marketType": "Total",
         "selection": "No bet",
@@ -1059,62 +1172,81 @@ const rawTennisGames = [
     },
     "marketData": {
       "source": "FanDuel Sportsbook",
-      "sourceDetail": "FanDuel Sportsbook browser scrape",
-      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "sourceDetail": "FanDuel Sportsbook event-page browser scrape",
+      "capturedAt": "2026-05-30T04:26:37.489Z",
       "eventUrl": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/diana-shnaider-v-oleksandra-oliynykova-35660290",
       "players": [
         {
           "name": "Diana Shnaider",
-          "odds": -320,
-          "americanLabel": "-320",
-          "impliedPct": 76.2,
-          "decimalOdds": 1.313,
+          "odds": -300,
+          "americanLabel": "-300",
+          "impliedPct": 75,
+          "decimalOdds": 1.333,
           "modelPct": 53,
-          "edgePct": -23.2,
+          "edgePct": -22,
           "priceBand": "Low-payout favorite",
-          "grossProfitPct": 31.3,
-          "grossPayoutMultiple": 1.313,
+          "grossProfitPct": 33.3,
+          "grossPayoutMultiple": 1.333,
           "centsAtRisk": 100,
-          "centsProfitIfWin": 31.3
+          "centsProfitIfWin": 33.3
         },
         {
           "name": "Oleksandra Oliynykova",
-          "odds": 255,
-          "americanLabel": "+255",
-          "impliedPct": 28.2,
-          "decimalOdds": 3.55,
+          "odds": 235,
+          "americanLabel": "+235",
+          "impliedPct": 29.9,
+          "decimalOdds": 3.35,
           "modelPct": 47,
-          "edgePct": 18.8,
+          "edgePct": 17.1,
           "priceBand": "Underdog",
-          "grossProfitPct": 255,
-          "grossPayoutMultiple": 3.55,
+          "grossProfitPct": 235,
+          "grossPayoutMultiple": 3.35,
           "centsAtRisk": 100,
-          "centsProfitIfWin": 255
+          "centsProfitIfWin": 235
         }
       ],
       "desk": {
         "name": "Diana Shnaider",
-        "odds": -320,
-        "americanLabel": "-320",
-        "impliedPct": 76.2,
-        "decimalOdds": 1.313,
+        "odds": -300,
+        "americanLabel": "-300",
+        "impliedPct": 75,
+        "decimalOdds": 1.333,
         "modelPct": 53,
-        "edgePct": -23.2,
+        "edgePct": -22,
         "priceBand": "Low-payout favorite",
-        "grossProfitPct": 31.3,
-        "grossPayoutMultiple": 1.313,
+        "grossProfitPct": 33.3,
+        "grossPayoutMultiple": 1.333,
         "centsAtRisk": 100,
-        "centsProfitIfWin": 31.3
+        "centsProfitIfWin": 33.3
       },
-      "spread": null,
+      "spread": {
+        "player": "Diana Shnaider",
+        "spread": -4.5,
+        "odds": -110
+      },
+      "total": {
+        "side": "Over",
+        "line": 20.5,
+        "odds": -118
+      },
+      "totalOver": {
+        "side": "Over",
+        "line": 20.5,
+        "odds": -118
+      },
+      "totalUnder": {
+        "side": "Under",
+        "line": 20.5,
+        "odds": -112
+      },
       "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
-      "spreadValue": "No primary game spread captured",
-      "totalValue": "No total captured",
-      "spreadLean": "No spread line",
-      "totalLean": "No total line",
-      "mlValue": "Diana Shnaider -320 / Oleksandra Oliynykova +255",
+      "spreadValue": "Diana Shnaider -4.5 (-110)",
+      "totalValue": "20.5 games: Over -118 / Under -112",
+      "spreadLean": "Spread is number-dependent; verify first service cycle",
+      "totalLean": "Total needs live serve data before entry",
+      "mlValue": "Diana Shnaider -300 / Oleksandra Oliynykova +235",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
-      "noVigNote": "Model 53% vs FanDuel implied 76.2% (-23.2 pts)."
+      "noVigNote": "Model 53% vs FanDuel implied 75% (-22 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Diana-Shnaider-Vs-Oleksandra-Oliynykova/",
     "players": [
@@ -1306,7 +1438,21 @@ const rawTennisGames = [
         "valueGrade": "Bet-grade value",
         "betGrade": true
       },
-      "spread": null,
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Learner Tien",
+        "line": 3.5,
+        "americanOdds": 104,
+        "modelPct": 48,
+        "impliedPct": 49,
+        "edgePct": -1,
+        "evPer100": -2.1,
+        "netEvPer100": -4.1,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Near fair",
+        "betGrade": false
+      },
       "total": {
         "marketType": "Total",
         "selection": "No bet",
@@ -1357,8 +1503,8 @@ const rawTennisGames = [
     },
     "marketData": {
       "source": "FanDuel Sportsbook",
-      "sourceDetail": "FanDuel Sportsbook browser scrape",
-      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "sourceDetail": "FanDuel Sportsbook event-page browser scrape",
+      "capturedAt": "2026-05-30T04:26:41.075Z",
       "eventUrl": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/flavio-cobolli-v-learner-tien-35660296",
       "players": [
         {
@@ -1404,12 +1550,31 @@ const rawTennisGames = [
         "centsAtRisk": 100,
         "centsProfitIfWin": 164
       },
-      "spread": null,
+      "spread": {
+        "player": "Learner Tien",
+        "spread": 3.5,
+        "odds": 104
+      },
+      "total": {
+        "side": "Over",
+        "line": 37.5,
+        "odds": -118
+      },
+      "totalOver": {
+        "side": "Over",
+        "line": 37.5,
+        "odds": -118
+      },
+      "totalUnder": {
+        "side": "Under",
+        "line": 37.5,
+        "odds": -112
+      },
       "priceAction": "Model is meaningfully above FanDuel implied price.",
-      "spreadValue": "No primary game spread captured",
-      "totalValue": "No total captured",
-      "spreadLean": "No spread line",
-      "totalLean": "No total line",
+      "spreadValue": "Learner Tien +3.5 (+104)",
+      "totalValue": "37.5 games: Over -118 / Under -112",
+      "spreadLean": "Spread is number-dependent; verify first service cycle",
+      "totalLean": "Total needs live serve data before entry",
       "mlValue": "Flavio Cobolli -200 / Learner Tien +164",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. Model is meaningfully above FanDuel implied price.",
       "noVigNote": "Model 54% vs FanDuel implied 37.9% (+16.1 pts)."
@@ -1593,18 +1758,32 @@ const rawTennisGames = [
       "ml": {
         "marketType": "ML",
         "selection": "Aryna Sabalenka",
-        "americanOdds": -1300,
+        "americanOdds": -1450,
         "modelPct": 65,
-        "impliedPct": 92.9,
-        "edgePct": -27.9,
-        "evPer100": -30,
-        "netEvPer100": -32,
+        "impliedPct": 93.5,
+        "edgePct": -28.5,
+        "evPer100": -30.5,
+        "netEvPer100": -32.5,
         "feePer100": 2,
         "valueIssue": "Favorite tax trap",
         "valueGrade": "Favorite tax trap",
         "betGrade": false
       },
-      "spread": null,
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Aryna Sabalenka",
+        "line": -6.5,
+        "americanOdds": -116,
+        "modelPct": 55,
+        "impliedPct": 53.7,
+        "edgePct": 1.3,
+        "evPer100": 2.4,
+        "netEvPer100": 0.4,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Near fair",
+        "betGrade": false
+      },
       "total": {
         "marketType": "Total",
         "selection": "No bet",
@@ -1656,62 +1835,81 @@ const rawTennisGames = [
     },
     "marketData": {
       "source": "FanDuel Sportsbook",
-      "sourceDetail": "FanDuel Sportsbook browser scrape",
-      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "sourceDetail": "FanDuel Sportsbook event-page browser scrape",
+      "capturedAt": "2026-05-30T04:26:44.126Z",
       "eventUrl": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/aryna-sabalenka-v-daria-kasatkina-35661462",
       "players": [
         {
           "name": "Aryna Sabalenka",
-          "odds": -1300,
-          "americanLabel": "-1300",
-          "impliedPct": 92.9,
-          "decimalOdds": 1.077,
+          "odds": -1450,
+          "americanLabel": "-1450",
+          "impliedPct": 93.5,
+          "decimalOdds": 1.069,
           "modelPct": 65,
-          "edgePct": -27.9,
+          "edgePct": -28.5,
           "priceBand": "Very expensive favorite",
-          "grossProfitPct": 7.7,
-          "grossPayoutMultiple": 1.077,
+          "grossProfitPct": 6.9,
+          "grossPayoutMultiple": 1.069,
           "centsAtRisk": 100,
-          "centsProfitIfWin": 7.7
+          "centsProfitIfWin": 6.9
         },
         {
           "name": "Daria Kasatkina",
-          "odds": 760,
-          "americanLabel": "+760",
-          "impliedPct": 11.6,
-          "decimalOdds": 8.6,
+          "odds": 810,
+          "americanLabel": "+810",
+          "impliedPct": 11,
+          "decimalOdds": 9.1,
           "modelPct": 35,
-          "edgePct": 23.4,
+          "edgePct": 24,
           "priceBand": "Underdog",
-          "grossProfitPct": 760,
-          "grossPayoutMultiple": 8.6,
+          "grossProfitPct": 810,
+          "grossPayoutMultiple": 9.1,
           "centsAtRisk": 100,
-          "centsProfitIfWin": 760
+          "centsProfitIfWin": 810
         }
       ],
       "desk": {
         "name": "Aryna Sabalenka",
-        "odds": -1300,
-        "americanLabel": "-1300",
-        "impliedPct": 92.9,
-        "decimalOdds": 1.077,
+        "odds": -1450,
+        "americanLabel": "-1450",
+        "impliedPct": 93.5,
+        "decimalOdds": 1.069,
         "modelPct": 65,
-        "edgePct": -27.9,
+        "edgePct": -28.5,
         "priceBand": "Very expensive favorite",
-        "grossProfitPct": 7.7,
-        "grossPayoutMultiple": 1.077,
+        "grossProfitPct": 6.9,
+        "grossPayoutMultiple": 1.069,
         "centsAtRisk": 100,
-        "centsProfitIfWin": 7.7
+        "centsProfitIfWin": 6.9
       },
-      "spread": null,
+      "spread": {
+        "player": "Aryna Sabalenka",
+        "spread": -6.5,
+        "odds": -116
+      },
+      "total": {
+        "side": "Over",
+        "line": 18.5,
+        "odds": 100
+      },
+      "totalOver": {
+        "side": "Over",
+        "line": 18.5,
+        "odds": 100
+      },
+      "totalUnder": {
+        "side": "Under",
+        "line": 18.5,
+        "odds": -134
+      },
       "priceAction": "ML payout is tiny; use spread/total or pass unless the number moves.",
-      "spreadValue": "No primary game spread captured",
-      "totalValue": "No total captured",
-      "spreadLean": "No spread line",
-      "totalLean": "No total line",
-      "mlValue": "Aryna Sabalenka -1300 / Daria Kasatkina +760",
+      "spreadValue": "Aryna Sabalenka -6.5 (-116)",
+      "totalValue": "18.5 games: Over +100 / Under -134",
+      "spreadLean": "Large game spread; ML may be cleaner than laying games",
+      "totalLean": "Total needs live serve data before entry",
+      "mlValue": "Aryna Sabalenka -1450 / Daria Kasatkina +810",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. ML payout is tiny; use spread/total or pass unless the number moves.",
-      "noVigNote": "Model 65% vs FanDuel implied 92.9% (-27.9 pts)."
+      "noVigNote": "Model 65% vs FanDuel implied 93.5% (-28.5 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Aryna-Sabalenka-Vs-Daria-Kasatkina/",
     "players": [
@@ -1892,18 +2090,32 @@ const rawTennisGames = [
       "ml": {
         "marketType": "ML",
         "selection": "Anna Kalinskaya",
-        "americanOdds": -120,
+        "americanOdds": -118,
         "modelPct": 54,
-        "impliedPct": 54.5,
-        "edgePct": -0.5,
-        "evPer100": -1,
-        "netEvPer100": -3,
+        "impliedPct": 54.1,
+        "edgePct": -0.1,
+        "evPer100": -0.2,
+        "netEvPer100": -2.2,
         "feePer100": 2,
         "valueIssue": "Favorite price needs better proof",
         "valueGrade": "Near fair",
         "betGrade": false
       },
-      "spread": null,
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Anna Kalinskaya",
+        "line": -0.5,
+        "americanOdds": -116,
+        "modelPct": 48,
+        "impliedPct": 53.7,
+        "edgePct": -5.7,
+        "evPer100": -10.6,
+        "netEvPer100": -12.6,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Negative EV",
+        "betGrade": false
+      },
       "total": {
         "marketType": "Total",
         "selection": "No bet",
@@ -1954,23 +2166,23 @@ const rawTennisGames = [
     },
     "marketData": {
       "source": "FanDuel Sportsbook",
-      "sourceDetail": "FanDuel Sportsbook browser scrape",
-      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "sourceDetail": "FanDuel Sportsbook event-page browser scrape",
+      "capturedAt": "2026-05-30T04:26:47.341Z",
       "eventUrl": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/anna-kalinskaya-v-camila-osorio-35661205",
       "players": [
         {
           "name": "Anna Kalinskaya",
-          "odds": -120,
-          "americanLabel": "-120",
-          "impliedPct": 54.5,
-          "decimalOdds": 1.833,
+          "odds": -118,
+          "americanLabel": "-118",
+          "impliedPct": 54.1,
+          "decimalOdds": 1.847,
           "modelPct": 54,
-          "edgePct": -0.5,
+          "edgePct": -0.1,
           "priceBand": "Coinflip",
-          "grossProfitPct": 83.3,
-          "grossPayoutMultiple": 1.833,
+          "grossProfitPct": 84.7,
+          "grossPayoutMultiple": 1.847,
           "centsAtRisk": 100,
-          "centsProfitIfWin": 83.3
+          "centsProfitIfWin": 84.7
         },
         {
           "name": "Camila Osorio",
@@ -1989,27 +2201,46 @@ const rawTennisGames = [
       ],
       "desk": {
         "name": "Anna Kalinskaya",
-        "odds": -120,
-        "americanLabel": "-120",
-        "impliedPct": 54.5,
-        "decimalOdds": 1.833,
+        "odds": -118,
+        "americanLabel": "-118",
+        "impliedPct": 54.1,
+        "decimalOdds": 1.847,
         "modelPct": 54,
-        "edgePct": -0.5,
+        "edgePct": -0.1,
         "priceBand": "Coinflip",
-        "grossProfitPct": 83.3,
-        "grossPayoutMultiple": 1.833,
+        "grossProfitPct": 84.7,
+        "grossPayoutMultiple": 1.847,
         "centsAtRisk": 100,
-        "centsProfitIfWin": 83.3
+        "centsProfitIfWin": 84.7
       },
-      "spread": null,
+      "spread": {
+        "player": "Anna Kalinskaya",
+        "spread": -0.5,
+        "odds": -116
+      },
+      "total": {
+        "side": "Over",
+        "line": 21.5,
+        "odds": -126
+      },
+      "totalOver": {
+        "side": "Over",
+        "line": 21.5,
+        "odds": -126
+      },
+      "totalUnder": {
+        "side": "Under",
+        "line": 21.5,
+        "odds": -106
+      },
       "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge.",
-      "spreadValue": "No primary game spread captured",
-      "totalValue": "No total captured",
-      "spreadLean": "No spread line",
-      "totalLean": "No total line",
-      "mlValue": "Anna Kalinskaya -120 / Camila Osorio -102",
+      "spreadValue": "Anna Kalinskaya -0.5 (-116)",
+      "totalValue": "21.5 games: Over -126 / Under -106",
+      "spreadLean": "Spread is number-dependent; verify first service cycle",
+      "totalLean": "Total needs live serve data before entry",
+      "mlValue": "Anna Kalinskaya -118 / Camila Osorio -102",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. ML is close to fair; derivative or live entry needs to carry the edge.",
-      "noVigNote": "Model 54% vs FanDuel implied 54.5% (-0.5 pts)."
+      "noVigNote": "Model 54% vs FanDuel implied 54.1% (-0.1 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Anna-Kalinskaya-Vs-Camila-Osorio/",
     "players": [
@@ -2201,7 +2432,21 @@ const rawTennisGames = [
         "valueGrade": "Negative EV",
         "betGrade": false
       },
-      "spread": null,
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Matteo Berrettini",
+        "line": -4.5,
+        "americanOdds": -110,
+        "modelPct": 46,
+        "impliedPct": 52.4,
+        "edgePct": -6.4,
+        "evPer100": -12.2,
+        "netEvPer100": -14.2,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Negative EV",
+        "betGrade": false
+      },
       "total": {
         "marketType": "Total",
         "selection": "No bet",
@@ -2252,8 +2497,8 @@ const rawTennisGames = [
     },
     "marketData": {
       "source": "FanDuel Sportsbook",
-      "sourceDetail": "FanDuel Sportsbook browser scrape",
-      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "sourceDetail": "FanDuel Sportsbook event-page browser scrape",
+      "capturedAt": "2026-05-30T04:26:50.340Z",
       "eventUrl": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/matteo-berrettini-v-francisco-comesana-35661720",
       "players": [
         {
@@ -2299,12 +2544,31 @@ const rawTennisGames = [
         "centsAtRisk": 100,
         "centsProfitIfWin": 43.5
       },
-      "spread": null,
+      "spread": {
+        "player": "Matteo Berrettini",
+        "spread": -4.5,
+        "odds": -110
+      },
+      "total": {
+        "side": "Over",
+        "line": 37.5,
+        "odds": -120
+      },
+      "totalOver": {
+        "side": "Over",
+        "line": 37.5,
+        "odds": -120
+      },
+      "totalUnder": {
+        "side": "Under",
+        "line": 37.5,
+        "odds": -110
+      },
       "priceAction": "FanDuel price is richer than the model; pass ML unless live state improves.",
-      "spreadValue": "No primary game spread captured",
-      "totalValue": "No total captured",
-      "spreadLean": "No spread line",
-      "totalLean": "No total line",
+      "spreadValue": "Matteo Berrettini -4.5 (-110)",
+      "totalValue": "37.5 games: Over -120 / Under -110",
+      "spreadLean": "Spread is number-dependent; verify first service cycle",
+      "totalLean": "Total needs live serve data before entry",
       "mlValue": "Matteo Berrettini -230 / Francisco Comesana +188",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. FanDuel price is richer than the model; pass ML unless live state improves.",
       "noVigNote": "Model 52% vs FanDuel implied 69.7% (-17.7 pts)."
@@ -2488,18 +2752,32 @@ const rawTennisGames = [
       "ml": {
         "marketType": "ML",
         "selection": "Juan Manuel Cerundolo",
-        "americanOdds": -152,
+        "americanOdds": -140,
         "modelPct": 52,
-        "impliedPct": 60.3,
-        "edgePct": -8.3,
-        "evPer100": -13.8,
-        "netEvPer100": -15.8,
+        "impliedPct": 58.3,
+        "edgePct": -6.3,
+        "evPer100": -10.9,
+        "netEvPer100": -12.9,
         "feePer100": 2,
         "valueIssue": "Favorite price needs better proof",
         "valueGrade": "Negative EV",
         "betGrade": false
       },
-      "spread": null,
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Juan Manuel Cerundolo",
+        "line": -1.5,
+        "americanOdds": -120,
+        "modelPct": 46,
+        "impliedPct": 54.5,
+        "edgePct": -8.5,
+        "evPer100": -15.7,
+        "netEvPer100": -17.7,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Negative EV",
+        "betGrade": false
+      },
       "total": {
         "marketType": "Total",
         "selection": "No bet",
@@ -2550,62 +2828,81 @@ const rawTennisGames = [
     },
     "marketData": {
       "source": "FanDuel Sportsbook",
-      "sourceDetail": "FanDuel Sportsbook browser scrape",
-      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "sourceDetail": "FanDuel Sportsbook event-page browser scrape",
+      "capturedAt": "2026-05-30T04:26:53.476Z",
       "eventUrl": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/juan-manuel-cerundolo-v-martin-landaluce-35661300",
       "players": [
         {
           "name": "Juan Manuel Cerundolo",
-          "odds": -152,
-          "americanLabel": "-152",
-          "impliedPct": 60.3,
-          "decimalOdds": 1.658,
+          "odds": -140,
+          "americanLabel": "-140",
+          "impliedPct": 58.3,
+          "decimalOdds": 1.714,
           "modelPct": 52,
-          "edgePct": -8.3,
+          "edgePct": -6.3,
           "priceBand": "Moderate favorite",
-          "grossProfitPct": 65.8,
-          "grossPayoutMultiple": 1.658,
+          "grossProfitPct": 71.4,
+          "grossPayoutMultiple": 1.714,
           "centsAtRisk": 100,
-          "centsProfitIfWin": 65.8
+          "centsProfitIfWin": 71.4
         },
         {
           "name": "Martin Landaluce",
-          "odds": 126,
-          "americanLabel": "+126",
-          "impliedPct": 44.2,
-          "decimalOdds": 2.26,
+          "odds": 116,
+          "americanLabel": "+116",
+          "impliedPct": 46.3,
+          "decimalOdds": 2.16,
           "modelPct": 48,
-          "edgePct": 3.8,
-          "priceBand": "Underdog",
-          "grossProfitPct": 126,
-          "grossPayoutMultiple": 2.26,
+          "edgePct": 1.7,
+          "priceBand": "Coinflip",
+          "grossProfitPct": 116,
+          "grossPayoutMultiple": 2.16,
           "centsAtRisk": 100,
-          "centsProfitIfWin": 126
+          "centsProfitIfWin": 116
         }
       ],
       "desk": {
         "name": "Juan Manuel Cerundolo",
-        "odds": -152,
-        "americanLabel": "-152",
-        "impliedPct": 60.3,
-        "decimalOdds": 1.658,
+        "odds": -140,
+        "americanLabel": "-140",
+        "impliedPct": 58.3,
+        "decimalOdds": 1.714,
         "modelPct": 52,
-        "edgePct": -8.3,
+        "edgePct": -6.3,
         "priceBand": "Moderate favorite",
-        "grossProfitPct": 65.8,
-        "grossPayoutMultiple": 1.658,
+        "grossProfitPct": 71.4,
+        "grossPayoutMultiple": 1.714,
         "centsAtRisk": 100,
-        "centsProfitIfWin": 65.8
+        "centsProfitIfWin": 71.4
       },
-      "spread": null,
+      "spread": {
+        "player": "Juan Manuel Cerundolo",
+        "spread": -1.5,
+        "odds": -120
+      },
+      "total": {
+        "side": "Over",
+        "line": 38.5,
+        "odds": -110
+      },
+      "totalOver": {
+        "side": "Over",
+        "line": 38.5,
+        "odds": -110
+      },
+      "totalUnder": {
+        "side": "Under",
+        "line": 38.5,
+        "odds": -122
+      },
       "priceAction": "FanDuel price is richer than the model; pass ML unless live state improves.",
-      "spreadValue": "No primary game spread captured",
-      "totalValue": "No total captured",
-      "spreadLean": "No spread line",
-      "totalLean": "No total line",
-      "mlValue": "Juan Manuel Cerundolo -152 / Martin Landaluce +126",
+      "spreadValue": "Juan Manuel Cerundolo -1.5 (-120)",
+      "totalValue": "38.5 games: Over -110 / Under -122",
+      "spreadLean": "Spread is number-dependent; verify first service cycle",
+      "totalLean": "Total needs live serve data before entry",
+      "mlValue": "Juan Manuel Cerundolo -140 / Martin Landaluce +116",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. FanDuel price is richer than the model; pass ML unless live state improves.",
-      "noVigNote": "Model 52% vs FanDuel implied 60.3% (-8.3 pts)."
+      "noVigNote": "Model 52% vs FanDuel implied 58.3% (-6.3 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Juan-Manuel-Cerundolo-Vs-Martin-Landaluce/",
     "players": [
@@ -2786,18 +3083,32 @@ const rawTennisGames = [
       "ml": {
         "marketType": "ML",
         "selection": "Amanda Anisimova",
-        "americanOdds": -580,
+        "americanOdds": -530,
         "modelPct": 61,
-        "impliedPct": 85.3,
-        "edgePct": -24.3,
-        "evPer100": -28.5,
-        "netEvPer100": -30.5,
+        "impliedPct": 84.1,
+        "edgePct": -23.1,
+        "evPer100": -27.5,
+        "netEvPer100": -29.5,
         "feePer100": 2,
         "valueIssue": "Favorite tax trap",
         "valueGrade": "Favorite tax trap",
         "betGrade": false
       },
-      "spread": null,
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Amanda Anisimova",
+        "line": -5.5,
+        "americanOdds": 104,
+        "modelPct": 55,
+        "impliedPct": 49,
+        "edgePct": 6,
+        "evPer100": 12.2,
+        "netEvPer100": 10.2,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Watch only",
+        "betGrade": false
+      },
       "total": {
         "marketType": "Total",
         "selection": "No bet",
@@ -2849,62 +3160,81 @@ const rawTennisGames = [
     },
     "marketData": {
       "source": "FanDuel Sportsbook",
-      "sourceDetail": "FanDuel Sportsbook browser scrape",
-      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "sourceDetail": "FanDuel Sportsbook event-page browser scrape",
+      "capturedAt": "2026-05-30T04:26:56.557Z",
       "eventUrl": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/diane-parry-v-amanda-anisimova-35661210",
       "players": [
         {
           "name": "Diane Parry",
-          "odds": 420,
-          "americanLabel": "+420",
-          "impliedPct": 19.2,
-          "decimalOdds": 5.2,
+          "odds": 385,
+          "americanLabel": "+385",
+          "impliedPct": 20.6,
+          "decimalOdds": 4.85,
           "modelPct": 39,
-          "edgePct": 19.8,
+          "edgePct": 18.4,
           "priceBand": "Underdog",
-          "grossProfitPct": 420,
-          "grossPayoutMultiple": 5.2,
+          "grossProfitPct": 385,
+          "grossPayoutMultiple": 4.85,
           "centsAtRisk": 100,
-          "centsProfitIfWin": 420
+          "centsProfitIfWin": 385
         },
         {
           "name": "Amanda Anisimova",
-          "odds": -580,
-          "americanLabel": "-580",
-          "impliedPct": 85.3,
-          "decimalOdds": 1.172,
+          "odds": -530,
+          "americanLabel": "-530",
+          "impliedPct": 84.1,
+          "decimalOdds": 1.189,
           "modelPct": 61,
-          "edgePct": -24.3,
+          "edgePct": -23.1,
           "priceBand": "Very expensive favorite",
-          "grossProfitPct": 17.2,
-          "grossPayoutMultiple": 1.172,
+          "grossProfitPct": 18.9,
+          "grossPayoutMultiple": 1.189,
           "centsAtRisk": 100,
-          "centsProfitIfWin": 17.2
+          "centsProfitIfWin": 18.9
         }
       ],
       "desk": {
         "name": "Amanda Anisimova",
-        "odds": -580,
-        "americanLabel": "-580",
-        "impliedPct": 85.3,
-        "decimalOdds": 1.172,
+        "odds": -530,
+        "americanLabel": "-530",
+        "impliedPct": 84.1,
+        "decimalOdds": 1.189,
         "modelPct": 61,
-        "edgePct": -24.3,
+        "edgePct": -23.1,
         "priceBand": "Very expensive favorite",
-        "grossProfitPct": 17.2,
-        "grossPayoutMultiple": 1.172,
+        "grossProfitPct": 18.9,
+        "grossPayoutMultiple": 1.189,
         "centsAtRisk": 100,
-        "centsProfitIfWin": 17.2
+        "centsProfitIfWin": 18.9
       },
-      "spread": null,
+      "spread": {
+        "player": "Amanda Anisimova",
+        "spread": -5.5,
+        "odds": 104
+      },
+      "total": {
+        "side": "Over",
+        "line": 19.5,
+        "odds": -130
+      },
+      "totalOver": {
+        "side": "Over",
+        "line": 19.5,
+        "odds": -130
+      },
+      "totalUnder": {
+        "side": "Under",
+        "line": 19.5,
+        "odds": -102
+      },
       "priceAction": "ML payout is tiny; use spread/total or pass unless the number moves.",
-      "spreadValue": "No primary game spread captured",
-      "totalValue": "No total captured",
-      "spreadLean": "No spread line",
-      "totalLean": "No total line",
-      "mlValue": "Diane Parry +420 / Amanda Anisimova -580",
+      "spreadValue": "Amanda Anisimova -5.5 (+104)",
+      "totalValue": "19.5 games: Over -130 / Under -102",
+      "spreadLean": "Spread is number-dependent; verify first service cycle",
+      "totalLean": "Total needs live serve data before entry",
+      "mlValue": "Diane Parry +385 / Amanda Anisimova -530",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. ML payout is tiny; use spread/total or pass unless the number moves.",
-      "noVigNote": "Model 61% vs FanDuel implied 85.3% (-24.3 pts)."
+      "noVigNote": "Model 61% vs FanDuel implied 84.1% (-23.1 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Diane-Parry-Vs-Amanda-Anisimova/",
     "players": [
@@ -3085,18 +3415,32 @@ const rawTennisGames = [
       "ml": {
         "marketType": "ML",
         "selection": "Alejandro Tabilo",
-        "americanOdds": -490,
+        "americanOdds": -520,
         "modelPct": 61,
-        "impliedPct": 83.1,
-        "edgePct": -22.1,
-        "evPer100": -26.6,
-        "netEvPer100": -28.6,
+        "impliedPct": 83.9,
+        "edgePct": -22.9,
+        "evPer100": -27.3,
+        "netEvPer100": -29.3,
         "feePer100": 2,
         "valueIssue": "Favorite tax trap",
         "valueGrade": "Favorite tax trap",
         "betGrade": false
       },
-      "spread": null,
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Alejandro Tabilo",
+        "line": -6.5,
+        "americanOdds": -128,
+        "modelPct": 51,
+        "impliedPct": 56.1,
+        "edgePct": -5.1,
+        "evPer100": -9.2,
+        "netEvPer100": -11.2,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Negative EV",
+        "betGrade": false
+      },
       "total": {
         "marketType": "Total",
         "selection": "No bet",
@@ -3148,62 +3492,81 @@ const rawTennisGames = [
     },
     "marketData": {
       "source": "FanDuel Sportsbook",
-      "sourceDetail": "FanDuel Sportsbook browser scrape",
-      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "sourceDetail": "FanDuel Sportsbook event-page browser scrape",
+      "capturedAt": "2026-05-30T04:26:59.591Z",
       "eventUrl": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/moise-kouame-v-alejandro-tabilo-35660500",
       "players": [
         {
           "name": "Moise Kouame",
-          "odds": 365,
-          "americanLabel": "+365",
-          "impliedPct": 21.5,
-          "decimalOdds": 4.65,
+          "odds": 390,
+          "americanLabel": "+390",
+          "impliedPct": 20.4,
+          "decimalOdds": 4.9,
           "modelPct": 39,
-          "edgePct": 17.5,
+          "edgePct": 18.6,
           "priceBand": "Underdog",
-          "grossProfitPct": 365,
-          "grossPayoutMultiple": 4.65,
+          "grossProfitPct": 390,
+          "grossPayoutMultiple": 4.9,
           "centsAtRisk": 100,
-          "centsProfitIfWin": 365
+          "centsProfitIfWin": 390
         },
         {
           "name": "Alejandro Tabilo",
-          "odds": -490,
-          "americanLabel": "-490",
-          "impliedPct": 83.1,
-          "decimalOdds": 1.204,
+          "odds": -520,
+          "americanLabel": "-520",
+          "impliedPct": 83.9,
+          "decimalOdds": 1.192,
           "modelPct": 61,
-          "edgePct": -22.1,
+          "edgePct": -22.9,
           "priceBand": "Very expensive favorite",
-          "grossProfitPct": 20.4,
-          "grossPayoutMultiple": 1.204,
+          "grossProfitPct": 19.2,
+          "grossPayoutMultiple": 1.192,
           "centsAtRisk": 100,
-          "centsProfitIfWin": 20.4
+          "centsProfitIfWin": 19.2
         }
       ],
       "desk": {
         "name": "Alejandro Tabilo",
-        "odds": -490,
-        "americanLabel": "-490",
-        "impliedPct": 83.1,
-        "decimalOdds": 1.204,
+        "odds": -520,
+        "americanLabel": "-520",
+        "impliedPct": 83.9,
+        "decimalOdds": 1.192,
         "modelPct": 61,
-        "edgePct": -22.1,
+        "edgePct": -22.9,
         "priceBand": "Very expensive favorite",
-        "grossProfitPct": 20.4,
-        "grossPayoutMultiple": 1.204,
+        "grossProfitPct": 19.2,
+        "grossPayoutMultiple": 1.192,
         "centsAtRisk": 100,
-        "centsProfitIfWin": 20.4
+        "centsProfitIfWin": 19.2
       },
-      "spread": null,
+      "spread": {
+        "player": "Alejandro Tabilo",
+        "spread": -6.5,
+        "odds": -128
+      },
+      "total": {
+        "side": "Over",
+        "line": 34.5,
+        "odds": -110
+      },
+      "totalOver": {
+        "side": "Over",
+        "line": 34.5,
+        "odds": -110
+      },
+      "totalUnder": {
+        "side": "Under",
+        "line": 34.5,
+        "odds": -120
+      },
       "priceAction": "ML payout is tiny; use spread/total or pass unless the number moves.",
-      "spreadValue": "No primary game spread captured",
-      "totalValue": "No total captured",
-      "spreadLean": "No spread line",
-      "totalLean": "No total line",
-      "mlValue": "Moise Kouame +365 / Alejandro Tabilo -490",
+      "spreadValue": "Alejandro Tabilo -6.5 (-128)",
+      "totalValue": "34.5 games: Over -110 / Under -120",
+      "spreadLean": "Large game spread; ML may be cleaner than laying games",
+      "totalLean": "Total needs live serve data before entry",
+      "mlValue": "Moise Kouame +390 / Alejandro Tabilo -520",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. ML payout is tiny; use spread/total or pass unless the number moves.",
-      "noVigNote": "Model 61% vs FanDuel implied 83.1% (-22.1 pts)."
+      "noVigNote": "Model 61% vs FanDuel implied 83.9% (-22.9 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Moise-Kouame-Vs-Alejandro-Tabilo/",
     "players": [
@@ -3436,8 +3799,8 @@ const rawTennisGames = [
     },
     "marketData": {
       "source": "FanDuel Sportsbook",
-      "sourceDetail": "FanDuel Sportsbook browser scrape",
-      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "sourceDetail": "FanDuel Sportsbook event-page browser scrape",
+      "capturedAt": "2026-05-30T04:27:01.715Z",
       "eventUrl": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/matteo-arnaldi-v-raphael-collignon-35661715",
       "players": [
         {
@@ -3683,7 +4046,21 @@ const rawTennisGames = [
         "valueGrade": "Negative EV",
         "betGrade": false
       },
-      "spread": null,
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Victoria Mboko",
+        "line": -0.5,
+        "americanOdds": -120,
+        "modelPct": 45,
+        "impliedPct": 54.5,
+        "edgePct": -9.5,
+        "evPer100": -17.5,
+        "netEvPer100": -19.5,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Negative EV",
+        "betGrade": false
+      },
       "total": {
         "marketType": "Total",
         "selection": "No bet",
@@ -3734,8 +4111,8 @@ const rawTennisGames = [
     },
     "marketData": {
       "source": "FanDuel Sportsbook",
-      "sourceDetail": "FanDuel Sportsbook browser scrape",
-      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "sourceDetail": "FanDuel Sportsbook event-page browser scrape",
+      "capturedAt": "2026-05-30T04:27:04.792Z",
       "eventUrl": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/victoria-mboko-v-madison-keys-35661727",
       "players": [
         {
@@ -3781,12 +4158,31 @@ const rawTennisGames = [
         "centsAtRisk": 100,
         "centsProfitIfWin": 83.3
       },
-      "spread": null,
+      "spread": {
+        "player": "Victoria Mboko",
+        "spread": -0.5,
+        "odds": -120
+      },
+      "total": {
+        "side": "Over",
+        "line": 22.5,
+        "odds": -108
+      },
+      "totalOver": {
+        "side": "Over",
+        "line": 22.5,
+        "odds": -108
+      },
+      "totalUnder": {
+        "side": "Under",
+        "line": 22.5,
+        "odds": -126
+      },
       "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge.",
-      "spreadValue": "No primary game spread captured",
-      "totalValue": "No total captured",
-      "spreadLean": "No spread line",
-      "totalLean": "No total line",
+      "spreadValue": "Victoria Mboko -0.5 (-120)",
+      "totalValue": "22.5 games: Over -108 / Under -126",
+      "spreadLean": "Spread is number-dependent; verify first service cycle",
+      "totalLean": "Total needs live serve data before entry",
       "mlValue": "Victoria Mboko -120 / Madison Keys +100",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. ML is close to fair; derivative or live entry needs to carry the edge.",
       "noVigNote": "Model 51% vs FanDuel implied 54.5% (-3.5 pts)."
@@ -3981,7 +4377,21 @@ const rawTennisGames = [
         "valueGrade": "Negative EV",
         "betGrade": false
       },
-      "spread": null,
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Coco Gauff",
+        "line": -4.5,
+        "americanOdds": -118,
+        "modelPct": 52,
+        "impliedPct": 54.1,
+        "edgePct": -2.1,
+        "evPer100": -3.9,
+        "netEvPer100": -5.9,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Near fair",
+        "betGrade": false
+      },
       "total": {
         "marketType": "Total",
         "selection": "No bet",
@@ -4033,8 +4443,8 @@ const rawTennisGames = [
     },
     "marketData": {
       "source": "FanDuel Sportsbook",
-      "sourceDetail": "FanDuel Sportsbook browser scrape",
-      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "sourceDetail": "FanDuel Sportsbook event-page browser scrape",
+      "capturedAt": "2026-05-30T04:27:07.841Z",
       "eventUrl": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/coco-gauff-v-anastasia-potapova-35661654",
       "players": [
         {
@@ -4080,12 +4490,31 @@ const rawTennisGames = [
         "centsAtRisk": 100,
         "centsProfitIfWin": 27.4
       },
-      "spread": null,
+      "spread": {
+        "player": "Coco Gauff",
+        "spread": -4.5,
+        "odds": -118
+      },
+      "total": {
+        "side": "Over",
+        "line": 20.5,
+        "odds": -120
+      },
+      "totalOver": {
+        "side": "Over",
+        "line": 20.5,
+        "odds": -120
+      },
+      "totalUnder": {
+        "side": "Under",
+        "line": 20.5,
+        "odds": -110
+      },
       "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
-      "spreadValue": "No primary game spread captured",
-      "totalValue": "No total captured",
-      "spreadLean": "No spread line",
-      "totalLean": "No total line",
+      "spreadValue": "Coco Gauff -4.5 (-118)",
+      "totalValue": "20.5 games: Over -120 / Under -110",
+      "spreadLean": "Spread is number-dependent; verify first service cycle",
+      "totalLean": "Total needs live serve data before entry",
       "mlValue": "Coco Gauff -365 / Anastasia Potapova +285",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
       "noVigNote": "Model 58% vs FanDuel implied 78.5% (-20.5 pts)."
@@ -4331,8 +4760,8 @@ const rawTennisGames = [
     },
     "marketData": {
       "source": "FanDuel Sportsbook",
-      "sourceDetail": "FanDuel Sportsbook browser scrape",
-      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "sourceDetail": "FanDuel Sportsbook event-page browser scrape",
+      "capturedAt": "2026-05-30T04:27:09.944Z",
       "eventUrl": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/jaime-faria-v-frances-tiafoe-35661543",
       "players": [
         {
@@ -4630,8 +5059,8 @@ const rawTennisGames = [
     },
     "marketData": {
       "source": "FanDuel Sportsbook",
-      "sourceDetail": "FanDuel Sportsbook browser scrape",
-      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "sourceDetail": "FanDuel Sportsbook event-page browser scrape",
+      "capturedAt": "2026-05-30T04:27:11.831Z",
       "eventUrl": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/felix-auger-aliassime-v-brandon-nakashima-35662034",
       "players": [
         {
