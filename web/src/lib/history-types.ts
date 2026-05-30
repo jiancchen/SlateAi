@@ -58,6 +58,8 @@ export type HistoryPerformance = {
   wnba?: HistoryRecord
   nba?: HistoryRecord
   tennis?: HistoryRecord
+  atp?: HistoryRecord
+  wta?: HistoryRecord
 }
 
 export type HistoryJournal = {

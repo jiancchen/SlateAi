@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "ensure:generated": "node ../scripts/ensure-generated-web-artifacts.mjs",
+    "publish:current": "node ../scripts/export-public-current.mjs",
     "dev": "npm run ensure:generated && vite",
-    "build": "npm run ensure:generated && vite build",
-    "preview": "npm run ensure:generated && vite preview"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@types/react": "^19.2.15",

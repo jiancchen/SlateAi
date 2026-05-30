@@ -206,6 +206,17 @@ Practical read:
 - combined `H+R+RBI` still has the strongest usable sample among the batting-production lanes
 - `RBI` improved, but it is still the least stable standalone path
 
+Quick `XOPS` check:
+
+- `rolling 7 XOPS Q4` moved `runs` from `34.8%` to `38.6%`
+- `rolling 7 XOPS Q4` moved `H+R+RBI` from `41.2%` to `45.5%`
+- that is useful, but still weaker than the current best `slot + xwOBA` / `xSLG` gates
+
+Conclusion:
+
+- `XOPS` is worth keeping as a secondary batting-production context line
+- it is not strong enough yet to replace the better `runs` or `H+R+RBI` gates
+
 Newest first-inning gate findings:
 
 - `Quiet + clean NRFI` is the best current NRFI keep lane:

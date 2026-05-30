@@ -33,6 +33,7 @@ import {
   type LoadedSlateDay,
   type SlateManifestEntry
 } from './lib/slate-loaders'
+import { isPublicStaticMode } from './lib/api-client'
 import kalshiTennisTradeCandidates from './lib/kalshi-tennis-trade-candidates.generated.json' with { type: 'json' }
 import kalshiTennisSpikeModel from './lib/kalshi-tennis-spike-model.generated.json' with { type: 'json' }
 import kalshiMlbMarkets from './lib/kalshi-mlb-markets.generated.json' with { type: 'json' }
@@ -511,7 +512,8 @@ const buildTrackedPropBoardByGame = (payload: AnyRecord | null) => {
 
   return Object.fromEntries(
     Object.entries(grouped).map(([gameId, picks]) => {
-      const sorted = [...picks].sort((left, right) => (right.confidence ?? 0) - (left.confidence ?? 0))
+      const gamePicks = picks as AnyRecord[]
+      const sorted = [...gamePicks].sort((left, right) => (right.confidence ?? 0) - (left.confidence ?? 0))
       const byType = sorted.reduce((acc: Record<string, AnyRecord[]>, pick: AnyRecord) => {
         if (!acc[pick.propType]) acc[pick.propType] = []
         acc[pick.propType].push(pick)
@@ -1796,6 +1798,14 @@ const buildBalancedRecommendationSet = (
 }
 
 function App() {
+  const publicStaticMode = isPublicStaticMode()
+  const visibleDeskTabs = useMemo(
+    () =>
+      publicStaticMode
+        ? deskTabs.filter((tab) => !['models', 'history', 'stories'].includes(tab.id))
+        : deskTabs,
+    [publicStaticMode]
+  )
   const [activeDayId, setActiveDayId] = useState(defaultSlateDayId)
   const [activeDeskTab, setActiveDeskTab] = useState<DeskTabId>('board')
   const [activeHistoryId, setActiveHistoryId] = useState('')
@@ -1839,6 +1849,12 @@ function App() {
   const [loadingStoryGamesByDay, setLoadingStoryGamesByDay] = useState<Record<string, Record<number, boolean>>>({})
   const [activeStoryId, setActiveStoryId] = useState('')
   const [selectedStoryGamePk, setSelectedStoryGamePk] = useState<number | null>(null)
+
+  useEffect(() => {
+    if (!visibleDeskTabs.some((tab) => tab.id === activeDeskTab)) {
+      setActiveDeskTab('board')
+    }
+  }, [activeDeskTab, visibleDeskTabs])
   const [mlbHistoryWindowByKey, setMlbHistoryWindowByKey] = useState<Record<string, 5 | 10>>({})
   const [activeValueScopeByDay, setActiveValueScopeByDay] = useState<Record<string, string>>({})
 
@@ -3791,7 +3807,7 @@ function App() {
     const date = String(result.date || '')
     const gameId = String(result.gameId || '')
     if (!date) return
-    const targetTab = deskTabs.some((tab) => tab.id === result.targetTab) ? result.targetTab as DeskTabId : 'board'
+    const targetTab = visibleDeskTabs.some((tab) => tab.id === result.targetTab) ? result.targetTab as DeskTabId : 'board'
     const targetFilter = String(result.targetFilter || (targetTab === 'board' ? 'All' : activeFilter))
 
     setActiveDayId(date)
@@ -3992,7 +4008,7 @@ function App() {
         </div>
 
         <div className="desk-tab-row" role="tablist" aria-label="Desk tabs">
-          {deskTabs.map((tab) => (
+          {visibleDeskTabs.map((tab) => (
             <button
               key={tab.id}
               type="button"

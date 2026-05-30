@@ -50,6 +50,7 @@ Reference report:
 |E23|2026-05-29|First-inning keep/fade gate audit|YRFI / NRFI|Completed|Useful selector split found|`Quiet + clean NRFI` hit `63.6%`; `pitcher-leak + double-live YRFI` hit `87.5%` on `8`; `one-side carry YRFI` was a demotion lane at `35.7%`|
 |E24|2026-05-29|Explicit batter outcome corpus + component baselines|Hits / Runs / RBIs / H+R+RBI|Completed|Infrastructure live; runs/H+R+RBI look more liftable than RBI|Backfilled `17,162` batter-game outcomes from `2026-03-26` through `2026-05-28`, added `runs` and combined `H+R+RBI` grading support, and wrote the first baseline report showing `Hits >=1 55.7%`, `Runs >=1 34.8%`, `RBIs >=1 27.1%`, `H+R+RBI >=2 41.2%`, with simple gates lifting runs to `44.1%` and H+R+RBI to `48.0%`|
 |E25|2026-05-30|Batter outcome gate sweeps|Runs / RBIs / H+R+RBI|Completed|Runs and H+R+RBI still look stronger than RBI alone|Best `runs` gate was `slot <= 3 + xwOBA Q4 + OppQ hits delta >= 0` at `43.2%` on `838` vs `34.8%` baseline; best `RBI` gate was `slots 2-5 + xSLG Q4 + xwOBA Q4` at `32.9%` on `1828`; best `H+R+RBI` gate was `slot <= 5 + xwOBA Q4 + xSLG Q4` at `48.7%` on `2206` vs `41.2%` baseline|
+|E26|2026-05-30|Rolling XOPS gate check|Runs / H+R+RBI|Completed|Useful secondary context, weaker than current best gates|`rolling 7 XOPS Q4` improved runs from `34.8%` to `38.6%` and H+R+RBI from `41.2%` to `45.5%`, but it did not beat the existing slot + xwOBA / xSLG gates, so it should stay a confirming layer instead of a primary promotion path|
 
 ## Honest Baseline Metrics
 

@@ -1,7 +1,11 @@
 const DEFAULT_API_TIMEOUT_MS = 1200
 
+const configuredApiBaseUrl = () => import.meta.env.VITE_API_BASE_URL?.trim()
+
+export const isPublicStaticMode = () => import.meta.env.PROD && !configuredApiBaseUrl()
+
 export const getApiBaseUrl = () => {
-  const configured = import.meta.env.VITE_API_BASE_URL?.trim()
+  const configured = configuredApiBaseUrl()
   if (configured) return configured.replace(/\/+$/, '')
 
   if (typeof window !== 'undefined') {
@@ -10,7 +14,9 @@ export const getApiBaseUrl = () => {
       return 'http://127.0.0.1:8787'
     }
 
-    return window.location.origin
+    if (import.meta.env.DEV) {
+      return window.location.origin
+    }
   }
 
   return null
