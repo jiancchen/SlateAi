@@ -825,6 +825,27 @@ h3 {
   backdrop-filter: blur(14px);
 }
 
+.games-rail,
+.detail-canvas,
+.builder-shell,
+.workspace-panel,
+.game-rail-row,
+.detail-kpi-card,
+.analysis-pick-card,
+.boxscore-card,
+.empty-day-panel,
+.meter-card,
+.action-section,
+.ticket-autobuild,
+.detail-panel,
+.pick-panel,
+.odds-panel,
+.model-panel,
+.series-panel {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
 .desk-globalbar {
   position: relative;
   z-index: 40;
@@ -2062,6 +2083,8 @@ h3 {
 
 .game-rail-row {
   position: relative;
+  isolation: isolate;
+  contain: paint;
   overflow: hidden;
   display: block;
   width: 100%;
@@ -2277,6 +2300,25 @@ h3 {
 .detail-canvas-actions {
   flex-wrap: wrap;
   justify-content: flex-end;
+}
+
+.mobile-detail-back {
+  display: none;
+  width: fit-content;
+  min-height: 32px;
+  padding: 0 11px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--heading);
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.mobile-detail-back:active {
+  transform: translateY(1px);
 }
 
 .detail-canvas-header h1 {
@@ -2635,6 +2677,28 @@ h3 {
     border-radius: 0 0 12px 12px;
   }
 
+  .desk-board-workspace.mobile-board-open .detail-canvas {
+    display: none;
+  }
+
+  .desk-board-workspace.mobile-detail-open .games-rail {
+    display: none;
+  }
+
+  .desk-board-workspace.mobile-detail-open .detail-canvas {
+    display: grid;
+  }
+
+  .mobile-detail-back {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .detail-canvas-header {
+    align-items: start;
+  }
+
   .builder-layout {
     grid-template-columns: 1fr;
   }
@@ -2679,6 +2743,21 @@ h3 {
   .history-review-grid,
   .history-sport-metric-grid {
     grid-template-columns: 1fr;
+  }
+
+  .detail-canvas-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .detail-canvas-actions {
+    justify-content: flex-start;
+  }
+
+  .detail-canvas-scroll {
+    padding: 14px;
+    gap: 14px;
   }
 
   .datestrip-meta {

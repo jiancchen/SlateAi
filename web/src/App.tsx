@@ -1847,7 +1847,7 @@ function App() {
   const [modelHistoryLoaded, setModelHistoryLoaded] = useState(false)
   const [storyArchive, setStoryArchive] = useState<StoryArchiveIndexEntry[]>([])
   const [storiesLoaded, setStoriesLoaded] = useState(false)
-  const [loadedStoryDaysById, setLoadedStoryDaysById] = useState<Record<string, StoryArchiveDaySummary>>({})
+  const [loadedStoryDaysById, setLoadedStoryDaysById] = useState<Record<string, StoryArchiveDaySummary | null>>({})
   const [loadingStoryDaysById, setLoadingStoryDaysById] = useState<Record<string, boolean>>({})
   const [loadedStoryGamesByDay, setLoadedStoryGamesByDay] = useState<Record<string, Record<number, StoryArchiveGame>>>({})
   const [loadingStoryGamesByDay, setLoadingStoryGamesByDay] = useState<Record<string, Record<number, boolean>>>({})
@@ -2044,12 +2044,11 @@ function App() {
   }, [activeDeskTab, storiesLoaded])
 
   useEffect(() => {
-    if (!storiesLoaded || !activeStoryId || loadedStoryDaysById[activeStoryId] || loadingStoryDaysById[activeStoryId]) return
+    if (!storiesLoaded || !activeStoryId || activeStoryId in loadedStoryDaysById || loadingStoryDaysById[activeStoryId]) return
 
     setLoadingStoryDaysById((current) => ({ ...current, [activeStoryId]: true }))
     loadStoryDayData(activeStoryId)
       .then((day) => {
-        if (!day) return
         setLoadedStoryDaysById((current) => ({ ...current, [activeStoryId]: day }))
       })
       .catch((error) => {

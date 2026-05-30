@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { MlbDetail } from '../features/mlb/MlbDetail'
 import { TennisDetail } from '../features/tennis/TennisDetail'
 
@@ -55,6 +56,19 @@ export function BoardView(props: BoardViewProps) {
     tennisValueSummary,
     visibleGames
   } = props
+
+  const [isMobileDetailOpen, setIsMobileDetailOpen] = useState(false)
+
+  useEffect(() => {
+    setIsMobileDetailOpen(false)
+  }, [activeDayId, activeFilter, activeValueScope])
+
+  const openBoardGame = (gameId: unknown) => {
+    const nextGameId = String(gameId || '')
+    if (!nextGameId) return
+    setSelectedGameIdByDay((current: AnyRecord) => ({ ...current, [activeDayId]: nextGameId }))
+    setIsMobileDetailOpen(true)
+  }
 
   const miniLineupSlots = [1, 2, 3, 4, 5, 6, 7, 8, 9]
   const formatPitcherHand = (hand: unknown) => {
@@ -341,7 +355,7 @@ export function BoardView(props: BoardViewProps) {
   })()
 
   return (
-    <div className="desk-board-workspace">
+    <div className={`desk-board-workspace ${isMobileDetailOpen ? 'mobile-detail-open' : 'mobile-board-open'}`}>
       <section className="games-rail">
         <div className="games-rail-header">
           <div>
@@ -471,7 +485,7 @@ export function BoardView(props: BoardViewProps) {
                             key={`${row.game.id}-${row.label}-${row.value}`}
                             type="button"
                             className="tennis-value-row"
-                            onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.game.id }))}
+                            onClick={() => openBoardGame(row.game.id)}
                           >
                             <span>
                               <strong>{formatTennisValueSelection(row)}</strong>
@@ -500,7 +514,7 @@ export function BoardView(props: BoardViewProps) {
                             key={`${row.marketTicker}-${row.boardMatchId}`}
                             type="button"
                             className="tennis-value-row tennis-value-row--trade"
-                            onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.game.id }))}
+                            onClick={() => openBoardGame(row.game.id)}
                           >
                             <span>
                               <strong>{row.selection} {Math.round(Number(row.yesAsk || 0) * 100)}c</strong>
@@ -528,7 +542,7 @@ export function BoardView(props: BoardViewProps) {
                             key={`${row.marketTicker}-${row.boardMatchId}-watch`}
                             type="button"
                             className="tennis-value-row tennis-value-row--trade"
-                            onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.game.id }))}
+                            onClick={() => openBoardGame(row.game.id)}
                           >
                             <span>
                               <strong>{row.selection} {Math.round(Number(row.yesAsk || 0) * 100)}c</strong>
@@ -586,7 +600,7 @@ export function BoardView(props: BoardViewProps) {
                               key={`${row.id}-mlb-value`}
                               type="button"
                               className="tennis-value-row"
-                              onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
+                              onClick={() => openBoardGame(row.gameId)}
                             >
                               <span>
                                 <strong>{row.title}</strong>
@@ -625,7 +639,7 @@ export function BoardView(props: BoardViewProps) {
                             key={`${row.gameId}-yrfi-value`}
                             type="button"
                             className="tennis-value-row"
-                            onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
+                            onClick={() => openBoardGame(row.gameId)}
                           >
                             <span>
                               <strong>{row.title}</strong>
@@ -650,7 +664,7 @@ export function BoardView(props: BoardViewProps) {
                             key={`${row.gameId}-nrfi-value`}
                             type="button"
                             className="tennis-value-row"
-                            onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
+                            onClick={() => openBoardGame(row.gameId)}
                           >
                             <span>
                               <strong>{row.title}</strong>
@@ -691,7 +705,7 @@ export function BoardView(props: BoardViewProps) {
                             key={`${row.id}-tb-board`}
                             type="button"
                             className="tennis-value-row"
-                            onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
+                            onClick={() => openBoardGame(row.gameId)}
                           >
                             <span>
                               <strong>{row.title}</strong>
@@ -735,7 +749,7 @@ export function BoardView(props: BoardViewProps) {
                             key={`${row.id}-k-over-board`}
                             type="button"
                             className="tennis-value-row"
-                            onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
+                            onClick={() => openBoardGame(row.gameId)}
                           >
                             <span>
                               <strong>{row.title}</strong>
@@ -757,7 +771,7 @@ export function BoardView(props: BoardViewProps) {
                             key={`${row.id}-k-under-board`}
                             type="button"
                             className="tennis-value-row"
-                            onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
+                            onClick={() => openBoardGame(row.gameId)}
                           >
                             <span>
                               <strong>{row.title}</strong>
@@ -800,7 +814,7 @@ export function BoardView(props: BoardViewProps) {
                             key={`${row.id}-impact-board`}
                             type="button"
                             className="tennis-value-row"
-                            onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
+                            onClick={() => openBoardGame(row.gameId)}
                           >
                             <span>
                               <strong>{row.title}</strong>
@@ -936,10 +950,7 @@ export function BoardView(props: BoardViewProps) {
                               key={`${row.gameId}-${row.playerId ?? row.playerName}-hr-board`}
                               type="button"
                               className="tennis-value-row hr-value-row"
-                              onClick={() => {
-                                if (!row.gameId) return
-                                setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))
-                              }}
+                              onClick={() => openBoardGame(row.gameId)}
                             >
                               <div className="hr-value-top">
                                 <div className="hr-value-title-block">
@@ -996,7 +1007,7 @@ export function BoardView(props: BoardViewProps) {
                             key={`${row.id}-generic50`}
                             type="button"
                             className="tennis-value-row"
-                            onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
+                            onClick={() => openBoardGame(row.gameId)}
                           >
                             <span>
                               <strong>{row.title}</strong>
@@ -1018,7 +1029,7 @@ export function BoardView(props: BoardViewProps) {
                             key={`${row.id}-cheap`}
                             type="button"
                             className="tennis-value-row"
-                            onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
+                            onClick={() => openBoardGame(row.gameId)}
                           >
                             <span>
                               <strong>{row.title}</strong>
@@ -1040,7 +1051,7 @@ export function BoardView(props: BoardViewProps) {
                             key={`${row.id}-take70`}
                             type="button"
                             className="tennis-value-row"
-                            onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: row.gameId }))}
+                            onClick={() => openBoardGame(row.gameId)}
                           >
                             <span>
                               <strong>{row.title}</strong>
@@ -1077,7 +1088,7 @@ export function BoardView(props: BoardViewProps) {
                 type="button"
                 className={`game-rail-row ${game.league === 'MLB' ? 'mlb-logo-card' : ''} ${selectedGame?.id === game.id ? 'active' : ''}`}
                 style={buildGameRailLogoStyle(game) || undefined}
-                onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: game.id }))}
+                onClick={() => openBoardGame(game.id)}
               >
                 <div className="game-rail-row-meta">
                   {renderLeagueBadge(game.league)}
@@ -1138,6 +1149,9 @@ export function BoardView(props: BoardViewProps) {
         ) : selectedGame ? (
           <>
             <div className="detail-canvas-header">
+              <button type="button" className="mobile-detail-back" onClick={() => setIsMobileDetailOpen(false)}>
+                Back to board
+              </button>
               <div className="detail-canvas-title-block">
                 <div className="detail-canvas-topline">
                   {renderLeagueBadge(selectedGame.league)}

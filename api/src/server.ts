@@ -518,10 +518,10 @@ app.get('/api/stories/:date', async (request, reply) => {
   const day = (await loadStoryDayWithFallback(date)) as Record<string, unknown> | null
 
   if (!day) {
-    return reply.code(404).send({
-      error: 'story_day_not_found',
-      message: `No story archive day is available for ${date}`
-    })
+    return {
+      day: null,
+      status: 'missing'
+    }
   }
 
   return { day }
@@ -532,10 +532,10 @@ app.get('/api/stories/:date/games/:gamePk', async (request, reply) => {
   const game = (await loadStoryGameWithFallback(date, gamePk)) as Record<string, unknown> | null
 
   if (!game) {
-    return reply.code(404).send({
-      error: 'story_game_not_found',
-      message: `No story archive game is available for ${date}/${gamePk}`
-    })
+    return {
+      game: null,
+      status: 'missing'
+    }
   }
 
   return { game }
