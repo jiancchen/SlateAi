@@ -1926,6 +1926,96 @@ h3 {
   font: 600 0.82rem/1 var(--mono);
 }
 
+.models-audit-section {
+  display: grid;
+  gap: 12px;
+}
+
+.models-audit-list {
+  display: grid;
+  gap: 12px;
+}
+
+.models-audit-day {
+  display: grid;
+  gap: 14px;
+}
+
+.models-audit-day-header,
+.models-audit-model-topline,
+.models-audit-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.models-audit-day-header strong,
+.models-audit-model-topline strong {
+  color: var(--heading);
+}
+
+.models-audit-models {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 10px;
+}
+
+.models-audit-model-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.025);
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.models-audit-model-topline {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.models-audit-model-topline small,
+.models-audit-stats {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.models-audit-stats {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.models-audit-stats span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 8px;
+}
+
+.model-sport-pill {
+  border-radius: 999px;
+  padding: 4px 8px;
+  background: rgba(103, 232, 185, 0.12);
+  color: var(--accent);
+  font: 700 0.7rem/1 var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.model-sport-pill.tennis {
+  background: rgba(125, 211, 252, 0.14);
+  color: #7dd3fc;
+}
+
+.models-audit-changelog {
+  margin: 0;
+  padding-left: 16px;
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
 .games-rail-header h2 {
   font-size: 14px;
   font-weight: 600;

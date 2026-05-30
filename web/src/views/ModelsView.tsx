@@ -1,3 +1,5 @@
+import type { ModelHistoryEntry } from '../lib/archive-loaders'
+
 type AnyRecord = Record<string, any>
 
 type TrendPoint = {
@@ -43,6 +45,8 @@ type ModelsViewProps = {
   hrTrendSegments: TrendSegment[]
   latestHistoryTrendLabel: string
   latestLineupSnapshot?: string | null
+  modelHistory: ModelHistoryEntry[]
+  modelHistoryLoaded: boolean
   propTrendSegments: TrendSegment[]
   slateMeta: { date: string }
   tennisTrendSegments: TrendSegment[]
@@ -67,6 +71,8 @@ export function ModelsView({
   hrTrendSegments,
   latestHistoryTrendLabel,
   latestLineupSnapshot,
+  modelHistory,
+  modelHistoryLoaded,
   propTrendSegments,
   slateMeta,
   tennisTrendSegments,
@@ -256,6 +262,52 @@ export function ModelsView({
                 </article>
               ))}
             </div>
+
+            <section className="models-audit-section">
+              <div className="action-section-header">
+                <h3>Model change log</h3>
+                <span>{modelHistory.length} days</span>
+              </div>
+              {!modelHistoryLoaded ? (
+                <p className="react-section-copy">Loading model audit trail...</p>
+              ) : modelHistory.length ? (
+                <div className="models-audit-list">
+                  {modelHistory.map((day) => (
+                    <article key={`model-history-${day.id}`} className="history-ledger-card models-audit-day">
+                      <div className="models-audit-day-header">
+                        <div>
+                          <span className="parlay-stat-label">{day.label}</span>
+                          <strong>{day.date}</strong>
+                        </div>
+                        <span className={`history-status-pill ${day.status}`}>{day.status}</span>
+                      </div>
+                      <div className="models-audit-models">
+                        {day.models.map((model) => (
+                          <div key={`${day.id}-${model.id}`} className="models-audit-model-card">
+                            <div className="models-audit-model-topline">
+                              <span className={`model-sport-pill ${String(model.sport).toLowerCase()}`}>{model.sport}</span>
+                              <strong>{model.lane}</strong>
+                              <small>{model.modelName}</small>
+                            </div>
+                            <div className="models-audit-stats">
+                              <span>{model.performanceLabel ?? 'Performance pending'}</span>
+                              <span>{model.coverageLabel ?? 'Coverage not recorded'}</span>
+                            </div>
+                            <ul className="models-audit-changelog">
+                              {model.changelog.slice(0, 4).map((change, index) => (
+                                <li key={`${day.id}-${model.id}-change-${index}`}>{change}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              ) : (
+                <p className="react-section-copy">No model audit entries exported yet.</p>
+              )}
+            </section>
           </>
         ) : (
           <p className="react-section-copy">Loading graded archive...</p>

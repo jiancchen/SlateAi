@@ -3,6 +3,7 @@ import cors from '@fastify/cors'
 import {
   loadHistoryArchive,
   loadHistoryEntry,
+  loadModelHistory,
   loadStoryDayWithFallback,
   loadStoryGameWithFallback,
   loadStoryDay,
@@ -500,6 +501,11 @@ app.get('/api/history/:date', async (request, reply) => {
   return { entry }
 })
 
+app.get('/api/model-history', async () => {
+  const modelHistory = await loadModelHistory()
+  return { modelHistory }
+})
+
 app.get('/api/stories', async () => {
   const stories = await loadStoryIndex()
   return {
@@ -539,11 +545,13 @@ app.get('/api/published/status', async () => {
   const slates = await listSlateManifest()
   const stories = await loadStoryIndex()
   const history = await loadHistoryArchive()
+  const modelHistory = await loadModelHistory()
 
   return {
     slates: slates.length,
     stories: stories.length,
-    history: history.length
+    history: history.length,
+    modelHistory: modelHistory.length
   }
 })
 

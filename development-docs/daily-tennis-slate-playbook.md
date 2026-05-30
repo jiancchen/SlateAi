@@ -32,7 +32,19 @@ python3 pipeline/model_tennis_upset_wins.py --target-date YYYY-MM-DD
 npm --prefix web run build
 ```
 
-If sportsbook/FanDuel tennis lines are not available from an automated pull, capture the slate manually before generating the value board. Store moneyline, spread, and total with timestamp/source, then regenerate so ML/spread/O-U EV does not run on stale or missing prices.
+Before generating the value board, complete the sportsbook line pass. Open each FanDuel event URL stored in `data-private/reference/tennis/fanduel-lines-YYYY-MM-DD.json` and expand the primary `Moneyline`, `Game Handicap`, and `Total Match Games` sections. Store the page pull with timestamp/source in the same slate file:
+
+```json
+{
+  "markets": {
+    "moneyline": [{ "player": "Naomi Osaka", "odds": -118 }],
+    "gameHandicap": [{ "player": "Naomi Osaka", "spread": -0.5, "odds": -118 }],
+    "totalGames": [{ "side": "Over", "line": 22.5, "odds": -106 }]
+  }
+}
+```
+
+Do this before match start. FanDuel can remove spread/total sections or mark the event ended once the match is live or settled. If a market is unavailable, record the reason (`ended`, `not offered`, `blocked`, or `not mapped`) instead of leaving the field silently empty. Do not treat ML/spread/O-U EV as analysis-ready until this coverage is checked and the slate is regenerated.
 
 ## Required Warehouse Checks
 
@@ -43,7 +55,7 @@ Each singles match needs:
 - Recent service and return metrics: hold, second serve, error control, return pressure, closeout.
 - Roland Garros replay flow where available: service games, holds, breaks lost, return games, breaks won, long-game rate.
 - H2H with dates and surfaces, not just total count.
-- FanDuel or sportsbook ML/spread/total when relevant.
+- FanDuel or sportsbook ML/spread/total from event pages, keyed as `moneyline`, `gameHandicap`, and `totalGames`.
 - Kalshi contract data: entry, orderbook, candles, max bid/trade, same-favorite history, similar-entry history.
 
 If any row is missing the core hold/return/error context, mark it "data incomplete" and do not promote it above watch.

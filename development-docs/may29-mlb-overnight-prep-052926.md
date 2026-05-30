@@ -217,6 +217,20 @@ Conclusion:
 - `XOPS` is worth keeping as a secondary batting-production context line
 - it is not strong enough yet to replace the better `runs` or `H+R+RBI` gates
 
+Quick `walks` lane check from archived settled props:
+
+- settled sample with actual walk outcomes: `157`
+- baseline `Over 0.5 walks` hit rate: `35.0%`
+- `Exp walks >= 1.0`: `44.8%` on `29`
+- `posted + Exp walks >= 1.0`: `45.5%` on `11`
+- `starter-wildness-lane`: `75.0%` on `4`
+
+Interpretation:
+
+- the only broad walk signal that currently scales is the model’s own `exp walks` threshold
+- `starter-wildness-lane` looks promising, but the sample is far too small to promote
+- for now, walks should stay a thinner display lane, not a major promoted market
+
 Newest first-inning gate findings:
 
 - `Quiet + clean NRFI` is the best current NRFI keep lane:

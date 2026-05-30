@@ -17,6 +17,8 @@ import type {
 import { mlbPropPerformanceByDate } from './lib/history-prop-performance.generated'
 import {
   loadHistoryArchiveData,
+  loadModelHistoryData,
+  type ModelHistoryEntry,
   loadStoryDayData,
   loadStoryGameData,
   loadStoryArchiveIndexData
@@ -1841,6 +1843,8 @@ function App() {
   const [loadingSlateIds, setLoadingSlateIds] = useState<Record<string, boolean>>({})
   const [historyArchive, setHistoryArchive] = useState<HistoryEntry[]>([])
   const [historyLoaded, setHistoryLoaded] = useState(false)
+  const [modelHistory, setModelHistory] = useState<ModelHistoryEntry[]>([])
+  const [modelHistoryLoaded, setModelHistoryLoaded] = useState(false)
   const [storyArchive, setStoryArchive] = useState<StoryArchiveIndexEntry[]>([])
   const [storiesLoaded, setStoriesLoaded] = useState(false)
   const [loadedStoryDaysById, setLoadedStoryDaysById] = useState<Record<string, StoryArchiveDaySummary>>({})
@@ -1964,6 +1968,26 @@ function App() {
       cancelled = true
     }
   }, [activeDeskTab, historyLoaded])
+
+  useEffect(() => {
+    if (modelHistoryLoaded || activeDeskTab !== 'models') return
+
+    let cancelled = false
+    loadModelHistoryData()
+      .then((history) => {
+        if (cancelled) return
+        setModelHistory(history)
+        setModelHistoryLoaded(true)
+      })
+      .catch((error) => {
+        console.error('Failed to load model history', error)
+        if (!cancelled) setModelHistoryLoaded(true)
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [activeDeskTab, modelHistoryLoaded])
 
   useEffect(() => {
     const query = marketSearch.trim()
@@ -4257,6 +4281,8 @@ function App() {
           hrTrendSegments={hrTrendSegments}
           latestHistoryTrendLabel={latestHistoryTrendLabel}
           latestLineupSnapshot={latestLineupSnapshot}
+          modelHistory={modelHistory}
+          modelHistoryLoaded={modelHistoryLoaded}
           propTrendSegments={propTrendSegments}
           slateMeta={slateMeta}
           tennisTrendSegments={tennisTrendSegments}

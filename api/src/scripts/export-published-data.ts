@@ -13,6 +13,8 @@ import {
 import { dataPrivateRoot, publishedDataRoot, warehousePath } from '../lib/paths.js'
 
 const historyJournalRoot = path.join(dataPrivateRoot, 'history')
+const tennisPredictionsRoot = path.join(dataPrivateRoot, 'predictions', 'tennis')
+const reportsRoot = path.join(dataPrivateRoot, 'reports')
 
 const ensureDir = async (dirPath: string) => {
   await fs.mkdir(dirPath, { recursive: true })
@@ -137,6 +139,30 @@ const toPropRecord = (records: any[], predicate: (record: any) => boolean, hitRe
 }
 
 const toneFromRecord = (wins: number, losses: number) => (wins > losses ? 'positive' : wins === losses ? 'warning' : 'negative')
+
+const pctLabel = (wins?: number, total?: number) => {
+  if (!Number.isFinite(Number(wins)) || !Number.isFinite(Number(total)) || !Number(total)) return 'Pending'
+  return `${wins}-${Number(total) - Number(wins)} (${((Number(wins) / Number(total)) * 100).toFixed(1)}%)`
+}
+
+const propPctLabel = (hits?: number, total?: number) => {
+  if (!Number.isFinite(Number(hits)) || !Number.isFinite(Number(total)) || !Number(total)) return 'Pending'
+  return `${hits}/${total} (${((Number(hits) / Number(total)) * 100).toFixed(1)}%)`
+}
+
+const readJsonFile = (filePath: string) => {
+  if (!fsSync.existsSync(filePath)) return null
+  try {
+    return JSON.parse(fsSync.readFileSync(filePath, 'utf8'))
+  } catch {
+    return null
+  }
+}
+
+const historyRecordLabel = (record: any) =>
+  record ? pctLabel(Number(record.wins), Number(record.wins) + Number(record.losses)) : 'Performance pending'
+
+const propRecordLabel = (record: any) => record ? propPctLabel(Number(record.hits), Number(record.total)) : 'Performance pending'
 
 const readGeneratedHistoryEntries = async () => {
   if (!fsSync.existsSync(historyJournalRoot)) return []
@@ -516,7 +542,212 @@ const exportHistory = async () => {
     await writeJson(path.join(historyRoot, `${id}.json`), entry)
   }
 
-  return history.length
+  return history
+}
+
+const summarizeMlbModelsForDay = (date: string) => {
+  const journalPath = path.join(historyJournalRoot, `mlb-results-${date}.jsonl`)
+  if (!fsSync.existsSync(journalPath)) return []
+  const records = fsSync
+    .readFileSync(journalPath, 'utf8')
+    .trim()
+    .split('\n')
+    .filter(Boolean)
+    .map((line) => JSON.parse(line))
+
+  if (!records.length) return []
+
+  const moneylineRows = records.filter((row) => row.marketType === 'moneyline')
+  const firstInningRows = records.filter((row) => row.marketType === 'firstInning')
+  const hrRows = records.filter((row) => row.marketType === 'homeRun')
+  const propRows = records.filter((row) => row.marketType === 'playerProp')
+  const moneylineHits = moneylineRows.filter((row) => Boolean(row.result?.fullGameHit)).length
+  const first5Hits = moneylineRows.filter((row) => Boolean(row.result?.first5Hit)).length
+  const firstInningHits = firstInningRows.filter((row) => Boolean(row.result?.hit)).length
+  const hrHits = hrRows.filter((row) => Boolean(row.result?.hit)).length
+  const propHits = propRows.filter((row) => Boolean(row.result?.hit)).length
+  const sourceLabels = [...new Set(moneylineRows.map((row) => String(row.sourceLabel ?? '')).filter(Boolean))]
+
+  const models = []
+  if (moneylineRows.length) {
+    models.push({
+      id: `${date}-mlb-sides`,
+      sport: 'MLB',
+      lane: 'Sides',
+      modelName: moneylineRows[0]?.modelName ?? 'mlb-side-board',
+      version: moneylineRows[0]?.sourceType ?? 'journal',
+      performanceLabel: `FG ${pctLabel(moneylineHits, moneylineRows.length)} | F5 ${pctLabel(first5Hits, moneylineRows.length)}`,
+      performancePct: moneylineRows.length ? Number(((moneylineHits / moneylineRows.length) * 100).toFixed(1)) : null,
+      coverageLabel: `${moneylineRows.length} side rows`,
+      changelog: [
+        sourceLabels[0] ? `Input stack: ${sourceLabels[0]}.` : 'Loaded from settled MLB side journal.',
+        'Tracks full-game and first-five separately so late bullpen flips do not hide starter-window errors.',
+        'Daily rows keep confidence, volatility, market price, edge flags, and result labels for backtesting.'
+      ],
+      artifacts: [{ label: `${date} MLB results journal`, path: `data-private/history/mlb-results-${date}.jsonl` }]
+    })
+  }
+  if (firstInningRows.length) {
+    models.push({
+      id: `${date}-mlb-first-inning`,
+      sport: 'MLB',
+      lane: 'YRFI/NRFI',
+      modelName: firstInningRows[0]?.modelName ?? 'mlb-first-inning',
+      performanceLabel: pctLabel(firstInningHits, firstInningRows.length),
+      performancePct: firstInningRows.length ? Number(((firstInningHits / firstInningRows.length) * 100).toFixed(1)) : null,
+      coverageLabel: `${firstInningRows.length} first-inning rows`,
+      changelog: [
+        'Grades first-inning picks as a separate lane instead of blending them with full-game sides.',
+        'Uses the JSONL result journal as the training-ready source of truth.'
+      ],
+      artifacts: [{ label: `${date} MLB results journal`, path: `data-private/history/mlb-results-${date}.jsonl` }]
+    })
+  }
+  if (hrRows.length) {
+    models.push({
+      id: `${date}-mlb-hr`,
+      sport: 'MLB',
+      lane: 'HR board',
+      modelName: hrRows[0]?.modelName ?? 'statcast-hr-prototype',
+      performanceLabel: propPctLabel(hrHits, hrRows.length),
+      performancePct: hrRows.length ? Number(((hrHits / hrRows.length) * 100).toFixed(1)) : null,
+      coverageLabel: `${hrRows.length} HR rows`,
+      changelog: [
+        'Tracks saved HR-board hit rate independently from side model accuracy.',
+        'Keeps player-level failures visible so a good side day cannot mask bad prop selection.'
+      ],
+      artifacts: [{ label: `${date} MLB results journal`, path: `data-private/history/mlb-results-${date}.jsonl` }]
+    })
+  }
+  if (propRows.length) {
+    models.push({
+      id: `${date}-mlb-props`,
+      sport: 'MLB',
+      lane: 'Player props',
+      modelName: propRows[0]?.modelName ?? 'mlb-player-props',
+      performanceLabel: propPctLabel(propHits, propRows.length),
+      performancePct: propRows.length ? Number(((propHits / propRows.length) * 100).toFixed(1)) : null,
+      coverageLabel: `${propRows.length} prop rows`,
+      changelog: [
+        'Grades tracked non-HR props separately from HRs and sides.',
+        'Keeps low-hit prop slates visible on the Models page instead of burying them in day summaries.'
+      ],
+      artifacts: [{ label: `${date} MLB results journal`, path: `data-private/history/mlb-results-${date}.jsonl` }]
+    })
+  }
+
+  return models
+}
+
+const summarizeTennisModelsForDay = (date: string, historyEntry: any | null) => {
+  const models = []
+  const ensemblePath = path.join(tennisPredictionsRoot, `${date}-multimodel-ensemble.json`)
+  const valuePath = path.join(reportsRoot, `tennis-value-backtest-${date}.json`)
+  const spikePath = path.join(reportsRoot, `kalshi-tennis-spike-model-${date}.json`)
+  const ensemble = readJsonFile(ensemblePath)
+  const value = readJsonFile(valuePath)
+  const spike = readJsonFile(spikePath)
+  const tennisRecord = historyEntry?.performance?.tennis
+  const atpRecord = historyEntry?.performance?.atp
+  const wtaRecord = historyEntry?.performance?.wta
+  const ensembleRows = Array.isArray(ensemble?.rows) ? ensemble.rows : []
+  const valueRows = Array.isArray(value?.rows) ? value.rows : []
+  const spikeRows = Array.isArray(spike?.currentCandidates) ? spike.currentCandidates : []
+
+  if (ensemble || tennisRecord) {
+    models.push({
+      id: `${date}-tennis-ensemble`,
+      sport: 'Tennis',
+      lane: 'Winner / ML value',
+      modelName: ensemble?.model ?? 'pandas-ensemble-logit-rf-gb-xgb',
+      version: 'warehouse ensemble',
+      performanceLabel: tennisRecord
+        ? `Desk ${historyRecordLabel(tennisRecord)}${atpRecord ? ` | ATP ${historyRecordLabel(atpRecord)}` : ''}${wtaRecord ? ` | WTA ${historyRecordLabel(wtaRecord)}` : ''}`
+        : 'Pre-match / pending settlement',
+      performancePct: tennisRecord
+        ? Number(((Number(tennisRecord.wins) / (Number(tennisRecord.wins) + Number(tennisRecord.losses))) * 100).toFixed(1))
+        : null,
+      coverageLabel: ensembleRows.length ? `${ensembleRows.length} ensemble rows` : 'No ensemble rows exported',
+      changelog: [
+        'Uses warehouse features and excludes source-site picks such as Tennistonic as direct model inputs.',
+        'Blends data-only and market-calibrated probabilities, then applies risk gates for taxed favorites and fragile profiles.',
+        valueRows.length
+          ? `Value pass graded ${valueRows.length} ML/spread/total rows from FanDuel and model fair prices.`
+          : 'Value pass pending or not exported for this date.'
+      ],
+      artifacts: [
+        ...(ensemble ? [{ label: `${date} tennis ensemble`, path: `data-private/predictions/tennis/${date}-multimodel-ensemble.json` }] : []),
+        ...(value ? [{ label: `${date} tennis value backtest`, path: `data-private/reports/tennis-value-backtest-${date}.json` }] : [])
+      ]
+    })
+  }
+
+  if (spike) {
+    const backtest = spike.modelBacktest ?? {}
+    models.push({
+      id: `${date}-tennis-kalshi-spike`,
+      sport: 'Tennis',
+      lane: 'Prediction-market trade',
+      modelName: 'kalshi-tennis-spike-model',
+      version: 'trade-to-sell',
+      performanceLabel: Number.isFinite(Number(backtest.hit25x))
+        ? `2.5x hit ${(Number(backtest.hit25x) * 100).toFixed(1)}% | ROI ${Number(backtest.roi25xCents ?? 0).toFixed(1)}c`
+        : 'Spike backtest pending',
+      performancePct: Number.isFinite(Number(backtest.hit25x)) ? Number((Number(backtest.hit25x) * 100).toFixed(1)) : null,
+      coverageLabel: `${spikeRows.length} current candidates | ${spike.coverage?.historicalRows ?? 0} historical rows`,
+      changelog: [
+        'Separates trade-to-sell targets from winner picks so losing underdogs can still be profitable exits.',
+        'Requires price-history support from Kalshi candles before a row graduates above watch.',
+        spike.coverage?.weatherNote ?? 'Weather context not yet warehoused for this model.'
+      ],
+      artifacts: [{ label: `${date} Kalshi spike model`, path: `data-private/reports/kalshi-tennis-spike-model-${date}.json` }]
+    })
+  }
+
+  return models
+}
+
+const exportModelHistory = async (history: any[]) => {
+  const modelHistoryRoot = path.join(publishedDataRoot, 'model-history')
+  await ensureDir(modelHistoryRoot)
+
+  const dates = new Set<string>()
+  for (const entry of history) dates.add(String(entry.id))
+  if (fsSync.existsSync(tennisPredictionsRoot)) {
+    for (const fileName of fsSync.readdirSync(tennisPredictionsRoot)) {
+      const match = fileName.match(/^(\d{4}-\d{2}-\d{2})-/)
+      if (match) dates.add(match[1])
+    }
+  }
+  if (fsSync.existsSync(historyJournalRoot)) {
+    for (const fileName of fsSync.readdirSync(historyJournalRoot)) {
+      const match = fileName.match(/^mlb-results-(\d{4}-\d{2}-\d{2})\.jsonl$/)
+      if (match) dates.add(match[1])
+    }
+  }
+
+  const historyByDate = new Map(history.map((entry: any) => [String(entry.id), entry]))
+  const entries = [...dates]
+    .sort((left, right) => right.localeCompare(left))
+    .map((date) => {
+      const historyEntry = historyByDate.get(date) ?? null
+      const models = [
+        ...summarizeMlbModelsForDay(date),
+        ...summarizeTennisModelsForDay(date, historyEntry)
+      ]
+      if (!models.length) return null
+      return {
+        id: date,
+        date,
+        label: historyEntry?.label ?? toTitleDate(date),
+        status: historyEntry?.status ?? 'active',
+        models
+      }
+    })
+    .filter(Boolean)
+
+  await writeJson(path.join(modelHistoryRoot, 'index.json'), entries)
+  return entries.length
 }
 
 const exportStories = async () => {
@@ -566,21 +797,23 @@ const exportStories = async () => {
 const main = async () => {
   await ensureDir(publishedDataRoot)
 
-  const [slates, history, stories] = await Promise.all([
+  const [slates, historyEntries, stories] = await Promise.all([
     exportSlates(),
     exportHistory(),
     exportStories()
   ])
+  const modelHistory = await exportModelHistory(historyEntries)
 
   await writeJson(path.join(publishedDataRoot, 'meta.json'), {
     generatedAt: new Date().toISOString(),
     slates,
-    history,
+    history: historyEntries.length,
+    modelHistory,
     stories
   })
 
   console.log(
-    `Published data exported: ${slates} slates, ${history} history entries, ${stories} story days -> ${publishedDataRoot}`
+    `Published data exported: ${slates} slates, ${historyEntries.length} history entries, ${modelHistory} model-history days, ${stories} story days -> ${publishedDataRoot}`
   )
 }
 

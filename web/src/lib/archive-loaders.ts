@@ -21,6 +21,40 @@ export const loadHistoryArchiveData = async (): Promise<HistoryEntry[]> => {
   return []
 }
 
+export type ModelHistoryEntry = {
+  id: string
+  date: string
+  label: string
+  status: 'graded' | 'active' | 'partial'
+  models: Array<{
+    id: string
+    sport: 'MLB' | 'Tennis' | string
+    lane: string
+    modelName: string
+    version?: string
+    performanceLabel?: string
+    performancePct?: number | null
+    coverageLabel?: string
+    changelog: string[]
+    artifacts?: Array<{ label: string; path: string }>
+  }>
+}
+
+export const loadModelHistoryData = async (): Promise<ModelHistoryEntry[]> => {
+  const apiBase = getApiBaseUrl()
+
+  if (!apiBase) return []
+
+  try {
+    const payload = await fetchJsonWithTimeout<{ modelHistory: ModelHistoryEntry[] }>(`${apiBase}/api/model-history`)
+    if (Array.isArray(payload.modelHistory)) return payload.modelHistory
+  } catch (error) {
+    console.warn('Model history API unavailable.', error)
+  }
+
+  return []
+}
+
 export const loadStoryArchiveIndexData = async (): Promise<StoryArchiveIndexEntry[]> => {
   const apiBase = getApiBaseUrl()
 

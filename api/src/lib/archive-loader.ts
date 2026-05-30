@@ -4,6 +4,7 @@ import { pathToFileURL } from 'node:url'
 import { publishedDataRoot, webLibRoot } from './paths.js'
 
 const historyRoot = path.join(publishedDataRoot, 'history')
+const modelHistoryRoot = path.join(publishedDataRoot, 'model-history')
 const storiesRoot = path.join(publishedDataRoot, 'stories')
 const storySummaryPath = (date: string) => path.join(storiesRoot, date, 'summary.json')
 const storyGamePath = (date: string, gamePk: string | number) => path.join(storiesRoot, date, 'games', `${gamePk}.json`)
@@ -44,6 +45,9 @@ export const loadHistoryArchive = async () =>
 
 export const loadHistoryEntry = async (date: string) =>
   readJsonIfPresent<Record<string, unknown>>(path.join(historyRoot, `${date}.json`))
+
+export const loadModelHistory = async () =>
+  readJsonIfPresent<Array<Record<string, unknown>>>(path.join(modelHistoryRoot, 'index.json')) ?? []
 
 export type StoryArchiveIndexEntry = {
   id: string
