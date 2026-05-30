@@ -150,6 +150,27 @@ export function BoardView(props: BoardViewProps) {
     if (coldNow && expectedHeat) return { emoji: '❄️🔥', label: 'Cold lately, heat-up spot' }
     return null
   }
+  const clampMiniProjection = (value: number, min: number, max: number) => Math.min(max, Math.max(min, value))
+  const buildMiniLineupBasesSignal = (player: AnyRecord | null | undefined) => {
+    if (!player) return null
+    const metrics = player.metrics ?? {}
+    const slot = Number(player.slot || 9)
+    const projectedPa = clampMiniProjection(4.85 - (slot - 1) * 0.11, 3.75, 4.9)
+    const recentTbRate = Number(player.recent?.totalBasesRate || 0)
+    const splitTbRate = Number(player.split?.totalBasesRate || 0)
+    const seasonTbRate = Number(player.season?.totalBasesRate || 0)
+    const weightedTbRate = recentTbRate * 0.45 + splitTbRate * 0.35 + seasonTbRate * 0.2
+    const matchupPressure = clampMiniProjection(Number(metrics.matchupScore || 50) / 100, 0.2, 1.2)
+    const pitchFitPressure = clampMiniProjection(0.85 + Number(metrics.pitchTypeFitScore || 50) / 200, 0.65, 1.35)
+    const expectedBases = projectedPa * weightedTbRate * matchupPressure * pitchFitPressure
+    if (!Number.isFinite(expectedBases) || expectedBases < 1.5) return null
+
+    return {
+      label: `xB ${formatNumber(expectedBases, 1)}`,
+      tone: expectedBases >= 2 ? 'strong' : 'watch',
+      title: `Expected bases ${formatNumber(expectedBases, 2)} | weighted TB/PA ${formatNumber(weightedTbRate, 3)} | projected PA ${formatNumber(projectedPa, 2)}`
+    }
+  }
   const renderMiniLineupOrder = (game: AnyRecord) => {
     const lineupBoard = game.lineupBoard
     if (!lineupBoard?.away && !lineupBoard?.home) return null
@@ -208,6 +229,7 @@ export function BoardView(props: BoardViewProps) {
                   {miniLineupSlots.map((slot) => {
                     const player = playerBySlot.get(slot)
                     const signal = buildMiniLineupSignal(player)
+                    const basesSignal = buildMiniLineupBasesSignal(player)
                     const playerMeta = player
                       ? [player.position, player.bats ? `${player.bats} bat` : null].filter(Boolean).join(' | ')
                       : 'missing / unknown'
@@ -225,6 +247,11 @@ export function BoardView(props: BoardViewProps) {
                           {signal ? (
                             <span className="mini-lineup-player-signal" aria-label={signal.label} title={signal.label}>
                               {signal.emoji}
+                            </span>
+                          ) : null}
+                          {basesSignal ? (
+                            <span className={`mini-lineup-bases-signal ${basesSignal.tone}`} title={basesSignal.title}>
+                              {basesSignal.label}
                             </span>
                           ) : null}
                         </strong>

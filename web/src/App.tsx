@@ -3117,6 +3117,7 @@ function App() {
             const runSlotFactor = slot === 1 ? 1.12 : slot <= 3 ? 1.06 : slot <= 5 ? 1 : 0.9
             const rbiSlotFactor = slot === 1 ? 0.78 : slot <= 3 ? 1.12 : slot <= 5 ? 1.02 : 0.88
             const expectedHits = projectedPa * weightedHitRate
+            const expectedBases = projectedPa * weightedTbRate * matchupPressure * pitchFitPressure
             const expectedRuns =
               projectedPa *
               (
@@ -3155,6 +3156,7 @@ function App() {
             const summaryBits = [
               game.title,
               `slot ${slot}${player.primaryTag ? ` ${player.primaryTag}` : ''}`,
+              `xB ${formatNumber(expectedBases, 2)}`,
               recentXops != null ? `Recent XOPS ${formatSlashMetric(recentXops)}` : null,
               splitXops != null ? `Split XOPS ${formatSlashMetric(splitXops)}${opposingHand ? ` vs ${opposingHand}HP` : ''}` : null,
               Number.isFinite(recentXwoba) && recentXwoba > 0 ? `7d xwOBA ${formatSlashMetric(recentXwoba)}` : null,
@@ -3171,15 +3173,23 @@ function App() {
               confidence: 0,
               sortConfidence: 0,
               sortEdge: productionScore,
-              priceLabel: `Exp H ${formatNumber(expectedHits, 2)} · R ${formatNumber(expectedRuns, 2)} · RBI ${formatNumber(expectedRbis, 2)} · Total ${formatNumber(expectedHrr, 2)} · ${lineupStatus} order`,
+              priceLabel: `xB ${formatNumber(expectedBases, 2)} · Exp H ${formatNumber(expectedHits, 2)} · R ${formatNumber(expectedRuns, 2)} · RBI ${formatNumber(expectedRbis, 2)} · Total ${formatNumber(expectedHrr, 2)} · ${lineupStatus} order`,
               raw: {
                 propType: 'hitRunRbiModel',
                 lineupStatus,
                 productionScore,
+                expectedBases,
                 expectedHits,
                 expectedRuns,
                 expectedRbis,
                 expectedHrr,
+                expectedBasesModel: {
+                  expectedBases,
+                  weightedTbRate,
+                  projectedPa,
+                  matchupPressure,
+                  pitchFitPressure
+                },
                 slot,
                 playerName: player.name
               }

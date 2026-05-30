@@ -1,0 +1,27 @@
+{
+  "slateDate": "2026-05-30",
+  "boardMatchId": "rg-w-aryna-sabalenka-daria-kasatkina-2026-05-30",
+  "boardTitle": "Aryna Sabalenka vs Daria Kasatkina",
+  "flashscoreLabel": "Kasatkina Daria - Sabalenka Aryna",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/",
+  "generatedAt": "2026-05-30T01:22:39.821Z",
+  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/kasatkina-daria-GU42elks/sabalenka-aryna-vyhksgUB/",
+  "matchId": "phqWZGON",
+  "players": [
+    "Daria Kasatkina",
+    "Aryna Sabalenka"
+  ],
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_phqWZGON",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_phqWZGON"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -106,7 +106,10 @@ export const loadSlateGameDetailData = async (date: string, gameId: string): Pro
 
   if (apiBase) {
     try {
-      const payload = await fetchJsonWithTimeout<{ game: Record<string, unknown> }>(`${apiBase}/api/slates/${date}/games/${gameId}`)
+      const payload = await fetchJsonWithTimeout<{ game: Record<string, unknown> }>(
+        `${apiBase}/api/slates/${date}/games/${gameId}`,
+        5000
+      )
       if (payload.game) return payload.game
     } catch (error) {
       console.warn(`Slate game detail API unavailable for ${date}/${gameId}.`, error)

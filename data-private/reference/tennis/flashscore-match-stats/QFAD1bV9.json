@@ -1,0 +1,27 @@
+{
+  "slateDate": "2026-05-30",
+  "boardMatchId": "rg-m-francisco-cerundolo-zachary-svajda-2026-05-30",
+  "boardTitle": "Francisco Cerundolo vs Zachary Svajda",
+  "flashscoreLabel": "Svajda Zachary - Cerundolo Francisco",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "generatedAt": "2026-05-30T01:22:32.996Z",
+  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/cerundolo-francisco-lWQ3G6gB/svajda-zachary-vynGYhMa/",
+  "matchId": "QFAD1bV9",
+  "players": [
+    "Francisco Cerundolo",
+    "Zachary Svajda"
+  ],
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_QFAD1bV9",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_QFAD1bV9"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

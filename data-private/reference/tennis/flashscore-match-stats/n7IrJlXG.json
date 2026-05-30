@@ -1,0 +1,27 @@
+{
+  "slateDate": "2026-05-30",
+  "boardMatchId": "rg-m-flavio-cobolli-learner-tien-2026-05-30",
+  "boardTitle": "Flavio Cobolli vs Learner Tien",
+  "flashscoreLabel": "Tien Learner - Cobolli Flavio",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "generatedAt": "2026-05-30T01:22:31.625Z",
+  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/cobolli-flavio-zDtaCcPe/tien-learner-xUHOBJK6/",
+  "matchId": "n7IrJlXG",
+  "players": [
+    "Flavio Cobolli",
+    "Learner Tien"
+  ],
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_n7IrJlXG",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_n7IrJlXG"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

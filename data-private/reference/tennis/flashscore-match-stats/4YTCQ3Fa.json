@@ -1,0 +1,27 @@
+{
+  "slateDate": "2026-05-30",
+  "boardMatchId": "rg-w-anna-kalinskaya-camila-osorio-2026-05-30",
+  "boardTitle": "Anna Kalinskaya vs Camila Osorio",
+  "flashscoreLabel": "Osorio Camila - Kalinskaya Anna",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/",
+  "generatedAt": "2026-05-30T01:22:38.384Z",
+  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/kalinskaya-anna-KGdcQnEf/osorio-serrano-maria-camila-rysUUciD/",
+  "matchId": "4YTCQ3Fa",
+  "players": [
+    "Anna Kalinskaya",
+    "Camila Osorio"
+  ],
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_4YTCQ3Fa",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_4YTCQ3Fa"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

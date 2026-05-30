@@ -1,0 +1,27 @@
+{
+  "slateDate": "2026-05-30",
+  "boardMatchId": "rg-w-victoria-mboko-madison-keys-2026-05-30",
+  "boardTitle": "Victoria Mboko vs Madison Keys",
+  "flashscoreLabel": "Keys Madison - Mboko Victoria",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/",
+  "generatedAt": "2026-05-30T01:22:46.461Z",
+  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/keys-madison-QwU996PK/mboko-victoria-AqVez8TJ/",
+  "matchId": "OSiYADqI",
+  "players": [
+    "Madison Keys",
+    "Victoria Mboko"
+  ],
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_OSiYADqI",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_OSiYADqI"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

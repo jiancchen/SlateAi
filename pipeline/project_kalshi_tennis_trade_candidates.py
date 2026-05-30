@@ -5,6 +5,7 @@ import json
 import math
 import re
 import sqlite3
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlencode
@@ -312,11 +313,8 @@ def load_player_flow(board_match_id: str | None, selection_name: str | None) -> 
         return training[f"{prefix}_{key}"] if f"{prefix}_{key}" in training.keys() else None
 
     return_pressure = player_metrics.get("return_pressure")
-    opponent_closeout = opponent_metrics.get("closeout")
-    opponent_error_control = opponent_metrics.get("error_control")
-    opponent_hold = opponent_metrics.get("hold")
-    selected_rg_games = training_value(selected_prefix, "rg_flow_games")
     opponent_rg_breaks_lost = training_value(opponent_prefix, "rg_flow_breaks_lost_rate")
+    selected_rg_games = training_value(selected_prefix, "rg_flow_games")
     selected_rg_long_games = training_value(selected_prefix, "rg_flow_long_game_rate")
     opponent_rg_long_games = training_value(opponent_prefix, "rg_flow_long_game_rate")
     return {
@@ -335,9 +333,9 @@ def load_player_flow(board_match_id: str | None, selection_name: str | None) -> 
         "secondServe": player_metrics.get("second_serve"),
         "errorControl": player_metrics.get("error_control"),
         "returnPressure": return_pressure,
-        "opponentHold": opponent_hold,
-        "opponentCloseout": opponent_closeout,
-        "opponentErrorControl": opponent_error_control,
+        "opponentHold": opponent_metrics.get("hold"),
+        "opponentCloseout": opponent_metrics.get("closeout"),
+        "opponentErrorControl": opponent_metrics.get("error_control"),
         "selectedRgFlowGames": selected_rg_games,
         "opponentRgBreaksLostRate": opponent_rg_breaks_lost,
         "selectedRgLongGameRate": selected_rg_long_games,
@@ -358,6 +356,121 @@ def load_player_flow(board_match_id: str | None, selection_name: str | None) -> 
             else None
         ),
     }
+
+
+def init_open_snapshot_tables(conn: sqlite3.Connection) -> None:
+    conn.executescript(
+        """
+        create table if not exists tennis_kalshi_open_orderbook_snapshots (
+          market_ticker text not null,
+          captured_at text not null,
+          event_ticker text,
+          slate_date text,
+          board_match_id text,
+          pair_key text,
+          title text,
+          selection_name text,
+          occurrence_datetime text,
+          yes_bid real,
+          yes_bid_size real,
+          yes_ask real,
+          yes_ask_size real,
+          favorite_ask real,
+          exit20_liquidity real,
+          exit30_liquidity real,
+          last_price real,
+          open_interest real,
+          candidate_tier text,
+          projected_exit real,
+          target_hit_probability real,
+          trade_ev_per_contract real,
+          raw_json text not null,
+          primary key (market_ticker, captured_at)
+        );
+
+        create index if not exists idx_tennis_kalshi_open_snapshots_slate
+          on tennis_kalshi_open_orderbook_snapshots(slate_date, board_match_id);
+        """
+    )
+
+
+def persist_open_snapshots(side_rows: list[dict[str, Any]], candidate_rows: list[dict[str, Any]]) -> None:
+    captured_at = datetime.now(timezone.utc).isoformat()
+    candidate_by_market = {row.get("marketTicker"): row for row in candidate_rows}
+    with sqlite3.connect(DB_PATH) as conn:
+        init_open_snapshot_tables(conn)
+        for side in side_rows:
+            candidate = candidate_by_market.get(side.get("marketTicker")) or {}
+            slate_date = market_date(side.get("occurrenceDatetime")) or side.get("slateDate")
+            raw_payload = {
+                "side": side,
+                "candidate": candidate,
+                "capturedAt": captured_at,
+                "source": "Kalshi open market orderbook",
+            }
+            conn.execute(
+                """
+                insert or replace into tennis_kalshi_match_markets(
+                  market_ticker, event_ticker, series_ticker, slate_date, board_match_id,
+                  pair_key, title, selection_name, normalized_selection_name, result,
+                  expiration_value, status, close_time, last_price_dollars, raw_json
+                ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    side.get("marketTicker"),
+                    side.get("eventTicker"),
+                    str(side.get("eventTicker") or "").split("-")[0],
+                    slate_date,
+                    side.get("boardMatchId"),
+                    side.get("pairKey"),
+                    side.get("title"),
+                    side.get("selection"),
+                    normalize(side.get("selection")),
+                    None,
+                    None,
+                    "open",
+                    side.get("occurrenceDatetime"),
+                    side.get("lastPrice"),
+                    json.dumps(raw_payload, ensure_ascii=False),
+                ),
+            )
+            conn.execute(
+                """
+                insert or replace into tennis_kalshi_open_orderbook_snapshots(
+                  market_ticker, captured_at, event_ticker, slate_date, board_match_id,
+                  pair_key, title, selection_name, occurrence_datetime, yes_bid,
+                  yes_bid_size, yes_ask, yes_ask_size, favorite_ask, exit20_liquidity,
+                  exit30_liquidity, last_price, open_interest, candidate_tier,
+                  projected_exit, target_hit_probability, trade_ev_per_contract, raw_json
+                ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    side.get("marketTicker"),
+                    captured_at,
+                    side.get("eventTicker"),
+                    slate_date,
+                    side.get("boardMatchId"),
+                    side.get("pairKey"),
+                    side.get("title"),
+                    side.get("selection"),
+                    side.get("occurrenceDatetime"),
+                    side.get("yesBid"),
+                    side.get("yesBidSize"),
+                    side.get("yesAsk"),
+                    side.get("yesAskSize"),
+                    candidate.get("favoriteAsk"),
+                    side.get("exit20Liquidity"),
+                    side.get("exit30Liquidity"),
+                    side.get("lastPrice"),
+                    side.get("openInterest"),
+                    candidate.get("candidateTier"),
+                    candidate.get("projectedExit"),
+                    candidate.get("targetHitProbability"),
+                    candidate.get("tradeEvPerContract"),
+                    json.dumps(raw_payload, ensure_ascii=False),
+                ),
+            )
+        conn.commit()
 
 
 def load_kalshi_price_history(board_match_id: str | None, player_flow: dict[str, Any], entry: float) -> dict[str, Any]:
@@ -550,6 +663,7 @@ def main() -> None:
         grouped.setdefault(market.get("event_ticker") or "", []).append(market)
 
     rows: list[dict[str, Any]] = []
+    all_side_rows: list[dict[str, Any]] = []
     for event_ticker, event_markets in sorted(grouped.items()):
         if len(event_markets) < 2:
             continue
@@ -585,6 +699,7 @@ def main() -> None:
         sides = [side for side in sides if side.get("yesAsk") is not None]
         if len(sides) < 2:
             continue
+        all_side_rows.extend(sides)
         sides.sort(key=lambda side: side["yesAsk"])
         dog = sides[0]
         dog["favoriteAsk"] = sides[-1]["yesAsk"]
@@ -618,11 +733,13 @@ def main() -> None:
         rows.append(row)
 
     rows.sort(key=lambda row: (row["candidateTier"] != "trade", -(row.get("tradeEvPctOfEntry") or -9)))
+    persist_open_snapshots(all_side_rows, rows)
     payload = {
         "coverage": {
             "openMarkets": len(markets),
             "events": len(grouped),
             "candidateRows": len(rows),
+            "warehouseOpenSideRows": len(all_side_rows),
             "method": "Active Kalshi ATP/WTA match markets. Entry uses inferred YES ask from order book. Projected exit uses RG historical target-hit buckets plus available player flow context.",
         },
         "candidates": rows,

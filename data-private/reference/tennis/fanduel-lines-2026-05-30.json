@@ -1,0 +1,124 @@
+{
+  "date": "2026-05-30",
+  "capturedAt": "2026-05-30T04:25:05.000Z",
+  "sourceUrls": [
+    "https://sportsbook.fanduel.com/tennis",
+    "https://sportsbook.fanduel.com/tennis?tab=women%27s-french-open"
+  ],
+  "mapped": 16,
+  "unmatched": [],
+  "matches": [
+    {
+      "match": "Francisco Cerundolo vs Zachary Svajda",
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/francisco-cerundolo-v-zachary-svajda-35660507",
+      "markets": { "moneyline": [{ "player": "Francisco Cerundolo", "odds": -1450 }, { "player": "Zachary Svajda", "odds": 810 }] },
+      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Flavio Cobolli vs Learner Tien",
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/flavio-cobolli-v-learner-tien-35660296",
+      "markets": { "moneyline": [{ "player": "Flavio Cobolli", "odds": -200 }, { "player": "Learner Tien", "odds": 164 }] },
+      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Matteo Berrettini vs Francisco Comesana",
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/matteo-berrettini-v-francisco-comesana-35661720",
+      "markets": { "moneyline": [{ "player": "Matteo Berrettini", "odds": -230 }, { "player": "Francisco Comesana", "odds": 188 }] },
+      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Juan Manuel Cerundolo vs Martin Landaluce",
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/juan-manuel-cerundolo-v-martin-landaluce-35661300",
+      "markets": { "moneyline": [{ "player": "Juan Manuel Cerundolo", "odds": -152 }, { "player": "Martin Landaluce", "odds": 126 }] },
+      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Moise Kouame vs Alejandro Tabilo",
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/moise-kouame-v-alejandro-tabilo-35660500",
+      "markets": { "moneyline": [{ "player": "Moise Kouame", "odds": 365 }, { "player": "Alejandro Tabilo", "odds": -490 }] },
+      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Matteo Arnaldi vs Raphael Collignon",
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/matteo-arnaldi-v-raphael-collignon-35661715",
+      "markets": { "moneyline": [{ "player": "Matteo Arnaldi", "odds": 172 }, { "player": "Raphael Collignon", "odds": -205 }] },
+      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Jaime Faria vs Frances Tiafoe",
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/jaime-faria-v-frances-tiafoe-35661543",
+      "markets": { "moneyline": [{ "player": "Jaime Faria", "odds": 155 }, { "player": "Frances Tiafoe", "odds": -192 }] },
+      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Felix Auger-Aliassime vs Brandon Nakashima",
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/felix-auger-aliassime-v-brandon-nakashima-35662034",
+      "markets": { "moneyline": [{ "player": "Felix Auger-Aliassime", "odds": -315 }, { "player": "Brandon Nakashima", "odds": 245 }] },
+      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Iva Jovic vs Naomi Osaka",
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/iva-jovic-v-naomi-osaka-35660141",
+      "markets": { "moneyline": [{ "player": "Iva Jovic", "odds": 100 }, { "player": "Naomi Osaka", "odds": -118 }] },
+      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Maria Sakkari vs Maja Chwalinska",
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/maria-sakkari-v-maja-chwalinska-35661307",
+      "markets": { "moneyline": [{ "player": "Maria Sakkari", "odds": 118 }, { "player": "Maja Chwalinska", "odds": -142 }] },
+      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Diana Shnaider vs Oleksandra Oliynykova",
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/diana-shnaider-v-oleksandra-oliynykova-35660290",
+      "markets": { "moneyline": [{ "player": "Diana Shnaider", "odds": -320 }, { "player": "Oleksandra Oliynykova", "odds": 255 }] },
+      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Anna Kalinskaya vs Camila Osorio",
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/anna-kalinskaya-v-camila-osorio-35661205",
+      "markets": { "moneyline": [{ "player": "Anna Kalinskaya", "odds": -120 }, { "player": "Camila Osorio", "odds": -102 }] },
+      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Aryna Sabalenka vs Daria Kasatkina",
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/aryna-sabalenka-v-daria-kasatkina-35661462",
+      "markets": { "moneyline": [{ "player": "Aryna Sabalenka", "odds": -1300 }, { "player": "Daria Kasatkina", "odds": 760 }] },
+      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Diane Parry vs Amanda Anisimova",
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/diane-parry-v-amanda-anisimova-35661210",
+      "markets": { "moneyline": [{ "player": "Diane Parry", "odds": 420 }, { "player": "Amanda Anisimova", "odds": -580 }] },
+      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Victoria Mboko vs Madison Keys",
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/victoria-mboko-v-madison-keys-35661727",
+      "markets": { "moneyline": [{ "player": "Victoria Mboko", "odds": -120 }, { "player": "Madison Keys", "odds": 100 }] },
+      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    },
+    {
+      "match": "Coco Gauff vs Anastasia Potapova",
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/coco-gauff-v-anastasia-potapova-35661654",
+      "markets": { "moneyline": [{ "player": "Coco Gauff", "odds": -365 }, { "player": "Anastasia Potapova", "odds": 285 }] },
+      "capturedAt": "2026-05-30T04:25:05.000Z",
+      "source": "FanDuel Sportsbook browser scrape"
+    }
+  ]
+}

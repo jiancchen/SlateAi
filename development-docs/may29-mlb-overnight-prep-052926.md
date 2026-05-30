@@ -167,6 +167,27 @@ Newest phase-2 hitter findings:
   - `48.6%` on `35` bets vs `31.0%` baseline
   - this is the best current candidate for a future live `TB` gate
 
+Newest batter-outcome gate findings:
+
+- `Runs`
+  - baseline `34.8%`
+  - best current isolated gate: `slot <= 3 + xwOBA Q4 + OppQ hits delta >= 0`
+  - `43.2%` on `838`
+- `RBIs`
+  - baseline `27.1%`
+  - best current isolated gate: `slots 2-5 + xSLG Q4 + xwOBA Q4`
+  - `32.9%` on `1828`
+- `H+R+RBI`
+  - baseline `41.2%`
+  - best current isolated gate: `slot <= 5 + xwOBA Q4 + xSLG Q4`
+  - `48.7%` on `2206`
+
+Current read:
+
+- `runs` and combined `H+R+RBI` still look more liftable than `RBI` alone
+- `RBI` improved, but it remains the weakest of the three batting-production paths
+- if May 29 settles cleanly, the follow-up should call out whether these same gates held up on the actual slate winners
+
 Newest first-inning gate findings:
 
 - `Quiet + clean NRFI` is the best current NRFI keep lane:
@@ -214,6 +235,11 @@ It is set to keep working through the overnight window by:
   - Statcast TB / singles
   - HR contact-quality filters
   - bounceback / dead-bat selectors
+- once May 29 settles, the follow-up pass should also:
+  - refresh `mlb_batter_game_outcomes`
+  - rerun the batter outcome baseline report
+  - rerun the batter outcome gate sweep
+  - capture which of `hits`, `runs`, `RBIs`, or `H+R+RBI` looks strongest off the settled May 29 result set
 - running closeout automatically if the active date settles
 
 ## 8. Best next model upgrades

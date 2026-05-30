@@ -55,6 +55,10 @@ After the follow-up run finishes, the default review should answer these questio
    - `total bases`
    - `singles`
    - `home runs`
+   - `hits`
+   - `runs`
+   - `RBIs`
+   - `H+R+RBI`
 5. Did any current research flags show up again:
    - `dead_early_loss`
    - `slumping loser`
@@ -68,6 +72,13 @@ Daily backward-analysis artifacts should include:
 - the postmortem markdown
 - the chaos / follow-up markdown
 - any refreshed market-model or prop-signal research docs touched by the day
+
+If the current cycle includes batter-outcome work, the follow-up should also:
+
+- refresh `mlb_batter_game_outcomes`
+- rerun the batter outcome baseline report
+- rerun the batter outcome gate sweep
+- note whether `hits`, `runs`, `RBIs`, or combined `H+R+RBI` was the strongest next candidate
 
 If the day exposed a repeat failure mode, update the relevant research doc or add a new one before moving on to the next slate.
 

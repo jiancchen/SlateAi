@@ -1,0 +1,720 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/moise-kouame-alejandro-tabilo#id:16198524",
+  "eventId": "16198524",
+  "slateDate": "2026-05-30",
+  "boardMatchId": "rg-m-moise-kouame-alejandro-tabilo-2026-05-30",
+  "boardTitle": "Moise Kouame vs Alejandro Tabilo",
+  "capturedAt": "2026-05-30T01:21:32.180Z",
+  "compactEvent": {
+    "id": 16198524,
+    "slug": "moise-kouame-alejandro-tabilo",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1780140000,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "ATP",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 6,
+      "name": "Round of 32",
+      "slug": "round-of-32",
+      "cupRoundType": 16
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 522369,
+      "name": "Moise Kouame",
+      "shortName": "M. Kouamé",
+      "ranking": 318,
+      "currentRanking": 160,
+      "country": {
+        "alpha2": "FR",
+        "alpha3": "FRA",
+        "name": "France",
+        "slug": "france"
+      },
+      "playerTeamInfo": {
+        "height": 1.91,
+        "weight": 73,
+        "plays": "right-handed",
+        "prizeCurrent": 102818,
+        "prizeTotal": 152804,
+        "birthCity": {
+          "name": "Paris",
+          "country": {
+            "alpha2": "FR",
+            "alpha3": "FRA",
+            "name": "France",
+            "slug": "france"
+          },
+          "id": 17983
+        },
+        "id": 20548,
+        "birthplace": "Paris, France",
+        "birthDateTimestamp": 1236297600,
+        "prizeCurrentRaw": {
+          "value": 102818,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 152804,
+          "currency": "EUR"
+        },
+        "currentRanking": 160
+      }
+    },
+    "awayTeam": {
+      "id": 102151,
+      "name": "Alejandro Tabilo",
+      "shortName": "A. Tabilo",
+      "ranking": 36,
+      "currentRanking": 21,
+      "country": {
+        "alpha2": "CL",
+        "alpha3": "CHL",
+        "name": "Chile",
+        "slug": "chile"
+      },
+      "playerTeamInfo": {
+        "height": 1.88,
+        "weight": 75,
+        "plays": "left-handed",
+        "turnedPro": "2015",
+        "prizeCurrent": 645907,
+        "prizeTotal": 4711028,
+        "birthCity": {
+          "name": "Toronto",
+          "country": {
+            "alpha2": "CA",
+            "alpha3": "CAN",
+            "name": "Canada",
+            "slug": "canada"
+          },
+          "id": 19314
+        },
+        "residenceCity": {
+          "name": "Huechuraba, Santiago",
+          "country": {
+            "alpha2": "CL",
+            "alpha3": "CHL",
+            "name": "Chile",
+            "slug": "chile"
+          },
+          "id": 36116
+        },
+        "id": 1931,
+        "birthplace": "Toronto, Canada",
+        "birthDateTimestamp": 865209600,
+        "residence": "Huechuraba, Santiago, Chile",
+        "prizeCurrentRaw": {
+          "value": 645907,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 4711028,
+          "currency": "EUR"
+        },
+        "currentRanking": 21
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "homeTeamSeed": "WC",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "ATP",
+              "slug": "atp",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 7,
+              "country": {},
+              "id": 3,
+              "flag": "atp",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "এটিপি",
+                  "hi": "डब्ल्यूटीए",
+                  "ar": "رابطة محترفي التنس",
+                  "ru": "ATP"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "ATP",
+                "slug": "atp",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 7,
+                "country": {},
+                "id": 3,
+                "flag": "atp",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "এটিপি",
+                    "hi": "डब्ल्यूटीए",
+                    "ar": "رابطة محترفي التنس",
+                    "ru": "ATP"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 35613,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2480,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गर्रोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185245,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1779580800,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "رولان غاروس، باريس، فرنسا"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "season": {
+            "name": "French Open Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85951
+          },
+          "roundInfo": {
+            "round": 6,
+            "name": "Round of 32",
+            "slug": "round-of-32",
+            "cupRoundType": 16
+          },
+          "customId": "bTPsuXie",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-suzanne-lenglen",
+            "name": "Court Suzanne Lenglen",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 17177,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب سوزان لانغلين",
+                "hi": "कोर्ट सुज़ैन लेंग्लेन",
+                "bn": "কোর্ট সুজান লেংলেন"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court Suzanne Lenglen"
+            }
+          },
+          "homeTeam": {
+            "name": "Moise Kouame",
+            "slug": "kouame-moise",
+            "shortName": "M. Kouamé",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 9411,
+            "playerTeamInfo": {
+              "height": 1.91,
+              "weight": 73,
+              "plays": "right-handed",
+              "prizeCurrent": 102818,
+              "prizeTotal": 152804,
+              "birthCity": {
+                "name": "Paris",
+                "country": {
+                  "alpha2": "FR",
+                  "alpha3": "FRA",
+                  "name": "France",
+                  "slug": "france"
+                },
+                "id": 17983
+              },
+              "id": 20548,
+              "birthplace": "Paris, France",
+              "birthDateTimestamp": 1236297600,
+              "prizeCurrentRaw": {
+                "value": 102818,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 152804,
+                "currency": "EUR"
+              },
+              "currentRanking": 160
+            },
+            "nameCode": "KOU",
+            "ranking": 318,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 522369,
+            "fullName": "Moise Kouame",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "مويز كوامي"
+              },
+              "shortNameTranslation": {
+                "ar": "م. كوامي"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Alejandro Tabilo",
+            "slug": "tabilo-alejandro",
+            "shortName": "A. Tabilo",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 13754,
+            "playerTeamInfo": {
+              "height": 1.88,
+              "weight": 75,
+              "plays": "left-handed",
+              "turnedPro": "2015",
+              "prizeCurrent": 645907,
+              "prizeTotal": 4711028,
+              "birthCity": {
+                "name": "Toronto",
+                "country": {
+                  "alpha2": "CA",
+                  "alpha3": "CAN",
+                  "name": "Canada",
+                  "slug": "canada"
+                },
+                "id": 19314
+              },
+              "residenceCity": {
+                "name": "Huechuraba, Santiago",
+                "country": {
+                  "alpha2": "CL",
+                  "alpha3": "CHL",
+                  "name": "Chile",
+                  "slug": "chile"
+                },
+                "id": 36116
+              },
+              "id": 1931,
+              "birthplace": "Toronto, Canada",
+              "birthDateTimestamp": 865209600,
+              "residence": "Huechuraba, Santiago, Chile",
+              "prizeCurrentRaw": {
+                "value": 645907,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 4711028,
+                "currency": "EUR"
+              },
+              "currentRanking": 21
+            },
+            "nameCode": "TAB",
+            "ranking": 36,
+            "class": 1,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "CL",
+              "alpha3": "CHL",
+              "name": "Chile",
+              "slug": "chile"
+            },
+            "id": 102151,
+            "fullName": "Alejandro Tabilo",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "أليخاندرو تابيلو",
+                "bn": "আলেকজান্ডার তাবিলো",
+                "hi": "एलेजांद्रो टाबिलो",
+                "ru": "Табило, Алехандро"
+              },
+              "shortNameTranslation": {
+                "ar": "أ. تابيلو"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198524,
+          "defaultPeriodCount": 5,
+          "slug": "moise-kouame-alejandro-tabilo",
+          "startTimestamp": 1780140000,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": null,
+        "managerDuel": null
+      }
+    },
+    "pointByPoint": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "votes": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "vote": {
+          "vote1": 7667,
+          "vote2": 6667,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": []
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "home": null,
+        "away": {
+          "fractionalValue": "1/5",
+          "expected": 83,
+          "actual": 78,
+          "id": 22143738
+        }
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "featured": {
+          "default": {
+            "sourceId": 195402758,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195402758,
+            "suspended": false,
+            "id": 313065388,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "3/1",
+                "fractionalValue": "7/2",
+                "sourceId": 1391292699,
+                "name": "1",
+                "change": 1
+              },
+              {
+                "initialFractionalValue": "1/4",
+                "fractionalValue": "1/5",
+                "sourceId": 1391292704,
+                "name": "2",
+                "change": -1
+              }
+            ]
+          },
+          "asian": {
+            "sourceId": 195402758,
+            "structureType": 2,
+            "marketId": 12,
+            "marketName": "Total games won",
+            "choiceGroup": "35.5",
+            "isLive": false,
+            "fid": 195402758,
+            "suspended": false,
+            "id": 313110734,
+            "marketGroup": "Total sets/games",
+            "marketPeriod": "Extra time",
+            "choices": [
+              {
+                "initialFractionalValue": "10/11",
+                "fractionalValue": "5/6",
+                "sourceId": 1391361666,
+                "name": "Over",
+                "change": -1
+              },
+              {
+                "initialFractionalValue": "4/5",
+                "fractionalValue": "5/6",
+                "sourceId": 1391361610,
+                "name": "Under",
+                "change": 1
+              }
+            ]
+          },
+          "fullTime": {
+            "sourceId": 195402758,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195402758,
+            "suspended": false,
+            "id": 313065388,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "3/1",
+                "fractionalValue": "7/2",
+                "sourceId": 1391292699,
+                "name": "1",
+                "change": 1
+              },
+              {
+                "initialFractionalValue": "1/4",
+                "fractionalValue": "1/5",
+                "sourceId": 1391292704,
+                "name": "2",
+                "change": -1
+              }
+            ]
+          }
+        },
+        "hasMoreOdds": true
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 389,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 2,
+          "wins": 2,
+          "aces": 12,
+          "firstServePointsScored": 114,
+          "firstServePointsTotal": 167,
+          "firstServeTotal": 278,
+          "secondServePointsScored": 63,
+          "secondServePointsTotal": 97,
+          "secondServeTotal": 111,
+          "breakPointsScored": 10,
+          "breakPointsTotal": 20,
+          "opponentBreakPointsTotal": 22,
+          "opponentBreakPointsScored": 7,
+          "winnersTotal": 94,
+          "unforcedErrorsTotal": 103,
+          "doubleFaults": 14,
+          "avgDoubleFaults": 7,
+          "firstServePercentage": 60.071942446043,
+          "firstServePointsWonPercentage": 68.263473053892,
+          "secondServePercentage": 87.387387387387,
+          "secondServePointsWonPercentage": 56.756756756757,
+          "avgAces": 6,
+          "breakPointsSavedPercentage": 68.181818181818,
+          "breakPointsSavedConvertedPercentage": 50,
+          "tiebreakWinPercentage": 100,
+          "id": 93438,
+          "matches": 2,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 92,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 0,
+          "wins": 1,
+          "aces": 10,
+          "firstServePointsScored": 37,
+          "firstServePointsTotal": 40,
+          "firstServeTotal": 66,
+          "secondServePointsScored": 16,
+          "secondServePointsTotal": 24,
+          "secondServeTotal": 26,
+          "breakPointsScored": 5,
+          "breakPointsTotal": 9,
+          "opponentBreakPointsTotal": 2,
+          "opponentBreakPointsScored": 0,
+          "winnersTotal": 38,
+          "unforcedErrorsTotal": 21,
+          "doubleFaults": 2,
+          "avgDoubleFaults": 2,
+          "firstServePercentage": 60.606060606061,
+          "firstServePointsWonPercentage": 92.5,
+          "secondServePercentage": 92.307692307692,
+          "secondServePointsWonPercentage": 61.538461538462,
+          "avgAces": 10,
+          "breakPointsSavedPercentage": 100,
+          "breakPointsSavedConvertedPercentage": 55.555555555556,
+          "tiebreakWinPercentage": 0,
+          "id": 93426,
+          "matches": 1,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    }
+  }
+}

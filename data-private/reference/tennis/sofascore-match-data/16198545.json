@@ -1,0 +1,723 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/diane-parry-amanda-anisimova#id:16198545",
+  "eventId": "16198545",
+  "slateDate": "2026-05-30",
+  "boardMatchId": "rg-w-diane-parry-amanda-anisimova-2026-05-30",
+  "boardTitle": "Diane Parry vs Amanda Anisimova",
+  "capturedAt": "2026-05-30T01:21:37.935Z",
+  "compactEvent": {
+    "id": 16198545,
+    "slug": "diane-parry-amanda-anisimova",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1780141200,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "WTA",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 6,
+      "name": "Round of 32",
+      "slug": "round-of-32",
+      "cupRoundType": 16
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 247791,
+      "name": "Diane Parry",
+      "shortName": "D. Parry",
+      "ranking": 92,
+      "currentRanking": 70,
+      "country": {
+        "alpha2": "FR",
+        "alpha3": "FRA",
+        "name": "France",
+        "slug": "france"
+      },
+      "playerTeamInfo": {
+        "height": 1.7,
+        "plays": "right-handed",
+        "prizeCurrent": 120833,
+        "prizeTotal": 2943643,
+        "birthCity": {
+          "name": "Nice",
+          "country": {
+            "alpha2": "FR",
+            "alpha3": "FRA",
+            "name": "France",
+            "slug": "france"
+          },
+          "id": 21547
+        },
+        "id": 3549,
+        "birthplace": "Nice, France",
+        "birthDateTimestamp": 1030838400,
+        "prizeCurrentRaw": {
+          "value": 120833,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 2943643,
+          "currency": "EUR"
+        },
+        "currentRanking": 70
+      }
+    },
+    "awayTeam": {
+      "id": 230628,
+      "name": "Amanda Anisimova",
+      "shortName": "A. Anisimova",
+      "ranking": 6,
+      "currentRanking": 5,
+      "country": {
+        "alpha2": "US",
+        "alpha3": "USA",
+        "name": "USA",
+        "slug": "usa"
+      },
+      "playerTeamInfo": {
+        "height": 1.8,
+        "plays": "right-handed",
+        "turnedPro": "2016",
+        "prizeCurrent": 796873,
+        "prizeTotal": 11573594,
+        "birthCity": {
+          "name": "Miami Beach",
+          "state": "US-FL",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 35780
+        },
+        "residenceCity": {
+          "name": "Aventura",
+          "state": "US-FL",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 36086
+        },
+        "id": 240,
+        "birthplace": "Miami Beach, Florida, USA",
+        "birthDateTimestamp": 999216000,
+        "residence": "Aventura, Florida, USA",
+        "prizeCurrentRaw": {
+          "value": 796873,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 11573594,
+          "currency": "EUR"
+        },
+        "currentRanking": 5
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "awayTeamSeed": "6",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "WTA",
+              "slug": "wta",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 6,
+              "country": {},
+              "id": 6,
+              "flag": "wta",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "رابطة لاعبات التنس",
+                  "hi": "चैलेंजर",
+                  "bn": "ডব্লিউটিএ",
+                  "ru": "WTA"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "WTA",
+                "slug": "wta",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 6,
+                "country": {},
+                "id": 6,
+                "flag": "wta",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "ar": "رابطة لاعبات التنس",
+                    "hi": "चैलेंजर",
+                    "bn": "ডব্লিউটিএ",
+                    "ru": "WTA"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 11648,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2577,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गारोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185246,
+            "endTimestamp": 1780704000,
+            "startTimestamp": 1779580800,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "رولان غاروس، باريس، فرنسا"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "season": {
+            "name": "French Open Women Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85953
+          },
+          "roundInfo": {
+            "round": 6,
+            "name": "Round of 32",
+            "slug": "round-of-32",
+            "cupRoundType": 16
+          },
+          "customId": "DmRbsQfZb",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-philippe-chatrier",
+            "name": "Court Philippe Chatrier",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 17178,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب فيليب شاترييه",
+                "hi": "कोर्ट फिलिप चैट्रियर",
+                "bn": "কোর্ট ফিলিপ চ্যাট্রিয়ার"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court Philippe Chatrier"
+            }
+          },
+          "homeTeam": {
+            "name": "Diane Parry",
+            "slug": "parry-diane",
+            "shortName": "D. Parry",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 3907,
+            "playerTeamInfo": {
+              "height": 1.7,
+              "plays": "right-handed",
+              "prizeCurrent": 120833,
+              "prizeTotal": 2943643,
+              "birthCity": {
+                "name": "Nice",
+                "country": {
+                  "alpha2": "FR",
+                  "alpha3": "FRA",
+                  "name": "France",
+                  "slug": "france"
+                },
+                "id": 21547
+              },
+              "id": 3549,
+              "birthplace": "Nice, France",
+              "birthDateTimestamp": 1030838400,
+              "prizeCurrentRaw": {
+                "value": 120833,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 2943643,
+                "currency": "EUR"
+              },
+              "currentRanking": 70
+            },
+            "nameCode": "PAR",
+            "ranking": 92,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 247791,
+            "fullName": "Diane Parry",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ديان باري",
+                "bn": "ডায়ান প্যারি",
+                "hi": "डायन पेरी",
+                "ru": "Парри, Диан"
+              },
+              "shortNameTranslation": {
+                "ar": "د. باري"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Amanda Anisimova",
+            "slug": "anisimova-amanda",
+            "shortName": "A. Anisimova",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 18465,
+            "playerTeamInfo": {
+              "height": 1.8,
+              "plays": "right-handed",
+              "turnedPro": "2016",
+              "prizeCurrent": 796873,
+              "prizeTotal": 11573594,
+              "birthCity": {
+                "name": "Miami Beach",
+                "state": "US-FL",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 35780
+              },
+              "residenceCity": {
+                "name": "Aventura",
+                "state": "US-FL",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 36086
+              },
+              "id": 240,
+              "birthplace": "Miami Beach, Florida, USA",
+              "birthDateTimestamp": 999216000,
+              "residence": "Aventura, Florida, USA",
+              "prizeCurrentRaw": {
+                "value": 796873,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 11573594,
+                "currency": "EUR"
+              },
+              "currentRanking": 5
+            },
+            "nameCode": "ANI",
+            "ranking": 6,
+            "class": 4,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "US",
+              "alpha3": "USA",
+              "name": "USA",
+              "slug": "usa"
+            },
+            "id": 230628,
+            "fullName": "Amanda Anisimova",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "أماندا أنيسيموفا",
+                "bn": "আমান্ডা আনিসিমোভা",
+                "hi": "अमांडा अनीसिमोवा",
+                "ru": "Анисимова, Аманда"
+              },
+              "shortNameTranslation": {
+                "ar": "أ. أنيسيموفا"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198545,
+          "defaultPeriodCount": 3,
+          "slug": "diane-parry-amanda-anisimova",
+          "startTimestamp": 1780141200,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "F"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": null,
+        "managerDuel": null
+      }
+    },
+    "pointByPoint": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "votes": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "vote": {
+          "vote1": 713,
+          "vote2": 3168,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": []
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "home": null,
+        "away": {
+          "fractionalValue": "17/100",
+          "expected": 86,
+          "actual": 91,
+          "id": 22142649
+        }
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "featured": {
+          "default": {
+            "sourceId": 195402799,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195402799,
+            "suspended": false,
+            "id": 313030902,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "5/2",
+                "fractionalValue": "4/1",
+                "sourceId": 1391298530,
+                "name": "1",
+                "change": 1
+              },
+              {
+                "initialFractionalValue": "3/10",
+                "fractionalValue": "17/100",
+                "sourceId": 1391298549,
+                "name": "2",
+                "change": -1
+              }
+            ]
+          },
+          "asian": {
+            "sourceId": 195402799,
+            "structureType": 2,
+            "marketId": 12,
+            "marketName": "Total games won",
+            "choiceGroup": "20.5",
+            "isLive": false,
+            "fid": 195402799,
+            "suspended": false,
+            "id": 313065753,
+            "marketGroup": "Total sets/games",
+            "marketPeriod": "Extra time",
+            "choices": [
+              {
+                "initialFractionalValue": "5/6",
+                "fractionalValue": "10/11",
+                "sourceId": 1391305501,
+                "name": "Over",
+                "change": 1
+              },
+              {
+                "initialFractionalValue": "5/6",
+                "fractionalValue": "4/5",
+                "sourceId": 1391305498,
+                "name": "Under",
+                "change": -1
+              }
+            ]
+          },
+          "fullTime": {
+            "sourceId": 195402799,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195402799,
+            "suspended": false,
+            "id": 313030902,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "5/2",
+                "fractionalValue": "4/1",
+                "sourceId": 1391298530,
+                "name": "1",
+                "change": 1
+              },
+              {
+                "initialFractionalValue": "3/10",
+                "fractionalValue": "17/100",
+                "sourceId": 1391298549,
+                "name": "2",
+                "change": -1
+              }
+            ]
+          }
+        },
+        "hasMoreOdds": true
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 215,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 0,
+          "wins": 2,
+          "aces": 4,
+          "firstServePointsScored": 64,
+          "firstServePointsTotal": 85,
+          "firstServeTotal": 150,
+          "secondServePointsScored": 26,
+          "secondServePointsTotal": 60,
+          "secondServeTotal": 65,
+          "breakPointsScored": 8,
+          "breakPointsTotal": 22,
+          "opponentBreakPointsTotal": 15,
+          "opponentBreakPointsScored": 6,
+          "winnersTotal": 43,
+          "unforcedErrorsTotal": 75,
+          "doubleFaults": 5,
+          "avgDoubleFaults": 2.5,
+          "firstServePercentage": 56.666666666667,
+          "firstServePointsWonPercentage": 75.294117647059,
+          "secondServePercentage": 92.307692307692,
+          "secondServePointsWonPercentage": 40,
+          "avgAces": 2,
+          "breakPointsSavedPercentage": 60,
+          "breakPointsSavedConvertedPercentage": 36.363636363636,
+          "tiebreakWinPercentage": 0,
+          "id": 93548,
+          "matches": 2,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 90,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 0,
+          "wins": 2,
+          "aces": 4,
+          "firstServePointsScored": 30,
+          "firstServePointsTotal": 40,
+          "firstServeTotal": 65,
+          "secondServePointsScored": 11,
+          "secondServePointsTotal": 20,
+          "secondServeTotal": 25,
+          "breakPointsScored": 10,
+          "breakPointsTotal": 18,
+          "opponentBreakPointsTotal": 8,
+          "opponentBreakPointsScored": 3,
+          "winnersTotal": 46,
+          "unforcedErrorsTotal": 10,
+          "doubleFaults": 5,
+          "avgDoubleFaults": 2.5,
+          "firstServePercentage": 61.538461538462,
+          "firstServePointsWonPercentage": 75,
+          "secondServePercentage": 80,
+          "secondServePointsWonPercentage": 44,
+          "avgAces": 2,
+          "breakPointsSavedPercentage": 62.5,
+          "breakPointsSavedConvertedPercentage": 55.555555555556,
+          "tiebreakWinPercentage": 0,
+          "id": 93302,
+          "matches": 2,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    }
+  }
+}

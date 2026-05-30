@@ -1,0 +1,27 @@
+{
+  "slateDate": "2026-05-30",
+  "boardMatchId": "rg-w-coco-gauff-anastasia-potapova-2026-05-30",
+  "boardTitle": "Coco Gauff vs Anastasia Potapova",
+  "flashscoreLabel": "Potapova Anastasia - Gauff Coco",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/",
+  "generatedAt": "2026-05-30T01:22:41.174Z",
+  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/gauff-coco-f5BXmEH6/potapova-anastasia-x81l09qG/",
+  "matchId": "GjbaX6ed",
+  "players": [
+    "Coco Gauff",
+    "Anastasia Potapova"
+  ],
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_GjbaX6ed",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_GjbaX6ed"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

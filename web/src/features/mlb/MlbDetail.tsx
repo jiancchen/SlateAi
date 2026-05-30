@@ -2,6 +2,20 @@ type AnyRecord = Record<string, any>
 
 type MlbDetailProps = Record<string, any>
 
+const propTypeDisplayOrder = ['totalBases', 'pitcherStrikeouts', 'singles', 'walks'] as const
+
+const propTypeLabels: Record<string, string> = {
+  totalBases: 'Total bases',
+  pitcherStrikeouts: 'Pitcher strikeouts',
+  singles: 'Singles',
+  walks: 'Walks',
+  hits: 'Hits',
+  rbi: 'RBIs',
+  runs: 'Runs',
+  hitRunRbi: 'H+R+RBI',
+  hitsRunsRbis: 'H+R+RBI'
+}
+
 export function MlbDetail(props: MlbDetailProps) {
   const {
     game,
@@ -37,8 +51,34 @@ export function MlbDetail(props: MlbDetailProps) {
 
   const projection = game.analysis?.mlbProjection
   const kalshiContext = activeKalshiMlbMarketByGame[game.id] ?? null
-  const featuredProps = game.playerProps?.featured ?? []
-  const allTrackedProps = game.playerProps?.targets ?? featuredProps
+  const allTrackedProps = game.playerProps?.targets ?? game.playerProps?.featured ?? []
+  const propByTypeRaw = game.playerProps?.byType ?? {}
+  const propByType =
+    Object.keys(propByTypeRaw).length > 0
+      ? propByTypeRaw
+      : allTrackedProps.reduce((acc: Record<string, AnyRecord[]>, prop: AnyRecord) => {
+          if (!prop?.propType) return acc
+          if (!acc[prop.propType]) acc[prop.propType] = []
+          acc[prop.propType].push(prop)
+          return acc
+        }, {})
+  const propLaneSections = [
+    ...propTypeDisplayOrder
+      .map((propType) => ({
+        propType,
+        label: propTypeLabels[propType] ?? propType,
+        picks: Array.isArray(propByType[propType]) ? [...propByType[propType]].slice(0, propType === 'pitcherStrikeouts' ? 2 : 2) : []
+      }))
+      .filter((lane) => lane.picks.length > 0),
+    ...Object.entries(propByType)
+      .filter(([propType]) => !propTypeDisplayOrder.includes(propType as (typeof propTypeDisplayOrder)[number]))
+      .map(([propType, picks]) => ({
+        propType,
+        label: propTypeLabels[propType] ?? propType,
+        picks: Array.isArray(picks) ? picks.slice(0, 2) : []
+      }))
+      .filter((lane) => lane.picks.length > 0)
+  ]
   const findPitcherStrikeoutProp = (pitcherName: string) =>
     allTrackedProps.find(
       (prop: AnyRecord) =>
@@ -939,29 +979,39 @@ export function MlbDetail(props: MlbDetailProps) {
         </section>
       ) : null}
 
-      {featuredProps.length > 0 ? (
+      {propLaneSections.length > 0 ? (
         <section className="detail-panel">
           <div className="detail-panel-header">
-            <p className="eyebrow">Featured props</p>
+            <p className="eyebrow">Prop lanes</p>
             <span>{game.playerProps?.summary}</span>
           </div>
-          <div className="react-prop-grid">
-            {featuredProps.slice(0, 6).map((prop: AnyRecord) => (
-              <article key={prop.id} className="react-prop-card">
-                <div className="react-prop-head">
-                  <strong>{prop.playerName}</strong>
-                  <span>{prop.confidence}%</span>
+          <div className="react-prop-lane-grid">
+            {propLaneSections.map((lane) => (
+              <article key={lane.propType} className="react-prop-lane-card">
+                <div className="react-prop-lane-head">
+                  <strong>{lane.label}</strong>
+                  <span>{lane.picks.length} live</span>
                 </div>
-                <p>{prop.marketLabel}</p>
-                {prop.shadowSupportTag ? (
-                  <div className="react-pill-row">
-                    <span className={`game-highlight-chip ${prop.shadowSupportLevel === 'backed' ? 'accent' : 'warning'}`}>
-                      {prop.shadowSupportTag}
-                    </span>
-                  </div>
-                ) : null}
-                <small>{prop.statValueLabel}</small>
-                <small>{prop.reason}</small>
+                <div className="react-prop-grid">
+                  {lane.picks.map((prop: AnyRecord) => (
+                    <article key={prop.id} className="react-prop-card">
+                      <div className="react-prop-head">
+                        <strong>{prop.playerName}</strong>
+                        <span>Score {Math.round(Number(prop.confidence) || 0)}</span>
+                      </div>
+                      <p>{prop.marketLabel}</p>
+                      {prop.shadowSupportTag ? (
+                        <div className="react-pill-row">
+                          <span className={`game-highlight-chip ${prop.shadowSupportLevel === 'backed' ? 'accent' : 'warning'}`}>
+                            {prop.shadowSupportTag}
+                          </span>
+                        </div>
+                      ) : null}
+                      {prop.statValueLabel ? <small>{prop.statValueLabel}</small> : null}
+                      <small>{prop.reason}</small>
+                    </article>
+                  ))}
+                </div>
               </article>
             ))}
           </div>

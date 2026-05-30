@@ -49,6 +49,7 @@ Reference report:
 |E22|2026-05-29|TB shadow sweep: `xSLG + hard-hit + opponent-strength delta`|TB props|Completed|Strongest new shadow candidate so far|Best usable lane was `xSLG >= Q60 + hard-hit >= Q75 + positive opponent-strength delta`: `48.6%` on `35` bets vs `31.0%` baseline|
 |E23|2026-05-29|First-inning keep/fade gate audit|YRFI / NRFI|Completed|Useful selector split found|`Quiet + clean NRFI` hit `63.6%`; `pitcher-leak + double-live YRFI` hit `87.5%` on `8`; `one-side carry YRFI` was a demotion lane at `35.7%`|
 |E24|2026-05-29|Explicit batter outcome corpus + component baselines|Hits / Runs / RBIs / H+R+RBI|Completed|Infrastructure live; runs/H+R+RBI look more liftable than RBI|Backfilled `17,162` batter-game outcomes from `2026-03-26` through `2026-05-28`, added `runs` and combined `H+R+RBI` grading support, and wrote the first baseline report showing `Hits >=1 55.7%`, `Runs >=1 34.8%`, `RBIs >=1 27.1%`, `H+R+RBI >=2 41.2%`, with simple gates lifting runs to `44.1%` and H+R+RBI to `48.0%`|
+|E25|2026-05-30|Batter outcome gate sweeps|Runs / RBIs / H+R+RBI|Completed|Runs and H+R+RBI still look stronger than RBI alone|Best `runs` gate was `slot <= 3 + xwOBA Q4 + OppQ hits delta >= 0` at `43.2%` on `838` vs `34.8%` baseline; best `RBI` gate was `slots 2-5 + xSLG Q4 + xwOBA Q4` at `32.9%` on `1828`; best `H+R+RBI` gate was `slot <= 5 + xwOBA Q4 + xSLG Q4` at `48.7%` on `2206` vs `41.2%` baseline|
 
 ## Honest Baseline Metrics
 

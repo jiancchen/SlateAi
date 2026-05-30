@@ -1,18 +1,18 @@
 {
   "targetDate": "2026-05-29",
   "generatedFrom": "tennis warehouse pandas ensemble",
-  "settledRows": 234,
+  "settledRows": 250,
   "trainingCorpus": {
     "rows": 254,
-    "settledRows": 234,
+    "settledRows": 250,
     "featureColumns": 94,
     "table": "tennis_model_training_rows",
     "jsonPath": "data-private/models/tennis-training-corpus-through-2026-05-29.json"
   },
   "deskBaseline": {
-    "rows": 234,
-    "hits": 156,
-    "hitRate": 0.667,
+    "rows": 250,
+    "hits": 166,
+    "hitRate": 0.664,
     "byDay": {
       "2026-05-21": {
         "rows": 27,
@@ -48,16 +48,21 @@
         "rows": 32,
         "hits": 19,
         "hitRate": 0.594
+      },
+      "2026-05-29": {
+        "rows": 16,
+        "hits": 10,
+        "hitRate": 0.625
       }
     }
   },
   "backtest": {
-    "rows": 234,
-    "hits": 136,
-    "hitRate": 0.581,
-    "brier": 0.2344,
-    "logLoss": 0.6611,
-    "auc": 0.645,
+    "rows": 250,
+    "hits": 146,
+    "hitRate": 0.584,
+    "brier": 0.2339,
+    "logLoss": 0.6601,
+    "auc": 0.638,
     "features": 74,
     "includeMarket": true,
     "chain": {
@@ -71,12 +76,12 @@
     }
   },
   "dataOnlyBacktest": {
-    "rows": 234,
-    "hits": 133,
-    "hitRate": 0.568,
-    "brier": 0.2402,
-    "logLoss": 0.6733,
-    "auc": 0.614,
+    "rows": 250,
+    "hits": 139,
+    "hitRate": 0.556,
+    "brier": 0.2396,
+    "logLoss": 0.6721,
+    "auc": 0.606,
     "features": 68,
     "includeMarket": false
   },

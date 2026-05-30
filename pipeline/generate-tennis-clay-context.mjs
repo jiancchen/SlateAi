@@ -7,11 +7,9 @@ import { buildTennistonicH2HUrl } from '../web/src/lib/tennis-source-mapping.js'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-const DEFAULT_DAY_MODULE = path.resolve(__dirname, '../web/src/lib/day-2026-05-25.js')
-const DEFAULT_OUTPUT = path.resolve(
-  __dirname,
-  '../web/src/lib/day-2026-05-25-tennis-clay-context.generated.json'
-)
+const defaultDayModule = (date) => path.resolve(__dirname, `../web/src/lib/day-${date}.js`)
+const defaultOutput = (date) =>
+  path.resolve(__dirname, `../web/src/lib/day-${date}-tennis-clay-context.generated.json`)
 const DEBUG_PORT = 9222
 const DEBUG_ENDPOINT = `http://127.0.0.1:${DEBUG_PORT}`
 const DEBUG_ORIGIN = DEBUG_ENDPOINT
@@ -22,8 +20,9 @@ const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 const parseArgs = () => {
   const args = process.argv.slice(2)
   const options = {
-    dayModule: DEFAULT_DAY_MODULE,
-    output: DEFAULT_OUTPUT,
+    date: '',
+    dayModule: '',
+    output: '',
     limit: null,
     ids: null,
     timeoutMs: 18000
@@ -31,7 +30,10 @@ const parseArgs = () => {
 
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index]
-    if (arg === '--module') {
+    if (arg === '--date') {
+      options.date = String(args[index + 1] || '')
+      index += 1
+    } else if (arg === '--module') {
       options.dayModule = path.resolve(process.cwd(), args[index + 1])
       index += 1
     } else if (arg === '--output') {
@@ -50,6 +52,14 @@ const parseArgs = () => {
       options.timeoutMs = Number.parseInt(args[index + 1], 10)
       index += 1
     }
+  }
+
+  if (!options.dayModule || !options.output) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(options.date)) {
+      throw new Error('Pass --date YYYY-MM-DD, or both --module and --output')
+    }
+    options.dayModule ||= defaultDayModule(options.date)
+    options.output ||= defaultOutput(options.date)
   }
 
   return options
