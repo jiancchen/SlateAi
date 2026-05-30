@@ -116,13 +116,14 @@ export const loadSlateGameDetailData = async (date: string, gameId: string): Pro
   return {}
 }
 
-export const searchSlateGamesData = async (query: string): Promise<Record<string, unknown>[]> => {
+export const searchSlateGamesData = async (query: string, limit = 80): Promise<Record<string, unknown>[]> => {
   const apiBase = getApiBaseUrl()
   if (!apiBase || !query.trim()) return []
 
   try {
     const payload = await fetchJsonWithTimeout<{ results: Record<string, unknown>[] }>(
-      `${apiBase}/api/search/slates?q=${encodeURIComponent(query)}`
+      `${apiBase}/api/search/slates?q=${encodeURIComponent(query)}&limit=${limit}`,
+      5000
     )
     return Array.isArray(payload.results) ? payload.results : []
   } catch (error) {

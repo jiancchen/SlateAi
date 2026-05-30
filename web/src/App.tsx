@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { type KeyboardEvent as ReactKeyboardEvent, useEffect, useMemo, useRef, useState } from 'react'
 import {
   buildParlayModel,
   createParlayLeg,
@@ -1821,6 +1821,9 @@ function App() {
   const [loadedSlates, setLoadedSlates] = useState<Record<string, LoadedSlateDay>>({})
   const [globalSearchResults, setGlobalSearchResults] = useState<AnyRecord[]>([])
   const [isGlobalSearchLoading, setIsGlobalSearchLoading] = useState(false)
+  const [isSearchFocused, setIsSearchFocused] = useState(false)
+  const [activeSearchResultIndex, setActiveSearchResultIndex] = useState(0)
+  const searchInputRef = useRef<HTMLInputElement | null>(null)
   const [loadedGameDetailsByDay, setLoadedGameDetailsByDay] = useState<Record<string, Record<string, AnyRecord>>>({})
   const [loadingGameDetailsByDay, setLoadingGameDetailsByDay] = useState<Record<string, Record<string, boolean>>>({})
   const [loadedPropBoardsByDay, setLoadedPropBoardsByDay] = useState<Record<string, AnyRecord | null>>({})
@@ -1844,6 +1847,35 @@ function App() {
     updateClock()
     const timer = window.setInterval(updateClock, 60_000)
     return () => window.clearInterval(timer)
+  }, [])
+
+  useEffect(() => {
+    const handleSearchShortcut = (event: KeyboardEvent) => {
+      const target = event.target as HTMLElement | null
+      const isTypingTarget =
+        target &&
+        (target.tagName === 'INPUT' ||
+          target.tagName === 'TEXTAREA' ||
+          target.tagName === 'SELECT' ||
+          target.isContentEditable)
+
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k') {
+        event.preventDefault()
+        searchInputRef.current?.focus()
+        searchInputRef.current?.select()
+        setIsSearchFocused(true)
+        return
+      }
+
+      if (event.key === '/' && !isTypingTarget) {
+        event.preventDefault()
+        searchInputRef.current?.focus()
+        setIsSearchFocused(true)
+      }
+    }
+
+    window.addEventListener('keydown', handleSearchShortcut)
+    return () => window.removeEventListener('keydown', handleSearchShortcut)
   }, [])
 
   useEffect(() => {
@@ -1919,6 +1951,7 @@ function App() {
 
   useEffect(() => {
     const query = marketSearch.trim()
+    setActiveSearchResultIndex(0)
     if (query.length < 2) {
       setGlobalSearchResults([])
       setIsGlobalSearchLoading(false)
@@ -1928,9 +1961,12 @@ function App() {
     let cancelled = false
     setIsGlobalSearchLoading(true)
     const timer = window.setTimeout(() => {
-      searchSlateGamesData(query)
+      searchSlateGamesData(query, 80)
         .then((results) => {
-          if (!cancelled) setGlobalSearchResults(results as AnyRecord[])
+          if (!cancelled) {
+            setGlobalSearchResults(results as AnyRecord[])
+            setActiveSearchResultIndex(0)
+          }
         })
         .catch((error) => {
           console.error(`Failed to search slates for ${query}`, error)
@@ -3572,6 +3608,169 @@ function App() {
   const propConfidenceAverage = selectedPropEntries.length
     ? Math.round(selectedPropEntries.reduce((sum: number, entry: AnyRecord) => sum + (entry.confidence || 0), 0) / selectedPropEntries.length)
     : 0
+  const trimmedMarketSearch = marketSearch.trim()
+  const quickSearchSuggestions = useMemo(() => {
+    const dateLabel = slateMeta.date || activeDayId
+    const mlbGamesCount = games.filter((game: AnyRecord) => game.league === 'MLB').length
+    const tennisGamesCount = games.filter((game: AnyRecord) => game.league === 'Tennis').length
+    const suggestions: AnyRecord[] = [
+      {
+        id: `${activeDayId}:quick:best-props`,
+        kind: 'quick',
+        resultType: 'Props',
+        targetTab: 'parlay',
+        builderCatalogTab: 'props',
+        builderValidityFilter: 'eligible',
+        builderSort: 'confidence',
+        builderLeagueFilter: 'all',
+        propType: 'all',
+        date: activeDayId,
+        dateLabel,
+        title: 'Best props',
+        subtitle: `${dateLabel} | eligible props by confidence`,
+        matchContext: propCatalogEntries.length ? `${propCatalogEntries.length} props` : 'Builder'
+      },
+      {
+        id: `${activeDayId}:quick:value-props`,
+        kind: 'quick',
+        resultType: 'Value props',
+        targetTab: 'parlay',
+        builderCatalogTab: 'props',
+        builderValidityFilter: 'eligible',
+        builderSort: 'edge',
+        builderLeagueFilter: 'all',
+        propType: 'all',
+        date: activeDayId,
+        dateLabel,
+        title: 'Value props',
+        subtitle: `${dateLabel} | props sorted by model edge`,
+        matchContext: 'Edge sort'
+      },
+      {
+        id: `${activeDayId}:quick:all-value`,
+        kind: 'quick',
+        resultType: 'Value board',
+        targetTab: 'board',
+        targetFilter: 'Value',
+        valueScope: 'all',
+        date: activeDayId,
+        dateLabel,
+        title: 'All value lanes',
+        subtitle: `${dateLabel} | sides, props, totals, HR, first inning`,
+        matchContext: 'Board'
+      }
+    ]
+
+    if (mlbGamesCount) {
+      suggestions.push(
+        {
+          id: `${activeDayId}:quick:mlb-hr`,
+          kind: 'quick',
+          resultType: 'HR board',
+          targetTab: 'board',
+          targetFilter: 'Value',
+          valueScope: 'mlb-hr',
+          date: activeDayId,
+          dateLabel,
+          title: 'Home-run value board',
+          subtitle: `${dateLabel} | top HR lanes and Statcast ladder`,
+          matchContext: mlbValueSummary?.homeRunRows?.length ? `${mlbValueSummary.homeRunRows.length} lanes` : 'HR ladder'
+        },
+        {
+          id: `${activeDayId}:quick:tb-props`,
+          kind: 'quick',
+          resultType: 'TB props',
+          targetTab: 'parlay',
+          builderCatalogTab: 'props',
+          builderValidityFilter: 'eligible',
+          builderSort: 'confidence',
+          builderLeagueFilter: 'MLB',
+          propType: 'totalBases',
+          date: activeDayId,
+          dateLabel,
+          title: 'Total bases props',
+          subtitle: `${dateLabel} | MLB TB candidates`,
+          matchContext: mlbValueSummary?.totalBaseRows?.length ? `${mlbValueSummary.totalBaseRows.length} rows` : 'MLB props'
+        },
+        {
+          id: `${activeDayId}:quick:k-props`,
+          kind: 'quick',
+          resultType: 'Pitcher K',
+          targetTab: 'parlay',
+          builderCatalogTab: 'props',
+          builderValidityFilter: 'eligible',
+          builderSort: 'confidence',
+          builderLeagueFilter: 'MLB',
+          propType: 'pitcherStrikeouts',
+          date: activeDayId,
+          dateLabel,
+          title: 'Pitcher strikeout props',
+          subtitle: `${dateLabel} | K overs and unders`,
+          matchContext: mlbValueSummary?.strikeoutRows?.length ? `${mlbValueSummary.strikeoutRows.length} rows` : 'Pitcher props'
+        }
+      )
+
+      if (mlbFirstInningValueSummary?.yrfiRows.length || mlbFirstInningValueSummary?.nrfiRows.length) {
+        suggestions.push({
+          id: `${activeDayId}:quick:first-inning`,
+          kind: 'quick',
+          resultType: '1st inning',
+          targetTab: 'board',
+          targetFilter: 'Value',
+          valueScope: 'mlb-first-inning',
+          date: activeDayId,
+          dateLabel,
+          title: 'First-inning value',
+          subtitle: `${dateLabel} | YRFI and NRFI price gaps`,
+          matchContext: `${(mlbFirstInningValueSummary?.yrfiRows.length || 0) + (mlbFirstInningValueSummary?.nrfiRows.length || 0)} rows`
+        })
+      }
+    }
+
+    if (tennisGamesCount) {
+      suggestions.push({
+        id: `${activeDayId}:quick:tennis-value`,
+        kind: 'quick',
+        resultType: 'Tennis value',
+        targetTab: 'board',
+        targetFilter: 'Value',
+        valueScope: 'tennis',
+        date: activeDayId,
+        dateLabel,
+        title: 'Tennis value board',
+        subtitle: `${dateLabel} | match, spread, total, Kalshi`,
+        matchContext: `${tennisValueSummary?.rows?.length || tennisGamesCount} rows`
+      })
+    }
+
+    return suggestions.slice(0, 8)
+  }, [activeDayId, games, mlbFirstInningValueSummary, mlbValueSummary, propCatalogEntries.length, slateMeta.date, tennisValueSummary])
+  const isShowingQuickSearch = trimmedMarketSearch.length < 2
+  const searchPreviewResults = isShowingQuickSearch ? quickSearchSuggestions : globalSearchResults.slice(0, 8)
+  const showSearchPopover =
+    (isSearchFocused && (isShowingQuickSearch || trimmedMarketSearch.length >= 2)) || isGlobalSearchLoading
+
+  const handleSearchInputKeyDown = (event: ReactKeyboardEvent<HTMLInputElement>) => {
+    if (!showSearchPopover) return
+
+    if (event.key === 'ArrowDown') {
+      event.preventDefault()
+      setActiveSearchResultIndex((current) => Math.min(current + 1, Math.max(searchPreviewResults.length - 1, 0)))
+    } else if (event.key === 'ArrowUp') {
+      event.preventDefault()
+      setActiveSearchResultIndex((current) => Math.max(current - 1, 0))
+    } else if (event.key === 'Enter') {
+      const result = searchPreviewResults[activeSearchResultIndex] ?? searchPreviewResults[0]
+      if (result) {
+        event.preventDefault()
+        openGlobalSearchResult(result)
+      }
+    } else if (event.key === 'Escape') {
+      event.preventDefault()
+      setIsSearchFocused(false)
+      searchInputRef.current?.blur()
+    }
+  }
 
   const selectDay = (dayId: string) => {
     setActiveDayId(dayId)
@@ -3581,11 +3780,27 @@ function App() {
   const openGlobalSearchResult = (result: AnyRecord) => {
     const date = String(result.date || '')
     const gameId = String(result.gameId || '')
-    if (!date || !gameId) return
+    if (!date) return
+    const targetTab = deskTabs.some((tab) => tab.id === result.targetTab) ? result.targetTab as DeskTabId : 'board'
+    const targetFilter = String(result.targetFilter || (targetTab === 'board' ? 'All' : activeFilter))
+
     setActiveDayId(date)
-    setActiveFilter('All')
-    setSelectedGameIdByDay((current) => ({ ...current, [date]: gameId }))
-    setActiveDeskTab('board')
+    setActiveFilter(targetFilter)
+    if (gameId) {
+      setSelectedGameIdByDay((current) => ({ ...current, [date]: gameId }))
+    }
+    if (result.valueScope) {
+      setActiveValueScopeByDay((current) => ({ ...current, [date]: String(result.valueScope) }))
+    }
+    if (result.builderCatalogTab) setBuilderCatalogTab(result.builderCatalogTab)
+    if (result.builderValidityFilter) setBuilderValidityFilter(result.builderValidityFilter)
+    if (result.builderSort) setBuilderSort(result.builderSort)
+    if (result.builderLeagueFilter) setBuilderLeagueFilter(String(result.builderLeagueFilter))
+    if (result.propType) setActivePropType(result.propType)
+    setActiveDeskTab(targetTab)
+    setMarketSearch('')
+    setIsSearchFocused(false)
+    searchInputRef.current?.blur()
   }
 
   const stepDay = (offset: number) => {
@@ -3682,10 +3897,10 @@ function App() {
     <span className={`league-badge league-${league.toLowerCase()}`}>{league}</span>
   )
 
-  const renderMoneylinePanel = (game: AnyRecord) => {
+  const renderMoneylinePanel = (game: AnyRecord, options: { embedded?: boolean } = {}) => {
     if (!game?.moneyline?.available) return null
     return (
-      <section className="pick-panel" aria-label={`Parlay picks for ${game.title}`}>
+      <section className={`pick-panel ${options.embedded ? 'embedded' : ''}`} aria-label={`Parlay picks for ${game.title}`}>
         <div className="pick-heading">
           <div>
             <p className="pick-kicker">Ticket</p>
@@ -3782,16 +3997,71 @@ function App() {
           ))}
         </div>
 
-        <label className="global-search" aria-label="Search markets">
-          <span>Search markets, players, signals...</span>
-          <input
-            type="text"
-            value={marketSearch}
-            onChange={(event) => setMarketSearch(event.target.value)}
-            placeholder="Filter the current slate..."
-          />
-          <small>⌘K</small>
-        </label>
+        <div className="global-search-shell">
+          <label className="global-search" aria-label="Search markets">
+            <span>Search markets, players, signals...</span>
+            <input
+              ref={searchInputRef}
+              type="text"
+              value={marketSearch}
+              onChange={(event) => setMarketSearch(event.target.value)}
+              onFocus={() => setIsSearchFocused(true)}
+              onClick={() => setIsSearchFocused(true)}
+              onBlur={() => window.setTimeout(() => setIsSearchFocused(false), 120)}
+              onKeyDown={handleSearchInputKeyDown}
+              placeholder="Search all dates, players, teams, props..."
+            />
+            <small>⌘K</small>
+          </label>
+
+          {showSearchPopover ? (
+            <div className="global-search-popover" role="listbox" aria-label="Search suggestions">
+              <div className="global-search-popover-head">
+                <span>{isShowingQuickSearch ? 'Quick jumps' : 'Search all dates'}</span>
+                <small>
+                  {isShowingQuickSearch
+                    ? `${quickSearchSuggestions.length} shortcut${quickSearchSuggestions.length === 1 ? '' : 's'}`
+                    : isGlobalSearchLoading
+                    ? 'Indexing...'
+                    : `${globalSearchResults.length} match${globalSearchResults.length === 1 ? '' : 'es'}`}
+                </small>
+              </div>
+              {isGlobalSearchLoading && !searchPreviewResults.length ? (
+                <div className="global-search-empty">
+                  <strong>Looking across slates</strong>
+                  <small>Games, lineups, props, HR boards, and value lanes.</small>
+                </div>
+              ) : searchPreviewResults.length ? (
+                searchPreviewResults.map((result: AnyRecord, index: number) => (
+                  <button
+                    key={result.id || `${result.date}-${result.gameId}-${result.title}`}
+                    type="button"
+                    role="option"
+                    aria-selected={index === activeSearchResultIndex}
+                    className={`global-search-option ${index === activeSearchResultIndex ? 'active' : ''}`}
+                    onMouseDown={(event) => event.preventDefault()}
+                    onMouseEnter={() => setActiveSearchResultIndex(index)}
+                    onClick={() => openGlobalSearchResult(result)}
+                  >
+                    <span>
+                      <strong>{result.title}</strong>
+                      <small>{result.subtitle || `${result.dateLabel || result.date} | ${result.stage || result.league || ''}`}</small>
+                    </span>
+                    <span className="global-search-option-meta">
+                      <strong>{result.resultType || result.league || result.kind || 'Match'}</strong>
+                      <small>{result.matchContext || result.valueScope || result.propType || result.confidence || ''}</small>
+                    </span>
+                  </button>
+                ))
+              ) : (
+                <div className="global-search-empty">
+                  <strong>No matches yet</strong>
+                  <small>Try a player, team, position, prop, market, or date.</small>
+                </div>
+              )}
+            </div>
+          ) : null}
+        </div>
 
         <div className="topbar-status mono">
           <span className="live-dot" />

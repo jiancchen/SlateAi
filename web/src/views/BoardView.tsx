@@ -56,6 +56,192 @@ export function BoardView(props: BoardViewProps) {
     visibleGames
   } = props
 
+  const miniLineupSlots = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  const formatPitcherHand = (hand: unknown) => {
+    const value = String(hand || '').trim()
+    if (!value) return ''
+    if (/hp$/i.test(value)) return value.toUpperCase()
+    if (/^[lr]$/i.test(value)) return `${value.toUpperCase()}HP`
+    return value
+  }
+  const formatMiniStarter = (starter: AnyRecord | null | undefined) => {
+    if (!starter) return 'SP TBD'
+    const name = starter.fullName || starter.name || 'SP TBD'
+    const hand = formatPitcherHand(starter.pitchHand || starter.hand || starter.throws || starter.handedness)
+    return hand ? `SP ${name} (${hand})` : `SP ${name}`
+  }
+  const getBoardTeamLogoUrl = (league: string, teamName: string) => mlbDetailProps?.getTeamLogoUrl?.(league, teamName) || ''
+  const renderBoardTeamLogo = (league: string, teamName: string, variant: 'compact' | 'inline' | 'title' = 'compact') => {
+    const logoUrl = mlbDetailProps?.getTeamLogoUrl?.(league, teamName)
+    if (!logoUrl) return null
+    return <img src={logoUrl} alt="" aria-hidden="true" className={`team-logo team-logo--${variant}`} />
+  }
+  const buildGameRailLogoStyle = (game: AnyRecord) => {
+    if (game?.league !== 'MLB') return null
+    const awayTeam = game.matchup?.[0]?.name || ''
+    const homeTeam = game.matchup?.[1]?.name || ''
+    const awayLogo = getBoardTeamLogoUrl('MLB', awayTeam)
+    const homeLogo = getBoardTeamLogoUrl('MLB', homeTeam)
+    if (!awayLogo && !homeLogo) return null
+    return {
+      '--away-logo-url': awayLogo ? `url("${awayLogo}")` : 'none',
+      '--home-logo-url': homeLogo ? `url("${homeLogo}")` : 'none'
+    } as AnyRecord
+  }
+  const renderBoardMatchupTitle = (game: AnyRecord) => {
+    if (game?.league !== 'MLB') return <h1>{getGameDisplayTitle(game)}</h1>
+
+    const awayTeam = game.matchup?.[0]?.name || getCompetitorDisplayName(game, game.matchup?.[0], 0)
+    const homeTeam = game.matchup?.[1]?.name || getCompetitorDisplayName(game, game.matchup?.[1], 1)
+    const separator = String(getGameDisplayTitle(game)).includes('@') ? '@' : 'vs'
+    return (
+      <h1 className="detail-matchup-title">
+        <span className="detail-matchup-team">
+          {renderBoardTeamLogo('MLB', awayTeam, 'title')}
+          <span>{awayTeam}</span>
+        </span>
+        <span className="detail-matchup-separator">{separator}</span>
+        <span className="detail-matchup-team">
+          {renderBoardTeamLogo('MLB', homeTeam, 'title')}
+          <span>{homeTeam}</span>
+        </span>
+      </h1>
+    )
+  }
+  const buildMiniLineupSignal = (player: AnyRecord | null | undefined) => {
+    if (!player) return null
+    const metrics = player.metrics ?? {}
+    const tag = String(player.primaryTag || '').toLowerCase()
+    const formScore = Number(metrics.formScore)
+    const recentOps = Number(player.recent?.ops)
+    const splitOps = Number(player.split?.ops)
+    const matchupGrade = Number(metrics.matchupGrade)
+    const pitchTypeGrade = Number(metrics.pitchTypeGrade)
+    const matchupScore = Number(metrics.matchupScore)
+    const pitchTypeFitScore = Number(metrics.pitchTypeFitScore)
+    const coldNow =
+      tag.includes('cold') ||
+      (Number.isFinite(formScore) && formScore <= 32) ||
+      (Number.isFinite(recentOps) && recentOps < 0.65)
+    const hotNow =
+      !coldNow &&
+      (tag.includes('heater') ||
+        (Number.isFinite(formScore) && formScore >= 72) ||
+        (Number.isFinite(recentOps) && recentOps >= 0.9))
+    const matchupHeatSignals = [
+      tag.includes('edge') ||
+      tag.includes('carry') ||
+      tag.includes('arsenal'),
+      Number.isFinite(matchupGrade) && matchupGrade >= 4,
+      Number.isFinite(pitchTypeGrade) && pitchTypeGrade >= 3.5,
+      Number.isFinite(matchupScore) && matchupScore >= 70,
+      Number.isFinite(pitchTypeFitScore) && pitchTypeFitScore >= 75,
+      Number.isFinite(splitOps) && splitOps >= 0.85
+    ].filter(Boolean).length
+    const eliteMatchupHeat =
+      (Number.isFinite(matchupGrade) && matchupGrade >= 8) ||
+      (Number.isFinite(pitchTypeGrade) && pitchTypeGrade >= 6) ||
+      (Number.isFinite(matchupScore) && matchupScore >= 86) ||
+      (Number.isFinite(pitchTypeFitScore) && pitchTypeFitScore >= 90) ||
+      (Number.isFinite(splitOps) && splitOps >= 1)
+    const expectedHeat = matchupHeatSignals >= 3 || eliteMatchupHeat
+
+    if (hotNow && expectedHeat) return { emoji: '🔥🔥', label: 'Hot now and heating matchup' }
+    if (coldNow && expectedHeat) return { emoji: '❄️🔥', label: 'Cold lately, heat-up spot' }
+    return null
+  }
+  const renderMiniLineupOrder = (game: AnyRecord) => {
+    const lineupBoard = game.lineupBoard
+    if (!lineupBoard?.away && !lineupBoard?.home) return null
+
+    const lineupStatusLabel = mlbDetailProps?.lineupStatusLabel ?? ((status: string) => status || 'partial')
+    const sides = [
+      {
+        key: 'away',
+        teamName: lineupBoard.away?.teamName || game.matchup?.[0]?.name || 'Away',
+        status: lineupBoard.status?.away,
+        starter: game.starterContext?.away,
+        team: lineupBoard.away
+      },
+      {
+        key: 'home',
+        teamName: lineupBoard.home?.teamName || game.matchup?.[1]?.name || 'Home',
+        status: lineupBoard.status?.home,
+        starter: game.starterContext?.home,
+        team: lineupBoard.home
+      }
+    ]
+    const hasLineup = sides.some((side) => Array.isArray(side.team?.lineup) && side.team.lineup.length)
+    if (!hasLineup) return null
+
+    return (
+      <section className="mini-lineup-order" aria-label={`${getGameDisplayTitle(game)} lineup order`}>
+        <div className="detail-panel-header mini-lineup-order-head">
+          <p className="eyebrow">Lineup order</p>
+          <span>{lineupBoard.weather?.label || lineupBoard.marketWeatherContext?.total || 'Projected board'}</span>
+        </div>
+        <div className="mini-lineup-order-grid">
+          {sides.map((side) => {
+            const lineup = Array.isArray(side.team?.lineup) ? side.team.lineup.slice(0, 9) : []
+            const playerBySlot = new Map<number, AnyRecord>()
+            lineup.forEach((player: AnyRecord, index: number) => {
+              const slot = Number(player.slot)
+              const normalizedSlot = Number.isFinite(slot) && slot >= 1 && slot <= 9 ? slot : index + 1
+              if (!playerBySlot.has(normalizedSlot)) playerBySlot.set(normalizedSlot, player)
+            })
+
+            return (
+              <article key={`${game.id}-${side.key}-mini-lineup`} className="mini-lineup-team">
+                <div className="mini-lineup-team-head">
+                  <div className="mini-lineup-team-title">
+                    {renderBoardTeamLogo('MLB', side.teamName, 'inline')}
+                    <div>
+                      <strong>{side.teamName}</strong>
+                      <small>{formatMiniStarter(side.starter)}</small>
+                    </div>
+                  </div>
+                  <span className={`builder-status-pill ${side.status === 'posted' ? 'open' : ''}`}>
+                    {lineupStatusLabel(side.status)}
+                  </span>
+                </div>
+                <div className="mini-lineup-slots">
+                  {miniLineupSlots.map((slot) => {
+                    const player = playerBySlot.get(slot)
+                    const signal = buildMiniLineupSignal(player)
+                    const playerMeta = player
+                      ? [player.position, player.bats ? `${player.bats} bat` : null].filter(Boolean).join(' | ')
+                      : 'missing / unknown'
+                    const playerName = player?.name || 'Open slot'
+
+                    return (
+                      <div
+                        key={`${game.id}-${side.key}-lineup-slot-${slot}`}
+                        className={`mini-lineup-slot ${player ? '' : 'missing'}`}
+                        title={player ? `${slot}. ${playerName} | ${playerMeta}` : `${side.teamName} slot ${slot} missing`}
+                      >
+                        <span className="mini-lineup-slot-number">{slot}</span>
+                        <strong>
+                          <span className="mini-lineup-player-name">{playerName}</span>
+                          {signal ? (
+                            <span className="mini-lineup-player-signal" aria-label={signal.label} title={signal.label}>
+                              {signal.emoji}
+                            </span>
+                          ) : null}
+                        </strong>
+                        <small>{playerMeta}</small>
+                      </div>
+                    )
+                  })}
+                </div>
+              </article>
+            )
+          })}
+        </div>
+      </section>
+    )
+  }
+  const selectedMiniLineupOrder = selectedGame?.league === 'MLB' ? renderMiniLineupOrder(selectedGame) : null
+
   return (
     <div className="desk-board-workspace">
       <section className="games-rail">
@@ -102,18 +288,18 @@ export function BoardView(props: BoardViewProps) {
               </div>
               {globalSearchResults.slice(0, 12).map((result: AnyRecord) => (
                 <button
-                  key={`${result.date}-${result.gameId}`}
+                  key={result.id || `${result.date}-${result.gameId}-${result.title}`}
                   type="button"
                   className={`global-search-result ${activeDayId === result.date && selectedGameId === result.gameId ? 'active' : ''}`}
                   onClick={() => openGlobalSearchResult(result)}
                 >
                   <span>
                     <strong>{result.title}</strong>
-                    <small>{result.dateLabel || result.date} | {result.start || 'TBD'} | {result.stage || result.league}</small>
+                    <small>{result.subtitle || `${result.dateLabel || result.date} | ${result.start || 'TBD'} | ${result.stage || result.league}`}</small>
                   </span>
                   <span className="global-search-result-meta">
-                    {result.winnerName ? <strong>{result.winnerName}</strong> : <strong>{result.confidence ?? ''}</strong>}
-                    <small>{result.scoreline || result.resultStatus || result.league}</small>
+                    <strong>{result.resultType || result.league || result.kind || ''}</strong>
+                    <small>{result.matchContext || result.scoreline || result.resultStatus || result.confidence || ''}</small>
                   </span>
                 </button>
               ))}
@@ -122,7 +308,7 @@ export function BoardView(props: BoardViewProps) {
             <div className="placeholder-panel compact">
               <p className="eyebrow">Searching all dates</p>
               <h3>Looking across the archive</h3>
-              <p>Checking every loaded slate for player, team, winner, and score matches.</p>
+              <p>Checking every slate for games, teams, lineups, props, value lanes, and player matches.</p>
             </div>
           ) : null}
           {isActiveDayLoading ? (
@@ -784,7 +970,8 @@ export function BoardView(props: BoardViewProps) {
               <button
                 key={game.id}
                 type="button"
-                className={`game-rail-row ${selectedGame?.id === game.id ? 'active' : ''}`}
+                className={`game-rail-row ${game.league === 'MLB' ? 'mlb-logo-card' : ''} ${selectedGame?.id === game.id ? 'active' : ''}`}
+                style={buildGameRailLogoStyle(game) || undefined}
                 onClick={() => setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: game.id }))}
               >
                 <div className="game-rail-row-meta">
@@ -853,7 +1040,9 @@ export function BoardView(props: BoardViewProps) {
                   <span>{selectedGame.stage}</span>
                   {latestLineupSnapshot ? <span>{formatSnapshotTime(latestLineupSnapshot)}</span> : null}
                 </div>
-                <h1>{getGameDisplayTitle(selectedGame)}</h1>
+                <div className="detail-title-row">
+                  {renderBoardMatchupTitle(selectedGame)}
+                </div>
               </div>
 
               <div className="detail-canvas-actions">
@@ -874,9 +1063,9 @@ export function BoardView(props: BoardViewProps) {
                 <strong>{selectedGame.analysis?.participant?.name || 'No pick'}</strong>
                 <small>Analyst read</small>
               </article>
-              <article className="detail-kpi-card">
+              <article className={`detail-kpi-card ${Number(selectedGame.analysis?.confidence ?? 0) >= 70 ? 'strong-confidence' : ''}`}>
                 <span className="eyebrow">Confidence</span>
-                <strong>{selectedGame.analysis?.confidence}</strong>
+                <strong>{Number(selectedGame.analysis?.confidence ?? 0) >= 70 ? `👍 ${selectedGame.analysis?.confidence}` : selectedGame.analysis?.confidence}</strong>
                 <small>{labelForScore(selectedGame.analysis?.confidence ?? 0)}</small>
               </article>
               <article className="detail-kpi-card">
@@ -906,8 +1095,8 @@ export function BoardView(props: BoardViewProps) {
             </div>
 
             <div className="detail-canvas-scroll no-scrollbar">
-              <div className="detail-canvas-grid">
-                <section className="detail-panel insight-panel">
+              <div className={`detail-canvas-grid ${selectedMiniLineupOrder ? 'with-sidecar' : 'single'}`}>
+                <section className="detail-panel insight-panel editorial-market-panel">
                   <div className="detail-panel-header">
                     <p className="eyebrow">Editorial read</p>
                     <span>{(selectedGame.tags ?? []).join(' | ')}</span>
@@ -917,54 +1106,36 @@ export function BoardView(props: BoardViewProps) {
                     <p className="lean-line">{selectedGame.analysis?.lean}</p>
                     <p className="swing-line">{swingTextFor(selectedGame)}</p>
                   </div>
-                  <div className="meter-grid compact">
-                    <div className="meter-card">
-                      <div className="meter-label">
-                        <span>Confidence</span>
-                        <strong>{labelForScore(selectedGame.analysis?.confidence ?? 0)}</strong>
-                      </div>
-                      <div className="meter-track">
-                        <span style={{ width: `${selectedGame.analysis?.confidence ?? 0}%` }} />
-                      </div>
-                    </div>
-                    <div className="meter-card">
-                      <div className="meter-label">
-                        <span>Volatility</span>
-                        <strong>{labelForScore(selectedGame.analysis?.volatility ?? 0)}</strong>
-                      </div>
-                      <div className="meter-track volatility">
-                        <span style={{ width: `${selectedGame.analysis?.volatility ?? 0}%` }} />
-                      </div>
-                    </div>
-                  </div>
                   <ul className="factor-list compact">
                     {(selectedGame.factors ?? []).map((factor: string, index: number) => (
                       <li key={`${selectedGame.id}-factor-${index}`}>{factor}</li>
                     ))}
                   </ul>
+
+                  <div className="editorial-market-grid">
+                    {renderMoneylinePanel(selectedGame, { embedded: true })}
+                    <section className="editorial-odds-snapshot" aria-label={`Odds snapshot for ${selectedGame.title}`}>
+                      <div className="detail-panel-header">
+                        <p className="eyebrow">Odds snapshot</p>
+                        <span>{selectedGame.odds?.provider || selectedGame.moneyline?.provider || 'Model board'}</span>
+                      </div>
+                      <p className="react-section-copy">{selectedGame.odds?.note || selectedGame.summary}</p>
+                      <div className="editorial-odds-market-list">
+                        {(selectedGame.odds?.markets ?? []).map((market: AnyRecord) => (
+                          <div key={`${selectedGame.id}-${market.label}`} className="editorial-odds-market">
+                            <span>
+                              <strong>{market.label}</strong>
+                              <small>{market.book || selectedGame.odds?.provider}</small>
+                            </span>
+                            <p>{market.value}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </section>
+                  </div>
                 </section>
 
-                <div className="detail-stack">
-                  {renderMoneylinePanel(selectedGame)}
-                  <section className="odds-panel">
-                    <div className="detail-panel-header">
-                      <p className="eyebrow">Odds snapshot</p>
-                      <span>{selectedGame.odds?.provider || selectedGame.moneyline?.provider || 'Model board'}</span>
-                    </div>
-                    <p className="react-section-copy">{selectedGame.odds?.note || selectedGame.summary}</p>
-                    <div className="react-prop-grid">
-                      {(selectedGame.odds?.markets ?? []).map((market: AnyRecord) => (
-                        <article key={`${selectedGame.id}-${market.label}`} className="react-prop-card odds-market-card">
-                          <div className="odds-market-head">
-                            <strong>{market.label}</strong>
-                            <small>{market.book || selectedGame.odds?.provider}</small>
-                          </div>
-                          <p>{market.value}</p>
-                        </article>
-                      ))}
-                    </div>
-                  </section>
-                </div>
+                {selectedMiniLineupOrder ? <div className="detail-stack">{selectedMiniLineupOrder}</div> : null}
               </div>
 
               {selectedGame.league === 'MLB' && isSelectedGameDetailLoading ? (

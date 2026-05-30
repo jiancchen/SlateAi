@@ -79,10 +79,353 @@ const normalizeSearchText = (value: unknown) =>
 
 const searchScore = (haystack: string, query: string) => {
   if (!query) return 0
-  if (haystack.includes(query)) return 100 + query.length
   const terms = query.split(/\s+/).filter(Boolean)
-  const hits = terms.filter((term) => haystack.includes(term)).length
+  const haystackTerms = new Set(haystack.split(/\s+/).filter(Boolean))
+  if (terms.length === 1 && query.length <= 2) return haystackTerms.has(query) ? 100 + query.length : 0
+  if (query.length > 2 && haystack.includes(query)) return 100 + query.length
+  const hits = terms.filter((term) => (term.length <= 2 ? haystackTerms.has(term) : haystack.includes(term))).length
   return hits ? hits * 20 + Math.round((hits / terms.length) * 20) : 0
+}
+
+type SlateSearchIndexRow = Record<string, unknown> & {
+  date: string
+  dateLabel: string
+  gameId?: string
+  searchableText: string
+  priority: number
+}
+
+let slateSearchIndexPromise: Promise<SlateSearchIndexRow[]> | null = null
+
+const collectSearchText = (value: unknown, depth = 0): string[] => {
+  if (value === null || value === undefined || depth > 5) return []
+  if (typeof value === 'string' || typeof value === 'number' || typeof value === 'boolean') return [String(value)]
+  if (Array.isArray(value)) return value.flatMap((entry) => collectSearchText(entry, depth + 1))
+  if (typeof value !== 'object') return []
+
+  return Object.entries(value as Record<string, unknown>)
+    .filter(([key]) => !['url', 'urls', 'playerUrl', 'statsUrls', 'sources', 'sourceUrl'].includes(key))
+    .flatMap(([, entry]) => collectSearchText(entry, depth + 1))
+}
+
+const expandSearchQueries = (query: string) => {
+  const normalized = normalizeSearchText(query)
+  const aliases = new Set([normalized])
+  if (/\b(mlb|baseball)\b/.test(normalized)) {
+    aliases.add(normalized.replace(/\bbaseball\b/g, 'mlb'))
+    aliases.add(normalized.replace(/\bmlb\b/g, 'baseball'))
+  }
+  if (/\b(hr|homer|home runs?|long ball)\b/.test(normalized)) {
+    aliases.add(normalized.replace(/\bhr\b/g, 'home run'))
+    aliases.add(normalized.replace(/\bhomer\b/g, 'home run'))
+    aliases.add(normalized.replace(/\blong ball\b/g, 'home run'))
+    aliases.add('home run')
+    aliases.add('home runs')
+    aliases.add('hr')
+  }
+  if (/\b(tb|total bases?)\b/.test(normalized)) {
+    aliases.add(normalized.replace(/\btb\b/g, 'total bases'))
+    aliases.add('total bases')
+    aliases.add('tb')
+  }
+  if (/\b(k|ks|strikeouts?|pitcher k)\b/.test(normalized)) {
+    aliases.add(normalized.replace(/\bks?\b/g, 'strikeouts'))
+    aliases.add(normalized.replace(/\bpitcher k\b/g, 'pitcher strikeouts'))
+    aliases.add('pitcher strikeouts')
+    aliases.add('strikeouts')
+  }
+  if (/\b(props?|player props?)\b/.test(normalized)) {
+    aliases.add('player props')
+    aliases.add('props')
+  }
+  return [...aliases].filter(Boolean)
+}
+
+const scoreSearchResult = (haystack: string, query: string, title: unknown, priority: number) => {
+  const titleText = normalizeSearchText(title)
+  const queryVariants = expandSearchQueries(query)
+  const bestScore = Math.max(...queryVariants.map((variant) => searchScore(haystack, variant)))
+  if (!bestScore) return 0
+  const titleBoost = queryVariants.some((variant) => titleText.includes(variant)) ? 90 : 0
+  return bestScore + titleBoost + priority
+}
+
+const publicSearchRow = (row: SlateSearchIndexRow, score: number) => {
+  const { searchableText: _searchableText, priority: _priority, ...publicRow } = row
+  return { ...publicRow, score }
+}
+
+const gameTeamNames = (game: Record<string, unknown>) => {
+  const matchup = Array.isArray(game.matchup) ? game.matchup : []
+  return matchup
+    .map((entry) => String((entry as Record<string, unknown>)?.name || (entry as Record<string, unknown>)?.displayName || ''))
+    .filter(Boolean)
+}
+
+const gameTitleMatches = (left: unknown, right: unknown) =>
+  normalizeSearchText(left) === normalizeSearchText(right)
+
+const findGameIdForTitle = (games: Record<string, unknown>[], title: unknown) => {
+  const match = games.find((game) => gameTitleMatches(game.title, title))
+  return String(match?.id || '')
+}
+
+const addSearchRow = (
+  rows: SlateSearchIndexRow[],
+  slate: { id: string; label: string },
+  row: Omit<SlateSearchIndexRow, 'date' | 'dateLabel' | 'searchableText' | 'priority'> & {
+    priority: number
+    searchParts: unknown[]
+  }
+) => {
+  const { searchParts, ...publicFields } = row
+  rows.push({
+    ...publicFields,
+    date: slate.id,
+    dateLabel: slate.label,
+    searchableText: normalizeSearchText(searchParts.flatMap((part) => collectSearchText(part)).join(' ')),
+    priority: row.priority
+  })
+}
+
+const buildSlateSearchIndex = async (): Promise<SlateSearchIndexRow[]> => {
+  const slates = await listSlateManifest()
+  const rows: SlateSearchIndexRow[] = []
+
+  for (const slateShell of slates) {
+    const slate = await loadSlateDay(slateShell.id)
+    const games = (slate.games ?? []) as Record<string, unknown>[]
+    const hasMlb = games.some((game) => game.league === 'MLB')
+    const hasTennis = games.some((game) => game.league === 'Tennis')
+
+    if (hasMlb) {
+      addSearchRow(rows, slateShell, {
+        id: `${slateShell.id}:mlb-value-center`,
+        kind: 'view',
+        resultType: 'Value board',
+        targetTab: 'board',
+        targetFilter: 'Value',
+        valueScope: 'mlb-overview',
+        league: 'MLB',
+        title: 'MLB value center',
+        subtitle: `${slateShell.label} | sides, totals, first inning, props`,
+        matchContext: 'Overview',
+        priority: 15,
+        searchParts: [slateShell, 'mlb baseball value board sides totals markets props first inning yrfi nrfi']
+      })
+      addSearchRow(rows, slateShell, {
+        id: `${slateShell.id}:mlb-hr-board`,
+        kind: 'view',
+        resultType: 'HR board',
+        targetTab: 'board',
+        targetFilter: 'Value',
+        valueScope: 'mlb-hr',
+        league: 'MLB',
+        title: 'MLB HR value board',
+        subtitle: `${slateShell.label} | home-run ladder`,
+        matchContext: 'Home runs',
+        priority: 20,
+        searchParts: [slateShell, 'mlb baseball home runs home run homer hr long ball value ladder statcast']
+      })
+      addSearchRow(rows, slateShell, {
+        id: `${slateShell.id}:mlb-props-board`,
+        kind: 'view',
+        resultType: 'Props',
+        targetTab: 'parlay',
+        builderCatalogTab: 'props',
+        builderLeagueFilter: 'MLB',
+        league: 'MLB',
+        title: 'MLB player props',
+        subtitle: `${slateShell.label} | TB, pitcher K, hits, RBI, walks`,
+        matchContext: 'Parlay builder',
+        priority: 15,
+        searchParts: [slateShell, 'mlb baseball player props total bases tb pitcher strikeouts hits rbi walks singles']
+      })
+    }
+
+    if (hasTennis) {
+      addSearchRow(rows, slateShell, {
+        id: `${slateShell.id}:tennis-value-board`,
+        kind: 'view',
+        resultType: 'Value board',
+        targetTab: 'board',
+        targetFilter: 'Value',
+        valueScope: 'tennis',
+        league: 'Tennis',
+        title: 'Tennis value board',
+        subtitle: `${slateShell.label} | match, spread, total, Kalshi`,
+        matchContext: 'Tennis',
+        priority: 15,
+        searchParts: [slateShell, 'tennis value board match winner spread total games kalshi trade']
+      })
+    }
+
+    const detailedGames = await Promise.all(
+      games.map(async (game) => {
+        const gameId = String(game.id || '')
+        if (!gameId) return game
+        try {
+          return { ...game, ...(await loadSlateGameDetail(slateShell.id, gameId)) }
+        } catch {
+          return game
+        }
+      })
+    )
+
+    for (const game of detailedGames) {
+      const gameId = String(game.id || '')
+      const teams = gameTeamNames(game)
+      addSearchRow(rows, slateShell, {
+        id: `${slateShell.id}:${gameId}:game`,
+        kind: 'game',
+        resultType: String(game.league || 'Game'),
+        targetTab: 'board',
+        targetFilter: 'All',
+        gameId,
+        league: game.league,
+        title: game.title,
+        subtitle: `${slateShell.label} | ${game.start || 'TBD'} | ${game.stage || game.league || 'Game'}`,
+        stage: game.stage,
+        start: game.start,
+        winnerName: (game as Record<string, unknown>).winnerName ?? (game as any).tennisResult?.winnerName ?? null,
+        scoreline: (game as Record<string, unknown>).scoreline ?? (game as any).tennisResult?.scoreline ?? null,
+        resultStatus: (game as any).result?.status ?? (game as any).tennisResult?.status ?? null,
+        confidence: (game as any).analysis?.confidence ?? (game as Record<string, unknown>).confidence ?? null,
+        matchContext: teams.join(' vs '),
+        priority: 30,
+        searchParts: [slateShell, game, teams, 'game matchup team teams moneyline side total market']
+      })
+
+      const starterContext = (game.starterContext || {}) as Record<string, unknown>
+      for (const side of ['away', 'home']) {
+        const starter = starterContext[side] as Record<string, unknown> | undefined
+        if (!starter?.fullName) continue
+        addSearchRow(rows, slateShell, {
+          id: `${slateShell.id}:${gameId}:starter:${side}`,
+          kind: 'player',
+          resultType: 'Pitcher',
+          targetTab: 'board',
+          targetFilter: 'All',
+          gameId,
+          league: 'MLB',
+          title: starter.fullName,
+          subtitle: `${side === 'away' ? teams[0] || 'Away' : teams[1] || 'Home'} SP | ${game.title}`,
+          stage: game.stage,
+          start: game.start,
+          matchContext: 'Probable starter',
+          priority: 45,
+          searchParts: [slateShell, game.title, teams, starter, 'pitcher starter probable sp rhp lhp baseball mlb']
+        })
+      }
+
+      const lineupBoard = (game.lineupBoard || {}) as Record<string, any>
+      for (const side of ['away', 'home']) {
+        const teamBlock = lineupBoard[side] as Record<string, unknown> | undefined
+        const lineup = Array.isArray(teamBlock?.lineup) ? teamBlock.lineup : []
+        for (const player of lineup as Record<string, unknown>[]) {
+          if (!player.name) continue
+          const teamName = String(teamBlock?.teamName || (side === 'away' ? teams[0] : teams[1]) || '')
+          const position = String(player.position || '')
+          addSearchRow(rows, slateShell, {
+            id: `${slateShell.id}:${gameId}:lineup:${player.playerId || player.name}`,
+            kind: 'player',
+            resultType: 'Lineup',
+            targetTab: 'board',
+            targetFilter: 'All',
+            gameId,
+            league: 'MLB',
+            title: player.name,
+            subtitle: `${teamName}${position ? ` | ${position}` : ''} | ${game.title}`,
+            stage: game.stage,
+            start: game.start,
+            matchContext: `Slot ${player.slot || '?'}${position ? ` ${position}` : ''}`,
+            priority: 40,
+            searchParts: [slateShell, game.title, teams, teamName, player, 'lineup batter hitter position baseball mlb']
+          })
+        }
+      }
+    }
+
+    const [propPayload, homeRunPayload] = await Promise.all([
+      hasMlb ? loadMlbPlayerProps(slateShell.id).catch(() => null) : Promise.resolve(null),
+      hasMlb ? loadMlbHomeRunBoard(slateShell.id).catch(() => null) : Promise.resolve(null)
+    ])
+
+    const props = Array.isArray((propPayload as any)?.picks) ? ((propPayload as any).picks as Record<string, unknown>[]) : []
+    for (const prop of props) {
+      const gameId = String(prop.gameId || findGameIdForTitle(games, prop.gameTitle) || '')
+      addSearchRow(rows, slateShell, {
+        id: `${slateShell.id}:prop:${prop.id || `${prop.playerName}-${prop.propType}`}`,
+        kind: 'prop',
+        resultType: 'Prop',
+        targetTab: 'parlay',
+        builderCatalogTab: 'props',
+        builderLeagueFilter: 'MLB',
+        propType: prop.propType,
+        gameId,
+        league: 'MLB',
+        title: `${prop.playerName || 'Player'} ${prop.marketLabel || prop.propLabel || 'prop'}`,
+        subtitle: `${prop.gameTitle || 'MLB'} | ${prop.propLabel || prop.propType || 'Prop'} | ${slateShell.label}`,
+        stage: prop.stage,
+        start: prop.start,
+        confidence: prop.confidence,
+        matchContext: prop.recommendationTier || prop.propLabel || 'Player prop',
+        priority: 55,
+        searchParts: [slateShell, prop, 'mlb baseball player props prop total bases tb pitcher strikeouts hits rbi walks singles']
+      })
+    }
+
+    const homeRuns = Array.isArray((homeRunPayload as any)?.picks) ? ((homeRunPayload as any).picks as Record<string, unknown>[]) : []
+    if (homeRuns.length) {
+      const firstGameId = findGameIdForTitle(games, homeRuns[0]?.gameTitle)
+      addSearchRow(rows, slateShell, {
+        id: `${slateShell.id}:mlb-hr-board-with-picks`,
+        kind: 'view',
+        resultType: 'HR board',
+        targetTab: 'board',
+        targetFilter: 'Value',
+        valueScope: 'mlb-hr',
+        gameId: firstGameId,
+        league: 'MLB',
+        title: 'MLB HR value board',
+        subtitle: `${slateShell.label} | ${homeRuns.length} home-run candidates`,
+        matchContext: 'Home runs',
+        priority: 22,
+        searchParts: [slateShell, homeRuns, 'mlb baseball home runs home run homer hr long ball value ladder statcast']
+      })
+    }
+    for (const pick of homeRuns) {
+      const gameId = String(pick.gameId || findGameIdForTitle(games, pick.gameTitle) || '')
+      addSearchRow(rows, slateShell, {
+        id: `${slateShell.id}:hr:${pick.playerId || pick.playerName}:${gameId}`,
+        kind: 'homeRun',
+        resultType: 'HR',
+        targetTab: 'board',
+        targetFilter: 'Value',
+        valueScope: 'mlb-hr',
+        gameId,
+        league: 'MLB',
+        title: `${pick.playerName || 'Player'} home-run lane`,
+        subtitle: `${pick.teamName || 'MLB'} | ${pick.gameTitle || 'Game'} | ${slateShell.label}`,
+        confidence: pick.modelSharePct ?? pick.score ?? pick.baseScore ?? null,
+        matchContext: pick.scoreBand || pick.lane || 'HR watch',
+        priority: 60,
+        searchParts: [slateShell, pick, 'mlb baseball home runs home run homer hr long ball statcast batter hitter']
+      })
+    }
+  }
+
+  return rows
+}
+
+const getSlateSearchIndex = async () => {
+  if (!slateSearchIndexPromise) {
+    slateSearchIndexPromise = buildSlateSearchIndex().catch((error) => {
+      slateSearchIndexPromise = null
+      throw error
+    })
+  }
+  return slateSearchIndexPromise
 }
 
 app.get('/api/search/slates', async (request) => {
@@ -91,45 +434,19 @@ app.get('/api/search/slates', async (request) => {
   const maxRows = Math.min(100, Math.max(1, Number(limit) || 40))
   if (!query) return { query, results: [] }
 
-  const slates = await listSlateManifest()
-  const results: Array<Record<string, unknown>> = []
-  for (const slateShell of slates) {
-    const slate = await loadSlateDay(slateShell.id)
-    for (const game of slate.games ?? []) {
-      const matchup = Array.isArray((game as any).matchup) ? (game as any).matchup : []
-      const haystack = normalizeSearchText([
-        slate.id,
-        slate.label,
-        (game as any).title,
-        (game as any).stage,
-        (game as any).summary,
-        (game as any).winnerName,
-        (game as any).scoreline,
-        (game as any).tennisResult?.winnerName,
-        (game as any).tennisResult?.scoreline,
-        (game as any).analysis?.participant?.name,
-        ...matchup.map((entry: any) => entry?.name || entry?.displayName)
-      ].join(' '))
-      const score = searchScore(haystack, query)
-      if (!score) continue
-      results.push({
-        score,
-        date: slate.id,
-        dateLabel: slate.label,
-        gameId: (game as any).id,
-        league: (game as any).league,
-        title: (game as any).title,
-        stage: (game as any).stage,
-        start: (game as any).start,
-        winnerName: (game as any).winnerName ?? (game as any).tennisResult?.winnerName ?? null,
-        scoreline: (game as any).scoreline ?? (game as any).tennisResult?.scoreline ?? null,
-        resultStatus: (game as any).result?.status ?? (game as any).tennisResult?.status ?? null,
-        confidence: (game as any).analysis?.confidence ?? (game as any).confidence ?? null
-      })
-    }
-  }
-  results.sort((left, right) => Number(right.score) - Number(left.score) || String(right.date).localeCompare(String(left.date)))
-  return { query, results: results.slice(0, maxRows) }
+  const index = await getSlateSearchIndex()
+  const results = index
+    .map((row) => ({ row, score: scoreSearchResult(row.searchableText, query, row.title, row.priority) }))
+    .filter((entry) => entry.score > 0)
+    .sort((left, right) =>
+      String(right.row.date).localeCompare(String(left.row.date)) ||
+      right.score - left.score ||
+      Number(right.row.priority) - Number(left.row.priority)
+    )
+    .slice(0, maxRows)
+    .map((entry) => publicSearchRow(entry.row, entry.score))
+
+  return { query, results }
 })
 
 app.get('/api/slates/:date', async (request, reply) => {
