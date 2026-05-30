@@ -14,6 +14,10 @@ What it does:
 
 - refreshes the live MLB slate
 - ingests current/previous season pitcher WAR
+- refreshes bullpen-shape context so we keep tracking:
+  - 2-man containment vs 4+/6+ scramble usage
+  - short first-up vs bulk first-up relief patterns
+  - likely first relievers and team bullpen-game shape separately
 - ingests recent hitter Statcast game logs and rebuilds rolling `7/14/30` contact-quality trends
 - refreshes first-inning, hidden-edge, mistake-shape, state-snapshot, and tier-3 warehouse tables
 - pulls current-day FanDuel pitcher strikeout lines
@@ -102,6 +106,19 @@ What it does:
   - established starter replaced by unknown arm
 - writes alerts to `data-private/alerts/mlb-probable-changes/YYYY-MM-DD.jsonl`
 - triggers a quick live-slate rebuild and republish when a real change lands
+
+Bullpen note:
+
+- call-up or scratch attention should not stop at listed starters
+- after a probable change or late lineup refresh, use these warehouse views to inspect the bullpen context too:
+
+```bash
+npm run data:list:relievers -- --date YYYY-MM-DD --team "Team Name"
+npm run data:list:bullpen-shape -- --date YYYY-MM-DD --team "Team Name"
+```
+
+- `list:relievers` answers `who is likely first up`
+- `list:bullpen-shape` answers `what kind of bullpen game this team tends to run lately`
 
 ## Kalshi MLB snapshot watcher
 

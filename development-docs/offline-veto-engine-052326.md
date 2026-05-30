@@ -57,7 +57,7 @@ This pass uses graded MLB moneyline data from `2026-05-10` through `2026-05-28` 
 | --- | --- | --- | --- | --- | --- | --- |
 | All picks | 248 | 0.589 | 97 | 0.567 | 151 | 0.603 |
 | 8+ edge | 77 | 0.597 | 29 | 0.586 | 48 | 0.604 |
-| 60+ confidence | 82 | 0.573 | 34 | 0.559 | 48 | 0.583 |
+| 60+ confidence | 80 | 0.588 | 34 | 0.559 | 46 | 0.609 |
 | 8+ edge and 60+ confidence | 46 | 0.609 | 21 | 0.571 | 25 | 0.640 |
 
 ### 8+ Edge By Split

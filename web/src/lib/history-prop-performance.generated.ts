@@ -539,5 +539,46 @@ export const mlbPropPerformanceByDate: Record<string, DailyPropSummary> = {
       "Wade Meckler Over 1.5 total bases",
       "Dillon Dingler Over 1.5 total bases"
     ]
+  },
+  "2026-05-29": {
+    "overall": {
+      "hits": 19,
+      "total": 51,
+      "hitRate": 37.3
+    },
+    "byType": {
+      "totalBases": {
+        "hits": 12,
+        "total": 30,
+        "hitRate": 40
+      },
+      "singles": {
+        "hits": 2,
+        "total": 6,
+        "hitRate": 33.3
+      },
+      "pitcherStrikeouts": {
+        "hits": 5,
+        "total": 13,
+        "hitRate": 38.5
+      },
+      "walks": {
+        "hits": 0,
+        "total": 2,
+        "hitRate": 0
+      }
+    },
+    "topHits": [
+      "Casey Schmitt Over 1.5 total bases",
+      "Michael Harris II Over 1.5 total bases",
+      "Nathaniel Lowe Over 1.5 total bases",
+      "Willson Contreras Over 1.5 total bases"
+    ],
+    "topMisses": [
+      "James Wood Over 1.5 total bases",
+      "Willy Adames Over 1.5 total bases",
+      "Yordan Alvarez Over 1.5 total bases",
+      "CJ Abrams Over 1.5 total bases"
+    ]
   }
 }

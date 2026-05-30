@@ -762,6 +762,39 @@ CREATE TABLE IF NOT EXISTS mlb_likely_relief_chains (
   PRIMARY KEY (as_of_date, team_name, predicted_rank)
 );
 
+CREATE TABLE IF NOT EXISTS mlb_team_bullpen_shape_daily (
+  as_of_date TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  scheduled_opponent TEXT,
+  games_sample_last3 INTEGER NOT NULL,
+  games_sample_last5 INTEGER NOT NULL,
+  games_sample_last10 INTEGER NOT NULL,
+  relievers_used_avg_last3 REAL,
+  relievers_used_avg_last5 REAL,
+  relievers_used_avg_last10 REAL,
+  relievers_used_max_last10 INTEGER,
+  first_reliever_outs_avg_last3 REAL,
+  first_reliever_outs_avg_last5 REAL,
+  first_reliever_outs_avg_last10 REAL,
+  first_reliever_outs_volatility_last10 REAL,
+  total_relief_outs_avg_last5 REAL,
+  total_relief_outs_avg_last10 REAL,
+  total_relief_runs_allowed_avg_last5 REAL,
+  total_relief_runs_allowed_avg_last10 REAL,
+  short_first_up_rate_last5 REAL,
+  short_first_up_rate_last10 REAL,
+  bulk_first_up_rate_last5 REAL,
+  bulk_first_up_rate_last10 REAL,
+  two_reliever_containment_rate_last5 REAL,
+  two_reliever_containment_rate_last10 REAL,
+  four_plus_reliever_rate_last5 REAL,
+  four_plus_reliever_rate_last10 REAL,
+  six_plus_reliever_scramble_rate_last10 REAL,
+  bullpen_shape_index REAL,
+  raw_json TEXT,
+  PRIMARY KEY (as_of_date, team_name)
+);
+
 CREATE TABLE IF NOT EXISTS mlb_series_context_snapshots (
   as_of_date TEXT NOT NULL,
   game_pk INTEGER NOT NULL,
@@ -1466,6 +1499,8 @@ CREATE INDEX IF NOT EXISTS idx_mlb_hitter_statcast_trends_player_date
   ON mlb_hitter_statcast_trend_snapshots(player_id, as_of_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_team_state_snapshots_team_date
   ON mlb_team_state_snapshots(team_name, as_of_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_team_bullpen_shape_daily_team_date
+  ON mlb_team_bullpen_shape_daily(team_name, as_of_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_team_first_inning_profiles_team_date
   ON mlb_team_first_inning_profiles_daily(team_name, as_of_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_pitcher_first_inning_profiles_pitcher_date
@@ -7879,6 +7914,144 @@ def build_bullpen_usage_and_chain_rows(
     return usage_rows, likely_relief_rows
 
 
+def build_team_bullpen_shape_row(
+    as_of_date: str, team_name: str, opponent_name: str, rows: list[sqlite3.Row]
+) -> dict[str, Any] | None:
+    if not rows:
+        return None
+
+    by_game: dict[tuple[str, int, str], list[sqlite3.Row]] = {}
+    ordered_game_keys: list[tuple[str, int, str]] = []
+
+    for row in rows:
+        game_pk = to_int(row["game_pk"])
+        if game_pk is None:
+            continue
+        game_key = (row["game_date"], game_pk, row["team_role"])
+        if game_key not in by_game:
+            by_game[game_key] = []
+            ordered_game_keys.append(game_key)
+        by_game[game_key].append(row)
+
+    if not ordered_game_keys:
+        return None
+
+    ordered_game_keys.sort(reverse=True)
+
+    game_packets: list[dict[str, Any]] = []
+    for game_key in ordered_game_keys[:10]:
+        appearances = sorted(
+            by_game[game_key],
+            key=lambda row: ((row["entry_order"] or 99), -(to_int(row["pitcher_id"]) or 0)),
+        )
+        relievers_used = len(appearances)
+        if relievers_used <= 0:
+            continue
+        first_outs = to_int(appearances[0]["outs_recorded"]) or 0
+        total_relief_outs = sum(to_int(row["outs_recorded"]) or 0 for row in appearances)
+        total_relief_runs_allowed = sum(to_int(row["runs_allowed"]) or 0 for row in appearances)
+        game_packets.append(
+            {
+                "game_date": game_key[0],
+                "game_pk": game_key[1],
+                "team_role": game_key[2],
+                "relievers_used": relievers_used,
+                "first_reliever_outs": first_outs,
+                "total_relief_outs": total_relief_outs,
+                "total_relief_runs_allowed": total_relief_runs_allowed,
+                "short_first_up_flag": 1 if first_outs <= 3 else 0,
+                "bulk_first_up_flag": 1 if first_outs >= 6 else 0,
+                "two_reliever_containment_flag": 1 if relievers_used <= 2 else 0,
+                "four_plus_reliever_flag": 1 if relievers_used >= 4 else 0,
+                "six_plus_reliever_flag": 1 if relievers_used >= 6 else 0,
+            }
+        )
+
+    if not game_packets:
+        return None
+
+    def window_packets(window_games: int) -> list[dict[str, Any]]:
+        return game_packets[:window_games]
+
+    last3 = window_packets(3)
+    last5 = window_packets(5)
+    last10 = window_packets(10)
+
+    relievers_used_avg_last3 = safe_mean([packet["relievers_used"] for packet in last3])
+    relievers_used_avg_last5 = safe_mean([packet["relievers_used"] for packet in last5])
+    relievers_used_avg_last10 = safe_mean([packet["relievers_used"] for packet in last10])
+    relievers_used_max_last10 = max((packet["relievers_used"] for packet in last10), default=0)
+    first_reliever_outs_avg_last3 = safe_mean([packet["first_reliever_outs"] for packet in last3])
+    first_reliever_outs_avg_last5 = safe_mean([packet["first_reliever_outs"] for packet in last5])
+    first_reliever_outs_avg_last10 = safe_mean([packet["first_reliever_outs"] for packet in last10])
+    first_reliever_outs_volatility_last10 = safe_pstdev([packet["first_reliever_outs"] for packet in last10])
+    total_relief_outs_avg_last5 = safe_mean([packet["total_relief_outs"] for packet in last5])
+    total_relief_outs_avg_last10 = safe_mean([packet["total_relief_outs"] for packet in last10])
+    total_relief_runs_allowed_avg_last5 = safe_mean([packet["total_relief_runs_allowed"] for packet in last5])
+    total_relief_runs_allowed_avg_last10 = safe_mean([packet["total_relief_runs_allowed"] for packet in last10])
+    short_first_up_rate_last5 = safe_mean([packet["short_first_up_flag"] for packet in last5])
+    short_first_up_rate_last10 = safe_mean([packet["short_first_up_flag"] for packet in last10])
+    bulk_first_up_rate_last5 = safe_mean([packet["bulk_first_up_flag"] for packet in last5])
+    bulk_first_up_rate_last10 = safe_mean([packet["bulk_first_up_flag"] for packet in last10])
+    two_reliever_containment_rate_last5 = safe_mean([packet["two_reliever_containment_flag"] for packet in last5])
+    two_reliever_containment_rate_last10 = safe_mean([packet["two_reliever_containment_flag"] for packet in last10])
+    four_plus_reliever_rate_last5 = safe_mean([packet["four_plus_reliever_flag"] for packet in last5])
+    four_plus_reliever_rate_last10 = safe_mean([packet["four_plus_reliever_flag"] for packet in last10])
+    six_plus_reliever_scramble_rate_last10 = safe_mean([packet["six_plus_reliever_flag"] for packet in last10])
+    bullpen_shape_index = clamp_value(
+        (relievers_used_avg_last5 or 0.0) * 12
+        + (first_reliever_outs_avg_last5 or 0.0) * 6
+        + (first_reliever_outs_volatility_last10 or 0.0) * 8
+        + (bulk_first_up_rate_last10 or 0.0) * 20
+        + (four_plus_reliever_rate_last10 or 0.0) * 18
+        + (six_plus_reliever_scramble_rate_last10 or 0.0) * 26
+        - (two_reliever_containment_rate_last10 or 0.0) * 18,
+        0,
+        100,
+    )
+
+    return {
+        "as_of_date": as_of_date,
+        "team_name": team_name,
+        "scheduled_opponent": opponent_name,
+        "games_sample_last3": len(last3),
+        "games_sample_last5": len(last5),
+        "games_sample_last10": len(last10),
+        "relievers_used_avg_last3": round(relievers_used_avg_last3, 3) if relievers_used_avg_last3 is not None else None,
+        "relievers_used_avg_last5": round(relievers_used_avg_last5, 3) if relievers_used_avg_last5 is not None else None,
+        "relievers_used_avg_last10": round(relievers_used_avg_last10, 3) if relievers_used_avg_last10 is not None else None,
+        "relievers_used_max_last10": relievers_used_max_last10,
+        "first_reliever_outs_avg_last3": round(first_reliever_outs_avg_last3, 3) if first_reliever_outs_avg_last3 is not None else None,
+        "first_reliever_outs_avg_last5": round(first_reliever_outs_avg_last5, 3) if first_reliever_outs_avg_last5 is not None else None,
+        "first_reliever_outs_avg_last10": round(first_reliever_outs_avg_last10, 3) if first_reliever_outs_avg_last10 is not None else None,
+        "first_reliever_outs_volatility_last10": round(first_reliever_outs_volatility_last10, 3) if first_reliever_outs_volatility_last10 is not None else None,
+        "total_relief_outs_avg_last5": round(total_relief_outs_avg_last5, 3) if total_relief_outs_avg_last5 is not None else None,
+        "total_relief_outs_avg_last10": round(total_relief_outs_avg_last10, 3) if total_relief_outs_avg_last10 is not None else None,
+        "total_relief_runs_allowed_avg_last5": round(total_relief_runs_allowed_avg_last5, 3) if total_relief_runs_allowed_avg_last5 is not None else None,
+        "total_relief_runs_allowed_avg_last10": round(total_relief_runs_allowed_avg_last10, 3) if total_relief_runs_allowed_avg_last10 is not None else None,
+        "short_first_up_rate_last5": short_first_up_rate_last5,
+        "short_first_up_rate_last10": short_first_up_rate_last10,
+        "bulk_first_up_rate_last5": bulk_first_up_rate_last5,
+        "bulk_first_up_rate_last10": bulk_first_up_rate_last10,
+        "two_reliever_containment_rate_last5": two_reliever_containment_rate_last5,
+        "two_reliever_containment_rate_last10": two_reliever_containment_rate_last10,
+        "four_plus_reliever_rate_last5": four_plus_reliever_rate_last5,
+        "four_plus_reliever_rate_last10": four_plus_reliever_rate_last10,
+        "six_plus_reliever_scramble_rate_last10": six_plus_reliever_scramble_rate_last10,
+        "bullpen_shape_index": round(bullpen_shape_index, 2),
+        "raw_json": json.dumps(
+            {
+                "recentGameDates": [packet["game_date"] for packet in game_packets],
+                "recentRelieversUsed": [packet["relievers_used"] for packet in game_packets],
+                "recentFirstRelieverOuts": [packet["first_reliever_outs"] for packet in game_packets],
+                "recentTotalReliefOuts": [packet["total_relief_outs"] for packet in game_packets],
+                "recentTotalReliefRunsAllowed": [packet["total_relief_runs_allowed"] for packet in game_packets],
+            },
+            sort_keys=True,
+        ),
+    }
+
+
 def refresh_rolling_form(conn: sqlite3.Connection, through_date: str | None = None) -> None:
     init_db(conn)
     params: tuple[Any, ...] = (through_date,) if through_date else ()
@@ -7894,11 +8067,13 @@ def refresh_rolling_form(conn: sqlite3.Connection, through_date: str | None = No
         conn.execute("DELETE FROM mlb_starting_pitcher_rolling_form WHERE as_of_date <= ?", (through_date,))
         conn.execute("DELETE FROM mlb_bullpen_usage WHERE as_of_date <= ?", (through_date,))
         conn.execute("DELETE FROM mlb_likely_relief_chains WHERE as_of_date <= ?", (through_date,))
+        conn.execute("DELETE FROM mlb_team_bullpen_shape_daily WHERE as_of_date <= ?", (through_date,))
     else:
         conn.execute("DELETE FROM mlb_team_rolling_form")
         conn.execute("DELETE FROM mlb_starting_pitcher_rolling_form")
         conn.execute("DELETE FROM mlb_bullpen_usage")
         conn.execute("DELETE FROM mlb_likely_relief_chains")
+        conn.execute("DELETE FROM mlb_team_bullpen_shape_daily")
 
     for as_of_date in dates:
         teams = [
@@ -8055,6 +8230,9 @@ def refresh_rolling_form(conn: sqlite3.Connection, through_date: str | None = No
                 usage_rows, likely_relief_rows = build_bullpen_usage_and_chain_rows(
                     as_of_date, team_name, opponent_name, reliever_rows
                 )
+                bullpen_shape_row = build_team_bullpen_shape_row(
+                    as_of_date, team_name, opponent_name, reliever_rows
+                )
                 for usage_row in usage_rows:
                     conn.execute(
                         """
@@ -8118,6 +8296,57 @@ def refresh_rolling_form(conn: sqlite3.Connection, through_date: str | None = No
                             likely_row["back_to_back_flag"],
                             likely_row["last_appearance_date"],
                             likely_row["raw_json"],
+                        ),
+                    )
+                if bullpen_shape_row:
+                    conn.execute(
+                        """
+                        INSERT INTO mlb_team_bullpen_shape_daily (
+                          as_of_date, team_name, scheduled_opponent,
+                          games_sample_last3, games_sample_last5, games_sample_last10,
+                          relievers_used_avg_last3, relievers_used_avg_last5, relievers_used_avg_last10,
+                          relievers_used_max_last10,
+                          first_reliever_outs_avg_last3, first_reliever_outs_avg_last5, first_reliever_outs_avg_last10,
+                          first_reliever_outs_volatility_last10,
+                          total_relief_outs_avg_last5, total_relief_outs_avg_last10,
+                          total_relief_runs_allowed_avg_last5, total_relief_runs_allowed_avg_last10,
+                          short_first_up_rate_last5, short_first_up_rate_last10,
+                          bulk_first_up_rate_last5, bulk_first_up_rate_last10,
+                          two_reliever_containment_rate_last5, two_reliever_containment_rate_last10,
+                          four_plus_reliever_rate_last5, four_plus_reliever_rate_last10,
+                          six_plus_reliever_scramble_rate_last10, bullpen_shape_index, raw_json
+                        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        """,
+                        (
+                            bullpen_shape_row["as_of_date"],
+                            bullpen_shape_row["team_name"],
+                            bullpen_shape_row["scheduled_opponent"],
+                            bullpen_shape_row["games_sample_last3"],
+                            bullpen_shape_row["games_sample_last5"],
+                            bullpen_shape_row["games_sample_last10"],
+                            bullpen_shape_row["relievers_used_avg_last3"],
+                            bullpen_shape_row["relievers_used_avg_last5"],
+                            bullpen_shape_row["relievers_used_avg_last10"],
+                            bullpen_shape_row["relievers_used_max_last10"],
+                            bullpen_shape_row["first_reliever_outs_avg_last3"],
+                            bullpen_shape_row["first_reliever_outs_avg_last5"],
+                            bullpen_shape_row["first_reliever_outs_avg_last10"],
+                            bullpen_shape_row["first_reliever_outs_volatility_last10"],
+                            bullpen_shape_row["total_relief_outs_avg_last5"],
+                            bullpen_shape_row["total_relief_outs_avg_last10"],
+                            bullpen_shape_row["total_relief_runs_allowed_avg_last5"],
+                            bullpen_shape_row["total_relief_runs_allowed_avg_last10"],
+                            bullpen_shape_row["short_first_up_rate_last5"],
+                            bullpen_shape_row["short_first_up_rate_last10"],
+                            bullpen_shape_row["bulk_first_up_rate_last5"],
+                            bullpen_shape_row["bulk_first_up_rate_last10"],
+                            bullpen_shape_row["two_reliever_containment_rate_last5"],
+                            bullpen_shape_row["two_reliever_containment_rate_last10"],
+                            bullpen_shape_row["four_plus_reliever_rate_last5"],
+                            bullpen_shape_row["four_plus_reliever_rate_last10"],
+                            bullpen_shape_row["six_plus_reliever_scramble_rate_last10"],
+                            bullpen_shape_row["bullpen_shape_index"],
+                            bullpen_shape_row["raw_json"],
                         ),
                     )
 
@@ -10129,6 +10358,30 @@ def list_likely_relievers(
     ).fetchall()
 
 
+def list_bullpen_shape(
+    conn: sqlite3.Connection, date_text: str, team_name: str | None = None
+) -> list[sqlite3.Row]:
+    if team_name:
+        return conn.execute(
+            """
+            SELECT *
+            FROM mlb_team_bullpen_shape_daily
+            WHERE as_of_date = ? AND team_name = ?
+            ORDER BY bullpen_shape_index DESC, team_name ASC
+            """,
+            (date_text, team_name),
+        ).fetchall()
+    return conn.execute(
+        """
+        SELECT *
+        FROM mlb_team_bullpen_shape_daily
+        WHERE as_of_date = ?
+        ORDER BY bullpen_shape_index DESC, team_name ASC
+        """,
+        (date_text,),
+    ).fetchall()
+
+
 def print_backtest_summary(rows: list[sqlite3.Row]) -> None:
     hits = [row for row in rows if row["actual_home_runs"]]
     print(f"Tracked picks: {len(rows)}")
@@ -10225,6 +10478,17 @@ def print_likely_relievers(rows: list[sqlite3.Row]) -> None:
             f"- {row['team_name']} vs {row['opponent_name']} | #{row['predicted_rank']} {row['pitcher_name']} "
             f"({row['likely_role']}) | first-reliever {row['first_reliever_likelihood']} | "
             f"availability {row['availability_score']} | expected outs {row['expected_outs']}"
+        )
+
+
+def print_bullpen_shape(rows: list[sqlite3.Row]) -> None:
+    print(f"Bullpen shape rows: {len(rows)}")
+    for row in rows:
+        print(
+            f"- {row['team_name']} vs {row['scheduled_opponent']} | shape {row['bullpen_shape_index']} | "
+            f"relievers avg last5 {row['relievers_used_avg_last5']} | first-up outs last5 {row['first_reliever_outs_avg_last5']} | "
+            f"bulk first-up last10 {row['bulk_first_up_rate_last10']} | 2-man containment last10 {row['two_reliever_containment_rate_last10']} | "
+            f"6+ scramble last10 {row['six_plus_reliever_scramble_rate_last10']}"
         )
 
 
@@ -10531,6 +10795,12 @@ def parse_args() -> argparse.Namespace:
     list_relievers.add_argument("--date", required=True, help="Date in YYYY-MM-DD format.")
     list_relievers.add_argument("--team", help="Optional team name filter.")
 
+    list_bullpen_shape_parser = subparsers.add_parser(
+        "list-bullpen-shape", help="Print team bullpen-shape rows for a date."
+    )
+    list_bullpen_shape_parser.add_argument("--date", required=True, help="Date in YYYY-MM-DD format.")
+    list_bullpen_shape_parser.add_argument("--team", help="Optional team name filter.")
+
     list_probables = subparsers.add_parser(
         "list-probable-starters",
         help="Print the official MLB probable starters for a date from the schedule API.",
@@ -10772,6 +11042,11 @@ def main() -> None:
         if args.command == "list-likely-relievers":
             rows = list_likely_relievers(conn, args.date, args.team)
             print_likely_relievers(rows)
+            return
+
+        if args.command == "list-bullpen-shape":
+            rows = list_bullpen_shape(conn, args.date, args.team)
+            print_bullpen_shape(rows)
             return
 
         if args.command == "list-probable-starters":

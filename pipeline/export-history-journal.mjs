@@ -114,6 +114,19 @@ const loadPublishedMlbGames = (date) => {
     .filter((game) => game?.league === 'MLB')
 }
 
+const isFullySettledMlbDate = (date) => {
+  const rows = readJsonSql(`
+    select
+      count(*) as total_games,
+      sum(case when status in ('Final', 'Game Over', 'Completed') then 1 else 0 end) as final_games
+    from mlb_games
+    where game_date = '${date}'
+  `)
+  const row = rows[0]
+  if (!row) return false
+  return Number(row.total_games || 0) > 0 && Number(row.total_games || 0) === Number(row.final_games || 0)
+}
+
 const discoverTrackedMlbDates = () => {
   if (!fs.existsSync(SLATES_DIR)) return []
   const now = new Date()
@@ -123,7 +136,7 @@ const discoverTrackedMlbDates = () => {
     .readdirSync(SLATES_DIR, { withFileTypes: true })
     .filter((entry) => entry.isDirectory() && /^\d{4}-\d{2}-\d{2}$/.test(entry.name))
     .map((entry) => entry.name)
-    .filter((date) => date < todayIso)
+    .filter((date) => date < todayIso || (date === todayIso && isFullySettledMlbDate(date)))
     .filter((date) => loadPublishedMlbGames(date).length > 0 || CUSTOM_DAY_GAMES[date]?.length)
     .sort((left, right) => left.localeCompare(right))
 }
