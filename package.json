@@ -91,6 +91,8 @@
     "data:research:mlb-batter-outcome-baselines": "python3 pipeline/research_mlb_batter_outcome_baselines.py",
     "data:research:mlb-batter-outcome-gates": "python3 pipeline/research_mlb_batter_outcome_gate_sweeps.py",
     "data:research:mlb-batter-xops-gates": "python3 pipeline/research_mlb_batter_xops_gates.py",
+    "data:research:mlb-starter-exit-buckets": "python3 pipeline/research_mlb_starter_exit_buckets.py",
+    "data:research:mlb-bullpen-shape-model": "python3 pipeline/research_mlb_bullpen_shape_model.py",
     "data:research:mlb-bullpen-audit": "python3 pipeline/research_mlb_bullpen_prediction_audit.py",
     "data:research:mlb-bullpen-shape": "python3 pipeline/research_mlb_bullpen_shape_usage.py",
     "data:research:mlb-hitter-opponent-strength": "python3 pipeline/research_mlb_hitter_opponent_strength.py",
