@@ -140,6 +140,28 @@ const rawTennisGames = [
         }
       ]
     },
+    "ensembleValueCase": {
+      "source": "Multimodel ensemble",
+      "selection": "Zachary Svajda",
+      "opponent": "Francisco Cerundolo",
+      "grade": "Watch only",
+      "riskGate": "hold risk, closeout risk",
+      "marketOdds": 809,
+      "fairOdds": 245,
+      "modelProbability": 29,
+      "dataOnlyProbability": 33.9,
+      "marketProbability": 11,
+      "marketDisagreementPct": 18,
+      "netEvPer100": 161.6,
+      "modelBlend": "logit_l1,random_forest,grad_boost,xgboost",
+      "headline": "Zachary Svajda is priced below the model, not guaranteed to win.",
+      "useCase": "Straight ML value only at +809 or better; fair price from the ensemble is about +245.",
+      "bullets": [],
+      "risks": [
+        "Desk lean still has Francisco Cerundolo; this is a price-dislocation play, not the safest winner.",
+        "Market still prices Zachary Svajda as a real underdog at 11% implied."
+      ]
+    },
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -212,7 +234,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3700/francisco-cerundolo",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Francisco Cerundolo",
         "profile": "Live rank #26 | Argentina | age 27 | 2026 clay 15-7, 68% | adj form 78",
@@ -251,7 +273,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3953/zachary-svajda",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Zachary Svajda",
         "profile": "Live rank #85 | USA | age 23 | 2026 clay 3-5, 38% | adj form 52",
@@ -417,6 +439,27 @@ const rawTennisGames = [
         }
       ]
     },
+    "ensembleValueCase": {
+      "source": "Multimodel ensemble",
+      "selection": "Iva Jovic",
+      "opponent": "Naomi Osaka",
+      "grade": "Watch only",
+      "riskGate": "hold risk, closeout risk",
+      "marketOdds": -100,
+      "fairOdds": -108,
+      "modelProbability": 52,
+      "dataOnlyProbability": 53.1,
+      "marketProbability": 50,
+      "marketDisagreementPct": 2,
+      "netEvPer100": 2,
+      "modelBlend": "logit_l1,random_forest,grad_boost,xgboost",
+      "headline": "Iva Jovic is priced below the model, not guaranteed to win.",
+      "useCase": "Favorite price needs cleaner proof or derivative value; do not confuse win probability with bet value.",
+      "bullets": [],
+      "risks": [
+        "Desk lean still has Naomi Osaka; this is a price-dislocation play, not the safest winner."
+      ]
+    },
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -489,7 +532,7 @@ const rawTennisGames = [
           "tour": "WTA",
           "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/14311/iva-jovic",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Iva Jovic",
         "profile": "Live rank #17 | USA | age 18 | 2026 clay 8-6, 57% | adj form 76",
@@ -528,7 +571,7 @@ const rawTennisGames = [
           "tour": "WTA",
           "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/2789/naomi-osaka",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Naomi Osaka",
         "profile": "Live rank #16 | Japan | age 28 | 2026 clay 6-2, 75% | adj form 78",
@@ -694,6 +737,27 @@ const rawTennisGames = [
         }
       ]
     },
+    "ensembleValueCase": {
+      "source": "Multimodel ensemble",
+      "selection": "Maja Chwalinska",
+      "opponent": "Maria Sakkari",
+      "grade": "Playable favorite",
+      "riskGate": "closeout risk",
+      "marketOdds": -142,
+      "fairOdds": -166,
+      "modelProbability": 62.4,
+      "dataOnlyProbability": 65.1,
+      "marketProbability": 58.7,
+      "marketDisagreementPct": 3.7,
+      "netEvPer100": 4.3,
+      "modelBlend": "logit_l1,random_forest,grad_boost,xgboost",
+      "headline": "Maja Chwalinska is priced below the model, not guaranteed to win.",
+      "useCase": "Favorite price needs cleaner proof or derivative value; do not confuse win probability with bet value.",
+      "bullets": [],
+      "risks": [
+        "Desk lean still has Maria Sakkari; this is a price-dislocation play, not the safest winner."
+      ]
+    },
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -766,7 +830,7 @@ const rawTennisGames = [
           "tour": "WTA",
           "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3018/maria-sakkari",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Maria Sakkari",
         "profile": "Live rank #49 | Greece | age 30 | 2026 clay 3-4, 43% | adj form 46",
@@ -805,7 +869,7 @@ const rawTennisGames = [
           "tour": "WTA",
           "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3417/maja-chwalinska",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Maja Chwalinska",
         "profile": "Live rank #114 | Poland | age 24 | 2026 clay 15-5, 75% | adj form 0",
@@ -971,6 +1035,28 @@ const rawTennisGames = [
         }
       ]
     },
+    "ensembleValueCase": {
+      "source": "Multimodel ensemble",
+      "selection": "Oleksandra Oliynykova",
+      "opponent": "Diana Shnaider",
+      "grade": "Watch only",
+      "riskGate": "hold risk, closeout risk",
+      "marketOdds": 255,
+      "fairOdds": 155,
+      "modelProbability": 39.2,
+      "dataOnlyProbability": 42.6,
+      "marketProbability": 28.2,
+      "marketDisagreementPct": 11,
+      "netEvPer100": 37.3,
+      "modelBlend": "logit_l1,random_forest,grad_boost,xgboost",
+      "headline": "Oleksandra Oliynykova is priced below the model, not guaranteed to win.",
+      "useCase": "Straight ML value only at +255 or better; fair price from the ensemble is about +155.",
+      "bullets": [],
+      "risks": [
+        "Desk lean still has Diana Shnaider; this is a price-dislocation play, not the safest winner.",
+        "Market still prices Oleksandra Oliynykova as a real underdog at 28.2% implied."
+      ]
+    },
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -1043,7 +1129,7 @@ const rawTennisGames = [
           "tour": "WTA",
           "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/8017/diana-shnaider",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Diana Shnaider",
         "profile": "Live rank #23 | Russia | age 22 | 2026 clay 7-4, 64% | adj form 67",
@@ -1082,7 +1168,7 @@ const rawTennisGames = [
           "tour": "WTA",
           "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/5705/oleksandra-oliynykova",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Oleksandra Oliynykova",
         "profile": "Live rank #65 | Ukraine | age 25 | 2026 clay 14-7, 67% | adj form 75",
@@ -1248,6 +1334,27 @@ const rawTennisGames = [
         }
       ]
     },
+    "ensembleValueCase": {
+      "source": "Multimodel ensemble",
+      "selection": "Learner Tien",
+      "opponent": "Flavio Cobolli",
+      "grade": "Bet-grade ML",
+      "riskGate": "clean enough",
+      "marketOdds": 164,
+      "fairOdds": 114,
+      "modelProbability": 46.8,
+      "dataOnlyProbability": 51.3,
+      "marketProbability": 37.9,
+      "marketDisagreementPct": 8.9,
+      "netEvPer100": 21.5,
+      "modelBlend": "logit_l1,random_forest,grad_boost,xgboost",
+      "headline": "Learner Tien is priced below the model, not guaranteed to win.",
+      "useCase": "Straight ML value only at +164 or better; fair price from the ensemble is about +114.",
+      "bullets": [],
+      "risks": [
+        "Risk is mostly normal tennis variance; do not size this like a lock."
+      ]
+    },
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -1320,7 +1427,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/7602/flavio-cobolli",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Flavio Cobolli",
         "profile": "Live rank #14 | Italy | age 24 | 2026 clay 11-5, 69% | adj form 64",
@@ -1359,7 +1466,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/10386/learner-tien",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Learner Tien",
         "profile": "Live rank #18 | USA | age 20 | 2026 clay 9-3, 75% | adj form 97",
@@ -1525,6 +1632,28 @@ const rawTennisGames = [
         }
       ]
     },
+    "ensembleValueCase": {
+      "source": "Multimodel ensemble",
+      "selection": "Daria Kasatkina",
+      "opponent": "Aryna Sabalenka",
+      "grade": "Outlier hold",
+      "riskGate": "error-control risk, hold risk, closeout risk",
+      "marketOdds": 762,
+      "fairOdds": 125,
+      "modelProbability": 44.4,
+      "dataOnlyProbability": 52.5,
+      "marketProbability": 11.6,
+      "marketDisagreementPct": 32.8,
+      "netEvPer100": 280.4,
+      "modelBlend": "logit_l1,random_forest,grad_boost,xgboost",
+      "headline": "Daria Kasatkina is priced below the model, not guaranteed to win.",
+      "useCase": "Straight ML value only at +762 or better; fair price from the ensemble is about +125.",
+      "bullets": [],
+      "risks": [
+        "Desk lean still has Aryna Sabalenka; this is a price-dislocation play, not the safest winner.",
+        "Market still prices Daria Kasatkina as a real underdog at 11.6% implied."
+      ]
+    },
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -1597,7 +1726,7 @@ const rawTennisGames = [
           "tour": "WTA",
           "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3038/aryna-sabalenka",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Aryna Sabalenka",
         "profile": "Live rank #1 | Belarus | age 28 | 2026 clay 6-2, 75% | adj form 88",
@@ -1636,7 +1765,7 @@ const rawTennisGames = [
           "tour": "WTA",
           "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/2191/daria-kasatkina",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Daria Kasatkina",
         "profile": "Live rank #53 | Australia | age 29 | 2026 clay 11-4, 73% | adj form 86",
@@ -1802,6 +1931,27 @@ const rawTennisGames = [
         }
       ]
     },
+    "ensembleValueCase": {
+      "source": "Multimodel ensemble",
+      "selection": "Camila Osorio",
+      "opponent": "Anna Kalinskaya",
+      "grade": "Negative EV",
+      "riskGate": "clean enough",
+      "marketOdds": -102,
+      "fairOdds": 104,
+      "modelProbability": 48.9,
+      "dataOnlyProbability": 50.8,
+      "marketProbability": 50.5,
+      "marketDisagreementPct": 1.6,
+      "netEvPer100": -5.1,
+      "modelBlend": "logit_l1,random_forest,grad_boost,xgboost",
+      "headline": "Camila Osorio does not clear a fee-adjusted value case.",
+      "useCase": "Favorite price needs cleaner proof or derivative value; do not confuse win probability with bet value.",
+      "bullets": [],
+      "risks": [
+        "Desk lean still has Anna Kalinskaya; this is a price-dislocation play, not the safest winner."
+      ]
+    },
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -1874,7 +2024,7 @@ const rawTennisGames = [
           "tour": "WTA",
           "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/2977/anna-kalinskaya",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": null,
         "profile": "Live rank #24 | Russia | age 27",
@@ -1913,7 +2063,7 @@ const rawTennisGames = [
           "tour": "WTA",
           "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3404/camila-osorio",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": null,
         "profile": "Live rank #86 | Colombia | age 24",
@@ -2079,6 +2229,27 @@ const rawTennisGames = [
         }
       ]
     },
+    "ensembleValueCase": {
+      "source": "Multimodel ensemble",
+      "selection": "Matteo Berrettini",
+      "opponent": "Francisco Comesana",
+      "grade": "Likely winner, price taxed",
+      "riskGate": "clean enough",
+      "marketOdds": -230,
+      "fairOdds": -202,
+      "modelProbability": 66.9,
+      "dataOnlyProbability": 65.5,
+      "marketProbability": 69.7,
+      "marketDisagreementPct": 2.8,
+      "netEvPer100": -6,
+      "modelBlend": "logit_l1,random_forest,grad_boost,xgboost",
+      "headline": "Matteo Berrettini does not clear a fee-adjusted value case.",
+      "useCase": "Favorite price needs cleaner proof or derivative value; do not confuse win probability with bet value.",
+      "bullets": [],
+      "risks": [
+        "Risk is mostly normal tennis variance; do not size this like a lock."
+      ]
+    },
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -2151,7 +2322,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/2622/matteo-berrettini",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Matteo Berrettini",
         "profile": "Live rank #105 | Italy | age 30 | 2026 clay 10-9, 53% | adj form 83",
@@ -2190,7 +2361,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/10044/francisco-comesana",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Francisco Comesana",
         "profile": "Live rank #102 | Argentina | age 25 | 2026 clay 11-11, 50% | adj form 69",
@@ -2356,6 +2527,27 @@ const rawTennisGames = [
         }
       ]
     },
+    "ensembleValueCase": {
+      "source": "Multimodel ensemble",
+      "selection": "Juan Manuel Cerundolo",
+      "opponent": "Martin Landaluce",
+      "grade": "Negative EV",
+      "riskGate": "clean enough",
+      "marketOdds": -152,
+      "fairOdds": -154,
+      "modelProbability": 60.6,
+      "dataOnlyProbability": 60.7,
+      "marketProbability": 60.3,
+      "marketDisagreementPct": 0.3,
+      "netEvPer100": -1.6,
+      "modelBlend": "logit_l1,random_forest,grad_boost,xgboost",
+      "headline": "Juan Manuel Cerundolo does not clear a fee-adjusted value case.",
+      "useCase": "Favorite price needs cleaner proof or derivative value; do not confuse win probability with bet value.",
+      "bullets": [],
+      "risks": [
+        "Risk is mostly normal tennis variance; do not size this like a lock."
+      ]
+    },
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -2428,7 +2620,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/4008/juan-manuel-cerundolo",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Juan Manuel Cerundolo",
         "profile": "Live rank #56 | Argentina | age 24 | 2026 clay 19-10, 66% | adj form 103",
@@ -2467,7 +2659,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/11640/martin-landaluce",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Martin Landaluce",
         "profile": "Live rank #69 | Spain | age 20 | 2026 clay 10-6, 63% | adj form 88",
@@ -2633,6 +2825,28 @@ const rawTennisGames = [
         }
       ]
     },
+    "ensembleValueCase": {
+      "source": "Multimodel ensemble",
+      "selection": "Diane Parry",
+      "opponent": "Amanda Anisimova",
+      "grade": "Watch only",
+      "riskGate": "hold risk, closeout risk, opponent return pressure",
+      "marketOdds": 421,
+      "fairOdds": 266,
+      "modelProbability": 27.3,
+      "dataOnlyProbability": 30,
+      "marketProbability": 19.2,
+      "marketDisagreementPct": 8.1,
+      "netEvPer100": 40.2,
+      "modelBlend": "logit_l1,random_forest,grad_boost,xgboost",
+      "headline": "Diane Parry is priced below the model, not guaranteed to win.",
+      "useCase": "Straight ML value only at +421 or better; fair price from the ensemble is about +266.",
+      "bullets": [],
+      "risks": [
+        "Desk lean still has Amanda Anisimova; this is a price-dislocation play, not the safest winner.",
+        "Market still prices Diane Parry as a real underdog at 19.2% implied."
+      ]
+    },
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -2705,7 +2919,7 @@ const rawTennisGames = [
           "tour": "WTA",
           "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3332/diane-parry",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Diane Parry",
         "profile": "Live rank #92 | France | age 23 | 2026 clay 7-5, 58% | adj form 88",
@@ -2744,7 +2958,7 @@ const rawTennisGames = [
           "tour": "WTA",
           "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3221/amanda-anisimova",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Amanda Anisimova",
         "profile": "Live rank #6 | USA | age 24 | 2026 clay 2-0, 100% | adj form 72",
@@ -2910,6 +3124,28 @@ const rawTennisGames = [
         }
       ]
     },
+    "ensembleValueCase": {
+      "source": "Multimodel ensemble",
+      "selection": "Moise Kouame",
+      "opponent": "Alejandro Tabilo",
+      "grade": "Watch only",
+      "riskGate": "hold risk, closeout risk",
+      "marketOdds": 365,
+      "fairOdds": 262,
+      "modelProbability": 27.6,
+      "dataOnlyProbability": 30.9,
+      "marketProbability": 21.5,
+      "marketDisagreementPct": 6.1,
+      "netEvPer100": 26.3,
+      "modelBlend": "logit_l1,random_forest,grad_boost,xgboost",
+      "headline": "Moise Kouame is priced below the model, not guaranteed to win.",
+      "useCase": "Straight ML value only at +365 or better; fair price from the ensemble is about +262.",
+      "bullets": [],
+      "risks": [
+        "Desk lean still has Alejandro Tabilo; this is a price-dislocation play, not the safest winner.",
+        "Market still prices Moise Kouame as a real underdog at 21.5% implied."
+      ]
+    },
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -3011,7 +3247,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/2970/alejandro-tabilo",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Alejandro Tabilo",
         "profile": "Live rank #36 | Chile | age 28 | 2026 clay 23-9, 72% | adj form 70",
@@ -3177,6 +3413,27 @@ const rawTennisGames = [
         }
       ]
     },
+    "ensembleValueCase": {
+      "source": "Multimodel ensemble",
+      "selection": "Raphael Collignon",
+      "opponent": "Matteo Arnaldi",
+      "grade": "Playable favorite",
+      "riskGate": "clean enough",
+      "marketOdds": -205,
+      "fairOdds": -242,
+      "modelProbability": 70.8,
+      "dataOnlyProbability": 73.3,
+      "marketProbability": 67.2,
+      "marketDisagreementPct": 3.6,
+      "netEvPer100": 3.3,
+      "modelBlend": "logit_l1,random_forest,grad_boost,xgboost",
+      "headline": "Raphael Collignon is priced below the model, not guaranteed to win.",
+      "useCase": "Favorite price needs cleaner proof or derivative value; do not confuse win probability with bet value.",
+      "bullets": [],
+      "risks": [
+        "Risk is mostly normal tennis variance; do not size this like a lock."
+      ]
+    },
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -3249,7 +3506,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3793/matteo-arnaldi",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Matteo Arnaldi",
         "profile": "Live rank #104 | Italy | age 25 | 2026 clay 10-6, 63% | adj form 101",
@@ -3288,7 +3545,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/11222/raphael-collignon",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Raphael Collignon",
         "profile": "Live rank #62 | Belgium | age 24 | 2026 clay 12-2, 86% | adj form 95",
@@ -3454,6 +3711,27 @@ const rawTennisGames = [
         }
       ]
     },
+    "ensembleValueCase": {
+      "source": "Multimodel ensemble",
+      "selection": "Madison Keys",
+      "opponent": "Victoria Mboko",
+      "grade": "Negative EV",
+      "riskGate": "clean enough",
+      "marketOdds": -100,
+      "fairOdds": 100,
+      "modelProbability": 49.9,
+      "dataOnlyProbability": 52.3,
+      "marketProbability": 50,
+      "marketDisagreementPct": 0.1,
+      "netEvPer100": -2.2,
+      "modelBlend": "logit_l1,random_forest,grad_boost,xgboost",
+      "headline": "Madison Keys does not clear a fee-adjusted value case.",
+      "useCase": "Favorite price needs cleaner proof or derivative value; do not confuse win probability with bet value.",
+      "bullets": [],
+      "risks": [
+        "Desk lean still has Victoria Mboko; this is a price-dislocation play, not the safest winner."
+      ]
+    },
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -3526,7 +3804,7 @@ const rawTennisGames = [
           "tour": "WTA",
           "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/11219/victoria-mboko",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Victoria Mboko",
         "profile": "Live rank #9 | Canada | age 19 | 2026 clay 5-2, 71% | adj form 76",
@@ -3565,7 +3843,7 @@ const rawTennisGames = [
           "tour": "WTA",
           "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/1556/madison-keys",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Madison Keys",
         "profile": "Live rank #19 | USA | age 31 | 2026 clay 10-3, 77% | adj form 85",
@@ -3731,6 +4009,28 @@ const rawTennisGames = [
         }
       ]
     },
+    "ensembleValueCase": {
+      "source": "Multimodel ensemble",
+      "selection": "Anastasia Potapova",
+      "opponent": "Coco Gauff",
+      "grade": "Watch only",
+      "riskGate": "clean enough",
+      "marketOdds": 285,
+      "fairOdds": 120,
+      "modelProbability": 45.5,
+      "dataOnlyProbability": 50.8,
+      "marketProbability": 26,
+      "marketDisagreementPct": 19.5,
+      "netEvPer100": 73.2,
+      "modelBlend": "logit_l1,random_forest,grad_boost,xgboost",
+      "headline": "Anastasia Potapova is priced below the model, not guaranteed to win.",
+      "useCase": "Straight ML value only at +285 or better; fair price from the ensemble is about +120.",
+      "bullets": [],
+      "risks": [
+        "Desk lean still has Coco Gauff; this is a price-dislocation play, not the safest winner.",
+        "Market still prices Anastasia Potapova as a real underdog at 26% implied."
+      ]
+    },
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -3803,7 +4103,7 @@ const rawTennisGames = [
           "tour": "WTA",
           "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3626/coco-gauff",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": null,
         "profile": "Live rank #4 | USA | age 22",
@@ -3842,7 +4142,7 @@ const rawTennisGames = [
           "tour": "WTA",
           "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/2971/anastasia-potapova",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": null,
         "profile": "Live rank #30 | Austria | age 25",
@@ -4008,6 +4308,27 @@ const rawTennisGames = [
         }
       ]
     },
+    "ensembleValueCase": {
+      "source": "Multimodel ensemble",
+      "selection": "Jaime Faria",
+      "opponent": "Frances Tiafoe",
+      "grade": "Bet-grade ML",
+      "riskGate": "clean enough",
+      "marketOdds": 155,
+      "fairOdds": -101,
+      "modelProbability": 50.3,
+      "dataOnlyProbability": 54,
+      "marketProbability": 39.2,
+      "marketDisagreementPct": 11.1,
+      "netEvPer100": 26.4,
+      "modelBlend": "logit_l1,random_forest,grad_boost,xgboost",
+      "headline": "Jaime Faria is priced below the model, not guaranteed to win.",
+      "useCase": "Straight ML value only at +155 or better; fair price from the ensemble is about -101.",
+      "bullets": [],
+      "risks": [
+        "Desk lean still has Frances Tiafoe; this is a price-dislocation play, not the safest winner."
+      ]
+    },
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -4080,7 +4401,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/10219/jaime-faria",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Jaime Faria",
         "profile": "Live rank #115 | Portugal | age 22 | 2026 clay 26-11, 70% | adj form 0",
@@ -4119,7 +4440,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/2708/frances-tiafoe",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Frances Tiafoe",
         "profile": "Live rank #22 | USA | age 28 | 2026 clay 6-3, 67% | adj form 82",
@@ -4285,6 +4606,28 @@ const rawTennisGames = [
         }
       ]
     },
+    "ensembleValueCase": {
+      "source": "Multimodel ensemble",
+      "selection": "Brandon Nakashima",
+      "opponent": "Felix Auger-Aliassime",
+      "grade": "Bet-grade ML",
+      "riskGate": "clean enough",
+      "marketOdds": 245,
+      "fairOdds": 117,
+      "modelProbability": 46,
+      "dataOnlyProbability": 50.8,
+      "marketProbability": 29,
+      "marketDisagreementPct": 17,
+      "netEvPer100": 56.6,
+      "modelBlend": "logit_l1,random_forest,grad_boost,xgboost",
+      "headline": "Brandon Nakashima is priced below the model, not guaranteed to win.",
+      "useCase": "Straight ML value only at +245 or better; fair price from the ensemble is about +117.",
+      "bullets": [],
+      "risks": [
+        "Desk lean still has Felix Auger-Aliassime; this is a price-dislocation play, not the safest winner.",
+        "Market still prices Brandon Nakashima as a real underdog at 29% implied."
+      ]
+    },
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook browser scrape",
@@ -4357,7 +4700,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3209/felix-auger-aliassime",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": null,
         "profile": "Live rank #6 | Canada | age 25",
@@ -4396,7 +4739,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3774/brandon-nakashima",
-          "asOf": "2026-05-30"
+          "asOf": "2026-05-29"
         },
         "qualityName": null,
         "profile": "Live rank #35 | USA | age 24",
@@ -4555,6 +4898,7 @@ const buildGame = (raw) => {
       ].filter(Boolean),
       predictionMarket,
       valueBoard: raw.valueBoard,
+      ensembleValueCase: raw.ensembleValueCase,
       projection: { projectedWinner: raw.pickName, projectedSetLine: raw.tour === 'ATP' ? '3-1/3-2 range' : '2-0/2-1 range', setWinProjections: raw.setWinProjections, totalGames: market?.total?.line ?? null, straightSetsProbability: raw.tour === 'ATP' ? null : Math.max(48, Math.min(68, raw.confidence - 8)), upsetRisk: 100 - raw.confidence, overview: raw.weaknessEdge?.gameFlow || raw.reason, fantasy: [] },
       tradePlan: { laneLabel: raw.tags.includes('High confidence') ? 'High confidence, price required' : market?.priceAction || 'Pass-first', summary: raw.weaknessEdge?.gameFlow || raw.totals, trigger: raw.weaknessEdge?.liveTrigger, headline: raw.weaknessEdge?.edgeType, exit: market?.spreadLean || raw.weaknessEdge?.spreadRead, tone: raw.tags.includes('High confidence') ? 'accent' : 'warning' },
       derivativeMarkets: [

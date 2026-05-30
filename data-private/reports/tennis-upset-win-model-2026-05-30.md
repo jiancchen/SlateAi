@@ -11,38 +11,38 @@ Target date: 2026-05-30
   "thresholds": [
     {
       "edgeThreshold": 0.04,
-      "bets": 48,
-      "hitRate": 0.25,
-      "roiCents": 0.6,
+      "bets": 46,
+      "hitRate": 0.239,
+      "roiCents": -0.5,
       "avgEntryCents": 22.9
     },
     {
       "edgeThreshold": 0.07,
-      "bets": 41,
-      "hitRate": 0.244,
-      "roiCents": 2.0,
-      "avgEntryCents": 20.9
+      "bets": 39,
+      "hitRate": 0.231,
+      "roiCents": 1.2,
+      "avgEntryCents": 20.4
     },
     {
       "edgeThreshold": 0.1,
-      "bets": 37,
-      "hitRate": 0.216,
-      "roiCents": -0.3,
-      "avgEntryCents": 20.5
+      "bets": 35,
+      "hitRate": 0.2,
+      "roiCents": -1.4,
+      "avgEntryCents": 19.9
     },
     {
       "edgeThreshold": 0.13,
-      "bets": 27,
-      "hitRate": 0.222,
-      "roiCents": 0.1,
-      "avgEntryCents": 20.7
+      "bets": 23,
+      "hitRate": 0.261,
+      "roiCents": 3.3,
+      "avgEntryCents": 21.3
     },
     {
       "edgeThreshold": 0.16,
-      "bets": 17,
-      "hitRate": 0.235,
-      "roiCents": 5.1,
-      "avgEntryCents": 17.0
+      "bets": 15,
+      "hitRate": 0.2,
+      "roiCents": 2.3,
+      "avgEntryCents": 16.4
     }
   ],
   "byDateAtEdge10": [
@@ -69,9 +69,9 @@ Target date: 2026-05-30
       "rows": 16,
       "baseUpsetRate": 0.375,
       "baseRoiCents": 13.4,
-      "modelBets": 10,
-      "modelHitRate": 0.4,
-      "modelRoiCents": 19.5
+      "modelBets": 8,
+      "modelHitRate": 0.375,
+      "modelRoiCents": 19.7
     }
   ]
 }
@@ -80,19 +80,19 @@ Target date: 2026-05-30
 
 |tier|selection|entry|win p|edge|EV c|match|
 |---|---|---:|---:|---:|---:|---|
-|hold-upset|Daria Kasatkina|11.6c|33%|21.1|20.1|Aryna Sabalenka vs Daria Kasatkina|
-|hold-upset|Zachary Svajda|11.0c|31%|19.6|18.6|Francisco Cerundolo vs Zachary Svajda|
-|hold-upset|Oleksandra Oliynykova|28.2c|47%|18.8|16.8|Diana Shnaider vs Oleksandra Oliynykova|
-|hold-upset|Moise Kouame|21.5c|40%|18.0|16.0|Moise Kouame vs Alejandro Tabilo|
-|hold-upset|Jaime Faria|39.2c|56%|16.4|14.4|Jaime Faria vs Frances Tiafoe|
-|hold-upset|Diane Parry|19.2c|32%|12.6|10.6|Diane Parry vs Amanda Anisimova|
-|sprinkle|Learner Tien|37.9c|47%|8.7|6.7|Flavio Cobolli vs Learner Tien|
-|sprinkle|Francisco Comesana|34.7c|43%|8.3|6.3|Matteo Berrettini vs Francisco Comesana|
-|sprinkle|Matteo Arnaldi|36.8c|44%|7.6|5.6|Matteo Arnaldi vs Raphael Collignon|
-|pass|Martin Landaluce|44.2c|45%|0.5|-1.5|Juan Manuel Cerundolo vs Martin Landaluce|
-|pass|Anastasia Potapova|26.0c|25%|-0.6|-2.6|Coco Gauff vs Anastasia Potapova|
-|pass|Brandon Nakashima|29.0c|27%|-1.7|-3.7|Felix Auger-Aliassime vs Brandon Nakashima|
-|pass|Madison Keys|50.0c|43%|-7.3|-9.3|Victoria Mboko vs Madison Keys|
-|pass|Iva Jovic|50.0c|41%|-9.3|-11.3|Iva Jovic vs Naomi Osaka|
-|pass|Camila Osorio|50.5c|32%|-18.4|-20.4|Anna Kalinskaya vs Camila Osorio|
-|pass|Maria Sakkari|45.9c|21%|-24.5|-26.5|Maria Sakkari vs Maja Chwalinska|
+|hold-upset|Jaime Faria|39.2c|67%|27.5|25.5|Jaime Faria vs Frances Tiafoe|
+|hold-upset|Moise Kouame|21.5c|47%|25.7|23.7|Moise Kouame vs Alejandro Tabilo|
+|hold-upset|Zachary Svajda|11.0c|30%|19.0|18.0|Francisco Cerundolo vs Zachary Svajda|
+|hold-upset|Daria Kasatkina|11.6c|28%|15.9|14.9|Aryna Sabalenka vs Daria Kasatkina|
+|hold-upset|Matteo Arnaldi|36.8c|52%|14.9|12.9|Matteo Arnaldi vs Raphael Collignon|
+|hold-upset|Francisco Comesana|34.7c|46%|11.1|9.1|Matteo Berrettini vs Francisco Comesana|
+|hold-upset|Oleksandra Oliynykova|28.2c|39%|10.7|8.7|Diana Shnaider vs Oleksandra Oliynykova|
+|sprinkle|Martin Landaluce|44.2c|52%|7.6|5.6|Juan Manuel Cerundolo vs Martin Landaluce|
+|sprinkle|Learner Tien|37.9c|45%|7.4|5.4|Flavio Cobolli vs Learner Tien|
+|pass|Diane Parry|19.2c|21%|2.0|0.0|Diane Parry vs Amanda Anisimova|
+|pass|Anastasia Potapova|26.0c|26%|-0.3|-2.3|Coco Gauff vs Anastasia Potapova|
+|pass|Brandon Nakashima|29.0c|27%|-2.4|-4.4|Felix Auger-Aliassime vs Brandon Nakashima|
+|pass|Madison Keys|50.0c|47%|-3.4|-5.4|Victoria Mboko vs Madison Keys|
+|pass|Iva Jovic|50.0c|45%|-5.2|-7.2|Iva Jovic vs Naomi Osaka|
+|pass|Camila Osorio|50.5c|33%|-17.7|-19.7|Anna Kalinskaya vs Camila Osorio|
+|pass|Maria Sakkari|45.9c|21%|-25.2|-27.2|Maria Sakkari vs Maja Chwalinska|

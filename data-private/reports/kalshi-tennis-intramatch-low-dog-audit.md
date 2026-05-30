@@ -4,11 +4,11 @@
 
 ```json
 {
-  "settledMarkets": 32,
-  "events": 16,
-  "dogRows": 16,
-  "lowDogRowsAtOrBelow10c": 4,
-  "lowDogRowsAtOrBelow12c": 4,
+  "settledMarkets": 0,
+  "events": 0,
+  "dogRows": 0,
+  "lowDogRowsAtOrBelow10c": 0,
+  "lowDogRowsAtOrBelow12c": 0,
   "warehouseTables": [
     "tennis_kalshi_match_markets",
     "tennis_kalshi_market_candles",
@@ -23,16 +23,12 @@
 
 |entry filter|target|entries|limit hits|eventual winners|limit hit rate|winner rate|profit/contract|ROI on entry cost|fee-adjusted profit/contract|fee-adjusted ROI|
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|entryAskAtOrBelow10c|20c|4|1|0|0.25|0.0|-0.13|-0.394|-0.19|-0.514|
-|entryAskAtOrBelow10c|30c|4|0|0|0.0|0.0|-0.33|-1.0|-0.37|-1.0|
-|entryAskAtOrBelow12c|20c|4|1|0|0.25|0.0|-0.13|-0.394|-0.19|-0.514|
-|entryAskAtOrBelow12c|30c|4|0|0|0.0|0.0|-0.33|-1.0|-0.37|-1.0|
+|entryAskAtOrBelow10c|20c|0|None|None|None|None|None|None|None|None|
+|entryAskAtOrBelow10c|30c|0|None|None|None|None|None|None|None|None|
+|entryAskAtOrBelow12c|20c|0|None|None|None|None|None|None|None|None|
+|entryAskAtOrBelow12c|30c|0|None|None|None|None|None|None|None|None|
 
 ## Low-Dog Rows
 
 |event|selection|entry|max bid|max trade|won|volume minutes|
 |---|---|---:|---:|---:|---|---:|
-|KXWTAMATCH-26MAY29LINSWI|Magda Linette|7.0c|15.0c|16.0c|False|239|
-|KXATPMATCH-26MAY29HALZVE|Quentin Halys|8.0c|10.0c|11.0c|False|419|
-|KXWTAMATCH-26MAY29SVIKOR|Tamara Korpatsch|8.0c|10.0c|11.0c|False|208|
-|KXWTAMATCH-26MAY29KOSGOL|Viktorija Golubic|10.0c|20.0c|21.0c|False|219|

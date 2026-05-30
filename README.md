@@ -97,6 +97,7 @@ npm run data:backfill:tennis-recent-form -- --date YYYY-MM-DD
 npm run data:export:tennis-warehouse-context -- --date YYYY-MM-DD
 node pipeline/generate-tennis-day-module.mjs --date YYYY-MM-DD
 npm run data:export:published
+npm run data:health:tennis -- --date YYYY-MM-DD --pregame
 python3 pipeline/tennis_multimodel_backtest.py --target-date YYYY-MM-DD
 python3 pipeline/analyze_kalshi_tennis_intramatch.py --target-date YYYY-MM-DD
 python3 pipeline/project_kalshi_tennis_trade_candidates.py
@@ -105,6 +106,14 @@ python3 pipeline/model_tennis_upset_wins.py --target-date YYYY-MM-DD
 ```
 
 Daily tennis operating rules live in `development-docs/daily-tennis-slate-playbook.md`. Use that playbook before publishing a tennis value board. It requires the slate to separate winner picks, prediction-market trade-to-sell candidates, watch rows, hard vetoes, and data-incomplete rows.
+
+Tennis health gate:
+- `npm run data:health:tennis -- --date YYYY-MM-DD --pregame` must pass before treating a future slate as analysis-ready.
+- `npm run data:health:tennis -- --date YYYY-MM-DD --settled` must pass during post-match follow-up before trusting backtests or model-training rows for that day.
+- The gate verifies source files, dated ranking snapshots, imported ranking rows, the dated Flashscore recent-match map, recent Flashscore links imported into SQLite under the correct slate date, warehouse recent-form metrics, SofaScore match mappings, Kalshi/prediction-market coverage, and published match-detail payloads.
+- In settled mode, it also requires SofaScore stats/replay rows, Kalshi candles/trade features, completed match results, and model-training labels. If a day has passed and this fails, the warehouse is incomplete.
+- Published tennis detail payloads must have no missing Hold / 2nd / Err / Ret / Close cells in the visible last-five grid.
+- `npm test` includes a regression test for the bug that previously imported May 28/29/30 Flashscore recent maps with `slate_date = NULL`.
 
 Ranking notes:
 - `data-private/reference/tennis/player-rankings.json` is the current join file for predictions and opponent-quality enrichment.

@@ -52,6 +52,11 @@ def get_connection() -> sqlite3.Connection:
     return conn
 
 
+def infer_recent_map_slate_date(map_path: Path) -> str | None:
+    slate_date_match = re.search(r"(\d{4}-\d{2}-\d{2})", map_path.name)
+    return slate_date_match.group(1) if slate_date_match else None
+
+
 def init_db(conn: sqlite3.Connection) -> None:
     conn.executescript(
         """
@@ -1810,8 +1815,7 @@ def import_flashscore(conn: sqlite3.Connection, directory: Path = FLASHSCORE_DIR
                         counts["player_stat_rows"] += 1
     maps_dir = directory.parent
     for map_path in sorted(maps_dir.glob("flashscore-recent-match-map-*.json")):
-        slate_date_match = re.search(r"(\d{4}-\d{2}-\d{2})", map_path.name)
-        slate_date = slate_date_match.group(1) if slate_date_match else None
+        slate_date = infer_recent_map_slate_date(map_path)
         map_payload = read_json(map_path)
         for link in (map_payload.get("map") or {}).values():
             board_player_name = link.get("boardPlayerName") or link.get("playerName")

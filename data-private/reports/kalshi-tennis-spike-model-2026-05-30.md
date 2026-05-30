@@ -6,7 +6,7 @@ Target date: 2026-05-30
 
 |lane|rows|entry|2.5x hit|2.5x ROI c|3x hit|3x ROI c|
 |---|---:|---:|---:|---:|---:|---:|
-|return-pressure edge|29|30.7c|0.552|7.9|0.517|8.1|
+|return-pressure edge|30|29.4c|0.5|5.3|0.467|4.9|
 |weak favorite errors|13|27.3c|0.538|4.8|0.462|5.2|
 |entry <=15c + early start|14|8.4c|0.571|4.0|0.429|2.2|
 |prior RG flow|68|26.0c|0.485|2.2|0.441|2.7|
@@ -20,19 +20,19 @@ Target date: 2026-05-30
 
 |tier|selection|entry|target|spike p|EV c|match|
 |---|---|---:|---:|---:|---:|---|
-|watch|Matteo Arnaldi|36c|90c|43%|0.4|Matteo Arnaldi vs Raphael Collignon|
-|pass|Martin Landaluce|45c|95c|46%|-4.1|Juan Manuel Cerundolo vs Martin Landaluce|
-|pass|Iva Jovic|49c|95c|49%|-4.7|Iva Jovic vs Naomi Osaka|
-|pass|Oleksandra Oliynykova|29c|72c|39%|-3.5|Diana Shnaider vs Oleksandra Oliynykova|
-|pass|Moise Kouame|21c|52c|40%|-2.8|Moise Kouame vs Alejandro Tabilo|
-|pass|Jaime Faria|37c|92c|36%|-5.8|Jaime Faria vs Frances Tiafoe|
-|pass|Diane Parry|18c|45c|39%|-3.3|Diane Parry vs Amanda Anisimova|
-|pass|Zachary Svajda|12c|30c|38%|-2.3|Francisco Cerundolo vs Zachary Svajda|
-|pass|Daria Kasatkina|10c|25c|39%|-2.0|Aryna Sabalenka vs Daria Kasatkina|
-|pass|Francisco Comesana|35c|88c|34%|-7.6|Matteo Berrettini vs Francisco Comesana|
-|pass|Madison Keys|48c|95c|41%|-11.1|Victoria Mboko vs Madison Keys|
-|pass|Camila Osorio|48c|95c|26%|-25.8|Anna Kalinskaya vs Camila Osorio|
-|pass|Maria Sakkari|46c|92c|22%|-27.5|Maria Sakkari vs Maja Chwalinska|
+|watch|Jaime Faria|37c|92c|47%|4.2|Jaime Faria vs Frances Tiafoe|
+|watch|Oleksandra Oliynykova|29c|72c|47%|2.1|Diana Shnaider vs Oleksandra Oliynykova|
+|pass|Matteo Arnaldi|36c|90c|42%|-0.2|Matteo Arnaldi vs Raphael Collignon|
+|pass|Daria Kasatkina|10c|25c|46%|-0.5|Aryna Sabalenka vs Daria Kasatkina|
+|pass|Martin Landaluce|46c|95c|47%|-3.4|Juan Manuel Cerundolo vs Martin Landaluce|
+|pass|Zachary Svajda|11c|28c|43%|-1.1|Francisco Cerundolo vs Zachary Svajda|
+|pass|Francisco Comesana|35c|88c|38%|-4.1|Matteo Berrettini vs Francisco Comesana|
+|pass|Moise Kouame|21c|52c|40%|-2.6|Moise Kouame vs Alejandro Tabilo|
+|pass|Iva Jovic|49c|95c|47%|-6.6|Iva Jovic vs Naomi Osaka|
+|pass|Madison Keys|48c|95c|45%|-7.4|Victoria Mboko vs Madison Keys|
+|pass|Camila Osorio|48c|95c|25%|-26.7|Anna Kalinskaya vs Camila Osorio|
+|pass|Learner Tien|37c|74c|24%|-21.9|Flavio Cobolli vs Learner Tien|
+|pass|Maria Sakkari|45c|90c|23%|-26.8|Maria Sakkari vs Maja Chwalinska|
 |pass|Brandon Nakashima|27c|54c|24%|-16.4|Felix Auger-Aliassime vs Brandon Nakashima|
 |pass|Anastasia Potapova|24c|48c|25%|-14.6|Coco Gauff vs Anastasia Potapova|
-|pass|Learner Tien|36c|72c|15%|-27.4|Flavio Cobolli vs Learner Tien|
+|pass|Diane Parry|18c|36c|24%|-11.8|Diane Parry vs Amanda Anisimova|

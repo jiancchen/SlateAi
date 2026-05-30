@@ -1,6 +1,6 @@
 {
   "date": "2026-05-30",
-  "generatedAt": "2026-05-30T02:50:35.965429+00:00",
+  "generatedAt": "2026-05-30T03:20:13.125148+00:00",
   "source": "SQLite tennis warehouse",
   "matches": {
     "rg-m-felix-auger-aliassime-brandon-nakashima-2026-05-30": {
@@ -90758,9 +90758,9 @@
                   "errorControl": {
                     "key": "errorControl",
                     "label": "Err",
-                    "score": null,
-                    "estimated": false,
-                    "source": "No stat row",
+                    "score": 68.0,
+                    "estimated": true,
+                    "source": "Player recent exact average fallback",
                     "weight": 1.0,
                     "raw": {
                       "flashscoreId": "SKC9mYee",
@@ -90776,15 +90776,16 @@
                         ],
                         "source": "Flashscore",
                         "sourceUrl": "https://www.flashscoreusa.com/match/SKC9mYee/"
-                      }
+                      },
+                      "scoreSource": "Player recent exact average fallback"
                     }
                   },
                   "hold": {
                     "key": "hold",
                     "label": "Hold",
-                    "score": null,
-                    "estimated": false,
-                    "source": "No stat row",
+                    "score": 73.9,
+                    "estimated": true,
+                    "source": "Player recent exact average fallback",
                     "weight": 1.0,
                     "raw": {
                       "flashscoreId": "SKC9mYee",
@@ -90800,15 +90801,16 @@
                         ],
                         "source": "Flashscore",
                         "sourceUrl": "https://www.flashscoreusa.com/match/SKC9mYee/"
-                      }
+                      },
+                      "scoreSource": "Player recent exact average fallback"
                     }
                   },
                   "returnPressure": {
                     "key": "returnPressure",
                     "label": "Ret",
-                    "score": null,
-                    "estimated": false,
-                    "source": "No stat row",
+                    "score": 83.3,
+                    "estimated": true,
+                    "source": "Player recent exact average fallback",
                     "weight": 1.0,
                     "raw": {
                       "flashscoreId": "SKC9mYee",
@@ -90824,15 +90826,16 @@
                         ],
                         "source": "Flashscore",
                         "sourceUrl": "https://www.flashscoreusa.com/match/SKC9mYee/"
-                      }
+                      },
+                      "scoreSource": "Player recent exact average fallback"
                     }
                   },
                   "secondServe": {
                     "key": "secondServe",
                     "label": "2nd",
-                    "score": null,
-                    "estimated": false,
-                    "source": "No stat row",
+                    "score": 65.1,
+                    "estimated": true,
+                    "source": "Player recent exact average fallback",
                     "weight": 1.0,
                     "raw": {
                       "flashscoreId": "SKC9mYee",
@@ -90848,7 +90851,8 @@
                         ],
                         "source": "Flashscore",
                         "sourceUrl": "https://www.flashscoreusa.com/match/SKC9mYee/"
-                      }
+                      },
+                      "scoreSource": "Player recent exact average fallback"
                     }
                   }
                 }
@@ -90865,9 +90869,9 @@
                   "closeout": {
                     "key": "closeout",
                     "label": "Close",
-                    "score": null,
-                    "estimated": false,
-                    "source": "No stat row",
+                    "score": 51.8,
+                    "estimated": true,
+                    "source": "Player recent exact average fallback",
                     "weight": 1.0,
                     "raw": {
                       "flashscoreId": "h8a70qDj",
@@ -90883,15 +90887,16 @@
                         ],
                         "source": "Flashscore",
                         "sourceUrl": "https://www.flashscoreusa.com/match/h8a70qDj/"
-                      }
+                      },
+                      "scoreSource": "Player recent exact average fallback"
                     }
                   },
                   "errorControl": {
                     "key": "errorControl",
                     "label": "Err",
-                    "score": null,
-                    "estimated": false,
-                    "source": "No stat row",
+                    "score": 68.0,
+                    "estimated": true,
+                    "source": "Player recent exact average fallback",
                     "weight": 1.0,
                     "raw": {
                       "flashscoreId": "h8a70qDj",
@@ -90907,15 +90912,16 @@
                         ],
                         "source": "Flashscore",
                         "sourceUrl": "https://www.flashscoreusa.com/match/h8a70qDj/"
-                      }
+                      },
+                      "scoreSource": "Player recent exact average fallback"
                     }
                   },
                   "hold": {
                     "key": "hold",
                     "label": "Hold",
-                    "score": null,
-                    "estimated": false,
-                    "source": "No stat row",
+                    "score": 73.9,
+                    "estimated": true,
+                    "source": "Player recent exact average fallback",
                     "weight": 1.0,
                     "raw": {
                       "flashscoreId": "h8a70qDj",
@@ -90931,15 +90937,16 @@
                         ],
                         "source": "Flashscore",
                         "sourceUrl": "https://www.flashscoreusa.com/match/h8a70qDj/"
-                      }
+                      },
+                      "scoreSource": "Player recent exact average fallback"
                     }
                   },
                   "returnPressure": {
                     "key": "returnPressure",
                     "label": "Ret",
-                    "score": null,
-                    "estimated": false,
-                    "source": "No stat row",
+                    "score": 83.3,
+                    "estimated": true,
+                    "source": "Player recent exact average fallback",
                     "weight": 1.0,
                     "raw": {
                       "flashscoreId": "h8a70qDj",
@@ -90955,15 +90962,16 @@
                         ],
                         "source": "Flashscore",
                         "sourceUrl": "https://www.flashscoreusa.com/match/h8a70qDj/"
-                      }
+                      },
+                      "scoreSource": "Player recent exact average fallback"
                     }
                   },
                   "secondServe": {
                     "key": "secondServe",
                     "label": "2nd",
-                    "score": null,
-                    "estimated": false,
-                    "source": "No stat row",
+                    "score": 65.1,
+                    "estimated": true,
+                    "source": "Player recent exact average fallback",
                     "weight": 1.0,
                     "raw": {
                       "flashscoreId": "h8a70qDj",
@@ -90979,7 +90987,8 @@
                         ],
                         "source": "Flashscore",
                         "sourceUrl": "https://www.flashscoreusa.com/match/h8a70qDj/"
-                      }
+                      },
+                      "scoreSource": "Player recent exact average fallback"
                     }
                   }
                 }
@@ -91015,8 +91024,8 @@
             "coverage": {
               "cells": 20,
               "exactCells": 11,
-              "estimatedCells": 0,
-              "missingCells": 9
+              "estimatedCells": 9,
+              "missingCells": 0
             }
           }
         },

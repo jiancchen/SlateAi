@@ -9,8 +9,8 @@ const rawTennisGames = [
     "eventId": "175553",
     "tour": "WTA",
     "title": "Marta Kostyuk vs Viktorija Golubic",
-    "start": "2:00 AM",
-    "startMinutes": 120,
+    "start": "2:05 AM",
+    "startMinutes": 125,
     "court": "Court Simonne-Mathieu",
     "round": "Round 3",
     "pickName": "Marta Kostyuk",
@@ -213,17 +213,16 @@ const rawTennisGames = [
         "ranking": {
           "name": "Marta Kostyuk",
           "rank": 15,
-          "points": 2447,
-          "age": 23.9,
-          "country": "UKR",
+          "points": 2387,
+          "age": 23,
+          "country": "Ukraine",
           "tour": "WTA",
-          "source": "https://live-tennis.eu/en/wta-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/wta-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
+          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/3382/marta-kostyuk",
+          "asOf": "2026-05-29"
         },
         "qualityName": "Marta Kostyuk",
-        "profile": "Live rank #15 | UKR | age 23.9 | 2026 clay 14-0, 100% | adj form 110 | hold 71%",
+        "profile": "Live rank #15 | Ukraine | age 23 | 2026 clay 14-0, 100% | adj form 110 | hold 71%",
         "modelPct": 65,
         "weakness": {
           "name": "Marta Kostyuk",
@@ -258,18 +257,17 @@ const rawTennisGames = [
         "name": "Viktorija Golubic",
         "ranking": {
           "name": "Viktorija Golubic",
-          "rank": 79,
+          "rank": 82,
           "points": 901,
-          "age": 33.6,
-          "country": "SUI",
+          "age": 33,
+          "country": "Switzerland",
           "tour": "WTA",
-          "source": "https://live-tennis.eu/en/wta-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/wta-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
+          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/2458/viktorija-golubic",
+          "asOf": "2026-05-29"
         },
         "qualityName": "Viktorija Golubic",
-        "profile": "Live rank #79 | SUI | age 33.6 | 2026 clay 8-4, 67% | adj form 83 | hold 70%",
+        "profile": "Live rank #82 | Switzerland | age 33 | 2026 clay 8-4, 67% | adj form 83 | hold 70%",
         "modelPct": 35,
         "weakness": {
           "name": "Viktorija Golubic",
@@ -303,8 +301,8 @@ const rawTennisGames = [
     "eventId": "175700",
     "tour": "ATP",
     "title": "Nuno Borges vs Andrey Rublev",
-    "start": "2:00 AM",
-    "startMinutes": 120,
+    "start": "2:10 AM",
+    "startMinutes": 130,
     "court": "Court Suzanne-Lenglen",
     "round": "Round 3",
     "pickName": "Andrey Rublev",
@@ -507,17 +505,16 @@ const rawTennisGames = [
         "ranking": {
           "name": "Nuno Borges",
           "rank": 51,
-          "points": 920,
-          "age": 29.2,
-          "country": "POR",
+          "points": 970,
+          "age": 29,
+          "country": "Portugal",
           "tour": "ATP",
-          "source": "https://live-tennis.eu/en/atp-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/atp-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/atp-live-ranking browser snapshot"
+          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/4115/nuno-borges",
+          "asOf": "2026-05-29"
         },
         "qualityName": "Nuno Borges",
-        "profile": "Live rank #51 | POR | age 29.2 | 2026 clay 6-6, 50% | adj form 71 | hold 81%",
+        "profile": "Live rank #51 | Portugal | age 29 | 2026 clay 6-6, 50% | adj form 71 | hold 81%",
         "modelPct": 35,
         "weakness": {
           "name": "Nuno Borges",
@@ -550,17 +547,16 @@ const rawTennisGames = [
         "ranking": {
           "name": "Andrey Rublev",
           "rank": 13,
-          "points": 2310,
-          "age": 28.5,
-          "country": "RUS",
+          "points": 2460,
+          "age": 28,
+          "country": "Russia",
           "tour": "ATP",
-          "source": "https://live-tennis.eu/en/atp-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/atp-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/atp-live-ranking browser snapshot"
+          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/2642/andrey-rublev",
+          "asOf": "2026-05-29"
         },
         "qualityName": "Andrey Rublev",
-        "profile": "Live rank #13 | RUS | age 28.5 | 2026 clay 10-4, 71% | adj form 69 | hold 76%",
+        "profile": "Live rank #13 | Russia | age 28 | 2026 clay 10-4, 71% | adj form 69 | hold 76%",
         "modelPct": 65,
         "weakness": {
           "name": "Andrey Rublev",
@@ -597,8 +593,8 @@ const rawTennisGames = [
     "eventId": "175755",
     "tour": "ATP",
     "title": "Thiago Agustin Tirante vs Pablo Carreno Busta",
-    "start": "2:00 AM",
-    "startMinutes": 120,
+    "start": "2:10 AM",
+    "startMinutes": 130,
     "court": "Court 14",
     "round": "Round 3",
     "pickName": "Thiago Agustin Tirante",
@@ -791,19 +787,18 @@ const rawTennisGames = [
       {
         "name": "Thiago Agustin Tirante",
         "ranking": {
-          "name": "Thiago Agustín Tirante",
-          "rank": 53,
-          "points": 911,
-          "age": 25.1,
-          "country": "ARG",
+          "name": "Thiago Agustin Tirante",
+          "rank": 60,
+          "points": 887,
+          "age": 25,
+          "country": "Argentina",
           "tour": "ATP",
-          "source": "https://live-tennis.eu/en/atp-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/atp-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/atp-live-ranking browser snapshot"
+          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/4010/thiago-agustin-tirante",
+          "asOf": "2026-05-29"
         },
         "qualityName": null,
-        "profile": "Live rank #53 | ARG | age 25.1",
+        "profile": "Live rank #60 | Argentina | age 25",
         "modelPct": 50,
         "weakness": {
           "name": "Thiago Agustin Tirante",
@@ -831,19 +826,18 @@ const rawTennisGames = [
       {
         "name": "Pablo Carreno Busta",
         "ranking": {
-          "name": "Pablo Carreño Busta",
-          "rank": 84,
+          "name": "Pablo Carreno Busta",
+          "rank": 89,
           "points": 685,
-          "age": 34.8,
-          "country": "ESP",
+          "age": 34,
+          "country": "Spain",
           "tour": "ATP",
-          "source": "https://live-tennis.eu/en/atp-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/atp-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/atp-live-ranking browser snapshot"
+          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/1590/pablo-carreno-busta",
+          "asOf": "2026-05-29"
         },
         "qualityName": null,
-        "profile": "Live rank #84 | ESP | age 34.8",
+        "profile": "Live rank #89 | Spain | age 34",
         "modelPct": 50,
         "weakness": {
           "name": "Pablo Carreno Busta",
@@ -875,8 +869,8 @@ const rawTennisGames = [
     "eventId": "175528",
     "tour": "WTA",
     "title": "Wang Xiyu vs Yuliia Starodubtseva",
-    "start": "2:00 AM",
-    "startMinutes": 120,
+    "start": "2:10 AM",
+    "startMinutes": 130,
     "court": "Court 7",
     "round": "Round 3",
     "pickName": "Yuliia Starodubtseva",
@@ -1082,7 +1076,7 @@ const rawTennisGames = [
           "tour": "WTA",
           "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3155/wang-xiyu",
-          "asOf": "2026-05-26"
+          "asOf": "2026-05-29"
         },
         "qualityName": null,
         "profile": "Live rank #148 | China | age 25",
@@ -1121,7 +1115,7 @@ const rawTennisGames = [
           "tour": "WTA",
           "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/13478/yuliia-starodubtseva",
-          "asOf": "2026-05-26"
+          "asOf": "2026-05-29"
         },
         "qualityName": "Yuliia Starodubtseva",
         "profile": "Live rank #55 | Ukraine | age 26 | 2026 clay 13-6, 68% | adj form 88 | hold 69%",
@@ -1161,8 +1155,8 @@ const rawTennisGames = [
     "eventId": "175560",
     "tour": "WTA",
     "title": "Magda Linette vs Iga Swiatek",
-    "start": "3:00 AM",
-    "startMinutes": 180,
+    "start": "3:05 AM",
+    "startMinutes": 185,
     "court": "Court Philippe-Chatrier",
     "round": "Round 3",
     "pickName": "Iga Swiatek",
@@ -1366,18 +1360,17 @@ const rawTennisGames = [
         "name": "Magda Linette",
         "ranking": {
           "name": "Magda Linette",
-          "rank": 62,
-          "points": 991,
-          "age": 34.2,
-          "country": "POL",
+          "rank": 73,
+          "points": 931,
+          "age": 34,
+          "country": "Poland",
           "tour": "WTA",
-          "source": "https://live-tennis.eu/en/wta-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/wta-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
+          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/1649/magda-linette",
+          "asOf": "2026-05-29"
         },
         "qualityName": "Magda Linette",
-        "profile": "Live rank #62 | POL | age 34.2 | 2026 clay 3-3, 50% | adj form 55 | hold 68%",
+        "profile": "Live rank #73 | Poland | age 34 | 2026 clay 3-3, 50% | adj form 55 | hold 68%",
         "modelPct": 27,
         "weakness": {
           "name": "Magda Linette",
@@ -1408,19 +1401,18 @@ const rawTennisGames = [
       {
         "name": "Iga Swiatek",
         "ranking": {
-          "name": "Iga Świątek",
+          "name": "Iga Swiatek",
           "rank": 3,
-          "points": 6563,
-          "age": 24.9,
-          "country": "POL",
+          "points": 7273,
+          "age": 24,
+          "country": "Poland",
           "tour": "WTA",
-          "source": "https://live-tennis.eu/en/wta-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/wta-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
+          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/3730/iga-swiatek",
+          "asOf": "2026-05-29"
         },
         "qualityName": "Iga Swiatek",
-        "profile": "Live rank #3 | POL | age 24.9 | 2026 clay 8-3, 73% | adj form 89 | hold 78%",
+        "profile": "Live rank #3 | Poland | age 24 | 2026 clay 8-3, 73% | adj form 89 | hold 78%",
         "modelPct": 73,
         "weakness": {
           "name": "Iga Swiatek",
@@ -1459,8 +1451,8 @@ const rawTennisGames = [
     "eventId": "175722",
     "tour": "ATP",
     "title": "Alex Michelsen vs Rafael Jodar",
-    "start": "3:30 AM",
-    "startMinutes": 210,
+    "start": "4:10 AM",
+    "startMinutes": 250,
     "court": "Court Simonne-Mathieu",
     "round": "Round 3",
     "pickName": "Rafael Jodar",
@@ -1661,18 +1653,17 @@ const rawTennisGames = [
         "name": "Alex Michelsen",
         "ranking": {
           "name": "Alex Michelsen",
-          "rank": 38,
-          "points": 1155,
-          "age": 21.7,
+          "rank": 42,
+          "points": 1115,
+          "age": 21,
           "country": "USA",
           "tour": "ATP",
-          "source": "https://live-tennis.eu/en/atp-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/atp-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/atp-live-ranking browser snapshot"
+          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/11400/alex-michelsen",
+          "asOf": "2026-05-29"
         },
         "qualityName": "Alex Michelsen",
-        "profile": "Live rank #38 | USA | age 21.7 | 2026 clay 6-6, 50% | adj form 63 | hold 75%",
+        "profile": "Live rank #42 | USA | age 21 | 2026 clay 6-6, 50% | adj form 63 | hold 75%",
         "modelPct": 40,
         "weakness": {
           "name": "Alex Michelsen",
@@ -1702,19 +1693,18 @@ const rawTennisGames = [
       {
         "name": "Rafael Jodar",
         "ranking": {
-          "name": "Rafael Jódar",
+          "name": "Rafael Jodar",
           "rank": 29,
-          "points": 1499,
-          "age": 19.6,
-          "country": "ESP",
+          "points": 1461,
+          "age": 19,
+          "country": "Spain",
           "tour": "ATP",
-          "source": "https://live-tennis.eu/en/atp-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/atp-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/atp-live-ranking browser snapshot"
+          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/12657/rafael-jodar",
+          "asOf": "2026-05-29"
         },
         "qualityName": "Rafael Jodar",
-        "profile": "Live rank #29 | ESP | age 19.6 | 2026 clay 17-3, 85% | adj form 88 | hold 85%",
+        "profile": "Live rank #29 | Spain | age 19 | 2026 clay 17-3, 85% | adj form 88 | hold 85%",
         "modelPct": 60,
         "weakness": {
           "name": "Rafael Jodar",
@@ -1747,604 +1737,12 @@ const rawTennisGames = [
     ]
   },
   {
-    "id": "rg-w-jil-teichmann-karolina-muchova-2026-05-29",
-    "eventId": "175572",
-    "tour": "WTA",
-    "title": "Jil Teichmann vs Karolina Muchova",
-    "start": "4:00 AM",
-    "startMinutes": 240,
-    "court": "Court Suzanne-Lenglen",
-    "round": "Round 3",
-    "pickName": "Karolina Muchova",
-    "confidence": 69,
-    "volatility": 35,
-    "tags": [
-      "Clay",
-      "Roland Garros",
-      "WTA",
-      "Lean",
-      "No blind bet",
-      "WTA volatility tax",
-      "Controlled volatility"
-    ],
-    "reason": "Recent service hold is close: Karolina Muchova 70%, Jil Teichmann 67%. Jil Teichmann grades 11 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
-    "totals": "Best O/U angle: no play without a posted total.",
-    "weaknessEdge": {
-      "edgeType": "Weakness edge",
-      "target": "Jil Teichmann",
-      "scoreGap": 9,
-      "attackingSide": "Karolina Muchova",
-      "vulnerableSide": "Jil Teichmann",
-      "gameFlow": "Karolina Muchova has a real path if Jil Teichmann's first two service games show the same weakness: first-serve points won below comfort (59%); negative winner/error balance (16.0 winners, 27.5 unforced).",
-      "liveTrigger": "Look for Jil Teichmann facing break points or second-serve pressure before 3-3.",
-      "spreadRead": "Karolina Muchova spread only if the handicap is short and Jil Teichmann is under pressure early.",
-      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
-      "pick": {
-        "name": "Karolina Muchova",
-        "serviceHoldPct": 70,
-        "firstServeWonPct": 66,
-        "secondServeWonPct": 45,
-        "firstServePct": 67,
-        "avgAces": 3.5,
-        "avgDoubleFaults": 1.9,
-        "avgWinners": 17,
-        "avgUnforcedErrors": 21.5,
-        "avgBreakPointsFaced": 7.8,
-        "returnPointsWonPct": 44,
-        "servicePointsWonPct": 59,
-        "weakServeMatches": 4,
-        "pressureMatches": 3,
-        "matchesWithStats": 8,
-        "weaknessScore": 13,
-        "firstGameComfort": "Comfortable enough if first serve lands",
-        "liabilities": [
-          "4 recent matches with serve instability"
-        ],
-        "strengths": [],
-        "gameFlowRead": "Karolina Muchova can drop points quickly through 4 recent matches with serve instability."
-      },
-      "opponent": {
-        "name": "Jil Teichmann",
-        "serviceHoldPct": 67,
-        "firstServeWonPct": 59,
-        "secondServeWonPct": 55,
-        "firstServePct": 68,
-        "avgAces": 0.8,
-        "avgDoubleFaults": 3,
-        "avgWinners": 16,
-        "avgUnforcedErrors": 27.5,
-        "avgBreakPointsFaced": 7.1,
-        "returnPointsWonPct": 46,
-        "servicePointsWonPct": 58,
-        "weakServeMatches": 6,
-        "pressureMatches": 4,
-        "matchesWithStats": 8,
-        "weaknessScore": 22,
-        "firstGameComfort": "Needs early holds confirmed",
-        "liabilities": [
-          "first-serve points won below comfort (59%)",
-          "negative winner/error balance (16.0 winners, 27.5 unforced)",
-          "6 recent matches with serve instability"
-        ],
-        "strengths": [
-          "second serve holds up (55%)",
-          "creates return pressure (46% return points won)"
-        ],
-        "gameFlowRead": "Jil Teichmann can drop points quickly through first-serve points won below comfort (59%) and negative winner/error balance (16.0 winners, 27.5 unforced)."
-      }
-    },
-    "setWinProjections": [
-      {
-        "name": "Jil Teichmann",
-        "confidence": 42,
-        "modelPct": 31,
-        "label": "Thin set-win path"
-      },
-      {
-        "name": "Karolina Muchova",
-        "confidence": 77,
-        "modelPct": 69,
-        "label": "Live to win a set"
-      }
-    ],
-    "valueBoard": {
-      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
-      "ml": {
-        "marketType": "ML",
-        "selection": "Karolina Muchova",
-        "americanOdds": -950,
-        "modelPct": 69,
-        "impliedPct": 90.5,
-        "edgePct": -21.5,
-        "evPer100": -23.7,
-        "netEvPer100": -25.7,
-        "feePer100": 2,
-        "valueIssue": "Favorite tax trap",
-        "valueGrade": "Favorite tax trap",
-        "betGrade": false
-      },
-      "spread": null,
-      "total": {
-        "marketType": "Total",
-        "selection": "No bet",
-        "valueGrade": "No direction",
-        "betGrade": false
-      },
-      "setWin": [
-        {
-          "name": "Jil Teichmann",
-          "confidence": 42,
-          "modelPct": 31,
-          "label": "Thin set-win path",
-          "marketType": "Win a set",
-          "valueGrade": "Needs posted price",
-          "betGrade": false
-        },
-        {
-          "name": "Karolina Muchova",
-          "confidence": 77,
-          "modelPct": 69,
-          "label": "Live to win a set",
-          "marketType": "Win a set",
-          "valueGrade": "Needs posted price",
-          "betGrade": false
-        }
-      ]
-    },
-    "marketData": {
-      "source": "FanDuel Sportsbook",
-      "sourceDetail": "FanDuel Sportsbook browser scrape",
-      "capturedAt": "2026-05-29T05:09:26.000Z",
-      "players": [
-        {
-          "name": "Jil Teichmann",
-          "odds": 610,
-          "americanLabel": "+610",
-          "impliedPct": 14.1,
-          "decimalOdds": 7.1,
-          "modelPct": 31,
-          "edgePct": 16.9,
-          "priceBand": "Underdog",
-          "grossProfitPct": 610,
-          "grossPayoutMultiple": 7.1,
-          "centsAtRisk": 100,
-          "centsProfitIfWin": 610
-        },
-        {
-          "name": "Karolina Muchova",
-          "odds": -950,
-          "americanLabel": "-950",
-          "impliedPct": 90.5,
-          "decimalOdds": 1.105,
-          "modelPct": 69,
-          "edgePct": -21.5,
-          "priceBand": "Very expensive favorite",
-          "grossProfitPct": 10.5,
-          "grossPayoutMultiple": 1.105,
-          "centsAtRisk": 100,
-          "centsProfitIfWin": 10.5
-        }
-      ],
-      "desk": {
-        "name": "Karolina Muchova",
-        "odds": -950,
-        "americanLabel": "-950",
-        "impliedPct": 90.5,
-        "decimalOdds": 1.105,
-        "modelPct": 69,
-        "edgePct": -21.5,
-        "priceBand": "Very expensive favorite",
-        "grossProfitPct": 10.5,
-        "grossPayoutMultiple": 1.105,
-        "centsAtRisk": 100,
-        "centsProfitIfWin": 10.5
-      },
-      "spread": null,
-      "priceAction": "ML payout is tiny; use spread/total or pass unless the number moves.",
-      "spreadValue": "No primary game spread captured",
-      "totalValue": "No total captured",
-      "spreadLean": "No spread line",
-      "totalLean": "No total line",
-      "mlValue": "Jil Teichmann +610 / Karolina Muchova -950",
-      "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. ML payout is tiny; use spread/total or pass unless the number moves.",
-      "noVigNote": "Model 69% vs FanDuel implied 90.5% (-21.5 pts)."
-    },
-    "h2hUrl": "https://tennistonic.com/head-to-head-compare/Jil-Teichmann-Vs-Karolina-Muchova/",
-    "players": [
-      {
-        "name": "Jil Teichmann",
-        "ranking": {
-          "name": "Jil Teichmann",
-          "rank": 173,
-          "points": 422,
-          "age": 28.8,
-          "country": "SUI",
-          "tour": "WTA",
-          "source": "https://live-tennis.eu/en/wta-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/wta-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
-        },
-        "qualityName": "Jil Teichmann",
-        "profile": "Live rank #173 | SUI | age 28.8 | 2026 clay 8-5, 62% | adj form 89 | hold 67%",
-        "modelPct": 31,
-        "weakness": {
-          "name": "Jil Teichmann",
-          "serviceHoldPct": 67,
-          "firstServeWonPct": 59,
-          "secondServeWonPct": 55,
-          "firstServePct": 68,
-          "avgAces": 0.8,
-          "avgDoubleFaults": 3,
-          "avgWinners": 16,
-          "avgUnforcedErrors": 27.5,
-          "avgBreakPointsFaced": 7.1,
-          "returnPointsWonPct": 46,
-          "servicePointsWonPct": 58,
-          "weakServeMatches": 6,
-          "pressureMatches": 4,
-          "matchesWithStats": 8,
-          "weaknessScore": 22,
-          "firstGameComfort": "Needs early holds confirmed",
-          "liabilities": [
-            "first-serve points won below comfort (59%)",
-            "negative winner/error balance (16.0 winners, 27.5 unforced)",
-            "6 recent matches with serve instability"
-          ],
-          "strengths": [
-            "second serve holds up (55%)",
-            "creates return pressure (46% return points won)"
-          ],
-          "gameFlowRead": "Jil Teichmann can drop points quickly through first-serve points won below comfort (59%) and negative winner/error balance (16.0 winners, 27.5 unforced)."
-        }
-      },
-      {
-        "name": "Karolina Muchova",
-        "ranking": {
-          "name": "Karolína Muchová",
-          "rank": 10,
-          "points": 3378,
-          "age": 29.7,
-          "country": "CZE",
-          "tour": "WTA",
-          "source": "https://live-tennis.eu/en/wta-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/wta-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
-        },
-        "qualityName": "Karolina Muchova",
-        "profile": "Live rank #10 | CZE | age 29.7 | 2026 clay 6-2, 75% | adj form 78 | hold 70%",
-        "modelPct": 69,
-        "weakness": {
-          "name": "Karolina Muchova",
-          "serviceHoldPct": 70,
-          "firstServeWonPct": 66,
-          "secondServeWonPct": 45,
-          "firstServePct": 67,
-          "avgAces": 3.5,
-          "avgDoubleFaults": 1.9,
-          "avgWinners": 17,
-          "avgUnforcedErrors": 21.5,
-          "avgBreakPointsFaced": 7.8,
-          "returnPointsWonPct": 44,
-          "servicePointsWonPct": 59,
-          "weakServeMatches": 4,
-          "pressureMatches": 3,
-          "matchesWithStats": 8,
-          "weaknessScore": 13,
-          "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [
-            "4 recent matches with serve instability"
-          ],
-          "strengths": [],
-          "gameFlowRead": "Karolina Muchova can drop points quickly through 4 recent matches with serve instability."
-        }
-      }
-    ]
-  },
-  {
-    "id": "rg-w-solana-sierra-sorana-cirstea-2026-05-29",
-    "eventId": "175581",
-    "tour": "WTA",
-    "title": "Solana Sierra vs Sorana Cirstea",
-    "start": "4:00 AM",
-    "startMinutes": 240,
-    "court": "Court 14",
-    "round": "Round 3",
-    "pickName": "Sorana Cirstea",
-    "confidence": 61,
-    "volatility": 45,
-    "tags": [
-      "Clay",
-      "Roland Garros",
-      "WTA",
-      "Watch only",
-      "No blind bet",
-      "WTA volatility tax",
-      "Controlled volatility"
-    ],
-    "reason": "Sorana Cirstea has the recent service-hold edge 72% to 69%. Opponent-adjusted recent form is basically even: Sorana Cirstea 79, Solana Sierra 83. Lean, not a chase.",
-    "totals": "Best O/U angle: no play without a posted total.",
-    "weaknessEdge": {
-      "edgeType": "No clear weakness edge",
-      "target": "Both sides",
-      "scoreGap": 6,
-      "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
-      "liveTrigger": "Wait for a visible service-pressure split before entering.",
-      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
-      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
-      "pick": {
-        "name": "Sorana Cirstea",
-        "serviceHoldPct": 72,
-        "firstServeWonPct": 68,
-        "secondServeWonPct": 50,
-        "firstServePct": 58,
-        "avgAces": 2.9,
-        "avgDoubleFaults": 1.7,
-        "avgWinners": 17,
-        "avgUnforcedErrors": 20,
-        "avgBreakPointsFaced": 5.9,
-        "returnPointsWonPct": 48,
-        "servicePointsWonPct": 61,
-        "weakServeMatches": 3,
-        "pressureMatches": 3,
-        "matchesWithStats": 7,
-        "weaknessScore": 7,
-        "firstGameComfort": "Comfortable enough if first serve lands",
-        "liabilities": [
-          "3 recent matches with serve instability"
-        ],
-        "strengths": [
-          "creates return pressure (48% return points won)"
-        ],
-        "gameFlowRead": "Sorana Cirstea can drop points quickly through 3 recent matches with serve instability."
-      },
-      "opponent": {
-        "name": "Solana Sierra",
-        "serviceHoldPct": 69,
-        "firstServeWonPct": 63,
-        "secondServeWonPct": 50,
-        "firstServePct": 67,
-        "avgAces": 1.6,
-        "avgDoubleFaults": 3.4,
-        "avgWinners": 28,
-        "avgUnforcedErrors": 37.5,
-        "avgBreakPointsFaced": 9.8,
-        "returnPointsWonPct": 51,
-        "servicePointsWonPct": 58,
-        "weakServeMatches": 2,
-        "pressureMatches": 4,
-        "matchesWithStats": 5,
-        "weaknessScore": 13,
-        "firstGameComfort": "Comfortable enough if first serve lands",
-        "liabilities": [
-          "negative winner/error balance (28.0 winners, 37.5 unforced)",
-          "faces too many break points (9.8 avg)"
-        ],
-        "strengths": [
-          "creates return pressure (51% return points won)"
-        ],
-        "gameFlowRead": "Solana Sierra can drop points quickly through negative winner/error balance (28.0 winners, 37.5 unforced) and faces too many break points (9.8 avg)."
-      }
-    },
-    "setWinProjections": [
-      {
-        "name": "Solana Sierra",
-        "confidence": 53,
-        "modelPct": 39,
-        "label": "Needs early hold pressure"
-      },
-      {
-        "name": "Sorana Cirstea",
-        "confidence": 74,
-        "modelPct": 61,
-        "label": "Live to win a set"
-      }
-    ],
-    "valueBoard": {
-      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
-      "ml": {
-        "marketType": "ML",
-        "selection": "Sorana Cirstea",
-        "americanOdds": -360,
-        "modelPct": 61,
-        "impliedPct": 78.3,
-        "edgePct": -17.3,
-        "evPer100": -22.1,
-        "netEvPer100": -24.1,
-        "feePer100": 2,
-        "valueIssue": "Favorite price needs better proof",
-        "valueGrade": "Negative EV",
-        "betGrade": false
-      },
-      "spread": null,
-      "total": {
-        "marketType": "Total",
-        "selection": "No bet",
-        "valueGrade": "No direction",
-        "betGrade": false
-      },
-      "setWin": [
-        {
-          "name": "Solana Sierra",
-          "confidence": 53,
-          "modelPct": 39,
-          "label": "Needs early hold pressure",
-          "marketType": "Win a set",
-          "valueGrade": "Needs posted price",
-          "betGrade": false
-        },
-        {
-          "name": "Sorana Cirstea",
-          "confidence": 74,
-          "modelPct": 61,
-          "label": "Live to win a set",
-          "marketType": "Win a set",
-          "valueGrade": "Needs posted price",
-          "betGrade": false
-        }
-      ]
-    },
-    "marketData": {
-      "source": "FanDuel Sportsbook",
-      "sourceDetail": "FanDuel Sportsbook browser scrape",
-      "capturedAt": "2026-05-29T05:09:26.000Z",
-      "players": [
-        {
-          "name": "Solana Sierra",
-          "odds": 285,
-          "americanLabel": "+285",
-          "impliedPct": 26,
-          "decimalOdds": 3.85,
-          "modelPct": 39,
-          "edgePct": 13,
-          "priceBand": "Underdog",
-          "grossProfitPct": 285,
-          "grossPayoutMultiple": 3.85,
-          "centsAtRisk": 100,
-          "centsProfitIfWin": 285
-        },
-        {
-          "name": "Sorana Cirstea",
-          "odds": -360,
-          "americanLabel": "-360",
-          "impliedPct": 78.3,
-          "decimalOdds": 1.278,
-          "modelPct": 61,
-          "edgePct": -17.3,
-          "priceBand": "Low-payout favorite",
-          "grossProfitPct": 27.8,
-          "grossPayoutMultiple": 1.278,
-          "centsAtRisk": 100,
-          "centsProfitIfWin": 27.8
-        }
-      ],
-      "desk": {
-        "name": "Sorana Cirstea",
-        "odds": -360,
-        "americanLabel": "-360",
-        "impliedPct": 78.3,
-        "decimalOdds": 1.278,
-        "modelPct": 61,
-        "edgePct": -17.3,
-        "priceBand": "Low-payout favorite",
-        "grossProfitPct": 27.8,
-        "grossPayoutMultiple": 1.278,
-        "centsAtRisk": 100,
-        "centsProfitIfWin": 27.8
-      },
-      "spread": null,
-      "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
-      "spreadValue": "No primary game spread captured",
-      "totalValue": "No total captured",
-      "spreadLean": "No spread line",
-      "totalLean": "No total line",
-      "mlValue": "Solana Sierra +285 / Sorana Cirstea -360",
-      "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
-      "noVigNote": "Model 61% vs FanDuel implied 78.3% (-17.3 pts)."
-    },
-    "h2hUrl": "https://tennistonic.com/head-to-head-compare/Solana-Sierra-Vs-Sorana-Cirstea/",
-    "players": [
-      {
-        "name": "Solana Sierra",
-        "ranking": {
-          "name": "Solana Sierra",
-          "rank": 59,
-          "points": 1004,
-          "age": 21.9,
-          "country": "ARG",
-          "tour": "WTA",
-          "source": "https://live-tennis.eu/en/wta-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/wta-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
-        },
-        "qualityName": "Solana Sierra",
-        "profile": "Live rank #59 | ARG | age 21.9 | 2026 clay 9-4, 69% | adj form 83 | hold 69%",
-        "modelPct": 39,
-        "weakness": {
-          "name": "Solana Sierra",
-          "serviceHoldPct": 69,
-          "firstServeWonPct": 63,
-          "secondServeWonPct": 50,
-          "firstServePct": 67,
-          "avgAces": 1.6,
-          "avgDoubleFaults": 3.4,
-          "avgWinners": 28,
-          "avgUnforcedErrors": 37.5,
-          "avgBreakPointsFaced": 9.8,
-          "returnPointsWonPct": 51,
-          "servicePointsWonPct": 58,
-          "weakServeMatches": 2,
-          "pressureMatches": 4,
-          "matchesWithStats": 5,
-          "weaknessScore": 13,
-          "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [
-            "negative winner/error balance (28.0 winners, 37.5 unforced)",
-            "faces too many break points (9.8 avg)"
-          ],
-          "strengths": [
-            "creates return pressure (51% return points won)"
-          ],
-          "gameFlowRead": "Solana Sierra can drop points quickly through negative winner/error balance (28.0 winners, 37.5 unforced) and faces too many break points (9.8 avg)."
-        }
-      },
-      {
-        "name": "Sorana Cirstea",
-        "ranking": {
-          "name": "Sorana Cîrstea",
-          "rank": 18,
-          "points": 1957,
-          "age": 36.1,
-          "country": "ROU",
-          "tour": "WTA",
-          "source": "https://live-tennis.eu/en/wta-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/wta-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
-        },
-        "qualityName": "Sorana Cirstea",
-        "profile": "Live rank #18 | ROU | age 36.1 | 2026 clay 12-3, 80% | adj form 79 | hold 72%",
-        "modelPct": 61,
-        "weakness": {
-          "name": "Sorana Cirstea",
-          "serviceHoldPct": 72,
-          "firstServeWonPct": 68,
-          "secondServeWonPct": 50,
-          "firstServePct": 58,
-          "avgAces": 2.9,
-          "avgDoubleFaults": 1.7,
-          "avgWinners": 17,
-          "avgUnforcedErrors": 20,
-          "avgBreakPointsFaced": 5.9,
-          "returnPointsWonPct": 48,
-          "servicePointsWonPct": 61,
-          "weakServeMatches": 3,
-          "pressureMatches": 3,
-          "matchesWithStats": 7,
-          "weaknessScore": 7,
-          "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [
-            "3 recent matches with serve instability"
-          ],
-          "strengths": [
-            "creates return pressure (48% return points won)"
-          ],
-          "gameFlowRead": "Sorana Cirstea can drop points quickly through 3 recent matches with serve instability."
-        }
-      }
-    ]
-  },
-  {
     "id": "rg-w-mirra-andreeva-marie-bouzkova-2026-05-29",
     "eventId": "175557",
     "tour": "WTA",
     "title": "Mirra Andreeva vs Marie Bouzkova",
-    "start": "4:30 AM",
-    "startMinutes": 270,
+    "start": "5:00 AM",
+    "startMinutes": 300,
     "court": "Court Philippe-Chatrier",
     "round": "Round 3",
     "pickName": "Mirra Andreeva",
@@ -2549,17 +1947,16 @@ const rawTennisGames = [
         "ranking": {
           "name": "Mirra Andreeva",
           "rank": 8,
-          "points": 3821,
+          "points": 4181,
           "age": 19,
-          "country": "RUS",
+          "country": "Russia",
           "tour": "WTA",
-          "source": "https://live-tennis.eu/en/wta-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/wta-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
+          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/9820/mirra-andreeva",
+          "asOf": "2026-05-29"
         },
         "qualityName": "Mirra Andreeva",
-        "profile": "Live rank #8 | RUS | age 19 | 2026 clay 17-3, 85% | adj form 81 | hold 78%",
+        "profile": "Live rank #8 | Russia | age 19 | 2026 clay 17-3, 85% | adj form 81 | hold 78%",
         "modelPct": 61,
         "weakness": {
           "name": "Mirra Andreeva",
@@ -2592,19 +1989,18 @@ const rawTennisGames = [
       {
         "name": "Marie Bouzkova",
         "ranking": {
-          "name": "Marie Bouzková",
-          "rank": 27,
-          "points": 1571,
-          "age": 27.8,
-          "country": "CZE",
+          "name": "Marie Bouzkova",
+          "rank": 28,
+          "points": 1631,
+          "age": 27,
+          "country": "Czechia",
           "tour": "WTA",
-          "source": "https://live-tennis.eu/en/wta-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/wta-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
+          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/2392/marie-bouzkova",
+          "asOf": "2026-05-29"
         },
         "qualityName": "Marie Bouzkova",
-        "profile": "Live rank #27 | CZE | age 27.8 | 2026 clay 9-3, 75% | adj form 67 | hold 75%",
+        "profile": "Live rank #28 | Czechia | age 27 | 2026 clay 9-3, 75% | adj form 67 | hold 75%",
         "modelPct": 39,
         "weakness": {
           "name": "Marie Bouzkova",
@@ -2637,103 +2033,103 @@ const rawTennisGames = [
     ]
   },
   {
-    "id": "rg-m-alex-de-minaur-jakub-mensik-2026-05-29",
-    "eventId": "175709",
-    "tour": "ATP",
-    "title": "Alex de Minaur vs Jakub Mensik",
-    "start": "5:30 AM",
-    "startMinutes": 330,
-    "court": "Court Simonne-Mathieu",
+    "id": "rg-w-jil-teichmann-karolina-muchova-2026-05-29",
+    "eventId": "175572",
+    "tour": "WTA",
+    "title": "Jil Teichmann vs Karolina Muchova",
+    "start": "5:15 AM",
+    "startMinutes": 315,
+    "court": "Court Suzanne-Lenglen",
     "round": "Round 3",
-    "pickName": "Alex de Minaur",
-    "confidence": 55,
-    "volatility": 45,
+    "pickName": "Karolina Muchova",
+    "confidence": 67,
+    "volatility": 38,
     "tags": [
       "Clay",
       "Roland Garros",
-      "ATP",
-      "Watch only",
+      "WTA",
+      "Lean",
       "No blind bet",
-      "Men more stable",
+      "WTA volatility tax",
       "Controlled volatility"
     ],
-    "reason": "Jakub Mensik has the recent service-hold edge 83% to 72%, so Alex de Minaur needs the rank/form edge to show up on return games. Jakub Mensik grades 8 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
+    "reason": "Recent service hold is close: Karolina Muchova 70%, Jil Teichmann 67%. Jil Teichmann grades 11 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
     "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "No clear weakness edge",
-      "target": "Both sides",
-      "scoreGap": -4,
-      "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
-      "liveTrigger": "Wait for a visible service-pressure split before entering.",
-      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "edgeType": "Weakness edge",
+      "target": "Jil Teichmann",
+      "scoreGap": 9,
+      "attackingSide": "Karolina Muchova",
+      "vulnerableSide": "Jil Teichmann",
+      "gameFlow": "Karolina Muchova has a real path if Jil Teichmann's first two service games show the same weakness: first-serve points won below comfort (59%); negative winner/error balance (16.0 winners, 27.5 unforced).",
+      "liveTrigger": "Look for Jil Teichmann facing break points or second-serve pressure before 3-3.",
+      "spreadRead": "Karolina Muchova spread only if the handicap is short and Jil Teichmann is under pressure early.",
       "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
-        "name": "Alex de Minaur",
-        "serviceHoldPct": 72,
-        "firstServeWonPct": 65,
-        "secondServeWonPct": 52,
-        "firstServePct": 57,
-        "avgAces": 2,
-        "avgDoubleFaults": 3,
-        "avgWinners": 19.3,
-        "avgUnforcedErrors": 33.8,
-        "avgBreakPointsFaced": 11,
-        "returnPointsWonPct": 42,
-        "servicePointsWonPct": 60,
-        "weakServeMatches": 2,
-        "pressureMatches": 5,
-        "matchesWithStats": 7,
-        "weaknessScore": 17,
-        "firstGameComfort": "Needs early holds confirmed",
-        "liabilities": [
-          "negative winner/error balance (19.3 winners, 33.8 unforced)",
-          "faces too many break points (11.0 avg)"
-        ],
-        "strengths": [],
-        "gameFlowRead": "Alex de Minaur can drop points quickly through negative winner/error balance (19.3 winners, 33.8 unforced) and faces too many break points (11.0 avg)."
-      },
-      "opponent": {
-        "name": "Jakub Mensik",
-        "serviceHoldPct": 83,
-        "firstServeWonPct": 78,
-        "secondServeWonPct": 51,
-        "firstServePct": 58,
-        "avgAces": 7.6,
-        "avgDoubleFaults": 3.5,
-        "avgWinners": 28.7,
-        "avgUnforcedErrors": 31.6,
-        "avgBreakPointsFaced": 5.8,
-        "returnPointsWonPct": 35,
-        "servicePointsWonPct": 66,
-        "weakServeMatches": 3,
-        "pressureMatches": 6,
+        "name": "Karolina Muchova",
+        "serviceHoldPct": 70,
+        "firstServeWonPct": 66,
+        "secondServeWonPct": 45,
+        "firstServePct": 67,
+        "avgAces": 3.5,
+        "avgDoubleFaults": 1.9,
+        "avgWinners": 17,
+        "avgUnforcedErrors": 21.5,
+        "avgBreakPointsFaced": 7.8,
+        "returnPointsWonPct": 44,
+        "servicePointsWonPct": 59,
+        "weakServeMatches": 4,
+        "pressureMatches": 3,
         "matchesWithStats": 8,
         "weaknessScore": 13,
         "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "3 recent matches with serve instability",
-          "limited return pressure (35% return points won)"
+          "4 recent matches with serve instability"
+        ],
+        "strengths": [],
+        "gameFlowRead": "Karolina Muchova can drop points quickly through 4 recent matches with serve instability."
+      },
+      "opponent": {
+        "name": "Jil Teichmann",
+        "serviceHoldPct": 67,
+        "firstServeWonPct": 59,
+        "secondServeWonPct": 55,
+        "firstServePct": 68,
+        "avgAces": 0.8,
+        "avgDoubleFaults": 3,
+        "avgWinners": 16,
+        "avgUnforcedErrors": 27.5,
+        "avgBreakPointsFaced": 7.1,
+        "returnPointsWonPct": 46,
+        "servicePointsWonPct": 58,
+        "weakServeMatches": 6,
+        "pressureMatches": 4,
+        "matchesWithStats": 8,
+        "weaknessScore": 22,
+        "firstGameComfort": "Needs early holds confirmed",
+        "liabilities": [
+          "first-serve points won below comfort (59%)",
+          "negative winner/error balance (16.0 winners, 27.5 unforced)",
+          "6 recent matches with serve instability"
         ],
         "strengths": [
-          "protects serve well (83% hold)",
-          "wins enough first-serve points (78%)"
+          "second serve holds up (55%)",
+          "creates return pressure (46% return points won)"
         ],
-        "gameFlowRead": "Jakub Mensik can drop points quickly through 3 recent matches with serve instability and limited return pressure (35% return points won)."
+        "gameFlowRead": "Jil Teichmann can drop points quickly through first-serve points won below comfort (59%) and negative winner/error balance (16.0 winners, 27.5 unforced)."
       }
     },
     "setWinProjections": [
       {
-        "name": "Alex de Minaur",
-        "confidence": 83,
-        "modelPct": 55,
-        "label": "Strong set-win path"
+        "name": "Jil Teichmann",
+        "confidence": 44,
+        "modelPct": 33,
+        "label": "Thin set-win path"
       },
       {
-        "name": "Jakub Mensik",
-        "confidence": 73,
-        "modelPct": 45,
+        "name": "Karolina Muchova",
+        "confidence": 76,
+        "modelPct": 67,
         "label": "Live to win a set"
       }
     ],
@@ -2741,13 +2137,13 @@ const rawTennisGames = [
       "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
       "ml": {
         "marketType": "ML",
-        "selection": "Alex de Minaur",
-        "americanOdds": -430,
-        "modelPct": 55,
-        "impliedPct": 81.1,
-        "edgePct": -26.1,
-        "evPer100": -32.2,
-        "netEvPer100": -34.2,
+        "selection": "Karolina Muchova",
+        "americanOdds": -950,
+        "modelPct": 67,
+        "impliedPct": 90.5,
+        "edgePct": -23.5,
+        "evPer100": -25.9,
+        "netEvPer100": -27.9,
         "feePer100": 2,
         "valueIssue": "Favorite tax trap",
         "valueGrade": "Favorite tax trap",
@@ -2762,18 +2158,18 @@ const rawTennisGames = [
       },
       "setWin": [
         {
-          "name": "Alex de Minaur",
-          "confidence": 83,
-          "modelPct": 55,
-          "label": "Strong set-win path",
+          "name": "Jil Teichmann",
+          "confidence": 44,
+          "modelPct": 33,
+          "label": "Thin set-win path",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
           "betGrade": false
         },
         {
-          "name": "Jakub Mensik",
-          "confidence": 73,
-          "modelPct": 45,
+          "name": "Karolina Muchova",
+          "confidence": 76,
+          "modelPct": 67,
           "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -2787,47 +2183,331 @@ const rawTennisGames = [
       "capturedAt": "2026-05-29T05:09:26.000Z",
       "players": [
         {
-          "name": "Alex de Minaur",
-          "odds": -430,
-          "americanLabel": "-430",
-          "impliedPct": 81.1,
-          "decimalOdds": 1.233,
-          "modelPct": 55,
-          "edgePct": -26.1,
-          "priceBand": "Low-payout favorite",
-          "grossProfitPct": 23.3,
-          "grossPayoutMultiple": 1.233,
+          "name": "Jil Teichmann",
+          "odds": 610,
+          "americanLabel": "+610",
+          "impliedPct": 14.1,
+          "decimalOdds": 7.1,
+          "modelPct": 33,
+          "edgePct": 18.9,
+          "priceBand": "Underdog",
+          "grossProfitPct": 610,
+          "grossPayoutMultiple": 7.1,
           "centsAtRisk": 100,
-          "centsProfitIfWin": 23.3
+          "centsProfitIfWin": 610
         },
         {
-          "name": "Jakub Mensik",
-          "odds": 330,
-          "americanLabel": "+330",
-          "impliedPct": 23.3,
-          "decimalOdds": 4.3,
-          "modelPct": 45,
-          "edgePct": 21.7,
-          "priceBand": "Underdog",
-          "grossProfitPct": 330,
-          "grossPayoutMultiple": 4.3,
+          "name": "Karolina Muchova",
+          "odds": -950,
+          "americanLabel": "-950",
+          "impliedPct": 90.5,
+          "decimalOdds": 1.105,
+          "modelPct": 67,
+          "edgePct": -23.5,
+          "priceBand": "Very expensive favorite",
+          "grossProfitPct": 10.5,
+          "grossPayoutMultiple": 1.105,
           "centsAtRisk": 100,
-          "centsProfitIfWin": 330
+          "centsProfitIfWin": 10.5
         }
       ],
       "desk": {
-        "name": "Alex de Minaur",
-        "odds": -430,
-        "americanLabel": "-430",
-        "impliedPct": 81.1,
-        "decimalOdds": 1.233,
-        "modelPct": 55,
-        "edgePct": -26.1,
-        "priceBand": "Low-payout favorite",
-        "grossProfitPct": 23.3,
-        "grossPayoutMultiple": 1.233,
+        "name": "Karolina Muchova",
+        "odds": -950,
+        "americanLabel": "-950",
+        "impliedPct": 90.5,
+        "decimalOdds": 1.105,
+        "modelPct": 67,
+        "edgePct": -23.5,
+        "priceBand": "Very expensive favorite",
+        "grossProfitPct": 10.5,
+        "grossPayoutMultiple": 1.105,
         "centsAtRisk": 100,
-        "centsProfitIfWin": 23.3
+        "centsProfitIfWin": 10.5
+      },
+      "spread": null,
+      "priceAction": "ML payout is tiny; use spread/total or pass unless the number moves.",
+      "spreadValue": "No primary game spread captured",
+      "totalValue": "No total captured",
+      "spreadLean": "No spread line",
+      "totalLean": "No total line",
+      "mlValue": "Jil Teichmann +610 / Karolina Muchova -950",
+      "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. ML payout is tiny; use spread/total or pass unless the number moves.",
+      "noVigNote": "Model 67% vs FanDuel implied 90.5% (-23.5 pts)."
+    },
+    "h2hUrl": "https://tennistonic.com/head-to-head-compare/Jil-Teichmann-Vs-Karolina-Muchova/",
+    "players": [
+      {
+        "name": "Jil Teichmann",
+        "ranking": null,
+        "qualityName": "Jil Teichmann",
+        "profile": "Rank not joined | 2026 clay 8-5, 62% | adj form 89 | hold 67%",
+        "modelPct": 33,
+        "weakness": {
+          "name": "Jil Teichmann",
+          "serviceHoldPct": 67,
+          "firstServeWonPct": 59,
+          "secondServeWonPct": 55,
+          "firstServePct": 68,
+          "avgAces": 0.8,
+          "avgDoubleFaults": 3,
+          "avgWinners": 16,
+          "avgUnforcedErrors": 27.5,
+          "avgBreakPointsFaced": 7.1,
+          "returnPointsWonPct": 46,
+          "servicePointsWonPct": 58,
+          "weakServeMatches": 6,
+          "pressureMatches": 4,
+          "matchesWithStats": 8,
+          "weaknessScore": 22,
+          "firstGameComfort": "Needs early holds confirmed",
+          "liabilities": [
+            "first-serve points won below comfort (59%)",
+            "negative winner/error balance (16.0 winners, 27.5 unforced)",
+            "6 recent matches with serve instability"
+          ],
+          "strengths": [
+            "second serve holds up (55%)",
+            "creates return pressure (46% return points won)"
+          ],
+          "gameFlowRead": "Jil Teichmann can drop points quickly through first-serve points won below comfort (59%) and negative winner/error balance (16.0 winners, 27.5 unforced)."
+        }
+      },
+      {
+        "name": "Karolina Muchova",
+        "ranking": {
+          "name": "Karolina Muchova",
+          "rank": 10,
+          "points": 3318,
+          "age": 29,
+          "country": "Czechia",
+          "tour": "WTA",
+          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/3039/karolina-muchova",
+          "asOf": "2026-05-29"
+        },
+        "qualityName": "Karolina Muchova",
+        "profile": "Live rank #10 | Czechia | age 29 | 2026 clay 6-2, 75% | adj form 78 | hold 70%",
+        "modelPct": 67,
+        "weakness": {
+          "name": "Karolina Muchova",
+          "serviceHoldPct": 70,
+          "firstServeWonPct": 66,
+          "secondServeWonPct": 45,
+          "firstServePct": 67,
+          "avgAces": 3.5,
+          "avgDoubleFaults": 1.9,
+          "avgWinners": 17,
+          "avgUnforcedErrors": 21.5,
+          "avgBreakPointsFaced": 7.8,
+          "returnPointsWonPct": 44,
+          "servicePointsWonPct": 59,
+          "weakServeMatches": 4,
+          "pressureMatches": 3,
+          "matchesWithStats": 8,
+          "weaknessScore": 13,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "4 recent matches with serve instability"
+          ],
+          "strengths": [],
+          "gameFlowRead": "Karolina Muchova can drop points quickly through 4 recent matches with serve instability."
+        }
+      }
+    ]
+  },
+  {
+    "id": "rg-w-solana-sierra-sorana-cirstea-2026-05-29",
+    "eventId": "175581",
+    "tour": "WTA",
+    "title": "Solana Sierra vs Sorana Cirstea",
+    "start": "6:00 AM",
+    "startMinutes": 360,
+    "court": "Court 14",
+    "round": "Round 3",
+    "pickName": "Sorana Cirstea",
+    "confidence": 61,
+    "volatility": 45,
+    "tags": [
+      "Clay",
+      "Roland Garros",
+      "WTA",
+      "Watch only",
+      "No blind bet",
+      "WTA volatility tax",
+      "Controlled volatility"
+    ],
+    "reason": "Sorana Cirstea has the recent service-hold edge 72% to 69%. Opponent-adjusted recent form is basically even: Sorana Cirstea 79, Solana Sierra 83. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
+    "weaknessEdge": {
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 6,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+      "pick": {
+        "name": "Sorana Cirstea",
+        "serviceHoldPct": 72,
+        "firstServeWonPct": 68,
+        "secondServeWonPct": 50,
+        "firstServePct": 58,
+        "avgAces": 2.9,
+        "avgDoubleFaults": 1.7,
+        "avgWinners": 17,
+        "avgUnforcedErrors": 20,
+        "avgBreakPointsFaced": 5.9,
+        "returnPointsWonPct": 48,
+        "servicePointsWonPct": 61,
+        "weakServeMatches": 3,
+        "pressureMatches": 3,
+        "matchesWithStats": 7,
+        "weaknessScore": 7,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [
+          "3 recent matches with serve instability"
+        ],
+        "strengths": [
+          "creates return pressure (48% return points won)"
+        ],
+        "gameFlowRead": "Sorana Cirstea can drop points quickly through 3 recent matches with serve instability."
+      },
+      "opponent": {
+        "name": "Solana Sierra",
+        "serviceHoldPct": 69,
+        "firstServeWonPct": 63,
+        "secondServeWonPct": 50,
+        "firstServePct": 67,
+        "avgAces": 1.6,
+        "avgDoubleFaults": 3.4,
+        "avgWinners": 28,
+        "avgUnforcedErrors": 37.5,
+        "avgBreakPointsFaced": 9.8,
+        "returnPointsWonPct": 51,
+        "servicePointsWonPct": 58,
+        "weakServeMatches": 2,
+        "pressureMatches": 4,
+        "matchesWithStats": 5,
+        "weaknessScore": 13,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [
+          "negative winner/error balance (28.0 winners, 37.5 unforced)",
+          "faces too many break points (9.8 avg)"
+        ],
+        "strengths": [
+          "creates return pressure (51% return points won)"
+        ],
+        "gameFlowRead": "Solana Sierra can drop points quickly through negative winner/error balance (28.0 winners, 37.5 unforced) and faces too many break points (9.8 avg)."
+      }
+    },
+    "setWinProjections": [
+      {
+        "name": "Solana Sierra",
+        "confidence": 53,
+        "modelPct": 39,
+        "label": "Needs early hold pressure"
+      },
+      {
+        "name": "Sorana Cirstea",
+        "confidence": 74,
+        "modelPct": 61,
+        "label": "Live to win a set"
+      }
+    ],
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Sorana Cirstea",
+        "americanOdds": -360,
+        "modelPct": 61,
+        "impliedPct": 78.3,
+        "edgePct": -17.3,
+        "evPer100": -22.1,
+        "netEvPer100": -24.1,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Negative EV",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "valueGrade": "No direction",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Solana Sierra",
+          "confidence": 53,
+          "modelPct": 39,
+          "label": "Needs early hold pressure",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Sorana Cirstea",
+          "confidence": 74,
+          "modelPct": 61,
+          "label": "Live to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "marketData": {
+      "source": "FanDuel Sportsbook",
+      "sourceDetail": "FanDuel Sportsbook browser scrape",
+      "capturedAt": "2026-05-29T05:09:26.000Z",
+      "players": [
+        {
+          "name": "Solana Sierra",
+          "odds": 285,
+          "americanLabel": "+285",
+          "impliedPct": 26,
+          "decimalOdds": 3.85,
+          "modelPct": 39,
+          "edgePct": 13,
+          "priceBand": "Underdog",
+          "grossProfitPct": 285,
+          "grossPayoutMultiple": 3.85,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 285
+        },
+        {
+          "name": "Sorana Cirstea",
+          "odds": -360,
+          "americanLabel": "-360",
+          "impliedPct": 78.3,
+          "decimalOdds": 1.278,
+          "modelPct": 61,
+          "edgePct": -17.3,
+          "priceBand": "Low-payout favorite",
+          "grossProfitPct": 27.8,
+          "grossPayoutMultiple": 1.278,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 27.8
+        }
+      ],
+      "desk": {
+        "name": "Sorana Cirstea",
+        "odds": -360,
+        "americanLabel": "-360",
+        "impliedPct": 78.3,
+        "decimalOdds": 1.278,
+        "modelPct": 61,
+        "edgePct": -17.3,
+        "priceBand": "Low-payout favorite",
+        "grossProfitPct": 27.8,
+        "grossPayoutMultiple": 1.278,
+        "centsAtRisk": 100,
+        "centsProfitIfWin": 27.8
       },
       "spread": null,
       "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
@@ -2835,99 +2515,691 @@ const rawTennisGames = [
       "totalValue": "No total captured",
       "spreadLean": "No spread line",
       "totalLean": "No total line",
-      "mlValue": "Alex de Minaur -430 / Jakub Mensik +330",
+      "mlValue": "Solana Sierra +285 / Sorana Cirstea -360",
       "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
-      "noVigNote": "Model 55% vs FanDuel implied 81.1% (-26.1 pts)."
+      "noVigNote": "Model 61% vs FanDuel implied 78.3% (-17.3 pts)."
     },
-    "h2hUrl": "https://tennistonic.com/head-to-head-compare/Alex-de-Minaur-Vs-Jakub-Mensik/",
+    "h2hUrl": "https://tennistonic.com/head-to-head-compare/Solana-Sierra-Vs-Sorana-Cirstea/",
     "players": [
       {
-        "name": "Alex de Minaur",
+        "name": "Solana Sierra",
         "ranking": {
-          "name": "Alex de Minaur",
-          "rank": 6,
-          "points": 3905,
-          "age": 27.2,
-          "country": "AUS",
-          "tour": "ATP",
-          "source": "https://live-tennis.eu/en/atp-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/atp-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/atp-live-ranking browser snapshot"
+          "name": "Solana Sierra",
+          "rank": 68,
+          "points": 974,
+          "age": 21,
+          "country": "Argentina",
+          "tour": "WTA",
+          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/6500/solana-sierra",
+          "asOf": "2026-05-29"
         },
-        "qualityName": "Alex De Minaur",
-        "profile": "Live rank #6 | AUS | age 27.2 | 2026 clay 7-5, 58% | adj form 66 | hold 72%",
-        "modelPct": 55,
+        "qualityName": "Solana Sierra",
+        "profile": "Live rank #68 | Argentina | age 21 | 2026 clay 9-4, 69% | adj form 83 | hold 69%",
+        "modelPct": 39,
         "weakness": {
-          "name": "Alex de Minaur",
-          "serviceHoldPct": 72,
-          "firstServeWonPct": 65,
-          "secondServeWonPct": 52,
-          "firstServePct": 57,
-          "avgAces": 2,
-          "avgDoubleFaults": 3,
-          "avgWinners": 19.3,
-          "avgUnforcedErrors": 33.8,
-          "avgBreakPointsFaced": 11,
-          "returnPointsWonPct": 42,
-          "servicePointsWonPct": 60,
+          "name": "Solana Sierra",
+          "serviceHoldPct": 69,
+          "firstServeWonPct": 63,
+          "secondServeWonPct": 50,
+          "firstServePct": 67,
+          "avgAces": 1.6,
+          "avgDoubleFaults": 3.4,
+          "avgWinners": 28,
+          "avgUnforcedErrors": 37.5,
+          "avgBreakPointsFaced": 9.8,
+          "returnPointsWonPct": 51,
+          "servicePointsWonPct": 58,
           "weakServeMatches": 2,
-          "pressureMatches": 5,
-          "matchesWithStats": 7,
-          "weaknessScore": 17,
-          "firstGameComfort": "Needs early holds confirmed",
-          "liabilities": [
-            "negative winner/error balance (19.3 winners, 33.8 unforced)",
-            "faces too many break points (11.0 avg)"
-          ],
-          "strengths": [],
-          "gameFlowRead": "Alex de Minaur can drop points quickly through negative winner/error balance (19.3 winners, 33.8 unforced) and faces too many break points (11.0 avg)."
-        }
-      },
-      {
-        "name": "Jakub Mensik",
-        "ranking": {
-          "name": "Jakub Menšík",
-          "rank": 27,
-          "points": 1550,
-          "age": 20.7,
-          "country": "CZE",
-          "tour": "ATP",
-          "source": "https://live-tennis.eu/en/atp-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/atp-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/atp-live-ranking browser snapshot"
-        },
-        "qualityName": "Jakub Mensik",
-        "profile": "Live rank #27 | CZE | age 20.7 | 2026 clay 5-3, 63% | adj form 75 | hold 83%",
-        "modelPct": 45,
-        "weakness": {
-          "name": "Jakub Mensik",
-          "serviceHoldPct": 83,
-          "firstServeWonPct": 78,
-          "secondServeWonPct": 51,
-          "firstServePct": 58,
-          "avgAces": 7.6,
-          "avgDoubleFaults": 3.5,
-          "avgWinners": 28.7,
-          "avgUnforcedErrors": 31.6,
-          "avgBreakPointsFaced": 5.8,
-          "returnPointsWonPct": 35,
-          "servicePointsWonPct": 66,
-          "weakServeMatches": 3,
-          "pressureMatches": 6,
-          "matchesWithStats": 8,
+          "pressureMatches": 4,
+          "matchesWithStats": 5,
           "weaknessScore": 13,
           "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "3 recent matches with serve instability",
-            "limited return pressure (35% return points won)"
+            "negative winner/error balance (28.0 winners, 37.5 unforced)",
+            "faces too many break points (9.8 avg)"
           ],
           "strengths": [
-            "protects serve well (83% hold)",
-            "wins enough first-serve points (78%)"
+            "creates return pressure (51% return points won)"
           ],
-          "gameFlowRead": "Jakub Mensik can drop points quickly through 3 recent matches with serve instability and limited return pressure (35% return points won)."
+          "gameFlowRead": "Solana Sierra can drop points quickly through negative winner/error balance (28.0 winners, 37.5 unforced) and faces too many break points (9.8 avg)."
+        }
+      },
+      {
+        "name": "Sorana Cirstea",
+        "ranking": {
+          "name": "Sorana Cirstea",
+          "rank": 18,
+          "points": 1985,
+          "age": 36,
+          "country": "Romania",
+          "tour": "WTA",
+          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/1774/sorana-cirstea",
+          "asOf": "2026-05-29"
+        },
+        "qualityName": "Sorana Cirstea",
+        "profile": "Live rank #18 | Romania | age 36 | 2026 clay 12-3, 80% | adj form 79 | hold 72%",
+        "modelPct": 61,
+        "weakness": {
+          "name": "Sorana Cirstea",
+          "serviceHoldPct": 72,
+          "firstServeWonPct": 68,
+          "secondServeWonPct": 50,
+          "firstServePct": 58,
+          "avgAces": 2.9,
+          "avgDoubleFaults": 1.7,
+          "avgWinners": 17,
+          "avgUnforcedErrors": 20,
+          "avgBreakPointsFaced": 5.9,
+          "returnPointsWonPct": 48,
+          "servicePointsWonPct": 61,
+          "weakServeMatches": 3,
+          "pressureMatches": 3,
+          "matchesWithStats": 7,
+          "weaknessScore": 7,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "3 recent matches with serve instability"
+          ],
+          "strengths": [
+            "creates return pressure (48% return points won)"
+          ],
+          "gameFlowRead": "Sorana Cirstea can drop points quickly through 3 recent matches with serve instability."
+        }
+      }
+    ]
+  },
+  {
+    "id": "rg-m-joao-fonseca-novak-djokovic-2026-05-29",
+    "eventId": "175730",
+    "tour": "ATP",
+    "title": "Joao Fonseca vs Novak Djokovic",
+    "start": "7:00 AM",
+    "startMinutes": 420,
+    "court": "Court Philippe-Chatrier",
+    "round": "Round 3",
+    "pickName": "Novak Djokovic",
+    "confidence": 60,
+    "volatility": 40,
+    "tags": [
+      "Clay",
+      "Roland Garros",
+      "ATP",
+      "Watch only",
+      "No blind bet",
+      "Men more stable",
+      "Controlled volatility"
+    ],
+    "reason": "Recent service hold is close: Novak Djokovic 85%, Joao Fonseca 87%. Novak Djokovic grades 13 points better on opponent-adjusted recent form. Lean, not a chase.",
+    "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets.",
+    "weaknessEdge": {
+      "edgeType": "Weakness warning",
+      "target": "Novak Djokovic",
+      "scoreGap": -11,
+      "attackingSide": null,
+      "vulnerableSide": "Novak Djokovic",
+      "gameFlow": "Novak Djokovic is the model side, but the fragile profile is on our pick: double-fault pressure (4.2 avg). Avoid laying a bad price until early holds are confirmed.",
+      "liveTrigger": "Do not upgrade Novak Djokovic unless they hold cleanly in the first service game and keep double faults down.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+      "pick": {
+        "name": "Novak Djokovic",
+        "serviceHoldPct": 85,
+        "firstServeWonPct": 76,
+        "secondServeWonPct": 56,
+        "firstServePct": 67,
+        "avgAces": 6.6,
+        "avgDoubleFaults": 4.2,
+        "avgWinners": 33.4,
+        "avgUnforcedErrors": 27.4,
+        "avgBreakPointsFaced": 5.4,
+        "returnPointsWonPct": 38,
+        "servicePointsWonPct": 70,
+        "weakServeMatches": 2,
+        "pressureMatches": 8,
+        "matchesWithStats": 5,
+        "weaknessScore": 16,
+        "firstGameComfort": "Needs early holds confirmed",
+        "liabilities": [
+          "double-fault pressure (4.2 avg)"
+        ],
+        "strengths": [
+          "protects serve well (85% hold)",
+          "wins enough first-serve points (76%)",
+          "second serve holds up (56%)",
+          "positive winner/error balance (33.4 winners, 27.4 unforced)"
+        ],
+        "gameFlowRead": "Novak Djokovic can drop points quickly through double-fault pressure (4.2 avg)."
+      },
+      "opponent": {
+        "name": "Joao Fonseca",
+        "serviceHoldPct": 87,
+        "firstServeWonPct": 71,
+        "secondServeWonPct": 62,
+        "firstServePct": 66,
+        "avgAces": 3.7,
+        "avgDoubleFaults": 1.1,
+        "avgWinners": 25.3,
+        "avgUnforcedErrors": 24,
+        "avgBreakPointsFaced": 6,
+        "returnPointsWonPct": 37,
+        "servicePointsWonPct": 68,
+        "weakServeMatches": 0,
+        "pressureMatches": 6,
+        "matchesWithStats": 8,
+        "weaknessScore": 5,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [
+          "limited return pressure (37% return points won)"
+        ],
+        "strengths": [
+          "protects serve well (87% hold)",
+          "wins enough first-serve points (71%)",
+          "second serve holds up (62%)"
+        ],
+        "gameFlowRead": "Joao Fonseca can drop points quickly through limited return pressure (37% return points won)."
+      }
+    },
+    "setWinProjections": [
+      {
+        "name": "Joao Fonseca",
+        "confidence": 69,
+        "modelPct": 40,
+        "label": "Live to win a set"
+      },
+      {
+        "name": "Novak Djokovic",
+        "confidence": 85,
+        "modelPct": 60,
+        "label": "Strong set-win path"
+      }
+    ],
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Novak Djokovic",
+        "americanOdds": -220,
+        "modelPct": 60,
+        "impliedPct": 68.8,
+        "edgePct": -8.8,
+        "evPer100": -12.7,
+        "netEvPer100": -14.7,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Negative EV",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "valueGrade": "No direction",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Joao Fonseca",
+          "confidence": 69,
+          "modelPct": 40,
+          "label": "Live to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Novak Djokovic",
+          "confidence": 85,
+          "modelPct": 60,
+          "label": "Strong set-win path",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "marketData": {
+      "source": "FanDuel Sportsbook",
+      "sourceDetail": "FanDuel Sportsbook browser scrape",
+      "capturedAt": "2026-05-29T05:09:26.000Z",
+      "players": [
+        {
+          "name": "Joao Fonseca",
+          "odds": 180,
+          "americanLabel": "+180",
+          "impliedPct": 35.7,
+          "decimalOdds": 2.8,
+          "modelPct": 40,
+          "edgePct": 4.3,
+          "priceBand": "Underdog",
+          "grossProfitPct": 180,
+          "grossPayoutMultiple": 2.8,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 180
+        },
+        {
+          "name": "Novak Djokovic",
+          "odds": -220,
+          "americanLabel": "-220",
+          "impliedPct": 68.8,
+          "decimalOdds": 1.455,
+          "modelPct": 60,
+          "edgePct": -8.8,
+          "priceBand": "Moderate favorite",
+          "grossProfitPct": 45.5,
+          "grossPayoutMultiple": 1.455,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 45.5
+        }
+      ],
+      "desk": {
+        "name": "Novak Djokovic",
+        "odds": -220,
+        "americanLabel": "-220",
+        "impliedPct": 68.8,
+        "decimalOdds": 1.455,
+        "modelPct": 60,
+        "edgePct": -8.8,
+        "priceBand": "Moderate favorite",
+        "grossProfitPct": 45.5,
+        "grossPayoutMultiple": 1.455,
+        "centsAtRisk": 100,
+        "centsProfitIfWin": 45.5
+      },
+      "spread": null,
+      "priceAction": "FanDuel price is richer than the model; pass ML unless live state improves.",
+      "spreadValue": "No primary game spread captured",
+      "totalValue": "No total captured",
+      "spreadLean": "No spread line",
+      "totalLean": "No total line",
+      "mlValue": "Joao Fonseca +180 / Novak Djokovic -220",
+      "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. FanDuel price is richer than the model; pass ML unless live state improves.",
+      "noVigNote": "Model 60% vs FanDuel implied 68.8% (-8.8 pts)."
+    },
+    "h2hUrl": "https://tennistonic.com/head-to-head-compare/Joao-Fonseca-Vs-Novak-Djokovic/",
+    "players": [
+      {
+        "name": "Joao Fonseca",
+        "ranking": {
+          "name": "Joao Fonseca",
+          "rank": 30,
+          "points": 1435,
+          "age": 19,
+          "country": "Brazil",
+          "tour": "ATP",
+          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/11745/joao-fonseca",
+          "asOf": "2026-05-29"
+        },
+        "qualityName": "Joao Fonseca",
+        "profile": "Live rank #30 | Brazil | age 19 | 2026 clay 8-6, 57% | adj form 71 | hold 87%",
+        "modelPct": 40,
+        "weakness": {
+          "name": "Joao Fonseca",
+          "serviceHoldPct": 87,
+          "firstServeWonPct": 71,
+          "secondServeWonPct": 62,
+          "firstServePct": 66,
+          "avgAces": 3.7,
+          "avgDoubleFaults": 1.1,
+          "avgWinners": 25.3,
+          "avgUnforcedErrors": 24,
+          "avgBreakPointsFaced": 6,
+          "returnPointsWonPct": 37,
+          "servicePointsWonPct": 68,
+          "weakServeMatches": 0,
+          "pressureMatches": 6,
+          "matchesWithStats": 8,
+          "weaknessScore": 5,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "limited return pressure (37% return points won)"
+          ],
+          "strengths": [
+            "protects serve well (87% hold)",
+            "wins enough first-serve points (71%)",
+            "second serve holds up (62%)"
+          ],
+          "gameFlowRead": "Joao Fonseca can drop points quickly through limited return pressure (37% return points won)."
+        }
+      },
+      {
+        "name": "Novak Djokovic",
+        "ranking": {
+          "name": "Novak Djokovic",
+          "rank": 4,
+          "points": 4460,
+          "age": 39,
+          "country": "Serbia",
+          "tour": "ATP",
+          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/296/novak-djokovic",
+          "asOf": "2026-05-29"
+        },
+        "qualityName": "Novak Djokovic",
+        "profile": "Live rank #4 | Serbia | age 39 | 2026 clay 2-1, 67% | adj form 84 | hold 85%",
+        "modelPct": 60,
+        "weakness": {
+          "name": "Novak Djokovic",
+          "serviceHoldPct": 85,
+          "firstServeWonPct": 76,
+          "secondServeWonPct": 56,
+          "firstServePct": 67,
+          "avgAces": 6.6,
+          "avgDoubleFaults": 4.2,
+          "avgWinners": 33.4,
+          "avgUnforcedErrors": 27.4,
+          "avgBreakPointsFaced": 5.4,
+          "returnPointsWonPct": 38,
+          "servicePointsWonPct": 70,
+          "weakServeMatches": 2,
+          "pressureMatches": 8,
+          "matchesWithStats": 5,
+          "weaknessScore": 16,
+          "firstGameComfort": "Needs early holds confirmed",
+          "liabilities": [
+            "double-fault pressure (4.2 avg)"
+          ],
+          "strengths": [
+            "protects serve well (85% hold)",
+            "wins enough first-serve points (76%)",
+            "second serve holds up (56%)",
+            "positive winner/error balance (33.4 winners, 27.4 unforced)"
+          ],
+          "gameFlowRead": "Novak Djokovic can drop points quickly through double-fault pressure (4.2 avg)."
+        }
+      }
+    ]
+  },
+  {
+    "id": "rg-m-karen-khachanov-jesper-de-jong-2026-05-29",
+    "eventId": "175753",
+    "tour": "ATP",
+    "title": "Karen Khachanov vs Jesper de Jong",
+    "start": "7:20 AM",
+    "startMinutes": 440,
+    "court": "Court 14",
+    "round": "Round 3",
+    "pickName": "Karen Khachanov",
+    "confidence": 66,
+    "volatility": 34,
+    "tags": [
+      "Clay",
+      "Roland Garros",
+      "ATP",
+      "Lean",
+      "No blind bet",
+      "Men more stable",
+      "Controlled volatility"
+    ],
+    "reason": "Karen Khachanov has the recent service-hold edge 82% to 75%. Karen Khachanov grades 6 points better on opponent-adjusted recent form. Lean, not a chase.",
+    "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets.",
+    "weaknessEdge": {
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 0,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+      "pick": {
+        "name": "Karen Khachanov",
+        "serviceHoldPct": 82,
+        "firstServeWonPct": 71,
+        "secondServeWonPct": 51,
+        "firstServePct": 66,
+        "avgAces": 5.6,
+        "avgDoubleFaults": 1,
+        "avgWinners": 27,
+        "avgUnforcedErrors": 32.4,
+        "avgBreakPointsFaced": 9,
+        "returnPointsWonPct": 39,
+        "servicePointsWonPct": 64,
+        "weakServeMatches": 1,
+        "pressureMatches": 7,
+        "matchesWithStats": 7,
+        "weaknessScore": 12,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [
+          "faces too many break points (9.0 avg)"
+        ],
+        "strengths": [
+          "protects serve well (82% hold)",
+          "wins enough first-serve points (71%)"
+        ],
+        "gameFlowRead": "Karen Khachanov can drop points quickly through faces too many break points (9.0 avg)."
+      },
+      "opponent": {
+        "name": "Jesper de Jong",
+        "serviceHoldPct": 75,
+        "firstServeWonPct": 67,
+        "secondServeWonPct": 51,
+        "firstServePct": 62,
+        "avgAces": 7,
+        "avgDoubleFaults": 3.5,
+        "avgWinners": 32,
+        "avgUnforcedErrors": 30.7,
+        "avgBreakPointsFaced": 9.8,
+        "returnPointsWonPct": 38,
+        "servicePointsWonPct": 61,
+        "weakServeMatches": 1,
+        "pressureMatches": 6,
+        "matchesWithStats": 6,
+        "weaknessScore": 12,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [
+          "faces too many break points (9.8 avg)",
+          "limited return pressure (38% return points won)"
+        ],
+        "strengths": [],
+        "gameFlowRead": "Jesper de Jong can drop points quickly through faces too many break points (9.8 avg) and limited return pressure (38% return points won)."
+      }
+    },
+    "setWinProjections": [
+      {
+        "name": "Karen Khachanov",
+        "confidence": 87,
+        "modelPct": 66,
+        "label": "Strong set-win path"
+      },
+      {
+        "name": "Jesper de Jong",
+        "confidence": 62,
+        "modelPct": 34,
+        "label": "Needs early hold pressure"
+      }
+    ],
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Karen Khachanov",
+        "americanOdds": -295,
+        "modelPct": 66,
+        "impliedPct": 74.7,
+        "edgePct": -8.7,
+        "evPer100": -11.6,
+        "netEvPer100": -13.6,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Negative EV",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "valueGrade": "No direction",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Karen Khachanov",
+          "confidence": 87,
+          "modelPct": 66,
+          "label": "Strong set-win path",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Jesper de Jong",
+          "confidence": 62,
+          "modelPct": 34,
+          "label": "Needs early hold pressure",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "marketData": {
+      "source": "FanDuel Sportsbook",
+      "sourceDetail": "FanDuel Sportsbook browser scrape",
+      "capturedAt": "2026-05-29T05:09:26.000Z",
+      "players": [
+        {
+          "name": "Karen Khachanov",
+          "odds": -295,
+          "americanLabel": "-295",
+          "impliedPct": 74.7,
+          "decimalOdds": 1.339,
+          "modelPct": 66,
+          "edgePct": -8.7,
+          "priceBand": "Low-payout favorite",
+          "grossProfitPct": 33.9,
+          "grossPayoutMultiple": 1.339,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 33.9
+        },
+        {
+          "name": "Jesper de Jong",
+          "odds": 235,
+          "americanLabel": "+235",
+          "impliedPct": 29.9,
+          "decimalOdds": 3.35,
+          "modelPct": 34,
+          "edgePct": 4.1,
+          "priceBand": "Underdog",
+          "grossProfitPct": 235,
+          "grossPayoutMultiple": 3.35,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 235
+        }
+      ],
+      "desk": {
+        "name": "Karen Khachanov",
+        "odds": -295,
+        "americanLabel": "-295",
+        "impliedPct": 74.7,
+        "decimalOdds": 1.339,
+        "modelPct": 66,
+        "edgePct": -8.7,
+        "priceBand": "Low-payout favorite",
+        "grossProfitPct": 33.9,
+        "grossPayoutMultiple": 1.339,
+        "centsAtRisk": 100,
+        "centsProfitIfWin": 33.9
+      },
+      "spread": null,
+      "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+      "spreadValue": "No primary game spread captured",
+      "totalValue": "No total captured",
+      "spreadLean": "No spread line",
+      "totalLean": "No total line",
+      "mlValue": "Karen Khachanov -295 / Jesper de Jong +235",
+      "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+      "noVigNote": "Model 66% vs FanDuel implied 74.7% (-8.7 pts)."
+    },
+    "h2hUrl": "https://tennistonic.com/head-to-head-compare/Karen-Khachanov-Vs-Jesper-de-Jong/",
+    "players": [
+      {
+        "name": "Karen Khachanov",
+        "ranking": {
+          "name": "Karen Khachanov",
+          "rank": 15,
+          "points": 2320,
+          "age": 30,
+          "country": "Russia",
+          "tour": "ATP",
+          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/2367/karen-khachanov",
+          "asOf": "2026-05-29"
+        },
+        "qualityName": "Karen Khachanov",
+        "profile": "Live rank #15 | Russia | age 30 | 2026 clay 7-5, 58% | adj form 90 | hold 82%",
+        "modelPct": 66,
+        "weakness": {
+          "name": "Karen Khachanov",
+          "serviceHoldPct": 82,
+          "firstServeWonPct": 71,
+          "secondServeWonPct": 51,
+          "firstServePct": 66,
+          "avgAces": 5.6,
+          "avgDoubleFaults": 1,
+          "avgWinners": 27,
+          "avgUnforcedErrors": 32.4,
+          "avgBreakPointsFaced": 9,
+          "returnPointsWonPct": 39,
+          "servicePointsWonPct": 64,
+          "weakServeMatches": 1,
+          "pressureMatches": 7,
+          "matchesWithStats": 7,
+          "weaknessScore": 12,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "faces too many break points (9.0 avg)"
+          ],
+          "strengths": [
+            "protects serve well (82% hold)",
+            "wins enough first-serve points (71%)"
+          ],
+          "gameFlowRead": "Karen Khachanov can drop points quickly through faces too many break points (9.0 avg)."
+        }
+      },
+      {
+        "name": "Jesper de Jong",
+        "ranking": {
+          "name": "Jesper de Jong",
+          "rank": 106,
+          "points": 580,
+          "age": 25,
+          "country": "Netherlands",
+          "tour": "ATP",
+          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/3897/jesper-de-jong",
+          "asOf": "2026-05-29"
+        },
+        "qualityName": "Jesper De Jong",
+        "profile": "Live rank #106 | Netherlands | age 25 | 2026 clay 13-9, 59% | adj form 84 | hold 75%",
+        "modelPct": 34,
+        "weakness": {
+          "name": "Jesper de Jong",
+          "serviceHoldPct": 75,
+          "firstServeWonPct": 67,
+          "secondServeWonPct": 51,
+          "firstServePct": 62,
+          "avgAces": 7,
+          "avgDoubleFaults": 3.5,
+          "avgWinners": 32,
+          "avgUnforcedErrors": 30.7,
+          "avgBreakPointsFaced": 9.8,
+          "returnPointsWonPct": 38,
+          "servicePointsWonPct": 61,
+          "weakServeMatches": 1,
+          "pressureMatches": 6,
+          "matchesWithStats": 6,
+          "weaknessScore": 12,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "faces too many break points (9.8 avg)",
+            "limited return pressure (38% return points won)"
+          ],
+          "strengths": [],
+          "gameFlowRead": "Jesper de Jong can drop points quickly through faces too many break points (9.8 avg) and limited return pressure (38% return points won)."
         }
       }
     ]
@@ -2937,8 +3209,8 @@ const rawTennisGames = [
     "eventId": "175537",
     "tour": "WTA",
     "title": "Elina Svitolina vs Tamara Korpatsch",
-    "start": "5:30 AM",
-    "startMinutes": 330,
+    "start": "7:35 AM",
+    "startMinutes": 455,
     "court": "Court Suzanne-Lenglen",
     "round": "Round 3",
     "pickName": "Elina Svitolina",
@@ -3144,17 +3416,16 @@ const rawTennisGames = [
         "ranking": {
           "name": "Elina Svitolina",
           "rank": 7,
-          "points": 3955,
-          "age": 31.7,
-          "country": "UKR",
+          "points": 4315,
+          "age": 31,
+          "country": "Ukraine",
           "tour": "WTA",
-          "source": "https://live-tennis.eu/en/wta-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/wta-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
+          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/1797/elina-svitolina",
+          "asOf": "2026-05-29"
         },
         "qualityName": "Elina Svitolina",
-        "profile": "Live rank #7 | UKR | age 31.7 | 2026 clay 11-2, 85% | adj form 110 | hold 75%",
+        "profile": "Live rank #7 | Ukraine | age 31 | 2026 clay 11-2, 85% | adj form 110 | hold 75%",
         "modelPct": 69,
         "weakness": {
           "name": "Elina Svitolina",
@@ -3188,18 +3459,17 @@ const rawTennisGames = [
         "name": "Tamara Korpatsch",
         "ranking": {
           "name": "Tamara Korpatsch",
-          "rank": 85,
-          "points": 859,
+          "rank": 95,
+          "points": 829,
           "age": 31,
-          "country": "GER",
+          "country": "Germany",
           "tour": "WTA",
-          "source": "https://live-tennis.eu/en/wta-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/wta-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
+          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/3040/tamara-korpatsch",
+          "asOf": "2026-05-29"
         },
         "qualityName": "Tamara Korpatsch",
-        "profile": "Live rank #85 | GER | age 31 | 2026 clay 15-7, 68% | adj form 84 | hold 63%",
+        "profile": "Live rank #95 | Germany | age 31 | 2026 clay 15-7, 68% | adj form 84 | hold 63%",
         "modelPct": 31,
         "weakness": {
           "name": "Tamara Korpatsch",
@@ -3233,311 +3503,17 @@ const rawTennisGames = [
     ]
   },
   {
-    "id": "rg-m-karen-khachanov-jesper-de-jong-2026-05-29",
-    "eventId": "175753",
+    "id": "rg-m-alex-de-minaur-jakub-mensik-2026-05-29",
+    "eventId": "175709",
     "tour": "ATP",
-    "title": "Karen Khachanov vs Jesper de Jong",
-    "start": "5:30 AM",
-    "startMinutes": 330,
-    "court": "Court 14",
+    "title": "Alex de Minaur vs Jakub Mensik",
+    "start": "8:50 AM",
+    "startMinutes": 530,
+    "court": "Court Simonne-Mathieu",
     "round": "Round 3",
-    "pickName": "Karen Khachanov",
-    "confidence": 66,
-    "volatility": 34,
-    "tags": [
-      "Clay",
-      "Roland Garros",
-      "ATP",
-      "Lean",
-      "No blind bet",
-      "Men more stable",
-      "Controlled volatility"
-    ],
-    "reason": "Karen Khachanov has the recent service-hold edge 82% to 75%. Karen Khachanov grades 6 points better on opponent-adjusted recent form. Lean, not a chase.",
-    "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets.",
-    "weaknessEdge": {
-      "edgeType": "No clear weakness edge",
-      "target": "Both sides",
-      "scoreGap": 0,
-      "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
-      "liveTrigger": "Wait for a visible service-pressure split before entering.",
-      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
-      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
-      "pick": {
-        "name": "Karen Khachanov",
-        "serviceHoldPct": 82,
-        "firstServeWonPct": 71,
-        "secondServeWonPct": 51,
-        "firstServePct": 66,
-        "avgAces": 5.6,
-        "avgDoubleFaults": 1,
-        "avgWinners": 27,
-        "avgUnforcedErrors": 32.4,
-        "avgBreakPointsFaced": 9,
-        "returnPointsWonPct": 39,
-        "servicePointsWonPct": 64,
-        "weakServeMatches": 1,
-        "pressureMatches": 7,
-        "matchesWithStats": 7,
-        "weaknessScore": 12,
-        "firstGameComfort": "Comfortable enough if first serve lands",
-        "liabilities": [
-          "faces too many break points (9.0 avg)"
-        ],
-        "strengths": [
-          "protects serve well (82% hold)",
-          "wins enough first-serve points (71%)"
-        ],
-        "gameFlowRead": "Karen Khachanov can drop points quickly through faces too many break points (9.0 avg)."
-      },
-      "opponent": {
-        "name": "Jesper de Jong",
-        "serviceHoldPct": 75,
-        "firstServeWonPct": 67,
-        "secondServeWonPct": 51,
-        "firstServePct": 62,
-        "avgAces": 7,
-        "avgDoubleFaults": 3.5,
-        "avgWinners": 32,
-        "avgUnforcedErrors": 30.7,
-        "avgBreakPointsFaced": 9.8,
-        "returnPointsWonPct": 38,
-        "servicePointsWonPct": 61,
-        "weakServeMatches": 1,
-        "pressureMatches": 6,
-        "matchesWithStats": 6,
-        "weaknessScore": 12,
-        "firstGameComfort": "Comfortable enough if first serve lands",
-        "liabilities": [
-          "faces too many break points (9.8 avg)",
-          "limited return pressure (38% return points won)"
-        ],
-        "strengths": [],
-        "gameFlowRead": "Jesper de Jong can drop points quickly through faces too many break points (9.8 avg) and limited return pressure (38% return points won)."
-      }
-    },
-    "setWinProjections": [
-      {
-        "name": "Karen Khachanov",
-        "confidence": 87,
-        "modelPct": 66,
-        "label": "Strong set-win path"
-      },
-      {
-        "name": "Jesper de Jong",
-        "confidence": 62,
-        "modelPct": 34,
-        "label": "Needs early hold pressure"
-      }
-    ],
-    "valueBoard": {
-      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
-      "ml": {
-        "marketType": "ML",
-        "selection": "Karen Khachanov",
-        "americanOdds": -295,
-        "modelPct": 66,
-        "impliedPct": 74.7,
-        "edgePct": -8.7,
-        "evPer100": -11.6,
-        "netEvPer100": -13.6,
-        "feePer100": 2,
-        "valueIssue": "Favorite price needs better proof",
-        "valueGrade": "Negative EV",
-        "betGrade": false
-      },
-      "spread": null,
-      "total": {
-        "marketType": "Total",
-        "selection": "No bet",
-        "valueGrade": "No direction",
-        "betGrade": false
-      },
-      "setWin": [
-        {
-          "name": "Karen Khachanov",
-          "confidence": 87,
-          "modelPct": 66,
-          "label": "Strong set-win path",
-          "marketType": "Win a set",
-          "valueGrade": "Needs posted price",
-          "betGrade": false
-        },
-        {
-          "name": "Jesper de Jong",
-          "confidence": 62,
-          "modelPct": 34,
-          "label": "Needs early hold pressure",
-          "marketType": "Win a set",
-          "valueGrade": "Needs posted price",
-          "betGrade": false
-        }
-      ]
-    },
-    "marketData": {
-      "source": "FanDuel Sportsbook",
-      "sourceDetail": "FanDuel Sportsbook browser scrape",
-      "capturedAt": "2026-05-29T05:09:26.000Z",
-      "players": [
-        {
-          "name": "Karen Khachanov",
-          "odds": -295,
-          "americanLabel": "-295",
-          "impliedPct": 74.7,
-          "decimalOdds": 1.339,
-          "modelPct": 66,
-          "edgePct": -8.7,
-          "priceBand": "Low-payout favorite",
-          "grossProfitPct": 33.9,
-          "grossPayoutMultiple": 1.339,
-          "centsAtRisk": 100,
-          "centsProfitIfWin": 33.9
-        },
-        {
-          "name": "Jesper de Jong",
-          "odds": 235,
-          "americanLabel": "+235",
-          "impliedPct": 29.9,
-          "decimalOdds": 3.35,
-          "modelPct": 34,
-          "edgePct": 4.1,
-          "priceBand": "Underdog",
-          "grossProfitPct": 235,
-          "grossPayoutMultiple": 3.35,
-          "centsAtRisk": 100,
-          "centsProfitIfWin": 235
-        }
-      ],
-      "desk": {
-        "name": "Karen Khachanov",
-        "odds": -295,
-        "americanLabel": "-295",
-        "impliedPct": 74.7,
-        "decimalOdds": 1.339,
-        "modelPct": 66,
-        "edgePct": -8.7,
-        "priceBand": "Low-payout favorite",
-        "grossProfitPct": 33.9,
-        "grossPayoutMultiple": 1.339,
-        "centsAtRisk": 100,
-        "centsProfitIfWin": 33.9
-      },
-      "spread": null,
-      "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
-      "spreadValue": "No primary game spread captured",
-      "totalValue": "No total captured",
-      "spreadLean": "No spread line",
-      "totalLean": "No total line",
-      "mlValue": "Karen Khachanov -295 / Jesper de Jong +235",
-      "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
-      "noVigNote": "Model 66% vs FanDuel implied 74.7% (-8.7 pts)."
-    },
-    "h2hUrl": "https://tennistonic.com/head-to-head-compare/Karen-Khachanov-Vs-Jesper-de-Jong/",
-    "players": [
-      {
-        "name": "Karen Khachanov",
-        "ranking": {
-          "name": "Karen Khachanov",
-          "rank": 17,
-          "points": 2270,
-          "age": 30,
-          "country": "RUS",
-          "tour": "ATP",
-          "source": "https://live-tennis.eu/en/atp-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/atp-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/atp-live-ranking browser snapshot"
-        },
-        "qualityName": "Karen Khachanov",
-        "profile": "Live rank #17 | RUS | age 30 | 2026 clay 7-5, 58% | adj form 90 | hold 82%",
-        "modelPct": 66,
-        "weakness": {
-          "name": "Karen Khachanov",
-          "serviceHoldPct": 82,
-          "firstServeWonPct": 71,
-          "secondServeWonPct": 51,
-          "firstServePct": 66,
-          "avgAces": 5.6,
-          "avgDoubleFaults": 1,
-          "avgWinners": 27,
-          "avgUnforcedErrors": 32.4,
-          "avgBreakPointsFaced": 9,
-          "returnPointsWonPct": 39,
-          "servicePointsWonPct": 64,
-          "weakServeMatches": 1,
-          "pressureMatches": 7,
-          "matchesWithStats": 7,
-          "weaknessScore": 12,
-          "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [
-            "faces too many break points (9.0 avg)"
-          ],
-          "strengths": [
-            "protects serve well (82% hold)",
-            "wins enough first-serve points (71%)"
-          ],
-          "gameFlowRead": "Karen Khachanov can drop points quickly through faces too many break points (9.0 avg)."
-        }
-      },
-      {
-        "name": "Jesper de Jong",
-        "ranking": {
-          "name": "Jesper de Jong",
-          "rank": 102,
-          "points": 596,
-          "age": 25.9,
-          "country": "NED",
-          "tour": "ATP",
-          "source": "https://live-tennis.eu/en/atp-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/atp-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/atp-live-ranking browser snapshot"
-        },
-        "qualityName": "Jesper De Jong",
-        "profile": "Live rank #102 | NED | age 25.9 | 2026 clay 13-9, 59% | adj form 84 | hold 75%",
-        "modelPct": 34,
-        "weakness": {
-          "name": "Jesper de Jong",
-          "serviceHoldPct": 75,
-          "firstServeWonPct": 67,
-          "secondServeWonPct": 51,
-          "firstServePct": 62,
-          "avgAces": 7,
-          "avgDoubleFaults": 3.5,
-          "avgWinners": 32,
-          "avgUnforcedErrors": 30.7,
-          "avgBreakPointsFaced": 9.8,
-          "returnPointsWonPct": 38,
-          "servicePointsWonPct": 61,
-          "weakServeMatches": 1,
-          "pressureMatches": 6,
-          "matchesWithStats": 6,
-          "weaknessScore": 12,
-          "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [
-            "faces too many break points (9.8 avg)",
-            "limited return pressure (38% return points won)"
-          ],
-          "strengths": [],
-          "gameFlowRead": "Jesper de Jong can drop points quickly through faces too many break points (9.8 avg) and limited return pressure (38% return points won)."
-        }
-      }
-    ]
-  },
-  {
-    "id": "rg-m-joao-fonseca-novak-djokovic-2026-05-29",
-    "eventId": "175730",
-    "tour": "ATP",
-    "title": "Joao Fonseca vs Novak Djokovic",
-    "start": "6:30 AM",
-    "startMinutes": 390,
-    "court": "",
-    "round": "Round 3",
-    "pickName": "Novak Djokovic",
-    "confidence": 60,
-    "volatility": 40,
+    "pickName": "Alex de Minaur",
+    "confidence": 55,
+    "volatility": 45,
     "tags": [
       "Clay",
       "Roland Garros",
@@ -3547,104 +3523,100 @@ const rawTennisGames = [
       "Men more stable",
       "Controlled volatility"
     ],
-    "reason": "Recent service hold is close: Novak Djokovic 85%, Joao Fonseca 87%. Novak Djokovic grades 13 points better on opponent-adjusted recent form. Lean, not a chase.",
-    "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets.",
+    "reason": "Jakub Mensik has the recent service-hold edge 83% to 72%, so Alex de Minaur needs the rank/form edge to show up on return games. Jakub Mensik grades 8 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Weakness warning",
-      "target": "Novak Djokovic",
-      "scoreGap": -11,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": -4,
       "attackingSide": null,
-      "vulnerableSide": "Novak Djokovic",
-      "gameFlow": "Novak Djokovic is the model side, but the fragile profile is on our pick: double-fault pressure (4.2 avg). Avoid laying a bad price until early holds are confirmed.",
-      "liveTrigger": "Do not upgrade Novak Djokovic unless they hold cleanly in the first service game and keep double faults down.",
+      "vulnerableSide": null,
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
       "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
       "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
-        "name": "Novak Djokovic",
-        "serviceHoldPct": 85,
-        "firstServeWonPct": 76,
-        "secondServeWonPct": 56,
-        "firstServePct": 67,
-        "avgAces": 6.6,
-        "avgDoubleFaults": 4.2,
-        "avgWinners": 33.4,
-        "avgUnforcedErrors": 27.4,
-        "avgBreakPointsFaced": 5.4,
-        "returnPointsWonPct": 38,
-        "servicePointsWonPct": 70,
+        "name": "Alex de Minaur",
+        "serviceHoldPct": 72,
+        "firstServeWonPct": 65,
+        "secondServeWonPct": 52,
+        "firstServePct": 57,
+        "avgAces": 2,
+        "avgDoubleFaults": 3,
+        "avgWinners": 19.3,
+        "avgUnforcedErrors": 33.8,
+        "avgBreakPointsFaced": 11,
+        "returnPointsWonPct": 42,
+        "servicePointsWonPct": 60,
         "weakServeMatches": 2,
-        "pressureMatches": 8,
-        "matchesWithStats": 5,
-        "weaknessScore": 16,
+        "pressureMatches": 5,
+        "matchesWithStats": 7,
+        "weaknessScore": 17,
         "firstGameComfort": "Needs early holds confirmed",
         "liabilities": [
-          "double-fault pressure (4.2 avg)"
+          "negative winner/error balance (19.3 winners, 33.8 unforced)",
+          "faces too many break points (11.0 avg)"
         ],
-        "strengths": [
-          "protects serve well (85% hold)",
-          "wins enough first-serve points (76%)",
-          "second serve holds up (56%)",
-          "positive winner/error balance (33.4 winners, 27.4 unforced)"
-        ],
-        "gameFlowRead": "Novak Djokovic can drop points quickly through double-fault pressure (4.2 avg)."
+        "strengths": [],
+        "gameFlowRead": "Alex de Minaur can drop points quickly through negative winner/error balance (19.3 winners, 33.8 unforced) and faces too many break points (11.0 avg)."
       },
       "opponent": {
-        "name": "Joao Fonseca",
-        "serviceHoldPct": 87,
-        "firstServeWonPct": 71,
-        "secondServeWonPct": 62,
-        "firstServePct": 66,
-        "avgAces": 3.7,
-        "avgDoubleFaults": 1.1,
-        "avgWinners": 25.3,
-        "avgUnforcedErrors": 24,
-        "avgBreakPointsFaced": 6,
-        "returnPointsWonPct": 37,
-        "servicePointsWonPct": 68,
-        "weakServeMatches": 0,
+        "name": "Jakub Mensik",
+        "serviceHoldPct": 83,
+        "firstServeWonPct": 78,
+        "secondServeWonPct": 51,
+        "firstServePct": 58,
+        "avgAces": 7.6,
+        "avgDoubleFaults": 3.5,
+        "avgWinners": 28.7,
+        "avgUnforcedErrors": 31.6,
+        "avgBreakPointsFaced": 5.8,
+        "returnPointsWonPct": 35,
+        "servicePointsWonPct": 66,
+        "weakServeMatches": 3,
         "pressureMatches": 6,
         "matchesWithStats": 8,
-        "weaknessScore": 5,
+        "weaknessScore": 13,
         "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "limited return pressure (37% return points won)"
+          "3 recent matches with serve instability",
+          "limited return pressure (35% return points won)"
         ],
         "strengths": [
-          "protects serve well (87% hold)",
-          "wins enough first-serve points (71%)",
-          "second serve holds up (62%)"
+          "protects serve well (83% hold)",
+          "wins enough first-serve points (78%)"
         ],
-        "gameFlowRead": "Joao Fonseca can drop points quickly through limited return pressure (37% return points won)."
+        "gameFlowRead": "Jakub Mensik can drop points quickly through 3 recent matches with serve instability and limited return pressure (35% return points won)."
       }
     },
     "setWinProjections": [
       {
-        "name": "Joao Fonseca",
-        "confidence": 69,
-        "modelPct": 40,
-        "label": "Live to win a set"
+        "name": "Alex de Minaur",
+        "confidence": 83,
+        "modelPct": 55,
+        "label": "Strong set-win path"
       },
       {
-        "name": "Novak Djokovic",
-        "confidence": 85,
-        "modelPct": 60,
-        "label": "Strong set-win path"
+        "name": "Jakub Mensik",
+        "confidence": 73,
+        "modelPct": 45,
+        "label": "Live to win a set"
       }
     ],
     "valueBoard": {
       "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
       "ml": {
         "marketType": "ML",
-        "selection": "Novak Djokovic",
-        "americanOdds": -220,
-        "modelPct": 60,
-        "impliedPct": 68.8,
-        "edgePct": -8.8,
-        "evPer100": -12.7,
-        "netEvPer100": -14.7,
+        "selection": "Alex de Minaur",
+        "americanOdds": -430,
+        "modelPct": 55,
+        "impliedPct": 81.1,
+        "edgePct": -26.1,
+        "evPer100": -32.2,
+        "netEvPer100": -34.2,
         "feePer100": 2,
-        "valueIssue": "Favorite price needs better proof",
-        "valueGrade": "Negative EV",
+        "valueIssue": "Favorite tax trap",
+        "valueGrade": "Favorite tax trap",
         "betGrade": false
       },
       "spread": null,
@@ -3656,19 +3628,19 @@ const rawTennisGames = [
       },
       "setWin": [
         {
-          "name": "Joao Fonseca",
-          "confidence": 69,
-          "modelPct": 40,
-          "label": "Live to win a set",
+          "name": "Alex de Minaur",
+          "confidence": 83,
+          "modelPct": 55,
+          "label": "Strong set-win path",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
           "betGrade": false
         },
         {
-          "name": "Novak Djokovic",
-          "confidence": 85,
-          "modelPct": 60,
-          "label": "Strong set-win path",
+          "name": "Jakub Mensik",
+          "confidence": 73,
+          "modelPct": 45,
+          "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
           "betGrade": false
@@ -3681,151 +3653,145 @@ const rawTennisGames = [
       "capturedAt": "2026-05-29T05:09:26.000Z",
       "players": [
         {
-          "name": "Joao Fonseca",
-          "odds": 180,
-          "americanLabel": "+180",
-          "impliedPct": 35.7,
-          "decimalOdds": 2.8,
-          "modelPct": 40,
-          "edgePct": 4.3,
-          "priceBand": "Underdog",
-          "grossProfitPct": 180,
-          "grossPayoutMultiple": 2.8,
+          "name": "Alex de Minaur",
+          "odds": -430,
+          "americanLabel": "-430",
+          "impliedPct": 81.1,
+          "decimalOdds": 1.233,
+          "modelPct": 55,
+          "edgePct": -26.1,
+          "priceBand": "Low-payout favorite",
+          "grossProfitPct": 23.3,
+          "grossPayoutMultiple": 1.233,
           "centsAtRisk": 100,
-          "centsProfitIfWin": 180
+          "centsProfitIfWin": 23.3
         },
         {
-          "name": "Novak Djokovic",
-          "odds": -220,
-          "americanLabel": "-220",
-          "impliedPct": 68.8,
-          "decimalOdds": 1.455,
-          "modelPct": 60,
-          "edgePct": -8.8,
-          "priceBand": "Moderate favorite",
-          "grossProfitPct": 45.5,
-          "grossPayoutMultiple": 1.455,
+          "name": "Jakub Mensik",
+          "odds": 330,
+          "americanLabel": "+330",
+          "impliedPct": 23.3,
+          "decimalOdds": 4.3,
+          "modelPct": 45,
+          "edgePct": 21.7,
+          "priceBand": "Underdog",
+          "grossProfitPct": 330,
+          "grossPayoutMultiple": 4.3,
           "centsAtRisk": 100,
-          "centsProfitIfWin": 45.5
+          "centsProfitIfWin": 330
         }
       ],
       "desk": {
-        "name": "Novak Djokovic",
-        "odds": -220,
-        "americanLabel": "-220",
-        "impliedPct": 68.8,
-        "decimalOdds": 1.455,
-        "modelPct": 60,
-        "edgePct": -8.8,
-        "priceBand": "Moderate favorite",
-        "grossProfitPct": 45.5,
-        "grossPayoutMultiple": 1.455,
+        "name": "Alex de Minaur",
+        "odds": -430,
+        "americanLabel": "-430",
+        "impliedPct": 81.1,
+        "decimalOdds": 1.233,
+        "modelPct": 55,
+        "edgePct": -26.1,
+        "priceBand": "Low-payout favorite",
+        "grossProfitPct": 23.3,
+        "grossPayoutMultiple": 1.233,
         "centsAtRisk": 100,
-        "centsProfitIfWin": 45.5
+        "centsProfitIfWin": 23.3
       },
       "spread": null,
-      "priceAction": "FanDuel price is richer than the model; pass ML unless live state improves.",
+      "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
       "spreadValue": "No primary game spread captured",
       "totalValue": "No total captured",
       "spreadLean": "No spread line",
       "totalLean": "No total line",
-      "mlValue": "Joao Fonseca +180 / Novak Djokovic -220",
-      "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. FanDuel price is richer than the model; pass ML unless live state improves.",
-      "noVigNote": "Model 60% vs FanDuel implied 68.8% (-8.8 pts)."
+      "mlValue": "Alex de Minaur -430 / Jakub Mensik +330",
+      "marketNote": "FanDuel ML, game handicap, and total captured from sportsbook page. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+      "noVigNote": "Model 55% vs FanDuel implied 81.1% (-26.1 pts)."
     },
-    "h2hUrl": "https://tennistonic.com/head-to-head-compare/Joao-Fonseca-Vs-Novak-Djokovic/",
+    "h2hUrl": "https://tennistonic.com/head-to-head-compare/Alex-de-Minaur-Vs-Jakub-Mensik/",
     "players": [
       {
-        "name": "Joao Fonseca",
+        "name": "Alex de Minaur",
         "ranking": {
-          "name": "João Fonseca",
-          "rank": 30,
-          "points": 1385,
-          "age": 19.7,
-          "country": "BRA",
+          "name": "Alex de Minaur",
+          "rank": 7,
+          "points": 3855,
+          "age": 27,
+          "country": "Australia",
           "tour": "ATP",
-          "source": "https://live-tennis.eu/en/atp-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/atp-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/atp-live-ranking browser snapshot"
+          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/2651/alex-de-minaur",
+          "asOf": "2026-05-29"
         },
-        "qualityName": "Joao Fonseca",
-        "profile": "Live rank #30 | BRA | age 19.7 | 2026 clay 8-6, 57% | adj form 71 | hold 87%",
-        "modelPct": 40,
+        "qualityName": "Alex De Minaur",
+        "profile": "Live rank #7 | Australia | age 27 | 2026 clay 7-5, 58% | adj form 66 | hold 72%",
+        "modelPct": 55,
         "weakness": {
-          "name": "Joao Fonseca",
-          "serviceHoldPct": 87,
-          "firstServeWonPct": 71,
-          "secondServeWonPct": 62,
-          "firstServePct": 66,
-          "avgAces": 3.7,
-          "avgDoubleFaults": 1.1,
-          "avgWinners": 25.3,
-          "avgUnforcedErrors": 24,
-          "avgBreakPointsFaced": 6,
-          "returnPointsWonPct": 37,
-          "servicePointsWonPct": 68,
-          "weakServeMatches": 0,
-          "pressureMatches": 6,
-          "matchesWithStats": 8,
-          "weaknessScore": 5,
-          "firstGameComfort": "Comfortable enough if first serve lands",
+          "name": "Alex de Minaur",
+          "serviceHoldPct": 72,
+          "firstServeWonPct": 65,
+          "secondServeWonPct": 52,
+          "firstServePct": 57,
+          "avgAces": 2,
+          "avgDoubleFaults": 3,
+          "avgWinners": 19.3,
+          "avgUnforcedErrors": 33.8,
+          "avgBreakPointsFaced": 11,
+          "returnPointsWonPct": 42,
+          "servicePointsWonPct": 60,
+          "weakServeMatches": 2,
+          "pressureMatches": 5,
+          "matchesWithStats": 7,
+          "weaknessScore": 17,
+          "firstGameComfort": "Needs early holds confirmed",
           "liabilities": [
-            "limited return pressure (37% return points won)"
+            "negative winner/error balance (19.3 winners, 33.8 unforced)",
+            "faces too many break points (11.0 avg)"
           ],
-          "strengths": [
-            "protects serve well (87% hold)",
-            "wins enough first-serve points (71%)",
-            "second serve holds up (62%)"
-          ],
-          "gameFlowRead": "Joao Fonseca can drop points quickly through limited return pressure (37% return points won)."
+          "strengths": [],
+          "gameFlowRead": "Alex de Minaur can drop points quickly through negative winner/error balance (19.3 winners, 33.8 unforced) and faces too many break points (11.0 avg)."
         }
       },
       {
-        "name": "Novak Djokovic",
+        "name": "Jakub Mensik",
         "ranking": {
-          "name": "Novak Djoković",
-          "rank": 9,
-          "points": 3710,
-          "age": 39,
-          "country": "SRB",
+          "name": "Jakub Mensik",
+          "rank": 27,
+          "points": 1550,
+          "age": 20,
+          "country": "Czechia",
           "tour": "ATP",
-          "source": "https://live-tennis.eu/en/atp-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/atp-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/atp-live-ranking browser snapshot"
+          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/10319/jakub-mensik",
+          "asOf": "2026-05-29"
         },
-        "qualityName": "Novak Djokovic",
-        "profile": "Live rank #9 | SRB | age 39 | 2026 clay 2-1, 67% | adj form 84 | hold 85%",
-        "modelPct": 60,
+        "qualityName": "Jakub Mensik",
+        "profile": "Live rank #27 | Czechia | age 20 | 2026 clay 5-3, 63% | adj form 75 | hold 83%",
+        "modelPct": 45,
         "weakness": {
-          "name": "Novak Djokovic",
-          "serviceHoldPct": 85,
-          "firstServeWonPct": 76,
-          "secondServeWonPct": 56,
-          "firstServePct": 67,
-          "avgAces": 6.6,
-          "avgDoubleFaults": 4.2,
-          "avgWinners": 33.4,
-          "avgUnforcedErrors": 27.4,
-          "avgBreakPointsFaced": 5.4,
-          "returnPointsWonPct": 38,
-          "servicePointsWonPct": 70,
-          "weakServeMatches": 2,
-          "pressureMatches": 8,
-          "matchesWithStats": 5,
-          "weaknessScore": 16,
-          "firstGameComfort": "Needs early holds confirmed",
+          "name": "Jakub Mensik",
+          "serviceHoldPct": 83,
+          "firstServeWonPct": 78,
+          "secondServeWonPct": 51,
+          "firstServePct": 58,
+          "avgAces": 7.6,
+          "avgDoubleFaults": 3.5,
+          "avgWinners": 28.7,
+          "avgUnforcedErrors": 31.6,
+          "avgBreakPointsFaced": 5.8,
+          "returnPointsWonPct": 35,
+          "servicePointsWonPct": 66,
+          "weakServeMatches": 3,
+          "pressureMatches": 6,
+          "matchesWithStats": 8,
+          "weaknessScore": 13,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "double-fault pressure (4.2 avg)"
+            "3 recent matches with serve instability",
+            "limited return pressure (35% return points won)"
           ],
           "strengths": [
-            "protects serve well (85% hold)",
-            "wins enough first-serve points (76%)",
-            "second serve holds up (56%)",
-            "positive winner/error balance (33.4 winners, 27.4 unforced)"
+            "protects serve well (83% hold)",
+            "wins enough first-serve points (78%)"
           ],
-          "gameFlowRead": "Novak Djokovic can drop points quickly through double-fault pressure (4.2 avg)."
+          "gameFlowRead": "Jakub Mensik can drop points quickly through 3 recent matches with serve instability and limited return pressure (35% return points won)."
         }
       }
     ]
@@ -3835,8 +3801,8 @@ const rawTennisGames = [
     "eventId": "175734",
     "tour": "ATP",
     "title": "Casper Ruud vs Tommy Paul",
-    "start": "7:00 AM",
-    "startMinutes": 420,
+    "start": "9:30 AM",
+    "startMinutes": 570,
     "court": "Court Suzanne-Lenglen",
     "round": "Round 3",
     "pickName": "Casper Ruud",
@@ -4041,16 +4007,15 @@ const rawTennisGames = [
           "name": "Casper Ruud",
           "rank": 16,
           "points": 2275,
-          "age": 27.4,
-          "country": "NOR",
+          "age": 27,
+          "country": "Norway",
           "tour": "ATP",
-          "source": "https://live-tennis.eu/en/atp-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/atp-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/atp-live-ranking browser snapshot"
+          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/2989/casper-ruud",
+          "asOf": "2026-05-29"
         },
         "qualityName": "Casper Ruud",
-        "profile": "Live rank #16 | NOR | age 27.4 | 2026 clay 15-4, 79% | adj form 77 | hold 79%",
+        "profile": "Live rank #16 | Norway | age 27 | 2026 clay 15-4, 79% | adj form 77 | hold 79%",
         "modelPct": 56,
         "weakness": {
           "name": "Casper Ruud",
@@ -4083,18 +4048,17 @@ const rawTennisGames = [
         "name": "Tommy Paul",
         "ranking": {
           "name": "Tommy Paul",
-          "rank": 25,
-          "points": 1595,
+          "rank": 21,
+          "points": 1945,
           "age": 29,
           "country": "USA",
           "tour": "ATP",
-          "source": "https://live-tennis.eu/en/atp-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/atp-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/atp-live-ranking browser snapshot"
+          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/2964/tommy-paul",
+          "asOf": "2026-05-29"
         },
         "qualityName": "Tommy Paul",
-        "profile": "Live rank #25 | USA | age 29 | 2026 clay 12-3, 80% | adj form 90 | hold 79%",
+        "profile": "Live rank #21 | USA | age 29 | 2026 clay 12-3, 80% | adj form 90 | hold 79%",
         "modelPct": 44,
         "weakness": {
           "name": "Tommy Paul",
@@ -4131,8 +4095,8 @@ const rawTennisGames = [
     "eventId": "175547",
     "tour": "WTA",
     "title": "Peyton Stearns vs Belinda Bencic",
-    "start": "7:30 AM",
-    "startMinutes": 450,
+    "start": "11:40 AM",
+    "startMinutes": 700,
     "court": "Court Simonne-Mathieu",
     "round": "Round 3",
     "pickName": "Belinda Bencic",
@@ -4331,18 +4295,17 @@ const rawTennisGames = [
         "name": "Peyton Stearns",
         "ranking": {
           "name": "Peyton Stearns",
-          "rank": 64,
-          "points": 975,
-          "age": 24.6,
+          "rank": 78,
+          "points": 915,
+          "age": 24,
           "country": "USA",
           "tour": "WTA",
-          "source": "https://live-tennis.eu/en/wta-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/wta-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
+          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/5848/peyton-stearns",
+          "asOf": "2026-05-29"
         },
         "qualityName": "Peyton Stearns",
-        "profile": "Live rank #64 | USA | age 24.6 | 2026 clay 6-5, 55% | adj form 61 | hold 70%",
+        "profile": "Live rank #78 | USA | age 24 | 2026 clay 6-5, 55% | adj form 61 | hold 70%",
         "modelPct": 38,
         "weakness": {
           "name": "Peyton Stearns",
@@ -4374,17 +4337,16 @@ const rawTennisGames = [
         "ranking": {
           "name": "Belinda Bencic",
           "rank": 11,
-          "points": 3161,
-          "age": 29.2,
-          "country": "SUI",
+          "points": 3145,
+          "age": 29,
+          "country": "Switzerland",
           "tour": "WTA",
-          "source": "https://live-tennis.eu/en/wta-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/wta-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/wta-live-ranking browser snapshot"
+          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/2183/belinda-bencic",
+          "asOf": "2026-05-29"
         },
         "qualityName": "Belinda Bencic",
-        "profile": "Live rank #11 | SUI | age 29.2 | 2026 clay 7-3, 70% | adj form 72 | hold 73%",
+        "profile": "Live rank #11 | Switzerland | age 29 | 2026 clay 7-3, 70% | adj form 72 | hold 73%",
         "modelPct": 62,
         "weakness": {
           "name": "Belinda Bencic",
@@ -4419,8 +4381,8 @@ const rawTennisGames = [
     "eventId": "175745",
     "tour": "ATP",
     "title": "Quentin Halys vs Alexander Zverev",
-    "start": "11:15 AM",
-    "startMinutes": 675,
+    "start": "12:40 PM",
+    "startMinutes": 760,
     "court": "Court Philippe-Chatrier",
     "round": "Round 3",
     "pickName": "Alexander Zverev",
@@ -4625,18 +4587,17 @@ const rawTennisGames = [
         "name": "Quentin Halys",
         "ranking": {
           "name": "Quentin Halys",
-          "rank": 94,
-          "points": 628,
-          "age": 29.5,
-          "country": "FRA",
+          "rank": 90,
+          "points": 678,
+          "age": 29,
+          "country": "France",
           "tour": "ATP",
-          "source": "https://live-tennis.eu/en/atp-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/atp-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/atp-live-ranking browser snapshot"
+          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/2362/quentin-halys",
+          "asOf": "2026-05-29"
         },
         "qualityName": "Quentin Halys",
-        "profile": "Live rank #94 | FRA | age 29.5 | 2026 clay 6-5, 55% | adj form 82 | hold 86%",
+        "profile": "Live rank #90 | France | age 29 | 2026 clay 6-5, 55% | adj form 82 | hold 86%",
         "modelPct": 25,
         "weakness": {
           "name": "Quentin Halys",
@@ -4672,17 +4633,16 @@ const rawTennisGames = [
         "ranking": {
           "name": "Alexander Zverev",
           "rank": 3,
-          "points": 5355,
-          "age": 29.1,
-          "country": "GER",
+          "points": 5705,
+          "age": 29,
+          "country": "Germany",
           "tour": "ATP",
-          "source": "https://live-tennis.eu/en/atp-live-ranking browser snapshot",
-          "profileUrl": "https://live-tennis.eu/en/atp-live-ranking",
-          "asOf": "2026-05-26",
-          "liveRankSource": "https://live-tennis.eu/en/atp-live-ranking browser snapshot"
+          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/2375/alexander-zverev",
+          "asOf": "2026-05-29"
         },
         "qualityName": "Alexander Zverev",
-        "profile": "Live rank #3 | GER | age 29.1 | 2026 clay 15-4, 79% | adj form 81 | hold 85%",
+        "profile": "Live rank #3 | Germany | age 29 | 2026 clay 15-4, 79% | adj form 81 | hold 85%",
         "modelPct": 75,
         "weakness": {
           "name": "Alexander Zverev",
@@ -4865,7 +4825,7 @@ const buildGame = (raw) => {
 
 const matches = rawTennisGames.map(buildGame)
 
-export const slateMeta = { title: 'Roland Garros May 28 Tennis Desk', date: 'May 29, 2026', isoDate: '2026-05-29', timeZone: 'America/Los_Angeles', subtitle: 'Singles-only Roland Garros Round 2 slate with weakness-edge, game-flow gates, and FanDuel ML/spread/total lines.', notes: ['No doubles included.', 'FanDuel ML, game handicap, and total-games lines are attached where the sportsbook board exposed a May 28 singles event.', 'May 28 uses live rank, clay record, opponent-adjusted recent form, and Flashscore recent service rows where joined.'] }
+export const slateMeta = { title: 'May 29, 2026 Tennis Desk', date: 'May 29, 2026', isoDate: '2026-05-29', timeZone: 'America/Los_Angeles', subtitle: 'Singles-only Roland Garros main-draw slate with weakness-edge, game-flow gates, and sportsbook/market lines where captured.', notes: ['No doubles included.', 'FanDuel ML, game handicap, and total-games lines are attached where the sportsbook board exposes a matching singles event.', 'May 29, 2026 uses live rank, clay record, opponent-adjusted recent form, and warehouse service rows where joined.'] }
 export const filters = ['All', 'Tennis']
 export const oddsMeta = { provider: 'FanDuel Sportsbook + Tennis warehouse model', snapshot: 'May 29, 2026 Roland Garros desk', note: 'FanDuel lines are stored for priced matches; very expensive favorites are marked as low-payout or pass-first instead of automatic bets.' }
 export const sources = [{ label: 'ESPN tennis scoreboard', url: 'https://www.espn.com/tennis/scoreboard/_/date/20260529' }, { label: 'Live Tennis rankings warehouse', url: 'https://live-tennis.eu/' }, { label: 'FanDuel sportsbook tennis', url: 'https://sportsbook.fanduel.com/tennis' }]

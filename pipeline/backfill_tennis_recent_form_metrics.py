@@ -130,6 +130,47 @@ def metric_rows(row: sqlite3.Row) -> list[dict[str, Any]]:
     return out
 
 
+def fill_missing_player_metric_estimates(conn: sqlite3.Connection, match_id: str, normalized: str) -> int:
+    rows = conn.execute(
+        """
+        select recent_index, metric_key, score
+        from tennis_recent_form_metrics
+        where match_id = ? and normalized_name = ?
+        order by recent_index, metric_key
+        """,
+        (match_id, normalized),
+    ).fetchall()
+    averages: dict[str, float] = {}
+    for metric_key in {row["metric_key"] for row in rows}:
+        values = [float(row["score"]) for row in rows if row["metric_key"] == metric_key and row["score"] is not None]
+        if values:
+            averages[metric_key] = round(sum(values) / len(values), 1)
+
+    updated = 0
+    for row in rows:
+        if row["score"] is not None:
+            continue
+        fallback = averages.get(row["metric_key"])
+        if fallback is None:
+            continue
+        conn.execute(
+            """
+            update tennis_recent_form_metrics
+            set score = ?,
+                estimated = 1,
+                source = 'Player recent exact average fallback',
+                raw_json = json_set(coalesce(raw_json, '{}'), '$.scoreSource', 'Player recent exact average fallback')
+            where match_id = ?
+              and normalized_name = ?
+              and recent_index = ?
+              and metric_key = ?
+            """,
+            (fallback, match_id, normalized, row["recent_index"], row["metric_key"]),
+        )
+        updated += 1
+    return updated
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Backfill tennis_recent_form_metrics from Flashscore recent-link rows.")
     parser.add_argument("--date", required=True)
@@ -148,6 +189,7 @@ def main() -> None:
         ).fetchall()
         touched = set()
         inserted = 0
+        estimated = 0
         for link in links:
             match_id = link["board_match_id"]
             normalized = normalize_name(link["board_player_name"])
@@ -190,8 +232,10 @@ def main() -> None:
                     ),
                 )
                 inserted += 1
+        for match_id, normalized in touched:
+            estimated += fill_missing_player_metric_estimates(conn, match_id, normalized)
         conn.commit()
-        print(json.dumps({"date": args.date, "links": len(links), "players": len(touched), "inserted": inserted}, indent=2))
+        print(json.dumps({"date": args.date, "links": len(links), "players": len(touched), "inserted": inserted, "estimatedFallbacks": estimated}, indent=2))
     finally:
         conn.close()
 

@@ -188,6 +188,24 @@ Current read:
 - `RBI` improved, but it remains the weakest of the three batting-production paths
 - if May 29 settles cleanly, the follow-up should call out whether these same gates held up on the actual slate winners
 
+Relative lift ranking from the first sweep:
+
+- `Runs`
+  - best lift: `+8.4` points over baseline
+  - relative improvement: `+24.1%`
+- `RBIs`
+  - best lift: `+5.8` points over baseline
+  - relative improvement: `+21.4%`
+- `H+R+RBI`
+  - best lift: `+7.5` points over baseline
+  - relative improvement: `+18.2%`
+
+Practical read:
+
+- `runs` currently has the best percentage lift
+- combined `H+R+RBI` still has the strongest usable sample among the batting-production lanes
+- `RBI` improved, but it is still the least stable standalone path
+
 Newest first-inning gate findings:
 
 - `Quiet + clean NRFI` is the best current NRFI keep lane:

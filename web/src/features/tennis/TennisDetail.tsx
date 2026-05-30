@@ -18,6 +18,7 @@ export function TennisDetail(props: TennisDetailProps) {
   const tradePlan = context?.tradePlan
   const weaknessEdge = context?.weaknessEdge
   const marketEconomics = context?.marketEconomics
+  const ensembleValueCase = context?.ensembleValueCase
   const warehouseContext = context?.warehouseContext || context?.sofascoreData
   const clayMatchupData = context?.clayMatchupData
   const opponentQualityData = context?.opponentQualityData
@@ -69,6 +70,51 @@ export function TennisDetail(props: TennisDetailProps) {
   const statWithExpected = (actual: AnyRecord | null | undefined, expectedStats: AnyRecord | null | undefined, expectedKey: string, suffix = '') => {
     if (actual) return statDisplay(actual)
     return expectedStatDisplay(expectedStats, expectedKey, suffix)
+  }
+  const expectedStatsObjectForPlayer = (playerName: string) =>
+    warehouseContext?.players?.find((entry: AnyRecord) => normalizeTennisName(entry.name) === normalizeTennisName(playerName))
+      ?.expectedStats?.stats || null
+  const expectedNumber = (stats: AnyRecord | null | undefined, key: string) => {
+    const value = stats?.[key]
+    return Number.isFinite(Number(value)) ? Number(value) : null
+  }
+  const formatStatNumber = (value: number | null, suffix = '') =>
+    value == null ? 'N/A' : `${formatNumber(value, Math.abs(value) >= 10 ? 1 : 1)}${suffix}`
+  const buildEnsembleEvidenceBullets = () => {
+    if (!ensembleValueCase) return []
+    const existing = Array.isArray(ensembleValueCase.bullets) ? ensembleValueCase.bullets.filter(Boolean) : []
+    if (existing.length) return existing
+    const selectionStats = expectedStatsObjectForPlayer(ensembleValueCase.selection)
+    const opponentStats = expectedStatsObjectForPlayer(ensembleValueCase.opponent)
+    const bullets = []
+    const selectionAces = expectedNumber(selectionStats, 'avgAces')
+    const opponentAces = expectedNumber(opponentStats, 'avgAces')
+    const selectionDfs = expectedNumber(selectionStats, 'avgDoubleFaults')
+    const opponentDfs = expectedNumber(opponentStats, 'avgDoubleFaults')
+    if (selectionAces != null || opponentAces != null || selectionDfs != null || opponentDfs != null) {
+      bullets.push(
+        `RG serve events: ${ensembleValueCase.selection} ${formatStatNumber(selectionAces)} aces / ${formatStatNumber(selectionDfs)} DFs vs ${ensembleValueCase.opponent} ${formatStatNumber(opponentAces)} aces / ${formatStatNumber(opponentDfs)} DFs.`
+      )
+    }
+    const selectionFirst = expectedNumber(selectionStats, 'firstServeWonPct')
+    const opponentFirst = expectedNumber(opponentStats, 'firstServeWonPct')
+    const selectionSecond = expectedNumber(selectionStats, 'secondServeWonPct')
+    const opponentSecond = expectedNumber(opponentStats, 'secondServeWonPct')
+    if (selectionFirst != null || opponentFirst != null || selectionSecond != null || opponentSecond != null) {
+      bullets.push(
+        `Serve points won: ${ensembleValueCase.selection} 1st ${formatStatNumber(selectionFirst, '%')}, 2nd ${formatStatNumber(selectionSecond, '%')} vs ${ensembleValueCase.opponent} 1st ${formatStatNumber(opponentFirst, '%')}, 2nd ${formatStatNumber(opponentSecond, '%')}.`
+      )
+    }
+    const selectionWinners = expectedNumber(selectionStats, 'winners')
+    const opponentWinners = expectedNumber(opponentStats, 'winners')
+    const selectionUnforced = expectedNumber(selectionStats, 'unforcedErrors')
+    const opponentUnforced = expectedNumber(opponentStats, 'unforcedErrors')
+    if (selectionWinners != null || opponentWinners != null || selectionUnforced != null || opponentUnforced != null) {
+      bullets.push(
+        `Winner/error profile: ${ensembleValueCase.selection} ${formatStatNumber(selectionWinners)} winners / ${formatStatNumber(selectionUnforced)} UEs vs ${ensembleValueCase.opponent} ${formatStatNumber(opponentWinners)} winners / ${formatStatNumber(opponentUnforced)} UEs.`
+      )
+    }
+    return bullets
   }
   const normalizeTennisName = (value: string) => {
     const normalized = String(value || '')
@@ -559,6 +605,7 @@ export function TennisDetail(props: TennisDetailProps) {
     : tradePlan
       ? 'No mapped Kalshi contract/history is attached to this match detail yet. Treat this lane as sportsbook context only.'
       : ''
+  const ensembleEvidenceBullets = buildEnsembleEvidenceBullets()
   return (
     <>
       {kalshiTradeCandidate ? (
@@ -629,6 +676,75 @@ export function TennisDetail(props: TennisDetailProps) {
               <span key={`${game.id}-${reason}`}>{reason}</span>
             ))}
           </div>
+        </section>
+      ) : null}
+
+      {ensembleValueCase ? (
+        <section className="detail-panel tennis-ensemble-case-panel">
+          <div className="detail-panel-header">
+            <p className="eyebrow">Ensemble value case</p>
+            <span>{ensembleValueCase.grade || ensembleValueCase.riskGate || 'Model overlay'}</span>
+          </div>
+          <div className="tennis-ensemble-case-layout">
+            <article className="tennis-ensemble-main">
+              <div>
+                <span className="eyebrow">Selection</span>
+                <strong>{ensembleValueCase.selection}</strong>
+                <small>{ensembleValueCase.headline}</small>
+              </div>
+              <p>{ensembleValueCase.useCase}</p>
+            </article>
+            <div className="tennis-ensemble-metrics">
+              <div>
+                <span>Model</span>
+                <strong>{formatPercent(ensembleValueCase.modelProbability, 1)}</strong>
+              </div>
+              <div>
+                <span>Data-only</span>
+                <strong>{formatPercent(ensembleValueCase.dataOnlyProbability, 1)}</strong>
+              </div>
+              <div>
+                <span>Market</span>
+                <strong>{formatPercent(ensembleValueCase.marketProbability, 1)}</strong>
+              </div>
+              <div>
+                <span>Net EV/100</span>
+                <strong>{formatSignedNumber(ensembleValueCase.netEvPer100, 1)}</strong>
+              </div>
+            </div>
+          </div>
+          <div className="tennis-ensemble-odds-row">
+            <span>
+              Book <strong>{formatAmericanOdds(ensembleValueCase.marketOdds)}</strong>
+            </span>
+            <span>
+              Fair <strong>{formatAmericanOdds(ensembleValueCase.fairOdds)}</strong>
+            </span>
+            <span>
+              Gap <strong>{formatSignedNumber(ensembleValueCase.marketDisagreementPct, 1)} pts</strong>
+            </span>
+            <span>{ensembleValueCase.riskGate || 'risk gate pending'}</span>
+          </div>
+          {ensembleEvidenceBullets.length ? (
+            <div className="tennis-ensemble-list-grid">
+              <div>
+                <span className="eyebrow">Why the model sees value</span>
+                <ul className="factor-list compact">
+                  {ensembleEvidenceBullets.map((line: string) => (
+                    <li key={`${game.id}-ensemble-bullet-${line}`}>{line}</li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <span className="eyebrow">What can break it</span>
+                <ul className="factor-list compact">
+                  {(ensembleValueCase.risks || []).map((line: string) => (
+                    <li key={`${game.id}-ensemble-risk-${line}`}>{line}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ) : null}
         </section>
       ) : null}
 
