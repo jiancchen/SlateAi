@@ -13,7 +13,7 @@ from statistics import median
 
 ROOT = Path(__file__).resolve().parents[3]
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
-REPORT_PATH = ROOT / "development-docs" / "mlb-reliever-pitch-window-patterns-053026.md"
+REPORT_PATH = ROOT / "development-docs" / "mlb" / "research" / "mlb-reliever-pitch-window-patterns-053026.md"
 
 
 @dataclass

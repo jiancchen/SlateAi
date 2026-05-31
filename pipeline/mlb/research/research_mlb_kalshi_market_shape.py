@@ -10,7 +10,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[3]
 SLATE_GAMES_DIR = ROOT / "published-data" / "slates"
 KALSHI_JSON = ROOT / "web" / "src" / "lib" / "kalshi-mlb-markets.generated.json"
-OUT_DIR = ROOT / "development-docs"
+OUT_DIR = ROOT / "development-docs" / "mlb" / "research"
 
 
 def parse_args() -> argparse.Namespace:

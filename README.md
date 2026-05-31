@@ -25,8 +25,10 @@ npm run warehouse:restore:hf
   Daily generators, exporters, graders, and warehouse utilities.
 - `data-private/`
   Local warehouse, raw pulls, saved predictions, reports, and JSONL training history.
+- `development-docs/`
+  Sport-specific runbooks, research notes, model notes, and postmortems.
 - `research/`
-  Source registry, follow-ups, tickets, and operator notes.
+  Legacy placeholder only; new sport research belongs under `development-docs/`.
 
 ## What Ships Publicly
 
@@ -44,7 +46,7 @@ The `api/` service is intended for private/local or protected deployment, not di
 - `data-private/raw/`
 - `data-private/warehouse/`
 - `data-private/history/`
-- `research/followups/`
+- `development-docs/`
 - any local notes or training artifacts you do not want exposed
 
 ## Daily Prediction Workflow

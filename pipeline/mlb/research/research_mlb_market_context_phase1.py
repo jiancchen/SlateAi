@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
-DOC_PATH = ROOT / "development-docs" / "mlb-phase1-context-research-052926.md"
+DOC_PATH = ROOT / "development-docs" / "mlb" / "research" / "mlb-phase1-context-research-052926.md"
 
 
 def safe_rate(values: list[int]) -> float | None:

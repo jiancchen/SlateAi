@@ -13,7 +13,7 @@ from typing import Callable
 ROOT = Path(__file__).resolve().parents[3]
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
 HISTORY_DIR = ROOT / "data-private" / "history"
-DEFAULT_OUT = ROOT / "development-docs" / "tier3-overlay-research-052326.md"
+DEFAULT_OUT = ROOT / "development-docs" / "mlb" / "research" / "tier3-overlay-research-052326.md"
 RELIEF_WINDOW = 8
 STARTER_WINDOW = 5
 

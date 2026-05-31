@@ -6,7 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
-REPORT_PATH = ROOT / "development-docs" / "mlb-batter-xops-gates-053026.md"
+REPORT_PATH = ROOT / "development-docs" / "mlb" / "research" / "mlb-batter-xops-gates-053026.md"
 
 
 def pct(numerator: int, denominator: int) -> float:

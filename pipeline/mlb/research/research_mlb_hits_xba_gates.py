@@ -12,7 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
-DEFAULT_OUT = ROOT / "development-docs" / "mlb-hits-xba-gates-052926.md"
+DEFAULT_OUT = ROOT / "development-docs" / "mlb" / "research" / "mlb-hits-xba-gates-052926.md"
 FIT_RE = re.compile(r"fit ([+-]?\d+(?:\.\d+)?)")
 MATCHUP_RE = re.compile(r"([+-]?\d+(?:\.\d+)?) matchup grade")
 

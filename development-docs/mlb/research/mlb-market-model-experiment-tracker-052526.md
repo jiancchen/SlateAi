@@ -17,8 +17,8 @@ Current bar:
 
 Reference report:
 
-- [/Users/jcchen/Documents/New project/development-docs/mlb-market-ml-training-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-market-ml-training-052526.md)
-- [/Users/jcchen/Documents/New project/development-docs/mlb-ml-tech-stack-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-ml-tech-stack-052526.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb/research/mlb-market-ml-training-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/research/mlb-market-ml-training-052526.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb/research/mlb-ml-tech-stack-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/research/mlb-ml-tech-stack-052526.md)
 
 ## Experiment Log
 
@@ -77,7 +77,7 @@ After leakage fixes, the current benchmark is:
 
 Reference files:
 
-- [/Users/jcchen/Documents/New project/development-docs/mlb-market-ml-training-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-market-ml-training-052926.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb/research/mlb-market-ml-training-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/research/mlb-market-ml-training-052926.md)
 - [/Users/jcchen/Documents/New project/data-private/predictions/mlb-market-fitness/2026-05-28-fitness.json](/Users/jcchen/Documents/New%20project/data-private/predictions/mlb-market-fitness/2026-05-28-fitness.json)
 
 |Market|Best model|OOF accuracy|Threshold record|Threshold utility|Promotable|
@@ -97,9 +97,9 @@ Reference files:
 
 Reference files:
 
-- [/Users/jcchen/Documents/New project/development-docs/mlb-market-moneyline-catboost-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-market-moneyline-catboost-052526.md)
-- [/Users/jcchen/Documents/New project/development-docs/mlb-market-moneyline-lightgbm-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-market-moneyline-lightgbm-052526.md)
-- [/Users/jcchen/Documents/New project/development-docs/mlb-market-moneyline-xgboost-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-market-moneyline-xgboost-052526.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb/research/mlb-market-moneyline-catboost-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/research/mlb-market-moneyline-catboost-052526.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb/research/mlb-market-moneyline-lightgbm-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/research/mlb-market-moneyline-lightgbm-052526.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb/research/mlb-market-moneyline-xgboost-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/research/mlb-market-moneyline-xgboost-052526.md)
 
 |Model|Log loss|Brier|OOF accuracy|Threshold record|Threshold utility|Promotable|
 |---|---:|---:|---:|---|---:|---|
@@ -119,7 +119,7 @@ Reference files:
 
 Reference file:
 
-- [/Users/jcchen/Documents/New project/development-docs/mlb-market-totals-candidates-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-market-totals-candidates-052526.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb/research/mlb-market-totals-candidates-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/research/mlb-market-totals-candidates-052526.md)
 
 |Model|Log loss|Brier|OOF accuracy|Promotable winner?|
 |---|---:|---:|---:|---|
@@ -140,8 +140,8 @@ Reference file:
 
 Reference files:
 
-- [/Users/jcchen/Documents/New project/development-docs/mlb-market-moneyline-corpus-favorites-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-market-moneyline-corpus-favorites-052526.md)
-- [/Users/jcchen/Documents/New project/development-docs/mlb-market-moneyline-corpus-dogs-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-market-moneyline-corpus-dogs-052526.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb/research/mlb-market-moneyline-corpus-favorites-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/research/mlb-market-moneyline-corpus-favorites-052526.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb/research/mlb-market-moneyline-corpus-dogs-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/research/mlb-market-moneyline-corpus-dogs-052526.md)
 
 These runs use the recent market-aware pregame corpus rather than the full warehouse side sample, so the split is based on real historical favorite/dog prices.
 
@@ -173,7 +173,7 @@ These runs use the recent market-aware pregame corpus rather than the full wareh
 
 Reference file:
 
-- [/Users/jcchen/Documents/New project/development-docs/mlb-season-warehouse-backfill-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-season-warehouse-backfill-052526.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb/research/mlb-season-warehouse-backfill-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/research/mlb-season-warehouse-backfill-052526.md)
 
 This pass did not introduce a new learner. It fixed the event-history depth problem.
 
@@ -195,7 +195,7 @@ This pass did not introduce a new learner. It fixed the event-history depth prob
 
 Reference file:
 
-- [/Users/jcchen/Documents/New project/development-docs/mlb-market-totals-calibration-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-market-totals-calibration-052526.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb/research/mlb-market-totals-calibration-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/research/mlb-market-totals-calibration-052526.md)
 
 |Model|Log loss|Brier|OOF accuracy|Promotable winner?|
 |---|---:|---:|---:|---|

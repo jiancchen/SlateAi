@@ -13,7 +13,7 @@ from typing import Callable
 ROOT = Path(__file__).resolve().parents[3]
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
 HISTORY_DIR = ROOT / "data-private" / "history"
-DEFAULT_OUT = ROOT / "development-docs" / "first5-state-model-research-052326.md"
+DEFAULT_OUT = ROOT / "development-docs" / "mlb" / "research" / "first5-state-model-research-052326.md"
 
 
 @dataclass

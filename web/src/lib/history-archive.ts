@@ -318,11 +318,11 @@ export const historyArchive: HistoryEntry[] = [
     artifacts: [
       {
         label: 'May 23 postmortem',
-        path: 'development-docs/may23-slate-postmortem-052326.md'
+        path: 'development-docs/mlb/postmortems/may23-slate-postmortem-052326.md'
       },
       {
         label: 'May 23 chaos follow-ups',
-        path: 'development-docs/may23-chaos-followups-052326.md'
+        path: 'development-docs/mlb/postmortems/may23-chaos-followups-052326.md'
       },
       {
         label: 'Stored live slate',
@@ -392,7 +392,7 @@ export const historyArchive: HistoryEntry[] = [
       },
       {
         label: 'Follow-up doc',
-        path: 'research/followups/followup_may_22.md'
+        path: 'development-docs/mlb/postmortems/legacy-followups/followup_may_22.md'
       },
       {
         label: 'Saved HR board',
@@ -472,11 +472,11 @@ export const historyArchive: HistoryEntry[] = [
       },
       {
         label: 'Combined follow-up doc',
-        path: 'research/followups/followup_may_21.md'
+        path: 'development-docs/mlb/postmortems/legacy-followups/followup_may_21.md'
       },
       {
         label: 'Tennis follow-up doc',
-        path: 'research/followups/followup_may_21_tennis.md'
+        path: 'development-docs/tennis/postmortems/followup_may_21_tennis.md'
       },
       {
         label: 'Saved HR board',
@@ -552,7 +552,7 @@ export const historyArchive: HistoryEntry[] = [
       },
       {
         label: 'Follow-up doc',
-        path: 'research/followups/followup_may_20.md'
+        path: 'development-docs/mlb/postmortems/legacy-followups/followup_may_20.md'
       },
       {
         label: 'Saved HR board',
@@ -627,7 +627,7 @@ export const historyArchive: HistoryEntry[] = [
       },
       {
         label: 'Follow-up doc',
-        path: 'research/followups/followup_may_19.md'
+        path: 'development-docs/mlb/postmortems/legacy-followups/followup_may_19.md'
       },
       {
         label: 'Saved HR board',
@@ -705,7 +705,7 @@ export const historyArchive: HistoryEntry[] = [
       },
       {
         label: 'Follow-up doc',
-        path: 'research/followups/followup_may_18.md'
+        path: 'development-docs/mlb/postmortems/legacy-followups/followup_may_18.md'
       },
       {
         label: 'Saved HR board',
@@ -780,7 +780,7 @@ export const historyArchive: HistoryEntry[] = [
       },
       {
         label: 'Follow-up doc',
-        path: 'research/followups/followup_may_17.md'
+        path: 'development-docs/mlb/postmortems/legacy-followups/followup_may_17.md'
       },
       {
         label: 'Saved HR board',
@@ -851,7 +851,7 @@ export const historyArchive: HistoryEntry[] = [
       },
       {
         label: 'Follow-up doc',
-        path: 'research/followups/followup_may_16.md'
+        path: 'development-docs/mlb/postmortems/legacy-followups/followup_may_16.md'
       },
       {
         label: 'Saved HR board',

@@ -13,7 +13,7 @@ from statistics import median, stdev
 
 ROOT = Path(__file__).resolve().parents[3]
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
-REPORT_PATH = ROOT / "development-docs" / "mlb-total-run-residuals-053026.md"
+REPORT_PATH = ROOT / "development-docs" / "mlb" / "research" / "mlb-total-run-residuals-053026.md"
 DEFAULT_START = "2026-05-12"
 DEFAULT_END = "2026-05-29"
 

@@ -27,7 +27,7 @@ from research_mlb_starter_exit_buckets import (
 
 ROOT = Path(__file__).resolve().parents[3]
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
-REPORT_PATH = ROOT / "development-docs" / "mlb-bullpen-shape-model-053026.md"
+REPORT_PATH = ROOT / "development-docs" / "mlb" / "research" / "mlb-bullpen-shape-model-053026.md"
 
 
 @dataclass

@@ -13,14 +13,14 @@ This note is the overnight handoff after closing `May 28` and refreshing the `Ma
   - `Tracked props: 8/26`
 - Main artifacts:
   - [/Users/jcchen/Documents/New project/published-data/history/2026-05-28.json](/Users/jcchen/Documents/New%20project/published-data/history/2026-05-28.json)
-  - [/Users/jcchen/Documents/New project/development-docs/may28-slate-postmortem-052826.md](/Users/jcchen/Documents/New%20project/development-docs/may28-slate-postmortem-052826.md)
-  - [/Users/jcchen/Documents/New project/development-docs/may28-chaos-followups-052826.md](/Users/jcchen/Documents/New%20project/development-docs/may28-chaos-followups-052826.md)
+  - [/Users/jcchen/Documents/New project/development-docs/mlb/postmortems/may28-slate-postmortem-052826.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/postmortems/may28-slate-postmortem-052826.md)
+  - [/Users/jcchen/Documents/New project/development-docs/mlb/postmortems/may28-chaos-followups-052826.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/postmortems/may28-chaos-followups-052826.md)
 
 ## 2. Fresh ML retrain through May 28
 
 The expanded walk-forward rerun is done:
 
-- [/Users/jcchen/Documents/New project/development-docs/mlb-market-ml-training-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-market-ml-training-052926.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb/research/mlb-market-ml-training-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/research/mlb-market-ml-training-052926.md)
 - [/Users/jcchen/Documents/New project/data-private/predictions/mlb-market-fitness/2026-05-28-fitness.json](/Users/jcchen/Documents/New%20project/data-private/predictions/mlb-market-fitness/2026-05-28-fitness.json)
 
 Current honest status:
@@ -81,11 +81,11 @@ For the current `May 29` prop export:
 
 Reference files:
 
-- [/Users/jcchen/Documents/New project/development-docs/mlb-hitter-statcast-signal-052826.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-hitter-statcast-signal-052826.md)
-- [/Users/jcchen/Documents/New project/development-docs/mlb-live-gate-candidates-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-live-gate-candidates-052926.md)
-- [/Users/jcchen/Documents/New project/development-docs/mlb-pitcher-strikeout-gates-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-pitcher-strikeout-gates-052926.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb/research/mlb-hitter-statcast-signal-052826.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/research/mlb-hitter-statcast-signal-052826.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb/research/mlb-live-gate-candidates-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/research/mlb-live-gate-candidates-052926.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb/research/mlb-pitcher-strikeout-gates-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/research/mlb-pitcher-strikeout-gates-052926.md)
 - [/Users/jcchen/Documents/New project/data-private/predictions/mlb-player-props/2026-05-29-player-props.json](/Users/jcchen/Documents/New%20project/data-private/predictions/mlb-player-props/2026-05-29-player-props.json)
-- [/Users/jcchen/Documents/New project/development-docs/mlb-hr-filter-signal-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-hr-filter-signal-052926.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb/research/mlb-hr-filter-signal-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/research/mlb-hr-filter-signal-052926.md)
 
 HR-specific follow-up:
 
@@ -97,9 +97,9 @@ HR-specific follow-up:
 
 New research:
 
-- [/Users/jcchen/Documents/New project/development-docs/mlb-bounceback-cohort-research-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-bounceback-cohort-research-052926.md)
-- [/Users/jcchen/Documents/New project/development-docs/mlb-phase1-context-research-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-phase1-context-research-052926.md)
-- [/Users/jcchen/Documents/New project/development-docs/mlb-opponent-quality-side-gates-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-opponent-quality-side-gates-052926.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb/research/mlb-bounceback-cohort-research-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/research/mlb-bounceback-cohort-research-052926.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb/research/mlb-phase1-context-research-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/research/mlb-phase1-context-research-052926.md)
+- [/Users/jcchen/Documents/New project/development-docs/mlb/research/mlb-opponent-quality-side-gates-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/research/mlb-opponent-quality-side-gates-052926.md)
 - backed by [/Users/jcchen/Documents/New project/pipeline/mlb/research/research_mlb_bounceback_cohorts.py](/Users/jcchen/Documents/New%20project/pipeline/mlb/research/research_mlb_bounceback_cohorts.py)
 
 Most useful takeaway:

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "runId": "mlb-2026-05-30-W1-F0-M0-RP36-E0",
-  "sourceHash": "53d5425a21b39336415982dfb5cf7117765024099d67ca99d77ceb2443bbae1e",
+  "sourceHash": "fd6706379bc8b3a5c81519da88c0d451dd404d0203b35e6fc5d110eba1428cbb",
   "files": [
     {
       "path": "models/mlb/cartridges/E0/manifest.json",
@@ -181,37 +181,37 @@
       "role": "usage-audit",
       "path": "pipeline/mlb/research/research_mlb_bullpen_prediction_audit.py",
       "exists": true,
-      "sha256": "09f1bbbcbad36f0b99c9ddae819b377932cfd19376dd17dad2ad1b88f9d3ec7f"
+      "sha256": "807e91fc0f349acf0ee7f6e0f4fb85c2ac592b3718ed70decceeec3432fdf2e4"
     },
     {
       "role": "bullpen-shape-model",
       "path": "pipeline/mlb/research/research_mlb_bullpen_shape_model.py",
       "exists": true,
-      "sha256": "31c36cc356edef7843eb3880d90a02738852c79054b779a76b69ac7a41882836"
+      "sha256": "d568d51881b7c9ece6a482c492f1ff8769c7981b8c03ae09fc91bb62a87865bd"
     },
     {
       "role": "adaptive-reset",
       "path": "pipeline/mlb/research/research_mlb_first_up_reliever_depth_reset.py",
       "exists": true,
-      "sha256": "8542f03155e5ac65c17be2e8ca18435e316c2e02d2a7c21f772dab946efa58f1"
+      "sha256": "273eddce1fe002f060bb1875fca8d3c27fc780619c2126ae27584539d9598fc6"
     },
     {
       "role": "lineup-matchup",
       "path": "pipeline/mlb/research/research_mlb_first_up_reliever_lineup_matchup.py",
       "exists": true,
-      "sha256": "ba34445a08e7da87019ee66e3f636d3de6e25dd4ed77a5a5dbef4bb5ca5e0ecc"
+      "sha256": "63ffeb93edefd56ba3d7793ff0860364a962644cc9794a42a67658e49a92902e"
     },
     {
       "role": "first-up-reliever-model",
       "path": "pipeline/mlb/research/research_mlb_first_up_reliever_model.py",
       "exists": true,
-      "sha256": "20e2cdb93a48655e227938b7860b1643e4bec338bc79565d5c5c872f01b3aaa7"
+      "sha256": "c102fdb23c2b44b1310e8c49223080a2dc2656be0b2a936e550c81c1910be4d6"
     },
     {
       "role": "reliever-quality",
       "path": "pipeline/mlb/research/research_mlb_first_up_reliever_quality.py",
       "exists": true,
-      "sha256": "01b51d82c5ac4721ffa2f230d868379d05c7f19d6d27fdb36e5d2335cc66633e"
+      "sha256": "34dffa989dbde54c0fde4c799399f2caa951d90baaa232148a7b395bd881076a"
     },
     {
       "role": "side-backtest",

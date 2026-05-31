@@ -60,7 +60,7 @@ The shadow exporter writes:
 ```text
 data-private/predictions/mlb-reliever-shadow/YYYY-MM-DD-reliever-shadow.json
 web/src/lib/day-YYYY-MM-DD-reliever-shadow.js
-development-docs/mlb-first-up-reliever-shadow-board-053026.md
+development-docs/mlb/research/mlb-first-up-reliever-shadow-board-053026.md
 ```
 
 The generated payload is keyed by team and contains:

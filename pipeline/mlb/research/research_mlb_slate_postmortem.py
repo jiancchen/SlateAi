@@ -14,8 +14,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
 DEFAULT_DATE = "2026-05-23"
-DEFAULT_POSTMORTEM_OUT = ROOT / "development-docs" / "may23-slate-postmortem-052326.md"
-DEFAULT_FOLLOWUP_OUT = ROOT / "development-docs" / "may23-chaos-followups-052326.md"
+DEFAULT_POSTMORTEM_OUT = ROOT / "development-docs" / "mlb" / "postmortems" / "may23-slate-postmortem-052326.md"
+DEFAULT_FOLLOWUP_OUT = ROOT / "development-docs" / "mlb" / "postmortems" / "may23-chaos-followups-052326.md"
 FULL_NAMES = {
     "Braves": "Atlanta Braves",
     "Orioles": "Baltimore Orioles",

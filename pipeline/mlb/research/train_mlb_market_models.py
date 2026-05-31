@@ -42,7 +42,7 @@ except Exception:  # pragma: no cover - optional dependency
 ROOT = Path(__file__).resolve().parents[3]
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
 DEFAULT_CORPUS = ROOT / "data-private" / "models" / "mlb-training-corpus-2026-05-10-to-2026-05-25.json"
-DEFAULT_REPORT_OUT = ROOT / "development-docs" / "mlb-market-ml-training-052526.md"
+DEFAULT_REPORT_OUT = ROOT / "development-docs" / "mlb" / "research" / "mlb-market-ml-training-052526.md"
 DEFAULT_ARTIFACT_OUT = ROOT / "data-private" / "predictions" / "mlb-market-fitness" / "2026-05-25-fitness.json"
 
 warnings.filterwarnings(

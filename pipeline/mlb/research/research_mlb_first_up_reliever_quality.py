@@ -29,7 +29,7 @@ from research_mlb_first_up_reliever_model import (
 
 ROOT = Path(__file__).resolve().parents[3]
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
-REPORT_PATH = ROOT / "development-docs" / "mlb-first-up-reliever-quality-053026.md"
+REPORT_PATH = ROOT / "development-docs" / "mlb" / "research" / "mlb-first-up-reliever-quality-053026.md"
 
 
 @dataclass

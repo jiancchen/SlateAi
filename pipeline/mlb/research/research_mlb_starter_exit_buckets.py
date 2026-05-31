@@ -19,7 +19,7 @@ except Exception:  # pragma: no cover - graceful fallback if sklearn is unavaila
 
 ROOT = Path(__file__).resolve().parents[3]
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
-REPORT_PATH = ROOT / "development-docs" / "mlb-starter-exit-buckets-053026.md"
+REPORT_PATH = ROOT / "development-docs" / "mlb" / "research" / "mlb-starter-exit-buckets-053026.md"
 
 LEASH_WINDOW = 5
 ROLLING_WINDOW = 5

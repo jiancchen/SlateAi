@@ -3,8 +3,8 @@
 This is the running debt list coming out of the May 23 MLB postmortem.
 
 Source docs:
-- [may23-slate-postmortem-052326.md](/Users/jcchen/Documents/New%20project/development-docs/may23-slate-postmortem-052326.md)
-- [may23-chaos-followups-052326.md](/Users/jcchen/Documents/New%20project/development-docs/may23-chaos-followups-052326.md)
+- [may23-slate-postmortem-052326.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/postmortems/may23-slate-postmortem-052326.md)
+- [may23-chaos-followups-052326.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/postmortems/may23-chaos-followups-052326.md)
 
 ## P0 Bookkeeping And Data Integrity
 

@@ -21,7 +21,7 @@ from research_mlb_starter_exit_buckets import load_rows as load_starter_rows
 
 ROOT = Path(__file__).resolve().parents[3]
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
-REPORT_PATH = ROOT / "development-docs" / "mlb-first-up-reliever-model-053026.md"
+REPORT_PATH = ROOT / "development-docs" / "mlb" / "research" / "mlb-first-up-reliever-model-053026.md"
 
 
 @dataclass

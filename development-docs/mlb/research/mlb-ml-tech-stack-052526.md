@@ -101,7 +101,7 @@ Without those fixes, the backtests looked artificially elite.
 
 ## Honest Baseline
 
-Current honest baseline from [/Users/jcchen/Documents/New project/development-docs/mlb-market-ml-training-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-market-ml-training-052526.md):
+Current honest baseline from [/Users/jcchen/Documents/New project/development-docs/mlb/research/mlb-market-ml-training-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/research/mlb-market-ml-training-052526.md):
 
 |Market|Best model|Log loss|Brier|Accuracy|Sample|Threshold record|Promotable|
 |---|---|---:|---:|---:|---:|---|---|

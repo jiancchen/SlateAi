@@ -102,7 +102,7 @@
     "data:research:mlb-first-up-reliever-arsenal": "python3 pipeline/mlb/research/research_mlb_first_up_reliever_arsenal.py",
     "data:research:mlb-first-up-reliever-quality": "python3 pipeline/mlb/research/research_mlb_first_up_reliever_quality.py",
     "data:research:mlb-first-up-reliever-lineup-matchup": "python3 pipeline/mlb/research/research_mlb_first_up_reliever_lineup_matchup.py",
-    "data:research:mlb-first-up-reliever-damage-fit": "python3 pipeline/mlb/research/research_mlb_first_up_reliever_lineup_matchup.py --experiment-label E33 --title 'MLB First-Up Reliever Damage-Fit Overlay — May 30, 2026' --out development-docs/mlb-first-up-reliever-damage-fit-053026.md --conversion-window 8 --dependency-window 5",
+    "data:research:mlb-first-up-reliever-damage-fit": "python3 pipeline/mlb/research/research_mlb_first_up_reliever_lineup_matchup.py --experiment-label E33 --title 'MLB First-Up Reliever Damage-Fit Overlay — May 30, 2026' --out development-docs/mlb/research/mlb-first-up-reliever-damage-fit-053026.md --conversion-window 8 --dependency-window 5",
     "data:research:mlb-first-up-reliever-depth-reset": "python3 pipeline/mlb/research/research_mlb_first_up_reliever_depth_reset.py",
     "data:research:mlb-reliever-pitch-window-patterns": "python3 pipeline/mlb/research/research_mlb_reliever_pitch_window_patterns.py",
     "data:research:mlb-bullpen-audit": "python3 pipeline/mlb/research/research_mlb_bullpen_prediction_audit.py",

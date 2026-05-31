@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 HISTORY_DIR = ROOT / "data-private" / "history"
 SLATE_DIR = ROOT / "published-data" / "slates"
-DEFAULT_OUT = ROOT / "development-docs" / "mlb-first-inning-gates-052926.md"
+DEFAULT_OUT = ROOT / "development-docs" / "mlb" / "research" / "mlb-first-inning-gates-052926.md"
 
 
 @dataclass

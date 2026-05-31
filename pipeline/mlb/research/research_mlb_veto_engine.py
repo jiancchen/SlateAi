@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
-DEFAULT_OUT = ROOT / "development-docs" / "offline-veto-engine-052326.md"
+DEFAULT_OUT = ROOT / "development-docs" / "mlb" / "research" / "offline-veto-engine-052326.md"
 DEFAULT_START_DATE = "2026-05-10"
 DEFAULT_END_DATE = "2026-05-22"
 

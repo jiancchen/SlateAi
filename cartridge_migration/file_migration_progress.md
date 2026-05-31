@@ -32,6 +32,8 @@ Date: 2026-05-31
 - Added `tests/model_registry_test.py` to catch missing cartridge manifests and declared files.
 - Added destination folders and READMEs for sport-specific `development-docs/` migration without moving script-written docs yet.
 - Moved tennis runbook/research notes and MLB daily runbook/source checklist into sport-specific `development-docs/` folders and updated direct references.
+- Moved legacy MLB research notes, slate postmortems, converted follow-ups, and action tickets into sport-scoped `development-docs/mlb/` folders; moved the tennis follow-up into `development-docs/tennis/postmortems/`; updated MLB research writer defaults so new reports land in sport-scoped folders.
+- Added a file-structure regression test that fails if new active docs are written back into the root `development-docs/` or legacy `research/` folders.
 - Moved tennis warehouse, workflow, and publish implementations into `pipeline/tennis/{warehouse,workflows,publish}/` with compatibility wrappers at their old top-level pipeline paths.
 - Updated tennis package scripts and runbook commands to call the sport-scoped core paths directly.
 - Moved tennis research, value, Kalshi, and upset-audit scripts into `pipeline/tennis/research/` with compatibility wrappers at their old top-level pipeline paths.
@@ -43,9 +45,10 @@ Date: 2026-05-31
 
 - `pipeline/generate-tennis-day-module.mjs` and `pipeline/verify-tennis-model-snapshot.mjs` remain compatibility wrappers for old commands, while the T0 manifest source hashes now point at the sport-scoped implementations.
 - MLB prediction behavior still runs through current pipeline logic under sport-scoped workflow/fetcher/publish/warehouse/research folders. RP36 owns its reliever-shadow exporter, and M0 now has a run envelope but still delegates prediction internals.
+- `research/` remains as a README-only legacy pointer; the old follow-up and ticket notes now live under `development-docs/`.
 
 ## Next Safe Steps
 
 1. Re-lock or intentionally supersede the May 31 tennis run source lock after this migration checkpoint; strict run verification now reports expected source drift from moved files, while `--allow-source-drift` verifies outputs and coverage.
-2. Move remaining script-written development docs only after their package scripts are updated together.
-3. Continue moving MLB model-owned internals into `models/mlb/cartridges/M0/` once the run verifier is green for each step.
+2. Continue moving MLB model-owned internals into `models/mlb/cartridges/M0/` once the run verifier is green for each step.
+3. Promote any remaining compatibility wrappers only after package scripts and run locks are updated in the same checkpoint.

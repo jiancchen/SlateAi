@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
 HISTORY_ROOT = ROOT / "data-private" / "history"
-OUT_PATH = ROOT / "development-docs" / "mlb-pitcher-strikeout-gates-052926.md"
+OUT_PATH = ROOT / "development-docs" / "mlb" / "research" / "mlb-pitcher-strikeout-gates-052926.md"
 
 
 @dataclass

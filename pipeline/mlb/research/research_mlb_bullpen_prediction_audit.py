@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
 SLATES_DIR = ROOT / "published-data" / "slates"
-REPORT_PATH = ROOT / "development-docs" / "mlb-bullpen-prediction-audit-053026.md"
+REPORT_PATH = ROOT / "development-docs" / "mlb" / "research" / "mlb-bullpen-prediction-audit-053026.md"
 
 START_DATE = "2026-05-10"
 END_DATE = "2026-05-28"

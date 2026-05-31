@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
-DEFAULT_OUT = ROOT / "development-docs" / "mlb-hitter-statcast-signal-052826.md"
+DEFAULT_OUT = ROOT / "development-docs" / "mlb" / "research" / "mlb-hitter-statcast-signal-052826.md"
 
 
 FEATURES = [

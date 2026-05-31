@@ -53,7 +53,7 @@ That means:
 
 ## Training Impact
 
-After the full-season warehouse backfill and season-table refresh, the forest baseline was rerun in [development-docs/mlb-market-ml-training-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-market-ml-training-052526.md).
+After the full-season warehouse backfill and season-table refresh, the forest baseline was rerun in [development-docs/mlb/research/mlb-market-ml-training-052526.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/research/mlb-market-ml-training-052526.md).
 
 Results:
 

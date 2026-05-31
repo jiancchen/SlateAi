@@ -11,7 +11,7 @@ from statistics import quantiles
 
 ROOT = Path(__file__).resolve().parents[3]
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
-OUT_PATH = ROOT / "development-docs" / "mlb-live-gate-candidates-052926.md"
+OUT_PATH = ROOT / "development-docs" / "mlb" / "research" / "mlb-live-gate-candidates-052926.md"
 HISTORY_GLOB_ROOT = ROOT / "data-private" / "history"
 HR_PREDICTIONS_ROOT = ROOT / "data-private" / "predictions" / "mlb-home-runs"
 

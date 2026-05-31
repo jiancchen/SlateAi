@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[3]
 WAREHOUSE_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
 HISTORY_DIR = ROOT / "data-private" / "history"
 PUBLISHED_SLATES_DIR = ROOT / "published-data" / "slates"
-OUTPUT_DIR = ROOT / "development-docs"
+OUTPUT_DIR = ROOT / "development-docs" / "mlb" / "research"
 
 
 SAFE_EVENT_TYPES = {

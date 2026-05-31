@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
-DEFAULT_OUT = ROOT / "development-docs" / "tier3-feature-research-052326.md"
+DEFAULT_OUT = ROOT / "development-docs" / "mlb" / "research" / "tier3-feature-research-052326.md"
 
 
 def get_connection() -> sqlite3.Connection:
