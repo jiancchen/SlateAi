@@ -1,4 +1,4 @@
-import { clamp, roundToTenths } from './core-utils.js'
+import { average, clamp, roundToTenths } from './core-utils.js'
 
 const parseRecord = (value = '') => {
   const match = value.match(/(\d+)-(\d+)(?:-(\d+))?/)
@@ -348,6 +348,33 @@ const pitcherEraScore = (pitcher) =>
   Number.isFinite(pitcher.era) ? clamp(92 - pitcher.era * 9, 18, 90) : 50
 
 const pitcherStrikeoutScore = (pitcher) => clamp(34 + pitcher.strikeouts * 1.08, 24, 88)
+
+const pitcherWarScore = (pitcher) => {
+  const currentWar = Number(pitcher?.currentSeasonWar)
+  const previousWar = Number(pitcher?.previousSeasonWar)
+  const currentGamesStarted = Number(pitcher?.currentSeasonWarGamesStarted || 0) || 0
+  const previousGamesStarted = Number(pitcher?.previousSeasonWarGamesStarted || 0) || 0
+  const warDelta = Number(pitcher?.warDelta)
+  const components = []
+
+  if (Number.isFinite(currentWar) && currentGamesStarted >= 4) {
+    const currentWeight = currentGamesStarted >= 8 ? 1 : 0.7
+    components.push((50 + currentWar * 13) * currentWeight + 50 * (1 - currentWeight))
+  }
+
+  if (Number.isFinite(previousWar) && previousGamesStarted >= 8) {
+    components.push(48 + previousWar * 7)
+  }
+
+  if (!components.length) return 50
+
+  let score = average(components)
+  if (Number.isFinite(warDelta) && currentGamesStarted >= 4) {
+    score += clamp(warDelta, -3, 3) * 1.8
+  }
+
+  return clamp(score, 18, 92)
+}
 
 const starterScore = (pitcher) =>
   pitcherRecordScore(pitcher) * 0.24 +

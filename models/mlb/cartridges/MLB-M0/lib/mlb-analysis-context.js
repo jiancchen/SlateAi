@@ -1943,33 +1943,6 @@ const buildMlbParkModifiers = (game, starters = []) => {
   return modifiers
 }
 
-const pitcherWarScore = (pitcher) => {
-  const currentWar = Number(pitcher?.currentSeasonWar)
-  const previousWar = Number(pitcher?.previousSeasonWar)
-  const currentGamesStarted = Number(pitcher?.currentSeasonWarGamesStarted || 0) || 0
-  const previousGamesStarted = Number(pitcher?.previousSeasonWarGamesStarted || 0) || 0
-  const warDelta = Number(pitcher?.warDelta)
-  const components = []
-
-  if (Number.isFinite(currentWar) && currentGamesStarted >= 4) {
-    const currentWeight = currentGamesStarted >= 8 ? 1 : 0.7
-    components.push((50 + currentWar * 13) * currentWeight + 50 * (1 - currentWeight))
-  }
-
-  if (Number.isFinite(previousWar) && previousGamesStarted >= 8) {
-    components.push(48 + previousWar * 7)
-  }
-
-  if (!components.length) return 50
-
-  let score = average(components)
-  if (Number.isFinite(warDelta) && currentGamesStarted >= 4) {
-    score += clamp(warDelta, -3, 3) * 1.8
-  }
-
-  return clamp(score, 18, 92)
-}
-
 const buildMlbAnalysisContext = (game, participants) => {
   const starterContexts = [
     game.starterContext?.away ?? game.startingPitcherContext?.away ?? null,

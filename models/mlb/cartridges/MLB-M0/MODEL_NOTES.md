@@ -39,7 +39,7 @@ Implemented from this lesson:
 - MLB-M0 now has a file-based run manifest and verifier under `data-private/model-runs/mlb/MLB-M0/`.
 - Daily MLB refresh, follow-up, and refresh verification commands now enter through `models/mlb/cartridges/MLB-M0/workflows/` wrappers.
 - MLB publish/export commands now enter through `models/mlb/cartridges/MLB-M0/lanes/` wrappers before delegating to `pipeline/mlb/publish/` internals.
-- The shared deterministic scoring entrypoint now lives at `models/mlb/cartridges/MLB-M0/lib/sports-model.js`; MLB context, decision indicators, starter utilities, market/signal helpers, and prop logic are split into sibling `lib/` modules. The old frontend path is a re-export shim.
+- The shared deterministic scoring entrypoint now lives at `models/mlb/cartridges/MLB-M0/lib/sports-model.js`; participant construction, structured analysis, MLB context, decision indicators, starter utilities, market/signal helpers, and prop logic are split into sibling `lib/` modules. The old frontend path is a re-export shim.
 - The run manifest is not yet stored in shared model-run DB tables.
 - The source inventory is still intentionally broad while the MLB pregame chain is split into components.
 - MLB-M0 still delegates most prediction behavior to workflow and publish scripts; moving those internals comes after the May 30 golden checks stay green.

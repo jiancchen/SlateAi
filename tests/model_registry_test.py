@@ -112,6 +112,9 @@ class ModelRegistryTest(unittest.TestCase):
 
     def test_m0_quiet_start_gate_is_metadata_gated(self) -> None:
         model_text = (
+            ROOT / "models" / "mlb" / "cartridges" / "MLB-M0" / "lib" / "analysis-model.js"
+        ).read_text(encoding="utf-8")
+        entrypoint_text = (
             ROOT / "models" / "mlb" / "cartridges" / "MLB-M0" / "lib" / "sports-model.js"
         ).read_text(encoding="utf-8")
         generator_text = (
@@ -121,6 +124,7 @@ class ModelRegistryTest(unittest.TestCase):
 
         self.assertIn("enableMay30QuietStartGate", model_text)
         self.assertIn("quietFirst3FullGameRiskFlag", model_text)
+        self.assertIn("buildAnalysisModel", entrypoint_text)
         self.assertIn("quietStartFullGameGate: options.date >= '2026-05-31'", generator_text)
         self.assertIn("quietStartFullGameGate", loader_text)
 

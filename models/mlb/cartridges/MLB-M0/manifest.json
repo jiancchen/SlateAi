@@ -205,6 +205,18 @@
       "path": "models/mlb/cartridges/MLB-M0/lib/signal-utils.js"
     },
     {
+      "role": "model-participant-factory",
+      "path": "models/mlb/cartridges/MLB-M0/lib/participant-model.js"
+    },
+    {
+      "role": "model-structured-context",
+      "path": "models/mlb/cartridges/MLB-M0/lib/structured-analysis-context.js"
+    },
+    {
+      "role": "model-analysis-orchestrator",
+      "path": "models/mlb/cartridges/MLB-M0/lib/analysis-model.js"
+    },
+    {
       "role": "model-starter-utils",
       "path": "models/mlb/cartridges/MLB-M0/lib/mlb-starter-utils.js"
     },
