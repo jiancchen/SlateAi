@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "runId": "mlb-2026-05-31-MLB-RP36",
+  "outputHash": "7286f44c5b79f78b4bccda14010578e49b1213568d50fea4244c896a2c9482cd",
+  "outputs": [
+    {
+      "role": "reliever-shadow-json",
+      "path": "data-private/predictions/mlb-reliever-shadow/2026-05-31-reliever-shadow.json",
+      "exists": true,
+      "sha256": "94f43e7b01d8cc1f3f434a0cd978805de3f553acd84ce197f22e69b3e5c25797"
+    },
+    {
+      "role": "reliever-shadow-module",
+      "path": "web/src/lib/day-2026-05-31-reliever-shadow.js",
+      "exists": true,
+      "sha256": "323e17d2118ec335acdb1c8e645f2232bd2b262a724da42e2fec673c2c402e99"
+    },
+    {
+      "role": "reliever-shadow-report",
+      "path": "development-docs/mlb/research/mlb-first-up-reliever-shadow-board-053026.md",
+      "exists": true,
+      "sha256": "14dd23d12e28b918ff1fc9da18a678d08e2988422289eddf26458f833f2698a1"
+    },
+    {
+      "role": "prediction-snapshot",
+      "path": "data-private/model-runs/mlb/MLB-RP36/2026-05-31/snapshot.json",
+      "exists": true,
+      "sha256": "dde91f2ba973fb2c7812dd81ee1d5c3a950a97688e34ca248a3891ebeb94e3cb"
+    },
+    {
+      "role": "source-lock",
+      "path": "data-private/model-runs/mlb/MLB-RP36/2026-05-31/files.lock.json",
+      "exists": true,
+      "sha256": "3c79193a26535ab63b4a0346b96964002d7cd9c416cc8daa40b0fc59a1f47c5a"
+    },
+    {
+      "role": "input-lock",
+      "path": "data-private/model-runs/mlb/MLB-RP36/2026-05-31/inputs.lock.json",
+      "exists": true,
+      "sha256": "df6f57d0d0d9c6c3360ac840cc0c0bd27a7bf7a6fa34ccd3b5f3060eac339538"
+    },
+    {
+      "role": "run-manifest",
+      "path": "data-private/model-runs/mlb/MLB-RP36/2026-05-31/run.json",
+      "exists": true,
+      "sha256": "e42b5113cb3748ddd1d1f080b8c0503045a1bda5e7ad8a28a9945ef3ee04666c"
+    }
+  ]
+}

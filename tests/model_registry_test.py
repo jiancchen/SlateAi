@@ -52,6 +52,8 @@ class ModelRegistryTest(unittest.TestCase):
                         "modelLog",
                         "performanceIndex",
                         "followups",
+                        "runLock",
+                        "runVerifier",
                     ):
                         value = manifest.get(key)
                         if value:

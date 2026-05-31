@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "runId": "mlb-2026-05-31-MLB-RP36",
+  "inputHash": "17f8d11bc3623769e436ee47d29e07a416ea6fe0f2206c75417dc6bc1e50cdfc",
+  "inputs": [
+    {
+      "role": "games_today",
+      "query": "select count(*) as rows, coalesce(sum(game_pk), 0) as game_pk_sum from mlb_games where game_date = ?",
+      "rows": [
+        {
+          "rows": 15,
+          "game_pk_sum": 12357632
+        }
+      ],
+      "sha256": "bcfc6fc48d78d6d206427115d9d180a1eef4378b9c3bb8815335865d05134d59",
+      "exists": true
+    },
+    {
+      "role": "bullpen_usage_today",
+      "query": "select count(*) as rows, coalesce(sum(pitcher_id), 0) as pitcher_id_sum from mlb_bullpen_usage where as_of_date = ?",
+      "rows": [
+        {
+          "rows": 289,
+          "pitcher_id_sum": 191310263
+        }
+      ],
+      "sha256": "0575ee3406d6e15a99ce60e5dafa217da04b0b4135e8b70a715f2a5a33643297",
+      "exists": true
+    },
+    {
+      "role": "bullpen_shape_today",
+      "query": "select count(*) as rows from mlb_team_bullpen_shape_daily where as_of_date = ?",
+      "rows": [
+        {
+          "rows": 30
+        }
+      ],
+      "sha256": "1075e745dfc3efb31d890965792c4242d67146f41154acdb6eef5e632b96250d",
+      "exists": true
+    },
+    {
+      "role": "starter_logs_through_date",
+      "query": "select count(*) as rows, coalesce(sum(pitcher_id), 0) as pitcher_id_sum from mlb_starting_pitcher_game_logs where game_date <= ?",
+      "rows": [
+        {
+          "rows": 1746,
+          "pitcher_id_sum": 1149919543
+        }
+      ],
+      "sha256": "dc8c244c3ba13e49f6a1cdf0d25c59045bbf256e47f26ef703dd3f1f458c5553",
+      "exists": true
+    },
+    {
+      "role": "reliever_appearances_before_date",
+      "query": "select count(*) as rows, coalesce(sum(pitcher_id), 0) as pitcher_id_sum, coalesce(sum(pitches_thrown), 0) as pitches_sum from mlb_pitcher_appearances where game_date < ? and pitcher_role = 'reliever'",
+      "rows": [
+        {
+          "rows": 5633,
+          "pitcher_id_sum": 3706396384,
+          "pitches_sum": 109957
+        }
+      ],
+      "sha256": "0609348f9381dd7dba92b0c1716832625b6f7e1e37b8c3d78a3b063a9b056ebd",
+      "exists": true
+    },
+    {
+      "role": "plate_appearances_before_date",
+      "query": "select count(*) as rows, coalesce(sum(game_pk), 0) as game_pk_sum from mlb_plate_appearances where game_date < ?",
+      "rows": [
+        {
+          "rows": 66102,
+          "game_pk_sum": 54462763732
+        }
+      ],
+      "sha256": "770618bc5d3e411d9de3eb176853f7a571a128536eeb683ad536807e3258debc",
+      "exists": true
+    },
+    {
+      "role": "lineup_shape_history",
+      "query": "select count(*) as rows from mlb_lineup_conversion_shape_daily where as_of_date <= ?",
+      "rows": [
+        {
+          "rows": 5208
+        }
+      ],
+      "sha256": "681688536adf5012083142b5dc113abb01cc4f522e2d8a78c951a2c9a563fbbc",
+      "exists": true
+    },
+    {
+      "role": "lineup_dependency_history",
+      "query": "select count(*) as rows from mlb_lineup_dependency_profiles where as_of_date <= ?",
+      "rows": [
+        {
+          "rows": 3092
+        }
+      ],
+      "sha256": "acf8573854b705c500cead633e948705106316f592ca1d12757c3f1438d58361",
+      "exists": true
+    }
+  ]
+}

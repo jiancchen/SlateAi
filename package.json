@@ -148,6 +148,8 @@
     "data:project:tennis-kalshi-trades": "python3 pipeline/tennis/research/project_kalshi_trade_candidates.py",
     "data:summary:tennis": "python3 pipeline/tennis/warehouse/tennis_warehouse.py summary",
     "data:import:mlb-props": "python3 pipeline/mlb/warehouse/mlb_warehouse.py import-prop-predictions",
-    "data:grade:mlb-props": "python3 pipeline/mlb/warehouse/mlb_warehouse.py grade-prop-picks"
+    "data:grade:mlb-props": "python3 pipeline/mlb/warehouse/mlb_warehouse.py grade-prop-picks",
+    "data:lock:mlb-rp36": "python3 models/mlb/cartridges/MLB-RP36/run_lock.py",
+    "data:verify:mlb-rp36": "python3 models/mlb/cartridges/MLB-RP36/verify_run.py"
   }
 }

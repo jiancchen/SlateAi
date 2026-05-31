@@ -23,6 +23,8 @@ Date: 2026-05-31
 - Moved MLB-M0 workflow implementations into `models/mlb/cartridges/MLB-M0/workflows/`; the old `pipeline/mlb/workflows/` files now launch the cartridge workflows for compatibility.
 - Moved MLB-M0 publish lane implementations into `models/mlb/cartridges/MLB-M0/lanes/`; the old `pipeline/mlb/publish/` files now launch the cartridge lanes for compatibility.
 - Removed the unused MLB-M0 `legacy-runner.mjs` helper after lane and workflow launchers no longer depended on it.
+- Added `cartridge_migration/mlb_pipeline_ownership_audit.md` to classify remaining MLB pipeline folders as data plumbing, compatibility launchers, or offline research before any further moves.
+- Added an MLB-RP36 run envelope with dated source/input/output locks and exact reliever-shadow snapshot verification. The first reproducible RP36 run is May 31, because the May 30 legacy artifact no longer exactly regenerates from the current warehouse.
 - Moved MLB pregame and refresh workflow implementations into `pipeline/mlb/workflows/`.
 - Moved the MLB close/follow-up workflow into `pipeline/mlb/workflows/followup.mjs`, and pointed future generated postmortem/follow-up docs into `development-docs/mlb/postmortems/`.
 - Moved MLB refresh verification into `pipeline/mlb/workflows/verify-refresh.mjs`.
@@ -61,6 +63,6 @@ Date: 2026-05-31
 ## Next Safe Steps
 
 1. Decide whether generic/UFC analysis context should stay in MLB-M0 for compatibility or move later into a true shared model core.
-2. Classify remaining `pipeline/mlb/{warehouse,research,fetchers}` scripts as data plumbing, model feature generation, or historical research.
-3. Move model-owned feature generation out of pipeline folders only after the May 30/May 31 golden snapshots cover the change.
+2. Move model-owned feature generation out of pipeline folders only after the May 30/May 31 golden snapshots cover the change.
+3. Add DB indexing for MLB-M0 and MLB-RP36 model-run manifests once file ownership stabilizes.
 4. Update `cartridge_migration/technical_debt.md` in the same patch whenever a migration step leaves a shim, wrapper, compatibility path, delegated implementation, or broad lock behind.

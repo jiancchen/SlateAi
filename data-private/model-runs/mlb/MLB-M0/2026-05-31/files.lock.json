@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "runId": "mlb-2026-05-31-MLB-W1-MLB-F0-MLB-M0-MLB-RP36-MLB-E0",
-  "sourceHash": "03b46ee53c80ff7d8ac7612487fa988ceb79e4eca870ec0f2bdad8246c9fed84",
+  "sourceHash": "29db936a83807e3cdd11faa5fcbeb2d87ace1e7de9358425ae7ba8cc1af7fe29",
   "files": [
     {
       "path": "models/mlb/cartridges/MLB-E0/manifest.json",
@@ -277,7 +277,7 @@
       "path": "models/mlb/cartridges/MLB-RP36/manifest.json",
       "role": "relief_addendum-manifest",
       "exists": true,
-      "sha256": "2adf620c2c5cb2875581a1ce724404b63ad306f08edbc44eff40f39494ab0693"
+      "sha256": "ef330cb68d2b5111aba6a472c465af85ae97cd2b08a450a0e84f5835b2ada6f1"
     },
     {
       "path": "models/mlb/cartridges/MLB-RP36/model_description.json",
@@ -289,7 +289,7 @@
       "path": "models/mlb/cartridges/MLB-RP36/MODEL_NOTES.md",
       "role": "relief-addendum-notes",
       "exists": true,
-      "sha256": "581ce8a9159d9db0617b6af10722b29ca9a0808543dc824732a5d8cffd21d761"
+      "sha256": "1ee2d5298b338a05ffc17ae90597e403c351e3e6f1a7ffaa31b7e17c1f282a0d"
     },
     {
       "path": "models/mlb/cartridges/MLB-RP36/output-contract.json",
@@ -298,10 +298,22 @@
       "sha256": "ea47f42946d23d62064d825c950584600104f4d0e8cbe43513f09b8f94bfe3a6"
     },
     {
+      "role": "run-locker",
+      "path": "models/mlb/cartridges/MLB-RP36/run_lock.py",
+      "exists": true,
+      "sha256": "73452c16afb6158f0b40a1f8a23acb082131a345c8dd71bf9f2ceece661aebe1"
+    },
+    {
       "role": "shadow-runner",
       "path": "models/mlb/cartridges/MLB-RP36/runner.py",
       "exists": true,
       "sha256": "2a13afd66e4710bd19b4d7be2f6b25dae93734ab71e6c18b4bb6f4ac4a4e501d"
+    },
+    {
+      "role": "run-verifier",
+      "path": "models/mlb/cartridges/MLB-RP36/verify_run.py",
+      "exists": true,
+      "sha256": "30c8b9616573e3e4a781533f80e49404fa2d76a544d79efa9dee0d3dac2b9a08"
     },
     {
       "role": "snapshot-verifier",

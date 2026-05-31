@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "modelId": "MLB-RP36",
+  "date": "2026-05-31",
+  "artifactHash": "482cbf9c46249d824ce15588c4a053f1eebe7eefc166f8133ff1d3f17e058e98",
+  "meta": {
+    "date": "2026-05-31",
+    "modelTag": "E36 shadow",
+    "candidateCount": 276,
+    "teamCount": 30,
+    "conversionWindow": 8,
+    "dependencyWindow": 5,
+    "researchRates": {
+      "exactRate": 26.5,
+      "top2Rate": 44.5,
+      "top3Rate": 59.6
+    }
+  },
+  "artifactSummary": {
+    "relieverTeams": 30,
+    "candidateCount": 276
+  }
+}
