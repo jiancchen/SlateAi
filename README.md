@@ -2,6 +2,17 @@
 
 This repo is now split into a deployable frontend and a private prediction workspace.
 
+## Setup And Recovery
+
+For a full cold-start guide, including how to restore the private SQLite/raw warehouse from Hugging Face, use [SETUP.md](/Users/jcchen/Documents/New%20project/SETUP.md:1).
+
+The private warehouse backup lives in the Hugging Face dataset `javvyai/slate-sports-warehouse`. It is private. Manual backup and restore commands:
+
+```bash
+npm run warehouse:sync:hf
+npm run warehouse:restore:hf
+```
+
 ## Repo Structure
 
 - `web/`

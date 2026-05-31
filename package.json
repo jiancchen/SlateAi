@@ -12,6 +12,8 @@
     "build": "npm run data:export:public-current && npm --prefix web run build",
     "build:api": "npm --prefix api run build",
     "publish:site": "node scripts/deploy-public-site.mjs",
+    "warehouse:sync:hf": "node scripts/sync-hf-warehouse.mjs",
+    "warehouse:restore:hf": "node scripts/restore-hf-warehouse.mjs",
     "test": "python3 -m unittest discover -s tests -p '*_test.py'",
     "preview": "npm --prefix web run preview",
     "start:api": "npm --prefix api run start",
