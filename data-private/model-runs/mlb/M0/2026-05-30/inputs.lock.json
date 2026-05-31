@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "runId": "mlb-2026-05-30-W1-F0-M0-RP36-E0",
-  "inputHash": "08c8be811026fbe7b4402989d9c398edc4f689ed800941f6419c53ec7ea2119b",
+  "inputHash": "e4dbc604c333f1fac71640789c4c2d2aad570f965f51b2bcde04122b8715fa02",
   "inputs": [
     {
       "path": "data-private/lineups/mlb/2026-05-30-lineup-board.json",
@@ -31,7 +31,7 @@
       "path": "data-private/predictions/mlb-sides/2026-05-30-veto-artifact.json",
       "role": "side-veto-artifact",
       "exists": true,
-      "sha256": "e90a5766ebfff6ca19872cdef7b0fd1b8dd56009de43481b77f2a55d5053307d"
+      "sha256": "1843d427efad52aacb57d97914543d509632763ae1ca744982251962aa76c9b9"
     },
     {
       "path": "published-data/slates/2026-05-30/games/angels-rays.json",

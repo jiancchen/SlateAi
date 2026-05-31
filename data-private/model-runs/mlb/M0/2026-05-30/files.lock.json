@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "runId": "mlb-2026-05-30-W1-F0-M0-RP36-E0",
-  "sourceHash": "7bcf01805f79871d6c1f5039110864684f3b6086f359bb3040b033d9f7f8f520",
+  "sourceHash": "38ae2fade925741f96f36b091860fc6b039587b6b5838bc4db71504ad5c7d38a",
   "files": [
     {
       "path": "models/mlb/cartridges/E0/manifest.json",
@@ -25,13 +25,13 @@
       "path": "models/mlb/cartridges/M0/model_description.json",
       "role": "model-description",
       "exists": true,
-      "sha256": "c5423e2a1355c03a6d105c615c06cb2eba1e1aa000a00fadb2712a210c17ca52"
+      "sha256": "a6cec419ab28036c6ac10cc9e0765a45b85e6e454bb452b4954565c98375ed2e"
     },
     {
       "path": "models/mlb/cartridges/M0/MODEL_NOTES.md",
       "role": "model-notes",
       "exists": true,
-      "sha256": "fa129e8fcf578b1f7f2d45f53ac21f7fd931ce49f6c6013fe90439fb6f9ba5ad"
+      "sha256": "bae1014aba9d1aad98aac02fdd75ffd70d5b28e59f1e9f6cadaa0dbce0ceac75"
     },
     {
       "path": "models/mlb/cartridges/M0/output-contract.json",
@@ -85,13 +85,13 @@
       "path": "models/mlb/cartridges/RP36/model_description.json",
       "role": "relief-addendum-description",
       "exists": true,
-      "sha256": "e8b569525583c0bbba5077d7d156259852567c0d3e20945519e48ded0cb23f30"
+      "sha256": "a7341ecb0ee2160a4dfbc2d909324458f10a30f38eb490bc700703e37009d768"
     },
     {
       "path": "models/mlb/cartridges/RP36/MODEL_NOTES.md",
       "role": "relief-addendum-notes",
       "exists": true,
-      "sha256": "21a81577fc0892aecf9c2c10820e52da6a842d780e5f75340815d4854dcaccb1"
+      "sha256": "6c77af46d6bdbae7d427e600464d61238928a70335e05c128c0d93a5355d93a5"
     },
     {
       "path": "models/mlb/cartridges/RP36/output-contract.json",
@@ -223,7 +223,7 @@
       "role": "followup-workflow",
       "path": "pipeline/mlb/workflows/followup.mjs",
       "exists": true,
-      "sha256": "bfa5aa0bebf82f6cbe2a3e44e1b0c724c44156d4a8f5d2799451c360be007451"
+      "sha256": "82202e7c7cb36f1d40188efe7583a36ea471498b0498a74178027b59769289f7"
     },
     {
       "role": "pregame-workflow",

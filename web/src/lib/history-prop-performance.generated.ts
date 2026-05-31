@@ -580,5 +580,41 @@ export const mlbPropPerformanceByDate: Record<string, DailyPropSummary> = {
       "Yordan Alvarez Over 1.5 total bases",
       "CJ Abrams Over 1.5 total bases"
     ]
+  },
+  "2026-05-30": {
+    "overall": {
+      "hits": 33,
+      "total": 62,
+      "hitRate": 53.2
+    },
+    "byType": {
+      "totalBases": {
+        "hits": 19,
+        "total": 35,
+        "hitRate": 54.3
+      },
+      "pitcherStrikeouts": {
+        "hits": 11,
+        "total": 22,
+        "hitRate": 50
+      },
+      "singles": {
+        "hits": 3,
+        "total": 5,
+        "hitRate": 60
+      }
+    },
+    "topHits": [
+      "Yordan Alvarez Over 1.5 total bases",
+      "Casey Schmitt Over 1.5 total bases",
+      "Andy Pages Over 1.5 total bases",
+      "Christian Walker Over 1.5 total bases"
+    ],
+    "topMisses": [
+      "Michael Harris II Over 1.5 total bases",
+      "Hunter Goodman Over 1.5 total bases",
+      "James Wood Over 1.5 total bases",
+      "Ben Rice Over 1.5 total bases"
+    ]
   }
 }

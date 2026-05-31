@@ -471,6 +471,13 @@ def build_postmortem_markdown(prediction_date: str, side_rows: list[SideRow], se
             for row in top_props
         ],
     )
+    side_import_ok = infra["imported_prediction_count"] == infra["board_pick_count"]
+    side_grade_ok = infra["graded_backtest_count"] == infra["board_pick_count"]
+    pipeline_footer = (
+        "This closeout is training-ready for the side lane; keep the health checks in place so a future miss fails loudly."
+        if side_import_ok and side_grade_ok and infra["history_day_file_exists"] and not infra["duplicate_game_ids"]
+        else "Any duplicate matchup slug or skipped side-import path still breaks part of the daily audit chain, even if the raw outcomes are present."
+    )
 
     return f"""# {pretty_label} MLB Postmortem
 
@@ -538,13 +545,13 @@ What that means:
 
 So the veto idea is right, but the current flags are still too blunt to be used as live gates.
 
-## Pipeline gaps exposed today
+## Pipeline coverage check
 - `data-private/history/mlb-results-{prediction_date}.jsonl` was {"" if infra['history_day_file_exists'] else "**not **"}written by closeout
 - the board file contains duplicate `gameId` values: `{", ".join(infra['duplicate_game_ids']) if infra['duplicate_game_ids'] else 'none'}`
-- importing the {pretty_label} side board only created `{infra['imported_prediction_count']}` rows in `mlb_side_predictions` for `{infra['board_pick_count']}` board picks
-- the side grading path still left `mlb_side_backtests` at `{infra['graded_backtest_count']}` rows for this model/date
+- importing the {pretty_label} side board created `{infra['imported_prediction_count']}` rows in `mlb_side_predictions` for `{infra['board_pick_count']}` board picks
+- the side grading path has `{infra['graded_backtest_count']}` rows in `mlb_side_backtests` for this model/date
 
-Any duplicate matchup slug or skipped side-import path still breaks part of the daily audit chain, even if the raw outcomes are present.
+{pipeline_footer}
 
 ## Bottom line
 - This was not a “market was weird” day so much as a **dead-early, low-conversion** day that the board failed to encode tightly enough.
@@ -560,21 +567,43 @@ def build_followup_markdown(prediction_date: str, side_rows: list[SideRow], infr
     pretty_label = format_prediction_label(prediction_date)
     dead_early_misses = [row for row in side_rows if (not row.full_hit and row.phase_path_label == "dead_early_loss")]
     yrfi_misses = [row for row in side_rows if not row.yrfi_hit]
+    side_pipeline_ok = (
+        infra["history_day_file_exists"]
+        and infra["imported_prediction_count"] == infra["board_pick_count"]
+        and infra["graded_backtest_count"] == infra["board_pick_count"]
+        and not infra["duplicate_game_ids"]
+    )
+    bookkeeping_title = "Keep the bookkeeping health gate"
+    bookkeeping_bottom = (
+        "This path is now trustworthy for this day, but it needs to stay a hard pre-slate gate before any model lesson is applied."
+        if side_pipeline_ok
+        else "Until this path is trustworthy, every daily side report is partly manual."
+    )
+    side_prediction_reason = (
+        f"side-prediction rows imported: `{infra['imported_prediction_count']}/{infra['board_pick_count']}`"
+        if side_pipeline_ok
+        else f"only `{infra['imported_prediction_count']}` side-prediction rows imported"
+    )
+    side_backtest_reason = (
+        f"`mlb_side_backtests` rows: `{infra['graded_backtest_count']}/{infra['board_pick_count']}`"
+        if side_pipeline_ok
+        else f"`mlb_side_backtests` still shows `{infra['graded_backtest_count']}` rows for this day/model path"
+    )
     return f"""# {pretty_label} Chaos Follow-ups
 
 ## What this slate says to build next
 
-### P0: Fix the bookkeeping bugs first
+### P0: {bookkeeping_title}
 - Give every MLB game a unique `gameId`, including doubleheaders.
 - Make sure closeout writes `data-private/history/mlb-results-{prediction_date}.jsonl`.
 - Make sure imported side boards actually flow into `mlb_side_backtests`.
 
 Reason:
 - today had `{infra['board_pick_count']}` board picks
-- only `{infra['imported_prediction_count']}` side-prediction rows imported
-- `mlb_side_backtests` still shows `{infra['graded_backtest_count']}` rows for this day/model path
+- {side_prediction_reason}
+- {side_backtest_reason}
 
-Until this path is trustworthy, every daily side report is partly manual.
+{bookkeeping_bottom}
 
 ### P0: Turn `dead_early_loss` into a positive market lane
 This slate produced `{len(dead_early_misses)}` side misses where the predicted team simply never got going:

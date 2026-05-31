@@ -4,17 +4,18 @@
   "sport": "mlb",
   "name": "M0 MLB parent baseline",
   "status": "migration-shell",
-  "summary": "Initial shell for the current MLB parent model. This does not change predictions yet; it gives the existing starter, side, total, prop, and market-context scripts a cartridge home.",
+  "summary": "Baseline MLB parent cartridge shell. M0 now owns the daily run manifest and closeout health gate while the existing side, first-five, first-inning, prop, HR, market-context, and RP36 relief inputs are migrated behind stable artifacts.",
   "keyImprovements": [
     "Names the current MLB parent model as M0 so future changes can be compared against a stable baseline.",
     "Keeps RP36 as a relief addendum consumed by M0 instead of treating the reliever shadow artifact as a separate parent model.",
-    "Separates model ownership from workflow plumbing before moving scripts out of the flat pipeline folder."
+    "Separates model ownership from workflow plumbing before moving scripts out of the flat pipeline folder.",
+    "Adds a May 30 closeout gate so side predictions must flow into `mlb_side_predictions` and `mlb_side_backtests` before postmortem lessons are trusted."
   ],
   "keyMetrics": [
     {
       "label": "Migration status",
-      "value": "Shell",
-      "details": "No MLB prediction behavior has moved yet."
+      "value": "Run shell",
+      "details": "Prediction behavior is still mostly delegated to workflow/publish scripts, but M0 owns the run lock and model dashboard identity."
     },
     {
       "label": "Relief addendum",
@@ -30,12 +31,23 @@
       "label": "May 30 run lock",
       "value": "Created",
       "details": "M0 now has a file-based run manifest, source lock, input lock, output lock, and snapshot verification target."
+    },
+    {
+      "label": "May 30 side closeout",
+      "value": "15/15",
+      "details": "Side predictions and backtests are now present in the warehouse for the May 30 golden day."
+    },
+    {
+      "label": "May 30 result lanes",
+      "value": "FG 6-9 / F5 9-6",
+      "details": "May 30 exposed a dead-early, low-conversion side failure while first-five and first-inning timing held up better."
     }
   ],
   "notes": [
     "M0 should eventually own the final MLB side, first-five, total, prop, and market-context outputs.",
     "Current scripts remain in pipeline until a behavior-preserving wrapper and golden test are added.",
-    "Do not promote RP36 into a standalone parent model; it should feed M0."
+    "Do not promote RP36 into a standalone parent model; it should feed M0.",
+    "Before a new MLB slate, the prior day must have a results journal plus side prediction/backtest rows so lessons are based on warehouse-settled data."
   ],
   "knownLimitations": [
     "M0 run locks are file-based for now; they are not yet written into a shared model-run DB table.",

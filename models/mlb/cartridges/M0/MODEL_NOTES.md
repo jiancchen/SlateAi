@@ -2,7 +2,7 @@
 
 M0 is the future parent cartridge for MLB predictions.
 
-This shell does not change model behavior. It records the intended ownership boundary before scripts are moved out of the flat `pipeline/` folder.
+This shell keeps the current MLB behavior stable while model ownership moves into cartridges. It records the intended ownership boundary before scripts are moved out of the flat `pipeline/` folder.
 
 ## Scope
 
@@ -17,8 +17,19 @@ This shell does not change model behavior. It records the intended ownership bou
 
 Move behavior into this cartridge only with a golden output check or explicit run artifact comparison.
 
+## May 30 Closeout Lesson
+
+- Full-game sides went 6-9.
+- First-five sides went 9-6.
+- First-inning rows went 9-6.
+- HR board went 3/12.
+- Tracked props went 33/62, but the top prop cluster was too concentrated in total-bases overs.
+
+The slate punished picks that never scored early enough. The immediate model lesson is not “trust the board more”; it is to promote `dead_early_loss`, quiet-first-three shape, and side-import health checks before any May 31 MLB picks are generated.
+
 ## Known Gaps
 
 - M0 now has a file-based run manifest and verifier under `data-private/model-runs/mlb/M0/`.
 - The run manifest is not yet stored in shared model-run DB tables.
 - The source inventory is still intentionally broad while the MLB pregame chain is split into components.
+- M0 still delegates most prediction behavior to workflow and publish scripts; moving those internals comes after the May 30 golden checks stay green.

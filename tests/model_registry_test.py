@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import sqlite3
 import subprocess
 import unittest
 from pathlib import Path
@@ -96,6 +97,44 @@ class ModelRegistryTest(unittest.TestCase):
             check=False,
         )
         self.assertEqual(result.returncode, 0, msg=result.stdout + result.stderr)
+
+    def test_mlb_followup_closes_side_backtest_lane(self) -> None:
+        followup_path = ROOT / "pipeline" / "mlb" / "workflows" / "followup.mjs"
+        text = followup_path.read_text(encoding="utf-8")
+
+        self.assertIn("export-side-predictions.mjs", text)
+        self.assertIn("mlb_side_backtest.py", text)
+        self.assertIn("runPythonSideBacktest('import'", text)
+        self.assertIn("runPythonSideBacktest('grade'", text)
+
+    def test_m0_may30_side_predictions_are_training_ready(self) -> None:
+        side_board = ROOT / "data-private" / "predictions" / "mlb-sides" / "2026-05-30-board-live.json"
+        db_path = ROOT / "data-private" / "warehouse" / "sports.db"
+        if not side_board.exists() or not db_path.exists():
+            self.skipTest("May 30 MLB side board or warehouse is not present")
+
+        picks = read_json(side_board).get("picks", [])
+        conn = sqlite3.connect(db_path)
+        try:
+            prediction_count = conn.execute(
+                """
+                select count(*) from mlb_side_predictions
+                where prediction_date = '2026-05-30'
+                  and model_name = 'board-moneyline-v1.1-sanity'
+                """
+            ).fetchone()[0]
+            backtest_count = conn.execute(
+                """
+                select count(*) from mlb_side_backtests
+                where prediction_date = '2026-05-30'
+                  and model_name = 'board-moneyline-v1.1-sanity'
+                """
+            ).fetchone()[0]
+        finally:
+            conn.close()
+
+        self.assertEqual(prediction_count, len(picks))
+        self.assertEqual(backtest_count, len(picks))
 
 
 if __name__ == "__main__":

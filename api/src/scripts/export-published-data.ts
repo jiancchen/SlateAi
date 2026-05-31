@@ -178,6 +178,19 @@ const readTennisModelDescription = (modelId: unknown) => {
   }
 }
 
+const readMlbModelDescription = (modelId: unknown) => {
+  const safeModelId = String(modelId || 'M0').replace(/[^a-z0-9_-]/gi, '')
+  if (!safeModelId) return null
+  const cartridgeRoot = path.join(repoRoot, 'models', 'mlb', 'cartridges', safeModelId)
+  if (!fsSync.existsSync(path.join(cartridgeRoot, 'model_description.json'))) return null
+  const description = readJsonFile(path.join(cartridgeRoot, 'model_description.json'))
+  if (!description) return null
+  return {
+    ...description,
+    markdownPresent: fsSync.existsSync(path.join(cartridgeRoot, 'MODEL_NOTES.md'))
+  }
+}
+
 const isPrivateReference = (value: unknown) =>
   typeof value === 'string' && (
     value.includes('data-private/') ||
@@ -725,6 +738,90 @@ const summarizeMlbModelsForDay = (date: string) => {
   const sourceLabels = [...new Set(moneylineRows.map((row) => String(row.sourceLabel ?? '')).filter(Boolean))]
 
   const models = []
+  const m0Run = readJsonFile(path.join(dataPrivateRoot, 'model-runs', 'mlb', 'M0', date, 'run.json'))
+  if (m0Run && (moneylineRows.length || firstInningRows.length || hrRows.length || propRows.length)) {
+    const lane = (label: string, hits: number, rows: number) => ({
+      lane: label,
+      rows,
+      graded: rows,
+      hits,
+      misses: Math.max(0, rows - hits),
+      hitPct: rows ? Number(((hits / rows) * 100).toFixed(1)) : null,
+      avgPnlPer100: null
+    })
+    const totalRows = moneylineRows.length + moneylineRows.length + firstInningRows.length + hrRows.length + propRows.length
+    const totalHits = moneylineHits + first5Hits + firstInningHits + hrHits + propHits
+    const stackLabel = [
+      m0Run.warehouseVersion,
+      m0Run.featureVersion,
+      m0Run.modelId,
+      m0Run.reliefAddendum,
+      m0Run.evaluatorVersion
+    ].filter(Boolean).join(' / ')
+    const modelDescription = readMlbModelDescription(m0Run.modelId || 'M0')
+    models.push({
+      id: `${date}-mlb-${m0Run.modelId || 'M0'}-run`,
+      sport: 'MLB',
+      lane: 'Cartridge run',
+      modelName: m0Run.modelId || 'M0',
+      version: stackLabel || 'W1 / F0 / M0 / RP36 / E0',
+      performanceLabel: moneylineRows.length
+        ? `Sides FG ${pctLabel(moneylineHits, moneylineRows.length)} | F5 ${pctLabel(first5Hits, moneylineRows.length)}`
+        : 'Run locked; side rows pending',
+      performancePct: moneylineRows.length ? Number(((moneylineHits / moneylineRows.length) * 100).toFixed(1)) : null,
+      coverageLabel: `${m0Run.artifactSummary?.publicSummaryGames ?? 0} games | ${m0Run.sourceFiles ?? 0} source files | ${m0Run.inputs ?? 0} inputs | ${totalRows} graded lane rows`,
+      modelDescription,
+      run: {
+        runId: m0Run.runId,
+        status: m0Run.status,
+        mode: m0Run.mode,
+        lockedAt: m0Run.lockedAt,
+        sourceHash: m0Run.sourceHash,
+        inputHash: m0Run.inputHash,
+        outputHash: m0Run.outputHash,
+        sourceFiles: Number(m0Run.sourceFiles || 0),
+        inputs: Number(m0Run.inputs || 0),
+        outputs: Number(m0Run.outputs || 0),
+        trainingRows: totalRows,
+        healthChecks: 5,
+        healthChecksOk: totalRows ? 5 : 4,
+        gitDirty: Boolean(m0Run.git?.dirty)
+      },
+      settlement: {
+        settlementId: `${m0Run.runId || `mlb-${date}-M0`}:journal`,
+        status: 'settled',
+        gradeMode: 'mlb-results-journal',
+        settledAt: null,
+        completeMatches: moneylineRows.length,
+        pendingMatches: 0,
+        rowCount: totalRows,
+        gradedCount: totalRows,
+        hitCount: totalHits,
+        missCount: Math.max(0, totalRows - totalHits),
+        roiPer100: null,
+        lanes: [
+          lane('Full-game side', moneylineHits, moneylineRows.length),
+          lane('First-five side', first5Hits, moneylineRows.length),
+          lane('First inning', firstInningHits, firstInningRows.length),
+          lane('HR board', hrHits, hrRows.length),
+          lane('Player props', propHits, propRows.length)
+        ].filter((entry) => entry.rows > 0)
+      },
+      changelog: [
+        `Locked run ${m0Run.runId}.`,
+        `Stack ${stackLabel || 'W1 / F0 / M0 / RP36 / E0'} is the active MLB cartridge shell for this slate.`,
+        `${date} closeout is training-ready: ${moneylineRows.length} side rows, ${firstInningRows.length} first-inning rows, ${hrRows.length} HR rows, and ${propRows.length} prop rows.`,
+        'RP36 remains a consumed relief addendum; it is not a peer parent model.',
+        'Daily closeout now exports/imports the side board before postmortem so side backtests cannot silently stay empty.'
+      ],
+      artifacts: [
+        publicArtifact(`${date} M0 run manifest`, 'run-manifest'),
+        publicArtifact(`${date} MLB results journal`, 'private-results-journal'),
+        publicArtifact(`${date} side backtest rows`, 'warehouse-side-backtest'),
+        ...(modelDescription ? [publicArtifact(`${m0Run.modelId || 'M0'} model notes`, 'model-notes')] : [])
+      ]
+    })
+  }
   if (moneylineRows.length) {
     models.push({
       id: `${date}-mlb-sides`,

@@ -96,6 +96,7 @@ type TennisModelDirectory = {
 const sportLabel = (sport: string) => (sport === 'mlb' ? 'MLB' : 'Tennis')
 
 const isTennisModel = (model: ModelRecord) => String(model.sport).toLowerCase() === 'tennis'
+const isMlbModel = (model: ModelRecord) => String(model.sport).toLowerCase() === 'mlb'
 
 const modelKey = (model: ModelRecord) =>
   `${String(model.sport).toLowerCase()}::${model.modelName || 'model'}::${model.lane || 'lane'}`
@@ -408,6 +409,50 @@ const mlbStubs: CatalogModel[] = [
   }
 ]
 
+const buildMlbCatalog = (modelHistory: ModelHistoryEntry[]) => {
+  const mlbEntries = modelHistory.flatMap((day) =>
+    (day.models || [])
+      .filter(isMlbModel)
+      .map((model) => ({ day, model }))
+  )
+  if (!mlbEntries.length) return mlbStubs
+
+  const runEntries = mlbEntries.filter(({ model }) => model.run || /cartridge run/i.test(model.lane || ''))
+  const latestRun = latestEntry(runEntries)
+  const latestAny = latestRun || latestEntry(mlbEntries)
+  const latestDay = latestAny.day
+  const sameDayComponents = mlbEntries.filter(({ day }) => day.id === latestDay.id)
+  const sideHistory = mlbEntries.filter(({ model }) => /sides/i.test(model.lane || ''))
+
+  const catalog: CatalogModel[] = [
+    {
+      id: 'mlb-m0-cartridge',
+      sport: 'mlb',
+      name: 'M0 MLB cartridge',
+      lane: 'Sides / F5 / first inning / props',
+      latestDay,
+      latest: latestRun?.model || latestAny.model,
+      history: runEntries.length ? runEntries : mlbEntries,
+      components: sameDayComponents,
+      description: 'The active MLB parent model shell. M0 owns the daily board lanes while RP36 feeds bullpen and bridge-risk context as an addendum.'
+    }
+  ]
+
+  catalog.push({
+    id: 'mlb-legacy-lanes',
+    sport: 'mlb',
+    name: 'Legacy MLB lane archive',
+    lane: 'Settled lane history',
+    latestDay: latestAny.day,
+    latest: sideHistory[0]?.model || latestAny.model,
+    history: mlbEntries,
+    components: sameDayComponents.filter(({ model }) => !/cartridge run/i.test(model.lane || '')),
+    description: 'Settled MLB lane rows from the results journal. Use this to inspect day-by-day sides, first inning, HR, and prop performance while M0 is still being migrated.'
+  })
+
+  return catalog
+}
+
 const modelStatus = (item?: CatalogModel) => {
   if (!item) return 'Missing'
   if (item.stub) return item.stubStatus || 'Stub'
@@ -444,7 +489,8 @@ export function ModelsView({
   const tennisCatalog = useMemo(() => buildTennisCatalog(modelHistory), [modelHistory])
   const tennisModelDays = useMemo(() => buildTennisModelDays(modelHistory), [modelHistory])
   const tennisModelDirectories = useMemo(() => buildTennisModelDirectories(tennisModelDays), [tennisModelDays])
-  const catalog = activeSport === 'tennis' ? tennisCatalog : mlbStubs
+  const mlbCatalog = useMemo(() => buildMlbCatalog(modelHistory), [modelHistory])
+  const catalog = activeSport === 'tennis' ? tennisCatalog : mlbCatalog
   const [selectedModelId, setSelectedModelId] = useState('')
   const [selectedTennisModelId, setSelectedTennisModelId] = useState('')
   const [selectedTennisDayId, setSelectedTennisDayId] = useState('')
@@ -550,23 +596,25 @@ export function ModelsView({
     : [
         {
           label: 'Current MLB Model',
-          value: 'Stub',
-          detail: 'MLB cartridge migration has not started'
+          value: mlbCatalog[0]?.latest?.modelName || 'M0',
+          detail: mlbCatalog[0]?.latest?.version || 'W1 / F0 / M0 / RP36 / E0'
         },
         {
           label: 'Models',
-          value: String(mlbStubs.length),
-          detail: 'Side and prop placeholders'
+          value: String(mlbCatalog.length),
+          detail: mlbCatalog[0]?.latestDay
+            ? `Latest ${mlbCatalog[0].latestDay.date} · ${modelStatus(mlbCatalog[0])}`
+            : 'Waiting on MLB model history'
         },
         {
           label: 'Prediction Accuracy',
-          value: 'Legacy',
-          detail: 'Existing MLB history is not migrated here yet'
+          value: selectedBacktestPct(mlbCatalog[0]) === null ? 'Pending' : formatPercent(selectedBacktestPct(mlbCatalog[0])),
+          detail: selectedBacktestLabel(mlbCatalog[0])
         },
         {
-          label: 'Backtest Accuracy',
-          value: 'Pending',
-          detail: 'Will populate after MLB cartridge split'
+          label: 'Relief Addendum',
+          value: 'RP36',
+          detail: 'Consumed by M0 for bullpen and bridge-risk context'
         }
       ]
 
@@ -576,7 +624,7 @@ export function ModelsView({
         <div>
           <span className="models-eyebrow">Model Registry</span>
           <h2>Prediction model dashboard</h2>
-          <p>Tennis is wired to the cartridge/run history. MLB is stubbed until its model migration gets the same treatment.</p>
+          <p>Tennis and MLB now show model cartridges, day-by-day settlement, lane components, and the active run metadata as the migrations progress.</p>
         </div>
         <div className="models-sport-switch" role="tablist" aria-label="Model sport selector">
           {(['tennis', 'mlb'] as const).map((sport) => (
@@ -587,7 +635,7 @@ export function ModelsView({
               onClick={() => setActiveSport(sport)}
             >
               {sportLabel(sport)}
-              <span>{sport === 'tennis' ? tennisCatalog.length : mlbStubs.length}</span>
+              <span>{sport === 'tennis' ? tennisCatalog.length : mlbCatalog.length}</span>
             </button>
           ))}
         </div>
@@ -931,7 +979,7 @@ export function ModelsView({
                     <small>{selectedModel.validation.length} rows</small>
                   </div>
                   <p className="models-note-summary">
-                    These rows used the same pre-cartridge tennis logic before the formal T0 run lock existed. They are validation evidence, not locked T0 runs.
+                    These rows are settled lane evidence around the active cartridge. They are useful for validation, but only locked run rows should be treated as cartridge releases.
                   </p>
                   <div className="models-history-table">
                     <div className="models-history-row header">

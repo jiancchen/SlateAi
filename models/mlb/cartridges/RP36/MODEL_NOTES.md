@@ -16,6 +16,14 @@ It should stay as an addendum consumed by M0. Its job is to explain bullpen path
 
 The first real RP36 migration must reproduce the existing 2026-05-30 reliever-shadow artifact before any scoring changes are accepted.
 
+## Current Use Rule
+
+Use RP36 as a risk and context layer, not as a standalone prediction engine.
+
+- Exact first-up identity is too noisy for direct bets.
+- Top-2/top-3 clusters are useful for bullpen path, bridge risk, and late-inning side/total haircuts.
+- If RP36 conflicts with M0, it should downgrade or redirect the market expression before it creates a pick.
+
 ## Known Gaps
 
 - No RP36 settlement table yet.

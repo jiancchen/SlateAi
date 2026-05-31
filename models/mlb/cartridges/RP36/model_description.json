@@ -8,7 +8,8 @@
   "keyImprovements": [
     "Separates the relief stack from the parent MLB model without promoting it to a competing model.",
     "Preserves the E36 shadow label as a legacy alias while giving the component a stable cartridge name.",
-    "Documents the current source chain before moving any relief code."
+    "Documents the current source chain before moving any relief code.",
+    "Tightens the role boundary: RP36 can downgrade side/total/prop confidence through bridge risk, but cannot graduate a standalone pick from first-up reliever guesses."
   ],
   "keyMetrics": [
     {
@@ -30,7 +31,8 @@
   "notes": [
     "RP36 should inform sides, totals, props, and late-game risk; it should not produce final board picks alone.",
     "The first behavior-preserving migration test should compare against the 2026-05-30 reliever-shadow artifact.",
-    "The current exporter still emits E36 shadow in payload metadata."
+    "The current exporter still emits E36 shadow in payload metadata.",
+    "Use top-2/top-3 cluster confidence as context before exact first-up identity; exact first-up is too noisy at the current audit rate."
   ],
   "knownLimitations": [
     "No formal RP36 model-run manifest exists yet.",

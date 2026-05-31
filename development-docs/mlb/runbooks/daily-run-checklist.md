@@ -9,6 +9,24 @@ The goal is not just to generate a board. The goal is to confirm:
 - lineups are as current as MLB has posted
 - weather and park context are attached
 - bridge-chain, HR, and non-HR prop layers were produced
+- the prior settled MLB day is warehoused and graded before new model lessons are applied
+
+## 0. Prior-Day Model Gate
+
+Before starting a new MLB slate, close and grade the most recent finished slate.
+
+```bash
+npm run data:close:mlb-day -- --date PRIOR-YYYY-MM-DD
+npm test
+```
+
+Required prior-day checks:
+- `data-private/history/mlb-results-PRIOR-YYYY-MM-DD.jsonl` exists.
+- `mlb_side_predictions` has one row per prior-day board pick for `board-moneyline-v1.1-sanity`.
+- `mlb_side_backtests` has one graded row per prior-day board pick for `board-moneyline-v1.1-sanity`.
+- the postmortem names the actual failure shape before any next-day model change is trusted.
+
+If the side rows are missing, do not start the new slate. Fix closeout first.
 
 ## 1. Preflight
 
@@ -139,6 +157,9 @@ This now handles:
 - rolling state-snapshot refresh
 - HR grading
 - tracked prop grading
+- importable side-board export
+- side prediction import into `mlb_side_predictions`
+- side grading into `mlb_side_backtests`
 - history export
 - published history refresh
 - hidden-edge haircut-grid rerun
@@ -150,6 +171,8 @@ Then update:
 - follow-up notes
 - graded history
 - model trend review
+
+Closeout must not be considered complete unless the side board is both imported and graded. The May 30 gate exists specifically because a veto artifact can look useful while the formal side backtest lane stays empty.
 
 ## Short Version
 
