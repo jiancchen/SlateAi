@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "sport": "tennis",
+  "featureVersion": "F0",
+  "requiredSources": [
+    "espn_scoreboard",
+    "rankings_snapshot",
+    "flashscore_recent_form",
+    "sofascore_context",
+    "fanduel_lines",
+    "kalshi_prediction_market",
+    "weather"
+  ],
+  "requiredCoverageMetrics": [
+    "singles_count",
+    "missing_rank_count",
+    "flashscore_missing_stat_cells",
+    "sofascore_mapped_event_count",
+    "fanduel_market_coverage",
+    "kalshi_market_coverage",
+    "weather_window_coverage"
+  ],
+  "trainingSnapshotRule": "Run-scoped training rows or a training-row hash must be stored with each locked run."
+}

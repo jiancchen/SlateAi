@@ -8,7 +8,7 @@
   },
   "shadow": [],
   "runner": {
-    "command": "node pipeline/tennis_model_cartridges/T0/runner.mjs",
+    "command": "node models/tennis/cartridges/T0/runner.mjs",
     "defaultMode": "pregame"
   },
   "warehouse": {

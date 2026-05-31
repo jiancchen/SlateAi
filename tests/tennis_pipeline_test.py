@@ -225,7 +225,7 @@ class TennisWarehouseImportTest(unittest.TestCase):
 
     def test_tennis_model_cartridges_have_required_model_cards(self) -> None:
         root = Path(__file__).resolve().parents[1]
-        cartridge_root = root / "pipeline" / "tennis_model_cartridges"
+        cartridge_root = root / "models" / "tennis" / "cartridges"
         cartridge_dirs = sorted(path for path in cartridge_root.glob("T*") if path.is_dir())
         self.assertTrue(cartridge_dirs, "expected at least one tennis model cartridge")
 
@@ -239,8 +239,8 @@ class TennisWarehouseImportTest(unittest.TestCase):
 
             manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
             description = json.loads(description_path.read_text(encoding="utf-8"))
-            self.assertEqual(manifest.get("modelDescription"), f"pipeline/tennis_model_cartridges/{cartridge_dir.name}/model_description.json")
-            self.assertEqual(manifest.get("modelNotes"), f"pipeline/tennis_model_cartridges/{cartridge_dir.name}/MODEL_NOTES.md")
+            self.assertEqual(manifest.get("modelDescription"), f"models/tennis/cartridges/{cartridge_dir.name}/model_description.json")
+            self.assertEqual(manifest.get("modelNotes"), f"models/tennis/cartridges/{cartridge_dir.name}/MODEL_NOTES.md")
             self.assertEqual(description.get("modelId"), cartridge_dir.name)
             for key in ("keyImprovements", "keyMetrics", "notes"):
                 self.assertIn(key, description)

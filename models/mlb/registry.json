@@ -2,14 +2,26 @@
   "schemaVersion": "sport-model-registry-v1",
   "sport": "mlb",
   "activeModelId": "M0",
+  "active": {
+    "warehouse": "W1",
+    "features": "F0",
+    "model": "M0",
+    "reliefAddendum": "RP36",
+    "evaluator": "E0"
+  },
+  "runner": {
+    "command": "node models/mlb/cartridges/M0/runner.mjs",
+    "defaultMode": "pregame",
+    "migrationNote": "Temporary cartridge runner delegates to the legacy pregame script until M0 owns the internals."
+  },
   "cartridgeRoot": "./cartridges",
-  "migrationStatus": "planned",
+  "migrationStatus": "shells_started",
   "cartridges": [
     {
       "modelId": "M0",
       "role": "parent_model",
       "targetPath": "./cartridges/M0",
-      "status": "planned_shell",
+      "status": "shell_created",
       "components": ["RP36"],
       "lanes": ["moneyline", "first5", "totals", "first_inning", "props", "home_runs"],
       "notes": "Current MLB side/starter logic is spread across pipeline scripts and generated artifacts. M0 will become the parent model cartridge."
@@ -20,14 +32,14 @@
       "legacyAlias": ["E36 shadow"],
       "consumedBy": ["M0"],
       "targetPath": "./cartridges/RP36",
-      "status": "planned_shell",
+      "status": "shell_created",
       "notes": "Current relief stack is exported by pipeline/export_mlb_reliever_shadow_board.py and will be migrated behind an RP36 cartridge wrapper."
     },
     {
       "modelId": "E0",
       "role": "evaluator",
       "targetPath": "./cartridges/E0",
-      "status": "planned_shell"
+      "status": "shell_created"
     }
   ]
 }

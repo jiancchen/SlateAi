@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "modelId": "M0",
+  "sport": "mlb",
+  "name": "M0 MLB parent baseline",
+  "status": "migration-shell",
+  "summary": "Initial shell for the current MLB parent model. This does not change predictions yet; it gives the existing starter, side, total, prop, and market-context scripts a cartridge home.",
+  "keyImprovements": [
+    "Names the current MLB parent model as M0 so future changes can be compared against a stable baseline.",
+    "Keeps RP36 as a relief addendum consumed by M0 instead of treating the reliever shadow artifact as a separate parent model.",
+    "Separates model ownership from workflow plumbing before moving scripts out of the flat pipeline folder."
+  ],
+  "keyMetrics": [
+    {
+      "label": "Migration status",
+      "value": "Shell",
+      "details": "No MLB prediction behavior has moved yet."
+    },
+    {
+      "label": "Relief addendum",
+      "value": "RP36",
+      "details": "Legacy E36 shadow layer is tracked as a component consumed by M0."
+    }
+  ],
+  "notes": [
+    "M0 should eventually own the final MLB side, first-five, total, prop, and market-context outputs.",
+    "Current scripts remain in pipeline until a behavior-preserving wrapper and golden test are added.",
+    "Do not promote RP36 into a standalone parent model; it should feed M0."
+  ],
+  "knownLimitations": [
+    "No MLB golden snapshot or model-run lock has been created for M0 yet.",
+    "Source inventory is provisional until the MLB pregame chain is fully audited."
+  ],
+  "files": {
+    "markdown": "models/mlb/cartridges/M0/MODEL_NOTES.md"
+  }
+}

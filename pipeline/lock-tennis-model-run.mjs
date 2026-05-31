@@ -17,6 +17,7 @@ import {
   stableJson,
   writeJson
 } from './lib/model-run-utils.mjs'
+import { resolveTennisCartridgeFile } from './lib/model-cartridge-resolver.mjs'
 
 const parseArgs = () => {
   const args = process.argv.slice(2)
@@ -40,17 +41,18 @@ const parseArgs = () => {
   return options
 }
 
-const sourceInventory = (model, manifest) => {
+const sourceInventory = ({ manifest, manifestPath }) => {
   const manifestFiles = (manifest.sourceFiles || []).map((entry) => ({ path: entry.path, role: entry.role || 'model-source' }))
   const frameworkFiles = [
     { path: 'pipeline/tennis_model_registry.json', role: 'model-registry' },
-    { path: `pipeline/tennis_model_cartridges/${model}/manifest.json`, role: 'model-manifest' },
-    { path: `pipeline/tennis_model_cartridges/${model}/runner.mjs`, role: 'model-runner-wrapper' },
-    { path: `pipeline/tennis_model_cartridges/${model}/output-contract.json`, role: 'output-contract' },
-    { path: 'pipeline/tennis_model_cartridges/F0/manifest.json', role: 'feature-manifest' },
-    { path: 'pipeline/tennis_model_cartridges/F0/feature-contract.json', role: 'feature-contract' },
-    { path: 'pipeline/tennis_model_cartridges/E0/manifest.json', role: 'evaluator-manifest' },
-    { path: 'pipeline/tennis_model_cartridges/E0/metrics-contract.json', role: 'metrics-contract' },
+    { path: manifestPath, role: 'model-manifest' },
+    { path: manifest.entrypoint || 'models/tennis/cartridges/T0/runner.mjs', role: 'model-runner-wrapper' },
+    { path: manifest.outputContract || 'models/tennis/cartridges/T0/output-contract.json', role: 'output-contract' },
+    { path: 'models/tennis/cartridges/F0/manifest.json', role: 'feature-manifest' },
+    { path: manifest.featureContract || 'models/tennis/cartridges/F0/feature-contract.json', role: 'feature-contract' },
+    { path: 'models/tennis/cartridges/E0/manifest.json', role: 'evaluator-manifest' },
+    { path: manifest.metricsContract || 'models/tennis/cartridges/E0/metrics-contract.json', role: 'metrics-contract' },
+    { path: 'pipeline/lib/model-cartridge-resolver.mjs', role: 'cartridge-resolver' },
     { path: 'pipeline/lib/model-run-utils.mjs', role: 'run-lock-helper' },
     { path: 'pipeline/lib/warehouse-paths.mjs', role: 'warehouse-path-resolver' },
     { path: 'pipeline/warehouse_paths.py', role: 'warehouse-path-resolver' },
@@ -154,7 +156,8 @@ const main = async () => {
   const runId = runIdFor({ date: options.date, stack })
   const model = stack.modelId
   const runDir = runDirFor({ model, date: options.date })
-  const manifestPath = `pipeline/tennis_model_cartridges/${model}/manifest.json`
+  const manifestFile = await resolveTennisCartridgeFile({ modelId: model, fileName: 'manifest.json' })
+  const manifestPath = manifestFile.path
   const manifest = await readJson(manifestPath, {})
 
   const currentRun = await readJson(`${runDir}/run.json`, {
@@ -213,7 +216,7 @@ const main = async () => {
     note: 'Pregame lock stores grades placeholder; settled/postmatch runs should write lane results without mutating this lock.'
   })
 
-  const sourceFiles = await Promise.all(sourceInventory(model, manifest).map(async (entry) => ({
+  const sourceFiles = await Promise.all(sourceInventory({ manifest, manifestPath }).map(async (entry) => ({
     ...entry,
     ...(await fileHash(entry.path))
   })))

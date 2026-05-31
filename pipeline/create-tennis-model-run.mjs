@@ -10,6 +10,7 @@ import {
   sqliteJson,
   writeJson
 } from './lib/model-run-utils.mjs'
+import { resolveTennisCartridgeFile } from './lib/model-cartridge-resolver.mjs'
 
 const parseArgs = () => {
   const args = process.argv.slice(2)
@@ -43,7 +44,8 @@ export const createRun = async (options) => {
   const stack = await activeStack({ model: options.model || null })
   const runId = runIdFor({ date: options.date, stack })
   const registry = await readJson('pipeline/tennis_model_registry.json', {})
-  const manifest = await readJson(`pipeline/tennis_model_cartridges/${stack.modelId}/manifest.json`, {})
+  const manifestFile = await resolveTennisCartridgeFile({ modelId: stack.modelId, fileName: 'manifest.json' })
+  const manifest = await readJson(manifestFile.path, {})
   const git = await gitInfo()
   const existingRows = await sqliteJson(`select status from tennis_model_runs where run_id = ${shellQuote(runId)} limit 1`)
   if (existingRows[0]?.status === 'locked' && !options.force) {
@@ -64,11 +66,11 @@ export const createRun = async (options) => {
     lockedAt: null,
     git,
     registry: {
-      path: 'pipeline/tennis_model_registry.json',
+      path: registry.registryPath || 'models/tennis/registry.json',
       active: registry.active || null
     },
     modelManifest: {
-      path: `pipeline/tennis_model_cartridges/${stack.modelId}/manifest.json`,
+      path: manifestFile.path,
       name: manifest.name || null,
       status: manifest.status || null
     },

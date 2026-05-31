@@ -165,7 +165,11 @@ const publicArtifact = (label: string, role: string) => ({ label, role })
 const readTennisModelDescription = (modelId: unknown) => {
   const safeModelId = String(modelId || 'T0').replace(/[^a-z0-9_-]/gi, '')
   if (!safeModelId) return null
-  const cartridgeRoot = path.join(repoRoot, 'pipeline', 'tennis_model_cartridges', safeModelId)
+  const cartridgeRoot = [
+    path.join(repoRoot, 'models', 'tennis', 'cartridges', safeModelId),
+    path.join(repoRoot, 'pipeline', 'tennis_model_cartridges', safeModelId)
+  ].find((candidate) => fsSync.existsSync(path.join(candidate, 'model_description.json')))
+  if (!cartridgeRoot) return null
   const description = readJsonFile(path.join(cartridgeRoot, 'model_description.json'))
   if (!description) return null
   return {

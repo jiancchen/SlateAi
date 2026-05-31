@@ -1,0 +1,53 @@
+{
+  "id": "M0",
+  "sport": "mlb",
+  "name": "M0 MLB parent baseline",
+  "status": "migration-shell",
+  "role": "parent_model",
+  "createdForMigration": "2026-05-31",
+  "entrypoint": "models/mlb/cartridges/M0/runner.mjs",
+  "legacyEntrypoint": "pipeline/run-mlb-pregame.mjs",
+  "legacyEntrypoints": [
+    "pipeline/generate-mlb-day-files.mjs",
+    "pipeline/export-mlb-side-predictions.mjs",
+    "pipeline/export-mlb-prop-predictions.mjs",
+    "pipeline/export-home-run-predictions.mjs"
+  ],
+  "components": [
+    "RP36"
+  ],
+  "outputContract": "models/mlb/cartridges/M0/output-contract.json",
+  "modelDescription": "models/mlb/cartridges/M0/model_description.json",
+  "modelNotes": "models/mlb/cartridges/M0/MODEL_NOTES.md",
+  "sourceFiles": [
+    {
+      "role": "pregame-runner",
+      "path": "models/mlb/cartridges/M0/runner.mjs"
+    },
+    {
+      "role": "legacy-pregame-runner",
+      "path": "pipeline/run-mlb-pregame.mjs"
+    },
+    {
+      "role": "day-generator",
+      "path": "pipeline/generate-mlb-day-files.mjs"
+    },
+    {
+      "role": "side-exporter",
+      "path": "pipeline/export-mlb-side-predictions.mjs"
+    },
+    {
+      "role": "warehouse-code",
+      "path": "pipeline/mlb_warehouse.py"
+    },
+    {
+      "role": "side-backtest",
+      "path": "pipeline/mlb_side_backtest.py"
+    },
+    {
+      "role": "component-addendum",
+      "path": "models/mlb/cartridges/RP36/manifest.json"
+    }
+  ],
+  "description": "Shell for the parent MLB model. M0 owns final betting lanes; RP36 remains a consumed relief addendum, not a competing parent model."
+}
