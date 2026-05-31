@@ -23,6 +23,29 @@ Gate:
 
 Every new MLB-M0/MLB-RP36 lock should re-index the warehouse rows, and tests should fail if locked runs stop producing DB model-run/lane rows.
 
+## 2026-05-31 - Parent Model Lifecycle Wrappers
+
+Added registry-aware lifecycle wrappers above the cartridge-local scripts.
+
+Implemented:
+
+- `models/mlb/run-cartridge.mjs`
+- `models/mlb/lock-cartridge.mjs`
+- `models/mlb/verify-cartridge.mjs`
+- `models/mlb/compare-cartridges.mjs`
+- `models/mlb/scaffold-cartridge.mjs`
+- `development-docs/mlb/runbooks/model-iteration.md`
+
+Current trust level:
+
+- Good enough to run, lock, verify, and compare the active `MLB-M0` through the registry.
+- Good enough to dry-run a future `MLB-M1` scaffold without creating files.
+- Not a guarantee that an `MLB-M1` scaffold is production-ready; benchmark locks and lane comparisons are still required before activation.
+
+Architecture issue surfaced:
+
+The daily package scripts can now dispatch through the registry, but app-facing shared composition and some compatibility loaders still import the MLB-M0 adapter directly. That is acceptable while new models preserve the same app contract. If M1 changes the match model contract, those paths must become registry-aware too.
+
 ## 2026-05-31 - Hitter Career And Repeatability Baseline
 
 Added low-weight hitter career profiles for current-lineup batters. The goal is not to let old career numbers drive current props; the goal is to keep tiny current-season samples from exploding into fake certainty.

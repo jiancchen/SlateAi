@@ -10,14 +10,14 @@
   "featureVersion": "MLB-F0",
   "mode": "pregame",
   "status": "locked",
-  "lockedAt": "2026-05-31T22:40:29.977Z",
+  "lockedAt": "2026-05-31T23:15:02.469Z",
   "git": {
-    "commit": "ea6b440ff06873f727fc42c7e94163cc7c65f6c7",
+    "commit": "a3c6b3d1f6d8218919c6b31d86b28bd7d8cc9e99",
     "dirty": true
   },
-  "sourceHash": "6d7d77c459bdb89ffe77738d131005f6e540c6ecf5ce1b933f376d0f5308d0ef",
+  "sourceHash": "511b6f9b395af8f90cfbaf804f1ee1f52ee295955169179fd9f8e5a75c365ae4",
   "inputHash": "be188a5eb40606bd24252c14260cd29b9cd9d269f5838e2388f020455c783b11",
-  "outputHash": "c324b44a290251c5f52fcce605b01d34b19c68fbf11e16eaba1544a9ed89eb1b",
+  "outputHash": "a788f2a14a4ce5ce874ab4dac76f51a2b236ad28f77c774f66b14cc9c8d12535",
   "snapshotHash": "5e16fd2c9926a9af5b3d2983d5eeff7d46741ea5b2ace1d5bd129356c3837054",
   "artifactSummary": {
     "publicSummaryGames": 15,
@@ -28,7 +28,7 @@
     "relieverTeams": 30,
     "lineupGames": 15
   },
-  "sourceFiles": 81,
+  "sourceFiles": 87,
   "inputs": 21,
   "outputs": 4
 }

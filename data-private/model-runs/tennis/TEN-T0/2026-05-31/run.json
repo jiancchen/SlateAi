@@ -10,9 +10,9 @@
   "mode": "pregame",
   "status": "locked",
   "createdAt": "2026-05-31T05:20:41.707Z",
-  "lockedAt": "2026-05-31T22:37:33.916Z",
+  "lockedAt": "2026-05-31T23:14:26.036Z",
   "git": {
-    "commit": "ea6b440ff06873f727fc42c7e94163cc7c65f6c7",
+    "commit": "a3c6b3d1f6d8218919c6b31d86b28bd7d8cc9e99",
     "dirty": true
   },
   "registry": {
@@ -30,9 +30,9 @@
     "status": "baseline"
   },
   "notes": "Locked TEN-T0 pregame run for 2026-05-31.",
-  "sourceHash": "5c200a1c2d55af9d8fecdd74fe6ca0ff060f068650174c5aedd57a2ab0cf9b1d",
+  "sourceHash": "d73fc968ea58bd05f1d5340bbe62533ed4eb1eb8c291b11507ea537f86b88cab",
   "inputHash": "a7e49fc8d26a1c8d8df54d967eb51b93b799d67cc1fea6239b8feab15a87a551",
-  "outputHash": "4bf69242723004a6e326a5c9bfa8b989dbe68a6ea93cafc0d275b71b857a11c6",
+  "outputHash": "aa4b760db1876b9de69434a09a053b8b84e8a3b45dfc5323c44db265b25a3ed2",
   "trainingRows": {
     "count": 8,
     "hash": "f3ba9f871cec4fe76c24fdcf8c4b8f519c68e148f12ef750ff6e913628569c69"

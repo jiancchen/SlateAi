@@ -15,7 +15,8 @@
     "Moves MLB-M0 workflows and publish lanes into the cartridge while old pipeline paths remain compatibility launchers.",
     "Adds a documented pipeline ownership boundary so data plumbing and offline research are not mistaken for missed model code.",
     "Adds a component registry for sides, first-five, totals, props, HRs, market context, and MLB-RP36 so future work can land in the right model lane without scanning the whole cartridge.",
-    "Indexes MLB-M0 and MLB-RP36 run locks into shared warehouse model-run tables so performance/backtest queries no longer depend only on JSON files."
+    "Indexes MLB-M0 and MLB-RP36 run locks into shared warehouse model-run tables so performance/backtest queries no longer depend only on JSON files.",
+    "Adds registry-aware MLB lifecycle wrappers so future parent models can be scaffolded, run, locked, verified, and compared without hardcoding package scripts to MLB-M0."
   ],
   "keyMetrics": [
     {
@@ -67,6 +68,11 @@
       "label": "Run indexing",
       "value": "Warehouse-backed",
       "details": "model_runs, model_run_lanes, model_run_artifacts, model_component_runs, and RP36 settlement tables are populated from run locks."
+    },
+    {
+      "label": "Lifecycle wrappers",
+      "value": "Registry-aware",
+      "details": "models/mlb/run-cartridge.mjs, lock-cartridge.mjs, verify-cartridge.mjs, compare-cartridges.mjs, and scaffold-cartridge.mjs sit above cartridge-local code."
     }
   ],
   "notes": [
@@ -78,7 +84,8 @@
     "Before a new MLB slate, the prior day must have a results journal plus side prediction/backtest rows so lessons are based on warehouse-settled data.",
     "Quiet-start, traffic-without-conversion, and quiet-first-five risks now suppress full-game side promotion unless another market expression is cleaner.",
     "`MLB-M0_log.md` is the working log for warehouse/model changes that still need lane-specific proof.",
-    "Run locks remain the reproducibility artifact, but every locked MLB-M0/MLB-RP36 run should also be indexed into the shared warehouse model-run tables."
+    "Run locks remain the reproducibility artifact, but every locked MLB-M0/MLB-RP36 run should also be indexed into the shared warehouse model-run tables.",
+    "New parent models should start from the model-iteration runbook and registry-aware wrappers, not by editing package scripts to point at a draft cartridge."
   ],
   "knownLimitations": [
     "Compatibility launchers remain under pipeline/mlb, but they are no longer part of the narrowed MLB-M0 source lock inventory."

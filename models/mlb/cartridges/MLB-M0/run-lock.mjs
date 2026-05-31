@@ -8,6 +8,7 @@ import { buildM0Snapshot } from './snapshot.mjs'
 
 const execFileAsync = promisify(execFile)
 const rootDir = path.resolve(import.meta.dirname, '..', '..', '..', '..')
+const localModelId = path.basename(import.meta.dirname).toUpperCase()
 
 const readJson = async (relativePath, fallback = null) => {
   try {
@@ -64,10 +65,13 @@ const aggregateHash = (entries) => sha256Text(stableJson(
 
 const parseArgs = () => {
   const args = process.argv.slice(2)
-  const options = { date: '' }
+  const options = { date: '', model: process.env.MLB_MODEL_ID || localModelId }
   for (let index = 0; index < args.length; index += 1) {
     if (args[index] === '--date') {
       options.date = args[index + 1]
+      index += 1
+    } else if (args[index] === '--model') {
+      options.model = String(args[index + 1] || '').toUpperCase()
       index += 1
     }
   }
@@ -163,11 +167,12 @@ const inputInventory = async (date) => uniqueEntries([
   { path: `data-private/lineups/mlb/${date}-lineup-board.json`, role: 'lineup-board' }
 ])
 
-export const lockM0Run = async ({ date }) => {
+export const lockM0Run = async ({ date, model = process.env.MLB_MODEL_ID || localModelId }) => {
   const registry = await readJson('models/mlb/registry.json', {})
   const active = registry.active || {}
-  const runId = `mlb-${date}-${active.warehouse || 'MLB-W1'}-${active.features || 'MLB-F0'}-${active.model || 'MLB-M0'}-${active.reliefAddendum || 'MLB-RP36'}-${active.evaluator || 'MLB-E0'}`
-  const runDir = `data-private/model-runs/mlb/MLB-M0/${date}`
+  const modelId = String(model || localModelId).toUpperCase()
+  const runId = `mlb-${date}-${active.warehouse || 'MLB-W1'}-${active.features || 'MLB-F0'}-${modelId}-${active.reliefAddendum || 'MLB-RP36'}-${active.evaluator || 'MLB-E0'}`
+  const runDir = `data-private/model-runs/mlb/${modelId}/${date}`
   const snapshot = await buildM0Snapshot({ date })
   const sourceFiles = await Promise.all((await sourceInventory()).map(async (entry) => ({ ...entry, ...(await fileHash(entry.path)) })))
   const inputFiles = await Promise.all((await inputInventory(date)).map(async (entry) => ({ ...entry, ...(await fileHash(entry.path)) })))
@@ -190,7 +195,7 @@ export const lockM0Run = async ({ date }) => {
     runId,
     sport: 'mlb',
     slateDate: date,
-    modelId: active.model || 'MLB-M0',
+    modelId,
     reliefAddendum: active.reliefAddendum || 'MLB-RP36',
     evaluatorVersion: active.evaluator || 'MLB-E0',
     warehouseVersion: active.warehouse || 'MLB-W1',
@@ -227,7 +232,7 @@ export const lockM0Run = async ({ date }) => {
     '--sport',
     'mlb',
     '--model-id',
-    active.model || 'MLB-M0',
+    modelId,
     '--date',
     date
   ])
@@ -241,8 +246,8 @@ export const lockM0Run = async ({ date }) => {
 const executedUrl = process.argv[1] ? pathToFileURL(path.resolve(process.argv[1])).href : null
 
 if (import.meta.url === executedUrl) {
-  const { date } = parseArgs()
-  const { run, runDir } = await lockM0Run({ date })
+  const { date, model } = parseArgs()
+  const { run, runDir } = await lockM0Run({ date, model })
   console.log(JSON.stringify({
     runId: run.runId,
     runDir,

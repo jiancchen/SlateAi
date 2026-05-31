@@ -91,6 +91,57 @@ class ModelRegistryTest(unittest.TestCase):
                 self.assertFalse(path_value.startswith("pipeline/mlb/workflows/"), f"workflow shim in M0 source lock: {path_value}")
                 self.assertFalse(path_value.startswith("pipeline/mlb/publish/"), f"publish shim in M0 source lock: {path_value}")
 
+    def test_mlb_lifecycle_wrappers_and_runbook_exist(self) -> None:
+        for path_value in (
+            "models/mlb/lib/registry-utils.mjs",
+            "models/mlb/run-cartridge.mjs",
+            "models/mlb/lock-cartridge.mjs",
+            "models/mlb/verify-cartridge.mjs",
+            "models/mlb/compare-cartridges.mjs",
+            "models/mlb/scaffold-cartridge.mjs",
+            "development-docs/mlb/runbooks/model-iteration.md",
+        ):
+            with self.subTest(path=path_value):
+                self.assertTrue((ROOT / path_value).exists(), f"MLB lifecycle file missing: {path_value}")
+
+        package = read_json(ROOT / "package.json")
+        scripts = package.get("scripts", {})
+        for script_name in (
+            "data:run:mlb-pregame",
+            "data:lock:mlb-run",
+            "data:verify:mlb-run",
+            "data:generate:mlb-day",
+            "data:export:mlb-props",
+            "data:export:mlb-sides",
+        ):
+            with self.subTest(script=script_name):
+                self.assertIn("models/mlb/", scripts.get(script_name, ""))
+                self.assertNotIn("models/mlb/cartridges/MLB-M0", scripts.get(script_name, ""))
+
+    def test_mlb_scaffold_dry_run_does_not_create_target(self) -> None:
+        target_dir = ROOT / "models" / "mlb" / "cartridges" / "MLB-M1"
+        if target_dir.exists():
+            self.skipTest("MLB-M1 already exists; dry-run no-create check is no longer applicable")
+
+        result = subprocess.run(
+            [
+                "node",
+                "models/mlb/scaffold-cartridge.mjs",
+                "--from",
+                "MLB-M0",
+                "--to",
+                "MLB-M1",
+            ],
+            cwd=ROOT,
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        self.assertEqual(result.returncode, 0, msg=result.stdout + result.stderr)
+        payload = json.loads(result.stdout)
+        self.assertEqual(payload.get("status"), "dry-run")
+        self.assertFalse(target_dir.exists(), "MLB-M1 should not be created during scaffold dry-run")
+
     def test_active_app_and_future_tennis_import_shared_sports_core_directly(self) -> None:
         app_text = (ROOT / "web" / "src" / "App.tsx").read_text(encoding="utf-8")
         slate_text = (ROOT / "web" / "src" / "lib" / "slate.js").read_text(encoding="utf-8")
@@ -287,6 +338,32 @@ class ModelRegistryTest(unittest.TestCase):
             self.assertEqual(settlement_count, 1)
         finally:
             conn.close()
+
+    def test_mlb_compare_wrapper_reads_indexed_runs(self) -> None:
+        db_path = ROOT / "data-private" / "warehouse" / "sports.db"
+        run_path = ROOT / "data-private" / "model-runs" / "mlb" / "MLB-M0" / "2026-05-30" / "run.json"
+        if not db_path.exists() or not run_path.exists():
+            self.skipTest("May 30 MLB-M0 locked run or warehouse is not present")
+
+        result = subprocess.run(
+            [
+                "node",
+                "models/mlb/compare-cartridges.mjs",
+                "--left",
+                "MLB-M0",
+                "--right",
+                "MLB-M0",
+                "--date",
+                "2026-05-30",
+            ],
+            cwd=ROOT,
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        self.assertEqual(result.returncode, 0, msg=result.stdout + result.stderr)
+        payload = json.loads(result.stdout)
+        self.assertTrue(payload.get("runs"), "compare wrapper did not return indexed runs")
 
     def test_mlb_publish_compatibility_launchers_point_to_m0_lanes(self) -> None:
         for publish_path in sorted((ROOT / "pipeline" / "mlb" / "publish").glob("*.mjs")):

@@ -10,9 +10,9 @@
     "evaluator": "MLB-E0"
   },
   "runner": {
-    "command": "node models/mlb/cartridges/MLB-M0/runner.mjs",
+    "command": "node models/mlb/run-cartridge.mjs --entry runner",
     "defaultMode": "pregame",
-    "migrationNote": "MLB-M0 owns the daily workflow entrypoints through cartridge wrappers; those wrappers delegate to sport-scoped pipeline internals until each lane is migrated."
+    "migrationNote": "Registry-aware wrappers resolve the active MLB parent cartridge before dispatching to cartridge-owned workflow and lane entrypoints."
   },
   "cartridgeRoot": "./cartridges",
   "migrationStatus": "shells_started",
