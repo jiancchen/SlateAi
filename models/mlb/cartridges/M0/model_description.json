@@ -9,7 +9,8 @@
     "Names the current MLB parent model as M0 so future changes can be compared against a stable baseline.",
     "Keeps RP36 as a relief addendum consumed by M0 instead of treating the reliever shadow artifact as a separate parent model.",
     "Separates model ownership from workflow plumbing before moving scripts out of the flat pipeline folder.",
-    "Adds a May 30 closeout gate so side predictions must flow into `mlb_side_predictions` and `mlb_side_backtests` before postmortem lessons are trusted."
+    "Adds a May 30 closeout gate so side predictions must flow into `mlb_side_predictions` and `mlb_side_backtests` before postmortem lessons are trusted.",
+    "Adds a cartridge-local performance index and quiet-start full-game gate so May 30 failures can affect the next slate instead of staying as notes."
   ],
   "keyMetrics": [
     {
@@ -41,19 +42,27 @@
       "label": "May 30 result lanes",
       "value": "FG 6-9 / F5 9-6",
       "details": "May 30 exposed a dead-early, low-conversion side failure while first-five and first-inning timing held up better."
+    },
+    {
+      "label": "Performance index",
+      "value": "Created",
+      "details": "M0 now links May 30 run, result, side-board, postmortem, and follow-up artifacts from the cartridge."
     }
   ],
   "notes": [
     "M0 should eventually own the final MLB side, first-five, total, prop, and market-context outputs.",
     "Current scripts remain in pipeline until a behavior-preserving wrapper and golden test are added.",
     "Do not promote RP36 into a standalone parent model; it should feed M0.",
-    "Before a new MLB slate, the prior day must have a results journal plus side prediction/backtest rows so lessons are based on warehouse-settled data."
+    "Before a new MLB slate, the prior day must have a results journal plus side prediction/backtest rows so lessons are based on warehouse-settled data.",
+    "Quiet-start, traffic-without-conversion, and quiet-first-five risks now suppress full-game side promotion unless another market expression is cleaner."
   ],
   "knownLimitations": [
     "M0 run locks are file-based for now; they are not yet written into a shared model-run DB table.",
     "Source inventory is intentionally broad until the MLB pregame chain is fully audited and split into smaller components."
   ],
   "files": {
-    "markdown": "models/mlb/cartridges/M0/MODEL_NOTES.md"
+    "markdown": "models/mlb/cartridges/M0/MODEL_NOTES.md",
+    "performanceIndex": "models/mlb/cartridges/M0/performance_index.json",
+    "followups": "models/mlb/cartridges/M0/followups.md"
   }
 }

@@ -27,6 +27,12 @@ Move behavior into this cartridge only with a golden output check or explicit ru
 
 The slate punished picks that never scored early enough. The immediate model lesson is not “trust the board more”; it is to promote `dead_early_loss`, quiet-first-three shape, and side-import health checks before any May 31 MLB picks are generated.
 
+Implemented from this lesson:
+
+- `performance_index.json` links the settled May 30 run, side board, results journal, and postmortem artifacts from inside M0.
+- `followups.md` keeps the cartridge-level follow-up rules visible without duplicating the daily postmortem.
+- The full-game side layer now treats quiet-start, traffic-without-conversion, and quiet-first-five rates as veto/penalty inputs instead of passive warning text.
+
 ## Known Gaps
 
 - M0 now has a file-based run manifest and verifier under `data-private/model-runs/mlb/M0/`.

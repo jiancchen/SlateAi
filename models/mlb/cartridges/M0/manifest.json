@@ -24,6 +24,8 @@
   "outputContract": "models/mlb/cartridges/M0/output-contract.json",
   "modelDescription": "models/mlb/cartridges/M0/model_description.json",
   "modelNotes": "models/mlb/cartridges/M0/MODEL_NOTES.md",
+  "performanceIndex": "models/mlb/cartridges/M0/performance_index.json",
+  "followups": "models/mlb/cartridges/M0/followups.md",
   "sourceFiles": [
     {
       "role": "pregame-runner",
@@ -62,6 +64,14 @@
       "path": "models/mlb/cartridges/M0/verify_run.mjs"
     },
     {
+      "role": "performance-index",
+      "path": "models/mlb/cartridges/M0/performance_index.json"
+    },
+    {
+      "role": "followup-index",
+      "path": "models/mlb/cartridges/M0/followups.md"
+    },
+    {
       "role": "day-generator",
       "path": "pipeline/mlb/publish/generate-day-files.mjs"
     },
@@ -84,6 +94,10 @@
     {
       "role": "veto-exporter",
       "path": "pipeline/mlb/publish/export-veto-artifact.mjs"
+    },
+    {
+      "role": "side-model-logic",
+      "path": "web/src/lib/sports-model.js"
     },
     {
       "role": "warehouse-code",

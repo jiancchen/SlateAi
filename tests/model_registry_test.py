@@ -49,6 +49,8 @@ class ModelRegistryTest(unittest.TestCase):
                         "metricsContract",
                         "modelDescription",
                         "modelNotes",
+                        "performanceIndex",
+                        "followups",
                     ):
                         value = manifest.get(key)
                         if value:
@@ -106,6 +108,18 @@ class ModelRegistryTest(unittest.TestCase):
         self.assertIn("mlb_side_backtest.py", text)
         self.assertIn("runPythonSideBacktest('import'", text)
         self.assertIn("runPythonSideBacktest('grade'", text)
+
+    def test_m0_quiet_start_gate_is_metadata_gated(self) -> None:
+        model_text = (ROOT / "web" / "src" / "lib" / "sports-model.js").read_text(encoding="utf-8")
+        generator_text = (
+            ROOT / "pipeline" / "mlb" / "publish" / "generate-day-files.mjs"
+        ).read_text(encoding="utf-8")
+        loader_text = (ROOT / "pipeline" / "lib" / "load-mlb-day-games.mjs").read_text(encoding="utf-8")
+
+        self.assertIn("enableMay30QuietStartGate", model_text)
+        self.assertIn("quietFirst3FullGameRiskFlag", model_text)
+        self.assertIn("quietStartFullGameGate: options.date >= '2026-05-31'", generator_text)
+        self.assertIn("quietStartFullGameGate", loader_text)
 
     def test_m0_may30_side_predictions_are_training_ready(self) -> None:
         side_board = ROOT / "data-private" / "predictions" / "mlb-sides" / "2026-05-30-board-live.json"

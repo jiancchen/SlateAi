@@ -389,11 +389,15 @@ const applyMlbTierOneControls = ({
 }
 
 const buildMlbResearchVetoFlags = ({
+  enableQuietStartFullGameGate = false,
   marketProbability,
   pickIsMarketFavorite,
   pickIsMarketUnderdog,
   pickLineupConversionIndex,
   pickDeadBatTrafficRate,
+  pickTeamScorelessFirst3Rate,
+  pickTrafficNoConversionRate,
+  pickQuietFirst5Rate,
   pickBullpenMistakeChaos,
   oppBullpenMistakeChaos,
   pickTeamRunClustering,
@@ -420,6 +424,24 @@ const buildMlbResearchVetoFlags = ({
     Number.isFinite(pickDeadBatTrafficRate) &&
     pickDeadBatTrafficRate >= 0.3
 
+  const quietStartRiskFlag =
+    enableQuietStartFullGameGate &&
+    Number.isFinite(pickTeamScorelessFirst3Rate) &&
+    pickTeamScorelessFirst3Rate >= 0.3
+  const trafficNoConversionRiskFlag =
+    enableQuietStartFullGameGate &&
+    Number.isFinite(pickTrafficNoConversionRate) &&
+    pickTrafficNoConversionRate >= 0.2
+  const quietFirst5RiskFlag =
+    enableQuietStartFullGameGate &&
+    Number.isFinite(pickQuietFirst5Rate) &&
+    pickQuietFirst5Rate >= 0.3
+  const quietFirst3FullGameRiskFlag =
+    enableQuietStartFullGameGate &&
+    Number.isFinite(pickLineupConversionIndex) &&
+    pickLineupConversionIndex <= 45 &&
+    (quietStartRiskFlag || trafficNoConversionRiskFlag || quietFirst5RiskFlag)
+
   const clusterBullpenTrapFlag =
     Number.isFinite(pickTeamRunClustering) &&
     pickTeamRunClustering >= 70 &&
@@ -438,12 +460,17 @@ const buildMlbResearchVetoFlags = ({
   if (heavyFavoriteWeakLineupFlag) researchOnlyVetoFlags.push('heavyFavoriteWeakLineup')
   if (heavyFavoriteNoisyBullpenFlag) researchOnlyVetoFlags.push('heavyFavoriteNoisyBullpen')
   if (deadEarlyRiskFlag) researchOnlyVetoFlags.push('deadEarlyRisk')
+  if (quietFirst3FullGameRiskFlag) researchOnlyVetoFlags.push('quietFirst3FullGameRisk')
   if (clusterBullpenTrapFlag) researchOnlyVetoFlags.push('clusterBullpenTrap')
 
   return {
     heavyFavoriteWeakLineupFlag,
     heavyFavoriteNoisyBullpenFlag,
     deadEarlyRiskFlag,
+    quietStartRiskFlag,
+    trafficNoConversionRiskFlag,
+    quietFirst5RiskFlag,
+    quietFirst3FullGameRiskFlag,
     clusterBullpenTrapFlag,
     protectedMarketDogFlag,
     marketDogOpponentChaosGapFlag: protectedMarketDogFlag,
@@ -471,6 +498,7 @@ const buildMlbVetoLayer = ({
 }
 
 const buildMlbEfficientFavoriteLane = ({
+  enableQuietStartFullGameGate = false,
   marketProbability,
   pickIsMarketFavorite,
   confidence,
@@ -486,6 +514,9 @@ const buildMlbEfficientFavoriteLane = ({
   researchOnlyVetoFlagCount,
   pickLineupConversionIndex,
   pickDeadBatTrafficRate,
+  pickTeamScorelessFirst3Rate,
+  pickTrafficNoConversionRate,
+  pickQuietFirst5Rate,
   pickBullpenMistakeChaos
 }) => {
   const positiveReasons = []
@@ -578,6 +609,33 @@ const buildMlbEfficientFavoriteLane = ({
 
   if (Number.isFinite(pickDeadBatTrafficRate) && pickDeadBatTrafficRate >= 0.26) {
     penaltyFlags.push('deadEarlyShape')
+    score -= 8
+  }
+
+  if (
+    enableQuietStartFullGameGate &&
+    Number.isFinite(pickTeamScorelessFirst3Rate) &&
+    pickTeamScorelessFirst3Rate >= 0.3
+  ) {
+    penaltyFlags.push('quietFirst3')
+    score -= 8
+  }
+
+  if (
+    enableQuietStartFullGameGate &&
+    Number.isFinite(pickTrafficNoConversionRate) &&
+    pickTrafficNoConversionRate >= 0.2
+  ) {
+    penaltyFlags.push('trafficNoConversion')
+    score -= 8
+  }
+
+  if (
+    enableQuietStartFullGameGate &&
+    Number.isFinite(pickQuietFirst5Rate) &&
+    pickQuietFirst5Rate >= 0.3
+  ) {
+    penaltyFlags.push('quietFirst5')
     score -= 8
   }
 
@@ -4216,7 +4274,8 @@ const buildMlbDecisionIndicators = ({
   winnerIndex,
   loserIndex,
   modelEdge,
-  baseVolatility
+  baseVolatility,
+  enableMay30QuietStartGate = false
 }) => {
   if (!riskContext) return null
 
@@ -4410,6 +4469,18 @@ const buildMlbDecisionIndicators = ({
     pickFormPressure >= 55
   const stateSuggestedEdgeHaircut = opponentSnapbackTrapFlag ? 4 : opponentImprovingContactBouncebackFlag ? 3 : 0
   const stateSuggestedConfidenceHaircut = opponentSnapbackTrapFlag ? 8 : opponentImprovingContactBouncebackFlag ? 6 : 0
+  const may30QuietStartRiskFlag =
+    enableMay30QuietStartGate &&
+    Number.isFinite(pickTeamScorelessFirst3Rate) && pickTeamScorelessFirst3Rate >= 0.34
+  const may30TrafficNoConversionRiskFlag =
+    enableMay30QuietStartGate &&
+    Number.isFinite(pickLineupConversionIndex) &&
+    pickLineupConversionIndex <= 45 &&
+    Number.isFinite(pickTrafficNoConversionRate) &&
+    pickTrafficNoConversionRate >= 0.24
+  const may30QuietFirst5RiskFlag =
+    enableMay30QuietStartGate &&
+    Number.isFinite(pickQuietFirst5Rate) && pickQuietFirst5Rate >= 0.34
 
   let reliefPitchingRisk = 36
   let coinflipPressure = 18
@@ -4534,6 +4605,17 @@ const buildMlbDecisionIndicators = ({
   if (Number.isFinite(projectedHitEdgeForPick) && projectedHitEdgeForPick <= -1.2) {
     reliefPitchingRisk += 7
     coinflipPressure += 9
+  }
+
+  if (may30QuietStartRiskFlag || may30TrafficNoConversionRiskFlag || may30QuietFirst5RiskFlag) {
+    notes.push({
+      label:
+        'May 30 closeout gate: pick has quiet-start or traffic-without-conversion risk, so the full-game side needs a cleaner market expression',
+      delta: 5
+    })
+    confidenceDelta -= 3
+    volatilityDelta += 3
+    coinflipPressure += 7
   }
 
   if (modelEdge <= 2) {
@@ -4850,6 +4932,9 @@ const buildMlbDecisionIndicators = ({
     statefulSeriesCarryoverTrapFlag: seriesCarryoverTrapFlag,
     statefulSuggestedEdgeHaircut: stateSuggestedEdgeHaircut,
     statefulSuggestedConfidenceHaircut: stateSuggestedConfidenceHaircut,
+    may30QuietStartRiskFlag,
+    may30TrafficNoConversionRiskFlag,
+    may30QuietFirst5RiskFlag,
     tierThreeBullpenCommandMismatchFlag: bullpenCommandMismatchFlag,
     tierThreeSuggestedEdgeHaircut: bullpenCommandMismatchFlag ? 3 : 0,
     tierThreeSuggestedConfidenceHaircut: bullpenCommandMismatchFlag ? 6 : 0,
@@ -5055,6 +5140,16 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
     marketProbabilities.length === participants.length
       ? winnerIndex !== marketWinnerIndex
       : participant.impliedProbability < (opponent?.impliedProbability ?? 0)
+  const modelSlateDate =
+    typeof game.slateDate === 'string'
+      ? game.slateDate
+      : typeof game.metadata?.slateDate === 'string'
+        ? game.metadata.slateDate
+        : ''
+  const enableMay30QuietStartGate =
+    game.league === 'MLB' &&
+    (game.metadata?.quietStartFullGameGate === true ||
+      (/^\d{4}-\d{2}-\d{2}$/.test(modelSlateDate) && modelSlateDate >= '2026-05-31'))
   const baseConfidence = Math.round(
     clamp(
       50 +
@@ -5094,7 +5189,8 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           winnerIndex,
           loserIndex,
           modelEdge,
-          baseVolatility
+          baseVolatility,
+          enableMay30QuietStartGate
         })
       : null
   const confidence = Math.round(
@@ -5150,11 +5246,15 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
   const researchVetoFlags =
     game.league === 'MLB' && mlbIndicators
       ? buildMlbResearchVetoFlags({
+          enableQuietStartFullGameGate: enableMay30QuietStartGate,
           marketProbability: marketSupport,
           pickIsMarketFavorite,
           pickIsMarketUnderdog,
           pickLineupConversionIndex: mlbIndicators.pickLineupConversionIndex,
           pickDeadBatTrafficRate: mlbIndicators.pickDeadBatTrafficRate,
+          pickTeamScorelessFirst3Rate: mlbIndicators.pickTeamScorelessFirst3Rate,
+          pickTrafficNoConversionRate: mlbIndicators.pickTrafficNoConversionRate,
+          pickQuietFirst5Rate: mlbIndicators.pickQuietFirst5Rate,
           pickBullpenMistakeChaos: mlbIndicators.pickBullpenMistakeChaos,
           oppBullpenMistakeChaos: mlbIndicators.oppBullpenMistakeChaos,
           pickTeamRunClustering: mlbIndicators.pickTeamRunClustering,
@@ -5165,6 +5265,7 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
   const efficientFavoriteLane =
     game.league === 'MLB' && mlbIndicators
       ? buildMlbEfficientFavoriteLane({
+          enableQuietStartFullGameGate: enableMay30QuietStartGate,
           marketProbability: marketSupport,
           pickIsMarketFavorite,
           confidence: tierOneControls?.adjustedConfidence ?? confidence,
@@ -5180,6 +5281,9 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           researchOnlyVetoFlagCount: researchVetoFlags?.researchOnlyVetoFlagCount ?? 0,
           pickLineupConversionIndex: mlbIndicators.pickLineupConversionIndex,
           pickDeadBatTrafficRate: mlbIndicators.pickDeadBatTrafficRate,
+          pickTeamScorelessFirst3Rate: mlbIndicators.pickTeamScorelessFirst3Rate,
+          pickTrafficNoConversionRate: mlbIndicators.pickTrafficNoConversionRate,
+          pickQuietFirst5Rate: mlbIndicators.pickQuietFirst5Rate,
           pickBullpenMistakeChaos: mlbIndicators.pickBullpenMistakeChaos
         })
       : null
@@ -5290,6 +5394,9 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           statefulSeriesCarryoverTrapFlag: Boolean(mlbIndicators.statefulSeriesCarryoverTrapFlag),
           statefulSuggestedEdgeHaircut: mlbIndicators.statefulSuggestedEdgeHaircut ?? 0,
           statefulSuggestedConfidenceHaircut: mlbIndicators.statefulSuggestedConfidenceHaircut ?? 0,
+          may30QuietStartRiskFlag: Boolean(mlbIndicators.may30QuietStartRiskFlag),
+          may30TrafficNoConversionRiskFlag: Boolean(mlbIndicators.may30TrafficNoConversionRiskFlag),
+          may30QuietFirst5RiskFlag: Boolean(mlbIndicators.may30QuietFirst5RiskFlag),
           tierThreeBullpenCommandMismatchFlag: Boolean(mlbIndicators.tierThreeBullpenCommandMismatchFlag),
           tierThreeSuggestedEdgeHaircut: mlbIndicators.tierThreeSuggestedEdgeHaircut ?? 0,
           tierThreeSuggestedConfidenceHaircut: mlbIndicators.tierThreeSuggestedConfidenceHaircut ?? 0,
@@ -5300,6 +5407,10 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           heavyFavoriteWeakLineupFlag: Boolean(researchVetoFlags?.heavyFavoriteWeakLineupFlag),
           heavyFavoriteNoisyBullpenFlag: Boolean(researchVetoFlags?.heavyFavoriteNoisyBullpenFlag),
           deadEarlyRiskFlag: Boolean(researchVetoFlags?.deadEarlyRiskFlag),
+          quietStartRiskFlag: Boolean(researchVetoFlags?.quietStartRiskFlag),
+          trafficNoConversionRiskFlag: Boolean(researchVetoFlags?.trafficNoConversionRiskFlag),
+          quietFirst5RiskFlag: Boolean(researchVetoFlags?.quietFirst5RiskFlag),
+          quietFirst3FullGameRiskFlag: Boolean(researchVetoFlags?.quietFirst3FullGameRiskFlag),
           clusterBullpenTrapFlag: Boolean(researchVetoFlags?.clusterBullpenTrapFlag),
           protectedMarketDogFlag: Boolean(researchVetoFlags?.protectedMarketDogFlag),
           marketDogOpponentChaosGapFlag: Boolean(researchVetoFlags?.marketDogOpponentChaosGapFlag),

@@ -63,6 +63,16 @@ const buildGenericMlbGame = (
     lineupMatchupContextByGameId
   }
 ) => {
+  const slateDate = raw.slateDate ?? raw.metadata?.slateDate ?? null
+  const metadata =
+    raw.metadata || slateDate
+      ? {
+          ...(raw.metadata ?? {}),
+          ...(slateDate ? { slateDate } : {}),
+          modelCartridge: raw.metadata?.modelCartridge ?? 'M0',
+          quietStartFullGameGate: Boolean(raw.metadata?.quietStartFullGameGate)
+        }
+      : null
   const factors = [
     `Current board: ${raw.moneyline} | ${raw.total} | ${raw.spread}.`,
     `${raw.awayPitcher.fullName} vs ${raw.homePitcher.fullName}.`
@@ -71,6 +81,7 @@ const buildGenericMlbGame = (
   return {
     id: uniqueId,
     gamePk: Number.isFinite(Number(raw.gamePk)) ? Number(raw.gamePk) : null,
+    ...(slateDate ? { slateDate } : {}),
     league: 'MLB',
     title: `${raw.away} @ ${raw.home}`,
     start: raw.start,
@@ -122,6 +133,7 @@ const buildGenericMlbGame = (
     lineupBoard: lineupBoardsByGameId[raw.id] ?? null,
     starterContext: { away: raw.awayPitcher, home: raw.homePitcher },
     pitcherSourceNote: raw.pitcherSourceNote || '',
+    ...(metadata ? { metadata } : {}),
     odds: makeBoardOdds({
       spread: raw.spread,
       total: raw.total,

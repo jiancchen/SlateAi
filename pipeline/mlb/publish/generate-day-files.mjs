@@ -2949,6 +2949,7 @@ const main = async () => {
 
       rawGames.push({
         gamePk: Number(game.gamePk || 0) || null,
+        slateDate: options.date,
         id: buildDeskGameId({
           awayDesk,
           homeDesk,
@@ -2966,7 +2967,13 @@ const main = async () => {
         total: boardOdds.total,
         moneyline: boardOdds.moneyline,
         pitcherSourceNote: '',
-        oddsPage: boardOdds.oddsPage
+        oddsPage: boardOdds.oddsPage,
+        metadata: {
+          modelCartridge: 'M0',
+          reliefAddendum: 'RP36',
+          slateDate: options.date,
+          quietStartFullGameGate: options.date >= '2026-05-31'
+        }
       })
     }
   }

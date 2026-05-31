@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "runId": "mlb-2026-05-30-W1-F0-M0-RP36-E0",
-  "sourceHash": "38ae2fade925741f96f36b091860fc6b039587b6b5838bc4db71504ad5c7d38a",
+  "sourceHash": "7936fecbc17bad2ebdb92ff6a8a7a8269679948d81f2ccdb4717d313e2e9df39",
   "files": [
     {
       "path": "models/mlb/cartridges/E0/manifest.json",
@@ -16,28 +16,40 @@
       "sha256": "555d1f1d9a98f88c93f0309f5b44476efc1ee87ebeb7fa1aba5eef881389ac86"
     },
     {
+      "role": "followup-index",
+      "path": "models/mlb/cartridges/M0/followups.md",
+      "exists": true,
+      "sha256": "a09338b20f202bbdbf36568bee41045151dea69879727b1423c2b15ce5ebab28"
+    },
+    {
       "path": "models/mlb/cartridges/M0/manifest.json",
       "role": "parent_model-manifest",
       "exists": true,
-      "sha256": "fc7b6d8ece928e1001485a559abc77684d68922fbfc57b641722760993669db6"
+      "sha256": "ccc68dfcf6c1a818dc4708fead0bb1afdff01fe0a28c6a42f38ab8c8b79c4426"
     },
     {
       "path": "models/mlb/cartridges/M0/model_description.json",
       "role": "model-description",
       "exists": true,
-      "sha256": "a6cec419ab28036c6ac10cc9e0765a45b85e6e454bb452b4954565c98375ed2e"
+      "sha256": "d1a5f319070cb0b48e4a8afce5f64c0b83aaa8636aa3486479dda89883b7e70b"
     },
     {
       "path": "models/mlb/cartridges/M0/MODEL_NOTES.md",
       "role": "model-notes",
       "exists": true,
-      "sha256": "bae1014aba9d1aad98aac02fdd75ffd70d5b28e59f1e9f6cadaa0dbce0ceac75"
+      "sha256": "86a3b4c48c31dde4c2321d4ec8f029311837c30716dcf7edeefddd8c28342c58"
     },
     {
       "path": "models/mlb/cartridges/M0/output-contract.json",
       "role": "output-contract",
       "exists": true,
       "sha256": "3ffd08a14f8ebed251ed9fb794d1aff4401152dc465f342fdcaca0ecaa7b8d1a"
+    },
+    {
+      "role": "performance-index",
+      "path": "models/mlb/cartridges/M0/performance_index.json",
+      "exists": true,
+      "sha256": "a672dd992d698c4abe93d6959239c109ec47143c0c2ae24d6dde82ce7f1b6d20"
     },
     {
       "role": "run-locker",
@@ -169,7 +181,7 @@
       "role": "day-generator",
       "path": "pipeline/mlb/publish/generate-day-files.mjs",
       "exists": true,
-      "sha256": "cad744a7b5d626d7b5639b704843308b91b77409a54d244b62666b10eb9b1ab5"
+      "sha256": "3434ac6b782cfe5247b21b9b75721d17410283a237a23490121d969aabcd14f5"
     },
     {
       "role": "usage-audit",
@@ -242,6 +254,12 @@
       "path": "pipeline/mlb/workflows/verify-refresh.mjs",
       "exists": true,
       "sha256": "194433b1392bb238a7d0380e04a0089d460cab519580d747536cff81b2ddcf33"
+    },
+    {
+      "role": "side-model-logic",
+      "path": "web/src/lib/sports-model.js",
+      "exists": true,
+      "sha256": "2f76e1055ad0bedfd2c72ae8d2e8e26864b502223d50af2599c78c7cc2ff8673"
     }
   ]
 }

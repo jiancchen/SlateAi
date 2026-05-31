@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "modelId": "M0",
+  "sport": "mlb",
+  "description": "Cartridge-local index for M0 performance, follow-up, and run artifacts. Heavy daily artifacts stay in data-private, published-data, and development-docs.",
+  "currentBaselineDate": "2026-05-30",
+  "runs": [
+    {
+      "date": "2026-05-30",
+      "runId": "mlb-2026-05-30-W1-F0-M0-RP36-E0",
+      "status": "settled",
+      "stack": {
+        "warehouse": "W1",
+        "features": "F0",
+        "model": "M0",
+        "reliefAddendum": "RP36",
+        "evaluator": "E0"
+      },
+      "performance": {
+        "fullGameSides": {
+          "hits": 6,
+          "rows": 15,
+          "hitRate": 0.4
+        },
+        "firstFiveSides": {
+          "hits": 9,
+          "rows": 15,
+          "hitRate": 0.6
+        },
+        "firstInning": {
+          "hits": 9,
+          "rows": 15,
+          "hitRate": 0.6
+        },
+        "homeRuns": {
+          "hits": 3,
+          "rows": 12,
+          "hitRate": 0.25
+        },
+        "playerProps": {
+          "hits": 33,
+          "rows": 62,
+          "hitRate": 0.532
+        }
+      },
+      "artifacts": {
+        "runManifest": "data-private/model-runs/mlb/M0/2026-05-30/run.json",
+        "resultsJournal": "data-private/history/mlb-results-2026-05-30.jsonl",
+        "sideBoard": "data-private/predictions/mlb-sides/2026-05-30-board-live.json",
+        "postmortem": "development-docs/mlb/postmortems/may30-slate-postmortem-053026.md",
+        "followup": "development-docs/mlb/postmortems/may30-chaos-followups-053026.md"
+      },
+      "lessons": [
+        "Full-game sides overreached when the pick had quiet-start or traffic-without-conversion risk.",
+        "First-five and first-inning timing lanes were more useful than broad full-game confidence on this slate.",
+        "Total-bases props should stay out of core slots unless they have a narrow hitter/starter reason.",
+        "Any underdog side needs a named path: opponent dead-early, opponent traffic-no-conversion, opponent chaos gap, snapback pressure, or same-series suppression."
+      ]
+    }
+  ],
+  "openModelChanges": [
+    {
+      "id": "may30-quiet-start-full-game-gate",
+      "status": "implemented",
+      "summary": "Treat quiet-start, traffic-without-conversion, and quiet-first-five rates as M0 full-game side veto/penalty inputs for May 31+ slates."
+    },
+    {
+      "id": "prop-lane-demotion",
+      "status": "planned",
+      "summary": "Keep generic total-bases overs out of core/top-pick slots until prop-type backtests support the lane."
+    }
+  ]
+}
