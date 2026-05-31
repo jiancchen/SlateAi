@@ -199,6 +199,23 @@ class ModelRegistryTest(unittest.TestCase):
 
         self.assertEqual(split_count, len(props))
 
+    def test_public_model_history_includes_pending_mlb_runs(self) -> None:
+        history_path = ROOT / "published-data" / "model-history" / "index.json"
+        if not history_path.exists():
+            self.skipTest("Published model-history index is not present")
+
+        model_history = read_json(history_path)
+        may31 = next((entry for entry in model_history if entry.get("id") == "2026-05-31"), None)
+        self.assertIsNotNone(may31, "May 31 model-history entry is missing")
+
+        models = may31.get("models", [])
+        model_ids = {model.get("modelName") for model in models if model.get("sport") == "MLB"}
+        self.assertIn("MLB-M0", model_ids)
+        self.assertIn("MLB-RP36", model_ids)
+
+        m0 = next(model for model in models if model.get("modelName") == "MLB-M0")
+        self.assertEqual(m0.get("settlement", {}).get("status"), "pending")
+
 
 if __name__ == "__main__":
     unittest.main()
