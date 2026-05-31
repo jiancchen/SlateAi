@@ -18,6 +18,9 @@ Date: 2026-05-31
 - Moved the MLB close/follow-up workflow into `pipeline/mlb/workflows/followup.mjs` with a compatibility wrapper, and pointed future generated postmortem/follow-up docs into `development-docs/mlb/postmortems/`.
 - Moved MLB refresh verification into `pipeline/mlb/workflows/verify-refresh.mjs` with a compatibility wrapper.
 - Added pipeline folder contracts for future MLB and tennis workflow/fetcher/warehouse/publish/research moves.
+- Moved MLB fetchers/watchers into `pipeline/mlb/fetchers/` with compatibility wrappers at their old top-level pipeline paths.
+- Moved MLB publish/export scripts into `pipeline/mlb/publish/` with compatibility wrappers at their old top-level pipeline paths.
+- Updated MLB refresh/follow-up workflows and package scripts to call the sport-scoped publish paths directly.
 - Added `tests/model_registry_test.py` to catch missing cartridge manifests and declared files.
 - Added destination folders and READMEs for sport-specific `development-docs/` migration without moving script-written docs yet.
 - Moved tennis runbook/research notes and MLB daily runbook/source checklist into sport-specific `development-docs/` folders and updated direct references.
@@ -27,11 +30,11 @@ Date: 2026-05-31
 - `pipeline/generate-tennis-day-module.mjs` still emits the old T0 manifest path so the existing May 31 golden snapshot remains comparable.
 - `pipeline/verify-tennis-model-snapshot.mjs` still reads the old T0 manifest path for the same golden-snapshot reason.
 - `pipeline/tennis_model_cartridges/` remains in place until the T0 snapshot contract is intentionally cut over.
-- MLB prediction behavior still runs through the current pipeline scripts. The new MLB cartridges are shells only.
+- MLB prediction behavior still runs through the current pipeline logic under sport-scoped workflow/fetcher/publish folders. The new MLB cartridges are shells only.
 
 ## Next Safe Steps
 
 1. Add a tennis snapshot cutover plan that allows metadata path changes without disguising prediction-math drift.
-2. Add an MLB `M0` run manifest design before moving side, first-five, total, prop, or home-run scripts.
-3. Move development docs into sport-specific folders only after package scripts that write those docs are updated together.
+2. Add an MLB `M0` run manifest design before moving warehouse/research internals.
+3. Move remaining script-written development docs only after their package scripts are updated together.
 4. Add a planned tennis metadata-path cutover test before changing the T0 golden snapshot path.

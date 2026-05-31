@@ -41,7 +41,7 @@ Important notes from the docs:
 
 New fetcher:
 
-- [pipeline/fetch_historical_mlb_odds.py](/Users/jcchen/Documents/New%20project/pipeline/fetch_historical_mlb_odds.py)
+- [pipeline/mlb/fetchers/fetch_historical_mlb_odds.py](/Users/jcchen/Documents/New%20project/pipeline/mlb/fetchers/fetch_historical_mlb_odds.py)
 
 New package script:
 

@@ -7,7 +7,7 @@ This is the current honest MLB modeling stack after removing the leakage bugs fr
 ### Data sources
 
 - Warehouse DB: `/Users/jcchen/Documents/New project/data-private/warehouse/sports.db`
-- Slate payload export: [/Users/jcchen/Documents/New project/pipeline/export-mlb-training-corpus.mjs](/Users/jcchen/Documents/New%20project/pipeline/export-mlb-training-corpus.mjs)
+- Slate payload export: [/Users/jcchen/Documents/New project/pipeline/mlb/publish/export-training-corpus.mjs](/Users/jcchen/Documents/New%20project/pipeline/mlb/publish/export-training-corpus.mjs)
 - Trainer: [/Users/jcchen/Documents/New project/pipeline/train_mlb_market_models.py](/Users/jcchen/Documents/New%20project/pipeline/train_mlb_market_models.py)
 
 ### Training data shape

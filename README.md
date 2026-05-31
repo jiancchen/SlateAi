@@ -222,13 +222,13 @@ This postgame command:
   Lazy-loading manifest for day files.
 - `pipeline/mlb_warehouse.py`
   Local SQLite warehouse and ingest pipeline.
-- `pipeline/export-mlb-lineup-model.mjs`
+- `pipeline/mlb/publish/export-lineup-model.mjs`
   MLB lineup + weather + matchup exporter.
-- `pipeline/export-home-run-predictions.mjs`
+- `pipeline/mlb/publish/export-home-run-predictions.mjs`
   MLB HR board generator.
-- `pipeline/export-mlb-side-predictions.mjs`
+- `pipeline/mlb/publish/export-side-predictions.mjs`
   Saved MLB side board exporter for grading.
-- `pipeline/export-history-journal.mjs`
+- `pipeline/mlb/publish/export-history-journal.mjs`
   JSONL training ledger export.
 - `development-docs/mlb/runbooks/daily-games-external.md`
   Daily source registry and operator shortcuts.

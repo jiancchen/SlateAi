@@ -95,14 +95,14 @@ const main = () => {
   // Keep Tier 3 research tables collecting automatically even while the live model ignores them.
   runPythonWarehouse('derive-tier3-features', ['--as-of-date', options.date])
   // Capture today's FanDuel pitcher strikeout lines before we build the slate and prop board.
-  runPythonScript('fetch_fanduel_research_mlb.py', ['--start-date', options.date, '--end-date', options.date, '--markets', 'strikeouts'])
-  runNodeScript('generate-mlb-day-files.mjs', generateArgs)
-  runNodeScript('export-mlb-lineup-model.mjs', ['--date', options.date])
+  runPythonFile('pipeline/mlb/fetchers/fetch_fanduel_research_mlb.py', ['--start-date', options.date, '--end-date', options.date, '--markets', 'strikeouts'])
+  runNodeScript('mlb/publish/generate-day-files.mjs', generateArgs)
+  runNodeScript('mlb/publish/export-lineup-model.mjs', ['--date', options.date])
   // Keep the bullpen upgrade path in shadow mode on real game cards before promoting it into live picks.
   runPythonFile('models/mlb/cartridges/RP36/runner.py', ['--date', options.date])
-  runNodeScript('export-mlb-veto-artifact.mjs', ['--date', options.date])
-  runNodeScript('export-home-run-predictions.mjs', ['--date', options.date])
-  runNodeScript('export-mlb-prop-predictions.mjs', ['--date', options.date])
+  runNodeScript('mlb/publish/export-veto-artifact.mjs', ['--date', options.date])
+  runNodeScript('mlb/publish/export-home-run-predictions.mjs', ['--date', options.date])
+  runNodeScript('mlb/publish/export-prop-predictions.mjs', ['--date', options.date])
   runPythonWarehouse('import-prop-predictions', [
     '--file',
     path.join(rootDir, 'data-private', 'predictions', 'mlb-player-props', `${options.date}-player-props.json`)

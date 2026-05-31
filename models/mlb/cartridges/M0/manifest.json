@@ -14,6 +14,14 @@
     "pipeline/export-mlb-prop-predictions.mjs",
     "pipeline/export-home-run-predictions.mjs"
   ],
+  "publishEntrypoints": [
+    "pipeline/mlb/publish/generate-day-files.mjs",
+    "pipeline/mlb/publish/export-side-predictions.mjs",
+    "pipeline/mlb/publish/export-prop-predictions.mjs",
+    "pipeline/mlb/publish/export-home-run-predictions.mjs",
+    "pipeline/mlb/publish/export-lineup-model.mjs",
+    "pipeline/mlb/publish/export-veto-artifact.mjs"
+  ],
   "components": [
     "RP36"
   ],
@@ -58,15 +66,39 @@
     },
     {
       "role": "day-generator",
-      "path": "pipeline/generate-mlb-day-files.mjs"
+      "path": "pipeline/mlb/publish/generate-day-files.mjs"
     },
     {
       "role": "side-exporter",
-      "path": "pipeline/export-mlb-side-predictions.mjs"
+      "path": "pipeline/mlb/publish/export-side-predictions.mjs"
+    },
+    {
+      "role": "prop-exporter",
+      "path": "pipeline/mlb/publish/export-prop-predictions.mjs"
+    },
+    {
+      "role": "home-run-exporter",
+      "path": "pipeline/mlb/publish/export-home-run-predictions.mjs"
+    },
+    {
+      "role": "lineup-exporter",
+      "path": "pipeline/mlb/publish/export-lineup-model.mjs"
+    },
+    {
+      "role": "veto-exporter",
+      "path": "pipeline/mlb/publish/export-veto-artifact.mjs"
     },
     {
       "role": "warehouse-code",
       "path": "pipeline/mlb_warehouse.py"
+    },
+    {
+      "role": "fanduel-fetcher",
+      "path": "pipeline/mlb/fetchers/fetch_fanduel_research_mlb.py"
+    },
+    {
+      "role": "kalshi-fetcher",
+      "path": "pipeline/mlb/fetchers/fetch_kalshi_mlb_markets.py"
     },
     {
       "role": "side-backtest",

@@ -6,7 +6,7 @@ We now have a second historical betting-line source in the warehouse that does *
 
 New fetcher:
 
-- [pipeline/fetch_fanduel_research_mlb.py](/Users/jcchen/Documents/New%20project/pipeline/fetch_fanduel_research_mlb.py)
+- [pipeline/mlb/fetchers/fetch_fanduel_research_mlb.py](/Users/jcchen/Documents/New%20project/pipeline/mlb/fetchers/fetch_fanduel_research_mlb.py)
 
 New package script:
 

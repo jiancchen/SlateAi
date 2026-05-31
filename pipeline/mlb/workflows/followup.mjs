@@ -80,8 +80,8 @@ const main = () => {
   }
 
   runPythonWarehouse('grade-prop-picks', ['--date', options.date, '--model-name', options.propModelName])
-  runNodeScript('export-mlb-veto-artifact.mjs', ['--date', options.date])
-  runNodeScript('export-history-journal.mjs')
+  runNodeScript('mlb/publish/export-veto-artifact.mjs', ['--date', options.date])
+  runNodeScript('mlb/publish/export-history-journal.mjs')
   runPythonWarehouse('derive-story-labels', ['--through-date', options.date])
   const postmortemPaths = buildPostmortemPaths(options.date)
   execFileSync(
