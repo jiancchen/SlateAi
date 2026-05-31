@@ -111,7 +111,9 @@ class ModelRegistryTest(unittest.TestCase):
         self.assertIn("runPythonSideBacktest('grade'", text)
 
     def test_m0_quiet_start_gate_is_metadata_gated(self) -> None:
-        model_text = (ROOT / "web" / "src" / "lib" / "sports-model.js").read_text(encoding="utf-8")
+        model_text = (
+            ROOT / "models" / "mlb" / "cartridges" / "MLB-M0" / "lib" / "sports-model.js"
+        ).read_text(encoding="utf-8")
         generator_text = (
             ROOT / "pipeline" / "mlb" / "publish" / "generate-day-files.mjs"
         ).read_text(encoding="utf-8")

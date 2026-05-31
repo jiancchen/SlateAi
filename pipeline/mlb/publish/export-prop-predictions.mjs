@@ -4,7 +4,7 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 import { loadMlbDayGames } from '../../lib/load-mlb-day-games.mjs'
-import { formatAmericanOdds, rankMlbPlayerProps, rankMlbPlayerPropCandidatesLegacy } from '../../../web/src/lib/sports-model.js'
+import { formatAmericanOdds, rankMlbPlayerProps, rankMlbPlayerPropCandidatesLegacy } from '../../../models/mlb/cartridges/MLB-M0/lib/sports-model.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -413,7 +413,7 @@ const main = async () => {
     modelName: 'mlb-player-props-v2',
     date,
     generatedAt: new Date().toISOString(),
-    sources: ['day-file-live-board', 'web/src/lib/sports-model.js', 'FanDuel Research strikeout props'],
+    sources: ['day-file-live-board', 'models/mlb/cartridges/MLB-M0/lib/sports-model.js', 'FanDuel Research strikeout props'],
     summary: {
       totalGames: games.length,
       totalPicks: combinedProps.length,

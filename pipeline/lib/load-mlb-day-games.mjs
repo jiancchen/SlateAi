@@ -2,7 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 
-import { createSportsMatchModel } from '../../web/src/lib/sports-model.js'
+import { createSportsMatchModel } from '../../models/mlb/cartridges/MLB-M0/lib/sports-model.js'
 import { parkContextByHomeTeam } from '../../web/src/lib/day-2026-05-13-mlb-data.js'
 
 const __filename = fileURLToPath(import.meta.url)

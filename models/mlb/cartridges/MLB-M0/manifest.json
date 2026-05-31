@@ -53,6 +53,10 @@
       "path": "models/mlb/cartridges/MLB-M0/runner.mjs"
     },
     {
+      "role": "cartridge-module-config",
+      "path": "models/mlb/cartridges/MLB-M0/package.json"
+    },
+    {
       "role": "legacy-workflow-runner",
       "path": "models/mlb/cartridges/MLB-M0/lib/legacy-runner.mjs"
     },
@@ -186,6 +190,22 @@
     },
     {
       "role": "side-model-logic",
+      "path": "models/mlb/cartridges/MLB-M0/lib/sports-model.js"
+    },
+    {
+      "role": "model-core-utils",
+      "path": "models/mlb/cartridges/MLB-M0/lib/core-utils.js"
+    },
+    {
+      "role": "model-parlay-helpers",
+      "path": "models/mlb/cartridges/MLB-M0/lib/parlay.js"
+    },
+    {
+      "role": "model-team-utils",
+      "path": "models/mlb/cartridges/MLB-M0/lib/team-utils.js"
+    },
+    {
+      "role": "frontend-side-model-compat-shim",
       "path": "web/src/lib/sports-model.js"
     },
     {

@@ -218,8 +218,10 @@ This postgame command:
 
 - `web/src/App.tsx`
   Main frontend shell and trading desk UI.
+- `models/mlb/cartridges/MLB-M0/lib/sports-model.js`
+  Shared deterministic MLB scoring logic used by the published slates.
 - `web/src/lib/sports-model.js`
-  Shared deterministic scoring logic used by the published slates.
+  Frontend compatibility shim that re-exports the active cartridge scoring module.
 - `web/src/lib/slate-manifest.ts`
   Lazy-loading manifest for day files.
 - `pipeline/mlb/warehouse/mlb_warehouse.py`
