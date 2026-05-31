@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "sport-model-registry-v1",
+  "sport": "tennis",
+  "activeModelId": "T0",
+  "cartridgeRoot": "./cartridges",
+  "migrationStatus": "planned",
+  "cartridges": [
+    {
+      "modelId": "T0",
+      "role": "parent_model",
+      "currentPath": "../../pipeline/tennis_model_cartridges/T0",
+      "targetPath": "./cartridges/T0",
+      "status": "planned_migration",
+      "notes": "Existing T0 cartridge currently lives under pipeline/tennis_model_cartridges/T0 and will be copied here before compatibility readers are switched."
+    },
+    {
+      "modelId": "F0",
+      "role": "feature_contract",
+      "currentPath": "../../pipeline/tennis_model_cartridges/F0",
+      "targetPath": "./cartridges/F0",
+      "status": "planned_migration"
+    },
+    {
+      "modelId": "E0",
+      "role": "evaluator",
+      "currentPath": "../../pipeline/tennis_model_cartridges/E0",
+      "targetPath": "./cartridges/E0",
+      "status": "planned_migration"
+    }
+  ]
+}
+

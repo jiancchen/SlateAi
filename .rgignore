@@ -1,0 +1,23 @@
+# Runtime / dependency folders
+node_modules/
+api/node_modules/
+web/node_modules/
+web/dist/
+dist/
+
+# Local private warehouse artifacts
+data-private/raw/
+data-private/warehouse/
+
+# Generated public/runtime payloads
+published-data/
+web/public/data/
+
+# Large generated frontend modules and JSON payloads
+web/src/lib/day-*
+web/src/lib/*.generated.*
+web/src/lib/story-archive.generated.ts
+
+# Local editor/OS noise
+.DS_Store
+

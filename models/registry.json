@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "models-registry-v1",
+  "description": "Top-level model cartridge registry. Model-owned code lives under models/{sport}/cartridges; pipeline code remains workflow/data plumbing.",
+  "sports": {
+    "tennis": {
+      "registry": "./tennis/registry.json"
+    },
+    "mlb": {
+      "registry": "./mlb/registry.json"
+    }
+  },
+  "shared": {
+    "path": "./shared",
+    "purpose": "Reusable model primitives only. Sport/model-specific behavior belongs in cartridges."
+  }
+}
+
