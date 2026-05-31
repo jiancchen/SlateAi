@@ -99,6 +99,7 @@ class ModelRegistryTest(unittest.TestCase):
             "models/mlb/verify-cartridge.mjs",
             "models/mlb/compare-cartridges.mjs",
             "models/mlb/scaffold-cartridge.mjs",
+            "models/mlb/app-model.js",
             "development-docs/mlb/runbooks/model-iteration.md",
         ):
             with self.subTest(path=path_value):
@@ -144,6 +145,11 @@ class ModelRegistryTest(unittest.TestCase):
 
     def test_active_app_and_future_tennis_import_shared_sports_core_directly(self) -> None:
         app_text = (ROOT / "web" / "src" / "App.tsx").read_text(encoding="utf-8")
+        app_model_text = (ROOT / "models" / "mlb" / "app-model.js").read_text(encoding="utf-8")
+        shared_app_text = (
+            ROOT / "models" / "shared" / "sports-core" / "app-sports-model.js"
+        ).read_text(encoding="utf-8")
+        loader_text = (ROOT / "pipeline" / "lib" / "load-mlb-day-games.mjs").read_text(encoding="utf-8")
         slate_text = (ROOT / "web" / "src" / "lib" / "slate.js").read_text(encoding="utf-8")
         tennis_generator_text = (
             ROOT / "pipeline" / "tennis" / "publish" / "generate-day-module.mjs"
@@ -151,6 +157,24 @@ class ModelRegistryTest(unittest.TestCase):
 
         self.assertIn("../../models/shared/sports-core/app-sports-model.js", app_text)
         self.assertNotIn("./lib/sports-model.js", app_text)
+        self.assertIn("../../mlb/app-model.js", shared_app_text)
+        self.assertNotIn("cartridges/MLB-M0", shared_app_text)
+        self.assertIn("resolveMlbAppAdapter", loader_text)
+        self.assertNotIn("cartridges/MLB-M0/lib/sports-model.js", loader_text)
+        self.assertIn("No MLB app adapter registered", app_model_text)
+        result = subprocess.run(
+            [
+                "node",
+                "-e",
+                "import('./models/mlb/app-model.js').then((m) => console.log(Boolean(m.resolveMlbAppAdapter('M0').createSportsMatchModel)))",
+            ],
+            cwd=ROOT,
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        self.assertEqual(result.returncode, 0, msg=result.stdout + result.stderr)
+        self.assertIn("true", result.stdout)
         self.assertIn("../../../models/shared/sports-core/app-sports-model.js", slate_text)
         self.assertNotIn("from './sports-model.js'", tennis_generator_text)
         self.assertIn("../../../models/shared/sports-core/app-sports-model.js", tennis_generator_text)

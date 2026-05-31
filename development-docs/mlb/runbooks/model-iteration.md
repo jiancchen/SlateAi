@@ -61,6 +61,7 @@ npm run model:mlb:compare -- --left MLB-M0 --right MLB-M1 --date 2026-05-30
 - Source/input/output locks are written under `data-private/model-runs/mlb/${MODEL_ID}/${DATE}/`.
 - Shared warehouse rows exist in `model_runs`, `model_run_artifacts`, and `model_run_lanes`.
 - If the candidate consumes `MLB-RP36`, `model_component_runs` links the parent run to the addendum run.
+- If the candidate changes the app-facing match contract, register its adapter in `models/mlb/app-model.js` before activation. The app path should fail loudly for unregistered active parent models.
 - May 30 and the latest settled day are compared by lane, not by one blended score.
 - Model notes explain what changed, what should improve, and what might get worse.
 
@@ -80,7 +81,6 @@ npm run data:verify:mlb-run -- --date YYYY-MM-DD
 
 ## Known Architecture Edges
 
-- `models/shared/sports-core/app-sports-model.js` still imports the MLB-M0 adapter for the current app composition path. If a future MLB model changes the app-facing match factory contract, this shared app path must become registry-aware or model-specific.
-- `pipeline/lib/load-mlb-day-games.mjs` still imports the MLB-M0 adapter. It is acceptable while M1 preserves the same public match model contract; change it before a model changes that contract.
-- `models/shared/model-runs/index_runs.py` currently treats `MLB-M0` as the parent-model lane schema. A future parent model with the same output contract should be added to the parent-model lane set before activation.
+- `models/mlb/app-model.js` is the app adapter registry. It currently registers `MLB-M0`; future app-contract-compatible models must be added there before activation, otherwise the app/loader will throw instead of silently using M0.
+- `models/shared/model-runs/index_runs.py` now reads `role: parent_model` and consumed components from `models/mlb/registry.json`, so future parent models with the same lane contract can index without editing the indexer.
 - Compatibility launchers under `pipeline/mlb/` still point to MLB-M0 directly. Prefer package scripts and `models/mlb/*-cartridge.mjs` wrappers for new work.

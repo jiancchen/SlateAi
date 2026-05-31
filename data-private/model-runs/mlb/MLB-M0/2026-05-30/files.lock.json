@@ -1,8 +1,14 @@
 {
   "schemaVersion": 1,
   "runId": "mlb-2026-05-30-MLB-W1-MLB-F0-MLB-M0-MLB-RP36-MLB-E0",
-  "sourceHash": "511b6f9b395af8f90cfbaf804f1ee1f52ee295955169179fd9f8e5a75c365ae4",
+  "sourceHash": "3e09d04a64f41c0b0198e7f3a1e743e3f59a208d3f66a532235a6575d62d5f79",
   "files": [
+    {
+      "role": "mlb-app-adapter-registry",
+      "path": "models/mlb/app-model.js",
+      "exists": true,
+      "sha256": "1dedb3bbb00e12d3341be9e0f344dd56796cc1869107b8eb5f20808c4f66cfa7"
+    },
     {
       "path": "models/mlb/cartridges/MLB-E0/manifest.json",
       "role": "evaluator-manifest",
@@ -205,25 +211,25 @@
       "path": "models/mlb/cartridges/MLB-M0/manifest.json",
       "role": "parent_model-manifest",
       "exists": true,
-      "sha256": "4560411d4ac74080e57260f2c73319e37c11dcb7a0844fb7a91d0d5756c08587"
+      "sha256": "0cb46e91dc32bbefcd4d03d5c6bf9808f5006a24bacfa1a48a91b63844b6510b"
     },
     {
       "path": "models/mlb/cartridges/MLB-M0/MLB-M0_log.md",
       "role": "model-log",
       "exists": true,
-      "sha256": "b7f5997a9cef98535275b2ca566d5bc5dd705c8cac2eba3cb812cecc11aaad3f"
+      "sha256": "041eaad94af424c17ff23220e651bdeaf92d3aebbfc3f42db875e1317a3ea93f"
     },
     {
       "path": "models/mlb/cartridges/MLB-M0/model_description.json",
       "role": "model-description",
       "exists": true,
-      "sha256": "1b67c84161a07c491c6e691dfd07c14a5c82b9def89cb3600c1790c051c3ba78"
+      "sha256": "7b24c79361c32fadbfda776cc8a61dc749915948fb22ef8065f160e729b80856"
     },
     {
       "path": "models/mlb/cartridges/MLB-M0/MODEL_NOTES.md",
       "role": "model-notes",
       "exists": true,
-      "sha256": "c5ef17db8b5e72e1260ede36c3e193e7ed5d71a6a9c7bf8ba68c40a0b91f956c"
+      "sha256": "72e8728fcf0a21bdbd9b84bff3c17704ada66ef2b13ba30ece8c01c2200dbce0"
     },
     {
       "path": "models/mlb/cartridges/MLB-M0/output-contract.json",
@@ -370,6 +376,12 @@
       "sha256": "f111cc42ab291dc78ce95372843945da4f80ff7744e8439cc209ff3513720d04"
     },
     {
+      "role": "mlb-module-config",
+      "path": "models/mlb/package.json",
+      "exists": true,
+      "sha256": "3ca9d4afd21425087cf31893b8f9f63c81b0b8408db5e343ca76e5f8aa26ab9a"
+    },
+    {
       "path": "models/mlb/registry.json",
       "role": "model-registry",
       "exists": true,
@@ -403,13 +415,13 @@
       "role": "shared-model-run-indexer",
       "path": "models/shared/model-runs/index_runs.py",
       "exists": true,
-      "sha256": "40aa8a23608d18aa83984b895c280962f73871d86c81e62405dbd7e55997278e"
+      "sha256": "48d740bf2082a92534368c0f63e741230fa4f75210661975a2c7a69905b6f3c0"
     },
     {
       "role": "shared-app-composition",
       "path": "models/shared/sports-core/app-sports-model.js",
       "exists": true,
-      "sha256": "0f1d34acc856b23658f9f514ff43cf36809b88b19a6c3a20c16b80cab1417c87"
+      "sha256": "838a0845e7e4007d891c66d56055f7324e223b6f69fcfce98b3907195d5fa033"
     },
     {
       "role": "shared-core-utils",

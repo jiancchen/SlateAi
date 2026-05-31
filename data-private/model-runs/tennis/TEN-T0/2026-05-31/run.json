@@ -10,9 +10,9 @@
   "mode": "pregame",
   "status": "locked",
   "createdAt": "2026-05-31T05:20:41.707Z",
-  "lockedAt": "2026-05-31T23:14:26.036Z",
+  "lockedAt": "2026-05-31T23:29:09.632Z",
   "git": {
-    "commit": "a3c6b3d1f6d8218919c6b31d86b28bd7d8cc9e99",
+    "commit": "09701debaabbe60b7c9c0e69705c4a78066f2c2f",
     "dirty": true
   },
   "registry": {

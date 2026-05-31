@@ -2,7 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 
-import { createSportsMatchModel } from '../../models/mlb/cartridges/MLB-M0/lib/sports-model.js'
+import { activeMlbAppModelId, resolveMlbAppAdapter } from '../../models/mlb/app-model.js'
 import { parkContextByHomeTeam } from '../../web/src/lib/day-2026-05-13-mlb-data.js'
 
 const __filename = fileURLToPath(import.meta.url)
@@ -69,7 +69,7 @@ const buildGenericMlbGame = (
       ? {
           ...(raw.metadata ?? {}),
           ...(slateDate ? { slateDate } : {}),
-          modelCartridge: raw.metadata?.modelCartridge ?? 'MLB-M0',
+          modelCartridge: raw.metadata?.modelCartridge ?? activeMlbAppModelId,
           quietStartFullGameGate: Boolean(raw.metadata?.quietStartFullGameGate)
         }
       : null
@@ -187,6 +187,8 @@ export const loadMlbDayGames = async (date) => {
         : seenCount > 0
           ? `${baseId}-g${seenCount + 1}`
           : baseId
-    return createSportsMatchModel(buildGenericMlbGame(raw, { ...dependencies, uniqueId }), oddsProvider)
+    const game = buildGenericMlbGame(raw, { ...dependencies, uniqueId })
+    const adapter = resolveMlbAppAdapter(game.metadata?.modelCartridge)
+    return adapter.createSportsMatchModel(game, oddsProvider)
   })
 }

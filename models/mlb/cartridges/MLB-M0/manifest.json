@@ -128,6 +128,10 @@
       "path": "models/mlb/lib/registry-utils.mjs"
     },
     {
+      "role": "mlb-module-config",
+      "path": "models/mlb/package.json"
+    },
+    {
       "role": "mlb-cartridge-runner",
       "path": "models/mlb/run-cartridge.mjs"
     },
@@ -226,6 +230,10 @@
     {
       "role": "shared-app-composition",
       "path": "models/shared/sports-core/app-sports-model.js"
+    },
+    {
+      "role": "mlb-app-adapter-registry",
+      "path": "models/mlb/app-model.js"
     },
     {
       "role": "model-prop-calibration",

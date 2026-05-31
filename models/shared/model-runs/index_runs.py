@@ -152,6 +152,34 @@ def stable_json(value: Any) -> str:
     return json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=True)
 
 
+def sport_registry(sport: str) -> dict[str, Any]:
+    return read_json(ROOT / "models" / sport / "registry.json", {}) or {}
+
+
+def sport_model_entry(sport: str, model_id: str) -> dict[str, Any]:
+    normalized = str(model_id or "").upper()
+    registry = sport_registry(sport)
+    for entry in registry.get("cartridges") or []:
+        if str(entry.get("modelId") or "").upper() == normalized:
+            return entry
+    return {}
+
+
+def sport_model_role(sport: str, model_id: str) -> str:
+    return str(sport_model_entry(sport, model_id).get("role") or "")
+
+
+def mlb_component_model_ids(parent_model_id: str) -> list[str]:
+    entry = sport_model_entry("mlb", parent_model_id)
+    components = entry.get("components") or []
+    return [str(component).upper() for component in components if component]
+
+
+def is_parent_model(sport: str, model_id: str) -> bool:
+    role = sport_model_role(sport, model_id)
+    return role == "parent_model"
+
+
 def pct(hits: int, rows: int) -> float | None:
     return round((hits / rows) * 100.0, 1) if rows else None
 
@@ -441,10 +469,16 @@ def index_rp36_settlement(conn: sqlite3.Connection, date: str, run: dict[str, An
 
 
 def model_lanes(conn: sqlite3.Connection, sport: str, model_id: str, date: str, run: dict[str, Any]) -> list[dict[str, Any]]:
-    if sport == "mlb" and model_id == "MLB-M0":
+    if sport == "mlb" and is_parent_model(sport, model_id):
         lanes = mlb_journal_lanes(date)
-        component_run = read_json(run_dir(sport, "MLB-RP36", date) / "run.json", None)
-        if component_run:
+        conn.execute("DELETE FROM model_component_runs WHERE parent_run_id = ?", (run["runId"],))
+        for component_model_id in mlb_component_model_ids(model_id):
+            component_run = read_json(run_dir(sport, component_model_id, date) / "run.json", None)
+            if not component_run:
+                continue
+            component_role = sport_model_role(sport, component_model_id) or "component"
+            if component_role == "relief_addendum":
+                component_role = "relief-addendum"
             conn.execute(
                 """
                 INSERT OR REPLACE INTO model_component_runs (
@@ -453,9 +487,9 @@ def model_lanes(conn: sqlite3.Connection, sport: str, model_id: str, date: str, 
                 """,
                 (
                     run["runId"],
-                    "MLB-RP36",
+                    component_model_id,
                     component_run.get("runId"),
-                    "relief-addendum",
+                    component_role,
                     json.dumps({"mode": component_run.get("mode"), "status": component_run.get("status")}, sort_keys=True),
                 ),
             )

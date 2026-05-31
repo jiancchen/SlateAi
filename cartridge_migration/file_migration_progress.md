@@ -31,6 +31,7 @@ Date: 2026-05-31
 - Updated active app imports and future tennis day generation to import `models/shared/sports-core/app-sports-model.js` directly; historical generated day files can keep the compatibility shim.
 - Added registry-aware MLB lifecycle wrappers under `models/mlb/` and routed MLB package scripts through them for parent-model run, lock, verify, workflow, and lane dispatch.
 - Added `development-docs/mlb/runbooks/model-iteration.md` documenting how a future `MLB-M1` should be scaffolded from `MLB-M0`, benchmarked, locked, compared, and activated.
+- Added `models/mlb/app-model.js` so app-facing MLB adapter resolution is centralized and unregistered future active parent models fail loudly instead of silently using MLB-M0.
 - Moved MLB pregame and refresh workflow implementations into `pipeline/mlb/workflows/`.
 - Moved the MLB close/follow-up workflow into `pipeline/mlb/workflows/followup.mjs`, and pointed future generated postmortem/follow-up docs into `development-docs/mlb/postmortems/`.
 - Moved MLB refresh verification into `pipeline/mlb/workflows/verify-refresh.mjs`.
@@ -70,6 +71,6 @@ Date: 2026-05-31
 
 1. Move model-owned feature generation out of pipeline folders only after the May 30/May 31 golden snapshots cover the change.
 2. Backtest RP36 exact/top-2/top-3 component lanes across future locked runs before letting relief context drive picks.
-3. Make app-facing MLB composition registry-aware before activating any parent model that changes the M0 match-model contract.
+3. Register any future parent model's app adapter in `models/mlb/app-model.js` before activation if it changes or relies on the app-facing match-model contract.
 4. Decide whether the old pipeline compatibility launchers become permanent CLI/API surfaces or can be removed after package scripts and docs settle.
 5. Update `cartridge_migration/technical_debt.md` in the same patch whenever a migration step leaves a shim, wrapper, compatibility path, delegated implementation, or broad lock behind.

@@ -46,6 +46,17 @@ Architecture issue surfaced:
 
 The daily package scripts can now dispatch through the registry, but app-facing shared composition and some compatibility loaders still import the MLB-M0 adapter directly. That is acceptable while new models preserve the same app contract. If M1 changes the match model contract, those paths must become registry-aware too.
 
+Follow-up fix:
+
+- Added `models/mlb/app-model.js` as the app adapter registry.
+- Routed `models/shared/sports-core/app-sports-model.js` through the app adapter registry instead of importing MLB-M0 directly.
+- Routed `pipeline/lib/load-mlb-day-games.mjs` through the app adapter registry.
+- Updated the shared run indexer to classify MLB parent models by `role: parent_model` in `models/mlb/registry.json`, not by a hardcoded `MLB-M0` id.
+
+Current remaining risk:
+
+A future active parent model still needs an explicit app adapter registration. That is intentional: the app should fail loudly if the active model is not app-contract-compatible.
+
 ## 2026-05-31 - Hitter Career And Repeatability Baseline
 
 Added low-weight hitter career profiles for current-lineup batters. The goal is not to let old career numbers drive current props; the goal is to keep tiny current-season samples from exploding into fake certainty.
