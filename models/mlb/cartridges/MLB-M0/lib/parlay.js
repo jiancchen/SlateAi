@@ -3,7 +3,7 @@ import {
   formatAmericanOdds,
   formatCurrency,
   formatProbability
-} from './core-utils.js'
+} from '../../../../shared/sports-core/core-utils.js'
 
 export const createParlayLeg = (game, participantId, selectionSource = 'manual') => {
   const pick = game.moneyline.participants.find((participant) => participant.id === participantId)

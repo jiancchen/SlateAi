@@ -1,4 +1,4 @@
-import { average, clamp, roundToTenths } from './core-utils.js'
+import { average, clamp, roundToTenths } from '../../../../shared/sports-core/core-utils.js'
 
 const buildMlbDecisionIndicators = ({
   riskContext,

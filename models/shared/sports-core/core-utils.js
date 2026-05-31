@@ -81,3 +81,22 @@ export const parseAmericanOddsPair = (value) => {
 
   return [...normalized.matchAll(americanPattern)].map((match) => Number(match[0]))
 }
+
+export const parseRecord = (value = '') => {
+  const match = value.match(/(\d+)-(\d+)(?:-(\d+))?/)
+
+  if (!match) return null
+
+  const wins = Number(match[1])
+  const losses = Number(match[2])
+  const draws = Number(match[3] || 0)
+  const totalBouts = wins + losses + draws
+
+  return {
+    wins,
+    losses,
+    draws,
+    totalBouts,
+    winPct: totalBouts > 0 ? wins / totalBouts : 0.5
+  }
+}

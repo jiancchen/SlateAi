@@ -1,4 +1,4 @@
-import { clamp, roundToTenths } from './core-utils.js'
+import { clamp, roundToTenths } from '../../../../shared/sports-core/core-utils.js'
 import { teamNamesMatch } from './team-utils.js'
 
 const hashSeedString = (value = '') => {

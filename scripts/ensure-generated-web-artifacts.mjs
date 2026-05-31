@@ -6,6 +6,7 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const rootDir = path.resolve(__dirname, '..')
 const webLibDir = path.join(rootDir, 'web', 'src', 'lib')
+const mlbGeneratedDir = path.join(rootDir, 'models', 'mlb', 'cartridges', 'MLB-M0', 'generated')
 
 const ensureFile = async (filePath, source) => {
   try {
@@ -18,7 +19,7 @@ const ensureFile = async (filePath, source) => {
 }
 
 await ensureFile(
-  path.join(webLibDir, 'mlb-prop-calibration.generated.js'),
+  path.join(mlbGeneratedDir, 'mlb-prop-calibration.generated.js'),
   `export const mlbPropCalibration = {
   overallByType: {},
   byTeamAndType: {},
@@ -26,6 +27,11 @@ await ensureFile(
   byScriptTagAndType: {},
   byStoryTagAndType: {}
 }\n`
+)
+
+await ensureFile(
+  path.join(webLibDir, 'mlb-prop-calibration.generated.js'),
+  "export { mlbPropCalibration } from '../../../models/mlb/cartridges/MLB-M0/generated/mlb-prop-calibration.generated.js'\n"
 )
 
 await ensureFile(

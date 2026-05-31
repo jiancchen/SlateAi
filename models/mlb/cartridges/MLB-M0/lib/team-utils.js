@@ -1,4 +1,4 @@
-import { normalizeText } from './core-utils.js'
+import { normalizeText } from '../../../../shared/sports-core/core-utils.js'
 
 export const normalizeTeamAlias = (value = '') => {
   const normalized = normalizeText(value)

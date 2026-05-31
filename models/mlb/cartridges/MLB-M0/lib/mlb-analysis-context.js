@@ -1,6 +1,6 @@
-import { average, clamp, roundToTenths } from './core-utils.js'
-import { computeNoVigProbabilities, getTotalMarketValue, parseFirstTotalNumber } from './market-utils.js'
-import { buildMarketSignal, createSignal } from './signal-utils.js'
+import { average, clamp, roundToTenths } from '../../../../shared/sports-core/core-utils.js'
+import { computeNoVigProbabilities, getTotalMarketValue, parseFirstTotalNumber } from '../../../../shared/sports-core/market-utils.js'
+import { buildMarketSignal, createSignal } from '../../../../shared/sports-core/signal-utils.js'
 import {
   buildStarterProfile,
   deriveStarterLeashScore,

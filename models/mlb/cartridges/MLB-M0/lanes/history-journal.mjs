@@ -837,10 +837,17 @@ const buildPropCalibration = (propRecords) => {
 }
 
 const writePropCalibrationModule = (propRecords) => {
-  const target = path.join(ROOT, 'web', 'src', 'lib', 'mlb-prop-calibration.generated.js')
+  const target = path.join(ROOT, 'models', 'mlb', 'cartridges', 'MLB-M0', 'generated', 'mlb-prop-calibration.generated.js')
+  const webShimTarget = path.join(ROOT, 'web', 'src', 'lib', 'mlb-prop-calibration.generated.js')
   const calibration = buildPropCalibration(propRecords)
   const moduleSource = `export const mlbPropCalibration = ${JSON.stringify(calibration, null, 2)}\n`
+  ensureDir(path.dirname(target))
   fs.writeFileSync(target, moduleSource, 'utf8')
+  fs.writeFileSync(
+    webShimTarget,
+    "export { mlbPropCalibration } from '../../../models/mlb/cartridges/MLB-M0/generated/mlb-prop-calibration.generated.js'\n",
+    'utf8'
+  )
   console.log(`Wrote prop calibration -> ${target}`)
 }
 

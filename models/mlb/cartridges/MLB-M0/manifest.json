@@ -172,20 +172,48 @@
       "path": "models/mlb/cartridges/MLB-M0/lib/sports-model.js"
     },
     {
-      "role": "model-core-utils",
-      "path": "models/mlb/cartridges/MLB-M0/lib/core-utils.js"
+      "role": "shared-sports-core-readme",
+      "path": "models/shared/sports-core/README.md"
     },
     {
-      "role": "model-market-utils",
-      "path": "models/mlb/cartridges/MLB-M0/lib/market-utils.js"
+      "role": "shared-sports-core-module-config",
+      "path": "models/shared/sports-core/package.json"
     },
     {
-      "role": "model-signal-utils",
-      "path": "models/mlb/cartridges/MLB-M0/lib/signal-utils.js"
+      "role": "shared-core-utils",
+      "path": "models/shared/sports-core/core-utils.js"
     },
     {
-      "role": "model-participant-factory",
-      "path": "models/mlb/cartridges/MLB-M0/lib/participant-model.js"
+      "role": "shared-market-utils",
+      "path": "models/shared/sports-core/market-utils.js"
+    },
+    {
+      "role": "shared-signal-utils",
+      "path": "models/shared/sports-core/signal-utils.js"
+    },
+    {
+      "role": "shared-participant-factory",
+      "path": "models/shared/sports-core/participant-model.js"
+    },
+    {
+      "role": "shared-match-model-factory",
+      "path": "models/shared/sports-core/match-model.js"
+    },
+    {
+      "role": "shared-structured-context",
+      "path": "models/shared/sports-core/structured-analysis-context.js"
+    },
+    {
+      "role": "shared-structured-inputs",
+      "path": "models/shared/sports-core/structured-inputs.js"
+    },
+    {
+      "role": "shared-app-composition",
+      "path": "models/shared/sports-core/app-sports-model.js"
+    },
+    {
+      "role": "model-prop-calibration",
+      "path": "models/mlb/cartridges/MLB-M0/generated/mlb-prop-calibration.generated.js"
     },
     {
       "role": "model-structured-context",

@@ -1,4 +1,4 @@
-import { clamp, getAnalysisTier, roundToTenths } from './core-utils.js'
+import { clamp, getAnalysisTier, roundToTenths } from '../../../../shared/sports-core/core-utils.js'
 
 const getMlbTierOneRiskPoints = ({
   volatility,

@@ -1,1 +1,1 @@
-export * from '../../../models/mlb/cartridges/MLB-M0/lib/sports-model.js'
+export * from '../../../models/shared/sports-core/app-sports-model.js'

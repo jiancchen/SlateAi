@@ -2,7 +2,7 @@ import {
   clamp,
   impliedProbabilityFromAmerican,
   roundToTenths
-} from './core-utils.js'
+} from '../../../../shared/sports-core/core-utils.js'
 
 export const rankAnalysisPicks = (games) =>
   games

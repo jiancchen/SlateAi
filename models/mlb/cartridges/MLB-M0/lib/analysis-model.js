@@ -3,8 +3,8 @@ import {
   formatProbability,
   getAnalysisTier,
   roundToTenths
-} from './core-utils.js'
-import { computeNoVigProbabilities } from './market-utils.js'
+} from '../../../../shared/sports-core/core-utils.js'
+import { computeNoVigProbabilities } from '../../../../shared/sports-core/market-utils.js'
 import { buildMlbDecisionIndicators } from './mlb-decision-indicators.js'
 import {
   applyMlbTierOneControls,
@@ -12,8 +12,8 @@ import {
   buildMlbResearchVetoFlags,
   buildMlbVetoLayer
 } from './mlb-side-controls.js'
-import { findAnalysisParticipant } from './participant-model.js'
-import { normalizeSignal } from './signal-utils.js'
+import { findAnalysisParticipant } from '../../../../shared/sports-core/participant-model.js'
+import { normalizeSignal } from '../../../../shared/sports-core/signal-utils.js'
 import { buildStructuredAnalysisContext, sportVolatilityBase } from './structured-analysis-context.js'
 import { teamNamesMatch } from './team-utils.js'
 

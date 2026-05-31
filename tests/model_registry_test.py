@@ -134,6 +134,37 @@ class ModelRegistryTest(unittest.TestCase):
         self.assertIn("quietStartFullGameGate: options.date >= '2026-05-31'", generator_text)
         self.assertIn("quietStartFullGameGate", loader_text)
 
+    def test_shared_sports_core_owns_generic_match_plumbing(self) -> None:
+        shared_dir = ROOT / "models" / "shared" / "sports-core"
+        self.assertTrue(shared_dir.exists(), "shared sports core directory is missing")
+
+        for file_name in (
+            "core-utils.js",
+            "market-utils.js",
+            "signal-utils.js",
+            "participant-model.js",
+            "match-model.js",
+            "structured-analysis-context.js",
+            "structured-inputs.js",
+        ):
+            with self.subTest(file_name=file_name):
+                self.assertTrue((shared_dir / file_name).exists(), f"shared sports core file missing: {file_name}")
+
+        m0_lib = ROOT / "models" / "mlb" / "cartridges" / "MLB-M0" / "lib"
+        for retired_name in ("core-utils.js", "market-utils.js", "signal-utils.js", "participant-model.js"):
+            with self.subTest(retired_name=retired_name):
+                self.assertFalse((m0_lib / retired_name).exists(), f"generic helper still lives under MLB-M0: {retired_name}")
+
+        structured_adapter = (m0_lib / "structured-analysis-context.js").read_text(encoding="utf-8")
+        shared_structured = (shared_dir / "structured-analysis-context.js").read_text(encoding="utf-8")
+        web_shim = (ROOT / "web" / "src" / "lib" / "sports-model.js").read_text(encoding="utf-8")
+
+        self.assertIn("createStructuredAnalysisContextBuilder", structured_adapter)
+        self.assertNotIn("buildUfcAnalysisContext", structured_adapter)
+        self.assertIn("buildUfcAnalysisContext", shared_structured)
+        self.assertIn("models/shared/sports-core/app-sports-model.js", web_shim)
+        self.assertNotIn("MLB-M0/lib/sports-model.js", web_shim)
+
     def test_mlb_publish_compatibility_launchers_point_to_m0_lanes(self) -> None:
         for publish_path in sorted((ROOT / "pipeline" / "mlb" / "publish").glob("*.mjs")):
             with self.subTest(publish_path=publish_path.name):

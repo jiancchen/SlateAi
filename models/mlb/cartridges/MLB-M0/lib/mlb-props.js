@@ -1,5 +1,5 @@
-import { mlbPropCalibration } from '../../../../../web/src/lib/mlb-prop-calibration.generated.js'
-import { clamp, normalizeText, roundToTenths } from './core-utils.js'
+import { mlbPropCalibration } from '../generated/mlb-prop-calibration.generated.js'
+import { clamp, normalizeText, roundToTenths } from '../../../../shared/sports-core/core-utils.js'
 import { parseBaseballInnings } from './mlb-starter-utils.js'
 import { teamNamesMatch } from './team-utils.js'
 
