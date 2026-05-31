@@ -1,6 +1,6 @@
 export const lineupSnapshotMeta = {
   "date": "2026-05-31",
-  "snapshot": "2026-05-31T18:00:03.953Z",
+  "snapshot": "2026-05-31T18:17:29.722Z",
   "recentWindow": {
     "start": "2026-05-24",
     "end": "2026-05-30"
@@ -14,7 +14,7 @@ export const lineupBoardsByGameId = {
   "blue-jays-orioles": {
     "gameId": "blue-jays-orioles",
     "title": "Blue Jays @ Orioles",
-    "snapshot": "2026-05-31T18:00:03.941Z",
+    "snapshot": "2026-05-31T18:17:29.710Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -30,7 +30,7 @@ export const lineupBoardsByGameId = {
     },
     "marketWeatherContext": {
       "line": "BAL -135",
-      "total": "8.5 Runs",
+      "total": "10.0 Runs",
       "source": "RotoWire daily lineups + weather"
     },
     "away": {
@@ -248,7 +248,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/664770?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -449,7 +449,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/665489?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -651,7 +651,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/662139?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -689,17 +689,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 12,
             "walks": 23,
             "totalBases": 88,
-            "atBats": 209,
-            "plateAppearances": 236,
-            "avg": 0.215,
-            "obp": 0.301,
-            "slg": 0.421,
-            "ops": 0.722,
-            "hitRate": 0.1907,
-            "singlesRate": 0.11019999999999999,
-            "hrRate": 0.0508,
-            "walkRate": 0.0975,
-            "totalBasesRate": 0.3729
+            "atBats": 210,
+            "plateAppearances": 237,
+            "avg": 0.214,
+            "obp": 0.3,
+            "slg": 0.419,
+            "ops": 0.719,
+            "hitRate": 0.18989999999999999,
+            "singlesRate": 0.1097,
+            "hrRate": 0.0506,
+            "walkRate": 0.09699999999999999,
+            "totalBasesRate": 0.3713
           },
           "recent": {
             "gamesPlayed": 14,
@@ -745,17 +745,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.3539
           },
           "metrics": {
-            "powerScore": 65.7,
-            "contactScore": 30.4,
-            "patienceScore": 57.2,
+            "powerScore": 65.4,
+            "contactScore": 30,
+            "patienceScore": 57,
             "formScore": 92,
-            "splitScore": 41,
+            "splitScore": 41.8,
             "varianceScore": 92,
             "pitchTypeFitScore": 63.8,
             "pitchTypeGrade": 3.36,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 92.8,
-            "matchupGrade": 8.88
+            "matchupScore": 93.3,
+            "matchupGrade": 8.97
           },
           "pitchType": {
             "fitScore": 63.8,
@@ -823,35 +823,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2026,
             "latestMlbYear": 2026,
             "careerGames": 58,
-            "careerPlateAppearances": 236,
+            "careerPlateAppearances": 237,
             "careerHits": 45,
             "careerHomeRuns": 12,
             "careerTotalBases": 88,
             "careerWalks": 23,
-            "careerStrikeouts": 76,
-            "careerHitRate": 0.1907,
-            "careerAvg": 0.215,
-            "careerObp": 0.301,
-            "careerSlg": 0.421,
-            "careerOps": 0.722,
-            "careerTbPerPa": 0.3728813559322034,
-            "careerHrPerPa": 0.05084745762711865,
-            "careerKRate": 0.3220338983050847,
-            "careerBbRate": 0.09745762711864407,
+            "careerStrikeouts": 77,
+            "careerHitRate": 0.18989999999999999,
+            "careerAvg": 0.214,
+            "careerObp": 0.3,
+            "careerSlg": 0.419,
+            "careerOps": 0.719,
+            "careerTbPerPa": 0.37130801687763715,
+            "careerHrPerPa": 0.05063291139240506,
+            "careerKRate": 0.32489451476793246,
+            "careerBbRate": 0.0970464135021097,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 12,
-            "bestPowerSlg": 0.42105263157894735,
+            "bestPowerSlg": 0.41904761904761906,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 236,
+            "recentMlbPlateAppearances": 237,
             "recentMlbHomeRuns": 12,
-            "recentMlbTbPerPa": 0.3728813559322034,
-            "careerPowerIndex": 73.37,
-            "contactRiskIndex": 62.44,
-            "roleStabilityIndex": 54.5,
+            "recentMlbTbPerPa": 0.37130801687763715,
+            "careerPowerIndex": 72.85,
+            "contactRiskIndex": 63.01,
+            "roleStabilityIndex": 54.62,
             "repeatabilityLabel": "volatile career power",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/672960?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -861,8 +861,8 @@ export const lineupBoardsByGameId = {
             "career power"
           ],
           "primaryTag": "carry",
-          "summary": ".215 AVG | .722 OPS | 45 H | 12 HR | 14g: .240 AVG | .881 OPS | 12 H | 4 HR | vs RHP: .196 AVG | .680 OPS | 9 HR | career 236 PA | .722 OPS | 12 HR | volatile career power | power 73 | 2026 sample ok | arsenal Sinker 30% / Slider 28% / Curveball 23% | fit +3.4 | +8.9 matchup grade in a traffic-risk lane",
-          "matchupNote": "+8.88 vs Kyle Bradish"
+          "summary": ".214 AVG | .719 OPS | 45 H | 12 HR | 14g: .240 AVG | .881 OPS | 12 H | 4 HR | vs RHP: .196 AVG | .680 OPS | 9 HR | career 237 PA | .719 OPS | 12 HR | volatile career power | power 73 | 2026 sample ok | arsenal Sinker 30% / Slider 28% / Curveball 23% | fit +3.4 | +9.0 matchup grade in a traffic-risk lane",
+          "matchupNote": "+8.97 vs Kyle Bradish"
         },
         {
           "playerId": 676391,
@@ -883,24 +883,24 @@ export const lineupBoardsByGameId = {
           },
           "season": {
             "gamesPlayed": 59,
-            "hits": 66,
-            "singles": 43,
+            "hits": 67,
+            "singles": 44,
             "doubles": 18,
             "triples": 0,
             "homeRuns": 5,
             "walks": 8,
-            "totalBases": 99,
-            "atBats": 225,
-            "plateAppearances": 234,
-            "avg": 0.293,
-            "obp": 0.316,
-            "slg": 0.44,
-            "ops": 0.756,
-            "hitRate": 0.2821,
-            "singlesRate": 0.1838,
-            "hrRate": 0.021400000000000002,
-            "walkRate": 0.0342,
-            "totalBasesRate": 0.42310000000000003
+            "totalBases": 100,
+            "atBats": 226,
+            "plateAppearances": 235,
+            "avg": 0.296,
+            "obp": 0.319,
+            "slg": 0.442,
+            "ops": 0.762,
+            "hitRate": 0.2851,
+            "singlesRate": 0.18719999999999998,
+            "hrRate": 0.0213,
+            "walkRate": 0.034,
+            "totalBasesRate": 0.4255
           },
           "recent": {
             "gamesPlayed": 14,
@@ -946,17 +946,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.44310000000000005
           },
           "metrics": {
-            "powerScore": 43.2,
-            "contactScore": 84.4,
-            "patienceScore": 29.4,
+            "powerScore": 43.5,
+            "contactScore": 85,
+            "patienceScore": 29.3,
             "formScore": 92,
-            "splitScore": 54.9,
-            "varianceScore": 45.2,
+            "splitScore": 53.8,
+            "varianceScore": 43.5,
             "pitchTypeFitScore": 62.6,
             "pitchTypeGrade": 3.51,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 84,
-            "matchupGrade": 6.48
+            "matchupScore": 83.2,
+            "matchupGrade": 6.31
           },
           "pitchType": {
             "fitScore": 62.6,
@@ -1024,35 +1024,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2021,
             "latestMlbYear": 2026,
             "careerGames": 495,
-            "careerPlateAppearances": 1638,
-            "careerHits": 408,
+            "careerPlateAppearances": 1639,
+            "careerHits": 409,
             "careerHomeRuns": 30,
-            "careerTotalBases": 593,
+            "careerTotalBases": 594,
             "careerWalks": 65,
             "careerStrikeouts": 170,
-            "careerHitRate": 0.2491,
-            "careerAvg": 0.265,
+            "careerHitRate": 0.2495,
+            "careerAvg": 0.266,
             "careerObp": 0.298,
             "careerSlg": 0.386,
             "careerOps": 0.684,
-            "careerTbPerPa": 0.362026862026862,
-            "careerHrPerPa": 0.018315018315018316,
-            "careerKRate": 0.10378510378510379,
-            "careerBbRate": 0.03968253968253968,
+            "careerTbPerPa": 0.3624161073825503,
+            "careerHrPerPa": 0.018303843807199512,
+            "careerKRate": 0.10372178157413056,
+            "careerBbRate": 0.03965832824893228,
             "bestPowerYear": 2024,
             "bestPowerHomeRuns": 12,
             "bestPowerSlg": 0.4078341013824885,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 234,
+            "recentMlbPlateAppearances": 235,
             "recentMlbHomeRuns": 5,
-            "recentMlbTbPerPa": 0.4230769230769231,
-            "careerPowerIndex": 41.8,
-            "contactRiskIndex": 24.44,
+            "recentMlbTbPerPa": 0.425531914893617,
+            "careerPowerIndex": 41.9,
+            "contactRiskIndex": 24.43,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/676391?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -1062,8 +1062,8 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "carry",
-          "summary": ".293 AVG | .756 OPS | 66 H | 5 HR | 14g: .296 AVG | .852 OPS | 16 H | 4 HR | vs RHP: .315 AVG | .792 OPS | 3 HR | career 1638 PA | .684 OPS | 30 HR | contact-stable profile | power 42 | 2026 sample ok | arsenal Sinker 30% / Slider 28% / Curveball 23% | fit +3.5 | +6.5 matchup grade in a traffic-risk lane",
-          "matchupNote": "+6.48 vs Kyle Bradish"
+          "summary": ".296 AVG | .762 OPS | 67 H | 5 HR | 14g: .296 AVG | .852 OPS | 16 H | 4 HR | vs RHP: .315 AVG | .792 OPS | 3 HR | career 1639 PA | .684 OPS | 30 HR | contact-stable profile | power 42 | 2026 sample ok | arsenal Sinker 30% / Slider 28% / Curveball 23% | fit +3.5 | +6.3 matchup grade in a traffic-risk lane",
+          "matchupNote": "+6.31 vs Kyle Bradish"
         },
         {
           "playerId": 682818,
@@ -1084,24 +1084,24 @@ export const lineupBoardsByGameId = {
           },
           "season": {
             "gamesPlayed": 29,
-            "hits": 23,
-            "singles": 17,
+            "hits": 24,
+            "singles": 18,
             "doubles": 4,
             "triples": 0,
             "homeRuns": 2,
             "walks": 5,
-            "totalBases": 33,
-            "atBats": 83,
-            "plateAppearances": 88,
-            "avg": 0.277,
-            "obp": 0.318,
-            "slg": 0.398,
-            "ops": 0.716,
-            "hitRate": 0.2614,
-            "singlesRate": 0.1932,
-            "hrRate": 0.0227,
-            "walkRate": 0.056799999999999996,
-            "totalBasesRate": 0.375
+            "totalBases": 34,
+            "atBats": 84,
+            "plateAppearances": 89,
+            "avg": 0.286,
+            "obp": 0.326,
+            "slg": 0.405,
+            "ops": 0.731,
+            "hitRate": 0.2697,
+            "singlesRate": 0.2022,
+            "hrRate": 0.0225,
+            "walkRate": 0.0562,
+            "totalBasesRate": 0.382
           },
           "recent": {
             "gamesPlayed": 12,
@@ -1147,17 +1147,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.4
           },
           "metrics": {
-            "powerScore": 43.8,
-            "contactScore": 57.2,
-            "patienceScore": 39.1,
-            "formScore": 36.9,
-            "splitScore": 65.5,
-            "varianceScore": 83.9,
+            "powerScore": 44.5,
+            "contactScore": 58.7,
+            "patienceScore": 38.8,
+            "formScore": 33.8,
+            "splitScore": 62.3,
+            "varianceScore": 84.1,
             "pitchTypeFitScore": 63,
             "pitchTypeGrade": 3.21,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 48.8,
-            "matchupGrade": -0.6
+            "matchupScore": 46.1,
+            "matchupGrade": -1.06
           },
           "pitchType": {
             "fitScore": 63,
@@ -1225,35 +1225,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2026,
             "latestMlbYear": 2026,
             "careerGames": 29,
-            "careerPlateAppearances": 88,
-            "careerHits": 23,
+            "careerPlateAppearances": 89,
+            "careerHits": 24,
             "careerHomeRuns": 2,
-            "careerTotalBases": 33,
+            "careerTotalBases": 34,
             "careerWalks": 5,
             "careerStrikeouts": 19,
-            "careerHitRate": 0.2614,
-            "careerAvg": 0.277,
-            "careerObp": 0.318,
-            "careerSlg": 0.398,
-            "careerOps": 0.716,
-            "careerTbPerPa": 0.375,
-            "careerHrPerPa": 0.022727272727272728,
-            "careerKRate": 0.2159090909090909,
-            "careerBbRate": 0.056818181818181816,
+            "careerHitRate": 0.2697,
+            "careerAvg": 0.286,
+            "careerObp": 0.326,
+            "careerSlg": 0.405,
+            "careerOps": 0.731,
+            "careerTbPerPa": 0.38202247191011235,
+            "careerHrPerPa": 0.02247191011235955,
+            "careerKRate": 0.21348314606741572,
+            "careerBbRate": 0.056179775280898875,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 2,
-            "bestPowerSlg": 0.39759036144578314,
+            "bestPowerSlg": 0.40476190476190477,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 88,
+            "recentMlbPlateAppearances": 89,
             "recentMlbHomeRuns": 2,
-            "recentMlbTbPerPa": 0.375,
-            "careerPowerIndex": 45.17,
-            "contactRiskIndex": 54.71,
-            "roleStabilityIndex": 36,
+            "recentMlbTbPerPa": 0.38202247191011235,
+            "careerPowerIndex": 46.17,
+            "contactRiskIndex": 54.29,
+            "roleStabilityIndex": 36.12,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/682818?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -1262,8 +1262,8 @@ export const lineupBoardsByGameId = {
             "statcast fade"
           ],
           "primaryTag": "split edge",
-          "summary": ".277 AVG | .716 OPS | 23 H | 2 HR | 12g: .158 AVG | .516 OPS | 6 H | 2 HR | vs RHP: .300 AVG | .775 OPS | 2 HR | career 88 PA | .716 OPS | 2 HR | baseline career profile | power 45 | 2026 sample ok | arsenal Sinker 30% / Slider 28% / Curveball 23% | fit +3.2 | -0.6 matchup grade in a traffic-risk lane",
-          "matchupNote": "-0.60 vs Kyle Bradish"
+          "summary": ".286 AVG | .731 OPS | 24 H | 2 HR | 12g: .158 AVG | .516 OPS | 6 H | 2 HR | vs RHP: .300 AVG | .775 OPS | 2 HR | career 89 PA | .731 OPS | 2 HR | baseline career profile | power 46 | 2026 sample ok | arsenal Sinker 30% / Slider 28% / Curveball 23% | fit +3.2 | -1.1 matchup grade in a traffic-risk lane",
+          "matchupNote": "-1.06 vs Kyle Bradish"
         },
         {
           "playerId": 807727,
@@ -1291,17 +1291,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 1,
             "walks": 0,
             "totalBases": 4,
-            "atBats": 6,
-            "plateAppearances": 6,
-            "avg": 0.167,
-            "obp": 0.167,
-            "slg": 0.667,
-            "ops": 0.833,
-            "hitRate": 0.16670000000000001,
+            "atBats": 7,
+            "plateAppearances": 7,
+            "avg": 0.143,
+            "obp": 0.143,
+            "slg": 0.571,
+            "ops": 0.714,
+            "hitRate": 0.1429,
             "singlesRate": 0,
-            "hrRate": 0.16670000000000001,
+            "hrRate": 0.1429,
             "walkRate": 0,
-            "totalBasesRate": 0.6667000000000001
+            "totalBasesRate": 0.5714
           },
           "recent": {
             "gamesPlayed": 2,
@@ -1327,11 +1327,11 @@ export const lineupBoardsByGameId = {
           "split": null,
           "metrics": {
             "powerScore": 92,
-            "contactScore": 50,
+            "contactScore": 52,
             "patienceScore": 27.7,
             "formScore": 61.8,
             "splitScore": 50,
-            "varianceScore": 85.2,
+            "varianceScore": 86,
             "pitchTypeFitScore": 94,
             "pitchTypeGrade": 10,
             "pitchTypeCoveragePct": 19.6,
@@ -1388,35 +1388,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2026,
             "latestMlbYear": 2026,
             "careerGames": 2,
-            "careerPlateAppearances": 6,
+            "careerPlateAppearances": 7,
             "careerHits": 1,
             "careerHomeRuns": 1,
             "careerTotalBases": 4,
             "careerWalks": 0,
             "careerStrikeouts": 1,
-            "careerHitRate": 0.16670000000000001,
-            "careerAvg": 0.167,
-            "careerObp": 0.167,
-            "careerSlg": 0.667,
-            "careerOps": 0.834,
-            "careerTbPerPa": 0.6666666666666666,
-            "careerHrPerPa": 0.16666666666666666,
-            "careerKRate": 0.16666666666666666,
+            "careerHitRate": 0.1429,
+            "careerAvg": 0.143,
+            "careerObp": 0.143,
+            "careerSlg": 0.571,
+            "careerOps": 0.714,
+            "careerTbPerPa": 0.5714285714285714,
+            "careerHrPerPa": 0.14285714285714285,
+            "careerKRate": 0.14285714285714285,
             "careerBbRate": 0,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 1,
-            "bestPowerSlg": 0.6666666666666666,
+            "bestPowerSlg": 0.5714285714285714,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 6,
+            "recentMlbPlateAppearances": 7,
             "recentMlbHomeRuns": 1,
-            "recentMlbTbPerPa": 0.6666666666666666,
+            "recentMlbTbPerPa": 0.5714285714285714,
             "careerPowerIndex": 100,
-            "contactRiskIndex": 43.97,
-            "roleStabilityIndex": 10.25,
+            "contactRiskIndex": 39.44,
+            "roleStabilityIndex": 10.62,
             "repeatabilityLabel": "unproven MLB sample",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/807727?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -1425,7 +1425,7 @@ export const lineupBoardsByGameId = {
             "small-sample story"
           ],
           "primaryTag": "carry",
-          "summary": ".167 AVG | .833 OPS | 1 H | 1 HR | 2g: .250 AVG | 1.250 OPS | 2 H | 2 HR | No clean split stored vs RHP | career 6 PA | .834 OPS | 1 HR | unproven MLB sample | power 100 | tiny 2026 sample | arsenal 4-Seam Fastball 20% | fit +10.0 | +6.8 matchup grade in a traffic-risk lane",
+          "summary": ".143 AVG | .714 OPS | 1 H | 1 HR | 2g: .250 AVG | 1.250 OPS | 2 H | 2 HR | No clean split stored vs RHP | career 7 PA | .714 OPS | 1 HR | unproven MLB sample | power 100 | tiny 2026 sample | arsenal 4-Seam Fastball 20% | fit +10.0 | +6.8 matchup grade in a traffic-risk lane",
           "matchupNote": "+6.80 vs Kyle Bradish"
         },
         {
@@ -1452,19 +1452,19 @@ export const lineupBoardsByGameId = {
             "doubles": 7,
             "triples": 1,
             "homeRuns": 6,
-            "walks": 7,
+            "walks": 8,
             "totalBases": 68,
             "atBats": 189,
-            "plateAppearances": 203,
+            "plateAppearances": 204,
             "avg": 0.217,
-            "obp": 0.257,
+            "obp": 0.261,
             "slg": 0.36,
-            "ops": 0.617,
-            "hitRate": 0.20199999999999999,
-            "singlesRate": 0.133,
-            "hrRate": 0.0296,
-            "walkRate": 0.0345,
-            "totalBasesRate": 0.335
+            "ops": 0.621,
+            "hitRate": 0.201,
+            "singlesRate": 0.1324,
+            "hrRate": 0.0294,
+            "walkRate": 0.0392,
+            "totalBasesRate": 0.3333
           },
           "recent": {
             "gamesPlayed": 14,
@@ -1510,11 +1510,11 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.3826
           },
           "metrics": {
-            "powerScore": 43.3,
-            "contactScore": 52.6,
-            "patienceScore": 33,
+            "powerScore": 43.2,
+            "contactScore": 52.7,
+            "patienceScore": 34.8,
             "formScore": 18,
-            "splitScore": 63.8,
+            "splitScore": 63.5,
             "varianceScore": 85.1,
             "pitchTypeFitScore": 24.6,
             "pitchTypeGrade": -2,
@@ -1588,35 +1588,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2020,
             "latestMlbYear": 2026,
             "careerGames": 726,
-            "careerPlateAppearances": 2720,
+            "careerPlateAppearances": 2721,
             "careerHits": 615,
             "careerHomeRuns": 62,
             "careerTotalBases": 933,
-            "careerWalks": 142,
+            "careerWalks": 143,
             "careerStrikeouts": 505,
-            "careerHitRate": 0.2261,
+            "careerHitRate": 0.226,
             "careerAvg": 0.251,
-            "careerObp": 0.312,
+            "careerObp": 0.313,
             "careerSlg": 0.38,
-            "careerOps": 0.692,
-            "careerTbPerPa": 0.34301470588235294,
-            "careerHrPerPa": 0.022794117647058822,
-            "careerKRate": 0.18566176470588236,
-            "careerBbRate": 0.05220588235294118,
+            "careerOps": 0.693,
+            "careerTbPerPa": 0.3428886438809261,
+            "careerHrPerPa": 0.02278574053656744,
+            "careerKRate": 0.18559353178978316,
+            "careerBbRate": 0.05255420801176038,
             "bestPowerYear": 2022,
             "bestPowerHomeRuns": 17,
             "bestPowerSlg": 0.4663951120162933,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 203,
+            "recentMlbPlateAppearances": 204,
             "recentMlbHomeRuns": 6,
-            "recentMlbTbPerPa": 0.33497536945812806,
-            "careerPowerIndex": 41.09,
-            "contactRiskIndex": 39.24,
+            "recentMlbTbPerPa": 0.3333333333333333,
+            "careerPowerIndex": 41.01,
+            "contactRiskIndex": 39.21,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/665926?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -1625,7 +1625,7 @@ export const lineupBoardsByGameId = {
             "statcast fade"
           ],
           "primaryTag": "split edge",
-          "summary": ".217 AVG | .617 OPS | 41 H | 6 HR | 14g: .091 AVG | .358 OPS | 4 H | 2 HR | vs RHP: .239 AVG | .663 OPS | 5 HR | career 2720 PA | .692 OPS | 62 HR | contact-stable profile | power 41 | 2026 sample ok | arsenal Sinker 30% / Slider 28% / Curveball 23% | fit -2.0 | -8.0 matchup grade in a traffic-risk lane",
+          "summary": ".217 AVG | .621 OPS | 41 H | 6 HR | 14g: .091 AVG | .358 OPS | 4 H | 2 HR | vs RHP: .239 AVG | .663 OPS | 5 HR | career 2721 PA | .693 OPS | 62 HR | contact-stable profile | power 41 | 2026 sample ok | arsenal Sinker 30% / Slider 28% / Curveball 23% | fit -2.0 | -8.0 matchup grade in a traffic-risk lane",
           "matchupNote": "-8.00 vs Kyle Bradish"
         },
         {
@@ -1654,17 +1654,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 4,
             "walks": 14,
             "totalBases": 39,
-            "atBats": 100,
-            "plateAppearances": 115,
-            "avg": 0.24,
-            "obp": 0.333,
-            "slg": 0.39,
-            "ops": 0.723,
-            "hitRate": 0.2087,
-            "singlesRate": 0.1478,
-            "hrRate": 0.0348,
-            "walkRate": 0.1217,
-            "totalBasesRate": 0.33909999999999996
+            "atBats": 101,
+            "plateAppearances": 116,
+            "avg": 0.238,
+            "obp": 0.33,
+            "slg": 0.386,
+            "ops": 0.717,
+            "hitRate": 0.2069,
+            "singlesRate": 0.1466,
+            "hrRate": 0.0345,
+            "walkRate": 0.1207,
+            "totalBasesRate": 0.3362
           },
           "recent": {
             "gamesPlayed": 10,
@@ -1710,17 +1710,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.32049999999999995
           },
           "metrics": {
-            "powerScore": 46.1,
-            "contactScore": 47.5,
-            "patienceScore": 64.5,
-            "formScore": 40.8,
-            "splitScore": 40.4,
-            "varianceScore": 72.1,
+            "powerScore": 45.5,
+            "contactScore": 46.5,
+            "patienceScore": 64.1,
+            "formScore": 42.4,
+            "splitScore": 42,
+            "varianceScore": 73.1,
             "pitchTypeFitScore": 76,
             "pitchTypeGrade": 3.89,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 89.2,
-            "matchupGrade": 9.21
+            "matchupScore": 90.3,
+            "matchupGrade": 9.38
           },
           "pitchType": {
             "fitScore": 76,
@@ -1788,46 +1788,45 @@ export const lineupBoardsByGameId = {
             "debutYear": 2026,
             "latestMlbYear": 2026,
             "careerGames": 38,
-            "careerPlateAppearances": 115,
+            "careerPlateAppearances": 116,
             "careerHits": 24,
             "careerHomeRuns": 4,
             "careerTotalBases": 39,
             "careerWalks": 14,
-            "careerStrikeouts": 25,
-            "careerHitRate": 0.2087,
-            "careerAvg": 0.24,
-            "careerObp": 0.333,
-            "careerSlg": 0.39,
-            "careerOps": 0.723,
-            "careerTbPerPa": 0.3391304347826087,
-            "careerHrPerPa": 0.034782608695652174,
-            "careerKRate": 0.21739130434782608,
-            "careerBbRate": 0.12173913043478261,
+            "careerStrikeouts": 26,
+            "careerHitRate": 0.2069,
+            "careerAvg": 0.238,
+            "careerObp": 0.33,
+            "careerSlg": 0.386,
+            "careerOps": 0.716,
+            "careerTbPerPa": 0.33620689655172414,
+            "careerHrPerPa": 0.034482758620689655,
+            "careerKRate": 0.22413793103448276,
+            "careerBbRate": 0.1206896551724138,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 4,
-            "bestPowerSlg": 0.39,
+            "bestPowerSlg": 0.38613861386138615,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 115,
+            "recentMlbPlateAppearances": 116,
             "recentMlbHomeRuns": 4,
-            "recentMlbTbPerPa": 0.3391304347826087,
-            "careerPowerIndex": 53.37,
-            "contactRiskIndex": 51.1,
-            "roleStabilityIndex": 39.38,
+            "recentMlbTbPerPa": 0.33620689655172414,
+            "careerPowerIndex": 52.44,
+            "contactRiskIndex": 52.44,
+            "roleStabilityIndex": 39.5,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/678218?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
             "split edge",
             "arsenal edge",
-            "cold",
             "statcast up"
           ],
           "primaryTag": "carry",
-          "summary": ".240 AVG | .723 OPS | 24 H | 4 HR | 10g: .313 AVG | .887 OPS | 10 H | 0 HR | vs RHP: .250 AVG | .705 OPS | 2 HR | career 115 PA | .723 OPS | 4 HR | baseline career profile | power 53 | 2026 sample ok | arsenal Sinker 30% / Slider 28% / Curveball 23% | fit +3.9 | +9.2 matchup grade in a traffic-risk lane",
-          "matchupNote": "+9.21 vs Kyle Bradish"
+          "summary": ".238 AVG | .717 OPS | 24 H | 4 HR | 10g: .313 AVG | .887 OPS | 10 H | 0 HR | vs RHP: .250 AVG | .705 OPS | 2 HR | career 116 PA | .716 OPS | 4 HR | baseline career profile | power 52 | 2026 sample ok | arsenal Sinker 30% / Slider 28% / Curveball 23% | fit +3.9 | +9.4 matchup grade in a traffic-risk lane",
+          "matchupNote": "+9.38 vs Kyle Bradish"
         }
       ],
       "bvpHistory": {
@@ -1836,7 +1835,7 @@ export const lineupBoardsByGameId = {
         "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
       },
       "aggregate": {
-        "averageMatchupGrade": 5.24,
+        "averageMatchupGrade": 5.2,
         "trackedBatters": 9,
         "starterThreatCount": 7,
         "contactCount": 3,
@@ -1850,13 +1849,13 @@ export const lineupBoardsByGameId = {
         "topThirdArsenalCount": 3,
         "heaterCount": 5,
         "suppressorCount": 2,
-        "platoonPressureIndex": 75.8,
+        "platoonPressureIndex": 75.6,
         "pitchTypePressureIndex": 94,
         "bullpenPitchTypePressureIndex": 74,
         "starterPressureIndex": 94,
         "overallPressureIndex": 94,
         "topThirdScore": 84.9,
-        "depthScore": 63.9,
+        "depthScore": 64.2,
         "bullpenOverperformHitters": [
           {
             "name": "Charles McAdoo",
@@ -1888,7 +1887,7 @@ export const lineupBoardsByGameId = {
           },
           {
             "name": "Brandon Valenzuela",
-            "tag": "carry | +9.21 vs Kyle Bradish"
+            "tag": "carry | +9.38 vs Kyle Bradish"
           }
         ],
         "bullpenOverperformHitters": [
@@ -1915,15 +1914,15 @@ export const lineupBoardsByGameId = {
           },
           {
             "name": "Yohendrick Piñango",
-            "tag": "split edge | -0.60 vs Kyle Bradish"
+            "tag": "split edge | -1.06 vs Kyle Bradish"
           }
         ],
         "underperformNote": "Andrés Giménez and Yohendrick Piñango carry the softer form or split fit into a traffic-risk lane.",
         "overview": "Blue Jays can lean on Nathan Lukes, Vladimir Guerrero Jr., Brandon Valenzuela to drive early pressure against Kyle Bradish.",
         "bullpenOverview": "Grant Wolfram is the first bridge look, and this lineup grades +3.4 against that likely first-up arsenal.",
         "topThirdScore": 84.9,
-        "middleScore": 75.2,
-        "depthScore": 63.9,
+        "middleScore": 74.2,
+        "depthScore": 64.2,
         "bullpenPitchTypeSummary": {
           "pressureIndex": 74,
           "averageFitScore": 61.8,
@@ -2232,7 +2231,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/621493?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal risk",
@@ -2431,7 +2430,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/683002?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "heater",
@@ -2472,16 +2471,16 @@ export const lineupBoardsByGameId = {
             "walks": 19,
             "totalBases": 72,
             "atBats": 155,
-            "plateAppearances": 176,
+            "plateAppearances": 177,
             "avg": 0.252,
-            "obp": 0.335,
+            "obp": 0.333,
             "slg": 0.465,
-            "ops": 0.8,
-            "hitRate": 0.2216,
-            "singlesRate": 0.11359999999999999,
-            "hrRate": 0.0398,
-            "walkRate": 0.10800000000000001,
-            "totalBasesRate": 0.40909999999999996
+            "ops": 0.798,
+            "hitRate": 0.22030000000000002,
+            "singlesRate": 0.113,
+            "hrRate": 0.0395,
+            "walkRate": 0.1073,
+            "totalBasesRate": 0.4068
           },
           "recent": {
             "gamesPlayed": 14,
@@ -2527,17 +2526,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.43810000000000004
           },
           "metrics": {
-            "powerScore": 61.2,
-            "contactScore": 65.1,
-            "patienceScore": 60.2,
+            "powerScore": 61.1,
+            "contactScore": 65.2,
+            "patienceScore": 59.7,
             "formScore": 18,
-            "splitScore": 55,
-            "varianceScore": 62.3,
+            "splitScore": 55.4,
+            "varianceScore": 62.1,
             "pitchTypeFitScore": 70.7,
             "pitchTypeGrade": -1.47,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 35.3,
-            "matchupGrade": -3.21
+            "matchupScore": 35.6,
+            "matchupGrade": -3.13
           },
           "pitchType": {
             "fitScore": 70.7,
@@ -2605,35 +2604,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2022,
             "latestMlbYear": 2026,
             "careerGames": 547,
-            "careerPlateAppearances": 2336,
+            "careerPlateAppearances": 2337,
             "careerHits": 517,
             "careerHomeRuns": 68,
             "careerTotalBases": 846,
             "careerWalks": 274,
             "careerStrikeouts": 373,
-            "careerHitRate": 0.2213,
+            "careerHitRate": 0.2212,
             "careerAvg": 0.254,
             "careerObp": 0.343,
             "careerSlg": 0.416,
             "careerOps": 0.759,
-            "careerTbPerPa": 0.3621575342465753,
-            "careerHrPerPa": 0.02910958904109589,
-            "careerKRate": 0.1596746575342466,
-            "careerBbRate": 0.1172945205479452,
+            "careerTbPerPa": 0.362002567394095,
+            "careerHrPerPa": 0.029097133076593923,
+            "careerKRate": 0.15960633290543433,
+            "careerBbRate": 0.11724433033804023,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 7,
             "bestPowerSlg": 0.4645161290322581,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 176,
+            "recentMlbPlateAppearances": 177,
             "recentMlbHomeRuns": 7,
-            "recentMlbTbPerPa": 0.4090909090909091,
-            "careerPowerIndex": 54.79,
-            "contactRiskIndex": 30.4,
+            "recentMlbTbPerPa": 0.4067796610169492,
+            "careerPowerIndex": 54.67,
+            "contactRiskIndex": 30.39,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/668939?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -2643,8 +2642,8 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".252 AVG | .800 OPS | 39 H | 7 HR | 14g: .167 AVG | .644 OPS | 8 H | 0 HR | vs RHP: .266 AVG | .832 OPS | 4 HR | career 2336 PA | .759 OPS | 68 HR | contact-stable profile | power 55 | 2026 sample ok | arsenal Sinker 36% / Curveball 24% / 4-Seam Fastball 21% | fit -1.5 | -3.2 matchup grade in a neutral lane",
-          "matchupNote": "-3.21 vs Spencer Miles"
+          "summary": ".252 AVG | .798 OPS | 39 H | 7 HR | 14g: .167 AVG | .644 OPS | 8 H | 0 HR | vs RHP: .266 AVG | .832 OPS | 4 HR | career 2337 PA | .759 OPS | 68 HR | contact-stable profile | power 55 | 2026 sample ok | arsenal Sinker 36% / Curveball 24% / 4-Seam Fastball 21% | fit -1.5 | -3.1 matchup grade in a neutral lane",
+          "matchupNote": "-3.13 vs Spencer Miles"
         },
         {
           "playerId": 624413,
@@ -2672,17 +2671,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 11,
             "walks": 27,
             "totalBases": 99,
-            "atBats": 227,
-            "plateAppearances": 257,
-            "avg": 0.238,
-            "obp": 0.319,
-            "slg": 0.436,
-            "ops": 0.755,
-            "hitRate": 0.2101,
-            "singlesRate": 0.1206,
-            "hrRate": 0.042800000000000005,
-            "walkRate": 0.1051,
-            "totalBasesRate": 0.38520000000000004
+            "atBats": 228,
+            "plateAppearances": 258,
+            "avg": 0.237,
+            "obp": 0.318,
+            "slg": 0.434,
+            "ops": 0.752,
+            "hitRate": 0.20929999999999999,
+            "singlesRate": 0.1202,
+            "hrRate": 0.0426,
+            "walkRate": 0.1047,
+            "totalBasesRate": 0.3837
           },
           "recent": {
             "gamesPlayed": 16,
@@ -2728,17 +2727,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.4056
           },
           "metrics": {
-            "powerScore": 69.8,
-            "contactScore": 49.9,
-            "patienceScore": 58.5,
-            "formScore": 25.8,
-            "splitScore": 63.5,
-            "varianceScore": 68,
+            "powerScore": 69.6,
+            "contactScore": 50,
+            "patienceScore": 58.4,
+            "formScore": 26.6,
+            "splitScore": 64.2,
+            "varianceScore": 67.7,
             "pitchTypeFitScore": 60.5,
             "pitchTypeGrade": -2.47,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 39.4,
-            "matchupGrade": -2.4
+            "matchupScore": 40.1,
+            "matchupGrade": -2.27
           },
           "pitchType": {
             "fitScore": 60.5,
@@ -2806,35 +2805,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2019,
             "latestMlbYear": 2026,
             "careerGames": 1068,
-            "careerPlateAppearances": 4573,
+            "careerPlateAppearances": 4574,
             "careerHits": 1005,
             "careerHomeRuns": 275,
             "careerTotalBases": 2041,
             "careerWalks": 446,
             "careerStrikeouts": 1043,
-            "careerHitRate": 0.2198,
+            "careerHitRate": 0.21969999999999998,
             "careerAvg": 0.252,
             "careerObp": 0.339,
-            "careerSlg": 0.512,
-            "careerOps": 0.851,
-            "careerTbPerPa": 0.44631532910561994,
-            "careerHrPerPa": 0.060135578394926746,
-            "careerKRate": 0.22807784823966762,
-            "careerBbRate": 0.09752897441504482,
+            "careerSlg": 0.511,
+            "careerOps": 0.85,
+            "careerTbPerPa": 0.44621775251421075,
+            "careerHrPerPa": 0.060122431132487976,
+            "careerKRate": 0.2280279842588544,
+            "careerBbRate": 0.0975076519457805,
             "bestPowerYear": 2019,
             "bestPowerHomeRuns": 53,
             "bestPowerSlg": 0.5829145728643216,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 257,
+            "recentMlbPlateAppearances": 258,
             "recentMlbHomeRuns": 11,
-            "recentMlbTbPerPa": 0.3852140077821012,
-            "careerPowerIndex": 94.12,
-            "contactRiskIndex": 44.58,
+            "recentMlbTbPerPa": 0.38372093023255816,
+            "careerPowerIndex": 93.91,
+            "contactRiskIndex": 44.57,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/624413?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -2843,8 +2842,8 @@ export const lineupBoardsByGameId = {
             "career power"
           ],
           "primaryTag": "split edge",
-          "summary": ".238 AVG | .755 OPS | 54 H | 11 HR | 16g: .250 AVG | .677 OPS | 16 H | 2 HR | vs RHP: .239 AVG | .804 OPS | 9 HR | career 4573 PA | .851 OPS | 275 HR | repeatable career power | power 94 | 2026 sample ok | arsenal Sinker 36% / Curveball 24% / 4-Seam Fastball 21% | fit -2.5 | -2.4 matchup grade in a neutral lane",
-          "matchupNote": "-2.40 vs Spencer Miles"
+          "summary": ".237 AVG | .752 OPS | 54 H | 11 HR | 16g: .250 AVG | .677 OPS | 16 H | 2 HR | vs RHP: .239 AVG | .804 OPS | 9 HR | career 4574 PA | .850 OPS | 275 HR | repeatable career power | power 94 | 2026 sample ok | arsenal Sinker 36% / Curveball 24% / 4-Seam Fastball 21% | fit -2.5 | -2.3 matchup grade in a neutral lane",
+          "matchupNote": "-2.27 vs Spencer Miles"
         },
         {
           "playerId": 694212,
@@ -3034,7 +3033,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/694212?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -3235,7 +3234,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/665750?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -3434,7 +3433,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/681297?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -3635,7 +3634,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/677942?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -3835,7 +3834,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/702616?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -3854,7 +3853,7 @@ export const lineupBoardsByGameId = {
         "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
       },
       "aggregate": {
-        "averageMatchupGrade": 1.25,
+        "averageMatchupGrade": 1.27,
         "trackedBatters": 9,
         "starterThreatCount": 4,
         "contactCount": 1,
@@ -3868,12 +3867,12 @@ export const lineupBoardsByGameId = {
         "topThirdArsenalCount": 0,
         "heaterCount": 4,
         "suppressorCount": 2,
-        "platoonPressureIndex": 84.2,
+        "platoonPressureIndex": 84.4,
         "pitchTypePressureIndex": 23.6,
         "bullpenPitchTypePressureIndex": 77.3,
-        "starterPressureIndex": 56.1,
-        "overallPressureIndex": 60.5,
-        "topThirdScore": 28,
+        "starterPressureIndex": 56.3,
+        "overallPressureIndex": 60.7,
+        "topThirdScore": 28.1,
         "depthScore": 67.4,
         "bullpenOverperformHitters": [
           {
@@ -3939,8 +3938,8 @@ export const lineupBoardsByGameId = {
         "underperformNote": "Taylor Ward and Gunnar Henderson carry the softer form or split fit into a balanced lane.",
         "overview": "Orioles can lean on Samuel Basallo, Colton Cowser, Leody Taveras to drive early pressure against Spencer Miles.",
         "bullpenOverview": "Mason Fluharty is the first bridge look, and this lineup grades +0.3 against that likely first-up arsenal.",
-        "topThirdScore": 28,
-        "middleScore": 73.7,
+        "topThirdScore": 28.1,
+        "middleScore": 73.9,
         "depthScore": 67.4,
         "bullpenPitchTypeSummary": {
           "pressureIndex": 77.3,
@@ -4039,7 +4038,7 @@ export const lineupBoardsByGameId = {
   "padres-nationals": {
     "gameId": "padres-nationals",
     "title": "Padres @ Nationals",
-    "snapshot": "2026-05-31T18:00:03.942Z",
+    "snapshot": "2026-05-31T18:17:29.711Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -4054,8 +4053,8 @@ export const lineupBoardsByGameId = {
       "label": "73°F | 0% precip"
     },
     "marketWeatherContext": {
-      "line": "SD -116",
-      "total": "8.5 Runs",
+      "line": "WSH -172",
+      "total": "7.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
     "away": {
@@ -4111,17 +4110,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 1,
             "walks": 24,
             "totalBases": 68,
-            "atBats": 211,
-            "plateAppearances": 242,
-            "avg": 0.27,
-            "obp": 0.344,
-            "slg": 0.322,
-            "ops": 0.667,
-            "hitRate": 0.23550000000000001,
-            "singlesRate": 0.2025,
+            "atBats": 212,
+            "plateAppearances": 243,
+            "avg": 0.269,
+            "obp": 0.343,
+            "slg": 0.321,
+            "ops": 0.664,
+            "hitRate": 0.2346,
+            "singlesRate": 0.2016,
             "hrRate": 0.0040999999999999995,
-            "walkRate": 0.0992,
-            "totalBasesRate": 0.281
+            "walkRate": 0.09880000000000001,
+            "totalBasesRate": 0.2798
           },
           "recent": {
             "gamesPlayed": 12,
@@ -4167,11 +4166,11 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.23440000000000003
           },
           "metrics": {
-            "powerScore": 23.5,
+            "powerScore": 23.3,
             "contactScore": 56.1,
-            "patienceScore": 55.9,
+            "patienceScore": 55.8,
             "formScore": 92,
-            "splitScore": 34.6,
+            "splitScore": 35.2,
             "varianceScore": 92,
             "pitchTypeFitScore": 56.5,
             "pitchTypeGrade": 3.26,
@@ -4245,35 +4244,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2019,
             "latestMlbYear": 2026,
             "careerGames": 728,
-            "careerPlateAppearances": 3181,
+            "careerPlateAppearances": 3182,
             "careerHits": 777,
             "careerHomeRuns": 153,
             "careerTotalBases": 1404,
             "careerWalks": 317,
             "careerStrikeouts": 743,
-            "careerHitRate": 0.2443,
+            "careerHitRate": 0.24420000000000003,
             "careerAvg": 0.276,
-            "careerObp": 0.354,
+            "careerObp": 0.353,
             "careerSlg": 0.499,
-            "careerOps": 0.853,
-            "careerTbPerPa": 0.4413706381640993,
-            "careerHrPerPa": 0.04809808236403647,
-            "careerKRate": 0.23357434768940585,
-            "careerBbRate": 0.09965419679346117,
+            "careerOps": 0.852,
+            "careerTbPerPa": 0.44123192960402263,
+            "careerHrPerPa": 0.04808296668761785,
+            "careerKRate": 0.23350094280326839,
+            "careerBbRate": 0.09962287869264613,
             "bestPowerYear": 2021,
             "bestPowerHomeRuns": 42,
             "bestPowerSlg": 0.6108786610878661,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 242,
+            "recentMlbPlateAppearances": 243,
             "recentMlbHomeRuns": 1,
-            "recentMlbTbPerPa": 0.2809917355371901,
-            "careerPowerIndex": 76.9,
-            "contactRiskIndex": 45.5,
+            "recentMlbTbPerPa": 0.27983539094650206,
+            "careerPowerIndex": 76.84,
+            "contactRiskIndex": 45.49,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/665487?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -4283,7 +4282,7 @@ export const lineupBoardsByGameId = {
             "career power"
           ],
           "primaryTag": "carry",
-          "summary": ".270 AVG | .667 OPS | 57 H | 1 HR | 12g: .520 AVG | 1.236 OPS | 26 H | 2 HR | vs RHP: .253 AVG | .601 OPS | 0 HR | career 3181 PA | .853 OPS | 153 HR | repeatable career power | power 77 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Slider 29% / Split-Finger 20% | fit +3.3 | +10.0 matchup grade in a traffic-risk lane",
+          "summary": ".269 AVG | .664 OPS | 57 H | 1 HR | 12g: .520 AVG | 1.236 OPS | 26 H | 2 HR | vs RHP: .253 AVG | .601 OPS | 0 HR | career 3182 PA | .852 OPS | 153 HR | repeatable career power | power 77 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Slider 29% / Split-Finger 20% | fit +3.3 | +10.0 matchup grade in a traffic-risk lane",
           "matchupNote": "+10.00 vs Zack Littell"
         },
         {
@@ -4474,7 +4473,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/657757?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -4675,7 +4674,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/592518?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -4876,7 +4875,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/593428?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal edge",
@@ -5074,7 +5073,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/701538?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -5273,7 +5272,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/664034?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -5474,7 +5473,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/592206?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "cold",
@@ -5672,7 +5671,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "unproven MLB sample",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/823550?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -5708,17 +5707,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 0,
             "walks": 11,
             "totalBases": 17,
-            "atBats": 97,
-            "plateAppearances": 112,
-            "avg": 0.134,
-            "obp": 0.232,
-            "slg": 0.175,
-            "ops": 0.407,
-            "hitRate": 0.1161,
-            "singlesRate": 0.08039999999999999,
+            "atBats": 98,
+            "plateAppearances": 113,
+            "avg": 0.133,
+            "obp": 0.23,
+            "slg": 0.173,
+            "ops": 0.404,
+            "hitRate": 0.115,
+            "singlesRate": 0.0796,
             "hrRate": 0,
-            "walkRate": 0.09820000000000001,
-            "totalBasesRate": 0.1518
+            "walkRate": 0.0973,
+            "totalBasesRate": 0.15039999999999998
           },
           "recent": {
             "gamesPlayed": 6,
@@ -5765,10 +5764,10 @@ export const lineupBoardsByGameId = {
           },
           "metrics": {
             "powerScore": 18,
-            "contactScore": 23.4,
-            "patienceScore": 58.9,
+            "contactScore": 22.5,
+            "patienceScore": 58.6,
             "formScore": 18,
-            "splitScore": 35.2,
+            "splitScore": 35.9,
             "varianceScore": 92,
             "pitchTypeFitScore": 18,
             "pitchTypeGrade": -2.23,
@@ -5842,35 +5841,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2022,
             "latestMlbYear": 2026,
             "careerGames": 335,
-            "careerPlateAppearances": 1069,
+            "careerPlateAppearances": 1070,
             "careerHits": 246,
             "careerHomeRuns": 20,
             "careerTotalBases": 349,
             "careerWalks": 66,
-            "careerStrikeouts": 208,
-            "careerHitRate": 0.23010000000000003,
+            "careerStrikeouts": 209,
+            "careerHitRate": 0.2299,
             "careerAvg": 0.251,
             "careerObp": 0.301,
             "careerSlg": 0.356,
             "careerOps": 0.657,
-            "careerTbPerPa": 0.3264733395696913,
-            "careerHrPerPa": 0.018709073900841908,
-            "careerKRate": 0.19457436856875585,
-            "careerBbRate": 0.0617399438727783,
+            "careerTbPerPa": 0.32616822429906545,
+            "careerHrPerPa": 0.018691588785046728,
+            "careerKRate": 0.19532710280373833,
+            "careerBbRate": 0.0616822429906542,
             "bestPowerYear": 2023,
             "bestPowerHomeRuns": 9,
             "bestPowerSlg": 0.4608294930875576,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 112,
+            "recentMlbPlateAppearances": 113,
             "recentMlbHomeRuns": 0,
-            "recentMlbTbPerPa": 0.15178571428571427,
-            "careerPowerIndex": 26.05,
-            "contactRiskIndex": 40.36,
+            "recentMlbTbPerPa": 0.1504424778761062,
+            "careerPowerIndex": 25.97,
+            "contactRiskIndex": 40.51,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/666023?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal risk",
@@ -5878,7 +5877,7 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "arsenal risk",
-          "summary": ".134 AVG | .407 OPS | 13 H | 0 HR | 6g: .000 AVG | .000 OPS | 0 H | 0 HR | vs RHP: .104 AVG | .332 OPS | 0 HR | career 1069 PA | .657 OPS | 20 HR | contact-stable profile | power 26 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Slider 29% / Split-Finger 20% | fit -2.2 | -8.0 matchup grade in a traffic-risk lane",
+          "summary": ".133 AVG | .404 OPS | 13 H | 0 HR | 6g: .000 AVG | .000 OPS | 0 H | 0 HR | vs RHP: .104 AVG | .332 OPS | 0 HR | career 1070 PA | .657 OPS | 20 HR | contact-stable profile | power 26 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Slider 29% / Split-Finger 20% | fit -2.2 | -8.0 matchup grade in a traffic-risk lane",
           "matchupNote": "-8.00 vs Zack Littell"
         }
       ],
@@ -6134,17 +6133,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 15,
             "walks": 50,
             "totalBases": 121,
-            "atBats": 225,
-            "plateAppearances": 279,
-            "avg": 0.271,
-            "obp": 0.412,
-            "slg": 0.538,
-            "ops": 0.95,
-            "hitRate": 0.2186,
-            "singlesRate": 0.11109999999999999,
-            "hrRate": 0.0538,
-            "walkRate": 0.17920000000000003,
-            "totalBasesRate": 0.4337
+            "atBats": 226,
+            "plateAppearances": 280,
+            "avg": 0.27,
+            "obp": 0.411,
+            "slg": 0.535,
+            "ops": 0.946,
+            "hitRate": 0.21789999999999998,
+            "singlesRate": 0.1107,
+            "hrRate": 0.0536,
+            "walkRate": 0.17859999999999998,
+            "totalBasesRate": 0.4321
           },
           "recent": {
             "gamesPlayed": 12,
@@ -6190,11 +6189,11 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.45899999999999996
           },
           "metrics": {
-            "powerScore": 85.4,
-            "contactScore": 50,
-            "patienceScore": 88.1,
+            "powerScore": 85,
+            "contactScore": 49.6,
+            "patienceScore": 87.9,
             "formScore": 92,
-            "splitScore": 66.5,
+            "splitScore": 67.4,
             "varianceScore": 92,
             "pitchTypeFitScore": 94,
             "pitchTypeGrade": 8.81,
@@ -6268,35 +6267,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2024,
             "latestMlbYear": 2026,
             "careerGames": 296,
-            "careerPlateAppearances": 1304,
+            "careerPlateAppearances": 1305,
             "careerHits": 292,
             "careerHomeRuns": 55,
             "careerTotalBases": 531,
             "careerWalks": 174,
-            "careerStrikeouts": 398,
-            "careerHitRate": 0.22390000000000002,
+            "careerStrikeouts": 399,
+            "careerHitRate": 0.2238,
             "careerAvg": 0.261,
             "careerObp": 0.364,
             "careerSlg": 0.475,
             "careerOps": 0.839,
-            "careerTbPerPa": 0.4072085889570552,
-            "careerHrPerPa": 0.04217791411042945,
-            "careerKRate": 0.3052147239263804,
-            "careerBbRate": 0.1334355828220859,
+            "careerTbPerPa": 0.4068965517241379,
+            "careerHrPerPa": 0.0421455938697318,
+            "careerKRate": 0.3057471264367816,
+            "careerBbRate": 0.13333333333333333,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 15,
-            "bestPowerSlg": 0.5377777777777778,
+            "bestPowerSlg": 0.5353982300884956,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 279,
+            "recentMlbPlateAppearances": 280,
             "recentMlbHomeRuns": 15,
-            "recentMlbTbPerPa": 0.4336917562724014,
-            "careerPowerIndex": 75.33,
-            "contactRiskIndex": 57.08,
+            "recentMlbTbPerPa": 0.43214285714285716,
+            "careerPowerIndex": 75.23,
+            "contactRiskIndex": 57.19,
             "roleStabilityIndex": 96,
             "repeatabilityLabel": "volatile career power",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/695578?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -6307,7 +6306,7 @@ export const lineupBoardsByGameId = {
             "career power"
           ],
           "primaryTag": "carry",
-          "summary": ".271 AVG | .950 OPS | 61 H | 15 HR | 12g: .409 AVG | 1.263 OPS | 18 H | 4 HR | vs RHP: .288 AVG | 1.007 OPS | 11 HR | career 1304 PA | .839 OPS | 55 HR | volatile career power | power 75 | 2026 sample ok | arsenal Changeup 28% / 4-Seam Fastball 26% / Slider 24% | fit +8.8 | +10.0 matchup grade in a traffic-risk lane",
+          "summary": ".270 AVG | .946 OPS | 61 H | 15 HR | 12g: .409 AVG | 1.263 OPS | 18 H | 4 HR | vs RHP: .288 AVG | 1.007 OPS | 11 HR | career 1305 PA | .839 OPS | 55 HR | volatile career power | power 75 | 2026 sample ok | arsenal Changeup 28% / 4-Seam Fastball 26% / Slider 24% | fit +8.8 | +10.0 matchup grade in a traffic-risk lane",
           "matchupNote": "+10.00 vs Griffin Canning"
         },
         {
@@ -6498,7 +6497,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/671277?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -6700,7 +6699,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/678554?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -6901,7 +6900,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/682928?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -7103,7 +7102,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/695734?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -7303,7 +7302,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/696285?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -7335,25 +7334,25 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 44,
-            "hits": 24,
-            "singles": 13,
+            "gamesPlayed": 45,
+            "hits": 25,
+            "singles": 14,
             "doubles": 7,
             "triples": 1,
             "homeRuns": 3,
             "walks": 7,
-            "totalBases": 42,
-            "atBats": 108,
-            "plateAppearances": 116,
-            "avg": 0.222,
-            "obp": 0.276,
-            "slg": 0.389,
-            "ops": 0.665,
-            "hitRate": 0.2069,
-            "singlesRate": 0.1121,
-            "hrRate": 0.0259,
-            "walkRate": 0.0603,
-            "totalBasesRate": 0.36210000000000003
+            "totalBases": 43,
+            "atBats": 109,
+            "plateAppearances": 117,
+            "avg": 0.229,
+            "obp": 0.282,
+            "slg": 0.394,
+            "ops": 0.677,
+            "hitRate": 0.2137,
+            "singlesRate": 0.1197,
+            "hrRate": 0.0256,
+            "walkRate": 0.059800000000000006,
+            "totalBasesRate": 0.3675
           },
           "recent": {
             "gamesPlayed": 8,
@@ -7399,11 +7398,11 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.3796
           },
           "metrics": {
-            "powerScore": 41.8,
-            "contactScore": 29.9,
-            "patienceScore": 42,
+            "powerScore": 42.4,
+            "contactScore": 30.9,
+            "patienceScore": 41.7,
             "formScore": 18,
-            "splitScore": 53.2,
+            "splitScore": 50.7,
             "varianceScore": 92,
             "pitchTypeFitScore": 47.8,
             "pitchTypeGrade": 1.94,
@@ -7476,36 +7475,36 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 4,
             "debutYear": 2023,
             "latestMlbYear": 2026,
-            "careerGames": 156,
-            "careerPlateAppearances": 487,
-            "careerHits": 111,
+            "careerGames": 157,
+            "careerPlateAppearances": 488,
+            "careerHits": 112,
             "careerHomeRuns": 6,
-            "careerTotalBases": 162,
+            "careerTotalBases": 163,
             "careerWalks": 32,
             "careerStrikeouts": 128,
-            "careerHitRate": 0.2279,
-            "careerAvg": 0.246,
-            "careerObp": 0.298,
-            "careerSlg": 0.358,
-            "careerOps": 0.656,
-            "careerTbPerPa": 0.3326488706365503,
-            "careerHrPerPa": 0.012320328542094456,
-            "careerKRate": 0.26283367556468173,
-            "careerBbRate": 0.06570841889117043,
+            "careerHitRate": 0.22949999999999998,
+            "careerAvg": 0.247,
+            "careerObp": 0.299,
+            "careerSlg": 0.36,
+            "careerOps": 0.659,
+            "careerTbPerPa": 0.33401639344262296,
+            "careerHrPerPa": 0.012295081967213115,
+            "careerKRate": 0.26229508196721313,
+            "careerBbRate": 0.06557377049180328,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 3,
-            "bestPowerSlg": 0.3888888888888889,
+            "bestPowerSlg": 0.3944954128440367,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 116,
+            "recentMlbPlateAppearances": 117,
             "recentMlbHomeRuns": 3,
-            "recentMlbTbPerPa": 0.3620689655172414,
-            "careerPowerIndex": 30.02,
-            "contactRiskIndex": 53.1,
+            "recentMlbTbPerPa": 0.36752136752136755,
+            "careerPowerIndex": 30.5,
+            "contactRiskIndex": 53,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/677588?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -7514,7 +7513,7 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".222 AVG | .665 OPS | 24 H | 3 HR | 8g: .111 AVG | .222 OPS | 2 H | 0 HR | vs RHP: .225 AVG | .670 OPS | 3 HR | career 487 PA | .656 OPS | 6 HR | baseline career profile | power 30 | 2026 sample ok | arsenal Changeup 28% / 4-Seam Fastball 26% / Slider 24% | fit +1.9 | -8.0 matchup grade in a traffic-risk lane",
+          "summary": ".229 AVG | .677 OPS | 25 H | 3 HR | 8g: .111 AVG | .222 OPS | 2 H | 0 HR | vs RHP: .225 AVG | .670 OPS | 3 HR | career 488 PA | .659 OPS | 6 HR | baseline career profile | power 31 | 2026 sample ok | arsenal Changeup 28% / 4-Seam Fastball 26% / Slider 24% | fit +1.9 | -8.0 matchup grade in a traffic-risk lane",
           "matchupNote": "-8.00 vs Griffin Canning"
         },
         {
@@ -7535,7 +7534,7 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 44,
+            "gamesPlayed": 45,
             "hits": 25,
             "singles": 18,
             "doubles": 6,
@@ -7543,17 +7542,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 1,
             "walks": 11,
             "totalBases": 34,
-            "atBats": 104,
-            "plateAppearances": 124,
-            "avg": 0.24,
-            "obp": 0.331,
-            "slg": 0.327,
-            "ops": 0.658,
-            "hitRate": 0.2016,
-            "singlesRate": 0.1452,
-            "hrRate": 0.008100000000000001,
-            "walkRate": 0.08869999999999999,
-            "totalBasesRate": 0.2742
+            "atBats": 105,
+            "plateAppearances": 125,
+            "avg": 0.238,
+            "obp": 0.328,
+            "slg": 0.324,
+            "ops": 0.652,
+            "hitRate": 0.2,
+            "singlesRate": 0.14400000000000002,
+            "hrRate": 0.008,
+            "walkRate": 0.08800000000000001,
+            "totalBasesRate": 0.272
           },
           "recent": {
             "gamesPlayed": 6,
@@ -7599,17 +7598,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.2727
           },
           "metrics": {
-            "powerScore": 22.9,
-            "contactScore": 54.4,
-            "patienceScore": 55.8,
+            "powerScore": 22.6,
+            "contactScore": 53.2,
+            "patienceScore": 55.5,
             "formScore": 18,
-            "splitScore": 45.9,
-            "varianceScore": 66.5,
+            "splitScore": 47.1,
+            "varianceScore": 65.5,
             "pitchTypeFitScore": 43.9,
             "pitchTypeGrade": 1.41,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 24.8,
-            "matchupGrade": -4.85
+            "matchupScore": 25.5,
+            "matchupGrade": -4.7
           },
           "pitchType": {
             "fitScore": 43.9,
@@ -7676,36 +7675,36 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 2,
             "debutYear": 2025,
             "latestMlbYear": 2026,
-            "careerGames": 73,
-            "careerPlateAppearances": 190,
+            "careerGames": 74,
+            "careerPlateAppearances": 191,
             "careerHits": 34,
             "careerHomeRuns": 2,
             "careerTotalBases": 48,
             "careerWalks": 16,
-            "careerStrikeouts": 30,
-            "careerHitRate": 0.1789,
-            "careerAvg": 0.213,
-            "careerObp": 0.308,
-            "careerSlg": 0.3,
-            "careerOps": 0.608,
-            "careerTbPerPa": 0.25263157894736843,
-            "careerHrPerPa": 0.010526315789473684,
-            "careerKRate": 0.15789473684210525,
-            "careerBbRate": 0.08421052631578947,
+            "careerStrikeouts": 31,
+            "careerHitRate": 0.17800000000000002,
+            "careerAvg": 0.211,
+            "careerObp": 0.306,
+            "careerSlg": 0.298,
+            "careerOps": 0.604,
+            "careerTbPerPa": 0.2513089005235602,
+            "careerHrPerPa": 0.010471204188481676,
+            "careerKRate": 0.16230366492146597,
+            "careerBbRate": 0.08376963350785341,
             "bestPowerYear": 2025,
             "bestPowerHomeRuns": 1,
             "bestPowerSlg": 0.25,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 124,
+            "recentMlbPlateAppearances": 125,
             "recentMlbHomeRuns": 1,
-            "recentMlbTbPerPa": 0.27419354838709675,
-            "careerPowerIndex": 16.91,
-            "contactRiskIndex": 32.05,
-            "roleStabilityIndex": 56.75,
+            "recentMlbTbPerPa": 0.272,
+            "careerPowerIndex": 16.5,
+            "contactRiskIndex": 32.91,
+            "roleStabilityIndex": 56.88,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/678391?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -7714,8 +7713,8 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".240 AVG | .658 OPS | 25 H | 1 HR | 6g: .143 AVG | .476 OPS | 2 H | 0 HR | vs RHP: .226 AVG | .637 OPS | 1 HR | career 190 PA | .608 OPS | 2 HR | baseline career profile | power 17 | 2026 sample ok | arsenal Changeup 28% / 4-Seam Fastball 26% / Slider 24% | fit +1.4 | -4.9 matchup grade in a traffic-risk lane",
-          "matchupNote": "-4.85 vs Griffin Canning"
+          "summary": ".238 AVG | .652 OPS | 25 H | 1 HR | 6g: .143 AVG | .476 OPS | 2 H | 0 HR | vs RHP: .226 AVG | .637 OPS | 1 HR | career 191 PA | .604 OPS | 2 HR | baseline career profile | power 17 | 2026 sample ok | arsenal Changeup 28% / 4-Seam Fastball 26% / Slider 24% | fit +1.4 | -4.7 matchup grade in a traffic-risk lane",
+          "matchupNote": "-4.70 vs Griffin Canning"
         },
         {
           "playerId": 660688,
@@ -7736,24 +7735,24 @@ export const lineupBoardsByGameId = {
           },
           "season": {
             "gamesPlayed": 36,
-            "hits": 30,
-            "singles": 13,
+            "hits": 31,
+            "singles": 14,
             "doubles": 12,
             "triples": 0,
             "homeRuns": 5,
             "walks": 2,
-            "totalBases": 57,
-            "atBats": 111,
-            "plateAppearances": 116,
-            "avg": 0.27,
-            "obp": 0.284,
-            "slg": 0.514,
-            "ops": 0.798,
-            "hitRate": 0.2586,
-            "singlesRate": 0.1121,
-            "hrRate": 0.0431,
-            "walkRate": 0.0172,
-            "totalBasesRate": 0.4914
+            "totalBases": 58,
+            "atBats": 112,
+            "plateAppearances": 117,
+            "avg": 0.277,
+            "obp": 0.291,
+            "slg": 0.518,
+            "ops": 0.808,
+            "hitRate": 0.265,
+            "singlesRate": 0.1197,
+            "hrRate": 0.042699999999999995,
+            "walkRate": 0.0171,
+            "totalBasesRate": 0.49570000000000003
           },
           "recent": {
             "gamesPlayed": 6,
@@ -7799,17 +7798,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.4412
           },
           "metrics": {
-            "powerScore": 69.3,
-            "contactScore": 60.6,
-            "patienceScore": 24,
+            "powerScore": 69.7,
+            "contactScore": 61.6,
+            "patienceScore": 23.9,
             "formScore": 92,
-            "splitScore": 33.4,
-            "varianceScore": 65.6,
+            "splitScore": 31.3,
+            "varianceScore": 64.9,
             "pitchTypeFitScore": 65.2,
             "pitchTypeGrade": 4.23,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 84.7,
-            "matchupGrade": 7.1
+            "matchupScore": 83.1,
+            "matchupGrade": 6.78
           },
           "pitchType": {
             "fitScore": 65.2,
@@ -7877,35 +7876,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2020,
             "latestMlbYear": 2026,
             "careerGames": 510,
-            "careerPlateAppearances": 1967,
-            "careerHits": 459,
+            "careerPlateAppearances": 1968,
+            "careerHits": 460,
             "careerHomeRuns": 49,
-            "careerTotalBases": 700,
+            "careerTotalBases": 701,
             "careerWalks": 93,
             "careerStrikeouts": 218,
-            "careerHitRate": 0.2334,
+            "careerHitRate": 0.23370000000000002,
             "careerAvg": 0.25,
-            "careerObp": 0.292,
+            "careerObp": 0.293,
             "careerSlg": 0.381,
-            "careerOps": 0.673,
-            "careerTbPerPa": 0.35587188612099646,
-            "careerHrPerPa": 0.02491103202846975,
-            "careerKRate": 0.11082867310625318,
-            "careerBbRate": 0.0472801220132181,
+            "careerOps": 0.674,
+            "careerTbPerPa": 0.3561991869918699,
+            "careerHrPerPa": 0.024898373983739838,
+            "careerKRate": 0.11077235772357724,
+            "careerBbRate": 0.04725609756097561,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 5,
-            "bestPowerSlg": 0.5135135135135135,
+            "bestPowerSlg": 0.5178571428571429,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 116,
+            "recentMlbPlateAppearances": 117,
             "recentMlbHomeRuns": 5,
-            "recentMlbTbPerPa": 0.49137931034482757,
-            "careerPowerIndex": 50.16,
-            "contactRiskIndex": 25.32,
+            "recentMlbTbPerPa": 0.49572649572649574,
+            "careerPowerIndex": 50.35,
+            "contactRiskIndex": 25.31,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/660688?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -7915,8 +7914,8 @@ export const lineupBoardsByGameId = {
             "statcast fade"
           ],
           "primaryTag": "carry",
-          "summary": ".270 AVG | .798 OPS | 30 H | 5 HR | 6g: .333 AVG | .917 OPS | 8 H | 2 HR | vs RHP: .222 AVG | .726 OPS | 3 HR | career 1967 PA | .673 OPS | 49 HR | contact-stable profile | power 50 | 2026 sample ok | arsenal Changeup 28% / 4-Seam Fastball 26% / Slider 24% | fit +4.2 | +7.1 matchup grade in a traffic-risk lane",
-          "matchupNote": "+7.10 vs Griffin Canning"
+          "summary": ".277 AVG | .808 OPS | 31 H | 5 HR | 6g: .333 AVG | .917 OPS | 8 H | 2 HR | vs RHP: .222 AVG | .726 OPS | 3 HR | career 1968 PA | .674 OPS | 49 HR | contact-stable profile | power 50 | 2026 sample ok | arsenal Changeup 28% / 4-Seam Fastball 26% / Slider 24% | fit +4.2 | +6.8 matchup grade in a traffic-risk lane",
+          "matchupNote": "+6.78 vs Griffin Canning"
         }
       ],
       "bvpHistory": {
@@ -7925,7 +7924,7 @@ export const lineupBoardsByGameId = {
         "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
       },
       "aggregate": {
-        "averageMatchupGrade": 4.1,
+        "averageMatchupGrade": 4.08,
         "trackedBatters": 9,
         "starterThreatCount": 6,
         "contactCount": 4,
@@ -7945,7 +7944,7 @@ export const lineupBoardsByGameId = {
         "starterPressureIndex": 94,
         "overallPressureIndex": 92.2,
         "topThirdScore": 94,
-        "depthScore": 42.5,
+        "depthScore": 42.2,
         "bullpenOverperformHitters": [
           {
             "name": "James Wood",
@@ -8012,7 +8011,7 @@ export const lineupBoardsByGameId = {
         "bullpenOverview": "Jeremiah Estrada is the first bridge look, and this lineup grades -2.1 against that likely first-up arsenal.",
         "topThirdScore": 94,
         "middleScore": 69.8,
-        "depthScore": 42.5,
+        "depthScore": 42.2,
         "bullpenPitchTypeSummary": {
           "pressureIndex": 38.9,
           "averageFitScore": 61.5,
@@ -8110,7 +8109,7 @@ export const lineupBoardsByGameId = {
   "twins-pirates": {
     "gameId": "twins-pirates",
     "title": "Twins @ Pirates",
-    "snapshot": "2026-05-31T18:00:03.943Z",
+    "snapshot": "2026-05-31T18:17:29.712Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -8125,7 +8124,7 @@ export const lineupBoardsByGameId = {
       "label": "70°F | Wind 2 mph In | 0% precip"
     },
     "marketWeatherContext": {
-      "line": "PIT -201",
+      "line": "PIT -551",
       "total": "7.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
@@ -8344,7 +8343,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/668885?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal risk",
@@ -8543,7 +8542,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/686797?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "heater",
@@ -8742,7 +8741,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/665019?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -8943,7 +8942,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/605137?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -9142,7 +9141,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/663616?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -9341,7 +9340,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/606115?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -9372,25 +9371,25 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 54,
-            "hits": 48,
-            "singles": 36,
+            "gamesPlayed": 55,
+            "hits": 49,
+            "singles": 37,
             "doubles": 10,
             "triples": 1,
             "homeRuns": 1,
             "walks": 19,
-            "totalBases": 63,
-            "atBats": 196,
-            "plateAppearances": 221,
-            "avg": 0.245,
-            "obp": 0.321,
-            "slg": 0.321,
-            "ops": 0.643,
-            "hitRate": 0.21719999999999998,
-            "singlesRate": 0.1629,
+            "totalBases": 64,
+            "atBats": 197,
+            "plateAppearances": 222,
+            "avg": 0.249,
+            "obp": 0.324,
+            "slg": 0.325,
+            "ops": 0.649,
+            "hitRate": 0.2207,
+            "singlesRate": 0.16670000000000001,
             "hrRate": 0.0045000000000000005,
-            "walkRate": 0.086,
-            "totalBasesRate": 0.2851
+            "walkRate": 0.08560000000000001,
+            "totalBasesRate": 0.2883
           },
           "recent": {
             "gamesPlayed": 10,
@@ -9436,17 +9435,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.2808
           },
           "metrics": {
-            "powerScore": 19.9,
-            "contactScore": 59.8,
-            "patienceScore": 52.8,
-            "formScore": 82.9,
-            "splitScore": 47.4,
-            "varianceScore": 62.4,
+            "powerScore": 20.3,
+            "contactScore": 60.2,
+            "patienceScore": 52.5,
+            "formScore": 81.4,
+            "splitScore": 45.9,
+            "varianceScore": 62.1,
             "pitchTypeFitScore": 39,
             "pitchTypeGrade": -2.27,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 43.4,
-            "matchupGrade": -2.18
+            "matchupScore": 42.3,
+            "matchupGrade": -2.38
           },
           "pitchType": {
             "fitScore": 39,
@@ -9513,36 +9512,36 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 2,
             "debutYear": 2025,
             "latestMlbYear": 2026,
-            "careerGames": 103,
-            "careerPlateAppearances": 428,
-            "careerHits": 103,
+            "careerGames": 104,
+            "careerPlateAppearances": 429,
+            "careerHits": 104,
             "careerHomeRuns": 5,
-            "careerTotalBases": 144,
+            "careerTotalBases": 145,
             "careerWalks": 38,
             "careerStrikeouts": 63,
-            "careerHitRate": 0.2407,
-            "careerAvg": 0.272,
-            "careerObp": 0.35,
-            "careerSlg": 0.381,
-            "careerOps": 0.731,
-            "careerTbPerPa": 0.3364485981308411,
-            "careerHrPerPa": 0.011682242990654205,
-            "careerKRate": 0.14719626168224298,
-            "careerBbRate": 0.08878504672897196,
+            "careerHitRate": 0.24239999999999998,
+            "careerAvg": 0.274,
+            "careerObp": 0.352,
+            "careerSlg": 0.383,
+            "careerOps": 0.735,
+            "careerTbPerPa": 0.337995337995338,
+            "careerHrPerPa": 0.011655011655011656,
+            "careerKRate": 0.14685314685314685,
+            "careerBbRate": 0.08857808857808858,
             "bestPowerYear": 2025,
             "bestPowerHomeRuns": 4,
             "bestPowerSlg": 0.44505494505494503,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 221,
+            "recentMlbPlateAppearances": 222,
             "recentMlbHomeRuns": 1,
-            "recentMlbTbPerPa": 0.2850678733031674,
-            "careerPowerIndex": 28.97,
-            "contactRiskIndex": 29.74,
-            "roleStabilityIndex": 86.5,
+            "recentMlbTbPerPa": 0.2882882882882883,
+            "careerPowerIndex": 29.35,
+            "contactRiskIndex": 29.69,
+            "roleStabilityIndex": 86.62,
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/807712?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "heater",
@@ -9551,8 +9550,8 @@ export const lineupBoardsByGameId = {
             "statcast fade"
           ],
           "primaryTag": "heater",
-          "summary": ".245 AVG | .643 OPS | 48 H | 1 HR | 10g: .350 AVG | .800 OPS | 14 H | 0 HR | vs RHP: .231 AVG | .624 OPS | 1 HR | career 428 PA | .731 OPS | 5 HR | contact-stable profile | power 29 | 2026 sample ok | arsenal 4-Seam Fastball 32% / Curveball 25% / Slider 24% | fit -2.3 | -2.2 matchup grade in a contact-suppressor lane",
-          "matchupNote": "-2.18 vs Braxton Ashcraft"
+          "summary": ".249 AVG | .649 OPS | 49 H | 1 HR | 10g: .350 AVG | .800 OPS | 14 H | 0 HR | vs RHP: .231 AVG | .624 OPS | 1 HR | career 429 PA | .735 OPS | 5 HR | contact-stable profile | power 29 | 2026 sample ok | arsenal 4-Seam Fastball 32% / Curveball 25% / Slider 24% | fit -2.3 | -2.4 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-2.38 vs Braxton Ashcraft"
         },
         {
           "playerId": 656484,
@@ -9572,7 +9571,7 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 32,
+            "gamesPlayed": 33,
             "hits": 22,
             "singles": 16,
             "doubles": 3,
@@ -9580,17 +9579,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 3,
             "walks": 7,
             "totalBases": 34,
-            "atBats": 91,
-            "plateAppearances": 101,
-            "avg": 0.242,
-            "obp": 0.3,
-            "slg": 0.374,
-            "ops": 0.674,
-            "hitRate": 0.21780000000000002,
-            "singlesRate": 0.15839999999999999,
-            "hrRate": 0.0297,
-            "walkRate": 0.0693,
-            "totalBasesRate": 0.33659999999999995
+            "atBats": 92,
+            "plateAppearances": 102,
+            "avg": 0.239,
+            "obp": 0.297,
+            "slg": 0.37,
+            "ops": 0.667,
+            "hitRate": 0.2157,
+            "singlesRate": 0.15689999999999998,
+            "hrRate": 0.0294,
+            "walkRate": 0.06860000000000001,
+            "totalBasesRate": 0.3333
           },
           "recent": {
             "gamesPlayed": 12,
@@ -9636,17 +9635,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.3373
           },
           "metrics": {
-            "powerScore": 42,
-            "contactScore": 35.1,
-            "patienceScore": 45.2,
+            "powerScore": 41.4,
+            "contactScore": 33.8,
+            "patienceScore": 45,
             "formScore": 18,
-            "splitScore": 48.1,
-            "varianceScore": 58.9,
+            "splitScore": 49.7,
+            "varianceScore": 60.7,
             "pitchTypeFitScore": 44.1,
             "pitchTypeGrade": -1.54,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 27.6,
-            "matchupGrade": -4.24
+            "matchupScore": 28.3,
+            "matchupGrade": -4.1
           },
           "pitchType": {
             "fitScore": 44.1,
@@ -9713,36 +9712,36 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 4,
             "debutYear": 2023,
             "latestMlbYear": 2026,
-            "careerGames": 79,
-            "careerPlateAppearances": 223,
+            "careerGames": 80,
+            "careerPlateAppearances": 224,
             "careerHits": 45,
             "careerHomeRuns": 7,
             "careerTotalBases": 75,
             "careerWalks": 16,
-            "careerStrikeouts": 68,
-            "careerHitRate": 0.2018,
-            "careerAvg": 0.223,
-            "careerObp": 0.281,
-            "careerSlg": 0.371,
-            "careerOps": 0.652,
-            "careerTbPerPa": 0.336322869955157,
-            "careerHrPerPa": 0.03139013452914798,
-            "careerKRate": 0.30493273542600896,
-            "careerBbRate": 0.07174887892376682,
+            "careerStrikeouts": 69,
+            "careerHitRate": 0.2009,
+            "careerAvg": 0.222,
+            "careerObp": 0.279,
+            "careerSlg": 0.369,
+            "careerOps": 0.648,
+            "careerTbPerPa": 0.33482142857142855,
+            "careerHrPerPa": 0.03125,
+            "careerKRate": 0.3080357142857143,
+            "careerBbRate": 0.07142857142857142,
             "bestPowerYear": 2025,
             "bestPowerHomeRuns": 3,
             "bestPowerSlg": 0.41025641025641024,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 101,
+            "recentMlbPlateAppearances": 102,
             "recentMlbHomeRuns": 3,
-            "recentMlbTbPerPa": 0.33663366336633666,
-            "careerPowerIndex": 47.73,
-            "contactRiskIndex": 60.73,
-            "roleStabilityIndex": 72.88,
+            "recentMlbTbPerPa": 0.3333333333333333,
+            "careerPowerIndex": 47.19,
+            "contactRiskIndex": 61.34,
+            "roleStabilityIndex": 73,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/656484?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -9751,8 +9750,8 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".242 AVG | .674 OPS | 22 H | 3 HR | 12g: .250 AVG | .669 OPS | 8 H | 0 HR | vs RHP: .253 AVG | .687 OPS | 2 HR | career 223 PA | .652 OPS | 7 HR | baseline career profile | power 48 | 2026 sample ok | arsenal 4-Seam Fastball 32% / Curveball 25% / Slider 24% | fit -1.5 | -4.2 matchup grade in a contact-suppressor lane",
-          "matchupNote": "-4.24 vs Braxton Ashcraft"
+          "summary": ".239 AVG | .667 OPS | 22 H | 3 HR | 12g: .250 AVG | .669 OPS | 8 H | 0 HR | vs RHP: .253 AVG | .687 OPS | 2 HR | career 224 PA | .648 OPS | 7 HR | baseline career profile | power 47 | 2026 sample ok | arsenal 4-Seam Fastball 32% / Curveball 25% / Slider 24% | fit -1.5 | -4.1 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-4.10 vs Braxton Ashcraft"
         },
         {
           "playerId": 656577,
@@ -9942,7 +9941,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/656577?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal risk",
@@ -9961,10 +9960,10 @@ export const lineupBoardsByGameId = {
         "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
       },
       "aggregate": {
-        "averageMatchupGrade": -2.42,
+        "averageMatchupGrade": -2.43,
         "trackedBatters": 9,
         "starterThreatCount": 2,
-        "contactCount": 2,
+        "contactCount": 3,
         "powerCount": 0,
         "platoonCount": 6,
         "pitchTypeEdgeCount": 2,
@@ -9975,13 +9974,13 @@ export const lineupBoardsByGameId = {
         "topThirdArsenalCount": 1,
         "heaterCount": 3,
         "suppressorCount": 2,
-        "platoonPressureIndex": 65.3,
+        "platoonPressureIndex": 65.4,
         "pitchTypePressureIndex": 46.2,
         "bullpenPitchTypePressureIndex": 64.5,
-        "starterPressureIndex": 30,
+        "starterPressureIndex": 29.9,
         "overallPressureIndex": 32.3,
         "topThirdScore": 56.8,
-        "depthScore": 29.7,
+        "depthScore": 29.5,
         "bullpenOverperformHitters": [
           {
             "name": "Kody Clemens",
@@ -10048,7 +10047,7 @@ export const lineupBoardsByGameId = {
         "bullpenOverview": "Brandan Bidois is the first bridge look, and this lineup grades +2.9 against that likely first-up arsenal.",
         "topThirdScore": 56.8,
         "middleScore": 38.2,
-        "depthScore": 29.7,
+        "depthScore": 29.5,
         "bullpenPitchTypeSummary": {
           "pressureIndex": 64.5,
           "averageFitScore": 55.8,
@@ -10165,7 +10164,7 @@ export const lineupBoardsByGameId = {
           "role": "middle",
           "availabilityScore": 66.55,
           "firstRelieverLikelihood": 95.38,
-          "pitchMixSummary": "4-Seam Fastball 41% / Sweeper 19% / Cutter 14%"
+          "pitchMixSummary": "4-Seam Fastball 41% / Sweeper 19% / Sinker 14%"
         }
       ],
       "lineup": [
@@ -10195,17 +10194,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 7,
             "walks": 29,
             "totalBases": 79,
-            "atBats": 169,
-            "plateAppearances": 204,
-            "avg": 0.29,
-            "obp": 0.392,
-            "slg": 0.467,
-            "ops": 0.86,
-            "hitRate": 0.2402,
-            "singlesRate": 0.16670000000000001,
-            "hrRate": 0.034300000000000004,
-            "walkRate": 0.1422,
-            "totalBasesRate": 0.3873
+            "atBats": 170,
+            "plateAppearances": 205,
+            "avg": 0.288,
+            "obp": 0.39,
+            "slg": 0.465,
+            "ops": 0.855,
+            "hitRate": 0.239,
+            "singlesRate": 0.1659,
+            "hrRate": 0.0341,
+            "walkRate": 0.14150000000000001,
+            "totalBasesRate": 0.38539999999999996
           },
           "recent": {
             "gamesPlayed": 14,
@@ -10251,11 +10250,11 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.4269
           },
           "metrics": {
-            "powerScore": 61.7,
+            "powerScore": 61.3,
             "contactScore": 73.2,
-            "patienceScore": 71.7,
+            "patienceScore": 71.5,
             "formScore": 92,
-            "splitScore": 64.6,
+            "splitScore": 65.7,
             "varianceScore": 92,
             "pitchTypeFitScore": 77.8,
             "pitchTypeGrade": 0.79,
@@ -10329,35 +10328,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2023,
             "latestMlbYear": 2026,
             "careerGames": 275,
-            "careerPlateAppearances": 1040,
+            "careerPlateAppearances": 1041,
             "careerHits": 245,
             "careerHomeRuns": 31,
             "careerTotalBases": 394,
             "careerWalks": 119,
             "careerStrikeouts": 179,
-            "careerHitRate": 0.23559999999999998,
+            "careerHitRate": 0.2354,
             "careerAvg": 0.272,
-            "careerObp": 0.362,
-            "careerSlg": 0.438,
-            "careerOps": 0.8,
-            "careerTbPerPa": 0.37884615384615383,
-            "careerHrPerPa": 0.02980769230769231,
-            "careerKRate": 0.17211538461538461,
-            "careerBbRate": 0.11442307692307692,
+            "careerObp": 0.361,
+            "careerSlg": 0.437,
+            "careerOps": 0.798,
+            "careerTbPerPa": 0.37848222862632086,
+            "careerHrPerPa": 0.029779058597502402,
+            "careerKRate": 0.17195004803073968,
+            "careerBbRate": 0.1143131604226705,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 7,
-            "bestPowerSlg": 0.46745562130177515,
+            "bestPowerSlg": 0.4647058823529412,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 204,
+            "recentMlbPlateAppearances": 205,
             "recentMlbHomeRuns": 7,
-            "recentMlbTbPerPa": 0.3872549019607843,
-            "careerPowerIndex": 57.29,
-            "contactRiskIndex": 32.94,
+            "recentMlbTbPerPa": 0.3853658536585366,
+            "careerPowerIndex": 57.05,
+            "contactRiskIndex": 32.91,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/687462?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -10367,7 +10366,7 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "carry",
-          "summary": ".290 AVG | .860 OPS | 49 H | 7 HR | 14g: .385 AVG | 1.200 OPS | 20 H | 6 HR | vs RHP: .301 AVG | .908 OPS | 7 HR | career 1040 PA | .800 OPS | 31 HR | contact-stable profile | power 57 | 2026 sample ok | arsenal 4-Seam Fastball 42% / Slider 20% / Curveball 17% | fit +0.8 | +10.0 matchup grade in a contact-suppressor lane",
+          "summary": ".288 AVG | .855 OPS | 49 H | 7 HR | 14g: .385 AVG | 1.200 OPS | 20 H | 6 HR | vs RHP: .301 AVG | .908 OPS | 7 HR | career 1041 PA | .798 OPS | 31 HR | contact-stable profile | power 57 | 2026 sample ok | arsenal 4-Seam Fastball 42% / Slider 20% / Curveball 17% | fit +0.8 | +10.0 matchup grade in a contact-suppressor lane",
           "matchupNote": "+10.00 vs Zebby Matthews"
         },
         {
@@ -10558,7 +10557,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/664040?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -10758,7 +10757,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/668804?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -10938,7 +10937,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/656811?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -11136,7 +11135,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/693304?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -11337,7 +11336,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/665833?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -11367,25 +11366,25 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 40,
-            "hits": 27,
-            "singles": 24,
+            "gamesPlayed": 41,
+            "hits": 28,
+            "singles": 25,
             "doubles": 2,
             "triples": 0,
             "homeRuns": 1,
             "walks": 9,
-            "totalBases": 32,
-            "atBats": 101,
-            "plateAppearances": 114,
-            "avg": 0.267,
-            "obp": 0.339,
-            "slg": 0.317,
-            "ops": 0.656,
-            "hitRate": 0.2368,
-            "singlesRate": 0.21050000000000002,
-            "hrRate": 0.0088,
-            "walkRate": 0.0789,
-            "totalBasesRate": 0.2807
+            "totalBases": 33,
+            "atBats": 102,
+            "plateAppearances": 115,
+            "avg": 0.275,
+            "obp": 0.345,
+            "slg": 0.324,
+            "ops": 0.669,
+            "hitRate": 0.24350000000000002,
+            "singlesRate": 0.21739999999999998,
+            "hrRate": 0.0087,
+            "walkRate": 0.0783,
+            "totalBasesRate": 0.287
           },
           "recent": {
             "gamesPlayed": 10,
@@ -11431,17 +11430,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.2564
           },
           "metrics": {
-            "powerScore": 21.7,
-            "contactScore": 53.4,
-            "patienceScore": 49.3,
+            "powerScore": 22.4,
+            "contactScore": 54.2,
+            "patienceScore": 48.9,
             "formScore": 92,
-            "splitScore": 45.3,
+            "splitScore": 42.5,
             "varianceScore": 92,
             "pitchTypeFitScore": 62.9,
             "pitchTypeGrade": -1.06,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 84.9,
-            "matchupGrade": 6.92
+            "matchupScore": 83.2,
+            "matchupGrade": 6.58
           },
           "pitchType": {
             "fitScore": 62.9,
@@ -11508,36 +11507,36 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 2,
             "debutYear": 2025,
             "latestMlbYear": 2026,
-            "careerGames": 158,
-            "careerPlateAppearances": 542,
-            "careerHits": 147,
+            "careerGames": 159,
+            "careerPlateAppearances": 543,
+            "careerHits": 148,
             "careerHomeRuns": 4,
-            "careerTotalBases": 181,
+            "careerTotalBases": 182,
             "careerWalks": 28,
             "careerStrikeouts": 86,
-            "careerHitRate": 0.2712,
-            "careerAvg": 0.291,
-            "careerObp": 0.332,
-            "careerSlg": 0.358,
-            "careerOps": 0.69,
-            "careerTbPerPa": 0.3339483394833948,
-            "careerHrPerPa": 0.007380073800738007,
-            "careerKRate": 0.15867158671586715,
-            "careerBbRate": 0.05166051660516605,
+            "careerHitRate": 0.2726,
+            "careerAvg": 0.292,
+            "careerObp": 0.333,
+            "careerSlg": 0.359,
+            "careerOps": 0.692,
+            "careerTbPerPa": 0.3351749539594843,
+            "careerHrPerPa": 0.007366482504604052,
+            "careerKRate": 0.15837937384898712,
+            "careerBbRate": 0.05156537753222836,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 1,
-            "bestPowerSlg": 0.31683168316831684,
+            "bestPowerSlg": 0.3235294117647059,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 114,
+            "recentMlbPlateAppearances": 115,
             "recentMlbHomeRuns": 1,
-            "recentMlbTbPerPa": 0.2807017543859649,
-            "careerPowerIndex": 21.91,
-            "contactRiskIndex": 34.15,
+            "recentMlbTbPerPa": 0.28695652173913044,
+            "careerPowerIndex": 22.31,
+            "contactRiskIndex": 34.1,
             "roleStabilityIndex": 88,
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/663968?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -11546,8 +11545,8 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "carry",
-          "summary": ".267 AVG | .656 OPS | 27 H | 1 HR | 10g: .385 AVG | 1.082 OPS | 10 H | 2 HR | vs RHP: .239 AVG | .627 OPS | 1 HR | career 542 PA | .690 OPS | 4 HR | contact-stable profile | power 22 | 2026 sample ok | arsenal 4-Seam Fastball 42% / Slider 20% / Curveball 17% | fit -1.1 | +6.9 matchup grade in a contact-suppressor lane",
-          "matchupNote": "+6.92 vs Zebby Matthews"
+          "summary": ".275 AVG | .669 OPS | 28 H | 1 HR | 10g: .385 AVG | 1.082 OPS | 10 H | 2 HR | vs RHP: .239 AVG | .627 OPS | 1 HR | career 543 PA | .692 OPS | 4 HR | contact-stable profile | power 22 | 2026 sample ok | arsenal 4-Seam Fastball 42% / Slider 20% / Curveball 17% | fit -1.1 | +6.6 matchup grade in a contact-suppressor lane",
+          "matchupNote": "+6.58 vs Zebby Matthews"
         },
         {
           "playerId": 669707,
@@ -11568,24 +11567,24 @@ export const lineupBoardsByGameId = {
           },
           "season": {
             "gamesPlayed": 28,
-            "hits": 18,
-            "singles": 16,
+            "hits": 19,
+            "singles": 17,
             "doubles": 2,
             "triples": 0,
             "homeRuns": 0,
             "walks": 3,
-            "totalBases": 20,
-            "atBats": 78,
-            "plateAppearances": 83,
-            "avg": 0.231,
-            "obp": 0.268,
-            "slg": 0.256,
-            "ops": 0.525,
-            "hitRate": 0.2169,
-            "singlesRate": 0.1928,
+            "totalBases": 21,
+            "atBats": 79,
+            "plateAppearances": 84,
+            "avg": 0.241,
+            "obp": 0.277,
+            "slg": 0.266,
+            "ops": 0.543,
+            "hitRate": 0.2262,
+            "singlesRate": 0.2024,
             "hrRate": 0,
-            "walkRate": 0.0361,
-            "totalBasesRate": 0.24100000000000002
+            "walkRate": 0.035699999999999996,
+            "totalBasesRate": 0.25
           },
           "recent": {
             "gamesPlayed": 10,
@@ -11632,11 +11631,11 @@ export const lineupBoardsByGameId = {
           },
           "metrics": {
             "powerScore": 18,
-            "contactScore": 40.3,
-            "patienceScore": 34.1,
+            "contactScore": 41.8,
+            "patienceScore": 33.8,
             "formScore": 18,
-            "splitScore": 39.8,
-            "varianceScore": 80.8,
+            "splitScore": 35.8,
+            "varianceScore": 86.1,
             "pitchTypeFitScore": 24.3,
             "pitchTypeGrade": -5.51,
             "pitchTypeCoveragePct": 100,
@@ -11709,35 +11708,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2023,
             "latestMlbYear": 2026,
             "careerGames": 314,
-            "careerPlateAppearances": 1114,
-            "careerHits": 232,
+            "careerPlateAppearances": 1115,
+            "careerHits": 233,
             "careerHomeRuns": 19,
-            "careerTotalBases": 334,
+            "careerTotalBases": 335,
             "careerWalks": 108,
             "careerStrikeouts": 277,
-            "careerHitRate": 0.20829999999999999,
-            "careerAvg": 0.236,
-            "careerObp": 0.316,
-            "careerSlg": 0.339,
-            "careerOps": 0.655,
-            "careerTbPerPa": 0.2998204667863555,
-            "careerHrPerPa": 0.017055655296229804,
-            "careerKRate": 0.24865350089766608,
-            "careerBbRate": 0.09694793536804308,
+            "careerHitRate": 0.209,
+            "careerAvg": 0.237,
+            "careerObp": 0.317,
+            "careerSlg": 0.34,
+            "careerOps": 0.657,
+            "careerTbPerPa": 0.3004484304932735,
+            "careerHrPerPa": 0.017040358744394617,
+            "careerKRate": 0.2484304932735426,
+            "careerBbRate": 0.0968609865470852,
             "bestPowerYear": 2024,
             "bestPowerHomeRuns": 9,
             "bestPowerSlg": 0.3147208121827411,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 83,
+            "recentMlbPlateAppearances": 84,
             "recentMlbHomeRuns": 0,
-            "recentMlbTbPerPa": 0.24096385542168675,
-            "careerPowerIndex": 26.36,
-            "contactRiskIndex": 48.53,
+            "recentMlbTbPerPa": 0.25,
+            "careerPowerIndex": 26.89,
+            "contactRiskIndex": 48.49,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/669707?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal risk",
@@ -11745,7 +11744,7 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "arsenal risk",
-          "summary": ".231 AVG | .525 OPS | 18 H | 0 HR | 10g: .167 AVG | .333 OPS | 6 H | 0 HR | vs RHP: .208 AVG | .476 OPS | 0 HR | career 1114 PA | .655 OPS | 19 HR | baseline career profile | power 26 | 2026 sample ok | arsenal 4-Seam Fastball 42% / Slider 20% / Curveball 17% | fit -5.5 | -8.0 matchup grade in a contact-suppressor lane",
+          "summary": ".241 AVG | .543 OPS | 19 H | 0 HR | 10g: .167 AVG | .333 OPS | 6 H | 0 HR | vs RHP: .208 AVG | .476 OPS | 0 HR | career 1115 PA | .657 OPS | 19 HR | baseline career profile | power 27 | 2026 sample ok | arsenal 4-Seam Fastball 42% / Slider 20% / Curveball 17% | fit -5.5 | -8.0 matchup grade in a contact-suppressor lane",
           "matchupNote": "-8.00 vs Zebby Matthews"
         },
         {
@@ -11774,17 +11773,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 4,
             "walks": 11,
             "totalBases": 30,
-            "atBats": 112,
-            "plateAppearances": 127,
-            "avg": 0.134,
-            "obp": 0.23,
-            "slg": 0.268,
-            "ops": 0.498,
-            "hitRate": 0.11810000000000001,
-            "singlesRate": 0.063,
-            "hrRate": 0.0315,
-            "walkRate": 0.0866,
-            "totalBasesRate": 0.23620000000000002
+            "atBats": 113,
+            "plateAppearances": 128,
+            "avg": 0.133,
+            "obp": 0.228,
+            "slg": 0.265,
+            "ops": 0.494,
+            "hitRate": 0.11720000000000001,
+            "singlesRate": 0.0625,
+            "hrRate": 0.0313,
+            "walkRate": 0.0859,
+            "totalBasesRate": 0.23440000000000003
           },
           "recent": {
             "gamesPlayed": 6,
@@ -11830,16 +11829,16 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.24
           },
           "metrics": {
-            "powerScore": 30,
-            "contactScore": 29.2,
-            "patienceScore": 56.5,
+            "powerScore": 29.6,
+            "contactScore": 29.3,
+            "patienceScore": 56.2,
             "formScore": 92,
-            "splitScore": 55.7,
-            "varianceScore": 50.1,
+            "splitScore": 56.7,
+            "varianceScore": 49.6,
             "pitchTypeFitScore": 18,
             "pitchTypeGrade": -6.92,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 18.8,
+            "matchupScore": 18.9,
             "matchupGrade": -8
           },
           "pitchType": {
@@ -11908,35 +11907,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2023,
             "latestMlbYear": 2026,
             "careerGames": 227,
-            "careerPlateAppearances": 787,
+            "careerPlateAppearances": 788,
             "careerHits": 120,
             "careerHomeRuns": 19,
             "careerTotalBases": 201,
             "careerWalks": 67,
             "careerStrikeouts": 214,
-            "careerHitRate": 0.1525,
+            "careerHitRate": 0.1523,
             "careerAvg": 0.173,
-            "careerObp": 0.257,
+            "careerObp": 0.256,
             "careerSlg": 0.29,
-            "careerOps": 0.547,
-            "careerTbPerPa": 0.2554002541296061,
-            "careerHrPerPa": 0.0241423125794155,
-            "careerKRate": 0.2719186785260483,
-            "careerBbRate": 0.08513341804320203,
+            "careerOps": 0.546,
+            "careerTbPerPa": 0.2550761421319797,
+            "careerHrPerPa": 0.024111675126903553,
+            "careerKRate": 0.2715736040609137,
+            "careerBbRate": 0.0850253807106599,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 4,
-            "bestPowerSlg": 0.26785714285714285,
+            "bestPowerSlg": 0.26548672566371684,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 127,
+            "recentMlbPlateAppearances": 128,
             "recentMlbHomeRuns": 4,
-            "recentMlbTbPerPa": 0.23622047244094488,
-            "careerPowerIndex": 26.16,
-            "contactRiskIndex": 53.66,
+            "recentMlbTbPerPa": 0.234375,
+            "careerPowerIndex": 26.05,
+            "contactRiskIndex": 53.6,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/680779?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "heater",
@@ -11945,7 +11944,7 @@ export const lineupBoardsByGameId = {
             "statcast fade"
           ],
           "primaryTag": "heater",
-          "summary": ".134 AVG | .498 OPS | 15 H | 4 HR | 6g: .091 AVG | .455 OPS | 2 H | 2 HR | vs RHP: .141 AVG | .545 OPS | 3 HR | career 787 PA | .547 OPS | 19 HR | baseline career profile | power 26 | 2026 sample ok | arsenal 4-Seam Fastball 42% / Slider 20% / Curveball 17% | fit -6.9 | -8.0 matchup grade in a contact-suppressor lane",
+          "summary": ".133 AVG | .494 OPS | 15 H | 4 HR | 6g: .091 AVG | .455 OPS | 2 H | 2 HR | vs RHP: .141 AVG | .545 OPS | 3 HR | career 788 PA | .546 OPS | 19 HR | baseline career profile | power 26 | 2026 sample ok | arsenal 4-Seam Fastball 42% / Slider 20% / Curveball 17% | fit -6.9 | -8.0 matchup grade in a contact-suppressor lane",
           "matchupNote": "-8.00 vs Zebby Matthews"
         }
       ],
@@ -11955,7 +11954,7 @@ export const lineupBoardsByGameId = {
         "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
       },
       "aggregate": {
-        "averageMatchupGrade": 1.88,
+        "averageMatchupGrade": 1.85,
         "trackedBatters": 9,
         "starterThreatCount": 6,
         "contactCount": 3,
@@ -11975,7 +11974,7 @@ export const lineupBoardsByGameId = {
         "starterPressureIndex": 94,
         "overallPressureIndex": 94,
         "topThirdScore": 85.2,
-        "depthScore": 40.6,
+        "depthScore": 40,
         "bullpenOverperformHitters": [
           {
             "name": "Spencer Horwitz",
@@ -12042,7 +12041,7 @@ export const lineupBoardsByGameId = {
         "bullpenOverview": "Eric Orze is the first bridge look, and this lineup grades -0.7 against that likely first-up arsenal.",
         "topThirdScore": 85.2,
         "middleScore": 55.7,
-        "depthScore": 40.6,
+        "depthScore": 40,
         "bullpenPitchTypeSummary": {
           "pressureIndex": 57.7,
           "averageFitScore": 60,
@@ -12100,7 +12099,7 @@ export const lineupBoardsByGameId = {
               "firstRelieverLikelihood": 95.38,
               "fitScore": 64.9,
               "fitGrade": 0.11,
-              "pitchMixSummary": "4-Seam Fastball 41% / Sweeper 19% / Cutter 14%",
+              "pitchMixSummary": "4-Seam Fastball 41% / Sweeper 19% / Sinker 14%",
               "topAttackers": [
                 {
                   "name": "Oneil Cruz",
@@ -12140,7 +12139,7 @@ export const lineupBoardsByGameId = {
   "angels-rays": {
     "gameId": "angels-rays",
     "title": "Angels @ Rays",
-    "snapshot": "2026-05-31T18:00:03.945Z",
+    "snapshot": "2026-05-31T18:17:29.713Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -12155,8 +12154,8 @@ export const lineupBoardsByGameId = {
       "label": "Dome In Domed Stadium"
     },
     "marketWeatherContext": {
-      "line": "TB -243",
-      "total": "7.5 Runs",
+      "line": "TB -201",
+      "total": "8.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
     "away": {
@@ -12212,17 +12211,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 10,
             "walks": 34,
             "totalBases": 100,
-            "atBats": 231,
-            "plateAppearances": 271,
-            "avg": 0.234,
-            "obp": 0.343,
-            "slg": 0.433,
-            "ops": 0.776,
-            "hitRate": 0.1993,
-            "singlesRate": 0.107,
-            "hrRate": 0.0369,
-            "walkRate": 0.1255,
-            "totalBasesRate": 0.369
+            "atBats": 232,
+            "plateAppearances": 272,
+            "avg": 0.233,
+            "obp": 0.342,
+            "slg": 0.431,
+            "ops": 0.773,
+            "hitRate": 0.1985,
+            "singlesRate": 0.1066,
+            "hrRate": 0.0368,
+            "walkRate": 0.125,
+            "totalBasesRate": 0.3676
           },
           "recent": {
             "gamesPlayed": 12,
@@ -12268,17 +12267,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.3429
           },
           "metrics": {
-            "powerScore": 54.6,
-            "contactScore": 41.3,
-            "patienceScore": 67.8,
-            "formScore": 27.1,
-            "splitScore": 51.2,
-            "varianceScore": 71.9,
+            "powerScore": 54.4,
+            "contactScore": 41.4,
+            "patienceScore": 67.6,
+            "formScore": 27.8,
+            "splitScore": 51.9,
+            "varianceScore": 72.7,
             "pitchTypeFitScore": 44.9,
             "pitchTypeGrade": -1.48,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 58.1,
-            "matchupGrade": 2.67
+            "matchupScore": 58.6,
+            "matchupGrade": 2.76
           },
           "pitchType": {
             "fitScore": 44.9,
@@ -12346,35 +12345,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2023,
             "latestMlbYear": 2026,
             "careerGames": 427,
-            "careerPlateAppearances": 1756,
+            "careerPlateAppearances": 1757,
             "careerHits": 383,
             "careerHomeRuns": 68,
             "careerTotalBases": 687,
             "careerWalks": 126,
             "careerStrikeouts": 448,
-            "careerHitRate": 0.2181,
+            "careerHitRate": 0.218,
             "careerAvg": 0.245,
             "careerObp": 0.32,
             "careerSlg": 0.439,
             "careerOps": 0.759,
-            "careerTbPerPa": 0.39123006833712987,
-            "careerHrPerPa": 0.0387243735763098,
-            "careerKRate": 0.255125284738041,
-            "careerBbRate": 0.07175398633257403,
+            "careerTbPerPa": 0.39100739897552644,
+            "careerHrPerPa": 0.03870233352305066,
+            "careerKRate": 0.2549800796812749,
+            "careerBbRate": 0.07171314741035857,
             "bestPowerYear": 2025,
             "bestPowerHomeRuns": 26,
             "bestPowerSlg": 0.47410358565737054,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 271,
+            "recentMlbPlateAppearances": 272,
             "recentMlbHomeRuns": 10,
-            "recentMlbTbPerPa": 0.36900369003690037,
-            "careerPowerIndex": 64.63,
-            "contactRiskIndex": 51.27,
+            "recentMlbTbPerPa": 0.36764705882352944,
+            "careerPowerIndex": 64.55,
+            "contactRiskIndex": 51.24,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/687263?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -12383,8 +12382,8 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".234 AVG | .776 OPS | 54 H | 10 HR | 12g: .304 AVG | .842 OPS | 14 H | 0 HR | vs LHP: .250 AVG | .829 OPS | 2 HR | career 1756 PA | .759 OPS | 68 HR | baseline career profile | power 65 | 2026 sample ok | arsenal 4-Seam Fastball 36% / Changeup 30% / Slider 22% | fit -1.5 | +2.7 matchup grade in a contact-suppressor lane",
-          "matchupNote": "+2.67 vs Shane McClanahan"
+          "summary": ".233 AVG | .773 OPS | 54 H | 10 HR | 12g: .304 AVG | .842 OPS | 14 H | 0 HR | vs LHP: .250 AVG | .829 OPS | 2 HR | career 1757 PA | .759 OPS | 68 HR | baseline career profile | power 65 | 2026 sample ok | arsenal 4-Seam Fastball 36% / Changeup 30% / Slider 22% | fit -1.5 | +2.8 matchup grade in a contact-suppressor lane",
+          "matchupNote": "+2.76 vs Shane McClanahan"
         },
         {
           "playerId": 545361,
@@ -12574,7 +12573,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/545361?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -12775,7 +12774,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/687093?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "heater",
@@ -12974,7 +12973,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/624585?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -13175,7 +13174,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/666176?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -13375,7 +13374,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/672724?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -13574,7 +13573,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/642350?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -13606,24 +13605,24 @@ export const lineupBoardsByGameId = {
           },
           "season": {
             "gamesPlayed": 38,
-            "hits": 22,
+            "hits": 23,
             "singles": 18,
-            "doubles": 3,
+            "doubles": 4,
             "triples": 0,
             "homeRuns": 1,
             "walks": 13,
-            "totalBases": 28,
-            "atBats": 112,
-            "plateAppearances": 129,
-            "avg": 0.196,
-            "obp": 0.295,
-            "slg": 0.25,
-            "ops": 0.545,
-            "hitRate": 0.1705,
-            "singlesRate": 0.13949999999999999,
-            "hrRate": 0.0078000000000000005,
-            "walkRate": 0.1008,
-            "totalBasesRate": 0.21710000000000002
+            "totalBases": 30,
+            "atBats": 113,
+            "plateAppearances": 130,
+            "avg": 0.204,
+            "obp": 0.3,
+            "slg": 0.265,
+            "ops": 0.565,
+            "hitRate": 0.1769,
+            "singlesRate": 0.13849999999999998,
+            "hrRate": 0.0077,
+            "walkRate": 0.1,
+            "totalBasesRate": 0.23079999999999998
           },
           "recent": {
             "gamesPlayed": 6,
@@ -13670,16 +13669,16 @@ export const lineupBoardsByGameId = {
           },
           "metrics": {
             "powerScore": 18,
-            "contactScore": 45.9,
-            "patienceScore": 59.6,
-            "formScore": 44.5,
-            "splitScore": 81.9,
-            "varianceScore": 69.3,
+            "contactScore": 47,
+            "patienceScore": 59.2,
+            "formScore": 40.9,
+            "splitScore": 78.1,
+            "varianceScore": 62.6,
             "pitchTypeFitScore": 44.5,
             "pitchTypeGrade": -1.39,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 43.3,
-            "matchupGrade": -2.07
+            "matchupScore": 39.9,
+            "matchupGrade": -2.68
           },
           "pitchType": {
             "fitScore": 44.5,
@@ -13747,35 +13746,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2022,
             "latestMlbYear": 2026,
             "careerGames": 349,
-            "careerPlateAppearances": 1317,
-            "careerHits": 276,
+            "careerPlateAppearances": 1318,
+            "careerHits": 277,
             "careerHomeRuns": 54,
-            "careerTotalBases": 476,
+            "careerTotalBases": 478,
             "careerWalks": 86,
             "careerStrikeouts": 374,
-            "careerHitRate": 0.2096,
-            "careerAvg": 0.228,
+            "careerHitRate": 0.2102,
+            "careerAvg": 0.229,
             "careerObp": 0.287,
-            "careerSlg": 0.393,
-            "careerOps": 0.68,
-            "careerTbPerPa": 0.36142748671222474,
-            "careerHrPerPa": 0.04100227790432802,
-            "careerKRate": 0.2839787395596052,
-            "careerBbRate": 0.06529992406985573,
+            "careerSlg": 0.395,
+            "careerOps": 0.682,
+            "careerTbPerPa": 0.3626707132018209,
+            "careerHrPerPa": 0.0409711684370258,
+            "careerKRate": 0.283763277693475,
+            "careerBbRate": 0.06525037936267071,
             "bestPowerYear": 2023,
             "bestPowerHomeRuns": 14,
             "bestPowerSlg": 0.5,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 129,
+            "recentMlbPlateAppearances": 130,
             "recentMlbHomeRuns": 1,
-            "recentMlbTbPerPa": 0.21705426356589147,
-            "careerPowerIndex": 53.86,
-            "contactRiskIndex": 57.14,
+            "recentMlbTbPerPa": 0.23076923076923078,
+            "careerPowerIndex": 54.71,
+            "contactRiskIndex": 57.1,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/681351?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -13783,8 +13782,8 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".196 AVG | .545 OPS | 22 H | 1 HR | 6g: .200 AVG | .573 OPS | 4 H | 0 HR | vs LHP: .294 AVG | .721 OPS | 0 HR | career 1317 PA | .680 OPS | 54 HR | baseline career profile | power 54 | 2026 sample ok | arsenal 4-Seam Fastball 36% / Changeup 30% / Slider 22% | fit -1.4 | -2.1 matchup grade in a contact-suppressor lane",
-          "matchupNote": "-2.07 vs Shane McClanahan"
+          "summary": ".204 AVG | .565 OPS | 23 H | 1 HR | 6g: .200 AVG | .573 OPS | 4 H | 0 HR | vs LHP: .294 AVG | .721 OPS | 0 HR | career 1318 PA | .682 OPS | 54 HR | baseline career profile | power 55 | 2026 sample ok | arsenal 4-Seam Fastball 36% / Changeup 30% / Slider 22% | fit -1.4 | -2.7 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-2.68 vs Shane McClanahan"
         },
         {
           "playerId": 663611,
@@ -13804,7 +13803,7 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 2,
+            "gamesPlayed": 3,
             "hits": 2,
             "singles": 2,
             "doubles": 0,
@@ -13812,17 +13811,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 0,
             "walks": 0,
             "totalBases": 2,
-            "atBats": 4,
-            "plateAppearances": 5,
-            "avg": 0.5,
-            "obp": 0.6,
-            "slg": 0.5,
-            "ops": 1.1,
-            "hitRate": 0.4,
-            "singlesRate": 0.4,
+            "atBats": 5,
+            "plateAppearances": 6,
+            "avg": 0.4,
+            "obp": 0.5,
+            "slg": 0.4,
+            "ops": 0.9,
+            "hitRate": 0.3333,
+            "singlesRate": 0.3333,
             "hrRate": 0,
             "walkRate": 0,
-            "totalBasesRate": 0.4
+            "totalBasesRate": 0.3333
           },
           "recent": {
             "gamesPlayed": 4,
@@ -13849,15 +13848,15 @@ export const lineupBoardsByGameId = {
           "metrics": {
             "powerScore": 21.3,
             "contactScore": 75,
-            "patienceScore": 38.4,
-            "formScore": 50,
+            "patienceScore": 38.3,
+            "formScore": 56.6,
             "splitScore": 50,
-            "varianceScore": 56.3,
+            "varianceScore": 58,
             "pitchTypeFitScore": 18,
             "pitchTypeGrade": -8,
             "pitchTypeCoveragePct": 21.8,
             "matchupScore": 18,
-            "matchupGrade": -8
+            "matchupGrade": -7.86
           },
           "pitchType": {
             "fitScore": 18,
@@ -13908,36 +13907,36 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 6,
             "debutYear": 2020,
             "latestMlbYear": 2026,
-            "careerGames": 287,
-            "careerPlateAppearances": 945,
+            "careerGames": 288,
+            "careerPlateAppearances": 946,
             "careerHits": 240,
             "careerHomeRuns": 4,
             "careerTotalBases": 301,
             "careerWalks": 43,
             "careerStrikeouts": 86,
-            "careerHitRate": 0.254,
+            "careerHitRate": 0.25370000000000004,
             "careerAvg": 0.275,
             "careerObp": 0.324,
             "careerSlg": 0.345,
             "careerOps": 0.669,
-            "careerTbPerPa": 0.31851851851851853,
-            "careerHrPerPa": 0.004232804232804233,
-            "careerKRate": 0.091005291005291,
-            "careerBbRate": 0.0455026455026455,
+            "careerTbPerPa": 0.3181818181818182,
+            "careerHrPerPa": 0.004228329809725159,
+            "careerKRate": 0.09090909090909091,
+            "careerBbRate": 0.045454545454545456,
             "bestPowerYear": 2021,
             "bestPowerHomeRuns": 2,
             "bestPowerSlg": 0.425,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 5,
+            "recentMlbPlateAppearances": 6,
             "recentMlbHomeRuns": 0,
-            "recentMlbTbPerPa": 0.4,
-            "careerPowerIndex": 19.09,
-            "contactRiskIndex": 21.66,
-            "roleStabilityIndex": 84.25,
+            "recentMlbTbPerPa": 0.3333333333333333,
+            "careerPowerIndex": 19.07,
+            "contactRiskIndex": 21.65,
+            "roleStabilityIndex": 84.5,
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/663611?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -13947,8 +13946,8 @@ export const lineupBoardsByGameId = {
             "small-sample story"
           ],
           "primaryTag": "split edge",
-          "summary": ".500 AVG | 1.100 OPS | 2 H | 0 HR | 4g: .500 AVG | 1.100 OPS | 4 H | 0 HR | No clean split stored vs LHP | career 945 PA | .669 OPS | 4 HR | contact-stable profile | power 19 | tiny 2026 sample | arsenal Slider 22% | fit -8.0 | -8.0 matchup grade in a contact-suppressor lane",
-          "matchupNote": "-8.00 vs Shane McClanahan"
+          "summary": ".400 AVG | .900 OPS | 2 H | 0 HR | 4g: .500 AVG | 1.100 OPS | 4 H | 0 HR | No clean split stored vs LHP | career 946 PA | .669 OPS | 4 HR | contact-stable profile | power 19 | tiny 2026 sample | arsenal Slider 22% | fit -8.0 | -7.9 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-7.86 vs Shane McClanahan"
         }
       ],
       "bvpHistory": {
@@ -13957,7 +13956,7 @@ export const lineupBoardsByGameId = {
         "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
       },
       "aggregate": {
-        "averageMatchupGrade": 0.39,
+        "averageMatchupGrade": 0.34,
         "trackedBatters": 9,
         "starterThreatCount": 3,
         "contactCount": 2,
@@ -13974,10 +13973,10 @@ export const lineupBoardsByGameId = {
         "platoonPressureIndex": 94,
         "pitchTypePressureIndex": 22.5,
         "bullpenPitchTypePressureIndex": 67,
-        "starterPressureIndex": 64.2,
-        "overallPressureIndex": 66.9,
-        "topThirdScore": 63.9,
-        "depthScore": 51.8,
+        "starterPressureIndex": 63.9,
+        "overallPressureIndex": 66.6,
+        "topThirdScore": 64,
+        "depthScore": 50.6,
         "bullpenOverperformHitters": [
           {
             "name": "Vaughn Grissom",
@@ -14009,7 +14008,7 @@ export const lineupBoardsByGameId = {
           },
           {
             "name": "Zach Neto",
-            "tag": "split edge | +2.67 vs Shane McClanahan"
+            "tag": "split edge | +2.76 vs Shane McClanahan"
           }
         ],
         "bullpenOverperformHitters": [
@@ -14036,15 +14035,15 @@ export const lineupBoardsByGameId = {
           },
           {
             "name": "Nick Madrigal",
-            "tag": "split edge | -8.00 vs Shane McClanahan"
+            "tag": "split edge | -7.86 vs Shane McClanahan"
           }
         ],
         "underperformNote": "Jorge Soler and Nick Madrigal carry the softer form or split fit into a contact suppressor lane.",
         "overview": "Angels can lean on Jose Siri, Mike Trout, Zach Neto to drive early pressure against Shane McClanahan.",
         "bullpenOverview": "Hunter Bigge is the first bridge look, and this lineup grades +1.1 against that likely first-up arsenal.",
-        "topThirdScore": 63.9,
+        "topThirdScore": 64,
         "middleScore": 45,
-        "depthScore": 51.8,
+        "depthScore": 50.6,
         "bullpenPitchTypeSummary": {
           "pressureIndex": 67,
           "averageFitScore": 55.9,
@@ -14191,17 +14190,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 11,
             "walks": 20,
             "totalBases": 107,
-            "atBats": 200,
-            "plateAppearances": 228,
-            "avg": 0.315,
-            "obp": 0.395,
-            "slg": 0.535,
-            "ops": 0.93,
-            "hitRate": 0.2763,
-            "singlesRate": 0.18420000000000003,
-            "hrRate": 0.0482,
-            "walkRate": 0.0877,
-            "totalBasesRate": 0.4693
+            "atBats": 201,
+            "plateAppearances": 229,
+            "avg": 0.313,
+            "obp": 0.393,
+            "slg": 0.532,
+            "ops": 0.925,
+            "hitRate": 0.2751,
+            "singlesRate": 0.1834,
+            "hrRate": 0.048,
+            "walkRate": 0.0873,
+            "totalBasesRate": 0.4672
           },
           "recent": {
             "gamesPlayed": 12,
@@ -14247,11 +14246,11 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.4611
           },
           "metrics": {
-            "powerScore": 76.2,
-            "contactScore": 79.8,
-            "patienceScore": 54.4,
+            "powerScore": 75.9,
+            "contactScore": 79.7,
+            "patienceScore": 54.3,
             "formScore": 92,
-            "splitScore": 49.1,
+            "splitScore": 50.2,
             "varianceScore": 92,
             "pitchTypeFitScore": 94,
             "pitchTypeGrade": 7.34,
@@ -14325,35 +14324,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2017,
             "latestMlbYear": 2026,
             "careerGames": 957,
-            "careerPlateAppearances": 3983,
+            "careerPlateAppearances": 3984,
             "careerHits": 1020,
             "careerHomeRuns": 111,
             "careerTotalBases": 1562,
             "careerWalks": 429,
             "careerStrikeouts": 588,
-            "careerHitRate": 0.2561,
+            "careerHitRate": 0.256,
             "careerAvg": 0.292,
             "careerObp": 0.373,
             "careerSlg": 0.447,
             "careerOps": 0.82,
-            "careerTbPerPa": 0.39216670851117247,
-            "careerHrPerPa": 0.02786844087371328,
-            "careerKRate": 0.14762741652021089,
-            "careerBbRate": 0.10770775797137835,
+            "careerTbPerPa": 0.39206827309236947,
+            "careerHrPerPa": 0.02786144578313253,
+            "careerKRate": 0.14759036144578314,
+            "careerBbRate": 0.10768072289156627,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 11,
-            "bestPowerSlg": 0.535,
+            "bestPowerSlg": 0.5323383084577115,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 228,
+            "recentMlbPlateAppearances": 229,
             "recentMlbHomeRuns": 11,
-            "recentMlbTbPerPa": 0.4692982456140351,
-            "careerPowerIndex": 60.41,
-            "contactRiskIndex": 28.69,
+            "recentMlbTbPerPa": 0.4672489082969432,
+            "careerPowerIndex": 60.31,
+            "contactRiskIndex": 28.68,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/650490?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -14363,7 +14362,7 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "carry",
-          "summary": ".315 AVG | .930 OPS | 63 H | 11 HR | 12g: .364 AVG | 1.304 OPS | 16 H | 6 HR | vs RHP: .310 AVG | .932 OPS | 8 HR | career 3983 PA | .820 OPS | 111 HR | contact-stable profile | power 60 | 2026 sample ok | arsenal Sinker 39% / Changeup 22% / 4-Seam Fastball 21% | fit +7.3 | +10.0 matchup grade in a traffic-risk lane",
+          "summary": ".313 AVG | .925 OPS | 63 H | 11 HR | 12g: .364 AVG | 1.304 OPS | 16 H | 6 HR | vs RHP: .310 AVG | .932 OPS | 8 HR | career 3984 PA | .820 OPS | 111 HR | contact-stable profile | power 60 | 2026 sample ok | arsenal Sinker 39% / Changeup 22% / 4-Seam Fastball 21% | fit +7.3 | +10.0 matchup grade in a traffic-risk lane",
           "matchupNote": "+10.00 vs Jack Kochanowicz"
         },
         {
@@ -14554,7 +14553,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/666018?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -14756,7 +14755,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/680700?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -14956,7 +14955,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/691406?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -15158,7 +15157,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/802415?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -15196,17 +15195,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 1,
             "walks": 1,
             "totalBases": 6,
-            "atBats": 12,
-            "plateAppearances": 14,
-            "avg": 0.25,
-            "obp": 0.308,
-            "slg": 0.5,
-            "ops": 0.808,
-            "hitRate": 0.2143,
-            "singlesRate": 0.1429,
-            "hrRate": 0.07139999999999999,
-            "walkRate": 0.07139999999999999,
-            "totalBasesRate": 0.4286
+            "atBats": 13,
+            "plateAppearances": 15,
+            "avg": 0.231,
+            "obp": 0.286,
+            "slg": 0.462,
+            "ops": 0.747,
+            "hitRate": 0.2,
+            "singlesRate": 0.1333,
+            "hrRate": 0.0667,
+            "walkRate": 0.0667,
+            "totalBasesRate": 0.4
           },
           "recent": {
             "gamesPlayed": 8,
@@ -15252,17 +15251,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.5
           },
           "metrics": {
-            "powerScore": 70.4,
-            "contactScore": 55.2,
-            "patienceScore": 51.9,
-            "formScore": 50,
-            "splitScore": 56.1,
-            "varianceScore": 76.6,
+            "powerScore": 67.4,
+            "contactScore": 51.6,
+            "patienceScore": 50.9,
+            "formScore": 53,
+            "splitScore": 59.4,
+            "varianceScore": 86.5,
             "pitchTypeFitScore": 53.8,
             "pitchTypeGrade": 0.82,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 65.9,
-            "matchupGrade": 3.54
+            "matchupScore": 66.2,
+            "matchupGrade": 3.46
           },
           "pitchType": {
             "fitScore": 53.8,
@@ -15330,43 +15329,43 @@ export const lineupBoardsByGameId = {
             "debutYear": 2025,
             "latestMlbYear": 2026,
             "careerGames": 21,
-            "careerPlateAppearances": 52,
+            "careerPlateAppearances": 53,
             "careerHits": 9,
             "careerHomeRuns": 2,
             "careerTotalBases": 17,
             "careerWalks": 6,
-            "careerStrikeouts": 8,
-            "careerHitRate": 0.17309999999999998,
-            "careerAvg": 0.205,
-            "careerObp": 0.3,
-            "careerSlg": 0.386,
-            "careerOps": 0.686,
-            "careerTbPerPa": 0.3269230769230769,
-            "careerHrPerPa": 0.038461538461538464,
-            "careerKRate": 0.15384615384615385,
-            "careerBbRate": 0.11538461538461539,
+            "careerStrikeouts": 9,
+            "careerHitRate": 0.1698,
+            "careerAvg": 0.2,
+            "careerObp": 0.294,
+            "careerSlg": 0.378,
+            "careerOps": 0.672,
+            "careerTbPerPa": 0.32075471698113206,
+            "careerHrPerPa": 0.03773584905660377,
+            "careerKRate": 0.16981132075471697,
+            "careerBbRate": 0.11320754716981132,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 1,
-            "bestPowerSlg": 0.5,
+            "bestPowerSlg": 0.46153846153846156,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 14,
+            "recentMlbPlateAppearances": 15,
             "recentMlbHomeRuns": 1,
-            "recentMlbTbPerPa": 0.42857142857142855,
-            "careerPowerIndex": 55.61,
-            "contactRiskIndex": 39.41,
-            "roleStabilityIndex": 26,
+            "recentMlbTbPerPa": 0.4,
+            "careerPowerIndex": 53.64,
+            "contactRiskIndex": 42.57,
+            "roleStabilityIndex": 26.38,
             "repeatabilityLabel": "unproven MLB sample",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/683748?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
             "small-sample story"
           ],
           "primaryTag": "split edge",
-          "summary": ".250 AVG | .808 OPS | 3 H | 1 HR | 8g: .250 AVG | .808 OPS | 6 H | 2 HR | vs RHP: .273 AVG | .879 OPS | 1 HR | career 52 PA | .686 OPS | 2 HR | unproven MLB sample | power 56 | tiny 2026 sample | arsenal Sinker 39% / Changeup 22% / 4-Seam Fastball 21% | fit +0.8 | +3.5 matchup grade in a traffic-risk lane",
-          "matchupNote": "+3.54 vs Jack Kochanowicz"
+          "summary": ".231 AVG | .747 OPS | 3 H | 1 HR | 8g: .250 AVG | .808 OPS | 6 H | 2 HR | vs RHP: .273 AVG | .879 OPS | 1 HR | career 53 PA | .672 OPS | 2 HR | unproven MLB sample | power 54 | tiny 2026 sample | arsenal Sinker 39% / Changeup 22% / 4-Seam Fastball 21% | fit +0.8 | +3.5 matchup grade in a traffic-risk lane",
+          "matchupNote": "+3.46 vs Jack Kochanowicz"
         },
         {
           "playerId": 656775,
@@ -15386,7 +15385,7 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 49,
+            "gamesPlayed": 50,
             "hits": 32,
             "singles": 24,
             "doubles": 4,
@@ -15394,17 +15393,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 3,
             "walks": 14,
             "totalBases": 47,
-            "atBats": 169,
-            "plateAppearances": 191,
-            "avg": 0.189,
-            "obp": 0.262,
-            "slg": 0.278,
-            "ops": 0.54,
-            "hitRate": 0.1675,
-            "singlesRate": 0.1257,
-            "hrRate": 0.015700000000000002,
-            "walkRate": 0.0733,
-            "totalBasesRate": 0.24609999999999999
+            "atBats": 170,
+            "plateAppearances": 192,
+            "avg": 0.188,
+            "obp": 0.261,
+            "slg": 0.276,
+            "ops": 0.537,
+            "hitRate": 0.16670000000000001,
+            "singlesRate": 0.125,
+            "hrRate": 0.015600000000000001,
+            "walkRate": 0.0729,
+            "totalBasesRate": 0.24480000000000002
           },
           "recent": {
             "gamesPlayed": 12,
@@ -15450,17 +15449,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.2535
           },
           "metrics": {
-            "powerScore": 26.6,
-            "contactScore": 44.8,
-            "patienceScore": 49,
-            "formScore": 36.2,
-            "splitScore": 52.2,
+            "powerScore": 26.4,
+            "contactScore": 44.6,
+            "patienceScore": 48.8,
+            "formScore": 36.9,
+            "splitScore": 52.9,
             "varianceScore": 41.5,
             "pitchTypeFitScore": 34.1,
             "pitchTypeGrade": -1.63,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 33.9,
-            "matchupGrade": -3.12
+            "matchupScore": 34.4,
+            "matchupGrade": -3.04
           },
           "pitchType": {
             "fitScore": 34.1,
@@ -15527,8 +15526,8 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 9,
             "debutYear": 2018,
             "latestMlbYear": 2026,
-            "careerGames": 875,
-            "careerPlateAppearances": 3408,
+            "careerGames": 876,
+            "careerPlateAppearances": 3409,
             "careerHits": 740,
             "careerHomeRuns": 106,
             "careerTotalBases": 1250,
@@ -15539,24 +15538,24 @@ export const lineupBoardsByGameId = {
             "careerObp": 0.313,
             "careerSlg": 0.412,
             "careerOps": 0.725,
-            "careerTbPerPa": 0.36678403755868544,
-            "careerHrPerPa": 0.031103286384976527,
-            "careerKRate": 0.20246478873239437,
-            "careerBbRate": 0.08303990610328639,
+            "careerTbPerPa": 0.3666764447051921,
+            "careerHrPerPa": 0.031094162511000292,
+            "careerKRate": 0.20240539747726605,
+            "careerBbRate": 0.0830155470812555,
             "bestPowerYear": 2021,
             "bestPowerHomeRuns": 30,
             "bestPowerSlg": 0.5182724252491694,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 191,
+            "recentMlbPlateAppearances": 192,
             "recentMlbHomeRuns": 3,
-            "recentMlbTbPerPa": 0.24607329842931938,
-            "careerPowerIndex": 48.73,
-            "contactRiskIndex": 40.59,
+            "recentMlbTbPerPa": 0.24479166666666666,
+            "careerPowerIndex": 48.66,
+            "contactRiskIndex": 40.58,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/656775?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -15565,8 +15564,8 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".189 AVG | .540 OPS | 32 H | 3 HR | 12g: .190 AVG | .584 OPS | 8 H | 0 HR | vs RHP: .175 AVG | .536 OPS | 3 HR | career 3408 PA | .725 OPS | 106 HR | contact-stable profile | power 49 | 2026 sample ok | arsenal Sinker 39% / Changeup 22% / 4-Seam Fastball 21% | fit -1.6 | -3.1 matchup grade in a traffic-risk lane",
-          "matchupNote": "-3.12 vs Jack Kochanowicz"
+          "summary": ".188 AVG | .537 OPS | 32 H | 3 HR | 12g: .190 AVG | .584 OPS | 8 H | 0 HR | vs RHP: .175 AVG | .536 OPS | 3 HR | career 3409 PA | .725 OPS | 106 HR | contact-stable profile | power 49 | 2026 sample ok | arsenal Sinker 39% / Changeup 22% / 4-Seam Fastball 21% | fit -1.6 | -3.0 matchup grade in a traffic-risk lane",
+          "matchupNote": "-3.04 vs Jack Kochanowicz"
         },
         {
           "playerId": 676439,
@@ -15592,19 +15591,19 @@ export const lineupBoardsByGameId = {
             "doubles": 2,
             "triples": 0,
             "homeRuns": 1,
-            "walks": 7,
+            "walks": 8,
             "totalBases": 23,
             "atBats": 64,
-            "plateAppearances": 75,
+            "plateAppearances": 76,
             "avg": 0.281,
-            "obp": 0.356,
+            "obp": 0.365,
             "slg": 0.359,
-            "ops": 0.716,
-            "hitRate": 0.24,
-            "singlesRate": 0.2,
-            "hrRate": 0.013300000000000001,
-            "walkRate": 0.0933,
-            "totalBasesRate": 0.30670000000000003
+            "ops": 0.724,
+            "hitRate": 0.2368,
+            "singlesRate": 0.1974,
+            "hrRate": 0.0132,
+            "walkRate": 0.10529999999999999,
+            "totalBasesRate": 0.30260000000000004
           },
           "recent": {
             "gamesPlayed": 6,
@@ -15651,16 +15650,16 @@ export const lineupBoardsByGameId = {
           },
           "metrics": {
             "powerScore": 27.6,
-            "contactScore": 38.6,
-            "patienceScore": 55,
-            "formScore": 25,
-            "splitScore": 46.1,
-            "varianceScore": 73.4,
+            "contactScore": 39.1,
+            "patienceScore": 59.5,
+            "formScore": 24.3,
+            "splitScore": 45.2,
+            "varianceScore": 75.7,
             "pitchTypeFitScore": 39.6,
             "pitchTypeGrade": -1.08,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 29.4,
-            "matchupGrade": -3.85
+            "matchupScore": 29.1,
+            "matchupGrade": -3.87
           },
           "pitchType": {
             "fitScore": 39.6,
@@ -15728,35 +15727,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2024,
             "latestMlbYear": 2026,
             "careerGames": 75,
-            "careerPlateAppearances": 194,
+            "careerPlateAppearances": 195,
             "careerHits": 35,
             "careerHomeRuns": 1,
             "careerTotalBases": 45,
-            "careerWalks": 24,
+            "careerWalks": 25,
             "careerStrikeouts": 54,
-            "careerHitRate": 0.1804,
+            "careerHitRate": 0.1795,
             "careerAvg": 0.213,
-            "careerObp": 0.313,
+            "careerObp": 0.316,
             "careerSlg": 0.274,
-            "careerOps": 0.587,
-            "careerTbPerPa": 0.23195876288659795,
-            "careerHrPerPa": 0.005154639175257732,
-            "careerKRate": 0.27835051546391754,
-            "careerBbRate": 0.12371134020618557,
+            "careerOps": 0.59,
+            "careerTbPerPa": 0.23076923076923078,
+            "careerHrPerPa": 0.005128205128205128,
+            "careerKRate": 0.27692307692307694,
+            "careerBbRate": 0.1282051282051282,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 1,
             "bestPowerSlg": 0.359375,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 75,
+            "recentMlbPlateAppearances": 76,
             "recentMlbHomeRuns": 1,
-            "recentMlbTbPerPa": 0.30666666666666664,
-            "careerPowerIndex": 10.16,
-            "contactRiskIndex": 52.56,
-            "roleStabilityIndex": 65.25,
+            "recentMlbTbPerPa": 0.3026315789473684,
+            "careerPowerIndex": 9.95,
+            "contactRiskIndex": 52.02,
+            "roleStabilityIndex": 65.38,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/676439?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -15764,8 +15763,8 @@ export const lineupBoardsByGameId = {
             "statcast fade"
           ],
           "primaryTag": "split edge",
-          "summary": ".281 AVG | .716 OPS | 18 H | 1 HR | 6g: .300 AVG | .600 OPS | 6 H | 0 HR | vs RHP: .263 AVG | .699 OPS | 1 HR | career 194 PA | .587 OPS | 1 HR | baseline career profile | power 10 | shallow 2026 sample | arsenal Sinker 39% / Changeup 22% / 4-Seam Fastball 21% | fit -1.1 | -3.8 matchup grade in a traffic-risk lane",
-          "matchupNote": "-3.85 vs Jack Kochanowicz"
+          "summary": ".281 AVG | .724 OPS | 18 H | 1 HR | 6g: .300 AVG | .600 OPS | 6 H | 0 HR | vs RHP: .263 AVG | .699 OPS | 1 HR | career 195 PA | .590 OPS | 1 HR | baseline career profile | power 10 | shallow 2026 sample | arsenal Sinker 39% / Changeup 22% / 4-Seam Fastball 21% | fit -1.1 | -3.9 matchup grade in a traffic-risk lane",
+          "matchupNote": "-3.87 vs Jack Kochanowicz"
         },
         {
           "playerId": 670764,
@@ -15786,24 +15785,24 @@ export const lineupBoardsByGameId = {
           },
           "season": {
             "gamesPlayed": 43,
-            "hits": 25,
-            "singles": 17,
+            "hits": 26,
+            "singles": 18,
             "doubles": 6,
             "triples": 2,
             "homeRuns": 0,
             "walks": 18,
-            "totalBases": 35,
-            "atBats": 127,
-            "plateAppearances": 151,
-            "avg": 0.197,
-            "obp": 0.301,
-            "slg": 0.276,
-            "ops": 0.577,
-            "hitRate": 0.1656,
-            "singlesRate": 0.11259999999999999,
+            "totalBases": 36,
+            "atBats": 128,
+            "plateAppearances": 152,
+            "avg": 0.203,
+            "obp": 0.306,
+            "slg": 0.281,
+            "ops": 0.587,
+            "hitRate": 0.1711,
+            "singlesRate": 0.1184,
             "hrRate": 0,
-            "walkRate": 0.1192,
-            "totalBasesRate": 0.2318
+            "walkRate": 0.1184,
+            "totalBasesRate": 0.2368
           },
           "recent": {
             "gamesPlayed": 8,
@@ -15850,10 +15849,10 @@ export const lineupBoardsByGameId = {
           },
           "metrics": {
             "powerScore": 18,
-            "contactScore": 36.4,
-            "patienceScore": 66.6,
+            "contactScore": 37.4,
+            "patienceScore": 66.1,
             "formScore": 18,
-            "splitScore": 61.5,
+            "splitScore": 59.1,
             "varianceScore": 92,
             "pitchTypeFitScore": 19.3,
             "pitchTypeGrade": -4.06,
@@ -15927,35 +15926,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2021,
             "latestMlbYear": 2026,
             "careerGames": 523,
-            "careerPlateAppearances": 1711,
-            "careerHits": 290,
+            "careerPlateAppearances": 1712,
+            "careerHits": 291,
             "careerHomeRuns": 22,
-            "careerTotalBases": 441,
+            "careerTotalBases": 442,
             "careerWalks": 194,
             "careerStrikeouts": 436,
-            "careerHitRate": 0.16949999999999998,
+            "careerHitRate": 0.17,
             "careerAvg": 0.195,
-            "careerObp": 0.287,
-            "careerSlg": 0.296,
-            "careerOps": 0.583,
-            "careerTbPerPa": 0.2577440093512566,
-            "careerHrPerPa": 0.012857977790765635,
-            "careerKRate": 0.2548217416715371,
-            "careerBbRate": 0.11338398597311514,
+            "careerObp": 0.288,
+            "careerSlg": 0.297,
+            "careerOps": 0.585,
+            "careerTbPerPa": 0.25817757009345793,
+            "careerHrPerPa": 0.012850467289719626,
+            "careerKRate": 0.2546728971962617,
+            "careerBbRate": 0.1133177570093458,
             "bestPowerYear": 2023,
             "bestPowerHomeRuns": 8,
             "bestPowerSlg": 0.3333333333333333,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 151,
+            "recentMlbPlateAppearances": 152,
             "recentMlbHomeRuns": 0,
-            "recentMlbTbPerPa": 0.23178807947019867,
-            "careerPowerIndex": 16.58,
-            "contactRiskIndex": 48.71,
+            "recentMlbTbPerPa": 0.23684210526315788,
+            "careerPowerIndex": 16.93,
+            "contactRiskIndex": 48.69,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/670764?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -15964,7 +15963,7 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".197 AVG | .577 OPS | 25 H | 0 HR | 8g: .077 AVG | .220 OPS | 2 H | 0 HR | vs RHP: .215 AVG | .643 OPS | 0 HR | career 1711 PA | .583 OPS | 22 HR | baseline career profile | power 17 | 2026 sample ok | arsenal Sinker 39% / Changeup 22% / 4-Seam Fastball 21% | fit -4.1 | -8.0 matchup grade in a traffic-risk lane",
+          "summary": ".203 AVG | .587 OPS | 26 H | 0 HR | 8g: .077 AVG | .220 OPS | 2 H | 0 HR | vs RHP: .215 AVG | .643 OPS | 0 HR | career 1712 PA | .585 OPS | 22 HR | baseline career profile | power 17 | 2026 sample ok | arsenal Sinker 39% / Changeup 22% / 4-Seam Fastball 21% | fit -4.1 | -8.0 matchup grade in a traffic-risk lane",
           "matchupNote": "-8.00 vs Jack Kochanowicz"
         }
       ],
@@ -15988,13 +15987,13 @@ export const lineupBoardsByGameId = {
         "topThirdArsenalCount": 2,
         "heaterCount": 2,
         "suppressorCount": 2,
-        "platoonPressureIndex": 75.9,
+        "platoonPressureIndex": 75.8,
         "pitchTypePressureIndex": 72.1,
         "bullpenPitchTypePressureIndex": 71.8,
         "starterPressureIndex": 84.9,
         "overallPressureIndex": 88.4,
         "topThirdScore": 72.7,
-        "depthScore": 27.1,
+        "depthScore": 27.2,
         "bullpenOverperformHitters": [
           {
             "name": "Yandy Díaz",
@@ -16053,15 +16052,15 @@ export const lineupBoardsByGameId = {
           },
           {
             "name": "Hunter Feduccia",
-            "tag": "split edge | -3.85 vs Jack Kochanowicz"
+            "tag": "split edge | -3.87 vs Jack Kochanowicz"
           }
         ],
         "underperformNote": "Taylor Walls and Hunter Feduccia carry the softer form or split fit into a traffic-risk lane.",
         "overview": "Rays can lean on Yandy Díaz, Jonathan Aranda, Junior Caminero to drive early pressure against Jack Kochanowicz.",
         "bullpenOverview": "Brent Suter is the first bridge look, and this lineup grades +1.0 against that likely first-up arsenal.",
         "topThirdScore": 72.7,
-        "middleScore": 66.6,
-        "depthScore": 27.1,
+        "middleScore": 66.7,
+        "depthScore": 27.2,
         "bullpenPitchTypeSummary": {
           "pressureIndex": 71.8,
           "averageFitScore": 58.8,
@@ -16159,7 +16158,7 @@ export const lineupBoardsByGameId = {
   "braves-reds": {
     "gameId": "braves-reds",
     "title": "Braves @ Reds",
-    "snapshot": "2026-05-31T18:00:03.946Z",
+    "snapshot": "2026-05-31T18:17:29.714Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -16174,8 +16173,8 @@ export const lineupBoardsByGameId = {
       "label": "73°F | Wind 3 mph L-R | 0% precip"
     },
     "marketWeatherContext": {
-      "line": "ATL -205",
-      "total": "9.5 Runs",
+      "line": "ATL -135",
+      "total": "8.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
     "away": {
@@ -16231,17 +16230,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 7,
             "walks": 31,
             "totalBases": 74,
-            "atBats": 168,
-            "plateAppearances": 204,
-            "avg": 0.25,
-            "obp": 0.373,
-            "slg": 0.44,
-            "ops": 0.813,
-            "hitRate": 0.2059,
-            "singlesRate": 0.1225,
-            "hrRate": 0.034300000000000004,
-            "walkRate": 0.152,
-            "totalBasesRate": 0.3627
+            "atBats": 169,
+            "plateAppearances": 205,
+            "avg": 0.249,
+            "obp": 0.371,
+            "slg": 0.438,
+            "ops": 0.809,
+            "hitRate": 0.20489999999999997,
+            "singlesRate": 0.122,
+            "hrRate": 0.0341,
+            "walkRate": 0.1512,
+            "totalBasesRate": 0.361
           },
           "recent": {
             "gamesPlayed": 12,
@@ -16287,9 +16286,9 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.2029
           },
           "metrics": {
-            "powerScore": 45.7,
-            "contactScore": 46.1,
-            "patienceScore": 77.9,
+            "powerScore": 45.4,
+            "contactScore": 45.5,
+            "patienceScore": 77.6,
             "formScore": 92,
             "splitScore": 18,
             "varianceScore": 92,
@@ -16365,35 +16364,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2018,
             "latestMlbYear": 2026,
             "careerGames": 863,
-            "careerPlateAppearances": 3870,
+            "careerPlateAppearances": 3871,
             "careerHits": 955,
             "careerHomeRuns": 193,
             "careerTotalBases": 1728,
             "careerWalks": 470,
-            "careerStrikeouts": 864,
-            "careerHitRate": 0.2468,
+            "careerStrikeouts": 865,
+            "careerHitRate": 0.24670000000000003,
             "careerAvg": 0.287,
             "careerObp": 0.383,
             "careerSlg": 0.52,
             "careerOps": 0.903,
-            "careerTbPerPa": 0.44651162790697674,
-            "careerHrPerPa": 0.04987080103359173,
-            "careerKRate": 0.22325581395348837,
-            "careerBbRate": 0.12144702842377261,
+            "careerTbPerPa": 0.44639628003099974,
+            "careerHrPerPa": 0.04985791785068458,
+            "careerKRate": 0.22345647119607337,
+            "careerBbRate": 0.12141565486954276,
             "bestPowerYear": 2020,
             "bestPowerHomeRuns": 14,
             "bestPowerSlg": 0.58125,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 204,
+            "recentMlbPlateAppearances": 205,
             "recentMlbHomeRuns": 7,
-            "recentMlbTbPerPa": 0.3627450980392157,
-            "careerPowerIndex": 84.91,
-            "contactRiskIndex": 42.23,
+            "recentMlbTbPerPa": 0.36097560975609755,
+            "careerPowerIndex": 84.82,
+            "contactRiskIndex": 42.27,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/660670?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -16404,7 +16403,7 @@ export const lineupBoardsByGameId = {
             "career power"
           ],
           "primaryTag": "carry",
-          "summary": ".250 AVG | .813 OPS | 42 H | 7 HR | 12g: .238 AVG | 1.258 OPS | 10 H | 8 HR | vs LHP: .158 AVG | .550 OPS | 0 HR | career 3870 PA | .903 OPS | 193 HR | repeatable career power | power 85 | 2026 sample ok | arsenal Curveball 26% / Changeup 26% / 4-Seam Fastball 25% | fit +3.9 | +10.0 matchup grade in a traffic-risk lane",
+          "summary": ".249 AVG | .809 OPS | 42 H | 7 HR | 12g: .238 AVG | 1.258 OPS | 10 H | 8 HR | vs LHP: .158 AVG | .550 OPS | 0 HR | career 3871 PA | .903 OPS | 193 HR | repeatable career power | power 85 | 2026 sample ok | arsenal Curveball 26% / Changeup 26% / 4-Seam Fastball 25% | fit +3.9 | +10.0 matchup grade in a traffic-risk lane",
           "matchupNote": "+10.00 vs Nick Lodolo"
         },
         {
@@ -16426,24 +16425,24 @@ export const lineupBoardsByGameId = {
           },
           "season": {
             "gamesPlayed": 57,
-            "hits": 61,
-            "singles": 42,
+            "hits": 62,
+            "singles": 43,
             "doubles": 6,
             "triples": 0,
             "homeRuns": 13,
             "walks": 9,
-            "totalBases": 106,
-            "atBats": 202,
-            "plateAppearances": 213,
-            "avg": 0.302,
-            "obp": 0.333,
-            "slg": 0.525,
-            "ops": 0.858,
-            "hitRate": 0.2864,
-            "singlesRate": 0.1972,
-            "hrRate": 0.061,
-            "walkRate": 0.042300000000000004,
-            "totalBasesRate": 0.49770000000000003
+            "totalBases": 107,
+            "atBats": 203,
+            "plateAppearances": 214,
+            "avg": 0.305,
+            "obp": 0.336,
+            "slg": 0.527,
+            "ops": 0.864,
+            "hitRate": 0.2897,
+            "singlesRate": 0.2009,
+            "hrRate": 0.060700000000000004,
+            "walkRate": 0.0421,
+            "totalBasesRate": 0.5
           },
           "recent": {
             "gamesPlayed": 12,
@@ -16489,12 +16488,12 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.4459
           },
           "metrics": {
-            "powerScore": 83.1,
-            "contactScore": 64.6,
-            "patienceScore": 32.9,
+            "powerScore": 83.3,
+            "contactScore": 65.2,
+            "patienceScore": 32.8,
             "formScore": 92,
-            "splitScore": 28,
-            "varianceScore": 86,
+            "splitScore": 27,
+            "varianceScore": 85.6,
             "pitchTypeFitScore": 77.9,
             "pitchTypeGrade": 5.09,
             "pitchTypeCoveragePct": 100,
@@ -16567,35 +16566,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2022,
             "latestMlbYear": 2026,
             "careerGames": 579,
-            "careerPlateAppearances": 2304,
-            "careerHits": 600,
+            "careerPlateAppearances": 2305,
+            "careerHits": 601,
             "careerHomeRuns": 86,
-            "careerTotalBases": 994,
+            "careerTotalBases": 995,
             "careerWalks": 94,
             "careerStrikeouts": 471,
-            "careerHitRate": 0.26039999999999996,
-            "careerAvg": 0.276,
+            "careerHitRate": 0.2607,
+            "careerAvg": 0.277,
             "careerObp": 0.31,
             "careerSlg": 0.458,
             "careerOps": 0.768,
-            "careerTbPerPa": 0.4314236111111111,
-            "careerHrPerPa": 0.03732638888888889,
-            "careerKRate": 0.20442708333333334,
-            "careerBbRate": 0.04079861111111111,
+            "careerTbPerPa": 0.4316702819956616,
+            "careerHrPerPa": 0.03731019522776573,
+            "careerKRate": 0.20433839479392624,
+            "careerBbRate": 0.040780911062906725,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 13,
-            "bestPowerSlg": 0.5247524752475248,
+            "bestPowerSlg": 0.5270935960591133,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 213,
+            "recentMlbPlateAppearances": 214,
             "recentMlbHomeRuns": 13,
-            "recentMlbTbPerPa": 0.49765258215962443,
-            "careerPowerIndex": 71.63,
-            "contactRiskIndex": 43.49,
+            "recentMlbTbPerPa": 0.5,
+            "careerPowerIndex": 71.72,
+            "contactRiskIndex": 43.48,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/671739?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -16606,7 +16605,7 @@ export const lineupBoardsByGameId = {
             "career power"
           ],
           "primaryTag": "carry",
-          "summary": ".302 AVG | .858 OPS | 61 H | 13 HR | 12g: .360 AVG | 1.047 OPS | 18 H | 4 HR | vs LHP: .271 AVG | .782 OPS | 4 HR | career 2304 PA | .768 OPS | 86 HR | repeatable career power | power 72 | 2026 sample ok | arsenal Curveball 26% / Changeup 26% / 4-Seam Fastball 25% | fit +5.1 | +10.0 matchup grade in a traffic-risk lane",
+          "summary": ".305 AVG | .864 OPS | 62 H | 13 HR | 12g: .360 AVG | 1.047 OPS | 18 H | 4 HR | vs LHP: .271 AVG | .782 OPS | 4 HR | career 2305 PA | .768 OPS | 86 HR | repeatable career power | power 72 | 2026 sample ok | arsenal Curveball 26% / Changeup 26% / 4-Seam Fastball 25% | fit +5.1 | +10.0 matchup grade in a traffic-risk lane",
           "matchupNote": "+10.00 vs Nick Lodolo"
         },
         {
@@ -16635,17 +16634,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 16,
             "walks": 28,
             "totalBases": 127,
-            "atBats": 230,
-            "plateAppearances": 261,
-            "avg": 0.265,
-            "obp": 0.345,
-            "slg": 0.552,
-            "ops": 0.897,
-            "hitRate": 0.23370000000000002,
-            "singlesRate": 0.10339999999999999,
-            "hrRate": 0.0613,
-            "walkRate": 0.1073,
-            "totalBasesRate": 0.4866
+            "atBats": 231,
+            "plateAppearances": 262,
+            "avg": 0.264,
+            "obp": 0.344,
+            "slg": 0.55,
+            "ops": 0.893,
+            "hitRate": 0.2328,
+            "singlesRate": 0.10310000000000001,
+            "hrRate": 0.0611,
+            "walkRate": 0.1069,
+            "totalBasesRate": 0.48469999999999996
           },
           "recent": {
             "gamesPlayed": 12,
@@ -16691,12 +16690,12 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.4907
           },
           "metrics": {
-            "powerScore": 89.8,
-            "contactScore": 54.7,
-            "patienceScore": 59.3,
-            "formScore": 81.4,
-            "splitScore": 39.6,
-            "varianceScore": 74.5,
+            "powerScore": 89.5,
+            "contactScore": 54.8,
+            "patienceScore": 59.2,
+            "formScore": 82.4,
+            "splitScore": 40.5,
+            "varianceScore": 74.3,
             "pitchTypeFitScore": 66.8,
             "pitchTypeGrade": 1.8,
             "pitchTypeCoveragePct": 100,
@@ -16769,7 +16768,7 @@ export const lineupBoardsByGameId = {
             "debutYear": 2016,
             "latestMlbYear": 2026,
             "careerGames": 1283,
-            "careerPlateAppearances": 5458,
+            "careerPlateAppearances": 5459,
             "careerHits": 1216,
             "careerHomeRuns": 304,
             "careerTotalBases": 2410,
@@ -16780,24 +16779,24 @@ export const lineupBoardsByGameId = {
             "careerObp": 0.351,
             "careerSlg": 0.51,
             "careerOps": 0.861,
-            "careerTbPerPa": 0.44155368266764383,
-            "careerHrPerPa": 0.055698057896665445,
-            "careerKRate": 0.23799926713081715,
-            "careerBbRate": 0.11744228655185049,
+            "careerTbPerPa": 0.4414727972156072,
+            "careerHrPerPa": 0.055687854918483236,
+            "careerKRate": 0.23795566953654515,
+            "careerBbRate": 0.11742077303535446,
             "bestPowerYear": 2017,
             "bestPowerHomeRuns": 24,
             "bestPowerSlg": 0.6507936507936508,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 261,
+            "recentMlbPlateAppearances": 262,
             "recentMlbHomeRuns": 16,
-            "recentMlbTbPerPa": 0.48659003831417624,
-            "careerPowerIndex": 94.42,
+            "recentMlbTbPerPa": 0.4847328244274809,
+            "careerPowerIndex": 94.33,
             "contactRiskIndex": 45.27,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/621566?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -16807,7 +16806,7 @@ export const lineupBoardsByGameId = {
             "career power"
           ],
           "primaryTag": "carry",
-          "summary": ".265 AVG | .897 OPS | 61 H | 16 HR | 12g: .292 AVG | .995 OPS | 14 H | 4 HR | vs LHP: .258 AVG | .870 OPS | 6 HR | career 5458 PA | .861 OPS | 304 HR | repeatable career power | power 94 | 2026 sample ok | arsenal Curveball 26% / Changeup 26% / 4-Seam Fastball 25% | fit +1.8 | +10.0 matchup grade in a traffic-risk lane",
+          "summary": ".264 AVG | .893 OPS | 61 H | 16 HR | 12g: .292 AVG | .995 OPS | 14 H | 4 HR | vs LHP: .258 AVG | .870 OPS | 6 HR | career 5459 PA | .861 OPS | 304 HR | repeatable career power | power 94 | 2026 sample ok | arsenal Curveball 26% / Changeup 26% / 4-Seam Fastball 25% | fit +1.8 | +10.0 matchup grade in a traffic-risk lane",
           "matchupNote": "+10.00 vs Nick Lodolo"
         },
         {
@@ -16998,7 +16997,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/645277?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -17200,7 +17199,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/643289?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -17229,7 +17228,7 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 59,
+            "gamesPlayed": 60,
             "hits": 46,
             "singles": 29,
             "doubles": 8,
@@ -17237,17 +17236,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 8,
             "walks": 19,
             "totalBases": 80,
-            "atBats": 217,
-            "plateAppearances": 242,
-            "avg": 0.212,
-            "obp": 0.289,
-            "slg": 0.369,
-            "ops": 0.658,
-            "hitRate": 0.19010000000000002,
-            "singlesRate": 0.1198,
-            "hrRate": 0.0331,
-            "walkRate": 0.0785,
-            "totalBasesRate": 0.3306
+            "atBats": 218,
+            "plateAppearances": 243,
+            "avg": 0.211,
+            "obp": 0.288,
+            "slg": 0.367,
+            "ops": 0.655,
+            "hitRate": 0.1893,
+            "singlesRate": 0.1193,
+            "hrRate": 0.0329,
+            "walkRate": 0.0782,
+            "totalBasesRate": 0.3292
           },
           "recent": {
             "gamesPlayed": 12,
@@ -17293,17 +17292,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.3034
           },
           "metrics": {
-            "powerScore": 41.2,
-            "contactScore": 37.1,
-            "patienceScore": 50.8,
+            "powerScore": 41,
+            "contactScore": 37,
+            "patienceScore": 50.7,
             "formScore": 18,
-            "splitScore": 32,
-            "varianceScore": 65.5,
+            "splitScore": 32.7,
+            "varianceScore": 64.4,
             "pitchTypeFitScore": 46.3,
             "pitchTypeGrade": 0.91,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 38,
-            "matchupGrade": -1.42
+            "matchupScore": 38.4,
+            "matchupGrade": -1.35
           },
           "pitchType": {
             "fitScore": 46.3,
@@ -17370,36 +17369,36 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 8,
             "debutYear": 2019,
             "latestMlbYear": 2026,
-            "careerGames": 880,
-            "careerPlateAppearances": 3731,
+            "careerGames": 881,
+            "careerPlateAppearances": 3732,
             "careerHits": 896,
             "careerHomeRuns": 177,
             "careerTotalBases": 1627,
             "careerWalks": 283,
             "careerStrikeouts": 983,
-            "careerHitRate": 0.2402,
+            "careerHitRate": 0.2401,
             "careerAvg": 0.267,
             "careerObp": 0.331,
             "careerSlg": 0.484,
             "careerOps": 0.815,
-            "careerTbPerPa": 0.4360761190029483,
-            "careerHrPerPa": 0.04744036451353525,
-            "careerKRate": 0.26346823907799516,
-            "careerBbRate": 0.07585097829000267,
+            "careerTbPerPa": 0.4359592711682744,
+            "careerHrPerPa": 0.04742765273311897,
+            "careerKRate": 0.2633976420150054,
+            "careerBbRate": 0.07583065380493033,
             "bestPowerYear": 2019,
             "bestPowerHomeRuns": 18,
             "bestPowerSlg": 0.4708029197080292,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 242,
+            "recentMlbPlateAppearances": 243,
             "recentMlbHomeRuns": 8,
-            "recentMlbTbPerPa": 0.3305785123966942,
-            "careerPowerIndex": 76.59,
-            "contactRiskIndex": 52.61,
+            "recentMlbTbPerPa": 0.3292181069958848,
+            "careerPowerIndex": 76.52,
+            "contactRiskIndex": 52.6,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/663586?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -17408,8 +17407,8 @@ export const lineupBoardsByGameId = {
             "career power"
           ],
           "primaryTag": "split edge",
-          "summary": ".212 AVG | .658 OPS | 46 H | 8 HR | 12g: .158 AVG | .568 OPS | 6 H | 0 HR | vs LHP: .237 AVG | .652 OPS | 1 HR | career 3731 PA | .815 OPS | 177 HR | repeatable career power | power 77 | 2026 sample ok | arsenal Curveball 26% / Changeup 26% / 4-Seam Fastball 25% | fit +0.9 | -1.4 matchup grade in a traffic-risk lane",
-          "matchupNote": "-1.42 vs Nick Lodolo"
+          "summary": ".211 AVG | .655 OPS | 46 H | 8 HR | 12g: .158 AVG | .568 OPS | 6 H | 0 HR | vs LHP: .237 AVG | .652 OPS | 1 HR | career 3732 PA | .815 OPS | 177 HR | repeatable career power | power 77 | 2026 sample ok | arsenal Curveball 26% / Changeup 26% / 4-Seam Fastball 25% | fit +0.9 | -1.3 matchup grade in a traffic-risk lane",
+          "matchupNote": "-1.35 vs Nick Lodolo"
         },
         {
           "playerId": 622761,
@@ -17429,7 +17428,7 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 36,
+            "gamesPlayed": 37,
             "hits": 24,
             "singles": 17,
             "doubles": 4,
@@ -17437,17 +17436,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 3,
             "walks": 5,
             "totalBases": 37,
-            "atBats": 76,
-            "plateAppearances": 81,
-            "avg": 0.316,
-            "obp": 0.358,
-            "slg": 0.487,
-            "ops": 0.845,
-            "hitRate": 0.2963,
-            "singlesRate": 0.20989999999999998,
-            "hrRate": 0.037000000000000005,
-            "walkRate": 0.0617,
-            "totalBasesRate": 0.4568
+            "atBats": 77,
+            "plateAppearances": 82,
+            "avg": 0.312,
+            "obp": 0.354,
+            "slg": 0.481,
+            "ops": 0.834,
+            "hitRate": 0.2927,
+            "singlesRate": 0.2073,
+            "hrRate": 0.0366,
+            "walkRate": 0.061,
+            "totalBasesRate": 0.4512
           },
           "recent": {
             "gamesPlayed": 10,
@@ -17493,17 +17492,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.4194
           },
           "metrics": {
-            "powerScore": 58.9,
-            "contactScore": 49.4,
-            "patienceScore": 39.8,
+            "powerScore": 58.1,
+            "contactScore": 49.2,
+            "patienceScore": 39.6,
             "formScore": 92,
-            "splitScore": 39,
-            "varianceScore": 78.2,
+            "splitScore": 41.5,
+            "varianceScore": 77.9,
             "pitchTypeFitScore": 53.3,
             "pitchTypeGrade": 1.25,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 84.9,
-            "matchupGrade": 7.3
+            "matchupScore": 86.4,
+            "matchupGrade": 7.6
           },
           "pitchType": {
             "fitScore": 53.3,
@@ -17570,36 +17569,36 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 7,
             "debutYear": 2020,
             "latestMlbYear": 2026,
-            "careerGames": 524,
-            "careerPlateAppearances": 1492,
+            "careerGames": 525,
+            "careerPlateAppearances": 1493,
             "careerHits": 312,
             "careerHomeRuns": 33,
             "careerTotalBases": 510,
             "careerWalks": 78,
             "careerStrikeouts": 396,
-            "careerHitRate": 0.2091,
+            "careerHitRate": 0.209,
             "careerAvg": 0.226,
             "careerObp": 0.271,
             "careerSlg": 0.37,
             "careerOps": 0.641,
-            "careerTbPerPa": 0.3418230563002681,
-            "careerHrPerPa": 0.022117962466487937,
-            "careerKRate": 0.26541554959785524,
-            "careerBbRate": 0.05227882037533512,
+            "careerTbPerPa": 0.3415941058271936,
+            "careerHrPerPa": 0.022103148024112524,
+            "careerKRate": 0.2652377762893503,
+            "careerBbRate": 0.052243804420629605,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 3,
-            "bestPowerSlg": 0.4868421052631579,
+            "bestPowerSlg": 0.4805194805194805,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 81,
+            "recentMlbPlateAppearances": 82,
             "recentMlbHomeRuns": 3,
-            "recentMlbTbPerPa": 0.4567901234567901,
-            "careerPowerIndex": 44.66,
-            "contactRiskIndex": 54.39,
+            "recentMlbTbPerPa": 0.45121951219512196,
+            "careerPowerIndex": 44.4,
+            "contactRiskIndex": 54.36,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/622761?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -17608,8 +17607,8 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "carry",
-          "summary": ".316 AVG | .845 OPS | 24 H | 3 HR | 10g: .353 AVG | .977 OPS | 12 H | 2 HR | vs LHP: .310 AVG | .803 OPS | 1 HR | career 1492 PA | .641 OPS | 33 HR | baseline career profile | power 45 | 2026 sample ok | arsenal Curveball 26% / Changeup 26% / 4-Seam Fastball 25% | fit +1.2 | +7.3 matchup grade in a traffic-risk lane",
-          "matchupNote": "+7.30 vs Nick Lodolo"
+          "summary": ".312 AVG | .834 OPS | 24 H | 3 HR | 10g: .353 AVG | .977 OPS | 12 H | 2 HR | vs LHP: .310 AVG | .803 OPS | 1 HR | career 1493 PA | .641 OPS | 33 HR | baseline career profile | power 44 | 2026 sample ok | arsenal Curveball 26% / Changeup 26% / 4-Seam Fastball 25% | fit +1.2 | +7.6 matchup grade in a traffic-risk lane",
+          "matchupNote": "+7.60 vs Nick Lodolo"
         },
         {
           "playerId": 673490,
@@ -17629,7 +17628,7 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 12,
+            "gamesPlayed": 13,
             "hits": 4,
             "singles": 4,
             "doubles": 0,
@@ -17637,17 +17636,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 0,
             "walks": 5,
             "totalBases": 4,
-            "atBats": 42,
-            "plateAppearances": 47,
-            "avg": 0.095,
-            "obp": 0.191,
-            "slg": 0.095,
-            "ops": 0.287,
-            "hitRate": 0.0851,
-            "singlesRate": 0.0851,
+            "atBats": 43,
+            "plateAppearances": 48,
+            "avg": 0.093,
+            "obp": 0.188,
+            "slg": 0.093,
+            "ops": 0.281,
+            "hitRate": 0.0833,
+            "singlesRate": 0.0833,
             "hrRate": 0,
-            "walkRate": 0.10640000000000001,
-            "totalBasesRate": 0.0851
+            "walkRate": 0.1042,
+            "totalBasesRate": 0.0833
           },
           "recent": {
             "gamesPlayed": 6,
@@ -17695,9 +17694,9 @@ export const lineupBoardsByGameId = {
           "metrics": {
             "powerScore": 18,
             "contactScore": 18,
-            "patienceScore": 63.2,
+            "patienceScore": 62.3,
             "formScore": 18,
-            "splitScore": 32.4,
+            "splitScore": 33.5,
             "varianceScore": 92,
             "pitchTypeFitScore": 18,
             "pitchTypeGrade": -3.25,
@@ -17770,36 +17769,36 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 6,
             "debutYear": 2021,
             "latestMlbYear": 2026,
-            "careerGames": 600,
-            "careerPlateAppearances": 2214,
+            "careerGames": 601,
+            "careerPlateAppearances": 2215,
             "careerHits": 462,
             "careerHomeRuns": 52,
             "careerTotalBases": 718,
             "careerWalks": 227,
             "careerStrikeouts": 424,
-            "careerHitRate": 0.2087,
+            "careerHitRate": 0.2086,
             "careerAvg": 0.238,
             "careerObp": 0.321,
             "careerSlg": 0.37,
             "careerOps": 0.691,
-            "careerTbPerPa": 0.32429990966576333,
-            "careerHrPerPa": 0.023486901535682024,
-            "careerKRate": 0.1915085817524842,
-            "careerBbRate": 0.1025293586269196,
+            "careerTbPerPa": 0.3241534988713318,
+            "careerHrPerPa": 0.02347629796839729,
+            "careerKRate": 0.19142212189616253,
+            "careerBbRate": 0.10248306997742664,
             "bestPowerYear": 2023,
             "bestPowerHomeRuns": 17,
             "bestPowerSlg": 0.39776951672862454,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 47,
+            "recentMlbPlateAppearances": 48,
             "recentMlbHomeRuns": 0,
-            "recentMlbTbPerPa": 0.0851063829787234,
-            "careerPowerIndex": 39.93,
-            "contactRiskIndex": 37.33,
-            "roleStabilityIndex": 94.75,
+            "recentMlbTbPerPa": 0.08333333333333333,
+            "careerPowerIndex": 39.92,
+            "contactRiskIndex": 37.32,
+            "roleStabilityIndex": 95,
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/673490?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -17808,7 +17807,7 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".095 AVG | .287 OPS | 4 H | 0 HR | 6g: .000 AVG | .083 OPS | 0 H | 0 HR | vs LHP: .048 AVG | .214 OPS | 0 HR | career 2214 PA | .691 OPS | 52 HR | contact-stable profile | power 40 | shallow 2026 sample | arsenal Curveball 26% / Changeup 26% / 4-Seam Fastball 25% | fit -3.2 | -8.0 matchup grade in a traffic-risk lane",
+          "summary": ".093 AVG | .281 OPS | 4 H | 0 HR | 6g: .000 AVG | .083 OPS | 0 H | 0 HR | vs LHP: .048 AVG | .214 OPS | 0 HR | career 2215 PA | .691 OPS | 52 HR | contact-stable profile | power 40 | shallow 2026 sample | arsenal Curveball 26% / Changeup 26% / 4-Seam Fastball 25% | fit -3.2 | -8.0 matchup grade in a traffic-risk lane",
           "matchupNote": "-8.00 vs Nick Lodolo"
         },
         {
@@ -17837,17 +17836,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 0,
             "walks": 0,
             "totalBases": 6,
-            "atBats": 21,
-            "plateAppearances": 23,
-            "avg": 0.238,
-            "obp": 0.227,
-            "slg": 0.286,
-            "ops": 0.513,
-            "hitRate": 0.21739999999999998,
-            "singlesRate": 0.1739,
+            "atBats": 22,
+            "plateAppearances": 24,
+            "avg": 0.227,
+            "obp": 0.217,
+            "slg": 0.273,
+            "ops": 0.49,
+            "hitRate": 0.20829999999999999,
+            "singlesRate": 0.16670000000000001,
             "hrRate": 0,
             "walkRate": 0,
-            "totalBasesRate": 0.2609
+            "totalBasesRate": 0.25
           },
           "recent": {
             "gamesPlayed": 12,
@@ -17894,11 +17893,11 @@ export const lineupBoardsByGameId = {
           },
           "metrics": {
             "powerScore": 18,
-            "contactScore": 35.4,
+            "contactScore": 35.2,
             "patienceScore": 18,
             "formScore": 18,
             "splitScore": 50,
-            "varianceScore": 92,
+            "varianceScore": 89.6,
             "pitchTypeFitScore": 37.2,
             "pitchTypeGrade": -0.75,
             "pitchTypeCoveragePct": 100,
@@ -17971,44 +17970,43 @@ export const lineupBoardsByGameId = {
             "debutYear": 2020,
             "latestMlbYear": 2026,
             "careerGames": 78,
-            "careerPlateAppearances": 201,
+            "careerPlateAppearances": 202,
             "careerHits": 43,
             "careerHomeRuns": 6,
             "careerTotalBases": 73,
             "careerWalks": 3,
             "careerStrikeouts": 60,
-            "careerHitRate": 0.2139,
-            "careerAvg": 0.223,
-            "careerObp": 0.23,
-            "careerSlg": 0.378,
-            "careerOps": 0.608,
-            "careerTbPerPa": 0.36318407960199006,
-            "careerHrPerPa": 0.029850746268656716,
-            "careerKRate": 0.29850746268656714,
-            "careerBbRate": 0.014925373134328358,
+            "careerHitRate": 0.21289999999999998,
+            "careerAvg": 0.222,
+            "careerObp": 0.229,
+            "careerSlg": 0.376,
+            "careerOps": 0.605,
+            "careerTbPerPa": 0.3613861386138614,
+            "careerHrPerPa": 0.0297029702970297,
+            "careerKRate": 0.297029702970297,
+            "careerBbRate": 0.01485148514851485,
             "bestPowerYear": 2020,
             "bestPowerHomeRuns": 4,
             "bestPowerSlg": 0.4262295081967213,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 23,
+            "recentMlbPlateAppearances": 24,
             "recentMlbHomeRuns": 0,
-            "recentMlbTbPerPa": 0.2608695652173913,
-            "careerPowerIndex": 48.45,
-            "contactRiskIndex": 62.92,
-            "roleStabilityIndex": 58.88,
+            "recentMlbTbPerPa": 0.25,
+            "careerPowerIndex": 47.98,
+            "contactRiskIndex": 62.64,
+            "roleStabilityIndex": 59.25,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/644433?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
             "cold",
-            "statcast up",
-            "small-sample story"
+            "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".238 AVG | .513 OPS | 5 H | 0 HR | 12g: .091 AVG | .265 OPS | 2 H | 0 HR | vs LHP: .286 AVG | .714 OPS | 0 HR | career 201 PA | .608 OPS | 6 HR | baseline career profile | power 48 | tiny 2026 sample | arsenal Curveball 26% / Changeup 26% / 4-Seam Fastball 25% | fit -0.7 | -8.0 matchup grade in a traffic-risk lane",
+          "summary": ".227 AVG | .490 OPS | 5 H | 0 HR | 12g: .091 AVG | .265 OPS | 2 H | 0 HR | vs LHP: .286 AVG | .714 OPS | 0 HR | career 202 PA | .605 OPS | 6 HR | baseline career profile | power 48 | shallow 2026 sample | arsenal Curveball 26% / Changeup 26% / 4-Seam Fastball 25% | fit -0.7 | -8.0 matchup grade in a traffic-risk lane",
           "matchupNote": "-8.00 vs Nick Lodolo"
         }
       ],
@@ -18018,7 +18016,7 @@ export const lineupBoardsByGameId = {
         "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
       },
       "aggregate": {
-        "averageMatchupGrade": 2.31,
+        "averageMatchupGrade": 2.35,
         "trackedBatters": 9,
         "starterThreatCount": 5,
         "contactCount": 3,
@@ -18032,13 +18030,13 @@ export const lineupBoardsByGameId = {
         "topThirdArsenalCount": 3,
         "heaterCount": 5,
         "suppressorCount": 2,
-        "platoonPressureIndex": 74.9,
+        "platoonPressureIndex": 75.1,
         "pitchTypePressureIndex": 86.4,
         "bullpenPitchTypePressureIndex": 56.4,
         "starterPressureIndex": 94,
         "overallPressureIndex": 94,
         "topThirdScore": 94,
-        "depthScore": 40.3,
+        "depthScore": 40.8,
         "bullpenOverperformHitters": [
           {
             "name": "Michael Harris II",
@@ -18104,8 +18102,8 @@ export const lineupBoardsByGameId = {
         "overview": "Braves can lean on Ronald Acuña Jr., Michael Harris II, Matt Olson to drive early pressure against Nick Lodolo.",
         "bullpenOverview": "Brock Burke is the first bridge look, and this lineup grades +1.2 against that likely first-up arsenal.",
         "topThirdScore": 94,
-        "middleScore": 49.3,
-        "depthScore": 40.3,
+        "middleScore": 49.4,
+        "depthScore": 40.8,
         "bullpenPitchTypeSummary": {
           "pressureIndex": 56.4,
           "averageFitScore": 55.9,
@@ -18414,7 +18412,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/694362?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -18613,7 +18611,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/682829?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -18814,7 +18812,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/668709?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -19016,7 +19014,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/701398?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "cold",
@@ -19215,7 +19213,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/553993?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal risk",
@@ -19253,17 +19251,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 9,
             "walks": 15,
             "totalBases": 69,
-            "atBats": 121,
-            "plateAppearances": 136,
-            "avg": 0.273,
-            "obp": 0.353,
-            "slg": 0.57,
-            "ops": 0.923,
-            "hitRate": 0.2426,
-            "singlesRate": 0.1103,
-            "hrRate": 0.0662,
-            "walkRate": 0.1103,
-            "totalBasesRate": 0.5074000000000001
+            "atBats": 122,
+            "plateAppearances": 137,
+            "avg": 0.27,
+            "obp": 0.35,
+            "slg": 0.566,
+            "ops": 0.916,
+            "hitRate": 0.2409,
+            "singlesRate": 0.10949999999999999,
+            "hrRate": 0.06570000000000001,
+            "walkRate": 0.10949999999999999,
+            "totalBasesRate": 0.5036
           },
           "recent": {
             "gamesPlayed": 6,
@@ -19310,10 +19308,10 @@ export const lineupBoardsByGameId = {
           },
           "metrics": {
             "powerScore": 92,
-            "contactScore": 55.5,
-            "patienceScore": 59.9,
+            "contactScore": 55.6,
+            "patienceScore": 59.7,
             "formScore": 92,
-            "splitScore": 80.7,
+            "splitScore": 82.5,
             "varianceScore": 92,
             "pitchTypeFitScore": 71.3,
             "pitchTypeGrade": 1.96,
@@ -19387,35 +19385,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2019,
             "latestMlbYear": 2026,
             "careerGames": 881,
-            "careerPlateAppearances": 3566,
+            "careerPlateAppearances": 3567,
             "careerHits": 829,
             "careerHomeRuns": 116,
             "careerTotalBases": 1349,
             "careerWalks": 391,
             "careerStrikeouts": 868,
-            "careerHitRate": 0.2325,
+            "careerHitRate": 0.2324,
             "careerAvg": 0.264,
             "careerObp": 0.347,
             "careerSlg": 0.43,
             "careerOps": 0.777,
-            "careerTbPerPa": 0.37829500841278746,
-            "careerHrPerPa": 0.03252944475602917,
-            "careerKRate": 0.24340998317442514,
-            "careerBbRate": 0.10964666292765003,
+            "careerTbPerPa": 0.37818895430333616,
+            "careerHrPerPa": 0.032520325203252036,
+            "careerKRate": 0.24334174376226522,
+            "careerBbRate": 0.10961592374544435,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 9,
-            "bestPowerSlg": 0.5702479338842975,
+            "bestPowerSlg": 0.5655737704918032,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 136,
+            "recentMlbPlateAppearances": 137,
             "recentMlbHomeRuns": 9,
-            "recentMlbTbPerPa": 0.5073529411764706,
-            "careerPowerIndex": 64.11,
-            "contactRiskIndex": 46.77,
+            "recentMlbTbPerPa": 0.5036496350364964,
+            "careerPowerIndex": 63.93,
+            "contactRiskIndex": 46.76,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/663993?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -19425,7 +19423,7 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "carry",
-          "summary": ".273 AVG | .923 OPS | 33 H | 9 HR | 6g: .333 AVG | 1.316 OPS | 6 H | 2 HR | vs RHP: .311 AVG | 1.043 OPS | 9 HR | career 3566 PA | .777 OPS | 116 HR | baseline career profile | power 64 | 2026 sample ok | arsenal 4-Seam Fastball 48% / Slider 26% / Curveball 17% | fit +2.0 | +10.0 matchup grade in a whiff-variance lane",
+          "summary": ".270 AVG | .916 OPS | 33 H | 9 HR | 6g: .333 AVG | 1.316 OPS | 6 H | 2 HR | vs RHP: .311 AVG | 1.043 OPS | 9 HR | career 3567 PA | .777 OPS | 116 HR | baseline career profile | power 64 | 2026 sample ok | arsenal 4-Seam Fastball 48% / Slider 26% / Curveball 17% | fit +2.0 | +10.0 matchup grade in a whiff-variance lane",
           "matchupNote": "+10.00 vs Spencer Strider"
         },
         {
@@ -19446,7 +19444,7 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 55,
+            "gamesPlayed": 56,
             "hits": 52,
             "singles": 35,
             "doubles": 10,
@@ -19454,17 +19452,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 7,
             "walks": 19,
             "totalBases": 83,
-            "atBats": 196,
-            "plateAppearances": 219,
-            "avg": 0.265,
-            "obp": 0.338,
-            "slg": 0.423,
-            "ops": 0.761,
-            "hitRate": 0.23739999999999997,
-            "singlesRate": 0.1598,
-            "hrRate": 0.032,
-            "walkRate": 0.0868,
-            "totalBasesRate": 0.379
+            "atBats": 197,
+            "plateAppearances": 220,
+            "avg": 0.264,
+            "obp": 0.336,
+            "slg": 0.421,
+            "ops": 0.758,
+            "hitRate": 0.2364,
+            "singlesRate": 0.1591,
+            "hrRate": 0.0318,
+            "walkRate": 0.0864,
+            "totalBasesRate": 0.37729999999999997
           },
           "recent": {
             "gamesPlayed": 10,
@@ -19510,12 +19508,12 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.32520000000000004
           },
           "metrics": {
-            "powerScore": 49.4,
-            "contactScore": 56.1,
-            "patienceScore": 52.6,
+            "powerScore": 49.1,
+            "contactScore": 55.3,
+            "patienceScore": 52.5,
             "formScore": 18,
-            "splitScore": 27.9,
-            "varianceScore": 89.5,
+            "splitScore": 28.8,
+            "varianceScore": 88.7,
             "pitchTypeFitScore": 51.7,
             "pitchTypeGrade": -0.07,
             "pitchTypeCoveragePct": 100,
@@ -19587,43 +19585,43 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 5,
             "debutYear": 2022,
             "latestMlbYear": 2026,
-            "careerGames": 543,
-            "careerPlateAppearances": 2216,
+            "careerGames": 544,
+            "careerPlateAppearances": 2217,
             "careerHits": 480,
             "careerHomeRuns": 73,
             "careerTotalBases": 824,
             "careerWalks": 221,
-            "careerStrikeouts": 476,
-            "careerHitRate": 0.21660000000000001,
+            "careerStrikeouts": 477,
+            "careerHitRate": 0.2165,
             "careerAvg": 0.245,
-            "careerObp": 0.33,
+            "careerObp": 0.329,
             "careerSlg": 0.421,
-            "careerOps": 0.751,
-            "careerTbPerPa": 0.37184115523465705,
-            "careerHrPerPa": 0.03294223826714802,
-            "careerKRate": 0.2148014440433213,
-            "careerBbRate": 0.09972924187725632,
+            "careerOps": 0.75,
+            "careerTbPerPa": 0.37167343256653135,
+            "careerHrPerPa": 0.032927379341452415,
+            "careerKRate": 0.21515561569688768,
+            "careerBbRate": 0.09968425800631484,
             "bestPowerYear": 2025,
             "bestPowerHomeRuns": 21,
             "bestPowerSlg": 0.4106090373280943,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 219,
+            "recentMlbPlateAppearances": 220,
             "recentMlbHomeRuns": 7,
-            "recentMlbTbPerPa": 0.3789954337899543,
-            "careerPowerIndex": 57.53,
-            "contactRiskIndex": 41.93,
+            "recentMlbTbPerPa": 0.37727272727272726,
+            "careerPowerIndex": 57.44,
+            "contactRiskIndex": 42,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/668715?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "cold",
             "statcast fade"
           ],
           "primaryTag": "cold",
-          "summary": ".265 AVG | .761 OPS | 52 H | 7 HR | 10g: .211 AVG | .529 OPS | 8 H | 0 HR | vs RHP: .245 AVG | .673 OPS | 4 HR | career 2216 PA | .751 OPS | 73 HR | contact-stable profile | power 58 | 2026 sample ok | arsenal 4-Seam Fastball 48% / Slider 26% / Curveball 17% | fit -0.1 | -8.0 matchup grade in a whiff-variance lane",
+          "summary": ".264 AVG | .758 OPS | 52 H | 7 HR | 10g: .211 AVG | .529 OPS | 8 H | 0 HR | vs RHP: .245 AVG | .673 OPS | 4 HR | career 2217 PA | .750 OPS | 73 HR | contact-stable profile | power 57 | 2026 sample ok | arsenal 4-Seam Fastball 48% / Slider 26% / Curveball 17% | fit -0.1 | -8.0 matchup grade in a whiff-variance lane",
           "matchupNote": "-8.00 vs Spencer Strider"
         },
         {
@@ -19644,7 +19642,7 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 42,
+            "gamesPlayed": 43,
             "hits": 14,
             "singles": 9,
             "doubles": 2,
@@ -19652,17 +19650,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 2,
             "walks": 15,
             "totalBases": 24,
-            "atBats": 79,
-            "plateAppearances": 96,
-            "avg": 0.177,
-            "obp": 0.316,
-            "slg": 0.304,
-            "ops": 0.62,
-            "hitRate": 0.1458,
-            "singlesRate": 0.09380000000000001,
-            "hrRate": 0.0208,
-            "walkRate": 0.1563,
-            "totalBasesRate": 0.25
+            "atBats": 80,
+            "plateAppearances": 97,
+            "avg": 0.175,
+            "obp": 0.313,
+            "slg": 0.3,
+            "ops": 0.613,
+            "hitRate": 0.14429999999999998,
+            "singlesRate": 0.0928,
+            "hrRate": 0.0206,
+            "walkRate": 0.15460000000000002,
+            "totalBasesRate": 0.24739999999999998
           },
           "recent": {
             "gamesPlayed": 4,
@@ -19708,17 +19706,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.2526
           },
           "metrics": {
-            "powerScore": 31.2,
-            "contactScore": 19.8,
-            "patienceScore": 81.2,
+            "powerScore": 30.7,
+            "contactScore": 19.9,
+            "patienceScore": 80.7,
             "formScore": 18,
-            "splitScore": 51.5,
-            "varianceScore": 54.8,
+            "splitScore": 53,
+            "varianceScore": 55.2,
             "pitchTypeFitScore": 52.7,
             "pitchTypeGrade": 0.59,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 44.8,
-            "matchupGrade": -0.42
+            "matchupScore": 45.2,
+            "matchupGrade": -0.37
           },
           "pitchType": {
             "fitScore": 52.7,
@@ -19785,36 +19783,36 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 5,
             "debutYear": 2022,
             "latestMlbYear": 2026,
-            "careerGames": 396,
-            "careerPlateAppearances": 1127,
+            "careerGames": 397,
+            "careerPlateAppearances": 1128,
             "careerHits": 219,
             "careerHomeRuns": 39,
             "careerTotalBases": 407,
             "careerWalks": 114,
             "careerStrikeouts": 372,
-            "careerHitRate": 0.1943,
+            "careerHitRate": 0.1941,
             "careerAvg": 0.22,
             "careerObp": 0.302,
             "careerSlg": 0.409,
             "careerOps": 0.711,
-            "careerTbPerPa": 0.3611357586512866,
-            "careerHrPerPa": 0.03460514640638864,
-            "careerKRate": 0.3300798580301686,
-            "careerBbRate": 0.10115350488021295,
+            "careerTbPerPa": 0.3608156028368794,
+            "careerHrPerPa": 0.034574468085106384,
+            "careerKRate": 0.32978723404255317,
+            "careerBbRate": 0.10106382978723404,
             "bestPowerYear": 2025,
             "bestPowerHomeRuns": 12,
             "bestPowerSlg": 0.43478260869565216,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 96,
+            "recentMlbPlateAppearances": 97,
             "recentMlbHomeRuns": 2,
-            "recentMlbTbPerPa": 0.25,
-            "careerPowerIndex": 51.66,
-            "contactRiskIndex": 63.75,
+            "recentMlbTbPerPa": 0.24742268041237114,
+            "careerPowerIndex": 51.52,
+            "contactRiskIndex": 63.7,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/666181?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -19822,8 +19820,8 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".177 AVG | .620 OPS | 14 H | 2 HR | 4g: .000 AVG | .000 OPS | 0 H | 0 HR | vs RHP: .179 AVG | .627 OPS | 2 HR | career 1127 PA | .711 OPS | 39 HR | baseline career profile | power 52 | 2026 sample ok | arsenal 4-Seam Fastball 48% / Slider 26% / Curveball 17% | fit +0.6 | -0.4 matchup grade in a whiff-variance lane",
-          "matchupNote": "-0.42 vs Spencer Strider"
+          "summary": ".175 AVG | .613 OPS | 14 H | 2 HR | 4g: .000 AVG | .000 OPS | 0 H | 0 HR | vs RHP: .179 AVG | .627 OPS | 2 HR | career 1128 PA | .711 OPS | 39 HR | baseline career profile | power 52 | 2026 sample ok | arsenal 4-Seam Fastball 48% / Slider 26% / Curveball 17% | fit +0.6 | -0.4 matchup grade in a whiff-variance lane",
+          "matchupNote": "-0.37 vs Spencer Strider"
         },
         {
           "playerId": 664731,
@@ -20013,7 +20011,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/664731?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal edge",
@@ -20046,13 +20044,13 @@ export const lineupBoardsByGameId = {
         "topThirdArsenalCount": 2,
         "heaterCount": 2,
         "suppressorCount": 2,
-        "platoonPressureIndex": 72.4,
+        "platoonPressureIndex": 72.5,
         "pitchTypePressureIndex": 86.3,
         "bullpenPitchTypePressureIndex": 50.3,
-        "starterPressureIndex": 62.9,
+        "starterPressureIndex": 63,
         "overallPressureIndex": 63,
         "topThirdScore": 51.9,
-        "depthScore": 39.5,
+        "depthScore": 39.6,
         "bullpenOverperformHitters": [
           {
             "name": "JJ Bleday",
@@ -20119,7 +20117,7 @@ export const lineupBoardsByGameId = {
         "bullpenOverview": "Didier Fuentes is the first bridge look, and this lineup grades -0.6 against that likely first-up arsenal.",
         "topThirdScore": 51.9,
         "middleScore": 58.5,
-        "depthScore": 39.5,
+        "depthScore": 39.6,
         "bullpenPitchTypeSummary": {
           "pressureIndex": 50.3,
           "averageFitScore": 68.4,
@@ -20217,7 +20215,7 @@ export const lineupBoardsByGameId = {
   "marlins-mets": {
     "gameId": "marlins-mets",
     "title": "Marlins @ Mets",
-    "snapshot": "2026-05-31T18:00:03.947Z",
+    "snapshot": "2026-05-31T18:17:29.715Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -20232,7 +20230,7 @@ export const lineupBoardsByGameId = {
       "label": "72°F | Wind 9 mph Out | 0% precip"
     },
     "marketWeatherContext": {
-      "line": "NYM -173",
+      "line": "NYM -323",
       "total": "7.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
@@ -20289,17 +20287,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 6,
             "walks": 30,
             "totalBases": 107,
-            "atBats": 220,
-            "plateAppearances": 251,
-            "avg": 0.318,
-            "obp": 0.4,
-            "slg": 0.486,
-            "ops": 0.886,
-            "hitRate": 0.2789,
-            "singlesRate": 0.19519999999999998,
-            "hrRate": 0.0239,
-            "walkRate": 0.1195,
-            "totalBasesRate": 0.4263
+            "atBats": 221,
+            "plateAppearances": 252,
+            "avg": 0.317,
+            "obp": 0.398,
+            "slg": 0.484,
+            "ops": 0.883,
+            "hitRate": 0.2778,
+            "singlesRate": 0.19440000000000002,
+            "hrRate": 0.023799999999999998,
+            "walkRate": 0.11900000000000001,
+            "totalBasesRate": 0.42460000000000003
           },
           "recent": {
             "gamesPlayed": 12,
@@ -20345,12 +20343,12 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.39899999999999997
           },
           "metrics": {
-            "powerScore": 44.6,
+            "powerScore": 44.3,
             "contactScore": 81.9,
-            "patienceScore": 61.9,
-            "formScore": 78.5,
-            "splitScore": 33,
-            "varianceScore": 85.2,
+            "patienceScore": 61.8,
+            "formScore": 79.3,
+            "splitScore": 33.8,
+            "varianceScore": 85.3,
             "pitchTypeFitScore": 62.2,
             "pitchTypeGrade": 0.68,
             "pitchTypeCoveragePct": 100,
@@ -20423,35 +20421,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2023,
             "latestMlbYear": 2026,
             "careerGames": 299,
-            "careerPlateAppearances": 1257,
+            "careerPlateAppearances": 1258,
             "careerHits": 339,
             "careerHomeRuns": 10,
             "careerTotalBases": 443,
             "careerWalks": 115,
             "careerStrikeouts": 183,
-            "careerHitRate": 0.2697,
-            "careerAvg": 0.302,
+            "careerHitRate": 0.2695,
+            "careerAvg": 0.301,
             "careerObp": 0.366,
             "careerSlg": 0.394,
             "careerOps": 0.76,
-            "careerTbPerPa": 0.3524264120922832,
-            "careerHrPerPa": 0.007955449482895784,
-            "careerKRate": 0.14558472553699284,
-            "careerBbRate": 0.09148766905330151,
+            "careerTbPerPa": 0.3521462639109698,
+            "careerHrPerPa": 0.00794912559618442,
+            "careerKRate": 0.14546899841017488,
+            "careerBbRate": 0.09141494435612083,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 6,
-            "bestPowerSlg": 0.4863636363636364,
+            "bestPowerSlg": 0.4841628959276018,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 251,
+            "recentMlbPlateAppearances": 252,
             "recentMlbHomeRuns": 6,
-            "recentMlbTbPerPa": 0.4262948207171315,
-            "careerPowerIndex": 33.66,
-            "contactRiskIndex": 29.27,
+            "recentMlbTbPerPa": 0.4246031746031746,
+            "careerPowerIndex": 33.58,
+            "contactRiskIndex": 29.25,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/669364?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -20461,7 +20459,7 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "carry",
-          "summary": ".318 AVG | .886 OPS | 70 H | 6 HR | 12g: .429 AVG | 1.205 OPS | 18 H | 0 HR | vs RHP: .315 AVG | .862 OPS | 2 HR | career 1257 PA | .760 OPS | 10 HR | contact-stable profile | power 34 | 2026 sample ok | arsenal Sinker 36% / 4-Seam Fastball 18% / Sweeper 17% | fit +0.7 | +10.0 matchup grade in a contact-suppressor lane",
+          "summary": ".317 AVG | .883 OPS | 70 H | 6 HR | 12g: .429 AVG | 1.205 OPS | 18 H | 0 HR | vs RHP: .315 AVG | .862 OPS | 2 HR | career 1258 PA | .760 OPS | 10 HR | contact-stable profile | power 34 | 2026 sample ok | arsenal Sinker 36% / 4-Seam Fastball 18% / Sweeper 17% | fit +0.7 | +10.0 matchup grade in a contact-suppressor lane",
           "matchupNote": "+10.00 vs Nolan McLean"
         },
         {
@@ -20652,7 +20650,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/689414?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -20852,7 +20850,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/672640?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal edge",
@@ -21052,7 +21050,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/669065?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -21252,7 +21250,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/691594?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "heater",
@@ -21290,17 +21288,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 3,
             "walks": 31,
             "totalBases": 63,
-            "atBats": 205,
-            "plateAppearances": 244,
-            "avg": 0.2,
-            "obp": 0.321,
-            "slg": 0.307,
-            "ops": 0.628,
-            "hitRate": 0.168,
-            "singlesRate": 0.1148,
-            "hrRate": 0.0123,
-            "walkRate": 0.127,
-            "totalBasesRate": 0.2582
+            "atBats": 206,
+            "plateAppearances": 245,
+            "avg": 0.199,
+            "obp": 0.32,
+            "slg": 0.306,
+            "ops": 0.625,
+            "hitRate": 0.1673,
+            "singlesRate": 0.1143,
+            "hrRate": 0.012199999999999999,
+            "walkRate": 0.1265,
+            "totalBasesRate": 0.2571
           },
           "recent": {
             "gamesPlayed": 12,
@@ -21346,17 +21344,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.25129999999999997
           },
           "metrics": {
-            "powerScore": 22.6,
-            "contactScore": 40.9,
-            "patienceScore": 71.2,
-            "formScore": 41.8,
-            "splitScore": 47.4,
-            "varianceScore": 45.8,
+            "powerScore": 22.3,
+            "contactScore": 41,
+            "patienceScore": 71,
+            "formScore": 42.4,
+            "splitScore": 47.9,
+            "varianceScore": 45.7,
             "pitchTypeFitScore": 31,
             "pitchTypeGrade": -2.95,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 20.4,
-            "matchupGrade": -6.29
+            "matchupScore": 20.9,
+            "matchupGrade": -6.2
           },
           "pitchType": {
             "fitScore": 31,
@@ -21424,35 +21422,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2025,
             "latestMlbYear": 2026,
             "careerGames": 113,
-            "careerPlateAppearances": 478,
+            "careerPlateAppearances": 479,
             "careerHits": 102,
             "careerHomeRuns": 8,
             "careerTotalBases": 163,
             "careerWalks": 53,
             "careerStrikeouts": 105,
-            "careerHitRate": 0.2134,
+            "careerHitRate": 0.21289999999999998,
             "careerAvg": 0.246,
-            "careerObp": 0.342,
-            "careerSlg": 0.394,
-            "careerOps": 0.736,
-            "careerTbPerPa": 0.3410041841004184,
-            "careerHrPerPa": 0.016736401673640166,
-            "careerKRate": 0.2196652719665272,
-            "careerBbRate": 0.1108786610878661,
+            "careerObp": 0.341,
+            "careerSlg": 0.393,
+            "careerOps": 0.734,
+            "careerTbPerPa": 0.34029227557411273,
+            "careerHrPerPa": 0.016701461377870562,
+            "careerKRate": 0.21920668058455114,
+            "careerBbRate": 0.11064718162839249,
             "bestPowerYear": 2025,
             "bestPowerHomeRuns": 5,
             "bestPowerSlg": 0.4784688995215311,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 244,
+            "recentMlbPlateAppearances": 245,
             "recentMlbHomeRuns": 3,
-            "recentMlbTbPerPa": 0.2581967213114754,
-            "careerPowerIndex": 34,
-            "contactRiskIndex": 42.18,
+            "recentMlbTbPerPa": 0.2571428571428571,
+            "careerPowerIndex": 33.79,
+            "contactRiskIndex": 42.11,
             "roleStabilityIndex": 88,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/805300?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -21461,8 +21459,8 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".200 AVG | .628 OPS | 41 H | 3 HR | 12g: .227 AVG | .638 OPS | 10 H | 0 HR | vs RHP: .206 AVG | .611 OPS | 2 HR | career 478 PA | .736 OPS | 8 HR | baseline career profile | power 34 | 2026 sample ok | arsenal Sinker 36% / 4-Seam Fastball 18% / Sweeper 17% | fit -3.0 | -6.3 matchup grade in a contact-suppressor lane",
-          "matchupNote": "-6.29 vs Nolan McLean"
+          "summary": ".199 AVG | .625 OPS | 41 H | 3 HR | 12g: .227 AVG | .638 OPS | 10 H | 0 HR | vs RHP: .206 AVG | .611 OPS | 2 HR | career 479 PA | .734 OPS | 8 HR | baseline career profile | power 34 | 2026 sample ok | arsenal Sinker 36% / 4-Seam Fastball 18% / Sweeper 17% | fit -3.0 | -6.2 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-6.20 vs Nolan McLean"
         },
         {
           "playerId": 681393,
@@ -21490,17 +21488,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 4,
             "walks": 20,
             "totalBases": 56,
-            "atBats": 165,
-            "plateAppearances": 193,
-            "avg": 0.212,
-            "obp": 0.321,
-            "slg": 0.339,
-            "ops": 0.661,
-            "hitRate": 0.1813,
-            "singlesRate": 0.114,
-            "hrRate": 0.0207,
-            "walkRate": 0.1036,
-            "totalBasesRate": 0.2902
+            "atBats": 166,
+            "plateAppearances": 194,
+            "avg": 0.211,
+            "obp": 0.32,
+            "slg": 0.337,
+            "ops": 0.657,
+            "hitRate": 0.1804,
+            "singlesRate": 0.1134,
+            "hrRate": 0.0206,
+            "walkRate": 0.10310000000000001,
+            "totalBasesRate": 0.2887
           },
           "recent": {
             "gamesPlayed": 8,
@@ -21546,11 +21544,11 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.3309
           },
           "metrics": {
-            "powerScore": 34.6,
-            "contactScore": 35.9,
-            "patienceScore": 62.5,
+            "powerScore": 34.3,
+            "contactScore": 36,
+            "patienceScore": 62.3,
             "formScore": 18,
-            "splitScore": 61.4,
+            "splitScore": 62.2,
             "varianceScore": 92,
             "pitchTypeFitScore": 51.9,
             "pitchTypeGrade": -0.16,
@@ -21624,35 +21622,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2024,
             "latestMlbYear": 2026,
             "careerGames": 185,
-            "careerPlateAppearances": 724,
+            "careerPlateAppearances": 725,
             "careerHits": 155,
             "careerHomeRuns": 21,
             "careerTotalBases": 255,
             "careerWalks": 53,
             "careerStrikeouts": 210,
-            "careerHitRate": 0.2141,
+            "careerHitRate": 0.2138,
             "careerAvg": 0.237,
-            "careerObp": 0.304,
-            "careerSlg": 0.39,
-            "careerOps": 0.694,
-            "careerTbPerPa": 0.35220994475138123,
-            "careerHrPerPa": 0.029005524861878452,
-            "careerKRate": 0.2900552486187845,
-            "careerBbRate": 0.07320441988950276,
+            "careerObp": 0.303,
+            "careerSlg": 0.389,
+            "careerOps": 0.692,
+            "careerTbPerPa": 0.35172413793103446,
+            "careerHrPerPa": 0.028965517241379312,
+            "careerKRate": 0.2896551724137931,
+            "careerBbRate": 0.07310344827586207,
             "bestPowerYear": 2024,
             "bestPowerHomeRuns": 18,
             "bestPowerSlg": 0.43820224719101125,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 193,
+            "recentMlbPlateAppearances": 194,
             "recentMlbHomeRuns": 4,
-            "recentMlbTbPerPa": 0.29015544041450775,
-            "careerPowerIndex": 45.96,
-            "contactRiskIndex": 57.82,
+            "recentMlbTbPerPa": 0.28865979381443296,
+            "careerPowerIndex": 45.73,
+            "contactRiskIndex": 57.75,
             "roleStabilityIndex": 96,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/681393?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -21660,7 +21658,7 @@ export const lineupBoardsByGameId = {
             "statcast fade"
           ],
           "primaryTag": "split edge",
-          "summary": ".212 AVG | .661 OPS | 35 H | 4 HR | 8g: .083 AVG | .350 OPS | 2 H | 0 HR | vs RHP: .242 AVG | .699 OPS | 3 HR | career 724 PA | .694 OPS | 21 HR | baseline career profile | power 46 | 2026 sample ok | arsenal Sinker 36% / 4-Seam Fastball 18% / Sweeper 17% | fit -0.2 | -8.0 matchup grade in a contact-suppressor lane",
+          "summary": ".211 AVG | .657 OPS | 35 H | 4 HR | 8g: .083 AVG | .350 OPS | 2 H | 0 HR | vs RHP: .242 AVG | .699 OPS | 3 HR | career 725 PA | .692 OPS | 21 HR | baseline career profile | power 46 | 2026 sample ok | arsenal Sinker 36% / 4-Seam Fastball 18% / Sweeper 17% | fit -0.2 | -8.0 matchup grade in a contact-suppressor lane",
           "matchupNote": "-8.00 vs Nolan McLean"
         },
         {
@@ -21682,24 +21680,24 @@ export const lineupBoardsByGameId = {
           },
           "season": {
             "gamesPlayed": 51,
-            "hits": 32,
-            "singles": 19,
+            "hits": 33,
+            "singles": 20,
             "doubles": 8,
             "triples": 0,
             "homeRuns": 5,
             "walks": 10,
-            "totalBases": 55,
-            "atBats": 142,
-            "plateAppearances": 158,
-            "avg": 0.225,
-            "obp": 0.278,
-            "slg": 0.387,
-            "ops": 0.666,
-            "hitRate": 0.2025,
-            "singlesRate": 0.12029999999999999,
-            "hrRate": 0.0316,
-            "walkRate": 0.0633,
-            "totalBasesRate": 0.3481
+            "totalBases": 56,
+            "atBats": 143,
+            "plateAppearances": 159,
+            "avg": 0.231,
+            "obp": 0.283,
+            "slg": 0.392,
+            "ops": 0.675,
+            "hitRate": 0.2075,
+            "singlesRate": 0.1258,
+            "hrRate": 0.031400000000000004,
+            "walkRate": 0.0629,
+            "totalBasesRate": 0.3522
           },
           "recent": {
             "gamesPlayed": 10,
@@ -21745,17 +21743,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.36090000000000005
           },
           "metrics": {
-            "powerScore": 49.9,
-            "contactScore": 19,
-            "patienceScore": 42.8,
+            "powerScore": 50.3,
+            "contactScore": 20,
+            "patienceScore": 42.5,
             "formScore": 92,
-            "splitScore": 58.2,
+            "splitScore": 56.3,
             "varianceScore": 92,
             "pitchTypeFitScore": 19.7,
             "pitchTypeGrade": -3.59,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 38.6,
-            "matchupGrade": -3.38
+            "matchupScore": 37.5,
+            "matchupGrade": -3.6
           },
           "pitchType": {
             "fitScore": 19.7,
@@ -21823,35 +21821,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2025,
             "latestMlbYear": 2026,
             "careerGames": 63,
-            "careerPlateAppearances": 185,
-            "careerHits": 37,
+            "careerPlateAppearances": 186,
+            "careerHits": 38,
             "careerHomeRuns": 6,
-            "careerTotalBases": 64,
+            "careerTotalBases": 65,
             "careerWalks": 11,
             "careerStrikeouts": 77,
-            "careerHitRate": 0.2,
-            "careerAvg": 0.22,
-            "careerObp": 0.27,
-            "careerSlg": 0.381,
-            "careerOps": 0.651,
-            "careerTbPerPa": 0.34594594594594597,
-            "careerHrPerPa": 0.032432432432432434,
-            "careerKRate": 0.41621621621621624,
-            "careerBbRate": 0.05945945945945946,
+            "careerHitRate": 0.2043,
+            "careerAvg": 0.225,
+            "careerObp": 0.274,
+            "careerSlg": 0.385,
+            "careerOps": 0.659,
+            "careerTbPerPa": 0.34946236559139787,
+            "careerHrPerPa": 0.03225806451612903,
+            "careerKRate": 0.41397849462365593,
+            "careerBbRate": 0.05913978494623656,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 5,
-            "bestPowerSlg": 0.3873239436619718,
+            "bestPowerSlg": 0.3916083916083916,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 158,
+            "recentMlbPlateAppearances": 159,
             "recentMlbHomeRuns": 5,
-            "recentMlbTbPerPa": 0.34810126582278483,
-            "careerPowerIndex": 50.48,
-            "contactRiskIndex": 82.61,
-            "roleStabilityIndex": 56.12,
+            "recentMlbTbPerPa": 0.3522012578616352,
+            "careerPowerIndex": 51.03,
+            "contactRiskIndex": 82.21,
+            "roleStabilityIndex": 56.25,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/683357?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "heater",
@@ -21861,8 +21859,8 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "heater",
-          "summary": ".225 AVG | .666 OPS | 32 H | 5 HR | 10g: .278 AVG | .778 OPS | 10 H | 2 HR | vs RHP: .227 AVG | .682 OPS | 5 HR | career 185 PA | .651 OPS | 6 HR | baseline career profile | power 50 | 2026 sample ok | arsenal Sinker 36% / 4-Seam Fastball 18% / Sweeper 17% | fit -3.6 | -3.4 matchup grade in a contact-suppressor lane",
-          "matchupNote": "-3.38 vs Nolan McLean"
+          "summary": ".231 AVG | .675 OPS | 33 H | 5 HR | 10g: .278 AVG | .778 OPS | 10 H | 2 HR | vs RHP: .227 AVG | .682 OPS | 5 HR | career 186 PA | .659 OPS | 6 HR | baseline career profile | power 51 | 2026 sample ok | arsenal Sinker 36% / 4-Seam Fastball 18% / Sweeper 17% | fit -3.6 | -3.6 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-3.60 vs Nolan McLean"
         },
         {
           "playerId": 665923,
@@ -21888,19 +21886,19 @@ export const lineupBoardsByGameId = {
             "doubles": 3,
             "triples": 1,
             "homeRuns": 2,
-            "walks": 1,
+            "walks": 2,
             "totalBases": 19,
             "atBats": 42,
-            "plateAppearances": 44,
+            "plateAppearances": 45,
             "avg": 0.19,
-            "obp": 0.205,
+            "obp": 0.222,
             "slg": 0.452,
-            "ops": 0.657,
-            "hitRate": 0.1818,
-            "singlesRate": 0.0455,
-            "hrRate": 0.0455,
-            "walkRate": 0.0227,
-            "totalBasesRate": 0.4318
+            "ops": 0.675,
+            "hitRate": 0.1778,
+            "singlesRate": 0.0444,
+            "hrRate": 0.0444,
+            "walkRate": 0.0444,
+            "totalBasesRate": 0.42219999999999996
           },
           "recent": {
             "gamesPlayed": 6,
@@ -21946,11 +21944,11 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.4211
           },
           "metrics": {
-            "powerScore": 56.8,
-            "contactScore": 21,
-            "patienceScore": 22.5,
+            "powerScore": 56.6,
+            "contactScore": 21.9,
+            "patienceScore": 31.1,
             "formScore": 18,
-            "splitScore": 57.6,
+            "splitScore": 56.4,
             "varianceScore": 92,
             "pitchTypeFitScore": 39,
             "pitchTypeGrade": -0.42,
@@ -22024,42 +22022,42 @@ export const lineupBoardsByGameId = {
             "debutYear": 2022,
             "latestMlbYear": 2026,
             "careerGames": 223,
-            "careerPlateAppearances": 665,
+            "careerPlateAppearances": 666,
             "careerHits": 143,
             "careerHomeRuns": 10,
             "careerTotalBases": 211,
-            "careerWalks": 28,
+            "careerWalks": 29,
             "careerStrikeouts": 149,
-            "careerHitRate": 0.215,
+            "careerHitRate": 0.2147,
             "careerAvg": 0.238,
-            "careerObp": 0.29,
+            "careerObp": 0.291,
             "careerSlg": 0.35,
-            "careerOps": 0.64,
-            "careerTbPerPa": 0.3172932330827068,
-            "careerHrPerPa": 0.015037593984962405,
-            "careerKRate": 0.22406015037593985,
-            "careerBbRate": 0.042105263157894736,
+            "careerOps": 0.641,
+            "careerTbPerPa": 0.31681681681681684,
+            "careerHrPerPa": 0.015015015015015015,
+            "careerKRate": 0.22372372372372373,
+            "careerBbRate": 0.04354354354354354,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 2,
             "bestPowerSlg": 0.4523809523809524,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 44,
+            "recentMlbPlateAppearances": 45,
             "recentMlbHomeRuns": 2,
-            "recentMlbTbPerPa": 0.4318181818181818,
-            "careerPowerIndex": 29.41,
-            "contactRiskIndex": 47.15,
-            "roleStabilityIndex": 94,
+            "recentMlbTbPerPa": 0.4222222222222222,
+            "careerPowerIndex": 29.37,
+            "contactRiskIndex": 46.99,
+            "roleStabilityIndex": 94.25,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/665923?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "cold",
             "statcast fade"
           ],
           "primaryTag": "cold",
-          "summary": ".190 AVG | .657 OPS | 8 H | 2 HR | 6g: .000 AVG | .000 OPS | 0 H | 0 HR | vs RHP: .211 AVG | .632 OPS | 1 HR | career 665 PA | .640 OPS | 10 HR | baseline career profile | power 29 | shallow 2026 sample | arsenal Sinker 36% / 4-Seam Fastball 18% / Sweeper 17% | fit -0.4 | -8.0 matchup grade in a contact-suppressor lane",
+          "summary": ".190 AVG | .675 OPS | 8 H | 2 HR | 6g: .000 AVG | .000 OPS | 0 H | 0 HR | vs RHP: .211 AVG | .632 OPS | 1 HR | career 666 PA | .641 OPS | 10 HR | baseline career profile | power 29 | shallow 2026 sample | arsenal Sinker 36% / 4-Seam Fastball 18% / Sweeper 17% | fit -0.4 | -8.0 matchup grade in a contact-suppressor lane",
           "matchupNote": "-8.00 vs Nolan McLean"
         }
       ],
@@ -22069,7 +22067,7 @@ export const lineupBoardsByGameId = {
         "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
       },
       "aggregate": {
-        "averageMatchupGrade": -2.25,
+        "averageMatchupGrade": -2.26,
         "trackedBatters": 9,
         "starterThreatCount": 1,
         "contactCount": 4,
@@ -22083,13 +22081,13 @@ export const lineupBoardsByGameId = {
         "topThirdArsenalCount": 1,
         "heaterCount": 3,
         "suppressorCount": 2,
-        "platoonPressureIndex": 62.2,
+        "platoonPressureIndex": 62.1,
         "pitchTypePressureIndex": 51.3,
         "bullpenPitchTypePressureIndex": 48.5,
-        "starterPressureIndex": 27.9,
-        "overallPressureIndex": 27.7,
+        "starterPressureIndex": 27.8,
+        "overallPressureIndex": 27.5,
         "topThirdScore": 54.5,
-        "depthScore": 24.9,
+        "depthScore": 24.5,
         "bullpenOverperformHitters": [
           {
             "name": "Xavier Edwards",
@@ -22151,8 +22149,8 @@ export const lineupBoardsByGameId = {
         "overview": "Marlins can lean on Xavier Edwards, Javier Sanoja to drive early pressure against Nolan McLean.",
         "bullpenOverview": "A.J. Minter is the first bridge look, and this lineup grades -4.0 against that likely first-up arsenal.",
         "topThirdScore": 54.5,
-        "middleScore": 45.3,
-        "depthScore": 24.9,
+        "middleScore": 45.5,
+        "depthScore": 24.5,
         "bullpenPitchTypeSummary": {
           "pressureIndex": 48.5,
           "averageFitScore": 54.1,
@@ -22461,7 +22459,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "role volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/701807?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal risk",
@@ -22660,7 +22658,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/666182?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -22860,7 +22858,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/665742?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -23061,7 +23059,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "volatile career power",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/676724?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -23092,24 +23090,24 @@ export const lineupBoardsByGameId = {
           },
           "season": {
             "gamesPlayed": 51,
-            "hits": 40,
-            "singles": 24,
+            "hits": 41,
+            "singles": 25,
             "doubles": 9,
             "triples": 0,
             "homeRuns": 7,
             "walks": 7,
-            "totalBases": 70,
-            "atBats": 178,
-            "plateAppearances": 188,
-            "avg": 0.225,
-            "obp": 0.261,
-            "slg": 0.393,
-            "ops": 0.654,
-            "hitRate": 0.21280000000000002,
-            "singlesRate": 0.1277,
-            "hrRate": 0.037200000000000004,
-            "walkRate": 0.037200000000000004,
-            "totalBasesRate": 0.37229999999999996
+            "totalBases": 71,
+            "atBats": 179,
+            "plateAppearances": 189,
+            "avg": 0.229,
+            "obp": 0.265,
+            "slg": 0.397,
+            "ops": 0.661,
+            "hitRate": 0.2169,
+            "singlesRate": 0.1323,
+            "hrRate": 0.037000000000000005,
+            "walkRate": 0.037000000000000005,
+            "totalBasesRate": 0.3757
           },
           "recent": {
             "gamesPlayed": 12,
@@ -23155,12 +23153,12 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.43079999999999996
           },
           "metrics": {
-            "powerScore": 51.9,
-            "contactScore": 51.5,
-            "patienceScore": 33.1,
-            "formScore": 20.3,
-            "splitScore": 62,
-            "varianceScore": 83.5,
+            "powerScore": 52.3,
+            "contactScore": 52.3,
+            "patienceScore": 33,
+            "formScore": 18.8,
+            "splitScore": 60.5,
+            "varianceScore": 83.4,
             "pitchTypeFitScore": 58.4,
             "pitchTypeGrade": -3.83,
             "pitchTypeCoveragePct": 100,
@@ -23233,35 +23231,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2022,
             "latestMlbYear": 2026,
             "careerGames": 364,
-            "careerPlateAppearances": 1379,
-            "careerHits": 301,
+            "careerPlateAppearances": 1380,
+            "careerHits": 302,
             "careerHomeRuns": 61,
-            "careerTotalBases": 548,
+            "careerTotalBases": 549,
             "careerWalks": 85,
             "careerStrikeouts": 372,
-            "careerHitRate": 0.2183,
-            "careerAvg": 0.237,
-            "careerObp": 0.289,
+            "careerHitRate": 0.2188,
+            "careerAvg": 0.238,
+            "careerObp": 0.29,
             "careerSlg": 0.432,
-            "careerOps": 0.721,
-            "careerTbPerPa": 0.397389412617839,
-            "careerHrPerPa": 0.04423495286439449,
-            "careerKRate": 0.2697606961566352,
-            "careerBbRate": 0.06163886874546773,
+            "careerOps": 0.722,
+            "careerTbPerPa": 0.3978260869565217,
+            "careerHrPerPa": 0.04420289855072464,
+            "careerKRate": 0.26956521739130435,
+            "careerBbRate": 0.06159420289855073,
             "bestPowerYear": 2024,
             "bestPowerHomeRuns": 27,
             "bestPowerSlg": 0.5157384987893463,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 188,
+            "recentMlbPlateAppearances": 189,
             "recentMlbHomeRuns": 7,
-            "recentMlbTbPerPa": 0.3723404255319149,
-            "careerPowerIndex": 68.83,
-            "contactRiskIndex": 54.66,
+            "recentMlbTbPerPa": 0.37566137566137564,
+            "careerPowerIndex": 68.95,
+            "contactRiskIndex": 54.62,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "volatile career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/668901?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -23271,7 +23269,7 @@ export const lineupBoardsByGameId = {
             "career power"
           ],
           "primaryTag": "split edge",
-          "summary": ".225 AVG | .654 OPS | 40 H | 7 HR | 12g: .136 AVG | .455 OPS | 6 H | 2 HR | vs LHP: .270 AVG | .737 OPS | 2 HR | career 1379 PA | .721 OPS | 61 HR | volatile career power | power 69 | 2026 sample ok | arsenal Sinker 31% / Slider 24% / Changeup 19% | fit -3.8 | -8.0 matchup grade in a contact-suppressor lane",
+          "summary": ".229 AVG | .661 OPS | 41 H | 7 HR | 12g: .136 AVG | .455 OPS | 6 H | 2 HR | vs LHP: .270 AVG | .737 OPS | 2 HR | career 1380 PA | .722 OPS | 61 HR | volatile career power | power 69 | 2026 sample ok | arsenal Sinker 31% / Slider 24% / Changeup 19% | fit -3.8 | -8.0 matchup grade in a contact-suppressor lane",
           "matchupNote": "-8.00 vs John King"
         },
         {
@@ -23300,17 +23298,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 1,
             "walks": 8,
             "totalBases": 20,
-            "atBats": 60,
-            "plateAppearances": 70,
-            "avg": 0.25,
-            "obp": 0.338,
-            "slg": 0.333,
-            "ops": 0.672,
-            "hitRate": 0.2143,
-            "singlesRate": 0.1857,
-            "hrRate": 0.0143,
-            "walkRate": 0.1143,
-            "totalBasesRate": 0.2857
+            "atBats": 61,
+            "plateAppearances": 71,
+            "avg": 0.246,
+            "obp": 0.333,
+            "slg": 0.328,
+            "ops": 0.661,
+            "hitRate": 0.2113,
+            "singlesRate": 0.18309999999999998,
+            "hrRate": 0.0141,
+            "walkRate": 0.1127,
+            "totalBasesRate": 0.2817
           },
           "recent": {
             "gamesPlayed": 12,
@@ -23356,9 +23354,9 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.2273
           },
           "metrics": {
-            "powerScore": 22.1,
-            "contactScore": 32.1,
-            "patienceScore": 61.8,
+            "powerScore": 21.4,
+            "contactScore": 30.6,
+            "patienceScore": 61.3,
             "formScore": 18,
             "splitScore": 18,
             "varianceScore": 92,
@@ -23434,35 +23432,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2026,
             "latestMlbYear": 2026,
             "careerGames": 19,
-            "careerPlateAppearances": 70,
+            "careerPlateAppearances": 71,
             "careerHits": 15,
             "careerHomeRuns": 1,
             "careerTotalBases": 20,
             "careerWalks": 8,
-            "careerStrikeouts": 21,
-            "careerHitRate": 0.2143,
-            "careerAvg": 0.25,
-            "careerObp": 0.338,
-            "careerSlg": 0.333,
-            "careerOps": 0.671,
-            "careerTbPerPa": 0.2857142857142857,
-            "careerHrPerPa": 0.014285714285714285,
-            "careerKRate": 0.3,
-            "careerBbRate": 0.11428571428571428,
+            "careerStrikeouts": 22,
+            "careerHitRate": 0.2113,
+            "careerAvg": 0.246,
+            "careerObp": 0.333,
+            "careerSlg": 0.328,
+            "careerOps": 0.661,
+            "careerTbPerPa": 0.28169014084507044,
+            "careerHrPerPa": 0.014084507042253521,
+            "careerKRate": 0.30985915492957744,
+            "careerBbRate": 0.11267605633802817,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 1,
-            "bestPowerSlg": 0.3333333333333333,
+            "bestPowerSlg": 0.32786885245901637,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 70,
+            "recentMlbPlateAppearances": 71,
             "recentMlbHomeRuns": 1,
-            "recentMlbTbPerPa": 0.2857142857142857,
-            "careerPowerIndex": 25.1,
-            "contactRiskIndex": 67.24,
-            "roleStabilityIndex": 33.75,
+            "recentMlbTbPerPa": 0.28169014084507044,
+            "careerPowerIndex": 24.09,
+            "contactRiskIndex": 69.21,
+            "roleStabilityIndex": 33.88,
             "repeatabilityLabel": "unproven MLB sample",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/805999?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal risk",
@@ -23470,7 +23468,7 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "arsenal risk",
-          "summary": ".250 AVG | .672 OPS | 15 H | 1 HR | 12g: .250 AVG | .500 OPS | 12 H | 0 HR | vs LHP: .158 AVG | .501 OPS | 0 HR | career 70 PA | .671 OPS | 1 HR | unproven MLB sample | power 25 | shallow 2026 sample | arsenal Sinker 31% / Slider 24% / Changeup 19% | fit -5.9 | -8.0 matchup grade in a contact-suppressor lane",
+          "summary": ".246 AVG | .661 OPS | 15 H | 1 HR | 12g: .250 AVG | .500 OPS | 12 H | 0 HR | vs LHP: .158 AVG | .501 OPS | 0 HR | career 71 PA | .661 OPS | 1 HR | unproven MLB sample | power 24 | shallow 2026 sample | arsenal Sinker 31% / Slider 24% / Changeup 19% | fit -5.9 | -8.0 matchup grade in a contact-suppressor lane",
           "matchupNote": "-8.00 vs John King"
         },
         {
@@ -23499,17 +23497,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 3,
             "walks": 18,
             "totalBases": 58,
-            "atBats": 169,
-            "plateAppearances": 191,
-            "avg": 0.231,
-            "obp": 0.305,
-            "slg": 0.343,
-            "ops": 0.648,
-            "hitRate": 0.20420000000000002,
-            "singlesRate": 0.1414,
-            "hrRate": 0.015700000000000002,
-            "walkRate": 0.0942,
-            "totalBasesRate": 0.3037
+            "atBats": 170,
+            "plateAppearances": 192,
+            "avg": 0.229,
+            "obp": 0.304,
+            "slg": 0.341,
+            "ops": 0.645,
+            "hitRate": 0.20309999999999997,
+            "singlesRate": 0.1406,
+            "hrRate": 0.015600000000000001,
+            "walkRate": 0.09380000000000001,
+            "totalBasesRate": 0.30210000000000004
           },
           "recent": {
             "gamesPlayed": 10,
@@ -23555,12 +23553,12 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.2368
           },
           "metrics": {
-            "powerScore": 23.9,
-            "contactScore": 34.4,
-            "patienceScore": 54.2,
+            "powerScore": 23.6,
+            "contactScore": 33.9,
+            "patienceScore": 54.1,
             "formScore": 18,
             "splitScore": 18,
-            "varianceScore": 72.5,
+            "varianceScore": 71.8,
             "pitchTypeFitScore": 27.2,
             "pitchTypeGrade": -7.23,
             "pitchTypeCoveragePct": 100,
@@ -23633,35 +23631,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2022,
             "latestMlbYear": 2026,
             "careerGames": 354,
-            "careerPlateAppearances": 1225,
+            "careerPlateAppearances": 1226,
             "careerHits": 256,
             "careerHomeRuns": 36,
             "careerTotalBases": 406,
             "careerWalks": 98,
-            "careerStrikeouts": 320,
-            "careerHitRate": 0.209,
+            "careerStrikeouts": 321,
+            "careerHitRate": 0.20879999999999999,
             "careerAvg": 0.231,
-            "careerObp": 0.297,
+            "careerObp": 0.296,
             "careerSlg": 0.367,
-            "careerOps": 0.664,
-            "careerTbPerPa": 0.3314285714285714,
-            "careerHrPerPa": 0.029387755102040815,
-            "careerKRate": 0.2612244897959184,
-            "careerBbRate": 0.08,
+            "careerOps": 0.663,
+            "careerTbPerPa": 0.33115823817292006,
+            "careerHrPerPa": 0.02936378466557912,
+            "careerKRate": 0.26182707993474713,
+            "careerBbRate": 0.0799347471451876,
             "bestPowerYear": 2022,
             "bestPowerHomeRuns": 2,
             "bestPowerSlg": 0.34210526315789475,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 191,
+            "recentMlbPlateAppearances": 192,
             "recentMlbHomeRuns": 3,
-            "recentMlbTbPerPa": 0.3036649214659686,
-            "careerPowerIndex": 43.92,
-            "contactRiskIndex": 51.93,
+            "recentMlbTbPerPa": 0.3020833333333333,
+            "careerPowerIndex": 43.83,
+            "contactRiskIndex": 52.05,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/683146?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal risk",
@@ -23669,7 +23667,7 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "arsenal risk",
-          "summary": ".231 AVG | .648 OPS | 39 H | 3 HR | 10g: .200 AVG | .561 OPS | 6 H | 0 HR | vs LHP: .182 AVG | .562 OPS | 0 HR | career 1225 PA | .664 OPS | 36 HR | baseline career profile | power 44 | 2026 sample ok | arsenal Sinker 31% / Slider 24% / Changeup 19% | fit -7.2 | -8.0 matchup grade in a contact-suppressor lane",
+          "summary": ".229 AVG | .645 OPS | 39 H | 3 HR | 10g: .200 AVG | .561 OPS | 6 H | 0 HR | vs LHP: .182 AVG | .562 OPS | 0 HR | career 1226 PA | .663 OPS | 36 HR | baseline career profile | power 44 | 2026 sample ok | arsenal Sinker 31% / Slider 24% / Changeup 19% | fit -7.2 | -8.0 matchup grade in a contact-suppressor lane",
           "matchupNote": "-8.00 vs John King"
         },
         {
@@ -23860,7 +23858,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/543760?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "heater",
@@ -24061,7 +24059,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/620443?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -24261,7 +24259,7 @@ export const lineupBoardsByGameId = {
   "red-sox-guardians": {
     "gameId": "red-sox-guardians",
     "title": "Red Sox @ Guardians",
-    "snapshot": "2026-05-31T18:00:03.948Z",
+    "snapshot": "2026-05-31T18:17:29.716Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -24276,8 +24274,8 @@ export const lineupBoardsByGameId = {
       "label": "74°F | Wind 6 mph R-L | 0% precip"
     },
     "marketWeatherContext": {
-      "line": "CLE -115",
-      "total": "7.0 Runs",
+      "line": "CLE -189",
+      "total": "8.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
     "away": {
@@ -24495,7 +24493,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/680776?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -24696,7 +24694,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/681508?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -24898,7 +24896,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/677800?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -25098,7 +25096,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/807799?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -25300,7 +25298,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/643396?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -25502,7 +25500,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/702332?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -25539,17 +25537,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 2,
             "walks": 12,
             "totalBases": 46,
-            "atBats": 152,
-            "plateAppearances": 170,
-            "avg": 0.224,
-            "obp": 0.29,
-            "slg": 0.303,
-            "ops": 0.593,
-            "hitRate": 0.2,
-            "singlesRate": 0.15289999999999998,
-            "hrRate": 0.0118,
-            "walkRate": 0.0706,
-            "totalBasesRate": 0.2706
+            "atBats": 153,
+            "plateAppearances": 171,
+            "avg": 0.222,
+            "obp": 0.288,
+            "slg": 0.301,
+            "ops": 0.589,
+            "hitRate": 0.19879999999999998,
+            "singlesRate": 0.152,
+            "hrRate": 0.011699999999999999,
+            "walkRate": 0.0702,
+            "totalBasesRate": 0.26899999999999996
           },
           "recent": {
             "gamesPlayed": 12,
@@ -25595,17 +25593,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.25
           },
           "metrics": {
-            "powerScore": 20.5,
-            "contactScore": 47,
-            "patienceScore": 46.8,
-            "formScore": 65.6,
-            "splitScore": 40.5,
+            "powerScore": 20.2,
+            "contactScore": 47.1,
+            "patienceScore": 46.7,
+            "formScore": 66.4,
+            "splitScore": 41.3,
             "varianceScore": 59.5,
             "pitchTypeFitScore": 43.4,
             "pitchTypeGrade": 1.21,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 62.8,
-            "matchupGrade": 2.98
+            "matchupScore": 63.6,
+            "matchupGrade": 3.12
           },
           "pitchType": {
             "fitScore": 43.4,
@@ -25673,35 +25671,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2025,
             "latestMlbYear": 2026,
             "careerGames": 97,
-            "careerPlateAppearances": 306,
+            "careerPlateAppearances": 307,
             "careerHits": 63,
             "careerHomeRuns": 6,
             "careerTotalBases": 97,
             "careerWalks": 20,
             "careerStrikeouts": 73,
-            "careerHitRate": 0.2059,
-            "careerAvg": 0.226,
-            "careerObp": 0.282,
-            "careerSlg": 0.348,
-            "careerOps": 0.63,
-            "careerTbPerPa": 0.31699346405228757,
-            "careerHrPerPa": 0.0196078431372549,
-            "careerKRate": 0.238562091503268,
-            "careerBbRate": 0.06535947712418301,
+            "careerHitRate": 0.2052,
+            "careerAvg": 0.225,
+            "careerObp": 0.281,
+            "careerSlg": 0.346,
+            "careerOps": 0.627,
+            "careerTbPerPa": 0.31596091205211724,
+            "careerHrPerPa": 0.019543973941368076,
+            "careerKRate": 0.23778501628664495,
+            "careerBbRate": 0.06514657980456026,
             "bestPowerYear": 2025,
             "bestPowerHomeRuns": 4,
             "bestPowerSlg": 0.4015748031496063,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 170,
+            "recentMlbPlateAppearances": 171,
             "recentMlbHomeRuns": 2,
-            "recentMlbTbPerPa": 0.27058823529411763,
-            "careerPowerIndex": 31.16,
-            "contactRiskIndex": 48.51,
-            "roleStabilityIndex": 71.25,
+            "recentMlbTbPerPa": 0.26900584795321636,
+            "careerPowerIndex": 30.77,
+            "contactRiskIndex": 48.37,
+            "roleStabilityIndex": 71.38,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/691785?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "heater",
@@ -25709,8 +25707,8 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "heater",
-          "summary": ".224 AVG | .593 OPS | 34 H | 2 HR | 12g: .313 AVG | .701 OPS | 10 H | 0 HR | vs RHP: .216 AVG | .571 OPS | 1 HR | career 306 PA | .630 OPS | 6 HR | baseline career profile | power 31 | 2026 sample ok | arsenal 4-Seam Fastball 27% / Cutter 26% / Changeup 20% | fit +1.2 | +3.0 matchup grade in a neutral lane",
-          "matchupNote": "+2.98 vs Tanner Bibee"
+          "summary": ".222 AVG | .589 OPS | 34 H | 2 HR | 12g: .313 AVG | .701 OPS | 10 H | 0 HR | vs RHP: .216 AVG | .571 OPS | 1 HR | career 307 PA | .627 OPS | 6 HR | baseline career profile | power 31 | 2026 sample ok | arsenal 4-Seam Fastball 27% / Cutter 26% / Changeup 20% | fit +1.2 | +3.1 matchup grade in a neutral lane",
+          "matchupNote": "+3.12 vs Tanner Bibee"
         },
         {
           "playerId": 657136,
@@ -25738,17 +25736,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 0,
             "walks": 5,
             "totalBases": 23,
-            "atBats": 63,
-            "plateAppearances": 72,
-            "avg": 0.254,
-            "obp": 0.329,
-            "slg": 0.365,
-            "ops": 0.694,
-            "hitRate": 0.22219999999999998,
-            "singlesRate": 0.125,
+            "atBats": 64,
+            "plateAppearances": 73,
+            "avg": 0.25,
+            "obp": 0.324,
+            "slg": 0.359,
+            "ops": 0.683,
+            "hitRate": 0.2192,
+            "singlesRate": 0.1233,
             "hrRate": 0,
-            "walkRate": 0.0694,
-            "totalBasesRate": 0.3194
+            "walkRate": 0.06849999999999999,
+            "totalBasesRate": 0.3151
           },
           "recent": {
             "gamesPlayed": 4,
@@ -25794,11 +25792,11 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.3889
           },
           "metrics": {
-            "powerScore": 18.6,
-            "contactScore": 51,
-            "patienceScore": 47.2,
+            "powerScore": 18,
+            "contactScore": 49.5,
+            "patienceScore": 46.9,
             "formScore": 92,
-            "splitScore": 72.7,
+            "splitScore": 74.7,
             "varianceScore": 92,
             "pitchTypeFitScore": 62.4,
             "pitchTypeGrade": 3.42,
@@ -25872,35 +25870,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2021,
             "latestMlbYear": 2026,
             "careerGames": 372,
-            "careerPlateAppearances": 1220,
+            "careerPlateAppearances": 1221,
             "careerHits": 273,
             "careerHomeRuns": 23,
             "careerTotalBases": 418,
             "careerWalks": 77,
-            "careerStrikeouts": 329,
-            "careerHitRate": 0.2238,
+            "careerStrikeouts": 330,
+            "careerHitRate": 0.2236,
             "careerAvg": 0.246,
             "careerObp": 0.304,
-            "careerSlg": 0.377,
-            "careerOps": 0.681,
-            "careerTbPerPa": 0.34262295081967215,
-            "careerHrPerPa": 0.018852459016393444,
-            "careerKRate": 0.26967213114754096,
-            "careerBbRate": 0.06311475409836066,
+            "careerSlg": 0.376,
+            "careerOps": 0.68,
+            "careerTbPerPa": 0.34234234234234234,
+            "careerHrPerPa": 0.018837018837018837,
+            "careerKRate": 0.2702702702702703,
+            "careerBbRate": 0.06306306306306306,
             "bestPowerYear": 2024,
             "bestPowerHomeRuns": 13,
             "bestPowerSlg": 0.4250559284116331,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 72,
+            "recentMlbPlateAppearances": 73,
             "recentMlbHomeRuns": 0,
-            "recentMlbTbPerPa": 0.3194444444444444,
-            "careerPowerIndex": 36.45,
-            "contactRiskIndex": 54.55,
+            "recentMlbTbPerPa": 0.3150684931506849,
+            "careerPowerIndex": 36.11,
+            "contactRiskIndex": 54.67,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/657136?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -25910,7 +25908,7 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "carry",
-          "summary": ".254 AVG | .694 OPS | 16 H | 0 HR | 4g: .400 AVG | 1.000 OPS | 4 H | 0 HR | vs RHP: .298 AVG | .812 OPS | 0 HR | career 1220 PA | .681 OPS | 23 HR | baseline career profile | power 36 | shallow 2026 sample | arsenal 4-Seam Fastball 27% / Cutter 26% / Changeup 20% | fit +3.4 | +10.0 matchup grade in a neutral lane",
+          "summary": ".250 AVG | .683 OPS | 16 H | 0 HR | 4g: .400 AVG | 1.000 OPS | 4 H | 0 HR | vs RHP: .298 AVG | .812 OPS | 0 HR | career 1221 PA | .680 OPS | 23 HR | baseline career profile | power 36 | shallow 2026 sample | arsenal 4-Seam Fastball 27% / Cutter 26% / Changeup 20% | fit +3.4 | +10.0 matchup grade in a neutral lane",
           "matchupNote": "+10.00 vs Tanner Bibee"
         },
         {
@@ -25932,24 +25930,24 @@ export const lineupBoardsByGameId = {
           },
           "season": {
             "gamesPlayed": 37,
-            "hits": 22,
-            "singles": 15,
+            "hits": 23,
+            "singles": 16,
             "doubles": 5,
             "triples": 0,
             "homeRuns": 2,
             "walks": 10,
-            "totalBases": 33,
-            "atBats": 105,
-            "plateAppearances": 118,
-            "avg": 0.21,
-            "obp": 0.291,
-            "slg": 0.314,
-            "ops": 0.605,
-            "hitRate": 0.1864,
-            "singlesRate": 0.12710000000000002,
-            "hrRate": 0.0169,
-            "walkRate": 0.08470000000000001,
-            "totalBasesRate": 0.2797
+            "totalBases": 34,
+            "atBats": 106,
+            "plateAppearances": 119,
+            "avg": 0.217,
+            "obp": 0.297,
+            "slg": 0.321,
+            "ops": 0.617,
+            "hitRate": 0.19329999999999997,
+            "singlesRate": 0.13449999999999998,
+            "hrRate": 0.0168,
+            "walkRate": 0.084,
+            "totalBasesRate": 0.2857
           },
           "recent": {
             "gamesPlayed": 4,
@@ -25995,11 +25993,11 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.24489999999999998
           },
           "metrics": {
-            "powerScore": 30.1,
-            "contactScore": 27.9,
-            "patienceScore": 53.3,
+            "powerScore": 30.9,
+            "contactScore": 29.2,
+            "patienceScore": 52.9,
             "formScore": 18,
-            "splitScore": 37.9,
+            "splitScore": 35.1,
             "varianceScore": 92,
             "pitchTypeFitScore": 30.7,
             "pitchTypeGrade": -0.62,
@@ -26073,42 +26071,42 @@ export const lineupBoardsByGameId = {
             "debutYear": 2024,
             "latestMlbYear": 2026,
             "careerGames": 161,
-            "careerPlateAppearances": 579,
-            "careerHits": 122,
+            "careerPlateAppearances": 580,
+            "careerHits": 123,
             "careerHomeRuns": 17,
-            "careerTotalBases": 205,
+            "careerTotalBases": 206,
             "careerWalks": 50,
             "careerStrikeouts": 152,
-            "careerHitRate": 0.2107,
-            "careerAvg": 0.234,
-            "careerObp": 0.304,
-            "careerSlg": 0.393,
-            "careerOps": 0.697,
-            "careerTbPerPa": 0.3540587219343696,
-            "careerHrPerPa": 0.02936096718480138,
-            "careerKRate": 0.26252158894645944,
-            "careerBbRate": 0.08635578583765112,
+            "careerHitRate": 0.2121,
+            "careerAvg": 0.236,
+            "careerObp": 0.305,
+            "careerSlg": 0.395,
+            "careerOps": 0.7,
+            "careerTbPerPa": 0.35517241379310344,
+            "careerHrPerPa": 0.029310344827586206,
+            "careerKRate": 0.2620689655172414,
+            "careerBbRate": 0.08620689655172414,
             "bestPowerYear": 2025,
             "bestPowerHomeRuns": 15,
             "bestPowerSlg": 0.41935483870967744,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 118,
+            "recentMlbPlateAppearances": 119,
             "recentMlbHomeRuns": 2,
-            "recentMlbTbPerPa": 0.2796610169491525,
-            "careerPowerIndex": 46.2,
-            "contactRiskIndex": 51.8,
+            "recentMlbTbPerPa": 0.2857142857142857,
+            "careerPowerIndex": 46.69,
+            "contactRiskIndex": 51.72,
             "roleStabilityIndex": 96,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/665966?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "cold",
             "statcast up"
           ],
           "primaryTag": "cold",
-          "summary": ".210 AVG | .605 OPS | 22 H | 2 HR | 4g: .000 AVG | .125 OPS | 0 H | 0 HR | vs RHP: .172 AVG | .534 OPS | 2 HR | career 579 PA | .697 OPS | 17 HR | baseline career profile | power 46 | 2026 sample ok | arsenal 4-Seam Fastball 27% / Cutter 26% / Changeup 20% | fit -0.6 | -8.0 matchup grade in a neutral lane",
+          "summary": ".217 AVG | .617 OPS | 23 H | 2 HR | 4g: .000 AVG | .125 OPS | 0 H | 0 HR | vs RHP: .172 AVG | .534 OPS | 2 HR | career 580 PA | .700 OPS | 17 HR | baseline career profile | power 47 | 2026 sample ok | arsenal 4-Seam Fastball 27% / Cutter 26% / Changeup 20% | fit -0.6 | -8.0 matchup grade in a neutral lane",
           "matchupNote": "-8.00 vs Tanner Bibee"
         }
       ],
@@ -26118,7 +26116,7 @@ export const lineupBoardsByGameId = {
         "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
       },
       "aggregate": {
-        "averageMatchupGrade": 5.94,
+        "averageMatchupGrade": 5.96,
         "trackedBatters": 9,
         "starterThreatCount": 7,
         "contactCount": 3,
@@ -26138,7 +26136,7 @@ export const lineupBoardsByGameId = {
         "starterPressureIndex": 94,
         "overallPressureIndex": 94,
         "topThirdScore": 76.8,
-        "depthScore": 58.3,
+        "depthScore": 58.5,
         "bullpenOverperformHitters": [
           {
             "name": "Wilyer Abreu",
@@ -26205,7 +26203,7 @@ export const lineupBoardsByGameId = {
         "bullpenOverview": "Tim Herrin is the first bridge look, and this lineup grades -1.5 against that likely first-up arsenal.",
         "topThirdScore": 76.8,
         "middleScore": 94,
-        "depthScore": 58.3,
+        "depthScore": 58.5,
         "bullpenPitchTypeSummary": {
           "pressureIndex": 50.7,
           "averageFitScore": 53,
@@ -26514,7 +26512,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/683953?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -26714,7 +26712,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/608070?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -26916,7 +26914,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "role volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/800050?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "traffic",
@@ -26951,19 +26949,19 @@ export const lineupBoardsByGameId = {
             "doubles": 9,
             "triples": 0,
             "homeRuns": 5,
-            "walks": 29,
+            "walks": 30,
             "totalBases": 48,
             "atBats": 126,
-            "plateAppearances": 160,
+            "plateAppearances": 161,
             "avg": 0.19,
-            "obp": 0.338,
+            "obp": 0.342,
             "slg": 0.381,
-            "ops": 0.718,
-            "hitRate": 0.15,
-            "singlesRate": 0.0625,
-            "hrRate": 0.0313,
-            "walkRate": 0.1813,
-            "totalBasesRate": 0.3
+            "ops": 0.723,
+            "hitRate": 0.1491,
+            "singlesRate": 0.0621,
+            "hrRate": 0.0311,
+            "walkRate": 0.1863,
+            "totalBasesRate": 0.2981
           },
           "recent": {
             "gamesPlayed": 10,
@@ -27009,17 +27007,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.28809999999999997
           },
           "metrics": {
-            "powerScore": 58.3,
-            "contactScore": 25.8,
-            "patienceScore": 89.6,
+            "powerScore": 58.2,
+            "contactScore": 26,
+            "patienceScore": 91.5,
             "formScore": 92,
-            "splitScore": 56.7,
-            "varianceScore": 83.6,
+            "splitScore": 56.4,
+            "varianceScore": 83.2,
             "pitchTypeFitScore": 57.3,
             "pitchTypeGrade": -1.08,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 55.2,
-            "matchupGrade": -0.3
+            "matchupScore": 54.6,
+            "matchupGrade": -0.42
           },
           "pitchType": {
             "fitScore": 57.3,
@@ -27087,35 +27085,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2017,
             "latestMlbYear": 2026,
             "careerGames": 936,
-            "careerPlateAppearances": 3882,
+            "careerPlateAppearances": 3883,
             "careerHits": 774,
             "careerHomeRuns": 191,
             "careerTotalBases": 1547,
-            "careerWalks": 508,
+            "careerWalks": 509,
             "careerStrikeouts": 974,
-            "careerHitRate": 0.19940000000000002,
+            "careerHitRate": 0.1993,
             "careerAvg": 0.236,
             "careerObp": 0.344,
             "careerSlg": 0.472,
             "careerOps": 0.816,
-            "careerTbPerPa": 0.3985059247810407,
-            "careerHrPerPa": 0.04920144255538382,
-            "careerKRate": 0.25090159711488924,
-            "careerBbRate": 0.13086038124678,
+            "careerTbPerPa": 0.3984032964202936,
+            "careerHrPerPa": 0.04918877156837497,
+            "careerKRate": 0.25083698171516866,
+            "careerBbRate": 0.13108421323718775,
             "bestPowerYear": 2017,
             "bestPowerHomeRuns": 18,
             "bestPowerSlg": 0.6176470588235294,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 160,
+            "recentMlbPlateAppearances": 161,
             "recentMlbHomeRuns": 5,
-            "recentMlbTbPerPa": 0.3,
-            "careerPowerIndex": 75.24,
-            "contactRiskIndex": 46.92,
+            "recentMlbTbPerPa": 0.2981366459627329,
+            "careerPowerIndex": 75.15,
+            "contactRiskIndex": 46.89,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/656555?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "heater",
@@ -27124,8 +27122,8 @@ export const lineupBoardsByGameId = {
             "career power"
           ],
           "primaryTag": "heater",
-          "summary": ".190 AVG | .718 OPS | 24 H | 5 HR | 10g: .231 AVG | .824 OPS | 6 H | 2 HR | vs LHP: .156 AVG | .666 OPS | 3 HR | career 3882 PA | .816 OPS | 191 HR | repeatable career power | power 75 | 2026 sample ok | arsenal Sinker 29% / Cutter 20% / 4-Seam Fastball 19% | fit -1.1 | -0.3 matchup grade in a contact-suppressor lane",
-          "matchupNote": "-0.30 vs Ranger Suarez"
+          "summary": ".190 AVG | .723 OPS | 24 H | 5 HR | 10g: .231 AVG | .824 OPS | 6 H | 2 HR | vs LHP: .156 AVG | .666 OPS | 3 HR | career 3883 PA | .816 OPS | 191 HR | repeatable career power | power 75 | 2026 sample ok | arsenal Sinker 29% / Cutter 20% / 4-Seam Fastball 19% | fit -1.1 | -0.4 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-0.42 vs Ranger Suarez"
         },
         {
           "playerId": 681807,
@@ -27146,24 +27144,24 @@ export const lineupBoardsByGameId = {
           },
           "season": {
             "gamesPlayed": 37,
-            "hits": 18,
+            "hits": 19,
             "singles": 13,
-            "doubles": 2,
+            "doubles": 3,
             "triples": 0,
             "homeRuns": 3,
             "walks": 13,
-            "totalBases": 29,
-            "atBats": 77,
-            "plateAppearances": 90,
-            "avg": 0.234,
-            "obp": 0.344,
-            "slg": 0.377,
-            "ops": 0.721,
-            "hitRate": 0.2,
-            "singlesRate": 0.1444,
-            "hrRate": 0.0333,
-            "walkRate": 0.1444,
-            "totalBasesRate": 0.3222
+            "totalBases": 31,
+            "atBats": 78,
+            "plateAppearances": 91,
+            "avg": 0.244,
+            "obp": 0.352,
+            "slg": 0.397,
+            "ops": 0.749,
+            "hitRate": 0.20879999999999999,
+            "singlesRate": 0.1429,
+            "hrRate": 0.033,
+            "walkRate": 0.1429,
+            "totalBasesRate": 0.3407
           },
           "recent": {
             "gamesPlayed": 8,
@@ -27209,9 +27207,9 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.22219999999999998
           },
           "metrics": {
-            "powerScore": 42.5,
-            "contactScore": 29.5,
-            "patienceScore": 73.2,
+            "powerScore": 44.8,
+            "contactScore": 31,
+            "patienceScore": 72.4,
             "formScore": 18,
             "splitScore": 18,
             "varianceScore": 92,
@@ -27287,35 +27285,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2023,
             "latestMlbYear": 2026,
             "careerGames": 283,
-            "careerPlateAppearances": 752,
-            "careerHits": 155,
+            "careerPlateAppearances": 753,
+            "careerHits": 156,
             "careerHomeRuns": 29,
-            "careerTotalBases": 274,
+            "careerTotalBases": 276,
             "careerWalks": 72,
             "careerStrikeouts": 199,
-            "careerHitRate": 0.2061,
-            "careerAvg": 0.235,
-            "careerObp": 0.323,
-            "careerSlg": 0.416,
-            "careerOps": 0.739,
-            "careerTbPerPa": 0.36436170212765956,
-            "careerHrPerPa": 0.03856382978723404,
-            "careerKRate": 0.2646276595744681,
-            "careerBbRate": 0.09574468085106383,
+            "careerHitRate": 0.2072,
+            "careerAvg": 0.236,
+            "careerObp": 0.324,
+            "careerSlg": 0.418,
+            "careerOps": 0.742,
+            "careerTbPerPa": 0.3665338645418327,
+            "careerHrPerPa": 0.03851261620185923,
+            "careerKRate": 0.2642762284196547,
+            "careerBbRate": 0.09561752988047809,
             "bestPowerYear": 2025,
             "bestPowerHomeRuns": 8,
             "bestPowerSlg": 0.363013698630137,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 90,
+            "recentMlbPlateAppearances": 91,
             "recentMlbHomeRuns": 3,
-            "recentMlbTbPerPa": 0.32222222222222224,
-            "careerPowerIndex": 59.39,
-            "contactRiskIndex": 51.63,
+            "recentMlbTbPerPa": 0.34065934065934067,
+            "careerPowerIndex": 60.43,
+            "contactRiskIndex": 51.58,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/681807?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -27324,7 +27322,7 @@ export const lineupBoardsByGameId = {
             "statcast fade"
           ],
           "primaryTag": "split edge",
-          "summary": ".234 AVG | .721 OPS | 18 H | 3 HR | 8g: .143 AVG | .286 OPS | 2 H | 0 HR | vs LHP: .200 AVG | .600 OPS | 1 HR | career 752 PA | .739 OPS | 29 HR | baseline career profile | power 59 | 2026 sample ok | arsenal Sinker 29% / Cutter 20% / 4-Seam Fastball 19% | fit -2.2 | -8.0 matchup grade in a contact-suppressor lane",
+          "summary": ".244 AVG | .749 OPS | 19 H | 3 HR | 8g: .143 AVG | .286 OPS | 2 H | 0 HR | vs LHP: .200 AVG | .600 OPS | 1 HR | career 753 PA | .742 OPS | 29 HR | baseline career profile | power 60 | 2026 sample ok | arsenal Sinker 29% / Cutter 20% / 4-Seam Fastball 19% | fit -2.2 | -8.0 matchup grade in a contact-suppressor lane",
           "matchupNote": "-8.00 vs Ranger Suarez"
         },
         {
@@ -27354,16 +27352,16 @@ export const lineupBoardsByGameId = {
             "walks": 17,
             "totalBases": 56,
             "atBats": 156,
-            "plateAppearances": 176,
+            "plateAppearances": 177,
             "avg": 0.224,
-            "obp": 0.307,
+            "obp": 0.311,
             "slg": 0.359,
-            "ops": 0.666,
-            "hitRate": 0.1989,
-            "singlesRate": 0.142,
-            "hrRate": 0.028399999999999998,
-            "walkRate": 0.0966,
-            "totalBasesRate": 0.3182
+            "ops": 0.67,
+            "hitRate": 0.1977,
+            "singlesRate": 0.1412,
+            "hrRate": 0.0282,
+            "walkRate": 0.096,
+            "totalBasesRate": 0.3164
           },
           "recent": {
             "gamesPlayed": 10,
@@ -27410,16 +27408,16 @@ export const lineupBoardsByGameId = {
           },
           "metrics": {
             "powerScore": 48.4,
-            "contactScore": 42.9,
-            "patienceScore": 56.4,
+            "contactScore": 43.2,
+            "patienceScore": 57,
             "formScore": 18,
             "splitScore": 92,
             "varianceScore": 92,
             "pitchTypeFitScore": 46.2,
             "pitchTypeGrade": -2.69,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 44.9,
-            "matchupGrade": -1.21
+            "matchupScore": 44.4,
+            "matchupGrade": -1.33
           },
           "pitchType": {
             "fitScore": 46.2,
@@ -27487,35 +27485,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2024,
             "latestMlbYear": 2026,
             "careerGames": 247,
-            "careerPlateAppearances": 863,
+            "careerPlateAppearances": 864,
             "careerHits": 179,
             "careerHomeRuns": 37,
             "careerTotalBases": 331,
             "careerWalks": 74,
             "careerStrikeouts": 236,
-            "careerHitRate": 0.20739999999999997,
+            "careerHitRate": 0.2072,
             "careerAvg": 0.232,
-            "careerObp": 0.306,
+            "careerObp": 0.307,
             "careerSlg": 0.429,
-            "careerOps": 0.735,
-            "careerTbPerPa": 0.38354577056778677,
-            "careerHrPerPa": 0.04287369640787949,
-            "careerKRate": 0.2734646581691773,
-            "careerBbRate": 0.08574739281575898,
+            "careerOps": 0.736,
+            "careerTbPerPa": 0.38310185185185186,
+            "careerHrPerPa": 0.04282407407407408,
+            "careerKRate": 0.27314814814814814,
+            "careerBbRate": 0.08564814814814815,
             "bestPowerYear": 2025,
             "bestPowerHomeRuns": 27,
             "bestPowerSlg": 0.4553191489361702,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 176,
+            "recentMlbPlateAppearances": 177,
             "recentMlbHomeRuns": 5,
-            "recentMlbTbPerPa": 0.3181818181818182,
-            "careerPowerIndex": 64.77,
-            "contactRiskIndex": 53.91,
+            "recentMlbTbPerPa": 0.3163841807909605,
+            "careerPowerIndex": 64.65,
+            "contactRiskIndex": 53.86,
             "roleStabilityIndex": 96,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/700932?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -27524,8 +27522,8 @@ export const lineupBoardsByGameId = {
             "statcast fade"
           ],
           "primaryTag": "split edge",
-          "summary": ".224 AVG | .666 OPS | 35 H | 5 HR | 10g: .250 AVG | .618 OPS | 8 H | 0 HR | vs LHP: .375 AVG | .923 OPS | 1 HR | career 863 PA | .735 OPS | 37 HR | baseline career profile | power 65 | 2026 sample ok | arsenal Sinker 29% / Cutter 20% / 4-Seam Fastball 19% | fit -2.7 | -1.2 matchup grade in a contact-suppressor lane",
-          "matchupNote": "-1.21 vs Ranger Suarez"
+          "summary": ".224 AVG | .670 OPS | 35 H | 5 HR | 10g: .250 AVG | .618 OPS | 8 H | 0 HR | vs LHP: .375 AVG | .923 OPS | 1 HR | career 864 PA | .736 OPS | 37 HR | baseline career profile | power 65 | 2026 sample ok | arsenal Sinker 29% / Cutter 20% / 4-Seam Fastball 19% | fit -2.7 | -1.3 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-1.33 vs Ranger Suarez"
         },
         {
           "playerId": 656413,
@@ -27553,8 +27551,8 @@ export const lineupBoardsByGameId = {
             "homeRuns": 0,
             "walks": 0,
             "totalBases": 0,
-            "atBats": 2,
-            "plateAppearances": 2,
+            "atBats": 3,
+            "plateAppearances": 3,
             "avg": 0,
             "obp": 0,
             "slg": 0,
@@ -27588,8 +27586,8 @@ export const lineupBoardsByGameId = {
           },
           "split": null,
           "metrics": {
-            "powerScore": 35.8,
-            "contactScore": 39.2,
+            "powerScore": 35.6,
+            "contactScore": 39.1,
             "patienceScore": 61.5,
             "formScore": 50,
             "splitScore": 50,
@@ -27650,35 +27648,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2021,
             "latestMlbYear": 2026,
             "careerGames": 279,
-            "careerPlateAppearances": 672,
+            "careerPlateAppearances": 673,
             "careerHits": 132,
             "careerHomeRuns": 18,
             "careerTotalBases": 227,
             "careerWalks": 55,
-            "careerStrikeouts": 183,
-            "careerHitRate": 0.19640000000000002,
-            "careerAvg": 0.223,
+            "careerStrikeouts": 184,
+            "careerHitRate": 0.1961,
+            "careerAvg": 0.222,
             "careerObp": 0.304,
-            "careerSlg": 0.383,
-            "careerOps": 0.687,
-            "careerTbPerPa": 0.33779761904761907,
-            "careerHrPerPa": 0.026785714285714284,
-            "careerKRate": 0.27232142857142855,
-            "careerBbRate": 0.0818452380952381,
+            "careerSlg": 0.382,
+            "careerOps": 0.686,
+            "careerTbPerPa": 0.337295690936107,
+            "careerHrPerPa": 0.02674591381872214,
+            "careerKRate": 0.27340267459138184,
+            "careerBbRate": 0.08172362555720654,
             "bestPowerYear": 2022,
             "bestPowerHomeRuns": 10,
             "bestPowerSlg": 0.4639175257731959,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 2,
+            "recentMlbPlateAppearances": 3,
             "recentMlbHomeRuns": 0,
             "recentMlbTbPerPa": 0,
-            "careerPowerIndex": 45.2,
-            "contactRiskIndex": 53.93,
-            "roleStabilityIndex": 83.5,
+            "careerPowerIndex": 45.01,
+            "contactRiskIndex": 54.14,
+            "roleStabilityIndex": 83.75,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/656413?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -27687,7 +27685,7 @@ export const lineupBoardsByGameId = {
             "small-sample story"
           ],
           "primaryTag": "split edge",
-          "summary": ".000 AVG | .000 OPS | 0 H | 0 HR | 2g: .000 AVG | .000 OPS | 0 H | 0 HR | No clean split stored vs LHP | career 672 PA | .687 OPS | 18 HR | baseline career profile | power 45 | tiny 2026 sample | arsenal 4-Seam Fastball 19% | fit -8.0 | -8.0 matchup grade in a contact-suppressor lane",
+          "summary": ".000 AVG | .000 OPS | 0 H | 0 HR | 2g: .000 AVG | .000 OPS | 0 H | 0 HR | No clean split stored vs LHP | career 673 PA | .686 OPS | 18 HR | baseline career profile | power 45 | tiny 2026 sample | arsenal 4-Seam Fastball 19% | fit -8.0 | -8.0 matchup grade in a contact-suppressor lane",
           "matchupNote": "-8.00 vs Ranger Suarez"
         },
         {
@@ -27709,24 +27707,24 @@ export const lineupBoardsByGameId = {
           },
           "season": {
             "gamesPlayed": 29,
-            "hits": 17,
-            "singles": 12,
+            "hits": 18,
+            "singles": 13,
             "doubles": 4,
             "triples": 0,
             "homeRuns": 1,
             "walks": 9,
-            "totalBases": 24,
-            "atBats": 74,
-            "plateAppearances": 86,
-            "avg": 0.23,
-            "obp": 0.31,
-            "slg": 0.324,
-            "ops": 0.634,
-            "hitRate": 0.1977,
-            "singlesRate": 0.13949999999999999,
-            "hrRate": 0.0116,
-            "walkRate": 0.1047,
-            "totalBasesRate": 0.2791
+            "totalBases": 25,
+            "atBats": 75,
+            "plateAppearances": 87,
+            "avg": 0.24,
+            "obp": 0.318,
+            "slg": 0.333,
+            "ops": 0.651,
+            "hitRate": 0.2069,
+            "singlesRate": 0.1494,
+            "hrRate": 0.0115,
+            "walkRate": 0.10339999999999999,
+            "totalBasesRate": 0.2874
           },
           "recent": {
             "gamesPlayed": 6,
@@ -27772,9 +27770,9 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.375
           },
           "metrics": {
-            "powerScore": 29.8,
-            "contactScore": 55.2,
-            "patienceScore": 57.2,
+            "powerScore": 30.8,
+            "contactScore": 56.7,
+            "patienceScore": 56.6,
             "formScore": 18,
             "splitScore": 92,
             "varianceScore": 92,
@@ -27850,35 +27848,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2015,
             "latestMlbYear": 2026,
             "careerGames": 852,
-            "careerPlateAppearances": 2625,
-            "careerHits": 439,
+            "careerPlateAppearances": 2626,
+            "careerHits": 440,
             "careerHomeRuns": 75,
-            "careerTotalBases": 738,
+            "careerTotalBases": 739,
             "careerWalks": 169,
             "careerStrikeouts": 709,
-            "careerHitRate": 0.1672,
-            "careerAvg": 0.186,
+            "careerHitRate": 0.16760000000000003,
+            "careerAvg": 0.187,
             "careerObp": 0.246,
             "careerSlg": 0.313,
             "careerOps": 0.559,
-            "careerTbPerPa": 0.28114285714285714,
-            "careerHrPerPa": 0.02857142857142857,
-            "careerKRate": 0.2700952380952381,
-            "careerBbRate": 0.06438095238095239,
+            "careerTbPerPa": 0.2814166031987814,
+            "careerHrPerPa": 0.02856054836252856,
+            "careerKRate": 0.26999238385377,
+            "careerBbRate": 0.06435643564356436,
             "bestPowerYear": 2017,
             "bestPowerHomeRuns": 18,
             "bestPowerSlg": 0.3979328165374677,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 86,
+            "recentMlbPlateAppearances": 87,
             "recentMlbHomeRuns": 1,
-            "recentMlbTbPerPa": 0.27906976744186046,
-            "careerPowerIndex": 35.06,
-            "contactRiskIndex": 54.56,
+            "recentMlbTbPerPa": 0.28735632183908044,
+            "careerPowerIndex": 35.43,
+            "contactRiskIndex": 54.54,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/595978?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -27887,7 +27885,7 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".230 AVG | .634 OPS | 17 H | 1 HR | 6g: .100 AVG | .282 OPS | 2 H | 0 HR | vs LHP: .303 AVG | .823 OPS | 1 HR | career 2625 PA | .559 OPS | 75 HR | baseline career profile | power 35 | 2026 sample ok | arsenal Sinker 29% / Cutter 20% / 4-Seam Fastball 19% | fit -4.2 | -8.0 matchup grade in a contact-suppressor lane",
+          "summary": ".240 AVG | .651 OPS | 18 H | 1 HR | 6g: .100 AVG | .282 OPS | 2 H | 0 HR | vs LHP: .303 AVG | .823 OPS | 1 HR | career 2626 PA | .559 OPS | 75 HR | baseline career profile | power 35 | 2026 sample ok | arsenal Sinker 29% / Cutter 20% / 4-Seam Fastball 19% | fit -4.2 | -8.0 matchup grade in a contact-suppressor lane",
           "matchupNote": "-8.00 vs Ranger Suarez"
         },
         {
@@ -27916,17 +27914,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 4,
             "walks": 20,
             "totalBases": 75,
-            "atBats": 184,
-            "plateAppearances": 212,
-            "avg": 0.288,
-            "obp": 0.371,
-            "slg": 0.408,
-            "ops": 0.779,
-            "hitRate": 0.25,
-            "singlesRate": 0.1887,
-            "hrRate": 0.0189,
-            "walkRate": 0.0943,
-            "totalBasesRate": 0.3538
+            "atBats": 185,
+            "plateAppearances": 213,
+            "avg": 0.286,
+            "obp": 0.37,
+            "slg": 0.405,
+            "ops": 0.775,
+            "hitRate": 0.2488,
+            "singlesRate": 0.18780000000000002,
+            "hrRate": 0.018799999999999997,
+            "walkRate": 0.09390000000000001,
+            "totalBasesRate": 0.3521
           },
           "recent": {
             "gamesPlayed": 12,
@@ -27972,17 +27970,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.4
           },
           "metrics": {
-            "powerScore": 42.5,
+            "powerScore": 42.3,
             "contactScore": 70.3,
-            "patienceScore": 55.9,
+            "patienceScore": 55.7,
             "formScore": 18,
-            "splitScore": 65.8,
-            "varianceScore": 57.5,
+            "splitScore": 66.6,
+            "varianceScore": 57.3,
             "pitchTypeFitScore": 41.2,
             "pitchTypeGrade": -3.42,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 22.4,
-            "matchupGrade": -5.81
+            "matchupScore": 23,
+            "matchupGrade": -5.69
           },
           "pitchType": {
             "fitScore": 41.2,
@@ -28050,35 +28048,35 @@ export const lineupBoardsByGameId = {
             "debutYear": 2023,
             "latestMlbYear": 2026,
             "careerGames": 339,
-            "careerPlateAppearances": 1123,
+            "careerPlateAppearances": 1124,
             "careerHits": 232,
             "careerHomeRuns": 17,
             "careerTotalBases": 339,
             "careerWalks": 90,
             "careerStrikeouts": 219,
-            "careerHitRate": 0.2066,
+            "careerHitRate": 0.2064,
             "careerAvg": 0.234,
-            "careerObp": 0.308,
-            "careerSlg": 0.342,
-            "careerOps": 0.65,
-            "careerTbPerPa": 0.3018699910952805,
-            "careerHrPerPa": 0.015138023152270703,
-            "careerKRate": 0.195013357079252,
-            "careerBbRate": 0.08014247551202137,
+            "careerObp": 0.307,
+            "careerSlg": 0.341,
+            "careerOps": 0.648,
+            "careerTbPerPa": 0.3016014234875445,
+            "careerHrPerPa": 0.015124555160142349,
+            "careerKRate": 0.19483985765124556,
+            "careerBbRate": 0.0800711743772242,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 4,
-            "bestPowerSlg": 0.4076086956521739,
+            "bestPowerSlg": 0.40540540540540543,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 212,
+            "recentMlbPlateAppearances": 213,
             "recentMlbHomeRuns": 4,
-            "recentMlbTbPerPa": 0.35377358490566035,
-            "careerPowerIndex": 30.1,
-            "contactRiskIndex": 39.34,
+            "recentMlbTbPerPa": 0.352112676056338,
+            "careerPowerIndex": 29.89,
+            "contactRiskIndex": 39.32,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/677587?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -28088,8 +28086,8 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".288 AVG | .779 OPS | 53 H | 4 HR | 12g: .263 AVG | .649 OPS | 10 H | 0 HR | vs LHP: .273 AVG | .832 OPS | 2 HR | career 1123 PA | .650 OPS | 17 HR | contact-stable profile | power 30 | 2026 sample ok | arsenal Sinker 29% / Cutter 20% / 4-Seam Fastball 19% | fit -3.4 | -5.8 matchup grade in a contact-suppressor lane",
-          "matchupNote": "-5.81 vs Ranger Suarez"
+          "summary": ".286 AVG | .775 OPS | 53 H | 4 HR | 12g: .263 AVG | .649 OPS | 10 H | 0 HR | vs LHP: .273 AVG | .832 OPS | 2 HR | career 1124 PA | .648 OPS | 17 HR | contact-stable profile | power 30 | 2026 sample ok | arsenal Sinker 29% / Cutter 20% / 4-Seam Fastball 19% | fit -3.4 | -5.7 matchup grade in a contact-suppressor lane",
+          "matchupNote": "-5.69 vs Ranger Suarez"
         }
       ],
       "bvpHistory": {
@@ -28110,7 +28108,7 @@ export const lineupBoardsByGameId = {
         "summary": "Stuart Fairchild carries the weakest visible BvP lane against this starter."
       },
       "aggregate": {
-        "averageMatchupGrade": -2.94,
+        "averageMatchupGrade": -2.96,
         "trackedBatters": 9,
         "starterThreatCount": 1,
         "contactCount": 4,
@@ -28124,13 +28122,13 @@ export const lineupBoardsByGameId = {
         "topThirdArsenalCount": 0,
         "heaterCount": 2,
         "suppressorCount": 2,
-        "platoonPressureIndex": 52,
+        "platoonPressureIndex": 51.9,
         "pitchTypePressureIndex": 27.1,
         "bullpenPitchTypePressureIndex": 54.7,
         "starterPressureIndex": 18,
         "overallPressureIndex": 18.8,
         "topThirdScore": 56.7,
-        "depthScore": 19.5,
+        "depthScore": 19.7,
         "bullpenOverperformHitters": [
           {
             "name": "Chase DeLauter",
@@ -28188,8 +28186,8 @@ export const lineupBoardsByGameId = {
         "overview": "Guardians can lean on Travis Bazzana to drive early pressure against Ranger Suarez.",
         "bullpenOverview": "Tyron Guerrero is the first bridge look, and this lineup grades -2.9 against that likely first-up arsenal.",
         "topThirdScore": 56.7,
-        "middleScore": 39.4,
-        "depthScore": 19.5,
+        "middleScore": 39,
+        "depthScore": 19.7,
         "bullpenPitchTypeSummary": {
           "pressureIndex": 54.7,
           "averageFitScore": 60,
@@ -28287,7 +28285,7 @@ export const lineupBoardsByGameId = {
   "brewers-astros": {
     "gameId": "brewers-astros",
     "title": "Brewers @ Astros",
-    "snapshot": "2026-05-31T18:00:03.949Z",
+    "snapshot": "2026-05-31T18:17:29.717Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -28351,7 +28349,7 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 27,
+            "gamesPlayed": 28,
             "hits": 27,
             "singles": 17,
             "doubles": 5,
@@ -28359,17 +28357,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 4,
             "walks": 10,
             "totalBases": 46,
-            "atBats": 100,
-            "plateAppearances": 110,
-            "avg": 0.27,
-            "obp": 0.336,
-            "slg": 0.46,
-            "ops": 0.796,
-            "hitRate": 0.2455,
-            "singlesRate": 0.1545,
-            "hrRate": 0.0364,
-            "walkRate": 0.0909,
-            "totalBasesRate": 0.4182
+            "atBats": 101,
+            "plateAppearances": 111,
+            "avg": 0.267,
+            "obp": 0.333,
+            "slg": 0.455,
+            "ops": 0.789,
+            "hitRate": 0.2432,
+            "singlesRate": 0.1532,
+            "hrRate": 0.036000000000000004,
+            "walkRate": 0.0901,
+            "totalBasesRate": 0.4144
           },
           "recent": {
             "gamesPlayed": 10,
@@ -28415,12 +28413,12 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.4058
           },
           "metrics": {
-            "powerScore": 57.5,
-            "contactScore": 51.5,
-            "patienceScore": 53,
+            "powerScore": 56.9,
+            "contactScore": 51,
+            "patienceScore": 52.8,
             "formScore": 92,
-            "splitScore": 40.3,
-            "varianceScore": 77.6,
+            "splitScore": 42,
+            "varianceScore": 77.5,
             "pitchTypeFitScore": 64.6,
             "pitchTypeGrade": 2.38,
             "pitchTypeCoveragePct": 100,
@@ -28492,8 +28490,8 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 14,
             "debutYear": 2013,
             "latestMlbYear": 2026,
-            "careerGames": 1643,
-            "careerPlateAppearances": 7137,
+            "careerGames": 1644,
+            "careerPlateAppearances": 7138,
             "careerHits": 1768,
             "careerHomeRuns": 237,
             "careerTotalBases": 2883,
@@ -28504,24 +28502,24 @@ export const lineupBoardsByGameId = {
             "careerObp": 0.373,
             "careerSlg": 0.464,
             "careerOps": 0.837,
-            "careerTbPerPa": 0.40395124001681376,
-            "careerHrPerPa": 0.0332072299285414,
-            "careerKRate": 0.2211013030685162,
-            "careerBbRate": 0.1182569707159871,
+            "careerTbPerPa": 0.4038946483608854,
+            "careerHrPerPa": 0.033202577752871956,
+            "careerKRate": 0.22107032782291958,
+            "careerBbRate": 0.11824040347436257,
             "bestPowerYear": 2019,
             "bestPowerHomeRuns": 44,
             "bestPowerSlg": 0.6707566462167689,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 110,
+            "recentMlbPlateAppearances": 111,
             "recentMlbHomeRuns": 4,
-            "recentMlbTbPerPa": 0.41818181818181815,
-            "careerPowerIndex": 65.12,
+            "recentMlbTbPerPa": 0.4144144144144144,
+            "careerPowerIndex": 64.95,
             "contactRiskIndex": 42.01,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/592885?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -28531,7 +28529,7 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "carry",
-          "summary": ".270 AVG | .796 OPS | 27 H | 4 HR | 10g: .350 AVG | .959 OPS | 14 H | 2 HR | vs RHP: .270 AVG | .778 OPS | 2 HR | career 7137 PA | .837 OPS | 237 HR | baseline career profile | power 65 | 2026 sample ok | arsenal Slider 43% / 4-Seam Fastball 40% / Sinker 12% | fit +2.4 | +10.0 matchup grade in a traffic-risk lane",
+          "summary": ".267 AVG | .789 OPS | 27 H | 4 HR | 10g: .350 AVG | .959 OPS | 14 H | 2 HR | vs RHP: .270 AVG | .778 OPS | 2 HR | career 7138 PA | .837 OPS | 237 HR | baseline career profile | power 65 | 2026 sample ok | arsenal Slider 43% / 4-Seam Fastball 40% / Sinker 12% | fit +2.4 | +10.0 matchup grade in a traffic-risk lane",
           "matchupNote": "+10.00 vs Tatsuya Imai"
         },
         {
@@ -28552,7 +28550,7 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 48,
+            "gamesPlayed": 49,
             "hits": 34,
             "singles": 21,
             "doubles": 9,
@@ -28560,17 +28558,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 3,
             "walks": 26,
             "totalBases": 54,
-            "atBats": 144,
-            "plateAppearances": 174,
-            "avg": 0.236,
-            "obp": 0.358,
-            "slg": 0.375,
-            "ops": 0.733,
-            "hitRate": 0.1954,
-            "singlesRate": 0.1207,
-            "hrRate": 0.0172,
-            "walkRate": 0.1494,
-            "totalBasesRate": 0.3103
+            "atBats": 145,
+            "plateAppearances": 175,
+            "avg": 0.234,
+            "obp": 0.356,
+            "slg": 0.372,
+            "ops": 0.729,
+            "hitRate": 0.1943,
+            "singlesRate": 0.12,
+            "hrRate": 0.0171,
+            "walkRate": 0.14859999999999998,
+            "totalBasesRate": 0.3086
           },
           "recent": {
             "gamesPlayed": 12,
@@ -28616,11 +28614,11 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.3333
           },
           "metrics": {
-            "powerScore": 37.9,
-            "contactScore": 25.9,
-            "patienceScore": 77,
+            "powerScore": 37.6,
+            "contactScore": 25.8,
+            "patienceScore": 76.8,
             "formScore": 92,
-            "splitScore": 55.8,
+            "splitScore": 56.7,
             "varianceScore": 92,
             "pitchTypeFitScore": 43.7,
             "pitchTypeGrade": 0.08,
@@ -28693,36 +28691,36 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 5,
             "debutYear": 2022,
             "latestMlbYear": 2026,
-            "careerGames": 189,
-            "careerPlateAppearances": 617,
+            "careerGames": 190,
+            "careerPlateAppearances": 618,
             "careerHits": 133,
             "careerHomeRuns": 16,
             "careerTotalBases": 223,
             "careerWalks": 71,
             "careerStrikeouts": 215,
-            "careerHitRate": 0.21559999999999999,
+            "careerHitRate": 0.2152,
             "careerAvg": 0.249,
-            "careerObp": 0.34,
-            "careerSlg": 0.418,
-            "careerOps": 0.758,
-            "careerTbPerPa": 0.36142625607779577,
-            "careerHrPerPa": 0.02593192868719611,
-            "careerKRate": 0.34846029173419774,
-            "careerBbRate": 0.11507293354943274,
+            "careerObp": 0.339,
+            "careerSlg": 0.417,
+            "careerOps": 0.756,
+            "careerTbPerPa": 0.36084142394822005,
+            "careerHrPerPa": 0.025889967637540454,
+            "careerKRate": 0.3478964401294498,
+            "careerBbRate": 0.11488673139158576,
             "bestPowerYear": 2023,
             "bestPowerHomeRuns": 3,
             "bestPowerSlg": 0.4461538461538462,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 174,
+            "recentMlbPlateAppearances": 175,
             "recentMlbHomeRuns": 3,
-            "recentMlbTbPerPa": 0.3103448275862069,
-            "careerPowerIndex": 47.74,
-            "contactRiskIndex": 66.4,
+            "recentMlbTbPerPa": 0.30857142857142855,
+            "careerPowerIndex": 47.5,
+            "contactRiskIndex": 66.31,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/669003?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -28731,7 +28729,7 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "carry",
-          "summary": ".236 AVG | .733 OPS | 34 H | 3 HR | 12g: .353 AVG | 1.064 OPS | 12 H | 2 HR | vs RHP: .232 AVG | .741 OPS | 3 HR | career 617 PA | .758 OPS | 16 HR | baseline career profile | power 48 | 2026 sample ok | arsenal Slider 43% / 4-Seam Fastball 40% / Sinker 12% | fit +0.1 | +10.0 matchup grade in a traffic-risk lane",
+          "summary": ".234 AVG | .729 OPS | 34 H | 3 HR | 12g: .353 AVG | 1.064 OPS | 12 H | 2 HR | vs RHP: .232 AVG | .741 OPS | 3 HR | career 618 PA | .756 OPS | 16 HR | baseline career profile | power 48 | 2026 sample ok | arsenal Slider 43% / 4-Seam Fastball 40% / Sinker 12% | fit +0.1 | +10.0 matchup grade in a traffic-risk lane",
           "matchupNote": "+10.00 vs Tatsuya Imai"
         },
         {
@@ -28752,7 +28750,7 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 52,
+            "gamesPlayed": 53,
             "hits": 51,
             "singles": 32,
             "doubles": 11,
@@ -28760,17 +28758,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 7,
             "walks": 42,
             "totalBases": 85,
-            "atBats": 190,
-            "plateAppearances": 236,
-            "avg": 0.268,
-            "obp": 0.397,
-            "slg": 0.447,
-            "ops": 0.845,
-            "hitRate": 0.2161,
-            "singlesRate": 0.1356,
-            "hrRate": 0.0297,
-            "walkRate": 0.17800000000000002,
-            "totalBasesRate": 0.3602
+            "atBats": 191,
+            "plateAppearances": 237,
+            "avg": 0.267,
+            "obp": 0.396,
+            "slg": 0.445,
+            "ops": 0.841,
+            "hitRate": 0.2152,
+            "singlesRate": 0.135,
+            "hrRate": 0.029500000000000002,
+            "walkRate": 0.1772,
+            "totalBasesRate": 0.3586
           },
           "recent": {
             "gamesPlayed": 12,
@@ -28816,17 +28814,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.4251
           },
           "metrics": {
-            "powerScore": 56,
-            "contactScore": 58,
-            "patienceScore": 84.7,
+            "powerScore": 55.7,
+            "contactScore": 57.8,
+            "patienceScore": 84.5,
             "formScore": 18,
-            "splitScore": 84.3,
+            "splitScore": 85.2,
             "varianceScore": 92,
             "pitchTypeFitScore": 94,
             "pitchTypeGrade": 8.05,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 58.6,
-            "matchupGrade": 1.09
+            "matchupScore": 59.1,
+            "matchupGrade": 1.2
           },
           "pitchType": {
             "fitScore": 94,
@@ -28893,36 +28891,36 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 4,
             "debutYear": 2023,
             "latestMlbYear": 2026,
-            "careerGames": 500,
-            "careerPlateAppearances": 1962,
+            "careerGames": 501,
+            "careerPlateAppearances": 1963,
             "careerHits": 449,
             "careerHomeRuns": 38,
             "careerTotalBases": 655,
             "careerWalks": 196,
             "careerStrikeouts": 406,
-            "careerHitRate": 0.2288,
+            "careerHitRate": 0.22870000000000001,
             "careerAvg": 0.258,
             "careerObp": 0.333,
             "careerSlg": 0.377,
             "careerOps": 0.71,
-            "careerTbPerPa": 0.33384301732925586,
-            "careerHrPerPa": 0.019367991845056064,
-            "careerKRate": 0.2069317023445464,
-            "careerBbRate": 0.0998980632008155,
+            "careerTbPerPa": 0.3336729495669893,
+            "careerHrPerPa": 0.01935812531839022,
+            "careerKRate": 0.20682628629648497,
+            "careerBbRate": 0.09984717269485481,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 7,
-            "bestPowerSlg": 0.4473684210526316,
+            "bestPowerSlg": 0.44502617801047123,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 236,
+            "recentMlbPlateAppearances": 237,
             "recentMlbHomeRuns": 7,
-            "recentMlbTbPerPa": 0.3601694915254237,
-            "careerPowerIndex": 38.75,
-            "contactRiskIndex": 40.42,
+            "recentMlbTbPerPa": 0.35864978902953587,
+            "careerPowerIndex": 38.67,
+            "contactRiskIndex": 40.41,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/668930?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -28931,8 +28929,8 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".268 AVG | .845 OPS | 51 H | 7 HR | 12g: .053 AVG | .293 OPS | 2 H | 0 HR | vs RHP: .303 AVG | .972 OPS | 7 HR | career 1962 PA | .710 OPS | 38 HR | contact-stable profile | power 39 | 2026 sample ok | arsenal Slider 43% / 4-Seam Fastball 40% / Sinker 12% | fit +8.1 | +1.1 matchup grade in a traffic-risk lane",
-          "matchupNote": "+1.09 vs Tatsuya Imai"
+          "summary": ".267 AVG | .841 OPS | 51 H | 7 HR | 12g: .053 AVG | .293 OPS | 2 H | 0 HR | vs RHP: .303 AVG | .972 OPS | 7 HR | career 1963 PA | .710 OPS | 38 HR | contact-stable profile | power 39 | 2026 sample ok | arsenal Slider 43% / 4-Seam Fastball 40% / Sinker 12% | fit +8.1 | +1.2 matchup grade in a traffic-risk lane",
+          "matchupNote": "+1.20 vs Tatsuya Imai"
         },
         {
           "playerId": 683734,
@@ -29122,7 +29120,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/683734?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -29322,7 +29320,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/641343?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -29523,7 +29521,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/596142?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "cold",
@@ -29722,7 +29720,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/686217?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -29923,7 +29921,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/666152?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "heater",
@@ -30123,7 +30121,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/687401?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal risk",
@@ -30141,7 +30139,7 @@ export const lineupBoardsByGameId = {
         "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
       },
       "aggregate": {
-        "averageMatchupGrade": 2.08,
+        "averageMatchupGrade": 2.09,
         "trackedBatters": 9,
         "starterThreatCount": 4,
         "contactCount": 2,
@@ -30155,12 +30153,12 @@ export const lineupBoardsByGameId = {
         "topThirdArsenalCount": 2,
         "heaterCount": 4,
         "suppressorCount": 2,
-        "platoonPressureIndex": 87.2,
+        "platoonPressureIndex": 87.3,
         "pitchTypePressureIndex": 79.3,
         "bullpenPitchTypePressureIndex": 48.8,
         "starterPressureIndex": 94,
         "overallPressureIndex": 93.8,
-        "topThirdScore": 82.2,
+        "topThirdScore": 82.4,
         "depthScore": 18.8,
         "bullpenOverperformHitters": [
           {
@@ -30226,7 +30224,7 @@ export const lineupBoardsByGameId = {
         "underperformNote": "David Hamilton and Joey Ortiz carry the softer form or split fit into a traffic-risk lane.",
         "overview": "Brewers can lean on Christian Yelich, Garrett Mitchell, Jake Bauers to drive early pressure against Tatsuya Imai.",
         "bullpenOverview": "Steven Okert is the first bridge look, and this lineup grades -2.6 against that likely first-up arsenal.",
-        "topThirdScore": 82.2,
+        "topThirdScore": 82.4,
         "middleScore": 76.4,
         "depthScore": 18.8,
         "bullpenPitchTypeSummary": {
@@ -30367,7 +30365,7 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 22,
+            "gamesPlayed": 23,
             "hits": 24,
             "singles": 17,
             "doubles": 4,
@@ -30432,7 +30430,7 @@ export const lineupBoardsByGameId = {
           },
           "metrics": {
             "powerScore": 48.5,
-            "contactScore": 68.1,
+            "contactScore": 67.2,
             "patienceScore": 36.5,
             "formScore": 92,
             "splitScore": 34.8,
@@ -30508,7 +30506,7 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 5,
             "debutYear": 2022,
             "latestMlbYear": 2026,
-            "careerGames": 590,
+            "careerGames": 591,
             "careerPlateAppearances": 2481,
             "careerHits": 618,
             "careerHomeRuns": 67,
@@ -30537,7 +30535,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/665161?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -30738,7 +30736,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/670541?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -30770,7 +30768,7 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 59,
+            "gamesPlayed": 60,
             "hits": 55,
             "singles": 29,
             "doubles": 10,
@@ -30835,11 +30833,11 @@ export const lineupBoardsByGameId = {
           },
           "metrics": {
             "powerScore": 90.9,
-            "contactScore": 58.1,
+            "contactScore": 57.8,
             "patienceScore": 52.9,
             "formScore": 72.1,
             "splitScore": 57.1,
-            "varianceScore": 64.5,
+            "varianceScore": 64.6,
             "pitchTypeFitScore": 74.2,
             "pitchTypeGrade": -2.3,
             "pitchTypeCoveragePct": 100,
@@ -30911,7 +30909,7 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 12,
             "debutYear": 2014,
             "latestMlbYear": 2026,
-            "careerGames": 1045,
+            "careerGames": 1046,
             "careerPlateAppearances": 4153,
             "careerHits": 914,
             "careerHomeRuns": 190,
@@ -30940,7 +30938,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/572233?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -31141,7 +31139,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/666211?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -31340,7 +31338,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/670623?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal risk",
@@ -31539,7 +31537,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/701358?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "heater",
@@ -31569,7 +31567,7 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 23,
+            "gamesPlayed": 24,
             "hits": 16,
             "singles": 11,
             "doubles": 3,
@@ -31634,7 +31632,7 @@ export const lineupBoardsByGameId = {
           },
           "metrics": {
             "powerScore": 34.4,
-            "contactScore": 52.8,
+            "contactScore": 52.3,
             "patienceScore": 43.8,
             "formScore": 79.7,
             "splitScore": 59.5,
@@ -31710,7 +31708,7 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 6,
             "debutYear": 2021,
             "latestMlbYear": 2026,
-            "careerGames": 488,
+            "careerGames": 489,
             "careerPlateAppearances": 1634,
             "careerHits": 359,
             "careerHomeRuns": 35,
@@ -31739,7 +31737,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/676694?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "heater",
@@ -31770,7 +31768,7 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 31,
+            "gamesPlayed": 32,
             "hits": 13,
             "singles": 11,
             "doubles": 1,
@@ -31835,7 +31833,7 @@ export const lineupBoardsByGameId = {
           },
           "metrics": {
             "powerScore": 18,
-            "contactScore": 52.5,
+            "contactScore": 52.3,
             "patienceScore": 38.9,
             "formScore": 92,
             "splitScore": 18,
@@ -31911,7 +31909,7 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 5,
             "debutYear": 2022,
             "latestMlbYear": 2026,
-            "careerGames": 413,
+            "careerGames": 414,
             "careerPlateAppearances": 1230,
             "careerHits": 241,
             "careerHomeRuns": 10,
@@ -31940,7 +31938,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/669397?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "heater",
@@ -31970,7 +31968,7 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 38,
+            "gamesPlayed": 39,
             "hits": 28,
             "singles": 20,
             "doubles": 4,
@@ -32035,7 +32033,7 @@ export const lineupBoardsByGameId = {
           },
           "metrics": {
             "powerScore": 45.9,
-            "contactScore": 58.7,
+            "contactScore": 58.4,
             "patienceScore": 48.1,
             "formScore": 18,
             "splitScore": 49.1,
@@ -32111,7 +32109,7 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 12,
             "debutYear": 2014,
             "latestMlbYear": 2026,
-            "careerGames": 1031,
+            "careerGames": 1032,
             "careerPlateAppearances": 3641,
             "careerHits": 838,
             "careerHomeRuns": 75,
@@ -32140,7 +32138,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/543877?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal risk",
@@ -32343,7 +32341,7 @@ export const lineupBoardsByGameId = {
   "tigers-white-sox": {
     "gameId": "tigers-white-sox",
     "title": "Tigers @ White Sox",
-    "snapshot": "2026-05-31T18:00:03.949Z",
+    "snapshot": "2026-05-31T18:17:29.717Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -32358,7 +32356,7 @@ export const lineupBoardsByGameId = {
       "label": "65°F | Wind 7 mph L-R | 0% precip"
     },
     "marketWeatherContext": {
-      "line": "CWS -134",
+      "line": "CWS -132",
       "total": "8.0 Runs",
       "source": "RotoWire daily lineups + weather"
     },
@@ -32407,7 +32405,7 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 54,
+            "gamesPlayed": 55,
             "hits": 45,
             "singles": 36,
             "doubles": 8,
@@ -32415,17 +32413,17 @@ export const lineupBoardsByGameId = {
             "homeRuns": 0,
             "walks": 10,
             "totalBases": 55,
-            "atBats": 158,
-            "plateAppearances": 170,
-            "avg": 0.285,
-            "obp": 0.329,
-            "slg": 0.348,
-            "ops": 0.678,
-            "hitRate": 0.2647,
-            "singlesRate": 0.2118,
+            "atBats": 159,
+            "plateAppearances": 171,
+            "avg": 0.283,
+            "obp": 0.327,
+            "slg": 0.346,
+            "ops": 0.673,
+            "hitRate": 0.2632,
+            "singlesRate": 0.21050000000000002,
             "hrRate": 0,
-            "walkRate": 0.0588,
-            "totalBasesRate": 0.3235
+            "walkRate": 0.058499999999999996,
+            "totalBasesRate": 0.32159999999999994
           },
           "recent": {
             "gamesPlayed": 14,
@@ -32471,11 +32469,11 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.3375
           },
           "metrics": {
-            "powerScore": 19.7,
-            "contactScore": 59.9,
-            "patienceScore": 40.3,
+            "powerScore": 19.4,
+            "contactScore": 59.7,
+            "patienceScore": 40.2,
             "formScore": 92,
-            "splitScore": 54.7,
+            "splitScore": 55.5,
             "varianceScore": 92,
             "pitchTypeFitScore": 59.2,
             "pitchTypeGrade": 0.55,
@@ -32548,36 +32546,36 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 3,
             "debutYear": 2024,
             "latestMlbYear": 2026,
-            "careerGames": 339,
-            "careerPlateAppearances": 1194,
+            "careerGames": 340,
+            "careerPlateAppearances": 1195,
             "careerHits": 285,
             "careerHomeRuns": 26,
             "careerTotalBases": 422,
             "careerWalks": 94,
             "careerStrikeouts": 247,
-            "careerHitRate": 0.23870000000000002,
+            "careerHitRate": 0.23850000000000002,
             "careerAvg": 0.262,
-            "careerObp": 0.322,
+            "careerObp": 0.321,
             "careerSlg": 0.388,
-            "careerOps": 0.71,
-            "careerTbPerPa": 0.35343383584589616,
-            "careerHrPerPa": 0.021775544388609715,
-            "careerKRate": 0.2068676716917923,
-            "careerBbRate": 0.07872696817420435,
+            "careerOps": 0.709,
+            "careerTbPerPa": 0.35313807531380753,
+            "careerHrPerPa": 0.021757322175732216,
+            "careerKRate": 0.20669456066945607,
+            "careerBbRate": 0.07866108786610879,
             "bestPowerYear": 2025,
             "bestPowerHomeRuns": 13,
             "bestPowerSlg": 0.41304347826086957,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 170,
+            "recentMlbPlateAppearances": 171,
             "recentMlbHomeRuns": 0,
-            "recentMlbTbPerPa": 0.3235294117647059,
-            "careerPowerIndex": 40.7,
-            "contactRiskIndex": 41.68,
+            "recentMlbTbPerPa": 0.3216374269005848,
+            "careerPowerIndex": 40.6,
+            "contactRiskIndex": 41.65,
             "roleStabilityIndex": 96,
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/690993?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -32586,7 +32584,7 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "carry",
-          "summary": ".285 AVG | .678 OPS | 45 H | 0 HR | 14g: .400 AVG | .978 OPS | 12 H | 0 HR | vs RHP: .295 AVG | .700 OPS | 0 HR | career 1194 PA | .710 OPS | 26 HR | contact-stable profile | power 41 | 2026 sample ok | arsenal 4-Seam Fastball 37% / Curveball 22% / Slider 16% | fit +0.5 | +10.0 matchup grade in a neutral lane",
+          "summary": ".283 AVG | .673 OPS | 45 H | 0 HR | 14g: .400 AVG | .978 OPS | 12 H | 0 HR | vs RHP: .295 AVG | .700 OPS | 0 HR | career 1195 PA | .709 OPS | 26 HR | contact-stable profile | power 41 | 2026 sample ok | arsenal 4-Seam Fastball 37% / Curveball 22% / Slider 16% | fit +0.5 | +10.0 matchup grade in a neutral lane",
           "matchupNote": "+10.00 vs Sean Burke"
         },
         {
@@ -32607,25 +32605,25 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 57,
-            "hits": 61,
-            "singles": 43,
+            "gamesPlayed": 58,
+            "hits": 62,
+            "singles": 44,
             "doubles": 12,
             "triples": 3,
             "homeRuns": 3,
             "walks": 33,
-            "totalBases": 88,
-            "atBats": 215,
-            "plateAppearances": 250,
-            "avg": 0.284,
-            "obp": 0.384,
-            "slg": 0.409,
-            "ops": 0.793,
-            "hitRate": 0.244,
-            "singlesRate": 0.172,
+            "totalBases": 89,
+            "atBats": 216,
+            "plateAppearances": 251,
+            "avg": 0.287,
+            "obp": 0.386,
+            "slg": 0.412,
+            "ops": 0.798,
+            "hitRate": 0.247,
+            "singlesRate": 0.1753,
             "hrRate": 0.012,
-            "walkRate": 0.132,
-            "totalBasesRate": 0.35200000000000004
+            "walkRate": 0.1315,
+            "totalBasesRate": 0.3546
           },
           "recent": {
             "gamesPlayed": 14,
@@ -32671,17 +32669,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.375
           },
           "metrics": {
-            "powerScore": 34.8,
-            "contactScore": 72,
-            "patienceScore": 68.6,
-            "formScore": 20.2,
-            "splitScore": 55.2,
-            "varianceScore": 59.6,
+            "powerScore": 35.1,
+            "contactScore": 72.2,
+            "patienceScore": 68.3,
+            "formScore": 19,
+            "splitScore": 54,
+            "varianceScore": 59.7,
             "pitchTypeFitScore": 68.6,
             "pitchTypeGrade": 1.76,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 54.6,
-            "matchupGrade": 1.37
+            "matchupScore": 53.4,
+            "matchupGrade": 1.16
           },
           "pitchType": {
             "fitScore": 68.6,
@@ -32748,36 +32746,36 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 1,
             "debutYear": 2026,
             "latestMlbYear": 2026,
-            "careerGames": 57,
-            "careerPlateAppearances": 250,
-            "careerHits": 61,
+            "careerGames": 58,
+            "careerPlateAppearances": 251,
+            "careerHits": 62,
             "careerHomeRuns": 3,
-            "careerTotalBases": 88,
+            "careerTotalBases": 89,
             "careerWalks": 33,
             "careerStrikeouts": 35,
-            "careerHitRate": 0.244,
-            "careerAvg": 0.284,
-            "careerObp": 0.384,
-            "careerSlg": 0.409,
-            "careerOps": 0.793,
-            "careerTbPerPa": 0.352,
-            "careerHrPerPa": 0.012,
-            "careerKRate": 0.14,
-            "careerBbRate": 0.132,
+            "careerHitRate": 0.247,
+            "careerAvg": 0.287,
+            "careerObp": 0.386,
+            "careerSlg": 0.412,
+            "careerOps": 0.798,
+            "careerTbPerPa": 0.3545816733067729,
+            "careerHrPerPa": 0.01195219123505976,
+            "careerKRate": 0.1394422310756972,
+            "careerBbRate": 0.13147410358565736,
             "bestPowerYear": 2026,
             "bestPowerHomeRuns": 3,
-            "bestPowerSlg": 0.40930232558139534,
+            "bestPowerSlg": 0.41203703703703703,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 250,
+            "recentMlbPlateAppearances": 251,
             "recentMlbHomeRuns": 3,
-            "recentMlbTbPerPa": 0.352,
-            "careerPowerIndex": 35.91,
-            "contactRiskIndex": 25.78,
-            "roleStabilityIndex": 56.25,
+            "recentMlbTbPerPa": 0.3545816733067729,
+            "careerPowerIndex": 36.37,
+            "contactRiskIndex": 25.71,
+            "roleStabilityIndex": 56.38,
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/805808?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -32787,8 +32785,8 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".284 AVG | .793 OPS | 61 H | 3 HR | 14g: .276 AVG | .667 OPS | 16 H | 0 HR | vs RHP: .291 AVG | .829 OPS | 2 HR | career 250 PA | .793 OPS | 3 HR | contact-stable profile | power 36 | 2026 sample ok | arsenal 4-Seam Fastball 37% / Curveball 22% / Slider 16% | fit +1.8 | +1.4 matchup grade in a neutral lane",
-          "matchupNote": "+1.37 vs Sean Burke"
+          "summary": ".287 AVG | .798 OPS | 62 H | 3 HR | 14g: .276 AVG | .667 OPS | 16 H | 0 HR | vs RHP: .291 AVG | .829 OPS | 2 HR | career 251 PA | .798 OPS | 3 HR | contact-stable profile | power 36 | 2026 sample ok | arsenal 4-Seam Fastball 37% / Curveball 22% / Slider 16% | fit +1.8 | +1.2 matchup grade in a neutral lane",
+          "matchupNote": "+1.16 vs Sean Burke"
         },
         {
           "playerId": 679529,
@@ -32808,25 +32806,25 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 58,
-            "hits": 40,
+            "gamesPlayed": 59,
+            "hits": 41,
             "singles": 20,
-            "doubles": 12,
+            "doubles": 13,
             "triples": 0,
             "homeRuns": 8,
             "walks": 27,
-            "totalBases": 76,
-            "atBats": 192,
-            "plateAppearances": 223,
-            "avg": 0.208,
-            "obp": 0.314,
-            "slg": 0.396,
-            "ops": 0.71,
-            "hitRate": 0.1794,
-            "singlesRate": 0.0897,
-            "hrRate": 0.0359,
-            "walkRate": 0.1211,
-            "totalBasesRate": 0.3408
+            "totalBases": 78,
+            "atBats": 193,
+            "plateAppearances": 224,
+            "avg": 0.212,
+            "obp": 0.317,
+            "slg": 0.404,
+            "ops": 0.721,
+            "hitRate": 0.183,
+            "singlesRate": 0.08929999999999999,
+            "hrRate": 0.035699999999999996,
+            "walkRate": 0.12050000000000001,
+            "totalBasesRate": 0.3482
           },
           "recent": {
             "gamesPlayed": 14,
@@ -32872,17 +32870,17 @@ export const lineupBoardsByGameId = {
             "totalBasesRate": 0.35119999999999996
           },
           "metrics": {
-            "powerScore": 54.8,
-            "contactScore": 29.2,
-            "patienceScore": 66.8,
+            "powerScore": 55.7,
+            "contactScore": 29.7,
+            "patienceScore": 66.5,
             "formScore": 92,
-            "splitScore": 52.4,
+            "splitScore": 50.4,
             "varianceScore": 92,
             "pitchTypeFitScore": 71.4,
             "pitchTypeGrade": 2.06,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 94,
-            "matchupGrade": 9.02
+            "matchupScore": 93.2,
+            "matchupGrade": 8.56
           },
           "pitchType": {
             "fitScore": 71.4,
@@ -32949,36 +32947,36 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 5,
             "debutYear": 2022,
             "latestMlbYear": 2026,
-            "careerGames": 574,
-            "careerPlateAppearances": 2341,
-            "careerHits": 464,
+            "careerGames": 575,
+            "careerPlateAppearances": 2342,
+            "careerHits": 465,
             "careerHomeRuns": 88,
-            "careerTotalBases": 846,
+            "careerTotalBases": 848,
             "careerWalks": 236,
             "careerStrikeouts": 616,
-            "careerHitRate": 0.19820000000000002,
+            "careerHitRate": 0.1985,
             "careerAvg": 0.225,
             "careerObp": 0.311,
-            "careerSlg": 0.41,
-            "careerOps": 0.721,
-            "careerTbPerPa": 0.3613840239214011,
-            "careerHrPerPa": 0.037590773173857325,
-            "careerKRate": 0.26313541221700126,
-            "careerBbRate": 0.10081161896625374,
+            "careerSlg": 0.411,
+            "careerOps": 0.722,
+            "careerTbPerPa": 0.36208368915456873,
+            "careerHrPerPa": 0.037574722459436376,
+            "careerKRate": 0.2630230572160547,
+            "careerBbRate": 0.10076857386848848,
             "bestPowerYear": 2025,
             "bestPowerHomeRuns": 31,
             "bestPowerSlg": 0.4564831261101243,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 223,
+            "recentMlbPlateAppearances": 224,
             "recentMlbHomeRuns": 8,
-            "recentMlbTbPerPa": 0.34080717488789236,
-            "careerPowerIndex": 58.57,
-            "contactRiskIndex": 51.05,
+            "recentMlbTbPerPa": 0.3482142857142857,
+            "careerPowerIndex": 59.02,
+            "contactRiskIndex": 51.03,
             "roleStabilityIndex": 100,
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/679529?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -32988,8 +32986,8 @@ export const lineupBoardsByGameId = {
             "barrel lane"
           ],
           "primaryTag": "carry",
-          "summary": ".208 AVG | .710 OPS | 40 H | 8 HR | 14g: .304 AVG | .906 OPS | 14 H | 2 HR | vs RHP: .203 AVG | .690 OPS | 7 HR | career 2341 PA | .721 OPS | 88 HR | baseline career profile | power 59 | 2026 sample ok | arsenal 4-Seam Fastball 37% / Curveball 22% / Slider 16% | fit +2.1 | +9.0 matchup grade in a neutral lane",
-          "matchupNote": "+9.02 vs Sean Burke"
+          "summary": ".212 AVG | .721 OPS | 41 H | 8 HR | 14g: .304 AVG | .906 OPS | 14 H | 2 HR | vs RHP: .203 AVG | .690 OPS | 7 HR | career 2342 PA | .722 OPS | 88 HR | baseline career profile | power 59 | 2026 sample ok | arsenal 4-Seam Fastball 37% / Curveball 22% / Slider 16% | fit +2.1 | +8.6 matchup grade in a neutral lane",
+          "matchupNote": "+8.56 vs Sean Burke"
         },
         {
           "playerId": 681481,
@@ -33149,7 +33147,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/681481?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -33347,7 +33345,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/682985?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -33547,7 +33545,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/663837?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal risk",
@@ -33746,7 +33744,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/672761?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -33947,7 +33945,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/656716?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -34147,7 +34145,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/668670?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal risk",
@@ -34165,7 +34163,7 @@ export const lineupBoardsByGameId = {
         "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
       },
       "aggregate": {
-        "averageMatchupGrade": -0.19,
+        "averageMatchupGrade": -0.27,
         "trackedBatters": 9,
         "starterThreatCount": 4,
         "contactCount": 1,
@@ -34179,12 +34177,12 @@ export const lineupBoardsByGameId = {
         "topThirdArsenalCount": 2,
         "heaterCount": 3,
         "suppressorCount": 2,
-        "platoonPressureIndex": 74.8,
+        "platoonPressureIndex": 74.7,
         "pitchTypePressureIndex": 56.4,
         "bullpenPitchTypePressureIndex": 61.7,
-        "starterPressureIndex": 72.7,
-        "overallPressureIndex": 74.6,
-        "topThirdScore": 80.9,
+        "starterPressureIndex": 71.9,
+        "overallPressureIndex": 73.8,
+        "topThirdScore": 80.2,
         "depthScore": 39.5,
         "bullpenOverperformHitters": [
           {
@@ -34213,7 +34211,7 @@ export const lineupBoardsByGameId = {
           },
           {
             "name": "Spencer Torkelson",
-            "tag": "carry | +9.02 vs Sean Burke"
+            "tag": "carry | +8.56 vs Sean Burke"
           },
           {
             "name": "Wenceel Pérez",
@@ -34250,7 +34248,7 @@ export const lineupBoardsByGameId = {
         "underperformNote": "Riley Greene and Matt Vierling carry the softer form or split fit into a balanced lane.",
         "overview": "Tigers can lean on Colt Keith, Spencer Torkelson, Wenceel Pérez to drive early pressure against Sean Burke.",
         "bullpenOverview": "Sean Newcomb is the first bridge look, and this lineup grades -0.2 against that likely first-up arsenal.",
-        "topThirdScore": 80.9,
+        "topThirdScore": 80.2,
         "middleScore": 32.2,
         "depthScore": 39.5,
         "bullpenPitchTypeSummary": {
@@ -34391,7 +34389,7 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 41,
+            "gamesPlayed": 42,
             "hits": 38,
             "singles": 30,
             "doubles": 5,
@@ -34456,7 +34454,7 @@ export const lineupBoardsByGameId = {
           },
           "metrics": {
             "powerScore": 27.6,
-            "contactScore": 69,
+            "contactScore": 68.6,
             "patienceScore": 50.3,
             "formScore": 45.5,
             "splitScore": 67.9,
@@ -34532,7 +34530,7 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 1,
             "debutYear": 2026,
             "latestMlbYear": 2026,
-            "careerGames": 41,
+            "careerGames": 42,
             "careerPlateAppearances": 158,
             "careerHits": 38,
             "careerHomeRuns": 1,
@@ -34561,7 +34559,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/803011?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -34761,7 +34759,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/678246?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal edge",
@@ -34959,7 +34957,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/643217?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -34990,7 +34988,7 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 57,
+            "gamesPlayed": 58,
             "hits": 49,
             "singles": 24,
             "doubles": 11,
@@ -35055,16 +35053,16 @@ export const lineupBoardsByGameId = {
           },
           "metrics": {
             "powerScore": 84.1,
-            "contactScore": 39.5,
+            "contactScore": 39.2,
             "patienceScore": 57.7,
             "formScore": 48.5,
             "splitScore": 49.4,
-            "varianceScore": 87.6,
+            "varianceScore": 87.7,
             "pitchTypeFitScore": 49.5,
             "pitchTypeGrade": -0.69,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 69,
-            "matchupGrade": 4.59
+            "matchupScore": 68.9,
+            "matchupGrade": 4.58
           },
           "pitchType": {
             "fitScore": 49.5,
@@ -35131,7 +35129,7 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 2,
             "debutYear": 2025,
             "latestMlbYear": 2026,
-            "careerGames": 128,
+            "careerGames": 129,
             "careerPlateAppearances": 524,
             "careerHits": 110,
             "careerHomeRuns": 35,
@@ -35160,7 +35158,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "volatile career power",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/695657?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -35169,7 +35167,7 @@ export const lineupBoardsByGameId = {
           ],
           "primaryTag": "split edge",
           "summary": ".233 AVG | .815 OPS | 49 H | 14 HR | 14g: .308 AVG | .938 OPS | 16 H | 2 HR | vs RHP: .231 AVG | .804 OPS | 10 HR | career 524 PA | .829 OPS | 35 HR | volatile career power | power 100 | 2026 sample ok | arsenal 4-Seam Fastball 33% / Sinker 20% / Slider 17% | fit -0.7 | +4.6 matchup grade in a contact-suppressor lane",
-          "matchupNote": "+4.59 vs Keider Montero"
+          "matchupNote": "+4.58 vs Keider Montero"
         },
         {
           "playerId": 805367,
@@ -35359,7 +35357,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/805367?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "heater",
@@ -35387,7 +35385,27 @@ export const lineupBoardsByGameId = {
               "gamelogs": "https://baseballsavant.mlb.com/savant-player/jacob-gonzalez-694378?stats=gamelogs-r-hitting-mlb&season=2026"
             }
           },
-          "season": null,
+          "season": {
+            "gamesPlayed": 1,
+            "hits": 0,
+            "singles": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "walks": 0,
+            "totalBases": 0,
+            "atBats": 0,
+            "plateAppearances": 0,
+            "avg": null,
+            "obp": null,
+            "slg": null,
+            "ops": null,
+            "hitRate": 0,
+            "singlesRate": 0,
+            "hrRate": 0,
+            "walkRate": 0,
+            "totalBasesRate": 0
+          },
           "recent": null,
           "split": null,
           "metrics": {
@@ -35409,10 +35427,10 @@ export const lineupBoardsByGameId = {
           "careerProfile": {
             "playerId": 694378,
             "fullName": "Jacob Gonzalez",
-            "seasonsSample": 0,
-            "debutYear": null,
-            "latestMlbYear": null,
-            "careerGames": 0,
+            "seasonsSample": 1,
+            "debutYear": 2026,
+            "latestMlbYear": 2026,
+            "careerGames": 1,
             "careerPlateAppearances": 0,
             "careerHits": 0,
             "careerHomeRuns": 0,
@@ -35428,20 +35446,20 @@ export const lineupBoardsByGameId = {
             "careerHrPerPa": 0,
             "careerKRate": 0,
             "careerBbRate": 0,
-            "bestPowerYear": null,
+            "bestPowerYear": 2026,
             "bestPowerHomeRuns": 0,
             "bestPowerSlg": 0,
-            "recentMlbYear": null,
+            "recentMlbYear": 2026,
             "recentMlbPlateAppearances": 0,
             "recentMlbHomeRuns": 0,
             "recentMlbTbPerPa": 0,
             "careerPowerIndex": 50,
             "contactRiskIndex": 46,
-            "roleStabilityIndex": 0,
+            "roleStabilityIndex": 8,
             "repeatabilityLabel": "unproven MLB sample",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/694378?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -35640,7 +35658,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/671976?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "heater",
@@ -35670,7 +35688,7 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 19,
+            "gamesPlayed": 20,
             "hits": 11,
             "singles": 3,
             "doubles": 3,
@@ -35735,16 +35753,16 @@ export const lineupBoardsByGameId = {
           },
           "metrics": {
             "powerScore": 87.3,
-            "contactScore": 34.3,
+            "contactScore": 33.8,
             "patienceScore": 70.8,
             "formScore": 63.7,
             "splitScore": 50.1,
-            "varianceScore": 80.7,
+            "varianceScore": 80.9,
             "pitchTypeFitScore": 69.8,
             "pitchTypeGrade": 3.1,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 55.5,
-            "matchupGrade": 0.45
+            "matchupScore": 55.4,
+            "matchupGrade": 0.43
           },
           "pitchType": {
             "fitScore": 69.8,
@@ -35811,7 +35829,7 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 3,
             "debutYear": 2024,
             "latestMlbYear": 2026,
-            "careerGames": 38,
+            "careerGames": 39,
             "careerPlateAppearances": 125,
             "careerHits": 20,
             "careerHomeRuns": 5,
@@ -35840,7 +35858,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/691011?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -35850,8 +35868,8 @@ export const lineupBoardsByGameId = {
             "statcast up"
           ],
           "primaryTag": "carry",
-          "summary": ".186 AVG | .796 OPS | 11 H | 5 HR | 6g: .182 AVG | .727 OPS | 4 H | 2 HR | vs RHP: .200 AVG | .786 OPS | 4 HR | career 125 PA | .619 OPS | 5 HR | baseline career profile | power 58 | shallow 2026 sample | arsenal 4-Seam Fastball 33% / Sinker 20% / Slider 17% | fit +3.1 | +0.5 matchup grade in a contact-suppressor lane",
-          "matchupNote": "+0.45 vs Keider Montero"
+          "summary": ".186 AVG | .796 OPS | 11 H | 5 HR | 6g: .182 AVG | .727 OPS | 4 H | 2 HR | vs RHP: .200 AVG | .786 OPS | 4 HR | career 125 PA | .619 OPS | 5 HR | baseline career profile | power 58 | shallow 2026 sample | arsenal 4-Seam Fastball 33% / Sinker 20% / Slider 17% | fit +3.1 | +0.4 matchup grade in a contact-suppressor lane",
+          "matchupNote": "+0.43 vs Keider Montero"
         },
         {
           "playerId": 807747,
@@ -35871,7 +35889,7 @@ export const lineupBoardsByGameId = {
             }
           },
           "season": {
-            "gamesPlayed": 6,
+            "gamesPlayed": 7,
             "hits": 3,
             "singles": 3,
             "doubles": 0,
@@ -35936,7 +35954,7 @@ export const lineupBoardsByGameId = {
           },
           "metrics": {
             "powerScore": 18,
-            "contactScore": 48.9,
+            "contactScore": 47.6,
             "patienceScore": 18,
             "formScore": 50,
             "splitScore": 42.2,
@@ -36012,7 +36030,7 @@ export const lineupBoardsByGameId = {
             "seasonsSample": 1,
             "debutYear": 2026,
             "latestMlbYear": 2026,
-            "careerGames": 6,
+            "careerGames": 7,
             "careerPlateAppearances": 16,
             "careerHits": 3,
             "careerHomeRuns": 0,
@@ -36041,7 +36059,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "unproven MLB sample",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/807747?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -36107,7 +36125,7 @@ export const lineupBoardsByGameId = {
           },
           {
             "name": "Colson Montgomery",
-            "tag": "split edge | +4.59 vs Keider Montero"
+            "tag": "split edge | +4.58 vs Keider Montero"
           },
           {
             "name": "Tristan Peters",
@@ -36244,7 +36262,7 @@ export const lineupBoardsByGameId = {
   "royals-rangers": {
     "gameId": "royals-rangers",
     "title": "Royals @ Rangers",
-    "snapshot": "2026-05-31T18:00:03.950Z",
+    "snapshot": "2026-05-31T18:17:29.719Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -36286,7 +36304,7 @@ export const lineupBoardsByGameId = {
           "role": "middle",
           "availabilityScore": 26.2,
           "firstRelieverLikelihood": 89.31,
-          "pitchMixSummary": "Cutter 27% / Sinker 27% / Changeup 25%"
+          "pitchMixSummary": "Sinker 27% / Cutter 27% / Changeup 25%"
         }
       ],
       "lineup": [
@@ -36478,7 +36496,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/695600?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -36677,7 +36695,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/677951?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "heater",
@@ -36879,7 +36897,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/686469?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -37079,7 +37097,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/521692?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "heater",
@@ -37279,7 +37297,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/695506?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -37479,7 +37497,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/686555?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -37679,7 +37697,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/686681?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -37879,7 +37897,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/679845?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "cold",
@@ -38077,7 +38095,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/664728?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -38240,7 +38258,7 @@ export const lineupBoardsByGameId = {
               "firstRelieverLikelihood": 89.31,
               "fitScore": 61.1,
               "fitGrade": 3.43,
-              "pitchMixSummary": "Cutter 27% / Sinker 27% / Changeup 25%",
+              "pitchMixSummary": "Sinker 27% / Cutter 27% / Changeup 25%",
               "topAttackers": [
                 {
                   "name": "Bobby Witt Jr.",
@@ -38491,7 +38509,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/592626?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -38692,7 +38710,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/673962?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -38894,7 +38912,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/607043?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -39094,7 +39112,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "volatile career power",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/669394?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "statcast fade",
@@ -39292,7 +39310,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/677649?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal risk",
@@ -39491,7 +39509,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/696030?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -39690,7 +39708,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/543309?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -39890,7 +39908,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/670032?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "heater",
@@ -40081,7 +40099,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/680737?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal risk",
@@ -40305,7 +40323,7 @@ export const lineupBoardsByGameId = {
   "giants-rockies": {
     "gameId": "giants-rockies",
     "title": "Giants @ Rockies",
-    "snapshot": "2026-05-31T18:00:03.951Z",
+    "snapshot": "2026-05-31T18:17:29.719Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -40320,7 +40338,7 @@ export const lineupBoardsByGameId = {
       "label": "80°F | Wind 7 mph L-R | 3% precip"
     },
     "marketWeatherContext": {
-      "line": "SF -115",
+      "line": "SF -114",
       "total": "11.0 Runs",
       "source": "RotoWire daily lineups + weather"
     },
@@ -40539,7 +40557,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/669477?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -40739,7 +40757,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/646240?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -40941,7 +40959,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/650333?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -41141,7 +41159,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/642715?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -41341,7 +41359,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/808982?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -41543,7 +41561,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/656305?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "cold",
@@ -41741,7 +41759,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/805811?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -41942,7 +41960,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "unproven MLB sample",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/691740?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal risk",
@@ -42141,7 +42159,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/687551?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -42556,7 +42574,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/650489?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -42756,7 +42774,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/671289?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -42957,7 +42975,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "role volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/681198?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal edge",
@@ -43157,7 +43175,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "volatile career power",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/696100?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -43358,7 +43376,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/678662?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -43559,7 +43577,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/691720?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -43760,7 +43778,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/664983?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -43962,7 +43980,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/690924?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -44162,7 +44180,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "unproven MLB sample",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/677060?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -44366,7 +44384,7 @@ export const lineupBoardsByGameId = {
   "yankees-athletics": {
     "gameId": "yankees-athletics",
     "title": "Yankees @ Athletics",
-    "snapshot": "2026-05-31T18:00:03.952Z",
+    "snapshot": "2026-05-31T18:17:29.720Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -44381,8 +44399,8 @@ export const lineupBoardsByGameId = {
       "label": "83°F | 0% precip"
     },
     "marketWeatherContext": {
-      "line": "NYY -183",
-      "total": "9.5 Runs",
+      "line": "NYY -182",
+      "total": "10.0 Runs",
       "source": "RotoWire daily lineups + weather"
     },
     "away": {
@@ -44600,7 +44618,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/502671?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -44803,7 +44821,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/700250?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -45004,7 +45022,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/592450?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -45207,7 +45225,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/641355?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -45410,7 +45428,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/676609?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -45609,7 +45627,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/663757?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -45810,7 +45828,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/683011?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -46011,7 +46029,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/680474?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -46212,7 +46230,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/669224?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal edge",
@@ -46626,7 +46644,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/666126?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -46828,7 +46846,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "volatile career power",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/667670?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -47028,7 +47046,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "volatile career power",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/701762?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -47230,7 +47248,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/691016?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -47431,7 +47449,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/641680?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -47632,7 +47650,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/671732?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -47832,7 +47850,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/680869?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -48031,7 +48049,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/643446?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -48231,7 +48249,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/687231?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "cold",
@@ -48433,7 +48451,7 @@ export const lineupBoardsByGameId = {
   "diamondbacks-mariners": {
     "gameId": "diamondbacks-mariners",
     "title": "Diamondbacks @ Mariners",
-    "snapshot": "2026-05-31T18:00:03.952Z",
+    "snapshot": "2026-05-31T18:17:29.721Z",
     "status": {
       "away": "partial",
       "home": "posted"
@@ -48667,7 +48685,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/606466?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -48869,7 +48887,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/682998?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -49069,7 +49087,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/672695?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "heater",
@@ -49269,7 +49287,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/571448?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "traffic",
@@ -49470,7 +49488,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "unproven MLB sample",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/814439?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal risk",
@@ -49669,7 +49687,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/545121?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -49870,7 +49888,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/672515?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -50070,7 +50088,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/680728?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -50271,7 +50289,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "unproven MLB sample",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/694371?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "cold",
@@ -50684,7 +50702,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/641487?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -50885,7 +50903,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/677594?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -51086,7 +51104,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/647304?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -51288,7 +51306,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/668227?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -51487,7 +51505,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "volatile career power",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/670042?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -51689,7 +51707,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/702284?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -51889,7 +51907,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/686527?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -52091,7 +52109,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/640902?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal edge",
@@ -52290,7 +52308,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "unproven MLB sample",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/806068?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -52495,7 +52513,7 @@ export const lineupBoardsByGameId = {
   "phillies-dodgers": {
     "gameId": "phillies-dodgers",
     "title": "Phillies @ Dodgers",
-    "snapshot": "2026-05-31T18:00:03.953Z",
+    "snapshot": "2026-05-31T18:17:29.721Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -52510,7 +52528,7 @@ export const lineupBoardsByGameId = {
       "label": "78°F | Wind 8 mph Out | 0% precip"
     },
     "marketWeatherContext": {
-      "line": "LAD -234",
+      "line": "LAD -236",
       "total": "9.0 Runs",
       "source": "RotoWire daily lineups + weather"
     },
@@ -52729,7 +52747,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/656941?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -52931,7 +52949,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/607208?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "heater",
@@ -53131,7 +53149,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/547180?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -53331,7 +53349,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/669016?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -53533,7 +53551,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/664761?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal edge",
@@ -53732,7 +53750,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/681082?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -53932,7 +53950,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/592663?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "heater",
@@ -54132,7 +54150,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/666969?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "cold",
@@ -54330,7 +54348,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/702222?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -54741,7 +54759,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/660271?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -54943,7 +54961,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/681624?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -55146,7 +55164,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/518692?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -55349,7 +55367,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/605141?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -55550,7 +55568,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/663656?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -55751,7 +55769,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/571970?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -55900,7 +55918,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "unproven MLB sample",
             "volatilityLabel": "thin career sample",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/669899?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -56099,7 +56117,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "volatile career power",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/687221?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -56300,7 +56318,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/690976?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -56503,7 +56521,7 @@ export const lineupBoardsByGameId = {
   "cubs-cardinals": {
     "gameId": "cubs-cardinals",
     "title": "Cubs @ Cardinals",
-    "snapshot": "2026-05-31T18:00:03.953Z",
+    "snapshot": "2026-05-31T18:17:29.722Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -56737,7 +56755,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/663538?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -56937,7 +56955,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/608324?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -57138,7 +57156,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "repeatable career power",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/664023?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -57340,7 +57358,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/673548?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -57539,7 +57557,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/608348?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -57740,7 +57758,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/683737?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -57939,7 +57957,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/621020?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -58138,7 +58156,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/665804?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -58337,7 +58355,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/691718?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -58764,7 +58782,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/802139?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal edge",
@@ -58963,7 +58981,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/671056?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -59164,7 +59182,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/691023?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -59348,7 +59366,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "volatile career power",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/676369?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "carry",
@@ -59550,7 +59568,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/676475?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "arsenal edge",
@@ -59750,7 +59768,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/691026?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -59949,7 +59967,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "contact-stable profile",
             "volatilityLabel": "stable enough",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/665877?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "split edge",
@@ -60148,7 +60166,7 @@ export const lineupBoardsByGameId = {
             "repeatabilityLabel": "baseline career profile",
             "volatilityLabel": "strikeout volatility",
             "sourceUrl": "https://baseballsavant.mlb.com/savant-player/695336?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T17:59:52Z"
+            "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
             "heater",
@@ -60355,7 +60373,7 @@ export const lineupBoardsByGameId = {
 export const lineupMatchupContextByGameId = {
   "blue-jays-orioles": {
     "Blue Jays": {
-      "averageMatchupGrade": 5.24,
+      "averageMatchupGrade": 5.2,
       "trackedBatters": 9,
       "starterThreatCount": 7,
       "contactCount": 3,
@@ -60369,13 +60387,13 @@ export const lineupMatchupContextByGameId = {
       "topThirdArsenalCount": 3,
       "heaterCount": 5,
       "suppressorCount": 2,
-      "platoonPressureIndex": 75.8,
+      "platoonPressureIndex": 75.6,
       "pitchTypePressureIndex": 94,
       "bullpenPitchTypePressureIndex": 74,
       "starterPressureIndex": 94,
       "overallPressureIndex": 94,
       "topThirdScore": 84.9,
-      "depthScore": 63.9,
+      "depthScore": 64.2,
       "bullpenOverperformHitters": [
         {
           "name": "Charles McAdoo",
@@ -60395,7 +60413,7 @@ export const lineupMatchupContextByGameId = {
       ]
     },
     "Orioles": {
-      "averageMatchupGrade": 1.25,
+      "averageMatchupGrade": 1.27,
       "trackedBatters": 9,
       "starterThreatCount": 4,
       "contactCount": 1,
@@ -60409,12 +60427,12 @@ export const lineupMatchupContextByGameId = {
       "topThirdArsenalCount": 0,
       "heaterCount": 4,
       "suppressorCount": 2,
-      "platoonPressureIndex": 84.2,
+      "platoonPressureIndex": 84.4,
       "pitchTypePressureIndex": 23.6,
       "bullpenPitchTypePressureIndex": 77.3,
-      "starterPressureIndex": 56.1,
-      "overallPressureIndex": 60.5,
-      "topThirdScore": 28,
+      "starterPressureIndex": 56.3,
+      "overallPressureIndex": 60.7,
+      "topThirdScore": 28.1,
       "depthScore": 67.4,
       "bullpenOverperformHitters": [
         {
@@ -60477,7 +60495,7 @@ export const lineupMatchupContextByGameId = {
       ]
     },
     "Nationals": {
-      "averageMatchupGrade": 4.1,
+      "averageMatchupGrade": 4.08,
       "trackedBatters": 9,
       "starterThreatCount": 6,
       "contactCount": 4,
@@ -60497,7 +60515,7 @@ export const lineupMatchupContextByGameId = {
       "starterPressureIndex": 94,
       "overallPressureIndex": 92.2,
       "topThirdScore": 94,
-      "depthScore": 42.5,
+      "depthScore": 42.2,
       "bullpenOverperformHitters": [
         {
           "name": "James Wood",
@@ -60519,10 +60537,10 @@ export const lineupMatchupContextByGameId = {
   },
   "twins-pirates": {
     "Twins": {
-      "averageMatchupGrade": -2.42,
+      "averageMatchupGrade": -2.43,
       "trackedBatters": 9,
       "starterThreatCount": 2,
-      "contactCount": 2,
+      "contactCount": 3,
       "powerCount": 0,
       "platoonCount": 6,
       "pitchTypeEdgeCount": 2,
@@ -60533,13 +60551,13 @@ export const lineupMatchupContextByGameId = {
       "topThirdArsenalCount": 1,
       "heaterCount": 3,
       "suppressorCount": 2,
-      "platoonPressureIndex": 65.3,
+      "platoonPressureIndex": 65.4,
       "pitchTypePressureIndex": 46.2,
       "bullpenPitchTypePressureIndex": 64.5,
-      "starterPressureIndex": 30,
+      "starterPressureIndex": 29.9,
       "overallPressureIndex": 32.3,
       "topThirdScore": 56.8,
-      "depthScore": 29.7,
+      "depthScore": 29.5,
       "bullpenOverperformHitters": [
         {
           "name": "Kody Clemens",
@@ -60559,7 +60577,7 @@ export const lineupMatchupContextByGameId = {
       ]
     },
     "Pirates": {
-      "averageMatchupGrade": 1.88,
+      "averageMatchupGrade": 1.85,
       "trackedBatters": 9,
       "starterThreatCount": 6,
       "contactCount": 3,
@@ -60579,7 +60597,7 @@ export const lineupMatchupContextByGameId = {
       "starterPressureIndex": 94,
       "overallPressureIndex": 94,
       "topThirdScore": 85.2,
-      "depthScore": 40.6,
+      "depthScore": 40,
       "bullpenOverperformHitters": [
         {
           "name": "Spencer Horwitz",
@@ -60601,7 +60619,7 @@ export const lineupMatchupContextByGameId = {
   },
   "angels-rays": {
     "Angels": {
-      "averageMatchupGrade": 0.39,
+      "averageMatchupGrade": 0.34,
       "trackedBatters": 9,
       "starterThreatCount": 3,
       "contactCount": 2,
@@ -60618,10 +60636,10 @@ export const lineupMatchupContextByGameId = {
       "platoonPressureIndex": 94,
       "pitchTypePressureIndex": 22.5,
       "bullpenPitchTypePressureIndex": 67,
-      "starterPressureIndex": 64.2,
-      "overallPressureIndex": 66.9,
-      "topThirdScore": 63.9,
-      "depthScore": 51.8,
+      "starterPressureIndex": 63.9,
+      "overallPressureIndex": 66.6,
+      "topThirdScore": 64,
+      "depthScore": 50.6,
       "bullpenOverperformHitters": [
         {
           "name": "Vaughn Grissom",
@@ -60655,13 +60673,13 @@ export const lineupMatchupContextByGameId = {
       "topThirdArsenalCount": 2,
       "heaterCount": 2,
       "suppressorCount": 2,
-      "platoonPressureIndex": 75.9,
+      "platoonPressureIndex": 75.8,
       "pitchTypePressureIndex": 72.1,
       "bullpenPitchTypePressureIndex": 71.8,
       "starterPressureIndex": 84.9,
       "overallPressureIndex": 88.4,
       "topThirdScore": 72.7,
-      "depthScore": 27.1,
+      "depthScore": 27.2,
       "bullpenOverperformHitters": [
         {
           "name": "Yandy Díaz",
@@ -60683,7 +60701,7 @@ export const lineupMatchupContextByGameId = {
   },
   "braves-reds": {
     "Braves": {
-      "averageMatchupGrade": 2.31,
+      "averageMatchupGrade": 2.35,
       "trackedBatters": 9,
       "starterThreatCount": 5,
       "contactCount": 3,
@@ -60697,13 +60715,13 @@ export const lineupMatchupContextByGameId = {
       "topThirdArsenalCount": 3,
       "heaterCount": 5,
       "suppressorCount": 2,
-      "platoonPressureIndex": 74.9,
+      "platoonPressureIndex": 75.1,
       "pitchTypePressureIndex": 86.4,
       "bullpenPitchTypePressureIndex": 56.4,
       "starterPressureIndex": 94,
       "overallPressureIndex": 94,
       "topThirdScore": 94,
-      "depthScore": 40.3,
+      "depthScore": 40.8,
       "bullpenOverperformHitters": [
         {
           "name": "Michael Harris II",
@@ -60737,13 +60755,13 @@ export const lineupMatchupContextByGameId = {
       "topThirdArsenalCount": 2,
       "heaterCount": 2,
       "suppressorCount": 2,
-      "platoonPressureIndex": 72.4,
+      "platoonPressureIndex": 72.5,
       "pitchTypePressureIndex": 86.3,
       "bullpenPitchTypePressureIndex": 50.3,
-      "starterPressureIndex": 62.9,
+      "starterPressureIndex": 63,
       "overallPressureIndex": 63,
       "topThirdScore": 51.9,
-      "depthScore": 39.5,
+      "depthScore": 39.6,
       "bullpenOverperformHitters": [
         {
           "name": "JJ Bleday",
@@ -60765,7 +60783,7 @@ export const lineupMatchupContextByGameId = {
   },
   "marlins-mets": {
     "Marlins": {
-      "averageMatchupGrade": -2.25,
+      "averageMatchupGrade": -2.26,
       "trackedBatters": 9,
       "starterThreatCount": 1,
       "contactCount": 4,
@@ -60779,13 +60797,13 @@ export const lineupMatchupContextByGameId = {
       "topThirdArsenalCount": 1,
       "heaterCount": 3,
       "suppressorCount": 2,
-      "platoonPressureIndex": 62.2,
+      "platoonPressureIndex": 62.1,
       "pitchTypePressureIndex": 51.3,
       "bullpenPitchTypePressureIndex": 48.5,
-      "starterPressureIndex": 27.9,
-      "overallPressureIndex": 27.7,
+      "starterPressureIndex": 27.8,
+      "overallPressureIndex": 27.5,
       "topThirdScore": 54.5,
-      "depthScore": 24.9,
+      "depthScore": 24.5,
       "bullpenOverperformHitters": [
         {
           "name": "Xavier Edwards",
@@ -60847,7 +60865,7 @@ export const lineupMatchupContextByGameId = {
   },
   "red-sox-guardians": {
     "Red Sox": {
-      "averageMatchupGrade": 5.94,
+      "averageMatchupGrade": 5.96,
       "trackedBatters": 9,
       "starterThreatCount": 7,
       "contactCount": 3,
@@ -60867,7 +60885,7 @@ export const lineupMatchupContextByGameId = {
       "starterPressureIndex": 94,
       "overallPressureIndex": 94,
       "topThirdScore": 76.8,
-      "depthScore": 58.3,
+      "depthScore": 58.5,
       "bullpenOverperformHitters": [
         {
           "name": "Wilyer Abreu",
@@ -60887,7 +60905,7 @@ export const lineupMatchupContextByGameId = {
       ]
     },
     "Guardians": {
-      "averageMatchupGrade": -2.94,
+      "averageMatchupGrade": -2.96,
       "trackedBatters": 9,
       "starterThreatCount": 1,
       "contactCount": 4,
@@ -60901,13 +60919,13 @@ export const lineupMatchupContextByGameId = {
       "topThirdArsenalCount": 0,
       "heaterCount": 2,
       "suppressorCount": 2,
-      "platoonPressureIndex": 52,
+      "platoonPressureIndex": 51.9,
       "pitchTypePressureIndex": 27.1,
       "bullpenPitchTypePressureIndex": 54.7,
       "starterPressureIndex": 18,
       "overallPressureIndex": 18.8,
       "topThirdScore": 56.7,
-      "depthScore": 19.5,
+      "depthScore": 19.7,
       "bullpenOverperformHitters": [
         {
           "name": "Chase DeLauter",
@@ -60929,7 +60947,7 @@ export const lineupMatchupContextByGameId = {
   },
   "brewers-astros": {
     "Brewers": {
-      "averageMatchupGrade": 2.08,
+      "averageMatchupGrade": 2.09,
       "trackedBatters": 9,
       "starterThreatCount": 4,
       "contactCount": 2,
@@ -60943,12 +60961,12 @@ export const lineupMatchupContextByGameId = {
       "topThirdArsenalCount": 2,
       "heaterCount": 4,
       "suppressorCount": 2,
-      "platoonPressureIndex": 87.2,
+      "platoonPressureIndex": 87.3,
       "pitchTypePressureIndex": 79.3,
       "bullpenPitchTypePressureIndex": 48.8,
       "starterPressureIndex": 94,
       "overallPressureIndex": 93.8,
-      "topThirdScore": 82.2,
+      "topThirdScore": 82.4,
       "depthScore": 18.8,
       "bullpenOverperformHitters": [
         {
@@ -61011,7 +61029,7 @@ export const lineupMatchupContextByGameId = {
   },
   "tigers-white-sox": {
     "Tigers": {
-      "averageMatchupGrade": -0.19,
+      "averageMatchupGrade": -0.27,
       "trackedBatters": 9,
       "starterThreatCount": 4,
       "contactCount": 1,
@@ -61025,12 +61043,12 @@ export const lineupMatchupContextByGameId = {
       "topThirdArsenalCount": 2,
       "heaterCount": 3,
       "suppressorCount": 2,
-      "platoonPressureIndex": 74.8,
+      "platoonPressureIndex": 74.7,
       "pitchTypePressureIndex": 56.4,
       "bullpenPitchTypePressureIndex": 61.7,
-      "starterPressureIndex": 72.7,
-      "overallPressureIndex": 74.6,
-      "topThirdScore": 80.9,
+      "starterPressureIndex": 71.9,
+      "overallPressureIndex": 73.8,
+      "topThirdScore": 80.2,
       "depthScore": 39.5,
       "bullpenOverperformHitters": [
         {
