@@ -170,6 +170,7 @@ const serializePropPick = (target) => {
     expectedValue: target.expectedValue,
     statValueLabel: target.statValueLabel,
     sample: target.sample || null,
+    repeatability: target.repeatability || null,
     recommendationTier: target.recommendationTier,
     shadowSupportTag: target.shadowSupportTag || null,
     shadowSupportLevel: target.shadowSupportLevel || null,

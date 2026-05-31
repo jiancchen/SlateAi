@@ -24,6 +24,7 @@
   "outputContract": "models/mlb/cartridges/M0/output-contract.json",
   "modelDescription": "models/mlb/cartridges/M0/model_description.json",
   "modelNotes": "models/mlb/cartridges/M0/MODEL_NOTES.md",
+  "modelLog": "models/mlb/cartridges/M0/M0_log.md",
   "performanceIndex": "models/mlb/cartridges/M0/performance_index.json",
   "followups": "models/mlb/cartridges/M0/followups.md",
   "sourceFiles": [

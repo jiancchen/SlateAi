@@ -133,6 +133,7 @@ const sourceInventory = async () => {
     { path: manifest.outputContract, role: 'output-contract' },
     { path: manifest.modelDescription, role: 'model-description' },
     { path: manifest.modelNotes, role: 'model-notes' },
+    { path: manifest.modelLog, role: 'model-log' },
     { path: 'models/mlb/cartridges/M0/snapshot.mjs', role: 'snapshot-builder' },
     { path: 'models/mlb/cartridges/M0/verify_snapshot.mjs', role: 'snapshot-verifier' },
     { path: 'models/mlb/cartridges/M0/run-lock.mjs', role: 'run-locker' },

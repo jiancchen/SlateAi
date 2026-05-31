@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "runId": "mlb-2026-05-30-W1-F0-M0-RP36-E0",
-  "sourceHash": "a9aae54575a7454b95ab4db084e9a6a0a901faaba6e9ec51142be0d01af4b67b",
+  "sourceHash": "93dd13acf86302f3c28512ba4db9c8fbac65ccbdc435ddd40a2f06cfdf5c7565",
   "files": [
     {
       "path": "models/mlb/cartridges/E0/manifest.json",
@@ -19,25 +19,31 @@
       "role": "followup-index",
       "path": "models/mlb/cartridges/M0/followups.md",
       "exists": true,
-      "sha256": "9174b77fa1192246bee9d914627d7fc93d9756d8f351578a3dcb0486fe464309"
+      "sha256": "1f71ac9a5e1bface1a4d9a61303823b8572314032fd5a9626e8c418b1e6e3a9b"
+    },
+    {
+      "path": "models/mlb/cartridges/M0/M0_log.md",
+      "role": "model-log",
+      "exists": true,
+      "sha256": "bc36bd39dcca7b7c0d50e8489c63649eee1b271157c0e982cd74ac130ded2113"
     },
     {
       "path": "models/mlb/cartridges/M0/manifest.json",
       "role": "parent_model-manifest",
       "exists": true,
-      "sha256": "ccc68dfcf6c1a818dc4708fead0bb1afdff01fe0a28c6a42f38ab8c8b79c4426"
+      "sha256": "516bd96dd61d332bb3184bf95780d3264c1525f8d8338f72c1b10e3d99178509"
     },
     {
       "path": "models/mlb/cartridges/M0/model_description.json",
       "role": "model-description",
       "exists": true,
-      "sha256": "d1a5f319070cb0b48e4a8afce5f64c0b83aaa8636aa3486479dda89883b7e70b"
+      "sha256": "9bd9c641a8f2687f5af0a9ccc9a0a8f83a09b4b7e31363813b1765c8bb118e54"
     },
     {
       "path": "models/mlb/cartridges/M0/MODEL_NOTES.md",
       "role": "model-notes",
       "exists": true,
-      "sha256": "86a3b4c48c31dde4c2321d4ec8f029311837c30716dcf7edeefddd8c28342c58"
+      "sha256": "c919fdd25b5e11d9b0e92c1378eb4e29659e8f01f2bc145a84b33b11e9e4e36d"
     },
     {
       "path": "models/mlb/cartridges/M0/output-contract.json",
@@ -55,7 +61,7 @@
       "role": "run-locker",
       "path": "models/mlb/cartridges/M0/run-lock.mjs",
       "exists": true,
-      "sha256": "0c9affbf06ff2b6d37c6e4e4ee25c8bf7828b49365e05c4bc4abe9a8ef0e2334"
+      "sha256": "2303ed109eccf04f28a60951c5ccfcf4fce3f9756287f61b9b2b0de93362f219"
     },
     {
       "role": "pregame-runner",
@@ -85,7 +91,7 @@
       "role": "shadow-exporter",
       "path": "models/mlb/cartridges/RP36/exporter.py",
       "exists": true,
-      "sha256": "8c03f613734411bb7d73ace2776bd78cbd1e3696245b6b329936ae0d18e44311"
+      "sha256": "5b2efe1e7a1f80e17eff1619e4cb484ec969afeeb2958675baa9eb5196f4d9f7"
     },
     {
       "path": "models/mlb/cartridges/RP36/manifest.json",
@@ -157,13 +163,13 @@
       "role": "lineup-exporter",
       "path": "pipeline/mlb/publish/export-lineup-model.mjs",
       "exists": true,
-      "sha256": "f135c6170da82ba6e1de85ddebc685c40333ec69fccfdd55f4dadc66b9e01989"
+      "sha256": "afd8541c5a750b38fc980f748b911f6f91eda992e1dc700a681214a93bd06c0f"
     },
     {
       "role": "prop-exporter",
       "path": "pipeline/mlb/publish/export-prop-predictions.mjs",
       "exists": true,
-      "sha256": "2a2c913fc42d6699f4fc01e46018f2756b56e3919e7f30d86a2ca2b70c5b7a25"
+      "sha256": "79d4be5d98f38b8ca25dbdd377bab00aab02a427f1eec4f6a0b180e2851975fa"
     },
     {
       "role": "side-exporter",
@@ -229,7 +235,7 @@
       "role": "warehouse-code",
       "path": "pipeline/mlb/warehouse/mlb_warehouse.py",
       "exists": true,
-      "sha256": "3ee8f0afb95c2f99445afca0c41ce6326f04e378b7ed9b54ed39a4c2ce7ea1d3"
+      "sha256": "fa52a1b690335b8e9d221da166beacf6e69b08611e1b8ce6eb712a07f4f2c7e3"
     },
     {
       "role": "followup-workflow",
@@ -253,13 +259,13 @@
       "role": "refresh-verifier",
       "path": "pipeline/mlb/workflows/verify-refresh.mjs",
       "exists": true,
-      "sha256": "194433b1392bb238a7d0380e04a0089d460cab519580d747536cff81b2ddcf33"
+      "sha256": "38538a63c057d516d63482a0015a703de3c6648de2e13bf971655efe25572975"
     },
     {
       "role": "side-model-logic",
       "path": "web/src/lib/sports-model.js",
       "exists": true,
-      "sha256": "8a4c67ae974e7224f5bae0da017c5c10be09a2cd9376d575c782d70c623d3bdd"
+      "sha256": "24578e4387fac12f6b4c99e094c2515f24dd7d642cb3d9ae523eae7a1e052f53"
     }
   ]
 }

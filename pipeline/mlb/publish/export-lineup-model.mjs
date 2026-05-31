@@ -292,6 +292,138 @@ const fetchHitterOpponentContextMap = (asOfDate, playerIds = []) => {
   )
 }
 
+const ingestHitterCareerProfiles = (date, playerIds = []) => {
+  const normalizedIds = [...new Set(playerIds.map((value) => Number(value)).filter(Number.isFinite))]
+  if (!normalizedIds.length) return
+
+  const args = [
+    path.join(rootDir, 'pipeline', 'mlb', 'warehouse', 'mlb_warehouse.py'),
+    'ingest-hitter-career-profiles',
+    '--date',
+    date
+  ]
+
+  normalizedIds.forEach((playerId) => {
+    args.push('--player-id', String(playerId))
+  })
+
+  execFileSync('python3', args, {
+    cwd: rootDir,
+    stdio: 'inherit'
+  })
+}
+
+const ingestHitterLineupSplits = (date, lineupPath) => {
+  if (!date || !lineupPath) return
+
+  execFileSync(
+    'python3',
+    [
+      path.join(rootDir, 'pipeline', 'mlb', 'warehouse', 'mlb_warehouse.py'),
+      'ingest-hitter-lineup-splits',
+      '--date',
+      date,
+      '--file',
+      lineupPath
+    ],
+    {
+      cwd: rootDir,
+      stdio: 'inherit'
+    }
+  )
+}
+
+const fetchHitterCareerProfileMap = (playerIds = []) => {
+  const normalizedIds = [...new Set(playerIds.map((value) => Number(value)).filter(Number.isFinite))]
+  if (!normalizedIds.length) return new Map()
+
+  const rows = runSqliteJson(`
+    select
+      player_id,
+      full_name,
+      seasons_sample,
+      debut_year,
+      latest_mlb_year,
+      career_games,
+      career_plate_appearances,
+      career_hits,
+      career_home_runs,
+      career_total_bases,
+      career_walks,
+      career_strikeouts,
+      career_avg,
+      career_obp,
+      career_slg,
+      career_ops,
+      career_tb_per_pa,
+      career_hr_per_pa,
+      career_k_rate,
+      career_bb_rate,
+      best_power_year,
+      best_power_home_runs,
+      best_power_slg,
+      recent_mlb_year,
+      recent_mlb_plate_appearances,
+      recent_mlb_home_runs,
+      recent_mlb_tb_per_pa,
+      career_power_index,
+      contact_risk_index,
+      role_stability_index,
+      repeatability_label,
+      volatility_label,
+      source_url,
+      fetched_at
+    from mlb_hitter_career_profiles
+    where player_id in (${normalizedIds.join(',')})
+  `)
+
+  return new Map(
+    rows.map((row) => [
+      Number(row.player_id),
+      {
+        playerId: Number(row.player_id),
+        fullName: row.full_name || '',
+        seasonsSample: Number(row.seasons_sample || 0) || 0,
+        debutYear: Number(row.debut_year || 0) || null,
+        latestMlbYear: Number(row.latest_mlb_year || 0) || null,
+        careerGames: Number(row.career_games || 0) || 0,
+        careerPlateAppearances: Number(row.career_plate_appearances || 0) || 0,
+        careerHits: Number(row.career_hits || 0) || 0,
+        careerHomeRuns: Number(row.career_home_runs || 0) || 0,
+        careerTotalBases: Number(row.career_total_bases || 0) || 0,
+        careerWalks: Number(row.career_walks || 0) || 0,
+        careerStrikeouts: Number(row.career_strikeouts || 0) || 0,
+        careerHitRate:
+          Number(row.career_plate_appearances || 0) > 0
+            ? roundToHundredths((Number(row.career_hits || 0) / Number(row.career_plate_appearances || 1)) * 100) / 100
+            : null,
+        careerAvg: parseNumber(row.career_avg),
+        careerObp: parseNumber(row.career_obp),
+        careerSlg: parseNumber(row.career_slg),
+        careerOps: parseNumber(row.career_ops),
+        careerTbPerPa: parseNumber(row.career_tb_per_pa),
+        careerHrPerPa: parseNumber(row.career_hr_per_pa),
+        careerKRate: parseNumber(row.career_k_rate),
+        careerBbRate: parseNumber(row.career_bb_rate),
+        bestPowerYear: Number(row.best_power_year || 0) || null,
+        bestPowerHomeRuns: Number(row.best_power_home_runs || 0) || 0,
+        bestPowerSlg: parseNumber(row.best_power_slg),
+        recentMlbYear: Number(row.recent_mlb_year || 0) || null,
+        recentMlbPlateAppearances: Number(row.recent_mlb_plate_appearances || 0) || 0,
+        recentMlbHomeRuns: Number(row.recent_mlb_home_runs || 0) || 0,
+        recentMlbTbPerPa: parseNumber(row.recent_mlb_tb_per_pa),
+        careerPowerIndex: parseNumber(row.career_power_index),
+        contactRiskIndex: parseNumber(row.contact_risk_index),
+        roleStabilityIndex: parseNumber(row.role_stability_index),
+        repeatabilityLabel: row.repeatability_label || '',
+        volatilityLabel: row.volatility_label || '',
+        sourceUrl: row.source_url || '',
+        fetchedAt: row.fetched_at || ''
+      }
+    ])
+  )
+}
+
 const fetchRotoWireBvpRows = async ({ date, type }) => {
   const url =
     'https://www.rotowire.com/baseball/tables/matchup.php?' +
@@ -956,6 +1088,16 @@ const buildSplitLine = (stats = null, pitcherHand = '') => {
   return `vs ${pitcherHand || '?'}HP: ${formatRate(stats.avg)} AVG | ${formatRate(stats.ops)} OPS | ${stats.homeRuns} HR`
 }
 
+const buildCareerLine = (profile = null, seasonStats = null) => {
+  if (!profile || !Number(profile.careerPlateAppearances)) return 'Career profile pending'
+  const seasonPa = Number(seasonStats?.plateAppearances || 0) || 0
+  const sampleLabel = seasonPa < 24 ? 'tiny 2026 sample' : seasonPa < 80 ? 'shallow 2026 sample' : '2026 sample ok'
+  const powerLabel = Number.isFinite(Number(profile.careerPowerIndex))
+    ? `power ${Number(profile.careerPowerIndex).toFixed(0)}`
+    : 'power pending'
+  return `career ${profile.careerPlateAppearances} PA | ${formatRate(profile.careerOps)} OPS | ${profile.careerHomeRuns} HR | ${profile.repeatabilityLabel || 'profile stored'} | ${powerLabel} | ${sampleLabel}`
+}
+
 const buildPitchStyleAdjustment = ({
   pitcherProfileType,
   contactScore,
@@ -1170,7 +1312,8 @@ const buildPlayerLineupEntry = ({
   pitchTypeStatsByType,
   opposingPitcher,
   statcastTrend = null,
-  opponentContext = null
+  opponentContext = null,
+  careerProfile = null
 }) => {
   const seasonOps = Number.isFinite(seasonStats?.ops) ? seasonStats.ops : 0.72
   const recentOps =
@@ -1183,51 +1326,125 @@ const buildPlayerLineupEntry = ({
       : seasonOps
   const seasonAvg = Number.isFinite(seasonStats?.avg) ? seasonStats.avg : 0.245
   const recentAvg = Number.isFinite(recentStats?.avg) ? recentStats.avg : seasonAvg
-  const splitAvg = Number.isFinite(splitStats?.avg) ? splitStats.avg : seasonAvg
+  const splitAvg =
+    Number.isFinite(splitStats?.avg) && Number(splitStats?.plateAppearances || 0) >= 10
+      ? splitStats.avg
+      : seasonAvg
   const seasonHrRate = Number.isFinite(seasonStats?.hrRate) ? seasonStats.hrRate : 0.03
   const recentHrRate = Number.isFinite(recentStats?.hrRate) ? recentStats.hrRate : seasonHrRate
-  const splitHrRate = Number.isFinite(splitStats?.hrRate) ? splitStats.hrRate : seasonHrRate
+  const splitHrRate =
+    Number.isFinite(splitStats?.hrRate) && Number(splitStats?.plateAppearances || 0) >= 10
+      ? splitStats.hrRate
+      : seasonHrRate
   const seasonKRate = Number.isFinite(seasonStats?.kRate) ? seasonStats.kRate : 0.22
   const splitKRate = Number.isFinite(splitStats?.kRate) ? splitStats.kRate : seasonKRate
   const seasonBbRate = Number.isFinite(seasonStats?.bbRate) ? seasonStats.bbRate : 0.08
-  const recentDelta = recentOps - seasonOps
-  const splitDelta = splitOps - seasonOps
+  const seasonPa = Number(seasonStats?.plateAppearances || 0) || 0
+  const careerPa = Number(careerProfile?.careerPlateAppearances || 0) || 0
+  const careerPowerIndex = Number(careerProfile?.careerPowerIndex)
+  const careerContactRisk = Number(careerProfile?.contactRiskIndex)
+  const careerRoleStability = Number(careerProfile?.roleStabilityIndex)
+  const careerSlg = Number(careerProfile?.careerSlg)
+  const careerOps = Number(careerProfile?.careerOps)
+  const careerTbPerPa = Number(careerProfile?.careerTbPerPa)
+  const careerHrPerPa = Number(careerProfile?.careerHrPerPa)
+  const careerKRate = Number(careerProfile?.careerKRate)
+  const careerBbRate = Number(careerProfile?.careerBbRate)
+  const careerReliability = Number.isFinite(careerPa) && careerPa > 0 ? clamp(careerPa / 650, 0.12, 0.86) : 0
+  const currentSeasonWeight = clamp(seasonPa / 120, 0.16, 1)
+  const careerSmallSampleWeight = seasonPa < 80 ? careerReliability * (1 - currentSeasonWeight) : careerReliability * 0.18
+  const careerPowerLift =
+    careerSmallSampleWeight > 0 && Number.isFinite(careerPowerIndex)
+      ? (careerPowerIndex - 50) * 0.42 * careerSmallSampleWeight
+      : 0
+  const careerContactLift =
+    careerSmallSampleWeight > 0 && Number.isFinite(careerContactRisk)
+      ? (50 - careerContactRisk) * 0.3 * careerSmallSampleWeight
+      : 0
+  const careerPatienceLift =
+    careerSmallSampleWeight > 0 && Number.isFinite(careerBbRate)
+      ? (careerBbRate - 0.08) * 180 * careerSmallSampleWeight
+      : 0
+  const stableSeasonOps =
+    seasonPa < 16 && Number.isFinite(careerOps)
+      ? seasonOps * currentSeasonWeight + careerOps * (1 - currentSeasonWeight)
+      : seasonOps
+  const stableRecentOps =
+    seasonPa < 16 && Number.isFinite(careerOps)
+      ? recentOps * currentSeasonWeight + careerOps * (1 - currentSeasonWeight)
+      : recentOps
+  const stableSplitOps =
+    seasonPa < 16 && Number.isFinite(careerOps)
+      ? splitOps * currentSeasonWeight + careerOps * (1 - currentSeasonWeight)
+      : splitOps
+  const recentDelta = stableRecentOps - stableSeasonOps
+  const splitDelta = stableSplitOps - stableSeasonOps
   const slot = Number(lineupPlayer.slot || 9)
 
-  const powerScore = clamp(
-    50 + (Number(seasonStats?.slg || 0.39) - 0.39) * 110 + (seasonHrRate - 0.035) * 700 + (splitHrRate - seasonHrRate) * 420,
+  let powerScore = clamp(
+    50 +
+      (Number(seasonStats?.slg || 0.39) - 0.39) * 110 +
+      (seasonHrRate - 0.035) * 700 +
+      (splitHrRate - seasonHrRate) * 420 +
+      (Number.isFinite(careerSlg) ? (careerSlg - 0.39) * 28 * careerSmallSampleWeight : 0) +
+      (Number.isFinite(careerTbPerPa) ? (careerTbPerPa - 0.36) * 70 * careerSmallSampleWeight : 0) +
+      (Number.isFinite(careerHrPerPa) ? (careerHrPerPa - 0.03) * 420 * careerSmallSampleWeight : 0) +
+      careerPowerLift,
     18,
     92
   )
-  const contactScore = clamp(
+  let contactScore = clamp(
     50 +
       (seasonAvg - 0.245) * 150 +
       (splitAvg - seasonAvg) * 90 -
       (seasonKRate - 0.22) * 120 +
-      ((seasonStats?.hitsPerGame || 0.8) - 0.8) * 18,
+      ((seasonStats?.hitsPerGame || 0.8) - 0.8) * 18 -
+      (Number.isFinite(careerKRate) ? (careerKRate - 0.23) * 85 * careerSmallSampleWeight : 0) +
+      careerContactLift,
     18,
     92
   )
-  const patienceScore = clamp(
-    50 + (seasonBbRate - 0.08) * 240 + (((seasonStats?.obp || 0.315) - seasonAvg) - 0.07) * 180,
+  let patienceScore = clamp(
+    50 + (seasonBbRate - 0.08) * 240 + (((seasonStats?.obp || 0.315) - seasonAvg) - 0.07) * 180 + careerPatienceLift,
     18,
     92
   )
-  const formScore = clamp(
+  let formScore = clamp(
     50 + recentDelta * 110 + (recentAvg - seasonAvg) * 200 + (recentHrRate - seasonHrRate) * 1200,
     18,
     92
   )
-  const splitScore = clamp(
+  let splitScore = clamp(
     50 + splitDelta * 125 + (splitAvg - seasonAvg) * 180 + (splitHrRate - seasonHrRate) * 1000,
     18,
     92
   )
-  const varianceScore = clamp(
-    42 + Math.abs(recentDelta) * 170 + Math.abs(splitDelta) * 140 + Math.max(powerScore - contactScore, 0) * 0.38 + (seasonKRate - 0.22) * 110,
+  let varianceScore = clamp(
+    42 +
+      Math.abs(recentDelta) * 170 +
+      Math.abs(splitDelta) * 140 +
+      Math.max(powerScore - contactScore, 0) * 0.38 +
+      (seasonKRate - 0.22) * 110 +
+      (seasonPa < 24 ? 10 : seasonPa < 60 ? 5 : 0) +
+      (Number.isFinite(careerContactRisk) ? Math.max(careerContactRisk - 58, 0) * 0.22 : 0) -
+      (Number.isFinite(careerRoleStability) ? Math.max(careerRoleStability - 65, 0) * 0.08 : 0),
     18,
     92
   )
+  if (seasonPa < 16 && careerProfile) {
+    const careerPowerAnchor = Number.isFinite(careerPowerIndex)
+      ? clamp(50 + (careerPowerIndex - 50) * 0.85, 18, 92)
+      : 50
+    const careerContactAnchor = Number.isFinite(careerContactRisk)
+      ? clamp(50 - (careerContactRisk - 50) * 0.65, 18, 92)
+      : 50
+    powerScore = clamp(powerScore * 0.42 + careerPowerAnchor * 0.58, 18, 92)
+    contactScore = clamp(contactScore * 0.28 + careerContactAnchor * 0.72, 18, 92)
+    patienceScore = clamp(patienceScore * 0.45 + (Number.isFinite(careerBbRate) ? 50 + (careerBbRate - 0.08) * 180 : 50) * 0.55, 18, 92)
+    formScore = clamp(50 + (formScore - 50) * 0.28, 18, 92)
+    splitScore = clamp(50 + (splitScore - 50) * 0.35, 18, 92)
+    varianceScore = clamp(varianceScore + 8 + Math.max(Number(careerContactRisk || 50) - 55, 0) * 0.35, 18, 92)
+  }
   const handednessEdge =
     lineupPlayer.bats === 'S'
       ? 0.7
@@ -1249,8 +1466,8 @@ const buildPlayerLineupEntry = ({
     pitchTypeStatsByType,
     opposingPitcherMix: opposingPitcher?.pitchMix
   })
-  const matchupGrade = clamp(
-    (seasonOps - 0.72) * 18 +
+  let matchupGrade = clamp(
+    (stableSeasonOps - 0.72) * 18 +
       recentDelta * 28 +
       splitDelta * 22 +
       handednessEdge +
@@ -1260,6 +1477,9 @@ const buildPlayerLineupEntry = ({
     -8,
     10
   )
+  if (seasonPa < 16 && careerProfile) {
+    matchupGrade = clamp(matchupGrade, -8, careerPowerIndex >= 68 ? 6.8 : 4.8)
+  }
   const matchupScore = clamp(
     50 +
       matchupGrade * 4.2 +
@@ -1283,6 +1503,8 @@ const buildPlayerLineupEntry = ({
   if (formScore <= 42 || matchupGrade <= -1.4) tags.push('cold')
   if (statcastTrend?.trendSignal === 'improving') tags.push('statcast up')
   if (statcastTrend?.trendSignal === 'fading') tags.push('statcast fade')
+  if (careerProfile?.repeatabilityLabel?.includes('power')) tags.push('career power')
+  if (seasonPa < 24 && careerProfile?.repeatabilityLabel) tags.push('small-sample story')
   if (
     Number.isFinite(Number(statcastTrend?.rolling7BarrelPct)) &&
     Number.isFinite(Number(statcastTrend?.rolling7HardHitPct)) &&
@@ -1297,6 +1519,7 @@ const buildPlayerLineupEntry = ({
     buildSeasonLine(seasonStats),
     buildRecentLine(recentStats),
     buildSplitLine(splitStats, opposingPitcher?.handedness),
+    buildCareerLine(careerProfile, seasonStats),
     pitchTypeFit?.summary ? `arsenal ${pitchTypeFit.summary}` : '',
     `${formatSigned(matchupGrade)} matchup grade in a ${pitchStyleAdjustment.note}`
   ].join(' | ')
@@ -1367,6 +1590,7 @@ const buildPlayerLineupEntry = ({
           triples: splitStats.triples,
           homeRuns: splitStats.homeRuns,
           walks: splitStats.baseOnBalls,
+          strikeouts: splitStats.strikeOuts,
           totalBases: splitStats.totalBases,
           atBats: splitStats.atBats,
           plateAppearances: splitStats.plateAppearances,
@@ -1378,6 +1602,7 @@ const buildPlayerLineupEntry = ({
           singlesRate: roundToHundredths((splitStats.singlesRate || 0) * 100) / 100,
           hrRate: roundToHundredths((splitStats.hrRate || 0) * 100) / 100,
           walkRate: roundToHundredths((splitStats.bbRate || 0) * 100) / 100,
+          kRate: roundToHundredths((splitStats.kRate || 0) * 100) / 100,
           totalBasesRate: roundToHundredths((splitStats.totalBasesRate || 0) * 100) / 100
         }
       : null,
@@ -1420,6 +1645,22 @@ const buildPlayerLineupEntry = ({
           weightedTotalBasesPerPaLast10: parseNumber(opponentContext.weightedTotalBasesPerPaLast10),
           hitsPerPaWeightDeltaLast10: parseNumber(opponentContext.hitsPerPaWeightDeltaLast10),
           totalBasesPerPaWeightDeltaLast10: parseNumber(opponentContext.totalBasesPerPaWeightDeltaLast10)
+        }
+      : null,
+    careerProfile: careerProfile
+      ? {
+          ...careerProfile,
+          careerAvg: parseNumber(careerProfile.careerAvg),
+          careerObp: parseNumber(careerProfile.careerObp),
+          careerSlg: parseNumber(careerProfile.careerSlg),
+          careerOps: parseNumber(careerProfile.careerOps),
+          careerTbPerPa: parseNumber(careerProfile.careerTbPerPa),
+          careerHrPerPa: parseNumber(careerProfile.careerHrPerPa),
+          careerKRate: parseNumber(careerProfile.careerKRate),
+          careerBbRate: parseNumber(careerProfile.careerBbRate),
+          careerPowerIndex: parseNumber(careerProfile.careerPowerIndex),
+          contactRiskIndex: parseNumber(careerProfile.contactRiskIndex),
+          roleStabilityIndex: parseNumber(careerProfile.roleStabilityIndex)
         }
       : null,
     tags,
@@ -1607,6 +1848,7 @@ const extractLineupPlayers = (boxscoreSide = {}, playerStatMaps = {}, opposingPi
       const pitchTypeStatsByType = playerStatMaps.pitchArsenal?.get(playerId) || null
       const statcastTrend = playerStatMaps.statcastTrends?.get(playerId) || null
       const opponentContext = playerStatMaps.opponentContext?.get(playerId) || null
+      const careerProfile = playerStatMaps.careerProfiles?.get(playerId) || null
       const playerDetails = playerStatMaps.season.get(playerId) || playerStatMaps.recent.get(playerId) || null
       const lineupPlayer = {
         playerId,
@@ -1624,7 +1866,8 @@ const extractLineupPlayers = (boxscoreSide = {}, playerStatMaps = {}, opposingPi
         pitchTypeStatsByType,
         opposingPitcher,
         statcastTrend,
-        opponentContext
+        opponentContext,
+        careerProfile
       })
     })
     .filter(Boolean)
@@ -1657,6 +1900,7 @@ const extractSupplementalLineupPlayers = ({
       const pitchTypeStatsByType = playerStatMaps.pitchArsenal?.get(playerId) || null
       const statcastTrend = playerStatMaps.statcastTrends?.get(playerId) || null
       const opponentContext = playerStatMaps.opponentContext?.get(playerId) || null
+      const careerProfile = playerStatMaps.careerProfiles?.get(playerId) || null
       const playerDetails = playerStatMaps.season.get(playerId) || playerStatMaps.recent.get(playerId) || null
       if (!matchesExpectedOfficialTeam({ expectedOfficialTeam, playerRecord, playerDetails })) return null
       const lineupPlayer = {
@@ -1675,7 +1919,8 @@ const extractSupplementalLineupPlayers = ({
         pitchTypeStatsByType,
         opposingPitcher,
         statcastTrend,
-        opponentContext
+        opponentContext,
+        careerProfile
       })
     })
     .filter(Boolean)
@@ -1811,8 +2056,10 @@ const main = async () => {
     pitcherIds: [...starterIds, ...relieverIds],
     year: Number(options.date.slice(0, 4))
   })
+  ingestHitterCareerProfiles(options.date, allPlayerIds)
   const hitterStatcastTrendMap = fetchHitterStatcastTrendMap(options.date, allPlayerIds)
   const hitterOpponentContextMap = fetchHitterOpponentContextMap(options.date, allPlayerIds)
+  const hitterCareerProfileMap = fetchHitterCareerProfileMap(allPlayerIds)
 
   const playerStatMaps = {
     season: seasonMap,
@@ -1821,7 +2068,8 @@ const main = async () => {
     vsLeft: vsLeftMap,
     pitchArsenal: batterPitchTypeStatsByPlayerId,
     statcastTrends: hitterStatcastTrendMap,
-    opponentContext: hitterOpponentContextMap
+    opponentContext: hitterOpponentContextMap,
+    careerProfiles: hitterCareerProfileMap
   }
 
   const lineupBoardsByGameId = {}
@@ -2055,6 +2303,7 @@ const main = async () => {
     }),
     'utf8'
   )
+  ingestHitterLineupSplits(options.date, options.out)
 
   const postedLineupCount = Object.values(lineupBoardsByGameId).reduce(
     (count, board) => count + (board.status.away === 'posted' ? 1 : 0) + (board.status.home === 'posted' ? 1 : 0),

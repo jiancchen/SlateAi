@@ -375,7 +375,12 @@ export function BoardView(props: BoardViewProps) {
   const mlbOverviewBoardRows = (() => {
     if (!mlbValueSummary) return []
     const maxRows = Math.min(10, Number(mlbValueSummary.totalGames || 0))
-    const rankedRows = [...(mlbValueSummary.sideRows || []), ...(mlbValueSummary.totalRows || [])]
+    const rankedRows = [
+      ...(mlbValueSummary.sideRows || []),
+      ...(mlbValueSummary.totalRows || []),
+      ...(mlbValueSummary.first5MoneylineRows || []),
+      ...(mlbValueSummary.first5TotalRows || [])
+    ]
       .sort((left: AnyRecord, right: AnyRecord) => right.confidence - left.confidence || right.sortEdge - left.sortEdge)
     const rowsByGame = new Map<string, AnyRecord>()
     rankedRows.forEach((row: AnyRecord) => {
@@ -383,64 +388,6 @@ export function BoardView(props: BoardViewProps) {
       if (!gameId || rowsByGame.has(gameId)) return
       rowsByGame.set(gameId, row)
     })
-    if (rowsByGame.size < maxRows) {
-      const fallbackRows = games
-        .filter((game: AnyRecord) => game.league === 'MLB' && !rowsByGame.has(String(game.id || '')))
-        .map((game: AnyRecord) => {
-          const totals = game.analysis?.mlbProjection?.totals
-          if (!totals) return null
-          const phases = [
-            {
-              id: 'full',
-              label: 'Full game',
-              lean: totals.fullGame,
-              projectedLabel: `Proj ${totals.projectedFullTotalRuns} vs ${game.analysis?.mlbProjection?.postedTotal ?? 'N/A'}`
-            },
-            {
-              id: 'first5',
-              label: 'First 5',
-              lean: totals.first5,
-              projectedLabel: `Proj ${totals.projectedFirst5TotalRuns} vs ${totals.derivedFirst5TotalLine ?? 'N/A'}`
-            },
-            {
-              id: 'late',
-              label: 'Rest of game',
-              lean: totals.late,
-              projectedLabel: `Proj ${totals.projectedLateTotalRuns} vs ${totals.derivedLateTotalLine ?? 'N/A'}`
-            }
-          ]
-            .filter((phase) => phase.lean?.label && phase.lean?.lean && phase.lean.lean !== 'Pass')
-            .map((phase) => {
-              const confidence = Math.round(
-                Math.min(
-                  90,
-                  54 + Math.abs(Number(phase.lean.edge) || 0) * 18 + Math.max((game.analysis?.confidence || 50) - 56, 0) * 0.2
-                )
-              )
-              return {
-                id: `${game.id}:overview-fallback:${phase.id}`,
-                gameId: game.id,
-                title: phase.lean.label,
-                subtitle: `${game.title} · ${phase.label}`,
-                confidence,
-                sortConfidence: confidence,
-                sortEdge: Math.abs(Number(phase.lean.edge) || 0),
-                priceLabel: phase.projectedLabel,
-                metaLabel: phase.lean.strength,
-                tags: [phase.label, totals.bullpenExhaustionNote ? 'Bullpen live' : 'Model total'].slice(0, 2)
-              }
-            })
-            .sort((left: AnyRecord, right: AnyRecord) => right.confidence - left.confidence || right.sortEdge - left.sortEdge)
-          return phases[0] || null
-        })
-        .filter(Boolean)
-        .sort((left: AnyRecord, right: AnyRecord) => right.confidence - left.confidence || right.sortEdge - left.sortEdge)
-      fallbackRows.forEach((row: AnyRecord) => {
-        const gameId = String(row.gameId || '')
-        if (!gameId || rowsByGame.has(gameId) || rowsByGame.size >= maxRows) return
-        rowsByGame.set(gameId, row)
-      })
-    }
     return Array.from(rowsByGame.values()).slice(0, maxRows)
   })()
 
@@ -691,6 +638,8 @@ export function BoardView(props: BoardViewProps) {
                     <div className="tennis-value-pill-row">
                       <span>Side {mlbValueSummary.sideRows.length}</span>
                       <span>Totals {mlbValueSummary.totalRows.length}</span>
+                      <span>F5 ML {mlbValueSummary.first5MoneylineRows?.length || 0}</span>
+                      <span>F5 O/U {mlbValueSummary.first5TotalRows?.length || 0}</span>
                       <span>TB {mlbValueSummary.totalBaseRows.length}</span>
                       <span>K O/U {mlbValueSummary.strikeoutRows.length}</span>
                       <span>H+R+RBI {mlbValueSummary.displayHitRunRbiRows.length}</span>
@@ -700,9 +649,12 @@ export function BoardView(props: BoardViewProps) {
                       <span>Posted {mlbValueSummary.fullyPostedGames}</span>
                       <span>Partial {mlbValueSummary.partialGames}</span>
                     </div>
-                    {mlbValueSummary.sideRows.length || mlbValueSummary.totalRows.length ? (
+                    {mlbValueSummary.sideRows.length ||
+                    mlbValueSummary.totalRows.length ||
+                    mlbValueSummary.first5MoneylineRows?.length ||
+                    mlbValueSummary.first5TotalRows?.length ? (
                       <div className="tennis-value-list">
-                        <div className="tennis-value-section-label">Side + totals board</div>
+                        <div className="tennis-value-section-label">Side + totals + 1st 5 board</div>
                         {mlbOverviewBoardRows.map((row: AnyRecord) => (
                             <button
                               key={`${row.id}-mlb-value`}
@@ -715,11 +667,96 @@ export function BoardView(props: BoardViewProps) {
                                 <small>{row.subtitle} | {row.priceLabel || row.metaLabel}</small>
                               </span>
                               <span>
-                                <strong>{row.confidence}%</strong>
-                                <small>{row.tags?.join(' | ') || row.metaLabel}</small>
+                                <strong>
+                                  {row.evCents != null && Number.isFinite(Number(row.evCents))
+                                    ? `${formatSignedNumber(row.evCents, 1)}c`
+                                    : `${row.confidence}%`}
+                                </strong>
+                                <small>
+                                  {row.evCents != null && Number.isFinite(Number(row.evCents))
+                                    ? `${row.confidence}% model | ${row.priceLabel || 'priced'}`
+                                    : row.tags?.join(' | ') || row.metaLabel}
+                                </small>
                               </span>
                             </button>
                           ))}
+                      </div>
+                    ) : null}
+                  </section>
+                ) : null}
+                {mlbValueSummary && shouldShowValueScope('mlb-first5') ? (
+                  <section className="tennis-value-slate-card">
+                    <div className="tennis-value-slate-head">
+                      <div>
+                        <p className="eyebrow">MLB 1st 5 value board</p>
+                        <h3>{activeDayIsoDate} starter-window ML + O/U</h3>
+                      </div>
+                      <span>
+                        {(mlbValueSummary.first5MoneylineRows?.length || 0) + (mlbValueSummary.first5TotalRows?.length || 0)} rows
+                      </span>
+                    </div>
+                    <p>
+                      First 5 confidence is tied to M0 projected runs, not generic board ranking. Rows without a mapped
+                      first-five price are shown as need-line instead of bet-grade.
+                    </p>
+                    <div className="tennis-value-pill-row">
+                      <span>F5 ML {mlbValueSummary.first5MoneylineRows?.length || 0}</span>
+                      <span>F5 O/U {mlbValueSummary.first5TotalRows?.length || 0}</span>
+                      <span>
+                        Priced {(mlbValueSummary.first5MoneylineRows || []).filter((row: AnyRecord) => row.raw?.hasMarket).length +
+                          (mlbValueSummary.first5TotalRows || []).filter((row: AnyRecord) => row.raw?.hasMarket).length}
+                      </span>
+                    </div>
+                    {mlbValueSummary.first5MoneylineRows?.length ? (
+                      <div className="tennis-value-list">
+                        <div className="tennis-value-section-label">1st 5 moneyline</div>
+                        {mlbValueSummary.first5MoneylineRows.slice(0, 8).map((row: AnyRecord) => (
+                          <button
+                            key={`${row.id}-first5-ml-board`}
+                            type="button"
+                            className="tennis-value-row"
+                            onClick={() => openBoardGame(row.gameId)}
+                          >
+                            <span>
+                              <strong>{row.title}</strong>
+                              <small>{row.subtitle} | {row.metaLabel}</small>
+                            </span>
+                            <span>
+                              <strong>
+                                {row.evCents != null && Number.isFinite(Number(row.evCents))
+                                  ? `${formatSignedNumber(row.evCents, 1)}c`
+                                  : `${row.confidence}%`}
+                              </strong>
+                              <small>{row.priceLabel}</small>
+                            </span>
+                          </button>
+                        ))}
+                      </div>
+                    ) : null}
+                    {mlbValueSummary.first5TotalRows?.length ? (
+                      <div className="tennis-value-list">
+                        <div className="tennis-value-section-label">1st 5 O/U runs</div>
+                        {mlbValueSummary.first5TotalRows.slice(0, 8).map((row: AnyRecord) => (
+                          <button
+                            key={`${row.id}-first5-total-board`}
+                            type="button"
+                            className="tennis-value-row"
+                            onClick={() => openBoardGame(row.gameId)}
+                          >
+                            <span>
+                              <strong>{row.title}</strong>
+                              <small>{row.subtitle} | {row.metaLabel}</small>
+                            </span>
+                            <span>
+                              <strong>
+                                {row.evCents != null && Number.isFinite(Number(row.evCents))
+                                  ? `${formatSignedNumber(row.evCents, 1)}c`
+                                  : `${row.confidence}%`}
+                              </strong>
+                              <small>{row.priceLabel}</small>
+                            </span>
+                          </button>
+                        ))}
                       </div>
                     ) : null}
                   </section>

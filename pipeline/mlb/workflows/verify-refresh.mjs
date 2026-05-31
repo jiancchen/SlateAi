@@ -115,6 +115,17 @@ const main = async () => {
   const lineupCounts = { posted: 0, partial: 0, pending: 0 }
   const weatherCount = lineupBoards.filter((board) => board?.weather).length
   const partialGames = []
+  const lineupPlayers = lineupBoards.flatMap((board) => [
+    ...(board?.away?.lineup || []),
+    ...(board?.home?.lineup || [])
+  ])
+  const lineupCareerProfileCount = lineupPlayers.filter(
+    (player) => Number(player?.careerProfile?.careerPlateAppearances || 0) > 0
+  ).length
+  const tinySamplePropsWithoutRepeatability = (savedProps?.picks || []).filter((pick) => {
+    const seasonPa = Number(pick?.sample?.seasonPlateAppearances || 0) || 0
+    return seasonPa > 0 && seasonPa < 24 && !pick?.repeatability?.label
+  })
 
   for (const board of lineupBoards) {
     const awayStatus = board?.status?.away || 'pending'
@@ -170,6 +181,16 @@ const main = async () => {
     detail: `${lineupBoards.length} boards for ${games.length} games`
   })
   checks.push({
+    ok: lineupPlayers.length === 0 || lineupCareerProfileCount >= Math.floor(lineupPlayers.length * 0.92),
+    label: 'Hitter career profiles joined to lineup boards',
+    detail: `${lineupCareerProfileCount}/${lineupPlayers.length} lineup bats`
+  })
+  checks.push({
+    ok: tinySamplePropsWithoutRepeatability.length === 0,
+    label: 'Tiny-sample props carry repeatability labels',
+    detail: `${tinySamplePropsWithoutRepeatability.length} unsupported tiny-sample props`
+  })
+  checks.push({
     ok: lineupCounts.pending === 0,
     label: 'No pending lineup states remain',
     detail: `${lineupCounts.posted} posted, ${lineupCounts.partial} partial, ${lineupCounts.pending} pending`
@@ -208,6 +229,8 @@ const main = async () => {
   const hardFailures = checks.filter((check) => !check.ok && (
     check.label === 'Active game count matches official schedule' ||
     check.label === 'Lineup boards generated for each active game' ||
+    check.label === 'Hitter career profiles joined to lineup boards' ||
+    check.label === 'Tiny-sample props carry repeatability labels' ||
     ((check.label === 'Home-run board generated' ||
       check.label === 'Non-HR prop board generated') &&
       expectLineupDrivenBoards)

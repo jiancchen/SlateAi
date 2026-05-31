@@ -5,8 +5,8 @@
   "modelId": "T0",
   "slateDate": "2026-05-31",
   "status": "deployed",
-  "deployedAt": "2026-05-31T16:21:23.233Z",
-  "deploymentUrl": "https://slate-web-static-1-2w23m449n-jian-chens-projects-667dcf76.vercel.app",
+  "deployedAt": "2026-05-31T18:03:12.068Z",
+  "deploymentUrl": "https://slate-web-static-1-rmm9kzu6i-jian-chens-projects-667dcf76.vercel.app",
   "webRoot": "web",
   "vercelProject": {
     "projectId": "prj_wKTGUqaCcDzyat6fBENE0ROnBWFL",
@@ -16,7 +16,7 @@
   "staticArtifact": {
     "root": "web/dist",
     "files": 62,
-    "sha256": "55a7e3f5ceac770f27e6d775560b0252ce30137217dcda9a7c5b744f7585aa37"
+    "sha256": "a7bd332d95be849f3d89b747b828a1a7212205b389d9d0a3cedddbade21c4d8f"
   },
   "publicData": {
     "currentSlate": {

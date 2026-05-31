@@ -10,9 +10,9 @@ Goal:
 
 Target slate:
 
-- date: `2026-05-30`
+- date: `2026-05-31`
 - team-side shadow cards: `30`
-- reliever candidates scored: `272`
+- reliever candidates scored: `276`
 - conversion window: `8`
 - dependency window: `5`
 
@@ -26,39 +26,39 @@ Target slate:
 
 | Team-side games | Exact 1st | Top-2 | Top-3 |
 | --- | --- | --- | --- |
-| 20 | 20.0% | 35.0% | 50.0% |
+| 0 | N/A | N/A | N/A |
 
 ## Top Shadow Clusters
 
 | Team | Opponent | Lead | Alt | Starter hook | Top-2 share |
 | --- | --- | --- | --- | --- | --- |
-| Astros | Brewers | AJ Blubaugh | Nate Pearson | 0.0% | 55.2% |
-| Padres | Nationals | Wandy Peralta | Bradgley Rodriguez | 0.0% | 51.9% |
-| Brewers | Astros | Carlos Rodriguez | Shane Drohan | 0.0% | 45.6% |
-| Reds | Braves | Sam Moll | Brock Burke | 0.0% | 45.5% |
-| Pirates | Twins | Mason Montgomery | Gregory Soto | 0.0% | 44.3% |
-| Marlins | Mets | John King | Andrew Nardi | 0.0% | 43.5% |
-| Twins | Pirates | Simeon Woods Richardson | Andrew Morris | 0.0% | 43.1% |
-| Angels | Rays | Sam Bachman | José Fermin | 0.0% | 41.5% |
-| Braves | Reds | Reynaldo López | Dylan Dodd | 0.0% | 41.3% |
-| Royals | Rangers | Daniel Lynch IV | John Schreiber | 0.0% | 40.5% |
+| Braves | Reds | Dylan Dodd | Didier Fuentes | 0.0% | 45.6% |
+| Pirates | Twins | Justin Lawrence | Brandan Bidois | 0.0% | 40.3% |
+| Athletics | Yankees | José Suarez | Luis Medina | 0.0% | 38.1% |
+| White Sox | Tigers | Brandon Eisert | Tyler Davis | 0.0% | 36.8% |
+| Phillies | Dodgers | Jonathan Bowlan | Tanner Banks | 0.0% | 36.5% |
+| Giants | Rockies | Keaton Winn | Matt Gage | 0.0% | 36.5% |
+| Guardians | Red Sox | Colin Holderman | Tim Herrin | 0.0% | 36.3% |
+| Cubs | Cardinals | Ethan Roberts | Ryan Rolison | 0.0% | 35.0% |
+| Astros | Brewers | Nate Pearson | Bryan King | 0.0% | 34.9% |
+| Dodgers | Phillies | Edgardo Henriquez | Jonathan Hernández | 0.0% | 34.3% |
 
 ## Top Shadow Features
 
-- `first_reliever_likelihood` `0.028`
-- `quality_entry_order_avg_last10` `0.028`
-- `availability_score` `0.028`
-- `days_since_last_appearance` `0.027`
-- `fatigue_score` `0.025`
+- `days_since_last_appearance` `0.028`
+- `quality_entry_order_avg_last10` `0.027`
+- `availability_score` `0.027`
+- `first_reliever_likelihood` `0.027`
+- `fatigue_score` `0.024`
 - `bridge_score` `0.017`
-- `avg_pitches_per_appearance` `0.016`
-- `quality_strikeouts_per_bf_last10` `0.016`
-- `starter_prob_15` `0.016`
+- `avg_pitches_per_appearance` `0.017`
+- `quality_strikeouts_per_bf_last10` `0.017`
 - `quality_traffic_per_bf_last10` `0.016`
 - `quality_pitches_per_app_last10` `0.016`
 - `pitches_last3` `0.015`
+- `starter_prob_15` `0.015`
+- `starter_prob_12` `0.015`
 - `quality_strike_rate_last10` `0.014`
-- `starter_prob_12` `0.014`
 
 ## Read
 

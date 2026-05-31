@@ -31,6 +31,7 @@ Implemented from this lesson:
 
 - `performance_index.json` links the settled May 30 run, side board, results journal, and postmortem artifacts from inside M0.
 - `followups.md` keeps the cartridge-level follow-up rules visible without duplicating the daily postmortem.
+- `M0_log.md` records model/warehouse changes that need backtest proof before they become trusted betting inputs.
 - The full-game side layer now treats quiet-start, traffic-without-conversion, and quiet-first-five rates as veto/penalty inputs instead of passive warning text.
 
 ## Known Gaps

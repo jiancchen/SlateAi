@@ -41,7 +41,7 @@ from research_mlb_starter_exit_buckets import load_rows as load_starter_rows
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
 OUT_ROOT = ROOT / "data-private" / "predictions" / "mlb-reliever-shadow"
 MODULE_ROOT = ROOT / "web" / "src" / "lib"
-REPORT_PATH = ROOT / "development-docs" / "mlb-first-up-reliever-shadow-board-053026.md"
+REPORT_PATH = ROOT / "development-docs" / "mlb" / "research" / "mlb-first-up-reliever-shadow-board-053026.md"
 
 OFFICIAL_TO_DESK_TEAM = {
     "Washington Nationals": "Nationals",

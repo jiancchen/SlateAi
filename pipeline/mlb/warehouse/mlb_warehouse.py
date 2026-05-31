@@ -34,6 +34,10 @@ MLB_PLAYER_PITCHING_URL = (
     "https://statsapi.mlb.com/api/v1/people/{player_id}"
     "?hydrate=stats(group=[pitching],type=[season],season={season})"
 )
+MLB_HITTER_PROFILE_URL = (
+    "https://statsapi.mlb.com/api/v1/people"
+    "?personIds={player_ids}&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
+)
 BREF_WAR_DAILY_PITCH_URL = "https://www.baseball-reference.com/data/war_daily_pitch.txt"
 STATCAST_HOME_RUNS_CSV_URL = (
     "https://baseballsavant.mlb.com/leaderboard/home-runs"
@@ -295,6 +299,118 @@ CREATE TABLE IF NOT EXISTS mlb_player_game_batting (
   summary TEXT,
   raw_json TEXT,
   PRIMARY KEY (game_pk, team_role, player_id)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_player_identity_profiles (
+  player_id INTEGER PRIMARY KEY,
+  full_name TEXT NOT NULL,
+  first_name TEXT,
+  last_name TEXT,
+  birth_date TEXT,
+  current_age INTEGER,
+  birth_city TEXT,
+  birth_country TEXT,
+  height TEXT,
+  weight INTEGER,
+  active INTEGER,
+  primary_position_code TEXT,
+  primary_position_name TEXT,
+  bat_side TEXT,
+  throw_hand TEXT,
+  draft_year INTEGER,
+  current_team_id INTEGER,
+  current_team_name TEXT,
+  mlb_debut_date TEXT,
+  source_url TEXT,
+  fetched_at TEXT NOT NULL,
+  source_json TEXT
+);
+
+CREATE TABLE IF NOT EXISTS mlb_hitter_career_profiles (
+  player_id INTEGER PRIMARY KEY,
+  full_name TEXT NOT NULL,
+  seasons_sample INTEGER,
+  debut_year INTEGER,
+  latest_mlb_year INTEGER,
+  career_games INTEGER,
+  career_plate_appearances INTEGER,
+  career_at_bats INTEGER,
+  career_hits INTEGER,
+  career_home_runs INTEGER,
+  career_total_bases INTEGER,
+  career_walks INTEGER,
+  career_strikeouts INTEGER,
+  career_avg REAL,
+  career_obp REAL,
+  career_slg REAL,
+  career_ops REAL,
+  career_tb_per_pa REAL,
+  career_hr_per_pa REAL,
+  career_k_rate REAL,
+  career_bb_rate REAL,
+  best_power_year INTEGER,
+  best_power_home_runs INTEGER,
+  best_power_slg REAL,
+  recent_mlb_year INTEGER,
+  recent_mlb_plate_appearances INTEGER,
+  recent_mlb_home_runs INTEGER,
+  recent_mlb_tb_per_pa REAL,
+  career_power_index REAL,
+  contact_risk_index REAL,
+  role_stability_index REAL,
+  repeatability_label TEXT,
+  volatility_label TEXT,
+  source_url TEXT,
+  fetched_at TEXT NOT NULL,
+  source_json TEXT
+);
+
+CREATE TABLE IF NOT EXISTS mlb_hitter_split_snapshots (
+  snapshot_date TEXT NOT NULL,
+  season INTEGER NOT NULL,
+  game_id TEXT NOT NULL,
+  game_title TEXT,
+  team_role TEXT,
+  team_name TEXT,
+  opponent_name TEXT,
+  player_id INTEGER NOT NULL,
+  player_name TEXT NOT NULL,
+  batting_order INTEGER,
+  opposing_pitcher_id INTEGER,
+  opposing_pitcher_name TEXT,
+  opposing_pitcher_hand TEXT,
+  split_source TEXT NOT NULL,
+  split_type TEXT NOT NULL,
+  split_key TEXT NOT NULL,
+  plate_appearances INTEGER,
+  at_bats INTEGER,
+  runs INTEGER,
+  hits INTEGER,
+  singles INTEGER,
+  doubles INTEGER,
+  triples INTEGER,
+  home_runs INTEGER,
+  rbi INTEGER,
+  walks INTEGER,
+  strikeouts INTEGER,
+  total_bases INTEGER,
+  batting_average REAL,
+  on_base_percentage REAL,
+  slugging_percentage REAL,
+  ops REAL,
+  hit_rate REAL,
+  singles_rate REAL,
+  home_run_rate REAL,
+  walk_rate REAL,
+  strikeout_rate REAL,
+  total_bases_rate REAL,
+  split_score REAL,
+  matchup_grade REAL,
+  source_url TEXT,
+  fetched_at TEXT NOT NULL,
+  source_hash TEXT,
+  raw_json TEXT,
+  PRIMARY KEY (snapshot_date, game_id, player_id, split_type, split_key)
 );
 
 CREATE TABLE IF NOT EXISTS mlb_batter_game_outcomes (
@@ -1445,6 +1561,16 @@ CREATE INDEX IF NOT EXISTS idx_mlb_player_game_batting_player_date
   ON mlb_player_game_batting(player_id, game_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_player_game_batting_team_date
   ON mlb_player_game_batting(team_name, game_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_player_identity_profiles_name
+  ON mlb_player_identity_profiles(full_name);
+CREATE INDEX IF NOT EXISTS idx_mlb_hitter_career_profiles_power
+  ON mlb_hitter_career_profiles(career_power_index);
+CREATE INDEX IF NOT EXISTS idx_mlb_hitter_split_snapshots_player_date
+  ON mlb_hitter_split_snapshots(player_id, snapshot_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_hitter_split_snapshots_game_date
+  ON mlb_hitter_split_snapshots(snapshot_date, game_id);
+CREATE INDEX IF NOT EXISTS idx_mlb_hitter_split_snapshots_split
+  ON mlb_hitter_split_snapshots(snapshot_date, split_type, split_key);
 CREATE INDEX IF NOT EXISTS idx_mlb_batter_game_outcomes_player_date
   ON mlb_batter_game_outcomes(player_id, game_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_batter_game_outcomes_team_date
@@ -1594,6 +1720,622 @@ def fetch_pitcher_season_snapshot(player_id: int | None, season: int) -> dict[st
         "era": stat.get("era"),
         "strikeouts": to_int(stat.get("strikeOuts")),
     }
+
+
+def clamp_value(value: float, minimum: float, maximum: float) -> float:
+    return max(minimum, min(maximum, value))
+
+
+def batched(values: list[int], size: int) -> list[list[int]]:
+    return [values[index:index + size] for index in range(0, len(values), size)]
+
+
+def aggregate_hitting_stat_splits(splits: list[dict[str, Any]]) -> dict[str, Any]:
+    aggregate = {
+        "gamesPlayed": 0,
+        "atBats": 0,
+        "plateAppearances": 0,
+        "hits": 0,
+        "homeRuns": 0,
+        "totalBases": 0,
+        "baseOnBalls": 0,
+        "strikeOuts": 0,
+        "hitByPitch": 0,
+        "sacFlies": 0,
+    }
+    seasons: set[int] = set()
+
+    for split in splits:
+        stat = split.get("stat") or {}
+        season = to_int(split.get("season"))
+        if season:
+            seasons.add(season)
+        for key in aggregate:
+            aggregate[key] += to_int(stat.get(key)) or 0
+
+    plate_appearances = aggregate["plateAppearances"] or (
+        aggregate["atBats"] + aggregate["baseOnBalls"] + aggregate["hitByPitch"] + aggregate["sacFlies"]
+    )
+    aggregate["plateAppearances"] = plate_appearances
+    aggregate["avg"] = aggregate["hits"] / aggregate["atBats"] if aggregate["atBats"] else None
+    aggregate["obp"] = (
+        (aggregate["hits"] + aggregate["baseOnBalls"] + aggregate["hitByPitch"]) /
+        (aggregate["atBats"] + aggregate["baseOnBalls"] + aggregate["hitByPitch"] + aggregate["sacFlies"])
+    ) if (aggregate["atBats"] + aggregate["baseOnBalls"] + aggregate["hitByPitch"] + aggregate["sacFlies"]) else None
+    aggregate["slg"] = aggregate["totalBases"] / aggregate["atBats"] if aggregate["atBats"] else None
+    aggregate["ops"] = aggregate["obp"] + aggregate["slg"] if aggregate["obp"] is not None and aggregate["slg"] is not None else None
+    aggregate["tbPerPa"] = aggregate["totalBases"] / plate_appearances if plate_appearances else None
+    aggregate["hrPerPa"] = aggregate["homeRuns"] / plate_appearances if plate_appearances else None
+    aggregate["kRate"] = aggregate["strikeOuts"] / plate_appearances if plate_appearances else None
+    aggregate["bbRate"] = aggregate["baseOnBalls"] / plate_appearances if plate_appearances else None
+    aggregate["seasonsSample"] = len(seasons)
+    return aggregate
+
+
+def build_hitter_career_profile(person: dict[str, Any], source_url: str, fetched_at: str) -> dict[str, Any]:
+    stat_groups = person.get("stats") or []
+    year_group = next(
+        (
+            group for group in stat_groups
+            if ((group.get("type") or {}).get("displayName") or "").casefold() == "yearbyyear"
+        ),
+        {},
+    )
+    career_group = next(
+        (
+            group for group in stat_groups
+            if ((group.get("type") or {}).get("displayName") or "").casefold() == "career"
+        ),
+        {},
+    )
+    year_splits = [
+        split for split in (year_group.get("splits") or [])
+        if to_int(((split.get("sport") or {}).get("id"))) == 1
+    ]
+    career_splits = [
+        split for split in (career_group.get("splits") or [])
+        if to_int(((split.get("sport") or {}).get("id"))) == 1
+    ]
+
+    career_stats = (career_splits[0].get("stat") or {}) if career_splits else {}
+    career_aggregate = aggregate_hitting_stat_splits(career_splits) if career_splits else aggregate_hitting_stat_splits(year_splits)
+
+    by_year: dict[int, list[dict[str, Any]]] = {}
+    for split in year_splits:
+        season = to_int(split.get("season"))
+        if not season:
+            continue
+        by_year.setdefault(season, []).append(split)
+
+    yearly_aggregates = {
+        season: aggregate_hitting_stat_splits(splits)
+        for season, splits in by_year.items()
+    }
+    latest_year = max(yearly_aggregates) if yearly_aggregates else None
+    recent_mlb = yearly_aggregates.get(latest_year, {}) if latest_year else {}
+    eligible_power_years = [
+        (season, stats)
+        for season, stats in yearly_aggregates.items()
+        if (stats.get("plateAppearances") or 0) >= 40
+    ]
+    if eligible_power_years:
+        best_power_year, best_power_stats = max(
+            eligible_power_years,
+            key=lambda item: (
+                item[1].get("hrPerPa") or 0,
+                item[1].get("slg") or 0,
+                item[1].get("homeRuns") or 0,
+            ),
+        )
+    else:
+        best_power_year, best_power_stats = (latest_year, recent_mlb)
+
+    career_pa = to_int(career_stats.get("plateAppearances")) or career_aggregate.get("plateAppearances") or 0
+    career_slg = to_float(career_stats.get("slg")) if career_stats else career_aggregate.get("slg")
+    career_ops = to_float(career_stats.get("ops")) if career_stats else career_aggregate.get("ops")
+    career_obp = to_float(career_stats.get("obp")) if career_stats else career_aggregate.get("obp")
+    career_avg = to_float(career_stats.get("avg")) if career_stats else career_aggregate.get("avg")
+    career_tb = to_int(career_stats.get("totalBases")) if career_stats else career_aggregate.get("totalBases")
+    career_hr = to_int(career_stats.get("homeRuns")) if career_stats else career_aggregate.get("homeRuns")
+    career_walks = to_int(career_stats.get("baseOnBalls")) if career_stats else career_aggregate.get("baseOnBalls")
+    career_strikeouts = to_int(career_stats.get("strikeOuts")) if career_stats else career_aggregate.get("strikeOuts")
+    career_tb_per_pa = career_tb / career_pa if career_pa else None
+    career_hr_per_pa = career_hr / career_pa if career_pa else None
+    career_k_rate = career_strikeouts / career_pa if career_pa else None
+    career_bb_rate = career_walks / career_pa if career_pa else None
+    recent_mlb_pa = recent_mlb.get("plateAppearances") or 0
+    recent_mlb_tb_per_pa = recent_mlb.get("tbPerPa")
+    stable_recent_tb_per_pa = recent_mlb_tb_per_pa if recent_mlb_pa >= 50 else career_tb_per_pa
+    seasons_sample = len(yearly_aggregates) or career_aggregate.get("seasonsSample") or 0
+
+    power_index = clamp_value(
+        50
+        + (((career_slg or 0.39) - 0.39) * 130)
+        + (((career_hr_per_pa or 0.03) - 0.03) * 900)
+        + (((stable_recent_tb_per_pa or 0.36) - 0.36) * 45),
+        0,
+        100,
+    )
+    contact_risk = clamp_value(
+        46
+        + (((career_k_rate or 0.23) - 0.23) * 190)
+        - (((career_bb_rate or 0.08) - 0.08) * 60)
+        + (10 if career_pa and career_pa < 180 else 0),
+        0,
+        100,
+    )
+    role_stability = clamp_value(
+        min(career_pa / 8, 55)
+        + min(seasons_sample * 8, 28)
+        + min(recent_mlb_pa / 4, 17),
+        0,
+        100,
+    )
+
+    if career_pa < 80:
+        repeatability_label = "unproven MLB sample"
+    elif power_index >= 68 and contact_risk >= 54:
+        repeatability_label = "volatile career power"
+    elif power_index >= 68:
+        repeatability_label = "repeatable career power"
+    elif contact_risk <= 42 and career_pa >= 250:
+        repeatability_label = "contact-stable profile"
+    else:
+        repeatability_label = "baseline career profile"
+
+    if career_pa < 180:
+        volatility_label = "thin career sample"
+    elif contact_risk >= 55:
+        volatility_label = "strikeout volatility"
+    elif role_stability < 55:
+        volatility_label = "role volatility"
+    else:
+        volatility_label = "stable enough"
+
+    return {
+        "player_id": person.get("id"),
+        "full_name": person.get("fullName") or "",
+        "seasons_sample": seasons_sample,
+        "debut_year": min(yearly_aggregates) if yearly_aggregates else None,
+        "latest_mlb_year": latest_year,
+        "career_games": to_int(career_stats.get("gamesPlayed")) if career_stats else career_aggregate.get("gamesPlayed"),
+        "career_plate_appearances": career_pa,
+        "career_at_bats": to_int(career_stats.get("atBats")) if career_stats else career_aggregate.get("atBats"),
+        "career_hits": to_int(career_stats.get("hits")) if career_stats else career_aggregate.get("hits"),
+        "career_home_runs": career_hr,
+        "career_total_bases": career_tb,
+        "career_walks": career_walks,
+        "career_strikeouts": career_strikeouts,
+        "career_avg": career_avg,
+        "career_obp": career_obp,
+        "career_slg": career_slg,
+        "career_ops": career_ops,
+        "career_tb_per_pa": career_tb_per_pa,
+        "career_hr_per_pa": career_hr_per_pa,
+        "career_k_rate": career_k_rate,
+        "career_bb_rate": career_bb_rate,
+        "best_power_year": best_power_year,
+        "best_power_home_runs": best_power_stats.get("homeRuns") if best_power_stats else None,
+        "best_power_slg": best_power_stats.get("slg") if best_power_stats else None,
+        "recent_mlb_year": latest_year,
+        "recent_mlb_plate_appearances": recent_mlb_pa,
+        "recent_mlb_home_runs": recent_mlb.get("homeRuns") if recent_mlb else None,
+        "recent_mlb_tb_per_pa": recent_mlb_tb_per_pa,
+        "career_power_index": round(power_index, 2),
+        "contact_risk_index": round(contact_risk, 2),
+        "role_stability_index": round(role_stability, 2),
+        "repeatability_label": repeatability_label,
+        "volatility_label": volatility_label,
+        "source_url": source_url,
+        "fetched_at": fetched_at,
+        "source_json": json.dumps(
+            {
+                "career": career_splits,
+                "yearByYear": year_splits,
+                "derived": {
+                    "yearlyAggregates": yearly_aggregates,
+                    "careerAggregateFallback": career_aggregate,
+                },
+            },
+            sort_keys=True,
+        ),
+    }
+
+
+def collect_hitter_profile_player_ids(
+    conn: sqlite3.Connection,
+    date_text: str | None = None,
+    explicit_ids: list[int] | None = None,
+) -> list[int]:
+    ids = {int(value) for value in (explicit_ids or []) if value}
+
+    if date_text:
+        tables = [
+            ("mlb_player_game_batting", "game_date"),
+            ("mlb_batter_game_outcomes", "game_date"),
+            ("mlb_hitter_state_snapshots", "as_of_date"),
+            ("mlb_hitter_classic_trend_snapshots", "as_of_date"),
+            ("mlb_hitter_statcast_trend_snapshots", "as_of_date"),
+            ("mlb_hitter_opponent_context_snapshots", "as_of_date"),
+        ]
+        for table_name, date_column in tables:
+            try:
+                for row in conn.execute(
+                    f"SELECT DISTINCT player_id FROM {table_name} WHERE {date_column} = ?",
+                    (date_text,),
+                ).fetchall():
+                    player_id = to_int(row["player_id"])
+                    if player_id:
+                        ids.add(player_id)
+            except sqlite3.OperationalError:
+                continue
+
+    if not ids:
+        for row in conn.execute(
+            """
+            SELECT DISTINCT player_id
+            FROM mlb_player_game_batting
+            ORDER BY game_date DESC
+            LIMIT 750
+            """
+        ).fetchall():
+            player_id = to_int(row["player_id"])
+            if player_id:
+                ids.add(player_id)
+
+    return sorted(ids)
+
+
+def ingest_hitter_career_profiles(
+    conn: sqlite3.Connection,
+    date_text: str | None = None,
+    player_ids: list[int] | None = None,
+) -> int:
+    init_db(conn)
+    target_ids = collect_hitter_profile_player_ids(conn, date_text, player_ids)
+    if not target_ids:
+        return 0
+
+    fetched_at = datetime.utcnow().isoformat(timespec="seconds") + "Z"
+    snapshot_date = date_text or datetime.utcnow().date().isoformat()
+    loaded = 0
+
+    for index, group in enumerate(batched(target_ids, 24), start=1):
+        player_id_text = ",".join(str(player_id) for player_id in group)
+        url = MLB_HITTER_PROFILE_URL.format(player_ids=player_id_text)
+        content_text = fetch_text(url)
+        raw_path = RAW_DIR / "mlb-stats-api" / "hitter-career-profiles" / snapshot_date / f"profiles-{index}.json"
+        write_text(raw_path, content_text)
+        record_snapshot(
+            conn,
+            source_key="mlb-stats-api:hitter-career-profiles",
+            url=url,
+            content_path=raw_path,
+            content_text=content_text,
+            meta={"date": date_text, "playerIds": group},
+        )
+        payload = json.loads(content_text)
+
+        for person in payload.get("people") or []:
+            player_id = to_int(person.get("id"))
+            if not player_id:
+                continue
+            player_url = f"https://baseballsavant.mlb.com/savant-player/{player_id}?stats=statcast-r-hitting-mlb"
+            position = person.get("primaryPosition") or {}
+            current_team = person.get("currentTeam") or {}
+            conn.execute(
+                """
+                INSERT INTO mlb_player_identity_profiles (
+                  player_id, full_name, first_name, last_name, birth_date, current_age,
+                  birth_city, birth_country, height, weight, active, primary_position_code,
+                  primary_position_name, bat_side, throw_hand, draft_year, current_team_id,
+                  current_team_name, mlb_debut_date, source_url, fetched_at, source_json
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ON CONFLICT(player_id) DO UPDATE SET
+                  full_name=excluded.full_name,
+                  first_name=excluded.first_name,
+                  last_name=excluded.last_name,
+                  birth_date=excluded.birth_date,
+                  current_age=excluded.current_age,
+                  birth_city=excluded.birth_city,
+                  birth_country=excluded.birth_country,
+                  height=excluded.height,
+                  weight=excluded.weight,
+                  active=excluded.active,
+                  primary_position_code=excluded.primary_position_code,
+                  primary_position_name=excluded.primary_position_name,
+                  bat_side=excluded.bat_side,
+                  throw_hand=excluded.throw_hand,
+                  draft_year=excluded.draft_year,
+                  current_team_id=excluded.current_team_id,
+                  current_team_name=excluded.current_team_name,
+                  mlb_debut_date=excluded.mlb_debut_date,
+                  source_url=excluded.source_url,
+                  fetched_at=excluded.fetched_at,
+                  source_json=excluded.source_json
+                """,
+                (
+                    player_id,
+                    person.get("fullName") or "",
+                    person.get("firstName") or "",
+                    person.get("lastName") or "",
+                    person.get("birthDate") or "",
+                    to_int(person.get("currentAge")),
+                    person.get("birthCity") or "",
+                    person.get("birthCountry") or "",
+                    person.get("height") or "",
+                    to_int(person.get("weight")),
+                    1 if person.get("active") else 0,
+                    position.get("code") or "",
+                    position.get("name") or "",
+                    (person.get("batSide") or {}).get("code") or "",
+                    (person.get("pitchHand") or {}).get("code") or "",
+                    to_int(person.get("draftYear")),
+                    to_int(current_team.get("id")),
+                    current_team.get("name") or "",
+                    person.get("mlbDebutDate") or "",
+                    player_url,
+                    fetched_at,
+                    json.dumps(person, sort_keys=True),
+                ),
+            )
+
+            career = build_hitter_career_profile(person, player_url, fetched_at)
+            conn.execute(
+                """
+                INSERT INTO mlb_hitter_career_profiles (
+                  player_id, full_name, seasons_sample, debut_year, latest_mlb_year,
+                  career_games, career_plate_appearances, career_at_bats, career_hits,
+                  career_home_runs, career_total_bases, career_walks, career_strikeouts,
+                  career_avg, career_obp, career_slg, career_ops, career_tb_per_pa,
+                  career_hr_per_pa, career_k_rate, career_bb_rate, best_power_year,
+                  best_power_home_runs, best_power_slg, recent_mlb_year,
+                  recent_mlb_plate_appearances, recent_mlb_home_runs,
+                  recent_mlb_tb_per_pa, career_power_index, contact_risk_index,
+                  role_stability_index, repeatability_label, volatility_label,
+                  source_url, fetched_at, source_json
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ON CONFLICT(player_id) DO UPDATE SET
+                  full_name=excluded.full_name,
+                  seasons_sample=excluded.seasons_sample,
+                  debut_year=excluded.debut_year,
+                  latest_mlb_year=excluded.latest_mlb_year,
+                  career_games=excluded.career_games,
+                  career_plate_appearances=excluded.career_plate_appearances,
+                  career_at_bats=excluded.career_at_bats,
+                  career_hits=excluded.career_hits,
+                  career_home_runs=excluded.career_home_runs,
+                  career_total_bases=excluded.career_total_bases,
+                  career_walks=excluded.career_walks,
+                  career_strikeouts=excluded.career_strikeouts,
+                  career_avg=excluded.career_avg,
+                  career_obp=excluded.career_obp,
+                  career_slg=excluded.career_slg,
+                  career_ops=excluded.career_ops,
+                  career_tb_per_pa=excluded.career_tb_per_pa,
+                  career_hr_per_pa=excluded.career_hr_per_pa,
+                  career_k_rate=excluded.career_k_rate,
+                  career_bb_rate=excluded.career_bb_rate,
+                  best_power_year=excluded.best_power_year,
+                  best_power_home_runs=excluded.best_power_home_runs,
+                  best_power_slg=excluded.best_power_slg,
+                  recent_mlb_year=excluded.recent_mlb_year,
+                  recent_mlb_plate_appearances=excluded.recent_mlb_plate_appearances,
+                  recent_mlb_home_runs=excluded.recent_mlb_home_runs,
+                  recent_mlb_tb_per_pa=excluded.recent_mlb_tb_per_pa,
+                  career_power_index=excluded.career_power_index,
+                  contact_risk_index=excluded.contact_risk_index,
+                  role_stability_index=excluded.role_stability_index,
+                  repeatability_label=excluded.repeatability_label,
+                  volatility_label=excluded.volatility_label,
+                  source_url=excluded.source_url,
+                  fetched_at=excluded.fetched_at,
+                  source_json=excluded.source_json
+                """,
+                (
+                    career["player_id"],
+                    career["full_name"],
+                    career["seasons_sample"],
+                    career["debut_year"],
+                    career["latest_mlb_year"],
+                    career["career_games"],
+                    career["career_plate_appearances"],
+                    career["career_at_bats"],
+                    career["career_hits"],
+                    career["career_home_runs"],
+                    career["career_total_bases"],
+                    career["career_walks"],
+                    career["career_strikeouts"],
+                    career["career_avg"],
+                    career["career_obp"],
+                    career["career_slg"],
+                    career["career_ops"],
+                    career["career_tb_per_pa"],
+                    career["career_hr_per_pa"],
+                    career["career_k_rate"],
+                    career["career_bb_rate"],
+                    career["best_power_year"],
+                    career["best_power_home_runs"],
+                    career["best_power_slg"],
+                    career["recent_mlb_year"],
+                    career["recent_mlb_plate_appearances"],
+                    career["recent_mlb_home_runs"],
+                    career["recent_mlb_tb_per_pa"],
+                    career["career_power_index"],
+                    career["contact_risk_index"],
+                    career["role_stability_index"],
+                    career["repeatability_label"],
+                    career["volatility_label"],
+                    career["source_url"],
+                    career["fetched_at"],
+                    career["source_json"],
+                ),
+            )
+            loaded += 1
+
+    conn.commit()
+    return loaded
+
+
+def ingest_hitter_lineup_splits(
+    conn: sqlite3.Connection,
+    date_text: str,
+    file_path: Path | None = None,
+) -> int:
+    init_db(conn)
+    lineup_path = file_path or (DATA_DIR / "lineups" / "mlb" / f"{date_text}-lineup-board.json")
+    if not lineup_path.exists():
+        raise FileNotFoundError(f"Lineup board not found: {lineup_path}")
+
+    payload = json.loads(lineup_path.read_text(encoding="utf-8"))
+    season = to_int(str(date_text)[:4]) or datetime.utcnow().year
+    fetched_at = datetime.utcnow().isoformat(timespec="seconds") + "Z"
+    inserted = 0
+
+    conn.execute("DELETE FROM mlb_hitter_split_snapshots WHERE snapshot_date = ?", (date_text,))
+
+    for game_id, board in (payload.get("lineupBoardsByGameId") or {}).items():
+        teams = {
+            "away": board.get("away") or {},
+            "home": board.get("home") or {},
+        }
+        for team_role, team_board in teams.items():
+            opponent_role = "home" if team_role == "away" else "away"
+            opponent_board = teams.get(opponent_role) or {}
+            opposing_starter = team_board.get("opposingStarter") or {}
+            opposing_hand = (opposing_starter.get("hand") or "").upper()
+            split_key = f"vs_{opposing_hand}HP" if opposing_hand in {"L", "R"} else "vs_unknown"
+
+            for player in team_board.get("lineup") or []:
+                split = player.get("split") or {}
+                player_id = to_int(player.get("playerId"))
+                if not player_id or not split:
+                    continue
+                raw_payload = {
+                    "gameId": game_id,
+                    "teamRole": team_role,
+                    "teamName": team_board.get("teamName"),
+                    "opponentName": opponent_board.get("teamName"),
+                    "opposingStarter": opposing_starter,
+                    "player": {
+                        "playerId": player_id,
+                        "name": player.get("name"),
+                        "slot": player.get("slot"),
+                        "position": player.get("position"),
+                        "bats": player.get("bats"),
+                    },
+                    "split": split,
+                    "metrics": player.get("metrics") or {},
+                    "pitchType": player.get("pitchType") or {},
+                    "savant": player.get("savant") or {},
+                    "summary": player.get("summary") or "",
+                }
+                raw_json = json.dumps(raw_payload, sort_keys=True)
+                source_hash = hashlib.sha256(raw_json.encode("utf-8")).hexdigest()
+                conn.execute(
+                    """
+                    INSERT INTO mlb_hitter_split_snapshots (
+                      snapshot_date, season, game_id, game_title, team_role, team_name,
+                      opponent_name, player_id, player_name, batting_order,
+                      opposing_pitcher_id, opposing_pitcher_name, opposing_pitcher_hand,
+                      split_source, split_type, split_key, plate_appearances, at_bats,
+                      runs, hits, singles, doubles, triples, home_runs, rbi, walks,
+                      strikeouts, total_bases, batting_average, on_base_percentage,
+                      slugging_percentage, ops, hit_rate, singles_rate, home_run_rate,
+                      walk_rate, strikeout_rate, total_bases_rate, split_score,
+                      matchup_grade, source_url, fetched_at, source_hash, raw_json
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    ON CONFLICT(snapshot_date, game_id, player_id, split_type, split_key) DO UPDATE SET
+                      game_title=excluded.game_title,
+                      team_role=excluded.team_role,
+                      team_name=excluded.team_name,
+                      opponent_name=excluded.opponent_name,
+                      player_name=excluded.player_name,
+                      batting_order=excluded.batting_order,
+                      opposing_pitcher_id=excluded.opposing_pitcher_id,
+                      opposing_pitcher_name=excluded.opposing_pitcher_name,
+                      opposing_pitcher_hand=excluded.opposing_pitcher_hand,
+                      split_source=excluded.split_source,
+                      plate_appearances=excluded.plate_appearances,
+                      at_bats=excluded.at_bats,
+                      runs=excluded.runs,
+                      hits=excluded.hits,
+                      singles=excluded.singles,
+                      doubles=excluded.doubles,
+                      triples=excluded.triples,
+                      home_runs=excluded.home_runs,
+                      rbi=excluded.rbi,
+                      walks=excluded.walks,
+                      strikeouts=excluded.strikeouts,
+                      total_bases=excluded.total_bases,
+                      batting_average=excluded.batting_average,
+                      on_base_percentage=excluded.on_base_percentage,
+                      slugging_percentage=excluded.slugging_percentage,
+                      ops=excluded.ops,
+                      hit_rate=excluded.hit_rate,
+                      singles_rate=excluded.singles_rate,
+                      home_run_rate=excluded.home_run_rate,
+                      walk_rate=excluded.walk_rate,
+                      strikeout_rate=excluded.strikeout_rate,
+                      total_bases_rate=excluded.total_bases_rate,
+                      split_score=excluded.split_score,
+                      matchup_grade=excluded.matchup_grade,
+                      source_url=excluded.source_url,
+                      fetched_at=excluded.fetched_at,
+                      source_hash=excluded.source_hash,
+                      raw_json=excluded.raw_json
+                    """,
+                    (
+                        date_text,
+                        season,
+                        str(game_id),
+                        board.get("title") or "",
+                        team_role,
+                        team_board.get("teamName") or "",
+                        opponent_board.get("teamName") or "",
+                        player_id,
+                        player.get("name") or "",
+                        to_int(player.get("slot")),
+                        to_int(opposing_starter.get("id")),
+                        opposing_starter.get("name") or "",
+                        opposing_hand,
+                        "lineup-board:mlb-stats-api-statSplits",
+                        "platoon",
+                        split_key,
+                        to_int(split.get("plateAppearances")),
+                        to_int(split.get("atBats")),
+                        to_int(split.get("runs")),
+                        to_int(split.get("hits")),
+                        to_int(split.get("singles")),
+                        to_int(split.get("doubles")),
+                        to_int(split.get("triples")),
+                        to_int(split.get("homeRuns")),
+                        to_int(split.get("rbi")),
+                        to_int(split.get("walks")),
+                        to_int(split.get("strikeouts")),
+                        to_int(split.get("totalBases")),
+                        to_float(split.get("avg")),
+                        to_float(split.get("obp")),
+                        to_float(split.get("slg")),
+                        to_float(split.get("ops")),
+                        to_float(split.get("hitRate")),
+                        to_float(split.get("singlesRate")),
+                        to_float(split.get("hrRate")),
+                        to_float(split.get("walkRate")),
+                        to_float(split.get("kRate")),
+                        to_float(split.get("totalBasesRate")),
+                        to_float((player.get("metrics") or {}).get("splitScore")),
+                        to_float((player.get("metrics") or {}).get("matchupGrade")),
+                        (((player.get("savant") or {}).get("statsUrls") or {}).get("splits")) or "",
+                        fetched_at,
+                        source_hash,
+                        raw_json,
+                    ),
+                )
+                inserted += 1
+
+    conn.commit()
+    return inserted
 
 
 def ingest_pitcher_war(conn: sqlite3.Connection, seasons: list[int] | None = None) -> int:
@@ -9990,6 +10732,11 @@ def import_prop_predictions(conn: sqlite3.Connection, file_path: Path) -> None:
     model_name = payload["modelName"]
     picks = payload.get("picks", [])
 
+    conn.execute(
+        "DELETE FROM mlb_prop_predictions WHERE prediction_date = ? AND model_name = ?",
+        (date_text, model_name),
+    )
+
     for pick in picks:
         metadata = {
             "reason": pick.get("reason"),
@@ -9999,6 +10746,10 @@ def import_prop_predictions(conn: sqlite3.Connection, file_path: Path) -> None:
             "lineupStatus": pick.get("lineupStatus"),
             "playerSummary": pick.get("playerSummary"),
             "statValueLabel": pick.get("statValueLabel"),
+            "sample": pick.get("sample"),
+            "repeatability": pick.get("repeatability"),
+            "shadowSupportTag": pick.get("shadowSupportTag"),
+            "shadowSupportLevel": pick.get("shadowSupportLevel"),
             "start": pick.get("start"),
             "stage": pick.get("stage"),
         }
@@ -10151,6 +10902,7 @@ def grade_prop_picks(
           p.expected_value,
           p.recommendation_tier,
           p.metadata_json,
+          p.raw_json,
           b.game_pk,
           b.plate_appearances,
           b.at_bats,
@@ -10184,6 +10936,11 @@ def grade_prop_picks(
         """,
         params,
     ).fetchall()
+
+    conn.execute(
+        "DELETE FROM mlb_prop_backtests WHERE prediction_date = ? AND model_name = ?",
+        (date_text, model_name),
+    )
 
     for row in rows:
         actual_value = None
@@ -10226,6 +10983,16 @@ def grade_prop_picks(
             "storyTags": json.loads(row["story_tags_json"] or "[]"),
             "storySummary": json.loads(row["summary_json"] or "{}"),
         }
+        raw_pick = json.loads(row["raw_json"] or "{}")
+        result_metadata.update(
+            {
+                "sample": raw_pick.get("sample"),
+                "repeatability": raw_pick.get("repeatability"),
+                "shadowSupportTag": raw_pick.get("shadowSupportTag"),
+                "shadowSupportLevel": raw_pick.get("shadowSupportLevel"),
+                "scriptTags": raw_pick.get("scriptTags"),
+            }
+        )
 
         conn.execute(
             """
@@ -10416,29 +11183,93 @@ def print_prop_backtest_summary(rows: list[sqlite3.Row]) -> None:
         "pitcherStrikeouts": "pitcher_strikeouts",
     }
 
+    def actual_for_row(row: sqlite3.Row) -> float | None:
+        prop_type = row["prop_type"]
+        stat_field = stat_field_by_prop.get(prop_type)
+        if prop_type in ("hitRunRbi", "hitsRunsRbis"):
+            hit_value = to_float(row["hits"])
+            run_value = to_float(row["runs"])
+            rbi_value = to_float(row["rbi"])
+            return None if hit_value is None or run_value is None or rbi_value is None else hit_value + run_value + rbi_value
+        return to_float(row[stat_field]) if stat_field else None
+
+    def hit_for_row(row: sqlite3.Row) -> bool:
+        actual_value = actual_for_row(row)
+        line_threshold = to_float(row["line_threshold"])
+        return bool(actual_value is not None and line_threshold is not None and actual_value > line_threshold)
+
+    def raw_pick_for_row(row: sqlite3.Row) -> dict[str, Any]:
+        try:
+            return json.loads(row["raw_json"] or "{}")
+        except json.JSONDecodeError:
+            return {}
+
     grouped: dict[str, list[sqlite3.Row]] = {}
     for row in rows:
         grouped.setdefault(row["prop_type"], []).append(row)
 
     for prop_type, prop_rows in sorted(grouped.items()):
-        stat_field = stat_field_by_prop.get(prop_type)
-        hits = 0
-        for row in prop_rows:
-            line_threshold = to_float(row["line_threshold"])
-            if prop_type in ("hitRunRbi", "hitsRunsRbis"):
-                hit_value = to_float(row["hits"])
-                run_value = to_float(row["runs"])
-                rbi_value = to_float(row["rbi"])
-                actual_value = (
-                    None
-                    if hit_value is None or run_value is None or rbi_value is None
-                    else hit_value + run_value + rbi_value
-                )
-            else:
-                actual_value = to_float(row[stat_field]) if stat_field else None
-            if actual_value is not None and line_threshold is not None and actual_value > line_threshold:
-                hits += 1
+        hits = sum(1 for row in prop_rows if hit_for_row(row))
         print(f"- {prop_type}: {hits}/{len(prop_rows)}")
+
+    split_buckets: dict[str, list[sqlite3.Row]] = {
+        "split-edge reason": [],
+        "split context only": [],
+        "no split context": [],
+    }
+    for row in rows:
+        raw_pick = raw_pick_for_row(row)
+        script_tags = {str(tag).casefold() for tag in (raw_pick.get("scriptTags") or [])}
+        reason = str(raw_pick.get("reason") or "").casefold()
+        player_summary = str(raw_pick.get("playerSummary") or "")
+        if "split edge" in script_tags or "split-edge" in script_tags or "split fit" in reason:
+            bucket = "split-edge reason"
+        elif re.search(r"vs [LR]HP:", player_summary):
+            bucket = "split context only"
+        else:
+            bucket = "no split context"
+        split_buckets[bucket].append(row)
+    if any(split_buckets.values()):
+        print("")
+        print("Split-fit buckets:")
+        for bucket, bucket_rows in split_buckets.items():
+            if not bucket_rows:
+                continue
+            hits = sum(1 for row in bucket_rows if hit_for_row(row))
+            avg_confidence = sum(to_float(row["confidence"]) or 0 for row in bucket_rows) / len(bucket_rows)
+            avg_expected = sum(to_float(row["expected_value"]) or 0 for row in bucket_rows) / len(bucket_rows)
+            print(
+                f"- {bucket}: {hits}/{len(bucket_rows)} | "
+                f"avg confidence {avg_confidence:.1f} | avg expected {avg_expected:.2f}"
+            )
+
+    total_base_rows = grouped.get("totalBases", [])
+    if total_base_rows:
+        print("")
+        print("Total-bases repeatability buckets:")
+        buckets: dict[str, list[sqlite3.Row]] = {}
+        for row in total_base_rows:
+            raw_pick = raw_pick_for_row(row)
+            repeatability = raw_pick.get("repeatability") or {}
+            approach = repeatability.get("approachState") or {}
+            bucket = " / ".join(
+                part
+                for part in [
+                    raw_pick.get("shadowSupportLevel") or "unknown-support",
+                    repeatability.get("label") or "unknown-repeatability",
+                    approach.get("approachLabel") or "unknown-approach",
+                ]
+            )
+            buckets.setdefault(bucket, []).append(row)
+
+        for bucket, bucket_rows in sorted(buckets.items()):
+            hits = sum(1 for row in bucket_rows if hit_for_row(row))
+            avg_confidence = sum(to_float(row["confidence"]) or 0 for row in bucket_rows) / len(bucket_rows)
+            avg_expected = sum(to_float(row["expected_value"]) or 0 for row in bucket_rows) / len(bucket_rows)
+            print(
+                f"- {bucket}: {hits}/{len(bucket_rows)} | "
+                f"avg confidence {avg_confidence:.1f} | avg expected {avg_expected:.2f}"
+            )
 
 
 def print_home_run_list(rows: list[sqlite3.Row]) -> None:
@@ -10731,6 +11562,29 @@ def parse_args() -> argparse.Namespace:
     ingest_hitter_statcast.add_argument("--start-date", required=True, help="Start date in YYYY-MM-DD format.")
     ingest_hitter_statcast.add_argument("--end-date", required=True, help="End date in YYYY-MM-DD format.")
 
+    ingest_hitter_profiles = subparsers.add_parser(
+        "ingest-hitter-career-profiles",
+        help="Fetch and store MLB player identity plus year-by-year/career hitting profiles for repeatability modeling.",
+    )
+    ingest_hitter_profiles.add_argument("--date", help="Optional slate/as-of date used to collect known hitter IDs.")
+    ingest_hitter_profiles.add_argument(
+        "--player-id",
+        action="append",
+        type=int,
+        dest="player_ids",
+        help="Explicit MLB player ID to fetch. Repeat to load multiple players.",
+    )
+
+    ingest_lineup_splits = subparsers.add_parser(
+        "ingest-hitter-lineup-splits",
+        help="Persist the handedness/platoon split rows carried by a daily MLB lineup board.",
+    )
+    ingest_lineup_splits.add_argument("--date", required=True, help="Lineup snapshot date in YYYY-MM-DD format.")
+    ingest_lineup_splits.add_argument(
+        "--file",
+        help="Optional explicit lineup-board JSON path. Defaults to data-private/lineups/mlb/<date>-lineup-board.json.",
+    )
+
     derive_hitter_statcast = subparsers.add_parser(
         "derive-hitter-statcast-trends",
         help="Refresh rolling hitter Statcast trend snapshots for scheduled teams.",
@@ -10982,6 +11836,17 @@ def main() -> None:
             print(
                 f"Ingested hitter Statcast game logs from {args.start_date} through {args.end_date} ({rows_loaded} player-game rows)"
             )
+            return
+
+        if args.command == "ingest-hitter-career-profiles":
+            rows_loaded = ingest_hitter_career_profiles(conn, args.date, args.player_ids)
+            target = args.date or "explicit player list"
+            print(f"Ingested hitter career/identity profiles for {target} ({rows_loaded} players)")
+            return
+
+        if args.command == "ingest-hitter-lineup-splits":
+            rows_loaded = ingest_hitter_lineup_splits(conn, args.date, Path(args.file) if args.file else None)
+            print(f"Ingested hitter lineup split snapshots for {args.date} ({rows_loaded} player-split rows)")
             return
 
         if args.command == "derive-hitter-statcast-trends":

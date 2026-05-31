@@ -6338,6 +6338,18 @@ const weightedRate = (hitter, key, fallback = 0) => {
   const season = Number(hitter?.season?.[key])
   const recent = Number(hitter?.recent?.[key])
   const split = Number(hitter?.split?.[key])
+  const careerKeyByRate = {
+    hitRate: 'careerHitRate',
+    singlesRate: null,
+    totalBasesRate: 'careerTbPerPa',
+    walkRate: 'careerBbRate',
+    hrRate: 'careerHrPerPa'
+  }
+  const careerKey = careerKeyByRate[key]
+  const career = careerKey ? Number(hitter?.careerProfile?.[careerKey]) : NaN
+  const seasonPa = Number(hitter?.season?.plateAppearances || 0) || 0
+  const careerPa = Number(hitter?.careerProfile?.careerPlateAppearances || 0) || 0
+  const careerUsable = Number.isFinite(career) && career > 0 && careerPa >= 80
   const seasonWeight = Number.isFinite(season) ? season * 0.46 : 0
   const recentWeight = Number.isFinite(recent) ? recent * 0.32 : 0
   const splitWeight = Number.isFinite(split) ? split * 0.22 : 0
@@ -6346,7 +6358,140 @@ const weightedRate = (hitter, key, fallback = 0) => {
     (Number.isFinite(recent) ? 0.32 : 0) +
     (Number.isFinite(split) ? 0.22 : 0)
 
-  return totalWeight > 0 ? (seasonWeight + recentWeight + splitWeight) / totalWeight : fallback
+  const currentRate = totalWeight > 0 ? (seasonWeight + recentWeight + splitWeight) / totalWeight : fallback
+
+  if (!careerUsable) return currentRate
+
+  if (seasonPa < 16) {
+    return currentRate * 0.6 + career * 0.4
+  }
+
+  if (seasonPa < 60) {
+    return currentRate * 0.72 + career * 0.28
+  }
+
+  return currentRate * 0.9 + career * 0.1
+}
+
+const buildBatterApproachState = (hitter = null) => {
+  const profile = hitter?.careerProfile || null
+  const trend = hitter?.statcastTrend || {}
+  const seasonPa = Number(hitter?.season?.plateAppearances || 0) || 0
+  const careerPa = Number(profile?.careerPlateAppearances || 0) || 0
+  const roleStability = Number(profile?.roleStabilityIndex)
+  const contactRisk = Number(profile?.contactRiskIndex)
+  const seasonTbRate = Number(hitter?.season?.totalBasesRate)
+  const careerTbPerPa = Number(profile?.careerTbPerPa)
+  const seasonHrRate = Number(hitter?.season?.hrRate)
+  const careerHrPerPa = Number(profile?.careerHrPerPa)
+  const rolling7Xwoba = Number(trend?.rolling7Xwoba)
+  const rolling7Xslg = Number(trend?.rolling7Xslg)
+  const rolling7HardHitPct = Number(trend?.rolling7HardHitPct)
+  const rolling7BarrelPct = Number(trend?.rolling7BarrelPct)
+  const trendSignal = trend?.trendSignal || null
+  const careerWeight = seasonPa < 16 ? 0.4 : seasonPa < 60 ? 0.28 : 0.1
+  const tbDelta =
+    Number.isFinite(seasonTbRate) && Number.isFinite(careerTbPerPa) ? seasonTbRate - careerTbPerPa : 0
+  const hrDelta =
+    Number.isFinite(seasonHrRate) && Number.isFinite(careerHrPerPa) ? seasonHrRate - careerHrPerPa : 0
+  let processScore = 0
+
+  if (trendSignal === 'improving') processScore += 7
+  if (trendSignal === 'fading') processScore -= 8
+  if (Number.isFinite(rolling7Xwoba) && rolling7Xwoba >= 0.37) processScore += 4
+  if (Number.isFinite(rolling7Xslg) && rolling7Xslg >= 0.52) processScore += 4
+  if (Number.isFinite(rolling7HardHitPct) && rolling7HardHitPct >= 42) processScore += 3
+  if (Number.isFinite(rolling7BarrelPct) && rolling7BarrelPct >= 9) processScore += 3
+
+  const identityDelta = clamp(tbDelta * 70 + hrDelta * 180, -12, 12)
+  const stabilityLift = Number.isFinite(roleStability) ? clamp((roleStability - 58) * 0.08, -3, 4) : 0
+  const strikeoutTax = Number.isFinite(contactRisk) ? clamp((contactRisk - 52) * 0.08, 0, 5) : 0
+  const tinySampleTax = seasonPa < 16 ? 5 : seasonPa < 60 ? 2 : 0
+  const confidenceScore = clamp(
+    50 + processScore + identityDelta + stabilityLift - strikeoutTax - tinySampleTax,
+    18,
+    84
+  )
+  const rolePressure =
+    seasonPa < 24 && (!Number.isFinite(roleStability) || roleStability < 66)
+      ? 'audition pressure'
+      : seasonPa < 60
+        ? 'role still forming'
+        : 'role established'
+  const approachLabel =
+    trendSignal === 'fading'
+      ? 'process fading'
+      : confidenceScore >= 62 && seasonPa < 24
+        ? 'career-story confidence spike'
+        : confidenceScore >= 60
+          ? 'process improving'
+          : confidenceScore <= 42
+            ? 'pressing / thin process'
+            : 'baseline approach'
+
+  return {
+    confidenceScore: roundToTenths(confidenceScore),
+    processScore: roundToTenths(processScore),
+    careerWeight,
+    identityDelta: roundToTenths(identityDelta),
+    tbDelta: roundToTenths(tbDelta),
+    hrDelta: roundToTenths(hrDelta),
+    rolePressure,
+    approachLabel,
+    seasonPa,
+    careerPa
+  }
+}
+
+const buildHitterRepeatabilitySignal = (hitter = null) => {
+  const profile = hitter?.careerProfile || null
+  const seasonPa = Number(hitter?.season?.plateAppearances || 0) || 0
+  const careerPa = Number(profile?.careerPlateAppearances || 0) || 0
+  const powerIndex = Number(profile?.careerPowerIndex)
+  const contactRisk = Number(profile?.contactRiskIndex)
+  const roleStability = Number(profile?.roleStabilityIndex)
+  const careerHrPerPa = Number(profile?.careerHrPerPa)
+  const careerTbPerPa = Number(profile?.careerTbPerPa)
+  const pitchTypeGrade = Number(hitter?.metrics?.pitchTypeGrade || 0)
+  const matchupGrade = Number(hitter?.metrics?.matchupGrade || 0)
+  const approachState = buildBatterApproachState(hitter)
+  const careerPowerBacked =
+    careerPa >= 180 &&
+    (
+      (Number.isFinite(powerIndex) && powerIndex >= 66) ||
+      (Number.isFinite(careerHrPerPa) && careerHrPerPa >= 0.042) ||
+      (Number.isFinite(careerTbPerPa) && careerTbPerPa >= 0.42)
+    )
+  const careerVolatile =
+    (Number.isFinite(contactRisk) && contactRisk >= 54) ||
+    `${profile?.volatilityLabel || ''}`.toLowerCase().includes('volatility')
+  const roleStable = Number.isFinite(roleStability) && roleStability >= 54
+  const canCarryTinySample =
+    seasonPa < 24 &&
+    careerPowerBacked &&
+    (pitchTypeGrade >= 1.5 || matchupGrade >= 2.5 || roleStable)
+
+  return {
+    careerPa,
+    seasonPa,
+    powerIndex: Number.isFinite(powerIndex) ? powerIndex : null,
+    contactRisk: Number.isFinite(contactRisk) ? contactRisk : null,
+    roleStability: Number.isFinite(roleStability) ? roleStability : null,
+    label: profile?.repeatabilityLabel || 'career profile pending',
+    volatilityLabel: profile?.volatilityLabel || '',
+    careerPowerBacked,
+    careerVolatile,
+    roleStable,
+    approachState,
+    canCarryTinySample,
+    trackingPenalty: canCarryTinySample ? (careerVolatile ? 9 : 6) : 18,
+    reason:
+      seasonPa < 24 && careerPowerBacked
+        ? `tiny 2026 sample, but career power profile is real (${profile?.careerHomeRuns || 0} HR / ${careerPa} PA)`
+        : seasonPa < 24
+          ? 'tiny 2026 sample without enough career support'
+          : profile?.repeatabilityLabel || null
+  }
 }
 
 const buildExpectedPlateAppearances = (slot = 9, projectedRuns = 4.2, topThirdScore = 50) => {
@@ -6511,6 +6656,7 @@ const buildTotalBasesShadowSignal = ({ hitter = null, weatherProfile = null } = 
 
   const trend = hitter.statcastTrend || {}
   const opponentContext = hitter.opponentContext || {}
+  const repeatability = buildHitterRepeatabilitySignal(hitter)
   const rolling7Xslg = Number(trend.rolling7Xslg)
   const rolling7HardHitPct = Number(trend.rolling7HardHitPct)
   const weightedTbDelta = Number(opponentContext.totalBasesPerPaWeightDeltaLast10)
@@ -6521,12 +6667,14 @@ const buildTotalBasesShadowSignal = ({ hitter = null, weatherProfile = null } = 
   const xslgReady = Number.isFinite(rolling7Xslg) && rolling7Xslg >= 0.61
   const hardHitReady = Number.isFinite(rolling7HardHitPct) && rolling7HardHitPct >= 38.3
   const oppReady = Number.isFinite(weightedTbDelta) && weightedTbDelta > 0
+  const careerReady = repeatability.careerPowerBacked
   const backed = xslgReady && hardHitReady && oppReady
 
   const extraSupports = []
   if (pitchTypeGrade >= 1.5) extraSupports.push('arsenal fit')
   if (matchupGrade >= 2.5) extraSupports.push('starter fit')
   if (weatherLift >= 0.08) extraSupports.push('weather lift')
+  if (careerReady) extraSupports.push('career power')
 
   if (backed) {
     const supportTail = extraSupports.length ? `; ${extraSupports.join(' + ')} supports it too` : ''
@@ -6538,10 +6686,21 @@ const buildTotalBasesShadowSignal = ({ hitter = null, weatherProfile = null } = 
     }
   }
 
+  if (xslgReady && hardHitReady && careerReady) {
+    const supportTail = extraSupports.length ? `; ${extraSupports.join(' + ')} supports it` : ''
+    return {
+      supportTag: 'Career-backed heat',
+      scriptTag: 'career-backed-heat',
+      supportLevel: 'career-backed',
+      reason: `single-slate heat fits the career power story, but opponent-strength repeatability is not fully proven${supportTail}`
+    }
+  }
+
   const missing = []
   if (!xslgReady) missing.push('xSLG')
   if (!hardHitReady) missing.push('hard-hit')
   if (!oppReady) missing.push('opponent-strength')
+  if (!careerReady) missing.push('career-power')
 
   return {
     supportTag: 'Soft heat',
@@ -6565,6 +6724,8 @@ const calibrateMlbPropConfidence = ({
   const probabilityLift = Math.max(probability - 0.46, 0) * 72 * probabilityWeight
   let confidence = 34 + probabilityLift + Number(config?.baseOffset || 12) * 0.45
   const statcastSignal = buildHitterStatcastPropSignal(hitter?.statcastTrend)
+  const repeatability = buildHitterRepeatabilitySignal(hitter)
+  const approachState = repeatability.approachState || {}
 
   confidence += Math.max(0, Number(hitter?.metrics?.matchupGrade || 0)) * 1.05
   confidence += Math.max(0, (Number(hitter?.metrics?.formScore || 50) - 50) * 0.08)
@@ -6587,6 +6748,12 @@ const calibrateMlbPropConfidence = ({
   if (propType === 'totalBases') confidence += statcastSignal.tbConfidenceDelta
   if (propType === 'singles') confidence += statcastSignal.singlesConfidenceDelta
   if (propType === 'homeRun') confidence += statcastSignal.hrConfidenceDelta
+  if (propType === 'totalBases' || propType === 'homeRun' || propType === 'rbi') {
+    if (repeatability.careerPowerBacked) confidence += repeatability.seasonPa < 24 ? 2 : 1
+    if (repeatability.careerVolatile) confidence -= repeatability.seasonPa < 24 ? 5 : 2
+    if (repeatability.seasonPa < 24 && !repeatability.careerPowerBacked) confidence -= 8
+    confidence += clamp((Number(approachState.confidenceScore || 50) - 50) / 8, -4, 4)
+  }
 
   if (weatherProfile?.label) {
     const weatherRunLift = Number(weatherProfile.runBoostFirst5 || 0) + Number(weatherProfile.runBoostLate || 0)
@@ -6621,6 +6788,7 @@ const buildPropScriptTags = ({
 }) => {
   const tags = []
   const statcastSignal = buildHitterStatcastPropSignal(hitter?.statcastTrend)
+  const repeatability = buildHitterRepeatabilitySignal(hitter)
   const tbShadowSignal = propType === 'totalBases' ? buildTotalBasesShadowSignal({ hitter, weatherProfile }) : null
   const topThirdScore = Number(teamScript?.topThirdScore || 50)
   const middleScore = Number(teamScript?.middleScore || 50)
@@ -6647,6 +6815,9 @@ const buildPropScriptTags = ({
   }
   if (propType === 'walks' && starterWalkPressure > 0.05) tags.push('starter-wildness-lane')
   if (propType === 'totalBases' && Number(hitter?.metrics?.powerScore || 50) >= 68) tags.push('power-lane')
+  if ((propType === 'totalBases' || propType === 'homeRun') && repeatability.careerPowerBacked) tags.push('career-power-backed')
+  if (repeatability.seasonPa < 24) tags.push('tiny-current-sample')
+  if (repeatability.approachState?.approachLabel) tags.push(repeatability.approachState.approachLabel.replace(/[^a-z0-9]+/gi, '-').toLowerCase())
   if (propType === 'singles' && Number(hitter?.metrics?.contactScore || 50) >= 66) tags.push('contact-lane')
   if (propType === 'rbi' && Number(hitter?.slot || 9) <= 5) tags.push('run-production-slot')
   if (weatherProfile?.label && Number(weatherProfile.runBoostLate || 0) + Number(weatherProfile.runBoostFirst5 || 0) >= 0.08) {
@@ -6686,7 +6857,10 @@ const buildMlbPropCandidate = ({
   const teamTrafficFactor = clamp((Number(projectedHits || 8.3) / 8.3) * 0.72 + (Number(projectedRuns || 4.3) / 4.3) * 0.28, 0.68, 1.38)
   const homeRunBoost = getHomeRunTargetBoost(game, teamName, hitter.name)
   const statcastSignal = buildHitterStatcastPropSignal(hitter.statcastTrend)
+  const repeatability = buildHitterRepeatabilitySignal(hitter)
+  const approachState = repeatability.approachState || {}
   const tbShadowSignal = propType === 'totalBases' ? buildTotalBasesShadowSignal({ hitter, weatherProfile }) : null
+  const approachMultiplier = clamp(1 + (Number(approachState.confidenceScore || 50) - 50) * 0.003, 0.94, 1.08)
   const slotPressure =
     hitter.slot <= 2 ? 1.08 : hitter.slot <= 4 ? 1.12 : hitter.slot <= 6 ? 1.02 : 0.91
   const overperformBoost = (teamScript?.overperformHitters || []).some(
@@ -6764,9 +6938,13 @@ const buildMlbPropCandidate = ({
       matchupFactor *
       teamTrafficFactor *
       (1 + homeRunBoost.scoreBoost * 0.6) *
-      statcastSignal.tbMultiplier
+      statcastSignal.tbMultiplier *
+      approachMultiplier
     if (tinyTbSample && tbShadowSignal?.supportLevel !== 'backed') {
-      expectedValue = Math.min(expectedValue, 1.95)
+      expectedValue = Math.min(expectedValue, repeatability.careerPowerBacked ? 2.15 : 1.75)
+    }
+    if (tinyTbSample && repeatability.careerVolatile) {
+      expectedValue *= 0.88
     }
     probability = poissonProbabilityAtLeast(expectedValue, 1)
     line = config.marketLabel
@@ -6825,6 +7003,10 @@ const buildMlbPropCandidate = ({
   if (hitter.primaryTag) reasons.push(`slot ${hitter.slot} ${hitter.primaryTag}`)
   if (propType === 'totalBases' && tbShadowSignal?.reason) reasons.push(tbShadowSignal.reason)
   if (propType === 'totalBases' && statcastSignal.tbReason) reasons.push(statcastSignal.tbReason)
+  if ((propType === 'totalBases' || propType === 'homeRun') && repeatability.reason) reasons.push(repeatability.reason)
+  if ((propType === 'totalBases' || propType === 'homeRun' || propType === 'rbi') && approachState.approachLabel) {
+    reasons.push(`${approachState.approachLabel}; approach ${approachState.confidenceScore}/100`)
+  }
   if (propType === 'singles' && statcastSignal.singlesReason) reasons.push(statcastSignal.singlesReason)
   if (propType === 'homeRun' && statcastSignal.hrReason) reasons.push(statcastSignal.hrReason)
   if ((hitter.tags || []).includes('heater')) reasons.push('recent form up')
@@ -6855,6 +7037,7 @@ const buildMlbPropCandidate = ({
     expectedValue: roundToTenths(expectedValue),
     statValueLabel,
     sample,
+    repeatability,
     recommendationTier: confidence >= 79 ? 'Core' : confidence >= 68 ? 'Strong' : 'Lean',
     shadowSupportTag: propType === 'totalBases' ? tbShadowSignal?.supportTag || null : null,
     shadowSupportLevel: propType === 'totalBases' ? tbShadowSignal?.supportLevel || null : null,
@@ -6996,6 +7179,7 @@ const buildTrackedPropSelection = (game, target) => {
   const context = buildTrackedPropContext(game, target)
   const calibration = lookupPropCalibration(target)
   const sample = target.sample || {}
+  const repeatability = target.repeatability || {}
   const tinyHitterSample =
     target.propType !== 'pitcherStrikeouts' &&
     (
@@ -7004,9 +7188,14 @@ const buildTrackedPropSelection = (game, target) => {
       Number(sample.statcastGames || 0) < 3 ||
       Number(sample.opponentContextGames || 0) < 4
     )
-  if (tinyHitterSample) return null
   let supportCount = 0
   let trackingScore = Number(target.confidence || 0)
+
+  if (tinyHitterSample) {
+    if (!repeatability.canCarryTinySample) return null
+    supportCount += 1
+    trackingScore -= Number(repeatability.trackingPenalty || 12)
+  }
 
   if (context.lineupStatus === 'posted') {
     supportCount += 1
@@ -7032,13 +7221,13 @@ const buildTrackedPropSelection = (game, target) => {
   }
 
   if (target.propType === 'totalBases') {
-    if (target.shadowSupportLevel !== 'backed') return null
+    if (!['backed', 'career-backed'].includes(target.shadowSupportLevel)) return null
     const tinyTbSample =
       Number(sample.seasonGames || 0) < 5 ||
       Number(sample.seasonPlateAppearances || 0) < 16 ||
       Number(sample.statcastGames || 0) < 3 ||
       Number(sample.opponentContextGames || 0) < 4
-    if (tinyTbSample && target.shadowSupportLevel !== 'backed') return null
+    if (tinyTbSample && target.shadowSupportLevel !== 'backed' && !repeatability.canCarryTinySample) return null
     if (context.projectedRuns >= 4.6) supportCount += 1
     if (context.projectedHits >= 8.6) supportCount += 1
     if (Number(target.slot || 9) <= 5) supportCount += 1
@@ -7047,6 +7236,10 @@ const buildTrackedPropSelection = (game, target) => {
     if ((target.scriptTags || []).includes('statcast-power-up')) {
       supportCount += 1
       trackingScore += 4
+    }
+    if ((target.scriptTags || []).includes('career-power-backed')) {
+      supportCount += 1
+      trackingScore += tinyTbSample ? 1 : 3
     }
     if ((target.scriptTags || []).includes('statcast-fade')) trackingScore -= 5
     if (Number(target.expectedValue || 0) >= 2.2) trackingScore += 4

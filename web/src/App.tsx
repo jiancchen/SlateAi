@@ -127,6 +127,72 @@ const payoffIsPlayable = (entry: AnyRecord) => {
   return Number.isFinite(pricePct) && Number.isFinite(confidence) && confidence - pricePct >= 7
 }
 
+const roundToTenths = (value: number) => Math.round(Number(value) * 10) / 10
+
+const poissonSeries = (lambdaInput: number, maxRuns = 20) => {
+  const lambda = clamp(Number(lambdaInput), 0.05, 20)
+  const values: number[] = []
+  let probability = Math.exp(-lambda)
+  let total = 0
+
+  for (let runs = 0; runs <= maxRuns; runs += 1) {
+    if (runs > 0) probability *= lambda / runs
+    values.push(probability)
+    total += probability
+  }
+
+  if (total > 0 && total < 0.999) values[maxRuns] += 1 - total
+  return values
+}
+
+const buildFirst5LeadProbabilities = (awayRunsInput: number, homeRunsInput: number) => {
+  const awaySeries = poissonSeries(awayRunsInput, 16)
+  const homeSeries = poissonSeries(homeRunsInput, 16)
+  let awayWin = 0
+  let homeWin = 0
+  let tie = 0
+
+  awaySeries.forEach((awayProbability, awayRuns) => {
+    homeSeries.forEach((homeProbability, homeRuns) => {
+      const joint = awayProbability * homeProbability
+      if (awayRuns > homeRuns) awayWin += joint
+      else if (homeRuns > awayRuns) homeWin += joint
+      else tie += joint
+    })
+  })
+
+  return {
+    awayWinPct: roundToTenths(awayWin * 100),
+    homeWinPct: roundToTenths(homeWin * 100),
+    tiePct: roundToTenths(tie * 100)
+  }
+}
+
+const buildTotalProbabilityPct = (projectedRunsInput: number, lineInput: number, leanInput: string) => {
+  const projectedRuns = Number(projectedRunsInput)
+  const line = Number(lineInput)
+  if (!Number.isFinite(projectedRuns) || !Number.isFinite(line)) return null
+
+  const series = poissonSeries(projectedRuns, 24)
+  const overWinsAt = Math.floor(line) + 1
+  const underProbability = series.reduce(
+    (sum, probability, runs) => (runs < overWinsAt ? sum + probability : sum),
+    0
+  )
+  const overProbability = Math.max(0, 1 - underProbability)
+  const lean = String(leanInput || '').toLowerCase()
+  if (lean.startsWith('over')) return roundToTenths(overProbability * 100)
+  if (lean.startsWith('under')) return roundToTenths(underProbability * 100)
+  return roundToTenths(Math.max(overProbability, underProbability) * 100)
+}
+
+const contractEvCents = (modelPctInput: number, askCentsInput: number) => {
+  const modelPct = Number(modelPctInput)
+  const askCents = Number(askCentsInput)
+  if (!Number.isFinite(modelPct) || !Number.isFinite(askCents)) return null
+  return roundToTenths(modelPct - askCents)
+}
+
 const tennisValueTone = (grade?: string | null) => {
   if (/bet-grade value/i.test(String(grade || ''))) return 'accent'
   if (/thin value|near fair/i.test(String(grade || ''))) return 'neutral'
@@ -2684,18 +2750,24 @@ function App() {
               id: 'full',
               label: 'Full game',
               lean: totals.fullGame,
+              projectedRuns: totals.projectedFullTotalRuns,
+              line: game.analysis.mlbProjection.postedTotal,
               projectedLabel: `Proj ${totals.projectedFullTotalRuns} vs ${game.analysis.mlbProjection.postedTotal ?? 'N/A'}`
             },
             {
               id: 'first5',
               label: 'First 5',
               lean: totals.first5,
+              projectedRuns: totals.projectedFirst5TotalRuns,
+              line: totals.derivedFirst5TotalLine,
               projectedLabel: `Proj ${totals.projectedFirst5TotalRuns} vs ${totals.derivedFirst5TotalLine ?? 'N/A'}`
             },
             {
               id: 'late',
               label: 'Rest of game',
               lean: totals.late,
+              projectedRuns: totals.projectedLateTotalRuns,
+              line: totals.derivedLateTotalLine,
               projectedLabel: `Proj ${totals.projectedLateTotalRuns} vs ${totals.derivedLateTotalLine ?? 'N/A'}`
             }
           ]
@@ -2704,12 +2776,8 @@ function App() {
             .filter((phase) => phase.lean?.lean && phase.lean.lean !== 'Pass')
             .map((phase) => {
               const savedId = `${game.id}:total:${phase.id}`
-              const confidence = Math.round(
-                Math.min(
-                  90,
-                  54 + Math.abs(Number(phase.lean.edge) || 0) * 18 + Math.max((game.analysis.confidence || 50) - 56, 0) * 0.2
-                )
-              )
+              const modelPct = buildTotalProbabilityPct(phase.projectedRuns, phase.line, phase.lean.lean)
+              const confidence = Number.isFinite(Number(modelPct)) ? Math.round(Number(modelPct)) : 0
 
               return {
                 id: savedId,
@@ -2738,8 +2806,12 @@ function App() {
                   gameId: game.id,
                   gameTitle: game.title,
                   league: game.league,
+                  phaseId: phase.id,
                   marketLabel: phase.lean.label,
                   phaseLabel: phase.label,
+                  modelPct,
+                  projectedRuns: phase.projectedRuns,
+                  line: phase.line,
                   summary: phase.lean.summary,
                   strength: phase.lean.strength,
                   projectedLabel: phase.projectedLabel
@@ -3162,12 +3234,175 @@ function App() {
       return away === 'partial' || home === 'partial'
     }).length
 
+    const first5MoneylineRows = mlbGames
+      .map((game: AnyRecord) => {
+        const projection = game.analysis?.mlbProjection
+        const matchup = Array.isArray(game.matchup) ? game.matchup : []
+        const awayTeam = matchup[0]?.name || game.title?.split('@')[0]?.trim() || 'Away'
+        const homeTeam = matchup[1]?.name || game.title?.split('@')[1]?.trim() || 'Home'
+        const awayRuns = Number(projection?.awayFirst5ProjectedRuns)
+        const homeRuns = Number(projection?.homeFirst5ProjectedRuns)
+        if (!projection || ![awayRuns, homeRuns].every(Number.isFinite)) return null
+
+        const probabilities = buildFirst5LeadProbabilities(awayRuns, homeRuns)
+        const projectedLeader = awayRuns >= homeRuns ? awayTeam : homeTeam
+        const side = projectedLeader === awayTeam ? 'away' : 'home'
+        const modelWinPct = side === 'away' ? probabilities.awayWinPct : probabilities.homeWinPct
+        const pushAdjustedPct =
+          probabilities.tiePct < 99
+            ? roundToTenths((Number(modelWinPct) / Math.max(100 - Number(probabilities.tiePct), 1)) * 100)
+            : Number(modelWinPct)
+        const kalshiRow = activeKalshiMlbMarketByGame[game.id]?.first5Winner?.rows?.find(
+          (row: AnyRecord) => row.side === side
+        )
+        const askCents = Number(kalshiRow?.yesAskCents)
+        const hasMarket = Number.isFinite(askCents)
+        const modelPctForPrice = hasMarket ? Number(modelWinPct) : Number(pushAdjustedPct)
+        const evCents = hasMarket ? contractEvCents(modelWinPct, askCents) : null
+        const edgeHits = Number(projection.first5EdgeHits)
+        const runEdge = Math.abs(awayRuns - homeRuns)
+        const confidence = Math.round(modelPctForPrice)
+        const priceLabel = hasMarket
+          ? `Kalshi ask ${formatNumber(askCents, 0)}c`
+          : `Need F5 ML price | push-adj ${formatPercent(pushAdjustedPct, 1)}`
+
+        return {
+          id: `first5-ml:${game.id}:${side}`,
+          category: 'first5',
+          actionKind: 'ticket',
+          lane: 'First 5 ML',
+          gameId: game.id,
+          league: game.league,
+          start: game.start,
+          startMinutes: Number(game.startMinutes) || 0,
+          stage: game.stage,
+          title: `${projectedLeader} F5 ML`,
+          subtitle: `${game.title} · starter-window side`,
+          confidence,
+          sortConfidence: confidence,
+          sortEdge: evCents != null && Number.isFinite(Number(evCents)) ? Number(evCents) : runEdge * 10 + Number(edgeHits || 0),
+          marketPricePct: hasMarket ? askCents : null,
+          evCents,
+          priceLabel,
+          metaLabel: `Model ${formatPercent(modelWinPct, 1)} win · tie ${formatPercent(probabilities.tiePct, 1)}`,
+          summary:
+            `${projectedLeader} project ahead ${formatNumber(side === 'away' ? awayRuns : homeRuns, 1)}-${formatNumber(side === 'away' ? homeRuns : awayRuns, 1)} through five. ` +
+            `Three-way win ${formatPercent(modelWinPct, 1)}; tie risk ${formatPercent(probabilities.tiePct, 1)}; push-adjusted ${formatPercent(pushAdjustedPct, 1)}.`,
+          tags: [
+            'First 5 ML',
+            hasMarket ? `EV ${formatSignedNumber(evCents, 1)}c` : 'Need line',
+            `F5 edge ${formatNumber(edgeHits, 1)} H`
+          ],
+          raw: {
+            gameId: game.id,
+            gameTitle: game.title,
+            side,
+            selection: projectedLeader,
+            modelWinPct,
+            pushAdjustedPct,
+            tiePct: probabilities.tiePct,
+            awayRuns,
+            homeRuns,
+            edgeHits,
+            askCents,
+            hasMarket,
+            kalshiTicker: kalshiRow?.ticker || null,
+            confidenceSource: 'M0 projected first-five run distribution'
+          }
+        }
+      })
+      .filter(Boolean)
+      .sort((left: AnyRecord, right: AnyRecord) => {
+        const leftPriced = left.evCents != null && Number.isFinite(Number(left.evCents))
+        const rightPriced = right.evCents != null && Number.isFinite(Number(right.evCents))
+        if (leftPriced !== rightPriced) return Number(rightPriced) - Number(leftPriced)
+        return right.sortEdge - left.sortEdge || right.confidence - left.confidence
+      })
+
+    const first5TotalRows = mlbGames
+      .map((game: AnyRecord) => {
+        const projection = game.analysis?.mlbProjection
+        const totals = projection?.totals
+        const projectedRuns = Number(totals?.projectedFirst5TotalRuns)
+        if (!projection || !Number.isFinite(projectedRuns)) return null
+
+        const kalshiTotal = activeKalshiMlbMarketByGame[game.id]?.first5Total?.selected ?? null
+        const marketLine = Number(kalshiTotal?.line)
+        const derivedLine = Number(totals?.derivedFirst5TotalLine)
+        const line = Number.isFinite(marketLine) ? marketLine : derivedLine
+        if (!Number.isFinite(line)) return null
+
+        const overPct = buildTotalProbabilityPct(projectedRuns, line, 'Over')
+        const underPct = buildTotalProbabilityPct(projectedRuns, line, 'Under')
+        if (![overPct, underPct].every((value) => Number.isFinite(Number(value)))) return null
+
+        const pick = Number(overPct) >= Number(underPct) ? 'Over' : 'Under'
+        const modelPct = pick === 'Over' ? Number(overPct) : Number(underPct)
+        const askCents = pick === 'Over' ? Number(kalshiTotal?.yesAskCents) : Number(kalshiTotal?.noAskCents)
+        const hasMarket = Number.isFinite(askCents)
+        const evCents = hasMarket ? contractEvCents(modelPct, askCents) : null
+        const edge = roundToTenths(projectedRuns - line)
+        const confidence = Math.round(modelPct)
+        const lineSource = Number.isFinite(marketLine) ? 'Kalshi F5 total' : 'derived from full-game total'
+
+        return {
+          id: `first5-total:${game.id}:${pick.toLowerCase()}:${line}`,
+          category: 'first5',
+          actionKind: 'total',
+          lane: 'First 5 O/U',
+          gameId: game.id,
+          league: game.league,
+          start: game.start,
+          startMinutes: Number(game.startMinutes) || 0,
+          stage: game.stage,
+          title: `${pick} ${formatNumber(line, 1)} F5`,
+          subtitle: `${game.title} · first-five total`,
+          confidence,
+          sortConfidence: confidence,
+          sortEdge: evCents != null && Number.isFinite(Number(evCents)) ? Number(evCents) : Math.abs(edge) * 10,
+          marketPricePct: hasMarket ? askCents : null,
+          evCents,
+          priceLabel: hasMarket ? `Kalshi ask ${formatNumber(askCents, 0)}c` : 'Need F5 O/U price',
+          metaLabel: `Model ${formatPercent(modelPct, 1)} · proj ${formatNumber(projectedRuns, 1)}`,
+          summary:
+            `${pick} ${formatNumber(line, 1)} from ${formatNumber(projectedRuns, 1)} projected first-five runs. ` +
+            `Over ${formatPercent(overPct, 1)} / under ${formatPercent(underPct, 1)}; line source: ${lineSource}.`,
+          tags: [
+            'First 5 O/U',
+            hasMarket ? `EV ${formatSignedNumber(evCents, 1)}c` : 'Need line',
+            lineSource
+          ],
+          raw: {
+            gameId: game.id,
+            gameTitle: game.title,
+            pick,
+            line,
+            projectedRuns,
+            overPct,
+            underPct,
+            edge,
+            askCents,
+            hasMarket,
+            lineSource,
+            kalshiTicker: kalshiTotal?.ticker || null,
+            confidenceSource: 'M0 projected first-five total run distribution'
+          }
+        }
+      })
+      .filter(Boolean)
+      .sort((left: AnyRecord, right: AnyRecord) => {
+        const leftPriced = left.evCents != null && Number.isFinite(Number(left.evCents))
+        const rightPriced = right.evCents != null && Number.isFinite(Number(right.evCents))
+        if (leftPriced !== rightPriced) return Number(rightPriced) - Number(leftPriced)
+        return right.sortEdge - left.sortEdge || right.confidence - left.confidence
+      })
+
     const sideRows = favoriteCatalogEntries
       .filter((entry: AnyRecord) => entry.league === 'MLB' && !entry.invalid && payoffIsPlayable(entry))
       .sort((left: AnyRecord, right: AnyRecord) => right.sortEdge - left.sortEdge || right.confidence - left.confidence)
 
     const totalRows = totalCatalogEntries
-      .filter((entry: AnyRecord) => entry.league === 'MLB' && !entry.invalid && Number(entry.confidence) >= 60)
+      .filter((entry: AnyRecord) => entry.league === 'MLB' && !entry.invalid && entry.raw?.phaseId === 'full' && Number(entry.confidence) >= 60)
       .sort((left: AnyRecord, right: AnyRecord) => right.sortEdge - left.sortEdge || right.confidence - left.confidence)
 
     const tbBackedRows = propCatalogEntries
@@ -3410,7 +3645,7 @@ function App() {
     const viableHomeRunRows = homeRunRows.filter((row: AnyRecord) => String(row.scoreBand || '') === 'viable')
     const postedHomeRunRows = homeRunRows.filter((row: AnyRecord) => row.lineupStatus === 'posted')
 
-    const topRows = [...tbBackedRows, ...strikeoutRows, ...totalRows, ...sideRows]
+    const topRows = [...tbBackedRows, ...strikeoutRows, ...first5MoneylineRows, ...first5TotalRows, ...totalRows, ...sideRows]
       .sort((left: AnyRecord, right: AnyRecord) => right.sortConfidence - left.sortConfidence || right.sortEdge - left.sortEdge)
       .slice(0, 12)
 
@@ -3421,6 +3656,8 @@ function App() {
       mappedKalshiGames: Object.keys(activeKalshiMlbMarketByGame).length,
       sideRows,
       totalRows,
+      first5MoneylineRows,
+      first5TotalRows,
       totalBaseRows,
       tbBackedRows,
       tbSoftHeatRows,
@@ -3440,8 +3677,8 @@ function App() {
       topRows,
       note:
         fullyPostedGames === mlbGames.length
-          ? 'MLB value center is fully posted for today: sides, totals, TB-backed bats, strikeout O/U, HR watch, and batting-impact lanes.'
-          : `MLB value center is live, but only ${fullyPostedGames}/${mlbGames.length} games are fully posted. TB-backed rows are the cleanest current prop lane; the H+R+RBI board now uses a batting-production ladder when no true market export is present.`
+          ? 'MLB value center is fully posted for today: sides, full-game totals, First 5 ML/O-U, TB-backed bats, strikeout O/U, HR watch, and batting-impact lanes. First 5 confidence is derived from the M0 projected run distribution; missing market prices are marked as need-line.'
+          : `MLB value center is live, but only ${fullyPostedGames}/${mlbGames.length} games are fully posted. First 5 ML/O-U now uses M0 projected run distribution instead of generic confidence; rows without mapped prices are need-line, not blind bets.`
     }
   }, [
     activeDayId,
@@ -3635,6 +3872,9 @@ function App() {
     if (tennisValueSummary) scopes.push({ id: 'tennis', label: 'Tennis' })
     if (mlbValueSummary && (mlbValueSummary.sideRows.length || mlbValueSummary.totalRows.length)) {
       scopes.push({ id: 'mlb-overview', label: 'Overview' })
+    }
+    if (mlbValueSummary && (mlbValueSummary.first5MoneylineRows?.length || mlbValueSummary.first5TotalRows?.length)) {
+      scopes.push({ id: 'mlb-first5', label: '1st 5' })
     }
     if (mlbFirstInningValueSummary && (mlbFirstInningValueSummary.yrfiRows.length || mlbFirstInningValueSummary.nrfiRows.length)) {
       scopes.push({ id: 'mlb-first-inning', label: '1st inning' })

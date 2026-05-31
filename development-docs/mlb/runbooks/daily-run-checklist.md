@@ -60,6 +60,7 @@ npm run data:refresh:mlb-live -- --date YYYY-MM-DD
 This should rebuild:
 - day data
 - lineup boards
+- hitter identity/career profiles for the actual slate bats
 - HR board
 - non-HR prop board
 - prop import/grading hooks
@@ -76,6 +77,7 @@ Expected checks:
 - active game count matches official schedule
 - postponed games removed from active slate
 - lineup boards generated for each active game
+- hitter career profiles are joined into lineup batters, especially tiny-current-sample players
 - weather attached to every lineup board
 - park context attached to every MLB game
 - weather profile attached to every MLB projection
@@ -130,6 +132,45 @@ Even if the verifier passes, manually inspect these:
 ### Props
 - Make sure the saved prop file exists.
 - Make sure props are not empty even if grading is still `0/x` because games have not finished.
+- Savant game logs are mostly redundant with the pitch/game warehouse. Use them as a player-page sanity check, not as the primary stored source, because `mlb_pitch_events`, `mlb_player_game_batting`, and `mlb_hitter_statcast_game_logs` should already preserve the underlying game data.
+- Savant hitter splits are not redundant. The lineup export now persists the daily handedness/platoon split rows into `mlb_hitter_split_snapshots`; keep that table fresh before trusting prop or hitter-fit writeups.
+- Required split warehouse shape:
+  - `snapshot_date`, `game_id`, `player_id`, `season`, `split_type`, `split_key`, `plate_appearances`, slash line, K/BB when present, `source_url`, source hash, and raw payload.
+  - opposing pitcher hand and game context so the exact pregame matchup can be replayed.
+  - future full Savant HTML rows for month, batting order, runners, game type, outs, and Statcast split fields.
+- After exporting lineups, verify split snapshots:
+
+```bash
+npm run data:ingest:hitter-lineup-splits -- --date YYYY-MM-DD
+sqlite3 data-private/warehouse/sports.db "select snapshot_date, split_key, count(*) from mlb_hitter_split_snapshots where snapshot_date='YYYY-MM-DD' group by 1,2;"
+```
+
+- After settlement, rerun prop grading and check split buckets. A split row is context until it proves lift by prop type:
+
+```bash
+npm run data:grade:mlb-props -- --date YYYY-MM-DD --model-name mlb-player-props-v2
+```
+
+- Use the Savant splits page for current-season batter context when evaluating prop confidence, especially small-sample hitters, platoon bats, role-pressure bats, and total-bases/HR lanes.
+- Spot-check any prop driven by fewer than 24 current-season PA. It must show a career repeatability story, not just a hot current box score.
+- Treat career stats as a low-weight baseline, not a bet trigger. The useful question is whether current process, role, pitch fit, and recent contact shape make the old profile repeatable today.
+- Log material M0 model/warehouse changes in `models/mlb/cartridges/M0/M0_log.md` before treating them as part of the cartridge.
+- Check the batter approach proxy on tiny-sample bats:
+  - approach/confidence score should be supported by recent Statcast process, not batting average alone.
+  - role pressure should be visible when a hitter is fighting for playing time or only getting partial lineup work.
+  - volatile career power can stay on the watchlist, but it should not become a core prop without current damage-contact proof.
+- For total bases, separate three lanes:
+  - `TB backed`: recent Statcast damage plus opponent-strength support.
+  - `Career-backed heat`: current spike fits the player’s career power, but opponent-strength support is still thin.
+  - `Soft heat`: missing career or opponent-strength proof; do not treat as core.
+
+Mental/process references for the proxy:
+- Reddit hitter-mindset thread: https://www.reddit.com/r/Homeplate/comments/mknx3q/what_should_be_the_mindset_of_a_hitter/
+- Quality At-Bats Academy mental hitting guide: https://qualityatbatsacademy.com/the-mental-side-of-hitting-the-ultimate-guide/
+- Example Savant game logs check: https://baseballsavant.mlb.com/savant-player/nelson-velazquez-676369?stats=gamelogs-r-hitting-mlb&season=2026
+- Example Savant splits source to warehouse: https://baseballsavant.mlb.com/savant-player/nelson-velazquez-676369?stats=splits-r-hitting-mlb&season=2026
+
+The model takeaway is process before outcome: huntable pitch zones, confidence/aggression, two-strike adjustment, and recovery after bad at-bats need measurable proxies such as count results, chase/swing decisions, hard-hit/barrel trend, and next-PA response.
 
 ## 5. Publish / Trust Gate
 
@@ -138,6 +179,7 @@ Only treat the day as ready when:
 - verifier passed without hard failures
 - no postponed games remain in the slate
 - partial lineups are understood, not accidental
+- tiny-sample player props are explained by career profile or suppressed
 - bridge, weather, park, HR, and props are visibly present
 
 If any of those fail, rerun or patch before trusting the board.
@@ -157,6 +199,7 @@ This now handles:
 - rolling state-snapshot refresh
 - HR grading
 - tracked prop grading
+- repeatability bucket backtest for total-bases rows (`TB backed`, `Career-backed heat`, `Soft heat`, approach label)
 - importable side-board export
 - side prediction import into `mlb_side_predictions`
 - side grading into `mlb_side_backtests`

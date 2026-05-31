@@ -49,6 +49,7 @@ class ModelRegistryTest(unittest.TestCase):
                         "metricsContract",
                         "modelDescription",
                         "modelNotes",
+                        "modelLog",
                         "performanceIndex",
                         "followups",
                     ):
@@ -149,6 +150,36 @@ class ModelRegistryTest(unittest.TestCase):
 
         self.assertEqual(prediction_count, len(picks))
         self.assertEqual(backtest_count, len(picks))
+
+    def test_m0_hitter_split_snapshots_cover_settled_prop_hitters(self) -> None:
+        props_path = ROOT / "data-private" / "predictions" / "mlb-player-props" / "2026-05-30-player-props.json"
+        db_path = ROOT / "data-private" / "warehouse" / "sports.db"
+        if not props_path.exists() or not db_path.exists():
+            self.skipTest("May 30 MLB prop board or warehouse is not present")
+
+        props = [
+            pick for pick in read_json(props_path).get("picks", [])
+            if pick.get("propType") != "pitcherStrikeouts"
+        ]
+        conn = sqlite3.connect(db_path)
+        try:
+            split_count = conn.execute(
+                """
+                select count(distinct p.game_id || ':' || p.player_id)
+                from mlb_prop_predictions p
+                join mlb_hitter_split_snapshots s
+                  on s.snapshot_date = p.prediction_date
+                 and s.game_id = p.game_id
+                 and s.player_id = p.player_id
+                where p.prediction_date = '2026-05-30'
+                  and p.model_name = 'mlb-player-props-v2'
+                  and p.prop_type != 'pitcherStrikeouts'
+                """
+            ).fetchone()[0]
+        finally:
+            conn.close()
+
+        self.assertEqual(split_count, len(props))
 
 
 if __name__ == "__main__":
