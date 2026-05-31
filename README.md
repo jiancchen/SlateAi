@@ -96,9 +96,9 @@ npm run data:fetch:tennis-rankings -- --date YYYY-MM-DD
 npm run data:import:tennis-rankings
 npm run data:fetch:tennis-scoreboard -- --date YYYY-MM-DD
 npm run data:generate:tennis-clay-context -- --date YYYY-MM-DD
-node pipeline/enrich-tennis-opponent-quality.mjs --input web/src/lib/day-YYYY-MM-DD-tennis-clay-context.generated.json --output web/src/lib/day-YYYY-MM-DD-tennis-opponent-quality.generated.json
+node pipeline/tennis/publish/enrich-opponent-quality.mjs --input web/src/lib/day-YYYY-MM-DD-tennis-clay-context.generated.json --output web/src/lib/day-YYYY-MM-DD-tennis-opponent-quality.generated.json
 npm run data:fetch:tennis-flashscore-recent -- --input web/src/lib/day-YYYY-MM-DD-tennis-opponent-quality.generated.json --map-output data-private/reference/tennis/flashscore-recent-match-map-YYYY-MM-DD.json
-node pipeline/enrich-tennis-opponent-quality.mjs --input web/src/lib/day-YYYY-MM-DD-tennis-clay-context.generated.json --output web/src/lib/day-YYYY-MM-DD-tennis-opponent-quality.generated.json --flashscore-recent-map data-private/reference/tennis/flashscore-recent-match-map-YYYY-MM-DD.json
+node pipeline/tennis/publish/enrich-opponent-quality.mjs --input web/src/lib/day-YYYY-MM-DD-tennis-clay-context.generated.json --output web/src/lib/day-YYYY-MM-DD-tennis-opponent-quality.generated.json --flashscore-recent-map data-private/reference/tennis/flashscore-recent-match-map-YYYY-MM-DD.json
 npm run data:import:tennis-slate -- --date YYYY-MM-DD
 npm run data:fetch:tennis-sofascore-slate -- --date YYYY-MM-DD
 npm run data:import:tennis-sofascore
@@ -117,7 +117,7 @@ node pipeline/tennis/fetchers/scrape_fanduel_tennis_cdp.mjs --date YYYY-MM-DD
 # Build data-private/predictions/tennis/YYYY-MM-DD-derivative-markets.json with
 # expectedMatchGames, expectedFirstSetGames, totalGames lean, gameHandicap lean,
 # confidence, edgeGames, writeup, evidence, and dataQuality for every singles match.
-node pipeline/generate-tennis-day-module.mjs --date YYYY-MM-DD
+node pipeline/tennis/publish/generate-day-module.mjs --date YYYY-MM-DD
 npm run data:export:published
 npm run data:health:tennis -- --date YYYY-MM-DD --pregame
 python3 pipeline/tennis_multimodel_backtest.py --target-date YYYY-MM-DD

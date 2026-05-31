@@ -2,7 +2,7 @@ import { spawn } from 'node:child_process'
 import path from 'node:path'
 
 const rootDir = path.resolve(import.meta.dirname, '..', '..', '..')
-const generator = path.join(rootDir, 'pipeline', 'generate-tennis-day-module.mjs')
+const generator = path.join(rootDir, 'pipeline', 'tennis', 'publish', 'generate-day-module.mjs')
 const args = process.argv.slice(2)
 
 if (!args.includes('--model')) {

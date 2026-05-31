@@ -31,17 +31,19 @@ Date: 2026-05-31
 - Added `tests/model_registry_test.py` to catch missing cartridge manifests and declared files.
 - Added destination folders and READMEs for sport-specific `development-docs/` migration without moving script-written docs yet.
 - Moved tennis runbook/research notes and MLB daily runbook/source checklist into sport-specific `development-docs/` folders and updated direct references.
+- Moved tennis warehouse, workflow, and publish implementations into `pipeline/tennis/{warehouse,workflows,publish}/` with compatibility wrappers at their old top-level pipeline paths.
+- Updated tennis package scripts and runbook commands to call the sport-scoped core paths directly.
 
 ## Intentionally Still Legacy
 
-- `pipeline/generate-tennis-day-module.mjs` still emits the old T0 manifest path so the existing May 31 golden snapshot remains comparable.
-- `pipeline/verify-tennis-model-snapshot.mjs` still reads the old T0 manifest path for the same golden-snapshot reason.
+- `pipeline/generate-tennis-day-module.mjs` and `pipeline/verify-tennis-model-snapshot.mjs` remain compatibility wrappers for old commands, while the T0 manifest source hashes now point at the sport-scoped implementations.
+- `pipeline/tennis/workflows/verify-model-snapshot.mjs` still reads the legacy T0 manifest path until the cartridge metadata cutover is intentionally completed.
 - `pipeline/tennis_model_cartridges/` remains in place until the T0 snapshot contract is intentionally cut over.
 - MLB prediction behavior still runs through current pipeline logic under sport-scoped workflow/fetcher/publish/warehouse/research folders. RP36 now owns its reliever-shadow exporter; M0 remains a shell.
 
 ## Next Safe Steps
 
-1. Add a tennis snapshot cutover plan that allows metadata path changes without disguising prediction-math drift.
+1. Re-lock or intentionally supersede the May 31 tennis run source lock after this migration checkpoint; strict run verification now reports expected source drift from moved files, while `--allow-source-drift` verifies outputs and coverage.
 2. Add an MLB `M0` run manifest design before moving warehouse/research internals.
 3. Move remaining script-written development docs only after their package scripts are updated together.
 4. Add a planned tennis metadata-path cutover test before changing the T0 golden snapshot path.

@@ -18,7 +18,7 @@ npm run data:fetch:tennis-rankings -- --date YYYY-MM-DD
 npm run data:import:tennis-rankings
 npm run data:fetch:tennis-scoreboard -- --date YYYY-MM-DD
 npm run data:generate:tennis-clay-context -- --date YYYY-MM-DD
-node pipeline/enrich-tennis-opponent-quality.mjs --input web/src/lib/day-YYYY-MM-DD-tennis-clay-context.generated.json --output web/src/lib/day-YYYY-MM-DD-tennis-opponent-quality.generated.json
+node pipeline/tennis/publish/enrich-opponent-quality.mjs --input web/src/lib/day-YYYY-MM-DD-tennis-clay-context.generated.json --output web/src/lib/day-YYYY-MM-DD-tennis-opponent-quality.generated.json
 npm run data:import:tennis-slate -- --date YYYY-MM-DD
 npm run data:fetch:tennis-sofascore-slate -- --date YYYY-MM-DD
 npm run data:import:tennis-sofascore

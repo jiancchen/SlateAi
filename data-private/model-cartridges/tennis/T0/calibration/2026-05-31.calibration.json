@@ -7,10 +7,10 @@
     "sourceFiles": [
       {
         "role": "model-runner",
-        "path": "pipeline/generate-tennis-day-module.mjs",
-        "expectedSha256": "f66aa0bfd9a7fcbf6aa271d1f4c022a5dfa17628cbc109ea730d8c54ec68f869",
+        "path": "pipeline/tennis/publish/generate-day-module.mjs",
+        "expectedSha256": "d4fcebc436188bae9039c5f3cd930c500973b6641a8ba098eef8cd0a3b70d5da",
         "exists": true,
-        "sha256": "f66aa0bfd9a7fcbf6aa271d1f4c022a5dfa17628cbc109ea730d8c54ec68f869"
+        "sha256": "d4fcebc436188bae9039c5f3cd930c500973b6641a8ba098eef8cd0a3b70d5da"
       },
       {
         "role": "source-mapping-helper",
@@ -21,10 +21,10 @@
       },
       {
         "role": "snapshot-verifier",
-        "path": "pipeline/verify-tennis-model-snapshot.mjs",
-        "expectedSha256": "6a345850bfe4a7a7bf20cd12f1071acc1a3776aa24bcf9aa942697e94247c6cb",
+        "path": "pipeline/tennis/workflows/verify-model-snapshot.mjs",
+        "expectedSha256": "a0a3c89dd54bef2fbea815260e72420f01e51cff6d75a7db76d386d50ef847ed",
         "exists": true,
-        "sha256": "6a345850bfe4a7a7bf20cd12f1071acc1a3776aa24bcf9aa942697e94247c6cb"
+        "sha256": "a0a3c89dd54bef2fbea815260e72420f01e51cff6d75a7db76d386d50ef847ed"
       }
     ],
     "inputFiles": [
