@@ -7,12 +7,6 @@
   "createdForMigration": "2026-05-31",
   "entrypoint": "models/mlb/cartridges/MLB-M0/runner.mjs",
   "workflowEntrypoint": "models/mlb/cartridges/MLB-M0/workflows/pregame.mjs",
-  "delegatedWorkflowEntrypoints": [
-    "pipeline/mlb/workflows/pregame.mjs",
-    "pipeline/mlb/workflows/refresh-live-board.mjs",
-    "pipeline/mlb/workflows/followup.mjs",
-    "pipeline/mlb/workflows/verify-refresh.mjs"
-  ],
   "publishEntrypoints": [
     "models/mlb/cartridges/MLB-M0/lanes/generate-day-files.mjs",
     "models/mlb/cartridges/MLB-M0/lanes/batting-impact.mjs",
@@ -23,17 +17,6 @@
     "models/mlb/cartridges/MLB-M0/lanes/veto.mjs",
     "models/mlb/cartridges/MLB-M0/lanes/training-corpus.mjs",
     "models/mlb/cartridges/MLB-M0/lanes/history-journal.mjs"
-  ],
-  "delegatedPublishEntrypoints": [
-    "pipeline/mlb/publish/generate-day-files.mjs",
-    "pipeline/mlb/publish/export-batting-impact.mjs",
-    "pipeline/mlb/publish/export-lineup-model.mjs",
-    "pipeline/mlb/publish/export-home-run-predictions.mjs",
-    "pipeline/mlb/publish/export-prop-predictions.mjs",
-    "pipeline/mlb/publish/export-side-predictions.mjs",
-    "pipeline/mlb/publish/export-veto-artifact.mjs",
-    "pipeline/mlb/publish/export-training-corpus.mjs",
-    "pipeline/mlb/publish/export-history-journal.mjs"
   ],
   "components": [
     "MLB-RP36"
@@ -57,10 +40,6 @@
       "path": "models/mlb/cartridges/MLB-M0/package.json"
     },
     {
-      "role": "legacy-workflow-runner",
-      "path": "models/mlb/cartridges/MLB-M0/lib/legacy-runner.mjs"
-    },
-    {
       "role": "cartridge-pregame-workflow",
       "path": "models/mlb/cartridges/MLB-M0/workflows/pregame.mjs"
     },
@@ -77,19 +56,19 @@
       "path": "models/mlb/cartridges/MLB-M0/workflows/verify-refresh.mjs"
     },
     {
-      "role": "delegated-pregame-workflow",
+      "role": "compatibility-pregame-workflow",
       "path": "pipeline/mlb/workflows/pregame.mjs"
     },
     {
-      "role": "delegated-refresh-workflow",
+      "role": "compatibility-refresh-workflow",
       "path": "pipeline/mlb/workflows/refresh-live-board.mjs"
     },
     {
-      "role": "delegated-followup-workflow",
+      "role": "compatibility-followup-workflow",
       "path": "pipeline/mlb/workflows/followup.mjs"
     },
     {
-      "role": "delegated-refresh-verifier",
+      "role": "compatibility-refresh-verifier",
       "path": "pipeline/mlb/workflows/verify-refresh.mjs"
     },
     {
@@ -153,39 +132,39 @@
       "path": "models/mlb/cartridges/MLB-M0/lanes/history-journal.mjs"
     },
     {
-      "role": "delegated-day-generator",
+      "role": "compatibility-publish-day-generator",
       "path": "pipeline/mlb/publish/generate-day-files.mjs"
     },
     {
-      "role": "delegated-batting-impact-exporter",
+      "role": "compatibility-publish-batting-impact-exporter",
       "path": "pipeline/mlb/publish/export-batting-impact.mjs"
     },
     {
-      "role": "delegated-lineup-exporter",
+      "role": "compatibility-publish-lineup-exporter",
       "path": "pipeline/mlb/publish/export-lineup-model.mjs"
     },
     {
-      "role": "delegated-home-run-exporter",
+      "role": "compatibility-publish-home-run-exporter",
       "path": "pipeline/mlb/publish/export-home-run-predictions.mjs"
     },
     {
-      "role": "delegated-prop-exporter",
+      "role": "compatibility-publish-prop-exporter",
       "path": "pipeline/mlb/publish/export-prop-predictions.mjs"
     },
     {
-      "role": "delegated-side-exporter",
+      "role": "compatibility-publish-side-exporter",
       "path": "pipeline/mlb/publish/export-side-predictions.mjs"
     },
     {
-      "role": "delegated-veto-exporter",
+      "role": "compatibility-publish-veto-exporter",
       "path": "pipeline/mlb/publish/export-veto-artifact.mjs"
     },
     {
-      "role": "delegated-training-corpus-exporter",
+      "role": "compatibility-publish-training-corpus-exporter",
       "path": "pipeline/mlb/publish/export-training-corpus.mjs"
     },
     {
-      "role": "delegated-history-journal-exporter",
+      "role": "compatibility-publish-history-journal-exporter",
       "path": "pipeline/mlb/publish/export-history-journal.mjs"
     },
     {
@@ -277,5 +256,22 @@
       "path": "models/mlb/cartridges/MLB-RP36/manifest.json"
     }
   ],
-  "description": "Shell for the parent MLB model. MLB-M0 owns final betting lanes; MLB-RP36 remains a consumed relief addendum, not a competing parent model."
+  "description": "Shell for the parent MLB model. MLB-M0 owns final betting lanes; MLB-RP36 remains a consumed relief addendum, not a competing parent model.",
+  "compatibilityWorkflowEntrypoints": [
+    "pipeline/mlb/workflows/pregame.mjs",
+    "pipeline/mlb/workflows/refresh-live-board.mjs",
+    "pipeline/mlb/workflows/followup.mjs",
+    "pipeline/mlb/workflows/verify-refresh.mjs"
+  ],
+  "compatibilityPublishEntrypoints": [
+    "pipeline/mlb/publish/generate-day-files.mjs",
+    "pipeline/mlb/publish/export-batting-impact.mjs",
+    "pipeline/mlb/publish/export-lineup-model.mjs",
+    "pipeline/mlb/publish/export-home-run-predictions.mjs",
+    "pipeline/mlb/publish/export-prop-predictions.mjs",
+    "pipeline/mlb/publish/export-side-predictions.mjs",
+    "pipeline/mlb/publish/export-veto-artifact.mjs",
+    "pipeline/mlb/publish/export-training-corpus.mjs",
+    "pipeline/mlb/publish/export-history-journal.mjs"
+  ]
 }

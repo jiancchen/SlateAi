@@ -21,6 +21,8 @@ Date: 2026-05-31
 - Split additional MLB-M0 model internals into `models/mlb/cartridges/MLB-M0/lib/market-utils.js`, `signal-utils.js`, `mlb-starter-utils.js`, `mlb-analysis-context.js`, `mlb-decision-indicators.js`, and `mlb-props.js`; the May 30 golden snapshot stayed unchanged after each behavior-sensitive cut.
 - Split the remaining factory internals into `models/mlb/cartridges/MLB-M0/lib/participant-model.js`, `structured-analysis-context.js`, and `analysis-model.js`, leaving `sports-model.js` as a thin public entrypoint/export barrel.
 - Moved MLB-M0 workflow implementations into `models/mlb/cartridges/MLB-M0/workflows/`; the old `pipeline/mlb/workflows/` files now launch the cartridge workflows for compatibility.
+- Moved MLB-M0 publish lane implementations into `models/mlb/cartridges/MLB-M0/lanes/`; the old `pipeline/mlb/publish/` files now launch the cartridge lanes for compatibility.
+- Removed the unused MLB-M0 `legacy-runner.mjs` helper after lane and workflow launchers no longer depended on it.
 - Moved MLB pregame and refresh workflow implementations into `pipeline/mlb/workflows/`.
 - Moved the MLB close/follow-up workflow into `pipeline/mlb/workflows/followup.mjs`, and pointed future generated postmortem/follow-up docs into `development-docs/mlb/postmortems/`.
 - Moved MLB refresh verification into `pipeline/mlb/workflows/verify-refresh.mjs`.
@@ -52,13 +54,13 @@ Date: 2026-05-31
 
 ## Intentionally Still Legacy
 
-- MLB prediction behavior still uses some current pipeline workflow/fetcher/publish/warehouse/research internals. MLB-RP36 owns its reliever-shadow exporter, and MLB-M0 now owns the daily workflow surface, publish-lane adapter surface, shared scoring module, and run envelope.
+- MLB prediction behavior still uses some current pipeline fetcher/warehouse/research internals. MLB-RP36 owns its reliever-shadow exporter, and MLB-M0 now owns the daily workflow surface, publish lanes, shared scoring module, and run envelope.
 - `research/` remains as a README-only legacy pointer; the old follow-up and ticket notes now live under `development-docs/`.
 - Compatibility shims and delegated paths are tracked in `cartridge_migration/technical_debt.md` until they are removed or formally reclassified as pipeline-owned.
 
 ## Next Safe Steps
 
-1. Continue moving MLB publish-lane internals into `models/mlb/cartridges/MLB-M0/lanes/` once the run verifier is green for each step.
-2. Decide whether generic/UFC analysis context should stay in MLB-M0 for compatibility or move later into a true shared model core.
-3. Move remaining implementation code lane by lane only after the adapter path is covered by the May 30/May 31 golden snapshots.
-4. Update `cartridge_migration/technical_debt.md` in the same patch whenever a migration step leaves a shim, wrapper, delegated implementation, or broad lock behind.
+1. Decide whether generic/UFC analysis context should stay in MLB-M0 for compatibility or move later into a true shared model core.
+2. Classify remaining `pipeline/mlb/{warehouse,research,fetchers}` scripts as data plumbing, model feature generation, or historical research.
+3. Move model-owned feature generation out of pipeline folders only after the May 30/May 31 golden snapshots cover the change.
+4. Update `cartridge_migration/technical_debt.md` in the same patch whenever a migration step leaves a shim, wrapper, compatibility path, delegated implementation, or broad lock behind.

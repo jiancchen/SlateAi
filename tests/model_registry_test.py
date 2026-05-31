@@ -122,7 +122,7 @@ class ModelRegistryTest(unittest.TestCase):
             ROOT / "models" / "mlb" / "cartridges" / "MLB-M0" / "lib" / "sports-model.js"
         ).read_text(encoding="utf-8")
         generator_text = (
-            ROOT / "pipeline" / "mlb" / "publish" / "generate-day-files.mjs"
+            ROOT / "models" / "mlb" / "cartridges" / "MLB-M0" / "lanes" / "generate-day-files.mjs"
         ).read_text(encoding="utf-8")
         loader_text = (ROOT / "pipeline" / "lib" / "load-mlb-day-games.mjs").read_text(encoding="utf-8")
 
@@ -131,6 +131,12 @@ class ModelRegistryTest(unittest.TestCase):
         self.assertIn("buildAnalysisModel", entrypoint_text)
         self.assertIn("quietStartFullGameGate: options.date >= '2026-05-31'", generator_text)
         self.assertIn("quietStartFullGameGate", loader_text)
+
+    def test_mlb_publish_compatibility_launchers_point_to_m0_lanes(self) -> None:
+        for publish_path in sorted((ROOT / "pipeline" / "mlb" / "publish").glob("*.mjs")):
+            with self.subTest(publish_path=publish_path.name):
+                text = publish_path.read_text(encoding="utf-8")
+                self.assertIn("models', 'mlb', 'cartridges', 'MLB-M0', 'lanes'", text)
 
     def test_m0_may30_side_predictions_are_training_ready(self) -> None:
         side_board = ROOT / "data-private" / "predictions" / "mlb-sides" / "2026-05-30-board-live.json"
