@@ -16,6 +16,7 @@ const historyJournalRoot = path.join(dataPrivateRoot, 'history')
 const tennisPredictionsRoot = path.join(dataPrivateRoot, 'predictions', 'tennis')
 const reportsRoot = path.join(dataPrivateRoot, 'reports')
 const repoRoot = path.resolve(dataPrivateRoot, '..')
+const mlbModelRunsRoot = path.join(dataPrivateRoot, 'model-runs', 'mlb')
 
 const ensureDir = async (dirPath: string) => {
   await fs.mkdir(dirPath, { recursive: true })
@@ -189,6 +190,24 @@ const readMlbModelDescription = (modelId: unknown) => {
     ...description,
     markdownPresent: fsSync.existsSync(path.join(cartridgeRoot, 'MODEL_NOTES.md'))
   }
+}
+
+const readMlbRun = (modelId: string, date: string) =>
+  readJsonFile(path.join(mlbModelRunsRoot, modelId, date, 'run.json'))
+
+const loadMlbModelRunDates = () => {
+  const dates = new Set<string>()
+  if (!fsSync.existsSync(mlbModelRunsRoot)) return dates
+  for (const modelId of fsSync.readdirSync(mlbModelRunsRoot)) {
+    const modelRoot = path.join(mlbModelRunsRoot, modelId)
+    if (!fsSync.statSync(modelRoot).isDirectory()) continue
+    for (const date of fsSync.readdirSync(modelRoot)) {
+      if (/^\d{4}-\d{2}-\d{2}$/.test(date) && fsSync.existsSync(path.join(modelRoot, date, 'run.json'))) {
+        dates.add(date)
+      }
+    }
+  }
+  return dates
 }
 
 const isPrivateReference = (value: unknown) =>
@@ -716,15 +735,18 @@ const exportHistory = async () => {
 
 const summarizeMlbModelsForDay = (date: string) => {
   const journalPath = path.join(historyJournalRoot, `mlb-results-${date}.jsonl`)
-  if (!fsSync.existsSync(journalPath)) return []
-  const records = fsSync
-    .readFileSync(journalPath, 'utf8')
-    .trim()
-    .split('\n')
-    .filter(Boolean)
-    .map((line) => JSON.parse(line))
+  const m0Run = readMlbRun('MLB-M0', date)
+  const rp36Run = readMlbRun('MLB-RP36', date)
+  const records = fsSync.existsSync(journalPath)
+    ? fsSync
+        .readFileSync(journalPath, 'utf8')
+        .trim()
+        .split('\n')
+        .filter(Boolean)
+        .map((line) => JSON.parse(line))
+    : []
 
-  if (!records.length) return []
+  if (!records.length && !m0Run && !rp36Run) return []
 
   const moneylineRows = records.filter((row) => row.marketType === 'moneyline')
   const firstInningRows = records.filter((row) => row.marketType === 'firstInning')
@@ -738,8 +760,7 @@ const summarizeMlbModelsForDay = (date: string) => {
   const sourceLabels = [...new Set(moneylineRows.map((row) => String(row.sourceLabel ?? '')).filter(Boolean))]
 
   const models = []
-  const m0Run = readJsonFile(path.join(dataPrivateRoot, 'model-runs', 'mlb', 'MLB-M0', date, 'run.json'))
-  if (m0Run && (moneylineRows.length || firstInningRows.length || hrRows.length || propRows.length)) {
+  if (m0Run) {
     const lane = (label: string, hits: number, rows: number) => ({
       lane: label,
       rows,
@@ -759,6 +780,7 @@ const summarizeMlbModelsForDay = (date: string) => {
       m0Run.evaluatorVersion
     ].filter(Boolean).join(' / ')
     const modelDescription = readMlbModelDescription(m0Run.modelId || 'MLB-M0')
+    const settlementStatus = totalRows ? 'settled' : 'pending'
     models.push({
       id: `${date}-mlb-${m0Run.modelId || 'MLB-M0'}-run`,
       sport: 'MLB',
@@ -789,11 +811,11 @@ const summarizeMlbModelsForDay = (date: string) => {
       },
       settlement: {
         settlementId: `${m0Run.runId || `mlb-${date}-MLB-M0`}:journal`,
-        status: 'settled',
+        status: settlementStatus,
         gradeMode: 'mlb-results-journal',
         settledAt: null,
         completeMatches: moneylineRows.length,
-        pendingMatches: 0,
+        pendingMatches: totalRows ? 0 : Number(m0Run.artifactSummary?.publicSummaryGames || 0),
         rowCount: totalRows,
         gradedCount: totalRows,
         hitCount: totalHits,
@@ -810,7 +832,9 @@ const summarizeMlbModelsForDay = (date: string) => {
       changelog: [
         `Locked run ${m0Run.runId}.`,
         `Stack ${stackLabel || 'MLB-W1 / MLB-F0 / MLB-M0 / MLB-RP36 / MLB-E0'} is the active MLB cartridge shell for this slate.`,
-        `${date} closeout is training-ready: ${moneylineRows.length} side rows, ${firstInningRows.length} first-inning rows, ${hrRows.length} HR rows, and ${propRows.length} prop rows.`,
+        totalRows
+          ? `${date} closeout is training-ready: ${moneylineRows.length} side rows, ${firstInningRows.length} first-inning rows, ${hrRows.length} HR rows, and ${propRows.length} prop rows.`
+          : `${date} is pending settlement; result journal rows have not been exported yet.`,
         'MLB-RP36 remains a consumed relief addendum; it is not a peer parent model.',
         'Daily closeout now exports/imports the side board before postmortem so side backtests cannot silently stay empty.'
       ],
@@ -819,6 +843,47 @@ const summarizeMlbModelsForDay = (date: string) => {
         publicArtifact(`${date} MLB results journal`, 'private-results-journal'),
         publicArtifact(`${date} side backtest rows`, 'warehouse-side-backtest'),
         ...(modelDescription ? [publicArtifact(`${m0Run.modelId || 'MLB-M0'} model notes`, 'model-notes')] : [])
+      ]
+    })
+  }
+  if (rp36Run) {
+    const rp36Description = readMlbModelDescription(rp36Run.modelId || 'MLB-RP36')
+    models.push({
+      id: `${date}-mlb-${rp36Run.modelId || 'MLB-RP36'}-run`,
+      sport: 'MLB',
+      lane: 'Relief addendum',
+      modelName: rp36Run.modelId || 'MLB-RP36',
+      version: 'MLB-RP36',
+      performanceLabel: 'Run locked / settlement pending',
+      performancePct: null,
+      coverageLabel: `${rp36Run.artifactSummary?.candidateCount ?? 0} candidates | ${rp36Run.artifactSummary?.relieverTeams ?? 0} team contexts | ${rp36Run.sourceFiles ?? 0} source files`,
+      modelDescription: rp36Description,
+      run: {
+        runId: rp36Run.runId,
+        status: rp36Run.status,
+        mode: rp36Run.mode,
+        lockedAt: rp36Run.lockedAt,
+        sourceHash: rp36Run.sourceHash,
+        inputHash: rp36Run.inputHash,
+        outputHash: rp36Run.outputHash,
+        sourceFiles: Number(rp36Run.sourceFiles || 0),
+        inputs: Number(rp36Run.inputs || 0),
+        outputs: Number(rp36Run.outputs || 0),
+        trainingRows: Number(rp36Run.artifactSummary?.candidateCount || 0),
+        healthChecks: 3,
+        healthChecksOk: 3,
+        gitDirty: Boolean(rp36Run.git?.dirty)
+      },
+      settlement: null,
+      changelog: [
+        `Locked run ${rp36Run.runId}.`,
+        'MLB-RP36 is an addendum consumed by MLB-M0, focused on first-up reliever clusters and bridge risk.',
+        'May 31 is the first reproducible RP36 run envelope; May 30 remains legacy context unless its original input snapshot is restored.'
+      ],
+      artifacts: [
+        publicArtifact(`${date} MLB-RP36 run manifest`, 'run-manifest'),
+        publicArtifact(`${date} reliever-shadow artifact`, 'private-reliever-shadow'),
+        ...(rp36Description ? [publicArtifact('MLB-RP36 model notes', 'model-notes')] : [])
       ]
     })
   }
@@ -1138,6 +1203,7 @@ const exportModelHistory = async (history: any[]) => {
   const tennisRunsByDate = loadTennisModelRunsByDate()
   for (const entry of history) dates.add(String(entry.id))
   for (const date of tennisRunsByDate.keys()) dates.add(date)
+  for (const date of loadMlbModelRunDates()) dates.add(date)
   if (fsSync.existsSync(tennisPredictionsRoot)) {
     for (const fileName of fsSync.readdirSync(tennisPredictionsRoot)) {
       const match = fileName.match(/^(\d{4}-\d{2}-\d{2})-/)
