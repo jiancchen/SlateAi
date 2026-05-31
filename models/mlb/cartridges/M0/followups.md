@@ -52,3 +52,4 @@ Pregame read:
 - The May 30 quiet-start gate is active on this slate. Broad full-game sides are downgraded when the pick profile carries scoreless-first-three, traffic-without-conversion, or quiet-first-five risk.
 - Today should be evaluated by lane: full-game side, first-five/timing expression, first-inning, totals, tracked props, HR board, and RP36 bridge read.
 - Pitcher strikeout under rows now publish side-specific probability rather than the raw over-side probability, so confidence and probability point in the same direction.
+- Tracked total-bases rows now require backed damage-contact support and enough hitter sample. Tiny-sample or soft-heat TB rows should not rank as core plays.

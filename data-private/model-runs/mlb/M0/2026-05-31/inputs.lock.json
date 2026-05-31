@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "runId": "mlb-2026-05-31-W1-F0-M0-RP36-E0",
-  "inputHash": "cabd0e46801a4519d0a53e5dab4cb81b8bb84d211ba8793787f84ef908f688c3",
+  "inputHash": "8e4a0a6693b169df9aed717948111a3a08296c3f21caa5d796380d3c54aebb37",
   "inputs": [
     {
       "path": "data-private/lineups/mlb/2026-05-31-lineup-board.json",
@@ -19,7 +19,7 @@
       "path": "data-private/predictions/mlb-player-props/2026-05-31-player-props.json",
       "role": "player-props",
       "exists": true,
-      "sha256": "17d40a0a9ce02c7c1aba7f2fd553876c7b5c0c36a58934e2b555b42b68a47b51"
+      "sha256": "f3cc65fda2ae40465c98e44e2194c2ea84ec1c380779f7f0162e2b5bfca97f34"
     },
     {
       "path": "data-private/predictions/mlb-reliever-shadow/2026-05-31-reliever-shadow.json",
@@ -31,31 +31,31 @@
       "path": "data-private/predictions/mlb-sides/2026-05-31-veto-artifact.json",
       "role": "side-veto-artifact",
       "exists": true,
-      "sha256": "c3f645bb34c90715f4f6a3209b13cd8a0da3783b7c854a1eb7fa7966ce7102d0"
+      "sha256": "744934681677e72843a87fbc147dda2dff9cbffc91972a03691f61fcdb3b1a86"
     },
     {
       "path": "published-data/slates/2026-05-31/games/angels-rays.json",
       "role": "published-game",
       "exists": true,
-      "sha256": "c36b09229089160c29a67055880f6cbb73eca8d75658e4c9a63ede29d29749cb"
+      "sha256": "093d54cff62fcbcb635ac0311e176483de4674fbef3a33ea90f973352e02ad2e"
     },
     {
       "path": "published-data/slates/2026-05-31/games/blue-jays-orioles.json",
       "role": "published-game",
       "exists": true,
-      "sha256": "9c04a9897543d5c33aaa670edbd65e7082e6f29d2e6eb89bbaf805ad9f605d87"
+      "sha256": "74c771439fa61aba0c7f28be0d1df2f19b89bd07b613f4b525800a44ac19a991"
     },
     {
       "path": "published-data/slates/2026-05-31/games/braves-reds.json",
       "role": "published-game",
       "exists": true,
-      "sha256": "5d42d146b92c10bf7ca2290648048ba37882de94475d26a7d2bfc67bfa71ec51"
+      "sha256": "ee388c05eb982220ec909b8b3e22c74f233279b4331293633fd12a0cdf597a31"
     },
     {
       "path": "published-data/slates/2026-05-31/games/brewers-astros.json",
       "role": "published-game",
       "exists": true,
-      "sha256": "fc47ab3f0a78248bbb52fee06e4acdbea84a25dc1451fd961528e1c798669c62"
+      "sha256": "c6c1c136a8c3f2c00fca807359cc4fd1958113e449f2fb720611c1be407ba3df"
     },
     {
       "path": "published-data/slates/2026-05-31/games/cubs-cardinals.json",
@@ -67,67 +67,67 @@
       "path": "published-data/slates/2026-05-31/games/diamondbacks-mariners.json",
       "role": "published-game",
       "exists": true,
-      "sha256": "563ed15193226dc3b69fdaa8c2bb0084374a510d8789289de167b8e0a258a47b"
+      "sha256": "f3713d6d870425cae82aeac534f8f38a5b16fbe2e91336042ff4eaaea8f31ae0"
     },
     {
       "path": "published-data/slates/2026-05-31/games/giants-rockies.json",
       "role": "published-game",
       "exists": true,
-      "sha256": "e55cbf685b221a290bcbe43a7243c19d6fe757bca70b332cf724ab33652598cb"
+      "sha256": "dbd6153fa57c4cae42c23ad99997baf2bd3dfd37def684e1696d933545a68748"
     },
     {
       "path": "published-data/slates/2026-05-31/games/marlins-mets.json",
       "role": "published-game",
       "exists": true,
-      "sha256": "9161b167f60598b407b1d7644cfda3abf1e756f6adbacac913f837f46da6d15d"
+      "sha256": "90f0d80d9e130a7f1c19f103f439e6591d05af6a2f96165e23bf204b813564e2"
     },
     {
       "path": "published-data/slates/2026-05-31/games/padres-nationals.json",
       "role": "published-game",
       "exists": true,
-      "sha256": "34f2f914bb9a245c7d2a787c817e8e4dd97fa858ebecada78c01bbc7f42cdfc9"
+      "sha256": "84e530279f8982890eb5066a200c68d33d3fd29a8e16c4d87d2fb43881d118e8"
     },
     {
       "path": "published-data/slates/2026-05-31/games/phillies-dodgers.json",
       "role": "published-game",
       "exists": true,
-      "sha256": "3184eb4f29890e4f0e4f9e1045bbbf1097c4cd1726ccac4fab2692837bbfd60c"
+      "sha256": "4c9d96d3da49f9effa19d452651eaae2894a1d40665c28705b048b13a0093722"
     },
     {
       "path": "published-data/slates/2026-05-31/games/red-sox-guardians.json",
       "role": "published-game",
       "exists": true,
-      "sha256": "38a2ba1d503e12b2d7191bc59f27991b6aee886f6479f8f4d2f68e5cc6aafe86"
+      "sha256": "4bfb0935fc35d23a8f8b825c9b9f4ebf310df99f73207b66f94a4dd004355579"
     },
     {
       "path": "published-data/slates/2026-05-31/games/royals-rangers.json",
       "role": "published-game",
       "exists": true,
-      "sha256": "988b8493caacad71b8a032f39bf1acfa34d8606e33d0773ea9d8cf456d9f4b08"
+      "sha256": "fdc1815d4ca4660a20102ffa7e2ec5558d129d9d657fb7cb150e3b8485f48eac"
     },
     {
       "path": "published-data/slates/2026-05-31/games/tigers-white-sox.json",
       "role": "published-game",
       "exists": true,
-      "sha256": "01266b6c93ef42d52c008bc89fedb2f3009f10a4af42c4c275d75323777a0182"
+      "sha256": "6ca05e3f5e948e3c3893a936e269da736667333a9e3ebddeb8ead0f6bb2a423f"
     },
     {
       "path": "published-data/slates/2026-05-31/games/twins-pirates.json",
       "role": "published-game",
       "exists": true,
-      "sha256": "707ada821037a52e7e8723e4d4db4a7fb56ab9c26f7d884c64968c8ed793730f"
+      "sha256": "5a5247ab52da71d4438f651691d15d5b8ff9cb6fa7182a165c874414105b7402"
     },
     {
       "path": "published-data/slates/2026-05-31/games/yankees-athletics.json",
       "role": "published-game",
       "exists": true,
-      "sha256": "66648ca9cf04b577be0ffc0a0949b6be6bbd934b60c6c3b8964dcaa12e799ac0"
+      "sha256": "8052d8d5ac138b7151c2f37c5e9606ba465b0fc5673205b9ddcf14d4b38a90ea"
     },
     {
       "path": "published-data/slates/2026-05-31/summary.json",
       "role": "published-summary",
       "exists": true,
-      "sha256": "d6ab20096ad15879a0fd0c8b4c65f190e5f91f3aa4912ce87d2bb17c82f322ce"
+      "sha256": "e0a7d755b37db7814750c21dc8394075fe629c85785386c17a744d32ed876be8"
     }
   ]
 }

@@ -102,8 +102,8 @@
     },
     {
       "id": "prop-lane-demotion",
-      "status": "planned",
-      "summary": "Keep generic total-bases overs out of core/top-pick slots until prop-type backtests support the lane."
+      "status": "implemented",
+      "summary": "Keep generic total-bases overs out of core/top-pick slots unless the row has backed damage-contact support and enough sample."
     },
     {
       "id": "pitcher-k-under-probability-direction",

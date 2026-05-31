@@ -6717,6 +6717,20 @@ const buildMlbPropCandidate = ({
   let probability = 0
   let line = ''
   let statValueLabel = ''
+  const sample = {
+    seasonGames: Number(hitter.season?.gamesPlayed || 0),
+    seasonPlateAppearances: Number(hitter.season?.plateAppearances || 0),
+    recentGames: Number(hitter.recent?.gamesPlayed || 0),
+    recentPlateAppearances: Number(hitter.recent?.plateAppearances || 0),
+    statcastGames: Number(hitter.statcastTrend?.gamesSample7 || 0),
+    statcastPlateAppearances: Number(hitter.statcastTrend?.paSample7 || 0),
+    opponentContextGames: Number(hitter.opponentContext?.gamesSampleLast10 || 0)
+  }
+  const tinyTbSample =
+    sample.seasonGames < 5 ||
+    sample.seasonPlateAppearances < 16 ||
+    sample.statcastGames < 3 ||
+    sample.opponentContextGames < 4
 
   if (propType === 'hits') {
     expectedValue = expectedPA * seasonHitRate * contactFactor * formFactor * matchupFactor * teamTrafficFactor * 0.98
@@ -6751,6 +6765,9 @@ const buildMlbPropCandidate = ({
       teamTrafficFactor *
       (1 + homeRunBoost.scoreBoost * 0.6) *
       statcastSignal.tbMultiplier
+    if (tinyTbSample && tbShadowSignal?.supportLevel !== 'backed') {
+      expectedValue = Math.min(expectedValue, 1.95)
+    }
     probability = poissonProbabilityAtLeast(expectedValue, 1)
     line = config.marketLabel
     statValueLabel = `${expectedValue.toFixed(2)} exp TB`
@@ -6837,6 +6854,7 @@ const buildMlbPropCandidate = ({
     probability: roundToTenths(probability * 100),
     expectedValue: roundToTenths(expectedValue),
     statValueLabel,
+    sample,
     recommendationTier: confidence >= 79 ? 'Core' : confidence >= 68 ? 'Strong' : 'Lean',
     shadowSupportTag: propType === 'totalBases' ? tbShadowSignal?.supportTag || null : null,
     shadowSupportLevel: propType === 'totalBases' ? tbShadowSignal?.supportLevel || null : null,
@@ -6977,6 +6995,16 @@ const buildTrackedPropSelection = (game, target) => {
 
   const context = buildTrackedPropContext(game, target)
   const calibration = lookupPropCalibration(target)
+  const sample = target.sample || {}
+  const tinyHitterSample =
+    target.propType !== 'pitcherStrikeouts' &&
+    (
+      Number(sample.seasonGames || 0) < 5 ||
+      Number(sample.seasonPlateAppearances || 0) < 16 ||
+      Number(sample.statcastGames || 0) < 3 ||
+      Number(sample.opponentContextGames || 0) < 4
+    )
+  if (tinyHitterSample) return null
   let supportCount = 0
   let trackingScore = Number(target.confidence || 0)
 
@@ -7004,6 +7032,13 @@ const buildTrackedPropSelection = (game, target) => {
   }
 
   if (target.propType === 'totalBases') {
+    if (target.shadowSupportLevel !== 'backed') return null
+    const tinyTbSample =
+      Number(sample.seasonGames || 0) < 5 ||
+      Number(sample.seasonPlateAppearances || 0) < 16 ||
+      Number(sample.statcastGames || 0) < 3 ||
+      Number(sample.opponentContextGames || 0) < 4
+    if (tinyTbSample && target.shadowSupportLevel !== 'backed') return null
     if (context.projectedRuns >= 4.6) supportCount += 1
     if (context.projectedHits >= 8.6) supportCount += 1
     if (Number(target.slot || 9) <= 5) supportCount += 1
