@@ -9,8 +9,10 @@ The current MLB relief pitcher work is not one clean model yet. It is a chained 
 `E36 shadow` is the latest artifact label, not the whole model. The active exporter is:
 
 ```bash
-python3 pipeline/export_mlb_reliever_shadow_board.py --date YYYY-MM-DD
+python3 models/mlb/cartridges/RP36/runner.py --date YYYY-MM-DD
 ```
+
+The old `pipeline/export_mlb_reliever_shadow_board.py` path remains as a compatibility wrapper.
 
 That script imports several prior model/research layers and combines them into a team-side first-up reliever cluster.
 
@@ -74,7 +76,7 @@ The generated payload is keyed by team and contains:
 ## Current Join Path
 
 1. `pipeline/mlb/workflows/refresh-live-board.mjs` runs the RP36 wrapper during MLB pregame refresh. The old `pipeline/refresh-mlb-live-board.mjs` path remains as a compatibility wrapper.
-2. `pipeline/export_mlb_reliever_shadow_board.py` writes private JSON and a generated web module.
+2. `models/mlb/cartridges/RP36/exporter.py` writes private JSON and a generated web module.
 3. `pipeline/lib/load-mlb-day-games.mjs` imports `web/src/lib/day-YYYY-MM-DD-reliever-shadow.js`.
 4. `loadMlbDayGames()` joins the shadow cards into `game.relieverShadowContext.away/home` by team name.
 5. `web/src/features/mlb/MlbDetail.tsx` renders the shadow context inside each bridge-chain card.
@@ -132,20 +134,23 @@ W1 / F0 / M0 + RP36 / E0
 - The exporter still hardcodes `E36 shadow` and `E33` research rates.
 - The UI label still says `E34 shadow` in `MlbDetail.tsx`, even when the payload is `E36 shadow`.
 - The shadow layer has no formal settlement table yet.
-- The shadow layer has no model-run manifest, source hash, input hash, or golden snapshot yet.
+- The shadow layer has no model-run manifest, source hash, or input hash yet. It does have a May 30 golden snapshot verifier.
 - May 29/May 30 generated modules exist, but no May 31 module was present at audit time.
 - The current docs are experiment-based, not cartridge-based.
 
 ## First Migration Step
 
-Before changing predictions, create an `RP36` addendum cartridge with:
+Before changing predictions, keep the `RP36` addendum cartridge shape:
 
 ```text
-pipeline/mlb_model_cartridges/RP36/
+models/mlb/cartridges/RP36/
   manifest.json
   model_description.json
   MODEL_NOTES.md
   output-contract.json
+  runner.py
+  exporter.py
+  verify_snapshot.py
 ```
 
-The first locked behavior test should prove that `RP36` reproduces the existing May 30 reliever-shadow artifact exactly, apart from explicit metadata fields we decide to rename.
+The first locked behavior test proves that `RP36` reproduces the existing May 30 reliever-shadow artifact exactly, apart from explicit metadata fields we decide to rename.

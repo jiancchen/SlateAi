@@ -25,6 +25,9 @@ Date: 2026-05-31
 - Updated MLB package scripts, workflows, fetchers, and M0 manifest to call the sport-scoped warehouse paths directly.
 - Moved MLB research and market-training scripts into `pipeline/mlb/research/` with import-capable compatibility wrappers at their old top-level pipeline paths.
 - Updated MLB research package scripts and RP36 manifest source paths to use the sport-scoped research paths directly.
+- Moved the RP36 reliever-shadow exporter into `models/mlb/cartridges/RP36/exporter.py`; `pipeline/export_mlb_reliever_shadow_board.py` is now a compatibility wrapper.
+- Moved tennis fetchers into `pipeline/tennis/fetchers/` with compatibility wrappers at their old top-level pipeline paths.
+- Updated tennis fetch package scripts to call the sport-scoped fetcher paths directly.
 - Added `tests/model_registry_test.py` to catch missing cartridge manifests and declared files.
 - Added destination folders and READMEs for sport-specific `development-docs/` migration without moving script-written docs yet.
 - Moved tennis runbook/research notes and MLB daily runbook/source checklist into sport-specific `development-docs/` folders and updated direct references.
@@ -34,7 +37,7 @@ Date: 2026-05-31
 - `pipeline/generate-tennis-day-module.mjs` still emits the old T0 manifest path so the existing May 31 golden snapshot remains comparable.
 - `pipeline/verify-tennis-model-snapshot.mjs` still reads the old T0 manifest path for the same golden-snapshot reason.
 - `pipeline/tennis_model_cartridges/` remains in place until the T0 snapshot contract is intentionally cut over.
-- MLB prediction behavior still runs through the current pipeline logic under sport-scoped workflow/fetcher/publish/warehouse/research folders. The new MLB cartridges are shells only.
+- MLB prediction behavior still runs through current pipeline logic under sport-scoped workflow/fetcher/publish/warehouse/research folders. RP36 now owns its reliever-shadow exporter; M0 remains a shell.
 
 ## Next Safe Steps
 

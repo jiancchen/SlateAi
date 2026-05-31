@@ -8,11 +8,11 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[4]
-LEGACY_EXPORTER = ROOT / "pipeline" / "export_mlb_reliever_shadow_board.py"
+EXPORTER = ROOT / "models" / "mlb" / "cartridges" / "RP36" / "exporter.py"
 
 
 def main() -> int:
-    command = [sys.executable, str(LEGACY_EXPORTER), *sys.argv[1:]]
+    command = [sys.executable, str(EXPORTER), *sys.argv[1:]]
     completed = subprocess.run(command, cwd=ROOT)
     return int(completed.returncode or 0)
 

@@ -19,6 +19,10 @@
   "sourceFiles": [
     {
       "role": "shadow-exporter",
+      "path": "models/mlb/cartridges/RP36/exporter.py"
+    },
+    {
+      "role": "shadow-runner",
       "path": "models/mlb/cartridges/RP36/runner.py"
     },
     {

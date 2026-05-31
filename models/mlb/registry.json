@@ -33,7 +33,7 @@
       "consumedBy": ["M0"],
       "targetPath": "./cartridges/RP36",
       "status": "shell_created",
-      "notes": "Current relief stack is exported by pipeline/export_mlb_reliever_shadow_board.py and will be migrated behind an RP36 cartridge wrapper."
+      "notes": "Current relief stack is exported by models/mlb/cartridges/RP36/exporter.py, with the old pipeline/export_mlb_reliever_shadow_board.py path kept as a compatibility wrapper."
     },
     {
       "modelId": "E0",

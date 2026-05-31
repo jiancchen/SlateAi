@@ -46,7 +46,7 @@ Prediction-market trade-to-sell is not the same as an upset pick. The spike mode
 Before generating the value board, complete the sportsbook line pass. Prefer the Chrome CDP scraper because raw curl is usually blocked by FanDuel/PerimeterX:
 
 ```bash
-node pipeline/scrape_fanduel_tennis_cdp.mjs --date YYYY-MM-DD
+node pipeline/tennis/fetchers/scrape_fanduel_tennis_cdp.mjs --date YYYY-MM-DD
 ```
 
 The scraper uses the challenge-cleared Chrome profile on port `9222`, maps the event URLs from the FanDuel men/women boards, opens each event page, and stores `Moneyline`, `Game Handicap`, `Total Match Games`, `Set 1 Total Games`, and set-win prices with timestamp/source. If the scraper fails, open each FanDuel event URL manually and expand those same markets. Store the page pull in `data-private/reference/tennis/fanduel-lines-YYYY-MM-DD.json`:
