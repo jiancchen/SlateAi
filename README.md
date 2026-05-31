@@ -128,7 +128,7 @@ python3 pipeline/model_kalshi_tennis_spike.py --target-date YYYY-MM-DD
 python3 pipeline/model_tennis_upset_wins.py --target-date YYYY-MM-DD
 ```
 
-Daily tennis operating rules live in `development-docs/daily-tennis-slate-playbook.md`. Use that playbook before publishing a tennis value board. It requires the slate to separate winner picks, prediction-market trade-to-sell candidates, watch rows, hard vetoes, and data-incomplete rows.
+Daily tennis operating rules live in `development-docs/tennis/runbooks/daily-slate-playbook.md`. Use that playbook before publishing a tennis value board. It requires the slate to separate winner picks, prediction-market trade-to-sell candidates, watch rows, hard vetoes, and data-incomplete rows.
 
 The tennis model pass is intentionally run twice on prediction days: first to refresh the slate training rows for flow/weather context, then again after `project_kalshi_tennis_trade_candidates.py` mirrors current Kalshi orderbooks into `tennis_prediction_market_snapshots`. Publish from the second pass only.
 
@@ -230,9 +230,9 @@ This postgame command:
   Saved MLB side board exporter for grading.
 - `pipeline/export-history-journal.mjs`
   JSONL training ledger export.
-- `research/daily-games-external.md`
+- `development-docs/mlb/runbooks/daily-games-external.md`
   Daily source registry and operator shortcuts.
-- `research/mlb-daily-run-checklist.md`
+- `development-docs/mlb/runbooks/daily-run-checklist.md`
   Daily MLB operator checklist and refresh verification routine.
 - `data-private/README.md`
   Warehouse layout and local data notes.

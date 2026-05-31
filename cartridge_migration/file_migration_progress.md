@@ -12,8 +12,15 @@ Date: 2026-05-31
 - Created MLB cartridge shells for `M0`, `RP36`, and `E0`.
 - Added thin MLB cartridge runners for `M0` and `RP36` that delegate to the current legacy pipeline scripts.
 - Added an RP36 snapshot verifier and confirmed it reproduces the existing 2026-05-30 reliever-shadow artifact exactly.
+- Added an M0 May 30 golden snapshot target for MLB board outputs: 15 games, 15 side picks, 49 prop picks, 12 HR picks, 30 reliever-shadow teams, and 15 lineup boards.
+- Routed `data:run:mlb-pregame`, `data:export:mlb-reliever-shadow`, and the MLB refresh workflow through cartridge runners while preserving legacy internals.
+- Moved MLB pregame and refresh workflow implementations into `pipeline/mlb/workflows/` with compatibility wrappers at the old pipeline paths.
+- Moved the MLB close/follow-up workflow into `pipeline/mlb/workflows/followup.mjs` with a compatibility wrapper, and pointed future generated postmortem/follow-up docs into `development-docs/mlb/postmortems/`.
+- Moved MLB refresh verification into `pipeline/mlb/workflows/verify-refresh.mjs` with a compatibility wrapper.
+- Added pipeline folder contracts for future MLB and tennis workflow/fetcher/warehouse/publish/research moves.
 - Added `tests/model_registry_test.py` to catch missing cartridge manifests and declared files.
 - Added destination folders and READMEs for sport-specific `development-docs/` migration without moving script-written docs yet.
+- Moved tennis runbook/research notes and MLB daily runbook/source checklist into sport-specific `development-docs/` folders and updated direct references.
 
 ## Intentionally Still Legacy
 

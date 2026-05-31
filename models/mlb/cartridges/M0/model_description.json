@@ -20,6 +20,11 @@
       "label": "Relief addendum",
       "value": "RP36",
       "details": "Legacy E36 shadow layer is tracked as a component consumed by M0."
+    },
+    {
+      "label": "May 30 snapshot target",
+      "value": "15 games",
+      "details": "Golden target covers 15 side picks, 49 prop picks, 12 HR picks, 30 reliever-shadow teams, and 15 lineup boards."
     }
   ],
   "notes": [
@@ -28,7 +33,7 @@
     "Do not promote RP36 into a standalone parent model; it should feed M0."
   ],
   "knownLimitations": [
-    "No MLB golden snapshot or model-run lock has been created for M0 yet.",
+    "No formal MLB model-run lock has been created for M0 yet.",
     "Source inventory is provisional until the MLB pregame chain is fully audited."
   ],
   "files": {

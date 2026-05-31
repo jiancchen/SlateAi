@@ -7,6 +7,7 @@
   "createdForMigration": "2026-05-31",
   "entrypoint": "models/mlb/cartridges/M0/runner.mjs",
   "legacyEntrypoint": "pipeline/run-mlb-pregame.mjs",
+  "workflowEntrypoint": "pipeline/mlb/workflows/pregame.mjs",
   "legacyEntrypoints": [
     "pipeline/generate-mlb-day-files.mjs",
     "pipeline/export-mlb-side-predictions.mjs",
@@ -15,6 +16,9 @@
   ],
   "components": [
     "RP36"
+  ],
+  "goldenSnapshots": [
+    "data-private/model-cartridges/mlb/M0/golden/2026-05-30.snapshot.json"
   ],
   "outputContract": "models/mlb/cartridges/M0/output-contract.json",
   "modelDescription": "models/mlb/cartridges/M0/model_description.json",
@@ -27,6 +31,30 @@
     {
       "role": "legacy-pregame-runner",
       "path": "pipeline/run-mlb-pregame.mjs"
+    },
+    {
+      "role": "pregame-workflow",
+      "path": "pipeline/mlb/workflows/pregame.mjs"
+    },
+    {
+      "role": "refresh-workflow",
+      "path": "pipeline/mlb/workflows/refresh-live-board.mjs"
+    },
+    {
+      "role": "followup-workflow",
+      "path": "pipeline/mlb/workflows/followup.mjs"
+    },
+    {
+      "role": "refresh-verifier",
+      "path": "pipeline/mlb/workflows/verify-refresh.mjs"
+    },
+    {
+      "role": "snapshot-builder",
+      "path": "models/mlb/cartridges/M0/snapshot.mjs"
+    },
+    {
+      "role": "snapshot-verifier",
+      "path": "models/mlb/cartridges/M0/verify_snapshot.mjs"
     },
     {
       "role": "day-generator",

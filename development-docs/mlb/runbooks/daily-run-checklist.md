@@ -14,7 +14,7 @@ The goal is not just to generate a board. The goal is to confirm:
 
 - Set the slate date.
 - Open the source registry first:
-  - [research/daily-games-external.md](/Users/jcchen/Documents/New%20project/research/daily-games-external.md:1)
+  - [development-docs/mlb/runbooks/daily-games-external.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/runbooks/daily-games-external.md:1)
 - Check official probable pitchers:
   - [MLB probable pitchers](https://www.mlb.com/probable-pitchers)
 - Check official starting lineups:

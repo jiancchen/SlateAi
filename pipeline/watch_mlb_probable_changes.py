@@ -259,7 +259,7 @@ def print_changes(changes: list[dict[str, Any]]) -> None:
 
 def run_quick_refresh(date_text: str, verify_after_refresh: bool) -> None:
     subprocess.run(
-        ["node", str(ROOT / "pipeline" / "refresh-mlb-live-board.mjs"), "--date", date_text],
+        ["node", str(ROOT / "pipeline" / "mlb" / "workflows" / "refresh-live-board.mjs"), "--date", date_text],
         cwd=ROOT,
         check=True,
     )

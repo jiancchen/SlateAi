@@ -73,7 +73,7 @@ The generated payload is keyed by team and contains:
 
 ## Current Join Path
 
-1. `pipeline/refresh-mlb-live-board.mjs` runs the reliever shadow exporter during MLB pregame refresh.
+1. `pipeline/mlb/workflows/refresh-live-board.mjs` runs the RP36 wrapper during MLB pregame refresh. The old `pipeline/refresh-mlb-live-board.mjs` path remains as a compatibility wrapper.
 2. `pipeline/export_mlb_reliever_shadow_board.py` writes private JSON and a generated web module.
 3. `pipeline/lib/load-mlb-day-games.mjs` imports `web/src/lib/day-YYYY-MM-DD-reliever-shadow.js`.
 4. `loadMlbDayGames()` joins the shadow cards into `game.relieverShadowContext.away/home` by team name.

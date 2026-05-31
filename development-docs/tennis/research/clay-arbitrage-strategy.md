@@ -1,6 +1,6 @@
 # Tennis Clay Arbitrage Strategy
 
-For the full daily slate workflow, use `development-docs/daily-tennis-slate-playbook.md`. This file is the strategy background; the playbook is the checklist that should run before publishing a slate.
+For the full daily slate workflow, use `development-docs/tennis/runbooks/daily-slate-playbook.md`. This file is the strategy background; the playbook is the checklist that should run before publishing a slate.
 
 ## Core Idea
 

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import subprocess
 import unittest
 from pathlib import Path
 
@@ -57,6 +58,25 @@ class ModelRegistryTest(unittest.TestCase):
                         source_path = source.get("path")
                         if source_path:
                             self.assertTrue((ROOT / source_path).exists(), f"{model_id} source missing: {source_path}")
+
+    def test_m0_may30_snapshot_verifies(self) -> None:
+        snapshot_path = ROOT / "data-private" / "model-cartridges" / "mlb" / "M0" / "golden" / "2026-05-30.snapshot.json"
+        if not snapshot_path.exists():
+            self.skipTest("M0 May 30 snapshot has not been generated")
+
+        result = subprocess.run(
+            [
+                "node",
+                "models/mlb/cartridges/M0/verify_snapshot.mjs",
+                "--date",
+                "2026-05-30",
+            ],
+            cwd=ROOT,
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        self.assertEqual(result.returncode, 0, msg=result.stdout + result.stderr)
 
 
 if __name__ == "__main__":
