@@ -18,6 +18,7 @@ Date: 2026-05-31
 - Routed MLB-M0 publish/export lanes through cartridge adapters: day files, batting impact, lineups, HR, props, sides, veto artifacts, training corpus, and history journal.
 - Moved the shared deterministic scoring module from `web/src/lib/sports-model.js` to `models/mlb/cartridges/MLB-M0/lib/sports-model.js`; the frontend path now re-exports the cartridge module for compatibility.
 - Split MLB-M0 primitive odds/format helpers into `models/mlb/cartridges/MLB-M0/lib/core-utils.js`, team-name helpers into `models/mlb/cartridges/MLB-M0/lib/team-utils.js`, simulation into `models/mlb/cartridges/MLB-M0/lib/mlb-simulation.js`, pick rankings into `models/mlb/cartridges/MLB-M0/lib/pick-rankings.js`, side-control gates into `models/mlb/cartridges/MLB-M0/lib/mlb-side-controls.js`, and parlay helpers into `models/mlb/cartridges/MLB-M0/lib/parlay.js` while preserving the `sports-model.js` export surface.
+- Split additional MLB-M0 model internals into `models/mlb/cartridges/MLB-M0/lib/market-utils.js`, `signal-utils.js`, `mlb-starter-utils.js`, `mlb-analysis-context.js`, `mlb-decision-indicators.js`, and `mlb-props.js`; the May 30 golden snapshot stayed unchanged after each behavior-sensitive cut.
 - Moved MLB pregame and refresh workflow implementations into `pipeline/mlb/workflows/`.
 - Moved the MLB close/follow-up workflow into `pipeline/mlb/workflows/followup.mjs`, and pointed future generated postmortem/follow-up docs into `development-docs/mlb/postmortems/`.
 - Moved MLB refresh verification into `pipeline/mlb/workflows/verify-refresh.mjs`.
@@ -56,6 +57,6 @@ Date: 2026-05-31
 ## Next Safe Steps
 
 1. Continue moving MLB model-owned internals into `models/mlb/cartridges/MLB-M0/` once the run verifier is green for each step.
-2. Continue splitting `models/mlb/cartridges/MLB-M0/lib/sports-model.js` into smaller lane modules under `lib/` while preserving the exported API.
+2. Continue splitting remaining generic/UFC context and structured-analysis orchestration from `models/mlb/cartridges/MLB-M0/lib/sports-model.js` only after deciding whether those helpers belong in shared core or MLB-M0.
 3. Move remaining implementation code lane by lane only after the adapter path is covered by the May 30/May 31 golden snapshots.
 4. Update `cartridge_migration/technical_debt.md` in the same patch whenever a migration step leaves a shim, wrapper, delegated implementation, or broad lock behind.

@@ -197,6 +197,30 @@
       "path": "models/mlb/cartridges/MLB-M0/lib/core-utils.js"
     },
     {
+      "role": "model-market-utils",
+      "path": "models/mlb/cartridges/MLB-M0/lib/market-utils.js"
+    },
+    {
+      "role": "model-signal-utils",
+      "path": "models/mlb/cartridges/MLB-M0/lib/signal-utils.js"
+    },
+    {
+      "role": "model-starter-utils",
+      "path": "models/mlb/cartridges/MLB-M0/lib/mlb-starter-utils.js"
+    },
+    {
+      "role": "model-analysis-context",
+      "path": "models/mlb/cartridges/MLB-M0/lib/mlb-analysis-context.js"
+    },
+    {
+      "role": "model-decision-indicators",
+      "path": "models/mlb/cartridges/MLB-M0/lib/mlb-decision-indicators.js"
+    },
+    {
+      "role": "model-props",
+      "path": "models/mlb/cartridges/MLB-M0/lib/mlb-props.js"
+    },
+    {
       "role": "model-parlay-helpers",
       "path": "models/mlb/cartridges/MLB-M0/lib/parlay.js"
     },
