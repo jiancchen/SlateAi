@@ -4228,6 +4228,24 @@ function App() {
       </header>
 
       <div className="desk-datestrip">
+        <div className="mobile-date-picker">
+          <button type="button" className="datestrip-step mobile-date-step" disabled={!hasPreviousDay} onClick={() => stepDay(-1)} aria-label="Previous slate">
+            ‹
+          </button>
+          <label className="mobile-date-select-shell">
+            <span className="eyebrow">Slate</span>
+            <select value={activeDayId} onChange={(event) => selectDay(event.target.value)} aria-label="Select slate date">
+              {orderedSlateDays.map((day) => (
+                <option key={day.id} value={day.id}>
+                  {day.slateMeta.date} · {day.summary.totalGames} games
+                </option>
+              ))}
+            </select>
+          </label>
+          <button type="button" className="datestrip-step mobile-date-step" disabled={!hasNextDay} onClick={() => stepDay(1)} aria-label="Next slate">
+            ›
+          </button>
+        </div>
         <div className="datestrip-label">
           <span className="eyebrow">Slate</span>
         </div>
