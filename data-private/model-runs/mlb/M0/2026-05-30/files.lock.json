@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "runId": "mlb-2026-05-30-W1-F0-M0-RP36-E0",
-  "sourceHash": "7936fecbc17bad2ebdb92ff6a8a7a8269679948d81f2ccdb4717d313e2e9df39",
+  "sourceHash": "fe0559df1b9ac66efe81b9403026ca243897dbd763b584cb3d264bc449db7d69",
   "files": [
     {
       "path": "models/mlb/cartridges/E0/manifest.json",
@@ -19,7 +19,7 @@
       "role": "followup-index",
       "path": "models/mlb/cartridges/M0/followups.md",
       "exists": true,
-      "sha256": "a09338b20f202bbdbf36568bee41045151dea69879727b1423c2b15ce5ebab28"
+      "sha256": "9e09c5edfec97dc03d817a0eeb209c6ab0db31a2016086af2e7e66f33e6b001a"
     },
     {
       "path": "models/mlb/cartridges/M0/manifest.json",
@@ -49,7 +49,7 @@
       "role": "performance-index",
       "path": "models/mlb/cartridges/M0/performance_index.json",
       "exists": true,
-      "sha256": "a672dd992d698c4abe93d6959239c109ec47143c0c2ae24d6dde82ce7f1b6d20"
+      "sha256": "7e941c580ab8ea44c70f074b7a49c0b22dd369440ee4e4ad06395033512e5b79"
     },
     {
       "role": "run-locker",
@@ -163,7 +163,7 @@
       "role": "prop-exporter",
       "path": "pipeline/mlb/publish/export-prop-predictions.mjs",
       "exists": true,
-      "sha256": "db32eaa995664c23981b251d5c685e00cb485e0105d8fa72d98fe78cf10bb0c3"
+      "sha256": "1e3789559026e971f0c0aed3eaf3ed9997f84814081a28b5cb5532c36900a2f3"
     },
     {
       "role": "side-exporter",

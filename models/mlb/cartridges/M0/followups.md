@@ -33,3 +33,22 @@ May 31 pre-slate rules:
 - M0 now indexes May 30 performance in `performance_index.json`.
 - M0 exposes a quiet-start full-game gate: scoreless-first-three, traffic-without-conversion, and quiet-first-five rates can veto or penalize side promotion.
 - The M0 model card notes that full-game confidence is not enough by itself when early-run conversion is weak.
+
+## May 31 Pregame Run
+
+Artifacts:
+
+- Run manifest: `data-private/model-runs/mlb/M0/2026-05-31/run.json`
+- Side veto artifact: `data-private/predictions/mlb-sides/2026-05-31-veto-artifact.json`
+- Player props: `data-private/predictions/mlb-player-props/2026-05-31-player-props.json`
+- Home-run board: `data-private/predictions/mlb-home-runs/2026-05-31-statcast-prototype.json`
+- Reliever shadow: `data-private/predictions/mlb-reliever-shadow/2026-05-31-reliever-shadow.json`
+- Lineup board: `data-private/lineups/mlb/2026-05-31-lineup-board.json`
+
+Pregame read:
+
+- 15 MLB games, 13 posted lineups, 17 partial lineup states, 0 pending lineup states.
+- M0/RP36 run `mlb-2026-05-31-W1-F0-M0-RP36-E0` is locked and verified.
+- The May 30 quiet-start gate is active on this slate. Broad full-game sides are downgraded when the pick profile carries scoreless-first-three, traffic-without-conversion, or quiet-first-five risk.
+- Today should be evaluated by lane: full-game side, first-five/timing expression, first-inning, totals, tracked props, HR board, and RP36 bridge read.
+- Pitcher strikeout under rows now publish side-specific probability rather than the raw over-side probability, so confidence and probability point in the same direction.

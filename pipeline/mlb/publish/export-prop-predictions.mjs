@@ -297,7 +297,7 @@ const buildPitcherStrikeoutPick = ({ game, starter, teamName, opponentName, oppo
   const confidence = Math.round(clamp(baseConfidence, 42, 81))
   if (confidence < 60) return null
 
-  const probability = roundToTenths(clamp(50 + edge * 13.5, 36, 78))
+  const probability = roundToTenths(clamp(50 + Math.abs(edge) * 13.5, 36, 78))
   const priceLabel = Number.isFinite(Number(selectedPrice)) ? formatAmericanOdds(Number(selectedPrice)) : 'n/a'
   const overLabel = Number.isFinite(Number(market.overPrice)) ? formatAmericanOdds(Number(market.overPrice)) : 'n/a'
   const underLabel = Number.isFinite(Number(market.underPrice)) ? formatAmericanOdds(Number(market.underPrice)) : 'n/a'

@@ -4,7 +4,43 @@
   "sport": "mlb",
   "description": "Cartridge-local index for M0 performance, follow-up, and run artifacts. Heavy daily artifacts stay in data-private, published-data, and development-docs.",
   "currentBaselineDate": "2026-05-30",
+  "currentRunDate": "2026-05-31",
   "runs": [
+    {
+      "date": "2026-05-31",
+      "runId": "mlb-2026-05-31-W1-F0-M0-RP36-E0",
+      "status": "pregame",
+      "stack": {
+        "warehouse": "W1",
+        "features": "F0",
+        "model": "M0",
+        "reliefAddendum": "RP36",
+        "evaluator": "E0"
+      },
+      "artifactSummary": {
+        "publicSummaryGames": 15,
+        "gameFiles": 15,
+        "sidePicks": 15,
+        "propPicks": 45,
+        "homeRunPicks": 12,
+        "relieverTeams": 30,
+        "lineupGames": 15
+      },
+      "artifacts": {
+        "runManifest": "data-private/model-runs/mlb/M0/2026-05-31/run.json",
+        "sideBoard": "data-private/predictions/mlb-sides/2026-05-31-veto-artifact.json",
+        "playerProps": "data-private/predictions/mlb-player-props/2026-05-31-player-props.json",
+        "homeRuns": "data-private/predictions/mlb-home-runs/2026-05-31-statcast-prototype.json",
+        "relieverShadow": "data-private/predictions/mlb-reliever-shadow/2026-05-31-reliever-shadow.json",
+        "lineups": "data-private/lineups/mlb/2026-05-31-lineup-board.json"
+      },
+      "preSlateRead": [
+        "May 30 quiet-start and traffic-without-conversion lessons are active for May 31 full-game side gating.",
+        "Full-game sides should stay secondary when the same matchup has a cleaner first-five, first-inning, total, or prop expression.",
+        "Generic total-bases props remain demoted unless the player row has a named damage-contact or starter-fit support tag.",
+        "May 31 should be graded separately for side picks, F5/timing lanes, HRs, tracked props, and RP36 bridge reads."
+      ]
+    },
     {
       "date": "2026-05-30",
       "runId": "mlb-2026-05-30-W1-F0-M0-RP36-E0",
@@ -68,6 +104,11 @@
       "id": "prop-lane-demotion",
       "status": "planned",
       "summary": "Keep generic total-bases overs out of core/top-pick slots until prop-type backtests support the lane."
+    },
+    {
+      "id": "pitcher-k-under-probability-direction",
+      "status": "implemented",
+      "summary": "Publish pitcher strikeout under probabilities as side-specific probabilities instead of the raw over-side probability."
     }
   ]
 }
