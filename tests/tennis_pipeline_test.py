@@ -103,6 +103,8 @@ class TennisWarehouseImportTest(unittest.TestCase):
 
         self.assertEqual(first["migrations"][0]["status"], "applied")
         self.assertEqual(second["migrations"][0]["status"], "already_applied")
+        self.assertTrue(all(row["status"] == "applied" for row in first["migrations"]))
+        self.assertTrue(all(row["status"] == "already_applied" for row in second["migrations"]))
         required_tables = {
             "tennis_schema_migrations",
             "tennis_model_runs",
@@ -112,12 +114,15 @@ class TennisWarehouseImportTest(unittest.TestCase):
             "tennis_model_run_metrics",
             "tennis_model_run_events",
             "tennis_model_run_training_rows",
+            "tennis_model_run_settlements",
+            "tennis_model_run_lane_grades",
+            "tennis_model_run_calibration_buckets",
         }
         rows = conn.execute("select name from sqlite_master where type = 'table'").fetchall()
         table_names = {row["name"] for row in rows}
         self.assertTrue(required_tables.issubset(table_names))
         migration_count = conn.execute("select count(*) from tennis_schema_migrations").fetchone()[0]
-        self.assertEqual(migration_count, 1)
+        self.assertEqual(migration_count, len(first["migrations"]))
 
     def test_value_book_gate_requires_ml_match_total_and_first_set_total(self) -> None:
         complete_game = {
@@ -218,6 +223,29 @@ class TennisWarehouseImportTest(unittest.TestCase):
         )
         self.assertEqual(result.returncode, 0, msg=result.stdout + result.stderr)
 
+    def test_tennis_model_cartridges_have_required_model_cards(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        cartridge_root = root / "pipeline" / "tennis_model_cartridges"
+        cartridge_dirs = sorted(path for path in cartridge_root.glob("T*") if path.is_dir())
+        self.assertTrue(cartridge_dirs, "expected at least one tennis model cartridge")
+
+        for cartridge_dir in cartridge_dirs:
+            manifest_path = cartridge_dir / "manifest.json"
+            description_path = cartridge_dir / "model_description.json"
+            notes_path = cartridge_dir / "MODEL_NOTES.md"
+            self.assertTrue(manifest_path.exists(), f"{cartridge_dir.name} is missing manifest.json")
+            self.assertTrue(description_path.exists(), f"{cartridge_dir.name} is missing model_description.json")
+            self.assertTrue(notes_path.exists(), f"{cartridge_dir.name} is missing MODEL_NOTES.md")
+
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            description = json.loads(description_path.read_text(encoding="utf-8"))
+            self.assertEqual(manifest.get("modelDescription"), f"pipeline/tennis_model_cartridges/{cartridge_dir.name}/model_description.json")
+            self.assertEqual(manifest.get("modelNotes"), f"pipeline/tennis_model_cartridges/{cartridge_dir.name}/MODEL_NOTES.md")
+            self.assertEqual(description.get("modelId"), cartridge_dir.name)
+            for key in ("keyImprovements", "keyMetrics", "notes"):
+                self.assertIn(key, description)
+                self.assertTrue(description[key], f"{cartridge_dir.name} has an empty {key} model-card field")
+
     def test_t0_may31_model_run_verifies(self) -> None:
         root = Path(__file__).resolve().parents[1]
         run_path = root / "data-private" / "model-runs" / "tennis" / "T0" / "2026-05-31" / "run.json"
@@ -231,6 +259,7 @@ class TennisWarehouseImportTest(unittest.TestCase):
                 "2026-05-31",
                 "--model",
                 "T0",
+                "--allow-source-drift",
             ],
             cwd=root,
             text=True,
@@ -238,6 +267,32 @@ class TennisWarehouseImportTest(unittest.TestCase):
             check=False,
         )
         self.assertEqual(result.returncode, 0, msg=result.stdout + result.stderr)
+
+    def test_t0_postmatch_settlement_artifact_has_lane_rows(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        artifact_path = (
+            root
+            / "data-private"
+            / "model-runs"
+            / "tennis"
+            / "T0"
+            / "2026-05-31"
+            / "postmatch-grades.json"
+        )
+        if not artifact_path.exists():
+            self.skipTest("T0 May 31 postmatch settlement artifact has not been generated")
+        artifact = json.loads(artifact_path.read_text(encoding="utf-8"))
+        lanes = artifact.get("lanes") or {}
+        self.assertEqual(artifact.get("sourceRunId"), "tennis-2026-05-31-W1-F0-T0-E0")
+        self.assertEqual(artifact.get("status"), "pending")
+        self.assertEqual(artifact.get("pendingMatches"), 8)
+        self.assertEqual(artifact.get("rowCount"), 48)
+        self.assertEqual(lanes.get("ML", {}).get("rows"), 8)
+        self.assertEqual(lanes.get("Spread", {}).get("rows"), 8)
+        self.assertEqual(lanes.get("Match O/U", {}).get("rows"), 8)
+        self.assertEqual(lanes.get("First-set O/U", {}).get("rows"), 8)
+        self.assertEqual(lanes.get("Set-win", {}).get("rows"), 8)
+        self.assertEqual(lanes.get("Kalshi trade-to-sell", {}).get("rows"), 8)
 
 
 if __name__ == "__main__":

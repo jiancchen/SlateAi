@@ -12,6 +12,8 @@
   "outputContract": "pipeline/tennis_model_cartridges/T0/output-contract.json",
   "featureContract": "pipeline/tennis_model_cartridges/F0/feature-contract.json",
   "metricsContract": "pipeline/tennis_model_cartridges/E0/metrics-contract.json",
+  "modelDescription": "pipeline/tennis_model_cartridges/T0/model_description.json",
+  "modelNotes": "pipeline/tennis_model_cartridges/T0/MODEL_NOTES.md",
   "sourceFiles": [
     {
       "role": "model-runner",

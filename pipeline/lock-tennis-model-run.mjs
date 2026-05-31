@@ -65,9 +65,16 @@ const sourceInventory = (model, manifest) => {
     { path: 'pipeline/project_kalshi_tennis_trade_candidates.py', role: 'kalshi-trade-projection' },
     { path: 'pipeline/tennis_multimodel_backtest.py', role: 'multimodel-backtest' },
     { path: 'pipeline/tennis_pipeline_health.py', role: 'health-gate' },
+    { path: 'pipeline/settle-tennis-model-run.mjs', role: 'postmatch-settlement' },
     { path: 'pipeline/tennis_value_backtest.py', role: 'sportsbook-value-backtest' },
     { path: 'pipeline/tennis_warehouse.py', role: 'warehouse-code' },
     { path: 'pipeline/tennis_warehouse_migrations/W1/001_add_model_run_tables.sql', role: 'warehouse-migration' },
+    { path: 'pipeline/tennis_warehouse_migrations/W1/002_add_model_run_grade_tables.sql', role: 'warehouse-migration' },
+    { path: 'api/src/scripts/export-published-data.ts', role: 'public-exporter' },
+    { path: 'scripts/export-public-current.mjs', role: 'public-exporter' },
+    { path: 'web/src/lib/archive-loaders.ts', role: 'model-history-loader' },
+    { path: 'web/src/views/ModelsView.tsx', role: 'model-page-ui' },
+    { path: 'web/src/app.css', role: 'model-page-ui' },
     { path: 'tests/tennis_pipeline_test.py', role: 'test-code' },
     { path: 'package.json', role: 'package-scripts' }
   ]

@@ -1,13 +1,19 @@
 {
   "schemaVersion": 1,
   "runId": "tennis-2026-05-31-W1-F0-T0-E0",
-  "sourceHash": "1cc2904327de7d79cba486ba490cb4b3d2ee0d275b8111a1b8fef66b6697173a",
+  "sourceHash": "8e6d7bf3e15456a6f2fad722f09db420dfdd978f6b362d43c0f5521872371596",
   "files": [
+    {
+      "path": "api/src/scripts/export-published-data.ts",
+      "role": "public-exporter",
+      "exists": true,
+      "sha256": "ab1f4ca70e14c0814e0a23615118cc8053f42d866a26da69a121caf79a7b22cd"
+    },
     {
       "path": "package.json",
       "role": "package-scripts",
       "exists": true,
-      "sha256": "a4a365b13233035edde8bb0d19beea8469ac91e02f63e14f5acbb2817f42fbc3"
+      "sha256": "5af1b4324f135b87f53f5e0b7e4309c63969a9582ef418e263fe03cae72409e5"
     },
     {
       "path": "pipeline/analyze_kalshi_tennis_intramatch.py",
@@ -55,7 +61,7 @@
       "path": "pipeline/lock-tennis-model-run.mjs",
       "role": "run-lock-script",
       "exists": true,
-      "sha256": "67a7a3737c652a6ee05326b889d64765d73598d48ed4edba311cd8df67a9055b"
+      "sha256": "db372203a53f45009ec5e0d0d55a5d1905701e50d24881fde780c492751aa8bc"
     },
     {
       "path": "pipeline/model_kalshi_tennis_spike.py",
@@ -74,6 +80,12 @@
       "role": "kalshi-trade-projection",
       "exists": true,
       "sha256": "2e07dc295f3deca770c7ba8c2aab4a685c351906ad750aee350ae63f0ef9826b"
+    },
+    {
+      "path": "pipeline/settle-tennis-model-run.mjs",
+      "role": "postmatch-settlement",
+      "exists": true,
+      "sha256": "b9eb763e851f775be621f9d34d062a6f4401781815e40f127e717e2bf90ef1c2"
     },
     {
       "path": "pipeline/tennis_model_cartridges/E0/manifest.json",
@@ -148,6 +160,12 @@
       "sha256": "473e46487e55ef8564f0989e2bdd94f402aa0c3fe59481de61ea0cab14ed5275"
     },
     {
+      "path": "pipeline/tennis_warehouse_migrations/W1/002_add_model_run_grade_tables.sql",
+      "role": "warehouse-migration",
+      "exists": true,
+      "sha256": "9b203b48e04076808903e12bdcc6436b857f75c2cbc23c4a9c3ce59033e865f3"
+    },
+    {
       "path": "pipeline/tennis_warehouse.py",
       "role": "warehouse-code",
       "exists": true,
@@ -157,7 +175,7 @@
       "path": "pipeline/verify-tennis-model-run.mjs",
       "role": "run-verifier",
       "exists": true,
-      "sha256": "40158846df6525ff578fa3a983ca022b7cad1d43e5d4cc17993e279048d7cb4b"
+      "sha256": "cc66bf8a0cb437a7369ed93666c47eb153291a0df510e80d8a0556418750a536"
     },
     {
       "path": "pipeline/verify-tennis-model-snapshot.mjs",
@@ -172,16 +190,40 @@
       "sha256": "51e465d9fabb2115cc4bfe59a23f931effbf77b2f056211bbdb38ae88770954f"
     },
     {
+      "path": "scripts/export-public-current.mjs",
+      "role": "public-exporter",
+      "exists": true,
+      "sha256": "7b6ef9087bf9651bdc75d3e2c26f6f871e7c2eb03d9f8b06c1c8afe4b3c4c14f"
+    },
+    {
       "path": "tests/tennis_pipeline_test.py",
       "role": "test-code",
       "exists": true,
-      "sha256": "cbbfc7e612eaf7d6ab887becec527d24821cc899b8c895543cc2d57732d5f8f6"
+      "sha256": "ec26c772f51ac259c7183f434871eedbf0f362b92a3f61772166da56dc5d2103"
+    },
+    {
+      "path": "web/src/app.css",
+      "role": "model-page-ui",
+      "exists": true,
+      "sha256": "33c5158f016b4f1d41c717a66b2b6750e874fcac3a579fe84ed949b31e175a68"
+    },
+    {
+      "path": "web/src/lib/archive-loaders.ts",
+      "role": "model-history-loader",
+      "exists": true,
+      "sha256": "66343185d4d5860ba699e076250d66b259f1d7ed93509328ea3ea026fef782c9"
     },
     {
       "path": "web/src/lib/tennis-source-mapping.js",
       "role": "source-mapping-helper",
       "exists": true,
       "sha256": "b99bc83d33d33f1f8eb3839062ce762b97e741f02c56c4d2c5f27cbd78becba0"
+    },
+    {
+      "path": "web/src/views/ModelsView.tsx",
+      "role": "model-page-ui",
+      "exists": true,
+      "sha256": "e7dd6baacc58791a0820be9a33021a910b025aed87bb9c5c7b019138f4f32761"
     }
   ]
 }

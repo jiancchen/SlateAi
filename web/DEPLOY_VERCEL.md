@@ -30,6 +30,14 @@ npm run publish:site
 
 This is the command to run when you say "publish": it exports the public static bundle, builds `web/`, and deploys production to Vercel.
 
+For a preflight that does everything except publish to Vercel, run:
+
+```bash
+npm run publish:site -- --date TODAY-YYYY-MM-DD --dry-run
+```
+
+The deploy script verifies the public two-day window, confirms the deploy root is `web/`, scans public JSON/assets for private paths, hashes `web/dist`, and writes `publish.json` for included tennis model runs after an actual production deploy.
+
 By default, the active public slate is **today in America/Los_Angeles** when that slate exists, plus the next calendar day if that next slate exists. This matters once tomorrow's predictions are generated: the deploy should still make today the `/data/current/` slate while also shipping tomorrow under `/data/slates/NEXT-YYYY-MM-DD/`.
 
 Before every deploy, verify the two-day window:
@@ -38,6 +46,7 @@ Before every deploy, verify the two-day window:
 cat published-data/slates/index.json | grep -E '"id": "(TODAY-YYYY-MM-DD|NEXT-YYYY-MM-DD)"'
 npm run data:export:public-current -- --date TODAY-YYYY-MM-DD
 cat web/public/data/meta.json
+npm run publish:site -- --date TODAY-YYYY-MM-DD --dry-run
 ```
 
 The expected shape is:
@@ -80,6 +89,12 @@ npm run data:export:mlb-lineups -- --date YYYY-MM-DD
 npm run data:export:hr -- --date YYYY-MM-DD
 npm run data:export:published
 npm run publish:site -- --date YYYY-MM-DD
+```
+
+After production deploy, check the model run publish artifact:
+
+```bash
+cat data-private/model-runs/tennis/T0/YYYY-MM-DD/publish.json
 ```
 
 ## What Vercel Should Ship

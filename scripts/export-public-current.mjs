@@ -7,6 +7,7 @@ const publishedRoot = path.join(root, 'published-data')
 const webPublicDataRoot = path.join(root, 'web', 'public', 'data')
 const currentRoot = path.join(webPublicDataRoot, 'current')
 const publicSlatesRoot = path.join(webPublicDataRoot, 'slates')
+const publicModelHistoryRoot = path.join(webPublicDataRoot, 'model-history')
 
 const readJson = async (filePath) => JSON.parse(await fs.readFile(filePath, 'utf8'))
 const writeJson = async (filePath, payload) => {
@@ -345,6 +346,12 @@ const main = async () => {
   const combinedSearchIndex = bundles.flatMap((bundle) => bundle.searchIndex)
   await writeJson(path.join(webPublicDataRoot, 'search.json'), combinedSearchIndex)
 
+  const sourceModelHistoryRoot = path.join(publishedRoot, 'model-history')
+  await fs.rm(publicModelHistoryRoot, { recursive: true, force: true })
+  if (fsSync.existsSync(sourceModelHistoryRoot)) {
+    await fs.cp(sourceModelHistoryRoot, publicModelHistoryRoot, { recursive: true })
+  }
+
   const availabilityByDate = Object.fromEntries(
     bundles.map((bundle) => [
       bundle.slate.id,
@@ -369,7 +376,8 @@ const main = async () => {
       props: currentBundle.hasProps ? '/data/current/props.json' : null,
       homeRuns: currentBundle.hasHomeRuns ? '/data/current/home-runs.json' : null,
       search: '/data/search.json',
-      slates: '/data/slates'
+      slates: '/data/slates',
+      modelHistory: fsSync.existsSync(path.join(publicModelHistoryRoot, 'index.json')) ? '/data/model-history/index.json' : null
     }
   })
 

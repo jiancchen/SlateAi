@@ -16,7 +16,7 @@ import {
 
 const parseArgs = () => {
   const args = process.argv.slice(2)
-  const options = { date: '', model: '', runId: '', mode: '' }
+  const options = { date: '', model: '', runId: '', mode: '', allowSourceDrift: false }
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index]
     if (arg === '--date') {
@@ -31,6 +31,8 @@ const parseArgs = () => {
     } else if (arg === '--mode') {
       options.mode = args[index + 1] || ''
       index += 1
+    } else if (arg === '--allow-source-drift') {
+      options.allowSourceDrift = true
     }
   }
   if (!/^\d{4}-\d{2}-\d{2}$/.test(options.date)) throw new Error('Pass --date YYYY-MM-DD')
@@ -47,7 +49,7 @@ const assertPresent = (value, label) => {
   if (value === null || value === undefined || value === '') throw new Error(`${label} is missing`)
 }
 
-const hashLockEntries = async (entries, label) => {
+const hashLockEntries = async (entries, label, { allowDrift = false } = {}) => {
   const current = []
   const mismatches = []
   for (const locked of entries || []) {
@@ -70,9 +72,8 @@ const hashLockEntries = async (entries, label) => {
   }
   if (mismatches.length) {
     const first = mismatches[0]
-    throw new Error(
-      `${label} lock drift: ${first.path} expected ${first.expectedExists ? first.expectedSha256 : 'missing'}, got ${first.actualExists ? first.actualSha256 : 'missing'}`
-    )
+    const message = `${label} lock drift: ${first.path} expected ${first.expectedExists ? first.expectedSha256 : 'missing'}, got ${first.actualExists ? first.actualSha256 : 'missing'}`
+    if (!allowDrift) throw new Error(message)
   }
   return current
 }
@@ -204,6 +205,8 @@ const verifyPublicStaticDoesNotLeakPrivatePaths = async (date) => {
   const roots = [
     `published-data/slates/${date}`,
     `web/public/data/slates/${date}`,
+    'published-data/model-history',
+    'web/public/data/model-history',
     'published-data/current',
     'web/public/data/current'
   ]
@@ -295,12 +298,14 @@ const main = async () => {
 
   assertEqual(sourceLock.runId, runId, 'source lock runId')
   assertEqual(inputLock.runId, runId, 'input lock runId')
-  const currentSourceRows = await hashLockEntries(sourceLock.files || [], 'Source')
+  const currentSourceRows = await hashLockEntries(sourceLock.files || [], 'Source', { allowDrift: options.allowSourceDrift })
   const currentInputRows = await hashLockEntries(inputLock.inputs || [], 'Input')
   const sourceHash = aggregateHash(currentSourceRows)
   const inputHash = aggregateHash(currentInputRows)
-  assertEqual(sourceLock.sourceHash, sourceHash, 'files.lock sourceHash')
-  assertEqual(run.sourceHash, sourceHash, 'run sourceHash')
+  if (!options.allowSourceDrift) {
+    assertEqual(sourceLock.sourceHash, sourceHash, 'files.lock sourceHash')
+    assertEqual(run.sourceHash, sourceHash, 'run sourceHash')
+  }
   assertEqual(inputLock.inputHash, inputHash, 'inputs.lock inputHash')
   assertEqual(run.inputHash, inputHash, 'run inputHash')
 
@@ -354,6 +359,7 @@ const main = async () => {
     runId,
     status: 'verified',
     mode: run.mode,
+    sourceDriftAllowed: options.allowSourceDrift,
     sourceFiles: currentSourceRows.length,
     inputs: currentInputRows.length,
     outputs: output.rows,

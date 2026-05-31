@@ -36,14 +36,97 @@ export type ModelHistoryEntry = {
     performancePct?: number | null
     coverageLabel?: string
     changelog: string[]
-    artifacts?: Array<{ label: string; path: string }>
+    modelDescription?: {
+      schemaVersion?: number
+      modelId?: string
+      sport?: string
+      name?: string
+      status?: string
+      createdForSlate?: string
+      summary?: string
+      keyImprovements?: string[]
+      keyMetrics?: Array<{ label: string; value: string; details?: string }>
+      notes?: string[]
+      knownLimitations?: string[]
+      markdownPresent?: boolean
+      files?: Record<string, string>
+    } | null
+    stack?: {
+      warehouseVersion?: string
+      featureVersion?: string
+      modelId?: string
+      evaluatorVersion?: string
+    }
+    run?: {
+      runId?: string
+      status?: string
+      mode?: string
+      lockedAt?: string
+      sourceHash?: string
+      inputHash?: string
+      outputHash?: string
+      sourceFiles?: number
+      inputs?: number
+      outputs?: number
+      trainingRows?: number
+      healthChecks?: number
+      healthChecksOk?: number
+      gitDirty?: boolean
+    }
+    settlement?: {
+      settlementId?: string
+      status?: string
+      gradeMode?: string
+      settledAt?: string | null
+      completeMatches?: number
+      pendingMatches?: number
+      rowCount?: number
+      gradedCount?: number
+      hitCount?: number
+      missCount?: number
+      roiPer100?: number | null
+      lanes?: Array<{
+        lane: string
+        rows: number
+        graded: number
+        hits?: number
+        misses?: number
+        hitPct?: number | null
+        avgPnlPer100?: number | null
+      }>
+    } | null
+    backtest?: {
+      label?: string
+      rows?: number
+      hits?: number
+      hitRatePct?: number | null
+      brier?: number | null
+      logLoss?: number | null
+      auc?: number | null
+      dataOnlyRows?: number | null
+      dataOnlyHits?: number | null
+      dataOnlyHitRatePct?: number | null
+      valueGate?: Record<string, any> | null
+      trainingCorpus?: Record<string, any> | null
+    } | null
+    artifacts?: Array<{ label: string; path?: string; role?: string }>
   }>
+}
+
+const loadStaticModelHistory = async (): Promise<ModelHistoryEntry[]> => {
+  try {
+    const payload = await fetchJsonWithTimeout<ModelHistoryEntry[]>('/data/model-history/index.json')
+    if (Array.isArray(payload)) return payload
+  } catch (error) {
+    console.warn('Static model history unavailable.', error)
+  }
+  return []
 }
 
 export const loadModelHistoryData = async (): Promise<ModelHistoryEntry[]> => {
   const apiBase = getApiBaseUrl()
 
-  if (!apiBase) return []
+  if (!apiBase) return loadStaticModelHistory()
 
   try {
     const payload = await fetchJsonWithTimeout<{ modelHistory: ModelHistoryEntry[] }>(`${apiBase}/api/model-history`)
@@ -52,7 +135,7 @@ export const loadModelHistoryData = async (): Promise<ModelHistoryEntry[]> => {
     console.warn('Model history API unavailable.', error)
   }
 
-  return []
+  return loadStaticModelHistory()
 }
 
 export const loadStoryArchiveIndexData = async (): Promise<StoryArchiveIndexEntry[]> => {

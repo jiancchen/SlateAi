@@ -15,6 +15,7 @@ import { dataPrivateRoot, publishedDataRoot, warehousePath } from '../lib/paths.
 const historyJournalRoot = path.join(dataPrivateRoot, 'history')
 const tennisPredictionsRoot = path.join(dataPrivateRoot, 'predictions', 'tennis')
 const reportsRoot = path.join(dataPrivateRoot, 'reports')
+const repoRoot = path.resolve(dataPrivateRoot, '..')
 
 const ensureDir = async (dirPath: string) => {
   await fs.mkdir(dirPath, { recursive: true })
@@ -159,10 +160,138 @@ const readJsonFile = (filePath: string) => {
   }
 }
 
+const publicArtifact = (label: string, role: string) => ({ label, role })
+
+const readTennisModelDescription = (modelId: unknown) => {
+  const safeModelId = String(modelId || 'T0').replace(/[^a-z0-9_-]/gi, '')
+  if (!safeModelId) return null
+  const cartridgeRoot = path.join(repoRoot, 'pipeline', 'tennis_model_cartridges', safeModelId)
+  const description = readJsonFile(path.join(cartridgeRoot, 'model_description.json'))
+  if (!description) return null
+  return {
+    ...description,
+    markdownPresent: fsSync.existsSync(path.join(cartridgeRoot, 'MODEL_NOTES.md'))
+  }
+}
+
+const isPrivateReference = (value: unknown) =>
+  typeof value === 'string' && (
+    value.includes('data-private/') ||
+    value.includes('data-private\\') ||
+    value.includes('/Users/') ||
+    value.includes('TemporaryItems')
+  )
+
+const sanitizePublicPayload = (value: any): any => {
+  if (Array.isArray(value)) return value.map(sanitizePublicPayload)
+  if (value && typeof value === 'object') {
+    const sanitized: Record<string, any> = {}
+    for (const [key, nested] of Object.entries(value)) {
+      if (key === 'path' && isPrivateReference(nested)) continue
+      sanitized[key] = sanitizePublicPayload(nested)
+    }
+    return sanitized
+  }
+  if (isPrivateReference(value)) return 'private artifact'
+  return value
+}
+
+const tableExists = (tableName: string) =>
+  runWarehouseJson<{ name: string }>(
+    `select name from sqlite_master where type = 'table' and name = '${tableName.replace(/'/g, "''")}'`
+  ).length > 0
+
 const historyRecordLabel = (record: any) =>
   record ? pctLabel(Number(record.wins), Number(record.wins) + Number(record.losses)) : 'Performance pending'
 
 const propRecordLabel = (record: any) => record ? propPctLabel(Number(record.hits), Number(record.total)) : 'Performance pending'
+
+const percentFromRate = (value: unknown) => {
+  const numeric = Number(value)
+  return Number.isFinite(numeric) ? Number((numeric * 100).toFixed(1)) : null
+}
+
+const rateLabel = (value: unknown) => {
+  const pct = percentFromRate(value)
+  return pct === null ? 'pending' : `${pct.toFixed(1)}%`
+}
+
+const readTennisBacktestSummary = (date: string, runDir?: string) => {
+  const payload =
+    (runDir ? readJsonFile(path.join(runDir, 'backtest.json')) : null) ??
+    readJsonFile(path.join(reportsRoot, `tennis-multimodel-backtest-through-${date}.json`))
+  const backtest = payload?.backtest
+  if (!backtest) return null
+  const dataOnly = payload?.dataOnlyBacktest
+  const hitRatePct = percentFromRate(backtest.hitRate)
+  return {
+    label: `${rateLabel(backtest.hitRate)} backtest (${Number(backtest.hits ?? 0)}/${Number(backtest.rows ?? 0)})${dataOnly ? ` | data-only ${rateLabel(dataOnly.hitRate)}` : ''}`,
+    rows: Number(backtest.rows || 0),
+    hits: Number(backtest.hits || 0),
+    hitRatePct,
+    brier: backtest.brier ?? null,
+    logLoss: backtest.logLoss ?? null,
+    auc: backtest.auc ?? null,
+    dataOnlyRows: dataOnly ? Number(dataOnly.rows || 0) : null,
+    dataOnlyHits: dataOnly ? Number(dataOnly.hits || 0) : null,
+    dataOnlyHitRatePct: dataOnly ? percentFromRate(dataOnly.hitRate) : null,
+    valueGate: payload?.valueGate ?? null,
+    trainingCorpus: payload?.trainingCorpus ?? null
+  }
+}
+
+const tennisValueLaneName = (lane: string) => {
+  if (/^o\/u$/i.test(lane)) return 'Match O/U'
+  return lane
+}
+
+const summarizeTennisValueSettlement = (date: string, value: any) => {
+  const summary = value?.summary
+  if (!summary || typeof summary !== 'object') return null
+  const rows = Array.isArray(value?.rows) ? value.rows : []
+  const marketLanes = Object.entries(summary)
+    .filter(([lane]) => ['ML', 'Spread', 'O/U'].includes(lane))
+    .map(([lane, laneSummary]: [string, any]) => {
+      const graded = Number(laneSummary.graded || 0)
+      const hits = Number(laneSummary.hits || 0)
+      const totalPnl = Number(laneSummary.pnlPer100 || 0)
+      return {
+        lane: tennisValueLaneName(lane),
+        rows: Number(laneSummary.rows || 0),
+        graded,
+        hits,
+        misses: Math.max(0, graded - hits),
+        hitPct: percentFromRate(laneSummary.hitRate),
+        avgPnlPer100: graded ? Number((totalPnl / graded).toFixed(1)) : null
+      }
+    })
+  const gradedCount = rows.filter((row: any) => row.graded).length
+  const hitCount = rows.filter((row: any) => row.graded && row.hit).length
+  const totalPnl = rows
+    .filter((row: any) => row.graded)
+    .reduce((total: number, row: any) => total + Number(row.pnlPer100 || 0), 0)
+  return {
+    settlementId: `legacy-tennis-${date}:value-backtest`,
+    status: 'settled',
+    gradeMode: 'legacy-value-backtest',
+    settledAt: value?.generatedAt ?? null,
+    completeMatches: new Set(rows.map((row: any) => row.matchId).filter(Boolean)).size,
+    pendingMatches: 0,
+    rowCount: rows.length,
+    gradedCount,
+    hitCount,
+    missCount: Math.max(0, gradedCount - hitCount),
+    roiPer100: gradedCount ? Number((totalPnl / (100 * gradedCount)).toFixed(3)) : null,
+    lanes: marketLanes
+  }
+}
+
+const tennisValueSettlementLabel = (settlement: any) => {
+  if (!settlement?.lanes?.length) return null
+  return settlement.lanes
+    .map((lane: any) => `${lane.lane} ${lane.hits}-${lane.misses} (${Number(lane.hitPct ?? 0).toFixed(1)}%)`)
+    .join(' | ')
+}
 
 const readGeneratedHistoryEntries = async () => {
   if (!fsSync.existsSync(historyJournalRoot)) return []
@@ -241,7 +370,7 @@ const readGeneratedHistoryEntries = async () => {
         ...(props ? { mlbProps: props } : {})
       },
       journal: {
-        path: `data-private/history/${fileName}`,
+        role: 'private-results-journal',
         records: records.length,
         sideRows: records.filter((row) => row.marketType === 'moneyline').length,
         hrRows: records.filter((row) => row.marketType === 'homeRun').length,
@@ -264,7 +393,7 @@ const readGeneratedHistoryEntries = async () => {
       takeaways: [
         'Use this as the daily source of truth for model accuracy while the deeper post-analysis catches up.'
       ],
-      artifacts: [{ label: `${toTitleDate(date)} MLB results journal`, path: `data-private/history/${fileName}` }]
+      artifacts: [publicArtifact(`${toTitleDate(date)} MLB results journal`, 'private-results-journal')]
     })
   }
 
@@ -558,11 +687,11 @@ const exportHistory = async () => {
   const seededIds = new Set(seededHistory.map((entry: any) => String(entry.id)))
   const history = [...seededHistory, ...generatedHistory.filter((entry) => !seededIds.has(String(entry.id)))]
     .sort((left: any, right: any) => String(right.id).localeCompare(String(left.id)))
-  await writeJson(path.join(historyRoot, 'index.json'), history)
+  await writeJson(path.join(historyRoot, 'index.json'), sanitizePublicPayload(history))
 
   for (const entry of history) {
     const id = String(entry.id)
-    await writeJson(path.join(historyRoot, `${id}.json`), entry)
+    await writeJson(path.join(historyRoot, `${id}.json`), sanitizePublicPayload(entry))
   }
 
   return history
@@ -607,7 +736,7 @@ const summarizeMlbModelsForDay = (date: string) => {
         'Tracks full-game and first-five separately so late bullpen flips do not hide starter-window errors.',
         'Daily rows keep confidence, volatility, market price, edge flags, and result labels for backtesting.'
       ],
-      artifacts: [{ label: `${date} MLB results journal`, path: `data-private/history/mlb-results-${date}.jsonl` }]
+      artifacts: [publicArtifact(`${date} MLB results journal`, 'private-results-journal')]
     })
   }
   if (firstInningRows.length) {
@@ -623,7 +752,7 @@ const summarizeMlbModelsForDay = (date: string) => {
         'Grades first-inning picks as a separate lane instead of blending them with full-game sides.',
         'Uses the JSONL result journal as the training-ready source of truth.'
       ],
-      artifacts: [{ label: `${date} MLB results journal`, path: `data-private/history/mlb-results-${date}.jsonl` }]
+      artifacts: [publicArtifact(`${date} MLB results journal`, 'private-results-journal')]
     })
   }
   if (hrRows.length) {
@@ -639,7 +768,7 @@ const summarizeMlbModelsForDay = (date: string) => {
         'Tracks saved HR-board hit rate independently from side model accuracy.',
         'Keeps player-level failures visible so a good side day cannot mask bad prop selection.'
       ],
-      artifacts: [{ label: `${date} MLB results journal`, path: `data-private/history/mlb-results-${date}.jsonl` }]
+      artifacts: [publicArtifact(`${date} MLB results journal`, 'private-results-journal')]
     })
   }
   if (propRows.length) {
@@ -655,14 +784,168 @@ const summarizeMlbModelsForDay = (date: string) => {
         'Grades tracked non-HR props separately from HRs and sides.',
         'Keeps low-hit prop slates visible on the Models page instead of burying them in day summaries.'
       ],
-      artifacts: [{ label: `${date} MLB results journal`, path: `data-private/history/mlb-results-${date}.jsonl` }]
+      artifacts: [publicArtifact(`${date} MLB results journal`, 'private-results-journal')]
     })
   }
 
   return models
 }
 
-const summarizeTennisModelsForDay = (date: string, historyEntry: any | null) => {
+const shortHash = (value: unknown) => String(value ?? '').slice(0, 10)
+const sqlString = (value: unknown) => `'${String(value ?? '').replace(/'/g, "''")}'`
+
+const loadTennisModelRunsByDate = () => {
+  const byDate = new Map<string, any[]>()
+  if (!tableExists('tennis_model_runs')) return byDate
+  const rows = runWarehouseJson<any>(`
+    select r.run_id, r.slate_date, r.sport, r.warehouse_version, r.feature_version,
+           r.model_id, r.evaluator_version, r.mode, r.status, r.locked_at,
+           r.input_hash, r.source_hash, r.output_hash, r.git_commit, r.git_dirty,
+           r.cartridge_stack_json,
+           (select count(*) from tennis_model_run_files f where f.run_id = r.run_id) as source_files,
+           (select count(*) from tennis_model_run_inputs i where i.run_id = r.run_id) as input_files,
+           (select count(*) from tennis_model_run_outputs o where o.run_id = r.run_id) as output_files,
+           (select count(*) from tennis_model_run_training_rows t where t.run_id = r.run_id) as training_rows
+    from tennis_model_runs r
+    where r.sport = 'tennis'
+    order by r.slate_date desc, r.locked_at desc
+  `)
+  for (const row of rows) {
+    const date = String(row.slate_date || '')
+    if (!date) continue
+    const list = byDate.get(date) ?? []
+    list.push(row)
+    byDate.set(date, list)
+  }
+  return byDate
+}
+
+const summarizeTennisRunModel = (date: string, run: any) => {
+  const runDir = path.join(dataPrivateRoot, 'model-runs', 'tennis', String(run.model_id || 'T0'), date)
+  const health = readJsonFile(path.join(runDir, 'health.json'))
+  const snapshot = readJsonFile(path.join(runDir, 'predictions.snapshot.json'))
+  const backtest = readTennisBacktestSummary(date, runDir)
+  const modelDescription = readTennisModelDescription(run.model_id || 'T0')
+  const healthChecks = Array.isArray(health?.checks) ? health.checks : []
+  const okChecks = healthChecks.filter((check: any) => check.status === 'ok').length
+  const matchCount = Array.isArray(snapshot?.matches) ? snapshot.matches.length : null
+  const stackLabel = [run.warehouse_version, run.feature_version, run.model_id, run.evaluator_version].filter(Boolean).join(' / ')
+  const runStatus = `${String(run.mode || '').replace(/^./, (letter) => letter.toUpperCase())} ${run.status || 'run'}`
+  const settlement = tableExists('tennis_model_run_settlements')
+    ? runWarehouseJson<any>(`
+        select settlement_id, status, grade_mode, settled_at, complete_matches,
+               pending_matches, row_count, graded_count, hit_count, miss_count,
+               roi_per_100
+        from tennis_model_run_settlements
+        where source_run_id = ${sqlString(run.run_id)}
+        order by updated_at desc
+        limit 1
+      `)[0] ?? null
+    : null
+  const laneGrades = settlement && tableExists('tennis_model_run_lane_grades')
+    ? runWarehouseJson<any>(`
+        select lane,
+               count(*) as rows,
+               sum(graded) as graded,
+               sum(case when hit = 1 then 1 else 0 end) as hits,
+               sum(case when graded = 1 and hit = 0 then 1 else 0 end) as misses,
+               round(avg(case when graded = 1 then hit end) * 100, 1) as hit_pct,
+               round(avg(case when graded = 1 then pnl_per_100 end), 1) as avg_pnl_per_100
+        from tennis_model_run_lane_grades
+        where settlement_id = ${sqlString(settlement.settlement_id)}
+        group by lane
+        order by lane
+      `)
+    : []
+  const settlementLabel = settlement
+    ? `${settlement.status} settlement (${Number(settlement.graded_count || 0)}/${Number(settlement.row_count || 0)} rows graded)`
+    : runStatus
+
+  return {
+    id: `${date}-tennis-${run.model_id}-run`,
+    sport: 'Tennis',
+    lane: 'Cartridge run',
+    modelName: run.model_id,
+    version: stackLabel,
+    performanceLabel: settlementLabel,
+    performancePct: settlement && Number(settlement.graded_count || 0)
+      ? Number(((Number(settlement.hit_count || 0) / Number(settlement.graded_count || 1)) * 100).toFixed(1))
+      : null,
+    coverageLabel: `${matchCount ?? 0} matches | ${run.source_files ?? 0} source files | ${run.input_files ?? 0} inputs${settlement ? ` | ${settlement.row_count} settlement rows` : ''}`,
+    modelDescription,
+    backtest,
+    stack: {
+      warehouseVersion: run.warehouse_version,
+      featureVersion: run.feature_version,
+      modelId: run.model_id,
+      evaluatorVersion: run.evaluator_version
+    },
+    run: {
+      runId: run.run_id,
+      status: run.status,
+      mode: run.mode,
+      lockedAt: run.locked_at,
+      sourceHash: run.source_hash,
+      inputHash: run.input_hash,
+      outputHash: run.output_hash,
+      sourceFiles: Number(run.source_files || 0),
+      inputs: Number(run.input_files || 0),
+      outputs: Number(run.output_files || 0),
+      trainingRows: Number(run.training_rows || 0),
+      healthChecks: healthChecks.length,
+      healthChecksOk: okChecks,
+      gitDirty: Boolean(run.git_dirty)
+    },
+    settlement: settlement
+      ? {
+          settlementId: settlement.settlement_id,
+          status: settlement.status,
+          gradeMode: settlement.grade_mode,
+          settledAt: settlement.settled_at,
+          completeMatches: Number(settlement.complete_matches || 0),
+          pendingMatches: Number(settlement.pending_matches || 0),
+          rowCount: Number(settlement.row_count || 0),
+          gradedCount: Number(settlement.graded_count || 0),
+          hitCount: Number(settlement.hit_count || 0),
+          missCount: Number(settlement.miss_count || 0),
+          roiPer100: settlement.roi_per_100,
+          lanes: laneGrades.map((lane: any) => ({
+            lane: lane.lane,
+            rows: Number(lane.rows || 0),
+            graded: Number(lane.graded || 0),
+            hits: Number(lane.hits || 0),
+            misses: Number(lane.misses || 0),
+            hitPct: lane.hit_pct,
+            avgPnlPer100: lane.avg_pnl_per_100
+          }))
+        }
+      : null,
+    changelog: [
+      `Locked run ${run.run_id}.`,
+      `Stack ${stackLabel} is the active tennis cartridge chain for this slate.`,
+      `Health gates ${okChecks}/${healthChecks.length || 0} ok; source ${shortHash(run.source_hash)}, input ${shortHash(run.input_hash)}, output ${shortHash(run.output_hash)}.`,
+      settlement
+        ? `Postmatch settlement is ${settlement.status}: ${settlement.complete_matches} complete matches, ${settlement.pending_matches} pending matches, ${settlement.graded_count}/${settlement.row_count} rows graded.`
+        : 'Postmatch settlement has not been generated for this run.',
+      backtest
+        ? `Backtest ${backtest.hits}/${backtest.rows} (${Number(backtest.hitRatePct ?? 0).toFixed(1)}%); data-only ${Number(backtest.dataOnlyHitRatePct ?? 0).toFixed(1)}%.`
+        : 'Backtest artifact has not been exported for this run.',
+      modelDescription
+        ? `Model card loaded: ${(modelDescription.keyImprovements || []).length} improvements, ${(modelDescription.keyMetrics || []).length} metrics, ${(modelDescription.notes || []).length} notes.`
+        : 'Model card has not been exported for this cartridge.',
+      'Run verifier requires ML, spread, match O/U, set-win, and first-set O/U rows before publishing.'
+    ],
+    artifacts: [
+      publicArtifact(`${date} run manifest`, 'run-manifest'),
+      publicArtifact(`${date} prediction snapshot`, 'prediction-snapshot'),
+      publicArtifact(`${date} source/input/output locks`, 'run-locks'),
+      ...(modelDescription ? [publicArtifact(`${run.model_id || 'T0'} model notes`, 'model-notes')] : []),
+      ...(settlement ? [publicArtifact(`${date} postmatch settlement`, 'postmatch-grades')] : [])
+    ]
+  }
+}
+
+const summarizeTennisModelsForDay = (date: string, historyEntry: any | null, runs: any[] = []) => {
   const models = []
   const ensemblePath = path.join(tennisPredictionsRoot, `${date}-multimodel-ensemble.json`)
   const valuePath = path.join(reportsRoot, `tennis-value-backtest-${date}.json`)
@@ -670,6 +953,9 @@ const summarizeTennisModelsForDay = (date: string, historyEntry: any | null) => 
   const ensemble = readJsonFile(ensemblePath)
   const value = readJsonFile(valuePath)
   const spike = readJsonFile(spikePath)
+  const backtest = readTennisBacktestSummary(date)
+  const valueSettlement = summarizeTennisValueSettlement(date, value)
+  const valueSettlementLabel = tennisValueSettlementLabel(valueSettlement)
   const tennisRecord = historyEntry?.performance?.tennis
   const atpRecord = historyEntry?.performance?.atp
   const wtaRecord = historyEntry?.performance?.wta
@@ -677,30 +963,42 @@ const summarizeTennisModelsForDay = (date: string, historyEntry: any | null) => 
   const valueRows = Array.isArray(value?.rows) ? value.rows : []
   const spikeRows = Array.isArray(spike?.currentCandidates) ? spike.currentCandidates : []
 
+  for (const run of runs) {
+    models.push(summarizeTennisRunModel(date, run))
+  }
+
   if (ensemble || tennisRecord) {
     models.push({
       id: `${date}-tennis-ensemble`,
       sport: 'Tennis',
       lane: 'Winner / ML value',
-      modelName: ensemble?.model ?? 'pandas-ensemble-logit-rf-gb-xgb',
-      version: 'warehouse ensemble',
+      modelName: runs[0]?.model_id ?? ensemble?.model ?? 'pandas-ensemble-logit-rf-gb-xgb',
+      version: runs[0] ? `${runs[0].model_id} cartridge output` : 'warehouse ensemble',
       performanceLabel: tennisRecord
         ? `Desk ${historyRecordLabel(tennisRecord)}${atpRecord ? ` | ATP ${historyRecordLabel(atpRecord)}` : ''}${wtaRecord ? ` | WTA ${historyRecordLabel(wtaRecord)}` : ''}`
+        : valueSettlementLabel
+          ? valueSettlementLabel
         : 'Pre-match / pending settlement',
       performancePct: tennisRecord
         ? Number(((Number(tennisRecord.wins) / (Number(tennisRecord.wins) + Number(tennisRecord.losses))) * 100).toFixed(1))
-        : null,
+        : valueSettlement?.lanes?.find((lane: any) => lane.lane === 'ML')?.hitPct ?? null,
       coverageLabel: ensembleRows.length ? `${ensembleRows.length} ensemble rows` : 'No ensemble rows exported',
+      settlement: valueSettlement,
+      backtest,
       changelog: [
+        runs[0] ? `Generated under run ${runs[0].run_id}.` : 'Generated before formal tennis cartridge runs were locked.',
         'Uses warehouse features and excludes source-site picks such as Tennistonic as direct model inputs.',
         'Blends data-only and market-calibrated probabilities, then applies risk gates for taxed favorites and fragile profiles.',
         valueRows.length
           ? `Value pass graded ${valueRows.length} ML/spread/total rows from FanDuel and model fair prices.`
-          : 'Value pass pending or not exported for this date.'
+          : 'Value pass pending or not exported for this date.',
+        backtest
+          ? `Model backtest through this date: ${backtest.label}.`
+          : 'No model backtest artifact is available for this date.'
       ],
       artifacts: [
-        ...(ensemble ? [{ label: `${date} tennis ensemble`, path: `data-private/predictions/tennis/${date}-multimodel-ensemble.json` }] : []),
-        ...(value ? [{ label: `${date} tennis value backtest`, path: `data-private/reports/tennis-value-backtest-${date}.json` }] : [])
+        ...(ensemble ? [publicArtifact(`${date} tennis ensemble`, 'private-ensemble-artifact')] : []),
+        ...(value ? [publicArtifact(`${date} tennis value backtest`, 'private-value-backtest')] : [])
       ]
     })
   }
@@ -719,11 +1017,12 @@ const summarizeTennisModelsForDay = (date: string, historyEntry: any | null) => 
       performancePct: Number.isFinite(Number(backtest.hit25x)) ? Number((Number(backtest.hit25x) * 100).toFixed(1)) : null,
       coverageLabel: `${spikeRows.length} current candidates | ${spike.coverage?.historicalRows ?? 0} historical rows`,
       changelog: [
+        runs[0] ? `Linked to run ${runs[0].run_id}.` : 'Generated before formal tennis cartridge runs were locked.',
         'Separates trade-to-sell targets from winner picks so losing underdogs can still be profitable exits.',
         'Requires price-history support from Kalshi candles before a row graduates above watch.',
         spike.coverage?.weatherNote ?? 'Weather context not yet warehoused for this model.'
       ],
-      artifacts: [{ label: `${date} Kalshi spike model`, path: `data-private/reports/kalshi-tennis-spike-model-${date}.json` }]
+      artifacts: [publicArtifact(`${date} Kalshi spike model`, 'private-kalshi-spike-artifact')]
     })
   }
 
@@ -735,7 +1034,9 @@ const exportModelHistory = async (history: any[]) => {
   await ensureDir(modelHistoryRoot)
 
   const dates = new Set<string>()
+  const tennisRunsByDate = loadTennisModelRunsByDate()
   for (const entry of history) dates.add(String(entry.id))
+  for (const date of tennisRunsByDate.keys()) dates.add(date)
   if (fsSync.existsSync(tennisPredictionsRoot)) {
     for (const fileName of fsSync.readdirSync(tennisPredictionsRoot)) {
       const match = fileName.match(/^(\d{4}-\d{2}-\d{2})-/)
@@ -754,9 +1055,10 @@ const exportModelHistory = async (history: any[]) => {
     .sort((left, right) => right.localeCompare(left))
     .map((date) => {
       const historyEntry = historyByDate.get(date) ?? null
+      const tennisRuns = tennisRunsByDate.get(date) ?? []
       const models = [
         ...summarizeMlbModelsForDay(date),
-        ...summarizeTennisModelsForDay(date, historyEntry)
+        ...summarizeTennisModelsForDay(date, historyEntry, tennisRuns)
       ]
       if (!models.length) return null
       return {
@@ -769,7 +1071,7 @@ const exportModelHistory = async (history: any[]) => {
     })
     .filter(Boolean)
 
-  await writeJson(path.join(modelHistoryRoot, 'index.json'), entries)
+  await writeJson(path.join(modelHistoryRoot, 'index.json'), sanitizePublicPayload(entries))
   return entries.length
 }
 

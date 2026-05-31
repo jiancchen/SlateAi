@@ -144,10 +144,13 @@ pipeline/
   tennis_warehouse_migrations/
     W1/
       001_add_model_run_tables.sql
+      002_add_model_run_grade_tables.sql
 
   tennis_model_cartridges/
     T0/
       manifest.json
+      model_description.json
+      MODEL_NOTES.md
       runner.mjs
       output-contract.json
 
@@ -171,6 +174,7 @@ data-private/
           calibration.json
           backtest.json
           grades.json
+          postmatch-grades.json
           health.json
           publish.json
 ```
@@ -478,9 +482,57 @@ Environment lock should record:
 - New warehouse schema creates `W2`, `W3`, etc.
 - Experimental work lives outside the active cartridge until promoted.
 - A new cartridge starts by copying the previous cartridge and changing only the files required for that version.
-- Every cartridge must expose a runner command, input contract, output contract, and known calibration artifacts.
+- Every cartridge must expose a runner command, output contract, model description, human model notes, and known calibration artifacts.
 - Daily run snapshots are not cartridges; they are runs of a cartridge stack.
 - Database relocation is not a model cartridge change by itself. It should get a warehouse migration/version and compatibility plan.
+
+## Cartridge Creation Runbook
+
+Use this as the command-shaped checklist for each new tennis cartridge. Replace `T1`, dates, and notes with the actual version.
+
+```bash
+MODEL_ID=T1
+PREV_MODEL_ID=T0
+CARTRIDGE_DIR="pipeline/tennis_model_cartridges/${MODEL_ID}"
+PREV_DIR="pipeline/tennis_model_cartridges/${PREV_MODEL_ID}"
+
+mkdir -p "$CARTRIDGE_DIR"
+cp "$PREV_DIR/manifest.json" "$CARTRIDGE_DIR/manifest.json"
+cp "$PREV_DIR/model_description.json" "$CARTRIDGE_DIR/model_description.json"
+cp "$PREV_DIR/MODEL_NOTES.md" "$CARTRIDGE_DIR/MODEL_NOTES.md"
+cp "$PREV_DIR/runner.mjs" "$CARTRIDGE_DIR/runner.mjs"
+cp "$PREV_DIR/output-contract.json" "$CARTRIDGE_DIR/output-contract.json"
+```
+
+Then edit the copied files:
+
+```bash
+$EDITOR "$CARTRIDGE_DIR/manifest.json"
+$EDITOR "$CARTRIDGE_DIR/model_description.json"
+$EDITOR "$CARTRIDGE_DIR/MODEL_NOTES.md"
+$EDITOR "$CARTRIDGE_DIR/runner.mjs"
+```
+
+Required cartridge files:
+
+- `manifest.json`: model ID, sport, stack versions, entrypoint, contracts, model-note paths, and source inventory.
+- `model_description.json`: machine-readable model card with `keyImprovements`, `keyMetrics`, `notes`, and `knownLimitations`.
+- `MODEL_NOTES.md`: human-readable model card explaining the model goal, changes, limits, metrics, and promotion rules.
+- `runner.mjs`: stable cartridge entrypoint.
+- `output-contract.json`: public output shape expected by verification, export, and UI.
+
+After the first slate run for a new cartridge:
+
+```bash
+npm run data:verify:tennis-model -- --date YYYY-MM-DD --model "$MODEL_ID"
+npm test
+npm --prefix api run build
+npm --prefix web run build
+npm run data:export:published
+npm run data:export:public-current -- --date YYYY-MM-DD --include-dates=YYYY-MM-DD
+```
+
+Do not lock the cartridge while it is still in active build/debug mode. Once the cartridge is stable, create the golden snapshot, calibration artifact, run manifest, and DB run rows in `data-private/model-runs/tennis/${MODEL_ID}/YYYY-MM-DD/`.
 
 ## Leakage Rules
 
@@ -537,6 +589,8 @@ Tennis model page should eventually show:
   - source lock
   - input lock
   - prediction snapshot
+  - model description
+  - model notes
   - calibration
   - backtest
   - grades
@@ -563,6 +617,8 @@ Public/static exports must not expose private raw data from `data-private/`; exp
 - [x] Create `pipeline/tennis_model_cartridges/E0/manifest.json`.
 - [x] Create `pipeline/tennis_model_cartridges/T0/runner.mjs` as a thin stable entrypoint.
 - [x] Create `pipeline/tennis_model_cartridges/T0/output-contract.json`.
+- [x] Create `pipeline/tennis_model_cartridges/T0/model_description.json`.
+- [x] Create `pipeline/tennis_model_cartridges/T0/MODEL_NOTES.md`.
 - [x] Create `pipeline/tennis_model_cartridges/F0/feature-contract.json`.
 - [x] Create `pipeline/tennis_model_cartridges/E0/metrics-contract.json`.
 - [x] Update `pipeline/tennis_model_cartridges/T0/manifest.json` with `warehouseVersion`, `featureVersion`, and `evaluatorVersion`.
@@ -610,20 +666,20 @@ Note: the expanded source inventory is currently enforced in `files.lock.json` b
 - [x] Verify DB run row exists.
 - [x] Verify the run mode is compatible with the locked run manifest.
 - [x] Verify all required value books exist: ML, spread, match O/U, set-win, and first-set O/U.
-- [x] Verify no private raw data is referenced by public static exports.
+- [x] Verify no private raw data is referenced by public static exports, including model-history exports.
 - [x] Keep current May 31 golden snapshot test passing after re-lock.
 
 Note: the snapshot verifier intentionally does not read the run manifest yet. It remains a narrow proof that T0 output did not silently change. `verify-tennis-model-run.mjs` is the wider cartridge/run proof that source locks, input locks, output locks, DB rows, health gates, and value-book coverage agree.
 
 ### Phase 5: Export And UI
 
-- [ ] Update `api/src/scripts/export-published-data.ts` to export tennis model run metadata.
-- [ ] Update public data export so the site can read active tennis stack.
-- [ ] Update `web/src/views/ModelsView.tsx` to show tennis stack/run status.
-- [ ] Update model-history export (`published-data/model-history/index.json` and web public copy) to carry tennis cartridge IDs and run IDs.
-- [ ] Add a tennis-only model-history split/filter while keeping existing MLB rows unchanged.
-- [ ] Add UI styles only as needed.
-- [ ] Keep MLB behavior unchanged.
+- [x] Update `api/src/scripts/export-published-data.ts` to export tennis model run metadata.
+- [x] Update public data export so the site can read active tennis stack.
+- [x] Update `web/src/views/ModelsView.tsx` to show tennis stack/run status.
+- [x] Update model-history export (`published-data/model-history/index.json` and web public copy) to carry tennis cartridge IDs and run IDs.
+- [x] Add a tennis-only model-history split/filter while keeping existing MLB rows unchanged.
+- [x] Add UI styles only as needed.
+- [x] Keep MLB behavior unchanged.
 
 ### Phase 6: Test And Build
 
@@ -632,25 +688,51 @@ Note: the snapshot verifier intentionally does not read the run manifest yet. It
 - [x] Run tennis T0 run verification.
 - [x] Run `npm run data:health:tennis -- --date 2026-05-31 --pregame`.
 - [ ] Run or simulate `npm run data:health:tennis -- --date 2026-05-31 --settled` when postmatch artifacts exist.
-- [ ] Run `tsc`.
-- [ ] Run `npm run build`.
+- [x] Run `tsc`.
+- [x] Run `npm run build`.
 
 ### Phase 7: Postmatch And Backtest Records
 
-- [ ] Define how settled runs are created without mutating the pregame lock.
-- [ ] Store result grades by lane.
-- [ ] Store Kalshi trade-to-sell outcome metrics separately from winner picks.
-- [ ] Store sportsbook ROI by ML, spread, match O/U, first-set O/U, and set-win.
-- [ ] Store bucketed calibration by confidence band, market-implied band, favorite/underdog, ATP/WTA, and round.
-- [ ] Ensure `tennis_model_training_rows` can be tied back to the run/evaluator that produced it.
-- [ ] Do not rely on the legacy replaced `tennis_model_training_rows` table as the sole historical truth.
+- [x] Define how settled runs are created without mutating the pregame prediction snapshot.
+- [x] Create `pipeline/tennis_warehouse_migrations/W1/002_add_model_run_grade_tables.sql`.
+- [x] Create `pipeline/settle-tennis-model-run.mjs`.
+- [x] Add `npm run data:settle:tennis-run`.
+- [x] Store result grades by lane in `tennis_model_run_lane_grades`.
+- [x] Store Kalshi trade-to-sell outcome rows separately from winner picks.
+- [x] Store sportsbook ROI rows by ML, spread, match O/U, first-set O/U, and set-win.
+- [x] Store bucketed calibration tables for settled rows.
+- [x] Tie settlement rows back to `source_run_id` and the locked run/evaluator stack.
+- [x] Do not rely on the legacy replaced `tennis_model_training_rows` table as the sole historical truth.
+- [x] Generate `data-private/model-runs/tennis/T0/2026-05-31/postmatch-grades.json`.
+- [x] Persist May 31 postmatch settlement as pending until results exist.
+- [x] Add test coverage for W1 grade tables and the May 31 pending settlement artifact.
+- [ ] Add ATP/WTA and round-specific calibration buckets after the first settled Phase 7 grading pass.
+- [ ] Run `npm run data:settle:tennis-run -- --date YYYY-MM-DD --model T0 --require-settled` after results import for each completed slate.
 
 ### Phase 8: Deploy Safety
 
-- [ ] If deploying, run the existing two-day deploy rule from README: current date as `/data/current/`, next generated slate under `/data/slates/YYYY-MM-DD/`.
-- [ ] Store deployed URL, timestamp, and static artifact hash in `publish.json`.
-- [ ] Confirm Vercel deploy comes from `web/`, not repo root.
-- [ ] Confirm the site can load model history and the target slate after deploy.
+- [x] If deploying, run the existing two-day deploy rule from README: current date as `/data/current/`, next generated slate under `/data/slates/YYYY-MM-DD/`.
+- [x] Store deployed URL, timestamp, and static artifact hash in `publish.json`.
+- [x] Confirm Vercel deploy comes from `web/`, not repo root.
+- [x] Confirm the site can load model history and the target slate after deploy.
+
+Phase 8 deployment note:
+
+- Deployed `2026-05-31` with `npm run publish:site -- --date 2026-05-31`.
+- Production alias verified: `https://slate-web-static-1.vercel.app`.
+- Deployment URL recorded in `data-private/model-runs/tennis/T0/2026-05-31/publish.json`.
+- No `2026-06-01` slate exists yet, so the two-day public window correctly exported only `2026-05-31`.
+- The deploy script now supports `--dry-run` for build/preflight without writing `publish.json` or pushing to Vercel.
+
+### Phase 9: Cartridge Model Cards
+
+- [x] Add T0 `model_description.json` with key improvements, key metrics, notes, and limitations.
+- [x] Add T0 `MODEL_NOTES.md` for the human-readable cartridge model card.
+- [x] Update T0 manifest with model-description and model-notes paths.
+- [x] Export cartridge model-card metadata through public model history.
+- [x] Show model notes on the Models page.
+- [x] Add test coverage so future tennis cartridges cannot skip the required model-card files.
+- [ ] Require new T1+ cartridges to update their model card before promotion.
 
 ## Estimated Files
 
@@ -660,11 +742,15 @@ Likely source/config files created:
 - `pipeline/warehouse_paths.py`
 - `pipeline/lib/warehouse-paths.mjs`
 - `pipeline/tennis_warehouse_migrations/W1/001_add_model_run_tables.sql`
+- `pipeline/tennis_warehouse_migrations/W1/002_add_model_run_grade_tables.sql`
 - `pipeline/create-tennis-model-run.mjs`
 - `pipeline/lock-tennis-model-run.mjs`
 - `pipeline/verify-tennis-model-run.mjs`
+- `pipeline/settle-tennis-model-run.mjs`
 - `pipeline/tennis_model_cartridges/T0/runner.mjs`
 - `pipeline/tennis_model_cartridges/T0/output-contract.json`
+- `pipeline/tennis_model_cartridges/T0/model_description.json`
+- `pipeline/tennis_model_cartridges/T0/MODEL_NOTES.md`
 - `pipeline/tennis_model_cartridges/F0/manifest.json`
 - `pipeline/tennis_model_cartridges/F0/feature-contract.json`
 - `pipeline/tennis_model_cartridges/E0/manifest.json`
@@ -692,6 +778,7 @@ Likely generated artifacts:
 - `data-private/model-runs/tennis/T0/2026-05-31/calibration.json`
 - `data-private/model-runs/tennis/T0/2026-05-31/backtest.json`
 - `data-private/model-runs/tennis/T0/2026-05-31/grades.json`
+- `data-private/model-runs/tennis/T0/2026-05-31/postmatch-grades.json`
 - `data-private/model-runs/tennis/T0/2026-05-31/health.json`
 - `data-private/model-runs/tennis/T0/2026-05-31/publish.json`
 
@@ -708,8 +795,12 @@ Estimated next-pass source/config touch count: 16-22 files.
 - [x] May 31 T0 run stores health and data-source coverage.
 - [x] May 31 T0 run has an append-only training-row snapshot or explicit training-row hash.
 - [x] May 31 T0 run is represented in the DB.
-- [ ] Model page can show tennis active stack without affecting MLB.
-- [ ] Model history can show tennis model designation and daily run history.
+- [x] T0 has a required machine-readable model card.
+- [x] T0 has required human model notes.
+- [x] Model page can show tennis active stack without affecting MLB.
+- [x] Model history can show tennis model designation and daily run history.
+- [x] Postmatch settlement rows can be stored without overwriting the pregame prediction snapshot.
+- [x] Lane-grade tables exist for ML, spread, match O/U, first-set O/U, set-win, and Kalshi trade-to-sell.
 - [x] Public/static export does not leak private raw data.
 - [x] No tennis model math changes were made.
 - [x] No DB data was deleted.
