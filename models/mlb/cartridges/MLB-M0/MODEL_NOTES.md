@@ -2,7 +2,7 @@
 
 MLB-M0 is the future parent cartridge for MLB predictions.
 
-This shell keeps the current MLB behavior stable while model ownership moves into cartridges. It records the intended ownership boundary before scripts are moved out of the flat `pipeline/` folder.
+This shell keeps the current MLB behavior stable while model ownership moves into cartridges. It records the intended ownership boundary before scripts are moved out of the delegated `pipeline/mlb/` internals.
 
 ## Scope
 
@@ -31,12 +31,14 @@ Implemented from this lesson:
 
 - `performance_index.json` links the settled May 30 run, side board, results journal, and postmortem artifacts from inside MLB-M0.
 - `followups.md` keeps the cartridge-level follow-up rules visible without duplicating the daily postmortem.
-- `M0_log.md` records model/warehouse changes that need backtest proof before they become trusted betting inputs.
+- `MLB-M0_log.md` records model/warehouse changes that need backtest proof before they become trusted betting inputs.
 - The full-game side layer now treats quiet-start, traffic-without-conversion, and quiet-first-five rates as veto/penalty inputs instead of passive warning text.
 
 ## Known Gaps
 
 - MLB-M0 now has a file-based run manifest and verifier under `data-private/model-runs/mlb/MLB-M0/`.
+- Daily MLB refresh, follow-up, and refresh verification commands now enter through `models/mlb/cartridges/MLB-M0/workflows/` wrappers.
+- MLB publish/export commands now enter through `models/mlb/cartridges/MLB-M0/lanes/` wrappers before delegating to `pipeline/mlb/publish/` internals.
 - The run manifest is not yet stored in shared model-run DB tables.
 - The source inventory is still intentionally broad while the MLB pregame chain is split into components.
 - MLB-M0 still delegates most prediction behavior to workflow and publish scripts; moving those internals comes after the May 30 golden checks stay green.

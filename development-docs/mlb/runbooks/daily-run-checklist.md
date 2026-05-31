@@ -154,7 +154,7 @@ npm run data:grade:mlb-props -- --date YYYY-MM-DD --model-name mlb-player-props-
 - Use the Savant splits page for current-season batter context when evaluating prop confidence, especially small-sample hitters, platoon bats, role-pressure bats, and total-bases/HR lanes.
 - Spot-check any prop driven by fewer than 24 current-season PA. It must show a career repeatability story, not just a hot current box score.
 - Treat career stats as a low-weight baseline, not a bet trigger. The useful question is whether current process, role, pitch fit, and recent contact shape make the old profile repeatable today.
-- Log material MLB-M0 model/warehouse changes in `models/mlb/cartridges/MLB-M0/M0_log.md` before treating them as part of the cartridge.
+- Log material MLB-M0 model/warehouse changes in `models/mlb/cartridges/MLB-M0/MLB-M0_log.md` before treating them as part of the cartridge.
 - Check the batter approach proxy on tiny-sample bats:
   - approach/confidence score should be supported by recent Statcast process, not batting average alone.
   - role pressure should be visible when a hitter is fighting for playing time or only getting partial lineup work.

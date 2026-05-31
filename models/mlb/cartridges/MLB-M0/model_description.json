@@ -4,7 +4,7 @@
   "sport": "mlb",
   "name": "MLB-M0 parent baseline",
   "status": "migration-shell",
-  "summary": "Baseline MLB parent cartridge shell. MLB-M0 owns the daily run manifest and closeout health gate while the existing side, first-five, first-inning, prop, HR, market-context, and MLB-RP36 relief inputs are migrated behind stable artifacts.",
+  "summary": "Baseline MLB parent cartridge shell. MLB-M0 owns the daily workflow surface, publish-lane adapters, run manifest, and closeout health gate while the existing side, first-five, first-inning, prop, HR, market-context, and MLB-RP36 relief inputs are migrated behind stable artifacts.",
   "keyImprovements": [
     "Names the current MLB parent model as MLB-M0 so future changes can be compared against a stable baseline.",
     "Keeps MLB-RP36 as a relief addendum consumed by MLB-M0 instead of treating the reliever shadow artifact as a separate parent model.",
@@ -17,7 +17,12 @@
     {
       "label": "Migration status",
       "value": "Run shell",
-      "details": "Prediction behavior is still mostly delegated to workflow/publish scripts, but MLB-M0 owns the run lock and model dashboard identity."
+      "details": "Prediction behavior is still mostly delegated to pipeline internals, but MLB-M0 owns the public workflow entrypoints, publish-lane adapters, run lock, and model dashboard identity."
+    },
+    {
+      "label": "Publish adapters",
+      "value": "9 lanes",
+      "details": "MLB-M0 routes day files, batting impact, lineups, HR, props, sides, veto, training corpus, and history journal exports through cartridge-owned adapters."
     },
     {
       "label": "Relief addendum",
@@ -52,7 +57,8 @@
   ],
   "notes": [
     "MLB-M0 should eventually own the final MLB side, first-five, total, prop, and market-context outputs.",
-    "Current scripts remain in pipeline until a behavior-preserving wrapper and golden test are added.",
+    "Current implementation internals remain in pipeline until a behavior-preserving adapter and golden test are added.",
+    "MLB publish/export package commands should enter through `models/mlb/cartridges/MLB-M0/lanes/` before touching delegated pipeline internals.",
     "Do not promote MLB-RP36 into a standalone parent model; it should feed MLB-M0.",
     "Before a new MLB slate, the prior day must have a results journal plus side prediction/backtest rows so lessons are based on warehouse-settled data.",
     "Quiet-start, traffic-without-conversion, and quiet-first-five risks now suppress full-game side promotion unless another market expression is cleaner.",

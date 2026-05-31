@@ -12,7 +12,7 @@
   "runner": {
     "command": "node models/mlb/cartridges/MLB-M0/runner.mjs",
     "defaultMode": "pregame",
-    "migrationNote": "Temporary cartridge runner delegates to sport-scoped MLB pipeline workflows until MLB-M0 owns the internals."
+    "migrationNote": "MLB-M0 owns the daily workflow entrypoints through cartridge wrappers; those wrappers delegate to sport-scoped pipeline internals until each lane is migrated."
   },
   "cartridgeRoot": "./cartridges",
   "migrationStatus": "shells_started",

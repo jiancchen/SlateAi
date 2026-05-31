@@ -9,12 +9,13 @@ Date: 2026-05-31
 - Added `pipeline/lib/model-cartridge-resolver.mjs` so model readers resolve tennis cartridges from `models/`.
 - Updated tennis run creation and public export model-card loading to read the model-owned cartridge location.
 - Updated the tennis active registry to live in `models/tennis/registry.json`.
-- Created MLB cartridge shells for `MLB-M0`, `MLB-RP36`, and `TEN-E0`.
+- Created MLB cartridge shells for `MLB-M0`, `MLB-RP36`, and `MLB-E0`.
 - Added thin MLB cartridge runners for `MLB-M0` and `MLB-RP36` that delegate to the current legacy pipeline scripts.
 - Added an MLB-RP36 snapshot verifier and confirmed it reproduces the existing 2026-05-30 reliever-shadow artifact exactly.
 - Added an MLB-M0 May 30 golden snapshot target for MLB board outputs: 15 games, 15 side picks, 49 prop picks, 12 HR picks, 30 reliever-shadow teams, and 15 lineup boards.
 - Added file-based MLB-M0 run locking and verification for MLB, covering source locks, input locks, output locks, the MLB-M0 snapshot, and the consumed MLB-RP36 addendum.
-- Routed `data:run:mlb-pregame`, `data:export:mlb-reliever-shadow`, and the MLB refresh workflow through cartridge runners while preserving legacy internals.
+- Routed `data:run:mlb-pregame`, `data:refresh:mlb-live`, `data:close:mlb-day`, `data:run:mlb-followup`, `data:verify:mlb-refresh`, and `data:export:mlb-reliever-shadow` through cartridge runners while preserving legacy internals.
+- Routed MLB-M0 publish/export lanes through cartridge adapters: day files, batting impact, lineups, HR, props, sides, veto artifacts, training corpus, and history journal.
 - Moved MLB pregame and refresh workflow implementations into `pipeline/mlb/workflows/`.
 - Moved the MLB close/follow-up workflow into `pipeline/mlb/workflows/followup.mjs`, and pointed future generated postmortem/follow-up docs into `development-docs/mlb/postmortems/`.
 - Moved MLB refresh verification into `pipeline/mlb/workflows/verify-refresh.mjs`.
@@ -45,11 +46,11 @@ Date: 2026-05-31
 
 ## Intentionally Still Legacy
 
-- MLB prediction behavior still runs through current pipeline logic under sport-scoped workflow/fetcher/publish/warehouse/research folders. MLB-RP36 owns its reliever-shadow exporter, and MLB-M0 now has a run envelope but still delegates prediction internals.
+- MLB prediction behavior still runs through current pipeline logic under sport-scoped workflow/fetcher/publish/warehouse/research folders. MLB-RP36 owns its reliever-shadow exporter, and MLB-M0 now owns the daily workflow surface, publish-lane adapter surface, and run envelope but still delegates prediction internals.
 - `research/` remains as a README-only legacy pointer; the old follow-up and ticket notes now live under `development-docs/`.
 
 ## Next Safe Steps
 
-1. Re-lock or intentionally supersede the May 31 tennis run source lock after this migration checkpoint; strict run verification now reports expected source drift from moved files, while `--allow-source-drift` verifies outputs and coverage.
-2. Continue moving MLB model-owned internals into `models/mlb/cartridges/MLB-M0/` once the run verifier is green for each step.
-3. Promote any remaining compatibility wrappers only after package scripts and run locks are updated in the same checkpoint.
+1. Continue moving MLB model-owned internals into `models/mlb/cartridges/MLB-M0/` once the run verifier is green for each step.
+2. Move implementation code lane by lane only after the adapter path is covered by the May 30/May 31 golden snapshots.
+3. Start with side/value outputs and `web/src/lib/sports-model.js`, because those are the most model-owned and least like generic publish plumbing.
