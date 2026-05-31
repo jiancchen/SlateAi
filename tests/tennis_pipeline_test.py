@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import sqlite3
+import subprocess
 import tempfile
 import unittest
 from pathlib import Path
@@ -161,6 +162,35 @@ class TennisWarehouseImportTest(unittest.TestCase):
         self.assertIsNotNone(total_row)
         self.assertEqual(total_row.get("selection"), "No bet")
         self.assertIsNone(total_row.get("modelPct"))
+
+    def test_t0_may31_model_snapshot_stays_locked(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        snapshot_path = (
+            root
+            / "data-private"
+            / "model-cartridges"
+            / "tennis"
+            / "T0"
+            / "golden"
+            / "2026-05-31.snapshot.json"
+        )
+        if not snapshot_path.exists():
+            self.skipTest("T0 May 31 snapshot has not been generated")
+        result = subprocess.run(
+            [
+                "node",
+                "pipeline/verify-tennis-model-snapshot.mjs",
+                "--date",
+                "2026-05-31",
+                "--model",
+                "T0",
+            ],
+            cwd=root,
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        self.assertEqual(result.returncode, 0, msg=result.stdout + result.stderr)
 
 
 if __name__ == "__main__":

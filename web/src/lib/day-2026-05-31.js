@@ -4620,7 +4620,15 @@ const buildGame = (raw) => {
 
 const matches = rawTennisGames.map(buildGame)
 
-export const slateMeta = { title: 'May 31, 2026 Tennis Desk', date: 'May 31, 2026', isoDate: '2026-05-31', timeZone: 'America/Los_Angeles', subtitle: 'Singles-only Roland Garros main-draw slate with weakness-edge, game-flow gates, and sportsbook/market lines where captured.', notes: ['No doubles included.', 'FanDuel ML, game handicap, and total-games lines are attached where the sportsbook board exposes a matching singles event.', 'May 31, 2026 uses live rank, clay record, opponent-adjusted recent form, and warehouse service rows where joined.'] }
+export const tennisModelCartridge = {
+  "id": "T0",
+  "sport": "tennis",
+  "label": "T0 tennis baseline",
+  "status": "baseline",
+  "entrypoint": "pipeline/generate-tennis-day-module.mjs --model T0",
+  "manifestPath": "pipeline/tennis_model_cartridges/T0/manifest.json"
+}
+export const slateMeta = { title: 'May 31, 2026 Tennis Desk', date: 'May 31, 2026', isoDate: '2026-05-31', timeZone: 'America/Los_Angeles', modelCartridge: tennisModelCartridge, subtitle: 'Singles-only Roland Garros main-draw slate with weakness-edge, game-flow gates, and sportsbook/market lines where captured.', notes: ['No doubles included.', 'FanDuel ML, game handicap, and total-games lines are attached where the sportsbook board exposes a matching singles event.', 'May 31, 2026 uses live rank, clay record, opponent-adjusted recent form, and warehouse service rows where joined.'] }
 export const filters = ['All', 'Tennis']
 export const oddsMeta = { provider: 'FanDuel Sportsbook + Tennis warehouse model', snapshot: 'May 31, 2026 Roland Garros desk', note: 'FanDuel lines are stored for priced matches; very expensive favorites are marked as low-payout or pass-first instead of automatic bets.' }
 export const sources = [{ label: 'ESPN tennis scoreboard', url: 'https://www.espn.com/tennis/scoreboard/_/date/20260531' }, { label: 'Live Tennis rankings warehouse', url: 'https://live-tennis.eu/' }, { label: 'FanDuel sportsbook tennis', url: 'https://sportsbook.fanduel.com/tennis' }]
