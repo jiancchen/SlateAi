@@ -168,7 +168,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "Framber Valdez",
         "line": 5.5,
-        "overPrice": 100,
+        "overPrice": 116,
         "underPrice": -132
       },
       "recentForm": {
@@ -368,7 +368,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "Anthony Kay",
         "line": 4.5,
-        "overPrice": 106,
+        "overPrice": 114,
         "underPrice": -130
       },
       "recentForm": {
@@ -407,8 +407,8 @@ export const rawGames = [
       }
     },
     "spread": "+1.5 -190 / -1.5 +165",
-    "total": "o7.5 -115 / u8 -110",
-    "moneyline": "Tigers +114 / White Sox -130",
+    "total": "o7.5 -118 / u8 -110",
+    "moneyline": "Tigers +110 / White Sox -130",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/tigers-vs-white-sox",
     "tierTwoContext": {
@@ -803,13 +803,13 @@ export const rawGames = [
         "away": {
           "playerName": "Framber Valdez",
           "line": 5.5,
-          "overPrice": 100,
+          "overPrice": 116,
           "underPrice": -132
         },
         "home": {
           "playerName": "Anthony Kay",
           "line": 4.5,
-          "overPrice": 106,
+          "overPrice": 114,
           "underPrice": -130
         }
       },
@@ -3099,16 +3099,32 @@ export const rawGames = [
         "overPrice": 106,
         "underPrice": -138
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Trey Yesavage",
+        "windowStarts": 10,
+        "startsSample": 6,
+        "inningsPerStart": 5.33,
+        "earnedRunsPerStart": 1.33,
+        "hitsAllowedPerStart": 4,
+        "homeRunsAllowedPerStart": 0,
+        "walksAllowedPerStart": 1.67,
+        "strikeoutsPerStart": 5.83,
+        "whipLike": 1.06,
+        "shortStartRate": 0.33,
+        "qualityStartRate": 0.33,
+        "runVolatility": 1.8,
+        "homeRunBurstiness": 0,
+        "recent3EarnedRunsDelta": 1
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 6 starts.",
         "expectedInnings": 5.33,
         "daysSinceLastStart": 5,
         "startsLoaded": 6,
-        "shortLeashRisk": 0,
-        "durableRate": 0.5,
+        "shortLeashRisk": 0.33,
+        "durableRate": 0.33,
         "leashScore": null,
         "leashVolatility": null,
         "recent3OutsDelta": null,
@@ -3283,15 +3299,31 @@ export const rawGames = [
         "overPrice": -132,
         "underPrice": 108
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Brandon Young",
+        "windowStarts": 10,
+        "startsSample": 7,
+        "inningsPerStart": 5.19,
+        "earnedRunsPerStart": 2,
+        "hitsAllowedPerStart": 5,
+        "homeRunsAllowedPerStart": 0.71,
+        "walksAllowedPerStart": 2.29,
+        "strikeoutsPerStart": 3.71,
+        "whipLike": 1.4,
+        "shortStartRate": 0.29,
+        "qualityStartRate": 0.29,
+        "runVolatility": 2.95,
+        "homeRunBurstiness": 0.7,
+        "recent3EarnedRunsDelta": -0.67
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 7 starts.",
         "expectedInnings": 5.19,
         "daysSinceLastStart": 6,
         "startsLoaded": 7,
-        "shortLeashRisk": 0.14,
+        "shortLeashRisk": 0.29,
         "durableRate": 0.29,
         "leashScore": null,
         "leashVolatility": null,
@@ -3302,9 +3334,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -184 / -1.5 +160",
-    "total": "o8 -115 / u8 -100",
-    "moneyline": "Blue Jays +112 / Orioles -130",
+    "spread": "+1.5 -180 / -1.5 +160",
+    "total": "o8 -105 / u8 -105",
+    "moneyline": "Blue Jays +112 / Orioles -125",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/blue-jays-vs-orioles",
     "tierTwoContext": {
@@ -5946,8 +5978,30 @@ export const rawGames = [
         }
       },
       "starterThirdTime": {
-        "away": null,
-        "home": null
+        "away": {
+          "pitcherName": "Trey Yesavage",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 4,
+          "thirdTripExposureRate": 0.8,
+          "thirdTripReachedDelta": 0.1,
+          "thirdTripScoringDelta": 0.12,
+          "thirdTripRunDeltaDelta": 0.17,
+          "thirdTripHrDelta": 0,
+          "thirdTimePenaltyIndex": 71.61
+        },
+        "home": {
+          "pitcherName": "Brandon Young",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 5,
+          "thirdTripExposureRate": 1,
+          "thirdTripReachedDelta": -0.01,
+          "thirdTripScoringDelta": 0.03,
+          "thirdTripRunDeltaDelta": -0.03,
+          "thirdTripHrDelta": -0.04,
+          "thirdTimePenaltyIndex": 39.49
+        }
       }
     }
   },
@@ -6358,9 +6412,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +125 / +1.5 -145",
-    "total": "o9 -105 / u9 -105",
-    "moneyline": "Padres -130 / Nationals +115",
+    "spread": "-1.5 +120 / +1.5 -140",
+    "total": "o9 -110 / u9 -110",
+    "moneyline": "Padres -130 / Nationals +118",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/padres-vs-nationals",
     "tierTwoContext": {
@@ -9031,16 +9085,32 @@ export const rawGames = [
         "overPrice": -158,
         "underPrice": 118
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Seth Lugo",
+        "windowStarts": 10,
+        "startsSample": 10,
+        "inningsPerStart": 5.87,
+        "earnedRunsPerStart": 2.7,
+        "hitsAllowedPerStart": 6.2,
+        "homeRunsAllowedPerStart": 0.3,
+        "walksAllowedPerStart": 2.3,
+        "strikeoutsPerStart": 5.1,
+        "whipLike": 1.45,
+        "shortStartRate": 0.1,
+        "qualityStartRate": 0.6,
+        "runVolatility": 1.94,
+        "homeRunBurstiness": 0.82,
+        "recent3EarnedRunsDelta": 0.63
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
-        "expectedInnings": 5.91,
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 10 starts.",
+        "expectedInnings": 5.87,
         "daysSinceLastStart": 6,
         "startsLoaded": 11,
-        "shortLeashRisk": 0,
-        "durableRate": 0.73,
+        "shortLeashRisk": 0.1,
+        "durableRate": 0.6,
         "leashScore": null,
         "leashVolatility": null,
         "recent3OutsDelta": null,
@@ -9215,15 +9285,31 @@ export const rawGames = [
         "overPrice": 138,
         "underPrice": -170
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Kumar Rocker",
+        "windowStarts": 10,
+        "startsSample": 9,
+        "inningsPerStart": 4.7,
+        "earnedRunsPerStart": 2.44,
+        "hitsAllowedPerStart": 4.78,
+        "homeRunsAllowedPerStart": 0.56,
+        "walksAllowedPerStart": 2.11,
+        "strikeoutsPerStart": 3.89,
+        "whipLike": 1.46,
+        "shortStartRate": 0.33,
+        "qualityStartRate": 0.22,
+        "runVolatility": 1.42,
+        "homeRunBurstiness": 0.8,
+        "recent3EarnedRunsDelta": -0.11
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 9 starts.",
         "expectedInnings": 4.7,
         "daysSinceLastStart": 5,
         "startsLoaded": 9,
-        "shortLeashRisk": 0.22,
+        "shortLeashRisk": 0.33,
         "durableRate": 0.22,
         "leashScore": null,
         "leashVolatility": null,
@@ -9234,9 +9320,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +168 / +1.5 -186",
-    "total": "o7.5 -112 / u7.5 -100",
-    "moneyline": "Royals even / Rangers -115",
+    "spread": "+1.5 -220 / +1.5 -190",
+    "total": "o7.5 -114 / u7.5 -105",
+    "moneyline": "Royals -100 / Rangers -115",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/royals-vs-rangers",
     "tierTwoContext": {
@@ -11700,8 +11786,30 @@ export const rawGames = [
         }
       },
       "starterThirdTime": {
-        "away": null,
-        "home": null
+        "away": {
+          "pitcherName": "Seth Lugo",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 5,
+          "thirdTripExposureRate": 1,
+          "thirdTripReachedDelta": 0.08,
+          "thirdTripScoringDelta": 0,
+          "thirdTripRunDeltaDelta": 0.07,
+          "thirdTripHrDelta": 0.02,
+          "thirdTimePenaltyIndex": 52.16
+        },
+        "home": {
+          "pitcherName": "Kumar Rocker",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 3,
+          "thirdTripExposureRate": 0.6,
+          "thirdTripReachedDelta": -0.25,
+          "thirdTripScoringDelta": -0.04,
+          "thirdTripRunDeltaDelta": -0.08,
+          "thirdTripHrDelta": -0.04,
+          "thirdTimePenaltyIndex": 28
+        }
       }
     }
   },
@@ -11717,7 +11825,7 @@ export const rawGames = [
       "fullName": "Bailey Ober",
       "pitchHand": "R",
       "wins": 6,
-      "losses": 2,
+      "losses": 3,
       "era": "4.59",
       "strikeOuts": 46,
       "inningsPitched": "66.2",
@@ -11872,23 +11980,39 @@ export const rawGames = [
       ],
       "opponentHistoryThisSeason": [],
       "strikeoutMarket": null,
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Bailey Ober",
+        "windowStarts": 10,
+        "startsSample": 10,
+        "inningsPerStart": 5.8,
+        "earnedRunsPerStart": 2.4,
+        "hitsAllowedPerStart": 4.7,
+        "homeRunsAllowedPerStart": 0.8,
+        "walksAllowedPerStart": 1.6,
+        "strikeoutsPerStart": 4.2,
+        "whipLike": 1.09,
+        "shortStartRate": 0.1,
+        "qualityStartRate": 0.4,
+        "runVolatility": 1.5,
+        "homeRunBurstiness": 1.28,
+        "recent3EarnedRunsDelta": -0.07
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
-        "expectedInnings": 5.64,
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 10 starts.",
+        "expectedInnings": 5.8,
         "daysSinceLastStart": 6,
         "startsLoaded": 11,
-        "shortLeashRisk": 0,
-        "durableRate": 0.45,
+        "shortLeashRisk": 0.1,
+        "durableRate": 0.4,
         "leashScore": null,
         "leashVolatility": null,
         "recent3OutsDelta": null,
         "fivePlusInningRate": null,
         "sixPlusInningRate": null,
         "ninetyPitchRate": null,
-        "workloadLabel": "5-inning lane"
+        "workloadLabel": "Workhorse lane"
       }
     },
     "homePitcher": {
@@ -12056,16 +12180,32 @@ export const rawGames = [
         "overPrice": 102,
         "underPrice": -105
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Mitch Keller",
+        "windowStarts": 10,
+        "startsSample": 10,
+        "inningsPerStart": 5.83,
+        "earnedRunsPerStart": 2.6,
+        "hitsAllowedPerStart": 4.7,
+        "homeRunsAllowedPerStart": 0.4,
+        "walksAllowedPerStart": 1.9,
+        "strikeoutsPerStart": 4.3,
+        "whipLike": 1.13,
+        "shortStartRate": 0.1,
+        "qualityStartRate": 0.6,
+        "runVolatility": 1.8,
+        "homeRunBurstiness": 0.76,
+        "recent3EarnedRunsDelta": 1.07
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
-        "expectedInnings": 5.85,
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 10 starts.",
+        "expectedInnings": 5.83,
         "daysSinceLastStart": 6,
         "startsLoaded": 11,
-        "shortLeashRisk": 0,
-        "durableRate": 0.64,
+        "shortLeashRisk": 0.1,
+        "durableRate": 0.6,
         "leashScore": null,
         "leashVolatility": null,
         "recent3OutsDelta": null,
@@ -12075,8 +12215,8 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -162 / -1.5 +145",
-    "total": "o7.5 -115 / u7.5 -100",
+    "spread": "+1.5 -162 / -1.5 +142",
+    "total": "o7.5 -115 / u7.5 -105",
     "moneyline": "Twins +135 / Pirates -155",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/twins-vs-pirates",
@@ -14544,8 +14684,30 @@ export const rawGames = [
         }
       },
       "starterThirdTime": {
-        "away": null,
-        "home": null
+        "away": {
+          "pitcherName": "Bailey Ober",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 5,
+          "thirdTripExposureRate": 1,
+          "thirdTripReachedDelta": -0.08,
+          "thirdTripScoringDelta": -0.02,
+          "thirdTripRunDeltaDelta": -0.05,
+          "thirdTripHrDelta": -0.02,
+          "thirdTimePenaltyIndex": 36
+        },
+        "home": {
+          "pitcherName": "Mitch Keller",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 5,
+          "thirdTripExposureRate": 1,
+          "thirdTripReachedDelta": -0.01,
+          "thirdTripScoringDelta": -0.02,
+          "thirdTripRunDeltaDelta": 0.03,
+          "thirdTripHrDelta": 0.01,
+          "thirdTimePenaltyIndex": 40.17
+        }
       }
     }
   },
@@ -14560,7 +14722,7 @@ export const rawGames = [
       "id": 672282,
       "fullName": "Reid Detmers",
       "pitchHand": "L",
-      "wins": 1,
+      "wins": 2,
       "losses": 5,
       "era": "4.63",
       "strikeOuts": 82,
@@ -14721,23 +14883,39 @@ export const rawGames = [
         "overPrice": -104,
         "underPrice": 100
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Reid Detmers",
+        "windowStarts": 10,
+        "startsSample": 10,
+        "inningsPerStart": 5.83,
+        "earnedRunsPerStart": 2.9,
+        "hitsAllowedPerStart": 4.7,
+        "homeRunsAllowedPerStart": 0.5,
+        "walksAllowedPerStart": 1.9,
+        "strikeoutsPerStart": 6.6,
+        "whipLike": 1.13,
+        "shortStartRate": 0.2,
+        "qualityStartRate": 0.4,
+        "runVolatility": 2.32,
+        "homeRunBurstiness": 0.67,
+        "recent3EarnedRunsDelta": 0.77
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
-        "expectedInnings": 5.73,
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 10 starts.",
+        "expectedInnings": 5.83,
         "daysSinceLastStart": 6,
         "startsLoaded": 11,
-        "shortLeashRisk": 0.09,
-        "durableRate": 0.45,
+        "shortLeashRisk": 0.2,
+        "durableRate": 0.4,
         "leashScore": null,
         "leashVolatility": null,
         "recent3OutsDelta": null,
         "fivePlusInningRate": null,
         "sixPlusInningRate": null,
         "ninetyPitchRate": null,
-        "workloadLabel": "5-inning lane"
+        "workloadLabel": "Workhorse lane"
       }
     },
     "homePitcher": {
@@ -14745,7 +14923,7 @@ export const rawGames = [
       "fullName": "Drew Rasmussen",
       "pitchHand": "R",
       "wins": 4,
-      "losses": 1,
+      "losses": 2,
       "era": "3.36",
       "strikeOuts": 55,
       "inningsPitched": "59.0",
@@ -14905,11 +15083,27 @@ export const rawGames = [
         "overPrice": -124,
         "underPrice": 112
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Drew Rasmussen",
+        "windowStarts": 10,
+        "startsSample": 10,
+        "inningsPerStart": 5.5,
+        "earnedRunsPerStart": 1.7,
+        "hitsAllowedPerStart": 4.4,
+        "homeRunsAllowedPerStart": 0.7,
+        "walksAllowedPerStart": 1,
+        "strikeoutsPerStart": 5.1,
+        "whipLike": 0.98,
+        "shortStartRate": 0.1,
+        "qualityStartRate": 0.5,
+        "runVolatility": 1.3,
+        "homeRunBurstiness": 0.64,
+        "recent3EarnedRunsDelta": -0.03
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 10 starts.",
         "expectedInnings": 5.5,
         "daysSinceLastStart": 6,
         "startsLoaded": 10,
@@ -14924,9 +15118,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -125 / -1.5 +115",
-    "total": "o8 -100 / u8 -110",
-    "moneyline": "Angels +176 / Rays -190",
+    "spread": "+1.5 -132 / -1.5 +115",
+    "total": "o8 -110 / u8 -110",
+    "moneyline": "Angels +166 / Rays -190",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/angels-vs-rays",
     "tierTwoContext": {
@@ -17410,8 +17604,30 @@ export const rawGames = [
         }
       },
       "starterThirdTime": {
-        "away": null,
-        "home": null
+        "away": {
+          "pitcherName": "Reid Detmers",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 5,
+          "thirdTripExposureRate": 1,
+          "thirdTripReachedDelta": 0.09,
+          "thirdTripScoringDelta": -0.03,
+          "thirdTripRunDeltaDelta": -0.06,
+          "thirdTripHrDelta": -0.02,
+          "thirdTimePenaltyIndex": 44.88
+        },
+        "home": {
+          "pitcherName": "Drew Rasmussen",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 5,
+          "thirdTripExposureRate": 1,
+          "thirdTripReachedDelta": 0.02,
+          "thirdTripScoringDelta": 0,
+          "thirdTripRunDeltaDelta": 0.01,
+          "thirdTripHrDelta": -0.02,
+          "thirdTimePenaltyIndex": 39.06
+        }
       }
     }
   },
@@ -17427,7 +17643,7 @@ export const rawGames = [
       "fullName": "Brandon Sproat",
       "pitchHand": "R",
       "wins": 1,
-      "losses": 3,
+      "losses": 4,
       "era": "6.24",
       "strikeOuts": 52,
       "inningsPitched": "49.0",
@@ -17587,16 +17803,32 @@ export const rawGames = [
         "overPrice": -136,
         "underPrice": 102
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Brandon Sproat",
+        "windowStarts": 10,
+        "startsSample": 9,
+        "inningsPerStart": 4.15,
+        "earnedRunsPerStart": 2.67,
+        "hitsAllowedPerStart": 3.78,
+        "homeRunsAllowedPerStart": 0.89,
+        "walksAllowedPerStart": 2.33,
+        "strikeoutsPerStart": 4.56,
+        "whipLike": 1.47,
+        "shortStartRate": 0.67,
+        "qualityStartRate": 0.11,
+        "runVolatility": 2.05,
+        "homeRunBurstiness": 0.99,
+        "recent3EarnedRunsDelta": 0.33
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
-        "expectedInnings": 4.67,
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 9 starts.",
+        "expectedInnings": 4.15,
         "daysSinceLastStart": 6,
         "startsLoaded": 8,
-        "shortLeashRisk": 0.13,
-        "durableRate": 0.13,
+        "shortLeashRisk": 0.67,
+        "durableRate": 0.11,
         "leashScore": null,
         "leashVolatility": null,
         "recent3OutsDelta": null,
@@ -17610,7 +17842,7 @@ export const rawGames = [
       "id": 663567,
       "fullName": "Peter Lambert",
       "pitchHand": "R",
-      "wins": 3,
+      "wins": 4,
       "losses": 4,
       "era": "3.77",
       "strikeOuts": 43,
@@ -17771,16 +18003,32 @@ export const rawGames = [
         "overPrice": 124,
         "underPrice": -140
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Peter Lambert",
+        "windowStarts": 10,
+        "startsSample": 7,
+        "inningsPerStart": 5.76,
+        "earnedRunsPerStart": 2.43,
+        "hitsAllowedPerStart": 4.14,
+        "homeRunsAllowedPerStart": 0.29,
+        "walksAllowedPerStart": 2.57,
+        "strikeoutsPerStart": 5.71,
+        "whipLike": 1.17,
+        "shortStartRate": 0.14,
+        "qualityStartRate": 0.43,
+        "runVolatility": 1.76,
+        "homeRunBurstiness": 0.83,
+        "recent3EarnedRunsDelta": 1.24
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 7 starts.",
         "expectedInnings": 5.76,
         "daysSinceLastStart": 6,
         "startsLoaded": 7,
-        "shortLeashRisk": 0,
-        "durableRate": 0.57,
+        "shortLeashRisk": 0.14,
+        "durableRate": 0.43,
         "leashScore": null,
         "leashVolatility": null,
         "recent3OutsDelta": null,
@@ -17790,9 +18038,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 -105 / +1.5 -113",
-    "total": "o7.5 -110 / u8 -125",
-    "moneyline": "Brewers -180 / Astros +158",
+    "spread": "-1.5 -105 / +1.5 -114",
+    "total": "o7.5 -110 / u7.5 -105",
+    "moneyline": "Brewers -180 / Astros +160",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/brewers-vs-astros",
     "tierTwoContext": {
@@ -20272,8 +20520,30 @@ export const rawGames = [
         }
       },
       "starterThirdTime": {
-        "away": null,
-        "home": null
+        "away": {
+          "pitcherName": "Brandon Sproat",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 3,
+          "thirdTripExposureRate": 0.6,
+          "thirdTripReachedDelta": 0.2,
+          "thirdTripScoringDelta": 0.15,
+          "thirdTripRunDeltaDelta": 0.21,
+          "thirdTripHrDelta": 0.08,
+          "thirdTimePenaltyIndex": 94.36
+        },
+        "home": {
+          "pitcherName": "Peter Lambert",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 4,
+          "thirdTripExposureRate": 0.8,
+          "thirdTripReachedDelta": -0.12,
+          "thirdTripScoringDelta": -0.09,
+          "thirdTripRunDeltaDelta": -0.1,
+          "thirdTripHrDelta": -0.02,
+          "thirdTimePenaltyIndex": 32
+        }
       }
     }
   },
@@ -20372,11 +20642,27 @@ export const rawGames = [
         "overPrice": -118,
         "underPrice": -112
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Tyler Phillips",
+        "windowStarts": 3,
+        "startsSample": 1,
+        "inningsPerStart": 3.67,
+        "earnedRunsPerStart": 0,
+        "hitsAllowedPerStart": 2,
+        "homeRunsAllowedPerStart": 0,
+        "walksAllowedPerStart": 2,
+        "strikeoutsPerStart": 4,
+        "whipLike": 1.09,
+        "shortStartRate": 1,
+        "qualityStartRate": 0,
+        "runVolatility": 0,
+        "homeRunBurstiness": 0,
+        "recent3EarnedRunsDelta": 0
+      },
       "usageContext": {
         "status": "tiny-sample",
-        "label": "Tiny MLB sample",
-        "note": "Only 2 MLB starts are loaded, so the board should assume a shorter leash and higher variance.",
+        "label": "Tiny recent sample",
+        "note": "Only 1 recent MLB start are in the rolling sample, so the form read is still fragile.",
         "expectedInnings": 3.67,
         "daysSinceLastStart": 6,
         "startsLoaded": 1,
@@ -20583,15 +20869,31 @@ export const rawGames = [
         "overPrice": 118,
         "underPrice": -134
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Christian Scott",
+        "windowStarts": 10,
+        "startsSample": 6,
+        "inningsPerStart": 4.22,
+        "earnedRunsPerStart": 1.5,
+        "hitsAllowedPerStart": 3.5,
+        "homeRunsAllowedPerStart": 0.17,
+        "walksAllowedPerStart": 2.33,
+        "strikeoutsPerStart": 5,
+        "whipLike": 1.38,
+        "shortStartRate": 0.67,
+        "qualityStartRate": 0,
+        "runVolatility": 1.11,
+        "homeRunBurstiness": 0.37,
+        "recent3EarnedRunsDelta": 0.17
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 6 starts.",
         "expectedInnings": 4.22,
         "daysSinceLastStart": 6,
         "startsLoaded": 6,
-        "shortLeashRisk": 0.17,
+        "shortLeashRisk": 0.67,
         "durableRate": 0,
         "leashScore": null,
         "leashVolatility": null,
@@ -20602,9 +20904,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -154 / -1.5 +133",
+    "spread": "+1.5 -154 / -1.5 +135",
     "total": "o7.5 -105 / u7.5 -110",
-    "moneyline": "Marlins +146 / Mets -165",
+    "moneyline": "Marlins +146 / Mets -163",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/marlins-vs-mets",
     "tierTwoContext": {
@@ -23583,7 +23885,18 @@ export const rawGames = [
       },
       "starterThirdTime": {
         "away": null,
-        "home": null
+        "home": {
+          "pitcherName": "Christian Scott",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 5,
+          "thirdTripExposureRate": 1,
+          "thirdTripReachedDelta": -0.05,
+          "thirdTripScoringDelta": -0.07,
+          "thirdTripRunDeltaDelta": -0.1,
+          "thirdTripHrDelta": -0.01,
+          "thirdTimePenaltyIndex": 36
+        }
       }
     }
   },
@@ -23598,7 +23911,7 @@ export const rawGames = [
       "id": 543243,
       "fullName": "Sonny Gray",
       "pitchHand": "R",
-      "wins": 5,
+      "wins": 6,
       "losses": 1,
       "era": "3.06",
       "strikeOuts": 41,
@@ -23759,15 +24072,31 @@ export const rawGames = [
         "overPrice": -154,
         "underPrice": 118
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Sonny Gray",
+        "windowStarts": 10,
+        "startsSample": 9,
+        "inningsPerStart": 4.89,
+        "earnedRunsPerStart": 1.78,
+        "hitsAllowedPerStart": 4.67,
+        "homeRunsAllowedPerStart": 0.44,
+        "walksAllowedPerStart": 1.22,
+        "strikeoutsPerStart": 3.78,
+        "whipLike": 1.2,
+        "shortStartRate": 0.44,
+        "qualityStartRate": 0.44,
+        "runVolatility": 1.66,
+        "homeRunBurstiness": 0.68,
+        "recent3EarnedRunsDelta": -0.11
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 9 starts.",
         "expectedInnings": 4.89,
         "daysSinceLastStart": 6,
         "startsLoaded": 9,
-        "shortLeashRisk": 0.11,
+        "shortLeashRisk": 0.44,
         "durableRate": 0.44,
         "leashScore": null,
         "leashVolatility": null,
@@ -23943,16 +24272,32 @@ export const rawGames = [
         "overPrice": 110,
         "underPrice": -134
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Parker Messick",
+        "windowStarts": 10,
+        "startsSample": 10,
+        "inningsPerStart": 5.83,
+        "earnedRunsPerStart": 1.6,
+        "hitsAllowedPerStart": 4.3,
+        "homeRunsAllowedPerStart": 0.6,
+        "walksAllowedPerStart": 1.9,
+        "strikeoutsPerStart": 6.5,
+        "whipLike": 1.06,
+        "shortStartRate": 0,
+        "qualityStartRate": 0.3,
+        "runVolatility": 1.27,
+        "homeRunBurstiness": 0.98,
+        "recent3EarnedRunsDelta": -0.27
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
-        "expectedInnings": 5.85,
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 10 starts.",
+        "expectedInnings": 5.83,
         "daysSinceLastStart": 6,
         "startsLoaded": 11,
         "shortLeashRisk": 0,
-        "durableRate": 0.36,
+        "durableRate": 0.3,
         "leashScore": null,
         "leashVolatility": null,
         "recent3OutsDelta": null,
@@ -23962,9 +24307,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "-1.5 +152 / +1.5 -178",
-    "total": "o7.5 -105 / u7.5 -110",
-    "moneyline": "Red Sox -110 / Guardians -100",
+    "spread": "-1.5 +150 / +1.5 -170",
+    "total": "o7.5 -102 / u7.5 -114",
+    "moneyline": "Red Sox -114 / Guardians -100",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/red-sox-vs-guardians",
     "tierTwoContext": {
@@ -26432,8 +26777,30 @@ export const rawGames = [
         }
       },
       "starterThirdTime": {
-        "away": null,
-        "home": null
+        "away": {
+          "pitcherName": "Sonny Gray",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 4,
+          "thirdTripExposureRate": 0.8,
+          "thirdTripReachedDelta": -0.12,
+          "thirdTripScoringDelta": 0.03,
+          "thirdTripRunDeltaDelta": 0.03,
+          "thirdTripHrDelta": -0.01,
+          "thirdTimePenaltyIndex": 38.72
+        },
+        "home": {
+          "pitcherName": "Parker Messick",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 5,
+          "thirdTripExposureRate": 1,
+          "thirdTripReachedDelta": 0.08,
+          "thirdTripScoringDelta": 0.02,
+          "thirdTripRunDeltaDelta": -0.01,
+          "thirdTripHrDelta": -0.06,
+          "thirdTimePenaltyIndex": 46.99
+        }
       }
     }
   },
@@ -26448,16 +26815,16 @@ export const rawGames = [
       "id": 527048,
       "fullName": "Martín Pérez",
       "pitchHand": "L",
-      "wins": 2,
+      "wins": 3,
       "losses": 3,
-      "era": "2.70",
-      "strikeOuts": 40,
-      "inningsPitched": "46.2",
-      "hitsAllowed": 33,
-      "walks": 15,
-      "homeRunsAllowed": 5,
-      "whip": "1.03",
-      "gamesStarted": 7,
+      "era": "2.79",
+      "strikeOuts": 42,
+      "inningsPitched": "51.2",
+      "hitsAllowed": 37,
+      "walks": 18,
+      "homeRunsAllowed": 6,
+      "whip": "1.06",
+      "gamesStarted": 8,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 527048,
@@ -26609,11 +26976,27 @@ export const rawGames = [
         "overPrice": -114,
         "underPrice": -114
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Martín Pérez",
+        "windowStarts": 10,
+        "startsSample": 7,
+        "inningsPerStart": 5.33,
+        "earnedRunsPerStart": 1.71,
+        "hitsAllowedPerStart": 4,
+        "homeRunsAllowedPerStart": 0.43,
+        "walksAllowedPerStart": 2.14,
+        "strikeoutsPerStart": 4.14,
+        "whipLike": 1.15,
+        "shortStartRate": 0,
+        "qualityStartRate": 0.14,
+        "runVolatility": 1.58,
+        "homeRunBurstiness": 0.73,
+        "recent3EarnedRunsDelta": 0.62
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 7 starts.",
         "expectedInnings": 5.33,
         "daysSinceLastStart": 6,
         "startsLoaded": 7,
@@ -26633,15 +27016,15 @@ export const rawGames = [
       "fullName": "Brady Singer",
       "pitchHand": "R",
       "wins": 2,
-      "losses": 4,
-      "era": "6.26",
-      "strikeOuts": 34,
-      "inningsPitched": "46.0",
-      "hitsAllowed": 66,
-      "walks": 12,
-      "homeRunsAllowed": 14,
-      "whip": "1.70",
-      "gamesStarted": 10,
+      "losses": 5,
+      "era": "6.18",
+      "strikeOuts": 36,
+      "inningsPitched": "51.0",
+      "hitsAllowed": 70,
+      "walks": 16,
+      "homeRunsAllowed": 16,
+      "whip": "1.69",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 663903,
@@ -26790,19 +27173,35 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "Brady Singer",
         "line": 4.5,
-        "overPrice": 110,
+        "overPrice": 114,
         "underPrice": -134
       },
-      "recentForm": null,
+      "recentForm": {
+        "pitcherName": "Brady Singer",
+        "windowStarts": 10,
+        "startsSample": 10,
+        "inningsPerStart": 4.6,
+        "earnedRunsPerStart": 3.2,
+        "hitsAllowedPerStart": 6.6,
+        "homeRunsAllowedPerStart": 1.4,
+        "walksAllowedPerStart": 1.2,
+        "strikeoutsPerStart": 3.4,
+        "whipLike": 1.7,
+        "shortStartRate": 0.5,
+        "qualityStartRate": 0.2,
+        "runVolatility": 1.42,
+        "homeRunBurstiness": 1.95,
+        "recent3EarnedRunsDelta": 0.8
+      },
       "usageContext": {
-        "status": "season-only",
-        "label": "Season-only form",
-        "note": "Season line is loaded, but the current rolling recent-start sample did not clear the filter on this pass.",
+        "status": "loaded",
+        "label": "Established starter",
+        "note": "Recent MLB form is loaded across 10 starts.",
         "expectedInnings": 4.6,
         "daysSinceLastStart": 13,
         "startsLoaded": 10,
-        "shortLeashRisk": 0.3,
-        "durableRate": 0.3,
+        "shortLeashRisk": 0.5,
+        "durableRate": 0.2,
         "leashScore": null,
         "leashVolatility": null,
         "recent3OutsDelta": null,
@@ -26812,9 +27211,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +128 / +1.5 -140",
-    "total": "o9.5 -106 / u9.5 -110",
-    "moneyline": "Braves -120 / Reds +115",
+    "spread": "-1.5 +128 / +1.5 -130",
+    "total": "o8.5 -114 / u8.5 -105",
+    "moneyline": "Braves -126 / Reds +115",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/braves-vs-reds",
     "tierTwoContext": {
@@ -27215,7 +27614,7 @@ export const rawGames = [
         "home": {
           "playerName": "Brady Singer",
           "line": 4.5,
-          "overPrice": 110,
+          "overPrice": 114,
           "underPrice": -134
         }
       },
@@ -29294,8 +29693,30 @@ export const rawGames = [
         }
       },
       "starterThirdTime": {
-        "away": null,
-        "home": null
+        "away": {
+          "pitcherName": "Martín Pérez",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 5,
+          "thirdTripExposureRate": 1,
+          "thirdTripReachedDelta": -0.02,
+          "thirdTripScoringDelta": -0.01,
+          "thirdTripRunDeltaDelta": -0.03,
+          "thirdTripHrDelta": 0.03,
+          "thirdTimePenaltyIndex": 39.67
+        },
+        "home": {
+          "pitcherName": "Brady Singer",
+          "windowStarts": 5,
+          "startsSample": 5,
+          "startsWithThirdTrip": 4,
+          "thirdTripExposureRate": 0.8,
+          "thirdTripReachedDelta": -0.22,
+          "thirdTripScoringDelta": -0.17,
+          "thirdTripRunDeltaDelta": -0.2,
+          "thirdTripHrDelta": -0.12,
+          "thirdTimePenaltyIndex": 32
+        }
       }
     }
   },
@@ -29312,14 +29733,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 1,
       "losses": 2,
-      "era": "2.01",
-      "strikeOuts": 47,
-      "inningsPitched": "44.2",
-      "hitsAllowed": 30,
-      "walks": 14,
+      "era": "1.92",
+      "strikeOuts": 53,
+      "inningsPitched": "51.2",
+      "hitsAllowed": 33,
+      "walks": 15,
       "homeRunsAllowed": 1,
-      "whip": "0.99",
-      "gamesStarted": 4,
+      "whip": "0.93",
+      "gamesStarted": 5,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 676962,
@@ -29443,7 +29864,7 @@ export const rawGames = [
         "playerName": "Ben Brown",
         "line": 4.5,
         "overPrice": -136,
-        "underPrice": 116
+        "underPrice": 122
       },
       "recentForm": null,
       "usageContext": {
@@ -29470,14 +29891,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 5,
       "losses": 3,
-      "era": "4.44",
-      "strikeOuts": 42,
-      "inningsPitched": "50.2",
-      "hitsAllowed": 58,
+      "era": "4.25",
+      "strikeOuts": 46,
+      "inningsPitched": "55.0",
+      "hitsAllowed": 64,
       "walks": 22,
       "homeRunsAllowed": 8,
-      "whip": "1.58",
-      "gamesStarted": 10,
+      "whip": "1.56",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 681517,
@@ -29648,9 +30069,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +130 / +1.5 -150",
-    "total": "o8 even / u8 -110",
-    "moneyline": "Cubs -130 / Cardinals +115",
+    "spread": "-1.5 +140 / +1.5 -165",
+    "total": "o8.5 -118 / u8.5 even",
+    "moneyline": "Cubs -115 / Cardinals -102",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/cubs-vs-cardinals",
     "tierTwoContext": {
@@ -30046,7 +30467,7 @@ export const rawGames = [
           "playerName": "Ben Brown",
           "line": 4.5,
           "overPrice": -136,
-          "underPrice": 116
+          "underPrice": 122
         },
         "home": {
           "playerName": "Kyle Leahy",
@@ -32144,14 +32565,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 2,
       "losses": 4,
-      "era": "5.30",
-      "strikeOuts": 31,
-      "inningsPitched": "52.2",
-      "hitsAllowed": 59,
-      "walks": 19,
+      "era": "5.34",
+      "strikeOuts": 34,
+      "inningsPitched": "55.2",
+      "hitsAllowed": 63,
+      "walks": 21,
       "homeRunsAllowed": 8,
-      "whip": "1.48",
-      "gamesStarted": 10,
+      "whip": "1.51",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 605288,
@@ -32328,14 +32749,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 1,
       "losses": 1,
-      "era": "6.30",
+      "era": "5.48",
       "strikeOuts": 17,
-      "inningsPitched": "20.0",
-      "hitsAllowed": 22,
+      "inningsPitched": "23.0",
+      "hitsAllowed": 24,
       "walks": 8,
       "homeRunsAllowed": 5,
-      "whip": "1.50",
-      "gamesStarted": 5,
+      "whip": "1.39",
+      "gamesStarted": 6,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 663372,
@@ -32481,7 +32902,12 @@ export const rawGames = [
         }
       ],
       "opponentHistoryThisSeason": [],
-      "strikeoutMarket": null,
+      "strikeoutMarket": {
+        "playerName": "Ryan Feltner",
+        "line": 3.5,
+        "overPrice": 104,
+        "underPrice": -128
+      },
       "recentForm": null,
       "usageContext": {
         "status": "long-layoff",
@@ -32501,9 +32927,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "-1.5 +136 / +1.5 -150",
-    "total": "o11 -110 / u11 -105",
-    "moneyline": "Giants -110 / Rockies -101",
+    "spread": "-1.5 +128 / +1.5 -140",
+    "total": "o10.5 -122 / u11 -112",
+    "moneyline": "Giants -118 / Rockies +110",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/giants-vs-rockies",
     "tierTwoContext": {
@@ -32901,7 +33327,12 @@ export const rawGames = [
           "overPrice": 104,
           "underPrice": -138
         },
-        "home": null
+        "home": {
+          "playerName": "Ryan Feltner",
+          "line": 3.5,
+          "overPrice": 104,
+          "underPrice": -128
+        }
       },
       "seriesEarlyPhase": {
         "away": {
@@ -35347,7 +35778,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "J.T. Ginn",
         "line": 4.5,
-        "overPrice": -148,
+        "overPrice": -122,
         "underPrice": 122
       },
       "recentForm": null,
@@ -35369,9 +35800,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +107 / +1.5 -115",
-    "total": "o9.5 -115 / u10 -120",
-    "moneyline": "Yankees -148 / Athletics +130",
+    "spread": "-1.5 +105 / +1.5 -120",
+    "total": "o9.5 -110 / u10 -118",
+    "moneyline": "Yankees -154 / Athletics +135",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/yankees-vs-athletics",
     "tierTwoContext": {
@@ -35772,7 +36203,7 @@ export const rawGames = [
         "home": {
           "playerName": "J.T. Ginn",
           "line": 4.5,
-          "overPrice": -148,
+          "overPrice": -122,
           "underPrice": 122
         }
       },
@@ -38716,9 +39147,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -170 / -1.5 +152",
-    "total": "o7 even / u7 -120",
-    "moneyline": "Diamondbacks +130 / Mariners -150",
+    "spread": "+1.5 -170 / -1.5 +155",
+    "total": "o7 even / u7 -115",
+    "moneyline": "Diamondbacks +130 / Mariners -148",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/diamondbacks-vs-mariners",
     "tierTwoContext": {
@@ -41367,7 +41798,7 @@ export const rawGames = [
       "strikeoutMarket": {
         "playerName": "Jesús Luzardo",
         "line": 5.5,
-        "overPrice": -115,
+        "overPrice": -108,
         "underPrice": -105
       },
       "recentForm": null,
@@ -41573,9 +42004,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -200 / -1.5 +168",
+    "spread": "+1.5 -200 / +1.5 -196",
     "total": "o8.5 -105 / u8.5 -110",
-    "moneyline": "Phillies +105 / Dodgers -125",
+    "moneyline": "Phillies +105 / Dodgers -120",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/phillies-vs-dodgers",
     "tierTwoContext": {
@@ -41970,7 +42401,7 @@ export const rawGames = [
         "away": {
           "playerName": "Jesús Luzardo",
           "line": 5.5,
-          "overPrice": -115,
+          "overPrice": -108,
           "underPrice": -105
         },
         "home": {
@@ -44049,6 +44480,12 @@ export const rawGames = [
 export const bullpenChainByTeam = {
   "Diamondbacks": {
     "opponent": "Mariners",
+    "remainingDepth": {
+      "removedHeavyUseCount": 1,
+      "remainingTop3AvailabilityAvg": 72.53,
+      "remainingTop3BridgeScoreAvg": 85.2,
+      "remainingTop3ExpectedOutsAvg": 2.5
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -44102,7 +44539,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 1.75,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 4,
+        "lastAppearanceOuts": 1,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 6,
+        "quickReusePitchCeiling": 16,
+        "heavyUseResetScore": 20,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -44156,7 +44601,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 2.75,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-27"
+        "lastAppearanceDate": "2026-05-27",
+        "daysSinceLastAppearance": 3,
+        "lastAppearancePitches": 9,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 3,
+        "quickReusePitchCeiling": 16,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -44170,6 +44623,12 @@ export const bullpenChainByTeam = {
   },
   "Athletics": {
     "opponent": "Yankees",
+    "remainingDepth": {
+      "removedHeavyUseCount": 1,
+      "remainingTop3AvailabilityAvg": 43.9,
+      "remainingTop3BridgeScoreAvg": 72.8,
+      "remainingTop3ExpectedOutsAvg": 3.33
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -44227,39 +44686,43 @@ export const bullpenChainByTeam = {
         "expectedOuts": 4,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 26,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 2,
+        "quickReusePitchCeiling": 25,
+        "heavyUseResetScore": 45,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
           "2026-05-29",
-          "2026-05-27",
-          "2026-05-25",
-          "2026-05-23",
+          "2026-05-26",
+          "2026-05-24",
           "2026-05-21"
         ],
         "recentEntryOrders": [
-          3,
-          2,
-          3,
-          3,
-          3
-        ],
-        "recentFirstRelieverCountLast5Games": 1,
-        "recentFirstTwoCountLast5Games": 3,
-        "recentOuts": [
           5,
           3,
-          1,
-          6,
+          3,
+          2
+        ],
+        "recentFirstRelieverCountLast5Games": 0,
+        "recentFirstTwoCountLast5Games": 2,
+        "recentOuts": [
+          3,
+          4,
+          3,
           3
         ],
         "recentPitcherGamesSample": 3,
         "recentPitches": [
-          31,
-          22,
-          4,
-          21,
-          22
+          11,
+          7,
+          19,
+          12
         ],
         "recentTeamGameDates": [
           "2026-05-29",
@@ -44276,16 +44739,24 @@ export const bullpenChainByTeam = {
           823297
         ],
         "recentTeamGamesSample": 5,
-        "pitcherId": 669270,
-        "name": "Joel Kuhnel",
+        "pitcherId": 686993,
+        "name": "Justin Sterner",
         "role": "middle",
-        "firstRelieverLikelihood": 86.49,
-        "availabilityScore": 15.35,
-        "bridgeScore": 95,
-        "expectedOuts": 3.6,
+        "firstRelieverLikelihood": 71.51,
+        "availabilityScore": 56.25,
+        "bridgeScore": 74.1,
+        "expectedOuts": 3.25,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 11,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 3,
+        "quickReusePitchCeiling": 13,
+        "heavyUseResetScore": 20,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -44299,6 +44770,12 @@ export const bullpenChainByTeam = {
   },
   "Braves": {
     "opponent": "Reds",
+    "remainingDepth": {
+      "removedHeavyUseCount": 0,
+      "remainingTop3AvailabilityAvg": 53.77,
+      "remainingTop3BridgeScoreAvg": 84.7,
+      "remainingTop3ExpectedOutsAvg": 4.25
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -44352,7 +44829,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 2.5,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 28,
+        "lastAppearanceOuts": 4,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 1,
+        "quickReusePitchCeiling": 18,
+        "heavyUseResetScore": 57.5,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -44406,7 +44891,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 4.25,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-28"
+        "lastAppearanceDate": "2026-05-28",
+        "daysSinceLastAppearance": 2,
+        "lastAppearancePitches": 18,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 1,
+        "quickReusePitchCeiling": 18,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -44420,6 +44913,12 @@ export const bullpenChainByTeam = {
   },
   "Orioles": {
     "opponent": "Blue Jays",
+    "remainingDepth": {
+      "removedHeavyUseCount": 0,
+      "remainingTop3AvailabilityAvg": 54.85,
+      "remainingTop3BridgeScoreAvg": 85.17,
+      "remainingTop3ExpectedOutsAvg": 3.14
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -44469,7 +44968,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 2.67,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-28"
+        "lastAppearanceDate": "2026-05-28",
+        "daysSinceLastAppearance": 2,
+        "lastAppearancePitches": 17,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 6,
+        "quickReusePitchCeiling": 16,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -44523,7 +45030,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 3.75,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 6,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 3,
+        "quickReusePitchCeiling": 16,
+        "heavyUseResetScore": 20,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -44537,6 +45052,12 @@ export const bullpenChainByTeam = {
   },
   "Red Sox": {
     "opponent": "Guardians",
+    "remainingDepth": {
+      "removedHeavyUseCount": 0,
+      "remainingTop3AvailabilityAvg": 78.62,
+      "remainingTop3BridgeScoreAvg": 87.3,
+      "remainingTop3ExpectedOutsAvg": 2.8
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -44586,7 +45107,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 2,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-28"
+        "lastAppearanceDate": "2026-05-28",
+        "daysSinceLastAppearance": 2,
+        "lastAppearancePitches": 10,
+        "lastAppearanceOuts": 0,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 3,
+        "quickReusePitchCeiling": 5,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -44640,7 +45169,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 3,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-28"
+        "lastAppearanceDate": "2026-05-28",
+        "daysSinceLastAppearance": 2,
+        "lastAppearancePitches": 8,
+        "lastAppearanceOuts": 1,
+        "adaptivePitchResetThreshold": 32,
+        "quickReuseSample": 26,
+        "quickReusePitchCeiling": 27,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -44654,6 +45191,12 @@ export const bullpenChainByTeam = {
   },
   "Cubs": {
     "opponent": "Cardinals",
+    "remainingDepth": {
+      "removedHeavyUseCount": 0,
+      "remainingTop3AvailabilityAvg": 78.35,
+      "remainingTop3BridgeScoreAvg": 91.77,
+      "remainingTop3ExpectedOutsAvg": 3.86
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -44703,7 +45246,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 3,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-27"
+        "lastAppearanceDate": "2026-05-27",
+        "daysSinceLastAppearance": 3,
+        "lastAppearancePitches": 17,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 2,
+        "quickReusePitchCeiling": 21,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -44753,7 +45304,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 4.33,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-26"
+        "lastAppearanceDate": "2026-05-26",
+        "daysSinceLastAppearance": 4,
+        "lastAppearancePitches": 32,
+        "lastAppearanceOuts": 5,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 3,
+        "quickReusePitchCeiling": 12,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -44767,6 +45326,12 @@ export const bullpenChainByTeam = {
   },
   "White Sox": {
     "opponent": "Tigers",
+    "remainingDepth": {
+      "removedHeavyUseCount": 0,
+      "remainingTop3AvailabilityAvg": 63.32,
+      "remainingTop3BridgeScoreAvg": 91.17,
+      "remainingTop3ExpectedOutsAvg": 4.17
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -44816,7 +45381,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 6.67,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 28,
+        "lastAppearanceOuts": 8,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 4,
+        "quickReusePitchCeiling": 23,
+        "heavyUseResetScore": 57.5,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -44862,7 +45435,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 3.5,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-28"
+        "lastAppearanceDate": "2026-05-28",
+        "daysSinceLastAppearance": 2,
+        "lastAppearancePitches": 15,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 2,
+        "quickReusePitchCeiling": 23,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -44876,6 +45457,12 @@ export const bullpenChainByTeam = {
   },
   "Reds": {
     "opponent": "Braves",
+    "remainingDepth": {
+      "removedHeavyUseCount": 0,
+      "remainingTop3AvailabilityAvg": 81.65,
+      "remainingTop3BridgeScoreAvg": 83.7,
+      "remainingTop3ExpectedOutsAvg": 2.25
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -44929,7 +45516,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 3.5,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-26"
+        "lastAppearanceDate": "2026-05-26",
+        "daysSinceLastAppearance": 4,
+        "lastAppearancePitches": 24,
+        "lastAppearanceOuts": 5,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 5,
+        "quickReusePitchCeiling": 12,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -44983,7 +45578,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 2.25,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-26"
+        "lastAppearanceDate": "2026-05-26",
+        "daysSinceLastAppearance": 4,
+        "lastAppearancePitches": 4,
+        "lastAppearanceOuts": 1,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 4,
+        "quickReusePitchCeiling": 14,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -44997,6 +45600,12 @@ export const bullpenChainByTeam = {
   },
   "Guardians": {
     "opponent": "Red Sox",
+    "remainingDepth": {
+      "removedHeavyUseCount": 0,
+      "remainingTop3AvailabilityAvg": 59.45,
+      "remainingTop3BridgeScoreAvg": 94.3,
+      "remainingTop3ExpectedOutsAvg": 2.69
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -45050,7 +45659,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 2.5,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 20,
+        "lastAppearanceOuts": 4,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 4,
+        "quickReusePitchCeiling": 14,
+        "heavyUseResetScore": 20,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -45100,7 +45717,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 3.33,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-25"
+        "lastAppearanceDate": "2026-05-25",
+        "daysSinceLastAppearance": 5,
+        "lastAppearancePitches": 25,
+        "lastAppearanceOuts": 6,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 2,
+        "quickReusePitchCeiling": 22,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -45114,6 +45739,12 @@ export const bullpenChainByTeam = {
   },
   "Rockies": {
     "opponent": "Giants",
+    "remainingDepth": {
+      "removedHeavyUseCount": 0,
+      "remainingTop3AvailabilityAvg": 81.37,
+      "remainingTop3BridgeScoreAvg": 87.97,
+      "remainingTop3ExpectedOutsAvg": 5.02
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -45171,7 +45802,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 2.4,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-27"
+        "lastAppearanceDate": "2026-05-27",
+        "daysSinceLastAppearance": 3,
+        "lastAppearancePitches": 16,
+        "lastAppearanceOuts": 4,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 7,
+        "quickReusePitchCeiling": 20,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -45213,7 +45852,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 6,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-26"
+        "lastAppearanceDate": "2026-05-26",
+        "daysSinceLastAppearance": 4,
+        "lastAppearancePitches": 42,
+        "lastAppearanceOuts": 6,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 20,
+        "quickReusePitchCeiling": 20,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -45227,6 +45874,12 @@ export const bullpenChainByTeam = {
   },
   "Tigers": {
     "opponent": "White Sox",
+    "remainingDepth": {
+      "removedHeavyUseCount": 0,
+      "remainingTop3AvailabilityAvg": 69.88,
+      "remainingTop3BridgeScoreAvg": 88.8,
+      "remainingTop3ExpectedOutsAvg": 2.97
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -45276,7 +45929,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 3.67,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-26"
+        "lastAppearanceDate": "2026-05-26",
+        "daysSinceLastAppearance": 4,
+        "lastAppearancePitches": 25,
+        "lastAppearanceOuts": 4,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 4,
+        "quickReusePitchCeiling": 14,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -45330,7 +45991,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 3.25,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 11,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 3,
+        "quickReusePitchCeiling": 15,
+        "heavyUseResetScore": 20,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -45344,6 +46013,12 @@ export const bullpenChainByTeam = {
   },
   "Astros": {
     "opponent": "Brewers",
+    "remainingDepth": {
+      "removedHeavyUseCount": 0,
+      "remainingTop3AvailabilityAvg": 60.38,
+      "remainingTop3BridgeScoreAvg": 90.27,
+      "remainingTop3ExpectedOutsAvg": 3.56
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -45393,7 +46068,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 5,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-26"
+        "lastAppearanceDate": "2026-05-26",
+        "daysSinceLastAppearance": 4,
+        "lastAppearancePitches": 23,
+        "lastAppearanceOuts": 6,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 23,
+        "quickReusePitchCeiling": 22,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -45451,7 +46134,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 3,
         "workedYesterday": true,
         "backToBack": true,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 23,
+        "lastAppearanceOuts": 6,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 6,
+        "quickReusePitchCeiling": 16,
+        "heavyUseResetScore": 41.25,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -45465,6 +46156,12 @@ export const bullpenChainByTeam = {
   },
   "Royals": {
     "opponent": "Rangers",
+    "remainingDepth": {
+      "removedHeavyUseCount": 0,
+      "remainingTop3AvailabilityAvg": 74.93,
+      "remainingTop3BridgeScoreAvg": 95,
+      "remainingTop3ExpectedOutsAvg": 3
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -45514,7 +46211,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 2.67,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-25"
+        "lastAppearanceDate": "2026-05-25",
+        "daysSinceLastAppearance": 5,
+        "lastAppearancePitches": 8,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 3,
+        "quickReusePitchCeiling": 5,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -45560,7 +46265,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 3,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-27"
+        "lastAppearanceDate": "2026-05-27",
+        "daysSinceLastAppearance": 3,
+        "lastAppearancePitches": 7,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 3,
+        "quickReusePitchCeiling": 13,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -45574,6 +46287,12 @@ export const bullpenChainByTeam = {
   },
   "Angels": {
     "opponent": "Rays",
+    "remainingDepth": {
+      "removedHeavyUseCount": 0,
+      "remainingTop3AvailabilityAvg": 81.3,
+      "remainingTop3BridgeScoreAvg": 88.6,
+      "remainingTop3ExpectedOutsAvg": 3.5
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -45619,7 +46338,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 4,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-26"
+        "lastAppearanceDate": "2026-05-26",
+        "daysSinceLastAppearance": 4,
+        "lastAppearancePitches": 43,
+        "lastAppearanceOuts": 5,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 20,
+        "quickReusePitchCeiling": 23,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -45661,7 +46388,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 3,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-28"
+        "lastAppearanceDate": "2026-05-28",
+        "daysSinceLastAppearance": 2,
+        "lastAppearancePitches": 9,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 4,
+        "quickReusePitchCeiling": 17,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -45675,6 +46410,12 @@ export const bullpenChainByTeam = {
   },
   "Dodgers": {
     "opponent": "Phillies",
+    "remainingDepth": {
+      "removedHeavyUseCount": 0,
+      "remainingTop3AvailabilityAvg": 82.35,
+      "remainingTop3BridgeScoreAvg": 87.2,
+      "remainingTop3ExpectedOutsAvg": 3.33
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -45728,7 +46469,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 3,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-27"
+        "lastAppearanceDate": "2026-05-27",
+        "daysSinceLastAppearance": 3,
+        "lastAppearancePitches": 8,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 3,
+        "quickReusePitchCeiling": 16,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -45778,7 +46527,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 4,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-26"
+        "lastAppearanceDate": "2026-05-26",
+        "daysSinceLastAppearance": 4,
+        "lastAppearancePitches": 31,
+        "lastAppearanceOuts": 6,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 1,
+        "quickReusePitchCeiling": 19,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -45792,6 +46549,12 @@ export const bullpenChainByTeam = {
   },
   "Marlins": {
     "opponent": "Mets",
+    "remainingDepth": {
+      "removedHeavyUseCount": 0,
+      "remainingTop3AvailabilityAvg": 71.52,
+      "remainingTop3BridgeScoreAvg": 95,
+      "remainingTop3ExpectedOutsAvg": 3.75
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -45845,7 +46608,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 4.25,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 11,
+        "lastAppearanceOuts": 1,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 1,
+        "quickReusePitchCeiling": 20,
+        "heavyUseResetScore": 20,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -45891,7 +46662,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 3,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 6,
+        "lastAppearanceOuts": 2,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 5,
+        "quickReusePitchCeiling": 18,
+        "heavyUseResetScore": 20,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -45905,6 +46684,12 @@ export const bullpenChainByTeam = {
   },
   "Brewers": {
     "opponent": "Astros",
+    "remainingDepth": {
+      "removedHeavyUseCount": 1,
+      "remainingTop3AvailabilityAvg": 45.65,
+      "remainingTop3BridgeScoreAvg": 93.57,
+      "remainingTop3ExpectedOutsAvg": 4.92
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -45954,7 +46739,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 6.33,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-27"
+        "lastAppearanceDate": "2026-05-27",
+        "daysSinceLastAppearance": 3,
+        "lastAppearancePitches": 27,
+        "lastAppearanceOuts": 6,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 23,
+        "quickReusePitchCeiling": 23,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -46004,7 +46797,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 3.67,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 13,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 3,
+        "quickReusePitchCeiling": 19,
+        "heavyUseResetScore": 20,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -46018,6 +46819,12 @@ export const bullpenChainByTeam = {
   },
   "Twins": {
     "opponent": "Pirates",
+    "remainingDepth": {
+      "removedHeavyUseCount": 0,
+      "remainingTop3AvailabilityAvg": 58.05,
+      "remainingTop3BridgeScoreAvg": 93.7,
+      "remainingTop3ExpectedOutsAvg": 4.17
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -46071,7 +46878,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 2.75,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-28"
+        "lastAppearanceDate": "2026-05-28",
+        "daysSinceLastAppearance": 2,
+        "lastAppearancePitches": 29,
+        "lastAppearanceOuts": 4,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 1,
+        "quickReusePitchCeiling": 20,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -46113,7 +46928,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 6,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-25"
+        "lastAppearanceDate": "2026-05-25",
+        "daysSinceLastAppearance": 5,
+        "lastAppearancePitches": 35,
+        "lastAppearanceOuts": 6,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 36,
+        "quickReusePitchCeiling": 20,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -46127,6 +46950,12 @@ export const bullpenChainByTeam = {
   },
   "Mets": {
     "opponent": "Marlins",
+    "remainingDepth": {
+      "removedHeavyUseCount": 0,
+      "remainingTop3AvailabilityAvg": 56.25,
+      "remainingTop3BridgeScoreAvg": 88.13,
+      "remainingTop3ExpectedOutsAvg": 3.11
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -46176,7 +47005,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 2.67,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 12,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 2,
+        "quickReusePitchCeiling": 18,
+        "heavyUseResetScore": 20,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -46222,7 +47059,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 3,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 14,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 15,
+        "quickReusePitchCeiling": 18,
+        "heavyUseResetScore": 20,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -46236,6 +47081,12 @@ export const bullpenChainByTeam = {
   },
   "Yankees": {
     "opponent": "Athletics",
+    "remainingDepth": {
+      "removedHeavyUseCount": 1,
+      "remainingTop3AvailabilityAvg": 62.02,
+      "remainingTop3BridgeScoreAvg": 88.5,
+      "remainingTop3ExpectedOutsAvg": 2.33
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -46289,7 +47140,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 1.75,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 16,
+        "lastAppearanceOuts": 1,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 7,
+        "quickReusePitchCeiling": 19,
+        "heavyUseResetScore": 20,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -46343,7 +47202,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 2.75,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 2,
+        "lastAppearanceOuts": 2,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 6,
+        "quickReusePitchCeiling": 17,
+        "heavyUseResetScore": 20,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -46357,6 +47224,12 @@ export const bullpenChainByTeam = {
   },
   "Phillies": {
     "opponent": "Dodgers",
+    "remainingDepth": {
+      "removedHeavyUseCount": 0,
+      "remainingTop3AvailabilityAvg": 71.08,
+      "remainingTop3BridgeScoreAvg": 95,
+      "remainingTop3ExpectedOutsAvg": 3.25
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -46410,7 +47283,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 2.75,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-26"
+        "lastAppearanceDate": "2026-05-26",
+        "daysSinceLastAppearance": 4,
+        "lastAppearancePitches": 16,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 4,
+        "quickReusePitchCeiling": 16,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -46456,7 +47337,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 3,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-27"
+        "lastAppearanceDate": "2026-05-27",
+        "daysSinceLastAppearance": 3,
+        "lastAppearancePitches": 18,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 2,
+        "quickReusePitchCeiling": 20,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -46470,6 +47359,12 @@ export const bullpenChainByTeam = {
   },
   "Pirates": {
     "opponent": "Twins",
+    "remainingDepth": {
+      "removedHeavyUseCount": 1,
+      "remainingTop3AvailabilityAvg": 55.37,
+      "remainingTop3BridgeScoreAvg": 92.37,
+      "remainingTop3ExpectedOutsAvg": 3.58
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -46519,7 +47414,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 3.67,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-28"
+        "lastAppearanceDate": "2026-05-28",
+        "daysSinceLastAppearance": 2,
+        "lastAppearancePitches": 31,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 1,
+        "quickReusePitchCeiling": 23,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -46573,7 +47476,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 2.75,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 11,
+        "lastAppearanceOuts": 2,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 4,
+        "quickReusePitchCeiling": 18,
+        "heavyUseResetScore": 20,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -46587,6 +47498,12 @@ export const bullpenChainByTeam = {
   },
   "Padres": {
     "opponent": "Nationals",
+    "remainingDepth": {
+      "removedHeavyUseCount": 1,
+      "remainingTop3AvailabilityAvg": 56.27,
+      "remainingTop3BridgeScoreAvg": 89.93,
+      "remainingTop3ExpectedOutsAvg": 3.71
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -46636,7 +47553,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 3,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-26"
+        "lastAppearanceDate": "2026-05-26",
+        "daysSinceLastAppearance": 4,
+        "lastAppearancePitches": 27,
+        "lastAppearanceOuts": 4,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 2,
+        "quickReusePitchCeiling": 21,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -46694,7 +47619,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 2.8,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 19,
+        "lastAppearanceOuts": 4,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 5,
+        "quickReusePitchCeiling": 15,
+        "heavyUseResetScore": 20,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -46708,6 +47641,12 @@ export const bullpenChainByTeam = {
   },
   "Giants": {
     "opponent": "Rockies",
+    "remainingDepth": {
+      "removedHeavyUseCount": 0,
+      "remainingTop3AvailabilityAvg": 49.4,
+      "remainingTop3BridgeScoreAvg": 92.3,
+      "remainingTop3ExpectedOutsAvg": 3.17
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -46761,7 +47700,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 4,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 18,
+        "lastAppearanceOuts": 4,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 4,
+        "quickReusePitchCeiling": 14,
+        "heavyUseResetScore": 20,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -46815,7 +47762,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 2.75,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 6,
+        "lastAppearanceOuts": 2,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 6,
+        "quickReusePitchCeiling": 21,
+        "heavyUseResetScore": 20,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -46829,6 +47784,12 @@ export const bullpenChainByTeam = {
   },
   "Mariners": {
     "opponent": "Diamondbacks",
+    "remainingDepth": {
+      "removedHeavyUseCount": 0,
+      "remainingTop3AvailabilityAvg": 44.3,
+      "remainingTop3BridgeScoreAvg": 87.2,
+      "remainingTop3ExpectedOutsAvg": 2.72
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -46882,7 +47843,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 2.25,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 12,
+        "lastAppearanceOuts": 2,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 8,
+        "quickReusePitchCeiling": 21,
+        "heavyUseResetScore": 20,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -46932,7 +47901,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 2.67,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 22,
+        "lastAppearanceOuts": 2,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 3,
+        "quickReusePitchCeiling": 13,
+        "heavyUseResetScore": 20,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -46946,6 +47923,12 @@ export const bullpenChainByTeam = {
   },
   "Cardinals": {
     "opponent": "Cubs",
+    "remainingDepth": {
+      "removedHeavyUseCount": 0,
+      "remainingTop3AvailabilityAvg": 67.82,
+      "remainingTop3BridgeScoreAvg": 83.6,
+      "remainingTop3ExpectedOutsAvg": 3.7
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -47003,7 +47986,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 3.6,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 16,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 4,
+        "quickReusePitchCeiling": 20,
+        "heavyUseResetScore": 20,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -47049,7 +48040,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 4.5,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-26"
+        "lastAppearanceDate": "2026-05-26",
+        "daysSinceLastAppearance": 4,
+        "lastAppearancePitches": 21,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 36,
+        "quickReusePitchCeiling": 23,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -47063,6 +48062,12 @@ export const bullpenChainByTeam = {
   },
   "Rays": {
     "opponent": "Angels",
+    "remainingDepth": {
+      "removedHeavyUseCount": 1,
+      "remainingTop3AvailabilityAvg": 62.7,
+      "remainingTop3BridgeScoreAvg": 93.7,
+      "remainingTop3ExpectedOutsAvg": 3.33
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -47104,7 +48109,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 6,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-26"
+        "lastAppearanceDate": "2026-05-26",
+        "daysSinceLastAppearance": 4,
+        "lastAppearancePitches": 27,
+        "lastAppearanceOuts": 6,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 4,
+        "quickReusePitchCeiling": 16,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -47154,7 +48167,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 2.33,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 11,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 6,
+        "quickReusePitchCeiling": 18,
+        "heavyUseResetScore": 20,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -47168,6 +48189,12 @@ export const bullpenChainByTeam = {
   },
   "Rangers": {
     "opponent": "Royals",
+    "remainingDepth": {
+      "removedHeavyUseCount": 1,
+      "remainingTop3AvailabilityAvg": 87.85,
+      "remainingTop3BridgeScoreAvg": 93.7,
+      "remainingTop3ExpectedOutsAvg": 4.33
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -47217,7 +48244,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 3,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-27"
+        "lastAppearanceDate": "2026-05-27",
+        "daysSinceLastAppearance": 3,
+        "lastAppearancePitches": 17,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 1,
+        "quickReusePitchCeiling": 19,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -47267,7 +48302,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 4,
         "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-26"
+        "lastAppearanceDate": "2026-05-26",
+        "daysSinceLastAppearance": 4,
+        "lastAppearancePitches": 10,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 2,
+        "quickReusePitchCeiling": 19,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -47281,6 +48324,12 @@ export const bullpenChainByTeam = {
   },
   "Blue Jays": {
     "opponent": "Orioles",
+    "remainingDepth": {
+      "removedHeavyUseCount": 0,
+      "remainingTop3AvailabilityAvg": 29.83,
+      "remainingTop3BridgeScoreAvg": 84.33,
+      "remainingTop3ExpectedOutsAvg": 2.61
+    },
     "topRelievers": [
       {
         "recentDates": [
@@ -47342,7 +48391,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 1.83,
         "workedYesterday": true,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 20,
+        "lastAppearanceOuts": 4,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 7,
+        "quickReusePitchCeiling": 19,
+        "heavyUseResetScore": 20,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
@@ -47396,7 +48453,15 @@ export const bullpenChainByTeam = {
         "expectedOuts": 3,
         "workedYesterday": true,
         "backToBack": true,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-29",
+        "daysSinceLastAppearance": 1,
+        "lastAppearancePitches": 15,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 8,
+        "quickReusePitchCeiling": 19,
+        "heavyUseResetScore": 35,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {
@@ -47410,30 +48475,36 @@ export const bullpenChainByTeam = {
   },
   "Nationals": {
     "opponent": "Padres",
+    "remainingDepth": {
+      "removedHeavyUseCount": 3,
+      "remainingTop3AvailabilityAvg": 62.13,
+      "remainingTop3BridgeScoreAvg": 55.4,
+      "remainingTop3ExpectedOutsAvg": 2.38
+    },
     "topRelievers": [
       {
         "recentDates": [
-          "2026-05-29",
+          "2026-05-27",
           "2026-05-24",
-          "2026-05-20"
+          "2026-05-23"
         ],
         "recentEntryOrders": [
-          2,
-          2,
-          2
-        ],
-        "recentFirstRelieverCountLast5Games": 2,
-        "recentFirstTwoCountLast5Games": 2,
-        "recentOuts": [
-          9,
+          3,
           4,
-          12
+          3
+        ],
+        "recentFirstRelieverCountLast5Games": 0,
+        "recentFirstTwoCountLast5Games": 1,
+        "recentOuts": [
+          1,
+          1,
+          3
         ],
         "recentPitcherGamesSample": 2,
         "recentPitches": [
-          74,
-          18,
-          56
+          12,
+          15,
+          11
         ],
         "recentTeamGameDates": [
           "2026-05-29",
@@ -47450,40 +48521,48 @@ export const bullpenChainByTeam = {
           824921
         ],
         "recentTeamGamesSample": 5,
-        "pitcherId": 674841,
-        "name": "Andrew Alvarez",
-        "role": "bridge",
-        "firstRelieverLikelihood": 83.66,
-        "availabilityScore": 18.3,
-        "bridgeScore": 95,
-        "expectedOuts": 8.33,
-        "workedYesterday": true,
+        "pitcherId": 663992,
+        "name": "Richard Lovelady",
+        "role": "middle",
+        "firstRelieverLikelihood": 60.79,
+        "availabilityScore": 79,
+        "bridgeScore": 58.8,
+        "expectedOuts": 1.67,
+        "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-27",
+        "daysSinceLastAppearance": 3,
+        "lastAppearancePitches": 12,
+        "lastAppearanceOuts": 1,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 5,
+        "quickReusePitchCeiling": 21,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       },
       {
         "recentDates": [
-          "2026-05-29",
-          "2026-05-26",
+          "2026-05-27",
+          "2026-05-24",
           "2026-05-22"
         ],
         "recentEntryOrders": [
-          4,
-          2,
-          3
+          6,
+          3,
+          5
         ],
-        "recentFirstRelieverCountLast5Games": 1,
+        "recentFirstRelieverCountLast5Games": 0,
         "recentFirstTwoCountLast5Games": 1,
         "recentOuts": [
-          6,
-          9,
+          3,
+          2,
           3
         ],
         "recentPitcherGamesSample": 2,
         "recentPitches": [
-          45,
-          47,
-          31
+          10,
+          12,
+          12
         ],
         "recentTeamGameDates": [
           "2026-05-29",
@@ -47500,16 +48579,24 @@ export const bullpenChainByTeam = {
           824921
         ],
         "recentTeamGamesSample": 5,
-        "pitcherId": 680730,
-        "name": "Mitchell Parker",
-        "role": "bulk",
-        "firstRelieverLikelihood": 74.57,
-        "availabilityScore": 36.15,
-        "bridgeScore": 78.2,
-        "expectedOuts": 6,
-        "workedYesterday": true,
+        "pitcherId": 681402,
+        "name": "Gus Varland",
+        "role": "late",
+        "firstRelieverLikelihood": 56.19,
+        "availabilityScore": 76.7,
+        "bridgeScore": 50.1,
+        "expectedOuts": 2.67,
+        "workedYesterday": false,
         "backToBack": false,
-        "lastAppearanceDate": "2026-05-29"
+        "lastAppearanceDate": "2026-05-27",
+        "daysSinceLastAppearance": 3,
+        "lastAppearancePitches": 10,
+        "lastAppearanceOuts": 3,
+        "adaptivePitchResetThreshold": 30,
+        "quickReuseSample": 2,
+        "quickReusePitchCeiling": 24,
+        "heavyUseResetScore": 0,
+        "heavyUseResetFlag": false
       }
     ],
     "recentBullpenSummary": {

@@ -6,6 +6,7 @@ import argparse
 import json
 import sqlite3
 from collections import defaultdict
+from datetime import datetime
 from pathlib import Path
 
 from research_mlb_bullpen_shape_model import build_starter_probability_lookup
@@ -112,6 +113,95 @@ def percent(value: float | None) -> float:
     return round(float(value or 0.0) * 100.0, 1)
 
 
+def clamp(value: float, low: float, high: float) -> float:
+    return max(low, min(high, value))
+
+
+def percentile(values: list[float], q: float) -> float | None:
+    clean = sorted(float(value) for value in values if value is not None)
+    if not clean:
+        return None
+    index = int((len(clean) - 1) * q)
+    return clean[max(0, min(len(clean) - 1, index))]
+
+
+def load_reuse_profiles(conn: sqlite3.Connection, target_date: str) -> tuple[dict[int, dict[str, float]], dict[str, dict[str, float]]]:
+    rows = conn.execute(
+        """
+        SELECT pitcher_id, team_name, game_date, game_pk, pitches_thrown
+        FROM mlb_pitcher_appearances
+        WHERE pitcher_role = 'reliever'
+          AND game_date < ?
+        ORDER BY pitcher_id, game_date, game_pk
+        """,
+        (target_date,),
+    ).fetchall()
+    grouped: dict[int, list[sqlite3.Row]] = defaultdict(list)
+    for row in rows:
+        grouped[int(row["pitcher_id"])].append(row)
+
+    pitcher_profiles: dict[int, dict[str, float]] = {}
+    team_quick_reuse: dict[str, list[float]] = defaultdict(list)
+    for pitcher_id, appearances in grouped.items():
+        quick_reuse_pitches: list[float] = []
+        appearances = sorted(appearances, key=lambda row: (row["game_date"], row["game_pk"]))
+        for current, next_row in zip(appearances, appearances[1:]):
+            rest_days = (datetime.strptime(str(next_row["game_date"]), "%Y-%m-%d") - datetime.strptime(str(current["game_date"]), "%Y-%m-%d")).days
+            if rest_days <= 1:
+                pitches = float(current["pitches_thrown"] or 0.0)
+                quick_reuse_pitches.append(pitches)
+                team_quick_reuse[str(current["team_name"])].append(pitches)
+        pitcher_profiles[pitcher_id] = {
+            "quick_reuse_sample": float(len(quick_reuse_pitches)),
+            "quick_reuse_p90": percentile(quick_reuse_pitches, 0.9) or 0.0,
+            "quick_reuse_max": max(quick_reuse_pitches) if quick_reuse_pitches else 0.0,
+        }
+
+    team_profiles = {
+        team_name: {
+            "quick_reuse_sample": float(len(values)),
+            "quick_reuse_p90": percentile(values, 0.9) or 0.0,
+            "quick_reuse_max": max(values) if values else 0.0,
+        }
+        for team_name, values in team_quick_reuse.items()
+    }
+    return pitcher_profiles, team_profiles
+
+
+def heavy_use_reset_profile(
+    row: sqlite3.Row,
+    last_appearance_pitches: int | None,
+    pitcher_profiles: dict[int, dict[str, float]],
+    team_profiles: dict[str, dict[str, float]],
+) -> dict[str, float | bool]:
+    days = int(row["days_since_last_appearance"] or 99)
+    pitches = int(last_appearance_pitches or 0)
+    pitcher_profile = pitcher_profiles.get(int(row["pitcher_id"]), {})
+    team_profile = team_profiles.get(str(row["team_name"]), {})
+    reuse_ceiling = (
+        pitcher_profile.get("quick_reuse_p90")
+        if float(pitcher_profile.get("quick_reuse_sample", 0.0)) >= 3
+        else team_profile.get("quick_reuse_p90")
+    )
+    adaptive_threshold = clamp((float(reuse_ceiling or 0.0) + 5.0) if reuse_ceiling else 35.0, 30.0, 42.0)
+    if days <= 1:
+        pitch_pressure = clamp((pitches - (adaptive_threshold - 8.0)) / 16.0, 0.0, 1.0)
+    elif days == 2 and pitches >= adaptive_threshold + 4:
+        pitch_pressure = 0.35
+    else:
+        pitch_pressure = 0.0
+    appearance_pressure = 0.35 if int(row["back_to_back_flag"] or 0) else (0.2 if int(row["worked_yesterday_flag"] or 0) else 0.0)
+    recent_load_pressure = 0.25 if int(row["appearances_last3"] or 0) >= 2 and int(row["pitches_last3"] or 0) >= 45 else 0.0
+    reset_score = clamp((pitch_pressure + appearance_pressure + recent_load_pressure) * 100.0, 0.0, 100.0)
+    return {
+        "adaptive_threshold": round(adaptive_threshold, 2),
+        "quick_reuse_sample": float(pitcher_profile.get("quick_reuse_sample") or team_profile.get("quick_reuse_sample") or 0.0),
+        "quick_reuse_pitch_ceiling": round(float(reuse_ceiling or 0.0), 2) if reuse_ceiling else 0.0,
+        "reset_score": round(reset_score, 2),
+        "reset_flag": reset_score >= 70.0,
+    }
+
+
 def row_or_dict_value(record: object, key: str) -> object:
     if record is None:
         return None
@@ -192,6 +282,7 @@ def load_current_candidate_rows(conn: sqlite3.Connection, target_date: str) -> l
     shape_lookup = load_shape_lookup(conn, target_date)
     game_lookup = load_game_lookup(conn, target_date)
     settled_starter_ids_by_team = load_settled_starter_ids_by_team(conn, target_date)
+    pitcher_profiles, team_profiles = load_reuse_profiles(conn, target_date)
     usage_rows = conn.execute(
         """
         SELECT *
@@ -201,6 +292,19 @@ def load_current_candidate_rows(conn: sqlite3.Connection, target_date: str) -> l
         """,
         (target_date,),
     ).fetchall()
+    last_appearance_pitch_lookup = {
+        (int(row["pitcher_id"]), str(row["team_name"]), str(row["game_date"])): int(row["pitches_thrown"] or 0)
+        for row in conn.execute(
+            """
+            SELECT pitcher_id, team_name, game_date, pitches_thrown
+            FROM mlb_pitcher_appearances
+            WHERE pitcher_role = 'reliever'
+              AND game_date < ?
+            """
+            ,
+            (target_date,),
+        ).fetchall()
+    }
 
     rows: list[FirstUpCandidateRow] = []
     for row in usage_rows:
@@ -210,6 +314,11 @@ def load_current_candidate_rows(conn: sqlite3.Connection, target_date: str) -> l
             continue
         usage_pitcher_id = safe_int(row["pitcher_id"])
         if usage_pitcher_id is not None and usage_pitcher_id in settled_starter_ids_by_team.get(team_name, set()):
+            continue
+        last_appearance_date = str(row["last_appearance_date"]) if row["last_appearance_date"] else ""
+        last_appearance_pitches = last_appearance_pitch_lookup.get((int(row["pitcher_id"]), str(team_name), last_appearance_date), 0)
+        reset_profile = heavy_use_reset_profile(row, last_appearance_pitches, pitcher_profiles, team_profiles)
+        if bool(reset_profile["reset_flag"]):
             continue
         starter = starter_lookup.get((target_date, int(game_info["game_pk"]), team_name))
         shape = shape_lookup.get((target_date, team_name))
@@ -396,11 +505,12 @@ def build_team_payload(
         alt = relievers[1] if len(relievers) > 1 else None
         first_row = ranked[0][0] if ranked else None
         starter_hook = percent(first_row.starter_prob_12) if first_row else 0.0
+        remaining_sample = [pair[0] for pair in ranked[:3]]
         payload[desk_team(team_name)] = {
             "teamName": desk_team(team_name),
             "officialTeamName": team_name,
             "opponentName": desk_team(ranked[0][0].opponent_name) if ranked else "",
-            "modelTag": "E34 shadow",
+            "modelTag": "E36 shadow",
             "researchRates": {
                 "exactRate": E33_EXACT_RATE,
                 "top2Rate": E33_TOP2_RATE,
@@ -408,6 +518,9 @@ def build_team_payload(
             },
             "starterHookRiskPct": starter_hook,
             "topTwoSharePct": top_two_share,
+            "remainingTop3AvailabilityAvg": round(sum(float(row.availability_score or 0.0) for row in remaining_sample) / len(remaining_sample), 1) if remaining_sample else 0.0,
+            "remainingTop3BridgeScoreAvg": round(sum(float(row.bridge_score or 0.0) for row in remaining_sample) / len(remaining_sample), 1) if remaining_sample else 0.0,
+            "remainingTop3ExpectedOutsAvg": round(sum(float(row.avg_outs_per_appearance or 0.0) for row in remaining_sample) / len(remaining_sample), 2) if remaining_sample else 0.0,
             "summaryLine": (
                 f"{lead['name']} leads the shadow board"
                 + (f"; {alt['name']} is the main alt" if alt else "")
@@ -524,7 +637,7 @@ def build_report(
 
     report = f"""# MLB First-Up Reliever Shadow Board — May 30, 2026
 
-This is `E34`, the first live-style bullpen artifact built from the `E33` reliever stack.
+This is `E36 shadow`, the live-style bullpen artifact built from the `E33` stack plus the adaptive heavy-use reset overlay.
 
 Goal:
 
@@ -572,7 +685,7 @@ Target slate:
 
 ## Read
 
-- `E34` is not a live-model promotion. It is a board artifact for inspection.
+- `E36 shadow` is not a live-model promotion. It is a board artifact for inspection.
 - The shadow card is only meant to show:
   - who the `E33` stack thinks is first up
   - who the main alternate is
@@ -623,7 +736,7 @@ def main() -> None:
 
     meta = {
         "date": args.date,
-        "modelTag": "E34 shadow",
+        "modelTag": "E36 shadow",
         "candidateCount": len(current_rows),
         "teamCount": len(payload),
         "conversionWindow": 8,

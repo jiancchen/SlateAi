@@ -97,10 +97,11 @@ npm run data:import:tennis-flashscore
 npm run data:backfill:tennis-recent-form -- --date YYYY-MM-DD
 npm run data:export:tennis-warehouse-context -- --date YYYY-MM-DD
 # Required operator/browser step before generation:
-# Open every FanDuel event URL in data-private/reference/tennis/fanduel-lines-YYYY-MM-DD.json.
-# Capture Moneyline, Game Handicap, and Total Match Games into markets.moneyline,
-# markets.gameHandicap, and markets.totalGames. Record unavailable reasons
-# such as ended, not offered, or blocked before generating the slate.
+# With Chrome remote debugging open, scrape FanDuel event pages:
+node pipeline/scrape_fanduel_tennis_cdp.mjs --date YYYY-MM-DD
+# This stores markets.moneyline, markets.gameHandicap, markets.totalGames,
+# markets.firstSetTotalGames, and set-win prices where FanDuel offers them.
+# Record unavailable reasons such as ended, not offered, or blocked before generation.
 # Required derivative prediction step:
 # Build data-private/predictions/tennis/YYYY-MM-DD-derivative-markets.json with
 # expectedMatchGames, expectedFirstSetGames, totalGames lean, gameHandicap lean,
@@ -132,8 +133,8 @@ Tennis health gate:
 - `npm test` includes a regression test for the bug that previously imported May 28/29/30 Flashscore recent maps with `slate_date = NULL`.
 
 FanDuel event-page lines:
-- The slate file must include per-match FanDuel event URLs when available, then each event page must be opened before match start to expand the primary `Moneyline`, `Game Handicap`, and `Total Match Games` sections.
-- Store those pulls in `data-private/reference/tennis/fanduel-lines-YYYY-MM-DD.json` as `markets.moneyline`, `markets.gameHandicap`, and `markets.totalGames`. Example: `gameHandicap` rows carry `{ "player": "Naomi Osaka", "spread": -0.5, "odds": -118 }`; `totalGames` rows carry `{ "side": "Over", "line": 22.5, "odds": -106 }`.
+- Run `node pipeline/scrape_fanduel_tennis_cdp.mjs --date YYYY-MM-DD` before slate generation. It uses the logged-in/challenge-cleared Chrome profile on port `9222`, maps the FanDuel event URLs, and captures the primary event-page markets.
+- Store those pulls in `data-private/reference/tennis/fanduel-lines-YYYY-MM-DD.json` as `markets.moneyline`, `markets.gameHandicap`, `markets.totalGames`, `markets.firstSetTotalGames`, and `markets.winAtLeastOneSet`. Example: `gameHandicap` rows carry `{ "player": "Naomi Osaka", "spread": -0.5, "odds": -118 }`; `totalGames` and `firstSetTotalGames` rows carry `{ "side": "Over", "line": 22.5, "odds": -106 }`.
 - If FanDuel marks the event ended, removes a market, or blocks the page, record that reason for the match instead of silently leaving spread/total empty. ML/spread/O-U EV should not be trusted until coverage is checked.
 
 Derivative tennis markets:

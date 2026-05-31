@@ -712,9 +712,168 @@ const buildStartingPitcherFirstInningByGamePk = ({ gamePks = [] }) => {
   }, {})
 }
 
-const buildBullpenChainByTeam = ({ date, games }) => {
+const clampNumber = (value, min, max) => Math.max(min, Math.min(max, value))
+
+const percentile = (values, q) => {
+  const sorted = values.map(Number).filter(Number.isFinite).sort((a, b) => a - b)
+  if (!sorted.length) return null
+  const index = Math.min(sorted.length - 1, Math.max(0, Math.floor((sorted.length - 1) * q)))
+  return sorted[index]
+}
+
+const buildRelieverReuseProfiles = ({ date }) => {
   const rows = runSqliteJson(
-    `select team_name, pitcher_id, pitcher_name, likely_role, first_reliever_likelihood, availability_score, bridge_score, worked_yesterday_flag, back_to_back_flag, last_appearance_date, avg_outs_per_appearance, raw_json from mlb_bullpen_usage where as_of_date='${date}' order by team_name, first_reliever_likelihood desc;`
+    `select pitcher_id, pitcher_name, team_name, game_date, game_pk, pitches_thrown, outs_recorded
+     from mlb_pitcher_appearances
+     where pitcher_role='reliever'
+       and game_date < '${date}'
+     order by pitcher_id, game_date, game_pk;`
+  )
+
+  const byPitcher = new Map()
+  const byTeam = new Map()
+  for (const row of rows) {
+    const pitcherId = Number(row.pitcher_id || 0) || 0
+    if (!pitcherId) continue
+    if (!byPitcher.has(pitcherId)) byPitcher.set(pitcherId, [])
+    byPitcher.get(pitcherId).push(row)
+  }
+
+  const pitcherProfiles = new Map()
+  for (const [pitcherId, appearances] of byPitcher.entries()) {
+    const quickReusePitches = []
+    for (let index = 0; index < appearances.length - 1; index += 1) {
+      const current = appearances[index]
+      const next = appearances[index + 1]
+      const restDays = Math.round((new Date(next.game_date) - new Date(current.game_date)) / 86400000)
+      if (restDays <= 1) {
+        const pitches = Number(current.pitches_thrown || 0) || 0
+        quickReusePitches.push(pitches)
+        const teamName = current.team_name || ''
+        if (teamName) {
+          if (!byTeam.has(teamName)) byTeam.set(teamName, [])
+          byTeam.get(teamName).push(pitches)
+        }
+      }
+    }
+    pitcherProfiles.set(pitcherId, {
+      quickReuseSample: quickReusePitches.length,
+      quickReuseP90: percentile(quickReusePitches, 0.9),
+      quickReuseMax: quickReusePitches.length ? Math.max(...quickReusePitches) : null
+    })
+  }
+
+  const teamProfiles = new Map()
+  for (const [teamName, quickReusePitches] of byTeam.entries()) {
+    teamProfiles.set(teamName, {
+      quickReuseSample: quickReusePitches.length,
+      quickReuseP90: percentile(quickReusePitches, 0.9),
+      quickReuseMax: quickReusePitches.length ? Math.max(...quickReusePitches) : null
+    })
+  }
+
+  return { pitcherProfiles, teamProfiles }
+}
+
+const buildRelieverResetProfile = (reliever, reuseProfiles = {}) => {
+  const daysSinceLastAppearance = Number(reliever.days_since_last_appearance ?? 99)
+  const lastAppearancePitches = Number(reliever.last_appearance_pitches ?? 0)
+  const pitcherId = Number(reliever.pitcher_id || 0) || 0
+  const pitcherProfile = reuseProfiles.pitcherProfiles?.get(pitcherId) || {}
+  const teamProfile = reuseProfiles.teamProfiles?.get(reliever.team_name || '') || {}
+  const reuseCeiling =
+    Number(pitcherProfile.quickReuseSample || 0) >= 3
+      ? Number(pitcherProfile.quickReuseP90)
+      : Number(teamProfile.quickReuseP90)
+  const adaptiveThreshold = clampNumber(Number.isFinite(reuseCeiling) ? reuseCeiling + 5 : 35, 30, 42)
+  const pitchPressure = daysSinceLastAppearance <= 1
+    ? clampNumber((lastAppearancePitches - (adaptiveThreshold - 8)) / 16, 0, 1)
+    : daysSinceLastAppearance === 2 && lastAppearancePitches >= adaptiveThreshold + 4
+      ? 0.35
+      : 0
+  const appearancePressure = Number(reliever.back_to_back_flag || 0)
+    ? 0.35
+    : Number(reliever.worked_yesterday_flag || 0)
+      ? 0.2
+      : 0
+  const recentLoadPressure =
+    Number(reliever.appearances_last3 || 0) >= 2 && Number(reliever.pitches_last3 || 0) >= 45
+      ? 0.25
+      : 0
+  const resetScore = clampNumber((pitchPressure + appearancePressure + recentLoadPressure) * 100, 0, 100)
+  return {
+    adaptivePitchResetThreshold: roundMaybe(adaptiveThreshold),
+    quickReuseSample: Number(pitcherProfile.quickReuseSample || teamProfile.quickReuseSample || 0) || 0,
+    quickReusePitchCeiling: roundMaybe(reuseCeiling),
+    heavyUseResetScore: roundMaybe(resetScore),
+    heavyUseResetFlag: resetScore >= 70
+  }
+}
+
+const summarizeBullpenDepth = (relievers) => {
+  const sample = relievers.slice(0, 3)
+  if (!sample.length) {
+    return {
+      removedHeavyUseCount: 0,
+      remainingTop3AvailabilityAvg: null,
+      remainingTop3BridgeScoreAvg: null,
+      remainingTop3ExpectedOutsAvg: null
+    }
+  }
+  return {
+    removedHeavyUseCount: 0,
+    remainingTop3AvailabilityAvg: roundMaybe(
+      sample.reduce((sum, reliever) => sum + (Number(reliever.availability_score || 0) || 0), 0) / sample.length
+    ),
+    remainingTop3BridgeScoreAvg: roundMaybe(
+      sample.reduce((sum, reliever) => sum + (Number(reliever.bridge_score || 0) || 0), 0) / sample.length
+    ),
+    remainingTop3ExpectedOutsAvg: roundMaybe(
+      sample.reduce((sum, reliever) => sum + (Number(reliever.avg_outs_per_appearance || 0) || 0), 0) / sample.length
+    )
+  }
+}
+
+const buildBullpenChainByTeam = ({ date, games }) => {
+  const reuseProfiles = buildRelieverReuseProfiles({ date })
+  const rows = runSqliteJson(
+    `select
+      usage.team_name,
+      usage.pitcher_id,
+      usage.pitcher_name,
+      usage.likely_role,
+      usage.appearances_last3,
+      usage.pitches_last3,
+      usage.first_reliever_likelihood,
+      usage.availability_score,
+      usage.bridge_score,
+      usage.worked_yesterday_flag,
+      usage.back_to_back_flag,
+      usage.last_appearance_date,
+      usage.days_since_last_appearance,
+      usage.avg_outs_per_appearance,
+      usage.raw_json,
+      (
+        select max(pa.pitches_thrown)
+        from mlb_pitcher_appearances pa
+        where pa.pitcher_role='reliever'
+          and pa.pitcher_id = usage.pitcher_id
+          and pa.team_name = usage.team_name
+          and pa.game_date < '${date}'
+          and pa.game_date = usage.last_appearance_date
+      ) as last_appearance_pitches,
+      (
+        select max(pa.outs_recorded)
+        from mlb_pitcher_appearances pa
+        where pa.pitcher_role='reliever'
+          and pa.pitcher_id = usage.pitcher_id
+          and pa.team_name = usage.team_name
+          and pa.game_date < '${date}'
+          and pa.game_date = usage.last_appearance_date
+      ) as last_appearance_outs
+    from mlb_bullpen_usage usage
+    where usage.as_of_date='${date}'
+    order by usage.team_name, usage.first_reliever_likelihood desc;`
   )
 
   const starterNames = new Set(
@@ -740,12 +899,23 @@ const buildBullpenChainByTeam = ({ date, games }) => {
         if (starterNames.has(reliever.pitcher_name)) return false
         return Number(reliever.avg_outs_per_appearance ?? 0) <= 8.5
       })
-      const chosen = (filtered.length ? filtered : relievers).slice(0, 2)
+      const activePool = filtered.length ? filtered : relievers
+      const relieversWithReset = activePool.map((reliever) => ({
+        ...reliever,
+        ...buildRelieverResetProfile(reliever, reuseProfiles)
+      }))
+      const heavyUseRemoved = relieversWithReset.filter((reliever) => reliever.heavyUseResetFlag)
+      const resetFiltered = relieversWithReset.filter((reliever) => !reliever.heavyUseResetFlag)
+      const rankingPool = resetFiltered.length ? resetFiltered : relieversWithReset
+      const chosen = rankingPool.slice(0, 2)
+      const remainingDepth = summarizeBullpenDepth(rankingPool)
+      remainingDepth.removedHeavyUseCount = heavyUseRemoved.length
 
       return [
         teamName,
         {
           opponent: opponentByTeam[teamName] || '',
+          remainingDepth,
           topRelievers: chosen.map((reliever) => ({
             ...(safeJsonParse(reliever.raw_json) || {}),
             pitcherId: Number(reliever.pitcher_id || 0) || null,
@@ -757,7 +927,15 @@ const buildBullpenChainByTeam = ({ date, games }) => {
             expectedOuts: Number(Number(reliever.avg_outs_per_appearance || 0).toFixed(2)),
             workedYesterday: Boolean(reliever.worked_yesterday_flag),
             backToBack: Boolean(reliever.back_to_back_flag),
-            lastAppearanceDate: reliever.last_appearance_date || ''
+            lastAppearanceDate: reliever.last_appearance_date || '',
+            daysSinceLastAppearance: Number(reliever.days_since_last_appearance || 0) || 0,
+            lastAppearancePitches: Number(reliever.last_appearance_pitches || 0) || 0,
+            lastAppearanceOuts: Number(reliever.last_appearance_outs || 0) || 0,
+            adaptivePitchResetThreshold: reliever.adaptivePitchResetThreshold ?? null,
+            quickReuseSample: reliever.quickReuseSample ?? 0,
+            quickReusePitchCeiling: reliever.quickReusePitchCeiling ?? null,
+            heavyUseResetScore: reliever.heavyUseResetScore ?? 0,
+            heavyUseResetFlag: Boolean(reliever.heavyUseResetFlag)
           }))
         }
       ]

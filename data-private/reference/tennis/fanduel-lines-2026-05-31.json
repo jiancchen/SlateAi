@@ -1,0 +1,656 @@
+{
+  "date": "2026-05-31",
+  "source": "FanDuel Sportsbook event-page Chrome scrape",
+  "capturedAt": "2026-05-31T02:11:12.098Z",
+  "matches": [
+    {
+      "match": "Sorana Cirstea vs Wang Xiyu",
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/sorana-cirstea-v-xiyu-wang-35663230",
+      "eventId": "35663230",
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Sorana Cirstea",
+            "odds": -610
+          },
+          {
+            "player": "Xiyu Wang",
+            "odds": 430
+          }
+        ],
+        "gameHandicap": [
+          {
+            "player": "Sorana Cirstea",
+            "spread": -5.5,
+            "odds": -112
+          },
+          {
+            "player": "Xiyu Wang",
+            "spread": 5.5,
+            "odds": -118
+          }
+        ],
+        "totalGames": [
+          {
+            "side": "Over",
+            "line": 19.5,
+            "odds": -116
+          },
+          {
+            "side": "Under",
+            "line": 19.5,
+            "odds": -116
+          }
+        ],
+        "firstSetTotalGames": [
+          {
+            "side": "Over",
+            "line": 9.5,
+            "odds": 118
+          },
+          {
+            "side": "Under",
+            "line": 9.5,
+            "odds": -166
+          }
+        ],
+        "winAtLeastOneSet": [
+          {
+            "market": "Xiyu Wang to win at least one set",
+            "player": "Xiyu Wang",
+            "selection": "Xiyu Wang Yes",
+            "odds": 132
+          },
+          {
+            "market": "Xiyu Wang to win at least one set",
+            "player": "Xiyu Wang",
+            "selection": "Xiyu Wang No",
+            "odds": -180
+          },
+          {
+            "market": "Sorana Cirstea to win at least one set",
+            "player": "Sorana Cirstea",
+            "selection": "Sorana Cirstea Yes",
+            "odds": -1800
+          },
+          {
+            "market": "Sorana Cirstea to win at least one set",
+            "player": "Sorana Cirstea",
+            "selection": "Sorana Cirstea No",
+            "odds": 720
+          }
+        ]
+      },
+      "capturedAt": "2026-05-31T02:10:06.263Z",
+      "source": "FanDuel Sportsbook event-page Chrome scrape"
+    },
+    {
+      "match": "Marta Kostyuk vs Iga Swiatek",
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/marta-kostyuk-v-iga-swiatek-35662992",
+      "eventId": "35662992",
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Marta Kostyuk",
+            "odds": 220
+          },
+          {
+            "player": "Iga Swiatek",
+            "odds": -275
+          }
+        ],
+        "gameHandicap": [
+          {
+            "player": "Marta Kostyuk",
+            "spread": 4.5,
+            "odds": -122
+          },
+          {
+            "player": "Iga Swiatek",
+            "spread": -4.5,
+            "odds": -110
+          }
+        ],
+        "totalGames": [
+          {
+            "side": "Over",
+            "line": 20.5,
+            "odds": -118
+          },
+          {
+            "side": "Under",
+            "line": 20.5,
+            "odds": -112
+          }
+        ],
+        "firstSetTotalGames": [
+          {
+            "side": "Over",
+            "line": 9.5,
+            "odds": 106
+          },
+          {
+            "side": "Under",
+            "line": 9.5,
+            "odds": -148
+          }
+        ],
+        "winAtLeastOneSet": [
+          {
+            "market": "Marta Kostyuk to win at least one set",
+            "player": "Marta Kostyuk",
+            "selection": "Marta Kostyuk Yes",
+            "odds": -120
+          },
+          {
+            "market": "Marta Kostyuk to win at least one set",
+            "player": "Marta Kostyuk",
+            "selection": "Marta Kostyuk No",
+            "odds": -110
+          },
+          {
+            "market": "Iga Swiatek to win at least one set",
+            "player": "Iga Swiatek",
+            "selection": "Iga Swiatek Yes",
+            "odds": -800
+          },
+          {
+            "market": "Iga Swiatek to win at least one set",
+            "player": "Iga Swiatek",
+            "selection": "Iga Swiatek No",
+            "odds": 470
+          }
+        ]
+      },
+      "capturedAt": "2026-05-31T02:10:15.529Z",
+      "source": "FanDuel Sportsbook event-page Chrome scrape"
+    },
+    {
+      "match": "Elina Svitolina vs Belinda Bencic",
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/elina-svitolina-v-belinda-bencic-35665208",
+      "eventId": "35665208",
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Elina Svitolina",
+            "odds": -188
+          },
+          {
+            "player": "Belinda Bencic",
+            "odds": 155
+          }
+        ],
+        "gameHandicap": [
+          {
+            "player": "Elina Svitolina",
+            "spread": -2.5,
+            "odds": -130
+          },
+          {
+            "player": "Belinda Bencic",
+            "spread": 2.5,
+            "odds": -104
+          }
+        ],
+        "totalGames": [
+          {
+            "side": "Over",
+            "line": 21.5,
+            "odds": -122
+          },
+          {
+            "side": "Under",
+            "line": 21.5,
+            "odds": -110
+          }
+        ],
+        "firstSetTotalGames": [
+          {
+            "side": "Over",
+            "line": 9.5,
+            "odds": -116
+          },
+          {
+            "side": "Under",
+            "line": 9.5,
+            "odds": -120
+          }
+        ],
+        "winAtLeastOneSet": [
+          {
+            "market": "Belinda Bencic to win at least one set",
+            "player": "Belinda Bencic",
+            "selection": "Belinda Bencic Yes",
+            "odds": -180
+          },
+          {
+            "market": "Belinda Bencic to win at least one set",
+            "player": "Belinda Bencic",
+            "selection": "Belinda Bencic No",
+            "odds": 132
+          },
+          {
+            "market": "Elina Svitolina to win at least one set",
+            "player": "Elina Svitolina",
+            "selection": "Elina Svitolina Yes",
+            "odds": -550
+          },
+          {
+            "market": "Elina Svitolina to win at least one set",
+            "player": "Elina Svitolina",
+            "selection": "Elina Svitolina No",
+            "odds": 330
+          }
+        ]
+      },
+      "capturedAt": "2026-05-31T02:10:24.974Z",
+      "source": "FanDuel Sportsbook event-page Chrome scrape"
+    },
+    {
+      "match": "Mirra Andreeva vs Jil Teichmann",
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/mirra-andreeva-v-jil-teichmann-35663235",
+      "eventId": "35663235",
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Mirra Andreeva",
+            "odds": -1100
+          },
+          {
+            "player": "Jil Teichmann",
+            "odds": 680
+          }
+        ],
+        "gameHandicap": [
+          {
+            "player": "Mirra Andreeva",
+            "spread": -6.5,
+            "odds": 104
+          },
+          {
+            "player": "Jil Teichmann",
+            "spread": 6.5,
+            "odds": -136
+          }
+        ],
+        "totalGames": [
+          {
+            "side": "Over",
+            "line": 18.5,
+            "odds": -118
+          },
+          {
+            "side": "Under",
+            "line": 18.5,
+            "odds": -112
+          }
+        ],
+        "firstSetTotalGames": [
+          {
+            "side": "Over",
+            "line": 9.5,
+            "odds": 146
+          },
+          {
+            "side": "Under",
+            "line": 9.5,
+            "odds": -210
+          }
+        ],
+        "winAtLeastOneSet": [
+          {
+            "market": "Mirra Andreeva to win at least one set",
+            "player": "Mirra Andreeva",
+            "selection": "Mirra Andreeva Yes",
+            "odds": -3500
+          },
+          {
+            "market": "Mirra Andreeva to win at least one set",
+            "player": "Mirra Andreeva",
+            "selection": "Mirra Andreeva No",
+            "odds": 940
+          },
+          {
+            "market": "Jil Teichmann to win at least one set",
+            "player": "Jil Teichmann",
+            "selection": "Jil Teichmann Yes",
+            "odds": 194
+          },
+          {
+            "market": "Jil Teichmann to win at least one set",
+            "player": "Jil Teichmann",
+            "selection": "Jil Teichmann No",
+            "odds": -280
+          }
+        ]
+      },
+      "capturedAt": "2026-05-31T02:10:34.381Z",
+      "source": "FanDuel Sportsbook event-page Chrome scrape"
+    },
+    {
+      "match": "Casper Ruud vs Joao Fonseca",
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/casper-ruud-v-joao-fonseca-35665336",
+      "eventId": "35665336",
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Casper Ruud",
+            "odds": -160
+          },
+          {
+            "player": "Joao Fonseca",
+            "odds": 132
+          }
+        ],
+        "gameHandicap": [
+          {
+            "player": "Casper Ruud",
+            "spread": -2.5,
+            "odds": -118
+          },
+          {
+            "player": "Joao Fonseca",
+            "spread": 2.5,
+            "odds": -112
+          }
+        ],
+        "totalGames": [
+          {
+            "side": "Over",
+            "line": 38.5,
+            "odds": -118
+          },
+          {
+            "side": "Under",
+            "line": 38.5,
+            "odds": -112
+          }
+        ],
+        "firstSetTotalGames": [
+          {
+            "side": "Over",
+            "line": 9.5,
+            "odds": -138
+          },
+          {
+            "side": "Under",
+            "line": 9.5,
+            "odds": 100
+          }
+        ],
+        "winAtLeastOneSet": [
+          {
+            "market": "Joao Fonseca to win at least one set",
+            "player": "Joao Fonseca",
+            "selection": "Joao Fonseca Yes",
+            "odds": -450
+          },
+          {
+            "market": "Joao Fonseca to win at least one set",
+            "player": "Joao Fonseca",
+            "selection": "Joao Fonseca No",
+            "odds": 290
+          },
+          {
+            "market": "Casper Ruud to win at least one set",
+            "player": "Casper Ruud",
+            "selection": "Casper Ruud Yes",
+            "odds": -950
+          },
+          {
+            "market": "Casper Ruud to win at least one set",
+            "player": "Casper Ruud",
+            "selection": "Casper Ruud No",
+            "odds": 510
+          }
+        ]
+      },
+      "capturedAt": "2026-05-31T02:10:43.712Z",
+      "source": "FanDuel Sportsbook event-page Chrome scrape"
+    },
+    {
+      "match": "Jakub Mensik vs Andrey Rublev",
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/jakub-mensik-v-andrey-rublev-35665055",
+      "eventId": "35665055",
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Jakub Mensik",
+            "odds": 104
+          },
+          {
+            "player": "Andrey Rublev",
+            "odds": -125
+          }
+        ],
+        "gameHandicap": [
+          {
+            "player": "Jakub Mensik",
+            "spread": 1.5,
+            "odds": -120
+          },
+          {
+            "player": "Andrey Rublev",
+            "spread": -1.5,
+            "odds": -110
+          }
+        ],
+        "totalGames": [
+          {
+            "side": "Over",
+            "line": 38.5,
+            "odds": -120
+          },
+          {
+            "side": "Under",
+            "line": 38.5,
+            "odds": -110
+          }
+        ],
+        "firstSetTotalGames": [
+          {
+            "side": "Over",
+            "line": 9.5,
+            "odds": -158
+          },
+          {
+            "side": "Under",
+            "line": 9.5,
+            "odds": 114
+          }
+        ],
+        "winAtLeastOneSet": [
+          {
+            "market": "Andrey Rublev to win at least one set",
+            "player": "Andrey Rublev",
+            "selection": "Andrey Rublev Yes",
+            "odds": -700
+          },
+          {
+            "market": "Andrey Rublev to win at least one set",
+            "player": "Andrey Rublev",
+            "selection": "Andrey Rublev No",
+            "odds": 410
+          },
+          {
+            "market": "Jakub Mensik to win at least one set",
+            "player": "Jakub Mensik",
+            "selection": "Jakub Mensik Yes",
+            "odds": -550
+          },
+          {
+            "market": "Jakub Mensik to win at least one set",
+            "player": "Jakub Mensik",
+            "selection": "Jakub Mensik No",
+            "odds": 340
+          }
+        ]
+      },
+      "capturedAt": "2026-05-31T02:10:53.153Z",
+      "source": "FanDuel Sportsbook event-page Chrome scrape"
+    },
+    {
+      "match": "Rafael Jodar vs Pablo Carreno Busta",
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/rafael-jodar-v-pablo-carreno-busta-35663624",
+      "eventId": "35663624",
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Rafael Jodar",
+            "odds": -480
+          },
+          {
+            "player": "Pablo Carreno Busta",
+            "odds": 360
+          }
+        ],
+        "gameHandicap": [
+          {
+            "player": "Rafael Jodar",
+            "spread": -6.5,
+            "odds": -112
+          },
+          {
+            "player": "Pablo Carreno Busta",
+            "spread": 6.5,
+            "odds": -118
+          }
+        ],
+        "totalGames": [
+          {
+            "side": "Over",
+            "line": 34.5,
+            "odds": -120
+          },
+          {
+            "side": "Under",
+            "line": 34.5,
+            "odds": -110
+          }
+        ],
+        "firstSetTotalGames": [
+          {
+            "side": "Over",
+            "line": 9.5,
+            "odds": -116
+          },
+          {
+            "side": "Under",
+            "line": 9.5,
+            "odds": -122
+          }
+        ],
+        "winAtLeastOneSet": [
+          {
+            "market": "Rafael Jodar to win at least one set",
+            "player": "Rafael Jodar",
+            "selection": "Rafael Jodar Yes",
+            "odds": -3000
+          },
+          {
+            "market": "Rafael Jodar to win at least one set",
+            "player": "Rafael Jodar",
+            "selection": "Rafael Jodar No",
+            "odds": 890
+          },
+          {
+            "market": "Pablo Carreno Busta to win at least one set",
+            "player": "Pablo Carreno Busta",
+            "selection": "Pablo Carreno Busta Yes",
+            "odds": -174
+          },
+          {
+            "market": "Pablo Carreno Busta to win at least one set",
+            "player": "Pablo Carreno Busta",
+            "selection": "Pablo Carreno Busta No",
+            "odds": 128
+          }
+        ]
+      },
+      "capturedAt": "2026-05-31T02:11:02.635Z",
+      "source": "FanDuel Sportsbook event-page Chrome scrape"
+    },
+    {
+      "match": "Jesper de Jong vs Alexander Zverev",
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/jesper-de-jong-v-alexander-zverev-35665416",
+      "eventId": "35665416",
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Jesper De Jong",
+            "odds": 1000
+          },
+          {
+            "player": "Alexander Zverev",
+            "odds": -2100
+          }
+        ],
+        "gameHandicap": [
+          {
+            "player": "Jesper De Jong",
+            "spread": 7.5,
+            "odds": 108
+          },
+          {
+            "player": "Alexander Zverev",
+            "spread": -7.5,
+            "odds": -142
+          }
+        ],
+        "totalGames": [
+          {
+            "side": "Over",
+            "line": 30.5,
+            "odds": -120
+          },
+          {
+            "side": "Under",
+            "line": 30.5,
+            "odds": -110
+          }
+        ],
+        "firstSetTotalGames": [
+          {
+            "side": "Over",
+            "line": 9.5,
+            "odds": -108
+          },
+          {
+            "side": "Under",
+            "line": 9.5,
+            "odds": -130
+          }
+        ],
+        "winAtLeastOneSet": [
+          {
+            "market": "Alexander Zverev to win at least one set",
+            "player": "Alexander Zverev",
+            "selection": "Alexander Zverev Yes",
+            "odds": -8000
+          },
+          {
+            "market": "Alexander Zverev to win at least one set",
+            "player": "Alexander Zverev",
+            "selection": "Alexander Zverev No",
+            "odds": 2100
+          },
+          {
+            "market": "Jesper De Jong to win at least one set",
+            "player": "Jesper De Jong",
+            "selection": "Jesper De Jong Yes",
+            "odds": 146
+          },
+          {
+            "market": "Jesper De Jong to win at least one set",
+            "player": "Jesper De Jong",
+            "selection": "Jesper De Jong No",
+            "odds": -200
+          }
+        ]
+      },
+      "capturedAt": "2026-05-31T02:11:12.096Z",
+      "source": "FanDuel Sportsbook event-page Chrome scrape"
+    }
+  ],
+  "unmatched": []
+}

@@ -108,50 +108,60 @@ const rawTennisGames = [
       }
     ],
     "valueBoard": {
-      "note": "No sportsbook price captured; value math is unavailable.",
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
       "ml": {
         "marketType": "ML",
         "selection": "Iga Swiatek",
-        "americanOdds": null,
+        "americanOdds": -275,
         "modelPct": 54,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
-        "valueIssue": "Need posted ML price before EV can be trusted.",
-        "valueGrade": "Need price",
+        "impliedPct": 73.3,
+        "edgePct": -19.3,
+        "evPer100": -26.4,
+        "netEvPer100": -28.4,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Negative EV",
         "betGrade": false
       },
       "spread": {
         "marketType": "Spread",
         "selection": "Iga Swiatek",
-        "line": null,
-        "americanOdds": null,
-        "modelPct": 48,
-        "valueIssue": "Need posted game spread before grading.",
-        "valueGrade": "Need price",
+        "line": -4.5,
+        "americanOdds": -110,
+        "modelPct": 52,
+        "impliedPct": 52.4,
+        "edgePct": -0.4,
+        "evPer100": -0.7,
+        "netEvPer100": -2.7,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Near fair",
         "betGrade": false
       },
       "total": {
         "marketType": "Total",
-        "selection": "Price required",
-        "line": null,
-        "americanOdds": null,
-        "modelPct": 46,
-        "valueIssue": "Need posted match total before grading.",
-        "valueGrade": "Need price",
+        "selection": "No bet",
+        "line": 20.5,
+        "overOdds": -118,
+        "underOdds": -112,
+        "valueGrade": "No direction",
+        "reason": "FanDuel total is 20.5; model did not clear an over/under edge.",
         "betGrade": false
       },
       "firstSetTotal": {
         "marketType": "First-set total",
-        "selection": "Price required",
-        "line": null,
+        "selection": "Pass / near line",
+        "line": 9.5,
+        "americanOdds": null,
         "expectedGames": 9.5,
-        "confidence": 54,
+        "confidence": 50,
         "tiebreakRisk": 38,
         "earlyBreakRisk": 62,
-        "valueGrade": "Needs posted first-set total",
-        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "modelPct": 50,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Near fair",
+        "reason": "Expected first-set games 9.5 vs FanDuel 9.5; Pass / near line.",
         "betGrade": false
       },
       "setWin": [
@@ -159,13 +169,19 @@ const rawTennisGames = [
           "name": "Marta Kostyuk",
           "confidence": 60,
           "modelPct": 46,
-          "label": "Needs early hold pressure"
+          "label": "Needs early hold pressure",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
         },
         {
           "name": "Iga Swiatek",
           "confidence": 71,
           "modelPct": 54,
-          "label": "Live to win a set"
+          "label": "Live to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
         }
       ]
     },
@@ -176,48 +192,48 @@ const rawTennisGames = [
         "label": "ML value",
         "selection": "Iga Swiatek",
         "line": null,
-        "americanOdds": null,
+        "americanOdds": -275,
         "modelPct": 54,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
-        "grade": "Need price",
-        "issue": "Need posted ML price before EV can be trusted.",
-        "reason": "Compare model probability to break-even price before betting ML."
+        "impliedPct": 73.3,
+        "edgePct": -19.3,
+        "evPer100": -26.4,
+        "netEvPer100": -28.4,
+        "grade": "Negative EV",
+        "issue": "Favorite price needs better proof",
+        "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
       },
       {
         "marketType": "Game spread",
         "label": "Game spread",
         "selection": "Iga Swiatek",
-        "line": null,
-        "americanOdds": null,
-        "modelPct": 48,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
+        "line": -4.5,
+        "americanOdds": -110,
+        "modelPct": 52,
+        "impliedPct": 52.4,
+        "edgePct": -0.4,
+        "evPer100": -0.7,
+        "netEvPer100": -2.7,
         "expectedGames": null,
         "edgeGames": null,
-        "confidence": 48,
-        "grade": "Need price",
-        "reason": "Spread needs projected margin and posted number before grading."
+        "confidence": 52,
+        "grade": "Near fair",
+        "reason": "Spread is number-dependent; verify first service cycle"
       },
       {
         "marketType": "Total games",
         "label": "O/U games",
-        "selection": "Price required",
-        "line": null,
+        "selection": "No bet",
+        "line": 20.5,
         "americanOdds": null,
-        "modelPct": 46,
+        "modelPct": null,
         "impliedPct": null,
         "edgePct": null,
         "evPer100": null,
         "netEvPer100": null,
         "expectedGames": null,
         "edgeGames": null,
-        "confidence": 46,
-        "grade": "Need price",
+        "confidence": null,
+        "grade": "No direction",
         "reason": "Total games need expected match games vs the posted line."
       },
       {
@@ -245,13 +261,13 @@ const rawTennisGames = [
       {
         "marketType": "First-set total games",
         "label": "1st set O/U",
-        "selection": "Price required",
+        "selection": "Pass / near line",
         "expectedGames": 9.5,
-        "confidence": 54,
+        "confidence": 50,
         "tiebreakRisk": 38,
         "earlyBreakRisk": 62,
-        "grade": "Needs posted first-set total",
-        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        "grade": "Near fair",
+        "reason": "Expected first-set games 9.5 vs FanDuel 9.5; Pass / near line."
       }
     ],
     "ensembleValueCase": {
@@ -283,7 +299,101 @@ const rawTennisGames = [
         "Marta Kostyuk risk: double-fault pressure (4.9 avg)."
       ]
     },
-    "marketData": null,
+    "marketData": {
+      "source": "FanDuel Sportsbook",
+      "sourceDetail": "FanDuel Sportsbook event-page Chrome scrape",
+      "capturedAt": "2026-05-31T02:10:15.529Z",
+      "eventUrl": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/marta-kostyuk-v-iga-swiatek-35662992",
+      "eventId": "35662992",
+      "players": [
+        {
+          "name": "Marta Kostyuk",
+          "odds": 220,
+          "americanLabel": "+220",
+          "impliedPct": 31.3,
+          "decimalOdds": 3.2,
+          "modelPct": 46,
+          "edgePct": 14.8,
+          "priceBand": "Underdog",
+          "grossProfitPct": 220,
+          "grossPayoutMultiple": 3.2,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 220
+        },
+        {
+          "name": "Iga Swiatek",
+          "odds": -275,
+          "americanLabel": "-275",
+          "impliedPct": 73.3,
+          "decimalOdds": 1.364,
+          "modelPct": 54,
+          "edgePct": -19.3,
+          "priceBand": "Low-payout favorite",
+          "grossProfitPct": 36.4,
+          "grossPayoutMultiple": 1.364,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 36.4
+        }
+      ],
+      "desk": {
+        "name": "Iga Swiatek",
+        "odds": -275,
+        "americanLabel": "-275",
+        "impliedPct": 73.3,
+        "decimalOdds": 1.364,
+        "modelPct": 54,
+        "edgePct": -19.3,
+        "priceBand": "Low-payout favorite",
+        "grossProfitPct": 36.4,
+        "grossPayoutMultiple": 1.364,
+        "centsAtRisk": 100,
+        "centsProfitIfWin": 36.4
+      },
+      "spread": {
+        "player": "Iga Swiatek",
+        "spread": -4.5,
+        "odds": -110
+      },
+      "total": {
+        "side": "Over",
+        "line": 20.5,
+        "odds": -118
+      },
+      "totalOver": {
+        "side": "Over",
+        "line": 20.5,
+        "odds": -118
+      },
+      "totalUnder": {
+        "side": "Under",
+        "line": 20.5,
+        "odds": -112
+      },
+      "firstSetTotal": {
+        "side": "Over",
+        "line": 9.5,
+        "odds": 106
+      },
+      "firstSetTotalOver": {
+        "side": "Over",
+        "line": 9.5,
+        "odds": 106
+      },
+      "firstSetTotalUnder": {
+        "side": "Under",
+        "line": 9.5,
+        "odds": -148
+      },
+      "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+      "spreadValue": "Iga Swiatek -4.5 (-110)",
+      "totalValue": "20.5 games: Over -118 / Under -112",
+      "firstSetTotalValue": "9.5 1st-set games: Over +106 / Under -148",
+      "spreadLean": "Spread is number-dependent; verify first service cycle",
+      "totalLean": "Total needs live serve data before entry",
+      "mlValue": "Marta Kostyuk +220 / Iga Swiatek -275",
+      "marketNote": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+      "noVigNote": "Model 54% vs FanDuel implied 73.3% (-19.3 pts)."
+    },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Marta-Kostyuk-Vs-Iga-Swiatek/",
     "players": [
       {
@@ -474,50 +584,60 @@ const rawTennisGames = [
       }
     ],
     "valueBoard": {
-      "note": "No sportsbook price captured; value math is unavailable.",
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
       "ml": {
         "marketType": "ML",
         "selection": "Sorana Cirstea",
-        "americanOdds": null,
+        "americanOdds": -610,
         "modelPct": 71,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
-        "valueIssue": "Need posted ML price before EV can be trusted.",
-        "valueGrade": "Need price",
+        "impliedPct": 85.9,
+        "edgePct": -14.9,
+        "evPer100": -17.4,
+        "netEvPer100": -19.4,
+        "feePer100": 2,
+        "valueIssue": "Favorite tax trap",
+        "valueGrade": "Favorite tax trap",
         "betGrade": false
       },
       "spread": {
         "marketType": "Spread",
         "selection": "Sorana Cirstea",
-        "line": null,
-        "americanOdds": null,
+        "line": -5.5,
+        "americanOdds": -112,
         "modelPct": 65,
-        "valueIssue": "Need posted game spread before grading.",
-        "valueGrade": "Need price",
+        "impliedPct": 52.8,
+        "edgePct": 12.2,
+        "evPer100": 23,
+        "netEvPer100": 21,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Watch only",
         "betGrade": false
       },
       "total": {
         "marketType": "Total",
-        "selection": "Price required",
-        "line": null,
-        "americanOdds": null,
-        "modelPct": 63,
-        "valueIssue": "Need posted match total before grading.",
-        "valueGrade": "Need price",
+        "selection": "No bet",
+        "line": 19.5,
+        "overOdds": -116,
+        "underOdds": -116,
+        "valueGrade": "No direction",
+        "reason": "FanDuel total is 19.5; model did not clear an over/under edge.",
         "betGrade": false
       },
       "firstSetTotal": {
         "marketType": "First-set total",
-        "selection": "Price required",
-        "line": null,
+        "selection": "Under 9.5",
+        "line": 9.5,
+        "americanOdds": -166,
         "expectedGames": 8.8,
-        "confidence": 54,
+        "confidence": 56,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
-        "valueGrade": "Needs posted first-set total",
-        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "modelPct": 56,
+        "evPer100": -10.3,
+        "netEvPer100": -12.3,
+        "valueGrade": "Thin value",
+        "reason": "Expected first-set games 8.8 vs FanDuel 9.5; Under 9.5.",
         "betGrade": false
       },
       "setWin": [
@@ -525,13 +645,19 @@ const rawTennisGames = [
           "name": "Sorana Cirstea",
           "confidence": 79,
           "modelPct": 71,
-          "label": "Live to win a set"
+          "label": "Live to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
         },
         {
           "name": "Wang Xiyu",
           "confidence": 42,
           "modelPct": 29,
-          "label": "Thin set-win path"
+          "label": "Thin set-win path",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
         }
       ]
     },
@@ -542,48 +668,48 @@ const rawTennisGames = [
         "label": "ML value",
         "selection": "Sorana Cirstea",
         "line": null,
-        "americanOdds": null,
+        "americanOdds": -610,
         "modelPct": 71,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
-        "grade": "Need price",
-        "issue": "Need posted ML price before EV can be trusted.",
-        "reason": "Compare model probability to break-even price before betting ML."
+        "impliedPct": 85.9,
+        "edgePct": -14.9,
+        "evPer100": -17.4,
+        "netEvPer100": -19.4,
+        "grade": "Favorite tax trap",
+        "issue": "Favorite tax trap",
+        "reason": "Likely winner can still be a bad ML bet after payout and fees. Check spread, total, and set-win instead."
       },
       {
         "marketType": "Game spread",
         "label": "Game spread",
         "selection": "Sorana Cirstea",
-        "line": null,
-        "americanOdds": null,
+        "line": -5.5,
+        "americanOdds": -112,
         "modelPct": 65,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
+        "impliedPct": 52.8,
+        "edgePct": 12.2,
+        "evPer100": 23,
+        "netEvPer100": 21,
         "expectedGames": null,
         "edgeGames": null,
         "confidence": 65,
-        "grade": "Need price",
-        "reason": "Spread needs projected margin and posted number before grading."
+        "grade": "Watch only",
+        "reason": "Spread is number-dependent; verify first service cycle"
       },
       {
         "marketType": "Total games",
         "label": "O/U games",
-        "selection": "Price required",
-        "line": null,
+        "selection": "No bet",
+        "line": 19.5,
         "americanOdds": null,
-        "modelPct": 63,
+        "modelPct": null,
         "impliedPct": null,
         "edgePct": null,
         "evPer100": null,
         "netEvPer100": null,
         "expectedGames": null,
         "edgeGames": null,
-        "confidence": 63,
-        "grade": "Need price",
+        "confidence": null,
+        "grade": "No direction",
         "reason": "Total games need expected match games vs the posted line."
       },
       {
@@ -611,13 +737,13 @@ const rawTennisGames = [
       {
         "marketType": "First-set total games",
         "label": "1st set O/U",
-        "selection": "Price required",
+        "selection": "Under 9.5",
         "expectedGames": 8.8,
-        "confidence": 54,
+        "confidence": 56,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
-        "grade": "Needs posted first-set total",
-        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        "grade": "Thin value",
+        "reason": "Expected first-set games 8.8 vs FanDuel 9.5; Under 9.5."
       }
     ],
     "ensembleValueCase": {
@@ -648,7 +774,101 @@ const rawTennisGames = [
         "Sorana Cirstea strength: protects serve well (80% hold)."
       ]
     },
-    "marketData": null,
+    "marketData": {
+      "source": "FanDuel Sportsbook",
+      "sourceDetail": "FanDuel Sportsbook event-page Chrome scrape",
+      "capturedAt": "2026-05-31T02:10:06.263Z",
+      "eventUrl": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/sorana-cirstea-v-xiyu-wang-35663230",
+      "eventId": "35663230",
+      "players": [
+        {
+          "name": "Sorana Cirstea",
+          "odds": -610,
+          "americanLabel": "-610",
+          "impliedPct": 85.9,
+          "decimalOdds": 1.164,
+          "modelPct": 71,
+          "edgePct": -14.9,
+          "priceBand": "Very expensive favorite",
+          "grossProfitPct": 16.4,
+          "grossPayoutMultiple": 1.164,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 16.4
+        },
+        {
+          "name": "Wang Xiyu",
+          "odds": 430,
+          "americanLabel": "+430",
+          "impliedPct": 18.9,
+          "decimalOdds": 5.3,
+          "modelPct": 29,
+          "edgePct": 10.1,
+          "priceBand": "Underdog",
+          "grossProfitPct": 430,
+          "grossPayoutMultiple": 5.3,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 430
+        }
+      ],
+      "desk": {
+        "name": "Sorana Cirstea",
+        "odds": -610,
+        "americanLabel": "-610",
+        "impliedPct": 85.9,
+        "decimalOdds": 1.164,
+        "modelPct": 71,
+        "edgePct": -14.9,
+        "priceBand": "Very expensive favorite",
+        "grossProfitPct": 16.4,
+        "grossPayoutMultiple": 1.164,
+        "centsAtRisk": 100,
+        "centsProfitIfWin": 16.4
+      },
+      "spread": {
+        "player": "Sorana Cirstea",
+        "spread": -5.5,
+        "odds": -112
+      },
+      "total": {
+        "side": "Over",
+        "line": 19.5,
+        "odds": -116
+      },
+      "totalOver": {
+        "side": "Over",
+        "line": 19.5,
+        "odds": -116
+      },
+      "totalUnder": {
+        "side": "Under",
+        "line": 19.5,
+        "odds": -116
+      },
+      "firstSetTotal": {
+        "side": "Over",
+        "line": 9.5,
+        "odds": 118
+      },
+      "firstSetTotalOver": {
+        "side": "Over",
+        "line": 9.5,
+        "odds": 118
+      },
+      "firstSetTotalUnder": {
+        "side": "Under",
+        "line": 9.5,
+        "odds": -166
+      },
+      "priceAction": "ML payout is tiny; use spread/total or pass unless the number moves.",
+      "spreadValue": "Sorana Cirstea -5.5 (-112)",
+      "totalValue": "19.5 games: Over -116 / Under -116",
+      "firstSetTotalValue": "9.5 1st-set games: Over +118 / Under -166",
+      "spreadLean": "Spread is number-dependent; verify first service cycle",
+      "totalLean": "Total needs live serve data before entry",
+      "mlValue": "Sorana Cirstea -610 / Wang Xiyu +430",
+      "marketNote": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. ML payout is tiny; use spread/total or pass unless the number moves.",
+      "noVigNote": "Model 71% vs FanDuel implied 85.9% (-14.9 pts)."
+    },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Sorana-Cirstea-Vs-Xiyu-Wang/",
     "players": [
       {
@@ -837,50 +1057,60 @@ const rawTennisGames = [
       }
     ],
     "valueBoard": {
-      "note": "No sportsbook price captured; value math is unavailable.",
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
       "ml": {
         "marketType": "ML",
         "selection": "Elina Svitolina",
-        "americanOdds": null,
+        "americanOdds": -188,
         "modelPct": 56,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
-        "valueIssue": "Need posted ML price before EV can be trusted.",
-        "valueGrade": "Need price",
+        "impliedPct": 65.3,
+        "edgePct": -9.3,
+        "evPer100": -14.2,
+        "netEvPer100": -16.2,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Negative EV",
         "betGrade": false
       },
       "spread": {
         "marketType": "Spread",
         "selection": "Elina Svitolina",
-        "line": null,
-        "americanOdds": null,
-        "modelPct": 50,
-        "valueIssue": "Need posted game spread before grading.",
-        "valueGrade": "Need price",
+        "line": -2.5,
+        "americanOdds": -130,
+        "modelPct": 44,
+        "impliedPct": 56.5,
+        "edgePct": -12.5,
+        "evPer100": -22.2,
+        "netEvPer100": -24.2,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Negative EV",
         "betGrade": false
       },
       "total": {
         "marketType": "Total",
-        "selection": "Price required",
-        "line": null,
-        "americanOdds": null,
-        "modelPct": 48,
-        "valueIssue": "Need posted match total before grading.",
-        "valueGrade": "Need price",
+        "selection": "No bet",
+        "line": 21.5,
+        "overOdds": -122,
+        "underOdds": -110,
+        "valueGrade": "No direction",
+        "reason": "FanDuel total is 21.5; model did not clear an over/under edge.",
         "betGrade": false
       },
       "firstSetTotal": {
         "marketType": "First-set total",
-        "selection": "Price required",
-        "line": null,
+        "selection": "Pass / near line",
+        "line": 9.5,
+        "americanOdds": null,
         "expectedGames": 9.5,
-        "confidence": 54,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
-        "valueGrade": "Needs posted first-set total",
-        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "modelPct": 50,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Near fair",
+        "reason": "Expected first-set games 9.5 vs FanDuel 9.5; Pass / near line.",
         "betGrade": false
       },
       "setWin": [
@@ -888,13 +1118,19 @@ const rawTennisGames = [
           "name": "Elina Svitolina",
           "confidence": 71,
           "modelPct": 56,
-          "label": "Live to win a set"
+          "label": "Live to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
         },
         {
           "name": "Belinda Bencic",
           "confidence": 60,
           "modelPct": 44,
-          "label": "Needs early hold pressure"
+          "label": "Needs early hold pressure",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
         }
       ]
     },
@@ -905,48 +1141,48 @@ const rawTennisGames = [
         "label": "ML value",
         "selection": "Elina Svitolina",
         "line": null,
-        "americanOdds": null,
+        "americanOdds": -188,
         "modelPct": 56,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
-        "grade": "Need price",
-        "issue": "Need posted ML price before EV can be trusted.",
-        "reason": "Compare model probability to break-even price before betting ML."
+        "impliedPct": 65.3,
+        "edgePct": -9.3,
+        "evPer100": -14.2,
+        "netEvPer100": -16.2,
+        "grade": "Negative EV",
+        "issue": "Favorite price needs better proof",
+        "reason": "FanDuel price is richer than the model; pass ML unless live state improves."
       },
       {
         "marketType": "Game spread",
         "label": "Game spread",
         "selection": "Elina Svitolina",
-        "line": null,
-        "americanOdds": null,
-        "modelPct": 50,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
+        "line": -2.5,
+        "americanOdds": -130,
+        "modelPct": 44,
+        "impliedPct": 56.5,
+        "edgePct": -12.5,
+        "evPer100": -22.2,
+        "netEvPer100": -24.2,
         "expectedGames": null,
         "edgeGames": null,
-        "confidence": 50,
-        "grade": "Need price",
-        "reason": "Spread needs projected margin and posted number before grading."
+        "confidence": 44,
+        "grade": "Negative EV",
+        "reason": "Spread is number-dependent; verify first service cycle"
       },
       {
         "marketType": "Total games",
         "label": "O/U games",
-        "selection": "Price required",
-        "line": null,
+        "selection": "No bet",
+        "line": 21.5,
         "americanOdds": null,
-        "modelPct": 48,
+        "modelPct": null,
         "impliedPct": null,
         "edgePct": null,
         "evPer100": null,
         "netEvPer100": null,
         "expectedGames": null,
         "edgeGames": null,
-        "confidence": 48,
-        "grade": "Need price",
+        "confidence": null,
+        "grade": "No direction",
         "reason": "Total games need expected match games vs the posted line."
       },
       {
@@ -974,13 +1210,13 @@ const rawTennisGames = [
       {
         "marketType": "First-set total games",
         "label": "1st set O/U",
-        "selection": "Price required",
+        "selection": "Pass / near line",
         "expectedGames": 9.5,
-        "confidence": 54,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
-        "grade": "Needs posted first-set total",
-        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        "grade": "Near fair",
+        "reason": "Expected first-set games 9.5 vs FanDuel 9.5; Pass / near line."
       }
     ],
     "ensembleValueCase": {
@@ -1010,7 +1246,101 @@ const rawTennisGames = [
         "Elina Svitolina risk: faces too many break points (11.4 avg)."
       ]
     },
-    "marketData": null,
+    "marketData": {
+      "source": "FanDuel Sportsbook",
+      "sourceDetail": "FanDuel Sportsbook event-page Chrome scrape",
+      "capturedAt": "2026-05-31T02:10:24.974Z",
+      "eventUrl": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/elina-svitolina-v-belinda-bencic-35665208",
+      "eventId": "35665208",
+      "players": [
+        {
+          "name": "Elina Svitolina",
+          "odds": -188,
+          "americanLabel": "-188",
+          "impliedPct": 65.3,
+          "decimalOdds": 1.532,
+          "modelPct": 56,
+          "edgePct": -9.3,
+          "priceBand": "Moderate favorite",
+          "grossProfitPct": 53.2,
+          "grossPayoutMultiple": 1.532,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 53.2
+        },
+        {
+          "name": "Belinda Bencic",
+          "odds": 155,
+          "americanLabel": "+155",
+          "impliedPct": 39.2,
+          "decimalOdds": 2.55,
+          "modelPct": 44,
+          "edgePct": 4.8,
+          "priceBand": "Underdog",
+          "grossProfitPct": 155,
+          "grossPayoutMultiple": 2.55,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 155
+        }
+      ],
+      "desk": {
+        "name": "Elina Svitolina",
+        "odds": -188,
+        "americanLabel": "-188",
+        "impliedPct": 65.3,
+        "decimalOdds": 1.532,
+        "modelPct": 56,
+        "edgePct": -9.3,
+        "priceBand": "Moderate favorite",
+        "grossProfitPct": 53.2,
+        "grossPayoutMultiple": 1.532,
+        "centsAtRisk": 100,
+        "centsProfitIfWin": 53.2
+      },
+      "spread": {
+        "player": "Elina Svitolina",
+        "spread": -2.5,
+        "odds": -130
+      },
+      "total": {
+        "side": "Over",
+        "line": 21.5,
+        "odds": -122
+      },
+      "totalOver": {
+        "side": "Over",
+        "line": 21.5,
+        "odds": -122
+      },
+      "totalUnder": {
+        "side": "Under",
+        "line": 21.5,
+        "odds": -110
+      },
+      "firstSetTotal": {
+        "side": "Over",
+        "line": 9.5,
+        "odds": -116
+      },
+      "firstSetTotalOver": {
+        "side": "Over",
+        "line": 9.5,
+        "odds": -116
+      },
+      "firstSetTotalUnder": {
+        "side": "Under",
+        "line": 9.5,
+        "odds": -120
+      },
+      "priceAction": "FanDuel price is richer than the model; pass ML unless live state improves.",
+      "spreadValue": "Elina Svitolina -2.5 (-130)",
+      "totalValue": "21.5 games: Over -122 / Under -110",
+      "firstSetTotalValue": "9.5 1st-set games: Over -116 / Under -120",
+      "spreadLean": "Spread is number-dependent; verify first service cycle",
+      "totalLean": "Total needs live serve data before entry",
+      "mlValue": "Elina Svitolina -188 / Belinda Bencic +155",
+      "marketNote": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. FanDuel price is richer than the model; pass ML unless live state improves.",
+      "noVigNote": "Model 56% vs FanDuel implied 65.3% (-9.3 pts)."
+    },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Elina-Svitolina-Vs-Belinda-Bencic/",
     "players": [
       {
@@ -1195,50 +1525,60 @@ const rawTennisGames = [
       }
     ],
     "valueBoard": {
-      "note": "No sportsbook price captured; value math is unavailable.",
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
       "ml": {
         "marketType": "ML",
         "selection": "Rafael Jodar",
-        "americanOdds": null,
+        "americanOdds": -480,
         "modelPct": 56,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
-        "valueIssue": "Need posted ML price before EV can be trusted.",
-        "valueGrade": "Need price",
+        "impliedPct": 82.8,
+        "edgePct": -26.8,
+        "evPer100": -32.3,
+        "netEvPer100": -34.3,
+        "feePer100": 2,
+        "valueIssue": "Favorite tax trap",
+        "valueGrade": "Favorite tax trap",
         "betGrade": false
       },
       "spread": {
         "marketType": "Spread",
         "selection": "Rafael Jodar",
-        "line": null,
-        "americanOdds": null,
-        "modelPct": 50,
-        "valueIssue": "Need posted game spread before grading.",
-        "valueGrade": "Need price",
+        "line": -6.5,
+        "americanOdds": -112,
+        "modelPct": 46,
+        "impliedPct": 52.8,
+        "edgePct": -6.8,
+        "evPer100": -12.9,
+        "netEvPer100": -14.9,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Negative EV",
         "betGrade": false
       },
       "total": {
         "marketType": "Total",
-        "selection": "Price required",
-        "line": null,
-        "americanOdds": null,
-        "modelPct": 48,
-        "valueIssue": "Need posted match total before grading.",
-        "valueGrade": "Need price",
+        "selection": "No bet",
+        "line": 34.5,
+        "overOdds": -120,
+        "underOdds": -110,
+        "valueGrade": "No direction",
+        "reason": "FanDuel total is 34.5; model did not clear an over/under edge.",
         "betGrade": false
       },
       "firstSetTotal": {
         "marketType": "First-set total",
-        "selection": "Price required",
-        "line": null,
+        "selection": "Pass / near line",
+        "line": 9.5,
+        "americanOdds": null,
         "expectedGames": 9.5,
-        "confidence": 54,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
-        "valueGrade": "Needs posted first-set total",
-        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "modelPct": 50,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Near fair",
+        "reason": "Expected first-set games 9.5 vs FanDuel 9.5; Pass / near line.",
         "betGrade": false
       },
       "setWin": [
@@ -1246,13 +1586,19 @@ const rawTennisGames = [
           "name": "Rafael Jodar",
           "confidence": 86,
           "modelPct": 56,
-          "label": "Strong set-win path"
+          "label": "Strong set-win path",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
         },
         {
           "name": "Pablo Carreno Busta",
           "confidence": 73,
           "modelPct": 44,
-          "label": "Live to win a set"
+          "label": "Live to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
         }
       ]
     },
@@ -1263,48 +1609,48 @@ const rawTennisGames = [
         "label": "ML value",
         "selection": "Rafael Jodar",
         "line": null,
-        "americanOdds": null,
+        "americanOdds": -480,
         "modelPct": 56,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
-        "grade": "Need price",
-        "issue": "Need posted ML price before EV can be trusted.",
-        "reason": "Compare model probability to break-even price before betting ML."
+        "impliedPct": 82.8,
+        "edgePct": -26.8,
+        "evPer100": -32.3,
+        "netEvPer100": -34.3,
+        "grade": "Favorite tax trap",
+        "issue": "Favorite tax trap",
+        "reason": "Likely winner can still be a bad ML bet after payout and fees. Check spread, total, and set-win instead."
       },
       {
         "marketType": "Game spread",
         "label": "Game spread",
         "selection": "Rafael Jodar",
-        "line": null,
-        "americanOdds": null,
-        "modelPct": 50,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
+        "line": -6.5,
+        "americanOdds": -112,
+        "modelPct": 46,
+        "impliedPct": 52.8,
+        "edgePct": -6.8,
+        "evPer100": -12.9,
+        "netEvPer100": -14.9,
         "expectedGames": null,
         "edgeGames": null,
-        "confidence": 50,
-        "grade": "Need price",
-        "reason": "Spread needs projected margin and posted number before grading."
+        "confidence": 46,
+        "grade": "Negative EV",
+        "reason": "Large game spread; ML may be cleaner than laying games"
       },
       {
         "marketType": "Total games",
         "label": "O/U games",
-        "selection": "Price required",
-        "line": null,
+        "selection": "No bet",
+        "line": 34.5,
         "americanOdds": null,
-        "modelPct": 48,
+        "modelPct": null,
         "impliedPct": null,
         "edgePct": null,
         "evPer100": null,
         "netEvPer100": null,
         "expectedGames": null,
         "edgeGames": null,
-        "confidence": 48,
-        "grade": "Need price",
+        "confidence": null,
+        "grade": "No direction",
         "reason": "Total games need expected match games vs the posted line."
       },
       {
@@ -1332,13 +1678,13 @@ const rawTennisGames = [
       {
         "marketType": "First-set total games",
         "label": "1st set O/U",
-        "selection": "Price required",
+        "selection": "Pass / near line",
         "expectedGames": 9.5,
-        "confidence": 54,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
-        "grade": "Needs posted first-set total",
-        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        "grade": "Near fair",
+        "reason": "Expected first-set games 9.5 vs FanDuel 9.5; Pass / near line."
       }
     ],
     "ensembleValueCase": {
@@ -1363,7 +1709,101 @@ const rawTennisGames = [
         "Market still prices Pablo Carreno Busta as a real underdog at 20% implied."
       ]
     },
-    "marketData": null,
+    "marketData": {
+      "source": "FanDuel Sportsbook",
+      "sourceDetail": "FanDuel Sportsbook event-page Chrome scrape",
+      "capturedAt": "2026-05-31T02:11:02.635Z",
+      "eventUrl": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/rafael-jodar-v-pablo-carreno-busta-35663624",
+      "eventId": "35663624",
+      "players": [
+        {
+          "name": "Rafael Jodar",
+          "odds": -480,
+          "americanLabel": "-480",
+          "impliedPct": 82.8,
+          "decimalOdds": 1.208,
+          "modelPct": 56,
+          "edgePct": -26.8,
+          "priceBand": "Very expensive favorite",
+          "grossProfitPct": 20.8,
+          "grossPayoutMultiple": 1.208,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 20.8
+        },
+        {
+          "name": "Pablo Carreno Busta",
+          "odds": 360,
+          "americanLabel": "+360",
+          "impliedPct": 21.7,
+          "decimalOdds": 4.6,
+          "modelPct": 44,
+          "edgePct": 22.3,
+          "priceBand": "Underdog",
+          "grossProfitPct": 360,
+          "grossPayoutMultiple": 4.6,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 360
+        }
+      ],
+      "desk": {
+        "name": "Rafael Jodar",
+        "odds": -480,
+        "americanLabel": "-480",
+        "impliedPct": 82.8,
+        "decimalOdds": 1.208,
+        "modelPct": 56,
+        "edgePct": -26.8,
+        "priceBand": "Very expensive favorite",
+        "grossProfitPct": 20.8,
+        "grossPayoutMultiple": 1.208,
+        "centsAtRisk": 100,
+        "centsProfitIfWin": 20.8
+      },
+      "spread": {
+        "player": "Rafael Jodar",
+        "spread": -6.5,
+        "odds": -112
+      },
+      "total": {
+        "side": "Over",
+        "line": 34.5,
+        "odds": -120
+      },
+      "totalOver": {
+        "side": "Over",
+        "line": 34.5,
+        "odds": -120
+      },
+      "totalUnder": {
+        "side": "Under",
+        "line": 34.5,
+        "odds": -110
+      },
+      "firstSetTotal": {
+        "side": "Over",
+        "line": 9.5,
+        "odds": -116
+      },
+      "firstSetTotalOver": {
+        "side": "Over",
+        "line": 9.5,
+        "odds": -116
+      },
+      "firstSetTotalUnder": {
+        "side": "Under",
+        "line": 9.5,
+        "odds": -122
+      },
+      "priceAction": "ML payout is tiny; use spread/total or pass unless the number moves.",
+      "spreadValue": "Rafael Jodar -6.5 (-112)",
+      "totalValue": "34.5 games: Over -120 / Under -110",
+      "firstSetTotalValue": "9.5 1st-set games: Over -116 / Under -122",
+      "spreadLean": "Large game spread; ML may be cleaner than laying games",
+      "totalLean": "Total needs live serve data before entry",
+      "mlValue": "Rafael Jodar -480 / Pablo Carreno Busta +360",
+      "marketNote": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. ML payout is tiny; use spread/total or pass unless the number moves.",
+      "noVigNote": "Model 56% vs FanDuel implied 82.8% (-26.8 pts)."
+    },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Rafael-Jodar-Vs-Pablo-Carreno-Busta/",
     "players": [
       {
@@ -1550,50 +1990,60 @@ const rawTennisGames = [
       }
     ],
     "valueBoard": {
-      "note": "No sportsbook price captured; value math is unavailable.",
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
       "ml": {
         "marketType": "ML",
         "selection": "Mirra Andreeva",
-        "americanOdds": null,
+        "americanOdds": -1100,
         "modelPct": 70,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
-        "valueIssue": "Need posted ML price before EV can be trusted.",
-        "valueGrade": "Need price",
+        "impliedPct": 91.7,
+        "edgePct": -21.7,
+        "evPer100": -23.6,
+        "netEvPer100": -25.6,
+        "feePer100": 2,
+        "valueIssue": "Favorite tax trap",
+        "valueGrade": "Favorite tax trap",
         "betGrade": false
       },
       "spread": {
         "marketType": "Spread",
         "selection": "Mirra Andreeva",
-        "line": null,
-        "americanOdds": null,
+        "line": -6.5,
+        "americanOdds": 104,
         "modelPct": 64,
-        "valueIssue": "Need posted game spread before grading.",
-        "valueGrade": "Need price",
+        "impliedPct": 49,
+        "edgePct": 15,
+        "evPer100": 30.6,
+        "netEvPer100": 28.6,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Watch only",
         "betGrade": false
       },
       "total": {
         "marketType": "Total",
-        "selection": "Price required",
-        "line": null,
-        "americanOdds": null,
-        "modelPct": 62,
-        "valueIssue": "Need posted match total before grading.",
-        "valueGrade": "Need price",
+        "selection": "No bet",
+        "line": 18.5,
+        "overOdds": -118,
+        "underOdds": -112,
+        "valueGrade": "No direction",
+        "reason": "FanDuel total is 18.5; model did not clear an over/under edge.",
         "betGrade": false
       },
       "firstSetTotal": {
         "marketType": "First-set total",
-        "selection": "Price required",
-        "line": null,
+        "selection": "Under 9.5",
+        "line": 9.5,
+        "americanOdds": -210,
         "expectedGames": 8.8,
-        "confidence": 54,
+        "confidence": 56,
         "tiebreakRisk": 38,
         "earlyBreakRisk": 62,
-        "valueGrade": "Needs posted first-set total",
-        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "modelPct": 56,
+        "evPer100": -17.3,
+        "netEvPer100": -19.3,
+        "valueGrade": "Thin value",
+        "reason": "Expected first-set games 8.8 vs FanDuel 9.5; Under 9.5.",
         "betGrade": false
       },
       "setWin": [
@@ -1601,13 +2051,19 @@ const rawTennisGames = [
           "name": "Mirra Andreeva",
           "confidence": 78,
           "modelPct": 70,
-          "label": "Live to win a set"
+          "label": "Live to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
         },
         {
           "name": "Jil Teichmann",
           "confidence": 41,
           "modelPct": 30,
-          "label": "Thin set-win path"
+          "label": "Thin set-win path",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
         }
       ]
     },
@@ -1618,48 +2074,48 @@ const rawTennisGames = [
         "label": "ML value",
         "selection": "Mirra Andreeva",
         "line": null,
-        "americanOdds": null,
+        "americanOdds": -1100,
         "modelPct": 70,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
-        "grade": "Need price",
-        "issue": "Need posted ML price before EV can be trusted.",
-        "reason": "Compare model probability to break-even price before betting ML."
+        "impliedPct": 91.7,
+        "edgePct": -21.7,
+        "evPer100": -23.6,
+        "netEvPer100": -25.6,
+        "grade": "Favorite tax trap",
+        "issue": "Favorite tax trap",
+        "reason": "Likely winner can still be a bad ML bet after payout and fees. Check spread, total, and set-win instead."
       },
       {
         "marketType": "Game spread",
         "label": "Game spread",
         "selection": "Mirra Andreeva",
-        "line": null,
-        "americanOdds": null,
+        "line": -6.5,
+        "americanOdds": 104,
         "modelPct": 64,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
+        "impliedPct": 49,
+        "edgePct": 15,
+        "evPer100": 30.6,
+        "netEvPer100": 28.6,
         "expectedGames": null,
         "edgeGames": null,
         "confidence": 64,
-        "grade": "Need price",
-        "reason": "Spread needs projected margin and posted number before grading."
+        "grade": "Watch only",
+        "reason": "Large game spread; ML may be cleaner than laying games"
       },
       {
         "marketType": "Total games",
         "label": "O/U games",
-        "selection": "Price required",
-        "line": null,
+        "selection": "No bet",
+        "line": 18.5,
         "americanOdds": null,
-        "modelPct": 62,
+        "modelPct": null,
         "impliedPct": null,
         "edgePct": null,
         "evPer100": null,
         "netEvPer100": null,
         "expectedGames": null,
         "edgeGames": null,
-        "confidence": 62,
-        "grade": "Need price",
+        "confidence": null,
+        "grade": "No direction",
         "reason": "Total games need expected match games vs the posted line."
       },
       {
@@ -1687,13 +2143,13 @@ const rawTennisGames = [
       {
         "marketType": "First-set total games",
         "label": "1st set O/U",
-        "selection": "Price required",
+        "selection": "Under 9.5",
         "expectedGames": 8.8,
-        "confidence": 54,
+        "confidence": 56,
         "tiebreakRisk": 38,
         "earlyBreakRisk": 62,
-        "grade": "Needs posted first-set total",
-        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        "grade": "Thin value",
+        "reason": "Expected first-set games 8.8 vs FanDuel 9.5; Under 9.5."
       }
     ],
     "ensembleValueCase": {
@@ -1725,7 +2181,101 @@ const rawTennisGames = [
         "Jil Teichmann risk: first-serve points won below comfort (60%)."
       ]
     },
-    "marketData": null,
+    "marketData": {
+      "source": "FanDuel Sportsbook",
+      "sourceDetail": "FanDuel Sportsbook event-page Chrome scrape",
+      "capturedAt": "2026-05-31T02:10:34.381Z",
+      "eventUrl": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/mirra-andreeva-v-jil-teichmann-35663235",
+      "eventId": "35663235",
+      "players": [
+        {
+          "name": "Mirra Andreeva",
+          "odds": -1100,
+          "americanLabel": "-1100",
+          "impliedPct": 91.7,
+          "decimalOdds": 1.091,
+          "modelPct": 70,
+          "edgePct": -21.7,
+          "priceBand": "Very expensive favorite",
+          "grossProfitPct": 9.1,
+          "grossPayoutMultiple": 1.091,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 9.1
+        },
+        {
+          "name": "Jil Teichmann",
+          "odds": 680,
+          "americanLabel": "+680",
+          "impliedPct": 12.8,
+          "decimalOdds": 7.8,
+          "modelPct": 30,
+          "edgePct": 17.2,
+          "priceBand": "Underdog",
+          "grossProfitPct": 680,
+          "grossPayoutMultiple": 7.8,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 680
+        }
+      ],
+      "desk": {
+        "name": "Mirra Andreeva",
+        "odds": -1100,
+        "americanLabel": "-1100",
+        "impliedPct": 91.7,
+        "decimalOdds": 1.091,
+        "modelPct": 70,
+        "edgePct": -21.7,
+        "priceBand": "Very expensive favorite",
+        "grossProfitPct": 9.1,
+        "grossPayoutMultiple": 1.091,
+        "centsAtRisk": 100,
+        "centsProfitIfWin": 9.1
+      },
+      "spread": {
+        "player": "Mirra Andreeva",
+        "spread": -6.5,
+        "odds": 104
+      },
+      "total": {
+        "side": "Over",
+        "line": 18.5,
+        "odds": -118
+      },
+      "totalOver": {
+        "side": "Over",
+        "line": 18.5,
+        "odds": -118
+      },
+      "totalUnder": {
+        "side": "Under",
+        "line": 18.5,
+        "odds": -112
+      },
+      "firstSetTotal": {
+        "side": "Over",
+        "line": 9.5,
+        "odds": 146
+      },
+      "firstSetTotalOver": {
+        "side": "Over",
+        "line": 9.5,
+        "odds": 146
+      },
+      "firstSetTotalUnder": {
+        "side": "Under",
+        "line": 9.5,
+        "odds": -210
+      },
+      "priceAction": "ML payout is tiny; use spread/total or pass unless the number moves.",
+      "spreadValue": "Mirra Andreeva -6.5 (+104)",
+      "totalValue": "18.5 games: Over -118 / Under -112",
+      "firstSetTotalValue": "9.5 1st-set games: Over +146 / Under -210",
+      "spreadLean": "Large game spread; ML may be cleaner than laying games",
+      "totalLean": "Total needs live serve data before entry",
+      "mlValue": "Mirra Andreeva -1100 / Jil Teichmann +680",
+      "marketNote": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. ML payout is tiny; use spread/total or pass unless the number moves.",
+      "noVigNote": "Model 70% vs FanDuel implied 91.7% (-21.7 pts)."
+    },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Mirra-Andreeva-Vs-Jil-Teichmann/",
     "players": [
       {
@@ -1915,50 +2465,65 @@ const rawTennisGames = [
       }
     ],
     "valueBoard": {
-      "note": "No sportsbook price captured; value math is unavailable.",
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
       "ml": {
         "marketType": "ML",
         "selection": "Alexander Zverev",
-        "americanOdds": null,
+        "americanOdds": -2100,
         "modelPct": 79,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
-        "valueIssue": "Need posted ML price before EV can be trusted.",
-        "valueGrade": "Need price",
+        "impliedPct": 95.5,
+        "edgePct": -16.5,
+        "evPer100": -17.2,
+        "netEvPer100": -19.2,
+        "feePer100": 2,
+        "valueIssue": "Favorite tax trap",
+        "valueGrade": "Favorite tax trap",
         "betGrade": false
       },
       "spread": {
         "marketType": "Spread",
         "selection": "Alexander Zverev",
-        "line": null,
-        "americanOdds": null,
+        "line": -7.5,
+        "americanOdds": -142,
         "modelPct": 73,
-        "valueIssue": "Need posted game spread before grading.",
-        "valueGrade": "Need price",
+        "impliedPct": 58.7,
+        "edgePct": 14.3,
+        "evPer100": 24.4,
+        "netEvPer100": 22.4,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Watch only",
         "betGrade": false
       },
       "total": {
         "marketType": "Total",
-        "selection": "Price required",
-        "line": null,
-        "americanOdds": null,
-        "modelPct": 71,
-        "valueIssue": "Need posted match total before grading.",
-        "valueGrade": "Need price",
+        "selection": "Over",
+        "line": 30.5,
+        "americanOdds": -120,
+        "modelPct": 68,
+        "impliedPct": 54.5,
+        "edgePct": 13.5,
+        "evPer100": 24.7,
+        "netEvPer100": 22.7,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
+        "valueGrade": "Watch only",
         "betGrade": false
       },
       "firstSetTotal": {
         "marketType": "First-set total",
-        "selection": "Price required",
-        "line": null,
+        "selection": "Under 9.5",
+        "line": 9.5,
+        "americanOdds": -130,
         "expectedGames": 8.4,
-        "confidence": 51,
+        "confidence": 57,
         "tiebreakRisk": 38,
         "earlyBreakRisk": 62,
-        "valueGrade": "Needs posted first-set total",
-        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "modelPct": 57,
+        "evPer100": 0.8,
+        "netEvPer100": -1.2,
+        "valueGrade": "Thin value",
+        "reason": "Expected first-set games 8.4 vs FanDuel 9.5; Under 9.5.",
         "betGrade": false
       },
       "setWin": [
@@ -1966,13 +2531,19 @@ const rawTennisGames = [
           "name": "Jesper de Jong",
           "confidence": 49,
           "modelPct": 21,
-          "label": "Thin set-win path"
+          "label": "Thin set-win path",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
         },
         {
           "name": "Alexander Zverev",
           "confidence": 92,
           "modelPct": 79,
-          "label": "Strong set-win path"
+          "label": "Strong set-win path",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
         }
       ]
     },
@@ -1983,48 +2554,48 @@ const rawTennisGames = [
         "label": "ML value",
         "selection": "Alexander Zverev",
         "line": null,
-        "americanOdds": null,
+        "americanOdds": -2100,
         "modelPct": 79,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
-        "grade": "Need price",
-        "issue": "Need posted ML price before EV can be trusted.",
-        "reason": "Compare model probability to break-even price before betting ML."
+        "impliedPct": 95.5,
+        "edgePct": -16.5,
+        "evPer100": -17.2,
+        "netEvPer100": -19.2,
+        "grade": "Favorite tax trap",
+        "issue": "Favorite tax trap",
+        "reason": "Likely winner can still be a bad ML bet after payout and fees. Check spread, total, and set-win instead."
       },
       {
         "marketType": "Game spread",
         "label": "Game spread",
         "selection": "Alexander Zverev",
-        "line": null,
-        "americanOdds": null,
+        "line": -7.5,
+        "americanOdds": -142,
         "modelPct": 73,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
+        "impliedPct": 58.7,
+        "edgePct": 14.3,
+        "evPer100": 24.4,
+        "netEvPer100": 22.4,
         "expectedGames": null,
         "edgeGames": null,
         "confidence": 73,
-        "grade": "Need price",
-        "reason": "Spread needs projected margin and posted number before grading."
+        "grade": "Watch only",
+        "reason": "Large game spread; ML may be cleaner than laying games"
       },
       {
         "marketType": "Total games",
         "label": "O/U games",
-        "selection": "Price required",
-        "line": null,
-        "americanOdds": null,
-        "modelPct": 71,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
+        "selection": "Over",
+        "line": 30.5,
+        "americanOdds": -120,
+        "modelPct": 68,
+        "impliedPct": 54.5,
+        "edgePct": 13.5,
+        "evPer100": 24.7,
+        "netEvPer100": 22.7,
         "expectedGames": null,
         "edgeGames": null,
-        "confidence": 71,
-        "grade": "Need price",
+        "confidence": 68,
+        "grade": "Watch only",
         "reason": "Total games need expected match games vs the posted line."
       },
       {
@@ -2052,13 +2623,13 @@ const rawTennisGames = [
       {
         "marketType": "First-set total games",
         "label": "1st set O/U",
-        "selection": "Price required",
+        "selection": "Under 9.5",
         "expectedGames": 8.4,
-        "confidence": 51,
+        "confidence": 57,
         "tiebreakRisk": 38,
         "earlyBreakRisk": 62,
-        "grade": "Needs posted first-set total",
-        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        "grade": "Thin value",
+        "reason": "Expected first-set games 8.4 vs FanDuel 9.5; Under 9.5."
       }
     ],
     "ensembleValueCase": {
@@ -2090,7 +2661,101 @@ const rawTennisGames = [
         "Jesper de Jong risk: double-fault pressure (4.6 avg)."
       ]
     },
-    "marketData": null,
+    "marketData": {
+      "source": "FanDuel Sportsbook",
+      "sourceDetail": "FanDuel Sportsbook event-page Chrome scrape",
+      "capturedAt": "2026-05-31T02:11:12.096Z",
+      "eventUrl": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/jesper-de-jong-v-alexander-zverev-35665416",
+      "eventId": "35665416",
+      "players": [
+        {
+          "name": "Jesper de Jong",
+          "odds": 1000,
+          "americanLabel": "+1000",
+          "impliedPct": 9.1,
+          "decimalOdds": 11,
+          "modelPct": 21,
+          "edgePct": 11.9,
+          "priceBand": "Underdog",
+          "grossProfitPct": 1000,
+          "grossPayoutMultiple": 11,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 1000
+        },
+        {
+          "name": "Alexander Zverev",
+          "odds": -2100,
+          "americanLabel": "-2100",
+          "impliedPct": 95.5,
+          "decimalOdds": 1.048,
+          "modelPct": 79,
+          "edgePct": -16.5,
+          "priceBand": "Very expensive favorite",
+          "grossProfitPct": 4.8,
+          "grossPayoutMultiple": 1.048,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 4.8
+        }
+      ],
+      "desk": {
+        "name": "Alexander Zverev",
+        "odds": -2100,
+        "americanLabel": "-2100",
+        "impliedPct": 95.5,
+        "decimalOdds": 1.048,
+        "modelPct": 79,
+        "edgePct": -16.5,
+        "priceBand": "Very expensive favorite",
+        "grossProfitPct": 4.8,
+        "grossPayoutMultiple": 1.048,
+        "centsAtRisk": 100,
+        "centsProfitIfWin": 4.8
+      },
+      "spread": {
+        "player": "Alexander Zverev",
+        "spread": -7.5,
+        "odds": -142
+      },
+      "total": {
+        "side": "Over",
+        "line": 30.5,
+        "odds": -120
+      },
+      "totalOver": {
+        "side": "Over",
+        "line": 30.5,
+        "odds": -120
+      },
+      "totalUnder": {
+        "side": "Under",
+        "line": 30.5,
+        "odds": -110
+      },
+      "firstSetTotal": {
+        "side": "Over",
+        "line": 9.5,
+        "odds": -108
+      },
+      "firstSetTotalOver": {
+        "side": "Over",
+        "line": 9.5,
+        "odds": -108
+      },
+      "firstSetTotalUnder": {
+        "side": "Under",
+        "line": 9.5,
+        "odds": -130
+      },
+      "priceAction": "ML payout is tiny; use spread/total or pass unless the number moves.",
+      "spreadValue": "Alexander Zverev -7.5 (-142)",
+      "totalValue": "30.5 games: Over -120 / Under -110",
+      "firstSetTotalValue": "9.5 1st-set games: Over -108 / Under -130",
+      "spreadLean": "Large game spread; ML may be cleaner than laying games",
+      "totalLean": "Over lean if both players hold early",
+      "mlValue": "Jesper de Jong +1000 / Alexander Zverev -2100",
+      "marketNote": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. ML payout is tiny; use spread/total or pass unless the number moves.",
+      "noVigNote": "Model 79% vs FanDuel implied 95.5% (-16.5 pts)."
+    },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Jesper-de-Jong-Vs-Alexander-Zverev/",
     "players": [
       {
@@ -2291,50 +2956,65 @@ const rawTennisGames = [
       }
     ],
     "valueBoard": {
-      "note": "No sportsbook price captured; value math is unavailable.",
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
       "ml": {
         "marketType": "ML",
         "selection": "Andrey Rublev",
-        "americanOdds": null,
+        "americanOdds": -125,
         "modelPct": 59,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
-        "valueIssue": "Need posted ML price before EV can be trusted.",
-        "valueGrade": "Need price",
+        "impliedPct": 55.6,
+        "edgePct": 3.4,
+        "evPer100": 6.2,
+        "netEvPer100": 4.2,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Favorite price needs better proof",
         "betGrade": false
       },
       "spread": {
         "marketType": "Spread",
         "selection": "Andrey Rublev",
-        "line": null,
-        "americanOdds": null,
-        "modelPct": 53,
-        "valueIssue": "Need posted game spread before grading.",
-        "valueGrade": "Need price",
+        "line": -1.5,
+        "americanOdds": -110,
+        "modelPct": 57,
+        "impliedPct": 52.4,
+        "edgePct": 4.6,
+        "evPer100": 8.8,
+        "netEvPer100": 6.8,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Raw positive EV",
         "betGrade": false
       },
       "total": {
         "marketType": "Total",
-        "selection": "Price required",
-        "line": null,
-        "americanOdds": null,
+        "selection": "Over",
+        "line": 38.5,
+        "americanOdds": -120,
         "modelPct": 51,
-        "valueIssue": "Need posted match total before grading.",
-        "valueGrade": "Need price",
+        "impliedPct": 54.5,
+        "edgePct": -3.5,
+        "evPer100": -6.5,
+        "netEvPer100": -8.5,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
+        "valueGrade": "Negative EV",
         "betGrade": false
       },
       "firstSetTotal": {
         "marketType": "First-set total",
-        "selection": "Price required",
-        "line": null,
+        "selection": "Under 9.5",
+        "line": 9.5,
+        "americanOdds": 114,
         "expectedGames": 8.8,
-        "confidence": 54,
+        "confidence": 56,
         "tiebreakRisk": 38,
         "earlyBreakRisk": 62,
-        "valueGrade": "Needs posted first-set total",
-        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "modelPct": 56,
+        "evPer100": 19.8,
+        "netEvPer100": 17.8,
+        "valueGrade": "Thin value",
+        "reason": "Expected first-set games 8.8 vs FanDuel 9.5; Under 9.5.",
         "betGrade": false
       },
       "setWin": [
@@ -2342,13 +3022,19 @@ const rawTennisGames = [
           "name": "Jakub Mensik",
           "confidence": 68,
           "modelPct": 41,
-          "label": "Live to win a set"
+          "label": "Live to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
         },
         {
           "name": "Andrey Rublev",
           "confidence": 86,
           "modelPct": 59,
-          "label": "Strong set-win path"
+          "label": "Strong set-win path",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
         }
       ]
     },
@@ -2359,48 +3045,48 @@ const rawTennisGames = [
         "label": "ML value",
         "selection": "Andrey Rublev",
         "line": null,
-        "americanOdds": null,
+        "americanOdds": -125,
         "modelPct": 59,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
-        "grade": "Need price",
-        "issue": "Need posted ML price before EV can be trusted.",
-        "reason": "Compare model probability to break-even price before betting ML."
+        "impliedPct": 55.6,
+        "edgePct": 3.4,
+        "evPer100": 6.2,
+        "netEvPer100": 4.2,
+        "grade": "Favorite price needs better proof",
+        "issue": "Favorite price needs better proof",
+        "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
       },
       {
         "marketType": "Game spread",
         "label": "Game spread",
         "selection": "Andrey Rublev",
-        "line": null,
-        "americanOdds": null,
-        "modelPct": 53,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
+        "line": -1.5,
+        "americanOdds": -110,
+        "modelPct": 57,
+        "impliedPct": 52.4,
+        "edgePct": 4.6,
+        "evPer100": 8.8,
+        "netEvPer100": 6.8,
         "expectedGames": null,
         "edgeGames": null,
-        "confidence": 53,
-        "grade": "Need price",
-        "reason": "Spread needs projected margin and posted number before grading."
+        "confidence": 57,
+        "grade": "Raw positive EV",
+        "reason": "Andrey Rublev spread is playable only if early return pressure shows"
       },
       {
         "marketType": "Total games",
         "label": "O/U games",
-        "selection": "Price required",
-        "line": null,
-        "americanOdds": null,
+        "selection": "Over",
+        "line": 38.5,
+        "americanOdds": -120,
         "modelPct": 51,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
+        "impliedPct": 54.5,
+        "edgePct": -3.5,
+        "evPer100": -6.5,
+        "netEvPer100": -8.5,
         "expectedGames": null,
         "edgeGames": null,
         "confidence": 51,
-        "grade": "Need price",
+        "grade": "Negative EV",
         "reason": "Total games need expected match games vs the posted line."
       },
       {
@@ -2428,13 +3114,13 @@ const rawTennisGames = [
       {
         "marketType": "First-set total games",
         "label": "1st set O/U",
-        "selection": "Price required",
+        "selection": "Under 9.5",
         "expectedGames": 8.8,
-        "confidence": 54,
+        "confidence": 56,
         "tiebreakRisk": 38,
         "earlyBreakRisk": 62,
-        "grade": "Needs posted first-set total",
-        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        "grade": "Thin value",
+        "reason": "Expected first-set games 8.8 vs FanDuel 9.5; Under 9.5."
       }
     ],
     "ensembleValueCase": {
@@ -2465,7 +3151,101 @@ const rawTennisGames = [
         "Jakub Mensik risk: negative winner/error balance (30.0 winners, 36.3 unforced)."
       ]
     },
-    "marketData": null,
+    "marketData": {
+      "source": "FanDuel Sportsbook",
+      "sourceDetail": "FanDuel Sportsbook event-page Chrome scrape",
+      "capturedAt": "2026-05-31T02:10:53.153Z",
+      "eventUrl": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/jakub-mensik-v-andrey-rublev-35665055",
+      "eventId": "35665055",
+      "players": [
+        {
+          "name": "Jakub Mensik",
+          "odds": 104,
+          "americanLabel": "+104",
+          "impliedPct": 49,
+          "decimalOdds": 2.04,
+          "modelPct": 41,
+          "edgePct": -8,
+          "priceBand": "Coinflip",
+          "grossProfitPct": 104,
+          "grossPayoutMultiple": 2.04,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 104
+        },
+        {
+          "name": "Andrey Rublev",
+          "odds": -125,
+          "americanLabel": "-125",
+          "impliedPct": 55.6,
+          "decimalOdds": 1.8,
+          "modelPct": 59,
+          "edgePct": 3.4,
+          "priceBand": "Coinflip",
+          "grossProfitPct": 80,
+          "grossPayoutMultiple": 1.8,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 80
+        }
+      ],
+      "desk": {
+        "name": "Andrey Rublev",
+        "odds": -125,
+        "americanLabel": "-125",
+        "impliedPct": 55.6,
+        "decimalOdds": 1.8,
+        "modelPct": 59,
+        "edgePct": 3.4,
+        "priceBand": "Coinflip",
+        "grossProfitPct": 80,
+        "grossPayoutMultiple": 1.8,
+        "centsAtRisk": 100,
+        "centsProfitIfWin": 80
+      },
+      "spread": {
+        "player": "Andrey Rublev",
+        "spread": -1.5,
+        "odds": -110
+      },
+      "total": {
+        "side": "Over",
+        "line": 38.5,
+        "odds": -120
+      },
+      "totalOver": {
+        "side": "Over",
+        "line": 38.5,
+        "odds": -120
+      },
+      "totalUnder": {
+        "side": "Under",
+        "line": 38.5,
+        "odds": -110
+      },
+      "firstSetTotal": {
+        "side": "Over",
+        "line": 9.5,
+        "odds": -158
+      },
+      "firstSetTotalOver": {
+        "side": "Over",
+        "line": 9.5,
+        "odds": -158
+      },
+      "firstSetTotalUnder": {
+        "side": "Under",
+        "line": 9.5,
+        "odds": 114
+      },
+      "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge.",
+      "spreadValue": "Andrey Rublev -1.5 (-110)",
+      "totalValue": "38.5 games: Over -120 / Under -110",
+      "firstSetTotalValue": "9.5 1st-set games: Over -158 / Under +114",
+      "spreadLean": "Andrey Rublev spread is playable only if early return pressure shows",
+      "totalLean": "Over lean if both players hold early",
+      "mlValue": "Jakub Mensik +104 / Andrey Rublev -125",
+      "marketNote": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. ML is close to fair; derivative or live entry needs to carry the edge.",
+      "noVigNote": "Model 59% vs FanDuel implied 55.6% (+3.4 pts)."
+    },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Jakub-Mensik-Vs-Andrey-Rublev/",
     "players": [
       {
@@ -2666,50 +3446,65 @@ const rawTennisGames = [
       }
     ],
     "valueBoard": {
-      "note": "No sportsbook price captured; value math is unavailable.",
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
       "ml": {
         "marketType": "ML",
         "selection": "Casper Ruud",
-        "americanOdds": null,
+        "americanOdds": -160,
         "modelPct": 59,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
-        "valueIssue": "Need posted ML price before EV can be trusted.",
-        "valueGrade": "Need price",
+        "impliedPct": 61.5,
+        "edgePct": -2.5,
+        "evPer100": -4.1,
+        "netEvPer100": -6.1,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Negative EV",
         "betGrade": false
       },
       "spread": {
         "marketType": "Spread",
         "selection": "Casper Ruud",
-        "line": null,
-        "americanOdds": null,
+        "line": -2.5,
+        "americanOdds": -118,
         "modelPct": 53,
-        "valueIssue": "Need posted game spread before grading.",
-        "valueGrade": "Need price",
+        "impliedPct": 54.1,
+        "edgePct": -1.1,
+        "evPer100": -2.1,
+        "netEvPer100": -4.1,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Near fair",
         "betGrade": false
       },
       "total": {
         "marketType": "Total",
-        "selection": "Price required",
-        "line": null,
-        "americanOdds": null,
+        "selection": "Over",
+        "line": 38.5,
+        "americanOdds": -118,
         "modelPct": 51,
-        "valueIssue": "Need posted match total before grading.",
-        "valueGrade": "Need price",
+        "impliedPct": 54.1,
+        "edgePct": -3.1,
+        "evPer100": -5.8,
+        "netEvPer100": -7.8,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
+        "valueGrade": "Negative EV",
         "betGrade": false
       },
       "firstSetTotal": {
         "marketType": "First-set total",
-        "selection": "Price required",
-        "line": null,
+        "selection": "Under 9.5",
+        "line": 9.5,
+        "americanOdds": 100,
         "expectedGames": 8.8,
-        "confidence": 54,
+        "confidence": 56,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
-        "valueGrade": "Needs posted first-set total",
-        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "modelPct": 56,
+        "evPer100": 12,
+        "netEvPer100": 10,
+        "valueGrade": "Thin value",
+        "reason": "Expected first-set games 8.8 vs FanDuel 9.5; Under 9.5.",
         "betGrade": false
       },
       "setWin": [
@@ -2717,13 +3512,19 @@ const rawTennisGames = [
           "name": "Casper Ruud",
           "confidence": 85,
           "modelPct": 59,
-          "label": "Strong set-win path"
+          "label": "Strong set-win path",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
         },
         {
           "name": "Joao Fonseca",
           "confidence": 69,
           "modelPct": 41,
-          "label": "Live to win a set"
+          "label": "Live to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
         }
       ]
     },
@@ -2734,48 +3535,48 @@ const rawTennisGames = [
         "label": "ML value",
         "selection": "Casper Ruud",
         "line": null,
-        "americanOdds": null,
+        "americanOdds": -160,
         "modelPct": 59,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
-        "grade": "Need price",
-        "issue": "Need posted ML price before EV can be trusted.",
-        "reason": "Compare model probability to break-even price before betting ML."
+        "impliedPct": 61.5,
+        "edgePct": -2.5,
+        "evPer100": -4.1,
+        "netEvPer100": -6.1,
+        "grade": "Negative EV",
+        "issue": "Favorite price needs better proof",
+        "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
       },
       {
         "marketType": "Game spread",
         "label": "Game spread",
         "selection": "Casper Ruud",
-        "line": null,
-        "americanOdds": null,
+        "line": -2.5,
+        "americanOdds": -118,
         "modelPct": 53,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
+        "impliedPct": 54.1,
+        "edgePct": -1.1,
+        "evPer100": -2.1,
+        "netEvPer100": -4.1,
         "expectedGames": null,
         "edgeGames": null,
         "confidence": 53,
-        "grade": "Need price",
-        "reason": "Spread needs projected margin and posted number before grading."
+        "grade": "Near fair",
+        "reason": "Spread is number-dependent; verify first service cycle"
       },
       {
         "marketType": "Total games",
         "label": "O/U games",
-        "selection": "Price required",
-        "line": null,
-        "americanOdds": null,
+        "selection": "Over",
+        "line": 38.5,
+        "americanOdds": -118,
         "modelPct": 51,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
+        "impliedPct": 54.1,
+        "edgePct": -3.1,
+        "evPer100": -5.8,
+        "netEvPer100": -7.8,
         "expectedGames": null,
         "edgeGames": null,
         "confidence": 51,
-        "grade": "Need price",
+        "grade": "Negative EV",
         "reason": "Total games need expected match games vs the posted line."
       },
       {
@@ -2803,13 +3604,13 @@ const rawTennisGames = [
       {
         "marketType": "First-set total games",
         "label": "1st set O/U",
-        "selection": "Price required",
+        "selection": "Under 9.5",
         "expectedGames": 8.8,
-        "confidence": 54,
+        "confidence": 56,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
-        "grade": "Needs posted first-set total",
-        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        "grade": "Thin value",
+        "reason": "Expected first-set games 8.8 vs FanDuel 9.5; Under 9.5."
       }
     ],
     "ensembleValueCase": {
@@ -2839,7 +3640,101 @@ const rawTennisGames = [
         "Casper Ruud risk: 3 recent matches with serve instability."
       ]
     },
-    "marketData": null,
+    "marketData": {
+      "source": "FanDuel Sportsbook",
+      "sourceDetail": "FanDuel Sportsbook event-page Chrome scrape",
+      "capturedAt": "2026-05-31T02:10:43.712Z",
+      "eventUrl": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/casper-ruud-v-joao-fonseca-35665336",
+      "eventId": "35665336",
+      "players": [
+        {
+          "name": "Casper Ruud",
+          "odds": -160,
+          "americanLabel": "-160",
+          "impliedPct": 61.5,
+          "decimalOdds": 1.625,
+          "modelPct": 59,
+          "edgePct": -2.5,
+          "priceBand": "Moderate favorite",
+          "grossProfitPct": 62.5,
+          "grossPayoutMultiple": 1.625,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 62.5
+        },
+        {
+          "name": "Joao Fonseca",
+          "odds": 132,
+          "americanLabel": "+132",
+          "impliedPct": 43.1,
+          "decimalOdds": 2.32,
+          "modelPct": 41,
+          "edgePct": -2.1,
+          "priceBand": "Underdog",
+          "grossProfitPct": 132,
+          "grossPayoutMultiple": 2.32,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 132
+        }
+      ],
+      "desk": {
+        "name": "Casper Ruud",
+        "odds": -160,
+        "americanLabel": "-160",
+        "impliedPct": 61.5,
+        "decimalOdds": 1.625,
+        "modelPct": 59,
+        "edgePct": -2.5,
+        "priceBand": "Moderate favorite",
+        "grossProfitPct": 62.5,
+        "grossPayoutMultiple": 1.625,
+        "centsAtRisk": 100,
+        "centsProfitIfWin": 62.5
+      },
+      "spread": {
+        "player": "Casper Ruud",
+        "spread": -2.5,
+        "odds": -118
+      },
+      "total": {
+        "side": "Over",
+        "line": 38.5,
+        "odds": -118
+      },
+      "totalOver": {
+        "side": "Over",
+        "line": 38.5,
+        "odds": -118
+      },
+      "totalUnder": {
+        "side": "Under",
+        "line": 38.5,
+        "odds": -112
+      },
+      "firstSetTotal": {
+        "side": "Over",
+        "line": 9.5,
+        "odds": -138
+      },
+      "firstSetTotalOver": {
+        "side": "Over",
+        "line": 9.5,
+        "odds": -138
+      },
+      "firstSetTotalUnder": {
+        "side": "Under",
+        "line": 9.5,
+        "odds": 100
+      },
+      "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge.",
+      "spreadValue": "Casper Ruud -2.5 (-118)",
+      "totalValue": "38.5 games: Over -118 / Under -112",
+      "firstSetTotalValue": "9.5 1st-set games: Over -138 / Under +100",
+      "spreadLean": "Spread is number-dependent; verify first service cycle",
+      "totalLean": "Over lean if both players hold early",
+      "mlValue": "Casper Ruud -160 / Joao Fonseca +132",
+      "marketNote": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. ML is close to fair; derivative or live entry needs to carry the edge.",
+      "noVigNote": "Model 59% vs FanDuel implied 61.5% (-2.5 pts)."
+    },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Casper-Ruud-Vs-Joao-Fonseca/",
     "players": [
       {
@@ -2998,7 +3893,8 @@ const buildGame = (raw) => {
     { label: 'Model fair', book: 'Tennis warehouse model', value: raw.players.map((player) => `${player.name} ${player.modelPct}%`).join(' / ') },
     market ? { label: 'FanDuel moneyline', book: market.source, value: market.mlValue } : null,
     market?.spread ? { label: 'Game handicap', book: market.source, value: market.spreadValue } : null,
-    market?.total ? { label: 'Total games', book: market.source, value: market.totalValue } : null
+    market?.total ? { label: 'Total games', book: market.source, value: market.totalValue } : null,
+    market?.firstSetTotal ? { label: '1st set total games', book: market.source, value: market.firstSetTotalValue } : null
   ].filter(Boolean)
   return createSportsMatchModel({
     id: raw.id,
@@ -3073,7 +3969,8 @@ const buildGame = (raw) => {
         { label: 'ML', value: market ? `${raw.pickName} ${deskMarket?.americanLabel || ''}; ${market.noVigNote}` : 'Need market price', lean: market?.priceAction || raw.weaknessEdge?.edgeType || 'Fair only', confidence: raw.confidence, ...(raw.valueBoard?.ml || {}), tone: market?.desk?.edgePct >= 7 ? 'accent' : market?.desk?.edgePct <= -4 ? 'warning' : 'neutral', reason: market?.marketNote || raw.weaknessEdge?.gameFlow || raw.reason },
         { label: 'Win a set', value: raw.setWinProjections?.map((entry) => entry.name + ' ' + entry.confidence + '%').join(' / ') || 'No set projection', lean: raw.setWinProjections?.find((entry) => entry.name !== raw.pickName)?.label || 'Set-win path', confidence: Math.max(...(raw.setWinProjections || []).map((entry) => Number(entry.confidence) || 0), 0), setWinRows: raw.valueBoard?.setWin || [], valueGrade: 'Needs posted price', tone: raw.tour === 'ATP' ? 'accent' : 'neutral', reason: raw.tour === 'ATP' ? 'Best-of-five gives the non-ML side more room to win a set; use this to separate upset risk from match-winner confidence.' : 'Best-of-three set-win confidence is more fragile; early service holds matter more.' },
         { label: 'Spread', value: market?.spreadValue || 'Need posted game spread', lean: market?.spreadLean || raw.weaknessEdge?.spreadRead || 'Need number', confidence: Math.max(50, raw.confidence - 6), ...(raw.valueBoard?.spread || {}), tone: raw.weaknessEdge?.edgeType === 'Weakness edge' ? 'accent' : 'neutral', reason: raw.weaknessEdge?.liveTrigger || 'Wait for first service cycle.' },
-        { label: 'O/U', value: market?.totalValue || 'Need posted total', lean: market?.totalLean || raw.weaknessEdge?.totalRead || raw.totals, confidence: Math.max(50, raw.confidence - 8), ...(raw.valueBoard?.total || {}), tone: raw.totals.includes('over') || raw.weaknessEdge?.totalRead?.includes('breaks') ? 'accent' : 'neutral', reason: raw.totals }
+        { label: 'O/U', value: market?.totalValue || 'Need posted total', lean: market?.totalLean || raw.weaknessEdge?.totalRead || raw.totals, confidence: Math.max(50, raw.confidence - 8), ...(raw.valueBoard?.total || {}), tone: raw.totals.includes('over') || raw.weaknessEdge?.totalRead?.includes('breaks') ? 'accent' : 'neutral', reason: raw.totals },
+        { label: '1st set O/U', value: raw.valueBoard?.firstSetTotal?.line ? `Line ${raw.valueBoard.firstSetTotal.line}` : 'Need posted first-set total', lean: raw.valueBoard?.firstSetTotal?.selection || raw.valueBoard?.firstSetTotal?.lean || 'Price required', confidence: raw.valueBoard?.firstSetTotal?.confidence ?? Math.max(50, raw.confidence - 10), ...(raw.valueBoard?.firstSetTotal || {}), tone: raw.valueBoard?.firstSetTotal?.confidence >= 58 ? 'accent' : 'neutral', reason: raw.valueBoard?.firstSetTotal?.reason || 'Use expected first-set games against the posted 1st-set total.' }
       ],
       marketEconomics,
       clayMatchupData: clayData,

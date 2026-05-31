@@ -300,6 +300,33 @@ const buildSummaryOdds = (odds: any) => {
 
 const buildTennisValueSummary = (games: any[] = [], isoDate = '') => {
   const feePer100 = 2
+  const finiteNumber = (value: any) => {
+    if (value === null || value === undefined || value === '') return null
+    const numericValue = Number(value)
+    return Number.isFinite(numericValue) ? numericValue : null
+  }
+  const marketKey = (row: any) => String(row.marketType ?? row.label ?? '').toLowerCase()
+  const byEvDesc = (left: any, right: any) => Number(right.evPer100 ?? -999) - Number(left.evPer100 ?? -999)
+  const byEvAsc = (left: any, right: any) => Number(left.evPer100 ?? 999) - Number(right.evPer100 ?? 999)
+  const byBoardRank = (left: any, right: any) => {
+    const leftEv = finiteNumber(left.evPer100)
+    const rightEv = finiteNumber(right.evPer100)
+    const leftScore =
+      (left.betGrade ? 1000 : 0) +
+      (leftEv != null ? 300 + leftEv : Number(left.confidence ?? left.modelPct ?? 0))
+    const rightScore =
+      (right.betGrade ? 1000 : 0) +
+      (rightEv != null ? 300 + rightEv : Number(right.confidence ?? right.modelPct ?? 0))
+    return rightScore - leftScore
+  }
+  const isMatchTotalRow = (row: any) => {
+    const key = marketKey(row)
+    return (key.includes('o/u') || key.includes('total')) && !key.includes('first') && !key.includes('1st')
+  }
+  const isFirstSetTotalRow = (row: any) => {
+    const key = marketKey(row)
+    return key.includes('first') || key.includes('1st')
+  }
   const isValidatedValue = (row: any) => {
     const marketType = String(row.marketType ?? '').toLowerCase()
     const netEv = Number(row.netEvPer100 ?? Number(row.evPer100) - feePer100)
@@ -310,11 +337,43 @@ const buildTennisValueSummary = (games: any[] = [], isoDate = '') => {
     if (!Number.isFinite(netEv) || !Number.isFinite(edge) || !Number.isFinite(model) || !Number.isFinite(odds)) return false
     return odds >= 100 && odds <= 250 && model >= 45 && model <= 60 && edge >= 7 && edge <= 24 && netEv >= 8
   }
+
+  const derivativeRows = games
+    .filter((game) => game?.league === 'Tennis')
+    .flatMap((game) =>
+      (game.tennisContext?.derivativeMarkets ?? []).map((market: any) => ({
+        gameId: game.id,
+        gameTitle: game.title,
+        start: game.start,
+        marketType: market.marketType ?? market.label ?? '',
+        label: market.label ?? market.marketType ?? '',
+        value: market.value ?? '',
+        selection: market.selection ?? market.lean ?? '',
+        lean: market.lean ?? market.selection ?? '',
+        line: market.line ?? null,
+        americanOdds: market.americanOdds ?? null,
+        expectedGames: market.expectedGames ?? null,
+        confidence: Number.isFinite(Number(market.confidence)) ? Number(market.confidence) : game.analysis?.confidence ?? null,
+        modelPct: market.modelPct ?? null,
+        impliedPct: market.impliedPct ?? null,
+        edgePct: market.edgePct ?? null,
+        evPer100: market.evPer100 ?? null,
+        netEvPer100: market.netEvPer100 ?? null,
+        feePer100: market.feePer100 ?? feePer100,
+        valueIssue: market.valueIssue ?? '',
+        valueGrade: market.valueGrade ?? market.grade ?? 'No grade',
+        betGrade: Boolean(market.betGrade),
+        validatedValue: false,
+        reason: market.reason ?? ''
+      }))
+    )
+
+  let ensembleRows: any[] = []
   const fromEnsemblePath = path.join(dataPrivateRoot, 'predictions', 'tennis', `${isoDate}-multimodel-ensemble.json`)
   if (isoDate && fsSync.existsSync(fromEnsemblePath)) {
     const payload = JSON.parse(fsSync.readFileSync(fromEnsemblePath, 'utf8'))
-    const ensembleRows = Array.isArray(payload?.rows) ? payload.rows : Array.isArray(payload) ? payload : []
-    const rows = ensembleRows
+    const payloadRows = Array.isArray(payload?.rows) ? payload.rows : Array.isArray(payload) ? payload : []
+    ensembleRows = payloadRows
       .map((row: any) => {
         const game = games.find((entry) => entry.id === row.matchId)
         if (!game) return null
@@ -346,71 +405,11 @@ const buildTennisValueSummary = (games: any[] = [], isoDate = '') => {
         }
       })
       .filter(Boolean) as any[]
-
-    if (rows.length) {
-      const countByGrade = rows.reduce((acc: Record<string, number>, row: any) => {
-        acc[row.valueGrade] = (acc[row.valueGrade] ?? 0) + 1
-        return acc
-      }, {})
-      const byEvDesc = (left: any, right: any) => Number(right.evPer100 ?? -999) - Number(left.evPer100 ?? -999)
-      const byEvAsc = (left: any, right: any) => Number(left.evPer100 ?? 999) - Number(right.evPer100 ?? 999)
-      const pricedRows = rows.filter((row: any) => Number.isFinite(Number(row.evPer100)))
-      const noPriceRows = rows.filter((row: any) => /needs posted price|no price/i.test(String(row.valueGrade)))
-      const rowsWithValidation = rows.map((row: any) => ({ ...row, validatedValue: isValidatedValue(row) && row.betGrade }))
-      const validatedRows = rowsWithValidation.filter((row: any) => row.validatedValue).sort(byEvDesc)
-
-      return {
-        date: isoDate,
-        source: 'pandas tennis warehouse ensemble',
-        totalRows: rows.length,
-        pricedRows: pricedRows.length,
-        noPriceRows: noPriceRows.length,
-        countByGrade,
-        rows: rowsWithValidation,
-        validatedRows: validatedRows.slice(0, 8),
-        betGradeRows: validatedRows.slice(0, 8),
-        rawPositiveRows: rowsWithValidation
-          .filter((row: any) => Number(row.evPer100) > 0 && !row.validatedValue)
-          .sort(byEvDesc)
-          .slice(0, 8),
-        thinRows: rowsWithValidation.filter((row: any) => row.valueGrade === 'Thin value').sort(byEvDesc).slice(0, 6),
-        negativeMlRows: rowsWithValidation
-          .filter((row: any) => /negative ev|price taxed|favorite tax/i.test(String(row.valueGrade)) && String(row.marketType).toLowerCase() === 'ml')
-          .sort(byEvAsc)
-          .slice(0, 6),
-        note:
-          isoDate === '2026-05-30'
-            ? 'May 30 uses the hardened tennis gate: sportsbook ML candidates must be plus-money, fee-adjusted, and inside the model range; prediction-market rows need positive spike EV and history support before they appear as trades.'
-            : 'Warehouse ensemble value pass. Bet-grade is deliberately empty unless a plus-money ML clears fee, edge, model-range, and risk gates; positive EV dogs stay watch-only when the weakness profile is not clean.'
-      }
-    }
   }
-  const rows = games
-    .filter((game) => game?.league === 'Tennis')
-    .flatMap((game) =>
-      (game.tennisContext?.derivativeMarkets ?? []).map((market: any) => ({
-        gameId: game.id,
-        gameTitle: game.title,
-        start: game.start,
-        marketType: market.marketType ?? market.label ?? '',
-        label: market.label ?? market.marketType ?? '',
-        selection: market.selection ?? market.lean ?? '',
-        line: market.line ?? null,
-        americanOdds: market.americanOdds ?? null,
-        confidence: Number.isFinite(Number(market.confidence)) ? Number(market.confidence) : game.analysis?.confidence ?? null,
-        modelPct: market.modelPct ?? null,
-        impliedPct: market.impliedPct ?? null,
-        edgePct: market.edgePct ?? null,
-        evPer100: market.evPer100 ?? null,
-        netEvPer100: market.netEvPer100 ?? null,
-        feePer100: market.feePer100 ?? feePer100,
-        valueIssue: market.valueIssue ?? '',
-        valueGrade: market.valueGrade ?? 'No grade',
-        betGrade: Boolean(market.betGrade),
-        validatedValue: false,
-        reason: market.reason ?? ''
-      }))
-    )
+
+  const rows = ensembleRows.length
+    ? [...ensembleRows, ...derivativeRows.filter((row) => marketKey(row) !== 'ml')]
+    : derivativeRows
 
   if (!rows.length) return null
 
@@ -418,15 +417,22 @@ const buildTennisValueSummary = (games: any[] = [], isoDate = '') => {
     acc[row.valueGrade] = (acc[row.valueGrade] ?? 0) + 1
     return acc
   }, {})
-  const byEvDesc = (left: any, right: any) => Number(right.evPer100 ?? -999) - Number(left.evPer100 ?? -999)
-  const byEvAsc = (left: any, right: any) => Number(left.evPer100 ?? 999) - Number(right.evPer100 ?? 999)
-  const pricedRows = rows.filter((row) => Number.isFinite(Number(row.evPer100)))
-  const noPriceRows = rows.filter((row) => /needs posted price|no price/i.test(String(row.valueGrade)))
-  const rowsWithValidation = rows.map((row) => ({ ...row, validatedValue: isValidatedValue(row) }))
+  const pricedRows = rows.filter((row) => finiteNumber(row.evPer100) !== null)
+  const noPriceRows = rows.filter((row) => /need(s)? posted|need price|no price/i.test(String(row.valueGrade)))
+  const rowsWithValidation = rows.map((row) => ({
+    ...row,
+    validatedValue: isValidatedValue(row) && (row.betGrade || row.valueGrade === 'Bet-grade value')
+  }))
   const validatedRows = rowsWithValidation.filter((row) => row.validatedValue).sort(byEvDesc)
+  const mlRows = rowsWithValidation.filter((row) => marketKey(row) === 'ml').sort(byBoardRank)
+  const matchTotalRows = rowsWithValidation.filter(isMatchTotalRow).sort(byBoardRank)
+  const firstSetRows = rowsWithValidation.filter(isFirstSetTotalRow).sort(byBoardRank)
+  const spreadRows = rowsWithValidation.filter((row) => marketKey(row) === 'spread').sort(byBoardRank)
+  const setWinRows = rowsWithValidation.filter((row) => marketKey(row).includes('set') && !isFirstSetTotalRow(row)).sort(byBoardRank)
 
   return {
     date: isoDate,
+    source: ensembleRows.length ? 'pandas tennis warehouse ensemble + derivative value books' : 'tennis derivative value books',
     totalRows: rows.length,
     pricedRows: pricedRows.length,
     noPriceRows: noPriceRows.length,
@@ -434,6 +440,11 @@ const buildTennisValueSummary = (games: any[] = [], isoDate = '') => {
     rows: rowsWithValidation,
     validatedRows: validatedRows.slice(0, 8),
     betGradeRows: validatedRows.slice(0, 8),
+    mlRows: mlRows.slice(0, 8),
+    matchTotalRows: matchTotalRows.slice(0, 8),
+    firstSetRows: firstSetRows.slice(0, 8),
+    spreadRows: spreadRows.slice(0, 8),
+    setWinRows: setWinRows.slice(0, 8),
     rawPositiveRows: rowsWithValidation
       .filter((row) => Number(row.evPer100) > 0 && !row.validatedValue)
       .sort(byEvDesc)
@@ -446,7 +457,7 @@ const buildTennisValueSummary = (games: any[] = [], isoDate = '') => {
     note:
       isoDate === '2026-05-28'
         ? 'May 28 is pre-match. May 27 backtest: ML value rows went 3-1 with +21.9% flat ROI; spreads went 1-3 and stay downgraded until the next settled pass.'
-        : 'EV is model probability against the posted price. A likely winner can still be a bad bet if the payout is too small.'
+        : 'Tennis value books include ML, match O/U, first-set O/U, set-win, spreads, and Kalshi trade-to-sell. A likely winner can still be a bad bet if the payout is too small.'
   }
 }
 

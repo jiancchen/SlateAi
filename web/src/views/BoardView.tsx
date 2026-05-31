@@ -76,6 +76,50 @@ export function BoardView(props: BoardViewProps) {
     setSelectedGameIdByDay((current: AnyRecord) => ({ ...current, [activeDayId]: nextGameId }))
     openMobileDetailForGame(nextGameId)
   }
+  const renderTennisValueRows = (sectionLabel: string, rows: AnyRecord[] = []) => {
+    const visibleRows = rows.filter((row) => row?.game).slice(0, 5)
+    if (!visibleRows.length) return null
+
+    return (
+      <div className="tennis-value-list">
+        <div className="tennis-value-section-label">{sectionLabel}</div>
+        {visibleRows.map((row: AnyRecord) => {
+          const ev = Number(row.evPer100)
+          const confidence = Number(row.confidence ?? row.modelPct)
+          const expectedGames = Number(row.expectedGames)
+          const lineMeta = [
+            row.valueGrade || row.grade || row.marketType,
+            Number.isFinite(expectedGames) ? `exp ${expectedGames.toFixed(1)} games` : null,
+            row.gameTitle
+          ].filter(Boolean).join(' | ')
+
+          return (
+            <button
+              key={`${row.game.id}-${sectionLabel}-${row.marketType || row.label}-${row.selection || row.lean || row.line || 'row'}`}
+              type="button"
+              className="tennis-value-row"
+              onClick={() => openBoardGame(row.game.id)}
+            >
+              <span>
+                <strong>{row.selection === 'No bet' && row.value ? row.value : formatTennisValueSelection(row)}</strong>
+                <small>{lineMeta}</small>
+              </span>
+              <span>
+                <strong>
+                  {Number.isFinite(ev)
+                    ? formatSignedNumber(ev, 1)
+                    : Number.isFinite(confidence)
+                      ? `${Math.round(confidence)}%`
+                      : 'Price'}
+                </strong>
+                <small>{Number.isFinite(ev) ? 'EV/100' : 'model'}</small>
+              </span>
+            </button>
+          )
+        })}
+      </div>
+    )
+  }
   const renderDetailKpiStrip = (extraClassName = '') => (
     <div className={`detail-kpi-strip ${extraClassName}`.trim()}>
       <article className="detail-kpi-card">
@@ -513,6 +557,9 @@ export function BoardView(props: BoardViewProps) {
                     <p>{tennisValueSummary.note}</p>
                     <div className="tennis-value-pill-row">
                       <span>Validated {tennisValueSummary.validatedRows?.length || 0}</span>
+                      <span>ML {tennisValueSummary.mlRows?.length || 0}</span>
+                      <span>O/U {tennisValueSummary.matchTotalRows?.length || 0}</span>
+                      <span>1st set {tennisValueSummary.firstSetRows?.length || 0}</span>
                       <span>PM trades {tennisValueSummary.kalshiTradeCandidates?.length || 0}</span>
                       <span>PM watch {tennisValueSummary.kalshiWatchRows?.length || 0}</span>
                       <span>PM pass {tennisValueSummary.kalshiPassRows?.length || 0}</span>
@@ -549,6 +596,9 @@ export function BoardView(props: BoardViewProps) {
                         rows without mapped Kalshi history are pass-only and should not be sized from generic matchup text.
                       </p>
                     )}
+                    {renderTennisValueRows('Moneyline value / watch', tennisValueSummary.mlRows)}
+                    {renderTennisValueRows('Match O/U games', tennisValueSummary.matchTotalRows)}
+                    {renderTennisValueRows('1st-set O/U games', tennisValueSummary.firstSetRows)}
                     {tennisValueSummary.kalshiTradeCandidates?.length ? (
                       <div className="tennis-value-list tennis-trade-list">
                         <div className="tennis-value-section-label">Prediction market trade-to-sell</div>

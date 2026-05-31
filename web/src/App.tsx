@@ -287,8 +287,9 @@ const formatTennisValueSelection = (row: AnyRecord) => {
   if (marketType === 'spread' && Number.isFinite(Number(row?.line))) {
     return `${selection} ${formatSignedNumber(row.line, 1)}${odds}`
   }
-  if (marketType === 'total' && Number.isFinite(Number(row?.line))) {
-    return `${selection} ${formatNumber(row.line, 1)}${odds}`
+  if ((marketType === 'total' || marketType.includes('total')) && Number.isFinite(Number(row?.line))) {
+    const lineLabel = formatNumber(row.line, 1)
+    return String(selection).includes(lineLabel) ? `${selection}${odds}` : `${selection} ${lineLabel}${odds}`
   }
   if (marketType === 'ml' && odds) {
     return `${selection} ML${odds}`
@@ -3029,11 +3030,17 @@ function App() {
       const rawRows = (summary.rows || []).map(attachGame).filter((row: AnyRecord) => row.game)
       const rawBetGradeRows = (summary.betGradeRows || []).map(attachGame).filter((row: AnyRecord) => row.game)
       const validatedRows = rawBetGradeRows.filter((row: AnyRecord) => row.validity?.valid)
+      const attachSummaryRows = (rows: AnyRecord[] = []) => rows.map(attachGame).filter((row: AnyRecord) => row.game)
       return {
         ...summary,
         rows: rawRows,
         betGradeRows: rawBetGradeRows,
         validatedRows,
+        mlRows: attachSummaryRows(summary.mlRows || []).slice(0, 8),
+        matchTotalRows: attachSummaryRows(summary.matchTotalRows || []).slice(0, 8),
+        firstSetRows: attachSummaryRows(summary.firstSetRows || []).slice(0, 8),
+        spreadRows: attachSummaryRows(summary.spreadRows || []).slice(0, 8),
+        setWinRows: attachSummaryRows(summary.setWinRows || []).slice(0, 8),
         kalshiTradeRows: activeKalshiTradeRows,
         kalshiTradeCandidates: activeKalshiTradeRows.filter((row: AnyRecord) => row.effectiveTier === 'trade'),
         kalshiWatchRows: activeKalshiTradeRows.filter((row: AnyRecord) => row.effectiveTier === 'watch'),
@@ -3059,6 +3066,20 @@ function App() {
     )
     if (!rows.length) return null
 
+    const marketKey = (row: AnyRecord) => String(row.marketType || row.label || '').toLowerCase()
+    const boardRank = (row: AnyRecord) => {
+      const ev = Number(row.evPer100)
+      return (row.betGrade ? 1000 : 0) + (Number.isFinite(ev) ? 300 + ev : Number(row.confidence || row.modelPct || 0))
+    }
+    const sortByBoardRank = (left: AnyRecord, right: AnyRecord) => boardRank(right) - boardRank(left)
+    const isMatchTotalRow = (row: AnyRecord) => {
+      const key = marketKey(row)
+      return (key.includes('o/u') || key.includes('total')) && !key.includes('first') && !key.includes('1st')
+    }
+    const isFirstSetRow = (row: AnyRecord) => {
+      const key = marketKey(row)
+      return key.includes('first') || key.includes('1st')
+    }
     const countByGrade = rows.reduce((acc: Record<string, number>, row: AnyRecord) => {
       acc[row.valueGrade] = (acc[row.valueGrade] || 0) + 1
       return acc
@@ -3090,6 +3111,11 @@ function App() {
       countByGrade,
       betGradeRows,
       validatedRows,
+      mlRows: rows.filter((row: AnyRecord) => marketKey(row) === 'ml').sort(sortByBoardRank).slice(0, 8),
+      matchTotalRows: rows.filter(isMatchTotalRow).sort(sortByBoardRank).slice(0, 8),
+      firstSetRows: rows.filter(isFirstSetRow).sort(sortByBoardRank).slice(0, 8),
+      spreadRows: rows.filter((row: AnyRecord) => marketKey(row) === 'spread').sort(sortByBoardRank).slice(0, 8),
+      setWinRows: rows.filter((row: AnyRecord) => marketKey(row).includes('set') && !isFirstSetRow(row)).sort(sortByBoardRank).slice(0, 8),
       kalshiTradeRows: activeKalshiTradeRows,
       kalshiTradeCandidates: activeKalshiTradeRows.filter((row: AnyRecord) => row.effectiveTier === 'trade'),
       kalshiWatchRows: activeKalshiTradeRows.filter((row: AnyRecord) => row.effectiveTier === 'watch'),

@@ -340,6 +340,11 @@ def game_value_book_missing(game: dict[str, Any]) -> list[str]:
     context = game.get("tennisContext") or {}
     matrix = context.get("bettingMatrix") or []
     labels = {str(row.get("label") or row.get("marketType") or "").lower() for row in matrix}
+    derivative_markets = context.get("derivativeMarkets") or []
+    derivative_labels = {
+        str(row.get("label") or row.get("marketType") or "").lower()
+        for row in derivative_markets
+    }
     value_board = context.get("valueBoard") or {}
     missing: list[str] = []
     if not any("ml" in label or "moneyline" in label for label in labels) and not value_board.get("ml"):
@@ -348,6 +353,10 @@ def game_value_book_missing(game: dict[str, Any]) -> list[str]:
         missing.append("match O/U games value book")
     if not any("1st set" in label or "first-set" in label or "first set" in label for label in labels) and not value_board.get("firstSetTotal"):
         missing.append("1st-set O/U games value book")
+    if not any(("o/u" in label or "total" in label) and "first" not in label and "1st" not in label for label in derivative_labels):
+        missing.append("match O/U derivative row")
+    if not any("1st set" in label or "first-set" in label or "first set" in label for label in derivative_labels):
+        missing.append("1st-set O/U derivative row")
     return missing
 
 
@@ -377,13 +386,26 @@ def check_value_books(date: str, settled: bool) -> dict[str, Any]:
     watch_rows = [row for row in kalshi_rows if row.get("spikeModelTier") == "watch"]
     pass_rows = [row for row in kalshi_rows if row.get("spikeModelTier") == "pass"]
     kalshi_ok = settled or bool(kalshi_rows)
-    ok = checked_games > 0 and not missing_games and kalshi_ok
+    summary_missing = []
+    summary_path = PUBLISHED_SLATES_DIR / date / "summary.json"
+    if summary_path.exists():
+        summary = read_json(summary_path).get("tennisValueSummary") or {}
+        if not summary.get("mlRows"):
+            summary_missing.append("summary ML value rows")
+        if not summary.get("matchTotalRows"):
+            summary_missing.append("summary match O/U rows")
+        if not summary.get("firstSetRows"):
+            summary_missing.append("summary 1st-set O/U rows")
+    else:
+        summary_missing.append("published slate summary")
+    ok = checked_games > 0 and not missing_games and not summary_missing and kalshi_ok
     return {
         "ok": ok,
         "mode": "settled" if settled else "pregame",
         "checkedGames": checked_games,
         "missingGames": missing_games[:50],
         "missingGameCount": len(missing_games),
+        "summaryMissing": summary_missing,
         "kalshiRows": len(kalshi_rows),
         "kalshiTradeRows": len(trade_rows),
         "kalshiWatchRows": len(watch_rows),

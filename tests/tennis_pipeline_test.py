@@ -101,6 +101,11 @@ class TennisWarehouseImportTest(unittest.TestCase):
                     {"label": "O/U games"},
                     {"label": "1st set O/U"},
                 ],
+                "derivativeMarkets": [
+                    {"label": "ML"},
+                    {"label": "O/U"},
+                    {"label": "1st set O/U"},
+                ],
                 "valueBoard": {},
             },
         }
@@ -115,7 +120,12 @@ class TennisWarehouseImportTest(unittest.TestCase):
         }
         self.assertEqual(
             game_value_book_missing(missing_game),
-            ["match O/U games value book", "1st-set O/U games value book"],
+            [
+                "match O/U games value book",
+                "1st-set O/U games value book",
+                "match O/U derivative row",
+                "1st-set O/U derivative row",
+            ],
         )
 
 

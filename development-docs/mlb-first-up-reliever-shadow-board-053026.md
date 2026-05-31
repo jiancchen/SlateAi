@@ -1,6 +1,6 @@
 # MLB First-Up Reliever Shadow Board — May 30, 2026
 
-This is `E34`, the first live-style bullpen artifact built from the `E33` reliever stack.
+This is `E36 shadow`, the live-style bullpen artifact built from the `E33` stack plus the adaptive heavy-use reset overlay.
 
 Goal:
 
@@ -12,7 +12,7 @@ Target slate:
 
 - date: `2026-05-30`
 - team-side shadow cards: `30`
-- reliever candidates scored: `287`
+- reliever candidates scored: `272`
 - conversion window: `8`
 - dependency window: `5`
 
@@ -26,22 +26,22 @@ Target slate:
 
 | Team-side games | Exact 1st | Top-2 | Top-3 |
 | --- | --- | --- | --- |
-| 4 | 0.0% | 50.0% | 50.0% |
+| 20 | 20.0% | 35.0% | 50.0% |
 
 ## Top Shadow Clusters
 
 | Team | Opponent | Lead | Alt | Starter hook | Top-2 share |
 | --- | --- | --- | --- | --- | --- |
-| Astros | Brewers | Nate Pearson | AJ Blubaugh | 0.0% | 52.1% |
-| Padres | Nationals | Wandy Peralta | Bradgley Rodriguez | 0.0% | 49.4% |
-| Cubs | Cardinals | Ryan Rolison | Jacob Webb | 0.0% | 39.0% |
-| Pirates | Twins | Mason Montgomery | Gregory Soto | 0.0% | 37.2% |
-| Twins | Pirates | Simeon Woods Richardson | Andrew Morris | 0.0% | 36.9% |
-| Phillies | Dodgers | Jonathan Bowlan | Tanner Banks | 0.0% | 36.7% |
-| White Sox | Tigers | Tyler Davis | Grant Taylor | 0.0% | 35.2% |
-| Athletics | Yankees | Jacob Lopez | Justin Sterner | 0.0% | 34.8% |
-| Mariners | Diamondbacks | Alex Hoppe | José A. Ferrer | 0.0% | 34.4% |
-| Diamondbacks | Mariners | Taylor Clarke | Kevin Ginkel | 0.0% | 34.1% |
+| Astros | Brewers | AJ Blubaugh | Nate Pearson | 0.0% | 55.2% |
+| Padres | Nationals | Wandy Peralta | Bradgley Rodriguez | 0.0% | 51.9% |
+| Brewers | Astros | Carlos Rodriguez | Shane Drohan | 0.0% | 45.6% |
+| Reds | Braves | Sam Moll | Brock Burke | 0.0% | 45.5% |
+| Pirates | Twins | Mason Montgomery | Gregory Soto | 0.0% | 44.3% |
+| Marlins | Mets | John King | Andrew Nardi | 0.0% | 43.5% |
+| Twins | Pirates | Simeon Woods Richardson | Andrew Morris | 0.0% | 43.1% |
+| Angels | Rays | Sam Bachman | José Fermin | 0.0% | 41.5% |
+| Braves | Reds | Reynaldo López | Dylan Dodd | 0.0% | 41.3% |
+| Royals | Rangers | Daniel Lynch IV | John Schreiber | 0.0% | 40.5% |
 
 ## Top Shadow Features
 
@@ -62,7 +62,7 @@ Target slate:
 
 ## Read
 
-- `E34` is not a live-model promotion. It is a board artifact for inspection.
+- `E36 shadow` is not a live-model promotion. It is a board artifact for inspection.
 - The shadow card is only meant to show:
   - who the `E33` stack thinks is first up
   - who the main alternate is

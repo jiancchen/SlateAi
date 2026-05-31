@@ -43,14 +43,21 @@ Kalshi open orderbooks must be mirrored into both the Kalshi tables and `tennis_
 
 Prediction-market trade-to-sell is not the same as an upset pick. The spike model may only promote a pre-match scalp when there is a realistic exit target above entry. High-entry rows where the projected exit is at or below the buy price are pass rows, even if the underdog can win. A 40c-to-95c path is a win bet, not an arbitrage/scalp setup.
 
-Before generating the value board, complete the sportsbook line pass. Open each FanDuel event URL stored in `data-private/reference/tennis/fanduel-lines-YYYY-MM-DD.json` and expand the primary `Moneyline`, `Game Handicap`, and `Total Match Games` sections. Store the page pull with timestamp/source in the same slate file:
+Before generating the value board, complete the sportsbook line pass. Prefer the Chrome CDP scraper because raw curl is usually blocked by FanDuel/PerimeterX:
+
+```bash
+node pipeline/scrape_fanduel_tennis_cdp.mjs --date YYYY-MM-DD
+```
+
+The scraper uses the challenge-cleared Chrome profile on port `9222`, maps the event URLs from the FanDuel men/women boards, opens each event page, and stores `Moneyline`, `Game Handicap`, `Total Match Games`, `Set 1 Total Games`, and set-win prices with timestamp/source. If the scraper fails, open each FanDuel event URL manually and expand those same markets. Store the page pull in `data-private/reference/tennis/fanduel-lines-YYYY-MM-DD.json`:
 
 ```json
 {
   "markets": {
     "moneyline": [{ "player": "Naomi Osaka", "odds": -118 }],
     "gameHandicap": [{ "player": "Naomi Osaka", "spread": -0.5, "odds": -118 }],
-    "totalGames": [{ "side": "Over", "line": 22.5, "odds": -106 }]
+    "totalGames": [{ "side": "Over", "line": 22.5, "odds": -106 }],
+    "firstSetTotalGames": [{ "side": "Over", "line": 9.5, "odds": -106 }]
   }
 }
 ```

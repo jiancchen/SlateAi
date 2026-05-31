@@ -303,6 +303,11 @@ const profitOn100 = (odds) => {
 }
 
 const clamp = (value, min, max) => Math.max(min, Math.min(max, value))
+const finiteNumberOrNull = (value) => {
+  if (value === null || value === undefined || value === '') return null
+  const numericValue = Number(value)
+  return Number.isFinite(numericValue) ? numericValue : null
+}
 const FEE_PER_100_RISKED = 2
 const MIN_VALID_PLUS_ODDS = 100
 const MAX_VALID_PLUS_ODDS = 250
@@ -691,6 +696,9 @@ const buildMarketData = ({ fanduel, players, pickName, weaknessEdge, confidence,
   const total = (fanduel.markets.totalGames || [])[0]
   const totalOver = (fanduel.markets.totalGames || []).find((line) => line.side === 'Over')
   const totalUnder = (fanduel.markets.totalGames || []).find((line) => line.side === 'Under')
+  const firstSetTotal = (fanduel.markets.firstSetTotalGames || [])[0]
+  const firstSetTotalOver = (fanduel.markets.firstSetTotalGames || []).find((line) => line.side === 'Over')
+  const firstSetTotalUnder = (fanduel.markets.firstSetTotalGames || []).find((line) => line.side === 'Under')
   const edge = Number(desk?.edgePct)
   const impliedPct = Number(desk?.impliedPct)
   let priceAction = 'FanDuel price captured; compare edge before betting.'
@@ -711,6 +719,9 @@ const buildMarketData = ({ fanduel, players, pickName, weaknessEdge, confidence,
   const totalValue = total
     ? `${total.line} games: Over ${formatAmerican(totalOver?.odds)} / Under ${formatAmerican(totalUnder?.odds)}`
     : 'No total captured'
+  const firstSetTotalValue = firstSetTotal
+    ? `${firstSetTotal.line} 1st-set games: Over ${formatAmerican(firstSetTotalOver?.odds)} / Under ${formatAmerican(firstSetTotalUnder?.odds)}`
+    : 'No first-set total captured'
   const spreadLean = spread
     ? Math.abs(Number(spread.spread)) <= 3.5 && weaknessEdge?.edgeType === 'Weakness edge'
       ? `${pickName} spread is playable only if early return pressure shows`
@@ -737,28 +748,43 @@ const buildMarketData = ({ fanduel, players, pickName, weaknessEdge, confidence,
     total,
     totalOver,
     totalUnder,
+    firstSetTotal,
+    firstSetTotalOver,
+    firstSetTotalUnder,
     priceAction,
     spreadValue,
     totalValue,
+    firstSetTotalValue,
     spreadLean,
     totalLean,
     mlValue: `${enrichedPlayers.map((player) => `${player.name} ${player.americanLabel}`).join(' / ')}`,
-    marketNote: `FanDuel ML, game handicap, and total captured from sportsbook page. ${priceAction}`,
+    marketNote: `FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. ${priceAction}`,
     noVigNote: Number.isFinite(edge) ? `Model ${confidence}% vs FanDuel implied ${desk.impliedPct}% (${edge > 0 ? '+' : ''}${edge} pts).` : 'No model-vs-price edge available.'
   }
 }
 
-const firstSetValueBook = ({ derivativeCase, confidence, volatility, weaknessEdge }) => {
+const firstSetValueBook = ({ derivativeCase, confidence, volatility, weaknessEdge, marketData }) => {
+  const market = marketData?.firstSetTotal
+  const over = marketData?.firstSetTotalOver
+  const under = marketData?.firstSetTotalUnder
+  const postedLine = Number(market?.line)
   const firstSet = derivativeCase?.firstSet
   if (firstSet) {
+    const leanText = firstSet.lean || 'No bet'
+    const selectedOdds = /^over/i.test(leanText) ? over?.odds : /^under/i.test(leanText) ? under?.odds : null
+    const selectedOddsValue = finiteNumberOrNull(selectedOdds)
     return {
       marketType: 'First-set total',
-      selection: firstSet.lean || 'No bet',
-      line: firstSet.postedLine ?? null,
+      selection: leanText,
+      line: firstSet.postedLine ?? (Number.isFinite(postedLine) ? postedLine : null),
+      americanOdds: selectedOddsValue,
       expectedGames: Number.isFinite(Number(firstSet.expectedGames)) ? Number(firstSet.expectedGames) : null,
       confidence: firstSet.confidence ?? null,
       tiebreakRisk: Number.isFinite(Number(firstSet.tiebreakRisk)) ? Number(firstSet.tiebreakRisk) : null,
       earlyBreakRisk: Number.isFinite(Number(firstSet.earlyBreakRisk)) ? Number(firstSet.earlyBreakRisk) : null,
+      modelPct: firstSet.confidence ?? null,
+      evPer100: selectedOddsValue !== null && Number.isFinite(Number(firstSet.confidence)) ? evPer100(firstSet.confidence, selectedOddsValue) : null,
+      netEvPer100: selectedOddsValue !== null && Number.isFinite(Number(firstSet.confidence)) ? netEvPer100(firstSet.confidence, selectedOddsValue) : null,
       valueGrade: firstSet.confidence >= 58 ? 'Actionable live watch' : 'Thin',
       reason: firstSet.lean || 'First-set entry needs early serve pressure.',
       betGrade: false
@@ -770,22 +796,43 @@ const firstSetValueBook = ({ derivativeCase, confidence, volatility, weaknessEdg
     12.5
   )
   const breakRisk = weaknessEdge?.edgeType === 'Weakness edge' ? 62 : volatility >= 62 ? 58 : 48
+  const lineGap = Number.isFinite(postedLine) ? Number((estimatedGames - postedLine).toFixed(1)) : null
+  const selection =
+    lineGap == null
+      ? 'Price required'
+      : lineGap >= 0.3
+        ? `Over ${postedLine}`
+        : lineGap <= -0.3
+          ? `Under ${postedLine}`
+          : 'Pass / near line'
+  const selectedOdds = selection.startsWith('Over') ? over?.odds : selection.startsWith('Under') ? under?.odds : null
+  const selectedOddsValue = finiteNumberOrNull(selectedOdds)
+  const modelPct = Number.isFinite(Number(lineGap))
+    ? clamp(Math.round(50 + Math.abs(lineGap) * 8 + (volatility >= 62 ? 3 : 0) - (confidence >= 72 ? 2 : 0)), 45, 64)
+    : clamp(Math.round(54 + (volatility >= 62 ? 4 : 0) - (confidence >= 72 ? 3 : 0)), 45, 62)
   return {
     marketType: 'First-set total',
-    selection: 'Price required',
-    line: null,
+    selection,
+    line: Number.isFinite(postedLine) ? postedLine : null,
+    americanOdds: selectedOddsValue,
     expectedGames: estimatedGames,
-    confidence: clamp(Math.round(54 + (volatility >= 62 ? 4 : 0) - (confidence >= 72 ? 3 : 0)), 45, 62),
+    confidence: modelPct,
     tiebreakRisk: clamp(Math.round(100 - breakRisk), 20, 70),
     earlyBreakRisk: breakRisk,
-    valueGrade: 'Needs posted first-set total',
-    reason: 'Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.',
+    modelPct,
+    evPer100: selectedOddsValue !== null ? evPer100(modelPct, selectedOddsValue) : null,
+    netEvPer100: selectedOddsValue !== null ? netEvPer100(modelPct, selectedOddsValue) : null,
+    valueGrade: lineGap == null ? 'Needs posted first-set total' : Math.abs(lineGap) >= 0.5 ? 'Thin value' : 'Near fair',
+    reason:
+      lineGap == null
+        ? 'Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.'
+        : `Expected first-set games ${estimatedGames} vs FanDuel ${postedLine}; ${selection}.`,
     betGrade: false
   }
 }
 
 const buildValueBoard = ({ marketData, pickName, confidence, volatility, weaknessEdge, setWinProjections, derivativeCase }) => {
-  const firstSetTotal = firstSetValueBook({ derivativeCase, confidence, volatility, weaknessEdge })
+  const firstSetTotal = firstSetValueBook({ derivativeCase, confidence, volatility, weaknessEdge, marketData })
   if (!marketData) {
     return {
       note: 'No sportsbook price captured; value math is unavailable.',
@@ -903,7 +950,11 @@ const buildValueBoard = ({ marketData, pickName, confidence, volatility, weaknes
       : {
           marketType: 'Total',
           selection: 'No bet',
+          line: marketData.total?.line ?? null,
+          overOdds: marketData.totalOver?.odds ?? null,
+          underOdds: marketData.totalUnder?.odds ?? null,
           valueGrade: 'No direction',
+          reason: marketData.total ? `FanDuel total is ${marketData.total.line}; model did not clear an over/under edge.` : 'No posted match total captured.',
           betGrade: false
         },
     firstSetTotal,
@@ -1162,6 +1213,14 @@ const main = async () => {
   moduleText = moduleText.replace(
     '      valueBoard: raw.valueBoard,\n',
     '      bettingMatrix: raw.bettingMatrix,\n      derivativeMarketCase: raw.derivativeCase,\n      valueBoard: raw.valueBoard,\n      ensembleValueCase: raw.ensembleValueCase,\n'
+  )
+  moduleText = moduleText.replace(
+    "    market?.total ? { label: 'Total games', book: market.source, value: market.totalValue } : null\n  ].filter(Boolean)",
+    "    market?.total ? { label: 'Total games', book: market.source, value: market.totalValue } : null,\n    market?.firstSetTotal ? { label: '1st set total games', book: market.source, value: market.firstSetTotalValue } : null\n  ].filter(Boolean)"
+  )
+  moduleText = moduleText.replace(
+    "        { label: 'O/U', value: market?.totalValue || 'Need posted total', lean: market?.totalLean || raw.weaknessEdge?.totalRead || raw.totals, confidence: Math.max(50, raw.confidence - 8), ...(raw.valueBoard?.total || {}), tone: raw.totals.includes('over') || raw.weaknessEdge?.totalRead?.includes('breaks') ? 'accent' : 'neutral', reason: raw.totals }\n      ],",
+    "        { label: 'O/U', value: market?.totalValue || 'Need posted total', lean: market?.totalLean || raw.weaknessEdge?.totalRead || raw.totals, confidence: Math.max(50, raw.confidence - 8), ...(raw.valueBoard?.total || {}), tone: raw.totals.includes('over') || raw.weaknessEdge?.totalRead?.includes('breaks') ? 'accent' : 'neutral', reason: raw.totals },\n        { label: '1st set O/U', value: raw.valueBoard?.firstSetTotal?.line ? `Line ${raw.valueBoard.firstSetTotal.line}` : 'Need posted first-set total', lean: raw.valueBoard?.firstSetTotal?.selection || raw.valueBoard?.firstSetTotal?.lean || 'Price required', confidence: raw.valueBoard?.firstSetTotal?.confidence ?? Math.max(50, raw.confidence - 10), ...(raw.valueBoard?.firstSetTotal || {}), tone: raw.valueBoard?.firstSetTotal?.confidence >= 58 ? 'accent' : 'neutral', reason: raw.valueBoard?.firstSetTotal?.reason || 'Use expected first-set games against the posted 1st-set total.' }\n      ],"
   )
 
   await fs.mkdir(path.dirname(path.resolve(ROOT, options.output)), { recursive: true })
