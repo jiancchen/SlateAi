@@ -9,8 +9,8 @@ const MODEL_CARTRIDGES = {
     sport: 'tennis',
     label: 'T0 tennis baseline',
     status: 'baseline',
-    entrypoint: 'pipeline/generate-tennis-day-module.mjs --model T0',
-    manifestPath: 'pipeline/tennis_model_cartridges/T0/manifest.json'
+    entrypoint: 'models/tennis/cartridges/T0/runner.mjs',
+    manifestPath: 'models/tennis/cartridges/T0/manifest.json'
   }
 }
 

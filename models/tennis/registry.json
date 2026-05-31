@@ -13,8 +13,7 @@
     "defaultMode": "pregame"
   },
   "cartridgeRoot": "./cartridges",
-  "migrationStatus": "bridge_active",
-  "legacyRegistry": "../../pipeline/tennis_model_registry.json",
+  "migrationStatus": "models_path_active",
   "warehouse": {
     "currentPath": "data-private/warehouse/sports.db",
     "splitDeferred": true,
@@ -39,24 +38,24 @@
     {
       "modelId": "T0",
       "role": "parent_model",
-      "currentPath": "../../pipeline/tennis_model_cartridges/T0",
+      "currentPath": "./cartridges/T0",
       "targetPath": "./cartridges/T0",
-      "status": "copied_bridge_pending",
-      "notes": "T0 has been copied into models/tennis/cartridges/T0. Compatibility readers should prefer this path while the old pipeline path remains available for frozen T0 snapshot checks."
+      "status": "active",
+      "notes": "T0 is the active tennis baseline cartridge. Compatibility wrappers may keep old command names alive, but cartridge metadata and model cards are owned here."
     },
     {
       "modelId": "F0",
       "role": "feature_contract",
-      "currentPath": "../../pipeline/tennis_model_cartridges/F0",
+      "currentPath": "./cartridges/F0",
       "targetPath": "./cartridges/F0",
-      "status": "copied_bridge_pending"
+      "status": "active"
     },
     {
       "modelId": "E0",
       "role": "evaluator",
-      "currentPath": "../../pipeline/tennis_model_cartridges/E0",
+      "currentPath": "./cartridges/E0",
       "targetPath": "./cartridges/E0",
-      "status": "copied_bridge_pending"
+      "status": "active"
     }
   ]
 }

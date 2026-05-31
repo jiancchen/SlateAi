@@ -6,18 +6,18 @@
     "sport": "tennis",
     "label": "T0 tennis baseline",
     "status": "baseline",
-    "entrypoint": "pipeline/generate-tennis-day-module.mjs --model T0",
-    "manifestPath": "pipeline/tennis_model_cartridges/T0/manifest.json"
+    "entrypoint": "models/tennis/cartridges/T0/runner.mjs",
+    "manifestPath": "models/tennis/cartridges/T0/manifest.json"
   },
   "cartridgeLock": {
-    "manifest": "pipeline/tennis_model_cartridges/T0/manifest.json",
+    "manifest": "models/tennis/cartridges/T0/manifest.json",
     "sourceFiles": [
       {
         "role": "model-runner",
-        "path": "pipeline/generate-tennis-day-module.mjs",
-        "expectedSha256": "f66aa0bfd9a7fcbf6aa271d1f4c022a5dfa17628cbc109ea730d8c54ec68f869",
+        "path": "pipeline/tennis/publish/generate-day-module.mjs",
+        "expectedSha256": "5a78b99dc45686fbbb1de0e5fe4877ef9a2bff690824932f4e0c123df58c20ee",
         "exists": true,
-        "sha256": "f66aa0bfd9a7fcbf6aa271d1f4c022a5dfa17628cbc109ea730d8c54ec68f869"
+        "sha256": "5a78b99dc45686fbbb1de0e5fe4877ef9a2bff690824932f4e0c123df58c20ee"
       },
       {
         "role": "source-mapping-helper",
@@ -28,10 +28,10 @@
       },
       {
         "role": "snapshot-verifier",
-        "path": "pipeline/verify-tennis-model-snapshot.mjs",
-        "expectedSha256": "6a345850bfe4a7a7bf20cd12f1071acc1a3776aa24bcf9aa942697e94247c6cb",
+        "path": "pipeline/tennis/workflows/verify-model-snapshot.mjs",
+        "expectedSha256": "9897f866abc21c1453b691ea8f41e89cb69804e448aa5c01c4726f73ce8fe680",
         "exists": true,
-        "sha256": "6a345850bfe4a7a7bf20cd12f1071acc1a3776aa24bcf9aa942697e94247c6cb"
+        "sha256": "9897f866abc21c1453b691ea8f41e89cb69804e448aa5c01c4726f73ce8fe680"
       }
     ],
     "inputFiles": [

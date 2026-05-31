@@ -18,7 +18,7 @@
     {
       "role": "model-runner",
       "path": "pipeline/tennis/publish/generate-day-module.mjs",
-      "sha256": "d4fcebc436188bae9039c5f3cd930c500973b6641a8ba098eef8cd0a3b70d5da"
+      "sha256": "5a78b99dc45686fbbb1de0e5fe4877ef9a2bff690824932f4e0c123df58c20ee"
     },
     {
       "role": "source-mapping-helper",
@@ -28,7 +28,7 @@
     {
       "role": "snapshot-verifier",
       "path": "pipeline/tennis/workflows/verify-model-snapshot.mjs",
-      "sha256": "a0a3c89dd54bef2fbea815260e72420f01e51cff6d75a7db76d386d50ef847ed"
+      "sha256": "9897f866abc21c1453b691ea8f41e89cb69804e448aa5c01c4726f73ce8fe680"
     }
   ],
   "description": "Frozen baseline of the Roland Garros tennis pipeline after the May 31 totals/first-set O-U fix. This is a reproducibility lock, not a claim that the model is good.",

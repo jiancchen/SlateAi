@@ -47,6 +47,6 @@
       "status": "ok"
     }
   ],
-  "stdout": "\n> sports-trading-board-workspace@1.0.0 data:health:tennis\n> python3 pipeline/tennis_pipeline_health.py --date 2026-05-31 --pregame\n\nTennis pipeline health PASS for 2026-05-31 (pregame)\n- sourceFiles: ok\n- rankings: ok\n- recentMap: ok\n- warehouse: ok\n- sofascore: ok\n- kalshi: ok\n- weather: ok\n- resultsTraining: ok\n- published: ok\n- valueBooks: ok\n",
+  "stdout": "\n> sports-trading-board-workspace@1.0.0 data:health:tennis\n> python3 pipeline/tennis/workflows/health.py --date 2026-05-31 --pregame\n\nTennis pipeline health PASS for 2026-05-31 (pregame)\n- sourceFiles: ok\n- rankings: ok\n- recentMap: ok\n- warehouse: ok\n- sofascore: ok\n- kalshi: ok\n- weather: ok\n- resultsTraining: ok\n- published: ok\n- valueBooks: ok\n",
   "stderr": ""
 }

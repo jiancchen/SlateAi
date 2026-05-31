@@ -3,14 +3,14 @@
   "modelId": "T0",
   "date": "2026-05-31",
   "cartridgeLock": {
-    "manifest": "pipeline/tennis_model_cartridges/T0/manifest.json",
+    "manifest": "models/tennis/cartridges/T0/manifest.json",
     "sourceFiles": [
       {
         "role": "model-runner",
         "path": "pipeline/tennis/publish/generate-day-module.mjs",
-        "expectedSha256": "d4fcebc436188bae9039c5f3cd930c500973b6641a8ba098eef8cd0a3b70d5da",
+        "expectedSha256": "5a78b99dc45686fbbb1de0e5fe4877ef9a2bff690824932f4e0c123df58c20ee",
         "exists": true,
-        "sha256": "d4fcebc436188bae9039c5f3cd930c500973b6641a8ba098eef8cd0a3b70d5da"
+        "sha256": "5a78b99dc45686fbbb1de0e5fe4877ef9a2bff690824932f4e0c123df58c20ee"
       },
       {
         "role": "source-mapping-helper",
@@ -22,9 +22,9 @@
       {
         "role": "snapshot-verifier",
         "path": "pipeline/tennis/workflows/verify-model-snapshot.mjs",
-        "expectedSha256": "a0a3c89dd54bef2fbea815260e72420f01e51cff6d75a7db76d386d50ef847ed",
+        "expectedSha256": "9897f866abc21c1453b691ea8f41e89cb69804e448aa5c01c4726f73ce8fe680",
         "exists": true,
-        "sha256": "a0a3c89dd54bef2fbea815260e72420f01e51cff6d75a7db76d386d50ef847ed"
+        "sha256": "9897f866abc21c1453b691ea8f41e89cb69804e448aa5c01c4726f73ce8fe680"
       }
     ],
     "inputFiles": [

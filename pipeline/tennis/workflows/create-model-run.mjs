@@ -1,6 +1,7 @@
 import {
   activeStack,
   gitInfo,
+  loadRegistry,
   readJson,
   rootDir,
   runDirFor,
@@ -43,7 +44,7 @@ const parseArgs = () => {
 export const createRun = async (options) => {
   const stack = await activeStack({ model: options.model || null })
   const runId = runIdFor({ date: options.date, stack })
-  const registry = await readJson('pipeline/tennis_model_registry.json', {})
+  const registry = await loadRegistry()
   const manifestFile = await resolveTennisCartridgeFile({ modelId: stack.modelId, fileName: 'manifest.json' })
   const manifest = await readJson(manifestFile.path, {})
   const git = await gitInfo()

@@ -114,18 +114,9 @@ export const gitInfo = async () => {
 
 export const loadRegistry = async () => {
   const modernPath = 'models/tennis/registry.json'
-  const modern = await readJson(modernPath, null)
-  if (modern) {
-    return {
-      ...modern,
-      registryPath: modernPath
-    }
-  }
-  const legacyPath = 'pipeline/tennis_model_registry.json'
-  const legacy = await readJson(legacyPath)
   return {
-    ...legacy,
-    registryPath: legacyPath
+    ...(await readJson(modernPath)),
+    registryPath: modernPath
   }
 }
 

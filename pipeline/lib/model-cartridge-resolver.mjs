@@ -17,15 +17,14 @@ export const tennisCartridgeDirCandidates = (modelId) => {
   const safeModelId = String(modelId || '').replace(/[^a-z0-9_-]/gi, '')
   if (!safeModelId) return []
   return [
-    `models/tennis/cartridges/${safeModelId}`,
-    `pipeline/tennis_model_cartridges/${safeModelId}`
+    `models/tennis/cartridges/${safeModelId}`
   ]
 }
 
 export const resolveTennisCartridgeDir = async ({ modelId, requiredFile = 'manifest.json' } = {}) => {
   for (const dir of tennisCartridgeDirCandidates(modelId)) {
     const probe = requiredFile ? `${dir}/${requiredFile}` : dir
-    if (await exists(probe)) return { dir, source: dir.startsWith('models/') ? 'models' : 'pipeline-legacy' }
+    if (await exists(probe)) return { dir, source: 'models' }
   }
   throw new Error(`Unable to resolve tennis model cartridge ${modelId || ''}`)
 }

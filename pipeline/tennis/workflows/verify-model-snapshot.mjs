@@ -4,6 +4,7 @@ import path from 'node:path'
 import crypto from 'node:crypto'
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
+import { resolveTennisCartridgeFile } from '../../lib/model-cartridge-resolver.mjs'
 
 const execFileAsync = promisify(execFile)
 const ROOT = path.resolve(import.meta.dirname, '..', '..', '..')
@@ -62,8 +63,6 @@ const fileHash = async (filePath) => {
   }
 }
 
-const manifestPath = ({ model }) => `pipeline/tennis_model_cartridges/${model}/manifest.json`
-
 const inputPathsForDate = (date) => [
   `data-private/reference/tennis/espn-scoreboard-${date}.json`,
   'data-private/reference/tennis/player-rankings.json',
@@ -77,7 +76,8 @@ const inputPathsForDate = (date) => [
 ]
 
 const buildCartridgeLock = async ({ model, date }) => {
-  const manifest = await readJson(manifestPath({ model }), {})
+  const manifestFile = await resolveTennisCartridgeFile({ modelId: model, fileName: 'manifest.json' })
+  const manifest = await readJson(manifestFile.path, {})
   const sourceFiles = await Promise.all((manifest.sourceFiles || []).map(async (entry) => ({
     role: entry.role ?? null,
     path: entry.path,
@@ -86,7 +86,7 @@ const buildCartridgeLock = async ({ model, date }) => {
   })))
   const inputFiles = await Promise.all(inputPathsForDate(date).map(fileHash))
   return {
-    manifest: manifestPath({ model }),
+    manifest: manifestFile.path,
     sourceFiles,
     inputFiles
   }

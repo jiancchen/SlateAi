@@ -6,9 +6,9 @@ Date: 2026-05-31
 
 - Added top-level `models/` registry and sport registries.
 - Copied tennis `T0`, `F0`, and `E0` cartridges into `models/tennis/cartridges/`.
-- Added `pipeline/lib/model-cartridge-resolver.mjs` so model readers can prefer `models/` and fall back to legacy `pipeline/tennis_model_cartridges/`.
-- Updated tennis run creation and public export model-card loading to prefer the new cartridge location.
-- Updated the tennis active registry to live in `models/tennis/registry.json` while preserving the legacy registry as fallback/reference.
+- Added `pipeline/lib/model-cartridge-resolver.mjs` so model readers resolve tennis cartridges from `models/`.
+- Updated tennis run creation and public export model-card loading to read the model-owned cartridge location.
+- Updated the tennis active registry to live in `models/tennis/registry.json`.
 - Created MLB cartridge shells for `M0`, `RP36`, and `E0`.
 - Added thin MLB cartridge runners for `M0` and `RP36` that delegate to the current legacy pipeline scripts.
 - Added an RP36 snapshot verifier and confirmed it reproduces the existing 2026-05-30 reliever-shadow artifact exactly.
@@ -36,17 +36,15 @@ Date: 2026-05-31
 - Moved tennis research, value, Kalshi, and upset-audit scripts into `pipeline/tennis/research/` with compatibility wrappers at their old top-level pipeline paths.
 - Updated tennis package scripts, runbooks, and future run-lock source inventory to use the sport-scoped research paths directly.
 - Moved tennis warehouse SQL migrations into `pipeline/tennis/warehouse/migrations/` and left warehouse code with a legacy fallback for old checkouts.
+- Cut T0/F0/E0 active cartridge metadata over to `models/tennis/cartridges/`, refreshed the May 31 T0 golden snapshot for metadata-path changes only, and removed the duplicate `pipeline/tennis_model_cartridges/` and legacy tennis registry files.
 
 ## Intentionally Still Legacy
 
 - `pipeline/generate-tennis-day-module.mjs` and `pipeline/verify-tennis-model-snapshot.mjs` remain compatibility wrappers for old commands, while the T0 manifest source hashes now point at the sport-scoped implementations.
-- `pipeline/tennis/workflows/verify-model-snapshot.mjs` still reads the legacy T0 manifest path until the cartridge metadata cutover is intentionally completed.
-- `pipeline/tennis_model_cartridges/` remains in place until the T0 snapshot contract is intentionally cut over.
 - MLB prediction behavior still runs through current pipeline logic under sport-scoped workflow/fetcher/publish/warehouse/research folders. RP36 now owns its reliever-shadow exporter; M0 remains a shell.
 
 ## Next Safe Steps
 
 1. Re-lock or intentionally supersede the May 31 tennis run source lock after this migration checkpoint; strict run verification now reports expected source drift from moved files, while `--allow-source-drift` verifies outputs and coverage.
-2. Add a planned tennis metadata-path cutover test, then move T0/F0/E0 reads fully from `pipeline/tennis_model_cartridges/` to `models/tennis/cartridges/`.
-3. Add an MLB `M0` run manifest design before moving warehouse/research internals.
-4. Move remaining script-written development docs only after their package scripts are updated together.
+2. Add an MLB `M0` run manifest design before moving warehouse/research internals.
+3. Move remaining script-written development docs only after their package scripts are updated together.

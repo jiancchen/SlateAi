@@ -5,6 +5,7 @@ import {
   fileHash,
   gitInfo,
   inputPathsForDate,
+  loadRegistry,
   readJson,
   rootDir,
   runCommand,
@@ -41,13 +42,15 @@ const parseArgs = () => {
   return options
 }
 
-const sourceInventory = ({ manifest, manifestPath }) => {
+const sourceInventory = ({ manifest, manifestPath, registryPath }) => {
   const manifestFiles = (manifest.sourceFiles || []).map((entry) => ({ path: entry.path, role: entry.role || 'model-source' }))
   const frameworkFiles = [
-    { path: 'pipeline/tennis_model_registry.json', role: 'model-registry' },
+    { path: registryPath || 'models/tennis/registry.json', role: 'model-registry' },
     { path: manifestPath, role: 'model-manifest' },
     { path: manifest.entrypoint || 'models/tennis/cartridges/T0/runner.mjs', role: 'model-runner-wrapper' },
     { path: manifest.outputContract || 'models/tennis/cartridges/T0/output-contract.json', role: 'output-contract' },
+    { path: manifest.modelDescription || 'models/tennis/cartridges/T0/model_description.json', role: 'model-description' },
+    { path: manifest.modelNotes || 'models/tennis/cartridges/T0/MODEL_NOTES.md', role: 'model-notes' },
     { path: 'models/tennis/cartridges/F0/manifest.json', role: 'feature-manifest' },
     { path: manifest.featureContract || 'models/tennis/cartridges/F0/feature-contract.json', role: 'feature-contract' },
     { path: 'models/tennis/cartridges/E0/manifest.json', role: 'evaluator-manifest' },
@@ -56,20 +59,20 @@ const sourceInventory = ({ manifest, manifestPath }) => {
     { path: 'pipeline/lib/model-run-utils.mjs', role: 'run-lock-helper' },
     { path: 'pipeline/lib/warehouse-paths.mjs', role: 'warehouse-path-resolver' },
     { path: 'pipeline/warehouse_paths.py', role: 'warehouse-path-resolver' },
-    { path: 'pipeline/create-tennis-model-run.mjs', role: 'run-create-script' },
-    { path: 'pipeline/lock-tennis-model-run.mjs', role: 'run-lock-script' },
-    { path: 'pipeline/verify-tennis-model-run.mjs', role: 'run-verifier' },
+    { path: 'pipeline/tennis/workflows/create-model-run.mjs', role: 'run-create-script' },
+    { path: 'pipeline/tennis/workflows/lock-model-run.mjs', role: 'run-lock-script' },
+    { path: 'pipeline/tennis/workflows/verify-model-run.mjs', role: 'run-verifier' },
     { path: 'pipeline/tennis/research/analyze_kalshi_intramatch.py', role: 'kalshi-intramatch-backtest' },
-    { path: 'pipeline/backfill_tennis_recent_form_metrics.py', role: 'feature-backfill' },
-    { path: 'pipeline/export_tennis_warehouse_context.py', role: 'warehouse-context-export' },
+    { path: 'pipeline/tennis/warehouse/backfill_recent_form_metrics.py', role: 'feature-backfill' },
+    { path: 'pipeline/tennis/publish/export_warehouse_context.py', role: 'warehouse-context-export' },
     { path: 'pipeline/tennis/research/model_kalshi_spike.py', role: 'kalshi-spike-model' },
     { path: 'pipeline/tennis/research/model_upset_wins.py', role: 'upset-win-model' },
     { path: 'pipeline/tennis/research/project_kalshi_trade_candidates.py', role: 'kalshi-trade-projection' },
     { path: 'pipeline/tennis/research/multimodel_backtest.py', role: 'multimodel-backtest' },
-    { path: 'pipeline/tennis_pipeline_health.py', role: 'health-gate' },
-    { path: 'pipeline/settle-tennis-model-run.mjs', role: 'postmatch-settlement' },
+    { path: 'pipeline/tennis/workflows/health.py', role: 'health-gate' },
+    { path: 'pipeline/tennis/workflows/settle-model-run.mjs', role: 'postmatch-settlement' },
     { path: 'pipeline/tennis/research/value_backtest.py', role: 'sportsbook-value-backtest' },
-    { path: 'pipeline/tennis_warehouse.py', role: 'warehouse-code' },
+    { path: 'pipeline/tennis/warehouse/tennis_warehouse.py', role: 'warehouse-code' },
     { path: 'pipeline/tennis/warehouse/migrations/W1/001_add_model_run_tables.sql', role: 'warehouse-migration' },
     { path: 'pipeline/tennis/warehouse/migrations/W1/002_add_model_run_grade_tables.sql', role: 'warehouse-migration' },
     { path: 'api/src/scripts/export-published-data.ts', role: 'public-exporter' },
@@ -156,6 +159,7 @@ const main = async () => {
   const runId = runIdFor({ date: options.date, stack })
   const model = stack.modelId
   const runDir = runDirFor({ model, date: options.date })
+  const registry = await loadRegistry()
   const manifestFile = await resolveTennisCartridgeFile({ modelId: model, fileName: 'manifest.json' })
   const manifestPath = manifestFile.path
   const manifest = await readJson(manifestPath, {})
@@ -216,7 +220,7 @@ const main = async () => {
     note: 'Pregame lock stores grades placeholder; settled/postmatch runs should write lane results without mutating this lock.'
   })
 
-  const sourceFiles = await Promise.all(sourceInventory({ manifest, manifestPath }).map(async (entry) => ({
+  const sourceFiles = await Promise.all(sourceInventory({ manifest, manifestPath, registryPath: registry.registryPath }).map(async (entry) => ({
     ...entry,
     ...(await fileHash(entry.path))
   })))
