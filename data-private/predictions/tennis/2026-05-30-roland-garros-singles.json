@@ -8,7 +8,7 @@
       "match": "Francisco Cerundolo vs Zachary Svajda",
       "format": "ATP",
       "court": "Court 14",
-      "start": "2:00 AM",
+      "start": "2:05 AM",
       "pick": "Francisco Cerundolo",
       "confidence": 63,
       "volatility": 37,
@@ -249,254 +249,10 @@
     },
     {
       "rank": 2,
-      "match": "Iva Jovic vs Naomi Osaka",
-      "format": "WTA",
-      "court": "Court Suzanne-Lenglen",
-      "start": "2:00 AM",
-      "pick": "Naomi Osaka",
-      "confidence": 52,
-      "volatility": 57,
-      "tier": "Watch",
-      "rationale": "Opponent-adjusted recent form is basically even: Naomi Osaka 78, Iva Jovic 76. Lean, not a chase.",
-      "weaknessEdge": {
-        "edgeType": "No clear weakness edge",
-        "target": "Both sides",
-        "scoreGap": 0,
-        "attackingSide": null,
-        "vulnerableSide": null,
-        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
-        "liveTrigger": "Wait for a visible service-pressure split before entering.",
-        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
-        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
-        "pick": {
-          "name": "Naomi Osaka",
-          "serviceHoldPct": null,
-          "firstServeWonPct": null,
-          "secondServeWonPct": null,
-          "firstServePct": null,
-          "avgAces": null,
-          "avgDoubleFaults": null,
-          "avgWinners": null,
-          "avgUnforcedErrors": null,
-          "avgBreakPointsFaced": null,
-          "returnPointsWonPct": null,
-          "servicePointsWonPct": null,
-          "weakServeMatches": 0,
-          "pressureMatches": 4,
-          "matchesWithStats": 0,
-          "weaknessScore": 2,
-          "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [],
-          "strengths": [],
-          "gameFlowRead": "Naomi Osaka has no major service weakness in the joined Flashscore sample."
-        },
-        "opponent": {
-          "name": "Iva Jovic",
-          "serviceHoldPct": null,
-          "firstServeWonPct": null,
-          "secondServeWonPct": null,
-          "firstServePct": null,
-          "avgAces": null,
-          "avgDoubleFaults": null,
-          "avgWinners": null,
-          "avgUnforcedErrors": null,
-          "avgBreakPointsFaced": null,
-          "returnPointsWonPct": null,
-          "servicePointsWonPct": null,
-          "weakServeMatches": 0,
-          "pressureMatches": 4,
-          "matchesWithStats": 0,
-          "weaknessScore": 2,
-          "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [],
-          "strengths": [],
-          "gameFlowRead": "Iva Jovic has no major service weakness in the joined Flashscore sample."
-        }
-      },
-      "totals": "Best O/U angle: no play without a posted total.",
-      "derivativeMarketCase": {
-        "date": "2026-05-30",
-        "matchId": "rg-w-iva-jovic-naomi-osaka-2026-05-30",
-        "match": "Iva Jovic vs Naomi Osaka",
-        "start": "2:00 AM",
-        "expectedMatchGames": 22.8,
-        "expectedFirstSetGames": 10.1,
-        "totalGames": {
-          "postedLine": 22.5,
-          "overOdds": -106,
-          "underOdds": -128,
-          "lean": "Over",
-          "edgeGames": 0.3,
-          "confidence": 52,
-          "grade": "thin",
-          "reason": "The ML is basically fair and both players have enough break volatility for a three-set path, but 22.5 leaves little margin."
-        },
-        "gameHandicap": {
-          "selection": "Iva Jovic",
-          "postedSpread": 0.5,
-          "odds": -112,
-          "projectedMarginGames": 0.2,
-          "edgeGames": 0.7,
-          "confidence": 53,
-          "grade": "thin",
-          "reason": "Osaka is the model lean, but -0.5 at a taxed price is not attractive. Jovic +0.5 is the better side if playing the close-match shape."
-        },
-        "firstSet": {
-          "expectedGames": 10.1,
-          "lean": "Over 9.5 only if both first service games are comfortable.",
-          "tiebreakRisk": 0.13,
-          "earlyBreakRisk": 0.43,
-          "confidence": 53
-        },
-        "writeup": {
-          "headline": "Iva Jovic vs Naomi Osaka: derivative lane before ML.",
-          "betPlan": "No blind bet; use the listed lane only at a good number.",
-          "whyItWorks": [
-            "Osaka is the model lean, but -0.5 at a taxed price is not attractive. Jovic +0.5 is the better side if playing the close-match shape.",
-            null,
-            "The matrix separates likely winner from the market that actually pays."
-          ],
-          "whyItFails": [
-            "One-sided first-set breaks can wreck spread and total projections quickly.",
-            "If early service games contradict the projected hold/return shape, downgrade before adding exposure."
-          ],
-          "entryExit": {
-            "preMatch": "Over total edge +0.3 games; spread edge +0.7 games.",
-            "live": "Over 9.5 only if both first service games are comfortable."
-          }
-        },
-        "evidence": [
-          "FanDuel total 22.5 captured.",
-          "FanDuel handicap captured for Iva Jovic.",
-          "Model match confidence 52% with volatility 57%.",
-          "Set-win projections: Iva Jovic 65% / Naomi Osaka 71%."
-        ],
-        "dataQuality": {
-          "fanDuelTotalCaptured": true,
-          "fanDuelSpreadCaptured": true,
-          "warehouseRowsUsed": 2,
-          "replayRowsUsed": 0,
-          "status": "complete"
-        }
-      },
-      "bettingMatrix": [
-        {
-          "marketType": "Moneyline",
-          "label": "ML value",
-          "selection": "Naomi Osaka",
-          "line": null,
-          "americanOdds": -118,
-          "modelPct": 52,
-          "impliedPct": 54.1,
-          "edgePct": -2.1,
-          "evPer100": -3.9,
-          "netEvPer100": -5.9,
-          "grade": "Near fair",
-          "issue": "Favorite price needs better proof",
-          "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
-        },
-        {
-          "marketType": "Game spread",
-          "label": "Game spread",
-          "selection": "Iva Jovic",
-          "line": 0.5,
-          "americanOdds": -112,
-          "modelPct": 46,
-          "impliedPct": 54.1,
-          "edgePct": -8.1,
-          "evPer100": -15,
-          "netEvPer100": -17,
-          "expectedGames": 0.2,
-          "edgeGames": 0.7,
-          "confidence": 53,
-          "grade": "thin",
-          "reason": "Osaka is the model lean, but -0.5 at a taxed price is not attractive. Jovic +0.5 is the better side if playing the close-match shape."
-        },
-        {
-          "marketType": "Total games",
-          "label": "O/U games",
-          "selection": "Over",
-          "line": 22.5,
-          "americanOdds": -106,
-          "modelPct": 52,
-          "impliedPct": null,
-          "edgePct": null,
-          "evPer100": null,
-          "netEvPer100": null,
-          "expectedGames": 22.8,
-          "edgeGames": 0.3,
-          "confidence": 52,
-          "grade": "thin",
-          "reason": "The ML is basically fair and both players have enough break volatility for a three-set path, but 22.5 leaves little margin."
-        },
-        {
-          "marketType": "Win a set",
-          "label": "Win a set %",
-          "selection": "Iva Jovic 65% / Naomi Osaka 71%",
-          "rows": [
-            {
-              "name": "Iva Jovic",
-              "confidence": 65,
-              "modelPct": 48,
-              "label": "Needs early hold pressure"
-            },
-            {
-              "name": "Naomi Osaka",
-              "confidence": 71,
-              "modelPct": 52,
-              "label": "Live to win a set"
-            }
-          ],
-          "confidence": 71,
-          "grade": "Price required",
-          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
-        },
-        {
-          "marketType": "First set games",
-          "label": "1st set games",
-          "selection": "Over 9.5 only if both first service games are comfortable.",
-          "expectedGames": 10.1,
-          "confidence": 53,
-          "tiebreakRisk": 0.13,
-          "earlyBreakRisk": 0.43,
-          "grade": "Thin",
-          "reason": "Over 9.5 only if both first service games are comfortable."
-        }
-      ],
-      "market": {
-        "source": "FanDuel Sportsbook",
-        "capturedAt": "2026-05-30T04:26:30.840Z",
-        "moneyline": [
-          {
-            "name": "Iva Jovic",
-            "americanOdds": 100,
-            "impliedPct": 50,
-            "modelPct": 48,
-            "edgePct": -2,
-            "grossProfitPct": 100,
-            "priceBand": "Coinflip"
-          },
-          {
-            "name": "Naomi Osaka",
-            "americanOdds": -118,
-            "impliedPct": 54.1,
-            "modelPct": 52,
-            "edgePct": -2.1,
-            "grossProfitPct": 84.7,
-            "priceBand": "Coinflip"
-          }
-        ],
-        "spread": "Naomi Osaka -0.5 (-118)",
-        "totalGames": "22.5 games: Over -106 / Under -128",
-        "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge."
-      }
-    },
-    {
-      "rank": 3,
       "match": "Maria Sakkari vs Maja Chwalinska",
       "format": "WTA",
       "court": "Court Simonne-Mathieu",
-      "start": "2:00 AM",
+      "start": "2:05 AM",
       "pick": "Maria Sakkari",
       "confidence": 56,
       "volatility": 52,
@@ -736,11 +492,255 @@
       }
     },
     {
+      "rank": 3,
+      "match": "Iva Jovic vs Naomi Osaka",
+      "format": "WTA",
+      "court": "Court Suzanne-Lenglen",
+      "start": "2:10 AM",
+      "pick": "Naomi Osaka",
+      "confidence": 52,
+      "volatility": 57,
+      "tier": "Watch",
+      "rationale": "Opponent-adjusted recent form is basically even: Naomi Osaka 78, Iva Jovic 76. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "No clear weakness edge",
+        "target": "Both sides",
+        "scoreGap": 0,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+        "liveTrigger": "Wait for a visible service-pressure split before entering.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+        "pick": {
+          "name": "Naomi Osaka",
+          "serviceHoldPct": null,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": 4,
+          "matchesWithStats": 0,
+          "weaknessScore": 2,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [],
+          "gameFlowRead": "Naomi Osaka has no major service weakness in the joined Flashscore sample."
+        },
+        "opponent": {
+          "name": "Iva Jovic",
+          "serviceHoldPct": null,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": 4,
+          "matchesWithStats": 0,
+          "weaknessScore": 2,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [],
+          "gameFlowRead": "Iva Jovic has no major service weakness in the joined Flashscore sample."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": {
+        "date": "2026-05-30",
+        "matchId": "rg-w-iva-jovic-naomi-osaka-2026-05-30",
+        "match": "Iva Jovic vs Naomi Osaka",
+        "start": "2:00 AM",
+        "expectedMatchGames": 22.8,
+        "expectedFirstSetGames": 10.1,
+        "totalGames": {
+          "postedLine": 22.5,
+          "overOdds": -106,
+          "underOdds": -128,
+          "lean": "Over",
+          "edgeGames": 0.3,
+          "confidence": 52,
+          "grade": "thin",
+          "reason": "The ML is basically fair and both players have enough break volatility for a three-set path, but 22.5 leaves little margin."
+        },
+        "gameHandicap": {
+          "selection": "Iva Jovic",
+          "postedSpread": 0.5,
+          "odds": -112,
+          "projectedMarginGames": 0.2,
+          "edgeGames": 0.7,
+          "confidence": 53,
+          "grade": "thin",
+          "reason": "Osaka is the model lean, but -0.5 at a taxed price is not attractive. Jovic +0.5 is the better side if playing the close-match shape."
+        },
+        "firstSet": {
+          "expectedGames": 10.1,
+          "lean": "Over 9.5 only if both first service games are comfortable.",
+          "tiebreakRisk": 0.13,
+          "earlyBreakRisk": 0.43,
+          "confidence": 53
+        },
+        "writeup": {
+          "headline": "Iva Jovic vs Naomi Osaka: derivative lane before ML.",
+          "betPlan": "No blind bet; use the listed lane only at a good number.",
+          "whyItWorks": [
+            "Osaka is the model lean, but -0.5 at a taxed price is not attractive. Jovic +0.5 is the better side if playing the close-match shape.",
+            null,
+            "The matrix separates likely winner from the market that actually pays."
+          ],
+          "whyItFails": [
+            "One-sided first-set breaks can wreck spread and total projections quickly.",
+            "If early service games contradict the projected hold/return shape, downgrade before adding exposure."
+          ],
+          "entryExit": {
+            "preMatch": "Over total edge +0.3 games; spread edge +0.7 games.",
+            "live": "Over 9.5 only if both first service games are comfortable."
+          }
+        },
+        "evidence": [
+          "FanDuel total 22.5 captured.",
+          "FanDuel handicap captured for Iva Jovic.",
+          "Model match confidence 52% with volatility 57%.",
+          "Set-win projections: Iva Jovic 65% / Naomi Osaka 71%."
+        ],
+        "dataQuality": {
+          "fanDuelTotalCaptured": true,
+          "fanDuelSpreadCaptured": true,
+          "warehouseRowsUsed": 2,
+          "replayRowsUsed": 0,
+          "status": "complete"
+        }
+      },
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Naomi Osaka",
+          "line": null,
+          "americanOdds": -118,
+          "modelPct": 52,
+          "impliedPct": 54.1,
+          "edgePct": -2.1,
+          "evPer100": -3.9,
+          "netEvPer100": -5.9,
+          "grade": "Near fair",
+          "issue": "Favorite price needs better proof",
+          "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
+        },
+        {
+          "marketType": "Game spread",
+          "label": "Game spread",
+          "selection": "Iva Jovic",
+          "line": 0.5,
+          "americanOdds": -112,
+          "modelPct": 46,
+          "impliedPct": 54.1,
+          "edgePct": -8.1,
+          "evPer100": -15,
+          "netEvPer100": -17,
+          "expectedGames": 0.2,
+          "edgeGames": 0.7,
+          "confidence": 53,
+          "grade": "thin",
+          "reason": "Osaka is the model lean, but -0.5 at a taxed price is not attractive. Jovic +0.5 is the better side if playing the close-match shape."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "Over",
+          "line": 22.5,
+          "americanOdds": -106,
+          "modelPct": 52,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 22.8,
+          "edgeGames": 0.3,
+          "confidence": 52,
+          "grade": "thin",
+          "reason": "The ML is basically fair and both players have enough break volatility for a three-set path, but 22.5 leaves little margin."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Iva Jovic 65% / Naomi Osaka 71%",
+          "rows": [
+            {
+              "name": "Iva Jovic",
+              "confidence": 65,
+              "modelPct": 48,
+              "label": "Needs early hold pressure"
+            },
+            {
+              "name": "Naomi Osaka",
+              "confidence": 71,
+              "modelPct": 52,
+              "label": "Live to win a set"
+            }
+          ],
+          "confidence": 71,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First set games",
+          "label": "1st set games",
+          "selection": "Over 9.5 only if both first service games are comfortable.",
+          "expectedGames": 10.1,
+          "confidence": 53,
+          "tiebreakRisk": 0.13,
+          "earlyBreakRisk": 0.43,
+          "grade": "Thin",
+          "reason": "Over 9.5 only if both first service games are comfortable."
+        }
+      ],
+      "market": {
+        "source": "FanDuel Sportsbook",
+        "capturedAt": "2026-05-30T04:26:30.840Z",
+        "moneyline": [
+          {
+            "name": "Iva Jovic",
+            "americanOdds": 100,
+            "impliedPct": 50,
+            "modelPct": 48,
+            "edgePct": -2,
+            "grossProfitPct": 100,
+            "priceBand": "Coinflip"
+          },
+          {
+            "name": "Naomi Osaka",
+            "americanOdds": -118,
+            "impliedPct": 54.1,
+            "modelPct": 52,
+            "edgePct": -2.1,
+            "grossProfitPct": 84.7,
+            "priceBand": "Coinflip"
+          }
+        ],
+        "spread": "Naomi Osaka -0.5 (-118)",
+        "totalGames": "22.5 games: Over -106 / Under -128",
+        "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge."
+      }
+    },
+    {
       "rank": 4,
       "match": "Diana Shnaider vs Oleksandra Oliynykova",
       "format": "WTA",
       "court": "Court 7",
-      "start": "3:00 AM",
+      "start": "3:05 AM",
       "pick": "Diana Shnaider",
       "confidence": 53,
       "volatility": 56,
@@ -983,8 +983,8 @@
       "rank": 5,
       "match": "Flavio Cobolli vs Learner Tien",
       "format": "ATP",
-      "court": "",
-      "start": "3:00 AM",
+      "court": "Court Philippe-Chatrier",
+      "start": "3:05 AM",
       "pick": "Learner Tien",
       "confidence": 54,
       "volatility": 46,
@@ -1225,498 +1225,10 @@
     },
     {
       "rank": 6,
-      "match": "Aryna Sabalenka vs Daria Kasatkina",
-      "format": "WTA",
-      "court": "Court Suzanne-Lenglen",
-      "start": "3:30 AM",
-      "pick": "Aryna Sabalenka",
-      "confidence": 65,
-      "volatility": 40,
-      "tier": "Lean",
-      "rationale": "Opponent-adjusted recent form is basically even: Aryna Sabalenka 88, Daria Kasatkina 86. Lean, not a chase.",
-      "weaknessEdge": {
-        "edgeType": "No clear weakness edge",
-        "target": "Both sides",
-        "scoreGap": 0,
-        "attackingSide": null,
-        "vulnerableSide": null,
-        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
-        "liveTrigger": "Wait for a visible service-pressure split before entering.",
-        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
-        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
-        "pick": {
-          "name": "Aryna Sabalenka",
-          "serviceHoldPct": null,
-          "firstServeWonPct": null,
-          "secondServeWonPct": null,
-          "firstServePct": null,
-          "avgAces": null,
-          "avgDoubleFaults": null,
-          "avgWinners": null,
-          "avgUnforcedErrors": null,
-          "avgBreakPointsFaced": null,
-          "returnPointsWonPct": null,
-          "servicePointsWonPct": null,
-          "weakServeMatches": 0,
-          "pressureMatches": 3,
-          "matchesWithStats": 0,
-          "weaknessScore": 0,
-          "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [],
-          "strengths": [],
-          "gameFlowRead": "Aryna Sabalenka has no major service weakness in the joined Flashscore sample."
-        },
-        "opponent": {
-          "name": "Daria Kasatkina",
-          "serviceHoldPct": null,
-          "firstServeWonPct": null,
-          "secondServeWonPct": null,
-          "firstServePct": null,
-          "avgAces": null,
-          "avgDoubleFaults": null,
-          "avgWinners": null,
-          "avgUnforcedErrors": null,
-          "avgBreakPointsFaced": null,
-          "returnPointsWonPct": null,
-          "servicePointsWonPct": null,
-          "weakServeMatches": 0,
-          "pressureMatches": 2,
-          "matchesWithStats": 0,
-          "weaknessScore": 0,
-          "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [],
-          "strengths": [],
-          "gameFlowRead": "Daria Kasatkina has no major service weakness in the joined Flashscore sample."
-        }
-      },
-      "totals": "Best O/U angle: no play without a posted total.",
-      "derivativeMarketCase": {
-        "date": "2026-05-30",
-        "matchId": "rg-w-aryna-sabalenka-daria-kasatkina-2026-05-30",
-        "match": "Aryna Sabalenka vs Daria Kasatkina",
-        "start": "3:30 AM",
-        "expectedMatchGames": 19.2,
-        "expectedFirstSetGames": 8.9,
-        "totalGames": {
-          "postedLine": 18.5,
-          "overOdds": 100,
-          "underOdds": -134,
-          "lean": "Over",
-          "edgeGames": 0.7,
-          "confidence": 52,
-          "grade": "thin",
-          "reason": "Kasatkina has the return craft to create a games pocket, but her first-set collapse risk keeps this from being clean."
-        },
-        "gameHandicap": {
-          "selection": "Daria Kasatkina",
-          "postedSpread": 6.5,
-          "odds": -116,
-          "projectedMarginGames": 6.2,
-          "edgeGames": 0.3,
-          "confidence": 51,
-          "grade": "pass",
-          "reason": "Kasatkina +6.5 has a path only if she avoids a 6-1/6-0 set. The spread is too exposed to one bad service patch."
-        },
-        "firstSet": {
-          "expectedGames": 8.9,
-          "lean": "Pass first-set total pre-match; only play over after Kasatkina shows hold stability.",
-          "tiebreakRisk": 0.04,
-          "earlyBreakRisk": 0.68,
-          "confidence": 51
-        },
-        "writeup": {
-          "headline": "Aryna Sabalenka vs Daria Kasatkina: derivative lane before ML.",
-          "betPlan": "No blind bet; use the listed lane only at a good number.",
-          "whyItWorks": [
-            "Kasatkina +6.5 has a path only if she avoids a 6-1/6-0 set. The spread is too exposed to one bad service patch.",
-            null,
-            "The matrix separates likely winner from the market that actually pays."
-          ],
-          "whyItFails": [
-            "One-sided first-set breaks can wreck spread and total projections quickly.",
-            "If early service games contradict the projected hold/return shape, downgrade before adding exposure."
-          ],
-          "entryExit": {
-            "preMatch": "Over total edge +0.7 games; spread edge +0.3 games.",
-            "live": "Pass first-set total pre-match; only play over after Kasatkina shows hold stability."
-          }
-        },
-        "evidence": [
-          "FanDuel total 18.5 captured.",
-          "FanDuel handicap captured for Daria Kasatkina.",
-          "Model match confidence 65% with volatility 40%.",
-          "Set-win projections: Aryna Sabalenka 77% / Daria Kasatkina 49%."
-        ],
-        "dataQuality": {
-          "fanDuelTotalCaptured": true,
-          "fanDuelSpreadCaptured": true,
-          "warehouseRowsUsed": 2,
-          "replayRowsUsed": 0,
-          "status": "complete"
-        }
-      },
-      "bettingMatrix": [
-        {
-          "marketType": "Moneyline",
-          "label": "ML value",
-          "selection": "Aryna Sabalenka",
-          "line": null,
-          "americanOdds": -1450,
-          "modelPct": 65,
-          "impliedPct": 93.5,
-          "edgePct": -28.5,
-          "evPer100": -30.5,
-          "netEvPer100": -32.5,
-          "grade": "Favorite tax trap",
-          "issue": "Favorite tax trap",
-          "reason": "Likely winner can still be a bad ML bet after payout and fees. Check spread, total, and set-win instead."
-        },
-        {
-          "marketType": "Game spread",
-          "label": "Game spread",
-          "selection": "Daria Kasatkina",
-          "line": 6.5,
-          "americanOdds": -116,
-          "modelPct": 55,
-          "impliedPct": 53.7,
-          "edgePct": 1.3,
-          "evPer100": 2.4,
-          "netEvPer100": 0.4,
-          "expectedGames": 6.2,
-          "edgeGames": 0.3,
-          "confidence": 51,
-          "grade": "pass",
-          "reason": "Kasatkina +6.5 has a path only if she avoids a 6-1/6-0 set. The spread is too exposed to one bad service patch."
-        },
-        {
-          "marketType": "Total games",
-          "label": "O/U games",
-          "selection": "Over",
-          "line": 18.5,
-          "americanOdds": 100,
-          "modelPct": 52,
-          "impliedPct": null,
-          "edgePct": null,
-          "evPer100": null,
-          "netEvPer100": null,
-          "expectedGames": 19.2,
-          "edgeGames": 0.7,
-          "confidence": 52,
-          "grade": "thin",
-          "reason": "Kasatkina has the return craft to create a games pocket, but her first-set collapse risk keeps this from being clean."
-        },
-        {
-          "marketType": "Win a set",
-          "label": "Win a set %",
-          "selection": "Aryna Sabalenka 77% / Daria Kasatkina 49%",
-          "rows": [
-            {
-              "name": "Aryna Sabalenka",
-              "confidence": 77,
-              "modelPct": 65,
-              "label": "Live to win a set"
-            },
-            {
-              "name": "Daria Kasatkina",
-              "confidence": 49,
-              "modelPct": 35,
-              "label": "Thin set-win path"
-            }
-          ],
-          "confidence": 77,
-          "grade": "Price required",
-          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
-        },
-        {
-          "marketType": "First set games",
-          "label": "1st set games",
-          "selection": "Pass first-set total pre-match; only play over after Kasatkina shows hold stability.",
-          "expectedGames": 8.9,
-          "confidence": 51,
-          "tiebreakRisk": 0.04,
-          "earlyBreakRisk": 0.68,
-          "grade": "Thin",
-          "reason": "Pass first-set total pre-match; only play over after Kasatkina shows hold stability."
-        }
-      ],
-      "market": {
-        "source": "FanDuel Sportsbook",
-        "capturedAt": "2026-05-30T04:26:44.126Z",
-        "moneyline": [
-          {
-            "name": "Aryna Sabalenka",
-            "americanOdds": -1450,
-            "impliedPct": 93.5,
-            "modelPct": 65,
-            "edgePct": -28.5,
-            "grossProfitPct": 6.9,
-            "priceBand": "Very expensive favorite"
-          },
-          {
-            "name": "Daria Kasatkina",
-            "americanOdds": 810,
-            "impliedPct": 11,
-            "modelPct": 35,
-            "edgePct": 24,
-            "grossProfitPct": 810,
-            "priceBand": "Underdog"
-          }
-        ],
-        "spread": "Aryna Sabalenka -6.5 (-116)",
-        "totalGames": "18.5 games: Over +100 / Under -134",
-        "priceAction": "ML payout is tiny; use spread/total or pass unless the number moves."
-      }
-    },
-    {
-      "rank": 7,
-      "match": "Anna Kalinskaya vs Camila Osorio",
-      "format": "WTA",
-      "court": "Court 14",
-      "start": "4:00 AM",
-      "pick": "Anna Kalinskaya",
-      "confidence": 54,
-      "volatility": 55,
-      "tier": "Watch",
-      "rationale": "Anna Kalinskaya has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
-      "weaknessEdge": {
-        "edgeType": "No clear weakness edge",
-        "target": "Both sides",
-        "scoreGap": 0,
-        "attackingSide": null,
-        "vulnerableSide": null,
-        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
-        "liveTrigger": "Wait for a visible service-pressure split before entering.",
-        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
-        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
-        "pick": {
-          "name": "Anna Kalinskaya",
-          "serviceHoldPct": null,
-          "firstServeWonPct": null,
-          "secondServeWonPct": null,
-          "firstServePct": null,
-          "avgAces": null,
-          "avgDoubleFaults": null,
-          "avgWinners": null,
-          "avgUnforcedErrors": null,
-          "avgBreakPointsFaced": null,
-          "returnPointsWonPct": null,
-          "servicePointsWonPct": null,
-          "weakServeMatches": 0,
-          "pressureMatches": null,
-          "matchesWithStats": 0,
-          "weaknessScore": 0,
-          "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [],
-          "strengths": [],
-          "gameFlowRead": "Anna Kalinskaya has no major service weakness in the joined Flashscore sample."
-        },
-        "opponent": {
-          "name": "Camila Osorio",
-          "serviceHoldPct": null,
-          "firstServeWonPct": null,
-          "secondServeWonPct": null,
-          "firstServePct": null,
-          "avgAces": null,
-          "avgDoubleFaults": null,
-          "avgWinners": null,
-          "avgUnforcedErrors": null,
-          "avgBreakPointsFaced": null,
-          "returnPointsWonPct": null,
-          "servicePointsWonPct": null,
-          "weakServeMatches": 0,
-          "pressureMatches": null,
-          "matchesWithStats": 0,
-          "weaknessScore": 0,
-          "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [],
-          "strengths": [],
-          "gameFlowRead": "Camila Osorio has no major service weakness in the joined Flashscore sample."
-        }
-      },
-      "totals": "Best O/U angle: no play without a posted total.",
-      "derivativeMarketCase": {
-        "date": "2026-05-30",
-        "matchId": "rg-w-anna-kalinskaya-camila-osorio-2026-05-30",
-        "match": "Anna Kalinskaya vs Camila Osorio",
-        "start": "4:00 AM",
-        "expectedMatchGames": 22.6,
-        "expectedFirstSetGames": 10,
-        "totalGames": {
-          "postedLine": 21.5,
-          "overOdds": -126,
-          "underOdds": -106,
-          "lean": "Over",
-          "edgeGames": 1.1,
-          "confidence": 55,
-          "grade": "watch",
-          "reason": "Near-pickem ML pricing plus WTA break-back volatility makes the total more useful than choosing a winner."
-        },
-        "gameHandicap": {
-          "selection": "Camila Osorio",
-          "postedSpread": 0.5,
-          "odds": -116,
-          "projectedMarginGames": 0.1,
-          "edgeGames": 0.6,
-          "confidence": 52,
-          "grade": "thin",
-          "reason": "Kalinskaya is only a tiny model lean, so Osorio +0.5 has the slightly better risk shape."
-        },
-        "firstSet": {
-          "expectedGames": 10,
-          "lean": "Over 9.5 if both players hold once; pass after an immediate one-way break.",
-          "tiebreakRisk": 0.11,
-          "earlyBreakRisk": 0.45,
-          "confidence": 54
-        },
-        "writeup": {
-          "headline": "Anna Kalinskaya vs Camila Osorio: derivative lane before ML.",
-          "betPlan": "No blind bet; use the listed lane only at a good number.",
-          "whyItWorks": [
-            "Kalinskaya is only a tiny model lean, so Osorio +0.5 has the slightly better risk shape.",
-            null,
-            "The matrix separates likely winner from the market that actually pays."
-          ],
-          "whyItFails": [
-            "One-sided first-set breaks can wreck spread and total projections quickly.",
-            "If early service games contradict the projected hold/return shape, downgrade before adding exposure."
-          ],
-          "entryExit": {
-            "preMatch": "Over total edge +1.1 games; spread edge +0.6 games.",
-            "live": "Over 9.5 if both players hold once; pass after an immediate one-way break."
-          }
-        },
-        "evidence": [
-          "FanDuel total 21.5 captured.",
-          "FanDuel handicap captured for Camila Osorio.",
-          "Model match confidence 54% with volatility 55%.",
-          "Set-win projections: Anna Kalinskaya 72% / Camila Osorio 63%."
-        ],
-        "dataQuality": {
-          "fanDuelTotalCaptured": true,
-          "fanDuelSpreadCaptured": true,
-          "warehouseRowsUsed": 2,
-          "replayRowsUsed": 0,
-          "status": "complete"
-        }
-      },
-      "bettingMatrix": [
-        {
-          "marketType": "Moneyline",
-          "label": "ML value",
-          "selection": "Anna Kalinskaya",
-          "line": null,
-          "americanOdds": -118,
-          "modelPct": 54,
-          "impliedPct": 54.1,
-          "edgePct": -0.1,
-          "evPer100": -0.2,
-          "netEvPer100": -2.2,
-          "grade": "Near fair",
-          "issue": "Favorite price needs better proof",
-          "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
-        },
-        {
-          "marketType": "Game spread",
-          "label": "Game spread",
-          "selection": "Camila Osorio",
-          "line": 0.5,
-          "americanOdds": -116,
-          "modelPct": 48,
-          "impliedPct": 53.7,
-          "edgePct": -5.7,
-          "evPer100": -10.6,
-          "netEvPer100": -12.6,
-          "expectedGames": 0.1,
-          "edgeGames": 0.6,
-          "confidence": 52,
-          "grade": "thin",
-          "reason": "Kalinskaya is only a tiny model lean, so Osorio +0.5 has the slightly better risk shape."
-        },
-        {
-          "marketType": "Total games",
-          "label": "O/U games",
-          "selection": "Over",
-          "line": 21.5,
-          "americanOdds": -126,
-          "modelPct": 55,
-          "impliedPct": null,
-          "edgePct": null,
-          "evPer100": null,
-          "netEvPer100": null,
-          "expectedGames": 22.6,
-          "edgeGames": 1.1,
-          "confidence": 55,
-          "grade": "watch",
-          "reason": "Near-pickem ML pricing plus WTA break-back volatility makes the total more useful than choosing a winner."
-        },
-        {
-          "marketType": "Win a set",
-          "label": "Win a set %",
-          "selection": "Anna Kalinskaya 72% / Camila Osorio 63%",
-          "rows": [
-            {
-              "name": "Anna Kalinskaya",
-              "confidence": 72,
-              "modelPct": 54,
-              "label": "Live to win a set"
-            },
-            {
-              "name": "Camila Osorio",
-              "confidence": 63,
-              "modelPct": 46,
-              "label": "Needs early hold pressure"
-            }
-          ],
-          "confidence": 72,
-          "grade": "Price required",
-          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
-        },
-        {
-          "marketType": "First set games",
-          "label": "1st set games",
-          "selection": "Over 9.5 if both players hold once; pass after an immediate one-way break.",
-          "expectedGames": 10,
-          "confidence": 54,
-          "tiebreakRisk": 0.11,
-          "earlyBreakRisk": 0.45,
-          "grade": "Thin",
-          "reason": "Over 9.5 if both players hold once; pass after an immediate one-way break."
-        }
-      ],
-      "market": {
-        "source": "FanDuel Sportsbook",
-        "capturedAt": "2026-05-30T04:26:47.341Z",
-        "moneyline": [
-          {
-            "name": "Anna Kalinskaya",
-            "americanOdds": -118,
-            "impliedPct": 54.1,
-            "modelPct": 54,
-            "edgePct": -0.1,
-            "grossProfitPct": 84.7,
-            "priceBand": "Coinflip"
-          },
-          {
-            "name": "Camila Osorio",
-            "americanOdds": -102,
-            "impliedPct": 50.5,
-            "modelPct": 46,
-            "edgePct": -4.5,
-            "grossProfitPct": 98,
-            "priceBand": "Coinflip"
-          }
-        ],
-        "spread": "Anna Kalinskaya -0.5 (-116)",
-        "totalGames": "21.5 games: Over -126 / Under -106",
-        "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge."
-      }
-    },
-    {
-      "rank": 8,
       "match": "Matteo Berrettini vs Francisco Comesana",
       "format": "ATP",
       "court": "Court Simonne-Mathieu",
-      "start": "4:00 AM",
+      "start": "4:40 AM",
       "pick": "Matteo Berrettini",
       "confidence": 52,
       "volatility": 48,
@@ -1956,11 +1468,11 @@
       }
     },
     {
-      "rank": 9,
+      "rank": 7,
       "match": "Juan Manuel Cerundolo vs Martin Landaluce",
       "format": "ATP",
       "court": "Court 7",
-      "start": "4:30 AM",
+      "start": "5:15 AM",
       "pick": "Juan Manuel Cerundolo",
       "confidence": 52,
       "volatility": 48,
@@ -2200,11 +1712,11 @@
       }
     },
     {
-      "rank": 10,
+      "rank": 8,
       "match": "Diane Parry vs Amanda Anisimova",
       "format": "WTA",
       "court": "Court Philippe-Chatrier",
-      "start": "5:00 AM",
+      "start": "5:20 AM",
       "pick": "Amanda Anisimova",
       "confidence": 61,
       "volatility": 46,
@@ -2444,11 +1956,499 @@
       }
     },
     {
+      "rank": 9,
+      "match": "Aryna Sabalenka vs Daria Kasatkina",
+      "format": "WTA",
+      "court": "Court Suzanne-Lenglen",
+      "start": "5:30 AM",
+      "pick": "Aryna Sabalenka",
+      "confidence": 65,
+      "volatility": 40,
+      "tier": "Lean",
+      "rationale": "Opponent-adjusted recent form is basically even: Aryna Sabalenka 88, Daria Kasatkina 86. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "No clear weakness edge",
+        "target": "Both sides",
+        "scoreGap": 0,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+        "liveTrigger": "Wait for a visible service-pressure split before entering.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+        "pick": {
+          "name": "Aryna Sabalenka",
+          "serviceHoldPct": null,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": 3,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [],
+          "gameFlowRead": "Aryna Sabalenka has no major service weakness in the joined Flashscore sample."
+        },
+        "opponent": {
+          "name": "Daria Kasatkina",
+          "serviceHoldPct": null,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": 2,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [],
+          "gameFlowRead": "Daria Kasatkina has no major service weakness in the joined Flashscore sample."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": {
+        "date": "2026-05-30",
+        "matchId": "rg-w-aryna-sabalenka-daria-kasatkina-2026-05-30",
+        "match": "Aryna Sabalenka vs Daria Kasatkina",
+        "start": "3:30 AM",
+        "expectedMatchGames": 19.2,
+        "expectedFirstSetGames": 8.9,
+        "totalGames": {
+          "postedLine": 18.5,
+          "overOdds": 100,
+          "underOdds": -134,
+          "lean": "Over",
+          "edgeGames": 0.7,
+          "confidence": 52,
+          "grade": "thin",
+          "reason": "Kasatkina has the return craft to create a games pocket, but her first-set collapse risk keeps this from being clean."
+        },
+        "gameHandicap": {
+          "selection": "Daria Kasatkina",
+          "postedSpread": 6.5,
+          "odds": -116,
+          "projectedMarginGames": 6.2,
+          "edgeGames": 0.3,
+          "confidence": 51,
+          "grade": "pass",
+          "reason": "Kasatkina +6.5 has a path only if she avoids a 6-1/6-0 set. The spread is too exposed to one bad service patch."
+        },
+        "firstSet": {
+          "expectedGames": 8.9,
+          "lean": "Pass first-set total pre-match; only play over after Kasatkina shows hold stability.",
+          "tiebreakRisk": 0.04,
+          "earlyBreakRisk": 0.68,
+          "confidence": 51
+        },
+        "writeup": {
+          "headline": "Aryna Sabalenka vs Daria Kasatkina: derivative lane before ML.",
+          "betPlan": "No blind bet; use the listed lane only at a good number.",
+          "whyItWorks": [
+            "Kasatkina +6.5 has a path only if she avoids a 6-1/6-0 set. The spread is too exposed to one bad service patch.",
+            null,
+            "The matrix separates likely winner from the market that actually pays."
+          ],
+          "whyItFails": [
+            "One-sided first-set breaks can wreck spread and total projections quickly.",
+            "If early service games contradict the projected hold/return shape, downgrade before adding exposure."
+          ],
+          "entryExit": {
+            "preMatch": "Over total edge +0.7 games; spread edge +0.3 games.",
+            "live": "Pass first-set total pre-match; only play over after Kasatkina shows hold stability."
+          }
+        },
+        "evidence": [
+          "FanDuel total 18.5 captured.",
+          "FanDuel handicap captured for Daria Kasatkina.",
+          "Model match confidence 65% with volatility 40%.",
+          "Set-win projections: Aryna Sabalenka 77% / Daria Kasatkina 49%."
+        ],
+        "dataQuality": {
+          "fanDuelTotalCaptured": true,
+          "fanDuelSpreadCaptured": true,
+          "warehouseRowsUsed": 2,
+          "replayRowsUsed": 0,
+          "status": "complete"
+        }
+      },
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Aryna Sabalenka",
+          "line": null,
+          "americanOdds": -1450,
+          "modelPct": 65,
+          "impliedPct": 93.5,
+          "edgePct": -28.5,
+          "evPer100": -30.5,
+          "netEvPer100": -32.5,
+          "grade": "Favorite tax trap",
+          "issue": "Favorite tax trap",
+          "reason": "Likely winner can still be a bad ML bet after payout and fees. Check spread, total, and set-win instead."
+        },
+        {
+          "marketType": "Game spread",
+          "label": "Game spread",
+          "selection": "Daria Kasatkina",
+          "line": 6.5,
+          "americanOdds": -116,
+          "modelPct": 55,
+          "impliedPct": 53.7,
+          "edgePct": 1.3,
+          "evPer100": 2.4,
+          "netEvPer100": 0.4,
+          "expectedGames": 6.2,
+          "edgeGames": 0.3,
+          "confidence": 51,
+          "grade": "pass",
+          "reason": "Kasatkina +6.5 has a path only if she avoids a 6-1/6-0 set. The spread is too exposed to one bad service patch."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "Over",
+          "line": 18.5,
+          "americanOdds": 100,
+          "modelPct": 52,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 19.2,
+          "edgeGames": 0.7,
+          "confidence": 52,
+          "grade": "thin",
+          "reason": "Kasatkina has the return craft to create a games pocket, but her first-set collapse risk keeps this from being clean."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Aryna Sabalenka 77% / Daria Kasatkina 49%",
+          "rows": [
+            {
+              "name": "Aryna Sabalenka",
+              "confidence": 77,
+              "modelPct": 65,
+              "label": "Live to win a set"
+            },
+            {
+              "name": "Daria Kasatkina",
+              "confidence": 49,
+              "modelPct": 35,
+              "label": "Thin set-win path"
+            }
+          ],
+          "confidence": 77,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First set games",
+          "label": "1st set games",
+          "selection": "Pass first-set total pre-match; only play over after Kasatkina shows hold stability.",
+          "expectedGames": 8.9,
+          "confidence": 51,
+          "tiebreakRisk": 0.04,
+          "earlyBreakRisk": 0.68,
+          "grade": "Thin",
+          "reason": "Pass first-set total pre-match; only play over after Kasatkina shows hold stability."
+        }
+      ],
+      "market": {
+        "source": "FanDuel Sportsbook",
+        "capturedAt": "2026-05-30T04:26:44.126Z",
+        "moneyline": [
+          {
+            "name": "Aryna Sabalenka",
+            "americanOdds": -1450,
+            "impliedPct": 93.5,
+            "modelPct": 65,
+            "edgePct": -28.5,
+            "grossProfitPct": 6.9,
+            "priceBand": "Very expensive favorite"
+          },
+          {
+            "name": "Daria Kasatkina",
+            "americanOdds": 810,
+            "impliedPct": 11,
+            "modelPct": 35,
+            "edgePct": 24,
+            "grossProfitPct": 810,
+            "priceBand": "Underdog"
+          }
+        ],
+        "spread": "Aryna Sabalenka -6.5 (-116)",
+        "totalGames": "18.5 games: Over +100 / Under -134",
+        "priceAction": "ML payout is tiny; use spread/total or pass unless the number moves."
+      }
+    },
+    {
+      "rank": 10,
+      "match": "Anna Kalinskaya vs Camila Osorio",
+      "format": "WTA",
+      "court": "Court 14",
+      "start": "5:35 AM",
+      "pick": "Anna Kalinskaya",
+      "confidence": 54,
+      "volatility": 55,
+      "tier": "Watch",
+      "rationale": "Anna Kalinskaya has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "No clear weakness edge",
+        "target": "Both sides",
+        "scoreGap": 0,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+        "liveTrigger": "Wait for a visible service-pressure split before entering.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+        "pick": {
+          "name": "Anna Kalinskaya",
+          "serviceHoldPct": null,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [],
+          "gameFlowRead": "Anna Kalinskaya has no major service weakness in the joined Flashscore sample."
+        },
+        "opponent": {
+          "name": "Camila Osorio",
+          "serviceHoldPct": null,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [],
+          "gameFlowRead": "Camila Osorio has no major service weakness in the joined Flashscore sample."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": {
+        "date": "2026-05-30",
+        "matchId": "rg-w-anna-kalinskaya-camila-osorio-2026-05-30",
+        "match": "Anna Kalinskaya vs Camila Osorio",
+        "start": "4:00 AM",
+        "expectedMatchGames": 22.6,
+        "expectedFirstSetGames": 10,
+        "totalGames": {
+          "postedLine": 21.5,
+          "overOdds": -126,
+          "underOdds": -106,
+          "lean": "Over",
+          "edgeGames": 1.1,
+          "confidence": 55,
+          "grade": "watch",
+          "reason": "Near-pickem ML pricing plus WTA break-back volatility makes the total more useful than choosing a winner."
+        },
+        "gameHandicap": {
+          "selection": "Camila Osorio",
+          "postedSpread": 0.5,
+          "odds": -116,
+          "projectedMarginGames": 0.1,
+          "edgeGames": 0.6,
+          "confidence": 52,
+          "grade": "thin",
+          "reason": "Kalinskaya is only a tiny model lean, so Osorio +0.5 has the slightly better risk shape."
+        },
+        "firstSet": {
+          "expectedGames": 10,
+          "lean": "Over 9.5 if both players hold once; pass after an immediate one-way break.",
+          "tiebreakRisk": 0.11,
+          "earlyBreakRisk": 0.45,
+          "confidence": 54
+        },
+        "writeup": {
+          "headline": "Anna Kalinskaya vs Camila Osorio: derivative lane before ML.",
+          "betPlan": "No blind bet; use the listed lane only at a good number.",
+          "whyItWorks": [
+            "Kalinskaya is only a tiny model lean, so Osorio +0.5 has the slightly better risk shape.",
+            null,
+            "The matrix separates likely winner from the market that actually pays."
+          ],
+          "whyItFails": [
+            "One-sided first-set breaks can wreck spread and total projections quickly.",
+            "If early service games contradict the projected hold/return shape, downgrade before adding exposure."
+          ],
+          "entryExit": {
+            "preMatch": "Over total edge +1.1 games; spread edge +0.6 games.",
+            "live": "Over 9.5 if both players hold once; pass after an immediate one-way break."
+          }
+        },
+        "evidence": [
+          "FanDuel total 21.5 captured.",
+          "FanDuel handicap captured for Camila Osorio.",
+          "Model match confidence 54% with volatility 55%.",
+          "Set-win projections: Anna Kalinskaya 72% / Camila Osorio 63%."
+        ],
+        "dataQuality": {
+          "fanDuelTotalCaptured": true,
+          "fanDuelSpreadCaptured": true,
+          "warehouseRowsUsed": 2,
+          "replayRowsUsed": 0,
+          "status": "complete"
+        }
+      },
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Anna Kalinskaya",
+          "line": null,
+          "americanOdds": -118,
+          "modelPct": 54,
+          "impliedPct": 54.1,
+          "edgePct": -0.1,
+          "evPer100": -0.2,
+          "netEvPer100": -2.2,
+          "grade": "Near fair",
+          "issue": "Favorite price needs better proof",
+          "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
+        },
+        {
+          "marketType": "Game spread",
+          "label": "Game spread",
+          "selection": "Camila Osorio",
+          "line": 0.5,
+          "americanOdds": -116,
+          "modelPct": 48,
+          "impliedPct": 53.7,
+          "edgePct": -5.7,
+          "evPer100": -10.6,
+          "netEvPer100": -12.6,
+          "expectedGames": 0.1,
+          "edgeGames": 0.6,
+          "confidence": 52,
+          "grade": "thin",
+          "reason": "Kalinskaya is only a tiny model lean, so Osorio +0.5 has the slightly better risk shape."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "Over",
+          "line": 21.5,
+          "americanOdds": -126,
+          "modelPct": 55,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 22.6,
+          "edgeGames": 1.1,
+          "confidence": 55,
+          "grade": "watch",
+          "reason": "Near-pickem ML pricing plus WTA break-back volatility makes the total more useful than choosing a winner."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Anna Kalinskaya 72% / Camila Osorio 63%",
+          "rows": [
+            {
+              "name": "Anna Kalinskaya",
+              "confidence": 72,
+              "modelPct": 54,
+              "label": "Live to win a set"
+            },
+            {
+              "name": "Camila Osorio",
+              "confidence": 63,
+              "modelPct": 46,
+              "label": "Needs early hold pressure"
+            }
+          ],
+          "confidence": 72,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First set games",
+          "label": "1st set games",
+          "selection": "Over 9.5 if both players hold once; pass after an immediate one-way break.",
+          "expectedGames": 10,
+          "confidence": 54,
+          "tiebreakRisk": 0.11,
+          "earlyBreakRisk": 0.45,
+          "grade": "Thin",
+          "reason": "Over 9.5 if both players hold once; pass after an immediate one-way break."
+        }
+      ],
+      "market": {
+        "source": "FanDuel Sportsbook",
+        "capturedAt": "2026-05-30T04:26:47.341Z",
+        "moneyline": [
+          {
+            "name": "Anna Kalinskaya",
+            "americanOdds": -118,
+            "impliedPct": 54.1,
+            "modelPct": 54,
+            "edgePct": -0.1,
+            "grossProfitPct": 84.7,
+            "priceBand": "Coinflip"
+          },
+          {
+            "name": "Camila Osorio",
+            "americanOdds": -102,
+            "impliedPct": 50.5,
+            "modelPct": 46,
+            "edgePct": -4.5,
+            "grossProfitPct": 98,
+            "priceBand": "Coinflip"
+          }
+        ],
+        "spread": "Anna Kalinskaya -0.5 (-116)",
+        "totalGames": "21.5 games: Over -126 / Under -106",
+        "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge."
+      }
+    },
+    {
       "rank": 11,
       "match": "Moise Kouame vs Alejandro Tabilo",
       "format": "ATP",
       "court": "Court Suzanne-Lenglen",
-      "start": "5:00 AM",
+      "start": "7:15 AM",
       "pick": "Alejandro Tabilo",
       "confidence": 61,
       "volatility": 40,
@@ -2692,7 +2692,7 @@
       "match": "Matteo Arnaldi vs Raphael Collignon",
       "format": "ATP",
       "court": "Court 14",
-      "start": "5:30 AM",
+      "start": "8:00 AM",
       "pick": "Raphael Collignon",
       "confidence": 57,
       "volatility": 43,
@@ -2934,255 +2934,10 @@
     },
     {
       "rank": 13,
-      "match": "Victoria Mboko vs Madison Keys",
-      "format": "WTA",
-      "court": "Court Simonne-Mathieu",
-      "start": "6:00 AM",
-      "pick": "Victoria Mboko",
-      "confidence": 51,
-      "volatility": 59,
-      "tier": "Watch",
-      "rationale": "Madison Keys grades 8 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
-      "weaknessEdge": {
-        "edgeType": "No clear weakness edge",
-        "target": "Both sides",
-        "scoreGap": -2,
-        "attackingSide": null,
-        "vulnerableSide": null,
-        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
-        "liveTrigger": "Wait for a visible service-pressure split before entering.",
-        "spreadRead": "Pre-match spread is fragile; wait for both players to serve once.",
-        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
-        "pick": {
-          "name": "Victoria Mboko",
-          "serviceHoldPct": null,
-          "firstServeWonPct": null,
-          "secondServeWonPct": null,
-          "firstServePct": null,
-          "avgAces": null,
-          "avgDoubleFaults": null,
-          "avgWinners": null,
-          "avgUnforcedErrors": null,
-          "avgBreakPointsFaced": null,
-          "returnPointsWonPct": null,
-          "servicePointsWonPct": null,
-          "weakServeMatches": 0,
-          "pressureMatches": 4,
-          "matchesWithStats": 0,
-          "weaknessScore": 2,
-          "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [],
-          "strengths": [],
-          "gameFlowRead": "Victoria Mboko has no major service weakness in the joined Flashscore sample."
-        },
-        "opponent": {
-          "name": "Madison Keys",
-          "serviceHoldPct": null,
-          "firstServeWonPct": null,
-          "secondServeWonPct": null,
-          "firstServePct": null,
-          "avgAces": null,
-          "avgDoubleFaults": null,
-          "avgWinners": null,
-          "avgUnforcedErrors": null,
-          "avgBreakPointsFaced": null,
-          "returnPointsWonPct": null,
-          "servicePointsWonPct": null,
-          "weakServeMatches": 0,
-          "pressureMatches": 2,
-          "matchesWithStats": 0,
-          "weaknessScore": 0,
-          "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [],
-          "strengths": [],
-          "gameFlowRead": "Madison Keys has no major service weakness in the joined Flashscore sample."
-        }
-      },
-      "totals": "Best O/U angle: no play without a posted total.",
-      "derivativeMarketCase": {
-        "date": "2026-05-30",
-        "matchId": "rg-w-victoria-mboko-madison-keys-2026-05-30",
-        "match": "Victoria Mboko vs Madison Keys",
-        "start": "6:00 AM",
-        "expectedMatchGames": 22.9,
-        "expectedFirstSetGames": 10.4,
-        "totalGames": {
-          "postedLine": 22.5,
-          "overOdds": -108,
-          "underOdds": -126,
-          "lean": "Over",
-          "edgeGames": 0.4,
-          "confidence": 53,
-          "grade": "thin",
-          "reason": "The matchup grades close, Keys owns the steadier serve indicators, and Mboko's break-point saved profile creates enough three-set or 7-5 risk for a small over lean."
-        },
-        "gameHandicap": {
-          "selection": "Madison Keys",
-          "postedSpread": 0.5,
-          "odds": -112,
-          "projectedMarginGames": 0.4,
-          "edgeGames": 0.9,
-          "confidence": 54,
-          "grade": "thin",
-          "reason": "Winner model is nearly even, but Keys has the better hold, second-serve, break-point saved, and adjusted-form profile."
-        },
-        "firstSet": {
-          "expectedGames": 10.4,
-          "lean": "Over 9.5 if posted at a playable price; pass 10.5 unless plus money.",
-          "tiebreakRisk": 0.14,
-          "earlyBreakRisk": 0.43,
-          "confidence": 55
-        },
-        "writeup": {
-          "headline": "Close-match script with Keys stability underneath.",
-          "betPlan": "Over 22.5 is the derivative lean; Keys +0.5 games is playable only small.",
-          "whyItWorks": [
-            "The model has the match almost even, not a real Mboko favorite despite the board lean.",
-            "Keys has stronger first-serve points won, second-serve stability, break-point saved rate, and adjusted form.",
-            "Mboko's tournament break-point saved rate is weak enough to create momentum swings rather than a clean straight-set favorite path."
-          ],
-          "whyItFails": [
-            "Mboko has crowd/market support and can create return pressure if Keys' first serve dips.",
-            "Keys can run hot and cold with errors, so the spread edge is thinner than the stat edge.",
-            "A one-sided first set from either player damages the over."
-          ],
-          "entryExit": {
-            "preMatch": "Over 22.5 at -108 is playable small. Keys +0.5 at -112 is a thin value, not a max play.",
-            "live": "Keep over only if both players show service comfort early or if each creates break chances. Downgrade if Mboko is broken twice in the first set."
-          }
-        },
-        "evidence": [
-          "FanDuel total 22.5 and Mboko -0.5 / Keys +0.5 were captured.",
-          "Keys tournament stats: 70.8% first-serve points won, 51.7% second-serve points won, 84.6% break points saved.",
-          "Mboko tournament stats: 57.3% first-serve points won and 41.7% break points saved.",
-          "Kalshi flow for Keys shows stronger clay form, return pressure, and adjusted-form edge, but entry price is too high for trade-to-sell promotion."
-        ],
-        "dataQuality": {
-          "fanDuelTotalCaptured": true,
-          "fanDuelSpreadCaptured": true,
-          "warehouseRowsUsed": 2,
-          "replayRowsUsed": 1,
-          "status": "complete"
-        }
-      },
-      "bettingMatrix": [
-        {
-          "marketType": "Moneyline",
-          "label": "ML value",
-          "selection": "Victoria Mboko",
-          "line": null,
-          "americanOdds": -120,
-          "modelPct": 51,
-          "impliedPct": 54.5,
-          "edgePct": -3.5,
-          "evPer100": -6.5,
-          "netEvPer100": -8.5,
-          "grade": "Negative EV",
-          "issue": "Favorite price needs better proof",
-          "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
-        },
-        {
-          "marketType": "Game spread",
-          "label": "Game spread",
-          "selection": "Madison Keys",
-          "line": 0.5,
-          "americanOdds": -112,
-          "modelPct": 45,
-          "impliedPct": 54.5,
-          "edgePct": -9.5,
-          "evPer100": -17.5,
-          "netEvPer100": -19.5,
-          "expectedGames": 0.4,
-          "edgeGames": 0.9,
-          "confidence": 54,
-          "grade": "thin",
-          "reason": "Winner model is nearly even, but Keys has the better hold, second-serve, break-point saved, and adjusted-form profile."
-        },
-        {
-          "marketType": "Total games",
-          "label": "O/U games",
-          "selection": "Over",
-          "line": 22.5,
-          "americanOdds": -108,
-          "modelPct": 53,
-          "impliedPct": null,
-          "edgePct": null,
-          "evPer100": null,
-          "netEvPer100": null,
-          "expectedGames": 22.9,
-          "edgeGames": 0.4,
-          "confidence": 53,
-          "grade": "thin",
-          "reason": "The matchup grades close, Keys owns the steadier serve indicators, and Mboko's break-point saved profile creates enough three-set or 7-5 risk for a small over lean."
-        },
-        {
-          "marketType": "Win a set",
-          "label": "Win a set %",
-          "selection": "Victoria Mboko 71% / Madison Keys 66%",
-          "rows": [
-            {
-              "name": "Victoria Mboko",
-              "confidence": 71,
-              "modelPct": 51,
-              "label": "Live to win a set"
-            },
-            {
-              "name": "Madison Keys",
-              "confidence": 66,
-              "modelPct": 49,
-              "label": "Needs early hold pressure"
-            }
-          ],
-          "confidence": 71,
-          "grade": "Price required",
-          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
-        },
-        {
-          "marketType": "First set games",
-          "label": "1st set games",
-          "selection": "Over 9.5 if posted at a playable price; pass 10.5 unless plus money.",
-          "expectedGames": 10.4,
-          "confidence": 55,
-          "tiebreakRisk": 0.14,
-          "earlyBreakRisk": 0.43,
-          "grade": "Thin",
-          "reason": "Over 9.5 if posted at a playable price; pass 10.5 unless plus money."
-        }
-      ],
-      "market": {
-        "source": "FanDuel Sportsbook",
-        "capturedAt": "2026-05-30T04:27:04.792Z",
-        "moneyline": [
-          {
-            "name": "Victoria Mboko",
-            "americanOdds": -120,
-            "impliedPct": 54.5,
-            "modelPct": 51,
-            "edgePct": -3.5,
-            "grossProfitPct": 83.3,
-            "priceBand": "Coinflip"
-          },
-          {
-            "name": "Madison Keys",
-            "americanOdds": 100,
-            "impliedPct": 50,
-            "modelPct": 49,
-            "edgePct": -1,
-            "grossProfitPct": 100,
-            "priceBand": "Coinflip"
-          }
-        ],
-        "spread": "Victoria Mboko -0.5 (-120)",
-        "totalGames": "22.5 games: Over -108 / Under -126",
-        "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge."
-      }
-    },
-    {
-      "rank": 14,
       "match": "Coco Gauff vs Anastasia Potapova",
       "format": "WTA",
       "court": "Court Philippe-Chatrier",
-      "start": "7:00 AM",
+      "start": "8:30 AM",
       "pick": "Coco Gauff",
       "confidence": 58,
       "volatility": 50,
@@ -3423,11 +3178,256 @@
       }
     },
     {
+      "rank": 14,
+      "match": "Victoria Mboko vs Madison Keys",
+      "format": "WTA",
+      "court": "Court Simonne-Mathieu",
+      "start": "10:20 AM",
+      "pick": "Victoria Mboko",
+      "confidence": 51,
+      "volatility": 59,
+      "tier": "Watch",
+      "rationale": "Madison Keys grades 8 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "No clear weakness edge",
+        "target": "Both sides",
+        "scoreGap": -2,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+        "liveTrigger": "Wait for a visible service-pressure split before entering.",
+        "spreadRead": "Pre-match spread is fragile; wait for both players to serve once.",
+        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+        "pick": {
+          "name": "Victoria Mboko",
+          "serviceHoldPct": null,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": 4,
+          "matchesWithStats": 0,
+          "weaknessScore": 2,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [],
+          "gameFlowRead": "Victoria Mboko has no major service weakness in the joined Flashscore sample."
+        },
+        "opponent": {
+          "name": "Madison Keys",
+          "serviceHoldPct": null,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": 2,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [],
+          "gameFlowRead": "Madison Keys has no major service weakness in the joined Flashscore sample."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": {
+        "date": "2026-05-30",
+        "matchId": "rg-w-victoria-mboko-madison-keys-2026-05-30",
+        "match": "Victoria Mboko vs Madison Keys",
+        "start": "6:00 AM",
+        "expectedMatchGames": 22.9,
+        "expectedFirstSetGames": 10.4,
+        "totalGames": {
+          "postedLine": 22.5,
+          "overOdds": -108,
+          "underOdds": -126,
+          "lean": "Over",
+          "edgeGames": 0.4,
+          "confidence": 53,
+          "grade": "thin",
+          "reason": "The matchup grades close, Keys owns the steadier serve indicators, and Mboko's break-point saved profile creates enough three-set or 7-5 risk for a small over lean."
+        },
+        "gameHandicap": {
+          "selection": "Madison Keys",
+          "postedSpread": 0.5,
+          "odds": -112,
+          "projectedMarginGames": 0.4,
+          "edgeGames": 0.9,
+          "confidence": 54,
+          "grade": "thin",
+          "reason": "Winner model is nearly even, but Keys has the better hold, second-serve, break-point saved, and adjusted-form profile."
+        },
+        "firstSet": {
+          "expectedGames": 10.4,
+          "lean": "Over 9.5 if posted at a playable price; pass 10.5 unless plus money.",
+          "tiebreakRisk": 0.14,
+          "earlyBreakRisk": 0.43,
+          "confidence": 55
+        },
+        "writeup": {
+          "headline": "Close-match script with Keys stability underneath.",
+          "betPlan": "Over 22.5 is the derivative lean; Keys +0.5 games is playable only small.",
+          "whyItWorks": [
+            "The model has the match almost even, not a real Mboko favorite despite the board lean.",
+            "Keys has stronger first-serve points won, second-serve stability, break-point saved rate, and adjusted form.",
+            "Mboko's tournament break-point saved rate is weak enough to create momentum swings rather than a clean straight-set favorite path."
+          ],
+          "whyItFails": [
+            "Mboko has crowd/market support and can create return pressure if Keys' first serve dips.",
+            "Keys can run hot and cold with errors, so the spread edge is thinner than the stat edge.",
+            "A one-sided first set from either player damages the over."
+          ],
+          "entryExit": {
+            "preMatch": "Over 22.5 at -108 is playable small. Keys +0.5 at -112 is a thin value, not a max play.",
+            "live": "Keep over only if both players show service comfort early or if each creates break chances. Downgrade if Mboko is broken twice in the first set."
+          }
+        },
+        "evidence": [
+          "FanDuel total 22.5 and Mboko -0.5 / Keys +0.5 were captured.",
+          "Keys tournament stats: 70.8% first-serve points won, 51.7% second-serve points won, 84.6% break points saved.",
+          "Mboko tournament stats: 57.3% first-serve points won and 41.7% break points saved.",
+          "Kalshi flow for Keys shows stronger clay form, return pressure, and adjusted-form edge, but entry price is too high for trade-to-sell promotion."
+        ],
+        "dataQuality": {
+          "fanDuelTotalCaptured": true,
+          "fanDuelSpreadCaptured": true,
+          "warehouseRowsUsed": 2,
+          "replayRowsUsed": 1,
+          "status": "complete"
+        }
+      },
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Victoria Mboko",
+          "line": null,
+          "americanOdds": -120,
+          "modelPct": 51,
+          "impliedPct": 54.5,
+          "edgePct": -3.5,
+          "evPer100": -6.5,
+          "netEvPer100": -8.5,
+          "grade": "Negative EV",
+          "issue": "Favorite price needs better proof",
+          "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
+        },
+        {
+          "marketType": "Game spread",
+          "label": "Game spread",
+          "selection": "Madison Keys",
+          "line": 0.5,
+          "americanOdds": -112,
+          "modelPct": 45,
+          "impliedPct": 54.5,
+          "edgePct": -9.5,
+          "evPer100": -17.5,
+          "netEvPer100": -19.5,
+          "expectedGames": 0.4,
+          "edgeGames": 0.9,
+          "confidence": 54,
+          "grade": "thin",
+          "reason": "Winner model is nearly even, but Keys has the better hold, second-serve, break-point saved, and adjusted-form profile."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "Over",
+          "line": 22.5,
+          "americanOdds": -108,
+          "modelPct": 53,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 22.9,
+          "edgeGames": 0.4,
+          "confidence": 53,
+          "grade": "thin",
+          "reason": "The matchup grades close, Keys owns the steadier serve indicators, and Mboko's break-point saved profile creates enough three-set or 7-5 risk for a small over lean."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Victoria Mboko 71% / Madison Keys 66%",
+          "rows": [
+            {
+              "name": "Victoria Mboko",
+              "confidence": 71,
+              "modelPct": 51,
+              "label": "Live to win a set"
+            },
+            {
+              "name": "Madison Keys",
+              "confidence": 66,
+              "modelPct": 49,
+              "label": "Needs early hold pressure"
+            }
+          ],
+          "confidence": 71,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First set games",
+          "label": "1st set games",
+          "selection": "Over 9.5 if posted at a playable price; pass 10.5 unless plus money.",
+          "expectedGames": 10.4,
+          "confidence": 55,
+          "tiebreakRisk": 0.14,
+          "earlyBreakRisk": 0.43,
+          "grade": "Thin",
+          "reason": "Over 9.5 if posted at a playable price; pass 10.5 unless plus money."
+        }
+      ],
+      "market": {
+        "source": "FanDuel Sportsbook",
+        "capturedAt": "2026-05-30T04:27:04.792Z",
+        "moneyline": [
+          {
+            "name": "Victoria Mboko",
+            "americanOdds": -120,
+            "impliedPct": 54.5,
+            "modelPct": 51,
+            "edgePct": -3.5,
+            "grossProfitPct": 83.3,
+            "priceBand": "Coinflip"
+          },
+          {
+            "name": "Madison Keys",
+            "americanOdds": 100,
+            "impliedPct": 50,
+            "modelPct": 49,
+            "edgePct": -1,
+            "grossProfitPct": 100,
+            "priceBand": "Coinflip"
+          }
+        ],
+        "spread": "Victoria Mboko -0.5 (-120)",
+        "totalGames": "22.5 games: Over -108 / Under -126",
+        "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge."
+      }
+    },
+    {
       "rank": 15,
       "match": "Jaime Faria vs Frances Tiafoe",
       "format": "ATP",
       "court": "Court Suzanne-Lenglen",
-      "start": "7:00 AM",
+      "start": "11:20 AM",
       "pick": "Frances Tiafoe",
       "confidence": 66,
       "volatility": 34,
@@ -3672,7 +3672,7 @@
       "match": "Felix Auger-Aliassime vs Brandon Nakashima",
       "format": "ATP",
       "court": "Court Philippe-Chatrier",
-      "start": "11:15 AM",
+      "start": "11:50 AM",
       "pick": "Felix Auger-Aliassime",
       "confidence": 60,
       "volatility": 40,

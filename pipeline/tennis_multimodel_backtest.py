@@ -115,6 +115,42 @@ def ev_per_100(prob: float, odds: float | None, fee_per_100: float = 2.0) -> flo
     return prob * profit - (1 - prob) * 100 - fee_per_100
 
 
+def recent_ml_value_gate(target_date: str) -> dict[str, Any]:
+    reports = sorted(REPORTS_DIR.glob("tennis-value-backtest-*.json"))
+    prior_reports = [
+        report for report in reports
+        if report.stem.replace("tennis-value-backtest-", "") < target_date
+    ]
+    if not prior_reports:
+        return {"status": "open", "reason": "no prior value backtest found"}
+    report_path = prior_reports[-1]
+    try:
+        payload = json.loads(report_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {"status": "frozen", "reason": f"could not read {report_path.name}"}
+    bet_grade = (payload.get("summary") or {}).get("Bet-grade value") or {}
+    graded = int(bet_grade.get("graded") or 0)
+    roi = bet_grade.get("roi")
+    hit_rate = bet_grade.get("hitRate")
+    if graded and (roi is not None and float(roi) < 0 or hit_rate is not None and float(hit_rate) < 0.5):
+        return {
+            "status": "frozen",
+            "source": report_path.name,
+            "reason": "last settled bet-grade ML lane was negative; downgrade blind ML value to watch until a new gate wins",
+            "graded": graded,
+            "hitRate": hit_rate,
+            "roi": roi,
+        }
+    return {
+        "status": "open",
+        "source": report_path.name,
+        "reason": "last settled bet-grade ML lane did not fail the freeze gate",
+        "graded": graded,
+        "hitRate": hit_rate,
+        "roi": roi,
+    }
+
+
 def american_from_probability(prob: float) -> int | None:
     if not math.isfinite(prob) or prob <= 0 or prob >= 1:
         return None
@@ -194,6 +230,7 @@ def load_warehouse() -> dict[str, pd.DataFrame]:
                 group by slate_date, normalized_name
                 """,
             ),
+            "weather": read_sql(conn, "select * from tennis_match_weather"),
         }
     finally:
         conn.close()
@@ -400,6 +437,36 @@ def build_samples(tables: dict[str, pd.DataFrame]) -> pd.DataFrame:
             ["slate_date", "match_id", "actual_winner_name", "hit", "confidence", "volatility", "result_status"]
         ].drop_duplicates("match_id")
     base = matches.merge(grades, how="left", on=["slate_date", "match_id"], suffixes=("", "_grade"))
+    weather = tables.get("weather", pd.DataFrame()).copy()
+    if not weather.empty:
+        weather_keep = [
+            "match_id",
+            "duration_minutes",
+            "avg_temperature_c",
+            "max_temperature_c",
+            "min_temperature_c",
+            "avg_apparent_temperature_c",
+            "max_apparent_temperature_c",
+            "avg_humidity_pct",
+            "total_precipitation_mm",
+            "total_rain_mm",
+            "avg_cloud_cover_pct",
+            "avg_wind_speed_kmh",
+            "max_wind_gust_kmh",
+            "avg_surface_pressure_hpa",
+            "avg_shortwave_radiation_wm2",
+            "max_shortwave_radiation_wm2",
+            "hot_match",
+            "humid_match",
+            "windy_match",
+            "rain_affected",
+        ]
+        weather = weather[[column for column in weather_keep if column in weather.columns]].copy()
+        weather = weather.rename(columns={column: f"weather_{column}" for column in weather.columns if column != "match_id"})
+        for column in weather.columns:
+            if column != "match_id":
+                weather[column] = pd.to_numeric(weather[column], errors="coerce")
+        base = base.merge(weather, how="left", on="match_id")
     if not results.empty:
         matches["_result_pair_key"] = matches.apply(
             lambda row: match_pair_key(row.get("player1_normalized_name"), row.get("player2_normalized_name")),
@@ -565,7 +632,10 @@ def feature_columns(df: pd.DataFrame, include_market: bool) -> list[str]:
     columns = [
         column
         for column in df.columns
-        if column.startswith("diff_") or column.startswith("absdiff_") or column in {"is_wta", "is_atp"}
+        if column.startswith("diff_")
+        or column.startswith("absdiff_")
+        or column.startswith("weather_")
+        or column in {"is_wta", "is_atp"}
     ]
     if not include_market:
         columns = [column for column in columns if "market" not in column and "cents_" not in column]
@@ -848,8 +918,9 @@ def train_for_date(samples: pd.DataFrame, target_date: str, include_market: bool
     return test
 
 
-def recommendation_rows(frame: pd.DataFrame) -> list[dict[str, Any]]:
+def recommendation_rows(frame: pd.DataFrame, value_gate: dict[str, Any] | None = None) -> list[dict[str, Any]]:
     rows = []
+    ml_gate_frozen = (value_gate or {}).get("status") == "frozen"
     for _, row in frame.iterrows():
         p1_prob = float(row["ensemble_prob_p1"])
         p2_prob = 1 - p1_prob
@@ -901,6 +972,9 @@ def recommendation_rows(frame: pd.DataFrame) -> list[dict[str, Any]]:
                     grade = "Watch only"
                 else:
                     grade = "Negative EV"
+            if ml_gate_frozen and grade in {"Bet-grade ML", "Risk-gated value"}:
+                grade = "Watch only"
+                risk_gate = "; ".join([risk_gate, "ML value gate frozen after prior slate"]) if risk_gate else "ML value gate frozen after prior slate"
             rows.append(
                 {
                     "matchId": row.get("match_id"),
@@ -1016,6 +1090,25 @@ def persist_training_corpus(samples: pd.DataFrame, target_date: str) -> dict[str
         "p2_rg_flow_breaks_lost_rate",
         "p1_rg_flow_long_game_rate",
         "p2_rg_flow_long_game_rate",
+        "weather_duration_minutes",
+        "weather_avg_temperature_c",
+        "weather_max_temperature_c",
+        "weather_min_temperature_c",
+        "weather_avg_apparent_temperature_c",
+        "weather_max_apparent_temperature_c",
+        "weather_avg_humidity_pct",
+        "weather_total_precipitation_mm",
+        "weather_total_rain_mm",
+        "weather_avg_cloud_cover_pct",
+        "weather_avg_wind_speed_kmh",
+        "weather_max_wind_gust_kmh",
+        "weather_avg_surface_pressure_hpa",
+        "weather_avg_shortwave_radiation_wm2",
+        "weather_max_shortwave_radiation_wm2",
+        "weather_hot_match",
+        "weather_humid_match",
+        "weather_windy_match",
+        "weather_rain_affected",
     ]
     feature_cols = sorted(
         column
@@ -1024,6 +1117,7 @@ def persist_training_corpus(samples: pd.DataFrame, target_date: str) -> dict[str
         or column.startswith("absdiff_")
         or column.startswith("p1_metric_")
         or column.startswith("p2_metric_")
+        or column.startswith("weather_")
         or column in {"is_wta", "is_atp"}
     )
     keep_columns = [column for column in ordered_columns if column in corpus.columns] + [
@@ -1071,7 +1165,8 @@ def main() -> None:
     backtest_rows, backtest_summary = backtest_by_day(samples, include_market=include_market)
     data_only_rows, data_only_summary = backtest_by_day(samples, include_market=False)
     target = train_for_date(samples, args.target_date, include_market=include_market)
-    recommendations = recommendation_rows(target)
+    value_gate = recent_ml_value_gate(args.target_date)
+    recommendations = recommendation_rows(target, value_gate)
 
     payload = {
         "targetDate": args.target_date,
@@ -1081,6 +1176,7 @@ def main() -> None:
         "deskBaseline": desk_baseline(samples),
         "backtest": backtest_summary,
         "dataOnlyBacktest": data_only_summary,
+        "valueGate": value_gate,
         "targetPredictions": {
             "date": args.target_date,
             "model": "pandas-ensemble-logit-rf-gb-xgb",

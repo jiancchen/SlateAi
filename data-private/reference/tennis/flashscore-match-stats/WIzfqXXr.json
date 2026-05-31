@@ -1,0 +1,673 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-jakub-mensik-andrey-rublev-2026-05-31",
+  "boardTitle": "Jakub Mensik vs Andrey Rublev",
+  "boardPlayerName": "Andrey Rublev",
+  "recentOpponentName": "Nuno Borges",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "29 May 26",
+  "recentIsoDate": "2026-05-29",
+  "recentResult": "POR  7-5 7-62 7-62 3rd",
+  "flashscoreLabel": "Borges N. - Rublev A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Borges N.",
+    "Rublev A."
+  ],
+  "generatedAt": "2026-05-30T23:35:38.686Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/WIzfqXXr/",
+  "matchId": "WIzfqXXr",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_WIzfqXXr",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_WIzfqXXr"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:46"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 7,
+        "duration": "1:03"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 2,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:46"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "12",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "63%",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (56/78)",
+              "right": "75% (55/73)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (18/36)",
+              "right": "57% (24/42)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/10",
+              "right": "3/5",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (18/73)",
+              "right": "28% (22/78)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (18/42)",
+              "right": "50% (18/36)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "3/10",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "28",
+              "right": "44",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "31",
+              "right": "39",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "53% (8/15)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (74/114)",
+              "right": "69% (79/115)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (36/115)",
+              "right": "35% (40/114)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (110/229)",
+              "right": "52% (119/229)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (15/18)",
+              "right": "89% (16/18)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "11% (2/18)",
+              "right": "17% (3/18)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "47% (17/36)",
+              "right": "53% (19/36)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "5",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "66%",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (18/26)",
+              "right": "86% (18/21)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (9/16)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/7",
+              "right": "0/0",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (3/21)",
+              "right": "31% (8/26)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/7",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "13",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "12",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (27/42)",
+              "right": "78% (25/32)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "22% (7/32)",
+              "right": "36% (15/42)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (34/74)",
+              "right": "54% (40/74)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "60%",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (18/27)",
+              "right": "62% (16/26)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (2/7)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "1/3",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (10/26)",
+              "right": "33% (9/27)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (8/17)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "2/3",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "17",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "15",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (20/34)",
+              "right": "58% (25/43)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (18/43)",
+              "right": "41% (14/34)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (38/77)",
+              "right": "51% (39/77)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "65%",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (20/25)",
+              "right": "81% (21/26)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/2",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (5/26)",
+              "right": "20% (5/25)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (6/14)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "0/0",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "14",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "12",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (27/38)",
+              "right": "73% (29/40)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (11/40)",
+              "right": "29% (11/38)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (38/78)",
+              "right": "51% (40/78)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Borges N.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

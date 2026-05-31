@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { MlbDetail } from '../features/mlb/MlbDetail'
 import { TennisDetail } from '../features/tennis/TennisDetail'
 
@@ -26,6 +26,7 @@ export function BoardView(props: BoardViewProps) {
     getGameDisplayTitle,
     getGameResultLine,
     globalSearchResults,
+    isMobileDetailOpen: providedMobileDetailOpen,
     isActiveDayLoading,
     isGlobalSearchLoading,
     isSelectedGameDetailLoading,
@@ -39,6 +40,7 @@ export function BoardView(props: BoardViewProps) {
     mlbDetailProps,
     mlbScalpSummary,
     mlbValueSummary,
+    openMobileDetailForGame: providedOpenMobileDetailForGame,
     openGlobalSearchResult,
     renderLeagueBadge,
     renderMoneylinePanel,
@@ -54,10 +56,15 @@ export function BoardView(props: BoardViewProps) {
     swingTextFor,
     tennisDetailProps,
     tennisValueSummary,
-    visibleGames
+    visibleGames,
+    setIsMobileDetailOpen: providedSetMobileDetailOpen
   } = props
 
-  const [isMobileDetailOpen, setIsMobileDetailOpen] = useState(false)
+  const isMobileDetailOpen = Boolean(providedMobileDetailOpen)
+  const setIsMobileDetailOpen =
+    typeof providedSetMobileDetailOpen === 'function' ? providedSetMobileDetailOpen : () => {}
+  const openMobileDetailForGame =
+    typeof providedOpenMobileDetailForGame === 'function' ? providedOpenMobileDetailForGame : () => setIsMobileDetailOpen(true)
 
   useEffect(() => {
     setIsMobileDetailOpen(false)
@@ -67,8 +74,46 @@ export function BoardView(props: BoardViewProps) {
     const nextGameId = String(gameId || '')
     if (!nextGameId) return
     setSelectedGameIdByDay((current: AnyRecord) => ({ ...current, [activeDayId]: nextGameId }))
-    setIsMobileDetailOpen(true)
+    openMobileDetailForGame(nextGameId)
   }
+  const renderDetailKpiStrip = (extraClassName = '') => (
+    <div className={`detail-kpi-strip ${extraClassName}`.trim()}>
+      <article className="detail-kpi-card">
+        <span className="eyebrow">Pick</span>
+        <strong>{selectedGame.analysis?.participant?.name || 'No pick'}</strong>
+        <small>Analyst read</small>
+      </article>
+      <article className={`detail-kpi-card ${Number(selectedGame.analysis?.confidence ?? 0) >= 70 ? 'strong-confidence' : ''}`}>
+        <span className="eyebrow">Confidence</span>
+        <strong>{Number(selectedGame.analysis?.confidence ?? 0) >= 70 ? `👍 ${selectedGame.analysis?.confidence}` : selectedGame.analysis?.confidence}</strong>
+        <small>{labelForScore(selectedGame.analysis?.confidence ?? 0)}</small>
+      </article>
+      <article className="detail-kpi-card">
+        <span className="eyebrow">Volatility</span>
+        <strong>{selectedGame.analysis?.volatility}%</strong>
+        <small>{labelForScore(selectedGame.analysis?.volatility ?? 0)}</small>
+      </article>
+      <article className="detail-kpi-card">
+        <span className="eyebrow">Market</span>
+        <strong>
+          {selectedGame.tennisContext?.predictionMarket
+            ? selectedGame.analysis?.marketProbabilityLabel
+            : selectedGame.moneyline?.available
+              ? selectedGame.analysis?.marketProbabilityLabel
+              : 'Model only'}
+        </strong>
+        <small>
+          {selectedGame.tennisContext?.marketEconomics?.priceAction ||
+            (selectedGame.moneyline?.available ? selectedGame.moneyline.provider : 'No moneyline')}
+        </small>
+      </article>
+      <article className="detail-kpi-card">
+        <span className="eyebrow">Inputs</span>
+        <strong>{selectedGame.analysis?.inputsUsed ?? 0}</strong>
+        <small>{(selectedGame.tags ?? []).join(' | ')}</small>
+      </article>
+    </div>
+  )
 
   const miniLineupSlots = [1, 2, 3, 4, 5, 6, 7, 8, 9]
   const formatPitcherHand = (hand: unknown) => {
@@ -1139,7 +1184,7 @@ export function BoardView(props: BoardViewProps) {
         </div>
       </section>
 
-      <section className="detail-canvas">
+      <section className={`detail-canvas ${selectedGame?.league === 'Tennis' ? 'tennis-detail-canvas' : ''}`}>
         {isActiveDayLoading && !selectedGame ? (
           <div className="placeholder-panel compact">
             <p className="eyebrow">Loading detail</p>
@@ -1176,44 +1221,12 @@ export function BoardView(props: BoardViewProps) {
               </div>
             </div>
 
-            <div className="detail-kpi-strip">
-              <article className="detail-kpi-card">
-                <span className="eyebrow">Pick</span>
-                <strong>{selectedGame.analysis?.participant?.name || 'No pick'}</strong>
-                <small>Analyst read</small>
-              </article>
-              <article className={`detail-kpi-card ${Number(selectedGame.analysis?.confidence ?? 0) >= 70 ? 'strong-confidence' : ''}`}>
-                <span className="eyebrow">Confidence</span>
-                <strong>{Number(selectedGame.analysis?.confidence ?? 0) >= 70 ? `👍 ${selectedGame.analysis?.confidence}` : selectedGame.analysis?.confidence}</strong>
-                <small>{labelForScore(selectedGame.analysis?.confidence ?? 0)}</small>
-              </article>
-              <article className="detail-kpi-card">
-                <span className="eyebrow">Volatility</span>
-                <strong>{selectedGame.analysis?.volatility}%</strong>
-                <small>{labelForScore(selectedGame.analysis?.volatility ?? 0)}</small>
-              </article>
-              <article className="detail-kpi-card">
-                <span className="eyebrow">Market</span>
-                <strong>
-                  {selectedGame.tennisContext?.predictionMarket
-                    ? selectedGame.analysis?.marketProbabilityLabel
-                    : selectedGame.moneyline?.available
-                      ? selectedGame.analysis?.marketProbabilityLabel
-                      : 'Model only'}
-                </strong>
-                <small>
-                  {selectedGame.tennisContext?.marketEconomics?.priceAction ||
-                    (selectedGame.moneyline?.available ? selectedGame.moneyline.provider : 'No moneyline')}
-                </small>
-              </article>
-              <article className="detail-kpi-card">
-                <span className="eyebrow">Inputs</span>
-                <strong>{selectedGame.analysis?.inputsUsed ?? 0}</strong>
-                <small>{(selectedGame.tags ?? []).join(' | ')}</small>
-              </article>
-            </div>
+            {selectedGame.league === 'Tennis' ? null : renderDetailKpiStrip('detail-kpi-strip-static')}
 
             <div className="detail-canvas-scroll no-scrollbar">
+              {selectedGame.league === 'Tennis'
+                ? renderDetailKpiStrip('detail-kpi-strip-scroll tennis-detail-kpi-strip no-scrollbar')
+                : renderDetailKpiStrip('detail-kpi-strip-scroll mobile-detail-kpi-strip no-scrollbar')}
               <div className={`detail-canvas-grid ${selectedMiniLineupOrder ? 'with-sidecar' : 'single'}`}>
                 <section className="detail-panel insight-panel editorial-market-panel">
                   <div className="detail-panel-header">

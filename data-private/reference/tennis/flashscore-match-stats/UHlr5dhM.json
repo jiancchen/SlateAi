@@ -1,0 +1,1022 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-casper-ruud-joao-fonseca-2026-05-31",
+  "boardTitle": "Casper Ruud vs Joao Fonseca",
+  "boardPlayerName": "Casper Ruud",
+  "recentOpponentName": "Tommy Paul",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "29 May 26",
+  "recentIsoDate": "2026-05-29",
+  "recentResult": "USA  4-6 6-74 6-4 7-64 7-5 3rd",
+  "flashscoreLabel": "Ruud C. - Paul T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Ruud C.",
+    "Paul T."
+  ],
+  "generatedAt": "2026-05-30T23:35:40.501Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UHlr5dhM/",
+  "matchId": "UHlr5dhM",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UHlr5dhM",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UHlr5dhM"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "1:08"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 7,
+        "rightGames": 4,
+        "duration": ""
+      },
+      {
+        "label": "Set 5",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "4:47"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "17",
+              "right": "14",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "9",
+              "right": "5",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "52%",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (92/121)",
+              "right": "80% (67/84)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (36/72)",
+              "right": "60% (46/77)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "12/14",
+              "right": "0/3",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (17/84)",
+              "right": "24% (29/121)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (31/77)",
+              "right": "50% (36/72)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "2/14",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "51",
+              "right": "83",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "52",
+              "right": "50",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Net points won",
+              "left": "68% (17/25)",
+              "right": "75% (54/72)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (128/193)",
+              "right": "70% (113/161)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (48/161)",
+              "right": "34% (65/193)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (176/354)",
+              "right": "50% (178/354)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "93% (26/28)",
+              "right": "89% (25/28)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return games won",
+              "left": "11% (3/28)",
+              "right": "7% (2/28)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total games won",
+              "left": "52% (29/56)",
+              "right": "48% (27/56)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "69%",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (14/18)",
+              "right": "83% (15/18)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (5/13)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "0/0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (3/18)",
+              "right": "22% (4/18)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/4",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "12",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (19/31)",
+              "right": "77% (20/26)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (6/26)",
+              "right": "39% (12/31)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (25/57)",
+              "right": "56% (32/57)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "49%",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (19/25)",
+              "right": "84% (16/19)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (11/21)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "0/0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "16% (3/19)",
+              "right": "24% (6/25)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "35% (7/20)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/3",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "24",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "12",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "82% (14/17)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (30/46)",
+              "right": "74% (29/39)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (10/39)",
+              "right": "35% (16/46)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (40/85)",
+              "right": "53% (45/85)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "38%",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (12/17)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "82% (9/11)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (2/10)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (7/16)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "9",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "6",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (21/28)",
+              "right": "65% (17/26)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (9/26)",
+              "right": "25% (7/28)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (30/54)",
+              "right": "44% (24/54)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "3",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "81%",
+              "right": "51%",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (29/38)",
+              "right": "89% (16/18)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "0/0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "11% (2/18)",
+              "right": "24% (9/38)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "41% (7/17)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/4",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "25",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "9",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (5/8)",
+              "right": "89% (16/18)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (32/47)",
+              "right": "74% (26/35)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (9/35)",
+              "right": "32% (15/47)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (41/82)",
+              "right": "50% (41/82)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 5",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "54%",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (18/23)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (8/18)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "0/2",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (7/19)",
+              "right": "22% (5/23)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (7/16)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/3",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "13",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "16",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (26/41)",
+              "right": "60% (21/35)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (14/35)",
+              "right": "37% (15/41)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (40/76)",
+              "right": "47% (36/76)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Paul T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

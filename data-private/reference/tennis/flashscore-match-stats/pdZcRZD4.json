@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-elina-svitolina-belinda-bencic-2026-05-31",
+  "boardTitle": "Elina Svitolina vs Belinda Bencic",
+  "boardPlayerName": "Belinda Bencic",
+  "recentOpponentName": "Peyton Stearns",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "29 May 26",
+  "recentIsoDate": "2026-05-29",
+  "recentResult": "USA  6-3 6-3 3rd",
+  "flashscoreLabel": "Stearns P. - Bencic B.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Stearns P.",
+    "Bencic B."
+  ],
+  "generatedAt": "2026-05-30T23:35:46.290Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/pdZcRZD4/",
+  "matchId": "pdZcRZD4",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_pdZcRZD4",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_pdZcRZD4"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:45"
+      }
+    ],
+    "totalDuration": "1:23"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "57%",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (22/34)",
+              "right": "78% (21/27)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (10/25)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/8",
+              "right": "2/3",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (6/27)",
+              "right": "35% (12/34)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "35% (7/20)",
+              "right": "60% (15/25)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "4/8",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "15",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "25",
+              "right": "10",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (32/59)",
+              "right": "72% (34/47)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (13/47)",
+              "right": "46% (27/59)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (45/106)",
+              "right": "58% (61/106)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "56% (5/9)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Return games won",
+              "left": "11% (1/9)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (6/18)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "43%",
+              "right": "54%",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (7/9)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (4/12)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "2/3",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (5/15)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (5/13)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/2",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "6",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "6",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (11/21)",
+              "right": "64% (18/28)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (10/28)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (21/49)",
+              "right": "57% (28/49)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "63%",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (15/25)",
+              "right": "92% (11/12)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (6/13)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "0/0",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "8% (1/12)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (2/7)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/6",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "9",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "4",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (21/38)",
+              "right": "84% (16/19)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "16% (3/19)",
+              "right": "45% (17/38)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (24/57)",
+              "right": "58% (33/57)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Stearns P.",
+              "rightPlayer": "Bencic B."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -6,15 +6,15 @@ Target date: 2026-05-30
 
 |lane|rows|entry|2.5x hit|2.5x ROI c|3x hit|3x ROI c|
 |---|---:|---:|---:|---:|---:|---:|
-|return-pressure edge|30|29.4c|0.5|5.3|0.467|4.9|
-|weak favorite errors|13|27.3c|0.538|4.8|0.462|5.2|
-|entry <=15c + early start|14|8.4c|0.571|4.0|0.429|2.2|
-|prior RG flow|68|26.0c|0.485|2.2|0.441|2.7|
-|entry <=15c + weak favorite errors|4|11.5c|0.5|2.1|0.25|-3.2|
-|entry <=15c|30|9.3c|0.467|0.2|0.4|0.2|
-|entry <=15c + favorite break leak|7|8.9c|0.429|0.1|0.429|2.3|
-|long-game environment|11|22.1c|0.364|-1.4|0.182|-8.8|
-|entry <=15c + prior RG flow|21|9.8c|0.429|-1.9|0.381|-1.7|
+|entry <=15c + weak favorite errors|5|11.4c|0.6|4.4|0.4|1.2|
+|entry <=15c + early start|16|8.6c|0.562|3.7|0.438|2.5|
+|return-pressure edge|38|30.9c|0.474|3.3|0.447|3.3|
+|weak favorite errors|15|27.7c|0.533|1.7|0.467|2.4|
+|prior RG flow|81|27.0c|0.469|0.6|0.432|1.3|
+|entry <=15c|32|9.3c|0.469|0.3|0.406|0.5|
+|entry <=15c + favorite break leak|8|8.9c|0.375|-1.1|0.375|0.8|
+|entry <=15c + prior RG flow|23|9.8c|0.435|-1.6|0.391|-1.1|
+|long-game environment|12|22.8c|0.333|-4.0|0.167|-10.8|
 
 ## Current Candidates
 

@@ -91,6 +91,7 @@ node pipeline/enrich-tennis-opponent-quality.mjs --input web/src/lib/day-YYYY-MM
 npm run data:import:tennis-slate -- --date YYYY-MM-DD
 npm run data:fetch:tennis-sofascore-slate -- --date YYYY-MM-DD
 npm run data:import:tennis-sofascore
+npm run data:fetch:tennis-weather -- --date YYYY-MM-DD
 npm run data:fetch:tennis-flashscore-slate -- --date YYYY-MM-DD
 npm run data:import:tennis-flashscore
 npm run data:backfill:tennis-recent-form -- --date YYYY-MM-DD
@@ -110,17 +111,21 @@ npm run data:health:tennis -- --date YYYY-MM-DD --pregame
 python3 pipeline/tennis_multimodel_backtest.py --target-date YYYY-MM-DD
 python3 pipeline/analyze_kalshi_tennis_intramatch.py --target-date YYYY-MM-DD
 python3 pipeline/project_kalshi_tennis_trade_candidates.py
+python3 pipeline/tennis_multimodel_backtest.py --target-date YYYY-MM-DD
 python3 pipeline/model_kalshi_tennis_spike.py --target-date YYYY-MM-DD
 python3 pipeline/model_tennis_upset_wins.py --target-date YYYY-MM-DD
 ```
 
 Daily tennis operating rules live in `development-docs/daily-tennis-slate-playbook.md`. Use that playbook before publishing a tennis value board. It requires the slate to separate winner picks, prediction-market trade-to-sell candidates, watch rows, hard vetoes, and data-incomplete rows.
 
+The tennis model pass is intentionally run twice on prediction days: first to refresh the slate training rows for flow/weather context, then again after `project_kalshi_tennis_trade_candidates.py` mirrors current Kalshi orderbooks into `tennis_prediction_market_snapshots`. Publish from the second pass only.
+
 Tennis health gate:
 - `npm run data:health:tennis -- --date YYYY-MM-DD --pregame` must pass before treating a future slate as analysis-ready.
 - `npm run data:health:tennis -- --date YYYY-MM-DD --settled` must pass during post-match follow-up before trusting backtests or model-training rows for that day.
-- The gate verifies source files, dated ranking snapshots, imported ranking rows, the dated Flashscore recent-match map, recent Flashscore links imported into SQLite under the correct slate date, warehouse recent-form metrics, SofaScore match mappings, Kalshi/prediction-market coverage, and published match-detail payloads.
+- The gate verifies source files, dated ranking snapshots, imported ranking rows, the dated Flashscore recent-match map, recent Flashscore links imported into SQLite under the correct slate date, warehouse recent-form metrics, SofaScore match mappings, Roland Garros weather-window coverage, Kalshi/prediction-market coverage, and published match-detail payloads.
 - In settled mode, it also requires SofaScore stats/replay rows, Kalshi candles/trade features, completed match results, and model-training labels. If a day has passed and this fails, the warehouse is incomplete.
+- Weather must be warehoused through Open-Meteo hourly rows plus `tennis_match_weather` summaries before model training. For settled slates, the summary must cover each Roland Garros match from SofaScore start time through summed set duration; for pre-match slates, it uses the scheduled start plus a conservative match-duration window until actual durations arrive.
 - Published tennis detail payloads must have no missing Hold / 2nd / Err / Ret / Close cells in the visible last-five grid.
 - Published tennis detail payloads must join derivative market predictions whenever FanDuel totals/spreads were captured; missing expected games, first-set games, O/U lean, or spread lean is a failed pregame pass.
 - `npm test` includes a regression test for the bug that previously imported May 28/29/30 Flashscore recent maps with `slate_date = NULL`.

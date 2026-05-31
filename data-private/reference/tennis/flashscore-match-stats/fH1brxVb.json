@@ -1,0 +1,516 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-marta-kostyuk-iga-swiatek-2026-05-31",
+  "boardTitle": "Marta Kostyuk vs Iga Swiatek",
+  "boardPlayerName": "Marta Kostyuk",
+  "recentOpponentName": "Viktorija Golubic",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "29 May 26",
+  "recentIsoDate": "2026-05-29",
+  "recentResult": "SUI  6-4 6-3 3rd",
+  "flashscoreLabel": "Kostyuk M. - Golubic V.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Kostyuk M.",
+    "Golubic V."
+  ],
+  "generatedAt": "2026-05-30T23:35:33.315Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/fH1brxVb/",
+  "matchId": "fH1brxVb",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_fH1brxVb",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_fH1brxVb"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "1:03"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:37"
+      }
+    ],
+    "totalDuration": "1:40"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "3",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "70%",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (24/34)",
+              "right": "60% (28/47)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (16/31)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "6/10",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (19/47)",
+              "right": "29% (10/34)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (12/20)",
+              "right": "48% (15/31)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/10",
+              "right": "2/3",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "35",
+              "right": "15",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "32",
+              "right": "13",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Net points won",
+              "left": "53% (18/34)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (40/65)",
+              "right": "54% (36/67)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (31/67)",
+              "right": "38% (25/65)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (71/132)",
+              "right": "46% (61/132)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (8/10)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Return games won",
+              "left": "44% (4/9)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Total games won",
+              "left": "63% (12/19)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "44%",
+              "right": "71%",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (10/16)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (10/20)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "6/9",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (16/34)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (9/14)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/9",
+              "right": "2/3",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "23",
+              "right": "6",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "25",
+              "right": "11",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (20/36)",
+              "right": "48% (23/48)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (25/48)",
+              "right": "44% (16/36)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (45/84)",
+              "right": "46% (39/84)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "68%",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (14/18)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (6/11)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (3/13)",
+              "right": "22% (4/18)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (3/6)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "9",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "2",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (20/29)",
+              "right": "68% (13/19)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (6/19)",
+              "right": "31% (9/29)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (26/48)",
+              "right": "46% (22/48)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Golubic V."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,858 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-jakub-mensik-andrey-rublev-2026-05-31",
+  "boardTitle": "Jakub Mensik vs Andrey Rublev",
+  "boardPlayerName": "Jakub Mensik",
+  "recentOpponentName": "Alex De Minaur",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "29 May 26",
+  "recentIsoDate": "2026-05-29",
+  "recentResult": "AUS  0-6 6-2 6-2 6-3 3rd",
+  "flashscoreLabel": "De Minaur A. - Mensik J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "De Minaur A.",
+    "Mensik J."
+  ],
+  "generatedAt": "2026-05-30T23:35:36.897Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/WdJof93b/",
+  "matchId": "WdJof93b",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_WdJof93b",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_WdJof93b"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 0,
+        "duration": "0:20"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:27"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "5",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "54%",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (29/55)",
+              "right": "67% (34/51)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (16/34)",
+              "right": "48% (21/44)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/14",
+              "right": "2/7",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (17/51)",
+              "right": "47% (26/55)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (23/44)",
+              "right": "53% (18/34)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/7",
+              "right": "7/14",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "33",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "39",
+              "right": "38",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (6/12)",
+              "right": "80% (33/41)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "51% (45/89)",
+              "right": "58% (55/95)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (40/95)",
+              "right": "49% (44/89)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (85/184)",
+              "right": "54% (99/184)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "53% (8/15)",
+              "right": "69% (11/16)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return games won",
+              "left": "31% (5/16)",
+              "right": "47% (7/15)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (13/31)",
+              "right": "58% (18/31)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "47%",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (9/9)",
+              "right": "25% (2/8)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (3/4)",
+              "right": "22% (2/9)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/4",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "75% (6/8)",
+              "right": "0% (0/9)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "78% (7/9)",
+              "right": "25% (1/4)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "0/0",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "0",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "3",
+              "right": "11",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "55% (6/11)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "92% (12/13)",
+              "right": "24% (4/17)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "76% (13/17)",
+              "right": "8% (1/13)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "83% (25/30)",
+              "right": "17% (5/30)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (6/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "60%",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "32% (7/22)",
+              "right": "60% (9/15)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "70% (7/10)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "1/2",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (6/15)",
+              "right": "68% (15/22)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "30% (3/10)",
+              "right": "44% (4/9)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "3/7",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "8",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "10",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Net points won",
+              "left": "25% (1/4)",
+              "right": "89% (8/9)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "39% (12/31)",
+              "right": "64% (16/25)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (9/25)",
+              "right": "61% (19/31)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (21/56)",
+              "right": "63% (35/56)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "67%",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "36% (5/14)",
+              "right": "75% (9/12)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "50% (3/6)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "0/1",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (3/12)",
+              "right": "64% (9/14)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (3/6)",
+              "right": "64% (7/11)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/6",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "10",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "6",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "88% (7/8)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "36% (9/25)",
+              "right": "67% (12/18)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (6/18)",
+              "right": "64% (16/25)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "35% (15/43)",
+              "right": "65% (28/43)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "46%",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (8/10)",
+              "right": "88% (14/16)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "47% (9/19)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "13% (2/16)",
+              "right": "20% (2/10)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (10/19)",
+              "right": "60% (6/10)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "15",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "11",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "92% (12/13)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (12/20)",
+              "right": "66% (23/35)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (12/35)",
+              "right": "40% (8/20)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (24/55)",
+              "right": "56% (31/55)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "De Minaur A.",
+              "rightPlayer": "Mensik J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

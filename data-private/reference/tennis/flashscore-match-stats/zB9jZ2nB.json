@@ -1,12 +1,12 @@
 {
   "sourceKind": "recent-match",
   "slateDate": "2026-05-27",
-  "boardMatchId": "rg-m-alex-de-minaur-jakub-mensik-2026-05-29",
-  "boardTitle": "Alex de Minaur vs Jakub Mensik",
+  "boardMatchId": "rg-m-jakub-mensik-andrey-rublev-2026-05-31",
+  "boardTitle": "Jakub Mensik vs Andrey Rublev",
   "boardPlayerName": "Jakub Mensik",
   "recentOpponentName": "Mariano Navone",
-  "recentIndex": 0,
-  "recentEvent": "Paris",
+  "recentIndex": 1,
+  "recentEvent": "",
   "recentDate": "27 May 26",
   "recentIsoDate": "2026-05-27",
   "recentResult": "ARG  6-3 2-6 6-4 1-6 7-611 2nd",
@@ -16,7 +16,7 @@
     "Navone M.",
     "Mensik J."
   ],
-  "generatedAt": "2026-05-29T02:02:39.224Z",
+  "generatedAt": "2026-05-30T23:35:37.122Z",
   "sourceUrl": "https://www.flashscoreusa.com/match/zB9jZ2nB/",
   "matchId": "zB9jZ2nB",
   "feedUrls": {
@@ -189,7 +189,7 @@
             },
             {
               "label": "Match points saved",
-              "left": "7",
+              "left": "6",
               "right": "0",
               "leftPlayer": "Navone M.",
               "rightPlayer": "Mensik J."
@@ -979,7 +979,7 @@
             },
             {
               "label": "Match points saved",
-              "left": "7",
+              "left": "6",
               "right": "0",
               "leftPlayer": "Navone M.",
               "rightPlayer": "Mensik J."

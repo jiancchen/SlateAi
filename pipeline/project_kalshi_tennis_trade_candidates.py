@@ -361,6 +361,26 @@ def load_player_flow(board_match_id: str | None, selection_name: str | None) -> 
 def init_open_snapshot_tables(conn: sqlite3.Connection) -> None:
     conn.executescript(
         """
+        create table if not exists tennis_prediction_market_snapshots (
+          slate_date text not null,
+          match_id text not null,
+          source_name text not null,
+          captured_at text,
+          total_volume integer,
+          player_name text not null,
+          normalized_name text not null,
+          probability_pct real,
+          traded_amount integer,
+          price_band text,
+          gross_profit_pct real,
+          gross_payout_multiple real,
+          cents_at_risk real,
+          cents_profit_if_win real,
+          raw_json text not null,
+          updated_at text not null default current_timestamp,
+          primary key (slate_date, match_id, source_name, normalized_name)
+        );
+
         create table if not exists tennis_kalshi_open_orderbook_snapshots (
           market_ticker text not null,
           captured_at text not null,
@@ -470,6 +490,53 @@ def persist_open_snapshots(side_rows: list[dict[str, Any]], candidate_rows: list
                     json.dumps(raw_payload, ensure_ascii=False),
                 ),
             )
+            entry = side.get("yesAsk")
+            if side.get("boardMatchId") and side.get("selection") and entry is not None:
+                risk_cents = round(float(entry) * 100, 2)
+                profit_cents = round((1 - float(entry)) * 100, 2)
+                gross_multiple = round(1 / float(entry), 3) if entry else None
+                gross_profit_pct = round(((1 - float(entry)) / float(entry)) * 100, 1) if entry else None
+                conn.execute(
+                    """
+                    insert into tennis_prediction_market_snapshots(
+                      slate_date, match_id, source_name, captured_at, total_volume,
+                      player_name, normalized_name, probability_pct, traded_amount,
+                      price_band, gross_profit_pct, gross_payout_multiple,
+                      cents_at_risk, cents_profit_if_win, raw_json
+                    )
+                    values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    on conflict(slate_date, match_id, source_name, normalized_name) do update set
+                      captured_at=excluded.captured_at,
+                      total_volume=excluded.total_volume,
+                      player_name=excluded.player_name,
+                      probability_pct=excluded.probability_pct,
+                      traded_amount=excluded.traded_amount,
+                      price_band=excluded.price_band,
+                      gross_profit_pct=excluded.gross_profit_pct,
+                      gross_payout_multiple=excluded.gross_payout_multiple,
+                      cents_at_risk=excluded.cents_at_risk,
+                      cents_profit_if_win=excluded.cents_profit_if_win,
+                      raw_json=excluded.raw_json,
+                      updated_at=current_timestamp
+                    """,
+                    (
+                        slate_date,
+                        side.get("boardMatchId"),
+                        "Kalshi open orderbook",
+                        captured_at,
+                        int(side.get("openInterest") or 0),
+                        side.get("selection"),
+                        normalize(side.get("selection")),
+                        round(float(entry) * 100, 2),
+                        int(side.get("yesAskSize") or 0),
+                        entry_band(float(entry)),
+                        gross_profit_pct,
+                        gross_multiple,
+                        risk_cents,
+                        profit_cents,
+                        json.dumps(raw_payload, ensure_ascii=False),
+                    ),
+                )
         conn.commit()
 
 

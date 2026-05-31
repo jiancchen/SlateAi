@@ -1,0 +1,729 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/xiyu-wang-sorana-cirstea#id:16198568",
+  "eventId": "16198568",
+  "slateDate": "2026-05-31",
+  "boardMatchId": "rg-w-sorana-cirstea-wang-xiyu-2026-05-31",
+  "boardTitle": "Sorana Cirstea vs Wang Xiyu",
+  "capturedAt": "2026-05-30T23:39:21.786Z",
+  "compactEvent": {
+    "id": 16198568,
+    "slug": "xiyu-wang-sorana-cirstea",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1780218000,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "WTA",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 5,
+      "name": "Round of 16",
+      "slug": "round-of-16",
+      "cupRoundType": 8
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 19728,
+      "name": "Sorana Cirstea",
+      "shortName": "S. Cirstea",
+      "ranking": 18,
+      "currentRanking": 13,
+      "country": {
+        "alpha2": "RO",
+        "alpha3": "ROU",
+        "name": "Romania",
+        "slug": "romania"
+      },
+      "playerTeamInfo": {
+        "height": 1.76,
+        "weight": 59,
+        "plays": "right-handed",
+        "turnedPro": "2006",
+        "prizeCurrent": 773919,
+        "prizeTotal": 10191606,
+        "birthCity": {
+          "name": "Bucharest",
+          "country": {
+            "alpha2": "RO",
+            "alpha3": "ROU",
+            "name": "Romania",
+            "slug": "romania"
+          },
+          "id": 19129
+        },
+        "residenceCity": {
+          "name": "Targoviste",
+          "country": {
+            "alpha2": "RO",
+            "alpha3": "ROU",
+            "name": "Romania",
+            "slug": "romania"
+          },
+          "id": 21470
+        },
+        "id": 322,
+        "birthplace": "Bucharest, Romania",
+        "birthDateTimestamp": 639446400,
+        "residence": "Targoviste, Romania",
+        "prizeCurrentRaw": {
+          "value": 773919,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 10191606,
+          "currency": "EUR"
+        },
+        "currentRanking": 13
+      }
+    },
+    "awayTeam": {
+      "id": 223148,
+      "name": "Xiyu Wang",
+      "shortName": "X. Wang",
+      "ranking": 148,
+      "currentRanking": 82,
+      "country": {
+        "alpha2": "CN",
+        "alpha3": "CHN",
+        "name": "China",
+        "slug": "china"
+      },
+      "playerTeamInfo": {
+        "height": 1.82,
+        "plays": "left-handed",
+        "turnedPro": "2018",
+        "prizeCurrent": 23623,
+        "prizeTotal": 2519070,
+        "birthCity": {
+          "name": "Taixing, Jiang Su Province",
+          "country": {
+            "alpha2": "CN",
+            "alpha3": "CHN",
+            "name": "China",
+            "slug": "china"
+          },
+          "id": 35130
+        },
+        "id": 582,
+        "birthplace": "Taixing, Jiang Su Province, China",
+        "birthDateTimestamp": 985737600,
+        "prizeCurrentRaw": {
+          "value": 23623,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 2519070,
+          "currency": "EUR"
+        },
+        "currentRanking": 82
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "homeTeamSeed": "18",
+          "awayTeamSeed": "Q",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "WTA",
+              "slug": "wta",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 6,
+              "country": {},
+              "id": 6,
+              "flag": "wta",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "رابطة لاعبات التنس",
+                  "hi": "चैलेंजर",
+                  "bn": "ডব্লিউটিএ",
+                  "ru": "WTA"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "WTA",
+                "slug": "wta",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 6,
+                "country": {},
+                "id": 6,
+                "flag": "wta",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "ar": "رابطة لاعبات التنس",
+                    "hi": "चैलेंजर",
+                    "bn": "ডব্লিউটিএ",
+                    "ru": "WTA"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 11648,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2577,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गारोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185246,
+            "endTimestamp": 1780704000,
+            "startTimestamp": 1779580800,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "رولان غاروس، باريس، فرنسا"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "season": {
+            "name": "French Open Women Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85953
+          },
+          "roundInfo": {
+            "round": 5,
+            "name": "Round of 16",
+            "slug": "round-of-16",
+            "cupRoundType": 8
+          },
+          "customId": "DUhsYmOb",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-suzanne-lenglen",
+            "name": "Court Suzanne Lenglen",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 17177,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب سوزان لانغلين",
+                "hi": "कोर्ट सुज़ैन लेंग्लेन",
+                "bn": "কোর্ট সুজান লেংলেন"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court Suzanne Lenglen"
+            }
+          },
+          "homeTeam": {
+            "name": "Sorana Cirstea",
+            "slug": "cirstea-sorana",
+            "shortName": "S. Cirstea",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 8753,
+            "playerTeamInfo": {
+              "height": 1.76,
+              "weight": 59,
+              "plays": "right-handed",
+              "turnedPro": "2006",
+              "prizeCurrent": 773919,
+              "prizeTotal": 10191606,
+              "birthCity": {
+                "name": "Bucharest",
+                "country": {
+                  "alpha2": "RO",
+                  "alpha3": "ROU",
+                  "name": "Romania",
+                  "slug": "romania"
+                },
+                "id": 19129
+              },
+              "residenceCity": {
+                "name": "Targoviste",
+                "country": {
+                  "alpha2": "RO",
+                  "alpha3": "ROU",
+                  "name": "Romania",
+                  "slug": "romania"
+                },
+                "id": 21470
+              },
+              "id": 322,
+              "birthplace": "Bucharest, Romania",
+              "birthDateTimestamp": 639446400,
+              "residence": "Targoviste, Romania",
+              "prizeCurrentRaw": {
+                "value": 773919,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 10191606,
+                "currency": "EUR"
+              },
+              "currentRanking": 13
+            },
+            "nameCode": "CIR",
+            "ranking": 18,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "RO",
+              "alpha3": "ROU",
+              "name": "Romania",
+              "slug": "romania"
+            },
+            "id": 19728,
+            "fullName": "Sorana Cirstea",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "سورانا تشيرستيا",
+                "ru": "Кирстя, Сорана"
+              },
+              "shortNameTranslation": {
+                "ar": "س. تشيرستيا",
+                "bn": "এস. ক্রিস্টিয়া",
+                "hi": "एस. किर्स्टिया"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Xiyu Wang",
+            "slug": "wang-xiyu",
+            "shortName": "X. Wang",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 2859,
+            "playerTeamInfo": {
+              "height": 1.82,
+              "plays": "left-handed",
+              "turnedPro": "2018",
+              "prizeCurrent": 23623,
+              "prizeTotal": 2519070,
+              "birthCity": {
+                "name": "Taixing, Jiang Su Province",
+                "country": {
+                  "alpha2": "CN",
+                  "alpha3": "CHN",
+                  "name": "China",
+                  "slug": "china"
+                },
+                "id": 35130
+              },
+              "id": 582,
+              "birthplace": "Taixing, Jiang Su Province, China",
+              "birthDateTimestamp": 985737600,
+              "prizeCurrentRaw": {
+                "value": 23623,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 2519070,
+                "currency": "EUR"
+              },
+              "currentRanking": 82
+            },
+            "nameCode": "WAN",
+            "ranking": 148,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "CN",
+              "alpha3": "CHN",
+              "name": "China",
+              "slug": "china"
+            },
+            "id": 223148,
+            "fullName": "Xiyu Wang",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "شييو وانغ",
+                "ru": "Ван, Сию"
+              },
+              "shortNameTranslation": {
+                "ar": "ش. وانغ",
+                "bn": "জিয়া. ওয়াং",
+                "hi": "सियाई. वांग"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198568,
+          "defaultPeriodCount": 3,
+          "slug": "xiyu-wang-sorana-cirstea",
+          "startTimestamp": 1780218000,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "F"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": {
+          "homeWins": 0,
+          "awayWins": 1,
+          "draws": 0
+        },
+        "managerDuel": null
+      }
+    },
+    "pointByPoint": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "votes": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "vote": {
+          "vote1": 4565,
+          "vote2": 823,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": []
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "home": {
+          "fractionalValue": "17/100",
+          "expected": 86,
+          "actual": 94,
+          "id": 22164468
+        },
+        "away": null
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "featured": {
+          "default": {
+            "sourceId": 195452650,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195452650,
+            "suspended": false,
+            "id": 313683977,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "1/5",
+                "fractionalValue": "17/100",
+                "sourceId": 1397424700,
+                "name": "1",
+                "change": -1
+              },
+              {
+                "initialFractionalValue": "7/2",
+                "fractionalValue": "4/1",
+                "sourceId": 1397424773,
+                "name": "2",
+                "change": 1
+              }
+            ]
+          },
+          "asian": {
+            "sourceId": 195452650,
+            "structureType": 2,
+            "marketId": 12,
+            "marketName": "Total games won",
+            "choiceGroup": "20.5",
+            "isLive": false,
+            "fid": 195452650,
+            "suspended": false,
+            "id": 313730509,
+            "marketGroup": "Total sets/games",
+            "marketPeriod": "Extra time",
+            "choices": [
+              {
+                "initialFractionalValue": "5/6",
+                "fractionalValue": "10/11",
+                "sourceId": 1397484889,
+                "name": "Over",
+                "change": 1
+              },
+              {
+                "initialFractionalValue": "5/6",
+                "fractionalValue": "4/5",
+                "sourceId": 1397484836,
+                "name": "Under",
+                "change": -1
+              }
+            ]
+          },
+          "fullTime": {
+            "sourceId": 195452650,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195452650,
+            "suspended": false,
+            "id": 313683977,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "1/5",
+                "fractionalValue": "17/100",
+                "sourceId": 1397424700,
+                "name": "1",
+                "change": -1
+              },
+              {
+                "initialFractionalValue": "7/2",
+                "fractionalValue": "4/1",
+                "sourceId": 1397424773,
+                "name": "2",
+                "change": 1
+              }
+            ]
+          }
+        },
+        "hasMoreOdds": true
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 155,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 0,
+          "wins": 3,
+          "aces": 9,
+          "firstServePointsScored": 62,
+          "firstServePointsTotal": 77,
+          "firstServeTotal": 116,
+          "secondServePointsScored": 18,
+          "secondServePointsTotal": 35,
+          "secondServeTotal": 39,
+          "breakPointsScored": 18,
+          "breakPointsTotal": 40,
+          "opponentBreakPointsTotal": 5,
+          "opponentBreakPointsScored": 3,
+          "winnersTotal": 44,
+          "unforcedErrorsTotal": 44,
+          "doubleFaults": 4,
+          "avgDoubleFaults": 1.3333333333333,
+          "firstServePercentage": 66.379310344828,
+          "firstServePointsWonPercentage": 80.519480519481,
+          "secondServePercentage": 89.74358974359,
+          "secondServePointsWonPercentage": 46.153846153846,
+          "avgAces": 3,
+          "breakPointsSavedPercentage": 40,
+          "breakPointsSavedConvertedPercentage": 45,
+          "tiebreakWinPercentage": 0,
+          "id": 93169,
+          "matches": 3,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 397,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 0,
+          "wins": 6,
+          "aces": 9,
+          "firstServePointsScored": 141,
+          "firstServePointsTotal": 231,
+          "firstServeTotal": 314,
+          "secondServePointsScored": 56,
+          "secondServePointsTotal": 77,
+          "secondServeTotal": 83,
+          "breakPointsScored": 31,
+          "breakPointsTotal": 47,
+          "opponentBreakPointsTotal": 39,
+          "opponentBreakPointsScored": 14,
+          "winnersTotal": 56,
+          "unforcedErrorsTotal": 46,
+          "doubleFaults": 6,
+          "avgDoubleFaults": 1,
+          "firstServePercentage": 73.566878980892,
+          "firstServePointsWonPercentage": 61.038961038961,
+          "secondServePercentage": 92.771084337349,
+          "secondServePointsWonPercentage": 67.469879518072,
+          "avgAces": 1.5,
+          "breakPointsSavedPercentage": 64.102564102564,
+          "breakPointsSavedConvertedPercentage": 65.957446808511,
+          "tiebreakWinPercentage": 0,
+          "id": 92848,
+          "matches": 6,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    }
+  }
+}

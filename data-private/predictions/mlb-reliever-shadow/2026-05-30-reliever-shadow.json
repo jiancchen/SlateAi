@@ -473,35 +473,15 @@
         "top3Rate": 59.6
       },
       "starterHookRiskPct": 0.0,
-      "topTwoSharePct": 30.4,
-      "summaryLine": "Grant Taylor leads the shadow board; Tyler Davis is the main alt with 30.4% of the shadow share.",
+      "topTwoSharePct": 35.2,
+      "summaryLine": "Tyler Davis leads the shadow board; Grant Taylor is the main alt with 35.2% of the shadow share.",
       "relievers": [
-        {
-          "pitcherId": 691799,
-          "name": "Grant Taylor",
-          "role": "middle",
-          "shadowScorePct": 25.1,
-          "shadowSharePct": 16.1,
-          "availabilityScore": 74.9,
-          "bridgeScore": 83.7,
-          "firstRelieverLikelihood": 87.2,
-          "expectedOuts": 3.7,
-          "workedYesterday": false,
-          "backToBack": false,
-          "starterProb12Pct": 0.0,
-          "starterProb18Pct": 0.0,
-          "bulkFirstUpRatePct": 50.0,
-          "reasonTags": [
-            "bulk first-up live"
-          ],
-          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
-        },
         {
           "pitcherId": 699823,
           "name": "Tyler Davis",
           "role": "middle",
-          "shadowScorePct": 22.3,
-          "shadowSharePct": 14.3,
+          "shadowScorePct": 27.6,
+          "shadowSharePct": 17.7,
           "availabilityScore": 75.3,
           "bridgeScore": 67.2,
           "firstRelieverLikelihood": 63.7,
@@ -518,11 +498,31 @@
           "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
         },
         {
+          "pitcherId": 691799,
+          "name": "Grant Taylor",
+          "role": "middle",
+          "shadowScorePct": 27.3,
+          "shadowSharePct": 17.5,
+          "availabilityScore": 74.9,
+          "bridgeScore": 83.7,
+          "firstRelieverLikelihood": 87.2,
+          "expectedOuts": 3.7,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 50.0,
+          "reasonTags": [
+            "bulk first-up live"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
           "pitcherId": 670950,
           "name": "Trevor Richards",
           "role": "middle",
-          "shadowScorePct": 19.6,
-          "shadowSharePct": 12.6,
+          "shadowScorePct": 22.5,
+          "shadowSharePct": 14.5,
           "availabilityScore": 79.4,
           "bridgeScore": 69.7,
           "firstRelieverLikelihood": 62.3,
@@ -781,15 +781,55 @@
         "top3Rate": 59.6
       },
       "starterHookRiskPct": 0.0,
-      "topTwoSharePct": 23.6,
-      "summaryLine": "Brant Hurter leads the shadow board; Tyler Holton is the main alt with 23.6% of the shadow share.",
+      "topTwoSharePct": 34.1,
+      "summaryLine": "Tyler Holton leads the shadow board; Brenan Hanifee is the main alt with 34.1% of the shadow share.",
       "relievers": [
+        {
+          "pitcherId": 663947,
+          "name": "Tyler Holton",
+          "role": "middle",
+          "shadowScorePct": 28.4,
+          "shadowSharePct": 18.3,
+          "availabilityScore": 95.0,
+          "bridgeScore": 87.9,
+          "firstRelieverLikelihood": 94.3,
+          "expectedOuts": 3.6,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [
+            "conversion support"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
+        {
+          "pitcherId": 669724,
+          "name": "Brenan Hanifee",
+          "role": "middle",
+          "shadowScorePct": 24.5,
+          "shadowSharePct": 15.8,
+          "availabilityScore": 58.4,
+          "bridgeScore": 83.5,
+          "firstRelieverLikelihood": 92.4,
+          "expectedOuts": 3.62,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 20.0,
+          "reasonTags": [
+            "conversion support"
+          ],
+          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
+        },
         {
           "pitcherId": 676428,
           "name": "Brant Hurter",
           "role": "bridge",
           "shadowScorePct": 20.9,
-          "shadowSharePct": 12.2,
+          "shadowSharePct": 13.5,
           "availabilityScore": 95.0,
           "bridgeScore": 81.4,
           "firstRelieverLikelihood": 62.1,
@@ -800,45 +840,10 @@
           "starterProb18Pct": 0.0,
           "bulkFirstUpRatePct": 20.0,
           "reasonTags": [
-            "clean-entry form"
+            "clean-entry form",
+            "conversion support"
           ],
           "summary": "standard mid-game bridge; clean early-command form; lineup fit is neutral."
-        },
-        {
-          "pitcherId": 663947,
-          "name": "Tyler Holton",
-          "role": "middle",
-          "shadowScorePct": 19.6,
-          "shadowSharePct": 11.4,
-          "availabilityScore": 95.0,
-          "bridgeScore": 87.9,
-          "firstRelieverLikelihood": 94.3,
-          "expectedOuts": 3.6,
-          "workedYesterday": false,
-          "backToBack": false,
-          "starterProb12Pct": 0.0,
-          "starterProb18Pct": 0.0,
-          "bulkFirstUpRatePct": 20.0,
-          "reasonTags": [],
-          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
-        },
-        {
-          "pitcherId": 669724,
-          "name": "Brenan Hanifee",
-          "role": "middle",
-          "shadowScorePct": 19.1,
-          "shadowSharePct": 11.1,
-          "availabilityScore": 58.4,
-          "bridgeScore": 83.5,
-          "firstRelieverLikelihood": 92.4,
-          "expectedOuts": 3.62,
-          "workedYesterday": false,
-          "backToBack": false,
-          "starterProb12Pct": 0.0,
-          "starterProb18Pct": 0.0,
-          "bulkFirstUpRatePct": 20.0,
-          "reasonTags": [],
-          "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
         }
       ]
     },
@@ -1685,15 +1690,15 @@
         "top3Rate": 59.6
       },
       "starterHookRiskPct": 0.0,
-      "topTwoSharePct": 36.6,
-      "summaryLine": "Wandy Peralta leads the shadow board; Bradgley Rodriguez is the main alt with 36.6% of the shadow share.",
+      "topTwoSharePct": 49.4,
+      "summaryLine": "Wandy Peralta leads the shadow board; Bradgley Rodriguez is the main alt with 49.4% of the shadow share.",
       "relievers": [
         {
           "pitcherId": 593974,
           "name": "Wandy Peralta",
           "role": "middle",
-          "shadowScorePct": 22.1,
-          "shadowSharePct": 18.5,
+          "shadowScorePct": 33.3,
+          "shadowSharePct": 28.2,
           "availabilityScore": 95.0,
           "bridgeScore": 78.8,
           "firstRelieverLikelihood": 80.2,
@@ -1712,8 +1717,8 @@
           "pitcherId": 699134,
           "name": "Bradgley Rodriguez",
           "role": "middle",
-          "shadowScorePct": 21.6,
-          "shadowSharePct": 18.1,
+          "shadowScorePct": 25.1,
+          "shadowSharePct": 21.2,
           "availabilityScore": 95.0,
           "bridgeScore": 85.8,
           "firstRelieverLikelihood": 93.4,
@@ -1733,8 +1738,8 @@
           "pitcherId": 676760,
           "name": "Ron Marinaccio",
           "role": "bulk",
-          "shadowScorePct": 20.9,
-          "shadowSharePct": 17.4,
+          "shadowScorePct": 22.5,
+          "shadowSharePct": 19.0,
           "availabilityScore": 74.9,
           "bridgeScore": 80.0,
           "firstRelieverLikelihood": 85.5,
@@ -2216,15 +2221,36 @@
         "top3Rate": 59.6
       },
       "starterHookRiskPct": 0.0,
-      "topTwoSharePct": 27.0,
-      "summaryLine": "Richard Lovelady leads the shadow board; Gus Varland is the main alt with 27.0% of the shadow share.",
+      "topTwoSharePct": 33.8,
+      "summaryLine": "Zack Littell leads the shadow board; Richard Lovelady is the main alt with 33.8% of the shadow share.",
       "relievers": [
+        {
+          "pitcherId": 641793,
+          "name": "Zack Littell",
+          "role": "bridge",
+          "shadowScorePct": 18.8,
+          "shadowSharePct": 18.0,
+          "availabilityScore": 95.0,
+          "bridgeScore": 74.7,
+          "firstRelieverLikelihood": 84.7,
+          "expectedOuts": 14.75,
+          "workedYesterday": false,
+          "backToBack": false,
+          "starterProb12Pct": 0.0,
+          "starterProb18Pct": 0.0,
+          "bulkFirstUpRatePct": 80.0,
+          "reasonTags": [
+            "bulk first-up live",
+            "unknown-sample arm"
+          ],
+          "summary": "standard mid-game bridge; unknown-sample relief lane; lineup fit is neutral."
+        },
         {
           "pitcherId": 663992,
           "name": "Richard Lovelady",
           "role": "middle",
-          "shadowScorePct": 19.5,
-          "shadowSharePct": 14.1,
+          "shadowScorePct": 16.4,
+          "shadowSharePct": 15.8,
           "availabilityScore": 79.0,
           "bridgeScore": 58.8,
           "firstRelieverLikelihood": 60.8,
@@ -2243,8 +2269,8 @@
           "pitcherId": 681402,
           "name": "Gus Varland",
           "role": "late",
-          "shadowScorePct": 17.8,
-          "shadowSharePct": 12.9,
+          "shadowScorePct": 14.7,
+          "shadowSharePct": 14.1,
           "availabilityScore": 76.7,
           "bridgeScore": 50.1,
           "firstRelieverLikelihood": 56.2,
@@ -2259,27 +2285,6 @@
             "first-five wildness"
           ],
           "summary": "standard mid-game bridge; role and availability are doing most of the work; lineup fit is neutral."
-        },
-        {
-          "pitcherId": 641793,
-          "name": "Zack Littell",
-          "role": "bridge",
-          "shadowScorePct": 17.6,
-          "shadowSharePct": 12.7,
-          "availabilityScore": 95.0,
-          "bridgeScore": 74.7,
-          "firstRelieverLikelihood": 84.7,
-          "expectedOuts": 14.75,
-          "workedYesterday": false,
-          "backToBack": false,
-          "starterProb12Pct": 0.0,
-          "starterProb18Pct": 0.0,
-          "bulkFirstUpRatePct": 80.0,
-          "reasonTags": [
-            "bulk first-up live",
-            "unknown-sample arm"
-          ],
-          "summary": "standard mid-game bridge; unknown-sample relief lane; lineup fit is neutral."
         }
       ]
     }

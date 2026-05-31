@@ -1,0 +1,516 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-mirra-andreeva-jil-teichmann-2026-05-31",
+  "boardTitle": "Mirra Andreeva vs Jil Teichmann",
+  "boardPlayerName": "Mirra Andreeva",
+  "recentOpponentName": "Marie Bouzkova",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "29 May 26",
+  "recentIsoDate": "2026-05-29",
+  "recentResult": "CZE  6-4 6-2 3rd",
+  "flashscoreLabel": "Andreeva M. - Bouzkova M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Andreeva M.",
+    "Bouzkova M."
+  ],
+  "generatedAt": "2026-05-30T23:35:27.156Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/YatE7zdU/",
+  "matchId": "YatE7zdU",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_YatE7zdU",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_YatE7zdU"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:49"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:46"
+      }
+    ],
+    "totalDuration": "1:35"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "72%",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (27/36)",
+              "right": "59% (26/44)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (12/20)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "5/8",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (18/44)",
+              "right": "25% (9/36)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (9/17)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "0/2",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "30",
+              "right": "14",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "25",
+              "right": "16",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (12/16)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (39/56)",
+              "right": "56% (34/61)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (27/61)",
+              "right": "30% (17/56)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (66/117)",
+              "right": "44% (51/117)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (9/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (3/9)",
+              "right": "0% (0/9)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "77%",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (14/21)",
+              "right": "63% (17/27)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "80% (8/10)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "2/3",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (10/27)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "0/1",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "7",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "10",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (22/31)",
+              "right": "63% (22/35)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (13/35)",
+              "right": "29% (9/31)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (35/66)",
+              "right": "47% (31/66)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "65%",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "87% (13/15)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "3/5",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (8/17)",
+              "right": "13% (2/15)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (6/9)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/1",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "7",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "6",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (17/25)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (14/26)",
+              "right": "32% (8/25)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (31/51)",
+              "right": "39% (20/51)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Bouzkova M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

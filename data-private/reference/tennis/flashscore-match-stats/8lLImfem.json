@@ -1,0 +1,516 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-elina-svitolina-belinda-bencic-2026-05-31",
+  "boardTitle": "Elina Svitolina vs Belinda Bencic",
+  "boardPlayerName": "Elina Svitolina",
+  "recentOpponentName": "Tamara Korpatsch",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "29 May 26",
+  "recentIsoDate": "2026-05-29",
+  "recentResult": "GER  6-2 6-3 3rd",
+  "flashscoreLabel": "Svitolina E. - Korpatsch T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Svitolina E.",
+    "Korpatsch T."
+  ],
+  "generatedAt": "2026-05-30T23:35:44.279Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/8lLImfem/",
+  "matchId": "8lLImfem",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_8lLImfem",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_8lLImfem"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:47"
+      }
+    ],
+    "totalDuration": "1:32"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "5",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "52%",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (25/41)",
+              "right": "50% (18/36)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (10/20)",
+              "right": "33% (11/33)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/9",
+              "right": "8/14",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (18/36)",
+              "right": "39% (16/41)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (22/33)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/14",
+              "right": "2/9",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "28",
+              "right": "16",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "29",
+              "right": "30",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (9/15)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (35/61)",
+              "right": "42% (29/69)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "58% (40/69)",
+              "right": "43% (26/61)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (75/130)",
+              "right": "42% (55/130)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (6/8)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (6/9)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "54%",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (15/23)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (6/11)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "4/6",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (8/19)",
+              "right": "35% (8/23)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "69% (11/16)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "0/4",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "8",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "19",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (21/34)",
+              "right": "46% (16/35)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (19/35)",
+              "right": "38% (13/34)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (40/69)",
+              "right": "42% (29/69)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "50%",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (10/18)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "4/8",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "59% (10/17)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "65% (11/17)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/8",
+              "right": "2/5",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "8",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "11",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (14/27)",
+              "right": "38% (13/34)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "62% (21/34)",
+              "right": "48% (13/27)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (35/61)",
+              "right": "43% (26/61)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Svitolina E.",
+              "rightPlayer": "Korpatsch T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

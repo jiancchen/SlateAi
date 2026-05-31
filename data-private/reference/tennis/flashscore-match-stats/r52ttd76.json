@@ -1,0 +1,987 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-m-jesper-de-jong-alexander-zverev-2026-05-31",
+  "boardTitle": "Jesper de Jong vs Alexander Zverev",
+  "boardPlayerName": "Jesper De Jong",
+  "recentOpponentName": "Karen Khachanov",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "29 May 26",
+  "recentIsoDate": "2026-05-29",
+  "recentResult": "RUS  7-5 5-7 6-2 6-72 6-2 3rd",
+  "flashscoreLabel": "Khachanov K. - De Jong J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Khachanov K.",
+    "De Jong J."
+  ],
+  "generatedAt": "2026-05-30T23:35:24.170Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/r52ttd76/",
+  "matchId": "r52ttd76",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_r52ttd76",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_r52ttd76"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:48"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:07"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 7,
+        "rightGames": 2,
+        "duration": ""
+      },
+      {
+        "label": "Set 5",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "4:22"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "15",
+              "right": "17",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "9",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "61%",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (67/98)",
+              "right": "81% (81/100)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (28/51)",
+              "right": "46% (30/65)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/12",
+              "right": "10/13",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (19/100)",
+              "right": "32% (31/98)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (35/65)",
+              "right": "45% (23/51)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/13",
+              "right": "7/12",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "60",
+              "right": "61",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "53",
+              "right": "41",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Net points won",
+              "left": "66% (19/29)",
+              "right": "69% (24/35)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (95/149)",
+              "right": "67% (111/165)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (54/165)",
+              "right": "36% (54/149)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (149/314)",
+              "right": "53% (165/314)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "73% (19/26)",
+              "right": "88% (23/26)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Return games won",
+              "left": "12% (3/26)",
+              "right": "27% (7/26)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (22/52)",
+              "right": "58% (30/52)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "69%",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (18/26)",
+              "right": "95% (19/20)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (4/8)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "2/2",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "5% (1/20)",
+              "right": "31% (8/26)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (3/9)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "1/2",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "14",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "5",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (22/34)",
+              "right": "86% (25/29)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "14% (4/29)",
+              "right": "35% (12/34)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (26/63)",
+              "right": "59% (37/63)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "59%",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "90% (19/21)",
+              "right": "73% (22/30)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "38% (8/21)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "7/8",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (8/30)",
+              "right": "10% (2/21)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (13/21)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/8",
+              "right": "0/0",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "18",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "3",
+              "right": "16",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "77% (24/31)",
+              "right": "59% (30/51)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (21/51)",
+              "right": "23% (7/31)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (45/82)",
+              "right": "45% (37/82)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "68%",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (8/16)",
+              "right": "100% (13/13)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "0/0",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/13)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (3/6)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/3",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "8",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "5",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (13/25)",
+              "right": "84% (16/19)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "16% (3/19)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (16/44)",
+              "right": "64% (28/44)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "53%",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (16/21)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (10/15)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "1/2",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (7/25)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "59% (13/22)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "1/3",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "15",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "9",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (26/36)",
+              "right": "57% (27/47)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (20/47)",
+              "right": "28% (10/36)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (46/83)",
+              "right": "45% (37/83)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 5",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "63%",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "43% (6/14)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "0/1",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (3/12)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/4",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "6",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "6",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "43% (10/23)",
+              "right": "68% (13/19)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (6/19)",
+              "right": "57% (13/23)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (16/42)",
+              "right": "62% (26/42)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Khachanov K.",
+              "rightPlayer": "De Jong J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -52,6 +52,9 @@ type SidebarTabId = 'ticket' | 'markets' | 'sources'
 
 const PARLAY_MIN_LEGS = 2
 const PARLAY_MAX_LEGS = 10
+const MOBILE_DETAIL_MEDIA_QUERY = '(max-width: 920px)'
+const MOBILE_DETAIL_HISTORY_KEY = '__slateMobileDetail'
+const MOBILE_DETAIL_HISTORY_TOKEN_KEY = '__slateMobileDetailToken'
 
 const deskTabs: Array<{ id: DeskTabId; label: string }> = [
   { id: 'board', label: 'Board' },
@@ -1810,6 +1813,7 @@ function App() {
   )
   const [activeDayId, setActiveDayId] = useState(defaultSlateDayId)
   const [activeDeskTab, setActiveDeskTab] = useState<DeskTabId>('board')
+  const [isMobileBoardDetailOpen, setIsMobileBoardDetailOpen] = useState(false)
   const [activeHistoryId, setActiveHistoryId] = useState('')
   const [activeHistorySportTabId, setActiveHistorySportTabId] = useState('')
   const [activeFilter, setActiveFilter] = useState('All')
@@ -1836,6 +1840,8 @@ function App() {
   const [isSearchFocused, setIsSearchFocused] = useState(false)
   const [activeSearchResultIndex, setActiveSearchResultIndex] = useState(0)
   const searchInputRef = useRef<HTMLInputElement | null>(null)
+  const mobileDetailHistoryRef = useRef(false)
+  const mobileDetailHistoryTokenRef = useRef(0)
   const [loadedGameDetailsByDay, setLoadedGameDetailsByDay] = useState<Record<string, Record<string, AnyRecord>>>({})
   const [loadingGameDetailsByDay, setLoadingGameDetailsByDay] = useState<Record<string, Record<string, boolean>>>({})
   const [loadedPropBoardsByDay, setLoadedPropBoardsByDay] = useState<Record<string, AnyRecord | null>>({})
@@ -1854,11 +1860,52 @@ function App() {
   const [activeStoryId, setActiveStoryId] = useState('')
   const [selectedStoryGamePk, setSelectedStoryGamePk] = useState<number | null>(null)
 
+  const isMobileDetailViewport = () => window.matchMedia(MOBILE_DETAIL_MEDIA_QUERY).matches
+
+  const closeMobileBoardDetail = () => {
+    if (mobileDetailHistoryRef.current) {
+      window.history.back()
+      return
+    }
+    setIsMobileBoardDetailOpen(false)
+  }
+
   useEffect(() => {
     if (!visibleDeskTabs.some((tab) => tab.id === activeDeskTab)) {
       setActiveDeskTab('board')
     }
   }, [activeDeskTab, visibleDeskTabs])
+
+  useEffect(() => {
+    const handlePopState = (event: PopStateEvent) => {
+      const state = event.state as AnyRecord | null
+      if (state?.[MOBILE_DETAIL_HISTORY_KEY]) {
+        const dayId = String(state.dayId || '')
+        const gameId = String(state.gameId || '')
+        const filter = String(state.activeFilter || '')
+        mobileDetailHistoryRef.current = true
+        if (dayId) setActiveDayId(dayId)
+        if (filter) setActiveFilter(filter)
+        if (dayId && gameId) {
+          setSelectedGameIdByDay((current) => ({ ...current, [dayId]: gameId }))
+        }
+        setActiveDeskTab('board')
+        setIsMobileBoardDetailOpen(true)
+        return
+      }
+
+      if (!mobileDetailHistoryRef.current) return
+      mobileDetailHistoryRef.current = false
+      setIsMobileBoardDetailOpen(false)
+    }
+
+    window.addEventListener('popstate', handlePopState)
+    return () => window.removeEventListener('popstate', handlePopState)
+  }, [])
+
+  useEffect(() => {
+    if (activeDeskTab !== 'board') setIsMobileBoardDetailOpen(false)
+  }, [activeDeskTab])
   const [mlbHistoryWindowByKey, setMlbHistoryWindowByKey] = useState<Record<string, 5 | 10>>({})
   const [activeValueScopeByDay, setActiveValueScopeByDay] = useState<Record<string, string>>({})
 
@@ -2155,6 +2202,38 @@ function App() {
   const selectedGameId = selectedGameIdByDay[activeDayId] ?? visibleGames[0]?.id ?? games[0]?.id ?? ''
   const selectedGameSummary =
     games.find((game: AnyRecord) => game.id === selectedGameId) ?? visibleGames[0] ?? games[0] ?? null
+
+  const pushMobileBoardDetailHistory = (dayId: string, gameId: string, targetFilter = activeFilter) => {
+    if (!dayId || !gameId || mobileDetailHistoryRef.current) return
+    if (!isMobileDetailViewport()) return
+
+    const baseState =
+      window.history.state && typeof window.history.state === 'object'
+        ? { ...(window.history.state as AnyRecord) }
+        : {}
+    delete baseState[MOBILE_DETAIL_HISTORY_KEY]
+    delete baseState[MOBILE_DETAIL_HISTORY_TOKEN_KEY]
+
+    mobileDetailHistoryTokenRef.current += 1
+    window.history.pushState(
+      {
+        ...baseState,
+        [MOBILE_DETAIL_HISTORY_KEY]: true,
+        [MOBILE_DETAIL_HISTORY_TOKEN_KEY]: mobileDetailHistoryTokenRef.current,
+        dayId,
+        activeFilter: targetFilter,
+        gameId
+      },
+      '',
+      window.location.href
+    )
+    mobileDetailHistoryRef.current = true
+  }
+
+  const openMobileBoardDetail = (gameId = selectedGameId, dayId = activeDayId, targetFilter = activeFilter) => {
+    pushMobileBoardDetailHistory(dayId, gameId, targetFilter)
+    setIsMobileBoardDetailOpen(true)
+  }
 
   useEffect(() => {
     if (!activeDayId || !selectedGameId || !selectedGameSummary) return
@@ -3844,6 +3923,7 @@ function App() {
   const selectDay = (dayId: string) => {
     setActiveDayId(dayId)
     setActiveFilter('All')
+    setIsMobileBoardDetailOpen(false)
   }
 
   const openGlobalSearchResult = (result: AnyRecord) => {
@@ -3852,6 +3932,7 @@ function App() {
     if (!date) return
     const targetTab = visibleDeskTabs.some((tab) => tab.id === result.targetTab) ? result.targetTab as DeskTabId : 'board'
     const targetFilter = String(result.targetFilter || (targetTab === 'board' ? 'All' : activeFilter))
+    const opensBoardDetail = targetTab === 'board' && Boolean(gameId)
 
     setActiveDayId(date)
     setActiveFilter(targetFilter)
@@ -3867,6 +3948,8 @@ function App() {
     if (result.builderLeagueFilter) setBuilderLeagueFilter(String(result.builderLeagueFilter))
     if (result.propType) setActivePropType(result.propType)
     setActiveDeskTab(targetTab)
+    if (opensBoardDetail) openMobileBoardDetail(gameId, date, targetFilter)
+    else setIsMobileBoardDetailOpen(false)
     setMarketSearch('')
     setIsSearchFocused(false)
     searchInputRef.current?.blur()
@@ -3881,6 +3964,7 @@ function App() {
   const openGame = (gameId: string) => {
     setSelectedGameIdByDay((current) => ({ ...current, [activeDayId]: gameId }))
     setActiveDeskTab('board')
+    openMobileBoardDetail(gameId)
   }
 
   const toggleMoneylineSelection = (game: AnyRecord, participantId: string) => {
@@ -4041,8 +4125,12 @@ function App() {
   }
 
   return (
-    <div className="terminal-shell">
+    <div className={`terminal-shell ${isMobileBoardDetailOpen && activeDeskTab === 'board' ? 'mobile-detail-active' : ''}`}>
       <header className="desk-globalbar">
+        <button type="button" className="mobile-header-back" onClick={closeMobileBoardDetail}>
+          Back to board
+        </button>
+
         <div className="topbar-brand">
           <div className="brand-mark">S</div>
           <div className="brand-wordmark">
@@ -4221,6 +4309,9 @@ function App() {
           swingTextFor={swingTextFor}
           tennisValueSummary={tennisValueSummary}
           visibleGames={visibleGames}
+          isMobileDetailOpen={isMobileBoardDetailOpen}
+          openMobileDetailForGame={openMobileBoardDetail}
+          setIsMobileDetailOpen={setIsMobileBoardDetailOpen}
         />
       ) : null}
       {activeDeskTab === 'parlay' ? (

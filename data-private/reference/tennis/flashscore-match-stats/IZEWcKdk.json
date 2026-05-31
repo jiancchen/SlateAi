@@ -1,0 +1,516 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-05-27",
+  "boardMatchId": "rg-w-marta-kostyuk-iga-swiatek-2026-05-31",
+  "boardTitle": "Marta Kostyuk vs Iga Swiatek",
+  "boardPlayerName": "Iga Swiatek",
+  "recentOpponentName": "Magda Linette",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "29 May 26",
+  "recentIsoDate": "2026-05-29",
+  "recentResult": "POL  6-4 6-4 3rd",
+  "flashscoreLabel": "Linette M. - Swiatek I.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Linette M.",
+    "Swiatek I."
+  ],
+  "generatedAt": "2026-05-30T23:35:35.077Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/IZEWcKdk/",
+  "matchId": "IZEWcKdk",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_IZEWcKdk",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_IZEWcKdk"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:47"
+      }
+    ],
+    "totalDuration": "1:27"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "58%",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (21/33)",
+              "right": "67% (20/30)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (7/24)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/7",
+              "right": "1/4",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (10/30)",
+              "right": "36% (12/33)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "41% (9/22)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "5/7",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "13",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "17",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Net points won",
+              "left": "88% (7/8)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "49% (28/57)",
+              "right": "63% (33/52)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (19/52)",
+              "right": "51% (29/57)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (47/109)",
+              "right": "57% (62/109)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (5/10)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return games won",
+              "left": "30% (3/10)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "59%",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (10/17)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "18% (2/11)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "1/3",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (5/16)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "3/5",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "7",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "7",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "43% (12/28)",
+              "right": "59% (16/27)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (11/27)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (23/55)",
+              "right": "58% (32/55)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "56%",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (11/16)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (5/13)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/1",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (5/14)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "27% (3/11)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/2",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "6",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "10",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (16/29)",
+              "right": "68% (17/25)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (8/25)",
+              "right": "45% (13/29)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (24/54)",
+              "right": "56% (30/54)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Linette M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

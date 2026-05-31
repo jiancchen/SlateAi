@@ -2,12 +2,13 @@
   "targetDate": "2026-05-30",
   "source": "Kalshi intramatch candles joined to tennis warehouse flow/form features",
   "coverage": {
-    "historicalRows": 114,
+    "historicalRows": 130,
     "dates": [
       "2026-05-25",
       "2026-05-27",
       "2026-05-28",
-      "2026-05-29"
+      "2026-05-29",
+      "2026-05-30"
     ],
     "featureCount": 47,
     "weatherRows": 0,
@@ -15,163 +16,163 @@
   },
   "laneBacktest": [
     {
-      "lane": "return-pressure edge",
-      "rows": 30,
-      "avgEntryCents": 29.4,
-      "winRate": 0.4,
-      "hit2x": 0.6,
-      "roi2xCents": 2.8,
-      "hit25x": 0.5,
-      "roi25xCents": 5.3,
-      "hit3x": 0.467,
-      "roi3xCents": 4.9
-    },
-    {
-      "lane": "weak favorite errors",
-      "rows": 13,
-      "avgEntryCents": 27.3,
-      "winRate": 0.385,
-      "hit2x": 0.615,
-      "roi2xCents": 0.8,
-      "hit25x": 0.538,
-      "roi25xCents": 4.8,
-      "hit3x": 0.462,
-      "roi3xCents": 5.2
+      "lane": "entry <=15c + weak favorite errors",
+      "rows": 5,
+      "avgEntryCents": 11.4,
+      "winRate": 0.2,
+      "hit2x": 0.8,
+      "roi2xCents": 4.4,
+      "hit25x": 0.6,
+      "roi25xCents": 4.4,
+      "hit3x": 0.4,
+      "roi3xCents": 1.2
     },
     {
       "lane": "entry <=15c + early start",
-      "rows": 14,
-      "avgEntryCents": 8.4,
-      "winRate": 0.357,
-      "hit2x": 0.714,
-      "roi2xCents": 3.4,
-      "hit25x": 0.571,
-      "roi25xCents": 4.0,
-      "hit3x": 0.429,
-      "roi3xCents": 2.2
+      "rows": 16,
+      "avgEntryCents": 8.6,
+      "winRate": 0.375,
+      "hit2x": 0.688,
+      "roi2xCents": 2.8,
+      "hit25x": 0.562,
+      "roi25xCents": 3.7,
+      "hit3x": 0.438,
+      "roi3xCents": 2.5
+    },
+    {
+      "lane": "return-pressure edge",
+      "rows": 38,
+      "avgEntryCents": 30.9,
+      "winRate": 0.368,
+      "hit2x": 0.579,
+      "roi2xCents": 2.6,
+      "hit25x": 0.474,
+      "roi25xCents": 3.3,
+      "hit3x": 0.447,
+      "roi3xCents": 3.3
+    },
+    {
+      "lane": "weak favorite errors",
+      "rows": 15,
+      "avgEntryCents": 27.7,
+      "winRate": 0.4,
+      "hit2x": 0.6,
+      "roi2xCents": -2.2,
+      "hit25x": 0.533,
+      "roi25xCents": 1.7,
+      "hit3x": 0.467,
+      "roi3xCents": 2.4
     },
     {
       "lane": "prior RG flow",
-      "rows": 68,
-      "avgEntryCents": 26.0,
+      "rows": 81,
+      "avgEntryCents": 27.0,
       "winRate": 0.309,
-      "hit2x": 0.588,
-      "roi2xCents": 1.5,
-      "hit25x": 0.485,
-      "roi25xCents": 2.2,
-      "hit3x": 0.441,
-      "roi3xCents": 2.7
-    },
-    {
-      "lane": "entry <=15c + weak favorite errors",
-      "rows": 4,
-      "avgEntryCents": 11.5,
-      "winRate": 0.0,
-      "hit2x": 0.75,
-      "roi2xCents": 3.5,
-      "hit25x": 0.5,
-      "roi25xCents": 2.1,
-      "hit3x": 0.25,
-      "roi3xCents": -3.2
+      "hit2x": 0.593,
+      "roi2xCents": 1.7,
+      "hit25x": 0.469,
+      "roi25xCents": 0.6,
+      "hit3x": 0.432,
+      "roi3xCents": 1.3
     },
     {
       "lane": "entry <=15c",
-      "rows": 30,
+      "rows": 32,
       "avgEntryCents": 9.3,
-      "winRate": 0.167,
-      "hit2x": 0.6,
-      "roi2xCents": 0.9,
-      "hit25x": 0.467,
-      "roi25xCents": 0.2,
-      "hit3x": 0.4,
-      "roi3xCents": 0.2
+      "winRate": 0.188,
+      "hit2x": 0.594,
+      "roi2xCents": 0.8,
+      "hit25x": 0.469,
+      "roi25xCents": 0.3,
+      "hit3x": 0.406,
+      "roi3xCents": 0.5
     },
     {
       "lane": "entry <=15c + favorite break leak",
-      "rows": 7,
+      "rows": 8,
       "avgEntryCents": 8.9,
       "winRate": 0.0,
-      "hit2x": 0.714,
-      "roi2xCents": 2.4,
-      "hit25x": 0.429,
-      "roi25xCents": 0.1,
-      "hit3x": 0.429,
-      "roi3xCents": 2.3
-    },
-    {
-      "lane": "long-game environment",
-      "rows": 11,
-      "avgEntryCents": 22.1,
-      "winRate": 0.182,
-      "hit2x": 0.636,
-      "roi2xCents": 6.5,
-      "hit25x": 0.364,
-      "roi25xCents": -1.4,
-      "hit3x": 0.182,
-      "roi3xCents": -8.8
+      "hit2x": 0.625,
+      "roi2xCents": 0.9,
+      "hit25x": 0.375,
+      "roi25xCents": -1.1,
+      "hit3x": 0.375,
+      "roi3xCents": 0.8
     },
     {
       "lane": "entry <=15c + prior RG flow",
-      "rows": 21,
+      "rows": 23,
       "avgEntryCents": 9.8,
-      "winRate": 0.095,
-      "hit2x": 0.619,
-      "roi2xCents": 0.3,
-      "hit25x": 0.429,
-      "roi25xCents": -1.9,
-      "hit3x": 0.381,
-      "roi3xCents": -1.7
+      "winRate": 0.13,
+      "hit2x": 0.609,
+      "roi2xCents": 0.2,
+      "hit25x": 0.435,
+      "roi25xCents": -1.6,
+      "hit3x": 0.391,
+      "roi3xCents": -1.1
+    },
+    {
+      "lane": "long-game environment",
+      "rows": 12,
+      "avgEntryCents": 22.8,
+      "winRate": 0.167,
+      "hit2x": 0.583,
+      "roi2xCents": 3.3,
+      "hit25x": 0.333,
+      "roi25xCents": -4.0,
+      "hit3x": 0.167,
+      "roi3xCents": -10.8
     }
   ],
   "modelBacktest": {
-    "rows": 73,
-    "trades": 31,
-    "hit25x": 0.516,
-    "roi25xCents": 4.3,
-    "allRowsHit25x": 0.466,
-    "allRowsRoi25xCents": 0.7,
+    "rows": 89,
+    "trades": 35,
+    "hit25x": 0.514,
+    "roi25xCents": 4.6,
+    "allRowsHit25x": 0.449,
+    "allRowsRoi25xCents": -1.2,
     "thresholdBacktest": [
       {
         "threshold": 0.5,
+        "trades": 43,
+        "hit25x": 0.512,
+        "roi25xCents": 3.9
+      },
+      {
+        "threshold": 0.52,
+        "trades": 38,
+        "hit25x": 0.526,
+        "roi25xCents": 4.8
+      },
+      {
+        "threshold": 0.54,
         "trades": 35,
         "hit25x": 0.514,
         "roi25xCents": 4.6
       },
       {
-        "threshold": 0.52,
-        "trades": 33,
-        "hit25x": 0.515,
-        "roi25xCents": 4.3
-      },
-      {
-        "threshold": 0.54,
-        "trades": 31,
-        "hit25x": 0.516,
-        "roi25xCents": 4.3
-      },
-      {
         "threshold": 0.56,
-        "trades": 25,
-        "hit25x": 0.52,
-        "roi25xCents": 4.2
+        "trades": 29,
+        "hit25x": 0.517,
+        "roi25xCents": 4.6
       },
       {
         "threshold": 0.58,
-        "trades": 20,
-        "hit25x": 0.5,
-        "roi25xCents": 3.4
+        "trades": 23,
+        "hit25x": 0.522,
+        "roi25xCents": 5.4
       },
       {
         "threshold": 0.6,
-        "trades": 13,
-        "hit25x": 0.615,
-        "roi25xCents": 12.2
+        "trades": 16,
+        "hit25x": 0.625,
+        "roi25xCents": 13.5
       },
       {
         "threshold": 0.62,
-        "trades": 10,
-        "hit25x": 0.6,
-        "roi25xCents": 10.8
+        "trades": 13,
+        "hit25x": 0.615,
+        "roi25xCents": 12.7
       }
     ]
   },

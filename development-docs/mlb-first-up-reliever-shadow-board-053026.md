@@ -26,22 +26,22 @@ Target slate:
 
 | Team-side games | Exact 1st | Top-2 | Top-3 |
 | --- | --- | --- | --- |
-| 0 | N/A | N/A | N/A |
+| 4 | 0.0% | 50.0% | 50.0% |
 
 ## Top Shadow Clusters
 
 | Team | Opponent | Lead | Alt | Starter hook | Top-2 share |
 | --- | --- | --- | --- | --- | --- |
 | Astros | Brewers | Nate Pearson | AJ Blubaugh | 0.0% | 52.1% |
+| Padres | Nationals | Wandy Peralta | Bradgley Rodriguez | 0.0% | 49.4% |
 | Cubs | Cardinals | Ryan Rolison | Jacob Webb | 0.0% | 39.0% |
 | Pirates | Twins | Mason Montgomery | Gregory Soto | 0.0% | 37.2% |
 | Twins | Pirates | Simeon Woods Richardson | Andrew Morris | 0.0% | 36.9% |
 | Phillies | Dodgers | Jonathan Bowlan | Tanner Banks | 0.0% | 36.7% |
-| Padres | Nationals | Wandy Peralta | Bradgley Rodriguez | 0.0% | 36.6% |
+| White Sox | Tigers | Tyler Davis | Grant Taylor | 0.0% | 35.2% |
 | Athletics | Yankees | Jacob Lopez | Justin Sterner | 0.0% | 34.8% |
 | Mariners | Diamondbacks | Alex Hoppe | José A. Ferrer | 0.0% | 34.4% |
 | Diamondbacks | Mariners | Taylor Clarke | Kevin Ginkel | 0.0% | 34.1% |
-| Brewers | Astros | Shane Drohan | Carlos Rodriguez | 0.0% | 34.0% |
 
 ## Top Shadow Features
 

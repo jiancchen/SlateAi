@@ -26,6 +26,8 @@ REQUIRED_TABLES = [
     "tennis_rankings",
     "tennis_match_results",
     "tennis_model_training_rows",
+    "tennis_weather_hourly",
+    "tennis_match_weather",
 ]
 
 
@@ -233,6 +235,42 @@ def check_kalshi(conn: sqlite3.Connection, date: str, match_count: int, settled:
     }
 
 
+def check_weather(conn: sqlite3.Connection, date: str, match_count: int, settled: bool) -> dict[str, Any]:
+    if not table_exists(conn, "tennis_weather_hourly") or not table_exists(conn, "tennis_match_weather"):
+        return {
+            "ok": False,
+            "hourlyRows": 0,
+            "matchWeatherRows": 0,
+            "mode": "settled" if settled else "pregame",
+            "error": "weather warehouse tables are missing",
+        }
+    hourly_rows = scalar(conn, "select count(*) from tennis_weather_hourly where weather_date = ?", (date,))
+    match_weather_rows = scalar(conn, "select count(*) from tennis_match_weather where slate_date = ?", (date,))
+    complete_rows = scalar(
+        conn,
+        """
+        select count(*)
+        from tennis_match_weather
+        where slate_date = ?
+          and hourly_rows > 0
+          and avg_temperature_c is not null
+          and start_ts is not null
+          and end_ts is not null
+        """,
+        (date,),
+    )
+    ok = hourly_rows > 0 and match_count > 0 and match_weather_rows >= match_count and complete_rows >= match_count
+    return {
+        "ok": ok,
+        "hourlyRows": hourly_rows,
+        "matchWeatherRows": match_weather_rows,
+        "completeRows": complete_rows,
+        "matchCount": match_count,
+        "mode": "settled" if settled else "pregame",
+        "error": None if ok else "weather coverage is incomplete for this slate",
+    }
+
+
 def check_results_and_training(conn: sqlite3.Connection, date: str, match_count: int, settled: bool) -> dict[str, Any]:
     result_rows = scalar(conn, "select count(*) from tennis_match_results where slate_date = ?", (date,))
     completed_results = scalar(conn, "select count(*) from tennis_match_results where slate_date = ? and completed = 1", (date,))
@@ -308,6 +346,7 @@ def run_health(date: str, db_path: Path = DEFAULT_DB, settled: bool | None = Non
         checks["rankings"] = check_rankings(conn, date)
         checks["sofascore"] = check_sofascore(conn, date, match_count, is_settled)
         checks["kalshi"] = check_kalshi(conn, date, match_count, is_settled)
+        checks["weather"] = check_weather(conn, date, match_count, is_settled)
         checks["resultsTraining"] = check_results_and_training(conn, date, match_count, is_settled)
     checks["published"] = check_published(date)
     checks["ok"] = all(check.get("ok") for key, check in checks.items() if isinstance(check, dict) and key not in {"date"})
@@ -331,7 +370,7 @@ def main() -> int:
     else:
         status = "PASS" if report["ok"] else "FAIL"
         print(f"Tennis pipeline health {status} for {args.date} ({report['mode']})")
-        for name in ("sourceFiles", "rankings", "recentMap", "warehouse", "sofascore", "kalshi", "resultsTraining", "published"):
+        for name in ("sourceFiles", "rankings", "recentMap", "warehouse", "sofascore", "kalshi", "weather", "resultsTraining", "published"):
             check = report[name]
             marker = "ok" if check["ok"] else "bad"
             print(f"- {name}: {marker}")

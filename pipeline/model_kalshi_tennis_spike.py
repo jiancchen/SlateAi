@@ -20,6 +20,28 @@ DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
 REPORTS_DIR = ROOT / "data-private" / "reports"
 WEB_JSON = ROOT / "web" / "src" / "lib" / "kalshi-tennis-spike-model.generated.json"
 
+WEATHER_FEATURES = [
+    "weather_duration_minutes",
+    "weather_avg_temperature_c",
+    "weather_max_temperature_c",
+    "weather_min_temperature_c",
+    "weather_avg_apparent_temperature_c",
+    "weather_max_apparent_temperature_c",
+    "weather_avg_humidity_pct",
+    "weather_total_precipitation_mm",
+    "weather_total_rain_mm",
+    "weather_avg_cloud_cover_pct",
+    "weather_avg_wind_speed_kmh",
+    "weather_max_wind_gust_kmh",
+    "weather_avg_surface_pressure_hpa",
+    "weather_avg_shortwave_radiation_wm2",
+    "weather_max_shortwave_radiation_wm2",
+    "weather_hot_match",
+    "weather_humid_match",
+    "weather_windy_match",
+    "weather_rain_affected",
+]
+
 
 def normalize(value: Any) -> str:
     value = "" if value is None else str(value)
@@ -179,6 +201,7 @@ def feature_columns(rows: pd.DataFrame) -> list[str]:
         if column.startswith("edge_")
         or column.startswith("sel_")
         or column.startswith("opp_")
+        or column.startswith("weather_")
         or column in {
             "entry_cents",
             "favorite_entry_cents",
@@ -200,6 +223,41 @@ def feature_columns(rows: pd.DataFrame) -> list[str]:
         column for column in candidates
         if column in rows and pd.to_numeric(rows[column], errors="coerce").notna().any()
     ]
+
+
+def load_current_weather(match_ids: list[str]) -> dict[str, dict[str, Any]]:
+    match_ids = [match_id for match_id in match_ids if match_id]
+    if not match_ids:
+        return {}
+    placeholders = ",".join("?" for _ in match_ids)
+    query = f"""
+        select match_id,
+               duration_minutes as weather_duration_minutes,
+               avg_temperature_c as weather_avg_temperature_c,
+               max_temperature_c as weather_max_temperature_c,
+               min_temperature_c as weather_min_temperature_c,
+               avg_apparent_temperature_c as weather_avg_apparent_temperature_c,
+               max_apparent_temperature_c as weather_max_apparent_temperature_c,
+               avg_humidity_pct as weather_avg_humidity_pct,
+               total_precipitation_mm as weather_total_precipitation_mm,
+               total_rain_mm as weather_total_rain_mm,
+               avg_cloud_cover_pct as weather_avg_cloud_cover_pct,
+               avg_wind_speed_kmh as weather_avg_wind_speed_kmh,
+               max_wind_gust_kmh as weather_max_wind_gust_kmh,
+               avg_surface_pressure_hpa as weather_avg_surface_pressure_hpa,
+               avg_shortwave_radiation_wm2 as weather_avg_shortwave_radiation_wm2,
+               max_shortwave_radiation_wm2 as weather_max_shortwave_radiation_wm2,
+               hot_match as weather_hot_match,
+               humid_match as weather_humid_match,
+               windy_match as weather_windy_match,
+               rain_affected as weather_rain_affected
+        from tennis_match_weather
+        where match_id in ({placeholders})
+    """
+    with sqlite3.connect(DB_PATH) as conn:
+        conn.row_factory = sqlite3.Row
+        rows = conn.execute(query, match_ids).fetchall()
+    return {row["match_id"]: dict(row) for row in rows}
 
 
 def model_specs() -> list[tuple[str, Pipeline]]:
@@ -284,6 +342,7 @@ def score_current_candidates(rows: pd.DataFrame, features: list[str], target_dat
     current = [row for row in candidates if str(row.get("occurrenceDatetime") or "").startswith(target_date)]
     if not current:
         return []
+    current_weather = load_current_weather([row.get("boardMatchId") for row in current])
     train = rows[rows["slate_date"] < target_date]
     if len(train) < 25 or train["hit_2.5x"].nunique() < 2:
         return current
@@ -340,6 +399,7 @@ def score_current_candidates(rows: pd.DataFrame, features: list[str], target_dat
             "sel_rg_flow_long_game_rate": flow.get("selectedRgLongGameRate"),
             "opp_rg_flow_long_game_rate": flow.get("opponentRgLongGameRate"),
         }
+        record.update({feature: current_weather.get(candidate.get("boardMatchId"), {}).get(feature) for feature in WEATHER_FEATURES})
         records.append(record)
     matrix = pd.DataFrame(records)
     for feature in model_features:
@@ -349,9 +409,13 @@ def score_current_candidates(rows: pd.DataFrame, features: list[str], target_dat
     out = []
     for candidate, probability in zip(current, probabilities):
         entry = float(candidate.get("yesAsk") or 0)
-        target = min(entry * 2.5, 0.95)
+        projected_target = candidate.get("projectedExit")
+        projected_target_value = float(projected_target) if projected_target is not None else None
+        target = projected_target_value if projected_target_value is not None and projected_target_value > entry else min(entry * 2.5, 0.95)
         existing_vetoes = candidate.get("stabilizationVetoes") or []
-        vetoes = existing_vetoes or stabilization_vetoes(entry, candidate.get("playerFlow") or {}, candidate.get("kalshiPriceHistory") or {})
+        vetoes = list(existing_vetoes or stabilization_vetoes(entry, candidate.get("playerFlow") or {}, candidate.get("kalshiPriceHistory") or {}))
+        if entry > 0.25 or (projected_target_value is not None and projected_target_value <= entry):
+            vetoes.append("trade-structure veto: no realistic pre-match scalp target above entry")
         if vetoes:
             target = min(entry * 2.0, target)
             probability = max(0.05, float(probability) - 0.18)
@@ -379,6 +443,8 @@ def main() -> None:
     args = parser.parse_args()
     rows = load_feature_frame()
     features = feature_columns(rows)
+    weather_features = [feature for feature in features if feature.startswith("weather_")]
+    weather_rows = int(rows[weather_features].notna().any(axis=1).sum()) if weather_features else 0
     scored, model_summary = backtest_model(rows, features)
     lanes = lane_summaries(rows)
     current = score_current_candidates(rows, features, args.target_date)
@@ -389,8 +455,9 @@ def main() -> None:
             "historicalRows": int(len(rows)),
             "dates": sorted(rows["slate_date"].dropna().unique().tolist()),
             "featureCount": len(features),
-            "weatherRows": 0,
-            "weatherNote": "Paris weather has not been warehoused yet; hot/slow-clay context is not in the model.",
+            "weatherRows": weather_rows,
+            "weatherFeatureCount": len(weather_features),
+            "weatherNote": "Paris hourly weather is joined by board match and included when available.",
         },
         "laneBacktest": lanes,
         "modelBacktest": model_summary,

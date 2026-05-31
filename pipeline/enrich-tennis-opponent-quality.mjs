@@ -174,7 +174,9 @@ const RANKING_NAME_ALIASES = {
   'leylah annie fernandez': 'leylah fernandez',
   'pablo carreno busta': 'pablo carreno-busta',
   'pedro martinez portero': 'pedro martinez',
-  'tyra caterina grant': 'tyra grant'
+  'tyra caterina grant': 'tyra grant',
+  'xiyu wang': 'wang xiyu',
+  'xinyu wang': 'wang xinyu'
 }
 
 const getRanking = (rankings, name) => {

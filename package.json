@@ -117,6 +117,7 @@
     "data:fetch:tennis-flashscore-recent": "node pipeline/fetch-flashscore-tennis-recent-stats.mjs",
     "data:fetch:tennis-sofascore-match": "node pipeline/fetch-sofascore-tennis-match.mjs",
     "data:fetch:tennis-sofascore-slate": "node pipeline/fetch-sofascore-tennis-slate.mjs",
+    "data:fetch:tennis-weather": "python3 pipeline/fetch_tennis_weather.py",
     "data:import:tennis-results": "python3 pipeline/tennis_warehouse.py import-results",
     "data:grade:tennis": "python3 pipeline/tennis_warehouse.py grade",
     "data:import:tennis-flashscore": "python3 pipeline/tennis_warehouse.py import-flashscore",

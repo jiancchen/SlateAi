@@ -587,6 +587,62 @@ def init_db(conn: sqlite3.Connection) -> None:
           updated_at text not null default current_timestamp
         );
 
+        create table if not exists tennis_weather_hourly (
+          venue_key text not null,
+          source_name text not null,
+          weather_date text not null,
+          time_local text not null,
+          time_utc text not null,
+          utc_offset_seconds integer,
+          latitude real,
+          longitude real,
+          temperature_2m_c real,
+          apparent_temperature_c real,
+          relative_humidity_2m_pct real,
+          precipitation_mm real,
+          rain_mm real,
+          cloud_cover_pct real,
+          wind_speed_10m_kmh real,
+          wind_gusts_10m_kmh real,
+          surface_pressure_hpa real,
+          shortwave_radiation_wm2 real,
+          raw_json text not null,
+          updated_at text not null default current_timestamp,
+          primary key (venue_key, source_name, time_utc)
+        );
+
+        create table if not exists tennis_match_weather (
+          match_id text primary key,
+          slate_date text not null,
+          sofascore_event_id text,
+          venue_key text not null,
+          source_name text not null,
+          start_ts integer,
+          end_ts integer,
+          duration_minutes real,
+          hourly_rows integer,
+          avg_temperature_c real,
+          max_temperature_c real,
+          min_temperature_c real,
+          avg_apparent_temperature_c real,
+          max_apparent_temperature_c real,
+          avg_humidity_pct real,
+          total_precipitation_mm real,
+          total_rain_mm real,
+          avg_cloud_cover_pct real,
+          avg_wind_speed_kmh real,
+          max_wind_gust_kmh real,
+          avg_surface_pressure_hpa real,
+          avg_shortwave_radiation_wm2 real,
+          max_shortwave_radiation_wm2 real,
+          hot_match integer,
+          humid_match integer,
+          windy_match integer,
+          rain_affected integer,
+          raw_json text not null,
+          updated_at text not null default current_timestamp
+        );
+
         create index if not exists idx_tennis_matches_slate_date on tennis_matches(slate_date);
         create index if not exists idx_tennis_recent_opponent_rank on tennis_recent_matches(opponent_rank);
         create index if not exists idx_tennis_recent_form_metrics_match on tennis_recent_form_metrics(match_id, normalized_name);
@@ -614,6 +670,10 @@ def init_db(conn: sqlite3.Connection) -> None:
           on tennis_kalshi_market_candles(market_ticker, end_period_ts);
         create index if not exists idx_tennis_kalshi_trade_features_slate
           on tennis_kalshi_intramatch_trade_features(slate_date, entry_ask, max_bid);
+        create index if not exists idx_tennis_weather_hourly_date
+          on tennis_weather_hourly(weather_date, venue_key);
+        create index if not exists idx_tennis_match_weather_date
+          on tennis_match_weather(slate_date, venue_key);
         """
     )
     existing_market_columns = {

@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import json
 import sqlite3
+import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -28,7 +29,8 @@ def as_json(value: str | None) -> Any:
 
 
 def normalize_name(value: str | None) -> str:
-    return " ".join(str(value or "").strip().lower().split())
+    ascii_value = unicodedata.normalize("NFKD", str(value or "")).encode("ascii", "ignore").decode("ascii")
+    return " ".join(ascii_value.strip().lower().split())
 
 
 def stat_rows(conn: sqlite3.Connection, event_id: str, period: str = "ALL") -> list[dict[str, Any]]:
@@ -100,7 +102,8 @@ def player_stat_summary(rows: list[dict[str, Any]]) -> dict[str, dict[str, Any]]
         player = row["player_name"]
         if not player:
             continue
-        bucket = summary.setdefault(player, {"name": player, "side": row["player_side"], "stats": {}})
+        player_key = normalize_name(player)
+        bucket = summary.setdefault(player_key, {"name": player, "side": row["player_side"], "stats": {}})
         mapped = key_map.get(row["stat_key"])
         if not mapped:
             continue
@@ -255,7 +258,9 @@ def expected_stats(conn: sqlite3.Connection, match_id: str) -> dict[str, dict[st
             for match in payload.get("recentMatches") or []
             if match.get("serviceStats")
         ]
-        result[row["player_name"]] = {
+        player_key = normalize_name(row["player_name"])
+        result[player_key] = {
+            "name": row["player_name"],
             "source": service.get("source") or "Recent-match stat average",
             "matches": service.get("matchesWithStats") or len(recent_stats),
             "note": service.get("note") or "Pregame expected stats are averaged from joined recent match stat rows.",
@@ -274,6 +279,45 @@ def expected_stats(conn: sqlite3.Connection, match_id: str) -> dict[str, dict[st
             },
         }
     return result
+
+
+def match_weather(conn: sqlite3.Connection, match_id: str) -> dict[str, Any] | None:
+    row = conn.execute(
+        """
+        select *
+        from tennis_match_weather
+        where match_id = ?
+        """,
+        (match_id,),
+    ).fetchone()
+    if row is None:
+        return None
+    payload = dict(row)
+    raw = as_json(payload.pop("raw_json", None))
+    return {
+        "source": payload.get("source_name"),
+        "venueKey": payload.get("venue_key"),
+        "startTs": payload.get("start_ts"),
+        "endTs": payload.get("end_ts"),
+        "durationMinutes": payload.get("duration_minutes"),
+        "hourlyRows": payload.get("hourly_rows"),
+        "avgTemperatureC": payload.get("avg_temperature_c"),
+        "maxTemperatureC": payload.get("max_temperature_c"),
+        "minTemperatureC": payload.get("min_temperature_c"),
+        "avgApparentTemperatureC": payload.get("avg_apparent_temperature_c"),
+        "maxApparentTemperatureC": payload.get("max_apparent_temperature_c"),
+        "avgHumidityPct": payload.get("avg_humidity_pct"),
+        "totalPrecipitationMm": payload.get("total_precipitation_mm"),
+        "avgCloudCoverPct": payload.get("avg_cloud_cover_pct"),
+        "avgWindSpeedKmh": payload.get("avg_wind_speed_kmh"),
+        "maxWindGustKmh": payload.get("max_wind_gust_kmh"),
+        "avgShortwaveRadiationWm2": payload.get("avg_shortwave_radiation_wm2"),
+        "hotMatch": bool(payload.get("hot_match")),
+        "humidMatch": bool(payload.get("humid_match")),
+        "windyMatch": bool(payload.get("windy_match")),
+        "rainAffected": bool(payload.get("rain_affected")),
+        "hourly": (raw or {}).get("hourly") if isinstance(raw, dict) else None,
+    }
 
 
 def pct_from_fractional(value: Any) -> float | None:
@@ -396,6 +440,7 @@ def export_context(date: str) -> dict[str, Any]:
         )
         form_metrics_by_player = recent_form_metrics(conn, row["board_match_id"])
         h2h_rows = h2h_match_rows(conn, row["board_match_id"])
+        weather = match_weather(conn, row["board_match_id"])
         season_stats = sofascore_signals.get("seasonStats") or {}
         home_season_stats = season_stats.get("home") or {}
         away_season_stats = season_stats.get("away") or {}
@@ -424,7 +469,7 @@ def export_context(date: str) -> dict[str, Any]:
             return None
 
         def merged_expected(player_name: str | None, side: str | None) -> dict[str, Any] | None:
-            recent_expected = player_expected.get(player_name or "") or {}
+            recent_expected = player_expected.get(normalize_name(player_name)) or {}
             season_expected = side_expected.get(side or "") or {}
             recent_stats = {
                 key: value
@@ -446,9 +491,10 @@ def export_context(date: str) -> dict[str, Any]:
                 "stats": stats,
             }
 
-        for player_name, expected in player_expected.items():
+        for player_key, expected in player_expected.items():
+            player_name = expected.get("name") or player_key
             side = side_for_player(player_name)
-            bucket = players.setdefault(player_name, {"name": player_name, "side": side, "stats": {}})
+            bucket = players.setdefault(player_key, {"name": player_name, "side": side, "stats": {}})
             if not bucket.get("side"):
                 bucket["side"] = side
             bucket["expectedStats"] = merged_expected(player_name, bucket.get("side")) or expected
@@ -459,15 +505,16 @@ def export_context(date: str) -> dict[str, Any]:
             if form_metrics:
                 bucket["recentFormMetrics"] = form_metrics
         for side, player_name in (("home", row.get("home_player_name")), ("away", row.get("away_player_name"))):
-            if player_name and player_name not in players:
-                players[player_name] = {
+            player_key = normalize_name(player_name)
+            if player_name and player_key not in players:
+                players[player_key] = {
                     "name": player_name,
                     "side": side,
                     "stats": {},
                     "expectedStats": merged_expected(player_name, side),
                 }
             if player_name and form_metrics_by_player.get(normalize_name(player_name)):
-                players[player_name]["recentFormMetrics"] = form_metrics_by_player.get(normalize_name(player_name))
+                players[player_key]["recentFormMetrics"] = form_metrics_by_player.get(player_key)
         expected_stat_rows = sum(
             len((player.get("expectedStats") or {}).get("stats") or {})
             for player in players.values()
@@ -506,6 +553,7 @@ def export_context(date: str) -> dict[str, Any]:
                 "away": as_json(row["away_score_json"]),
             },
             "sofascoreSignals": sofascore_signals,
+            "weather": weather,
             "allStatRows": rows,
             "coverage": {
                 "hasEvent": True,
@@ -516,6 +564,7 @@ def export_context(date: str) -> dict[str, Any]:
                 "expectedStatRows": expected_stat_rows,
                 "seasonStatRows": season_stat_rows,
                 "liveStatsStatus": live_stats_status,
+                "hasWeather": weather is not None and bool(weather.get("hourlyRows")),
                 "isPregame": len(rows) == 0 and expected_stat_rows > 0,
             },
         }

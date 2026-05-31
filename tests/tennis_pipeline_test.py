@@ -6,6 +6,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
+from pipeline.tennis_pipeline_health import check_weather
 from pipeline.tennis_warehouse import import_flashscore, infer_recent_map_slate_date, init_db
 
 
@@ -60,6 +61,36 @@ class TennisWarehouseImportTest(unittest.TestCase):
             self.assertEqual(row["slate_date"], "2026-05-30")
             self.assertEqual(row["board_match_id"], "rg-test-player-a-player-b-2026-05-30")
             self.assertEqual(row["board_player_name"], "Player A")
+
+    def test_weather_tables_are_required_by_health_gate(self) -> None:
+        conn = sqlite3.connect(":memory:")
+        conn.row_factory = sqlite3.Row
+        init_db(conn)
+        missing = check_weather(conn, "2026-05-30", match_count=1, settled=True)
+        self.assertFalse(missing["ok"])
+        self.assertEqual(missing["hourlyRows"], 0)
+        self.assertEqual(missing["matchWeatherRows"], 0)
+
+        conn.execute(
+            """
+            insert into tennis_weather_hourly(
+              venue_key, source_name, weather_date, time_local, time_utc, raw_json
+            )
+            values ('roland-garros', 'Open-Meteo', '2026-05-30', '2026-05-30T12:00', '2026-05-30T10:00:00Z', '{}')
+            """
+        )
+        conn.execute(
+            """
+            insert into tennis_match_weather(
+              match_id, slate_date, venue_key, source_name, start_ts, end_ts,
+              hourly_rows, avg_temperature_c, raw_json
+            )
+            values ('rg-test-2026-05-30', '2026-05-30', 'roland-garros', 'Open-Meteo',
+                    1780142400, 1780151400, 1, 27.5, '{}')
+            """
+        )
+        present = check_weather(conn, "2026-05-30", match_count=1, settled=True)
+        self.assertTrue(present["ok"])
 
 
 if __name__ == "__main__":

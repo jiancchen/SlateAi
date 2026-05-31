@@ -3,49 +3,49 @@
   "source": "tennis_model_training_rows underdog side rows; actual match win labels",
   "coverage": {
     "underdogRows": 129,
-    "labeledRows": 113,
-    "scoredBacktestRows": 74,
+    "labeledRows": 129,
+    "scoredBacktestRows": 90,
     "featureCount": 122
   },
   "backtest": {
-    "rows": 74,
-    "baseUpsetRate": 0.297,
-    "betEveryUnderdogRoiCents": 0.9,
+    "rows": 90,
+    "baseUpsetRate": 0.3,
+    "betEveryUnderdogRoiCents": 0.0,
     "thresholds": [
       {
         "edgeThreshold": 0.04,
-        "bets": 46,
-        "hitRate": 0.239,
-        "roiCents": -0.5,
-        "avgEntryCents": 22.9
+        "bets": 55,
+        "hitRate": 0.236,
+        "roiCents": -1.9,
+        "avgEntryCents": 23.9
       },
       {
         "edgeThreshold": 0.07,
-        "bets": 39,
-        "hitRate": 0.231,
-        "roiCents": 1.2,
-        "avgEntryCents": 20.4
+        "bets": 48,
+        "hitRate": 0.229,
+        "roiCents": -0.7,
+        "avgEntryCents": 22.1
       },
       {
         "edgeThreshold": 0.1,
-        "bets": 35,
-        "hitRate": 0.2,
-        "roiCents": -1.4,
-        "avgEntryCents": 19.9
+        "bets": 42,
+        "hitRate": 0.214,
+        "roiCents": -1.0,
+        "avgEntryCents": 21.0
       },
       {
         "edgeThreshold": 0.13,
-        "bets": 23,
-        "hitRate": 0.261,
-        "roiCents": 3.3,
-        "avgEntryCents": 21.3
+        "bets": 28,
+        "hitRate": 0.286,
+        "roiCents": 5.3,
+        "avgEntryCents": 21.8
       },
       {
         "edgeThreshold": 0.16,
-        "bets": 15,
-        "hitRate": 0.2,
-        "roiCents": 2.3,
-        "avgEntryCents": 16.4
+        "bets": 18,
+        "hitRate": 0.222,
+        "roiCents": 3.2,
+        "avgEntryCents": 17.6
       }
     ],
     "byDateAtEdge10": [
@@ -75,6 +75,15 @@
         "modelBets": 8,
         "modelHitRate": 0.375,
         "modelRoiCents": 19.7
+      },
+      {
+        "date": "2026-05-30",
+        "rows": 16,
+        "baseUpsetRate": 0.312,
+        "baseRoiCents": -4.1,
+        "modelBets": 7,
+        "modelHitRate": 0.286,
+        "modelRoiCents": 0.7
       }
     ]
   },

@@ -1,0 +1,726 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/rafael-jodar-pablo-carreno-busta#id:16198495",
+  "eventId": "16198495",
+  "slateDate": "2026-05-31",
+  "boardMatchId": "rg-m-rafael-jodar-pablo-carreno-busta-2026-05-31",
+  "boardTitle": "Rafael Jodar vs Pablo Carreno Busta",
+  "capturedAt": "2026-05-30T23:39:18.825Z",
+  "compactEvent": {
+    "id": 16198495,
+    "slug": "rafael-jodar-pablo-carreno-busta",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1780222200,
+    "tournament": {
+      "name": "French Open, Paris, France",
+      "slug": "french-open-paris-france",
+      "category": "ATP",
+      "uniqueTournament": "Roland Garros"
+    },
+    "roundInfo": {
+      "round": 5,
+      "name": "Round of 16",
+      "slug": "round-of-16",
+      "cupRoundType": 8
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 458834,
+      "name": "Rafael Jodar",
+      "shortName": "R. Jódar",
+      "ranking": 29,
+      "currentRanking": 12,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "playerTeamInfo": {
+        "height": 1.91,
+        "weight": 70,
+        "plays": "right-handed",
+        "prizeCurrent": 877571,
+        "prizeTotal": 1173892,
+        "birthCity": {
+          "name": "Madrid",
+          "country": {
+            "alpha2": "ES",
+            "alpha3": "ESP",
+            "name": "Spain",
+            "slug": "spain"
+          },
+          "id": 18283
+        },
+        "id": 15332,
+        "birthplace": "Madrid, Spain",
+        "birthDateTimestamp": 1158451200,
+        "prizeCurrentRaw": {
+          "value": 877571,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 1173892,
+          "currency": "EUR"
+        },
+        "currentRanking": 12
+      }
+    },
+    "awayTeam": {
+      "id": 40800,
+      "name": "Pablo Carreño Busta",
+      "shortName": "P. Carreño Busta",
+      "ranking": 89,
+      "currentRanking": 67,
+      "country": {
+        "alpha2": "ES",
+        "alpha3": "ESP",
+        "name": "Spain",
+        "slug": "spain"
+      },
+      "playerTeamInfo": {
+        "height": 1.88,
+        "weight": 78,
+        "plays": "right-handed",
+        "turnedPro": "2009",
+        "prizeCurrent": 270085,
+        "prizeTotal": 15075020,
+        "birthCity": {
+          "name": "Gijon",
+          "country": {
+            "alpha2": "ES",
+            "alpha3": "ESP",
+            "name": "Spain",
+            "slug": "spain"
+          },
+          "id": 21587
+        },
+        "residenceCity": {
+          "name": "Barcelona",
+          "country": {
+            "alpha2": "ES",
+            "alpha3": "ESP",
+            "name": "Spain",
+            "slug": "spain"
+          },
+          "id": 18512
+        },
+        "id": 20,
+        "birthplace": "Gijon, Spain",
+        "birthDateTimestamp": 679276800,
+        "residence": "Barcelona, Spain",
+        "prizeCurrentRaw": {
+          "value": 270085,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 15075020,
+          "currency": "EUR"
+        },
+        "currentRanking": 67
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "homeTeamSeed": "27",
+          "tournament": {
+            "name": "French Open, Paris, France",
+            "slug": "french-open-paris-france",
+            "category": {
+              "name": "ATP",
+              "slug": "atp",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 7,
+              "country": {},
+              "id": 3,
+              "flag": "atp",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "এটিপি",
+                  "hi": "डब्ल्यूटीए",
+                  "ar": "رابطة محترفي التنس",
+                  "ru": "ATP"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Roland Garros",
+              "slug": "roland-garros",
+              "primaryColorHex": "#c85a19",
+              "secondaryColorHex": "#01503d",
+              "category": {
+                "name": "ATP",
+                "slug": "atp",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 7,
+                "country": {},
+                "id": 3,
+                "flag": "atp",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "এটিপি",
+                    "hi": "डब्ल्यूटीए",
+                    "ar": "رابطة محترفي التنس",
+                    "ru": "ATP"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 35613,
+              "groundType": "Red clay",
+              "tennisPoints": 2000,
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 2480,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "রোল্যান্ড গ্যারোস",
+                  "hi": "रोलैंड गर्रोस",
+                  "ar": "رولان غاروس"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 185245,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1779580800,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "رولان غاروس، باريس، فرنسا"
+              },
+              "shortNameTranslation": {}
+            }
+          },
+          "season": {
+            "name": "French Open Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 85951
+          },
+          "roundInfo": {
+            "round": 5,
+            "name": "Round of 16",
+            "slug": "round-of-16",
+            "cupRoundType": 8
+          },
+          "customId": "aqqsJBId",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Paris",
+              "country": {
+                "alpha2": "FR",
+                "alpha3": "FRA",
+                "name": "France",
+                "slug": "france"
+              },
+              "id": 17983
+            },
+            "hidden": true,
+            "slug": "court-suzanne-lenglen",
+            "name": "Court Suzanne Lenglen",
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "id": 17177,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب سوزان لانغلين",
+                "hi": "कोर्ट सुज़ैन लेंग्लेन",
+                "bn": "কোর্ট সুজান লেংলেন"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court Suzanne Lenglen"
+            }
+          },
+          "homeTeam": {
+            "name": "Rafael Jodar",
+            "slug": "jodar-rafael",
+            "shortName": "R. Jódar",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 18164,
+            "playerTeamInfo": {
+              "height": 1.91,
+              "weight": 70,
+              "plays": "right-handed",
+              "prizeCurrent": 877571,
+              "prizeTotal": 1173892,
+              "birthCity": {
+                "name": "Madrid",
+                "country": {
+                  "alpha2": "ES",
+                  "alpha3": "ESP",
+                  "name": "Spain",
+                  "slug": "spain"
+                },
+                "id": 18283
+              },
+              "id": 15332,
+              "birthplace": "Madrid, Spain",
+              "birthDateTimestamp": 1158451200,
+              "prizeCurrentRaw": {
+                "value": 877571,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 1173892,
+                "currency": "EUR"
+              },
+              "currentRanking": 12
+            },
+            "nameCode": "JOD",
+            "ranking": 29,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "ES",
+              "alpha3": "ESP",
+              "name": "Spain",
+              "slug": "spain"
+            },
+            "id": 458834,
+            "fullName": "Rafael Jodar",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "رافائيل جودار"
+              },
+              "shortNameTranslation": {
+                "ar": "ر. جودار"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Pablo Carreño Busta",
+            "slug": "carreno-busta-pablo",
+            "shortName": "P. Carreño Busta",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 8040,
+            "playerTeamInfo": {
+              "height": 1.88,
+              "weight": 78,
+              "plays": "right-handed",
+              "turnedPro": "2009",
+              "prizeCurrent": 270085,
+              "prizeTotal": 15075020,
+              "birthCity": {
+                "name": "Gijon",
+                "country": {
+                  "alpha2": "ES",
+                  "alpha3": "ESP",
+                  "name": "Spain",
+                  "slug": "spain"
+                },
+                "id": 21587
+              },
+              "residenceCity": {
+                "name": "Barcelona",
+                "country": {
+                  "alpha2": "ES",
+                  "alpha3": "ESP",
+                  "name": "Spain",
+                  "slug": "spain"
+                },
+                "id": 18512
+              },
+              "id": 20,
+              "birthplace": "Gijon, Spain",
+              "birthDateTimestamp": 679276800,
+              "residence": "Barcelona, Spain",
+              "prizeCurrentRaw": {
+                "value": 270085,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 15075020,
+                "currency": "EUR"
+              },
+              "currentRanking": 67
+            },
+            "nameCode": "CAR",
+            "ranking": 89,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "ES",
+              "alpha3": "ESP",
+              "name": "Spain",
+              "slug": "spain"
+            },
+            "id": 40800,
+            "fullName": "Pablo Carreño Busta",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "بابلو كارينو بوستا",
+                "ru": "Каррено-Буста, Пабло"
+              },
+              "shortNameTranslation": {
+                "ar": "ب. بوستا",
+                "bn": "পিঁ. ক্যারিনো বুস্তা,",
+                "hi": "पी. कैरेनो बुस्टा"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16198495,
+          "defaultPeriodCount": 5,
+          "slug": "rafael-jodar-pablo-carreno-busta",
+          "startTimestamp": 1780222200,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "grand-slam"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": null,
+        "managerDuel": null
+      }
+    },
+    "pointByPoint": {
+      "status": 404,
+      "ok": false,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "votes": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "vote": {
+          "vote1": 10064,
+          "vote2": 1645,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": []
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "home": {
+          "fractionalValue": "1/5",
+          "expected": 83,
+          "actual": 94,
+          "id": 22164654
+        },
+        "away": {
+          "fractionalValue": "7/2",
+          "expected": 22,
+          "actual": 20,
+          "id": 22178390
+        }
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "featured": {
+          "default": {
+            "sourceId": 195456340,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195456340,
+            "suspended": false,
+            "id": 313729664,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "11/50",
+                "fractionalValue": "1/5",
+                "sourceId": 1397962231,
+                "name": "1",
+                "change": -1
+              },
+              {
+                "initialFractionalValue": "10/3",
+                "fractionalValue": "7/2",
+                "sourceId": 1397962316,
+                "name": "2",
+                "change": 1
+              }
+            ]
+          },
+          "asian": {
+            "sourceId": 195456340,
+            "structureType": 2,
+            "marketId": 12,
+            "marketName": "Total games won",
+            "choiceGroup": "35.5",
+            "isLive": false,
+            "fid": 195456340,
+            "suspended": false,
+            "id": 313789042,
+            "marketGroup": "Total sets/games",
+            "marketPeriod": "Extra time",
+            "choices": [
+              {
+                "initialFractionalValue": "5/6",
+                "fractionalValue": "5/6",
+                "sourceId": 1398167664,
+                "name": "Over",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "5/6",
+                "fractionalValue": "5/6",
+                "sourceId": 1398167629,
+                "name": "Under",
+                "change": 0
+              }
+            ]
+          },
+          "fullTime": {
+            "sourceId": 195456340,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195456340,
+            "suspended": false,
+            "id": 313729664,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "11/50",
+                "fractionalValue": "1/5",
+                "sourceId": 1397962231,
+                "name": "1",
+                "change": -1
+              },
+              {
+                "initialFractionalValue": "10/3",
+                "fractionalValue": "7/2",
+                "sourceId": 1397962316,
+                "name": "2",
+                "change": 1
+              }
+            ]
+          }
+        },
+        "hasMoreOdds": true
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 473,
+          "tiebreakLosses": 2,
+          "tiebreaksWon": 1,
+          "wins": 3,
+          "aces": 24,
+          "firstServePointsScored": 169,
+          "firstServePointsTotal": 225,
+          "firstServeTotal": 349,
+          "secondServePointsScored": 71,
+          "secondServePointsTotal": 105,
+          "secondServeTotal": 124,
+          "breakPointsScored": 20,
+          "breakPointsTotal": 49,
+          "opponentBreakPointsTotal": 15,
+          "opponentBreakPointsScored": 8,
+          "winnersTotal": 136,
+          "unforcedErrorsTotal": 114,
+          "doubleFaults": 19,
+          "avgDoubleFaults": 6.3333333333333,
+          "firstServePercentage": 64.469914040115,
+          "firstServePointsWonPercentage": 75.111111111111,
+          "secondServePercentage": 84.677419354839,
+          "secondServePointsWonPercentage": 57.258064516129,
+          "avgAces": 8,
+          "breakPointsSavedPercentage": 46.666666666667,
+          "breakPointsSavedConvertedPercentage": 40.816326530612,
+          "tiebreakWinPercentage": 33.333333333333,
+          "id": 93237,
+          "matches": 3,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 294,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 2,
+          "wins": 3,
+          "aces": 23,
+          "firstServePointsScored": 124,
+          "firstServePointsTotal": 164,
+          "firstServeTotal": 229,
+          "secondServePointsScored": 70,
+          "secondServePointsTotal": 62,
+          "secondServeTotal": 65,
+          "breakPointsScored": 9,
+          "breakPointsTotal": 31,
+          "opponentBreakPointsTotal": 12,
+          "opponentBreakPointsScored": 5,
+          "winnersTotal": 97,
+          "unforcedErrorsTotal": 69,
+          "doubleFaults": 3,
+          "avgDoubleFaults": 1,
+          "firstServePercentage": 71.615720524017,
+          "firstServePointsWonPercentage": 75.609756097561,
+          "secondServePercentage": 95.384615384615,
+          "secondServePointsWonPercentage": 107.69230769231,
+          "avgAces": 7.6666666666667,
+          "breakPointsSavedPercentage": 58.333333333333,
+          "breakPointsSavedConvertedPercentage": 29.032258064516,
+          "tiebreakWinPercentage": 100,
+          "id": 93215,
+          "matches": 3,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    }
+  }
+}
