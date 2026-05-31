@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "runId": "mlb-2026-05-31-MLB-W1-MLB-F0-MLB-M0-MLB-RP36-MLB-E0",
-  "sourceHash": "f888475ed561dbc6dd5f15c9063cfe253c41971263bd981caf3b6b17962108f5",
+  "sourceHash": "fbc24b2c55d0436562081662d23963ac76baed8cfb7fb53ddd697b9ad8d5ee36",
   "files": [
     {
       "path": "models/mlb/cartridges/MLB-E0/manifest.json",
@@ -253,25 +253,25 @@
       "role": "cartridge-followup-workflow",
       "path": "models/mlb/cartridges/MLB-M0/workflows/followup.mjs",
       "exists": true,
-      "sha256": "bc0df564628ff7a4bfcff7983bca0e9b340f3b938bf2f7b683478448474b8fdf"
+      "sha256": "b40ac0a5d32c615ace35b635cad052db567c842b4456ed0bb32c05a79eae259f"
     },
     {
       "role": "cartridge-pregame-workflow",
       "path": "models/mlb/cartridges/MLB-M0/workflows/pregame.mjs",
       "exists": true,
-      "sha256": "7a6a164919778483aad53ac06e3ff3e15ed5b5358bbb9b6eccd7607cc212ad87"
+      "sha256": "16306afc4c95ad3a5558e9d9d7f19f56d2e86836d659a203501ecab9ef165ec1"
     },
     {
       "role": "cartridge-refresh-workflow",
       "path": "models/mlb/cartridges/MLB-M0/workflows/refresh-live-board.mjs",
       "exists": true,
-      "sha256": "3a8b105f5f70cb6a92bc5ceacbb047e97c956c7e79d03b68dfd3528533bf8ce3"
+      "sha256": "a6c6f929968d6df13c2265949b1629bd01d6ea962a8b66629f645af87c086f9f"
     },
     {
       "role": "cartridge-refresh-verifier",
       "path": "models/mlb/cartridges/MLB-M0/workflows/verify-refresh.mjs",
       "exists": true,
-      "sha256": "fbc7ce8b74a350a5c956b3d2d001d50392853f1070952cac2e2e5f7907f7416d"
+      "sha256": "cc4fbb626c23e1d2a55bc3e549d8e638372a502e032bf2da028bc305d97140a8"
     },
     {
       "role": "shadow-exporter",
@@ -445,25 +445,25 @@
       "role": "delegated-followup-workflow",
       "path": "pipeline/mlb/workflows/followup.mjs",
       "exists": true,
-      "sha256": "82202e7c7cb36f1d40188efe7583a36ea471498b0498a74178027b59769289f7"
+      "sha256": "a284f1c6e2d49103e65e681a9679e5c2a2be1636ba53e2be9b9d4b2179a2acc1"
     },
     {
       "role": "delegated-pregame-workflow",
       "path": "pipeline/mlb/workflows/pregame.mjs",
       "exists": true,
-      "sha256": "66586ddea0c6492ac95b4e89a963fe58d2c1779ec991eb99fc7ee86a4ba7ecd9"
+      "sha256": "4fef7bbb84d01be7adbafd1b67d31ef916a857d36efc4953f5f496dcc023a5e9"
     },
     {
       "role": "delegated-refresh-workflow",
       "path": "pipeline/mlb/workflows/refresh-live-board.mjs",
       "exists": true,
-      "sha256": "cd6d9edc48c8df762d672e28de5941ae7699f5024e3783a5130b9819db6a5fa8"
+      "sha256": "ef547411f1eda10e6976a491a1a348005e6153547eb088cfd95d45675aaa0258"
     },
     {
       "role": "delegated-refresh-verifier",
       "path": "pipeline/mlb/workflows/verify-refresh.mjs",
       "exists": true,
-      "sha256": "38538a63c057d516d63482a0015a703de3c6648de2e13bf971655efe25572975"
+      "sha256": "f38773144bf716501e8afdd6b5bc79f8c7cbd79a950e52e58cb323c3b5ad52cd"
     },
     {
       "role": "frontend-side-model-compat-shim",

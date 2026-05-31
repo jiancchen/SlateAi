@@ -10,14 +10,14 @@
   "featureVersion": "MLB-F0",
   "mode": "pregame",
   "status": "locked",
-  "lockedAt": "2026-05-31T21:20:22.067Z",
+  "lockedAt": "2026-05-31T21:23:29.614Z",
   "git": {
-    "commit": "2960310d86c0c8cdf5a4d4997dc2684f8b8af064",
+    "commit": "ad719be44fa415e5444629f84dc72208837fe983",
     "dirty": true
   },
-  "sourceHash": "f888475ed561dbc6dd5f15c9063cfe253c41971263bd981caf3b6b17962108f5",
+  "sourceHash": "fbc24b2c55d0436562081662d23963ac76baed8cfb7fb53ddd697b9ad8d5ee36",
   "inputHash": "568d73b877d4ee2040ac6610c4efde07302a707435c19556840236b8897f4979",
-  "outputHash": "c4ab8690682eaeb08f606514d3cbccd508a640663834163b2eb95d1b8f158e22",
+  "outputHash": "78ebb95abdb3506d610ffb040015e293008a6e31a736b4818eeff12b229eabf5",
   "snapshotHash": "f636a6062896d0bb54d2e35e4e884d70c49ddfe05be057d69ea657c2f992c8e7",
   "artifactSummary": {
     "publicSummaryGames": 15,

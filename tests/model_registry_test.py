@@ -102,13 +102,17 @@ class ModelRegistryTest(unittest.TestCase):
         self.assertEqual(result.returncode, 0, msg=result.stdout + result.stderr)
 
     def test_mlb_followup_closes_side_backtest_lane(self) -> None:
-        followup_path = ROOT / "pipeline" / "mlb" / "workflows" / "followup.mjs"
+        followup_path = ROOT / "models" / "mlb" / "cartridges" / "MLB-M0" / "workflows" / "followup.mjs"
         text = followup_path.read_text(encoding="utf-8")
+        pipeline_wrapper_text = (
+            ROOT / "pipeline" / "mlb" / "workflows" / "followup.mjs"
+        ).read_text(encoding="utf-8")
 
         self.assertIn("export-side-predictions.mjs", text)
         self.assertIn("mlb_side_backtest.py", text)
         self.assertIn("runPythonSideBacktest('import'", text)
         self.assertIn("runPythonSideBacktest('grade'", text)
+        self.assertIn("models', 'mlb', 'cartridges', 'MLB-M0', 'workflows'", pipeline_wrapper_text)
 
     def test_m0_quiet_start_gate_is_metadata_gated(self) -> None:
         model_text = (
