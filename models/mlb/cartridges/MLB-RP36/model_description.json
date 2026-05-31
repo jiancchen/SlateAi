@@ -10,7 +10,8 @@
     "Replaces the old experiment label with the canonical MLB-RP36 cartridge name.",
     "Documents the current source chain before moving any relief code.",
     "Tightens the role boundary: MLB-RP36 can downgrade side/total/prop confidence through bridge risk, but cannot graduate a standalone pick from first-up reliever guesses.",
-    "Adds a dated run envelope so relief addendum source, lightweight warehouse inputs, outputs, and exact snapshot reproduction can be verified independently from MLB-M0."
+    "Adds a dated run envelope so relief addendum source, lightweight warehouse inputs, outputs, and exact snapshot reproduction can be verified independently from MLB-M0.",
+    "Indexes locked RP36 runs into shared model-run tables with exact, top-2, and top-3 first-up reliever settlement lanes."
   ],
   "keyMetrics": [
     {
@@ -32,6 +33,11 @@
       "label": "First locked run",
       "value": "May 31",
       "details": "May 31, 2026 is the first reproducible RP36 run envelope; May 30 remains legacy context because the current warehouse no longer regenerates it exactly."
+    },
+    {
+      "label": "Warehouse settlement",
+      "value": "3 lanes",
+      "details": "Exact, top-2, and top-3 first-up reliever lanes are indexed in model_run_lanes plus mlb_rp36_settlements."
     }
   ],
   "notes": [
@@ -41,8 +47,7 @@
     "Use top-2/top-3 cluster confidence as context before exact first-up identity; exact first-up is too noisy at the current audit rate."
   ],
   "knownLimitations": [
-    "Run locks are file-based for now and are not yet written into shared model-run DB tables.",
-    "No settlement table exists for first-up reliever predictions yet.",
+    "Run locks remain the reproducibility artifact; the shared warehouse is the query layer and must be re-indexed whenever a lock is regenerated.",
     "Current artifacts are useful but not standalone betting signals."
   ],
   "files": {

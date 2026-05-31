@@ -57,6 +57,10 @@
     {
       "role": "run-verifier",
       "path": "models/mlb/cartridges/MLB-RP36/verify_run.py"
+    },
+    {
+      "role": "shared-model-run-indexer",
+      "path": "models/shared/model-runs/index_runs.py"
     }
   ],
   "description": "Shell for the reliever shadow artifact. MLB-RP36 should produce relief context and warnings consumed by MLB-M0.",

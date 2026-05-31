@@ -13,7 +13,9 @@
     "Persists daily hitter platoon split snapshots so the prop model can be audited against the exact split context shown pregame.",
     "Extracts model-neutral odds, participant, signal, structured-context, and match-factory contracts into models/shared/sports-core while MLB-M0 keeps only MLB adapters and MLB-specific scoring logic.",
     "Moves MLB-M0 workflows and publish lanes into the cartridge while old pipeline paths remain compatibility launchers.",
-    "Adds a documented pipeline ownership boundary so data plumbing and offline research are not mistaken for missed model code."
+    "Adds a documented pipeline ownership boundary so data plumbing and offline research are not mistaken for missed model code.",
+    "Adds a component registry for sides, first-five, totals, props, HRs, market context, and MLB-RP36 so future work can land in the right model lane without scanning the whole cartridge.",
+    "Indexes MLB-M0 and MLB-RP36 run locks into shared warehouse model-run tables so performance/backtest queries no longer depend only on JSON files."
   ],
   "keyMetrics": [
     {
@@ -55,6 +57,16 @@
       "label": "Performance index",
       "value": "Created",
       "details": "MLB-M0 now links May 30 run, result, side-board, postmortem, and follow-up artifacts from the cartridge."
+    },
+    {
+      "label": "Component registry",
+      "value": "7 lanes",
+      "details": "Sides, first-five, totals, props, home runs, market context, and MLB-RP36 are declared under components/index.json."
+    },
+    {
+      "label": "Run indexing",
+      "value": "Warehouse-backed",
+      "details": "model_runs, model_run_lanes, model_run_artifacts, model_component_runs, and RP36 settlement tables are populated from run locks."
     }
   ],
   "notes": [
@@ -65,12 +77,11 @@
     "Do not promote MLB-RP36 into a standalone parent model; it should feed MLB-M0.",
     "Before a new MLB slate, the prior day must have a results journal plus side prediction/backtest rows so lessons are based on warehouse-settled data.",
     "Quiet-start, traffic-without-conversion, and quiet-first-five risks now suppress full-game side promotion unless another market expression is cleaner.",
-    "`MLB-M0_log.md` is the working log for warehouse/model changes that still need lane-specific proof."
+    "`MLB-M0_log.md` is the working log for warehouse/model changes that still need lane-specific proof.",
+    "Run locks remain the reproducibility artifact, but every locked MLB-M0/MLB-RP36 run should also be indexed into the shared warehouse model-run tables."
   ],
   "knownLimitations": [
-    "MLB-M0 run locks are file-based for now; they are not yet written into a shared model-run DB table.",
-    "MLB-M0 and MLB-RP36 run locks are file-based for now; they are not yet written into shared model-run DB tables.",
-    "Source inventory is still broad because compatibility launchers, web shims, and model-neutral pipeline plumbing are deliberately included until the migration settles."
+    "Compatibility launchers remain under pipeline/mlb, but they are no longer part of the narrowed MLB-M0 source lock inventory."
   ],
   "files": {
     "markdown": "models/mlb/cartridges/MLB-M0/MODEL_NOTES.md",

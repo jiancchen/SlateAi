@@ -221,6 +221,20 @@ export const lockM0Run = async ({ date }) => {
     outputs: finalOutputFiles
   })
 
+  const indexResult = await runCommand('python3', [
+    'models/shared/model-runs/index_runs.py',
+    'index',
+    '--sport',
+    'mlb',
+    '--model-id',
+    active.model || 'MLB-M0',
+    '--date',
+    date
+  ])
+  if (!indexResult.ok) {
+    throw new Error(`Failed to index MLB-M0 run in warehouse: ${indexResult.stderr || indexResult.stdout}`)
+  }
+
   return { run, runDir: path.resolve(rootDir, runDir) }
 }
 

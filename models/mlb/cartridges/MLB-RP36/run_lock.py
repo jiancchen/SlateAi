@@ -6,6 +6,7 @@ import argparse
 import hashlib
 import json
 import subprocess
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -306,6 +307,22 @@ def main() -> int:
         "outputHash": output_hash,
         "outputs": output_files,
     })
+
+    subprocess.run(
+        [
+            sys.executable,
+            str(ROOT / "models" / "shared" / "model-runs" / "index_runs.py"),
+            "index",
+            "--sport",
+            "mlb",
+            "--model-id",
+            MODEL_ID,
+            "--date",
+            date,
+        ],
+        cwd=ROOT,
+        check=True,
+    )
 
     print(json.dumps({
         "runId": run_id,

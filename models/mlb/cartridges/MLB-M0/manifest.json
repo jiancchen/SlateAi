@@ -19,6 +19,12 @@
     "models/mlb/cartridges/MLB-M0/lanes/history-journal.mjs"
   ],
   "components": [
+    "sides",
+    "first-five",
+    "totals",
+    "props",
+    "home-runs",
+    "market-context",
     "MLB-RP36"
   ],
   "goldenSnapshots": [
@@ -56,22 +62,6 @@
       "path": "models/mlb/cartridges/MLB-M0/workflows/verify-refresh.mjs"
     },
     {
-      "role": "compatibility-pregame-workflow",
-      "path": "pipeline/mlb/workflows/pregame.mjs"
-    },
-    {
-      "role": "compatibility-refresh-workflow",
-      "path": "pipeline/mlb/workflows/refresh-live-board.mjs"
-    },
-    {
-      "role": "compatibility-followup-workflow",
-      "path": "pipeline/mlb/workflows/followup.mjs"
-    },
-    {
-      "role": "compatibility-refresh-verifier",
-      "path": "pipeline/mlb/workflows/verify-refresh.mjs"
-    },
-    {
       "role": "snapshot-builder",
       "path": "models/mlb/cartridges/MLB-M0/snapshot.mjs"
     },
@@ -94,6 +84,42 @@
     {
       "role": "followup-index",
       "path": "models/mlb/cartridges/MLB-M0/followups.md"
+    },
+    {
+      "role": "component-registry",
+      "path": "models/mlb/cartridges/MLB-M0/components/index.json"
+    },
+    {
+      "role": "component-sides-doc",
+      "path": "models/mlb/cartridges/MLB-M0/components/sides/README.md"
+    },
+    {
+      "role": "component-first-five-doc",
+      "path": "models/mlb/cartridges/MLB-M0/components/first-five/README.md"
+    },
+    {
+      "role": "component-totals-doc",
+      "path": "models/mlb/cartridges/MLB-M0/components/totals/README.md"
+    },
+    {
+      "role": "component-props-doc",
+      "path": "models/mlb/cartridges/MLB-M0/components/props/README.md"
+    },
+    {
+      "role": "component-home-runs-doc",
+      "path": "models/mlb/cartridges/MLB-M0/components/home-runs/README.md"
+    },
+    {
+      "role": "component-market-context-doc",
+      "path": "models/mlb/cartridges/MLB-M0/components/market-context/README.md"
+    },
+    {
+      "role": "component-relief-addendum-doc",
+      "path": "models/mlb/cartridges/MLB-M0/components/relief-addendum/README.md"
+    },
+    {
+      "role": "shared-model-run-indexer",
+      "path": "models/shared/model-runs/index_runs.py"
     },
     {
       "role": "cartridge-day-generator",
@@ -130,42 +156,6 @@
     {
       "role": "cartridge-history-journal-exporter",
       "path": "models/mlb/cartridges/MLB-M0/lanes/history-journal.mjs"
-    },
-    {
-      "role": "compatibility-publish-day-generator",
-      "path": "pipeline/mlb/publish/generate-day-files.mjs"
-    },
-    {
-      "role": "compatibility-publish-batting-impact-exporter",
-      "path": "pipeline/mlb/publish/export-batting-impact.mjs"
-    },
-    {
-      "role": "compatibility-publish-lineup-exporter",
-      "path": "pipeline/mlb/publish/export-lineup-model.mjs"
-    },
-    {
-      "role": "compatibility-publish-home-run-exporter",
-      "path": "pipeline/mlb/publish/export-home-run-predictions.mjs"
-    },
-    {
-      "role": "compatibility-publish-prop-exporter",
-      "path": "pipeline/mlb/publish/export-prop-predictions.mjs"
-    },
-    {
-      "role": "compatibility-publish-side-exporter",
-      "path": "pipeline/mlb/publish/export-side-predictions.mjs"
-    },
-    {
-      "role": "compatibility-publish-veto-exporter",
-      "path": "pipeline/mlb/publish/export-veto-artifact.mjs"
-    },
-    {
-      "role": "compatibility-publish-training-corpus-exporter",
-      "path": "pipeline/mlb/publish/export-training-corpus.mjs"
-    },
-    {
-      "role": "compatibility-publish-history-journal-exporter",
-      "path": "pipeline/mlb/publish/export-history-journal.mjs"
     },
     {
       "role": "side-model-logic",
@@ -260,10 +250,6 @@
       "path": "models/mlb/cartridges/MLB-M0/lib/mlb-side-controls.js"
     },
     {
-      "role": "frontend-side-model-compat-shim",
-      "path": "web/src/lib/sports-model.js"
-    },
-    {
       "role": "warehouse-code",
       "path": "pipeline/mlb/warehouse/mlb_warehouse.py"
     },
@@ -301,5 +287,6 @@
     "pipeline/mlb/publish/export-veto-artifact.mjs",
     "pipeline/mlb/publish/export-training-corpus.mjs",
     "pipeline/mlb/publish/export-history-journal.mjs"
-  ]
+  ],
+  "componentRegistry": "models/mlb/cartridges/MLB-M0/components/index.json"
 }

@@ -6,7 +6,7 @@ import {
   rankEfficientFavoritePicks,
   rankFlipRiskPicks,
   rankMlbPlayerProps
-} from './lib/sports-model.js'
+} from '../../models/shared/sports-core/app-sports-model.js'
 import type { HistoryEntry, HistoryRecord, HistorySportTab } from './lib/history-types'
 import type {
   StoryArchiveDaySummary,

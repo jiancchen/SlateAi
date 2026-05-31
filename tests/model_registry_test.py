@@ -65,6 +65,45 @@ class ModelRegistryTest(unittest.TestCase):
                         if source_path:
                             self.assertTrue((ROOT / source_path).exists(), f"{model_id} source missing: {source_path}")
 
+    def test_mlb_m0_component_registry_and_source_inventory_are_narrowed(self) -> None:
+        manifest_path = ROOT / "models" / "mlb" / "cartridges" / "MLB-M0" / "manifest.json"
+        manifest = read_json(manifest_path)
+        registry_path = ROOT / manifest.get("componentRegistry", "")
+        self.assertTrue(registry_path.exists(), "MLB-M0 component registry is missing")
+
+        registry = read_json(registry_path)
+        component_ids = {component.get("id") for component in registry.get("components", [])}
+        self.assertTrue(
+            {"sides", "first-five", "totals", "props", "home-runs", "market-context", "relief-addendum"}.issubset(component_ids)
+        )
+
+        for component in registry.get("components", []):
+            with self.subTest(component=component.get("id")):
+                for path_value in component.get("coreFiles", []) + component.get("entrypoints", []):
+                    self.assertTrue((ROOT / path_value).exists(), f"component file missing: {path_value}")
+
+        for source in manifest.get("sourceFiles", []):
+            role = source.get("role", "")
+            path_value = source.get("path", "")
+            with self.subTest(role=role, path=path_value):
+                self.assertFalse(role.startswith("compatibility-"), f"compatibility role in M0 source lock: {role}")
+                self.assertNotIn("frontend-side-model-compat-shim", role)
+                self.assertFalse(path_value.startswith("pipeline/mlb/workflows/"), f"workflow shim in M0 source lock: {path_value}")
+                self.assertFalse(path_value.startswith("pipeline/mlb/publish/"), f"publish shim in M0 source lock: {path_value}")
+
+    def test_active_app_and_future_tennis_import_shared_sports_core_directly(self) -> None:
+        app_text = (ROOT / "web" / "src" / "App.tsx").read_text(encoding="utf-8")
+        slate_text = (ROOT / "web" / "src" / "lib" / "slate.js").read_text(encoding="utf-8")
+        tennis_generator_text = (
+            ROOT / "pipeline" / "tennis" / "publish" / "generate-day-module.mjs"
+        ).read_text(encoding="utf-8")
+
+        self.assertIn("../../models/shared/sports-core/app-sports-model.js", app_text)
+        self.assertNotIn("./lib/sports-model.js", app_text)
+        self.assertIn("../../../models/shared/sports-core/app-sports-model.js", slate_text)
+        self.assertNotIn("from './sports-model.js'", tennis_generator_text)
+        self.assertIn("../../../models/shared/sports-core/app-sports-model.js", tennis_generator_text)
+
     def test_mlb_m0_may30_snapshot_verifies(self) -> None:
         snapshot_path = ROOT / "data-private" / "model-cartridges" / "mlb" / "MLB-M0" / "golden" / "2026-05-30.snapshot.json"
         if not snapshot_path.exists():
@@ -164,6 +203,90 @@ class ModelRegistryTest(unittest.TestCase):
         self.assertIn("buildUfcAnalysisContext", shared_structured)
         self.assertIn("models/shared/sports-core/app-sports-model.js", web_shim)
         self.assertNotIn("MLB-M0/lib/sports-model.js", web_shim)
+
+    def test_shared_model_run_indexer_writes_mlb_and_rp36_rows(self) -> None:
+        db_path = ROOT / "data-private" / "warehouse" / "sports.db"
+        m0_run = ROOT / "data-private" / "model-runs" / "mlb" / "MLB-M0" / "2026-05-31" / "run.json"
+        rp36_run = ROOT / "data-private" / "model-runs" / "mlb" / "MLB-RP36" / "2026-05-31" / "run.json"
+        if not db_path.exists() or not m0_run.exists() or not rp36_run.exists():
+            self.skipTest("May 31 MLB-M0/RP36 locked runs or warehouse are not present")
+
+        for model_id in ("MLB-RP36", "MLB-M0"):
+            result = subprocess.run(
+                [
+                    "python3",
+                    "models/shared/model-runs/index_runs.py",
+                    "index",
+                    "--sport",
+                    "mlb",
+                    "--model-id",
+                    model_id,
+                    "--date",
+                    "2026-05-31",
+                ],
+                cwd=ROOT,
+                text=True,
+                capture_output=True,
+                check=False,
+            )
+            self.assertEqual(result.returncode, 0, msg=result.stdout + result.stderr)
+
+        conn = sqlite3.connect(db_path)
+        try:
+            run_rows = conn.execute(
+                """
+                select model_id, run_id from model_runs
+                where sport = 'mlb'
+                  and slate_date = '2026-05-31'
+                  and model_id in ('MLB-M0', 'MLB-RP36')
+                """
+            ).fetchall()
+            self.assertEqual({row[0] for row in run_rows}, {"MLB-M0", "MLB-RP36"})
+            run_ids = {row[0]: row[1] for row in run_rows}
+
+            m0_lanes = {
+                row[0]
+                for row in conn.execute(
+                    "select lane from model_run_lanes where run_id = ?",
+                    (run_ids["MLB-M0"],),
+                ).fetchall()
+            }
+            self.assertTrue({"Full-game side", "First-five side", "First inning", "HR board", "Player props"}.issubset(m0_lanes))
+
+            rp36_lanes = {
+                row[0]
+                for row in conn.execute(
+                    "select lane from model_run_lanes where run_id = ?",
+                    (run_ids["MLB-RP36"],),
+                ).fetchall()
+            }
+            self.assertTrue(
+                {"RP36 exact first reliever", "RP36 top-2 first reliever", "RP36 top-3 first reliever"}.issubset(rp36_lanes)
+            )
+
+            component_count = conn.execute(
+                """
+                select count(*)
+                from model_component_runs
+                where parent_run_id = ?
+                  and component_model_id = 'MLB-RP36'
+                  and component_role = 'relief-addendum'
+                """,
+                (run_ids["MLB-M0"],),
+            ).fetchone()[0]
+            self.assertEqual(component_count, 1)
+
+            settlement_count = conn.execute(
+                """
+                select count(*)
+                from mlb_rp36_settlements
+                where prediction_date = '2026-05-31'
+                  and model_id = 'MLB-RP36'
+                """
+            ).fetchone()[0]
+            self.assertEqual(settlement_count, 1)
+        finally:
+            conn.close()
 
     def test_mlb_publish_compatibility_launchers_point_to_m0_lanes(self) -> None:
         for publish_path in sorted((ROOT / "pipeline" / "mlb" / "publish").glob("*.mjs")):

@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "runId": "mlb-2026-05-31-MLB-RP36",
-  "sourceHash": "c056007a7073cbdb40f278166b3f13728fc49f23f263c506b468f8f41d5f1add",
+  "sourceHash": "7d041b933f45365d5195e21f9207b74afc85bb45eaa4104faa6b61483db9964b",
   "files": [
     {
       "role": "rp36-model-notes",
       "path": "models/mlb/cartridges/MLB-RP36/MODEL_NOTES.md",
       "exists": true,
-      "sha256": "1ee2d5298b338a05ffc17ae90597e403c351e3e6f1a7ffaa31b7e17c1f282a0d"
+      "sha256": "8b476b1b521cd2eaa85f829f2840da26eec489e3dc86858d36a8cb2af70397a0"
     },
     {
       "role": "shadow-exporter",
@@ -19,13 +19,13 @@
       "role": "rp36-manifest",
       "path": "models/mlb/cartridges/MLB-RP36/manifest.json",
       "exists": true,
-      "sha256": "ef330cb68d2b5111aba6a472c465af85ae97cd2b08a450a0e84f5835b2ada6f1"
+      "sha256": "4478404fc1c9dfb431751285ff215288429567218c01e6cd1d71684339e24373"
     },
     {
       "role": "rp36-model-description",
       "path": "models/mlb/cartridges/MLB-RP36/model_description.json",
       "exists": true,
-      "sha256": "7126eb951d545767cc88b22e6856069806285c6ea7c779f82ab6c37a397f263a"
+      "sha256": "83a82adc3104177dd65fbdd956579964b79cea6d0ff1e7dcbd0675ab744b645a"
     },
     {
       "role": "rp36-output-contract",
@@ -37,7 +37,7 @@
       "role": "run-locker",
       "path": "models/mlb/cartridges/MLB-RP36/run_lock.py",
       "exists": true,
-      "sha256": "73452c16afb6158f0b40a1f8a23acb082131a345c8dd71bf9f2ceece661aebe1"
+      "sha256": "b0f9c12b1f62ca8c1fd56d6ecb4cfe6d71dfaa60d905ebdc95e0c3d5dddf7a50"
     },
     {
       "role": "shadow-runner",
@@ -68,6 +68,12 @@
       "path": "models/registry.json",
       "exists": true,
       "sha256": "222a2007b3f7f6a8fe11f40d1d48f16ff09a722bcd5afe7beff5eb1632224c68"
+    },
+    {
+      "role": "shared-model-run-indexer",
+      "path": "models/shared/model-runs/index_runs.py",
+      "exists": true,
+      "sha256": "40aa8a23608d18aa83984b895c280962f73871d86c81e62405dbd7e55997278e"
     },
     {
       "role": "usage-audit",

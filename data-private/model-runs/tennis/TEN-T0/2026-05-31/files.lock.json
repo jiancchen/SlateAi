@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "runId": "tennis-2026-05-31-TEN-W1-TEN-F0-TEN-T0-TEN-E0",
-  "sourceHash": "3a097a760285b6502a789444858bb2ae80d8de8396dc3b6ee2e2b63b72c8e552",
+  "sourceHash": "5c200a1c2d55af9d8fecdd74fe6ca0ff060f068650174c5aedd57a2ab0cf9b1d",
   "files": [
     {
       "path": "api/src/scripts/export-published-data.ts",
       "role": "public-exporter",
       "exists": true,
-      "sha256": "549c34c41d3c12816f5be5064398985fc45f2961af24fcd76c1e012e65467489"
+      "sha256": "2f2242126b747923a034ca24568cb8f4f761090c9e5a34f303c13f9c29fe499a"
     },
     {
       "path": "models/tennis/cartridges/TEN-E0/manifest.json",
@@ -37,7 +37,7 @@
       "path": "models/tennis/cartridges/TEN-T0/manifest.json",
       "role": "model-manifest",
       "exists": true,
-      "sha256": "25c760c695f80392c06cb402a8254585d0d582ac5d383997b1d22d83a3d3a248"
+      "sha256": "ab058ec8f2dff298c522d8c7c7373b0f955cf09230ef673a6950c5de6d570680"
     },
     {
       "path": "models/tennis/cartridges/TEN-T0/model_description.json",
@@ -73,7 +73,7 @@
       "path": "package.json",
       "role": "package-scripts",
       "exists": true,
-      "sha256": "dc02d6eba41a58fb7b8c03bb555227f6a9fff874f81bf63d42371b7c3706ce0e"
+      "sha256": "eb9baef8588e63794e169393f1f0f1d4c3462d71cf0af4ae8288f87d88be7a9a"
     },
     {
       "path": "pipeline/lib/model-cartridge-resolver.mjs",
@@ -109,7 +109,7 @@
       "path": "pipeline/tennis/publish/generate-day-module.mjs",
       "role": "model-runner",
       "exists": true,
-      "sha256": "0311b56ad83b1ca47b909e25dcc86df6fa1e6bf4e9a0c9da4908d7d7973f5026"
+      "sha256": "184001121a1bba3828e8870ca0365b35861c6b30acfbd6037ed82bda12e373f4"
     },
     {
       "path": "pipeline/tennis/research/analyze_kalshi_intramatch.py",

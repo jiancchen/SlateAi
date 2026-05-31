@@ -133,8 +133,8 @@ TEN-W1 / TEN-F0 / MLB-M0 + MLB-RP36 / TEN-E0
 
 - The exporter still hardcodes `E36 shadow` and `E33` research rates.
 - The UI label still says `E34 shadow` in `MlbDetail.tsx`, even when the payload is `E36 shadow`.
-- The shadow layer has no formal settlement table yet.
-- The shadow layer has no model-run manifest, source hash, or input hash yet. It does have a May 30 golden snapshot verifier.
+- The shadow layer now has formal exact/top-2/top-3 settlement tables through `models/shared/model-runs/index_runs.py`; May 31 is the first indexed RP36 run.
+- The shadow layer now has a model-run manifest, source hash, input hash, and exact snapshot verifier for May 31. May 30 remains legacy because the current warehouse no longer regenerates it exactly.
 - May 29/May 30 generated modules exist, but no May 31 module was present at audit time.
 - The current docs are experiment-based, not cartridge-based.
 

@@ -163,6 +163,100 @@ CREATE TABLE IF NOT EXISTS source_snapshots (
   meta_json TEXT
 );
 
+CREATE TABLE IF NOT EXISTS model_runs (
+  run_id TEXT PRIMARY KEY,
+  sport TEXT NOT NULL,
+  model_id TEXT NOT NULL,
+  slate_date TEXT NOT NULL,
+  mode TEXT,
+  status TEXT,
+  locked_at TEXT,
+  source_hash TEXT,
+  input_hash TEXT,
+  output_hash TEXT,
+  snapshot_hash TEXT,
+  artifact_hash TEXT,
+  source_files INTEGER,
+  input_count INTEGER,
+  output_count INTEGER,
+  artifact_summary_json TEXT,
+  run_json TEXT NOT NULL,
+  indexed_at TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS model_run_artifacts (
+  run_id TEXT NOT NULL,
+  role TEXT NOT NULL,
+  path TEXT NOT NULL,
+  exists_flag INTEGER NOT NULL,
+  sha256 TEXT,
+  PRIMARY KEY (run_id, role, path)
+);
+
+CREATE TABLE IF NOT EXISTS model_run_lanes (
+  run_id TEXT NOT NULL,
+  lane TEXT NOT NULL,
+  status TEXT NOT NULL,
+  row_count INTEGER NOT NULL DEFAULT 0,
+  graded_count INTEGER NOT NULL DEFAULT 0,
+  hit_count INTEGER NOT NULL DEFAULT 0,
+  miss_count INTEGER NOT NULL DEFAULT 0,
+  hit_pct REAL,
+  avg_pnl_per100 REAL,
+  details_json TEXT,
+  PRIMARY KEY (run_id, lane)
+);
+
+CREATE TABLE IF NOT EXISTS model_component_runs (
+  parent_run_id TEXT NOT NULL,
+  component_model_id TEXT NOT NULL,
+  component_run_id TEXT NOT NULL,
+  component_role TEXT NOT NULL,
+  details_json TEXT,
+  PRIMARY KEY (parent_run_id, component_model_id, component_role)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_rp36_settlements (
+  prediction_date TEXT NOT NULL,
+  model_id TEXT NOT NULL,
+  run_id TEXT NOT NULL,
+  status TEXT NOT NULL,
+  team_count INTEGER NOT NULL DEFAULT 0,
+  candidate_count INTEGER NOT NULL DEFAULT 0,
+  graded_team_count INTEGER NOT NULL DEFAULT 0,
+  exact_hits INTEGER NOT NULL DEFAULT 0,
+  top2_hits INTEGER NOT NULL DEFAULT 0,
+  top3_hits INTEGER NOT NULL DEFAULT 0,
+  exact_hit_pct REAL,
+  top2_hit_pct REAL,
+  top3_hit_pct REAL,
+  details_json TEXT,
+  indexed_at TEXT NOT NULL,
+  PRIMARY KEY (prediction_date, model_id)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_rp36_team_settlements (
+  prediction_date TEXT NOT NULL,
+  model_id TEXT NOT NULL,
+  run_id TEXT NOT NULL,
+  team_name TEXT NOT NULL,
+  official_team_name TEXT,
+  opponent_name TEXT,
+  actual_pitcher_id INTEGER,
+  actual_pitcher_name TEXT,
+  actual_outs_recorded INTEGER,
+  predicted_top1_pitcher_id INTEGER,
+  predicted_top1_pitcher_name TEXT,
+  predicted_top2_pitcher_ids TEXT,
+  predicted_top3_pitcher_ids TEXT,
+  exact_hit INTEGER,
+  top2_hit INTEGER,
+  top3_hit INTEGER,
+  status TEXT NOT NULL,
+  details_json TEXT,
+  PRIMARY KEY (prediction_date, model_id, team_name)
+);
+
 CREATE TABLE IF NOT EXISTS mlb_games (
   game_pk INTEGER PRIMARY KEY,
   game_date TEXT NOT NULL,
@@ -1550,6 +1644,7 @@ CREATE TABLE IF NOT EXISTS mlb_kalshi_market_snapshots (
 );
 
 CREATE INDEX IF NOT EXISTS idx_mlb_games_game_date ON mlb_games(game_date);
+CREATE INDEX IF NOT EXISTS idx_model_runs_sport_model_date ON model_runs(sport, model_id, slate_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_game_outcomes_game_date ON mlb_game_outcomes(game_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_starting_pitchers_game_pk_role ON mlb_starting_pitchers(game_pk, team_role);
 CREATE INDEX IF NOT EXISTS idx_mlb_starting_pitcher_logs_pitcher_date

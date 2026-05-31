@@ -1,4 +1,4 @@
-import { createSportsMatchModel } from './sports-model.js'
+import { createSportsMatchModel } from '../../../models/shared/sports-core/app-sports-model.js'
 
 export const slateMeta = {
   title: 'Saturday Slate',

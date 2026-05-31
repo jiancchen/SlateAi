@@ -25,6 +25,10 @@ Date: 2026-05-31
 - Removed the unused MLB-M0 `legacy-runner.mjs` helper after lane and workflow launchers no longer depended on it.
 - Added `cartridge_migration/mlb_pipeline_ownership_audit.md` to classify remaining MLB pipeline folders as data plumbing, compatibility launchers, or offline research before any further moves.
 - Added an MLB-RP36 run envelope with dated source/input/output locks and exact reliever-shadow snapshot verification. The first reproducible RP36 run is May 31, because the May 30 legacy artifact no longer exactly regenerates from the current warehouse.
+- Added a shared model-run indexer at `models/shared/model-runs/index_runs.py`; MLB-M0 and MLB-RP36 locks now populate `model_runs`, `model_run_artifacts`, `model_run_lanes`, `model_component_runs`, and RP36 settlement tables in `data-private/warehouse/sports.db`.
+- Added `models/mlb/cartridges/MLB-M0/components/index.json` plus lane READMEs for sides, first-five, totals, props, home runs, market context, and the consumed MLB-RP36 addendum.
+- Narrowed the MLB-M0 source inventory away from workflow/publish compatibility launchers and frontend shims while keeping cartridge-owned behavior, shared core files, warehouse contracts, and consumed addendum files explicit.
+- Updated active app imports and future tennis day generation to import `models/shared/sports-core/app-sports-model.js` directly; historical generated day files can keep the compatibility shim.
 - Moved MLB pregame and refresh workflow implementations into `pipeline/mlb/workflows/`.
 - Moved the MLB close/follow-up workflow into `pipeline/mlb/workflows/followup.mjs`, and pointed future generated postmortem/follow-up docs into `development-docs/mlb/postmortems/`.
 - Moved MLB refresh verification into `pipeline/mlb/workflows/verify-refresh.mjs`.
@@ -62,7 +66,7 @@ Date: 2026-05-31
 
 ## Next Safe Steps
 
-1. Decide whether generic/UFC analysis context should stay in MLB-M0 for compatibility or move later into a true shared model core.
-2. Move model-owned feature generation out of pipeline folders only after the May 30/May 31 golden snapshots cover the change.
-3. Add DB indexing for MLB-M0 and MLB-RP36 model-run manifests once file ownership stabilizes.
+1. Move model-owned feature generation out of pipeline folders only after the May 30/May 31 golden snapshots cover the change.
+2. Backtest RP36 exact/top-2/top-3 component lanes across future locked runs before letting relief context drive picks.
+3. Decide whether the old pipeline compatibility launchers become permanent CLI/API surfaces or can be removed after package scripts and docs settle.
 4. Update `cartridge_migration/technical_debt.md` in the same patch whenever a migration step leaves a shim, wrapper, compatibility path, delegated implementation, or broad lock behind.

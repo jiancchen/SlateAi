@@ -2,6 +2,27 @@
 
 This log records model and warehouse changes that matter to MLB-M0. It is intentionally more practical than `MODEL_NOTES.md`: what changed, why it exists, what is trusted, and what still needs proof.
 
+## 2026-05-31 - Component Registry And Run Indexing
+
+Added `components/index.json` so MLB-M0 has explicit homes for sides, first-five, totals, props, home runs, market context, and the consumed MLB-RP36 relief addendum. This is meant to stop future edits from landing in random lane files or compatibility wrappers just because a grep found them first.
+
+Implemented:
+
+- Active app imports and future tennis day generation now point at `models/shared/sports-core/app-sports-model.js` instead of the old frontend shim.
+- MLB-M0 source locks no longer include workflow/publish compatibility launchers or the frontend compatibility shim.
+- `models/shared/model-runs/index_runs.py` writes locked MLB-M0/MLB-RP36 runs into shared warehouse model-run tables.
+- RP36 gets component settlement lanes for exact, top-2, and top-3 first-up reliever hits.
+
+Current trust level:
+
+- Good for model-run traceability and dashboard/backtest querying.
+- Not a scoring improvement by itself.
+- RP36 exact first-up identity remains a component diagnostic, not a direct betting lane.
+
+Gate:
+
+Every new MLB-M0/MLB-RP36 lock should re-index the warehouse rows, and tests should fail if locked runs stop producing DB model-run/lane rows.
+
 ## 2026-05-31 - Hitter Career And Repeatability Baseline
 
 Added low-weight hitter career profiles for current-lineup batters. The goal is not to let old career numbers drive current props; the goal is to keep tiny current-season samples from exploding into fake certainty.

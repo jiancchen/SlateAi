@@ -29,11 +29,11 @@ Use MLB-RP36 as a risk and context layer, not as a standalone prediction engine.
 - `run_lock.py` creates a dated source/input/output lock under `data-private/model-runs/mlb/MLB-RP36/{date}/`.
 - `verify_run.py` checks source files, lightweight warehouse input fingerprints, output artifacts, and the exact reliever-shadow snapshot.
 - The verifier reruns `verify_snapshot.py`, so the generated reliever-shadow JSON must still reproduce the stored artifact exactly.
+- `models/shared/model-runs/index_runs.py` indexes the locked RP36 run into `model_runs`, `model_run_lanes`, `mlb_rp36_settlements`, and `mlb_rp36_team_settlements`.
 - May 31, 2026 is the first RP36 run locked with this envelope. The May 30 artifact is useful as legacy context, but it no longer exactly regenerates from the current warehouse and should not be treated as a reproducible RP36 run.
 
 ## Known Gaps
 
-- No MLB-RP36 settlement table yet.
 - Input locks use lightweight warehouse fingerprints rather than hashing the full multi-GB SQLite DB.
 - Current exact first-up hit rate is not strong enough for standalone bets.
 - The payload still uses `E36 shadow` as a display/model tag.
