@@ -3036,6 +3036,7 @@ function App() {
         rows: rawRows,
         betGradeRows: rawBetGradeRows,
         validatedRows,
+        modelPickRows: attachSummaryRows(summary.modelPickRows || []).slice(0, 8),
         mlRows: attachSummaryRows(summary.mlRows || []).slice(0, 8),
         matchTotalRows: attachSummaryRows(summary.matchTotalRows || []).slice(0, 8),
         firstSetRows: attachSummaryRows(summary.firstSetRows || []).slice(0, 8),
@@ -3111,6 +3112,10 @@ function App() {
       countByGrade,
       betGradeRows,
       validatedRows,
+      modelPickRows: rows
+        .filter((row: AnyRecord) => marketKey(row) === 'ml' && normalizeNameToken(row.selection) === normalizeNameToken(row.game?.analysis?.participant?.name))
+        .sort(sortByBoardRank)
+        .slice(0, 8),
       mlRows: rows.filter((row: AnyRecord) => marketKey(row) === 'ml').sort(sortByBoardRank).slice(0, 8),
       matchTotalRows: rows.filter(isMatchTotalRow).sort(sortByBoardRank).slice(0, 8),
       firstSetRows: rows.filter(isFirstSetRow).sort(sortByBoardRank).slice(0, 8),

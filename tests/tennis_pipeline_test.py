@@ -128,6 +128,40 @@ class TennisWarehouseImportTest(unittest.TestCase):
             ],
         )
 
+    def test_sparse_total_profile_does_not_turn_missing_stats_into_zero_edge(self) -> None:
+        summary_path = (
+            Path(__file__).resolve().parents[1]
+            / "web"
+            / "public"
+            / "data"
+            / "slates"
+            / "2026-05-31"
+            / "summary.json"
+        )
+        if not summary_path.exists():
+            self.skipTest("generated May 31 tennis summary is not present")
+        summary = json.loads(summary_path.read_text(encoding="utf-8"))
+        value_summary = summary.get("tennisValueSummary") or {}
+
+        first_set_rows = value_summary.get("firstSetRows") or []
+        first_set_row = next(
+            (row for row in first_set_rows if row.get("gameTitle") == "Rafael Jodar vs Pablo Carreno Busta"),
+            None,
+        )
+        self.assertIsNotNone(first_set_row)
+        self.assertEqual(first_set_row.get("selection"), "Pass / near line")
+        self.assertEqual(first_set_row.get("modelPct"), 50)
+        self.assertIn("hold avg N/A", first_set_row.get("reason") or "")
+
+        total_rows = value_summary.get("matchTotalRows") or []
+        total_row = next(
+            (row for row in total_rows if row.get("gameTitle") == "Rafael Jodar vs Pablo Carreno Busta"),
+            None,
+        )
+        self.assertIsNotNone(total_row)
+        self.assertEqual(total_row.get("selection"), "No bet")
+        self.assertIsNone(total_row.get("modelPct"))
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -390,6 +390,8 @@ def check_value_books(date: str, settled: bool) -> dict[str, Any]:
     summary_path = PUBLISHED_SLATES_DIR / date / "summary.json"
     if summary_path.exists():
         summary = read_json(summary_path).get("tennisValueSummary") or {}
+        if not summary.get("modelPickRows"):
+            summary_missing.append("summary model-pick ML rows")
         if not summary.get("mlRows"):
             summary_missing.append("summary ML value rows")
         if not summary.get("matchTotalRows"):

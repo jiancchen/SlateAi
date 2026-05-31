@@ -353,7 +353,11 @@ const buildTennisValueSummary = (games: any[] = [], isoDate = '') => {
         line: market.line ?? null,
         americanOdds: market.americanOdds ?? null,
         expectedGames: market.expectedGames ?? null,
-        confidence: Number.isFinite(Number(market.confidence)) ? Number(market.confidence) : game.analysis?.confidence ?? null,
+        confidence: Number.isFinite(Number(market.modelPct))
+          ? Number(market.modelPct)
+          : Number.isFinite(Number(market.confidence))
+            ? Number(market.confidence)
+            : game.analysis?.confidence ?? null,
         modelPct: market.modelPct ?? null,
         impliedPct: market.impliedPct ?? null,
         edgePct: market.edgePct ?? null,
@@ -425,6 +429,13 @@ const buildTennisValueSummary = (games: any[] = [], isoDate = '') => {
   }))
   const validatedRows = rowsWithValidation.filter((row) => row.validatedValue).sort(byEvDesc)
   const mlRows = rowsWithValidation.filter((row) => marketKey(row) === 'ml').sort(byBoardRank)
+  const modelPickRows = rowsWithValidation
+    .filter((row) => {
+      if (marketKey(row) !== 'ml') return false
+      const game = games.find((entry) => entry.id === row.gameId)
+      return normalizeSearchToken(game?.analysis?.participant?.name ?? '') === normalizeSearchToken(row.selection ?? '')
+    })
+    .sort(byBoardRank)
   const matchTotalRows = rowsWithValidation.filter(isMatchTotalRow).sort(byBoardRank)
   const firstSetRows = rowsWithValidation.filter(isFirstSetTotalRow).sort(byBoardRank)
   const spreadRows = rowsWithValidation.filter((row) => marketKey(row) === 'spread').sort(byBoardRank)
@@ -440,6 +451,7 @@ const buildTennisValueSummary = (games: any[] = [], isoDate = '') => {
     rows: rowsWithValidation,
     validatedRows: validatedRows.slice(0, 8),
     betGradeRows: validatedRows.slice(0, 8),
+    modelPickRows: modelPickRows.slice(0, 8),
     mlRows: mlRows.slice(0, 8),
     matchTotalRows: matchTotalRows.slice(0, 8),
     firstSetRows: firstSetRows.slice(0, 8),

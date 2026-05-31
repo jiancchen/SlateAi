@@ -4865,6 +4865,7 @@ const buildMlbDecisionIndicators = ({
 }
 
 const buildFallbackAnalysisModel = (game, participants, hasFullMoneyline) => {
+  const providedAnalysis = game.analysis ?? {}
   const participant = findAnalysisParticipant(game.lean, participants)
   const opponent = participant ? participants.find((entry) => entry.id !== participant.id) : null
   const confidence = Number(game.confidence) || 0
@@ -4908,8 +4909,8 @@ const buildFallbackAnalysisModel = (game, participants, hasFullMoneyline) => {
     confidence,
     volatility,
     recommendationScore,
-    tier: getAnalysisTier(confidence, volatility),
-    sourceLabel: 'Editorial slate read',
+    tier: providedAnalysis.tier || getAnalysisTier(confidence, volatility),
+    sourceLabel: providedAnalysis.sourceLabel || 'Editorial slate read',
     modelEdge: Number.isFinite(tennisModelEdge) ? tennisModelEdge : 0,
     modelEdgeLabel: Number.isFinite(tennisModelEdge)
       ? `${tennisModelEdge >= 0 ? '+' : ''}${tennisModelEdge.toFixed(1)} pts vs market`

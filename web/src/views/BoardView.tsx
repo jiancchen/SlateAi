@@ -85,7 +85,8 @@ export function BoardView(props: BoardViewProps) {
         <div className="tennis-value-section-label">{sectionLabel}</div>
         {visibleRows.map((row: AnyRecord) => {
           const ev = Number(row.evPer100)
-          const confidence = Number(row.confidence ?? row.modelPct)
+          const confidence = Number(row.modelPct ?? row.confidence)
+          const confidenceLabel = Number.isFinite(confidence) ? `${Math.round(confidence)}% conf` : 'conf N/A'
           const expectedGames = Number(row.expectedGames)
           const lineMeta = [
             row.valueGrade || row.grade || row.marketType,
@@ -112,7 +113,7 @@ export function BoardView(props: BoardViewProps) {
                       ? `${Math.round(confidence)}%`
                       : 'Price'}
                 </strong>
-                <small>{Number.isFinite(ev) ? 'EV/100' : 'model'}</small>
+                <small>{Number.isFinite(ev) ? `EV/100 | ${confidenceLabel}` : 'model confidence'}</small>
               </span>
             </button>
           )
@@ -585,7 +586,11 @@ export function BoardView(props: BoardViewProps) {
                             </span>
                             <span>
                               <strong>{formatSignedNumber(row.evPer100, 1)}</strong>
-                              <small>EV/100</small>
+                              <small>
+                                EV/100 | {Number.isFinite(Number(row.modelPct ?? row.confidence))
+                                  ? `${Math.round(Number(row.modelPct ?? row.confidence))}% conf`
+                                  : 'conf N/A'}
+                              </small>
                             </span>
                           </button>
                         ))}
@@ -596,7 +601,15 @@ export function BoardView(props: BoardViewProps) {
                         rows without mapped Kalshi history are pass-only and should not be sized from generic matchup text.
                       </p>
                     )}
-                    {renderTennisValueRows('Moneyline value / watch', tennisValueSummary.mlRows)}
+                    {renderTennisValueRows(
+                      'Moneyline model picks',
+                      tennisValueSummary.modelPickRows ||
+                        tennisValueSummary.mlRows?.filter((row: AnyRecord) => row.selection === row.game?.analysis?.participant?.name)
+                    )}
+                    {renderTennisValueRows(
+                      'Moneyline price watch (not model pick)',
+                      tennisValueSummary.mlRows?.filter((row: AnyRecord) => row.selection !== row.game?.analysis?.participant?.name)
+                    )}
                     {renderTennisValueRows('Match O/U games', tennisValueSummary.matchTotalRows)}
                     {renderTennisValueRows('1st-set O/U games', tennisValueSummary.firstSetRows)}
                     {tennisValueSummary.kalshiTradeCandidates?.length ? (
@@ -620,7 +633,7 @@ export function BoardView(props: BoardViewProps) {
                             <span>
                               <strong>{formatSignedNumber(Number(row.spikeModelEvPctOfEntry25x ?? row.tradeEvPctOfEntry ?? 0) * 100, 0)}%</strong>
                               <small>
-                                {(row.spikeModelTier || row.candidateTier || 'watch')} | {formatPercent(Number(row.spikeModelProbability25x ?? row.targetHitProbability ?? 0) * 100, 0)}
+                                {(row.spikeModelTier || row.candidateTier || 'watch')} | {formatPercent(Number(row.spikeModelProbability25x ?? row.targetHitProbability ?? 0) * 100, 0)} confidence
                               </small>
                             </span>
                           </button>
@@ -647,7 +660,7 @@ export function BoardView(props: BoardViewProps) {
                             </span>
                             <span>
                               <strong>{formatSignedNumber(Number(row.spikeModelEvPctOfEntry25x ?? row.tradeEvPctOfEntry ?? 0) * 100, 0)}%</strong>
-                              <small>{formatPercent(Number(row.spikeModelProbability25x ?? row.targetHitProbability ?? 0) * 100, 0)} target hit</small>
+                              <small>{formatPercent(Number(row.spikeModelProbability25x ?? row.targetHitProbability ?? 0) * 100, 0)} confidence</small>
                             </span>
                           </button>
                         ))}

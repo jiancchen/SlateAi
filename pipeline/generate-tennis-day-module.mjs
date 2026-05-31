@@ -134,6 +134,206 @@ const averageRecentStat = (qualityPlayer, key) => {
   return values.reduce((sum, value) => sum + value, 0) / values.length
 }
 
+const averageValues = (values) => {
+  const numeric = values
+    .filter((value) => value !== null && value !== undefined && value !== '')
+    .map(Number)
+    .filter(Number.isFinite)
+  if (!numeric.length) return null
+  return numeric.reduce((sum, value) => sum + value, 0) / numeric.length
+}
+
+const cleanSetGames = (value) => {
+  const numeric = Number(value)
+  if (!Number.isFinite(numeric)) return null
+  if (numeric >= 0 && numeric <= 7) return numeric
+  const firstDigit = String(Math.trunc(Math.abs(numeric))).match(/[0-7]/)?.[0]
+  return firstDigit ? Number(firstDigit) : null
+}
+
+const setTotalFromToken = (token) => {
+  const left = cleanSetGames(token?.leftGames)
+  const right = cleanSetGames(token?.rightGames)
+  if (!Number.isFinite(left) || !Number.isFinite(right)) return null
+  const total = left + right
+  return total >= 6 && total <= 13 ? total : null
+}
+
+const recentSetShape = (qualityPlayer) => {
+  const firstSetTotals = []
+  const setTotals = []
+  const matchTotals = []
+  let tiebreakSets = 0
+  let completedMatches = 0
+  ;(qualityPlayer?.recentMatches || []).forEach((match) => {
+    const tokens = (match?.parsed?.scoreTokens || []).map(setTotalFromToken).filter(Number.isFinite)
+    if (!tokens.length) return
+    completedMatches += 1
+    firstSetTotals.push(tokens[0])
+    setTotals.push(...tokens)
+    matchTotals.push(tokens.reduce((sum, value) => sum + value, 0))
+    tiebreakSets += Number(match?.parsed?.tiebreakSets || 0)
+  })
+  const avgSetGames = averageValues(setTotals)
+  const avgMatchGames = averageValues(matchTotals)
+  return {
+    completedMatches,
+    setSamples: setTotals.length,
+    firstSetSamples: firstSetTotals.length,
+    avgFirstSetGames: averageValues(firstSetTotals),
+    avgSetGames,
+    avgMatchGames,
+    avgSetsPlayed: completedMatches ? setTotals.length / completedMatches : null,
+    tiebreakRate: setTotals.length ? tiebreakSets / setTotals.length : null,
+    extendedSetRate: setTotals.length ? setTotals.filter((value) => value >= 11).length / setTotals.length : null,
+    shortSetRate: setTotals.length ? setTotals.filter((value) => value <= 8).length / setTotals.length : null
+  }
+}
+
+const flowProfile = (qualityPlayer, weaknessProfile) => ({
+  name: qualityPlayer?.name || weaknessProfile?.name || '',
+  holdPct: weaknessProfile?.serviceHoldPct ?? serviceAverage(qualityPlayer, 'avgServiceHoldPct'),
+  firstServeWonPct: weaknessProfile?.firstServeWonPct ?? serviceAverage(qualityPlayer, 'avgFirstServeWonPct'),
+  secondServeWonPct: weaknessProfile?.secondServeWonPct ?? averageRecentStat(qualityPlayer, 'secondServeWonPct'),
+  servicePointsWonPct: weaknessProfile?.servicePointsWonPct ?? averageRecentStat(qualityPlayer, 'servicePointsWonPct'),
+  returnPointsWonPct: weaknessProfile?.returnPointsWonPct ?? averageRecentStat(qualityPlayer, 'returnPointsWonPct'),
+  returnGamesWonPct: averageRecentStat(qualityPlayer, 'returnGamesWonPct'),
+  aces: weaknessProfile?.avgAces ?? serviceAverage(qualityPlayer, 'avgAces'),
+  doubleFaults: weaknessProfile?.avgDoubleFaults ?? averageRecentStat(qualityPlayer, 'doubleFaults'),
+  winners: weaknessProfile?.avgWinners ?? averageRecentStat(qualityPlayer, 'winners'),
+  unforcedErrors: weaknessProfile?.avgUnforcedErrors ?? averageRecentStat(qualityPlayer, 'unforcedErrors'),
+  weaknessScore: weaknessProfile?.weaknessScore ?? null,
+  weakServeMatches: weaknessProfile?.weakServeMatches ?? 0,
+  statMatches: weaknessProfile?.matchesWithStats ?? Number(qualityPlayer?.serviceData?.matchesWithStats) ?? 0,
+  setShape: recentSetShape(qualityPlayer)
+})
+
+const totalConfidenceFromGap = ({ gap, signalStrength, multiplier, min = 44, max = 74 }) => {
+  if (!Number.isFinite(Number(gap))) return null
+  const absGap = Math.abs(Number(gap))
+  if (absGap < 0.25) return clamp(Math.round(50 + Math.min(2, signalStrength * 0.25)), 48, 53)
+  return clamp(Math.round(50 + absGap * multiplier + signalStrength), min, max)
+}
+
+const formatMaybe = (value, suffix = '', decimals = 0) => {
+  if (value === null || value === undefined || value === '') return 'N/A'
+  const numeric = Number(value)
+  if (!Number.isFinite(numeric)) return 'N/A'
+  return `${numeric.toFixed(decimals).replace(/\.0$/, '')}${suffix}`
+}
+
+const buildTotalsProfile = ({ tour, confidence, volatility, qualityA, qualityB, weaknessA, weaknessB }) => {
+  const profiles = [flowProfile(qualityA, weaknessA), flowProfile(qualityB, weaknessB)]
+  const shapes = profiles.map((profile) => profile.setShape || {})
+  const holdAvg = averageValues(profiles.map((profile) => profile.holdPct))
+  const minHold = Math.min(...profiles.map((profile) => Number(profile.holdPct)).filter(Number.isFinite))
+  const servicePointsAvg = averageValues(profiles.map((profile) => profile.servicePointsWonPct))
+  const firstServeAvg = averageValues(profiles.map((profile) => profile.firstServeWonPct))
+  const secondServeAvg = averageValues(profiles.map((profile) => profile.secondServeWonPct))
+  const returnPointsAvg = averageValues(profiles.map((profile) => profile.returnPointsWonPct))
+  const returnGamesAvg = averageValues(profiles.map((profile) => profile.returnGamesWonPct))
+  const acesAvg = averageValues(profiles.map((profile) => profile.aces))
+  const doubleFaultsAvg = averageValues(profiles.map((profile) => profile.doubleFaults))
+  const errorGapAvg = averageValues(profiles.map((profile) => {
+    const winners = Number(profile.winners)
+    const unforced = Number(profile.unforcedErrors)
+    return Number.isFinite(winners) && Number.isFinite(unforced) ? unforced - winners : null
+  }))
+  const statsCoverage = profiles.reduce((sum, profile) => sum + (Number(profile.statMatches) > 0 ? 1 : 0), 0)
+  const setSamples = shapes.reduce((sum, shape) => sum + Number(shape.setSamples || 0), 0)
+  const firstSetSamples = shapes.reduce((sum, shape) => sum + Number(shape.firstSetSamples || 0), 0)
+  const avgFirstSetGames = averageValues(shapes.map((shape) => shape.avgFirstSetGames))
+  const avgSetGames = averageValues(shapes.map((shape) => shape.avgSetGames))
+  const avgMatchGames = averageValues(shapes.map((shape) => shape.avgMatchGames))
+  const tiebreakRate = averageValues(shapes.map((shape) => shape.tiebreakRate))
+  const extendedSetRate = averageValues(shapes.map((shape) => shape.extendedSetRate))
+  const shortSetRate = averageValues(shapes.map((shape) => shape.shortSetRate))
+  const weakServeMatches = profiles.reduce((sum, profile) => sum + Number(profile.weakServeMatches || 0), 0)
+
+  let expectedFirstSetGames = Number.isFinite(avgFirstSetGames) ? avgFirstSetGames : tour === 'ATP' ? 9.7 : 9.4
+  if (Number.isFinite(holdAvg)) expectedFirstSetGames += (holdAvg - 73) * 0.035
+  if (Number.isFinite(servicePointsAvg)) expectedFirstSetGames += (servicePointsAvg - 58) * 0.026
+  if (Number.isFinite(firstServeAvg)) expectedFirstSetGames += (firstServeAvg - 66) * 0.018
+  if (Number.isFinite(secondServeAvg)) expectedFirstSetGames += (secondServeAvg - 50) * 0.02
+  if (Number.isFinite(returnPointsAvg)) expectedFirstSetGames -= (returnPointsAvg - 41) * 0.035
+  if (Number.isFinite(returnGamesAvg)) expectedFirstSetGames -= (returnGamesAvg - 30) * 0.018
+  if (Number.isFinite(acesAvg)) expectedFirstSetGames += Math.min(0.35, Math.max(0, acesAvg - 5) * 0.055)
+  if (Number.isFinite(doubleFaultsAvg)) expectedFirstSetGames -= Math.max(0, doubleFaultsAvg - 3) * 0.08
+  if (Number.isFinite(errorGapAvg)) expectedFirstSetGames -= Math.max(0, errorGapAvg - 2) * 0.012
+  if (Number.isFinite(tiebreakRate)) expectedFirstSetGames += tiebreakRate * 0.75
+  if (Number.isFinite(extendedSetRate)) expectedFirstSetGames += extendedSetRate * 0.55
+  if (Number.isFinite(shortSetRate)) expectedFirstSetGames -= shortSetRate * 0.35
+  if (Number.isFinite(minHold) && minHold < 66) expectedFirstSetGames -= (66 - minHold) * 0.025
+  if (confidence >= 72) expectedFirstSetGames -= (confidence - 71) * 0.025
+  if (confidence <= 56) expectedFirstSetGames += (56 - confidence) * 0.035
+  if (volatility >= 62) expectedFirstSetGames += tour === 'ATP' ? 0.18 : 0.08
+  expectedFirstSetGames = clamp(Number(expectedFirstSetGames.toFixed(1)), 7.4, 12.8)
+
+  const setGameBase = Number.isFinite(avgSetGames) ? avgSetGames : expectedFirstSetGames
+  let expectedSets =
+    tour === 'ATP'
+      ? confidence >= 76
+        ? 3.15
+        : confidence >= 66
+          ? 3.55
+          : confidence >= 58
+            ? 3.95
+            : 4.15
+      : confidence >= 74
+        ? 2.05
+        : confidence >= 62
+          ? 2.22
+          : 2.38
+  if (volatility >= 62) expectedSets += tour === 'ATP' ? 0.2 : 0.1
+  if (Number.isFinite(holdAvg) && holdAvg >= 78) expectedSets += tour === 'ATP' ? 0.08 : 0.04
+  if (Number.isFinite(returnGamesAvg) && returnGamesAvg >= 38 && confidence >= 70) expectedSets -= 0.08
+  const recentMatchAnchor =
+    Number.isFinite(avgMatchGames) && avgMatchGames > 0
+      ? tour === 'ATP'
+        ? avgMatchGames * 0.22
+        : avgMatchGames * 0.3
+      : null
+  const projectedBySets = expectedSets * setGameBase
+  const expectedMatchGames = Number(
+    clamp(
+      recentMatchAnchor ? projectedBySets * 0.78 + recentMatchAnchor : projectedBySets,
+      tour === 'ATP' ? 27.5 : 16.5,
+      tour === 'ATP' ? 55 : 33
+    ).toFixed(1)
+  )
+  const signalStrength = clamp(
+    Math.round(
+      statsCoverage * 1.5 +
+        Math.min(3, setSamples / 8) +
+        Math.min(2, Math.abs((holdAvg ?? 73) - 73) * 0.08) +
+        Math.min(2, Math.abs((returnGamesAvg ?? 30) - 30) * 0.05) +
+        Math.min(1.5, (tiebreakRate ?? 0) * 4) +
+        Math.min(1.5, (extendedSetRate ?? 0) * 3) +
+        Math.min(1.5, weakServeMatches * 0.12)
+    ),
+    1,
+    10
+  )
+  const reasonCore = `hold avg ${formatMaybe(holdAvg, '%')}, return games won ${formatMaybe(returnGamesAvg, '%')}, first-set sample ${formatMaybe(avgFirstSetGames, 'g', 1)}, ${setSamples} recent sets`
+  return {
+    profiles,
+    expectedFirstSetGames,
+    expectedMatchGames,
+    signalStrength,
+    holdAvg: Number.isFinite(holdAvg) ? Number(holdAvg.toFixed(1)) : null,
+    returnGamesAvg: Number.isFinite(returnGamesAvg) ? Number(returnGamesAvg.toFixed(1)) : null,
+    returnPointsAvg: Number.isFinite(returnPointsAvg) ? Number(returnPointsAvg.toFixed(1)) : null,
+    setSamples,
+    firstSetSamples,
+    avgFirstSetGames: Number.isFinite(avgFirstSetGames) ? Number(avgFirstSetGames.toFixed(1)) : null,
+    avgSetGames: Number.isFinite(avgSetGames) ? Number(avgSetGames.toFixed(1)) : null,
+    tiebreakRate: Number.isFinite(tiebreakRate) ? Number((tiebreakRate * 100).toFixed(1)) : null,
+    extendedSetRate: Number.isFinite(extendedSetRate) ? Number((extendedSetRate * 100).toFixed(1)) : null,
+    shortSetRate: Number.isFinite(shortSetRate) ? Number((shortSetRate * 100).toFixed(1)) : null,
+    reasonCore
+  }
+}
+
 const parseBreakPointsFaced = (value) => {
   const match = String(value || '').match(/^\s*(\d+)\s*\/\s*(\d+)\s*$/)
   return match ? Number(match[2]) : null
@@ -763,12 +963,65 @@ const buildMarketData = ({ fanduel, players, pickName, weaknessEdge, confidence,
   }
 }
 
-const firstSetValueBook = ({ derivativeCase, confidence, volatility, weaknessEdge, marketData }) => {
+const firstSetValueBook = ({ derivativeCase, confidence, volatility, weaknessEdge, marketData, totalsProfile }) => {
   const market = marketData?.firstSetTotal
   const over = marketData?.firstSetTotalOver
   const under = marketData?.firstSetTotalUnder
   const postedLine = Number(market?.line)
   const firstSet = derivativeCase?.firstSet
+  const expectedFromProfile = Number(totalsProfile?.expectedFirstSetGames)
+  if (Number.isFinite(expectedFromProfile) && Number.isFinite(postedLine)) {
+    const lineGap = Number((expectedFromProfile - postedLine).toFixed(1))
+    const selection =
+      lineGap >= 0.25 ? `Over ${postedLine}` : lineGap <= -0.25 ? `Under ${postedLine}` : 'Pass / near line'
+    const selectedOdds = selection.startsWith('Over') ? over?.odds : selection.startsWith('Under') ? under?.odds : null
+    const selectedOddsValue = finiteNumberOrNull(selectedOdds)
+    const modelPct = totalConfidenceFromGap({
+      gap: lineGap,
+      signalStrength: totalsProfile?.signalStrength ?? 2,
+      multiplier: 10,
+      min: 45,
+      max: 73
+    })
+    const earlyBreakRisk = clamp(
+      Math.round(
+        50 +
+          Math.max(0, 72 - Number(totalsProfile?.holdAvg ?? 72)) * 0.6 +
+          Math.max(0, Number(totalsProfile?.returnGamesAvg ?? 30) - 30) * 0.45 +
+          (weaknessEdge?.edgeType === 'Weakness edge' ? 4 : 0) +
+          (volatility >= 62 ? 3 : 0)
+      ),
+      25,
+      78
+    )
+    return {
+      marketType: 'First-set total',
+      selection,
+      line: postedLine,
+      americanOdds: selectedOddsValue,
+      expectedGames: expectedFromProfile,
+      confidence: modelPct,
+      tiebreakRisk: clamp(
+        Math.round(
+          (totalsProfile?.tiebreakRate ?? 0) +
+            Math.max(0, Number(totalsProfile?.holdAvg ?? 73) - 73) * 1.1 +
+            Math.max(0, 32 - Number(totalsProfile?.returnGamesAvg ?? 30)) * 0.8
+        ),
+        18,
+        72
+      ),
+      earlyBreakRisk,
+      modelPct,
+      evPer100: selectedOddsValue !== null ? evPer100(modelPct, selectedOddsValue) : null,
+      netEvPer100: selectedOddsValue !== null ? netEvPer100(modelPct, selectedOddsValue) : null,
+      valueGrade: selection.startsWith('Pass') ? 'Near fair' : Math.abs(lineGap) >= 0.65 ? 'Actionable live watch' : 'Thin value',
+      reason:
+        selection.startsWith('Pass')
+          ? `Expected first-set games ${expectedFromProfile} vs FanDuel ${postedLine}; near the number. ${totalsProfile?.reasonCore || ''}.`
+          : `Expected first-set games ${expectedFromProfile} vs FanDuel ${postedLine}; ${selection}. ${totalsProfile?.reasonCore || ''}.`,
+      betGrade: false
+    }
+  }
   if (firstSet) {
     const leanText = firstSet.lean || 'No bet'
     const selectedOdds = /^over/i.test(leanText) ? over?.odds : /^under/i.test(leanText) ? under?.odds : null
@@ -831,8 +1084,8 @@ const firstSetValueBook = ({ derivativeCase, confidence, volatility, weaknessEdg
   }
 }
 
-const buildValueBoard = ({ marketData, pickName, confidence, volatility, weaknessEdge, setWinProjections, derivativeCase }) => {
-  const firstSetTotal = firstSetValueBook({ derivativeCase, confidence, volatility, weaknessEdge, marketData })
+const buildValueBoard = ({ marketData, pickName, confidence, volatility, weaknessEdge, setWinProjections, derivativeCase, totalsProfile }) => {
+  const firstSetTotal = firstSetValueBook({ derivativeCase, confidence, volatility, weaknessEdge, marketData, totalsProfile })
   if (!marketData) {
     return {
       note: 'No sportsbook price captured; value math is unavailable.',
@@ -887,17 +1140,46 @@ const buildValueBoard = ({ marketData, pickName, confidence, volatility, weaknes
   const spreadEdge = Number.isFinite(Number(spreadModelPct)) ? edgeVsOdds(spreadModelPct, spreadOdds) : null
   const spreadEv = Number.isFinite(Number(spreadModelPct)) ? evPer100(spreadModelPct, spreadOdds) : null
   const spreadNetEv = Number.isFinite(Number(spreadModelPct)) ? netEvPer100(spreadModelPct, spreadOdds) : null
-  const totalSelection =
+  const postedTotalLine = Number(marketData.total?.line)
+  const expectedTotalGames = Number(totalsProfile?.expectedMatchGames)
+  const totalLineGap =
+    Number.isFinite(expectedTotalGames) && Number.isFinite(postedTotalLine)
+      ? Number((expectedTotalGames - postedTotalLine).toFixed(1))
+      : null
+  const profileTotalSelection =
+    Number.isFinite(totalLineGap) && Math.abs(totalLineGap) >= 0.75
+      ? totalLineGap > 0
+        ? 'Over'
+        : 'Under'
+      : null
+  const fallbackTotalSelection =
     marketData.totalLean?.toLowerCase().includes('over') || weaknessEdge?.totalRead?.toLowerCase().includes('breaks')
       ? 'Over'
       : marketData.totalLean?.toLowerCase().includes('under')
         ? 'Under'
         : null
+  const totalSelection = Number.isFinite(totalLineGap) ? profileTotalSelection : fallbackTotalSelection
   const totalLine = totalSelection === 'Over' ? marketData.totalOver : totalSelection === 'Under' ? marketData.totalUnder : null
-  const totalModelPct = totalLine ? clamp(Math.round(confidence - 8 + (volatility >= 62 ? 4 : 0)), 41, 68) : null
+  const totalModelPct = totalLine
+    ? Number.isFinite(totalLineGap)
+      ? totalConfidenceFromGap({
+          gap: totalLineGap,
+          signalStrength: totalsProfile?.signalStrength ?? 2,
+          multiplier: 2.8,
+          min: 43,
+          max: 74
+        })
+      : clamp(Math.round(confidence - 8 + (volatility >= 62 ? 4 : 0)), 41, 68)
+    : null
   const totalEdge = totalLine ? edgeVsOdds(totalModelPct, totalLine.odds) : null
   const totalEv = totalLine ? evPer100(totalModelPct, totalLine.odds) : null
   const totalNetEv = totalLine ? netEvPer100(totalModelPct, totalLine.odds) : null
+  const totalReason =
+    Number.isFinite(totalLineGap) && totalLine
+      ? `Expected match games ${expectedTotalGames} vs FanDuel ${postedTotalLine}; ${totalSelection}. ${totalsProfile?.reasonCore || ''}.`
+      : marketData.total
+        ? `FanDuel total is ${marketData.total.line}; model did not clear a full-match over/under edge from hold, return, and set-shape data. ${totalsProfile?.reasonCore || ''}.`
+        : 'No posted match total captured.'
   return {
     note: 'EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.',
     ml: {
@@ -937,6 +1219,7 @@ const buildValueBoard = ({ marketData, pickName, confidence, volatility, weaknes
           selection: totalSelection,
           line: marketData.total?.line ?? totalLine.line,
           americanOdds: totalLine.odds,
+          expectedGames: Number.isFinite(expectedTotalGames) ? expectedTotalGames : null,
           modelPct: totalModelPct,
           impliedPct: Number.isFinite(americanToImpliedPct(totalLine.odds)) ? Number(americanToImpliedPct(totalLine.odds).toFixed(1)) : null,
           edgePct: totalEdge,
@@ -945,6 +1228,7 @@ const buildValueBoard = ({ marketData, pickName, confidence, volatility, weaknes
           feePer100: FEE_PER_100_RISKED,
           valueIssue: valueIssue({ marketType: 'Total', edgePct: totalEdge, ev: totalEv, netEv: totalNetEv, odds: totalLine.odds, modelPct: totalModelPct }),
           valueGrade: valueGrade({ marketType: 'Total', edgePct: totalEdge, ev: totalEv, odds: totalLine.odds, modelPct: totalModelPct }),
+          reason: totalReason,
           betGrade: false
         }
       : {
@@ -953,8 +1237,9 @@ const buildValueBoard = ({ marketData, pickName, confidence, volatility, weaknes
           line: marketData.total?.line ?? null,
           overOdds: marketData.totalOver?.odds ?? null,
           underOdds: marketData.totalUnder?.odds ?? null,
+          expectedGames: Number.isFinite(expectedTotalGames) ? expectedTotalGames : null,
           valueGrade: 'No direction',
-          reason: marketData.total ? `FanDuel total is ${marketData.total.line}; model did not clear an over/under edge.` : 'No posted match total captured.',
+          reason: totalReason,
           betGrade: false
         },
     firstSetTotal,
@@ -1086,7 +1371,7 @@ const buildBettingMatrix = ({ marketData, valueBoard, setWinProjections, derivat
   return matrix
 }
 
-const buildGame = (match, rankings, quality, date, fanduelIndex, ensembleIndex, derivativeIndex) => {
+const buildGame = (match, rankings, quality, date, fanduelIndex, ensembleValueIndex, ensembleRowsByMatch, derivativeIndex) => {
   const [a, b] = match.players
   const isAtp = /Men/i.test(match.round) || /ATP|Men/i.test(match.raw?.league || '') || !/^[A-Z][a-z]+a\b/.test(a.name)
   const idPrefix = match.raw?.lg?.includes?.('WTA') || /Women/i.test(match.raw?.league || '') ? 'w' : guessTour(a.name, b.name, rankings)
@@ -1098,10 +1383,23 @@ const buildGame = (match, rankings, quality, date, fanduelIndex, ensembleIndex, 
   const qualityB = findQuality(quality, matchId, b.name)
   const scoreA = playerScore(rankA, qualityA, tour === 'ATP')
   const scoreB = playerScore(rankB, qualityB, tour === 'ATP')
-  const pickA = scoreA >= scoreB
+  const basePickA = scoreA >= scoreB
+  const basePickName = basePickA ? a.name : b.name
+  const baseConfidence = pctFromDelta(Math.abs(scoreA - scoreB), tour === 'ATP')
+  const ensembleRows = ensembleRowsByMatch.get(matchId) || []
+  const ensemblePctFor = (name) => {
+    const row = ensembleRows.find((entry) => normalizeName(entry.selection) === normalizeName(name))
+    const pct = Number(row?.modelProbability)
+    return Number.isFinite(pct) ? pct : null
+  }
+  const modelPctA = ensemblePctFor(a.name) ?? (basePickA ? baseConfidence : 100 - baseConfidence)
+  const modelPctB = ensemblePctFor(b.name) ?? (basePickA ? 100 - baseConfidence : baseConfidence)
+  const pickA = modelPctA >= modelPctB
   const pickName = pickA ? a.name : b.name
   const opponentName = pickA ? b.name : a.name
-  const confidence = pctFromDelta(Math.abs(scoreA - scoreB), tour === 'ATP')
+  const confidence = Number((pickA ? modelPctA : modelPctB).toFixed(1))
+  const modelSource = ensembleRows.length ? 'Tennis multimodel ensemble' : 'Tennis warehouse score model'
+  const modelSplit = basePickName !== pickName
   const volatility = Math.max(28, Math.min(78, Math.round((tour === 'WTA' ? 60 : 50) - Math.abs(scoreA - scoreB) * 0.55)))
   const pickQuality = pickA ? qualityA : qualityB
   const oppQuality = pickA ? qualityB : qualityA
@@ -1112,8 +1410,8 @@ const buildGame = (match, rankings, quality, date, fanduelIndex, ensembleIndex, 
   const weaknessEdge = buildWeaknessEdge({ pickName, opponentName, pickQuality, oppQuality, pickWeakness, oppWeakness, confidence, volatility })
   const read = buildRead({ pick: pickName, opponent: opponentName, confidence, volatility, pickQuality, oppQuality, isAtp: tour === 'ATP' })
   const players = [
-    { name: a.name, ranking: rankA, qualityName: qualityA?.name || null, profile: formatProfile(rankA, qualityA), modelPct: pickA ? confidence : 100 - confidence, weakness: weaknessA },
-    { name: b.name, ranking: rankB, qualityName: qualityB?.name || null, profile: formatProfile(rankB, qualityB), modelPct: pickA ? 100 - confidence : confidence, weakness: weaknessB }
+    { name: a.name, ranking: rankA, qualityName: qualityA?.name || null, profile: formatProfile(rankA, qualityA), modelPct: Number(modelPctA.toFixed(1)), weakness: weaknessA },
+    { name: b.name, ranking: rankB, qualityName: qualityB?.name || null, profile: formatProfile(rankB, qualityB), modelPct: Number(modelPctB.toFixed(1)), weakness: weaknessB }
   ]
   const fanduel = findFanDuelLine(fanduelIndex, a.name, b.name)
   const marketData = buildMarketData({ fanduel, players, pickName, weaknessEdge, confidence, totals: read.totals })
@@ -1123,9 +1421,10 @@ const buildGame = (match, rankings, quality, date, fanduelIndex, ensembleIndex, 
   }))
   const derivativeCase = findDerivativeCase(derivativeIndex, matchId, a.name, b.name)
   const setWinProjections = buildSetWinProjections({ players, tour, volatility })
-  const valueBoard = buildValueBoard({ marketData, pickName, confidence, volatility, weaknessEdge, setWinProjections, derivativeCase })
+  const totalsProfile = buildTotalsProfile({ tour, confidence, volatility, qualityA, qualityB, weaknessA, weaknessB })
+  const valueBoard = buildValueBoard({ marketData, pickName, confidence, volatility, weaknessEdge, setWinProjections, derivativeCase, totalsProfile })
   const bettingMatrix = buildBettingMatrix({ marketData, valueBoard, setWinProjections, derivativeCase, pickName, confidence })
-  const ensembleRow = ensembleIndex.get(matchId) || null
+  const ensembleRow = ensembleValueIndex.get(matchId) || null
   const ensembleSelectionIsA = ensembleRow?.selection === a.name
   const ensembleSelectionQuality = ensembleRow ? (ensembleSelectionIsA ? qualityA : qualityB) : null
   const ensembleOpponentQuality = ensembleRow ? (ensembleSelectionIsA ? qualityB : qualityA) : null
@@ -1149,6 +1448,7 @@ const buildGame = (match, rankings, quality, date, fanduelIndex, ensembleIndex, 
     tour === 'ATP' ? 'Men more stable' : 'WTA volatility tax',
     volatility >= 65 ? 'High volatility' : 'Controlled volatility'
   ]
+  if (modelSplit) tags.splice(4, 0, 'Model split - pass ML')
   return {
     id: matchId,
     eventId: match.eventId,
@@ -1159,6 +1459,9 @@ const buildGame = (match, rankings, quality, date, fanduelIndex, ensembleIndex, 
     court: match.court,
     round: match.round,
     pickName,
+    basePickName,
+    modelSource,
+    modelSplit,
     confidence,
     volatility,
     tags,
@@ -1167,6 +1470,7 @@ const buildGame = (match, rankings, quality, date, fanduelIndex, ensembleIndex, 
     weaknessEdge,
     setWinProjections,
     valueBoard,
+    totalsProfile,
     derivativeCase,
     bettingMatrix,
     ensembleValueCase,
@@ -1192,11 +1496,14 @@ const main = async () => {
   const fanduelLines = await readJson(`data-private/reference/tennis/fanduel-lines-${options.date}.json`, { matches: [] })
   const ensemblePredictions = await readJson(`data-private/predictions/tennis/${options.date}-multimodel-ensemble.json`, { rows: [] })
   const derivativeMarkets = await readJson(`data-private/predictions/tennis/${options.date}-derivative-markets.json`, { rows: [] })
-  const ensembleIndex = new Map()
+  const ensembleValueIndex = new Map()
+  const ensembleRowsByMatch = new Map()
   for (const row of ensemblePredictions.rows || []) {
-    const current = ensembleIndex.get(row.matchId)
+    if (!ensembleRowsByMatch.has(row.matchId)) ensembleRowsByMatch.set(row.matchId, [])
+    ensembleRowsByMatch.get(row.matchId).push(row)
+    const current = ensembleValueIndex.get(row.matchId)
     if (!current || Number(row.netEvPer100 ?? -999) > Number(current.netEvPer100 ?? -999)) {
-      ensembleIndex.set(row.matchId, row)
+      ensembleValueIndex.set(row.matchId, row)
     }
   }
   const fanduelIndex = buildFanDuelIndex(fanduelLines)
@@ -1204,7 +1511,7 @@ const main = async () => {
   const games = scoreboard.singles
     .filter((match) => !match.doubles && match.players?.length === 2)
     .filter((match) => !/qualifying/i.test(String(match.round || '')))
-    .map((match) => buildGame(match, rankings, quality, options.date, fanduelIndex, ensembleIndex, derivativeIndex))
+    .map((match) => buildGame(match, rankings, quality, options.date, fanduelIndex, ensembleValueIndex, ensembleRowsByMatch, derivativeIndex))
     .sort((left, right) => left.startMinutes - right.startMinutes || left.title.localeCompare(right.title))
   const dayLabel = titleDate(options.date)
   const compact = options.date.replaceAll('-', '')
@@ -1220,7 +1527,23 @@ const main = async () => {
   )
   moduleText = moduleText.replace(
     "        { label: 'O/U', value: market?.totalValue || 'Need posted total', lean: market?.totalLean || raw.weaknessEdge?.totalRead || raw.totals, confidence: Math.max(50, raw.confidence - 8), ...(raw.valueBoard?.total || {}), tone: raw.totals.includes('over') || raw.weaknessEdge?.totalRead?.includes('breaks') ? 'accent' : 'neutral', reason: raw.totals }\n      ],",
-    "        { label: 'O/U', value: market?.totalValue || 'Need posted total', lean: market?.totalLean || raw.weaknessEdge?.totalRead || raw.totals, confidence: Math.max(50, raw.confidence - 8), ...(raw.valueBoard?.total || {}), tone: raw.totals.includes('over') || raw.weaknessEdge?.totalRead?.includes('breaks') ? 'accent' : 'neutral', reason: raw.totals },\n        { label: '1st set O/U', value: raw.valueBoard?.firstSetTotal?.line ? `Line ${raw.valueBoard.firstSetTotal.line}` : 'Need posted first-set total', lean: raw.valueBoard?.firstSetTotal?.selection || raw.valueBoard?.firstSetTotal?.lean || 'Price required', confidence: raw.valueBoard?.firstSetTotal?.confidence ?? Math.max(50, raw.confidence - 10), ...(raw.valueBoard?.firstSetTotal || {}), tone: raw.valueBoard?.firstSetTotal?.confidence >= 58 ? 'accent' : 'neutral', reason: raw.valueBoard?.firstSetTotal?.reason || 'Use expected first-set games against the posted 1st-set total.' }\n      ],"
+    "        { label: 'O/U', value: market?.totalValue || 'Need posted total', lean: raw.valueBoard?.total?.selection || market?.totalLean || raw.weaknessEdge?.totalRead || raw.totals, confidence: raw.valueBoard?.total?.modelPct ?? Math.max(50, raw.confidence - 8), ...(raw.valueBoard?.total || {}), tone: raw.valueBoard?.total?.selection === 'Over' || raw.valueBoard?.total?.selection === 'Under' ? 'accent' : 'neutral', reason: raw.valueBoard?.total?.reason || raw.totals },\n        { label: '1st set O/U', value: raw.valueBoard?.firstSetTotal?.line ? `Line ${raw.valueBoard.firstSetTotal.line}` : 'Need posted first-set total', lean: raw.valueBoard?.firstSetTotal?.selection || raw.valueBoard?.firstSetTotal?.lean || 'Price required', confidence: raw.valueBoard?.firstSetTotal?.confidence ?? Math.max(50, raw.confidence - 10), ...(raw.valueBoard?.firstSetTotal || {}), tone: raw.valueBoard?.firstSetTotal?.confidence >= 58 ? 'accent' : 'neutral', reason: raw.valueBoard?.firstSetTotal?.reason || 'Use expected first-set games against the posted 1st-set total.' }\n      ],"
+  )
+  moduleText = moduleText.replace(
+    "    summary: `${raw.pickName} is the desk side. ${raw.reason}`,",
+    "    summary: `Our model pick: ${raw.pickName}. ${raw.reason}`,"
+  )
+  moduleText = moduleText.replace(
+    "      raw.totals,\n      'May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.',",
+    "      raw.totals,\n      raw.modelSplit ? `Model split warning: the older score model preferred ${raw.basePickName}, but the multimodel ensemble makes ${raw.pickName} the official pick. Treat ML as pass-first unless the price and live state agree.` : null,\n      'May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.',"
+  )
+  moduleText = moduleText.replace(
+    "sourceLabel: market?.source || 'Tennis warehouse model'",
+    "sourceLabel: raw.modelSource || 'Tennis warehouse model'"
+  )
+  moduleText = moduleText.replace(
+    "tier: raw.tags.includes('High confidence')  ? 'High confidence' : raw.tags.includes('Lean') ? 'Lean' : 'Watch'",
+    "tier: raw.modelSplit ? 'Model split / pass ML' : raw.tags.includes('High confidence')  ? 'High confidence' : raw.tags.includes('Lean') ? 'Lean' : 'Watch'"
   )
 
   await fs.mkdir(path.dirname(path.resolve(ROOT, options.output)), { recursive: true })
