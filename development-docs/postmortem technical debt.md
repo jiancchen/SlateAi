@@ -33,7 +33,7 @@ What to do:
 - `mlb_game_outcomes` and `mlb_game_team_stats` both had May 23 rows, so the grading path should have been able to score them.
 
 What to do:
-- audit [mlb_side_backtest.py](/Users/jcchen/Documents/New%20project/pipeline/mlb_side_backtest.py) line by line on the May 23 dataset
+- audit [mlb_side_backtest.py](/Users/jcchen/Documents/New%20project/pipeline/mlb/warehouse/mlb_side_backtest.py) line by line on the May 23 dataset
 - add logging for skipped rows during grading
 - add a test fixture with a doubleheader day and assert that graded backtests are written
 - fail the script when predictions import but grade count stays `0`
@@ -214,7 +214,7 @@ What to do:
 - The new postmortem generator exists, but it is not part of the automatic daily closeout flow yet.
 
 What to do:
-- add [research_mlb_slate_postmortem.py](/Users/jcchen/Documents/New%20project/pipeline/research_mlb_slate_postmortem.py) to closeout
+- add [research_mlb_slate_postmortem.py](/Users/jcchen/Documents/New%20project/pipeline/mlb/research/research_mlb_slate_postmortem.py) to closeout
 - fail closeout if the postmortem cannot be written
 - include bookkeeping warnings directly in the generated markdown
 

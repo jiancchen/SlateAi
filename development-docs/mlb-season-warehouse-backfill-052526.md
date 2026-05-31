@@ -4,7 +4,7 @@ This pass fixed the biggest structural data-depth problem in the MLB warehouse: 
 
 ## What Changed
 
-- Added a local raw replay command to [pipeline/mlb_warehouse.py](/Users/jcchen/Documents/New%20project/pipeline/mlb_warehouse.py):
+- Added a local raw replay command to [pipeline/mlb/warehouse/mlb_warehouse.py](/Users/jcchen/Documents/New%20project/pipeline/mlb/warehouse/mlb_warehouse.py):
   - `replay-mlb-range-from-raw`
 - Added a package shortcut in [package.json](/Users/jcchen/Documents/New%20project/package.json):
   - `npm run data:replay:mlb-raw-range -- --start-date 2026-03-26 --end-date 2026-05-25`

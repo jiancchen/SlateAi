@@ -100,7 +100,7 @@ New research:
 - [/Users/jcchen/Documents/New project/development-docs/mlb-bounceback-cohort-research-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-bounceback-cohort-research-052926.md)
 - [/Users/jcchen/Documents/New project/development-docs/mlb-phase1-context-research-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-phase1-context-research-052926.md)
 - [/Users/jcchen/Documents/New project/development-docs/mlb-opponent-quality-side-gates-052926.md](/Users/jcchen/Documents/New%20project/development-docs/mlb-opponent-quality-side-gates-052926.md)
-- backed by [/Users/jcchen/Documents/New project/pipeline/research_mlb_bounceback_cohorts.py](/Users/jcchen/Documents/New%20project/pipeline/research_mlb_bounceback_cohorts.py)
+- backed by [/Users/jcchen/Documents/New project/pipeline/mlb/research/research_mlb_bounceback_cohorts.py](/Users/jcchen/Documents/New%20project/pipeline/mlb/research/research_mlb_bounceback_cohorts.py)
 
 Most useful takeaway:
 

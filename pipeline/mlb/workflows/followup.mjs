@@ -33,7 +33,7 @@ const parseArgs = () => {
 }
 
 const runPythonWarehouse = (command, extraArgs = []) => {
-  execFileSync('python3', [path.join(rootDir, 'pipeline', 'mlb_warehouse.py'), command, ...extraArgs], {
+  execFileSync('python3', [path.join(rootDir, 'pipeline', 'mlb', 'warehouse', 'mlb_warehouse.py'), command, ...extraArgs], {
     cwd: rootDir,
     stdio: 'inherit'
   })

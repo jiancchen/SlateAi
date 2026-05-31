@@ -21,6 +21,10 @@ Date: 2026-05-31
 - Moved MLB fetchers/watchers into `pipeline/mlb/fetchers/` with compatibility wrappers at their old top-level pipeline paths.
 - Moved MLB publish/export scripts into `pipeline/mlb/publish/` with compatibility wrappers at their old top-level pipeline paths.
 - Updated MLB refresh/follow-up workflows and package scripts to call the sport-scoped publish paths directly.
+- Moved MLB warehouse/backtest/story-archive CLIs into `pipeline/mlb/warehouse/` with import-capable compatibility wrappers at their old top-level pipeline paths.
+- Updated MLB package scripts, workflows, fetchers, and M0 manifest to call the sport-scoped warehouse paths directly.
+- Moved MLB research and market-training scripts into `pipeline/mlb/research/` with import-capable compatibility wrappers at their old top-level pipeline paths.
+- Updated MLB research package scripts and RP36 manifest source paths to use the sport-scoped research paths directly.
 - Added `tests/model_registry_test.py` to catch missing cartridge manifests and declared files.
 - Added destination folders and READMEs for sport-specific `development-docs/` migration without moving script-written docs yet.
 - Moved tennis runbook/research notes and MLB daily runbook/source checklist into sport-specific `development-docs/` folders and updated direct references.
@@ -30,7 +34,7 @@ Date: 2026-05-31
 - `pipeline/generate-tennis-day-module.mjs` still emits the old T0 manifest path so the existing May 31 golden snapshot remains comparable.
 - `pipeline/verify-tennis-model-snapshot.mjs` still reads the old T0 manifest path for the same golden-snapshot reason.
 - `pipeline/tennis_model_cartridges/` remains in place until the T0 snapshot contract is intentionally cut over.
-- MLB prediction behavior still runs through the current pipeline logic under sport-scoped workflow/fetcher/publish folders. The new MLB cartridges are shells only.
+- MLB prediction behavior still runs through the current pipeline logic under sport-scoped workflow/fetcher/publish/warehouse/research folders. The new MLB cartridges are shells only.
 
 ## Next Safe Steps
 

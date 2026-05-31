@@ -31,27 +31,27 @@
     },
     {
       "role": "bullpen-shape-model",
-      "path": "pipeline/research_mlb_bullpen_shape_model.py"
+      "path": "pipeline/mlb/research/research_mlb_bullpen_shape_model.py"
     },
     {
       "role": "first-up-reliever-model",
-      "path": "pipeline/research_mlb_first_up_reliever_model.py"
+      "path": "pipeline/mlb/research/research_mlb_first_up_reliever_model.py"
     },
     {
       "role": "reliever-quality",
-      "path": "pipeline/research_mlb_first_up_reliever_quality.py"
+      "path": "pipeline/mlb/research/research_mlb_first_up_reliever_quality.py"
     },
     {
       "role": "lineup-matchup",
-      "path": "pipeline/research_mlb_first_up_reliever_lineup_matchup.py"
+      "path": "pipeline/mlb/research/research_mlb_first_up_reliever_lineup_matchup.py"
     },
     {
       "role": "adaptive-reset",
-      "path": "pipeline/research_mlb_first_up_reliever_depth_reset.py"
+      "path": "pipeline/mlb/research/research_mlb_first_up_reliever_depth_reset.py"
     },
     {
       "role": "usage-audit",
-      "path": "pipeline/research_mlb_bullpen_prediction_audit.py"
+      "path": "pipeline/mlb/research/research_mlb_bullpen_prediction_audit.py"
     }
   ],
   "description": "Shell for the current E36 reliever shadow artifact. RP36 should produce relief context and warnings consumed by M0."

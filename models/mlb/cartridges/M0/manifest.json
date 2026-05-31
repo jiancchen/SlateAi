@@ -90,7 +90,7 @@
     },
     {
       "role": "warehouse-code",
-      "path": "pipeline/mlb_warehouse.py"
+      "path": "pipeline/mlb/warehouse/mlb_warehouse.py"
     },
     {
       "role": "fanduel-fetcher",
@@ -102,7 +102,7 @@
     },
     {
       "role": "side-backtest",
-      "path": "pipeline/mlb_side_backtest.py"
+      "path": "pipeline/mlb/warehouse/mlb_side_backtest.py"
     },
     {
       "role": "component-addendum",

@@ -13,6 +13,8 @@ from pathlib import Path
 from typing import Any
 
 PIPELINE_ROOT = Path(__file__).resolve().parents[2]
+WAREHOUSE_ROOT = Path(__file__).resolve().parents[1] / "warehouse"
+sys.path.append(str(WAREHOUSE_ROOT))
 sys.path.append(str(PIPELINE_ROOT))
 
 from mlb_warehouse import ROOT, get_connection, list_probable_starters_snapshot, to_float, to_int

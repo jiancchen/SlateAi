@@ -80,10 +80,10 @@ Added or strengthened:
 
 Supporting files:
 
-- `/Users/jcchen/Documents/New project/pipeline/mlb_warehouse.py`
+- `/Users/jcchen/Documents/New project/pipeline/mlb/warehouse/mlb_warehouse.py`
 - `/Users/jcchen/Documents/New project/pipeline/mlb/publish/export-prop-predictions.mjs`
 - `/Users/jcchen/Documents/New project/pipeline/mlb/publish/export-history-journal.mjs`
-- `/Users/jcchen/Documents/New project/pipeline/export_story_archive.py`
+- `/Users/jcchen/Documents/New project/pipeline/mlb/warehouse/export_story_archive.py`
 - `/Users/jcchen/Documents/New project/development-docs/mlb/runbooks/daily-run-checklist.md`
 
 ### Props

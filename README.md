@@ -220,7 +220,7 @@ This postgame command:
   Shared deterministic scoring logic used by the published slates.
 - `web/src/lib/slate-manifest.ts`
   Lazy-loading manifest for day files.
-- `pipeline/mlb_warehouse.py`
+- `pipeline/mlb/warehouse/mlb_warehouse.py`
   Local SQLite warehouse and ingest pipeline.
 - `pipeline/mlb/publish/export-lineup-model.mjs`
   MLB lineup + weather + matchup exporter.

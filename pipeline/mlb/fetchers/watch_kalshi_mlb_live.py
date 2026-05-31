@@ -11,7 +11,9 @@ from pathlib import Path
 from typing import Any
 
 PIPELINE_ROOT = Path(__file__).resolve().parents[2]
+WAREHOUSE_ROOT = Path(__file__).resolve().parents[1] / "warehouse"
 sys.path.append(str(Path(__file__).resolve().parent))
+sys.path.append(str(WAREHOUSE_ROOT))
 sys.path.append(str(PIPELINE_ROOT))
 
 from fetch_kalshi_mlb_markets import SERIES, TEAM_CODES, build_output
