@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "modelId": "TEN-F0",
+  "sport": "tennis",
+  "name": "TEN-F0 tennis feature baseline",
+  "status": "baseline",
+  "summary": "Baseline tennis feature cartridge consumed by TEN-T0. It documents source coverage and model-ready feature expectations without changing feature math.",
+  "keyImprovements": [
+    "Gives the tennis feature layer a canonical sport-prefixed cartridge identity.",
+    "Keeps rankings, recent form, market lines, Kalshi context, and weather coverage expectations in one feature contract.",
+    "Makes feature coverage auditable separately from TEN-T0 winner and market-lane decisions."
+  ],
+  "keyMetrics": [
+    {
+      "label": "Required source groups",
+      "value": "7",
+      "details": "Scoreboard, rankings, Flashscore, SofaScore, FanDuel, Kalshi, and weather."
+    },
+    {
+      "label": "Training snapshot",
+      "value": "Required",
+      "details": "Locked runs must store run-scoped training rows or a training-row hash."
+    }
+  ],
+  "notes": [
+    "TEN-F0 is a component cartridge, not a standalone prediction model.",
+    "Future feature changes should become TEN-F1+ and compare downstream TEN-T* output against the TEN-T0 golden slate.",
+    "Missing source coverage should fail health checks before prediction publishing."
+  ]
+}

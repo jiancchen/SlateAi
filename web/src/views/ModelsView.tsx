@@ -200,9 +200,9 @@ const inferTennisDayModelId = (day: TennisModelDay, fallbackModelId: string) => 
   if (explicitModelId) return explicitModelId
 
   for (const model of day.models) {
-    const versionMatch = String(model.version || '').match(/\bT\d+\b/i)
+    const versionMatch = String(model.version || '').match(/\bTEN-T\d+\b/i)
     if (versionMatch) return versionMatch[0].toUpperCase()
-    const nameMatch = String(model.modelName || '').match(/^T\d+$/i)
+    const nameMatch = String(model.modelName || '').match(/^TEN-T\d+$/i)
     if (nameMatch) return nameMatch[0].toUpperCase()
   }
 
@@ -214,7 +214,7 @@ const buildTennisModelDirectories = (days: TennisModelDay[]): TennisModelDirecto
     days.find((day) => day.runModel)?.runModel?.modelName ||
     days.find((day) => day.models.some((model) => model.modelDescription?.modelId))
       ?.models.find((model) => model.modelDescription?.modelId)?.modelDescription?.modelId ||
-    'T0'
+    'TEN-T0'
   const groups = new Map<string, TennisModelDirectory>()
 
   for (const day of days) {
@@ -305,7 +305,7 @@ const buildTennisCatalog = (modelHistory: ModelHistoryEntry[]) => {
   const currentRun = latestEntry(runEntries)
 
   if (currentRun) {
-    const currentRunId = currentRun.model.modelName || currentRun.model.run?.runId || 'T0'
+    const currentRunId = currentRun.model.modelName || currentRun.model.run?.runId || 'TEN-T0'
     const eligibleValidationEntries = preCartridgeEntries.filter(({ day, model }) => {
       if (String(day.id) >= String(currentRun.day.id)) return false
       const gradedRows = numberOrNull(model.settlement?.gradedCount) ?? 0
@@ -426,15 +426,15 @@ const buildMlbCatalog = (modelHistory: ModelHistoryEntry[]) => {
 
   const catalog: CatalogModel[] = [
     {
-      id: 'mlb-m0-cartridge',
+      id: 'mlb-parent-cartridge',
       sport: 'mlb',
-      name: 'M0 MLB cartridge',
+      name: 'MLB-M0 cartridge',
       lane: 'Sides / F5 / first inning / props',
       latestDay,
       latest: latestRun?.model || latestAny.model,
       history: runEntries.length ? runEntries : mlbEntries,
       components: sameDayComponents,
-      description: 'The active MLB parent model shell. M0 owns the daily board lanes while RP36 feeds bullpen and bridge-risk context as an addendum.'
+      description: 'The active MLB parent model shell. MLB-M0 owns the daily board lanes while MLB-RP36 feeds bullpen and bridge-risk context as an addendum.'
     }
   ]
 
@@ -447,7 +447,7 @@ const buildMlbCatalog = (modelHistory: ModelHistoryEntry[]) => {
     latest: sideHistory[0]?.model || latestAny.model,
     history: mlbEntries,
     components: sameDayComponents.filter(({ model }) => !/cartridge run/i.test(model.lane || '')),
-    description: 'Settled MLB lane rows from the results journal. Use this to inspect day-by-day sides, first inning, HR, and prop performance while M0 is still being migrated.'
+    description: 'Settled MLB lane rows from the results journal. Use this to inspect day-by-day sides, first inning, HR, and prop performance while MLB-M0 is still being migrated.'
   })
 
   return catalog
@@ -570,8 +570,8 @@ export function ModelsView({
     ? [
         {
           label: 'Current Tennis Model',
-          value: selectedTennisDirectory?.id || currentRun?.latest?.modelName || 'T0',
-          detail: selectedTennisDirectory?.version || currentRun?.latest?.version || 'W1 / F0 / T0 / E0'
+          value: selectedTennisDirectory?.id || currentRun?.latest?.modelName || 'TEN-T0',
+          detail: selectedTennisDirectory?.version || currentRun?.latest?.version || 'TEN-W1 / TEN-F0 / TEN-T0 / TEN-E0'
         },
         {
           label: 'Prediction Dates',
@@ -596,8 +596,8 @@ export function ModelsView({
     : [
         {
           label: 'Current MLB Model',
-          value: mlbCatalog[0]?.latest?.modelName || 'M0',
-          detail: mlbCatalog[0]?.latest?.version || 'W1 / F0 / M0 / RP36 / E0'
+          value: mlbCatalog[0]?.latest?.modelName || 'MLB-M0',
+          detail: mlbCatalog[0]?.latest?.version || 'MLB-W1 / MLB-F0 / MLB-M0 / MLB-RP36 / MLB-E0'
         },
         {
           label: 'Models',
@@ -613,8 +613,8 @@ export function ModelsView({
         },
         {
           label: 'Relief Addendum',
-          value: 'RP36',
-          detail: 'Consumed by M0 for bullpen and bridge-risk context'
+          value: 'MLB-RP36',
+          detail: 'Consumed by MLB-M0 for bullpen and bridge-risk context'
         }
       ]
 
@@ -719,7 +719,7 @@ export function ModelsView({
               <div className="models-detail-header">
                 <div>
                   <span className={`models-sport-pill ${selectedModel.sport}`}>{sportLabel(selectedModel.sport)}</span>
-                  <h3>{activeSport === 'tennis' ? `${selectedTennisDirectory?.id || currentRun?.latest?.modelName || 'T0'} prediction history · ${selectedTennisDay?.date || 'No date'}` : selectedModel.name}</h3>
+                  <h3>{activeSport === 'tennis' ? `${selectedTennisDirectory?.id || currentRun?.latest?.modelName || 'TEN-T0'} prediction history · ${selectedTennisDay?.date || 'No date'}` : selectedModel.name}</h3>
                   <p>
                     {activeSport === 'tennis'
                       ? 'Day-by-day tennis model predictions and grades. Pending dates stay in the history rail until results are imported.'
@@ -907,7 +907,7 @@ export function ModelsView({
                   <dl className="models-metadata-grid">
                     <div>
                       <dt>Model</dt>
-                      <dd>{activeSport === 'tennis' ? selectedTennisPrimary?.modelName || currentRun?.latest?.modelName || 'T0' : selectedModel.latest?.modelName || selectedModel.name}</dd>
+                      <dd>{activeSport === 'tennis' ? selectedTennisPrimary?.modelName || currentRun?.latest?.modelName || 'TEN-T0' : selectedModel.latest?.modelName || selectedModel.name}</dd>
                     </div>
                     <div>
                       <dt>Lane</dt>

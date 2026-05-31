@@ -131,7 +131,7 @@ def apply_tennis_migration(conn: sqlite3.Connection, migration_path: Path, wareh
     }
 
 
-def apply_tennis_migrations(conn: sqlite3.Connection, version: str = "W1") -> dict[str, Any]:
+def apply_tennis_migrations(conn: sqlite3.Connection, version: str = "TEN-W1") -> dict[str, Any]:
     version = version.upper()
     version_dir = MIGRATIONS_DIR / version
     if not version_dir.exists():
@@ -2540,7 +2540,7 @@ def main() -> None:
     subparsers.add_parser("init-db")
 
     migrate_parser = subparsers.add_parser("migrate")
-    migrate_parser.add_argument("--version", default="W1")
+    migrate_parser.add_argument("--version", default="TEN-W1")
 
     rankings_parser = subparsers.add_parser("import-rankings")
     rankings_parser.add_argument("--file", default=str(RANKINGS_PATH))

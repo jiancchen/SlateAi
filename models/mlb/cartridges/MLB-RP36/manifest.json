@@ -1,0 +1,55 @@
+{
+  "id": "MLB-RP36",
+  "sport": "mlb",
+  "name": "MLB-RP36 reliever shadow addendum",
+  "status": "migration-shell",
+  "role": "relief_addendum",
+  "originExperiment": "E36 shadow",
+  "consumedBy": [
+    "MLB-M0"
+  ],
+  "createdForMigration": "2026-05-31",
+  "entrypoint": "models/mlb/cartridges/MLB-RP36/runner.py",
+  "outputContract": "models/mlb/cartridges/MLB-RP36/output-contract.json",
+  "modelDescription": "models/mlb/cartridges/MLB-RP36/model_description.json",
+  "modelNotes": "models/mlb/cartridges/MLB-RP36/MODEL_NOTES.md",
+  "sourceFiles": [
+    {
+      "role": "shadow-exporter",
+      "path": "models/mlb/cartridges/MLB-RP36/exporter.py"
+    },
+    {
+      "role": "shadow-runner",
+      "path": "models/mlb/cartridges/MLB-RP36/runner.py"
+    },
+    {
+      "role": "snapshot-verifier",
+      "path": "models/mlb/cartridges/MLB-RP36/verify_snapshot.py"
+    },
+    {
+      "role": "bullpen-shape-model",
+      "path": "pipeline/mlb/research/research_mlb_bullpen_shape_model.py"
+    },
+    {
+      "role": "first-up-reliever-model",
+      "path": "pipeline/mlb/research/research_mlb_first_up_reliever_model.py"
+    },
+    {
+      "role": "reliever-quality",
+      "path": "pipeline/mlb/research/research_mlb_first_up_reliever_quality.py"
+    },
+    {
+      "role": "lineup-matchup",
+      "path": "pipeline/mlb/research/research_mlb_first_up_reliever_lineup_matchup.py"
+    },
+    {
+      "role": "adaptive-reset",
+      "path": "pipeline/mlb/research/research_mlb_first_up_reliever_depth_reset.py"
+    },
+    {
+      "role": "usage-audit",
+      "path": "pipeline/mlb/research/research_mlb_bullpen_prediction_audit.py"
+    }
+  ],
+  "description": "Shell for the reliever shadow artifact. MLB-RP36 should produce relief context and warnings consumed by MLB-M0."
+}

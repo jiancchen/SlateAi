@@ -583,38 +583,48 @@ export const mlbPropPerformanceByDate: Record<string, DailyPropSummary> = {
   },
   "2026-05-30": {
     "overall": {
-      "hits": 33,
-      "total": 62,
-      "hitRate": 53.2
+      "hits": 15,
+      "total": 33,
+      "hitRate": 45.5
     },
     "byType": {
       "totalBases": {
-        "hits": 19,
-        "total": 35,
-        "hitRate": 54.3
-      },
-      "pitcherStrikeouts": {
-        "hits": 11,
-        "total": 22,
-        "hitRate": 50
+        "hits": 1,
+        "total": 5,
+        "hitRate": 20
       },
       "singles": {
-        "hits": 3,
-        "total": 5,
+        "hits": 6,
+        "total": 10,
         "hitRate": 60
+      },
+      "rbi": {
+        "hits": 0,
+        "total": 1,
+        "hitRate": 0
+      },
+      "pitcherStrikeouts": {
+        "hits": 8,
+        "total": 16,
+        "hitRate": 50
+      },
+      "walks": {
+        "hits": 0,
+        "total": 1,
+        "hitRate": 0
       }
     },
     "topHits": [
       "Yordan Alvarez Over 1.5 total bases",
-      "Casey Schmitt Over 1.5 total bases",
-      "Andy Pages Over 1.5 total bases",
-      "Christian Walker Over 1.5 total bases"
+      "Vladimir Guerrero Jr. Over 0.5 singles",
+      "Seth Lugo Over 4.5 strikeouts",
+      "Ryan Weathers Over 5.5 strikeouts"
     ],
     "topMisses": [
       "Michael Harris II Over 1.5 total bases",
-      "Hunter Goodman Over 1.5 total bases",
-      "James Wood Over 1.5 total bases",
-      "Ben Rice Over 1.5 total bases"
+      "Shohei Ohtani Over 1.5 total bases",
+      "Aaron Judge Over 1.5 total bases",
+      "Luis Arraez Over 0.5 singles"
     ]
   }
 }

@@ -4,19 +4,19 @@ import { buildTennistonicH2HUrl } from '../../../web/src/lib/tennis-source-mappi
 
 const ROOT = path.resolve(import.meta.dirname, '..', '..', '..')
 const MODEL_CARTRIDGES = {
-  T0: {
-    id: 'T0',
+  'TEN-T0': {
+    id: 'TEN-T0',
     sport: 'tennis',
-    label: 'T0 tennis baseline',
+    label: 'TEN-T0 tennis baseline',
     status: 'baseline',
-    entrypoint: 'models/tennis/cartridges/T0/runner.mjs',
-    manifestPath: 'models/tennis/cartridges/T0/manifest.json'
+    entrypoint: 'models/tennis/cartridges/TEN-T0/runner.mjs',
+    manifestPath: 'models/tennis/cartridges/TEN-T0/manifest.json'
   }
 }
 
 const parseArgs = () => {
   const args = process.argv.slice(2)
-  const options = { date: '', output: '', predictionsOutput: '', model: 'T0' }
+  const options = { date: '', output: '', predictionsOutput: '', model: 'TEN-T0' }
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index]
     if (arg === '--date') {

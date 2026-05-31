@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "modelId": "TEN-T0",
+  "sport": "tennis",
+  "name": "TEN-T0 tennis baseline",
+  "status": "baseline",
+  "createdForSlate": "2026-05-31",
+  "summary": "Baseline tennis cartridge for the Roland Garros pipeline after the May 31 value-book and derivative-lane cleanup. TEN-T0 is a reproducibility baseline, not a claim that the model is already good enough to bet blindly.",
+  "keyImprovements": [
+    "Separated the active tennis model into a cartridge/run stack so future TEN-T1+ changes can be compared against a frozen TEN-T0 baseline.",
+    "Made ML, spread, match O/U, first-set O/U, set-win, and Kalshi trade-to-sell separate lanes instead of blending them into one vague confidence number.",
+    "Added postmatch settlement and backtest surfaces so model accuracy, lane hit rate, and ROI can be tracked by day.",
+    "Kept source-site predictions as context only; the cartridge prediction lanes are expected to come from warehouse features, market lines, and model gates."
+  ],
+  "keyMetrics": [
+    {
+      "label": "Backtest hit rate",
+      "value": "59.4%",
+      "details": "158/266 settled rows in the exported TEN-T0 backtest artifact."
+    },
+    {
+      "label": "Data-only hit rate",
+      "value": "57.5%",
+      "details": "153/266 settled rows without market-derived support."
+    },
+    {
+      "label": "May 31 settlement",
+      "value": "Pending",
+      "details": "0/48 lane rows graded until the slate is settled and imported."
+    },
+    {
+      "label": "May 30 validation",
+      "value": "ML 56.2%",
+      "details": "Same pre-cartridge logic: ML 9-7, spread 5-8, match O/U 3-10; bet-grade value rows went 0-2."
+    },
+    {
+      "label": "Tracked lanes",
+      "value": "6",
+      "details": "ML, spread, match O/U, first-set O/U, set-win, and Kalshi trade-to-sell."
+    }
+  ],
+  "notes": [
+    "TEN-T0 exists so refactors can prove they did not silently change the May 31 predictions.",
+    "May 30 is the closest settled TEN-T0-compatible validation slate, but it was produced before formal cartridge run locks existed.",
+    "Prediction-market trade-to-sell is not the same model objective as picking the match winner; it must stay separately graded.",
+    "Future cartridges should explain what changed, what got better, what got worse, and which lane the change is supposed to improve.",
+    "Blind ML value remains downgraded until bucketed EV and ROI improve in settled postmatch runs."
+  ],
+  "knownLimitations": [
+    "May 30 is legacy pre-cartridge history, so it is shown under the legacy tennis archive rather than TEN-T0 settlement.",
+    "Derivative lanes are only as strong as the captured FanDuel and Kalshi line coverage.",
+    "TEN-T0 still needs better upset-path and in-match price-spike calibration before it should be treated as a betting engine."
+  ],
+  "files": {
+    "markdown": "models/tennis/cartridges/TEN-T0/MODEL_NOTES.md"
+  }
+}

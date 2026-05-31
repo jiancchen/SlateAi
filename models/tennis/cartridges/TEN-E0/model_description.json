@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "modelId": "TEN-E0",
+  "sport": "tennis",
+  "name": "TEN-E0 tennis evaluator baseline",
+  "status": "baseline",
+  "summary": "Baseline tennis evaluator cartridge consumed by TEN-T0. It records settlement, lane grading, and calibration expectations without changing evaluator math.",
+  "keyImprovements": [
+    "Gives the tennis evaluator layer a canonical sport-prefixed cartridge identity.",
+    "Keeps ML, spread, match total, first-set total, set-win, and Kalshi trade grading separate.",
+    "Makes settled runs auditable without mutating locked pregame predictions."
+  ],
+  "keyMetrics": [
+    {
+      "label": "Required buckets",
+      "value": "6",
+      "details": "ML, spread, match total, first-set total, set-win, and Kalshi trade-to-sell."
+    },
+    {
+      "label": "Settlement rule",
+      "value": "Immutable pregame",
+      "details": "Postmatch grading writes settlement artifacts without changing the locked prediction run."
+    }
+  ],
+  "notes": [
+    "TEN-E0 is a component cartridge, not a standalone prediction model.",
+    "Future evaluator changes should become TEN-E1+ and report which lane improved or degraded.",
+    "ROI and hit rate must be reported by lane rather than collapsed into one generic accuracy number."
+  ]
+}

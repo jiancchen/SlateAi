@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "modelId": "MLB-M0",
+  "sport": "mlb",
+  "name": "MLB-M0 parent baseline",
+  "status": "migration-shell",
+  "summary": "Baseline MLB parent cartridge shell. MLB-M0 owns the daily run manifest and closeout health gate while the existing side, first-five, first-inning, prop, HR, market-context, and MLB-RP36 relief inputs are migrated behind stable artifacts.",
+  "keyImprovements": [
+    "Names the current MLB parent model as MLB-M0 so future changes can be compared against a stable baseline.",
+    "Keeps MLB-RP36 as a relief addendum consumed by MLB-M0 instead of treating the reliever shadow artifact as a separate parent model.",
+    "Separates model ownership from workflow plumbing before moving scripts out of the flat pipeline folder.",
+    "Adds a May 30 closeout gate so side predictions must flow into `mlb_side_predictions` and `mlb_side_backtests` before postmortem lessons are trusted.",
+    "Adds a cartridge-local performance index and quiet-start full-game gate so May 30 failures can affect the next slate instead of staying as notes.",
+    "Persists daily hitter platoon split snapshots so the prop model can be audited against the exact split context shown pregame."
+  ],
+  "keyMetrics": [
+    {
+      "label": "Migration status",
+      "value": "Run shell",
+      "details": "Prediction behavior is still mostly delegated to workflow/publish scripts, but MLB-M0 owns the run lock and model dashboard identity."
+    },
+    {
+      "label": "Relief addendum",
+      "value": "MLB-RP36",
+      "details": "The prior reliever-shadow experiment is tracked as a component consumed by MLB-M0."
+    },
+    {
+      "label": "May 30 snapshot target",
+      "value": "15 games",
+      "details": "Golden target covers 15 side picks, 49 prop picks, 12 HR picks, 30 reliever-shadow teams, and 15 lineup boards."
+    },
+    {
+      "label": "May 30 run lock",
+      "value": "Created",
+      "details": "MLB-M0 now has a file-based run manifest, source lock, input lock, output lock, and snapshot verification target."
+    },
+    {
+      "label": "May 30 side closeout",
+      "value": "15/15",
+      "details": "Side predictions and backtests are now present in the warehouse for the May 30 golden day."
+    },
+    {
+      "label": "May 30 result lanes",
+      "value": "FG 6-9 / F5 9-6",
+      "details": "May 30 exposed a dead-early, low-conversion side failure while first-five and first-inning timing held up better."
+    },
+    {
+      "label": "Performance index",
+      "value": "Created",
+      "details": "MLB-M0 now links May 30 run, result, side-board, postmortem, and follow-up artifacts from the cartridge."
+    }
+  ],
+  "notes": [
+    "MLB-M0 should eventually own the final MLB side, first-five, total, prop, and market-context outputs.",
+    "Current scripts remain in pipeline until a behavior-preserving wrapper and golden test are added.",
+    "Do not promote MLB-RP36 into a standalone parent model; it should feed MLB-M0.",
+    "Before a new MLB slate, the prior day must have a results journal plus side prediction/backtest rows so lessons are based on warehouse-settled data.",
+    "Quiet-start, traffic-without-conversion, and quiet-first-five risks now suppress full-game side promotion unless another market expression is cleaner.",
+    "`MLB-M0_log.md` is the working log for warehouse/model changes that still need lane-specific proof."
+  ],
+  "knownLimitations": [
+    "MLB-M0 run locks are file-based for now; they are not yet written into a shared model-run DB table.",
+    "Source inventory is intentionally broad until the MLB pregame chain is fully audited and split into smaller components."
+  ],
+  "files": {
+    "markdown": "models/mlb/cartridges/MLB-M0/MODEL_NOTES.md",
+    "modelLog": "models/mlb/cartridges/MLB-M0/MLB-M0_log.md",
+    "performanceIndex": "models/mlb/cartridges/MLB-M0/performance_index.json",
+    "followups": "models/mlb/cartridges/MLB-M0/followups.md"
+  }
+}

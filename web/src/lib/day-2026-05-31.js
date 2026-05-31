@@ -4621,12 +4621,12 @@ const buildGame = (raw) => {
 const matches = rawTennisGames.map(buildGame)
 
 export const tennisModelCartridge = {
-  "id": "T0",
+  "id": "TEN-T0",
   "sport": "tennis",
-  "label": "T0 tennis baseline",
+  "label": "TEN-T0 tennis baseline",
   "status": "baseline",
-  "entrypoint": "models/tennis/cartridges/T0/runner.mjs",
-  "manifestPath": "models/tennis/cartridges/T0/manifest.json"
+  "entrypoint": "models/tennis/cartridges/TEN-T0/runner.mjs",
+  "manifestPath": "models/tennis/cartridges/TEN-T0/manifest.json"
 }
 export const slateMeta = { title: 'May 31, 2026 Tennis Desk', date: 'May 31, 2026', isoDate: '2026-05-31', timeZone: 'America/Los_Angeles', modelCartridge: tennisModelCartridge, subtitle: 'Singles-only Roland Garros main-draw slate with weakness-edge, game-flow gates, and sportsbook/market lines where captured.', notes: ['No doubles included.', 'FanDuel ML, game handicap, and total-games lines are attached where the sportsbook board exposes a matching singles event.', 'May 31, 2026 uses live rank, clay record, opponent-adjusted recent form, and warehouse service rows where joined.'] }
 export const filters = ['All', 'Tennis']

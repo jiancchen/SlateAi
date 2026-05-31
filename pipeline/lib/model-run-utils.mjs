@@ -107,8 +107,7 @@ export const gitInfo = async () => {
   const dirty = await runCommand('git', ['status', '--short'])
   return {
     commit: commit.ok ? commit.stdout.trim() : null,
-    dirty: dirty.ok ? dirty.stdout.trim().length > 0 : true,
-    changedFiles: dirty.ok ? dirty.stdout.trim().split('\n').filter(Boolean) : []
+    dirty: dirty.ok ? dirty.stdout.trim().length > 0 : true
   }
 }
 
@@ -124,10 +123,10 @@ export const activeStack = async ({ model = null } = {}) => {
   const registry = await loadRegistry()
   const active = registry.active || {}
   return {
-    warehouseVersion: active.warehouse || 'W1',
-    featureVersion: active.features || 'F0',
-    modelId: model || active.model || 'T0',
-    evaluatorVersion: active.evaluator || 'E0'
+    warehouseVersion: active.warehouse || 'TEN-W1',
+    featureVersion: active.features || 'TEN-F0',
+    modelId: model || active.model || 'TEN-T0',
+    evaluatorVersion: active.evaluator || 'TEN-E0'
   }
 }
 

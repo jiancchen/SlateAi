@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "runId": "tennis-2026-05-31-TEN-W1-TEN-F0-TEN-T0-TEN-E0",
+  "sport": "tennis",
+  "modelId": "TEN-T0",
+  "slateDate": "2026-05-31",
+  "status": "deployed",
+  "deployedAt": "2026-05-31T18:03:12.068Z",
+  "deploymentUrl": "https://slate-web-static-1-rmm9kzu6i-jian-chens-projects-667dcf76.vercel.app",
+  "webRoot": "web",
+  "vercelProject": {
+    "projectId": "prj_wKTGUqaCcDzyat6fBENE0ROnBWFL",
+    "orgId": "team_SyeBVnlstCgOMT29GUYvbHdM",
+    "projectName": "slate-web-static-1"
+  },
+  "staticArtifact": {
+    "root": "web/dist",
+    "files": 62,
+    "sha256": "a7bd332d95be849f3d89b747b828a1a7212205b389d9d0a3cedddbade21c4d8f"
+  },
+  "publicData": {
+    "currentSlate": {
+      "id": "2026-05-31",
+      "label": "May 31, 2026",
+      "status": "ready",
+      "slateMeta": {
+        "date": "May 31, 2026",
+        "isoDate": "2026-05-31"
+      },
+      "summary": {
+        "totalGames": 23
+      }
+    },
+    "slates": [
+      {
+        "id": "2026-05-31",
+        "label": "May 31, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "May 31, 2026",
+          "isoDate": "2026-05-31"
+        },
+        "summary": {
+          "totalGames": 23
+        }
+      }
+    ],
+    "modelHistory": true,
+    "nextSlateExpected": null
+  },
+  "checks": {
+    "rootIsWeb": true,
+    "currentSummaryPresent": true,
+    "publicModelHistoryPresent": true,
+    "privateReferenceScan": "passed"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "runId": "mlb-2026-05-30-MLB-W1-MLB-F0-MLB-M0-MLB-RP36-MLB-E0",
+  "sport": "mlb",
+  "slateDate": "2026-05-30",
+  "modelId": "MLB-M0",
+  "reliefAddendum": "MLB-RP36",
+  "evaluatorVersion": "MLB-E0",
+  "warehouseVersion": "MLB-W1",
+  "featureVersion": "MLB-F0",
+  "mode": "pregame",
+  "status": "locked",
+  "lockedAt": "2026-05-31T18:55:31.801Z",
+  "git": {
+    "commit": "917adff60eab3f23f4d202b13ce00714dc29ce19",
+    "dirty": true
+  },
+  "sourceHash": "2686dbbe9a26c932728f384c9fd80e963b1daded8699ad704a0ae3f4c7422635",
+  "inputHash": "be188a5eb40606bd24252c14260cd29b9cd9d269f5838e2388f020455c783b11",
+  "outputHash": "fa27e5b9dc596cc828ac967fc37086facde1ca6f8b118fa9690e5c4272efb4ef",
+  "snapshotHash": "5e16fd2c9926a9af5b3d2983d5eeff7d46741ea5b2ace1d5bd129356c3837054",
+  "artifactSummary": {
+    "publicSummaryGames": 15,
+    "gameFiles": 15,
+    "sidePicks": 15,
+    "propPicks": 33,
+    "homeRunPicks": 12,
+    "relieverTeams": 30,
+    "lineupGames": 15
+  },
+  "sourceFiles": 44,
+  "inputs": 21,
+  "outputs": 4
+}

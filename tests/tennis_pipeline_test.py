@@ -98,13 +98,13 @@ class TennisWarehouseImportTest(unittest.TestCase):
         present = check_weather(conn, "2026-05-30", match_count=1, settled=True)
         self.assertTrue(present["ok"])
 
-    def test_w1_model_run_migration_is_idempotent(self) -> None:
+    def test_ten_w1_model_run_migration_is_idempotent(self) -> None:
         conn = sqlite3.connect(":memory:")
         conn.row_factory = sqlite3.Row
         init_db(conn)
 
-        first = apply_tennis_migrations(conn, "W1")
-        second = apply_tennis_migrations(conn, "W1")
+        first = apply_tennis_migrations(conn, "TEN-W1")
+        second = apply_tennis_migrations(conn, "TEN-W1")
 
         self.assertEqual(first["migrations"][0]["status"], "applied")
         self.assertEqual(second["migrations"][0]["status"], "already_applied")
@@ -199,19 +199,19 @@ class TennisWarehouseImportTest(unittest.TestCase):
         self.assertEqual(total_row.get("selection"), "No bet")
         self.assertIsNone(total_row.get("modelPct"))
 
-    def test_t0_may31_model_snapshot_stays_locked(self) -> None:
+    def test_ten_t0_may31_model_snapshot_stays_locked(self) -> None:
         root = Path(__file__).resolve().parents[1]
         snapshot_path = (
             root
             / "data-private"
             / "model-cartridges"
             / "tennis"
-            / "T0"
+            / "TEN-T0"
             / "golden"
             / "2026-05-31.snapshot.json"
         )
         if not snapshot_path.exists():
-            self.skipTest("T0 May 31 snapshot has not been generated")
+            self.skipTest("TEN-T0 May 31 snapshot has not been generated")
         result = subprocess.run(
             [
                 "node",
@@ -219,7 +219,7 @@ class TennisWarehouseImportTest(unittest.TestCase):
                 "--date",
                 "2026-05-31",
                 "--model",
-                "T0",
+                "TEN-T0",
             ],
             cwd=root,
             text=True,
@@ -231,7 +231,7 @@ class TennisWarehouseImportTest(unittest.TestCase):
     def test_tennis_model_cartridges_have_required_model_cards(self) -> None:
         root = Path(__file__).resolve().parents[1]
         cartridge_root = root / "models" / "tennis" / "cartridges"
-        cartridge_dirs = sorted(path for path in cartridge_root.glob("T*") if path.is_dir())
+        cartridge_dirs = sorted(path for path in cartridge_root.glob("TEN-*") if path.is_dir())
         self.assertTrue(cartridge_dirs, "expected at least one tennis model cartridge")
 
         for cartridge_dir in cartridge_dirs:
@@ -251,11 +251,11 @@ class TennisWarehouseImportTest(unittest.TestCase):
                 self.assertIn(key, description)
                 self.assertTrue(description[key], f"{cartridge_dir.name} has an empty {key} model-card field")
 
-    def test_t0_may31_model_run_verifies(self) -> None:
+    def test_ten_t0_may31_model_run_verifies(self) -> None:
         root = Path(__file__).resolve().parents[1]
-        run_path = root / "data-private" / "model-runs" / "tennis" / "T0" / "2026-05-31" / "run.json"
+        run_path = root / "data-private" / "model-runs" / "tennis" / "TEN-T0" / "2026-05-31" / "run.json"
         if not run_path.exists():
-            self.skipTest("T0 May 31 run has not been locked")
+            self.skipTest("TEN-T0 May 31 run has not been locked")
         result = subprocess.run(
             [
                 "node",
@@ -263,7 +263,7 @@ class TennisWarehouseImportTest(unittest.TestCase):
                 "--date",
                 "2026-05-31",
                 "--model",
-                "T0",
+                "TEN-T0",
                 "--allow-source-drift",
             ],
             cwd=root,
@@ -273,22 +273,22 @@ class TennisWarehouseImportTest(unittest.TestCase):
         )
         self.assertEqual(result.returncode, 0, msg=result.stdout + result.stderr)
 
-    def test_t0_postmatch_settlement_artifact_has_lane_rows(self) -> None:
+    def test_ten_t0_postmatch_settlement_artifact_has_lane_rows(self) -> None:
         root = Path(__file__).resolve().parents[1]
         artifact_path = (
             root
             / "data-private"
             / "model-runs"
             / "tennis"
-            / "T0"
+            / "TEN-T0"
             / "2026-05-31"
             / "postmatch-grades.json"
         )
         if not artifact_path.exists():
-            self.skipTest("T0 May 31 postmatch settlement artifact has not been generated")
+            self.skipTest("TEN-T0 May 31 postmatch settlement artifact has not been generated")
         artifact = json.loads(artifact_path.read_text(encoding="utf-8"))
         lanes = artifact.get("lanes") or {}
-        self.assertEqual(artifact.get("sourceRunId"), "tennis-2026-05-31-W1-F0-T0-E0")
+        self.assertEqual(artifact.get("sourceRunId"), "tennis-2026-05-31-TEN-W1-TEN-F0-TEN-T0-TEN-E0")
         self.assertEqual(artifact.get("status"), "pending")
         self.assertEqual(artifact.get("pendingMatches"), 8)
         self.assertEqual(artifact.get("rowCount"), 48)

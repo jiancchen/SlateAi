@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "runId": "tennis-2026-05-31-TEN-W1-TEN-F0-TEN-T0-TEN-E0",
+  "inputHash": "a7e49fc8d26a1c8d8df54d967eb51b93b799d67cc1fea6239b8feab15a87a551",
+  "inputs": [
+    {
+      "path": "data-private/reference/tennis/espn-scoreboard-2026-05-31.json",
+      "role": "espn-scoreboard",
+      "exists": true,
+      "sha256": "254e56f95e3c58d8a7a0dd4e6a7c340543e7bb15880949b40171596fcbab14b6"
+    },
+    {
+      "path": "data-private/reference/tennis/player-rankings.json",
+      "role": "rankings-latest",
+      "exists": true,
+      "sha256": "0b54865e7fe447729493b85b51bcb7ae06ec097b9927616dd58902b725a14ba6"
+    },
+    {
+      "path": "data-private/reference/tennis/player-rankings-history/2026-05-31.json",
+      "role": "rankings-history",
+      "exists": true,
+      "sha256": "0b54865e7fe447729493b85b51bcb7ae06ec097b9927616dd58902b725a14ba6"
+    },
+    {
+      "path": "web/src/lib/day-2026-05-31-tennis-opponent-quality.generated.json",
+      "role": "opponent-quality",
+      "exists": true,
+      "sha256": "81ec9c32259448e6c31d9bffce9394ef1d5fd67937e957a239fe96a7bb94e9b9"
+    },
+    {
+      "path": "web/src/lib/day-2026-05-31-tennis-clay-context.generated.json",
+      "role": "clay-context",
+      "exists": true,
+      "sha256": "18c6b17e9aee993e7d3ac0302230e9ef18558394937b9682fabc5894af4d652e"
+    },
+    {
+      "path": "web/src/lib/day-2026-05-31-tennis-warehouse-context.generated.json",
+      "role": "warehouse-context",
+      "exists": true,
+      "sha256": "f2c071bd79df06a6ed5275009ade0daa778e5ac79b427bec849f0f6199fea989"
+    },
+    {
+      "path": "data-private/reference/tennis/fanduel-lines-2026-05-31.json",
+      "role": "fanduel-lines",
+      "exists": true,
+      "sha256": "ff670234f4f53f4b5c62fb28d6273f8b25620a77ea07249de725d7b8d0e2b207"
+    },
+    {
+      "path": "data-private/predictions/tennis/2026-05-31-multimodel-ensemble.json",
+      "role": "multimodel-ensemble",
+      "exists": true,
+      "sha256": "cf591995c88d76fe69ab819569d316416c4a4ce53ad1226369c8b7a1d275eb9a"
+    },
+    {
+      "path": "data-private/predictions/tennis/2026-05-31-derivative-markets.json",
+      "role": "derivative-markets",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "path": "data-private/reports/kalshi-tennis-spike-model-2026-05-31.json",
+      "role": "kalshi-spike-model",
+      "exists": true,
+      "sha256": "33f592dd1ffaafbf5cf5e87d97f7e22bc2c30067d7f0beb2ea79e5ce884f77b8"
+    }
+  ]
+}

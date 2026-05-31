@@ -12,7 +12,7 @@ const SNAPSHOT_SCHEMA = 1
 
 const parseArgs = () => {
   const args = process.argv.slice(2)
-  const options = { date: '', model: 'T0', update: false }
+  const options = { date: '', model: 'TEN-T0', update: false }
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index]
     if (arg === '--date') {
@@ -257,7 +257,7 @@ const buildCalibration = async ({ model, date }) => {
       modelBacktest: kalshi.modelBacktest ?? null
     },
     notes: [
-      'T0 calibration is stored as a baseline for comparison only.',
+      'TEN-T0 calibration is stored as a baseline for comparison only.',
       'Future cartridges must report bucketed performance by ML, spread, match O-U, first-set O-U, set-win, and Kalshi trade-to-sell.'
     ]
   }

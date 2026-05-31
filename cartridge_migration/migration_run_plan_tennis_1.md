@@ -13,24 +13,24 @@ This migration exists to make future AI-assisted model iterations safer. The cor
 
 ## Current Baseline
 
-- Current model cartridge: `T0`
-- Current feature version: `F0`
+- Current model cartridge: `TEN-T0`
+- Current feature version: `TEN-F0`
 - Current warehouse version before this migration: `W0`
-- Current evaluator version: `E0`
+- Current evaluator version: `TEN-E0`
 - Golden lock date: `2026-05-31`
 
-Existing T0 artifacts:
+Existing TEN-T0 artifacts:
 
-- `pipeline/tennis_model_cartridges/T0/manifest.json`
-- `data-private/model-cartridges/tennis/T0/golden/2026-05-31.snapshot.json`
-- `data-private/model-cartridges/tennis/T0/calibration/2026-05-31.calibration.json`
+- `models/tennis/cartridges/TEN-T0/manifest.json`
+- `data-private/model-cartridges/tennis/TEN-T0/golden/2026-05-31.snapshot.json`
+- `data-private/model-cartridges/tennis/TEN-T0/calibration/2026-05-31.calibration.json`
 - `pipeline/verify-tennis-model-snapshot.mjs`
 
 Current warehouse of record:
 
 - `data-private/warehouse/sports.db`
 
-Important: `data-private/tennis.db` exists locally, but this migration should not assume it is authoritative. Treat it as legacy/stray unless a later audit proves otherwise. All W1 tables should be added to `data-private/warehouse/sports.db`.
+Important: `data-private/tennis.db` exists locally, but this migration should not assume it is authoritative. Treat it as legacy/stray unless a later audit proves otherwise. All TEN-W1 tables should be added to `data-private/warehouse/sports.db`.
 
 ## Warehouse Split Decision
 
@@ -42,7 +42,7 @@ The cleaner future shape is likely:
 - `data-private/warehouse/mlb.db`
 - optional `data-private/warehouse/shared.db` for source snapshots, deploy records, and cross-sport model history
 
-But that belongs to a later migration. W1 stays inside `sports.db` to avoid mixing model-cartridge work with warehouse relocation.
+But that belongs to a later migration. TEN-W1 stays inside `sports.db` to avoid mixing model-cartridge work with warehouse relocation.
 
 For this migration, new code should use a warehouse path resolver instead of hard-coding `sports.db`. Existing scripts can keep their current paths until a dedicated DB split migration.
 
@@ -51,7 +51,7 @@ For this migration, new code should use a warehouse path resolver instead of har
 After this migration, tennis model runs should be represented as:
 
 ```text
-Raw data -> Warehouse W1 -> Feature F0 -> Model T0 -> Evaluator E0 -> Daily run snapshot
+Raw data -> Warehouse TEN-W1 -> Feature TEN-F0 -> Model TEN-T0 -> Evaluator TEN-E0 -> Daily run snapshot
 ```
 
 The system should be able to answer:
@@ -139,33 +139,33 @@ Examples:
 
 ```text
 pipeline/
-  tennis_model_registry.json
+  models/tennis/registry.json
 
   tennis_warehouse_migrations/
-    W1/
+    TEN-W1/
       001_add_model_run_tables.sql
       002_add_model_run_grade_tables.sql
 
   tennis_model_cartridges/
-    T0/
+    TEN-T0/
       manifest.json
       model_description.json
       MODEL_NOTES.md
       runner.mjs
       output-contract.json
 
-    F0/
+    TEN-F0/
       manifest.json
       feature-contract.json
 
-    E0/
+    TEN-E0/
       manifest.json
       metrics-contract.json
 
 data-private/
   model-runs/
     tennis/
-      T0/
+      TEN-T0/
         2026-05-31/
           run.json
           files.lock.json
@@ -179,11 +179,11 @@ data-private/
           publish.json
 ```
 
-`runner.mjs` may begin as a thin wrapper around `pipeline/generate-tennis-day-module.mjs --model T0`. It exists to make the cartridge interface real without duplicating model math yet.
+`runner.mjs` may begin as a thin wrapper around `pipeline/generate-tennis-day-module.mjs --model TEN-T0`. It exists to make the cartridge interface real without duplicating model math yet.
 
 ## DB Additions
 
-Migration set: `W1`
+Migration set: `TEN-W1`
 
 Add tables only. Do not modify existing tennis tables destructively.
 
@@ -345,11 +345,11 @@ label_available
 created_at
 ```
 
-Known risk: `pipeline/tennis_multimodel_backtest.py` currently refreshes `tennis_model_training_rows` with `if_exists="replace"`. That table can remain as a legacy/current scratch table, but W1 needs a run-scoped append-only snapshot so historical cartridge runs remain reproducible.
+Known risk: `pipeline/tennis_multimodel_backtest.py` currently refreshes `tennis_model_training_rows` with `if_exists="replace"`. That table can remain as a legacy/current scratch table, but TEN-W1 needs a run-scoped append-only snapshot so historical cartridge runs remain reproducible.
 
 ## Registry
 
-Create `pipeline/tennis_model_registry.json`.
+Create `models/tennis/registry.json`.
 
 Initial shape:
 
@@ -357,10 +357,10 @@ Initial shape:
 {
   "sport": "tennis",
   "active": {
-    "warehouse": "W1",
-    "features": "F0",
-    "model": "T0",
-    "evaluator": "E0"
+    "warehouse": "TEN-W1",
+    "features": "TEN-F0",
+    "model": "TEN-T0",
+    "evaluator": "TEN-E0"
   },
   "shadow": [],
   "promotionPolicy": {
@@ -370,7 +370,7 @@ Initial shape:
 }
 ```
 
-The registry should also become the place to discover the active runner command and publish contract. Do not hard-code `T0` in new scripts if it can be read from the registry.
+The registry should also become the place to discover the active runner command and publish contract. Do not hard-code `TEN-T0` in new scripts if it can be read from the registry.
 
 ## Data Source Contracts
 
@@ -407,13 +407,13 @@ Initial May 31 run:
 
 ```json
 {
-  "runId": "tennis-2026-05-31-W1-F0-T0-E0",
+  "runId": "tennis-2026-05-31-TEN-W1-TEN-F0-TEN-T0-TEN-E0",
   "sport": "tennis",
   "slateDate": "2026-05-31",
-  "warehouseVersion": "W1",
-  "featureVersion": "F0",
-  "modelId": "T0",
-  "evaluatorVersion": "E0",
+  "warehouseVersion": "TEN-W1",
+  "featureVersion": "TEN-F0",
+  "modelId": "TEN-T0",
+  "evaluatorVersion": "TEN-E0",
   "mode": "pregame",
   "status": "locked"
 }
@@ -429,7 +429,7 @@ Before locking a run, the AI must:
 - Hash source files.
 - Record input files in `inputs.lock.json`.
 - Hash input files.
-- Run the T0 snapshot verifier.
+- Run the TEN-T0 snapshot verifier.
 - Store output hashes.
 - Mark run `locked`.
 - Record current git commit.
@@ -448,7 +448,7 @@ Changed file classifications:
 - `generated_artifact`
 - `documentation`
 
-Required source-code inventory for T0 should include more than the final day generator. Audit before implementation, but expected files include:
+Required source-code inventory for TEN-T0 should include more than the final day generator. Audit before implementation, but expected files include:
 
 - `pipeline/generate-tennis-day-module.mjs`
 - `pipeline/tennis_multimodel_backtest.py`
@@ -492,7 +492,7 @@ Use this as the command-shaped checklist for each new tennis cartridge. Replace 
 
 ```bash
 MODEL_ID=T1
-PREV_MODEL_ID=T0
+PREV_MODEL_ID=TEN-T0
 CARTRIDGE_DIR="pipeline/tennis_model_cartridges/${MODEL_ID}"
 PREV_DIR="pipeline/tennis_model_cartridges/${PREV_MODEL_ID}"
 
@@ -571,7 +571,7 @@ Do not touch MLB during this migration except where shared UI types require non-
 
 Tennis model page should eventually show:
 
-- Active tennis stack: `W1 / F0 / T0 / E0`
+- Active tennis stack: `TEN-W1 / TEN-F0 / TEN-T0 / TEN-E0`
 - Latest run date.
 - Run status.
 - Source drift status.
@@ -597,7 +597,7 @@ Tennis model page should eventually show:
 
 It should also split tennis model history from MLB history so tennis can show:
 
-- Model designation (`T0`, `T1`, etc.).
+- Model designation (`TEN-T0`, `T1`, etc.).
 - Feature version and warehouse version.
 - Changelog by cartridge.
 - Daily run history by slate date.
@@ -611,30 +611,30 @@ Public/static exports must not expose private raw data from `data-private/`; exp
 
 ### Phase 1: Registry And Manifests
 
-- [x] Create `pipeline/tennis_model_registry.json`.
+- [x] Create `models/tennis/registry.json`.
 - [x] Create shared warehouse path resolver(s) for new Python/Node tennis cartridge code.
-- [x] Create `pipeline/tennis_model_cartridges/F0/manifest.json`.
-- [x] Create `pipeline/tennis_model_cartridges/E0/manifest.json`.
-- [x] Create `pipeline/tennis_model_cartridges/T0/runner.mjs` as a thin stable entrypoint.
-- [x] Create `pipeline/tennis_model_cartridges/T0/output-contract.json`.
-- [x] Create `pipeline/tennis_model_cartridges/T0/model_description.json`.
-- [x] Create `pipeline/tennis_model_cartridges/T0/MODEL_NOTES.md`.
-- [x] Create `pipeline/tennis_model_cartridges/F0/feature-contract.json`.
-- [x] Create `pipeline/tennis_model_cartridges/E0/metrics-contract.json`.
-- [x] Update `pipeline/tennis_model_cartridges/T0/manifest.json` with `warehouseVersion`, `featureVersion`, and `evaluatorVersion`.
-- [ ] Add the full T0 source-code inventory to manifests, not only the final generator.
+- [x] Create `pipeline/tennis_model_cartridges/TEN-F0/manifest.json`.
+- [x] Create `pipeline/tennis_model_cartridges/TEN-E0/manifest.json`.
+- [x] Create `models/tennis/cartridges/TEN-T0/runner.mjs` as a thin stable entrypoint.
+- [x] Create `models/tennis/cartridges/TEN-T0/output-contract.json`.
+- [x] Create `models/tennis/cartridges/TEN-T0/model_description.json`.
+- [x] Create `models/tennis/cartridges/TEN-T0/MODEL_NOTES.md`.
+- [x] Create `pipeline/tennis_model_cartridges/TEN-F0/feature-contract.json`.
+- [x] Create `pipeline/tennis_model_cartridges/TEN-E0/metrics-contract.json`.
+- [x] Update `models/tennis/cartridges/TEN-T0/manifest.json` with `warehouseVersion`, `featureVersion`, and `evaluatorVersion`.
+- [ ] Add the full TEN-T0 source-code inventory to manifests, not only the final generator.
 - [ ] Add source hash expectations for any new framework files after they are stable.
 
-### Phase 2: W1 Migration
+### Phase 2: TEN-W1 Migration
 
-- [x] Create `pipeline/tennis_warehouse_migrations/W1/001_add_model_run_tables.sql`.
+- [x] Create `pipeline/tennis_warehouse_migrations/TEN-W1/001_add_model_run_tables.sql`.
 - [x] Add a migration runner or extend `pipeline/tennis_warehouse.py`.
 - [x] Ensure migration runner is append-only.
-- [x] Add `tennis_schema_migrations` and mark W1 applied.
+- [x] Add `tennis_schema_migrations` and mark TEN-W1 applied.
 - [x] Confirm the migration targets `data-private/warehouse/sports.db`.
-- [x] Do not move tennis data into `tennis.db` during W1.
+- [x] Do not move tennis data into `tennis.db` during TEN-W1.
 - [x] Add run-scoped training-row snapshot storage so replaced legacy training rows do not erase provenance.
-- [x] Add tests that W1 tables exist after migration.
+- [x] Add tests that TEN-W1 tables exist after migration.
 - [x] Add tests that migration can run twice safely.
 
 ### Phase 3: Run Creation And Locking
@@ -645,19 +645,19 @@ Public/static exports must not expose private raw data from `data-private/`; exp
 - [x] Add locked-run guard so `create-tennis-model-run.mjs` cannot accidentally downgrade an already locked run.
 - [ ] Add `--run-id` support to `pipeline/generate-tennis-day-module.mjs`.
 - [ ] Emit `runId`, `warehouseVersion`, `featureVersion`, `modelId`, and `evaluatorVersion` in prediction output.
-- [x] Write May 31 T0 run files under `data-private/model-runs/tennis/T0/2026-05-31/`.
-- [x] Insert May 31 T0 run rows into the DB.
+- [x] Write May 31 TEN-T0 run files under `data-private/model-runs/tennis/TEN-T0/2026-05-31/`.
+- [x] Insert May 31 TEN-T0 run rows into the DB.
 - [x] Write `health.json` from the pregame health gate.
 - [x] Store parsed health/data-source check names in `health.json`.
 - [ ] Write `publish.json` only if public export/deploy is performed.
 
-Note: `--run-id` generator support was intentionally deferred after the T0 verifier caught it as source drift. Keep T0 frozen; add run IDs to generator output only through a verifier-compatible framework update or a future cartridge.
+Note: `--run-id` generator support was intentionally deferred after the TEN-T0 verifier caught it as source drift. Keep TEN-T0 frozen; add run IDs to generator output only through a verifier-compatible framework update or a future cartridge.
 
-Note: the expanded source inventory is currently enforced in `files.lock.json` by `lock-tennis-model-run.mjs`. Expanding `T0/manifest.json` itself would alter the golden snapshot metadata, so keep that as a verifier-aware Phase 4 decision.
+Note: the expanded source inventory is currently enforced in `files.lock.json` by `lock-tennis-model-run.mjs`. Expanding `TEN-T0/manifest.json` itself would alter the golden snapshot metadata, so keep that as a verifier-aware Phase 4 decision.
 
 ### Phase 4: Verifier Upgrade
 
-- [x] Keep `pipeline/verify-tennis-model-snapshot.mjs` frozen as the T0 math/golden-snapshot guard.
+- [x] Keep `pipeline/verify-tennis-model-snapshot.mjs` frozen as the TEN-T0 math/golden-snapshot guard.
 - [x] Add `pipeline/verify-tennis-model-run.mjs` as the run-level verifier around the frozen snapshot.
 - [x] Verify source locks.
 - [x] Verify input locks.
@@ -669,7 +669,7 @@ Note: the expanded source inventory is currently enforced in `files.lock.json` b
 - [x] Verify no private raw data is referenced by public static exports, including model-history exports.
 - [x] Keep current May 31 golden snapshot test passing after re-lock.
 
-Note: the snapshot verifier intentionally does not read the run manifest yet. It remains a narrow proof that T0 output did not silently change. `verify-tennis-model-run.mjs` is the wider cartridge/run proof that source locks, input locks, output locks, DB rows, health gates, and value-book coverage agree.
+Note: the snapshot verifier intentionally does not read the run manifest yet. It remains a narrow proof that TEN-T0 output did not silently change. `verify-tennis-model-run.mjs` is the wider cartridge/run proof that source locks, input locks, output locks, DB rows, health gates, and value-book coverage agree.
 
 ### Phase 5: Export And UI
 
@@ -684,8 +684,8 @@ Note: the snapshot verifier intentionally does not read the run manifest yet. It
 ### Phase 6: Test And Build
 
 - [x] Run `npm test`.
-- [x] Run tennis T0 snapshot verification.
-- [x] Run tennis T0 run verification.
+- [x] Run tennis TEN-T0 snapshot verification.
+- [x] Run tennis TEN-T0 run verification.
 - [x] Run `npm run data:health:tennis -- --date 2026-05-31 --pregame`.
 - [ ] Run or simulate `npm run data:health:tennis -- --date 2026-05-31 --settled` when postmatch artifacts exist.
 - [x] Run `tsc`.
@@ -694,7 +694,7 @@ Note: the snapshot verifier intentionally does not read the run manifest yet. It
 ### Phase 7: Postmatch And Backtest Records
 
 - [x] Define how settled runs are created without mutating the pregame prediction snapshot.
-- [x] Create `pipeline/tennis_warehouse_migrations/W1/002_add_model_run_grade_tables.sql`.
+- [x] Create `pipeline/tennis_warehouse_migrations/TEN-W1/002_add_model_run_grade_tables.sql`.
 - [x] Create `pipeline/settle-tennis-model-run.mjs`.
 - [x] Add `npm run data:settle:tennis-run`.
 - [x] Store result grades by lane in `tennis_model_run_lane_grades`.
@@ -703,11 +703,11 @@ Note: the snapshot verifier intentionally does not read the run manifest yet. It
 - [x] Store bucketed calibration tables for settled rows.
 - [x] Tie settlement rows back to `source_run_id` and the locked run/evaluator stack.
 - [x] Do not rely on the legacy replaced `tennis_model_training_rows` table as the sole historical truth.
-- [x] Generate `data-private/model-runs/tennis/T0/2026-05-31/postmatch-grades.json`.
+- [x] Generate `data-private/model-runs/tennis/TEN-T0/2026-05-31/postmatch-grades.json`.
 - [x] Persist May 31 postmatch settlement as pending until results exist.
-- [x] Add test coverage for W1 grade tables and the May 31 pending settlement artifact.
+- [x] Add test coverage for TEN-W1 grade tables and the May 31 pending settlement artifact.
 - [ ] Add ATP/WTA and round-specific calibration buckets after the first settled Phase 7 grading pass.
-- [ ] Run `npm run data:settle:tennis-run -- --date YYYY-MM-DD --model T0 --require-settled` after results import for each completed slate.
+- [ ] Run `npm run data:settle:tennis-run -- --date YYYY-MM-DD --model TEN-T0 --require-settled` after results import for each completed slate.
 
 ### Phase 8: Deploy Safety
 
@@ -720,15 +720,15 @@ Phase 8 deployment note:
 
 - Deployed `2026-05-31` with `npm run publish:site -- --date 2026-05-31`.
 - Production alias verified: `https://slate-web-static-1.vercel.app`.
-- Deployment URL recorded in `data-private/model-runs/tennis/T0/2026-05-31/publish.json`.
+- Deployment URL recorded in `data-private/model-runs/tennis/TEN-T0/2026-05-31/publish.json`.
 - No `2026-06-01` slate exists yet, so the two-day public window correctly exported only `2026-05-31`.
 - The deploy script now supports `--dry-run` for build/preflight without writing `publish.json` or pushing to Vercel.
 
 ### Phase 9: Cartridge Model Cards
 
-- [x] Add T0 `model_description.json` with key improvements, key metrics, notes, and limitations.
-- [x] Add T0 `MODEL_NOTES.md` for the human-readable cartridge model card.
-- [x] Update T0 manifest with model-description and model-notes paths.
+- [x] Add TEN-T0 `model_description.json` with key improvements, key metrics, notes, and limitations.
+- [x] Add TEN-T0 `MODEL_NOTES.md` for the human-readable cartridge model card.
+- [x] Update TEN-T0 manifest with model-description and model-notes paths.
 - [x] Export cartridge model-card metadata through public model history.
 - [x] Show model notes on the Models page.
 - [x] Add test coverage so future tennis cartridges cannot skip the required model-card files.
@@ -738,29 +738,29 @@ Phase 8 deployment note:
 
 Likely source/config files created:
 
-- `pipeline/tennis_model_registry.json`
+- `models/tennis/registry.json`
 - `pipeline/warehouse_paths.py`
 - `pipeline/lib/warehouse-paths.mjs`
-- `pipeline/tennis_warehouse_migrations/W1/001_add_model_run_tables.sql`
-- `pipeline/tennis_warehouse_migrations/W1/002_add_model_run_grade_tables.sql`
+- `pipeline/tennis_warehouse_migrations/TEN-W1/001_add_model_run_tables.sql`
+- `pipeline/tennis_warehouse_migrations/TEN-W1/002_add_model_run_grade_tables.sql`
 - `pipeline/create-tennis-model-run.mjs`
 - `pipeline/lock-tennis-model-run.mjs`
 - `pipeline/verify-tennis-model-run.mjs`
 - `pipeline/settle-tennis-model-run.mjs`
-- `pipeline/tennis_model_cartridges/T0/runner.mjs`
-- `pipeline/tennis_model_cartridges/T0/output-contract.json`
-- `pipeline/tennis_model_cartridges/T0/model_description.json`
-- `pipeline/tennis_model_cartridges/T0/MODEL_NOTES.md`
-- `pipeline/tennis_model_cartridges/F0/manifest.json`
-- `pipeline/tennis_model_cartridges/F0/feature-contract.json`
-- `pipeline/tennis_model_cartridges/E0/manifest.json`
-- `pipeline/tennis_model_cartridges/E0/metrics-contract.json`
+- `models/tennis/cartridges/TEN-T0/runner.mjs`
+- `models/tennis/cartridges/TEN-T0/output-contract.json`
+- `models/tennis/cartridges/TEN-T0/model_description.json`
+- `models/tennis/cartridges/TEN-T0/MODEL_NOTES.md`
+- `pipeline/tennis_model_cartridges/TEN-F0/manifest.json`
+- `pipeline/tennis_model_cartridges/TEN-F0/feature-contract.json`
+- `pipeline/tennis_model_cartridges/TEN-E0/manifest.json`
+- `pipeline/tennis_model_cartridges/TEN-E0/metrics-contract.json`
 
 Likely existing files edited:
 
 - `pipeline/generate-tennis-day-module.mjs`
 - `pipeline/verify-tennis-model-snapshot.mjs`
-- `pipeline/tennis_model_cartridges/T0/manifest.json`
+- `models/tennis/cartridges/TEN-T0/manifest.json`
 - `pipeline/tennis_warehouse.py`
 - `pipeline/tennis_pipeline_health.py`
 - `pipeline/tennis_multimodel_backtest.py`
@@ -771,32 +771,32 @@ Likely existing files edited:
 
 Likely generated artifacts:
 
-- `data-private/model-runs/tennis/T0/2026-05-31/run.json`
-- `data-private/model-runs/tennis/T0/2026-05-31/files.lock.json`
-- `data-private/model-runs/tennis/T0/2026-05-31/inputs.lock.json`
-- `data-private/model-runs/tennis/T0/2026-05-31/predictions.snapshot.json`
-- `data-private/model-runs/tennis/T0/2026-05-31/calibration.json`
-- `data-private/model-runs/tennis/T0/2026-05-31/backtest.json`
-- `data-private/model-runs/tennis/T0/2026-05-31/grades.json`
-- `data-private/model-runs/tennis/T0/2026-05-31/postmatch-grades.json`
-- `data-private/model-runs/tennis/T0/2026-05-31/health.json`
-- `data-private/model-runs/tennis/T0/2026-05-31/publish.json`
+- `data-private/model-runs/tennis/TEN-T0/2026-05-31/run.json`
+- `data-private/model-runs/tennis/TEN-T0/2026-05-31/files.lock.json`
+- `data-private/model-runs/tennis/TEN-T0/2026-05-31/inputs.lock.json`
+- `data-private/model-runs/tennis/TEN-T0/2026-05-31/predictions.snapshot.json`
+- `data-private/model-runs/tennis/TEN-T0/2026-05-31/calibration.json`
+- `data-private/model-runs/tennis/TEN-T0/2026-05-31/backtest.json`
+- `data-private/model-runs/tennis/TEN-T0/2026-05-31/grades.json`
+- `data-private/model-runs/tennis/TEN-T0/2026-05-31/postmatch-grades.json`
+- `data-private/model-runs/tennis/TEN-T0/2026-05-31/health.json`
+- `data-private/model-runs/tennis/TEN-T0/2026-05-31/publish.json`
 
 Estimated next-pass source/config touch count: 16-22 files.
 
 ## Acceptance Criteria
 
-- [x] T0 May 31 snapshot still verifies.
-- [x] W1 migration is append-only and idempotent.
-- [x] W1 migration applies to `data-private/warehouse/sports.db`.
-- [x] New W1/cartridge code uses a warehouse path resolver instead of introducing new direct `sports.db` hard-codes.
-- [x] May 31 T0 run has a run manifest.
-- [x] May 31 T0 run has source/input/output locks.
-- [x] May 31 T0 run stores health and data-source coverage.
-- [x] May 31 T0 run has an append-only training-row snapshot or explicit training-row hash.
-- [x] May 31 T0 run is represented in the DB.
-- [x] T0 has a required machine-readable model card.
-- [x] T0 has required human model notes.
+- [x] TEN-T0 May 31 snapshot still verifies.
+- [x] TEN-W1 migration is append-only and idempotent.
+- [x] TEN-W1 migration applies to `data-private/warehouse/sports.db`.
+- [x] New TEN-W1/cartridge code uses a warehouse path resolver instead of introducing new direct `sports.db` hard-codes.
+- [x] May 31 TEN-T0 run has a run manifest.
+- [x] May 31 TEN-T0 run has source/input/output locks.
+- [x] May 31 TEN-T0 run stores health and data-source coverage.
+- [x] May 31 TEN-T0 run has an append-only training-row snapshot or explicit training-row hash.
+- [x] May 31 TEN-T0 run is represented in the DB.
+- [x] TEN-T0 has a required machine-readable model card.
+- [x] TEN-T0 has required human model notes.
 - [x] Model page can show tennis active stack without affecting MLB.
 - [x] Model history can show tennis model designation and daily run history.
 - [x] Postmatch settlement rows can be stored without overwriting the pregame prediction snapshot.
@@ -810,9 +810,9 @@ Estimated next-pass source/config touch count: 16-22 files.
 Stop and reassess if:
 
 - A required source file hash changes unexpectedly.
-- T0 May 31 snapshot no longer matches.
+- TEN-T0 May 31 snapshot no longer matches.
 - A migration requires dropping or renaming existing DB fields.
-- A migration attempts to split or relocate the warehouse during W1.
+- A migration attempts to split or relocate the warehouse during TEN-W1.
 - The Models page change starts affecting MLB rendering.
 - A supposed framework change changes any prediction output.
 - A public export tries to include private raw reference data.

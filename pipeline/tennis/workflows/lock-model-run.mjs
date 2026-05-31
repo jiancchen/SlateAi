@@ -47,14 +47,14 @@ const sourceInventory = ({ manifest, manifestPath, registryPath }) => {
   const frameworkFiles = [
     { path: registryPath || 'models/tennis/registry.json', role: 'model-registry' },
     { path: manifestPath, role: 'model-manifest' },
-    { path: manifest.entrypoint || 'models/tennis/cartridges/T0/runner.mjs', role: 'model-runner-wrapper' },
-    { path: manifest.outputContract || 'models/tennis/cartridges/T0/output-contract.json', role: 'output-contract' },
-    { path: manifest.modelDescription || 'models/tennis/cartridges/T0/model_description.json', role: 'model-description' },
-    { path: manifest.modelNotes || 'models/tennis/cartridges/T0/MODEL_NOTES.md', role: 'model-notes' },
-    { path: 'models/tennis/cartridges/F0/manifest.json', role: 'feature-manifest' },
-    { path: manifest.featureContract || 'models/tennis/cartridges/F0/feature-contract.json', role: 'feature-contract' },
-    { path: 'models/tennis/cartridges/E0/manifest.json', role: 'evaluator-manifest' },
-    { path: manifest.metricsContract || 'models/tennis/cartridges/E0/metrics-contract.json', role: 'metrics-contract' },
+    { path: manifest.entrypoint || 'models/tennis/cartridges/TEN-T0/runner.mjs', role: 'model-runner-wrapper' },
+    { path: manifest.outputContract || 'models/tennis/cartridges/TEN-T0/output-contract.json', role: 'output-contract' },
+    { path: manifest.modelDescription || 'models/tennis/cartridges/TEN-T0/model_description.json', role: 'model-description' },
+    { path: manifest.modelNotes || 'models/tennis/cartridges/TEN-T0/MODEL_NOTES.md', role: 'model-notes' },
+    { path: 'models/tennis/cartridges/TEN-F0/manifest.json', role: 'feature-manifest' },
+    { path: manifest.featureContract || 'models/tennis/cartridges/TEN-F0/feature-contract.json', role: 'feature-contract' },
+    { path: 'models/tennis/cartridges/TEN-E0/manifest.json', role: 'evaluator-manifest' },
+    { path: manifest.metricsContract || 'models/tennis/cartridges/TEN-E0/metrics-contract.json', role: 'metrics-contract' },
     { path: 'pipeline/lib/model-cartridge-resolver.mjs', role: 'cartridge-resolver' },
     { path: 'pipeline/lib/model-run-utils.mjs', role: 'run-lock-helper' },
     { path: 'pipeline/lib/warehouse-paths.mjs', role: 'warehouse-path-resolver' },
@@ -73,8 +73,8 @@ const sourceInventory = ({ manifest, manifestPath, registryPath }) => {
     { path: 'pipeline/tennis/workflows/settle-model-run.mjs', role: 'postmatch-settlement' },
     { path: 'pipeline/tennis/research/value_backtest.py', role: 'sportsbook-value-backtest' },
     { path: 'pipeline/tennis/warehouse/tennis_warehouse.py', role: 'warehouse-code' },
-    { path: 'pipeline/tennis/warehouse/migrations/W1/001_add_model_run_tables.sql', role: 'warehouse-migration' },
-    { path: 'pipeline/tennis/warehouse/migrations/W1/002_add_model_run_grade_tables.sql', role: 'warehouse-migration' },
+    { path: 'pipeline/tennis/warehouse/migrations/TEN-W1/001_add_model_run_tables.sql', role: 'warehouse-migration' },
+    { path: 'pipeline/tennis/warehouse/migrations/TEN-W1/002_add_model_run_grade_tables.sql', role: 'warehouse-migration' },
     { path: 'api/src/scripts/export-published-data.ts', role: 'public-exporter' },
     { path: 'scripts/export-public-current.mjs', role: 'public-exporter' },
     { path: 'web/src/lib/archive-loaders.ts', role: 'model-history-loader' },
@@ -267,6 +267,13 @@ const main = async () => {
   const git = await gitInfo()
   const lockedRun = {
     ...currentRun,
+    runId,
+    sport: 'tennis',
+    slateDate: options.date,
+    warehouseVersion: stack.warehouseVersion,
+    featureVersion: stack.featureVersion,
+    modelId: model,
+    evaluatorVersion: stack.evaluatorVersion,
     status: 'locked',
     mode: options.mode,
     lockedAt: new Date().toISOString(),
@@ -280,6 +287,16 @@ const main = async () => {
       stdout: verifier.stdout,
       stderr: verifier.stderr
     },
+    registry: {
+      path: registry.registryPath || 'models/tennis/registry.json',
+      active: registry.active || null
+    },
+    modelManifest: {
+      path: manifestPath,
+      name: manifest.name || null,
+      status: manifest.status || null
+    },
+    notes: `Locked ${model} pregame run for ${options.date}.`,
     git
   }
   await writeJson(`${runDir}/run.json`, lockedRun)

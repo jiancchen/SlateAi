@@ -94,7 +94,7 @@ npm run publish:site -- --date YYYY-MM-DD
 After production deploy, check the model run publish artifact:
 
 ```bash
-cat data-private/model-runs/tennis/T0/YYYY-MM-DD/publish.json
+cat data-private/model-runs/tennis/TEN-T0/YYYY-MM-DD/publish.json
 ```
 
 ## What Vercel Should Ship

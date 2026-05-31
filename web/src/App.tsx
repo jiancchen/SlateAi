@@ -3307,7 +3307,7 @@ function App() {
             askCents,
             hasMarket,
             kalshiTicker: kalshiRow?.ticker || null,
-            confidenceSource: 'M0 projected first-five run distribution'
+            confidenceSource: 'MLB-M0 projected first-five run distribution'
           }
         }
       })
@@ -3385,7 +3385,7 @@ function App() {
             hasMarket,
             lineSource,
             kalshiTicker: kalshiTotal?.ticker || null,
-            confidenceSource: 'M0 projected first-five total run distribution'
+            confidenceSource: 'MLB-M0 projected first-five total run distribution'
           }
         }
       })
@@ -3677,8 +3677,8 @@ function App() {
       topRows,
       note:
         fullyPostedGames === mlbGames.length
-          ? 'MLB value center is fully posted for today: sides, full-game totals, First 5 ML/O-U, TB-backed bats, strikeout O/U, HR watch, and batting-impact lanes. First 5 confidence is derived from the M0 projected run distribution; missing market prices are marked as need-line.'
-          : `MLB value center is live, but only ${fullyPostedGames}/${mlbGames.length} games are fully posted. First 5 ML/O-U now uses M0 projected run distribution instead of generic confidence; rows without mapped prices are need-line, not blind bets.`
+          ? 'MLB value center is fully posted for today: sides, full-game totals, First 5 ML/O-U, TB-backed bats, strikeout O/U, HR watch, and batting-impact lanes. First 5 confidence is derived from the MLB-M0 projected run distribution; missing market prices are marked as need-line.'
+          : `MLB value center is live, but only ${fullyPostedGames}/${mlbGames.length} games are fully posted. First 5 ML/O-U now uses MLB-M0 projected run distribution instead of generic confidence; rows without mapped prices are need-line, not blind bets.`
     }
   }, [
     activeDayId,

@@ -22,7 +22,7 @@ models/
   tennis/
     registry.json
     cartridges/
-      T0/
+      TEN-T0/
         manifest.json
         model_description.json
         MODEL_NOTES.md
@@ -36,7 +36,7 @@ models/
   mlb/
     registry.json
     cartridges/
-      M0/
+      MLB-M0/
         manifest.json
         model_description.json
         MODEL_NOTES.md
@@ -47,7 +47,7 @@ models/
         tests/
         fixtures/
 
-      RP36/
+      MLB-RP36/
         manifest.json
         model_description.json
         MODEL_NOTES.md
@@ -88,38 +88,38 @@ MLB is not one clean monolith.
 Use this stack:
 
 ```text
-M0 = parent MLB side / market model
-RP36 = relief pitcher addendum, legacy alias E36 shadow
+MLB-M0 = parent MLB side / market model
+MLB-RP36 = relief pitcher addendum
 SP0 = optional starter-exit component if/when split out
-E0 = evaluator / settlement layer
+TEN-E0 = evaluator / settlement layer
 ```
 
-`M0` owns final picks. `RP36` produces relief context, warnings, first-up reliever clusters, and bullpen-path adjustments consumed by `M0`.
+`MLB-M0` owns final picks. `MLB-RP36` produces relief context, warnings, first-up reliever clusters, and bullpen-path adjustments consumed by `MLB-M0`.
 
-`RP36` is not a competing parent model.
+`MLB-RP36` is not a competing parent model.
 
-Example `M0` manifest concept:
+Example `MLB-M0` manifest concept:
 
 ```json
 {
-  "modelId": "M0",
+  "modelId": "MLB-M0",
   "sport": "mlb",
   "role": "parent_model",
-  "components": ["RP36"],
+  "components": ["MLB-RP36"],
   "lanes": ["moneyline", "first5", "totals", "first_inning", "props"],
   "runner": "./runner.mjs"
 }
 ```
 
-Example `RP36` manifest concept:
+Example `MLB-RP36` manifest concept:
 
 ```json
 {
-  "modelId": "RP36",
+  "modelId": "MLB-RP36",
   "sport": "mlb",
   "role": "relief_addendum",
-  "legacyAlias": ["E36 shadow"],
-  "consumedBy": ["M0"],
+  "originExperiment": "reliever shadow",
+  "consumedBy": ["MLB-M0"],
   "runner": "./runner.py",
   "scripts": [
     "./starter_exit.py",
@@ -161,12 +161,12 @@ Pipeline wrappers may call cartridge runners, but model behavior should not be s
 ```text
 development-docs/
   mlb/
-    M0/
+    MLB-M0/
       runbooks/
       model-research/
       postmortems/
       changelog/
-    RP36/
+    MLB-RP36/
       runbooks/
       model-research/
       relief-pitching/
@@ -174,7 +174,7 @@ development-docs/
       changelog/
 
   tennis/
-    T0/
+    TEN-T0/
       runbooks/
       model-research/
       postmortems/
@@ -209,7 +209,7 @@ data-private/model-runs/{sport}/{modelId}/{date}/
     lanes.json
     value-books.json
     components/
-      RP36.json
+      MLB-RP36.json
   grades.json
   postmortem.md
 ```
@@ -235,10 +235,10 @@ Example pointer:
 ```json
 {
   "sport": "mlb",
-  "activeModelId": "M0",
-  "activeRunId": "mlb-2026-05-31-M0",
+  "activeModelId": "MLB-M0",
+  "activeRunId": "mlb-2026-05-31-MLB-M0",
   "predictionDate": "2026-05-31",
-  "path": "./M0/2026-05-31/summary.json",
+  "path": "./MLB-M0/2026-05-31/summary.json",
   "supportedUiContracts": ["sports-board-v1", "models-dashboard-v1"]
 }
 ```
@@ -256,8 +256,8 @@ Every published prediction artifact should declare:
   "schemaVersion": "model-output-v1",
   "uiContractVersion": "sports-board-v1",
   "sport": "mlb",
-  "modelId": "M0",
-  "runId": "mlb-2026-05-31-M0"
+  "modelId": "MLB-M0",
+  "runId": "mlb-2026-05-31-MLB-M0"
 }
 ```
 

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "sport": "tennis",
+  "modelId": "TEN-T0",
+  "requiredPredictionFields": [
+    "date",
+    "modelCartridge",
+    "totalSingles",
+    "picks"
+  ],
+  "requiredPickFields": [
+    "match",
+    "pick",
+    "confidence",
+    "volatility",
+    "bettingMatrix",
+    "valueBoard"
+  ],
+  "requiredValueBooks": [
+    "ml",
+    "spread",
+    "total",
+    "firstSetTotal",
+    "setWin"
+  ],
+  "publicExportRule": "Export summarized run metadata and published slate payloads only; do not expose private raw data-private reference files."
+}

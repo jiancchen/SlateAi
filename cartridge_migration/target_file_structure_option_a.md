@@ -43,7 +43,7 @@ models/
   tennis/
     registry.json
     cartridges/
-      T0/
+      TEN-T0/
         manifest.json
         model_description.json
         MODEL_NOTES.md
@@ -57,7 +57,7 @@ models/
   mlb/
     registry.json
     cartridges/
-      M0/
+      MLB-M0/
         manifest.json
         model_description.json
         MODEL_NOTES.md
@@ -68,7 +68,7 @@ models/
         lanes/
         fixtures/
         tests/
-      RP36/
+      MLB-RP36/
         manifest.json
         model_description.json
         MODEL_NOTES.md
@@ -100,19 +100,19 @@ pipeline/
 
 development-docs/
   mlb/
-    M0/
+    MLB-M0/
       runbooks/
       model-research/
       postmortems/
       changelog/
-    RP36/
+    MLB-RP36/
       runbooks/
       model-research/
       relief-pitching/
       postmortems/
       changelog/
   tennis/
-    T0/
+    TEN-T0/
       runbooks/
       model-research/
       postmortems/
@@ -138,16 +138,16 @@ data-private/
     statcast/
   model-runs/
     mlb/
-      M0/
-      RP36/
+      MLB-M0/
+      MLB-RP36/
     tennis/
-      T0/
+      TEN-T0/
   model-cartridges/
     mlb/
-      M0/
-      RP36/
+      MLB-M0/
+      MLB-RP36/
     tennis/
-      T0/
+      TEN-T0/
   predictions/
     legacy/
       mlb/
@@ -169,11 +169,11 @@ published-data/
     index.json
     mlb/
       current.json
-      M0/
-      RP36/
+      MLB-M0/
+      MLB-RP36/
     tennis/
       current.json
-      T0/
+      TEN-T0/
   slates/
   stories/
 
@@ -262,7 +262,7 @@ models/
   tennis/
     registry.json
     cartridges/
-      T0/
+      TEN-T0/
         manifest.json
         model_description.json
         MODEL_NOTES.md
@@ -286,12 +286,12 @@ models/
           2026-05-31-input.json
           2026-05-31-output.json
 
-      E0/
+      TEN-E0/
         manifest.json
         metrics-contract.json
         runner.mjs
 
-      F0/
+      TEN-F0/
         manifest.json
         feature-contract.json
         runner.mjs
@@ -299,7 +299,7 @@ models/
   mlb/
     registry.json
     cartridges/
-      M0/
+      MLB-M0/
         manifest.json
         model_description.json
         MODEL_NOTES.md
@@ -327,7 +327,7 @@ models/
           2026-05-30-input.json
           2026-05-30-output.json
 
-      RP36/
+      MLB-RP36/
         manifest.json
         model_description.json
         MODEL_NOTES.md
@@ -348,7 +348,7 @@ models/
           2026-05-30-input.json
           2026-05-30-output.json
 
-      E0/
+      TEN-E0/
         manifest.json
         metrics-contract.json
         runner.mjs
@@ -380,7 +380,7 @@ pipeline/
     warehouse/
       tennis_warehouse.py
       migrations/
-        W1/
+        TEN-W1/
           001_add_model_run_tables.sql
           002_add_model_run_grade_tables.sql
     fetchers/
@@ -437,7 +437,7 @@ Examples:
 ```text
 pipeline/run-mlb-pregame.mjs -> pipeline/mlb/workflows/pregame.mjs
 pipeline/close-mlb-day.mjs -> pipeline/mlb/workflows/followup.mjs
-pipeline/export_mlb_reliever_shadow_board.py -> models/mlb/cartridges/RP36/runner.py
+pipeline/export_mlb_reliever_shadow_board.py -> models/mlb/cartridges/MLB-RP36/runner.py
 pipeline/create-tennis-model-run.mjs -> pipeline/tennis/workflows/create_run.mjs
 ```
 
@@ -465,7 +465,7 @@ data-private/
 
   model-runs/
     tennis/
-      T0/
+      TEN-T0/
         2026-05-31/
           run.json
           predictions/
@@ -475,7 +475,7 @@ data-private/
           grades.json
           postmortem.md
     mlb/
-      M0/
+      MLB-M0/
         2026-05-30/
           run.json
           predictions/
@@ -483,10 +483,10 @@ data-private/
             lanes.json
             value-books.json
             components/
-              RP36.json
+              MLB-RP36.json
           grades.json
           postmortem.md
-      RP36/
+      MLB-RP36/
         2026-05-30/
           run.json
           predictions/
@@ -496,14 +496,14 @@ data-private/
 
   model-cartridges/
     tennis/
-      T0/
+      TEN-T0/
         golden/
         calibration/
     mlb/
-      M0/
+      MLB-M0/
         golden/
         calibration/
-      RP36/
+      MLB-RP36/
         golden/
         calibration/
 
@@ -547,8 +547,8 @@ If a prediction artifact is intended for UI consumption, it must include:
   "schemaVersion": "model-output-v1",
   "uiContractVersion": "sports-board-v1",
   "sport": "mlb",
-  "modelId": "M0",
-  "runId": "mlb-2026-05-31-M0"
+  "modelId": "MLB-M0",
+  "runId": "mlb-2026-05-31-MLB-M0"
 }
 ```
 
@@ -563,7 +563,7 @@ published-data/model-history/
   index.json
   tennis/
     current.json
-    T0/
+    TEN-T0/
       latest.json
       2026-05-31/
         summary.json
@@ -571,13 +571,13 @@ published-data/model-history/
         grades.json
   mlb/
     current.json
-    M0/
+    MLB-M0/
       latest.json
       2026-05-30/
         summary.json
         predictions.json
         grades.json
-    RP36/
+    MLB-RP36/
       latest.json
       2026-05-30/
         summary.json
@@ -590,10 +590,10 @@ Example `current.json`:
 ```json
 {
   "sport": "mlb",
-  "activeModelId": "M0",
-  "activeRunId": "mlb-2026-05-31-M0",
+  "activeModelId": "MLB-M0",
+  "activeRunId": "mlb-2026-05-31-MLB-M0",
   "predictionDate": "2026-05-31",
-  "path": "./M0/2026-05-31/summary.json",
+  "path": "./MLB-M0/2026-05-31/summary.json",
   "supportedUiContracts": ["sports-board-v1", "models-dashboard-v1"]
 }
 ```
@@ -678,19 +678,19 @@ The API can read `published-data/`, `models/registry.json`, and `data-private/mo
 ```text
 development-docs/
   mlb/
-    M0/
+    MLB-M0/
       runbooks/
       model-research/
       postmortems/
       changelog/
-    RP36/
+    MLB-RP36/
       runbooks/
       model-research/
       relief-pitching/
       postmortems/
       changelog/
   tennis/
-    T0/
+    TEN-T0/
       runbooks/
       model-research/
       postmortems/
@@ -753,11 +753,11 @@ web/node_modules/
 
 1. Add `.rgignore`.
 2. Create empty `models/` tree with registries.
-3. Copy existing tennis T0 cartridge from `pipeline/tennis_model_cartridges/T0` to `models/tennis/cartridges/T0`.
+3. Copy existing tennis TEN-T0 cartridge from `models/tennis/cartridges/TEN-T0` to `models/tennis/cartridges/TEN-T0`.
 4. Add compatibility readers so both old and new tennis locations resolve.
-5. Create MLB `M0` and `RP36` cartridge shells.
-6. Copy RP36 behavior into the cartridge and keep old exporter as wrapper.
-7. Golden-test RP36 against the existing 2026-05-30 reliever-shadow output.
+5. Create MLB `MLB-M0` and `MLB-RP36` cartridge shells.
+6. Copy MLB-RP36 behavior into the cartridge and keep old exporter as wrapper.
+7. Golden-test MLB-RP36 against the existing 2026-05-30 reliever-shadow output.
 8. Move MLB daily workflow wrappers into `pipeline/mlb/workflows`.
 9. Move docs into sport folders.
 10. Move generated web payloads out of `web/src/lib` behind public-data loaders.

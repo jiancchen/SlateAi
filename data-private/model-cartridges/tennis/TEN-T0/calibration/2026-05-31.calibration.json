@@ -1,0 +1,418 @@
+{
+  "schemaVersion": 1,
+  "modelId": "TEN-T0",
+  "date": "2026-05-31",
+  "cartridgeLock": {
+    "manifest": "models/tennis/cartridges/TEN-T0/manifest.json",
+    "sourceFiles": [
+      {
+        "role": "model-runner",
+        "path": "pipeline/tennis/publish/generate-day-module.mjs",
+        "expectedSha256": "0311b56ad83b1ca47b909e25dcc86df6fa1e6bf4e9a0c9da4908d7d7973f5026",
+        "exists": true,
+        "sha256": "0311b56ad83b1ca47b909e25dcc86df6fa1e6bf4e9a0c9da4908d7d7973f5026"
+      },
+      {
+        "role": "source-mapping-helper",
+        "path": "web/src/lib/tennis-source-mapping.js",
+        "expectedSha256": "b99bc83d33d33f1f8eb3839062ce762b97e741f02c56c4d2c5f27cbd78becba0",
+        "exists": true,
+        "sha256": "b99bc83d33d33f1f8eb3839062ce762b97e741f02c56c4d2c5f27cbd78becba0"
+      },
+      {
+        "role": "snapshot-verifier",
+        "path": "pipeline/tennis/workflows/verify-model-snapshot.mjs",
+        "expectedSha256": "dc4b55a4b5e9ce9b64c1a6cd903f3798d26dbb81c1dc7d2c7c994b64195dbd81",
+        "exists": true,
+        "sha256": "dc4b55a4b5e9ce9b64c1a6cd903f3798d26dbb81c1dc7d2c7c994b64195dbd81"
+      }
+    ],
+    "inputFiles": [
+      {
+        "path": "data-private/reference/tennis/espn-scoreboard-2026-05-31.json",
+        "exists": true,
+        "sha256": "254e56f95e3c58d8a7a0dd4e6a7c340543e7bb15880949b40171596fcbab14b6"
+      },
+      {
+        "path": "data-private/reference/tennis/player-rankings.json",
+        "exists": true,
+        "sha256": "0b54865e7fe447729493b85b51bcb7ae06ec097b9927616dd58902b725a14ba6"
+      },
+      {
+        "path": "web/src/lib/day-2026-05-31-tennis-opponent-quality.generated.json",
+        "exists": true,
+        "sha256": "81ec9c32259448e6c31d9bffce9394ef1d5fd67937e957a239fe96a7bb94e9b9"
+      },
+      {
+        "path": "web/src/lib/day-2026-05-31-tennis-clay-context.generated.json",
+        "exists": true,
+        "sha256": "18c6b17e9aee993e7d3ac0302230e9ef18558394937b9682fabc5894af4d652e"
+      },
+      {
+        "path": "web/src/lib/day-2026-05-31-tennis-warehouse-context.generated.json",
+        "exists": true,
+        "sha256": "f2c071bd79df06a6ed5275009ade0daa778e5ac79b427bec849f0f6199fea989"
+      },
+      {
+        "path": "data-private/reference/tennis/fanduel-lines-2026-05-31.json",
+        "exists": true,
+        "sha256": "ff670234f4f53f4b5c62fb28d6273f8b25620a77ea07249de725d7b8d0e2b207"
+      },
+      {
+        "path": "data-private/predictions/tennis/2026-05-31-multimodel-ensemble.json",
+        "exists": true,
+        "sha256": "cf591995c88d76fe69ab819569d316416c4a4ce53ad1226369c8b7a1d275eb9a"
+      },
+      {
+        "path": "data-private/predictions/tennis/2026-05-31-derivative-markets.json",
+        "exists": false,
+        "sha256": null
+      },
+      {
+        "path": "data-private/reports/kalshi-tennis-spike-model-2026-05-31.json",
+        "exists": true,
+        "sha256": "33f592dd1ffaafbf5cf5e87d97f7e22bc2c30067d7f0beb2ea79e5ce884f77b8"
+      }
+    ]
+  },
+  "sourceReports": {
+    "multimodel": "data-private/reports/tennis-multimodel-backtest-through-2026-05-31.json",
+    "kalshi": "data-private/reports/kalshi-tennis-spike-model-2026-05-31.json",
+    "valueBacktest": "data-private/reports/tennis-value-backtest-2026-05-30.json"
+  },
+  "winnerModel": {
+    "generatedFrom": "tennis warehouse pandas ensemble",
+    "settledRows": 266,
+    "deskBaseline": {
+      "rows": 266,
+      "hits": 175,
+      "hitRate": 0.658,
+      "byDay": {
+        "2026-05-21": {
+          "rows": 27,
+          "hits": 15,
+          "hitRate": 0.556
+        },
+        "2026-05-22": {
+          "rows": 21,
+          "hits": 15,
+          "hitRate": 0.714
+        },
+        "2026-05-24": {
+          "rows": 36,
+          "hits": 26,
+          "hitRate": 0.722
+        },
+        "2026-05-25": {
+          "rows": 47,
+          "hits": 31,
+          "hitRate": 0.66
+        },
+        "2026-05-26": {
+          "rows": 40,
+          "hits": 27,
+          "hitRate": 0.675
+        },
+        "2026-05-27": {
+          "rows": 31,
+          "hits": 23,
+          "hitRate": 0.742
+        },
+        "2026-05-28": {
+          "rows": 32,
+          "hits": 19,
+          "hitRate": 0.594
+        },
+        "2026-05-29": {
+          "rows": 16,
+          "hits": 10,
+          "hitRate": 0.625
+        },
+        "2026-05-30": {
+          "rows": 16,
+          "hits": 9,
+          "hitRate": 0.562
+        }
+      }
+    },
+    "backtest": {
+      "rows": 266,
+      "hits": 158,
+      "hitRate": 0.594,
+      "brier": 0.2319,
+      "logLoss": 0.6558,
+      "auc": 0.648,
+      "features": 93,
+      "includeMarket": true,
+      "chain": {
+        "dataFeatures": 87,
+        "stage1": "data-only warehouse ensemble: L1 logistic + random forest + gradient boosting + XGBoost when available",
+        "stage2": "market calibration only, never source-pick override",
+        "stage3": "upset/fragility risk gate from hold, error control, closeout, opponent return pressure, and taxed-favorite price",
+        "excludedPickSources": [
+          "tennistonic"
+        ]
+      }
+    },
+    "dataOnlyBacktest": {
+      "rows": 266,
+      "hits": 153,
+      "hitRate": 0.575,
+      "brier": 0.2372,
+      "logLoss": 0.667,
+      "auc": 0.617,
+      "features": 87,
+      "includeMarket": false
+    },
+    "valueGate": {
+      "status": "frozen",
+      "source": "tennis-value-backtest-2026-05-30.json",
+      "reason": "last settled bet-grade ML lane was negative; downgrade blind ML value to watch until a new gate wins",
+      "graded": 2,
+      "hitRate": 0,
+      "roi": -1
+    },
+    "trainingCorpus": {
+      "rows": 278,
+      "settledRows": 266,
+      "featureColumns": 113,
+      "table": "tennis_model_training_rows",
+      "jsonPath": "data-private/models/tennis-training-corpus-through-2026-05-31.json"
+    }
+  },
+  "valueBacktest": {
+    "date": "2026-05-30",
+    "summary": {
+      "ML": {
+        "rows": 16,
+        "graded": 16,
+        "hits": 9,
+        "hitRate": 0.562,
+        "pnlPer100": -272.5,
+        "roi": -0.17
+      },
+      "Spread": {
+        "rows": 16,
+        "graded": 13,
+        "hits": 5,
+        "hitRate": 0.385,
+        "pnlPer100": -368.7,
+        "roi": -0.284
+      },
+      "O/U": {
+        "rows": 16,
+        "graded": 13,
+        "hits": 3,
+        "hitRate": 0.231,
+        "pnlPer100": -746.8,
+        "roi": -0.574
+      },
+      "Bet-grade value": {
+        "rows": 2,
+        "graded": 2,
+        "hits": 0,
+        "hitRate": 0,
+        "pnlPer100": -200,
+        "roi": -1
+      },
+      "Negative EV": {
+        "rows": 15,
+        "graded": 15,
+        "hits": 8,
+        "hitRate": 0.533,
+        "pnlPer100": -175,
+        "roi": -0.117
+      },
+      "Near fair": {
+        "rows": 5,
+        "graded": 5,
+        "hits": 3,
+        "hitRate": 0.6,
+        "pnlPer100": 55.6,
+        "roi": 0.111
+      }
+    }
+  },
+  "kalshiTradeToSell": {
+    "coverage": {
+      "historicalRows": 130,
+      "dates": [
+        "2026-05-25",
+        "2026-05-27",
+        "2026-05-28",
+        "2026-05-29",
+        "2026-05-30"
+      ],
+      "featureCount": 66,
+      "weatherRows": 129,
+      "weatherFeatureCount": 19,
+      "weatherNote": "Paris hourly weather is joined by board match and included when available."
+    },
+    "laneBacktest": [
+      {
+        "lane": "entry <=15c + weak favorite errors",
+        "rows": 5,
+        "avgEntryCents": 11.4,
+        "winRate": 0.2,
+        "hit2x": 0.8,
+        "roi2xCents": 4.4,
+        "hit25x": 0.6,
+        "roi25xCents": 4.4,
+        "hit3x": 0.4,
+        "roi3xCents": 1.2
+      },
+      {
+        "lane": "entry <=15c + early start",
+        "rows": 16,
+        "avgEntryCents": 8.6,
+        "winRate": 0.375,
+        "hit2x": 0.688,
+        "roi2xCents": 2.8,
+        "hit25x": 0.562,
+        "roi25xCents": 3.7,
+        "hit3x": 0.438,
+        "roi3xCents": 2.5
+      },
+      {
+        "lane": "return-pressure edge",
+        "rows": 38,
+        "avgEntryCents": 30.9,
+        "winRate": 0.368,
+        "hit2x": 0.579,
+        "roi2xCents": 2.6,
+        "hit25x": 0.474,
+        "roi25xCents": 3.3,
+        "hit3x": 0.447,
+        "roi3xCents": 3.3
+      },
+      {
+        "lane": "weak favorite errors",
+        "rows": 15,
+        "avgEntryCents": 27.7,
+        "winRate": 0.4,
+        "hit2x": 0.6,
+        "roi2xCents": -2.2,
+        "hit25x": 0.533,
+        "roi25xCents": 1.7,
+        "hit3x": 0.467,
+        "roi3xCents": 2.4
+      },
+      {
+        "lane": "prior RG flow",
+        "rows": 81,
+        "avgEntryCents": 27,
+        "winRate": 0.309,
+        "hit2x": 0.593,
+        "roi2xCents": 1.7,
+        "hit25x": 0.469,
+        "roi25xCents": 0.6,
+        "hit3x": 0.432,
+        "roi3xCents": 1.3
+      },
+      {
+        "lane": "entry <=15c",
+        "rows": 32,
+        "avgEntryCents": 9.3,
+        "winRate": 0.188,
+        "hit2x": 0.594,
+        "roi2xCents": 0.8,
+        "hit25x": 0.469,
+        "roi25xCents": 0.3,
+        "hit3x": 0.406,
+        "roi3xCents": 0.5
+      },
+      {
+        "lane": "entry <=15c + favorite break leak",
+        "rows": 8,
+        "avgEntryCents": 8.9,
+        "winRate": 0,
+        "hit2x": 0.625,
+        "roi2xCents": 0.9,
+        "hit25x": 0.375,
+        "roi25xCents": -1.1,
+        "hit3x": 0.375,
+        "roi3xCents": 0.8
+      },
+      {
+        "lane": "entry <=15c + prior RG flow",
+        "rows": 23,
+        "avgEntryCents": 9.8,
+        "winRate": 0.13,
+        "hit2x": 0.609,
+        "roi2xCents": 0.2,
+        "hit25x": 0.435,
+        "roi25xCents": -1.6,
+        "hit3x": 0.391,
+        "roi3xCents": -1.1
+      },
+      {
+        "lane": "long-game environment",
+        "rows": 12,
+        "avgEntryCents": 22.8,
+        "winRate": 0.167,
+        "hit2x": 0.583,
+        "roi2xCents": 3.3,
+        "hit25x": 0.333,
+        "roi25xCents": -4,
+        "hit3x": 0.167,
+        "roi3xCents": -10.8
+      }
+    ],
+    "modelBacktest": {
+      "rows": 89,
+      "trades": 27,
+      "hit25x": 0.519,
+      "roi25xCents": 6.7,
+      "allRowsHit25x": 0.449,
+      "allRowsRoi25xCents": -1.2,
+      "thresholdBacktest": [
+        {
+          "threshold": 0.5,
+          "trades": 38,
+          "hit25x": 0.5,
+          "roi25xCents": 2.2
+        },
+        {
+          "threshold": 0.52,
+          "trades": 34,
+          "hit25x": 0.471,
+          "roi25xCents": 2.1
+        },
+        {
+          "threshold": 0.54,
+          "trades": 27,
+          "hit25x": 0.519,
+          "roi25xCents": 6.7
+        },
+        {
+          "threshold": 0.56,
+          "trades": 25,
+          "hit25x": 0.56,
+          "roi25xCents": 9.1
+        },
+        {
+          "threshold": 0.58,
+          "trades": 25,
+          "hit25x": 0.56,
+          "roi25xCents": 9.1
+        },
+        {
+          "threshold": 0.6,
+          "trades": 22,
+          "hit25x": 0.545,
+          "roi25xCents": 6.9
+        },
+        {
+          "threshold": 0.62,
+          "trades": 16,
+          "hit25x": 0.5,
+          "roi25xCents": 4.2
+        }
+      ]
+    }
+  },
+  "notes": [
+    "TEN-T0 calibration is stored as a baseline for comparison only.",
+    "Future cartridges must report bucketed performance by ML, spread, match O-U, first-set O-U, set-win, and Kalshi trade-to-sell."
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "schemaVersion": 1,
-  "runId": "tennis-2026-05-31-W1-F0-T0-E0",
-  "slateDate": "2026-05-31",
-  "status": "not_settled",
-  "note": "Pregame lock stores grades placeholder; settled/postmatch runs should write lane results without mutating this lock."
-}

@@ -1,44 +1,44 @@
 {
   "schemaVersion": "sport-model-registry-v1",
   "sport": "mlb",
-  "activeModelId": "M0",
+  "activeModelId": "MLB-M0",
   "active": {
-    "warehouse": "W1",
-    "features": "F0",
-    "model": "M0",
-    "reliefAddendum": "RP36",
-    "evaluator": "E0"
+    "warehouse": "MLB-W1",
+    "features": "MLB-F0",
+    "model": "MLB-M0",
+    "reliefAddendum": "MLB-RP36",
+    "evaluator": "MLB-E0"
   },
   "runner": {
-    "command": "node models/mlb/cartridges/M0/runner.mjs",
+    "command": "node models/mlb/cartridges/MLB-M0/runner.mjs",
     "defaultMode": "pregame",
-    "migrationNote": "Temporary cartridge runner delegates to sport-scoped MLB pipeline workflows until M0 owns the internals."
+    "migrationNote": "Temporary cartridge runner delegates to sport-scoped MLB pipeline workflows until MLB-M0 owns the internals."
   },
   "cartridgeRoot": "./cartridges",
   "migrationStatus": "shells_started",
   "cartridges": [
     {
-      "modelId": "M0",
+      "modelId": "MLB-M0",
       "role": "parent_model",
-      "targetPath": "./cartridges/M0",
+      "targetPath": "./cartridges/MLB-M0",
       "status": "shell_created",
-      "components": ["RP36"],
+      "components": ["MLB-RP36"],
       "lanes": ["moneyline", "first5", "totals", "first_inning", "props", "home_runs"],
-      "notes": "Current MLB side/starter logic is spread across pipeline scripts and generated artifacts. M0 will become the parent model cartridge."
+      "notes": "Current MLB side/starter logic is spread across pipeline scripts and generated artifacts. MLB-M0 will become the parent model cartridge."
     },
     {
-      "modelId": "RP36",
+      "modelId": "MLB-RP36",
       "role": "relief_addendum",
-      "legacyAlias": ["E36 shadow"],
-      "consumedBy": ["M0"],
-      "targetPath": "./cartridges/RP36",
+      "originExperiment": "E36 shadow",
+      "consumedBy": ["MLB-M0"],
+      "targetPath": "./cartridges/MLB-RP36",
       "status": "shell_created",
-      "notes": "Current relief stack is exported by models/mlb/cartridges/RP36/exporter.py and consumed by M0 as a relief addendum."
+      "notes": "Current relief stack is exported by models/mlb/cartridges/MLB-RP36/exporter.py and consumed by MLB-M0 as a relief addendum."
     },
     {
-      "modelId": "E0",
+      "modelId": "MLB-E0",
       "role": "evaluator",
-      "targetPath": "./cartridges/E0",
+      "targetPath": "./cartridges/MLB-E0",
       "status": "shell_created"
     }
   ]

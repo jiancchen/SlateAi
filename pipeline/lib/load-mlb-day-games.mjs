@@ -69,7 +69,7 @@ const buildGenericMlbGame = (
       ? {
           ...(raw.metadata ?? {}),
           ...(slateDate ? { slateDate } : {}),
-          modelCartridge: raw.metadata?.modelCartridge ?? 'M0',
+          modelCartridge: raw.metadata?.modelCartridge ?? 'MLB-M0',
           quietStartFullGameGate: Boolean(raw.metadata?.quietStartFullGameGate)
         }
       : null

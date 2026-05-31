@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "sport": "tennis",
+  "evaluatorVersion": "TEN-E0",
+  "requiredBuckets": [
+    "ML",
+    "spread",
+    "match_total",
+    "first_set_total",
+    "set_win",
+    "kalshi_trade_to_sell"
+  ],
+  "requiredMetrics": [
+    "sample_size",
+    "hit_rate",
+    "roi_flat",
+    "net_ev",
+    "confidence_band",
+    "market_implied_band"
+  ],
+  "settledRunRule": "Settled/postmatch grading must not mutate the locked pregame run."
+}

@@ -1,15 +1,15 @@
 {
   "schemaVersion": "sport-model-registry-v1",
   "sport": "tennis",
-  "activeModelId": "T0",
+  "activeModelId": "TEN-T0",
   "active": {
-    "warehouse": "W1",
-    "features": "F0",
-    "model": "T0",
-    "evaluator": "E0"
+    "warehouse": "TEN-W1",
+    "features": "TEN-F0",
+    "model": "TEN-T0",
+    "evaluator": "TEN-E0"
   },
   "runner": {
-    "command": "node models/tennis/cartridges/T0/runner.mjs",
+    "command": "node models/tennis/cartridges/TEN-T0/runner.mjs",
     "defaultMode": "pregame"
   },
   "cartridgeRoot": "./cartridges",
@@ -36,25 +36,25 @@
   },
   "cartridges": [
     {
-      "modelId": "T0",
+      "modelId": "TEN-T0",
       "role": "parent_model",
-      "currentPath": "./cartridges/T0",
-      "targetPath": "./cartridges/T0",
+      "currentPath": "./cartridges/TEN-T0",
+      "targetPath": "./cartridges/TEN-T0",
       "status": "active",
-      "notes": "T0 is the active tennis baseline cartridge. Compatibility wrappers may keep old command names alive, but cartridge metadata and model cards are owned here."
+      "notes": "TEN-T0 is the active tennis baseline cartridge. Cartridge metadata and model cards are owned here."
     },
     {
-      "modelId": "F0",
+      "modelId": "TEN-F0",
       "role": "feature_contract",
-      "currentPath": "./cartridges/F0",
-      "targetPath": "./cartridges/F0",
+      "currentPath": "./cartridges/TEN-F0",
+      "targetPath": "./cartridges/TEN-F0",
       "status": "active"
     },
     {
-      "modelId": "E0",
+      "modelId": "TEN-E0",
       "role": "evaluator",
-      "currentPath": "./cartridges/E0",
-      "targetPath": "./cartridges/E0",
+      "currentPath": "./cartridges/TEN-E0",
+      "targetPath": "./cartridges/TEN-E0",
       "status": "active"
     }
   ]

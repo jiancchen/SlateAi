@@ -63,15 +63,15 @@ class ModelRegistryTest(unittest.TestCase):
                         if source_path:
                             self.assertTrue((ROOT / source_path).exists(), f"{model_id} source missing: {source_path}")
 
-    def test_m0_may30_snapshot_verifies(self) -> None:
-        snapshot_path = ROOT / "data-private" / "model-cartridges" / "mlb" / "M0" / "golden" / "2026-05-30.snapshot.json"
+    def test_mlb_m0_may30_snapshot_verifies(self) -> None:
+        snapshot_path = ROOT / "data-private" / "model-cartridges" / "mlb" / "MLB-M0" / "golden" / "2026-05-30.snapshot.json"
         if not snapshot_path.exists():
-            self.skipTest("M0 May 30 snapshot has not been generated")
+            self.skipTest("MLB-M0 May 30 snapshot has not been generated")
 
         result = subprocess.run(
             [
                 "node",
-                "models/mlb/cartridges/M0/verify_snapshot.mjs",
+                "models/mlb/cartridges/MLB-M0/verify_snapshot.mjs",
                 "--date",
                 "2026-05-30",
             ],
@@ -82,15 +82,15 @@ class ModelRegistryTest(unittest.TestCase):
         )
         self.assertEqual(result.returncode, 0, msg=result.stdout + result.stderr)
 
-    def test_m0_may30_run_verifies_when_locked(self) -> None:
-        run_path = ROOT / "data-private" / "model-runs" / "mlb" / "M0" / "2026-05-30" / "run.json"
+    def test_mlb_m0_may30_run_verifies_when_locked(self) -> None:
+        run_path = ROOT / "data-private" / "model-runs" / "mlb" / "MLB-M0" / "2026-05-30" / "run.json"
         if not run_path.exists():
-            self.skipTest("M0 May 30 run has not been locked")
+            self.skipTest("MLB-M0 May 30 run has not been locked")
 
         result = subprocess.run(
             [
                 "node",
-                "models/mlb/cartridges/M0/verify_run.mjs",
+                "models/mlb/cartridges/MLB-M0/verify_run.mjs",
                 "--date",
                 "2026-05-30",
             ],

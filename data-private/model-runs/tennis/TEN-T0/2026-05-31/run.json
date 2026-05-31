@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "runId": "tennis-2026-05-31-TEN-W1-TEN-F0-TEN-T0-TEN-E0",
+  "sport": "tennis",
+  "slateDate": "2026-05-31",
+  "warehouseVersion": "TEN-W1",
+  "featureVersion": "TEN-F0",
+  "modelId": "TEN-T0",
+  "evaluatorVersion": "TEN-E0",
+  "mode": "pregame",
+  "status": "locked",
+  "createdAt": "2026-05-31T05:20:41.707Z",
+  "lockedAt": "2026-05-31T19:17:26.131Z",
+  "git": {
+    "commit": "917adff60eab3f23f4d202b13ce00714dc29ce19",
+    "dirty": true
+  },
+  "registry": {
+    "path": "models/tennis/registry.json",
+    "active": {
+      "warehouse": "TEN-W1",
+      "features": "TEN-F0",
+      "model": "TEN-T0",
+      "evaluator": "TEN-E0"
+    }
+  },
+  "modelManifest": {
+    "path": "models/tennis/cartridges/TEN-T0/manifest.json",
+    "name": "TEN-T0 tennis baseline",
+    "status": "baseline"
+  },
+  "notes": "Locked TEN-T0 pregame run for 2026-05-31.",
+  "sourceHash": "3a097a760285b6502a789444858bb2ae80d8de8396dc3b6ee2e2b63b72c8e552",
+  "inputHash": "a7e49fc8d26a1c8d8df54d967eb51b93b799d67cc1fea6239b8feab15a87a551",
+  "outputHash": "c5218b71ba9574c4bf5da2e2d8fb9a633fc6f3195a3ce43f8d6cbb641d98bcaa",
+  "trainingRows": {
+    "count": 8,
+    "hash": "f3ba9f871cec4fe76c24fdcf8c4b8f519c68e148f12ef750ff6e913628569c69"
+  },
+  "verifier": {
+    "ok": true,
+    "command": "node pipeline/tennis/workflows/verify-model-snapshot.mjs --date 2026-05-31 --model TEN-T0",
+    "stdout": "Tennis TEN-T0 snapshot verified for 2026-05-31\n",
+    "stderr": ""
+  }
+}

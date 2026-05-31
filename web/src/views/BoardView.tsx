@@ -696,7 +696,7 @@ export function BoardView(props: BoardViewProps) {
                       </span>
                     </div>
                     <p>
-                      First 5 confidence is tied to M0 projected runs, not generic board ranking. Rows without a mapped
+                      First 5 confidence is tied to MLB-M0 projected runs, not generic board ranking. Rows without a mapped
                       first-five price are shown as need-line instead of bet-grade.
                     </p>
                     <div className="tennis-value-pill-row">

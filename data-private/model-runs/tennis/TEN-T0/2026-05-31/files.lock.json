@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "runId": "tennis-2026-05-31-TEN-W1-TEN-F0-TEN-T0-TEN-E0",
+  "sourceHash": "3a097a760285b6502a789444858bb2ae80d8de8396dc3b6ee2e2b63b72c8e552",
+  "files": [
+    {
+      "path": "api/src/scripts/export-published-data.ts",
+      "role": "public-exporter",
+      "exists": true,
+      "sha256": "549c34c41d3c12816f5be5064398985fc45f2961af24fcd76c1e012e65467489"
+    },
+    {
+      "path": "models/tennis/cartridges/TEN-E0/manifest.json",
+      "role": "evaluator-manifest",
+      "exists": true,
+      "sha256": "f726e577a9a6be919a0012d1d9e8e86d2e5fa25df0c4b343386fb035029c13fa"
+    },
+    {
+      "path": "models/tennis/cartridges/TEN-E0/metrics-contract.json",
+      "role": "metrics-contract",
+      "exists": true,
+      "sha256": "ea04851ec3732e2c8d16784f0ca14ecfd46338bcc0bc12dc37d76482a0552dd0"
+    },
+    {
+      "path": "models/tennis/cartridges/TEN-F0/feature-contract.json",
+      "role": "feature-contract",
+      "exists": true,
+      "sha256": "9c316c4357b7475e4ecabfa22c47f4dabf71ec2bc55792392283792822d78f04"
+    },
+    {
+      "path": "models/tennis/cartridges/TEN-F0/manifest.json",
+      "role": "feature-manifest",
+      "exists": true,
+      "sha256": "dbcb86e3bb5ae43dde601ed289ebd1895c4495004a49e90d2d0b3eefd82f0d40"
+    },
+    {
+      "path": "models/tennis/cartridges/TEN-T0/manifest.json",
+      "role": "model-manifest",
+      "exists": true,
+      "sha256": "25c760c695f80392c06cb402a8254585d0d582ac5d383997b1d22d83a3d3a248"
+    },
+    {
+      "path": "models/tennis/cartridges/TEN-T0/model_description.json",
+      "role": "model-description",
+      "exists": true,
+      "sha256": "4cdb2c509be0e7cd5652a025b17ec6f37f354cf97b9983eee1c060e869a27aae"
+    },
+    {
+      "path": "models/tennis/cartridges/TEN-T0/MODEL_NOTES.md",
+      "role": "model-notes",
+      "exists": true,
+      "sha256": "4353321b9b524ca642c8a41b46e29a497896c27e78598f0b32bae2e385354c61"
+    },
+    {
+      "path": "models/tennis/cartridges/TEN-T0/output-contract.json",
+      "role": "output-contract",
+      "exists": true,
+      "sha256": "672bbc138ebe24cb41e5ac21ce48bd918f5a23d259605dd4225d21c975a597ca"
+    },
+    {
+      "path": "models/tennis/cartridges/TEN-T0/runner.mjs",
+      "role": "model-runner-wrapper",
+      "exists": true,
+      "sha256": "f5e0ad96a9a646f9b40cc472653807d3d0092faf3cb017f891c694e216a44f9c"
+    },
+    {
+      "path": "models/tennis/registry.json",
+      "role": "model-registry",
+      "exists": true,
+      "sha256": "36aeb6f1e832bcb1ae6780cc611676e43554b9cffd05d6eb8bbbe0ebdabe6d12"
+    },
+    {
+      "path": "package.json",
+      "role": "package-scripts",
+      "exists": true,
+      "sha256": "dc02d6eba41a58fb7b8c03bb555227f6a9fff874f81bf63d42371b7c3706ce0e"
+    },
+    {
+      "path": "pipeline/lib/model-cartridge-resolver.mjs",
+      "role": "cartridge-resolver",
+      "exists": true,
+      "sha256": "cbda4e5ae40418fd51546016be59c5332f3bedb1803b614595a7315424d41d6e"
+    },
+    {
+      "path": "pipeline/lib/model-run-utils.mjs",
+      "role": "run-lock-helper",
+      "exists": true,
+      "sha256": "0f175b5cefefcd341d48aa93660b8b40d334c9e97fdc63b4b8299515812d99dd"
+    },
+    {
+      "path": "pipeline/lib/warehouse_paths.py",
+      "role": "warehouse-path-resolver",
+      "exists": true,
+      "sha256": "25f4827a1b832fda08ddf70e35096cb6a3486fc761611e336f169132a92ffd6d"
+    },
+    {
+      "path": "pipeline/lib/warehouse-paths.mjs",
+      "role": "warehouse-path-resolver",
+      "exists": true,
+      "sha256": "cc15d9e1ac12a2857ee54cfcce16f55744e8b6bdc97e342e578bf2e8a0ef4c90"
+    },
+    {
+      "path": "pipeline/tennis/publish/export_warehouse_context.py",
+      "role": "warehouse-context-export",
+      "exists": true,
+      "sha256": "cdce07ae4bf81c0d734fcd1e0a9f79d6382b4cf0d2ab4eeae09b82d87cad5ebd"
+    },
+    {
+      "path": "pipeline/tennis/publish/generate-day-module.mjs",
+      "role": "model-runner",
+      "exists": true,
+      "sha256": "0311b56ad83b1ca47b909e25dcc86df6fa1e6bf4e9a0c9da4908d7d7973f5026"
+    },
+    {
+      "path": "pipeline/tennis/research/analyze_kalshi_intramatch.py",
+      "role": "kalshi-intramatch-backtest",
+      "exists": true,
+      "sha256": "a1959b0aeeacad8e8af33d924ea8d95637e30cb020b22bc6e6d63efb88d01247"
+    },
+    {
+      "path": "pipeline/tennis/research/model_kalshi_spike.py",
+      "role": "kalshi-spike-model",
+      "exists": true,
+      "sha256": "bf1d34bdc90e5138fcecc87de8fa1a46ee9251e025390ae6d59a1fdfed779832"
+    },
+    {
+      "path": "pipeline/tennis/research/model_upset_wins.py",
+      "role": "upset-win-model",
+      "exists": true,
+      "sha256": "56dd51a92912a553026fbec31d9e02c07c5928fd346e2cc13754be214bf1051e"
+    },
+    {
+      "path": "pipeline/tennis/research/multimodel_backtest.py",
+      "role": "multimodel-backtest",
+      "exists": true,
+      "sha256": "2abe3d3e4a924bc460e8876017b2237c983a0877324e544a75189297b7e33487"
+    },
+    {
+      "path": "pipeline/tennis/research/project_kalshi_trade_candidates.py",
+      "role": "kalshi-trade-projection",
+      "exists": true,
+      "sha256": "0e9b90bb1910d47ef6d9d237c59aa7c0c21b9b7162105b218d51427db12afa7d"
+    },
+    {
+      "path": "pipeline/tennis/research/value_backtest.py",
+      "role": "sportsbook-value-backtest",
+      "exists": true,
+      "sha256": "bf617d1e448d6b2ca1ea2f1a2430285bdc29aaf27943b382ee042264d6dc7c6b"
+    },
+    {
+      "path": "pipeline/tennis/warehouse/backfill_recent_form_metrics.py",
+      "role": "feature-backfill",
+      "exists": true,
+      "sha256": "ebda87e8e64956a19c8c8e401252d1dee4c39424e00b0c898efecb326e926018"
+    },
+    {
+      "path": "pipeline/tennis/warehouse/migrations/TEN-W1/001_add_model_run_tables.sql",
+      "role": "warehouse-migration",
+      "exists": true,
+      "sha256": "473e46487e55ef8564f0989e2bdd94f402aa0c3fe59481de61ea0cab14ed5275"
+    },
+    {
+      "path": "pipeline/tennis/warehouse/migrations/TEN-W1/002_add_model_run_grade_tables.sql",
+      "role": "warehouse-migration",
+      "exists": true,
+      "sha256": "9b203b48e04076808903e12bdcc6436b857f75c2cbc23c4a9c3ce59033e865f3"
+    },
+    {
+      "path": "pipeline/tennis/warehouse/tennis_warehouse.py",
+      "role": "warehouse-code",
+      "exists": true,
+      "sha256": "13ce97e547569d49796d8b5dd16e35df5c74d87885107df8e94a8b1c15b4206e"
+    },
+    {
+      "path": "pipeline/tennis/workflows/create-model-run.mjs",
+      "role": "run-create-script",
+      "exists": true,
+      "sha256": "7bdf5ecb6de8edc8aa73a19402c819b0be81aeefa9251a3423625c10e8667530"
+    },
+    {
+      "path": "pipeline/tennis/workflows/health.py",
+      "role": "health-gate",
+      "exists": true,
+      "sha256": "b7852a6a4cbd81bd502d343285900fbf798a652253b3721885ab964eca9385d4"
+    },
+    {
+      "path": "pipeline/tennis/workflows/lock-model-run.mjs",
+      "role": "run-lock-script",
+      "exists": true,
+      "sha256": "9f7084dc8498daf9f8de19ed9319184b1fe4987cf6539cbd3a77807d9e464456"
+    },
+    {
+      "path": "pipeline/tennis/workflows/settle-model-run.mjs",
+      "role": "postmatch-settlement",
+      "exists": true,
+      "sha256": "7de1bebaa25d3e8ff36409e19898b8244c51a945d72b1e5deb4afc3a9b8b2850"
+    },
+    {
+      "path": "pipeline/tennis/workflows/verify-model-run.mjs",
+      "role": "run-verifier",
+      "exists": true,
+      "sha256": "a63c7e250eed4d51710498fc2775cd37ca297be92951f9f4f3ac98ab0a62d246"
+    },
+    {
+      "path": "pipeline/tennis/workflows/verify-model-snapshot.mjs",
+      "role": "snapshot-verifier",
+      "exists": true,
+      "sha256": "dc4b55a4b5e9ce9b64c1a6cd903f3798d26dbb81c1dc7d2c7c994b64195dbd81"
+    },
+    {
+      "path": "scripts/export-public-current.mjs",
+      "role": "public-exporter",
+      "exists": true,
+      "sha256": "7b6ef9087bf9651bdc75d3e2c26f6f871e7c2eb03d9f8b06c1c8afe4b3c4c14f"
+    },
+    {
+      "path": "tests/tennis_pipeline_test.py",
+      "role": "test-code",
+      "exists": true,
+      "sha256": "dfb85db1a68c90a778418a6eb99177b4b25497207604f26e8c38429477be8eca"
+    },
+    {
+      "path": "web/src/app.css",
+      "role": "model-page-ui",
+      "exists": true,
+      "sha256": "fcfea9fbf1badbf5670590f3abf576e0a53479713c81bbd9a06ab27b1b3d5f42"
+    },
+    {
+      "path": "web/src/lib/archive-loaders.ts",
+      "role": "model-history-loader",
+      "exists": true,
+      "sha256": "f042f5b0f20a6faccf466cdf38037ee3bc5c4acbd9e53e15e12eea97665cf876"
+    },
+    {
+      "path": "web/src/lib/tennis-source-mapping.js",
+      "role": "source-mapping-helper",
+      "exists": true,
+      "sha256": "b99bc83d33d33f1f8eb3839062ce762b97e741f02c56c4d2c5f27cbd78becba0"
+    },
+    {
+      "path": "web/src/views/ModelsView.tsx",
+      "role": "model-page-ui",
+      "exists": true,
+      "sha256": "5d9e8ba1f502cc4a5029c581b26cb68102434fe3ddd2ddf1b5d4dd69d46a1b1e"
+    }
+  ]
+}

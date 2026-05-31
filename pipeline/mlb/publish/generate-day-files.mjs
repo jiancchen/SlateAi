@@ -2969,8 +2969,8 @@ const main = async () => {
         pitcherSourceNote: '',
         oddsPage: boardOdds.oddsPage,
         metadata: {
-          modelCartridge: 'M0',
-          reliefAddendum: 'RP36',
+          modelCartridge: 'MLB-M0',
+          reliefAddendum: 'MLB-RP36',
           slateDate: options.date,
           quietStartFullGameGate: options.date >= '2026-05-31'
         }

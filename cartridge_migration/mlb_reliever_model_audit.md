@@ -9,10 +9,10 @@ The current MLB relief pitcher work is not one clean model yet. It is a chained 
 `E36 shadow` is the latest artifact label, not the whole model. The active exporter is:
 
 ```bash
-python3 models/mlb/cartridges/RP36/runner.py --date YYYY-MM-DD
+python3 models/mlb/cartridges/MLB-RP36/runner.py --date YYYY-MM-DD
 ```
 
-The old top-level `pipeline/export_mlb_reliever_shadow_board.py` compatibility path has been removed; use the RP36 cartridge runner/exporter instead.
+The old top-level `pipeline/export_mlb_reliever_shadow_board.py` compatibility path has been removed; use the MLB-RP36 cartridge runner/exporter instead.
 
 That script imports several prior model/research layers and combines them into a team-side first-up reliever cluster.
 
@@ -75,8 +75,8 @@ The generated payload is keyed by team and contains:
 
 ## Current Join Path
 
-1. `pipeline/mlb/workflows/refresh-live-board.mjs` runs the RP36 cartridge wrapper during MLB pregame refresh.
-2. `models/mlb/cartridges/RP36/exporter.py` writes private JSON and a generated web module.
+1. `pipeline/mlb/workflows/refresh-live-board.mjs` runs the MLB-RP36 cartridge wrapper during MLB pregame refresh.
+2. `models/mlb/cartridges/MLB-RP36/exporter.py` writes private JSON and a generated web module.
 3. `pipeline/lib/load-mlb-day-games.mjs` imports `web/src/lib/day-YYYY-MM-DD-reliever-shadow.js`.
 4. `loadMlbDayGames()` joins the shadow cards into `game.relieverShadowContext.away/home` by team name.
 5. `web/src/features/mlb/MlbDetail.tsx` renders the shadow context inside each bridge-chain card.
@@ -110,24 +110,24 @@ Do not make `E36` the parent MLB model.
 Use this framing:
 
 ```text
-M0 = parent MLB side / starter-phase model
-RP36 = reliever shadow addendum, legacy alias E36 shadow
-E0 = evaluator / settlement layer
+MLB-M0 = parent MLB side / starter-phase model
+MLB-RP36 = reliever shadow addendum
+TEN-E0 = evaluator / settlement layer
 ```
 
 If the starter-exit layer becomes separate:
 
 ```text
-W1 / F0 / SP0 / RP36 / M0 / E0
+TEN-W1 / TEN-F0 / SP0 / MLB-RP36 / MLB-M0 / TEN-E0
 ```
 
 If we keep starter and side logic together for the first migration:
 
 ```text
-W1 / F0 / M0 + RP36 / E0
+TEN-W1 / TEN-F0 / MLB-M0 + MLB-RP36 / TEN-E0
 ```
 
-`RP36` should be a component/addendum cartridge consumed by `M0`, not a competing model folder.
+`MLB-RP36` should be a component/addendum cartridge consumed by `MLB-M0`, not a competing model folder.
 
 ## Migration Risks
 
@@ -140,10 +140,10 @@ W1 / F0 / M0 + RP36 / E0
 
 ## First Migration Step
 
-Before changing predictions, keep the `RP36` addendum cartridge shape:
+Before changing predictions, keep the `MLB-RP36` addendum cartridge shape:
 
 ```text
-models/mlb/cartridges/RP36/
+models/mlb/cartridges/MLB-RP36/
   manifest.json
   model_description.json
   MODEL_NOTES.md
@@ -153,4 +153,4 @@ models/mlb/cartridges/RP36/
   verify_snapshot.py
 ```
 
-The first locked behavior test proves that `RP36` reproduces the existing May 30 reliever-shadow artifact exactly, apart from explicit metadata fields we decide to rename.
+The first locked behavior test proves that `MLB-RP36` reproduces the existing May 30 reliever-shadow artifact exactly, apart from explicit metadata fields we decide to rename.

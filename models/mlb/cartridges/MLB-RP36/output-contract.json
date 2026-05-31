@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "modelId": "MLB-RP36",
+  "sport": "mlb",
+  "status": "migration-shell",
+  "outputKind": "reliever-shadow",
+  "requiredFields": [
+    "meta",
+    "relieverShadowByTeam"
+  ],
+  "teamFields": [
+    "modelTag",
+    "topTwoShare",
+    "lead",
+    "alternate",
+    "relievers",
+    "summary"
+  ],
+  "relieverFields": [
+    "name",
+    "pitcherId",
+    "shadowSharePct",
+    "firstRelieverLikelihood",
+    "availabilityScore",
+    "bridgeScore",
+    "expectedOuts",
+    "reasonTags"
+  ],
+  "notes": [
+    "Placeholder contract captured before moving the current exporter.",
+    "Tighten this contract against the actual May 30 artifact before MLB-RP36 is locked."
+  ]
+}
