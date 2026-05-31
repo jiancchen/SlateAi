@@ -213,6 +213,10 @@
       "path": "models/mlb/cartridges/MLB-M0/lib/pick-rankings.js"
     },
     {
+      "role": "model-side-controls",
+      "path": "models/mlb/cartridges/MLB-M0/lib/mlb-side-controls.js"
+    },
+    {
       "role": "frontend-side-model-compat-shim",
       "path": "web/src/lib/sports-model.js"
     },

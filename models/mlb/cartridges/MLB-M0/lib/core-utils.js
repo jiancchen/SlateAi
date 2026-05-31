@@ -26,6 +26,14 @@ export const normalizeText = (value = '') =>
     .replace(/\s+/g, ' ')
     .trim()
 
+export const getAnalysisTier = (confidence, volatility) => {
+  if (confidence >= 76 && volatility <= 46) return 'Core'
+  if (confidence >= 70) return 'Strong'
+  if (confidence >= 64 && volatility <= 58) return 'Lean'
+
+  return 'Swingy'
+}
+
 export const formatAmericanOdds = (americanOdds) => {
   if (!Number.isFinite(americanOdds)) return 'N/A'
 

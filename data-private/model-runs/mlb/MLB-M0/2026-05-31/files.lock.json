@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "runId": "mlb-2026-05-31-MLB-W1-MLB-F0-MLB-M0-MLB-RP36-MLB-E0",
-  "sourceHash": "d58070b6b0e95f42a80b5156193ec02c21b6c812baed238affbd855125a5bb04",
+  "sourceHash": "c46adab7865665f60b0962843ede29eed503697b2d073927739c9fc75e854a4c",
   "files": [
     {
       "path": "models/mlb/cartridges/MLB-E0/manifest.json",
@@ -79,13 +79,19 @@
       "role": "model-core-utils",
       "path": "models/mlb/cartridges/MLB-M0/lib/core-utils.js",
       "exists": true,
-      "sha256": "9e90c7190f7e809219d410523de67bdabf02e5fe9cc43e5d90f3238791932567"
+      "sha256": "aaf69332b38afa704bdc395d09c713e31c313e077c84f32e842313c89d891310"
     },
     {
       "role": "legacy-workflow-runner",
       "path": "models/mlb/cartridges/MLB-M0/lib/legacy-runner.mjs",
       "exists": true,
       "sha256": "a22985a55d6baee557892fe082aa96bb8ba052357a075ca2ac8c9b2a7d31e19b"
+    },
+    {
+      "role": "model-side-controls",
+      "path": "models/mlb/cartridges/MLB-M0/lib/mlb-side-controls.js",
+      "exists": true,
+      "sha256": "03180d3da22160a78d99c9b061e39709444cc6314a9213bc9fe9049b98d76196"
     },
     {
       "role": "model-simulation",
@@ -109,7 +115,7 @@
       "role": "side-model-logic",
       "path": "models/mlb/cartridges/MLB-M0/lib/sports-model.js",
       "exists": true,
-      "sha256": "12c60ac20283487cf10597fbe651e622d85b69ddf3a1562d980422251a38d0af"
+      "sha256": "64535dcaed87b9d4bf9860fac8d438498c84a5fc70e9781e3529a1f2ccc43d93"
     },
     {
       "role": "model-team-utils",
@@ -121,7 +127,7 @@
       "path": "models/mlb/cartridges/MLB-M0/manifest.json",
       "role": "parent_model-manifest",
       "exists": true,
-      "sha256": "0c5d9a419798b5be028a2aa576226a49289e632b51d7e5b441caef8bd1dbd4f6"
+      "sha256": "9e9ae1cc972bc8e1a86ad7f079d8bc187324fcd2eea91f5983cddc60df3bdc7c"
     },
     {
       "path": "models/mlb/cartridges/MLB-M0/MLB-M0_log.md",
