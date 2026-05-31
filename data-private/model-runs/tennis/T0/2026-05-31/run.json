@@ -10,15 +10,17 @@
   "mode": "pregame",
   "status": "locked",
   "createdAt": "2026-05-31T05:20:41.707Z",
-  "lockedAt": "2026-05-31T05:33:23.918Z",
+  "lockedAt": "2026-05-31T05:44:36.503Z",
   "git": {
-    "commit": "8c84ff421daefcb5067824584ae3e906244ef249",
+    "commit": "d801e28f092ace7a3ec0dad8320223803626af19",
     "dirty": true,
     "changedFiles": [
-      "M data-private/model-runs/tennis/T0/2026-05-31/files.lock.json",
-      " M data-private/model-runs/tennis/T0/2026-05-31/health.json",
-      " M pipeline/create-tennis-model-run.mjs",
-      " M pipeline/lock-tennis-model-run.mjs"
+      "M cartridge_migration/migration_run_plan_tennis_1.md",
+      " M data-private/model-runs/tennis/T0/2026-05-31/files.lock.json",
+      " M package.json",
+      " M pipeline/lock-tennis-model-run.mjs",
+      " M tests/tennis_pipeline_test.py",
+      "?? pipeline/verify-tennis-model-run.mjs"
     ]
   },
   "registry": {
@@ -36,9 +38,9 @@
     "status": "baseline"
   },
   "notes": "Initial W1/F0/T0/E0 golden pregame run.",
-  "sourceHash": "5fae490e04801cc6d57e0b9fce622163a98345d5bfa9a29246b446262dc4f033",
+  "sourceHash": "1cc2904327de7d79cba486ba490cb4b3d2ee0d275b8111a1b8fef66b6697173a",
   "inputHash": "a7e49fc8d26a1c8d8df54d967eb51b93b799d67cc1fea6239b8feab15a87a551",
-  "outputHash": "967e97298865839100b7e1fe05afd632a9ada865d8e035a5cba3287ca46bb7d7",
+  "outputHash": "3a8e343bbb054d5341486d7c014bcf8a774622c7c0994c846a45cd4539e8e879",
   "trainingRows": {
     "count": 8,
     "hash": "f3ba9f871cec4fe76c24fdcf8c4b8f519c68e148f12ef750ff6e913628569c69"

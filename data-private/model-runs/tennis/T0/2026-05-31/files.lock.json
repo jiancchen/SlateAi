@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "runId": "tennis-2026-05-31-W1-F0-T0-E0",
-  "sourceHash": "5fae490e04801cc6d57e0b9fce622163a98345d5bfa9a29246b446262dc4f033",
+  "sourceHash": "1cc2904327de7d79cba486ba490cb4b3d2ee0d275b8111a1b8fef66b6697173a",
   "files": [
     {
       "path": "package.json",
       "role": "package-scripts",
       "exists": true,
-      "sha256": "bd6fda433a88cf71b9e2946e1d579afd3537ee534611c241b72c34c58de94a4c"
+      "sha256": "a4a365b13233035edde8bb0d19beea8469ac91e02f63e14f5acbb2817f42fbc3"
     },
     {
       "path": "pipeline/analyze_kalshi_tennis_intramatch.py",
@@ -55,7 +55,7 @@
       "path": "pipeline/lock-tennis-model-run.mjs",
       "role": "run-lock-script",
       "exists": true,
-      "sha256": "7ce0013c74f75d5895a5948dcd6260ea949dc5a2955b7bca520d4129ae3968ae"
+      "sha256": "67a7a3737c652a6ee05326b889d64765d73598d48ed4edba311cd8df67a9055b"
     },
     {
       "path": "pipeline/model_kalshi_tennis_spike.py",
@@ -154,6 +154,12 @@
       "sha256": "58095d95c0abc7379a61a11ae80697a34705dc8afc98a73126ce972d161529ef"
     },
     {
+      "path": "pipeline/verify-tennis-model-run.mjs",
+      "role": "run-verifier",
+      "exists": true,
+      "sha256": "40158846df6525ff578fa3a983ca022b7cad1d43e5d4cc17993e279048d7cb4b"
+    },
+    {
       "path": "pipeline/verify-tennis-model-snapshot.mjs",
       "role": "snapshot-verifier",
       "exists": true,
@@ -169,7 +175,7 @@
       "path": "tests/tennis_pipeline_test.py",
       "role": "test-code",
       "exists": true,
-      "sha256": "c475f939874575de5422efee27ee59cfec6acfaa964b9002cb3a17ca005f194f"
+      "sha256": "cbbfc7e612eaf7d6ab887becec527d24821cc899b8c895543cc2d57732d5f8f6"
     },
     {
       "path": "web/src/lib/tennis-source-mapping.js",

@@ -56,6 +56,7 @@ const sourceInventory = (model, manifest) => {
     { path: 'pipeline/warehouse_paths.py', role: 'warehouse-path-resolver' },
     { path: 'pipeline/create-tennis-model-run.mjs', role: 'run-create-script' },
     { path: 'pipeline/lock-tennis-model-run.mjs', role: 'run-lock-script' },
+    { path: 'pipeline/verify-tennis-model-run.mjs', role: 'run-verifier' },
     { path: 'pipeline/analyze_kalshi_tennis_intramatch.py', role: 'kalshi-intramatch-backtest' },
     { path: 'pipeline/backfill_tennis_recent_form_metrics.py', role: 'feature-backfill' },
     { path: 'pipeline/export_tennis_warehouse_context.py', role: 'warehouse-context-export' },

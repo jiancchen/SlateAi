@@ -218,6 +218,27 @@ class TennisWarehouseImportTest(unittest.TestCase):
         )
         self.assertEqual(result.returncode, 0, msg=result.stdout + result.stderr)
 
+    def test_t0_may31_model_run_verifies(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        run_path = root / "data-private" / "model-runs" / "tennis" / "T0" / "2026-05-31" / "run.json"
+        if not run_path.exists():
+            self.skipTest("T0 May 31 run has not been locked")
+        result = subprocess.run(
+            [
+                "node",
+                "pipeline/verify-tennis-model-run.mjs",
+                "--date",
+                "2026-05-31",
+                "--model",
+                "T0",
+            ],
+            cwd=root,
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        self.assertEqual(result.returncode, 0, msg=result.stdout + result.stderr)
+
 
 if __name__ == "__main__":
     unittest.main()

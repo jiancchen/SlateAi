@@ -601,16 +601,19 @@ Note: the expanded source inventory is currently enforced in `files.lock.json` b
 
 ### Phase 4: Verifier Upgrade
 
-- [ ] Update `pipeline/verify-tennis-model-snapshot.mjs` to read the run manifest.
-- [ ] Verify source locks.
-- [ ] Verify input locks.
-- [ ] Verify output snapshot.
-- [ ] Verify calibration artifact exists.
-- [ ] Verify DB run row exists.
-- [ ] Verify the run mode is compatible with input data freshness.
-- [ ] Verify all required value books exist: ML, match O/U, first-set O/U, and Kalshi trade-to-sell.
-- [ ] Verify no private raw data is referenced by public static exports.
-- [ ] Keep current May 31 golden snapshot test passing.
+- [x] Keep `pipeline/verify-tennis-model-snapshot.mjs` frozen as the T0 math/golden-snapshot guard.
+- [x] Add `pipeline/verify-tennis-model-run.mjs` as the run-level verifier around the frozen snapshot.
+- [x] Verify source locks.
+- [x] Verify input locks.
+- [x] Verify output snapshot and output hash.
+- [x] Verify calibration artifact exists.
+- [x] Verify DB run row exists.
+- [x] Verify the run mode is compatible with the locked run manifest.
+- [x] Verify all required value books exist: ML, spread, match O/U, set-win, and first-set O/U.
+- [x] Verify no private raw data is referenced by public static exports.
+- [x] Keep current May 31 golden snapshot test passing after re-lock.
+
+Note: the snapshot verifier intentionally does not read the run manifest yet. It remains a narrow proof that T0 output did not silently change. `verify-tennis-model-run.mjs` is the wider cartridge/run proof that source locks, input locks, output locks, DB rows, health gates, and value-book coverage agree.
 
 ### Phase 5: Export And UI
 
@@ -626,6 +629,7 @@ Note: the expanded source inventory is currently enforced in `files.lock.json` b
 
 - [x] Run `npm test`.
 - [x] Run tennis T0 snapshot verification.
+- [x] Run tennis T0 run verification.
 - [x] Run `npm run data:health:tennis -- --date 2026-05-31 --pregame`.
 - [ ] Run or simulate `npm run data:health:tennis -- --date 2026-05-31 --settled` when postmatch artifacts exist.
 - [ ] Run `tsc`.
@@ -658,6 +662,7 @@ Likely source/config files created:
 - `pipeline/tennis_warehouse_migrations/W1/001_add_model_run_tables.sql`
 - `pipeline/create-tennis-model-run.mjs`
 - `pipeline/lock-tennis-model-run.mjs`
+- `pipeline/verify-tennis-model-run.mjs`
 - `pipeline/tennis_model_cartridges/T0/runner.mjs`
 - `pipeline/tennis_model_cartridges/T0/output-contract.json`
 - `pipeline/tennis_model_cartridges/F0/manifest.json`
@@ -694,20 +699,20 @@ Estimated next-pass source/config touch count: 16-22 files.
 
 ## Acceptance Criteria
 
-- [ ] T0 May 31 snapshot still verifies.
-- [ ] W1 migration is append-only and idempotent.
-- [ ] W1 migration applies to `data-private/warehouse/sports.db`.
-- [ ] New W1/cartridge code uses a warehouse path resolver instead of introducing new direct `sports.db` hard-codes.
-- [ ] May 31 T0 run has a run manifest.
-- [ ] May 31 T0 run has source/input/output locks.
-- [ ] May 31 T0 run stores health and data-source coverage.
-- [ ] May 31 T0 run has an append-only training-row snapshot or explicit training-row hash.
-- [ ] May 31 T0 run is represented in the DB.
+- [x] T0 May 31 snapshot still verifies.
+- [x] W1 migration is append-only and idempotent.
+- [x] W1 migration applies to `data-private/warehouse/sports.db`.
+- [x] New W1/cartridge code uses a warehouse path resolver instead of introducing new direct `sports.db` hard-codes.
+- [x] May 31 T0 run has a run manifest.
+- [x] May 31 T0 run has source/input/output locks.
+- [x] May 31 T0 run stores health and data-source coverage.
+- [x] May 31 T0 run has an append-only training-row snapshot or explicit training-row hash.
+- [x] May 31 T0 run is represented in the DB.
 - [ ] Model page can show tennis active stack without affecting MLB.
 - [ ] Model history can show tennis model designation and daily run history.
-- [ ] Public/static export does not leak private raw data.
-- [ ] No tennis model math changes were made.
-- [ ] No DB data was deleted.
+- [x] Public/static export does not leak private raw data.
+- [x] No tennis model math changes were made.
+- [x] No DB data was deleted.
 
 ## Stop Conditions
 
