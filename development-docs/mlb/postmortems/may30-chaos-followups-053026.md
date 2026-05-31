@@ -50,12 +50,13 @@ So the first-inning model should focus on:
 
 That lane is still worth keeping because the mistakes are interpretable.
 
-### P1: Kill the generic total-bases prop lane
+### P1: Demote the generic total-bases prop lane
 The model treated `Over 1.5 total bases` like a core edge and repeated it.
 That is not a lane; that is spam with confidence labels.
 
 Immediate rule:
-- retire generic TB overs from live use
+- keep generic TB overs out of core/top-pick slots
+- require a narrower reason before surfacing one: pitch-type fit, lineup slot, recent quality of contact, opponent bullpen path, or park/weather support
 - do not show them as “core” until a much narrower lane proves itself
 
 ### P2: Build reason-coded dog lanes
@@ -71,11 +72,19 @@ The next dog lanes should be explicit:
 No dog pick should exist without one of those reasons.
 
 ## Concrete next coding tasks
-1. Fix unique `gameId` generation for doubleheaders.
-2. Audit why side backtests are not being written even after import/grade.
+1. Keep unique `gameId` generation covered for doubleheaders.
+2. Done: side-board closeout now exports, imports, and grades `board-moneyline-v1.1-sanity` rows into `mlb_side_backtests`.
 3. Create a dedicated `dead_early_loss` research pass from this date's label set.
 4. Add `dead_early_loss` and `quiet_first3` as first-class market selectors, not just warnings.
 5. Strip hitter props down to research-only while we rebuild the lane by prop type.
+
+## May 31 pre-slate rules from this review
+
+- Do not promote a full-game side if the same read is stronger as F5, NRFI/YRFI, or a total.
+- Any side with high relief risk and no clear early-scoring thesis should be downgraded.
+- Any underdog needs a named reason: opponent dead-early, opponent traffic-no-conversion, opponent chaos gap, snapback pressure, or same-series suppression.
+- First-inning picks should be treated as timing picks, not broad offense picks.
+- Total-bases props need a specific hitter/starter reason, not just a high aggregate confidence score.
 
 ## What to keep
 - the chaos/state tables
