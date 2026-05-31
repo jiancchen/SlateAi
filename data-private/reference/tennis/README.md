@@ -30,7 +30,7 @@ Opponent-adjusted clay context:
 - Tennistonic score rows do not include true service games held, break points, or return-break rates. Run the Flashscore recent-match pass first when match-detail pages need those fields.
 
 Flashscore service/return stats:
-- Run `node pipeline/fetch-flashscore-tennis-stats.mjs --url "https://www.flashscoreusa.com/game/tennis/.../?mid=MATCHID"`.
+- Run `node pipeline/tennis/fetchers/fetch-flashscore-tennis-stats.mjs --url "https://www.flashscoreusa.com/game/tennis/.../?mid=MATCHID"`.
 - Outputs are written to `flashscore-match-stats/MATCHID.json`.
 - The parser stores match and set-level service data, including first-serve percentage, first/second serve points won, break points saved/converted, service games won, return games won, and total games won.
 - SH/SI columns are mapped to the left/right player order in the supplied Flashscore URL.

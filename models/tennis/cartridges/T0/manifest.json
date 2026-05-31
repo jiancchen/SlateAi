@@ -8,7 +8,6 @@
   "featureVersion": "F0",
   "evaluatorVersion": "E0",
   "entrypoint": "models/tennis/cartridges/T0/runner.mjs",
-  "legacyEntrypoint": "pipeline/generate-tennis-day-module.mjs --model T0",
   "outputContract": "models/tennis/cartridges/T0/output-contract.json",
   "featureContract": "models/tennis/cartridges/F0/feature-contract.json",
   "metricsContract": "models/tennis/cartridges/E0/metrics-contract.json",

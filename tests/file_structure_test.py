@@ -23,6 +23,14 @@ class FileStructureTest(unittest.TestCase):
         ]
         self.assertEqual(active_notes, [])
 
+    def test_pipeline_root_has_no_flat_script_wrappers(self) -> None:
+        flat_scripts = [
+            path.relative_to(ROOT).as_posix()
+            for path in (ROOT / "pipeline").glob("*")
+            if path.suffix in {".mjs", ".py", ".js"}
+        ]
+        self.assertEqual(flat_scripts, [])
+
     def test_mlb_research_writers_target_sport_scoped_docs(self) -> None:
         pattern = re.compile(r'ROOT / "development-docs" / "(?!mlb|tennis|shared|archive)[^"]+"')
         offenders = []

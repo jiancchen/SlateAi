@@ -11,5 +11,3 @@ Model logic belongs in `models/tennis/cartridges/`.
 - `warehouse/`: Tennis warehouse commands, migrations, and import/export helpers.
 - `publish/`: Public artifact exporters and deploy-facing transforms.
 - `research/`: Offline tennis research scripts that are not yet cartridge-owned.
-
-Use compatibility wrappers while migrating top-level pipeline scripts.

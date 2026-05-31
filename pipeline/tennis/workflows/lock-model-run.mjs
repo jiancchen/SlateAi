@@ -58,7 +58,7 @@ const sourceInventory = ({ manifest, manifestPath, registryPath }) => {
     { path: 'pipeline/lib/model-cartridge-resolver.mjs', role: 'cartridge-resolver' },
     { path: 'pipeline/lib/model-run-utils.mjs', role: 'run-lock-helper' },
     { path: 'pipeline/lib/warehouse-paths.mjs', role: 'warehouse-path-resolver' },
-    { path: 'pipeline/warehouse_paths.py', role: 'warehouse-path-resolver' },
+    { path: 'pipeline/lib/warehouse_paths.py', role: 'warehouse-path-resolver' },
     { path: 'pipeline/tennis/workflows/create-model-run.mjs', role: 'run-create-script' },
     { path: 'pipeline/tennis/workflows/lock-model-run.mjs', role: 'run-lock-script' },
     { path: 'pipeline/tennis/workflows/verify-model-run.mjs', role: 'run-verifier' },

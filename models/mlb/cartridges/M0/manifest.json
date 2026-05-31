@@ -6,14 +6,7 @@
   "role": "parent_model",
   "createdForMigration": "2026-05-31",
   "entrypoint": "models/mlb/cartridges/M0/runner.mjs",
-  "legacyEntrypoint": "pipeline/run-mlb-pregame.mjs",
   "workflowEntrypoint": "pipeline/mlb/workflows/pregame.mjs",
-  "legacyEntrypoints": [
-    "pipeline/generate-mlb-day-files.mjs",
-    "pipeline/export-mlb-side-predictions.mjs",
-    "pipeline/export-mlb-prop-predictions.mjs",
-    "pipeline/export-home-run-predictions.mjs"
-  ],
   "publishEntrypoints": [
     "pipeline/mlb/publish/generate-day-files.mjs",
     "pipeline/mlb/publish/export-side-predictions.mjs",
@@ -35,10 +28,6 @@
     {
       "role": "pregame-runner",
       "path": "models/mlb/cartridges/M0/runner.mjs"
-    },
-    {
-      "role": "legacy-pregame-runner",
-      "path": "pipeline/run-mlb-pregame.mjs"
     },
     {
       "role": "pregame-workflow",

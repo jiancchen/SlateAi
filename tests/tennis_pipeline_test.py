@@ -7,8 +7,13 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from pipeline.tennis_pipeline_health import check_weather, game_value_book_missing
-from pipeline.tennis_warehouse import apply_tennis_migrations, import_flashscore, infer_recent_map_slate_date, init_db
+from pipeline.tennis.warehouse.tennis_warehouse import (
+    apply_tennis_migrations,
+    import_flashscore,
+    infer_recent_map_slate_date,
+    init_db,
+)
+from pipeline.tennis.workflows.health import check_weather, game_value_book_missing
 
 
 class TennisWarehouseImportTest(unittest.TestCase):
@@ -210,7 +215,7 @@ class TennisWarehouseImportTest(unittest.TestCase):
         result = subprocess.run(
             [
                 "node",
-                "pipeline/verify-tennis-model-snapshot.mjs",
+                "pipeline/tennis/workflows/verify-model-snapshot.mjs",
                 "--date",
                 "2026-05-31",
                 "--model",
@@ -254,7 +259,7 @@ class TennisWarehouseImportTest(unittest.TestCase):
         result = subprocess.run(
             [
                 "node",
-                "pipeline/verify-tennis-model-run.mjs",
+                "pipeline/tennis/workflows/verify-model-run.mjs",
                 "--date",
                 "2026-05-31",
                 "--model",

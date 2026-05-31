@@ -19,8 +19,11 @@ for candidate in (ROOT, ROOT / "pipeline"):
         sys.path.insert(0, candidate_text)
 
 try:
-    from pipeline.warehouse_paths import tennis_warehouse_path
+    from pipeline.lib.warehouse_paths import tennis_warehouse_path
 except ModuleNotFoundError:
+    lib_path = str(ROOT / "pipeline" / "lib")
+    if lib_path not in sys.path:
+        sys.path.insert(0, lib_path)
     from warehouse_paths import tennis_warehouse_path
 
 DB_PATH = tennis_warehouse_path()

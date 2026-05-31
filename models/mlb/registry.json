@@ -12,7 +12,7 @@
   "runner": {
     "command": "node models/mlb/cartridges/M0/runner.mjs",
     "defaultMode": "pregame",
-    "migrationNote": "Temporary cartridge runner delegates to the legacy pregame script until M0 owns the internals."
+    "migrationNote": "Temporary cartridge runner delegates to sport-scoped MLB pipeline workflows until M0 owns the internals."
   },
   "cartridgeRoot": "./cartridges",
   "migrationStatus": "shells_started",
@@ -33,7 +33,7 @@
       "consumedBy": ["M0"],
       "targetPath": "./cartridges/RP36",
       "status": "shell_created",
-      "notes": "Current relief stack is exported by models/mlb/cartridges/RP36/exporter.py, with the old pipeline/export_mlb_reliever_shadow_board.py path kept as a compatibility wrapper."
+      "notes": "Current relief stack is exported by models/mlb/cartridges/RP36/exporter.py and consumed by M0 as a relief addendum."
     },
     {
       "modelId": "E0",

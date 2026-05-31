@@ -12,7 +12,7 @@ The current MLB relief pitcher work is not one clean model yet. It is a chained 
 python3 models/mlb/cartridges/RP36/runner.py --date YYYY-MM-DD
 ```
 
-The old `pipeline/export_mlb_reliever_shadow_board.py` path remains as a compatibility wrapper.
+The old top-level `pipeline/export_mlb_reliever_shadow_board.py` compatibility path has been removed; use the RP36 cartridge runner/exporter instead.
 
 That script imports several prior model/research layers and combines them into a team-side first-up reliever cluster.
 
@@ -75,7 +75,7 @@ The generated payload is keyed by team and contains:
 
 ## Current Join Path
 
-1. `pipeline/mlb/workflows/refresh-live-board.mjs` runs the RP36 wrapper during MLB pregame refresh. The old `pipeline/refresh-mlb-live-board.mjs` path remains as a compatibility wrapper.
+1. `pipeline/mlb/workflows/refresh-live-board.mjs` runs the RP36 cartridge wrapper during MLB pregame refresh.
 2. `models/mlb/cartridges/RP36/exporter.py` writes private JSON and a generated web module.
 3. `pipeline/lib/load-mlb-day-games.mjs` imports `web/src/lib/day-YYYY-MM-DD-reliever-shadow.js`.
 4. `loadMlbDayGames()` joins the shadow cards into `game.relieverShadowContext.away/home` by team name.

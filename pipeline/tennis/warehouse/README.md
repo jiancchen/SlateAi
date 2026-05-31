@@ -8,4 +8,4 @@ Tennis warehouse commands, migrations, imports, and health helpers live here aft
 - `backfill_recent_form_metrics.py`: Recent-form metric backfill from warehouse/source artifacts.
 - `migrations/`: Versioned tennis SQLite migrations.
 
-Legacy wrappers remain at `pipeline/tennis_warehouse.py` and `pipeline/backfill_tennis_recent_form_metrics.py` while references migrate.
+Use the sport-scoped package scripts or these canonical files directly; the old top-level compatibility wrappers have been removed.

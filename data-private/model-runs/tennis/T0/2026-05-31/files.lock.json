@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "runId": "tennis-2026-05-31-W1-F0-T0-E0",
-  "sourceHash": "73caa7f7486e6d3163eee3ce0ece227a01e49299926147950eaf335babde980e",
+  "sourceHash": "7286914067f6aa53bd7a47cd38d5d0855585a1c13fcc98498c65996f460a41aa",
   "files": [
     {
       "path": "api/src/scripts/export-published-data.ts",
@@ -37,7 +37,7 @@
       "path": "models/tennis/cartridges/T0/manifest.json",
       "role": "model-manifest",
       "exists": true,
-      "sha256": "b406cce7f23050309172ba479886688beaa11018057b1c4daeed7c21d45d68ff"
+      "sha256": "e2a85142016576aa3f2df4511b5a9b44fbbf84a18ff95f5f69ec286602171777"
     },
     {
       "path": "models/tennis/cartridges/T0/model_description.json",
@@ -86,6 +86,12 @@
       "role": "run-lock-helper",
       "exists": true,
       "sha256": "410e3f9a9bad58a36a7fbc94b15d709512459b497d8c463527d2880346c5d569"
+    },
+    {
+      "path": "pipeline/lib/warehouse_paths.py",
+      "role": "warehouse-path-resolver",
+      "exists": true,
+      "sha256": "51e465d9fabb2115cc4bfe59a23f931effbf77b2f056211bbdb38ae88770954f"
     },
     {
       "path": "pipeline/lib/warehouse-paths.mjs",
@@ -163,7 +169,7 @@
       "path": "pipeline/tennis/warehouse/tennis_warehouse.py",
       "role": "warehouse-code",
       "exists": true,
-      "sha256": "c3990ab4c8eefcfa6b8375b4ca279c2bdf5c15e313f2be4f738d9724c5cf1a68"
+      "sha256": "6401af0ea387f6d9fc34e69ae3330104e181c62ec756deed409594ff2cc424aa"
     },
     {
       "path": "pipeline/tennis/workflows/create-model-run.mjs",
@@ -181,7 +187,7 @@
       "path": "pipeline/tennis/workflows/lock-model-run.mjs",
       "role": "run-lock-script",
       "exists": true,
-      "sha256": "6252f09dd263f253b68a61524ee362238f624c7ecf3d2c98ca1763c60e8ab61c"
+      "sha256": "469325b638096a545a0f1ba9db9b06f945db75f92e43d41670f7998d66b32539"
     },
     {
       "path": "pipeline/tennis/workflows/settle-model-run.mjs",
@@ -202,12 +208,6 @@
       "sha256": "9897f866abc21c1453b691ea8f41e89cb69804e448aa5c01c4726f73ce8fe680"
     },
     {
-      "path": "pipeline/warehouse_paths.py",
-      "role": "warehouse-path-resolver",
-      "exists": true,
-      "sha256": "51e465d9fabb2115cc4bfe59a23f931effbf77b2f056211bbdb38ae88770954f"
-    },
-    {
       "path": "scripts/export-public-current.mjs",
       "role": "public-exporter",
       "exists": true,
@@ -217,7 +217,7 @@
       "path": "tests/tennis_pipeline_test.py",
       "role": "test-code",
       "exists": true,
-      "sha256": "4f47b38d7e0b13c42002527bf4b5302213593327d3dfcffa6c2d4f4384623a3b"
+      "sha256": "20ea0676b8fcc786532d9f8b3fb308e995dd76e5bcec6768bb5b0f39cf177a6c"
     },
     {
       "path": "web/src/app.css",

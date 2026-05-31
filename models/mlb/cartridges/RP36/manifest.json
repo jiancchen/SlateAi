@@ -12,7 +12,6 @@
   ],
   "createdForMigration": "2026-05-31",
   "entrypoint": "models/mlb/cartridges/RP36/runner.py",
-  "legacyEntrypoint": "pipeline/export_mlb_reliever_shadow_board.py",
   "outputContract": "models/mlb/cartridges/RP36/output-contract.json",
   "modelDescription": "models/mlb/cartridges/RP36/model_description.json",
   "modelNotes": "models/mlb/cartridges/RP36/MODEL_NOTES.md",
@@ -24,10 +23,6 @@
     {
       "role": "shadow-runner",
       "path": "models/mlb/cartridges/RP36/runner.py"
-    },
-    {
-      "role": "legacy-shadow-exporter",
-      "path": "pipeline/export_mlb_reliever_shadow_board.py"
     },
     {
       "role": "snapshot-verifier",

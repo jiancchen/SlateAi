@@ -7,5 +7,3 @@ Tennis source pull scripts live here after migration.
 - SofaScore match/slate pulls.
 - FanDuel event-page market scrape.
 - Roland Garros weather warehousing.
-
-Top-level `pipeline/` wrappers remain for compatibility while runbooks and package scripts move here.

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "runId": "mlb-2026-05-30-W1-F0-M0-RP36-E0",
-  "sourceHash": "fd6706379bc8b3a5c81519da88c0d451dd404d0203b35e6fc5d110eba1428cbb",
+  "sourceHash": "7bcf01805f79871d6c1f5039110864684f3b6086f359bb3040b033d9f7f8f520",
   "files": [
     {
       "path": "models/mlb/cartridges/E0/manifest.json",
@@ -19,7 +19,7 @@
       "path": "models/mlb/cartridges/M0/manifest.json",
       "role": "parent_model-manifest",
       "exists": true,
-      "sha256": "25e816946f3e44bb2ca93133cd4ef0afd4577c1bbf9bc6d82480e639f2aadd4c"
+      "sha256": "fc7b6d8ece928e1001485a559abc77684d68922fbfc57b641722760993669db6"
     },
     {
       "path": "models/mlb/cartridges/M0/model_description.json",
@@ -79,7 +79,7 @@
       "path": "models/mlb/cartridges/RP36/manifest.json",
       "role": "relief_addendum-manifest",
       "exists": true,
-      "sha256": "e552ff88229da708a42ce4573eb894a2080e3c4a6087441d61b89d32da71b6c0"
+      "sha256": "7a3d61ba70915290ea9bde335307bbd675fdc6928814b45a376fd6528c46728f"
     },
     {
       "path": "models/mlb/cartridges/RP36/model_description.json",
@@ -115,19 +115,13 @@
       "path": "models/mlb/registry.json",
       "role": "model-registry",
       "exists": true,
-      "sha256": "64700f9b4714a3623322a2db8881cce6d7509fca38e08f215115d2d194a0cf0a"
+      "sha256": "f4ffeeda11bf95577e8b7debb05c4f1014d2d5e9e59fd6382e0584af4949c2b4"
     },
     {
       "path": "models/registry.json",
       "role": "top-level-model-registry",
       "exists": true,
       "sha256": "222a2007b3f7f6a8fe11f40d1d48f16ff09a722bcd5afe7beff5eb1632224c68"
-    },
-    {
-      "role": "legacy-shadow-exporter",
-      "path": "pipeline/export_mlb_reliever_shadow_board.py",
-      "exists": true,
-      "sha256": "533233c475d7fb86b9d58aa73d4817e598ac7aeff533c46d06a50b3667e41b08"
     },
     {
       "role": "fanduel-fetcher",
@@ -248,12 +242,6 @@
       "path": "pipeline/mlb/workflows/verify-refresh.mjs",
       "exists": true,
       "sha256": "194433b1392bb238a7d0380e04a0089d460cab519580d747536cff81b2ddcf33"
-    },
-    {
-      "role": "legacy-pregame-runner",
-      "path": "pipeline/run-mlb-pregame.mjs",
-      "exists": true,
-      "sha256": "e66207e57faf2ec22ba18973331aba2d8bbf8c2843bb192d3a3a207bddfc9ee3"
     }
   ]
 }
