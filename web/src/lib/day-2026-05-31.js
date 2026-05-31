@@ -109,9 +109,51 @@ const rawTennisGames = [
     ],
     "valueBoard": {
       "note": "No sportsbook price captured; value math is unavailable.",
-      "ml": null,
-      "spread": null,
-      "total": null,
+      "ml": {
+        "marketType": "ML",
+        "selection": "Iga Swiatek",
+        "americanOdds": null,
+        "modelPct": 54,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueIssue": "Need posted ML price before EV can be trusted.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Iga Swiatek",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 48,
+        "valueIssue": "Need posted game spread before grading.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "total": {
+        "marketType": "Total",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 46,
+        "valueIssue": "Need posted match total before grading.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Price required",
+        "line": null,
+        "expectedGames": 9.5,
+        "confidence": 54,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "valueGrade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "betGrade": false
+      },
       "setWin": [
         {
           "name": "Marta Kostyuk",
@@ -129,6 +171,55 @@ const rawTennisGames = [
     },
     "derivativeCase": null,
     "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Iga Swiatek",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 54,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "grade": "Need price",
+        "issue": "Need posted ML price before EV can be trusted.",
+        "reason": "Compare model probability to break-even price before betting ML."
+      },
+      {
+        "marketType": "Game spread",
+        "label": "Game spread",
+        "selection": "Iga Swiatek",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 48,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": 48,
+        "grade": "Need price",
+        "reason": "Spread needs projected margin and posted number before grading."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 46,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": 46,
+        "grade": "Need price",
+        "reason": "Total games need expected match games vs the posted line."
+      },
       {
         "marketType": "Win a set",
         "label": "Win a set %",
@@ -150,6 +241,17 @@ const rawTennisGames = [
         "confidence": 71,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Price required",
+        "expectedGames": 9.5,
+        "confidence": 54,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "grade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
     ],
     "ensembleValueCase": {
@@ -373,9 +475,51 @@ const rawTennisGames = [
     ],
     "valueBoard": {
       "note": "No sportsbook price captured; value math is unavailable.",
-      "ml": null,
-      "spread": null,
-      "total": null,
+      "ml": {
+        "marketType": "ML",
+        "selection": "Sorana Cirstea",
+        "americanOdds": null,
+        "modelPct": 71,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueIssue": "Need posted ML price before EV can be trusted.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Sorana Cirstea",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 65,
+        "valueIssue": "Need posted game spread before grading.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "total": {
+        "marketType": "Total",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 63,
+        "valueIssue": "Need posted match total before grading.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Price required",
+        "line": null,
+        "expectedGames": 8.8,
+        "confidence": 54,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "valueGrade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "betGrade": false
+      },
       "setWin": [
         {
           "name": "Sorana Cirstea",
@@ -393,6 +537,55 @@ const rawTennisGames = [
     },
     "derivativeCase": null,
     "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Sorana Cirstea",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 71,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "grade": "Need price",
+        "issue": "Need posted ML price before EV can be trusted.",
+        "reason": "Compare model probability to break-even price before betting ML."
+      },
+      {
+        "marketType": "Game spread",
+        "label": "Game spread",
+        "selection": "Sorana Cirstea",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 65,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": 65,
+        "grade": "Need price",
+        "reason": "Spread needs projected margin and posted number before grading."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 63,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": 63,
+        "grade": "Need price",
+        "reason": "Total games need expected match games vs the posted line."
+      },
       {
         "marketType": "Win a set",
         "label": "Win a set %",
@@ -414,6 +607,17 @@ const rawTennisGames = [
         "confidence": 79,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Price required",
+        "expectedGames": 8.8,
+        "confidence": 54,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "grade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
     ],
     "ensembleValueCase": {
@@ -634,9 +838,51 @@ const rawTennisGames = [
     ],
     "valueBoard": {
       "note": "No sportsbook price captured; value math is unavailable.",
-      "ml": null,
-      "spread": null,
-      "total": null,
+      "ml": {
+        "marketType": "ML",
+        "selection": "Elina Svitolina",
+        "americanOdds": null,
+        "modelPct": 56,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueIssue": "Need posted ML price before EV can be trusted.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Elina Svitolina",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 50,
+        "valueIssue": "Need posted game spread before grading.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "total": {
+        "marketType": "Total",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 48,
+        "valueIssue": "Need posted match total before grading.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Price required",
+        "line": null,
+        "expectedGames": 9.5,
+        "confidence": 54,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "valueGrade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "betGrade": false
+      },
       "setWin": [
         {
           "name": "Elina Svitolina",
@@ -654,6 +900,55 @@ const rawTennisGames = [
     },
     "derivativeCase": null,
     "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Elina Svitolina",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 56,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "grade": "Need price",
+        "issue": "Need posted ML price before EV can be trusted.",
+        "reason": "Compare model probability to break-even price before betting ML."
+      },
+      {
+        "marketType": "Game spread",
+        "label": "Game spread",
+        "selection": "Elina Svitolina",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 50,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": 50,
+        "grade": "Need price",
+        "reason": "Spread needs projected margin and posted number before grading."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 48,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": 48,
+        "grade": "Need price",
+        "reason": "Total games need expected match games vs the posted line."
+      },
       {
         "marketType": "Win a set",
         "label": "Win a set %",
@@ -675,6 +970,17 @@ const rawTennisGames = [
         "confidence": 71,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Price required",
+        "expectedGames": 9.5,
+        "confidence": 54,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "grade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
     ],
     "ensembleValueCase": {
@@ -890,9 +1196,51 @@ const rawTennisGames = [
     ],
     "valueBoard": {
       "note": "No sportsbook price captured; value math is unavailable.",
-      "ml": null,
-      "spread": null,
-      "total": null,
+      "ml": {
+        "marketType": "ML",
+        "selection": "Rafael Jodar",
+        "americanOdds": null,
+        "modelPct": 56,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueIssue": "Need posted ML price before EV can be trusted.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Rafael Jodar",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 50,
+        "valueIssue": "Need posted game spread before grading.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "total": {
+        "marketType": "Total",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 48,
+        "valueIssue": "Need posted match total before grading.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Price required",
+        "line": null,
+        "expectedGames": 9.5,
+        "confidence": 54,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "valueGrade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "betGrade": false
+      },
       "setWin": [
         {
           "name": "Rafael Jodar",
@@ -910,6 +1258,55 @@ const rawTennisGames = [
     },
     "derivativeCase": null,
     "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Rafael Jodar",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 56,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "grade": "Need price",
+        "issue": "Need posted ML price before EV can be trusted.",
+        "reason": "Compare model probability to break-even price before betting ML."
+      },
+      {
+        "marketType": "Game spread",
+        "label": "Game spread",
+        "selection": "Rafael Jodar",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 50,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": 50,
+        "grade": "Need price",
+        "reason": "Spread needs projected margin and posted number before grading."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 48,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": 48,
+        "grade": "Need price",
+        "reason": "Total games need expected match games vs the posted line."
+      },
       {
         "marketType": "Win a set",
         "label": "Win a set %",
@@ -931,6 +1328,17 @@ const rawTennisGames = [
         "confidence": 86,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Price required",
+        "expectedGames": 9.5,
+        "confidence": 54,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "grade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
     ],
     "ensembleValueCase": {
@@ -1143,9 +1551,51 @@ const rawTennisGames = [
     ],
     "valueBoard": {
       "note": "No sportsbook price captured; value math is unavailable.",
-      "ml": null,
-      "spread": null,
-      "total": null,
+      "ml": {
+        "marketType": "ML",
+        "selection": "Mirra Andreeva",
+        "americanOdds": null,
+        "modelPct": 70,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueIssue": "Need posted ML price before EV can be trusted.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Mirra Andreeva",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 64,
+        "valueIssue": "Need posted game spread before grading.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "total": {
+        "marketType": "Total",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 62,
+        "valueIssue": "Need posted match total before grading.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Price required",
+        "line": null,
+        "expectedGames": 8.8,
+        "confidence": 54,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "valueGrade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "betGrade": false
+      },
       "setWin": [
         {
           "name": "Mirra Andreeva",
@@ -1163,6 +1613,55 @@ const rawTennisGames = [
     },
     "derivativeCase": null,
     "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Mirra Andreeva",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 70,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "grade": "Need price",
+        "issue": "Need posted ML price before EV can be trusted.",
+        "reason": "Compare model probability to break-even price before betting ML."
+      },
+      {
+        "marketType": "Game spread",
+        "label": "Game spread",
+        "selection": "Mirra Andreeva",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 64,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": 64,
+        "grade": "Need price",
+        "reason": "Spread needs projected margin and posted number before grading."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 62,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": 62,
+        "grade": "Need price",
+        "reason": "Total games need expected match games vs the posted line."
+      },
       {
         "marketType": "Win a set",
         "label": "Win a set %",
@@ -1184,6 +1683,17 @@ const rawTennisGames = [
         "confidence": 78,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Price required",
+        "expectedGames": 8.8,
+        "confidence": 54,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "grade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
     ],
     "ensembleValueCase": {
@@ -1406,9 +1916,51 @@ const rawTennisGames = [
     ],
     "valueBoard": {
       "note": "No sportsbook price captured; value math is unavailable.",
-      "ml": null,
-      "spread": null,
-      "total": null,
+      "ml": {
+        "marketType": "ML",
+        "selection": "Alexander Zverev",
+        "americanOdds": null,
+        "modelPct": 79,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueIssue": "Need posted ML price before EV can be trusted.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Alexander Zverev",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 73,
+        "valueIssue": "Need posted game spread before grading.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "total": {
+        "marketType": "Total",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 71,
+        "valueIssue": "Need posted match total before grading.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Price required",
+        "line": null,
+        "expectedGames": 8.4,
+        "confidence": 51,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "valueGrade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "betGrade": false
+      },
       "setWin": [
         {
           "name": "Jesper de Jong",
@@ -1426,6 +1978,55 @@ const rawTennisGames = [
     },
     "derivativeCase": null,
     "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Alexander Zverev",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 79,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "grade": "Need price",
+        "issue": "Need posted ML price before EV can be trusted.",
+        "reason": "Compare model probability to break-even price before betting ML."
+      },
+      {
+        "marketType": "Game spread",
+        "label": "Game spread",
+        "selection": "Alexander Zverev",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 73,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": 73,
+        "grade": "Need price",
+        "reason": "Spread needs projected margin and posted number before grading."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 71,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": 71,
+        "grade": "Need price",
+        "reason": "Total games need expected match games vs the posted line."
+      },
       {
         "marketType": "Win a set",
         "label": "Win a set %",
@@ -1447,6 +2048,17 @@ const rawTennisGames = [
         "confidence": 92,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Price required",
+        "expectedGames": 8.4,
+        "confidence": 51,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "grade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
     ],
     "ensembleValueCase": {
@@ -1680,9 +2292,51 @@ const rawTennisGames = [
     ],
     "valueBoard": {
       "note": "No sportsbook price captured; value math is unavailable.",
-      "ml": null,
-      "spread": null,
-      "total": null,
+      "ml": {
+        "marketType": "ML",
+        "selection": "Andrey Rublev",
+        "americanOdds": null,
+        "modelPct": 59,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueIssue": "Need posted ML price before EV can be trusted.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Andrey Rublev",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 53,
+        "valueIssue": "Need posted game spread before grading.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "total": {
+        "marketType": "Total",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 51,
+        "valueIssue": "Need posted match total before grading.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Price required",
+        "line": null,
+        "expectedGames": 8.8,
+        "confidence": 54,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "valueGrade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "betGrade": false
+      },
       "setWin": [
         {
           "name": "Jakub Mensik",
@@ -1700,6 +2354,55 @@ const rawTennisGames = [
     },
     "derivativeCase": null,
     "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Andrey Rublev",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 59,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "grade": "Need price",
+        "issue": "Need posted ML price before EV can be trusted.",
+        "reason": "Compare model probability to break-even price before betting ML."
+      },
+      {
+        "marketType": "Game spread",
+        "label": "Game spread",
+        "selection": "Andrey Rublev",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 53,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": 53,
+        "grade": "Need price",
+        "reason": "Spread needs projected margin and posted number before grading."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 51,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": 51,
+        "grade": "Need price",
+        "reason": "Total games need expected match games vs the posted line."
+      },
       {
         "marketType": "Win a set",
         "label": "Win a set %",
@@ -1721,6 +2424,17 @@ const rawTennisGames = [
         "confidence": 86,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Price required",
+        "expectedGames": 8.8,
+        "confidence": 54,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "grade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
     ],
     "ensembleValueCase": {
@@ -1953,9 +2667,51 @@ const rawTennisGames = [
     ],
     "valueBoard": {
       "note": "No sportsbook price captured; value math is unavailable.",
-      "ml": null,
-      "spread": null,
-      "total": null,
+      "ml": {
+        "marketType": "ML",
+        "selection": "Casper Ruud",
+        "americanOdds": null,
+        "modelPct": 59,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueIssue": "Need posted ML price before EV can be trusted.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Casper Ruud",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 53,
+        "valueIssue": "Need posted game spread before grading.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "total": {
+        "marketType": "Total",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 51,
+        "valueIssue": "Need posted match total before grading.",
+        "valueGrade": "Need price",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Price required",
+        "line": null,
+        "expectedGames": 8.8,
+        "confidence": 54,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "valueGrade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "betGrade": false
+      },
       "setWin": [
         {
           "name": "Casper Ruud",
@@ -1973,6 +2729,55 @@ const rawTennisGames = [
     },
     "derivativeCase": null,
     "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Casper Ruud",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 59,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "grade": "Need price",
+        "issue": "Need posted ML price before EV can be trusted.",
+        "reason": "Compare model probability to break-even price before betting ML."
+      },
+      {
+        "marketType": "Game spread",
+        "label": "Game spread",
+        "selection": "Casper Ruud",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 53,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": 53,
+        "grade": "Need price",
+        "reason": "Spread needs projected margin and posted number before grading."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 51,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": 51,
+        "grade": "Need price",
+        "reason": "Total games need expected match games vs the posted line."
+      },
       {
         "marketType": "Win a set",
         "label": "Win a set %",
@@ -1994,6 +2799,17 @@ const rawTennisGames = [
         "confidence": 85,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Price required",
+        "expectedGames": 8.8,
+        "confidence": 54,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "grade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
     ],
     "ensembleValueCase": {

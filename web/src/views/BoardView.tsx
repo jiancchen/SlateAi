@@ -553,7 +553,7 @@ export function BoardView(props: BoardViewProps) {
                       <div className="tennis-value-list tennis-trade-list">
                         <div className="tennis-value-section-label">Prediction market trade-to-sell</div>
                         {tennisValueSummary.kalshiTradeCandidates
-                          .slice(0, 6)
+                          .slice(0, 5)
                           .map((row: AnyRecord) => (
                           <button
                             key={`${row.marketTicker}-${row.boardMatchId}`}
@@ -581,7 +581,7 @@ export function BoardView(props: BoardViewProps) {
                       <div className="tennis-value-list tennis-trade-list">
                         <div className="tennis-value-section-label">Prediction market watchlist</div>
                         {tennisValueSummary.kalshiWatchRows
-                          .slice(0, 4)
+                          .slice(0, 5)
                           .map((row: AnyRecord) => (
                           <button
                             key={`${row.marketTicker}-${row.boardMatchId}-watch`}

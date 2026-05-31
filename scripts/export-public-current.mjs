@@ -59,7 +59,12 @@ const selectSlate = async () => {
     return requested
   }
 
-  return sorted.at(-1)
+  const today = currentIsoDate()
+  const todaySlate = sorted.find((entry) => entry.id === today)
+  if (todaySlate) return todaySlate
+
+  const latestNotFuture = sorted.filter((entry) => String(entry.id) <= today).at(-1)
+  return latestNotFuture || sorted.at(-1)
 }
 
 const selectPublicSlates = async (currentSlate) => {

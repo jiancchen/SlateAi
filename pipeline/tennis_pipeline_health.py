@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DB = ROOT / "data-private" / "warehouse" / "sports.db"
 REFERENCE_DIR = ROOT / "data-private" / "reference" / "tennis"
 PUBLISHED_SLATES_DIR = ROOT / "published-data" / "slates"
+KALSHI_SPIKE_MODEL_PATH = ROOT / "web" / "src" / "lib" / "kalshi-tennis-spike-model.generated.json"
 
 CORE_RECENT_METRICS = {"hold", "secondServe", "errorControl", "returnPressure", "closeout"}
 
@@ -335,6 +336,81 @@ def check_published(date: str) -> dict[str, Any]:
     }
 
 
+def game_value_book_missing(game: dict[str, Any]) -> list[str]:
+    context = game.get("tennisContext") or {}
+    matrix = context.get("bettingMatrix") or []
+    labels = {str(row.get("label") or row.get("marketType") or "").lower() for row in matrix}
+    value_board = context.get("valueBoard") or {}
+    missing: list[str] = []
+    if not any("ml" in label or "moneyline" in label for label in labels) and not value_board.get("ml"):
+        missing.append("ML value book")
+    if not any("o/u" in label or "total games" in label for label in labels) and not value_board.get("total"):
+        missing.append("match O/U games value book")
+    if not any("1st set" in label or "first-set" in label or "first set" in label for label in labels) and not value_board.get("firstSetTotal"):
+        missing.append("1st-set O/U games value book")
+    return missing
+
+
+def check_value_books(date: str, settled: bool) -> dict[str, Any]:
+    games_dir = PUBLISHED_SLATES_DIR / date / "games"
+    if not games_dir.exists():
+        return {"ok": False, "path": str(games_dir), "error": "missing published slate games directory"}
+    missing_games = []
+    checked_games = 0
+    for path in sorted(games_dir.glob("*.json")):
+        game = read_json(path)
+        if game.get("league") != "Tennis":
+            continue
+        checked_games += 1
+        missing = game_value_book_missing(game)
+        if missing:
+            missing_games.append({"game": path.name, "missing": missing})
+
+    kalshi_rows = []
+    if KALSHI_SPIKE_MODEL_PATH.exists():
+        payload = read_json(KALSHI_SPIKE_MODEL_PATH)
+        kalshi_rows = [
+            row for row in payload.get("currentCandidates") or []
+            if str(row.get("occurrenceDatetime") or "").startswith(date)
+        ]
+    trade_rows = [row for row in kalshi_rows if row.get("spikeModelTier") == "trade"]
+    watch_rows = [row for row in kalshi_rows if row.get("spikeModelTier") == "watch"]
+    pass_rows = [row for row in kalshi_rows if row.get("spikeModelTier") == "pass"]
+    kalshi_ok = settled or bool(kalshi_rows)
+    ok = checked_games > 0 and not missing_games and kalshi_ok
+    return {
+        "ok": ok,
+        "mode": "settled" if settled else "pregame",
+        "checkedGames": checked_games,
+        "missingGames": missing_games[:50],
+        "missingGameCount": len(missing_games),
+        "kalshiRows": len(kalshi_rows),
+        "kalshiTradeRows": len(trade_rows),
+        "kalshiWatchRows": len(watch_rows),
+        "kalshiPassRows": len(pass_rows),
+        "topKalshiRows": [
+            {
+                "selection": row.get("selection"),
+                "match": row.get("boardTitle"),
+                "tier": row.get("spikeModelTier"),
+                "entry": row.get("yesAsk"),
+                "target": row.get("spikeModelTarget25x") or row.get("projectedExit"),
+                "confidence": row.get("spikeModelProbability25x") or row.get("targetHitProbability"),
+            }
+            for row in sorted(
+                kalshi_rows,
+                key=lambda item: (
+                    item.get("spikeModelTier") == "trade",
+                    item.get("spikeModelTier") == "watch",
+                    float(item.get("spikeModelEvPctOfEntry25x") or item.get("tradeEvPctOfEntry") or -9),
+                ),
+                reverse=True,
+            )[:5]
+        ],
+        "error": None if ok else "published tennis value books or Kalshi trade-to-sell board are incomplete",
+    }
+
+
 def run_health(date: str, db_path: Path = DEFAULT_DB, settled: bool | None = None) -> dict[str, Any]:
     is_settled = resolve_settled(date, settled)
     checks: dict[str, Any] = {"date": date, "mode": "settled" if is_settled else "pregame"}
@@ -349,6 +425,7 @@ def run_health(date: str, db_path: Path = DEFAULT_DB, settled: bool | None = Non
         checks["weather"] = check_weather(conn, date, match_count, is_settled)
         checks["resultsTraining"] = check_results_and_training(conn, date, match_count, is_settled)
     checks["published"] = check_published(date)
+    checks["valueBooks"] = check_value_books(date, is_settled)
     checks["ok"] = all(check.get("ok") for key, check in checks.items() if isinstance(check, dict) and key not in {"date"})
     return checks
 
@@ -370,7 +447,7 @@ def main() -> int:
     else:
         status = "PASS" if report["ok"] else "FAIL"
         print(f"Tennis pipeline health {status} for {args.date} ({report['mode']})")
-        for name in ("sourceFiles", "rankings", "recentMap", "warehouse", "sofascore", "kalshi", "weather", "resultsTraining", "published"):
+        for name in ("sourceFiles", "rankings", "recentMap", "warehouse", "sofascore", "kalshi", "weather", "resultsTraining", "published", "valueBooks"):
             check = report[name]
             marker = "ok" if check["ok"] else "bad"
             print(f"- {name}: {marker}")

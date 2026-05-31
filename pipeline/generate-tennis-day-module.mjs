@@ -748,13 +748,81 @@ const buildMarketData = ({ fanduel, players, pickName, weaknessEdge, confidence,
   }
 }
 
-const buildValueBoard = ({ marketData, pickName, confidence, volatility, weaknessEdge, setWinProjections }) => {
+const firstSetValueBook = ({ derivativeCase, confidence, volatility, weaknessEdge }) => {
+  const firstSet = derivativeCase?.firstSet
+  if (firstSet) {
+    return {
+      marketType: 'First-set total',
+      selection: firstSet.lean || 'No bet',
+      line: firstSet.postedLine ?? null,
+      expectedGames: Number.isFinite(Number(firstSet.expectedGames)) ? Number(firstSet.expectedGames) : null,
+      confidence: firstSet.confidence ?? null,
+      tiebreakRisk: Number.isFinite(Number(firstSet.tiebreakRisk)) ? Number(firstSet.tiebreakRisk) : null,
+      earlyBreakRisk: Number.isFinite(Number(firstSet.earlyBreakRisk)) ? Number(firstSet.earlyBreakRisk) : null,
+      valueGrade: firstSet.confidence >= 58 ? 'Actionable live watch' : 'Thin',
+      reason: firstSet.lean || 'First-set entry needs early serve pressure.',
+      betGrade: false
+    }
+  }
+  const estimatedGames = clamp(
+    Number((9.1 + (volatility >= 62 ? 0.7 : volatility <= 42 ? -0.3 : 0.1) + (confidence <= 56 ? 0.3 : confidence >= 72 ? -0.4 : 0)).toFixed(1)),
+    8.2,
+    12.5
+  )
+  const breakRisk = weaknessEdge?.edgeType === 'Weakness edge' ? 62 : volatility >= 62 ? 58 : 48
+  return {
+    marketType: 'First-set total',
+    selection: 'Price required',
+    line: null,
+    expectedGames: estimatedGames,
+    confidence: clamp(Math.round(54 + (volatility >= 62 ? 4 : 0) - (confidence >= 72 ? 3 : 0)), 45, 62),
+    tiebreakRisk: clamp(Math.round(100 - breakRisk), 20, 70),
+    earlyBreakRisk: breakRisk,
+    valueGrade: 'Needs posted first-set total',
+    reason: 'Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.',
+    betGrade: false
+  }
+}
+
+const buildValueBoard = ({ marketData, pickName, confidence, volatility, weaknessEdge, setWinProjections, derivativeCase }) => {
+  const firstSetTotal = firstSetValueBook({ derivativeCase, confidence, volatility, weaknessEdge })
   if (!marketData) {
     return {
       note: 'No sportsbook price captured; value math is unavailable.',
-      ml: null,
-      spread: null,
-      total: null,
+      ml: {
+        marketType: 'ML',
+        selection: pickName,
+        americanOdds: null,
+        modelPct: confidence,
+        impliedPct: null,
+        edgePct: null,
+        evPer100: null,
+        netEvPer100: null,
+        valueIssue: 'Need posted ML price before EV can be trusted.',
+        valueGrade: 'Need price',
+        betGrade: false
+      },
+      spread: {
+        marketType: 'Spread',
+        selection: pickName,
+        line: null,
+        americanOdds: null,
+        modelPct: Math.max(42, confidence - 6),
+        valueIssue: 'Need posted game spread before grading.',
+        valueGrade: 'Need price',
+        betGrade: false
+      },
+      total: {
+        marketType: 'Total',
+        selection: 'Price required',
+        line: null,
+        americanOdds: null,
+        modelPct: Math.max(41, confidence - 8),
+        valueIssue: 'Need posted match total before grading.',
+        valueGrade: 'Need price',
+        betGrade: false
+      },
+      firstSetTotal,
       setWin: setWinProjections
     }
   }
@@ -838,6 +906,7 @@ const buildValueBoard = ({ marketData, pickName, confidence, volatility, weaknes
           valueGrade: 'No direction',
           betGrade: false
         },
+    firstSetTotal,
     setWin: setWinProjections.map((entry) => ({
       ...entry,
       marketType: 'Win a set',
@@ -948,18 +1017,18 @@ const buildBettingMatrix = ({ marketData, valueBoard, setWinProjections, derivat
     })
   }
 
-  const firstSet = derivativeCase?.firstSet
+  const firstSet = derivativeCase?.firstSet || valueBoard?.firstSetTotal
   if (firstSet) {
     matrix.push({
-      marketType: 'First set games',
-      label: '1st set games',
-      selection: firstSet.lean || 'Pass',
+      marketType: 'First-set total games',
+      label: '1st set O/U',
+      selection: firstSet.lean || firstSet.selection || 'Pass',
       expectedGames: Number.isFinite(Number(firstSet.expectedGames)) ? Number(firstSet.expectedGames) : null,
       confidence: firstSet.confidence ?? null,
       tiebreakRisk: Number.isFinite(Number(firstSet.tiebreakRisk)) ? Number(firstSet.tiebreakRisk) : null,
       earlyBreakRisk: Number.isFinite(Number(firstSet.earlyBreakRisk)) ? Number(firstSet.earlyBreakRisk) : null,
-      grade: firstSet.confidence >= 58 ? 'Actionable live watch' : 'Thin',
-      reason: firstSet.lean || 'First-set entry needs early serve pressure.'
+      grade: firstSet.grade || firstSet.valueGrade || (firstSet.confidence >= 58 ? 'Actionable live watch' : 'Thin'),
+      reason: firstSet.reason || firstSet.lean || 'First-set entry needs early serve pressure.'
     })
   }
 
@@ -1001,9 +1070,9 @@ const buildGame = (match, rankings, quality, date, fanduelIndex, ensembleIndex, 
     ...player,
     market: marketData?.players?.find((entry) => entry.name === player.name) ?? null
   }))
-  const setWinProjections = buildSetWinProjections({ players, tour, volatility })
-  const valueBoard = buildValueBoard({ marketData, pickName, confidence, volatility, weaknessEdge, setWinProjections })
   const derivativeCase = findDerivativeCase(derivativeIndex, matchId, a.name, b.name)
+  const setWinProjections = buildSetWinProjections({ players, tour, volatility })
+  const valueBoard = buildValueBoard({ marketData, pickName, confidence, volatility, weaknessEdge, setWinProjections, derivativeCase })
   const bettingMatrix = buildBettingMatrix({ marketData, valueBoard, setWinProjections, derivativeCase, pickName, confidence })
   const ensembleRow = ensembleIndex.get(matchId) || null
   const ensembleSelectionIsA = ensembleRow?.selection === a.name

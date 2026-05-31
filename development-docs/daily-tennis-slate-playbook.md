@@ -132,6 +132,19 @@ Each match row must include:
 }
 ```
 
+## Required Tennis Value Books
+
+Every time tennis predictions are updated, regenerate and publish these value books before deploy:
+
+- **ML value book**: model probability, implied price, edge, EV/100, fee-adjusted note, and `bet/pass/watch` grade.
+- **Match O/U games value book**: expected match games, posted total if available, over/under lean, edge in games, confidence, and EV/100 when odds exist.
+- **1st-set O/U games value book**: expected first-set games, posted first-set total if available, early-break/tiebreak risk, confidence, and price-required fallback when the book does not post the market.
+- **Kalshi trade-to-sell book**: buy cap, sell target, spike confidence, same-favorite/similar-entry history, tier (`trade`, `watch`, `pass`), and veto reason when blocked.
+
+If there are no validated plays, still publish the book. The site should show the best available confidence-ranked rows, capped at the top 5 when there are 5 rows. A blank value section is a pipeline failure; a clear `no play / price required / pass` section is acceptable.
+
+Pregame health treats these as required published artifacts. `npm run data:health:tennis -- --date YYYY-MM-DD --pregame` must pass `valueBooks` before deploy.
+
 Decision rules:
 - If model ML is basically fair versus implied price, mark ML as no edge even when the player is likely to win. Example: model 65.8% versus 66% implied is a pass on ML.
 - If ML is fair/taxed, look for derivative value first: spread, total games, win-a-set, first-set total, or live set-win after the opponent wins early.

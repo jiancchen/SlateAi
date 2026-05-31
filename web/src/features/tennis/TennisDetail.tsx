@@ -1462,13 +1462,13 @@ export function TennisDetail(props: TennisDetailProps) {
         <section className="detail-panel">
           <div className="detail-panel-header">
             <p className="eyebrow">Bet-grade value board</p>
-            <span>ML, spread, total, set-win</span>
+            <span>ML, spread, total, 1st set, set-win</span>
           </div>
           <p className="react-section-copy">
             {context.valueBoard.note || 'EV is profit per 100 risked from model probability vs posted odds.'}
           </p>
           <div className="tennis-value-detail-grid">
-            {[context.valueBoard.ml, context.valueBoard.spread, context.valueBoard.total]
+            {[context.valueBoard.ml, context.valueBoard.spread, context.valueBoard.total, context.valueBoard.firstSetTotal]
               .filter(Boolean)
               .map((entry: AnyRecord) => (
                 <article

@@ -123,11 +123,12 @@ The tennis model pass is intentionally run twice on prediction days: first to re
 Tennis health gate:
 - `npm run data:health:tennis -- --date YYYY-MM-DD --pregame` must pass before treating a future slate as analysis-ready.
 - `npm run data:health:tennis -- --date YYYY-MM-DD --settled` must pass during post-match follow-up before trusting backtests or model-training rows for that day.
-- The gate verifies source files, dated ranking snapshots, imported ranking rows, the dated Flashscore recent-match map, recent Flashscore links imported into SQLite under the correct slate date, warehouse recent-form metrics, SofaScore match mappings, Roland Garros weather-window coverage, Kalshi/prediction-market coverage, and published match-detail payloads.
+- The gate verifies source files, dated ranking snapshots, imported ranking rows, the dated Flashscore recent-match map, recent Flashscore links imported into SQLite under the correct slate date, warehouse recent-form metrics, SofaScore match mappings, Roland Garros weather-window coverage, Kalshi/prediction-market coverage, published match-detail payloads, and the required tennis value books.
 - In settled mode, it also requires SofaScore stats/replay rows, Kalshi candles/trade features, completed match results, and model-training labels. If a day has passed and this fails, the warehouse is incomplete.
 - Weather must be warehoused through Open-Meteo hourly rows plus `tennis_match_weather` summaries before model training. For settled slates, the summary must cover each Roland Garros match from SofaScore start time through summed set duration; for pre-match slates, it uses the scheduled start plus a conservative match-duration window until actual durations arrive.
 - Published tennis detail payloads must have no missing Hold / 2nd / Err / Ret / Close cells in the visible last-five grid.
 - Published tennis detail payloads must join derivative market predictions whenever FanDuel totals/spreads were captured; missing expected games, first-set games, O/U lean, or spread lean is a failed pregame pass.
+- Every tennis prediction refresh must publish four value books: ML, match O/U games, 1st-set O/U games, and Kalshi trade-to-sell. If there are no validated plays, publish the top confidence-ranked watch/pass rows, capped at 5 when available, instead of leaving the section blank.
 - `npm test` includes a regression test for the bug that previously imported May 28/29/30 Flashscore recent maps with `slate_date = NULL`.
 
 FanDuel event-page lines:
@@ -230,6 +231,7 @@ This postgame command:
 - The website renders precomputed outputs; it should not become the home of the private pipeline.
 - The new API layer is the first step away from large generated frontend data modules, but the web app is still reading `web/src/lib/day-*.js` directly until the next migration pass.
 - The API now prefers `published-data/` JSON snapshots for slates, history, and stories when they exist, and falls back to the current generated modules when they do not.
+- Public deploys should carry a two-day window: today in America/Los_Angeles as `/data/current/`, plus tomorrow under `/data/slates/YYYY-MM-DD/` when that slate has been generated.
 - What is still intentionally deferred before full rewiring: auth, write endpoints, moving generated day payloads into compact JSON, and a shared type/contract package between `web/` and `api/`.
 - If you deploy on Vercel, deploy from `web/`, not the repo root.
 - See [web/DEPLOY_VERCEL.md](/Users/jcchen/Documents/New%20project/web/DEPLOY_VERCEL.md:1) for the exact Vercel setup checklist.

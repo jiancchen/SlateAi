@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from pipeline.tennis_pipeline_health import check_weather
+from pipeline.tennis_pipeline_health import check_weather, game_value_book_missing
 from pipeline.tennis_warehouse import import_flashscore, infer_recent_map_slate_date, init_db
 
 
@@ -91,6 +91,32 @@ class TennisWarehouseImportTest(unittest.TestCase):
         )
         present = check_weather(conn, "2026-05-30", match_count=1, settled=True)
         self.assertTrue(present["ok"])
+
+    def test_value_book_gate_requires_ml_match_total_and_first_set_total(self) -> None:
+        complete_game = {
+            "league": "Tennis",
+            "tennisContext": {
+                "bettingMatrix": [
+                    {"label": "ML value"},
+                    {"label": "O/U games"},
+                    {"label": "1st set O/U"},
+                ],
+                "valueBoard": {},
+            },
+        }
+        self.assertEqual(game_value_book_missing(complete_game), [])
+
+        missing_game = {
+            "league": "Tennis",
+            "tennisContext": {
+                "bettingMatrix": [{"label": "ML value"}],
+                "valueBoard": {},
+            },
+        }
+        self.assertEqual(
+            game_value_book_missing(missing_game),
+            ["match O/U games value book", "1st-set O/U games value book"],
+        )
 
 
 if __name__ == "__main__":

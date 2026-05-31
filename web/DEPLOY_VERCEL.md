@@ -30,13 +30,31 @@ npm run publish:site
 
 This is the command to run when you say "publish": it exports the public static bundle, builds `web/`, and deploys production to Vercel.
 
-By default, the active public slate is the latest generated slate in `published-data/slates`, plus the next calendar day if that next slate exists. To force the active slate:
+By default, the active public slate is **today in America/Los_Angeles** when that slate exists, plus the next calendar day if that next slate exists. This matters once tomorrow's predictions are generated: the deploy should still make today the `/data/current/` slate while also shipping tomorrow under `/data/slates/NEXT-YYYY-MM-DD/`.
+
+Before every deploy, verify the two-day window:
+
+```bash
+cat published-data/slates/index.json | grep -E '"id": "(TODAY-YYYY-MM-DD|NEXT-YYYY-MM-DD)"'
+npm run data:export:public-current -- --date TODAY-YYYY-MM-DD
+cat web/public/data/meta.json
+```
+
+The expected shape is:
+
+```text
+currentSlate.id = TODAY-YYYY-MM-DD
+slates includes TODAY-YYYY-MM-DD
+slates includes NEXT-YYYY-MM-DD when next day has been generated
+```
+
+To force the active slate:
 
 ```bash
 npm run publish:site -- --date YYYY-MM-DD
 ```
 
-The root build now exports a rolling public bundle for today and tomorrow when both slates have been generated:
+The root build exports a rolling public bundle for today and tomorrow when both slates have been generated:
 
 ```text
 web/public/data/current/
@@ -51,7 +69,7 @@ In Vercel production, the app reads those static files instead of calling the lo
 npm run publish:site -- --date YYYY-MM-DD
 ```
 
-That forced date still exports the next calendar day too if it exists in `published-data/slates/`. Use `PUBLIC_EXTRA_SLATE_DATES=YYYY-MM-DD,YYYY-MM-DD` only when you intentionally want additional public days.
+That forced date still exports the next calendar day too if it exists in `published-data/slates/`. Use `PUBLIC_EXTRA_SLATE_DATES=YYYY-MM-DD,YYYY-MM-DD` only when you intentionally want additional public days beyond the standard two-day window.
 
 If you refreshed prediction data that day, run the relevant local pipeline commands first from the repository root, then deploy:
 
