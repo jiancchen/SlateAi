@@ -1,8 +1,8 @@
 # MLB-M0 MLB Parent Baseline
 
-MLB-M0 is the future parent cartridge for MLB predictions.
+MLB-M0 is the parent cartridge baseline for MLB predictions.
 
-This shell keeps the current MLB behavior stable while model ownership moves into cartridges. It records the intended ownership boundary before scripts are moved out of the delegated `pipeline/mlb/` internals.
+This cartridge keeps the current MLB behavior stable while model ownership moves into `models/`. Workflow orchestration, publish lanes, and shared scoring modules are now cartridge-owned; remaining `pipeline/mlb/` files are source fetchers, warehouse commands, compatibility launchers, or offline research.
 
 ## Scope
 

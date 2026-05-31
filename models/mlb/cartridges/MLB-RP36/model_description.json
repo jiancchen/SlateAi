@@ -3,13 +3,14 @@
   "modelId": "MLB-RP36",
   "sport": "mlb",
   "name": "MLB-RP36 reliever shadow addendum",
-  "status": "migration-shell",
-  "summary": "Initial shell for the current reliever shadow layer. MLB-RP36 is an addendum consumed by MLB-M0, focused on first-up reliever clusters, bullpen path, availability, and bridge risk.",
+  "status": "cartridge-addendum-baseline",
+  "summary": "Reliever shadow addendum consumed by MLB-M0. MLB-RP36 owns the first-up reliever cluster artifact, bullpen path context, availability/bridge risk notes, and a May 31 run envelope with source/input/output locks.",
   "keyImprovements": [
     "Separates the relief stack from the parent MLB model without promoting it to a competing model.",
     "Replaces the old experiment label with the canonical MLB-RP36 cartridge name.",
     "Documents the current source chain before moving any relief code.",
-    "Tightens the role boundary: MLB-RP36 can downgrade side/total/prop confidence through bridge risk, but cannot graduate a standalone pick from first-up reliever guesses."
+    "Tightens the role boundary: MLB-RP36 can downgrade side/total/prop confidence through bridge risk, but cannot graduate a standalone pick from first-up reliever guesses.",
+    "Adds a dated run envelope so relief addendum source, lightweight warehouse inputs, outputs, and exact snapshot reproduction can be verified independently from MLB-M0."
   ],
   "keyMetrics": [
     {
@@ -26,16 +27,21 @@
       "label": "Latest audited top-3",
       "value": "50.0%",
       "details": "May 30 target-date shadow check."
+    },
+    {
+      "label": "First locked run",
+      "value": "May 31",
+      "details": "May 31, 2026 is the first reproducible RP36 run envelope; May 30 remains legacy context because the current warehouse no longer regenerates it exactly."
     }
   ],
   "notes": [
     "MLB-RP36 should inform sides, totals, props, and late-game risk; it should not produce final board picks alone.",
-    "The first behavior-preserving migration test should compare against the 2026-05-30 reliever-shadow artifact.",
-    "The exporter should emit canonical MLB-RP36 metadata.",
+    "May 31 is the first behavior-preserving run-lock target. May 30 is useful legacy context, but not an exact reproducible RP36 run from the current warehouse.",
+    "The exporter still emits `E36 shadow` in payload metadata for historical continuity; the cartridge identity is MLB-RP36.",
     "Use top-2/top-3 cluster confidence as context before exact first-up identity; exact first-up is too noisy at the current audit rate."
   ],
   "knownLimitations": [
-    "No formal MLB-RP36 model-run manifest exists yet.",
+    "Run locks are file-based for now and are not yet written into shared model-run DB tables.",
     "No settlement table exists for first-up reliever predictions yet.",
     "Current artifacts are useful but not standalone betting signals."
   ],

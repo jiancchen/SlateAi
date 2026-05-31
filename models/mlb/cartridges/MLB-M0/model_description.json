@@ -3,27 +3,28 @@
   "modelId": "MLB-M0",
   "sport": "mlb",
   "name": "MLB-M0 parent baseline",
-  "status": "migration-shell",
-  "summary": "Baseline MLB parent cartridge shell. MLB-M0 owns the daily workflow surface, publish-lane adapters, run manifest, and closeout health gate while the existing side, first-five, first-inning, prop, HR, market-context, and MLB-RP36 relief inputs are migrated behind stable artifacts.",
+  "status": "cartridge-baseline",
+  "summary": "Baseline MLB parent cartridge. MLB-M0 owns the daily workflow surface, publish lanes, shared scoring modules, run manifest, closeout health gate, and the MLB-RP36 relief addendum boundary. Remaining pipeline files are source fetchers, warehouse commands, compatibility launchers, or offline research until a future model promotes them.",
   "keyImprovements": [
     "Names the current MLB parent model as MLB-M0 so future changes can be compared against a stable baseline.",
     "Keeps MLB-RP36 as a relief addendum consumed by MLB-M0 instead of treating the reliever shadow artifact as a separate parent model.",
-    "Separates model ownership from workflow plumbing before moving scripts out of the flat pipeline folder.",
     "Adds a May 30 closeout gate so side predictions must flow into `mlb_side_predictions` and `mlb_side_backtests` before postmortem lessons are trusted.",
     "Adds a cartridge-local performance index and quiet-start full-game gate so May 30 failures can affect the next slate instead of staying as notes.",
     "Persists daily hitter platoon split snapshots so the prop model can be audited against the exact split context shown pregame.",
-    "Moves the shared deterministic side/value/prop scoring module into MLB-M0, leaving the frontend path as a compatibility shim."
+    "Moves the shared deterministic side/value/prop scoring module into MLB-M0, leaving the frontend path as a compatibility shim.",
+    "Moves MLB-M0 workflows and publish lanes into the cartridge while old pipeline paths remain compatibility launchers.",
+    "Adds a documented pipeline ownership boundary so data plumbing and offline research are not mistaken for missed model code."
   ],
   "keyMetrics": [
     {
       "label": "Migration status",
-      "value": "Run shell",
-      "details": "Prediction behavior is still mostly delegated to pipeline internals, but MLB-M0 owns the public workflow entrypoints, publish-lane adapters, run lock, and model dashboard identity."
+      "value": "Cartridge baseline",
+      "details": "MLB-M0 now owns workflow orchestration, publish lanes, scoring modules, run locks, and model dashboard identity. Pipeline remains for model-neutral fetch, warehouse, and research plumbing."
     },
     {
-      "label": "Publish adapters",
-      "value": "9 lanes",
-      "details": "MLB-M0 routes day files, batting impact, lineups, HR, props, sides, veto, training corpus, and history journal exports through cartridge-owned adapters."
+      "label": "Publish lanes",
+      "value": "9 cartridge lanes",
+      "details": "Day files, batting impact, lineups, HR, props, sides, veto, training corpus, and history journal exporters now run from MLB-M0 lane files."
     },
     {
       "label": "Relief addendum",
@@ -58,8 +59,8 @@
   ],
   "notes": [
     "MLB-M0 should eventually own the final MLB side, first-five, total, prop, and market-context outputs.",
-    "Current implementation internals remain in pipeline until a behavior-preserving adapter and golden test are added.",
-    "MLB publish/export package commands should enter through `models/mlb/cartridges/MLB-M0/lanes/` before touching delegated pipeline internals.",
+    "Pipeline internals that remain are classified as fetchers, warehouse commands, compatibility launchers, or offline research; production lane behavior should live in the cartridge.",
+    "MLB publish/export package commands enter through `models/mlb/cartridges/MLB-M0/lanes/`; `pipeline/mlb/publish/` is compatibility only.",
     "`models/mlb/cartridges/MLB-M0/lib/sports-model.js` is now the canonical shared scoring module; `web/src/lib/sports-model.js` only re-exports it for frontend compatibility.",
     "Do not promote MLB-RP36 into a standalone parent model; it should feed MLB-M0.",
     "Before a new MLB slate, the prior day must have a results journal plus side prediction/backtest rows so lessons are based on warehouse-settled data.",
@@ -68,7 +69,8 @@
   ],
   "knownLimitations": [
     "MLB-M0 run locks are file-based for now; they are not yet written into a shared model-run DB table.",
-    "Source inventory is intentionally broad until the MLB pregame chain is fully audited and split into smaller components."
+    "MLB-M0 and MLB-RP36 run locks are file-based for now; they are not yet written into shared model-run DB tables.",
+    "Source inventory is still broad because compatibility launchers, web shims, and model-neutral pipeline plumbing are deliberately included until the migration settles."
   ],
   "files": {
     "markdown": "models/mlb/cartridges/MLB-M0/MODEL_NOTES.md",

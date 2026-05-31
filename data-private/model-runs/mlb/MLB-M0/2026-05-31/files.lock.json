@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "runId": "mlb-2026-05-31-MLB-W1-MLB-F0-MLB-M0-MLB-RP36-MLB-E0",
-  "sourceHash": "29db936a83807e3cdd11faa5fcbeb2d87ace1e7de9358425ae7ba8cc1af7fe29",
+  "sourceHash": "9070e40d7e92fbed4f32a3df0d657f6e6e5ef04229131b58262a07e74c0d46eb",
   "files": [
     {
       "path": "models/mlb/cartridges/MLB-E0/manifest.json",
@@ -187,13 +187,13 @@
       "path": "models/mlb/cartridges/MLB-M0/model_description.json",
       "role": "model-description",
       "exists": true,
-      "sha256": "bccb405cf41793b81248530fb0458ff8d7786bdcb02fce89dd42ea0e6cac3ddc"
+      "sha256": "6f466d7b4202082c9c499365fb4234703a4b3328eee8192487c1c6ada4db3c16"
     },
     {
       "path": "models/mlb/cartridges/MLB-M0/MODEL_NOTES.md",
       "role": "model-notes",
       "exists": true,
-      "sha256": "2bd5738e149bb2b3ffed55ebf4dcf45bd02f8dead80fbc1941ebe61fcc67c6ea"
+      "sha256": "762d064374c1d27fdb6c74a4740d2c1c97fe93e4acaca8ed1bd46559e4398f9e"
     },
     {
       "path": "models/mlb/cartridges/MLB-M0/output-contract.json",
@@ -283,7 +283,7 @@
       "path": "models/mlb/cartridges/MLB-RP36/model_description.json",
       "role": "relief-addendum-description",
       "exists": true,
-      "sha256": "c5fdab8af5a64e9d9f2ff135f671188cadf3ac32c685cf21742a1719e447d976"
+      "sha256": "7126eb951d545767cc88b22e6856069806285c6ea7c779f82ab6c37a397f263a"
     },
     {
       "path": "models/mlb/cartridges/MLB-RP36/MODEL_NOTES.md",
