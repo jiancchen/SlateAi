@@ -39,6 +39,8 @@
     "data:ingest:hitter-statcast-range": "python3 pipeline/mlb/warehouse/mlb_warehouse.py ingest-hitter-statcast-range",
     "data:refresh:mlb-live": "node pipeline/mlb/workflows/refresh-live-board.mjs",
     "data:run:mlb-pregame": "node models/mlb/cartridges/M0/runner.mjs",
+    "data:lock:mlb-run": "node models/mlb/cartridges/M0/run-lock.mjs",
+    "data:verify:mlb-run": "node models/mlb/cartridges/M0/verify_run.mjs",
     "data:close:mlb-day": "node pipeline/mlb/workflows/followup.mjs",
     "data:run:mlb-followup": "node pipeline/mlb/workflows/followup.mjs",
     "data:verify:mlb-refresh": "node pipeline/mlb/workflows/verify-refresh.mjs",

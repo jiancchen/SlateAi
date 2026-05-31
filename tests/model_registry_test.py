@@ -78,6 +78,25 @@ class ModelRegistryTest(unittest.TestCase):
         )
         self.assertEqual(result.returncode, 0, msg=result.stdout + result.stderr)
 
+    def test_m0_may30_run_verifies_when_locked(self) -> None:
+        run_path = ROOT / "data-private" / "model-runs" / "mlb" / "M0" / "2026-05-30" / "run.json"
+        if not run_path.exists():
+            self.skipTest("M0 May 30 run has not been locked")
+
+        result = subprocess.run(
+            [
+                "node",
+                "models/mlb/cartridges/M0/verify_run.mjs",
+                "--date",
+                "2026-05-30",
+            ],
+            cwd=ROOT,
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        self.assertEqual(result.returncode, 0, msg=result.stdout + result.stderr)
+
 
 if __name__ == "__main__":
     unittest.main()

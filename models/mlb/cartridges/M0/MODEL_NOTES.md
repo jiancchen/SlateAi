@@ -19,6 +19,6 @@ Move behavior into this cartridge only with a golden output check or explicit ru
 
 ## Known Gaps
 
-- No M0 run manifest exists yet.
-- No M0 snapshot verifier exists yet.
-- The source inventory is still provisional.
+- M0 now has a file-based run manifest and verifier under `data-private/model-runs/mlb/M0/`.
+- The run manifest is not yet stored in shared model-run DB tables.
+- The source inventory is still intentionally broad while the MLB pregame chain is split into components.

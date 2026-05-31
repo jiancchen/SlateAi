@@ -25,6 +25,11 @@
       "label": "May 30 snapshot target",
       "value": "15 games",
       "details": "Golden target covers 15 side picks, 49 prop picks, 12 HR picks, 30 reliever-shadow teams, and 15 lineup boards."
+    },
+    {
+      "label": "May 30 run lock",
+      "value": "Created",
+      "details": "M0 now has a file-based run manifest, source lock, input lock, output lock, and snapshot verification target."
     }
   ],
   "notes": [
@@ -33,8 +38,8 @@
     "Do not promote RP36 into a standalone parent model; it should feed M0."
   ],
   "knownLimitations": [
-    "No formal MLB model-run lock has been created for M0 yet.",
-    "Source inventory is provisional until the MLB pregame chain is fully audited."
+    "M0 run locks are file-based for now; they are not yet written into a shared model-run DB table.",
+    "Source inventory is intentionally broad until the MLB pregame chain is fully audited and split into smaller components."
   ],
   "files": {
     "markdown": "models/mlb/cartridges/M0/MODEL_NOTES.md"

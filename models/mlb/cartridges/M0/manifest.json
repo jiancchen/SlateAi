@@ -65,6 +65,14 @@
       "path": "models/mlb/cartridges/M0/verify_snapshot.mjs"
     },
     {
+      "role": "run-locker",
+      "path": "models/mlb/cartridges/M0/run-lock.mjs"
+    },
+    {
+      "role": "run-verifier",
+      "path": "models/mlb/cartridges/M0/verify_run.mjs"
+    },
+    {
       "role": "day-generator",
       "path": "pipeline/mlb/publish/generate-day-files.mjs"
     },

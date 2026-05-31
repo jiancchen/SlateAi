@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "runId": "mlb-2026-05-30-W1-F0-M0-RP36-E0",
+  "sport": "mlb",
+  "slateDate": "2026-05-30",
+  "modelId": "M0",
+  "reliefAddendum": "RP36",
+  "evaluatorVersion": "E0",
+  "warehouseVersion": "W1",
+  "featureVersion": "F0",
+  "mode": "pregame",
+  "status": "locked",
+  "lockedAt": "2026-05-31T12:09:48.881Z",
+  "git": {
+    "commit": "9b0c31758f46d8230391b3531d7dd9682d556d26",
+    "dirty": true,
+    "changedFiles": [
+      "M cartridge_migration/file_migration_progress.md",
+      " M models/mlb/cartridges/M0/MODEL_NOTES.md",
+      " M models/mlb/cartridges/M0/manifest.json",
+      " M models/mlb/cartridges/M0/model_description.json",
+      " M package.json",
+      " M tests/model_registry_test.py",
+      "?? data-private/model-runs/mlb/",
+      "?? models/mlb/cartridges/M0/run-lock.mjs",
+      "?? models/mlb/cartridges/M0/verify_run.mjs"
+    ]
+  },
+  "sourceHash": "53d5425a21b39336415982dfb5cf7117765024099d67ca99d77ceb2443bbae1e",
+  "inputHash": "08c8be811026fbe7b4402989d9c398edc4f689ed800941f6419c53ec7ea2119b",
+  "outputHash": "19bff7e68c72ece0d949509059eaaaf58af3a858544e90737272b60c7a9591dd",
+  "snapshotHash": "7d899280c2bdf267b63781a0beb309a838c40f5dbc9fc236c6457984233a48ed",
+  "artifactSummary": {
+    "publicSummaryGames": 15,
+    "gameFiles": 15,
+    "sidePicks": 15,
+    "propPicks": 49,
+    "homeRunPicks": 12,
+    "relieverTeams": 30,
+    "lineupGames": 15
+  },
+  "sourceFiles": 42,
+  "inputs": 21,
+  "outputs": 4
+}

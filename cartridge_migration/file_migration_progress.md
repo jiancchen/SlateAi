@@ -13,6 +13,7 @@ Date: 2026-05-31
 - Added thin MLB cartridge runners for `M0` and `RP36` that delegate to the current legacy pipeline scripts.
 - Added an RP36 snapshot verifier and confirmed it reproduces the existing 2026-05-30 reliever-shadow artifact exactly.
 - Added an M0 May 30 golden snapshot target for MLB board outputs: 15 games, 15 side picks, 49 prop picks, 12 HR picks, 30 reliever-shadow teams, and 15 lineup boards.
+- Added file-based M0 run locking and verification for MLB, covering source locks, input locks, output locks, the M0 snapshot, and the consumed RP36 addendum.
 - Routed `data:run:mlb-pregame`, `data:export:mlb-reliever-shadow`, and the MLB refresh workflow through cartridge runners while preserving legacy internals.
 - Moved MLB pregame and refresh workflow implementations into `pipeline/mlb/workflows/` with compatibility wrappers at the old pipeline paths.
 - Moved the MLB close/follow-up workflow into `pipeline/mlb/workflows/followup.mjs` with a compatibility wrapper, and pointed future generated postmortem/follow-up docs into `development-docs/mlb/postmortems/`.
@@ -41,10 +42,10 @@ Date: 2026-05-31
 ## Intentionally Still Legacy
 
 - `pipeline/generate-tennis-day-module.mjs` and `pipeline/verify-tennis-model-snapshot.mjs` remain compatibility wrappers for old commands, while the T0 manifest source hashes now point at the sport-scoped implementations.
-- MLB prediction behavior still runs through current pipeline logic under sport-scoped workflow/fetcher/publish/warehouse/research folders. RP36 now owns its reliever-shadow exporter; M0 remains a shell.
+- MLB prediction behavior still runs through current pipeline logic under sport-scoped workflow/fetcher/publish/warehouse/research folders. RP36 owns its reliever-shadow exporter, and M0 now has a run envelope but still delegates prediction internals.
 
 ## Next Safe Steps
 
 1. Re-lock or intentionally supersede the May 31 tennis run source lock after this migration checkpoint; strict run verification now reports expected source drift from moved files, while `--allow-source-drift` verifies outputs and coverage.
-2. Add an MLB `M0` run manifest design before moving warehouse/research internals.
-3. Move remaining script-written development docs only after their package scripts are updated together.
+2. Move remaining script-written development docs only after their package scripts are updated together.
+3. Continue moving MLB model-owned internals into `models/mlb/cartridges/M0/` once the run verifier is green for each step.
