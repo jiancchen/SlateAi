@@ -586,14 +586,18 @@ Public/static exports must not expose private raw data from `data-private/`; exp
 - [x] Create `pipeline/create-tennis-model-run.mjs`.
 - [x] Create `pipeline/lock-tennis-model-run.mjs`.
 - [x] Add a shared hash/canonical JSON helper so source, input, and output hashes are stable.
+- [x] Add locked-run guard so `create-tennis-model-run.mjs` cannot accidentally downgrade an already locked run.
 - [ ] Add `--run-id` support to `pipeline/generate-tennis-day-module.mjs`.
 - [ ] Emit `runId`, `warehouseVersion`, `featureVersion`, `modelId`, and `evaluatorVersion` in prediction output.
 - [x] Write May 31 T0 run files under `data-private/model-runs/tennis/T0/2026-05-31/`.
 - [x] Insert May 31 T0 run rows into the DB.
 - [x] Write `health.json` from the pregame health gate.
+- [x] Store parsed health/data-source check names in `health.json`.
 - [ ] Write `publish.json` only if public export/deploy is performed.
 
 Note: `--run-id` generator support was intentionally deferred after the T0 verifier caught it as source drift. Keep T0 frozen; add run IDs to generator output only through a verifier-compatible framework update or a future cartridge.
+
+Note: the expanded source inventory is currently enforced in `files.lock.json` by `lock-tennis-model-run.mjs`. Expanding `T0/manifest.json` itself would alter the golden snapshot metadata, so keep that as a verifier-aware Phase 4 decision.
 
 ### Phase 4: Verifier Upgrade
 

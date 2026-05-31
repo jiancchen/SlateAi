@@ -5,6 +5,48 @@
   "ok": true,
   "command": "npm run data:health:tennis -- --date 2026-05-31 --pregame",
   "exitCode": 0,
+  "checks": [
+    {
+      "name": "sourceFiles",
+      "status": "ok"
+    },
+    {
+      "name": "rankings",
+      "status": "ok"
+    },
+    {
+      "name": "recentMap",
+      "status": "ok"
+    },
+    {
+      "name": "warehouse",
+      "status": "ok"
+    },
+    {
+      "name": "sofascore",
+      "status": "ok"
+    },
+    {
+      "name": "kalshi",
+      "status": "ok"
+    },
+    {
+      "name": "weather",
+      "status": "ok"
+    },
+    {
+      "name": "resultsTraining",
+      "status": "ok"
+    },
+    {
+      "name": "published",
+      "status": "ok"
+    },
+    {
+      "name": "valueBooks",
+      "status": "ok"
+    }
+  ],
   "stdout": "\n> sports-trading-board-workspace@1.0.0 data:health:tennis\n> python3 pipeline/tennis_pipeline_health.py --date 2026-05-31 --pregame\n\nTennis pipeline health PASS for 2026-05-31 (pregame)\n- sourceFiles: ok\n- rankings: ok\n- recentMap: ok\n- warehouse: ok\n- sofascore: ok\n- kalshi: ok\n- weather: ok\n- resultsTraining: ok\n- published: ok\n- valueBooks: ok\n",
   "stderr": ""
 }

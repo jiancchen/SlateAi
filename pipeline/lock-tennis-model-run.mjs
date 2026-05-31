@@ -56,6 +56,15 @@ const sourceInventory = (model, manifest) => {
     { path: 'pipeline/warehouse_paths.py', role: 'warehouse-path-resolver' },
     { path: 'pipeline/create-tennis-model-run.mjs', role: 'run-create-script' },
     { path: 'pipeline/lock-tennis-model-run.mjs', role: 'run-lock-script' },
+    { path: 'pipeline/analyze_kalshi_tennis_intramatch.py', role: 'kalshi-intramatch-backtest' },
+    { path: 'pipeline/backfill_tennis_recent_form_metrics.py', role: 'feature-backfill' },
+    { path: 'pipeline/export_tennis_warehouse_context.py', role: 'warehouse-context-export' },
+    { path: 'pipeline/model_kalshi_tennis_spike.py', role: 'kalshi-spike-model' },
+    { path: 'pipeline/model_tennis_upset_wins.py', role: 'upset-win-model' },
+    { path: 'pipeline/project_kalshi_tennis_trade_candidates.py', role: 'kalshi-trade-projection' },
+    { path: 'pipeline/tennis_multimodel_backtest.py', role: 'multimodel-backtest' },
+    { path: 'pipeline/tennis_pipeline_health.py', role: 'health-gate' },
+    { path: 'pipeline/tennis_value_backtest.py', role: 'sportsbook-value-backtest' },
     { path: 'pipeline/tennis_warehouse.py', role: 'warehouse-code' },
     { path: 'pipeline/tennis_warehouse_migrations/W1/001_add_model_run_tables.sql', role: 'warehouse-migration' },
     { path: 'tests/tennis_pipeline_test.py', role: 'test-code' },
@@ -121,6 +130,16 @@ const snapshotTrainingRows = async ({ runId, date }) => {
   }
 }
 
+const parseHealthChecks = (stdout = '') =>
+  String(stdout)
+    .split('\n')
+    .map((line) => line.match(/^\s*-\s+([^:]+):\s+(.+?)\s*$/))
+    .filter(Boolean)
+    .map((match) => ({
+      name: match[1].trim(),
+      status: match[2].trim()
+    }))
+
 const main = async () => {
   const options = parseArgs()
   const stack = await activeStack({ model: options.model || null })
@@ -157,16 +176,17 @@ const main = async () => {
     ok: Boolean(health.ok),
     command: health.command,
     exitCode: health.exitCode,
+    checks: parseHealthChecks(health.stdout),
     stdout: health.stdout ?? '',
     stderr: health.stderr ?? ''
   })
   if (!health.ok) throw new Error(`Health gate failed:\n${health.stdout}\n${health.stderr}`)
 
-  await copyJsonArtifact({
-    from: `data-private/model-cartridges/tennis/${model}/golden/${options.date}.snapshot.json`,
-    to: `${runDir}/predictions.snapshot.json`,
-    fallback: null
-  })
+  const predictionSnapshot = await readJson(`data-private/model-cartridges/tennis/${model}/golden/${options.date}.snapshot.json`, null)
+  if (!predictionSnapshot) {
+    throw new Error(`Missing required prediction snapshot for ${model} ${options.date}`)
+  }
+  await writeJson(`${runDir}/predictions.snapshot.json`, predictionSnapshot)
   await copyJsonArtifact({
     from: `data-private/model-cartridges/tennis/${model}/calibration/${options.date}.calibration.json`,
     to: `${runDir}/calibration.json`,

@@ -7,12 +7,13 @@ import {
   runIdFor,
   shellQuote,
   sqliteExec,
+  sqliteJson,
   writeJson
 } from './lib/model-run-utils.mjs'
 
 const parseArgs = () => {
   const args = process.argv.slice(2)
-  const options = { date: '', model: '', mode: 'pregame', status: 'created', notes: '' }
+  const options = { date: '', model: '', mode: 'pregame', status: 'created', notes: '', force: false }
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index]
     if (arg === '--date') {
@@ -30,6 +31,8 @@ const parseArgs = () => {
     } else if (arg === '--notes') {
       options.notes = args[index + 1]
       index += 1
+    } else if (arg === '--force') {
+      options.force = true
     }
   }
   if (!/^\d{4}-\d{2}-\d{2}$/.test(options.date)) throw new Error('Pass --date YYYY-MM-DD')
@@ -42,6 +45,10 @@ export const createRun = async (options) => {
   const registry = await readJson('pipeline/tennis_model_registry.json', {})
   const manifest = await readJson(`pipeline/tennis_model_cartridges/${stack.modelId}/manifest.json`, {})
   const git = await gitInfo()
+  const existingRows = await sqliteJson(`select status from tennis_model_runs where run_id = ${shellQuote(runId)} limit 1`)
+  if (existingRows[0]?.status === 'locked' && !options.force) {
+    throw new Error(`Run ${runId} is already locked. Pass --force only if you intend to rewrite the run shell.`)
+  }
   const run = {
     schemaVersion: 1,
     runId,

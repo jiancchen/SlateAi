@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "runId": "tennis-2026-05-31-W1-F0-T0-E0",
-  "sourceHash": "73b8e0160524ee4f12c115c8f6985f34b8e2ca472ea10bb39baf9e4c37d01dda",
+  "sourceHash": "5fae490e04801cc6d57e0b9fce622163a98345d5bfa9a29246b446262dc4f033",
   "files": [
     {
       "path": "package.json",
@@ -10,10 +10,28 @@
       "sha256": "bd6fda433a88cf71b9e2946e1d579afd3537ee534611c241b72c34c58de94a4c"
     },
     {
+      "path": "pipeline/analyze_kalshi_tennis_intramatch.py",
+      "role": "kalshi-intramatch-backtest",
+      "exists": true,
+      "sha256": "0dae69983488c75aeab3d4e5c93045695f52724da6bff87412598bff72e4fc84"
+    },
+    {
+      "path": "pipeline/backfill_tennis_recent_form_metrics.py",
+      "role": "feature-backfill",
+      "exists": true,
+      "sha256": "741e867512029a83113642a267c1c45259d0eb6d3a5099b437f81326bd991e32"
+    },
+    {
       "path": "pipeline/create-tennis-model-run.mjs",
       "role": "run-create-script",
       "exists": true,
-      "sha256": "9d28b462e09229f30cca1ad68d6b80b4bc19211c9051a3c5dae4d4679de2e5e4"
+      "sha256": "d667088c334498acb091c57c59ebe9e766d39226cdbd858e8783add0ccde639e"
+    },
+    {
+      "path": "pipeline/export_tennis_warehouse_context.py",
+      "role": "warehouse-context-export",
+      "exists": true,
+      "sha256": "2857c25b7ef95b05acca838bf1b780b70e80ab1224d59f0754dc21c1da6ce357"
     },
     {
       "path": "pipeline/generate-tennis-day-module.mjs",
@@ -37,7 +55,25 @@
       "path": "pipeline/lock-tennis-model-run.mjs",
       "role": "run-lock-script",
       "exists": true,
-      "sha256": "e575331dadc24cf844d149a9c0a2ba810c25b76444d7a07dfc7143181809024c"
+      "sha256": "7ce0013c74f75d5895a5948dcd6260ea949dc5a2955b7bca520d4129ae3968ae"
+    },
+    {
+      "path": "pipeline/model_kalshi_tennis_spike.py",
+      "role": "kalshi-spike-model",
+      "exists": true,
+      "sha256": "cfb48bf200f364282ec0f9dbf20dae862cedc5c6d6573f506092260e0ad63973"
+    },
+    {
+      "path": "pipeline/model_tennis_upset_wins.py",
+      "role": "upset-win-model",
+      "exists": true,
+      "sha256": "96bbef94b1709d55f4d579f0be397354318647a0320d56cf6b6ced779f4ace8f"
+    },
+    {
+      "path": "pipeline/project_kalshi_tennis_trade_candidates.py",
+      "role": "kalshi-trade-projection",
+      "exists": true,
+      "sha256": "2e07dc295f3deca770c7ba8c2aab4a685c351906ad750aee350ae63f0ef9826b"
     },
     {
       "path": "pipeline/tennis_model_cartridges/E0/manifest.json",
@@ -86,6 +122,24 @@
       "role": "model-registry",
       "exists": true,
       "sha256": "345ff3ac391582a418dd1be7434fea1c712263f327a3b00db406cfbb20c561b4"
+    },
+    {
+      "path": "pipeline/tennis_multimodel_backtest.py",
+      "role": "multimodel-backtest",
+      "exists": true,
+      "sha256": "d5f7b977e8867a899be4d716c49a367a5f205d641018abfd03d141752f8add60"
+    },
+    {
+      "path": "pipeline/tennis_pipeline_health.py",
+      "role": "health-gate",
+      "exists": true,
+      "sha256": "e3224f0368305cfec1dcaf6162f49a3bf83bfe7655a47742cb42f48c7f657017"
+    },
+    {
+      "path": "pipeline/tennis_value_backtest.py",
+      "role": "sportsbook-value-backtest",
+      "exists": true,
+      "sha256": "28e9c65766ae3986592359516523610898bdb58b3e91beffe8af2ed6e0d1b938"
     },
     {
       "path": "pipeline/tennis_warehouse_migrations/W1/001_add_model_run_tables.sql",
