@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import sqlite3
@@ -9,8 +10,14 @@ import unicodedata
 from pathlib import Path
 from typing import Any
 
+try:
+    from pipeline.warehouse_paths import tennis_warehouse_path
+except ModuleNotFoundError:
+    from warehouse_paths import tennis_warehouse_path
+
 ROOT = Path(__file__).resolve().parents[1]
-DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
+DB_PATH = tennis_warehouse_path()
+MIGRATIONS_DIR = ROOT / "pipeline" / "tennis_warehouse_migrations"
 RANKINGS_PATH = ROOT / "data-private" / "reference" / "tennis" / "player-rankings.json"
 FLASHSCORE_DIR = ROOT / "data-private" / "reference" / "tennis" / "flashscore-match-stats"
 SOFASCORE_DIR = ROOT / "data-private" / "reference" / "tennis" / "sofascore-match-data"
@@ -52,6 +59,83 @@ def get_connection() -> sqlite3.Connection:
     return conn
 
 
+def ensure_schema_migrations(conn: sqlite3.Connection) -> None:
+    conn.execute(
+        """
+        create table if not exists tennis_schema_migrations (
+          migration_id text primary key,
+          warehouse_version text not null,
+          file_path text not null,
+          sha256 text not null,
+          applied_at text not null default current_timestamp,
+          status text not null default 'applied',
+          notes text
+        )
+        """
+    )
+
+
+def apply_tennis_migration(conn: sqlite3.Connection, migration_path: Path, warehouse_version: str) -> dict[str, Any]:
+    sql = migration_path.read_text(encoding="utf-8")
+    digest = hashlib.sha256(sql.encode("utf-8")).hexdigest()
+    migration_id = f"{warehouse_version}/{migration_path.name}"
+    ensure_schema_migrations(conn)
+    existing = conn.execute(
+        "select sha256, status from tennis_schema_migrations where migration_id = ?",
+        (migration_id,),
+    ).fetchone()
+    if existing:
+        if existing["sha256"] != digest:
+            raise ValueError(
+                f"Migration hash changed for {migration_id}: expected {existing['sha256']}, got {digest}"
+            )
+        return {
+            "migration_id": migration_id,
+            "warehouse_version": warehouse_version,
+            "status": "already_applied",
+            "sha256": digest,
+        }
+    conn.executescript(sql)
+    conn.execute(
+        """
+        insert into tennis_schema_migrations(
+          migration_id, warehouse_version, file_path, sha256, status, notes
+        )
+        values (?, ?, ?, ?, 'applied', ?)
+        """,
+        (
+            migration_id,
+            warehouse_version,
+            str(migration_path.relative_to(ROOT)),
+            digest,
+            "Applied by tennis_warehouse.py migration runner.",
+        ),
+    )
+    conn.commit()
+    return {
+        "migration_id": migration_id,
+        "warehouse_version": warehouse_version,
+        "status": "applied",
+        "sha256": digest,
+    }
+
+
+def apply_tennis_migrations(conn: sqlite3.Connection, version: str = "W1") -> dict[str, Any]:
+    version = version.upper()
+    version_dir = MIGRATIONS_DIR / version
+    if not version_dir.exists():
+        raise FileNotFoundError(f"No tennis warehouse migration directory: {version_dir}")
+    applied = [
+        apply_tennis_migration(conn, migration_path, version)
+        for migration_path in sorted(version_dir.glob("*.sql"))
+    ]
+    return {
+        "warehouse_version": version,
+        "db_path": str(DB_PATH),
+        "migrations": applied,
+    }
+
+
 def infer_recent_map_slate_date(map_path: Path) -> str | None:
     slate_date_match = re.search(r"(\d{4}-\d{2}-\d{2})", map_path.name)
     return slate_date_match.group(1) if slate_date_match else None
@@ -65,6 +149,16 @@ def init_db(conn: sqlite3.Connection) -> None:
           name text not null,
           created_at text not null default current_timestamp,
           updated_at text not null default current_timestamp
+        );
+
+        create table if not exists tennis_schema_migrations (
+          migration_id text primary key,
+          warehouse_version text not null,
+          file_path text not null,
+          sha256 text not null,
+          applied_at text not null default current_timestamp,
+          status text not null default 'applied',
+          notes text
         );
 
         create table if not exists tennis_rankings (
@@ -2432,6 +2526,9 @@ def main() -> None:
 
     subparsers.add_parser("init-db")
 
+    migrate_parser = subparsers.add_parser("migrate")
+    migrate_parser.add_argument("--version", default="W1")
+
     rankings_parser = subparsers.add_parser("import-rankings")
     rankings_parser.add_argument("--file", default=str(RANKINGS_PATH))
 
@@ -2459,6 +2556,9 @@ def main() -> None:
 
     if args.command == "init-db":
         print(f"Initialized tennis warehouse tables in {DB_PATH}")
+    elif args.command == "migrate":
+        report = apply_tennis_migrations(conn, args.version)
+        print(json.dumps(report, indent=2, sort_keys=True))
     elif args.command == "import-rankings":
         count = import_rankings(conn, Path(args.file))
         print(f"Imported {count} tennis ranking rows")

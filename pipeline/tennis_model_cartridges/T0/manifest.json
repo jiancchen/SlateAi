@@ -4,7 +4,14 @@
   "name": "T0 tennis baseline",
   "status": "baseline",
   "createdForSlate": "2026-05-31",
-  "entrypoint": "pipeline/generate-tennis-day-module.mjs --model T0",
+  "warehouseVersion": "W1",
+  "featureVersion": "F0",
+  "evaluatorVersion": "E0",
+  "entrypoint": "pipeline/tennis_model_cartridges/T0/runner.mjs",
+  "legacyEntrypoint": "pipeline/generate-tennis-day-module.mjs --model T0",
+  "outputContract": "pipeline/tennis_model_cartridges/T0/output-contract.json",
+  "featureContract": "pipeline/tennis_model_cartridges/F0/feature-contract.json",
+  "metricsContract": "pipeline/tennis_model_cartridges/E0/metrics-contract.json",
   "sourceFiles": [
     {
       "role": "model-runner",

@@ -1,0 +1,17 @@
+{
+  "id": "E0",
+  "sport": "tennis",
+  "name": "E0 tennis evaluator baseline",
+  "status": "baseline",
+  "createdForSlate": "2026-05-31",
+  "metricsContract": "pipeline/tennis_model_cartridges/E0/metrics-contract.json",
+  "description": "Baseline evaluator layer for T0. This records current grading and calibration expectations without changing evaluator math.",
+  "components": [
+    "winner hit rate",
+    "sportsbook ROI by lane",
+    "Kalshi trade-to-sell outcomes",
+    "confidence-band calibration",
+    "market-implied-band calibration",
+    "ATP/WTA and round splits"
+  ]
+}

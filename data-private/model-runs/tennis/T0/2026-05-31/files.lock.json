@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "runId": "tennis-2026-05-31-W1-F0-T0-E0",
+  "sourceHash": "73b8e0160524ee4f12c115c8f6985f34b8e2ca472ea10bb39baf9e4c37d01dda",
+  "files": [
+    {
+      "path": "package.json",
+      "role": "package-scripts",
+      "exists": true,
+      "sha256": "bd6fda433a88cf71b9e2946e1d579afd3537ee534611c241b72c34c58de94a4c"
+    },
+    {
+      "path": "pipeline/create-tennis-model-run.mjs",
+      "role": "run-create-script",
+      "exists": true,
+      "sha256": "9d28b462e09229f30cca1ad68d6b80b4bc19211c9051a3c5dae4d4679de2e5e4"
+    },
+    {
+      "path": "pipeline/generate-tennis-day-module.mjs",
+      "role": "model-runner",
+      "exists": true,
+      "sha256": "f66aa0bfd9a7fcbf6aa271d1f4c022a5dfa17628cbc109ea730d8c54ec68f869"
+    },
+    {
+      "path": "pipeline/lib/model-run-utils.mjs",
+      "role": "run-lock-helper",
+      "exists": true,
+      "sha256": "0637ab5494c39368d141453ddf1694bd433ebc6c6279738fcd6e96a986685050"
+    },
+    {
+      "path": "pipeline/lib/warehouse-paths.mjs",
+      "role": "warehouse-path-resolver",
+      "exists": true,
+      "sha256": "cc15d9e1ac12a2857ee54cfcce16f55744e8b6bdc97e342e578bf2e8a0ef4c90"
+    },
+    {
+      "path": "pipeline/lock-tennis-model-run.mjs",
+      "role": "run-lock-script",
+      "exists": true,
+      "sha256": "e575331dadc24cf844d149a9c0a2ba810c25b76444d7a07dfc7143181809024c"
+    },
+    {
+      "path": "pipeline/tennis_model_cartridges/E0/manifest.json",
+      "role": "evaluator-manifest",
+      "exists": true,
+      "sha256": "69209a161cb26143e72ef7fa4ba87af8eab729035d758920d47485a6d0aa79a4"
+    },
+    {
+      "path": "pipeline/tennis_model_cartridges/E0/metrics-contract.json",
+      "role": "metrics-contract",
+      "exists": true,
+      "sha256": "43a3621b1a8f2800b643ea90aec8b8eb458a11b1e54c861abf2c78829b499ad7"
+    },
+    {
+      "path": "pipeline/tennis_model_cartridges/F0/feature-contract.json",
+      "role": "feature-contract",
+      "exists": true,
+      "sha256": "79fefdce99091075d3b4c360684f5ab50b17200da43d8c1fd587c55f5c9b04b8"
+    },
+    {
+      "path": "pipeline/tennis_model_cartridges/F0/manifest.json",
+      "role": "feature-manifest",
+      "exists": true,
+      "sha256": "1d030ce0021fa70e55947d71aa7e1ed53b98aa83207d516c16029d197d0bcf0d"
+    },
+    {
+      "path": "pipeline/tennis_model_cartridges/T0/manifest.json",
+      "role": "model-manifest",
+      "exists": true,
+      "sha256": "05407b0aa448b5e49b767a45d22048081a6804b71a194a5e531f9f960d337f84"
+    },
+    {
+      "path": "pipeline/tennis_model_cartridges/T0/output-contract.json",
+      "role": "output-contract",
+      "exists": true,
+      "sha256": "0ab3326df954238bb1f4e5b640500d8a41815570a32e4585180a96803fcda239"
+    },
+    {
+      "path": "pipeline/tennis_model_cartridges/T0/runner.mjs",
+      "role": "model-runner-wrapper",
+      "exists": true,
+      "sha256": "76819400dcc21bccbdcb8f1db0b5398b7ba29de8294ea544b55a0cf7a81ce66b"
+    },
+    {
+      "path": "pipeline/tennis_model_registry.json",
+      "role": "model-registry",
+      "exists": true,
+      "sha256": "345ff3ac391582a418dd1be7434fea1c712263f327a3b00db406cfbb20c561b4"
+    },
+    {
+      "path": "pipeline/tennis_warehouse_migrations/W1/001_add_model_run_tables.sql",
+      "role": "warehouse-migration",
+      "exists": true,
+      "sha256": "473e46487e55ef8564f0989e2bdd94f402aa0c3fe59481de61ea0cab14ed5275"
+    },
+    {
+      "path": "pipeline/tennis_warehouse.py",
+      "role": "warehouse-code",
+      "exists": true,
+      "sha256": "58095d95c0abc7379a61a11ae80697a34705dc8afc98a73126ce972d161529ef"
+    },
+    {
+      "path": "pipeline/verify-tennis-model-snapshot.mjs",
+      "role": "snapshot-verifier",
+      "exists": true,
+      "sha256": "6a345850bfe4a7a7bf20cd12f1071acc1a3776aa24bcf9aa942697e94247c6cb"
+    },
+    {
+      "path": "pipeline/warehouse_paths.py",
+      "role": "warehouse-path-resolver",
+      "exists": true,
+      "sha256": "51e465d9fabb2115cc4bfe59a23f931effbf77b2f056211bbdb38ae88770954f"
+    },
+    {
+      "path": "tests/tennis_pipeline_test.py",
+      "role": "test-code",
+      "exists": true,
+      "sha256": "c475f939874575de5422efee27ee59cfec6acfaa964b9002cb3a17ca005f194f"
+    },
+    {
+      "path": "web/src/lib/tennis-source-mapping.js",
+      "role": "source-mapping-helper",
+      "exists": true,
+      "sha256": "b99bc83d33d33f1f8eb3839062ce762b97e741f02c56c4d2c5f27cbd78becba0"
+    }
+  ]
+}

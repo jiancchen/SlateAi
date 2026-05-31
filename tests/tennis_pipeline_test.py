@@ -8,7 +8,7 @@ import unittest
 from pathlib import Path
 
 from pipeline.tennis_pipeline_health import check_weather, game_value_book_missing
-from pipeline.tennis_warehouse import import_flashscore, infer_recent_map_slate_date, init_db
+from pipeline.tennis_warehouse import apply_tennis_migrations, import_flashscore, infer_recent_map_slate_date, init_db
 
 
 class TennisWarehouseImportTest(unittest.TestCase):
@@ -92,6 +92,32 @@ class TennisWarehouseImportTest(unittest.TestCase):
         )
         present = check_weather(conn, "2026-05-30", match_count=1, settled=True)
         self.assertTrue(present["ok"])
+
+    def test_w1_model_run_migration_is_idempotent(self) -> None:
+        conn = sqlite3.connect(":memory:")
+        conn.row_factory = sqlite3.Row
+        init_db(conn)
+
+        first = apply_tennis_migrations(conn, "W1")
+        second = apply_tennis_migrations(conn, "W1")
+
+        self.assertEqual(first["migrations"][0]["status"], "applied")
+        self.assertEqual(second["migrations"][0]["status"], "already_applied")
+        required_tables = {
+            "tennis_schema_migrations",
+            "tennis_model_runs",
+            "tennis_model_run_files",
+            "tennis_model_run_inputs",
+            "tennis_model_run_outputs",
+            "tennis_model_run_metrics",
+            "tennis_model_run_events",
+            "tennis_model_run_training_rows",
+        }
+        rows = conn.execute("select name from sqlite_master where type = 'table'").fetchall()
+        table_names = {row["name"] for row in rows}
+        self.assertTrue(required_tables.issubset(table_names))
+        migration_count = conn.execute("select count(*) from tennis_schema_migrations").fetchone()[0]
+        self.assertEqual(migration_count, 1)
 
     def test_value_book_gate_requires_ml_match_total_and_first_set_total(self) -> None:
         complete_game = {

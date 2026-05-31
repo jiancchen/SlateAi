@@ -260,7 +260,7 @@ run_id
 file_path
 file_role
 sha256
-exists
+file_exists
 created_at
 ```
 
@@ -275,7 +275,7 @@ run_id
 input_path
 input_role
 sha256
-exists
+input_exists
 captured_at
 created_at
 ```
@@ -557,41 +557,43 @@ Public/static exports must not expose private raw data from `data-private/`; exp
 
 ### Phase 1: Registry And Manifests
 
-- [ ] Create `pipeline/tennis_model_registry.json`.
-- [ ] Create shared warehouse path resolver(s) for new Python/Node tennis cartridge code.
-- [ ] Create `pipeline/tennis_model_cartridges/F0/manifest.json`.
-- [ ] Create `pipeline/tennis_model_cartridges/E0/manifest.json`.
-- [ ] Create `pipeline/tennis_model_cartridges/T0/runner.mjs` as a thin stable entrypoint.
-- [ ] Create `pipeline/tennis_model_cartridges/T0/output-contract.json`.
-- [ ] Create `pipeline/tennis_model_cartridges/F0/feature-contract.json`.
-- [ ] Create `pipeline/tennis_model_cartridges/E0/metrics-contract.json`.
-- [ ] Update `pipeline/tennis_model_cartridges/T0/manifest.json` with `warehouseVersion`, `featureVersion`, and `evaluatorVersion`.
+- [x] Create `pipeline/tennis_model_registry.json`.
+- [x] Create shared warehouse path resolver(s) for new Python/Node tennis cartridge code.
+- [x] Create `pipeline/tennis_model_cartridges/F0/manifest.json`.
+- [x] Create `pipeline/tennis_model_cartridges/E0/manifest.json`.
+- [x] Create `pipeline/tennis_model_cartridges/T0/runner.mjs` as a thin stable entrypoint.
+- [x] Create `pipeline/tennis_model_cartridges/T0/output-contract.json`.
+- [x] Create `pipeline/tennis_model_cartridges/F0/feature-contract.json`.
+- [x] Create `pipeline/tennis_model_cartridges/E0/metrics-contract.json`.
+- [x] Update `pipeline/tennis_model_cartridges/T0/manifest.json` with `warehouseVersion`, `featureVersion`, and `evaluatorVersion`.
 - [ ] Add the full T0 source-code inventory to manifests, not only the final generator.
 - [ ] Add source hash expectations for any new framework files after they are stable.
 
 ### Phase 2: W1 Migration
 
-- [ ] Create `pipeline/tennis_warehouse_migrations/W1/001_add_model_run_tables.sql`.
-- [ ] Add a migration runner or extend `pipeline/tennis_warehouse.py`.
-- [ ] Ensure migration runner is append-only.
-- [ ] Add `tennis_schema_migrations` and mark W1 applied.
-- [ ] Confirm the migration targets `data-private/warehouse/sports.db`.
-- [ ] Do not move tennis data into `tennis.db` during W1.
-- [ ] Add run-scoped training-row snapshot storage so replaced legacy training rows do not erase provenance.
-- [ ] Add tests that W1 tables exist after migration.
-- [ ] Add tests that migration can run twice safely.
+- [x] Create `pipeline/tennis_warehouse_migrations/W1/001_add_model_run_tables.sql`.
+- [x] Add a migration runner or extend `pipeline/tennis_warehouse.py`.
+- [x] Ensure migration runner is append-only.
+- [x] Add `tennis_schema_migrations` and mark W1 applied.
+- [x] Confirm the migration targets `data-private/warehouse/sports.db`.
+- [x] Do not move tennis data into `tennis.db` during W1.
+- [x] Add run-scoped training-row snapshot storage so replaced legacy training rows do not erase provenance.
+- [x] Add tests that W1 tables exist after migration.
+- [x] Add tests that migration can run twice safely.
 
 ### Phase 3: Run Creation And Locking
 
-- [ ] Create `pipeline/create-tennis-model-run.mjs`.
-- [ ] Create `pipeline/lock-tennis-model-run.mjs`.
-- [ ] Add a shared hash/canonical JSON helper so source, input, and output hashes are stable.
+- [x] Create `pipeline/create-tennis-model-run.mjs`.
+- [x] Create `pipeline/lock-tennis-model-run.mjs`.
+- [x] Add a shared hash/canonical JSON helper so source, input, and output hashes are stable.
 - [ ] Add `--run-id` support to `pipeline/generate-tennis-day-module.mjs`.
 - [ ] Emit `runId`, `warehouseVersion`, `featureVersion`, `modelId`, and `evaluatorVersion` in prediction output.
-- [ ] Write May 31 T0 run files under `data-private/model-runs/tennis/T0/2026-05-31/`.
-- [ ] Insert May 31 T0 run rows into the DB.
-- [ ] Write `health.json` from the pregame health gate.
+- [x] Write May 31 T0 run files under `data-private/model-runs/tennis/T0/2026-05-31/`.
+- [x] Insert May 31 T0 run rows into the DB.
+- [x] Write `health.json` from the pregame health gate.
 - [ ] Write `publish.json` only if public export/deploy is performed.
+
+Note: `--run-id` generator support was intentionally deferred after the T0 verifier caught it as source drift. Keep T0 frozen; add run IDs to generator output only through a verifier-compatible framework update or a future cartridge.
 
 ### Phase 4: Verifier Upgrade
 
@@ -618,9 +620,9 @@ Public/static exports must not expose private raw data from `data-private/`; exp
 
 ### Phase 6: Test And Build
 
-- [ ] Run `npm test`.
-- [ ] Run tennis T0 snapshot verification.
-- [ ] Run `npm run data:health:tennis -- --date 2026-05-31 --pregame`.
+- [x] Run `npm test`.
+- [x] Run tennis T0 snapshot verification.
+- [x] Run `npm run data:health:tennis -- --date 2026-05-31 --pregame`.
 - [ ] Run or simulate `npm run data:health:tennis -- --date 2026-05-31 --settled` when postmatch artifacts exist.
 - [ ] Run `tsc`.
 - [ ] Run `npm run build`.

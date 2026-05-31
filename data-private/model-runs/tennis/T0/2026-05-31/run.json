@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "runId": "tennis-2026-05-31-W1-F0-T0-E0",
+  "sport": "tennis",
+  "slateDate": "2026-05-31",
+  "warehouseVersion": "W1",
+  "featureVersion": "F0",
+  "modelId": "T0",
+  "evaluatorVersion": "E0",
+  "mode": "pregame",
+  "status": "locked",
+  "createdAt": "2026-05-31T05:20:41.707Z",
+  "lockedAt": "2026-05-31T05:21:14.377Z",
+  "git": {
+    "commit": "cf5b0777e670548d3dfba3b7b58a5699790274c7",
+    "dirty": true,
+    "changedFiles": [
+      "M cartridge_migration/migration_run_plan_tennis_1.md",
+      " M package.json",
+      " M pipeline/tennis_model_cartridges/T0/manifest.json",
+      " M pipeline/tennis_warehouse.py",
+      " M tests/tennis_pipeline_test.py",
+      "?? data-private/model-runs/",
+      "?? pipeline/create-tennis-model-run.mjs",
+      "?? pipeline/lib/model-run-utils.mjs",
+      "?? pipeline/lib/warehouse-paths.mjs",
+      "?? pipeline/lock-tennis-model-run.mjs",
+      "?? pipeline/tennis_model_cartridges/E0/",
+      "?? pipeline/tennis_model_cartridges/F0/",
+      "?? pipeline/tennis_model_cartridges/T0/output-contract.json",
+      "?? pipeline/tennis_model_cartridges/T0/runner.mjs",
+      "?? pipeline/tennis_model_registry.json",
+      "?? pipeline/tennis_warehouse_migrations/",
+      "?? pipeline/warehouse_paths.py"
+    ]
+  },
+  "registry": {
+    "path": "pipeline/tennis_model_registry.json",
+    "active": {
+      "warehouse": "W1",
+      "features": "F0",
+      "model": "T0",
+      "evaluator": "E0"
+    }
+  },
+  "modelManifest": {
+    "path": "pipeline/tennis_model_cartridges/T0/manifest.json",
+    "name": "T0 tennis baseline",
+    "status": "baseline"
+  },
+  "notes": "Initial W1/F0/T0/E0 golden pregame run.",
+  "sourceHash": "73b8e0160524ee4f12c115c8f6985f34b8e2ca472ea10bb39baf9e4c37d01dda",
+  "inputHash": "a7e49fc8d26a1c8d8df54d967eb51b93b799d67cc1fea6239b8feab15a87a551",
+  "outputHash": "0ee99a5db48cedfc91a43bd393af7a9b1c730e869812ef2d7100b536294b00ee",
+  "trainingRows": {
+    "count": 8,
+    "hash": "f3ba9f871cec4fe76c24fdcf8c4b8f519c68e148f12ef750ff6e913628569c69"
+  },
+  "verifier": {
+    "ok": true,
+    "command": "node pipeline/verify-tennis-model-snapshot.mjs --date 2026-05-31 --model T0",
+    "stdout": "Tennis T0 snapshot verified for 2026-05-31\n",
+    "stderr": ""
+  }
+}
