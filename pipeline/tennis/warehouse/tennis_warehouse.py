@@ -24,7 +24,8 @@ except ModuleNotFoundError:
     from warehouse_paths import tennis_warehouse_path
 
 DB_PATH = tennis_warehouse_path()
-MIGRATIONS_DIR = ROOT / "pipeline" / "tennis_warehouse_migrations"
+MIGRATIONS_DIR = ROOT / "pipeline" / "tennis" / "warehouse" / "migrations"
+LEGACY_MIGRATIONS_DIR = ROOT / "pipeline" / "tennis_warehouse_migrations"
 RANKINGS_PATH = ROOT / "data-private" / "reference" / "tennis" / "player-rankings.json"
 FLASHSCORE_DIR = ROOT / "data-private" / "reference" / "tennis" / "flashscore-match-stats"
 SOFASCORE_DIR = ROOT / "data-private" / "reference" / "tennis" / "sofascore-match-data"
@@ -130,6 +131,8 @@ def apply_tennis_migration(conn: sqlite3.Connection, migration_path: Path, wareh
 def apply_tennis_migrations(conn: sqlite3.Connection, version: str = "W1") -> dict[str, Any]:
     version = version.upper()
     version_dir = MIGRATIONS_DIR / version
+    if not version_dir.exists():
+        version_dir = LEGACY_MIGRATIONS_DIR / version
     if not version_dir.exists():
         raise FileNotFoundError(f"No tennis warehouse migration directory: {version_dir}")
     applied = [

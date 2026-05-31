@@ -120,17 +120,17 @@ node pipeline/tennis/fetchers/scrape_fanduel_tennis_cdp.mjs --date YYYY-MM-DD
 node pipeline/tennis/publish/generate-day-module.mjs --date YYYY-MM-DD
 npm run data:export:published
 npm run data:health:tennis -- --date YYYY-MM-DD --pregame
-python3 pipeline/tennis_multimodel_backtest.py --target-date YYYY-MM-DD
-python3 pipeline/analyze_kalshi_tennis_intramatch.py --target-date YYYY-MM-DD
-python3 pipeline/project_kalshi_tennis_trade_candidates.py
-python3 pipeline/tennis_multimodel_backtest.py --target-date YYYY-MM-DD
-python3 pipeline/model_kalshi_tennis_spike.py --target-date YYYY-MM-DD
-python3 pipeline/model_tennis_upset_wins.py --target-date YYYY-MM-DD
+python3 pipeline/tennis/research/multimodel_backtest.py --target-date YYYY-MM-DD
+python3 pipeline/tennis/research/analyze_kalshi_intramatch.py --target-date YYYY-MM-DD
+python3 pipeline/tennis/research/project_kalshi_trade_candidates.py
+python3 pipeline/tennis/research/multimodel_backtest.py --target-date YYYY-MM-DD
+python3 pipeline/tennis/research/model_kalshi_spike.py --target-date YYYY-MM-DD
+python3 pipeline/tennis/research/model_upset_wins.py --target-date YYYY-MM-DD
 ```
 
 Daily tennis operating rules live in `development-docs/tennis/runbooks/daily-slate-playbook.md`. Use that playbook before publishing a tennis value board. It requires the slate to separate winner picks, prediction-market trade-to-sell candidates, watch rows, hard vetoes, and data-incomplete rows.
 
-The tennis model pass is intentionally run twice on prediction days: first to refresh the slate training rows for flow/weather context, then again after `project_kalshi_tennis_trade_candidates.py` mirrors current Kalshi orderbooks into `tennis_prediction_market_snapshots`. Publish from the second pass only.
+The tennis model pass is intentionally run twice on prediction days: first to refresh the slate training rows for flow/weather context, then again after `pipeline/tennis/research/project_kalshi_trade_candidates.py` mirrors current Kalshi orderbooks into `tennis_prediction_market_snapshots`. Publish from the second pass only.
 
 Tennis health gate:
 - `npm run data:health:tennis -- --date YYYY-MM-DD --pregame` must pass before treating a future slate as analysis-ready.

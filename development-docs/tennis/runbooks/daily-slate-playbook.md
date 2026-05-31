@@ -25,12 +25,12 @@ npm run data:import:tennis-sofascore
 npm run data:fetch:tennis-weather -- --date YYYY-MM-DD
 npm run data:fetch:tennis-flashscore-slate -- --date YYYY-MM-DD
 npm run data:import:tennis-flashscore
-python3 pipeline/tennis_multimodel_backtest.py --target-date YYYY-MM-DD
-python3 pipeline/analyze_kalshi_tennis_intramatch.py --target-date YYYY-MM-DD
-python3 pipeline/project_kalshi_tennis_trade_candidates.py
-python3 pipeline/tennis_multimodel_backtest.py --target-date YYYY-MM-DD
-python3 pipeline/model_kalshi_tennis_spike.py --target-date YYYY-MM-DD
-python3 pipeline/model_tennis_upset_wins.py --target-date YYYY-MM-DD
+python3 pipeline/tennis/research/multimodel_backtest.py --target-date YYYY-MM-DD
+python3 pipeline/tennis/research/analyze_kalshi_intramatch.py --target-date YYYY-MM-DD
+python3 pipeline/tennis/research/project_kalshi_trade_candidates.py
+python3 pipeline/tennis/research/multimodel_backtest.py --target-date YYYY-MM-DD
+python3 pipeline/tennis/research/model_kalshi_spike.py --target-date YYYY-MM-DD
+python3 pipeline/tennis/research/model_upset_wins.py --target-date YYYY-MM-DD
 # Required before site generation once FanDuel spread/total lines are captured:
 # build data-private/predictions/tennis/YYYY-MM-DD-derivative-markets.json
 # with expected match games, expected first-set games, spread lean, and O/U lean.
@@ -39,7 +39,7 @@ npm --prefix web run build
 
 Weather is part of the model input, not a narrative note. The weather step stores Open-Meteo hourly conditions for Roland Garros in `tennis_weather_hourly` and per-match start-to-finish summaries in `tennis_match_weather`. Do not run the model pass without this table populated for the slate: heat, humidity, sun/radiation, wind gusts, and rain risk are explicit features for totals, first-set shape, service comfort, and prediction-market spike behavior.
 
-Kalshi open orderbooks must be mirrored into both the Kalshi tables and `tennis_prediction_market_snapshots`. The first `tennis_multimodel_backtest.py` pass refreshes the current slate training rows for flow/weather context; `project_kalshi_tennis_trade_candidates.py` then stores the current Kalshi side prices; the second model pass is required so ML/EV rows read the actual market snapshot. Do not publish an EV board from the first pass.
+Kalshi open orderbooks must be mirrored into both the Kalshi tables and `tennis_prediction_market_snapshots`. The first `pipeline/tennis/research/multimodel_backtest.py` pass refreshes the current slate training rows for flow/weather context; `pipeline/tennis/research/project_kalshi_trade_candidates.py` then stores the current Kalshi side prices; the second model pass is required so ML/EV rows read the actual market snapshot. Do not publish an EV board from the first pass.
 
 Prediction-market trade-to-sell is not the same as an upset pick. The spike model may only promote a pre-match scalp when there is a realistic exit target above entry. High-entry rows where the projected exit is at or below the buy price are pass rows, even if the underdog can win. A 40c-to-95c path is a win bet, not an arbitrage/scalp setup.
 
@@ -345,8 +345,8 @@ npm run data:fetch:tennis-weather -- --date YYYY-MM-DD
 npm run data:import:tennis-results -- --date YYYY-MM-DD
 npm run data:grade:tennis -- --date YYYY-MM-DD
 npm run data:backtest:tennis-value -- --date YYYY-MM-DD
-python3 pipeline/analyze_kalshi_tennis_intramatch.py --target-date YYYY-MM-DD
-python3 pipeline/tennis_multimodel_backtest.py --target-date NEXT-YYYY-MM-DD
+python3 pipeline/tennis/research/analyze_kalshi_intramatch.py --target-date YYYY-MM-DD
+python3 pipeline/tennis/research/multimodel_backtest.py --target-date NEXT-YYYY-MM-DD
 npm run data:health:tennis -- --date YYYY-MM-DD --settled
 ```
 

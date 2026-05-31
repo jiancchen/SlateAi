@@ -33,6 +33,9 @@ Date: 2026-05-31
 - Moved tennis runbook/research notes and MLB daily runbook/source checklist into sport-specific `development-docs/` folders and updated direct references.
 - Moved tennis warehouse, workflow, and publish implementations into `pipeline/tennis/{warehouse,workflows,publish}/` with compatibility wrappers at their old top-level pipeline paths.
 - Updated tennis package scripts and runbook commands to call the sport-scoped core paths directly.
+- Moved tennis research, value, Kalshi, and upset-audit scripts into `pipeline/tennis/research/` with compatibility wrappers at their old top-level pipeline paths.
+- Updated tennis package scripts, runbooks, and future run-lock source inventory to use the sport-scoped research paths directly.
+- Moved tennis warehouse SQL migrations into `pipeline/tennis/warehouse/migrations/` and left warehouse code with a legacy fallback for old checkouts.
 
 ## Intentionally Still Legacy
 
@@ -44,6 +47,6 @@ Date: 2026-05-31
 ## Next Safe Steps
 
 1. Re-lock or intentionally supersede the May 31 tennis run source lock after this migration checkpoint; strict run verification now reports expected source drift from moved files, while `--allow-source-drift` verifies outputs and coverage.
-2. Add an MLB `M0` run manifest design before moving warehouse/research internals.
-3. Move remaining script-written development docs only after their package scripts are updated together.
-4. Add a planned tennis metadata-path cutover test before changing the T0 golden snapshot path.
+2. Add a planned tennis metadata-path cutover test, then move T0/F0/E0 reads fully from `pipeline/tennis_model_cartridges/` to `models/tennis/cartridges/`.
+3. Add an MLB `M0` run manifest design before moving warehouse/research internals.
+4. Move remaining script-written development docs only after their package scripts are updated together.
