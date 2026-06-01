@@ -3249,180 +3249,27 @@ function App() {
       return away === 'partial' || home === 'partial'
     }).length
 
-    const first5MoneylineRows = mlbGames
-      .map((game: AnyRecord) => {
-        const projection = game.analysis?.mlbProjection
-        const matchup = Array.isArray(game.matchup) ? game.matchup : []
-        const awayTeam = matchup[0]?.name || game.title?.split('@')[0]?.trim() || 'Away'
-        const homeTeam = matchup[1]?.name || game.title?.split('@')[1]?.trim() || 'Home'
-        const awayRuns = Number(projection?.awayFirst5ProjectedRuns)
-        const homeRuns = Number(projection?.homeFirst5ProjectedRuns)
-        if (!projection || ![awayRuns, homeRuns].every(Number.isFinite)) return null
-
-        const probabilities = buildFirst5LeadProbabilities(awayRuns, homeRuns)
-        const projectedLeader = awayRuns >= homeRuns ? awayTeam : homeTeam
-        const side = projectedLeader === awayTeam ? 'away' : 'home'
-        const modelWinPct = side === 'away' ? probabilities.awayWinPct : probabilities.homeWinPct
-        const pushAdjustedPct =
-          probabilities.tiePct < 99
-            ? roundToTenths((Number(modelWinPct) / Math.max(100 - Number(probabilities.tiePct), 1)) * 100)
-            : Number(modelWinPct)
-        const kalshiRow = activeKalshiMlbMarketByGame[game.id]?.first5Winner?.rows?.find(
-          (row: AnyRecord) => row.side === side
-        )
-        const askCents = Number(kalshiRow?.yesAskCents)
-        const hasMarket = Number.isFinite(askCents)
-        const modelPctForPrice = hasMarket ? Number(modelWinPct) : Number(pushAdjustedPct)
-        const evCents = hasMarket ? contractEvCents(modelWinPct, askCents) : null
-        const edgeHits = Number(projection.first5EdgeHits)
-        const runEdge = Math.abs(awayRuns - homeRuns)
-        const confidence = Math.round(modelPctForPrice)
-        const priceLabel = hasMarket
-          ? `Kalshi ask ${formatNumber(askCents, 0)}c`
-          : `Need F5 ML price | push-adj ${formatPercent(pushAdjustedPct, 1)}`
-
-        return {
-          id: `first5-ml:${game.id}:${side}`,
-          category: 'first5',
-          actionKind: 'ticket',
-          lane: 'First 5 ML',
-          gameId: game.id,
-          league: game.league,
-          start: game.start,
-          startMinutes: Number(game.startMinutes) || 0,
-          stage: game.stage,
-          title: `${projectedLeader} F5 ML`,
-          subtitle: `${game.title} · starter-window side`,
-          confidence,
-          sortConfidence: confidence,
-          sortEdge: evCents != null && Number.isFinite(Number(evCents)) ? Number(evCents) : runEdge * 10 + Number(edgeHits || 0),
-          marketPricePct: hasMarket ? askCents : null,
-          evCents,
-          priceLabel,
-          metaLabel: `Model ${formatPercent(modelWinPct, 1)} win · tie ${formatPercent(probabilities.tiePct, 1)}`,
-          summary:
-            `${projectedLeader} project ahead ${formatNumber(side === 'away' ? awayRuns : homeRuns, 1)}-${formatNumber(side === 'away' ? homeRuns : awayRuns, 1)} through five. ` +
-            `Three-way win ${formatPercent(modelWinPct, 1)}; tie risk ${formatPercent(probabilities.tiePct, 1)}; push-adjusted ${formatPercent(pushAdjustedPct, 1)}.`,
-          tags: [
-            'First 5 ML',
-            hasMarket ? `EV ${formatSignedNumber(evCents, 1)}c` : 'Need line',
-            `F5 edge ${formatNumber(edgeHits, 1)} H`
-          ],
-          raw: {
-            gameId: game.id,
-            gameTitle: game.title,
-            side,
-            selection: projectedLeader,
-            modelWinPct,
-            pushAdjustedPct,
-            tiePct: probabilities.tiePct,
-            awayRuns,
-            homeRuns,
-            edgeHits,
-            askCents,
-            hasMarket,
-            kalshiTicker: kalshiRow?.ticker || null,
-            confidenceSource: 'MLB-M0 projected first-five run distribution'
-          }
-        }
-      })
-      .filter(Boolean)
-      .sort((left: AnyRecord, right: AnyRecord) => {
-        const leftPriced = left.evCents != null && Number.isFinite(Number(left.evCents))
-        const rightPriced = right.evCents != null && Number.isFinite(Number(right.evCents))
-        if (leftPriced !== rightPriced) return Number(rightPriced) - Number(leftPriced)
-        return right.sortEdge - left.sortEdge || right.confidence - left.confidence
-      })
-
-    const first5TotalRows = mlbGames
-      .map((game: AnyRecord) => {
-        const projection = game.analysis?.mlbProjection
-        const totals = projection?.totals
-        const first5Lean = totals?.first5
-        const projectedRuns = Number(totals?.projectedFirst5TotalRuns)
-        if (!projection || !Number.isFinite(projectedRuns)) return null
-        if (first5Lean?.chaosGate?.vetoed) return null
-
-        const kalshiTotal = activeKalshiMlbMarketByGame[game.id]?.first5Total?.selected ?? null
-        const marketLine = Number(kalshiTotal?.line)
-        const derivedLine = Number(totals?.derivedFirst5TotalLine)
-        const line = Number.isFinite(marketLine) ? marketLine : derivedLine
-        if (!Number.isFinite(line)) return null
-
-        const overPct = buildTotalProbabilityPct(projectedRuns, line, 'Over')
-        const underPct = buildTotalProbabilityPct(projectedRuns, line, 'Under')
-        if (![overPct, underPct].every((value) => Number.isFinite(Number(value)))) return null
-
-        const pick = Number(overPct) >= Number(underPct) ? 'Over' : 'Under'
-        const modelPct = pick === 'Over' ? Number(overPct) : Number(underPct)
-        const askCents = pick === 'Over' ? Number(kalshiTotal?.yesAskCents) : Number(kalshiTotal?.noAskCents)
-        const hasMarket = Number.isFinite(askCents)
-        const evCents = hasMarket ? contractEvCents(modelPct, askCents) : null
-        const edge = roundToTenths(projectedRuns - line)
-        const confidence = Math.round(modelPct)
-        const lineSource = Number.isFinite(marketLine) ? 'Kalshi F5 total' : 'derived from full-game total'
-
-        return {
-          id: `first5-total:${game.id}:${pick.toLowerCase()}:${line}`,
-          category: 'first5',
-          actionKind: 'total',
-          lane: 'First 5 O/U',
-          gameId: game.id,
-          league: game.league,
-          start: game.start,
-          startMinutes: Number(game.startMinutes) || 0,
-          stage: game.stage,
-          title: `${pick} ${formatNumber(line, 1)} F5`,
-          subtitle: `${game.title} · first-five total`,
-          confidence,
-          sortConfidence: confidence,
-          sortEdge: evCents != null && Number.isFinite(Number(evCents)) ? Number(evCents) : Math.abs(edge) * 10,
-          marketPricePct: hasMarket ? askCents : null,
-          evCents,
-          priceLabel: hasMarket ? `Kalshi ask ${formatNumber(askCents, 0)}c` : 'Need F5 O/U price',
-          metaLabel: `Model ${formatPercent(modelPct, 1)} · proj ${formatNumber(projectedRuns, 1)}`,
-          summary:
-            `${pick} ${formatNumber(line, 1)} from ${formatNumber(projectedRuns, 1)} projected first-five runs. ` +
-            `Over ${formatPercent(overPct, 1)} / under ${formatPercent(underPct, 1)}; line source: ${lineSource}.` +
-            (first5Lean?.chaosGate?.warning ? ` Chaos gate warning: ${(first5Lean.chaosGate.notes || []).slice(0, 2).join('; ')}.` : ''),
-          tags: [
-            'First 5 O/U',
-            hasMarket ? `EV ${formatSignedNumber(evCents, 1)}c` : 'Need line',
-            first5Lean?.chaosGate?.warning ? 'Chaos checked' : null,
-            lineSource
-          ].filter(Boolean),
-          raw: {
-            gameId: game.id,
-            gameTitle: game.title,
-            pick,
-            line,
-            projectedRuns,
-            overPct,
-            underPct,
-            edge,
-            askCents,
-            hasMarket,
-            lineSource,
-            kalshiTicker: kalshiTotal?.ticker || null,
-            chaosGate: first5Lean?.chaosGate ?? null,
-            confidenceSource: 'MLB-M0 projected first-five total run distribution'
-          }
-        }
-      })
-      .filter(Boolean)
-      .sort((left: AnyRecord, right: AnyRecord) => {
-        const leftPriced = left.evCents != null && Number.isFinite(Number(left.evCents))
-        const rightPriced = right.evCents != null && Number.isFinite(Number(right.evCents))
-        if (leftPriced !== rightPriced) return Number(rightPriced) - Number(leftPriced)
-        return right.sortEdge - left.sortEdge || right.confidence - left.confidence
-      })
+    const first5MoneylineRows: AnyRecord[] = []
+    const first5TotalRows: AnyRecord[] = []
+    const first5TotalResearchRows: AnyRecord[] = []
 
     const sideRows = favoriteCatalogEntries
-      .filter((entry: AnyRecord) => entry.league === 'MLB' && !entry.invalid && payoffIsPlayable(entry))
+      .filter(
+        (entry: AnyRecord) =>
+          entry.league === 'MLB' &&
+          !entry.invalid &&
+          (entry.raw?.valueGate === 'validated' || entry.raw?.valueGrade === 'Bet-grade value')
+      )
       .sort((left: AnyRecord, right: AnyRecord) => right.sortEdge - left.sortEdge || right.confidence - left.confidence)
 
     const totalRows = totalCatalogEntries
-      .filter((entry: AnyRecord) => entry.league === 'MLB' && !entry.invalid && entry.raw?.phaseId === 'full' && Number(entry.confidence) >= 60)
+      .filter(
+        (entry: AnyRecord) =>
+          entry.league === 'MLB' &&
+          !entry.invalid &&
+          entry.raw?.phaseId === 'full' &&
+          (entry.raw?.valueGate === 'validated' || entry.raw?.valueGrade === 'Bet-grade value')
+      )
       .sort((left: AnyRecord, right: AnyRecord) => right.sortEdge - left.sortEdge || right.confidence - left.confidence)
 
     const tbBackedRows = propCatalogEntries
@@ -3616,7 +3463,7 @@ function App() {
         }
       })
 
-    const displayHitRunRbiRows = hitRunRbiRows.length ? hitRunRbiRows : battingProductionRows
+    const displayHitRunRbiRows = hitRunRbiRows
 
     const gameIdByTitle = Object.fromEntries(mlbGames.map((game: AnyRecord) => [game.title, game.id]))
     const homeRunPayloadRows = Array.isArray(activeHomeRunBoard?.picks) ? activeHomeRunBoard.picks : []
@@ -3678,6 +3525,9 @@ function App() {
       totalRows,
       first5MoneylineRows,
       first5TotalRows,
+      first5TotalResearchRows,
+      first5TotalGateNote:
+        'MLB value rows must be model-owned. The UI does not derive first-five O/U, first-five ML, or total value rows from projections.',
       totalBaseRows,
       tbBackedRows,
       tbSoftHeatRows,
@@ -3695,11 +3545,11 @@ function App() {
       viableHomeRunRows,
       postedHomeRunRows,
       topRows,
-      note:
-        fullyPostedGames === mlbGames.length
-          ? 'MLB value center is fully posted for today: sides, full-game totals, First 5 ML/O-U, TB-backed bats, strikeout O/U, HR watch, and batting-impact lanes. First 5 confidence is derived from the MLB-M0 projected run distribution; missing market prices are marked as need-line.'
-          : `MLB value center is live, but only ${fullyPostedGames}/${mlbGames.length} games are fully posted. First 5 ML/O-U now uses MLB-M0 projected run distribution instead of generic confidence; rows without mapped prices are need-line, not blind bets.`
-    }
+        note:
+          fullyPostedGames === mlbGames.length
+          ? 'MLB value center filters model-owned value rows only. UI-side first-five ML/O-U, totals EV, and scalp transforms are disabled until the cartridge publishes those lanes directly.'
+          : `MLB value center is live, but only ${fullyPostedGames}/${mlbGames.length} games are fully posted. It filters model-owned value rows only; UI-side transforms are disabled.`
+      }
   }, [
     activeDayId,
     activeHomeRunBoard,
@@ -3730,13 +3580,7 @@ function App() {
         const yesAsk = Number(kalshiFirstInning?.yesAskCents)
         const noAsk = Number(kalshiFirstInning?.noAskCents)
         const hasKalshi = [yesAsk, noAsk].every(Number.isFinite)
-        const yesEdge = hasKalshi ? yesModel - yesAsk : null
-        const noEdge = hasKalshi ? noModel - noAsk : null
-        const modelConfidence = clamp(
-          Math.round(52 + Math.abs(Number(firstInning.edge) || 0) * 1.1 + Math.max(yesModel, noModel) * 0.18),
-          52,
-          92
-        )
+        const modelConfidence = Math.round(String(firstInning.pick || '').toUpperCase() === 'YRFI' ? yesModel : noModel)
 
         return {
           gameId: game.id,
@@ -3748,8 +3592,6 @@ function App() {
           noModel,
           yesAsk,
           noAsk,
-          yesEdge,
-          noEdge,
           hasKalshi,
           awayRunPct,
           homeRunPct,
@@ -3789,102 +3631,8 @@ function App() {
   }, [activeKalshiMlbMarketByGame, games])
 
   const mlbScalpSummary = useMemo(() => {
-    const mlbGames = games.filter((game: AnyRecord) => game.league === 'MLB')
-    if (!mlbGames.length) return null
-
-    const scalpRows = mlbGames
-      .map((game: AnyRecord) => {
-        const firstInning = game.analysis?.mlbProjection?.firstInning
-        if (!firstInning) return null
-
-        const awayRunPct = Number(firstInning.awayRunProbabilityPct)
-        const homeRunPct = Number(firstInning.homeRunProbabilityPct)
-        const pregameNoPct = Number(firstInning.noProbabilityPct)
-        const pregameYesPct = Number(firstInning.yesProbabilityPct)
-        if (![awayRunPct, homeRunPct, pregameNoPct, pregameYesPct].every((value) => Number.isFinite(value))) return null
-
-        const postScorelessTopNoPct = Math.max(0, Math.min(100, 100 - homeRunPct))
-        const maxEntryFor70Pct = (100 - awayRunPct) * 0.7
-        const maxEntryFor75Pct = (100 - awayRunPct) * 0.75
-        const modelFairEdgeAt70 = maxEntryFor70Pct - pregameNoPct
-        const generic50EdgeAt70 = maxEntryFor70Pct - 50
-        const fairMoveOnScorelessTop = postScorelessTopNoPct - pregameNoPct
-        const kalshiFirstInning = activeKalshiMlbMarketByGame[game.id]?.firstInning ?? null
-        const liveNoAskPct = Number(kalshiFirstInning?.noAskCents)
-        const liveYesAskPct = Number(kalshiFirstInning?.yesAskCents)
-        const hasLiveNoAsk = Number.isFinite(liveNoAskPct)
-        const entryNoAskPct = hasLiveNoAsk ? liveNoAskPct : 50
-        const liveEntryEdgeAt70 = maxEntryFor70Pct - entryNoAskPct
-
-        const teams = Array.isArray(game.matchup) ? game.matchup : []
-        const awayTeam = teams[0]?.name || game.title?.split('@')[0]?.trim() || 'Away'
-        const homeTeam = teams[1]?.name || game.title?.split('@')[1]?.trim() || 'Home'
-
-        const reaches70Fairly = postScorelessTopNoPct >= 70
-        const generic50Ready = reaches70Fairly && liveEntryEdgeAt70 >= 0
-        const cheapEntryOnly = reaches70Fairly && liveEntryEdgeAt70 < 0
-        const take70IfOffered = postScorelessTopNoPct < 70
-        const seventyTooCheap = postScorelessTopNoPct >= 78
-
-        let scalpLabel = 'Scalp watch'
-        if (generic50Ready) scalpLabel = seventyTooCheap ? 'Current NO ask works · 70 too cheap' : 'Current NO ask works'
-        else if (cheapEntryOnly) scalpLabel = seventyTooCheap ? 'Needs cheaper entry · 70 too cheap' : 'Needs cheaper entry'
-        else if (take70IfOffered) scalpLabel = '70c take-it if offered'
-
-        return {
-          id: `${game.id}-nrfi-scalp`,
-          gameId: game.id,
-          title: game.title,
-          awayTeam,
-          homeTeam,
-          pregameNoPct,
-          pregameYesPct,
-          awayRunPct,
-          homeRunPct,
-          postScorelessTopNoPct,
-          maxEntryFor70Pct,
-          maxEntryFor75Pct,
-          modelFairEdgeAt70,
-          generic50EdgeAt70,
-          entryNoAskPct,
-          liveYesAskPct,
-          liveEntryEdgeAt70,
-          hasLiveNoAsk,
-          fairMoveOnScorelessTop,
-          reaches70Fairly,
-          generic50Ready,
-          cheapEntryOnly,
-          take70IfOffered,
-          seventyTooCheap,
-          scalpLabel,
-          score:
-            (generic50Ready ? 20 : 0) +
-            Math.max(0, postScorelessTopNoPct - 70) +
-            Math.max(0, generic50EdgeAt70) * 1.5 +
-            Math.max(0, fairMoveOnScorelessTop - 20) * 0.5,
-          summary:
-            `NO fair ${formatNumber(pregameNoPct, 1)}c -> ${formatNumber(postScorelessTopNoPct, 1)}c after scoreless top · max ${formatNumber(maxEntryFor70Pct, 1)}c for a 70c exit`,
-          detail:
-            `${awayTeam} top-1 score ${formatPercent(awayRunPct, 1)}% · ${homeTeam} bottom-1 score ${formatPercent(homeRunPct, 1)}% · ${hasLiveNoAsk ? `Kalshi NO ask ${formatNumber(entryNoAskPct, 1)}c` : 'live NO ask unavailable'}`
-        }
-      })
-      .filter(Boolean)
-      .sort((left: AnyRecord, right: AnyRecord) => Number(right.score || 0) - Number(left.score || 0))
-
-    const generic50ReadyRows = scalpRows.filter((row: AnyRecord) => row.generic50Ready)
-    const cheapEntryRows = scalpRows.filter((row: AnyRecord) => row.cheapEntryOnly)
-    const take70Rows = scalpRows.filter((row: AnyRecord) => row.take70IfOffered)
-
-    return {
-      totalGames: mlbGames.length,
-      scalpRows,
-      generic50ReadyRows,
-      cheapEntryRows,
-      take70Rows,
-      note:
-        'Scalp board assumes a pregame NRFI / NO entry and asks what happens if the top 1st stays scoreless. When Kalshi first-inning pricing is mapped, it uses the live NO ask; otherwise it falls back to a generic 50c reference entry and a 70c target exit.'
-    }
-  }, [activeKalshiMlbMarketByGame, games])
+    return null
+  }, [])
 
   const availableValueScopes = useMemo(() => {
     const scopes: Array<{ id: string; label: string }> = [{ id: 'all', label: 'All' }]
@@ -3893,7 +3641,12 @@ function App() {
     if (mlbValueSummary && (mlbValueSummary.sideRows.length || mlbValueSummary.totalRows.length)) {
       scopes.push({ id: 'mlb-overview', label: 'Overview' })
     }
-    if (mlbValueSummary && (mlbValueSummary.first5MoneylineRows?.length || mlbValueSummary.first5TotalRows?.length)) {
+    if (
+      mlbValueSummary &&
+      (mlbValueSummary.first5MoneylineRows?.length ||
+        mlbValueSummary.first5TotalRows?.length ||
+        mlbValueSummary.first5TotalResearchRows?.length)
+    ) {
       scopes.push({ id: 'mlb-first5', label: '1st 5' })
     }
     if (mlbFirstInningValueSummary && (mlbFirstInningValueSummary.yrfiRows.length || mlbFirstInningValueSummary.nrfiRows.length)) {

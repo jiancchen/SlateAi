@@ -4620,6 +4620,13 @@ h3 {
   text-transform: uppercase;
 }
 
+.tennis-value-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
 .tennis-trade-list {
   padding-top: 8px;
   border-top: 1px solid rgba(255, 255, 255, 0.07);
@@ -4640,6 +4647,16 @@ h3 {
 .tennis-value-row:focus-visible {
   border-color: rgba(79, 210, 166, 0.35);
   outline: none;
+}
+
+.tennis-value-row.muted {
+  border-color: rgba(236, 179, 94, 0.2);
+  background: rgba(236, 179, 94, 0.055);
+}
+
+.tennis-value-row.muted:hover,
+.tennis-value-row.muted:focus-visible {
+  border-color: rgba(236, 179, 94, 0.34);
 }
 
 .tennis-value-row--trade {

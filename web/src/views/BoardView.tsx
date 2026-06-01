@@ -381,8 +381,7 @@ export function BoardView(props: BoardViewProps) {
     const rankedRows = [
       ...(mlbValueSummary.sideRows || []),
       ...(mlbValueSummary.totalRows || []),
-      ...(mlbValueSummary.first5MoneylineRows || []),
-      ...(mlbValueSummary.first5TotalRows || [])
+      ...(mlbValueSummary.first5MoneylineRows || [])
     ]
       .sort((left: AnyRecord, right: AnyRecord) => right.confidence - left.confidence || right.sortEdge - left.sortEdge)
     const rowsByGame = new Map<string, AnyRecord>()
@@ -687,7 +686,12 @@ export function BoardView(props: BoardViewProps) {
                     ) : null}
                   </section>
                 ) : null}
-                {mlbValueSummary && shouldShowValueScope('mlb-first5') ? (
+                {mlbValueSummary &&
+                shouldShowValueScope('mlb-first5') &&
+                ((mlbValueSummary.first5MoneylineRows?.length || 0) +
+                  (mlbValueSummary.first5TotalRows?.length || 0) +
+                  (mlbValueSummary.first5TotalResearchRows?.length || 0) >
+                  0) ? (
                   <section className="tennis-value-slate-card">
                     <div className="tennis-value-slate-head">
                       <div>
@@ -695,16 +699,17 @@ export function BoardView(props: BoardViewProps) {
                         <h3>{activeDayIsoDate} starter-window ML + O/U</h3>
                       </div>
                       <span>
-                        {(mlbValueSummary.first5MoneylineRows?.length || 0) + (mlbValueSummary.first5TotalRows?.length || 0)} rows
+                        {(mlbValueSummary.first5MoneylineRows?.length || 0) + (mlbValueSummary.first5TotalRows?.length || 0)} value rows
                       </span>
                     </div>
                     <p>
-                      First 5 confidence is tied to MLB-M0 projected runs, not generic board ranking. Rows without a mapped
-                      first-five price are shown as need-line instead of bet-grade.
+                      First 5 ML remains visible when priced. F5 O/U is withheld from bet-grade after the May 31 failure
+                      until the lane has settled calibration behind it.
                     </p>
                     <div className="tennis-value-pill-row">
                       <span>F5 ML {mlbValueSummary.first5MoneylineRows?.length || 0}</span>
                       <span>F5 O/U {mlbValueSummary.first5TotalRows?.length || 0}</span>
+                      <span>F5 O/U research {mlbValueSummary.first5TotalResearchRows?.length || 0}</span>
                       <span>
                         Priced {(mlbValueSummary.first5MoneylineRows || []).filter((row: AnyRecord) => row.raw?.hasMarket).length +
                           (mlbValueSummary.first5TotalRows || []).filter((row: AnyRecord) => row.raw?.hasMarket).length}
@@ -762,13 +767,39 @@ export function BoardView(props: BoardViewProps) {
                         ))}
                       </div>
                     ) : null}
+                    {mlbValueSummary.first5TotalResearchRows?.length ? (
+                      <div className="tennis-value-list">
+                        <div className="tennis-value-section-label">1st 5 O/U research only</div>
+                        <p className="tennis-value-note">
+                          {mlbValueSummary.first5TotalGateNote ||
+                            'F5 O/U rows are withheld from bet-grade value until the lane clears settled calibration.'}
+                        </p>
+                        {mlbValueSummary.first5TotalResearchRows.slice(0, 5).map((row: AnyRecord) => (
+                          <button
+                            key={`${row.id}-first5-total-research`}
+                            type="button"
+                            className="tennis-value-row muted"
+                            onClick={() => openBoardGame(row.gameId)}
+                          >
+                            <span>
+                              <strong>{row.title}</strong>
+                              <small>{row.subtitle} | {row.metaLabel}</small>
+                            </span>
+                            <span>
+                              <strong>Research</strong>
+                              <small>{(row.raw?.gateReasons || []).slice(0, 2).join(' | ')}</small>
+                            </span>
+                          </button>
+                        ))}
+                      </div>
+                    ) : null}
                   </section>
                 ) : null}
                 {mlbFirstInningValueSummary && shouldShowValueScope('mlb-first-inning') ? (
                   <section className="tennis-value-slate-card">
                     <div className="tennis-value-slate-head">
                       <div>
-                        <p className="eyebrow">MLB 1st-inning value board</p>
+                        <p className="eyebrow">MLB 1st-inning model lanes</p>
                         <h3>{activeDayIsoDate} YRFI / NRFI model lanes</h3>
                       </div>
                       <span>{mlbFirstInningValueSummary.modeledGames}/{mlbFirstInningValueSummary.totalGames} modeled</span>

@@ -135,7 +135,7 @@ describe('BoardView MLB value center', () => {
       />
     )
 
-    expect(screen.getByText('MLB 1st-inning value board')).toBeTruthy()
+    expect(screen.getByText('MLB 1st-inning model lanes')).toBeTruthy()
     expect(screen.getByText('YRFI lanes')).toBeTruthy()
     expect(screen.getByText('NRFI lanes')).toBeTruthy()
     expect(screen.getByText('Padres @ Nationals')).toBeTruthy()
@@ -206,5 +206,68 @@ describe('BoardView MLB value center', () => {
     expect(rows).toHaveLength(6)
     expect(within(section as HTMLElement).getByRole('button', { name: /Side 1/i })).toBeTruthy()
     expect(within(section as HTMLElement).getByRole('button', { name: /Side 6/i })).toBeTruthy()
+  })
+
+  it('keeps first-five O/U rows research-only when the value gate is not validated', () => {
+    const props = createBaseProps()
+
+    render(
+      <BoardView
+        {...props}
+        activeValueScope="mlb-first5"
+        availableValueScopes={[{ id: 'mlb-first5', label: '1st 5' }]}
+        mlbValueSummary={{
+          totalGames: 8,
+          fullyPostedGames: 8,
+          partialGames: 0,
+          mappedKalshiGames: 8,
+          sideRows: [],
+          totalRows: [],
+          first5MoneylineRows: [],
+          first5TotalRows: [],
+          first5TotalResearchRows: [
+            {
+              id: 'f5-total-research-1',
+              gameId: 'game-1',
+              title: 'Under 3.5 F5',
+              subtitle: 'Marlins @ Mets',
+              metaLabel: 'Model 73.6% | proj 2.6',
+              priceLabel: 'Kalshi ask 50c',
+              confidence: 74,
+              evCents: 23.6,
+              raw: {
+                gateReasons: ['F5 O/U value lane disabled after May 31 failed calibration', 'chaos gate warning present']
+              }
+            }
+          ],
+          first5TotalGateNote: 'F5 O/U is research-only after the May 31 value-board failure.',
+          totalBaseRows: [],
+          tbBackedRows: [],
+          tbSoftHeatRows: [],
+          strikeoutRows: [],
+          strikeoutOverRows: [],
+          strikeoutUnderRows: [],
+          battingImpactRows: [],
+          hitRunRbiRows: [],
+          battingProductionRows: [],
+          displayHitRunRbiRows: [],
+          battingImpactFallbackRows: [],
+          homeRunRows: [],
+          premiumHomeRunRows: [],
+          strongHomeRunRows: [],
+          viableHomeRunRows: [],
+          postedHomeRunRows: [],
+          topRows: [],
+          note: 'Overview note'
+        }}
+      />
+    )
+
+    expect(screen.getByText('0 value rows')).toBeTruthy()
+    expect(screen.getByText('F5 O/U research 1')).toBeTruthy()
+    expect(screen.getByText('1st 5 O/U research only')).toBeTruthy()
+    expect(screen.getByText('Research')).toBeTruthy()
+    expect(screen.getByText(/May 31 value-board failure/i)).toBeTruthy()
+    expect(screen.queryByText('+23.6c')).toBe(null)
   })
 })

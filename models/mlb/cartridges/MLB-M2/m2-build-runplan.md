@@ -1,6 +1,6 @@
 # MLB-M2 Build Run Plan
 
-Status: Phase 7 in progress
+Status: Phase 8 in progress
 Owner model: MLB-M2
 Created: 2026-06-01
 
@@ -56,7 +56,7 @@ Do not claim a clean M2 improvement if May 31 outcomes were used for training, f
 | 5 | Pitcher-Batter Kernel | In progress | Pitch-mix matchup rows |
 | 6 | Backtest Harness | In progress | Bucketed accuracy/ROI/story reports |
 | 7 | Model Comparison | In progress | Projection vs formula vs learned model |
-| 8 | Value Board Rebuild | Pending | Model-owned value rows only |
+| 8 | Value Board Rebuild | In progress | Model-owned value rows only |
 | 9 | UI Surfaces | Pending | Game-shape, player identity, and market explanation views |
 | 10 | Promotion Gates | Pending | Activation checklist for M2 lanes |
 
@@ -436,15 +436,31 @@ Every row must include:
 
 Checklist:
 
-- [ ] Enforce model-owned value rows only.
-- [ ] Remove any UI-side value creation.
-- [ ] Separate research-only from validated rows.
-- [ ] Add lane-specific confidence and bucket proof.
-- [ ] Add tests for missing confidence / missing bucket / missing model lane.
+- [x] Enforce model-owned value rows only for MLB side/full-total board rows.
+- [x] Remove UI-side first-five ML/O-U value creation.
+- [x] Separate F5 O/U research-only rows from validated rows.
+- [x] Add UI test for research-only F5 O/U rows staying out of value rows.
+- [ ] Add lane-specific confidence and bucket proof for every model-owned row.
+- [ ] Add tests for missing confidence / missing bucket / missing model lane across all lanes.
 
 Exit criteria:
 
 - No F5 O/U, totals, prop, or market row appears as value unless M2 emitted it.
+
+Current implementation:
+
+- `web/src/App.tsx` no longer derives F5 ML or F5 O/U value rows from projected run distributions.
+- MLB side and full-total rows require cartridge-side value gates.
+- `web/src/views/BoardView.tsx` displays uncalibrated F5 O/U rows as research-only, without EV/100.
+- `web/src/views/BoardView.test.tsx` covers the research-only F5 O/U behavior.
+
+Validation:
+
+- `npm --prefix web run test -- BoardView`
+
+Important:
+
+This blocks the specific May 31-style UI math failure. The full exit criterion still needs cartridge-published confidence/bucket proof on every value lane.
 
 ## Phase 9: UI Surfaces
 

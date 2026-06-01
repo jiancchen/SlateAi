@@ -411,6 +411,26 @@ Decision:
 
 No replacement model is promoted. The current candidate stack adds diagnostic warehouse rows, not a better active model. Keep the locked baseline active and use the new tables for the next candidate iteration.
 
+## 2026-06-01 - Value Board Guardrail For Model-Owned Rows
+
+Tightened the MLB value-board surface so it cannot recreate the May 31 first-five O/U failure by doing UI-side probability and EV transforms.
+
+Implemented:
+
+- `web/src/App.tsx` disables UI-derived F5 ML and F5 O/U value rows from projected run distributions.
+- MLB side and full-total value rows now require cartridge-side value gates before appearing as value.
+- `web/src/views/BoardView.tsx` separates uncalibrated F5 O/U rows into a research-only section.
+- `web/src/views/BoardView.test.tsx` verifies research-only F5 O/U rows do not display as value rows or EV rows.
+- `web/src/app.css` adds muted research-row styling.
+
+Validation:
+
+- `npm --prefix web run test -- BoardView`: 3 tests passed.
+
+Remaining gate:
+
+This fixes the UI transformation failure, but full Phase 8 is not done until every model-owned value row carries lane confidence, required hit rate, backtest bucket, trust label, and gate reasons from the cartridge.
+
 ## 2026-06-01 - Invented Vector Search
 
 Added a wider vector search to break the six radar axes into raw invented dimensions.
