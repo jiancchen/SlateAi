@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "modelId": "MLB-M1",
+  "sport": "mlb",
+  "name": "MLB-M1 draft stub",
+  "status": "draft-stub",
+  "summary": "Draft MLB parent cartridge scaffolded from MLB-M0. MLB-M1 has no intentional behavior changes yet; it exists to prove that the scaffold, run, lock, verify, and compare workflow can create a hot-swappable parent model before real M1 changes are added.",
+  "keyImprovements": [
+    "Scaffolds MLB-M1 from MLB-M0 as a draft parent cartridge without activating it.",
+    "Keeps MLB-RP36 as a relief addendum consumed by MLB-M1 instead of treating the reliever shadow artifact as a separate parent model.",
+    "Adds a May 30 closeout gate so side predictions must flow into `mlb_side_predictions` and `mlb_side_backtests` before postmortem lessons are trusted.",
+    "Adds a cartridge-local performance index and quiet-start full-game gate so May 30 failures can affect the next slate instead of staying as notes.",
+    "Persists daily hitter platoon split snapshots so the prop model can be audited against the exact split context shown pregame.",
+    "Extracts model-neutral odds, participant, signal, structured-context, and match-factory contracts into models/shared/sports-core while MLB-M1 keeps only MLB adapters and MLB-specific scoring logic.",
+    "Moves MLB-M1 workflows and publish lanes into the cartridge while old pipeline paths remain compatibility launchers.",
+    "Adds a documented pipeline ownership boundary so data plumbing and offline research are not mistaken for missed model code.",
+    "Adds a component registry for sides, first-five, totals, props, HRs, market context, and MLB-RP36 so future work can land in the right model lane without scanning the whole cartridge.",
+    "Indexes MLB-M1 and MLB-RP36 run locks into shared warehouse model-run tables so performance/backtest queries no longer depend only on JSON files.",
+    "Adds registry-aware MLB lifecycle wrappers so future parent models can be scaffolded, run, locked, verified, and compared without hardcoding package scripts to MLB-M1.",
+    "Adds an app adapter registry so future active parent models must register their app-facing contract instead of silently rendering through MLB-M1.",
+    "Routes legacy pipeline workflow/publish launchers and web prop-calibration access through registry-aware adapters.",
+    "Routes MLB-RP36 package scripts and refresh consumption through registry-aware component wrappers."
+  ],
+  "keyMetrics": [
+    {
+      "label": "Migration status",
+      "value": "Draft stub",
+      "details": "MLB-M1 is registered as a draft copy of MLB-M0. It locks, verifies, and compares, but should not be activated until it has intentional model changes and benchmark evidence."
+    },
+    {
+      "label": "Publish lanes",
+      "value": "9 cartridge lanes",
+      "details": "Day files, batting impact, lineups, HR, props, sides, veto, training corpus, and history journal exporters now run from MLB-M1 lane files."
+    },
+    {
+      "label": "Relief addendum",
+      "value": "MLB-RP36",
+      "details": "The prior reliever-shadow experiment is tracked as a component consumed by MLB-M1."
+    },
+    {
+      "label": "May 30 snapshot target",
+      "value": "15 games",
+      "details": "Golden target covers 15 side picks, 49 prop picks, 12 HR picks, 30 reliever-shadow teams, and 15 lineup boards."
+    },
+    {
+      "label": "May 30 run lock",
+      "value": "Created",
+      "details": "MLB-M1 now has a file-based run manifest, source lock, input lock, output lock, and snapshot verification target."
+    },
+    {
+      "label": "May 30 side closeout",
+      "value": "15/15",
+      "details": "Side predictions and backtests are now present in the warehouse for the May 30 golden day."
+    },
+    {
+      "label": "May 30 result lanes",
+      "value": "FG 6-9 / F5 9-6",
+      "details": "May 30 exposed a dead-early, low-conversion side failure while first-five and first-inning timing held up better."
+    },
+    {
+      "label": "Performance index",
+      "value": "Created",
+      "details": "MLB-M1 now links May 30 run, result, side-board, postmortem, and follow-up artifacts from the cartridge."
+    },
+    {
+      "label": "Component registry",
+      "value": "7 lanes",
+      "details": "Sides, first-five, totals, props, home runs, market context, and MLB-RP36 are declared under components/index.json."
+    },
+    {
+      "label": "Run indexing",
+      "value": "Warehouse-backed",
+      "details": "model_runs, model_run_lanes, model_run_artifacts, model_component_runs, and RP36 settlement tables are populated from run locks."
+    },
+    {
+      "label": "Lifecycle wrappers",
+      "value": "Registry-aware",
+      "details": "models/mlb/run-cartridge.mjs, lock-cartridge.mjs, verify-cartridge.mjs, compare-cartridges.mjs, and scaffold-cartridge.mjs sit above cartridge-local code."
+    },
+    {
+      "label": "App adapter",
+      "value": "Registry-guarded",
+      "details": "models/mlb/app-model.js resolves app-facing MLB adapters and throws for unregistered active parent models."
+    },
+    {
+      "label": "Compatibility launchers",
+      "value": "Active-model routed",
+      "details": "pipeline/mlb/workflows and pipeline/mlb/publish wrappers dispatch through models/mlb/run-cartridge.mjs."
+    },
+    {
+      "label": "Relief wrapper",
+      "value": "Registry-routed",
+      "details": "MLB-RP36 run, lock, verify, and refresh calls route through models/mlb lifecycle wrappers."
+    }
+  ],
+  "notes": [
+    "MLB-M1 should eventually own the final MLB side, first-five, total, prop, and market-context outputs.",
+    "Pipeline internals that remain are classified as fetchers, warehouse commands, compatibility launchers, or offline research; production lane behavior should live in the cartridge.",
+    "MLB publish/export package commands enter through `models/mlb/run-cartridge.mjs --entry lane:<lane>`; `pipeline/mlb/publish/` is compatibility only.",
+    "`models/shared/sports-core` owns reusable sports contracts; `models/mlb/app-model.js` resolves the active MLB app adapter, and `web/src/lib/sports-model.js` re-exports the app composition path.",
+    "Do not promote MLB-RP36 into a standalone parent model; it should feed MLB-M1.",
+    "Before a new MLB slate, the prior day must have a results journal plus side prediction/backtest rows so lessons are based on warehouse-settled data.",
+    "Quiet-start, traffic-without-conversion, and quiet-first-five risks now suppress full-game side promotion unless another market expression is cleaner.",
+    "`MLB-M1_log.md` is the working log for warehouse/model changes that still need lane-specific proof.",
+    "Run locks remain the reproducibility artifact, but every locked MLB-M1/MLB-RP36 run should also be indexed into the shared warehouse model-run tables.",
+    "New parent models should start from the model-iteration runbook and registry-aware wrappers, not by editing package scripts to point at a draft cartridge.",
+    "New parent models that alter app-facing match output must register in `models/mlb/app-model.js` before activation."
+  ],
+  "knownLimitations": [
+    "Compatibility launchers remain under pipeline/mlb, but they are no longer part of the narrowed MLB-M1 source lock inventory.",
+    "MLB-M1 has no separate app adapter yet because it is not active and currently shares the MLB-M0 app-facing contract."
+  ],
+  "files": {
+    "markdown": "models/mlb/cartridges/MLB-M1/MODEL_NOTES.md",
+    "modelLog": "models/mlb/cartridges/MLB-M1/MLB-M1_log.md",
+    "performanceIndex": "models/mlb/cartridges/MLB-M1/performance_index.json",
+    "followups": "models/mlb/cartridges/MLB-M1/followups.md"
+  }
+}

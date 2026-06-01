@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "runId": "mlb-2026-05-30-MLB-W1-MLB-F0-MLB-M1-MLB-RP36-MLB-E0",
+  "outputHash": "2122f7db99a8dad7d444555712484fc478f61d2fa96bf8ce1d4a7bec19278963",
+  "outputs": [
+    {
+      "path": "data-private/model-runs/mlb/MLB-M1/2026-05-30/snapshot.json",
+      "role": "prediction-snapshot",
+      "exists": true,
+      "sha256": "dfab04c45f22b54167e165b435e68972333ac993fbfe6d14dfc78b960ba4cc8c"
+    },
+    {
+      "path": "data-private/model-runs/mlb/MLB-M1/2026-05-30/files.lock.json",
+      "role": "source-lock",
+      "exists": true,
+      "sha256": "2bfe4dcacac7cdac67781ba26d22b4f13a10bc2547049195fa1bc5518ac8cb4e"
+    },
+    {
+      "path": "data-private/model-runs/mlb/MLB-M1/2026-05-30/inputs.lock.json",
+      "role": "input-lock",
+      "exists": true,
+      "sha256": "ad1a376248e296e2316cb5e620ef6baf593bd16601c86f12fc5878dd01c30ff9"
+    },
+    {
+      "path": "data-private/model-runs/mlb/MLB-M1/2026-05-30/run.json",
+      "role": "run-manifest",
+      "exists": true,
+      "sha256": "5f33809a223c520d14fc3a7232e4435bc6978148f72fd20fa7fd65eb61ffc330"
+    }
+  ]
+}

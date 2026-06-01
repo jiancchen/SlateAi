@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "modelId": "MLB-M1",
+  "components": [
+    {
+      "id": "sides",
+      "name": "Sides And Winner",
+      "owns": ["full-game moneyline", "side confidence", "side veto gates"],
+      "entrypoints": ["models/mlb/cartridges/MLB-M1/lanes/sides.mjs"],
+      "coreFiles": ["models/mlb/cartridges/MLB-M1/lib/analysis-model.js", "models/mlb/cartridges/MLB-M1/lib/mlb-side-controls.js"]
+    },
+    {
+      "id": "first-five",
+      "name": "First Five And Timing",
+      "owns": ["first-five side", "starter-window timing", "first-inning timing context"],
+      "entrypoints": ["models/mlb/cartridges/MLB-M1/lanes/generate-day-files.mjs"],
+      "coreFiles": ["models/mlb/cartridges/MLB-M1/lib/mlb-analysis-context.js"]
+    },
+    {
+      "id": "totals",
+      "name": "Run Totals",
+      "owns": ["full-game total", "first-five total", "late scoring shape"],
+      "entrypoints": ["models/mlb/cartridges/MLB-M1/lanes/generate-day-files.mjs"],
+      "coreFiles": ["models/mlb/cartridges/MLB-M1/lib/mlb-simulation.js"]
+    },
+    {
+      "id": "props",
+      "name": "Player Props",
+      "owns": ["tracked non-HR props", "prop calibration", "hitter repeatability labels"],
+      "entrypoints": ["models/mlb/cartridges/MLB-M1/lanes/props.mjs"],
+      "coreFiles": ["models/mlb/cartridges/MLB-M1/lib/mlb-props.js", "models/mlb/cartridges/MLB-M1/generated/mlb-prop-calibration.generated.js"]
+    },
+    {
+      "id": "home-runs",
+      "name": "Home Run Board",
+      "owns": ["HR board", "Statcast HR lane", "park/weather HR context"],
+      "entrypoints": ["models/mlb/cartridges/MLB-M1/lanes/home-runs.mjs"],
+      "coreFiles": []
+    },
+    {
+      "id": "market-context",
+      "name": "Market Context",
+      "owns": ["Kalshi context", "FanDuel odds context", "market mispricing labels"],
+      "entrypoints": ["models/mlb/cartridges/MLB-M1/lanes/veto.mjs", "models/mlb/cartridges/MLB-M1/lanes/training-corpus.mjs"],
+      "coreFiles": ["models/shared/sports-core/market-utils.js"]
+    },
+    {
+      "id": "relief-addendum",
+      "name": "Relief Addendum",
+      "owns": ["MLB-RP36 bridge risk", "first-up reliever clusters", "bullpen path warnings"],
+      "entrypoints": ["models/mlb/cartridges/MLB-RP36/runner.py"],
+      "coreFiles": ["models/mlb/cartridges/MLB-RP36/exporter.py"]
+    }
+  ]
+}

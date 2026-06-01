@@ -83,4 +83,4 @@ npm run data:verify:mlb-run -- --date YYYY-MM-DD
 
 - `models/mlb/app-model.js` is the app adapter registry. It currently registers `MLB-M0`; future app-contract-compatible models must be added there before activation, otherwise the app/loader will throw instead of silently using M0.
 - `models/shared/model-runs/index_runs.py` now reads `role: parent_model` and consumed components from `models/mlb/registry.json`, so future parent models with the same lane contract can index without editing the indexer.
-- Compatibility launchers under `pipeline/mlb/` still point to MLB-M0 directly. Prefer package scripts and `models/mlb/*-cartridge.mjs` wrappers for new work.
+- Compatibility launchers under `pipeline/mlb/` dispatch through `models/mlb/run-cartridge.mjs`; package scripts and `models/mlb/*-cartridge.mjs` wrappers remain the preferred path for new work.

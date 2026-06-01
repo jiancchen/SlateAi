@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "runId": "mlb-2026-05-31-MLB-W1-MLB-F0-MLB-M0-MLB-RP36-MLB-E0",
-  "sourceHash": "edcf41d4a071ce543a4ee98468c8d9127becc3ccaf0bc752ca47a1b3d90798bd",
+  "sourceHash": "c2e242ed5b27881f76e4df22376e79715498c74f945f23d191e65a879333bdd9",
   "files": [
     {
       "role": "mlb-app-adapter-registry",
@@ -304,6 +304,12 @@
       "sha256": "cc4fbb626c23e1d2a55bc3e549d8e638372a502e032bf2da028bc305d97140a8"
     },
     {
+      "path": "models/mlb/cartridges/MLB-M1/manifest.json",
+      "role": "parent_model-manifest",
+      "exists": true,
+      "sha256": "63b3e3bc5fe37b2fea6112bceda92c127e7ad278a2b51dc080adfbb0522d6172"
+    },
+    {
       "role": "shadow-exporter",
       "path": "models/mlb/cartridges/MLB-RP36/exporter.py",
       "exists": true,
@@ -385,7 +391,7 @@
       "path": "models/mlb/registry.json",
       "role": "model-registry",
       "exists": true,
-      "sha256": "26bc7994290eb53a58b0fec84f840019a2cf159c4e1452a81e6e8bc42834ec99"
+      "sha256": "dadacd8a3b1ea4e330e7556b8d47fddd9c0b4242304d5d58700c8d21f8bbbeba"
     },
     {
       "role": "mlb-cartridge-runner",

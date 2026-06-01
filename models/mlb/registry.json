@@ -22,15 +22,26 @@
       "role": "parent_model",
       "targetPath": "./cartridges/MLB-M0",
       "status": "shell_created",
-      "components": ["MLB-RP36"],
-      "lanes": ["moneyline", "first5", "totals", "first_inning", "props", "home_runs"],
+      "components": [
+        "MLB-RP36"
+      ],
+      "lanes": [
+        "moneyline",
+        "first5",
+        "totals",
+        "first_inning",
+        "props",
+        "home_runs"
+      ],
       "notes": "Current MLB side/starter logic is spread across pipeline scripts and generated artifacts. MLB-M0 will become the parent model cartridge."
     },
     {
       "modelId": "MLB-RP36",
       "role": "relief_addendum",
       "originExperiment": "E36 shadow",
-      "consumedBy": ["MLB-M0"],
+      "consumedBy": [
+        "MLB-M0"
+      ],
       "targetPath": "./cartridges/MLB-RP36",
       "status": "shell_created",
       "notes": "Current relief stack is exported through the MLB-RP36 cartridge wrapper and consumed by MLB-M0 as a relief addendum."
@@ -40,6 +51,25 @@
       "role": "evaluator",
       "targetPath": "./cartridges/MLB-E0",
       "status": "shell_created"
+    },
+    {
+      "modelId": "MLB-M1",
+      "role": "parent_model",
+      "targetPath": "./cartridges/MLB-M1",
+      "status": "draft",
+      "components": [
+        "MLB-RP36"
+      ],
+      "lanes": [
+        "moneyline",
+        "first5",
+        "totals",
+        "first_inning",
+        "props",
+        "home_runs"
+      ],
+      "notes": "Draft cartridge scaffolded from MLB-M0. It must pass benchmark locks before activation.",
+      "basedOn": "MLB-M0"
     }
   ]
 }

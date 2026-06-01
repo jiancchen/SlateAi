@@ -125,9 +125,9 @@ class ModelRegistryTest(unittest.TestCase):
                 self.assertNotIn("models/mlb/cartridges/MLB-RP36", scripts.get(script_name, ""))
 
     def test_mlb_scaffold_dry_run_does_not_create_target(self) -> None:
-        target_dir = ROOT / "models" / "mlb" / "cartridges" / "MLB-M1"
+        target_dir = ROOT / "models" / "mlb" / "cartridges" / "MLB-MDRYRUN"
         if target_dir.exists():
-            self.skipTest("MLB-M1 already exists; dry-run no-create check is no longer applicable")
+            self.skipTest("MLB-MDRYRUN already exists; dry-run no-create check is no longer applicable")
 
         result = subprocess.run(
             [
@@ -136,7 +136,7 @@ class ModelRegistryTest(unittest.TestCase):
                 "--from",
                 "MLB-M0",
                 "--to",
-                "MLB-M1",
+                "MLB-MDRYRUN",
             ],
             cwd=ROOT,
             text=True,
@@ -146,7 +146,7 @@ class ModelRegistryTest(unittest.TestCase):
         self.assertEqual(result.returncode, 0, msg=result.stdout + result.stderr)
         payload = json.loads(result.stdout)
         self.assertEqual(payload.get("status"), "dry-run")
-        self.assertFalse(target_dir.exists(), "MLB-M1 should not be created during scaffold dry-run")
+        self.assertFalse(target_dir.exists(), "MLB-MDRYRUN should not be created during scaffold dry-run")
 
     def test_mlb_registry_wrapper_honors_model_env_for_nested_launchers(self) -> None:
         env = os.environ.copy()
