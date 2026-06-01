@@ -12420,6 +12420,26 @@ def build_m2_state_formula_row(
         if opponent_pitcher_id is not None
         else {}
     )
+    pitcher_batter_kernel = row_dict(
+        conn.execute(
+            """
+            SELECT
+              COUNT(*) AS tracked_hitters,
+              AVG(traffic_fit) AS avg_traffic_fit,
+              AVG(damage_fit) AS avg_damage_fit,
+              AVG(collapse_trigger_score) AS avg_collapse_trigger,
+              AVG(command_stress) AS avg_command_stress,
+              AVG(strand_fork_risk) AS avg_strand_fork_risk,
+              MAX(damage_fit) AS max_damage_fit,
+              MAX(collapse_trigger_score) AS max_collapse_trigger
+            FROM mlb_lineup_pitcher_matchup_daily
+            WHERE snapshot_date = ?
+              AND game_pk = ?
+              AND team_name = ?
+            """,
+            (snapshot_date, game["game_pk"], team_name),
+        ).fetchone()
+    )
     sun_row = row_dict(
         conn.execute(
             """
@@ -12437,7 +12457,8 @@ def build_m2_state_formula_row(
         + row_float(lineup_conversion, "baserunners_per_game") * 3.4
         + row_float(team_mistake, "traffic_game_rate") * 22
         + row_float(first_inning, "scored_first_inning_rate") * 10
-        + row_float(team_state, "form_pressure_index") * 0.12,
+        + row_float(team_state, "form_pressure_index") * 0.12
+        + row_float(pitcher_batter_kernel, "avg_traffic_fit") * 0.18,
         0,
         100,
     )
@@ -12447,7 +12468,9 @@ def build_m2_state_formula_row(
         + row_float(team_mistake, "one_big_inning_rate") * 30
         + row_float(team_mistake, "run_clustering_index") * 0.34
         + row_float(opponent_pitcher, "home_run_start_rate") * 14
-        + row_float(sun_row, "visibility_risk_score") * 0.08,
+        + row_float(sun_row, "visibility_risk_score") * 0.08
+        + row_float(pitcher_batter_kernel, "avg_damage_fit") * 0.16
+        + row_float(pitcher_batter_kernel, "max_damage_fit") * 0.08,
         0,
         100,
     )
@@ -12481,6 +12504,8 @@ def build_m2_state_formula_row(
         + row_float(opponent_pitcher, "meltdown_start_rate") * 15
         + row_float(opponent_pitcher, "walk_burst_start_rate") * 13
         + row_float(opponent_pitcher_first, "first_inning_pressure_index") * 0.12
+        + row_float(pitcher_batter_kernel, "avg_collapse_trigger") * 0.16
+        + row_float(pitcher_batter_kernel, "avg_command_stress") * 0.10
         + max(0.0, base_traffic - 60) * 0.10
         + max(0.0, base_damage - 55) * 0.18
         + (bridge_leak * 0.14 if phase in {"bridge", "late"} else 0)
@@ -12508,6 +12533,7 @@ def build_m2_state_formula_row(
         + max(0.0, base_traffic - 62) * 0.35
         + max(0.0, row_float(lineup_conversion, "stranded_traffic_rate") - 1.05) * 35
         + row_float(lineup_conversion, "conversion_volatility") * 35
+        + row_float(pitcher_batter_kernel, "avg_strand_fork_risk") * 0.12
         + bridge_leak * 0.10
         - base_conversion * 0.28,
         0,
@@ -12537,6 +12563,7 @@ def build_m2_state_formula_row(
         "opponentBullpen": opponent_bullpen,
         "opponentPitcher": opponent_pitcher,
         "opponentPitcherFirstInning": opponent_pitcher_first,
+        "pitcherBatterKernel": pitcher_batter_kernel,
         "sunVisibility": sun_row,
     }
     drivers = [
@@ -12544,6 +12571,7 @@ def build_m2_state_formula_row(
         {"formula": "damagePressure", "driver": "one-big-inning rate + run clustering + starter HR leak", "impact": round(damage_pressure, 1)},
         {"formula": "conversionPressure", "driver": "lineup conversion minus stranded traffic", "impact": round(conversion_pressure, 1)},
         {"formula": "collapseHazard", "driver": "opposing starter command break + traffic/damage pressure", "impact": round(collapse_hazard, 1)},
+        {"formula": "pitcherBatterKernel", "driver": "lineup pitch-fit traffic/damage/collapse aggregate", "impact": round(row_float(pitcher_batter_kernel, "avg_collapse_trigger"), 1)},
         {"formula": "suppressionState", "driver": "starter clean-start shape vs traffic/damage", "impact": round(suppression_state, 1)},
         {"formula": "forkProbability", "driver": "traffic plus strand risk and bridge leak", "impact": round(fork_probability, 1)},
     ]

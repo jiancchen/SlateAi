@@ -40,8 +40,8 @@
   },
   "holdoutReads": {
     "stateFormulaMay31": {
-      "record": "24/120",
-      "hitRate": 0.2,
+      "record": "18/120",
+      "hitRate": 0.15,
       "status": "research-only"
     },
     "pitcherBatterKernelTopCollapseMay31": {

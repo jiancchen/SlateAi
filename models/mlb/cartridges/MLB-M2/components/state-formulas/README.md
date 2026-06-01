@@ -431,8 +431,8 @@ First warehouse-backed formula-row report:
 
 - 7,120 rows loaded through May 31.
 - May 23-May 31 report range: 1,000 rows across 125 games.
-- Story distribution: 693 normal, 176 dead, 102 crooked, 29 fork.
-- Starter-window F5 direction check: 47.5% on 40 rows.
+- Story distribution after kernel-fed refresh: 538 normal, 177 fork, 154 dead, 131 crooked.
+- Starter-window F5 direction check after kernel-fed refresh: 54.8% on 42 rows.
 
 Interpretation: this row layer is now measurable and inspectable, but the first formula calibration is too weak for the value board. Keep it research-only until story buckets and market expressions pass date/line/price backtests.
 

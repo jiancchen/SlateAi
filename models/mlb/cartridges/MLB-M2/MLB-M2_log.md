@@ -278,7 +278,7 @@ Warehouse coverage:
 - May 23-May 31 report range: 1,000 rows across 125 games.
 - Phase states: `firstCycle`, `starterWindow`, `bridge`, `late`.
 
-First report distribution:
+First pre-kernel report distribution:
 
 - Story buckets: 693 normal, 176 dead, 102 crooked, 29 fork.
 - Market expressions: 693 pass, 174 first-five under, 63 first-five over, 39 full-game over, 29 live-only, 2 live/full under watch.
@@ -371,9 +371,9 @@ Stored backtest coverage:
 - May 23-May 31: 12,230 player-identity rows.
 - May 23-May 31: 61 pitcher-batter-kernel top-collapse rows.
 
-May 31 holdout read:
+May 31 holdout read after the kernel-fed refresh:
 
-- State formulas: 24/120, 20.0%. This is bad and confirms the first state-formula calibration should not touch the value board.
+- State formulas: 18/120, 15.0%. This is bad and confirms the first state-formula calibration should not touch the value board.
 - Pitcher-batter kernel top-collapse: 4/6, 66.7%. Interesting pocket, not enough sample to promote.
 - Player hits per PA: 182/307, 59.3%.
 - Player total bases per PA: 179/307, 58.3%.
@@ -402,7 +402,7 @@ Comparison read:
 - Locked baseline category lane: 62.6% on 195 rows.
 - Locked May 31 category lane: 11/15, 73.3%.
 - Locked May 31 O/U stress set: 5/5, 100.0%.
-- Candidate state formulas May 31: 24/120, 20.0%.
+- Candidate state formulas May 31: 18/120, 15.0%.
 - Candidate pitcher-batter top-collapse May 31: 4/6, 66.7%.
 - Candidate player hits May 31: 182/307, 59.3%.
 - Candidate player total bases May 31: 179/307, 58.3%.
@@ -410,6 +410,37 @@ Comparison read:
 Decision:
 
 No replacement model is promoted. The current candidate stack adds diagnostic warehouse rows, not a better active model. Keep the locked baseline active and use the new tables for the next candidate iteration.
+
+## 2026-06-01 - Kernel-Fed State Formula Refresh
+
+Fed `mlb_lineup_pitcher_matchup_daily` aggregates into the state-formula rows so the formula layer can see lineup-vs-starter texture instead of only generic team shape.
+
+New state formula inputs:
+
+- average traffic fit
+- average and max damage fit
+- average and max collapse trigger
+- average command stress
+- strand-fork risk
+- tracked hitter count
+
+Suite command:
+
+```bash
+npm run data:research:mlb-m2-suite -- --start 2026-05-23 --end 2026-05-31 --holdout 2026-05-31 --today 2026-06-01
+```
+
+Result:
+
+- Warehouse rows loaded through May 31: 7,120.
+- Report range May 23-May 31: 1,000 rows across 125 games.
+- Story distribution shifted to 538 normal, 177 fork, 154 dead, 131 crooked.
+- Starter-window F5 direction improved to 54.8% on 42 rows.
+- May 31 state-formula holdout worsened to 18/120, 15.0%.
+
+Interpretation:
+
+The kernel feed is structurally correct and useful for diagnosis, but it is not promotion quality. It improved one narrow F5 direction check while making the May 31 state-formula holdout worse. Keep it as a research substrate and require a better calibrated next candidate before any state-formula lane touches the value board.
 
 ## 2026-06-01 - Value Board Guardrail For Model-Owned Rows
 

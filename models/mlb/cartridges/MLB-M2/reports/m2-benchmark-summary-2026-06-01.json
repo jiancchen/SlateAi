@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "modelId": "MLB-M2",
+  "generatedAt": "2026-06-01",
+  "decision": "keep-MLB-M0-active",
+  "m2Status": "draft-comparison",
+  "baselineToBeat": {
+    "baselineFullGameSide": {
+      "hitRate": 0.59,
+      "rows": 212
+    },
+    "m2CategoryLane": {
+      "hitRate": 0.626,
+      "rows": 195
+    },
+    "m2AllowedSideBucket": {
+      "hitRate": 0.675,
+      "rows": 40
+    },
+    "starterToBullpenFlipF5": {
+      "hitRate": 0.686,
+      "rows": 35
+    },
+    "deadZoneTimingF5": {
+      "hitRate": 0.706,
+      "rows": 17
+    },
+    "may31OuStressBenchmark": {
+      "record": "5/5",
+      "hitRate": 1
+    }
+  },
+  "candidateStack": {
+    "stateFormulas": {
+      "record": "18/120",
+      "hitRate": 0.15,
+      "status": "research-only"
+    },
+    "pitcherBatterKernelTopCollapse": {
+      "record": "4/6",
+      "hitRate": 0.667,
+      "status": "candidate-pocket"
+    },
+    "playerHitsIdentity": {
+      "record": "182/307",
+      "hitRate": 0.593,
+      "status": "diagnostic"
+    },
+    "playerTotalBasesIdentity": {
+      "record": "179/307",
+      "hitRate": 0.583,
+      "status": "diagnostic"
+    }
+  },
+  "warehouseHealthMay31": {
+    "status": "passed",
+    "stateFormulaRows": 120,
+    "playerIdentityCurves": 3188,
+    "playerCurrentDeviations": 3188,
+    "playerGameDistributions": 3188,
+    "lineupPitcherMatchups": 341,
+    "stateFormulaBacktests": 126,
+    "playerIdentityBacktests": 1535
+  },
+  "rerunCommand": "npm run data:research:mlb-m2-suite -- --start 2026-05-23 --end 2026-05-31 --holdout 2026-05-31 --today 2026-06-01"
+}

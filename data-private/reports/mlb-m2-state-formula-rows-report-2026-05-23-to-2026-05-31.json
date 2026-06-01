@@ -19,8 +19,8 @@
     "byDate": [
       {
         "date": "2026-05-23",
-        "hitRate": 0.6,
-        "rows": 5
+        "hitRate": 0.667,
+        "rows": 6
       },
       {
         "date": "2026-05-24",
@@ -30,17 +30,17 @@
       {
         "date": "2026-05-25",
         "hitRate": 1.0,
-        "rows": 3
+        "rows": 2
       },
       {
         "date": "2026-05-26",
-        "hitRate": 0.5,
-        "rows": 4
+        "hitRate": 0.8,
+        "rows": 5
       },
       {
         "date": "2026-05-27",
-        "hitRate": 0.4,
-        "rows": 5
+        "hitRate": 0.25,
+        "rows": 4
       },
       {
         "date": "2026-05-28",
@@ -49,45 +49,21 @@
       },
       {
         "date": "2026-05-29",
-        "hitRate": 0.4,
+        "hitRate": 0.6,
         "rows": 5
       },
       {
         "date": "2026-05-30",
-        "hitRate": 0.333,
-        "rows": 6
+        "hitRate": 0.429,
+        "rows": 7
       },
       {
         "date": "2026-05-31",
-        "hitRate": 0.571,
-        "rows": 7
+        "hitRate": 0.625,
+        "rows": 8
       }
     ],
     "examples": [
-      {
-        "actual": "over",
-        "date": "2026-05-30",
-        "gameFirst5Total": 9,
-        "gamePk": 822975,
-        "hit": true,
-        "prediction": "over",
-        "stories": [
-          "crooked",
-          "normal"
-        ]
-      },
-      {
-        "actual": "under",
-        "date": "2026-05-30",
-        "gameFirst5Total": 3,
-        "gamePk": 823945,
-        "hit": false,
-        "prediction": "over",
-        "stories": [
-          "dead",
-          "crooked"
-        ]
-      },
       {
         "actual": "over",
         "date": "2026-05-30",
@@ -98,6 +74,18 @@
         "stories": [
           "normal",
           "crooked"
+        ]
+      },
+      {
+        "actual": "over",
+        "date": "2026-05-30",
+        "gameFirst5Total": 5,
+        "gamePk": 824352,
+        "hit": true,
+        "prediction": "over",
+        "stories": [
+          "crooked",
+          "fork"
         ]
       },
       {
@@ -120,7 +108,7 @@
         "hit": false,
         "prediction": "over",
         "stories": [
-          "normal",
+          "fork",
           "crooked"
         ]
       },
@@ -132,7 +120,19 @@
         "hit": true,
         "prediction": "over",
         "stories": [
-          "normal",
+          "fork",
+          "crooked"
+        ]
+      },
+      {
+        "actual": "over",
+        "date": "2026-05-31",
+        "gameFirst5Total": 5,
+        "gamePk": 823053,
+        "hit": true,
+        "prediction": "over",
+        "stories": [
+          "fork",
           "crooked"
         ]
       },
@@ -209,8 +209,8 @@
         ]
       }
     ],
-    "hitRate": 0.475,
-    "rows": 40
+    "hitRate": 0.548,
+    "rows": 42
   },
   "modelId": "MLB-M2",
   "range": {
@@ -258,36 +258,35 @@
       }
     },
     "marketExpressions": {
-      "first-five over": 63,
-      "first-five under": 174,
-      "full-game over": 39,
-      "live-only": 29,
-      "live/full under watch": 2,
-      "pass": 693
+      "first-five over": 83,
+      "first-five under": 154,
+      "full-game over": 48,
+      "live-only": 177,
+      "pass": 538
     },
     "phaseStoryBuckets": {
-      "bridge:crooked": 25,
-      "bridge:dead": 2,
-      "bridge:fork": 12,
-      "bridge:normal": 211,
-      "firstCycle:crooked": 13,
-      "firstCycle:dead": 117,
-      "firstCycle:normal": 120,
-      "late:crooked": 14,
-      "late:fork": 13,
-      "late:normal": 223,
-      "starterWindow:crooked": 50,
-      "starterWindow:dead": 57,
-      "starterWindow:fork": 4,
-      "starterWindow:normal": 139
+      "bridge:crooked": 31,
+      "bridge:fork": 63,
+      "bridge:normal": 156,
+      "firstCycle:crooked": 23,
+      "firstCycle:dead": 109,
+      "firstCycle:fork": 11,
+      "firstCycle:normal": 107,
+      "late:crooked": 17,
+      "late:fork": 63,
+      "late:normal": 170,
+      "starterWindow:crooked": 60,
+      "starterWindow:dead": 45,
+      "starterWindow:fork": 40,
+      "starterWindow:normal": 105
     },
-    "rowStoryHitRate": 0.279,
-    "rowStoryRows": 971,
+    "rowStoryHitRate": 0.296,
+    "rowStoryRows": 823,
     "storyBuckets": {
-      "crooked": 102,
-      "dead": 176,
-      "fork": 29,
-      "normal": 693
+      "crooked": 131,
+      "dead": 154,
+      "fork": 177,
+      "normal": 538
     }
   }
 }

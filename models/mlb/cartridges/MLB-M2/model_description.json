@@ -54,6 +54,11 @@
       "label": "Value row gate",
       "value": "model-owned",
       "details": "F5 ML, F5 O/U, and full-total rows must carry valueGate, backtestBucket, requiredHitRate, trustLabel, and sourceArtifact before display as value."
+    },
+    {
+      "label": "Warehouse coverage",
+      "value": "Passed",
+      "details": "May 31 M2 derived tables pass freshness and minimum-row checks for state formulas, player identity, pitcher-batter kernel, and backtests."
     }
   ],
   "notes": [
@@ -78,6 +83,7 @@
     "gameShape": "models/mlb/cartridges/MLB-M2/lib/mlb-game-shape.js",
     "gameShapeBacktest": "models/mlb/cartridges/MLB-M2/reports/game-shape-backtest-2026-05-10-to-2026-05-31.md",
     "researchSurface": "models/mlb/cartridges/MLB-M2/reports/m2-research-surface-2026-06-01.md",
-    "promotionHistory": "models/mlb/cartridges/MLB-M2/promotion/promotion-history.md"
+    "promotionHistory": "models/mlb/cartridges/MLB-M2/promotion/promotion-history.md",
+    "benchmarkSummary": "models/mlb/cartridges/MLB-M2/reports/m2-benchmark-summary-2026-06-01.md"
   }
 }

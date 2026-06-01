@@ -11,7 +11,7 @@ Range: 2026-05-23 to 2026-05-31; holdout 2026-05-31
 
 ## Candidate Research Rows
 
-- State formula May 31: 24/120 (20.0%).
+- State formula May 31: 18/120 (15.0%).
 - Pitcher-batter kernel top-collapse May 31: 4/6 (66.7%).
 - Player hits May 31: 182/307 (59.3%).
 - Player total bases May 31: 179/307 (58.3%).

@@ -49,8 +49,8 @@
         "rows": 6
       },
       {
-        "hit_rate": 0.2,
-        "hits": 24,
+        "hit_rate": 0.15,
+        "hits": 18,
         "lane": "state_formula",
         "rows": 120
       }
@@ -1015,19 +1015,11 @@
     },
     {
       "expression": "pass",
-      "hit_rate": 0.294,
-      "hits": 62,
+      "hit_rate": 0.295,
+      "hits": 46,
       "lane": "state_formula",
       "phase": "bridge",
-      "rows": 211
-    },
-    {
-      "expression": "full-game over",
-      "hit_rate": 0.36,
-      "hits": 9,
-      "lane": "state_formula",
-      "phase": "bridge",
-      "rows": 25
+      "rows": 156
     },
     {
       "expression": "live-only",
@@ -1035,87 +1027,95 @@
       "hits": 0,
       "lane": "state_formula",
       "phase": "bridge",
-      "rows": 12
+      "rows": 63
     },
     {
-      "expression": "live/full under watch",
-      "hit_rate": 1.0,
-      "hits": 2,
+      "expression": "full-game over",
+      "hit_rate": 0.419,
+      "hits": 13,
       "lane": "state_formula",
       "phase": "bridge",
-      "rows": 2
-    },
-    {
-      "expression": "pass",
-      "hit_rate": 0.233,
-      "hits": 28,
-      "lane": "state_formula",
-      "phase": "firstCycle",
-      "rows": 120
+      "rows": 31
     },
     {
       "expression": "first-five under",
-      "hit_rate": 0.35,
-      "hits": 41,
+      "hit_rate": 0.367,
+      "hits": 40,
       "lane": "state_formula",
       "phase": "firstCycle",
-      "rows": 117
+      "rows": 109
+    },
+    {
+      "expression": "pass",
+      "hit_rate": 0.252,
+      "hits": 27,
+      "lane": "state_formula",
+      "phase": "firstCycle",
+      "rows": 107
     },
     {
       "expression": "first-five over",
-      "hit_rate": 0.538,
+      "hit_rate": 0.652,
+      "hits": 15,
+      "lane": "state_formula",
+      "phase": "firstCycle",
+      "rows": 23
+    },
+    {
+      "expression": "live-only",
+      "hit_rate": 0.0,
+      "hits": 0,
+      "lane": "state_formula",
+      "phase": "firstCycle",
+      "rows": 11
+    },
+    {
+      "expression": "pass",
+      "hit_rate": 0.306,
+      "hits": 52,
+      "lane": "state_formula",
+      "phase": "late",
+      "rows": 170
+    },
+    {
+      "expression": "live-only",
+      "hit_rate": 0.0,
+      "hits": 0,
+      "lane": "state_formula",
+      "phase": "late",
+      "rows": 63
+    },
+    {
+      "expression": "full-game over",
+      "hit_rate": 0.412,
       "hits": 7,
       "lane": "state_formula",
-      "phase": "firstCycle",
-      "rows": 13
+      "phase": "late",
+      "rows": 17
     },
     {
       "expression": "pass",
-      "hit_rate": 0.309,
-      "hits": 69,
-      "lane": "state_formula",
-      "phase": "late",
-      "rows": 223
-    },
-    {
-      "expression": "full-game over",
-      "hit_rate": 0.429,
-      "hits": 6,
-      "lane": "state_formula",
-      "phase": "late",
-      "rows": 14
-    },
-    {
-      "expression": "live-only",
-      "hit_rate": 0.0,
-      "hits": 0,
-      "lane": "state_formula",
-      "phase": "late",
-      "rows": 13
-    },
-    {
-      "expression": "pass",
-      "hit_rate": 0.23,
-      "hits": 32,
+      "hit_rate": 0.229,
+      "hits": 24,
       "lane": "state_formula",
       "phase": "starterWindow",
-      "rows": 139
-    },
-    {
-      "expression": "first-five under",
-      "hit_rate": 0.404,
-      "hits": 23,
-      "lane": "state_formula",
-      "phase": "starterWindow",
-      "rows": 57
+      "rows": 105
     },
     {
       "expression": "first-five over",
-      "hit_rate": 0.36,
+      "hit_rate": 0.433,
+      "hits": 26,
+      "lane": "state_formula",
+      "phase": "starterWindow",
+      "rows": 60
+    },
+    {
+      "expression": "first-five under",
+      "hit_rate": 0.4,
       "hits": 18,
       "lane": "state_formula",
       "phase": "starterWindow",
-      "rows": 50
+      "rows": 45
     },
     {
       "expression": "live-only",
@@ -1123,7 +1123,7 @@
       "hits": 0,
       "lane": "state_formula",
       "phase": "starterWindow",
-      "rows": 4
+      "rows": 40
     }
   ]
 }

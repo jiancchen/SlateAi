@@ -39,6 +39,7 @@
   "performanceIndex": "models/mlb/cartridges/MLB-M2/performance_index.json",
   "followups": "models/mlb/cartridges/MLB-M2/followups.md",
   "currentBenchmark": "models/mlb/cartridges/MLB-M2/benchmarks/2026-06-01-current-baseline.json",
+  "benchmarkSummary": "models/mlb/cartridges/MLB-M2/reports/m2-benchmark-summary-2026-06-01.json",
   "researchSurface": "models/mlb/cartridges/MLB-M2/reports/m2-research-surface-2026-06-01.json",
   "promotionHistory": "models/mlb/cartridges/MLB-M2/promotion/promotion-history.md",
   "sourceFiles": [
@@ -91,8 +92,20 @@
       "path": "models/mlb/cartridges/MLB-M2/benchmarks/2026-06-01-current-baseline.json"
     },
     {
+      "role": "benchmark-summary",
+      "path": "models/mlb/cartridges/MLB-M2/reports/m2-benchmark-summary-2026-06-01.json"
+    },
+    {
       "role": "research-surface",
       "path": "models/mlb/cartridges/MLB-M2/reports/m2-research-surface-2026-06-01.json"
+    },
+    {
+      "role": "benchmark-suite-runner",
+      "path": "models/mlb/cartridges/MLB-M2/workflows/run-benchmarks.mjs"
+    },
+    {
+      "role": "warehouse-coverage-checker",
+      "path": "models/mlb/cartridges/MLB-M2/checks/check_warehouse_coverage.py"
     },
     {
       "role": "lane-promotion-template",

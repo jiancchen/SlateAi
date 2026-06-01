@@ -10,28 +10,27 @@ Range: 2026-05-23 to 2026-05-31
 
 ## Story Distribution
 
-- normal: 693
-- dead: 176
-- crooked: 102
-- fork: 29
+- normal: 538
+- fork: 177
+- dead: 154
+- crooked: 131
 
 ## Market Expressions
 
-- pass: 693
-- first-five under: 174
-- first-five over: 63
-- full-game over: 39
-- live-only: 29
-- live/full under watch: 2
+- pass: 538
+- live-only: 177
+- first-five under: 154
+- first-five over: 83
+- full-game over: 48
 
 ## Row Story Check
 
-- Hit rate: 0.279
-- Rows: 971
+- Hit rate: 0.296
+- Rows: 823
 
 ## Starter-Window F5 Direction Check
 
-- Hit rate: 0.475
-- Rows: 40
+- Hit rate: 0.548
+- Rows: 42
 
 This report is a research surface. It does not create value-board rows and does not use prices.

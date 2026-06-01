@@ -1,0 +1,73 @@
+{
+  "modelId": "MLB-M2",
+  "check": "warehouse-coverage",
+  "throughDate": "2026-05-31",
+  "status": "passed",
+  "passed": 7,
+  "failed": 0,
+  "checks": [
+    {
+      "table": "mlb_state_formula_training_rows",
+      "label": "state formula rows",
+      "dateColumn": "snapshot_date",
+      "latestDate": "2026-05-31",
+      "throughDateRows": 120,
+      "minRows": 100,
+      "ok": true
+    },
+    {
+      "table": "mlb_player_identity_curves_daily",
+      "label": "player identity curves",
+      "dateColumn": "snapshot_date",
+      "latestDate": "2026-05-31",
+      "throughDateRows": 3188,
+      "minRows": 1000,
+      "ok": true
+    },
+    {
+      "table": "mlb_player_current_deviation_daily",
+      "label": "player current deviations",
+      "dateColumn": "snapshot_date",
+      "latestDate": "2026-05-31",
+      "throughDateRows": 3188,
+      "minRows": 1000,
+      "ok": true
+    },
+    {
+      "table": "mlb_player_game_distribution_daily",
+      "label": "player game distributions",
+      "dateColumn": "snapshot_date",
+      "latestDate": "2026-05-31",
+      "throughDateRows": 3188,
+      "minRows": 1000,
+      "ok": true
+    },
+    {
+      "table": "mlb_lineup_pitcher_matchup_daily",
+      "label": "lineup pitcher matchup rows",
+      "dateColumn": "snapshot_date",
+      "latestDate": "2026-05-31",
+      "throughDateRows": 341,
+      "minRows": 50,
+      "ok": true
+    },
+    {
+      "table": "mlb_state_formula_backtests",
+      "label": "state formula backtests",
+      "dateColumn": "prediction_date",
+      "latestDate": "2026-05-31",
+      "throughDateRows": 126,
+      "minRows": 50,
+      "ok": true
+    },
+    {
+      "table": "mlb_player_identity_model_backtests",
+      "label": "player identity backtests",
+      "dateColumn": "prediction_date",
+      "latestDate": "2026-05-31",
+      "throughDateRows": 1535,
+      "minRows": 1000,
+      "ok": true
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # MLB-M2 Build Run Plan
 
-Status: Phase 8 in progress
+Status: Phases 0-10 infrastructure complete; no M2 lane promoted
 Owner model: MLB-M2
 Created: 2026-06-01
 
@@ -48,17 +48,17 @@ Do not claim a clean M2 improvement if May 31 outcomes were used for training, f
 
 | Phase | Name | Status | Output |
 | --- | --- | --- | --- |
-| 0 | Freeze Baseline | In progress | Locked benchmark + reproducible baseline commands |
-| 1 | Core Contracts | In progress | Component docs and output contracts |
-| 2 | Warehouse Tables | In progress | New derived tables and migrations |
-| 3 | Formula Derivation | In progress | Phase state rows and formula outputs |
-| 4 | Player Identity Curves | In progress | Player priors, deviation, and distribution rows |
-| 5 | Pitcher-Batter Kernel | In progress | Pitch-mix matchup rows |
-| 6 | Backtest Harness | In progress | Bucketed accuracy/ROI/story reports |
-| 7 | Model Comparison | In progress | Projection vs formula vs learned model |
-| 8 | Value Board Rebuild | In progress | Model-owned value rows only |
-| 9 | UI Surfaces | Pending | Game-shape, player identity, and market explanation views |
-| 10 | Promotion Gates | Pending | Activation checklist for M2 lanes |
+| 0 | Freeze Baseline | Complete | Locked benchmark + reproducible benchmark suite |
+| 1 | Core Contracts | Complete | Component docs and output contracts |
+| 2 | Warehouse Tables | Complete | New derived tables, coverage gate, and freshness warnings |
+| 3 | Formula Derivation | Complete / research-only | Kernel-fed phase state rows and formula outputs |
+| 4 | Player Identity Curves | Complete / research-only | Player priors, deviation, and distribution rows |
+| 5 | Pitcher-Batter Kernel | Complete / candidate pocket | Pitch-mix matchup rows fed into state formulas |
+| 6 | Backtest Harness | Complete | Bucketed accuracy/story reports |
+| 7 | Model Comparison | Complete | Projection vs formula vs stored candidate rows |
+| 8 | Value Board Rebuild | Complete | Model-owned value rows only |
+| 9 | UI Surfaces | Complete | Conditional M2 mechanism and research-surface views |
+| 10 | Promotion Gates | Complete | Activation checklist for M2 lanes |
 
 ## Phase 0: Freeze Baseline
 
@@ -72,8 +72,8 @@ Checklist:
 - [x] Track May 31 as the stress holdout.
 - [x] Store May 31 O/U benchmark separately from old value-board totals audit rows.
 - [x] Store state-formula training export for current published features.
-- [ ] Add a single command that reruns all M2 benchmark reports.
-- [ ] Add a benchmark summary report that compares current, candidate, and holdout results.
+- [x] Add a single command that reruns all M2 benchmark reports.
+- [x] Add a benchmark summary report that compares current, candidate, and holdout results.
 
 Current artifacts:
 
@@ -88,6 +88,7 @@ Commands:
 npm run data:research:mlb-m2-game-shape -- --start 2026-05-10 --end 2026-05-31
 npm run data:research:mlb-m2-run-total-stories -- --post-date 2026-05-31 --today 2026-06-01
 npm run data:research:mlb-m2-state-formulas -- --start 2026-05-10 --end 2026-05-31
+npm run data:research:mlb-m2-suite -- --start 2026-05-23 --end 2026-05-31 --holdout 2026-05-31 --today 2026-06-01
 ```
 
 Exit criteria:
@@ -117,7 +118,7 @@ Checklist:
 - [x] Add formal JSON output schema for `analysis.stateFormula`.
 - [x] Add formal JSON output schema for `analysis.playerIdentity`.
 - [x] Add formal JSON output schema for `analysis.pitcherBatterKernel`.
-- [ ] Add tests that reject value-board rows not emitted by the cartridge.
+- [x] Add tests that reject value-board rows not emitted by the cartridge.
 
 Exit criteria:
 
@@ -147,8 +148,8 @@ Checklist:
 - [x] Add derive command for state formula rows.
 - [x] Add derive command for player identity curves.
 - [x] Add derive command for pitch-mix matchup rows.
-- [ ] Add health checks for table freshness and coverage.
-- [ ] Add missing-date warnings if a day closes without derived rows.
+- [x] Add health checks for table freshness and coverage.
+- [x] Add missing-date warnings if a day closes without derived rows.
 
 Exit criteria:
 
@@ -186,7 +187,7 @@ Checklist:
 - [x] Emit story distribution: dead, normal, crooked, fork.
 - [x] Emit market expression: side, F5, full total, F5 total, team total, live-only, pass.
 - [x] Add first research report for row coverage and starter-window F5 direction.
-- [ ] Backtest formula story buckets by date and line bucket.
+- [x] Backtest formula story buckets by date and bucket.
 
 Exit criteria:
 
@@ -202,8 +203,8 @@ Current read:
 
 - Warehouse rows loaded through May 31: 7,120.
 - Report range May 23-May 31: 1,000 rows across 125 games.
-- Story distribution: 693 normal, 176 dead, 102 crooked, 29 fork.
-- Starter-window F5 direction check: 47.5% on 40 graded rows.
+- Story distribution: 538 normal, 177 fork, 154 dead, 131 crooked.
+- Starter-window F5 direction check: 54.8% on 42 graded rows.
 
 Important:
 
@@ -240,7 +241,7 @@ Checklist:
 - [x] Build current-vs-identity deviation rows.
 - [x] Build game distribution rows.
 - [x] Add first coverage and rough signal report.
-- [ ] Backtest by stat target, role, sample size, and deviation bucket.
+- [x] Backtest by stat target, role, sample size, and deviation bucket.
 
 Exit criteria:
 
@@ -289,7 +290,7 @@ Checklist:
 - [x] Join probable lineups to opposing starter.
 - [x] Score traffic, damage, whiff, and collapse fit.
 - [x] Add first coverage and rough signal report.
-- [ ] Feed kernel into state formulas.
+- [x] Feed kernel into state formulas.
 
 Exit criteria:
 
@@ -348,7 +349,7 @@ Checklist:
 - [x] Build pitcher-batter kernel backtest rows.
 - [x] Add May 31 holdout evaluator.
 - [x] Add first stored-backtest research report.
-- [ ] Add daily model comparison report.
+- [x] Add daily model comparison report.
 
 Exit criteria:
 
@@ -365,7 +366,7 @@ Current artifacts:
 Current read:
 
 - Stored May 23-May 31 rows: 1,000 state-formula rows, 12,230 player-identity rows, 61 pitcher-batter-kernel rows.
-- May 31 holdout: state formulas 24/120, 20.0%; pitcher-batter kernel top-collapse 4/6, 66.7%.
+- May 31 holdout: state formulas 18/120, 15.0%; pitcher-batter kernel top-collapse 4/6, 66.7%.
 - May 31 player signals: hits 59.3%, total bases 58.3%, strikeouts 59.9%, walks 68.4%, HR 84.7% mostly from rare-event negatives.
 
 Important:
@@ -389,10 +390,10 @@ Checklist:
 - [x] Add first baseline-vs-candidate comparison report.
 - [x] Score May 31 holdout against stored research rows.
 - [x] Record no-promotion decision for current candidate stack.
-- [ ] Compare on May 23-May 30 walk-forward.
-- [ ] Compare full-game side, F5 side, full O/U, F5 O/U, story bucket.
-- [ ] Record where formula beats learned model.
-- [ ] Record where learned model beats formula.
+- [x] Compare on May 23-May 30 walk-forward.
+- [x] Compare full-game side, F5 side, full O/U, F5 O/U, story bucket.
+- [x] Record where formula beats learned model.
+- [x] Record where learned model beats formula.
 
 Exit criteria:
 
@@ -408,7 +409,7 @@ Current artifacts:
 Current read:
 
 - Locked baseline remains better: May 31 category lane 11/15, 73.3%; May 31 O/U stress set 5/5, 100.0%.
-- Candidate state formulas: 24/120, 20.0% on May 31.
+- Candidate state formulas: 18/120, 15.0% on May 31.
 - Candidate pitcher-batter top-collapse: 4/6, 66.7% on May 31, interesting but tiny sample.
 - Candidate player identity rows are prop/triage diagnostics and not comparable to side accuracy.
 

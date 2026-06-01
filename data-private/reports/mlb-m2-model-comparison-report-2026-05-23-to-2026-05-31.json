@@ -118,8 +118,8 @@
       }
     },
     "candidateStateFormulaMay31": {
-      "hit_rate": 0.2,
-      "hits": 24,
+      "hit_rate": 0.15,
+      "hits": 18,
       "lane": "state_formula",
       "rows": 120
     }

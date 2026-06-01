@@ -32,7 +32,7 @@ The site may display M2 diagnostics, but value rows must come from model-owned r
 
 ## Holdout Reads
 
-- State formula May 31: 24/120, 20.0%. Research-only.
+- State formula May 31: 18/120, 15.0%. Research-only.
 - Pitcher-batter kernel top-collapse May 31: 4/6, 66.7%. Candidate pocket, tiny sample.
 - Player hits May 31: 182/307, 59.3%. Diagnostic.
 - Player total bases May 31: 179/307, 58.3%. Diagnostic.

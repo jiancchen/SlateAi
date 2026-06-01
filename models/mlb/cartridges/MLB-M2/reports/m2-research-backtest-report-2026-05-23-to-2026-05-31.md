@@ -11,20 +11,20 @@ Range: 2026-05-23 to 2026-05-31
 ## State / Kernel Rows
 
 - pitcher_batter_kernel starterWindow first-five over: 32/61 hit, rate 0.525
-- state_formula bridge pass: 62/211 hit, rate 0.294
-- state_formula bridge full-game over: 9/25 hit, rate 0.36
-- state_formula bridge live-only: 0/12 hit, rate 0.0
-- state_formula bridge live/full under watch: 2/2 hit, rate 1.0
-- state_formula firstCycle pass: 28/120 hit, rate 0.233
-- state_formula firstCycle first-five under: 41/117 hit, rate 0.35
-- state_formula firstCycle first-five over: 7/13 hit, rate 0.538
-- state_formula late pass: 69/223 hit, rate 0.309
-- state_formula late full-game over: 6/14 hit, rate 0.429
-- state_formula late live-only: 0/13 hit, rate 0.0
-- state_formula starterWindow pass: 32/139 hit, rate 0.23
-- state_formula starterWindow first-five under: 23/57 hit, rate 0.404
-- state_formula starterWindow first-five over: 18/50 hit, rate 0.36
-- state_formula starterWindow live-only: 0/4 hit, rate 0.0
+- state_formula bridge pass: 46/156 hit, rate 0.295
+- state_formula bridge live-only: 0/63 hit, rate 0.0
+- state_formula bridge full-game over: 13/31 hit, rate 0.419
+- state_formula firstCycle first-five under: 40/109 hit, rate 0.367
+- state_formula firstCycle pass: 27/107 hit, rate 0.252
+- state_formula firstCycle first-five over: 15/23 hit, rate 0.652
+- state_formula firstCycle live-only: 0/11 hit, rate 0.0
+- state_formula late pass: 52/170 hit, rate 0.306
+- state_formula late live-only: 0/63 hit, rate 0.0
+- state_formula late full-game over: 7/17 hit, rate 0.412
+- state_formula starterWindow pass: 24/105 hit, rate 0.229
+- state_formula starterWindow first-five over: 26/60 hit, rate 0.433
+- state_formula starterWindow first-five under: 18/45 hit, rate 0.4
+- state_formula starterWindow live-only: 0/40 hit, rate 0.0
 
 ## Player Identity Rows
 
@@ -73,7 +73,7 @@ Range: 2026-05-23 to 2026-05-31
 
 Date: 2026-05-31
 - pitcher_batter_kernel: 4/6 hit, rate 0.667
-- state_formula: 24/120 hit, rate 0.2
+- state_formula: 18/120 hit, rate 0.15
 - player hits_per_pa: 182/307 hit, rate 0.593
 - player home_run_rate: 260/307 hit, rate 0.847
 - player strikeout_rate: 184/307 hit, rate 0.599
