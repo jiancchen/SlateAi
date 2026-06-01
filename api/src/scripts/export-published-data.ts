@@ -192,6 +192,38 @@ const readMlbModelDescription = (modelId: unknown) => {
   }
 }
 
+const readMlbRegistry = () =>
+  readJsonFile(path.join(repoRoot, 'models', 'mlb', 'registry.json'))
+
+const mlbModelStackStatusLabel = (modelId: string, modelDescription: any) => {
+  const registry = readMlbRegistry()
+  const activeModelId = String(registry?.active?.model || registry?.activeModelId || 'MLB-M0')
+  const status = String(modelDescription?.status || '').trim()
+  if (modelId === activeModelId) {
+    return status === 'active-inspection'
+      ? 'the active-inspection MLB cartridge shell'
+      : 'the active MLB cartridge shell'
+  }
+  if (/draft/i.test(status)) return 'a draft comparison cartridge'
+  if (status) return `a ${status} cartridge`
+  return 'a historical comparison cartridge'
+}
+
+const mlbModelStatusNote = (modelId: string, modelDescription: any) => {
+  const registry = readMlbRegistry()
+  const activeModelId = String(registry?.active?.model || registry?.activeModelId || 'MLB-M0')
+  if (modelId === 'MLB-M2' && modelId === activeModelId) {
+    return 'M2 is active-inspection: game shape is visible, but risky value lanes still require cartridge-owned gates and settlement proof.'
+  }
+  if (modelId === 'MLB-M2') {
+    return 'M2 remains draft-only until promotion gates prove lane lift and value rows are model-owned.'
+  }
+  if (modelId === activeModelId) {
+    return 'Daily closeout now exports/imports the side board before postmortem so side backtests cannot silently stay empty.'
+  }
+  return `${modelId} remains available as a baseline comparison cartridge.`
+}
+
 const readMlbPerformanceIndex = (modelId: unknown) => {
   const safeModelId = String(modelId || '').replace(/[^a-z0-9_-]/gi, '')
   if (!safeModelId) return null
@@ -955,14 +987,12 @@ const summarizeMlbModelsForDay = (date: string) => {
       },
       changelog: [
         `Snapshotted run ${parentRun.runId}.`,
-        `Stack ${stackLabel || `MLB-W1 / MLB-F0 / ${modelId} / MLB-RP36 / MLB-E0`} is ${modelId === 'MLB-M0' ? 'the active MLB cartridge shell' : 'a draft comparison cartridge'} for this slate.`,
+        `Stack ${stackLabel || `MLB-W1 / MLB-F0 / ${modelId} / MLB-RP36 / MLB-E0`} is ${mlbModelStackStatusLabel(modelId, modelDescription)} for this slate.`,
         totalRows
           ? `${date} closeout is training-ready: ${moneylineRows.length} side rows, ${firstInningRows.length} first-inning rows, ${hrRows.length} HR rows, and ${propRows.length} prop rows.`
           : `${date} is pending settlement; result journal rows have not been exported yet.`,
         'MLB-RP36 remains a consumed relief addendum; it is not a peer parent model.',
-        modelId === 'MLB-M2'
-          ? 'M2 remains draft-only until promotion gates prove lane lift and value rows are model-owned.'
-          : 'Daily closeout now exports/imports the side board before postmortem so side backtests cannot silently stay empty.'
+        mlbModelStatusNote(modelId, modelDescription)
       ],
       artifacts: [
         publicArtifact(`${date} ${modelId} run manifest`, 'run-manifest'),

@@ -1,7 +1,7 @@
 export const homeRunBoardMeta = {
   "modelName": "statcast-hr-prototype-v3",
   "date": "2026-06-01",
-  "generatedAt": "2026-06-01T21:41:17.641Z",
+  "generatedAt": "2026-06-01T21:56:00.920Z",
   "sources": [
     "https://baseballsavant.mlb.com/leaderboard/home-runs",
     "https://baseballsavant.mlb.com/leaderboard/home-runs?year=2026&player_type=Batter&cat=xhr&team=&min=0&csv=true",
@@ -1075,7 +1075,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "76°F | 1% precip"
           },
-          "total": 8
+          "total": 8.5
         },
         "weatherBoost": 0,
         "recentHrSinceMay1": 6,
@@ -1234,7 +1234,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "76°F | 1% precip"
           },
-          "total": 8
+          "total": 8.5
         },
         "weatherBoost": 0,
         "recentHrSinceMay1": 4,
@@ -1394,7 +1394,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "76°F | 1% precip"
           },
-          "total": 8
+          "total": 8.5
         },
         "weatherBoost": 0,
         "recentHrSinceMay1": 4,
@@ -1552,7 +1552,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "76°F | 1% precip"
           },
-          "total": 8
+          "total": 8.5
         },
         "weatherBoost": 0,
         "recentHrSinceMay1": 5,
@@ -1714,7 +1714,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "76°F | 1% precip"
           },
-          "total": 8
+          "total": 8.5
         },
         "weatherBoost": 0,
         "recentHrSinceMay1": 6,
@@ -1873,7 +1873,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "76°F | 1% precip"
           },
-          "total": 8
+          "total": 8.5
         },
         "weatherBoost": 0,
         "recentHrSinceMay1": 4,
@@ -2031,7 +2031,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "76°F | 1% precip"
           },
-          "total": 8
+          "total": 8.5
         },
         "weatherBoost": 0,
         "recentHrSinceMay1": 4,
@@ -2189,7 +2189,7 @@ export const homeRunTargetsByGame = {
             "windDirection": "",
             "label": "76°F | 1% precip"
           },
-          "total": 8
+          "total": 8.5
         },
         "weatherBoost": 0,
         "recentHrSinceMay1": 5,
@@ -11652,7 +11652,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 13,
         "seasonXHR": 10.8,
         "xhrDiff": 2.2,
-        "baseScore": 80.03994947049924,
+        "baseScore": 81.57994947049923,
         "lineupContext": {
           "gameTitle": "Dodgers @ Diamondbacks",
           "teamName": "Dodgers",
@@ -11724,12 +11724,12 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 4,
           "seasonHomeRuns": 13,
           "splitHomeRuns": 3,
-          "lineupStatus": "partial",
+          "lineupStatus": "posted",
           "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 46.5,
+        "lineupPriority": 49.3,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -11767,7 +11767,7 @@ export const homeRunTargetsByGame = {
             "Sinker"
           ]
         },
-        "score": 106.8,
+        "score": 108.4,
         "scoreBand": "premium",
         "burstTag": "active",
         "contextLabels": [
@@ -11788,15 +11788,175 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
           "No recent batting-leader signal stored yet",
           "Weather lane: Dome In Domed Stadium",
-          "Slot 2 | carry | lineup priority 46.5 | bullpen vulnerability -0.6",
+          "Slot 2 | carry | lineup priority 49.3 | bullpen vulnerability -0.6",
           "Statcast trend improving | HH 42.9% | Barrel 20.0%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 46.414000799666994,
-        "modelShare": 0.422,
-        "modelSharePct": 42.2,
+        "rawWeight": 47.46731134688927,
+        "modelShare": 0.325,
+        "modelSharePct": 32.5,
         "lane": "anchor"
       },
+      {
+        "playerId": 571970,
+        "playerName": "Max Muncy",
+        "teamAbbrev": "LAD",
+        "teamName": "Dodgers",
+        "gameTitle": "Dodgers @ Diamondbacks",
+        "opposingPitcher": "Eduardo Rodriguez",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0.68,
+        "parkHrIndex": 93,
+        "isHomeToday": false,
+        "opposingBullpenVulnerability": -0.6,
+        "seasonHr": 14,
+        "seasonXHR": 14.7,
+        "xhrDiff": -0.7,
+        "baseScore": 88.81154947049926,
+        "lineupContext": {
+          "gameTitle": "Dodgers @ Diamondbacks",
+          "teamName": "Dodgers",
+          "slot": 7,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "arsenal edge",
+            "statcast fade",
+            "career power"
+          ],
+          "powerScore": 92,
+          "contactScore": 46.5,
+          "formScore": 92,
+          "splitScore": 33.4,
+          "matchupScore": 86.7,
+          "varianceScore": 92,
+          "pitchType": {
+            "fitScore": 91.1,
+            "fitGrade": 4.24,
+            "coveragePct": 100,
+            "summary": "4-Seam Fastball 40% / Changeup 28% / Cutter 14% | fit +4.2",
+            "topPitches": [
+              {
+                "pitchType": "FF",
+                "pitchName": "4-Seam Fastball",
+                "pitchUsage": 40,
+                "fitGrade": 6.04,
+                "batterFitScore": 94,
+                "qualityScore": 60.8
+              },
+              {
+                "pitchType": "CH",
+                "pitchName": "Changeup",
+                "pitchUsage": 28.2,
+                "fitGrade": 3.35,
+                "batterFitScore": 94,
+                "qualityScore": 75.6
+              },
+              {
+                "pitchType": "FC",
+                "pitchName": "Cutter",
+                "pitchUsage": 14.2,
+                "fitGrade": 10,
+                "batterFitScore": 94,
+                "qualityScore": 18
+              }
+            ]
+          },
+          "statcastTrend": {
+            "gamesSample7": 4,
+            "paSample7": 12,
+            "bbeSample7": 21,
+            "rolling7Xwoba": 0.292,
+            "rolling7Xba": 0.223,
+            "rolling7Xslg": 0.538,
+            "rolling7BarrelPct": 4.8,
+            "rolling7HardHitPct": 19,
+            "rolling7SweetSpotPct": 23.8,
+            "xwobaTrend": -0.069,
+            "barrelTrend": -2.7,
+            "hardHitTrend": -2.7,
+            "sweetSpotTrend": -3.6,
+            "trendSignal": "fading"
+          },
+          "recentHomeRuns": 4,
+          "seasonHomeRuns": 14,
+          "splitHomeRuns": 3,
+          "lineupStatus": "posted",
+          "lineupCoverage": 9,
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
+        },
+        "lineupPriority": 40.7,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": {
+            "icon": "partly-cloudy-day",
+            "summary": "Dome In Domed Stadium",
+            "precipitationPct": null,
+            "temperatureF": null,
+            "windMph": null,
+            "windDirection": "",
+            "label": "Dome In Domed Stadium"
+          },
+          "total": 8.5
+        },
+        "weatherBoost": -0.8,
+        "recentHrSinceMay1": 5,
+        "homeRunsLast7Days": 2,
+        "homeRunsLast10Days": 2,
+        "daysSinceLastHr": 1,
+        "noDoubterRate": 0.6,
+        "avgExitVelocityOnHomers": 106.2,
+        "homeRunContext": {
+          "sampleSize": 12,
+          "homeShare": 0.58,
+          "awayShare": 0.42,
+          "starterShare": 0.67,
+          "reliefShare": 0.33,
+          "earlyShare": 0.42,
+          "lateShare": 0.25,
+          "highPressureShare": 0.08,
+          "trailingShare": 0.42,
+          "averageInning": 4.5,
+          "averageGapDays": 6.4,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Cutter"
+          ]
+        },
+        "score": 104,
+        "scoreBand": "premium",
+        "burstTag": "active",
+        "contextLabels": [
+          "Slot 7 | carry",
+          "neutral venue split",
+          "mixed timing",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 7 | carry | neutral bullpen | 0.68 HR/9 starter",
+        "rationale": [
+          "14 HR and 14.7 xHR on the season",
+          "5 HR since May 1 with 2 in the last 7 days and 2 in the last 10",
+          "Eduardo Rodriguez is allowing roughly 0.68 HR/9",
+          "Park HR index 93",
+          "Last HR came 1 day ago",
+          "Road today | historical split 42% on this side",
+          "67% off starters | 33% off relievers | avg inning 4.5",
+          "Most recent damage has skewed toward Four-Seam Fastball / Cutter",
+          "No recent batting-leader signal stored yet",
+          "Weather lane: Dome In Domed Stadium",
+          "Slot 7 | carry | lineup priority 40.7 | bullpen vulnerability -0.6",
+          "Statcast trend fading | HH 19.0% | Barrel 4.8%"
+        ],
+        "avoidHrChase": false,
+        "rawWeight": 44.56566120060458,
+        "modelShare": 0.305,
+        "modelSharePct": 30.5,
+        "lane": "anchor"
+      }
+    ],
+    "possible": [
       {
         "playerId": 660271,
         "playerName": "Shohei Ohtani",
@@ -11812,7 +11972,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 10,
         "seasonXHR": 9.3,
         "xhrDiff": 0.7,
-        "baseScore": 71.09804947049925,
+        "baseScore": 72.63804947049925,
         "lineupContext": {
           "gameTitle": "Dodgers @ Diamondbacks",
           "teamName": "Dodgers",
@@ -11882,12 +12042,12 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 4,
           "seasonHomeRuns": 10,
           "splitHomeRuns": 3,
-          "lineupStatus": "partial",
+          "lineupStatus": "posted",
           "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 43.3,
+        "lineupPriority": 46.1,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -11925,8 +12085,8 @@ export const homeRunTargetsByGame = {
             "Sinker"
           ]
         },
-        "score": 81.3,
-        "scoreBand": "live",
+        "score": 82.8,
+        "scoreBand": "strong",
         "burstTag": "watch",
         "contextLabels": [
           "Slot 1 | carry",
@@ -11946,17 +12106,15 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
           "No recent batting-leader signal stored yet",
           "Weather lane: Dome In Domed Stadium",
-          "Slot 1 | carry | lineup priority 43.3 | bullpen vulnerability -0.6",
+          "Slot 1 | carry | lineup priority 46.1 | bullpen vulnerability -0.6",
           "Statcast trend improving | HH 43.8% | Barrel 6.2%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 29.298213965763455,
-        "modelShare": 0.267,
-        "modelSharePct": 26.7,
-        "lane": "anchor"
-      }
-    ],
-    "possible": [
+        "rawWeight": 30.325456699976584,
+        "modelShare": 0.207,
+        "modelSharePct": 20.7,
+        "lane": "secondary"
+      },
       {
         "playerId": 518692,
         "playerName": "Freddie Freeman",
@@ -11972,7 +12130,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 8,
         "seasonXHR": 8.4,
         "xhrDiff": -0.4,
-        "baseScore": 58.221449470499245,
+        "baseScore": 59.761449470499244,
         "lineupContext": {
           "gameTitle": "Dodgers @ Diamondbacks",
           "teamName": "Dodgers",
@@ -12042,12 +12200,12 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 4,
           "seasonHomeRuns": 8,
           "splitHomeRuns": 2,
-          "lineupStatus": "partial",
+          "lineupStatus": "posted",
           "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 30.2,
+        "lineupPriority": 33,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -12085,7 +12243,7 @@ export const homeRunTargetsByGame = {
             "Curveball"
           ]
         },
-        "score": 71.9,
+        "score": 73.5,
         "scoreBand": "live",
         "burstTag": "active",
         "contextLabels": [
@@ -12106,172 +12264,14 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Four-Seam Fastball / Curveball",
           "No recent batting-leader signal stored yet",
           "Weather lane: Dome In Domed Stadium",
-          "Slot 3 | carry | lineup priority 30.2 | bullpen vulnerability -0.6",
+          "Slot 3 | carry | lineup priority 33 | bullpen vulnerability -0.6",
           "Statcast trend improving | HH 27.3% | Barrel 6.1%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 22.78334535070324,
-        "modelShare": 0.207,
-        "modelSharePct": 20.7,
+        "rawWeight": 23.902631133958735,
+        "modelShare": 0.163,
+        "modelSharePct": 16.3,
         "lane": "secondary"
-      },
-      {
-        "playerId": 605141,
-        "playerName": "Mookie Betts",
-        "teamAbbrev": "LAD",
-        "teamName": "Dodgers",
-        "gameTitle": "Dodgers @ Diamondbacks",
-        "opposingPitcher": "Eduardo Rodriguez",
-        "opposingPitcherHand": "L",
-        "opposingPitcherHr9": 0.68,
-        "parkHrIndex": 93,
-        "isHomeToday": false,
-        "opposingBullpenVulnerability": -0.6,
-        "seasonHr": 6,
-        "seasonXHR": 2.9,
-        "xhrDiff": 3.1,
-        "baseScore": 49.862849470499256,
-        "lineupContext": {
-          "gameTitle": "Dodgers @ Diamondbacks",
-          "teamName": "Dodgers",
-          "slot": 4,
-          "primaryTag": "carry",
-          "tags": [
-            "carry",
-            "heater",
-            "split edge",
-            "statcast fade",
-            "career power"
-          ],
-          "powerScore": 74.2,
-          "contactScore": 56.7,
-          "formScore": 92,
-          "splitScore": 74,
-          "matchupScore": 94,
-          "varianceScore": 90,
-          "pitchType": {
-            "fitScore": 58.8,
-            "fitGrade": 0.02,
-            "coveragePct": 100,
-            "summary": "4-Seam Fastball 40% / Changeup 28% / Cutter 14% | fit +0.0",
-            "topPitches": [
-              {
-                "pitchType": "FF",
-                "pitchName": "4-Seam Fastball",
-                "pitchUsage": 40,
-                "fitGrade": 6.04,
-                "batterFitScore": 94,
-                "qualityScore": 60.8
-              },
-              {
-                "pitchType": "CH",
-                "pitchName": "Changeup",
-                "pitchUsage": 28.2,
-                "fitGrade": -6.49,
-                "batterFitScore": 39.9,
-                "qualityScore": 75.6
-              },
-              {
-                "pitchType": "FC",
-                "pitchName": "Cutter",
-                "pitchUsage": 14.2,
-                "fitGrade": 0.27,
-                "batterFitScore": 19.5,
-                "qualityScore": 18
-              }
-            ]
-          },
-          "statcastTrend": {
-            "gamesSample7": 6,
-            "paSample7": 25,
-            "bbeSample7": 32,
-            "rolling7Xwoba": 0.3,
-            "rolling7Xba": 0.252,
-            "rolling7Xslg": 0.384,
-            "rolling7BarrelPct": 3.1,
-            "rolling7HardHitPct": 25,
-            "rolling7SweetSpotPct": 25,
-            "xwobaTrend": -0.033,
-            "barrelTrend": -2.5,
-            "hardHitTrend": -0.9,
-            "sweetSpotTrend": -6.5,
-            "trendSignal": "fading"
-          },
-          "recentHomeRuns": 4,
-          "seasonHomeRuns": 6,
-          "splitHomeRuns": 2,
-          "lineupStatus": "partial",
-          "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
-        },
-        "lineupPriority": 40.1,
-        "battingImpactContext": null,
-        "weatherContext": {
-          "weather": {
-            "icon": "partly-cloudy-day",
-            "summary": "Dome In Domed Stadium",
-            "precipitationPct": null,
-            "temperatureF": null,
-            "windMph": null,
-            "windDirection": "",
-            "label": "Dome In Domed Stadium"
-          },
-          "total": 8.5
-        },
-        "weatherBoost": -0.8,
-        "recentHrSinceMay1": 4,
-        "homeRunsLast7Days": 2,
-        "homeRunsLast10Days": 2,
-        "daysSinceLastHr": 6,
-        "noDoubterRate": 0.25,
-        "avgExitVelocityOnHomers": 101.8,
-        "homeRunContext": {
-          "sampleSize": 6,
-          "homeShare": 0.67,
-          "awayShare": 0.33,
-          "starterShare": 0.67,
-          "reliefShare": 0.33,
-          "earlyShare": 0.67,
-          "lateShare": 0.17,
-          "highPressureShare": 0,
-          "trailingShare": 0.17,
-          "averageInning": 4,
-          "averageGapDays": 15,
-          "topPitchTypes": [
-            "Four-Seam Fastball",
-            "Changeup"
-          ]
-        },
-        "score": 56.1,
-        "scoreBand": "thin",
-        "burstTag": "watch",
-        "contextLabels": [
-          "Slot 4 | carry",
-          "neutral venue split",
-          "starter ambush",
-          "neutral bullpen"
-        ],
-        "signalSummary": "Slot 4 | carry | starter ambush | 0.68 HR/9 starter",
-        "rationale": [
-          "6 HR and 2.9 xHR on the season",
-          "4 HR since May 1 with 2 in the last 7 days and 2 in the last 10",
-          "Eduardo Rodriguez is allowing roughly 0.68 HR/9",
-          "Park HR index 93",
-          "Last HR came 6 days ago",
-          "Road today | historical split 33% on this side",
-          "67% off starters | 33% off relievers | avg inning 4",
-          "Most recent damage has skewed toward Four-Seam Fastball / Changeup",
-          "No recent batting-leader signal stored yet",
-          "Weather lane: Dome In Domed Stadium",
-          "Slot 4 | carry | lineup priority 40.1 | bullpen vulnerability -0.6",
-          "Statcast trend fading | HH 25.0% | Barrel 3.1%"
-        ],
-        "avoidHrChase": false,
-        "rawWeight": 11.409893313797227,
-        "modelShare": 0.104,
-        "modelSharePct": 10.4,
-        "lane": "live"
       }
     ],
     "alternates": [],
@@ -12291,7 +12291,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 13,
         "seasonXHR": 10.8,
         "xhrDiff": 2.2,
-        "baseScore": 80.03994947049924,
+        "baseScore": 81.57994947049923,
         "lineupContext": {
           "gameTitle": "Dodgers @ Diamondbacks",
           "teamName": "Dodgers",
@@ -12363,12 +12363,12 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 4,
           "seasonHomeRuns": 13,
           "splitHomeRuns": 3,
-          "lineupStatus": "partial",
+          "lineupStatus": "posted",
           "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 46.5,
+        "lineupPriority": 49.3,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -12406,7 +12406,7 @@ export const homeRunTargetsByGame = {
             "Sinker"
           ]
         },
-        "score": 106.8,
+        "score": 108.4,
         "scoreBand": "premium",
         "burstTag": "active",
         "contextLabels": [
@@ -12427,13 +12427,171 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
           "No recent batting-leader signal stored yet",
           "Weather lane: Dome In Domed Stadium",
-          "Slot 2 | carry | lineup priority 46.5 | bullpen vulnerability -0.6",
+          "Slot 2 | carry | lineup priority 49.3 | bullpen vulnerability -0.6",
           "Statcast trend improving | HH 42.9% | Barrel 20.0%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 46.414000799666994,
-        "modelShare": 0.422,
-        "modelSharePct": 42.2,
+        "rawWeight": 47.46731134688927,
+        "modelShare": 0.325,
+        "modelSharePct": 32.5,
+        "lane": "anchor"
+      },
+      {
+        "playerId": 571970,
+        "playerName": "Max Muncy",
+        "teamAbbrev": "LAD",
+        "teamName": "Dodgers",
+        "gameTitle": "Dodgers @ Diamondbacks",
+        "opposingPitcher": "Eduardo Rodriguez",
+        "opposingPitcherHand": "L",
+        "opposingPitcherHr9": 0.68,
+        "parkHrIndex": 93,
+        "isHomeToday": false,
+        "opposingBullpenVulnerability": -0.6,
+        "seasonHr": 14,
+        "seasonXHR": 14.7,
+        "xhrDiff": -0.7,
+        "baseScore": 88.81154947049926,
+        "lineupContext": {
+          "gameTitle": "Dodgers @ Diamondbacks",
+          "teamName": "Dodgers",
+          "slot": 7,
+          "primaryTag": "carry",
+          "tags": [
+            "carry",
+            "heater",
+            "arsenal edge",
+            "statcast fade",
+            "career power"
+          ],
+          "powerScore": 92,
+          "contactScore": 46.5,
+          "formScore": 92,
+          "splitScore": 33.4,
+          "matchupScore": 86.7,
+          "varianceScore": 92,
+          "pitchType": {
+            "fitScore": 91.1,
+            "fitGrade": 4.24,
+            "coveragePct": 100,
+            "summary": "4-Seam Fastball 40% / Changeup 28% / Cutter 14% | fit +4.2",
+            "topPitches": [
+              {
+                "pitchType": "FF",
+                "pitchName": "4-Seam Fastball",
+                "pitchUsage": 40,
+                "fitGrade": 6.04,
+                "batterFitScore": 94,
+                "qualityScore": 60.8
+              },
+              {
+                "pitchType": "CH",
+                "pitchName": "Changeup",
+                "pitchUsage": 28.2,
+                "fitGrade": 3.35,
+                "batterFitScore": 94,
+                "qualityScore": 75.6
+              },
+              {
+                "pitchType": "FC",
+                "pitchName": "Cutter",
+                "pitchUsage": 14.2,
+                "fitGrade": 10,
+                "batterFitScore": 94,
+                "qualityScore": 18
+              }
+            ]
+          },
+          "statcastTrend": {
+            "gamesSample7": 4,
+            "paSample7": 12,
+            "bbeSample7": 21,
+            "rolling7Xwoba": 0.292,
+            "rolling7Xba": 0.223,
+            "rolling7Xslg": 0.538,
+            "rolling7BarrelPct": 4.8,
+            "rolling7HardHitPct": 19,
+            "rolling7SweetSpotPct": 23.8,
+            "xwobaTrend": -0.069,
+            "barrelTrend": -2.7,
+            "hardHitTrend": -2.7,
+            "sweetSpotTrend": -3.6,
+            "trendSignal": "fading"
+          },
+          "recentHomeRuns": 4,
+          "seasonHomeRuns": 14,
+          "splitHomeRuns": 3,
+          "lineupStatus": "posted",
+          "lineupCoverage": 9,
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
+        },
+        "lineupPriority": 40.7,
+        "battingImpactContext": null,
+        "weatherContext": {
+          "weather": {
+            "icon": "partly-cloudy-day",
+            "summary": "Dome In Domed Stadium",
+            "precipitationPct": null,
+            "temperatureF": null,
+            "windMph": null,
+            "windDirection": "",
+            "label": "Dome In Domed Stadium"
+          },
+          "total": 8.5
+        },
+        "weatherBoost": -0.8,
+        "recentHrSinceMay1": 5,
+        "homeRunsLast7Days": 2,
+        "homeRunsLast10Days": 2,
+        "daysSinceLastHr": 1,
+        "noDoubterRate": 0.6,
+        "avgExitVelocityOnHomers": 106.2,
+        "homeRunContext": {
+          "sampleSize": 12,
+          "homeShare": 0.58,
+          "awayShare": 0.42,
+          "starterShare": 0.67,
+          "reliefShare": 0.33,
+          "earlyShare": 0.42,
+          "lateShare": 0.25,
+          "highPressureShare": 0.08,
+          "trailingShare": 0.42,
+          "averageInning": 4.5,
+          "averageGapDays": 6.4,
+          "topPitchTypes": [
+            "Four-Seam Fastball",
+            "Cutter"
+          ]
+        },
+        "score": 104,
+        "scoreBand": "premium",
+        "burstTag": "active",
+        "contextLabels": [
+          "Slot 7 | carry",
+          "neutral venue split",
+          "mixed timing",
+          "neutral bullpen"
+        ],
+        "signalSummary": "Slot 7 | carry | neutral bullpen | 0.68 HR/9 starter",
+        "rationale": [
+          "14 HR and 14.7 xHR on the season",
+          "5 HR since May 1 with 2 in the last 7 days and 2 in the last 10",
+          "Eduardo Rodriguez is allowing roughly 0.68 HR/9",
+          "Park HR index 93",
+          "Last HR came 1 day ago",
+          "Road today | historical split 42% on this side",
+          "67% off starters | 33% off relievers | avg inning 4.5",
+          "Most recent damage has skewed toward Four-Seam Fastball / Cutter",
+          "No recent batting-leader signal stored yet",
+          "Weather lane: Dome In Domed Stadium",
+          "Slot 7 | carry | lineup priority 40.7 | bullpen vulnerability -0.6",
+          "Statcast trend fading | HH 19.0% | Barrel 4.8%"
+        ],
+        "avoidHrChase": false,
+        "rawWeight": 44.56566120060458,
+        "modelShare": 0.305,
+        "modelSharePct": 30.5,
         "lane": "anchor"
       },
       {
@@ -12451,7 +12609,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 10,
         "seasonXHR": 9.3,
         "xhrDiff": 0.7,
-        "baseScore": 71.09804947049925,
+        "baseScore": 72.63804947049925,
         "lineupContext": {
           "gameTitle": "Dodgers @ Diamondbacks",
           "teamName": "Dodgers",
@@ -12521,12 +12679,12 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 4,
           "seasonHomeRuns": 10,
           "splitHomeRuns": 3,
-          "lineupStatus": "partial",
+          "lineupStatus": "posted",
           "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 43.3,
+        "lineupPriority": 46.1,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -12564,8 +12722,8 @@ export const homeRunTargetsByGame = {
             "Sinker"
           ]
         },
-        "score": 81.3,
-        "scoreBand": "live",
+        "score": 82.8,
+        "scoreBand": "strong",
         "burstTag": "watch",
         "contextLabels": [
           "Slot 1 | carry",
@@ -12585,14 +12743,14 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Four-Seam Fastball / Sinker",
           "No recent batting-leader signal stored yet",
           "Weather lane: Dome In Domed Stadium",
-          "Slot 1 | carry | lineup priority 43.3 | bullpen vulnerability -0.6",
+          "Slot 1 | carry | lineup priority 46.1 | bullpen vulnerability -0.6",
           "Statcast trend improving | HH 43.8% | Barrel 6.2%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 29.298213965763455,
-        "modelShare": 0.267,
-        "modelSharePct": 26.7,
-        "lane": "anchor"
+        "rawWeight": 30.325456699976584,
+        "modelShare": 0.207,
+        "modelSharePct": 20.7,
+        "lane": "secondary"
       },
       {
         "playerId": 518692,
@@ -12609,7 +12767,7 @@ export const homeRunTargetsByGame = {
         "seasonHr": 8,
         "seasonXHR": 8.4,
         "xhrDiff": -0.4,
-        "baseScore": 58.221449470499245,
+        "baseScore": 59.761449470499244,
         "lineupContext": {
           "gameTitle": "Dodgers @ Diamondbacks",
           "teamName": "Dodgers",
@@ -12679,12 +12837,12 @@ export const homeRunTargetsByGame = {
           "recentHomeRuns": 4,
           "seasonHomeRuns": 8,
           "splitHomeRuns": 2,
-          "lineupStatus": "partial",
+          "lineupStatus": "posted",
           "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
+          "lineupSource": "official-feed",
+          "lineupStateLabel": "posted order"
         },
-        "lineupPriority": 30.2,
+        "lineupPriority": 33,
         "battingImpactContext": null,
         "weatherContext": {
           "weather": {
@@ -12722,7 +12880,7 @@ export const homeRunTargetsByGame = {
             "Curveball"
           ]
         },
-        "score": 71.9,
+        "score": 73.5,
         "scoreBand": "live",
         "burstTag": "active",
         "contextLabels": [
@@ -12743,175 +12901,17 @@ export const homeRunTargetsByGame = {
           "Most recent damage has skewed toward Four-Seam Fastball / Curveball",
           "No recent batting-leader signal stored yet",
           "Weather lane: Dome In Domed Stadium",
-          "Slot 3 | carry | lineup priority 30.2 | bullpen vulnerability -0.6",
+          "Slot 3 | carry | lineup priority 33 | bullpen vulnerability -0.6",
           "Statcast trend improving | HH 27.3% | Barrel 6.1%"
         ],
         "avoidHrChase": false,
-        "rawWeight": 22.78334535070324,
-        "modelShare": 0.207,
-        "modelSharePct": 20.7,
+        "rawWeight": 23.902631133958735,
+        "modelShare": 0.163,
+        "modelSharePct": 16.3,
         "lane": "secondary"
-      },
-      {
-        "playerId": 605141,
-        "playerName": "Mookie Betts",
-        "teamAbbrev": "LAD",
-        "teamName": "Dodgers",
-        "gameTitle": "Dodgers @ Diamondbacks",
-        "opposingPitcher": "Eduardo Rodriguez",
-        "opposingPitcherHand": "L",
-        "opposingPitcherHr9": 0.68,
-        "parkHrIndex": 93,
-        "isHomeToday": false,
-        "opposingBullpenVulnerability": -0.6,
-        "seasonHr": 6,
-        "seasonXHR": 2.9,
-        "xhrDiff": 3.1,
-        "baseScore": 49.862849470499256,
-        "lineupContext": {
-          "gameTitle": "Dodgers @ Diamondbacks",
-          "teamName": "Dodgers",
-          "slot": 4,
-          "primaryTag": "carry",
-          "tags": [
-            "carry",
-            "heater",
-            "split edge",
-            "statcast fade",
-            "career power"
-          ],
-          "powerScore": 74.2,
-          "contactScore": 56.7,
-          "formScore": 92,
-          "splitScore": 74,
-          "matchupScore": 94,
-          "varianceScore": 90,
-          "pitchType": {
-            "fitScore": 58.8,
-            "fitGrade": 0.02,
-            "coveragePct": 100,
-            "summary": "4-Seam Fastball 40% / Changeup 28% / Cutter 14% | fit +0.0",
-            "topPitches": [
-              {
-                "pitchType": "FF",
-                "pitchName": "4-Seam Fastball",
-                "pitchUsage": 40,
-                "fitGrade": 6.04,
-                "batterFitScore": 94,
-                "qualityScore": 60.8
-              },
-              {
-                "pitchType": "CH",
-                "pitchName": "Changeup",
-                "pitchUsage": 28.2,
-                "fitGrade": -6.49,
-                "batterFitScore": 39.9,
-                "qualityScore": 75.6
-              },
-              {
-                "pitchType": "FC",
-                "pitchName": "Cutter",
-                "pitchUsage": 14.2,
-                "fitGrade": 0.27,
-                "batterFitScore": 19.5,
-                "qualityScore": 18
-              }
-            ]
-          },
-          "statcastTrend": {
-            "gamesSample7": 6,
-            "paSample7": 25,
-            "bbeSample7": 32,
-            "rolling7Xwoba": 0.3,
-            "rolling7Xba": 0.252,
-            "rolling7Xslg": 0.384,
-            "rolling7BarrelPct": 3.1,
-            "rolling7HardHitPct": 25,
-            "rolling7SweetSpotPct": 25,
-            "xwobaTrend": -0.033,
-            "barrelTrend": -2.5,
-            "hardHitTrend": -0.9,
-            "sweetSpotTrend": -6.5,
-            "trendSignal": "fading"
-          },
-          "recentHomeRuns": 4,
-          "seasonHomeRuns": 6,
-          "splitHomeRuns": 2,
-          "lineupStatus": "partial",
-          "lineupCoverage": 9,
-          "lineupSource": "rotowire-supplement",
-          "lineupStateLabel": "projected order"
-        },
-        "lineupPriority": 40.1,
-        "battingImpactContext": null,
-        "weatherContext": {
-          "weather": {
-            "icon": "partly-cloudy-day",
-            "summary": "Dome In Domed Stadium",
-            "precipitationPct": null,
-            "temperatureF": null,
-            "windMph": null,
-            "windDirection": "",
-            "label": "Dome In Domed Stadium"
-          },
-          "total": 8.5
-        },
-        "weatherBoost": -0.8,
-        "recentHrSinceMay1": 4,
-        "homeRunsLast7Days": 2,
-        "homeRunsLast10Days": 2,
-        "daysSinceLastHr": 6,
-        "noDoubterRate": 0.25,
-        "avgExitVelocityOnHomers": 101.8,
-        "homeRunContext": {
-          "sampleSize": 6,
-          "homeShare": 0.67,
-          "awayShare": 0.33,
-          "starterShare": 0.67,
-          "reliefShare": 0.33,
-          "earlyShare": 0.67,
-          "lateShare": 0.17,
-          "highPressureShare": 0,
-          "trailingShare": 0.17,
-          "averageInning": 4,
-          "averageGapDays": 15,
-          "topPitchTypes": [
-            "Four-Seam Fastball",
-            "Changeup"
-          ]
-        },
-        "score": 56.1,
-        "scoreBand": "thin",
-        "burstTag": "watch",
-        "contextLabels": [
-          "Slot 4 | carry",
-          "neutral venue split",
-          "starter ambush",
-          "neutral bullpen"
-        ],
-        "signalSummary": "Slot 4 | carry | starter ambush | 0.68 HR/9 starter",
-        "rationale": [
-          "6 HR and 2.9 xHR on the season",
-          "4 HR since May 1 with 2 in the last 7 days and 2 in the last 10",
-          "Eduardo Rodriguez is allowing roughly 0.68 HR/9",
-          "Park HR index 93",
-          "Last HR came 6 days ago",
-          "Road today | historical split 33% on this side",
-          "67% off starters | 33% off relievers | avg inning 4",
-          "Most recent damage has skewed toward Four-Seam Fastball / Changeup",
-          "No recent batting-leader signal stored yet",
-          "Weather lane: Dome In Domed Stadium",
-          "Slot 4 | carry | lineup priority 40.1 | bullpen vulnerability -0.6",
-          "Statcast trend fading | HH 25.0% | Barrel 3.1%"
-        ],
-        "avoidHrChase": false,
-        "rawWeight": 11.409893313797227,
-        "modelShare": 0.104,
-        "modelSharePct": 10.4,
-        "lane": "live"
       }
     ],
-    "summary": "Andy Pages is the premium lane here because the projected order still grades like a carry bat, his recent HR sample leans mixed timing, and today lines up as a neutral venue split matchup into a 0.68 HR/9 starter lane. The better way to read this game is as a weighted cluster through Andy Pages, Shohei Ohtani, Freddie Freeman, Mookie Betts rather than a solo-bat script."
+    "summary": "Andy Pages is the premium lane here because the posted order still grades like a carry bat, his recent HR sample leans mixed timing, and today lines up as a neutral venue split matchup into a 0.68 HR/9 starter lane. The better way to read this game is as a weighted cluster through Andy Pages, Max Muncy, Shohei Ohtani, Freddie Freeman rather than a solo-bat script."
   },
   "Mets @ Mariners": {
     "gameTitle": "Mets @ Mariners",

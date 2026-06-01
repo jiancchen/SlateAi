@@ -19,3 +19,21 @@ Current allowed status:
 - State formulas: research-only.
 - Player identity: research-only.
 - Value rows: model-owned rows only.
+
+## 2026-06-01 operator override
+
+Decision: promote MLB-M2 to active-inspection for the June 1 public slate.
+
+Reason:
+
+- The operator wants the live site to show the M2 game-shape/reality-gap surface now, even though the lane proof is not complete.
+- MLB-M0 remains the baseline comparison target.
+- This is not a lane promotion. Risky value-board rows still require cartridge-owned gates and settlement proof.
+
+Current allowed status:
+
+- Active public cartridge: MLB-M2.
+- Baseline comparison cartridge: MLB-M0.
+- Game shape/reality gap: visible.
+- F5/totals value: visible only when emitted by the cartridge with gates.
+- RF/state/player identity layers: diagnostics unless a later promotion record graduates them.

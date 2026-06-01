@@ -1,11 +1,11 @@
 {
   "schemaVersion": "sport-model-registry-v1",
   "sport": "mlb",
-  "activeModelId": "MLB-M0",
+  "activeModelId": "MLB-M2",
   "active": {
     "warehouse": "MLB-W1",
     "features": "MLB-F0",
-    "model": "MLB-M0",
+    "model": "MLB-M2",
     "reliefAddendum": "MLB-RP36",
     "evaluator": "MLB-E0"
   },
@@ -40,7 +40,8 @@
       "role": "relief_addendum",
       "originExperiment": "E36 shadow",
       "consumedBy": [
-        "MLB-M0"
+        "MLB-M0",
+        "MLB-M2"
       ],
       "targetPath": "./cartridges/MLB-RP36",
       "status": "shell_created",
@@ -75,7 +76,7 @@
       "modelId": "MLB-M2",
       "role": "parent_model",
       "targetPath": "./cartridges/MLB-M2",
-      "status": "draft",
+      "status": "active-inspection",
       "components": [
         "MLB-RP36"
       ],
@@ -87,7 +88,7 @@
         "props",
         "home_runs"
       ],
-      "notes": "Draft game-shape/reality-gap branch scaffolded from MLB-M0. Adds phase-map, chaos, dead-early, and RF totals-lens diagnostics; must pass M0-vs-M2 comparison before activation.",
+      "notes": "Promoted by operator request on 2026-06-01 so the live slate can inspect game-shape/reality-gap output. Risky sublanes remain diagnostic unless cartridge-owned value gates approve them.",
       "basedOn": "MLB-M0"
     }
   ]

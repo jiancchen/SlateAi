@@ -3,11 +3,11 @@
   "modelId": "MLB-M2",
   "sport": "mlb",
   "name": "MLB-M2 game-shape reality-gap branch",
-  "status": "draft",
+  "status": "active-inspection",
   "basedOn": "MLB-M0",
-  "summary": "Draft MLB parent cartridge branched from the current MLB-M0 behavior. M2 keeps the M0 app and publish contracts, then adds a game-shape/reality-gap layer that asks whether the side, total, first-five, and first-inning reads match the way the game is likely to unfold.",
+  "summary": "Active-inspection MLB parent cartridge promoted from MLB-M0 on 2026-06-01. M2 keeps the M0 app and publish contracts, then adds a game-shape/reality-gap layer that asks whether the side, total, first-five, and first-inning reads match the way the game is likely to unfold.",
   "keyImprovements": [
-    "Branches a full parent cartridge from MLB-M0 without activating it, so M2 can be benchmarked against M0 before public use.",
+    "Promotes a full parent cartridge from MLB-M0 for live slate inspection while preserving M0 as the baseline comparison target.",
     "Adds `analysis.gameShape`, a structured read of phase agreement, crooked-inning chaos, dead-early shape, bullpen-flip risk, and projection-vs-reality gap.",
     "Adds an RF research lens that treats RandomForest results as a nonlinear reality check, with totals as the only currently deployable RF lane from the research docs.",
     "Keeps ML/F5 RF influence downgraded until bucketed backtests show it beats the current M0 logic.",
@@ -22,8 +22,8 @@
     },
     {
       "label": "Active model",
-      "value": "MLB-M0",
-      "details": "M2 is not active. The registry still points daily/public runs at M0 until M2 passes comparison checks."
+      "value": "MLB-M2",
+      "details": "M2 is the active inspection model for daily/public runs as of 2026-06-01; M0 remains the baseline to beat."
     },
     {
       "label": "RF lane trust",
@@ -62,7 +62,7 @@
     }
   ],
   "notes": [
-    "M2 is not a promise that RF is better. It is the branch where RF impact can finally be measured instead of hand-waved.",
+    "M2 is now active for inspection, not a promise that RF is better. It is the branch where RF impact can finally be measured instead of hand-waved.",
     "The core question is whether the model can describe game flow before choosing a bet: early scoring, first-five control, bridge innings, total chaos, and conversion failure.",
     "A high reality-gap score should downgrade blind full-game ML confidence even when the raw side model has a strong lean.",
     "The transparent category layer beat the tested walk-forward RF, gradient, and logistic lane choosers overall; the ML experiments only helped narrow F5/high-total sublanes.",
@@ -72,7 +72,7 @@
   ],
   "knownLimitations": [
     "The RF lens currently uses documented research baselines, not a newly serialized production RF artifact.",
-    "M2 has not been activated and should not publish public picks until M0-vs-M2 comparison artifacts exist.",
+    "M2 was promoted by operator request for live inspection before it fully beat the baseline; risky lanes must remain visibly gated.",
     "The first game-shape formula is intentionally transparent and testable; it still needs day-by-day settlement to prove lift."
   ],
   "files": {

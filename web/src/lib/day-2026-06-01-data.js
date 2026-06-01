@@ -234,13 +234,13 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -150 / -1.5 +133",
-    "total": "o8 -114 / u8 -105",
+    "spread": "+1.5 -140 / -1.5 +135",
+    "total": "o8 -110 / u8 -105",
     "moneyline": "Tigers +135 / Rays -155",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/tigers-vs-rays",
     "metadata": {
-      "modelCartridge": "MLB-M0",
+      "modelCartridge": "MLB-M2",
       "reliefAddendum": "MLB-RP36",
       "slateDate": "2026-06-01",
       "quietStartFullGameGate": true
@@ -2470,6 +2470,25 @@ export const rawGames = [
       "matchupInningHistory": {
         "away": [],
         "home": []
+      },
+      "sunVisibility": {
+        "venueName": "Tropicana Field",
+        "roofType": "Dome",
+        "fieldAzimuthDeg": 359,
+        "sunAzimuthFirstPitch": 284.9,
+        "sunElevationFirstPitch": 20.2,
+        "sunAzimuthMidgame": 297.79,
+        "sunElevationMidgame": -4.51,
+        "outfieldSunAngleDeg": 0,
+        "outfieldGlareRisk": 0,
+        "shadowTransitionRisk": 0,
+        "visibilityRiskScore": 0,
+        "riskLabel": "none",
+        "notes": [
+          "roof=Dome",
+          "sun geometry is not a major visibility flag",
+          "cloud cover is not yet joined, so weather can still dampen this risk"
+        ]
       }
     },
     "tierThreeContext": {
@@ -2938,7 +2957,7 @@ export const rawGames = [
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/marlins-vs-nationals",
     "metadata": {
-      "modelCartridge": "MLB-M0",
+      "modelCartridge": "MLB-M2",
       "reliefAddendum": "MLB-RP36",
       "slateDate": "2026-06-01",
       "quietStartFullGameGate": true
@@ -5691,6 +5710,25 @@ export const rawGames = [
             ]
           }
         ]
+      },
+      "sunVisibility": {
+        "venueName": "Nationals Park",
+        "roofType": "Open",
+        "fieldAzimuthDeg": 28,
+        "sunAzimuthFirstPitch": 284.54,
+        "sunElevationFirstPitch": 17.43,
+        "sunAzimuthMidgame": 302.52,
+        "sunElevationMidgame": -3.93,
+        "outfieldSunAngleDeg": 76.54,
+        "outfieldGlareRisk": 0,
+        "shadowTransitionRisk": 0,
+        "visibilityRiskScore": 0,
+        "riskLabel": "none",
+        "notes": [
+          "roof=Open",
+          "sun geometry is not a major visibility flag",
+          "cloud cover is not yet joined, so weather can still dampen this risk"
+        ]
       }
     },
     "tierThreeContext": {
@@ -5870,7 +5908,7 @@ export const rawGames = [
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/royals-vs-reds",
     "metadata": {
-      "modelCartridge": "MLB-M0",
+      "modelCartridge": "MLB-M2",
       "reliefAddendum": "MLB-RP36",
       "slateDate": "2026-06-01",
       "quietStartFullGameGate": true
@@ -8097,6 +8135,25 @@ export const rawGames = [
       "matchupInningHistory": {
         "away": [],
         "home": []
+      },
+      "sunVisibility": {
+        "venueName": "Great American Ball Park",
+        "roofType": "Open",
+        "fieldAzimuthDeg": 122,
+        "sunAzimuthFirstPitch": 283.76,
+        "sunElevationFirstPitch": 18.43,
+        "sunAzimuthMidgame": 301.72,
+        "sunElevationMidgame": -2.98,
+        "outfieldSunAngleDeg": 18.24,
+        "outfieldGlareRisk": 66.84,
+        "shadowTransitionRisk": 0,
+        "visibilityRiskScore": 48.12,
+        "riskLabel": "medium",
+        "notes": [
+          "roof=Open",
+          "sun aligns with outfielder look/sky-tracking path near first pitch",
+          "cloud cover is not yet joined, so weather can still dampen this risk"
+        ]
       }
     },
     "tierThreeContext": {
@@ -8412,7 +8469,7 @@ export const rawGames = [
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/giants-vs-brewers",
     "metadata": {
-      "modelCartridge": "MLB-M0",
+      "modelCartridge": "MLB-M2",
       "reliefAddendum": "MLB-RP36",
       "slateDate": "2026-06-01",
       "quietStartFullGameGate": true
@@ -10662,6 +10719,25 @@ export const rawGames = [
       "matchupInningHistory": {
         "away": [],
         "home": []
+      },
+      "sunVisibility": {
+        "venueName": "American Family Field",
+        "roofType": "Retractable",
+        "fieldAzimuthDeg": 129,
+        "sunAzimuthFirstPitch": 284.98,
+        "sunElevationFirstPitch": 16.45,
+        "sunAzimuthMidgame": 304.65,
+        "sunElevationMidgame": -3.38,
+        "outfieldSunAngleDeg": 24.02,
+        "outfieldGlareRisk": 56.32,
+        "shadowTransitionRisk": 0,
+        "visibilityRiskScore": 40.55,
+        "riskLabel": "low",
+        "notes": [
+          "roof=Retractable",
+          "sun aligns with outfielder look/sky-tracking path near first pitch",
+          "cloud cover is not yet joined, so weather can still dampen this risk"
+        ]
       }
     },
     "tierThreeContext": {
@@ -11021,7 +11097,7 @@ export const rawGames = [
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/white-sox-vs-twins",
     "metadata": {
-      "modelCartridge": "MLB-M0",
+      "modelCartridge": "MLB-M2",
       "reliefAddendum": "MLB-RP36",
       "slateDate": "2026-06-01",
       "quietStartFullGameGate": true
@@ -13979,6 +14055,25 @@ export const rawGames = [
             ]
           }
         ]
+      },
+      "sunVisibility": {
+        "venueName": "Target Field",
+        "roofType": "Open",
+        "fieldAzimuthDeg": 129,
+        "sunAzimuthFirstPitch": 280.94,
+        "sunElevationFirstPitch": 20.61,
+        "sunAzimuthMidgame": 300.95,
+        "sunElevationMidgame": 0.88,
+        "outfieldSunAngleDeg": 28.06,
+        "outfieldGlareRisk": 48.98,
+        "shadowTransitionRisk": 0,
+        "visibilityRiskScore": 35.27,
+        "riskLabel": "low",
+        "notes": [
+          "roof=Open",
+          "sun aligns with outfielder look/sky-tracking path near first pitch",
+          "cloud cover is not yet joined, so weather can still dampen this risk"
+        ]
       }
     },
     "tierThreeContext": {
@@ -14398,7 +14493,7 @@ export const rawGames = [
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rangers-vs-cardinals",
     "metadata": {
-      "modelCartridge": "MLB-M0",
+      "modelCartridge": "MLB-M2",
       "reliefAddendum": "MLB-RP36",
       "slateDate": "2026-06-01",
       "quietStartFullGameGate": true
@@ -16652,6 +16747,25 @@ export const rawGames = [
       "matchupInningHistory": {
         "away": [],
         "home": []
+      },
+      "sunVisibility": {
+        "venueName": "Busch Stadium",
+        "roofType": "Open",
+        "fieldAzimuthDeg": 62,
+        "sunAzimuthFirstPitch": 285.64,
+        "sunElevationFirstPitch": 16,
+        "sunAzimuthMidgame": 303.7,
+        "sunElevationMidgame": -5.25,
+        "outfieldSunAngleDeg": 43.64,
+        "outfieldGlareRisk": 20.66,
+        "shadowTransitionRisk": 0,
+        "visibilityRiskScore": 14.88,
+        "riskLabel": "none",
+        "notes": [
+          "roof=Open",
+          "sun geometry is not a major visibility flag",
+          "cloud cover is not yet joined, so weather can still dampen this risk"
+        ]
       }
     },
     "tierThreeContext": {
@@ -17071,7 +17185,7 @@ export const rawGames = [
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rockies-vs-angels",
     "metadata": {
-      "modelCartridge": "MLB-M0",
+      "modelCartridge": "MLB-M2",
       "reliefAddendum": "MLB-RP36",
       "slateDate": "2026-06-01",
       "quietStartFullGameGate": true
@@ -19321,6 +19435,25 @@ export const rawGames = [
       "matchupInningHistory": {
         "away": [],
         "home": []
+      },
+      "sunVisibility": {
+        "venueName": "Angel Stadium",
+        "roofType": "Open",
+        "fieldAzimuthDeg": 43.61,
+        "sunAzimuthFirstPitch": 287.18,
+        "sunElevationFirstPitch": 14.2,
+        "sunAzimuthMidgame": 303.59,
+        "sunElevationMidgame": -8.3,
+        "outfieldSunAngleDeg": 63.57,
+        "outfieldGlareRisk": 0,
+        "shadowTransitionRisk": 0,
+        "visibilityRiskScore": 0,
+        "riskLabel": "none",
+        "notes": [
+          "roof=Open",
+          "sun geometry is not a major visibility flag",
+          "cloud cover is not yet joined, so weather can still dampen this risk"
+        ]
       }
     },
     "tierThreeContext": {
@@ -19789,7 +19922,7 @@ export const rawGames = [
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/dodgers-vs-diamondbacks",
     "metadata": {
-      "modelCartridge": "MLB-M0",
+      "modelCartridge": "MLB-M2",
       "reliefAddendum": "MLB-RP36",
       "slateDate": "2026-06-01",
       "quietStartFullGameGate": true
@@ -22538,6 +22671,25 @@ export const rawGames = [
             ]
           }
         ]
+      },
+      "sunVisibility": {
+        "venueName": "Chase Field",
+        "roofType": "Retractable",
+        "fieldAzimuthDeg": 0,
+        "sunAzimuthFirstPitch": 290.4,
+        "sunElevationFirstPitch": 9.11,
+        "sunAzimuthMidgame": 307.6,
+        "sunElevationMidgame": -12.78,
+        "outfieldSunAngleDeg": 110.4,
+        "outfieldGlareRisk": 0,
+        "shadowTransitionRisk": 0,
+        "visibilityRiskScore": 0,
+        "riskLabel": "none",
+        "notes": [
+          "roof=Retractable",
+          "sun geometry is not a major visibility flag",
+          "cloud cover is not yet joined, so weather can still dampen this risk"
+        ]
       }
     },
     "tierThreeContext": {
@@ -22821,7 +22973,7 @@ export const rawGames = [
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/mets-vs-mariners",
     "metadata": {
-      "modelCartridge": "MLB-M0",
+      "modelCartridge": "MLB-M2",
       "reliefAddendum": "MLB-RP36",
       "slateDate": "2026-06-01",
       "quietStartFullGameGate": true
@@ -25052,6 +25204,25 @@ export const rawGames = [
       "matchupInningHistory": {
         "away": [],
         "home": []
+      },
+      "sunVisibility": {
+        "venueName": "T-Mobile Park",
+        "roofType": "Retractable",
+        "fieldAzimuthDeg": 49,
+        "sunAzimuthFirstPitch": 280.62,
+        "sunElevationFirstPitch": 20.45,
+        "sunAzimuthMidgame": 301.57,
+        "sunElevationMidgame": 1.68,
+        "outfieldSunAngleDeg": 51.62,
+        "outfieldGlareRisk": 6.15,
+        "shadowTransitionRisk": 0,
+        "visibilityRiskScore": 4.43,
+        "riskLabel": "none",
+        "notes": [
+          "roof=Retractable",
+          "sun geometry is not a major visibility flag",
+          "cloud cover is not yet joined, so weather can still dampen this risk"
+        ]
       }
     },
     "tierThreeContext": {

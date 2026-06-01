@@ -4,9 +4,9 @@ Date: 2026-06-01
 
 ## Current Decision
 
-Keep MLB-M0 active. MLB-M2 remains a draft comparison cartridge.
+Operator override: MLB-M2 is active-inspection for the June 1 public slate. MLB-M0 remains the baseline comparison cartridge.
 
-M2 has useful diagnostics, but the current candidate stack does not beat the locked baseline cleanly enough to promote any lane.
+M2 has useful diagnostics, but the current candidate stack does not beat the locked baseline cleanly enough to promote any risky lane as bet-grade. This promotion is for visibility and live inspection, not a claim that the M2 value lanes are solved.
 
 ## Baseline To Beat
 

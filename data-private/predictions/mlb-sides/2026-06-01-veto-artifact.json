@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-01T21:41:12.125Z",
+  "generatedAt": "2026-06-01T21:55:55.380Z",
   "predictionDate": "2026-06-01",
   "picks": [
     {
@@ -214,8 +214,8 @@
       "gameTitle": "Dodgers @ Diamondbacks",
       "predictedTeam": "Dodgers",
       "predictedSide": "away",
-      "confidence": 59,
-      "modelEdge": 4.2,
+      "confidence": 58,
+      "modelEdge": 3.4,
       "marketProbability": 0.5962732919254659,
       "marketProbabilityLabel": "59.6%",
       "pickIsMarketFavorite": true,

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "runId": "mlb-2026-06-01-MLB-W1-MLB-F0-MLB-M2-MLB-RP36-MLB-E0",
+  "sport": "mlb",
+  "slateDate": "2026-06-01",
+  "modelId": "MLB-M2",
+  "reliefAddendum": "MLB-RP36",
+  "evaluatorVersion": "MLB-E0",
+  "warehouseVersion": "MLB-W1",
+  "featureVersion": "MLB-F0",
+  "mode": "pregame",
+  "status": "snapshotted",
+  "snapshottedAt": "2026-06-01T21:56:18.666Z",
+  "git": {
+    "commit": "2f71da5878890d5012c82577ae400527bd1a5199",
+    "dirty": true
+  },
+  "sourceHash": null,
+  "inputHash": null,
+  "outputHash": null,
+  "snapshotHash": "04e88cb06112f552454d2e54722c61ba671e658f882a0c1955e4b9f19325a6ea",
+  "artifactSummary": {
+    "publicSummaryGames": 9,
+    "gameFiles": 9,
+    "sidePicks": 9,
+    "propPicks": 18,
+    "homeRunPicks": 12,
+    "relieverTeams": 18,
+    "lineupGames": 9
+  },
+  "sourceFiles": 104,
+  "inputs": 15,
+  "outputs": 2,
+  "artifacts": [
+    {
+      "path": "data-private/model-runs/mlb/MLB-M2/2026-06-01/snapshot.json",
+      "role": "prediction-snapshot"
+    },
+    {
+      "path": "data-private/model-runs/mlb/MLB-M2/2026-06-01/run.json",
+      "role": "run-manifest"
+    }
+  ]
+}

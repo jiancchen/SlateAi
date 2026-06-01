@@ -1,6 +1,6 @@
 # MLB-M2 Game-Shape Reality-Gap Branch
 
-MLB-M2 is a draft parent cartridge branched from MLB-M0. It is not active yet.
+MLB-M2 is an active-inspection parent cartridge branched from MLB-M0. It was promoted by operator request on 2026-06-01 so the live slate can expose the game-shape/reality-gap layer while M0 remains the baseline to beat.
 
 The purpose is bigger than another confidence tweak: M2 must explain the likely shape of the game before it recommends a market. The model should identify when the data says one team is better but the actual baseball path is fragile: dead-early offense, one crooked inning, bullpen bridge failure, phase disagreement, weather carry, or traffic without conversion.
 
@@ -96,14 +96,15 @@ So M2 does not let RF pick games by itself. It uses RF as a nonlinear totals/gam
 
 ## Activation Rule
 
-M2 stays draft until it passes comparison against M0.
+M2 is active for inspection, but not fully proven as a betting upgrade.
 
-Minimum proof before activation:
+Minimum proof before full promotion:
 
 - M2 can render the same app-facing match model contract as M0.
 - M2 can run on the May 31 MLB slate without breaking existing outputs.
 - M2-vs-M0 comparison shows where game-shape changes decisions.
 - Postmortem settlement proves high reality-gap labels correlate with bad full-game ML, better F5/total/first-inning expressions, or clean passes.
+- Value rows remain model-owned and gated; the UI may filter, but must not transform raw projections into value picks.
 
 ## Known Gaps
 

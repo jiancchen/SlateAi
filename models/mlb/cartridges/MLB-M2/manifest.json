@@ -2,7 +2,7 @@
   "id": "MLB-M2",
   "sport": "mlb",
   "name": "MLB-M2 game-shape reality-gap branch",
-  "status": "draft",
+  "status": "active-inspection",
   "role": "parent_model",
   "createdForMigration": "2026-05-31",
   "entrypoint": "models/mlb/cartridges/MLB-M2/runner.mjs",

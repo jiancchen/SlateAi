@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "modelId": "MLB-M2",
   "sport": "mlb",
-  "description": "Draft performance index for MLB-M2. M2 is branched from MLB-M0 and must be compared against M0 before activation.",
+  "description": "Active-inspection performance index for MLB-M2. M2 is branched from MLB-M0, promoted on 2026-06-01 for live slate inspection, and still measured against M0 as the baseline.",
   "basedOn": "MLB-M0",
-  "status": "draft",
+  "status": "active-inspection",
   "currentBaselineDate": "2026-05-31",
   "currentBenchmark": {
     "benchmarkId": "mlb-m2-current-baseline-2026-06-01",
@@ -52,7 +52,7 @@
         "deadZoneTimingF5HitRate": 0.706,
         "deadZoneRows": 17
       },
-      "interpretation": "M2 shows useful lane separation but is not active. The transparent category layer beat walk-forward RF/gradient/logistic lane choosers overall; RF/gradient only looked interesting on F5 and high-total sublanes."
+      "interpretation": "M2 shows useful lane separation and is now active for inspection. The transparent category layer beat walk-forward RF/gradient/logistic lane choosers overall; RF/gradient only looked interesting on F5 and high-total sublanes."
     }
   ],
   "comparisonTargets": [

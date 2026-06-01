@@ -2,8 +2,10 @@
   "schemaVersion": 1,
   "modelId": "MLB-M2",
   "generatedAt": "2026-06-01",
-  "decision": "keep-MLB-M0-active",
-  "m2Status": "draft-comparison",
+  "decision": "operator-override-active-inspection",
+  "m2Status": "active-inspection",
+  "baselineModelId": "MLB-M0",
+  "promotionNote": "MLB-M2 is active for June 1 public slate inspection. No risky lane is promoted as bet-grade without cartridge-owned value gates and settlement proof.",
   "baselineToBeat": {
     "baselineFullGameSide": {
       "hitRate": 0.59,
