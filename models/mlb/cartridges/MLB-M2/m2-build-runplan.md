@@ -532,19 +532,30 @@ Implementation:
 - `web/src/views/ModelsView.tsx` lists MLB-M0, MLB-M1, and MLB-M2 as separate parent cartridges when runs exist.
 - `models/mlb/cartridges/MLB-M2/checks/check_value_row_gates.mjs` blocks UI-generated F5 value rows and verifies the model-owned value gate note.
 
-## Immediate Work Block
+## Completed Infrastructure Block
 
-Start here:
+Completed in this build:
 
-1. Add formal output schemas for `stateFormula`, `playerIdentity`, and `pitcherBatterKernel`.
-2. Add warehouse schema for `mlb_state_formula_training_rows`.
-3. Materialize first warehouse-backed formula rows from existing data.
-4. Backtest formula rows on May 23-May 30.
-5. Score May 31 as holdout.
+1. Added formal output schemas for `stateFormula`, `playerIdentity`, and `pitcherBatterKernel`.
+2. Added warehouse schema and derive commands for M2 state formulas, player identity, and pitcher-batter kernel rows.
+3. Materialized warehouse-backed formula rows from existing pitch/game/player data.
+4. Backtested formula rows, identity rows, and kernel rows on May 23-May 31.
+5. Scored May 31 as the holdout and recorded the no-promotion decision.
+6. Added a benchmark-suite runner plus value-row and warehouse-coverage gates.
+
+## Next Candidate Work Block
+
+Start the next M2 candidate here:
+
+1. Calibrate kernel-fed state formulas by line bucket, price bucket, park, and run environment.
+2. Add actual-value ROI settlement for any lane that wants to leave research-only.
+3. Train against prior dates only, then score May 31 without selecting rules on May 31 outcomes.
+4. Promote only a single lane at a time through `promotion/LANE_PROMOTION_TEMPLATE.md`.
+5. Keep MLB-M0 active until a lane beats the locked benchmark and passes the warehouse/value gates.
 
 ## Definition Of Done For This Build
 
-M2 is not done when the site has more cards. M2 is done when:
+The MLB-M2 infrastructure build is complete, but MLB-M2 is not promoted as a betting model yet. M2 becomes promotion-ready only when:
 
 - model-owned rows drive the site
 - formulas explain game mechanisms
