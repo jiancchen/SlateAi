@@ -64,3 +64,56 @@ Next proof required:
 - Store M2 game-shape labels in run artifacts.
 - Compare M0 vs M2 on May 31 and the next completed MLB slate.
 - Backtest whether high `realityGapScore` predicts ML misses, total chaos, or better first-five/first-inning expressions.
+
+## 2026-06-01 - Game-Shape Categories + Backtest Harness
+
+Replaced the first vague M2 shape read with a concrete category contract.
+
+Implemented:
+
+- `analysis.gameShape.category`
+- `analysis.gameShape.laneMap`
+- `analysis.gameShape.inningMap`
+- compact indicator fields for `category`, `bestExpression`, and `categoryConfidence`
+- `models/mlb/cartridges/MLB-M2/research/game_shape_backtest.py`
+- `models/mlb/cartridges/MLB-M2/reports/game-shape-backtest-2026-05-10-to-2026-05-31.md`
+
+Current category set:
+
+- Clean phase stack
+- Early-pressure side
+- Starter-to-bullpen flip
+- Late-rescue side
+- Dead-zone side
+- Favorite conversion trap
+- Crooked-inning game
+- Starter-duel under
+- Underdog pressure lane
+- Weather-carry chaos
+- Balanced traffic game
+
+Backtest result on canonical settled rows from 2026-05-10 through 2026-05-31:
+
+- Baseline full-game side: 59.0% on 212 rows.
+- Baseline first-five side: 52.8% on 212 rows.
+- M2 allowed-side bucket: 67.5% on 40 rows.
+- M2 category lane hit: 62.6% on 195 graded lane rows.
+- Starter-to-bullpen flip F5 lane: 68.6% on 35 rows.
+- Dead-zone timing/F5 lane: 70.6% on 17 rows.
+
+Crazy-idea walk-forward models were also tested:
+
+- RF lane chooser: 53.4% on action rows; F5 sublane 62.5%.
+- Gradient lane chooser: 53.9% on action rows; F5 sublane 65.0%, high-total sublane 60.6%.
+- Logistic lane chooser: failed the test at 47.4% and should not be promoted.
+
+Rule sweeps surfaced concrete sublanes worth future testing:
+
+- `starter_control_score >= 55` hit 77.8% on full-game side rows.
+- `phase_split_score >= 55` hit 66.7% on F5 side rows.
+- `chaos_score >= 70` produced high-total shape 62.8% and a much higher YRFI rate than baseline.
+- `pick_lineup_conversion <= 25` improved model F5 total rows.
+
+Current interpretation:
+
+M2 has a useful lane-separation signal, especially for deciding when a side should become F5/timing or total shape. It is not ready to activate as a full automatic betting engine. The next proof is to store M2 categories in daily run artifacts and settle them date by date.

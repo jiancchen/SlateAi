@@ -55,6 +55,24 @@ Compare indexed lane rows:
 npm run model:mlb:compare -- --left MLB-M0 --right MLB-M1 --date 2026-05-30
 ```
 
+For `MLB-M2` or any game-shape branch, also run the category/lane backtest:
+
+```bash
+npm run data:research:mlb-m2-game-shape -- --start 2026-05-10 --end 2026-05-31
+```
+
+This backtest must report:
+
+- baseline full-game side hit rate
+- baseline first-five side hit rate
+- category-lane hit rate
+- allowed-side bucket hit rate
+- starter-to-bullpen flip F5 hit rate
+- day-by-day category performance
+- stress-slate table for May 31-style chaos days
+
+Do not promote a game-shape branch because it sounds smarter. Promote only if the category selects a better market expression than the baseline side model on settled rows.
+
 ## Required Gates
 
 - Snapshot verifier passes for every benchmark date.
@@ -63,6 +81,8 @@ npm run model:mlb:compare -- --left MLB-M0 --right MLB-M1 --date 2026-05-30
 - If the candidate changes the app-facing match contract, register its adapter in `models/mlb/app-model.js` before activation. The app path should fail loudly for unregistered active parent models.
 - May 30 and the latest settled day are compared by lane, not by one blended score.
 - Model notes explain what changed, what should improve, and what might get worse.
+- Any game-shape model must emit concrete `bestExpression`, `laneMap`, and `inningMap` fields. A generic `risk`, `veto`, or `pass` label is not enough.
+- If a branch tries ML/RF/gradient/logistic experiments, the walk-forward results must be recorded even when they fail.
 
 ## Activation
 

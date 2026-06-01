@@ -56,3 +56,31 @@ Pregame read:
 - Hitter props now carry a career repeatability layer from MLB player profile data. A player with a tiny 2026 sample can still show as a watch candidate when the career story supports it, but the model must label it as career-backed heat, apply volatility penalties, and keep unsupported one-game spikes out of tracked props.
 - Career profile is a low-weight baseline, not a conviction stat. MLB-M2 now adds a batter approach proxy to tell whether the current player identity is rising, fading, or merely a noisy box-score spike, and prop grading prints repeatability buckets so this layer has to earn its keep in backtests.
 - Savant game logs are lower priority because pitch/game rows already exist in the warehouse. Daily handedness/platoon splits are now snapshotted in `mlb_hitter_split_snapshots`; full Savant HTML split tables remain a follow-up for month, batting-order, runners, game-type, outs, and Statcast split fields.
+
+## May 31 Postmortem Into M2
+
+Artifacts:
+
+- Postmortem: `development-docs/mlb/postmortems/may31-slate-postmortem-053126.md`
+- M2 backtest report: `models/mlb/cartridges/MLB-M2/reports/game-shape-backtest-2026-05-10-to-2026-05-31.md`
+- M2 backtest JSON: `data-private/reports/mlb-m2-game-shape-backtest-2026-05-10-to-2026-05-31.json`
+
+Lessons:
+
+- May 31 was not just a bad-side day. It was a game-shape day: dead-early pockets, starter cracks, bridge timing, and weather/carry chaos decided which market expression made sense.
+- The model should not publish `risky`, `veto`, or `pass` as the main insight. It must say which lane fits: full-game ML, F5, total, first inning, HR/prop cluster, prediction-market spike, live-only, or no pregame ML.
+- M2 category backtest beat the broad baseline only when it selected lanes, not when it tried to replace the side model outright.
+
+Current proof:
+
+- Baseline full-game side: 59.0% on 212 rows.
+- M2 category lane hit: 62.6% on 195 graded rows.
+- Allowed-side bucket: 67.5% on 40 rows.
+- Starter-to-bullpen flip F5 lane: 68.6% on 35 rows.
+- Dead-zone timing/F5 lane: 70.6% on 17 rows.
+
+Next work:
+
+- Persist M2 categories in each daily run artifact, not just research reports.
+- Add line-specific ROI grading for category lanes: F5 ML, F5 spread, totals, first inning, HR clusters, and props.
+- Build UI fields for `bestExpression`, `laneMap`, and `inningMap` before activating MLB-M2 publicly.

@@ -112,6 +112,315 @@ const pickShapeLabel = ({ chaosScore, deadEarlyScore, phaseSplitScore, bullpenFl
   return 'balanced traffic game'
 }
 
+const phaseMatchesPick = (teamName, pickName) => Boolean(teamName && pickName && teamNameMatches(teamName, pickName))
+
+const buildInningMap = ({ slug, pickName = 'Pick', opponentName = 'Opponent' }) => {
+  const maps = {
+    clean_phase_stack: [
+      ['1-2', `${pickName} should create traffic without needing immediate chaos.`, 'If the first six outs are empty, reduce side exposure.'],
+      ['3-5', 'Starter and lineup edges should still point the same way.', 'Any early starter command loss breaks the stack.'],
+      ['6-7', 'Bridge should protect the original side.', 'Watch inherited traffic, not just runs.'],
+      ['8-9', 'Late bullpen should close without needing a comeback.', 'If the game is tied, price beats confidence.']
+    ],
+    early_pressure_side: [
+      ['1-2', `${pickName} needs the first traffic pocket.`, 'No early baserunners means the edge decays quickly.'],
+      ['3-5', 'First-five side is the cleanest expression.', 'Do not wait for late rescue if the starter edge is gone.'],
+      ['6-7', 'Only keep full-game exposure if the bridge is not leaking.', 'A bullpen mismatch turns this into a hedge spot.'],
+      ['8-9', 'Closeout depends on lead size more than raw team rating.', 'One-run late leads are not a free pass.']
+    ],
+    starter_to_bullpen_flip: [
+      ['1-2', `${pickName} can look right early even if full-game ML is fragile.`, 'Entry belongs to F5 or live lead, not blind FG.'],
+      ['3-5', 'This is the main scoring window for the pick.', 'If the pick trails after five, the original read is mostly gone.'],
+      ['6-7', `${opponentName} can re-enter through the bridge.`, 'Expect hedge or live reversal pressure here.'],
+      ['8-9', 'Late innings are not aligned with the pregame side.', 'Do not confuse early control with full-game safety.']
+    ],
+    late_rescue_side: [
+      ['1-2', `${pickName} does not need to win the first inning.`, 'Avoid panic if early contact is decent.'],
+      ['3-5', 'Starter window may be neutral or ugly.', 'F5 side is weaker than full-game/live.'],
+      ['6-7', 'Bridge/late edge is the planned entry point.', 'Look for opponent starter exit or first reliever traffic.'],
+      ['8-9', `${pickName} needs pressure after the starter turns over.`, 'This is a live-side shape, not a pregame comfort shape.']
+    ],
+    dead_zone_side: [
+      ['1-2', 'The paper side can sit dead with traffic that does not score.', 'Only enter after visible conversion, not just baserunners.'],
+      ['3-5', 'Quiet first-five shape can still be the cleanest timing window if starter edge agrees.', 'Separate F5 side, F5 under, and full-game ML.'],
+      ['6-7', 'A single mistake can decide the game.', 'Do not add side exposure into a low-conversion tie.'],
+      ['8-9', 'Late variance dominates if nobody converted early.', 'Treat price as the only reason to play.']
+    ],
+    false_favorite_conversion_trap: [
+      ['1-2', 'Favorite price is asking to be paid before the lineup converts.', 'No first-cycle damage means the price is too expensive.'],
+      ['3-5', 'The favorite must turn traffic into runs before the underdog gets a cheap inning.', 'Avoid laying tax into dead contact.'],
+      ['6-7', 'If still close, the favorite edge is mostly market inertia.', 'Look for hedge/live underdog price instead.'],
+      ['8-9', 'Late favorite bailout is not the base case.', 'Do not compound if the bridge is stressed.']
+    ],
+    crooked_inning_over: [
+      ['1-2', 'Early quiet does not kill the over; one inning can do the work.', 'Look for walks, errors, and command misses.'],
+      ['3-5', 'Starter crack is the main damage window.', 'If both starters are clean through five, reduce over chase.'],
+      ['6-7', 'Bridge traffic can create the crooked inning.', 'Inherited runners matter more than ERA.'],
+      ['8-9', 'Late add-on runs are live if bullpen command is thin.', 'Side read is secondary to run-shape.']
+    ],
+    starter_duel_under: [
+      ['1-2', 'Clean first innings are part of the script.', 'One early run is survivable; multiple free passes are not.'],
+      ['3-5', 'Starter command should keep the game compressed.', 'If either starter loses zone, under edge collapses.'],
+      ['6-7', 'Bridge quality decides whether the under survives.', 'Avoid weak middle relief exposure.'],
+      ['8-9', 'Late leverage can still leak one run.', 'Do not overfit to a shutout pace.']
+    ],
+    market_dog_pressure: [
+      ['1-2', `${pickName} needs to make the favorite uncomfortable early.`, 'The edge is price plus pressure, not dominance.'],
+      ['3-5', 'The underdog must keep starter-window contact alive.', 'If the favorite gets clean shutdown innings, exit discipline matters.'],
+      ['6-7', 'The bridge is where the price can re-rate.', 'This is a live/plus-price lane before it is a safe winner.'],
+      ['8-9', 'Keep only paid-for exposure late.', 'Free-roll logic beats hero-holding.']
+    ],
+    weather_chaos_carry: [
+      ['1-2', 'Carry conditions can turn ordinary contact into early damage.', 'Outfield/defensive mistakes deserve extra weight.'],
+      ['3-5', 'Starter command plus weather decides whether this becomes a track meet.', 'Side is weaker than total/HR shape.'],
+      ['6-7', 'Bullpen contact in carry weather is dangerous.', 'Middle relief mistakes can flip the whole board.'],
+      ['8-9', 'Late insurance runs stay live.', 'Do not treat a lead as fully stable.']
+    ],
+    balanced_traffic: [
+      ['1-2', 'No single phase dominates yet.', 'Wait for which team creates the first real scoring pocket.'],
+      ['3-5', 'Starter window should tell us whether side or total is cleaner.', 'Avoid forcing pregame certainty.'],
+      ['6-7', 'Bridge shape can decide the final lane.', 'Check first reliever command.'],
+      ['8-9', 'Late price should drive action.', 'Model confidence alone is not enough.']
+    ]
+  }
+
+  return (maps[slug] || maps.balanced_traffic).map(([innings, expectation, watch]) => ({
+    innings,
+    expectation,
+    watch
+  }))
+}
+
+const buildCategory = ({
+  shapeScores,
+  projection = {},
+  mlbIndicators = {},
+  pick,
+  opponent,
+  pickIsMarketFavorite,
+  pickIsMarketUnderdog,
+  marketProbabilities = [],
+  weatherCarry = false
+}) => {
+  const pickName = pick?.name || 'Pick'
+  const opponentName = opponent?.name || 'Opponent'
+  const pickOwnsFull = phaseMatchesPick(projection.edgeTeam, pickName)
+  const pickOwnsFirst5 = phaseMatchesPick(projection.first5EdgeTeam, pickName)
+  const pickOwnsLate = phaseMatchesPick(projection.lateEdgeTeam, pickName)
+  const pickOwnsBridge = phaseMatchesPick(projection.bridgeEdgeTeam, pickName)
+  const pickPhaseCount = [pickOwnsFull, pickOwnsFirst5, pickOwnsLate, pickOwnsBridge].filter(Boolean).length
+  const favoriteProbability =
+    marketProbabilities.length
+      ? Math.max(...marketProbabilities.filter((value) => Number.isFinite(value)))
+      : null
+
+  const pickLineup = safeNumber(mlbIndicators.pickLineupConversionIndex)
+  const opponentLineup = safeNumber(mlbIndicators.oppLineupConversionIndex)
+  const pickQuietFirst5 = safeNumber(mlbIndicators.pickQuietFirst5Rate)
+  const pickScorelessFirst3 = safeNumber(mlbIndicators.pickTeamScorelessFirst3Rate)
+  const pickNoConversion = safeNumber(mlbIndicators.pickTrafficNoConversionRate)
+  const pickDeadTraffic = safeNumber(mlbIndicators.pickDeadBatTrafficRate)
+  const pickChaos = safeNumber(mlbIndicators.pickTeamMistakeChaos)
+  const opponentChaos = safeNumber(mlbIndicators.oppTeamMistakeChaos)
+  const pickBullpenChaos = safeNumber(mlbIndicators.pickBullpenMistakeChaos)
+  const opponentBullpenChaos = safeNumber(mlbIndicators.oppBullpenMistakeChaos)
+  const projectedHitEdge = safeNumber(mlbIndicators.projectedHitEdgeForPick)
+  const starterGap =
+    safeNumber(mlbIndicators.pickStarterScore) !== null && safeNumber(mlbIndicators.oppStarterScore) !== null
+      ? safeNumber(mlbIndicators.pickStarterScore) - safeNumber(mlbIndicators.oppStarterScore)
+      : null
+  const bullpenGap =
+    safeNumber(mlbIndicators.pickBullpenScore) !== null && safeNumber(mlbIndicators.oppBullpenScore) !== null
+      ? safeNumber(mlbIndicators.pickBullpenScore) - safeNumber(mlbIndicators.oppBullpenScore)
+      : null
+  const opponentChaosGap =
+    Number.isFinite(opponentChaos) && Number.isFinite(pickChaos) ? opponentChaos - pickChaos : 0
+  const lineupGap =
+    Number.isFinite(pickLineup) && Number.isFinite(opponentLineup) ? pickLineup - opponentLineup : 0
+  const lowPickConversion =
+    (Number.isFinite(pickLineup) && pickLineup <= 32) ||
+    (Number.isFinite(pickNoConversion) && pickNoConversion >= 0.24) ||
+    (Number.isFinite(pickDeadTraffic) && pickDeadTraffic >= 0.44)
+  const quietPick =
+    (Number.isFinite(pickQuietFirst5) && pickQuietFirst5 >= 0.5) ||
+    (Number.isFinite(pickScorelessFirst3) && pickScorelessFirst3 >= 0.5)
+  const bridgeAgainstPick = pickOwnsFirst5 && (!pickOwnsLate || !pickOwnsBridge)
+  const lateOnly = !pickOwnsFirst5 && (pickOwnsLate || pickOwnsBridge)
+  const phaseAligned = pickPhaseCount >= 3 && pickOwnsFull && pickOwnsFirst5
+  const firstFiveExpression =
+    pickOwnsFirst5 || (Number.isFinite(starterGap) && starterGap >= 7)
+      ? `${pickName} first-five side`
+      : 'No forced first-five side'
+
+  const candidates = [
+    {
+      slug: 'weather_chaos_carry',
+      when: weatherCarry && shapeScores.chaosScore >= 62,
+      label: 'Weather-carry chaos',
+      bestExpression: 'Totals / HR cluster before side',
+      confidence: shapeScores.chaosScore,
+      reasons: ['Carry/wind conditions amplify contact mistakes.', 'Side edge is secondary when ordinary contact can become damage.']
+    },
+    {
+      slug: 'crooked_inning_over',
+      when:
+        shapeScores.chaosScore >= 68 ||
+        (Number.isFinite(pickBullpenChaos) && pickBullpenChaos >= 56) ||
+        (Number.isFinite(opponentBullpenChaos) && opponentBullpenChaos >= 56),
+      label: 'Crooked-inning game',
+      bestExpression: 'Full-game total / team total / HR cluster',
+      confidence: shapeScores.chaosScore,
+      reasons: ['Mistake and run-cluster shape can decide the board in one inning.', 'Moneyline is not the cleanest expression.']
+    },
+    {
+      slug: 'false_favorite_conversion_trap',
+      when:
+        pickIsMarketFavorite &&
+        Number.isFinite(favoriteProbability) &&
+        favoriteProbability >= 0.62 &&
+        (lowPickConversion || quietPick || Boolean(mlbIndicators.hitEdgeAgainstPick)),
+      label: 'Favorite conversion trap',
+      bestExpression: 'No taxed ML; require early conversion or better live price',
+      confidence: clamp(shapeScores.deadEarlyScore + (favoriteProbability - 0.62) * 100, 0, 100),
+      reasons: ['The favorite price is ahead of the lineup conversion profile.', 'Do not pay for runs the first cycle has not shown yet.']
+    },
+    {
+      slug: 'dead_zone_side',
+      when: shapeScores.deadEarlyScore >= 60 && (lowPickConversion || quietPick),
+      label: 'Dead-zone side',
+      bestExpression: 'First-five timing or live after conversion; no blind full-game ML',
+      confidence: shapeScores.deadEarlyScore,
+      reasons: ['Quiet-first-five and traffic-without-conversion are live.', 'Side entry needs proof of scoring, not just baserunners.']
+    },
+    {
+      slug: 'starter_to_bullpen_flip',
+      when: bridgeAgainstPick && (shapeScores.phaseSplitScore >= 48 || shapeScores.bullpenFlipScore >= 48 || (Number.isFinite(bullpenGap) && bullpenGap <= -5)),
+      label: 'Starter-to-bullpen flip',
+      bestExpression: firstFiveExpression,
+      confidence: Math.max(shapeScores.phaseSplitScore, shapeScores.bullpenFlipScore),
+      reasons: ['The pick can own the starter window without owning the late game.', 'Use the timing edge before bridge innings can flip it.']
+    },
+    {
+      slug: 'late_rescue_side',
+      when: lateOnly,
+      label: 'Late-rescue side',
+      bestExpression: 'Live side after starter exit',
+      confidence: shapeScores.phaseSplitScore,
+      reasons: ['The edge is late/bridge, not early comfort.', 'F5 side is weaker than a live entry after the starter turns over.']
+    },
+    {
+      slug: 'early_pressure_side',
+      when:
+        pickOwnsFirst5 &&
+        shapeScores.deadEarlyScore < 58 &&
+        (lineupGap >= 8 || (Number.isFinite(projectedHitEdge) && projectedHitEdge >= 0.8)),
+      label: 'Early-pressure side',
+      bestExpression: 'Full-game side only if early traffic appears; live entry preferred',
+      confidence: clamp(58 + Math.max(lineupGap, projectedHitEdge || 0) * 1.6, 0, 100),
+      reasons: ['The pick needs to cash the first traffic pocket.', 'The best edge is timing, not late-game patience.']
+    },
+    {
+      slug: 'starter_duel_under',
+      when: shapeScores.starterControlScore >= 66 && shapeScores.chaosScore < 56 && shapeScores.deadEarlyScore >= 42,
+      label: 'Starter-duel under',
+      bestExpression: 'NRFI / first-five under',
+      confidence: clamp(shapeScores.starterControlScore - shapeScores.chaosScore * 0.2 + shapeScores.deadEarlyScore * 0.25, 0, 100),
+      reasons: ['Starter control and quiet early shape point to compression.', 'The side may be right but the cleaner bet is run suppression.']
+    },
+    {
+      slug: 'market_dog_pressure',
+      when:
+        pickIsMarketUnderdog &&
+        ((Number.isFinite(projectedHitEdge) && projectedHitEdge >= 0.6) || lineupGap >= 8 || opponentChaosGap >= 6),
+      label: 'Underdog pressure lane',
+      bestExpression: 'Plus-price ML / prediction-market spike',
+      confidence: clamp(54 + Math.max(projectedHitEdge || 0, lineupGap * 0.35, opponentChaosGap * 0.45), 0, 100),
+      reasons: ['The underdog has enough pressure to reprice the favorite.', 'This is a price-and-flow setup, not a safe-winner setup.']
+    },
+    {
+      slug: 'clean_phase_stack',
+      when: phaseAligned && shapeScores.realityGapScore < 58 && shapeScores.deadEarlyScore < 56,
+      label: 'Clean phase stack',
+      bestExpression: 'Full-game side if price is fair',
+      confidence: clamp(62 + pickPhaseCount * 5 - shapeScores.realityGapScore * 0.25, 0, 100),
+      reasons: ['Full-game, first-five, and late phases mostly agree.', 'Moneyline can be considered if the price is not taxed.']
+    }
+  ]
+
+  const selected = candidates.find((candidate) => candidate.when) || {
+    slug: 'balanced_traffic',
+    label: 'Balanced traffic game',
+    bestExpression: 'Wait for first real scoring pocket',
+    confidence: clamp(50 + Math.max(shapeScores.realityGapScore - 50, 0) * 0.25, 0, 100),
+    reasons: ['No single phase is dominant enough to force a lane.', 'Let the first scoring pocket choose side, total, or live entry.']
+  }
+
+  const laneMap = {
+    side:
+      selected.slug === 'clean_phase_stack'
+        ? 'Allowed if price is fair and lineup card is intact.'
+        : selected.slug === 'market_dog_pressure'
+          ? 'Only plus-price or contract-spike exposure; do not treat it as a safe winner.'
+          : selected.slug === 'early_pressure_side'
+            ? 'Allowed after early traffic confirms the pressure read.'
+          : selected.slug === 'late_rescue_side'
+            ? 'Prefer live entry after starter exit.'
+            : selected.slug.includes('trap') || selected.slug === 'dead_zone_side'
+              ? 'No blind pregame ML; require visible conversion.'
+              : 'Secondary to the named lane.',
+    first5:
+      selected.slug === 'starter_to_bullpen_flip' || selected.slug === 'early_pressure_side'
+        ? selected.slug === 'starter_to_bullpen_flip'
+          ? 'Primary lane.'
+          : 'Only primary if the line is cheaper than full-game ML.'
+        : selected.slug === 'starter_duel_under' || selected.slug === 'dead_zone_side'
+          ? 'Compare F5 side and F5 under before full-game ML.'
+          : 'Use only if starter and top-order pressure agree.',
+    total:
+      selected.slug === 'crooked_inning_over' || selected.slug === 'weather_chaos_carry'
+        ? 'Primary lane; one crooked inning can beat a side read.'
+        : selected.slug === 'starter_duel_under' || selected.slug === 'dead_zone_side'
+          ? 'Under lanes are cleaner if the posted number is not already taxed.'
+          : 'Needs line-specific EV.',
+    firstInning:
+      selected.slug === 'starter_duel_under' || selected.slug === 'dead_zone_side'
+        ? 'NRFI is live if both teams lack first-cycle conversion.'
+        : selected.slug === 'early_pressure_side'
+          ? 'YRFI only if both top orders and starter leakage agree.'
+          : 'Advisory only.',
+    live:
+      selected.slug === 'dead_zone_side' || selected.slug === 'false_favorite_conversion_trap'
+        ? 'Enter only after a converted traffic pocket or a much better price.'
+        : selected.slug === 'late_rescue_side'
+          ? 'Best entry is after the opponent starter leaves.'
+          : selected.slug === 'market_dog_pressure'
+            ? 'Scale out if the favorite gets stressed early.'
+            : 'Use price discipline.'
+  }
+
+  return {
+    slug: selected.slug,
+    label: selected.label,
+    bestExpression: selected.bestExpression,
+    confidence: roundToTenths(selected.confidence),
+    reasons: selected.reasons,
+    laneMap,
+    inningMap: buildInningMap({ slug: selected.slug, pickName, opponentName }),
+    diagnostics: {
+      pickOwnsFull,
+      pickOwnsFirst5,
+      pickOwnsLate,
+      pickOwnsBridge,
+      pickPhaseCount,
+      lowPickConversion,
+      quietPick,
+      lineupGap: roundToTenths(lineupGap),
+      opponentChaosGap: roundToTenths(opponentChaosGap),
+      projectedHitEdge: Number.isFinite(projectedHitEdge) ? roundToTenths(projectedHitEdge) : null
+    }
+  }
+}
+
 const buildRfLens = ({ projection = {}, shapeScores = {}, realityGapScore }) => {
   const fullTotal = projection?.totals?.fullGame
   const first5Total = projection?.totals?.first5
@@ -326,7 +635,7 @@ const buildMlbGameShapeRead = ({
     marketContradictionScore: roundToTenths(marketContradictionScore),
     realityGapScore: roundToTenths(realityGapScore)
   }
-  const label = pickShapeLabel(shapeScores)
+  const shapeLabel = pickShapeLabel(shapeScores)
   const metricNotes = buildMetricNotes({
     maxMistakeChaos,
     maxRunClustering,
@@ -338,8 +647,19 @@ const buildMlbGameShapeRead = ({
     maxBullpenChaos,
     weather
   })
+  const category = buildCategory({
+    shapeScores,
+    projection,
+    mlbIndicators,
+    pick,
+    opponent,
+    pickIsMarketFavorite,
+    pickIsMarketUnderdog,
+    marketProbabilities,
+    weatherCarry
+  })
   const marketImplications = buildMarketImplications({
-    shapeLabel: label,
+    shapeLabel,
     shapeScores,
     projection,
     pickName: pick?.name,
@@ -349,9 +669,11 @@ const buildMlbGameShapeRead = ({
 
   return {
     modelId: 'MLB-M2',
-    label,
+    label: category.label,
+    shapeLabel,
+    category,
     summary:
-      `${label}: reality-gap ${shapeScores.realityGapScore}/100. ` +
+      `${category.label}: ${category.bestExpression}. Reality-gap ${shapeScores.realityGapScore}/100. ` +
       (metricNotes.length
         ? `Main checks: ${metricNotes.slice(0, 4).join('; ')}.`
         : 'No single chaos metric dominates this game.'),
@@ -381,6 +703,8 @@ const buildMlbGameShapeRead = ({
       maxBullpenChaos: Number.isFinite(maxBullpenChaos) ? roundToTenths(maxBullpenChaos) : null
     },
     metricNotes,
+    laneMap: category.laneMap,
+    inningMap: category.inningMap,
     marketImplications,
     rfLens
   }

@@ -6,7 +6,34 @@
   "basedOn": "MLB-M0",
   "status": "draft",
   "currentBaselineDate": "2026-05-31",
-  "runs": [],
+  "runs": [
+    {
+      "id": "mlb-m2-game-shape-backtest-2026-05-10-to-2026-05-31",
+      "type": "research-backtest",
+      "dateRange": {
+        "start": "2026-05-10",
+        "end": "2026-05-31"
+      },
+      "rows": 212,
+      "artifacts": {
+        "markdown": "models/mlb/cartridges/MLB-M2/reports/game-shape-backtest-2026-05-10-to-2026-05-31.md",
+        "json": "data-private/reports/mlb-m2-game-shape-backtest-2026-05-10-to-2026-05-31.json"
+      },
+      "metrics": {
+        "baselineFullGameSideHitRate": 0.59,
+        "baselineFirstFiveSideHitRate": 0.528,
+        "m2AllowedSideHitRate": 0.675,
+        "m2AllowedSideRows": 40,
+        "m2CategoryLaneHitRate": 0.6256,
+        "m2CategoryLaneGradedRows": 195,
+        "starterToBullpenFlipF5HitRate": 0.686,
+        "starterToBullpenFlipRows": 35,
+        "deadZoneTimingF5HitRate": 0.706,
+        "deadZoneRows": 17
+      },
+      "interpretation": "M2 shows useful lane separation but is not active. The transparent category layer beat walk-forward RF/gradient/logistic lane choosers overall; RF/gradient only looked interesting on F5 and high-total sublanes."
+    }
+  ],
   "comparisonTargets": [
     {
       "modelId": "MLB-M0",
@@ -32,8 +59,13 @@
     },
     {
       "id": "m2-bucket-settlement",
-      "status": "needed",
-      "summary": "Persist and grade game-shape labels by date so reality-gap scores can be backtested against actual game flow and betting lanes."
+      "status": "partially-proven",
+      "summary": "Backtest harness now grades category lanes from 2026-05-10 through 2026-05-31; next step is persisting M2 categories in daily run artifacts before publishing."
+    },
+    {
+      "id": "m2-category-inning-map",
+      "status": "implemented-draft",
+      "summary": "Emit category, best expression, lane map, inning map, and diagnostics for app-facing game-flow explanations."
     }
   ]
 }

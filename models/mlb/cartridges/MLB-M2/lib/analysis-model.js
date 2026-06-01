@@ -530,6 +530,10 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           gameShape: gameShape
             ? {
                 label: gameShape.label,
+                shapeLabel: gameShape.shapeLabel,
+                category: gameShape.category?.slug ?? null,
+                bestExpression: gameShape.category?.bestExpression ?? null,
+                categoryConfidence: gameShape.category?.confidence ?? null,
                 realityGapScore: gameShape.scores.realityGapScore,
                 chaosScore: gameShape.scores.chaosScore,
                 deadEarlyScore: gameShape.scores.deadEarlyScore,

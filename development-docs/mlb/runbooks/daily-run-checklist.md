@@ -25,6 +25,7 @@ Required prior-day checks:
 - `mlb_side_predictions` has one row per prior-day board pick for `board-moneyline-v1.1-sanity`.
 - `mlb_side_backtests` has one graded row per prior-day board pick for `board-moneyline-v1.1-sanity`.
 - the postmortem names the actual failure shape before any next-day model change is trusted.
+- if an MLB-M2-style branch is being evaluated, rerun the category/lane backtest and record whether the prior day was side, F5/timing, total, first-inning, live-only, or no-pregame-ML shape.
 
 If the side rows are missing, do not start the new slate. Fix closeout first.
 
@@ -209,6 +210,26 @@ This now handles:
 - stateful edge haircut-grid rerun
 - first-five state-model rerun
 - market-divergence / price-aware research rerun
+
+For active M2 evaluation days, also run:
+
+```bash
+npm run data:research:mlb-m2-game-shape -- --start 2026-05-10 --end YYYY-MM-DD
+```
+
+The postmortem should not stop at `risky` or `veto`. It should classify each miss and hit by game shape:
+
+- clean phase stack
+- early-pressure side
+- starter-to-bullpen flip
+- late-rescue side
+- dead-zone side
+- favorite conversion trap
+- crooked-inning game
+- starter-duel under
+- underdog pressure lane
+- weather-carry chaos
+- balanced traffic game
 
 Then update:
 - follow-up notes

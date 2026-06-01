@@ -47,9 +47,9 @@
     {
       "id": "game-shape",
       "name": "Game Shape Reality Gap",
-      "owns": ["phase-map agreement", "chaos and dead-early shape scoring", "RF research lens for totals-first nonlinear checks"],
-      "entrypoints": ["models/mlb/cartridges/MLB-M2/lib/analysis-model.js"],
-      "coreFiles": ["models/mlb/cartridges/MLB-M2/lib/mlb-game-shape.js", "models/mlb/cartridges/MLB-M2/lib/mlb-analysis-context.js"]
+      "owns": ["phase-map agreement", "category lane selection", "inning-map game flow", "chaos and dead-early shape scoring", "RF research lens for totals-first nonlinear checks"],
+      "entrypoints": ["models/mlb/cartridges/MLB-M2/lib/analysis-model.js", "models/mlb/cartridges/MLB-M2/research/game_shape_backtest.py"],
+      "coreFiles": ["models/mlb/cartridges/MLB-M2/lib/mlb-game-shape.js", "models/mlb/cartridges/MLB-M2/lib/mlb-analysis-context.js", "models/mlb/cartridges/MLB-M2/reports/game-shape-backtest-2026-05-10-to-2026-05-31.md"]
     },
     {
       "id": "relief-addendum",

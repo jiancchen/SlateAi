@@ -126,7 +126,20 @@ const compactGame = (game = {}) => ({
   gameShape: game.analysis?.gameShape
     ? {
         label: game.analysis.gameShape.label ?? null,
+        shapeLabel: game.analysis.gameShape.shapeLabel ?? null,
         summary: game.analysis.gameShape.summary ?? null,
+        category: game.analysis.gameShape.category
+          ? {
+              slug: game.analysis.gameShape.category.slug ?? null,
+              label: game.analysis.gameShape.category.label ?? null,
+              bestExpression: game.analysis.gameShape.category.bestExpression ?? null,
+              confidence: round(game.analysis.gameShape.category.confidence),
+              reasons: game.analysis.gameShape.category.reasons ?? [],
+              diagnostics: game.analysis.gameShape.category.diagnostics ?? {}
+            }
+          : null,
+        laneMap: game.analysis.gameShape.laneMap ?? {},
+        inningMap: game.analysis.gameShape.inningMap ?? [],
         scores: game.analysis.gameShape.scores ?? {},
         phaseMap: game.analysis.gameShape.phaseMap ?? {},
         metrics: game.analysis.gameShape.metrics ?? {},

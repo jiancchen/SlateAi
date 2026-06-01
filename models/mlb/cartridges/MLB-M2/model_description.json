@@ -11,7 +11,8 @@
     "Adds `analysis.gameShape`, a structured read of phase agreement, crooked-inning chaos, dead-early shape, bullpen-flip risk, and projection-vs-reality gap.",
     "Adds an RF research lens that treats RandomForest results as a nonlinear reality check, with totals as the only currently deployable RF lane from the research docs.",
     "Keeps ML/F5 RF influence downgraded until bucketed backtests show it beats the current M0 logic.",
-    "Names market implications separately for side, first-five, total, and first inning so M2 can stop forcing moneyline when the game shape says another lane is cleaner."
+    "Names market implications separately for side, first-five, total, and first inning so M2 can stop forcing moneyline when the game shape says another lane is cleaner.",
+    "Adds concrete game-shape categories, lane maps, and inning maps so the site can explain starter windows, bridge innings, crooked-inning exposure, and live-entry requirements."
   ],
   "keyMetrics": [
     {
@@ -33,12 +34,29 @@
       "label": "New output",
       "value": "gameShape",
       "details": "M2 emits reality-gap score, chaos score, dead-early score, phase split score, RF impact score, and lane-specific market implications."
+    },
+    {
+      "label": "Backtest",
+      "value": "62.6%",
+      "details": "M2 category lane hit on 195 graded rows from 2026-05-10 through 2026-05-31; baseline full-game side was 59.0% on 212 rows."
+    },
+    {
+      "label": "Allowed side bucket",
+      "value": "67.5%",
+      "details": "40 rows where M2 allowed the full-game side expression after category checks."
+    },
+    {
+      "label": "Timing/F5 signal",
+      "value": "68.6%",
+      "details": "Starter-to-bullpen flip category graded as a first-five timing lane on 35 rows."
     }
   ],
   "notes": [
     "M2 is not a promise that RF is better. It is the branch where RF impact can finally be measured instead of hand-waved.",
     "The core question is whether the model can describe game flow before choosing a bet: early scoring, first-five control, bridge innings, total chaos, and conversion failure.",
     "A high reality-gap score should downgrade blind full-game ML confidence even when the raw side model has a strong lean.",
+    "The transparent category layer beat the tested walk-forward RF, gradient, and logistic lane choosers overall; the ML experiments only helped narrow F5/high-total sublanes.",
+    "Rule sweeps surfaced useful candidate gates: starter-control rows for full-game side, phase-split rows for F5, and high-chaos rows for total/first-inning scoring shape.",
     "Future M2 work should persist per-game reality-gap outcomes so we can backtest whether high-gap labels predicted bad ML bets, better F5 bets, better totals, or passes."
   ],
   "knownLimitations": [
@@ -51,6 +69,7 @@
     "modelLog": "models/mlb/cartridges/MLB-M2/MLB-M2_log.md",
     "performanceIndex": "models/mlb/cartridges/MLB-M2/performance_index.json",
     "followups": "models/mlb/cartridges/MLB-M2/followups.md",
-    "gameShape": "models/mlb/cartridges/MLB-M2/lib/mlb-game-shape.js"
+    "gameShape": "models/mlb/cartridges/MLB-M2/lib/mlb-game-shape.js",
+    "gameShapeBacktest": "models/mlb/cartridges/MLB-M2/reports/game-shape-backtest-2026-05-10-to-2026-05-31.md"
   }
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "modelId": "MLB-M2",
   "sport": "mlb",
-  "status": "migration-shell",
+  "status": "draft",
   "lanes": [
     "moneyline",
     "first5",
@@ -18,8 +18,18 @@
     "valueBoard",
     "modelHistory"
   ],
+  "requiredAnalysisFields": [
+    "analysis.gameShape.label",
+    "analysis.gameShape.category.slug",
+    "analysis.gameShape.category.bestExpression",
+    "analysis.gameShape.category.laneMap",
+    "analysis.gameShape.inningMap",
+    "analysis.gameShape.scores.realityGapScore",
+    "analysis.indicators.gameShape.category",
+    "analysis.indicators.gameShape.bestExpression"
+  ],
   "notes": [
-    "This is a placeholder contract for the MLB cartridge migration.",
-    "Final field requirements should be derived from the current generated day payload before code is moved."
+    "M2 inherits the MLB-M0 public payload and adds a game-shape category contract.",
+    "The category object must name the market expression; vague risk/pass labels are not sufficient."
   ]
 }
