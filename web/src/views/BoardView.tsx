@@ -88,9 +88,12 @@ export function BoardView(props: BoardViewProps) {
           const confidence = Number(row.modelPct ?? row.confidence)
           const confidenceLabel = Number.isFinite(confidence) ? `${Math.round(confidence)}% conf` : 'conf N/A'
           const expectedGames = Number(row.expectedGames)
+          const marketText = String(row.marketType || row.label || '').toLowerCase()
+          const showExpectedGames =
+            Number.isFinite(expectedGames) && (marketText.includes('total') || marketText.includes('o/u'))
           const lineMeta = [
             row.valueGrade || row.grade || row.marketType,
-            Number.isFinite(expectedGames) ? `exp ${expectedGames.toFixed(1)} games` : null,
+            showExpectedGames ? `exp ${expectedGames.toFixed(1)} games` : null,
             row.gameTitle
           ].filter(Boolean).join(' | ')
 

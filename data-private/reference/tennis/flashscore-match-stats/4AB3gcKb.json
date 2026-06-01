@@ -1,0 +1,27 @@
+{
+  "slateDate": "2026-06-01",
+  "boardMatchId": "rg-m-juan-manuel-cerundolo-matteo-berrettini-2026-06-01",
+  "boardTitle": "Juan Manuel Cerundolo vs Matteo Berrettini",
+  "flashscoreLabel": "Berrettini Matteo - Cerundolo Juan Manuel",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "generatedAt": "2026-06-01T07:16:15.213Z",
+  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/berrettini-matteo-OhwtM7N8/cerundolo-juan-manuel-A93TM7BR/",
+  "matchId": "4AB3gcKb",
+  "players": [
+    "Matteo Berrettini",
+    "Juan Manuel Cerundolo"
+  ],
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_4AB3gcKb",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_4AB3gcKb"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

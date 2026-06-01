@@ -231,6 +231,7 @@ def load_warehouse() -> dict[str, pd.DataFrame]:
                 """,
             ),
             "weather": read_sql(conn, "select * from tennis_match_weather"),
+            "player_page_stats": read_sql(conn, "select * from tennis_sofascore_player_page_stats"),
         }
     finally:
         conn.close()
@@ -337,16 +338,86 @@ def prior_replay_flow_table(matches: pd.DataFrame, replay_flow: pd.DataFrame) ->
     return pd.DataFrame(rows, columns=columns)
 
 
+def hold_pct_from_points(first_serve_pct: Any, first_won_pct: Any, second_won_pct: Any) -> float | None:
+    first_in = pd.to_numeric(pd.Series([first_serve_pct]), errors="coerce").iloc[0]
+    first_won = pd.to_numeric(pd.Series([first_won_pct]), errors="coerce").iloc[0]
+    second_won = pd.to_numeric(pd.Series([second_won_pct]), errors="coerce").iloc[0]
+    if pd.isna(first_in) or pd.isna(first_won) or pd.isna(second_won):
+        return None
+    point_win = (float(first_in) / 100 * float(first_won) / 100) + ((1 - float(first_in) / 100) * float(second_won) / 100)
+    point_win = min(0.95, max(0.05, point_win))
+    point_loss = 1 - point_win
+    before_deuce = point_win**4 * (1 + 4 * point_loss + 10 * point_loss**2)
+    deuce = 20 * point_win**3 * point_loss**3
+    deuce_win = point_win**2 / (point_win**2 + point_loss**2)
+    return round((before_deuce + deuce * deuce_win) * 100, 2)
+
+
+def player_page_stats_table(player_page_stats: pd.DataFrame) -> pd.DataFrame:
+    columns = [
+        "slate_date",
+        "normalized_name",
+        "pps_matches",
+        "pps_win_pct",
+        "pps_hold_pct",
+        "pps_first_serve_pct",
+        "pps_first_serve_won_pct",
+        "pps_second_serve_won_pct",
+        "pps_aces",
+        "pps_double_faults",
+        "pps_bp_saved_pct",
+        "pps_bp_converted_pct",
+        "pps_tiebreaks_won_pct",
+    ]
+    if player_page_stats.empty:
+        return pd.DataFrame(columns=columns)
+    stats = player_page_stats.copy()
+    stats["surface_priority"] = np.where(stats["surface"].astype(str).str.lower().eq("clay"), 0, 1)
+    stats = stats.sort_values(["as_of_date", "normalized_name", "surface_priority"]).drop_duplicates(
+        ["as_of_date", "normalized_name"], keep="first"
+    )
+    out = pd.DataFrame(
+        {
+            "slate_date": stats["as_of_date"].astype(str),
+            "normalized_name": stats["normalized_name"].astype(str),
+            "pps_matches": pd.to_numeric(stats.get("matches_total"), errors="coerce"),
+            "pps_win_pct": pd.to_numeric(stats.get("matches_won_pct"), errors="coerce"),
+            "pps_first_serve_pct": pd.to_numeric(stats.get("first_serve_pct"), errors="coerce"),
+            "pps_first_serve_won_pct": pd.to_numeric(stats.get("first_serve_won_pct"), errors="coerce"),
+            "pps_second_serve_won_pct": pd.to_numeric(stats.get("second_serve_won_pct"), errors="coerce"),
+            "pps_aces": pd.to_numeric(stats.get("aces_per_match"), errors="coerce"),
+            "pps_double_faults": pd.to_numeric(stats.get("double_faults_per_match"), errors="coerce"),
+            "pps_bp_saved_pct": pd.to_numeric(stats.get("break_points_saved_pct"), errors="coerce"),
+            "pps_bp_converted_pct": pd.to_numeric(stats.get("break_points_converted_pct"), errors="coerce"),
+            "pps_tiebreaks_won_pct": pd.to_numeric(stats.get("tiebreaks_won_pct"), errors="coerce"),
+        }
+    )
+    out["pps_hold_pct"] = [
+        hold_pct_from_points(first_in, first_won, second_won)
+        for first_in, first_won, second_won in zip(
+            out["pps_first_serve_pct"],
+            out["pps_first_serve_won_pct"],
+            out["pps_second_serve_won_pct"],
+        )
+    ]
+    return out[columns]
+
+
 def build_player_rows(tables: dict[str, pd.DataFrame]) -> pd.DataFrame:
     ctx = tables["context"].copy()
+    matches = tables["matches"].copy()
+    if "slate_date" not in ctx.columns and not matches.empty and "match_id" in matches.columns:
+        ctx = ctx.merge(matches[["match_id", "slate_date"]].drop_duplicates("match_id"), how="left", on="match_id")
     metric_df = weighted_metric_table(tables["metrics"])
     market_df = market_table(tables["markets"])
     replay_df = prior_replay_flow_table(tables["matches"], tables.get("replay_flow", pd.DataFrame()))
+    page_stats_df = player_page_stats_table(tables.get("player_page_stats", pd.DataFrame()))
     ctx["name_key"] = ctx["normalized_name"].map(name_key)
     metric_df["name_key"] = metric_df["normalized_name"].map(name_key) if "normalized_name" in metric_df.columns else ""
     rows = ctx.merge(metric_df, how="left", on=["match_id", "normalized_name"])
     rows = rows.merge(market_df, how="left", on=["match_id", "normalized_name"])
     rows = rows.merge(replay_df, how="left", on=["match_id", "normalized_name"])
+    rows = rows.merge(page_stats_df, how="left", on=["slate_date", "normalized_name"])
 
     missing_market = rows["market_prob"].isna() if "market_prob" in rows.columns else pd.Series(False, index=rows.index)
     if missing_market.any() and not market_df.empty:
@@ -410,6 +481,17 @@ def build_player_rows(tables: dict[str, pd.DataFrame]) -> pd.DataFrame:
         "rg_flow_return_games",
         "rg_flow_break_rate",
         "rg_flow_long_game_rate",
+        "pps_matches",
+        "pps_win_pct",
+        "pps_hold_pct",
+        "pps_first_serve_pct",
+        "pps_first_serve_won_pct",
+        "pps_second_serve_won_pct",
+        "pps_aces",
+        "pps_double_faults",
+        "pps_bp_saved_pct",
+        "pps_bp_converted_pct",
+        "pps_tiebreaks_won_pct",
     ]
     for column in numeric_cols:
         if column in rows.columns:
@@ -613,6 +695,17 @@ def build_samples(tables: dict[str, pd.DataFrame]) -> pd.DataFrame:
         "rg_flow_return_games",
         "rg_flow_break_rate",
         "rg_flow_long_game_rate",
+        "pps_matches",
+        "pps_win_pct",
+        "pps_hold_pct",
+        "pps_first_serve_pct",
+        "pps_first_serve_won_pct",
+        "pps_second_serve_won_pct",
+        "pps_aces",
+        "pps_double_faults",
+        "pps_bp_saved_pct",
+        "pps_bp_converted_pct",
+        "pps_tiebreaks_won_pct",
         "market_prob",
         "cents_at_risk",
         "cents_profit_if_win",
@@ -782,6 +875,38 @@ def market_adjust_probability(data_prob: pd.Series, market_prob: pd.Series | Non
     return blended.clip(0.08, 0.92)
 
 
+def pps_pressure_adjustment(row: pd.Series) -> float:
+    """Small current-slate adjustment from SofaScore player-page clay pressure stats.
+
+    These rows are new, so they are not allowed to dominate the trained model yet.
+    They are a conservative pre-match nudge for serve comfort and break-pressure
+    shape until we have enough backfilled history to learn the weights directly.
+    """
+    samples = [
+        pd.to_numeric(pd.Series([row.get("p1_pps_matches")]), errors="coerce").iloc[0],
+        pd.to_numeric(pd.Series([row.get("p2_pps_matches")]), errors="coerce").iloc[0],
+    ]
+    valid_samples = [float(value) for value in samples if pd.notna(value) and float(value) > 0]
+    if not valid_samples:
+        return 0.0
+    sample_weight = min(1.0, min(valid_samples) / 8.0)
+
+    def diff(name: str) -> float:
+        value = pd.to_numeric(pd.Series([row.get(f"diff_pps_{name}")]), errors="coerce").iloc[0]
+        return float(value) if pd.notna(value) else 0.0
+
+    raw_adjustment = (
+        diff("hold_pct") * 0.0016
+        + diff("first_serve_won_pct") * 0.0007
+        + diff("second_serve_won_pct") * 0.001
+        + diff("bp_saved_pct") * 0.00055
+        + diff("bp_converted_pct") * 0.00065
+        + diff("aces") * 0.002
+        - diff("double_faults") * 0.005
+    )
+    return float(np.clip(raw_adjustment * sample_weight, -0.06, 0.06))
+
+
 def upset_risk_label(row: pd.Series, pick_side: str) -> str:
     prefix = "p1" if pick_side == "player1" else "p2"
     opp = "p2" if pick_side == "player1" else "p1"
@@ -812,7 +937,8 @@ def run_model_chain(
     data_features = feature_columns(train, include_market=False)
     data_prob, data_parts = fit_predict_ensemble(train, test, data_features, label_col=label_col)
     out = test.copy()
-    out["data_prob_p1"] = data_prob
+    out["pressure_adjust_p1"] = out.apply(pps_pressure_adjustment, axis=1)
+    out["data_prob_p1"] = np.clip(data_prob + out["pressure_adjust_p1"].to_numpy(), 0.08, 0.92)
     out["market_prob_p1"] = pd.to_numeric(out.get("p1_market_prob"), errors="coerce")
     out["chain_prob_p1"] = market_adjust_probability(out["data_prob_p1"], out["market_prob_p1"])
     out["chain_models"] = ",".join(part.name for part in data_parts)
@@ -824,7 +950,7 @@ def run_model_chain(
         "dataFeatures": len(data_features),
         "stage1": "data-only warehouse ensemble: L1 logistic + random forest + gradient boosting + XGBoost when available",
         "stage2": "market calibration only, never source-pick override",
-        "stage3": "upset/fragility risk gate from hold, error control, closeout, opponent return pressure, and taxed-favorite price",
+        "stage3": "small SofaScore player-page pressure adjustment, then upset/fragility risk gate from hold, error control, closeout, opponent return pressure, and taxed-favorite price",
         "excludedPickSources": ["tennistonic"],
     }
     return out, meta

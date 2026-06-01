@@ -1,0 +1,27 @@
+{
+  "slateDate": "2026-06-01",
+  "boardMatchId": "rg-w-aryna-sabalenka-naomi-osaka-2026-06-01",
+  "boardTitle": "Aryna Sabalenka vs Naomi Osaka",
+  "flashscoreLabel": "Osaka Naomi - Sabalenka Aryna",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/",
+  "generatedAt": "2026-06-01T07:16:17.592Z",
+  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/osaka-naomi-MDM4BKiA/sabalenka-aryna-vyhksgUB/",
+  "matchId": "SYyF1SQH",
+  "players": [
+    "Naomi Osaka",
+    "Aryna Sabalenka"
+  ],
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_SYyF1SQH",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_SYyF1SQH"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

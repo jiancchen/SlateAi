@@ -49,6 +49,14 @@ const readJson = async (filePath, fallback = null) => {
   }
 }
 
+const isSeniorRolandGarrosMatch = (match) => {
+  const leagueIds = match.leagueIds || []
+  if (leagueIds.length) return leagueIds.includes('851')
+  const playerUids = (match.raw?.competitors || []).map((player) => String(player.uid || ''))
+  if (playerUids.some((uid) => /~l:900~/.test(uid))) return false
+  return true
+}
+
 const normalizeName = (value) =>
   String(value || '')
     .normalize('NFKD')
@@ -102,6 +110,40 @@ const findQuality = (quality, matchId, name) => {
   return players.find((player) => normalizeName(player.name) === key) ?? null
 }
 
+const findWarehousePlayer = (warehouse, matchId, name) => {
+  const players = warehouse?.matches?.[matchId]?.players || []
+  const key = normalizeName(name)
+  return players.find((player) => normalizeName(player.name) === key) ?? null
+}
+
+const mergeWarehouseExpectedStats = (name, qualityPlayer, warehousePlayer) => {
+  const expectedStats = warehousePlayer?.expectedStats
+  const stats = expectedStats?.stats || {}
+  if (!expectedStats || !Object.keys(stats).length) return qualityPlayer
+  const base = qualityPlayer ? { ...qualityPlayer } : { name, records: {}, recentWindow: {}, recentMatches: [] }
+  const serviceData = { ...(base.serviceData || {}) }
+  const expectedMatches = Number(stats.matches)
+  if ((!Number.isFinite(Number(serviceData.matchesWithStats)) || Number(serviceData.matchesWithStats) <= 0) && Number.isFinite(expectedMatches)) {
+    serviceData.matchesWithStats = expectedMatches
+  }
+  const setIfMissing = (targetKey, expectedKey) => {
+    const existing = Number(serviceData[targetKey])
+    const expected = Number(stats[expectedKey])
+    if ((!Number.isFinite(existing) || existing <= 0) && Number.isFinite(expected) && expected > 0) {
+      serviceData[targetKey] = expected
+    }
+  }
+  setIfMissing('avgServiceHoldPct', 'holdPct')
+  setIfMissing('avgFirstServeWonPct', 'firstServeWonPct')
+  setIfMissing('avgAces', 'avgAces')
+  return {
+    ...base,
+    name: base.name || name,
+    serviceData,
+    expectedStats
+  }
+}
+
 const clayRecordScore = (qualityPlayer) => {
   const record = qualityPlayer?.records?.clay2026
   if (!record || !Number.isFinite(Number(record.winPct)) || !Number.isFinite(Number(record.total))) return 0
@@ -114,11 +156,46 @@ const formScore = (qualityPlayer) => {
   return Number.isFinite(value) ? (value - 50) * 0.18 : 0
 }
 
+const expectedStatsValue = (qualityPlayer, key) => {
+  const stats = qualityPlayer?.expectedStats?.stats || {}
+  const mappedKey = {
+    avgServiceHoldPct: 'holdPct',
+    avgFirstServeWonPct: 'firstServeWonPct',
+    avgAces: 'avgAces',
+    avgDoubleFaults: 'avgDoubleFaults'
+  }[key]
+  if (mappedKey) {
+    const mapped = Number(stats[mappedKey])
+    if (Number.isFinite(mapped) && mapped > 0) return mapped
+  }
+  const value = Number(stats[key])
+  if (Number.isFinite(value) && value > 0) return value
+  if (key === 'avgAces') {
+    const aces = Number(stats.aces)
+    if (Number.isFinite(aces) && aces > 0) return aces
+  }
+  if (key === 'avgDoubleFaults') {
+    const dfs = Number(stats.doubleFaults)
+    if (Number.isFinite(dfs) && dfs > 0) return dfs
+  }
+  if (key === 'servicePointsWonPct') {
+    const firstIn = Number(stats.firstServePct)
+    const firstWon = Number(stats.firstServeWonPct)
+    const secondWon = Number(stats.secondServeWonPct)
+    if (Number.isFinite(firstIn) && Number.isFinite(firstWon) && Number.isFinite(secondWon)) {
+      return (firstIn * firstWon + (100 - firstIn) * secondWon) / 100
+    }
+  }
+  return null
+}
+
 const serviceAverage = (qualityPlayer, key) => {
   const service = qualityPlayer?.serviceData || {}
   const matchesWithStats = Number(service.matchesWithStats)
   const value = Number(service[key])
-  return Number.isFinite(matchesWithStats) && matchesWithStats > 0 && Number.isFinite(value) && value > 0 ? value : NaN
+  if (Number.isFinite(matchesWithStats) && matchesWithStats > 0 && Number.isFinite(value) && value > 0) return value
+  const expected = expectedStatsValue(qualityPlayer, key)
+  return Number.isFinite(expected) ? expected : NaN
 }
 
 const serviceScore = (qualityPlayer) => {
@@ -146,6 +223,22 @@ const averageRecentStat = (qualityPlayer, key) => {
     .filter(Number.isFinite)
   if (!values.length) return null
   return values.reduce((sum, value) => sum + value, 0) / values.length
+}
+
+const recentOrExpectedStat = (qualityPlayer, key) => {
+  const recent = averageRecentStat(qualityPlayer, key)
+  if (Number.isFinite(recent)) return recent
+  const expectedKey = {
+    firstServePct: 'firstServePct',
+    firstServeWonPct: 'firstServeWonPct',
+    secondServeWonPct: 'secondServeWonPct',
+    servicePointsWonPct: 'servicePointsWonPct',
+    doubleFaults: 'avgDoubleFaults',
+    breakPointsSavedPct: 'breakPointsSavedPct',
+    breakPointsConvertedPct: 'breakPointsConvertedPct'
+  }[key]
+  const expected = expectedKey ? expectedStatsValue(qualityPlayer, expectedKey) : null
+  return Number.isFinite(expected) ? expected : null
 }
 
 const averageValues = (values) => {
@@ -208,12 +301,14 @@ const flowProfile = (qualityPlayer, weaknessProfile) => ({
   name: qualityPlayer?.name || weaknessProfile?.name || '',
   holdPct: weaknessProfile?.serviceHoldPct ?? serviceAverage(qualityPlayer, 'avgServiceHoldPct'),
   firstServeWonPct: weaknessProfile?.firstServeWonPct ?? serviceAverage(qualityPlayer, 'avgFirstServeWonPct'),
-  secondServeWonPct: weaknessProfile?.secondServeWonPct ?? averageRecentStat(qualityPlayer, 'secondServeWonPct'),
-  servicePointsWonPct: weaknessProfile?.servicePointsWonPct ?? averageRecentStat(qualityPlayer, 'servicePointsWonPct'),
-  returnPointsWonPct: weaknessProfile?.returnPointsWonPct ?? averageRecentStat(qualityPlayer, 'returnPointsWonPct'),
+  secondServeWonPct: weaknessProfile?.secondServeWonPct ?? recentOrExpectedStat(qualityPlayer, 'secondServeWonPct'),
+  servicePointsWonPct: weaknessProfile?.servicePointsWonPct ?? recentOrExpectedStat(qualityPlayer, 'servicePointsWonPct'),
+  returnPointsWonPct: weaknessProfile?.returnPointsWonPct ?? recentOrExpectedStat(qualityPlayer, 'returnPointsWonPct'),
   returnGamesWonPct: averageRecentStat(qualityPlayer, 'returnGamesWonPct'),
+  breakPointsSavedPct: recentOrExpectedStat(qualityPlayer, 'breakPointsSavedPct'),
+  breakPointsConvertedPct: recentOrExpectedStat(qualityPlayer, 'breakPointsConvertedPct'),
   aces: weaknessProfile?.avgAces ?? serviceAverage(qualityPlayer, 'avgAces'),
-  doubleFaults: weaknessProfile?.avgDoubleFaults ?? averageRecentStat(qualityPlayer, 'doubleFaults'),
+  doubleFaults: weaknessProfile?.avgDoubleFaults ?? recentOrExpectedStat(qualityPlayer, 'doubleFaults'),
   winners: weaknessProfile?.avgWinners ?? averageRecentStat(qualityPlayer, 'winners'),
   unforcedErrors: weaknessProfile?.avgUnforcedErrors ?? averageRecentStat(qualityPlayer, 'unforcedErrors'),
   weaknessScore: weaknessProfile?.weaknessScore ?? null,
@@ -246,6 +341,8 @@ const buildTotalsProfile = ({ tour, confidence, volatility, qualityA, qualityB, 
   const secondServeAvg = averageValues(profiles.map((profile) => profile.secondServeWonPct))
   const returnPointsAvg = averageValues(profiles.map((profile) => profile.returnPointsWonPct))
   const returnGamesAvg = averageValues(profiles.map((profile) => profile.returnGamesWonPct))
+  const breakPointsSavedAvg = averageValues(profiles.map((profile) => profile.breakPointsSavedPct))
+  const breakPointsConvertedAvg = averageValues(profiles.map((profile) => profile.breakPointsConvertedPct))
   const acesAvg = averageValues(profiles.map((profile) => profile.aces))
   const doubleFaultsAvg = averageValues(profiles.map((profile) => profile.doubleFaults))
   const errorGapAvg = averageValues(profiles.map((profile) => {
@@ -328,7 +425,10 @@ const buildTotalsProfile = ({ tour, confidence, volatility, qualityA, qualityB, 
     1,
     10
   )
-  const reasonCore = `hold avg ${formatMaybe(holdAvg, '%')}, return games won ${formatMaybe(returnGamesAvg, '%')}, first-set sample ${formatMaybe(avgFirstSetGames, 'g', 1)}, ${setSamples} recent sets`
+  const pressureCore = Number.isFinite(returnGamesAvg)
+    ? `return games won ${formatMaybe(returnGamesAvg, '%')}`
+    : `BP saved ${formatMaybe(breakPointsSavedAvg, '%')}, BP converted ${formatMaybe(breakPointsConvertedAvg, '%')}`
+  const reasonCore = `hold avg ${formatMaybe(holdAvg, '%')}, ${pressureCore}, first-set sample ${formatMaybe(avgFirstSetGames, 'g', 1)}, ${setSamples} recent sets`
   return {
     profiles,
     expectedFirstSetGames,
@@ -337,6 +437,8 @@ const buildTotalsProfile = ({ tour, confidence, volatility, qualityA, qualityB, 
     holdAvg: Number.isFinite(holdAvg) ? Number(holdAvg.toFixed(1)) : null,
     returnGamesAvg: Number.isFinite(returnGamesAvg) ? Number(returnGamesAvg.toFixed(1)) : null,
     returnPointsAvg: Number.isFinite(returnPointsAvg) ? Number(returnPointsAvg.toFixed(1)) : null,
+    breakPointsSavedAvg: Number.isFinite(breakPointsSavedAvg) ? Number(breakPointsSavedAvg.toFixed(1)) : null,
+    breakPointsConvertedAvg: Number.isFinite(breakPointsConvertedAvg) ? Number(breakPointsConvertedAvg.toFixed(1)) : null,
     setSamples,
     firstSetSamples,
     avgFirstSetGames: Number.isFinite(avgFirstSetGames) ? Number(avgFirstSetGames.toFixed(1)) : null,
@@ -360,11 +462,11 @@ const buildWeaknessProfile = (name, qualityPlayer) => {
   const hold = serviceAverage(qualityPlayer, 'avgServiceHoldPct')
   const firstWon = serviceAverage(qualityPlayer, 'avgFirstServeWonPct')
   const aces = serviceAverage(qualityPlayer, 'avgAces')
-  const doubleFaults = averageRecentStat(qualityPlayer, 'doubleFaults')
-  const firstServePct = averageRecentStat(qualityPlayer, 'firstServePct')
-  const secondServeWon = averageRecentStat(qualityPlayer, 'secondServeWonPct')
-  const returnWon = averageRecentStat(qualityPlayer, 'returnPointsWonPct')
-  const serviceWon = averageRecentStat(qualityPlayer, 'servicePointsWonPct')
+  const doubleFaults = recentOrExpectedStat(qualityPlayer, 'doubleFaults')
+  const firstServePct = recentOrExpectedStat(qualityPlayer, 'firstServePct')
+  const secondServeWon = recentOrExpectedStat(qualityPlayer, 'secondServeWonPct')
+  const returnWon = recentOrExpectedStat(qualityPlayer, 'returnPointsWonPct')
+  const serviceWon = recentOrExpectedStat(qualityPlayer, 'servicePointsWonPct')
   const winners = averageRecentStat(qualityPlayer, 'winners')
   const unforcedErrors = averageRecentStat(qualityPlayer, 'unforcedErrors')
   const breakFacedValues = recentMatches
@@ -445,7 +547,11 @@ const buildWeaknessProfile = (name, qualityPlayer) => {
     servicePointsWonPct: Number.isFinite(serviceWon) ? Math.round(serviceWon) : null,
     weakServeMatches,
     pressureMatches: Number.isFinite(pressureMatches) ? pressureMatches : null,
-    matchesWithStats: Number.isFinite(matchesWithStats) ? matchesWithStats : recentMatches.filter((match) => match?.serviceStats).length,
+    matchesWithStats: Number.isFinite(matchesWithStats) && matchesWithStats > 0
+      ? matchesWithStats
+      : Number.isFinite(Number(qualityPlayer?.expectedStats?.stats?.matches))
+        ? Number(qualityPlayer.expectedStats.stats.matches)
+        : recentMatches.filter((match) => match?.serviceStats).length,
     weaknessScore,
     firstGameComfort,
     liabilities,
@@ -1385,7 +1491,7 @@ const buildBettingMatrix = ({ marketData, valueBoard, setWinProjections, derivat
   return matrix
 }
 
-const buildGame = (match, rankings, quality, date, fanduelIndex, ensembleValueIndex, ensembleRowsByMatch, derivativeIndex) => {
+const buildGame = (match, rankings, quality, warehouse, date, fanduelIndex, ensembleValueIndex, ensembleRowsByMatch, derivativeIndex) => {
   const [a, b] = match.players
   const isAtp = /Men/i.test(match.round) || /ATP|Men/i.test(match.raw?.league || '') || !/^[A-Z][a-z]+a\b/.test(a.name)
   const idPrefix = match.raw?.lg?.includes?.('WTA') || /Women/i.test(match.raw?.league || '') ? 'w' : guessTour(a.name, b.name, rankings)
@@ -1393,8 +1499,10 @@ const buildGame = (match, rankings, quality, date, fanduelIndex, ensembleValueIn
   const matchId = `rg-${idPrefix}-${slug(a.name)}-${slug(b.name)}-${date}`
   const rankA = getRanking(rankings, a.name)
   const rankB = getRanking(rankings, b.name)
-  const qualityA = findQuality(quality, matchId, a.name)
-  const qualityB = findQuality(quality, matchId, b.name)
+  const warehouseA = findWarehousePlayer(warehouse, matchId, a.name)
+  const warehouseB = findWarehousePlayer(warehouse, matchId, b.name)
+  const qualityA = mergeWarehouseExpectedStats(a.name, findQuality(quality, matchId, a.name), warehouseA)
+  const qualityB = mergeWarehouseExpectedStats(b.name, findQuality(quality, matchId, b.name), warehouseB)
   const scoreA = playerScore(rankA, qualityA, tour === 'ATP')
   const scoreB = playerScore(rankB, qualityB, tour === 'ATP')
   const basePickA = scoreA >= scoreB
@@ -1508,6 +1616,7 @@ const main = async () => {
   const scoreboard = await readJson(`data-private/reference/tennis/espn-scoreboard-${options.date}.json`)
   const rankings = await readJson('data-private/reference/tennis/player-rankings.json', { players: {} })
   const quality = await readJson(`web/src/lib/day-${options.date}-tennis-opponent-quality.generated.json`, { matches: {} })
+  const warehouseContext = await readJson(`web/src/lib/day-${options.date}-tennis-warehouse-context.generated.json`, { matches: {} })
   const fanduelLines = await readJson(`data-private/reference/tennis/fanduel-lines-${options.date}.json`, { matches: [] })
   const ensemblePredictions = await readJson(`data-private/predictions/tennis/${options.date}-multimodel-ensemble.json`, { rows: [] })
   const derivativeMarkets = await readJson(`data-private/predictions/tennis/${options.date}-derivative-markets.json`, { rows: [] })
@@ -1525,8 +1634,9 @@ const main = async () => {
   const derivativeIndex = buildDerivativeIndex(derivativeMarkets.rows || [])
   const games = scoreboard.singles
     .filter((match) => !match.doubles && match.players?.length === 2)
+    .filter(isSeniorRolandGarrosMatch)
     .filter((match) => !/qualifying/i.test(String(match.round || '')))
-    .map((match) => buildGame(match, rankings, quality, options.date, fanduelIndex, ensembleValueIndex, ensembleRowsByMatch, derivativeIndex))
+    .map((match) => buildGame(match, rankings, quality, warehouseContext, options.date, fanduelIndex, ensembleValueIndex, ensembleRowsByMatch, derivativeIndex))
     .sort((left, right) => left.startMinutes - right.startMinutes || left.title.localeCompare(right.title))
   const dayLabel = titleDate(options.date)
   const compact = options.date.replaceAll('-', '')

@@ -1,0 +1,668 @@
+{
+  "date": "2026-06-01",
+  "source": "FanDuel Sportsbook event-page Chrome scrape",
+  "capturedAt": "2026-06-01T07:52:13.806Z",
+  "matches": [
+    {
+      "match": "Madison Keys vs Diana Shnaider",
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/madison-keys-v-diana-shnaider-35668416",
+      "eventId": "35668416",
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Madison Keys",
+            "odds": -156
+          },
+          {
+            "player": "Diana Shnaider",
+            "odds": 130
+          }
+        ],
+        "gameHandicap": [
+          {
+            "player": "Madison Keys",
+            "spread": -2.5,
+            "odds": -112
+          },
+          {
+            "player": "Diana Shnaider",
+            "spread": 2.5,
+            "odds": -118
+          }
+        ],
+        "totalGames": [
+          {
+            "side": "Over",
+            "line": 21.5,
+            "odds": -126
+          },
+          {
+            "side": "Under",
+            "line": 21.5,
+            "odds": -108
+          }
+        ],
+        "firstSetTotalGames": [
+          {
+            "side": "Over",
+            "line": 9.5,
+            "odds": -108
+          },
+          {
+            "side": "Under",
+            "line": 9.5,
+            "odds": -126
+          }
+        ],
+        "winAtLeastOneSet": [
+          {
+            "market": "Diana Shnaider to win at least one set",
+            "player": "Diana Shnaider",
+            "selection": "Diana Shnaider Yes",
+            "odds": -210
+          },
+          {
+            "market": "Diana Shnaider to win at least one set",
+            "player": "Diana Shnaider",
+            "selection": "Diana Shnaider No",
+            "odds": 154
+          },
+          {
+            "market": "Madison Keys to win at least one set",
+            "player": "Madison Keys",
+            "selection": "Madison Keys Yes",
+            "odds": -450
+          },
+          {
+            "market": "Madison Keys to win at least one set",
+            "player": "Madison Keys",
+            "selection": "Madison Keys No",
+            "odds": 300
+          }
+        ]
+      },
+      "capturedAt": "2026-06-01T07:51:07.647Z",
+      "source": "FanDuel Sportsbook event-page Chrome scrape"
+    },
+    {
+      "match": "Aryna Sabalenka vs Naomi Osaka",
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/aryna-sabalenka-v-naomi-osaka-35667356",
+      "eventId": "35667356",
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Aryna Sabalenka",
+            "odds": -480
+          },
+          {
+            "player": "Naomi Osaka",
+            "odds": 360
+          }
+        ],
+        "gameHandicap": [
+          {
+            "player": "Aryna Sabalenka",
+            "spread": -4.5,
+            "odds": -134
+          },
+          {
+            "player": "Naomi Osaka",
+            "spread": 4.5,
+            "odds": 100
+          }
+        ],
+        "totalGames": [
+          {
+            "side": "Over",
+            "line": 20.5,
+            "odds": -112
+          },
+          {
+            "side": "Under",
+            "line": 20.5,
+            "odds": -118
+          }
+        ],
+        "firstSetTotalGames": [
+          {
+            "side": "Over",
+            "line": 9.5,
+            "odds": -106
+          },
+          {
+            "side": "Under",
+            "line": 9.5,
+            "odds": -132
+          }
+        ],
+        "winAtLeastOneSet": [
+          {
+            "market": "Aryna Sabalenka to win at least one set",
+            "player": "Aryna Sabalenka",
+            "selection": "Aryna Sabalenka Yes",
+            "odds": -1450
+          },
+          {
+            "market": "Aryna Sabalenka to win at least one set",
+            "player": "Aryna Sabalenka",
+            "selection": "Aryna Sabalenka No",
+            "odds": 660
+          },
+          {
+            "market": "Naomi Osaka to win at least one set",
+            "player": "Naomi Osaka",
+            "selection": "Naomi Osaka Yes",
+            "odds": 116
+          },
+          {
+            "market": "Naomi Osaka to win at least one set",
+            "player": "Naomi Osaka",
+            "selection": "Naomi Osaka No",
+            "odds": -156
+          }
+        ]
+      },
+      "capturedAt": "2026-06-01T07:51:17.065Z",
+      "source": "FanDuel Sportsbook event-page Chrome scrape"
+    },
+    {
+      "match": "Anastasia Potapova vs Anna Kalinskaya",
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/anastasia-potapova-v-anna-kalinskaya-35668143",
+      "eventId": "35668143",
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Anastasia Potapova",
+            "odds": -220
+          },
+          {
+            "player": "Anna Kalinskaya",
+            "odds": 180
+          }
+        ],
+        "gameHandicap": [
+          {
+            "player": "Anastasia Potapova",
+            "spread": -3.5,
+            "odds": -118
+          },
+          {
+            "player": "Anna Kalinskaya",
+            "spread": 3.5,
+            "odds": -112
+          }
+        ],
+        "totalGames": [
+          {
+            "side": "Over",
+            "line": 21.5,
+            "odds": -118
+          },
+          {
+            "side": "Under",
+            "line": 21.5,
+            "odds": -112
+          }
+        ],
+        "firstSetTotalGames": [
+          {
+            "side": "Over",
+            "line": 9.5,
+            "odds": -108
+          },
+          {
+            "side": "Under",
+            "line": 9.5,
+            "odds": -128
+          }
+        ],
+        "winAtLeastOneSet": [
+          {
+            "market": "Anna Kalinskaya to win at least one set",
+            "player": "Anna Kalinskaya",
+            "selection": "Anna Kalinskaya Yes",
+            "odds": -160
+          },
+          {
+            "market": "Anna Kalinskaya to win at least one set",
+            "player": "Anna Kalinskaya",
+            "selection": "Anna Kalinskaya No",
+            "odds": 120
+          },
+          {
+            "market": "Anastasia Potapova to win at least one set",
+            "player": "Anastasia Potapova",
+            "selection": "Anastasia Potapova Yes",
+            "odds": -600
+          },
+          {
+            "market": "Anastasia Potapova to win at least one set",
+            "player": "Anastasia Potapova",
+            "selection": "Anastasia Potapova No",
+            "odds": 380
+          }
+        ]
+      },
+      "capturedAt": "2026-06-01T07:51:26.520Z",
+      "source": "FanDuel Sportsbook event-page Chrome scrape"
+    },
+    {
+      "match": "Maja Chwalinska vs Diane Parry",
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/maja-chwalinska-v-diane-parry-35667464",
+      "eventId": "35667464",
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Maja Chwalinska",
+            "odds": -205
+          },
+          {
+            "player": "Diane Parry",
+            "odds": 168
+          }
+        ],
+        "gameHandicap": [
+          {
+            "player": "Maja Chwalinska",
+            "spread": -3.5,
+            "odds": -118
+          },
+          {
+            "player": "Diane Parry",
+            "spread": 3.5,
+            "odds": -112
+          }
+        ],
+        "totalGames": [
+          {
+            "side": "Over",
+            "line": 21.5,
+            "odds": -110
+          },
+          {
+            "side": "Under",
+            "line": 21.5,
+            "odds": -120
+          }
+        ],
+        "firstSetTotalGames": [
+          {
+            "side": "Over",
+            "line": 9.5,
+            "odds": -102
+          },
+          {
+            "side": "Under",
+            "line": 9.5,
+            "odds": -136
+          }
+        ],
+        "winAtLeastOneSet": [
+          {
+            "market": "Maja Chwalinska to win at least one set",
+            "player": "Maja Chwalinska",
+            "selection": "Maja Chwalinska Yes",
+            "odds": -600
+          },
+          {
+            "market": "Maja Chwalinska to win at least one set",
+            "player": "Maja Chwalinska",
+            "selection": "Maja Chwalinska No",
+            "odds": 380
+          },
+          {
+            "market": "Diane Parry to win at least one set",
+            "player": "Diane Parry",
+            "selection": "Diane Parry Yes",
+            "odds": -154
+          },
+          {
+            "market": "Diane Parry to win at least one set",
+            "player": "Diane Parry",
+            "selection": "Diane Parry No",
+            "odds": 116
+          }
+        ]
+      },
+      "capturedAt": "2026-06-01T07:51:35.969Z",
+      "source": "FanDuel Sportsbook event-page Chrome scrape"
+    },
+    {
+      "match": "Felix Auger-Aliassime vs Alejandro Tabilo",
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/felix-auger-aliassime-v-alejandro-tabilo-35669004",
+      "eventId": "35669004",
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Felix Auger-Aliassime",
+            "odds": -182
+          },
+          {
+            "player": "Alejandro Tabilo",
+            "odds": 150
+          }
+        ],
+        "gameHandicap": [
+          {
+            "player": "Felix Auger-Aliassime",
+            "spread": -3.5,
+            "odds": -110
+          },
+          {
+            "player": "Alejandro Tabilo",
+            "spread": 3.5,
+            "odds": -120
+          }
+        ],
+        "totalGames": [
+          {
+            "side": "Over",
+            "line": 38.5,
+            "odds": -112
+          },
+          {
+            "side": "Under",
+            "line": 38.5,
+            "odds": -118
+          }
+        ],
+        "firstSetTotalGames": [
+          {
+            "side": "Over",
+            "line": 9.5,
+            "odds": -148
+          },
+          {
+            "side": "Under",
+            "line": 9.5,
+            "odds": 106
+          }
+        ],
+        "winAtLeastOneSet": [
+          {
+            "market": "Felix Auger-Aliassime to win at least one set",
+            "player": "Felix Auger-Aliassime",
+            "selection": "Felix Auger-Aliassime Yes",
+            "odds": -1100
+          },
+          {
+            "market": "Felix Auger-Aliassime to win at least one set",
+            "player": "Felix Auger-Aliassime",
+            "selection": "Felix Auger-Aliassime No",
+            "odds": 540
+          },
+          {
+            "market": "Alejandro Tabilo to win at least one set",
+            "player": "Alejandro Tabilo",
+            "selection": "Alejandro Tabilo Yes",
+            "odds": -380
+          },
+          {
+            "market": "Alejandro Tabilo to win at least one set",
+            "player": "Alejandro Tabilo",
+            "selection": "Alejandro Tabilo No",
+            "odds": 260
+          }
+        ]
+      },
+      "capturedAt": "2026-06-01T07:51:45.417Z",
+      "source": "FanDuel Sportsbook event-page Chrome scrape"
+    },
+    {
+      "match": "Frances Tiafoe vs Matteo Arnaldi",
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/frances-tiafoe-v-matteo-arnaldi-35669011",
+      "eventId": "35669011",
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Frances Tiafoe",
+            "odds": -108
+          },
+          {
+            "player": "Matteo Arnaldi",
+            "odds": -111
+          }
+        ],
+        "gameHandicap": [
+          {
+            "player": "Frances Tiafoe",
+            "spread": 0.5,
+            "odds": -120
+          },
+          {
+            "player": "Matteo Arnaldi",
+            "spread": -0.5,
+            "odds": -112
+          }
+        ],
+        "totalGames": [
+          {
+            "side": "Over",
+            "line": 39.5,
+            "odds": -112
+          },
+          {
+            "side": "Under",
+            "line": 39.5,
+            "odds": -118
+          }
+        ],
+        "firstSetTotalGames": [
+          {
+            "side": "Over",
+            "line": 9.5,
+            "odds": -172
+          },
+          {
+            "side": "Under",
+            "line": 9.5,
+            "odds": 124
+          }
+        ],
+        "winAtLeastOneSet": [
+          {
+            "market": "Matteo Arnaldi to win at least one set",
+            "player": "Matteo Arnaldi",
+            "selection": "Matteo Arnaldi Yes",
+            "odds": -650
+          },
+          {
+            "market": "Matteo Arnaldi to win at least one set",
+            "player": "Matteo Arnaldi",
+            "selection": "Matteo Arnaldi No",
+            "odds": 400
+          },
+          {
+            "market": "Frances Tiafoe to win at least one set",
+            "player": "Frances Tiafoe",
+            "selection": "Frances Tiafoe Yes",
+            "odds": -600
+          },
+          {
+            "market": "Frances Tiafoe to win at least one set",
+            "player": "Frances Tiafoe",
+            "selection": "Frances Tiafoe No",
+            "odds": 380
+          }
+        ]
+      },
+      "capturedAt": "2026-06-01T07:51:54.860Z",
+      "source": "FanDuel Sportsbook event-page Chrome scrape"
+    },
+    {
+      "match": "Juan Manuel Cerundolo vs Matteo Berrettini",
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/juan-manuel-cerundolo-v-matteo-berrettini-35668186",
+      "eventId": "35668186",
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Juan Manuel Cerundolo",
+            "odds": 130
+          },
+          {
+            "player": "Matteo Berrettini",
+            "odds": -156
+          }
+        ],
+        "gameHandicap": [
+          {
+            "player": "Juan Manuel Cerundolo",
+            "spread": 2.5,
+            "odds": -116
+          },
+          {
+            "player": "Matteo Berrettini",
+            "spread": -2.5,
+            "odds": -116
+          }
+        ],
+        "totalGames": [
+          {
+            "side": "Over",
+            "line": 38.5,
+            "odds": -118
+          },
+          {
+            "side": "Under",
+            "line": 38.5,
+            "odds": -112
+          }
+        ],
+        "firstSetTotalGames": [
+          {
+            "side": "Over",
+            "line": 9.5,
+            "odds": -144
+          },
+          {
+            "side": "Under",
+            "line": 9.5,
+            "odds": 104
+          }
+        ],
+        "winAtLeastOneSet": [
+          {
+            "market": "Matteo Berrettini to win at least one set",
+            "player": "Matteo Berrettini",
+            "selection": "Matteo Berrettini Yes",
+            "odds": -950
+          },
+          {
+            "market": "Matteo Berrettini to win at least one set",
+            "player": "Matteo Berrettini",
+            "selection": "Matteo Berrettini No",
+            "odds": 500
+          },
+          {
+            "market": "Juan Manuel Cerundolo to win at least one set",
+            "player": "Juan Manuel Cerundolo",
+            "selection": "Juan Manuel Cerundolo Yes",
+            "odds": -450
+          },
+          {
+            "market": "Juan Manuel Cerundolo to win at least one set",
+            "player": "Juan Manuel Cerundolo",
+            "selection": "Juan Manuel Cerundolo No",
+            "odds": 300
+          }
+        ]
+      },
+      "capturedAt": "2026-06-01T07:52:04.315Z",
+      "source": "FanDuel Sportsbook event-page Chrome scrape"
+    },
+    {
+      "match": "Flavio Cobolli vs Zachary Svajda",
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/flavio-cobolli-v-zachary-svajda-35667144",
+      "eventId": "35667144",
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Flavio Cobolli",
+            "odds": -820
+          },
+          {
+            "player": "Zachary Svajda",
+            "odds": 550
+          }
+        ],
+        "gameHandicap": [
+          {
+            "player": "Flavio Cobolli",
+            "spread": -7.5,
+            "odds": -110
+          },
+          {
+            "player": "Zachary Svajda",
+            "spread": 7.5,
+            "odds": -122
+          }
+        ],
+        "totalGames": [
+          {
+            "side": "Over",
+            "line": 33.5,
+            "odds": -112
+          },
+          {
+            "side": "Under",
+            "line": 33.5,
+            "odds": -118
+          }
+        ],
+        "firstSetTotalGames": [
+          {
+            "side": "Over",
+            "line": 9.5,
+            "odds": -108
+          },
+          {
+            "side": "Under",
+            "line": 9.5,
+            "odds": -132
+          }
+        ],
+        "winAtLeastOneSet": [
+          {
+            "market": "Zachary Svajda to win at least one set",
+            "player": "Zachary Svajda",
+            "selection": "Zachary Svajda Yes",
+            "odds": -126
+          },
+          {
+            "market": "Zachary Svajda to win at least one set",
+            "player": "Zachary Svajda",
+            "selection": "Zachary Svajda No",
+            "odds": -108
+          },
+          {
+            "market": "Flavio Cobolli to win at least one set",
+            "player": "Flavio Cobolli",
+            "selection": "Flavio Cobolli Yes",
+            "odds": -6000
+          },
+          {
+            "market": "Flavio Cobolli to win at least one set",
+            "player": "Flavio Cobolli",
+            "selection": "Flavio Cobolli No",
+            "odds": 1500
+          }
+        ]
+      },
+      "capturedAt": "2026-06-01T07:52:13.803Z",
+      "source": "FanDuel Sportsbook event-page Chrome scrape"
+    }
+  ],
+  "unmatched": [
+    "Gabriela Knutson vs Joanna Garland",
+    "Mika Stojsavljevic vs Emerson Jones",
+    "Elvina Kalieva vs Talia Gibson",
+    "Celine Naef vs Maddison Inglis",
+    "Mary Stoiana vs Lulu Sun",
+    "Mananchaya Sawangkaew vs Linda Klimovicova",
+    "Tatiana Pieri vs Victoria Bosio",
+    "Varvara Lepchenko vs Iryna Shymanovich",
+    "Elizara Yaneva vs Lisa Pigato",
+    "Sapfo Sakellaridi vs Sofia Costoulas",
+    "Gao Xinyu vs Darya Astakhova"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "slateDate": "2026-06-01",
+  "boardMatchId": "rg-w-anastasia-potapova-anna-kalinskaya-2026-06-01",
+  "boardTitle": "Anastasia Potapova vs Anna Kalinskaya",
+  "flashscoreLabel": "Kalinskaya Anna - Potapova Anastasia",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/",
+  "generatedAt": "2026-06-01T07:16:16.575Z",
+  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/kalinskaya-anna-KGdcQnEf/potapova-anastasia-x81l09qG/",
+  "matchId": "pCanaMiD",
+  "players": [
+    "Anna Kalinskaya",
+    "Anastasia Potapova"
+  ],
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_pCanaMiD",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_pCanaMiD"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

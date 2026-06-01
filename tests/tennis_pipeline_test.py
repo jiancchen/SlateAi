@@ -10,6 +10,7 @@ from pathlib import Path
 from pipeline.tennis.warehouse.tennis_warehouse import (
     apply_tennis_migrations,
     import_flashscore,
+    import_sofascore_player_page_stats,
     infer_recent_map_slate_date,
     init_db,
 )
@@ -67,6 +68,69 @@ class TennisWarehouseImportTest(unittest.TestCase):
             self.assertEqual(row["slate_date"], "2026-05-30")
             self.assertEqual(row["board_match_id"], "rg-test-player-a-player-b-2026-05-30")
             self.assertEqual(row["board_player_name"], "Player A")
+
+    def test_import_sofascore_player_page_stats_persists_pressure_rows(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            stats_dir = Path(tmp)
+            (stats_dir / "2026-06-01.json").write_text(
+                json.dumps(
+                    {
+                        "slateDate": "2026-06-01",
+                        "season": 2026,
+                        "players": [
+                            {
+                                "name": "Anna Kalinskaya",
+                                "normalizedName": "anna kalinskaya",
+                                "sofascorePlayerId": 179146,
+                                "sourceUrl": "https://www.sofascore.com/tennis/player/kalinskaya-anna/179146",
+                                "capturedAt": "2026-06-01T07:00:00Z",
+                                "stats": {
+                                    "clay": {
+                                        "surface": "Clay",
+                                        "matchesWon": 7,
+                                        "matchesTotal": 10,
+                                        "matchesWonPct": 70,
+                                        "firstServePct": 70.1,
+                                        "firstServeWonPct": 56.6,
+                                        "secondServeWonPct": 40.1,
+                                        "acesPerMatch": 1.5,
+                                        "doubleFaultsPerMatch": 4.5,
+                                        "breakPointsSaved": 42,
+                                        "breakPointsFaced": 81,
+                                        "breakPointsSavedPct": 51.9,
+                                        "breakPointsConverted": 44,
+                                        "breakPointsToConvert": 74,
+                                        "breakPointsConvertedPct": 59.5,
+                                    }
+                                },
+                            }
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            conn = sqlite3.connect(":memory:")
+            conn.row_factory = sqlite3.Row
+            init_db(conn)
+
+            counts = import_sofascore_player_page_stats(conn, stats_dir, "2026-06-01")
+
+            self.assertEqual(counts["players"], 1)
+            self.assertEqual(counts["stat_rows"], 1)
+            row = conn.execute(
+                """
+                select surface, first_serve_pct, first_serve_won_pct,
+                       second_serve_won_pct, break_points_saved_pct,
+                       break_points_converted_pct
+                from tennis_sofascore_player_page_stats
+                where normalized_name = 'anna kalinskaya'
+                """
+            ).fetchone()
+            self.assertIsNotNone(row)
+            self.assertEqual(row["surface"], "Clay")
+            self.assertAlmostEqual(row["first_serve_pct"], 70.1)
+            self.assertAlmostEqual(row["break_points_saved_pct"], 51.9)
+            self.assertAlmostEqual(row["break_points_converted_pct"], 59.5)
 
     def test_weather_tables_are_required_by_health_gate(self) -> None:
         conn = sqlite3.connect(":memory:")

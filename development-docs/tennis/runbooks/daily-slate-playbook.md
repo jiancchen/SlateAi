@@ -22,6 +22,8 @@ node pipeline/tennis/publish/enrich-opponent-quality.mjs --input web/src/lib/day
 npm run data:import:tennis-slate -- --date YYYY-MM-DD
 npm run data:fetch:tennis-sofascore-slate -- --date YYYY-MM-DD
 npm run data:import:tennis-sofascore
+npm run data:fetch:tennis-sofascore-player-stats -- --date YYYY-MM-DD
+npm run data:import:tennis-sofascore-player-stats -- --date YYYY-MM-DD
 npm run data:fetch:tennis-weather -- --date YYYY-MM-DD
 npm run data:fetch:tennis-flashscore-slate -- --date YYYY-MM-DD
 npm run data:import:tennis-flashscore
@@ -159,6 +161,7 @@ Decision rules:
 - O/U grading must use expected match games and expected first-set games, not only winner confidence.
 - Win-a-set probability must be visible for both players. It is especially important for best-of-five matches and for live hedge paths where the underdog wins early but the favorite remains likely to take a set.
 - Each match detail must show both players' pressure stats near the decision matrix: hold %, break points saved %, and break points converted %. If the warehouse lacks direct hold %, derive it from expected first-serve-in, first-serve-won, and second-serve-won so the UI does not hide serve stability.
+- SofaScore player-page stats are required pre-match for this pressure block. Pull the `Statistics` tab with the clay surface filter and store `1st serve`, `1st serve points won`, `2nd serve points won`, `BP saved`, and `BP converted`. If direct match stats are unavailable, use these player-page rows as the expected-stat fallback instead of showing N/A.
 - Every match writeup must name the best market, not just the projected winner. "Pass" is acceptable only when all four price lanes fail.
 
 Minimum modeling inputs:
@@ -190,6 +193,7 @@ Each singles match needs:
 - Current ranking snapshot from Live Tennis or fallback ranking warehouse.
 - Clay record, recent record, recent opponent rank quality, and adjusted form.
 - Recent service and return metrics: hold, second serve, error control, return pressure, closeout.
+- SofaScore player-page pressure stats for the current slate: first serve in, first-serve points won, second-serve points won, break points saved %, and break points converted %. Use clay-filtered rows first; all-surface rows are fallback only.
 - Roland Garros replay flow where available: service games, holds, breaks lost, return games, breaks won, long-game rate.
 - H2H with dates and surfaces, not just total count.
 - FanDuel or sportsbook ML/spread/total from event pages, keyed as `moneyline`, `gameHandicap`, and `totalGames`.

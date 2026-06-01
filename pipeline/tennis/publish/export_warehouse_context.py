@@ -281,6 +281,77 @@ def expected_stats(conn: sqlite3.Connection, match_id: str) -> dict[str, dict[st
     return result
 
 
+def hold_pct_from_service_points(first_in: float | None, first_won: float | None, second_won: float | None) -> float | None:
+    if first_in is None or first_won is None or second_won is None:
+        return None
+    point_win = (first_in / 100) * (first_won / 100) + (1 - first_in / 100) * (second_won / 100)
+    if point_win <= 0 or point_win >= 1:
+        return None
+    q = 1 - point_win
+    pre_deuce = point_win ** 4 * (1 + 4 * q + 10 * q ** 2)
+    reach_deuce = 20 * point_win ** 3 * q ** 3
+    win_from_deuce = point_win ** 2 / (point_win ** 2 + q ** 2)
+    return round(max(0, min(100, (pre_deuce + reach_deuce * win_from_deuce) * 100)), 1)
+
+
+def player_page_expected_stats(conn: sqlite3.Connection, date: str) -> dict[str, dict[str, Any]]:
+    try:
+        rows = conn.execute(
+            """
+            select *
+            from tennis_sofascore_player_page_stats
+            where as_of_date = ?
+            order by normalized_name,
+              case surface when 'Clay' then 0 when 'All surfaces' then 1 else 2 end
+            """,
+            (date,),
+        ).fetchall()
+    except sqlite3.OperationalError:
+        return {}
+    result: dict[str, dict[str, Any]] = {}
+    for row in rows:
+        key = row["normalized_name"]
+        if key in result:
+            continue
+        first_in = row["first_serve_pct"]
+        first_won = row["first_serve_won_pct"]
+        second_won = row["second_serve_won_pct"]
+        stats = {
+            "matches": row["matches_total"],
+            "wins": row["matches_won"],
+            "winPct": row["matches_won_pct"],
+            "holdPct": hold_pct_from_service_points(first_in, first_won, second_won),
+            "firstServePct": first_in,
+            "firstServeWonPct": first_won,
+            "secondServePct": row["second_serve_pct"],
+            "secondServeWonPct": second_won,
+            "aces": row["aces_per_match"],
+            "avgAces": row["aces_per_match"],
+            "doubleFaults": row["double_faults_per_match"],
+            "avgDoubleFaults": row["double_faults_per_match"],
+            "breakPointsSavedPct": row["break_points_saved_pct"],
+            "breakPointsConvertedPct": row["break_points_converted_pct"],
+            "breakPointsSaved": row["break_points_saved"],
+            "breakPointsFaced": row["break_points_faced"],
+            "breakPointsConverted": row["break_points_converted"],
+            "breakPointsToConvert": row["break_points_to_convert"],
+            "tiebreaksWonPct": row["tiebreaks_won_pct"],
+        }
+        stats = {name: value for name, value in stats.items() if value is not None}
+        if not stats:
+            continue
+        result[key] = {
+            "name": row["player_name"],
+            "source": f"SofaScore player page {row['season']} {row['surface']} stats",
+            "matches": row["matches_total"],
+            "note": "Pregame expected stats from SofaScore player-page surface filter; hold is derived from first-serve-in, first-serve-won, and second-serve-won.",
+            "stats": stats,
+            "sourceUrl": row["source_url"],
+            "surface": row["surface"],
+        }
+    return result
+
+
 def match_weather(conn: sqlite3.Connection, match_id: str) -> dict[str, Any] | None:
     row = conn.execute(
         """
@@ -419,6 +490,7 @@ def compact_sofascore_signals(raw_json: str | None, home_name: str | None, away_
 def export_context(date: str) -> dict[str, Any]:
     conn = connect()
     matches: dict[str, Any] = {}
+    player_page_expected = player_page_expected_stats(conn, date)
     for match in conn.execute(
         """
         select *
@@ -470,10 +542,16 @@ def export_context(date: str) -> dict[str, Any]:
 
         def merged_expected(player_name: str | None, side: str | None) -> dict[str, Any] | None:
             recent_expected = player_expected.get(normalize_name(player_name)) or {}
+            page_expected = player_page_expected.get(normalize_name(player_name)) or {}
             season_expected = side_expected.get(side or "") or {}
             recent_stats = {
                 key: value
                 for key, value in (recent_expected.get("stats") or {}).items()
+                if value is not None
+            }
+            page_stats = {
+                key: value
+                for key, value in (page_expected.get("stats") or {}).items()
                 if value is not None
             }
             season_stats = {
@@ -481,14 +559,28 @@ def export_context(date: str) -> dict[str, Any]:
                 for key, value in (season_expected.get("stats") or {}).items()
                 if value is not None
             }
-            stats = {**season_stats, **recent_stats}
+            stats = {**season_stats, **page_stats, **recent_stats}
             if not stats:
                 return None
+            source = (
+                recent_expected.get("source")
+                if recent_stats
+                else page_expected.get("source")
+                if page_stats
+                else season_expected.get("source")
+            )
+            note = (
+                "Pregame expected stats merge recent joined match rows with SofaScore player-page/tournament aggregates where available."
+                if recent_stats
+                else page_expected.get("note")
+                or "Pregame expected stats from SofaScore tournament-season aggregate."
+            )
             return {
-                "source": recent_expected.get("source") or season_expected.get("source"),
-                "matches": recent_expected.get("matches") or season_expected.get("matches"),
-                "note": "Pregame expected stats merge recent joined match rows with SofaScore tournament-season aggregates where available.",
+                "source": source,
+                "matches": recent_expected.get("matches") or page_expected.get("matches") or season_expected.get("matches"),
+                "note": note,
                 "stats": stats,
+                "sourceUrl": recent_expected.get("sourceUrl") or page_expected.get("sourceUrl"),
             }
 
         for player_key, expected in player_expected.items():
@@ -568,6 +660,117 @@ def export_context(date: str) -> dict[str, Any]:
                 "isPregame": len(rows) == 0 and expected_stat_rows > 0,
             },
         }
+    if not matches:
+        for row in conn.execute(
+            """
+            select *
+            from tennis_matches
+            where slate_date = ?
+            order by start_minutes, match_id
+            """,
+            (date,),
+        ):
+            row = dict(row)
+            match_id = row["match_id"]
+            player_expected = expected_stats(conn, match_id)
+            form_metrics_by_player = recent_form_metrics(conn, match_id)
+            h2h_rows = h2h_match_rows(conn, match_id)
+            weather = match_weather(conn, match_id)
+            players = []
+            for side, player_name in (("home", row.get("player1_name")), ("away", row.get("player2_name"))):
+                if not player_name:
+                    continue
+                player_key = normalize_name(player_name)
+                expected = player_expected.get(player_key)
+                page_expected = player_page_expected.get(player_key)
+                if expected and page_expected:
+                    expected_stats_non_null = {
+                        key: value
+                        for key, value in (expected.get("stats") or {}).items()
+                        if value is not None
+                    }
+                    expected = {
+                        **page_expected,
+                        **expected,
+                        "source": expected.get("source") if expected_stats_non_null else page_expected.get("source"),
+                        "matches": expected.get("matches") or page_expected.get("matches"),
+                        "note": expected.get("note") if expected_stats_non_null else page_expected.get("note"),
+                        "stats": {
+                            **(page_expected.get("stats") or {}),
+                            **expected_stats_non_null,
+                        },
+                    }
+                elif page_expected:
+                    expected = page_expected
+                form_metrics = form_metrics_by_player.get(player_key)
+                stats = {}
+                if expected and expected.get("stats"):
+                    stats = expected.get("stats") or {}
+                players.append(
+                    {
+                        "name": player_name,
+                        "side": side,
+                        "stats": {},
+                        "expectedStats": expected
+                        or {
+                            "source": "Flashscore recent-form metric fallback",
+                            "matches": len((form_metrics or {}).get("matches") or []),
+                            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+                            "stats": stats,
+                        },
+                        "recentFormMetrics": form_metrics,
+                    }
+                )
+
+            expected_stat_rows = sum(
+                len((player.get("expectedStats") or {}).get("stats") or {})
+                for player in players
+            )
+            recent_metric_rows = sum(
+                len(((player.get("recentFormMetrics") or {}).get("summary") or []))
+                for player in players
+            )
+            matches[match_id] = {
+                "source": "SQLite tennis warehouse fallback",
+                "eventId": row.get("match_id"),
+                "sourceUrl": None,
+                "capturedAt": row.get("updated_at"),
+                "surface": "Clay",
+                "tournament": "Roland Garros",
+                "category": "ATP" if str(match_id).startswith("rg-m-") else "WTA",
+                "startTimestamp": weather.get("startTs") if weather else None,
+                "players": players,
+                "h2h": {
+                    "homeName": row.get("player1_name"),
+                    "awayName": row.get("player2_name"),
+                    "homeWins": None,
+                    "awayWins": None,
+                    "draws": None,
+                    "matches": h2h_rows,
+                    "coverage": {
+                        "datedRows": len([item for item in h2h_rows if item.get("dateLabel") or item.get("isoDate")]),
+                        "surfaceRows": len([item for item in h2h_rows if item.get("surface")]),
+                        "weightedRows": len([item for item in h2h_rows if isinstance(item.get("weight"), (int, float))]),
+                    },
+                },
+                "score": {"home": None, "away": None},
+                "sofascoreSignals": None,
+                "weather": weather,
+                "allStatRows": [],
+                "coverage": {
+                    "hasEvent": False,
+                    "hasH2h": bool(h2h_rows),
+                    "allStatRows": 0,
+                    "playerStatRows": 0,
+                    "liveStatRows": 0,
+                    "expectedStatRows": expected_stat_rows,
+                    "recentMetricRows": recent_metric_rows,
+                    "seasonStatRows": 0,
+                    "liveStatsStatus": None,
+                    "hasWeather": weather is not None and bool(weather.get("hourlyRows")),
+                    "isPregame": True,
+                },
+            }
     conn.close()
     return {
         "date": date,

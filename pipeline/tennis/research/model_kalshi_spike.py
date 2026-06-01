@@ -139,6 +139,13 @@ def load_feature_frame() -> pd.DataFrame:
         "opponent_adjusted_form_score",
         "rank_quality",
         "recent_resistance_rate",
+        "pps_hold_pct",
+        "pps_first_serve_won_pct",
+        "pps_second_serve_won_pct",
+        "pps_aces",
+        "pps_double_faults",
+        "pps_bp_saved_pct",
+        "pps_bp_converted_pct",
     ]
     for base in feature_bases:
         left = pd.to_numeric(rows.get(f"p1_{base}"), errors="coerce") if f"p1_{base}" in rows else pd.Series(np.nan, index=rows.index)

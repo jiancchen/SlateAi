@@ -1,25 +1,1020 @@
 {
-  "slateDate": "2026-05-30",
-  "boardMatchId": "rg-m-matteo-berrettini-francisco-comesana-2026-05-30",
-  "boardTitle": "Matteo Berrettini vs Francisco Comesana",
-  "flashscoreLabel": "Comesana Francisco - Berrettini Matteo",
-  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
-  "generatedAt": "2026-05-30T01:22:36.437Z",
-  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/berrettini-matteo-OhwtM7N8/comesana-francisco-SxKK0RUD/",
-  "matchId": "dtjt9iEU",
+  "sourceKind": "recent-match",
+  "slateDate": "2026-06-01",
+  "boardMatchId": "rg-m-juan-manuel-cerundolo-matteo-berrettini-2026-06-01",
+  "boardTitle": "Juan Manuel Cerundolo vs Matteo Berrettini",
+  "boardPlayerName": "Matteo Berrettini",
+  "recentOpponentName": "Francisco Comesana",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "30 May 26",
+  "recentIsoDate": "2026-05-30",
+  "recentResult": "ARG  7-63 5-7 6-74 6-4 7-613 3rd",
+  "flashscoreLabel": "Berrettini M. - Comesana F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
   "players": [
-    "Matteo Berrettini",
-    "Francisco Comesana"
+    "Berrettini M.",
+    "Comesana F."
   ],
+  "generatedAt": "2026-06-01T07:25:07.005Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/dtjt9iEU/",
+  "matchId": "dtjt9iEU",
   "feedUrls": {
     "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_dtjt9iEU",
     "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_dtjt9iEU"
   },
   "scoreSummary": {
-    "sets": [],
-    "totalDuration": ""
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 3,
+        "duration": "0:54"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:03"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      },
+      {
+        "label": "Set 5",
+        "leftGames": 15,
+        "rightGames": 13,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "5:16"
   },
-  "scopes": [],
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "20",
+              "right": "20",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "74%",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (96/117)",
+              "right": "78% (114/147)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (41/74)",
+              "right": "43% (22/51)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/8",
+              "right": "10/13",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (33/147)",
+              "right": "18% (21/117)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (29/51)",
+              "right": "45% (33/74)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/13",
+              "right": "3/8",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "70",
+              "right": "59",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "80",
+              "right": "56",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (37/52)",
+              "right": "77% (24/31)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (137/191)",
+              "right": "69% (136/198)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (62/198)",
+              "right": "28% (54/191)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (199/389)",
+              "right": "49% (190/389)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "90% (26/29)",
+              "right": "90% (26/29)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return games won",
+              "left": "10% (3/29)",
+              "right": "10% (3/29)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (29/58)",
+              "right": "50% (29/58)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "68%",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (20/24)",
+              "right": "86% (24/28)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "82% (9/11)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "4/4",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (4/28)",
+              "right": "17% (4/24)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (8/13)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/4",
+              "right": "0/0",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "10",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "11",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "83% (29/35)",
+              "right": "71% (29/41)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (12/41)",
+              "right": "17% (6/35)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (41/76)",
+              "right": "46% (35/76)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "73%",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (15/21)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "35% (8/23)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/8",
+              "right": "1/3",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (9/24)",
+              "right": "29% (6/21)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (5/9)",
+              "right": "65% (15/23)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "3/8",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "13",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "13",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Net points won",
+              "left": "69% (9/13)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (23/44)",
+              "right": "58% (19/33)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (14/33)",
+              "right": "48% (21/44)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (37/77)",
+              "right": "52% (40/77)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "79%",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "92% (22/24)",
+              "right": "87% (27/31)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "13% (4/31)",
+              "right": "8% (2/24)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "9",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "9",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Net points won",
+              "left": "82% (9/11)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "82% (27/33)",
+              "right": "77% (30/39)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (9/39)",
+              "right": "18% (6/33)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (36/72)",
+              "right": "50% (36/72)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "5",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "73%",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (13/16)",
+              "right": "66% (19/29)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (8/12)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "5/6",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (10/29)",
+              "right": "19% (3/16)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/6",
+              "right": "0/0",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "13",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "12",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (22/29)",
+              "right": "60% (24/40)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (16/40)",
+              "right": "24% (7/29)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (38/69)",
+              "right": "45% (31/69)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 5",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "3",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "78%",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (26/32)",
+              "right": "83% (29/35)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (11/19)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (6/35)",
+              "right": "19% (6/32)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "14",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "11",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (12/17)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (36/50)",
+              "right": "76% (34/45)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (11/45)",
+              "right": "28% (14/50)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (47/95)",
+              "right": "51% (48/95)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Comesana F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "notes": [
     "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
     "Service games won and return games won are sourced directly from Flashscore match statistics."

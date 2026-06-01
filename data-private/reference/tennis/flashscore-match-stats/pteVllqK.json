@@ -1,25 +1,1020 @@
 {
-  "slateDate": "2026-05-30",
-  "boardMatchId": "rg-m-matteo-arnaldi-raphael-collignon-2026-05-30",
-  "boardTitle": "Matteo Arnaldi vs Raphael Collignon",
-  "flashscoreLabel": "Collignon Raphael - Arnaldi Matteo",
-  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
-  "generatedAt": "2026-05-30T01:22:35.388Z",
-  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/arnaldi-matteo-hlVLAfZK/collignon-raphael-xzJGXJ6t/",
-  "matchId": "pteVllqK",
+  "sourceKind": "recent-match",
+  "slateDate": "2026-06-01",
+  "boardMatchId": "rg-m-frances-tiafoe-matteo-arnaldi-2026-06-01",
+  "boardTitle": "Frances Tiafoe vs Matteo Arnaldi",
+  "boardPlayerName": "Matteo Arnaldi",
+  "recentOpponentName": "Raphael Collignon",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "30 May 26",
+  "recentIsoDate": "2026-05-30",
+  "recentResult": "BEL  6-4 6-75 5-7 6-4 7-64 3rd",
+  "flashscoreLabel": "Arnaldi M. - Collignon R.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
   "players": [
-    "Matteo Arnaldi",
-    "Raphael Collignon"
+    "Arnaldi M.",
+    "Collignon R."
   ],
+  "generatedAt": "2026-06-01T07:24:57.546Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/pteVllqK/",
+  "matchId": "pteVllqK",
   "feedUrls": {
     "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_pteVllqK",
     "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_pteVllqK"
   },
   "scoreSummary": {
-    "sets": [],
-    "totalDuration": ""
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:25"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      },
+      {
+        "label": "Set 5",
+        "leftGames": 10,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "5:03"
   },
-  "scopes": [],
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "14",
+              "right": "17",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "10",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "67%",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (86/113)",
+              "right": "75% (97/130)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (36/68)",
+              "right": "46% (29/63)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/11",
+              "right": "8/13",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (33/130)",
+              "right": "24% (27/113)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (34/63)",
+              "right": "47% (32/68)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/13",
+              "right": "4/11",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "80",
+              "right": "40",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "63",
+              "right": "60",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Net points won",
+              "left": "77% (30/39)",
+              "right": "71% (40/56)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (123/183)",
+              "right": "65% (126/193)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (67/193)",
+              "right": "33% (60/183)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (190/376)",
+              "right": "49% (186/376)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "86% (24/28)",
+              "right": "82% (23/28)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Return games won",
+              "left": "18% (5/28)",
+              "right": "14% (4/28)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Total games won",
+              "left": "52% (29/56)",
+              "right": "48% (27/56)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "63%",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "84% (16/19)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (4/7)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (8/22)",
+              "right": "16% (3/19)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (5/13)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "9",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "13",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "77% (20/26)",
+              "right": "63% (22/35)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (13/35)",
+              "right": "23% (6/26)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (33/61)",
+              "right": "46% (28/61)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "65%",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (22/34)",
+              "right": "73% (27/37)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (10/21)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "3/4",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (13/37)",
+              "right": "35% (12/34)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "65% (13/20)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "1/4",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "22",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "16",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Net points won",
+              "left": "64% (9/14)",
+              "right": "90% (18/20)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (33/56)",
+              "right": "61% (34/56)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (22/56)",
+              "right": "41% (23/56)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (55/112)",
+              "right": "51% (57/112)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "69%",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (18/26)",
+              "right": "82% (18/22)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "35% (6/17)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "1/1",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (5/22)",
+              "right": "23% (6/26)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "30% (3/10)",
+              "right": "24% (4/17)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/3",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "9",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Net points won",
+              "left": "88% (7/8)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (24/37)",
+              "right": "78% (25/32)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "22% (7/32)",
+              "right": "35% (13/37)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (31/69)",
+              "right": "55% (38/69)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "7",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "57%",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (10/10)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "114% (8/7)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "2/4",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/16)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (7/12)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/2",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "0",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "0",
+              "right": "11",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (18/24)",
+              "right": "59% (17/29)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (12/29)",
+              "right": "25% (6/24)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (30/53)",
+              "right": "43% (23/53)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 5",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "80%",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (20/24)",
+              "right": "79% (26/33)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (8/16)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "1/2",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (7/33)",
+              "right": "17% (4/24)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (6/8)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "1/2",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "0",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "13",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (6/6)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (28/40)",
+              "right": "68% (28/41)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (13/41)",
+              "right": "30% (12/40)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (41/81)",
+              "right": "49% (40/81)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Arnaldi M.",
+              "rightPlayer": "Collignon R."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "notes": [
     "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
     "Service games won and return games won are sourced directly from Flashscore match statistics."

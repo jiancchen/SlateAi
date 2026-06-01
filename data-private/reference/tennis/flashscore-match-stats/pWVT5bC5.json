@@ -1,0 +1,27 @@
+{
+  "slateDate": "2026-06-01",
+  "boardMatchId": "rg-m-flavio-cobolli-zachary-svajda-2026-06-01",
+  "boardTitle": "Flavio Cobolli vs Zachary Svajda",
+  "flashscoreLabel": "Svajda Zachary - Cobolli Flavio",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "generatedAt": "2026-06-01T07:16:13.736Z",
+  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/cobolli-flavio-zDtaCcPe/svajda-zachary-vynGYhMa/",
+  "matchId": "pWVT5bC5",
+  "players": [
+    "Flavio Cobolli",
+    "Zachary Svajda"
+  ],
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_pWVT5bC5",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_pWVT5bC5"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

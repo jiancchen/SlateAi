@@ -22,6 +22,7 @@ REQUIRED_TABLES = [
     "tennis_flashscore_recent_links",
     "tennis_recent_form_metrics",
     "tennis_sofascore_matches",
+    "tennis_sofascore_player_page_stats",
     "tennis_kalshi_match_markets",
     "tennis_prediction_market_snapshots",
     "tennis_rankings",
@@ -69,13 +70,14 @@ def check_source_files(date: str) -> dict[str, Any]:
         "scoreboard": REFERENCE_DIR / f"espn-scoreboard-{date}.json",
         "rankingsHistory": REFERENCE_DIR / "player-rankings-history" / f"{date}.json",
         "fanduelLines": REFERENCE_DIR / f"fanduel-lines-{date}.json",
+        "sofascorePlayerStats": REFERENCE_DIR / "sofascore-player-stats" / f"{date}.json",
     }
     statuses = {}
     missing_required = []
     for key, path in paths.items():
         exists = path.exists() and path.stat().st_size > 0
         statuses[key] = {"path": str(path), "exists": exists, "bytes": path.stat().st_size if path.exists() else 0}
-        if key in {"scoreboard", "rankingsHistory"} and not exists:
+        if key in {"scoreboard", "rankingsHistory", "sofascorePlayerStats"} and not exists:
             missing_required.append(key)
     ok = not missing_required
     return {"ok": ok, "files": statuses, "error": None if ok else f"missing required source files: {', '.join(missing_required)}"}
@@ -202,14 +204,32 @@ def check_sofascore(conn: sqlite3.Connection, date: str, match_count: int, settl
         "select count(*) from tennis_sofascore_replay_points where slate_date = ? and board_match_id is not null",
         (date,),
     )
+    player_page_rows = scalar(
+        conn,
+        """
+        select count(*)
+        from tennis_sofascore_player_page_stats
+        where as_of_date = ?
+          and surface = 'Clay'
+          and first_serve_pct is not null
+          and first_serve_won_pct is not null
+          and second_serve_won_pct is not null
+          and break_points_saved_pct is not null
+          and break_points_converted_pct is not null
+        """,
+        (date,),
+    )
     mapping_ok = match_count > 0 and mapped_matches >= match_count
+    pregame_player_pages_ok = match_count > 0 and player_page_rows >= match_count * 2
     settled_ok = not settled or (player_stat_rows > 0 and replay_games > 0 and replay_points > 0)
-    ok = mapping_ok and settled_ok
+    pregame_ok = mapping_ok or pregame_player_pages_ok
+    ok = pregame_ok and settled_ok
     return {
         "ok": ok,
         "mappedMatches": mapped_matches,
         "matchCount": match_count,
         "playerStatRows": player_stat_rows,
+        "playerPageRows": player_page_rows,
         "replayGames": replay_games,
         "replayPoints": replay_points,
         "mode": "settled" if settled else "pregame",

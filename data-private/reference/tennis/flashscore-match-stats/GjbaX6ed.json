@@ -1,25 +1,685 @@
 {
-  "slateDate": "2026-05-30",
-  "boardMatchId": "rg-w-coco-gauff-anastasia-potapova-2026-05-30",
-  "boardTitle": "Coco Gauff vs Anastasia Potapova",
-  "flashscoreLabel": "Potapova Anastasia - Gauff Coco",
-  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/",
-  "generatedAt": "2026-05-30T01:22:41.174Z",
-  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/gauff-coco-f5BXmEH6/potapova-anastasia-x81l09qG/",
-  "matchId": "GjbaX6ed",
+  "sourceKind": "recent-match",
+  "slateDate": "2026-06-01",
+  "boardMatchId": "rg-w-anastasia-potapova-anna-kalinskaya-2026-06-01",
+  "boardTitle": "Anastasia Potapova vs Anna Kalinskaya",
+  "boardPlayerName": "Anastasia Potapova",
+  "recentOpponentName": "Cori Gauff",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "30 May 26",
+  "recentIsoDate": "2026-05-30",
+  "recentResult": "USA  4-6 7-61 6-4 3rd",
+  "flashscoreLabel": "Gauff C. - Potapova A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
   "players": [
-    "Coco Gauff",
-    "Anastasia Potapova"
+    "Gauff C.",
+    "Potapova A."
   ],
+  "generatedAt": "2026-06-01T07:25:07.896Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/GjbaX6ed/",
+  "matchId": "GjbaX6ed",
   "feedUrls": {
     "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_GjbaX6ed",
     "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_GjbaX6ed"
   },
   "scoreSummary": {
-    "sets": [],
-    "totalDuration": ""
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 7,
+        "duration": "1:07"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:39"
   },
-  "scopes": [],
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "8",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "48%",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (35/62)",
+              "right": "67% (37/55)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "34% (11/32)",
+              "right": "37% (22/60)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/13",
+              "right": "7/14",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (18/55)",
+              "right": "44% (27/62)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (38/60)",
+              "right": "66% (21/32)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "7/14",
+              "right": "7/13",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "23",
+              "right": "29",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "46",
+              "right": "56",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Net points won",
+              "left": "56% (5/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "49% (46/94)",
+              "right": "51% (59/115)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (56/115)",
+              "right": "51% (48/94)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (102/209)",
+              "right": "51% (107/209)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "56% (9/16)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Return games won",
+              "left": "44% (7/16)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (16/32)",
+              "right": "50% (16/32)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "52%",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (14/21)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "0/2",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (5/16)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (10/15)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/3",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "5",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "19",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (19/31)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (15/31)",
+              "right": "39% (12/31)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (34/62)",
+              "right": "45% (28/62)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "35%",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (10/20)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "21% (3/14)",
+              "right": "35% (12/34)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/8",
+              "right": "5/9",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (6/18)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "65% (22/34)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/9",
+              "right": "4/8",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "14",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "22",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "37% (13/35)",
+              "right": "46% (24/52)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (28/52)",
+              "right": "63% (22/35)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (41/87)",
+              "right": "53% (46/87)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "66%",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (11/21)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "2/3",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (7/21)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/2",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "10",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "15",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Net points won",
+              "left": "25% (1/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (14/28)",
+              "right": "59% (19/32)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (13/32)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (27/60)",
+              "right": "55% (33/60)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Gauff C.",
+              "rightPlayer": "Potapova A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "notes": [
     "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
     "Service games won and return games won are sourced directly from Flashscore match statistics."

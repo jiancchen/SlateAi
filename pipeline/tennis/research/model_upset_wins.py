@@ -53,6 +53,13 @@ def build_underdog_rows(matches: pd.DataFrame) -> pd.DataFrame:
         "metric_hold",
         "metric_returnPressure",
         "metric_secondServe",
+        "pps_hold_pct",
+        "pps_first_serve_won_pct",
+        "pps_second_serve_won_pct",
+        "pps_aces",
+        "pps_double_faults",
+        "pps_bp_saved_pct",
+        "pps_bp_converted_pct",
     ]
     for _, row in matches.iterrows():
         p1_market = pd.to_numeric(pd.Series([row.get("p1_market_prob")]), errors="coerce").iloc[0]

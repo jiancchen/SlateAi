@@ -2026,9 +2026,12 @@ function App() {
       .then((manifest) => {
         if (cancelled || !manifest.length) return
         setSlateManifest(manifest)
-        setActiveDayId((current) =>
-          manifest.some((entry) => entry.id === current) ? current : manifest.at(-1)?.id || current
-        )
+        setActiveDayId((current) => {
+          const latestManifestId = [...manifest].sort((left, right) => left.id.localeCompare(right.id)).at(-1)?.id || current
+          if (!manifest.some((entry) => entry.id === current)) return latestManifestId
+          if (current === defaultSlateDayId && latestManifestId > current) return latestManifestId
+          return current
+        })
       })
       .catch((error) => {
         console.error('Failed to load slate manifest', error)

@@ -428,6 +428,166 @@ def summarize_match_weather(
             ),
         )
         count += 1
+    if count:
+        return count
+
+    fallback_rows = conn.execute(
+        """
+        select match_id, slate_date, title, stage, start_minutes, raw_json
+        from tennis_matches
+        where slate_date = ?
+        order by start_minutes, match_id
+        """,
+        (slate_date,),
+    ).fetchall()
+    la_tz = ZoneInfo("America/Los_Angeles")
+    for match in fallback_rows:
+        start_minutes = int(match["start_minutes"] or 0)
+        local_date = dt.date.fromisoformat(slate_date)
+        local_start = dt.datetime(
+            local_date.year,
+            local_date.month,
+            local_date.day,
+            start_minutes // 60,
+            start_minutes % 60,
+            tzinfo=la_tz,
+        )
+        start_ts = int(local_start.astimezone(dt.timezone.utc).timestamp())
+        is_atp = str(match["match_id"]).startswith("rg-m-")
+        duration = 3 * 3600 if is_atp else 2 * 3600
+        end_ts = start_ts + duration
+        weather_rows = [
+            dict(row)
+            for row in conn.execute(
+                """
+                select *
+                from tennis_weather_hourly
+                where venue_key = ?
+                  and source_name = 'Open-Meteo'
+                  and unixepoch(time_utc) < ?
+                  and unixepoch(time_utc) + 3600 > ?
+                order by time_utc
+                """,
+                (venue["venue_key"], end_ts, start_ts),
+            )
+        ]
+        overlapped: list[dict[str, Any]] = []
+        for row in weather_rows:
+            hour_start = unix_from_utc_iso(row["time_utc"])
+            hour_end = hour_start + 3600
+            overlap = max(0, min(end_ts, hour_end) - max(start_ts, hour_start))
+            if overlap <= 0:
+                continue
+            row["_overlap_seconds"] = overlap
+            overlapped.append(row)
+
+        avg_temp = weighted_average(overlapped, "temperature_2m_c")
+        max_temp = max_value(overlapped, "temperature_2m_c")
+        avg_humidity = weighted_average(overlapped, "relative_humidity_2m_pct")
+        max_gust = max_value(overlapped, "wind_gusts_10m_kmh")
+        precipitation = weighted_total_hourly_rate(overlapped, "precipitation_mm")
+        summary = {
+            "matchId": match["match_id"],
+            "slateDate": slate_date,
+            "eventId": None,
+            "venue": venue,
+            "source": "Open-Meteo + ESPN start-time fallback",
+            "startTs": start_ts,
+            "endTs": end_ts,
+            "durationMinutes": round(duration / 60, 1),
+            "hourlyRows": len(overlapped),
+            "hourly": [
+                {
+                    "timeLocal": row["time_local"],
+                    "timeUtc": row["time_utc"],
+                    "overlapMinutes": round((row.get("_overlap_seconds") or 0) / 60, 1),
+                    "temperatureC": row.get("temperature_2m_c"),
+                    "apparentTemperatureC": row.get("apparent_temperature_c"),
+                    "humidityPct": row.get("relative_humidity_2m_pct"),
+                    "precipitationMm": row.get("precipitation_mm"),
+                    "windKmh": row.get("wind_speed_10m_kmh"),
+                    "gustKmh": row.get("wind_gusts_10m_kmh"),
+                    "shortwaveWm2": row.get("shortwave_radiation_wm2"),
+                }
+                for row in overlapped
+            ],
+        }
+        conn.execute(
+            """
+            insert into tennis_match_weather(
+              match_id, slate_date, sofascore_event_id, venue_key, source_name,
+              start_ts, end_ts, duration_minutes, hourly_rows,
+              avg_temperature_c, max_temperature_c, min_temperature_c,
+              avg_apparent_temperature_c, max_apparent_temperature_c,
+              avg_humidity_pct, total_precipitation_mm, total_rain_mm,
+              avg_cloud_cover_pct, avg_wind_speed_kmh, max_wind_gust_kmh,
+              avg_surface_pressure_hpa, avg_shortwave_radiation_wm2,
+              max_shortwave_radiation_wm2, hot_match, humid_match, windy_match,
+              rain_affected, raw_json
+            )
+            values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            on conflict(match_id) do update set
+              slate_date=excluded.slate_date,
+              sofascore_event_id=excluded.sofascore_event_id,
+              venue_key=excluded.venue_key,
+              source_name=excluded.source_name,
+              start_ts=excluded.start_ts,
+              end_ts=excluded.end_ts,
+              duration_minutes=excluded.duration_minutes,
+              hourly_rows=excluded.hourly_rows,
+              avg_temperature_c=excluded.avg_temperature_c,
+              max_temperature_c=excluded.max_temperature_c,
+              min_temperature_c=excluded.min_temperature_c,
+              avg_apparent_temperature_c=excluded.avg_apparent_temperature_c,
+              max_apparent_temperature_c=excluded.max_apparent_temperature_c,
+              avg_humidity_pct=excluded.avg_humidity_pct,
+              total_precipitation_mm=excluded.total_precipitation_mm,
+              total_rain_mm=excluded.total_rain_mm,
+              avg_cloud_cover_pct=excluded.avg_cloud_cover_pct,
+              avg_wind_speed_kmh=excluded.avg_wind_speed_kmh,
+              max_wind_gust_kmh=excluded.max_wind_gust_kmh,
+              avg_surface_pressure_hpa=excluded.avg_surface_pressure_hpa,
+              avg_shortwave_radiation_wm2=excluded.avg_shortwave_radiation_wm2,
+              max_shortwave_radiation_wm2=excluded.max_shortwave_radiation_wm2,
+              hot_match=excluded.hot_match,
+              humid_match=excluded.humid_match,
+              windy_match=excluded.windy_match,
+              rain_affected=excluded.rain_affected,
+              raw_json=excluded.raw_json,
+              updated_at=current_timestamp
+            """,
+            (
+                match["match_id"],
+                slate_date,
+                None,
+                venue["venue_key"],
+                "Open-Meteo",
+                start_ts,
+                end_ts,
+                summary["durationMinutes"],
+                len(overlapped),
+                avg_temp,
+                max_temp,
+                min_value(overlapped, "temperature_2m_c"),
+                weighted_average(overlapped, "apparent_temperature_c"),
+                max_value(overlapped, "apparent_temperature_c"),
+                avg_humidity,
+                precipitation,
+                weighted_total_hourly_rate(overlapped, "rain_mm"),
+                weighted_average(overlapped, "cloud_cover_pct"),
+                weighted_average(overlapped, "wind_speed_10m_kmh"),
+                max_gust,
+                weighted_average(overlapped, "surface_pressure_hpa"),
+                weighted_average(overlapped, "shortwave_radiation_wm2"),
+                max_value(overlapped, "shortwave_radiation_wm2"),
+                1 if (max_temp or 0) >= 27 else 0,
+                1 if (avg_humidity or 0) >= 70 else 0,
+                1 if (max_gust or 0) >= 35 else 0,
+                1 if (precipitation or 0) > 0.1 else 0,
+                dumps_compact(summary),
+            ),
+        )
+        count += 1
     return count
 
 

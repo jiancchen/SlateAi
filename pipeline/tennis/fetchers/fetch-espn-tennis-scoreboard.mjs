@@ -89,6 +89,15 @@ const buildScoreline = (competitors = []) => {
   return sets.join(' ')
 }
 
+const leagueIdsFor = (competitors = []) =>
+  [
+    ...new Set(
+      competitors
+        .map((player) => String(player.uid || '').match(/~l:(\d+)~/)?.[1])
+        .filter(Boolean)
+    )
+  ]
+
 const normalizeCompetition = (competition) => {
   const { round, court } = parseCourt(competition.note)
   const players = (competition.competitors || []).map((player) => ({
@@ -103,6 +112,7 @@ const normalizeCompetition = (competition) => {
 
   return {
     eventId: competition.id,
+    leagueIds: leagueIdsFor(competition.competitors || []),
     date: competition.date,
     status: competition.status ?? {},
     completed: Boolean(competition.status?.completed),

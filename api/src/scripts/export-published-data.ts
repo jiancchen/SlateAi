@@ -473,6 +473,23 @@ const buildTennisValueSummary = (games: any[] = [], isoDate = '') => {
   const marketKey = (row: any) => String(row.marketType ?? row.label ?? '').toLowerCase()
   const byEvDesc = (left: any, right: any) => Number(right.evPer100 ?? -999) - Number(left.evPer100 ?? -999)
   const byEvAsc = (left: any, right: any) => Number(left.evPer100 ?? 999) - Number(right.evPer100 ?? 999)
+  const americanToImpliedPct = (odds: any) => {
+    const numericOdds = finiteNumber(odds)
+    if (numericOdds === null || numericOdds === 0) return null
+    return Number((numericOdds > 0 ? 100 / (numericOdds + 100) : Math.abs(numericOdds) / (Math.abs(numericOdds) + 100) * 100).toFixed(1))
+  }
+  const profitPer100Risked = (odds: any) => {
+    const numericOdds = finiteNumber(odds)
+    if (numericOdds === null || numericOdds === 0) return null
+    return numericOdds > 0 ? numericOdds : 10000 / Math.abs(numericOdds)
+  }
+  const evPer100Risked = (probabilityPct: any, odds: any) => {
+    const model = finiteNumber(probabilityPct)
+    const profit = profitPer100Risked(odds)
+    if (model === null || profit === null) return null
+    const probability = model / 100
+    return Number((probability * profit - (1 - probability) * 100).toFixed(1))
+  }
   const byBoardRank = (left: any, right: any) => {
     const leftEv = finiteNumber(left.evPer100)
     const rightEv = finiteNumber(right.evPer100)
@@ -537,6 +554,31 @@ const buildTennisValueSummary = (games: any[] = [], isoDate = '') => {
       }))
     )
 
+  const currentMlRows = new Map(
+    derivativeRows
+      .filter((row) => marketKey(row) === 'ml')
+      .map((row) => [`${row.gameId}:${normalizeSearchToken(row.selection)}`, row])
+  )
+  const currentMlPrices = new Map<string, any>()
+  for (const game of games.filter((entry) => entry?.league === 'Tennis')) {
+    const marketPlayers = [
+      ...(game.tennisContext?.marketEconomics?.players ?? []).map((player: any) => ({
+        name: player.name,
+        americanOdds: player.americanOdds,
+        impliedPct: player.impliedPct
+      })),
+      ...(game.moneyline?.participants ?? []).map((participant: any) => ({
+        name: participant.name,
+        americanOdds: participant.americanOdds,
+        impliedPct: participant.impliedProbability ? Number((participant.impliedProbability * 100).toFixed(1)) : null
+      }))
+    ]
+    for (const player of marketPlayers) {
+      const key = `${game.id}:${normalizeSearchToken(player.name)}`
+      if (!currentMlPrices.has(key)) currentMlPrices.set(key, player)
+    }
+  }
+
   let ensembleRows: any[] = []
   const fromEnsemblePath = path.join(dataPrivateRoot, 'predictions', 'tennis', `${isoDate}-multimodel-ensemble.json`)
   if (isoDate && fsSync.existsSync(fromEnsemblePath)) {
@@ -550,7 +592,7 @@ const buildTennisValueSummary = (games: any[] = [], isoDate = '') => {
         const marketPct = Number(row.marketProbability)
         const edgePct = Number.isFinite(modelPct) && Number.isFinite(marketPct) ? Number((modelPct - marketPct).toFixed(1)) : null
         const valueGrade = row.grade === 'Bet-grade ML' ? 'Bet-grade value' : row.grade ?? 'No grade'
-        return {
+        const baseRow = {
           gameId: game.id,
           gameTitle: game.title,
           start: row.start ?? game.start,
@@ -572,6 +614,34 @@ const buildTennisValueSummary = (games: any[] = [], isoDate = '') => {
           validatedValue: false,
           reason: row.riskGate ? `Model chain risk gate: ${row.riskGate}.` : 'Model chain price check.'
         }
+        const currentKey = `${game.id}:${normalizeSearchToken(baseRow.selection)}`
+        const currentDerivativeRow = currentMlRows.get(currentKey)
+        if (currentDerivativeRow) {
+          return {
+            ...currentDerivativeRow,
+            confidence: modelPct,
+            modelPct,
+            valueIssue: row.riskGate ?? currentDerivativeRow.valueIssue ?? '',
+            valueGrade,
+            betGrade: row.grade === 'Bet-grade ML',
+            reason: row.riskGate ? `Model chain risk gate: ${row.riskGate}.` : currentDerivativeRow.reason ?? 'Model chain price check.'
+          }
+        }
+        const currentPrice = currentMlPrices.get(currentKey)
+        const currentOdds = finiteNumber(currentPrice?.americanOdds)
+        if (currentOdds !== null) {
+          const currentImplied = finiteNumber(currentPrice?.impliedPct) ?? americanToImpliedPct(currentOdds)
+          const currentEv = evPer100Risked(modelPct, currentOdds)
+          return {
+            ...baseRow,
+            americanOdds: currentOdds,
+            impliedPct: currentImplied,
+            edgePct: Number.isFinite(modelPct) && currentImplied !== null ? Number((modelPct - currentImplied).toFixed(1)) : baseRow.edgePct,
+            evPer100: currentEv,
+            netEvPer100: currentEv !== null ? Number((currentEv - feePer100).toFixed(1)) : null
+          }
+        }
+        return baseRow
       })
       .filter(Boolean) as any[]
   }

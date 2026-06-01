@@ -17,7 +17,7 @@
     {
       "role": "model-runner",
       "path": "pipeline/tennis/publish/generate-day-module.mjs",
-      "sha256": "184001121a1bba3828e8870ca0365b35861c6b30acfbd6037ed82bda12e373f4"
+      "sha256": "d11cd846854204c981f69a115df14678c48de622556290f6e6f1e2b49c71cbdd"
     },
     {
       "role": "source-mapping-helper",

@@ -62,13 +62,17 @@ const parseArgs = () => {
     input: DEFAULT_INPUT,
     outputDir: DEFAULT_OUTPUT_DIR,
     mapOutput: DEFAULT_MAP_OUTPUT,
+    date: '',
     limit: 0,
     events: ''
   }
 
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index]
-    if (arg === '--input') {
+    if (arg === '--date') {
+      options.date = args[index + 1]
+      index += 1
+    } else if (arg === '--input') {
       options.input = args[index + 1]
       index += 1
     } else if (arg === '--output-dir') {
@@ -84,6 +88,11 @@ const parseArgs = () => {
       options.events = args[index + 1]
       index += 1
     }
+  }
+
+  if (/^\d{4}-\d{2}-\d{2}$/.test(options.date)) {
+    options.input = `web/src/lib/day-${options.date}-tennis-opponent-quality.generated.json`
+    options.mapOutput = `data-private/reference/tennis/flashscore-recent-match-map-${options.date}.json`
   }
 
   return options
@@ -299,6 +308,7 @@ const main = async () => {
   const outputDir = path.resolve(options.outputDir)
   const mapOutput = path.resolve(options.mapOutput)
   const quality = JSON.parse(await fs.readFile(inputPath, 'utf8'))
+  const slateDate = options.date || quality.source?.slateDate || quality.source?.rankingAsOf || '2026-05-27'
   const rows = collectRecentRows(quality)
   const allowedEvents = new Set((options.events ? options.events.split(',') : []).map(normalize).filter(Boolean))
   const tournamentRecords = await fetchTournamentRecords(allowedEvents)
@@ -333,7 +343,7 @@ const main = async () => {
         matchId: record.flashscoreId,
         extra: {
           sourceKind: 'recent-match',
-          slateDate: quality.source?.slateDate || '2026-05-27',
+          slateDate,
           boardMatchId: row.boardMatchId,
           boardTitle: row.boardTitle,
           boardPlayerName: row.playerName,

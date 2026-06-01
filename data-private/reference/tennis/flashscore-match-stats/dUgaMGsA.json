@@ -1,0 +1,27 @@
+{
+  "slateDate": "2026-06-01",
+  "boardMatchId": "rg-m-felix-auger-aliassime-alejandro-tabilo-2026-06-01",
+  "boardTitle": "Felix Auger-Aliassime vs Alejandro Tabilo",
+  "flashscoreLabel": "Tabilo Alejandro - Auger-Aliassime Felix",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "generatedAt": "2026-06-01T07:16:12.783Z",
+  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/auger-aliassime-felix-CzXh4LAb/tabilo-alejandro-YgVnM5vO/",
+  "matchId": "dUgaMGsA",
+  "players": [
+    "Felix Auger-Aliassime",
+    "Alejandro Tabilo"
+  ],
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_dUgaMGsA",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_dUgaMGsA"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

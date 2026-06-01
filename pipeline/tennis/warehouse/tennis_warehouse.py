@@ -32,6 +32,7 @@ LEGACY_MIGRATIONS_DIR = ROOT / "pipeline" / "tennis_warehouse_migrations"
 RANKINGS_PATH = ROOT / "data-private" / "reference" / "tennis" / "player-rankings.json"
 FLASHSCORE_DIR = ROOT / "data-private" / "reference" / "tennis" / "flashscore-match-stats"
 SOFASCORE_DIR = ROOT / "data-private" / "reference" / "tennis" / "sofascore-match-data"
+SOFASCORE_PLAYER_STATS_DIR = ROOT / "data-private" / "reference" / "tennis" / "sofascore-player-stats"
 TENNIS_REFERENCE_DIR = ROOT / "data-private" / "reference" / "tennis"
 PUBLISHED_SLATES_DIR = ROOT / "published-data" / "slates"
 
@@ -582,6 +583,41 @@ def init_db(conn: sqlite3.Connection) -> None:
           primary key (sofascore_event_id, player_side, period, group_name, stat_key)
         );
 
+        create table if not exists tennis_sofascore_player_page_stats (
+          as_of_date text not null,
+          normalized_name text not null,
+          player_name text not null,
+          sofascore_player_id integer,
+          source_url text,
+          season integer,
+          surface text not null,
+          matches_won real,
+          matches_total real,
+          matches_won_pct real,
+          tournaments_won real,
+          tournaments_total real,
+          tournaments_won_pct real,
+          first_serve_pct real,
+          first_serve_won_pct real,
+          second_serve_pct real,
+          second_serve_won_pct real,
+          aces_per_match real,
+          double_faults_per_match real,
+          break_points_saved real,
+          break_points_faced real,
+          break_points_saved_pct real,
+          break_points_converted real,
+          break_points_to_convert real,
+          break_points_converted_pct real,
+          tiebreaks_won real,
+          tiebreaks_total real,
+          tiebreaks_won_pct real,
+          captured_at text,
+          raw_json text not null,
+          updated_at text not null default current_timestamp,
+          primary key (as_of_date, normalized_name, season, surface)
+        );
+
         create table if not exists tennis_sofascore_replay_games (
           sofascore_event_id text not null,
           slate_date text,
@@ -765,6 +801,8 @@ def init_db(conn: sqlite3.Connection) -> None:
         create index if not exists idx_tennis_sofascore_stat_rows_event on tennis_sofascore_stat_rows(sofascore_event_id);
         create index if not exists idx_tennis_sofascore_player_stat_rows_board
           on tennis_sofascore_player_stat_rows(board_match_id, normalized_name);
+        create index if not exists idx_tennis_sofascore_player_page_stats_date
+          on tennis_sofascore_player_page_stats(as_of_date, normalized_name, surface);
         create index if not exists idx_tennis_sofascore_replay_games_board
           on tennis_sofascore_replay_games(board_match_id, set_number, game_number);
         create index if not exists idx_tennis_sofascore_replay_points_board
@@ -2342,6 +2380,113 @@ def import_sofascore(conn: sqlite3.Connection, directory: Path = SOFASCORE_DIR) 
     return counts
 
 
+def import_sofascore_player_page_stats(
+    conn: sqlite3.Connection,
+    directory: Path = SOFASCORE_PLAYER_STATS_DIR,
+    slate_date: str | None = None,
+) -> dict[str, int]:
+    files = [directory / f"{slate_date}.json"] if slate_date else sorted(directory.glob("*.json"))
+    counts = {"files": 0, "players": 0, "stat_rows": 0, "missing_player_ids": 0}
+    for file_path in files:
+        if not file_path.exists():
+            continue
+        payload = read_json(file_path)
+        as_of_date = payload.get("slateDate") or slate_date or file_path.stem
+        counts["files"] += 1
+        counts["missing_player_ids"] += len(payload.get("missingPlayerIds") or [])
+        for player in payload.get("players") or []:
+            player_name = player.get("name")
+            normalized = normalize_name(player.get("normalizedName") or player_name)
+            if not normalized or not player_name:
+                continue
+            upsert_player(conn, player_name)
+            counts["players"] += 1
+            for surface_key, stats in (player.get("stats") or {}).items():
+                if not isinstance(stats, dict) or stats.get("error"):
+                    continue
+                surface = stats.get("surface") or ("Clay" if surface_key == "clay" else "All surfaces")
+                conn.execute(
+                    """
+                    insert into tennis_sofascore_player_page_stats(
+                      as_of_date, normalized_name, player_name, sofascore_player_id,
+                      source_url, season, surface, matches_won, matches_total,
+                      matches_won_pct, tournaments_won, tournaments_total,
+                      tournaments_won_pct, first_serve_pct, first_serve_won_pct,
+                      second_serve_pct, second_serve_won_pct, aces_per_match,
+                      double_faults_per_match, break_points_saved,
+                      break_points_faced, break_points_saved_pct,
+                      break_points_converted, break_points_to_convert,
+                      break_points_converted_pct, tiebreaks_won, tiebreaks_total,
+                      tiebreaks_won_pct, captured_at, raw_json
+                    )
+                    values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    on conflict(as_of_date, normalized_name, season, surface) do update set
+                      player_name=excluded.player_name,
+                      sofascore_player_id=excluded.sofascore_player_id,
+                      source_url=excluded.source_url,
+                      matches_won=excluded.matches_won,
+                      matches_total=excluded.matches_total,
+                      matches_won_pct=excluded.matches_won_pct,
+                      tournaments_won=excluded.tournaments_won,
+                      tournaments_total=excluded.tournaments_total,
+                      tournaments_won_pct=excluded.tournaments_won_pct,
+                      first_serve_pct=excluded.first_serve_pct,
+                      first_serve_won_pct=excluded.first_serve_won_pct,
+                      second_serve_pct=excluded.second_serve_pct,
+                      second_serve_won_pct=excluded.second_serve_won_pct,
+                      aces_per_match=excluded.aces_per_match,
+                      double_faults_per_match=excluded.double_faults_per_match,
+                      break_points_saved=excluded.break_points_saved,
+                      break_points_faced=excluded.break_points_faced,
+                      break_points_saved_pct=excluded.break_points_saved_pct,
+                      break_points_converted=excluded.break_points_converted,
+                      break_points_to_convert=excluded.break_points_to_convert,
+                      break_points_converted_pct=excluded.break_points_converted_pct,
+                      tiebreaks_won=excluded.tiebreaks_won,
+                      tiebreaks_total=excluded.tiebreaks_total,
+                      tiebreaks_won_pct=excluded.tiebreaks_won_pct,
+                      captured_at=excluded.captured_at,
+                      raw_json=excluded.raw_json,
+                      updated_at=current_timestamp
+                    """,
+                    (
+                        as_of_date,
+                        normalized,
+                        player_name,
+                        as_int(player.get("sofascorePlayerId")),
+                        player.get("sourceUrl"),
+                        as_int(player.get("season") or payload.get("season")),
+                        surface,
+                        as_float(stats.get("matchesWon")),
+                        as_float(stats.get("matchesTotal")),
+                        as_float(stats.get("matchesWonPct")),
+                        as_float(stats.get("tournamentsWon")),
+                        as_float(stats.get("tournamentsTotal")),
+                        as_float(stats.get("tournamentsWonPct")),
+                        as_float(stats.get("firstServePct")),
+                        as_float(stats.get("firstServeWonPct")),
+                        as_float(stats.get("secondServePct")),
+                        as_float(stats.get("secondServeWonPct")),
+                        as_float(stats.get("acesPerMatch")),
+                        as_float(stats.get("doubleFaultsPerMatch")),
+                        as_float(stats.get("breakPointsSaved")),
+                        as_float(stats.get("breakPointsFaced")),
+                        as_float(stats.get("breakPointsSavedPct")),
+                        as_float(stats.get("breakPointsConverted")),
+                        as_float(stats.get("breakPointsToConvert")),
+                        as_float(stats.get("breakPointsConvertedPct")),
+                        as_float(stats.get("tiebreaksWon")),
+                        as_float(stats.get("tiebreaksTotal")),
+                        as_float(stats.get("tiebreaksWonPct")),
+                        player.get("capturedAt") or payload.get("capturedAt"),
+                        dumps({"player": player, "surfaceStats": stats, "surfaceKey": surface_key}),
+                    ),
+                )
+                counts["stat_rows"] += 1
+    conn.commit()
+    return counts
+
+
 def import_results(conn: sqlite3.Connection, slate_date: str, file_path: Path | None = None) -> dict[str, int]:
     path = file_path or (TENNIS_REFERENCE_DIR / f"espn-scoreboard-{slate_date}.json")
     payload = read_json(path)
@@ -2525,6 +2670,7 @@ def print_summary(conn: sqlite3.Connection) -> None:
         "tennis_sofascore_matches": "select slate_date, count(*) as count from tennis_sofascore_matches group by slate_date order by slate_date",
         "tennis_sofascore_stat_rows": "select count(*) as count from tennis_sofascore_stat_rows",
         "tennis_sofascore_player_stat_rows": "select count(*) as count from tennis_sofascore_player_stat_rows",
+        "tennis_sofascore_player_page_stats": "select as_of_date, surface, count(*) as count from tennis_sofascore_player_page_stats group by as_of_date, surface order by as_of_date, surface",
         "tennis_match_results": "select slate_date, count(*) as count from tennis_match_results group by slate_date order by slate_date",
         "tennis_prediction_grades": "select slate_date, hit, count(*) as count from tennis_prediction_grades group by slate_date, hit order by slate_date, hit",
     }
@@ -2553,6 +2699,10 @@ def main() -> None:
 
     sofascore_parser = subparsers.add_parser("import-sofascore")
     sofascore_parser.add_argument("--dir", default=str(SOFASCORE_DIR))
+
+    sofascore_player_parser = subparsers.add_parser("import-sofascore-player-stats")
+    sofascore_player_parser.add_argument("--date", default="")
+    sofascore_player_parser.add_argument("--dir", default=str(SOFASCORE_PLAYER_STATS_DIR))
 
     results_parser = subparsers.add_parser("import-results")
     results_parser.add_argument("--date", required=True)
@@ -2583,6 +2733,9 @@ def main() -> None:
         print(json.dumps(counts, indent=2, sort_keys=True))
     elif args.command == "import-sofascore":
         counts = import_sofascore(conn, Path(args.dir))
+        print(json.dumps(counts, indent=2, sort_keys=True))
+    elif args.command == "import-sofascore-player-stats":
+        counts = import_sofascore_player_page_stats(conn, Path(args.dir), args.date or None)
         print(json.dumps(counts, indent=2, sort_keys=True))
     elif args.command == "import-results":
         counts = import_results(conn, args.date, Path(args.file) if args.file else None)
