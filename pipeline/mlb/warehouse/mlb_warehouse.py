@@ -12676,6 +12676,729 @@ def refresh_m2_state_formula_training_rows(
     return inserted
 
 
+M2_HITTER_IDENTITY_METRICS = {
+    "hits_per_pa": {
+        "career_column": "career_hits",
+        "career_denominator": "career_plate_appearances",
+        "season_numerator": "hits",
+        "recent_column": "hits_per_pa_last10",
+        "opponent_column": "weighted_hits_per_pa_last10",
+        "game_actual_column": "hits",
+        "count_like": True,
+    },
+    "total_bases_per_pa": {
+        "career_column": "career_total_bases",
+        "career_denominator": "career_plate_appearances",
+        "season_numerator": "total_bases",
+        "recent_column": "total_bases_per_pa_last10",
+        "opponent_column": "weighted_total_bases_per_pa_last10",
+        "game_actual_column": "total_bases",
+        "count_like": True,
+    },
+    "walk_rate": {
+        "career_rate_column": "career_bb_rate",
+        "season_numerator": "walks",
+        "recent_column": "walk_rate_last10",
+        "game_actual_column": "walks",
+        "count_like": True,
+    },
+    "strikeout_rate": {
+        "career_rate_column": "career_k_rate",
+        "season_numerator": "strikeouts",
+        "recent_column": "strikeout_rate_last10",
+        "game_actual_column": "strikeouts",
+        "count_like": True,
+    },
+    "home_run_rate": {
+        "career_rate_column": "career_hr_per_pa",
+        "season_numerator": "home_runs",
+        "recent_column": None,
+        "game_actual_column": "home_runs",
+        "count_like": True,
+    },
+    "xwoba": {
+        "career_rate_column": None,
+        "season_numerator": None,
+        "recent_column": "rolling_7_xwoba",
+        "statcast_fallback_column": "rolling_30_xwoba",
+        "count_like": False,
+    },
+    "xslg": {
+        "career_rate_column": None,
+        "season_numerator": None,
+        "recent_column": "rolling_7_xslg",
+        "statcast_fallback_column": "rolling_30_xslg",
+        "count_like": False,
+    },
+}
+
+M2_PITCHER_IDENTITY_METRICS = {
+    "runs_allowed_per_start": "runs_allowed_per_start",
+    "hits_allowed_per_start": "hits_allowed_per_start",
+    "walks_allowed_per_start": "walks_allowed_per_start",
+    "strikeouts_per_start": "strikeouts_per_start",
+    "home_runs_allowed_per_start": "home_runs_allowed_per_start",
+    "whip_like": "whip_like",
+    "collapse_hazard": "command_break_index",
+}
+
+
+def m2_safe_divide(numerator: float | int | None, denominator: float | int | None) -> float | None:
+    num = to_float(numerator)
+    den = to_float(denominator)
+    if num is None or den in (None, 0):
+        return None
+    return num / den
+
+
+def m2_sample_bucket(sample_size: int) -> str:
+    if sample_size < 10:
+        return "tiny-sample"
+    if sample_size < 30:
+        return "small-sample"
+    if sample_size < 80:
+        return "medium-sample"
+    return "stable-sample"
+
+
+def m2_deviation_label(deviation: float | None, volatility_score: float | None = None) -> str:
+    if deviation is None:
+        return "unknown"
+    volatility = volatility_score or 0
+    if deviation >= 0.09:
+        return "hot-volatile" if volatility >= 55 else "hot"
+    if deviation >= 0.035:
+        return "positive-drift"
+    if deviation <= -0.09:
+        return "cold-volatile" if volatility >= 55 else "cold"
+    if deviation <= -0.035:
+        return "negative-drift"
+    return "stable"
+
+
+def m2_expected_pa_from_order(batting_order: float | None) -> tuple[float, float]:
+    order = batting_order or 6
+    if order <= 2.5:
+        return 4.55, 0.09
+    if order <= 5.5:
+        return 4.25, 0.04
+    if order <= 7.5:
+        return 3.95, -0.02
+    return 3.75, -0.05
+
+
+def m2_distribution_from_mean(mean: float, volatility_score: float | None, count_like: bool = True) -> tuple[float, float, float]:
+    volatility = clamp_value((volatility_score or 35) / 100, 0.05, 1.1)
+    if count_like:
+        spread = math.sqrt(max(mean, 0.05)) * (0.55 + volatility * 0.45)
+        return (
+            round(max(0.0, mean * 0.82), 3),
+            round(max(0.0, mean + spread * 0.55), 3),
+            round(max(0.0, mean + spread * 1.25), 3),
+        )
+    spread = max(0.015, abs(mean) * (0.12 + volatility * 0.08))
+    return (
+        round(max(0.0, mean - spread * 0.25), 3),
+        round(max(0.0, mean + spread * 0.65), 3),
+        round(max(0.0, mean + spread * 1.35), 3),
+    )
+
+
+def m2_metric_career_baseline(metric: str, career_row: dict[str, Any]) -> float | None:
+    spec = M2_HITTER_IDENTITY_METRICS[metric]
+    if spec.get("career_rate_column"):
+        return row_float(career_row, spec["career_rate_column"], None)  # type: ignore[arg-type]
+    if spec.get("career_column") and spec.get("career_denominator"):
+        return m2_safe_divide(career_row.get(spec["career_column"]), career_row.get(spec["career_denominator"]))
+    return None
+
+
+def m2_hitter_season_baselines(conn: sqlite3.Connection, snapshot_date: str) -> dict[int, dict[str, Any]]:
+    rows = conn.execute(
+        """
+        SELECT
+          player_id,
+          MAX(player_name) AS player_name,
+          MAX(team_name) AS team_name,
+          COUNT(*) AS games,
+          SUM(COALESCE(plate_appearances, 0)) AS pa,
+          SUM(COALESCE(hits, 0)) AS hits,
+          SUM(COALESCE(total_bases, 0)) AS total_bases,
+          SUM(COALESCE(walks, 0)) AS walks,
+          SUM(COALESCE(strikeouts, 0)) AS strikeouts,
+          SUM(COALESCE(home_runs, 0)) AS home_runs
+        FROM mlb_player_game_batting
+        WHERE game_date < ?
+          AND game_date >= substr(?, 1, 4) || '-01-01'
+        GROUP BY player_id
+        """,
+        (snapshot_date, snapshot_date),
+    ).fetchall()
+    return {row["player_id"]: dict(row) for row in rows}
+
+
+def m2_hitter_player_dates(conn: sqlite3.Connection, through_date: str | None, as_of_date: str | None) -> list[str]:
+    if as_of_date:
+        return [
+            row["as_of_date"]
+            for row in conn.execute(
+                "SELECT DISTINCT as_of_date FROM mlb_hitter_classic_trend_snapshots WHERE as_of_date = ?",
+                (as_of_date,),
+            ).fetchall()
+        ]
+    if through_date:
+        return [
+            row["as_of_date"]
+            for row in conn.execute(
+                "SELECT DISTINCT as_of_date FROM mlb_hitter_classic_trend_snapshots WHERE as_of_date <= ? ORDER BY as_of_date",
+                (through_date,),
+            ).fetchall()
+        ]
+    return [
+        row["as_of_date"]
+        for row in conn.execute("SELECT DISTINCT as_of_date FROM mlb_hitter_classic_trend_snapshots ORDER BY as_of_date").fetchall()
+    ]
+
+
+def m2_pitcher_latest_window(rows: list[sqlite3.Row], preferred_window: int) -> dict[int, dict[str, Any]]:
+    by_pitcher: dict[int, list[dict[str, Any]]] = {}
+    for row in rows:
+        by_pitcher.setdefault(row["pitcher_id"], []).append(dict(row))
+    selected: dict[int, dict[str, Any]] = {}
+    for pitcher_id, pitcher_rows in by_pitcher.items():
+        pitcher_rows.sort(
+            key=lambda row: (
+                abs((to_int(row.get("window_starts")) or 0) - preferred_window),
+                -(to_int(row.get("starts_sample")) or 0),
+            )
+        )
+        selected[pitcher_id] = pitcher_rows[0]
+    return selected
+
+
+def refresh_m2_player_identity_rows(
+    conn: sqlite3.Connection,
+    through_date: str | None = None,
+    as_of_date: str | None = None,
+) -> dict[str, int]:
+    init_db(conn)
+    dates = m2_hitter_player_dates(conn, through_date, as_of_date)
+    if as_of_date:
+        for table_name in (
+            "mlb_player_identity_curves_daily",
+            "mlb_player_current_deviation_daily",
+            "mlb_player_game_distribution_daily",
+        ):
+            conn.execute(f"DELETE FROM {table_name} WHERE snapshot_date = ?", (as_of_date,))
+    elif through_date:
+        for table_name in (
+            "mlb_player_identity_curves_daily",
+            "mlb_player_current_deviation_daily",
+            "mlb_player_game_distribution_daily",
+        ):
+            conn.execute(f"DELETE FROM {table_name} WHERE snapshot_date <= ?", (through_date,))
+    else:
+        for table_name in (
+            "mlb_player_identity_curves_daily",
+            "mlb_player_current_deviation_daily",
+            "mlb_player_game_distribution_daily",
+        ):
+            conn.execute(f"DELETE FROM {table_name}")
+
+    created_at = datetime.utcnow().isoformat(timespec="seconds") + "Z"
+    curve_count = 0
+    deviation_count = 0
+    distribution_count = 0
+
+    career_rows = {
+        row["player_id"]: dict(row)
+        for row in conn.execute("SELECT * FROM mlb_hitter_career_profiles").fetchall()
+    }
+
+    for snapshot_date in dates:
+        season_baselines = m2_hitter_season_baselines(conn, snapshot_date)
+        classic_rows = {
+            row["player_id"]: dict(row)
+            for row in conn.execute(
+                "SELECT * FROM mlb_hitter_classic_trend_snapshots WHERE as_of_date = ?",
+                (snapshot_date,),
+            ).fetchall()
+        }
+        state_rows = {
+            row["player_id"]: dict(row)
+            for row in conn.execute(
+                "SELECT * FROM mlb_hitter_state_snapshots WHERE as_of_date = ?",
+                (snapshot_date,),
+            ).fetchall()
+        }
+        opponent_rows = {
+            row["player_id"]: dict(row)
+            for row in conn.execute(
+                "SELECT * FROM mlb_hitter_opponent_context_snapshots WHERE as_of_date = ?",
+                (snapshot_date,),
+            ).fetchall()
+        }
+        statcast_rows = {
+            row["player_id"]: dict(row)
+            for row in conn.execute(
+                "SELECT * FROM mlb_hitter_statcast_trend_snapshots WHERE as_of_date = ?",
+                (snapshot_date,),
+            ).fetchall()
+        }
+
+        hitter_identity_by_metric: dict[tuple[int, str], dict[str, Any]] = {}
+        for player_id, classic in classic_rows.items():
+            career = career_rows.get(player_id, {})
+            season = season_baselines.get(player_id, {})
+            state = state_rows.get(player_id, {})
+            opponent = opponent_rows.get(player_id, {})
+            statcast = statcast_rows.get(player_id, {})
+            player_name = classic.get("player_name") or state.get("player_name") or career.get("full_name") or str(player_id)
+            team_name = classic.get("team_name") or state.get("team_name") or season.get("team_name")
+            season_pa = to_int(season.get("pa")) or 0
+            recent_pa = to_int(classic.get("pa_sample_last10")) or 0
+            current_pa = to_int(state.get("games_sample")) or 0
+            shrinkage_weight = clamp_value(recent_pa / (recent_pa + 35), 0, 1) if recent_pa else 0.0
+            season_weight = clamp_value(season_pa / (season_pa + 90), 0, 1) if season_pa else 0.0
+            pressure = row_float(state, "pressure_plate_index", 0)
+            cold = row_float(state, "cold_streak_index", 0)
+            heat = row_float(state, "heat_regression_index", 0)
+
+            for metric, spec in M2_HITTER_IDENTITY_METRICS.items():
+                career_baseline = m2_metric_career_baseline(metric, career)
+                season_baseline = None
+                if spec.get("season_numerator"):
+                    season_baseline = m2_safe_divide(season.get(spec["season_numerator"]), season_pa)
+                recent_column = spec.get("recent_column")
+                recent_process = row_float(classic, recent_column, None) if recent_column else None  # type: ignore[arg-type]
+                if recent_process is None and spec.get("statcast_fallback_column"):
+                    recent_process = row_float(statcast, spec["statcast_fallback_column"], None)  # type: ignore[arg-type]
+                if metric == "home_run_rate":
+                    recent_process = m2_safe_divide(
+                        conn.execute(
+                            """
+                            SELECT SUM(COALESCE(home_runs, 0)) AS hr, SUM(COALESCE(plate_appearances, 0)) AS pa
+                            FROM mlb_player_game_batting
+                            WHERE player_id = ?
+                              AND game_date < ?
+                              AND game_date >= date(?, '-21 day')
+                            """,
+                            (player_id, snapshot_date, snapshot_date),
+                        ).fetchone()["hr"],
+                        conn.execute(
+                            """
+                            SELECT SUM(COALESCE(plate_appearances, 0)) AS pa
+                            FROM mlb_player_game_batting
+                            WHERE player_id = ?
+                              AND game_date < ?
+                              AND game_date >= date(?, '-21 day')
+                            """,
+                            (player_id, snapshot_date, snapshot_date),
+                        ).fetchone()["pa"],
+                    )
+                opponent_column = spec.get("opponent_column")
+                opponent_adjusted_recent = (
+                    row_float(opponent, opponent_column, None) if opponent_column else recent_process
+                )
+                if opponent_adjusted_recent is None:
+                    opponent_adjusted_recent = recent_process
+                base_candidates = [
+                    value
+                    for value in (career_baseline, season_baseline, recent_process)
+                    if value is not None
+                ]
+                if not base_candidates:
+                    continue
+                career_or_league = career_baseline if career_baseline is not None else safe_mean(base_candidates)
+                season_or_career = (
+                    career_or_league * (1 - season_weight) + season_baseline * season_weight
+                    if season_baseline is not None
+                    else career_or_league
+                )
+                current_component = opponent_adjusted_recent if opponent_adjusted_recent is not None else recent_process
+                identity_value = (
+                    season_or_career * (1 - 0.38 * shrinkage_weight) + current_component * (0.38 * shrinkage_weight)
+                    if current_component is not None
+                    else season_or_career
+                )
+                current_value = recent_process if recent_process is not None else identity_value
+                current_deviation = current_value - identity_value
+                volatility_score = clamp_value(
+                    abs(current_deviation) * 260
+                    + abs(row_float(classic, "hits_per_pa_last5_minus_last10", 0)) * 95
+                    + abs(row_float(classic, "total_bases_per_pa_last5_minus_last10", 0)) * 70
+                    + abs(row_float(statcast, "xwoba_trend_7_minus_30", 0)) * 80
+                    + max(cold - 55, 0) * 0.25
+                    + max(heat - 45, 0) * 0.18,
+                    0,
+                    100,
+                )
+                backtest_bucket = "/".join(
+                    [
+                        m2_sample_bucket(recent_pa or season_pa),
+                        m2_deviation_label(current_deviation, volatility_score),
+                    ]
+                )
+                feature_json = {
+                    "teamName": team_name,
+                    "seasonPA": season_pa,
+                    "recentPA": recent_pa,
+                    "pressurePlateIndex": pressure,
+                    "coldStreakIndex": cold,
+                    "heatRegressionIndex": heat,
+                    "careerRepeatability": career.get("repeatability_label"),
+                    "careerVolatility": career.get("volatility_label"),
+                    "statcast": {
+                        "rolling7Xwoba": row_float(statcast, "rolling_7_xwoba", None),
+                        "rolling30Xwoba": row_float(statcast, "rolling_30_xwoba", None),
+                        "xwobaTrend7Minus30": row_float(statcast, "xwoba_trend_7_minus_30", None),
+                        "barrelTrend7Minus30": row_float(statcast, "barrel_trend_7_minus_30", None),
+                    },
+                }
+                conn.execute(
+                    """
+                    INSERT OR REPLACE INTO mlb_player_identity_curves_daily (
+                      snapshot_date, player_id, player_name, player_type, metric,
+                      career_baseline, season_baseline, recent_process, opponent_adjusted_recent,
+                      identity_value, current_deviation, sample_size, shrinkage_weight,
+                      volatility_score, model_family, backtest_bucket, feature_json, created_at
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        snapshot_date,
+                        player_id,
+                        player_name,
+                        "hitter",
+                        metric,
+                        career_baseline,
+                        season_baseline,
+                        recent_process,
+                        opponent_adjusted_recent,
+                        identity_value,
+                        current_deviation,
+                        recent_pa or season_pa,
+                        shrinkage_weight,
+                        volatility_score,
+                        "shrinkage_identity_v0",
+                        backtest_bucket,
+                        json.dumps(feature_json, sort_keys=True),
+                        created_at,
+                    ),
+                )
+                curve_count += 1
+                approach_label = "stable"
+                if cold >= 70 and current_deviation < 0:
+                    approach_label = "cold-pressure"
+                elif heat >= 55 and current_deviation > 0:
+                    approach_label = "hot-regression-watch"
+                elif pressure >= 65:
+                    approach_label = "pressure-role"
+                elif volatility_score >= 60:
+                    approach_label = "volatile-process"
+                conn.execute(
+                    """
+                    INSERT OR REPLACE INTO mlb_player_current_deviation_daily (
+                      snapshot_date, player_id, player_name, player_type, team_name, metric,
+                      identity_value, current_value, current_deviation, deviation_label,
+                      confidence_weight, sample_size, role_pressure, approach_label,
+                      details_json, created_at
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        snapshot_date,
+                        player_id,
+                        player_name,
+                        "hitter",
+                        team_name,
+                        metric,
+                        identity_value,
+                        current_value,
+                        current_deviation,
+                        m2_deviation_label(current_deviation, volatility_score),
+                        shrinkage_weight,
+                        recent_pa or season_pa,
+                        pressure,
+                        approach_label,
+                        json.dumps(feature_json, sort_keys=True),
+                        created_at,
+                    ),
+                )
+                deviation_count += 1
+                hitter_identity_by_metric[(player_id, metric)] = {
+                    "player_name": player_name,
+                    "team_name": team_name,
+                    "identity_value": identity_value,
+                    "recent_process": recent_process,
+                    "opponent_adjusted_recent": opponent_adjusted_recent,
+                    "volatility_score": volatility_score,
+                    "sample_size": recent_pa or season_pa,
+                    "batting_order": row_float(classic, "batting_order_avg_last10", None),
+                    "count_like": bool(spec.get("count_like")),
+                }
+
+        games = conn.execute(
+            """
+            SELECT game_pk, away_team, home_team
+            FROM mlb_games
+            WHERE game_date = ?
+            """,
+            (snapshot_date,),
+        ).fetchall()
+        game_by_team: dict[str, tuple[int, str]] = {}
+        for game in games:
+            game_by_team[game["away_team"]] = (game["game_pk"], game["home_team"])
+            game_by_team[game["home_team"]] = (game["game_pk"], game["away_team"])
+        sun_by_game = {
+            row["game_pk"]: dict(row)
+            for row in conn.execute(
+                "SELECT * FROM mlb_game_sun_visibility_snapshots WHERE game_date = ?",
+                (snapshot_date,),
+            ).fetchall()
+        }
+        for (player_id, metric), identity in hitter_identity_by_metric.items():
+            team_name = identity.get("team_name")
+            if not team_name or team_name not in game_by_team:
+                continue
+            game_pk, opponent_team = game_by_team[team_name]
+            expected_pa, lineup_adjustment = m2_expected_pa_from_order(identity.get("batting_order"))
+            matchup_adjustment = (identity.get("opponent_adjusted_recent") or identity["identity_value"]) - (
+                identity.get("recent_process") or identity["identity_value"]
+            )
+            sun = sun_by_game.get(game_pk, {})
+            park_weather_sun_adjustment = 0.0
+            if metric in {"hits_per_pa", "total_bases_per_pa", "xslg"}:
+                park_weather_sun_adjustment = row_float(sun, "visibility_risk_score", 0) * (0.0005 if metric != "total_bases_per_pa" else 0.0008)
+            distribution_mean = identity["identity_value"]
+            if identity.get("count_like"):
+                distribution_mean = max(
+                    0.0,
+                    (identity["identity_value"] + matchup_adjustment + park_weather_sun_adjustment)
+                    * expected_pa
+                    * (1 + lineup_adjustment),
+                )
+            else:
+                distribution_mean = max(
+                    0.0,
+                    identity["identity_value"] + matchup_adjustment + park_weather_sun_adjustment + lineup_adjustment * 0.03,
+                )
+            p50, p75, p90 = m2_distribution_from_mean(
+                distribution_mean,
+                identity.get("volatility_score"),
+                bool(identity.get("count_like")),
+            )
+            conn.execute(
+                """
+                INSERT OR REPLACE INTO mlb_player_game_distribution_daily (
+                  snapshot_date, player_id, player_name, player_type, game_pk,
+                  team_name, opponent_team, metric, distribution_mean,
+                  distribution_p50, distribution_p75, distribution_p90,
+                  matchup_adjustment, park_weather_sun_adjustment,
+                  lineup_role_adjustment, volatility_score, details_json, created_at
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    snapshot_date,
+                    player_id,
+                    identity["player_name"],
+                    "hitter",
+                    game_pk,
+                    team_name,
+                    opponent_team,
+                    metric,
+                    distribution_mean,
+                    p50,
+                    p75,
+                    p90,
+                    matchup_adjustment,
+                    park_weather_sun_adjustment,
+                    lineup_adjustment,
+                    identity.get("volatility_score"),
+                    json.dumps({"expectedPA": expected_pa, "sampleSize": identity.get("sample_size")}, sort_keys=True),
+                    created_at,
+                ),
+            )
+            distribution_count += 1
+
+        pitcher_rows_all = conn.execute(
+            "SELECT * FROM mlb_starting_pitcher_rolling_form WHERE as_of_date = ?",
+            (snapshot_date,),
+        ).fetchall()
+        pitcher_rows = m2_pitcher_latest_window(list(pitcher_rows_all), 10)
+        pitcher_mistake_rows = m2_pitcher_latest_window(
+            list(
+                conn.execute(
+                    "SELECT * FROM mlb_pitcher_mistake_shape_daily WHERE as_of_date = ?",
+                    (snapshot_date,),
+                ).fetchall()
+            ),
+            10,
+        )
+        pitcher_identity_by_metric: dict[tuple[int, str], dict[str, Any]] = {}
+        for pitcher_id, pitcher in pitcher_rows.items():
+            mistake = pitcher_mistake_rows.get(pitcher_id, {})
+            pitcher_name = pitcher.get("pitcher_name") or mistake.get("pitcher_name") or str(pitcher_id)
+            team_name = pitcher.get("team_name") or mistake.get("team_name")
+            sample_size = to_int(pitcher.get("starts_sample")) or 0
+            shrinkage_weight = clamp_value(sample_size / (sample_size + 5), 0, 1) if sample_size else 0.0
+            recent_delta = row_float(pitcher, "recent_3_earned_runs_delta", 0)
+            volatility_seed = row_float(pitcher, "run_volatility", 0) * 22 + abs(recent_delta) * 15
+            for metric, column in M2_PITCHER_IDENTITY_METRICS.items():
+                season_baseline = row_float(pitcher, column, None)
+                recent_process = season_baseline
+                if metric == "collapse_hazard":
+                    season_baseline = row_float(mistake, "command_break_index", season_baseline or 0)
+                    recent_process = (
+                        season_baseline
+                        + row_float(mistake, "meltdown_start_rate", 0) * 20
+                        + row_float(mistake, "walk_burst_start_rate", 0) * 14
+                    )
+                if season_baseline is None:
+                    continue
+                identity_value = season_baseline * (1 - 0.28 * shrinkage_weight) + recent_process * (0.28 * shrinkage_weight)
+                current_deviation = (recent_process or identity_value) - identity_value
+                volatility_score = clamp_value(
+                    volatility_seed + abs(current_deviation) * (9 if metric.endswith("_per_start") else 1.8),
+                    0,
+                    100,
+                )
+                bucket = "/".join([m2_sample_bucket(sample_size), m2_deviation_label(current_deviation, volatility_score)])
+                feature_json = {
+                    "teamName": team_name,
+                    "startsSample": sample_size,
+                    "windowStarts": pitcher.get("window_starts"),
+                    "recent3EarnedRunsDelta": recent_delta,
+                    "commandBreakIndex": row_float(mistake, "command_break_index", None),
+                    "meltdownStartRate": row_float(mistake, "meltdown_start_rate", None),
+                    "walkBurstStartRate": row_float(mistake, "walk_burst_start_rate", None),
+                }
+                conn.execute(
+                    """
+                    INSERT OR REPLACE INTO mlb_player_identity_curves_daily (
+                      snapshot_date, player_id, player_name, player_type, metric,
+                      career_baseline, season_baseline, recent_process, opponent_adjusted_recent,
+                      identity_value, current_deviation, sample_size, shrinkage_weight,
+                      volatility_score, model_family, backtest_bucket, feature_json, created_at
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        snapshot_date,
+                        pitcher_id,
+                        pitcher_name,
+                        "pitcher",
+                        metric,
+                        None,
+                        season_baseline,
+                        recent_process,
+                        recent_process,
+                        identity_value,
+                        current_deviation,
+                        sample_size,
+                        shrinkage_weight,
+                        volatility_score,
+                        "pitcher_shrinkage_identity_v0",
+                        bucket,
+                        json.dumps(feature_json, sort_keys=True),
+                        created_at,
+                    ),
+                )
+                curve_count += 1
+                conn.execute(
+                    """
+                    INSERT OR REPLACE INTO mlb_player_current_deviation_daily (
+                      snapshot_date, player_id, player_name, player_type, team_name, metric,
+                      identity_value, current_value, current_deviation, deviation_label,
+                      confidence_weight, sample_size, role_pressure, approach_label,
+                      details_json, created_at
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        snapshot_date,
+                        pitcher_id,
+                        pitcher_name,
+                        "pitcher",
+                        team_name,
+                        metric,
+                        identity_value,
+                        recent_process,
+                        current_deviation,
+                        m2_deviation_label(current_deviation, volatility_score),
+                        shrinkage_weight,
+                        sample_size,
+                        row_float(mistake, "command_break_index", None),
+                        "command-pressure" if metric == "collapse_hazard" and (recent_process or 0) >= 55 else "stable",
+                        json.dumps(feature_json, sort_keys=True),
+                        created_at,
+                    ),
+                )
+                deviation_count += 1
+                pitcher_identity_by_metric[(pitcher_id, metric)] = {
+                    "pitcher_name": pitcher_name,
+                    "team_name": team_name,
+                    "identity_value": identity_value,
+                    "volatility_score": volatility_score,
+                    "sample_size": sample_size,
+                }
+
+        starter_game_rows = conn.execute(
+            """
+            SELECT sp.game_pk, sp.team_role, sp.pitcher_id, sp.pitcher_name,
+                   g.away_team, g.home_team
+            FROM mlb_starting_pitchers sp
+            JOIN mlb_games g ON g.game_pk = sp.game_pk
+            WHERE g.game_date = ?
+            """,
+            (snapshot_date,),
+        ).fetchall()
+        for starter in starter_game_rows:
+            starter_team_name = starter["away_team"] if starter["team_role"] == "away" else starter["home_team"]
+            opponent_team = starter["home_team"] if starter["team_role"] == "away" else starter["away_team"]
+            for metric in M2_PITCHER_IDENTITY_METRICS:
+                identity = pitcher_identity_by_metric.get((starter["pitcher_id"], metric))
+                if not identity:
+                    continue
+                distribution_mean = identity["identity_value"]
+                p50, p75, p90 = m2_distribution_from_mean(distribution_mean, identity.get("volatility_score"), True)
+                conn.execute(
+                    """
+                    INSERT OR REPLACE INTO mlb_player_game_distribution_daily (
+                      snapshot_date, player_id, player_name, player_type, game_pk,
+                      team_name, opponent_team, metric, distribution_mean,
+                      distribution_p50, distribution_p75, distribution_p90,
+                      matchup_adjustment, park_weather_sun_adjustment,
+                      lineup_role_adjustment, volatility_score, details_json, created_at
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        snapshot_date,
+                        starter["pitcher_id"],
+                        starter["pitcher_name"] or identity["pitcher_name"],
+                        "pitcher",
+                        starter["game_pk"],
+                        starter_team_name,
+                        opponent_team,
+                        metric,
+                        distribution_mean,
+                        p50,
+                        p75,
+                        p90,
+                        0.0,
+                        0.0,
+                        0.0,
+                        identity.get("volatility_score"),
+                        json.dumps({"sampleSize": identity.get("sample_size")}, sort_keys=True),
+                        created_at,
+                    ),
+                )
+                distribution_count += 1
+
+    conn.commit()
+    return {
+        "curves": curve_count,
+        "deviations": deviation_count,
+        "distributions": distribution_count,
+    }
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Local MLB warehouse utilities for modeling and backtesting.")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -12841,6 +13564,18 @@ def parse_args() -> argparse.Namespace:
     derive_state_formulas.add_argument(
         "--as-of-date",
         help="Optional single date to rebuild incrementally without touching earlier state-formula rows.",
+    )
+
+    derive_player_identity = subparsers.add_parser(
+        "derive-player-identity-rows",
+        help="Refresh MLB-M2 player identity, current deviation, and game distribution rows.",
+    )
+    derive_player_identity.add_argument(
+        "--through-date", help="Optional YYYY-MM-DD cutoff. Defaults to every loaded snapshot date."
+    )
+    derive_player_identity.add_argument(
+        "--as-of-date",
+        help="Optional single date to rebuild incrementally without touching earlier identity rows.",
     )
 
     ingest_pitcher_war_parser = subparsers.add_parser(
@@ -13131,6 +13866,16 @@ def main() -> None:
                 print(f"Refreshed MLB-M2 state formula rows through {args.through_date}: {rows_loaded} rows")
             else:
                 print(f"Refreshed MLB-M2 state formula rows for all loaded dates: {rows_loaded} rows")
+            return
+
+        if args.command == "derive-player-identity-rows":
+            counts = refresh_m2_player_identity_rows(conn, args.through_date, args.as_of_date)
+            date_text = args.as_of_date or (f"through {args.through_date}" if args.through_date else "for all loaded dates")
+            print(
+                "Refreshed MLB-M2 player identity rows "
+                f"{date_text}: {counts['curves']} curves, "
+                f"{counts['deviations']} deviations, {counts['distributions']} distributions"
+            )
             return
 
         if args.command == "ingest-pitcher-war":

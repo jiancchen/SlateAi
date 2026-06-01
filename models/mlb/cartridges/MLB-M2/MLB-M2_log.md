@@ -289,6 +289,39 @@ Interpretation:
 
 This is useful as a warehouse substrate and debugging surface, but not useful yet as a promoted value-board lane. The formula rows are now measurable; the first calibration is too weak and must be improved with player identity curves, pitcher-batter kernels, better actual-state labels, and line/price buckets before it can influence picks.
 
+## 2026-06-01 - Player Identity Curves Warehouse Pass
+
+Materialized the first player identity curve layer for MLB-M2.
+
+Implemented:
+
+- `mlb_player_identity_curves_daily` derivation for hitters and starting pitchers.
+- `mlb_player_current_deviation_daily` derivation for current-vs-identity labels.
+- `mlb_player_game_distribution_daily` derivation for per-game hitter and pitcher metric distributions.
+- `npm run data:derive:mlb-player-identity`.
+- `models/mlb/cartridges/MLB-M2/research/player_identity_rows_report.py`.
+- `models/mlb/cartridges/MLB-M2/reports/player-identity-rows-report-2026-05-23-to-2026-05-31.md`.
+- `data-private/reports/mlb-m2-player-identity-rows-report-2026-05-23-to-2026-05-31.json`.
+
+Warehouse coverage:
+
+- Full derived rows through May 31: 184,256 curves, 184,256 deviations, 184,228 distributions.
+- May 23-May 31 report range: 27,772 curves, 27,772 deviations, 27,758 distributions.
+- Hitter identity freshness: March 27 through May 31.
+- Pitcher identity freshness: March 31 through May 30.
+
+First rough signal checks:
+
+- Hits per PA direction: 57.1% on 2,446 rows.
+- Total bases per PA direction: 57.0% on 2,446 rows.
+- Strikeout rate direction: 60.6% on 2,446 rows.
+- Walk rate direction: 72.0% on 2,446 rows, mostly from a sparse/selective signal.
+- HR direction: 85.1% on 2,446 rows, mostly from correctly staying negative on a rare event. This is not a plus-edge HR model.
+
+Interpretation:
+
+The player identity substrate now exists and can prevent some fake heat by labeling sample size, deviation, volatility, and approach state. It is still research-only. The next real work is bucketed player backtesting and joining identity into the pitcher-batter kernel so props/totals can explain repeatability instead of just recency.
+
 ## 2026-06-01 - Invented Vector Search
 
 Added a wider vector search to break the six radar axes into raw invented dimensions.

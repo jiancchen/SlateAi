@@ -1,0 +1,322 @@
+{
+  "coverage": {
+    "curves": 27772,
+    "deviations": 27772,
+    "distributions": 27758
+  },
+  "deviationCounts": {
+    "cold": 681,
+    "cold-volatile": 573,
+    "hot": 569,
+    "hot-volatile": 605,
+    "negative-drift": 3221,
+    "positive-drift": 2216,
+    "stable": 19907
+  },
+  "experiment": "player_identity_rows_report",
+  "freshness": {
+    "hitter": {
+      "max_date": "2026-05-31",
+      "min_date": "2026-03-27",
+      "player_type": "hitter",
+      "rows": 173882
+    },
+    "pitcher": {
+      "max_date": "2026-05-30",
+      "min_date": "2026-03-31",
+      "player_type": "pitcher",
+      "rows": 10374
+    }
+  },
+  "modelId": "MLB-M2",
+  "range": {
+    "end": "2026-05-31",
+    "start": "2026-05-23"
+  },
+  "schemaVersion": 1,
+  "signalChecks": {
+    "byMetric": {
+      "hits_per_pa": {
+        "actual": 1359,
+        "actualRate": 0.556,
+        "directionHitRate": 0.571,
+        "hits": 1397,
+        "predicted": 2146,
+        "rows": 2446,
+        "signalRate": 0.877
+      },
+      "home_run_rate": {
+        "actual": 271,
+        "actualRate": 0.111,
+        "directionHitRate": 0.851,
+        "hits": 2081,
+        "predicted": 164,
+        "rows": 2446,
+        "signalRate": 0.067
+      },
+      "strikeout_rate": {
+        "actual": 1394,
+        "actualRate": 0.57,
+        "directionHitRate": 0.606,
+        "hits": 1483,
+        "predicted": 1963,
+        "rows": 2446,
+        "signalRate": 0.803
+      },
+      "total_bases_per_pa": {
+        "actual": 801,
+        "actualRate": 0.327,
+        "directionHitRate": 0.57,
+        "hits": 1395,
+        "predicted": 1186,
+        "rows": 2446,
+        "signalRate": 0.485
+      },
+      "walk_rate": {
+        "actual": 671,
+        "actualRate": 0.274,
+        "directionHitRate": 0.72,
+        "hits": 1760,
+        "predicted": 113,
+        "rows": 2446,
+        "signalRate": 0.046
+      }
+    },
+    "examples": [
+      {
+        "actualPositive": true,
+        "date": "2026-05-23",
+        "hit": true,
+        "mean": 0.793,
+        "metric": "hits_per_pa",
+        "p75": 1.105,
+        "p90": 1.502,
+        "player": "Marcell Ozuna"
+      },
+      {
+        "actualPositive": true,
+        "date": "2026-05-23",
+        "hit": true,
+        "mean": 0.99,
+        "metric": "hits_per_pa",
+        "p75": 1.367,
+        "p90": 1.846,
+        "player": "George Springer"
+      },
+      {
+        "actualPositive": true,
+        "date": "2026-05-23",
+        "hit": true,
+        "mean": 1.212,
+        "metric": "hits_per_pa",
+        "p75": 1.7,
+        "p90": 2.321,
+        "player": "Jes\u00fas S\u00e1nchez"
+      },
+      {
+        "actualPositive": false,
+        "date": "2026-05-23",
+        "hit": false,
+        "mean": 1.011,
+        "metric": "hits_per_pa",
+        "p75": 1.381,
+        "p90": 1.852,
+        "player": "Daulton Varsho"
+      },
+      {
+        "actualPositive": false,
+        "date": "2026-05-23",
+        "hit": false,
+        "mean": 1.083,
+        "metric": "hits_per_pa",
+        "p75": 1.456,
+        "p90": 1.931,
+        "player": "Brandon Lowe"
+      },
+      {
+        "actualPositive": false,
+        "date": "2026-05-23",
+        "hit": false,
+        "mean": 0.855,
+        "metric": "hits_per_pa",
+        "p75": 1.298,
+        "p90": 1.861,
+        "player": "Myles Straw"
+      },
+      {
+        "actualPositive": true,
+        "date": "2026-05-23",
+        "hit": true,
+        "mean": 1.102,
+        "metric": "hits_per_pa",
+        "p75": 1.482,
+        "p90": 1.965,
+        "player": "Vladimir Guerrero Jr."
+      },
+      {
+        "actualPositive": false,
+        "date": "2026-05-23",
+        "hit": false,
+        "mean": 1.084,
+        "metric": "hits_per_pa",
+        "p75": 1.454,
+        "p90": 1.926,
+        "player": "Oneil Cruz"
+      },
+      {
+        "actualPositive": true,
+        "date": "2026-05-23",
+        "hit": true,
+        "mean": 0.822,
+        "metric": "hits_per_pa",
+        "p75": 1.17,
+        "p90": 1.613,
+        "player": "Andr\u00e9s Gim\u00e9nez"
+      },
+      {
+        "actualPositive": true,
+        "date": "2026-05-23",
+        "hit": true,
+        "mean": 0.982,
+        "metric": "hits_per_pa",
+        "p75": 1.346,
+        "p90": 1.81,
+        "player": "Bryan Reynolds"
+      },
+      {
+        "actualPositive": false,
+        "date": "2026-05-23",
+        "hit": false,
+        "mean": 0.925,
+        "metric": "hits_per_pa",
+        "p75": 1.247,
+        "p90": 1.657,
+        "player": "Jared Triolo"
+      },
+      {
+        "actualPositive": false,
+        "date": "2026-05-23",
+        "hit": false,
+        "mean": 0.74,
+        "metric": "hits_per_pa",
+        "p75": 1.113,
+        "p90": 1.589,
+        "player": "Lenyn Sosa"
+      }
+    ]
+  },
+  "typeMetricCounts": [
+    {
+      "avg_deviation": -0.0089,
+      "avg_sample": 33.0,
+      "avg_volatility": 30.2,
+      "metric": "hits_per_pa",
+      "player_type": "hitter",
+      "rows": 3770
+    },
+    {
+      "avg_deviation": -0.0016,
+      "avg_sample": 33.0,
+      "avg_volatility": 22.2,
+      "metric": "home_run_rate",
+      "player_type": "hitter",
+      "rows": 3770
+    },
+    {
+      "avg_deviation": 0.0032,
+      "avg_sample": 33.0,
+      "avg_volatility": 29.5,
+      "metric": "strikeout_rate",
+      "player_type": "hitter",
+      "rows": 3770
+    },
+    {
+      "avg_deviation": -0.0149,
+      "avg_sample": 33.0,
+      "avg_volatility": 39.9,
+      "metric": "total_bases_per_pa",
+      "player_type": "hitter",
+      "rows": 3770
+    },
+    {
+      "avg_deviation": -0.0037,
+      "avg_sample": 33.0,
+      "avg_volatility": 26.1,
+      "metric": "walk_rate",
+      "player_type": "hitter",
+      "rows": 3770
+    },
+    {
+      "avg_deviation": 0.0,
+      "avg_sample": 33.3,
+      "avg_volatility": 18.7,
+      "metric": "xslg",
+      "player_type": "hitter",
+      "rows": 3736
+    },
+    {
+      "avg_deviation": 0.0,
+      "avg_sample": 33.1,
+      "avg_volatility": 18.7,
+      "metric": "xwoba",
+      "player_type": "hitter",
+      "rows": 3758
+    },
+    {
+      "avg_deviation": 8.9566,
+      "avg_sample": 8.0,
+      "avg_volatility": 61.2,
+      "metric": "collapse_hazard",
+      "player_type": "pitcher",
+      "rows": 204
+    },
+    {
+      "avg_deviation": -0.0,
+      "avg_sample": 8.0,
+      "avg_volatility": 46.0,
+      "metric": "hits_allowed_per_start",
+      "player_type": "pitcher",
+      "rows": 204
+    },
+    {
+      "avg_deviation": -0.0,
+      "avg_sample": 8.0,
+      "avg_volatility": 46.0,
+      "metric": "home_runs_allowed_per_start",
+      "player_type": "pitcher",
+      "rows": 204
+    },
+    {
+      "avg_deviation": -0.0,
+      "avg_sample": 8.0,
+      "avg_volatility": 46.0,
+      "metric": "runs_allowed_per_start",
+      "player_type": "pitcher",
+      "rows": 204
+    },
+    {
+      "avg_deviation": -0.0,
+      "avg_sample": 8.0,
+      "avg_volatility": 46.0,
+      "metric": "strikeouts_per_start",
+      "player_type": "pitcher",
+      "rows": 204
+    },
+    {
+      "avg_deviation": -0.0,
+      "avg_sample": 8.0,
+      "avg_volatility": 46.0,
+      "metric": "walks_allowed_per_start",
+      "player_type": "pitcher",
+      "rows": 204
+    },
+    {
+      "avg_deviation": -0.0,
+      "avg_sample": 8.0,
+      "avg_volatility": 46.0,
+      "metric": "whip_like",
+      "player_type": "pitcher",
+      "rows": 204
+    }
+  ]
+}

@@ -247,6 +247,35 @@ Report:
 - false heat rate
 - missed breakout rate
 
+## Current Commands
+
+Derive warehouse rows:
+
+```bash
+npm run data:derive:mlb-player-identity -- --through-date YYYY-MM-DD
+```
+
+Build the current coverage/signal report:
+
+```bash
+npm run data:research:mlb-m2-player-identity -- --start 2026-05-23 --end YYYY-MM-DD
+```
+
+Current artifacts:
+
+- `models/mlb/cartridges/MLB-M2/research/player_identity_rows_report.py`
+- `models/mlb/cartridges/MLB-M2/reports/player-identity-rows-report-2026-05-23-to-2026-05-31.md`
+- `data-private/reports/mlb-m2-player-identity-rows-report-2026-05-23-to-2026-05-31.json`
+
+Current first-pass read:
+
+- Full warehouse through May 31: 184,256 curves, 184,256 deviations, 184,228 distributions.
+- May 23-May 31 report range: 27,772 curves, 27,772 deviations, 27,758 distributions.
+- Hitter rows reach May 31; pitcher rows currently reach May 30 because pitcher rolling-form freshness stops there.
+- Rough hitter direction checks are research-only: hits 57.1%, total bases 57.0%, strikeouts 60.6%, walks 72.0%, HR 85.1% mostly because the signal stays negative on a rare event.
+
+Interpretation: the substrate exists, but the edge is not proven. Treat this as feature generation and false-heat control until bucketed prop/total backtests show lift.
+
 ## Promotion Gate
 
 This becomes usable only when it improves at least one of:

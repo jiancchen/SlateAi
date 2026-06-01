@@ -1,6 +1,6 @@
 # MLB-M2 Build Run Plan
 
-Status: Phase 3 in progress
+Status: Phase 4 in progress
 Owner model: MLB-M2
 Created: 2026-06-01
 
@@ -52,7 +52,7 @@ Do not claim a clean M2 improvement if May 31 outcomes were used for training, f
 | 1 | Core Contracts | In progress | Component docs and output contracts |
 | 2 | Warehouse Tables | In progress | New derived tables and migrations |
 | 3 | Formula Derivation | In progress | Phase state rows and formula outputs |
-| 4 | Player Identity Curves | Designed | Player priors, deviation, and distribution rows |
+| 4 | Player Identity Curves | In progress | Player priors, deviation, and distribution rows |
 | 5 | Pitcher-Batter Kernel | Designed | Pitch-mix matchup rows |
 | 6 | Backtest Harness | Pending | Bucketed accuracy/ROI/story reports |
 | 7 | Model Comparison | Pending | Projection vs formula vs learned model |
@@ -145,7 +145,7 @@ Checklist:
 
 - [x] Add migration/schema definitions.
 - [x] Add derive command for state formula rows.
-- [ ] Add derive command for player identity curves.
+- [x] Add derive command for player identity curves.
 - [ ] Add derive command for pitch-mix matchup rows.
 - [ ] Add health checks for table freshness and coverage.
 - [ ] Add missing-date warnings if a day closes without derived rows.
@@ -235,15 +235,34 @@ Candidate families:
 Checklist:
 
 - [x] Catalog experiment component.
-- [ ] Build hitter identity rows.
-- [ ] Build pitcher identity rows.
-- [ ] Build current-vs-identity deviation rows.
-- [ ] Build game distribution rows.
+- [x] Build hitter identity rows.
+- [x] Build pitcher identity rows.
+- [x] Build current-vs-identity deviation rows.
+- [x] Build game distribution rows.
+- [x] Add first coverage and rough signal report.
 - [ ] Backtest by stat target, role, sample size, and deviation bucket.
 
 Exit criteria:
 
 - Tiny samples are labeled and shrunk instead of promoted as fake heat.
+
+Current artifacts:
+
+- `npm run data:derive:mlb-player-identity -- --through-date YYYY-MM-DD`
+- `models/mlb/cartridges/MLB-M2/research/player_identity_rows_report.py`
+- `models/mlb/cartridges/MLB-M2/reports/player-identity-rows-report-2026-05-23-to-2026-05-31.md`
+- `data-private/reports/mlb-m2-player-identity-rows-report-2026-05-23-to-2026-05-31.json`
+
+Current read:
+
+- May 23-May 31 report range: 27,772 identity curves, 27,772 deviations, 27,758 distributions.
+- Full derived warehouse through May 31: 184,256 curves, 184,256 deviations, 184,228 distributions.
+- Hitter freshness reaches May 31; pitcher identity rows currently reach May 30 because pitcher rolling-form freshness stops there.
+- Rough hitter signal checks are coverage checks only: hits direction 57.1%, total bases direction 57.0%, strikeouts direction 60.6%, walks direction 72.0%, HR direction 85.1% mostly from negative/sparse classification.
+
+Important:
+
+This is not promoted to the value board. The first pass proves the player-identity tables can be filled and audited; it does not prove prop edge yet.
 
 ## Phase 5: Pitcher-Batter Kernel
 
