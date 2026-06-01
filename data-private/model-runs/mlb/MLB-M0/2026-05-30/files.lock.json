@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "runId": "mlb-2026-05-30-MLB-W1-MLB-F0-MLB-M0-MLB-RP36-MLB-E0",
-  "sourceHash": "80d6e18c9bb7aa671bd0fd78f5ca58edf09195b70ce0a1ee3e2ee665f5aa3f84",
+  "sourceHash": "edcf41d4a071ce543a4ee98468c8d9127becc3ccaf0bc752ca47a1b3d90798bd",
   "files": [
     {
       "role": "mlb-app-adapter-registry",
@@ -217,7 +217,7 @@
       "path": "models/mlb/cartridges/MLB-M0/MLB-M0_log.md",
       "role": "model-log",
       "exists": true,
-      "sha256": "e7da8ae5361f42929592222cdc5b2f3f63dc82f8e15d587aa68fcc130907bb1a"
+      "sha256": "fc8843123986e3ac91395a8f4abf11bcc793a24ff16ac4493ee452f66468e451"
     },
     {
       "path": "models/mlb/cartridges/MLB-M0/model_description.json",
@@ -283,7 +283,7 @@
       "role": "cartridge-followup-workflow",
       "path": "models/mlb/cartridges/MLB-M0/workflows/followup.mjs",
       "exists": true,
-      "sha256": "b40ac0a5d32c615ace35b635cad052db567c842b4456ed0bb32c05a79eae259f"
+      "sha256": "0ce16d9db92de1632e5dfaa1962feed165c3da80c6b7ed5b438889228dba00bc"
     },
     {
       "role": "cartridge-pregame-workflow",
@@ -295,7 +295,7 @@
       "role": "cartridge-refresh-workflow",
       "path": "models/mlb/cartridges/MLB-M0/workflows/refresh-live-board.mjs",
       "exists": true,
-      "sha256": "84110efc18cb5695fd7393fe1107eb9dc71137494943adb2f33ab6838b8c024e"
+      "sha256": "ab2617881dc1bd0b0b4c232d3bbf6c7e2508f1218509e9ad25af7e203c7a0528"
     },
     {
       "role": "cartridge-refresh-verifier",
@@ -367,7 +367,7 @@
       "role": "mlb-registry-utils",
       "path": "models/mlb/lib/registry-utils.mjs",
       "exists": true,
-      "sha256": "046ba849f0f3aa0ec9a607ec2559a11a6d69ada90cb66049ad6dd9d1e1f1980e"
+      "sha256": "35b3bd768c9c2f63f6e31115b4b09b7a5ca5e0f5516162ee82679e1a156cb460"
     },
     {
       "role": "mlb-cartridge-locker",

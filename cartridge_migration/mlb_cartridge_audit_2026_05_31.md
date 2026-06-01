@@ -8,6 +8,8 @@ Purpose: catch active MLB paths that still bypass the cartridge registry after t
 - `pipeline/mlb/publish/*` now dispatch through `models/mlb/run-cartridge.mjs --entry lane:<lane>` instead of hardcoding MLB-M0 lane files.
 - Package scripts for `data:export:mlb-reliever-shadow`, `data:lock:mlb-rp36`, and `data:verify:mlb-rp36` now use registry-aware wrappers.
 - MLB-M0 refresh consumes MLB-RP36 through `models/mlb/run-cartridge.mjs --model MLB-RP36 --entry runner`.
+- Registry resolution now honors inherited `MLB_MODEL_ID`, so nested compatibility launchers stay on the model currently being run instead of jumping back to the active registry model.
+- MLB-M0 refresh/follow-up workflows now call publish lanes through `models/mlb/run-cartridge.mjs --model <current model>` instead of bouncing through `pipeline/mlb/publish/*` compatibility files.
 - The web prop-calibration shim re-exports through `models/mlb/app-model.js`, not directly from MLB-M0 generated files.
 - MLB-M0 runner now resolves its pregame workflow from the cartridge directory, which makes future scaffolds less brittle.
 - MLB-M0 run-lock self-inventory now uses the local cartridge directory for its own manifest and lock/verifier files.
@@ -33,5 +35,7 @@ Purpose: catch active MLB paths that still bypass the cartridge registry after t
 - Tests now assert package scripts route MLB parent and RP36 commands through `models/mlb/` wrappers.
 - Tests now assert pipeline publish/workflow shims dispatch through the registry wrapper.
 - Tests now assert MLB-M0 refresh calls RP36 through the registry wrapper.
+- Tests now assert nested registry resolution honors `MLB_MODEL_ID`.
+- Tests now assert MLB-M0 refresh/follow-up workflows do not call publish compatibility wrappers internally.
 - Tests now assert the prop-calibration web shim uses `models/mlb/app-model.js`.
 - Tests now assert MLB-M0 runner and run-lock avoid unnecessary self-hardcoded M0 paths.

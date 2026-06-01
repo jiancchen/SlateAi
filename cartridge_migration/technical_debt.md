@@ -44,6 +44,8 @@ None yet.
 - 2026-05-31: Added `models/shared/model-runs/index_runs.py` and shared warehouse tables for `model_runs`, `model_run_artifacts`, `model_run_lanes`, `model_component_runs`, `mlb_rp36_settlements`, and `mlb_rp36_team_settlements`.
 - 2026-05-31: Added registry-aware MLB lifecycle wrappers and `development-docs/mlb/runbooks/model-iteration.md` so future parent models can be scaffolded, run, locked, verified, compared, and activated without editing package scripts by hand.
 - 2026-05-31: Routed MLB-RP36 package scripts and MLB-M0 refresh consumption through registry-aware wrappers; direct component paths remain in manifests/locks as declarative cartridge inventory, not operator entrypoints.
+- 2026-05-31: Registry resolution now honors inherited `MLB_MODEL_ID`, so nested compatibility launchers preserve the model under test instead of falling back to the active registry model.
+- 2026-05-31: MLB-M0 refresh/follow-up workflows now call cartridge lanes through `models/mlb/run-cartridge.mjs --model <current model>` instead of bouncing through `pipeline/mlb/publish/*` compatibility launchers.
 - 2026-05-31: Added `models/mlb/app-model.js` and routed shared app composition plus the MLB day loader through it so future active MLB models fail loudly unless their app adapter is registered.
 - 2026-05-31: Moved MLB-M0 workflow implementations into `models/mlb/cartridges/MLB-M0/workflows/*`; `pipeline/mlb/workflows/*` now dispatch through `models/mlb/run-cartridge.mjs` for compatibility.
 - 2026-05-31: Moved MLB-M0 publish lane implementations into `models/mlb/cartridges/MLB-M0/lanes/*`; `pipeline/mlb/publish/*` now dispatch through `models/mlb/run-cartridge.mjs` for compatibility.

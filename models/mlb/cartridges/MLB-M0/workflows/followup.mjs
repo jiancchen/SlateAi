@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const rootDir = path.resolve(__dirname, '..', '..', '..', '..', '..')
+const currentModelId = process.env.MLB_MODEL_ID || path.basename(path.resolve(__dirname, '..')).toUpperCase()
 
 const DEFAULT_PROP_MODEL_NAME = 'mlb-player-props-v2'
 const DEFAULT_HR_MODEL_NAME = 'statcast-hr-prototype-v3'
@@ -49,8 +50,15 @@ const runPythonSideBacktest = (command, extraArgs = []) => {
   })
 }
 
-const runNodeScript = (scriptName, extraArgs = []) => {
-  execFileSync('node', [path.join(rootDir, 'pipeline', scriptName), ...extraArgs], {
+const runMlbCartridge = (entry, extraArgs = [], modelId = currentModelId) => {
+  execFileSync('node', [
+    path.join(rootDir, 'models', 'mlb', 'run-cartridge.mjs'),
+    '--model',
+    modelId,
+    '--entry',
+    entry,
+    ...extraArgs
+  ], {
     cwd: rootDir,
     stdio: 'inherit'
   })
@@ -97,8 +105,8 @@ const main = () => {
   }
 
   runPythonWarehouse('grade-prop-picks', ['--date', options.date, '--model-name', options.propModelName])
-  runNodeScript('mlb/publish/export-veto-artifact.mjs', ['--date', options.date])
-  runNodeScript('mlb/publish/export-side-predictions.mjs', [
+  runMlbCartridge('lane:veto', ['--date', options.date])
+  runMlbCartridge('lane:sides', [
     '--start-date',
     options.date,
     '--end-date',
@@ -110,7 +118,7 @@ const main = () => {
   ])
   runPythonSideBacktest('import', ['--file', sidePredictionPath])
   runPythonSideBacktest('grade', ['--model-name', options.sideModelName])
-  runNodeScript('mlb/publish/export-history-journal.mjs')
+  runMlbCartridge('lane:history-journal')
   runPythonWarehouse('derive-story-labels', ['--through-date', options.date])
   const postmortemPaths = buildPostmortemPaths(options.date)
   execFileSync(

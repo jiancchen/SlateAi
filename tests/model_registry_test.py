@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import sqlite3
 import subprocess
 import unittest
@@ -147,6 +148,24 @@ class ModelRegistryTest(unittest.TestCase):
         self.assertEqual(payload.get("status"), "dry-run")
         self.assertFalse(target_dir.exists(), "MLB-M1 should not be created during scaffold dry-run")
 
+    def test_mlb_registry_wrapper_honors_model_env_for_nested_launchers(self) -> None:
+        env = os.environ.copy()
+        env["MLB_MODEL_ID"] = "MLB-RP36"
+        result = subprocess.run(
+            [
+                "node",
+                "-e",
+                "import('./models/mlb/lib/registry-utils.mjs').then(async (m) => console.log((await m.resolveCartridge()).modelId))",
+            ],
+            cwd=ROOT,
+            env=env,
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        self.assertEqual(result.returncode, 0, msg=result.stdout + result.stderr)
+        self.assertEqual(result.stdout.strip(), "MLB-RP36")
+
     def test_active_app_and_future_tennis_import_shared_sports_core_directly(self) -> None:
         app_text = (ROOT / "web" / "src" / "App.tsx").read_text(encoding="utf-8")
         app_model_text = (ROOT / "models" / "mlb" / "app-model.js").read_text(encoding="utf-8")
@@ -228,7 +247,7 @@ class ModelRegistryTest(unittest.TestCase):
             ROOT / "pipeline" / "mlb" / "workflows" / "followup.mjs"
         ).read_text(encoding="utf-8")
 
-        self.assertIn("export-side-predictions.mjs", text)
+        self.assertIn("runMlbCartridge('lane:sides'", text)
         self.assertIn("mlb_side_backtest.py", text)
         self.assertIn("runPythonSideBacktest('import'", text)
         self.assertIn("runPythonSideBacktest('grade'", text)
@@ -239,9 +258,22 @@ class ModelRegistryTest(unittest.TestCase):
         text = (
             ROOT / "models" / "mlb" / "cartridges" / "MLB-M0" / "workflows" / "refresh-live-board.mjs"
         ).read_text(encoding="utf-8")
-        self.assertIn("runMlbCartridge('MLB-RP36', 'runner'", text)
+        self.assertIn("currentModelId", text)
+        self.assertIn("runMlbCartridge('runner', ['--date', options.date], 'MLB-RP36')", text)
         self.assertIn("'models', 'mlb', 'run-cartridge.mjs'", text)
         self.assertNotIn("runPythonFile('models/mlb/cartridges/MLB-RP36/runner.py'", text)
+        self.assertNotIn("runNodeScript('mlb/publish/", text)
+
+    def test_mlb_m0_followup_runs_publish_lanes_through_registry_wrapper(self) -> None:
+        text = (
+            ROOT / "models" / "mlb" / "cartridges" / "MLB-M0" / "workflows" / "followup.mjs"
+        ).read_text(encoding="utf-8")
+        self.assertIn("currentModelId", text)
+        self.assertIn("runMlbCartridge('lane:veto'", text)
+        self.assertIn("runMlbCartridge('lane:sides'", text)
+        self.assertIn("runMlbCartridge('lane:history-journal'", text)
+        self.assertIn("'models', 'mlb', 'run-cartridge.mjs'", text)
+        self.assertNotIn("runNodeScript('mlb/publish/", text)
 
     def test_m0_quiet_start_gate_is_metadata_gated(self) -> None:
         model_text = (

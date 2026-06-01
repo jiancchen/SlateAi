@@ -155,6 +155,8 @@ Fixed:
 - `pipeline/mlb/workflows/*` and `pipeline/mlb/publish/*` now dispatch through `models/mlb/run-cartridge.mjs`.
 - MLB-RP36 package scripts now use `models/mlb/{run,lock,verify}-cartridge.mjs --model MLB-RP36`.
 - MLB-M0 refresh now consumes RP36 through the registry wrapper.
+- Nested compatibility launchers now inherit `MLB_MODEL_ID` so comparison runs do not accidentally call the active registry model mid-workflow.
+- MLB-M0 refresh/follow-up workflows now call publish lanes through the cartridge registry wrapper with the current model id, instead of bouncing through `pipeline/mlb/publish/*` compatibility files.
 - Prop calibration for the web app now exposes through `models/mlb/app-model.js`.
 - MLB-M0 runner and run-lock self-inventory now use local cartridge paths where possible.
 

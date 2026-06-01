@@ -32,6 +32,7 @@ Date: 2026-05-31
 - Updated active app imports and future tennis day generation to import `models/shared/sports-core/app-sports-model.js` directly; historical generated day files can keep the compatibility shim.
 - Added registry-aware MLB lifecycle wrappers under `models/mlb/` and routed MLB package scripts through them for parent-model run, lock, verify, workflow, and lane dispatch.
 - Routed MLB-RP36 package scripts and the MLB-M0 refresh workflow through the same registry-aware wrappers, so the relief addendum is consumed as a registered component instead of a direct file path.
+- Replaced MLB-M0 refresh/follow-up internal calls to `pipeline/mlb/publish/*` with current-model registry lane dispatch, so non-active comparison runs do not accidentally route back to the active model.
 - Added `development-docs/mlb/runbooks/model-iteration.md` documenting how a future `MLB-M1` should be scaffolded from `MLB-M0`, benchmarked, locked, compared, and activated.
 - Added `models/mlb/app-model.js` so app-facing MLB adapter resolution is centralized and unregistered future active parent models fail loudly instead of silently using MLB-M0.
 - Re-routed the web prop-calibration shim through `models/mlb/app-model.js` so future model adapters can own calibration exposure.

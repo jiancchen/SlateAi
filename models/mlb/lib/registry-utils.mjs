@@ -27,7 +27,7 @@ export const readRegistry = async () => {
 }
 
 export const resolveModelId = (registry, requestedModel = '') => {
-  const modelId = String(requestedModel || registry.active?.model || registry.activeModelId || '').trim()
+  const modelId = String(requestedModel || process.env.MLB_MODEL_ID || registry.active?.model || registry.activeModelId || '').trim()
   if (!modelId) throw new Error('No MLB model requested and registry has no active model.')
   return modelId.toUpperCase()
 }

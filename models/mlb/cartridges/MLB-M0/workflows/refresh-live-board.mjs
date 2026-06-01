@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const rootDir = path.resolve(__dirname, '..', '..', '..', '..', '..')
+const currentModelId = process.env.MLB_MODEL_ID || path.basename(path.resolve(__dirname, '..')).toUpperCase()
 const playerPropModelName = 'mlb-player-props-v2'
 
 const shiftIsoDate = (dateText, days) => {
@@ -33,13 +34,6 @@ const parseArgs = () => {
   return options
 }
 
-const runNodeScript = (scriptName, extraArgs = []) => {
-  execFileSync('node', [path.join(rootDir, 'pipeline', scriptName), ...extraArgs], {
-    cwd: rootDir,
-    stdio: 'inherit'
-  })
-}
-
 const runPythonWarehouse = (command, extraArgs = []) => {
   execFileSync('python3', [path.join(rootDir, 'pipeline', 'mlb', 'warehouse', 'mlb_warehouse.py'), command, ...extraArgs], {
     cwd: rootDir,
@@ -61,7 +55,7 @@ const runPythonFile = (relativePath, extraArgs = []) => {
   })
 }
 
-const runMlbCartridge = (modelId, entry, extraArgs = []) => {
+const runMlbCartridge = (entry, extraArgs = [], modelId = currentModelId) => {
   execFileSync('node', [
     path.join(rootDir, 'models', 'mlb', 'run-cartridge.mjs'),
     '--model',
@@ -110,13 +104,13 @@ const main = () => {
   runPythonWarehouse('derive-tier3-features', ['--as-of-date', options.date])
   // Capture today's FanDuel pitcher strikeout lines before we build the slate and prop board.
   runPythonFile('pipeline/mlb/fetchers/fetch_fanduel_research_mlb.py', ['--start-date', options.date, '--end-date', options.date, '--markets', 'strikeouts'])
-  runNodeScript('mlb/publish/generate-day-files.mjs', generateArgs)
-  runNodeScript('mlb/publish/export-lineup-model.mjs', ['--date', options.date])
+  runMlbCartridge('lane:generate-day-files', generateArgs)
+  runMlbCartridge('lane:lineups', ['--date', options.date])
   // Keep the bullpen upgrade path in shadow mode on real game cards before promoting it into live picks.
-  runMlbCartridge('MLB-RP36', 'runner', ['--date', options.date])
-  runNodeScript('mlb/publish/export-veto-artifact.mjs', ['--date', options.date])
-  runNodeScript('mlb/publish/export-home-run-predictions.mjs', ['--date', options.date])
-  runNodeScript('mlb/publish/export-prop-predictions.mjs', ['--date', options.date])
+  runMlbCartridge('runner', ['--date', options.date], 'MLB-RP36')
+  runMlbCartridge('lane:veto', ['--date', options.date])
+  runMlbCartridge('lane:home-runs', ['--date', options.date])
+  runMlbCartridge('lane:props', ['--date', options.date])
   runPythonWarehouse('import-prop-predictions', [
     '--file',
     path.join(rootDir, 'data-private', 'predictions', 'mlb-player-props', `${options.date}-player-props.json`)
