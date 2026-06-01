@@ -1,0 +1,224 @@
+{
+  "coverage": {
+    "hitterResponse": 34679,
+    "matchups": 2709,
+    "pitchMix": 22146
+  },
+  "dailyCoverage": [
+    {
+      "avg_lineup_collapse": 22.4,
+      "avg_lineup_damage": 7.3,
+      "hitter_rows": 277,
+      "lineup_rows": 28,
+      "snapshot_date": "2026-05-23"
+    },
+    {
+      "avg_lineup_collapse": 22.5,
+      "avg_lineup_damage": 7.0,
+      "hitter_rows": 302,
+      "lineup_rows": 29,
+      "snapshot_date": "2026-05-24"
+    },
+    {
+      "avg_lineup_collapse": 22.5,
+      "avg_lineup_damage": 7.4,
+      "hitter_rows": 264,
+      "lineup_rows": 26,
+      "snapshot_date": "2026-05-25"
+    },
+    {
+      "avg_lineup_collapse": 22.2,
+      "avg_lineup_damage": 7.3,
+      "hitter_rows": 297,
+      "lineup_rows": 28,
+      "snapshot_date": "2026-05-26"
+    },
+    {
+      "avg_lineup_collapse": 22.3,
+      "avg_lineup_damage": 7.5,
+      "hitter_rows": 294,
+      "lineup_rows": 29,
+      "snapshot_date": "2026-05-27"
+    },
+    {
+      "avg_lineup_collapse": 22.0,
+      "avg_lineup_damage": 7.6,
+      "hitter_rows": 126,
+      "lineup_rows": 12,
+      "snapshot_date": "2026-05-28"
+    },
+    {
+      "avg_lineup_collapse": 22.8,
+      "avg_lineup_damage": 7.4,
+      "hitter_rows": 292,
+      "lineup_rows": 29,
+      "snapshot_date": "2026-05-29"
+    },
+    {
+      "avg_lineup_collapse": 22.5,
+      "avg_lineup_damage": 7.4,
+      "hitter_rows": 305,
+      "lineup_rows": 30,
+      "snapshot_date": "2026-05-30"
+    },
+    {
+      "avg_lineup_collapse": 21.8,
+      "avg_lineup_damage": 7.2,
+      "hitter_rows": 311,
+      "lineup_rows": 30,
+      "snapshot_date": "2026-05-31"
+    }
+  ],
+  "experiment": "pitcher_batter_kernel_report",
+  "modelId": "MLB-M2",
+  "pitchTypes": [
+    {
+      "avg_command_leak": 0.506,
+      "avg_damage_allowed": 0.059,
+      "avg_sample": 101.4,
+      "avg_share": 0.344,
+      "pitch_type": "FF",
+      "rows": 4729
+    },
+    {
+      "avg_command_leak": 0.465,
+      "avg_damage_allowed": 0.076,
+      "avg_sample": 74.2,
+      "avg_share": 0.239,
+      "pitch_type": "SI",
+      "rows": 3545
+    },
+    {
+      "avg_command_leak": 0.578,
+      "avg_damage_allowed": 0.063,
+      "avg_sample": 64.0,
+      "avg_share": 0.239,
+      "pitch_type": "SL",
+      "rows": 3321
+    },
+    {
+      "avg_command_leak": 0.655,
+      "avg_damage_allowed": 0.058,
+      "avg_sample": 59.3,
+      "avg_share": 0.179,
+      "pitch_type": "CH",
+      "rows": 3004
+    },
+    {
+      "avg_command_leak": 0.592,
+      "avg_damage_allowed": 0.054,
+      "avg_sample": 62.4,
+      "avg_share": 0.21,
+      "pitch_type": "ST",
+      "rows": 2087
+    },
+    {
+      "avg_command_leak": 0.616,
+      "avg_damage_allowed": 0.056,
+      "avg_sample": 50.1,
+      "avg_share": 0.152,
+      "pitch_type": "CU",
+      "rows": 2028
+    },
+    {
+      "avg_command_leak": 0.506,
+      "avg_damage_allowed": 0.063,
+      "avg_sample": 60.5,
+      "avg_share": 0.199,
+      "pitch_type": "FC",
+      "rows": 2008
+    },
+    {
+      "avg_command_leak": 0.671,
+      "avg_damage_allowed": 0.057,
+      "avg_sample": 67.6,
+      "avg_share": 0.204,
+      "pitch_type": "FS",
+      "rows": 770
+    },
+    {
+      "avg_command_leak": 0.637,
+      "avg_damage_allowed": 0.052,
+      "avg_sample": 86.6,
+      "avg_share": 0.186,
+      "pitch_type": "KC",
+      "rows": 297
+    },
+    {
+      "avg_command_leak": 0.611,
+      "avg_damage_allowed": 0.064,
+      "avg_sample": 87.9,
+      "avg_share": 0.197,
+      "pitch_type": "SV",
+      "rows": 92
+    },
+    {
+      "avg_command_leak": 0.694,
+      "avg_damage_allowed": 0.143,
+      "avg_sample": 19.3,
+      "avg_share": 0.812,
+      "pitch_type": "EP",
+      "rows": 89
+    },
+    {
+      "avg_command_leak": 0.604,
+      "avg_damage_allowed": 0.158,
+      "avg_sample": 10.6,
+      "avg_share": 0.478,
+      "pitch_type": "FA",
+      "rows": 68
+    },
+    {
+      "avg_command_leak": 0.327,
+      "avg_damage_allowed": 0.052,
+      "avg_sample": 14.8,
+      "avg_share": 0.067,
+      "pitch_type": "UNK",
+      "rows": 54
+    },
+    {
+      "avg_command_leak": 0.606,
+      "avg_damage_allowed": 0.122,
+      "avg_sample": 68.0,
+      "avg_share": 0.318,
+      "pitch_type": "KN",
+      "rows": 18
+    },
+    {
+      "avg_command_leak": 0.615,
+      "avg_damage_allowed": 0.068,
+      "avg_sample": 60.9,
+      "avg_share": 0.199,
+      "pitch_type": "FO",
+      "rows": 18
+    }
+  ],
+  "range": {
+    "end": "2026-05-31",
+    "start": "2026-05-23"
+  },
+  "schemaVersion": 1,
+  "signalChecks": {
+    "collapseTopQuartile": {
+      "gameF5Over4Rate": 0.525,
+      "rows": 61,
+      "teamF5RunsPerRow": 2.803,
+      "teamF5ThreePlusRate": 0.443,
+      "threshold": 23.14
+    },
+    "commandTopQuartile": {
+      "gameF5Over4Rate": 0.459,
+      "rows": 61,
+      "teamF5RunsPerRow": 2.754,
+      "teamF5ThreePlusRate": 0.426,
+      "threshold": 48.49
+    },
+    "damageTopQuartile": {
+      "gameF5Over4Rate": 0.426,
+      "rows": 61,
+      "teamF5RunsPerRow": 2.328,
+      "teamF5ThreePlusRate": 0.328,
+      "threshold": 7.82
+    }
+  }
+}

@@ -11,6 +11,7 @@ import json
 import math
 import re
 import sqlite3
+from collections import defaultdict
 from datetime import datetime, timedelta
 from pathlib import Path
 from statistics import fmean, pstdev
@@ -13399,6 +13400,438 @@ def refresh_m2_player_identity_rows(
     }
 
 
+M2_SWING_CALLS = {"F", "S", "W", "T", "L", "M", "X", "D", "E"}
+M2_WHIFF_CALLS = {"S", "W", "M"}
+M2_DAMAGE_CALLS = {"D", "E"}
+
+
+def m2_pitch_kernel_dates(conn: sqlite3.Connection, through_date: str | None, as_of_date: str | None) -> list[str]:
+    if as_of_date:
+        return [
+            row["game_date"]
+            for row in conn.execute(
+                "SELECT DISTINCT game_date FROM mlb_games WHERE game_date = ?",
+                (as_of_date,),
+            ).fetchall()
+        ]
+    if through_date:
+        return [
+            row["game_date"]
+            for row in conn.execute(
+                "SELECT DISTINCT game_date FROM mlb_games WHERE game_date <= ? ORDER BY game_date",
+                (through_date,),
+            ).fetchall()
+        ]
+    return [
+        row["game_date"]
+        for row in conn.execute("SELECT DISTINCT game_date FROM mlb_games ORDER BY game_date").fetchall()
+    ]
+
+
+def refresh_m2_pitcher_batter_kernel_rows(
+    conn: sqlite3.Connection,
+    through_date: str | None = None,
+    as_of_date: str | None = None,
+    lookback_days: int = 45,
+) -> dict[str, int]:
+    init_db(conn)
+    dates = m2_pitch_kernel_dates(conn, through_date, as_of_date)
+    if as_of_date:
+        for table_name in (
+            "mlb_pitcher_pitch_mix_daily",
+            "mlb_hitter_pitch_type_response_daily",
+            "mlb_lineup_pitcher_matchup_daily",
+        ):
+            conn.execute(f"DELETE FROM {table_name} WHERE snapshot_date = ?", (as_of_date,))
+    elif through_date:
+        for table_name in (
+            "mlb_pitcher_pitch_mix_daily",
+            "mlb_hitter_pitch_type_response_daily",
+            "mlb_lineup_pitcher_matchup_daily",
+        ):
+            conn.execute(f"DELETE FROM {table_name} WHERE snapshot_date <= ?", (through_date,))
+    else:
+        for table_name in (
+            "mlb_pitcher_pitch_mix_daily",
+            "mlb_hitter_pitch_type_response_daily",
+            "mlb_lineup_pitcher_matchup_daily",
+        ):
+            conn.execute(f"DELETE FROM {table_name}")
+
+    created_at = datetime.utcnow().isoformat(timespec="seconds") + "Z"
+    mix_count = 0
+    response_count = 0
+    matchup_count = 0
+
+    for snapshot_date in dates:
+        pitch_mix_rows = conn.execute(
+            """
+            WITH pitcher_pitch AS (
+              SELECT
+                e.pitcher_id,
+                MAX(p.full_name) AS pitcher_name,
+                MAX(fielding_team) AS team_name,
+                COALESCE(NULLIF(pitch_type_code, ''), 'UNK') AS pitch_type,
+                COUNT(*) AS sample_pitches,
+                SUM(CASE WHEN zone BETWEEN 1 AND 9 THEN 1 ELSE 0 END) AS zone_pitches,
+                SUM(CASE WHEN call_code IN ('S', 'W', 'M') THEN 1 ELSE 0 END) AS whiffs,
+                SUM(CASE WHEN call_code = 'C' THEN 1 ELSE 0 END) AS called_strikes,
+                SUM(CASE WHEN json_extract(raw_json, '$.hitData.hardness') = 'hard' THEN 1 ELSE 0 END) AS hard_contact,
+                SUM(CASE WHEN call_code IN ('D', 'E') THEN 1 ELSE 0 END) AS damage_events,
+                SUM(CASE WHEN is_ball = 1 OR zone > 9 THEN 1 ELSE 0 END) AS leak_events
+              FROM mlb_pitch_events e
+              LEFT JOIN mlb_player_identity_profiles p ON p.player_id = e.pitcher_id
+              WHERE game_date < ?
+                AND game_date >= date(?, ?)
+                AND is_pitch = 1
+                AND e.pitcher_id IS NOT NULL
+              GROUP BY e.pitcher_id, pitch_type
+            ),
+            pitcher_totals AS (
+              SELECT pitcher_id, SUM(sample_pitches) AS total_pitches
+              FROM pitcher_pitch
+              GROUP BY pitcher_id
+            )
+            SELECT p.*, t.total_pitches
+            FROM pitcher_pitch p
+            JOIN pitcher_totals t ON t.pitcher_id = p.pitcher_id
+            WHERE p.sample_pitches >= 5
+            """,
+            (snapshot_date, snapshot_date, f"-{lookback_days} day"),
+        ).fetchall()
+        for row in pitch_mix_rows:
+            sample = to_int(row["sample_pitches"]) or 0
+            total = to_int(row["total_pitches"]) or sample
+            source_json = {
+                "lookbackDays": lookback_days,
+                "samplePitches": sample,
+                "totalPitches": total,
+            }
+            conn.execute(
+                """
+                INSERT OR REPLACE INTO mlb_pitcher_pitch_mix_daily (
+                  snapshot_date, pitcher_id, pitcher_name, team_name, pitch_type,
+                  sample_pitches, pitch_share, zone_rate, whiff_rate, called_strike_rate,
+                  hard_contact_rate, damage_allowed, command_leak, platoon_split_json,
+                  source_json, created_at
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    snapshot_date,
+                    row["pitcher_id"],
+                    row["pitcher_name"] or "",
+                    row["team_name"],
+                    row["pitch_type"],
+                    sample,
+                    m2_safe_divide(sample, total),
+                    m2_safe_divide(row["zone_pitches"], sample),
+                    m2_safe_divide(row["whiffs"], sample),
+                    m2_safe_divide(row["called_strikes"], sample),
+                    m2_safe_divide(row["hard_contact"], sample),
+                    m2_safe_divide(row["damage_events"], sample),
+                    m2_safe_divide(row["leak_events"], sample),
+                    json.dumps({}, sort_keys=True),
+                    json.dumps(source_json, sort_keys=True),
+                    created_at,
+                ),
+            )
+            mix_count += 1
+
+        response_rows = conn.execute(
+            """
+            WITH hitter_pitch AS (
+              SELECT
+                e.batter_id AS hitter_id,
+                MAX(p.full_name) AS hitter_name,
+                MAX(batting_team) AS team_name,
+                COALESCE(NULLIF(pitch_type_code, ''), 'UNK') AS pitch_type,
+                COUNT(*) AS sample_pitches,
+                SUM(CASE WHEN call_code IN ('F', 'S', 'W', 'T', 'L', 'M', 'X', 'D', 'E') THEN 1 ELSE 0 END) AS swings,
+                SUM(CASE WHEN call_code IN ('S', 'W', 'M') THEN 1 ELSE 0 END) AS whiffs,
+                SUM(CASE WHEN is_ball = 1 THEN 1 ELSE 0 END) AS taken_balls,
+                SUM(CASE WHEN call_code = 'C' THEN 1 ELSE 0 END) AS called_strikes,
+                SUM(CASE WHEN call_code IN ('D', 'E') THEN 1 ELSE 0 END) AS damage_events,
+                SUM(CASE WHEN json_extract(raw_json, '$.hitData.hardness') = 'hard' THEN 1 ELSE 0 END) AS hard_contact
+              FROM mlb_pitch_events e
+              LEFT JOIN mlb_player_identity_profiles p ON p.player_id = e.batter_id
+              WHERE game_date < ?
+                AND game_date >= date(?, ?)
+                AND is_pitch = 1
+                AND e.batter_id IS NOT NULL
+              GROUP BY e.batter_id, pitch_type
+            )
+            SELECT *
+            FROM hitter_pitch
+            WHERE sample_pitches >= 5
+            """,
+            (snapshot_date, snapshot_date, f"-{lookback_days} day"),
+        ).fetchall()
+        for row in response_rows:
+            sample = to_int(row["sample_pitches"]) or 0
+            swings = to_int(row["swings"]) or 0
+            damage_rate = m2_safe_divide(row["damage_events"], sample) or 0.0
+            hard_contact_rate = m2_safe_divide(row["hard_contact"], sample) or 0.0
+            take_pressure = clamp_value(
+                (m2_safe_divide(row["taken_balls"], sample) or 0.0)
+                - (m2_safe_divide(row["called_strikes"], sample) or 0.0) * 0.35,
+                0,
+                1,
+            )
+            expected_slugging = clamp_value(damage_rate * 2.1 + hard_contact_rate * 0.75, 0, 4)
+            source_json = {
+                "lookbackDays": lookback_days,
+                "samplePitches": sample,
+            }
+            conn.execute(
+                """
+                INSERT OR REPLACE INTO mlb_hitter_pitch_type_response_daily (
+                  snapshot_date, hitter_id, hitter_name, team_name, pitch_type,
+                  sample_pitches, swing_rate, chase_rate, whiff_rate, take_pressure,
+                  damage_rate, hard_contact_rate, expected_slugging,
+                  platoon_split_json, source_json, created_at
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    snapshot_date,
+                    row["hitter_id"],
+                    row["hitter_name"] or "",
+                    row["team_name"],
+                    row["pitch_type"],
+                    sample,
+                    m2_safe_divide(swings, sample),
+                    None,
+                    m2_safe_divide(row["whiffs"], swings) if swings else 0.0,
+                    take_pressure,
+                    damage_rate,
+                    hard_contact_rate,
+                    expected_slugging,
+                    json.dumps({}, sort_keys=True),
+                    json.dumps(source_json, sort_keys=True),
+                    created_at,
+                ),
+            )
+            response_count += 1
+
+        league_response = {
+            row["pitch_type"]: dict(row)
+            for row in conn.execute(
+                """
+                SELECT pitch_type,
+                       AVG(swing_rate) AS swing_rate,
+                       AVG(whiff_rate) AS whiff_rate,
+                       AVG(take_pressure) AS take_pressure,
+                       AVG(damage_rate) AS damage_rate,
+                       AVG(hard_contact_rate) AS hard_contact_rate,
+                       AVG(expected_slugging) AS expected_slugging
+                FROM mlb_hitter_pitch_type_response_daily
+                WHERE snapshot_date = ?
+                GROUP BY pitch_type
+                """,
+                (snapshot_date,),
+            ).fetchall()
+        }
+        mix_by_pitcher: dict[int, list[dict[str, Any]]] = defaultdict(list)
+        for row in conn.execute(
+            "SELECT * FROM mlb_pitcher_pitch_mix_daily WHERE snapshot_date = ?",
+            (snapshot_date,),
+        ).fetchall():
+            mix_by_pitcher[row["pitcher_id"]].append(dict(row))
+        response_by_hitter_pitch = {
+            (row["hitter_id"], row["pitch_type"]): dict(row)
+            for row in conn.execute(
+                "SELECT * FROM mlb_hitter_pitch_type_response_daily WHERE snapshot_date = ?",
+                (snapshot_date,),
+            ).fetchall()
+        }
+        games = conn.execute(
+            """
+            SELECT sp.game_pk, sp.team_role, sp.pitcher_id, sp.pitcher_name,
+                   g.away_team, g.home_team
+            FROM mlb_starting_pitchers sp
+            JOIN mlb_games g ON g.game_pk = sp.game_pk
+            WHERE g.game_date = ?
+              AND sp.pitcher_id IS NOT NULL
+            """,
+            (snapshot_date,),
+        ).fetchall()
+        for starter in games:
+            pitcher_id = starter["pitcher_id"]
+            pitcher_mix = mix_by_pitcher.get(pitcher_id, [])
+            if not pitcher_mix:
+                continue
+            batting_role = "home" if starter["team_role"] == "away" else "away"
+            team_name = starter["home_team"] if batting_role == "home" else starter["away_team"]
+            opponent_team = starter["away_team"] if batting_role == "home" else starter["home_team"]
+            hitters = conn.execute(
+                """
+                SELECT player_id, player_name, batting_order, team_name, opponent_name
+                FROM mlb_player_game_batting
+                WHERE game_pk = ?
+                  AND team_role = ?
+                  AND batting_order IS NOT NULL
+                ORDER BY batting_order
+                """,
+                (starter["game_pk"], batting_role),
+            ).fetchall()
+            lineup_totals = {
+                "pitch_fit_damage": [],
+                "pitch_fit_whiff": [],
+                "zone_punish": [],
+                "command_stress": [],
+                "traffic_fit": [],
+                "damage_fit": [],
+                "collapse_trigger_score": [],
+                "strand_fork_risk": [],
+            }
+            for hitter in hitters:
+                weighted_damage = 0.0
+                weighted_whiff = 0.0
+                weighted_zone = 0.0
+                weighted_command = 0.0
+                weighted_traffic = 0.0
+                details = []
+                for pitch in pitcher_mix:
+                    pitch_type = pitch["pitch_type"]
+                    share = to_float(pitch["pitch_share"]) or 0.0
+                    response = response_by_hitter_pitch.get((hitter["player_id"], pitch_type)) or league_response.get(pitch_type, {})
+                    hitter_damage = row_float(response, "damage_rate", 0)
+                    hitter_hard = row_float(response, "hard_contact_rate", 0)
+                    hitter_whiff = row_float(response, "whiff_rate", 0)
+                    hitter_take = row_float(response, "take_pressure", 0)
+                    pitcher_damage = row_float(pitch, "damage_allowed", 0)
+                    pitcher_hard = row_float(pitch, "hard_contact_rate", 0)
+                    pitcher_whiff = row_float(pitch, "whiff_rate", 0)
+                    pitcher_zone = row_float(pitch, "zone_rate", 0)
+                    pitcher_leak = row_float(pitch, "command_leak", 0)
+                    damage_component = (hitter_damage * 0.42 + hitter_hard * 0.23 + pitcher_damage * 0.23 + pitcher_hard * 0.12)
+                    whiff_component = (hitter_whiff * 0.55 + pitcher_whiff * 0.45)
+                    command_component = hitter_take * 0.55 + pitcher_leak * 0.45
+                    zone_component = hitter_damage * pitcher_zone + hitter_hard * 0.25
+                    weighted_damage += share * damage_component
+                    weighted_whiff += share * whiff_component
+                    weighted_zone += share * zone_component
+                    weighted_command += share * command_component
+                    weighted_traffic += share * (hitter_take * 0.6 + pitcher_leak * 0.4)
+                    details.append(
+                        {
+                            "pitchType": pitch_type,
+                            "share": round(share, 3),
+                            "damage": round(damage_component, 3),
+                            "whiff": round(whiff_component, 3),
+                            "command": round(command_component, 3),
+                        }
+                    )
+                pitch_fit_damage = clamp_value(weighted_damage * 180, 0, 100)
+                pitch_fit_whiff = clamp_value(weighted_whiff * 145, 0, 100)
+                zone_punish = clamp_value(weighted_zone * 150, 0, 100)
+                command_stress = clamp_value(weighted_command * 115, 0, 100)
+                traffic_fit = clamp_value(weighted_traffic * 120, 0, 100)
+                damage_fit = clamp_value(pitch_fit_damage * 0.65 + zone_punish * 0.35, 0, 100)
+                collapse_trigger_score = clamp_value(
+                    damage_fit * 0.5 + command_stress * 0.3 + max(0, traffic_fit - pitch_fit_whiff) * 0.2,
+                    0,
+                    100,
+                )
+                strand_fork_risk = clamp_value(max(0.0, traffic_fit - damage_fit) + pitch_fit_whiff * 0.25, 0, 100)
+                row_payload = {
+                    "pitchMixCount": len(pitcher_mix),
+                    "pitchDetails": details[:8],
+                    "lookbackDays": lookback_days,
+                    "fallbackResponsesUsed": sum(
+                        1
+                        for pitch in pitcher_mix
+                        if (hitter["player_id"], pitch["pitch_type"]) not in response_by_hitter_pitch
+                    ),
+                }
+                conn.execute(
+                    """
+                    INSERT OR REPLACE INTO mlb_lineup_pitcher_matchup_daily (
+                      snapshot_date, game_pk, team_name, opponent_team, pitcher_id,
+                      pitcher_name, hitter_id, hitter_name, batting_order,
+                      pitch_fit_damage, pitch_fit_whiff, zone_punish, command_stress,
+                      platoon_pressure, first_cycle_read, second_cycle_read,
+                      traffic_fit, damage_fit, collapse_trigger_score, strand_fork_risk,
+                      details_json, created_at
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        snapshot_date,
+                        starter["game_pk"],
+                        team_name,
+                        opponent_team,
+                        pitcher_id,
+                        starter["pitcher_name"] or "",
+                        hitter["player_id"],
+                        hitter["player_name"],
+                        hitter["batting_order"],
+                        pitch_fit_damage,
+                        pitch_fit_whiff,
+                        zone_punish,
+                        command_stress,
+                        None,
+                        clamp_value(collapse_trigger_score * (1.08 if (to_int(hitter["batting_order"]) or 9) <= 3 else 0.95), 0, 100),
+                        collapse_trigger_score,
+                        traffic_fit,
+                        damage_fit,
+                        collapse_trigger_score,
+                        strand_fork_risk,
+                        json.dumps(row_payload, sort_keys=True),
+                        created_at,
+                    ),
+                )
+                matchup_count += 1
+                for key, value in (
+                    ("pitch_fit_damage", pitch_fit_damage),
+                    ("pitch_fit_whiff", pitch_fit_whiff),
+                    ("zone_punish", zone_punish),
+                    ("command_stress", command_stress),
+                    ("traffic_fit", traffic_fit),
+                    ("damage_fit", damage_fit),
+                    ("collapse_trigger_score", collapse_trigger_score),
+                    ("strand_fork_risk", strand_fork_risk),
+                ):
+                    lineup_totals[key].append(value)
+            if hitters:
+                summary = {key: safe_mean(values) for key, values in lineup_totals.items()}
+                conn.execute(
+                    """
+                    INSERT OR REPLACE INTO mlb_lineup_pitcher_matchup_daily (
+                      snapshot_date, game_pk, team_name, opponent_team, pitcher_id,
+                      pitcher_name, hitter_id, hitter_name, batting_order,
+                      pitch_fit_damage, pitch_fit_whiff, zone_punish, command_stress,
+                      platoon_pressure, first_cycle_read, second_cycle_read,
+                      traffic_fit, damage_fit, collapse_trigger_score, strand_fork_risk,
+                      details_json, created_at
+                    ) VALUES (?, ?, ?, ?, ?, ?, 0, ?, NULL, ?, ?, ?, ?, NULL, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        snapshot_date,
+                        starter["game_pk"],
+                        team_name,
+                        opponent_team,
+                        pitcher_id,
+                        starter["pitcher_name"] or "",
+                        "LINEUP",
+                        summary["pitch_fit_damage"],
+                        summary["pitch_fit_whiff"],
+                        summary["zone_punish"],
+                        summary["command_stress"],
+                        summary["collapse_trigger_score"],
+                        summary["collapse_trigger_score"],
+                        summary["traffic_fit"],
+                        summary["damage_fit"],
+                        summary["collapse_trigger_score"],
+                        summary["strand_fork_risk"],
+                        json.dumps({"hitterRows": len(hitters), "lookbackDays": lookback_days}, sort_keys=True),
+                        created_at,
+                    ),
+                )
+                matchup_count += 1
+
+    conn.commit()
+    return {"pitchMix": mix_count, "hitterResponse": response_count, "matchups": matchup_count}
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Local MLB warehouse utilities for modeling and backtesting.")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -13576,6 +14009,24 @@ def parse_args() -> argparse.Namespace:
     derive_player_identity.add_argument(
         "--as-of-date",
         help="Optional single date to rebuild incrementally without touching earlier identity rows.",
+    )
+
+    derive_pitch_kernel = subparsers.add_parser(
+        "derive-pitcher-batter-kernel",
+        help="Refresh MLB-M2 pitcher pitch mix, hitter pitch response, and lineup matchup rows.",
+    )
+    derive_pitch_kernel.add_argument(
+        "--through-date", help="Optional YYYY-MM-DD cutoff. Defaults to every loaded game date."
+    )
+    derive_pitch_kernel.add_argument(
+        "--as-of-date",
+        help="Optional single date to rebuild incrementally without touching earlier pitch-kernel rows.",
+    )
+    derive_pitch_kernel.add_argument(
+        "--lookback-days",
+        type=int,
+        default=45,
+        help="Pitch-event lookback window for pitch mix and hitter response rows.",
     )
 
     ingest_pitcher_war_parser = subparsers.add_parser(
@@ -13875,6 +14326,18 @@ def main() -> None:
                 "Refreshed MLB-M2 player identity rows "
                 f"{date_text}: {counts['curves']} curves, "
                 f"{counts['deviations']} deviations, {counts['distributions']} distributions"
+            )
+            return
+
+        if args.command == "derive-pitcher-batter-kernel":
+            counts = refresh_m2_pitcher_batter_kernel_rows(
+                conn, args.through_date, args.as_of_date, args.lookback_days
+            )
+            date_text = args.as_of_date or (f"through {args.through_date}" if args.through_date else "for all loaded dates")
+            print(
+                "Refreshed MLB-M2 pitcher-batter kernel rows "
+                f"{date_text}: {counts['pitchMix']} pitch-mix, "
+                f"{counts['hitterResponse']} hitter-response, {counts['matchups']} matchup rows"
             )
             return
 

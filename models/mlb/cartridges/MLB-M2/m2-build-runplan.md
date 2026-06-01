@@ -1,6 +1,6 @@
 # MLB-M2 Build Run Plan
 
-Status: Phase 4 in progress
+Status: Phase 5 in progress
 Owner model: MLB-M2
 Created: 2026-06-01
 
@@ -53,7 +53,7 @@ Do not claim a clean M2 improvement if May 31 outcomes were used for training, f
 | 2 | Warehouse Tables | In progress | New derived tables and migrations |
 | 3 | Formula Derivation | In progress | Phase state rows and formula outputs |
 | 4 | Player Identity Curves | In progress | Player priors, deviation, and distribution rows |
-| 5 | Pitcher-Batter Kernel | Designed | Pitch-mix matchup rows |
+| 5 | Pitcher-Batter Kernel | In progress | Pitch-mix matchup rows |
 | 6 | Backtest Harness | Pending | Bucketed accuracy/ROI/story reports |
 | 7 | Model Comparison | Pending | Projection vs formula vs learned model |
 | 8 | Value Board Rebuild | Pending | Model-owned value rows only |
@@ -146,7 +146,7 @@ Checklist:
 - [x] Add migration/schema definitions.
 - [x] Add derive command for state formula rows.
 - [x] Add derive command for player identity curves.
-- [ ] Add derive command for pitch-mix matchup rows.
+- [x] Add derive command for pitch-mix matchup rows.
 - [ ] Add health checks for table freshness and coverage.
 - [ ] Add missing-date warnings if a day closes without derived rows.
 
@@ -284,15 +284,35 @@ Inputs:
 Checklist:
 
 - [x] Catalog component.
-- [ ] Derive pitcher pitch mix daily rows.
-- [ ] Derive hitter pitch-type response rows.
-- [ ] Join probable lineups to opposing starter.
-- [ ] Score traffic, damage, whiff, and collapse fit.
+- [x] Derive pitcher pitch mix daily rows.
+- [x] Derive hitter pitch-type response rows.
+- [x] Join probable lineups to opposing starter.
+- [x] Score traffic, damage, whiff, and collapse fit.
+- [x] Add first coverage and rough signal report.
 - [ ] Feed kernel into state formulas.
 
 Exit criteria:
 
 - Totals and props can explain why this lineup can or cannot hurt this pitcher.
+
+Current artifacts:
+
+- `npm run data:derive:mlb-pitcher-batter-kernel -- --through-date YYYY-MM-DD`
+- `models/mlb/cartridges/MLB-M2/research/pitcher_batter_kernel_report.py`
+- `models/mlb/cartridges/MLB-M2/reports/pitcher-batter-kernel-report-2026-05-23-to-2026-05-31.md`
+- `data-private/reports/mlb-m2-pitcher-batter-kernel-report-2026-05-23-to-2026-05-31.json`
+
+Current read:
+
+- Full backfill through May 31: 135,153 pitch-mix rows, 206,697 hitter-response rows, 17,655 matchup rows.
+- May 23-May 31 report range: 22,146 pitch-mix rows, 34,679 hitter-response rows, 2,709 matchup rows.
+- High collapse-trigger top quartile: 52.5% game F5 over 4 rate.
+- High damage-fit top quartile: 42.6% game F5 over 4 rate.
+- High command-stress top quartile: 45.9% game F5 over 4 rate.
+
+Important:
+
+This layer is pitch-event backed, but the first score range is compressed. Keep it research-only until calibrated and joined into state formulas.
 
 ## Phase 6: Backtest Harness
 

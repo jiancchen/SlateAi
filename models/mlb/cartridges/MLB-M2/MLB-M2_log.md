@@ -322,6 +322,35 @@ Interpretation:
 
 The player identity substrate now exists and can prevent some fake heat by labeling sample size, deviation, volatility, and approach state. It is still research-only. The next real work is bucketed player backtesting and joining identity into the pitcher-batter kernel so props/totals can explain repeatability instead of just recency.
 
+## 2026-06-01 - Pitcher-Batter Kernel Warehouse Pass
+
+Materialized the first pitch-event backed matchup kernel for MLB-M2.
+
+Implemented:
+
+- `mlb_pitcher_pitch_mix_daily` derivation from `mlb_pitch_events`.
+- `mlb_hitter_pitch_type_response_daily` derivation from `mlb_pitch_events`.
+- `mlb_lineup_pitcher_matchup_daily` matchup rows for lineup hitters plus lineup summary rows.
+- `npm run data:derive:mlb-pitcher-batter-kernel`.
+- `models/mlb/cartridges/MLB-M2/research/pitcher_batter_kernel_report.py`.
+- `models/mlb/cartridges/MLB-M2/reports/pitcher-batter-kernel-report-2026-05-23-to-2026-05-31.md`.
+- `data-private/reports/mlb-m2-pitcher-batter-kernel-report-2026-05-23-to-2026-05-31.json`.
+
+Warehouse coverage:
+
+- Full backfill through May 31: 135,153 pitcher pitch-mix rows, 206,697 hitter response rows, 17,655 matchup rows.
+- May 23-May 31 report range: 22,146 pitch-mix rows, 34,679 hitter-response rows, 2,709 matchup rows.
+
+First rough signal checks:
+
+- Collapse-trigger top quartile: 52.5% game F5 over 4 rate.
+- Damage-fit top quartile: 42.6% game F5 over 4 rate.
+- Command-stress top quartile: 45.9% game F5 over 4 rate.
+
+Interpretation:
+
+The pitch-level substrate is now real, but the score range is too compressed and the first rough checks are not promotion quality. Next steps are to calibrate the kernel by starter/hitter sample, line bucket, team F5 runs, and game F5/full total, then feed calibrated kernel features into state formulas instead of treating the kernel as a standalone value source.
+
 ## 2026-06-01 - Invented Vector Search
 
 Added a wider vector search to break the six radar axes into raw invented dimensions.

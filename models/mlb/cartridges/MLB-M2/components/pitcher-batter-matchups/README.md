@@ -128,3 +128,39 @@ Use May 31 as the stress slate, but do not train on it.
   - absolute error as secondary context only
 
 The goal is not lower MAE. The goal is better side correctness and better "why" classification.
+
+## Current Commands
+
+Derive pitch-event kernel rows:
+
+```bash
+npm run data:derive:mlb-pitcher-batter-kernel -- --through-date YYYY-MM-DD
+```
+
+Daily rebuild:
+
+```bash
+npm run data:derive:mlb-pitcher-batter-kernel -- --as-of-date YYYY-MM-DD
+```
+
+Build the current coverage/signal report:
+
+```bash
+npm run data:research:mlb-m2-pitcher-batter-kernel -- --start 2026-05-23 --end YYYY-MM-DD
+```
+
+Current artifacts:
+
+- `models/mlb/cartridges/MLB-M2/research/pitcher_batter_kernel_report.py`
+- `models/mlb/cartridges/MLB-M2/reports/pitcher-batter-kernel-report-2026-05-23-to-2026-05-31.md`
+- `data-private/reports/mlb-m2-pitcher-batter-kernel-report-2026-05-23-to-2026-05-31.json`
+
+Current first-pass read:
+
+- Full backfill through May 31: 135,153 pitcher pitch-mix rows, 206,697 hitter response rows, 17,655 matchup rows.
+- May 23-May 31 report range: 22,146 pitch-mix rows, 34,679 hitter-response rows, 2,709 matchup rows.
+- High collapse-trigger top quartile: 52.5% game F5 over 4 rate.
+- High damage-fit top quartile: 42.6% game F5 over 4 rate.
+- High command-stress top quartile: 45.9% game F5 over 4 rate.
+
+Interpretation: the substrate is real and pitch-event backed, but the first scores are compressed. Do not promote this layer until the kernel is calibrated by date, line, starter/hitter sample, and actual F5/full total buckets.
