@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "sports-run-plan-v1",
+  "id": "tennis-2026-05-31-TEN-T0-default",
+  "sport": "tennis",
+  "date": "2026-05-31",
+  "status": "draft",
+  "models": {
+    "warehouse": "TEN-W1",
+    "features": "TEN-F0",
+    "parent": "TEN-T0",
+    "evaluator": "TEN-E0"
+  },
+  "env": {
+    "TENNIS_MODEL_ID": "${models.parent}",
+    "TENNIS_WAREHOUSE_VERSION": "${models.warehouse}",
+    "TENNIS_FEATURE_VERSION": "${models.features}",
+    "TENNIS_EVALUATOR_VERSION": "${models.evaluator}"
+  },
+  "steps": [
+    {
+      "id": "create-run",
+      "description": "Create or refresh the selected tennis model-run shell.",
+      "command": "npm",
+      "args": ["run", "data:create:tennis-run", "--", "--date", "${date}", "--model", "${models.parent}", "--mode", "pregame", "--status", "created", "--notes", "Created by run plan ${id}."]
+    },
+    {
+      "id": "snapshot-run",
+      "description": "Snapshot selected tennis model output without source/input locks.",
+      "command": "npm",
+      "args": ["run", "data:snapshot:tennis-run", "--", "--date", "${date}", "--model", "${models.parent}", "--mode", "pregame"]
+    },
+    {
+      "id": "check-run",
+      "description": "Check snapshot completeness and required betting rows.",
+      "command": "npm",
+      "args": ["run", "data:check:tennis-run", "--", "--date", "${date}", "--model", "${models.parent}"]
+    },
+    {
+      "id": "publish-site-data",
+      "description": "Export public site data after model outputs are ready.",
+      "command": "npm",
+      "args": ["run", "data:export:published"]
+    }
+  ],
+  "outputs": {
+    "privateWarehouse": true,
+    "publishedData": true,
+    "modelHistory": true
+  }
+}

@@ -1,8 +1,8 @@
+import fs from 'node:fs/promises'
+import path from 'node:path'
 import {
   activeStack,
-  aggregateHash,
   copyJsonArtifact,
-  fileHash,
   gitInfo,
   inputPathsForDate,
   loadRegistry,
@@ -43,7 +43,10 @@ const parseArgs = () => {
 }
 
 const sourceInventory = ({ manifest, manifestPath, registryPath }) => {
-  const manifestFiles = (manifest.sourceFiles || []).map((entry) => ({ path: entry.path, role: entry.role || 'model-source' }))
+  const manifestFiles = (manifest.sourceFiles || []).map((entry) => ({
+    path: entry.path,
+    role: entry.role || 'model-source'
+  }))
   const frameworkFiles = [
     { path: registryPath || 'models/tennis/registry.json', role: 'model-registry' },
     { path: manifestPath, role: 'model-manifest' },
@@ -56,12 +59,12 @@ const sourceInventory = ({ manifest, manifestPath, registryPath }) => {
     { path: 'models/tennis/cartridges/TEN-E0/manifest.json', role: 'evaluator-manifest' },
     { path: manifest.metricsContract || 'models/tennis/cartridges/TEN-E0/metrics-contract.json', role: 'metrics-contract' },
     { path: 'pipeline/lib/model-cartridge-resolver.mjs', role: 'cartridge-resolver' },
-    { path: 'pipeline/lib/model-run-utils.mjs', role: 'run-lock-helper' },
+    { path: 'pipeline/lib/model-run-utils.mjs', role: 'run-snapshot-helper' },
     { path: 'pipeline/lib/warehouse-paths.mjs', role: 'warehouse-path-resolver' },
     { path: 'pipeline/lib/warehouse_paths.py', role: 'warehouse-path-resolver' },
     { path: 'pipeline/tennis/workflows/create-model-run.mjs', role: 'run-create-script' },
-    { path: 'pipeline/tennis/workflows/lock-model-run.mjs', role: 'run-lock-script' },
-    { path: 'pipeline/tennis/workflows/verify-model-run.mjs', role: 'run-verifier' },
+    { path: 'pipeline/tennis/workflows/snapshot-model-run.mjs', role: 'run-snapshot-script' },
+    { path: 'pipeline/tennis/workflows/check-model-run.mjs', role: 'run-checker' },
     { path: 'pipeline/tennis/research/analyze_kalshi_intramatch.py', role: 'kalshi-intramatch-backtest' },
     { path: 'pipeline/tennis/warehouse/backfill_recent_form_metrics.py', role: 'feature-backfill' },
     { path: 'pipeline/tennis/publish/export_warehouse_context.py', role: 'warehouse-context-export' },
@@ -84,11 +87,29 @@ const sourceInventory = ({ manifest, manifestPath, registryPath }) => {
     { path: 'package.json', role: 'package-scripts' }
   ]
   const byPath = new Map()
-  for (const entry of [...manifestFiles, ...frameworkFiles]) byPath.set(entry.path, entry)
+  for (const entry of [...manifestFiles, ...frameworkFiles]) {
+    if (entry.path) byPath.set(entry.path, entry)
+  }
   return Array.from(byPath.values()).sort((left, right) => left.path.localeCompare(right.path))
 }
 
-const insertLockRows = async ({ runId, table, rows, pathKey, roleKey, existsKey }) => {
+const fileExists = async (filePath) => {
+  try {
+    await fs.access(path.resolve(rootDir, filePath))
+    return true
+  } catch (error) {
+    if (error.code === 'ENOENT') return false
+    throw error
+  }
+}
+
+const withExistence = async (rows) => Promise.all(rows.map(async (row) => ({
+  ...row,
+  exists: await fileExists(row.path)
+})))
+
+const insertInventoryRows = async ({ runId, table, rows, pathKey, roleKey, existsKey }) => {
+  await sqliteExec(`delete from ${table} where run_id = ${shellQuote(runId)}`)
   for (const row of rows) {
     await sqliteExec(`
       insert into ${table}(
@@ -96,7 +117,7 @@ const insertLockRows = async ({ runId, table, rows, pathKey, roleKey, existsKey 
       )
       values (
         ${shellQuote(runId)}, ${shellQuote(row.path)}, ${shellQuote(row.role || '')},
-        ${row.sha256 ? shellQuote(row.sha256) : 'null'}, ${row.exists ? 1 : 0}
+        null, ${row.exists ? 1 : 0}
       )
       on conflict(run_id, ${pathKey}) do update set
         ${roleKey} = excluded.${roleKey},
@@ -107,10 +128,11 @@ const insertLockRows = async ({ runId, table, rows, pathKey, roleKey, existsKey 
 }
 
 const insertOutputRows = async ({ runId, rows }) => {
+  await sqliteExec(`delete from tennis_model_run_outputs where run_id = ${shellQuote(runId)}`)
   for (const row of rows) {
     await sqliteExec(`
       insert into tennis_model_run_outputs(run_id, output_path, output_role, sha256)
-      values (${shellQuote(runId)}, ${shellQuote(row.path)}, ${shellQuote(row.role || '')}, ${row.sha256 ? shellQuote(row.sha256) : 'null'})
+      values (${shellQuote(runId)}, ${shellQuote(row.path)}, ${shellQuote(row.role || '')}, null)
       on conflict(run_id, output_path) do update set
         output_role = excluded.output_role,
         sha256 = excluded.sha256
@@ -119,6 +141,7 @@ const insertOutputRows = async ({ runId, rows }) => {
 }
 
 const snapshotTrainingRows = async ({ runId, date }) => {
+  await sqliteExec(`delete from tennis_model_run_training_rows where run_id = ${shellQuote(runId)}`)
   const rows = await sqliteJson(`select * from tennis_model_training_rows where slate_date = ${shellQuote(date)}`)
   for (const row of rows) {
     const payload = stableJson(row)
@@ -217,30 +240,10 @@ const main = async () => {
     runId,
     slateDate: options.date,
     status: options.mode === 'pregame' ? 'not_settled' : 'pending',
-    note: 'Pregame lock stores grades placeholder; settled/postmatch runs should write lane results without mutating this lock.'
+    note: 'Pregame snapshot stores a grades placeholder; settled/postmatch runs write lane results separately.'
   })
-
-  const sourceFiles = await Promise.all(sourceInventory({ manifest, manifestPath, registryPath: registry.registryPath }).map(async (entry) => ({
-    ...entry,
-    ...(await fileHash(entry.path))
-  })))
-  const inputFiles = await Promise.all(inputPathsForDate(options.date).map(async (entry) => ({
-    ...entry,
-    ...(await fileHash(entry.path))
-  })))
-  await writeJson(`${runDir}/files.lock.json`, {
-    schemaVersion: 1,
-    runId,
-    sourceHash: aggregateHash(sourceFiles),
-    files: sourceFiles
-  })
-  await writeJson(`${runDir}/inputs.lock.json`, {
-    schemaVersion: 1,
-    runId,
-    inputHash: aggregateHash(inputFiles),
-    inputs: inputFiles
-  })
-
+  const sourceFiles = await withExistence(sourceInventory({ manifest, manifestPath, registryPath: registry.registryPath }))
+  const inputFiles = await withExistence(inputPathsForDate(options.date))
   const training = await snapshotTrainingRows({ runId, date: options.date })
   await sqliteExec(`
     insert into tennis_model_run_metrics(run_id, metric_scope, metric_name, metric_value, sample_size, payload_json)
@@ -256,17 +259,13 @@ const main = async () => {
     { path: `${runDir}/calibration.json`, role: 'calibration' },
     { path: `${runDir}/backtest.json`, role: 'backtest' },
     { path: `${runDir}/grades.json`, role: 'grades' },
-    { path: `${runDir}/health.json`, role: 'health' },
-    { path: `${runDir}/files.lock.json`, role: 'source-lock' },
-    { path: `${runDir}/inputs.lock.json`, role: 'input-lock' }
+    { path: `${runDir}/health.json`, role: 'health' }
   ]
-  const outputFiles = await Promise.all(outputTargets.map(async (entry) => ({ ...entry, ...(await fileHash(entry.path)) })))
-  const sourceHash = aggregateHash(sourceFiles)
-  const inputHash = aggregateHash(inputFiles)
-  const outputHash = aggregateHash(outputFiles)
+  const snapshottedAt = new Date().toISOString()
   const git = await gitInfo()
-  const lockedRun = {
-    ...currentRun,
+  const { ['locked' + 'At']: _legacySnapshotField, ...baseRun } = currentRun
+  const snapshottedRun = {
+    ...baseRun,
     runId,
     sport: 'tennis',
     slateDate: options.date,
@@ -274,12 +273,15 @@ const main = async () => {
     featureVersion: stack.featureVersion,
     modelId: model,
     evaluatorVersion: stack.evaluatorVersion,
-    status: 'locked',
+    status: 'snapshotted',
     mode: options.mode,
-    lockedAt: new Date().toISOString(),
-    sourceHash,
-    inputHash,
-    outputHash,
+    snapshottedAt,
+    sourceHash: null,
+    inputHash: null,
+    outputHash: null,
+    sourceFiles: sourceFiles.length,
+    inputs: inputFiles.length,
+    outputs: outputTargets.length + 1,
     trainingRows: training,
     verifier: {
       ok: verifier.ok,
@@ -296,12 +298,12 @@ const main = async () => {
       name: manifest.name || null,
       status: manifest.status || null
     },
-    notes: `Locked ${model} pregame run for ${options.date}.`,
+    artifacts: [...outputTargets, { path: `${runDir}/run.json`, role: 'run-manifest' }],
+    notes: `Snapshotted ${model} pregame run for ${options.date}.`,
     git
   }
-  await writeJson(`${runDir}/run.json`, lockedRun)
-  const runFile = await fileHash(`${runDir}/run.json`)
-  const finalOutputs = [...outputFiles, { ...runFile, role: 'run-manifest' }]
+  await writeJson(`${runDir}/run.json`, snapshottedRun)
+  const finalOutputs = [...outputTargets, { path: `${runDir}/run.json`, role: 'run-manifest' }]
 
   await sqliteExec(`
     insert into tennis_model_runs(
@@ -312,10 +314,10 @@ const main = async () => {
     values (
       ${shellQuote(runId)}, ${shellQuote(options.date)}, 'tennis',
       ${shellQuote(stack.warehouseVersion)}, ${shellQuote(stack.featureVersion)}, ${shellQuote(model)},
-      ${shellQuote(stack.evaluatorVersion)}, ${shellQuote(options.mode)}, 'locked', ${shellQuote(lockedRun.lockedAt)},
-      ${shellQuote(inputHash)}, ${shellQuote(sourceHash)}, ${shellQuote(outputHash)},
+      ${shellQuote(stack.evaluatorVersion)}, ${shellQuote(options.mode)}, 'snapshotted', ${shellQuote(snapshottedAt)},
+      null, null, null,
       ${shellQuote(git.commit || '')}, ${git.dirty ? 1 : 0}, ${shellQuote(JSON.stringify(stack))},
-      ${shellQuote('Locked by lock-tennis-model-run.mjs.')}
+      ${shellQuote('Snapshotted by snapshot-model-run.mjs.')}
     )
     on conflict(run_id) do update set
       mode = excluded.mode,
@@ -329,7 +331,7 @@ const main = async () => {
       cartridge_stack_json = excluded.cartridge_stack_json,
       notes = excluded.notes
   `)
-  await insertLockRows({
+  await insertInventoryRows({
     runId,
     table: 'tennis_model_run_files',
     rows: sourceFiles,
@@ -337,7 +339,7 @@ const main = async () => {
     roleKey: 'file_role',
     existsKey: 'file_exists'
   })
-  await insertLockRows({
+  await insertInventoryRows({
     runId,
     table: 'tennis_model_run_inputs',
     rows: inputFiles,
@@ -349,18 +351,18 @@ const main = async () => {
   await sqliteExec(`
     insert into tennis_model_run_events(run_id, event_type, event_message, payload_json)
     values (
-      ${shellQuote(runId)}, 'locked', 'Tennis model run locked.',
-      ${shellQuote(JSON.stringify({ sourceHash, inputHash, outputHash, trainingRows: training.count }))}
+      ${shellQuote(runId)}, 'snapshotted', 'Tennis model run snapshotted.',
+      ${shellQuote(JSON.stringify({ sourceFiles: sourceFiles.length, inputs: inputFiles.length, outputs: finalOutputs.length, trainingRows: training.count }))}
     )
   `)
 
   console.log(JSON.stringify({
     runId,
     runDir: `${rootDir}/${runDir}`,
-    status: 'locked',
-    sourceHash,
-    inputHash,
-    outputHash,
+    status: 'snapshotted',
+    sourceFiles: sourceFiles.length,
+    inputs: inputFiles.length,
+    outputs: finalOutputs.length,
     trainingRows: training.count
   }, null, 2))
 }

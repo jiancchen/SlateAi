@@ -49,8 +49,8 @@ export const createRun = async (options) => {
   const manifest = await readJson(manifestFile.path, {})
   const git = await gitInfo()
   const existingRows = await sqliteJson(`select status from tennis_model_runs where run_id = ${shellQuote(runId)} limit 1`)
-  if (existingRows[0]?.status === 'locked' && !options.force) {
-    throw new Error(`Run ${runId} is already locked. Pass --force only if you intend to rewrite the run shell.`)
+  if (existingRows[0]?.status && !options.force) {
+    options.status = options.status || existingRows[0].status
   }
   const run = {
     schemaVersion: 1,
@@ -64,7 +64,7 @@ export const createRun = async (options) => {
     mode: options.mode,
     status: options.status,
     createdAt: new Date().toISOString(),
-    lockedAt: null,
+    snapshottedAt: null,
     git,
     registry: {
       path: registry.registryPath || 'models/tennis/registry.json',
@@ -75,7 +75,7 @@ export const createRun = async (options) => {
       name: manifest.name || null,
       status: manifest.status || null
     },
-    notes: options.notes || 'Created by create-tennis-model-run.mjs.'
+    notes: options.notes || 'Created by create-model-run.mjs.'
   }
   const runDir = runDirFor({ model: stack.modelId, date: options.date })
   await writeJson(`${runDir}/run.json`, run)

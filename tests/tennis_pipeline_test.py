@@ -199,7 +199,7 @@ class TennisWarehouseImportTest(unittest.TestCase):
         self.assertEqual(total_row.get("selection"), "No bet")
         self.assertIsNone(total_row.get("modelPct"))
 
-    def test_ten_t0_may31_model_snapshot_stays_locked(self) -> None:
+    def test_ten_t0_may31_model_snapshot_stays_stable(self) -> None:
         root = Path(__file__).resolve().parents[1]
         snapshot_path = (
             root
@@ -255,16 +255,15 @@ class TennisWarehouseImportTest(unittest.TestCase):
         root = Path(__file__).resolve().parents[1]
         run_path = root / "data-private" / "model-runs" / "tennis" / "TEN-T0" / "2026-05-31" / "run.json"
         if not run_path.exists():
-            self.skipTest("TEN-T0 May 31 run has not been locked")
+            self.skipTest("TEN-T0 May 31 run has not been snapshotted")
         result = subprocess.run(
             [
                 "node",
-                "pipeline/tennis/workflows/verify-model-run.mjs",
+                "pipeline/tennis/workflows/check-model-run.mjs",
                 "--date",
                 "2026-05-31",
                 "--model",
                 "TEN-T0",
-                "--allow-source-drift",
             ],
             cwd=root,
             text=True,

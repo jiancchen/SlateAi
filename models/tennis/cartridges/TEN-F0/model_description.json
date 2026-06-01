@@ -19,7 +19,7 @@
     {
       "label": "Training snapshot",
       "value": "Required",
-      "details": "Locked runs must store run-scoped training rows or a training-row hash."
+      "details": "Snapshotted runs must store run-scoped training rows or a training-row hash."
     }
   ],
   "notes": [

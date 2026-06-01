@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "sports-run-plan-v1",
+  "id": "mlb-2026-05-31-MLB-M0-default",
+  "sport": "mlb",
+  "date": "2026-05-31",
+  "status": "draft",
+  "models": {
+    "warehouse": "MLB-W1",
+    "features": "MLB-F0",
+    "parent": "MLB-M0",
+    "reliefAddendum": "MLB-RP36",
+    "evaluator": "MLB-E0"
+  },
+  "env": {
+    "MLB_MODEL_ID": "${models.parent}",
+    "MLB_RELIEF_MODEL_ID": "${models.reliefAddendum}",
+    "MLB_WAREHOUSE_VERSION": "${models.warehouse}",
+    "MLB_FEATURE_VERSION": "${models.features}",
+    "MLB_EVALUATOR_VERSION": "${models.evaluator}"
+  },
+  "steps": [
+    {
+      "id": "run-parent",
+      "description": "Run the selected MLB parent model branch.",
+      "command": "npm",
+      "args": ["run", "model:mlb:run", "--", "--model", "${models.parent}", "--entry", "runner", "--date", "${date}"]
+    },
+    {
+      "id": "run-relief-addendum",
+      "description": "Run the selected relief addendum branch.",
+      "command": "npm",
+      "args": ["run", "model:mlb:run", "--", "--model", "${models.reliefAddendum}", "--entry", "runner", "--date", "${date}"]
+    },
+    {
+      "id": "snapshot-parent",
+      "description": "Snapshot the selected parent model output.",
+      "command": "npm",
+      "args": ["run", "model:mlb:snapshot", "--", "--model", "${models.parent}", "--date", "${date}"]
+    },
+    {
+      "id": "snapshot-relief-addendum",
+      "description": "Snapshot the selected relief addendum output.",
+      "command": "npm",
+      "args": ["run", "model:mlb:snapshot", "--", "--model", "${models.reliefAddendum}", "--date", "${date}"]
+    },
+    {
+      "id": "check-parent",
+      "description": "Check the selected parent model snapshot.",
+      "command": "npm",
+      "args": ["run", "model:mlb:check", "--", "--model", "${models.parent}", "--date", "${date}"]
+    },
+    {
+      "id": "check-relief-addendum",
+      "description": "Check the selected relief addendum snapshot.",
+      "command": "npm",
+      "args": ["run", "model:mlb:check", "--", "--model", "${models.reliefAddendum}", "--date", "${date}"]
+    },
+    {
+      "id": "publish-site-data",
+      "description": "Export public site data after model outputs are ready.",
+      "command": "npm",
+      "args": ["run", "data:export:published"]
+    }
+  ],
+  "outputs": {
+    "privateWarehouse": true,
+    "publishedData": true,
+    "modelHistory": true
+  }
+}

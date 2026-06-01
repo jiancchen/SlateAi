@@ -26,7 +26,7 @@ This is a reproducibility baseline, not a claim that the tennis model is already
 ## Notes
 
 - Future TEN-T1+ cartridges must compare against the May 31 TEN-T0 golden snapshot before behavior changes are accepted.
-- May 30 is the closest settled TEN-T0-compatible validation slate, but it was produced before formal cartridge run locks existed.
+- May 30 is the closest settled TEN-T0-compatible validation slate, but it was produced before formal cartridge run snapshots existed.
 - Prediction-market trade-to-sell is a separate objective from picking winners and must stay separately graded.
 - Blind ML value remains downgraded until bucketed EV and ROI improve in settled postmatch runs.
 - Every future cartridge needs a model description JSON and this human notes file.

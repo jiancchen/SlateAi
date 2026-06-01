@@ -214,11 +214,6 @@ def main() -> int:
     snapshot = build_snapshot(date)
 
     write_json(run_dir / "snapshot.json", snapshot)
-    for stale_name in ("files.lock.json", "inputs.lock.json", "outputs.lock.json"):
-        stale_path = run_dir / stale_name
-        if stale_path.exists():
-            stale_path.unlink()
-
     output_targets = [
         *artifact_paths(date),
         {"role": "prediction-snapshot", "path": f"data-private/model-runs/mlb/MLB-RP36/{date}/snapshot.json"},
@@ -234,7 +229,6 @@ def main() -> int:
         "mode": "relief-addendum",
         "status": "snapshotted",
         "snapshottedAt": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
-        "lockedAt": None,
         "git": git_info(),
         "sourceHash": None,
         "inputHash": None,

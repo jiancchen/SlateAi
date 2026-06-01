@@ -61,7 +61,7 @@ export type ModelHistoryEntry = {
       runId?: string
       status?: string
       mode?: string
-      lockedAt?: string
+      snapshottedAt?: string
       sourceHash?: string
       inputHash?: string
       outputHash?: string

@@ -1,0 +1,7 @@
+{
+  "schemaVersion": "sports-run-plans-v1",
+  "activePlans": {
+    "mlb": "run-plans/mlb/2026-05-31.json",
+    "tennis": "run-plans/tennis/2026-05-31.json"
+  }
+}

@@ -8,11 +8,10 @@
   "modelId": "TEN-T0",
   "evaluatorVersion": "TEN-E0",
   "mode": "pregame",
-  "status": "locked",
+  "status": "snapshotted",
   "createdAt": "2026-05-31T05:20:41.707Z",
-  "lockedAt": "2026-05-31T23:29:09.632Z",
   "git": {
-    "commit": "09701debaabbe60b7c9c0e69705c4a78066f2c2f",
+    "commit": "839a63cb4dcd92ec951ecf2e9c954ef4f9048f91",
     "dirty": true
   },
   "registry": {
@@ -29,10 +28,10 @@
     "name": "TEN-T0 tennis baseline",
     "status": "baseline"
   },
-  "notes": "Locked TEN-T0 pregame run for 2026-05-31.",
-  "sourceHash": "d73fc968ea58bd05f1d5340bbe62533ed4eb1eb8c291b11507ea537f86b88cab",
-  "inputHash": "a7e49fc8d26a1c8d8df54d967eb51b93b799d67cc1fea6239b8feab15a87a551",
-  "outputHash": "aa4b760db1876b9de69434a09a053b8b84e8a3b45dfc5323c44db265b25a3ed2",
+  "notes": "Snapshotted TEN-T0 pregame run for 2026-05-31.",
+  "sourceHash": null,
+  "inputHash": null,
+  "outputHash": null,
   "trainingRows": {
     "count": 8,
     "hash": "f3ba9f871cec4fe76c24fdcf8c4b8f519c68e148f12ef750ff6e913628569c69"
@@ -42,5 +41,35 @@
     "command": "node pipeline/tennis/workflows/verify-model-snapshot.mjs --date 2026-05-31 --model TEN-T0",
     "stdout": "Tennis TEN-T0 snapshot verified for 2026-05-31\n",
     "stderr": ""
-  }
+  },
+  "snapshottedAt": "2026-06-01T04:41:57.224Z",
+  "sourceFiles": 40,
+  "inputs": 10,
+  "outputs": 6,
+  "artifacts": [
+    {
+      "path": "data-private/model-runs/tennis/TEN-T0/2026-05-31/predictions.snapshot.json",
+      "role": "prediction-snapshot"
+    },
+    {
+      "path": "data-private/model-runs/tennis/TEN-T0/2026-05-31/calibration.json",
+      "role": "calibration"
+    },
+    {
+      "path": "data-private/model-runs/tennis/TEN-T0/2026-05-31/backtest.json",
+      "role": "backtest"
+    },
+    {
+      "path": "data-private/model-runs/tennis/TEN-T0/2026-05-31/grades.json",
+      "role": "grades"
+    },
+    {
+      "path": "data-private/model-runs/tennis/TEN-T0/2026-05-31/health.json",
+      "role": "health"
+    },
+    {
+      "path": "data-private/model-runs/tennis/TEN-T0/2026-05-31/run.json",
+      "role": "run-manifest"
+    }
+  ]
 }

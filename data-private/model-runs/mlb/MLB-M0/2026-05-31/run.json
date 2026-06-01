@@ -10,10 +10,9 @@
   "featureVersion": "MLB-F0",
   "mode": "pregame",
   "status": "snapshotted",
-  "snapshottedAt": "2026-06-01T00:44:40.251Z",
-  "lockedAt": null,
+  "snapshottedAt": "2026-06-01T04:34:00.306Z",
   "git": {
-    "commit": "b9349795fa0bd854d5ff835d6f24b4f0d026b167",
+    "commit": "839a63cb4dcd92ec951ecf2e9c954ef4f9048f91",
     "dirty": true
   },
   "sourceHash": null,

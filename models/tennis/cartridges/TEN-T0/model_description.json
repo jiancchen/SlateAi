@@ -41,7 +41,7 @@
   ],
   "notes": [
     "TEN-T0 exists so refactors can prove they did not silently change the May 31 predictions.",
-    "May 30 is the closest settled TEN-T0-compatible validation slate, but it was produced before formal cartridge run locks existed.",
+    "May 30 is the closest settled TEN-T0-compatible validation slate, but it was produced before formal cartridge run snapshots existed.",
     "Prediction-market trade-to-sell is not the same model objective as picking the match winner; it must stay separately graded.",
     "Future cartridges should explain what changed, what got better, what got worse, and which lane the change is supposed to improve.",
     "Blind ML value remains downgraded until bucketed EV and ROI improve in settled postmatch runs."

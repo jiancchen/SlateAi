@@ -217,6 +217,7 @@ def index_artifacts(conn: sqlite3.Connection, directory: Path, run: dict[str, An
     if declared_artifacts:
         rows.extend(declared_artifacts)
     else:
+        # Legacy fallback for historical runs created before snapshots declared artifacts.
         for file_name, key in (("files.lock.json", "files"), ("inputs.lock.json", "inputs"), ("outputs.lock.json", "outputs")):
             payload = read_json(directory / file_name, {})
             rows.extend(payload.get(key) or [])
@@ -527,7 +528,7 @@ def index_model_run(sport: str, model_id: str, date: str, db_path: Path = DB_PAT
                 date,
                 run.get("mode"),
                 run.get("status"),
-                run.get("lockedAt"),
+                run.get("snapshottedAt") or run.get("lockedAt"),
                 run.get("sourceHash"),
                 run.get("inputHash"),
                 run.get("outputHash"),

@@ -797,7 +797,6 @@ const summarizeMlbModelsForDay = (date: string) => {
         runId: m0Run.runId,
         status: m0Run.status,
         mode: m0Run.mode,
-        lockedAt: m0Run.lockedAt,
         snapshottedAt: m0Run.snapshottedAt,
         sourceHash: m0Run.sourceHash,
         inputHash: m0Run.inputHash,
@@ -831,7 +830,7 @@ const summarizeMlbModelsForDay = (date: string) => {
         ].filter((entry) => entry.rows > 0)
       },
       changelog: [
-        `Locked run ${m0Run.runId}.`,
+        `Snapshotted run ${m0Run.runId}.`,
         `Stack ${stackLabel || 'MLB-W1 / MLB-F0 / MLB-M0 / MLB-RP36 / MLB-E0'} is the active MLB cartridge shell for this slate.`,
         totalRows
           ? `${date} closeout is training-ready: ${moneylineRows.length} side rows, ${firstInningRows.length} first-inning rows, ${hrRows.length} HR rows, and ${propRows.length} prop rows.`
@@ -863,7 +862,6 @@ const summarizeMlbModelsForDay = (date: string) => {
         runId: rp36Run.runId,
         status: rp36Run.status,
         mode: rp36Run.mode,
-        lockedAt: rp36Run.lockedAt,
         snapshottedAt: rp36Run.snapshottedAt,
         sourceHash: rp36Run.sourceHash,
         inputHash: rp36Run.inputHash,
@@ -878,7 +876,7 @@ const summarizeMlbModelsForDay = (date: string) => {
       },
       settlement: null,
       changelog: [
-        `Locked run ${rp36Run.runId}.`,
+        `Snapshotted run ${rp36Run.runId}.`,
         'MLB-RP36 is an addendum consumed by MLB-M0, focused on first-up reliever clusters and bridge risk.',
         'May 31 is the first reproducible RP36 run envelope; May 30 remains legacy context unless its original input snapshot is restored.'
       ],
@@ -990,6 +988,7 @@ const loadTennisModelRunsByDate = () => {
 
 const summarizeTennisRunModel = (date: string, run: any) => {
   const runDir = path.join(dataPrivateRoot, 'model-runs', 'tennis', String(run.model_id || 'TEN-T0'), date)
+  const runManifest = readJsonFile(path.join(runDir, 'run.json'))
   const health = readJsonFile(path.join(runDir, 'health.json'))
   const snapshot = readJsonFile(path.join(runDir, 'predictions.snapshot.json'))
   const backtest = readTennisBacktestSummary(date, runDir)
@@ -999,6 +998,7 @@ const summarizeTennisRunModel = (date: string, run: any) => {
   const matchCount = Array.isArray(snapshot?.matches) ? snapshot.matches.length : null
   const stackLabel = [run.warehouse_version, run.feature_version, run.model_id, run.evaluator_version].filter(Boolean).join(' / ')
   const runStatus = `${String(run.mode || '').replace(/^./, (letter) => letter.toUpperCase())} ${run.status || 'run'}`
+  const snapshotTimestamp = runManifest?.snapshottedAt || run.locked_at || null
   const settlement = tableExists('tennis_model_run_settlements')
     ? runWarehouseJson<any>(`
         select settlement_id, status, grade_mode, settled_at, complete_matches,
@@ -1052,7 +1052,7 @@ const summarizeTennisRunModel = (date: string, run: any) => {
       runId: run.run_id,
       status: run.status,
       mode: run.mode,
-      lockedAt: run.locked_at,
+      snapshottedAt: snapshotTimestamp,
       sourceHash: run.source_hash,
       inputHash: run.input_hash,
       outputHash: run.output_hash,
@@ -1089,9 +1089,11 @@ const summarizeTennisRunModel = (date: string, run: any) => {
         }
       : null,
     changelog: [
-      `Locked run ${run.run_id}.`,
+      `${run.status === 'snapshotted' ? 'Snapshotted' : 'Recorded'} run ${run.run_id}.`,
       `Stack ${stackLabel} is the active tennis cartridge chain for this slate.`,
-      `Health gates ${okChecks}/${healthChecks.length || 0} ok; source ${shortHash(run.source_hash)}, input ${shortHash(run.input_hash)}, output ${shortHash(run.output_hash)}.`,
+      run.source_hash || run.input_hash || run.output_hash
+        ? `Health gates ${okChecks}/${healthChecks.length || 0} ok; source ${shortHash(run.source_hash)}, input ${shortHash(run.input_hash)}, output ${shortHash(run.output_hash)}.`
+        : `Health gates ${okChecks}/${healthChecks.length || 0} ok; this run records coverage counts instead of source/input/output fingerprints.`,
       settlement
         ? `Postmatch settlement is ${settlement.status}: ${settlement.complete_matches} complete matches, ${settlement.pending_matches} pending matches, ${settlement.graded_count}/${settlement.row_count} rows graded.`
         : 'Postmatch settlement has not been generated for this run.',
@@ -1154,7 +1156,7 @@ const summarizeTennisModelsForDay = (date: string, historyEntry: any | null, run
       settlement: valueSettlement,
       backtest,
       changelog: [
-        runs[0] ? `Generated under run ${runs[0].run_id}.` : 'Generated before formal tennis cartridge runs were locked.',
+        runs[0] ? `Generated under run ${runs[0].run_id}.` : 'Generated before formal tennis cartridge snapshots existed.',
         'Uses warehouse features and excludes source-site picks such as Tennistonic as direct model inputs.',
         'Blends data-only and market-calibrated probabilities, then applies risk gates for taxed favorites and fragile profiles.',
         valueRows.length
@@ -1185,7 +1187,7 @@ const summarizeTennisModelsForDay = (date: string, historyEntry: any | null, run
       performancePct: Number.isFinite(Number(backtest.hit25x)) ? Number((Number(backtest.hit25x) * 100).toFixed(1)) : null,
       coverageLabel: `${spikeRows.length} current candidates | ${spike.coverage?.historicalRows ?? 0} historical rows`,
       changelog: [
-        runs[0] ? `Linked to run ${runs[0].run_id}.` : 'Generated before formal tennis cartridge runs were locked.',
+        runs[0] ? `Linked to run ${runs[0].run_id}.` : 'Generated before formal tennis cartridge snapshots existed.',
         'Separates trade-to-sell targets from winner picks so losing underdogs can still be profitable exits.',
         'Requires price-history support from Kalshi candles before a row graduates above watch.',
         spike.coverage?.weatherNote ?? 'Weather context not yet warehoused for this model.'

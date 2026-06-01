@@ -2,8 +2,6 @@ import fs from 'node:fs/promises'
 import path from 'node:path'
 import {
   activeStack,
-  aggregateHash,
-  fileHash,
   inputPathsForDate,
   readJson,
   rootDir,
@@ -13,10 +11,11 @@ import {
   shellQuote,
   sqliteJson
 } from '../../lib/model-run-utils.mjs'
+import { resolveTennisCartridgeFile } from '../../lib/model-cartridge-resolver.mjs'
 
 const parseArgs = () => {
   const args = process.argv.slice(2)
-  const options = { date: '', model: '', runId: '', mode: '', allowSourceDrift: false }
+  const options = { date: '', model: '', runId: '', mode: '' }
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index]
     if (arg === '--date') {
@@ -32,7 +31,7 @@ const parseArgs = () => {
       options.mode = args[index + 1] || ''
       index += 1
     } else if (arg === '--allow-source-drift') {
-      options.allowSourceDrift = true
+      // Kept as a no-op for old commands; source drift is no longer a gate.
     }
   }
   if (!/^\d{4}-\d{2}-\d{2}$/.test(options.date)) throw new Error('Pass --date YYYY-MM-DD')
@@ -49,63 +48,81 @@ const assertPresent = (value, label) => {
   if (value === null || value === undefined || value === '') throw new Error(`${label} is missing`)
 }
 
-const hashLockEntries = async (entries, label, { allowDrift = false } = {}) => {
-  const current = []
-  const mismatches = []
-  for (const locked of entries || []) {
-    const actual = await fileHash(locked.path)
-    current.push({
-      path: locked.path,
-      role: locked.role,
-      exists: actual.exists,
-      sha256: actual.sha256
-    })
-    if (Boolean(locked.exists) !== actual.exists || (locked.sha256 || null) !== (actual.sha256 || null)) {
-      mismatches.push({
-        path: locked.path,
-        expectedExists: Boolean(locked.exists),
-        actualExists: actual.exists,
-        expectedSha256: locked.sha256 || null,
-        actualSha256: actual.sha256 || null
-      })
-    }
-  }
-  if (mismatches.length) {
-    const first = mismatches[0]
-    const message = `${label} lock drift: ${first.path} expected ${first.expectedExists ? first.expectedSha256 : 'missing'}, got ${first.actualExists ? first.actualSha256 : 'missing'}`
-    if (!allowDrift) throw new Error(message)
-  }
-  return current
-}
-
-const verifyDbRowsMatchLock = ({ lockedRows, dbRows, dbPathKey, dbRoleKey, dbExistsKey, label }) => {
-  const byPath = new Map(dbRows.map((row) => [row[dbPathKey], row]))
-  const missing = []
-  const mismatches = []
-  for (const locked of lockedRows || []) {
-    const row = byPath.get(locked.path)
-    if (!row) {
-      missing.push(locked.path)
-      continue
-    }
-    const expectedRole = locked.role || ''
-    const actualRole = row[dbRoleKey] || ''
-    const expectedExists = Boolean(locked.exists)
-    const actualExists = Boolean(row[dbExistsKey])
-    if (actualRole !== expectedRole || (row.sha256 || null) !== (locked.sha256 || null) || actualExists !== expectedExists) {
-      mismatches.push(locked.path)
-    }
-  }
-  if (missing.length || mismatches.length) {
-    throw new Error(`${label} DB rows do not match lock (${missing.length} missing, ${mismatches.length} mismatched)`)
+const fileExists = async (filePath) => {
+  try {
+    await fs.access(path.resolve(rootDir, filePath))
+    return true
+  } catch (error) {
+    if (error.code === 'ENOENT') return false
+    throw error
   }
 }
 
-const verifyOutputRows = async ({ run, runDir }) => {
+const sourceInventory = async ({ manifest, manifestPath, registryPath }) => {
+  const manifestFiles = (manifest.sourceFiles || []).map((entry) => ({
+    path: entry.path,
+    role: entry.role || 'model-source'
+  }))
+  const frameworkFiles = [
+    { path: registryPath || 'models/tennis/registry.json', role: 'model-registry' },
+    { path: manifestPath, role: 'model-manifest' },
+    { path: manifest.entrypoint || 'models/tennis/cartridges/TEN-T0/runner.mjs', role: 'model-runner-wrapper' },
+    { path: manifest.outputContract || 'models/tennis/cartridges/TEN-T0/output-contract.json', role: 'output-contract' },
+    { path: manifest.modelDescription || 'models/tennis/cartridges/TEN-T0/model_description.json', role: 'model-description' },
+    { path: manifest.modelNotes || 'models/tennis/cartridges/TEN-T0/MODEL_NOTES.md', role: 'model-notes' },
+    { path: 'models/tennis/cartridges/TEN-F0/manifest.json', role: 'feature-manifest' },
+    { path: manifest.featureContract || 'models/tennis/cartridges/TEN-F0/feature-contract.json', role: 'feature-contract' },
+    { path: 'models/tennis/cartridges/TEN-E0/manifest.json', role: 'evaluator-manifest' },
+    { path: manifest.metricsContract || 'models/tennis/cartridges/TEN-E0/metrics-contract.json', role: 'metrics-contract' },
+    { path: 'pipeline/lib/model-cartridge-resolver.mjs', role: 'cartridge-resolver' },
+    { path: 'pipeline/lib/model-run-utils.mjs', role: 'run-snapshot-helper' },
+    { path: 'pipeline/lib/warehouse-paths.mjs', role: 'warehouse-path-resolver' },
+    { path: 'pipeline/lib/warehouse_paths.py', role: 'warehouse-path-resolver' },
+    { path: 'pipeline/tennis/workflows/create-model-run.mjs', role: 'run-create-script' },
+    { path: 'pipeline/tennis/workflows/snapshot-model-run.mjs', role: 'run-snapshot-script' },
+    { path: 'pipeline/tennis/workflows/check-model-run.mjs', role: 'run-checker' },
+    { path: 'pipeline/tennis/workflows/settle-model-run.mjs', role: 'postmatch-settlement' },
+    { path: 'pipeline/tennis/workflows/health.py', role: 'health-gate' },
+    { path: 'api/src/scripts/export-published-data.ts', role: 'public-exporter' },
+    { path: 'web/src/views/ModelsView.tsx', role: 'model-page-ui' },
+    { path: 'tests/tennis_pipeline_test.py', role: 'test-code' },
+    { path: 'package.json', role: 'package-scripts' }
+  ]
+  const byPath = new Map()
+  for (const entry of [...manifestFiles, ...frameworkFiles]) {
+    if (entry.path) byPath.set(entry.path, entry)
+  }
+  return Array.from(byPath.values()).sort((left, right) => left.path.localeCompare(right.path))
+}
+
+const verifyInventoryRows = async ({ runId, expected, table, pathKey, label, exact = true, requireExists = true }) => {
+  const rows = await sqliteJson(`select ${pathKey} as path from ${table} where run_id = ${shellQuote(runId)} order by ${pathKey}`)
+  const actualPaths = rows.map((row) => row.path).sort()
+  const expectedPaths = expected.map((row) => row.path).sort()
+  if (exact) {
+    assertEqual(JSON.stringify(actualPaths), JSON.stringify(expectedPaths), `${label} path set`)
+  } else {
+    const actualSet = new Set(actualPaths)
+    const missingExpected = expectedPaths.filter((entry) => !actualSet.has(entry))
+    if (missingExpected.length) {
+      throw new Error(`${label} snapshot is missing expected paths: ${missingExpected.slice(0, 5).join(', ')}`)
+    }
+  }
+  if (requireExists) {
+    const missing = []
+    for (const row of expected) {
+      if (!(await fileExists(row.path))) missing.push(row.path)
+    }
+    if (missing.length) throw new Error(`${label} missing files: ${missing.slice(0, 5).join(', ')}`)
+  }
+  return rows.length
+}
+
+const verifyOutputRows = async ({ runId, runDir }) => {
   const rows = await sqliteJson(`
-    select output_path, output_role, sha256
+    select output_path, output_role
     from tennis_model_run_outputs
-    where run_id = ${shellQuote(run.runId)}
+    where run_id = ${shellQuote(runId)}
     order by output_path
   `)
   const requiredRoles = new Set([
@@ -114,8 +131,6 @@ const verifyOutputRows = async ({ run, runDir }) => {
     'backtest',
     'grades',
     'health',
-    'source-lock',
-    'input-lock',
     'run-manifest'
   ])
   const seenRoles = new Set(rows.map((row) => row.output_role))
@@ -124,36 +139,18 @@ const verifyOutputRows = async ({ run, runDir }) => {
     throw new Error(`Output DB rows missing roles: ${missingRoles.join(', ')}`)
   }
 
-  const currentRows = []
-  const mismatches = []
+  const missingFiles = []
   for (const row of rows) {
-    const actual = await fileHash(row.output_path)
-    currentRows.push({
-      path: row.output_path,
-      role: row.output_role,
-      exists: actual.exists,
-      sha256: actual.sha256
-    })
-    if (!actual.exists || actual.sha256 !== row.sha256) {
-      mismatches.push(row.output_path)
-    }
+    if (!(await fileExists(row.output_path))) missingFiles.push(row.output_path)
   }
-  if (mismatches.length) {
-    throw new Error(`Output file hash drift: ${mismatches[0]}`)
-  }
-
-  const outputHash = aggregateHash(currentRows.filter((row) => row.role !== 'run-manifest'))
-  assertEqual(outputHash, run.outputHash, 'outputHash')
+  if (missingFiles.length) throw new Error(`Output files missing: ${missingFiles.slice(0, 5).join(', ')}`)
 
   const runManifestPath = `${runDir}/run.json`
   if (!rows.some((row) => row.output_path === runManifestPath && row.output_role === 'run-manifest')) {
     throw new Error(`Output DB rows missing run manifest path: ${runManifestPath}`)
   }
 
-  return {
-    rows: rows.length,
-    hash: outputHash
-  }
+  return { rows: rows.length }
 }
 
 const verifyRequiredMarkets = (snapshot) => {
@@ -220,9 +217,7 @@ const verifyPublicStaticDoesNotLeakPrivatePaths = async (date) => {
     }
   }
   if (leaks.length) throw new Error(`Public/static export references private paths: ${leaks.slice(0, 5).join(', ')}`)
-  return {
-    scannedFiles: textFiles.length
-  }
+  return { scannedFiles: textFiles.length }
 }
 
 const main = async () => {
@@ -244,8 +239,6 @@ const main = async () => {
   }
 
   const run = await readJson(`${runDir}/run.json`)
-  const sourceLock = await readJson(`${runDir}/files.lock.json`)
-  const inputLock = await readJson(`${runDir}/inputs.lock.json`)
   const health = await readJson(`${runDir}/health.json`)
   const snapshot = await readJson(`${runDir}/predictions.snapshot.json`)
   const calibration = await readJson(`${runDir}/calibration.json`)
@@ -254,8 +247,6 @@ const main = async () => {
 
   for (const [payload, label] of [
     [run, 'run.json'],
-    [sourceLock, 'files.lock.json'],
-    [inputLock, 'inputs.lock.json'],
     [health, 'health.json'],
     [snapshot, 'predictions.snapshot.json'],
     [calibration, 'calibration.json'],
@@ -272,7 +263,7 @@ const main = async () => {
   assertEqual(run.featureVersion, stack.featureVersion, 'featureVersion')
   assertEqual(run.modelId, model, 'modelId')
   assertEqual(run.evaluatorVersion, stack.evaluatorVersion, 'evaluatorVersion')
-  assertEqual(run.status, 'locked', 'run status')
+  assertEqual(run.status, 'snapshotted', 'run status')
   if (options.mode) assertEqual(run.mode, options.mode, 'mode')
 
   const dbRunRows = await sqliteJson(`
@@ -292,47 +283,33 @@ const main = async () => {
     }[key] || key
     assertEqual(dbRun[key], run[runKey], `DB run ${key}`)
   }
-  assertEqual(dbRun.input_hash, run.inputHash, 'DB input_hash')
-  assertEqual(dbRun.source_hash, run.sourceHash, 'DB source_hash')
-  assertEqual(dbRun.output_hash, run.outputHash, 'DB output_hash')
 
-  assertEqual(sourceLock.runId, runId, 'source lock runId')
-  assertEqual(inputLock.runId, runId, 'input lock runId')
-  const currentSourceRows = await hashLockEntries(sourceLock.files || [], 'Source', { allowDrift: options.allowSourceDrift })
-  const currentInputRows = await hashLockEntries(inputLock.inputs || [], 'Input')
-  const sourceHash = aggregateHash(currentSourceRows)
-  const inputHash = aggregateHash(currentInputRows)
-  if (!options.allowSourceDrift) {
-    assertEqual(sourceLock.sourceHash, sourceHash, 'files.lock sourceHash')
-    assertEqual(run.sourceHash, sourceHash, 'run sourceHash')
-  }
-  assertEqual(inputLock.inputHash, inputHash, 'inputs.lock inputHash')
-  assertEqual(run.inputHash, inputHash, 'run inputHash')
-
-  const expectedInputPaths = inputPathsForDate(options.date).map((entry) => entry.path).sort()
-  const lockedInputPaths = (inputLock.inputs || []).map((entry) => entry.path).sort()
-  assertEqual(JSON.stringify(lockedInputPaths), JSON.stringify(expectedInputPaths), 'input lock path set')
-
-  const dbFileRows = await sqliteJson(`select file_path, file_role, sha256, file_exists from tennis_model_run_files where run_id = ${shellQuote(runId)}`)
-  verifyDbRowsMatchLock({
-    lockedRows: sourceLock.files || [],
-    dbRows: dbFileRows,
-    dbPathKey: 'file_path',
-    dbRoleKey: 'file_role',
-    dbExistsKey: 'file_exists',
-    label: 'Source lock'
+  const registry = await readJson('models/tennis/registry.json')
+  const manifestFile = await resolveTennisCartridgeFile({ modelId: model, fileName: 'manifest.json' })
+  const manifest = await readJson(manifestFile.path, {})
+  const expectedSources = await sourceInventory({
+    manifest,
+    manifestPath: manifestFile.path,
+    registryPath: 'models/tennis/registry.json'
   })
-  const dbInputRows = await sqliteJson(`select input_path, input_role, sha256, input_exists from tennis_model_run_inputs where run_id = ${shellQuote(runId)}`)
-  verifyDbRowsMatchLock({
-    lockedRows: inputLock.inputs || [],
-    dbRows: dbInputRows,
-    dbPathKey: 'input_path',
-    dbRoleKey: 'input_role',
-    dbExistsKey: 'input_exists',
-    label: 'Input lock'
+  const expectedInputs = inputPathsForDate(options.date)
+  const sourceRows = await verifyInventoryRows({
+    runId,
+    expected: expectedSources,
+    table: 'tennis_model_run_files',
+    pathKey: 'file_path',
+    label: 'Source snapshot',
+    exact: false
   })
-
-  const output = await verifyOutputRows({ run, runDir })
+  const inputRows = await verifyInventoryRows({
+    runId,
+    expected: expectedInputs,
+    table: 'tennis_model_run_inputs',
+    pathKey: 'input_path',
+    label: 'Input snapshot',
+    requireExists: false
+  })
+  const output = await verifyOutputRows({ runId, runDir })
 
   if (!health.ok) throw new Error('health.json is not ok')
   const requiredChecks = ['sourceFiles', 'rankings', 'warehouse', 'sofascore', 'kalshi', 'weather', 'resultsTraining', 'published', 'valueBooks']
@@ -357,11 +334,11 @@ const main = async () => {
 
   console.log(JSON.stringify({
     runId,
-    status: 'verified',
+    status: 'checked',
     mode: run.mode,
-    sourceDriftAllowed: options.allowSourceDrift,
-    sourceFiles: currentSourceRows.length,
-    inputs: currentInputRows.length,
+    modelRegistryStatus: registry.active?.model === model ? 'active model' : 'non-active branch',
+    sourceFiles: sourceRows,
+    inputs: inputRows,
     outputs: output.rows,
     trainingRows: Number(trainingRows[0]?.count || 0),
     matches: marketCoverage.matches,

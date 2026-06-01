@@ -482,8 +482,10 @@ const main = async () => {
   const runId = options.runId || runIdFor({ date: options.date, stack })
   const runDir = runDirFor({ model, date: options.date })
   const run = await readJson(`${runDir}/run.json`)
-  if (!run) throw new Error(`Missing locked run: ${runDir}/run.json`)
-  if (run.status !== 'locked') throw new Error(`Run is not locked: ${runId}`)
+  if (!run) throw new Error(`Missing model run snapshot: ${runDir}/run.json`)
+  if (!['snapshotted', 'settled', 'locked'].includes(run.status)) {
+    throw new Error(`Run has not been snapshotted: ${runId}`)
+  }
   const snapshot = await readJson(`${runDir}/predictions.snapshot.json`)
   if (!snapshot) throw new Error(`Missing prediction snapshot: ${runDir}/predictions.snapshot.json`)
   const { rows: resultRows, byPair } = await loadResults(options.date)

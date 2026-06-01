@@ -20,5 +20,5 @@
     "kalshi_market_coverage",
     "weather_window_coverage"
   ],
-  "trainingSnapshotRule": "Run-scoped training rows or a training-row hash must be stored with each locked run."
+  "trainingSnapshotRule": "Run-scoped training rows or a training-row hash must be stored with each snapshotted run."
 }

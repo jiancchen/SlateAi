@@ -120,6 +120,7 @@ The web UI should eventually expose:
 
 ## Migration Notes
 
-- MLB currently has snapshot/check commands after removing blocking locks.
-- Tennis still has older lock terminology and should be migrated to this branch/run-plan model later.
+- `run-plans/active.json` points each sport to its current daily plan.
+- `scripts/run-plan.mjs` executes or dry-runs those plans.
+- MLB and tennis use snapshot/check commands after removing blocking lock scripts from the active run path.
 - Existing historical snapshots can remain as history even if they were originally produced by lock-named commands.

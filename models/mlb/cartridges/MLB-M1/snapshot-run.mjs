@@ -140,10 +140,6 @@ export const snapshotM1Run = async ({ date, model = process.env.MLB_MODEL_ID || 
   const inputFiles = await inputInventory(date)
 
   await writeJson(`${runDir}/snapshot.json`, snapshot)
-  await fs.rm(path.resolve(rootDir, `${runDir}/files.lock.json`), { force: true })
-  await fs.rm(path.resolve(rootDir, `${runDir}/inputs.lock.json`), { force: true })
-  await fs.rm(path.resolve(rootDir, `${runDir}/outputs.lock.json`), { force: true })
-
   const outputTargets = [
     { path: `${runDir}/snapshot.json`, role: 'prediction-snapshot' },
     { path: `${runDir}/run.json`, role: 'run-manifest' }
@@ -161,7 +157,6 @@ export const snapshotM1Run = async ({ date, model = process.env.MLB_MODEL_ID || 
     mode: 'pregame',
     status: 'snapshotted',
     snapshottedAt: new Date().toISOString(),
-    lockedAt: null,
     git: await gitInfo(),
     sourceHash: null,
     inputHash: null,

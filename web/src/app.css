@@ -2703,7 +2703,7 @@ h3 {
 
 .tennis-cartridge-stack,
 .tennis-cartridge-health,
-.models-run-lock-grid {
+.models-run-snapshot-grid {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -2712,7 +2712,7 @@ h3 {
 
 .tennis-cartridge-stack span,
 .tennis-cartridge-health span,
-.models-run-lock-grid span {
+.models-run-snapshot-grid span {
   border: 1px solid var(--line);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.035);
@@ -2788,11 +2788,11 @@ h3 {
   padding: 4px 8px;
 }
 
-.models-run-lock-grid {
+.models-run-snapshot-grid {
   gap: 5px;
 }
 
-.models-run-lock-grid span {
+.models-run-snapshot-grid span {
   border-radius: 5px;
   color: #aeb8b2;
 }

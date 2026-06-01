@@ -103,8 +103,6 @@ const modelKey = (model: ModelRecord) =>
 
 const stableCatalogId = (model: ModelRecord) => modelKey(model).replace(/[^a-z0-9]+/gi, '-').toLowerCase()
 
-const compactHash = (value?: string) => (value ? value.slice(0, 10) : 'Pending')
-
 const numberOrNull = (value: unknown) => {
   if (value === null || value === undefined || value === '') return null
   const numeric = Number(value)
@@ -144,7 +142,7 @@ const pnlLabel = (value?: number | null) => {
 }
 
 const latestDateLabel = (item?: CatalogModel, formatSnapshotTime?: (isoString: string) => string) => {
-  const runTime = item?.latest?.run?.snapshottedAt || item?.latest?.run?.lockedAt
+  const runTime = item?.latest?.run?.snapshottedAt
   if (runTime && formatSnapshotTime) return formatSnapshotTime(runTime)
   return item?.latestDay?.label || item?.latestDay?.date || 'Not published'
 }
@@ -540,6 +538,9 @@ export function ModelsView({
   const selectedTennisWinnerModel = selectedTennisDay?.models.find((model) => /winner|ml/i.test(model.lane || ''))
   const selectedTennisKalshiModel = selectedTennisDay?.models.find((model) => /prediction-market/i.test(model.lane || ''))
   const selectedTennisRunModel = selectedTennisDay?.models.find((model) => model.run || /cartridge run/i.test(model.lane || ''))
+  const selectedRun = activeSport === 'tennis'
+    ? selectedTennisPrimary?.run || selectedTennisRunModel?.run
+    : selectedModel?.latest?.run
   const selectedTennisHitPct = pctFromSettlement(selectedTennisSettlement)
   const currentRun = tennisCatalog.find((model) => model.latest?.run)
   const latestKalshi = latestEntry(modelHistory.flatMap((day) =>
@@ -922,22 +923,22 @@ export function ModelsView({
                       <dd>{(activeSport === 'tennis' ? selectedTennisPrimary?.coverageLabel : selectedModel.latest?.coverageLabel) || 'Not exported'}</dd>
                     </div>
                     <div>
-                      <dt>Source Hash</dt>
-                      <dd>{compactHash(activeSport === 'tennis' ? selectedTennisPrimary?.run?.sourceHash : selectedModel.latest?.run?.sourceHash)}</dd>
+                      <dt>Snapshot</dt>
+                      <dd>{selectedRun?.snapshottedAt ? formatSnapshotTime(selectedRun.snapshottedAt) : 'Pending'}</dd>
                     </div>
                     <div>
-                      <dt>Input Hash</dt>
-                      <dd>{compactHash(activeSport === 'tennis' ? selectedTennisPrimary?.run?.inputHash : selectedModel.latest?.run?.inputHash)}</dd>
+                      <dt>Inputs</dt>
+                      <dd>{selectedRun ? selectedRun.inputs ?? 0 : 'Not migrated'}</dd>
                     </div>
                     <div>
-                      <dt>Output Hash</dt>
-                      <dd>{compactHash(activeSport === 'tennis' ? selectedTennisPrimary?.run?.outputHash : selectedModel.latest?.run?.outputHash)}</dd>
+                      <dt>Outputs</dt>
+                      <dd>{selectedRun ? selectedRun.outputs ?? 0 : 'Not migrated'}</dd>
                     </div>
                     <div>
                       <dt>Health Gates</dt>
                       <dd>
-                        {(activeSport === 'tennis' ? selectedTennisPrimary?.run : selectedModel.latest?.run)
-                          ? `${(activeSport === 'tennis' ? selectedTennisPrimary?.run?.healthChecksOk : selectedModel.latest?.run?.healthChecksOk) ?? 0}/${(activeSport === 'tennis' ? selectedTennisPrimary?.run?.healthChecks : selectedModel.latest?.run?.healthChecks) ?? 0}`
+                        {selectedRun
+                          ? `${selectedRun.healthChecksOk ?? 0}/${selectedRun.healthChecks ?? 0}`
                           : 'Not migrated'}
                       </dd>
                     </div>
@@ -979,7 +980,7 @@ export function ModelsView({
                     <small>{selectedModel.validation.length} rows</small>
                   </div>
                   <p className="models-note-summary">
-                    These rows are settled lane evidence around the active cartridge. They are useful for validation; release status comes from explicit model activation, not file locks.
+                    These rows are settled lane evidence around the active cartridge. They are useful for validation; release status comes from explicit model activation.
                   </p>
                   <div className="models-history-table">
                     <div className="models-history-row header">

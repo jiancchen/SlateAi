@@ -3,5 +3,5 @@
   "runId": "tennis-2026-05-31-TEN-W1-TEN-F0-TEN-T0-TEN-E0",
   "slateDate": "2026-05-31",
   "status": "not_settled",
-  "note": "Pregame lock stores grades placeholder; settled/postmatch runs should write lane results without mutating this lock."
+  "note": "Pregame snapshot stores a grades placeholder; settled/postmatch runs write lane results separately."
 }
