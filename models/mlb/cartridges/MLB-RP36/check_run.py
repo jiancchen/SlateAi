@@ -3,28 +3,23 @@
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 import subprocess
 import sys
 from pathlib import Path
 from typing import Any
 
-from run_lock import ROOT, RUN_ROOT, aggregate_hash, build_snapshot, file_hash, input_inventory, stable_json
+from snapshot_run import ROOT, RUN_ROOT, build_snapshot
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Verify an MLB-RP36 reliever addendum run lock.")
+    parser = argparse.ArgumentParser(description="Check an MLB-RP36 reliever addendum run snapshot.")
     parser.add_argument("--date", required=True, help="Slate date, YYYY-MM-DD.")
     return parser.parse_args()
 
 
 def read_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
-
-
-def sha256_text(value: str) -> str:
-    return hashlib.sha256(value.encode("utf-8")).hexdigest()
 
 
 def first_diff(left: Any, right: Any, prefix: str = "$") -> str | None:
@@ -54,32 +49,6 @@ def first_diff(left: Any, right: Any, prefix: str = "$") -> str | None:
     return None
 
 
-def assert_file_lock(lock_path: Path, rows_key: str, expected_hash: str, label: str, exclude_roles: set[str] | None = None) -> int:
-    exclude_roles = exclude_roles or set()
-    lock = read_json(lock_path)
-    actual_rows = [{**entry, **file_hash(entry["path"])} for entry in lock.get(rows_key, [])]
-    for expected, actual in zip(lock.get(rows_key, []), actual_rows):
-        if bool(expected.get("exists")) != bool(actual.get("exists")) or expected.get("sha256") != actual.get("sha256"):
-            raise RuntimeError(f"{label} drift: {actual.get('path')}")
-    hash_rows = [row for row in actual_rows if row.get("role") not in exclude_roles]
-    actual_hash = aggregate_hash(hash_rows)
-    if actual_hash != expected_hash:
-        raise RuntimeError(f"{label} hash mismatch: expected {expected_hash}, got {actual_hash}")
-    return len(actual_rows)
-
-
-def assert_input_lock(lock_path: Path, expected_hash: str, date: str) -> int:
-    lock = read_json(lock_path)
-    actual_rows = input_inventory(date)
-    diff = first_diff(actual_rows, lock.get("inputs", []))
-    if diff:
-        raise RuntimeError(f"Input lock drift: {diff}")
-    actual_hash = sha256_text(stable_json(actual_rows))
-    if actual_hash != expected_hash:
-        raise RuntimeError(f"Input hash mismatch: expected {expected_hash}, got {actual_hash}")
-    return len(actual_rows)
-
-
 def verify_snapshot(date: str) -> None:
     completed = subprocess.run(
         [sys.executable, str(ROOT / "models" / "mlb" / "cartridges" / "MLB-RP36" / "verify_snapshot.py"), "--date", date],
@@ -103,23 +72,14 @@ def main() -> int:
     if diff:
         raise RuntimeError(f"MLB-RP36 snapshot mismatch: {diff}")
 
-    source_files = assert_file_lock(run_dir / "files.lock.json", "files", run["sourceHash"], "Source lock")
-    inputs = assert_input_lock(run_dir / "inputs.lock.json", run["inputHash"], date)
-    outputs = assert_file_lock(
-        run_dir / "outputs.lock.json",
-        "outputs",
-        run["outputHash"],
-        "Output lock",
-        exclude_roles={"run-manifest"},
-    )
     verify_snapshot(date)
 
     print(json.dumps({
         "runId": run["runId"],
-        "status": "verified",
-        "sourceFiles": source_files,
-        "inputs": inputs,
-        "outputs": outputs,
+        "status": "checked",
+        "sourceFiles": run.get("sourceFiles"),
+        "inputs": run.get("inputs"),
+        "outputs": run.get("outputs"),
         "artifactHash": run["artifactHash"],
         "artifactSummary": run["artifactSummary"],
     }, indent=2))

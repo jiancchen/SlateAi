@@ -9,8 +9,8 @@ Added `components/index.json` so MLB-M0 has explicit homes for sides, first-five
 Implemented:
 
 - Active app imports and future tennis day generation now point at `models/shared/sports-core/app-sports-model.js` instead of the old frontend shim.
-- MLB-M0 source locks no longer include workflow/publish compatibility launchers or the frontend compatibility shim.
-- `models/shared/model-runs/index_runs.py` writes locked MLB-M0/MLB-RP36 runs into shared warehouse model-run tables.
+- MLB-M0 source inventories no longer include workflow/publish compatibility launchers or the frontend compatibility shim.
+- `models/shared/model-runs/index_runs.py` writes snapshotted MLB-M0/MLB-RP36 runs into shared warehouse model-run tables.
 - RP36 gets component settlement lanes for exact, top-2, and top-3 first-up reliever hits.
 
 Current trust level:
@@ -21,7 +21,7 @@ Current trust level:
 
 Gate:
 
-Every new MLB-M0/MLB-RP36 lock should re-index the warehouse rows, and tests should fail if locked runs stop producing DB model-run/lane rows.
+Every new MLB-M0/MLB-RP36 snapshot should re-index the warehouse rows, and tests should fail if snapshotted runs stop producing DB model-run/lane rows.
 
 ## 2026-05-31 - Parent Model Lifecycle Wrappers
 
@@ -30,17 +30,17 @@ Added registry-aware lifecycle wrappers above the cartridge-local scripts.
 Implemented:
 
 - `models/mlb/run-cartridge.mjs`
-- `models/mlb/lock-cartridge.mjs`
-- `models/mlb/verify-cartridge.mjs`
+- `models/mlb/snapshot-cartridge.mjs`
+- `models/mlb/check-cartridge.mjs`
 - `models/mlb/compare-cartridges.mjs`
 - `models/mlb/scaffold-cartridge.mjs`
 - `development-docs/mlb/runbooks/model-iteration.md`
 
 Current trust level:
 
-- Good enough to run, lock, verify, and compare the active `MLB-M0` through the registry.
+- Good enough to run, snapshot, check, and compare the active `MLB-M0` through the registry.
 - Good enough to dry-run a future `MLB-M1` scaffold without creating files.
-- Not a guarantee that an `MLB-M1` scaffold is production-ready; benchmark locks and lane comparisons are still required before activation.
+- Not a guarantee that an `MLB-M1` scaffold is production-ready; benchmark snapshots and lane comparisons are still required before activation.
 
 Architecture issue surfaced:
 
@@ -153,13 +153,13 @@ Audit found a few active paths still acting like old direct entrypoints instead 
 Fixed:
 
 - `pipeline/mlb/workflows/*` and `pipeline/mlb/publish/*` now dispatch through `models/mlb/run-cartridge.mjs`.
-- MLB-RP36 package scripts now use `models/mlb/{run,lock,verify}-cartridge.mjs --model MLB-RP36`.
+- MLB-RP36 package scripts now use `models/mlb/{run,snapshot,check}-cartridge.mjs --model MLB-RP36`.
 - MLB-M0 refresh now consumes RP36 through the registry wrapper.
 - Nested compatibility launchers now inherit `MLB_MODEL_ID` so comparison runs do not accidentally call the active registry model mid-workflow.
 - MLB-M0 refresh/follow-up workflows now call publish lanes through the cartridge registry wrapper with the current model id, instead of bouncing through `pipeline/mlb/publish/*` compatibility files.
 - Prop calibration for the web app now exposes through `models/mlb/app-model.js`.
-- MLB-M0 runner and run-lock self-inventory now use local cartridge paths where possible.
+- MLB-M0 runner and run-snapshot self-inventory now use local cartridge paths where possible.
 
 Remaining boundary:
 
-Direct MLB-M0 and MLB-RP36 file paths are still expected inside manifests, component inventory, and run locks. Those paths describe the cartridge contents; they are not operator entrypoints.
+Direct MLB-M0 and MLB-RP36 file paths are still expected inside manifests, component inventory, and run snapshots. Those paths describe the cartridge contents; they are not operator entrypoints.

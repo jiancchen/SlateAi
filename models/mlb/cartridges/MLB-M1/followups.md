@@ -48,7 +48,7 @@ Artifacts:
 Pregame read:
 
 - 15 MLB games, 13 posted lineups, 17 partial lineup states, 0 pending lineup states.
-- MLB-M1/MLB-RP36 run `mlb-2026-05-31-MLB-W1-MLB-F0-MLB-M1-MLB-RP36-MLB-E0` is locked and verified.
+- MLB-M1/MLB-RP36 run `mlb-2026-05-31-MLB-W1-MLB-F0-MLB-M1-MLB-RP36-MLB-E0` is snapshotted and checked.
 - The May 30 quiet-start gate is active on this slate. Broad full-game sides are downgraded when the pick profile carries scoreless-first-three, traffic-without-conversion, or quiet-first-five risk.
 - Today should be evaluated by lane: full-game side, first-five/timing expression, first-inning, totals, tracked props, HR board, and MLB-RP36 bridge read.
 - Pitcher strikeout under rows now publish side-specific probability rather than the raw over-side probability, so confidence and probability point in the same direction.

@@ -5,21 +5,44 @@
   "slateDate": "2026-05-31",
   "modelId": "MLB-RP36",
   "mode": "relief-addendum",
-  "status": "locked",
-  "lockedAt": "2026-06-01T00:00:37.949144Z",
+  "status": "snapshotted",
+  "snapshottedAt": "2026-06-01T00:44:55.606139Z",
+  "lockedAt": null,
   "git": {
-    "commit": "c62f5cbe6f0445667753ae39b791164b1d5b5bed",
+    "commit": "b9349795fa0bd854d5ff835d6f24b4f0d026b167",
     "dirty": true
   },
-  "sourceHash": "853381b4654b76017c9b0fc179b4f42bf7a722e435acb54e6121c9be3ba888ca",
-  "inputHash": "17f8d11bc3623769e436ee47d29e07a416ea6fe0f2206c75417dc6bc1e50cdfc",
-  "outputHash": "0ee310a84a329228a9b1c40a7bc349de445d5f81cef41bb648cb5e0f67d2a74b",
-  "artifactHash": "482cbf9c46249d824ce15588c4a053f1eebe7eefc166f8133ff1d3f17e058e98",
+  "sourceHash": null,
+  "inputHash": null,
+  "outputHash": null,
+  "artifactHash": null,
   "artifactSummary": {
     "relieverTeams": 30,
     "candidateCount": 276
   },
   "sourceFiles": 18,
   "inputs": 8,
-  "outputs": 7
+  "outputs": 5,
+  "artifacts": [
+    {
+      "role": "reliever-shadow-json",
+      "path": "data-private/predictions/mlb-reliever-shadow/2026-05-31-reliever-shadow.json"
+    },
+    {
+      "role": "reliever-shadow-module",
+      "path": "web/src/lib/day-2026-05-31-reliever-shadow.js"
+    },
+    {
+      "role": "reliever-shadow-report",
+      "path": "development-docs/mlb/research/mlb-first-up-reliever-shadow-board-053026.md"
+    },
+    {
+      "role": "prediction-snapshot",
+      "path": "data-private/model-runs/mlb/MLB-RP36/2026-05-31/snapshot.json"
+    },
+    {
+      "role": "run-manifest",
+      "path": "data-private/model-runs/mlb/MLB-RP36/2026-05-31/run.json"
+    }
+  ]
 }

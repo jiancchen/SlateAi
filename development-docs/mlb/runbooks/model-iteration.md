@@ -8,12 +8,12 @@ This runbook defines how to create and test a new MLB parent model cartridge suc
 - `MLB-RP36` is a consumed relief addendum, not a competing parent model.
 - Registry-aware wrappers live under `models/mlb/`:
   - `run-cartridge.mjs`
-  - `lock-cartridge.mjs`
-  - `verify-cartridge.mjs`
+  - `snapshot-cartridge.mjs`
+  - `check-cartridge.mjs`
   - `compare-cartridges.mjs`
   - `scaffold-cartridge.mjs`
 - Shared model-run indexing lives at `models/shared/model-runs/index_runs.py`.
-- The locked run JSON files remain the reproducibility artifacts; the warehouse tables are the query layer.
+- Model run snapshots are benchmark artifacts only. They preserve prediction output and lane history without hashing source files, so draft-model iteration does not dirty unrelated model baselines.
 
 ## Create A Draft Model
 
@@ -33,23 +33,23 @@ Do not pass `--activate` until the draft model beats or meaningfully improves on
 
 ## Benchmark Before Activation
 
-Run and lock benchmark dates for the candidate model:
+Run and snapshot benchmark dates for the candidate model:
 
 ```bash
 npm run model:mlb:run -- --model MLB-M1 --entry runner --date 2026-05-30
-npm run model:mlb:lock -- --model MLB-M1 --date 2026-05-30
-npm run model:mlb:verify -- --model MLB-M1 --date 2026-05-30
+npm run model:mlb:snapshot -- --model MLB-M1 --date 2026-05-30
+npm run model:mlb:check -- --model MLB-M1 --date 2026-05-30
 ```
 
 Repeat for the current slate or most recent settled slate:
 
 ```bash
 npm run model:mlb:run -- --model MLB-M1 --entry runner --date 2026-05-31
-npm run model:mlb:lock -- --model MLB-M1 --date 2026-05-31
-npm run model:mlb:verify -- --model MLB-M1 --date 2026-05-31
+npm run model:mlb:snapshot -- --model MLB-M1 --date 2026-05-31
+npm run model:mlb:check -- --model MLB-M1 --date 2026-05-31
 ```
 
-Compare locked lane rows:
+Compare indexed lane rows:
 
 ```bash
 npm run model:mlb:compare -- --left MLB-M0 --right MLB-M1 --date 2026-05-30
@@ -58,7 +58,6 @@ npm run model:mlb:compare -- --left MLB-M0 --right MLB-M1 --date 2026-05-30
 ## Required Gates
 
 - Snapshot verifier passes for every benchmark date.
-- Source/input/output locks are written under `data-private/model-runs/mlb/${MODEL_ID}/${DATE}/`.
 - Shared warehouse rows exist in `model_runs`, `model_run_artifacts`, and `model_run_lanes`.
 - If the candidate consumes `MLB-RP36`, `model_component_runs` links the parent run to the addendum run.
 - If the candidate changes the app-facing match contract, register its adapter in `models/mlb/app-model.js` before activation. The app path should fail loudly for unregistered active parent models.
@@ -75,8 +74,8 @@ Only after benchmarks pass:
 
 ```bash
 npm run data:run:mlb-pregame -- --date YYYY-MM-DD
-npm run data:lock:mlb-run -- --date YYYY-MM-DD
-npm run data:verify:mlb-run -- --date YYYY-MM-DD
+npm run data:snapshot:mlb-run -- --date YYYY-MM-DD
+npm run data:check:mlb-run -- --date YYYY-MM-DD
 ```
 
 ## Known Architecture Edges

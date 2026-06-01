@@ -36,8 +36,8 @@ Implemented from this lesson:
 
 ## Known Gaps
 
-- MLB-M0 has a file-based run manifest and verifier under `data-private/model-runs/mlb/MLB-M0/`; locked runs are also indexed into shared warehouse tables by `models/shared/model-runs/index_runs.py`.
-- Registry-aware lifecycle wrappers live under `models/mlb/`; use `run-cartridge.mjs`, `lock-cartridge.mjs`, `verify-cartridge.mjs`, `compare-cartridges.mjs`, and `scaffold-cartridge.mjs` for future parent-model iteration.
+- MLB-M0 has a file-based run manifest and verifier under `data-private/model-runs/mlb/MLB-M0/`; snapshotted runs are also indexed into shared warehouse tables by `models/shared/model-runs/index_runs.py`.
+- Registry-aware lifecycle wrappers live under `models/mlb/`; use `run-cartridge.mjs`, `snapshot-cartridge.mjs`, `check-cartridge.mjs`, `compare-cartridges.mjs`, and `scaffold-cartridge.mjs` for future parent-model iteration.
 - App-facing MLB adapter resolution lives in `models/mlb/app-model.js`; unregistered future active parent models should fail loudly instead of rendering through MLB-M0 by accident.
 - Daily MLB refresh, follow-up, and refresh verification commands enter through `models/mlb/run-cartridge.mjs`, which resolves the active parent cartridge before dispatching to the cartridge workflow.
 - MLB publish/export commands enter through `models/mlb/run-cartridge.mjs --entry lane:<lane>`; old `pipeline/mlb/publish/` paths are compatibility launchers only.

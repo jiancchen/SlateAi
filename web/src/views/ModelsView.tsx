@@ -144,8 +144,8 @@ const pnlLabel = (value?: number | null) => {
 }
 
 const latestDateLabel = (item?: CatalogModel, formatSnapshotTime?: (isoString: string) => string) => {
-  const lockedAt = item?.latest?.run?.lockedAt
-  if (lockedAt && formatSnapshotTime) return formatSnapshotTime(lockedAt)
+  const runTime = item?.latest?.run?.snapshottedAt || item?.latest?.run?.lockedAt
+  if (runTime && formatSnapshotTime) return formatSnapshotTime(runTime)
   return item?.latestDay?.label || item?.latestDay?.date || 'Not published'
 }
 
@@ -157,7 +157,7 @@ const modelTitle = (model: ModelRecord) => {
 }
 
 const modelDescription = (model: ModelRecord) => {
-  if (model.run) return 'Run cartridge metadata, source/input/output hashes, health gates, and postmatch settlement status.'
+  if (model.run) return 'Run cartridge metadata, prediction snapshot, health gates, and postmatch settlement status.'
   if (/prediction-market/i.test(model.lane)) return 'Kalshi trade-to-sell model: entry price, exit targets, historical touch-rate, and candidate coverage.'
   if (/winner|ml/i.test(model.lane)) return 'Tennis winner, moneyline value, spread, total, set-win, and first-set total model surface.'
   return 'Exported model history entry.'
@@ -395,7 +395,7 @@ const mlbStubs: CatalogModel[] = [
     history: [],
     stub: true,
     stubStatus: 'Stubbed',
-    description: 'Will show cartridge metadata, day-by-day hit rate, calibration buckets, and run locks after MLB is migrated.'
+    description: 'Will show cartridge metadata, day-by-day hit rate, calibration buckets, and run snapshots after MLB is migrated.'
   },
   {
     id: 'mlb-props-stub',
@@ -979,7 +979,7 @@ export function ModelsView({
                     <small>{selectedModel.validation.length} rows</small>
                   </div>
                   <p className="models-note-summary">
-                    These rows are settled lane evidence around the active cartridge. They are useful for validation, but only locked run rows should be treated as cartridge releases.
+                    These rows are settled lane evidence around the active cartridge. They are useful for validation; release status comes from explicit model activation, not file locks.
                   </p>
                   <div className="models-history-table">
                     <div className="models-history-row header">

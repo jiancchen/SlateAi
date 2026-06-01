@@ -106,7 +106,7 @@ const updateRegistry = async ({ from, to, activate }) => {
     targetPath: `./cartridges/${to}`,
     status: 'draft',
     basedOn: from,
-    notes: `Draft cartridge scaffolded from ${from}. It must pass benchmark locks before activation.`
+    notes: `Draft cartridge scaffolded from ${from}. It must pass benchmark snapshots and lane comparisons before activation.`
   }
   registry.cartridges = [...(registry.cartridges || []), nextEntry]
   if (activate) {

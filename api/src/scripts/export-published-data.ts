@@ -789,7 +789,7 @@ const summarizeMlbModelsForDay = (date: string) => {
       version: stackLabel || 'MLB-W1 / MLB-F0 / MLB-M0 / MLB-RP36 / MLB-E0',
       performanceLabel: moneylineRows.length
         ? `Sides FG ${pctLabel(moneylineHits, moneylineRows.length)} | F5 ${pctLabel(first5Hits, moneylineRows.length)}`
-        : 'Run locked; side rows pending',
+        : 'Run snapshotted; side rows pending',
       performancePct: moneylineRows.length ? Number(((moneylineHits / moneylineRows.length) * 100).toFixed(1)) : null,
       coverageLabel: `${m0Run.artifactSummary?.publicSummaryGames ?? 0} games | ${m0Run.sourceFiles ?? 0} source files | ${m0Run.inputs ?? 0} inputs | ${totalRows} graded lane rows`,
       modelDescription,
@@ -798,6 +798,7 @@ const summarizeMlbModelsForDay = (date: string) => {
         status: m0Run.status,
         mode: m0Run.mode,
         lockedAt: m0Run.lockedAt,
+        snapshottedAt: m0Run.snapshottedAt,
         sourceHash: m0Run.sourceHash,
         inputHash: m0Run.inputHash,
         outputHash: m0Run.outputHash,
@@ -854,7 +855,7 @@ const summarizeMlbModelsForDay = (date: string) => {
       lane: 'Relief addendum',
       modelName: rp36Run.modelId || 'MLB-RP36',
       version: 'MLB-RP36',
-      performanceLabel: 'Run locked / settlement pending',
+      performanceLabel: 'Run snapshotted / settlement pending',
       performancePct: null,
       coverageLabel: `${rp36Run.artifactSummary?.candidateCount ?? 0} candidates | ${rp36Run.artifactSummary?.relieverTeams ?? 0} team contexts | ${rp36Run.sourceFiles ?? 0} source files`,
       modelDescription: rp36Description,
@@ -863,6 +864,7 @@ const summarizeMlbModelsForDay = (date: string) => {
         status: rp36Run.status,
         mode: rp36Run.mode,
         lockedAt: rp36Run.lockedAt,
+        snapshottedAt: rp36Run.snapshottedAt,
         sourceHash: rp36Run.sourceHash,
         inputHash: rp36Run.inputHash,
         outputHash: rp36Run.outputHash,
@@ -1104,7 +1106,7 @@ const summarizeTennisRunModel = (date: string, run: any) => {
     artifacts: [
       publicArtifact(`${date} run manifest`, 'run-manifest'),
       publicArtifact(`${date} prediction snapshot`, 'prediction-snapshot'),
-      publicArtifact(`${date} source/input/output locks`, 'run-locks'),
+      publicArtifact(`${date} run snapshot`, 'run-snapshot'),
       ...(modelDescription ? [publicArtifact(`${run.model_id || 'TEN-T0'} model notes`, 'model-notes')] : []),
       ...(settlement ? [publicArtifact(`${date} postmatch settlement`, 'postmatch-grades')] : [])
     ]

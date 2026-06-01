@@ -7,8 +7,6 @@
   "createdForMigration": "2026-05-31",
   "entrypoint": "models/mlb/cartridges/MLB-M1/runner.mjs",
   "workflowEntrypoint": "models/mlb/cartridges/MLB-M1/workflows/pregame.mjs",
-  "runLock": "models/mlb/cartridges/MLB-M1/run-lock.mjs",
-  "runVerifier": "models/mlb/cartridges/MLB-M1/verify_run.mjs",
   "publishEntrypoints": [
     "models/mlb/cartridges/MLB-M1/lanes/generate-day-files.mjs",
     "models/mlb/cartridges/MLB-M1/lanes/batting-impact.mjs",
@@ -72,12 +70,12 @@
       "path": "models/mlb/cartridges/MLB-M1/verify_snapshot.mjs"
     },
     {
-      "role": "run-locker",
-      "path": "models/mlb/cartridges/MLB-M1/run-lock.mjs"
+      "role": "run-snapshotter",
+      "path": "models/mlb/cartridges/MLB-M1/snapshot-run.mjs"
     },
     {
-      "role": "run-verifier",
-      "path": "models/mlb/cartridges/MLB-M1/verify_run.mjs"
+      "role": "run-checker",
+      "path": "models/mlb/cartridges/MLB-M1/check_run.mjs"
     },
     {
       "role": "performance-index",
@@ -136,12 +134,12 @@
       "path": "models/mlb/run-cartridge.mjs"
     },
     {
-      "role": "mlb-cartridge-locker",
-      "path": "models/mlb/lock-cartridge.mjs"
+      "role": "mlb-cartridge-snapshotter",
+      "path": "models/mlb/snapshot-cartridge.mjs"
     },
     {
-      "role": "mlb-cartridge-verifier",
-      "path": "models/mlb/verify-cartridge.mjs"
+      "role": "mlb-cartridge-checker",
+      "path": "models/mlb/check-cartridge.mjs"
     },
     {
       "role": "mlb-cartridge-scaffolder",
@@ -322,5 +320,7 @@
     "pipeline/mlb/publish/export-training-corpus.mjs",
     "pipeline/mlb/publish/export-history-journal.mjs"
   ],
-  "componentRegistry": "models/mlb/cartridges/MLB-M1/components/index.json"
+  "componentRegistry": "models/mlb/cartridges/MLB-M1/components/index.json",
+  "runSnapshot": "models/mlb/cartridges/MLB-M1/snapshot-run.mjs",
+  "runCheck": "models/mlb/cartridges/MLB-M1/check_run.mjs"
 }

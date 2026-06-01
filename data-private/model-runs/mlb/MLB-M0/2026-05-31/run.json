@@ -9,15 +9,16 @@
   "warehouseVersion": "MLB-W1",
   "featureVersion": "MLB-F0",
   "mode": "pregame",
-  "status": "locked",
-  "lockedAt": "2026-06-01T00:26:35.617Z",
+  "status": "snapshotted",
+  "snapshottedAt": "2026-06-01T00:44:40.251Z",
+  "lockedAt": null,
   "git": {
-    "commit": "da0228fed8f3be466f8cbda923af2f4fdca62f53",
+    "commit": "b9349795fa0bd854d5ff835d6f24b4f0d026b167",
     "dirty": true
   },
-  "sourceHash": "c2e242ed5b27881f76e4df22376e79715498c74f945f23d191e65a879333bdd9",
-  "inputHash": "568d73b877d4ee2040ac6610c4efde07302a707435c19556840236b8897f4979",
-  "outputHash": "f525543c600370094daa274fc2fa40efed147c0382c7c4820f5d304a2b34d6ea",
+  "sourceHash": null,
+  "inputHash": null,
+  "outputHash": null,
   "snapshotHash": "f636a6062896d0bb54d2e35e4e884d70c49ddfe05be057d69ea657c2f992c8e7",
   "artifactSummary": {
     "publicSummaryGames": 15,
@@ -30,5 +31,15 @@
   },
   "sourceFiles": 90,
   "inputs": 21,
-  "outputs": 4
+  "outputs": 2,
+  "artifacts": [
+    {
+      "path": "data-private/model-runs/mlb/MLB-M0/2026-05-31/snapshot.json",
+      "role": "prediction-snapshot"
+    },
+    {
+      "path": "data-private/model-runs/mlb/MLB-M0/2026-05-31/run.json",
+      "role": "run-manifest"
+    }
+  ]
 }

@@ -3,10 +3,10 @@ import { parseModelArg, resolveCartridge, spawnScript } from './lib/registry-uti
 const main = async () => {
   const { model, passthrough } = parseModelArg(process.argv.slice(2))
   const resolved = await resolveCartridge({ model })
-  const runVerifier = resolved.manifest.runVerifier
-  if (!runVerifier) throw new Error(`${resolved.modelId} manifest is missing runVerifier.`)
+  const runCheck = resolved.manifest.runCheck
+  if (!runCheck) throw new Error(`${resolved.modelId} manifest is missing runCheck.`)
   const result = await spawnScript({
-    scriptPath: runVerifier,
+    scriptPath: runCheck,
     args: passthrough,
     env: { MLB_MODEL_ID: resolved.modelId }
   })

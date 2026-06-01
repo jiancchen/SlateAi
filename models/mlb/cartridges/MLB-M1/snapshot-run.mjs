@@ -1,10 +1,9 @@
 import fs from 'node:fs/promises'
 import path from 'node:path'
-import crypto from 'node:crypto'
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
 import { pathToFileURL } from 'node:url'
-import { buildM0Snapshot } from './snapshot.mjs'
+import { buildM1Snapshot } from './snapshot.mjs'
 
 const execFileAsync = promisify(execFile)
 const rootDir = path.resolve(import.meta.dirname, '..', '..', '..', '..')
@@ -25,44 +24,6 @@ const writeJson = async (relativePath, payload) => {
   await fs.mkdir(path.dirname(absolute), { recursive: true })
   await fs.writeFile(absolute, `${JSON.stringify(payload, null, 2)}\n`)
 }
-
-const stableJson = (value) => {
-  if (Array.isArray(value)) return `[${value.map(stableJson).join(',')}]`
-  if (value && typeof value === 'object') {
-    return `{${Object.keys(value).sort().map((key) => `${JSON.stringify(key)}:${stableJson(value[key])}`).join(',')}}`
-  }
-  return JSON.stringify(value)
-}
-
-const sha256Text = (text) => crypto.createHash('sha256').update(text).digest('hex')
-
-const fileHash = async (filePath) => {
-  const absolute = path.resolve(rootDir, filePath)
-  try {
-    const bytes = await fs.readFile(absolute)
-    return {
-      path: filePath,
-      exists: true,
-      sha256: crypto.createHash('sha256').update(bytes).digest('hex')
-    }
-  } catch (error) {
-    if (error.code !== 'ENOENT') throw error
-    return {
-      path: filePath,
-      exists: false,
-      sha256: null
-    }
-  }
-}
-
-const aggregateHash = (entries) => sha256Text(stableJson(
-  (entries || []).map((entry) => ({
-    path: entry.path,
-    role: entry.role || null,
-    exists: Boolean(entry.exists),
-    sha256: entry.sha256 || null
-  })).sort((left, right) => String(left.path).localeCompare(String(right.path)))
-))
 
 const parseArgs = () => {
   const args = process.argv.slice(2)
@@ -140,8 +101,8 @@ const sourceInventory = async () => {
     { path: manifest.modelLog, role: 'model-log' },
     { path: `${localCartridgeDir}/snapshot.mjs`, role: 'snapshot-builder' },
     { path: `${localCartridgeDir}/verify_snapshot.mjs`, role: 'snapshot-verifier' },
-    { path: `${localCartridgeDir}/run-lock.mjs`, role: 'run-locker' },
-    { path: `${localCartridgeDir}/verify_run.mjs`, role: 'run-verifier' },
+    { path: `${localCartridgeDir}/snapshot-run.mjs`, role: 'run-snapshotter' },
+    { path: `${localCartridgeDir}/check_run.mjs`, role: 'run-checker' },
     { path: 'models/mlb/cartridges/MLB-RP36/manifest.json', role: 'relief-addendum-manifest' },
     { path: rp36.entrypoint, role: 'relief-addendum-runner' },
     { path: rp36.outputContract, role: 'relief-addendum-output-contract' },
@@ -168,29 +129,25 @@ const inputInventory = async (date) => uniqueEntries([
   { path: `data-private/lineups/mlb/${date}-lineup-board.json`, role: 'lineup-board' }
 ])
 
-export const lockM0Run = async ({ date, model = process.env.MLB_MODEL_ID || localModelId }) => {
+export const snapshotM1Run = async ({ date, model = process.env.MLB_MODEL_ID || localModelId }) => {
   const registry = await readJson('models/mlb/registry.json', {})
   const active = registry.active || {}
   const modelId = String(model || localModelId).toUpperCase()
   const runId = `mlb-${date}-${active.warehouse || 'MLB-W1'}-${active.features || 'MLB-F0'}-${modelId}-${active.reliefAddendum || 'MLB-RP36'}-${active.evaluator || 'MLB-E0'}`
   const runDir = `data-private/model-runs/mlb/${modelId}/${date}`
-  const snapshot = await buildM0Snapshot({ date })
-  const sourceFiles = await Promise.all((await sourceInventory()).map(async (entry) => ({ ...entry, ...(await fileHash(entry.path)) })))
-  const inputFiles = await Promise.all((await inputInventory(date)).map(async (entry) => ({ ...entry, ...(await fileHash(entry.path)) })))
-  const sourceHash = aggregateHash(sourceFiles)
-  const inputHash = aggregateHash(inputFiles)
+  const snapshot = await buildM1Snapshot({ date })
+  const sourceFiles = await sourceInventory()
+  const inputFiles = await inputInventory(date)
 
   await writeJson(`${runDir}/snapshot.json`, snapshot)
-  await writeJson(`${runDir}/files.lock.json`, { schemaVersion: 1, runId, sourceHash, files: sourceFiles })
-  await writeJson(`${runDir}/inputs.lock.json`, { schemaVersion: 1, runId, inputHash, inputs: inputFiles })
+  await fs.rm(path.resolve(rootDir, `${runDir}/files.lock.json`), { force: true })
+  await fs.rm(path.resolve(rootDir, `${runDir}/inputs.lock.json`), { force: true })
+  await fs.rm(path.resolve(rootDir, `${runDir}/outputs.lock.json`), { force: true })
 
   const outputTargets = [
     { path: `${runDir}/snapshot.json`, role: 'prediction-snapshot' },
-    { path: `${runDir}/files.lock.json`, role: 'source-lock' },
-    { path: `${runDir}/inputs.lock.json`, role: 'input-lock' }
+    { path: `${runDir}/run.json`, role: 'run-manifest' }
   ]
-  const outputFiles = await Promise.all(outputTargets.map(async (entry) => ({ ...entry, ...(await fileHash(entry.path)) })))
-  const outputHash = aggregateHash(outputFiles)
   const run = {
     schemaVersion: 1,
     runId,
@@ -202,30 +159,21 @@ export const lockM0Run = async ({ date, model = process.env.MLB_MODEL_ID || loca
     warehouseVersion: active.warehouse || 'MLB-W1',
     featureVersion: active.features || 'MLB-F0',
     mode: 'pregame',
-    status: 'locked',
-    lockedAt: new Date().toISOString(),
+    status: 'snapshotted',
+    snapshottedAt: new Date().toISOString(),
+    lockedAt: null,
     git: await gitInfo(),
-    sourceHash,
-    inputHash,
-    outputHash,
+    sourceHash: null,
+    inputHash: null,
+    outputHash: null,
     snapshotHash: snapshot.snapshotHash,
     artifactSummary: snapshot.artifactSummary,
     sourceFiles: sourceFiles.length,
     inputs: inputFiles.length,
-    outputs: outputFiles.length + 1
+    outputs: outputTargets.length,
+    artifacts: outputTargets
   }
   await writeJson(`${runDir}/run.json`, run)
-
-  const finalOutputFiles = await Promise.all([
-    ...outputTargets,
-    { path: `${runDir}/run.json`, role: 'run-manifest' }
-  ].map(async (entry) => ({ ...entry, ...(await fileHash(entry.path)) })))
-  await writeJson(`${runDir}/outputs.lock.json`, {
-    schemaVersion: 1,
-    runId,
-    outputHash,
-    outputs: finalOutputFiles
-  })
 
   const indexResult = await runCommand('python3', [
     'models/shared/model-runs/index_runs.py',
@@ -238,7 +186,7 @@ export const lockM0Run = async ({ date, model = process.env.MLB_MODEL_ID || loca
     date
   ])
   if (!indexResult.ok) {
-    throw new Error(`Failed to index MLB-M0 run in warehouse: ${indexResult.stderr || indexResult.stdout}`)
+    throw new Error(`Failed to index MLB run snapshot in warehouse: ${indexResult.stderr || indexResult.stdout}`)
   }
 
   return { run, runDir: path.resolve(rootDir, runDir) }
@@ -248,14 +196,11 @@ const executedUrl = process.argv[1] ? pathToFileURL(path.resolve(process.argv[1]
 
 if (import.meta.url === executedUrl) {
   const { date, model } = parseArgs()
-  const { run, runDir } = await lockM0Run({ date, model })
+  const { run, runDir } = await snapshotM1Run({ date, model })
   console.log(JSON.stringify({
     runId: run.runId,
     runDir,
     status: run.status,
-    sourceHash: run.sourceHash,
-    inputHash: run.inputHash,
-    outputHash: run.outputHash,
     snapshotHash: run.snapshotHash,
     artifactSummary: run.artifactSummary
   }, null, 2))

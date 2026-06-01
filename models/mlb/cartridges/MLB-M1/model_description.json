@@ -4,7 +4,7 @@
   "sport": "mlb",
   "name": "MLB-M1 draft stub",
   "status": "draft-stub",
-  "summary": "Draft MLB parent cartridge scaffolded from MLB-M0. MLB-M1 has no intentional behavior changes yet; it exists to prove that the scaffold, run, lock, verify, and compare workflow can create a hot-swappable parent model before real M1 changes are added.",
+  "summary": "Draft MLB parent cartridge scaffolded from MLB-M0. MLB-M1 has no intentional behavior changes yet; it exists to prove that the scaffold, run, snapshot, check, and compare workflow can create a hot-swappable parent model before real M1 changes are added.",
   "keyImprovements": [
     "Scaffolds MLB-M1 from MLB-M0 as a draft parent cartridge without activating it.",
     "Keeps MLB-RP36 as a relief addendum consumed by MLB-M1 instead of treating the reliever shadow artifact as a separate parent model.",
@@ -15,8 +15,8 @@
     "Moves MLB-M1 workflows and publish lanes into the cartridge while old pipeline paths remain compatibility launchers.",
     "Adds a documented pipeline ownership boundary so data plumbing and offline research are not mistaken for missed model code.",
     "Adds a component registry for sides, first-five, totals, props, HRs, market context, and MLB-RP36 so future work can land in the right model lane without scanning the whole cartridge.",
-    "Indexes MLB-M1 and MLB-RP36 run locks into shared warehouse model-run tables so performance/backtest queries no longer depend only on JSON files.",
-    "Adds registry-aware MLB lifecycle wrappers so future parent models can be scaffolded, run, locked, verified, and compared without hardcoding package scripts to MLB-M1.",
+    "Indexes MLB-M1 and MLB-RP36 run snapshots into shared warehouse model-run tables so performance/backtest queries no longer depend only on JSON files.",
+    "Adds registry-aware MLB lifecycle wrappers so future parent models can be scaffolded, run, snapshotted, checked, and compared without hardcoding package scripts to MLB-M1.",
     "Adds an app adapter registry so future active parent models must register their app-facing contract instead of silently rendering through MLB-M1.",
     "Routes legacy pipeline workflow/publish launchers and web prop-calibration access through registry-aware adapters.",
     "Routes MLB-RP36 package scripts and refresh consumption through registry-aware component wrappers."
@@ -25,7 +25,7 @@
     {
       "label": "Migration status",
       "value": "Draft stub",
-      "details": "MLB-M1 is registered as a draft copy of MLB-M0. It locks, verifies, and compares, but should not be activated until it has intentional model changes and benchmark evidence."
+      "details": "MLB-M1 is registered as a draft copy of MLB-M0. It snapshots, checks, and compares, but should not be activated until it has intentional model changes and benchmark evidence."
     },
     {
       "label": "Publish lanes",
@@ -43,9 +43,9 @@
       "details": "Golden target covers 15 side picks, 49 prop picks, 12 HR picks, 30 reliever-shadow teams, and 15 lineup boards."
     },
     {
-      "label": "May 30 run lock",
+      "label": "May 30 run snapshot",
       "value": "Created",
-      "details": "MLB-M1 now has a file-based run manifest, source lock, input lock, output lock, and snapshot verification target."
+      "details": "MLB-M1 now has a file-based run manifest, snapshot verification target."
     },
     {
       "label": "May 30 side closeout",
@@ -70,12 +70,12 @@
     {
       "label": "Run indexing",
       "value": "Warehouse-backed",
-      "details": "model_runs, model_run_lanes, model_run_artifacts, model_component_runs, and RP36 settlement tables are populated from run locks."
+      "details": "model_runs, model_run_lanes, model_run_artifacts, model_component_runs, and RP36 settlement tables are populated from run snapshots."
     },
     {
       "label": "Lifecycle wrappers",
       "value": "Registry-aware",
-      "details": "models/mlb/run-cartridge.mjs, lock-cartridge.mjs, verify-cartridge.mjs, compare-cartridges.mjs, and scaffold-cartridge.mjs sit above cartridge-local code."
+      "details": "models/mlb/run-cartridge.mjs, snapshot-cartridge.mjs, check-cartridge.mjs, compare-cartridges.mjs, and scaffold-cartridge.mjs sit above cartridge-local code."
     },
     {
       "label": "App adapter",
@@ -90,7 +90,7 @@
     {
       "label": "Relief wrapper",
       "value": "Registry-routed",
-      "details": "MLB-RP36 run, lock, verify, and refresh calls route through models/mlb lifecycle wrappers."
+      "details": "MLB-RP36 run, snapshot, check, and refresh calls route through models/mlb lifecycle wrappers."
     }
   ],
   "notes": [
@@ -102,12 +102,12 @@
     "Before a new MLB slate, the prior day must have a results journal plus side prediction/backtest rows so lessons are based on warehouse-settled data.",
     "Quiet-start, traffic-without-conversion, and quiet-first-five risks now suppress full-game side promotion unless another market expression is cleaner.",
     "`MLB-M1_log.md` is the working log for warehouse/model changes that still need lane-specific proof.",
-    "Run locks remain the reproducibility artifact, but every locked MLB-M1/MLB-RP36 run should also be indexed into the shared warehouse model-run tables.",
+    "Run snapshots remain the reproducibility artifact, but every snapshotted MLB-M1/MLB-RP36 run should also be indexed into the shared warehouse model-run tables.",
     "New parent models should start from the model-iteration runbook and registry-aware wrappers, not by editing package scripts to point at a draft cartridge.",
     "New parent models that alter app-facing match output must register in `models/mlb/app-model.js` before activation."
   ],
   "knownLimitations": [
-    "Compatibility launchers remain under pipeline/mlb, but they are no longer part of the narrowed MLB-M1 source lock inventory.",
+    "Compatibility launchers remain under pipeline/mlb, but they are no longer part of the narrowed MLB-M1 source inventory.",
     "MLB-M1 has no separate app adapter yet because it is not active and currently shares the MLB-M0 app-facing contract."
   ],
   "files": {

@@ -53,8 +53,8 @@ class ModelRegistryTest(unittest.TestCase):
                         "modelLog",
                         "performanceIndex",
                         "followups",
-                        "runLock",
-                        "runVerifier",
+                        "runSnapshot",
+                        "runCheck",
                     ):
                         value = manifest.get(key)
                         if value:
@@ -87,17 +87,17 @@ class ModelRegistryTest(unittest.TestCase):
             role = source.get("role", "")
             path_value = source.get("path", "")
             with self.subTest(role=role, path=path_value):
-                self.assertFalse(role.startswith("compatibility-"), f"compatibility role in M0 source lock: {role}")
+                self.assertFalse(role.startswith("compatibility-"), f"compatibility role in M0 source inventory: {role}")
                 self.assertNotIn("frontend-side-model-compat-shim", role)
-                self.assertFalse(path_value.startswith("pipeline/mlb/workflows/"), f"workflow shim in M0 source lock: {path_value}")
-                self.assertFalse(path_value.startswith("pipeline/mlb/publish/"), f"publish shim in M0 source lock: {path_value}")
+                self.assertFalse(path_value.startswith("pipeline/mlb/workflows/"), f"workflow shim in M0 source inventory: {path_value}")
+                self.assertFalse(path_value.startswith("pipeline/mlb/publish/"), f"publish shim in M0 source inventory: {path_value}")
 
     def test_mlb_lifecycle_wrappers_and_runbook_exist(self) -> None:
         for path_value in (
             "models/mlb/lib/registry-utils.mjs",
             "models/mlb/run-cartridge.mjs",
-            "models/mlb/lock-cartridge.mjs",
-            "models/mlb/verify-cartridge.mjs",
+            "models/mlb/snapshot-cartridge.mjs",
+            "models/mlb/check-cartridge.mjs",
             "models/mlb/compare-cartridges.mjs",
             "models/mlb/scaffold-cartridge.mjs",
             "models/mlb/app-model.js",
@@ -110,14 +110,14 @@ class ModelRegistryTest(unittest.TestCase):
         scripts = package.get("scripts", {})
         for script_name in (
             "data:run:mlb-pregame",
-            "data:lock:mlb-run",
-            "data:verify:mlb-run",
+            "data:snapshot:mlb-run",
+            "data:check:mlb-run",
             "data:generate:mlb-day",
             "data:export:mlb-props",
             "data:export:mlb-sides",
             "data:export:mlb-reliever-shadow",
-            "data:lock:mlb-rp36",
-            "data:verify:mlb-rp36",
+            "data:snapshot:mlb-rp36",
+            "data:check:mlb-rp36",
         ):
             with self.subTest(script=script_name):
                 self.assertIn("models/mlb/", scripts.get(script_name, ""))
@@ -221,15 +221,15 @@ class ModelRegistryTest(unittest.TestCase):
         )
         self.assertEqual(result.returncode, 0, msg=result.stdout + result.stderr)
 
-    def test_mlb_m0_may30_run_verifies_when_locked(self) -> None:
+    def test_mlb_m0_may30_run_snapshot_checks(self) -> None:
         run_path = ROOT / "data-private" / "model-runs" / "mlb" / "MLB-M0" / "2026-05-30" / "run.json"
         if not run_path.exists():
-            self.skipTest("MLB-M0 May 30 run has not been locked")
+            self.skipTest("MLB-M0 May 30 run snapshot has not been created")
 
         result = subprocess.run(
             [
                 "node",
-                "models/mlb/cartridges/MLB-M0/verify_run.mjs",
+                "models/mlb/cartridges/MLB-M0/check_run.mjs",
                 "--date",
                 "2026-05-30",
             ],
@@ -329,7 +329,7 @@ class ModelRegistryTest(unittest.TestCase):
         m0_run = ROOT / "data-private" / "model-runs" / "mlb" / "MLB-M0" / "2026-05-31" / "run.json"
         rp36_run = ROOT / "data-private" / "model-runs" / "mlb" / "MLB-RP36" / "2026-05-31" / "run.json"
         if not db_path.exists() or not m0_run.exists() or not rp36_run.exists():
-            self.skipTest("May 31 MLB-M0/RP36 locked runs or warehouse are not present")
+            self.skipTest("May 31 MLB-M0/RP36 run snapshots or warehouse are not present")
 
         for model_id in ("MLB-RP36", "MLB-M0"):
             result = subprocess.run(
@@ -412,7 +412,7 @@ class ModelRegistryTest(unittest.TestCase):
         db_path = ROOT / "data-private" / "warehouse" / "sports.db"
         run_path = ROOT / "data-private" / "model-runs" / "mlb" / "MLB-M0" / "2026-05-30" / "run.json"
         if not db_path.exists() or not run_path.exists():
-            self.skipTest("May 30 MLB-M0 locked run or warehouse is not present")
+            self.skipTest("May 30 MLB-M0 run snapshot or warehouse is not present")
 
         result = subprocess.run(
             [
@@ -448,12 +448,12 @@ class ModelRegistryTest(unittest.TestCase):
         self.assertIn("'workflows', 'pregame.mjs'", runner_text)
         self.assertNotIn("'cartridges', 'MLB-M0', 'workflows'", runner_text)
 
-    def test_mlb_m0_run_lock_uses_local_cartridge_dir_for_self_inventory(self) -> None:
-        text = (ROOT / "models" / "mlb" / "cartridges" / "MLB-M0" / "run-lock.mjs").read_text(encoding="utf-8")
+    def test_mlb_m0_run_snapshot_uses_local_cartridge_dir_for_self_inventory(self) -> None:
+        text = (ROOT / "models" / "mlb" / "cartridges" / "MLB-M0" / "snapshot-run.mjs").read_text(encoding="utf-8")
         self.assertIn("localCartridgeDir", text)
         self.assertIn("`${localCartridgeDir}/manifest.json`", text)
         self.assertNotIn("models/mlb/cartridges/MLB-M0/manifest.json", text)
-        self.assertNotIn("models/mlb/cartridges/MLB-M0/run-lock.mjs", text)
+        self.assertNotIn("models/mlb/cartridges/MLB-M0/snapshot-run.mjs", text)
 
     def test_mlb_prop_calibration_web_shim_uses_app_adapter_registry(self) -> None:
         web_shim = (ROOT / "web" / "src" / "lib" / "mlb-prop-calibration.generated.js").read_text(encoding="utf-8")

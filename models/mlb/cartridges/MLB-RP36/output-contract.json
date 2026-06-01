@@ -28,6 +28,6 @@
   ],
   "notes": [
     "Placeholder contract captured before moving the current exporter.",
-    "Tighten this contract against the actual May 30 artifact before MLB-RP36 is locked."
+    "Tighten this contract against the actual May 30 artifact before MLB-RP36 is snapshotted."
   ]
 }

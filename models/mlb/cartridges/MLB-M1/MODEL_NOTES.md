@@ -2,7 +2,7 @@
 
 MLB-M1 is a draft parent cartridge scaffolded from MLB-M0. It has no intentional behavior changes yet.
 
-This cartridge exists to prove the model builder path works end to end: scaffold, register as draft, lock benchmark runs, verify those runs, and compare against MLB-M0 before activation. Workflow orchestration, publish lanes, and shared scoring modules are cartridge-owned; remaining `pipeline/mlb/` files are source fetchers, warehouse commands, compatibility launchers, or offline research.
+This cartridge exists to prove the model builder path works end to end: scaffold, register as draft, snapshot benchmark runs, check those snapshots, and compare against MLB-M0 before activation. Workflow orchestration, publish lanes, and shared scoring modules are cartridge-owned; remaining `pipeline/mlb/` files are source fetchers, warehouse commands, compatibility launchers, or offline research.
 
 ## Scope
 
@@ -36,8 +36,8 @@ Implemented from this lesson:
 
 ## Known Gaps
 
-- MLB-M1 has a file-based run manifest and verifier under `data-private/model-runs/mlb/MLB-M1/`; locked runs are also indexed into shared warehouse tables by `models/shared/model-runs/index_runs.py`.
-- Registry-aware lifecycle wrappers live under `models/mlb/`; use `run-cartridge.mjs`, `lock-cartridge.mjs`, `verify-cartridge.mjs`, `compare-cartridges.mjs`, and `scaffold-cartridge.mjs` for future parent-model iteration.
+- MLB-M1 has a file-based run manifest and verifier under `data-private/model-runs/mlb/MLB-M1/`; snapshotted runs are also indexed into shared warehouse tables by `models/shared/model-runs/index_runs.py`.
+- Registry-aware lifecycle wrappers live under `models/mlb/`; use `run-cartridge.mjs`, `snapshot-cartridge.mjs`, `check-cartridge.mjs`, `compare-cartridges.mjs`, and `scaffold-cartridge.mjs` for future parent-model iteration.
 - App-facing MLB adapter resolution lives in `models/mlb/app-model.js`; unregistered future active parent models should fail loudly instead of rendering through MLB-M1 by accident.
 - Daily MLB refresh, follow-up, and refresh verification commands enter through `models/mlb/run-cartridge.mjs`, which resolves the active parent cartridge before dispatching to the cartridge workflow.
 - MLB publish/export commands enter through `models/mlb/run-cartridge.mjs --entry lane:<lane>`; old `pipeline/mlb/publish/` paths are compatibility launchers only.

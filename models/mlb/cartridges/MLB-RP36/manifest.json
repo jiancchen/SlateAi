@@ -51,12 +51,12 @@
       "path": "pipeline/mlb/research/research_mlb_bullpen_prediction_audit.py"
     },
     {
-      "role": "run-locker",
-      "path": "models/mlb/cartridges/MLB-RP36/run_lock.py"
+      "role": "run-snapshotter",
+      "path": "models/mlb/cartridges/MLB-RP36/snapshot_run.py"
     },
     {
-      "role": "run-verifier",
-      "path": "models/mlb/cartridges/MLB-RP36/verify_run.py"
+      "role": "run-checker",
+      "path": "models/mlb/cartridges/MLB-RP36/check_run.py"
     },
     {
       "role": "shared-model-run-indexer",
@@ -64,6 +64,6 @@
     }
   ],
   "description": "Shell for the reliever shadow artifact. MLB-RP36 should produce relief context and warnings consumed by MLB-M0.",
-  "runLock": "models/mlb/cartridges/MLB-RP36/run_lock.py",
-  "runVerifier": "models/mlb/cartridges/MLB-RP36/verify_run.py"
+  "runSnapshot": "models/mlb/cartridges/MLB-RP36/snapshot_run.py",
+  "runCheck": "models/mlb/cartridges/MLB-RP36/check_run.py"
 }

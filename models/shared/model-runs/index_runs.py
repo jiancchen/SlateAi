@@ -115,7 +115,7 @@ CREATE TABLE IF NOT EXISTS mlb_rp36_team_settlements (
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Index model run locks into the shared sports warehouse.")
+    parser = argparse.ArgumentParser(description="Index model run snapshots into the shared sports warehouse.")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     index_parser = subparsers.add_parser("index", help="Index one run.")
@@ -124,7 +124,7 @@ def parse_args() -> argparse.Namespace:
     index_parser.add_argument("--date", required=True)
     index_parser.add_argument("--db", default=str(DB_PATH))
 
-    all_parser = subparsers.add_parser("index-all", help="Index all file-locked runs for a sport or model.")
+    all_parser = subparsers.add_parser("index-all", help="Index all saved runs for a sport or model.")
     all_parser.add_argument("--sport", default="mlb")
     all_parser.add_argument("--model-id", default="")
     all_parser.add_argument("--db", default=str(DB_PATH))
@@ -213,9 +213,13 @@ def index_artifacts(conn: sqlite3.Connection, directory: Path, run: dict[str, An
     conn.execute("DELETE FROM model_run_artifacts WHERE run_id = ?", (run_id,))
 
     rows: list[dict[str, Any]] = []
-    for file_name, key in (("files.lock.json", "files"), ("inputs.lock.json", "inputs"), ("outputs.lock.json", "outputs")):
-        payload = read_json(directory / file_name, {})
-        rows.extend(payload.get(key) or [])
+    declared_artifacts = run.get("artifacts") or []
+    if declared_artifacts:
+        rows.extend(declared_artifacts)
+    else:
+        for file_name, key in (("files.lock.json", "files"), ("inputs.lock.json", "inputs"), ("outputs.lock.json", "outputs")):
+            payload = read_json(directory / file_name, {})
+            rows.extend(payload.get(key) or [])
 
     for row in rows:
         conn.execute(

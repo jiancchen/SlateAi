@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 import subprocess
 import sys
@@ -20,7 +19,7 @@ DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Lock an MLB-RP36 reliever addendum run.")
+    parser = argparse.ArgumentParser(description="Snapshot an MLB-RP36 reliever addendum run.")
     parser.add_argument("--date", required=True, help="Slate date, YYYY-MM-DD.")
     return parser.parse_args()
 
@@ -32,39 +31,6 @@ def read_json(path: Path) -> dict[str, Any]:
 def write_json(path: Path, payload: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(f"{json.dumps(payload, indent=2, sort_keys=False)}\n", encoding="utf-8")
-
-
-def stable_json(value: Any) -> str:
-    return json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=True)
-
-
-def sha256_text(value: str) -> str:
-    return hashlib.sha256(value.encode("utf-8")).hexdigest()
-
-
-def file_hash(relative_path: str) -> dict[str, Any]:
-    absolute = ROOT / relative_path
-    if not absolute.exists():
-        return {"path": relative_path, "exists": False, "sha256": None}
-    return {
-        "path": relative_path,
-        "exists": True,
-        "sha256": hashlib.sha256(absolute.read_bytes()).hexdigest(),
-    }
-
-
-def aggregate_hash(rows: list[dict[str, Any]], rows_key: str = "path") -> str:
-    normalized = [
-        {
-            "role": row.get("role"),
-            rows_key: row.get(rows_key),
-            "exists": bool(row.get("exists", True)),
-            "sha256": row.get("sha256"),
-        }
-        for row in rows
-    ]
-    normalized.sort(key=lambda row: str(row.get(rows_key)))
-    return sha256_text(stable_json(normalized))
 
 
 def git_info() -> dict[str, Any]:
@@ -90,8 +56,8 @@ def source_inventory() -> list[dict[str, str]]:
         {"role": "rp36-output-contract", "path": manifest.get("outputContract")},
         {"role": "rp36-model-description", "path": manifest.get("modelDescription")},
         {"role": "rp36-model-notes", "path": manifest.get("modelNotes")},
-        {"role": "rp36-run-locker", "path": "models/mlb/cartridges/MLB-RP36/run_lock.py"},
-        {"role": "rp36-run-verifier", "path": "models/mlb/cartridges/MLB-RP36/verify_run.py"},
+        {"role": "rp36-run-snapshotter", "path": "models/mlb/cartridges/MLB-RP36/snapshot_run.py"},
+        {"role": "rp36-run-checker", "path": "models/mlb/cartridges/MLB-RP36/check_run.py"},
     ]
     entries.extend(manifest.get("sourceFiles") or [])
     by_path: dict[str, dict[str, str]] = {}
@@ -199,7 +165,6 @@ def input_inventory(date: str) -> list[dict[str, Any]]:
             "role": role,
             "query": " ".join(query.split()),
             "rows": result,
-            "sha256": sha256_text(stable_json(result)),
             "exists": True,
         })
     return rows
@@ -230,7 +195,6 @@ def build_snapshot(date: str) -> dict[str, Any]:
         "schemaVersion": 1,
         "modelId": MODEL_ID,
         "date": date,
-        "artifactHash": sha256_text(stable_json(artifact)),
         "meta": artifact.get("meta") or {},
         "artifactSummary": {
             "relieverTeams": len(teams),
@@ -245,35 +209,21 @@ def main() -> int:
     run_dir = RUN_ROOT / date
     run_id = f"mlb-{date}-MLB-RP36"
 
-    source_files = [{**entry, **file_hash(entry["path"])} for entry in source_inventory()]
+    source_files = source_inventory()
     input_rows = input_inventory(date)
     snapshot = build_snapshot(date)
 
-    source_hash = aggregate_hash(source_files)
-    input_hash = sha256_text(stable_json(input_rows))
-
     write_json(run_dir / "snapshot.json", snapshot)
-    write_json(run_dir / "files.lock.json", {
-        "schemaVersion": 1,
-        "runId": run_id,
-        "sourceHash": source_hash,
-        "files": source_files,
-    })
-    write_json(run_dir / "inputs.lock.json", {
-        "schemaVersion": 1,
-        "runId": run_id,
-        "inputHash": input_hash,
-        "inputs": input_rows,
-    })
+    for stale_name in ("files.lock.json", "inputs.lock.json", "outputs.lock.json"):
+        stale_path = run_dir / stale_name
+        if stale_path.exists():
+            stale_path.unlink()
 
     output_targets = [
         *artifact_paths(date),
         {"role": "prediction-snapshot", "path": f"data-private/model-runs/mlb/MLB-RP36/{date}/snapshot.json"},
-        {"role": "source-lock", "path": f"data-private/model-runs/mlb/MLB-RP36/{date}/files.lock.json"},
-        {"role": "input-lock", "path": f"data-private/model-runs/mlb/MLB-RP36/{date}/inputs.lock.json"},
+        {"role": "run-manifest", "path": f"data-private/model-runs/mlb/MLB-RP36/{date}/run.json"},
     ]
-    output_files = [{**entry, **file_hash(entry["path"])} for entry in output_targets]
-    output_hash = aggregate_hash(output_files)
 
     run = {
         "schemaVersion": 1,
@@ -282,31 +232,21 @@ def main() -> int:
         "slateDate": date,
         "modelId": MODEL_ID,
         "mode": "relief-addendum",
-        "status": "locked",
-        "lockedAt": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+        "status": "snapshotted",
+        "snapshottedAt": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+        "lockedAt": None,
         "git": git_info(),
-        "sourceHash": source_hash,
-        "inputHash": input_hash,
-        "outputHash": output_hash,
-        "artifactHash": snapshot["artifactHash"],
+        "sourceHash": None,
+        "inputHash": None,
+        "outputHash": None,
+        "artifactHash": None,
         "artifactSummary": snapshot["artifactSummary"],
         "sourceFiles": len(source_files),
         "inputs": len(input_rows),
-        "outputs": len(output_files) + 1,
+        "outputs": len(output_targets),
+        "artifacts": output_targets,
     }
     write_json(run_dir / "run.json", run)
-
-    final_outputs = [
-        *output_targets,
-        {"role": "run-manifest", "path": f"data-private/model-runs/mlb/MLB-RP36/{date}/run.json"},
-    ]
-    output_files = [{**entry, **file_hash(entry["path"])} for entry in final_outputs]
-    write_json(run_dir / "outputs.lock.json", {
-        "schemaVersion": 1,
-        "runId": run_id,
-        "outputHash": output_hash,
-        "outputs": output_files,
-    })
 
     subprocess.run(
         [
@@ -327,11 +267,8 @@ def main() -> int:
     print(json.dumps({
         "runId": run_id,
         "runDir": str(run_dir),
-        "status": "locked",
-        "sourceHash": source_hash,
-        "inputHash": input_hash,
-        "outputHash": output_hash,
-        "artifactHash": snapshot["artifactHash"],
+        "status": "snapshotted",
+        "artifactHash": None,
         "artifactSummary": snapshot["artifactSummary"],
     }, indent=2))
     return 0

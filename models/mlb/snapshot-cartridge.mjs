@@ -3,10 +3,10 @@ import { parseModelArg, resolveCartridge, spawnScript } from './lib/registry-uti
 const main = async () => {
   const { model, passthrough } = parseModelArg(process.argv.slice(2))
   const resolved = await resolveCartridge({ model })
-  const runLock = resolved.manifest.runLock
-  if (!runLock) throw new Error(`${resolved.modelId} manifest is missing runLock.`)
+  const runSnapshot = resolved.manifest.runSnapshot
+  if (!runSnapshot) throw new Error(`${resolved.modelId} manifest is missing runSnapshot.`)
   const result = await spawnScript({
-    scriptPath: runLock,
+    scriptPath: runSnapshot,
     args: passthrough,
     env: { MLB_MODEL_ID: resolved.modelId }
   })

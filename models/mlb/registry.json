@@ -68,7 +68,7 @@
         "props",
         "home_runs"
       ],
-      "notes": "Draft cartridge scaffolded from MLB-M0. It must pass benchmark locks before activation.",
+      "notes": "Draft cartridge scaffolded from MLB-M0. It must pass benchmark snapshots and lane comparisons before activation.",
       "basedOn": "MLB-M0"
     }
   ]
