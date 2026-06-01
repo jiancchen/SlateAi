@@ -416,25 +416,60 @@ const buildMlbCatalog = (modelHistory: ModelHistoryEntry[]) => {
   if (!mlbEntries.length) return mlbStubs
 
   const runEntries = mlbEntries.filter(({ model }) => model.run || /cartridge run/i.test(model.lane || ''))
-  const latestRun = latestEntry(runEntries)
-  const latestAny = latestRun || latestEntry(mlbEntries)
+  const parentRunEntries = runEntries.filter(({ model }) => /^MLB-M\d+$/i.test(String(model.modelName || '')))
+  const latestAny = latestEntry(parentRunEntries) || latestEntry(runEntries) || latestEntry(mlbEntries)
   const latestDay = latestAny.day
   const sameDayComponents = mlbEntries.filter(({ day }) => day.id === latestDay.id)
   const sideHistory = mlbEntries.filter(({ model }) => /sides/i.test(model.lane || ''))
+  const parentGroups = new Map<string, Array<{ day: ModelHistoryEntry; model: ModelRecord }>>()
+  for (const entry of parentRunEntries) {
+    const key = String(entry.model.modelName || 'MLB-M0')
+    parentGroups.set(key, [...(parentGroups.get(key) || []), entry])
+  }
 
-  const catalog: CatalogModel[] = [
-    {
+  const catalog: CatalogModel[] = Array.from(parentGroups.entries())
+    .sort(([left], [right]) => {
+      const leftNumber = Number(left.replace(/\D/g, ''))
+      const rightNumber = Number(right.replace(/\D/g, ''))
+      if (Number.isFinite(leftNumber) && Number.isFinite(rightNumber) && leftNumber !== rightNumber) {
+        return rightNumber - leftNumber
+      }
+      return right.localeCompare(left)
+    })
+    .map(([modelId, entries]) => {
+      const latest = latestEntry(entries)
+      const latestComponents = mlbEntries.filter(({ day, model }) =>
+        day.id === latest.day.id &&
+        (!/cartridge run/i.test(model.lane || '') || model.modelName === modelId)
+      )
+      return {
+        id: `mlb-parent-${modelId.toLowerCase()}`,
+        sport: 'mlb',
+        name: `${modelId} cartridge`,
+        lane: modelId === 'MLB-M2' ? 'Game-shape / totals / value gates' : 'Sides / F5 / first inning / props',
+        latestDay: latest.day,
+        latest: latest.model,
+        history: entries,
+        components: latestComponents,
+        description: modelId === 'MLB-M2'
+          ? 'Draft MLB game-shape branch. M2 is visible for comparison and promotion work, but it is not active until lane gates pass.'
+          : 'MLB parent cartridge shell. Parent models own daily board lanes while MLB-RP36 feeds bullpen and bridge-risk context as an addendum.'
+      } satisfies CatalogModel
+    })
+
+  if (!catalog.length) {
+    catalog.push({
       id: 'mlb-parent-cartridge',
       sport: 'mlb',
       name: 'MLB-M0 cartridge',
       lane: 'Sides / F5 / first inning / props',
       latestDay,
-      latest: latestRun?.model || latestAny.model,
+      latest: latestAny.model,
       history: runEntries.length ? runEntries : mlbEntries,
       components: sameDayComponents,
       description: 'The active MLB parent model shell. MLB-M0 owns the daily board lanes while MLB-RP36 feeds bullpen and bridge-risk context as an addendum.'
-    }
-  ]
+    })
+  }
 
   catalog.push({
     id: 'mlb-legacy-lanes',

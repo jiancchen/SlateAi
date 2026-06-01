@@ -861,3 +861,35 @@ New warehouse tables:
 Next step:
 
 Build the first derive command for `mlb_state_formula_training_rows` so Phase 3 can begin with real warehouse-backed rows instead of published JSON reconstruction.
+
+## 2026-06-01 - M2 Research Surface And Promotion Gates
+
+Closed the infrastructure side of Phases 8-10 without promoting a betting lane.
+
+New artifacts:
+
+- `models/mlb/cartridges/MLB-M2/reports/m2-research-surface-2026-06-01.md`
+- `models/mlb/cartridges/MLB-M2/reports/m2-research-surface-2026-06-01.json`
+- `models/mlb/cartridges/MLB-M2/promotion/LANE_PROMOTION_TEMPLATE.md`
+- `models/mlb/cartridges/MLB-M2/promotion/promotion-history.md`
+- `models/mlb/cartridges/MLB-M2/checks/check_value_row_gates.mjs`
+
+Site/export changes:
+
+- MLB model-history export now discovers `MLB-M*` parent model runs instead of hard-coding only `MLB-M0`.
+- The Models page lists parent MLB cartridges separately, so draft `MLB-M2` can be inspected without making it active.
+- MLB detail has a conditional M2 mechanism panel for `gameShape`, `stateFormula`, `playerIdentity`, `pitcherBatterKernel`, and `valueProof` payloads.
+
+Promotion state:
+
+- No M2 lane is promoted.
+- State formula rows remain research-only.
+- Player identity rows remain diagnostic.
+- Pitcher-batter kernel is the only current candidate pocket, but it is tiny-sample.
+- Value rows must be model-owned and carry required hit rate, backtest bucket, trust label, value gate, gate reasons, and source artifact.
+
+Validation target:
+
+- `npm run data:check:mlb-m2-value-gates`
+- `npm --prefix web run test -- BoardView`
+- `npm run data:export:published`

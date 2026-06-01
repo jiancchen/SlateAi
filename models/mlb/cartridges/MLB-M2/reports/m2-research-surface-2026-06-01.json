@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "modelId": "MLB-M2",
+  "generatedAt": "2026-06-01",
+  "status": "draft-comparison",
+  "activeForPublicPicks": false,
+  "surface": {
+    "gameShapeCategory": "active-diagnostic",
+    "stateFormulas": "research-only",
+    "playerIdentityCurves": "research-only",
+    "pitcherBatterKernel": "candidate-pocket",
+    "firstFiveTailOverlay": "candidate-diagnostic",
+    "valueBoard": "model-owned-rows-only"
+  },
+  "backtestSnapshot": {
+    "baselineFullGameSide": {
+      "hitRate": 0.59,
+      "rows": 212
+    },
+    "m2CategoryLane": {
+      "hitRate": 0.626,
+      "rows": 195
+    },
+    "m2AllowedSideBucket": {
+      "hitRate": 0.675,
+      "rows": 40
+    },
+    "starterToBullpenFlipF5": {
+      "hitRate": 0.686,
+      "rows": 35
+    },
+    "deadZoneTimingF5": {
+      "hitRate": 0.706,
+      "rows": 17
+    },
+    "may31OuStressBenchmark": {
+      "record": "5/5",
+      "hitRate": 1.0
+    }
+  },
+  "holdoutReads": {
+    "stateFormulaMay31": {
+      "record": "24/120",
+      "hitRate": 0.2,
+      "status": "research-only"
+    },
+    "pitcherBatterKernelTopCollapseMay31": {
+      "record": "4/6",
+      "hitRate": 0.667,
+      "status": "candidate-pocket"
+    },
+    "playerHitsMay31": {
+      "record": "182/307",
+      "hitRate": 0.593,
+      "status": "diagnostic"
+    },
+    "playerTotalBasesMay31": {
+      "record": "179/307",
+      "hitRate": 0.583,
+      "status": "diagnostic"
+    }
+  },
+  "requiredValueRowFields": [
+    "modelId",
+    "lane",
+    "marketType",
+    "confidence",
+    "requiredHitRate",
+    "backtestBucket",
+    "trustLabel",
+    "valueGate",
+    "gateReasons",
+    "sourceArtifact"
+  ],
+  "uiRules": [
+    "Show game-shape story and phase map compactly.",
+    "Show player identity and pitcher-batter kernel as diagnostics until promoted.",
+    "Separate research-only rows visually from value rows.",
+    "Never show UI-derived F5 O/U or F5 ML EV rows."
+  ],
+  "promotionDecision": "No replacement lane is promoted from the current candidate stack. Keep MLB-M0 active."
+}

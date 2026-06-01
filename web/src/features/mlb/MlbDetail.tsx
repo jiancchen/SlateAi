@@ -255,6 +255,27 @@ export function MlbDetail(props: MlbDetailProps) {
     awayHold,
     homeHold
   })
+  const m2GameShape = game.analysis?.gameShape ?? game.gameShape ?? null
+  const m2StateFormula = game.analysis?.stateFormula ?? game.stateFormula ?? null
+  const m2PlayerIdentity = game.analysis?.playerIdentity ?? game.playerIdentity ?? null
+  const m2PitcherBatterKernel = game.analysis?.pitcherBatterKernel ?? game.pitcherBatterKernel ?? null
+  const m2ValueProof = game.analysis?.valueProof ?? game.valueProof ?? null
+  const m2ScoreCards = m2GameShape
+    ? [
+        { label: 'Reality gap', value: m2GameShape.scores?.realityGapScore },
+        { label: 'Chaos', value: m2GameShape.scores?.chaosScore },
+        { label: 'Dead early', value: m2GameShape.scores?.deadEarlyScore },
+        { label: 'Bridge flip', value: m2GameShape.scores?.bullpenFlipScore }
+      ].filter((entry) => Number.isFinite(Number(entry.value)))
+    : []
+  const m2PhaseCards = m2GameShape?.phaseMap
+    ? [
+        { label: 'Full game', value: m2GameShape.phaseMap.fullGameTraffic },
+        { label: 'First 5', value: m2GameShape.phaseMap.first5 },
+        { label: 'Late', value: m2GameShape.phaseMap.late },
+        { label: 'Bridge', value: m2GameShape.phaseMap.bridge }
+      ].filter((entry) => entry.value)
+    : []
   const pointEdgeHeadline = buildEdgeHeadline(projection?.edgeTeam || '', projection?.edgeHits, 'H', 'Even board')
   const first5EdgeHeadline = buildEdgeHeadline(projection?.first5EdgeTeam || '', projection?.first5EdgeHits, 'H', 'Even first 5')
   const lateEdgeHeadline = buildEdgeHeadline(projection?.lateEdgeTeam || '', projection?.lateEdgeHits, 'H', 'Even late')
@@ -395,6 +416,77 @@ export function MlbDetail(props: MlbDetailProps) {
           ))}
         </div>
       </section>
+
+      {m2GameShape || m2StateFormula || m2PlayerIdentity || m2PitcherBatterKernel || m2ValueProof ? (
+        <section className="detail-panel game-story-panel">
+          <div className="detail-panel-header">
+            <p className="eyebrow">MLB-M2 mechanism</p>
+            <span>{m2GameShape?.label || m2GameShape?.category?.label || 'Research diagnostics'}</span>
+          </div>
+          {m2GameShape?.summary ? <p className="react-section-copy">{m2GameShape.summary}</p> : null}
+          <div className="react-pill-row game-story-chip-row">
+            {m2GameShape?.category?.bestExpression ? (
+              <span className="game-highlight-chip accent">{m2GameShape.category.bestExpression}</span>
+            ) : null}
+            {m2GameShape?.category?.label ? (
+              <span className="game-highlight-chip warning">{m2GameShape.category.label}</span>
+            ) : null}
+            {m2GameShape?.rfLens?.trustedUse ? (
+              <span className="game-highlight-chip muted">RF totals lens</span>
+            ) : null}
+            {m2ValueProof?.trustLabel ? (
+              <span className="game-highlight-chip positive">{m2ValueProof.trustLabel}</span>
+            ) : null}
+          </div>
+          {m2ScoreCards.length || m2PhaseCards.length ? (
+            <div className="game-story-grid">
+              {m2ScoreCards.map((card) => (
+                <article key={`${game.id}-m2-score-${card.label}`} className="game-story-card warning">
+                  <small>{card.label}</small>
+                  <p>{formatNumber(card.value, 1)}/100</p>
+                </article>
+              ))}
+              {m2PhaseCards.map((card) => (
+                <article key={`${game.id}-m2-phase-${card.label}`} className="game-story-card accent">
+                  <small>{card.label}</small>
+                  <p>{card.value}</p>
+                </article>
+              ))}
+            </div>
+          ) : null}
+          {m2GameShape?.marketImplications ? (
+            <div className="game-story-grid">
+              {Object.entries(m2GameShape.marketImplications).slice(0, 4).map(([lane, body]) => (
+                <article key={`${game.id}-m2-market-${lane}`} className="game-story-card">
+                  <small>{lane}</small>
+                  <p>{String(body)}</p>
+                </article>
+              ))}
+            </div>
+          ) : null}
+          {m2StateFormula || m2PlayerIdentity || m2PitcherBatterKernel ? (
+            <div className="game-story-grid">
+              <article className="game-story-card">
+                <small>State formulas</small>
+                <p>{m2StateFormula?.summary || m2StateFormula?.status || 'Research-only until holdout and bucket checks improve.'}</p>
+              </article>
+              <article className="game-story-card">
+                <small>Player identity</small>
+                <p>{m2PlayerIdentity?.summary || m2PlayerIdentity?.status || 'Diagnostic only; useful for prop triage and repeatability checks.'}</p>
+              </article>
+              <article className="game-story-card">
+                <small>Pitcher-batter kernel</small>
+                <p>{m2PitcherBatterKernel?.summary || m2PitcherBatterKernel?.status || 'Candidate pocket; requires line-bucket proof before promotion.'}</p>
+              </article>
+            </div>
+          ) : null}
+          {m2ValueProof ? (
+            <p className="react-section-copy">
+              Value proof: {m2ValueProof.backtestBucket || 'no bucket'} · required hit {m2ValueProof.requiredHitRate || 'pending'} · gate {m2ValueProof.valueGate || 'research'}
+            </p>
+          ) : null}
+        </section>
+      ) : null}
 
       <section className="detail-panel react-card-grid">
         <article className="react-team-card" style={{ borderColor: `${getTeamAccent('MLB', awayTeam)}55` }}>

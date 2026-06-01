@@ -39,6 +39,8 @@
   "performanceIndex": "models/mlb/cartridges/MLB-M2/performance_index.json",
   "followups": "models/mlb/cartridges/MLB-M2/followups.md",
   "currentBenchmark": "models/mlb/cartridges/MLB-M2/benchmarks/2026-06-01-current-baseline.json",
+  "researchSurface": "models/mlb/cartridges/MLB-M2/reports/m2-research-surface-2026-06-01.json",
+  "promotionHistory": "models/mlb/cartridges/MLB-M2/promotion/promotion-history.md",
   "sourceFiles": [
     {
       "role": "pregame-runner",
@@ -87,6 +89,22 @@
     {
       "role": "current-benchmark",
       "path": "models/mlb/cartridges/MLB-M2/benchmarks/2026-06-01-current-baseline.json"
+    },
+    {
+      "role": "research-surface",
+      "path": "models/mlb/cartridges/MLB-M2/reports/m2-research-surface-2026-06-01.json"
+    },
+    {
+      "role": "lane-promotion-template",
+      "path": "models/mlb/cartridges/MLB-M2/promotion/LANE_PROMOTION_TEMPLATE.md"
+    },
+    {
+      "role": "promotion-history",
+      "path": "models/mlb/cartridges/MLB-M2/promotion/promotion-history.md"
+    },
+    {
+      "role": "value-row-gate-checker",
+      "path": "models/mlb/cartridges/MLB-M2/checks/check_value_row_gates.mjs"
     },
     {
       "role": "benchmark-readme",

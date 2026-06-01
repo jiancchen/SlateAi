@@ -192,8 +192,59 @@ const readMlbModelDescription = (modelId: unknown) => {
   }
 }
 
+const readMlbPerformanceIndex = (modelId: unknown) => {
+  const safeModelId = String(modelId || '').replace(/[^a-z0-9_-]/gi, '')
+  if (!safeModelId) return null
+  return readJsonFile(path.join(repoRoot, 'models', 'mlb', 'cartridges', safeModelId, 'performance_index.json'))
+}
+
+const summarizeMlbBacktest = (modelId: unknown) => {
+  const index = readMlbPerformanceIndex(modelId)
+  if (!index) return null
+  const benchmark = index.currentBenchmark
+  const overall = benchmark?.overall
+  const may31 = benchmark?.may31Holdout
+  const rows = Number(overall?.m2CategoryLaneGradedRows || index.runs?.[0]?.rows || 0)
+  const hitRate =
+    Number(overall?.m2CategoryLaneHitRate ?? overall?.baselineFullGameSideHitRate ?? index.runs?.[0]?.metrics?.m2CategoryLaneHitRate ?? NaN)
+  const hitRatePct = Number.isFinite(hitRate) ? Number((hitRate * 100).toFixed(1)) : null
+  if (hitRatePct === null && !may31) return null
+  const labelParts = []
+  if (hitRatePct !== null) labelParts.push(`${hitRatePct.toFixed(1)}% benchmark`)
+  if (rows) labelParts.push(`${rows} rows`)
+  if (may31?.overUnderRecord) labelParts.push(`May 31 O/U ${may31.overUnderRecord}`)
+  return {
+    label: labelParts.join(' | ') || index.description || 'Benchmark exported',
+    rows: rows || null,
+    hits: null,
+    hitRatePct,
+    valueGate: {
+      status: index.status || 'draft',
+      active: index.status === 'active',
+      source: index.currentBenchmark?.path || null,
+      promotionRequired: index.status !== 'active'
+    },
+    trainingCorpus: {
+      currentBaselineDate: index.currentBaselineDate ?? null,
+      currentRunDate: index.currentRunDate ?? null,
+      holdoutDate: may31?.holdoutDate ?? null,
+      may31OverUnderRecord: may31?.overUnderRecord ?? null
+    }
+  }
+}
+
 const readMlbRun = (modelId: string, date: string) =>
   readJsonFile(path.join(mlbModelRunsRoot, modelId, date, 'run.json'))
+
+const readMlbParentRuns = (date: string) => {
+  if (!fsSync.existsSync(mlbModelRunsRoot)) return []
+  return fsSync
+    .readdirSync(mlbModelRunsRoot)
+    .filter((modelId) => /^MLB-M\d+$/i.test(modelId))
+    .sort()
+    .map((modelId) => readMlbRun(modelId, date))
+    .filter(Boolean)
+}
 
 const loadMlbModelRunDates = () => {
   const dates = new Set<string>()
@@ -805,7 +856,7 @@ const exportHistory = async () => {
 
 const summarizeMlbModelsForDay = (date: string) => {
   const journalPath = path.join(historyJournalRoot, `mlb-results-${date}.jsonl`)
-  const m0Run = readMlbRun('MLB-M0', date)
+  const parentRuns = readMlbParentRuns(date)
   const rp36Run = readMlbRun('MLB-RP36', date)
   const records = fsSync.existsSync(journalPath)
     ? fsSync
@@ -816,7 +867,7 @@ const summarizeMlbModelsForDay = (date: string) => {
         .map((line) => JSON.parse(line))
     : []
 
-  if (!records.length && !m0Run && !rp36Run) return []
+  if (!records.length && !parentRuns.length && !rp36Run) return []
 
   const moneylineRows = records.filter((row) => row.marketType === 'moneyline')
   const firstInningRows = records.filter((row) => row.marketType === 'firstInning')
@@ -830,7 +881,7 @@ const summarizeMlbModelsForDay = (date: string) => {
   const sourceLabels = [...new Set(moneylineRows.map((row) => String(row.sourceLabel ?? '')).filter(Boolean))]
 
   const models = []
-  if (m0Run) {
+  for (const parentRun of parentRuns) {
     const lane = (label: string, hits: number, rows: number) => ({
       lane: label,
       rows,
@@ -843,49 +894,52 @@ const summarizeMlbModelsForDay = (date: string) => {
     const totalRows = moneylineRows.length + moneylineRows.length + firstInningRows.length + hrRows.length + propRows.length
     const totalHits = moneylineHits + first5Hits + firstInningHits + hrHits + propHits
     const stackLabel = [
-      m0Run.warehouseVersion,
-      m0Run.featureVersion,
-      m0Run.modelId,
-      m0Run.reliefAddendum,
-      m0Run.evaluatorVersion
+      parentRun.warehouseVersion,
+      parentRun.featureVersion,
+      parentRun.modelId,
+      parentRun.reliefAddendum,
+      parentRun.evaluatorVersion
     ].filter(Boolean).join(' / ')
-    const modelDescription = readMlbModelDescription(m0Run.modelId || 'MLB-M0')
+    const modelId = String(parentRun.modelId || 'MLB-M0')
+    const modelDescription = readMlbModelDescription(modelId)
+    const backtest = summarizeMlbBacktest(modelId)
     const settlementStatus = totalRows ? 'settled' : 'pending'
     models.push({
-      id: `${date}-mlb-${m0Run.modelId || 'MLB-M0'}-run`,
+      id: `${date}-mlb-${modelId}-run`,
       sport: 'MLB',
       lane: 'Cartridge run',
-      modelName: m0Run.modelId || 'MLB-M0',
-      version: stackLabel || 'MLB-W1 / MLB-F0 / MLB-M0 / MLB-RP36 / MLB-E0',
+      modelName: modelId,
+      version: stackLabel || `MLB-W1 / MLB-F0 / ${modelId} / MLB-RP36 / MLB-E0`,
       performanceLabel: moneylineRows.length
         ? `Sides FG ${pctLabel(moneylineHits, moneylineRows.length)} | F5 ${pctLabel(first5Hits, moneylineRows.length)}`
         : 'Run snapshotted; side rows pending',
       performancePct: moneylineRows.length ? Number(((moneylineHits / moneylineRows.length) * 100).toFixed(1)) : null,
-      coverageLabel: `${m0Run.artifactSummary?.publicSummaryGames ?? 0} games | ${m0Run.sourceFiles ?? 0} source files | ${m0Run.inputs ?? 0} inputs | ${totalRows} graded lane rows`,
+      coverageLabel: `${parentRun.artifactSummary?.publicSummaryGames ?? 0} games | ${parentRun.sourceFiles ?? 0} source files | ${parentRun.inputs ?? 0} inputs | ${totalRows} graded lane rows`,
       modelDescription,
+      backtest,
       run: {
-        runId: m0Run.runId,
-        status: m0Run.status,
-        mode: m0Run.mode,
-        snapshottedAt: m0Run.snapshottedAt,
-        sourceHash: m0Run.sourceHash,
-        inputHash: m0Run.inputHash,
-        outputHash: m0Run.outputHash,
-        sourceFiles: Number(m0Run.sourceFiles || 0),
-        inputs: Number(m0Run.inputs || 0),
-        outputs: Number(m0Run.outputs || 0),
+        runId: parentRun.runId,
+        status: parentRun.status,
+        mode: parentRun.mode,
+        snapshottedAt: parentRun.snapshottedAt,
+        sourceHash: parentRun.sourceHash,
+        inputHash: parentRun.inputHash,
+        outputHash: parentRun.outputHash,
+        sourceFiles: Number(parentRun.sourceFiles || 0),
+        inputs: Number(parentRun.inputs || 0),
+        outputs: Number(parentRun.outputs || 0),
         trainingRows: totalRows,
         healthChecks: 5,
         healthChecksOk: totalRows ? 5 : 4,
-        gitDirty: Boolean(m0Run.git?.dirty)
+        gitDirty: Boolean(parentRun.git?.dirty)
       },
       settlement: {
-        settlementId: `${m0Run.runId || `mlb-${date}-MLB-M0`}:journal`,
+        settlementId: `${parentRun.runId || `mlb-${date}-${modelId}`}:journal`,
         status: settlementStatus,
         gradeMode: 'mlb-results-journal',
         settledAt: null,
         completeMatches: moneylineRows.length,
-        pendingMatches: totalRows ? 0 : Number(m0Run.artifactSummary?.publicSummaryGames || 0),
+        pendingMatches: totalRows ? 0 : Number(parentRun.artifactSummary?.publicSummaryGames || 0),
         rowCount: totalRows,
         gradedCount: totalRows,
         hitCount: totalHits,
@@ -900,19 +954,22 @@ const summarizeMlbModelsForDay = (date: string) => {
         ].filter((entry) => entry.rows > 0)
       },
       changelog: [
-        `Snapshotted run ${m0Run.runId}.`,
-        `Stack ${stackLabel || 'MLB-W1 / MLB-F0 / MLB-M0 / MLB-RP36 / MLB-E0'} is the active MLB cartridge shell for this slate.`,
+        `Snapshotted run ${parentRun.runId}.`,
+        `Stack ${stackLabel || `MLB-W1 / MLB-F0 / ${modelId} / MLB-RP36 / MLB-E0`} is ${modelId === 'MLB-M0' ? 'the active MLB cartridge shell' : 'a draft comparison cartridge'} for this slate.`,
         totalRows
           ? `${date} closeout is training-ready: ${moneylineRows.length} side rows, ${firstInningRows.length} first-inning rows, ${hrRows.length} HR rows, and ${propRows.length} prop rows.`
           : `${date} is pending settlement; result journal rows have not been exported yet.`,
         'MLB-RP36 remains a consumed relief addendum; it is not a peer parent model.',
-        'Daily closeout now exports/imports the side board before postmortem so side backtests cannot silently stay empty.'
+        modelId === 'MLB-M2'
+          ? 'M2 remains draft-only until promotion gates prove lane lift and value rows are model-owned.'
+          : 'Daily closeout now exports/imports the side board before postmortem so side backtests cannot silently stay empty.'
       ],
       artifacts: [
-        publicArtifact(`${date} MLB-M0 run manifest`, 'run-manifest'),
+        publicArtifact(`${date} ${modelId} run manifest`, 'run-manifest'),
         publicArtifact(`${date} MLB results journal`, 'private-results-journal'),
         publicArtifact(`${date} side backtest rows`, 'warehouse-side-backtest'),
-        ...(modelDescription ? [publicArtifact(`${m0Run.modelId || 'MLB-M0'} model notes`, 'model-notes')] : [])
+        ...(backtest ? [publicArtifact(`${modelId} benchmark summary`, 'model-benchmark')] : []),
+        ...(modelDescription ? [publicArtifact(`${modelId} model notes`, 'model-notes')] : [])
       ]
     })
   }

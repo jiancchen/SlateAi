@@ -49,6 +49,11 @@
       "label": "Timing/F5 signal",
       "value": "68.6%",
       "details": "Starter-to-bullpen flip category graded as a first-five timing lane on 35 rows."
+    },
+    {
+      "label": "Value row gate",
+      "value": "model-owned",
+      "details": "F5 ML, F5 O/U, and full-total rows must carry valueGate, backtestBucket, requiredHitRate, trustLabel, and sourceArtifact before display as value."
     }
   ],
   "notes": [
@@ -57,7 +62,8 @@
     "A high reality-gap score should downgrade blind full-game ML confidence even when the raw side model has a strong lean.",
     "The transparent category layer beat the tested walk-forward RF, gradient, and logistic lane choosers overall; the ML experiments only helped narrow F5/high-total sublanes.",
     "Rule sweeps surfaced useful candidate gates: starter-control rows for full-game side, phase-split rows for F5, and high-chaos rows for total/first-inning scoring shape.",
-    "Future M2 work should persist per-game reality-gap outcomes so we can backtest whether high-gap labels predicted bad ML bets, better F5 bets, better totals, or passes."
+    "Future M2 work should persist per-game reality-gap outcomes so we can backtest whether high-gap labels predicted bad ML bets, better F5 bets, better totals, or passes.",
+    "The value board is now treated as a publish contract: the UI can filter/sort, but it cannot invent first-five or totals EV from raw projections."
   ],
   "knownLimitations": [
     "The RF lens currently uses documented research baselines, not a newly serialized production RF artifact.",
@@ -70,6 +76,8 @@
     "performanceIndex": "models/mlb/cartridges/MLB-M2/performance_index.json",
     "followups": "models/mlb/cartridges/MLB-M2/followups.md",
     "gameShape": "models/mlb/cartridges/MLB-M2/lib/mlb-game-shape.js",
-    "gameShapeBacktest": "models/mlb/cartridges/MLB-M2/reports/game-shape-backtest-2026-05-10-to-2026-05-31.md"
+    "gameShapeBacktest": "models/mlb/cartridges/MLB-M2/reports/game-shape-backtest-2026-05-10-to-2026-05-31.md",
+    "researchSurface": "models/mlb/cartridges/MLB-M2/reports/m2-research-surface-2026-06-01.md",
+    "promotionHistory": "models/mlb/cartridges/MLB-M2/promotion/promotion-history.md"
   }
 }

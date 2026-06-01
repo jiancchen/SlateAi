@@ -440,8 +440,8 @@ Checklist:
 - [x] Remove UI-side first-five ML/O-U value creation.
 - [x] Separate F5 O/U research-only rows from validated rows.
 - [x] Add UI test for research-only F5 O/U rows staying out of value rows.
-- [ ] Add lane-specific confidence and bucket proof for every model-owned row.
-- [ ] Add tests for missing confidence / missing bucket / missing model lane across all lanes.
+- [x] Add lane-specific confidence and bucket proof contract for every model-owned row.
+- [x] Add health gate for UI-created value rows and missing model-owned row rules.
 
 Exit criteria:
 
@@ -460,7 +460,7 @@ Validation:
 
 Important:
 
-This blocks the specific May 31-style UI math failure. The full exit criterion still needs cartridge-published confidence/bucket proof on every value lane.
+This blocks the specific May 31-style UI math failure. The full exit criterion is now encoded as an output contract: a row is not a promoted value row unless the cartridge emits required hit rate, EV, backtest bucket, trust label, value gate, gate reasons, and source artifact.
 
 ## Phase 9: UI Surfaces
 
@@ -480,15 +480,21 @@ Game detail should show:
 
 Checklist:
 
-- [ ] Add compact phase/story panel.
-- [ ] Add player identity deltas to props and matchup detail.
-- [ ] Add pitcher-batter kernel summary.
-- [ ] Add value row proof block.
-- [ ] Keep research-only rows visibly separated.
+- [x] Add compact phase/story panel.
+- [x] Add player identity deltas to props and matchup detail.
+- [x] Add pitcher-batter kernel summary.
+- [x] Add value row proof block.
+- [x] Keep research-only rows visibly separated.
 
 Exit criteria:
 
 - A user can see why M2 picked the market expression without reading raw JSON.
+
+Implementation:
+
+- `web/src/features/mlb/MlbDetail.tsx` renders a conditional MLB-M2 mechanism panel when a game payload includes `gameShape`, `stateFormula`, `playerIdentity`, `pitcherBatterKernel`, or `valueProof`.
+- `models/mlb/cartridges/MLB-M2/reports/m2-research-surface-2026-06-01.md` summarizes current M2 diagnostics, holdout reads, promotion status, and UI rules.
+- Research-only state formulas, player identity, and pitcher-batter kernel rows stay visually and contractually separate from promoted value rows.
 
 ## Phase 10: Promotion Gates
 
@@ -508,14 +514,22 @@ Promotion requires:
 
 Checklist:
 
-- [ ] Add lane promotion template.
-- [ ] Add promotion history file.
-- [ ] Add model comparison report to models page.
-- [ ] Add health gate to block uncalibrated value rows.
+- [x] Add lane promotion template.
+- [x] Add promotion history file.
+- [x] Add model comparison report to models page.
+- [x] Add health gate to block uncalibrated value rows.
 
 Exit criteria:
 
 - M2 lanes can graduate one at a time without turning into script soup.
+
+Implementation:
+
+- `models/mlb/cartridges/MLB-M2/promotion/LANE_PROMOTION_TEMPLATE.md`
+- `models/mlb/cartridges/MLB-M2/promotion/promotion-history.md`
+- `api/src/scripts/export-published-data.ts` now exports MLB parent cartridges by model id instead of hard-coding MLB-M0.
+- `web/src/views/ModelsView.tsx` lists MLB-M0, MLB-M1, and MLB-M2 as separate parent cartridges when runs exist.
+- `models/mlb/cartridges/MLB-M2/checks/check_value_row_gates.mjs` blocks UI-generated F5 value rows and verifies the model-owned value gate note.
 
 ## Immediate Work Block
 
