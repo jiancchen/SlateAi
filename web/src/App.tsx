@@ -6,7 +6,7 @@ import {
   rankEfficientFavoritePicks,
   rankFlipRiskPicks,
   rankMlbPlayerProps
-} from '../../models/shared/sports-core/app-sports-model.js'
+} from './lib/app-sports-model'
 import type { HistoryEntry, HistoryRecord, HistorySportTab } from './lib/history-types'
 import type {
   StoryArchiveDaySummary,
@@ -40,6 +40,7 @@ import kalshiTennisTradeCandidates from './lib/kalshi-tennis-trade-candidates.ge
 import kalshiTennisSpikeModel from './lib/kalshi-tennis-spike-model.generated.json' with { type: 'json' }
 import kalshiMlbMarkets from './lib/kalshi-mlb-markets.generated.json' with { type: 'json' }
 import { BoardView } from './views/BoardView'
+import { BatterView } from './views/BatterView'
 import { HistoryView } from './views/HistoryView'
 import { ModelsView } from './views/ModelsView'
 import { ParlayView } from './views/ParlayView'
@@ -47,7 +48,7 @@ import { StoriesView } from './views/StoriesView'
 import { TicketsView } from './views/TicketsView'
 
 type AnyRecord = Record<string, any>
-type DeskTabId = 'board' | 'parlay' | 'tickets' | 'models' | 'history' | 'stories'
+type DeskTabId = 'board' | 'batters' | 'parlay' | 'tickets' | 'models' | 'history' | 'stories'
 type SidebarTabId = 'ticket' | 'markets' | 'sources'
 
 const PARLAY_MIN_LEGS = 2
@@ -58,6 +59,7 @@ const MOBILE_DETAIL_HISTORY_TOKEN_KEY = '__slateMobileDetailToken'
 
 const deskTabs: Array<{ id: DeskTabId; label: string }> = [
   { id: 'board', label: 'Board' },
+  { id: 'batters', label: 'Batter' },
   { id: 'parlay', label: 'Parlay builder' },
   { id: 'tickets', label: 'Tickets' },
   { id: 'models', label: 'Models' },
@@ -3253,6 +3255,110 @@ function App() {
     const first5TotalRows: AnyRecord[] = []
     const first5TotalResearchRows: AnyRecord[] = []
 
+    const mlShapeRows = mlbGames
+      .map((game: AnyRecord) => {
+        const projection = game.analysis?.mlbProjection ?? {}
+        const publishedShape = projection.moneylineShape ?? null
+        const awayRuns = Number(projection.awayProjectedRuns)
+        const homeRuns = Number(projection.homeProjectedRuns)
+        const projectedTotal =
+          Number.isFinite(Number(publishedShape?.projectedTotalRuns))
+            ? Number(publishedShape.projectedTotalRuns)
+            : Number.isFinite(Number(projection.totals?.projectedFullTotalRuns))
+            ? Number(projection.totals.projectedFullTotalRuns)
+            : Number.isFinite(Number(projection.projectedFullTotalRuns))
+              ? Number(projection.projectedFullTotalRuns)
+              : awayRuns + homeRuns
+        const participant = game.analysis?.participant ?? null
+        const participantIndex = Number(participant?.index)
+        if (
+          !participant ||
+          ![awayRuns, homeRuns, projectedTotal, participantIndex].every(Number.isFinite) ||
+          projectedTotal <= 0 ||
+          ![0, 1].includes(participantIndex)
+        ) {
+          return null
+        }
+
+        const eventState = getEventState(game, activeDayIsoDate, pacificClock)
+        const pickRuns = Number.isFinite(Number(publishedShape?.pickProjectedRuns))
+          ? Number(publishedShape.pickProjectedRuns)
+          : participantIndex === 0 ? awayRuns : homeRuns
+        const opponentRuns = Number.isFinite(Number(publishedShape?.opponentProjectedRuns))
+          ? Number(publishedShape.opponentProjectedRuns)
+          : participantIndex === 0 ? homeRuns : awayRuns
+        const runDiff = Number.isFinite(Number(publishedShape?.runDiff))
+          ? Number(publishedShape.runDiff)
+          : pickRuns - opponentRuns
+        const absoluteRunDiff = Number.isFinite(Number(publishedShape?.absoluteRunDiff))
+          ? Number(publishedShape.absoluteRunDiff)
+          : Math.abs(runDiff)
+        const runDiffShare = Number.isFinite(Number(publishedShape?.runDiffSharePct))
+          ? Number(publishedShape.runDiffSharePct)
+          : (absoluteRunDiff / projectedTotal) * 100
+        const confidence = Number(publishedShape?.confidence ?? game.analysis?.confidence ?? 0) || 0
+        const marketPricePct = impliedPctFromParticipant(participant)
+        const shapeGrade = publishedShape?.grade ||
+          (runDiffShare >= 18 && absoluteRunDiff >= 1.4
+            ? 'Separated ML shape'
+            : runDiffShare >= 11 && absoluteRunDiff >= 0.8
+              ? 'Playable ML shape'
+              : 'Thin ML shape')
+        const first5Team = projection.first5EdgeTeam ? `F5 edge ${projection.first5EdgeTeam}` : null
+        const bridgeTeam = projection.bridgeEdgeTeam ? `Bridge ${projection.bridgeEdgeTeam}` : null
+        return {
+          id: `ml-shape:${game.id}:${participant.id}`,
+          category: 'ml-shape',
+          actionKind: 'ticket',
+          gameId: game.id,
+          league: game.league,
+          start: game.start,
+          startMinutes: Number(game.startMinutes) || 0,
+          stage: game.stage,
+          title: `${participant.name} ML shape`,
+          subtitle: game.title,
+          confidence,
+          sortConfidence: confidence,
+          sortEdge: runDiffShare,
+          priceLabel: `Proj ${formatNumber(pickRuns, 1)}-${formatNumber(opponentRuns, 1)} | diff ${formatSignedNumber(runDiff, 1)} of ${formatNumber(projectedTotal, 1)}`,
+          metaLabel: `${formatNumber(runDiffShare, 1)}% of total | ${participant.americanLabel || 'ML price N/A'}`,
+          summary: [
+            `${participant.name} projects ${formatSignedNumber(runDiff, 1)} runs better in a ${formatNumber(projectedTotal, 1)}-run environment.`,
+            first5Team,
+            bridgeTeam
+          ].filter(Boolean).join(' '),
+          tags: [
+            shapeGrade,
+            `${formatNumber(runDiffShare, 1)}% diff/total`,
+            `${confidence}% model`,
+            Number.isFinite(Number(marketPricePct)) ? `${formatNumber(Number(marketPricePct), 1)}% market` : null
+          ].filter(Boolean).slice(0, 4),
+          invalid: eventState.invalid,
+          statusLabel: eventState.label,
+          tone: eventState.tone,
+          selected: selectedPicks[game.id] === participant.id,
+          raw: {
+            game,
+            marketType: 'ML shape',
+            selection: participant.name,
+            participant,
+            projectedRuns: pickRuns,
+            opponentProjectedRuns: opponentRuns,
+            projectedTotalRuns: projectedTotal,
+            runDiff,
+            absoluteRunDiff,
+            runDiffShare,
+            valueGrade: shapeGrade,
+            price: participant.americanOdds ?? null,
+            marketPricePct,
+            confidence,
+            source: publishedShape?.source || 'analysis.mlbProjection'
+          }
+        }
+      })
+      .filter(Boolean)
+      .sort((left: AnyRecord, right: AnyRecord) => right.sortEdge - left.sortEdge || right.confidence - left.confidence)
+
     const sideRows = favoriteCatalogEntries
       .filter(
         (entry: AnyRecord) =>
@@ -3512,7 +3618,7 @@ function App() {
     const viableHomeRunRows = homeRunRows.filter((row: AnyRecord) => String(row.scoreBand || '') === 'viable')
     const postedHomeRunRows = homeRunRows.filter((row: AnyRecord) => row.lineupStatus === 'posted')
 
-    const topRows = [...tbBackedRows, ...strikeoutRows, ...first5MoneylineRows, ...first5TotalRows, ...totalRows, ...sideRows]
+    const topRows = [...tbBackedRows, ...strikeoutRows, ...first5MoneylineRows, ...first5TotalRows, ...totalRows, ...sideRows, ...mlShapeRows]
       .sort((left: AnyRecord, right: AnyRecord) => right.sortConfidence - left.sortConfidence || right.sortEdge - left.sortEdge)
       .slice(0, 12)
 
@@ -3521,6 +3627,7 @@ function App() {
       fullyPostedGames,
       partialGames,
       mappedKalshiGames: Object.keys(activeKalshiMlbMarketByGame).length,
+      mlShapeRows,
       sideRows,
       totalRows,
       first5MoneylineRows,
@@ -3547,8 +3654,8 @@ function App() {
       topRows,
         note:
           fullyPostedGames === mlbGames.length
-          ? 'MLB value center filters model-owned value rows only. UI-side first-five ML/O-U, totals EV, and scalp transforms are disabled until the cartridge publishes those lanes directly.'
-          : `MLB value center is live, but only ${fullyPostedGames}/${mlbGames.length} games are fully posted. It filters model-owned value rows only; UI-side transforms are disabled.`
+          ? 'MLB value center filters model-owned rows only. ML shape ranks the model pick by projected run difference as a share of the total run environment.'
+          : `MLB value center is live, but only ${fullyPostedGames}/${mlbGames.length} games are fully posted. ML shape ranks projected run difference as a share of total runs; UI-side first-five and totals EV transforms stay disabled.`
       }
   }, [
     activeDayId,
@@ -3558,6 +3665,7 @@ function App() {
     games,
     loadedGameDetailsByDay,
     propCatalogEntries,
+    selectedPicks,
     totalCatalogEntries
   ])
 
@@ -3634,11 +3742,143 @@ function App() {
     return null
   }, [])
 
+  const batterRows = useMemo(() => {
+    const detailByGame = loadedGameDetailsByDay[activeDayId] ?? {}
+    const rows: AnyRecord[] = []
+    const seen = new Set<string>()
+
+    games
+      .filter((game: AnyRecord) => game.league === 'MLB')
+      .forEach((game: AnyRecord) => {
+        const gameDetail = detailByGame[game.id] ?? game
+        const lineupBoard = gameDetail?.lineupBoard ?? null
+        if (!lineupBoard) return
+
+        ;(['away', 'home'] as const).forEach((sideKey) => {
+          const team = lineupBoard?.[sideKey] ?? {}
+          const opponentSide = sideKey === 'away' ? 'home' : 'away'
+          const opponentTeam = lineupBoard?.[opponentSide] ?? {}
+          const lineup = Array.isArray(team.lineup) ? team.lineup : []
+          const lineupStatus = lineupBoard?.status?.[sideKey] || 'partial'
+          const opposingStarter = team.opposingStarter ?? {}
+          const opposingHand =
+            opposingStarter.handedness || opposingStarter.throws || opposingStarter.hand || ''
+
+          lineup.forEach((player: AnyRecord) => {
+            const id = `${game.id}:${sideKey}:${player.playerId ?? player.name ?? player.slot}`
+            if (seen.has(id)) return
+            seen.add(id)
+
+            const metrics = player.metrics ?? {}
+            const statcastTrend = player.statcastTrend ?? {}
+            const seasonOps = Number(player.season?.ops)
+            const recentOps = Number(player.recent?.ops)
+            const splitOps = Number(player.split?.ops)
+            const careerOps = Number(player.careerProfile?.careerOps)
+            const opsInputs = [
+              Number.isFinite(recentOps) ? { value: recentOps, weight: 0.4 } : null,
+              Number.isFinite(splitOps) ? { value: splitOps, weight: 0.35 } : null,
+              Number.isFinite(seasonOps) ? { value: seasonOps, weight: 0.25 } : null,
+              ![recentOps, splitOps, seasonOps].some(Number.isFinite) && Number.isFinite(careerOps)
+                ? { value: careerOps, weight: 1 }
+                : null
+            ].filter(Boolean) as Array<{ value: number; weight: number }>
+            const totalOpsWeight = opsInputs.reduce((sum, item) => sum + item.weight, 0)
+            const weightedOps = totalOpsWeight
+              ? opsInputs.reduce((sum, item) => sum + item.value * item.weight, 0) / totalOpsWeight
+              : null
+            const matchupScore = Number(metrics.matchupScore)
+            const pitchFitScore = Number(metrics.pitchTypeFitScore)
+            const pitchFitGrade = Number(metrics.pitchTypeGrade)
+            const formScore = Number(metrics.formScore)
+            const slot = Number(player.slot)
+            const badOpsScore = weightedOps != null ? clamp(((0.78 - weightedOps) / 0.34) * 42, 0, 42) : 18
+            const badPitchFitScore = [
+              Number.isFinite(pitchFitScore) ? clamp(((58 - pitchFitScore) / 46) * 24, 0, 24) : 8,
+              Number.isFinite(pitchFitGrade) ? clamp((-pitchFitGrade / 10) * 10, 0, 10) : 0
+            ].reduce((sum, value) => sum + value, 0)
+            const badMatchupScore = Number.isFinite(matchupScore)
+              ? clamp(((60 - matchupScore) / 48) * 18, 0, 18)
+              : 6
+            const coldFormScore = Number.isFinite(formScore) ? clamp(((50 - formScore) / 40) * 14, 0, 14) : 4
+            const lowerOrderScore = Number.isFinite(slot) ? clamp((slot - 4) * 2.4, 0, 12) : 4
+            const underTargetScore = roundToTenths(
+              clamp(badOpsScore + badPitchFitScore + badMatchupScore + coldFormScore + lowerOrderScore, 0, 100)
+            )
+
+            rows.push({
+              id,
+              gameId: game.id,
+              gameTitle: game.title,
+              start: game.start,
+              startMinutes: Number(game.startMinutes) || 0,
+              stage: game.stage,
+              side: sideKey,
+              teamName: team.teamName || game.matchup?.[sideKey === 'away' ? 0 : 1]?.name || '',
+              opponentName: opponentTeam.teamName || game.matchup?.[sideKey === 'away' ? 1 : 0]?.name || '',
+              lineupStatus,
+              slot: Number.isFinite(slot) ? slot : null,
+              playerId: player.playerId ?? null,
+              playerName: player.name || 'Unknown batter',
+              position: player.position || '',
+              bats: player.bats || '',
+              opposingStarterName: opposingStarter.name || opposingStarter.fullName || 'Starter TBD',
+              opposingStarterHand: opposingHand,
+              seasonOps: Number.isFinite(seasonOps) ? seasonOps : null,
+              recentOps: Number.isFinite(recentOps) ? recentOps : null,
+              splitOps: Number.isFinite(splitOps) ? splitOps : null,
+              careerOps: Number.isFinite(careerOps) ? careerOps : null,
+              weightedOps,
+              avg: Number.isFinite(Number(player.season?.avg)) ? Number(player.season.avg) : null,
+              obp: Number.isFinite(Number(player.season?.obp)) ? Number(player.season.obp) : null,
+              slg: Number.isFinite(Number(player.season?.slg)) ? Number(player.season.slg) : null,
+              homeRuns: Number.isFinite(Number(player.season?.homeRuns)) ? Number(player.season.homeRuns) : null,
+              plateAppearances: Number.isFinite(Number(player.season?.plateAppearances))
+                ? Number(player.season.plateAppearances)
+                : null,
+              recentPlateAppearances: Number.isFinite(Number(player.recent?.plateAppearances))
+                ? Number(player.recent.plateAppearances)
+                : null,
+              matchupScore: Number.isFinite(matchupScore) ? matchupScore : null,
+              matchupGrade: Number.isFinite(Number(metrics.matchupGrade)) ? Number(metrics.matchupGrade) : null,
+              pitchFitScore: Number.isFinite(pitchFitScore) ? pitchFitScore : null,
+              pitchFitGrade: Number.isFinite(pitchFitGrade) ? pitchFitGrade : null,
+              pitchFitSummary: player.pitchType?.summary || '',
+              formScore: Number.isFinite(formScore) ? formScore : null,
+              powerScore: Number.isFinite(Number(metrics.powerScore)) ? Number(metrics.powerScore) : null,
+              contactScore: Number.isFinite(Number(metrics.contactScore)) ? Number(metrics.contactScore) : null,
+              rolling7Xwoba: Number.isFinite(Number(statcastTrend.rolling7Xwoba))
+                ? Number(statcastTrend.rolling7Xwoba)
+                : null,
+              rolling7HardHitPct: Number.isFinite(Number(statcastTrend.rolling7HardHitPct))
+                ? Number(statcastTrend.rolling7HardHitPct)
+                : null,
+              rolling7BarrelPct: Number.isFinite(Number(statcastTrend.rolling7BarrelPct))
+                ? Number(statcastTrend.rolling7BarrelPct)
+                : null,
+              trendSignal: statcastTrend.trendSignal || '',
+              primaryTag: player.primaryTag || '',
+              underTargetScore,
+              underTargetReason: [
+                weightedOps != null ? `weighted OPS ${formatSlashMetric(weightedOps)}` : 'OPS sample thin',
+                Number.isFinite(pitchFitScore) ? `pitch fit ${formatNumber(pitchFitScore, 0)}` : null,
+                Number.isFinite(matchupScore) ? `matchup ${formatNumber(matchupScore, 0)}` : null,
+                Number.isFinite(slot) ? `slot ${slot}` : null
+              ].filter(Boolean).join(' | '),
+              savantUrl: player.savant?.playerUrl || player.savant?.statsUrls?.statcast || ''
+            })
+          })
+        })
+      })
+
+    return rows
+  }, [activeDayId, games, loadedGameDetailsByDay])
+
   const availableValueScopes = useMemo(() => {
     const scopes: Array<{ id: string; label: string }> = [{ id: 'all', label: 'All' }]
 
     if (tennisValueSummary) scopes.push({ id: 'tennis', label: 'Tennis' })
-    if (mlbValueSummary && (mlbValueSummary.sideRows.length || mlbValueSummary.totalRows.length)) {
+    if (mlbValueSummary && (mlbValueSummary.mlShapeRows?.length || mlbValueSummary.sideRows.length || mlbValueSummary.totalRows.length)) {
       scopes.push({ id: 'mlb-overview', label: 'Overview' })
     }
     if (
@@ -3750,6 +3990,42 @@ function App() {
     loadingGameDetailsByDay,
     mlbValueSummary?.homeRunRows
   ])
+
+  useEffect(() => {
+    if (activeDeskTab !== 'batters') return
+
+    const mlbGameIds = games
+      .filter((game: AnyRecord) => game.league === 'MLB')
+      .map((game: AnyRecord) => String(game.id))
+      .filter(Boolean)
+
+    mlbGameIds.forEach((gameId) => {
+      if (loadedGameDetailsByDay[activeDayId]?.[gameId]) return
+      if (loadingGameDetailsByDay[activeDayId]?.[gameId]) return
+
+      setLoadingGameDetailsByDay((current) => ({
+        ...current,
+        [activeDayId]: { ...(current[activeDayId] || {}), [gameId]: true }
+      }))
+
+      loadSlateGameDetailData(activeDayId, gameId)
+        .then((gameDetail) => {
+          setLoadedGameDetailsByDay((current) => ({
+            ...current,
+            [activeDayId]: { ...(current[activeDayId] || {}), [gameId]: gameDetail as AnyRecord }
+          }))
+        })
+        .catch((error) => {
+          console.error(`Failed to preload batter detail ${activeDayId}/${gameId}`, error)
+        })
+        .finally(() => {
+          setLoadingGameDetailsByDay((current) => ({
+            ...current,
+            [activeDayId]: { ...(current[activeDayId] || {}), [gameId]: false }
+          }))
+        })
+    })
+  }, [activeDayId, activeDeskTab, games, loadedGameDetailsByDay, loadingGameDetailsByDay])
 
   const parlayLegs = useMemo(() => {
     return Object.entries(selectedPicks)
@@ -4374,6 +4650,16 @@ function App() {
           isMobileDetailOpen={isMobileBoardDetailOpen}
           openMobileDetailForGame={openMobileBoardDetail}
           setIsMobileDetailOpen={setIsMobileBoardDetailOpen}
+        />
+      ) : null}
+      {activeDeskTab === 'batters' ? (
+        <BatterView
+          activeDayId={activeDayId}
+          batterRows={batterRows}
+          formatNumber={formatNumber}
+          openGame={openGame}
+          slateMeta={slateMeta}
+          totalMlbGames={games.filter((game: AnyRecord) => game.league === 'MLB').length}
         />
       ) : null}
       {activeDeskTab === 'parlay' ? (

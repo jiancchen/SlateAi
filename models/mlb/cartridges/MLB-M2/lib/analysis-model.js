@@ -31,6 +31,55 @@ const structuredRecommendationWeight = {
 
 const MLB_SIDE_MODEL_DESIGNATION = 'MLB-M2-game-shape-v0.1'
 
+const buildMlbMoneylineShape = ({ mlbProjection, participants, winnerIndex, confidence, marketProbabilities }) => {
+  if (!mlbProjection || participants.length !== 2 || ![0, 1].includes(winnerIndex)) return null
+  const awayProjectedRuns = Number(mlbProjection.awayProjectedRuns)
+  const homeProjectedRuns = Number(mlbProjection.homeProjectedRuns)
+  const projectedTotalRuns =
+    Number.isFinite(Number(mlbProjection.totals?.projectedFullTotalRuns))
+      ? Number(mlbProjection.totals.projectedFullTotalRuns)
+      : Number.isFinite(Number(mlbProjection.projectedFullTotalRuns))
+        ? Number(mlbProjection.projectedFullTotalRuns)
+        : awayProjectedRuns + homeProjectedRuns
+
+  if (![awayProjectedRuns, homeProjectedRuns, projectedTotalRuns].every(Number.isFinite) || projectedTotalRuns <= 0) {
+    return null
+  }
+
+  const participant = participants[winnerIndex]
+  const opponent = participants[winnerIndex === 0 ? 1 : 0]
+  const pickProjectedRuns = winnerIndex === 0 ? awayProjectedRuns : homeProjectedRuns
+  const opponentProjectedRuns = winnerIndex === 0 ? homeProjectedRuns : awayProjectedRuns
+  const runDiff = pickProjectedRuns - opponentProjectedRuns
+  const absoluteRunDiff = Math.abs(runDiff)
+  const runDiffSharePct = (absoluteRunDiff / projectedTotalRuns) * 100
+  const grade =
+    runDiffSharePct >= 18 && absoluteRunDiff >= 1.4
+      ? 'Separated ML shape'
+      : runDiffSharePct >= 11 && absoluteRunDiff >= 0.8
+        ? 'Playable ML shape'
+        : 'Thin ML shape'
+
+  return {
+    marketType: 'ML shape',
+    selection: participant.name,
+    opponent: opponent.name,
+    pickProjectedRuns: roundToTenths(pickProjectedRuns),
+    opponentProjectedRuns: roundToTenths(opponentProjectedRuns),
+    projectedTotalRuns: roundToTenths(projectedTotalRuns),
+    runDiff: roundToTenths(runDiff),
+    absoluteRunDiff: roundToTenths(absoluteRunDiff),
+    runDiffSharePct: roundToTenths(runDiffSharePct),
+    confidence,
+    marketProbabilityPct: Number.isFinite(marketProbabilities?.[winnerIndex])
+      ? roundToTenths(marketProbabilities[winnerIndex] * 100)
+      : null,
+    grade,
+    source: 'MLB-M2 mlbProjection',
+    note: `${participant.name} projects ${roundToTenths(runDiff)} runs better in a ${roundToTenths(projectedTotalRuns)}-run environment.`
+  }
+}
+
 const buildFallbackAnalysisModel = (game, participants, hasFullMoneyline) => {
   const providedAnalysis = game.analysis ?? {}
   const participant = findAnalysisParticipant(game.lean, participants)
@@ -403,6 +452,16 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           pickIsMarketUnderdog
         })
       : null
+  const moneylineShape =
+    game.league === 'MLB'
+      ? buildMlbMoneylineShape({
+          mlbProjection: context.mlbProjection,
+          participants,
+          winnerIndex,
+          confidence: finalConfidence,
+          marketProbabilities
+        })
+      : null
 
   return {
     available: Boolean(hasFullMoneyline && participant && Number.isFinite(participant.americanOdds)),
@@ -547,6 +606,7 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
     mlbProjection: context.mlbProjection
       ? {
           ...context.mlbProjection,
+          moneylineShape,
           gameShape
         }
       : null

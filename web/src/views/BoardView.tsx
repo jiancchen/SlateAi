@@ -379,11 +379,12 @@ export function BoardView(props: BoardViewProps) {
     if (!mlbValueSummary) return []
     const maxRows = Math.min(10, Number(mlbValueSummary.totalGames || 0))
     const rankedRows = [
+      ...(mlbValueSummary.mlShapeRows || []),
       ...(mlbValueSummary.sideRows || []),
       ...(mlbValueSummary.totalRows || []),
       ...(mlbValueSummary.first5MoneylineRows || [])
     ]
-      .sort((left: AnyRecord, right: AnyRecord) => right.confidence - left.confidence || right.sortEdge - left.sortEdge)
+      .sort((left: AnyRecord, right: AnyRecord) => right.sortEdge - left.sortEdge || right.confidence - left.confidence)
     const rowsByGame = new Map<string, AnyRecord>()
     rankedRows.forEach((row: AnyRecord) => {
       const gameId = String(row.gameId || '')
@@ -639,6 +640,7 @@ export function BoardView(props: BoardViewProps) {
                     <p>{mlbValueSummary.note}</p>
                     <div className="tennis-value-pill-row">
                       <span>Side {mlbValueSummary.sideRows.length}</span>
+                      <span>ML shape {mlbValueSummary.mlShapeRows?.length || 0}</span>
                       <span>Totals {mlbValueSummary.totalRows.length}</span>
                       <span>F5 ML {mlbValueSummary.first5MoneylineRows?.length || 0}</span>
                       <span>F5 O/U {mlbValueSummary.first5TotalRows?.length || 0}</span>
@@ -651,12 +653,13 @@ export function BoardView(props: BoardViewProps) {
                       <span>Posted {mlbValueSummary.fullyPostedGames}</span>
                       <span>Partial {mlbValueSummary.partialGames}</span>
                     </div>
-                    {mlbValueSummary.sideRows.length ||
+                    {mlbValueSummary.mlShapeRows?.length ||
+                    mlbValueSummary.sideRows.length ||
                     mlbValueSummary.totalRows.length ||
                     mlbValueSummary.first5MoneylineRows?.length ||
                     mlbValueSummary.first5TotalRows?.length ? (
                       <div className="tennis-value-list">
-                        <div className="tennis-value-section-label">Side + totals + 1st 5 board</div>
+                        <div className="tennis-value-section-label">ML shape + side + totals + 1st 5 board</div>
                         {mlbOverviewBoardRows.map((row: AnyRecord) => (
                             <button
                               key={`${row.id}-mlb-value`}

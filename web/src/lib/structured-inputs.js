@@ -1,1 +1,1 @@
-export { structuredInputOverrides } from '../../../models/shared/sports-core/structured-inputs.js'
+export const structuredInputOverrides = {}

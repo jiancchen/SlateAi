@@ -61,14 +61,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 1,
       "losses": 3,
-      "era": "3.60",
-      "strikeOuts": 27,
-      "inningsPitched": "30.0",
-      "hitsAllowed": 27,
+      "era": "3.56",
+      "strikeOuts": 28,
+      "inningsPitched": "30.1",
+      "hitsAllowed": 29,
       "walks": 15,
       "homeRunsAllowed": 4,
-      "whip": "1.40",
-      "gamesStarted": 6,
+      "whip": "1.45",
+      "gamesStarted": 7,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 643377,
@@ -234,9 +234,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -140 / -1.5 +135",
-    "total": "o8 -110 / u8 -105",
-    "moneyline": "Tigers +135 / Rays -155",
+    "spread": "+1.5 -175 / -1.5 +160",
+    "total": "o8 -115 / u8.5 -115",
+    "moneyline": "Tigers +115 / Rays -135",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/tigers-vs-rays",
     "metadata": {
@@ -2951,8 +2951,8 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -170 / -1.5 +146",
-    "total": "o8 -118 / u8.5 -115",
+    "spread": "+1.5 -165 / -1.5 +145",
+    "total": "o8 -118 / u8.5 -120",
     "moneyline": "Marlins +123 / Nationals -138",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/marlins-vs-nationals",
@@ -5902,8 +5902,8 @@ export const rawGames = [
         "workloadLabel": "Unknown leash"
       }
     },
-    "spread": "+1.5 -170 / -1.5 +152",
-    "total": "o9.5 -105 / u9.5 -114",
+    "spread": "+1.5 -170 / -1.5 +155",
+    "total": "o9 -122 / u9.5 -114",
     "moneyline": "Royals +112 / Reds -126",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/royals-vs-reds",
@@ -8463,9 +8463,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -180 / -1.5 +150",
-    "total": "o7.5 +105 / u7.5 -120",
-    "moneyline": "Giants +128 / Brewers -145",
+    "spread": "+1.5 -164 / -1.5 +150",
+    "total": "o7 -125 / u7.5 -120",
+    "moneyline": "Giants +135 / Brewers -150",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/giants-vs-brewers",
     "metadata": {
@@ -11091,9 +11091,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -168 / -1.5 +150",
-    "total": "o8 -105 / u8 -114",
-    "moneyline": "White Sox +122 / Twins -140",
+    "spread": "+1.5 -168 / -1.5 +145",
+    "total": "o7.5 -120 / u8 -114",
+    "moneyline": "White Sox +123 / Twins -140",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/white-sox-vs-twins",
     "metadata": {
@@ -14487,8 +14487,8 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +140 / +1.5 -155",
-    "total": "o7.5 -105 / u7.5 -110",
+    "spread": "-1.5 +142 / +1.5 -155",
+    "total": "o7.5 even / u7.5 -120",
     "moneyline": "Rangers -125 / Cardinals +110",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rangers-vs-cardinals",
@@ -17179,9 +17179,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -125 / -1.5 +106",
-    "total": "o8 -115 / u8 -105",
-    "moneyline": "Rockies +165 / Angels -195",
+    "spread": "+1.5 -120 / -1.5 +112",
+    "total": "o8 -114 / u8 -105",
+    "moneyline": "Rockies +165 / Angels -200",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rockies-vs-angels",
     "metadata": {
@@ -19916,9 +19916,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "-1.5 +102 / +1.5 -120",
-    "total": "o8.5 -115 / u8.5 even",
-    "moneyline": "Dodgers -160 / Diamondbacks +140",
+    "spread": "-1.5 +104 / +1.5 -118",
+    "total": "o8.5 -115 / u9.5 -150",
+    "moneyline": "Dodgers -162 / Diamondbacks +140",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/dodgers-vs-diamondbacks",
     "metadata": {
@@ -22967,9 +22967,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -200 / -1.5 +172",
-    "total": "o7 -120 / u7.5 -125",
-    "moneyline": "Mets +112 / Mariners -130",
+    "spread": "+1.5 -195 / -1.5 +172",
+    "total": "o7 -120 / u7 +105",
+    "moneyline": "Mets +110 / Mariners -130",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/mets-vs-mariners",
     "metadata": {

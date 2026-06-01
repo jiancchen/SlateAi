@@ -1,1 +1,1 @@
-export { mlbPropCalibration } from '../../../models/mlb/app-model.js'
+export const mlbPropCalibration = {}

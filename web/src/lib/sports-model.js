@@ -1,1 +1,1 @@
-export * from '../../../models/shared/sports-core/app-sports-model.js'
+export * from './app-sports-model.js'

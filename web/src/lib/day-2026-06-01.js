@@ -1,4 +1,4 @@
-import { createSportsMatchModel } from '../../../models/shared/sports-core/app-sports-model.js'
+import { createSportsMatchModel } from './sports-model.js'
 import tennisClayContext from './day-2026-06-01-tennis-clay-context.generated.json' with { type: 'json' }
 import tennisOpponentQualityContext from './day-2026-06-01-tennis-opponent-quality.generated.json' with { type: 'json' }
 import tennisWarehouseContext from './day-2026-06-01-tennis-warehouse-context.generated.json' with { type: 'json' }

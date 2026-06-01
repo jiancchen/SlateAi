@@ -31,7 +31,13 @@ await ensureFile(
 
 await ensureFile(
   path.join(webLibDir, 'mlb-prop-calibration.generated.js'),
-  "export { mlbPropCalibration } from '../../../models/mlb/app-model.js'\n"
+  `export const mlbPropCalibration = {
+  overallByType: {},
+  byTeamAndType: {},
+  byReasonTagAndType: {},
+  byScriptTagAndType: {},
+  byStoryTagAndType: {}
+}\n`
 )
 
 await ensureFile(
