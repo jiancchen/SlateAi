@@ -1,6 +1,6 @@
 # MLB-M2 Build Run Plan
 
-Status: Phase 0 started
+Status: Phase 3 in progress
 Owner model: MLB-M2
 Created: 2026-06-01
 
@@ -51,7 +51,7 @@ Do not claim a clean M2 improvement if May 31 outcomes were used for training, f
 | 0 | Freeze Baseline | In progress | Locked benchmark + reproducible baseline commands |
 | 1 | Core Contracts | In progress | Component docs and output contracts |
 | 2 | Warehouse Tables | In progress | New derived tables and migrations |
-| 3 | Formula Derivation | Pending | Phase state rows and formula outputs |
+| 3 | Formula Derivation | In progress | Phase state rows and formula outputs |
 | 4 | Player Identity Curves | Designed | Player priors, deviation, and distribution rows |
 | 5 | Pitcher-Batter Kernel | Designed | Pitch-mix matchup rows |
 | 6 | Backtest Harness | Pending | Bucketed accuracy/ROI/story reports |
@@ -144,7 +144,7 @@ New tables:
 Checklist:
 
 - [x] Add migration/schema definitions.
-- [ ] Add derive command for state formula rows.
+- [x] Add derive command for state formula rows.
 - [ ] Add derive command for player identity curves.
 - [ ] Add derive command for pitch-mix matchup rows.
 - [ ] Add health checks for table freshness and coverage.
@@ -181,15 +181,33 @@ Formula families:
 
 Checklist:
 
-- [ ] Materialize phase state rows.
-- [ ] Materialize formula driver rows.
-- [ ] Emit story distribution: dead, normal, crooked, fork.
-- [ ] Emit market expression: side, F5, full total, F5 total, team total, live-only, pass.
+- [x] Materialize phase state rows.
+- [x] Materialize formula driver rows.
+- [x] Emit story distribution: dead, normal, crooked, fork.
+- [x] Emit market expression: side, F5, full total, F5 total, team total, live-only, pass.
+- [x] Add first research report for row coverage and starter-window F5 direction.
 - [ ] Backtest formula story buckets by date and line bucket.
 
 Exit criteria:
 
 - Expected runs become downstream of story distribution, not the first decision.
+
+Current artifacts:
+
+- `models/mlb/cartridges/MLB-M2/research/state_formula_rows_report.py`
+- `models/mlb/cartridges/MLB-M2/reports/state-formula-rows-report-2026-05-23-to-2026-05-31.md`
+- `data-private/reports/mlb-m2-state-formula-rows-report-2026-05-23-to-2026-05-31.json`
+
+Current read:
+
+- Warehouse rows loaded through May 31: 7,120.
+- Report range May 23-May 31: 1,000 rows across 125 games.
+- Story distribution: 693 normal, 176 dead, 102 crooked, 29 fork.
+- Starter-window F5 direction check: 47.5% on 40 graded rows.
+
+Important:
+
+This is a research substrate, not a promoted betting lane. The first formula labels are inspectable and warehouse-backed, but the naive story/F5 checks are too weak to reach the value board.
 
 ## Phase 4: Player Identity Curves
 

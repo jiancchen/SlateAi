@@ -1,0 +1,293 @@
+{
+  "coverage": {
+    "dates": [
+      "2026-05-23",
+      "2026-05-24",
+      "2026-05-25",
+      "2026-05-26",
+      "2026-05-27",
+      "2026-05-28",
+      "2026-05-29",
+      "2026-05-30",
+      "2026-05-31"
+    ],
+    "games": 125,
+    "rows": 1000
+  },
+  "experiment": "state_formula_rows_report",
+  "f5Check": {
+    "byDate": [
+      {
+        "date": "2026-05-23",
+        "hitRate": 0.6,
+        "rows": 5
+      },
+      {
+        "date": "2026-05-24",
+        "hitRate": 0.0,
+        "rows": 4
+      },
+      {
+        "date": "2026-05-25",
+        "hitRate": 1.0,
+        "rows": 3
+      },
+      {
+        "date": "2026-05-26",
+        "hitRate": 0.5,
+        "rows": 4
+      },
+      {
+        "date": "2026-05-27",
+        "hitRate": 0.4,
+        "rows": 5
+      },
+      {
+        "date": "2026-05-28",
+        "hitRate": 1.0,
+        "rows": 1
+      },
+      {
+        "date": "2026-05-29",
+        "hitRate": 0.4,
+        "rows": 5
+      },
+      {
+        "date": "2026-05-30",
+        "hitRate": 0.333,
+        "rows": 6
+      },
+      {
+        "date": "2026-05-31",
+        "hitRate": 0.571,
+        "rows": 7
+      }
+    ],
+    "examples": [
+      {
+        "actual": "over",
+        "date": "2026-05-30",
+        "gameFirst5Total": 9,
+        "gamePk": 822975,
+        "hit": true,
+        "prediction": "over",
+        "stories": [
+          "crooked",
+          "normal"
+        ]
+      },
+      {
+        "actual": "under",
+        "date": "2026-05-30",
+        "gameFirst5Total": 3,
+        "gamePk": 823945,
+        "hit": false,
+        "prediction": "over",
+        "stories": [
+          "dead",
+          "crooked"
+        ]
+      },
+      {
+        "actual": "over",
+        "date": "2026-05-30",
+        "gameFirst5Total": 8,
+        "gamePk": 824190,
+        "hit": true,
+        "prediction": "over",
+        "stories": [
+          "normal",
+          "crooked"
+        ]
+      },
+      {
+        "actual": "under",
+        "date": "2026-05-30",
+        "gameFirst5Total": 3,
+        "gamePk": 824593,
+        "hit": false,
+        "prediction": "over",
+        "stories": [
+          "dead",
+          "crooked"
+        ]
+      },
+      {
+        "actual": "under",
+        "date": "2026-05-30",
+        "gameFirst5Total": 3,
+        "gamePk": 824833,
+        "hit": false,
+        "prediction": "over",
+        "stories": [
+          "normal",
+          "crooked"
+        ]
+      },
+      {
+        "actual": "over",
+        "date": "2026-05-31",
+        "gameFirst5Total": 6,
+        "gamePk": 822895,
+        "hit": true,
+        "prediction": "over",
+        "stories": [
+          "normal",
+          "crooked"
+        ]
+      },
+      {
+        "actual": "under",
+        "date": "2026-05-31",
+        "gameFirst5Total": 1,
+        "gamePk": 823133,
+        "hit": false,
+        "prediction": "over",
+        "stories": [
+          "crooked",
+          "crooked"
+        ]
+      },
+      {
+        "actual": "over",
+        "date": "2026-05-31",
+        "gameFirst5Total": 9,
+        "gamePk": 823373,
+        "hit": true,
+        "prediction": "over",
+        "stories": [
+          "normal",
+          "crooked"
+        ]
+      },
+      {
+        "actual": "over",
+        "date": "2026-05-31",
+        "gameFirst5Total": 6,
+        "gamePk": 823944,
+        "hit": true,
+        "prediction": "over",
+        "stories": [
+          "dead",
+          "crooked"
+        ]
+      },
+      {
+        "actual": "under",
+        "date": "2026-05-31",
+        "gameFirst5Total": 2,
+        "gamePk": 824187,
+        "hit": false,
+        "prediction": "over",
+        "stories": [
+          "normal",
+          "crooked"
+        ]
+      },
+      {
+        "actual": "under",
+        "date": "2026-05-31",
+        "gameFirst5Total": 1,
+        "gamePk": 824592,
+        "hit": false,
+        "prediction": "over",
+        "stories": [
+          "dead",
+          "crooked"
+        ]
+      },
+      {
+        "actual": "over",
+        "date": "2026-05-31",
+        "gameFirst5Total": 16,
+        "gamePk": 825001,
+        "hit": true,
+        "prediction": "over",
+        "stories": [
+          "crooked",
+          "dead"
+        ]
+      }
+    ],
+    "hitRate": 0.475,
+    "rows": 40
+  },
+  "modelId": "MLB-M2",
+  "range": {
+    "end": "2026-05-31",
+    "start": "2026-05-23"
+  },
+  "schemaVersion": 1,
+  "summary": {
+    "byDate": {
+      "2026-05-23": {
+        "games": 15,
+        "rows": 120
+      },
+      "2026-05-24": {
+        "games": 16,
+        "rows": 128
+      },
+      "2026-05-25": {
+        "games": 13,
+        "rows": 104
+      },
+      "2026-05-26": {
+        "games": 15,
+        "rows": 120
+      },
+      "2026-05-27": {
+        "games": 15,
+        "rows": 120
+      },
+      "2026-05-28": {
+        "games": 6,
+        "rows": 48
+      },
+      "2026-05-29": {
+        "games": 15,
+        "rows": 120
+      },
+      "2026-05-30": {
+        "games": 15,
+        "rows": 120
+      },
+      "2026-05-31": {
+        "games": 15,
+        "rows": 120
+      }
+    },
+    "marketExpressions": {
+      "first-five over": 63,
+      "first-five under": 174,
+      "full-game over": 39,
+      "live-only": 29,
+      "live/full under watch": 2,
+      "pass": 693
+    },
+    "phaseStoryBuckets": {
+      "bridge:crooked": 25,
+      "bridge:dead": 2,
+      "bridge:fork": 12,
+      "bridge:normal": 211,
+      "firstCycle:crooked": 13,
+      "firstCycle:dead": 117,
+      "firstCycle:normal": 120,
+      "late:crooked": 14,
+      "late:fork": 13,
+      "late:normal": 223,
+      "starterWindow:crooked": 50,
+      "starterWindow:dead": 57,
+      "starterWindow:fork": 4,
+      "starterWindow:normal": 139
+    },
+    "rowStoryHitRate": 0.279,
+    "rowStoryRows": 971,
+    "storyBuckets": {
+      "crooked": 102,
+      "dead": 176,
+      "fork": 29,
+      "normal": 693
+    }
+  }
+}

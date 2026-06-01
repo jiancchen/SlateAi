@@ -12193,6 +12193,489 @@ def print_probable_starters(rows: list[dict[str, Any]]) -> None:
         )
 
 
+M2_STATE_FORMULA_PHASES = ("firstCycle", "starterWindow", "bridge", "late")
+
+
+def row_dict(row: sqlite3.Row | None) -> dict[str, Any]:
+    return dict(row) if row else {}
+
+
+def row_float(row: dict[str, Any] | sqlite3.Row | None, key: str, default: float = 0.0) -> float:
+    if not row:
+        return default
+    value = to_float(row[key] if isinstance(row, sqlite3.Row) else row.get(key))
+    return default if value is None else value
+
+
+def latest_profile_row(
+    conn: sqlite3.Connection,
+    table_name: str,
+    as_of_date: str,
+    where_clause: str,
+    params: tuple[Any, ...],
+    order_clause: str,
+) -> dict[str, Any]:
+    row = conn.execute(
+        f"""
+        SELECT *
+        FROM {table_name}
+        WHERE as_of_date = ?
+          AND {where_clause}
+        ORDER BY {order_clause}
+        LIMIT 1
+        """,
+        (as_of_date, *params),
+    ).fetchone()
+    return row_dict(row)
+
+
+def m2_phase_multiplier(phase: str, key: str) -> float:
+    multipliers = {
+        "firstCycle": {
+            "traffic": 0.9,
+            "damage": 0.85,
+            "conversion": 0.95,
+            "collapse": 1.15,
+            "suppression": 1.08,
+            "bridge": 0.15,
+        },
+        "starterWindow": {
+            "traffic": 1.0,
+            "damage": 1.0,
+            "conversion": 1.0,
+            "collapse": 1.0,
+            "suppression": 1.0,
+            "bridge": 0.35,
+        },
+        "bridge": {
+            "traffic": 0.9,
+            "damage": 0.95,
+            "conversion": 0.95,
+            "collapse": 0.45,
+            "suppression": 0.75,
+            "bridge": 1.2,
+        },
+        "late": {
+            "traffic": 0.85,
+            "damage": 0.9,
+            "conversion": 0.9,
+            "collapse": 0.3,
+            "suppression": 0.65,
+            "bridge": 1.0,
+        },
+    }
+    return multipliers.get(phase, {}).get(key, 1.0)
+
+
+def classify_m2_state_story(
+    traffic_pressure: float,
+    damage_pressure: float,
+    conversion_pressure: float,
+    collapse_hazard: float,
+    suppression_state: float,
+    fork_probability: float,
+) -> str:
+    if suppression_state >= 58 and conversion_pressure < 44 and damage_pressure < 60:
+        return "dead"
+    if collapse_hazard >= 76 or (damage_pressure >= 68 and conversion_pressure >= 55) or (
+        damage_pressure >= 62 and conversion_pressure >= 65
+    ):
+        return "crooked"
+    if fork_probability >= 35 and conversion_pressure < 52:
+        return "fork"
+    return "normal"
+
+
+def market_expression_for_state_formula(phase: str, story_bucket: str) -> str:
+    if story_bucket == "crooked":
+        return "first-five over" if phase in {"firstCycle", "starterWindow"} else "full-game over"
+    if story_bucket == "dead":
+        return "first-five under" if phase in {"firstCycle", "starterWindow"} else "live/full under watch"
+    if story_bucket == "fork":
+        return "live-only"
+    return "pass"
+
+
+def actual_phase_targets_for_team(
+    outcome: dict[str, Any],
+    team_role: str,
+    phase: str,
+) -> dict[str, Any]:
+    prefix = "away" if team_role == "away" else "home"
+    opp_prefix = "home" if team_role == "away" else "away"
+    team_f5 = to_int(outcome.get(f"{prefix}_runs_first5")) or 0
+    opp_f5 = to_int(outcome.get(f"{opp_prefix}_runs_first5")) or 0
+    team_final = to_int(outcome.get(f"{prefix}_runs_final")) or 0
+    opp_final = to_int(outcome.get(f"{opp_prefix}_runs_final")) or 0
+    team_late = max(0, team_final - team_f5)
+    opp_late = max(0, opp_final - opp_f5)
+    if phase in {"firstCycle", "starterWindow"}:
+        team_runs = team_f5
+        opp_runs = opp_f5
+    else:
+        team_runs = team_late
+        opp_runs = opp_late
+    return {
+        "teamRuns": team_runs,
+        "opponentRuns": opp_runs,
+        "teamRunsFirst5": team_f5,
+        "opponentRunsFirst5": opp_f5,
+        "teamRunsFinal": team_final,
+        "opponentRunsFinal": opp_final,
+        "teamFirst5Over4": 1 if team_f5 >= 5 else 0,
+        "gameFirst5Total": (to_int(outcome.get("total_runs_first5")) or 0),
+        "gameFinalTotal": (to_int(outcome.get("total_runs_final")) or 0),
+    }
+
+
+def build_m2_state_formula_row(
+    conn: sqlite3.Connection,
+    snapshot_date: str,
+    game_row: sqlite3.Row,
+    outcome_row: sqlite3.Row | None,
+    team_role: str,
+    phase: str,
+    created_at: str,
+) -> dict[str, Any]:
+    game = dict(game_row)
+    outcome = dict(outcome_row) if outcome_row else {}
+    team_name = game["away_team"] if team_role == "away" else game["home_team"]
+    opponent_team = game["home_team"] if team_role == "away" else game["away_team"]
+    opponent_role = "home" if team_role == "away" else "away"
+
+    starter_row = conn.execute(
+        """
+        SELECT *
+        FROM mlb_starting_pitchers
+        WHERE game_pk = ?
+          AND team_role = ?
+        LIMIT 1
+        """,
+        (game["game_pk"], opponent_role),
+    ).fetchone()
+    opponent_pitcher_id = to_int(starter_row["pitcher_id"]) if starter_row else None
+
+    team_mistake = latest_profile_row(
+        conn,
+        "mlb_team_mistake_shape_daily",
+        snapshot_date,
+        "team_name = ?",
+        (team_name,),
+        "window_games ASC",
+    )
+    lineup_conversion = latest_profile_row(
+        conn,
+        "mlb_lineup_conversion_shape_daily",
+        snapshot_date,
+        "team_name = ?",
+        (team_name,),
+        "window_games ASC",
+    )
+    team_state = latest_profile_row(
+        conn,
+        "mlb_team_state_snapshots",
+        snapshot_date,
+        "team_name = ?",
+        (team_name,),
+        "team_name ASC",
+    )
+    first_inning = latest_profile_row(
+        conn,
+        "mlb_team_first_inning_profiles_daily",
+        snapshot_date,
+        "team_name = ?",
+        (team_name,),
+        "window_games ASC",
+    )
+    opponent_bullpen = latest_profile_row(
+        conn,
+        "mlb_bullpen_mistake_shape_daily",
+        snapshot_date,
+        "team_name = ?",
+        (opponent_team,),
+        "window_days ASC",
+    )
+    opponent_pitcher = (
+        latest_profile_row(
+            conn,
+            "mlb_pitcher_mistake_shape_daily",
+            snapshot_date,
+            "pitcher_id = ?",
+            (opponent_pitcher_id,),
+            "window_starts DESC",
+        )
+        if opponent_pitcher_id is not None
+        else {}
+    )
+    opponent_pitcher_first = (
+        latest_profile_row(
+            conn,
+            "mlb_pitcher_first_inning_profiles_daily",
+            snapshot_date,
+            "pitcher_id = ?",
+            (opponent_pitcher_id,),
+            "window_starts DESC",
+        )
+        if opponent_pitcher_id is not None
+        else {}
+    )
+    sun_row = row_dict(
+        conn.execute(
+            """
+            SELECT *
+            FROM mlb_game_sun_visibility_snapshots
+            WHERE game_pk = ?
+            LIMIT 1
+            """,
+            (game["game_pk"],),
+        ).fetchone()
+    )
+
+    base_traffic = clamp_value(
+        18
+        + row_float(lineup_conversion, "baserunners_per_game") * 3.4
+        + row_float(team_mistake, "traffic_game_rate") * 22
+        + row_float(first_inning, "scored_first_inning_rate") * 10
+        + row_float(team_state, "form_pressure_index") * 0.12,
+        0,
+        100,
+    )
+    base_damage = clamp_value(
+        16
+        + row_float(team_mistake, "high_scoring_game_rate") * 26
+        + row_float(team_mistake, "one_big_inning_rate") * 30
+        + row_float(team_mistake, "run_clustering_index") * 0.34
+        + row_float(opponent_pitcher, "home_run_start_rate") * 14
+        + row_float(sun_row, "visibility_risk_score") * 0.08,
+        0,
+        100,
+    )
+    base_conversion = clamp_value(
+        18
+        + row_float(lineup_conversion, "lineup_conversion_index") * 0.62
+        + row_float(lineup_conversion, "runs_per_baserunner") * 46
+        + row_float(lineup_conversion, "early_conversion_rate") * 18
+        - row_float(lineup_conversion, "stranded_traffic_rate") * 18
+        - row_float(team_mistake, "traffic_no_conversion_rate") * 14,
+        0,
+        100,
+    )
+    bridge_leak = clamp_value(
+        row_float(opponent_bullpen, "bullpen_chaos_index")
+        + row_float(opponent_bullpen, "first_batter_reach_rate") * 12
+        + row_float(opponent_bullpen, "home_run_appearance_rate") * 10,
+        0,
+        100,
+    )
+    fielding_tail = clamp_value(
+        row_float(team_mistake, "one_bad_inning_allowed_rate") * 22
+        + row_float(sun_row, "visibility_risk_score") * 0.42
+        + row_float(sun_row, "shadow_transition_risk") * 0.2,
+        0,
+        100,
+    )
+    collapse_hazard = clamp_value(
+        12
+        + row_float(opponent_pitcher, "command_break_index") * 0.28
+        + row_float(opponent_pitcher, "meltdown_start_rate") * 15
+        + row_float(opponent_pitcher, "walk_burst_start_rate") * 13
+        + row_float(opponent_pitcher_first, "first_inning_pressure_index") * 0.12
+        + max(0.0, base_traffic - 60) * 0.10
+        + max(0.0, base_damage - 55) * 0.18
+        + (bridge_leak * 0.14 if phase in {"bridge", "late"} else 0)
+        - row_float(opponent_pitcher, "early_clean_start_rate") * 14
+        - row_float(opponent_pitcher_first, "first_inning_clean_rate") * (8 if phase == "firstCycle" else 2),
+        0,
+        100,
+    )
+    suppression_state = clamp_value(
+        55
+        - max(0.0, base_traffic - 55) * 0.18
+        - base_damage * 0.18
+        - base_conversion * 0.12
+        - collapse_hazard * 0.08
+        - bridge_leak * (0.08 if phase in {"bridge", "late"} else 0.02)
+        + row_float(opponent_pitcher, "early_clean_start_rate") * 22
+        + row_float(opponent_pitcher_first, "first_inning_clean_rate") * (18 if phase == "firstCycle" else 5)
+        + row_float(lineup_conversion, "quiet_first5_rate") * 15
+        + row_float(team_mistake, "low_scoring_game_rate") * 10,
+        0,
+        100,
+    )
+    fork_probability = clamp_value(
+        8
+        + max(0.0, base_traffic - 62) * 0.35
+        + max(0.0, row_float(lineup_conversion, "stranded_traffic_rate") - 1.05) * 35
+        + row_float(lineup_conversion, "conversion_volatility") * 35
+        + bridge_leak * 0.10
+        - base_conversion * 0.28,
+        0,
+        100,
+    )
+
+    traffic_pressure = clamp_value(base_traffic * m2_phase_multiplier(phase, "traffic"), 0, 100)
+    damage_pressure = clamp_value(base_damage * m2_phase_multiplier(phase, "damage"), 0, 100)
+    conversion_pressure = clamp_value(base_conversion * m2_phase_multiplier(phase, "conversion"), 0, 100)
+    collapse_hazard = clamp_value(collapse_hazard * m2_phase_multiplier(phase, "collapse"), 0, 100)
+    phase_bridge_leak = clamp_value(bridge_leak * m2_phase_multiplier(phase, "bridge"), 0, 100)
+    suppression_state = clamp_value(suppression_state * m2_phase_multiplier(phase, "suppression"), 0, 100)
+    story_bucket = classify_m2_state_story(
+        traffic_pressure,
+        damage_pressure,
+        conversion_pressure,
+        collapse_hazard,
+        suppression_state,
+        fork_probability,
+    )
+    market_expression = market_expression_for_state_formula(phase, story_bucket)
+    feature_json = {
+        "teamMistake": team_mistake,
+        "lineupConversion": lineup_conversion,
+        "teamState": team_state,
+        "firstInning": first_inning,
+        "opponentBullpen": opponent_bullpen,
+        "opponentPitcher": opponent_pitcher,
+        "opponentPitcherFirstInning": opponent_pitcher_first,
+        "sunVisibility": sun_row,
+    }
+    drivers = [
+        {"formula": "trafficPressure", "driver": "lineup baserunners + traffic-game rate", "impact": round(traffic_pressure, 1)},
+        {"formula": "damagePressure", "driver": "one-big-inning rate + run clustering + starter HR leak", "impact": round(damage_pressure, 1)},
+        {"formula": "conversionPressure", "driver": "lineup conversion minus stranded traffic", "impact": round(conversion_pressure, 1)},
+        {"formula": "collapseHazard", "driver": "opposing starter command break + traffic/damage pressure", "impact": round(collapse_hazard, 1)},
+        {"formula": "suppressionState", "driver": "starter clean-start shape vs traffic/damage", "impact": round(suppression_state, 1)},
+        {"formula": "forkProbability", "driver": "traffic plus strand risk and bridge leak", "impact": round(fork_probability, 1)},
+    ]
+
+    return {
+        "snapshot_date": snapshot_date,
+        "game_pk": game["game_pk"],
+        "game_date": game["game_date"],
+        "away_team": game["away_team"],
+        "home_team": game["home_team"],
+        "phase": phase,
+        "side": team_role,
+        "traffic_pressure": round(traffic_pressure, 3),
+        "damage_pressure": round(damage_pressure, 3),
+        "conversion_pressure": round(conversion_pressure, 3),
+        "collapse_hazard": round(collapse_hazard, 3),
+        "suppression_state": round(suppression_state, 3),
+        "fork_probability": round(fork_probability, 3),
+        "bridge_leak": round(phase_bridge_leak, 3),
+        "fielding_tail": round(fielding_tail, 3),
+        "sun_visibility_risk": row_float(sun_row, "visibility_risk_score"),
+        "weather_carry": None,
+        "story_bucket": story_bucket,
+        "market_expression": market_expression,
+        "formula_drivers_json": json.dumps(drivers, sort_keys=True),
+        "feature_json": json.dumps(feature_json, sort_keys=True),
+        "target_json": json.dumps(actual_phase_targets_for_team(outcome, team_role, phase), sort_keys=True),
+        "source_model_id": "MLB-M2-state-formulas-v0",
+        "created_at": created_at,
+    }
+
+
+def refresh_m2_state_formula_training_rows(
+    conn: sqlite3.Connection,
+    through_date: str | None = None,
+    as_of_date: str | None = None,
+) -> int:
+    init_db(conn)
+    if as_of_date:
+        dates = [
+            row["game_date"]
+            for row in conn.execute(
+                "SELECT DISTINCT game_date FROM mlb_games WHERE game_date = ? ORDER BY game_date",
+                (as_of_date,),
+            ).fetchall()
+        ]
+        conn.execute("DELETE FROM mlb_state_formula_training_rows WHERE snapshot_date = ?", (as_of_date,))
+    else:
+        params: tuple[Any, ...] = (through_date,) if through_date else ()
+        date_filter = "WHERE game_date <= ?" if through_date else ""
+        dates = [
+            row["game_date"]
+            for row in conn.execute(
+                f"SELECT DISTINCT game_date FROM mlb_games {date_filter} ORDER BY game_date", params
+            ).fetchall()
+        ]
+        if through_date:
+            conn.execute("DELETE FROM mlb_state_formula_training_rows WHERE snapshot_date <= ?", (through_date,))
+        else:
+            conn.execute("DELETE FROM mlb_state_formula_training_rows")
+
+    created_at = datetime.utcnow().isoformat(timespec="seconds") + "Z"
+    inserted = 0
+    for current_date in dates:
+        game_rows = conn.execute(
+            """
+            SELECT game_pk, game_date, away_team, home_team
+            FROM mlb_games
+            WHERE game_date = ?
+            ORDER BY game_pk
+            """,
+            (current_date,),
+        ).fetchall()
+        for game_row in game_rows:
+            outcome_row = conn.execute(
+                "SELECT * FROM mlb_game_outcomes WHERE game_pk = ? LIMIT 1",
+                (game_row["game_pk"],),
+            ).fetchone()
+            for team_role in ("away", "home"):
+                for phase in M2_STATE_FORMULA_PHASES:
+                    row = build_m2_state_formula_row(
+                        conn,
+                        current_date,
+                        game_row,
+                        outcome_row,
+                        team_role,
+                        phase,
+                        created_at,
+                    )
+                    conn.execute(
+                        """
+                        INSERT INTO mlb_state_formula_training_rows (
+                          snapshot_date, game_pk, game_date, away_team, home_team,
+                          phase, side,
+                          traffic_pressure, damage_pressure, conversion_pressure,
+                          collapse_hazard, suppression_state, fork_probability,
+                          bridge_leak, fielding_tail, sun_visibility_risk, weather_carry,
+                          story_bucket, market_expression, formula_drivers_json,
+                          feature_json, target_json, source_model_id, created_at
+                        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        """,
+                        (
+                            row["snapshot_date"],
+                            row["game_pk"],
+                            row["game_date"],
+                            row["away_team"],
+                            row["home_team"],
+                            row["phase"],
+                            row["side"],
+                            row["traffic_pressure"],
+                            row["damage_pressure"],
+                            row["conversion_pressure"],
+                            row["collapse_hazard"],
+                            row["suppression_state"],
+                            row["fork_probability"],
+                            row["bridge_leak"],
+                            row["fielding_tail"],
+                            row["sun_visibility_risk"],
+                            row["weather_carry"],
+                            row["story_bucket"],
+                            row["market_expression"],
+                            row["formula_drivers_json"],
+                            row["feature_json"],
+                            row["target_json"],
+                            row["source_model_id"],
+                            row["created_at"],
+                        ),
+                    )
+                    inserted += 1
+    conn.commit()
+    return inserted
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Local MLB warehouse utilities for modeling and backtesting.")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -12346,6 +12829,18 @@ def parse_args() -> argparse.Namespace:
     derive_story_labels.add_argument(
         "--as-of-date",
         help="Optional single date to rebuild incrementally without touching earlier label rows.",
+    )
+
+    derive_state_formulas = subparsers.add_parser(
+        "derive-state-formula-rows",
+        help="Refresh MLB-M2 phase state formula training rows from warehouse feature tables.",
+    )
+    derive_state_formulas.add_argument(
+        "--through-date", help="Optional YYYY-MM-DD cutoff. Defaults to every loaded date."
+    )
+    derive_state_formulas.add_argument(
+        "--as-of-date",
+        help="Optional single date to rebuild incrementally without touching earlier state-formula rows.",
     )
 
     ingest_pitcher_war_parser = subparsers.add_parser(
@@ -12626,6 +13121,16 @@ def main() -> None:
                 print(f"Refreshed MLB story/phase label tables through {args.through_date}")
             else:
                 print("Refreshed MLB story/phase label tables for all loaded dates")
+            return
+
+        if args.command == "derive-state-formula-rows":
+            rows_loaded = refresh_m2_state_formula_training_rows(conn, args.through_date, args.as_of_date)
+            if args.as_of_date:
+                print(f"Refreshed MLB-M2 state formula rows for {args.as_of_date}: {rows_loaded} rows")
+            elif args.through_date:
+                print(f"Refreshed MLB-M2 state formula rows through {args.through_date}: {rows_loaded} rows")
+            else:
+                print(f"Refreshed MLB-M2 state formula rows for all loaded dates: {rows_loaded} rows")
             return
 
         if args.command == "ingest-pitcher-war":

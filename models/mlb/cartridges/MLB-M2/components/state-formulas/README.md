@@ -398,6 +398,18 @@ Current research command:
 npm run data:research:mlb-m2-state-formulas -- --start 2026-05-10 --end YYYY-MM-DD
 ```
 
+Warehouse derivation command:
+
+```bash
+npm run data:derive:mlb-state-formulas -- --through-date YYYY-MM-DD
+```
+
+Warehouse row coverage report:
+
+```bash
+npm run data:research:mlb-m2-state-formula-rows -- --start 2026-05-23 --end YYYY-MM-DD
+```
+
 Current exported training-row artifact:
 
 ```text
@@ -414,6 +426,15 @@ First baseline result:
 - Tree walk-forward F5 story bucket: 42.0%.
 
 Interpretation: the first learned pass does not beat current projection logic. That is not a promotion case. It proves the next useful work is materializing stronger formula rows and pitcher-batter pitch-fit tables, then rerunning the same walk-forward check.
+
+First warehouse-backed formula-row report:
+
+- 7,120 rows loaded through May 31.
+- May 23-May 31 report range: 1,000 rows across 125 games.
+- Story distribution: 693 normal, 176 dead, 102 crooked, 29 fork.
+- Starter-window F5 direction check: 47.5% on 40 rows.
+
+Interpretation: this row layer is now measurable and inspectable, but the first formula calibration is too weak for the value board. Keep it research-only until story buckets and market expressions pass date/line/price backtests.
 
 ## Non-Negotiable Rule
 

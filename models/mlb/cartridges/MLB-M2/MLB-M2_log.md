@@ -260,6 +260,35 @@ Early reads:
 - Freeze without pressure behaved like a true dead-offense state in the tiny available sample.
 - Flow does not mean safe; aligned-but-chaotic games can still be high-total games.
 
+## 2026-06-01 - Warehouse-Backed State Formula Rows
+
+Materialized the first M2 state-formula training rows from the warehouse instead of rebuilding from published JSON.
+
+Implemented:
+
+- `mlb_state_formula_training_rows` derivation in `pipeline/mlb/warehouse/mlb_warehouse.py`.
+- `npm run data:derive:mlb-state-formulas`.
+- `models/mlb/cartridges/MLB-M2/research/state_formula_rows_report.py`.
+- `models/mlb/cartridges/MLB-M2/reports/state-formula-rows-report-2026-05-23-to-2026-05-31.md`.
+- `data-private/reports/mlb-m2-state-formula-rows-report-2026-05-23-to-2026-05-31.json`.
+
+Warehouse coverage:
+
+- 7,120 state formula rows loaded through May 31.
+- May 23-May 31 report range: 1,000 rows across 125 games.
+- Phase states: `firstCycle`, `starterWindow`, `bridge`, `late`.
+
+First report distribution:
+
+- Story buckets: 693 normal, 176 dead, 102 crooked, 29 fork.
+- Market expressions: 693 pass, 174 first-five under, 63 first-five over, 39 full-game over, 29 live-only, 2 live/full under watch.
+- Naive row story check: 27.9% on 971 rows.
+- Starter-window F5 direction check: 47.5% on 40 rows.
+
+Interpretation:
+
+This is useful as a warehouse substrate and debugging surface, but not useful yet as a promoted value-board lane. The formula rows are now measurable; the first calibration is too weak and must be improved with player identity curves, pitcher-batter kernels, better actual-state labels, and line/price buckets before it can influence picks.
+
 ## 2026-06-01 - Invented Vector Search
 
 Added a wider vector search to break the six radar axes into raw invented dimensions.
