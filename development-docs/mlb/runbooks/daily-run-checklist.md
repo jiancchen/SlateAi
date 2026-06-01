@@ -126,6 +126,12 @@ Even if the verifier passes, manually inspect these:
 - Check that the displayed venue and weather make sense for outdoor games.
 - Weather is usually a secondary factor, but missing weather or missing park context is still a pipeline miss.
 
+### Sun position / visibility
+- Treat sun position as separate from weather. Weather is temperature, wind, precip, roof/open-air state; sun visibility is game-time geometry.
+- For day/late-afternoon outdoor games, check whether first pitch and middle innings create low-sun or shadow-transition risk.
+- Required future warehouse inputs: venue latitude/longitude, field orientation, scheduled local first pitch, solar azimuth/elevation, cloud cover, roof/shadow state, and defensive-zone exposure.
+- Do not label this as `weather_carry`. If it matters, tag it as `sun_visibility_risk` or `shadow_transition_risk`.
+
 ### HR board
 - Make sure the board is populated and not blank.
 - Sanity-check obvious false carries or stale projected-lineup contamination.
@@ -181,9 +187,14 @@ Only treat the day as ready when:
 - no postponed games remain in the slate
 - partial lineups are understood, not accidental
 - tiny-sample player props are explained by career profile or suppressed
-- bridge, weather, park, HR, and props are visibly present
+- bridge, weather, park, sun-position visibility, HR, and props are visibly present
+- value-board rows are separated by trust level: validated rows can be promoted, research-only rows can be displayed, and uncalibrated rows cannot be ranked as value
 
 If any of those fail, rerun or patch before trusting the board.
+
+Current hard rule:
+- First-five O/U rows are research-only after the May 31 failure. Do not publish them as bet-grade value until settled bucket calibration exists for line, ask, model probability, projected-run edge, chaos gate, and date-level walk-forward ROI.
+- The web value board must filter model-owned rows only. Do not add UI-side value math for F5 ML, F5 O/U, totals, scalp trades, or any new market. If a lane is not in the cartridge output, it is not a value-board lane yet.
 
 ## 6. End-of-Day Archive Loop
 
@@ -195,6 +206,7 @@ npm run data:close:mlb-day -- --date YYYY-MM-DD
 
 This now handles:
 - MLB final ingest
+- sun-position visibility snapshot and outfield/contact outcome backfill from MLB feed/live
 - story-signal refresh
 - hidden-edge profile refresh
 - rolling state-snapshot refresh
@@ -215,9 +227,18 @@ For active M2 evaluation days, also run:
 
 ```bash
 npm run data:research:mlb-m2-game-shape -- --start 2026-05-10 --end YYYY-MM-DD
+npm run data:research:mlb-m2-run-total-stories -- --post-date YYYY-MM-DD --today NEXT-YYYY-MM-DD
+npm run data:research:mlb-m2-state-formulas -- --start 2026-05-10 --end YYYY-MM-DD
 ```
 
-The postmortem should not stop at `risky` or `veto`. It should classify each miss and hit by game shape:
+The postmortem should not stop at `risky`, `veto`, projection error, or average miss. It should first answer:
+
+- Why did the game go over?
+- Why did the game go under?
+- Was that mechanism visible pregame?
+- Is that same mechanism live on the next slate?
+
+Then classify each miss and hit by game shape:
 
 - clean phase stack
 - early-pressure side
@@ -229,7 +250,23 @@ The postmortem should not stop at `risky` or `veto`. It should classify each mis
 - starter-duel under
 - underdog pressure lane
 - weather-carry chaos
+- sun-visibility risk
 - balanced traffic game
+
+For totals, also classify story buckets:
+
+- crooked-inning over
+- traffic-conversion over
+- power over
+- free-pass over
+- bridge over
+- fielding/outfield-tail over
+- starter hold under
+- strand under
+- power-suppressed under
+- bat-missing under
+- bridge-clean under
+- fork/live-only
 
 Then update:
 - follow-up notes

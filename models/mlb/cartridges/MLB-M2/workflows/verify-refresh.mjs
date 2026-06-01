@@ -142,6 +142,9 @@ const main = async () => {
 
   const parkCoverageCount = games.filter((game) => game.parkContext).length
   const weatherCoverageCount = games.filter((game) => game.analysis?.mlbProjection?.weather).length
+  const sunVisibilityCoverageCount = games.filter((game) =>
+    Number.isFinite(Number(game.stateContext?.sunVisibility?.visibilityRiskScore))
+  ).length
   const bridgeCoverageGames = games.filter((game) => {
     const projection = game.analysis?.mlbProjection
     return (
@@ -211,6 +214,11 @@ const main = async () => {
     detail: `${weatherCoverageCount}/${games.length}`
   })
   checks.push({
+    ok: sunVisibilityCoverageCount === games.length,
+    label: 'Sun-position visibility attached to every MLB game',
+    detail: `${sunVisibilityCoverageCount}/${games.length}`
+  })
+  checks.push({
     ok: bridgeCoverageGames === games.length,
     label: 'Bridge reliever coverage attached to every MLB game',
     detail: `${bridgeCoverageGames}/${games.length}`
@@ -231,6 +239,7 @@ const main = async () => {
     check.label === 'Lineup boards generated for each active game' ||
     check.label === 'Hitter career profiles joined to lineup boards' ||
     check.label === 'Tiny-sample props carry repeatability labels' ||
+    check.label === 'Sun-position visibility attached to every MLB game' ||
     ((check.label === 'Home-run board generated' ||
       check.label === 'Non-HR prop board generated') &&
       expectLineupDrivenBoards)

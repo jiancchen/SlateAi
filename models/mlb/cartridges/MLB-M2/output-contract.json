@@ -25,11 +25,36 @@
     "analysis.gameShape.category.laneMap",
     "analysis.gameShape.inningMap",
     "analysis.gameShape.scores.realityGapScore",
+    "analysis.gameShape.radar.version",
+    "analysis.gameShape.radar.axes",
+    "analysis.gameShape.radar.profiles",
+    "analysis.gameShape.radar.gameProfile.dominantAxes",
+    "analysis.stateFormula.version",
+    "analysis.stateFormula.phaseStates",
+    "analysis.stateFormula.storyDistribution",
+    "analysis.stateFormula.marketExpressions",
+    "analysis.stateFormula.formulaDrivers",
+    "analysis.playerIdentity.version",
+    "analysis.playerIdentity.hitters",
+    "analysis.playerIdentity.pitchers",
+    "analysis.playerIdentity.teamSummaries",
+    "analysis.pitcherBatterKernel.version",
+    "analysis.pitcherBatterKernel.matchups",
+    "analysis.pitcherBatterKernel.teamSummaries",
+    "analysis.pitcherBatterKernel.storyBuckets",
     "analysis.indicators.gameShape.category",
     "analysis.indicators.gameShape.bestExpression"
   ],
+  "analysisSchemas": {
+    "stateFormula": "models/mlb/cartridges/MLB-M2/schemas/analysis-state-formula.schema.json",
+    "playerIdentity": "models/mlb/cartridges/MLB-M2/schemas/analysis-player-identity.schema.json",
+    "pitcherBatterKernel": "models/mlb/cartridges/MLB-M2/schemas/analysis-pitcher-batter-kernel.schema.json"
+  },
   "notes": [
     "M2 inherits the MLB-M0 public payload and adds a game-shape category contract.",
-    "The category object must name the market expression; vague risk/pass labels are not sufficient."
+    "The category object must name the market expression; vague risk/pass labels are not sufficient.",
+    "The radar object is a visualization-ready game-shape contract: 0-100 axes where high means more of that shape, not automatically better.",
+    "The value board must display model-owned rows only. It may not create EV rows from raw projections in the UI.",
+    "State formulas, player identity, and pitcher-batter kernel contracts are initially research-only until their lanes pass bucketed backtests."
   ]
 }

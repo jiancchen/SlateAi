@@ -141,6 +141,7 @@ const compactGame = (game = {}) => ({
         laneMap: game.analysis.gameShape.laneMap ?? {},
         inningMap: game.analysis.gameShape.inningMap ?? [],
         scores: game.analysis.gameShape.scores ?? {},
+        radar: game.analysis.gameShape.radar ?? null,
         phaseMap: game.analysis.gameShape.phaseMap ?? {},
         metrics: game.analysis.gameShape.metrics ?? {},
         marketImplications: game.analysis.gameShape.marketImplications ?? {},

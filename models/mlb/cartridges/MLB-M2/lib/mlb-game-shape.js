@@ -71,7 +71,8 @@ const buildMetricNotes = ({
   maxTrafficNoConversion,
   minLineupConversion,
   maxBullpenChaos,
-  weather
+  weather,
+  sunVisibility
 }) => {
   const notes = []
   if (Number.isFinite(maxMistakeChaos) && maxMistakeChaos >= 62) {
@@ -99,6 +100,9 @@ const buildMetricNotes = ({
     notes.push(`bullpen chaos ${roundToTenths(maxBullpenChaos)}`)
   }
   if (weather?.label) notes.push(weather.label)
+  if (Number(sunVisibility?.visibilityRiskScore) >= 42) {
+    notes.push(`sun visibility ${roundToTenths(Number(sunVisibility.visibilityRiskScore))}/100`)
+  }
 
   return notes
 }
@@ -113,6 +117,238 @@ const pickShapeLabel = ({ chaosScore, deadEarlyScore, phaseSplitScore, bullpenFl
 }
 
 const phaseMatchesPick = (teamName, pickName) => Boolean(teamName && pickName && teamNameMatches(teamName, pickName))
+
+const pctScore = (value, fallback = 50) => {
+  const numeric = safeNumber(value)
+  return Number.isFinite(numeric) ? clamp(numeric * 100, 0, 100) : fallback
+}
+
+const rawScore = (value, fallback = 50) => {
+  const numeric = safeNumber(value)
+  return Number.isFinite(numeric) ? clamp(numeric, 0, 100) : fallback
+}
+
+const getPrefixedIndicator = (mlbIndicators = {}, prefix, key) =>
+  safeNumber(mlbIndicators?.[`${prefix}${key}`])
+
+const buildParticipantRadarProfile = ({
+  role,
+  team,
+  prefix,
+  mlbIndicators = {},
+  projection = {},
+  weatherCarry = false,
+  sunVisibilityRisk = null
+}) => {
+  const name = team?.name ?? ''
+  const lineupConversion = getPrefixedIndicator(mlbIndicators, prefix, 'LineupConversionIndex')
+  const topOrderPressure = getPrefixedIndicator(mlbIndicators, prefix, 'Top6Pressure')
+  const starterScore = getPrefixedIndicator(mlbIndicators, prefix, 'StarterScore')
+  const bullpenScore = getPrefixedIndicator(mlbIndicators, prefix, 'BullpenScore')
+  const teamMistakeChaos = getPrefixedIndicator(mlbIndicators, prefix, 'TeamMistakeChaos')
+  const runClustering = getPrefixedIndicator(mlbIndicators, prefix, 'TeamRunClustering')
+  const bullpenChaos = getPrefixedIndicator(mlbIndicators, prefix, 'BullpenMistakeChaos')
+  const relieverCommandRisk = getPrefixedIndicator(mlbIndicators, prefix, 'RelieverCommandRisk')
+  const quietFirst5 = getPrefixedIndicator(mlbIndicators, prefix, 'QuietFirst5Rate')
+  const scorelessFirst3 = getPrefixedIndicator(mlbIndicators, prefix, 'TeamScorelessFirst3Rate')
+  const deadBatTraffic = getPrefixedIndicator(mlbIndicators, prefix, 'DeadBatTrafficRate')
+  const trafficNoConversion = getPrefixedIndicator(mlbIndicators, prefix, 'TrafficNoConversionRate')
+  const projectedHitEdge = safeNumber(mlbIndicators.projectedHitEdgeForPick)
+  const hitEdgeBoost =
+    role === 'pick' && Number.isFinite(projectedHitEdge)
+      ? clamp(projectedHitEdge * 8, -14, 24)
+      : role === 'opponent' && mlbIndicators.hitEdgeAgainstPick
+        ? 12
+        : 0
+  const phaseTeams = [
+    projection.edgeTeam,
+    projection.first5EdgeTeam,
+    projection.lateEdgeTeam,
+    projection.bridgeEdgeTeam
+  ].filter(Boolean)
+  const ownedPhases = phaseTeams.filter((phaseTeam) => teamNameMatches(phaseTeam, name)).length
+  const phaseOwnership = phaseTeams.length ? clamp((ownedPhases / phaseTeams.length) * 100, 0, 100) : 50
+  const sunLift = Number.isFinite(sunVisibilityRisk) ? clamp((sunVisibilityRisk - 25) * 0.32, 0, 18) : 0
+
+  const scores = {
+    pressure: clamp(
+      rawScore(lineupConversion, 44) * 0.44 +
+        rawScore(topOrderPressure, 42) * 0.22 +
+        rawScore(starterScore, 48) * 0.18 +
+        hitEdgeBoost,
+      0,
+      100
+    ),
+    chaos: clamp(
+      rawScore(teamMistakeChaos, 45) * 0.45 +
+        rawScore(runClustering, 45) * 0.34 +
+        rawScore(bullpenChaos, 35) * 0.21 +
+        (weatherCarry ? 5 : 0) +
+        sunLift,
+      0,
+      100
+    ),
+    freeze: clamp(
+      pctScore(quietFirst5, 28) * 0.34 +
+        pctScore(scorelessFirst3, 28) * 0.23 +
+        pctScore(deadBatTraffic, 22) * 0.26 +
+        pctScore(trafficNoConversion, 12) * 0.17,
+      0,
+      100
+    ),
+    air: clamp(
+      rawScore(runClustering, 45) * 0.34 +
+        rawScore(teamMistakeChaos, 45) * 0.24 +
+        rawScore(topOrderPressure, 42) * 0.16 +
+        (weatherCarry ? 16 : 0) +
+        sunLift,
+      0,
+      100
+    ),
+    bridge: clamp(
+      rawScore(bullpenChaos, 36) * 0.34 +
+        rawScore(relieverCommandRisk, 34) * 0.28 +
+        clamp(70 - rawScore(bullpenScore, 50), 0, 70) * 0.38,
+      0,
+      100
+    ),
+    flow: phaseOwnership
+  }
+
+  const roundedScores = Object.fromEntries(
+    Object.entries(scores).map(([key, value]) => [key, roundToTenths(value)])
+  )
+
+  return {
+    role,
+    team: name,
+    scores: roundedScores,
+    polygon: ['pressure', 'chaos', 'freeze', 'air', 'bridge', 'flow'].map((axis) => roundedScores[axis]),
+    phaseOwnershipPct: roundToTenths(phaseOwnership),
+    inputs: {
+      lineupConversion: Number.isFinite(lineupConversion) ? roundToTenths(lineupConversion) : null,
+      topOrderPressure: Number.isFinite(topOrderPressure) ? roundToTenths(topOrderPressure) : null,
+      starterScore: Number.isFinite(starterScore) ? roundToTenths(starterScore) : null,
+      bullpenScore: Number.isFinite(bullpenScore) ? roundToTenths(bullpenScore) : null,
+      mistakeChaos: Number.isFinite(teamMistakeChaos) ? roundToTenths(teamMistakeChaos) : null,
+      runClustering: Number.isFinite(runClustering) ? roundToTenths(runClustering) : null,
+      bullpenChaos: Number.isFinite(bullpenChaos) ? roundToTenths(bullpenChaos) : null,
+      quietFirst5Pct: Number.isFinite(quietFirst5) ? roundToTenths(quietFirst5 * 100) : null,
+      deadBatTrafficPct: Number.isFinite(deadBatTraffic) ? roundToTenths(deadBatTraffic * 100) : null,
+      trafficNoConversionPct: Number.isFinite(trafficNoConversion)
+        ? roundToTenths(trafficNoConversion * 100)
+        : null
+    }
+  }
+}
+
+const buildShapeRadar = ({
+  pick,
+  opponent,
+  projection = {},
+  mlbIndicators = {},
+  shapeScores = {},
+  category = {},
+  weatherCarry = false,
+  sunVisibilityRisk = null
+}) => {
+  const pickProfile = buildParticipantRadarProfile({
+    role: 'pick',
+    team: pick,
+    prefix: 'pick',
+    mlbIndicators,
+    projection,
+    weatherCarry,
+    sunVisibilityRisk
+  })
+  const opponentProfile = buildParticipantRadarProfile({
+    role: 'opponent',
+    team: opponent,
+    prefix: 'opp',
+    mlbIndicators,
+    projection,
+    weatherCarry,
+    sunVisibilityRisk
+  })
+  const gameScores = {
+    pressure: Math.max(pickProfile.scores.pressure, opponentProfile.scores.pressure),
+    chaos: rawScore(shapeScores.chaosScore, 45),
+    freeze: rawScore(shapeScores.deadEarlyScore, 35),
+    air: clamp(
+      Math.max(pickProfile.scores.air, opponentProfile.scores.air) * 0.65 +
+        (weatherCarry ? 14 : 0) +
+        (Number.isFinite(sunVisibilityRisk) ? clamp((sunVisibilityRisk - 25) * 0.28, 0, 14) : 0),
+      0,
+      100
+    ),
+    bridge: rawScore(shapeScores.bullpenFlipScore, 35),
+    flow: clamp(100 - rawScore(shapeScores.phaseSplitScore, 45), 0, 100)
+  }
+  const roundedGameScores = Object.fromEntries(
+    Object.entries(gameScores).map(([key, value]) => [key, roundToTenths(value)])
+  )
+  const axisDefinitions = [
+    {
+      id: 'pressure',
+      label: 'Pressure',
+      read: 'Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.'
+    },
+    {
+      id: 'chaos',
+      label: 'Chaos',
+      read: 'Crooked-inning volatility: mistake chaos, run clustering, one-bad-inning, bullpen mistakes, carry, and visibility.'
+    },
+    {
+      id: 'freeze',
+      label: 'Freeze',
+      read: 'Dead-offense risk: quiet first five, scoreless first three, dead traffic, and traffic without conversion.'
+    },
+    {
+      id: 'air',
+      label: 'Air',
+      read: 'Contact carry and outfield-event risk: weather carry, sun visibility, hard air contact, and extra-base tail.'
+    },
+    {
+      id: 'bridge',
+      label: 'Bridge',
+      read: 'Late-inning volatility: bullpen flip, reliever command risk, and middle-relief mistake exposure.'
+    },
+    {
+      id: 'flow',
+      label: 'Flow',
+      read: 'Phase agreement: whether full game, first five, late, and bridge point in the same direction.'
+    }
+  ]
+  const axes = axisDefinitions.map((axis) => ({
+    ...axis,
+    gameScore: roundedGameScores[axis.id],
+    pickScore: pickProfile.scores[axis.id],
+    opponentScore: opponentProfile.scores[axis.id]
+  }))
+  const dominantAxes = axes
+    .filter((axis) => Number.isFinite(axis.gameScore))
+    .sort((left, right) => right.gameScore - left.gameScore)
+    .slice(0, 3)
+    .map((axis) => ({ id: axis.id, label: axis.label, score: axis.gameScore }))
+
+  return {
+    version: 'MLB-M2-game-shape-radar-v1',
+    scale: {
+      min: 0,
+      max: 100,
+      highMeans: 'More of the named shape, not automatically better.'
+    },
+    axes,
+    profiles: [pickProfile, opponentProfile],
+    gameProfile: {
+      label: category.label ?? 'Game shape',
+      bestExpression: category.bestExpression ?? null,
+      scores: roundedGameScores,
+      polygon: axisDefinitions.map((axis) => roundedGameScores[axis.id]),
+      dominantAxes
+    }
+  }
+}
 
 const buildInningMap = ({ slug, pickName = 'Pick', opponentName = 'Opponent' }) => {
   const maps = {
@@ -511,6 +747,11 @@ const buildMlbGameShapeRead = ({
   const lineupConversionShapes = riskContext.lineupConversionShapes ?? []
   const bullpenMistakeShapes = riskContext.bullpenMistakeShapes ?? []
   const weather = projection.weather ?? riskContext.weatherProfile ?? null
+  const sunVisibility = projection.sunVisibility ?? riskContext.sunVisibility ?? null
+  const sunVisibilityRisk = Number(sunVisibility?.visibilityRiskScore)
+  const sunVisibilityChaosBoost = Number.isFinite(sunVisibilityRisk)
+    ? clamp((sunVisibilityRisk - 35) * 0.08, 0, 5)
+    : 0
   const pick = participants[winnerIndex] ?? null
   const opponent = participants[winnerIndex === 0 ? 1 : 0] ?? null
   const phaseTeams = [
@@ -553,7 +794,8 @@ const buildMlbGameShapeRead = ({
       pct(maxOneBadInningAllowed ?? 0.24) * 0.2 +
       (maxBullpenChaos ?? 35) * 0.12 +
       pct(maxBullpenMeltdown ?? 0.1) * 0.1 +
-      (weatherCarry ? 6 : 0),
+      (weatherCarry ? 6 : 0) +
+      sunVisibilityChaosBoost,
     0,
     100
   )
@@ -645,7 +887,8 @@ const buildMlbGameShapeRead = ({
     maxTrafficNoConversion,
     minLineupConversion,
     maxBullpenChaos,
-    weather
+    weather,
+    sunVisibility
   })
   const category = buildCategory({
     shapeScores,
@@ -657,6 +900,16 @@ const buildMlbGameShapeRead = ({
     pickIsMarketUnderdog,
     marketProbabilities,
     weatherCarry
+  })
+  const radar = buildShapeRadar({
+    pick,
+    opponent,
+    projection,
+    mlbIndicators,
+    shapeScores,
+    category,
+    weatherCarry,
+    sunVisibilityRisk
   })
   const marketImplications = buildMarketImplications({
     shapeLabel,
@@ -680,6 +933,7 @@ const buildMlbGameShapeRead = ({
     pickTeam: pick?.name ?? '',
     opponentTeam: opponent?.name ?? '',
     scores: shapeScores,
+    radar,
     phaseMap: {
       fullGameTraffic: projection.edgeTeam || '',
       first5: projection.first5EdgeTeam || '',
@@ -700,7 +954,9 @@ const buildMlbGameShapeRead = ({
         ? roundToTenths(maxTrafficNoConversion * 100)
         : null,
       minLineupConversion: Number.isFinite(minLineupConversion) ? roundToTenths(minLineupConversion) : null,
-      maxBullpenChaos: Number.isFinite(maxBullpenChaos) ? roundToTenths(maxBullpenChaos) : null
+      maxBullpenChaos: Number.isFinite(maxBullpenChaos) ? roundToTenths(maxBullpenChaos) : null,
+      sunVisibilityRiskScore: Number.isFinite(sunVisibilityRisk) ? roundToTenths(sunVisibilityRisk) : null,
+      sunVisibilityChaosBoost: Number.isFinite(sunVisibilityChaosBoost) ? roundToTenths(sunVisibilityChaosBoost) : null
     },
     metricNotes,
     laneMap: category.laneMap,

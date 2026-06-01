@@ -1,0 +1,931 @@
+{
+  "schemaVersion": 1,
+  "modelId": "MLB-M2",
+  "experiment": "run_environment_chaos_over",
+  "range": {
+    "start": "2026-05-10",
+    "end": "2026-05-31"
+  },
+  "holdoutDate": "2026-05-31",
+  "dataset": {
+    "trainRows": 180,
+    "holdoutRows": 15,
+    "trainBaseOverRate": 0.4722,
+    "holdoutBaseOverRate": 0.6,
+    "oldTrainTotalRows": 140,
+    "oldTrainTotalHitRate": 0.5071,
+    "oldHoldoutTotalRows": 5,
+    "oldHoldoutTotalHitRate": 0.2
+  },
+  "thresholdSweepTopRules": [
+    {
+      "score": 0.6798,
+      "trainRows": 24,
+      "trainHitRate": 0.625,
+      "trainAvgMarginToLine": 2.354,
+      "holdoutRows": 4,
+      "holdoutHitRate": 0.25,
+      "params": {
+        "mistake": 58,
+        "meltdown": 0.18,
+        "no_conv": 0.24,
+        "dead_traffic": 0.38,
+        "chaos": 60,
+        "tail_count": 4,
+        "run_cluster": 75,
+        "one_bad": 0.5,
+        "bullpen": 50,
+        "low_conv": 35,
+        "quiet": 0.63,
+        "proj_edge_min": 0.0
+      }
+    },
+    {
+      "score": 0.6798,
+      "trainRows": 24,
+      "trainHitRate": 0.625,
+      "trainAvgMarginToLine": 2.354,
+      "holdoutRows": 4,
+      "holdoutHitRate": 0.25,
+      "params": {
+        "mistake": 58,
+        "meltdown": 0.18,
+        "no_conv": 0.24,
+        "dead_traffic": 0.38,
+        "chaos": 60,
+        "tail_count": 4,
+        "run_cluster": 75,
+        "one_bad": 0.5,
+        "bullpen": 55,
+        "low_conv": 35,
+        "quiet": 0.63,
+        "proj_edge_min": 0.0
+      }
+    },
+    {
+      "score": 0.6659,
+      "trainRows": 28,
+      "trainHitRate": 0.6071,
+      "trainAvgMarginToLine": 2.089,
+      "holdoutRows": 4,
+      "holdoutHitRate": 0.25,
+      "params": {
+        "mistake": 58,
+        "meltdown": 0.18,
+        "no_conv": 0.24,
+        "dead_traffic": 0.38,
+        "chaos": 52,
+        "tail_count": 4,
+        "run_cluster": 75,
+        "one_bad": 0.5,
+        "bullpen": 50,
+        "low_conv": 35,
+        "quiet": 0.63,
+        "proj_edge_min": 0.0
+      }
+    },
+    {
+      "score": 0.6659,
+      "trainRows": 28,
+      "trainHitRate": 0.6071,
+      "trainAvgMarginToLine": 2.089,
+      "holdoutRows": 4,
+      "holdoutHitRate": 0.25,
+      "params": {
+        "mistake": 58,
+        "meltdown": 0.18,
+        "no_conv": 0.24,
+        "dead_traffic": 0.38,
+        "chaos": 52,
+        "tail_count": 4,
+        "run_cluster": 75,
+        "one_bad": 0.5,
+        "bullpen": 55,
+        "low_conv": 35,
+        "quiet": 0.63,
+        "proj_edge_min": 0.0
+      }
+    },
+    {
+      "score": 0.6659,
+      "trainRows": 28,
+      "trainHitRate": 0.6071,
+      "trainAvgMarginToLine": 2.089,
+      "holdoutRows": 4,
+      "holdoutHitRate": 0.25,
+      "params": {
+        "mistake": 58,
+        "meltdown": 0.18,
+        "no_conv": 0.24,
+        "dead_traffic": 0.38,
+        "chaos": 56,
+        "tail_count": 4,
+        "run_cluster": 75,
+        "one_bad": 0.5,
+        "bullpen": 50,
+        "low_conv": 35,
+        "quiet": 0.63,
+        "proj_edge_min": 0.0
+      }
+    },
+    {
+      "score": 0.6659,
+      "trainRows": 28,
+      "trainHitRate": 0.6071,
+      "trainAvgMarginToLine": 2.089,
+      "holdoutRows": 4,
+      "holdoutHitRate": 0.25,
+      "params": {
+        "mistake": 58,
+        "meltdown": 0.18,
+        "no_conv": 0.24,
+        "dead_traffic": 0.38,
+        "chaos": 56,
+        "tail_count": 4,
+        "run_cluster": 75,
+        "one_bad": 0.5,
+        "bullpen": 55,
+        "low_conv": 35,
+        "quiet": 0.63,
+        "proj_edge_min": 0.0
+      }
+    },
+    {
+      "score": 0.6556,
+      "trainRows": 25,
+      "trainHitRate": 0.6,
+      "trainAvgMarginToLine": 2.26,
+      "holdoutRows": 4,
+      "holdoutHitRate": 0.25,
+      "params": {
+        "mistake": 58,
+        "meltdown": 0.18,
+        "no_conv": 0.24,
+        "dead_traffic": 0.38,
+        "chaos": 60,
+        "tail_count": 4,
+        "run_cluster": 75,
+        "one_bad": 0.5,
+        "bullpen": 45,
+        "low_conv": 35,
+        "quiet": 0.63,
+        "proj_edge_min": 0.0
+      }
+    },
+    {
+      "score": 0.6551,
+      "trainRows": 25,
+      "trainHitRate": 0.6,
+      "trainAvgMarginToLine": 2.2,
+      "holdoutRows": 4,
+      "holdoutHitRate": 0.25,
+      "params": {
+        "mistake": 58,
+        "meltdown": 0.18,
+        "no_conv": 0.24,
+        "dead_traffic": 0.38,
+        "chaos": 60,
+        "tail_count": 4,
+        "run_cluster": 75,
+        "one_bad": 0.38,
+        "bullpen": 50,
+        "low_conv": 35,
+        "quiet": 0.63,
+        "proj_edge_min": 0.0
+      }
+    },
+    {
+      "score": 0.6551,
+      "trainRows": 25,
+      "trainHitRate": 0.6,
+      "trainAvgMarginToLine": 2.2,
+      "holdoutRows": 4,
+      "holdoutHitRate": 0.25,
+      "params": {
+        "mistake": 58,
+        "meltdown": 0.18,
+        "no_conv": 0.24,
+        "dead_traffic": 0.38,
+        "chaos": 60,
+        "tail_count": 4,
+        "run_cluster": 75,
+        "one_bad": 0.38,
+        "bullpen": 55,
+        "low_conv": 35,
+        "quiet": 0.63,
+        "proj_edge_min": 0.0
+      }
+    },
+    {
+      "score": 0.6541,
+      "trainRows": 25,
+      "trainHitRate": 0.6,
+      "trainAvgMarginToLine": 2.08,
+      "holdoutRows": 4,
+      "holdoutHitRate": 0.25,
+      "params": {
+        "mistake": 58,
+        "meltdown": 0.18,
+        "no_conv": 0.24,
+        "dead_traffic": 0.38,
+        "chaos": 60,
+        "tail_count": 4,
+        "run_cluster": 75,
+        "one_bad": 0.5,
+        "bullpen": 50,
+        "low_conv": 35,
+        "quiet": 0.38,
+        "proj_edge_min": 0.0
+      }
+    }
+  ],
+  "maskComparison": [
+    {
+      "label": "existing_weather_carry_chaos",
+      "trainRows": 34,
+      "trainHitRate": 0.4706,
+      "trainAvgMarginToLine": 0.515,
+      "holdoutRows": 5,
+      "holdoutHitRate": 1.0
+    },
+    {
+      "label": "existing_crooked_or_bullpen_chaos",
+      "trainRows": 73,
+      "trainHitRate": 0.5342,
+      "trainAvgMarginToLine": 0.781,
+      "holdoutRows": 7,
+      "holdoutHitRate": 0.7143
+    },
+    {
+      "label": "train_selected_run_environment_rule",
+      "trainRows": 24,
+      "trainHitRate": 0.625,
+      "trainAvgMarginToLine": 2.354,
+      "holdoutRows": 4,
+      "holdoutHitRate": 0.25
+    }
+  ],
+  "holdoutGamesForTrainSelectedRule": [
+    {
+      "game_title": "Angels @ Rays",
+      "full_total_label": "Hold 8.5",
+      "full_total_lean": "Pass",
+      "projected_full_total": 8.5,
+      "full_total_line": 8.5,
+      "actual_total": 7.0,
+      "over_hit": 0,
+      "m2_category_label": "Crooked-inning game",
+      "weather_carry": false,
+      "chaos_score": 74.35276356664644,
+      "max_chaos": 77.85081611235262,
+      "max_run_cluster": 74.20305249413225,
+      "max_one_bad_inning": 0.7142857142857143,
+      "max_bullpen_chaos": 53.58041958041957,
+      "max_bullpen_meltdown": 0.46153846153846156,
+      "min_lineup_conversion": 0.0,
+      "max_quiet_first5": 0.5714285714285714,
+      "max_no_conversion": 0.2857142857142857,
+      "max_dead_traffic": 0.42857142857142855,
+      "projected_edge_to_line": 0.0,
+      "subreason_count": 4,
+      "run_cluster": false,
+      "one_bad": true,
+      "mistake": true,
+      "bullpen": true,
+      "false_under": true,
+      "quiet_late": false,
+      "carry_modifier": false
+    },
+    {
+      "game_title": "Cubs @ Cardinals",
+      "full_total_label": "Hold 8.5",
+      "full_total_lean": "Pass",
+      "projected_full_total": 9.4,
+      "full_total_line": 8.5,
+      "actual_total": 6.0,
+      "over_hit": 0,
+      "m2_category_label": "Starter-to-bullpen flip",
+      "weather_carry": false,
+      "chaos_score": 63.18999863862817,
+      "max_chaos": 63.270834247944606,
+      "max_run_cluster": 75.08013172286388,
+      "max_one_bad_inning": 0.5714285714285714,
+      "max_bullpen_chaos": 49.5231259968102,
+      "max_bullpen_meltdown": 0.2727272727272727,
+      "min_lineup_conversion": 21.60796254357055,
+      "max_quiet_first5": 0.5,
+      "max_no_conversion": 0.0,
+      "max_dead_traffic": 0.2857142857142857,
+      "projected_edge_to_line": 0.9000000000000004,
+      "subreason_count": 5,
+      "run_cluster": true,
+      "one_bad": true,
+      "mistake": true,
+      "bullpen": true,
+      "false_under": true,
+      "quiet_late": false,
+      "carry_modifier": false
+    },
+    {
+      "game_title": "Giants @ Rockies",
+      "full_total_label": "Hold 11",
+      "full_total_lean": "Pass",
+      "projected_full_total": 11.1,
+      "full_total_line": 11.0,
+      "actual_total": 25.0,
+      "over_hit": 1,
+      "m2_category_label": "Weather-carry chaos",
+      "weather_carry": true,
+      "chaos_score": 78.39671332629052,
+      "max_chaos": 69.3622382969459,
+      "max_run_cluster": 74.9804944214035,
+      "max_one_bad_inning": 0.75,
+      "max_bullpen_chaos": 63.35164835164835,
+      "max_bullpen_meltdown": 0.4166666666666667,
+      "min_lineup_conversion": 24.866974728423372,
+      "max_quiet_first5": 0.25,
+      "max_no_conversion": 0.125,
+      "max_dead_traffic": 0.125,
+      "projected_edge_to_line": 0.09999999999999964,
+      "subreason_count": 5,
+      "run_cluster": false,
+      "one_bad": true,
+      "mistake": true,
+      "bullpen": true,
+      "false_under": true,
+      "quiet_late": false,
+      "carry_modifier": true
+    },
+    {
+      "game_title": "Tigers @ White Sox",
+      "full_total_label": "Hold 8",
+      "full_total_lean": "Pass",
+      "projected_full_total": 8.3,
+      "full_total_line": 8.0,
+      "actual_total": 3.0,
+      "over_hit": 0,
+      "m2_category_label": "Crooked-inning game",
+      "weather_carry": false,
+      "chaos_score": 66.62586916918075,
+      "max_chaos": 59.236382552708704,
+      "max_run_cluster": 77.90215971236,
+      "max_one_bad_inning": 0.625,
+      "max_bullpen_chaos": 56.02914979757085,
+      "max_bullpen_meltdown": 0.5384615384615384,
+      "min_lineup_conversion": 32.94667786718459,
+      "max_quiet_first5": 0.5,
+      "max_no_conversion": 0.125,
+      "max_dead_traffic": 0.25,
+      "projected_edge_to_line": 0.3000000000000007,
+      "subreason_count": 5,
+      "run_cluster": true,
+      "one_bad": true,
+      "mistake": true,
+      "bullpen": true,
+      "false_under": true,
+      "quiet_late": false,
+      "carry_modifier": false
+    }
+  ],
+  "walkForwardRandomForest": {
+    "available": true,
+    "dates": [
+      {
+        "date": "2026-05-16",
+        "games": 15,
+        "baseOverRate": 0.5333,
+        "top5Record": "3/5",
+        "top5HitRate": 0.6,
+        "top3Record": "2/3",
+        "top3HitRate": 0.6667,
+        "oldTotalRows": 13,
+        "oldTotalHitRate": 0.4615,
+        "top5Games": [
+          {
+            "game_title": "Reds @ Guardians",
+            "full_total_label": "Hold 8.5",
+            "actual_total": 11.0,
+            "over_hit": 1,
+            "m2_category_label": "Crooked-inning game",
+            "rf_over_prob": 0.6140883919095429
+          },
+          {
+            "game_title": "Marlins @ Rays",
+            "full_total_label": "Under 7.5",
+            "actual_total": 15.0,
+            "over_hit": 1,
+            "m2_category_label": "Starter-to-bullpen flip",
+            "rf_over_prob": 0.5793986328168769
+          },
+          {
+            "game_title": "Phillies @ Pirates",
+            "full_total_label": "Under 8.5",
+            "actual_total": 6.0,
+            "over_hit": 0,
+            "m2_category_label": "Early-pressure side",
+            "rf_over_prob": 0.570629167669674
+          },
+          {
+            "game_title": "Dodgers @ Angels",
+            "full_total_label": "Under 8.5",
+            "actual_total": 17.0,
+            "over_hit": 1,
+            "m2_category_label": "Starter-to-bullpen flip",
+            "rf_over_prob": 0.4978810468166831
+          },
+          {
+            "game_title": "Royals @ Cardinals",
+            "full_total_label": "Over 9",
+            "actual_total": 6.0,
+            "over_hit": 0,
+            "m2_category_label": "Starter-to-bullpen flip",
+            "rf_over_prob": 0.4724208444154932
+          }
+        ]
+      },
+      {
+        "date": "2026-05-17",
+        "games": 15,
+        "baseOverRate": 0.6667,
+        "top5Record": "3/5",
+        "top5HitRate": 0.6,
+        "top3Record": "1/3",
+        "top3HitRate": 0.3333,
+        "oldTotalRows": 12,
+        "oldTotalHitRate": 0.1667,
+        "top5Games": [
+          {
+            "game_title": "Marlins @ Rays",
+            "full_total_label": "Under 7",
+            "actual_total": 9.0,
+            "over_hit": 1,
+            "m2_category_label": "Crooked-inning game",
+            "rf_over_prob": 0.6493493491995999
+          },
+          {
+            "game_title": "Phillies @ Pirates",
+            "full_total_label": "Under 7",
+            "actual_total": 6.0,
+            "over_hit": 0,
+            "m2_category_label": "Starter-to-bullpen flip",
+            "rf_over_prob": 0.5701929386822948
+          },
+          {
+            "game_title": "Royals @ Cardinals",
+            "full_total_label": "Under 9",
+            "actual_total": 2.0,
+            "over_hit": 0,
+            "m2_category_label": "Starter-to-bullpen flip",
+            "rf_over_prob": 0.5492648076902779
+          },
+          {
+            "game_title": "Reds @ Guardians",
+            "full_total_label": "Under 8.5",
+            "actual_total": 13.0,
+            "over_hit": 1,
+            "m2_category_label": "Crooked-inning game",
+            "rf_over_prob": 0.5447736965864518
+          },
+          {
+            "game_title": "Yankees @ Mets",
+            "full_total_label": "Under 8.5",
+            "actual_total": 13.0,
+            "over_hit": 1,
+            "m2_category_label": "Early-pressure side",
+            "rf_over_prob": 0.5321923540790797
+          }
+        ]
+      },
+      {
+        "date": "2026-05-18",
+        "games": 14,
+        "baseOverRate": 0.5714,
+        "top5Record": "3/5",
+        "top5HitRate": 0.6,
+        "top3Record": "2/3",
+        "top3HitRate": 0.6667,
+        "oldTotalRows": 13,
+        "oldTotalHitRate": 0.4615,
+        "top5Games": [
+          {
+            "game_title": "Dodgers @ Padres",
+            "full_total_label": "Under 7",
+            "actual_total": 1.0,
+            "over_hit": 0,
+            "m2_category_label": "Weather-carry chaos",
+            "rf_over_prob": 0.7261089570246299
+          },
+          {
+            "game_title": "Orioles @ Rays",
+            "full_total_label": "Over 7",
+            "actual_total": 22.0,
+            "over_hit": 1,
+            "m2_category_label": "Balanced traffic game",
+            "rf_over_prob": 0.6740271632116891
+          },
+          {
+            "game_title": "Brewers @ Cubs",
+            "full_total_label": "Under 10.5",
+            "actual_total": 12.0,
+            "over_hit": 1,
+            "m2_category_label": "Weather-carry chaos",
+            "rf_over_prob": 0.627660832405173
+          },
+          {
+            "game_title": "Red Sox @ Royals",
+            "full_total_label": "Under 9",
+            "actual_total": 4.0,
+            "over_hit": 0,
+            "m2_category_label": "Dead-zone side",
+            "rf_over_prob": 0.6260302845595233
+          },
+          {
+            "game_title": "Mets @ Nationals",
+            "full_total_label": "Over 10",
+            "actual_total": 23.0,
+            "over_hit": 1,
+            "m2_category_label": "Weather-carry chaos",
+            "rf_over_prob": 0.5770833975449956
+          }
+        ]
+      },
+      {
+        "date": "2026-05-19",
+        "games": 15,
+        "baseOverRate": 0.4667,
+        "top5Record": "3/5",
+        "top5HitRate": 0.6,
+        "top3Record": "2/3",
+        "top3HitRate": 0.6667,
+        "oldTotalRows": 12,
+        "oldTotalHitRate": 0.4167,
+        "top5Games": [
+          {
+            "game_title": "Dodgers @ Padres",
+            "full_total_label": "Under 8",
+            "actual_total": 9.0,
+            "over_hit": 1,
+            "m2_category_label": "Weather-carry chaos",
+            "rf_over_prob": 0.6977217431880001
+          },
+          {
+            "game_title": "Braves @ Marlins",
+            "full_total_label": "Under 8",
+            "actual_total": 12.0,
+            "over_hit": 1,
+            "m2_category_label": "Early-pressure side",
+            "rf_over_prob": 0.6593054168633964
+          },
+          {
+            "game_title": "Orioles @ Rays",
+            "full_total_label": "Over 7.5",
+            "actual_total": 5.0,
+            "over_hit": 0,
+            "m2_category_label": "Early-pressure side",
+            "rf_over_prob": 0.6574641614847685
+          },
+          {
+            "game_title": "Mets @ Nationals",
+            "full_total_label": "Hold 9",
+            "actual_total": 15.0,
+            "over_hit": 1,
+            "m2_category_label": "Weather-carry chaos",
+            "rf_over_prob": 0.6267499042484974
+          },
+          {
+            "game_title": "Reds @ Phillies",
+            "full_total_label": "Over 8.5",
+            "actual_total": 5.0,
+            "over_hit": 0,
+            "m2_category_label": "Weather-carry chaos",
+            "rf_over_prob": 0.6150697006662381
+          }
+        ]
+      },
+      {
+        "date": "2026-05-20",
+        "games": 13,
+        "baseOverRate": 0.3846,
+        "top5Record": "2/5",
+        "top5HitRate": 0.4,
+        "top3Record": "2/3",
+        "top3HitRate": 0.6667,
+        "oldTotalRows": 9,
+        "oldTotalHitRate": 0.5556,
+        "top5Games": [
+          {
+            "game_title": "Dodgers @ Padres",
+            "full_total_label": "Under 7.5",
+            "actual_total": 4.0,
+            "over_hit": 0,
+            "m2_category_label": "Starter-to-bullpen flip",
+            "rf_over_prob": 0.7164268492637118
+          },
+          {
+            "game_title": "Mets @ Nationals",
+            "full_total_label": "Hold 9.5",
+            "actual_total": 12.0,
+            "over_hit": 1,
+            "m2_category_label": "Weather-carry chaos",
+            "rf_over_prob": 0.6266673357845627
+          },
+          {
+            "game_title": "Braves @ Marlins",
+            "full_total_label": "Under 7",
+            "actual_total": 10.0,
+            "over_hit": 1,
+            "m2_category_label": "Crooked-inning game",
+            "rf_over_prob": 0.5917853244039118
+          },
+          {
+            "game_title": "Brewers @ Cubs",
+            "full_total_label": "Hold 6.5",
+            "actual_total": 5.0,
+            "over_hit": 0,
+            "m2_category_label": "Weather-carry chaos",
+            "rf_over_prob": 0.5866946405671121
+          },
+          {
+            "game_title": "Rangers @ Rockies",
+            "full_total_label": "Hold 9.5",
+            "actual_total": 9.0,
+            "over_hit": 0,
+            "m2_category_label": "Weather-carry chaos",
+            "rf_over_prob": 0.5683484501007604
+          }
+        ]
+      },
+      {
+        "date": "2026-05-21",
+        "games": 7,
+        "baseOverRate": 0.2857,
+        "top5Record": "1/5",
+        "top5HitRate": 0.2,
+        "top3Record": "1/3",
+        "top3HitRate": 0.3333,
+        "oldTotalRows": 7,
+        "oldTotalHitRate": 0.7143,
+        "top5Games": [
+          {
+            "game_title": "Rockies @ Diamondbacks",
+            "full_total_label": "Under 9",
+            "actual_total": 3.0,
+            "over_hit": 0,
+            "m2_category_label": "Starter-to-bullpen flip",
+            "rf_over_prob": 0.7268578438038973
+          },
+          {
+            "game_title": "Mets @ Nationals",
+            "full_total_label": "Over 7.5",
+            "actual_total": 3.0,
+            "over_hit": 0,
+            "m2_category_label": "Crooked-inning game",
+            "rf_over_prob": 0.6395044396256542
+          },
+          {
+            "game_title": "Braves @ Marlins",
+            "full_total_label": "Under 7.5",
+            "actual_total": 12.0,
+            "over_hit": 1,
+            "m2_category_label": "Crooked-inning game",
+            "rf_over_prob": 0.5878539145895222
+          },
+          {
+            "game_title": "Blue Jays @ Yankees",
+            "full_total_label": "Under 8",
+            "actual_total": 2.0,
+            "over_hit": 0,
+            "m2_category_label": "Starter-to-bullpen flip",
+            "rf_over_prob": 0.4357512291368659
+          },
+          {
+            "game_title": "Athletics @ Angels",
+            "full_total_label": "Under 8.5",
+            "actual_total": 5.0,
+            "over_hit": 0,
+            "m2_category_label": "Weather-carry chaos",
+            "rf_over_prob": 0.41226459447876457
+          }
+        ]
+      },
+      {
+        "date": "2026-05-22",
+        "games": 12,
+        "baseOverRate": 0.5,
+        "top5Record": "2/5",
+        "top5HitRate": 0.4,
+        "top3Record": "2/3",
+        "top3HitRate": 0.6667,
+        "oldTotalRows": 11,
+        "oldTotalHitRate": 0.5455,
+        "top5Games": [
+          {
+            "game_title": "Athletics @ Padres",
+            "full_total_label": "Under 8",
+            "actual_total": 10.0,
+            "over_hit": 1,
+            "m2_category_label": "Starter-to-bullpen flip",
+            "rf_over_prob": 0.6220979541406664
+          },
+          {
+            "game_title": "Nationals @ Braves",
+            "full_total_label": "Under 8.5",
+            "actual_total": 9.0,
+            "over_hit": 1,
+            "m2_category_label": "Crooked-inning game",
+            "rf_over_prob": 0.621052135706647
+          },
+          {
+            "game_title": "Rockies @ Diamondbacks",
+            "full_total_label": "Under 9",
+            "actual_total": 5.0,
+            "over_hit": 0,
+            "m2_category_label": "Starter-to-bullpen flip",
+            "rf_over_prob": 0.6183554306460659
+          },
+          {
+            "game_title": "Dodgers @ Brewers",
+            "full_total_label": "Under 9",
+            "actual_total": 6.0,
+            "over_hit": 0,
+            "m2_category_label": "Starter-to-bullpen flip",
+            "rf_over_prob": 0.605163990291532
+          },
+          {
+            "game_title": "Guardians @ Phillies",
+            "full_total_label": "Under 7",
+            "actual_total": 1.0,
+            "over_hit": 0,
+            "m2_category_label": "Early-pressure side",
+            "rf_over_prob": 0.5973810264647665
+          }
+        ]
+      },
+      {
+        "date": "2026-05-23",
+        "games": 14,
+        "baseOverRate": 0.2143,
+        "top5Record": "1/5",
+        "top5HitRate": 0.2,
+        "top3Record": "0/3",
+        "top3HitRate": 0.0,
+        "oldTotalRows": 9,
+        "oldTotalHitRate": 0.7778,
+        "top5Games": [
+          {
+            "game_title": "Athletics @ Padres",
+            "full_total_label": "Under 8",
+            "actual_total": 2.0,
+            "over_hit": 0,
+            "m2_category_label": "Starter-to-bullpen flip",
+            "rf_over_prob": 0.6576421282679907
+          },
+          {
+            "game_title": "Rangers @ Angels",
+            "full_total_label": "Hold 8.5",
+            "actual_total": 7.0,
+            "over_hit": 0,
+            "m2_category_label": "Weather-carry chaos",
+            "rf_over_prob": 0.6547571992542006
+          },
+          {
+            "game_title": "Rockies @ Diamondbacks",
+            "full_total_label": "Over 9",
+            "actual_total": 9.0,
+            "over_hit": 0,
+            "m2_category_label": "Starter-to-bullpen flip",
+            "rf_over_prob": 0.5746636483480827
+          },
+          {
+            "game_title": "White Sox @ Giants",
+            "full_total_label": "Over 8",
+            "actual_total": 13.0,
+            "over_hit": 1,
+            "m2_category_label": "Weather-carry chaos",
+            "rf_over_prob": 0.5673291888844193
+          },
+          {
+            "game_title": "Pirates @ Blue Jays",
+            "full_total_label": "Hold 7.5",
+            "actual_total": 7.0,
+            "over_hit": 0,
+            "m2_category_label": "Crooked-inning game",
+            "rf_over_prob": 0.5619342696384735
+          }
+        ]
+      },
+      {
+        "date": "2026-05-30",
+        "games": 15,
+        "baseOverRate": 0.6667,
+        "top5Record": "2/5",
+        "top5HitRate": 0.4,
+        "top3Record": "1/3",
+        "top3HitRate": 0.3333,
+        "oldTotalRows": 10,
+        "oldTotalHitRate": 0.3,
+        "top5Games": [
+          {
+            "game_title": "Phillies @ Dodgers",
+            "full_total_label": "Hold 8.5",
+            "actual_total": 7.0,
+            "over_hit": 0,
+            "m2_category_label": "Early-pressure side",
+            "rf_over_prob": 0.5482218401236929
+          },
+          {
+            "game_title": "Yankees @ Athletics",
+            "full_total_label": "Under 9.5",
+            "actual_total": 10.0,
+            "over_hit": 1,
+            "m2_category_label": "Weather-carry chaos",
+            "rf_over_prob": 0.5441218257749654
+          },
+          {
+            "game_title": "Braves @ Reds",
+            "full_total_label": "Over 8.5",
+            "actual_total": 7.0,
+            "over_hit": 0,
+            "m2_category_label": "Early-pressure side",
+            "rf_over_prob": 0.5415658366103581
+          },
+          {
+            "game_title": "Giants @ Rockies",
+            "full_total_label": "Over 10.5",
+            "actual_total": 11.0,
+            "over_hit": 1,
+            "m2_category_label": "Crooked-inning game",
+            "rf_over_prob": 0.5221268168144823
+          },
+          {
+            "game_title": "Cubs @ Cardinals",
+            "full_total_label": "Hold 8.5",
+            "actual_total": 7.0,
+            "over_hit": 0,
+            "m2_category_label": "Weather-carry chaos",
+            "rf_over_prob": 0.5062056291956428
+          }
+        ]
+      },
+      {
+        "date": "2026-05-31",
+        "games": 15,
+        "baseOverRate": 0.6,
+        "top5Record": "5/5",
+        "top5HitRate": 1.0,
+        "top3Record": "3/3",
+        "top3HitRate": 1.0,
+        "oldTotalRows": 5,
+        "oldTotalHitRate": 0.2,
+        "top5Games": [
+          {
+            "game_title": "Giants @ Rockies",
+            "full_total_label": "Hold 11",
+            "actual_total": 25.0,
+            "over_hit": 1,
+            "m2_category_label": "Weather-carry chaos",
+            "rf_over_prob": 0.6207610145329134
+          },
+          {
+            "game_title": "Yankees @ Athletics",
+            "full_total_label": "Hold 10",
+            "actual_total": 21.0,
+            "over_hit": 1,
+            "m2_category_label": "Weather-carry chaos",
+            "rf_over_prob": 0.5809688430885711
+          },
+          {
+            "game_title": "Royals @ Rangers",
+            "full_total_label": "Hold 7.5",
+            "actual_total": 9.0,
+            "over_hit": 1,
+            "m2_category_label": "Crooked-inning game",
+            "rf_over_prob": 0.5688294423324969
+          },
+          {
+            "game_title": "Phillies @ Dodgers",
+            "full_total_label": "Hold 9",
+            "actual_total": 10.0,
+            "over_hit": 1,
+            "m2_category_label": "Weather-carry chaos",
+            "rf_over_prob": 0.5302012865329617
+          },
+          {
+            "game_title": "Braves @ Reds",
+            "full_total_label": "Over 8.5",
+            "actual_total": 10.0,
+            "over_hit": 1,
+            "m2_category_label": "Favorite conversion trap",
+            "rf_over_prob": 0.5176975908829321
+          }
+        ]
+      }
+    ],
+    "aggregate": {
+      "top5Record": "25/50",
+      "top5HitRate": 0.5,
+      "top3Record": "16/30",
+      "top3HitRate": 0.5333
+    }
+  }
+}

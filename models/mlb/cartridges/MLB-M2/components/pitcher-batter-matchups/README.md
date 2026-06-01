@@ -1,0 +1,130 @@
+# Pitcher-Batter Matchup Kernel
+
+M2 totals are failing when the model treats offense, starter form, and bullpen state as mostly separate averages. This component exists to answer a sharper question:
+
+> Can today's lineup punish this specific starter's pitch, zone, command, and damage shape before the market line catches it?
+
+This is not a direct O/U formula. It is a story-bucket input for `components/totals` and `components/game-shape`.
+
+## Source Intake
+
+Useful ideas pulled from the review pass:
+
+- Allen and Savala train/test by season instead of random folds and warn that naive betting every model edge can be heavily negative. Their run-line section supports hard no-bet zones and lane-specific cutoffs before a prediction becomes actionable. Source: https://arxiv.org/pdf/2511.02815
+- Their feature set also uses team hitting, team fielding, team pitching, starting pitcher variables, rest, prior result, ELO/log5 style context, and year/month controls. The useful M2 takeaway is not the exact variables; it is separating team baseline, starter, and context rather than using one blended confidence score. Source: https://arxiv.org/pdf/2511.02815
+- The CMC/TFT pitcher paper treats pitcher ERA as a multivariable time-series problem and reports stronger performance from TFT-style sequence models than recurrent baselines in its experiment. The useful M2 takeaway is sequence-state modeling for pitchers: current form should be a short sequence with attention/feature attribution, not a raw trailing average. Source: https://cdn.techscience.cn/files/cmc/2025/online/CMC0425/TSP_CMC_65413/TSP_CMC_65413.pdf
+- The TFT paper's SHAP analysis highlights slugging percentage, pitcher wins, and strikeout percentage as influential for ERA prediction. For M2, this reinforces using damage prevention and K ability as pitcher state axes, while keeping feature attribution visible. Source: https://cdn.techscience.cn/files/cmc/2025/online/CMC0425/TSP_CMC_65413/TSP_CMC_65413.pdf
+- The Fast Break Bets writeup is not a scientific source, but its "cluster luck" framing is useful: AVG/OBP can create traffic while SLG/ISO determines whether that traffic becomes runs. M2 should explicitly separate traffic from damage and stranded-run risk. Source: https://www.fastbreakbets.com/mlb-picks/mlb-betting-model-clutchwrap-supreme/
+- The same writeup adjusts daily for the exact lineup and starter, using bullpen as a collective projection when individual reliever usage is uncertain. M2 already has richer reliever context, but the daily-lineup/starter unit is the right modeling grain. Source: https://www.fastbreakbets.com/mlb-picks/mlb-betting-model-clutchwrap-supreme/
+
+## Warehouse Tables Needed
+
+Existing useful tables:
+
+- `mlb_pitch_events`: pitch type, zone, speed, call, in-play flag, pitcher, batter, game date.
+- `mlb_plate_appearances`: PA result, base state, handedness matchup, scoring, event type, pitcher, batter.
+- `mlb_hitter_split_snapshots`: lineup-day splits by pitcher hand and matchup context.
+- `mlb_hitter_statcast_game_logs`: hitter xwOBA/xSLG/barrel/hard-hit/swing metrics by game.
+- `mlb_hitter_statcast_trend_snapshots`: rolling hitter damage/process state.
+- `mlb_pitcher_mistake_shape_daily`: one-bad-inning and run-cluster pitcher/team context.
+- `mlb_pitcher_first_inning_profiles_daily`: first-cycle starter crack profile.
+- `mlb_team_whiff_persistence_profiles`: whether early whiff dominance tends to persist or rebound.
+
+New derived tables to add:
+
+- `mlb_pitcher_pitch_mix_daily`
+  - `as_of_date`, `pitcher_id`, `pitch_hand`, `window_games`
+  - pitch type share, zone share, in-zone rate, chase/waste proxy, first-pitch strike proxy
+  - whiff rate, called strike rate, hard-contact allowed rate, HR/XBH allowed rate by pitch type
+  - sequence-state fields: last 2, 3, 4, 5 appearance deltas with capped tails
+
+- `mlb_hitter_pitch_type_response_daily`
+  - `as_of_date`, `player_id`, `batter_side`, `window_games`
+  - result quality by pitch type and zone band
+  - whiff rate, called-strike vulnerability, hard-hit rate, XBH/HR rate, foul-survival proxy
+  - split by pitcher hand where sample supports it
+
+- `mlb_lineup_pitcher_matchup_daily`
+  - `as_of_date`, `game_id`, `team_role`, `opposing_pitcher_id`
+  - lineup order slots 1-9 matchup scores
+  - first-cycle, second-cycle, and F5 aggregate matchup vectors
+  - traffic-vs-damage fork: lineup can reach base vs lineup can convert
+  - starter-collapse attack score and under-suppression score
+
+## Feature Contract
+
+Per batter vs starter:
+
+- `pitchFitDamage`: hitter damage profile against starter pitch mix.
+- `pitchFitWhiff`: starter whiff shape vs hitter miss profile.
+- `zonePunish`: hitter damage zones vs starter zone leakage.
+- `commandStress`: starter walk/deep-count leakage vs hitter take/walk profile.
+- `platoonPressure`: handedness split pressure from `mlb_hitter_split_snapshots`.
+- `firstCycleRead`: expected first PA quality for lineup slot.
+- `secondCycleRead`: whether the matchup gets louder after first look.
+
+Per lineup vs starter:
+
+- `firstCycleTraffic`
+- `firstCycleDamage`
+- `starterWindowTraffic`
+- `starterWindowDamage`
+- `starterWindowWhiffSuppression`
+- `trafficNoDamageRisk`
+- `damageWithoutTrafficRisk`
+- `collapseTriggerScore`
+
+Per game:
+
+- `bothStartersMatchupVolatility`
+- `lineupDamageAsymmetry`
+- `lineupWhiffAsymmetry`
+- `pitchMixMismatchOverTail`
+- `pitchMixMatchUnderTail`
+
+## Modeling Rules
+
+- Do not use raw trailing averages.
+- Build pitcher state as a short sequence: last 2, 3, and 4 starts/appearances plus season baseline and career-ish stabilizer.
+- Build hitter state as a short sequence plus current lineup role, not just last-five box score.
+- Treat one explosion game as a tail update, not a baseline shift.
+- Keep traffic and damage separate. AVG/OBP-like pressure without SLG/ISO-like pressure is a strand/fork signal.
+- Use feature attribution per game. If M2 says over, it should name the pitch-matchup reason: command leak, pitch-type mismatch, zone leak, damage fit, or bullpen bridge mismatch.
+- No value-board promotion until this layer is settled by line bucket, story bucket, and date-level ROI.
+
+## O/U Usage
+
+The pitcher-batter matchup kernel should feed totals like this:
+
+1. Classify story path:
+   - starter hold under
+   - whiff suppression under
+   - traffic without damage strand
+   - first-cycle traffic over
+   - starter-collapse over
+   - pitch-mix damage over
+   - bridge-over after starter
+   - live-only fork
+2. Decide market lane:
+   - full-game total
+   - F5 total
+   - first-inning total
+   - team total
+   - pass/live-only
+3. Only then calculate price/EV.
+
+## First Backtest Target
+
+Use May 31 as the stress slate, but do not train on it.
+
+- Train/search through 2026-05-30.
+- Replay May 31.
+- Required report fields:
+  - story-bucket accuracy
+  - F5 O/U side accuracy
+  - full-game O/U side accuracy
+  - which misses were pitcher-batter matchup misses
+  - which misses were bullpen/fielding/environment misses
+  - absolute error as secondary context only
+
+The goal is not lower MAE. The goal is better side correctness and better "why" classification.

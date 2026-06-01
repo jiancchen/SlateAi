@@ -62,6 +62,19 @@ Use this for daily game-level context that static park-factor pages do not fully
 This is one of the best inputs for deciding when a park should matter more or less on a specific day rather than only in the long-run average.
 If a direct fetch tool gets blocked, start with this link in a browser session anyway because it is still a strong manual-review source.
 
+## Sun Position / Field Visibility
+Sun position is not the same as weather. Use this as a separate run-environment and defensive-mistake factor for outdoor day or late-afternoon games.
+
+Needed inputs:
+- venue latitude and longitude
+- field orientation
+- scheduled first pitch in local time
+- solar azimuth and elevation at first pitch and middle innings
+- cloud cover
+- roof/shadow state
+
+Use the result as `sun_visibility_risk` or `shadow_transition_risk`, not as a generic weather boost. It should modify fragile unders and high-tail O/U reads only when other game-shape inputs, such as run clustering, one-bad-inning risk, bullpen meltdown, or low lineup conversion, also support the tail.
+
 ## MLB Standings
 https://www.espn.com/mlb/standings
 Use this as a fast visual standings check.
@@ -328,6 +341,9 @@ For an MLB prediction day, the minimum reliable pull is now:
 - Schedule links used:
   https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2026-05-14&hydrate=probablePitcher,team
   https://www.mlb.com/probable-pitchers
+- Venue geometry / sun-position input:
+  `https://statsapi.mlb.com/api/v1.1/game/{game_pk}/feed/live`
+  Use `gameData.venue.location.defaultCoordinates`, `gameData.venue.location.azimuthAngle`, `gameData.venue.timeZone`, and play `hitData` from `liveData.plays.allPlays` for the M2 sun-visibility warehouse tables.
 - Pitcher or lineup links used:
   `https://statsapi.mlb.com/api/v1/people/{player_id}?hydrate=stats(group=[pitching],type=[season],season=2026)`
 - Standings links used:

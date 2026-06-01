@@ -35,6 +35,8 @@ Correction for M2 benchmarking: the May 31 O/U benchmark set is `5/5` and is now
 
 The full value board was worse than the headline side record. The side-price lane had one real value row and it hit, but the board also exposed totals, first-inning, HR, and batting-impact rows that were not ready to be bet. The next board needs to promote only lanes with settled bucket support and mark the rest as research/watch.
 
+Additional UI audit after the fact found the first-five value board could also derive and rank more F5 O/U rows client-side from projected F5 runs and Kalshi ask. The screenshot set went roughly `1/8`, with only Cubs/Cardinals Over 4.5 clearing by actual F5 total. That is now treated as a lane failure, not a bad-beat cluster. F5 O/U is downgraded to research-only until a settled calibration layer exists.
+
 ## Side board by game
 | Game | Pick | FG | F5 | 1st | Conf | Edge | Path |
 | --- | --- | --- | --- | --- | --- | --- | --- |

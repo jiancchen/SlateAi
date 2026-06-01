@@ -507,7 +507,8 @@ const buildProjectedHitProfile = ({
   opposingBullpen = {},
   opposingBullpenChain = null,
   parkContext = null,
-  weatherProfile = null
+  weatherProfile = null,
+  sunVisibilityProfile = null
 }) => {
   const offenseFeedStale = Boolean(offenseProfile?.staleFeed)
   const splitHits = /home/i.test(role)
@@ -709,6 +710,19 @@ const buildProjectedHitProfile = ({
     }
   }
 
+  const sunVisibilityRisk = Number(sunVisibilityProfile?.visibilityRiskScore)
+  const sunFirst5HitLift = Number.isFinite(sunVisibilityRisk)
+    ? clamp((sunVisibilityRisk - 30) * 0.0035, 0, 0.24)
+    : 0
+  const sunLateHitLift = Number.isFinite(sunVisibilityRisk)
+    ? clamp((sunVisibilityRisk - 45) * 0.0018, 0, 0.1)
+    : 0
+  if (sunFirst5HitLift || sunLateHitLift) {
+    starterPhaseProjection += sunFirst5HitLift
+    bullpenAdjustment += sunLateHitLift
+    qualityNotes.push('sun visibility lane')
+  }
+
   const estimatedAtBats = clamp(
     34.4 +
       (Number.isFinite(runIndex) ? (runIndex - 100) * 0.025 : 0) +
@@ -848,6 +862,7 @@ const buildProjectedHitProfile = ({
     bullpenChainScore: Number.isFinite(opposingBullpenChainScore)
       ? roundToTenths(opposingBullpenChainScore)
       : null,
+    sunVisibilityHitLift: roundToTenths(sunFirst5HitLift + sunLateHitLift),
     notes: qualityNotes
   }
 }
@@ -1057,6 +1072,208 @@ const buildTotalLean = (projectedRuns, line) => {
       lean === 'Pass'
         ? `Model projection ${projectedRuns} is essentially on the posted ${line}.`
       : `${lean} lean with a ${Math.abs(edge).toFixed(1)}-run edge against ${line}.`
+  }
+}
+
+const buildFirst5TailOverlay = ({
+  baseProjectedRuns,
+  line = null,
+  projectedHitProfiles = [],
+  teamMistakeShapes = [],
+  lineupConversionShapes = [],
+  bullpenMistakeShapes = [],
+  weatherProfile = null,
+  sunVisibilityProfile = null
+}) => {
+  const weatherLabel = `${weatherProfile?.label || ''}`.toLowerCase()
+  const temperatureF = Number(weatherProfile?.temperatureF)
+  const windDirection = `${weatherProfile?.windDirection || ''}`.toLowerCase()
+  const weatherCarry =
+    !weatherProfile?.isDome &&
+    (
+      /helps carry|wind .*out/.test(weatherLabel) ||
+      /out/.test(windDirection) ||
+      Number(weatherProfile?.runBoostFirst5 || 0) >= 0.008 ||
+      (Number.isFinite(temperatureF) && temperatureF >= 80)
+    )
+  const weatherSuppress =
+    /suppresses carry|wind .*in/.test(weatherLabel) ||
+    /in/.test(windDirection) ||
+    Number(weatherProfile?.runBoostFirst5 || 0) <= -0.008
+  const maxMistakeChaos = maxMetric(teamMistakeShapes, 'mistakeChaosIndex')
+  const maxRunClustering = maxMetric(teamMistakeShapes, 'runClusteringIndex')
+  const maxEarlyMultiRunAllowed = maxMetric(teamMistakeShapes, 'earlyMultiRunAllowedRate')
+  const maxOneBadInningAllowed = maxMetric(teamMistakeShapes, 'oneBadInningAllowedRate')
+  const maxQuietFirst5 = maxMetric(lineupConversionShapes, 'quietFirst5Rate')
+  const maxLineupDeadBatTraffic = maxMetric(lineupConversionShapes, 'deadBatTrafficRate')
+  const maxTeamDeadBatTraffic = maxMetric(teamMistakeShapes, 'deadBatTrafficRate')
+  const maxLineupTrafficNoConversion = maxMetric(lineupConversionShapes, 'trafficNoConversionRate')
+  const maxTeamTrafficNoConversion = maxMetric(teamMistakeShapes, 'trafficNoConversionRate')
+  const minLineupConversion = minMetric(lineupConversionShapes, 'lineupConversionIndex')
+  const maxBullpenMeltdown = maxMetric(teamMistakeShapes, 'bullpenMeltdownRate')
+  const maxBullpenChaos = maxMetric(bullpenMistakeShapes, 'bullpenChaosIndex')
+  const visibilityRisk = Number(sunVisibilityProfile?.visibilityRiskScore)
+  const minLineupConversionValue = Number.isFinite(minLineupConversion) ? minLineupConversion : 35
+  const first5Hits = projectedHitProfiles
+    .map((profile) => Number(profile?.first5ProjectedHits))
+    .filter(Number.isFinite)
+  const totalFirst5Hits = first5Hits.reduce((sum, value) => sum + value, 0)
+  const maxDeadBatTraffic = Math.max(maxLineupDeadBatTraffic || 0, maxTeamDeadBatTraffic || 0)
+  const maxTrafficNoConversion = Math.max(maxLineupTrafficNoConversion || 0, maxTeamTrafficNoConversion || 0)
+  const maxBigInningRate = Math.max(maxEarlyMultiRunAllowed || 0, maxOneBadInningAllowed || 0)
+
+  let tailScore =
+    clamp((Number(maxMistakeChaos || 0) - 54) * 1.45, 0, 24) +
+    clamp((Number(maxRunClustering || 0) - 62) * 1.25, 0, 24) +
+    clamp((maxBigInningRate - 0.28) * 54, 0, 22) +
+    clamp((totalFirst5Hits - 8.2) * 5.4, 0, 18) +
+    clamp((Number(maxBullpenChaos || 0) - 48) * 0.42, 0, 8) +
+    clamp((Number(maxBullpenMeltdown || 0) - 0.18) * 32, 0, 7)
+
+  if (weatherCarry) tailScore += 14
+  if (Number.isFinite(visibilityRisk)) tailScore += clamp((visibilityRisk - 24) * 0.55, 0, 12)
+
+  let strandScore =
+    clamp((Number(maxQuietFirst5 || 0) - 0.34) * 58, 0, 24) +
+    clamp((maxDeadBatTraffic - 0.24) * 44, 0, 18) +
+    clamp((maxTrafficNoConversion - 0.2) * 48, 0, 18) +
+    clamp((35 - minLineupConversionValue) * 0.65, 0, 18)
+
+  if (weatherSuppress) strandScore += 10
+  if (totalFirst5Hits <= 8.5) strandScore += clamp((8.5 - totalFirst5Hits) * 3.5, 0, 8)
+
+  tailScore = clamp(tailScore, 0, 100)
+  strandScore = clamp(strandScore, 0, 100)
+  const forkScore = Math.min(tailScore, strandScore)
+  const lowLine = Number.isFinite(line) && line <= 4.6
+  const highLine = Number.isFinite(line) && line >= 5.4
+  const catastropheCandidate =
+    tailScore >= 66 &&
+    (
+      weatherCarry ||
+      maxBigInningRate >= 0.58 ||
+      Number(maxRunClustering || 0) >= 76 ||
+      Number(maxMistakeChaos || 0) >= 68
+    )
+  const weatherFalseUnderCandidate =
+    weatherCarry &&
+    tailScore >= 54 &&
+    Number(maxMistakeChaos || 0) >= 60 &&
+    Number(maxRunClustering || 0) >= 70
+  const noWeatherTailNeedsMistake =
+    !weatherCarry &&
+    Number(maxMistakeChaos || 0) < 62 &&
+    Number(maxRunClustering || 0) < 78
+  const noWeatherExtremeFork =
+    !weatherCarry &&
+    minLineupConversionValue <= 10 &&
+    (
+      Number(maxQuietFirst5 || 0) >= 0.5 ||
+      maxDeadBatTraffic >= 0.38 ||
+      maxTrafficNoConversion >= 0.25
+    )
+  const deadUnderForkCandidate =
+    !weatherCarry &&
+    Number(maxRunClustering || 0) >= 76 &&
+    minLineupConversionValue <= 10 &&
+    Number(maxQuietFirst5 || 0) >= 0.5
+  const unsupportedOver =
+    Number.isFinite(baseProjectedRuns) &&
+    Number.isFinite(line) &&
+    baseProjectedRuns > line &&
+    tailScore < 52 &&
+    !weatherCarry
+
+  let tailLift = 0
+  let strandDrag = 0
+  let shape = 'balanced'
+  let marketExpression = 'Pass'
+  const notes = []
+
+  if (catastropheCandidate || weatherFalseUnderCandidate) {
+    shape =
+      (forkScore >= 58 && !weatherCarry) || noWeatherTailNeedsMistake || noWeatherExtremeFork
+        ? 'live-only fork'
+        : 'over-tail'
+    tailLift = clamp(
+      (tailScore - 55) * 0.043 +
+        (weatherCarry ? 0.42 : 0) +
+        (weatherFalseUnderCandidate ? 1.1 : 0) +
+        (weatherCarry && minLineupConversionValue <= 25 ? 0.35 : 0) +
+        (lowLine ? 0.2 : 0),
+      0.45,
+      2.9
+    )
+    notes.push('fat-tail run environment')
+    if (weatherCarry) notes.push('carry/weather turns ordinary contact into extra-base risk')
+    if (maxBigInningRate >= 0.58) notes.push('one-inning damage risk')
+  }
+
+  if (strandScore >= 58 && strandScore > tailScore + 8) {
+    shape = 'strand-tail'
+    strandDrag = clamp((strandScore - tailScore) * 0.04 + (weatherSuppress ? 0.28 : 0), 0.35, 2.15)
+    notes.push('traffic can strand instead of score')
+  } else if (unsupportedOver) {
+    shape = 'unsupported-over'
+    strandDrag = clamp(
+      (52 - tailScore) * 0.04 +
+        (lowLine ? 0.75 : 0.35) +
+        clamp((30 - minLineupConversionValue) * 0.025, 0, 0.45),
+      0.45,
+      2.4
+    )
+    notes.push('projected over lacks catastrophe support')
+  } else if (forkScore >= 58 && !weatherCarry) {
+    shape = 'live-only fork'
+    tailLift *= 0.55
+    notes.push('both explosion and strand paths are live')
+  }
+
+  if (deadUnderForkCandidate && shape === 'balanced') {
+    shape = 'live-only fork'
+    notes.push('dead-start profile with run-cluster tail')
+  }
+
+  const adjustedProjectedRuns = roundToTenths(
+    clamp(Number(baseProjectedRuns || 0) + tailLift - strandDrag, 1.4, 9.8)
+  )
+  const adjustedEdge = Number.isFinite(line) ? roundToTenths(adjustedProjectedRuns - line) : null
+
+  if (Number.isFinite(adjustedEdge)) {
+    if (shape === 'live-only fork') {
+      marketExpression = 'Live-only'
+    } else if (adjustedEdge >= (highLine ? 0.35 : 0.45)) {
+      marketExpression = 'Over'
+    } else if (adjustedEdge <= -0.45) {
+      marketExpression = 'Under'
+    }
+  }
+
+  return {
+    baseProjectedRuns: roundToTenths(Number(baseProjectedRuns || 0)),
+    adjustedProjectedRuns,
+    adjustedEdge,
+    marketExpression,
+    shape,
+    tailScore: roundToTenths(tailScore),
+    strandScore: roundToTenths(strandScore),
+    forkScore: roundToTenths(forkScore),
+    tailLift: roundToTenths(tailLift),
+    strandDrag: roundToTenths(strandDrag),
+    notes: [...new Set(notes)].slice(0, 4),
+    metrics: {
+      maxMistakeChaos: Number.isFinite(maxMistakeChaos) ? roundToTenths(maxMistakeChaos) : null,
+      maxRunClustering: Number.isFinite(maxRunClustering) ? roundToTenths(maxRunClustering) : null,
+      maxBigInningRate: Number.isFinite(maxBigInningRate) ? roundToTenths(maxBigInningRate) : null,
+      maxQuietFirst5: Number.isFinite(maxQuietFirst5) ? roundToTenths(maxQuietFirst5) : null,
+      maxDeadBatTraffic: Number.isFinite(maxDeadBatTraffic) ? roundToTenths(maxDeadBatTraffic) : null,
+      maxTrafficNoConversion: Number.isFinite(maxTrafficNoConversion) ? roundToTenths(maxTrafficNoConversion) : null,
+      minLineupConversion: Number.isFinite(minLineupConversion) ? roundToTenths(minLineupConversion) : null,
+      totalFirst5ProjectedHits: roundToTenths(totalFirst5Hits),
+      weatherCarry,
+      weatherSuppress,
+      visibilityRisk: Number.isFinite(visibilityRisk) ? roundToTenths(visibilityRisk) : null
+    }
   }
 }
 
@@ -2228,6 +2445,7 @@ const buildMlbAnalysisContext = (game, participants) => {
     findLineupBoardForTeam(game.lineupBoard, participants[1]?.name)
   ]
   const weatherProfile = buildMlbWeatherProfile(game.lineupBoard)
+  const sunVisibilityProfile = game.stateContext?.sunVisibility ?? null
   const offenseScores = offenseProfiles.map((profile, index) =>
     profile ? buildMlbOffenseScore(profile, participants[index]?.role) : null
   )
@@ -2256,7 +2474,8 @@ const buildMlbAnalysisContext = (game, participants) => {
       opposingBullpen: bullpenProfiles[1],
       opposingBullpenChain: bullpenChainProfiles[1],
       parkContext: game.parkContext,
-      weatherProfile
+      weatherProfile,
+      sunVisibilityProfile
     }),
     buildProjectedHitProfile({
       role: participants[1]?.role,
@@ -2268,7 +2487,8 @@ const buildMlbAnalysisContext = (game, participants) => {
       opposingBullpen: bullpenProfiles[0],
       opposingBullpenChain: bullpenChainProfiles[0],
       parkContext: game.parkContext,
-      weatherProfile
+      weatherProfile,
+      sunVisibilityProfile
     })
   ]
   const starterHoldConfidence = [
@@ -2344,6 +2564,7 @@ const buildMlbAnalysisContext = (game, participants) => {
   }
   if (starters.some((starter) => starter?.recentForm)) sourceParts.push('recent starter form')
   if (weatherProfile?.label) sourceParts.push('weather context')
+  if (Number(sunVisibilityProfile?.visibilityRiskScore) >= 18) sourceParts.push('sun-position visibility')
 
   if (starters.every(Boolean)) {
     const starterScores = starters.map((starter) => starterScore(starter))
@@ -2451,6 +2672,13 @@ const buildMlbAnalysisContext = (game, participants) => {
         buildBullpenExhaustionScore(profile)
       )
       const projectedRunProfiles = projectedHitProfiles.map((profile, index) => {
+        const sunVisibilityRisk = Number(sunVisibilityProfile?.visibilityRiskScore)
+        const sunFirst5RunLift = Number.isFinite(sunVisibilityRisk)
+          ? clamp((sunVisibilityRisk - 38) * 0.0018, 0, 0.08)
+          : 0
+        const sunLateRunLift = Number.isFinite(sunVisibilityRisk)
+          ? clamp((sunVisibilityRisk - 50) * 0.0012, 0, 0.04)
+          : 0
         const first5ConversionRate = buildRunConversionRate({
           offenseScore: offenseScores[index],
           savantScore: savantScores[index],
@@ -2471,8 +2699,8 @@ const buildMlbAnalysisContext = (game, participants) => {
           weatherProfile,
           phase: 'late'
         })
-        const first5Runs = roundToTenths(profile.first5ProjectedHits * first5ConversionRate)
-        const lateRuns = roundToTenths(profile.lateProjectedHits * lateConversionRate)
+        const first5Runs = roundToTenths(profile.first5ProjectedHits * first5ConversionRate + sunFirst5RunLift)
+        const lateRuns = roundToTenths(profile.lateProjectedHits * lateConversionRate + sunLateRunLift)
 
         return {
           first5Runs,
@@ -2515,8 +2743,15 @@ const buildMlbAnalysisContext = (game, participants) => {
           game.stateContext?.bullpenMistake?.away ?? null,
           game.stateContext?.bullpenMistake?.home ?? null
         ],
-        weatherProfile
+        weatherProfile,
+        sunVisibilityProfile
       }
+      const first5TailOverlay = buildFirst5TailOverlay({
+        baseProjectedRuns: projectedFirst5TotalRuns,
+        line: derivedFirst5TotalLine,
+        ...totalGateInputs
+      })
+      const tailAdjustedProjectedFirst5TotalRuns = first5TailOverlay.adjustedProjectedRuns
       const fullGameTotalLean = applyTotalChaosGate(
         buildTotalLean(projectedFullTotalRuns, postedTotal),
         {
@@ -2525,7 +2760,7 @@ const buildMlbAnalysisContext = (game, participants) => {
           line: postedTotal
         }
       )
-      const first5TotalLean = applyTotalChaosGate(
+      let first5TotalLean = applyTotalChaosGate(
         buildTotalLean(projectedFirst5TotalRuns, derivedFirst5TotalLine),
         {
           ...totalGateInputs,
@@ -2533,6 +2768,79 @@ const buildMlbAnalysisContext = (game, participants) => {
           line: derivedFirst5TotalLine
         }
       )
+      if (first5TailOverlay.shape === 'unsupported-over' && first5TotalLean?.lean === 'Over') {
+        first5TotalLean = {
+          ...first5TotalLean,
+          lean: 'Pass',
+          strength: 'Unsupported over',
+          label: Number.isFinite(derivedFirst5TotalLine) ? `Hold ${derivedFirst5TotalLine}` : 'Hold total',
+          summary:
+            `${first5TotalLean.summary} Tail overlay removed the over because the point edge lacks run-explosion support.`,
+          originalLean: first5TotalLean.originalLean || first5TotalLean.lean,
+          originalStrength: first5TotalLean.originalStrength || first5TotalLean.strength,
+          originalLabel: first5TotalLean.originalLabel || first5TotalLean.label
+        }
+      }
+      if (
+        first5TotalLean?.lean === 'Under' &&
+        first5TailOverlay.shape === 'over-tail' &&
+        (
+          first5TailOverlay.metrics?.weatherCarry ||
+          Number(first5TailOverlay.tailScore) >= 65
+        )
+      ) {
+        first5TotalLean = {
+          ...first5TotalLean,
+          lean: 'Pass',
+          strength: 'Tail conflict',
+          label: Number.isFinite(derivedFirst5TotalLine) ? `Hold ${derivedFirst5TotalLine}` : 'Hold total',
+          summary:
+            `${first5TotalLean.summary} Tail overlay blocks the under because the game has a credible run-explosion branch.`,
+          originalLean: first5TotalLean.originalLean || first5TotalLean.lean,
+          originalStrength: first5TotalLean.originalStrength || first5TotalLean.strength,
+          originalLabel: first5TotalLean.originalLabel || first5TotalLean.label
+        }
+      }
+      if (
+        first5TailOverlay.marketExpression === 'Over' &&
+        (first5TotalLean?.chaosGate?.vetoed || first5TotalLean?.lean !== 'Over') &&
+        first5TailOverlay.shape === 'over-tail' &&
+        Number(first5TailOverlay.adjustedEdge) >= 0.65 &&
+        (
+          first5TailOverlay.metrics?.weatherCarry ||
+          Number(first5TailOverlay.tailScore) >= 88 ||
+          Number(derivedFirst5TotalLine) <= 4.1
+        )
+      ) {
+        first5TotalLean = {
+          ...first5TotalLean,
+          lean: 'Over',
+          strength: 'Tail validated',
+          label: Number.isFinite(derivedFirst5TotalLine) ? `Over ${derivedFirst5TotalLine}` : 'Over',
+          summary:
+            `${first5TotalLean.summary} Tail overlay keeps the over alive because the failure mode is an actual run-explosion path, not a clean under.`,
+          originalLean: first5TotalLean.originalLean || first5TotalLean.lean,
+          originalStrength: first5TotalLean.originalStrength || first5TotalLean.strength,
+          originalLabel: first5TotalLean.originalLabel || first5TotalLean.label
+        }
+      }
+      if (first5TailOverlay.marketExpression === 'Live-only') {
+        first5TotalLean = {
+          ...first5TotalLean,
+          lean: 'Pass',
+          strength: 'Live-only fork',
+          label: Number.isFinite(derivedFirst5TotalLine) ? `Live only ${derivedFirst5TotalLine}` : 'Live only',
+          summary:
+            `${first5TotalLean.summary} Tail overlay says both run explosion and strand paths are live; wait for first-cycle traffic/contact before betting.`,
+          originalLean: first5TotalLean.originalLean || first5TotalLean.lean,
+          originalStrength: first5TotalLean.originalStrength || first5TotalLean.strength,
+          originalLabel: first5TotalLean.originalLabel || first5TotalLean.label
+        }
+      }
+      first5TotalLean = {
+        ...first5TotalLean,
+        tailOverlay: first5TailOverlay
+      }
       const lateTotalLean = applyTotalChaosGate(
         buildTotalLean(projectedLateTotalRuns, derivedLateTotalLine),
         {
@@ -2554,6 +2862,10 @@ const buildMlbAnalysisContext = (game, participants) => {
       const weatherNote = weatherProfile?.label
         ? `${weatherProfile.label}.`
         : ''
+      const sunVisibilityNote =
+        Number(sunVisibilityProfile?.visibilityRiskScore) >= 18
+          ? `Sun visibility ${sunVisibilityProfile.riskLabel || 'risk'}: ${sunVisibilityProfile.visibilityRiskScore}/100.`
+          : ''
       const teamScripts = participants.map((participant, index) =>
         buildTeamHitterScript({
           teamName: participant.name,
@@ -2673,16 +2985,21 @@ const buildMlbAnalysisContext = (game, participants) => {
           late: lateTotalLean,
           projectedFullTotalRuns,
           projectedFirst5TotalRuns,
+          tailAdjustedProjectedFirst5TotalRuns,
+          first5TailOverlay,
           projectedLateTotalRuns,
           derivedFirst5TotalLine,
           derivedLateTotalLine,
-          bullpenExhaustionNote: [weatherNote, bullpenExhaustionNote].filter(Boolean).join(' '),
-          weatherNote
+          bullpenExhaustionNote: [weatherNote, sunVisibilityNote, bullpenExhaustionNote].filter(Boolean).join(' '),
+          weatherNote,
+          sunVisibilityNote
         },
         firstInning: firstInningLean,
         teamScripts,
         lineupSimulation,
-        weather: weatherProfile
+        weather: weatherProfile,
+        sunVisibility: sunVisibilityProfile,
+        visibilityNote: sunVisibilityNote
       }
 
       if (hitEdge <= 0.4) {

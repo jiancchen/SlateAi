@@ -123,6 +123,8 @@
     "data:research:mlb-first-inning-gates": "python3 pipeline/mlb/research/research_mlb_first_inning_gates.py",
     "data:research:mlb-kalshi-market-shape": "python3 pipeline/mlb/research/research_mlb_kalshi_market_shape.py",
     "data:research:mlb-m2-game-shape": "python3 models/mlb/cartridges/MLB-M2/research/game_shape_backtest.py",
+    "data:research:mlb-m2-run-total-stories": "node models/mlb/cartridges/MLB-M2/research/run_total_story_engine.mjs",
+    "data:research:mlb-m2-state-formulas": "python3 models/mlb/cartridges/MLB-M2/research/state_formula_parallel_model.py",
     "data:train:mlb-market-models": "python3 pipeline/mlb/research/train_mlb_market_models.py",
     "data:generate:tennis-clay-context": "node pipeline/tennis/publish/generate-clay-context.mjs",
     "data:fetch:tennis-rankings": "node pipeline/tennis/fetchers/fetch-tennis-rankings-espn.mjs",

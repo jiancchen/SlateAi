@@ -77,6 +77,12 @@ Rule sweeps found promising sublanes:
 - Very high chaos rows were better as high-total or first-inning scoring candidates than as side picks.
 - Very low lineup-conversion rows may belong in first-five totals before full-game side.
 
+## Current Lane Downgrades
+
+First-five O/U is downgraded to research-only after the May 31 value-board failure. The displayed board had promoted raw projected-run probability minus Kalshi ask as value, but that lane did not have settled bucket calibration. It may remain visible for diagnostics and live-learning, but it cannot be ranked as bet-grade value until its probability, line, ask, edge, and chaos buckets are backtested date by date.
+
+The web value board is now a filter, not a model. It may display model-owned value rows and model-owned prop rows, but it may not create first-five ML, first-five O/U, totals EV, or scalp rows from raw projections. Those lanes have to be published by the cartridge before the UI can promote them.
+
 ## RF Lens
 
 The current RF evidence is mixed.

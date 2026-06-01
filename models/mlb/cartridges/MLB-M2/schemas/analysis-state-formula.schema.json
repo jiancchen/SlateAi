@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sports-trading-board.local/schemas/mlb-m2/analysis-state-formula.schema.json",
+  "title": "MLB-M2 analysis.stateFormula",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "version",
+    "phaseStates",
+    "storyDistribution",
+    "marketExpressions",
+    "formulaDrivers",
+    "trustLabel"
+  ],
+  "properties": {
+    "version": {
+      "type": "string",
+      "const": "MLB-M2-state-formulas-v0"
+    },
+    "trustLabel": {
+      "type": "string",
+      "enum": ["research-only", "watch", "validated", "pass"]
+    },
+    "phaseStates": {
+      "type": "object",
+      "required": ["firstCycle", "starterWindow", "bridge", "late"],
+      "properties": {
+        "firstCycle": { "$ref": "#/$defs/phaseState" },
+        "starterWindow": { "$ref": "#/$defs/phaseState" },
+        "bridge": { "$ref": "#/$defs/phaseState" },
+        "late": { "$ref": "#/$defs/phaseState" }
+      }
+    },
+    "storyDistribution": {
+      "type": "object",
+      "required": ["dead", "normal", "crooked", "fork"],
+      "properties": {
+        "dead": { "$ref": "#/$defs/probability" },
+        "normal": { "$ref": "#/$defs/probability" },
+        "crooked": { "$ref": "#/$defs/probability" },
+        "fork": { "$ref": "#/$defs/probability" }
+      }
+    },
+    "marketExpressions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["expression", "confidence", "gateReason"],
+        "properties": {
+          "expression": {
+            "type": "string",
+            "examples": ["full total over", "first-five under", "live-only", "pass"]
+          },
+          "confidence": { "$ref": "#/$defs/score" },
+          "gateReason": { "type": "string" },
+          "backtestBucket": { "type": "string" },
+          "trustLabel": {
+            "type": "string",
+            "enum": ["research-only", "watch", "validated", "pass"]
+          }
+        }
+      }
+    },
+    "formulaDrivers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["formula", "driver", "impact"],
+        "properties": {
+          "formula": { "type": "string" },
+          "driver": { "type": "string" },
+          "impact": { "$ref": "#/$defs/score" },
+          "direction": {
+            "type": "string",
+            "enum": ["over", "under", "side", "prop", "unclear"]
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "probability": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "phaseState": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["offense", "starter", "bullpen", "defenseEnvironment"],
+      "properties": {
+        "offense": {
+          "type": "object",
+          "properties": {
+            "trafficPressure": { "$ref": "#/$defs/score" },
+            "damagePressure": { "$ref": "#/$defs/score" },
+            "conversionPressure": { "$ref": "#/$defs/score" },
+            "whiffResistance": { "$ref": "#/$defs/score" },
+            "takePressure": { "$ref": "#/$defs/score" },
+            "platoonFit": { "$ref": "#/$defs/score" }
+          }
+        },
+        "starter": {
+          "type": "object",
+          "properties": {
+            "commandLeak": { "$ref": "#/$defs/score" },
+            "pitchMixExposure": { "$ref": "#/$defs/score" },
+            "zoneLeak": { "$ref": "#/$defs/score" },
+            "whiffSuppression": { "$ref": "#/$defs/score" },
+            "collapseHazard": { "$ref": "#/$defs/score" },
+            "timesThroughOrderPenalty": { "$ref": "#/$defs/score" }
+          }
+        },
+        "bullpen": {
+          "type": "object",
+          "properties": {
+            "bridgeLeak": { "$ref": "#/$defs/score" },
+            "availabilityStress": { "$ref": "#/$defs/score" },
+            "firstUpMismatch": { "$ref": "#/$defs/score" }
+          }
+        },
+        "defenseEnvironment": {
+          "type": "object",
+          "properties": {
+            "fieldingLeak": { "$ref": "#/$defs/score" },
+            "outfieldTail": { "$ref": "#/$defs/score" },
+            "parkCarry": { "$ref": "#/$defs/score" },
+            "sunVisibility": { "$ref": "#/$defs/score" },
+            "weatherCarry": { "$ref": "#/$defs/score" }
+          }
+        }
+      }
+    }
+  }
+}

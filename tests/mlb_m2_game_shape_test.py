@@ -56,6 +56,10 @@ console.log(JSON.stringify({
         self.assertGreaterEqual(shape["scores"]["chaosScore"], 70)
         self.assertGreaterEqual(shape["scores"]["realityGapScore"], 65)
         self.assertIn("full-game ML", shape["marketImplications"]["side"])
+        self.assertEqual(shape["radar"]["version"], "MLB-M2-game-shape-radar-v1")
+        self.assertEqual([axis["id"] for axis in shape["radar"]["axes"]], ["pressure", "chaos", "freeze", "air", "bridge", "flow"])
+        self.assertEqual(len(shape["radar"]["profiles"]), 2)
+        self.assertGreaterEqual(shape["radar"]["gameProfile"]["scores"]["chaos"], 70)
 
     def test_m2_rf_lens_keeps_moneyline_advisory(self) -> None:
         payload = run_node_json(

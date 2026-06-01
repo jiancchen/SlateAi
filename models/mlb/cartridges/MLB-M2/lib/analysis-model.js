@@ -537,6 +537,7 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
                 realityGapScore: gameShape.scores.realityGapScore,
                 chaosScore: gameShape.scores.chaosScore,
                 deadEarlyScore: gameShape.scores.deadEarlyScore,
+                radarDominantAxes: gameShape.radar?.gameProfile?.dominantAxes ?? [],
                 rfImpactScore: gameShape.rfLens.impactScore
               }
             : null

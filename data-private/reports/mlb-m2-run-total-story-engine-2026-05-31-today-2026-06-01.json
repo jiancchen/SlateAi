@@ -1,0 +1,3794 @@
+{
+  "schemaVersion": 1,
+  "modelId": "MLB-M2",
+  "experiment": "run_total_story_engine",
+  "postDate": "2026-05-31",
+  "today": "2026-06-01",
+  "coverage": {
+    "settledGames": 15,
+    "todayGames": 0
+  },
+  "stories": [
+    {
+      "gamePk": 822729,
+      "title": "San Diego Padres @ Washington Nationals",
+      "lines": {
+        "full": 7.5,
+        "first5": 4.4
+      },
+      "actual": {
+        "full": 6,
+        "first5": 3,
+        "finalScore": "2-4",
+        "first5Score": "0-3"
+      },
+      "sides": {
+        "full": "under",
+        "first5": "under"
+      },
+      "primaryStory": "traffic stranded: 8 innings with traffic and no runs",
+      "fullActualDrivers": [
+        "traffic stranded: 8 innings with traffic and no runs"
+      ],
+      "f5ActualDrivers": [
+        "traffic stranded: 8 innings with traffic and no runs"
+      ],
+      "counterDrivers": [
+        "loud-contact tail: 15 hard-hit balls, 2 outfield XBH"
+      ],
+      "overCauses": [
+        "loud-contact tail: 15 hard-hit balls, 2 outfield XBH"
+      ],
+      "underCauses": [
+        "traffic stranded: 8 innings with traffic and no runs"
+      ],
+      "repeatability": [
+        "pregame did see chaos: chaos warning; mistake 53.9, cluster 65, one-bad 13%",
+        "tail overlay said unsupported-over: tail 38.1, strand 23.1, fork 23.1",
+        "radar axes: Bridge 100, Pressure 55.6, Flow 52"
+      ],
+      "topInnings": [
+        {
+          "inning": 7,
+          "half": "top",
+          "team": "San Diego Padres",
+          "runs": 2,
+          "baserunners": 4,
+          "scoring": [
+            "Ty France: Double (1)",
+            "Nick Castellanos: Sac Fly (1)"
+          ]
+        },
+        {
+          "inning": 5,
+          "half": "bottom",
+          "team": "Washington Nationals",
+          "runs": 2,
+          "baserunners": 2,
+          "scoring": [
+            "James Wood: Home Run (2)"
+          ]
+        },
+        {
+          "inning": 4,
+          "half": "bottom",
+          "team": "Washington Nationals",
+          "runs": 1,
+          "baserunners": 3,
+          "scoring": [
+            "Luis García Jr.: Home Run (1)"
+          ]
+        },
+        {
+          "inning": 7,
+          "half": "bottom",
+          "team": "Washington Nationals",
+          "runs": 1,
+          "baserunners": 3,
+          "scoring": [
+            "Andrés Chaparro: Double (1)"
+          ]
+        },
+        {
+          "inning": 3,
+          "half": "bottom",
+          "team": "Washington Nationals",
+          "runs": 0,
+          "baserunners": 2,
+          "scoring": []
+        }
+      ],
+      "stats": {
+        "first5": {
+          "runs": 3,
+          "pa": 39,
+          "baserunners": 11,
+          "hits": 9,
+          "singles": 6,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 2,
+          "extraBaseHits": 3,
+          "freePasses": 2,
+          "errors": 0,
+          "strikeouts": 7,
+          "doublePlays": 1,
+          "scoringPas": 2,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 7,
+          "hardHits": 9,
+          "ballsInPlay": 29,
+          "airBalls": 16,
+          "outfieldAirBalls": 14,
+          "inningsWithTrafficNoRuns": 5,
+          "inningsWithRuns": 2,
+          "crookedInnings": 0,
+          "maxInningRuns": 2
+        },
+        "bridge": {
+          "runs": 3,
+          "pa": 19,
+          "baserunners": 8,
+          "hits": 4,
+          "singles": 2,
+          "doubles": 2,
+          "triples": 0,
+          "homeRuns": 0,
+          "extraBaseHits": 2,
+          "freePasses": 4,
+          "errors": 0,
+          "strikeouts": 2,
+          "doublePlays": 0,
+          "scoringPas": 3,
+          "twoOutRuns": 1,
+          "twoOutScoringPas": 1,
+          "runnersOnPas": 8,
+          "hardHits": 3,
+          "ballsInPlay": 12,
+          "airBalls": 4,
+          "outfieldAirBalls": 4,
+          "inningsWithTrafficNoRuns": 1,
+          "inningsWithRuns": 2,
+          "crookedInnings": 0,
+          "maxInningRuns": 2
+        },
+        "late": {
+          "runs": 0,
+          "pa": 10,
+          "baserunners": 2,
+          "hits": 2,
+          "singles": 2,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "extraBaseHits": 0,
+          "freePasses": 0,
+          "errors": 0,
+          "strikeouts": 2,
+          "doublePlays": 0,
+          "scoringPas": 0,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 1,
+          "hardHits": 3,
+          "ballsInPlay": 7,
+          "airBalls": 5,
+          "outfieldAirBalls": 4,
+          "inningsWithTrafficNoRuns": 2,
+          "inningsWithRuns": 0,
+          "crookedInnings": 0,
+          "maxInningRuns": 0
+        },
+        "total": {
+          "runs": 6,
+          "pa": 68,
+          "baserunners": 21,
+          "hits": 15,
+          "singles": 10,
+          "doubles": 3,
+          "triples": 0,
+          "homeRuns": 2,
+          "extraBaseHits": 5,
+          "freePasses": 6,
+          "errors": 0,
+          "strikeouts": 11,
+          "doublePlays": 1,
+          "scoringPas": 5,
+          "twoOutRuns": 1,
+          "twoOutScoringPas": 1,
+          "runnersOnPas": 16,
+          "hardHits": 15,
+          "ballsInPlay": 48,
+          "airBalls": 25,
+          "outfieldAirBalls": 22,
+          "inningsWithTrafficNoRuns": 8,
+          "inningsWithRuns": 4,
+          "crookedInnings": 0,
+          "maxInningRuns": 2
+        },
+        "visibility": {
+          "gamePk": 822729,
+          "fieldingErrors": 0,
+          "outfieldErrors": 0,
+          "outfieldHits": 11,
+          "outfieldAirHits": 11,
+          "outfieldExtraBaseHits": 2,
+          "outfieldHomeRuns": 2,
+          "visibilityPressureEvents": 11,
+          "visibilityRiskScore": 33.1690071458198,
+          "riskLabel": "low"
+        }
+      },
+      "pregame": {
+        "projectedFull": 10.2,
+        "projectedF5": 6,
+        "postedFull": 7.5,
+        "postedF5": 4.4,
+        "fullLean": "Over",
+        "f5Lean": "Pass",
+        "chaosVeto": false,
+        "chaosWarning": true,
+        "chaosReason": "",
+        "maxMistakeChaos": 53.9,
+        "maxRunClustering": 65,
+        "maxOneBadInningAllowed": 13,
+        "maxQuietFirst5": 38,
+        "minLineupConversion": 12.5,
+        "weatherLabel": "73°F | 0% precip",
+        "weatherCarry": false,
+        "dominantAxes": [
+          "Bridge 100",
+          "Pressure 55.6",
+          "Flow 52"
+        ],
+        "tailShape": "unsupported-over",
+        "tailScore": 38.1,
+        "strandScore": 23.1,
+        "forkScore": 23.1
+      }
+    },
+    {
+      "gamePk": 822895,
+      "title": "Kansas City Royals @ Texas Rangers",
+      "lines": {
+        "full": 7.5,
+        "first5": 4
+      },
+      "actual": {
+        "full": 9,
+        "first5": 6,
+        "finalScore": "3-6",
+        "first5Score": "0-6"
+      },
+      "sides": {
+        "full": "over",
+        "first5": "over"
+      },
+      "primaryStory": "power damage: 1 HR, 7 XBH; traffic avalanche without HR dependency: 16 F5 baserunners, 10 hits, 5 free passes; free-pass fuel: 11 BB/HBP/CI, 5 before the 6th",
+      "fullActualDrivers": [
+        "power damage: 1 HR, 7 XBH",
+        "traffic avalanche without HR dependency: 16 F5 baserunners, 10 hits, 5 free passes",
+        "free-pass fuel: 11 BB/HBP/CI, 5 before the 6th",
+        "loud-contact tail: 19 hard-hit balls, 6 outfield XBH",
+        "two-out scoring: 6 runs with two outs"
+      ],
+      "f5ActualDrivers": [
+        "power damage: 1 HR, 7 XBH",
+        "traffic avalanche without HR dependency: 16 F5 baserunners, 10 hits, 5 free passes",
+        "free-pass fuel: 11 BB/HBP/CI, 5 before the 6th",
+        "loud-contact tail: 19 hard-hit balls, 6 outfield XBH",
+        "two-out scoring: 6 runs with two outs"
+      ],
+      "counterDrivers": [
+        "traffic stranded: 9 innings with traffic and no runs",
+        "bat-missing held the run chain down: 20 strikeouts",
+        "rally deletion: 4 double-play/force-DP events"
+      ],
+      "overCauses": [
+        "power damage: 1 HR, 7 XBH",
+        "traffic avalanche without HR dependency: 16 F5 baserunners, 10 hits, 5 free passes",
+        "free-pass fuel: 11 BB/HBP/CI, 5 before the 6th",
+        "loud-contact tail: 19 hard-hit balls, 6 outfield XBH",
+        "two-out scoring: 6 runs with two outs"
+      ],
+      "underCauses": [
+        "traffic stranded: 9 innings with traffic and no runs",
+        "bat-missing held the run chain down: 20 strikeouts",
+        "rally deletion: 4 double-play/force-DP events"
+      ],
+      "repeatability": [
+        "pregame did see chaos: under exposed to mistake-chaos and one-big-inning risk; mistake 69.8, cluster 75.4, one-bad 63%",
+        "tail overlay said over-tail: tail 69.8, strand 22.6, fork 22.6",
+        "radar axes: Flow 100, Bridge 90.8, Chaos 71.3"
+      ],
+      "topInnings": [
+        {
+          "inning": 1,
+          "half": "bottom",
+          "team": "Texas Rangers",
+          "runs": 4,
+          "baserunners": 5,
+          "scoring": [
+            "Ezequiel Duran: Triple (2)",
+            "Alejandro Osuna: Single (1)",
+            "Kyle Higashioka: Double (1)"
+          ]
+        },
+        {
+          "inning": 4,
+          "half": "bottom",
+          "team": "Texas Rangers",
+          "runs": 2,
+          "baserunners": 5,
+          "scoring": [
+            "Josh Jung: Single (2)"
+          ]
+        },
+        {
+          "inning": 8,
+          "half": "top",
+          "team": "Kansas City Royals",
+          "runs": 2,
+          "baserunners": 4,
+          "scoring": [
+            "Michael Massey: Home Run (2)"
+          ]
+        },
+        {
+          "inning": 7,
+          "half": "top",
+          "team": "Kansas City Royals",
+          "runs": 1,
+          "baserunners": 3,
+          "scoring": [
+            "Lane Thomas: Single (1)"
+          ]
+        },
+        {
+          "inning": 3,
+          "half": "top",
+          "team": "Kansas City Royals",
+          "runs": 0,
+          "baserunners": 2,
+          "scoring": []
+        }
+      ],
+      "stats": {
+        "first5": {
+          "runs": 6,
+          "pa": 45,
+          "baserunners": 16,
+          "hits": 10,
+          "singles": 5,
+          "doubles": 4,
+          "triples": 1,
+          "homeRuns": 0,
+          "extraBaseHits": 5,
+          "freePasses": 5,
+          "errors": 1,
+          "strikeouts": 14,
+          "doublePlays": 2,
+          "scoringPas": 4,
+          "twoOutRuns": 4,
+          "twoOutScoringPas": 3,
+          "runnersOnPas": 12,
+          "hardHits": 12,
+          "ballsInPlay": 26,
+          "airBalls": 17,
+          "outfieldAirBalls": 14,
+          "inningsWithTrafficNoRuns": 5,
+          "inningsWithRuns": 2,
+          "crookedInnings": 1,
+          "maxInningRuns": 4
+        },
+        "bridge": {
+          "runs": 1,
+          "pa": 18,
+          "baserunners": 7,
+          "hits": 5,
+          "singles": 5,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "extraBaseHits": 0,
+          "freePasses": 2,
+          "errors": 0,
+          "strikeouts": 4,
+          "doublePlays": 1,
+          "scoringPas": 1,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 6,
+          "hardHits": 4,
+          "ballsInPlay": 12,
+          "airBalls": 6,
+          "outfieldAirBalls": 5,
+          "inningsWithTrafficNoRuns": 2,
+          "inningsWithRuns": 1,
+          "crookedInnings": 0,
+          "maxInningRuns": 1
+        },
+        "late": {
+          "runs": 2,
+          "pa": 15,
+          "baserunners": 7,
+          "hits": 3,
+          "singles": 1,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 1,
+          "extraBaseHits": 2,
+          "freePasses": 4,
+          "errors": 0,
+          "strikeouts": 2,
+          "doublePlays": 1,
+          "scoringPas": 1,
+          "twoOutRuns": 2,
+          "twoOutScoringPas": 1,
+          "runnersOnPas": 5,
+          "hardHits": 3,
+          "ballsInPlay": 9,
+          "airBalls": 6,
+          "outfieldAirBalls": 4,
+          "inningsWithTrafficNoRuns": 2,
+          "inningsWithRuns": 1,
+          "crookedInnings": 0,
+          "maxInningRuns": 2
+        },
+        "total": {
+          "runs": 9,
+          "pa": 78,
+          "baserunners": 30,
+          "hits": 18,
+          "singles": 11,
+          "doubles": 5,
+          "triples": 1,
+          "homeRuns": 1,
+          "extraBaseHits": 7,
+          "freePasses": 11,
+          "errors": 1,
+          "strikeouts": 20,
+          "doublePlays": 4,
+          "scoringPas": 6,
+          "twoOutRuns": 6,
+          "twoOutScoringPas": 4,
+          "runnersOnPas": 23,
+          "hardHits": 19,
+          "ballsInPlay": 47,
+          "airBalls": 29,
+          "outfieldAirBalls": 23,
+          "inningsWithTrafficNoRuns": 9,
+          "inningsWithRuns": 4,
+          "crookedInnings": 1,
+          "maxInningRuns": 4
+        },
+        "visibility": {
+          "gamePk": 822895,
+          "fieldingErrors": 1,
+          "outfieldErrors": 0,
+          "outfieldHits": 15,
+          "outfieldAirHits": 15,
+          "outfieldExtraBaseHits": 6,
+          "outfieldHomeRuns": 1,
+          "visibilityPressureEvents": 16,
+          "visibilityRiskScore": 37.03146821799969,
+          "riskLabel": "low"
+        }
+      },
+      "pregame": {
+        "projectedFull": 6.2,
+        "projectedF5": 3.3,
+        "postedFull": 7.5,
+        "postedF5": 4,
+        "fullLean": "Pass",
+        "f5Lean": "Pass",
+        "chaosVeto": true,
+        "chaosWarning": true,
+        "chaosReason": "under exposed to mistake-chaos and one-big-inning risk",
+        "maxMistakeChaos": 69.8,
+        "maxRunClustering": 75.4,
+        "maxOneBadInningAllowed": 63,
+        "maxQuietFirst5": 50,
+        "minLineupConversion": 18.4,
+        "weatherLabel": "Dome In Domed Stadium",
+        "weatherCarry": false,
+        "dominantAxes": [
+          "Flow 100",
+          "Bridge 90.8",
+          "Chaos 71.3"
+        ],
+        "tailShape": "over-tail",
+        "tailScore": 69.8,
+        "strandScore": 22.6,
+        "forkScore": 22.6
+      }
+    },
+    {
+      "gamePk": 822976,
+      "title": "Los Angeles Angels @ Tampa Bay Rays",
+      "lines": {
+        "full": 8.5,
+        "first5": 4.7
+      },
+      "actual": {
+        "full": 7,
+        "first5": 4,
+        "finalScore": "2-5",
+        "first5Score": "1-3"
+      },
+      "sides": {
+        "full": "under",
+        "first5": "under"
+      },
+      "primaryStory": "traffic stranded: 8 innings with traffic and no runs",
+      "fullActualDrivers": [
+        "traffic stranded: 8 innings with traffic and no runs"
+      ],
+      "f5ActualDrivers": [
+        "traffic stranded: 8 innings with traffic and no runs"
+      ],
+      "counterDrivers": [
+        "free-pass fuel: 9 BB/HBP/CI, 6 before the 6th",
+        "defensive leak: 2 fielding errors, 0 outfield errors",
+        "loud-contact tail: 21 hard-hit balls, 2 outfield XBH",
+        "two-out scoring: 4 runs with two outs"
+      ],
+      "overCauses": [
+        "free-pass fuel: 9 BB/HBP/CI, 6 before the 6th",
+        "defensive leak: 2 fielding errors, 0 outfield errors",
+        "loud-contact tail: 21 hard-hit balls, 2 outfield XBH",
+        "two-out scoring: 4 runs with two outs"
+      ],
+      "underCauses": [
+        "traffic stranded: 8 innings with traffic and no runs"
+      ],
+      "repeatability": [
+        "pregame did see chaos: chaos warning; mistake 77.9, cluster 74.2, one-bad 71%",
+        "tail overlay said live-only fork: tail 80.9, strand 44, fork 44",
+        "radar axes: Bridge 83.8, Chaos 74.3, Freeze 68.9"
+      ],
+      "topInnings": [
+        {
+          "inning": 3,
+          "half": "bottom",
+          "team": "Tampa Bay Rays",
+          "runs": 2,
+          "baserunners": 5,
+          "scoring": [
+            "Victor Mesa Jr.: Single (1)",
+            "Cedric Mullins: Walk (1)"
+          ]
+        },
+        {
+          "inning": 7,
+          "half": "bottom",
+          "team": "Tampa Bay Rays",
+          "runs": 2,
+          "baserunners": 4,
+          "scoring": [
+            "Ben Williamson: Single (1)",
+            "Yandy Díaz: Walk (1)"
+          ]
+        },
+        {
+          "inning": 1,
+          "half": "bottom",
+          "team": "Tampa Bay Rays",
+          "runs": 1,
+          "baserunners": 2,
+          "scoring": [
+            "Jonathan Aranda: Home Run (1)"
+          ]
+        },
+        {
+          "inning": 2,
+          "half": "top",
+          "team": "Los Angeles Angels",
+          "runs": 1,
+          "baserunners": 2,
+          "scoring": [
+            "Nick Madrigal: Flyout (1)"
+          ]
+        },
+        {
+          "inning": 7,
+          "half": "top",
+          "team": "Los Angeles Angels",
+          "runs": 1,
+          "baserunners": 2,
+          "scoring": [
+            "Logan O'Hoppe: Home Run (1)"
+          ]
+        }
+      ],
+      "stats": {
+        "first5": {
+          "runs": 4,
+          "pa": 45,
+          "baserunners": 15,
+          "hits": 9,
+          "singles": 7,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 1,
+          "extraBaseHits": 2,
+          "freePasses": 6,
+          "errors": 0,
+          "strikeouts": 6,
+          "doublePlays": 0,
+          "scoringPas": 4,
+          "twoOutRuns": 1,
+          "twoOutScoringPas": 1,
+          "runnersOnPas": 10,
+          "hardHits": 13,
+          "ballsInPlay": 33,
+          "airBalls": 18,
+          "outfieldAirBalls": 16,
+          "inningsWithTrafficNoRuns": 4,
+          "inningsWithRuns": 3,
+          "crookedInnings": 0,
+          "maxInningRuns": 2
+        },
+        "bridge": {
+          "runs": 3,
+          "pa": 21,
+          "baserunners": 8,
+          "hits": 5,
+          "singles": 4,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 1,
+          "extraBaseHits": 1,
+          "freePasses": 3,
+          "errors": 0,
+          "strikeouts": 4,
+          "doublePlays": 0,
+          "scoringPas": 3,
+          "twoOutRuns": 3,
+          "twoOutScoringPas": 3,
+          "runnersOnPas": 6,
+          "hardHits": 6,
+          "ballsInPlay": 14,
+          "airBalls": 9,
+          "outfieldAirBalls": 7,
+          "inningsWithTrafficNoRuns": 2,
+          "inningsWithRuns": 2,
+          "crookedInnings": 0,
+          "maxInningRuns": 2
+        },
+        "late": {
+          "runs": 0,
+          "pa": 11,
+          "baserunners": 3,
+          "hits": 2,
+          "singles": 1,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 0,
+          "extraBaseHits": 1,
+          "freePasses": 0,
+          "errors": 1,
+          "strikeouts": 2,
+          "doublePlays": 1,
+          "scoringPas": 0,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 2,
+          "hardHits": 2,
+          "ballsInPlay": 9,
+          "airBalls": 5,
+          "outfieldAirBalls": 3,
+          "inningsWithTrafficNoRuns": 2,
+          "inningsWithRuns": 0,
+          "crookedInnings": 0,
+          "maxInningRuns": 0
+        },
+        "total": {
+          "runs": 7,
+          "pa": 77,
+          "baserunners": 26,
+          "hits": 16,
+          "singles": 12,
+          "doubles": 2,
+          "triples": 0,
+          "homeRuns": 2,
+          "extraBaseHits": 4,
+          "freePasses": 9,
+          "errors": 1,
+          "strikeouts": 12,
+          "doublePlays": 1,
+          "scoringPas": 7,
+          "twoOutRuns": 4,
+          "twoOutScoringPas": 4,
+          "runnersOnPas": 18,
+          "hardHits": 21,
+          "ballsInPlay": 56,
+          "airBalls": 32,
+          "outfieldAirBalls": 26,
+          "inningsWithTrafficNoRuns": 8,
+          "inningsWithRuns": 5,
+          "crookedInnings": 0,
+          "maxInningRuns": 2
+        },
+        "visibility": {
+          "gamePk": 822976,
+          "fieldingErrors": 2,
+          "outfieldErrors": 0,
+          "outfieldHits": 11,
+          "outfieldAirHits": 11,
+          "outfieldExtraBaseHits": 2,
+          "outfieldHomeRuns": 2,
+          "visibilityPressureEvents": 13,
+          "visibilityRiskScore": 0,
+          "riskLabel": "none"
+        }
+      },
+      "pregame": {
+        "projectedFull": 8.5,
+        "projectedF5": 4.7,
+        "postedFull": 8.5,
+        "postedF5": 4.7,
+        "fullLean": "Pass",
+        "f5Lean": "Pass",
+        "chaosVeto": false,
+        "chaosWarning": true,
+        "chaosReason": "",
+        "maxMistakeChaos": 77.9,
+        "maxRunClustering": 74.2,
+        "maxOneBadInningAllowed": 71,
+        "maxQuietFirst5": 57,
+        "minLineupConversion": 0,
+        "weatherLabel": "Dome In Domed Stadium",
+        "weatherCarry": false,
+        "dominantAxes": [
+          "Bridge 83.8",
+          "Chaos 74.3",
+          "Freeze 68.9"
+        ],
+        "tailShape": "live-only fork",
+        "tailScore": 80.9,
+        "strandScore": 44,
+        "forkScore": 44
+      }
+    },
+    {
+      "gamePk": 823053,
+      "title": "Chicago Cubs @ St. Louis Cardinals",
+      "lines": {
+        "full": 8.5,
+        "first5": 4.5
+      },
+      "actual": {
+        "full": 6,
+        "first5": 5,
+        "finalScore": "1-5",
+        "first5Score": "0-5"
+      },
+      "sides": {
+        "full": "under",
+        "first5": "over"
+      },
+      "primaryStory": "traffic avalanche without HR dependency: 12 F5 baserunners, 10 hits, 2 free passes; loud-contact tail: 27 hard-hit balls, 1 outfield XBH",
+      "fullActualDrivers": [
+        "power stayed contained: 1 HR, 2 XBH",
+        "traffic stranded: 8 innings with traffic and no runs",
+        "bridge/late stayed clean: 1 runs after the 5th"
+      ],
+      "f5ActualDrivers": [
+        "traffic avalanche without HR dependency: 12 F5 baserunners, 10 hits, 2 free passes",
+        "loud-contact tail: 27 hard-hit balls, 1 outfield XBH"
+      ],
+      "counterDrivers": [
+        "power stayed contained: 1 HR, 2 XBH",
+        "traffic stranded: 8 innings with traffic and no runs",
+        "bridge/late stayed clean: 1 runs after the 5th"
+      ],
+      "overCauses": [
+        "traffic avalanche without HR dependency: 12 F5 baserunners, 10 hits, 2 free passes",
+        "loud-contact tail: 27 hard-hit balls, 1 outfield XBH"
+      ],
+      "underCauses": [
+        "power stayed contained: 1 HR, 2 XBH",
+        "traffic stranded: 8 innings with traffic and no runs",
+        "bridge/late stayed clean: 1 runs after the 5th"
+      ],
+      "repeatability": [
+        "pregame did see chaos: over exposed to quiet-start and traffic-without-conversion risk; mistake 63.3, cluster 75.1, one-bad 57%",
+        "pregame carry was live: 83°F | Wind 6 mph In | 16% precip",
+        "tail overlay said over-tail: tail 75.7, strand 30.2, fork 30.2",
+        "radar axes: Bridge 100, Chaos 63.1, Flow 60"
+      ],
+      "topInnings": [
+        {
+          "inning": 3,
+          "half": "bottom",
+          "team": "St. Louis Cardinals",
+          "runs": 3,
+          "baserunners": 4,
+          "scoring": [
+            "Alec Burleson: Single (1)",
+            "Masyn Winn: Single (2)"
+          ]
+        },
+        {
+          "inning": 1,
+          "half": "bottom",
+          "team": "St. Louis Cardinals",
+          "runs": 2,
+          "baserunners": 3,
+          "scoring": [
+            "Jordan Walker: Single (1)",
+            "Alec Burleson: Pop Out (1)"
+          ]
+        },
+        {
+          "inning": 6,
+          "half": "top",
+          "team": "Chicago Cubs",
+          "runs": 1,
+          "baserunners": 1,
+          "scoring": [
+            "Alex Bregman: Home Run (1)"
+          ]
+        },
+        {
+          "inning": 1,
+          "half": "top",
+          "team": "Chicago Cubs",
+          "runs": 0,
+          "baserunners": 2,
+          "scoring": []
+        },
+        {
+          "inning": 7,
+          "half": "top",
+          "team": "Chicago Cubs",
+          "runs": 0,
+          "baserunners": 2,
+          "scoring": []
+        }
+      ],
+      "stats": {
+        "first5": {
+          "runs": 5,
+          "pa": 42,
+          "baserunners": 12,
+          "hits": 10,
+          "singles": 10,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "extraBaseHits": 0,
+          "freePasses": 2,
+          "errors": 0,
+          "strikeouts": 8,
+          "doublePlays": 0,
+          "scoringPas": 4,
+          "twoOutRuns": 3,
+          "twoOutScoringPas": 2,
+          "runnersOnPas": 10,
+          "hardHits": 15,
+          "ballsInPlay": 32,
+          "airBalls": 20,
+          "outfieldAirBalls": 13,
+          "inningsWithTrafficNoRuns": 4,
+          "inningsWithRuns": 2,
+          "crookedInnings": 1,
+          "maxInningRuns": 3
+        },
+        "bridge": {
+          "runs": 1,
+          "pa": 16,
+          "baserunners": 5,
+          "hits": 3,
+          "singles": 1,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 1,
+          "extraBaseHits": 2,
+          "freePasses": 2,
+          "errors": 0,
+          "strikeouts": 3,
+          "doublePlays": 1,
+          "scoringPas": 1,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 3,
+          "hardHits": 7,
+          "ballsInPlay": 11,
+          "airBalls": 6,
+          "outfieldAirBalls": 4,
+          "inningsWithTrafficNoRuns": 2,
+          "inningsWithRuns": 1,
+          "crookedInnings": 0,
+          "maxInningRuns": 1
+        },
+        "late": {
+          "runs": 0,
+          "pa": 11,
+          "baserunners": 3,
+          "hits": 2,
+          "singles": 2,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "extraBaseHits": 0,
+          "freePasses": 1,
+          "errors": 0,
+          "strikeouts": 2,
+          "doublePlays": 1,
+          "scoringPas": 0,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 3,
+          "hardHits": 5,
+          "ballsInPlay": 8,
+          "airBalls": 5,
+          "outfieldAirBalls": 4,
+          "inningsWithTrafficNoRuns": 2,
+          "inningsWithRuns": 0,
+          "crookedInnings": 0,
+          "maxInningRuns": 0
+        },
+        "total": {
+          "runs": 6,
+          "pa": 69,
+          "baserunners": 20,
+          "hits": 15,
+          "singles": 13,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 1,
+          "extraBaseHits": 2,
+          "freePasses": 5,
+          "errors": 0,
+          "strikeouts": 13,
+          "doublePlays": 2,
+          "scoringPas": 5,
+          "twoOutRuns": 3,
+          "twoOutScoringPas": 2,
+          "runnersOnPas": 16,
+          "hardHits": 27,
+          "ballsInPlay": 51,
+          "airBalls": 31,
+          "outfieldAirBalls": 21,
+          "inningsWithTrafficNoRuns": 8,
+          "inningsWithRuns": 3,
+          "crookedInnings": 1,
+          "maxInningRuns": 3
+        },
+        "visibility": {
+          "gamePk": 823053,
+          "fieldingErrors": 0,
+          "outfieldErrors": 0,
+          "outfieldHits": 13,
+          "outfieldAirHits": 13,
+          "outfieldExtraBaseHits": 1,
+          "outfieldHomeRuns": 1,
+          "visibilityPressureEvents": 13,
+          "visibilityRiskScore": 19.616911677623598,
+          "riskLabel": "low"
+        }
+      },
+      "pregame": {
+        "projectedFull": 9.4,
+        "projectedF5": 5,
+        "postedFull": 8.5,
+        "postedF5": 4.5,
+        "fullLean": "Pass",
+        "f5Lean": "Over",
+        "chaosVeto": true,
+        "chaosWarning": true,
+        "chaosReason": "over exposed to quiet-start and traffic-without-conversion risk",
+        "maxMistakeChaos": 63.3,
+        "maxRunClustering": 75.1,
+        "maxOneBadInningAllowed": 57,
+        "maxQuietFirst5": 50,
+        "minLineupConversion": 21.6,
+        "weatherLabel": "83°F | Wind 6 mph In | 16% precip",
+        "weatherCarry": true,
+        "dominantAxes": [
+          "Bridge 100",
+          "Chaos 63.1",
+          "Flow 60"
+        ],
+        "tailShape": "over-tail",
+        "tailScore": 75.7,
+        "strandScore": 30.2,
+        "forkScore": 30.2
+      }
+    },
+    {
+      "gamePk": 823133,
+      "title": "Arizona Diamondbacks @ Seattle Mariners",
+      "lines": {
+        "full": 7.5,
+        "first5": 4.4
+      },
+      "actual": {
+        "full": 5,
+        "first5": 1,
+        "finalScore": "2-3",
+        "first5Score": "0-1"
+      },
+      "sides": {
+        "full": "under",
+        "first5": "under"
+      },
+      "primaryStory": "power stayed contained: 2 HR, 3 XBH; traffic stranded: 8 innings with traffic and no runs; bat-missing held the run chain down: 18 strikeouts",
+      "fullActualDrivers": [
+        "power stayed contained: 2 HR, 3 XBH",
+        "traffic stranded: 8 innings with traffic and no runs",
+        "bat-missing held the run chain down: 18 strikeouts"
+      ],
+      "f5ActualDrivers": [
+        "power stayed contained: 2 HR, 3 XBH",
+        "traffic stranded: 8 innings with traffic and no runs",
+        "bat-missing held the run chain down: 18 strikeouts"
+      ],
+      "counterDrivers": [
+        "free-pass fuel: 9 BB/HBP/CI, 5 before the 6th",
+        "post-starter scoring: 2 bridge runs and 2 late runs",
+        "loud-contact tail: 14 hard-hit balls, 1 outfield XBH"
+      ],
+      "overCauses": [
+        "free-pass fuel: 9 BB/HBP/CI, 5 before the 6th",
+        "post-starter scoring: 2 bridge runs and 2 late runs",
+        "loud-contact tail: 14 hard-hit balls, 1 outfield XBH"
+      ],
+      "underCauses": [
+        "power stayed contained: 2 HR, 3 XBH",
+        "traffic stranded: 8 innings with traffic and no runs",
+        "bat-missing held the run chain down: 18 strikeouts"
+      ],
+      "repeatability": [
+        "tail overlay said unsupported-over: tail 40.2, strand 0, fork 0",
+        "radar axes: Pressure 75.8, Flow 60, Chaos 52.2"
+      ],
+      "topInnings": [
+        {
+          "inning": 2,
+          "half": "bottom",
+          "team": "Seattle Mariners",
+          "runs": 1,
+          "baserunners": 4,
+          "scoring": [
+            "Cole Young: Home Run (1)"
+          ]
+        },
+        {
+          "inning": 6,
+          "half": "top",
+          "team": "Arizona Diamondbacks",
+          "runs": 1,
+          "baserunners": 2,
+          "scoring": [
+            "Nolan Arenado: Strikeout (1)"
+          ]
+        },
+        {
+          "inning": 6,
+          "half": "bottom",
+          "team": "Seattle Mariners",
+          "runs": 1,
+          "baserunners": 2,
+          "scoring": [
+            "Dominic Canzone: Home Run (1)"
+          ]
+        },
+        {
+          "inning": 10,
+          "half": "bottom",
+          "team": "Seattle Mariners",
+          "runs": 1,
+          "baserunners": 2,
+          "scoring": [
+            "Victor Robles: Single (1)"
+          ]
+        },
+        {
+          "inning": 8,
+          "half": "top",
+          "team": "Arizona Diamondbacks",
+          "runs": 1,
+          "baserunners": 1,
+          "scoring": [
+            "Ketel Marte: Sac Fly (1)"
+          ]
+        }
+      ],
+      "stats": {
+        "first5": {
+          "runs": 1,
+          "pa": 41,
+          "baserunners": 12,
+          "hits": 7,
+          "singles": 6,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 1,
+          "extraBaseHits": 1,
+          "freePasses": 5,
+          "errors": 0,
+          "strikeouts": 7,
+          "doublePlays": 1,
+          "scoringPas": 1,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 7,
+          "hardHits": 6,
+          "ballsInPlay": 29,
+          "airBalls": 13,
+          "outfieldAirBalls": 9,
+          "inningsWithTrafficNoRuns": 5,
+          "inningsWithRuns": 1,
+          "crookedInnings": 0,
+          "maxInningRuns": 1
+        },
+        "bridge": {
+          "runs": 2,
+          "pa": 16,
+          "baserunners": 5,
+          "hits": 4,
+          "singles": 2,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 1,
+          "extraBaseHits": 2,
+          "freePasses": 1,
+          "errors": 0,
+          "strikeouts": 4,
+          "doublePlays": 1,
+          "scoringPas": 2,
+          "twoOutRuns": 1,
+          "twoOutScoringPas": 1,
+          "runnersOnPas": 4,
+          "hardHits": 5,
+          "ballsInPlay": 11,
+          "airBalls": 4,
+          "outfieldAirBalls": 3,
+          "inningsWithTrafficNoRuns": 1,
+          "inningsWithRuns": 2,
+          "crookedInnings": 0,
+          "maxInningRuns": 1
+        },
+        "late": {
+          "runs": 2,
+          "pa": 23,
+          "baserunners": 6,
+          "hits": 3,
+          "singles": 3,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "extraBaseHits": 0,
+          "freePasses": 3,
+          "errors": 0,
+          "strikeouts": 7,
+          "doublePlays": 0,
+          "scoringPas": 2,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 7,
+          "hardHits": 3,
+          "ballsInPlay": 13,
+          "airBalls": 6,
+          "outfieldAirBalls": 5,
+          "inningsWithTrafficNoRuns": 2,
+          "inningsWithRuns": 2,
+          "crookedInnings": 0,
+          "maxInningRuns": 1
+        },
+        "total": {
+          "runs": 5,
+          "pa": 80,
+          "baserunners": 23,
+          "hits": 14,
+          "singles": 11,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 2,
+          "extraBaseHits": 3,
+          "freePasses": 9,
+          "errors": 0,
+          "strikeouts": 18,
+          "doublePlays": 2,
+          "scoringPas": 5,
+          "twoOutRuns": 1,
+          "twoOutScoringPas": 1,
+          "runnersOnPas": 18,
+          "hardHits": 14,
+          "ballsInPlay": 53,
+          "airBalls": 23,
+          "outfieldAirBalls": 17,
+          "inningsWithTrafficNoRuns": 8,
+          "inningsWithRuns": 5,
+          "crookedInnings": 0,
+          "maxInningRuns": 1
+        },
+        "visibility": {
+          "gamePk": 823133,
+          "fieldingErrors": 1,
+          "outfieldErrors": 0,
+          "outfieldHits": 8,
+          "outfieldAirHits": 8,
+          "outfieldExtraBaseHits": 1,
+          "outfieldHomeRuns": 2,
+          "visibilityPressureEvents": 9,
+          "visibilityRiskScore": 15.070913747319256,
+          "riskLabel": "none"
+        }
+      },
+      "pregame": {
+        "projectedFull": 9.1,
+        "projectedF5": 5.3,
+        "postedFull": 7.5,
+        "postedF5": 4.4,
+        "fullLean": "Over",
+        "f5Lean": "Pass",
+        "chaosVeto": false,
+        "chaosWarning": false,
+        "chaosReason": "",
+        "maxMistakeChaos": 51.6,
+        "maxRunClustering": 70.4,
+        "maxOneBadInningAllowed": 38,
+        "maxQuietFirst5": 25,
+        "minLineupConversion": 56.9,
+        "weatherLabel": "Dome In Domed Stadium",
+        "weatherCarry": false,
+        "dominantAxes": [
+          "Pressure 75.8",
+          "Flow 60",
+          "Chaos 52.2"
+        ],
+        "tailShape": "unsupported-over",
+        "tailScore": 40.2,
+        "strandScore": 0,
+        "forkScore": 0
+      }
+    },
+    {
+      "gamePk": 823373,
+      "title": "Minnesota Twins @ Pittsburgh Pirates",
+      "lines": {
+        "full": 7.5,
+        "first5": 4.1
+      },
+      "actual": {
+        "full": 12,
+        "first5": 9,
+        "finalScore": "3-9",
+        "first5Score": "0-9"
+      },
+      "sides": {
+        "full": "over",
+        "first5": "over"
+      },
+      "primaryStory": "starter-window crooked inning: max F5 inning 5, crooked F5 innings 1; power damage: 4 HR, 5 XBH; free-pass fuel: 7 BB/HBP/CI, 6 before the 6th",
+      "fullActualDrivers": [
+        "starter-window crooked inning: max F5 inning 5, crooked F5 innings 1",
+        "power damage: 4 HR, 5 XBH",
+        "free-pass fuel: 7 BB/HBP/CI, 6 before the 6th",
+        "two-out scoring: 4 runs with two outs"
+      ],
+      "f5ActualDrivers": [
+        "starter-window crooked inning: max F5 inning 5, crooked F5 innings 1",
+        "power damage: 4 HR, 5 XBH",
+        "free-pass fuel: 7 BB/HBP/CI, 6 before the 6th",
+        "two-out scoring: 4 runs with two outs"
+      ],
+      "counterDrivers": [
+        "bat-missing held the run chain down: 24 strikeouts"
+      ],
+      "overCauses": [
+        "starter-window crooked inning: max F5 inning 5, crooked F5 innings 1",
+        "power damage: 4 HR, 5 XBH",
+        "free-pass fuel: 7 BB/HBP/CI, 6 before the 6th",
+        "two-out scoring: 4 runs with two outs"
+      ],
+      "underCauses": [
+        "bat-missing held the run chain down: 24 strikeouts"
+      ],
+      "repeatability": [
+        "pregame did see chaos: chaos warning; mistake 62.3, cluster 78.6, one-bad 63%",
+        "pregame carry was live: 70°F | Wind 2 mph In | 0% precip | weather suppresses carry",
+        "tail overlay said balanced: tail 64, strand 25.4, fork 25.4",
+        "radar axes: Flow 100, Chaos 72.7, Pressure 65.7"
+      ],
+      "topInnings": [
+        {
+          "inning": 5,
+          "half": "bottom",
+          "team": "Pittsburgh Pirates",
+          "runs": 5,
+          "baserunners": 7,
+          "scoring": [
+            "Brandon Lowe: Single (1)",
+            "Oneil Cruz: Walk (1)",
+            "Jake Mangum: Sac Fly (1)",
+            "Henry Davis: Single (2)"
+          ]
+        },
+        {
+          "inning": 2,
+          "half": "bottom",
+          "team": "Pittsburgh Pirates",
+          "runs": 2,
+          "baserunners": 4,
+          "scoring": [
+            "Ryan O'Hearn: Home Run (1)",
+            "Jared Triolo: Single (1)"
+          ]
+        },
+        {
+          "inning": 3,
+          "half": "bottom",
+          "team": "Pittsburgh Pirates",
+          "runs": 2,
+          "baserunners": 2,
+          "scoring": [
+            "Nick Gonzales: Home Run (2)"
+          ]
+        },
+        {
+          "inning": 6,
+          "half": "top",
+          "team": "Minnesota Twins",
+          "runs": 2,
+          "baserunners": 2,
+          "scoring": [
+            "Brooks Lee: Home Run (2)"
+          ]
+        },
+        {
+          "inning": 9,
+          "half": "top",
+          "team": "Minnesota Twins",
+          "runs": 1,
+          "baserunners": 1,
+          "scoring": [
+            "Brooks Lee: Home Run (1)"
+          ]
+        }
+      ],
+      "stats": {
+        "first5": {
+          "runs": 9,
+          "pa": 45,
+          "baserunners": 16,
+          "hits": 10,
+          "singles": 7,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 2,
+          "extraBaseHits": 3,
+          "freePasses": 6,
+          "errors": 0,
+          "strikeouts": 15,
+          "doublePlays": 1,
+          "scoringPas": 7,
+          "twoOutRuns": 4,
+          "twoOutScoringPas": 2,
+          "runnersOnPas": 14,
+          "hardHits": 8,
+          "ballsInPlay": 24,
+          "airBalls": 16,
+          "outfieldAirBalls": 15,
+          "inningsWithTrafficNoRuns": 3,
+          "inningsWithRuns": 3,
+          "crookedInnings": 1,
+          "maxInningRuns": 5
+        },
+        "bridge": {
+          "runs": 2,
+          "pa": 15,
+          "baserunners": 3,
+          "hits": 3,
+          "singles": 2,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 1,
+          "extraBaseHits": 1,
+          "freePasses": 0,
+          "errors": 0,
+          "strikeouts": 6,
+          "doublePlays": 0,
+          "scoringPas": 1,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 1,
+          "hardHits": 2,
+          "ballsInPlay": 9,
+          "airBalls": 5,
+          "outfieldAirBalls": 5,
+          "inningsWithTrafficNoRuns": 1,
+          "inningsWithRuns": 1,
+          "crookedInnings": 0,
+          "maxInningRuns": 2
+        },
+        "late": {
+          "runs": 1,
+          "pa": 11,
+          "baserunners": 2,
+          "hits": 1,
+          "singles": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 1,
+          "extraBaseHits": 1,
+          "freePasses": 1,
+          "errors": 0,
+          "strikeouts": 3,
+          "doublePlays": 0,
+          "scoringPas": 1,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 1,
+          "hardHits": 1,
+          "ballsInPlay": 7,
+          "airBalls": 4,
+          "outfieldAirBalls": 4,
+          "inningsWithTrafficNoRuns": 1,
+          "inningsWithRuns": 1,
+          "crookedInnings": 0,
+          "maxInningRuns": 1
+        },
+        "total": {
+          "runs": 12,
+          "pa": 71,
+          "baserunners": 21,
+          "hits": 14,
+          "singles": 9,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 4,
+          "extraBaseHits": 5,
+          "freePasses": 7,
+          "errors": 0,
+          "strikeouts": 24,
+          "doublePlays": 1,
+          "scoringPas": 9,
+          "twoOutRuns": 4,
+          "twoOutScoringPas": 2,
+          "runnersOnPas": 16,
+          "hardHits": 11,
+          "ballsInPlay": 40,
+          "airBalls": 25,
+          "outfieldAirBalls": 24,
+          "inningsWithTrafficNoRuns": 5,
+          "inningsWithRuns": 5,
+          "crookedInnings": 1,
+          "maxInningRuns": 5
+        },
+        "visibility": {
+          "gamePk": 823373,
+          "fieldingErrors": 0,
+          "outfieldErrors": 0,
+          "outfieldHits": 9,
+          "outfieldAirHits": 9,
+          "outfieldExtraBaseHits": 1,
+          "outfieldHomeRuns": 4,
+          "visibilityPressureEvents": 9,
+          "visibilityRiskScore": 0,
+          "riskLabel": "none"
+        }
+      },
+      "pregame": {
+        "projectedFull": 7.4,
+        "projectedF5": 4,
+        "postedFull": 7.5,
+        "postedF5": 4.1,
+        "fullLean": "Pass",
+        "f5Lean": "Pass",
+        "chaosVeto": false,
+        "chaosWarning": true,
+        "chaosReason": "",
+        "maxMistakeChaos": 62.3,
+        "maxRunClustering": 78.6,
+        "maxOneBadInningAllowed": 63,
+        "maxQuietFirst5": 50,
+        "minLineupConversion": 48.3,
+        "weatherLabel": "70°F | Wind 2 mph In | 0% precip | weather suppresses carry",
+        "weatherCarry": true,
+        "dominantAxes": [
+          "Flow 100",
+          "Chaos 72.7",
+          "Pressure 65.7"
+        ],
+        "tailShape": "balanced",
+        "tailScore": 64,
+        "strandScore": 25.4,
+        "forkScore": 25.4
+      }
+    },
+    {
+      "gamePk": 823621,
+      "title": "Miami Marlins @ New York Mets",
+      "lines": {
+        "full": 7.5,
+        "first5": 3.9
+      },
+      "actual": {
+        "full": 11,
+        "first5": 6,
+        "finalScore": "1-10",
+        "first5Score": "1-5"
+      },
+      "sides": {
+        "full": "over",
+        "first5": "over"
+      },
+      "primaryStory": "power damage: 3 HR, 5 XBH; free-pass fuel: 14 BB/HBP/CI, 8 before the 6th; defensive leak: 2 fielding errors, 1 outfield errors",
+      "fullActualDrivers": [
+        "power damage: 3 HR, 5 XBH",
+        "free-pass fuel: 14 BB/HBP/CI, 8 before the 6th",
+        "defensive leak: 2 fielding errors, 1 outfield errors",
+        "post-starter scoring: 5 bridge runs and 0 late runs",
+        "loud-contact tail: 21 hard-hit balls, 2 outfield XBH",
+        "two-out scoring: 9 runs with two outs"
+      ],
+      "f5ActualDrivers": [
+        "power damage: 3 HR, 5 XBH",
+        "free-pass fuel: 14 BB/HBP/CI, 8 before the 6th",
+        "defensive leak: 2 fielding errors, 1 outfield errors",
+        "post-starter scoring: 5 bridge runs and 0 late runs",
+        "loud-contact tail: 21 hard-hit balls, 2 outfield XBH",
+        "two-out scoring: 9 runs with two outs"
+      ],
+      "counterDrivers": [
+        "traffic stranded: 6 innings with traffic and no runs"
+      ],
+      "overCauses": [
+        "power damage: 3 HR, 5 XBH",
+        "free-pass fuel: 14 BB/HBP/CI, 8 before the 6th",
+        "defensive leak: 2 fielding errors, 1 outfield errors",
+        "post-starter scoring: 5 bridge runs and 0 late runs",
+        "loud-contact tail: 21 hard-hit balls, 2 outfield XBH",
+        "two-out scoring: 9 runs with two outs"
+      ],
+      "underCauses": [
+        "traffic stranded: 6 innings with traffic and no runs"
+      ],
+      "repeatability": [
+        "pregame did see chaos: chaos warning; mistake 63.1, cluster 73.4, one-bad 38%",
+        "pregame carry was live: 72°F | Wind 9 mph Out | 0% precip | weather helps carry",
+        "pregame also saw under/strand risk: quiet F5 63%, lineup conversion floor 20.7",
+        "tail overlay said over-tail: tail 56.3, strand 40, fork 40",
+        "radar axes: Chaos 67.5, Air 53.6, Freeze 51.6"
+      ],
+      "topInnings": [
+        {
+          "inning": 6,
+          "half": "bottom",
+          "team": "New York Mets",
+          "runs": 5,
+          "baserunners": 6,
+          "scoring": [
+            "Bo Bichette: Walk (1)",
+            "Juan Soto: Home Run (4)"
+          ]
+        },
+        {
+          "inning": 4,
+          "half": "bottom",
+          "team": "New York Mets",
+          "runs": 2,
+          "baserunners": 4,
+          "scoring": [
+            "Luis Torrens: Single (2)"
+          ]
+        },
+        {
+          "inning": 2,
+          "half": "bottom",
+          "team": "New York Mets",
+          "runs": 2,
+          "baserunners": 2,
+          "scoring": [
+            "Marcus Semien: Home Run (2)"
+          ]
+        },
+        {
+          "inning": 4,
+          "half": "top",
+          "team": "Miami Marlins",
+          "runs": 1,
+          "baserunners": 4,
+          "scoring": [
+            "Owen Caissie: Double (1)"
+          ]
+        },
+        {
+          "inning": 1,
+          "half": "bottom",
+          "team": "New York Mets",
+          "runs": 1,
+          "baserunners": 1,
+          "scoring": [
+            "Carson Benge: Home Run (1)"
+          ]
+        }
+      ],
+      "stats": {
+        "first5": {
+          "runs": 6,
+          "pa": 46,
+          "baserunners": 16,
+          "hits": 8,
+          "singles": 5,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 2,
+          "extraBaseHits": 3,
+          "freePasses": 8,
+          "errors": 0,
+          "strikeouts": 8,
+          "doublePlays": 0,
+          "scoringPas": 4,
+          "twoOutRuns": 4,
+          "twoOutScoringPas": 2,
+          "runnersOnPas": 10,
+          "hardHits": 13,
+          "ballsInPlay": 30,
+          "airBalls": 15,
+          "outfieldAirBalls": 12,
+          "inningsWithTrafficNoRuns": 3,
+          "inningsWithRuns": 4,
+          "crookedInnings": 0,
+          "maxInningRuns": 2
+        },
+        "bridge": {
+          "runs": 5,
+          "pa": 23,
+          "baserunners": 11,
+          "hits": 4,
+          "singles": 2,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 1,
+          "extraBaseHits": 2,
+          "freePasses": 6,
+          "errors": 1,
+          "strikeouts": 6,
+          "doublePlays": 0,
+          "scoringPas": 2,
+          "twoOutRuns": 5,
+          "twoOutScoringPas": 2,
+          "runnersOnPas": 6,
+          "hardHits": 5,
+          "ballsInPlay": 11,
+          "airBalls": 9,
+          "outfieldAirBalls": 7,
+          "inningsWithTrafficNoRuns": 3,
+          "inningsWithRuns": 1,
+          "crookedInnings": 1,
+          "maxInningRuns": 5
+        },
+        "late": {
+          "runs": 0,
+          "pa": 9,
+          "baserunners": 0,
+          "hits": 0,
+          "singles": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "extraBaseHits": 0,
+          "freePasses": 0,
+          "errors": 0,
+          "strikeouts": 1,
+          "doublePlays": 0,
+          "scoringPas": 0,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 0,
+          "hardHits": 3,
+          "ballsInPlay": 8,
+          "airBalls": 6,
+          "outfieldAirBalls": 5,
+          "inningsWithTrafficNoRuns": 0,
+          "inningsWithRuns": 0,
+          "crookedInnings": 0,
+          "maxInningRuns": 0
+        },
+        "total": {
+          "runs": 11,
+          "pa": 78,
+          "baserunners": 27,
+          "hits": 12,
+          "singles": 7,
+          "doubles": 2,
+          "triples": 0,
+          "homeRuns": 3,
+          "extraBaseHits": 5,
+          "freePasses": 14,
+          "errors": 1,
+          "strikeouts": 15,
+          "doublePlays": 0,
+          "scoringPas": 6,
+          "twoOutRuns": 9,
+          "twoOutScoringPas": 4,
+          "runnersOnPas": 16,
+          "hardHits": 21,
+          "ballsInPlay": 49,
+          "airBalls": 30,
+          "outfieldAirBalls": 24,
+          "inningsWithTrafficNoRuns": 6,
+          "inningsWithRuns": 5,
+          "crookedInnings": 1,
+          "maxInningRuns": 5
+        },
+        "visibility": {
+          "gamePk": 823621,
+          "fieldingErrors": 2,
+          "outfieldErrors": 1,
+          "outfieldHits": 9,
+          "outfieldAirHits": 9,
+          "outfieldExtraBaseHits": 2,
+          "outfieldHomeRuns": 3,
+          "visibilityPressureEvents": 10,
+          "visibilityRiskScore": 24.149232050635028,
+          "riskLabel": "low"
+        }
+      },
+      "pregame": {
+        "projectedFull": 5,
+        "projectedF5": 2.6,
+        "postedFull": 7.5,
+        "postedF5": 3.9,
+        "fullLean": "Under",
+        "f5Lean": "Over",
+        "chaosVeto": false,
+        "chaosWarning": true,
+        "chaosReason": "",
+        "maxMistakeChaos": 63.1,
+        "maxRunClustering": 73.4,
+        "maxOneBadInningAllowed": 38,
+        "maxQuietFirst5": 63,
+        "minLineupConversion": 20.7,
+        "weatherLabel": "72°F | Wind 9 mph Out | 0% precip | weather helps carry",
+        "weatherCarry": true,
+        "dominantAxes": [
+          "Chaos 67.5",
+          "Air 53.6",
+          "Freeze 51.6"
+        ],
+        "tailShape": "over-tail",
+        "tailScore": 56.3,
+        "strandScore": 40,
+        "forkScore": 40
+      }
+    },
+    {
+      "gamePk": 823944,
+      "title": "Philadelphia Phillies @ Los Angeles Dodgers",
+      "lines": {
+        "full": 9,
+        "first5": 5.3
+      },
+      "actual": {
+        "full": 10,
+        "first5": 6,
+        "finalScore": "1-9",
+        "first5Score": "0-6"
+      },
+      "sides": {
+        "full": "over",
+        "first5": "over"
+      },
+      "primaryStory": "power damage: 4 HR, 8 XBH; free-pass fuel: 9 BB/HBP/CI, 4 before the 6th; post-starter scoring: 2 bridge runs and 2 late runs",
+      "fullActualDrivers": [
+        "power damage: 4 HR, 8 XBH",
+        "free-pass fuel: 9 BB/HBP/CI, 4 before the 6th",
+        "post-starter scoring: 2 bridge runs and 2 late runs",
+        "loud-contact tail: 17 hard-hit balls, 3 outfield XBH",
+        "two-out scoring: 4 runs with two outs"
+      ],
+      "f5ActualDrivers": [
+        "power damage: 4 HR, 8 XBH",
+        "free-pass fuel: 9 BB/HBP/CI, 4 before the 6th",
+        "post-starter scoring: 2 bridge runs and 2 late runs",
+        "loud-contact tail: 17 hard-hit balls, 3 outfield XBH",
+        "two-out scoring: 4 runs with two outs"
+      ],
+      "counterDrivers": [
+        "traffic stranded: 7 innings with traffic and no runs",
+        "bat-missing held the run chain down: 19 strikeouts"
+      ],
+      "overCauses": [
+        "power damage: 4 HR, 8 XBH",
+        "free-pass fuel: 9 BB/HBP/CI, 4 before the 6th",
+        "post-starter scoring: 2 bridge runs and 2 late runs",
+        "loud-contact tail: 17 hard-hit balls, 3 outfield XBH",
+        "two-out scoring: 4 runs with two outs"
+      ],
+      "underCauses": [
+        "traffic stranded: 7 innings with traffic and no runs",
+        "bat-missing held the run chain down: 19 strikeouts"
+      ],
+      "repeatability": [
+        "pregame did see chaos: under exposed to mistake-chaos and one-big-inning risk; mistake 59.4, cluster 80.5, one-bad 50%",
+        "pregame carry was live: 78°F | Wind 8 mph Out | 0% precip | weather helps carry",
+        "pregame also saw under/strand risk: quiet F5 75%, lineup conversion floor 29.4",
+        "tail overlay said over-tail: tail 68.2, strand 27.4, fork 27.4",
+        "radar axes: Pressure 66.3, Chaos 65.5, Flow 60"
+      ],
+      "topInnings": [
+        {
+          "inning": 5,
+          "half": "bottom",
+          "team": "Los Angeles Dodgers",
+          "runs": 2,
+          "baserunners": 4,
+          "scoring": [
+            "Alex Call: Single (2)"
+          ]
+        },
+        {
+          "inning": 4,
+          "half": "bottom",
+          "team": "Los Angeles Dodgers",
+          "runs": 2,
+          "baserunners": 2,
+          "scoring": [
+            "Ryan Ward: Home Run (1)",
+            "Alex Freeland: Home Run (1)"
+          ]
+        },
+        {
+          "inning": 8,
+          "half": "bottom",
+          "team": "Los Angeles Dodgers",
+          "runs": 1,
+          "baserunners": 3,
+          "scoring": [
+            "Freddie Freeman: Sac Fly (1)"
+          ]
+        },
+        {
+          "inning": 2,
+          "half": "bottom",
+          "team": "Los Angeles Dodgers",
+          "runs": 1,
+          "baserunners": 2,
+          "scoring": [
+            "Alex Freeland: Double (1)"
+          ]
+        },
+        {
+          "inning": 3,
+          "half": "bottom",
+          "team": "Los Angeles Dodgers",
+          "runs": 1,
+          "baserunners": 2,
+          "scoring": [
+            "Kyle Tucker: Single (1)"
+          ]
+        }
+      ],
+      "stats": {
+        "first5": {
+          "runs": 6,
+          "pa": 47,
+          "baserunners": 18,
+          "hits": 14,
+          "singles": 9,
+          "doubles": 3,
+          "triples": 0,
+          "homeRuns": 2,
+          "extraBaseHits": 5,
+          "freePasses": 4,
+          "errors": 0,
+          "strikeouts": 14,
+          "doublePlays": 0,
+          "scoringPas": 5,
+          "twoOutRuns": 4,
+          "twoOutScoringPas": 3,
+          "runnersOnPas": 11,
+          "hardHits": 10,
+          "ballsInPlay": 29,
+          "airBalls": 22,
+          "outfieldAirBalls": 16,
+          "inningsWithTrafficNoRuns": 5,
+          "inningsWithRuns": 4,
+          "crookedInnings": 0,
+          "maxInningRuns": 2
+        },
+        "bridge": {
+          "runs": 2,
+          "pa": 17,
+          "baserunners": 5,
+          "hits": 2,
+          "singles": 0,
+          "doubles": 0,
+          "triples": 1,
+          "homeRuns": 1,
+          "extraBaseHits": 2,
+          "freePasses": 3,
+          "errors": 0,
+          "strikeouts": 4,
+          "doublePlays": 0,
+          "scoringPas": 2,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 2,
+          "hardHits": 3,
+          "ballsInPlay": 10,
+          "airBalls": 8,
+          "outfieldAirBalls": 4,
+          "inningsWithTrafficNoRuns": 2,
+          "inningsWithRuns": 2,
+          "crookedInnings": 0,
+          "maxInningRuns": 1
+        },
+        "late": {
+          "runs": 2,
+          "pa": 13,
+          "baserunners": 5,
+          "hits": 2,
+          "singles": 1,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 1,
+          "extraBaseHits": 1,
+          "freePasses": 2,
+          "errors": 1,
+          "strikeouts": 1,
+          "doublePlays": 1,
+          "scoringPas": 2,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 4,
+          "hardHits": 4,
+          "ballsInPlay": 10,
+          "airBalls": 5,
+          "outfieldAirBalls": 4,
+          "inningsWithTrafficNoRuns": 0,
+          "inningsWithRuns": 2,
+          "crookedInnings": 0,
+          "maxInningRuns": 1
+        },
+        "total": {
+          "runs": 10,
+          "pa": 77,
+          "baserunners": 28,
+          "hits": 18,
+          "singles": 10,
+          "doubles": 3,
+          "triples": 1,
+          "homeRuns": 4,
+          "extraBaseHits": 8,
+          "freePasses": 9,
+          "errors": 1,
+          "strikeouts": 19,
+          "doublePlays": 1,
+          "scoringPas": 9,
+          "twoOutRuns": 4,
+          "twoOutScoringPas": 3,
+          "runnersOnPas": 17,
+          "hardHits": 17,
+          "ballsInPlay": 49,
+          "airBalls": 35,
+          "outfieldAirBalls": 24,
+          "inningsWithTrafficNoRuns": 7,
+          "inningsWithRuns": 8,
+          "crookedInnings": 0,
+          "maxInningRuns": 2
+        },
+        "visibility": {
+          "gamePk": 823944,
+          "fieldingErrors": 1,
+          "outfieldErrors": 0,
+          "outfieldHits": 10,
+          "outfieldAirHits": 10,
+          "outfieldExtraBaseHits": 3,
+          "outfieldHomeRuns": 4,
+          "visibilityPressureEvents": 11,
+          "visibilityRiskScore": 43.53296369452778,
+          "riskLabel": "medium"
+        }
+      },
+      "pregame": {
+        "projectedFull": 7.2,
+        "projectedF5": 4.2,
+        "postedFull": 9,
+        "postedF5": 5.3,
+        "fullLean": "Pass",
+        "f5Lean": "Pass",
+        "chaosVeto": true,
+        "chaosWarning": true,
+        "chaosReason": "under exposed to mistake-chaos and one-big-inning risk",
+        "maxMistakeChaos": 59.4,
+        "maxRunClustering": 80.5,
+        "maxOneBadInningAllowed": 50,
+        "maxQuietFirst5": 75,
+        "minLineupConversion": 29.4,
+        "weatherLabel": "78°F | Wind 8 mph Out | 0% precip | weather helps carry",
+        "weatherCarry": true,
+        "dominantAxes": [
+          "Pressure 66.3",
+          "Chaos 65.5",
+          "Flow 60"
+        ],
+        "tailShape": "over-tail",
+        "tailScore": 68.2,
+        "strandScore": 27.4,
+        "forkScore": 27.4
+      }
+    },
+    {
+      "gamePk": 824187,
+      "title": "Milwaukee Brewers @ Houston Astros",
+      "lines": {
+        "full": 7.5,
+        "first5": 4.2
+      },
+      "actual": {
+        "full": 2,
+        "first5": 2,
+        "finalScore": "2-0",
+        "first5Score": "2-0"
+      },
+      "sides": {
+        "full": "under",
+        "first5": "under"
+      },
+      "primaryStory": "starter-window traffic stayed low: 2 F5 runs on 9 baserunners; power stayed contained: 1 HR, 3 XBH; traffic stranded: 5 innings with traffic and no runs",
+      "fullActualDrivers": [
+        "starter-window traffic stayed low: 2 F5 runs on 9 baserunners",
+        "power stayed contained: 1 HR, 3 XBH",
+        "traffic stranded: 5 innings with traffic and no runs",
+        "bat-missing held the run chain down: 18 strikeouts",
+        "bridge/late stayed clean: 0 runs after the 5th"
+      ],
+      "f5ActualDrivers": [
+        "starter-window traffic stayed low: 2 F5 runs on 9 baserunners",
+        "power stayed contained: 1 HR, 3 XBH",
+        "traffic stranded: 5 innings with traffic and no runs",
+        "bat-missing held the run chain down: 18 strikeouts",
+        "bridge/late stayed clean: 0 runs after the 5th"
+      ],
+      "counterDrivers": [
+        "loud-contact tail: 16 hard-hit balls, 2 outfield XBH"
+      ],
+      "overCauses": [
+        "loud-contact tail: 16 hard-hit balls, 2 outfield XBH"
+      ],
+      "underCauses": [
+        "starter-window traffic stayed low: 2 F5 runs on 9 baserunners",
+        "power stayed contained: 1 HR, 3 XBH",
+        "traffic stranded: 5 innings with traffic and no runs",
+        "bat-missing held the run chain down: 18 strikeouts",
+        "bridge/late stayed clean: 0 runs after the 5th"
+      ],
+      "repeatability": [
+        "pregame did see chaos: chaos warning; mistake 53.6, cluster 76.2, one-bad 50%",
+        "tail overlay said balanced: tail 37.3, strand 0.4, fork 0.4",
+        "radar axes: Flow 100, Pressure 65.7, Chaos 56.6"
+      ],
+      "topInnings": [
+        {
+          "inning": 4,
+          "half": "top",
+          "team": "Milwaukee Brewers",
+          "runs": 2,
+          "baserunners": 2,
+          "scoring": [
+            "Jake Bauers: Home Run (2)"
+          ]
+        },
+        {
+          "inning": 3,
+          "half": "bottom",
+          "team": "Houston Astros",
+          "runs": 0,
+          "baserunners": 3,
+          "scoring": []
+        },
+        {
+          "inning": 3,
+          "half": "top",
+          "team": "Milwaukee Brewers",
+          "runs": 0,
+          "baserunners": 2,
+          "scoring": []
+        }
+      ],
+      "stats": {
+        "first5": {
+          "runs": 2,
+          "pa": 39,
+          "baserunners": 9,
+          "hits": 6,
+          "singles": 4,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 1,
+          "extraBaseHits": 2,
+          "freePasses": 3,
+          "errors": 0,
+          "strikeouts": 10,
+          "doublePlays": 0,
+          "scoringPas": 1,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 6,
+          "hardHits": 9,
+          "ballsInPlay": 26,
+          "airBalls": 14,
+          "outfieldAirBalls": 13,
+          "inningsWithTrafficNoRuns": 4,
+          "inningsWithRuns": 1,
+          "crookedInnings": 0,
+          "maxInningRuns": 2
+        },
+        "bridge": {
+          "runs": 0,
+          "pa": 12,
+          "baserunners": 0,
+          "hits": 0,
+          "singles": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "extraBaseHits": 0,
+          "freePasses": 0,
+          "errors": 0,
+          "strikeouts": 3,
+          "doublePlays": 0,
+          "scoringPas": 0,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 0,
+          "hardHits": 5,
+          "ballsInPlay": 9,
+          "airBalls": 4,
+          "outfieldAirBalls": 4,
+          "inningsWithTrafficNoRuns": 0,
+          "inningsWithRuns": 0,
+          "crookedInnings": 0,
+          "maxInningRuns": 0
+        },
+        "late": {
+          "runs": 0,
+          "pa": 12,
+          "baserunners": 1,
+          "hits": 1,
+          "singles": 0,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 0,
+          "extraBaseHits": 1,
+          "freePasses": 0,
+          "errors": 0,
+          "strikeouts": 5,
+          "doublePlays": 0,
+          "scoringPas": 0,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 1,
+          "hardHits": 2,
+          "ballsInPlay": 7,
+          "airBalls": 4,
+          "outfieldAirBalls": 4,
+          "inningsWithTrafficNoRuns": 1,
+          "inningsWithRuns": 0,
+          "crookedInnings": 0,
+          "maxInningRuns": 0
+        },
+        "total": {
+          "runs": 2,
+          "pa": 63,
+          "baserunners": 10,
+          "hits": 7,
+          "singles": 4,
+          "doubles": 2,
+          "triples": 0,
+          "homeRuns": 1,
+          "extraBaseHits": 3,
+          "freePasses": 3,
+          "errors": 0,
+          "strikeouts": 18,
+          "doublePlays": 0,
+          "scoringPas": 1,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 7,
+          "hardHits": 16,
+          "ballsInPlay": 42,
+          "airBalls": 22,
+          "outfieldAirBalls": 21,
+          "inningsWithTrafficNoRuns": 5,
+          "inningsWithRuns": 1,
+          "crookedInnings": 0,
+          "maxInningRuns": 2
+        },
+        "visibility": {
+          "gamePk": 824187,
+          "fieldingErrors": 0,
+          "outfieldErrors": 0,
+          "outfieldHits": 6,
+          "outfieldAirHits": 6,
+          "outfieldExtraBaseHits": 2,
+          "outfieldHomeRuns": 1,
+          "visibilityPressureEvents": 6,
+          "visibilityRiskScore": 44.79941840705477,
+          "riskLabel": "medium"
+        }
+      },
+      "pregame": {
+        "projectedFull": 7.3,
+        "projectedF5": 4.1,
+        "postedFull": 7.5,
+        "postedF5": 4.2,
+        "fullLean": "Pass",
+        "f5Lean": "Pass",
+        "chaosVeto": false,
+        "chaosWarning": true,
+        "chaosReason": "",
+        "maxMistakeChaos": 53.6,
+        "maxRunClustering": 76.2,
+        "maxOneBadInningAllowed": 50,
+        "maxQuietFirst5": 25,
+        "minLineupConversion": 42,
+        "weatherLabel": "Dome In Domed Stadium",
+        "weatherCarry": false,
+        "dominantAxes": [
+          "Flow 100",
+          "Pressure 65.7",
+          "Chaos 56.6"
+        ],
+        "tailShape": "balanced",
+        "tailScore": 37.3,
+        "strandScore": 0.4,
+        "forkScore": 0.4
+      }
+    },
+    {
+      "gamePk": 824354,
+      "title": "San Francisco Giants @ Colorado Rockies",
+      "lines": {
+        "full": 11,
+        "first5": 6.4
+      },
+      "actual": {
+        "full": 25,
+        "first5": 16,
+        "finalScore": "19-6",
+        "first5Score": "11-5"
+      },
+      "sides": {
+        "full": "over",
+        "first5": "over"
+      },
+      "primaryStory": "starter-window crooked inning: max F5 inning 7, crooked F5 innings 1; power damage: 3 HR, 16 XBH; traffic avalanche without HR dependency: 30 F5 baserunners, 22 hits, 7 free passes",
+      "fullActualDrivers": [
+        "starter-window crooked inning: max F5 inning 7, crooked F5 innings 1",
+        "power damage: 3 HR, 16 XBH",
+        "traffic avalanche without HR dependency: 30 F5 baserunners, 22 hits, 7 free passes",
+        "free-pass fuel: 10 BB/HBP/CI, 7 before the 6th",
+        "defensive leak: 3 fielding errors, 1 outfield errors",
+        "post-starter scoring: 4 bridge runs and 5 late runs",
+        "loud-contact tail: 28 hard-hit balls, 13 outfield XBH",
+        "two-out scoring: 10 runs with two outs"
+      ],
+      "f5ActualDrivers": [
+        "starter-window crooked inning: max F5 inning 7, crooked F5 innings 1",
+        "power damage: 3 HR, 16 XBH",
+        "traffic avalanche without HR dependency: 30 F5 baserunners, 22 hits, 7 free passes",
+        "free-pass fuel: 10 BB/HBP/CI, 7 before the 6th",
+        "defensive leak: 3 fielding errors, 1 outfield errors",
+        "post-starter scoring: 4 bridge runs and 5 late runs",
+        "loud-contact tail: 28 hard-hit balls, 13 outfield XBH",
+        "two-out scoring: 10 runs with two outs"
+      ],
+      "counterDrivers": [
+        "bat-missing held the run chain down: 19 strikeouts"
+      ],
+      "overCauses": [
+        "starter-window crooked inning: max F5 inning 7, crooked F5 innings 1",
+        "power damage: 3 HR, 16 XBH",
+        "traffic avalanche without HR dependency: 30 F5 baserunners, 22 hits, 7 free passes",
+        "free-pass fuel: 10 BB/HBP/CI, 7 before the 6th",
+        "defensive leak: 3 fielding errors, 1 outfield errors",
+        "post-starter scoring: 4 bridge runs and 5 late runs",
+        "loud-contact tail: 28 hard-hit balls, 13 outfield XBH",
+        "two-out scoring: 10 runs with two outs"
+      ],
+      "underCauses": [
+        "bat-missing held the run chain down: 19 strikeouts"
+      ],
+      "repeatability": [
+        "pregame did see chaos: chaos warning; mistake 69.4, cluster 75, one-bad 75%",
+        "pregame carry was live: 80°F | Wind 7 mph L-R | 3% precip | weather helps carry",
+        "tail overlay said over-tail: tail 100, strand 6.6, fork 6.6",
+        "radar axes: Flow 92, Chaos 78.4, Bridge 58.3"
+      ],
+      "topInnings": [
+        {
+          "inning": 5,
+          "half": "top",
+          "team": "San Francisco Giants",
+          "runs": 7,
+          "baserunners": 8,
+          "scoring": [
+            "Matt Chapman: Double (1)",
+            "Drew Gilbert: Triple (1)",
+            "Casey Schmitt: Single (1)",
+            "Willy Adames: Home Run (4)"
+          ]
+        },
+        {
+          "inning": 8,
+          "half": "top",
+          "team": "San Francisco Giants",
+          "runs": 3,
+          "baserunners": 5,
+          "scoring": [
+            "Rafael Devers: Single (2)",
+            "Luis Arraez: Sac Fly (1)"
+          ]
+        },
+        {
+          "inning": 4,
+          "half": "top",
+          "team": "San Francisco Giants",
+          "runs": 2,
+          "baserunners": 4,
+          "scoring": [
+            "Casey Schmitt: Single (1)",
+            "Luis Arraez: Sac Fly (1)"
+          ]
+        },
+        {
+          "inning": 5,
+          "half": "bottom",
+          "team": "Colorado Rockies",
+          "runs": 2,
+          "baserunners": 4,
+          "scoring": [
+            "Troy Johnston: Single (1)",
+            "Jake McCarthy: Sac Fly (1)"
+          ]
+        },
+        {
+          "inning": 4,
+          "half": "bottom",
+          "team": "Colorado Rockies",
+          "runs": 2,
+          "baserunners": 3,
+          "scoring": [
+            "Willi Castro: Field Error (2)"
+          ]
+        }
+      ],
+      "stats": {
+        "first5": {
+          "runs": 16,
+          "pa": 60,
+          "baserunners": 30,
+          "hits": 22,
+          "singles": 10,
+          "doubles": 10,
+          "triples": 1,
+          "homeRuns": 1,
+          "extraBaseHits": 12,
+          "freePasses": 7,
+          "errors": 1,
+          "strikeouts": 11,
+          "doublePlays": 0,
+          "scoringPas": 12,
+          "twoOutRuns": 9,
+          "twoOutScoringPas": 5,
+          "runnersOnPas": 27,
+          "hardHits": 19,
+          "ballsInPlay": 41,
+          "airBalls": 31,
+          "outfieldAirBalls": 27,
+          "inningsWithTrafficNoRuns": 3,
+          "inningsWithRuns": 7,
+          "crookedInnings": 1,
+          "maxInningRuns": 7
+        },
+        "bridge": {
+          "runs": 4,
+          "pa": 20,
+          "baserunners": 8,
+          "hits": 5,
+          "singles": 3,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 1,
+          "extraBaseHits": 2,
+          "freePasses": 2,
+          "errors": 1,
+          "strikeouts": 5,
+          "doublePlays": 0,
+          "scoringPas": 4,
+          "twoOutRuns": 1,
+          "twoOutScoringPas": 1,
+          "runnersOnPas": 4,
+          "hardHits": 4,
+          "ballsInPlay": 13,
+          "airBalls": 9,
+          "outfieldAirBalls": 7,
+          "inningsWithTrafficNoRuns": 1,
+          "inningsWithRuns": 3,
+          "crookedInnings": 0,
+          "maxInningRuns": 2
+        },
+        "late": {
+          "runs": 5,
+          "pa": 21,
+          "baserunners": 9,
+          "hits": 8,
+          "singles": 6,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 1,
+          "extraBaseHits": 2,
+          "freePasses": 1,
+          "errors": 0,
+          "strikeouts": 3,
+          "doublePlays": 0,
+          "scoringPas": 3,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 5,
+          "hardHits": 5,
+          "ballsInPlay": 17,
+          "airBalls": 13,
+          "outfieldAirBalls": 12,
+          "inningsWithTrafficNoRuns": 1,
+          "inningsWithRuns": 2,
+          "crookedInnings": 1,
+          "maxInningRuns": 3
+        },
+        "total": {
+          "runs": 25,
+          "pa": 101,
+          "baserunners": 47,
+          "hits": 35,
+          "singles": 19,
+          "doubles": 12,
+          "triples": 1,
+          "homeRuns": 3,
+          "extraBaseHits": 16,
+          "freePasses": 10,
+          "errors": 2,
+          "strikeouts": 19,
+          "doublePlays": 0,
+          "scoringPas": 19,
+          "twoOutRuns": 10,
+          "twoOutScoringPas": 6,
+          "runnersOnPas": 36,
+          "hardHits": 28,
+          "ballsInPlay": 71,
+          "airBalls": 53,
+          "outfieldAirBalls": 46,
+          "inningsWithTrafficNoRuns": 5,
+          "inningsWithRuns": 12,
+          "crookedInnings": 2,
+          "maxInningRuns": 7
+        },
+        "visibility": {
+          "gamePk": 824354,
+          "fieldingErrors": 3,
+          "outfieldErrors": 1,
+          "outfieldHits": 30,
+          "outfieldAirHits": 30,
+          "outfieldExtraBaseHits": 13,
+          "outfieldHomeRuns": 3,
+          "visibilityPressureEvents": 32,
+          "visibilityRiskScore": 33.24509371392843,
+          "riskLabel": "low"
+        }
+      },
+      "pregame": {
+        "projectedFull": 11.1,
+        "projectedF5": 6.5,
+        "postedFull": 11,
+        "postedF5": 6.4,
+        "fullLean": "Pass",
+        "f5Lean": "Over",
+        "chaosVeto": false,
+        "chaosWarning": true,
+        "chaosReason": "",
+        "maxMistakeChaos": 69.4,
+        "maxRunClustering": 75,
+        "maxOneBadInningAllowed": 75,
+        "maxQuietFirst5": 25,
+        "minLineupConversion": 24.9,
+        "weatherLabel": "80°F | Wind 7 mph L-R | 3% precip | weather helps carry",
+        "weatherCarry": true,
+        "dominantAxes": [
+          "Flow 92",
+          "Chaos 78.4",
+          "Bridge 58.3"
+        ],
+        "tailShape": "over-tail",
+        "tailScore": 100,
+        "strandScore": 6.6,
+        "forkScore": 6.6
+      }
+    },
+    {
+      "gamePk": 824430,
+      "title": "Boston Red Sox @ Cleveland Guardians",
+      "lines": {
+        "full": 8.5,
+        "first5": 4.7
+      },
+      "actual": {
+        "full": 13,
+        "first5": 7,
+        "finalScore": "9-4",
+        "first5Score": "3-4"
+      },
+      "sides": {
+        "full": "over",
+        "first5": "over"
+      },
+      "primaryStory": "power damage: 1 HR, 7 XBH; traffic avalanche without HR dependency: 18 F5 baserunners, 14 hits, 4 free passes; post-starter scoring: 6 bridge runs and 0 late runs",
+      "fullActualDrivers": [
+        "power damage: 1 HR, 7 XBH",
+        "traffic avalanche without HR dependency: 18 F5 baserunners, 14 hits, 4 free passes",
+        "post-starter scoring: 6 bridge runs and 0 late runs",
+        "loud-contact tail: 23 hard-hit balls, 6 outfield XBH",
+        "two-out scoring: 7 runs with two outs"
+      ],
+      "f5ActualDrivers": [
+        "power damage: 1 HR, 7 XBH",
+        "traffic avalanche without HR dependency: 18 F5 baserunners, 14 hits, 4 free passes",
+        "post-starter scoring: 6 bridge runs and 0 late runs",
+        "loud-contact tail: 23 hard-hit balls, 6 outfield XBH",
+        "two-out scoring: 7 runs with two outs"
+      ],
+      "counterDrivers": [
+        "traffic stranded: 8 innings with traffic and no runs",
+        "bat-missing held the run chain down: 24 strikeouts"
+      ],
+      "overCauses": [
+        "power damage: 1 HR, 7 XBH",
+        "traffic avalanche without HR dependency: 18 F5 baserunners, 14 hits, 4 free passes",
+        "post-starter scoring: 6 bridge runs and 0 late runs",
+        "loud-contact tail: 23 hard-hit balls, 6 outfield XBH",
+        "two-out scoring: 7 runs with two outs"
+      ],
+      "underCauses": [
+        "traffic stranded: 8 innings with traffic and no runs",
+        "bat-missing held the run chain down: 24 strikeouts"
+      ],
+      "repeatability": [
+        "pregame did see chaos: under exposed to mistake-chaos and one-big-inning risk; mistake 73, cluster 79.7, one-bad 63%",
+        "tail overlay said live-only fork: tail 80.7, strand 35.8, fork 35.8",
+        "radar axes: Chaos 70.6, Freeze 62.1, Flow 60"
+      ],
+      "topInnings": [
+        {
+          "inning": 7,
+          "half": "top",
+          "team": "Boston Red Sox",
+          "runs": 6,
+          "baserunners": 7,
+          "scoring": [
+            "Wilyer Abreu: Walk (1)",
+            "Masataka Yoshida: Single (2)",
+            "Isiah Kiner-Falefa: Single (1)",
+            "Caleb Durbin: Triple (2)"
+          ]
+        },
+        {
+          "inning": 5,
+          "half": "bottom",
+          "team": "Cleveland Guardians",
+          "runs": 2,
+          "baserunners": 5,
+          "scoring": [
+            "José Ramírez: Double (1)",
+            "Chase DeLauter: Single (1)"
+          ]
+        },
+        {
+          "inning": 2,
+          "half": "bottom",
+          "team": "Cleveland Guardians",
+          "runs": 2,
+          "baserunners": 4,
+          "scoring": [
+            "Austin Hedges: Single (2)"
+          ]
+        },
+        {
+          "inning": 5,
+          "half": "top",
+          "team": "Boston Red Sox",
+          "runs": 2,
+          "baserunners": 4,
+          "scoring": [
+            "Mickey Gasper: Sac Fly (1)",
+            "Wilyer Abreu: Single (1)"
+          ]
+        },
+        {
+          "inning": 1,
+          "half": "top",
+          "team": "Boston Red Sox",
+          "runs": 1,
+          "baserunners": 2,
+          "scoring": [
+            "Jarren Duran: Home Run (1)"
+          ]
+        }
+      ],
+      "stats": {
+        "first5": {
+          "runs": 7,
+          "pa": 46,
+          "baserunners": 18,
+          "hits": 14,
+          "singles": 8,
+          "doubles": 5,
+          "triples": 0,
+          "homeRuns": 1,
+          "extraBaseHits": 6,
+          "freePasses": 4,
+          "errors": 0,
+          "strikeouts": 15,
+          "doublePlays": 1,
+          "scoringPas": 6,
+          "twoOutRuns": 1,
+          "twoOutScoringPas": 1,
+          "runnersOnPas": 10,
+          "hardHits": 11,
+          "ballsInPlay": 27,
+          "airBalls": 18,
+          "outfieldAirBalls": 16,
+          "inningsWithTrafficNoRuns": 3,
+          "inningsWithRuns": 4,
+          "crookedInnings": 0,
+          "maxInningRuns": 2
+        },
+        "bridge": {
+          "runs": 6,
+          "pa": 21,
+          "baserunners": 9,
+          "hits": 5,
+          "singles": 4,
+          "doubles": 0,
+          "triples": 1,
+          "homeRuns": 0,
+          "extraBaseHits": 1,
+          "freePasses": 3,
+          "errors": 1,
+          "strikeouts": 3,
+          "doublePlays": 0,
+          "scoringPas": 4,
+          "twoOutRuns": 6,
+          "twoOutScoringPas": 4,
+          "runnersOnPas": 6,
+          "hardHits": 7,
+          "ballsInPlay": 15,
+          "airBalls": 7,
+          "outfieldAirBalls": 6,
+          "inningsWithTrafficNoRuns": 2,
+          "inningsWithRuns": 1,
+          "crookedInnings": 1,
+          "maxInningRuns": 6
+        },
+        "late": {
+          "runs": 0,
+          "pa": 16,
+          "baserunners": 4,
+          "hits": 4,
+          "singles": 4,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "extraBaseHits": 0,
+          "freePasses": 0,
+          "errors": 0,
+          "strikeouts": 6,
+          "doublePlays": 0,
+          "scoringPas": 0,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 1,
+          "hardHits": 5,
+          "ballsInPlay": 10,
+          "airBalls": 6,
+          "outfieldAirBalls": 4,
+          "inningsWithTrafficNoRuns": 3,
+          "inningsWithRuns": 0,
+          "crookedInnings": 0,
+          "maxInningRuns": 0
+        },
+        "total": {
+          "runs": 13,
+          "pa": 83,
+          "baserunners": 31,
+          "hits": 23,
+          "singles": 16,
+          "doubles": 5,
+          "triples": 1,
+          "homeRuns": 1,
+          "extraBaseHits": 7,
+          "freePasses": 7,
+          "errors": 1,
+          "strikeouts": 24,
+          "doublePlays": 1,
+          "scoringPas": 10,
+          "twoOutRuns": 7,
+          "twoOutScoringPas": 5,
+          "runnersOnPas": 17,
+          "hardHits": 23,
+          "ballsInPlay": 52,
+          "airBalls": 31,
+          "outfieldAirBalls": 26,
+          "inningsWithTrafficNoRuns": 8,
+          "inningsWithRuns": 5,
+          "crookedInnings": 1,
+          "maxInningRuns": 6
+        },
+        "visibility": {
+          "gamePk": 824430,
+          "fieldingErrors": 1,
+          "outfieldErrors": 0,
+          "outfieldHits": 20,
+          "outfieldAirHits": 20,
+          "outfieldExtraBaseHits": 6,
+          "outfieldHomeRuns": 1,
+          "visibilityPressureEvents": 21,
+          "visibilityRiskScore": 27.874647299792564,
+          "riskLabel": "low"
+        }
+      },
+      "pregame": {
+        "projectedFull": 7.4,
+        "projectedF5": 4.1,
+        "postedFull": 8.5,
+        "postedF5": 4.7,
+        "fullLean": "Pass",
+        "f5Lean": "Pass",
+        "chaosVeto": true,
+        "chaosWarning": true,
+        "chaosReason": "under exposed to mistake-chaos and one-big-inning risk",
+        "maxMistakeChaos": 73,
+        "maxRunClustering": 79.7,
+        "maxOneBadInningAllowed": 63,
+        "maxQuietFirst5": 50,
+        "minLineupConversion": 3.1,
+        "weatherLabel": "74°F | Wind 6 mph R-L | 0% precip",
+        "weatherCarry": false,
+        "dominantAxes": [
+          "Chaos 70.6",
+          "Freeze 62.1",
+          "Flow 60"
+        ],
+        "tailShape": "live-only fork",
+        "tailScore": 80.7,
+        "strandScore": 35.8,
+        "forkScore": 35.8
+      }
+    },
+    {
+      "gamePk": 824512,
+      "title": "Atlanta Braves @ Cincinnati Reds",
+      "lines": {
+        "full": 8.5,
+        "first5": 4.9
+      },
+      "actual": {
+        "full": 10,
+        "first5": 6,
+        "finalScore": "4-6",
+        "first5Score": "2-4"
+      },
+      "sides": {
+        "full": "over",
+        "first5": "over"
+      },
+      "primaryStory": "power damage: 3 HR, 8 XBH; free-pass fuel: 9 BB/HBP/CI, 4 before the 6th; post-starter scoring: 3 bridge runs and 1 late runs",
+      "fullActualDrivers": [
+        "power damage: 3 HR, 8 XBH",
+        "free-pass fuel: 9 BB/HBP/CI, 4 before the 6th",
+        "post-starter scoring: 3 bridge runs and 1 late runs",
+        "loud-contact tail: 19 hard-hit balls, 5 outfield XBH"
+      ],
+      "f5ActualDrivers": [
+        "power damage: 3 HR, 8 XBH",
+        "free-pass fuel: 9 BB/HBP/CI, 4 before the 6th",
+        "post-starter scoring: 3 bridge runs and 1 late runs",
+        "loud-contact tail: 19 hard-hit balls, 5 outfield XBH"
+      ],
+      "counterDrivers": [
+        "bat-missing held the run chain down: 18 strikeouts"
+      ],
+      "overCauses": [
+        "power damage: 3 HR, 8 XBH",
+        "free-pass fuel: 9 BB/HBP/CI, 4 before the 6th",
+        "post-starter scoring: 3 bridge runs and 1 late runs",
+        "loud-contact tail: 19 hard-hit balls, 5 outfield XBH"
+      ],
+      "underCauses": [
+        "bat-missing held the run chain down: 18 strikeouts"
+      ],
+      "repeatability": [
+        "pregame did see chaos: chaos warning; mistake 66.3, cluster 74.6, one-bad 29%",
+        "tail overlay said balanced: tail 72.4, strand 8.8, fork 8.8",
+        "radar axes: Flow 100, Bridge 72.7, Chaos 61"
+      ],
+      "topInnings": [
+        {
+          "inning": 9,
+          "half": "top",
+          "team": "Atlanta Braves",
+          "runs": 1,
+          "baserunners": 4,
+          "scoring": [
+            "Ronald Acuña Jr.: Single (1)"
+          ]
+        },
+        {
+          "inning": 3,
+          "half": "bottom",
+          "team": "Cincinnati Reds",
+          "runs": 1,
+          "baserunners": 3,
+          "scoring": [
+            "JJ Bleday: Double (1)"
+          ]
+        },
+        {
+          "inning": 6,
+          "half": "top",
+          "team": "Atlanta Braves",
+          "runs": 1,
+          "baserunners": 3,
+          "scoring": [
+            "Austin Riley: Sac Fly (1)"
+          ]
+        },
+        {
+          "inning": 1,
+          "half": "top",
+          "team": "Atlanta Braves",
+          "runs": 1,
+          "baserunners": 2,
+          "scoring": [
+            "Ronald Acuña Jr.: Home Run (1)"
+          ]
+        },
+        {
+          "inning": 1,
+          "half": "bottom",
+          "team": "Cincinnati Reds",
+          "runs": 1,
+          "baserunners": 2,
+          "scoring": [
+            "JJ Bleday: Double (1)"
+          ]
+        }
+      ],
+      "stats": {
+        "first5": {
+          "runs": 6,
+          "pa": 44,
+          "baserunners": 14,
+          "hits": 10,
+          "singles": 5,
+          "doubles": 3,
+          "triples": 0,
+          "homeRuns": 2,
+          "extraBaseHits": 5,
+          "freePasses": 4,
+          "errors": 0,
+          "strikeouts": 12,
+          "doublePlays": 0,
+          "scoringPas": 6,
+          "twoOutRuns": 1,
+          "twoOutScoringPas": 1,
+          "runnersOnPas": 7,
+          "hardHits": 10,
+          "ballsInPlay": 27,
+          "airBalls": 20,
+          "outfieldAirBalls": 17,
+          "inningsWithTrafficNoRuns": 1,
+          "inningsWithRuns": 6,
+          "crookedInnings": 0,
+          "maxInningRuns": 1
+        },
+        "bridge": {
+          "runs": 3,
+          "pa": 19,
+          "baserunners": 7,
+          "hits": 4,
+          "singles": 2,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 1,
+          "extraBaseHits": 2,
+          "freePasses": 3,
+          "errors": 0,
+          "strikeouts": 3,
+          "doublePlays": 0,
+          "scoringPas": 3,
+          "twoOutRuns": 1,
+          "twoOutScoringPas": 1,
+          "runnersOnPas": 4,
+          "hardHits": 5,
+          "ballsInPlay": 13,
+          "airBalls": 11,
+          "outfieldAirBalls": 9,
+          "inningsWithTrafficNoRuns": 1,
+          "inningsWithRuns": 3,
+          "crookedInnings": 0,
+          "maxInningRuns": 1
+        },
+        "late": {
+          "runs": 1,
+          "pa": 14,
+          "baserunners": 5,
+          "hits": 3,
+          "singles": 2,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 0,
+          "extraBaseHits": 1,
+          "freePasses": 2,
+          "errors": 0,
+          "strikeouts": 3,
+          "doublePlays": 0,
+          "scoringPas": 1,
+          "twoOutRuns": 1,
+          "twoOutScoringPas": 1,
+          "runnersOnPas": 3,
+          "hardHits": 4,
+          "ballsInPlay": 9,
+          "airBalls": 7,
+          "outfieldAirBalls": 5,
+          "inningsWithTrafficNoRuns": 1,
+          "inningsWithRuns": 1,
+          "crookedInnings": 0,
+          "maxInningRuns": 1
+        },
+        "total": {
+          "runs": 10,
+          "pa": 77,
+          "baserunners": 26,
+          "hits": 17,
+          "singles": 9,
+          "doubles": 5,
+          "triples": 0,
+          "homeRuns": 3,
+          "extraBaseHits": 8,
+          "freePasses": 9,
+          "errors": 0,
+          "strikeouts": 18,
+          "doublePlays": 0,
+          "scoringPas": 10,
+          "twoOutRuns": 3,
+          "twoOutScoringPas": 3,
+          "runnersOnPas": 14,
+          "hardHits": 19,
+          "ballsInPlay": 49,
+          "airBalls": 38,
+          "outfieldAirBalls": 31,
+          "inningsWithTrafficNoRuns": 3,
+          "inningsWithRuns": 10,
+          "crookedInnings": 0,
+          "maxInningRuns": 1
+        },
+        "visibility": {
+          "gamePk": 824512,
+          "fieldingErrors": 1,
+          "outfieldErrors": 1,
+          "outfieldHits": 12,
+          "outfieldAirHits": 12,
+          "outfieldExtraBaseHits": 5,
+          "outfieldHomeRuns": 3,
+          "visibilityPressureEvents": 12,
+          "visibilityRiskScore": 0,
+          "riskLabel": "none"
+        }
+      },
+      "pregame": {
+        "projectedFull": 9,
+        "projectedF5": 5.2,
+        "postedFull": 8.5,
+        "postedF5": 4.9,
+        "fullLean": "Over",
+        "f5Lean": "Pass",
+        "chaosVeto": false,
+        "chaosWarning": true,
+        "chaosReason": "",
+        "maxMistakeChaos": 66.3,
+        "maxRunClustering": 74.6,
+        "maxOneBadInningAllowed": 29,
+        "maxQuietFirst5": 38,
+        "minLineupConversion": 28.4,
+        "weatherLabel": "73°F | Wind 3 mph L-R | 0% precip",
+        "weatherCarry": false,
+        "dominantAxes": [
+          "Flow 100",
+          "Bridge 72.7",
+          "Chaos 61"
+        ],
+        "tailShape": "balanced",
+        "tailScore": 72.4,
+        "strandScore": 8.8,
+        "forkScore": 8.8
+      }
+    },
+    {
+      "gamePk": 824592,
+      "title": "Detroit Tigers @ Chicago White Sox",
+      "lines": {
+        "full": 8,
+        "first5": 4.4
+      },
+      "actual": {
+        "full": 3,
+        "first5": 1,
+        "finalScore": "1-2",
+        "first5Score": "1-0"
+      },
+      "sides": {
+        "full": "under",
+        "first5": "under"
+      },
+      "primaryStory": "starter-window traffic stayed low: 1 F5 runs on 6 baserunners; power stayed contained: 1 HR, 3 XBH; traffic stranded: 7 innings with traffic and no runs",
+      "fullActualDrivers": [
+        "starter-window traffic stayed low: 1 F5 runs on 6 baserunners",
+        "power stayed contained: 1 HR, 3 XBH",
+        "traffic stranded: 7 innings with traffic and no runs",
+        "bridge/late stayed clean: 2 runs after the 5th"
+      ],
+      "f5ActualDrivers": [
+        "starter-window traffic stayed low: 1 F5 runs on 6 baserunners",
+        "power stayed contained: 1 HR, 3 XBH",
+        "traffic stranded: 7 innings with traffic and no runs",
+        "bridge/late stayed clean: 2 runs after the 5th"
+      ],
+      "counterDrivers": [
+        "loud-contact tail: 15 hard-hit balls, 2 outfield XBH"
+      ],
+      "overCauses": [
+        "loud-contact tail: 15 hard-hit balls, 2 outfield XBH"
+      ],
+      "underCauses": [
+        "starter-window traffic stayed low: 1 F5 runs on 6 baserunners",
+        "power stayed contained: 1 HR, 3 XBH",
+        "traffic stranded: 7 innings with traffic and no runs",
+        "bridge/late stayed clean: 2 runs after the 5th"
+      ],
+      "repeatability": [
+        "pregame did see chaos: chaos warning; mistake 59.2, cluster 77.9, one-bad 63%",
+        "tail overlay said live-only fork: tail 68.6, strand 11.1, fork 11.1",
+        "radar axes: Flow 100, Chaos 66.7, Pressure 65.2"
+      ],
+      "topInnings": [
+        {
+          "inning": 7,
+          "half": "bottom",
+          "team": "Chicago White Sox",
+          "runs": 2,
+          "baserunners": 4,
+          "scoring": [
+            "Colson Montgomery: Home Run (1)",
+            "Tristan Peters: Single (1)"
+          ]
+        },
+        {
+          "inning": 1,
+          "half": "top",
+          "team": "Detroit Tigers",
+          "runs": 1,
+          "baserunners": 2,
+          "scoring": [
+            "Spencer Torkelson: Double (1)"
+          ]
+        },
+        {
+          "inning": 6,
+          "half": "top",
+          "team": "Detroit Tigers",
+          "runs": 0,
+          "baserunners": 2,
+          "scoring": []
+        },
+        {
+          "inning": 7,
+          "half": "top",
+          "team": "Detroit Tigers",
+          "runs": 0,
+          "baserunners": 2,
+          "scoring": []
+        }
+      ],
+      "stats": {
+        "first5": {
+          "runs": 1,
+          "pa": 36,
+          "baserunners": 6,
+          "hits": 5,
+          "singles": 3,
+          "doubles": 2,
+          "triples": 0,
+          "homeRuns": 0,
+          "extraBaseHits": 2,
+          "freePasses": 1,
+          "errors": 0,
+          "strikeouts": 9,
+          "doublePlays": 0,
+          "scoringPas": 1,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 2,
+          "hardHits": 5,
+          "ballsInPlay": 26,
+          "airBalls": 12,
+          "outfieldAirBalls": 7,
+          "inningsWithTrafficNoRuns": 4,
+          "inningsWithRuns": 1,
+          "crookedInnings": 0,
+          "maxInningRuns": 1
+        },
+        "bridge": {
+          "runs": 2,
+          "pa": 18,
+          "baserunners": 8,
+          "hits": 4,
+          "singles": 3,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 1,
+          "extraBaseHits": 1,
+          "freePasses": 4,
+          "errors": 0,
+          "strikeouts": 2,
+          "doublePlays": 1,
+          "scoringPas": 2,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 7,
+          "hardHits": 7,
+          "ballsInPlay": 11,
+          "airBalls": 6,
+          "outfieldAirBalls": 3,
+          "inningsWithTrafficNoRuns": 2,
+          "inningsWithRuns": 1,
+          "crookedInnings": 0,
+          "maxInningRuns": 2
+        },
+        "late": {
+          "runs": 0,
+          "pa": 10,
+          "baserunners": 1,
+          "hits": 1,
+          "singles": 1,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "extraBaseHits": 0,
+          "freePasses": 0,
+          "errors": 0,
+          "strikeouts": 1,
+          "doublePlays": 0,
+          "scoringPas": 0,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 0,
+          "hardHits": 3,
+          "ballsInPlay": 9,
+          "airBalls": 6,
+          "outfieldAirBalls": 3,
+          "inningsWithTrafficNoRuns": 1,
+          "inningsWithRuns": 0,
+          "crookedInnings": 0,
+          "maxInningRuns": 0
+        },
+        "total": {
+          "runs": 3,
+          "pa": 64,
+          "baserunners": 15,
+          "hits": 10,
+          "singles": 7,
+          "doubles": 2,
+          "triples": 0,
+          "homeRuns": 1,
+          "extraBaseHits": 3,
+          "freePasses": 5,
+          "errors": 0,
+          "strikeouts": 12,
+          "doublePlays": 1,
+          "scoringPas": 3,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 9,
+          "hardHits": 15,
+          "ballsInPlay": 46,
+          "airBalls": 24,
+          "outfieldAirBalls": 13,
+          "inningsWithTrafficNoRuns": 7,
+          "inningsWithRuns": 2,
+          "crookedInnings": 0,
+          "maxInningRuns": 2
+        },
+        "visibility": {
+          "gamePk": 824592,
+          "fieldingErrors": 0,
+          "outfieldErrors": 0,
+          "outfieldHits": 8,
+          "outfieldAirHits": 8,
+          "outfieldExtraBaseHits": 2,
+          "outfieldHomeRuns": 1,
+          "visibilityPressureEvents": 8,
+          "visibilityRiskScore": 0,
+          "riskLabel": "none"
+        }
+      },
+      "pregame": {
+        "projectedFull": 8.3,
+        "projectedF5": 4.6,
+        "postedFull": 8,
+        "postedF5": 4.4,
+        "fullLean": "Pass",
+        "f5Lean": "Pass",
+        "chaosVeto": false,
+        "chaosWarning": true,
+        "chaosReason": "",
+        "maxMistakeChaos": 59.2,
+        "maxRunClustering": 77.9,
+        "maxOneBadInningAllowed": 63,
+        "maxQuietFirst5": 50,
+        "minLineupConversion": 33,
+        "weatherLabel": "65°F | Wind 7 mph L-R | 0% precip",
+        "weatherCarry": false,
+        "dominantAxes": [
+          "Flow 100",
+          "Chaos 66.7",
+          "Pressure 65.2"
+        ],
+        "tailShape": "live-only fork",
+        "tailScore": 68.6,
+        "strandScore": 11.1,
+        "forkScore": 11.1
+      }
+    },
+    {
+      "gamePk": 824832,
+      "title": "Toronto Blue Jays @ Baltimore Orioles",
+      "lines": {
+        "full": 10,
+        "first5": 5.5
+      },
+      "actual": {
+        "full": 14,
+        "first5": 6,
+        "finalScore": "5-9",
+        "first5Score": "0-6"
+      },
+      "sides": {
+        "full": "over",
+        "first5": "over"
+      },
+      "primaryStory": "starter-window crooked inning: max F5 inning 5, crooked F5 innings 1; power damage: 2 HR, 5 XBH; traffic avalanche without HR dependency: 13 F5 baserunners, 8 hits, 5 free passes",
+      "fullActualDrivers": [
+        "starter-window crooked inning: max F5 inning 5, crooked F5 innings 1",
+        "power damage: 2 HR, 5 XBH",
+        "traffic avalanche without HR dependency: 13 F5 baserunners, 8 hits, 5 free passes",
+        "free-pass fuel: 9 BB/HBP/CI, 5 before the 6th",
+        "post-starter scoring: 4 bridge runs and 4 late runs",
+        "loud-contact tail: 16 hard-hit balls, 3 outfield XBH",
+        "two-out scoring: 7 runs with two outs"
+      ],
+      "f5ActualDrivers": [
+        "starter-window crooked inning: max F5 inning 5, crooked F5 innings 1",
+        "power damage: 2 HR, 5 XBH",
+        "traffic avalanche without HR dependency: 13 F5 baserunners, 8 hits, 5 free passes",
+        "free-pass fuel: 9 BB/HBP/CI, 5 before the 6th",
+        "post-starter scoring: 4 bridge runs and 4 late runs",
+        "loud-contact tail: 16 hard-hit balls, 3 outfield XBH",
+        "two-out scoring: 7 runs with two outs"
+      ],
+      "counterDrivers": [
+        "traffic stranded: 6 innings with traffic and no runs"
+      ],
+      "overCauses": [
+        "starter-window crooked inning: max F5 inning 5, crooked F5 innings 1",
+        "power damage: 2 HR, 5 XBH",
+        "traffic avalanche without HR dependency: 13 F5 baserunners, 8 hits, 5 free passes",
+        "free-pass fuel: 9 BB/HBP/CI, 5 before the 6th",
+        "post-starter scoring: 4 bridge runs and 4 late runs",
+        "loud-contact tail: 16 hard-hit balls, 3 outfield XBH",
+        "two-out scoring: 7 runs with two outs"
+      ],
+      "underCauses": [
+        "traffic stranded: 6 innings with traffic and no runs"
+      ],
+      "repeatability": [
+        "pregame did see chaos: chaos warning; mistake 57.4, cluster 78.5, one-bad 25%",
+        "pregame also saw under/strand risk: quiet F5 88%, lineup conversion floor 7.3",
+        "tail overlay said live-only fork: tail 45.1, strand 53.4, fork 45.1",
+        "radar axes: Bridge 73.2, Freeze 72.6, Flow 60"
+      ],
+      "topInnings": [
+        {
+          "inning": 3,
+          "half": "bottom",
+          "team": "Baltimore Orioles",
+          "runs": 5,
+          "baserunners": 5,
+          "scoring": [
+            "Pete Alonso: Single (1)",
+            "Samuel Basallo: Double (1)",
+            "Colton Cowser: Home Run (3)"
+          ]
+        },
+        {
+          "inning": 8,
+          "half": "top",
+          "team": "Toronto Blue Jays",
+          "runs": 4,
+          "baserunners": 5,
+          "scoring": [
+            "Ernie Clement: Double (1)",
+            "Yohendrick Piñango: Home Run (3)"
+          ]
+        },
+        {
+          "inning": 6,
+          "half": "bottom",
+          "team": "Baltimore Orioles",
+          "runs": 3,
+          "baserunners": 4,
+          "scoring": [
+            "Taylor Ward: Forceout (1)",
+            "Gunnar Henderson: Double (1)",
+            "Adley Rutschman: Sac Fly (1)"
+          ]
+        },
+        {
+          "inning": 2,
+          "half": "bottom",
+          "team": "Baltimore Orioles",
+          "runs": 1,
+          "baserunners": 3,
+          "scoring": [
+            "Colton Cowser: Groundout (1)"
+          ]
+        },
+        {
+          "inning": 7,
+          "half": "top",
+          "team": "Toronto Blue Jays",
+          "runs": 1,
+          "baserunners": 3,
+          "scoring": [
+            "Charles McAdoo: Forceout (1)"
+          ]
+        }
+      ],
+      "stats": {
+        "first5": {
+          "runs": 6,
+          "pa": 42,
+          "baserunners": 13,
+          "hits": 8,
+          "singles": 6,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 1,
+          "extraBaseHits": 2,
+          "freePasses": 5,
+          "errors": 0,
+          "strikeouts": 5,
+          "doublePlays": 1,
+          "scoringPas": 4,
+          "twoOutRuns": 3,
+          "twoOutScoringPas": 1,
+          "runnersOnPas": 8,
+          "hardHits": 7,
+          "ballsInPlay": 32,
+          "airBalls": 16,
+          "outfieldAirBalls": 13,
+          "inningsWithTrafficNoRuns": 5,
+          "inningsWithRuns": 2,
+          "crookedInnings": 1,
+          "maxInningRuns": 5
+        },
+        "bridge": {
+          "runs": 4,
+          "pa": 20,
+          "baserunners": 9,
+          "hits": 6,
+          "singles": 5,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 0,
+          "extraBaseHits": 1,
+          "freePasses": 3,
+          "errors": 0,
+          "strikeouts": 2,
+          "doublePlays": 0,
+          "scoringPas": 4,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 9,
+          "hardHits": 6,
+          "ballsInPlay": 15,
+          "airBalls": 9,
+          "outfieldAirBalls": 7,
+          "inningsWithTrafficNoRuns": 1,
+          "inningsWithRuns": 2,
+          "crookedInnings": 1,
+          "maxInningRuns": 3
+        },
+        "late": {
+          "runs": 4,
+          "pa": 14,
+          "baserunners": 5,
+          "hits": 4,
+          "singles": 2,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 1,
+          "extraBaseHits": 2,
+          "freePasses": 1,
+          "errors": 0,
+          "strikeouts": 3,
+          "doublePlays": 0,
+          "scoringPas": 2,
+          "twoOutRuns": 4,
+          "twoOutScoringPas": 2,
+          "runnersOnPas": 3,
+          "hardHits": 3,
+          "ballsInPlay": 10,
+          "airBalls": 8,
+          "outfieldAirBalls": 6,
+          "inningsWithTrafficNoRuns": 0,
+          "inningsWithRuns": 1,
+          "crookedInnings": 1,
+          "maxInningRuns": 4
+        },
+        "total": {
+          "runs": 14,
+          "pa": 76,
+          "baserunners": 27,
+          "hits": 18,
+          "singles": 13,
+          "doubles": 3,
+          "triples": 0,
+          "homeRuns": 2,
+          "extraBaseHits": 5,
+          "freePasses": 9,
+          "errors": 0,
+          "strikeouts": 10,
+          "doublePlays": 1,
+          "scoringPas": 10,
+          "twoOutRuns": 7,
+          "twoOutScoringPas": 3,
+          "runnersOnPas": 20,
+          "hardHits": 16,
+          "ballsInPlay": 57,
+          "airBalls": 33,
+          "outfieldAirBalls": 26,
+          "inningsWithTrafficNoRuns": 6,
+          "inningsWithRuns": 5,
+          "crookedInnings": 3,
+          "maxInningRuns": 5
+        },
+        "visibility": {
+          "gamePk": 824832,
+          "fieldingErrors": 1,
+          "outfieldErrors": 0,
+          "outfieldHits": 15,
+          "outfieldAirHits": 15,
+          "outfieldExtraBaseHits": 3,
+          "outfieldHomeRuns": 2,
+          "visibilityPressureEvents": 16,
+          "visibilityRiskScore": 9.584459395757877,
+          "riskLabel": "none"
+        }
+      },
+      "pregame": {
+        "projectedFull": 8.3,
+        "projectedF5": 4.6,
+        "postedFull": 10,
+        "postedF5": 5.5,
+        "fullLean": "Under",
+        "f5Lean": "Pass",
+        "chaosVeto": false,
+        "chaosWarning": true,
+        "chaosReason": "",
+        "maxMistakeChaos": 57.4,
+        "maxRunClustering": 78.5,
+        "maxOneBadInningAllowed": 25,
+        "maxQuietFirst5": 88,
+        "minLineupConversion": 7.3,
+        "weatherLabel": "71°F | Wind 7 mph L-R | 0% precip",
+        "weatherCarry": false,
+        "dominantAxes": [
+          "Bridge 73.2",
+          "Freeze 72.6",
+          "Flow 60"
+        ],
+        "tailShape": "live-only fork",
+        "tailScore": 45.1,
+        "strandScore": 53.4,
+        "forkScore": 45.1
+      }
+    },
+    {
+      "gamePk": 825001,
+      "title": "New York Yankees @ Athletics",
+      "lines": {
+        "full": 10,
+        "first5": 5.7
+      },
+      "actual": {
+        "full": 21,
+        "first5": 16,
+        "finalScore": "13-8",
+        "first5Score": "13-3"
+      },
+      "sides": {
+        "full": "over",
+        "first5": "over"
+      },
+      "primaryStory": "starter-window crooked inning: max F5 inning 13, crooked F5 innings 2; power damage: 2 HR, 9 XBH; traffic avalanche without HR dependency: 24 F5 baserunners, 16 hits, 7 free passes",
+      "fullActualDrivers": [
+        "starter-window crooked inning: max F5 inning 13, crooked F5 innings 2",
+        "power damage: 2 HR, 9 XBH",
+        "traffic avalanche without HR dependency: 24 F5 baserunners, 16 hits, 7 free passes",
+        "free-pass fuel: 11 BB/HBP/CI, 7 before the 6th",
+        "post-starter scoring: 4 bridge runs and 1 late runs",
+        "loud-contact tail: 19 hard-hit balls, 6 outfield XBH",
+        "two-out scoring: 5 runs with two outs"
+      ],
+      "f5ActualDrivers": [
+        "starter-window crooked inning: max F5 inning 13, crooked F5 innings 2",
+        "power damage: 2 HR, 9 XBH",
+        "traffic avalanche without HR dependency: 24 F5 baserunners, 16 hits, 7 free passes",
+        "free-pass fuel: 11 BB/HBP/CI, 7 before the 6th",
+        "post-starter scoring: 4 bridge runs and 1 late runs",
+        "loud-contact tail: 19 hard-hit balls, 6 outfield XBH",
+        "two-out scoring: 5 runs with two outs"
+      ],
+      "counterDrivers": [
+        "traffic stranded: 6 innings with traffic and no runs"
+      ],
+      "overCauses": [
+        "starter-window crooked inning: max F5 inning 13, crooked F5 innings 2",
+        "power damage: 2 HR, 9 XBH",
+        "traffic avalanche without HR dependency: 24 F5 baserunners, 16 hits, 7 free passes",
+        "free-pass fuel: 11 BB/HBP/CI, 7 before the 6th",
+        "post-starter scoring: 4 bridge runs and 1 late runs",
+        "loud-contact tail: 19 hard-hit balls, 6 outfield XBH",
+        "two-out scoring: 5 runs with two outs"
+      ],
+      "underCauses": [
+        "traffic stranded: 6 innings with traffic and no runs"
+      ],
+      "repeatability": [
+        "pregame did see chaos: under exposed to mistake-chaos and one-big-inning risk; mistake 70.2, cluster 79.1, one-bad 75%",
+        "pregame carry was live: 83°F | 0% precip | weather helps carry",
+        "pregame also saw under/strand risk: quiet F5 71%, lineup conversion floor 7.9",
+        "tail overlay said over-tail: tail 100, strand 56.3, fork 56.3",
+        "radar axes: Flow 100, Chaos 76.4, Freeze 70.2"
+      ],
+      "topInnings": [
+        {
+          "inning": 3,
+          "half": "top",
+          "team": "New York Yankees",
+          "runs": 13,
+          "baserunners": 15,
+          "scoring": [
+            "Paul Goldschmidt: Single (1)",
+            "Ben Rice: Double (2)",
+            "Aaron Judge: Single (1)",
+            "José Caballero: Walk (1)",
+            "Trent Grisham: Single (2)",
+            "Anthony Volpe: Single (1)",
+            "Max Schuemann: Double (2)",
+            "Ben Rice: Triple (2)",
+            "Cody Bellinger: Single (1)"
+          ]
+        },
+        {
+          "inning": 7,
+          "half": "bottom",
+          "team": "Athletics",
+          "runs": 4,
+          "baserunners": 5,
+          "scoring": [
+            "Brent Rooker: Home Run (1)",
+            "Jonah Heim: Home Run (3)"
+          ]
+        },
+        {
+          "inning": 1,
+          "half": "bottom",
+          "team": "Athletics",
+          "runs": 3,
+          "baserunners": 4,
+          "scoring": [
+            "Jonah Heim: Field Error (2)",
+            "Lawrence Butler: Single (1)"
+          ]
+        },
+        {
+          "inning": 8,
+          "half": "bottom",
+          "team": "Athletics",
+          "runs": 1,
+          "baserunners": 2,
+          "scoring": [
+            "Nick Kurtz: Double (1)"
+          ]
+        },
+        {
+          "inning": 3,
+          "half": "bottom",
+          "team": "Athletics",
+          "runs": 0,
+          "baserunners": 2,
+          "scoring": []
+        }
+      ],
+      "stats": {
+        "first5": {
+          "runs": 16,
+          "pa": 53,
+          "baserunners": 24,
+          "hits": 16,
+          "singles": 11,
+          "doubles": 4,
+          "triples": 1,
+          "homeRuns": 0,
+          "extraBaseHits": 5,
+          "freePasses": 7,
+          "errors": 1,
+          "strikeouts": 8,
+          "doublePlays": 1,
+          "scoringPas": 11,
+          "twoOutRuns": 4,
+          "twoOutScoringPas": 3,
+          "runnersOnPas": 18,
+          "hardHits": 14,
+          "ballsInPlay": 38,
+          "airBalls": 27,
+          "outfieldAirBalls": 23,
+          "inningsWithTrafficNoRuns": 3,
+          "inningsWithRuns": 2,
+          "crookedInnings": 2,
+          "maxInningRuns": 13
+        },
+        "bridge": {
+          "runs": 4,
+          "pa": 18,
+          "baserunners": 7,
+          "hits": 4,
+          "singles": 2,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 2,
+          "extraBaseHits": 2,
+          "freePasses": 3,
+          "errors": 0,
+          "strikeouts": 4,
+          "doublePlays": 1,
+          "scoringPas": 2,
+          "twoOutRuns": 0,
+          "twoOutScoringPas": 0,
+          "runnersOnPas": 3,
+          "hardHits": 2,
+          "ballsInPlay": 11,
+          "airBalls": 7,
+          "outfieldAirBalls": 4,
+          "inningsWithTrafficNoRuns": 2,
+          "inningsWithRuns": 1,
+          "crookedInnings": 1,
+          "maxInningRuns": 4
+        },
+        "late": {
+          "runs": 1,
+          "pa": 16,
+          "baserunners": 4,
+          "hits": 3,
+          "singles": 1,
+          "doubles": 2,
+          "triples": 0,
+          "homeRuns": 0,
+          "extraBaseHits": 2,
+          "freePasses": 1,
+          "errors": 0,
+          "strikeouts": 4,
+          "doublePlays": 0,
+          "scoringPas": 1,
+          "twoOutRuns": 1,
+          "twoOutScoringPas": 1,
+          "runnersOnPas": 3,
+          "hardHits": 3,
+          "ballsInPlay": 11,
+          "airBalls": 6,
+          "outfieldAirBalls": 5,
+          "inningsWithTrafficNoRuns": 1,
+          "inningsWithRuns": 1,
+          "crookedInnings": 0,
+          "maxInningRuns": 1
+        },
+        "total": {
+          "runs": 21,
+          "pa": 87,
+          "baserunners": 35,
+          "hits": 23,
+          "singles": 14,
+          "doubles": 6,
+          "triples": 1,
+          "homeRuns": 2,
+          "extraBaseHits": 9,
+          "freePasses": 11,
+          "errors": 1,
+          "strikeouts": 16,
+          "doublePlays": 2,
+          "scoringPas": 14,
+          "twoOutRuns": 5,
+          "twoOutScoringPas": 4,
+          "runnersOnPas": 24,
+          "hardHits": 19,
+          "ballsInPlay": 60,
+          "airBalls": 40,
+          "outfieldAirBalls": 32,
+          "inningsWithTrafficNoRuns": 6,
+          "inningsWithRuns": 4,
+          "crookedInnings": 3,
+          "maxInningRuns": 13
+        },
+        "visibility": {
+          "gamePk": 825001,
+          "fieldingErrors": 1,
+          "outfieldErrors": 1,
+          "outfieldHits": 18,
+          "outfieldAirHits": 18,
+          "outfieldExtraBaseHits": 6,
+          "outfieldHomeRuns": 2,
+          "visibilityPressureEvents": 19,
+          "visibilityRiskScore": 20.227422337991907,
+          "riskLabel": "low"
+        }
+      },
+      "pregame": {
+        "projectedFull": 9.1,
+        "projectedF5": 5.2,
+        "postedFull": 10,
+        "postedF5": 5.7,
+        "fullLean": "Pass",
+        "f5Lean": "Over",
+        "chaosVeto": true,
+        "chaosWarning": true,
+        "chaosReason": "under exposed to mistake-chaos and one-big-inning risk",
+        "maxMistakeChaos": 70.2,
+        "maxRunClustering": 79.1,
+        "maxOneBadInningAllowed": 75,
+        "maxQuietFirst5": 71,
+        "minLineupConversion": 7.9,
+        "weatherLabel": "83°F | 0% precip | weather helps carry",
+        "weatherCarry": true,
+        "dominantAxes": [
+          "Flow 100",
+          "Chaos 76.4",
+          "Freeze 70.2"
+        ],
+        "tailShape": "over-tail",
+        "tailScore": 100,
+        "strandScore": 56.3,
+        "forkScore": 56.3
+      }
+    }
+  ],
+  "todayReads": []
+}

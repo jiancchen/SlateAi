@@ -431,7 +431,7 @@ const buildHitterStatcastPropSignal = (trend = null) => {
   }
 }
 
-const buildTotalBasesShadowSignal = ({ hitter = null, weatherProfile = null } = {}) => {
+const buildTotalBasesShadowSignal = ({ hitter = null, weatherProfile = null, sunVisibilityProfile = null } = {}) => {
   if (!hitter) {
     return {
       supportTag: null,
@@ -450,6 +450,7 @@ const buildTotalBasesShadowSignal = ({ hitter = null, weatherProfile = null } = 
   const pitchTypeGrade = Number(hitter?.metrics?.pitchTypeGrade || 0)
   const matchupGrade = Number(hitter?.metrics?.matchupGrade || 0)
   const weatherLift = Number(weatherProfile?.runBoostFirst5 || 0) + Number(weatherProfile?.runBoostLate || 0)
+  const sunVisibilityRisk = Number(sunVisibilityProfile?.visibilityRiskScore)
 
   const xslgReady = Number.isFinite(rolling7Xslg) && rolling7Xslg >= 0.61
   const hardHitReady = Number.isFinite(rolling7HardHitPct) && rolling7HardHitPct >= 38.3
@@ -461,6 +462,7 @@ const buildTotalBasesShadowSignal = ({ hitter = null, weatherProfile = null } = 
   if (pitchTypeGrade >= 1.5) extraSupports.push('arsenal fit')
   if (matchupGrade >= 2.5) extraSupports.push('starter fit')
   if (weatherLift >= 0.08) extraSupports.push('weather lift')
+  if (Number.isFinite(sunVisibilityRisk) && sunVisibilityRisk >= 42) extraSupports.push('sun visibility')
   if (careerReady) extraSupports.push('career power')
 
   if (backed) {
@@ -505,6 +507,7 @@ const calibrateMlbPropConfidence = ({
   teamScript,
   lineupStatus = 'pending',
   weatherProfile = null,
+  sunVisibilityProfile = null,
   homeRunBoost = null
 }) => {
   const probabilityWeight = Number(config?.probabilityWeight || 0.8)
@@ -553,6 +556,12 @@ const calibrateMlbPropConfidence = ({
     }
   }
 
+  const sunVisibilityRisk = Number(sunVisibilityProfile?.visibilityRiskScore)
+  if (Number.isFinite(sunVisibilityRisk) && sunVisibilityRisk >= 42) {
+    if (propType === 'totalBases') confidence += clamp((sunVisibilityRisk - 42) * 0.07, 0, 3)
+    if (propType === 'hits' || propType === 'singles') confidence += clamp((sunVisibilityRisk - 42) * 0.04, 0, 2)
+  }
+
   if (propType === 'homeRun' && homeRunBoost?.target?.lastHomeRunGapDays >= 7) confidence -= 4
   if (propType === 'homeRun' && Number(homeRunBoost?.target?.homeRunsLast7Days || 0) === 0) confidence -= 3
   if (propType === 'walks' && Number(hitter?.metrics?.patienceScore || 50) >= 66) confidence += 2
@@ -570,13 +579,14 @@ const buildPropScriptTags = ({
   projectedProfile,
   lineupStatus,
   weatherProfile,
+  sunVisibilityProfile,
   homeRunBoost,
   starterWalkPressure
 }) => {
   const tags = []
   const statcastSignal = buildHitterStatcastPropSignal(hitter?.statcastTrend)
   const repeatability = buildHitterRepeatabilitySignal(hitter)
-  const tbShadowSignal = propType === 'totalBases' ? buildTotalBasesShadowSignal({ hitter, weatherProfile }) : null
+  const tbShadowSignal = propType === 'totalBases' ? buildTotalBasesShadowSignal({ hitter, weatherProfile, sunVisibilityProfile }) : null
   const topThirdScore = Number(teamScript?.topThirdScore || 50)
   const middleScore = Number(teamScript?.middleScore || 50)
   const depthScore = Number(teamScript?.depthScore || 50)
@@ -610,6 +620,7 @@ const buildPropScriptTags = ({
   if (weatherProfile?.label && Number(weatherProfile.runBoostLate || 0) + Number(weatherProfile.runBoostFirst5 || 0) >= 0.08) {
     tags.push('weather-run-lift')
   }
+  if (Number(sunVisibilityProfile?.visibilityRiskScore) >= 42) tags.push('sun-visibility-lane')
   if (propType === 'homeRun' && homeRunBoost?.target?.scoreBand) tags.push(`hr-${homeRunBoost.target.scoreBand}-lane`)
   if (propType === 'totalBases' && tbShadowSignal?.scriptTag) tags.push(tbShadowSignal.scriptTag)
   tags.push(...statcastSignal.tags)
@@ -628,6 +639,7 @@ const buildMlbPropCandidate = ({
   opposingStarter,
   lineupStatus = 'pending',
   weatherProfile = null,
+  sunVisibilityProfile = null,
   propType
 }) => {
   if (!hitter?.name || !hitter?.metrics) return null
@@ -646,7 +658,7 @@ const buildMlbPropCandidate = ({
   const statcastSignal = buildHitterStatcastPropSignal(hitter.statcastTrend)
   const repeatability = buildHitterRepeatabilitySignal(hitter)
   const approachState = repeatability.approachState || {}
-  const tbShadowSignal = propType === 'totalBases' ? buildTotalBasesShadowSignal({ hitter, weatherProfile }) : null
+  const tbShadowSignal = propType === 'totalBases' ? buildTotalBasesShadowSignal({ hitter, weatherProfile, sunVisibilityProfile }) : null
   const approachMultiplier = clamp(1 + (Number(approachState.confidenceScore || 50) - 50) * 0.003, 0.94, 1.08)
   const slotPressure =
     hitter.slot <= 2 ? 1.08 : hitter.slot <= 4 ? 1.12 : hitter.slot <= 6 ? 1.02 : 0.91
@@ -670,6 +682,7 @@ const buildMlbPropCandidate = ({
     projectedProfile,
     lineupStatus,
     weatherProfile,
+    sunVisibilityProfile,
     homeRunBoost,
     starterWalkPressure
   })
@@ -692,6 +705,10 @@ const buildMlbPropCandidate = ({
     sample.seasonPlateAppearances < 16 ||
     sample.statcastGames < 3 ||
     sample.opponentContextGames < 4
+  const sunVisibilityRisk = Number(sunVisibilityProfile?.visibilityRiskScore)
+  const sunExtraBaseMultiplier = Number.isFinite(sunVisibilityRisk)
+    ? 1 + clamp((sunVisibilityRisk - 42) * 0.0018, 0, 0.07)
+    : 1
 
   if (propType === 'hits') {
     expectedValue = expectedPA * seasonHitRate * contactFactor * formFactor * matchupFactor * teamTrafficFactor * 0.98
@@ -726,7 +743,8 @@ const buildMlbPropCandidate = ({
       teamTrafficFactor *
       (1 + homeRunBoost.scoreBoost * 0.6) *
       statcastSignal.tbMultiplier *
-      approachMultiplier
+      approachMultiplier *
+      sunExtraBaseMultiplier
     if (tinyTbSample && tbShadowSignal?.supportLevel !== 'backed') {
       expectedValue = Math.min(expectedValue, repeatability.careerPowerBacked ? 2.15 : 1.75)
     }
@@ -782,6 +800,7 @@ const buildMlbPropCandidate = ({
     teamScript,
     lineupStatus,
     weatherProfile,
+    sunVisibilityProfile,
     homeRunBoost
   })
   if (confidence < 54) return null
@@ -880,6 +899,7 @@ const buildLegacyMlbPlayerProps = (game, analysis) => {
   ]
 
   const weatherProfile = analysis.mlbProjection?.weather || null
+  const sunVisibilityProfile = analysis.mlbProjection?.sunVisibility || null
   const propTypes = ['homeRun', 'rbi', 'totalBases', 'hits', 'walks', 'singles']
   const targets = teamBoardEntries.flatMap(({ teamName, lineupTeam, teamScript, projectedRuns, projectedHits, projectedProfile, opposingStarter, lineupStatus }) =>
     (lineupTeam?.lineup || []).flatMap((hitter) =>
@@ -896,6 +916,7 @@ const buildLegacyMlbPlayerProps = (game, analysis) => {
             opposingStarter,
             lineupStatus,
             weatherProfile,
+            sunVisibilityProfile,
             propType
           })
         )

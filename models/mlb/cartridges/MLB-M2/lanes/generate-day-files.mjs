@@ -2565,6 +2565,50 @@ const buildSeriesContextByGamePk = ({ date, games }) => {
   )
 }
 
+const buildSunVisibilityByGamePk = ({ date, games }) => {
+  const gamePks = [...new Set(games.map((game) => game.gamePk).filter((value) => Number.isFinite(value)))]
+  if (!gamePks.length) return {}
+
+  let rows = []
+  try {
+    rows = runSqliteJson(
+      `select
+         game_pk, venue_name, roof_type, field_azimuth_deg,
+         sun_azimuth_first_pitch, sun_elevation_first_pitch,
+         sun_azimuth_midgame, sun_elevation_midgame, outfield_sun_angle_deg,
+         outfield_glare_risk, shadow_transition_risk, visibility_risk_score,
+         risk_label, visibility_notes_json
+       from mlb_game_sun_visibility_snapshots
+       where game_date='${date}'
+         and game_pk in (${gamePks.join(',')})
+       order by game_pk;`
+    )
+  } catch (error) {
+    return {}
+  }
+
+  return Object.fromEntries(
+    rows.map((row) => [
+      Number(row.game_pk),
+      {
+        venueName: row.venue_name || '',
+        roofType: row.roof_type || '',
+        fieldAzimuthDeg: roundMaybe(row.field_azimuth_deg),
+        sunAzimuthFirstPitch: roundMaybe(row.sun_azimuth_first_pitch),
+        sunElevationFirstPitch: roundMaybe(row.sun_elevation_first_pitch),
+        sunAzimuthMidgame: roundMaybe(row.sun_azimuth_midgame),
+        sunElevationMidgame: roundMaybe(row.sun_elevation_midgame),
+        outfieldSunAngleDeg: roundMaybe(row.outfield_sun_angle_deg),
+        outfieldGlareRisk: roundMaybe(row.outfield_glare_risk),
+        shadowTransitionRisk: roundMaybe(row.shadow_transition_risk),
+        visibilityRiskScore: roundMaybe(row.visibility_risk_score),
+        riskLabel: row.risk_label || '',
+        notes: safeJsonParse(row.visibility_notes_json, [])
+      }
+    ])
+  )
+}
+
 const buildTierThreeBullpenProfilesByTeam = ({ date, games, appearanceWindow = 8 }) => {
   const teams = [...new Set(games.flatMap((game) => [game.away, game.home]).filter(Boolean))]
   if (!teams.length) return {}
@@ -3007,6 +3051,7 @@ const main = async () => {
   const recentInningHistoryByTeam = buildRecentInningHistoryByTeam({ date: options.date, games: rawGames })
   const matchupInningHistoryByTeam = buildMatchupInningHistoryByTeam({ date: options.date, games: rawGames })
   const seriesContextByGamePk = buildSeriesContextByGamePk({ date: options.date, games: rawGames })
+  const sunVisibilityByGamePk = buildSunVisibilityByGamePk({ date: options.date, games: rawGames })
   const tierThreeBullpenProfilesByTeam = buildTierThreeBullpenProfilesByTeam({ date: options.date, games: rawGames })
   const starterThirdTimePenaltyByPitcherId = buildStarterThirdTimePenaltyByPitcherId({ date: options.date, games: rawGames })
   const standingsContextByTeam = buildStandingsContext(standings.records || [])
@@ -3129,7 +3174,8 @@ const main = async () => {
       matchupInningHistory: {
         away: matchupInningHistoryByTeam[`${game.away}__${game.home}`] ?? [],
         home: matchupInningHistoryByTeam[`${game.home}__${game.away}`] ?? []
-      }
+      },
+      sunVisibility: Number.isFinite(game.gamePk) ? sunVisibilityByGamePk[game.gamePk] ?? null : null
     },
     tierThreeContext: {
       bullpenCommand: {

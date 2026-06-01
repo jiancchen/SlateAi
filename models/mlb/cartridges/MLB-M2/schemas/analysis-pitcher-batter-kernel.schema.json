@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sports-trading-board.local/schemas/mlb-m2/analysis-pitcher-batter-kernel.schema.json",
+  "title": "MLB-M2 analysis.pitcherBatterKernel",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["version", "matchups", "teamSummaries", "storyBuckets", "trustLabel"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "const": "MLB-M2-pitcher-batter-kernel-v0"
+    },
+    "trustLabel": {
+      "type": "string",
+      "enum": ["research-only", "watch", "validated", "pass"]
+    },
+    "matchups": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/matchupRow" }
+    },
+    "teamSummaries": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/teamSummary" }
+    },
+    "storyBuckets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["bucket", "side", "score"],
+        "properties": {
+          "bucket": {
+            "type": "string",
+            "examples": ["starter-hold-under", "pitch-mix-damage-over", "traffic-without-damage-strand"]
+          },
+          "side": {
+            "type": "string",
+            "enum": ["away", "home", "game"]
+          },
+          "score": { "$ref": "#/$defs/score" },
+          "reason": { "type": "string" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "matchupRow": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "hitterId",
+        "hitterName",
+        "pitcherId",
+        "pitcherName",
+        "side",
+        "pitchFitDamage",
+        "pitchFitWhiff",
+        "commandStress",
+        "platoonPressure"
+      ],
+      "properties": {
+        "hitterId": { "type": ["string", "number"] },
+        "hitterName": { "type": "string" },
+        "pitcherId": { "type": ["string", "number"] },
+        "pitcherName": { "type": "string" },
+        "side": { "type": "string", "enum": ["away", "home"] },
+        "battingOrder": { "type": ["integer", "null"], "minimum": 1, "maximum": 9 },
+        "pitchFitDamage": { "$ref": "#/$defs/score" },
+        "pitchFitWhiff": { "$ref": "#/$defs/score" },
+        "zonePunish": { "$ref": "#/$defs/score" },
+        "commandStress": { "$ref": "#/$defs/score" },
+        "platoonPressure": { "$ref": "#/$defs/score" },
+        "firstCycleRead": { "$ref": "#/$defs/score" },
+        "secondCycleRead": { "$ref": "#/$defs/score" },
+        "notes": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "teamSummary": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["trafficFit", "damageFit", "whiffFit", "collapseTriggerScore"],
+      "properties": {
+        "trafficFit": { "$ref": "#/$defs/score" },
+        "damageFit": { "$ref": "#/$defs/score" },
+        "whiffFit": { "$ref": "#/$defs/score" },
+        "starterWindowDamage": { "$ref": "#/$defs/score" },
+        "firstCycleTraffic": { "$ref": "#/$defs/score" },
+        "collapseTriggerScore": { "$ref": "#/$defs/score" },
+        "strandForkRisk": { "$ref": "#/$defs/score" }
+      }
+    }
+  }
+}

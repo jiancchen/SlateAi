@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "modelId": "MLB-M2",
+  "experiment": "state_formula_parallel_model",
+  "range": {
+    "start": "2026-05-10",
+    "end": "2026-05-31"
+  },
+  "coverage": {
+    "rows": 123,
+    "dates": [
+      "2026-05-23",
+      "2026-05-24",
+      "2026-05-25",
+      "2026-05-26",
+      "2026-05-27",
+      "2026-05-28",
+      "2026-05-29",
+      "2026-05-30",
+      "2026-05-31"
+    ]
+  },
+  "artifacts": {
+    "trainingRows": "data-private/model-training/mlb-m2-state-formula-training-rows-2026-05-10-to-2026-05-31.csv"
+  },
+  "baselines": {
+    "f5": {
+      "rows": 123,
+      "accuracy": 0.602
+    },
+    "full": {
+      "rows": 123,
+      "accuracy": 0.512
+    }
+  },
+  "walkForward": {
+    "f5_over": [
+      {
+        "model": "rf",
+        "rows": 81,
+        "accuracy": 0.494,
+        "byDate": [
+          {
+            "date": "2026-05-26",
+            "rows": 15,
+            "accuracy": 0.467
+          },
+          {
+            "date": "2026-05-27",
+            "rows": 15,
+            "accuracy": 0.467
+          },
+          {
+            "date": "2026-05-28",
+            "rows": 6,
+            "accuracy": 0.5
+          },
+          {
+            "date": "2026-05-29",
+            "rows": 15,
+            "accuracy": 0.4
+          },
+          {
+            "date": "2026-05-30",
+            "rows": 15,
+            "accuracy": 0.667
+          },
+          {
+            "date": "2026-05-31",
+            "rows": 15,
+            "accuracy": 0.467
+          }
+        ]
+      },
+      {
+        "model": "gb",
+        "rows": 81,
+        "accuracy": 0.494,
+        "byDate": [
+          {
+            "date": "2026-05-26",
+            "rows": 15,
+            "accuracy": 0.667
+          },
+          {
+            "date": "2026-05-27",
+            "rows": 15,
+            "accuracy": 0.333
+          },
+          {
+            "date": "2026-05-28",
+            "rows": 6,
+            "accuracy": 0.167
+          },
+          {
+            "date": "2026-05-29",
+            "rows": 15,
+            "accuracy": 0.4
+          },
+          {
+            "date": "2026-05-30",
+            "rows": 15,
+            "accuracy": 0.6
+          },
+          {
+            "date": "2026-05-31",
+            "rows": 15,
+            "accuracy": 0.6
+          }
+        ]
+      }
+    ],
+    "full_over": [
+      {
+        "model": "rf",
+        "rows": 81,
+        "accuracy": 0.444,
+        "byDate": [
+          {
+            "date": "2026-05-26",
+            "rows": 15,
+            "accuracy": 0.333
+          },
+          {
+            "date": "2026-05-27",
+            "rows": 15,
+            "accuracy": 0.467
+          },
+          {
+            "date": "2026-05-28",
+            "rows": 6,
+            "accuracy": 0.5
+          },
+          {
+            "date": "2026-05-29",
+            "rows": 15,
+            "accuracy": 0.467
+          },
+          {
+            "date": "2026-05-30",
+            "rows": 15,
+            "accuracy": 0.4
+          },
+          {
+            "date": "2026-05-31",
+            "rows": 15,
+            "accuracy": 0.533
+          }
+        ]
+      },
+      {
+        "model": "gb",
+        "rows": 81,
+        "accuracy": 0.407,
+        "byDate": [
+          {
+            "date": "2026-05-26",
+            "rows": 15,
+            "accuracy": 0.333
+          },
+          {
+            "date": "2026-05-27",
+            "rows": 15,
+            "accuracy": 0.4
+          },
+          {
+            "date": "2026-05-28",
+            "rows": 6,
+            "accuracy": 0.333
+          },
+          {
+            "date": "2026-05-29",
+            "rows": 15,
+            "accuracy": 0.4
+          },
+          {
+            "date": "2026-05-30",
+            "rows": 15,
+            "accuracy": 0.467
+          },
+          {
+            "date": "2026-05-31",
+            "rows": 15,
+            "accuracy": 0.467
+          }
+        ]
+      }
+    ],
+    "f5_story": [
+      {
+        "model": "rf_story",
+        "rows": 81,
+        "accuracy": 0.42,
+        "byDate": [
+          {
+            "date": "2026-05-26",
+            "rows": 15,
+            "accuracy": 0.467
+          },
+          {
+            "date": "2026-05-27",
+            "rows": 15,
+            "accuracy": 0.333
+          },
+          {
+            "date": "2026-05-28",
+            "rows": 6,
+            "accuracy": 0.167
+          },
+          {
+            "date": "2026-05-29",
+            "rows": 15,
+            "accuracy": 0.467
+          },
+          {
+            "date": "2026-05-30",
+            "rows": 15,
+            "accuracy": 0.4
+          },
+          {
+            "date": "2026-05-31",
+            "rows": 15,
+            "accuracy": 0.533
+          }
+        ]
+      }
+    ]
+  }
+}

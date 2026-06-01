@@ -66,7 +66,64 @@
       "label": "100.0%",
       "record": "5/5",
       "scope": "May 31 O/U benchmark set",
-      "note": "User-corrected benchmark. This is tracked separately from the older value-board totals audit rows."
+      "note": "User-corrected benchmark. This is tracked separately from the older value-board totals audit rows.",
+      "plays": [
+        {
+          "gameTitle": "Giants @ Rockies",
+          "category": "Weather-carry chaos",
+          "m2Expression": "Totals / HR cluster before side",
+          "ouRead": "Over / high-total shape",
+          "postedFullGameRead": "Hold 11",
+          "actualTotal": 25,
+          "result": "hit",
+          "phasePath": "jumped_early_hold",
+          "realityGapScore": 69.7
+        },
+        {
+          "gameTitle": "Marlins @ Mets",
+          "category": "Weather-carry chaos",
+          "m2Expression": "Totals / HR cluster before side",
+          "ouRead": "Over / avoid raw under",
+          "postedFullGameRead": "Under 7.5",
+          "actualTotal": 11,
+          "result": "hit",
+          "phasePath": "dead_early_loss",
+          "realityGapScore": 70.1
+        },
+        {
+          "gameTitle": "Phillies @ Dodgers",
+          "category": "Weather-carry chaos",
+          "m2Expression": "Totals / HR cluster before side",
+          "ouRead": "Over / avoid chaos-vetoed under",
+          "postedFullGameRead": "Hold 9; original Under 9 vetoed",
+          "actualTotal": 10,
+          "result": "hit",
+          "phasePath": "starter_carried",
+          "realityGapScore": 58.9
+        },
+        {
+          "gameTitle": "Twins @ Pirates",
+          "category": "Weather-carry chaos",
+          "m2Expression": "Totals / HR cluster before side",
+          "ouRead": "Over / high-total shape",
+          "postedFullGameRead": "Hold 7.5",
+          "actualTotal": 12,
+          "result": "hit",
+          "phasePath": "starter_carried",
+          "realityGapScore": 64.1
+        },
+        {
+          "gameTitle": "Yankees @ Athletics",
+          "category": "Weather-carry chaos",
+          "m2Expression": "Totals / HR cluster before side",
+          "ouRead": "Over / avoid chaos-vetoed under",
+          "postedFullGameRead": "Hold 10; original Under 10 vetoed",
+          "actualTotal": 21,
+          "result": "hit",
+          "phasePath": "late_comeback",
+          "realityGapScore": 71.9
+        }
+      ]
     },
     "dominantCategories": "Weather-carry chaos 5, Crooked-inning game 4, Early-pressure side 2",
     "avoidSaved": 2,

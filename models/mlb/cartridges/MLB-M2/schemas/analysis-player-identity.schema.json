@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sports-trading-board.local/schemas/mlb-m2/analysis-player-identity.schema.json",
+  "title": "MLB-M2 analysis.playerIdentity",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["version", "hitters", "pitchers", "teamSummaries", "trustLabel"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "const": "MLB-M2-player-identity-v0"
+    },
+    "trustLabel": {
+      "type": "string",
+      "enum": ["research-only", "watch", "validated", "pass"]
+    },
+    "hitters": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/playerIdentityRow" }
+    },
+    "pitchers": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/playerIdentityRow" }
+    },
+    "teamSummaries": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "trafficDeviation": { "$ref": "#/$defs/score" },
+          "damageDeviation": { "$ref": "#/$defs/score" },
+          "volatilityCluster": { "$ref": "#/$defs/score" },
+          "sampleRisk": { "$ref": "#/$defs/score" },
+          "notes": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "score": {
+      "type": "number",
+      "minimum": -100,
+      "maximum": 100
+    },
+    "nonNegative": {
+      "type": "number",
+      "minimum": 0
+    },
+    "playerIdentityRow": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "playerId",
+        "playerName",
+        "playerType",
+        "metric",
+        "identityValue",
+        "currentDeviation",
+        "sampleSize",
+        "shrinkageWeight",
+        "modelFamily"
+      ],
+      "properties": {
+        "playerId": { "type": ["string", "number"] },
+        "playerName": { "type": "string" },
+        "playerType": { "type": "string", "enum": ["hitter", "pitcher"] },
+        "metric": { "type": "string" },
+        "careerBaseline": { "type": ["number", "null"] },
+        "seasonBaseline": { "type": ["number", "null"] },
+        "recentProcess": { "type": ["number", "null"] },
+        "opponentAdjustedRecent": { "type": ["number", "null"] },
+        "identityValue": { "type": ["number", "null"] },
+        "currentDeviation": { "type": ["number", "null"] },
+        "sampleSize": { "$ref": "#/$defs/nonNegative" },
+        "shrinkageWeight": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "volatilityScore": { "$ref": "#/$defs/score" },
+        "distribution": {
+          "type": "object",
+          "properties": {
+            "mean": { "type": ["number", "null"] },
+            "p50": { "type": ["number", "null"] },
+            "p75": { "type": ["number", "null"] },
+            "p90": { "type": ["number", "null"] }
+          }
+        },
+        "modelFamily": {
+          "type": "string",
+          "examples": ["linear", "poisson", "negative-binomial", "hierarchical-shrinkage"]
+        },
+        "backtestBucket": { "type": "string" },
+        "notes": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}

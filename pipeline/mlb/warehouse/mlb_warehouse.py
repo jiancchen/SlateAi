@@ -8,6 +8,7 @@ import gzip
 import hashlib
 import io
 import json
+import math
 import re
 import sqlite3
 from datetime import datetime, timedelta
@@ -1614,6 +1615,44 @@ CREATE TABLE IF NOT EXISTS weather_observations (
   PRIMARY KEY (game_pk, observed_at)
 );
 
+CREATE TABLE IF NOT EXISTS mlb_game_sun_visibility_snapshots (
+  game_pk INTEGER PRIMARY KEY,
+  game_date TEXT NOT NULL,
+  game_datetime TEXT,
+  venue_name TEXT,
+  latitude REAL,
+  longitude REAL,
+  field_azimuth_deg REAL,
+  timezone_offset_hours REAL,
+  roof_type TEXT,
+  sun_azimuth_first_pitch REAL,
+  sun_elevation_first_pitch REAL,
+  sun_azimuth_midgame REAL,
+  sun_elevation_midgame REAL,
+  outfield_sun_angle_deg REAL,
+  outfield_glare_risk REAL,
+  shadow_transition_risk REAL,
+  visibility_risk_score REAL,
+  risk_label TEXT,
+  visibility_notes_json TEXT,
+  raw_json TEXT
+);
+
+CREATE TABLE IF NOT EXISTS mlb_game_visibility_outcomes (
+  game_pk INTEGER PRIMARY KEY,
+  game_date TEXT NOT NULL,
+  away_team TEXT NOT NULL,
+  home_team TEXT NOT NULL,
+  fielding_errors INTEGER,
+  outfield_errors INTEGER,
+  outfield_hits INTEGER,
+  outfield_air_hits INTEGER,
+  outfield_extra_base_hits INTEGER,
+  outfield_home_runs INTEGER,
+  visibility_pressure_events INTEGER,
+  raw_json TEXT
+);
+
 CREATE TABLE IF NOT EXISTS mlb_kalshi_market_snapshots (
   snapshot_ts TEXT NOT NULL,
   game_date TEXT NOT NULL,
@@ -1643,9 +1682,243 @@ CREATE TABLE IF NOT EXISTS mlb_kalshi_market_snapshots (
   PRIMARY KEY (snapshot_ts, market_ticker)
 );
 
+CREATE TABLE IF NOT EXISTS mlb_state_formula_training_rows (
+  snapshot_date TEXT NOT NULL,
+  game_pk INTEGER NOT NULL,
+  game_date TEXT NOT NULL,
+  away_team TEXT NOT NULL,
+  home_team TEXT NOT NULL,
+  phase TEXT NOT NULL,
+  side TEXT NOT NULL,
+  traffic_pressure REAL,
+  damage_pressure REAL,
+  conversion_pressure REAL,
+  collapse_hazard REAL,
+  suppression_state REAL,
+  fork_probability REAL,
+  bridge_leak REAL,
+  fielding_tail REAL,
+  sun_visibility_risk REAL,
+  weather_carry REAL,
+  story_bucket TEXT,
+  market_expression TEXT,
+  formula_drivers_json TEXT,
+  feature_json TEXT,
+  target_json TEXT,
+  source_model_id TEXT,
+  created_at TEXT NOT NULL,
+  PRIMARY KEY (snapshot_date, game_pk, phase, side)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_state_formula_backtests (
+  backtest_id TEXT NOT NULL,
+  model_id TEXT NOT NULL,
+  prediction_date TEXT NOT NULL,
+  game_pk INTEGER NOT NULL,
+  lane TEXT NOT NULL,
+  phase TEXT NOT NULL DEFAULT '',
+  side TEXT NOT NULL DEFAULT '',
+  predicted_story_bucket TEXT,
+  actual_story_bucket TEXT,
+  predicted_market_expression TEXT,
+  actual_market_result TEXT,
+  line_value REAL,
+  market_price REAL,
+  confidence REAL,
+  hit_flag INTEGER,
+  pnl_per100 REAL,
+  bucket_key TEXT,
+  details_json TEXT,
+  created_at TEXT NOT NULL,
+  PRIMARY KEY (backtest_id, game_pk, lane, phase, side)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_player_identity_curves_daily (
+  snapshot_date TEXT NOT NULL,
+  player_id INTEGER NOT NULL,
+  player_name TEXT NOT NULL,
+  player_type TEXT NOT NULL,
+  metric TEXT NOT NULL,
+  career_baseline REAL,
+  season_baseline REAL,
+  recent_process REAL,
+  opponent_adjusted_recent REAL,
+  identity_value REAL,
+  current_deviation REAL,
+  sample_size INTEGER NOT NULL DEFAULT 0,
+  shrinkage_weight REAL,
+  volatility_score REAL,
+  model_family TEXT,
+  backtest_bucket TEXT,
+  feature_json TEXT,
+  created_at TEXT NOT NULL,
+  PRIMARY KEY (snapshot_date, player_id, player_type, metric)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_player_current_deviation_daily (
+  snapshot_date TEXT NOT NULL,
+  player_id INTEGER NOT NULL,
+  player_name TEXT NOT NULL,
+  player_type TEXT NOT NULL,
+  team_name TEXT,
+  metric TEXT NOT NULL,
+  identity_value REAL,
+  current_value REAL,
+  current_deviation REAL,
+  deviation_label TEXT,
+  confidence_weight REAL,
+  sample_size INTEGER NOT NULL DEFAULT 0,
+  role_pressure REAL,
+  approach_label TEXT,
+  details_json TEXT,
+  created_at TEXT NOT NULL,
+  PRIMARY KEY (snapshot_date, player_id, player_type, metric)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_player_game_distribution_daily (
+  snapshot_date TEXT NOT NULL,
+  player_id INTEGER NOT NULL,
+  player_name TEXT NOT NULL,
+  player_type TEXT NOT NULL,
+  game_pk INTEGER NOT NULL DEFAULT 0,
+  team_name TEXT,
+  opponent_team TEXT,
+  metric TEXT NOT NULL,
+  distribution_mean REAL,
+  distribution_p50 REAL,
+  distribution_p75 REAL,
+  distribution_p90 REAL,
+  matchup_adjustment REAL,
+  park_weather_sun_adjustment REAL,
+  lineup_role_adjustment REAL,
+  volatility_score REAL,
+  details_json TEXT,
+  created_at TEXT NOT NULL,
+  PRIMARY KEY (snapshot_date, player_id, player_type, metric, game_pk)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_player_identity_model_backtests (
+  backtest_id TEXT NOT NULL,
+  model_id TEXT NOT NULL,
+  prediction_date TEXT NOT NULL,
+  player_id INTEGER NOT NULL,
+  player_name TEXT NOT NULL,
+  player_type TEXT NOT NULL,
+  metric TEXT NOT NULL,
+  game_pk INTEGER NOT NULL DEFAULT 0,
+  predicted_value REAL,
+  actual_value REAL,
+  line_value REAL,
+  market_price REAL,
+  hit_flag INTEGER,
+  pnl_per100 REAL,
+  sample_size_bucket TEXT,
+  role_bucket TEXT,
+  deviation_bucket TEXT,
+  matchup_bucket TEXT,
+  details_json TEXT,
+  created_at TEXT NOT NULL,
+  PRIMARY KEY (backtest_id, prediction_date, player_id, player_type, metric, game_pk)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_pitcher_pitch_mix_daily (
+  snapshot_date TEXT NOT NULL,
+  pitcher_id INTEGER NOT NULL,
+  pitcher_name TEXT NOT NULL,
+  team_name TEXT,
+  pitch_type TEXT NOT NULL,
+  sample_pitches INTEGER NOT NULL DEFAULT 0,
+  pitch_share REAL,
+  zone_rate REAL,
+  whiff_rate REAL,
+  called_strike_rate REAL,
+  hard_contact_rate REAL,
+  damage_allowed REAL,
+  command_leak REAL,
+  platoon_split_json TEXT,
+  source_json TEXT,
+  created_at TEXT NOT NULL,
+  PRIMARY KEY (snapshot_date, pitcher_id, pitch_type)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_hitter_pitch_type_response_daily (
+  snapshot_date TEXT NOT NULL,
+  hitter_id INTEGER NOT NULL,
+  hitter_name TEXT NOT NULL,
+  team_name TEXT,
+  pitch_type TEXT NOT NULL,
+  sample_pitches INTEGER NOT NULL DEFAULT 0,
+  swing_rate REAL,
+  chase_rate REAL,
+  whiff_rate REAL,
+  take_pressure REAL,
+  damage_rate REAL,
+  hard_contact_rate REAL,
+  expected_slugging REAL,
+  platoon_split_json TEXT,
+  source_json TEXT,
+  created_at TEXT NOT NULL,
+  PRIMARY KEY (snapshot_date, hitter_id, pitch_type)
+);
+
+CREATE TABLE IF NOT EXISTS mlb_lineup_pitcher_matchup_daily (
+  snapshot_date TEXT NOT NULL,
+  game_pk INTEGER NOT NULL,
+  team_name TEXT NOT NULL,
+  opponent_team TEXT NOT NULL,
+  pitcher_id INTEGER NOT NULL,
+  pitcher_name TEXT NOT NULL,
+  hitter_id INTEGER NOT NULL DEFAULT 0,
+  hitter_name TEXT,
+  batting_order INTEGER,
+  pitch_fit_damage REAL,
+  pitch_fit_whiff REAL,
+  zone_punish REAL,
+  command_stress REAL,
+  platoon_pressure REAL,
+  first_cycle_read REAL,
+  second_cycle_read REAL,
+  traffic_fit REAL,
+  damage_fit REAL,
+  collapse_trigger_score REAL,
+  strand_fork_risk REAL,
+  details_json TEXT,
+  created_at TEXT NOT NULL,
+  PRIMARY KEY (snapshot_date, game_pk, team_name, hitter_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_mlb_state_formula_training_date_game
+  ON mlb_state_formula_training_rows(snapshot_date, game_pk);
+CREATE INDEX IF NOT EXISTS idx_mlb_state_formula_training_story
+  ON mlb_state_formula_training_rows(snapshot_date, story_bucket, market_expression);
+CREATE INDEX IF NOT EXISTS idx_mlb_state_formula_backtests_date_lane
+  ON mlb_state_formula_backtests(prediction_date, lane, bucket_key);
+CREATE INDEX IF NOT EXISTS idx_mlb_player_identity_curves_player_date
+  ON mlb_player_identity_curves_daily(player_id, snapshot_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_player_identity_curves_metric
+  ON mlb_player_identity_curves_daily(snapshot_date, player_type, metric);
+CREATE INDEX IF NOT EXISTS idx_mlb_player_current_deviation_player_date
+  ON mlb_player_current_deviation_daily(player_id, snapshot_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_player_game_distribution_game
+  ON mlb_player_game_distribution_daily(snapshot_date, game_pk, metric);
+CREATE INDEX IF NOT EXISTS idx_mlb_player_identity_backtests_metric
+  ON mlb_player_identity_model_backtests(prediction_date, player_type, metric);
+CREATE INDEX IF NOT EXISTS idx_mlb_pitcher_pitch_mix_pitcher_date
+  ON mlb_pitcher_pitch_mix_daily(pitcher_id, snapshot_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_hitter_pitch_response_hitter_date
+  ON mlb_hitter_pitch_type_response_daily(hitter_id, snapshot_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_lineup_pitcher_matchup_game
+  ON mlb_lineup_pitcher_matchup_daily(snapshot_date, game_pk, team_name);
+
 CREATE INDEX IF NOT EXISTS idx_mlb_games_game_date ON mlb_games(game_date);
 CREATE INDEX IF NOT EXISTS idx_model_runs_sport_model_date ON model_runs(sport, model_id, slate_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_game_outcomes_game_date ON mlb_game_outcomes(game_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_game_sun_visibility_date
+  ON mlb_game_sun_visibility_snapshots(game_date);
+CREATE INDEX IF NOT EXISTS idx_mlb_game_sun_visibility_risk
+  ON mlb_game_sun_visibility_snapshots(game_date, visibility_risk_score);
+CREATE INDEX IF NOT EXISTS idx_mlb_game_visibility_outcomes_date
+  ON mlb_game_visibility_outcomes(game_date);
 CREATE INDEX IF NOT EXISTS idx_mlb_starting_pitchers_game_pk_role ON mlb_starting_pitchers(game_pk, team_role);
 CREATE INDEX IF NOT EXISTS idx_mlb_starting_pitcher_logs_pitcher_date
   ON mlb_starting_pitcher_game_logs(pitcher_id, game_date);
@@ -2796,6 +3069,326 @@ def linescore_totals(linescore: dict[str, Any], role: str, max_inning: int | Non
     return {"runs": runs, "hits": hits, "errors": errors}
 
 
+def circular_degree_distance(left: float | None, right: float | None) -> float | None:
+    if left is None or right is None:
+        return None
+    if not (math.isfinite(left) and math.isfinite(right)):
+        return None
+    return abs((left - right + 180) % 360 - 180)
+
+
+def parse_mlb_datetime(value: Any) -> datetime | None:
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
+def solar_position_degrees(
+    utc_dt: datetime | None,
+    latitude: float | None,
+    longitude: float | None,
+    timezone_offset_hours: float | None,
+) -> dict[str, float | None]:
+    if utc_dt is None or latitude is None or longitude is None or timezone_offset_hours is None:
+        return {"azimuth": None, "elevation": None}
+    if not all(math.isfinite(value) for value in (latitude, longitude, timezone_offset_hours)):
+        return {"azimuth": None, "elevation": None}
+
+    local_dt = utc_dt + timedelta(hours=timezone_offset_hours)
+    day_of_year = local_dt.timetuple().tm_yday
+    local_hour = local_dt.hour + local_dt.minute / 60 + local_dt.second / 3600
+    gamma = 2 * math.pi / 365 * (day_of_year - 1 + (local_hour - 12) / 24)
+    equation_of_time = 229.18 * (
+        0.000075
+        + 0.001868 * math.cos(gamma)
+        - 0.032077 * math.sin(gamma)
+        - 0.014615 * math.cos(2 * gamma)
+        - 0.040849 * math.sin(2 * gamma)
+    )
+    declination = (
+        0.006918
+        - 0.399912 * math.cos(gamma)
+        + 0.070257 * math.sin(gamma)
+        - 0.006758 * math.cos(2 * gamma)
+        + 0.000907 * math.sin(2 * gamma)
+        - 0.002697 * math.cos(3 * gamma)
+        + 0.00148 * math.sin(3 * gamma)
+    )
+    time_offset = equation_of_time + 4 * longitude - 60 * timezone_offset_hours
+    true_solar_time = (local_hour * 60 + time_offset) % 1440
+    hour_angle = true_solar_time / 4 - 180
+    latitude_rad = math.radians(latitude)
+    hour_angle_rad = math.radians(hour_angle)
+    cos_zenith = (
+        math.sin(latitude_rad) * math.sin(declination)
+        + math.cos(latitude_rad) * math.cos(declination) * math.cos(hour_angle_rad)
+    )
+    zenith = math.acos(clamp_value(cos_zenith, -1, 1))
+    elevation = 90 - math.degrees(zenith)
+    azimuth_rad = math.atan2(
+        math.sin(hour_angle_rad),
+        math.cos(hour_angle_rad) * math.sin(latitude_rad) - math.tan(declination) * math.cos(latitude_rad),
+    )
+    azimuth = (math.degrees(azimuth_rad) + 180) % 360
+    return {"azimuth": azimuth, "elevation": elevation}
+
+
+def score_outfield_glare_risk(
+    *,
+    sun_azimuth: float | None,
+    sun_elevation: float | None,
+    field_azimuth: float | None,
+    roof_type: str | None,
+) -> tuple[float, float | None]:
+    roof_label = (roof_type or "").lower()
+    if "dome" in roof_label or "fixed" in roof_label:
+        return 0.0, None
+    if sun_azimuth is None or sun_elevation is None or field_azimuth is None:
+        return 0.0, None
+    if sun_elevation <= 3:
+        return 0.0, circular_degree_distance(sun_azimuth, (field_azimuth + 180) % 360)
+
+    outfielder_look_direction = (field_azimuth + 180) % 360
+    angle_from_sun = circular_degree_distance(sun_azimuth, outfielder_look_direction)
+    if angle_from_sun is None:
+        return 0.0, None
+
+    low_sun_alignment = clamp_value((55 - angle_from_sun) / 55, 0, 1)
+    if sun_elevation < 8:
+        elevation_factor = clamp_value(sun_elevation / 8, 0, 1)
+    elif sun_elevation <= 30:
+        elevation_factor = 1.0
+    elif sun_elevation < 50:
+        elevation_factor = clamp_value((50 - sun_elevation) / 20, 0, 1)
+    else:
+        elevation_factor = 0.0
+
+    low_sun_score = low_sun_alignment * elevation_factor * 100
+    high_sun_alignment = clamp_value((95 - angle_from_sun) / 95, 0, 1)
+    if sun_elevation >= 55:
+        high_sun_factor = clamp_value((sun_elevation - 55) / 22, 0, 1)
+        overhead_penalty = clamp_value((90 - sun_elevation) / 12, 0, 1)
+        high_sun_score = high_sun_alignment * max(high_sun_factor, overhead_penalty * 0.65) * 64
+    else:
+        high_sun_score = 0.0
+
+    return clamp_value(max(low_sun_score, high_sun_score), 0, 100), angle_from_sun
+
+
+def score_shadow_transition_risk(
+    first_pitch_elevation: float | None,
+    midgame_elevation: float | None,
+    roof_type: str | None,
+) -> float:
+    roof_label = (roof_type or "").lower()
+    if "dome" in roof_label or "fixed" in roof_label:
+        return 0.0
+    if first_pitch_elevation is None or midgame_elevation is None:
+        return 0.0
+    if not (math.isfinite(first_pitch_elevation) and math.isfinite(midgame_elevation)):
+        return 0.0
+
+    low_window_overlap = max(0.0, min(first_pitch_elevation, midgame_elevation, 38) - 5)
+    if low_window_overlap <= 0:
+        return 0.0
+    elevation_change = abs(first_pitch_elevation - midgame_elevation)
+    transition_factor = clamp_value(elevation_change / 18, 0, 1)
+    low_sun_factor = clamp_value((38 - min(first_pitch_elevation, midgame_elevation)) / 33, 0, 1)
+    return clamp_value(transition_factor * low_sun_factor * 70, 0, 70)
+
+
+def visibility_risk_label(score: float | None) -> str:
+    if score is None or not math.isfinite(score):
+        return "unknown"
+    if score >= 65:
+        return "high"
+    if score >= 42:
+        return "medium"
+    if score >= 18:
+        return "low"
+    return "none"
+
+
+def build_sun_visibility_snapshot(
+    date_text: str,
+    game: dict[str, Any],
+    feed_game: dict[str, Any],
+) -> dict[str, Any] | None:
+    game_data = feed_game.get("gameData") or {}
+    venue = (game_data.get("venue") or {}) or (game.get("venue") or {})
+    location = venue.get("location") or {}
+    coordinates = location.get("defaultCoordinates") or {}
+    timezone_packet = venue.get("timeZone") or game_data.get("datetime") or {}
+    game_datetime = (
+        game.get("gameDate")
+        or (game_data.get("datetime") or {}).get("dateTime")
+        or (game_data.get("datetime") or {}).get("originalDate")
+    )
+    game_dt = parse_mlb_datetime(game_datetime)
+    latitude = to_float(coordinates.get("latitude"))
+    longitude = to_float(coordinates.get("longitude"))
+    field_azimuth = to_float(location.get("azimuthAngle"))
+    timezone_offset = to_float(timezone_packet.get("offsetAtGameTime")) or to_float(timezone_packet.get("offset"))
+    roof_type = ((game_data.get("venue") or {}).get("fieldInfo") or {}).get("roofType") or (venue.get("fieldInfo") or {}).get("roofType")
+
+    if latitude is None or longitude is None or game_dt is None:
+        return None
+
+    first_pitch_sun = solar_position_degrees(game_dt, latitude, longitude, timezone_offset)
+    midgame_sun = solar_position_degrees(game_dt + timedelta(hours=2), latitude, longitude, timezone_offset)
+    outfield_glare, outfield_sun_angle = score_outfield_glare_risk(
+        sun_azimuth=first_pitch_sun["azimuth"],
+        sun_elevation=first_pitch_sun["elevation"],
+        field_azimuth=field_azimuth,
+        roof_type=roof_type,
+    )
+    shadow_transition = score_shadow_transition_risk(
+        first_pitch_sun["elevation"],
+        midgame_sun["elevation"],
+        roof_type,
+    )
+    risk_score = clamp_value(outfield_glare * 0.72 + shadow_transition * 0.45, 0, 100)
+    notes = []
+    if roof_type:
+        notes.append(f"roof={roof_type}")
+    if field_azimuth is None:
+        notes.append("field azimuth missing, glare alignment unavailable")
+    if outfield_glare >= 42:
+        notes.append("sun aligns with outfielder look/sky-tracking path near first pitch")
+    if shadow_transition >= 28:
+        notes.append("low-sun/shadow transition window during the game")
+    if risk_score < 18:
+        notes.append("sun geometry is not a major visibility flag")
+    notes.append("cloud cover is not yet joined, so weather can still dampen this risk")
+
+    return {
+        "game_pk": game["gamePk"],
+        "game_date": date_text,
+        "game_datetime": game_datetime,
+        "venue_name": venue.get("name") or (game.get("venue") or {}).get("name"),
+        "latitude": latitude,
+        "longitude": longitude,
+        "field_azimuth_deg": field_azimuth,
+        "timezone_offset_hours": timezone_offset,
+        "roof_type": roof_type,
+        "sun_azimuth_first_pitch": first_pitch_sun["azimuth"],
+        "sun_elevation_first_pitch": first_pitch_sun["elevation"],
+        "sun_azimuth_midgame": midgame_sun["azimuth"],
+        "sun_elevation_midgame": midgame_sun["elevation"],
+        "outfield_sun_angle_deg": outfield_sun_angle,
+        "outfield_glare_risk": outfield_glare,
+        "shadow_transition_risk": shadow_transition,
+        "visibility_risk_score": risk_score,
+        "risk_label": visibility_risk_label(risk_score),
+        "visibility_notes_json": json.dumps(notes, sort_keys=True),
+        "raw_json": json.dumps(
+            {
+                "venue": venue,
+                "firstPitchSun": first_pitch_sun,
+                "midgameSun": midgame_sun,
+                "outfieldLookDirection": (field_azimuth + 180) % 360 if field_azimuth is not None else None,
+                "notes": notes,
+            },
+            sort_keys=True,
+        ),
+    }
+
+
+OUTFIELD_LOCATIONS = {"7", "8", "9"}
+OUTFIELD_DESCRIPTION_RE = re.compile(r"\b(left|center|right) fielder\b", re.I)
+
+
+def find_play_hit_data(play: dict[str, Any]) -> dict[str, Any]:
+    for event in play.get("playEvents") or []:
+        hit_data = event.get("hitData")
+        if hit_data:
+            return hit_data
+    return {}
+
+
+def play_has_outfield_location(play: dict[str, Any], hit_data: dict[str, Any]) -> bool:
+    location = str(hit_data.get("location") or "").strip()
+    description = ((play.get("result") or {}).get("description") or "")
+    return location in OUTFIELD_LOCATIONS or bool(OUTFIELD_DESCRIPTION_RE.search(description))
+
+
+def build_visibility_outcome_row(
+    date_text: str,
+    game: dict[str, Any],
+    feed_game: dict[str, Any],
+    away_team: str,
+    home_team: str,
+) -> dict[str, Any]:
+    fielding_errors = 0
+    outfield_errors = 0
+    outfield_hits = 0
+    outfield_air_hits = 0
+    outfield_extra_base_hits = 0
+    outfield_home_runs = 0
+    visibility_pressure_keys: set[str] = set()
+    samples: list[dict[str, Any]] = []
+
+    for play in ((feed_game.get("liveData") or {}).get("plays") or {}).get("allPlays", []):
+        about = play.get("about") or {}
+        result = play.get("result") or {}
+        event_type = (result.get("eventType") or "").lower()
+        description = result.get("description") or ""
+        play_key = f"{game['gamePk']}:{about.get('atBatIndex')}:{about.get('inning')}:{about.get('halfInning')}"
+        hit_data = find_play_hit_data(play)
+        outfield_location = play_has_outfield_location(play, hit_data)
+        trajectory = str(hit_data.get("trajectory") or "").lower()
+        is_error = "error" in event_type or "error" in description.lower()
+        is_hit = event_type in HIT_EVENT_TYPES
+        is_fieldable_outfield_hit = is_hit and outfield_location and event_type != "home_run"
+        is_air_contact = trajectory in {"fly_ball", "line_drive", "popup"} or bool(OUTFIELD_DESCRIPTION_RE.search(description))
+
+        if is_error:
+            fielding_errors += 1
+            visibility_pressure_keys.add(play_key)
+            if outfield_location:
+                outfield_errors += 1
+        if is_fieldable_outfield_hit:
+            outfield_hits += 1
+            if is_air_contact:
+                outfield_air_hits += 1
+                visibility_pressure_keys.add(play_key)
+        if event_type in {"double", "triple"} and outfield_location:
+            outfield_extra_base_hits += 1
+            visibility_pressure_keys.add(play_key)
+        if event_type == "home_run":
+            outfield_home_runs += 1
+
+        if len(samples) < 12 and (is_error or is_fieldable_outfield_hit or event_type == "home_run"):
+            samples.append(
+                {
+                    "inning": about.get("inning"),
+                    "halfInning": about.get("halfInning"),
+                    "eventType": event_type,
+                    "description": description,
+                    "trajectory": trajectory,
+                    "location": hit_data.get("location"),
+                }
+            )
+
+    return {
+        "game_pk": game["gamePk"],
+        "game_date": date_text,
+        "away_team": away_team,
+        "home_team": home_team,
+        "fielding_errors": fielding_errors,
+        "outfield_errors": outfield_errors,
+        "outfield_hits": outfield_hits,
+        "outfield_air_hits": outfield_air_hits,
+        "outfield_extra_base_hits": outfield_extra_base_hits,
+        "outfield_home_runs": outfield_home_runs,
+        "visibility_pressure_events": len(visibility_pressure_keys),
+        "raw_json": json.dumps({"samples": samples}, sort_keys=True),
+    }
+
+
 def extract_home_run_rows(
     feed_game: dict[str, Any],
     away_team: str,
@@ -3390,9 +3983,14 @@ def ingest_mlb_game_payload(
         ),
     )
 
+    sun_visibility_row = build_sun_visibility_snapshot(date_text, game, live_payload)
+    if sun_visibility_row:
+        upsert_sun_visibility_snapshot(conn, sun_visibility_row)
+
     if not game_is_completed:
         conn.execute("DELETE FROM mlb_game_outcomes WHERE game_pk = ?", (game_pk,))
         conn.execute("DELETE FROM mlb_game_story_signals WHERE game_pk = ?", (game_pk,))
+        conn.execute("DELETE FROM mlb_game_visibility_outcomes WHERE game_pk = ?", (game_pk,))
         return
 
     starters = {}
@@ -3521,6 +4119,8 @@ def ingest_mlb_game_payload(
 
     outcome_row = build_outcome_row(date_text, away_row, home_row)
     upsert_game_outcome(conn, outcome_row)
+    visibility_outcome_row = build_visibility_outcome_row(date_text, game, live_payload, away_team, home_team)
+    upsert_visibility_outcome(conn, visibility_outcome_row)
 
     summary_path = RAW_DIR / "mlb" / date_text / "games" / f"{game_pk}-summary.json"
     summary_payload = build_slim_game_summary(game, live_payload, starters, team_rows, outcome_row, home_run_rows)
@@ -4113,6 +4713,102 @@ def upsert_game_outcome(conn: sqlite3.Connection, row: dict[str, Any]) -> None:
             row["home_bullpen_run_diff"],
             row["total_runs_final"],
             row["total_runs_first5"],
+            row["raw_json"],
+        ),
+    )
+
+
+def upsert_sun_visibility_snapshot(conn: sqlite3.Connection, row: dict[str, Any]) -> None:
+    conn.execute(
+        """
+        INSERT INTO mlb_game_sun_visibility_snapshots (
+          game_pk, game_date, game_datetime, venue_name, latitude, longitude,
+          field_azimuth_deg, timezone_offset_hours, roof_type,
+          sun_azimuth_first_pitch, sun_elevation_first_pitch,
+          sun_azimuth_midgame, sun_elevation_midgame, outfield_sun_angle_deg,
+          outfield_glare_risk, shadow_transition_risk, visibility_risk_score,
+          risk_label, visibility_notes_json, raw_json
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ON CONFLICT(game_pk) DO UPDATE SET
+          game_date=excluded.game_date,
+          game_datetime=excluded.game_datetime,
+          venue_name=excluded.venue_name,
+          latitude=excluded.latitude,
+          longitude=excluded.longitude,
+          field_azimuth_deg=excluded.field_azimuth_deg,
+          timezone_offset_hours=excluded.timezone_offset_hours,
+          roof_type=excluded.roof_type,
+          sun_azimuth_first_pitch=excluded.sun_azimuth_first_pitch,
+          sun_elevation_first_pitch=excluded.sun_elevation_first_pitch,
+          sun_azimuth_midgame=excluded.sun_azimuth_midgame,
+          sun_elevation_midgame=excluded.sun_elevation_midgame,
+          outfield_sun_angle_deg=excluded.outfield_sun_angle_deg,
+          outfield_glare_risk=excluded.outfield_glare_risk,
+          shadow_transition_risk=excluded.shadow_transition_risk,
+          visibility_risk_score=excluded.visibility_risk_score,
+          risk_label=excluded.risk_label,
+          visibility_notes_json=excluded.visibility_notes_json,
+          raw_json=excluded.raw_json
+        """,
+        (
+            row["game_pk"],
+            row["game_date"],
+            row["game_datetime"],
+            row["venue_name"],
+            row["latitude"],
+            row["longitude"],
+            row["field_azimuth_deg"],
+            row["timezone_offset_hours"],
+            row["roof_type"],
+            row["sun_azimuth_first_pitch"],
+            row["sun_elevation_first_pitch"],
+            row["sun_azimuth_midgame"],
+            row["sun_elevation_midgame"],
+            row["outfield_sun_angle_deg"],
+            row["outfield_glare_risk"],
+            row["shadow_transition_risk"],
+            row["visibility_risk_score"],
+            row["risk_label"],
+            row["visibility_notes_json"],
+            row["raw_json"],
+        ),
+    )
+
+
+def upsert_visibility_outcome(conn: sqlite3.Connection, row: dict[str, Any]) -> None:
+    conn.execute(
+        """
+        INSERT INTO mlb_game_visibility_outcomes (
+          game_pk, game_date, away_team, home_team, fielding_errors,
+          outfield_errors, outfield_hits, outfield_air_hits,
+          outfield_extra_base_hits, outfield_home_runs,
+          visibility_pressure_events, raw_json
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ON CONFLICT(game_pk) DO UPDATE SET
+          game_date=excluded.game_date,
+          away_team=excluded.away_team,
+          home_team=excluded.home_team,
+          fielding_errors=excluded.fielding_errors,
+          outfield_errors=excluded.outfield_errors,
+          outfield_hits=excluded.outfield_hits,
+          outfield_air_hits=excluded.outfield_air_hits,
+          outfield_extra_base_hits=excluded.outfield_extra_base_hits,
+          outfield_home_runs=excluded.outfield_home_runs,
+          visibility_pressure_events=excluded.visibility_pressure_events,
+          raw_json=excluded.raw_json
+        """,
+        (
+            row["game_pk"],
+            row["game_date"],
+            row["away_team"],
+            row["home_team"],
+            row["fielding_errors"],
+            row["outfield_errors"],
+            row["outfield_hits"],
+            row["outfield_air_hits"],
+            row["outfield_extra_base_hits"],
+            row["outfield_home_runs"],
+            row["visibility_pressure_events"],
             row["raw_json"],
         ),
     )
