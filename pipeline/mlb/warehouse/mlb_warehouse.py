@@ -13832,6 +13832,276 @@ def refresh_m2_pitcher_batter_kernel_rows(
     return {"pitchMix": mix_count, "hitterResponse": response_count, "matchups": matchup_count}
 
 
+def m2_json_loads(value: Any) -> dict[str, Any]:
+    try:
+        return json.loads(value or "{}")
+    except (TypeError, json.JSONDecodeError):
+        return {}
+
+
+def m2_actual_story_from_target(payload: dict[str, Any], phase: str) -> str:
+    team_runs = to_int(payload.get("teamRuns")) or 0
+    game_f5 = to_int(payload.get("gameFirst5Total")) or 0
+    game_final = to_int(payload.get("gameFinalTotal")) or 0
+    if phase in {"firstCycle", "starterWindow"}:
+        if team_runs >= 5 or game_f5 >= 5:
+            return "crooked"
+        if team_runs <= 1 and game_f5 <= 3:
+            return "dead"
+        return "normal"
+    if team_runs >= 4 or game_final >= 10:
+        return "crooked"
+    if team_runs == 0 and game_final <= 7:
+        return "dead"
+    return "normal"
+
+
+def m2_market_result_from_target(payload: dict[str, Any], market_expression: str | None) -> tuple[str, int | None, float | None]:
+    game_f5 = to_int(payload.get("gameFirst5Total")) or 0
+    game_final = to_int(payload.get("gameFinalTotal")) or 0
+    if market_expression == "first-five over":
+        actual = "over" if game_f5 >= 5 else "under" if game_f5 <= 3 else "middle"
+        return actual, 1 if actual == "over" else 0 if actual == "under" else None, 4.5
+    if market_expression == "first-five under":
+        actual = "under" if game_f5 <= 3 else "over" if game_f5 >= 5 else "middle"
+        return actual, 1 if actual == "under" else 0 if actual == "over" else None, 4.5
+    if market_expression == "full-game over":
+        actual = "over" if game_final >= 9 else "under" if game_final <= 7 else "middle"
+        return actual, 1 if actual == "over" else 0 if actual == "under" else None, 8.5
+    if market_expression == "live/full under watch":
+        actual = "under" if game_final <= 7 else "over" if game_final >= 9 else "middle"
+        return actual, 1 if actual == "under" else 0 if actual == "over" else None, 8.5
+    return "not-graded", None, None
+
+
+def m2_player_identity_actual_value(outcome_row: sqlite3.Row, metric: str) -> float | None:
+    column = {
+        "hits_per_pa": "hits",
+        "total_bases_per_pa": "total_bases",
+        "walk_rate": "walks",
+        "strikeout_rate": "strikeouts",
+        "home_run_rate": "home_runs",
+    }.get(metric)
+    if not column:
+        return None
+    return to_float(outcome_row[column])
+
+
+def m2_player_identity_signal(metric: str, predicted_mean: float, p75: float, p90: float, actual_value: float) -> tuple[bool, bool, float]:
+    if metric == "total_bases_per_pa":
+        return p75 >= 2.0, actual_value >= 2, 1.5
+    if metric == "home_run_rate":
+        return p90 >= 0.8 or predicted_mean >= 0.24, actual_value >= 1, 0.5
+    return p75 >= 1.0, actual_value >= 1, 0.5
+
+
+def refresh_m2_research_backtests(conn: sqlite3.Connection, start_date: str, end_date: str) -> dict[str, int]:
+    init_db(conn)
+    created_at = datetime.utcnow().isoformat(timespec="seconds") + "Z"
+    state_backtest_id = f"MLB-M2-state-formula-{start_date}-to-{end_date}"
+    player_backtest_id = f"MLB-M2-player-identity-{start_date}-to-{end_date}"
+    kernel_backtest_id = f"MLB-M2-pitcher-batter-kernel-{start_date}-to-{end_date}"
+    conn.execute("DELETE FROM mlb_state_formula_backtests WHERE backtest_id IN (?, ?)", (state_backtest_id, kernel_backtest_id))
+    conn.execute("DELETE FROM mlb_player_identity_model_backtests WHERE backtest_id = ?", (player_backtest_id,))
+
+    state_rows = conn.execute(
+        """
+        SELECT *
+        FROM mlb_state_formula_training_rows
+        WHERE snapshot_date BETWEEN ? AND ?
+        """,
+        (start_date, end_date),
+    ).fetchall()
+    state_count = 0
+    for row in state_rows:
+        target = m2_json_loads(row["target_json"])
+        actual_story = m2_actual_story_from_target(target, row["phase"])
+        actual_market_result, market_hit, line_value = m2_market_result_from_target(target, row["market_expression"])
+        story_hit = 1 if row["story_bucket"] == actual_story else 0
+        hit_flag = market_hit if market_hit is not None else story_hit
+        confidence = max(
+            row_float(row, "traffic_pressure", 0),
+            row_float(row, "damage_pressure", 0),
+            row_float(row, "conversion_pressure", 0),
+            row_float(row, "collapse_hazard", 0),
+            row_float(row, "suppression_state", 0),
+        )
+        bucket_key = "/".join(
+            [
+                row["phase"],
+                row["story_bucket"] or "unknown",
+                row["market_expression"] or "none",
+            ]
+        )
+        conn.execute(
+            """
+            INSERT OR REPLACE INTO mlb_state_formula_backtests (
+              backtest_id, model_id, prediction_date, game_pk, lane, phase, side,
+              predicted_story_bucket, actual_story_bucket, predicted_market_expression,
+              actual_market_result, line_value, market_price, confidence, hit_flag,
+              pnl_per100, bucket_key, details_json, created_at
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                state_backtest_id,
+                "MLB-M2-state-formulas-v0",
+                row["snapshot_date"],
+                row["game_pk"],
+                "state_formula",
+                row["phase"],
+                row["side"],
+                row["story_bucket"],
+                actual_story,
+                row["market_expression"],
+                actual_market_result,
+                line_value,
+                None,
+                confidence,
+                hit_flag,
+                None,
+                bucket_key,
+                json.dumps({"target": target}, sort_keys=True),
+                created_at,
+            ),
+        )
+        state_count += 1
+
+    player_rows = conn.execute(
+        """
+        SELECT d.*, c.backtest_bucket, c.sample_size,
+               o.hits, o.total_bases, o.walks, o.strikeouts, o.home_runs
+        FROM mlb_player_game_distribution_daily d
+        JOIN mlb_batter_game_outcomes o
+          ON o.game_pk = d.game_pk
+         AND o.player_id = d.player_id
+        LEFT JOIN mlb_player_identity_curves_daily c
+          ON c.snapshot_date = d.snapshot_date
+         AND c.player_id = d.player_id
+         AND c.player_type = d.player_type
+         AND c.metric = d.metric
+        WHERE d.snapshot_date BETWEEN ? AND ?
+          AND d.player_type = 'hitter'
+          AND d.metric IN ('hits_per_pa', 'total_bases_per_pa', 'walk_rate', 'strikeout_rate', 'home_run_rate')
+        """,
+        (start_date, end_date),
+    ).fetchall()
+    player_count = 0
+    for row in player_rows:
+        actual_value = m2_player_identity_actual_value(row, row["metric"])
+        if actual_value is None:
+            continue
+        predicted_mean = row_float(row, "distribution_mean", 0)
+        p75 = row_float(row, "distribution_p75", 0)
+        p90 = row_float(row, "distribution_p90", 0)
+        predicted_signal, actual_signal, line_value = m2_player_identity_signal(
+            row["metric"], predicted_mean, p75, p90, actual_value
+        )
+        sample_bucket, _, deviation_bucket = (row["backtest_bucket"] or "unknown/unknown").partition("/")
+        conn.execute(
+            """
+            INSERT OR REPLACE INTO mlb_player_identity_model_backtests (
+              backtest_id, model_id, prediction_date, player_id, player_name,
+              player_type, metric, game_pk, predicted_value, actual_value,
+              line_value, market_price, hit_flag, pnl_per100, sample_size_bucket,
+              role_bucket, deviation_bucket, matchup_bucket, details_json, created_at
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                player_backtest_id,
+                "MLB-M2-player-identity-v0",
+                row["snapshot_date"],
+                row["player_id"],
+                row["player_name"],
+                "hitter",
+                row["metric"],
+                row["game_pk"],
+                predicted_mean,
+                actual_value,
+                line_value,
+                None,
+                1 if predicted_signal == actual_signal else 0,
+                None,
+                sample_bucket,
+                "lineup",
+                deviation_bucket or "unknown",
+                "unpriced",
+                json.dumps(
+                    {
+                        "predictedSignal": predicted_signal,
+                        "actualSignal": actual_signal,
+                        "p75": p75,
+                        "p90": p90,
+                    },
+                    sort_keys=True,
+                ),
+                created_at,
+            ),
+        )
+        player_count += 1
+
+    kernel_rows = conn.execute(
+        """
+        SELECT m.*, g.away_team, g.home_team, o.total_runs_first5
+        FROM mlb_lineup_pitcher_matchup_daily m
+        JOIN mlb_games g ON g.game_pk = m.game_pk
+        LEFT JOIN mlb_game_outcomes o ON o.game_pk = m.game_pk
+        WHERE m.snapshot_date BETWEEN ? AND ?
+          AND m.hitter_id = 0
+        """,
+        (start_date, end_date),
+    ).fetchall()
+    collapse_values = sorted([row_float(row, "collapse_trigger_score", 0) for row in kernel_rows])
+    threshold = collapse_values[round((len(collapse_values) - 1) * 0.75)] if collapse_values else 0
+    kernel_count = 0
+    for row in kernel_rows:
+        collapse = row_float(row, "collapse_trigger_score", 0)
+        if collapse < threshold:
+            continue
+        actual = "over" if (to_int(row["total_runs_first5"]) or 0) >= 5 else "under"
+        conn.execute(
+            """
+            INSERT OR REPLACE INTO mlb_state_formula_backtests (
+              backtest_id, model_id, prediction_date, game_pk, lane, phase, side,
+              predicted_story_bucket, actual_story_bucket, predicted_market_expression,
+              actual_market_result, line_value, market_price, confidence, hit_flag,
+              pnl_per100, bucket_key, details_json, created_at
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                kernel_backtest_id,
+                "MLB-M2-pitcher-batter-kernel-v0",
+                row["snapshot_date"],
+                row["game_pk"],
+                "pitcher_batter_kernel",
+                "starterWindow",
+                row["team_name"],
+                "collapse_fit",
+                actual,
+                "first-five over",
+                actual,
+                4.5,
+                None,
+                collapse,
+                1 if actual == "over" else 0,
+                None,
+                f"collapse_top_quartile/{round(threshold, 2)}",
+                json.dumps(
+                    {
+                        "damageFit": row_float(row, "damage_fit", 0),
+                        "commandStress": row_float(row, "command_stress", 0),
+                        "trafficFit": row_float(row, "traffic_fit", 0),
+                    },
+                    sort_keys=True,
+                ),
+                created_at,
+            ),
+        )
+        kernel_count += 1
+
+    conn.commit()
+    return {"stateFormula": state_count, "playerIdentity": player_count, "pitcherBatterKernel": kernel_count}
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Local MLB warehouse utilities for modeling and backtesting.")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -14028,6 +14298,13 @@ def parse_args() -> argparse.Namespace:
         default=45,
         help="Pitch-event lookback window for pitch mix and hitter response rows.",
     )
+
+    backtest_m2 = subparsers.add_parser(
+        "backtest-m2-research",
+        help="Refresh MLB-M2 research backtest rows for state formulas, player identity, and pitcher-batter kernel.",
+    )
+    backtest_m2.add_argument("--start-date", required=True, help="Backtest start date YYYY-MM-DD.")
+    backtest_m2.add_argument("--end-date", required=True, help="Backtest end date YYYY-MM-DD.")
 
     ingest_pitcher_war_parser = subparsers.add_parser(
         "ingest-pitcher-war",
@@ -14338,6 +14615,17 @@ def main() -> None:
                 "Refreshed MLB-M2 pitcher-batter kernel rows "
                 f"{date_text}: {counts['pitchMix']} pitch-mix, "
                 f"{counts['hitterResponse']} hitter-response, {counts['matchups']} matchup rows"
+            )
+            return
+
+        if args.command == "backtest-m2-research":
+            counts = refresh_m2_research_backtests(conn, args.start_date, args.end_date)
+            print(
+                "Refreshed MLB-M2 research backtests "
+                f"{args.start_date} to {args.end_date}: "
+                f"{counts['stateFormula']} state rows, "
+                f"{counts['playerIdentity']} player rows, "
+                f"{counts['pitcherBatterKernel']} kernel rows"
             )
             return
 

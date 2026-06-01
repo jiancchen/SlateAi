@@ -1,6 +1,6 @@
 # MLB-M2 Build Run Plan
 
-Status: Phase 5 in progress
+Status: Phase 6 in progress
 Owner model: MLB-M2
 Created: 2026-06-01
 
@@ -54,7 +54,7 @@ Do not claim a clean M2 improvement if May 31 outcomes were used for training, f
 | 3 | Formula Derivation | In progress | Phase state rows and formula outputs |
 | 4 | Player Identity Curves | In progress | Player priors, deviation, and distribution rows |
 | 5 | Pitcher-Batter Kernel | In progress | Pitch-mix matchup rows |
-| 6 | Backtest Harness | Pending | Bucketed accuracy/ROI/story reports |
+| 6 | Backtest Harness | In progress | Bucketed accuracy/ROI/story reports |
 | 7 | Model Comparison | Pending | Projection vs formula vs learned model |
 | 8 | Value Board Rebuild | Pending | Model-owned value rows only |
 | 9 | UI Surfaces | Pending | Game-shape, player identity, and market explanation views |
@@ -343,15 +343,34 @@ Headline metrics:
 
 Checklist:
 
-- [ ] Build `mlb_state_formula_backtests`.
-- [ ] Build player identity backtest rows.
-- [ ] Build pitcher-batter kernel backtest rows.
-- [ ] Add May 31 holdout evaluator.
+- [x] Build `mlb_state_formula_backtests`.
+- [x] Build player identity backtest rows.
+- [x] Build pitcher-batter kernel backtest rows.
+- [x] Add May 31 holdout evaluator.
+- [x] Add first stored-backtest research report.
 - [ ] Add daily model comparison report.
 
 Exit criteria:
 
 - M2 changes are judged by correctness and ROI buckets, not by lower MAE alone.
+
+Current artifacts:
+
+- `npm run data:backtest:mlb-m2-research -- --start-date YYYY-MM-DD --end-date YYYY-MM-DD`
+- `npm run data:research:mlb-m2-backtests -- --start YYYY-MM-DD --end YYYY-MM-DD --holdout YYYY-MM-DD`
+- `models/mlb/cartridges/MLB-M2/research/m2_research_backtest_report.py`
+- `models/mlb/cartridges/MLB-M2/reports/m2-research-backtest-report-2026-05-23-to-2026-05-31.md`
+- `data-private/reports/mlb-m2-research-backtest-report-2026-05-23-to-2026-05-31.json`
+
+Current read:
+
+- Stored May 23-May 31 rows: 1,000 state-formula rows, 12,230 player-identity rows, 61 pitcher-batter-kernel rows.
+- May 31 holdout: state formulas 24/120, 20.0%; pitcher-batter kernel top-collapse 4/6, 66.7%.
+- May 31 player signals: hits 59.3%, total bases 58.3%, strikeouts 59.9%, walks 68.4%, HR 84.7% mostly from rare-event negatives.
+
+Important:
+
+This proves the harness, not the model. State formulas are not promotion quality. Kernel and player identity have useful pockets but need walk-forward, line buckets, price buckets, and ROI before they can drive value rows.
 
 ## Phase 7: Model Comparison
 

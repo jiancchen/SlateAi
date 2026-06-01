@@ -1,0 +1,1129 @@
+{
+  "coverage": {
+    "playerIdentity": 12230,
+    "stateByLane": {
+      "pitcher_batter_kernel": 61,
+      "state_formula": 1000
+    }
+  },
+  "experiment": "m2_research_backtest_report",
+  "holdout": {
+    "date": "2026-05-31",
+    "player": [
+      {
+        "hit_rate": 0.593,
+        "hits": 182,
+        "metric": "hits_per_pa",
+        "rows": 307
+      },
+      {
+        "hit_rate": 0.847,
+        "hits": 260,
+        "metric": "home_run_rate",
+        "rows": 307
+      },
+      {
+        "hit_rate": 0.599,
+        "hits": 184,
+        "metric": "strikeout_rate",
+        "rows": 307
+      },
+      {
+        "hit_rate": 0.583,
+        "hits": 179,
+        "metric": "total_bases_per_pa",
+        "rows": 307
+      },
+      {
+        "hit_rate": 0.684,
+        "hits": 210,
+        "metric": "walk_rate",
+        "rows": 307
+      }
+    ],
+    "state": [
+      {
+        "hit_rate": 0.667,
+        "hits": 4,
+        "lane": "pitcher_batter_kernel",
+        "rows": 6
+      },
+      {
+        "hit_rate": 0.2,
+        "hits": 24,
+        "lane": "state_formula",
+        "rows": 120
+      }
+    ]
+  },
+  "modelId": "MLB-M2",
+  "playerSummary": [
+    {
+      "avg_actual": 0.859,
+      "avg_predicted": 0.973,
+      "deviation_bucket": "stable",
+      "hit_rate": 0.593,
+      "hits": 617,
+      "metric": "hits_per_pa",
+      "rows": 1040,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.905,
+      "avg_predicted": 0.91,
+      "deviation_bucket": "negative-drift",
+      "hit_rate": 0.611,
+      "hits": 284,
+      "metric": "hits_per_pa",
+      "rows": 465,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.895,
+      "avg_predicted": 1.052,
+      "deviation_bucket": "positive-drift",
+      "hit_rate": 0.584,
+      "hits": 194,
+      "metric": "hits_per_pa",
+      "rows": 332,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.565,
+      "avg_predicted": 0.767,
+      "deviation_bucket": "stable",
+      "hit_rate": 0.471,
+      "hits": 80,
+      "metric": "hits_per_pa",
+      "rows": 170,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.533,
+      "avg_predicted": 0.708,
+      "deviation_bucket": "negative-drift",
+      "hit_rate": 0.561,
+      "hits": 60,
+      "metric": "hits_per_pa",
+      "rows": 107,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.662,
+      "avg_predicted": 0.863,
+      "deviation_bucket": "positive-drift",
+      "hit_rate": 0.446,
+      "hits": 33,
+      "metric": "hits_per_pa",
+      "rows": 74,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.66,
+      "avg_predicted": 0.823,
+      "deviation_bucket": "cold",
+      "hit_rate": 0.532,
+      "hits": 25,
+      "metric": "hits_per_pa",
+      "rows": 47,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.861,
+      "avg_predicted": 1.141,
+      "deviation_bucket": "hot",
+      "hit_rate": 0.639,
+      "hits": 23,
+      "metric": "hits_per_pa",
+      "rows": 36,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.533,
+      "avg_predicted": 0.703,
+      "deviation_bucket": "cold",
+      "hit_rate": 0.367,
+      "hits": 11,
+      "metric": "hits_per_pa",
+      "rows": 30,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.542,
+      "avg_predicted": 0.909,
+      "deviation_bucket": "hot",
+      "hit_rate": 0.458,
+      "hits": 11,
+      "metric": "hits_per_pa",
+      "rows": 24,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.895,
+      "avg_predicted": 1.241,
+      "deviation_bucket": "hot-volatile",
+      "hit_rate": 0.579,
+      "hits": 11,
+      "metric": "hits_per_pa",
+      "rows": 19,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.471,
+      "avg_predicted": 0.69,
+      "deviation_bucket": "cold",
+      "hit_rate": 0.353,
+      "hits": 6,
+      "metric": "hits_per_pa",
+      "rows": 17,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.5,
+      "avg_predicted": 0.833,
+      "deviation_bucket": "cold-volatile",
+      "hit_rate": 0.563,
+      "hits": 9,
+      "metric": "hits_per_pa",
+      "rows": 16,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.308,
+      "avg_predicted": 0.87,
+      "deviation_bucket": "cold-volatile",
+      "hit_rate": 0.308,
+      "hits": 4,
+      "metric": "hits_per_pa",
+      "rows": 13,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.154,
+      "avg_predicted": 0.811,
+      "deviation_bucket": "stable",
+      "hit_rate": 0.308,
+      "hits": 4,
+      "metric": "hits_per_pa",
+      "rows": 13,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.583,
+      "avg_predicted": 1.098,
+      "deviation_bucket": "hot-volatile",
+      "hit_rate": 0.417,
+      "hits": 5,
+      "metric": "hits_per_pa",
+      "rows": 12,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.444,
+      "avg_predicted": 0.81,
+      "deviation_bucket": "hot",
+      "hit_rate": 0.556,
+      "hits": 5,
+      "metric": "hits_per_pa",
+      "rows": 9,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 1.333,
+      "avg_predicted": 0.963,
+      "deviation_bucket": "hot-volatile",
+      "hit_rate": 0.778,
+      "hits": 7,
+      "metric": "hits_per_pa",
+      "rows": 9,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.0,
+      "avg_predicted": 0.615,
+      "deviation_bucket": "positive-drift",
+      "hit_rate": 0.6,
+      "hits": 3,
+      "metric": "hits_per_pa",
+      "rows": 5,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.75,
+      "avg_predicted": 0.825,
+      "deviation_bucket": "cold-volatile",
+      "hit_rate": 0.75,
+      "hits": 3,
+      "metric": "hits_per_pa",
+      "rows": 4,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.5,
+      "avg_predicted": 0.934,
+      "deviation_bucket": "negative-drift",
+      "hit_rate": 0.5,
+      "hits": 2,
+      "metric": "hits_per_pa",
+      "rows": 4,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.127,
+      "avg_predicted": 0.125,
+      "deviation_bucket": "stable",
+      "hit_rate": 0.843,
+      "hits": 1624,
+      "metric": "home_run_rate",
+      "rows": 1927,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.07,
+      "avg_predicted": 0.076,
+      "deviation_bucket": "stable",
+      "hit_rate": 0.925,
+      "hits": 356,
+      "metric": "home_run_rate",
+      "rows": 385,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.08,
+      "avg_predicted": 0.039,
+      "deviation_bucket": "stable",
+      "hit_rate": 0.94,
+      "hits": 47,
+      "metric": "home_run_rate",
+      "rows": 50,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.079,
+      "avg_predicted": 0.167,
+      "deviation_bucket": "positive-drift",
+      "hit_rate": 0.737,
+      "hits": 28,
+      "metric": "home_run_rate",
+      "rows": 38,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.2,
+      "avg_predicted": 0.284,
+      "deviation_bucket": "positive-drift",
+      "hit_rate": 0.45,
+      "hits": 9,
+      "metric": "home_run_rate",
+      "rows": 20,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.125,
+      "avg_predicted": 0.214,
+      "deviation_bucket": "negative-drift",
+      "hit_rate": 0.625,
+      "hits": 5,
+      "metric": "home_run_rate",
+      "rows": 8,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.2,
+      "avg_predicted": 0.164,
+      "deviation_bucket": "negative-drift",
+      "hit_rate": 0.8,
+      "hits": 4,
+      "metric": "home_run_rate",
+      "rows": 5,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.0,
+      "avg_predicted": 0.312,
+      "deviation_bucket": "hot",
+      "hit_rate": 0.667,
+      "hits": 2,
+      "metric": "home_run_rate",
+      "rows": 3,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.0,
+      "avg_predicted": 0.305,
+      "deviation_bucket": "hot-volatile",
+      "hit_rate": 0.0,
+      "hits": 0,
+      "metric": "home_run_rate",
+      "rows": 2,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.5,
+      "avg_predicted": 0.357,
+      "deviation_bucket": "cold",
+      "hit_rate": 0.5,
+      "hits": 1,
+      "metric": "home_run_rate",
+      "rows": 2,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.0,
+      "avg_predicted": 0.227,
+      "deviation_bucket": "hot-volatile",
+      "hit_rate": 0.5,
+      "hits": 1,
+      "metric": "home_run_rate",
+      "rows": 2,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.0,
+      "avg_predicted": 0.134,
+      "deviation_bucket": "negative-drift",
+      "hit_rate": 1.0,
+      "hits": 2,
+      "metric": "home_run_rate",
+      "rows": 2,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.0,
+      "avg_predicted": 0.145,
+      "deviation_bucket": "positive-drift",
+      "hit_rate": 1.0,
+      "hits": 2,
+      "metric": "home_run_rate",
+      "rows": 2,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.802,
+      "avg_predicted": 0.898,
+      "deviation_bucket": "stable",
+      "hit_rate": 0.613,
+      "hits": 672,
+      "metric": "strikeout_rate",
+      "rows": 1097,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.807,
+      "avg_predicted": 0.864,
+      "deviation_bucket": "negative-drift",
+      "hit_rate": 0.618,
+      "hits": 275,
+      "metric": "strikeout_rate",
+      "rows": 445,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.878,
+      "avg_predicted": 1.029,
+      "deviation_bucket": "positive-drift",
+      "hit_rate": 0.645,
+      "hits": 191,
+      "metric": "strikeout_rate",
+      "rows": 296,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.628,
+      "avg_predicted": 0.909,
+      "deviation_bucket": "stable",
+      "hit_rate": 0.522,
+      "hits": 108,
+      "metric": "strikeout_rate",
+      "rows": 207,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.713,
+      "avg_predicted": 0.901,
+      "deviation_bucket": "negative-drift",
+      "hit_rate": 0.564,
+      "hits": 57,
+      "metric": "strikeout_rate",
+      "rows": 101,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.582,
+      "avg_predicted": 1.011,
+      "deviation_bucket": "positive-drift",
+      "hit_rate": 0.552,
+      "hits": 37,
+      "metric": "strikeout_rate",
+      "rows": 67,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 1.024,
+      "avg_predicted": 1.183,
+      "deviation_bucket": "hot",
+      "hit_rate": 0.683,
+      "hits": 28,
+      "metric": "strikeout_rate",
+      "rows": 41,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 1.182,
+      "avg_predicted": 1.278,
+      "deviation_bucket": "hot-volatile",
+      "hit_rate": 0.758,
+      "hits": 25,
+      "metric": "strikeout_rate",
+      "rows": 33,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.844,
+      "avg_predicted": 0.881,
+      "deviation_bucket": "cold",
+      "hit_rate": 0.594,
+      "hits": 19,
+      "metric": "strikeout_rate",
+      "rows": 32,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.389,
+      "avg_predicted": 1.116,
+      "deviation_bucket": "hot",
+      "hit_rate": 0.389,
+      "hits": 7,
+      "metric": "strikeout_rate",
+      "rows": 18,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.563,
+      "avg_predicted": 1.113,
+      "deviation_bucket": "hot-volatile",
+      "hit_rate": 0.563,
+      "hits": 9,
+      "metric": "strikeout_rate",
+      "rows": 16,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.75,
+      "avg_predicted": 1.063,
+      "deviation_bucket": "stable",
+      "hit_rate": 0.563,
+      "hits": 9,
+      "metric": "strikeout_rate",
+      "rows": 16,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.933,
+      "avg_predicted": 1.005,
+      "deviation_bucket": "cold",
+      "hit_rate": 0.6,
+      "hits": 9,
+      "metric": "strikeout_rate",
+      "rows": 15,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.909,
+      "avg_predicted": 0.842,
+      "deviation_bucket": "cold-volatile",
+      "hit_rate": 0.727,
+      "hits": 8,
+      "metric": "strikeout_rate",
+      "rows": 11,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.6,
+      "avg_predicted": 0.901,
+      "deviation_bucket": "hot",
+      "hit_rate": 0.7,
+      "hits": 7,
+      "metric": "strikeout_rate",
+      "rows": 10,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.667,
+      "avg_predicted": 1.317,
+      "deviation_bucket": "hot-volatile",
+      "hit_rate": 0.444,
+      "hits": 4,
+      "metric": "strikeout_rate",
+      "rows": 9,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.75,
+      "avg_predicted": 0.97,
+      "deviation_bucket": "negative-drift",
+      "hit_rate": 0.75,
+      "hits": 6,
+      "metric": "strikeout_rate",
+      "rows": 8,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.143,
+      "avg_predicted": 0.794,
+      "deviation_bucket": "cold",
+      "hit_rate": 0.286,
+      "hits": 2,
+      "metric": "strikeout_rate",
+      "rows": 7,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.667,
+      "avg_predicted": 1.113,
+      "deviation_bucket": "cold-volatile",
+      "hit_rate": 0.5,
+      "hits": 3,
+      "metric": "strikeout_rate",
+      "rows": 6,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.667,
+      "avg_predicted": 0.962,
+      "deviation_bucket": "cold-volatile",
+      "hit_rate": 0.5,
+      "hits": 3,
+      "metric": "strikeout_rate",
+      "rows": 6,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.8,
+      "avg_predicted": 1.24,
+      "deviation_bucket": "positive-drift",
+      "hit_rate": 0.8,
+      "hits": 4,
+      "metric": "strikeout_rate",
+      "rows": 5,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 1.399,
+      "avg_predicted": 1.569,
+      "deviation_bucket": "stable",
+      "hit_rate": 0.551,
+      "hits": 315,
+      "metric": "total_bases_per_pa",
+      "rows": 572,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 1.536,
+      "avg_predicted": 1.467,
+      "deviation_bucket": "negative-drift",
+      "hit_rate": 0.582,
+      "hits": 251,
+      "metric": "total_bases_per_pa",
+      "rows": 431,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 1.509,
+      "avg_predicted": 1.702,
+      "deviation_bucket": "positive-drift",
+      "hit_rate": 0.506,
+      "hits": 171,
+      "metric": "total_bases_per_pa",
+      "rows": 338,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 1.421,
+      "avg_predicted": 1.442,
+      "deviation_bucket": "cold",
+      "hit_rate": 0.584,
+      "hits": 111,
+      "metric": "total_bases_per_pa",
+      "rows": 190,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 1.394,
+      "avg_predicted": 1.903,
+      "deviation_bucket": "hot-volatile",
+      "hit_rate": 0.435,
+      "hits": 74,
+      "metric": "total_bases_per_pa",
+      "rows": 170,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 1.377,
+      "avg_predicted": 1.452,
+      "deviation_bucket": "cold-volatile",
+      "hit_rate": 0.576,
+      "hits": 87,
+      "metric": "total_bases_per_pa",
+      "rows": 151,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.838,
+      "avg_predicted": 1.184,
+      "deviation_bucket": "stable",
+      "hit_rate": 0.73,
+      "hits": 81,
+      "metric": "total_bases_per_pa",
+      "rows": 111,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 1.33,
+      "avg_predicted": 1.8,
+      "deviation_bucket": "hot",
+      "hit_rate": 0.437,
+      "hits": 45,
+      "metric": "total_bases_per_pa",
+      "rows": 103,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.613,
+      "avg_predicted": 1.133,
+      "deviation_bucket": "cold-volatile",
+      "hit_rate": 0.787,
+      "hits": 59,
+      "metric": "total_bases_per_pa",
+      "rows": 75,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.926,
+      "avg_predicted": 1.148,
+      "deviation_bucket": "negative-drift",
+      "hit_rate": 0.735,
+      "hits": 50,
+      "metric": "total_bases_per_pa",
+      "rows": 68,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 1.032,
+      "avg_predicted": 1.265,
+      "deviation_bucket": "positive-drift",
+      "hit_rate": 0.694,
+      "hits": 43,
+      "metric": "total_bases_per_pa",
+      "rows": 62,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.979,
+      "avg_predicted": 1.518,
+      "deviation_bucket": "hot-volatile",
+      "hit_rate": 0.417,
+      "hits": 20,
+      "metric": "total_bases_per_pa",
+      "rows": 48,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 1.333,
+      "avg_predicted": 1.153,
+      "deviation_bucket": "cold",
+      "hit_rate": 0.641,
+      "hits": 25,
+      "metric": "total_bases_per_pa",
+      "rows": 39,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.963,
+      "avg_predicted": 1.351,
+      "deviation_bucket": "hot",
+      "hit_rate": 0.63,
+      "hits": 17,
+      "metric": "total_bases_per_pa",
+      "rows": 27,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 1.375,
+      "avg_predicted": 1.099,
+      "deviation_bucket": "cold-volatile",
+      "hit_rate": 0.625,
+      "hits": 10,
+      "metric": "total_bases_per_pa",
+      "rows": 16,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 1.25,
+      "avg_predicted": 1.46,
+      "deviation_bucket": "hot-volatile",
+      "hit_rate": 0.583,
+      "hits": 7,
+      "metric": "total_bases_per_pa",
+      "rows": 12,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.333,
+      "avg_predicted": 1.095,
+      "deviation_bucket": "cold",
+      "hit_rate": 0.889,
+      "hits": 8,
+      "metric": "total_bases_per_pa",
+      "rows": 9,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.625,
+      "avg_predicted": 1.15,
+      "deviation_bucket": "stable",
+      "hit_rate": 1.0,
+      "hits": 8,
+      "metric": "total_bases_per_pa",
+      "rows": 8,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 1.0,
+      "avg_predicted": 1.118,
+      "deviation_bucket": "hot",
+      "hit_rate": 0.714,
+      "hits": 5,
+      "metric": "total_bases_per_pa",
+      "rows": 7,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.0,
+      "avg_predicted": 1.282,
+      "deviation_bucket": "negative-drift",
+      "hit_rate": 0.833,
+      "hits": 5,
+      "metric": "total_bases_per_pa",
+      "rows": 6,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.0,
+      "avg_predicted": 0.853,
+      "deviation_bucket": "positive-drift",
+      "hit_rate": 1.0,
+      "hits": 3,
+      "metric": "total_bases_per_pa",
+      "rows": 3,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.326,
+      "avg_predicted": 0.372,
+      "deviation_bucket": "stable",
+      "hit_rate": 0.709,
+      "hits": 966,
+      "metric": "walk_rate",
+      "rows": 1362,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.35,
+      "avg_predicted": 0.385,
+      "deviation_bucket": "negative-drift",
+      "hit_rate": 0.72,
+      "hits": 249,
+      "metric": "walk_rate",
+      "rows": 346,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.183,
+      "avg_predicted": 0.277,
+      "deviation_bucket": "stable",
+      "hit_rate": 0.828,
+      "hits": 222,
+      "metric": "walk_rate",
+      "rows": 268,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.369,
+      "avg_predicted": 0.498,
+      "deviation_bucket": "positive-drift",
+      "hit_rate": 0.677,
+      "hits": 147,
+      "metric": "walk_rate",
+      "rows": 217,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.315,
+      "avg_predicted": 0.277,
+      "deviation_bucket": "negative-drift",
+      "hit_rate": 0.708,
+      "hits": 63,
+      "metric": "walk_rate",
+      "rows": 89,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.417,
+      "avg_predicted": 0.39,
+      "deviation_bucket": "positive-drift",
+      "hit_rate": 0.7,
+      "hits": 42,
+      "metric": "walk_rate",
+      "rows": 60,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.211,
+      "avg_predicted": 0.238,
+      "deviation_bucket": "negative-drift",
+      "hit_rate": 0.789,
+      "hits": 15,
+      "metric": "walk_rate",
+      "rows": 19,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.389,
+      "avg_predicted": 0.608,
+      "deviation_bucket": "hot",
+      "hit_rate": 0.389,
+      "hits": 7,
+      "metric": "walk_rate",
+      "rows": 18,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.188,
+      "avg_predicted": 0.132,
+      "deviation_bucket": "stable",
+      "hit_rate": 0.813,
+      "hits": 13,
+      "metric": "walk_rate",
+      "rows": 16,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.0,
+      "avg_predicted": 0.31,
+      "deviation_bucket": "positive-drift",
+      "hit_rate": 1.0,
+      "hits": 10,
+      "metric": "walk_rate",
+      "rows": 10,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.111,
+      "avg_predicted": 0.534,
+      "deviation_bucket": "hot",
+      "hit_rate": 0.778,
+      "hits": 7,
+      "metric": "walk_rate",
+      "rows": 9,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.111,
+      "avg_predicted": 0.435,
+      "deviation_bucket": "hot",
+      "hit_rate": 0.889,
+      "hits": 8,
+      "metric": "walk_rate",
+      "rows": 9,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.8,
+      "avg_predicted": 0.545,
+      "deviation_bucket": "cold",
+      "hit_rate": 0.2,
+      "hits": 1,
+      "metric": "walk_rate",
+      "rows": 5,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.8,
+      "avg_predicted": 0.579,
+      "deviation_bucket": "hot-volatile",
+      "hit_rate": 0.4,
+      "hits": 2,
+      "metric": "walk_rate",
+      "rows": 5,
+      "sample_size_bucket": "medium-sample"
+    },
+    {
+      "avg_actual": 0.5,
+      "avg_predicted": 0.534,
+      "deviation_bucket": "hot-volatile",
+      "hit_rate": 0.75,
+      "hits": 3,
+      "metric": "walk_rate",
+      "rows": 4,
+      "sample_size_bucket": "small-sample"
+    },
+    {
+      "avg_actual": 0.75,
+      "avg_predicted": 0.457,
+      "deviation_bucket": "cold",
+      "hit_rate": 0.25,
+      "hits": 1,
+      "metric": "walk_rate",
+      "rows": 4,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.0,
+      "avg_predicted": 0.384,
+      "deviation_bucket": "hot-volatile",
+      "hit_rate": 1.0,
+      "hits": 3,
+      "metric": "walk_rate",
+      "rows": 3,
+      "sample_size_bucket": "tiny-sample"
+    },
+    {
+      "avg_actual": 0.5,
+      "avg_predicted": 0.521,
+      "deviation_bucket": "cold-volatile",
+      "hit_rate": 0.5,
+      "hits": 1,
+      "metric": "walk_rate",
+      "rows": 2,
+      "sample_size_bucket": "medium-sample"
+    }
+  ],
+  "range": {
+    "end": "2026-05-31",
+    "start": "2026-05-23"
+  },
+  "schemaVersion": 1,
+  "stateSummary": [
+    {
+      "expression": "first-five over",
+      "hit_rate": 0.525,
+      "hits": 32,
+      "lane": "pitcher_batter_kernel",
+      "phase": "starterWindow",
+      "rows": 61
+    },
+    {
+      "expression": "pass",
+      "hit_rate": 0.294,
+      "hits": 62,
+      "lane": "state_formula",
+      "phase": "bridge",
+      "rows": 211
+    },
+    {
+      "expression": "full-game over",
+      "hit_rate": 0.36,
+      "hits": 9,
+      "lane": "state_formula",
+      "phase": "bridge",
+      "rows": 25
+    },
+    {
+      "expression": "live-only",
+      "hit_rate": 0.0,
+      "hits": 0,
+      "lane": "state_formula",
+      "phase": "bridge",
+      "rows": 12
+    },
+    {
+      "expression": "live/full under watch",
+      "hit_rate": 1.0,
+      "hits": 2,
+      "lane": "state_formula",
+      "phase": "bridge",
+      "rows": 2
+    },
+    {
+      "expression": "pass",
+      "hit_rate": 0.233,
+      "hits": 28,
+      "lane": "state_formula",
+      "phase": "firstCycle",
+      "rows": 120
+    },
+    {
+      "expression": "first-five under",
+      "hit_rate": 0.35,
+      "hits": 41,
+      "lane": "state_formula",
+      "phase": "firstCycle",
+      "rows": 117
+    },
+    {
+      "expression": "first-five over",
+      "hit_rate": 0.538,
+      "hits": 7,
+      "lane": "state_formula",
+      "phase": "firstCycle",
+      "rows": 13
+    },
+    {
+      "expression": "pass",
+      "hit_rate": 0.309,
+      "hits": 69,
+      "lane": "state_formula",
+      "phase": "late",
+      "rows": 223
+    },
+    {
+      "expression": "full-game over",
+      "hit_rate": 0.429,
+      "hits": 6,
+      "lane": "state_formula",
+      "phase": "late",
+      "rows": 14
+    },
+    {
+      "expression": "live-only",
+      "hit_rate": 0.0,
+      "hits": 0,
+      "lane": "state_formula",
+      "phase": "late",
+      "rows": 13
+    },
+    {
+      "expression": "pass",
+      "hit_rate": 0.23,
+      "hits": 32,
+      "lane": "state_formula",
+      "phase": "starterWindow",
+      "rows": 139
+    },
+    {
+      "expression": "first-five under",
+      "hit_rate": 0.404,
+      "hits": 23,
+      "lane": "state_formula",
+      "phase": "starterWindow",
+      "rows": 57
+    },
+    {
+      "expression": "first-five over",
+      "hit_rate": 0.36,
+      "hits": 18,
+      "lane": "state_formula",
+      "phase": "starterWindow",
+      "rows": 50
+    },
+    {
+      "expression": "live-only",
+      "hit_rate": 0.0,
+      "hits": 0,
+      "lane": "state_formula",
+      "phase": "starterWindow",
+      "rows": 4
+    }
+  ]
+}

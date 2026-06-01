@@ -351,6 +351,40 @@ Interpretation:
 
 The pitch-level substrate is now real, but the score range is too compressed and the first rough checks are not promotion quality. Next steps are to calibrate the kernel by starter/hitter sample, line bucket, team F5 runs, and game F5/full total, then feed calibrated kernel features into state formulas instead of treating the kernel as a standalone value source.
 
+## 2026-06-01 - Stored M2 Research Backtest Harness
+
+Added the first warehouse-backed M2 research backtest writer.
+
+Implemented:
+
+- `npm run data:backtest:mlb-m2-research`.
+- `mlb_state_formula_backtests` rows for state formulas.
+- `mlb_player_identity_model_backtests` rows for player identity distributions.
+- `mlb_state_formula_backtests` rows for pitcher-batter kernel top-collapse F5 research checks.
+- `models/mlb/cartridges/MLB-M2/research/m2_research_backtest_report.py`.
+- `models/mlb/cartridges/MLB-M2/reports/m2-research-backtest-report-2026-05-23-to-2026-05-31.md`.
+- `data-private/reports/mlb-m2-research-backtest-report-2026-05-23-to-2026-05-31.json`.
+
+Stored backtest coverage:
+
+- May 23-May 31: 1,000 state-formula rows.
+- May 23-May 31: 12,230 player-identity rows.
+- May 23-May 31: 61 pitcher-batter-kernel top-collapse rows.
+
+May 31 holdout read:
+
+- State formulas: 24/120, 20.0%. This is bad and confirms the first state-formula calibration should not touch the value board.
+- Pitcher-batter kernel top-collapse: 4/6, 66.7%. Interesting pocket, not enough sample to promote.
+- Player hits per PA: 182/307, 59.3%.
+- Player total bases per PA: 179/307, 58.3%.
+- Player strikeout rate: 184/307, 59.9%.
+- Player walk rate: 210/307, 68.4%.
+- Player HR rate: 260/307, 84.7%, mostly from staying negative on a rare event, so this is not an HR edge.
+
+Interpretation:
+
+The harness is now more important than the first scores. M2 can store bucket correctness by lane and holdout date. The next promotion work is walk-forward model comparison with line/price buckets and ROI, then value-board rows must be filtered from these stored model-owned outputs.
+
 ## 2026-06-01 - Invented Vector Search
 
 Added a wider vector search to break the six radar axes into raw invented dimensions.
