@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "modelId": "MLB-M2",
+  "sport": "mlb",
+  "status": "migration-shell",
+  "lanes": [
+    "moneyline",
+    "first5",
+    "totals",
+    "first_inning",
+    "props",
+    "home_runs"
+  ],
+  "requiredPublicFields": [
+    "date",
+    "modelId",
+    "games",
+    "valueBoard",
+    "modelHistory"
+  ],
+  "notes": [
+    "This is a placeholder contract for the MLB cartridge migration.",
+    "Final field requirements should be derived from the current generated day payload before code is moved."
+  ]
+}

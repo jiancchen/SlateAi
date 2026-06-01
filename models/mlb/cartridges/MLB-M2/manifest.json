@@ -1,0 +1,336 @@
+{
+  "id": "MLB-M2",
+  "sport": "mlb",
+  "name": "MLB-M2 game-shape reality-gap branch",
+  "status": "draft",
+  "role": "parent_model",
+  "createdForMigration": "2026-05-31",
+  "entrypoint": "models/mlb/cartridges/MLB-M2/runner.mjs",
+  "workflowEntrypoint": "models/mlb/cartridges/MLB-M2/workflows/pregame.mjs",
+  "publishEntrypoints": [
+    "models/mlb/cartridges/MLB-M2/lanes/generate-day-files.mjs",
+    "models/mlb/cartridges/MLB-M2/lanes/batting-impact.mjs",
+    "models/mlb/cartridges/MLB-M2/lanes/lineups.mjs",
+    "models/mlb/cartridges/MLB-M2/lanes/home-runs.mjs",
+    "models/mlb/cartridges/MLB-M2/lanes/props.mjs",
+    "models/mlb/cartridges/MLB-M2/lanes/sides.mjs",
+    "models/mlb/cartridges/MLB-M2/lanes/veto.mjs",
+    "models/mlb/cartridges/MLB-M2/lanes/training-corpus.mjs",
+    "models/mlb/cartridges/MLB-M2/lanes/history-journal.mjs"
+  ],
+  "components": [
+    "sides",
+    "first-five",
+    "totals",
+    "props",
+    "home-runs",
+    "market-context",
+    "game-shape",
+    "rf-reality-check",
+    "MLB-RP36"
+  ],
+  "goldenSnapshots": [
+    "data-private/model-cartridges/mlb/MLB-M2/golden/2026-05-30.snapshot.json"
+  ],
+  "outputContract": "models/mlb/cartridges/MLB-M2/output-contract.json",
+  "modelDescription": "models/mlb/cartridges/MLB-M2/model_description.json",
+  "modelNotes": "models/mlb/cartridges/MLB-M2/MODEL_NOTES.md",
+  "modelLog": "models/mlb/cartridges/MLB-M2/MLB-M2_log.md",
+  "performanceIndex": "models/mlb/cartridges/MLB-M2/performance_index.json",
+  "followups": "models/mlb/cartridges/MLB-M2/followups.md",
+  "sourceFiles": [
+    {
+      "role": "pregame-runner",
+      "path": "models/mlb/cartridges/MLB-M2/runner.mjs"
+    },
+    {
+      "role": "cartridge-module-config",
+      "path": "models/mlb/cartridges/MLB-M2/package.json"
+    },
+    {
+      "role": "cartridge-pregame-workflow",
+      "path": "models/mlb/cartridges/MLB-M2/workflows/pregame.mjs"
+    },
+    {
+      "role": "cartridge-refresh-workflow",
+      "path": "models/mlb/cartridges/MLB-M2/workflows/refresh-live-board.mjs"
+    },
+    {
+      "role": "cartridge-followup-workflow",
+      "path": "models/mlb/cartridges/MLB-M2/workflows/followup.mjs"
+    },
+    {
+      "role": "cartridge-refresh-verifier",
+      "path": "models/mlb/cartridges/MLB-M2/workflows/verify-refresh.mjs"
+    },
+    {
+      "role": "snapshot-builder",
+      "path": "models/mlb/cartridges/MLB-M2/snapshot.mjs"
+    },
+    {
+      "role": "snapshot-verifier",
+      "path": "models/mlb/cartridges/MLB-M2/verify_snapshot.mjs"
+    },
+    {
+      "role": "run-snapshotter",
+      "path": "models/mlb/cartridges/MLB-M2/snapshot-run.mjs"
+    },
+    {
+      "role": "run-checker",
+      "path": "models/mlb/cartridges/MLB-M2/check_run.mjs"
+    },
+    {
+      "role": "performance-index",
+      "path": "models/mlb/cartridges/MLB-M2/performance_index.json"
+    },
+    {
+      "role": "followup-index",
+      "path": "models/mlb/cartridges/MLB-M2/followups.md"
+    },
+    {
+      "role": "component-registry",
+      "path": "models/mlb/cartridges/MLB-M2/components/index.json"
+    },
+    {
+      "role": "component-sides-doc",
+      "path": "models/mlb/cartridges/MLB-M2/components/sides/README.md"
+    },
+    {
+      "role": "component-first-five-doc",
+      "path": "models/mlb/cartridges/MLB-M2/components/first-five/README.md"
+    },
+    {
+      "role": "component-totals-doc",
+      "path": "models/mlb/cartridges/MLB-M2/components/totals/README.md"
+    },
+    {
+      "role": "component-props-doc",
+      "path": "models/mlb/cartridges/MLB-M2/components/props/README.md"
+    },
+    {
+      "role": "component-home-runs-doc",
+      "path": "models/mlb/cartridges/MLB-M2/components/home-runs/README.md"
+    },
+    {
+      "role": "component-market-context-doc",
+      "path": "models/mlb/cartridges/MLB-M2/components/market-context/README.md"
+    },
+    {
+      "role": "component-game-shape-doc",
+      "path": "models/mlb/cartridges/MLB-M2/components/game-shape/README.md"
+    },
+    {
+      "role": "component-relief-addendum-doc",
+      "path": "models/mlb/cartridges/MLB-M2/components/relief-addendum/README.md"
+    },
+    {
+      "role": "shared-model-run-indexer",
+      "path": "models/shared/model-runs/index_runs.py"
+    },
+    {
+      "role": "mlb-registry-utils",
+      "path": "models/mlb/lib/registry-utils.mjs"
+    },
+    {
+      "role": "mlb-module-config",
+      "path": "models/mlb/package.json"
+    },
+    {
+      "role": "mlb-cartridge-runner",
+      "path": "models/mlb/run-cartridge.mjs"
+    },
+    {
+      "role": "mlb-cartridge-snapshotter",
+      "path": "models/mlb/snapshot-cartridge.mjs"
+    },
+    {
+      "role": "mlb-cartridge-checker",
+      "path": "models/mlb/check-cartridge.mjs"
+    },
+    {
+      "role": "mlb-cartridge-scaffolder",
+      "path": "models/mlb/scaffold-cartridge.mjs"
+    },
+    {
+      "role": "mlb-cartridge-comparator",
+      "path": "models/mlb/compare-cartridges.mjs"
+    },
+    {
+      "role": "cartridge-day-generator",
+      "path": "models/mlb/cartridges/MLB-M2/lanes/generate-day-files.mjs"
+    },
+    {
+      "role": "cartridge-batting-impact-exporter",
+      "path": "models/mlb/cartridges/MLB-M2/lanes/batting-impact.mjs"
+    },
+    {
+      "role": "cartridge-lineup-exporter",
+      "path": "models/mlb/cartridges/MLB-M2/lanes/lineups.mjs"
+    },
+    {
+      "role": "cartridge-home-run-exporter",
+      "path": "models/mlb/cartridges/MLB-M2/lanes/home-runs.mjs"
+    },
+    {
+      "role": "cartridge-prop-exporter",
+      "path": "models/mlb/cartridges/MLB-M2/lanes/props.mjs"
+    },
+    {
+      "role": "cartridge-side-exporter",
+      "path": "models/mlb/cartridges/MLB-M2/lanes/sides.mjs"
+    },
+    {
+      "role": "cartridge-veto-exporter",
+      "path": "models/mlb/cartridges/MLB-M2/lanes/veto.mjs"
+    },
+    {
+      "role": "cartridge-training-corpus-exporter",
+      "path": "models/mlb/cartridges/MLB-M2/lanes/training-corpus.mjs"
+    },
+    {
+      "role": "cartridge-history-journal-exporter",
+      "path": "models/mlb/cartridges/MLB-M2/lanes/history-journal.mjs"
+    },
+    {
+      "role": "side-model-logic",
+      "path": "models/mlb/cartridges/MLB-M2/lib/sports-model.js"
+    },
+    {
+      "role": "shared-sports-core-readme",
+      "path": "models/shared/sports-core/README.md"
+    },
+    {
+      "role": "shared-sports-core-module-config",
+      "path": "models/shared/sports-core/package.json"
+    },
+    {
+      "role": "shared-core-utils",
+      "path": "models/shared/sports-core/core-utils.js"
+    },
+    {
+      "role": "shared-market-utils",
+      "path": "models/shared/sports-core/market-utils.js"
+    },
+    {
+      "role": "shared-signal-utils",
+      "path": "models/shared/sports-core/signal-utils.js"
+    },
+    {
+      "role": "shared-participant-factory",
+      "path": "models/shared/sports-core/participant-model.js"
+    },
+    {
+      "role": "shared-match-model-factory",
+      "path": "models/shared/sports-core/match-model.js"
+    },
+    {
+      "role": "shared-structured-context",
+      "path": "models/shared/sports-core/structured-analysis-context.js"
+    },
+    {
+      "role": "shared-structured-inputs",
+      "path": "models/shared/sports-core/structured-inputs.js"
+    },
+    {
+      "role": "shared-app-composition",
+      "path": "models/shared/sports-core/app-sports-model.js"
+    },
+    {
+      "role": "mlb-app-adapter-registry",
+      "path": "models/mlb/app-model.js"
+    },
+    {
+      "role": "model-prop-calibration",
+      "path": "models/mlb/cartridges/MLB-M2/generated/mlb-prop-calibration.generated.js"
+    },
+    {
+      "role": "model-structured-context",
+      "path": "models/mlb/cartridges/MLB-M2/lib/structured-analysis-context.js"
+    },
+    {
+      "role": "model-analysis-orchestrator",
+      "path": "models/mlb/cartridges/MLB-M2/lib/analysis-model.js"
+    },
+    {
+      "role": "model-starter-utils",
+      "path": "models/mlb/cartridges/MLB-M2/lib/mlb-starter-utils.js"
+    },
+    {
+      "role": "model-analysis-context",
+      "path": "models/mlb/cartridges/MLB-M2/lib/mlb-analysis-context.js"
+    },
+    {
+      "role": "model-game-shape-reality-gap",
+      "path": "models/mlb/cartridges/MLB-M2/lib/mlb-game-shape.js"
+    },
+    {
+      "role": "model-decision-indicators",
+      "path": "models/mlb/cartridges/MLB-M2/lib/mlb-decision-indicators.js"
+    },
+    {
+      "role": "model-props",
+      "path": "models/mlb/cartridges/MLB-M2/lib/mlb-props.js"
+    },
+    {
+      "role": "model-parlay-helpers",
+      "path": "models/mlb/cartridges/MLB-M2/lib/parlay.js"
+    },
+    {
+      "role": "model-team-utils",
+      "path": "models/mlb/cartridges/MLB-M2/lib/team-utils.js"
+    },
+    {
+      "role": "model-simulation",
+      "path": "models/mlb/cartridges/MLB-M2/lib/mlb-simulation.js"
+    },
+    {
+      "role": "model-pick-rankings",
+      "path": "models/mlb/cartridges/MLB-M2/lib/pick-rankings.js"
+    },
+    {
+      "role": "model-side-controls",
+      "path": "models/mlb/cartridges/MLB-M2/lib/mlb-side-controls.js"
+    },
+    {
+      "role": "warehouse-code",
+      "path": "pipeline/mlb/warehouse/mlb_warehouse.py"
+    },
+    {
+      "role": "fanduel-fetcher",
+      "path": "pipeline/mlb/fetchers/fetch_fanduel_research_mlb.py"
+    },
+    {
+      "role": "kalshi-fetcher",
+      "path": "pipeline/mlb/fetchers/fetch_kalshi_mlb_markets.py"
+    },
+    {
+      "role": "side-backtest",
+      "path": "pipeline/mlb/warehouse/mlb_side_backtest.py"
+    },
+    {
+      "role": "component-addendum",
+      "path": "models/mlb/cartridges/MLB-RP36/manifest.json"
+    }
+  ],
+  "description": "Draft parent MLB model branched from MLB-M0. MLB-M2 keeps the M0 cartridge contract but adds a game-shape/reality-gap layer and RF research lens so side, F5, totals, and early-run recommendations can be compared against how the game is likely to unfold.",
+  "compatibilityWorkflowEntrypoints": [
+    "pipeline/mlb/workflows/pregame.mjs",
+    "pipeline/mlb/workflows/refresh-live-board.mjs",
+    "pipeline/mlb/workflows/followup.mjs",
+    "pipeline/mlb/workflows/verify-refresh.mjs"
+  ],
+  "compatibilityPublishEntrypoints": [
+    "pipeline/mlb/publish/generate-day-files.mjs",
+    "pipeline/mlb/publish/export-batting-impact.mjs",
+    "pipeline/mlb/publish/export-lineup-model.mjs",
+    "pipeline/mlb/publish/export-home-run-predictions.mjs",
+    "pipeline/mlb/publish/export-prop-predictions.mjs",
+    "pipeline/mlb/publish/export-side-predictions.mjs",
+    "pipeline/mlb/publish/export-veto-artifact.mjs",
+    "pipeline/mlb/publish/export-training-corpus.mjs",
+    "pipeline/mlb/publish/export-history-journal.mjs"
+  ],
+  "componentRegistry": "models/mlb/cartridges/MLB-M2/components/index.json",
+  "runSnapshot": "models/mlb/cartridges/MLB-M2/snapshot-run.mjs",
+  "runCheck": "models/mlb/cartridges/MLB-M2/check_run.mjs"
+}

@@ -18,6 +18,21 @@
 
 This was a dead-early, low-conversion slate. The board still spent too much energy on paper side strength and too little on whether the pick would actually score before the game script got away from it.
 
+## Full value-board audit
+| Lane | Hit | Rate | Read |
+| --- | --- | --- | --- |
+| ML value | 1/1 | 100.0% | Only one true side-price value row; it hit, but the board did not have enough real ML volume. |
+| F5 ML | 9/15 | 60.0% | Decent directionally, but several misses were dead early. |
+| Full-game totals | 0/1 | 0.0% | Broken for the slate; should have been hidden or research-only. |
+| F5 totals | 0/2 | 0.0% | Also weak; do not surface as value until recalibrated. |
+| First inning | 7/15 | 46.7% | Timing model lagged the dead-early shape. |
+| Total bases | 4/6 | 66.7% | Best prop lane, but too concentrated in the same fragile over market. |
+| Strikeout O/U | 11/18 | 61.1% | Grading now respects unders; viable, but not a blind core lane. |
+| Batting impact | 3/12 | 25.0% | Singles/RBI/walks were the biggest live-board trap. |
+| HR | 2/12 | 16.7% | Still lottery/research-only at this hit rate. |
+
+The full value board was worse than the headline side record. The side-price lane had one real value row and it hit, but the board also exposed totals, first-inning, HR, and batting-impact rows that were not ready to be bet. The next board needs to promote only lanes with settled bucket support and mark the rest as research/watch.
+
 ## Side board by game
 | Game | Pick | FG | F5 | 1st | Conf | Edge | Path |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -71,7 +86,7 @@ What those misses have in common:
 Overall settled tracked props by lane:
 | Prop type | Hits | Settled | Hit rate |
 | --- | --- | --- | --- |
-| pitcherStrikeouts | 9 | 18 | 50.0% |
+| pitcherStrikeouts | 11 | 18 | 61.1% |
 | rbi | 0 | 1 | 0.0% |
 | singles | 2 | 9 | 22.2% |
 | totalBases | 4 | 6 | 66.7% |

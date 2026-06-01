@@ -11060,12 +11060,7 @@ def grade_prop_picks(
             actual_value = to_float(row["pitcher_strikeouts"])
 
         line_threshold = to_float(row["line_threshold"])
-        hit_flag = int(actual_value is not None and line_threshold is not None and actual_value > line_threshold)
-        result_label = (
-            f"actual {actual_value:g} > line {line_threshold:g}"
-            if actual_value is not None and line_threshold is not None
-            else "actual stat unavailable"
-        )
+        hit_flag, result_label = grade_prop_market_result(row["market_label"], actual_value, line_threshold)
 
         result_metadata = {
             "plateAppearances": row["plate_appearances"],
@@ -11131,6 +11126,31 @@ def grade_prop_picks(
 
     conn.commit()
     return rows
+
+
+def prop_market_direction(market_label: str | None) -> str:
+    label = str(market_label or "")
+    if re.search(r"\bunder\b", label, flags=re.IGNORECASE):
+        return "under"
+    return "over"
+
+
+def grade_prop_market_result(market_label: str | None, actual_value: float | None, line_threshold: float | None) -> tuple[int, str]:
+    if actual_value is None or line_threshold is None:
+        return 0, "actual stat unavailable"
+
+    direction = prop_market_direction(market_label)
+    if actual_value == line_threshold:
+        return 0, f"actual {actual_value:g} = line {line_threshold:g} ({direction})"
+
+    if direction == "under":
+        hit_flag = int(actual_value < line_threshold)
+        comparator = "<" if hit_flag else ">"
+    else:
+        hit_flag = int(actual_value > line_threshold)
+        comparator = ">" if hit_flag else "<"
+
+    return hit_flag, f"actual {actual_value:g} {comparator} line {line_threshold:g} ({direction})"
 
 
 def list_home_runs(conn: sqlite3.Connection, date_text: str) -> list[sqlite3.Row]:
@@ -11291,7 +11311,8 @@ def print_prop_backtest_summary(rows: list[sqlite3.Row]) -> None:
     def hit_for_row(row: sqlite3.Row) -> bool:
         actual_value = actual_for_row(row)
         line_threshold = to_float(row["line_threshold"])
-        return bool(actual_value is not None and line_threshold is not None and actual_value > line_threshold)
+        hit_flag, _ = grade_prop_market_result(row["market_label"], actual_value, line_threshold)
+        return bool(hit_flag)
 
     def raw_pick_for_row(row: sqlite3.Row) -> dict[str, Any]:
         try:

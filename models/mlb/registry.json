@@ -70,6 +70,25 @@
       ],
       "notes": "Draft cartridge scaffolded from MLB-M0. It must pass benchmark snapshots and lane comparisons before activation.",
       "basedOn": "MLB-M0"
+    },
+    {
+      "modelId": "MLB-M2",
+      "role": "parent_model",
+      "targetPath": "./cartridges/MLB-M2",
+      "status": "draft",
+      "components": [
+        "MLB-RP36"
+      ],
+      "lanes": [
+        "moneyline",
+        "first5",
+        "totals",
+        "first_inning",
+        "props",
+        "home_runs"
+      ],
+      "notes": "Draft game-shape/reality-gap branch scaffolded from MLB-M0. Adds phase-map, chaos, dead-early, and RF totals-lens diagnostics; must pass M0-vs-M2 comparison before activation.",
+      "basedOn": "MLB-M0"
     }
   ]
 }

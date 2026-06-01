@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "modelId": "MLB-M2",
+  "sport": "mlb",
+  "description": "Draft performance index for MLB-M2. M2 is branched from MLB-M0 and must be compared against M0 before activation.",
+  "basedOn": "MLB-M0",
+  "status": "draft",
+  "currentBaselineDate": "2026-05-31",
+  "runs": [],
+  "comparisonTargets": [
+    {
+      "modelId": "MLB-M0",
+      "date": "2026-05-31",
+      "purpose": "Verify M2 preserves the M0 app contract while adding game-shape diagnostics."
+    },
+    {
+      "modelId": "MLB-M0",
+      "date": "2026-05-30",
+      "purpose": "Use May 30 settled failures to test whether reality-gap labels would have warned against weak full-game ML and totals."
+    }
+  ],
+  "openModelChanges": [
+    {
+      "id": "m2-game-shape-reality-gap",
+      "status": "implemented-draft",
+      "summary": "Add a transparent game-shape layer with chaos, dead-early, phase-split, bullpen-flip, starter-control, and RF impact scores."
+    },
+    {
+      "id": "rf-totals-lens",
+      "status": "implemented-draft",
+      "summary": "Use existing RF research only as a totals/game-shape lens until ML/F5/first-inning buckets prove lift."
+    },
+    {
+      "id": "m2-bucket-settlement",
+      "status": "needed",
+      "summary": "Persist and grade game-shape labels by date so reality-gap scores can be backtested against actual game flow and betting lanes."
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import registry from './registry.json' with { type: 'json' }
 import * as MLBM0 from './cartridges/MLB-M0/lib/sports-model.js'
+import * as MLBM2 from './cartridges/MLB-M2/lib/sports-model.js'
 
 const normalizeModelId = (value) => {
   const normalized = String(value || '').trim().toUpperCase()
@@ -9,7 +10,8 @@ const normalizeModelId = (value) => {
 }
 
 const mlbAppAdapters = {
-  'MLB-M0': MLBM0
+  'MLB-M0': MLBM0,
+  'MLB-M2': MLBM2
 }
 
 export const activeMlbAppModelId = normalizeModelId(

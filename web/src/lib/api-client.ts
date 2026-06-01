@@ -29,6 +29,7 @@ export const fetchJsonWithTimeout = async <T>(url: string, timeoutMs = DEFAULT_A
   try {
     const response = await fetch(url, {
       signal: controller.signal,
+      cache: 'no-store',
       headers: {
         Accept: 'application/json'
       }

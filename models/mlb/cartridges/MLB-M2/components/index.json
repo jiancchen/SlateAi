@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "modelId": "MLB-M2",
+  "components": [
+    {
+      "id": "sides",
+      "name": "Sides And Winner",
+      "owns": ["full-game moneyline", "side confidence", "side veto gates"],
+      "entrypoints": ["models/mlb/cartridges/MLB-M2/lanes/sides.mjs"],
+      "coreFiles": ["models/mlb/cartridges/MLB-M2/lib/analysis-model.js", "models/mlb/cartridges/MLB-M2/lib/mlb-side-controls.js"]
+    },
+    {
+      "id": "first-five",
+      "name": "First Five And Timing",
+      "owns": ["first-five side", "starter-window timing", "first-inning timing context"],
+      "entrypoints": ["models/mlb/cartridges/MLB-M2/lanes/generate-day-files.mjs"],
+      "coreFiles": ["models/mlb/cartridges/MLB-M2/lib/mlb-analysis-context.js"]
+    },
+    {
+      "id": "totals",
+      "name": "Run Totals",
+      "owns": ["full-game total", "first-five total", "late scoring shape"],
+      "entrypoints": ["models/mlb/cartridges/MLB-M2/lanes/generate-day-files.mjs"],
+      "coreFiles": ["models/mlb/cartridges/MLB-M2/lib/mlb-simulation.js"]
+    },
+    {
+      "id": "props",
+      "name": "Player Props",
+      "owns": ["tracked non-HR props", "prop calibration", "hitter repeatability labels"],
+      "entrypoints": ["models/mlb/cartridges/MLB-M2/lanes/props.mjs"],
+      "coreFiles": ["models/mlb/cartridges/MLB-M2/lib/mlb-props.js", "models/mlb/cartridges/MLB-M2/generated/mlb-prop-calibration.generated.js"]
+    },
+    {
+      "id": "home-runs",
+      "name": "Home Run Board",
+      "owns": ["HR board", "Statcast HR lane", "park/weather HR context"],
+      "entrypoints": ["models/mlb/cartridges/MLB-M2/lanes/home-runs.mjs"],
+      "coreFiles": []
+    },
+    {
+      "id": "market-context",
+      "name": "Market Context",
+      "owns": ["Kalshi context", "FanDuel odds context", "market mispricing labels"],
+      "entrypoints": ["models/mlb/cartridges/MLB-M2/lanes/veto.mjs", "models/mlb/cartridges/MLB-M2/lanes/training-corpus.mjs"],
+      "coreFiles": ["models/shared/sports-core/market-utils.js"]
+    },
+    {
+      "id": "game-shape",
+      "name": "Game Shape Reality Gap",
+      "owns": ["phase-map agreement", "chaos and dead-early shape scoring", "RF research lens for totals-first nonlinear checks"],
+      "entrypoints": ["models/mlb/cartridges/MLB-M2/lib/analysis-model.js"],
+      "coreFiles": ["models/mlb/cartridges/MLB-M2/lib/mlb-game-shape.js", "models/mlb/cartridges/MLB-M2/lib/mlb-analysis-context.js"]
+    },
+    {
+      "id": "relief-addendum",
+      "name": "Relief Addendum",
+      "owns": ["MLB-RP36 bridge risk", "first-up reliever clusters", "bullpen path warnings"],
+      "entrypoints": ["models/mlb/cartridges/MLB-RP36/runner.py"],
+      "coreFiles": ["models/mlb/cartridges/MLB-RP36/exporter.py"]
+    }
+  ]
+}

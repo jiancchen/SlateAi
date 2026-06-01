@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "modelId": "MLB-M2",
+  "sport": "mlb",
+  "name": "MLB-M2 game-shape reality-gap branch",
+  "status": "draft",
+  "basedOn": "MLB-M0",
+  "summary": "Draft MLB parent cartridge branched from the current MLB-M0 behavior. M2 keeps the M0 app and publish contracts, then adds a game-shape/reality-gap layer that asks whether the side, total, first-five, and first-inning reads match the way the game is likely to unfold.",
+  "keyImprovements": [
+    "Branches a full parent cartridge from MLB-M0 without activating it, so M2 can be benchmarked against M0 before public use.",
+    "Adds `analysis.gameShape`, a structured read of phase agreement, crooked-inning chaos, dead-early shape, bullpen-flip risk, and projection-vs-reality gap.",
+    "Adds an RF research lens that treats RandomForest results as a nonlinear reality check, with totals as the only currently deployable RF lane from the research docs.",
+    "Keeps ML/F5 RF influence downgraded until bucketed backtests show it beats the current M0 logic.",
+    "Names market implications separately for side, first-five, total, and first inning so M2 can stop forcing moneyline when the game shape says another lane is cleaner."
+  ],
+  "keyMetrics": [
+    {
+      "label": "Branch source",
+      "value": "MLB-M0",
+      "details": "M2 was scaffolded from the current M0 cartridge and is registered as a draft."
+    },
+    {
+      "label": "Active model",
+      "value": "MLB-M0",
+      "details": "M2 is not active. The registry still points daily/public runs at M0 until M2 passes comparison checks."
+    },
+    {
+      "label": "RF lane trust",
+      "value": "Totals only",
+      "details": "Historical RF research marked totals deployable; moneyline, first-five, and first-inning stay advisory only."
+    },
+    {
+      "label": "New output",
+      "value": "gameShape",
+      "details": "M2 emits reality-gap score, chaos score, dead-early score, phase split score, RF impact score, and lane-specific market implications."
+    }
+  ],
+  "notes": [
+    "M2 is not a promise that RF is better. It is the branch where RF impact can finally be measured instead of hand-waved.",
+    "The core question is whether the model can describe game flow before choosing a bet: early scoring, first-five control, bridge innings, total chaos, and conversion failure.",
+    "A high reality-gap score should downgrade blind full-game ML confidence even when the raw side model has a strong lean.",
+    "Future M2 work should persist per-game reality-gap outcomes so we can backtest whether high-gap labels predicted bad ML bets, better F5 bets, better totals, or passes."
+  ],
+  "knownLimitations": [
+    "The RF lens currently uses documented research baselines, not a newly serialized production RF artifact.",
+    "M2 has not been activated and should not publish public picks until M0-vs-M2 comparison artifacts exist.",
+    "The first game-shape formula is intentionally transparent and testable; it still needs day-by-day settlement to prove lift."
+  ],
+  "files": {
+    "markdown": "models/mlb/cartridges/MLB-M2/MODEL_NOTES.md",
+    "modelLog": "models/mlb/cartridges/MLB-M2/MLB-M2_log.md",
+    "performanceIndex": "models/mlb/cartridges/MLB-M2/performance_index.json",
+    "followups": "models/mlb/cartridges/MLB-M2/followups.md",
+    "gameShape": "models/mlb/cartridges/MLB-M2/lib/mlb-game-shape.js"
+  }
+}

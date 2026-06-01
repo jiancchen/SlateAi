@@ -629,9 +629,9 @@ export const mlbPropPerformanceByDate: Record<string, DailyPropSummary> = {
   },
   "2026-05-31": {
     "overall": {
-      "hits": 16,
+      "hits": 18,
       "total": 36,
-      "hitRate": 44.4
+      "hitRate": 50
     },
     "byType": {
       "totalBases": {
@@ -645,9 +645,9 @@ export const mlbPropPerformanceByDate: Record<string, DailyPropSummary> = {
         "hitRate": 22.2
       },
       "pitcherStrikeouts": {
-        "hits": 9,
+        "hits": 11,
         "total": 18,
-        "hitRate": 50
+        "hitRate": 61.1
       },
       "rbi": {
         "hits": 0,

@@ -1520,6 +1520,8 @@ const buildMlbGameStory = ({
     expressionText = 'First five or nothing. The matchup is cleaner early than late.'
   } else if (reliefRisk <= 40 && lateStability >= 55 && coinflipPressure <= 30) {
     expressionText = 'Full-game side is cleaner than the phase props here.'
+  } else if (projection?.totals?.fullGame?.chaosGate?.vetoed) {
+    expressionText = `Pass the full-game total. Chaos gate overrode ${projection.totals.fullGame.originalLabel || projection.totals.fullGame.label}.`
   } else if ((analysis.modelEdge ?? 0) < 4 && projection?.totals?.fullGame?.label) {
     expressionText = `The total may be cleaner than the side. Current totals lean is ${projection.totals.fullGame.label}.`
   }
@@ -1730,7 +1732,12 @@ const buildGameHighlights = (game: AnyRecord) => {
     if (bridgePressure && !/no strong reliever-arsenal edge/i.test(bridgePressure)) {
       chips.push({ tone: 'warning', label: 'Bridge live' })
     }
-    if (projection.totals?.fullGame?.lean && projection.totals.fullGame.lean !== 'Pass') {
+    if (projection.totals?.fullGame?.chaosGate?.vetoed) {
+      chips.push({
+        tone: 'danger',
+        label: 'Total chaos veto'
+      })
+    } else if (projection.totals?.fullGame?.lean && projection.totals.fullGame.lean !== 'Pass') {
       chips.push({
         tone: projection.totals.fullGame.lean === 'Over' ? 'warning' : 'neutral',
         label: projection.totals.fullGame.label
@@ -2796,7 +2803,11 @@ function App() {
                 priceLabel: phase.projectedLabel,
                 metaLabel: phase.lean.strength,
                 summary: phase.lean.summary,
-                tags: [phase.label, totals.bullpenExhaustionNote ? 'Bullpen live' : 'Model total'].slice(0, 2),
+                tags: [
+                  phase.label,
+                  phase.lean.chaosGate?.warning ? 'Chaos checked' : null,
+                  totals.bullpenExhaustionNote ? 'Bullpen live' : 'Model total'
+                ].filter(Boolean).slice(0, 3),
                 invalid: eventState.invalid,
                 statusLabel: eventState.label,
                 tone: eventState.tone,
@@ -2814,6 +2825,7 @@ function App() {
                   line: phase.line,
                   summary: phase.lean.summary,
                   strength: phase.lean.strength,
+                  chaosGate: phase.lean.chaosGate ?? null,
                   projectedLabel: phase.projectedLabel
                 }
               }
@@ -3323,8 +3335,10 @@ function App() {
       .map((game: AnyRecord) => {
         const projection = game.analysis?.mlbProjection
         const totals = projection?.totals
+        const first5Lean = totals?.first5
         const projectedRuns = Number(totals?.projectedFirst5TotalRuns)
         if (!projection || !Number.isFinite(projectedRuns)) return null
+        if (first5Lean?.chaosGate?.vetoed) return null
 
         const kalshiTotal = activeKalshiMlbMarketByGame[game.id]?.first5Total?.selected ?? null
         const marketLine = Number(kalshiTotal?.line)
@@ -3366,12 +3380,14 @@ function App() {
           metaLabel: `Model ${formatPercent(modelPct, 1)} · proj ${formatNumber(projectedRuns, 1)}`,
           summary:
             `${pick} ${formatNumber(line, 1)} from ${formatNumber(projectedRuns, 1)} projected first-five runs. ` +
-            `Over ${formatPercent(overPct, 1)} / under ${formatPercent(underPct, 1)}; line source: ${lineSource}.`,
+            `Over ${formatPercent(overPct, 1)} / under ${formatPercent(underPct, 1)}; line source: ${lineSource}.` +
+            (first5Lean?.chaosGate?.warning ? ` Chaos gate warning: ${(first5Lean.chaosGate.notes || []).slice(0, 2).join('; ')}.` : ''),
           tags: [
             'First 5 O/U',
             hasMarket ? `EV ${formatSignedNumber(evCents, 1)}c` : 'Need line',
+            first5Lean?.chaosGate?.warning ? 'Chaos checked' : null,
             lineSource
-          ],
+          ].filter(Boolean),
           raw: {
             gameId: game.id,
             gameTitle: game.title,
@@ -3385,6 +3401,7 @@ function App() {
             hasMarket,
             lineSource,
             kalshiTicker: kalshiTotal?.ticker || null,
+            chaosGate: first5Lean?.chaosGate ?? null,
             confidenceSource: 'MLB-M0 projected first-five total run distribution'
           }
         }

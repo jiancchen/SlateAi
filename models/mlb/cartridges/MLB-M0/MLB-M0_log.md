@@ -163,3 +163,24 @@ Fixed:
 Remaining boundary:
 
 Direct MLB-M0 and MLB-RP36 file paths are still expected inside manifests, component inventory, and run snapshots. Those paths describe the cartridge contents; they are not operator entrypoints.
+
+## 2026-05-31 - Totals Chaos Gate
+
+May 31 full-game totals exposed a model-shape bug: the model had mistake-chaos, run-cluster, quiet-start, traffic-without-conversion, bullpen, park, and weather features, but the totals lane mostly promoted `projected runs - line`.
+
+Implemented:
+
+- Full-game, first-five, and late totals now pass through a totals chaos gate after the raw run projection is calculated.
+- Posted totals now fall back from sportsbook market rows to the lineup/weather board total when `odds.markets` is empty, so a game with a captured `8.5 Runs` context does not silently become `No market`.
+- Thin or medium unders are vetoed when mistake-chaos, one-bad-inning risk, run clustering, and weather carry make the downside too asymmetric.
+- Thin or medium overs are vetoed when quiet-first-five, dead-bat traffic, low conversion floor, and suppressing weather fight the projected run mean.
+- The gate stores `chaosGate` diagnostics on the total lean so the UI can show whether a row was chaos-checked or vetoed.
+- First-five value rows now skip chaos-vetoed totals and carry the chaos warning in row metadata.
+
+May 31 replay check:
+
+- Yankees @ Athletics: old `Under 9.5` becomes `Pass` because the Athletics carried high mistake-chaos and one-bad-inning risk into warm carry weather.
+- Royals @ Rangers: old under becomes `Pass` because the low total still sat inside a high one-bad-inning shape.
+- Phillies @ Dodgers: old under becomes `Pass` because run clustering plus wind out made the under too brittle.
+- Cubs @ Cardinals: old over becomes `Pass` because quiet-first-five and low conversion fought the run projection.
+- Diamondbacks @ Mariners still survives the gate; that miss looks more like projection/calibration error than the same chaos-gate miss.

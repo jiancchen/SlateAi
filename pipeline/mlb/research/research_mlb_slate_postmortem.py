@@ -14,8 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
 DEFAULT_DATE = "2026-05-23"
-DEFAULT_POSTMORTEM_OUT = ROOT / "development-docs" / "mlb" / "postmortems" / "may23-slate-postmortem-052326.md"
-DEFAULT_FOLLOWUP_OUT = ROOT / "development-docs" / "mlb" / "postmortems" / "may23-chaos-followups-052326.md"
+POSTMORTEM_ROOT = ROOT / "development-docs" / "mlb" / "postmortems"
 FULL_NAMES = {
     "Braves": "Atlanta Braves",
     "Orioles": "Baltimore Orioles",
@@ -109,6 +108,16 @@ def markdown_table(headers: list[str], rows: list[list[str]]) -> str:
     return "\n".join([header_line, divider_line, *body])
 
 
+def default_postmortem_paths(date: str) -> tuple[Path, Path]:
+    parsed = datetime.strptime(date, "%Y-%m-%d")
+    date_slug = f"{parsed.strftime('%b').lower()}{parsed.day}"
+    date_suffix = parsed.strftime("%m%d%y")
+    return (
+        POSTMORTEM_ROOT / f"{date_slug}-slate-postmortem-{date_suffix}.md",
+        POSTMORTEM_ROOT / f"{date_slug}-chaos-followups-{date_suffix}.md",
+    )
+
+
 def pct(numerator: int, denominator: int) -> str:
     if denominator == 0:
         return "0.0%"
@@ -176,6 +185,132 @@ def load_board_picks(prediction_date: str) -> list[dict]:
             }
         )
     return picks
+
+
+def load_published_mlb_games(prediction_date: str) -> list[dict]:
+    for summary_path in (
+        ROOT / "published-data" / "slates" / prediction_date / "summary.json",
+        ROOT / "web" / "public" / "data" / "slates" / prediction_date / "summary.json",
+    ):
+        if summary_path.exists():
+            return [
+                game
+                for game in load_json(summary_path).get("games", [])
+                if game.get("league") == "MLB"
+            ]
+    return []
+
+
+def number_or_none(value: object) -> float | None:
+    try:
+        if value is None or value == "":
+            return None
+        return float(value)
+    except (TypeError, ValueError):
+        return None
+
+
+def total_hit(lean: object, line: object, actual: object) -> bool | None:
+    line_value = number_or_none(line)
+    actual_value = number_or_none(actual)
+    lean_text = str(lean or "").casefold()
+    if line_value is None or actual_value is None or lean_text in ("", "pass"):
+        return None
+    if lean_text.startswith("over"):
+        return actual_value > line_value
+    if lean_text.startswith("under"):
+        return actual_value < line_value
+    return None
+
+
+def build_value_board_audit(prediction_date: str, side_rows: list[SideRow], settled_props: list[PropRow]) -> list[list[str]]:
+    games = load_published_mlb_games(prediction_date)
+    conn = get_connection()
+    side_backtests = {
+        str(row["game_id"]): row
+        for row in conn.execute(
+            """
+            SELECT
+              game_id,
+              hit_full_game,
+              hit_first5,
+              predicted_runs_final,
+              opponent_runs_final,
+              predicted_runs_first5,
+              opponent_runs_first5
+            FROM mlb_side_backtests
+            WHERE prediction_date = ?
+            """,
+            (prediction_date,),
+        ).fetchall()
+    }
+
+    value_ml_rows: list[bool] = []
+    full_total_rows: list[bool] = []
+    first5_total_rows: list[bool] = []
+    for game in games:
+        game_id = str(game.get("id") or "")
+        row = side_backtests.get(game_id)
+        if not row:
+            continue
+
+        analysis = game.get("analysis") or {}
+        participant = analysis.get("participant") or {}
+        confidence = number_or_none(analysis.get("confidence"))
+        market_pct = number_or_none(participant.get("impliedProbability"))
+        if market_pct is not None:
+            market_pct *= 100
+        if confidence is not None and market_pct is not None and confidence - market_pct >= 7:
+            value_ml_rows.append(bool(row["hit_full_game"]))
+
+        projection = analysis.get("mlbProjection") or {}
+        totals = projection.get("totals") or {}
+        actual_full = (number_or_none(row["predicted_runs_final"]) or 0) + (number_or_none(row["opponent_runs_final"]) or 0)
+        actual_first5 = (number_or_none(row["predicted_runs_first5"]) or 0) + (number_or_none(row["opponent_runs_first5"]) or 0)
+
+        full_lean = (totals.get("fullGame") or {}).get("lean")
+        full_result = total_hit(full_lean, projection.get("postedTotal"), actual_full)
+        if full_result is not None:
+            full_total_rows.append(full_result)
+
+        first5_lean = (totals.get("first5") or {}).get("lean")
+        first5_result = total_hit(first5_lean, (totals.get("derivedFirst5TotalLine")), actual_first5)
+        if first5_result is not None:
+            first5_total_rows.append(first5_result)
+
+    hr_row = conn.execute(
+        """
+        SELECT COUNT(*) AS total, SUM(hit_flag) AS hits
+        FROM mlb_home_run_backtests
+        WHERE prediction_date = ?
+        """,
+        (prediction_date,),
+    ).fetchone()
+    hr_total = int(hr_row["total"] or 0) if hr_row else 0
+    hr_hits = int(hr_row["hits"] or 0) if hr_row else 0
+
+    batting_impact_rows = [
+        row
+        for row in settled_props
+        if row.prop_type in ("singles", "walks", "rbi", "hits", "runs", "hitRunRbi", "hitsRunsRbis")
+    ]
+    strikeout_rows = [row for row in settled_props if row.prop_type == "pitcherStrikeouts"]
+    total_base_rows = [row for row in settled_props if row.prop_type == "totalBases"]
+
+    def lane(label: str, hits: int, total: int, read: str) -> list[str]:
+        return [label, f"{hits}/{total}", pct(hits, total), read]
+
+    return [
+        lane("ML value", sum(value_ml_rows), len(value_ml_rows), "Only one true side-price value row; it hit, but the board did not have enough real ML volume."),
+        lane("F5 ML", sum(1 for row in side_rows if row.first5_hit), len(side_rows), "Decent directionally, but several misses were dead early."),
+        lane("Full-game totals", sum(full_total_rows), len(full_total_rows), "Broken for the slate; should have been hidden or research-only."),
+        lane("F5 totals", sum(first5_total_rows), len(first5_total_rows), "Also weak; do not surface as value until recalibrated."),
+        lane("First inning", sum(1 for row in side_rows if row.yrfi_hit), len(side_rows), "Timing model lagged the dead-early shape."),
+        lane("Total bases", sum(1 for row in total_base_rows if row.hit_flag), len(total_base_rows), "Best prop lane, but too concentrated in the same fragile over market."),
+        lane("Strikeout O/U", sum(1 for row in strikeout_rows if row.hit_flag), len(strikeout_rows), "Grading now respects unders; viable, but not a blind core lane."),
+        lane("Batting impact", sum(1 for row in batting_impact_rows if row.hit_flag), len(batting_impact_rows), "Singles/RBI/walks were the biggest live-board trap."),
+        lane("HR", hr_hits, hr_total, "Still lottery/research-only at this hit rate."),
+    ]
 
 
 def build_side_rows(prediction_date: str) -> tuple[list[SideRow], dict[str, int | list[str] | bool]]:
@@ -400,6 +535,7 @@ def build_postmortem_markdown(prediction_date: str, side_rows: list[SideRow], se
     for prop_type in sorted({row.prop_type for row in settled_props}):
         bucket = [row for row in settled_props if row.prop_type == prop_type]
         prop_type_counter[prop_type] = (sum(1 for row in bucket if row.hit_flag), len(bucket))
+    value_board_audit = build_value_board_audit(prediction_date, side_rows, settled_props)
 
     team_scoreless_first3 = get_connection().execute(
         """
@@ -498,6 +634,11 @@ def build_postmortem_markdown(prediction_date: str, side_rows: list[SideRow], se
 - Only `{starter_crack_count}/28` team rows finished as `starter_crack_loss`
 
 This was a dead-early, low-conversion slate. The board still spent too much energy on paper side strength and too little on whether the pick would actually score before the game script got away from it.
+
+## Full value-board audit
+{markdown_table(['Lane', 'Hit', 'Rate', 'Read'], value_board_audit)}
+
+The full value board was worse than the headline side record. The side-price lane had one real value row and it hit, but the board also exposed totals, first-inning, HR, and batting-impact rows that were not ready to be bet. The next board needs to promote only lanes with settled bucket support and mark the rest as research/watch.
 
 ## Side board by game
 {side_table}
@@ -681,23 +822,26 @@ Those are still the good parts. The failure was not the data collection. The fai
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Write an MLB slate postmortem from the finished warehouse data.")
     parser.add_argument("--date", default=DEFAULT_DATE)
-    parser.add_argument("--postmortem-out", default=str(DEFAULT_POSTMORTEM_OUT))
-    parser.add_argument("--followup-out", default=str(DEFAULT_FOLLOWUP_OUT))
+    parser.add_argument("--postmortem-out", default=None)
+    parser.add_argument("--followup-out", default=None)
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
+    default_postmortem_out, default_followup_out = default_postmortem_paths(args.date)
+    postmortem_out = Path(args.postmortem_out) if args.postmortem_out else default_postmortem_out
+    followup_out = Path(args.followup_out) if args.followup_out else default_followup_out
     side_rows, infra = build_side_rows(args.date)
     settled_props, top_props = load_prop_rows(args.date)
 
     postmortem = build_postmortem_markdown(args.date, side_rows, settled_props, top_props, infra)
     followup = build_followup_markdown(args.date, side_rows, infra)
 
-    Path(args.postmortem_out).write_text(postmortem)
-    Path(args.followup_out).write_text(followup)
-    print(f"Wrote {args.postmortem_out}")
-    print(f"Wrote {args.followup_out}")
+    postmortem_out.write_text(postmortem)
+    followup_out.write_text(followup)
+    print(f"Wrote {postmortem_out}")
+    print(f"Wrote {followup_out}")
 
 
 if __name__ == "__main__":
