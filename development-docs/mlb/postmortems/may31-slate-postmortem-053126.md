@@ -31,6 +31,8 @@ This was a dead-early, low-conversion slate. The board still spent too much ener
 | Batting impact | 3/12 | 25.0% | Singles/RBI/walks were the biggest live-board trap. |
 | HR | 2/12 | 16.7% | Still lottery/research-only at this hit rate. |
 
+Correction for M2 benchmarking: the May 31 O/U benchmark set is `5/5` and is now stored separately in `models/mlb/cartridges/MLB-M2/benchmarks/2026-06-01-current-baseline.json`. The value-board total rows above are the older exposed totals audit and should not be collapsed with the O/U benchmark target.
+
 The full value board was worse than the headline side record. The side-price lane had one real value row and it hit, but the board also exposed totals, first-inning, HR, and batting-impact rows that were not ready to be bet. The next board needs to promote only lanes with settled bucket support and mark the rest as research/watch.
 
 ## Side board by game

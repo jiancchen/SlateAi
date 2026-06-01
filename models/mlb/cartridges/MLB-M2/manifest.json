@@ -38,6 +38,7 @@
   "modelLog": "models/mlb/cartridges/MLB-M2/MLB-M2_log.md",
   "performanceIndex": "models/mlb/cartridges/MLB-M2/performance_index.json",
   "followups": "models/mlb/cartridges/MLB-M2/followups.md",
+  "currentBenchmark": "models/mlb/cartridges/MLB-M2/benchmarks/2026-06-01-current-baseline.json",
   "sourceFiles": [
     {
       "role": "pregame-runner",
@@ -82,6 +83,14 @@
     {
       "role": "performance-index",
       "path": "models/mlb/cartridges/MLB-M2/performance_index.json"
+    },
+    {
+      "role": "current-benchmark",
+      "path": "models/mlb/cartridges/MLB-M2/benchmarks/2026-06-01-current-baseline.json"
+    },
+    {
+      "role": "benchmark-readme",
+      "path": "models/mlb/cartridges/MLB-M2/benchmarks/README.md"
     },
     {
       "role": "followup-index",

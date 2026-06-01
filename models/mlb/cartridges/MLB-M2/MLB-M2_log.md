@@ -117,3 +117,31 @@ Rule sweeps surfaced concrete sublanes worth future testing:
 Current interpretation:
 
 M2 has a useful lane-separation signal, especially for deciding when a side should become F5/timing or total shape. It is not ready to activate as a full automatic betting engine. The next proof is to store M2 categories in daily run artifacts and settle them date by date.
+
+## 2026-06-01 - Current Benchmark Locked
+
+Locked the current M2 baseline in:
+
+- `models/mlb/cartridges/MLB-M2/benchmarks/2026-06-01-current-baseline.json`
+- `models/mlb/cartridges/MLB-M2/benchmarks/README.md`
+
+This is the target future M2 variants must beat:
+
+- Baseline full-game side: 59.0% on 212 rows.
+- M2 category lane hit: 62.6% on 195 graded lane rows.
+- M2 allowed-side bucket: 67.5% on 40 rows.
+- Starter-to-bullpen flip as F5 lane: 68.6% on 35 rows.
+- Dead-zone timing/F5 lane: 70.6% on 17 rows.
+
+May 31 is now the stress-slate holdout benchmark:
+
+- Training data allowed through 2026-05-30.
+- Holdout date 2026-05-31.
+- Full-game side: 11/15, 73.3%.
+- First-five side: 9/15, 60.0%.
+- M2 category lane: 11/15, 73.3%.
+- O/U benchmark set: 5/5, 100.0%.
+
+Future M2 iterations should not claim a clean May 31 improvement if they used May 31 outcomes during training or rule selection.
+
+Note: the May 31 O/U benchmark is separate from the old value-board totals audit rows. Keep those metrics separate during future model comparisons.

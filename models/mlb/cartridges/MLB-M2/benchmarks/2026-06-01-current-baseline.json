@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "modelId": "MLB-M2",
+  "benchmarkId": "mlb-m2-current-baseline-2026-06-01",
+  "createdAt": "2026-06-01",
+  "status": "locked-current-baseline",
+  "purpose": "Current MLB-M2 game-shape benchmark that future M2 variants must beat. Future M2 training may use data through 2026-05-30, then must score 2026-05-31 as a holdout.",
+  "sourceArtifacts": {
+    "markdownReport": "models/mlb/cartridges/MLB-M2/reports/game-shape-backtest-2026-05-10-to-2026-05-31.md",
+    "jsonReport": "data-private/reports/mlb-m2-game-shape-backtest-2026-05-10-to-2026-05-31.json",
+    "modelCode": "models/mlb/cartridges/MLB-M2/lib/mlb-game-shape.js"
+  },
+  "overallBaseline": {
+    "dateRange": {
+      "start": "2026-05-10",
+      "end": "2026-05-31"
+    },
+    "settledRows": 212,
+    "baselineFullGameSide": {
+      "hitRate": 0.59,
+      "label": "59.0%",
+      "rows": 212
+    },
+    "m2CategoryLane": {
+      "hitRate": 0.6256,
+      "label": "62.6%",
+      "gradedRows": 195
+    },
+    "m2AllowedSideBucket": {
+      "hitRate": 0.675,
+      "label": "67.5%",
+      "rows": 40
+    },
+    "starterToBullpenFlipAsF5": {
+      "hitRate": 0.6857,
+      "label": "68.6%",
+      "rows": 35
+    },
+    "deadZoneTimingF5Lane": {
+      "hitRate": 0.7059,
+      "label": "70.6%",
+      "rows": 17
+    }
+  },
+  "may31HoldoutBenchmark": {
+    "holdoutDate": "2026-05-31",
+    "allowedTrainingDataThrough": "2026-05-30",
+    "rows": 15,
+    "baselineFullGameSide": {
+      "hitRate": 0.7333,
+      "label": "73.3%",
+      "record": "11/15"
+    },
+    "baselineFirstFiveSide": {
+      "hitRate": 0.6,
+      "label": "60.0%",
+      "record": "9/15"
+    },
+    "m2CategoryLane": {
+      "hitRate": 0.7333,
+      "label": "73.3%",
+      "record": "11/15"
+    },
+    "overUnderBenchmark": {
+      "hitRate": 1.0,
+      "label": "100.0%",
+      "record": "5/5",
+      "scope": "May 31 O/U benchmark set",
+      "note": "User-corrected benchmark. This is tracked separately from the older value-board totals audit rows."
+    },
+    "dominantCategories": "Weather-carry chaos 5, Crooked-inning game 4, Early-pressure side 2",
+    "avoidSaved": 2,
+    "stressSlateUse": "This is the primary May 31 stress-slate benchmark. Future M2 variants should score this date without using May 31 outcomes in training or rule selection."
+  },
+  "benchmarkRules": [
+    "Do not overwrite this file when experimenting. Add a new benchmark artifact for any new model or rule version.",
+    "Future M2 variants may train on data through 2026-05-30, but May 31 must be treated as holdout.",
+    "A candidate should beat the overall M2 category lane hit rate or the May 31 holdout lane hit rate without worsening the main failure categories.",
+    "Moneyline-only improvement is not enough. M2 must improve market expression: side, F5, O/U, total, first inning, live-only, or no-pregame-ML.",
+    "The May 31 O/U holdout target is 5/5. Any M2 successor that claims better game-shape modeling must preserve or beat that O/U benchmark.",
+    "Any use of May 31 outcomes during rule design must be called retrospective and cannot count as a clean holdout win."
+  ]
+}

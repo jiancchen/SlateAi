@@ -73,6 +73,21 @@ This backtest must report:
 
 Do not promote a game-shape branch because it sounds smarter. Promote only if the category selects a better market expression than the baseline side model on settled rows.
 
+Current locked MLB-M2 benchmark:
+
+- `models/mlb/cartridges/MLB-M2/benchmarks/2026-06-01-current-baseline.json`
+
+Any M2 successor must compare against that file. For the May 31 stress-slate test, the candidate may train on data through 2026-05-30, then must score 2026-05-31 as holdout.
+
+May 31 holdout targets include:
+
+- full-game side: 11/15
+- first-five side: 9/15
+- M2 category lane: 11/15
+- O/U benchmark set: 5/5
+
+Keep the O/U benchmark separate from the old value-board totals audit rows.
+
 ## Required Gates
 
 - Snapshot verifier passes for every benchmark date.

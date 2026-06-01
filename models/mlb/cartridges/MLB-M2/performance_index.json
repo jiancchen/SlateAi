@@ -6,6 +6,27 @@
   "basedOn": "MLB-M0",
   "status": "draft",
   "currentBaselineDate": "2026-05-31",
+  "currentBenchmark": {
+    "benchmarkId": "mlb-m2-current-baseline-2026-06-01",
+    "path": "models/mlb/cartridges/MLB-M2/benchmarks/2026-06-01-current-baseline.json",
+    "overall": {
+      "baselineFullGameSideHitRate": 0.59,
+      "m2CategoryLaneHitRate": 0.6256,
+      "m2AllowedSideHitRate": 0.675,
+      "starterToBullpenFlipF5HitRate": 0.6857,
+      "deadZoneTimingF5HitRate": 0.7059
+    },
+    "may31Holdout": {
+      "allowedTrainingDataThrough": "2026-05-30",
+      "holdoutDate": "2026-05-31",
+      "baselineFullGameSideHitRate": 0.7333,
+      "baselineFirstFiveSideHitRate": 0.6,
+      "m2CategoryLaneHitRate": 0.7333,
+      "overUnderHitRate": 1.0,
+      "overUnderRecord": "5/5",
+      "rows": 15
+    }
+  },
   "runs": [
     {
       "id": "mlb-m2-game-shape-backtest-2026-05-10-to-2026-05-31",
