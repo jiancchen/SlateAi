@@ -1,0 +1,145 @@
+{
+  "comparison": {
+    "baselineFullGameSide": {
+      "hitRate": 0.59,
+      "label": "59.0%",
+      "rows": 212
+    },
+    "baselineM2CategoryLane": {
+      "gradedRows": 195,
+      "hitRate": 0.6256,
+      "label": "62.6%"
+    },
+    "baselineMay31CategoryLane": {
+      "hitRate": 0.7333,
+      "label": "73.3%",
+      "record": "11/15"
+    },
+    "baselineMay31OU": {
+      "hitRate": 1.0,
+      "label": "100.0%",
+      "note": "User-corrected benchmark. This is tracked separately from the older value-board totals audit rows.",
+      "plays": [
+        {
+          "actualTotal": 25,
+          "category": "Weather-carry chaos",
+          "gameTitle": "Giants @ Rockies",
+          "m2Expression": "Totals / HR cluster before side",
+          "ouRead": "Over / high-total shape",
+          "phasePath": "jumped_early_hold",
+          "postedFullGameRead": "Hold 11",
+          "realityGapScore": 69.7,
+          "result": "hit"
+        },
+        {
+          "actualTotal": 11,
+          "category": "Weather-carry chaos",
+          "gameTitle": "Marlins @ Mets",
+          "m2Expression": "Totals / HR cluster before side",
+          "ouRead": "Over / avoid raw under",
+          "phasePath": "dead_early_loss",
+          "postedFullGameRead": "Under 7.5",
+          "realityGapScore": 70.1,
+          "result": "hit"
+        },
+        {
+          "actualTotal": 10,
+          "category": "Weather-carry chaos",
+          "gameTitle": "Phillies @ Dodgers",
+          "m2Expression": "Totals / HR cluster before side",
+          "ouRead": "Over / avoid chaos-vetoed under",
+          "phasePath": "starter_carried",
+          "postedFullGameRead": "Hold 9; original Under 9 vetoed",
+          "realityGapScore": 58.9,
+          "result": "hit"
+        },
+        {
+          "actualTotal": 12,
+          "category": "Weather-carry chaos",
+          "gameTitle": "Twins @ Pirates",
+          "m2Expression": "Totals / HR cluster before side",
+          "ouRead": "Over / high-total shape",
+          "phasePath": "starter_carried",
+          "postedFullGameRead": "Hold 7.5",
+          "realityGapScore": 64.1,
+          "result": "hit"
+        },
+        {
+          "actualTotal": 21,
+          "category": "Weather-carry chaos",
+          "gameTitle": "Yankees @ Athletics",
+          "m2Expression": "Totals / HR cluster before side",
+          "ouRead": "Over / avoid chaos-vetoed under",
+          "phasePath": "late_comeback",
+          "postedFullGameRead": "Hold 10; original Under 10 vetoed",
+          "realityGapScore": 71.9,
+          "result": "hit"
+        }
+      ],
+      "record": "5/5",
+      "scope": "May 31 O/U benchmark set"
+    },
+    "candidatePitcherKernelMay31": {
+      "hit_rate": 0.667,
+      "hits": 4,
+      "lane": "pitcher_batter_kernel",
+      "rows": 6
+    },
+    "candidatePlayerMay31": {
+      "hitsPerPa": {
+        "hit_rate": 0.593,
+        "hits": 182,
+        "metric": "hits_per_pa",
+        "rows": 307
+      },
+      "homeRunRate": {
+        "hit_rate": 0.847,
+        "hits": 260,
+        "metric": "home_run_rate",
+        "rows": 307
+      },
+      "strikeoutRate": {
+        "hit_rate": 0.599,
+        "hits": 184,
+        "metric": "strikeout_rate",
+        "rows": 307
+      },
+      "totalBasesPerPa": {
+        "hit_rate": 0.583,
+        "hits": 179,
+        "metric": "total_bases_per_pa",
+        "rows": 307
+      },
+      "walkRate": {
+        "hit_rate": 0.684,
+        "hits": 210,
+        "metric": "walk_rate",
+        "rows": 307
+      }
+    },
+    "candidateStateFormulaMay31": {
+      "hit_rate": 0.2,
+      "hits": 24,
+      "lane": "state_formula",
+      "rows": 120
+    }
+  },
+  "experiment": "m2_model_comparison_report",
+  "modelId": "MLB-M2",
+  "range": {
+    "end": "2026-05-31",
+    "holdout": "2026-05-31",
+    "start": "2026-05-23"
+  },
+  "reads": [
+    "State formulas lose badly to the locked May 31 category baseline and stay research-only.",
+    "Pitcher-batter kernel top-collapse is the only promising new pocket, but it is tiny-sample and not a full-board model.",
+    "Player identity rows are prop/triage signals, not comparable to full-game side accuracy.",
+    "The current candidate stack does not replace the locked O/U stress benchmark; it only adds stored diagnostic rows."
+  ],
+  "schemaVersion": 1,
+  "sourceArtifacts": {
+    "backtest": "data-private/reports/mlb-m2-research-backtest-report-2026-05-23-to-2026-05-31.json",
+    "baseline": "models/mlb/cartridges/MLB-M2/benchmarks/2026-06-01-current-baseline.json"
+  }
+}

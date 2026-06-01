@@ -133,6 +133,7 @@
     "data:research:mlb-m2-player-identity": "python3 models/mlb/cartridges/MLB-M2/research/player_identity_rows_report.py",
     "data:research:mlb-m2-pitcher-batter-kernel": "python3 models/mlb/cartridges/MLB-M2/research/pitcher_batter_kernel_report.py",
     "data:research:mlb-m2-backtests": "python3 models/mlb/cartridges/MLB-M2/research/m2_research_backtest_report.py",
+    "data:research:mlb-m2-model-comparison": "python3 models/mlb/cartridges/MLB-M2/research/m2_model_comparison_report.py",
     "data:train:mlb-market-models": "python3 pipeline/mlb/research/train_mlb_market_models.py",
     "data:generate:tennis-clay-context": "node pipeline/tennis/publish/generate-clay-context.mjs",
     "data:fetch:tennis-rankings": "node pipeline/tennis/fetchers/fetch-tennis-rankings-espn.mjs",

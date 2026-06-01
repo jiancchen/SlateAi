@@ -1,6 +1,6 @@
 # MLB-M2 Build Run Plan
 
-Status: Phase 6 in progress
+Status: Phase 7 in progress
 Owner model: MLB-M2
 Created: 2026-06-01
 
@@ -55,7 +55,7 @@ Do not claim a clean M2 improvement if May 31 outcomes were used for training, f
 | 4 | Player Identity Curves | In progress | Player priors, deviation, and distribution rows |
 | 5 | Pitcher-Batter Kernel | In progress | Pitch-mix matchup rows |
 | 6 | Backtest Harness | In progress | Bucketed accuracy/ROI/story reports |
-| 7 | Model Comparison | Pending | Projection vs formula vs learned model |
+| 7 | Model Comparison | In progress | Projection vs formula vs learned model |
 | 8 | Value Board Rebuild | Pending | Model-owned value rows only |
 | 9 | UI Surfaces | Pending | Game-shape, player identity, and market explanation views |
 | 10 | Promotion Gates | Pending | Activation checklist for M2 lanes |
@@ -386,8 +386,10 @@ Models:
 
 Checklist:
 
+- [x] Add first baseline-vs-candidate comparison report.
+- [x] Score May 31 holdout against stored research rows.
+- [x] Record no-promotion decision for current candidate stack.
 - [ ] Compare on May 23-May 30 walk-forward.
-- [ ] Score May 31 holdout.
 - [ ] Compare full-game side, F5 side, full O/U, F5 O/U, story bucket.
 - [ ] Record where formula beats learned model.
 - [ ] Record where learned model beats formula.
@@ -395,6 +397,24 @@ Checklist:
 Exit criteria:
 
 - No learned model can influence the board unless it beats or explains the formula layer walk-forward.
+
+Current artifacts:
+
+- `npm run data:research:mlb-m2-model-comparison -- --start YYYY-MM-DD --end YYYY-MM-DD --holdout YYYY-MM-DD`
+- `models/mlb/cartridges/MLB-M2/research/m2_model_comparison_report.py`
+- `models/mlb/cartridges/MLB-M2/reports/m2-model-comparison-report-2026-05-23-to-2026-05-31.md`
+- `data-private/reports/mlb-m2-model-comparison-report-2026-05-23-to-2026-05-31.json`
+
+Current read:
+
+- Locked baseline remains better: May 31 category lane 11/15, 73.3%; May 31 O/U stress set 5/5, 100.0%.
+- Candidate state formulas: 24/120, 20.0% on May 31.
+- Candidate pitcher-batter top-collapse: 4/6, 66.7% on May 31, interesting but tiny sample.
+- Candidate player identity rows are prop/triage diagnostics and not comparable to side accuracy.
+
+Decision:
+
+No replacement model is promoted. Keep the locked baseline active; use the new rows as diagnostics for the next candidate.
 
 ## Phase 8: Value Board Rebuild
 

@@ -385,6 +385,32 @@ Interpretation:
 
 The harness is now more important than the first scores. M2 can store bucket correctness by lane and holdout date. The next promotion work is walk-forward model comparison with line/price buckets and ROI, then value-board rows must be filtered from these stored model-owned outputs.
 
+## 2026-06-01 - Baseline vs Candidate Comparison
+
+Added the first MLB-M2 model comparison report.
+
+Implemented:
+
+- `npm run data:research:mlb-m2-model-comparison`.
+- `models/mlb/cartridges/MLB-M2/research/m2_model_comparison_report.py`.
+- `models/mlb/cartridges/MLB-M2/reports/m2-model-comparison-report-2026-05-23-to-2026-05-31.md`.
+- `data-private/reports/mlb-m2-model-comparison-report-2026-05-23-to-2026-05-31.json`.
+
+Comparison read:
+
+- Locked baseline full-game side: 59.0% on 212 rows.
+- Locked baseline category lane: 62.6% on 195 rows.
+- Locked May 31 category lane: 11/15, 73.3%.
+- Locked May 31 O/U stress set: 5/5, 100.0%.
+- Candidate state formulas May 31: 24/120, 20.0%.
+- Candidate pitcher-batter top-collapse May 31: 4/6, 66.7%.
+- Candidate player hits May 31: 182/307, 59.3%.
+- Candidate player total bases May 31: 179/307, 58.3%.
+
+Decision:
+
+No replacement model is promoted. The current candidate stack adds diagnostic warehouse rows, not a better active model. Keep the locked baseline active and use the new tables for the next candidate iteration.
+
 ## 2026-06-01 - Invented Vector Search
 
 Added a wider vector search to break the six radar axes into raw invented dimensions.
