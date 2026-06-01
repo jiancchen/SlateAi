@@ -1,0 +1,266 @@
+{
+  "generatedAt": "2026-06-01T21:41:12.125Z",
+  "predictionDate": "2026-06-01",
+  "picks": [
+    {
+      "predictionDate": "2026-06-01",
+      "gameId": "tigers-rays",
+      "gameTitle": "Tigers @ Rays",
+      "predictedTeam": "Tigers",
+      "predictedSide": "away",
+      "confidence": 52,
+      "modelEdge": 0,
+      "marketProbability": 0.41178845377472745,
+      "marketProbabilityLabel": "41.2%",
+      "pickIsMarketFavorite": false,
+      "pickIsMarketUnderdog": true,
+      "vetoCount": 2,
+      "vetoReasons": [
+        "deadEarlyRisk",
+        "quietFirst3FullGameRisk"
+      ],
+      "protectedMarketDogFlag": true,
+      "recommendedAction": "Hard pass",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 21.8,
+        "pickDeadBatTrafficRate": 0.4,
+        "pickTrafficNoConversionRate": 0,
+        "pickBullpenMistakeChaos": 55.2,
+        "oppBullpenMistakeChaos": 58.1,
+        "pickTeamRunClustering": 66.4,
+        "pickTeamMistakeChaos": 57.5,
+        "oppTeamMistakeChaos": 74.7
+      }
+    },
+    {
+      "predictionDate": "2026-06-01",
+      "gameId": "marlins-nationals",
+      "gameTitle": "Marlins @ Nationals",
+      "predictedTeam": "Nationals",
+      "predictedSide": "home",
+      "confidence": 52,
+      "modelEdge": 6.3,
+      "marketProbability": 0.5638948950049474,
+      "marketProbabilityLabel": "56.4%",
+      "pickIsMarketFavorite": true,
+      "pickIsMarketUnderdog": false,
+      "vetoCount": 1,
+      "vetoReasons": [
+        "quietFirst3FullGameRisk"
+      ],
+      "protectedMarketDogFlag": false,
+      "recommendedAction": "Pass",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 44.7,
+        "pickDeadBatTrafficRate": 0.4,
+        "pickTrafficNoConversionRate": 0,
+        "pickBullpenMistakeChaos": 51.4,
+        "oppBullpenMistakeChaos": 57.4,
+        "pickTeamRunClustering": 65,
+        "pickTeamMistakeChaos": 45.6,
+        "oppTeamMistakeChaos": 70.3
+      }
+    },
+    {
+      "predictionDate": "2026-06-01",
+      "gameId": "royals-reds",
+      "gameTitle": "Royals @ Reds",
+      "predictedTeam": "Reds",
+      "predictedSide": "home",
+      "confidence": 53,
+      "modelEdge": 1.9,
+      "marketProbability": 0.541693705386113,
+      "marketProbabilityLabel": "54.2%",
+      "pickIsMarketFavorite": true,
+      "pickIsMarketUnderdog": false,
+      "vetoCount": 1,
+      "vetoReasons": [
+        "deadEarlyRisk"
+      ],
+      "protectedMarketDogFlag": false,
+      "recommendedAction": "Pass",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 31.4,
+        "pickDeadBatTrafficRate": 0.3,
+        "pickTrafficNoConversionRate": 0.1,
+        "pickBullpenMistakeChaos": 41.1,
+        "oppBullpenMistakeChaos": 59.1,
+        "pickTeamRunClustering": 66.3,
+        "pickTeamMistakeChaos": 56.4,
+        "oppTeamMistakeChaos": 73.4
+      }
+    },
+    {
+      "predictionDate": "2026-06-01",
+      "gameId": "giants-brewers",
+      "gameTitle": "Giants @ Brewers",
+      "predictedTeam": "Brewers",
+      "predictedSide": "home",
+      "confidence": 52,
+      "modelEdge": 0,
+      "marketProbability": 0.574357192494788,
+      "marketProbabilityLabel": "57.4%",
+      "pickIsMarketFavorite": true,
+      "pickIsMarketUnderdog": false,
+      "vetoCount": 3,
+      "vetoReasons": [
+        "deadEarlyRisk",
+        "quietFirst3FullGameRisk",
+        "clusterBullpenTrap"
+      ],
+      "protectedMarketDogFlag": false,
+      "recommendedAction": "Hard pass",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 32.1,
+        "pickDeadBatTrafficRate": 0.3,
+        "pickTrafficNoConversionRate": 0,
+        "pickBullpenMistakeChaos": 45.5,
+        "oppBullpenMistakeChaos": 63.6,
+        "pickTeamRunClustering": 75.5,
+        "pickTeamMistakeChaos": 56.1,
+        "oppTeamMistakeChaos": 70.2
+      }
+    },
+    {
+      "predictionDate": "2026-06-01",
+      "gameId": "white-sox-twins",
+      "gameTitle": "White Sox @ Twins",
+      "predictedTeam": "White Sox",
+      "predictedSide": "away",
+      "confidence": 52,
+      "modelEdge": 11.2,
+      "marketProbability": 0.43572984749455335,
+      "marketProbabilityLabel": "43.6%",
+      "pickIsMarketFavorite": false,
+      "pickIsMarketUnderdog": true,
+      "vetoCount": 0,
+      "vetoReasons": [],
+      "protectedMarketDogFlag": true,
+      "recommendedAction": "Protected dog",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 65.5,
+        "pickDeadBatTrafficRate": 0,
+        "pickTrafficNoConversionRate": 0,
+        "pickBullpenMistakeChaos": 49,
+        "oppBullpenMistakeChaos": 46.9,
+        "pickTeamRunClustering": 75.5,
+        "pickTeamMistakeChaos": 48.1,
+        "oppTeamMistakeChaos": 68.1
+      }
+    },
+    {
+      "predictionDate": "2026-06-01",
+      "gameId": "rangers-cardinals",
+      "gameTitle": "Rangers @ Cardinals",
+      "predictedTeam": "Cardinals",
+      "predictedSide": "home",
+      "confidence": 52,
+      "modelEdge": 0,
+      "marketProbability": 0.4615384615384615,
+      "marketProbabilityLabel": "46.2%",
+      "pickIsMarketFavorite": false,
+      "pickIsMarketUnderdog": true,
+      "vetoCount": 2,
+      "vetoReasons": [
+        "deadEarlyRisk",
+        "quietFirst3FullGameRisk"
+      ],
+      "protectedMarketDogFlag": false,
+      "recommendedAction": "Hard pass",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 29.9,
+        "pickDeadBatTrafficRate": 0.3,
+        "pickTrafficNoConversionRate": 0,
+        "pickBullpenMistakeChaos": 50.7,
+        "oppBullpenMistakeChaos": 52,
+        "pickTeamRunClustering": 71.7,
+        "pickTeamMistakeChaos": 58.7,
+        "oppTeamMistakeChaos": 62.3
+      }
+    },
+    {
+      "predictionDate": "2026-06-01",
+      "gameId": "rockies-angels",
+      "gameTitle": "Rockies @ Angels",
+      "predictedTeam": "Angels",
+      "predictedSide": "home",
+      "confidence": 52,
+      "modelEdge": 10.9,
+      "marketProbability": 0.6365876193409301,
+      "marketProbabilityLabel": "63.7%",
+      "pickIsMarketFavorite": true,
+      "pickIsMarketUnderdog": false,
+      "vetoCount": 2,
+      "vetoReasons": [
+        "heavyFavoriteNoisyBullpen",
+        "clusterBullpenTrap"
+      ],
+      "protectedMarketDogFlag": false,
+      "recommendedAction": "Hard pass",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 57.2,
+        "pickDeadBatTrafficRate": 0.1,
+        "pickTrafficNoConversionRate": 0.1,
+        "pickBullpenMistakeChaos": 51,
+        "oppBullpenMistakeChaos": 68.2,
+        "pickTeamRunClustering": 72.3,
+        "pickTeamMistakeChaos": 53.8,
+        "oppTeamMistakeChaos": 72.1
+      }
+    },
+    {
+      "predictionDate": "2026-06-01",
+      "gameId": "dodgers-diamondbacks",
+      "gameTitle": "Dodgers @ Diamondbacks",
+      "predictedTeam": "Dodgers",
+      "predictedSide": "away",
+      "confidence": 59,
+      "modelEdge": 4.2,
+      "marketProbability": 0.5962732919254659,
+      "marketProbabilityLabel": "59.6%",
+      "pickIsMarketFavorite": true,
+      "pickIsMarketUnderdog": false,
+      "vetoCount": 0,
+      "vetoReasons": [],
+      "protectedMarketDogFlag": false,
+      "recommendedAction": "Eligible",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 68.5,
+        "pickDeadBatTrafficRate": 0,
+        "pickTrafficNoConversionRate": 0.1,
+        "pickBullpenMistakeChaos": 31.2,
+        "oppBullpenMistakeChaos": 36.2,
+        "pickTeamRunClustering": 72.2,
+        "pickTeamMistakeChaos": 51.8,
+        "oppTeamMistakeChaos": 49.8
+      }
+    },
+    {
+      "predictionDate": "2026-06-01",
+      "gameId": "mets-mariners",
+      "gameTitle": "Mets @ Mariners",
+      "predictedTeam": "Mariners",
+      "predictedSide": "home",
+      "confidence": 68,
+      "modelEdge": 7.7,
+      "marketProbability": 0.5450949367088608,
+      "marketProbabilityLabel": "54.5%",
+      "pickIsMarketFavorite": true,
+      "pickIsMarketUnderdog": false,
+      "vetoCount": 0,
+      "vetoReasons": [],
+      "protectedMarketDogFlag": false,
+      "recommendedAction": "Eligible",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 73.9,
+        "pickDeadBatTrafficRate": 0,
+        "pickTrafficNoConversionRate": 0.1,
+        "pickBullpenMistakeChaos": 38.2,
+        "oppBullpenMistakeChaos": 47.8,
+        "pickTeamRunClustering": 63.5,
+        "pickTeamMistakeChaos": 49.8,
+        "oppTeamMistakeChaos": 63.5
+      }
+    }
+  ]
+}

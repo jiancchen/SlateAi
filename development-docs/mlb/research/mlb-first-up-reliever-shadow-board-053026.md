@@ -10,9 +10,9 @@ Goal:
 
 Target slate:
 
-- date: `2026-05-31`
-- team-side shadow cards: `30`
-- reliever candidates scored: `276`
+- date: `2026-06-01`
+- team-side shadow cards: `18`
+- reliever candidates scored: `178`
 - conversion window: `8`
 - dependency window: `5`
 
@@ -32,33 +32,33 @@ Target slate:
 
 | Team | Opponent | Lead | Alt | Starter hook | Top-2 share |
 | --- | --- | --- | --- | --- | --- |
-| Braves | Reds | Dylan Dodd | Didier Fuentes | 0.0% | 45.6% |
-| Pirates | Twins | Justin Lawrence | Brandan Bidois | 0.0% | 40.3% |
-| Athletics | Yankees | José Suarez | Luis Medina | 0.0% | 38.1% |
-| White Sox | Tigers | Brandon Eisert | Tyler Davis | 0.0% | 36.8% |
-| Phillies | Dodgers | Jonathan Bowlan | Tanner Banks | 0.0% | 36.5% |
-| Giants | Rockies | Keaton Winn | Matt Gage | 0.0% | 36.5% |
-| Guardians | Red Sox | Colin Holderman | Tim Herrin | 0.0% | 36.3% |
-| Cubs | Cardinals | Ethan Roberts | Ryan Rolison | 0.0% | 35.0% |
-| Astros | Brewers | Nate Pearson | Bryan King | 0.0% | 34.9% |
-| Dodgers | Phillies | Edgardo Henriquez | Jonathan Hernández | 0.0% | 34.3% |
+| Angels | Rockies | José Fermin | Ryan Zeferjahn | 0.0% | 37.5% |
+| Rockies | Angels | Jaden Hill | Antonio Senzatela | 0.0% | 37.4% |
+| Giants | Brewers | Erik Miller | Matt Gage | 0.0% | 37.1% |
+| Marlins | Nationals | Michael Petersen | Andrew Nardi | 0.0% | 34.8% |
+| Diamondbacks | Dodgers | Taylor Clarke | Ryan Thompson | 0.0% | 34.5% |
+| Brewers | Giants | Shane Drohan | Grant Anderson | 0.0% | 33.8% |
+| Dodgers | Diamondbacks | Alex Vesia | Kyle Hurt | 0.0% | 32.6% |
+| Rangers | Cardinals | Cal Quantrill | Jakob Junis | 0.0% | 31.0% |
+| Mariners | Mets | Matt Brash | José A. Ferrer | 0.0% | 30.4% |
+| White Sox | Twins | Tyler Davis | Brandon Eisert | 0.0% | 28.4% |
 
 ## Top Shadow Features
 
-- `days_since_last_appearance` `0.028`
-- `quality_entry_order_avg_last10` `0.027`
-- `availability_score` `0.027`
+- `quality_entry_order_avg_last10` `0.028`
 - `first_reliever_likelihood` `0.027`
-- `fatigue_score` `0.024`
+- `availability_score` `0.027`
+- `days_since_last_appearance` `0.027`
+- `fatigue_score` `0.026`
 - `bridge_score` `0.017`
-- `avg_pitches_per_appearance` `0.017`
-- `quality_strikeouts_per_bf_last10` `0.017`
-- `quality_traffic_per_bf_last10` `0.016`
+- `quality_strikeouts_per_bf_last10` `0.016`
+- `avg_pitches_per_appearance` `0.016`
 - `quality_pitches_per_app_last10` `0.016`
+- `quality_traffic_per_bf_last10` `0.016`
 - `pitches_last3` `0.015`
-- `starter_prob_15` `0.015`
 - `starter_prob_12` `0.015`
-- `quality_strike_rate_last10` `0.014`
+- `starter_prob_15` `0.015`
+- `quality_strike_rate_last10` `0.015`
 
 ## Read
 

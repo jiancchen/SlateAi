@@ -1,0 +1,5591 @@
+{
+  "schemaVersion": 1,
+  "sport": "mlb",
+  "modelId": "MLB-M0",
+  "date": "2026-06-01",
+  "status": "golden-target",
+  "artifactSummary": {
+    "publicSummaryGames": 9,
+    "gameFiles": 9,
+    "sidePicks": 9,
+    "propPicks": 19,
+    "homeRunPicks": 12,
+    "relieverTeams": 18,
+    "lineupGames": 9
+  },
+  "games": [
+    {
+      "id": "dodgers-diamondbacks",
+      "gamePk": 825078,
+      "title": "Dodgers @ Diamondbacks",
+      "start": "6:40 PM PT",
+      "startMinutes": 1120,
+      "stage": "Evening MLB Board",
+      "tags": [
+        "MLB"
+      ],
+      "pick": "Dodgers",
+      "opponent": "Diamondbacks",
+      "confidence": 59,
+      "volatility": 92,
+      "recommendationScore": 38,
+      "tier": "Swingy",
+      "lean": "Model pick: Dodgers on lineup-vs-pitching fit and market price.",
+      "rationale": "Lineup-vs-pitching fit: Dodgers (Grade +6.24 | platoon 7 | starter arsenal 82 | bridge arsenal 66 | pressure 94) vs Diamondbacks (Grade -2.33 | platoon 5 | starter arsenal 88 | bridge arsenal 42 | pressure 41)",
+      "modelDesignation": "board-moneyline-v1.1",
+      "modelEdge": 4.2,
+      "marketProbability": 0.5963,
+      "participants": [
+        {
+          "role": "Away",
+          "name": "Dodgers",
+          "americanOdds": -160,
+          "impliedProbability": 0.6154
+        },
+        {
+          "role": "Home",
+          "name": "Diamondbacks",
+          "americanOdds": 140,
+          "impliedProbability": 0.4167
+        }
+      ],
+      "oddsMarkets": [
+        {
+          "label": "Spread",
+          "value": "-1.5 +102 / +1.5 -120"
+        },
+        {
+          "label": "Total",
+          "value": "o8.5 -115 / u8.5 even"
+        },
+        {
+          "label": "Moneyline",
+          "value": "Dodgers -160 / Diamondbacks +140"
+        }
+      ],
+      "relieverShadowContext": {
+        "away": {
+          "teamName": "Dodgers",
+          "modelTag": "E36 shadow",
+          "starterHookRiskPct": 0,
+          "topTwoSharePct": 32.6,
+          "remainingTop3AvailabilityAvg": 70.5,
+          "remainingTop3BridgeScoreAvg": 64.9,
+          "remainingTop3ExpectedOutsAvg": 2.33,
+          "lead": {
+            "pitcherId": 681911,
+            "name": "Alex Vesia",
+            "role": "middle",
+            "shadowSharePct": 17.2,
+            "firstRelieverLikelihood": 90.5,
+            "availabilityScore": 59.1,
+            "bridgeScore": 86.9,
+            "expectedOuts": 2.1,
+            "reasonTags": [
+              "first-five wildness"
+            ]
+          },
+          "alternate": {
+            "pitcherId": 669165,
+            "name": "Kyle Hurt",
+            "role": "middle",
+            "shadowSharePct": 15.4,
+            "firstRelieverLikelihood": 63.9,
+            "availabilityScore": 76.2,
+            "bridgeScore": 67.2,
+            "expectedOuts": 3,
+            "reasonTags": []
+          },
+          "top3": [
+            {
+              "pitcherId": 681911,
+              "name": "Alex Vesia",
+              "role": "middle",
+              "shadowSharePct": 17.2,
+              "firstRelieverLikelihood": 90.5,
+              "availabilityScore": 59.1,
+              "bridgeScore": 86.9,
+              "expectedOuts": 2.1,
+              "reasonTags": [
+                "first-five wildness"
+              ]
+            },
+            {
+              "pitcherId": 669165,
+              "name": "Kyle Hurt",
+              "role": "middle",
+              "shadowSharePct": 15.4,
+              "firstRelieverLikelihood": 63.9,
+              "availabilityScore": 76.2,
+              "bridgeScore": 67.2,
+              "expectedOuts": 3,
+              "reasonTags": []
+            },
+            {
+              "pitcherId": 595014,
+              "name": "Blake Treinen",
+              "role": "late",
+              "shadowSharePct": 14.2,
+              "firstRelieverLikelihood": 42.1,
+              "availabilityScore": 76.2,
+              "bridgeScore": 40.7,
+              "expectedOuts": 2.6,
+              "reasonTags": [
+                "first-five wildness"
+              ]
+            }
+          ],
+          "summaryLine": "Alex Vesia leads the shadow board; Kyle Hurt is the main alt with 32.6% of the shadow share."
+        },
+        "home": {
+          "teamName": "Diamondbacks",
+          "modelTag": "E36 shadow",
+          "starterHookRiskPct": 0,
+          "topTwoSharePct": 34.5,
+          "remainingTop3AvailabilityAvg": 63.1,
+          "remainingTop3BridgeScoreAvg": 87.5,
+          "remainingTop3ExpectedOutsAvg": 3.64,
+          "lead": {
+            "pitcherId": 664199,
+            "name": "Taylor Clarke",
+            "role": "middle",
+            "shadowSharePct": 18.7,
+            "firstRelieverLikelihood": 67.7,
+            "availabilityScore": 58.4,
+            "bridgeScore": 72.5,
+            "expectedOuts": 2.3,
+            "reasonTags": []
+          },
+          "alternate": {
+            "pitcherId": 657044,
+            "name": "Ryan Thompson",
+            "role": "middle",
+            "shadowSharePct": 15.8,
+            "firstRelieverLikelihood": 96.3,
+            "availabilityScore": 66.8,
+            "bridgeScore": 95,
+            "expectedOuts": 2.7,
+            "reasonTags": []
+          },
+          "top3": [
+            {
+              "pitcherId": 664199,
+              "name": "Taylor Clarke",
+              "role": "middle",
+              "shadowSharePct": 18.7,
+              "firstRelieverLikelihood": 67.7,
+              "availabilityScore": 58.4,
+              "bridgeScore": 72.5,
+              "expectedOuts": 2.3,
+              "reasonTags": []
+            },
+            {
+              "pitcherId": 657044,
+              "name": "Ryan Thompson",
+              "role": "middle",
+              "shadowSharePct": 15.8,
+              "firstRelieverLikelihood": 96.3,
+              "availabilityScore": 66.8,
+              "bridgeScore": 95,
+              "expectedOuts": 2.7,
+              "reasonTags": []
+            },
+            {
+              "pitcherId": 694297,
+              "name": "Brandon Pfaadt",
+              "role": "bridge",
+              "shadowSharePct": 15.3,
+              "firstRelieverLikelihood": 86,
+              "availabilityScore": 64,
+              "bridgeScore": 95,
+              "expectedOuts": 6.78,
+              "reasonTags": []
+            }
+          ],
+          "summaryLine": "Taylor Clarke leads the shadow board; Ryan Thompson is the main alt with 34.5% of the shadow share."
+        }
+      },
+      "lineupContext": {
+        "Dodgers": {
+          "averageMatchupGrade": 6.24,
+          "trackedBatters": 9,
+          "starterThreatCount": 7,
+          "contactCount": 5,
+          "powerCount": 3,
+          "platoonCount": 7,
+          "pitchTypeEdgeCount": 4,
+          "starterPressureIndex": 94,
+          "overallPressureIndex": 94,
+          "topThirdScore": 94,
+          "depthScore": 67.8
+        },
+        "Diamondbacks": {
+          "averageMatchupGrade": -2.33,
+          "trackedBatters": 8,
+          "starterThreatCount": 3,
+          "contactCount": 4,
+          "powerCount": 1,
+          "platoonCount": 5,
+          "pitchTypeEdgeCount": 5,
+          "starterPressureIndex": 41.1,
+          "overallPressureIndex": 39.7,
+          "topThirdScore": 50.5,
+          "depthScore": 19.3
+        }
+      },
+      "teamState": {
+        "away": {
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 1,
+          "winPctLast5": 0.8,
+          "runDiffLast5": 4.2,
+          "bullpenFlipLossCountLast5": 1,
+          "snapbackPressureIndex": 18,
+          "heatRegressionIndex": 57.68,
+          "formPressureIndex": 46.96
+        },
+        "home": {
+          "previousResult": "loss",
+          "streakDirection": "L",
+          "streakLength": 3,
+          "winPctLast5": 0.4,
+          "runDiffLast5": -0.6,
+          "bullpenFlipLossCountLast5": 0,
+          "snapbackPressureIndex": 61.84,
+          "heatRegressionIndex": 14,
+          "formPressureIndex": 45.83
+        }
+      }
+    },
+    {
+      "id": "giants-brewers",
+      "gamePk": 823781,
+      "title": "Giants @ Brewers",
+      "start": "4:40 PM PT",
+      "startMinutes": 1000,
+      "stage": "Evening MLB Board",
+      "tags": [
+        "MLB"
+      ],
+      "pick": "Brewers",
+      "opponent": "Giants",
+      "confidence": 52,
+      "volatility": 92,
+      "recommendationScore": 33,
+      "tier": "Pass",
+      "lean": "Model pick: Brewers on standings profile and market price.",
+      "rationale": "Standings profile: Brewers (35-21, division leader, +74 RD) vs Giants (23-36, 4th in division, -48 RD)",
+      "modelDesignation": "board-moneyline-v1.1",
+      "modelEdge": 0,
+      "marketProbability": 0.5744,
+      "participants": [
+        {
+          "role": "Away",
+          "name": "Giants",
+          "americanOdds": 128,
+          "impliedProbability": 0.4386
+        },
+        {
+          "role": "Home",
+          "name": "Brewers",
+          "americanOdds": -145,
+          "impliedProbability": 0.5918
+        }
+      ],
+      "oddsMarkets": [
+        {
+          "label": "Spread",
+          "value": "+1.5 -180 / -1.5 +150"
+        },
+        {
+          "label": "Total",
+          "value": "o7.5 +105 / u7.5 -120"
+        },
+        {
+          "label": "Moneyline",
+          "value": "Giants +128 / Brewers -145"
+        }
+      ],
+      "relieverShadowContext": {
+        "away": {
+          "teamName": "Giants",
+          "modelTag": "E36 shadow",
+          "starterHookRiskPct": 0,
+          "topTwoSharePct": 37.1,
+          "remainingTop3AvailabilityAvg": 75.2,
+          "remainingTop3BridgeScoreAvg": 81.2,
+          "remainingTop3ExpectedOutsAvg": 3.36,
+          "lead": {
+            "pitcherId": 669062,
+            "name": "Erik Miller",
+            "role": "middle",
+            "shadowSharePct": 19.1,
+            "firstRelieverLikelihood": 63.4,
+            "availabilityScore": 74,
+            "bridgeScore": 67.2,
+            "expectedOuts": 2.8,
+            "reasonTags": [
+              "first-five wildness"
+            ]
+          },
+          "alternate": {
+            "pitcherId": 657424,
+            "name": "Matt Gage",
+            "role": "bridge",
+            "shadowSharePct": 18,
+            "firstRelieverLikelihood": 99.7,
+            "availabilityScore": 80.1,
+            "bridgeScore": 95,
+            "expectedOuts": 2.3,
+            "reasonTags": []
+          },
+          "top3": [
+            {
+              "pitcherId": 669062,
+              "name": "Erik Miller",
+              "role": "middle",
+              "shadowSharePct": 19.1,
+              "firstRelieverLikelihood": 63.4,
+              "availabilityScore": 74,
+              "bridgeScore": 67.2,
+              "expectedOuts": 2.8,
+              "reasonTags": [
+                "first-five wildness"
+              ]
+            },
+            {
+              "pitcherId": 657424,
+              "name": "Matt Gage",
+              "role": "bridge",
+              "shadowSharePct": 18,
+              "firstRelieverLikelihood": 99.7,
+              "availabilityScore": 80.1,
+              "bridgeScore": 95,
+              "expectedOuts": 2.3,
+              "reasonTags": []
+            },
+            {
+              "pitcherId": 676775,
+              "name": "Keaton Winn",
+              "role": "middle",
+              "shadowSharePct": 15.7,
+              "firstRelieverLikelihood": 85.2,
+              "availabilityScore": 71.5,
+              "bridgeScore": 81.3,
+              "expectedOuts": 3.3,
+              "reasonTags": []
+            }
+          ],
+          "summaryLine": "Erik Miller leads the shadow board; Matt Gage is the main alt with 37.1% of the shadow share."
+        },
+        "home": {
+          "teamName": "Brewers",
+          "modelTag": "E36 shadow",
+          "starterHookRiskPct": 0,
+          "topTwoSharePct": 33.8,
+          "remainingTop3AvailabilityAvg": 76.9,
+          "remainingTop3BridgeScoreAvg": 93.6,
+          "remainingTop3ExpectedOutsAvg": 5,
+          "lead": {
+            "pitcherId": 675660,
+            "name": "Shane Drohan",
+            "role": "bridge",
+            "shadowSharePct": 19.2,
+            "firstRelieverLikelihood": 93,
+            "availabilityScore": 95,
+            "bridgeScore": 92.9,
+            "expectedOuts": 7.4,
+            "reasonTags": [
+              "bulk first-up live",
+              "first-five wildness"
+            ]
+          },
+          "alternate": {
+            "pitcherId": 681982,
+            "name": "Grant Anderson",
+            "role": "bridge",
+            "shadowSharePct": 14.6,
+            "firstRelieverLikelihood": 98.5,
+            "availabilityScore": 75.3,
+            "bridgeScore": 95,
+            "expectedOuts": 2.9,
+            "reasonTags": [
+              "bulk first-up live",
+              "first-five wildness"
+            ]
+          },
+          "top3": [
+            {
+              "pitcherId": 675660,
+              "name": "Shane Drohan",
+              "role": "bridge",
+              "shadowSharePct": 19.2,
+              "firstRelieverLikelihood": 93,
+              "availabilityScore": 95,
+              "bridgeScore": 92.9,
+              "expectedOuts": 7.4,
+              "reasonTags": [
+                "bulk first-up live",
+                "first-five wildness"
+              ]
+            },
+            {
+              "pitcherId": 681982,
+              "name": "Grant Anderson",
+              "role": "bridge",
+              "shadowSharePct": 14.6,
+              "firstRelieverLikelihood": 98.5,
+              "availabilityScore": 75.3,
+              "bridgeScore": 95,
+              "expectedOuts": 2.9,
+              "reasonTags": [
+                "bulk first-up live",
+                "first-five wildness"
+              ]
+            },
+            {
+              "pitcherId": 669084,
+              "name": "DL Hall",
+              "role": "bridge",
+              "shadowSharePct": 14,
+              "firstRelieverLikelihood": 84,
+              "availabilityScore": 60.2,
+              "bridgeScore": 92.9,
+              "expectedOuts": 3.8,
+              "reasonTags": [
+                "bulk first-up live",
+                "clean-entry form"
+              ]
+            }
+          ],
+          "summaryLine": "Shane Drohan leads the shadow board; Grant Anderson is the main alt with 33.8% of the shadow share."
+        }
+      },
+      "lineupContext": {
+        "Giants": {
+          "averageMatchupGrade": 4.07,
+          "trackedBatters": 9,
+          "starterThreatCount": 7,
+          "contactCount": 3,
+          "powerCount": 3,
+          "platoonCount": 5,
+          "pitchTypeEdgeCount": 1,
+          "starterPressureIndex": 94,
+          "overallPressureIndex": 94,
+          "topThirdScore": 58.5,
+          "depthScore": 86.3
+        },
+        "Brewers": {
+          "averageMatchupGrade": -1.79,
+          "trackedBatters": 9,
+          "starterThreatCount": 2,
+          "contactCount": 2,
+          "powerCount": 1,
+          "platoonCount": 7,
+          "pitchTypeEdgeCount": 2,
+          "starterPressureIndex": 28.6,
+          "overallPressureIndex": 27.9,
+          "topThirdScore": 35.3,
+          "depthScore": 37
+        }
+      },
+      "teamState": {
+        "away": {
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 1,
+          "winPctLast5": 0.2,
+          "runDiffLast5": 0.6,
+          "bullpenFlipLossCountLast5": 2,
+          "snapbackPressureIndex": 42.44,
+          "heatRegressionIndex": 29,
+          "formPressureIndex": 43.1
+        },
+        "home": {
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 1,
+          "winPctLast5": 0.8,
+          "runDiffLast5": 0.6,
+          "bullpenFlipLossCountLast5": 0,
+          "snapbackPressureIndex": 17,
+          "heatRegressionIndex": 35.48,
+          "formPressureIndex": 33.97
+        }
+      }
+    },
+    {
+      "id": "marlins-nationals",
+      "gamePk": 822730,
+      "title": "Marlins @ Nationals",
+      "start": "3:45 PM PT",
+      "startMinutes": 945,
+      "stage": "Evening MLB Board",
+      "tags": [
+        "MLB"
+      ],
+      "pick": "Nationals",
+      "opponent": "Marlins",
+      "confidence": 52,
+      "volatility": 92,
+      "recommendationScore": 34,
+      "tier": "Pass",
+      "lean": "Model pick: Nationals on standings profile and lineup-vs-pitching fit.",
+      "rationale": "Standings profile: Nationals (31-29, 2nd in division, +1 RD) vs Marlins (26-34, 5th in division, -29 RD)",
+      "modelDesignation": "board-moneyline-v1.1",
+      "modelEdge": 6.3,
+      "marketProbability": 0.5639,
+      "participants": [
+        {
+          "role": "Away",
+          "name": "Marlins",
+          "americanOdds": 123,
+          "impliedProbability": 0.4484
+        },
+        {
+          "role": "Home",
+          "name": "Nationals",
+          "americanOdds": -138,
+          "impliedProbability": 0.5798
+        }
+      ],
+      "oddsMarkets": [
+        {
+          "label": "Spread",
+          "value": "+1.5 -170 / -1.5 +146"
+        },
+        {
+          "label": "Total",
+          "value": "o8 -118 / u8.5 -115"
+        },
+        {
+          "label": "Moneyline",
+          "value": "Marlins +123 / Nationals -138"
+        }
+      ],
+      "relieverShadowContext": {
+        "away": {
+          "teamName": "Marlins",
+          "modelTag": "E36 shadow",
+          "starterHookRiskPct": 0,
+          "topTwoSharePct": 34.8,
+          "remainingTop3AvailabilityAvg": 89,
+          "remainingTop3BridgeScoreAvg": 68.9,
+          "remainingTop3ExpectedOutsAvg": 2.72,
+          "lead": {
+            "pitcherId": 656848,
+            "name": "Michael Petersen",
+            "role": "middle",
+            "shadowSharePct": 18,
+            "firstRelieverLikelihood": 84.7,
+            "availabilityScore": 77.2,
+            "bridgeScore": 77.1,
+            "expectedOuts": 2.8,
+            "reasonTags": [
+              "bulk first-up live"
+            ]
+          },
+          "alternate": {
+            "pitcherId": 677053,
+            "name": "Andrew Nardi",
+            "role": "middle",
+            "shadowSharePct": 16.8,
+            "firstRelieverLikelihood": 68.3,
+            "availabilityScore": 95,
+            "bridgeScore": 73.9,
+            "expectedOuts": 2.9,
+            "reasonTags": [
+              "bulk first-up live"
+            ]
+          },
+          "top3": [
+            {
+              "pitcherId": 656848,
+              "name": "Michael Petersen",
+              "role": "middle",
+              "shadowSharePct": 18,
+              "firstRelieverLikelihood": 84.7,
+              "availabilityScore": 77.2,
+              "bridgeScore": 77.1,
+              "expectedOuts": 2.8,
+              "reasonTags": [
+                "bulk first-up live"
+              ]
+            },
+            {
+              "pitcherId": 677053,
+              "name": "Andrew Nardi",
+              "role": "middle",
+              "shadowSharePct": 16.8,
+              "firstRelieverLikelihood": 68.3,
+              "availabilityScore": 95,
+              "bridgeScore": 73.9,
+              "expectedOuts": 2.9,
+              "reasonTags": [
+                "bulk first-up live"
+              ]
+            },
+            {
+              "pitcherId": 667463,
+              "name": "John King",
+              "role": "middle",
+              "shadowSharePct": 15.1,
+              "firstRelieverLikelihood": 53.9,
+              "availabilityScore": 95,
+              "bridgeScore": 55.7,
+              "expectedOuts": 2.5,
+              "reasonTags": [
+                "bulk first-up live",
+                "first-five wildness"
+              ]
+            }
+          ],
+          "summaryLine": "Michael Petersen leads the shadow board; Andrew Nardi is the main alt with 34.8% of the shadow share."
+        },
+        "home": {
+          "teamName": "Nationals",
+          "modelTag": "E36 shadow",
+          "starterHookRiskPct": 0,
+          "topTwoSharePct": 26.1,
+          "remainingTop3AvailabilityAvg": 84,
+          "remainingTop3BridgeScoreAvg": 76.3,
+          "remainingTop3ExpectedOutsAvg": 7.39,
+          "lead": {
+            "pitcherId": 695418,
+            "name": "Brad Lord",
+            "role": "bridge",
+            "shadowSharePct": 13.1,
+            "firstRelieverLikelihood": 84.5,
+            "availabilityScore": 62,
+            "bridgeScore": 92.9,
+            "expectedOuts": 6.4,
+            "reasonTags": [
+              "bulk first-up live"
+            ]
+          },
+          "alternate": {
+            "pitcherId": 663992,
+            "name": "Richard Lovelady",
+            "role": "middle",
+            "shadowSharePct": 13,
+            "firstRelieverLikelihood": 62.5,
+            "availabilityScore": 95,
+            "bridgeScore": 61.3,
+            "expectedOuts": 2.1,
+            "reasonTags": [
+              "bulk first-up live"
+            ]
+          },
+          "top3": [
+            {
+              "pitcherId": 695418,
+              "name": "Brad Lord",
+              "role": "bridge",
+              "shadowSharePct": 13.1,
+              "firstRelieverLikelihood": 84.5,
+              "availabilityScore": 62,
+              "bridgeScore": 92.9,
+              "expectedOuts": 6.4,
+              "reasonTags": [
+                "bulk first-up live"
+              ]
+            },
+            {
+              "pitcherId": 663992,
+              "name": "Richard Lovelady",
+              "role": "middle",
+              "shadowSharePct": 13,
+              "firstRelieverLikelihood": 62.5,
+              "availabilityScore": 95,
+              "bridgeScore": 61.3,
+              "expectedOuts": 2.1,
+              "reasonTags": [
+                "bulk first-up live"
+              ]
+            },
+            {
+              "pitcherId": 571945,
+              "name": "Miles Mikolas",
+              "role": "bridge",
+              "shadowSharePct": 12.8,
+              "firstRelieverLikelihood": 84.7,
+              "availabilityScore": 95,
+              "bridgeScore": 74.7,
+              "expectedOuts": 12.67,
+              "reasonTags": [
+                "bulk first-up live"
+              ]
+            }
+          ],
+          "summaryLine": "Brad Lord leads the shadow board; Richard Lovelady is the main alt with 26.1% of the shadow share."
+        }
+      },
+      "lineupContext": {
+        "Marlins": {
+          "averageMatchupGrade": 1.96,
+          "trackedBatters": 9,
+          "starterThreatCount": 5,
+          "contactCount": 4,
+          "powerCount": 1,
+          "platoonCount": 8,
+          "pitchTypeEdgeCount": 5,
+          "starterPressureIndex": 85.2,
+          "overallPressureIndex": 83.5,
+          "topThirdScore": 58,
+          "depthScore": 27.7
+        },
+        "Nationals": {
+          "averageMatchupGrade": 4.06,
+          "trackedBatters": 9,
+          "starterThreatCount": 6,
+          "contactCount": 4,
+          "powerCount": 4,
+          "platoonCount": 9,
+          "pitchTypeEdgeCount": 8,
+          "starterPressureIndex": 94,
+          "overallPressureIndex": 94,
+          "topThirdScore": 94,
+          "depthScore": 48.1
+        }
+      },
+      "teamState": {
+        "away": {
+          "previousResult": "loss",
+          "streakDirection": "L",
+          "streakLength": 5,
+          "winPctLast5": 0,
+          "runDiffLast5": -4.8,
+          "bullpenFlipLossCountLast5": 0,
+          "snapbackPressureIndex": 100,
+          "heatRegressionIndex": 14,
+          "formPressureIndex": 63
+        },
+        "home": {
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 2,
+          "winPctLast5": 0.6,
+          "runDiffLast5": 1.4,
+          "bullpenFlipLossCountLast5": 1,
+          "snapbackPressureIndex": 22,
+          "heatRegressionIndex": 38,
+          "formPressureIndex": 38.1
+        }
+      }
+    },
+    {
+      "id": "mets-mariners",
+      "gamePk": 823131,
+      "title": "Mets @ Mariners",
+      "start": "6:40 PM PT",
+      "startMinutes": 1120,
+      "stage": "Evening MLB Board",
+      "tags": [
+        "MLB"
+      ],
+      "pick": "Mariners",
+      "opponent": "Mets",
+      "confidence": 68,
+      "volatility": 80,
+      "recommendationScore": 47,
+      "tier": "Swingy",
+      "lean": "Model pick: Mariners on standings profile and strikeout ceiling.",
+      "rationale": "Standings profile: Mariners (31-29, division leader, +30 RD) vs Mets (26-33, 4th in division, -13 RD)",
+      "modelDesignation": "board-moneyline-v1.1",
+      "modelEdge": 7.7,
+      "marketProbability": 0.5451,
+      "participants": [
+        {
+          "role": "Away",
+          "name": "Mets",
+          "americanOdds": 112,
+          "impliedProbability": 0.4717
+        },
+        {
+          "role": "Home",
+          "name": "Mariners",
+          "americanOdds": -130,
+          "impliedProbability": 0.5652
+        }
+      ],
+      "oddsMarkets": [
+        {
+          "label": "Spread",
+          "value": "+1.5 -200 / -1.5 +172"
+        },
+        {
+          "label": "Total",
+          "value": "o7 -120 / u7.5 -125"
+        },
+        {
+          "label": "Moneyline",
+          "value": "Mets +112 / Mariners -130"
+        }
+      ],
+      "relieverShadowContext": {
+        "away": {
+          "teamName": "Mets",
+          "modelTag": "E36 shadow",
+          "starterHookRiskPct": 0,
+          "topTwoSharePct": 22.6,
+          "remainingTop3AvailabilityAvg": 77.6,
+          "remainingTop3BridgeScoreAvg": 81.9,
+          "remainingTop3ExpectedOutsAvg": 2.78,
+          "lead": {
+            "pitcherId": 621345,
+            "name": "A.J. Minter",
+            "role": "bridge",
+            "shadowSharePct": 11.9,
+            "firstRelieverLikelihood": 98.4,
+            "availabilityScore": 74.9,
+            "bridgeScore": 95,
+            "expectedOuts": 3,
+            "reasonTags": [
+              "bulk first-up live",
+              "unknown-sample arm"
+            ]
+          },
+          "alternate": {
+            "pitcherId": 672335,
+            "name": "Cionel Pérez",
+            "role": "bridge",
+            "shadowSharePct": 10.7,
+            "firstRelieverLikelihood": 89,
+            "availabilityScore": 75.8,
+            "bridgeScore": 95,
+            "expectedOuts": 3.4,
+            "reasonTags": [
+              "bulk first-up live",
+              "unknown-sample arm"
+            ]
+          },
+          "top3": [
+            {
+              "pitcherId": 621345,
+              "name": "A.J. Minter",
+              "role": "bridge",
+              "shadowSharePct": 11.9,
+              "firstRelieverLikelihood": 98.4,
+              "availabilityScore": 74.9,
+              "bridgeScore": 95,
+              "expectedOuts": 3,
+              "reasonTags": [
+                "bulk first-up live",
+                "unknown-sample arm"
+              ]
+            },
+            {
+              "pitcherId": 672335,
+              "name": "Cionel Pérez",
+              "role": "bridge",
+              "shadowSharePct": 10.7,
+              "firstRelieverLikelihood": 89,
+              "availabilityScore": 75.8,
+              "bridgeScore": 95,
+              "expectedOuts": 3.4,
+              "reasonTags": [
+                "bulk first-up live",
+                "unknown-sample arm"
+              ]
+            },
+            {
+              "pitcherId": 548384,
+              "name": "Brooks Raley",
+              "role": "middle",
+              "shadowSharePct": 10.6,
+              "firstRelieverLikelihood": 54.1,
+              "availabilityScore": 82.2,
+              "bridgeScore": 55.6,
+              "expectedOuts": 2.7,
+              "reasonTags": [
+                "bulk first-up live"
+              ]
+            }
+          ],
+          "summaryLine": "A.J. Minter leads the shadow board; Cionel Pérez is the main alt with 22.6% of the shadow share."
+        },
+        "home": {
+          "teamName": "Mariners",
+          "modelTag": "E36 shadow",
+          "starterHookRiskPct": 0,
+          "topTwoSharePct": 30.4,
+          "remainingTop3AvailabilityAvg": 77.8,
+          "remainingTop3BridgeScoreAvg": 78.8,
+          "remainingTop3ExpectedOutsAvg": 2.17,
+          "lead": {
+            "pitcherId": 666374,
+            "name": "Matt Brash",
+            "role": "bridge",
+            "shadowSharePct": 15.6,
+            "firstRelieverLikelihood": 87.3,
+            "availabilityScore": 72.9,
+            "bridgeScore": 92.9,
+            "expectedOuts": 2.4,
+            "reasonTags": [
+              "clean-entry form"
+            ]
+          },
+          "alternate": {
+            "pitcherId": 678606,
+            "name": "José A. Ferrer",
+            "role": "middle",
+            "shadowSharePct": 14.8,
+            "firstRelieverLikelihood": 97.2,
+            "availabilityScore": 77.4,
+            "bridgeScore": 91.1,
+            "expectedOuts": 2.6,
+            "reasonTags": []
+          },
+          "top3": [
+            {
+              "pitcherId": 666374,
+              "name": "Matt Brash",
+              "role": "bridge",
+              "shadowSharePct": 15.6,
+              "firstRelieverLikelihood": 87.3,
+              "availabilityScore": 72.9,
+              "bridgeScore": 92.9,
+              "expectedOuts": 2.4,
+              "reasonTags": [
+                "clean-entry form"
+              ]
+            },
+            {
+              "pitcherId": 678606,
+              "name": "José A. Ferrer",
+              "role": "middle",
+              "shadowSharePct": 14.8,
+              "firstRelieverLikelihood": 97.2,
+              "availabilityScore": 77.4,
+              "bridgeScore": 91.1,
+              "expectedOuts": 2.6,
+              "reasonTags": []
+            },
+            {
+              "pitcherId": 642100,
+              "name": "Gabe Speier",
+              "role": "late",
+              "shadowSharePct": 13.4,
+              "firstRelieverLikelihood": 58.9,
+              "availabilityScore": 83,
+              "bridgeScore": 52.5,
+              "expectedOuts": 2.3,
+              "reasonTags": [
+                "clean-entry form"
+              ]
+            }
+          ],
+          "summaryLine": "Matt Brash leads the shadow board; José A. Ferrer is the main alt with 30.4% of the shadow share."
+        }
+      },
+      "lineupContext": {
+        "Mets": {
+          "averageMatchupGrade": -0.46,
+          "trackedBatters": 9,
+          "starterThreatCount": 4,
+          "contactCount": 1,
+          "powerCount": 1,
+          "platoonCount": 5,
+          "pitchTypeEdgeCount": 3,
+          "starterPressureIndex": 65.3,
+          "overallPressureIndex": 68.2,
+          "topThirdScore": 62.3,
+          "depthScore": 48.5
+        },
+        "Mariners": {
+          "averageMatchupGrade": 4.46,
+          "trackedBatters": 9,
+          "starterThreatCount": 5,
+          "contactCount": 2,
+          "powerCount": 3,
+          "platoonCount": 5,
+          "pitchTypeEdgeCount": 2,
+          "starterPressureIndex": 94,
+          "overallPressureIndex": 94,
+          "topThirdScore": 68.5,
+          "depthScore": 73.1
+        }
+      },
+      "teamState": {
+        "away": {
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 4,
+          "winPctLast5": 0.8,
+          "runDiffLast5": 2.6,
+          "bullpenFlipLossCountLast5": 0,
+          "snapbackPressureIndex": 17,
+          "heatRegressionIndex": 75.08,
+          "formPressureIndex": 51.79
+        },
+        "home": {
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 5,
+          "winPctLast5": 1,
+          "runDiffLast5": 3.4,
+          "bullpenFlipLossCountLast5": 0,
+          "snapbackPressureIndex": 14,
+          "heatRegressionIndex": 90.08,
+          "formPressureIndex": 58.54
+        }
+      }
+    },
+    {
+      "id": "rangers-cardinals",
+      "gamePk": 823050,
+      "title": "Rangers @ Cardinals",
+      "start": "4:45 PM PT",
+      "startMinutes": 1005,
+      "stage": "Evening MLB Board",
+      "tags": [
+        "MLB"
+      ],
+      "pick": "Cardinals",
+      "opponent": "Rangers",
+      "confidence": 52,
+      "volatility": 92,
+      "recommendationScore": 33,
+      "tier": "Pass",
+      "lean": "Model pick: Cardinals on hit-production baseline and statcast contact quality.",
+      "rationale": "Hit-production baseline: Cardinals (8.07 H/G | last 3 10.67 | home 8.10) vs Rangers (7.67 H/G | last 3 7.67 | away 8.55)",
+      "modelDesignation": "board-moneyline-v1.1",
+      "modelEdge": 0,
+      "marketProbability": 0.4615,
+      "participants": [
+        {
+          "role": "Away",
+          "name": "Rangers",
+          "americanOdds": -125,
+          "impliedProbability": 0.5556
+        },
+        {
+          "role": "Home",
+          "name": "Cardinals",
+          "americanOdds": 110,
+          "impliedProbability": 0.4762
+        }
+      ],
+      "oddsMarkets": [
+        {
+          "label": "Spread",
+          "value": "-1.5 +140 / +1.5 -155"
+        },
+        {
+          "label": "Total",
+          "value": "o7.5 -105 / u7.5 -110"
+        },
+        {
+          "label": "Moneyline",
+          "value": "Rangers -125 / Cardinals +110"
+        }
+      ],
+      "relieverShadowContext": {
+        "away": {
+          "teamName": "Rangers",
+          "modelTag": "E36 shadow",
+          "starterHookRiskPct": 0,
+          "topTwoSharePct": 31,
+          "remainingTop3AvailabilityAvg": 81.7,
+          "remainingTop3BridgeScoreAvg": 84,
+          "remainingTop3ExpectedOutsAvg": 4.72,
+          "lead": {
+            "pitcherId": 615698,
+            "name": "Cal Quantrill",
+            "role": "bridge",
+            "shadowSharePct": 17.4,
+            "firstRelieverLikelihood": 93,
+            "availabilityScore": 95,
+            "bridgeScore": 92.9,
+            "expectedOuts": 7.11,
+            "reasonTags": [
+              "bulk first-up live",
+              "first-five wildness"
+            ]
+          },
+          "alternate": {
+            "pitcherId": 596001,
+            "name": "Jakob Junis",
+            "role": "bridge",
+            "shadowSharePct": 13.6,
+            "firstRelieverLikelihood": 64.3,
+            "availabilityScore": 77,
+            "bridgeScore": 75.5,
+            "expectedOuts": 3.2,
+            "reasonTags": [
+              "bulk first-up live"
+            ]
+          },
+          "top3": [
+            {
+              "pitcherId": 615698,
+              "name": "Cal Quantrill",
+              "role": "bridge",
+              "shadowSharePct": 17.4,
+              "firstRelieverLikelihood": 93,
+              "availabilityScore": 95,
+              "bridgeScore": 92.9,
+              "expectedOuts": 7.11,
+              "reasonTags": [
+                "bulk first-up live",
+                "first-five wildness"
+              ]
+            },
+            {
+              "pitcherId": 596001,
+              "name": "Jakob Junis",
+              "role": "bridge",
+              "shadowSharePct": 13.6,
+              "firstRelieverLikelihood": 64.3,
+              "availabilityScore": 77,
+              "bridgeScore": 75.5,
+              "expectedOuts": 3.2,
+              "reasonTags": [
+                "bulk first-up live"
+              ]
+            },
+            {
+              "pitcherId": 455119,
+              "name": "Chris Martin",
+              "role": "middle",
+              "shadowSharePct": 13.6,
+              "firstRelieverLikelihood": 86.7,
+              "availabilityScore": 73.1,
+              "bridgeScore": 83.7,
+              "expectedOuts": 2.9,
+              "reasonTags": [
+                "bulk first-up live"
+              ]
+            }
+          ],
+          "summaryLine": "Cal Quantrill leads the shadow board; Jakob Junis is the main alt with 31.0% of the shadow share."
+        },
+        "home": {
+          "teamName": "Cardinals",
+          "modelTag": "E36 shadow",
+          "starterHookRiskPct": 0,
+          "topTwoSharePct": 25.9,
+          "remainingTop3AvailabilityAvg": 73,
+          "remainingTop3BridgeScoreAvg": 74.6,
+          "remainingTop3ExpectedOutsAvg": 3.33,
+          "lead": {
+            "pitcherId": 668941,
+            "name": "JoJo Romero",
+            "role": "late",
+            "shadowSharePct": 13.2,
+            "firstRelieverLikelihood": 82.6,
+            "availabilityScore": 75.8,
+            "bridgeScore": 73.2,
+            "expectedOuts": 3.2,
+            "reasonTags": [
+              "bulk first-up live"
+            ]
+          },
+          "alternate": {
+            "pitcherId": 681676,
+            "name": "Ryan Fernandez",
+            "role": "middle",
+            "shadowSharePct": 12.7,
+            "firstRelieverLikelihood": 96.4,
+            "availabilityScore": 67.2,
+            "bridgeScore": 95,
+            "expectedOuts": 4.14,
+            "reasonTags": [
+              "bulk first-up live",
+              "first-five wildness"
+            ]
+          },
+          "top3": [
+            {
+              "pitcherId": 668941,
+              "name": "JoJo Romero",
+              "role": "late",
+              "shadowSharePct": 13.2,
+              "firstRelieverLikelihood": 82.6,
+              "availabilityScore": 75.8,
+              "bridgeScore": 73.2,
+              "expectedOuts": 3.2,
+              "reasonTags": [
+                "bulk first-up live"
+              ]
+            },
+            {
+              "pitcherId": 681676,
+              "name": "Ryan Fernandez",
+              "role": "middle",
+              "shadowSharePct": 12.7,
+              "firstRelieverLikelihood": 96.4,
+              "availabilityScore": 67.2,
+              "bridgeScore": 95,
+              "expectedOuts": 4.14,
+              "reasonTags": [
+                "bulk first-up live",
+                "first-five wildness"
+              ]
+            },
+            {
+              "pitcherId": 666277,
+              "name": "George Soriano",
+              "role": "middle",
+              "shadowSharePct": 12.5,
+              "firstRelieverLikelihood": 48.9,
+              "availabilityScore": 75.8,
+              "bridgeScore": 55.7,
+              "expectedOuts": 2.8,
+              "reasonTags": [
+                "bulk first-up live",
+                "first-five wildness"
+              ]
+            }
+          ],
+          "summaryLine": "JoJo Romero leads the shadow board; Ryan Fernandez is the main alt with 25.9% of the shadow share."
+        }
+      },
+      "lineupContext": {
+        "Rangers": {
+          "averageMatchupGrade": 2.22,
+          "trackedBatters": 9,
+          "starterThreatCount": 5,
+          "contactCount": 1,
+          "powerCount": 2,
+          "platoonCount": 6,
+          "pitchTypeEdgeCount": 3,
+          "starterPressureIndex": 94,
+          "overallPressureIndex": 94,
+          "topThirdScore": 76.2,
+          "depthScore": 61.2
+        },
+        "Cardinals": {
+          "averageMatchupGrade": -2.43,
+          "trackedBatters": 9,
+          "starterThreatCount": 3,
+          "contactCount": 5,
+          "powerCount": 2,
+          "platoonCount": 6,
+          "pitchTypeEdgeCount": 5,
+          "starterPressureIndex": 45.4,
+          "overallPressureIndex": 49.7,
+          "topThirdScore": 66.9,
+          "depthScore": 18
+        }
+      },
+      "teamState": {
+        "away": {
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 3,
+          "winPctLast5": 0.6,
+          "runDiffLast5": 1.4,
+          "bullpenFlipLossCountLast5": 0,
+          "snapbackPressureIndex": 18,
+          "heatRegressionIndex": 47,
+          "formPressureIndex": 39.15
+        },
+        "home": {
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 1,
+          "winPctLast5": 0.4,
+          "runDiffLast5": -1.4,
+          "bullpenFlipLossCountLast5": 1,
+          "snapbackPressureIndex": 27.84,
+          "heatRegressionIndex": 23,
+          "formPressureIndex": 33.53
+        }
+      }
+    },
+    {
+      "id": "rockies-angels",
+      "gamePk": 824027,
+      "title": "Rockies @ Angels",
+      "start": "6:38 PM PT",
+      "startMinutes": 1118,
+      "stage": "Evening MLB Board",
+      "tags": [
+        "MLB"
+      ],
+      "pick": "Angels",
+      "opponent": "Rockies",
+      "confidence": 52,
+      "volatility": 92,
+      "recommendationScore": 35,
+      "tier": "Pass",
+      "lean": "Model pick: Angels on starter era and market price.",
+      "rationale": "Starter ERA: Angels (2.65 ERA) vs Rockies (8.08 ERA)",
+      "modelDesignation": "board-moneyline-v1.1",
+      "modelEdge": 10.9,
+      "marketProbability": 0.6366,
+      "participants": [
+        {
+          "role": "Away",
+          "name": "Rockies",
+          "americanOdds": 165,
+          "impliedProbability": 0.3774
+        },
+        {
+          "role": "Home",
+          "name": "Angels",
+          "americanOdds": -195,
+          "impliedProbability": 0.661
+        }
+      ],
+      "oddsMarkets": [
+        {
+          "label": "Spread",
+          "value": "+1.5 -125 / -1.5 +106"
+        },
+        {
+          "label": "Total",
+          "value": "o8 -115 / u8 -105"
+        },
+        {
+          "label": "Moneyline",
+          "value": "Rockies +165 / Angels -195"
+        }
+      ],
+      "relieverShadowContext": {
+        "away": {
+          "teamName": "Rockies",
+          "modelTag": "E36 shadow",
+          "starterHookRiskPct": 0,
+          "topTwoSharePct": 37.4,
+          "remainingTop3AvailabilityAvg": 80.6,
+          "remainingTop3BridgeScoreAvg": 77.8,
+          "remainingTop3ExpectedOutsAvg": 2.94,
+          "lead": {
+            "pitcherId": 677955,
+            "name": "Jaden Hill",
+            "role": "middle",
+            "shadowSharePct": 19.6,
+            "firstRelieverLikelihood": 86,
+            "availabilityScore": 70.6,
+            "bridgeScore": 91.3,
+            "expectedOuts": 2.8,
+            "reasonTags": [
+              "bulk first-up live",
+              "clean-entry form"
+            ]
+          },
+          "alternate": {
+            "pitcherId": 622608,
+            "name": "Antonio Senzatela",
+            "role": "middle",
+            "shadowSharePct": 17.8,
+            "firstRelieverLikelihood": 66.4,
+            "availabilityScore": 95,
+            "bridgeScore": 69.7,
+            "expectedOuts": 5.6,
+            "reasonTags": [
+              "bulk first-up live",
+              "first-five wildness"
+            ]
+          },
+          "top3": [
+            {
+              "pitcherId": 677955,
+              "name": "Jaden Hill",
+              "role": "middle",
+              "shadowSharePct": 19.6,
+              "firstRelieverLikelihood": 86,
+              "availabilityScore": 70.6,
+              "bridgeScore": 91.3,
+              "expectedOuts": 2.8,
+              "reasonTags": [
+                "bulk first-up live",
+                "clean-entry form"
+              ]
+            },
+            {
+              "pitcherId": 622608,
+              "name": "Antonio Senzatela",
+              "role": "middle",
+              "shadowSharePct": 17.8,
+              "firstRelieverLikelihood": 66.4,
+              "availabilityScore": 95,
+              "bridgeScore": 69.7,
+              "expectedOuts": 5.6,
+              "reasonTags": [
+                "bulk first-up live",
+                "first-five wildness"
+              ]
+            },
+            {
+              "pitcherId": 700327,
+              "name": "Welinton Herrera",
+              "role": "middle",
+              "shadowSharePct": 17.6,
+              "firstRelieverLikelihood": 72.4,
+              "availabilityScore": 76.3,
+              "bridgeScore": 72.5,
+              "expectedOuts": 2.33,
+              "reasonTags": [
+                "bulk first-up live",
+                "unknown-sample arm"
+              ]
+            }
+          ],
+          "summaryLine": "Jaden Hill leads the shadow board; Antonio Senzatela is the main alt with 37.4% of the shadow share."
+        },
+        "home": {
+          "teamName": "Angels",
+          "modelTag": "E36 shadow",
+          "starterHookRiskPct": 0,
+          "topTwoSharePct": 37.5,
+          "remainingTop3AvailabilityAvg": 73.1,
+          "remainingTop3BridgeScoreAvg": 78.5,
+          "remainingTop3ExpectedOutsAvg": 2.86,
+          "lead": {
+            "pitcherId": 820862,
+            "name": "José Fermin",
+            "role": "middle",
+            "shadowSharePct": 19,
+            "firstRelieverLikelihood": 96.3,
+            "availabilityScore": 73.8,
+            "bridgeScore": 91.1,
+            "expectedOuts": 2.5,
+            "reasonTags": [
+              "scramble risk"
+            ]
+          },
+          "alternate": {
+            "pitcherId": 666171,
+            "name": "Ryan Zeferjahn",
+            "role": "middle",
+            "shadowSharePct": 18.5,
+            "firstRelieverLikelihood": 83.4,
+            "availabilityScore": 75.8,
+            "bridgeScore": 75,
+            "expectedOuts": 2.8,
+            "reasonTags": [
+              "scramble risk",
+              "first-five wildness"
+            ]
+          },
+          "top3": [
+            {
+              "pitcherId": 820862,
+              "name": "José Fermin",
+              "role": "middle",
+              "shadowSharePct": 19,
+              "firstRelieverLikelihood": 96.3,
+              "availabilityScore": 73.8,
+              "bridgeScore": 91.1,
+              "expectedOuts": 2.5,
+              "reasonTags": [
+                "scramble risk"
+              ]
+            },
+            {
+              "pitcherId": 666171,
+              "name": "Ryan Zeferjahn",
+              "role": "middle",
+              "shadowSharePct": 18.5,
+              "firstRelieverLikelihood": 83.4,
+              "availabilityScore": 75.8,
+              "bridgeScore": 75,
+              "expectedOuts": 2.8,
+              "reasonTags": [
+                "scramble risk",
+                "first-five wildness"
+              ]
+            },
+            {
+              "pitcherId": 696147,
+              "name": "Sam Bachman",
+              "role": "middle",
+              "shadowSharePct": 17,
+              "firstRelieverLikelihood": 63.2,
+              "availabilityScore": 69.7,
+              "bridgeScore": 69.3,
+              "expectedOuts": 3.9,
+              "reasonTags": [
+                "scramble risk"
+              ]
+            }
+          ],
+          "summaryLine": "José Fermin leads the shadow board; Ryan Zeferjahn is the main alt with 37.5% of the shadow share."
+        }
+      },
+      "lineupContext": {
+        "Rockies": {
+          "averageMatchupGrade": 2.9,
+          "trackedBatters": 9,
+          "starterThreatCount": 5,
+          "contactCount": 3,
+          "powerCount": 1,
+          "platoonCount": 5,
+          "pitchTypeEdgeCount": 1,
+          "starterPressureIndex": 94,
+          "overallPressureIndex": 93.1,
+          "topThirdScore": 82.1,
+          "depthScore": 69.4
+        },
+        "Angels": {
+          "averageMatchupGrade": 7.3,
+          "trackedBatters": 9,
+          "starterThreatCount": 8,
+          "contactCount": 2,
+          "powerCount": 4,
+          "platoonCount": 9,
+          "pitchTypeEdgeCount": 9,
+          "starterPressureIndex": 94,
+          "overallPressureIndex": 93.8,
+          "topThirdScore": 92.5,
+          "depthScore": 82.3
+        }
+      },
+      "teamState": {
+        "away": {
+          "previousResult": "loss",
+          "streakDirection": "L",
+          "streakLength": 1,
+          "winPctLast5": 0.4,
+          "runDiffLast5": -3.6,
+          "bullpenFlipLossCountLast5": 0,
+          "snapbackPressureIndex": 39.84,
+          "heatRegressionIndex": 20,
+          "formPressureIndex": 35.93
+        },
+        "home": {
+          "previousResult": "loss",
+          "streakDirection": "L",
+          "streakLength": 1,
+          "winPctLast5": 0.4,
+          "runDiffLast5": 1.4,
+          "bullpenFlipLossCountLast5": 1,
+          "snapbackPressureIndex": 33.84,
+          "heatRegressionIndex": 26,
+          "formPressureIndex": 36.23
+        }
+      }
+    },
+    {
+      "id": "royals-reds",
+      "gamePk": 824510,
+      "title": "Royals @ Reds",
+      "start": "4:10 PM PT",
+      "startMinutes": 970,
+      "stage": "Evening MLB Board",
+      "tags": [
+        "MLB"
+      ],
+      "pick": "Reds",
+      "opponent": "Royals",
+      "confidence": 53,
+      "volatility": 92,
+      "recommendationScore": 34,
+      "tier": "Pass",
+      "lean": "Model pick: Reds on standings profile and hit-production baseline.",
+      "rationale": "Standings profile: Reds (30-28, 5th in division, -32 RD) vs Royals (22-37, 4th in division, -59 RD)",
+      "modelDesignation": "board-moneyline-v1.1",
+      "modelEdge": 1.9,
+      "marketProbability": 0.5417,
+      "participants": [
+        {
+          "role": "Away",
+          "name": "Royals",
+          "americanOdds": 112,
+          "impliedProbability": 0.4717
+        },
+        {
+          "role": "Home",
+          "name": "Reds",
+          "americanOdds": -126,
+          "impliedProbability": 0.5575
+        }
+      ],
+      "oddsMarkets": [
+        {
+          "label": "Spread",
+          "value": "+1.5 -170 / -1.5 +152"
+        },
+        {
+          "label": "Total",
+          "value": "o9.5 -105 / u9.5 -114"
+        },
+        {
+          "label": "Moneyline",
+          "value": "Royals +112 / Reds -126"
+        }
+      ],
+      "relieverShadowContext": {
+        "away": {
+          "teamName": "Royals",
+          "modelTag": "E36 shadow",
+          "starterHookRiskPct": 0,
+          "topTwoSharePct": 27.5,
+          "remainingTop3AvailabilityAvg": 83.4,
+          "remainingTop3BridgeScoreAvg": 75.8,
+          "remainingTop3ExpectedOutsAvg": 4.67,
+          "lead": {
+            "pitcherId": 663738,
+            "name": "Daniel Lynch IV",
+            "role": "middle",
+            "shadowSharePct": 13.9,
+            "firstRelieverLikelihood": 59.1,
+            "availabilityScore": 74.7,
+            "bridgeScore": 65.5,
+            "expectedOuts": 2.9,
+            "reasonTags": []
+          },
+          "alternate": {
+            "pitcherId": 670167,
+            "name": "John Schreiber",
+            "role": "middle",
+            "shadowSharePct": 13.6,
+            "firstRelieverLikelihood": 87.7,
+            "availabilityScore": 80.5,
+            "bridgeScore": 81.6,
+            "expectedOuts": 2.9,
+            "reasonTags": []
+          },
+          "top3": [
+            {
+              "pitcherId": 663738,
+              "name": "Daniel Lynch IV",
+              "role": "middle",
+              "shadowSharePct": 13.9,
+              "firstRelieverLikelihood": 59.1,
+              "availabilityScore": 74.7,
+              "bridgeScore": 65.5,
+              "expectedOuts": 2.9,
+              "reasonTags": []
+            },
+            {
+              "pitcherId": 670167,
+              "name": "John Schreiber",
+              "role": "middle",
+              "shadowSharePct": 13.6,
+              "firstRelieverLikelihood": 87.7,
+              "availabilityScore": 80.5,
+              "bridgeScore": 81.6,
+              "expectedOuts": 2.9,
+              "reasonTags": []
+            },
+            {
+              "pitcherId": 679883,
+              "name": "Luinder Avila",
+              "role": "bridge",
+              "shadowSharePct": 12.7,
+              "firstRelieverLikelihood": 87.2,
+              "availabilityScore": 95,
+              "bridgeScore": 80.3,
+              "expectedOuts": 6.11,
+              "reasonTags": [
+                "first-five wildness"
+              ]
+            }
+          ],
+          "summaryLine": "Daniel Lynch IV leads the shadow board; John Schreiber is the main alt with 27.5% of the shadow share."
+        },
+        "home": {
+          "teamName": "Reds",
+          "modelTag": "E36 shadow",
+          "starterHookRiskPct": 0,
+          "topTwoSharePct": 25.9,
+          "remainingTop3AvailabilityAvg": 79.3,
+          "remainingTop3BridgeScoreAvg": 77.1,
+          "remainingTop3ExpectedOutsAvg": 3.5,
+          "lead": {
+            "pitcherId": 572955,
+            "name": "Pierce Johnson",
+            "role": "middle",
+            "shadowSharePct": 13.1,
+            "firstRelieverLikelihood": 64.4,
+            "availabilityScore": 95,
+            "bridgeScore": 65.5,
+            "expectedOuts": 3,
+            "reasonTags": [
+              "scramble risk",
+              "first-five wildness"
+            ]
+          },
+          "alternate": {
+            "pitcherId": 622088,
+            "name": "Tejay Antone",
+            "role": "middle",
+            "shadowSharePct": 12.8,
+            "firstRelieverLikelihood": 84.7,
+            "availabilityScore": 73.1,
+            "bridgeScore": 87.1,
+            "expectedOuts": 2.89,
+            "reasonTags": [
+              "scramble risk"
+            ]
+          },
+          "top3": [
+            {
+              "pitcherId": 572955,
+              "name": "Pierce Johnson",
+              "role": "middle",
+              "shadowSharePct": 13.1,
+              "firstRelieverLikelihood": 64.4,
+              "availabilityScore": 95,
+              "bridgeScore": 65.5,
+              "expectedOuts": 3,
+              "reasonTags": [
+                "scramble risk",
+                "first-five wildness"
+              ]
+            },
+            {
+              "pitcherId": 622088,
+              "name": "Tejay Antone",
+              "role": "middle",
+              "shadowSharePct": 12.8,
+              "firstRelieverLikelihood": 84.7,
+              "availabilityScore": 73.1,
+              "bridgeScore": 87.1,
+              "expectedOuts": 2.89,
+              "reasonTags": [
+                "scramble risk"
+              ]
+            },
+            {
+              "pitcherId": 657571,
+              "name": "Caleb Ferguson",
+              "role": "middle",
+              "shadowSharePct": 10.9,
+              "firstRelieverLikelihood": 73.6,
+              "availabilityScore": 69.9,
+              "bridgeScore": 78.8,
+              "expectedOuts": 4.5,
+              "reasonTags": [
+                "scramble risk",
+                "unknown-sample arm"
+              ]
+            }
+          ],
+          "summaryLine": "Pierce Johnson leads the shadow board; Tejay Antone is the main alt with 25.9% of the shadow share."
+        }
+      },
+      "lineupContext": {
+        "Royals": {
+          "averageMatchupGrade": 3.4,
+          "trackedBatters": 9,
+          "starterThreatCount": 5,
+          "contactCount": 1,
+          "powerCount": 1,
+          "platoonCount": 6,
+          "pitchTypeEdgeCount": 8,
+          "starterPressureIndex": 94,
+          "overallPressureIndex": 94,
+          "topThirdScore": 90.1,
+          "depthScore": 51.7
+        },
+        "Reds": {
+          "averageMatchupGrade": 2.52,
+          "trackedBatters": 9,
+          "starterThreatCount": 5,
+          "contactCount": 1,
+          "powerCount": 3,
+          "platoonCount": 4,
+          "pitchTypeEdgeCount": 7,
+          "starterPressureIndex": 94,
+          "overallPressureIndex": 94,
+          "topThirdScore": 70.3,
+          "depthScore": 43.3
+        }
+      },
+      "teamState": {
+        "away": {
+          "previousResult": "loss",
+          "streakDirection": "L",
+          "streakLength": 5,
+          "winPctLast5": 0,
+          "runDiffLast5": -6.6,
+          "bullpenFlipLossCountLast5": 0,
+          "snapbackPressureIndex": 100,
+          "heatRegressionIndex": 14,
+          "formPressureIndex": 63
+        },
+        "home": {
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 1,
+          "winPctLast5": 0.4,
+          "runDiffLast5": -0.6,
+          "bullpenFlipLossCountLast5": 0,
+          "snapbackPressureIndex": 24.84,
+          "heatRegressionIndex": 29,
+          "formPressureIndex": 31.05
+        }
+      }
+    },
+    {
+      "id": "tigers-rays",
+      "gamePk": 822974,
+      "title": "Tigers @ Rays",
+      "start": "3:40 PM PT",
+      "startMinutes": 940,
+      "stage": "Evening MLB Board",
+      "tags": [
+        "MLB"
+      ],
+      "pick": "Tigers",
+      "opponent": "Rays",
+      "confidence": 52,
+      "volatility": 92,
+      "recommendationScore": 33,
+      "tier": "Pass",
+      "lean": "Model pick: Tigers on starter era and projected hit volume.",
+      "rationale": "Starter ERA: Tigers (2.38 ERA) vs Rays (3.60 ERA)",
+      "modelDesignation": "board-moneyline-v1.1",
+      "modelEdge": 0,
+      "marketProbability": 0.4118,
+      "participants": [
+        {
+          "role": "Away",
+          "name": "Tigers",
+          "americanOdds": 135,
+          "impliedProbability": 0.4255
+        },
+        {
+          "role": "Home",
+          "name": "Rays",
+          "americanOdds": -155,
+          "impliedProbability": 0.6078
+        }
+      ],
+      "oddsMarkets": [
+        {
+          "label": "Spread",
+          "value": "+1.5 -150 / -1.5 +133"
+        },
+        {
+          "label": "Total",
+          "value": "o8 -114 / u8 -105"
+        },
+        {
+          "label": "Moneyline",
+          "value": "Tigers +135 / Rays -155"
+        }
+      ],
+      "relieverShadowContext": {
+        "away": {
+          "teamName": "Tigers",
+          "modelTag": "E36 shadow",
+          "starterHookRiskPct": 0,
+          "topTwoSharePct": 21.9,
+          "remainingTop3AvailabilityAvg": 76.3,
+          "remainingTop3BridgeScoreAvg": 79.7,
+          "remainingTop3ExpectedOutsAvg": 3.19,
+          "lead": {
+            "pitcherId": 676428,
+            "name": "Brant Hurter",
+            "role": "bridge",
+            "shadowSharePct": 11.1,
+            "firstRelieverLikelihood": 62.6,
+            "availabilityScore": 95,
+            "bridgeScore": 82.3,
+            "expectedOuts": 4.3,
+            "reasonTags": [
+              "clean-entry form"
+            ]
+          },
+          "alternate": {
+            "pitcherId": 669724,
+            "name": "Brenan Hanifee",
+            "role": "middle",
+            "shadowSharePct": 10.8,
+            "firstRelieverLikelihood": 60.2,
+            "availabilityScore": 57.6,
+            "bridgeScore": 61.9,
+            "expectedOuts": 3.56,
+            "reasonTags": []
+          },
+          "top3": [
+            {
+              "pitcherId": 676428,
+              "name": "Brant Hurter",
+              "role": "bridge",
+              "shadowSharePct": 11.1,
+              "firstRelieverLikelihood": 62.6,
+              "availabilityScore": 95,
+              "bridgeScore": 82.3,
+              "expectedOuts": 4.3,
+              "reasonTags": [
+                "clean-entry form"
+              ]
+            },
+            {
+              "pitcherId": 669724,
+              "name": "Brenan Hanifee",
+              "role": "middle",
+              "shadowSharePct": 10.8,
+              "firstRelieverLikelihood": 60.2,
+              "availabilityScore": 57.6,
+              "bridgeScore": 61.9,
+              "expectedOuts": 3.56,
+              "reasonTags": []
+            },
+            {
+              "pitcherId": 676684,
+              "name": "Will Vest",
+              "role": "bridge",
+              "shadowSharePct": 10.7,
+              "firstRelieverLikelihood": 89.1,
+              "availabilityScore": 76.2,
+              "bridgeScore": 95,
+              "expectedOuts": 3.1,
+              "reasonTags": [
+                "first-five wildness"
+              ]
+            }
+          ],
+          "summaryLine": "Brant Hurter leads the shadow board; Brenan Hanifee is the main alt with 21.9% of the shadow share."
+        },
+        "home": {
+          "teamName": "Rays",
+          "modelTag": "E36 shadow",
+          "starterHookRiskPct": 0,
+          "topTwoSharePct": 25.8,
+          "remainingTop3AvailabilityAvg": 84.1,
+          "remainingTop3BridgeScoreAvg": 82.6,
+          "remainingTop3ExpectedOutsAvg": 5.06,
+          "lead": {
+            "pitcherId": 664076,
+            "name": "Garrett Cleavinger",
+            "role": "bridge",
+            "shadowSharePct": 14.5,
+            "firstRelieverLikelihood": 99,
+            "availabilityScore": 77.2,
+            "bridgeScore": 95,
+            "expectedOuts": 2.7,
+            "reasonTags": []
+          },
+          "alternate": {
+            "pitcherId": 685801,
+            "name": "Hunter Bigge",
+            "role": "middle",
+            "shadowSharePct": 11.3,
+            "firstRelieverLikelihood": 99.7,
+            "availabilityScore": 80.2,
+            "bridgeScore": 95,
+            "expectedOuts": 3.4,
+            "reasonTags": [
+              "first-five wildness"
+            ]
+          },
+          "top3": [
+            {
+              "pitcherId": 664076,
+              "name": "Garrett Cleavinger",
+              "role": "bridge",
+              "shadowSharePct": 14.5,
+              "firstRelieverLikelihood": 99,
+              "availabilityScore": 77.2,
+              "bridgeScore": 95,
+              "expectedOuts": 2.7,
+              "reasonTags": []
+            },
+            {
+              "pitcherId": 685801,
+              "name": "Hunter Bigge",
+              "role": "middle",
+              "shadowSharePct": 11.3,
+              "firstRelieverLikelihood": 99.7,
+              "availabilityScore": 80.2,
+              "bridgeScore": 95,
+              "expectedOuts": 3.4,
+              "reasonTags": [
+                "first-five wildness"
+              ]
+            },
+            {
+              "pitcherId": 694680,
+              "name": "Trevor Martin",
+              "role": "bulk",
+              "shadowSharePct": 10.7,
+              "firstRelieverLikelihood": 60.9,
+              "availabilityScore": 95,
+              "bridgeScore": 57.9,
+              "expectedOuts": 5.5,
+              "reasonTags": [
+                "bulk first-up live",
+                "unknown-sample arm"
+              ]
+            }
+          ],
+          "summaryLine": "Garrett Cleavinger leads the shadow board; Hunter Bigge is the main alt with 25.8% of the shadow share."
+        }
+      },
+      "lineupContext": {
+        "Tigers": {
+          "averageMatchupGrade": 2.07,
+          "trackedBatters": 9,
+          "starterThreatCount": 6,
+          "contactCount": 1,
+          "powerCount": 2,
+          "platoonCount": 7,
+          "pitchTypeEdgeCount": 3,
+          "starterPressureIndex": 94,
+          "overallPressureIndex": 94,
+          "topThirdScore": 82.9,
+          "depthScore": 37
+        },
+        "Rays": {
+          "averageMatchupGrade": 0.49,
+          "trackedBatters": 9,
+          "starterThreatCount": 3,
+          "contactCount": 4,
+          "powerCount": 4,
+          "platoonCount": 7,
+          "pitchTypeEdgeCount": 1,
+          "starterPressureIndex": 61.7,
+          "overallPressureIndex": 61.6,
+          "topThirdScore": 73.2,
+          "depthScore": 23.4
+        }
+      },
+      "teamState": {
+        "away": {
+          "previousResult": "loss",
+          "streakDirection": "L",
+          "streakLength": 4,
+          "winPctLast5": 0.2,
+          "runDiffLast5": -2,
+          "bullpenFlipLossCountLast5": 2,
+          "snapbackPressureIndex": 87.44,
+          "heatRegressionIndex": 14,
+          "formPressureIndex": 63.35
+        },
+        "home": {
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 1,
+          "winPctLast5": 0.4,
+          "runDiffLast5": -3.8,
+          "bullpenFlipLossCountLast5": 0,
+          "snapbackPressureIndex": 26.84,
+          "heatRegressionIndex": 23,
+          "formPressureIndex": 30.08
+        }
+      }
+    },
+    {
+      "id": "white-sox-twins",
+      "gamePk": 823702,
+      "title": "White Sox @ Twins",
+      "start": "4:40 PM PT",
+      "startMinutes": 1000,
+      "stage": "Evening MLB Board",
+      "tags": [
+        "MLB"
+      ],
+      "pick": "White Sox",
+      "opponent": "Twins",
+      "confidence": 52,
+      "volatility": 92,
+      "recommendationScore": 35,
+      "tier": "Pass",
+      "lean": "Model pick: White Sox on projected hit volume and standings profile.",
+      "rationale": "Projected hit volume: White Sox (8.8 hits | 25.3% efficiency) vs Twins (5.2 hits | 15.1% efficiency)",
+      "modelDesignation": "board-moneyline-v1.1",
+      "modelEdge": 11.2,
+      "marketProbability": 0.4357,
+      "participants": [
+        {
+          "role": "Away",
+          "name": "White Sox",
+          "americanOdds": 122,
+          "impliedProbability": 0.4505
+        },
+        {
+          "role": "Home",
+          "name": "Twins",
+          "americanOdds": -140,
+          "impliedProbability": 0.5833
+        }
+      ],
+      "oddsMarkets": [
+        {
+          "label": "Spread",
+          "value": "+1.5 -168 / -1.5 +150"
+        },
+        {
+          "label": "Total",
+          "value": "o8 -105 / u8 -114"
+        },
+        {
+          "label": "Moneyline",
+          "value": "White Sox +122 / Twins -140"
+        }
+      ],
+      "relieverShadowContext": {
+        "away": {
+          "teamName": "White Sox",
+          "modelTag": "E36 shadow",
+          "starterHookRiskPct": 0,
+          "topTwoSharePct": 28.4,
+          "remainingTop3AvailabilityAvg": 65.9,
+          "remainingTop3BridgeScoreAvg": 74.3,
+          "remainingTop3ExpectedOutsAvg": 3.47,
+          "lead": {
+            "pitcherId": 699823,
+            "name": "Tyler Davis",
+            "role": "middle",
+            "shadowSharePct": 14.4,
+            "firstRelieverLikelihood": 56.7,
+            "availabilityScore": 60.1,
+            "bridgeScore": 60.6,
+            "expectedOuts": 3.6,
+            "reasonTags": [
+              "bulk first-up live",
+              "first-five wildness"
+            ]
+          },
+          "alternate": {
+            "pitcherId": 685126,
+            "name": "Brandon Eisert",
+            "role": "middle",
+            "shadowSharePct": 14,
+            "firstRelieverLikelihood": 94.7,
+            "availabilityScore": 60.8,
+            "bridgeScore": 95,
+            "expectedOuts": 3.11,
+            "reasonTags": [
+              "bulk first-up live",
+              "first-five wildness"
+            ]
+          },
+          "top3": [
+            {
+              "pitcherId": 699823,
+              "name": "Tyler Davis",
+              "role": "middle",
+              "shadowSharePct": 14.4,
+              "firstRelieverLikelihood": 56.7,
+              "availabilityScore": 60.1,
+              "bridgeScore": 60.6,
+              "expectedOuts": 3.6,
+              "reasonTags": [
+                "bulk first-up live",
+                "first-five wildness"
+              ]
+            },
+            {
+              "pitcherId": 685126,
+              "name": "Brandon Eisert",
+              "role": "middle",
+              "shadowSharePct": 14,
+              "firstRelieverLikelihood": 94.7,
+              "availabilityScore": 60.8,
+              "bridgeScore": 95,
+              "expectedOuts": 3.11,
+              "reasonTags": [
+                "bulk first-up live",
+                "first-five wildness"
+              ]
+            },
+            {
+              "pitcherId": 670950,
+              "name": "Trevor Richards",
+              "role": "middle",
+              "shadowSharePct": 12.7,
+              "firstRelieverLikelihood": 64,
+              "availabilityScore": 76.7,
+              "bridgeScore": 67.2,
+              "expectedOuts": 4.2,
+              "reasonTags": [
+                "bulk first-up live",
+                "first-five wildness"
+              ]
+            }
+          ],
+          "summaryLine": "Tyler Davis leads the shadow board; Brandon Eisert is the main alt with 28.4% of the shadow share."
+        },
+        "home": {
+          "teamName": "Twins",
+          "modelTag": "E36 shadow",
+          "starterHookRiskPct": 0,
+          "topTwoSharePct": 23.5,
+          "remainingTop3AvailabilityAvg": 79,
+          "remainingTop3BridgeScoreAvg": 79.1,
+          "remainingTop3ExpectedOutsAvg": 3.16,
+          "lead": {
+            "pitcherId": 702193,
+            "name": "Andrew Morris",
+            "role": "middle",
+            "shadowSharePct": 12.2,
+            "firstRelieverLikelihood": 92.3,
+            "availabilityScore": 95,
+            "bridgeScore": 91.3,
+            "expectedOuts": 3.4,
+            "reasonTags": [
+              "bulk first-up live",
+              "first-five wildness"
+            ]
+          },
+          "alternate": {
+            "pitcherId": 607455,
+            "name": "Anthony Banda",
+            "role": "middle",
+            "shadowSharePct": 11.3,
+            "firstRelieverLikelihood": 50.1,
+            "availabilityScore": 74.7,
+            "bridgeScore": 51.1,
+            "expectedOuts": 2.8,
+            "reasonTags": [
+              "bulk first-up live"
+            ]
+          },
+          "top3": [
+            {
+              "pitcherId": 702193,
+              "name": "Andrew Morris",
+              "role": "middle",
+              "shadowSharePct": 12.2,
+              "firstRelieverLikelihood": 92.3,
+              "availabilityScore": 95,
+              "bridgeScore": 91.3,
+              "expectedOuts": 3.4,
+              "reasonTags": [
+                "bulk first-up live",
+                "first-five wildness"
+              ]
+            },
+            {
+              "pitcherId": 607455,
+              "name": "Anthony Banda",
+              "role": "middle",
+              "shadowSharePct": 11.3,
+              "firstRelieverLikelihood": 50.1,
+              "availabilityScore": 74.7,
+              "bridgeScore": 51.1,
+              "expectedOuts": 2.8,
+              "reasonTags": [
+                "bulk first-up live"
+              ]
+            },
+            {
+              "pitcherId": 681892,
+              "name": "Kody Funderburk",
+              "role": "bridge",
+              "shadowSharePct": 10.5,
+              "firstRelieverLikelihood": 86.8,
+              "availabilityScore": 67.5,
+              "bridgeScore": 95,
+              "expectedOuts": 2.9,
+              "reasonTags": [
+                "bulk first-up live",
+                "first-five wildness"
+              ]
+            }
+          ],
+          "summaryLine": "Andrew Morris leads the shadow board; Anthony Banda is the main alt with 23.5% of the shadow share."
+        }
+      },
+      "lineupContext": {
+        "White Sox": {
+          "averageMatchupGrade": 1.45,
+          "trackedBatters": 9,
+          "starterThreatCount": 4,
+          "contactCount": 2,
+          "powerCount": 2,
+          "platoonCount": 7,
+          "pitchTypeEdgeCount": 2,
+          "starterPressureIndex": 76.8,
+          "overallPressureIndex": 76.5,
+          "topThirdScore": 45.6,
+          "depthScore": 67.4
+        },
+        "Twins": {
+          "averageMatchupGrade": -2.37,
+          "trackedBatters": 9,
+          "starterThreatCount": 3,
+          "contactCount": 1,
+          "powerCount": 1,
+          "platoonCount": 7,
+          "pitchTypeEdgeCount": 1,
+          "starterPressureIndex": 47,
+          "overallPressureIndex": 51.7,
+          "topThirdScore": 76.9,
+          "depthScore": 29.1
+        }
+      },
+      "teamState": {
+        "away": {
+          "previousResult": "win",
+          "streakDirection": "W",
+          "streakLength": 5,
+          "winPctLast5": 1,
+          "runDiffLast5": 5,
+          "bullpenFlipLossCountLast5": 0,
+          "snapbackPressureIndex": 14,
+          "heatRegressionIndex": 100,
+          "formPressureIndex": 63
+        },
+        "home": {
+          "previousResult": "loss",
+          "streakDirection": "L",
+          "streakLength": 5,
+          "winPctLast5": 0,
+          "runDiffLast5": -5,
+          "bullpenFlipLossCountLast5": 1,
+          "snapbackPressureIndex": 100,
+          "heatRegressionIndex": 14,
+          "formPressureIndex": 66
+        }
+      }
+    }
+  ],
+  "sidePicks": [
+    {
+      "gameId": "tigers-rays",
+      "gameTitle": "Tigers @ Rays",
+      "predictedTeam": "Tigers",
+      "predictedSide": "away",
+      "confidence": 52,
+      "modelEdge": 0,
+      "marketProbability": 0.4118,
+      "pickIsMarketFavorite": false,
+      "pickIsMarketUnderdog": true,
+      "vetoCount": 2,
+      "recommendedAction": "Hard pass",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 21.8,
+        "pickDeadBatTrafficRate": 0.4,
+        "pickTrafficNoConversionRate": 0,
+        "pickBullpenMistakeChaos": 55.2,
+        "oppBullpenMistakeChaos": 58.1,
+        "pickTeamRunClustering": 66.4,
+        "pickTeamMistakeChaos": 57.5,
+        "oppTeamMistakeChaos": 74.7
+      }
+    },
+    {
+      "gameId": "marlins-nationals",
+      "gameTitle": "Marlins @ Nationals",
+      "predictedTeam": "Nationals",
+      "predictedSide": "home",
+      "confidence": 52,
+      "modelEdge": 6.3,
+      "marketProbability": 0.5639,
+      "pickIsMarketFavorite": true,
+      "pickIsMarketUnderdog": false,
+      "vetoCount": 1,
+      "recommendedAction": "Pass",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 44.7,
+        "pickDeadBatTrafficRate": 0.4,
+        "pickTrafficNoConversionRate": 0,
+        "pickBullpenMistakeChaos": 51.4,
+        "oppBullpenMistakeChaos": 57.4,
+        "pickTeamRunClustering": 65,
+        "pickTeamMistakeChaos": 45.6,
+        "oppTeamMistakeChaos": 70.3
+      }
+    },
+    {
+      "gameId": "royals-reds",
+      "gameTitle": "Royals @ Reds",
+      "predictedTeam": "Reds",
+      "predictedSide": "home",
+      "confidence": 53,
+      "modelEdge": 1.9,
+      "marketProbability": 0.5417,
+      "pickIsMarketFavorite": true,
+      "pickIsMarketUnderdog": false,
+      "vetoCount": 1,
+      "recommendedAction": "Pass",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 31.4,
+        "pickDeadBatTrafficRate": 0.3,
+        "pickTrafficNoConversionRate": 0.1,
+        "pickBullpenMistakeChaos": 41.1,
+        "oppBullpenMistakeChaos": 59.1,
+        "pickTeamRunClustering": 66.3,
+        "pickTeamMistakeChaos": 56.4,
+        "oppTeamMistakeChaos": 73.4
+      }
+    },
+    {
+      "gameId": "giants-brewers",
+      "gameTitle": "Giants @ Brewers",
+      "predictedTeam": "Brewers",
+      "predictedSide": "home",
+      "confidence": 52,
+      "modelEdge": 0,
+      "marketProbability": 0.5744,
+      "pickIsMarketFavorite": true,
+      "pickIsMarketUnderdog": false,
+      "vetoCount": 3,
+      "recommendedAction": "Hard pass",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 32.1,
+        "pickDeadBatTrafficRate": 0.3,
+        "pickTrafficNoConversionRate": 0,
+        "pickBullpenMistakeChaos": 45.5,
+        "oppBullpenMistakeChaos": 63.6,
+        "pickTeamRunClustering": 75.5,
+        "pickTeamMistakeChaos": 56.1,
+        "oppTeamMistakeChaos": 70.2
+      }
+    },
+    {
+      "gameId": "white-sox-twins",
+      "gameTitle": "White Sox @ Twins",
+      "predictedTeam": "White Sox",
+      "predictedSide": "away",
+      "confidence": 52,
+      "modelEdge": 11.2,
+      "marketProbability": 0.4357,
+      "pickIsMarketFavorite": false,
+      "pickIsMarketUnderdog": true,
+      "vetoCount": 0,
+      "recommendedAction": "Protected dog",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 65.5,
+        "pickDeadBatTrafficRate": 0,
+        "pickTrafficNoConversionRate": 0,
+        "pickBullpenMistakeChaos": 49,
+        "oppBullpenMistakeChaos": 46.9,
+        "pickTeamRunClustering": 75.5,
+        "pickTeamMistakeChaos": 48.1,
+        "oppTeamMistakeChaos": 68.1
+      }
+    },
+    {
+      "gameId": "rangers-cardinals",
+      "gameTitle": "Rangers @ Cardinals",
+      "predictedTeam": "Cardinals",
+      "predictedSide": "home",
+      "confidence": 52,
+      "modelEdge": 0,
+      "marketProbability": 0.4615,
+      "pickIsMarketFavorite": false,
+      "pickIsMarketUnderdog": true,
+      "vetoCount": 2,
+      "recommendedAction": "Hard pass",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 29.9,
+        "pickDeadBatTrafficRate": 0.3,
+        "pickTrafficNoConversionRate": 0,
+        "pickBullpenMistakeChaos": 50.7,
+        "oppBullpenMistakeChaos": 52,
+        "pickTeamRunClustering": 71.7,
+        "pickTeamMistakeChaos": 58.7,
+        "oppTeamMistakeChaos": 62.3
+      }
+    },
+    {
+      "gameId": "rockies-angels",
+      "gameTitle": "Rockies @ Angels",
+      "predictedTeam": "Angels",
+      "predictedSide": "home",
+      "confidence": 52,
+      "modelEdge": 10.9,
+      "marketProbability": 0.6366,
+      "pickIsMarketFavorite": true,
+      "pickIsMarketUnderdog": false,
+      "vetoCount": 2,
+      "recommendedAction": "Hard pass",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 57.2,
+        "pickDeadBatTrafficRate": 0.1,
+        "pickTrafficNoConversionRate": 0.1,
+        "pickBullpenMistakeChaos": 51,
+        "oppBullpenMistakeChaos": 68.2,
+        "pickTeamRunClustering": 72.3,
+        "pickTeamMistakeChaos": 53.8,
+        "oppTeamMistakeChaos": 72.1
+      }
+    },
+    {
+      "gameId": "dodgers-diamondbacks",
+      "gameTitle": "Dodgers @ Diamondbacks",
+      "predictedTeam": "Dodgers",
+      "predictedSide": "away",
+      "confidence": 59,
+      "modelEdge": 4.2,
+      "marketProbability": 0.5963,
+      "pickIsMarketFavorite": true,
+      "pickIsMarketUnderdog": false,
+      "vetoCount": 0,
+      "recommendedAction": "Eligible",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 68.5,
+        "pickDeadBatTrafficRate": 0,
+        "pickTrafficNoConversionRate": 0.1,
+        "pickBullpenMistakeChaos": 31.2,
+        "oppBullpenMistakeChaos": 36.2,
+        "pickTeamRunClustering": 72.2,
+        "pickTeamMistakeChaos": 51.8,
+        "oppTeamMistakeChaos": 49.8
+      }
+    },
+    {
+      "gameId": "mets-mariners",
+      "gameTitle": "Mets @ Mariners",
+      "predictedTeam": "Mariners",
+      "predictedSide": "home",
+      "confidence": 68,
+      "modelEdge": 7.7,
+      "marketProbability": 0.5451,
+      "pickIsMarketFavorite": true,
+      "pickIsMarketUnderdog": false,
+      "vetoCount": 0,
+      "recommendedAction": "Eligible",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 73.9,
+        "pickDeadBatTrafficRate": 0,
+        "pickTrafficNoConversionRate": 0.1,
+        "pickBullpenMistakeChaos": 38.2,
+        "oppBullpenMistakeChaos": 47.8,
+        "pickTeamRunClustering": 63.5,
+        "pickTeamMistakeChaos": 49.8,
+        "oppTeamMistakeChaos": 63.5
+      }
+    }
+  ],
+  "props": {
+    "modelName": "mlb-player-props-v2",
+    "summary": {
+      "totalGames": 9,
+      "totalPicks": 19,
+      "byType": {
+        "totalBases": 5,
+        "pitcherStrikeouts": 7,
+        "singles": 6,
+        "rbi": 1
+      }
+    },
+    "picks": [
+      {
+        "rank": 1,
+        "id": "dodgers-diamondbacks:681624:totalBases",
+        "gameId": "dodgers-diamondbacks",
+        "gameTitle": "Dodgers @ Diamondbacks",
+        "playerId": 681624,
+        "playerName": "Andy Pages",
+        "teamName": "Dodgers",
+        "propType": "totalBases",
+        "marketLabel": "Over 1.5 total bases",
+        "lineThreshold": 1.5,
+        "confidence": 82,
+        "probability": 98.2,
+        "expectedValue": 6,
+        "recommendationTier": "Core",
+        "shadowSupportTag": "Career-backed heat",
+        "reason": "slot 2 carry | single-slate heat fits the career power story, but opponent-strength repeatability is not fully proven; starter fit + career power supports it | rolling Statcast power is live | repeatable career power"
+      },
+      {
+        "rank": 2,
+        "id": "mets-mariners:665742:totalBases",
+        "gameId": "mets-mariners",
+        "gameTitle": "Mets @ Mariners",
+        "playerId": 665742,
+        "playerName": "Juan Soto",
+        "teamName": "Mets",
+        "propType": "totalBases",
+        "marketLabel": "Over 1.5 total bases",
+        "lineThreshold": 1.5,
+        "confidence": 82,
+        "probability": 93.5,
+        "expectedValue": 4.4,
+        "recommendationTier": "Core",
+        "shadowSupportTag": "Career-backed heat",
+        "reason": "slot 3 carry | single-slate heat fits the career power story, but opponent-strength repeatability is not fully proven; arsenal fit + starter fit + career power supports it | rolling Statcast power is live | repeatable career power"
+      },
+      {
+        "rank": 3,
+        "id": "royals-reds:677951:totalBases",
+        "gameId": "royals-reds",
+        "gameTitle": "Royals @ Reds",
+        "playerId": 677951,
+        "playerName": "Bobby Witt Jr.",
+        "teamName": "Royals",
+        "propType": "totalBases",
+        "marketLabel": "Over 1.5 total bases",
+        "lineThreshold": 1.5,
+        "confidence": 82,
+        "probability": 92.6,
+        "expectedValue": 4.3,
+        "recommendationTier": "Core",
+        "shadowSupportTag": "TB backed",
+        "reason": "slot 2 carry | TB backed by real damage contact and tougher-opponent hold; arsenal fit + starter fit + career power supports it too | rolling Statcast power is live | repeatable career power"
+      },
+      {
+        "rank": 4,
+        "id": "dodgers-diamondbacks:660271:totalBases",
+        "gameId": "dodgers-diamondbacks",
+        "gameTitle": "Dodgers @ Diamondbacks",
+        "playerId": 660271,
+        "playerName": "Shohei Ohtani",
+        "teamName": "Dodgers",
+        "propType": "totalBases",
+        "marketLabel": "Over 1.5 total bases",
+        "lineThreshold": 1.5,
+        "confidence": 82,
+        "probability": 92.1,
+        "expectedValue": 4.2,
+        "recommendationTier": "Core",
+        "shadowSupportTag": "Career-backed heat",
+        "reason": "slot 1 carry | single-slate heat fits the career power story, but opponent-strength repeatability is not fully proven; arsenal fit + starter fit + career power supports it | rolling Statcast power is live | repeatable career power"
+      },
+      {
+        "rank": 5,
+        "id": "tigers-rays:666018:totalBases",
+        "gameId": "tigers-rays",
+        "gameTitle": "Tigers @ Rays",
+        "playerId": 666018,
+        "playerName": "Jonathan Aranda",
+        "teamName": "Rays",
+        "propType": "totalBases",
+        "marketLabel": "Over 1.5 total bases",
+        "lineThreshold": 1.5,
+        "confidence": 82,
+        "probability": 90,
+        "expectedValue": 3.9,
+        "recommendationTier": "Core",
+        "shadowSupportTag": "TB backed",
+        "reason": "slot 2 carry | TB backed by real damage contact and tougher-opponent hold; starter fit supports it too | rolling Statcast power is live | baseline career profile"
+      },
+      {
+        "rank": 6,
+        "id": "giants-brewers:675660:pitcherStrikeouts",
+        "gameId": "giants-brewers",
+        "gameTitle": "Giants @ Brewers",
+        "playerId": 675660,
+        "playerName": "Shane Drohan",
+        "teamName": "Brewers",
+        "propType": "pitcherStrikeouts",
+        "marketLabel": "Over 2.5 strikeouts",
+        "lineThreshold": 2.5,
+        "confidence": 81,
+        "probability": 78,
+        "expectedValue": 5.4,
+        "recommendationTier": "Core",
+        "shadowSupportTag": null,
+        "reason": "5.2 IP lane | 9.2 K/9 base | Giants are whiff-friendly"
+      },
+      {
+        "rank": 7,
+        "id": "giants-brewers:808982:singles",
+        "gameId": "giants-brewers",
+        "gameTitle": "Giants @ Brewers",
+        "playerId": 808982,
+        "playerName": "Jung Hoo Lee",
+        "teamName": "Giants",
+        "propType": "singles",
+        "marketLabel": "Over 0.5 singles",
+        "lineThreshold": 0.5,
+        "confidence": 81,
+        "probability": 87.5,
+        "expectedValue": 2.1,
+        "recommendationTier": "Core",
+        "shadowSupportTag": null,
+        "reason": "slot 5 carry | sweet-spot contact is live | recent form up | clean traffic lane"
+      },
+      {
+        "rank": 8,
+        "id": "royals-reds:668709:singles",
+        "gameId": "royals-reds",
+        "gameTitle": "Royals @ Reds",
+        "playerId": 668709,
+        "playerName": "JJ Bleday",
+        "teamName": "Reds",
+        "propType": "singles",
+        "marketLabel": "Over 0.5 singles",
+        "lineThreshold": 0.5,
+        "confidence": 81,
+        "probability": 69.1,
+        "expectedValue": 1.2,
+        "recommendationTier": "Core",
+        "shadowSupportTag": null,
+        "reason": "slot 2 carry | sweet-spot contact is live | recent form up | split fit live"
+      },
+      {
+        "rank": 9,
+        "id": "marlins-nationals:695578:singles",
+        "gameId": "marlins-nationals",
+        "gameTitle": "Marlins @ Nationals",
+        "playerId": 695578,
+        "playerName": "James Wood",
+        "teamName": "Nationals",
+        "propType": "singles",
+        "marketLabel": "Over 0.5 singles",
+        "lineThreshold": 0.5,
+        "confidence": 80,
+        "probability": 67.6,
+        "expectedValue": 1.1,
+        "recommendationTier": "Core",
+        "shadowSupportTag": null,
+        "reason": "slot 1 carry | sweet-spot contact is live | recent form up | split fit live"
+      },
+      {
+        "rank": 10,
+        "id": "rockies-angels:687093:singles",
+        "gameId": "rockies-angels",
+        "gameTitle": "Rockies @ Angels",
+        "playerId": 687093,
+        "playerName": "Vaughn Grissom",
+        "teamName": "Angels",
+        "propType": "singles",
+        "marketLabel": "Over 0.5 singles",
+        "lineThreshold": 0.5,
+        "confidence": 79,
+        "probability": 70.3,
+        "expectedValue": 1.2,
+        "recommendationTier": "Core",
+        "shadowSupportTag": null,
+        "reason": "slot 3 carry | recent form up | split fit live | clean traffic lane"
+      },
+      {
+        "rank": 11,
+        "id": "mets-mariners:676106:pitcherStrikeouts",
+        "gameId": "mets-mariners",
+        "gameTitle": "Mets @ Mariners",
+        "playerId": 676106,
+        "playerName": "Emerson Hancock",
+        "teamName": "Mariners",
+        "propType": "pitcherStrikeouts",
+        "marketLabel": "Over 4.5 strikeouts",
+        "lineThreshold": 4.5,
+        "confidence": 76,
+        "probability": 68.8,
+        "expectedValue": 5.9,
+        "recommendationTier": "Core",
+        "shadowSupportTag": null,
+        "reason": "5.9 IP lane | 8.8 K/9 base | Mets are whiff-friendly"
+      },
+      {
+        "rank": 12,
+        "id": "tigers-rays:679529:rbi",
+        "gameId": "tigers-rays",
+        "gameTitle": "Tigers @ Rays",
+        "playerId": 679529,
+        "playerName": "Spencer Torkelson",
+        "teamName": "Tigers",
+        "propType": "rbi",
+        "marketLabel": "Over 0.5 RBI",
+        "lineThreshold": 0.5,
+        "confidence": 76,
+        "probability": 79.1,
+        "expectedValue": 1.6,
+        "recommendationTier": "Strong",
+        "shadowSupportTag": null,
+        "reason": "slot 5 carry | process improving; approach 62/100 | recent form up | run-production slot"
+      },
+      {
+        "rank": 13,
+        "id": "rangers-cardinals:673962:singles",
+        "gameId": "rangers-cardinals",
+        "gameTitle": "Rangers @ Cardinals",
+        "playerId": 673962,
+        "playerName": "Josh Jung",
+        "teamName": "Rangers",
+        "propType": "singles",
+        "marketLabel": "Over 0.5 singles",
+        "lineThreshold": 0.5,
+        "confidence": 69,
+        "probability": 70.6,
+        "expectedValue": 1.2,
+        "recommendationTier": "Strong",
+        "shadowSupportTag": null,
+        "reason": "slot 2 carry | contact quality has cooled | recent form up | split fit live"
+      },
+      {
+        "rank": 14,
+        "id": "white-sox-twins:671976:singles",
+        "gameId": "white-sox-twins",
+        "gameTitle": "White Sox @ Twins",
+        "playerId": 671976,
+        "playerName": "Tristan Peters",
+        "teamName": "White Sox",
+        "propType": "singles",
+        "marketLabel": "Over 0.5 singles",
+        "lineThreshold": 0.5,
+        "confidence": 69,
+        "probability": 69.9,
+        "expectedValue": 1.2,
+        "recommendationTier": "Strong",
+        "shadowSupportTag": null,
+        "reason": "slot 7 carry | sweet-spot contact is live | recent form up | split fit live"
+      },
+      {
+        "rank": 15,
+        "id": "rockies-angels:607536:pitcherStrikeouts",
+        "gameId": "rockies-angels",
+        "gameTitle": "Rockies @ Angels",
+        "playerId": 607536,
+        "playerName": "Kyle Freeland",
+        "teamName": "Rockies",
+        "propType": "pitcherStrikeouts",
+        "marketLabel": "Under 4.5 strikeouts",
+        "lineThreshold": 4.5,
+        "confidence": 66,
+        "probability": 56,
+        "expectedValue": 4.1,
+        "recommendationTier": "Lean",
+        "shadowSupportTag": null,
+        "reason": "4.7 IP lane | 8.3 K/9 base | Angels are whiff-friendly"
+      },
+      {
+        "rank": 16,
+        "id": "rangers-cardinals:700241:pitcherStrikeouts",
+        "gameId": "rangers-cardinals",
+        "gameTitle": "Rangers @ Cardinals",
+        "playerId": 700241,
+        "playerName": "Michael McGreevy",
+        "teamName": "Cardinals",
+        "propType": "pitcherStrikeouts",
+        "marketLabel": "Over 3.5 strikeouts",
+        "lineThreshold": 3.5,
+        "confidence": 66,
+        "probability": 56.3,
+        "expectedValue": 4,
+        "recommendationTier": "Lean",
+        "shadowSupportTag": null,
+        "reason": "5.5 IP lane | 6.4 K/9 base | Rangers are whiff-friendly"
+      },
+      {
+        "rank": 17,
+        "id": "marlins-nationals:645261:pitcherStrikeouts",
+        "gameId": "marlins-nationals",
+        "gameTitle": "Marlins @ Nationals",
+        "playerId": 645261,
+        "playerName": "Sandy Alcantara",
+        "teamName": "Marlins",
+        "propType": "pitcherStrikeouts",
+        "marketLabel": "Over 3.5 strikeouts",
+        "lineThreshold": 3.5,
+        "confidence": 65,
+        "probability": 55.9,
+        "expectedValue": 3.9,
+        "recommendationTier": "Lean",
+        "shadowSupportTag": null,
+        "reason": "6.3 IP lane | 6.2 K/9 base | Nationals are whiff-friendly"
+      },
+      {
+        "rank": 18,
+        "id": "giants-brewers:694738:pitcherStrikeouts",
+        "gameId": "giants-brewers",
+        "gameTitle": "Giants @ Brewers",
+        "playerId": 694738,
+        "playerName": "Landen Roupp",
+        "teamName": "Giants",
+        "propType": "pitcherStrikeouts",
+        "marketLabel": "Over 5.5 strikeouts",
+        "lineThreshold": 5.5,
+        "confidence": 61,
+        "probability": 56.9,
+        "expectedValue": 6,
+        "recommendationTier": "Lean",
+        "shadowSupportTag": null,
+        "reason": "5.5 IP lane | 10.2 K/9 base | Brewers suppress Ks"
+      },
+      {
+        "rank": 19,
+        "id": "dodgers-diamondbacks:593958:pitcherStrikeouts",
+        "gameId": "dodgers-diamondbacks",
+        "gameTitle": "Dodgers @ Diamondbacks",
+        "playerId": 593958,
+        "playerName": "Eduardo Rodriguez",
+        "teamName": "Diamondbacks",
+        "propType": "pitcherStrikeouts",
+        "marketLabel": "Over 3.5 strikeouts",
+        "lineThreshold": 3.5,
+        "confidence": 60,
+        "probability": 56.6,
+        "expectedValue": 4,
+        "recommendationTier": "Lean",
+        "shadowSupportTag": null,
+        "reason": "6.0 IP lane | 6.6 K/9 base | Dodgers suppress Ks"
+      }
+    ]
+  },
+  "homeRuns": {
+    "modelName": "statcast-hr-prototype-v3",
+    "picks": [
+      {
+        "rank": 1,
+        "playerId": 677951,
+        "playerName": "Bobby Witt Jr.",
+        "teamName": "Royals",
+        "gameTitle": "Royals @ Reds",
+        "opposingPitcher": "Lyon Richardson",
+        "opposingPitcherHand": "R",
+        "parkHrIndex": 122,
+        "seasonHr": 9,
+        "seasonXHR": 8.6,
+        "baseScore": 124.9966,
+        "lineupPriority": 40,
+        "weatherBoost": 1,
+        "recentHrSinceMay1": 6,
+        "daysSinceLastHr": 6
+      },
+      {
+        "rank": 2,
+        "playerId": 665742,
+        "playerName": "Juan Soto",
+        "teamName": "Mets",
+        "gameTitle": "Mets @ Mariners",
+        "opposingPitcher": "Emerson Hancock",
+        "opposingPitcherHand": "R",
+        "parkHrIndex": 100,
+        "seasonHr": 13,
+        "seasonXHR": 13.7,
+        "baseScore": 100.8488,
+        "lineupPriority": 58.8,
+        "weatherBoost": -1.6,
+        "recentHrSinceMay1": 10,
+        "daysSinceLastHr": 1
+      },
+      {
+        "rank": 3,
+        "playerId": 695578,
+        "playerName": "James Wood",
+        "teamName": "Nationals",
+        "gameTitle": "Marlins @ Nationals",
+        "opposingPitcher": "Sandy Alcantara",
+        "opposingPitcherHand": "R",
+        "parkHrIndex": 100,
+        "seasonHr": 16,
+        "seasonXHR": 16.2,
+        "baseScore": 111.7391,
+        "lineupPriority": 63.5,
+        "weatherBoost": 0,
+        "recentHrSinceMay1": 6,
+        "daysSinceLastHr": 1
+      },
+      {
+        "rank": 4,
+        "playerId": 686681,
+        "playerName": "Michael Massey",
+        "teamName": "Royals",
+        "gameTitle": "Royals @ Reds",
+        "opposingPitcher": "Lyon Richardson",
+        "opposingPitcherHand": "R",
+        "parkHrIndex": 122,
+        "seasonHr": 4,
+        "seasonXHR": 5.3,
+        "baseScore": 106.2743,
+        "lineupPriority": 25.8,
+        "weatherBoost": 1,
+        "recentHrSinceMay1": 3,
+        "daysSinceLastHr": 1
+      },
+      {
+        "rank": 5,
+        "playerId": 621439,
+        "playerName": "Byron Buxton",
+        "teamName": "Twins",
+        "gameTitle": "White Sox @ Twins",
+        "opposingPitcher": "David Sandlin",
+        "opposingPitcherHand": "R",
+        "parkHrIndex": 98,
+        "seasonHr": 17,
+        "seasonXHR": 16.6,
+        "baseScore": 97.2997,
+        "lineupPriority": 47.1,
+        "weatherBoost": -2,
+        "recentHrSinceMay1": 9,
+        "daysSinceLastHr": 5
+      },
+      {
+        "rank": 6,
+        "playerId": 695600,
+        "playerName": "Carter Jensen",
+        "teamName": "Royals",
+        "gameTitle": "Royals @ Reds",
+        "opposingPitcher": "Lyon Richardson",
+        "opposingPitcherHand": "R",
+        "parkHrIndex": 122,
+        "seasonHr": 7,
+        "seasonXHR": 6.7,
+        "baseScore": 109.1067,
+        "lineupPriority": 31.7,
+        "weatherBoost": 1,
+        "recentHrSinceMay1": 1,
+        "daysSinceLastHr": 2
+      },
+      {
+        "rank": 7,
+        "playerId": 545361,
+        "playerName": "Mike Trout",
+        "teamName": "Angels",
+        "gameTitle": "Rockies @ Angels",
+        "opposingPitcher": "Kyle Freeland",
+        "opposingPitcherHand": "L",
+        "parkHrIndex": 100,
+        "seasonHr": 14,
+        "seasonXHR": 14.6,
+        "baseScore": 96.3069,
+        "lineupPriority": 34.8,
+        "weatherBoost": 2,
+        "recentHrSinceMay1": 4,
+        "daysSinceLastHr": 2
+      },
+      {
+        "rank": 8,
+        "playerId": 686469,
+        "playerName": "Vinnie Pasquantino",
+        "teamName": "Royals",
+        "gameTitle": "Royals @ Reds",
+        "opposingPitcher": "Lyon Richardson",
+        "opposingPitcherHand": "R",
+        "parkHrIndex": 122,
+        "seasonHr": 5,
+        "seasonXHR": 6.4,
+        "baseScore": 107.3952,
+        "lineupPriority": 25.3,
+        "weatherBoost": 1,
+        "recentHrSinceMay1": 2,
+        "daysSinceLastHr": 25
+      },
+      {
+        "rank": 9,
+        "playerId": 666176,
+        "playerName": "Jo Adell",
+        "teamName": "Angels",
+        "gameTitle": "Rockies @ Angels",
+        "opposingPitcher": "Kyle Freeland",
+        "opposingPitcherHand": "L",
+        "parkHrIndex": 100,
+        "seasonHr": 9,
+        "seasonXHR": 8.9,
+        "baseScore": 84.0396,
+        "lineupPriority": 42.2,
+        "weatherBoost": 2,
+        "recentHrSinceMay1": 5,
+        "daysSinceLastHr": 2
+      },
+      {
+        "rank": 10,
+        "playerId": 650490,
+        "playerName": "Yandy Díaz",
+        "teamName": "Rays",
+        "gameTitle": "Tigers @ Rays",
+        "opposingPitcher": "Ty Madden",
+        "opposingPitcherHand": "R",
+        "parkHrIndex": 100,
+        "seasonHr": 11,
+        "seasonXHR": 11.7,
+        "baseScore": 86.3103,
+        "lineupPriority": 52.7,
+        "weatherBoost": -0.8,
+        "recentHrSinceMay1": 7,
+        "daysSinceLastHr": 2
+      },
+      {
+        "rank": 11,
+        "playerId": 668709,
+        "playerName": "JJ Bleday",
+        "teamName": "Reds",
+        "gameTitle": "Royals @ Reds",
+        "opposingPitcher": "Luinder Avila",
+        "opposingPitcherHand": "R",
+        "parkHrIndex": 122,
+        "seasonHr": 9,
+        "seasonXHR": 7.7,
+        "baseScore": 81.6154,
+        "lineupPriority": 58.6,
+        "weatherBoost": 1,
+        "recentHrSinceMay1": 8,
+        "daysSinceLastHr": 2
+      },
+      {
+        "rank": 12,
+        "playerId": 670042,
+        "playerName": "Luke Raley",
+        "teamName": "Mariners",
+        "gameTitle": "Mets @ Mariners",
+        "opposingPitcher": "Austin Warren",
+        "opposingPitcherHand": "R",
+        "parkHrIndex": 100,
+        "seasonHr": 13,
+        "seasonXHR": 10,
+        "baseScore": 82.9599,
+        "lineupPriority": 55.2,
+        "weatherBoost": -1.6,
+        "recentHrSinceMay1": 8,
+        "daysSinceLastHr": 2
+      }
+    ]
+  },
+  "relieverShadow": {
+    "meta": {
+      "date": "2026-06-01",
+      "modelTag": "E36 shadow",
+      "candidateCount": 178,
+      "teamCount": 18,
+      "conversionWindow": 8,
+      "dependencyWindow": 5,
+      "researchRates": {
+        "exactRate": 26.5,
+        "top2Rate": 44.5,
+        "top3Rate": 59.6
+      }
+    },
+    "teams": {
+      "Angels": {
+        "teamName": "Angels",
+        "modelTag": "E36 shadow",
+        "starterHookRiskPct": 0,
+        "topTwoSharePct": 37.5,
+        "remainingTop3AvailabilityAvg": 73.1,
+        "remainingTop3BridgeScoreAvg": 78.5,
+        "remainingTop3ExpectedOutsAvg": 2.86,
+        "lead": {
+          "pitcherId": 820862,
+          "name": "José Fermin",
+          "role": "middle",
+          "shadowSharePct": 19,
+          "firstRelieverLikelihood": 96.3,
+          "availabilityScore": 73.8,
+          "bridgeScore": 91.1,
+          "expectedOuts": 2.5,
+          "reasonTags": [
+            "scramble risk"
+          ]
+        },
+        "alternate": {
+          "pitcherId": 666171,
+          "name": "Ryan Zeferjahn",
+          "role": "middle",
+          "shadowSharePct": 18.5,
+          "firstRelieverLikelihood": 83.4,
+          "availabilityScore": 75.8,
+          "bridgeScore": 75,
+          "expectedOuts": 2.8,
+          "reasonTags": [
+            "scramble risk",
+            "first-five wildness"
+          ]
+        },
+        "top3": [
+          {
+            "pitcherId": 820862,
+            "name": "José Fermin",
+            "role": "middle",
+            "shadowSharePct": 19,
+            "firstRelieverLikelihood": 96.3,
+            "availabilityScore": 73.8,
+            "bridgeScore": 91.1,
+            "expectedOuts": 2.5,
+            "reasonTags": [
+              "scramble risk"
+            ]
+          },
+          {
+            "pitcherId": 666171,
+            "name": "Ryan Zeferjahn",
+            "role": "middle",
+            "shadowSharePct": 18.5,
+            "firstRelieverLikelihood": 83.4,
+            "availabilityScore": 75.8,
+            "bridgeScore": 75,
+            "expectedOuts": 2.8,
+            "reasonTags": [
+              "scramble risk",
+              "first-five wildness"
+            ]
+          },
+          {
+            "pitcherId": 696147,
+            "name": "Sam Bachman",
+            "role": "middle",
+            "shadowSharePct": 17,
+            "firstRelieverLikelihood": 63.2,
+            "availabilityScore": 69.7,
+            "bridgeScore": 69.3,
+            "expectedOuts": 3.9,
+            "reasonTags": [
+              "scramble risk"
+            ]
+          }
+        ],
+        "summaryLine": "José Fermin leads the shadow board; Ryan Zeferjahn is the main alt with 37.5% of the shadow share."
+      },
+      "Brewers": {
+        "teamName": "Brewers",
+        "modelTag": "E36 shadow",
+        "starterHookRiskPct": 0,
+        "topTwoSharePct": 33.8,
+        "remainingTop3AvailabilityAvg": 76.9,
+        "remainingTop3BridgeScoreAvg": 93.6,
+        "remainingTop3ExpectedOutsAvg": 5,
+        "lead": {
+          "pitcherId": 675660,
+          "name": "Shane Drohan",
+          "role": "bridge",
+          "shadowSharePct": 19.2,
+          "firstRelieverLikelihood": 93,
+          "availabilityScore": 95,
+          "bridgeScore": 92.9,
+          "expectedOuts": 7.4,
+          "reasonTags": [
+            "bulk first-up live",
+            "first-five wildness"
+          ]
+        },
+        "alternate": {
+          "pitcherId": 681982,
+          "name": "Grant Anderson",
+          "role": "bridge",
+          "shadowSharePct": 14.6,
+          "firstRelieverLikelihood": 98.5,
+          "availabilityScore": 75.3,
+          "bridgeScore": 95,
+          "expectedOuts": 2.9,
+          "reasonTags": [
+            "bulk first-up live",
+            "first-five wildness"
+          ]
+        },
+        "top3": [
+          {
+            "pitcherId": 675660,
+            "name": "Shane Drohan",
+            "role": "bridge",
+            "shadowSharePct": 19.2,
+            "firstRelieverLikelihood": 93,
+            "availabilityScore": 95,
+            "bridgeScore": 92.9,
+            "expectedOuts": 7.4,
+            "reasonTags": [
+              "bulk first-up live",
+              "first-five wildness"
+            ]
+          },
+          {
+            "pitcherId": 681982,
+            "name": "Grant Anderson",
+            "role": "bridge",
+            "shadowSharePct": 14.6,
+            "firstRelieverLikelihood": 98.5,
+            "availabilityScore": 75.3,
+            "bridgeScore": 95,
+            "expectedOuts": 2.9,
+            "reasonTags": [
+              "bulk first-up live",
+              "first-five wildness"
+            ]
+          },
+          {
+            "pitcherId": 669084,
+            "name": "DL Hall",
+            "role": "bridge",
+            "shadowSharePct": 14,
+            "firstRelieverLikelihood": 84,
+            "availabilityScore": 60.2,
+            "bridgeScore": 92.9,
+            "expectedOuts": 3.8,
+            "reasonTags": [
+              "bulk first-up live",
+              "clean-entry form"
+            ]
+          }
+        ],
+        "summaryLine": "Shane Drohan leads the shadow board; Grant Anderson is the main alt with 33.8% of the shadow share."
+      },
+      "Cardinals": {
+        "teamName": "Cardinals",
+        "modelTag": "E36 shadow",
+        "starterHookRiskPct": 0,
+        "topTwoSharePct": 25.9,
+        "remainingTop3AvailabilityAvg": 73,
+        "remainingTop3BridgeScoreAvg": 74.6,
+        "remainingTop3ExpectedOutsAvg": 3.33,
+        "lead": {
+          "pitcherId": 668941,
+          "name": "JoJo Romero",
+          "role": "late",
+          "shadowSharePct": 13.2,
+          "firstRelieverLikelihood": 82.6,
+          "availabilityScore": 75.8,
+          "bridgeScore": 73.2,
+          "expectedOuts": 3.2,
+          "reasonTags": [
+            "bulk first-up live"
+          ]
+        },
+        "alternate": {
+          "pitcherId": 681676,
+          "name": "Ryan Fernandez",
+          "role": "middle",
+          "shadowSharePct": 12.7,
+          "firstRelieverLikelihood": 96.4,
+          "availabilityScore": 67.2,
+          "bridgeScore": 95,
+          "expectedOuts": 4.14,
+          "reasonTags": [
+            "bulk first-up live",
+            "first-five wildness"
+          ]
+        },
+        "top3": [
+          {
+            "pitcherId": 668941,
+            "name": "JoJo Romero",
+            "role": "late",
+            "shadowSharePct": 13.2,
+            "firstRelieverLikelihood": 82.6,
+            "availabilityScore": 75.8,
+            "bridgeScore": 73.2,
+            "expectedOuts": 3.2,
+            "reasonTags": [
+              "bulk first-up live"
+            ]
+          },
+          {
+            "pitcherId": 681676,
+            "name": "Ryan Fernandez",
+            "role": "middle",
+            "shadowSharePct": 12.7,
+            "firstRelieverLikelihood": 96.4,
+            "availabilityScore": 67.2,
+            "bridgeScore": 95,
+            "expectedOuts": 4.14,
+            "reasonTags": [
+              "bulk first-up live",
+              "first-five wildness"
+            ]
+          },
+          {
+            "pitcherId": 666277,
+            "name": "George Soriano",
+            "role": "middle",
+            "shadowSharePct": 12.5,
+            "firstRelieverLikelihood": 48.9,
+            "availabilityScore": 75.8,
+            "bridgeScore": 55.7,
+            "expectedOuts": 2.8,
+            "reasonTags": [
+              "bulk first-up live",
+              "first-five wildness"
+            ]
+          }
+        ],
+        "summaryLine": "JoJo Romero leads the shadow board; Ryan Fernandez is the main alt with 25.9% of the shadow share."
+      },
+      "Diamondbacks": {
+        "teamName": "Diamondbacks",
+        "modelTag": "E36 shadow",
+        "starterHookRiskPct": 0,
+        "topTwoSharePct": 34.5,
+        "remainingTop3AvailabilityAvg": 63.1,
+        "remainingTop3BridgeScoreAvg": 87.5,
+        "remainingTop3ExpectedOutsAvg": 3.64,
+        "lead": {
+          "pitcherId": 664199,
+          "name": "Taylor Clarke",
+          "role": "middle",
+          "shadowSharePct": 18.7,
+          "firstRelieverLikelihood": 67.7,
+          "availabilityScore": 58.4,
+          "bridgeScore": 72.5,
+          "expectedOuts": 2.3,
+          "reasonTags": []
+        },
+        "alternate": {
+          "pitcherId": 657044,
+          "name": "Ryan Thompson",
+          "role": "middle",
+          "shadowSharePct": 15.8,
+          "firstRelieverLikelihood": 96.3,
+          "availabilityScore": 66.8,
+          "bridgeScore": 95,
+          "expectedOuts": 2.7,
+          "reasonTags": []
+        },
+        "top3": [
+          {
+            "pitcherId": 664199,
+            "name": "Taylor Clarke",
+            "role": "middle",
+            "shadowSharePct": 18.7,
+            "firstRelieverLikelihood": 67.7,
+            "availabilityScore": 58.4,
+            "bridgeScore": 72.5,
+            "expectedOuts": 2.3,
+            "reasonTags": []
+          },
+          {
+            "pitcherId": 657044,
+            "name": "Ryan Thompson",
+            "role": "middle",
+            "shadowSharePct": 15.8,
+            "firstRelieverLikelihood": 96.3,
+            "availabilityScore": 66.8,
+            "bridgeScore": 95,
+            "expectedOuts": 2.7,
+            "reasonTags": []
+          },
+          {
+            "pitcherId": 694297,
+            "name": "Brandon Pfaadt",
+            "role": "bridge",
+            "shadowSharePct": 15.3,
+            "firstRelieverLikelihood": 86,
+            "availabilityScore": 64,
+            "bridgeScore": 95,
+            "expectedOuts": 6.78,
+            "reasonTags": []
+          }
+        ],
+        "summaryLine": "Taylor Clarke leads the shadow board; Ryan Thompson is the main alt with 34.5% of the shadow share."
+      },
+      "Dodgers": {
+        "teamName": "Dodgers",
+        "modelTag": "E36 shadow",
+        "starterHookRiskPct": 0,
+        "topTwoSharePct": 32.6,
+        "remainingTop3AvailabilityAvg": 70.5,
+        "remainingTop3BridgeScoreAvg": 64.9,
+        "remainingTop3ExpectedOutsAvg": 2.33,
+        "lead": {
+          "pitcherId": 681911,
+          "name": "Alex Vesia",
+          "role": "middle",
+          "shadowSharePct": 17.2,
+          "firstRelieverLikelihood": 90.5,
+          "availabilityScore": 59.1,
+          "bridgeScore": 86.9,
+          "expectedOuts": 2.1,
+          "reasonTags": [
+            "first-five wildness"
+          ]
+        },
+        "alternate": {
+          "pitcherId": 669165,
+          "name": "Kyle Hurt",
+          "role": "middle",
+          "shadowSharePct": 15.4,
+          "firstRelieverLikelihood": 63.9,
+          "availabilityScore": 76.2,
+          "bridgeScore": 67.2,
+          "expectedOuts": 3,
+          "reasonTags": []
+        },
+        "top3": [
+          {
+            "pitcherId": 681911,
+            "name": "Alex Vesia",
+            "role": "middle",
+            "shadowSharePct": 17.2,
+            "firstRelieverLikelihood": 90.5,
+            "availabilityScore": 59.1,
+            "bridgeScore": 86.9,
+            "expectedOuts": 2.1,
+            "reasonTags": [
+              "first-five wildness"
+            ]
+          },
+          {
+            "pitcherId": 669165,
+            "name": "Kyle Hurt",
+            "role": "middle",
+            "shadowSharePct": 15.4,
+            "firstRelieverLikelihood": 63.9,
+            "availabilityScore": 76.2,
+            "bridgeScore": 67.2,
+            "expectedOuts": 3,
+            "reasonTags": []
+          },
+          {
+            "pitcherId": 595014,
+            "name": "Blake Treinen",
+            "role": "late",
+            "shadowSharePct": 14.2,
+            "firstRelieverLikelihood": 42.1,
+            "availabilityScore": 76.2,
+            "bridgeScore": 40.7,
+            "expectedOuts": 2.6,
+            "reasonTags": [
+              "first-five wildness"
+            ]
+          }
+        ],
+        "summaryLine": "Alex Vesia leads the shadow board; Kyle Hurt is the main alt with 32.6% of the shadow share."
+      },
+      "Giants": {
+        "teamName": "Giants",
+        "modelTag": "E36 shadow",
+        "starterHookRiskPct": 0,
+        "topTwoSharePct": 37.1,
+        "remainingTop3AvailabilityAvg": 75.2,
+        "remainingTop3BridgeScoreAvg": 81.2,
+        "remainingTop3ExpectedOutsAvg": 3.36,
+        "lead": {
+          "pitcherId": 669062,
+          "name": "Erik Miller",
+          "role": "middle",
+          "shadowSharePct": 19.1,
+          "firstRelieverLikelihood": 63.4,
+          "availabilityScore": 74,
+          "bridgeScore": 67.2,
+          "expectedOuts": 2.8,
+          "reasonTags": [
+            "first-five wildness"
+          ]
+        },
+        "alternate": {
+          "pitcherId": 657424,
+          "name": "Matt Gage",
+          "role": "bridge",
+          "shadowSharePct": 18,
+          "firstRelieverLikelihood": 99.7,
+          "availabilityScore": 80.1,
+          "bridgeScore": 95,
+          "expectedOuts": 2.3,
+          "reasonTags": []
+        },
+        "top3": [
+          {
+            "pitcherId": 669062,
+            "name": "Erik Miller",
+            "role": "middle",
+            "shadowSharePct": 19.1,
+            "firstRelieverLikelihood": 63.4,
+            "availabilityScore": 74,
+            "bridgeScore": 67.2,
+            "expectedOuts": 2.8,
+            "reasonTags": [
+              "first-five wildness"
+            ]
+          },
+          {
+            "pitcherId": 657424,
+            "name": "Matt Gage",
+            "role": "bridge",
+            "shadowSharePct": 18,
+            "firstRelieverLikelihood": 99.7,
+            "availabilityScore": 80.1,
+            "bridgeScore": 95,
+            "expectedOuts": 2.3,
+            "reasonTags": []
+          },
+          {
+            "pitcherId": 676775,
+            "name": "Keaton Winn",
+            "role": "middle",
+            "shadowSharePct": 15.7,
+            "firstRelieverLikelihood": 85.2,
+            "availabilityScore": 71.5,
+            "bridgeScore": 81.3,
+            "expectedOuts": 3.3,
+            "reasonTags": []
+          }
+        ],
+        "summaryLine": "Erik Miller leads the shadow board; Matt Gage is the main alt with 37.1% of the shadow share."
+      },
+      "Mariners": {
+        "teamName": "Mariners",
+        "modelTag": "E36 shadow",
+        "starterHookRiskPct": 0,
+        "topTwoSharePct": 30.4,
+        "remainingTop3AvailabilityAvg": 77.8,
+        "remainingTop3BridgeScoreAvg": 78.8,
+        "remainingTop3ExpectedOutsAvg": 2.17,
+        "lead": {
+          "pitcherId": 666374,
+          "name": "Matt Brash",
+          "role": "bridge",
+          "shadowSharePct": 15.6,
+          "firstRelieverLikelihood": 87.3,
+          "availabilityScore": 72.9,
+          "bridgeScore": 92.9,
+          "expectedOuts": 2.4,
+          "reasonTags": [
+            "clean-entry form"
+          ]
+        },
+        "alternate": {
+          "pitcherId": 678606,
+          "name": "José A. Ferrer",
+          "role": "middle",
+          "shadowSharePct": 14.8,
+          "firstRelieverLikelihood": 97.2,
+          "availabilityScore": 77.4,
+          "bridgeScore": 91.1,
+          "expectedOuts": 2.6,
+          "reasonTags": []
+        },
+        "top3": [
+          {
+            "pitcherId": 666374,
+            "name": "Matt Brash",
+            "role": "bridge",
+            "shadowSharePct": 15.6,
+            "firstRelieverLikelihood": 87.3,
+            "availabilityScore": 72.9,
+            "bridgeScore": 92.9,
+            "expectedOuts": 2.4,
+            "reasonTags": [
+              "clean-entry form"
+            ]
+          },
+          {
+            "pitcherId": 678606,
+            "name": "José A. Ferrer",
+            "role": "middle",
+            "shadowSharePct": 14.8,
+            "firstRelieverLikelihood": 97.2,
+            "availabilityScore": 77.4,
+            "bridgeScore": 91.1,
+            "expectedOuts": 2.6,
+            "reasonTags": []
+          },
+          {
+            "pitcherId": 642100,
+            "name": "Gabe Speier",
+            "role": "late",
+            "shadowSharePct": 13.4,
+            "firstRelieverLikelihood": 58.9,
+            "availabilityScore": 83,
+            "bridgeScore": 52.5,
+            "expectedOuts": 2.3,
+            "reasonTags": [
+              "clean-entry form"
+            ]
+          }
+        ],
+        "summaryLine": "Matt Brash leads the shadow board; José A. Ferrer is the main alt with 30.4% of the shadow share."
+      },
+      "Marlins": {
+        "teamName": "Marlins",
+        "modelTag": "E36 shadow",
+        "starterHookRiskPct": 0,
+        "topTwoSharePct": 34.8,
+        "remainingTop3AvailabilityAvg": 89,
+        "remainingTop3BridgeScoreAvg": 68.9,
+        "remainingTop3ExpectedOutsAvg": 2.72,
+        "lead": {
+          "pitcherId": 656848,
+          "name": "Michael Petersen",
+          "role": "middle",
+          "shadowSharePct": 18,
+          "firstRelieverLikelihood": 84.7,
+          "availabilityScore": 77.2,
+          "bridgeScore": 77.1,
+          "expectedOuts": 2.8,
+          "reasonTags": [
+            "bulk first-up live"
+          ]
+        },
+        "alternate": {
+          "pitcherId": 677053,
+          "name": "Andrew Nardi",
+          "role": "middle",
+          "shadowSharePct": 16.8,
+          "firstRelieverLikelihood": 68.3,
+          "availabilityScore": 95,
+          "bridgeScore": 73.9,
+          "expectedOuts": 2.9,
+          "reasonTags": [
+            "bulk first-up live"
+          ]
+        },
+        "top3": [
+          {
+            "pitcherId": 656848,
+            "name": "Michael Petersen",
+            "role": "middle",
+            "shadowSharePct": 18,
+            "firstRelieverLikelihood": 84.7,
+            "availabilityScore": 77.2,
+            "bridgeScore": 77.1,
+            "expectedOuts": 2.8,
+            "reasonTags": [
+              "bulk first-up live"
+            ]
+          },
+          {
+            "pitcherId": 677053,
+            "name": "Andrew Nardi",
+            "role": "middle",
+            "shadowSharePct": 16.8,
+            "firstRelieverLikelihood": 68.3,
+            "availabilityScore": 95,
+            "bridgeScore": 73.9,
+            "expectedOuts": 2.9,
+            "reasonTags": [
+              "bulk first-up live"
+            ]
+          },
+          {
+            "pitcherId": 667463,
+            "name": "John King",
+            "role": "middle",
+            "shadowSharePct": 15.1,
+            "firstRelieverLikelihood": 53.9,
+            "availabilityScore": 95,
+            "bridgeScore": 55.7,
+            "expectedOuts": 2.5,
+            "reasonTags": [
+              "bulk first-up live",
+              "first-five wildness"
+            ]
+          }
+        ],
+        "summaryLine": "Michael Petersen leads the shadow board; Andrew Nardi is the main alt with 34.8% of the shadow share."
+      },
+      "Mets": {
+        "teamName": "Mets",
+        "modelTag": "E36 shadow",
+        "starterHookRiskPct": 0,
+        "topTwoSharePct": 22.6,
+        "remainingTop3AvailabilityAvg": 77.6,
+        "remainingTop3BridgeScoreAvg": 81.9,
+        "remainingTop3ExpectedOutsAvg": 2.78,
+        "lead": {
+          "pitcherId": 621345,
+          "name": "A.J. Minter",
+          "role": "bridge",
+          "shadowSharePct": 11.9,
+          "firstRelieverLikelihood": 98.4,
+          "availabilityScore": 74.9,
+          "bridgeScore": 95,
+          "expectedOuts": 3,
+          "reasonTags": [
+            "bulk first-up live",
+            "unknown-sample arm"
+          ]
+        },
+        "alternate": {
+          "pitcherId": 672335,
+          "name": "Cionel Pérez",
+          "role": "bridge",
+          "shadowSharePct": 10.7,
+          "firstRelieverLikelihood": 89,
+          "availabilityScore": 75.8,
+          "bridgeScore": 95,
+          "expectedOuts": 3.4,
+          "reasonTags": [
+            "bulk first-up live",
+            "unknown-sample arm"
+          ]
+        },
+        "top3": [
+          {
+            "pitcherId": 621345,
+            "name": "A.J. Minter",
+            "role": "bridge",
+            "shadowSharePct": 11.9,
+            "firstRelieverLikelihood": 98.4,
+            "availabilityScore": 74.9,
+            "bridgeScore": 95,
+            "expectedOuts": 3,
+            "reasonTags": [
+              "bulk first-up live",
+              "unknown-sample arm"
+            ]
+          },
+          {
+            "pitcherId": 672335,
+            "name": "Cionel Pérez",
+            "role": "bridge",
+            "shadowSharePct": 10.7,
+            "firstRelieverLikelihood": 89,
+            "availabilityScore": 75.8,
+            "bridgeScore": 95,
+            "expectedOuts": 3.4,
+            "reasonTags": [
+              "bulk first-up live",
+              "unknown-sample arm"
+            ]
+          },
+          {
+            "pitcherId": 548384,
+            "name": "Brooks Raley",
+            "role": "middle",
+            "shadowSharePct": 10.6,
+            "firstRelieverLikelihood": 54.1,
+            "availabilityScore": 82.2,
+            "bridgeScore": 55.6,
+            "expectedOuts": 2.7,
+            "reasonTags": [
+              "bulk first-up live"
+            ]
+          }
+        ],
+        "summaryLine": "A.J. Minter leads the shadow board; Cionel Pérez is the main alt with 22.6% of the shadow share."
+      },
+      "Nationals": {
+        "teamName": "Nationals",
+        "modelTag": "E36 shadow",
+        "starterHookRiskPct": 0,
+        "topTwoSharePct": 26.1,
+        "remainingTop3AvailabilityAvg": 84,
+        "remainingTop3BridgeScoreAvg": 76.3,
+        "remainingTop3ExpectedOutsAvg": 7.39,
+        "lead": {
+          "pitcherId": 695418,
+          "name": "Brad Lord",
+          "role": "bridge",
+          "shadowSharePct": 13.1,
+          "firstRelieverLikelihood": 84.5,
+          "availabilityScore": 62,
+          "bridgeScore": 92.9,
+          "expectedOuts": 6.4,
+          "reasonTags": [
+            "bulk first-up live"
+          ]
+        },
+        "alternate": {
+          "pitcherId": 663992,
+          "name": "Richard Lovelady",
+          "role": "middle",
+          "shadowSharePct": 13,
+          "firstRelieverLikelihood": 62.5,
+          "availabilityScore": 95,
+          "bridgeScore": 61.3,
+          "expectedOuts": 2.1,
+          "reasonTags": [
+            "bulk first-up live"
+          ]
+        },
+        "top3": [
+          {
+            "pitcherId": 695418,
+            "name": "Brad Lord",
+            "role": "bridge",
+            "shadowSharePct": 13.1,
+            "firstRelieverLikelihood": 84.5,
+            "availabilityScore": 62,
+            "bridgeScore": 92.9,
+            "expectedOuts": 6.4,
+            "reasonTags": [
+              "bulk first-up live"
+            ]
+          },
+          {
+            "pitcherId": 663992,
+            "name": "Richard Lovelady",
+            "role": "middle",
+            "shadowSharePct": 13,
+            "firstRelieverLikelihood": 62.5,
+            "availabilityScore": 95,
+            "bridgeScore": 61.3,
+            "expectedOuts": 2.1,
+            "reasonTags": [
+              "bulk first-up live"
+            ]
+          },
+          {
+            "pitcherId": 571945,
+            "name": "Miles Mikolas",
+            "role": "bridge",
+            "shadowSharePct": 12.8,
+            "firstRelieverLikelihood": 84.7,
+            "availabilityScore": 95,
+            "bridgeScore": 74.7,
+            "expectedOuts": 12.67,
+            "reasonTags": [
+              "bulk first-up live"
+            ]
+          }
+        ],
+        "summaryLine": "Brad Lord leads the shadow board; Richard Lovelady is the main alt with 26.1% of the shadow share."
+      },
+      "Rangers": {
+        "teamName": "Rangers",
+        "modelTag": "E36 shadow",
+        "starterHookRiskPct": 0,
+        "topTwoSharePct": 31,
+        "remainingTop3AvailabilityAvg": 81.7,
+        "remainingTop3BridgeScoreAvg": 84,
+        "remainingTop3ExpectedOutsAvg": 4.72,
+        "lead": {
+          "pitcherId": 615698,
+          "name": "Cal Quantrill",
+          "role": "bridge",
+          "shadowSharePct": 17.4,
+          "firstRelieverLikelihood": 93,
+          "availabilityScore": 95,
+          "bridgeScore": 92.9,
+          "expectedOuts": 7.11,
+          "reasonTags": [
+            "bulk first-up live",
+            "first-five wildness"
+          ]
+        },
+        "alternate": {
+          "pitcherId": 596001,
+          "name": "Jakob Junis",
+          "role": "bridge",
+          "shadowSharePct": 13.6,
+          "firstRelieverLikelihood": 64.3,
+          "availabilityScore": 77,
+          "bridgeScore": 75.5,
+          "expectedOuts": 3.2,
+          "reasonTags": [
+            "bulk first-up live"
+          ]
+        },
+        "top3": [
+          {
+            "pitcherId": 615698,
+            "name": "Cal Quantrill",
+            "role": "bridge",
+            "shadowSharePct": 17.4,
+            "firstRelieverLikelihood": 93,
+            "availabilityScore": 95,
+            "bridgeScore": 92.9,
+            "expectedOuts": 7.11,
+            "reasonTags": [
+              "bulk first-up live",
+              "first-five wildness"
+            ]
+          },
+          {
+            "pitcherId": 596001,
+            "name": "Jakob Junis",
+            "role": "bridge",
+            "shadowSharePct": 13.6,
+            "firstRelieverLikelihood": 64.3,
+            "availabilityScore": 77,
+            "bridgeScore": 75.5,
+            "expectedOuts": 3.2,
+            "reasonTags": [
+              "bulk first-up live"
+            ]
+          },
+          {
+            "pitcherId": 455119,
+            "name": "Chris Martin",
+            "role": "middle",
+            "shadowSharePct": 13.6,
+            "firstRelieverLikelihood": 86.7,
+            "availabilityScore": 73.1,
+            "bridgeScore": 83.7,
+            "expectedOuts": 2.9,
+            "reasonTags": [
+              "bulk first-up live"
+            ]
+          }
+        ],
+        "summaryLine": "Cal Quantrill leads the shadow board; Jakob Junis is the main alt with 31.0% of the shadow share."
+      },
+      "Rays": {
+        "teamName": "Rays",
+        "modelTag": "E36 shadow",
+        "starterHookRiskPct": 0,
+        "topTwoSharePct": 25.8,
+        "remainingTop3AvailabilityAvg": 84.1,
+        "remainingTop3BridgeScoreAvg": 82.6,
+        "remainingTop3ExpectedOutsAvg": 5.06,
+        "lead": {
+          "pitcherId": 664076,
+          "name": "Garrett Cleavinger",
+          "role": "bridge",
+          "shadowSharePct": 14.5,
+          "firstRelieverLikelihood": 99,
+          "availabilityScore": 77.2,
+          "bridgeScore": 95,
+          "expectedOuts": 2.7,
+          "reasonTags": []
+        },
+        "alternate": {
+          "pitcherId": 685801,
+          "name": "Hunter Bigge",
+          "role": "middle",
+          "shadowSharePct": 11.3,
+          "firstRelieverLikelihood": 99.7,
+          "availabilityScore": 80.2,
+          "bridgeScore": 95,
+          "expectedOuts": 3.4,
+          "reasonTags": [
+            "first-five wildness"
+          ]
+        },
+        "top3": [
+          {
+            "pitcherId": 664076,
+            "name": "Garrett Cleavinger",
+            "role": "bridge",
+            "shadowSharePct": 14.5,
+            "firstRelieverLikelihood": 99,
+            "availabilityScore": 77.2,
+            "bridgeScore": 95,
+            "expectedOuts": 2.7,
+            "reasonTags": []
+          },
+          {
+            "pitcherId": 685801,
+            "name": "Hunter Bigge",
+            "role": "middle",
+            "shadowSharePct": 11.3,
+            "firstRelieverLikelihood": 99.7,
+            "availabilityScore": 80.2,
+            "bridgeScore": 95,
+            "expectedOuts": 3.4,
+            "reasonTags": [
+              "first-five wildness"
+            ]
+          },
+          {
+            "pitcherId": 694680,
+            "name": "Trevor Martin",
+            "role": "bulk",
+            "shadowSharePct": 10.7,
+            "firstRelieverLikelihood": 60.9,
+            "availabilityScore": 95,
+            "bridgeScore": 57.9,
+            "expectedOuts": 5.5,
+            "reasonTags": [
+              "bulk first-up live",
+              "unknown-sample arm"
+            ]
+          }
+        ],
+        "summaryLine": "Garrett Cleavinger leads the shadow board; Hunter Bigge is the main alt with 25.8% of the shadow share."
+      },
+      "Reds": {
+        "teamName": "Reds",
+        "modelTag": "E36 shadow",
+        "starterHookRiskPct": 0,
+        "topTwoSharePct": 25.9,
+        "remainingTop3AvailabilityAvg": 79.3,
+        "remainingTop3BridgeScoreAvg": 77.1,
+        "remainingTop3ExpectedOutsAvg": 3.5,
+        "lead": {
+          "pitcherId": 572955,
+          "name": "Pierce Johnson",
+          "role": "middle",
+          "shadowSharePct": 13.1,
+          "firstRelieverLikelihood": 64.4,
+          "availabilityScore": 95,
+          "bridgeScore": 65.5,
+          "expectedOuts": 3,
+          "reasonTags": [
+            "scramble risk",
+            "first-five wildness"
+          ]
+        },
+        "alternate": {
+          "pitcherId": 622088,
+          "name": "Tejay Antone",
+          "role": "middle",
+          "shadowSharePct": 12.8,
+          "firstRelieverLikelihood": 84.7,
+          "availabilityScore": 73.1,
+          "bridgeScore": 87.1,
+          "expectedOuts": 2.89,
+          "reasonTags": [
+            "scramble risk"
+          ]
+        },
+        "top3": [
+          {
+            "pitcherId": 572955,
+            "name": "Pierce Johnson",
+            "role": "middle",
+            "shadowSharePct": 13.1,
+            "firstRelieverLikelihood": 64.4,
+            "availabilityScore": 95,
+            "bridgeScore": 65.5,
+            "expectedOuts": 3,
+            "reasonTags": [
+              "scramble risk",
+              "first-five wildness"
+            ]
+          },
+          {
+            "pitcherId": 622088,
+            "name": "Tejay Antone",
+            "role": "middle",
+            "shadowSharePct": 12.8,
+            "firstRelieverLikelihood": 84.7,
+            "availabilityScore": 73.1,
+            "bridgeScore": 87.1,
+            "expectedOuts": 2.89,
+            "reasonTags": [
+              "scramble risk"
+            ]
+          },
+          {
+            "pitcherId": 657571,
+            "name": "Caleb Ferguson",
+            "role": "middle",
+            "shadowSharePct": 10.9,
+            "firstRelieverLikelihood": 73.6,
+            "availabilityScore": 69.9,
+            "bridgeScore": 78.8,
+            "expectedOuts": 4.5,
+            "reasonTags": [
+              "scramble risk",
+              "unknown-sample arm"
+            ]
+          }
+        ],
+        "summaryLine": "Pierce Johnson leads the shadow board; Tejay Antone is the main alt with 25.9% of the shadow share."
+      },
+      "Rockies": {
+        "teamName": "Rockies",
+        "modelTag": "E36 shadow",
+        "starterHookRiskPct": 0,
+        "topTwoSharePct": 37.4,
+        "remainingTop3AvailabilityAvg": 80.6,
+        "remainingTop3BridgeScoreAvg": 77.8,
+        "remainingTop3ExpectedOutsAvg": 2.94,
+        "lead": {
+          "pitcherId": 677955,
+          "name": "Jaden Hill",
+          "role": "middle",
+          "shadowSharePct": 19.6,
+          "firstRelieverLikelihood": 86,
+          "availabilityScore": 70.6,
+          "bridgeScore": 91.3,
+          "expectedOuts": 2.8,
+          "reasonTags": [
+            "bulk first-up live",
+            "clean-entry form"
+          ]
+        },
+        "alternate": {
+          "pitcherId": 622608,
+          "name": "Antonio Senzatela",
+          "role": "middle",
+          "shadowSharePct": 17.8,
+          "firstRelieverLikelihood": 66.4,
+          "availabilityScore": 95,
+          "bridgeScore": 69.7,
+          "expectedOuts": 5.6,
+          "reasonTags": [
+            "bulk first-up live",
+            "first-five wildness"
+          ]
+        },
+        "top3": [
+          {
+            "pitcherId": 677955,
+            "name": "Jaden Hill",
+            "role": "middle",
+            "shadowSharePct": 19.6,
+            "firstRelieverLikelihood": 86,
+            "availabilityScore": 70.6,
+            "bridgeScore": 91.3,
+            "expectedOuts": 2.8,
+            "reasonTags": [
+              "bulk first-up live",
+              "clean-entry form"
+            ]
+          },
+          {
+            "pitcherId": 622608,
+            "name": "Antonio Senzatela",
+            "role": "middle",
+            "shadowSharePct": 17.8,
+            "firstRelieverLikelihood": 66.4,
+            "availabilityScore": 95,
+            "bridgeScore": 69.7,
+            "expectedOuts": 5.6,
+            "reasonTags": [
+              "bulk first-up live",
+              "first-five wildness"
+            ]
+          },
+          {
+            "pitcherId": 700327,
+            "name": "Welinton Herrera",
+            "role": "middle",
+            "shadowSharePct": 17.6,
+            "firstRelieverLikelihood": 72.4,
+            "availabilityScore": 76.3,
+            "bridgeScore": 72.5,
+            "expectedOuts": 2.33,
+            "reasonTags": [
+              "bulk first-up live",
+              "unknown-sample arm"
+            ]
+          }
+        ],
+        "summaryLine": "Jaden Hill leads the shadow board; Antonio Senzatela is the main alt with 37.4% of the shadow share."
+      },
+      "Royals": {
+        "teamName": "Royals",
+        "modelTag": "E36 shadow",
+        "starterHookRiskPct": 0,
+        "topTwoSharePct": 27.5,
+        "remainingTop3AvailabilityAvg": 83.4,
+        "remainingTop3BridgeScoreAvg": 75.8,
+        "remainingTop3ExpectedOutsAvg": 4.67,
+        "lead": {
+          "pitcherId": 663738,
+          "name": "Daniel Lynch IV",
+          "role": "middle",
+          "shadowSharePct": 13.9,
+          "firstRelieverLikelihood": 59.1,
+          "availabilityScore": 74.7,
+          "bridgeScore": 65.5,
+          "expectedOuts": 2.9,
+          "reasonTags": []
+        },
+        "alternate": {
+          "pitcherId": 670167,
+          "name": "John Schreiber",
+          "role": "middle",
+          "shadowSharePct": 13.6,
+          "firstRelieverLikelihood": 87.7,
+          "availabilityScore": 80.5,
+          "bridgeScore": 81.6,
+          "expectedOuts": 2.9,
+          "reasonTags": []
+        },
+        "top3": [
+          {
+            "pitcherId": 663738,
+            "name": "Daniel Lynch IV",
+            "role": "middle",
+            "shadowSharePct": 13.9,
+            "firstRelieverLikelihood": 59.1,
+            "availabilityScore": 74.7,
+            "bridgeScore": 65.5,
+            "expectedOuts": 2.9,
+            "reasonTags": []
+          },
+          {
+            "pitcherId": 670167,
+            "name": "John Schreiber",
+            "role": "middle",
+            "shadowSharePct": 13.6,
+            "firstRelieverLikelihood": 87.7,
+            "availabilityScore": 80.5,
+            "bridgeScore": 81.6,
+            "expectedOuts": 2.9,
+            "reasonTags": []
+          },
+          {
+            "pitcherId": 679883,
+            "name": "Luinder Avila",
+            "role": "bridge",
+            "shadowSharePct": 12.7,
+            "firstRelieverLikelihood": 87.2,
+            "availabilityScore": 95,
+            "bridgeScore": 80.3,
+            "expectedOuts": 6.11,
+            "reasonTags": [
+              "first-five wildness"
+            ]
+          }
+        ],
+        "summaryLine": "Daniel Lynch IV leads the shadow board; John Schreiber is the main alt with 27.5% of the shadow share."
+      },
+      "Tigers": {
+        "teamName": "Tigers",
+        "modelTag": "E36 shadow",
+        "starterHookRiskPct": 0,
+        "topTwoSharePct": 21.9,
+        "remainingTop3AvailabilityAvg": 76.3,
+        "remainingTop3BridgeScoreAvg": 79.7,
+        "remainingTop3ExpectedOutsAvg": 3.19,
+        "lead": {
+          "pitcherId": 676428,
+          "name": "Brant Hurter",
+          "role": "bridge",
+          "shadowSharePct": 11.1,
+          "firstRelieverLikelihood": 62.6,
+          "availabilityScore": 95,
+          "bridgeScore": 82.3,
+          "expectedOuts": 4.3,
+          "reasonTags": [
+            "clean-entry form"
+          ]
+        },
+        "alternate": {
+          "pitcherId": 669724,
+          "name": "Brenan Hanifee",
+          "role": "middle",
+          "shadowSharePct": 10.8,
+          "firstRelieverLikelihood": 60.2,
+          "availabilityScore": 57.6,
+          "bridgeScore": 61.9,
+          "expectedOuts": 3.56,
+          "reasonTags": []
+        },
+        "top3": [
+          {
+            "pitcherId": 676428,
+            "name": "Brant Hurter",
+            "role": "bridge",
+            "shadowSharePct": 11.1,
+            "firstRelieverLikelihood": 62.6,
+            "availabilityScore": 95,
+            "bridgeScore": 82.3,
+            "expectedOuts": 4.3,
+            "reasonTags": [
+              "clean-entry form"
+            ]
+          },
+          {
+            "pitcherId": 669724,
+            "name": "Brenan Hanifee",
+            "role": "middle",
+            "shadowSharePct": 10.8,
+            "firstRelieverLikelihood": 60.2,
+            "availabilityScore": 57.6,
+            "bridgeScore": 61.9,
+            "expectedOuts": 3.56,
+            "reasonTags": []
+          },
+          {
+            "pitcherId": 676684,
+            "name": "Will Vest",
+            "role": "bridge",
+            "shadowSharePct": 10.7,
+            "firstRelieverLikelihood": 89.1,
+            "availabilityScore": 76.2,
+            "bridgeScore": 95,
+            "expectedOuts": 3.1,
+            "reasonTags": [
+              "first-five wildness"
+            ]
+          }
+        ],
+        "summaryLine": "Brant Hurter leads the shadow board; Brenan Hanifee is the main alt with 21.9% of the shadow share."
+      },
+      "Twins": {
+        "teamName": "Twins",
+        "modelTag": "E36 shadow",
+        "starterHookRiskPct": 0,
+        "topTwoSharePct": 23.5,
+        "remainingTop3AvailabilityAvg": 79,
+        "remainingTop3BridgeScoreAvg": 79.1,
+        "remainingTop3ExpectedOutsAvg": 3.16,
+        "lead": {
+          "pitcherId": 702193,
+          "name": "Andrew Morris",
+          "role": "middle",
+          "shadowSharePct": 12.2,
+          "firstRelieverLikelihood": 92.3,
+          "availabilityScore": 95,
+          "bridgeScore": 91.3,
+          "expectedOuts": 3.4,
+          "reasonTags": [
+            "bulk first-up live",
+            "first-five wildness"
+          ]
+        },
+        "alternate": {
+          "pitcherId": 607455,
+          "name": "Anthony Banda",
+          "role": "middle",
+          "shadowSharePct": 11.3,
+          "firstRelieverLikelihood": 50.1,
+          "availabilityScore": 74.7,
+          "bridgeScore": 51.1,
+          "expectedOuts": 2.8,
+          "reasonTags": [
+            "bulk first-up live"
+          ]
+        },
+        "top3": [
+          {
+            "pitcherId": 702193,
+            "name": "Andrew Morris",
+            "role": "middle",
+            "shadowSharePct": 12.2,
+            "firstRelieverLikelihood": 92.3,
+            "availabilityScore": 95,
+            "bridgeScore": 91.3,
+            "expectedOuts": 3.4,
+            "reasonTags": [
+              "bulk first-up live",
+              "first-five wildness"
+            ]
+          },
+          {
+            "pitcherId": 607455,
+            "name": "Anthony Banda",
+            "role": "middle",
+            "shadowSharePct": 11.3,
+            "firstRelieverLikelihood": 50.1,
+            "availabilityScore": 74.7,
+            "bridgeScore": 51.1,
+            "expectedOuts": 2.8,
+            "reasonTags": [
+              "bulk first-up live"
+            ]
+          },
+          {
+            "pitcherId": 681892,
+            "name": "Kody Funderburk",
+            "role": "bridge",
+            "shadowSharePct": 10.5,
+            "firstRelieverLikelihood": 86.8,
+            "availabilityScore": 67.5,
+            "bridgeScore": 95,
+            "expectedOuts": 2.9,
+            "reasonTags": [
+              "bulk first-up live",
+              "first-five wildness"
+            ]
+          }
+        ],
+        "summaryLine": "Andrew Morris leads the shadow board; Anthony Banda is the main alt with 23.5% of the shadow share."
+      },
+      "White Sox": {
+        "teamName": "White Sox",
+        "modelTag": "E36 shadow",
+        "starterHookRiskPct": 0,
+        "topTwoSharePct": 28.4,
+        "remainingTop3AvailabilityAvg": 65.9,
+        "remainingTop3BridgeScoreAvg": 74.3,
+        "remainingTop3ExpectedOutsAvg": 3.47,
+        "lead": {
+          "pitcherId": 699823,
+          "name": "Tyler Davis",
+          "role": "middle",
+          "shadowSharePct": 14.4,
+          "firstRelieverLikelihood": 56.7,
+          "availabilityScore": 60.1,
+          "bridgeScore": 60.6,
+          "expectedOuts": 3.6,
+          "reasonTags": [
+            "bulk first-up live",
+            "first-five wildness"
+          ]
+        },
+        "alternate": {
+          "pitcherId": 685126,
+          "name": "Brandon Eisert",
+          "role": "middle",
+          "shadowSharePct": 14,
+          "firstRelieverLikelihood": 94.7,
+          "availabilityScore": 60.8,
+          "bridgeScore": 95,
+          "expectedOuts": 3.11,
+          "reasonTags": [
+            "bulk first-up live",
+            "first-five wildness"
+          ]
+        },
+        "top3": [
+          {
+            "pitcherId": 699823,
+            "name": "Tyler Davis",
+            "role": "middle",
+            "shadowSharePct": 14.4,
+            "firstRelieverLikelihood": 56.7,
+            "availabilityScore": 60.1,
+            "bridgeScore": 60.6,
+            "expectedOuts": 3.6,
+            "reasonTags": [
+              "bulk first-up live",
+              "first-five wildness"
+            ]
+          },
+          {
+            "pitcherId": 685126,
+            "name": "Brandon Eisert",
+            "role": "middle",
+            "shadowSharePct": 14,
+            "firstRelieverLikelihood": 94.7,
+            "availabilityScore": 60.8,
+            "bridgeScore": 95,
+            "expectedOuts": 3.11,
+            "reasonTags": [
+              "bulk first-up live",
+              "first-five wildness"
+            ]
+          },
+          {
+            "pitcherId": 670950,
+            "name": "Trevor Richards",
+            "role": "middle",
+            "shadowSharePct": 12.7,
+            "firstRelieverLikelihood": 64,
+            "availabilityScore": 76.7,
+            "bridgeScore": 67.2,
+            "expectedOuts": 4.2,
+            "reasonTags": [
+              "bulk first-up live",
+              "first-five wildness"
+            ]
+          }
+        ],
+        "summaryLine": "Tyler Davis leads the shadow board; Brandon Eisert is the main alt with 28.4% of the shadow share."
+      }
+    }
+  },
+  "lineupBoard": {
+    "meta": {
+      "date": "2026-06-01",
+      "gameCount": 9,
+      "playerCount": 161,
+      "sourceLabel": "Official MLB feed/live batting orders plus official player season, recent, handedness split, and Statcast pitch-arsenal matchup data, supplemented by RotoWire daily lineups and weather when the official order is still missing."
+    },
+    "games": {
+      "tigers-rays": {
+        "status": {
+          "away": "posted",
+          "home": "posted"
+        },
+        "awayTeam": "Tigers",
+        "homeTeam": "Rays",
+        "awaySlots": [
+          {
+            "slot": 1,
+            "name": "Kevin McGonigle",
+            "bats": "L",
+            "position": "SS"
+          },
+          {
+            "slot": 2,
+            "name": "Dillon Dingler",
+            "bats": "R",
+            "position": "C"
+          },
+          {
+            "slot": 3,
+            "name": "Kerry Carpenter",
+            "bats": "L",
+            "position": "LF"
+          },
+          {
+            "slot": 4,
+            "name": "Riley Greene",
+            "bats": "L",
+            "position": "DH"
+          },
+          {
+            "slot": 5,
+            "name": "Spencer Torkelson",
+            "bats": "R",
+            "position": "1B"
+          },
+          {
+            "slot": 6,
+            "name": "Colt Keith",
+            "bats": "L",
+            "position": "3B"
+          },
+          {
+            "slot": 7,
+            "name": "Wenceel Pérez",
+            "bats": "S",
+            "position": "CF"
+          },
+          {
+            "slot": 8,
+            "name": "Hao-Yu  Lee",
+            "bats": "R",
+            "position": "2B"
+          },
+          {
+            "slot": 9,
+            "name": "Zach McKinstry",
+            "bats": "L",
+            "position": "RF"
+          }
+        ],
+        "homeSlots": [
+          {
+            "slot": 1,
+            "name": "Yandy Díaz",
+            "bats": "R",
+            "position": "DH"
+          },
+          {
+            "slot": 2,
+            "name": "Jonathan Aranda",
+            "bats": "L",
+            "position": "1B"
+          },
+          {
+            "slot": 3,
+            "name": "Richie Palacios",
+            "bats": "L",
+            "position": "2B"
+          },
+          {
+            "slot": 4,
+            "name": "Junior Caminero",
+            "bats": "R",
+            "position": "3B"
+          },
+          {
+            "slot": 5,
+            "name": "Chandler Simpson",
+            "bats": "L",
+            "position": "LF"
+          },
+          {
+            "slot": 6,
+            "name": "Victor Mesa Jr.",
+            "bats": "L",
+            "position": "RF"
+          },
+          {
+            "slot": 7,
+            "name": "Cedric Mullins",
+            "bats": "L",
+            "position": "CF"
+          },
+          {
+            "slot": 8,
+            "name": "Hunter Feduccia",
+            "bats": "L",
+            "position": "C"
+          },
+          {
+            "slot": 9,
+            "name": "Taylor Walls",
+            "bats": "S",
+            "position": "SS"
+          }
+        ]
+      },
+      "marlins-nationals": {
+        "status": {
+          "away": "posted",
+          "home": "posted"
+        },
+        "awayTeam": "Marlins",
+        "homeTeam": "Nationals",
+        "awaySlots": [
+          {
+            "slot": 1,
+            "name": "Liam Hicks",
+            "bats": "L",
+            "position": "DH"
+          },
+          {
+            "slot": 2,
+            "name": "Otto Lopez",
+            "bats": "R",
+            "position": "SS"
+          },
+          {
+            "slot": 3,
+            "name": "Kyle Stowers",
+            "bats": "L",
+            "position": "LF"
+          },
+          {
+            "slot": 4,
+            "name": "Xavier Edwards",
+            "bats": "S",
+            "position": "2B"
+          },
+          {
+            "slot": 5,
+            "name": "Leo Jiménez",
+            "bats": "R",
+            "position": "3B"
+          },
+          {
+            "slot": 6,
+            "name": "Owen Caissie",
+            "bats": "L",
+            "position": "RF"
+          },
+          {
+            "slot": 7,
+            "name": "Jakob Marsee",
+            "bats": "L",
+            "position": "CF"
+          },
+          {
+            "slot": 8,
+            "name": "Joe Mack",
+            "bats": "L",
+            "position": "C"
+          },
+          {
+            "slot": 9,
+            "name": "Connor Norby",
+            "bats": "R",
+            "position": "1B"
+          }
+        ],
+        "homeSlots": [
+          {
+            "slot": 1,
+            "name": "James Wood",
+            "bats": "L",
+            "position": "RF"
+          },
+          {
+            "slot": 2,
+            "name": "Luis García Jr.",
+            "bats": "L",
+            "position": "1B"
+          },
+          {
+            "slot": 3,
+            "name": "Curtis Mead",
+            "bats": "R",
+            "position": "3B"
+          },
+          {
+            "slot": 4,
+            "name": "CJ Abrams",
+            "bats": "L",
+            "position": "SS"
+          },
+          {
+            "slot": 5,
+            "name": "Daylen Lile",
+            "bats": "L",
+            "position": "LF"
+          },
+          {
+            "slot": 6,
+            "name": "Jacob Young",
+            "bats": "R",
+            "position": "CF"
+          },
+          {
+            "slot": 7,
+            "name": "José Tena",
+            "bats": "L",
+            "position": "DH"
+          },
+          {
+            "slot": 8,
+            "name": "Keibert Ruiz",
+            "bats": "S",
+            "position": "C"
+          },
+          {
+            "slot": 9,
+            "name": "Nasim Nuñez",
+            "bats": "S",
+            "position": "2B"
+          }
+        ]
+      },
+      "royals-reds": {
+        "status": {
+          "away": "posted",
+          "home": "posted"
+        },
+        "awayTeam": "Royals",
+        "homeTeam": "Reds",
+        "awaySlots": [
+          {
+            "slot": 1,
+            "name": "Carter Jensen",
+            "bats": "L",
+            "position": "C"
+          },
+          {
+            "slot": 2,
+            "name": "Bobby Witt Jr.",
+            "bats": "R",
+            "position": "SS"
+          },
+          {
+            "slot": 3,
+            "name": "Vinnie Pasquantino",
+            "bats": "L",
+            "position": "1B"
+          },
+          {
+            "slot": 4,
+            "name": "Jac Caglianone",
+            "bats": "L",
+            "position": "DH"
+          },
+          {
+            "slot": 5,
+            "name": "Isaac Collins",
+            "bats": "S",
+            "position": "LF"
+          },
+          {
+            "slot": 6,
+            "name": "Lane Thomas",
+            "bats": "R",
+            "position": "RF"
+          },
+          {
+            "slot": 7,
+            "name": "Michael Massey",
+            "bats": "L",
+            "position": "2B"
+          },
+          {
+            "slot": 8,
+            "name": "Nick Loftin",
+            "bats": "R",
+            "position": "3B"
+          },
+          {
+            "slot": 9,
+            "name": "Kyle Isbel",
+            "bats": "L",
+            "position": "CF"
+          }
+        ],
+        "homeSlots": [
+          {
+            "slot": 1,
+            "name": "Blake Dunn",
+            "bats": "R",
+            "position": "CF"
+          },
+          {
+            "slot": 2,
+            "name": "JJ Bleday",
+            "bats": "L",
+            "position": "LF"
+          },
+          {
+            "slot": 3,
+            "name": "Sal Stewart",
+            "bats": "R",
+            "position": "3B"
+          },
+          {
+            "slot": 4,
+            "name": "Eugenio Suárez",
+            "bats": "R",
+            "position": "DH"
+          },
+          {
+            "slot": 5,
+            "name": "Nathaniel Lowe",
+            "bats": "L",
+            "position": "1B"
+          },
+          {
+            "slot": 6,
+            "name": "Spencer Steer",
+            "bats": "R",
+            "position": "RF"
+          },
+          {
+            "slot": 7,
+            "name": "Tyler Stephenson",
+            "bats": "R",
+            "position": "C"
+          },
+          {
+            "slot": 8,
+            "name": "Edwin Arroyo",
+            "bats": "S",
+            "position": "2B"
+          },
+          {
+            "slot": 9,
+            "name": "Matt McLain",
+            "bats": "R",
+            "position": "SS"
+          }
+        ]
+      },
+      "giants-brewers": {
+        "status": {
+          "away": "posted",
+          "home": "partial"
+        },
+        "awayTeam": "Giants",
+        "homeTeam": "Brewers",
+        "awaySlots": [
+          {
+            "slot": 1,
+            "name": "Casey Schmitt",
+            "bats": "R",
+            "position": "LF"
+          },
+          {
+            "slot": 2,
+            "name": "Rafael Devers",
+            "bats": "L",
+            "position": "DH"
+          },
+          {
+            "slot": 3,
+            "name": "Luis Arraez",
+            "bats": "L",
+            "position": "2B"
+          },
+          {
+            "slot": 4,
+            "name": "Willy Adames",
+            "bats": "R",
+            "position": "SS"
+          },
+          {
+            "slot": 5,
+            "name": "Jung Hoo Lee",
+            "bats": "L",
+            "position": "RF"
+          },
+          {
+            "slot": 6,
+            "name": "Matt Chapman",
+            "bats": "R",
+            "position": "3B"
+          },
+          {
+            "slot": 7,
+            "name": "Bryce Eldridge",
+            "bats": "L",
+            "position": "1B"
+          },
+          {
+            "slot": 8,
+            "name": "Eric Haase",
+            "bats": "R",
+            "position": "C"
+          },
+          {
+            "slot": 9,
+            "name": "Jonah Cox",
+            "bats": "R",
+            "position": "CF"
+          }
+        ],
+        "homeSlots": [
+          {
+            "slot": 1,
+            "name": "Christian Yelich",
+            "bats": "L",
+            "position": "DH"
+          },
+          {
+            "slot": 2,
+            "name": "Jackson Chourio",
+            "bats": "R",
+            "position": "LF"
+          },
+          {
+            "slot": 3,
+            "name": "Brice Turang",
+            "bats": "L",
+            "position": "2B"
+          },
+          {
+            "slot": 4,
+            "name": "William Contreras",
+            "bats": "R",
+            "position": "C"
+          },
+          {
+            "slot": 5,
+            "name": "Jake Bauers",
+            "bats": "L",
+            "position": "1B"
+          },
+          {
+            "slot": 6,
+            "name": "Garrett Mitchell",
+            "bats": "L",
+            "position": "CF"
+          },
+          {
+            "slot": 7,
+            "name": "Luis Rengifo",
+            "bats": "S",
+            "position": "3B"
+          },
+          {
+            "slot": 8,
+            "name": "Sal Frelick",
+            "bats": "L",
+            "position": "RF"
+          },
+          {
+            "slot": 9,
+            "name": "David Hamilton",
+            "bats": "L",
+            "position": "SS"
+          }
+        ]
+      },
+      "white-sox-twins": {
+        "status": {
+          "away": "posted",
+          "home": "posted"
+        },
+        "awayTeam": "White Sox",
+        "homeTeam": "Twins",
+        "awaySlots": [
+          {
+            "slot": 1,
+            "name": "Sam Antonacci",
+            "bats": "L",
+            "position": "LF"
+          },
+          {
+            "slot": 2,
+            "name": "Miguel Vargas",
+            "bats": "R",
+            "position": "3B"
+          },
+          {
+            "slot": 3,
+            "name": "Andrew Benintendi",
+            "bats": "L",
+            "position": "DH"
+          },
+          {
+            "slot": 4,
+            "name": "Colson Montgomery",
+            "bats": "L",
+            "position": "SS"
+          },
+          {
+            "slot": 5,
+            "name": "Chase Meidroth",
+            "bats": "R",
+            "position": "2B"
+          },
+          {
+            "slot": 6,
+            "name": "Jacob Gonzalez",
+            "bats": "L",
+            "position": "1B"
+          },
+          {
+            "slot": 7,
+            "name": "Tristan Peters",
+            "bats": "L",
+            "position": "CF"
+          },
+          {
+            "slot": 8,
+            "name": "Edgar Quero",
+            "bats": "S",
+            "position": "C"
+          },
+          {
+            "slot": 9,
+            "name": "Rikuu Nishida",
+            "bats": "L",
+            "position": "RF"
+          }
+        ],
+        "homeSlots": [
+          {
+            "slot": 1,
+            "name": "Byron Buxton",
+            "bats": "R",
+            "position": "DH"
+          },
+          {
+            "slot": 2,
+            "name": "Brooks Lee",
+            "bats": "S",
+            "position": "3B"
+          },
+          {
+            "slot": 3,
+            "name": "Kody Clemens",
+            "bats": "L",
+            "position": "CF"
+          },
+          {
+            "slot": 4,
+            "name": "Josh Bell",
+            "bats": "S",
+            "position": "1B"
+          },
+          {
+            "slot": 5,
+            "name": "Trevor Larnach",
+            "bats": "L",
+            "position": "LF"
+          },
+          {
+            "slot": 6,
+            "name": "Austin Martin",
+            "bats": "R",
+            "position": "RF"
+          },
+          {
+            "slot": 7,
+            "name": "Victor Caratini",
+            "bats": "S",
+            "position": "C"
+          },
+          {
+            "slot": 8,
+            "name": "Luke Keaschall",
+            "bats": "R",
+            "position": "2B"
+          },
+          {
+            "slot": 9,
+            "name": "Tristan Gray",
+            "bats": "L",
+            "position": "SS"
+          }
+        ]
+      },
+      "rangers-cardinals": {
+        "status": {
+          "away": "posted",
+          "home": "posted"
+        },
+        "awayTeam": "Rangers",
+        "homeTeam": "Cardinals",
+        "awaySlots": [
+          {
+            "slot": 1,
+            "name": "Joc Pederson",
+            "bats": "L",
+            "position": "DH"
+          },
+          {
+            "slot": 2,
+            "name": "Josh Jung",
+            "bats": "R",
+            "position": "3B"
+          },
+          {
+            "slot": 3,
+            "name": "Brandon Nimmo",
+            "bats": "L",
+            "position": "RF"
+          },
+          {
+            "slot": 4,
+            "name": "Jake Burger",
+            "bats": "R",
+            "position": "1B"
+          },
+          {
+            "slot": 5,
+            "name": "Ezequiel Duran",
+            "bats": "R",
+            "position": "SS"
+          },
+          {
+            "slot": 6,
+            "name": "Alejandro Osuna",
+            "bats": "L",
+            "position": "LF"
+          },
+          {
+            "slot": 7,
+            "name": "Evan Carter",
+            "bats": "L",
+            "position": "CF"
+          },
+          {
+            "slot": 8,
+            "name": "Danny Jansen",
+            "bats": "R",
+            "position": "C"
+          },
+          {
+            "slot": 9,
+            "name": "Nicky Lopez",
+            "bats": "L",
+            "position": "2B"
+          }
+        ],
+        "homeSlots": [
+          {
+            "slot": 1,
+            "name": "JJ Wetherholt",
+            "bats": "L",
+            "position": "2B"
+          },
+          {
+            "slot": 2,
+            "name": "Iván Herrera",
+            "bats": "R",
+            "position": "C"
+          },
+          {
+            "slot": 3,
+            "name": "Alec Burleson",
+            "bats": "L",
+            "position": "1B"
+          },
+          {
+            "slot": 4,
+            "name": "Jordan Walker",
+            "bats": "R",
+            "position": "RF"
+          },
+          {
+            "slot": 5,
+            "name": "Bryan Torres",
+            "bats": "L",
+            "position": "LF"
+          },
+          {
+            "slot": 6,
+            "name": "Masyn Winn",
+            "bats": "R",
+            "position": "SS"
+          },
+          {
+            "slot": 7,
+            "name": "Nolan Gorman",
+            "bats": "L",
+            "position": "3B"
+          },
+          {
+            "slot": 8,
+            "name": "Jimmy Crooks",
+            "bats": "L",
+            "position": "DH"
+          },
+          {
+            "slot": 9,
+            "name": "Victor Scott II",
+            "bats": "L",
+            "position": "CF"
+          }
+        ]
+      },
+      "rockies-angels": {
+        "status": {
+          "away": "partial",
+          "home": "posted"
+        },
+        "awayTeam": "Rockies",
+        "homeTeam": "Angels",
+        "awaySlots": [
+          {
+            "slot": 1,
+            "name": "Jake McCarthy",
+            "bats": "L",
+            "position": "CF"
+          },
+          {
+            "slot": 2,
+            "name": "Tyler Freeman",
+            "bats": "R",
+            "position": "RF"
+          },
+          {
+            "slot": 3,
+            "name": "TJ Rumfield",
+            "bats": "L",
+            "position": "1B"
+          },
+          {
+            "slot": 4,
+            "name": "Hunter Goodman",
+            "bats": "R",
+            "position": "C"
+          },
+          {
+            "slot": 5,
+            "name": "Troy Johnston",
+            "bats": "L",
+            "position": "LF"
+          },
+          {
+            "slot": 6,
+            "name": "Willi Castro",
+            "bats": "S",
+            "position": "2B"
+          },
+          {
+            "slot": 7,
+            "name": "Ezequiel Tovar",
+            "bats": "R",
+            "position": "SS"
+          },
+          {
+            "slot": 8,
+            "name": "Sterlin Thompson",
+            "bats": "L",
+            "position": "DH"
+          },
+          {
+            "slot": 9,
+            "name": "Kyle Karros",
+            "bats": "R",
+            "position": "3B"
+          }
+        ],
+        "homeSlots": [
+          {
+            "slot": 1,
+            "name": "Zach Neto",
+            "bats": "R",
+            "position": "SS"
+          },
+          {
+            "slot": 2,
+            "name": "Mike Trout",
+            "bats": "R",
+            "position": "CF"
+          },
+          {
+            "slot": 3,
+            "name": "Vaughn Grissom",
+            "bats": "R",
+            "position": "1B"
+          },
+          {
+            "slot": 4,
+            "name": "Jorge Soler",
+            "bats": "R",
+            "position": "DH"
+          },
+          {
+            "slot": 5,
+            "name": "Jo Adell",
+            "bats": "R",
+            "position": "RF"
+          },
+          {
+            "slot": 6,
+            "name": "Oswald Peraza",
+            "bats": "R",
+            "position": "2B"
+          },
+          {
+            "slot": 7,
+            "name": "Jose Siri",
+            "bats": "R",
+            "position": "LF"
+          },
+          {
+            "slot": 8,
+            "name": "Logan O'Hoppe",
+            "bats": "R",
+            "position": "C"
+          },
+          {
+            "slot": 9,
+            "name": "Nick Madrigal",
+            "bats": "R",
+            "position": "3B"
+          }
+        ]
+      },
+      "dodgers-diamondbacks": {
+        "status": {
+          "away": "partial",
+          "home": "posted"
+        },
+        "awayTeam": "Dodgers",
+        "homeTeam": "Diamondbacks",
+        "awaySlots": [
+          {
+            "slot": 1,
+            "name": "Shohei Ohtani",
+            "bats": "L",
+            "position": "DH"
+          },
+          {
+            "slot": 2,
+            "name": "Andy Pages",
+            "bats": "R",
+            "position": "CF"
+          },
+          {
+            "slot": 3,
+            "name": "Freddie Freeman",
+            "bats": "L",
+            "position": "1B"
+          },
+          {
+            "slot": 4,
+            "name": "Mookie Betts",
+            "bats": "R",
+            "position": "SS"
+          },
+          {
+            "slot": 5,
+            "name": "Kyle Tucker",
+            "bats": "L",
+            "position": "RF"
+          },
+          {
+            "slot": 6,
+            "name": "Will Smith",
+            "bats": "R",
+            "position": "C"
+          },
+          {
+            "slot": 7,
+            "name": "Miguel Rojas",
+            "bats": "R",
+            "position": "2B"
+          },
+          {
+            "slot": 8,
+            "name": "Alex Call",
+            "bats": "R",
+            "position": "LF"
+          },
+          {
+            "slot": 9,
+            "name": "Santiago Espinal",
+            "bats": "R",
+            "position": "3B"
+          }
+        ],
+        "homeSlots": [
+          {
+            "slot": 1,
+            "name": "Ketel Marte",
+            "bats": "S",
+            "position": "2B"
+          },
+          {
+            "slot": 2,
+            "name": "Corbin Carroll",
+            "bats": "L",
+            "position": "RF"
+          },
+          {
+            "slot": 3,
+            "name": "Geraldo Perdomo",
+            "bats": "S",
+            "position": "SS"
+          },
+          {
+            "slot": 4,
+            "name": "Nolan Arenado",
+            "bats": "R",
+            "position": "3B"
+          },
+          {
+            "slot": 6,
+            "name": "Gabriel Moreno",
+            "bats": "R",
+            "position": "C"
+          },
+          {
+            "slot": 7,
+            "name": "Ildemaro Vargas",
+            "bats": "S",
+            "position": "1B"
+          },
+          {
+            "slot": 8,
+            "name": "Jorge Barrosa",
+            "bats": "S",
+            "position": "CF"
+          },
+          {
+            "slot": 9,
+            "name": "Tommy Troy",
+            "bats": "R",
+            "position": "LF"
+          }
+        ]
+      },
+      "mets-mariners": {
+        "status": {
+          "away": "partial",
+          "home": "posted"
+        },
+        "awayTeam": "Mets",
+        "homeTeam": "Mariners",
+        "awaySlots": [
+          {
+            "slot": 1,
+            "name": "Carson Benge",
+            "bats": "L",
+            "position": "RF"
+          },
+          {
+            "slot": 2,
+            "name": "Bo Bichette",
+            "bats": "R",
+            "position": "SS"
+          },
+          {
+            "slot": 3,
+            "name": "Juan Soto",
+            "bats": "L",
+            "position": "LF"
+          },
+          {
+            "slot": 4,
+            "name": "Jared Young",
+            "bats": "L",
+            "position": "DH"
+          },
+          {
+            "slot": 5,
+            "name": "Mark Vientos",
+            "bats": "R",
+            "position": "1B"
+          },
+          {
+            "slot": 6,
+            "name": "A.J. Ewing",
+            "bats": "L",
+            "position": "CF"
+          },
+          {
+            "slot": 7,
+            "name": "Brett Baty",
+            "bats": "L",
+            "position": "3B"
+          },
+          {
+            "slot": 8,
+            "name": "Marcus Semien",
+            "bats": "R",
+            "position": "2B"
+          },
+          {
+            "slot": 9,
+            "name": "Luis Torrens",
+            "bats": "R",
+            "position": "C"
+          }
+        ],
+        "homeSlots": [
+          {
+            "slot": 1,
+            "name": "J.P. Crawford",
+            "bats": "L",
+            "position": "SS"
+          },
+          {
+            "slot": 2,
+            "name": "Julio Rodríguez",
+            "bats": "R",
+            "position": "CF"
+          },
+          {
+            "slot": 3,
+            "name": "Josh Naylor",
+            "bats": "L",
+            "position": "1B"
+          },
+          {
+            "slot": 4,
+            "name": "Randy Arozarena",
+            "bats": "R",
+            "position": "LF"
+          },
+          {
+            "slot": 5,
+            "name": "Luke Raley",
+            "bats": "L",
+            "position": "RF"
+          },
+          {
+            "slot": 6,
+            "name": "Cole Young",
+            "bats": "L",
+            "position": "2B"
+          },
+          {
+            "slot": 7,
+            "name": "Rob Refsnyder",
+            "bats": "R",
+            "position": "DH"
+          },
+          {
+            "slot": 8,
+            "name": "Mitch Garver",
+            "bats": "R",
+            "position": "C"
+          },
+          {
+            "slot": 9,
+            "name": "Colt Emerson",
+            "bats": "L",
+            "position": "3B"
+          }
+        ]
+      }
+    }
+  },
+  "snapshotHash": "df1e7de81a9f6dfd74a24de460258ac12b8afcee1ce425b97e1f5b917f471588"
+}
