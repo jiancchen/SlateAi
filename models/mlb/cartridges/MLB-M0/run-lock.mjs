@@ -9,6 +9,7 @@ import { buildM0Snapshot } from './snapshot.mjs'
 const execFileAsync = promisify(execFile)
 const rootDir = path.resolve(import.meta.dirname, '..', '..', '..', '..')
 const localModelId = path.basename(import.meta.dirname).toUpperCase()
+const localCartridgeDir = path.relative(rootDir, import.meta.dirname).replaceAll(path.sep, '/')
 
 const readJson = async (relativePath, fallback = null) => {
   try {
@@ -125,22 +126,22 @@ const uniqueEntries = (entries) => {
 
 const sourceInventory = async () => {
   const registry = await readJson('models/mlb/registry.json', {})
-  const manifest = await readJson('models/mlb/cartridges/MLB-M0/manifest.json', {})
+  const manifest = await readJson(`${localCartridgeDir}/manifest.json`, {})
   const rp36 = await readJson('models/mlb/cartridges/MLB-RP36/manifest.json', {})
   const e0 = await readJson('models/mlb/cartridges/MLB-E0/manifest.json', {})
   return uniqueEntries([
     { path: 'models/mlb/registry.json', role: 'model-registry' },
     { path: 'models/registry.json', role: 'top-level-model-registry' },
-    { path: 'models/mlb/cartridges/MLB-M0/manifest.json', role: 'model-manifest' },
+    { path: `${localCartridgeDir}/manifest.json`, role: 'model-manifest' },
     { path: manifest.entrypoint, role: 'model-runner-wrapper' },
     { path: manifest.outputContract, role: 'output-contract' },
     { path: manifest.modelDescription, role: 'model-description' },
     { path: manifest.modelNotes, role: 'model-notes' },
     { path: manifest.modelLog, role: 'model-log' },
-    { path: 'models/mlb/cartridges/MLB-M0/snapshot.mjs', role: 'snapshot-builder' },
-    { path: 'models/mlb/cartridges/MLB-M0/verify_snapshot.mjs', role: 'snapshot-verifier' },
-    { path: 'models/mlb/cartridges/MLB-M0/run-lock.mjs', role: 'run-locker' },
-    { path: 'models/mlb/cartridges/MLB-M0/verify_run.mjs', role: 'run-verifier' },
+    { path: `${localCartridgeDir}/snapshot.mjs`, role: 'snapshot-builder' },
+    { path: `${localCartridgeDir}/verify_snapshot.mjs`, role: 'snapshot-verifier' },
+    { path: `${localCartridgeDir}/run-lock.mjs`, role: 'run-locker' },
+    { path: `${localCartridgeDir}/verify_run.mjs`, role: 'run-verifier' },
     { path: 'models/mlb/cartridges/MLB-RP36/manifest.json', role: 'relief-addendum-manifest' },
     { path: rp36.entrypoint, role: 'relief-addendum-runner' },
     { path: rp36.outputContract, role: 'relief-addendum-output-contract' },

@@ -52,6 +52,8 @@ Follow-up fix:
 - Routed `models/shared/sports-core/app-sports-model.js` through the app adapter registry instead of importing MLB-M0 directly.
 - Routed `pipeline/lib/load-mlb-day-games.mjs` through the app adapter registry.
 - Updated the shared run indexer to classify MLB parent models by `role: parent_model` in `models/mlb/registry.json`, not by a hardcoded `MLB-M0` id.
+- Routed the legacy `pipeline/mlb/workflows/*` and `pipeline/mlb/publish/*` compatibility launchers through `models/mlb/run-cartridge.mjs`.
+- Routed the web prop-calibration shim through `models/mlb/app-model.js` instead of pointing at the M0 generated file directly.
 
 Current remaining risk:
 
@@ -143,3 +145,19 @@ Use `approachState` as a formula with named inputs, capped weights, and bucketed
 Gate:
 
 No `approachState` bump should become bet-driving until it can show lift versus baseline by prop type and confidence bucket.
+
+## 2026-05-31 - Active Path Audit Follow-Up
+
+Audit found a few active paths still acting like old direct entrypoints instead of registry-backed cartridge calls.
+
+Fixed:
+
+- `pipeline/mlb/workflows/*` and `pipeline/mlb/publish/*` now dispatch through `models/mlb/run-cartridge.mjs`.
+- MLB-RP36 package scripts now use `models/mlb/{run,lock,verify}-cartridge.mjs --model MLB-RP36`.
+- MLB-M0 refresh now consumes RP36 through the registry wrapper.
+- Prop calibration for the web app now exposes through `models/mlb/app-model.js`.
+- MLB-M0 runner and run-lock self-inventory now use local cartridge paths where possible.
+
+Remaining boundary:
+
+Direct MLB-M0 and MLB-RP36 file paths are still expected inside manifests, component inventory, and run locks. Those paths describe the cartridge contents; they are not operator entrypoints.

@@ -845,7 +845,7 @@ const writePropCalibrationModule = (propRecords) => {
   fs.writeFileSync(target, moduleSource, 'utf8')
   fs.writeFileSync(
     webShimTarget,
-    "export { mlbPropCalibration } from '../../../models/mlb/cartridges/MLB-M0/generated/mlb-prop-calibration.generated.js'\n",
+    "export { mlbPropCalibration } from '../../../models/mlb/app-model.js'\n",
     'utf8'
   )
   console.log(`Wrote prop calibration -> ${target}`)

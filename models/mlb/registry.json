@@ -33,7 +33,7 @@
       "consumedBy": ["MLB-M0"],
       "targetPath": "./cartridges/MLB-RP36",
       "status": "shell_created",
-      "notes": "Current relief stack is exported by models/mlb/cartridges/MLB-RP36/exporter.py and consumed by MLB-M0 as a relief addendum."
+      "notes": "Current relief stack is exported through the MLB-RP36 cartridge wrapper and consumed by MLB-M0 as a relief addendum."
     },
     {
       "modelId": "MLB-E0",

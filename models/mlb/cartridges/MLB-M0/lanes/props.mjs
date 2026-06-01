@@ -413,7 +413,7 @@ const main = async () => {
     modelName: 'mlb-player-props-v2',
     date,
     generatedAt: new Date().toISOString(),
-    sources: ['day-file-live-board', 'models/mlb/cartridges/MLB-M0/lib/sports-model.js', 'FanDuel Research strikeout props'],
+    sources: ['day-file-live-board', 'models/mlb/app-model.js', 'FanDuel Research strikeout props'],
     summary: {
       totalGames: games.length,
       totalPicks: combinedProps.length,

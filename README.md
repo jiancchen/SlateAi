@@ -19,6 +19,8 @@ npm run warehouse:restore:hf
   Public React/Vite app. This is the only folder that should be deployed to Vercel.
 - `api/`
   Read-only Fastify service that can serve compact slate, story, history, and prediction payloads from the private workspace.
+- `models/`
+  Sport model cartridges, cartridge registries, shared model utilities, run locks, and model lifecycle wrappers.
 - `published-data/`
   Generated JSON snapshots that the API can serve instead of importing large frontend-shaped TS/JS modules directly.
 - `pipeline/`
@@ -218,22 +220,18 @@ This postgame command:
 
 - `web/src/App.tsx`
   Main frontend shell and trading desk UI.
-- `models/mlb/cartridges/MLB-M0/lib/sports-model.js`
-  Shared deterministic MLB scoring logic used by the published slates.
+- `models/mlb/app-model.js`
+  Registry-guarded app adapter for the active MLB parent model.
 - `web/src/lib/sports-model.js`
-  Frontend compatibility shim that re-exports the active cartridge scoring module.
+  Frontend compatibility shim that re-exports shared app composition.
 - `web/src/lib/slate-manifest.ts`
   Lazy-loading manifest for day files.
 - `pipeline/mlb/warehouse/mlb_warehouse.py`
   Local SQLite warehouse and ingest pipeline.
-- `pipeline/mlb/publish/export-lineup-model.mjs`
-  MLB lineup + weather + matchup exporter.
-- `pipeline/mlb/publish/export-home-run-predictions.mjs`
-  MLB HR board generator.
-- `pipeline/mlb/publish/export-side-predictions.mjs`
-  Saved MLB side board exporter for grading.
-- `pipeline/mlb/publish/export-history-journal.mjs`
-  JSONL training ledger export.
+- `models/mlb/run-cartridge.mjs`
+  Registry-aware MLB workflow and lane dispatcher.
+- `pipeline/mlb/publish/`
+  Compatibility launchers that dispatch through the active MLB cartridge wrapper.
 - `development-docs/mlb/runbooks/daily-games-external.md`
   Daily source registry and operator shortcuts.
 - `development-docs/mlb/runbooks/daily-run-checklist.md`

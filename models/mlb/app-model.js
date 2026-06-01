@@ -55,3 +55,5 @@ export const rankMlbPlayerPropCandidatesLegacy = (...args) =>
 
 export const rankMlbPlayerProps = (...args) =>
   resolveMlbAppAdapter().rankMlbPlayerProps(...args)
+
+export const mlbPropCalibration = resolveMlbAppAdapter().mlbPropCalibration

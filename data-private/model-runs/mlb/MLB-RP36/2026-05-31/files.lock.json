@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "runId": "mlb-2026-05-31-MLB-RP36",
-  "sourceHash": "7d041b933f45365d5195e21f9207b74afc85bb45eaa4104faa6b61483db9964b",
+  "sourceHash": "853381b4654b76017c9b0fc179b4f42bf7a722e435acb54e6121c9be3ba888ca",
   "files": [
     {
       "role": "rp36-model-notes",
@@ -61,7 +61,7 @@
       "role": "mlb-model-registry",
       "path": "models/mlb/registry.json",
       "exists": true,
-      "sha256": "8204b7da3d864300bbd990a9cf0a68c661bf67fa343474e2ef0485e6a293c35f"
+      "sha256": "26bc7994290eb53a58b0fec84f840019a2cf159c4e1452a81e6e8bc42834ec99"
     },
     {
       "role": "top-level-model-registry",
@@ -73,7 +73,7 @@
       "role": "shared-model-run-indexer",
       "path": "models/shared/model-runs/index_runs.py",
       "exists": true,
-      "sha256": "40aa8a23608d18aa83984b895c280962f73871d86c81e62405dbd7e55997278e"
+      "sha256": "48d740bf2082a92534368c0f63e741230fa4f75210661975a2c7a69905b6f3c0"
     },
     {
       "role": "usage-audit",

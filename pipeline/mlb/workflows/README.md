@@ -9,4 +9,4 @@ Current migrated workflows:
 - `followup.mjs`
 - `verify-refresh.mjs`
 
-Compatibility wrappers remain at the old top-level pipeline paths while callers migrate.
+Compatibility wrappers remain at the old top-level pipeline paths while callers migrate. They dispatch through `models/mlb/run-cartridge.mjs`, so active-model resolution stays centralized.

@@ -114,10 +114,14 @@ class ModelRegistryTest(unittest.TestCase):
             "data:generate:mlb-day",
             "data:export:mlb-props",
             "data:export:mlb-sides",
+            "data:export:mlb-reliever-shadow",
+            "data:lock:mlb-rp36",
+            "data:verify:mlb-rp36",
         ):
             with self.subTest(script=script_name):
                 self.assertIn("models/mlb/", scripts.get(script_name, ""))
                 self.assertNotIn("models/mlb/cartridges/MLB-M0", scripts.get(script_name, ""))
+                self.assertNotIn("models/mlb/cartridges/MLB-RP36", scripts.get(script_name, ""))
 
     def test_mlb_scaffold_dry_run_does_not_create_target(self) -> None:
         target_dir = ROOT / "models" / "mlb" / "cartridges" / "MLB-M1"
@@ -228,7 +232,16 @@ class ModelRegistryTest(unittest.TestCase):
         self.assertIn("mlb_side_backtest.py", text)
         self.assertIn("runPythonSideBacktest('import'", text)
         self.assertIn("runPythonSideBacktest('grade'", text)
-        self.assertIn("models', 'mlb', 'cartridges', 'MLB-M0', 'workflows'", pipeline_wrapper_text)
+        self.assertIn("models', 'mlb', 'run-cartridge.mjs'", pipeline_wrapper_text)
+        self.assertIn("'--entry', 'followup'", pipeline_wrapper_text)
+
+    def test_mlb_m0_refresh_runs_rp36_through_registry_wrapper(self) -> None:
+        text = (
+            ROOT / "models" / "mlb" / "cartridges" / "MLB-M0" / "workflows" / "refresh-live-board.mjs"
+        ).read_text(encoding="utf-8")
+        self.assertIn("runMlbCartridge('MLB-RP36', 'runner'", text)
+        self.assertIn("'models', 'mlb', 'run-cartridge.mjs'", text)
+        self.assertNotIn("runPythonFile('models/mlb/cartridges/MLB-RP36/runner.py'", text)
 
     def test_m0_quiet_start_gate_is_metadata_gated(self) -> None:
         model_text = (
@@ -389,11 +402,38 @@ class ModelRegistryTest(unittest.TestCase):
         payload = json.loads(result.stdout)
         self.assertTrue(payload.get("runs"), "compare wrapper did not return indexed runs")
 
-    def test_mlb_publish_compatibility_launchers_point_to_m0_lanes(self) -> None:
+    def test_mlb_publish_compatibility_launchers_dispatch_through_registry_wrapper(self) -> None:
         for publish_path in sorted((ROOT / "pipeline" / "mlb" / "publish").glob("*.mjs")):
             with self.subTest(publish_path=publish_path.name):
                 text = publish_path.read_text(encoding="utf-8")
-                self.assertIn("models', 'mlb', 'cartridges', 'MLB-M0', 'lanes'", text)
+                self.assertIn("models', 'mlb', 'run-cartridge.mjs'", text)
+                self.assertIn("'--entry'", text)
+                self.assertNotIn("cartridges', 'MLB-M0', 'lanes'", text)
+
+    def test_mlb_parent_runner_uses_cartridge_local_workflow(self) -> None:
+        runner_text = (ROOT / "models" / "mlb" / "cartridges" / "MLB-M0" / "runner.mjs").read_text(encoding="utf-8")
+        self.assertIn("import.meta.dirname", runner_text)
+        self.assertIn("'workflows', 'pregame.mjs'", runner_text)
+        self.assertNotIn("'cartridges', 'MLB-M0', 'workflows'", runner_text)
+
+    def test_mlb_m0_run_lock_uses_local_cartridge_dir_for_self_inventory(self) -> None:
+        text = (ROOT / "models" / "mlb" / "cartridges" / "MLB-M0" / "run-lock.mjs").read_text(encoding="utf-8")
+        self.assertIn("localCartridgeDir", text)
+        self.assertIn("`${localCartridgeDir}/manifest.json`", text)
+        self.assertNotIn("models/mlb/cartridges/MLB-M0/manifest.json", text)
+        self.assertNotIn("models/mlb/cartridges/MLB-M0/run-lock.mjs", text)
+
+    def test_mlb_prop_calibration_web_shim_uses_app_adapter_registry(self) -> None:
+        web_shim = (ROOT / "web" / "src" / "lib" / "mlb-prop-calibration.generated.js").read_text(encoding="utf-8")
+        ensure_generated = (ROOT / "scripts" / "ensure-generated-web-artifacts.mjs").read_text(encoding="utf-8")
+        history_journal = (
+            ROOT / "models" / "mlb" / "cartridges" / "MLB-M0" / "lanes" / "history-journal.mjs"
+        ).read_text(encoding="utf-8")
+
+        self.assertIn("models/mlb/app-model.js", web_shim)
+        self.assertIn("models/mlb/app-model.js", ensure_generated)
+        self.assertIn("models/mlb/app-model.js", history_journal)
+        self.assertNotIn("MLB-M0/generated/mlb-prop-calibration", web_shim)
 
     def test_m0_may30_side_predictions_are_training_ready(self) -> None:
         side_board = ROOT / "data-private" / "predictions" / "mlb-sides" / "2026-05-30-board-live.json"

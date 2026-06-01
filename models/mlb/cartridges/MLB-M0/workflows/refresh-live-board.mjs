@@ -61,6 +61,20 @@ const runPythonFile = (relativePath, extraArgs = []) => {
   })
 }
 
+const runMlbCartridge = (modelId, entry, extraArgs = []) => {
+  execFileSync('node', [
+    path.join(rootDir, 'models', 'mlb', 'run-cartridge.mjs'),
+    '--model',
+    modelId,
+    '--entry',
+    entry,
+    ...extraArgs
+  ], {
+    cwd: rootDir,
+    stdio: 'inherit'
+  })
+}
+
 const main = () => {
   const options = parseArgs()
   const seasonYear = Number(options.date.slice(0, 4))
@@ -99,7 +113,7 @@ const main = () => {
   runNodeScript('mlb/publish/generate-day-files.mjs', generateArgs)
   runNodeScript('mlb/publish/export-lineup-model.mjs', ['--date', options.date])
   // Keep the bullpen upgrade path in shadow mode on real game cards before promoting it into live picks.
-  runPythonFile('models/mlb/cartridges/MLB-RP36/runner.py', ['--date', options.date])
+  runMlbCartridge('MLB-RP36', 'runner', ['--date', options.date])
   runNodeScript('mlb/publish/export-veto-artifact.mjs', ['--date', options.date])
   runNodeScript('mlb/publish/export-home-run-predictions.mjs', ['--date', options.date])
   runNodeScript('mlb/publish/export-prop-predictions.mjs', ['--date', options.date])

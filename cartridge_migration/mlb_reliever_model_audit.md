@@ -9,10 +9,10 @@ The current MLB relief pitcher work is not one clean model yet. It is a chained 
 `E36 shadow` is the latest artifact label, not the whole model. The active exporter is:
 
 ```bash
-python3 models/mlb/cartridges/MLB-RP36/runner.py --date YYYY-MM-DD
+npm run data:export:mlb-reliever-shadow -- --date YYYY-MM-DD
 ```
 
-The old top-level `pipeline/export_mlb_reliever_shadow_board.py` compatibility path has been removed; use the MLB-RP36 cartridge runner/exporter instead.
+The old top-level `pipeline/export_mlb_reliever_shadow_board.py` compatibility path has been removed; use the registry-aware MLB-RP36 cartridge wrapper instead of calling the component file directly.
 
 That script imports several prior model/research layers and combines them into a team-side first-up reliever cluster.
 

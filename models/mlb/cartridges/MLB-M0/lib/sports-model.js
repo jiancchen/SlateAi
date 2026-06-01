@@ -19,6 +19,7 @@ export {
   rankFlipRiskPicks
 } from './pick-rankings.js'
 export { buildParlayModel, createParlayLeg } from './parlay.js'
+export { mlbPropCalibration } from '../generated/mlb-prop-calibration.generated.js'
 export {
   rankMlbPlayerPropCandidatesLegacy,
   rankMlbPlayerProps

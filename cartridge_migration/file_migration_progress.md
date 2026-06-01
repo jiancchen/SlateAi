@@ -22,6 +22,7 @@ Date: 2026-05-31
 - Extracted model-neutral participant construction, market helpers, signal helpers, generic/UFC/NBA structured context, and the match-model factory into `models/shared/sports-core/`; `models/mlb/cartridges/MLB-M0/lib/sports-model.js` is now the MLB adapter and public export barrel.
 - Moved MLB-M0 workflow implementations into `models/mlb/cartridges/MLB-M0/workflows/`; the old `pipeline/mlb/workflows/` files now launch the cartridge workflows for compatibility.
 - Moved MLB-M0 publish lane implementations into `models/mlb/cartridges/MLB-M0/lanes/`; the old `pipeline/mlb/publish/` files now launch the cartridge lanes for compatibility.
+- Re-routed the old `pipeline/mlb/workflows/` and `pipeline/mlb/publish/` compatibility launchers through `models/mlb/run-cartridge.mjs` so they resolve the active parent model instead of hardcoding MLB-M0.
 - Removed the unused MLB-M0 `legacy-runner.mjs` helper after lane and workflow launchers no longer depended on it.
 - Added `cartridge_migration/mlb_pipeline_ownership_audit.md` to classify remaining MLB pipeline folders as data plumbing, compatibility launchers, or offline research before any further moves.
 - Added an MLB-RP36 run envelope with dated source/input/output locks and exact reliever-shadow snapshot verification. The first reproducible RP36 run is May 31, because the May 30 legacy artifact no longer exactly regenerates from the current warehouse.
@@ -30,8 +31,11 @@ Date: 2026-05-31
 - Narrowed the MLB-M0 source inventory away from workflow/publish compatibility launchers and frontend shims while keeping cartridge-owned behavior, shared core files, warehouse contracts, and consumed addendum files explicit.
 - Updated active app imports and future tennis day generation to import `models/shared/sports-core/app-sports-model.js` directly; historical generated day files can keep the compatibility shim.
 - Added registry-aware MLB lifecycle wrappers under `models/mlb/` and routed MLB package scripts through them for parent-model run, lock, verify, workflow, and lane dispatch.
+- Routed MLB-RP36 package scripts and the MLB-M0 refresh workflow through the same registry-aware wrappers, so the relief addendum is consumed as a registered component instead of a direct file path.
 - Added `development-docs/mlb/runbooks/model-iteration.md` documenting how a future `MLB-M1` should be scaffolded from `MLB-M0`, benchmarked, locked, compared, and activated.
 - Added `models/mlb/app-model.js` so app-facing MLB adapter resolution is centralized and unregistered future active parent models fail loudly instead of silently using MLB-M0.
+- Re-routed the web prop-calibration shim through `models/mlb/app-model.js` so future model adapters can own calibration exposure.
+- Added `cartridge_migration/mlb_cartridge_audit_2026_05_31.md` to separate fixed active-path misses from intentional manifest/historical references.
 - Moved MLB pregame and refresh workflow implementations into `pipeline/mlb/workflows/`.
 - Moved the MLB close/follow-up workflow into `pipeline/mlb/workflows/followup.mjs`, and pointed future generated postmortem/follow-up docs into `development-docs/mlb/postmortems/`.
 - Moved MLB refresh verification into `pipeline/mlb/workflows/verify-refresh.mjs`.

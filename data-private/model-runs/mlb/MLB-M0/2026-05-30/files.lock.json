@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "runId": "mlb-2026-05-30-MLB-W1-MLB-F0-MLB-M0-MLB-RP36-MLB-E0",
-  "sourceHash": "3e09d04a64f41c0b0198e7f3a1e743e3f59a208d3f66a532235a6575d62d5f79",
+  "sourceHash": "80d6e18c9bb7aa671bd0fd78f5ca58edf09195b70ce0a1ee3e2ee665f5aa3f84",
   "files": [
     {
       "role": "mlb-app-adapter-registry",
       "path": "models/mlb/app-model.js",
       "exists": true,
-      "sha256": "1dedb3bbb00e12d3341be9e0f344dd56796cc1869107b8eb5f20808c4f66cfa7"
+      "sha256": "ba99592767247683c53ef64ee1911a2febf8bac077415287bf60070d4ebc6f44"
     },
     {
       "path": "models/mlb/cartridges/MLB-E0/manifest.json",
@@ -97,7 +97,7 @@
       "role": "cartridge-history-journal-exporter",
       "path": "models/mlb/cartridges/MLB-M0/lanes/history-journal.mjs",
       "exists": true,
-      "sha256": "81a07f9759722d2517fd2771ea64f63b4caf33679141237067dba9efbfe3d083"
+      "sha256": "1f8c5050e537af4fca2769137b5aad8ad7a545e51745aebc8f905a02fbe2a89e"
     },
     {
       "role": "cartridge-home-run-exporter",
@@ -115,7 +115,7 @@
       "role": "cartridge-prop-exporter",
       "path": "models/mlb/cartridges/MLB-M0/lanes/props.mjs",
       "exists": true,
-      "sha256": "bf4adf1c69468c1f91e14637b3cfe0e3387c3beb206fe4abf91a4eed1691ac22"
+      "sha256": "5f869e228764a4f0505d691578c298ee45ff7fad71fa46f3cde0ff373354456e"
     },
     {
       "role": "cartridge-side-exporter",
@@ -193,7 +193,7 @@
       "role": "side-model-logic",
       "path": "models/mlb/cartridges/MLB-M0/lib/sports-model.js",
       "exists": true,
-      "sha256": "ce7a4aa00726db90be3af70f5f75386497a657e1d7e965c26829749688aa69ee"
+      "sha256": "bf5dabfb706b06e5fd41d62c70d6b935728bf4328da85c96cf4325c234d2e8b4"
     },
     {
       "role": "model-structured-context",
@@ -217,19 +217,19 @@
       "path": "models/mlb/cartridges/MLB-M0/MLB-M0_log.md",
       "role": "model-log",
       "exists": true,
-      "sha256": "041eaad94af424c17ff23220e651bdeaf92d3aebbfc3f42db875e1317a3ea93f"
+      "sha256": "e7da8ae5361f42929592222cdc5b2f3f63dc82f8e15d587aa68fcc130907bb1a"
     },
     {
       "path": "models/mlb/cartridges/MLB-M0/model_description.json",
       "role": "model-description",
       "exists": true,
-      "sha256": "7b24c79361c32fadbfda776cc8a61dc749915948fb22ef8065f160e729b80856"
+      "sha256": "b750c3927fdb65b55028dbb40848ffc8ab5ec37b25a10605780c35d2af8775a9"
     },
     {
       "path": "models/mlb/cartridges/MLB-M0/MODEL_NOTES.md",
       "role": "model-notes",
       "exists": true,
-      "sha256": "72e8728fcf0a21bdbd9b84bff3c17704ada66ef2b13ba30ece8c01c2200dbce0"
+      "sha256": "b610bf0ae4f6b42b57d5a27c9915817af314f72202d567438e0626becd9e55c4"
     },
     {
       "path": "models/mlb/cartridges/MLB-M0/output-contract.json",
@@ -253,13 +253,13 @@
       "role": "run-locker",
       "path": "models/mlb/cartridges/MLB-M0/run-lock.mjs",
       "exists": true,
-      "sha256": "9477b7925a2a745e54d795d78a7719121e87743bf7b400a4b5390e5b90abf240"
+      "sha256": "c65ee072f59ed4876dc37fc32ecc5c7c11d5ece3345af0236f08a9dae140cd01"
     },
     {
       "role": "pregame-runner",
       "path": "models/mlb/cartridges/MLB-M0/runner.mjs",
       "exists": true,
-      "sha256": "e4e5d45a7b16856d557b13df4d4fb60122635bbbf17a8ba4697018103c3d6704"
+      "sha256": "8ad531068f5dcc6c730989b4490585f0a0f84c1b35cc13682957f52dea5b89ea"
     },
     {
       "role": "snapshot-builder",
@@ -295,7 +295,7 @@
       "role": "cartridge-refresh-workflow",
       "path": "models/mlb/cartridges/MLB-M0/workflows/refresh-live-board.mjs",
       "exists": true,
-      "sha256": "a6c6f929968d6df13c2265949b1629bd01d6ea962a8b66629f645af87c086f9f"
+      "sha256": "84110efc18cb5695fd7393fe1107eb9dc71137494943adb2f33ab6838b8c024e"
     },
     {
       "role": "cartridge-refresh-verifier",
@@ -385,7 +385,7 @@
       "path": "models/mlb/registry.json",
       "role": "model-registry",
       "exists": true,
-      "sha256": "ea73a6351911a673e7c194e1c2e2b79d8999496df875691728d3503075c34dfc"
+      "sha256": "26bc7994290eb53a58b0fec84f840019a2cf159c4e1452a81e6e8bc42834ec99"
     },
     {
       "role": "mlb-cartridge-runner",

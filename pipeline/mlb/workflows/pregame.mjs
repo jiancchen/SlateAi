@@ -8,6 +8,6 @@ const rootDir = path.resolve(__dirname, '..', '..', '..')
 
 execFileSync(
   'node',
-  [path.join(rootDir, 'models', 'mlb', 'cartridges', 'MLB-M0', 'workflows', 'pregame.mjs'), ...process.argv.slice(2)],
+  [path.join(rootDir, 'models', 'mlb', 'run-cartridge.mjs'), '--entry', 'pregame', ...process.argv.slice(2)],
   { cwd: rootDir, stdio: 'inherit' }
 )
