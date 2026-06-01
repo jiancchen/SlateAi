@@ -15,7 +15,9 @@ from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[3]
 PIPELINE_ROOT = ROOT / "pipeline"
+WAREHOUSE_ROOT = PIPELINE_ROOT / "tennis" / "warehouse"
 sys.path.insert(0, str(PIPELINE_ROOT))
+sys.path.insert(0, str(WAREHOUSE_ROOT))
 
 from tennis_warehouse import DB_PATH, init_db
 

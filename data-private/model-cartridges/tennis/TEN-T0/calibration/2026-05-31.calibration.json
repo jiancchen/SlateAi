@@ -31,7 +31,7 @@
       {
         "path": "data-private/reference/tennis/espn-scoreboard-2026-05-31.json",
         "exists": true,
-        "sha256": "254e56f95e3c58d8a7a0dd4e6a7c340543e7bb15880949b40171596fcbab14b6"
+        "sha256": "9dd54ce7841248e2d184f94fe6db93fbb62681821df541664b1a4e7f53c067eb"
       },
       {
         "path": "data-private/reference/tennis/player-rankings.json",
@@ -61,7 +61,7 @@
       {
         "path": "data-private/predictions/tennis/2026-05-31-multimodel-ensemble.json",
         "exists": true,
-        "sha256": "cf591995c88d76fe69ab819569d316416c4a4ce53ad1226369c8b7a1d275eb9a"
+        "sha256": "bf29ed8c93708a105a4fd542d7f036acfc4eb7bdd2c0328b114bd1f2148e4762"
       },
       {
         "path": "data-private/predictions/tennis/2026-05-31-derivative-markets.json",
@@ -82,11 +82,11 @@
   },
   "winnerModel": {
     "generatedFrom": "tennis warehouse pandas ensemble",
-    "settledRows": 266,
+    "settledRows": 274,
     "deskBaseline": {
-      "rows": 266,
-      "hits": 175,
-      "hitRate": 0.658,
+      "rows": 274,
+      "hits": 180,
+      "hitRate": 0.657,
       "byDay": {
         "2026-05-21": {
           "rows": 27,
@@ -132,16 +132,21 @@
           "rows": 16,
           "hits": 9,
           "hitRate": 0.562
+        },
+        "2026-05-31": {
+          "rows": 8,
+          "hits": 5,
+          "hitRate": 0.625
         }
       }
     },
     "backtest": {
-      "rows": 266,
-      "hits": 158,
-      "hitRate": 0.594,
-      "brier": 0.2319,
-      "logLoss": 0.6558,
-      "auc": 0.648,
+      "rows": 274,
+      "hits": 165,
+      "hitRate": 0.602,
+      "brier": 0.2302,
+      "logLoss": 0.6519,
+      "auc": 0.646,
       "features": 93,
       "includeMarket": true,
       "chain": {
@@ -155,12 +160,12 @@
       }
     },
     "dataOnlyBacktest": {
-      "rows": 266,
-      "hits": 153,
-      "hitRate": 0.575,
-      "brier": 0.2372,
-      "logLoss": 0.667,
-      "auc": 0.617,
+      "rows": 274,
+      "hits": 155,
+      "hitRate": 0.566,
+      "brier": 0.2358,
+      "logLoss": 0.664,
+      "auc": 0.621,
       "features": 87,
       "includeMarket": false
     },
@@ -174,7 +179,7 @@
     },
     "trainingCorpus": {
       "rows": 278,
-      "settledRows": 266,
+      "settledRows": 274,
       "featureColumns": 113,
       "table": "tennis_model_training_rows",
       "jsonPath": "data-private/models/tennis-training-corpus-through-2026-05-31.json"

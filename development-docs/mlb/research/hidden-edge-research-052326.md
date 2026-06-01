@@ -20,9 +20,9 @@ This pass uses standard Python and SQLite because `pandas` is not bundled in the
 
 ## Hidden Edge Inventory
 
-- `mlb_team_whiff_persistence_profiles`: 3412 rows
-- `mlb_team_lead_surrender_profiles`: 3412 rows
-- `mlb_team_form_carryover_profiles`: 3352 rows
+- `mlb_team_whiff_persistence_profiles`: 3472 rows
+- `mlb_team_lead_surrender_profiles`: 3472 rows
+- `mlb_team_form_carryover_profiles`: 3412 rows
 
 All three are keyed by:
 - `as_of_date`

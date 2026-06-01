@@ -1,30 +1,30 @@
 {
   "source": "ESPN tennis scoreboard",
   "sourceUrl": "https://www.espn.com/tennis/scoreboard/_/date/20260531",
-  "fetchedAt": "2026-05-30T21:35:42.352Z",
+  "fetchedAt": "2026-06-01T05:15:28.117Z",
   "date": "2026-05-31",
   "tournament": "Roland Garros",
   "competitions": [
     {
       "eventId": "175531",
-      "date": "2026-05-31T09:00Z",
+      "date": "2026-05-31T09:05Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 5:00 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 4 - Court Suzanne-Lenglen",
       "round": "Round 4",
       "court": "Court Suzanne-Lenglen",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Sorana Cirstea",
+      "scoreline": "6-3 7-6(7-4)",
       "players": [
         {
           "id": "1774",
@@ -32,8 +32,21 @@
           "seed": 18,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rom.png",
           "profileUrl": "/tennis/player/_/id/1774/sorana-cirstea",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "7",
+              "tiebreak": "7",
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "3155",
@@ -42,19 +55,32 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
           "profileUrl": "/tennis/player/_/id/3155/wang-xiyu",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "3",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": "4",
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175531",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 5:00 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T09:00Z",
+        "date": "2026-05-31T09:05Z",
         "tmVld": true,
         "note": "Round 4 - Court Suzanne-Lenglen",
         "competitors": [
@@ -67,7 +93,21 @@
             "ordr": 1,
             "link": "/tennis/player/_/id/1774/sorana-cirstea",
             "rnk": 18,
-            "nm": "Sorana Cirstea"
+            "nm": "Sorana Cirstea",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "7",
+                "p": 2,
+                "t": "7",
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "3155",
@@ -77,31 +117,42 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
             "ordr": 2,
             "link": "/tennis/player/_/id/3155/wang-xiyu",
-            "nm": "Wang Xiyu"
+            "nm": "Wang Xiyu",
+            "lnescrs": [
+              {
+                "v": "3",
+                "p": 1
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "t": "4"
+              }
+            ]
           }
         ]
       }
     },
     {
       "eventId": "175574",
-      "date": "2026-05-31T09:00Z",
+      "date": "2026-05-31T09:05Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 5:00 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 4 - Court Philippe-Chatrier",
       "round": "Round 4",
       "court": "Court Philippe-Chatrier",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Marta Kostyuk",
+      "scoreline": "7-5 6-1",
       "players": [
         {
           "id": "3382",
@@ -109,8 +160,21 @@
           "seed": 15,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ukr.png",
           "profileUrl": "/tennis/player/_/id/3382/marta-kostyuk",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "7",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "3730",
@@ -119,19 +183,32 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/pol.png",
           "profileUrl": "/tennis/player/_/id/3730/iga-swiatek",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "5",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "1",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175574",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 5:00 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T09:00Z",
+        "date": "2026-05-31T09:05Z",
         "tmVld": true,
         "note": "Round 4 - Court Philippe-Chatrier",
         "competitors": [
@@ -144,7 +221,20 @@
             "ordr": 1,
             "link": "/tennis/player/_/id/3382/marta-kostyuk",
             "rnk": 15,
-            "nm": "Marta Kostyuk"
+            "nm": "Marta Kostyuk",
+            "lnescrs": [
+              {
+                "v": "7",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "3730",
@@ -155,31 +245,41 @@
             "ordr": 2,
             "link": "/tennis/player/_/id/3730/iga-swiatek",
             "rnk": 3,
-            "nm": "Iga Swiatek"
+            "nm": "Iga Swiatek",
+            "lnescrs": [
+              {
+                "v": "5",
+                "p": 1
+              },
+              {
+                "v": "1",
+                "p": 2
+              }
+            ]
           }
         ]
       }
     },
     {
       "eventId": "175575",
-      "date": "2026-05-31T10:30Z",
+      "date": "2026-05-31T11:10Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 6:30 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 4 - Court Philippe-Chatrier",
       "round": "Round 4",
       "court": "Court Philippe-Chatrier",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Elina Svitolina",
+      "scoreline": "4-6 6-4 6-0",
       "players": [
         {
           "id": "1797",
@@ -187,8 +287,27 @@
           "seed": 7,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ukr.png",
           "profileUrl": "/tennis/player/_/id/1797/elina-svitolina",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 3,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "2183",
@@ -197,19 +316,38 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
           "profileUrl": "/tennis/player/_/id/2183/belinda-bencic",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 3,
+              "value": "0",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175575",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 6:30 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T10:30Z",
+        "date": "2026-05-31T11:10Z",
         "tmVld": true,
         "note": "Round 4 - Court Philippe-Chatrier",
         "competitors": [
@@ -222,7 +360,24 @@
             "ordr": 1,
             "link": "/tennis/player/_/id/1797/elina-svitolina",
             "rnk": 7,
-            "nm": "Elina Svitolina"
+            "nm": "Elina Svitolina",
+            "lnescrs": [
+              {
+                "v": "4",
+                "p": 1
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 3,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "2183",
@@ -233,31 +388,46 @@
             "ordr": 2,
             "link": "/tennis/player/_/id/2183/belinda-bencic",
             "rnk": 11,
-            "nm": "Belinda Bencic"
+            "nm": "Belinda Bencic",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "4",
+                "p": 2
+              },
+              {
+                "v": "0",
+                "p": 3
+              }
+            ]
           }
         ]
       }
     },
     {
       "eventId": "175584",
-      "date": "2026-05-31T12:30Z",
+      "date": "2026-05-31T15:35Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 8:30 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 4 - Court Suzanne-Lenglen",
       "round": "Round 4",
       "court": "Court Suzanne-Lenglen",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Mirra Andreeva",
+      "scoreline": "6-3 6-2",
       "players": [
         {
           "id": "9820",
@@ -265,8 +435,21 @@
           "seed": 8,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rus.png",
           "profileUrl": "/tennis/player/_/id/9820/mirra-andreeva",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "2617",
@@ -275,19 +458,32 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
           "profileUrl": "/tennis/player/_/id/2617/jil-teichmann",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "3",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "2",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175584",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 8:30 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T12:30Z",
+        "date": "2026-05-31T15:35Z",
         "tmVld": true,
         "note": "Round 4 - Court Suzanne-Lenglen",
         "competitors": [
@@ -300,7 +496,20 @@
             "ordr": 1,
             "link": "/tennis/player/_/id/9820/mirra-andreeva",
             "rnk": 8,
-            "nm": "Mirra Andreeva"
+            "nm": "Mirra Andreeva",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "2617",
@@ -310,31 +519,41 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
             "ordr": 2,
             "link": "/tennis/player/_/id/2617/jil-teichmann",
-            "nm": "Jil Teichmann"
+            "nm": "Jil Teichmann",
+            "lnescrs": [
+              {
+                "v": "3",
+                "p": 1
+              },
+              {
+                "v": "2",
+                "p": 2
+              }
+            ]
           }
         ]
       }
     },
     {
       "eventId": "175759",
-      "date": "2026-05-31T18:15Z",
+      "date": "2026-05-31T18:30Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 2:15 PM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 4 - Court Philippe-Chatrier",
       "round": "Round 4",
       "court": "Court Philippe-Chatrier",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Joao Fonseca",
+      "scoreline": "5-7 6-7(8-10) 7-5 2-6",
       "players": [
         {
           "id": "2989",
@@ -343,7 +562,32 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
           "profileUrl": "/tennis/player/_/id/2989/casper-ruud",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "5",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": "8",
+              "wonSet": false
+            },
+            {
+              "set": 3,
+              "value": "7",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 4,
+              "value": "2",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         },
         {
           "id": "11745",
@@ -351,20 +595,45 @@
           "seed": 28,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
           "profileUrl": "/tennis/player/_/id/11745/joao-fonseca",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "7",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "7",
+              "tiebreak": "10",
+              "wonSet": true
+            },
+            {
+              "set": 3,
+              "value": "5",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 4,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175759",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 2:15 PM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T18:15Z",
+        "date": "2026-05-31T18:30Z",
         "tmVld": true,
         "note": "Round 4 - Court Philippe-Chatrier",
         "competitors": [
@@ -377,7 +646,27 @@
             "ordr": 1,
             "link": "/tennis/player/_/id/2989/casper-ruud",
             "rnk": 15,
-            "nm": "Casper Ruud"
+            "nm": "Casper Ruud",
+            "lnescrs": [
+              {
+                "v": "5",
+                "p": 1
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "t": "8"
+              },
+              {
+                "v": "7",
+                "p": 3,
+                "w": true
+              },
+              {
+                "v": "2",
+                "p": 4
+              }
+            ]
           },
           {
             "id": "11745",
@@ -388,31 +677,54 @@
             "ordr": 2,
             "link": "/tennis/player/_/id/11745/joao-fonseca",
             "rnk": 28,
-            "nm": "Joao Fonseca"
+            "nm": "Joao Fonseca",
+            "lnescrs": [
+              {
+                "v": "7",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "7",
+                "p": 2,
+                "t": "10",
+                "w": true
+              },
+              {
+                "v": "5",
+                "p": 3
+              },
+              {
+                "v": "6",
+                "p": 4,
+                "w": true
+              }
+            ],
+            "wnr": true
           }
         ]
       }
     },
     {
       "eventId": "175762",
-      "date": "2026-05-31T14:00Z",
+      "date": "2026-05-31T17:25Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 10:00 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 4 - Court Suzanne-Lenglen",
       "round": "Round 4",
       "court": "Court Suzanne-Lenglen",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Jakub Mensik",
+      "scoreline": "6-3 7-6(8-6) 4-6 2-6 6-3",
       "players": [
         {
           "id": "10319",
@@ -420,8 +732,39 @@
           "seed": 26,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
           "profileUrl": "/tennis/player/_/id/10319/jakub-mensik",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "7",
+              "tiebreak": "8",
+              "wonSet": true
+            },
+            {
+              "set": 3,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 4,
+              "value": "2",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 5,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "2642",
@@ -430,19 +773,50 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rus.png",
           "profileUrl": "/tennis/player/_/id/2642/andrey-rublev",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "3",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": "6",
+              "wonSet": false
+            },
+            {
+              "set": 3,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 4,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 5,
+              "value": "3",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175762",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 10:00 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T14:00Z",
+        "date": "2026-05-31T17:25Z",
         "tmVld": true,
         "note": "Round 4 - Court Suzanne-Lenglen",
         "competitors": [
@@ -455,7 +829,34 @@
             "ordr": 1,
             "link": "/tennis/player/_/id/10319/jakub-mensik",
             "rnk": 26,
-            "nm": "Jakub Mensik"
+            "nm": "Jakub Mensik",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "7",
+                "p": 2,
+                "t": "8",
+                "w": true
+              },
+              {
+                "v": "4",
+                "p": 3
+              },
+              {
+                "v": "2",
+                "p": 4
+              },
+              {
+                "v": "6",
+                "p": 5,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "2642",
@@ -466,31 +867,56 @@
             "ordr": 2,
             "link": "/tennis/player/_/id/2642/andrey-rublev",
             "rnk": 11,
-            "nm": "Andrey Rublev"
+            "nm": "Andrey Rublev",
+            "lnescrs": [
+              {
+                "v": "3",
+                "p": 1
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "t": "6"
+              },
+              {
+                "v": "6",
+                "p": 3,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 4,
+                "w": true
+              },
+              {
+                "v": "3",
+                "p": 5
+              }
+            ]
           }
         ]
       }
     },
     {
       "eventId": "175776",
-      "date": "2026-05-31T10:30Z",
+      "date": "2026-05-31T11:25Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 6:30 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 4 - Court Suzanne-Lenglen",
       "round": "Round 4",
       "court": "Court Suzanne-Lenglen",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Rafael Jodar",
+      "scoreline": "4-6 4-6 6-1 6-2 6-2",
       "players": [
         {
           "id": "12657",
@@ -498,8 +924,39 @@
           "seed": 27,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
           "profileUrl": "/tennis/player/_/id/12657/rafael-jodar",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 3,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 4,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 5,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "1590",
@@ -508,19 +965,50 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
           "profileUrl": "/tennis/player/_/id/1590/pablo-carreno-busta",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 3,
+              "value": "1",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 4,
+              "value": "2",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 5,
+              "value": "2",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175776",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 6:30 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T10:30Z",
+        "date": "2026-05-31T11:25Z",
         "tmVld": true,
         "note": "Round 4 - Court Suzanne-Lenglen",
         "competitors": [
@@ -533,7 +1021,33 @@
             "ordr": 1,
             "link": "/tennis/player/_/id/12657/rafael-jodar",
             "rnk": 27,
-            "nm": "Rafael Jodar"
+            "nm": "Rafael Jodar",
+            "lnescrs": [
+              {
+                "v": "4",
+                "p": 1
+              },
+              {
+                "v": "4",
+                "p": 2
+              },
+              {
+                "v": "6",
+                "p": 3,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 4,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 5,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "1590",
@@ -543,31 +1057,55 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
             "ordr": 2,
             "link": "/tennis/player/_/id/1590/pablo-carreno-busta",
-            "nm": "Pablo Carreno Busta"
+            "nm": "Pablo Carreno Busta",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              },
+              {
+                "v": "1",
+                "p": 3
+              },
+              {
+                "v": "2",
+                "p": 4
+              },
+              {
+                "v": "2",
+                "p": 5
+              }
+            ]
           }
         ]
       }
     },
     {
       "eventId": "175778",
-      "date": "2026-05-31T13:30Z",
+      "date": "2026-05-31T13:45Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 9:30 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
-      "note": "Round 4",
+      "completed": true,
+      "statusDescription": "Final",
+      "note": "Round 4 - Court Philippe-Chatrier",
       "round": "Round 4",
-      "court": "",
+      "court": "Court Philippe-Chatrier",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Alexander Zverev",
+      "scoreline": "6-7(3-7) 4-6 1-6",
       "players": [
         {
           "id": "3897",
@@ -576,7 +1114,26 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
           "profileUrl": "/tennis/player/_/id/3897/jesper-de-jong",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": "3",
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 3,
+              "value": "1",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         },
         {
           "id": "2375",
@@ -584,22 +1141,41 @@
           "seed": 2,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
           "profileUrl": "/tennis/player/_/id/2375/alexander-zverev",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "7",
+              "tiebreak": "7",
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 3,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175778",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 9:30 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T13:30Z",
+        "date": "2026-05-31T13:45Z",
         "tmVld": true,
-        "note": "Round 4",
+        "note": "Round 4 - Court Philippe-Chatrier",
         "competitors": [
           {
             "id": "3897",
@@ -609,7 +1185,22 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
             "ordr": 1,
             "link": "/tennis/player/_/id/3897/jesper-de-jong",
-            "nm": "Jesper de Jong"
+            "nm": "Jesper de Jong",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "t": "3"
+              },
+              {
+                "v": "4",
+                "p": 2
+              },
+              {
+                "v": "1",
+                "p": 3
+              }
+            ]
           },
           {
             "id": "2375",
@@ -620,31 +1211,50 @@
             "ordr": 2,
             "link": "/tennis/player/_/id/2375/alexander-zverev",
             "rnk": 2,
-            "nm": "Alexander Zverev"
+            "nm": "Alexander Zverev",
+            "lnescrs": [
+              {
+                "v": "7",
+                "p": 1,
+                "t": "7",
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 3,
+                "w": true
+              }
+            ],
+            "wnr": true
           }
         ]
       }
     },
     {
       "eventId": "175793",
-      "date": "2026-05-31T12:00Z",
+      "date": "2026-05-31T13:25Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 8:00 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "38",
+        "description": "Retired",
+        "detail": "Retired",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Retired",
       "note": "Round 3 - Court Simonne-Mathieu",
       "round": "Round 3",
       "court": "Court Simonne-Mathieu",
       "doubles": true,
       "singles": false,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "",
+      "scoreline": "6-4 1-1",
       "players": [
         {
           "id": "698-1513",
@@ -652,8 +1262,21 @@
           "seed": 1,
           "countryLogo": "",
           "profileUrl": "",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "1",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         },
         {
           "id": "766-2354",
@@ -662,19 +1285,32 @@
           "countryLogo": "",
           "profileUrl": "",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "1",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175793",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 8:00 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "38",
+          "description": "Retired",
+          "detail": "Retired",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T12:00Z",
+        "date": "2026-05-31T13:25Z",
         "tmVld": true,
         "dbls": true,
         "note": "Round 3 - Court Simonne-Mathieu",
@@ -696,7 +1332,19 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
                 "link": "/tennis/player/_/id/1513/horacio-zeballos"
               }
-            ]
+            ],
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "1",
+                "p": 2
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "766-2354",
@@ -715,6 +1363,16 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
                 "link": "/tennis/player/_/id/2354/lucas-miedler"
               }
+            ],
+            "lnescrs": [
+              {
+                "v": "4",
+                "p": 1
+              },
+              {
+                "v": "1",
+                "p": 2
+              }
             ]
           }
         ]
@@ -722,24 +1380,24 @@
     },
     {
       "eventId": "175813",
-      "date": "2026-05-31T10:30Z",
+      "date": "2026-05-31T11:50Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 6:30 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 3 - Court 7",
       "round": "Round 3",
       "court": "Court 7",
       "doubles": true,
       "singles": false,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "",
+      "scoreline": "4-6 3-6",
       "players": [
         {
           "id": "8987-854",
@@ -748,7 +1406,20 @@
           "countryLogo": "",
           "profileUrl": "",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "3",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         },
         {
           "id": "279-3548",
@@ -756,20 +1427,33 @@
           "seed": 5,
           "countryLogo": "",
           "profileUrl": "",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175813",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 6:30 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T10:30Z",
+        "date": "2026-05-31T11:50Z",
         "tmVld": true,
         "dbls": true,
         "note": "Round 3 - Court 7",
@@ -790,6 +1474,16 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gbr.png",
                 "link": "/tennis/player/_/id/854/marcus-willis"
               }
+            ],
+            "lnescrs": [
+              {
+                "v": "4",
+                "p": 1
+              },
+              {
+                "v": "3",
+                "p": 2
+              }
             ]
           },
           {
@@ -809,31 +1503,44 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ita.png",
                 "link": "/tennis/player/_/id/3548/andrea-vavassori"
               }
-            ]
+            ],
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              }
+            ],
+            "wnr": true
           }
         ]
       }
     },
     {
       "eventId": "175818",
-      "date": "2026-05-31T09:00Z",
+      "date": "2026-05-31T09:10Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 5:00 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 2 - Court 14",
       "round": "Round 2",
       "court": "Court 14",
       "doubles": true,
       "singles": false,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "",
+      "scoreline": "6-3 6-4",
       "players": [
         {
           "id": "1627-2695",
@@ -841,8 +1548,21 @@
           "seed": 6,
           "countryLogo": "",
           "profileUrl": "",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "4011-4010",
@@ -851,19 +1571,32 @@
           "countryLogo": "",
           "profileUrl": "",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "3",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175818",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 5:00 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T09:00Z",
+        "date": "2026-05-31T09:10Z",
         "tmVld": true,
         "dbls": true,
         "note": "Round 2 - Court 14",
@@ -885,7 +1618,20 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
                 "link": "/tennis/player/_/id/2695/tim-puetz"
               }
-            ]
+            ],
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "4011-4010",
@@ -903,6 +1649,16 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
                 "link": "/tennis/player/_/id/4010/thiago-agustin-tirante"
               }
+            ],
+            "lnescrs": [
+              {
+                "v": "3",
+                "p": 1
+              },
+              {
+                "v": "4",
+                "p": 2
+              }
             ]
           }
         ]
@@ -910,24 +1666,24 @@
     },
     {
       "eventId": "175819",
-      "date": "2026-05-31T09:00Z",
+      "date": "2026-05-31T09:05Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 5:00 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 3 - Court Simonne-Mathieu",
       "round": "Round 3",
       "court": "Court Simonne-Mathieu",
       "doubles": true,
       "singles": false,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "",
+      "scoreline": "2-6 7-6(7-1) 3-6",
       "players": [
         {
           "id": "2842-3159",
@@ -936,7 +1692,26 @@
           "countryLogo": "",
           "profileUrl": "",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "2",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "7",
+              "tiebreak": "7",
+              "wonSet": true
+            },
+            {
+              "set": 3,
+              "value": "3",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         },
         {
           "id": "3925-8878",
@@ -944,20 +1719,39 @@
           "seed": null,
           "countryLogo": "",
           "profileUrl": "",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": "1",
+              "wonSet": false
+            },
+            {
+              "set": 3,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175819",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 5:00 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T09:00Z",
+        "date": "2026-05-31T09:05Z",
         "tmVld": true,
         "dbls": true,
         "note": "Round 3 - Court Simonne-Mathieu",
@@ -978,6 +1772,22 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
                 "link": "/tennis/player/_/id/3159/patrik-rikl"
               }
+            ],
+            "lnescrs": [
+              {
+                "v": "2",
+                "p": 1
+              },
+              {
+                "v": "7",
+                "p": 2,
+                "t": "7",
+                "w": true
+              },
+              {
+                "v": "3",
+                "p": 3
+              }
             ]
           },
           {
@@ -996,31 +1806,49 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
                 "link": "/tennis/player/_/id/8878/neil-oberleitner"
               }
-            ]
+            ],
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "t": "1"
+              },
+              {
+                "v": "6",
+                "p": 3,
+                "w": true
+              }
+            ],
+            "wnr": true
           }
         ]
       }
     },
     {
       "eventId": "175831",
-      "date": "2026-05-31T12:00Z",
+      "date": "2026-05-31T12:35Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 8:00 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 2 - Court 14",
       "round": "Round 2",
       "court": "Court 14",
       "doubles": true,
       "singles": false,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "",
+      "scoreline": "7-6(7-5) 4-6 7-5",
       "players": [
         {
           "id": "10030-2970",
@@ -1028,8 +1856,27 @@
           "seed": null,
           "countryLogo": "",
           "profileUrl": "",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "7",
+              "tiebreak": "7",
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 3,
+              "value": "7",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "4037-10885",
@@ -1038,19 +1885,38 @@
           "countryLogo": "",
           "profileUrl": "",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": "5",
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 3,
+              "value": "5",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175831",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 8:00 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T12:00Z",
+        "date": "2026-05-31T12:35Z",
         "tmVld": true,
         "dbls": true,
         "note": "Round 2 - Court 14",
@@ -1071,7 +1937,25 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/chi.png",
                 "link": "/tennis/player/_/id/2970/alejandro-tabilo"
               }
-            ]
+            ],
+            "lnescrs": [
+              {
+                "v": "7",
+                "p": 1,
+                "t": "7",
+                "w": true
+              },
+              {
+                "v": "4",
+                "p": 2
+              },
+              {
+                "v": "7",
+                "p": 3,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "4037-10885",
@@ -1089,6 +1973,22 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
                 "link": "/tennis/player/_/id/10885/luca-sanchez"
               }
+            ],
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "t": "5"
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              },
+              {
+                "v": "5",
+                "p": 3
+              }
             ]
           }
         ]
@@ -1096,24 +1996,24 @@
     },
     {
       "eventId": "175852",
-      "date": "2026-05-31T13:30Z",
+      "date": "2026-05-31T15:10Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 9:30 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 2 - Court 14",
       "round": "Round 2",
       "court": "Court 14",
       "doubles": true,
       "singles": false,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "",
+      "scoreline": "2-6 4-6",
       "players": [
         {
           "id": "1273-3735",
@@ -1122,7 +2022,20 @@
           "countryLogo": "",
           "profileUrl": "",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "2",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         },
         {
           "id": "1881-720",
@@ -1130,20 +2043,33 @@
           "seed": null,
           "countryLogo": "",
           "profileUrl": "",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175852",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 9:30 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T13:30Z",
+        "date": "2026-05-31T15:10Z",
         "tmVld": true,
         "dbls": true,
         "note": "Round 2 - Court 14",
@@ -1164,6 +2090,16 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
                 "link": "/tennis/player/_/id/3735/manuel-guinard"
               }
+            ],
+            "lnescrs": [
+              {
+                "v": "2",
+                "p": 1
+              },
+              {
+                "v": "4",
+                "p": 2
+              }
             ]
           },
           {
@@ -1182,31 +2118,44 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
                 "link": "/tennis/player/_/id/720/edouard-roger-vasselin"
               }
-            ]
+            ],
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              }
+            ],
+            "wnr": true
           }
         ]
       }
     },
     {
       "eventId": "175853",
-      "date": "2026-05-31T13:30Z",
+      "date": "2026-05-31T15:10Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 9:30 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 2 - Court Simonne-Mathieu",
       "round": "Round 2",
       "court": "Court Simonne-Mathieu",
       "doubles": true,
       "singles": false,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "",
+      "scoreline": "6-1 6-3",
       "players": [
         {
           "id": "2699-3625",
@@ -1214,8 +2163,21 @@
           "seed": 4,
           "countryLogo": "",
           "profileUrl": "",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "1455-1344",
@@ -1224,19 +2186,32 @@
           "countryLogo": "",
           "profileUrl": "",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "1",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "3",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175853",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 9:30 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T13:30Z",
+        "date": "2026-05-31T15:10Z",
         "tmVld": true,
         "dbls": true,
         "note": "Round 2 - Court Simonne-Mathieu",
@@ -1258,7 +2233,20 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
                 "link": "/tennis/player/_/id/3625/desirae-krawczyk"
               }
-            ]
+            ],
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "1455-1344",
@@ -1276,6 +2264,16 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ind.png",
                 "link": "/tennis/player/_/id/1344/yuki-bhambri"
               }
+            ],
+            "lnescrs": [
+              {
+                "v": "1",
+                "p": 1
+              },
+              {
+                "v": "3",
+                "p": 2
+              }
             ]
           }
         ]
@@ -1283,24 +2281,24 @@
     },
     {
       "eventId": "175857",
-      "date": "2026-05-31T10:30Z",
+      "date": "2026-05-31T11:00Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 6:30 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 2 - Court 14",
       "round": "Round 2",
       "court": "Court 14",
       "doubles": true,
       "singles": false,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "",
+      "scoreline": "6-4 6-4",
       "players": [
         {
           "id": "1375-1540",
@@ -1308,8 +2306,21 @@
           "seed": null,
           "countryLogo": "",
           "profileUrl": "",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "1848-13774",
@@ -1318,19 +2329,32 @@
           "countryLogo": "",
           "profileUrl": "",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175857",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 6:30 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T10:30Z",
+        "date": "2026-05-31T11:00Z",
         "tmVld": true,
         "dbls": true,
         "note": "Round 2 - Court 14",
@@ -1351,7 +2375,20 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
                 "link": "/tennis/player/_/id/1540/evan-king"
               }
-            ]
+            ],
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "1848-13774",
@@ -1369,6 +2406,16 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
                 "link": "/tennis/player/_/id/13774/jakob-schnaitter"
               }
+            ],
+            "lnescrs": [
+              {
+                "v": "4",
+                "p": 1
+              },
+              {
+                "v": "4",
+                "p": 2
+              }
             ]
           }
         ]
@@ -1376,24 +2423,24 @@
     },
     {
       "eventId": "175861",
-      "date": "2026-05-31T13:30Z",
+      "date": "2026-05-31T15:20Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 9:30 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 2 - Court 7",
       "round": "Round 2",
       "court": "Court 7",
       "doubles": true,
       "singles": false,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "",
+      "scoreline": "6-4 1-6 1-0(10-6)",
       "players": [
         {
           "id": "3548-636",
@@ -1401,8 +2448,27 @@
           "seed": 1,
           "countryLogo": "",
           "profileUrl": "",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "1",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 3,
+              "value": "1",
+              "tiebreak": "10",
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "2581-2293",
@@ -1411,19 +2477,38 @@
           "countryLogo": "",
           "profileUrl": "",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 3,
+              "value": "0",
+              "tiebreak": "6",
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175861",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 9:30 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T13:30Z",
+        "date": "2026-05-31T15:20Z",
         "tmVld": true,
         "dbls": true,
         "note": "Round 2 - Court 7",
@@ -1445,7 +2530,25 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ita.png",
                 "link": "/tennis/player/_/id/636/sara-errani"
               }
-            ]
+            ],
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "1",
+                "p": 2
+              },
+              {
+                "v": "1",
+                "p": 3,
+                "t": "10",
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "2581-2293",
@@ -1463,6 +2566,22 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
                 "link": "/tennis/player/_/id/2293/christian-harrison"
               }
+            ],
+            "lnescrs": [
+              {
+                "v": "4",
+                "p": 1
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              },
+              {
+                "v": "0",
+                "p": 3,
+                "t": "6"
+              }
             ]
           }
         ]
@@ -1470,24 +2589,24 @@
     },
     {
       "eventId": "175886",
-      "date": "2026-05-31T12:00Z",
+      "date": "2026-05-31T13:25Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 8:00 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 3 - Court 7",
       "round": "Round 3",
       "court": "Court 7",
       "doubles": true,
       "singles": false,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "",
+      "scoreline": "4-6 4-6",
       "players": [
         {
           "id": "2411-3142",
@@ -1496,7 +2615,20 @@
           "countryLogo": "",
           "profileUrl": "",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         },
         {
           "id": "3744-2090",
@@ -1504,20 +2636,33 @@
           "seed": 2,
           "countryLogo": "",
           "profileUrl": "",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175886",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 8:00 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T12:00Z",
+        "date": "2026-05-31T13:25Z",
         "tmVld": true,
         "dbls": true,
         "note": "Round 3 - Court 7",
@@ -1538,6 +2683,16 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ukr.png",
                 "link": "/tennis/player/_/id/3142/dayana-yastremska"
               }
+            ],
+            "lnescrs": [
+              {
+                "v": "4",
+                "p": 1
+              },
+              {
+                "v": "4",
+                "p": 2
+              }
             ]
           },
           {
@@ -1557,31 +2712,44 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ser.png",
                 "link": "/tennis/player/_/id/2090/aleksandra-krunic"
               }
-            ]
+            ],
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              }
+            ],
+            "wnr": true
           }
         ]
       }
     },
     {
       "eventId": "175900",
-      "date": "2026-05-31T09:00Z",
+      "date": "2026-05-31T10:10Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 5:00 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 3 - Court 7",
       "round": "Round 3",
       "court": "Court 7",
       "doubles": true,
       "singles": false,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "",
+      "scoreline": "6-4 6-2",
       "players": [
         {
           "id": "2248-2114",
@@ -1589,8 +2757,21 @@
           "seed": 1,
           "countryLogo": "",
           "profileUrl": "",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "2777-2056",
@@ -1599,19 +2780,32 @@
           "countryLogo": "",
           "profileUrl": "",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "2",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175900",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 5:00 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T09:00Z",
+        "date": "2026-05-31T10:10Z",
         "tmVld": true,
         "dbls": true,
         "note": "Round 3 - Court 7",
@@ -1633,7 +2827,20 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
                 "link": "/tennis/player/_/id/2114/taylor-townsend"
               }
-            ]
+            ],
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "2777-2056",
@@ -1651,6 +2858,16 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
                 "link": "/tennis/player/_/id/2056/makoto-ninomiya"
               }
+            ],
+            "lnescrs": [
+              {
+                "v": "4",
+                "p": 1
+              },
+              {
+                "v": "2",
+                "p": 2
+              }
             ]
           }
         ]
@@ -1658,24 +2875,24 @@
     },
     {
       "eventId": "175903",
-      "date": "2026-05-31T10:30Z",
+      "date": "2026-05-31T11:25Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 6:30 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 3 - Court Simonne-Mathieu",
       "round": "Round 3",
       "court": "Court Simonne-Mathieu",
       "doubles": true,
       "singles": false,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "",
+      "scoreline": "2-6 5-7",
       "players": [
         {
           "id": "10133-4658",
@@ -1684,7 +2901,20 @@
           "countryLogo": "",
           "profileUrl": "",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "2",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "5",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         },
         {
           "id": "4477-473",
@@ -1692,20 +2922,33 @@
           "seed": null,
           "countryLogo": "",
           "profileUrl": "",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "7",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175903",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 6:30 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T10:30Z",
+        "date": "2026-05-31T11:25Z",
         "tmVld": true,
         "dbls": true,
         "note": "Round 3 - Court Simonne-Mathieu",
@@ -1727,6 +2970,16 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gbr.png",
                 "link": "/tennis/player/_/id/4658/olivia-nicholls"
               }
+            ],
+            "lnescrs": [
+              {
+                "v": "2",
+                "p": 1
+              },
+              {
+                "v": "5",
+                "p": 2
+              }
             ]
           },
           {
@@ -1745,30 +2998,43 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/slo.png",
                 "link": "/tennis/player/_/id/473/andreja-klepac"
               }
-            ]
+            ],
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "7",
+                "p": 2,
+                "w": true
+              }
+            ],
+            "wnr": true
           }
         ]
       }
     },
     {
       "eventId": "175924",
-      "date": "2026-05-31T12:00Z",
+      "date": "2026-05-31T12:05Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 8:00 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "40",
+        "description": "Walkover",
+        "detail": "Walkover",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
-      "note": "Round 3 - Court 6",
+      "completed": true,
+      "statusDescription": "Walkover",
+      "note": "Round 3",
       "round": "Round 3",
-      "court": "Court 6",
+      "court": "",
       "doubles": true,
       "singles": false,
       "broadcast": "",
-      "winnerName": null,
+      "winnerName": "",
       "scoreline": "",
       "players": [
         {
@@ -1777,7 +3043,7 @@
           "seed": 11,
           "countryLogo": "",
           "profileUrl": "",
-          "winner": false,
+          "winner": true,
           "scores": []
         },
         {
@@ -1793,16 +3059,16 @@
       "raw": {
         "id": "175924",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 8:00 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "40",
+          "description": "Walkover",
+          "detail": "Walkover",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T12:00Z",
+        "date": "2026-05-31T12:05Z",
         "tmVld": true,
         "dbls": true,
-        "note": "Round 3 - Court 6",
+        "note": "Round 3",
         "competitors": [
           {
             "id": "1881-328",
@@ -1821,7 +3087,8 @@
                 "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rus.png",
                 "link": "/tennis/player/_/id/328/vera-zvonareva"
               }
-            ]
+            ],
+            "wnr": true
           },
           {
             "id": "3157-2298",
@@ -1847,24 +3114,24 @@
     },
     {
       "eventId": "178570",
-      "date": "2026-05-31T09:30Z",
+      "date": "2026-05-31T09:40Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 5:30 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Qualifying Final - Centre Court",
       "round": "Qualifying Final",
       "court": "Centre Court",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Ashlyn Krueger",
+      "scoreline": "6-4 7-6(7-5)",
       "players": [
         {
           "id": "6724",
@@ -1872,8 +3139,21 @@
           "seed": null,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
           "profileUrl": "/tennis/player/_/id/6724/ashlyn-krueger",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "7",
+              "tiebreak": "7",
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "13314",
@@ -1882,19 +3162,32 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
           "profileUrl": "/tennis/player/_/id/13314/gabriela-knutson",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": "5",
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "178570",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 5:30 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T09:30Z",
+        "date": "2026-05-31T09:40Z",
         "tmVld": true,
         "note": "Qualifying Final - Centre Court",
         "competitors": [
@@ -1906,7 +3199,21 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
             "ordr": 1,
             "link": "/tennis/player/_/id/6724/ashlyn-krueger",
-            "nm": "Ashlyn Krueger"
+            "nm": "Ashlyn Krueger",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "7",
+                "p": 2,
+                "t": "7",
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "13314",
@@ -1916,31 +3223,42 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
             "ordr": 2,
             "link": "/tennis/player/_/id/13314/gabriela-knutson",
-            "nm": "Gabriela Knutson"
+            "nm": "Gabriela Knutson",
+            "lnescrs": [
+              {
+                "v": "4",
+                "p": 1
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "t": "5"
+              }
+            ]
           }
         ]
       }
     },
     {
       "eventId": "178571",
-      "date": "2026-05-31T11:00Z",
+      "date": "2026-05-31T11:25Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 7:00 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Qualifying Final - Court 1",
       "round": "Qualifying Final",
       "court": "Court 1",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Rebeka Masarova",
+      "scoreline": "4-6 6-4 6-0",
       "players": [
         {
           "id": "2984",
@@ -1948,8 +3266,27 @@
           "seed": null,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
           "profileUrl": "/tennis/player/_/id/2984/rebeka-masarova",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 3,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "12837",
@@ -1958,19 +3295,38 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
           "profileUrl": "/tennis/player/_/id/12837/celine-naef",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 3,
+              "value": "0",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "178571",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 7:00 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T11:00Z",
+        "date": "2026-05-31T11:25Z",
         "tmVld": true,
         "note": "Qualifying Final - Court 1",
         "competitors": [
@@ -1982,7 +3338,24 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
             "ordr": 1,
             "link": "/tennis/player/_/id/2984/rebeka-masarova",
-            "nm": "Rebeka Masarova"
+            "nm": "Rebeka Masarova",
+            "lnescrs": [
+              {
+                "v": "4",
+                "p": 1
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 3,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "12837",
@@ -1992,31 +3365,46 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
             "ordr": 2,
             "link": "/tennis/player/_/id/12837/celine-naef",
-            "nm": "Celine Naef"
+            "nm": "Celine Naef",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "4",
+                "p": 2
+              },
+              {
+                "v": "0",
+                "p": 3
+              }
+            ]
           }
         ]
       }
     },
     {
       "eventId": "178572",
-      "date": "2026-05-31T09:30Z",
+      "date": "2026-05-31T09:40Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 5:30 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Qualifying Final - Court 2",
       "round": "Qualifying Final",
       "court": "Court 2",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Nao Hibino",
+      "scoreline": "6-4 6-2",
       "players": [
         {
           "id": "2043",
@@ -2024,8 +3412,21 @@
           "seed": null,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
           "profileUrl": "/tennis/player/_/id/2043/nao-hibino",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "17702",
@@ -2034,19 +3435,32 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
           "profileUrl": "/tennis/player/_/id/17702/vendula-valdmannova",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "2",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "178572",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 5:30 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T09:30Z",
+        "date": "2026-05-31T09:40Z",
         "tmVld": true,
         "note": "Qualifying Final - Court 2",
         "competitors": [
@@ -2058,7 +3472,20 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
             "ordr": 1,
             "link": "/tennis/player/_/id/2043/nao-hibino",
-            "nm": "Nao Hibino"
+            "nm": "Nao Hibino",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "17702",
@@ -2068,31 +3495,41 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
             "ordr": 2,
             "link": "/tennis/player/_/id/17702/vendula-valdmannova",
-            "nm": "Vendula Valdmannova"
+            "nm": "Vendula Valdmannova",
+            "lnescrs": [
+              {
+                "v": "4",
+                "p": 1
+              },
+              {
+                "v": "2",
+                "p": 2
+              }
+            ]
           }
         ]
       }
     },
     {
       "eventId": "178573",
-      "date": "2026-05-31T09:30Z",
+      "date": "2026-05-31T09:40Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 5:30 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Qualifying Final - Court 1",
       "round": "Qualifying Final",
       "court": "Court 1",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Greet Minnen",
+      "scoreline": "7-6(7-5) 6-1",
       "players": [
         {
           "id": "2910",
@@ -2100,8 +3537,21 @@
           "seed": null,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
           "profileUrl": "/tennis/player/_/id/2910/greet-minnen",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "7",
+              "tiebreak": "7",
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "2736",
@@ -2110,19 +3560,32 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/svk.png",
           "profileUrl": "/tennis/player/_/id/2736/viktoria-hruncakova",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": "5",
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "1",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "178573",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 5:30 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T09:30Z",
+        "date": "2026-05-31T09:40Z",
         "tmVld": true,
         "note": "Qualifying Final - Court 1",
         "competitors": [
@@ -2134,7 +3597,21 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
             "ordr": 1,
             "link": "/tennis/player/_/id/2910/greet-minnen",
-            "nm": "Greet Minnen"
+            "nm": "Greet Minnen",
+            "lnescrs": [
+              {
+                "v": "7",
+                "p": 1,
+                "t": "7",
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "2736",
@@ -2144,31 +3621,42 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/svk.png",
             "ordr": 2,
             "link": "/tennis/player/_/id/2736/viktoria-hruncakova",
-            "nm": "Viktoria Hruncakova"
+            "nm": "Viktoria Hruncakova",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "t": "5"
+              },
+              {
+                "v": "1",
+                "p": 2
+              }
+            ]
           }
         ]
       }
     },
     {
       "eventId": "178574",
-      "date": "2026-05-31T11:00Z",
+      "date": "2026-05-31T11:15Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 7:00 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Qualifying Final - Court 2",
       "round": "Qualifying Final",
       "court": "Court 2",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Mananchaya Sawangkaew",
+      "scoreline": "7-6(7-3) 6-3",
       "players": [
         {
           "id": "5613",
@@ -2176,8 +3664,21 @@
           "seed": null,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/tha.png",
           "profileUrl": "/tennis/player/_/id/5613/mananchaya-sawangkaew",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "7",
+              "tiebreak": "7",
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "13530",
@@ -2186,19 +3687,32 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
           "profileUrl": "/tennis/player/_/id/13530/aoi-ito",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": "3",
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "3",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "178574",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 7:00 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T11:00Z",
+        "date": "2026-05-31T11:15Z",
         "tmVld": true,
         "note": "Qualifying Final - Court 2",
         "competitors": [
@@ -2210,7 +3724,21 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tha.png",
             "ordr": 1,
             "link": "/tennis/player/_/id/5613/mananchaya-sawangkaew",
-            "nm": "Mananchaya Sawangkaew"
+            "nm": "Mananchaya Sawangkaew",
+            "lnescrs": [
+              {
+                "v": "7",
+                "p": 1,
+                "t": "7",
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "13530",
@@ -2220,31 +3748,42 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
             "ordr": 2,
             "link": "/tennis/player/_/id/13530/aoi-ito",
-            "nm": "Aoi Ito"
+            "nm": "Aoi Ito",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "t": "3"
+              },
+              {
+                "v": "3",
+                "p": 2
+              }
+            ]
           }
         ]
       }
     },
     {
       "eventId": "178575",
-      "date": "2026-05-31T11:00Z",
+      "date": "2026-05-31T11:25Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 7:00 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Qualifying Final - Centre Court",
       "round": "Qualifying Final",
       "court": "Centre Court",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Tereza Martincova",
+      "scoreline": "7-6(7-2) 6-1",
       "players": [
         {
           "id": "2349",
@@ -2252,8 +3791,21 @@
           "seed": null,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
           "profileUrl": "/tennis/player/_/id/2349/tereza-martincova",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "7",
+              "tiebreak": "7",
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "10871",
@@ -2262,19 +3814,32 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/gbr.png",
           "profileUrl": "/tennis/player/_/id/10871/mingge-xu",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": "2",
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "1",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "178575",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 7:00 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T11:00Z",
+        "date": "2026-05-31T11:25Z",
         "tmVld": true,
         "note": "Qualifying Final - Centre Court",
         "competitors": [
@@ -2286,7 +3851,21 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
             "ordr": 1,
             "link": "/tennis/player/_/id/2349/tereza-martincova",
-            "nm": "Tereza Martincova"
+            "nm": "Tereza Martincova",
+            "lnescrs": [
+              {
+                "v": "7",
+                "p": 1,
+                "t": "7",
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "10871",
@@ -2296,7 +3875,18 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gbr.png",
             "ordr": 2,
             "link": "/tennis/player/_/id/10871/mingge-xu",
-            "nm": "Mingge Xu"
+            "nm": "Mingge Xu",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "t": "2"
+              },
+              {
+                "v": "1",
+                "p": 2
+              }
+            ]
           }
         ]
       }
@@ -2305,24 +3895,24 @@
   "singles": [
     {
       "eventId": "175531",
-      "date": "2026-05-31T09:00Z",
+      "date": "2026-05-31T09:05Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 5:00 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 4 - Court Suzanne-Lenglen",
       "round": "Round 4",
       "court": "Court Suzanne-Lenglen",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Sorana Cirstea",
+      "scoreline": "6-3 7-6(7-4)",
       "players": [
         {
           "id": "1774",
@@ -2330,8 +3920,21 @@
           "seed": 18,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rom.png",
           "profileUrl": "/tennis/player/_/id/1774/sorana-cirstea",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "7",
+              "tiebreak": "7",
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "3155",
@@ -2340,19 +3943,32 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
           "profileUrl": "/tennis/player/_/id/3155/wang-xiyu",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "3",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": "4",
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175531",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 5:00 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T09:00Z",
+        "date": "2026-05-31T09:05Z",
         "tmVld": true,
         "note": "Round 4 - Court Suzanne-Lenglen",
         "competitors": [
@@ -2365,7 +3981,21 @@
             "ordr": 1,
             "link": "/tennis/player/_/id/1774/sorana-cirstea",
             "rnk": 18,
-            "nm": "Sorana Cirstea"
+            "nm": "Sorana Cirstea",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "7",
+                "p": 2,
+                "t": "7",
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "3155",
@@ -2375,31 +4005,42 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
             "ordr": 2,
             "link": "/tennis/player/_/id/3155/wang-xiyu",
-            "nm": "Wang Xiyu"
+            "nm": "Wang Xiyu",
+            "lnescrs": [
+              {
+                "v": "3",
+                "p": 1
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "t": "4"
+              }
+            ]
           }
         ]
       }
     },
     {
       "eventId": "175574",
-      "date": "2026-05-31T09:00Z",
+      "date": "2026-05-31T09:05Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 5:00 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 4 - Court Philippe-Chatrier",
       "round": "Round 4",
       "court": "Court Philippe-Chatrier",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Marta Kostyuk",
+      "scoreline": "7-5 6-1",
       "players": [
         {
           "id": "3382",
@@ -2407,8 +4048,21 @@
           "seed": 15,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ukr.png",
           "profileUrl": "/tennis/player/_/id/3382/marta-kostyuk",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "7",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "3730",
@@ -2417,19 +4071,32 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/pol.png",
           "profileUrl": "/tennis/player/_/id/3730/iga-swiatek",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "5",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "1",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175574",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 5:00 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T09:00Z",
+        "date": "2026-05-31T09:05Z",
         "tmVld": true,
         "note": "Round 4 - Court Philippe-Chatrier",
         "competitors": [
@@ -2442,7 +4109,20 @@
             "ordr": 1,
             "link": "/tennis/player/_/id/3382/marta-kostyuk",
             "rnk": 15,
-            "nm": "Marta Kostyuk"
+            "nm": "Marta Kostyuk",
+            "lnescrs": [
+              {
+                "v": "7",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "3730",
@@ -2453,31 +4133,41 @@
             "ordr": 2,
             "link": "/tennis/player/_/id/3730/iga-swiatek",
             "rnk": 3,
-            "nm": "Iga Swiatek"
+            "nm": "Iga Swiatek",
+            "lnescrs": [
+              {
+                "v": "5",
+                "p": 1
+              },
+              {
+                "v": "1",
+                "p": 2
+              }
+            ]
           }
         ]
       }
     },
     {
       "eventId": "175575",
-      "date": "2026-05-31T10:30Z",
+      "date": "2026-05-31T11:10Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 6:30 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 4 - Court Philippe-Chatrier",
       "round": "Round 4",
       "court": "Court Philippe-Chatrier",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Elina Svitolina",
+      "scoreline": "4-6 6-4 6-0",
       "players": [
         {
           "id": "1797",
@@ -2485,8 +4175,27 @@
           "seed": 7,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ukr.png",
           "profileUrl": "/tennis/player/_/id/1797/elina-svitolina",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 3,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "2183",
@@ -2495,19 +4204,38 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
           "profileUrl": "/tennis/player/_/id/2183/belinda-bencic",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 3,
+              "value": "0",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175575",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 6:30 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T10:30Z",
+        "date": "2026-05-31T11:10Z",
         "tmVld": true,
         "note": "Round 4 - Court Philippe-Chatrier",
         "competitors": [
@@ -2520,7 +4248,24 @@
             "ordr": 1,
             "link": "/tennis/player/_/id/1797/elina-svitolina",
             "rnk": 7,
-            "nm": "Elina Svitolina"
+            "nm": "Elina Svitolina",
+            "lnescrs": [
+              {
+                "v": "4",
+                "p": 1
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 3,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "2183",
@@ -2531,31 +4276,46 @@
             "ordr": 2,
             "link": "/tennis/player/_/id/2183/belinda-bencic",
             "rnk": 11,
-            "nm": "Belinda Bencic"
+            "nm": "Belinda Bencic",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "4",
+                "p": 2
+              },
+              {
+                "v": "0",
+                "p": 3
+              }
+            ]
           }
         ]
       }
     },
     {
       "eventId": "175584",
-      "date": "2026-05-31T12:30Z",
+      "date": "2026-05-31T15:35Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 8:30 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 4 - Court Suzanne-Lenglen",
       "round": "Round 4",
       "court": "Court Suzanne-Lenglen",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Mirra Andreeva",
+      "scoreline": "6-3 6-2",
       "players": [
         {
           "id": "9820",
@@ -2563,8 +4323,21 @@
           "seed": 8,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rus.png",
           "profileUrl": "/tennis/player/_/id/9820/mirra-andreeva",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "2617",
@@ -2573,19 +4346,32 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
           "profileUrl": "/tennis/player/_/id/2617/jil-teichmann",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "3",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "2",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175584",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 8:30 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T12:30Z",
+        "date": "2026-05-31T15:35Z",
         "tmVld": true,
         "note": "Round 4 - Court Suzanne-Lenglen",
         "competitors": [
@@ -2598,7 +4384,20 @@
             "ordr": 1,
             "link": "/tennis/player/_/id/9820/mirra-andreeva",
             "rnk": 8,
-            "nm": "Mirra Andreeva"
+            "nm": "Mirra Andreeva",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "2617",
@@ -2608,31 +4407,41 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
             "ordr": 2,
             "link": "/tennis/player/_/id/2617/jil-teichmann",
-            "nm": "Jil Teichmann"
+            "nm": "Jil Teichmann",
+            "lnescrs": [
+              {
+                "v": "3",
+                "p": 1
+              },
+              {
+                "v": "2",
+                "p": 2
+              }
+            ]
           }
         ]
       }
     },
     {
       "eventId": "175759",
-      "date": "2026-05-31T18:15Z",
+      "date": "2026-05-31T18:30Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 2:15 PM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 4 - Court Philippe-Chatrier",
       "round": "Round 4",
       "court": "Court Philippe-Chatrier",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Joao Fonseca",
+      "scoreline": "5-7 6-7(8-10) 7-5 2-6",
       "players": [
         {
           "id": "2989",
@@ -2641,7 +4450,32 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
           "profileUrl": "/tennis/player/_/id/2989/casper-ruud",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "5",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": "8",
+              "wonSet": false
+            },
+            {
+              "set": 3,
+              "value": "7",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 4,
+              "value": "2",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         },
         {
           "id": "11745",
@@ -2649,20 +4483,45 @@
           "seed": 28,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
           "profileUrl": "/tennis/player/_/id/11745/joao-fonseca",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "7",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "7",
+              "tiebreak": "10",
+              "wonSet": true
+            },
+            {
+              "set": 3,
+              "value": "5",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 4,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175759",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 2:15 PM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T18:15Z",
+        "date": "2026-05-31T18:30Z",
         "tmVld": true,
         "note": "Round 4 - Court Philippe-Chatrier",
         "competitors": [
@@ -2675,7 +4534,27 @@
             "ordr": 1,
             "link": "/tennis/player/_/id/2989/casper-ruud",
             "rnk": 15,
-            "nm": "Casper Ruud"
+            "nm": "Casper Ruud",
+            "lnescrs": [
+              {
+                "v": "5",
+                "p": 1
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "t": "8"
+              },
+              {
+                "v": "7",
+                "p": 3,
+                "w": true
+              },
+              {
+                "v": "2",
+                "p": 4
+              }
+            ]
           },
           {
             "id": "11745",
@@ -2686,31 +4565,54 @@
             "ordr": 2,
             "link": "/tennis/player/_/id/11745/joao-fonseca",
             "rnk": 28,
-            "nm": "Joao Fonseca"
+            "nm": "Joao Fonseca",
+            "lnescrs": [
+              {
+                "v": "7",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "7",
+                "p": 2,
+                "t": "10",
+                "w": true
+              },
+              {
+                "v": "5",
+                "p": 3
+              },
+              {
+                "v": "6",
+                "p": 4,
+                "w": true
+              }
+            ],
+            "wnr": true
           }
         ]
       }
     },
     {
       "eventId": "175762",
-      "date": "2026-05-31T14:00Z",
+      "date": "2026-05-31T17:25Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 10:00 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 4 - Court Suzanne-Lenglen",
       "round": "Round 4",
       "court": "Court Suzanne-Lenglen",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Jakub Mensik",
+      "scoreline": "6-3 7-6(8-6) 4-6 2-6 6-3",
       "players": [
         {
           "id": "10319",
@@ -2718,8 +4620,39 @@
           "seed": 26,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
           "profileUrl": "/tennis/player/_/id/10319/jakub-mensik",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "7",
+              "tiebreak": "8",
+              "wonSet": true
+            },
+            {
+              "set": 3,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 4,
+              "value": "2",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 5,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "2642",
@@ -2728,19 +4661,50 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rus.png",
           "profileUrl": "/tennis/player/_/id/2642/andrey-rublev",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "3",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": "6",
+              "wonSet": false
+            },
+            {
+              "set": 3,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 4,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 5,
+              "value": "3",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175762",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 10:00 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T14:00Z",
+        "date": "2026-05-31T17:25Z",
         "tmVld": true,
         "note": "Round 4 - Court Suzanne-Lenglen",
         "competitors": [
@@ -2753,7 +4717,34 @@
             "ordr": 1,
             "link": "/tennis/player/_/id/10319/jakub-mensik",
             "rnk": 26,
-            "nm": "Jakub Mensik"
+            "nm": "Jakub Mensik",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "7",
+                "p": 2,
+                "t": "8",
+                "w": true
+              },
+              {
+                "v": "4",
+                "p": 3
+              },
+              {
+                "v": "2",
+                "p": 4
+              },
+              {
+                "v": "6",
+                "p": 5,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "2642",
@@ -2764,31 +4755,56 @@
             "ordr": 2,
             "link": "/tennis/player/_/id/2642/andrey-rublev",
             "rnk": 11,
-            "nm": "Andrey Rublev"
+            "nm": "Andrey Rublev",
+            "lnescrs": [
+              {
+                "v": "3",
+                "p": 1
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "t": "6"
+              },
+              {
+                "v": "6",
+                "p": 3,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 4,
+                "w": true
+              },
+              {
+                "v": "3",
+                "p": 5
+              }
+            ]
           }
         ]
       }
     },
     {
       "eventId": "175776",
-      "date": "2026-05-31T10:30Z",
+      "date": "2026-05-31T11:25Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 6:30 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Round 4 - Court Suzanne-Lenglen",
       "round": "Round 4",
       "court": "Court Suzanne-Lenglen",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Rafael Jodar",
+      "scoreline": "4-6 4-6 6-1 6-2 6-2",
       "players": [
         {
           "id": "12657",
@@ -2796,8 +4812,39 @@
           "seed": 27,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
           "profileUrl": "/tennis/player/_/id/12657/rafael-jodar",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 3,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 4,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 5,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "1590",
@@ -2806,19 +4853,50 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
           "profileUrl": "/tennis/player/_/id/1590/pablo-carreno-busta",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 3,
+              "value": "1",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 4,
+              "value": "2",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 5,
+              "value": "2",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175776",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 6:30 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T10:30Z",
+        "date": "2026-05-31T11:25Z",
         "tmVld": true,
         "note": "Round 4 - Court Suzanne-Lenglen",
         "competitors": [
@@ -2831,7 +4909,33 @@
             "ordr": 1,
             "link": "/tennis/player/_/id/12657/rafael-jodar",
             "rnk": 27,
-            "nm": "Rafael Jodar"
+            "nm": "Rafael Jodar",
+            "lnescrs": [
+              {
+                "v": "4",
+                "p": 1
+              },
+              {
+                "v": "4",
+                "p": 2
+              },
+              {
+                "v": "6",
+                "p": 3,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 4,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 5,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "1590",
@@ -2841,31 +4945,55 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
             "ordr": 2,
             "link": "/tennis/player/_/id/1590/pablo-carreno-busta",
-            "nm": "Pablo Carreno Busta"
+            "nm": "Pablo Carreno Busta",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              },
+              {
+                "v": "1",
+                "p": 3
+              },
+              {
+                "v": "2",
+                "p": 4
+              },
+              {
+                "v": "2",
+                "p": 5
+              }
+            ]
           }
         ]
       }
     },
     {
       "eventId": "175778",
-      "date": "2026-05-31T13:30Z",
+      "date": "2026-05-31T13:45Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 9:30 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
-      "note": "Round 4",
+      "completed": true,
+      "statusDescription": "Final",
+      "note": "Round 4 - Court Philippe-Chatrier",
       "round": "Round 4",
-      "court": "",
+      "court": "Court Philippe-Chatrier",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Alexander Zverev",
+      "scoreline": "6-7(3-7) 4-6 1-6",
       "players": [
         {
           "id": "3897",
@@ -2874,7 +5002,26 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
           "profileUrl": "/tennis/player/_/id/3897/jesper-de-jong",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": "3",
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 3,
+              "value": "1",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         },
         {
           "id": "2375",
@@ -2882,22 +5029,41 @@
           "seed": 2,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
           "profileUrl": "/tennis/player/_/id/2375/alexander-zverev",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "7",
+              "tiebreak": "7",
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 3,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         }
       ],
       "raw": {
         "id": "175778",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 9:30 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T13:30Z",
+        "date": "2026-05-31T13:45Z",
         "tmVld": true,
-        "note": "Round 4",
+        "note": "Round 4 - Court Philippe-Chatrier",
         "competitors": [
           {
             "id": "3897",
@@ -2907,7 +5073,22 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
             "ordr": 1,
             "link": "/tennis/player/_/id/3897/jesper-de-jong",
-            "nm": "Jesper de Jong"
+            "nm": "Jesper de Jong",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "t": "3"
+              },
+              {
+                "v": "4",
+                "p": 2
+              },
+              {
+                "v": "1",
+                "p": 3
+              }
+            ]
           },
           {
             "id": "2375",
@@ -2918,31 +5099,50 @@
             "ordr": 2,
             "link": "/tennis/player/_/id/2375/alexander-zverev",
             "rnk": 2,
-            "nm": "Alexander Zverev"
+            "nm": "Alexander Zverev",
+            "lnescrs": [
+              {
+                "v": "7",
+                "p": 1,
+                "t": "7",
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 3,
+                "w": true
+              }
+            ],
+            "wnr": true
           }
         ]
       }
     },
     {
       "eventId": "178570",
-      "date": "2026-05-31T09:30Z",
+      "date": "2026-05-31T09:40Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 5:30 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Qualifying Final - Centre Court",
       "round": "Qualifying Final",
       "court": "Centre Court",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Ashlyn Krueger",
+      "scoreline": "6-4 7-6(7-5)",
       "players": [
         {
           "id": "6724",
@@ -2950,8 +5150,21 @@
           "seed": null,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
           "profileUrl": "/tennis/player/_/id/6724/ashlyn-krueger",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "7",
+              "tiebreak": "7",
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "13314",
@@ -2960,19 +5173,32 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
           "profileUrl": "/tennis/player/_/id/13314/gabriela-knutson",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": "5",
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "178570",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 5:30 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T09:30Z",
+        "date": "2026-05-31T09:40Z",
         "tmVld": true,
         "note": "Qualifying Final - Centre Court",
         "competitors": [
@@ -2984,7 +5210,21 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
             "ordr": 1,
             "link": "/tennis/player/_/id/6724/ashlyn-krueger",
-            "nm": "Ashlyn Krueger"
+            "nm": "Ashlyn Krueger",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "7",
+                "p": 2,
+                "t": "7",
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "13314",
@@ -2994,31 +5234,42 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
             "ordr": 2,
             "link": "/tennis/player/_/id/13314/gabriela-knutson",
-            "nm": "Gabriela Knutson"
+            "nm": "Gabriela Knutson",
+            "lnescrs": [
+              {
+                "v": "4",
+                "p": 1
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "t": "5"
+              }
+            ]
           }
         ]
       }
     },
     {
       "eventId": "178571",
-      "date": "2026-05-31T11:00Z",
+      "date": "2026-05-31T11:25Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 7:00 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Qualifying Final - Court 1",
       "round": "Qualifying Final",
       "court": "Court 1",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Rebeka Masarova",
+      "scoreline": "4-6 6-4 6-0",
       "players": [
         {
           "id": "2984",
@@ -3026,8 +5277,27 @@
           "seed": null,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
           "profileUrl": "/tennis/player/_/id/2984/rebeka-masarova",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 3,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "12837",
@@ -3036,19 +5306,38 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
           "profileUrl": "/tennis/player/_/id/12837/celine-naef",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 3,
+              "value": "0",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "178571",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 7:00 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T11:00Z",
+        "date": "2026-05-31T11:25Z",
         "tmVld": true,
         "note": "Qualifying Final - Court 1",
         "competitors": [
@@ -3060,7 +5349,24 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
             "ordr": 1,
             "link": "/tennis/player/_/id/2984/rebeka-masarova",
-            "nm": "Rebeka Masarova"
+            "nm": "Rebeka Masarova",
+            "lnescrs": [
+              {
+                "v": "4",
+                "p": 1
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 3,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "12837",
@@ -3070,31 +5376,46 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
             "ordr": 2,
             "link": "/tennis/player/_/id/12837/celine-naef",
-            "nm": "Celine Naef"
+            "nm": "Celine Naef",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "4",
+                "p": 2
+              },
+              {
+                "v": "0",
+                "p": 3
+              }
+            ]
           }
         ]
       }
     },
     {
       "eventId": "178572",
-      "date": "2026-05-31T09:30Z",
+      "date": "2026-05-31T09:40Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 5:30 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Qualifying Final - Court 2",
       "round": "Qualifying Final",
       "court": "Court 2",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Nao Hibino",
+      "scoreline": "6-4 6-2",
       "players": [
         {
           "id": "2043",
@@ -3102,8 +5423,21 @@
           "seed": null,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
           "profileUrl": "/tennis/player/_/id/2043/nao-hibino",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "17702",
@@ -3112,19 +5446,32 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
           "profileUrl": "/tennis/player/_/id/17702/vendula-valdmannova",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "4",
+              "tiebreak": null,
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "2",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "178572",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 5:30 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T09:30Z",
+        "date": "2026-05-31T09:40Z",
         "tmVld": true,
         "note": "Qualifying Final - Court 2",
         "competitors": [
@@ -3136,7 +5483,20 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
             "ordr": 1,
             "link": "/tennis/player/_/id/2043/nao-hibino",
-            "nm": "Nao Hibino"
+            "nm": "Nao Hibino",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "17702",
@@ -3146,31 +5506,41 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
             "ordr": 2,
             "link": "/tennis/player/_/id/17702/vendula-valdmannova",
-            "nm": "Vendula Valdmannova"
+            "nm": "Vendula Valdmannova",
+            "lnescrs": [
+              {
+                "v": "4",
+                "p": 1
+              },
+              {
+                "v": "2",
+                "p": 2
+              }
+            ]
           }
         ]
       }
     },
     {
       "eventId": "178573",
-      "date": "2026-05-31T09:30Z",
+      "date": "2026-05-31T09:40Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 5:30 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Qualifying Final - Court 1",
       "round": "Qualifying Final",
       "court": "Court 1",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Greet Minnen",
+      "scoreline": "7-6(7-5) 6-1",
       "players": [
         {
           "id": "2910",
@@ -3178,8 +5548,21 @@
           "seed": null,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
           "profileUrl": "/tennis/player/_/id/2910/greet-minnen",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "7",
+              "tiebreak": "7",
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "2736",
@@ -3188,19 +5571,32 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/svk.png",
           "profileUrl": "/tennis/player/_/id/2736/viktoria-hruncakova",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": "5",
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "1",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "178573",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 5:30 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T09:30Z",
+        "date": "2026-05-31T09:40Z",
         "tmVld": true,
         "note": "Qualifying Final - Court 1",
         "competitors": [
@@ -3212,7 +5608,21 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
             "ordr": 1,
             "link": "/tennis/player/_/id/2910/greet-minnen",
-            "nm": "Greet Minnen"
+            "nm": "Greet Minnen",
+            "lnescrs": [
+              {
+                "v": "7",
+                "p": 1,
+                "t": "7",
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "2736",
@@ -3222,31 +5632,42 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/svk.png",
             "ordr": 2,
             "link": "/tennis/player/_/id/2736/viktoria-hruncakova",
-            "nm": "Viktoria Hruncakova"
+            "nm": "Viktoria Hruncakova",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "t": "5"
+              },
+              {
+                "v": "1",
+                "p": 2
+              }
+            ]
           }
         ]
       }
     },
     {
       "eventId": "178574",
-      "date": "2026-05-31T11:00Z",
+      "date": "2026-05-31T11:15Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 7:00 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Qualifying Final - Court 2",
       "round": "Qualifying Final",
       "court": "Court 2",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Mananchaya Sawangkaew",
+      "scoreline": "7-6(7-3) 6-3",
       "players": [
         {
           "id": "5613",
@@ -3254,8 +5675,21 @@
           "seed": null,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/tha.png",
           "profileUrl": "/tennis/player/_/id/5613/mananchaya-sawangkaew",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "7",
+              "tiebreak": "7",
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "13530",
@@ -3264,19 +5698,32 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
           "profileUrl": "/tennis/player/_/id/13530/aoi-ito",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": "3",
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "3",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "178574",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 7:00 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T11:00Z",
+        "date": "2026-05-31T11:15Z",
         "tmVld": true,
         "note": "Qualifying Final - Court 2",
         "competitors": [
@@ -3288,7 +5735,21 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tha.png",
             "ordr": 1,
             "link": "/tennis/player/_/id/5613/mananchaya-sawangkaew",
-            "nm": "Mananchaya Sawangkaew"
+            "nm": "Mananchaya Sawangkaew",
+            "lnescrs": [
+              {
+                "v": "7",
+                "p": 1,
+                "t": "7",
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "13530",
@@ -3298,31 +5759,42 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
             "ordr": 2,
             "link": "/tennis/player/_/id/13530/aoi-ito",
-            "nm": "Aoi Ito"
+            "nm": "Aoi Ito",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "t": "3"
+              },
+              {
+                "v": "3",
+                "p": 2
+              }
+            ]
           }
         ]
       }
     },
     {
       "eventId": "178575",
-      "date": "2026-05-31T11:00Z",
+      "date": "2026-05-31T11:25Z",
       "status": {
-        "id": "1",
-        "description": "Scheduled",
-        "detail": "Sun, May 31st at 7:00 AM EDT",
-        "state": "pre",
-        "completed": false
+        "id": "3",
+        "description": "Final",
+        "detail": "Final",
+        "state": "post",
+        "completed": true
       },
-      "completed": false,
-      "statusDescription": "Scheduled",
+      "completed": true,
+      "statusDescription": "Final",
       "note": "Qualifying Final - Centre Court",
       "round": "Qualifying Final",
       "court": "Centre Court",
       "doubles": false,
       "singles": true,
       "broadcast": "",
-      "winnerName": null,
-      "scoreline": "",
+      "winnerName": "Tereza Martincova",
+      "scoreline": "7-6(7-2) 6-1",
       "players": [
         {
           "id": "2349",
@@ -3330,8 +5802,21 @@
           "seed": null,
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
           "profileUrl": "/tennis/player/_/id/2349/tereza-martincova",
-          "winner": false,
-          "scores": []
+          "winner": true,
+          "scores": [
+            {
+              "set": 1,
+              "value": "7",
+              "tiebreak": "7",
+              "wonSet": true
+            },
+            {
+              "set": 2,
+              "value": "6",
+              "tiebreak": null,
+              "wonSet": true
+            }
+          ]
         },
         {
           "id": "10871",
@@ -3340,19 +5825,32 @@
           "countryLogo": "https://a.espncdn.com/i/teamlogos/countries/500/gbr.png",
           "profileUrl": "/tennis/player/_/id/10871/mingge-xu",
           "winner": false,
-          "scores": []
+          "scores": [
+            {
+              "set": 1,
+              "value": "6",
+              "tiebreak": "2",
+              "wonSet": false
+            },
+            {
+              "set": 2,
+              "value": "1",
+              "tiebreak": null,
+              "wonSet": false
+            }
+          ]
         }
       ],
       "raw": {
         "id": "178575",
         "status": {
-          "id": "1",
-          "description": "Scheduled",
-          "detail": "Sun, May 31st at 7:00 AM EDT",
-          "state": "pre",
-          "completed": false
+          "id": "3",
+          "description": "Final",
+          "detail": "Final",
+          "state": "post",
+          "completed": true
         },
-        "date": "2026-05-31T11:00Z",
+        "date": "2026-05-31T11:25Z",
         "tmVld": true,
         "note": "Qualifying Final - Centre Court",
         "competitors": [
@@ -3364,7 +5862,21 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
             "ordr": 1,
             "link": "/tennis/player/_/id/2349/tereza-martincova",
-            "nm": "Tereza Martincova"
+            "nm": "Tereza Martincova",
+            "lnescrs": [
+              {
+                "v": "7",
+                "p": 1,
+                "t": "7",
+                "w": true
+              },
+              {
+                "v": "6",
+                "p": 2,
+                "w": true
+              }
+            ],
+            "wnr": true
           },
           {
             "id": "10871",
@@ -3374,7 +5886,18 @@
             "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gbr.png",
             "ordr": 2,
             "link": "/tennis/player/_/id/10871/mingge-xu",
-            "nm": "Mingge Xu"
+            "nm": "Mingge Xu",
+            "lnescrs": [
+              {
+                "v": "6",
+                "p": 1,
+                "t": "2"
+              },
+              {
+                "v": "1",
+                "p": 2
+              }
+            ]
           }
         ]
       }

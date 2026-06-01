@@ -626,5 +626,51 @@ export const mlbPropPerformanceByDate: Record<string, DailyPropSummary> = {
       "Aaron Judge Over 1.5 total bases",
       "Luis Arraez Over 0.5 singles"
     ]
+  },
+  "2026-05-31": {
+    "overall": {
+      "hits": 16,
+      "total": 36,
+      "hitRate": 44.4
+    },
+    "byType": {
+      "totalBases": {
+        "hits": 4,
+        "total": 6,
+        "hitRate": 66.7
+      },
+      "singles": {
+        "hits": 2,
+        "total": 9,
+        "hitRate": 22.2
+      },
+      "pitcherStrikeouts": {
+        "hits": 9,
+        "total": 18,
+        "hitRate": 50
+      },
+      "rbi": {
+        "hits": 0,
+        "total": 1,
+        "hitRate": 0
+      },
+      "walks": {
+        "hits": 1,
+        "total": 2,
+        "hitRate": 50
+      }
+    },
+    "topHits": [
+      "Andy Pages Over 1.5 total bases",
+      "Jonathan Aranda Over 1.5 total bases",
+      "Dominic Canzone Over 1.5 total bases",
+      "Isiah Kiner-Falefa Over 0.5 singles"
+    ],
+    "topMisses": [
+      "Oneil Cruz Over 1.5 total bases",
+      "Vladimir Guerrero Jr. Over 0.5 singles",
+      "Fernando Tatis Jr. Over 0.5 singles",
+      "Tanner Gordon Over 3.5 strikeouts"
+    ]
   }
 }

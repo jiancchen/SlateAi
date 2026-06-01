@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-31T18:00:38.891Z",
+  "generatedAt": "2026-06-01T05:14:41.389Z",
   "predictionDate": "2026-05-31",
   "picks": [
     {
@@ -68,7 +68,7 @@
       "predictedTeam": "Pirates",
       "predictedSide": "home",
       "confidence": 61,
-      "modelEdge": 10.9,
+      "modelEdge": 10.8,
       "marketProbability": 0.5,
       "marketProbabilityLabel": "50.0%",
       "pickIsMarketFavorite": true,
@@ -244,7 +244,7 @@
       "predictedTeam": "White Sox",
       "predictedSide": "home",
       "confidence": 59,
-      "modelEdge": 5.4,
+      "modelEdge": 5.5,
       "marketProbability": 0.5485770363101079,
       "marketProbabilityLabel": "54.9%",
       "pickIsMarketFavorite": true,

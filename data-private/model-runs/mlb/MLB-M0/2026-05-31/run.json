@@ -10,15 +10,15 @@
   "featureVersion": "MLB-F0",
   "mode": "pregame",
   "status": "snapshotted",
-  "snapshottedAt": "2026-06-01T04:34:00.306Z",
+  "snapshottedAt": "2026-06-01T05:18:42.236Z",
   "git": {
-    "commit": "839a63cb4dcd92ec951ecf2e9c954ef4f9048f91",
+    "commit": "135d7c999501fb44535b2c18e52b8b80dbf1f065",
     "dirty": true
   },
   "sourceHash": null,
   "inputHash": null,
   "outputHash": null,
-  "snapshotHash": "f636a6062896d0bb54d2e35e4e884d70c49ddfe05be057d69ea657c2f992c8e7",
+  "snapshotHash": "ed70e8254aa93cbcc2e360394f707db1a34ac0ab204c38d906b1d844abbd6e7e",
   "artifactSummary": {
     "publicSummaryGames": 15,
     "gameFiles": 15,

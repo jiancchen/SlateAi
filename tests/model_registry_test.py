@@ -526,7 +526,7 @@ class ModelRegistryTest(unittest.TestCase):
 
         self.assertEqual(split_count, len(props))
 
-    def test_public_model_history_includes_pending_mlb_runs(self) -> None:
+    def test_public_model_history_includes_settled_mlb_runs(self) -> None:
         history_path = ROOT / "published-data" / "model-history" / "index.json"
         if not history_path.exists():
             self.skipTest("Published model-history index is not present")
@@ -541,7 +541,10 @@ class ModelRegistryTest(unittest.TestCase):
         self.assertIn("MLB-RP36", model_ids)
 
         m0 = next(model for model in models if model.get("modelName") == "MLB-M0")
-        self.assertEqual(m0.get("settlement", {}).get("status"), "pending")
+        settlement = m0.get("settlement", {})
+        self.assertEqual(settlement.get("status"), "settled")
+        self.assertEqual(settlement.get("completeMatches"), 15)
+        self.assertEqual(settlement.get("pendingMatches"), 0)
 
 
 if __name__ == "__main__":

@@ -3838,7 +3838,7 @@
       "predictedTeam": "Pirates",
       "predictedSide": "home",
       "confidence": 61,
-      "modelEdge": 10.9,
+      "modelEdge": 10.8,
       "marketProbability": 0.5,
       "pickIsMarketFavorite": true,
       "pickIsMarketUnderdog": false,
@@ -3976,7 +3976,7 @@
       "predictedTeam": "White Sox",
       "predictedSide": "home",
       "confidence": 59,
-      "modelEdge": 5.4,
+      "modelEdge": 5.5,
       "marketProbability": 0.5486,
       "pickIsMarketFavorite": true,
       "pickIsMarketUnderdog": false,
@@ -9127,5 +9127,5 @@
       }
     }
   },
-  "snapshotHash": "f636a6062896d0bb54d2e35e4e884d70c49ddfe05be057d69ea657c2f992c8e7"
+  "snapshotHash": "ed70e8254aa93cbcc2e360394f707db1a34ac0ab204c38d906b1d844abbd6e7e"
 }
