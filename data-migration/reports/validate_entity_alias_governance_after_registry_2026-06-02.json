@@ -1,0 +1,37 @@
+{
+  "errors": [],
+  "generated_at": "2026-06-02T17:35:26.147424+00:00",
+  "ok": true,
+  "parser_module": "pipeline/sources/shared/entity_alias_governance.py",
+  "reports": [
+    {
+      "errors": [],
+      "governed_aliases": 3551,
+      "ok": true,
+      "orphan_governance": 0,
+      "resolver_version": "alias-governance-v1",
+      "sport": "tennis",
+      "status_counts": {
+        "active": 2051,
+        "quarantined": 1500
+      },
+      "total_aliases": 3551,
+      "trusted_aliases": 2051
+    },
+    {
+      "errors": [],
+      "governed_aliases": 8236,
+      "ok": true,
+      "orphan_governance": 0,
+      "resolver_version": "alias-governance-v1",
+      "sport": "mlb",
+      "status_counts": {
+        "active": 8149,
+        "needs_review": 87
+      },
+      "total_aliases": 8236,
+      "trusted_aliases": 8149
+    }
+  ],
+  "script": "data-migration/scripts/validate_entity_alias_governance.py"
+}

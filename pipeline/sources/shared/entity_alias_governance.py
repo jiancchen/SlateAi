@@ -145,11 +145,13 @@ def classify_alias(
         return ("quarantined", "missing_canonical", "orphan", "Canonical entity does not exist.")
     if source_id_conflict_count > 1:
         return ("quarantined", "source_id_conflict", "conflict", "Same source entity ID maps to multiple canonical IDs.")
+    if notes.startswith("N22 tennis identity cleanup:"):
+        return ("active", "n22_vetted", "low", "N22 resolver produced high-confidence match/player mapping.")
+    if notes.startswith("G2 player identity registry rescue:"):
+        return ("active", "unique_abbreviation_rescue", "low", "Unique source abbreviation matched exactly one canonical player.")
     if display_conflict_count > 1 and not notes.startswith("N22 tennis identity cleanup:"):
         return ("quarantined", "display_conflict", "conflict", "Same source display maps to multiple canonical IDs.")
     if sport == "tennis":
-        if notes.startswith("N22 tennis identity cleanup:"):
-            return ("active", "n22_vetted", "low", "N22 resolver produced high-confidence match/player mapping.")
         if entity_type == "match" and source_entity_id:
             return ("active", "source_match_id", "low", "Match alias has source event/ticker ID and no conflict.")
         if entity_type == "player":
