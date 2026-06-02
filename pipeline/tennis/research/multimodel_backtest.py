@@ -128,7 +128,12 @@ def recent_ml_value_gate(target_date: str) -> dict[str, Any]:
         payload = json.loads(report_path.read_text(encoding="utf-8"))
     except json.JSONDecodeError:
         return {"status": "frozen", "reason": f"could not read {report_path.name}"}
-    bet_grade = (payload.get("summary") or {}).get("Bet-grade value") or {}
+    summary = payload.get("summary") or {}
+    bet_grade = summary.get("Bet-grade value") or summary.get("Bet-grade ML") or {}
+    source_bucket = "Bet-grade value" if summary.get("Bet-grade value") else "Bet-grade ML" if summary.get("Bet-grade ML") else None
+    if not bet_grade:
+        bet_grade = summary.get("ML") or {}
+        source_bucket = "ML"
     graded = int(bet_grade.get("graded") or 0)
     roi = bet_grade.get("roi")
     hit_rate = bet_grade.get("hitRate")
@@ -136,6 +141,7 @@ def recent_ml_value_gate(target_date: str) -> dict[str, Any]:
         return {
             "status": "frozen",
             "source": report_path.name,
+            "bucket": source_bucket,
             "reason": "last settled bet-grade ML lane was negative; downgrade blind ML value to watch until a new gate wins",
             "graded": graded,
             "hitRate": hit_rate,
@@ -144,6 +150,7 @@ def recent_ml_value_gate(target_date: str) -> dict[str, Any]:
     return {
         "status": "open",
         "source": report_path.name,
+        "bucket": source_bucket,
         "reason": "last settled bet-grade ML lane did not fail the freeze gate",
         "graded": graded,
         "hitRate": hit_rate,

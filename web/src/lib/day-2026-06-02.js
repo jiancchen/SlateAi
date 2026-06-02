@@ -316,7 +316,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3696/moez-echargui",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": null,
         "profile": "Live rank #139 | Tunisia | age 33",
@@ -949,7 +949,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/10248/henrique-rocha",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": null,
         "profile": "Live rank #119 | Portugal | age 22",
@@ -2576,7 +2576,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/1842/damir-dzumhur",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": null,
         "profile": "Live rank #87 | Bosnia and Herzegovina | age 34",
@@ -2889,7 +2889,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3340/sebastian-baez",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": null,
         "profile": "Live rank #64 | Argentina | age 25",
@@ -2937,15 +2937,15 @@ const rawTennisGames = [
     "round": "Quarterfinal",
     "pickName": "Mirra Andreeva",
     "basePickName": "Mirra Andreeva",
-    "modelSource": "Tennis warehouse score model",
+    "modelSource": "Tennis multimodel ensemble",
     "modelSplit": false,
-    "confidence": 54,
+    "confidence": 64.8,
     "volatility": 54,
     "tags": [
       "Clay",
       "Roland Garros",
       "WTA",
-      "Watch only",
+      "Lean",
       "No blind bet",
       "WTA volatility tax",
       "Controlled volatility"
@@ -3018,15 +3018,15 @@ const rawTennisGames = [
     "setWinProjections": [
       {
         "name": "Mirra Andreeva",
-        "confidence": 72,
-        "modelPct": 54,
+        "confidence": 77,
+        "modelPct": 64.8,
         "label": "Live to win a set"
       },
       {
         "name": "Sorana Cirstea",
-        "confidence": 62,
-        "modelPct": 46,
-        "label": "Needs early hold pressure"
+        "confidence": 51,
+        "modelPct": 35.2,
+        "label": "Thin set-win path"
       }
     ],
     "valueBoard": {
@@ -3035,14 +3035,14 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Mirra Andreeva",
         "americanOdds": -196,
-        "modelPct": 54,
+        "modelPct": 64.8,
         "impliedPct": 66.2,
-        "edgePct": -12.2,
-        "evPer100": -18.4,
-        "netEvPer100": -20.4,
+        "edgePct": -1.4,
+        "evPer100": -2.1,
+        "netEvPer100": -4.1,
         "feePer100": 2,
         "valueIssue": "Favorite price needs better proof",
-        "valueGrade": "Negative EV",
+        "valueGrade": "Near fair",
         "betGrade": false
       },
       "spread": {
@@ -3050,14 +3050,14 @@ const rawTennisGames = [
         "selection": "Mirra Andreeva",
         "line": -3.5,
         "americanOdds": -112,
-        "modelPct": 48,
+        "modelPct": 59,
         "impliedPct": 52.8,
-        "edgePct": -4.8,
-        "evPer100": -9.1,
-        "netEvPer100": -11.1,
+        "edgePct": 6.2,
+        "evPer100": 11.7,
+        "netEvPer100": 9.7,
         "feePer100": 2,
         "valueIssue": "Spread watch only",
-        "valueGrade": "Negative EV",
+        "valueGrade": "Watch only",
         "betGrade": false
       },
       "total": {
@@ -3066,7 +3066,7 @@ const rawTennisGames = [
         "line": 21.5,
         "overOdds": -118,
         "underOdds": -112,
-        "expectedGames": 22,
+        "expectedGames": 21,
         "valueGrade": "No direction",
         "reason": "FanDuel total is 21.5; model did not clear a full-match over/under edge from hold, return, and set-shape data. hold avg 78%, return games won 54%, first-set sample 8.5g, 36 recent sets.",
         "betGrade": false
@@ -3076,22 +3076,22 @@ const rawTennisGames = [
         "selection": "Under 9.5",
         "line": 9.5,
         "americanOdds": -132,
-        "expectedGames": 8.2,
-        "confidence": 71,
+        "expectedGames": 8.1,
+        "confidence": 72,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 61,
-        "modelPct": 71,
-        "evPer100": 24.8,
-        "netEvPer100": 22.8,
+        "modelPct": 72,
+        "evPer100": 26.5,
+        "netEvPer100": 24.5,
         "valueGrade": "Actionable live watch",
-        "reason": "Expected first-set games 8.2 vs FanDuel 9.5; Under 9.5. hold avg 78%, return games won 54%, first-set sample 8.5g, 36 recent sets.",
+        "reason": "Expected first-set games 8.1 vs FanDuel 9.5; Under 9.5. hold avg 78%, return games won 54%, first-set sample 8.5g, 36 recent sets.",
         "betGrade": false
       },
       "setWin": [
         {
           "name": "Mirra Andreeva",
-          "confidence": 72,
-          "modelPct": 54,
+          "confidence": 77,
+          "modelPct": 64.8,
           "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -3099,9 +3099,9 @@ const rawTennisGames = [
         },
         {
           "name": "Sorana Cirstea",
-          "confidence": 62,
-          "modelPct": 46,
-          "label": "Needs early hold pressure",
+          "confidence": 51,
+          "modelPct": 35.2,
+          "label": "Thin set-win path",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
           "betGrade": false
@@ -3119,7 +3119,7 @@ const rawTennisGames = [
           "returnPointsWonPct": 51,
           "returnGamesWonPct": 54.75,
           "breakPointsSavedPct": 0,
-          "breakPointsConvertedPct": null,
+          "breakPointsConvertedPct": 50,
           "aces": 2.3,
           "doubleFaults": 3.1,
           "winners": 22.3,
@@ -3149,7 +3149,7 @@ const rawTennisGames = [
           "returnPointsWonPct": 49,
           "returnGamesWonPct": 53.42857142857143,
           "breakPointsSavedPct": 0,
-          "breakPointsConvertedPct": null,
+          "breakPointsConvertedPct": 48.1,
           "aces": 2.7,
           "doubleFaults": 1.1,
           "winners": 18,
@@ -3171,14 +3171,14 @@ const rawTennisGames = [
           }
         }
       ],
-      "expectedFirstSetGames": 8.2,
-      "expectedMatchGames": 22,
+      "expectedFirstSetGames": 8.1,
+      "expectedMatchGames": 21,
       "signalStrength": 8,
       "holdAvg": 78,
       "returnGamesAvg": 54.1,
       "returnPointsAvg": 50,
       "breakPointsSavedAvg": 0,
-      "breakPointsConvertedAvg": null,
+      "breakPointsConvertedAvg": 49,
       "setSamples": 36,
       "firstSetSamples": 16,
       "avgFirstSetGames": 8.5,
@@ -3196,14 +3196,14 @@ const rawTennisGames = [
         "selection": "Mirra Andreeva",
         "line": null,
         "americanOdds": -196,
-        "modelPct": 54,
+        "modelPct": 64.8,
         "impliedPct": 66.2,
-        "edgePct": -12.2,
-        "evPer100": -18.4,
-        "netEvPer100": -20.4,
-        "grade": "Negative EV",
+        "edgePct": -1.4,
+        "evPer100": -2.1,
+        "netEvPer100": -4.1,
+        "grade": "Near fair",
         "issue": "Favorite price needs better proof",
-        "reason": "FanDuel price is richer than the model; pass ML unless live state improves."
+        "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
       },
       {
         "marketType": "Game spread",
@@ -3211,15 +3211,15 @@ const rawTennisGames = [
         "selection": "Mirra Andreeva",
         "line": -3.5,
         "americanOdds": -112,
-        "modelPct": 48,
+        "modelPct": 59,
         "impliedPct": 52.8,
-        "edgePct": -4.8,
-        "evPer100": -9.1,
-        "netEvPer100": -11.1,
+        "edgePct": 6.2,
+        "evPer100": 11.7,
+        "netEvPer100": 9.7,
         "expectedGames": null,
         "edgeGames": null,
-        "confidence": 48,
-        "grade": "Negative EV",
+        "confidence": 59,
+        "grade": "Watch only",
         "reason": "Spread is number-dependent; verify first service cycle"
       },
       {
@@ -3242,22 +3242,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Mirra Andreeva 72% / Sorana Cirstea 62%",
+        "selection": "Mirra Andreeva 77% / Sorana Cirstea 51%",
         "rows": [
           {
             "name": "Mirra Andreeva",
-            "confidence": 72,
-            "modelPct": 54,
+            "confidence": 77,
+            "modelPct": 64.8,
             "label": "Live to win a set"
           },
           {
             "name": "Sorana Cirstea",
-            "confidence": 62,
-            "modelPct": 46,
-            "label": "Needs early hold pressure"
+            "confidence": 51,
+            "modelPct": 35.2,
+            "label": "Thin set-win path"
           }
         ],
-        "confidence": 72,
+        "confidence": 77,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -3265,15 +3265,41 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Under 9.5",
-        "expectedGames": 8.2,
-        "confidence": 71,
+        "expectedGames": 8.1,
+        "confidence": 72,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 61,
         "grade": "Actionable live watch",
-        "reason": "Expected first-set games 8.2 vs FanDuel 9.5; Under 9.5. hold avg 78%, return games won 54%, first-set sample 8.5g, 36 recent sets."
+        "reason": "Expected first-set games 8.1 vs FanDuel 9.5; Under 9.5. hold avg 78%, return games won 54%, first-set sample 8.5g, 36 recent sets."
       }
     ],
-    "ensembleValueCase": null,
+    "ensembleValueCase": {
+      "source": "Multimodel ensemble",
+      "selection": "Mirra Andreeva",
+      "opponent": "Sorana Cirstea",
+      "grade": "Likely winner, price taxed",
+      "riskGate": "opponent return pressure",
+      "marketOdds": -186,
+      "fairOdds": -184,
+      "modelProbability": 64.8,
+      "dataOnlyProbability": 64.7,
+      "marketProbability": 65,
+      "marketDisagreementPct": 0.2,
+      "netEvPer100": -2.4,
+      "modelBlend": "logit_l1,random_forest,grad_boost,xgboost",
+      "headline": "Mirra Andreeva does not clear a fee-adjusted value case.",
+      "useCase": "Favorite price needs cleaner proof or derivative value; do not confuse win probability with bet value.",
+      "bullets": [
+        "Recent hold: Mirra Andreeva 80.8% vs Sorana Cirstea 75%.",
+        "Serve events: Mirra Andreeva 2.3 aces / 3.1 DFs vs Sorana Cirstea 2.7 aces / 1.1 DFs.",
+        "Serve points: Mirra Andreeva 1st 67.1%, 2nd 54.1% vs Sorana Cirstea 1st 72.6%, 2nd 50%.",
+        "Winner/error profile: Mirra Andreeva 22.3 winners / 28.5 UEs vs Sorana Cirstea 18 winners / 20.7 UEs."
+      ],
+      "risks": [
+        "Sorana Cirstea strength: wins enough first-serve points (73%).",
+        "Mirra Andreeva risk: negative winner/error balance (22.3 winners, 28.5 unforced)."
+      ]
+    },
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook event-page Chrome scrape",
@@ -3287,8 +3313,8 @@ const rawTennisGames = [
           "americanLabel": "-196",
           "impliedPct": 66.2,
           "decimalOdds": 1.51,
-          "modelPct": 54,
-          "edgePct": -12.2,
+          "modelPct": 64.8,
+          "edgePct": -1.4,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 51,
           "grossPayoutMultiple": 1.51,
@@ -3301,8 +3327,8 @@ const rawTennisGames = [
           "americanLabel": "+162",
           "impliedPct": 38.2,
           "decimalOdds": 2.62,
-          "modelPct": 46,
-          "edgePct": 7.8,
+          "modelPct": 35.2,
+          "edgePct": -3,
           "priceBand": "Underdog",
           "grossProfitPct": 162,
           "grossPayoutMultiple": 2.62,
@@ -3316,8 +3342,8 @@ const rawTennisGames = [
         "americanLabel": "-196",
         "impliedPct": 66.2,
         "decimalOdds": 1.51,
-        "modelPct": 54,
-        "edgePct": -12.2,
+        "modelPct": 64.8,
+        "edgePct": -1.4,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 51,
         "grossPayoutMultiple": 1.51,
@@ -3359,15 +3385,15 @@ const rawTennisGames = [
         "line": 9.5,
         "odds": -132
       },
-      "priceAction": "FanDuel price is richer than the model; pass ML unless live state improves.",
+      "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge.",
       "spreadValue": "Mirra Andreeva -3.5 (-112)",
       "totalValue": "21.5 games: Over -118 / Under -112",
       "firstSetTotalValue": "9.5 1st-set games: Over -106 / Under -132",
       "spreadLean": "Spread is number-dependent; verify first service cycle",
       "totalLean": "Total needs live serve data before entry",
       "mlValue": "Mirra Andreeva -196 / Sorana Cirstea +162",
-      "marketNote": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. FanDuel price is richer than the model; pass ML unless live state improves.",
-      "noVigNote": "Model 54% vs FanDuel implied 66.2% (-12.2 pts)."
+      "marketNote": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. ML is close to fair; derivative or live entry needs to carry the edge.",
+      "noVigNote": "Model 64.8% vs FanDuel implied 66.2% (-1.4 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Mirra-Andreeva-Vs-Sorana-Cirstea/",
     "players": [
@@ -3382,11 +3408,11 @@ const rawTennisGames = [
           "tour": "WTA",
           "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/9820/mirra-andreeva",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": "Mirra Andreeva",
         "profile": "Live rank #8 | Russia | age 19 | 2026 clay 19-3, 86% | adj form 97 | hold 81%",
-        "modelPct": 54,
+        "modelPct": 64.8,
         "weakness": {
           "name": "Mirra Andreeva",
           "serviceHoldPct": 81,
@@ -3426,11 +3452,11 @@ const rawTennisGames = [
           "tour": "WTA",
           "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/1774/sorana-cirstea",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": "Sorana Cirstea",
         "profile": "Live rank #18 | Romania | age 36 | 2026 clay 14-3, 82% | adj form 91 | hold 75%",
-        "modelPct": 46,
+        "modelPct": 35.2,
         "weakness": {
           "name": "Sorana Cirstea",
           "serviceHoldPct": 75,
@@ -5029,15 +5055,15 @@ const rawTennisGames = [
           "name": "Valentin Royer",
           "rank": 74,
           "points": 773,
-          "age": 24,
+          "age": 25,
           "country": "France",
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/4022/valentin-royer",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": null,
-        "profile": "Live rank #74 | France | age 24",
+        "profile": "Live rank #74 | France | age 25",
         "modelPct": 77,
         "weakness": {
           "name": "Valentin Royer",
@@ -5684,7 +5710,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/1849/hugo-dellien",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": null,
         "profile": "Live rank #144 | Bolivia | age 32",
@@ -6014,7 +6040,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/1857/james-duckworth",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": null,
         "profile": "Live rank #82 | Australia | age 34",
@@ -6041,7 +6067,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/2361/billy-harris",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": null,
         "profile": "Live rank #150 | Great Britain | age 31",
@@ -6674,7 +6700,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/8243/leandro-riedi",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": null,
         "profile": "Live rank #120 | Switzerland | age 24",
@@ -7004,7 +7030,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/10153/mattia-bellucci",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": null,
         "profile": "Live rank #73 | Italy | age 24",
@@ -8294,7 +8320,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3809/vit-kopriva",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": null,
         "profile": "Live rank #66 | Czechia | age 28",
@@ -9302,16 +9328,16 @@ const rawTennisGames = [
     "round": "Quarterfinal",
     "pickName": "Elina Svitolina",
     "basePickName": "Elina Svitolina",
-    "modelSource": "Tennis warehouse score model",
+    "modelSource": "Tennis multimodel ensemble",
     "modelSplit": false,
-    "confidence": 51,
+    "confidence": 57.2,
     "volatility": 58,
     "tags": [
       "Clay",
       "Roland Garros",
       "WTA",
       "Watch only",
-      "No blind bet",
+      "Positive price edge",
       "WTA volatility tax",
       "Controlled volatility"
     ],
@@ -9385,14 +9411,14 @@ const rawTennisGames = [
     "setWinProjections": [
       {
         "name": "Elina Svitolina",
-        "confidence": 68,
-        "modelPct": 51,
+        "confidence": 71,
+        "modelPct": 57.2,
         "label": "Live to win a set"
       },
       {
         "name": "Marta Kostyuk",
-        "confidence": 64,
-        "modelPct": 49,
+        "confidence": 57,
+        "modelPct": 42.8,
         "label": "Needs early hold pressure"
       }
     ],
@@ -9402,26 +9428,26 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Elina Svitolina",
         "americanOdds": 104,
-        "modelPct": 51,
+        "modelPct": 57.2,
         "impliedPct": 49,
-        "edgePct": 2,
-        "evPer100": 4,
-        "netEvPer100": 2,
+        "edgePct": 8.2,
+        "evPer100": 16.7,
+        "netEvPer100": 14.7,
         "feePer100": 2,
-        "valueIssue": "Raw ML edge only",
-        "valueGrade": "Raw ML edge only",
-        "betGrade": false
+        "valueIssue": "Validated ML candidate",
+        "valueGrade": "Bet-grade value",
+        "betGrade": true
       },
       "spread": {
         "marketType": "Spread",
         "selection": "Elina Svitolina",
         "line": 1.5,
         "americanOdds": -120,
-        "modelPct": 45,
+        "modelPct": 51,
         "impliedPct": 54.5,
-        "edgePct": -9.5,
-        "evPer100": -17.5,
-        "netEvPer100": -19.5,
+        "edgePct": -3.5,
+        "evPer100": -6.5,
+        "netEvPer100": -8.5,
         "feePer100": 2,
         "valueIssue": "Spread watch only",
         "valueGrade": "Negative EV",
@@ -9449,22 +9475,22 @@ const rawTennisGames = [
         "selection": "Under 9.5",
         "line": 9.5,
         "americanOdds": -128,
-        "expectedGames": 8.7,
-        "confidence": 67,
+        "expectedGames": 8.5,
+        "confidence": 69,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 62,
-        "modelPct": 67,
-        "evPer100": 19.3,
-        "netEvPer100": 17.3,
+        "modelPct": 69,
+        "evPer100": 22.9,
+        "netEvPer100": 20.9,
         "valueGrade": "Actionable live watch",
-        "reason": "Expected first-set games 8.7 vs FanDuel 9.5; Under 9.5. hold avg 72%, return games won 56%, first-set sample 9.4g, 39 recent sets.",
+        "reason": "Expected first-set games 8.5 vs FanDuel 9.5; Under 9.5. hold avg 72%, return games won 56%, first-set sample 9.4g, 39 recent sets.",
         "betGrade": false
       },
       "setWin": [
         {
           "name": "Elina Svitolina",
-          "confidence": 68,
-          "modelPct": 51,
+          "confidence": 71,
+          "modelPct": 57.2,
           "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -9472,8 +9498,8 @@ const rawTennisGames = [
         },
         {
           "name": "Marta Kostyuk",
-          "confidence": 64,
-          "modelPct": 49,
+          "confidence": 57,
+          "modelPct": 42.8,
           "label": "Needs early hold pressure",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -9492,7 +9518,7 @@ const rawTennisGames = [
           "returnPointsWonPct": 50,
           "returnGamesWonPct": 51.875,
           "breakPointsSavedPct": 0,
-          "breakPointsConvertedPct": null,
+          "breakPointsConvertedPct": 46.2,
           "aces": 2.5,
           "doubleFaults": 2.8,
           "winners": 30.5,
@@ -9522,7 +9548,7 @@ const rawTennisGames = [
           "returnPointsWonPct": 52,
           "returnGamesWonPct": 59.25,
           "breakPointsSavedPct": 0,
-          "breakPointsConvertedPct": null,
+          "breakPointsConvertedPct": 50.6,
           "aces": 3.4,
           "doubleFaults": 4.6,
           "winners": 35,
@@ -9544,14 +9570,14 @@ const rawTennisGames = [
           }
         }
       ],
-      "expectedFirstSetGames": 8.7,
+      "expectedFirstSetGames": 8.5,
       "expectedMatchGames": 23.6,
       "signalStrength": 9,
       "holdAvg": 72,
       "returnGamesAvg": 55.6,
       "returnPointsAvg": 51,
       "breakPointsSavedAvg": 0,
-      "breakPointsConvertedAvg": null,
+      "breakPointsConvertedAvg": 48.4,
       "setSamples": 39,
       "firstSetSamples": 16,
       "avgFirstSetGames": 9.4,
@@ -9569,14 +9595,14 @@ const rawTennisGames = [
         "selection": "Elina Svitolina",
         "line": null,
         "americanOdds": 104,
-        "modelPct": 51,
+        "modelPct": 57.2,
         "impliedPct": 49,
-        "edgePct": 2,
-        "evPer100": 4,
-        "netEvPer100": 2,
-        "grade": "Raw ML edge only",
-        "issue": "Raw ML edge only",
-        "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
+        "edgePct": 8.2,
+        "evPer100": 16.7,
+        "netEvPer100": 14.7,
+        "grade": "Bet-grade value",
+        "issue": "Validated ML candidate",
+        "reason": "Model is meaningfully above FanDuel implied price."
       },
       {
         "marketType": "Game spread",
@@ -9584,14 +9610,14 @@ const rawTennisGames = [
         "selection": "Elina Svitolina",
         "line": 1.5,
         "americanOdds": -120,
-        "modelPct": 45,
+        "modelPct": 51,
         "impliedPct": 54.5,
-        "edgePct": -9.5,
-        "evPer100": -17.5,
-        "netEvPer100": -19.5,
+        "edgePct": -3.5,
+        "evPer100": -6.5,
+        "netEvPer100": -8.5,
         "expectedGames": null,
         "edgeGames": null,
-        "confidence": 45,
+        "confidence": 51,
         "grade": "Negative EV",
         "reason": "Spread is number-dependent; verify first service cycle"
       },
@@ -9615,22 +9641,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Elina Svitolina 68% / Marta Kostyuk 64%",
+        "selection": "Elina Svitolina 71% / Marta Kostyuk 57%",
         "rows": [
           {
             "name": "Elina Svitolina",
-            "confidence": 68,
-            "modelPct": 51,
+            "confidence": 71,
+            "modelPct": 57.2,
             "label": "Live to win a set"
           },
           {
             "name": "Marta Kostyuk",
-            "confidence": 64,
-            "modelPct": 49,
+            "confidence": 57,
+            "modelPct": 42.8,
             "label": "Needs early hold pressure"
           }
         ],
-        "confidence": 68,
+        "confidence": 71,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -9638,15 +9664,41 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Under 9.5",
-        "expectedGames": 8.7,
-        "confidence": 67,
+        "expectedGames": 8.5,
+        "confidence": 69,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 62,
         "grade": "Actionable live watch",
-        "reason": "Expected first-set games 8.7 vs FanDuel 9.5; Under 9.5. hold avg 72%, return games won 56%, first-set sample 9.4g, 39 recent sets."
+        "reason": "Expected first-set games 8.5 vs FanDuel 9.5; Under 9.5. hold avg 72%, return games won 56%, first-set sample 9.4g, 39 recent sets."
       }
     ],
-    "ensembleValueCase": null,
+    "ensembleValueCase": {
+      "source": "Multimodel ensemble",
+      "selection": "Elina Svitolina",
+      "opponent": "Marta Kostyuk",
+      "grade": "Watch only",
+      "riskGate": "hold risk, opponent return pressure; ML value gate frozen after prior slate",
+      "marketOdds": 117,
+      "fairOdds": -134,
+      "modelProbability": 57.2,
+      "dataOnlyProbability": 61,
+      "marketProbability": 46,
+      "marketDisagreementPct": 11.2,
+      "netEvPer100": 22.2,
+      "modelBlend": "logit_l1,random_forest,grad_boost,xgboost",
+      "headline": "Elina Svitolina is priced below the model, not guaranteed to win.",
+      "useCase": "Straight ML value only at +117 or better; fair price from the ensemble is about -134.",
+      "bullets": [
+        "Recent hold: Elina Svitolina 72.5% vs Marta Kostyuk 70.8%.",
+        "Serve events: Elina Svitolina 2.5 aces / 2.8 DFs vs Marta Kostyuk 3.4 aces / 4.6 DFs.",
+        "Serve points: Elina Svitolina 1st 64.8%, 2nd 45.1% vs Marta Kostyuk 1st 66.6%, 2nd 51.6%.",
+        "Winner/error profile: Elina Svitolina 30.5 winners / 28.5 UEs vs Marta Kostyuk 35 winners / 34.8 UEs."
+      ],
+      "risks": [
+        "Marta Kostyuk strength: creates return pressure (52% return points won).",
+        "Elina Svitolina risk: faces too many break points (11.6 avg)."
+      ]
+    },
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook event-page Chrome scrape",
@@ -9660,8 +9712,8 @@ const rawTennisGames = [
           "americanLabel": "+104",
           "impliedPct": 49,
           "decimalOdds": 2.04,
-          "modelPct": 51,
-          "edgePct": 2,
+          "modelPct": 57.2,
+          "edgePct": 8.2,
           "priceBand": "Coinflip",
           "grossProfitPct": 104,
           "grossPayoutMultiple": 2.04,
@@ -9674,8 +9726,8 @@ const rawTennisGames = [
           "americanLabel": "-125",
           "impliedPct": 55.6,
           "decimalOdds": 1.8,
-          "modelPct": 49,
-          "edgePct": -6.6,
+          "modelPct": 42.8,
+          "edgePct": -12.8,
           "priceBand": "Coinflip",
           "grossProfitPct": 80,
           "grossPayoutMultiple": 1.8,
@@ -9689,8 +9741,8 @@ const rawTennisGames = [
         "americanLabel": "+104",
         "impliedPct": 49,
         "decimalOdds": 2.04,
-        "modelPct": 51,
-        "edgePct": 2,
+        "modelPct": 57.2,
+        "edgePct": 8.2,
         "priceBand": "Coinflip",
         "grossProfitPct": 104,
         "grossPayoutMultiple": 2.04,
@@ -9732,15 +9784,15 @@ const rawTennisGames = [
         "line": 9.5,
         "odds": -128
       },
-      "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge.",
+      "priceAction": "Model is meaningfully above FanDuel implied price.",
       "spreadValue": "Elina Svitolina +1.5 (-120)",
       "totalValue": "21.5 games: Over -122 / Under -110",
       "firstSetTotalValue": "9.5 1st-set games: Over -108 / Under -128",
       "spreadLean": "Spread is number-dependent; verify first service cycle",
       "totalLean": "Total needs live serve data before entry",
       "mlValue": "Elina Svitolina +104 / Marta Kostyuk -125",
-      "marketNote": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. ML is close to fair; derivative or live entry needs to carry the edge.",
-      "noVigNote": "Model 51% vs FanDuel implied 49% (+2 pts)."
+      "marketNote": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. Model is meaningfully above FanDuel implied price.",
+      "noVigNote": "Model 57.2% vs FanDuel implied 49% (+8.2 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Elina-Svitolina-Vs-Marta-Kostyuk/",
     "players": [
@@ -9755,11 +9807,11 @@ const rawTennisGames = [
           "tour": "WTA",
           "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/1797/elina-svitolina",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": "Elina Svitolina",
         "profile": "Live rank #7 | Ukraine | age 31 | 2026 clay 13-2, 87% | adj form 110 | hold 73%",
-        "modelPct": 51,
+        "modelPct": 57.2,
         "weakness": {
           "name": "Elina Svitolina",
           "serviceHoldPct": 73,
@@ -9799,11 +9851,11 @@ const rawTennisGames = [
           "tour": "WTA",
           "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3382/marta-kostyuk",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": "Marta Kostyuk",
         "profile": "Live rank #15 | Ukraine | age 23 | 2026 clay 16-0, 100% | adj form 109 | hold 71%",
-        "modelPct": 49,
+        "modelPct": 42.8,
         "weakness": {
           "name": "Marta Kostyuk",
           "serviceHoldPct": 71,
@@ -10449,7 +10501,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/2720/jan-choinski",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": null,
         "profile": "Live rank #101 | Great Britain | age 29",
@@ -10779,7 +10831,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/4029/tristan-schoolkate",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": null,
         "profile": "Live rank #123 | Australia | age 25",
@@ -11126,7 +11178,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3812/dalibor-svrcina",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": null,
         "profile": "Live rank #108 | Czechia | age 23",
@@ -12437,15 +12489,15 @@ const rawTennisGames = [
     "round": "Quarterfinal",
     "pickName": "Alexander Zverev",
     "basePickName": "Alexander Zverev",
-    "modelSource": "Tennis warehouse score model",
+    "modelSource": "Tennis multimodel ensemble",
     "modelSplit": false,
-    "confidence": 64,
+    "confidence": 53.4,
     "volatility": 37,
     "tags": [
       "Clay",
       "Roland Garros",
       "ATP",
-      "Lean",
+      "Watch only",
       "No blind bet",
       "Men more stable",
       "Controlled volatility"
@@ -12460,7 +12512,7 @@ const rawTennisGames = [
       "vulnerableSide": "Rafael Jodar",
       "gameFlow": "Alexander Zverev has a real path if Rafael Jodar's first two service games show the same weakness: double-fault pressure (4.0 avg); 4 recent matches with serve instability.",
       "liveTrigger": "Look for Rafael Jodar facing break points or second-serve pressure before 3-3.",
-      "spreadRead": "Alexander Zverev spread only if the handicap is short and Rafael Jodar is under pressure early.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
       "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Alexander Zverev",
@@ -12525,14 +12577,14 @@ const rawTennisGames = [
     "setWinProjections": [
       {
         "name": "Rafael Jodar",
-        "confidence": 63,
-        "modelPct": 36,
-        "label": "Needs early hold pressure"
+        "confidence": 73,
+        "modelPct": 46.6,
+        "label": "Live to win a set"
       },
       {
         "name": "Alexander Zverev",
-        "confidence": 87,
-        "modelPct": 64,
+        "confidence": 83,
+        "modelPct": 53.4,
         "label": "Strong set-win path"
       }
     ],
@@ -12542,11 +12594,11 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Alexander Zverev",
         "americanOdds": -310,
-        "modelPct": 64,
+        "modelPct": 53.4,
         "impliedPct": 75.6,
-        "edgePct": -11.6,
-        "evPer100": -15.4,
-        "netEvPer100": -17.4,
+        "edgePct": -22.2,
+        "evPer100": -29.4,
+        "netEvPer100": -31.4,
         "feePer100": 2,
         "valueIssue": "Favorite price needs better proof",
         "valueGrade": "Negative EV",
@@ -12557,31 +12609,25 @@ const rawTennisGames = [
         "selection": "Alexander Zverev",
         "line": -5.5,
         "americanOdds": -104,
-        "modelPct": 62,
+        "modelPct": 51,
         "impliedPct": 51,
-        "edgePct": 11,
-        "evPer100": 21.6,
-        "netEvPer100": 19.6,
+        "edgePct": 0,
+        "evPer100": 0,
+        "netEvPer100": -2,
         "feePer100": 2,
         "valueIssue": "Spread watch only",
-        "valueGrade": "Watch only",
+        "valueGrade": "Near fair",
         "betGrade": false
       },
       "total": {
         "marketType": "Total",
-        "selection": "Under",
+        "selection": "No bet",
         "line": 37.5,
-        "americanOdds": -118,
-        "expectedGames": 35.8,
-        "modelPct": 64,
-        "impliedPct": 54.1,
-        "edgePct": 9.9,
-        "evPer100": 18.2,
-        "netEvPer100": 16.2,
-        "feePer100": 2,
-        "valueIssue": "Total watch only",
-        "valueGrade": "Watch only",
-        "reason": "Expected match games 35.8 vs FanDuel 37.5; Under. hold avg 83%, return games won 35%, first-set sample 9.5g, 49 recent sets.",
+        "overOdds": -112,
+        "underOdds": -118,
+        "expectedGames": 37.2,
+        "valueGrade": "No direction",
+        "reason": "FanDuel total is 37.5; model did not clear a full-match over/under edge from hold, return, and set-shape data. hold avg 83%, return games won 35%, first-set sample 9.5g, 49 recent sets.",
         "betGrade": false
       },
       "firstSetTotal": {
@@ -12589,31 +12635,31 @@ const rawTennisGames = [
         "selection": "Over 9.5",
         "line": 9.5,
         "americanOdds": -130,
-        "expectedGames": 10.3,
-        "confidence": 67,
+        "expectedGames": 10.4,
+        "confidence": 68,
         "tiebreakRisk": 24,
         "earlyBreakRisk": 56,
-        "modelPct": 67,
-        "evPer100": 18.5,
-        "netEvPer100": 16.5,
+        "modelPct": 68,
+        "evPer100": 20.3,
+        "netEvPer100": 18.3,
         "valueGrade": "Actionable live watch",
-        "reason": "Expected first-set games 10.3 vs FanDuel 9.5; Over 9.5. hold avg 83%, return games won 35%, first-set sample 9.5g, 49 recent sets.",
+        "reason": "Expected first-set games 10.4 vs FanDuel 9.5; Over 9.5. hold avg 83%, return games won 35%, first-set sample 9.5g, 49 recent sets.",
         "betGrade": false
       },
       "setWin": [
         {
           "name": "Rafael Jodar",
-          "confidence": 63,
-          "modelPct": 36,
-          "label": "Needs early hold pressure",
+          "confidence": 73,
+          "modelPct": 46.6,
+          "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
           "betGrade": false
         },
         {
           "name": "Alexander Zverev",
-          "confidence": 87,
-          "modelPct": 64,
+          "confidence": 83,
+          "modelPct": 53.4,
           "label": "Strong set-win path",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -12632,7 +12678,7 @@ const rawTennisGames = [
           "returnPointsWonPct": 45,
           "returnGamesWonPct": 37.625,
           "breakPointsSavedPct": 0,
-          "breakPointsConvertedPct": null,
+          "breakPointsConvertedPct": 45.6,
           "aces": 5.1,
           "doubleFaults": 4,
           "winners": 34.9,
@@ -12662,7 +12708,7 @@ const rawTennisGames = [
           "returnPointsWonPct": 40,
           "returnGamesWonPct": 31.375,
           "breakPointsSavedPct": 0,
-          "breakPointsConvertedPct": null,
+          "breakPointsConvertedPct": 43.8,
           "aces": 5.5,
           "doubleFaults": 2.3,
           "winners": 32,
@@ -12684,14 +12730,14 @@ const rawTennisGames = [
           }
         }
       ],
-      "expectedFirstSetGames": 10.3,
-      "expectedMatchGames": 35.8,
+      "expectedFirstSetGames": 10.4,
+      "expectedMatchGames": 37.2,
       "signalStrength": 9,
       "holdAvg": 82.5,
       "returnGamesAvg": 34.5,
       "returnPointsAvg": 42.5,
       "breakPointsSavedAvg": 0,
-      "breakPointsConvertedAvg": null,
+      "breakPointsConvertedAvg": 44.7,
       "setSamples": 49,
       "firstSetSamples": 16,
       "avgFirstSetGames": 9.5,
@@ -12709,11 +12755,11 @@ const rawTennisGames = [
         "selection": "Alexander Zverev",
         "line": null,
         "americanOdds": -310,
-        "modelPct": 64,
+        "modelPct": 53.4,
         "impliedPct": 75.6,
-        "edgePct": -11.6,
-        "evPer100": -15.4,
-        "netEvPer100": -17.4,
+        "edgePct": -22.2,
+        "evPer100": -29.4,
+        "netEvPer100": -31.4,
         "grade": "Negative EV",
         "issue": "Favorite price needs better proof",
         "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
@@ -12724,53 +12770,53 @@ const rawTennisGames = [
         "selection": "Alexander Zverev",
         "line": -5.5,
         "americanOdds": -104,
-        "modelPct": 62,
+        "modelPct": 51,
         "impliedPct": 51,
-        "edgePct": 11,
-        "evPer100": 21.6,
-        "netEvPer100": 19.6,
+        "edgePct": 0,
+        "evPer100": 0,
+        "netEvPer100": -2,
         "expectedGames": null,
         "edgeGames": null,
-        "confidence": 62,
-        "grade": "Watch only",
+        "confidence": 51,
+        "grade": "Near fair",
         "reason": "Spread is number-dependent; verify first service cycle"
       },
       {
         "marketType": "Total games",
         "label": "O/U games",
-        "selection": "Under",
+        "selection": "No bet",
         "line": 37.5,
-        "americanOdds": -118,
-        "modelPct": 64,
-        "impliedPct": 54.1,
-        "edgePct": 9.9,
-        "evPer100": 18.2,
-        "netEvPer100": 16.2,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
         "expectedGames": null,
         "edgeGames": null,
-        "confidence": 64,
-        "grade": "Watch only",
+        "confidence": null,
+        "grade": "No direction",
         "reason": "Total games need expected match games vs the posted line."
       },
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Rafael Jodar 63% / Alexander Zverev 87%",
+        "selection": "Rafael Jodar 73% / Alexander Zverev 83%",
         "rows": [
           {
             "name": "Rafael Jodar",
-            "confidence": 63,
-            "modelPct": 36,
-            "label": "Needs early hold pressure"
+            "confidence": 73,
+            "modelPct": 46.6,
+            "label": "Live to win a set"
           },
           {
             "name": "Alexander Zverev",
-            "confidence": 87,
-            "modelPct": 64,
+            "confidence": 83,
+            "modelPct": 53.4,
             "label": "Strong set-win path"
           }
         ],
-        "confidence": 87,
+        "confidence": 83,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -12778,15 +12824,43 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Over 9.5",
-        "expectedGames": 10.3,
-        "confidence": 67,
+        "expectedGames": 10.4,
+        "confidence": 68,
         "tiebreakRisk": 24,
         "earlyBreakRisk": 56,
         "grade": "Actionable live watch",
-        "reason": "Expected first-set games 10.3 vs FanDuel 9.5; Over 9.5. hold avg 83%, return games won 35%, first-set sample 9.5g, 49 recent sets."
+        "reason": "Expected first-set games 10.4 vs FanDuel 9.5; Over 9.5. hold avg 83%, return games won 35%, first-set sample 9.5g, 49 recent sets."
       }
     ],
-    "ensembleValueCase": null,
+    "ensembleValueCase": {
+      "source": "Multimodel ensemble",
+      "selection": "Rafael Jodar",
+      "opponent": "Alexander Zverev",
+      "grade": "Watch only",
+      "riskGate": "clean enough",
+      "marketOdds": 270,
+      "fairOdds": 114,
+      "modelProbability": 46.6,
+      "dataOnlyProbability": 50.9,
+      "marketProbability": 27,
+      "marketDisagreementPct": 19.6,
+      "netEvPer100": 70.5,
+      "modelBlend": "logit_l1,random_forest,grad_boost,xgboost",
+      "headline": "Rafael Jodar is priced below the model, not guaranteed to win.",
+      "useCase": "Straight ML value only at +270 or better; fair price from the ensemble is about +114.",
+      "bullets": [
+        "Recent hold: Rafael Jodar 82.8% vs Alexander Zverev 82.1%.",
+        "Serve events: Rafael Jodar 5.1 aces / 4 DFs vs Alexander Zverev 5.5 aces / 2.3 DFs.",
+        "Serve points: Rafael Jodar 1st 70%, 2nd 57% vs Alexander Zverev 1st 70.5%, 2nd 59.3%.",
+        "Winner/error profile: Rafael Jodar 34.9 winners / 38.4 UEs vs Alexander Zverev 32 winners / 25.1 UEs."
+      ],
+      "risks": [
+        "Desk lean still has Alexander Zverev; this is a price-dislocation play, not the safest winner.",
+        "Market still prices Rafael Jodar as a real underdog at 27% implied.",
+        "Alexander Zverev strength: protects serve well (82% hold).",
+        "Rafael Jodar risk: double-fault pressure (4.0 avg)."
+      ]
+    },
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook event-page Chrome scrape",
@@ -12800,8 +12874,8 @@ const rawTennisGames = [
           "americanLabel": "+245",
           "impliedPct": 29,
           "decimalOdds": 3.45,
-          "modelPct": 36,
-          "edgePct": 7,
+          "modelPct": 46.6,
+          "edgePct": 17.6,
           "priceBand": "Underdog",
           "grossProfitPct": 245,
           "grossPayoutMultiple": 3.45,
@@ -12814,8 +12888,8 @@ const rawTennisGames = [
           "americanLabel": "-310",
           "impliedPct": 75.6,
           "decimalOdds": 1.323,
-          "modelPct": 64,
-          "edgePct": -11.6,
+          "modelPct": 53.4,
+          "edgePct": -22.2,
           "priceBand": "Low-payout favorite",
           "grossProfitPct": 32.3,
           "grossPayoutMultiple": 1.323,
@@ -12829,8 +12903,8 @@ const rawTennisGames = [
         "americanLabel": "-310",
         "impliedPct": 75.6,
         "decimalOdds": 1.323,
-        "modelPct": 64,
-        "edgePct": -11.6,
+        "modelPct": 53.4,
+        "edgePct": -22.2,
         "priceBand": "Low-payout favorite",
         "grossProfitPct": 32.3,
         "grossPayoutMultiple": 1.323,
@@ -12880,7 +12954,7 @@ const rawTennisGames = [
       "totalLean": "Over lean if both players hold early",
       "mlValue": "Rafael Jodar +245 / Alexander Zverev -310",
       "marketNote": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
-      "noVigNote": "Model 64% vs FanDuel implied 75.6% (-11.6 pts)."
+      "noVigNote": "Model 53.4% vs FanDuel implied 75.6% (-22.2 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Rafael-Jodar-Vs-Alexander-Zverev/",
     "players": [
@@ -12895,11 +12969,11 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/12657/rafael-jodar",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": "Rafael Jodar",
         "profile": "Live rank #29 | Spain | age 19 | 2026 clay 19-3, 86% | adj form 102 | hold 83%",
-        "modelPct": 36,
+        "modelPct": 46.6,
         "weakness": {
           "name": "Rafael Jodar",
           "serviceHoldPct": 83,
@@ -12942,11 +13016,11 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/2375/alexander-zverev",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": "Alexander Zverev",
         "profile": "Live rank #3 | Germany | age 29 | 2026 clay 17-4, 81% | adj form 82 | hold 82%",
-        "modelPct": 64,
+        "modelPct": 53.4,
         "weakness": {
           "name": "Alexander Zverev",
           "serviceHoldPct": 82,
@@ -13594,7 +13668,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/10126/jack-pinnington-jones",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": null,
         "profile": "Live rank #132 | Great Britain | age 23",
@@ -13621,7 +13695,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3471/aleksandar-vukic",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": null,
         "profile": "Live rank #96 | Australia | age 30",
@@ -13934,7 +14008,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3093/adam-walton",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": null,
         "profile": "Live rank #97 | Australia | age 27",
@@ -16201,7 +16275,7 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/4030/dane-sweeny",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": null,
         "profile": "Live rank #131 | Australia | age 25",
@@ -16232,9 +16306,9 @@ const rawTennisGames = [
     "round": "Quarterfinal",
     "pickName": "Joao Fonseca",
     "basePickName": "Joao Fonseca",
-    "modelSource": "Tennis warehouse score model",
+    "modelSource": "Tennis multimodel ensemble",
     "modelSplit": false,
-    "confidence": 52,
+    "confidence": 57.2,
     "volatility": 48,
     "tags": [
       "Clay",
@@ -16319,14 +16393,14 @@ const rawTennisGames = [
     "setWinProjections": [
       {
         "name": "Jakub Mensik",
-        "confidence": 74,
-        "modelPct": 48,
+        "confidence": 70,
+        "modelPct": 42.8,
         "label": "Live to win a set"
       },
       {
         "name": "Joao Fonseca",
-        "confidence": 84,
-        "modelPct": 52,
+        "confidence": 85,
+        "modelPct": 57.2,
         "label": "Strong set-win path"
       }
     ],
@@ -16336,11 +16410,11 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Joao Fonseca",
         "americanOdds": -210,
-        "modelPct": 52,
+        "modelPct": 57.2,
         "impliedPct": 67.7,
-        "edgePct": -15.7,
-        "evPer100": -23.2,
-        "netEvPer100": -25.2,
+        "edgePct": -10.5,
+        "evPer100": -15.6,
+        "netEvPer100": -17.6,
         "feePer100": 2,
         "valueIssue": "Favorite price needs better proof",
         "valueGrade": "Negative EV",
@@ -16351,14 +16425,14 @@ const rawTennisGames = [
         "selection": "Joao Fonseca",
         "line": -4.5,
         "americanOdds": -108,
-        "modelPct": 50,
+        "modelPct": 55,
         "impliedPct": 51.9,
-        "edgePct": -1.9,
-        "evPer100": -3.7,
-        "netEvPer100": -5.7,
+        "edgePct": 3.1,
+        "evPer100": 5.9,
+        "netEvPer100": 3.9,
         "feePer100": 2,
         "valueIssue": "Spread watch only",
-        "valueGrade": "Near fair",
+        "valueGrade": "Raw positive EV",
         "betGrade": false
       },
       "total": {
@@ -16383,7 +16457,7 @@ const rawTennisGames = [
         "selection": "Over 9.5",
         "line": 9.5,
         "americanOdds": -128,
-        "expectedGames": 11.1,
+        "expectedGames": 11,
         "confidence": 73,
         "tiebreakRisk": 33,
         "earlyBreakRisk": 54,
@@ -16391,14 +16465,14 @@ const rawTennisGames = [
         "evPer100": 30,
         "netEvPer100": 28,
         "valueGrade": "Actionable live watch",
-        "reason": "Expected first-set games 11.1 vs FanDuel 9.5; Over 9.5. hold avg 81%, return games won 20%, first-set sample 9.8g, 53 recent sets.",
+        "reason": "Expected first-set games 11 vs FanDuel 9.5; Over 9.5. hold avg 81%, return games won 20%, first-set sample 9.8g, 53 recent sets.",
         "betGrade": false
       },
       "setWin": [
         {
           "name": "Jakub Mensik",
-          "confidence": 74,
-          "modelPct": 48,
+          "confidence": 70,
+          "modelPct": 42.8,
           "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -16406,8 +16480,8 @@ const rawTennisGames = [
         },
         {
           "name": "Joao Fonseca",
-          "confidence": 84,
-          "modelPct": 52,
+          "confidence": 85,
+          "modelPct": 57.2,
           "label": "Strong set-win path",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -16426,7 +16500,7 @@ const rawTennisGames = [
           "returnPointsWonPct": 37,
           "returnGamesWonPct": 20.5,
           "breakPointsSavedPct": 0,
-          "breakPointsConvertedPct": null,
+          "breakPointsConvertedPct": 32.9,
           "aces": 7.1,
           "doubleFaults": 4.8,
           "winners": 35.7,
@@ -16456,7 +16530,7 @@ const rawTennisGames = [
           "returnPointsWonPct": 35,
           "returnGamesWonPct": 20.142857142857142,
           "breakPointsSavedPct": 0,
-          "breakPointsConvertedPct": null,
+          "breakPointsConvertedPct": 45.7,
           "aces": 4.9,
           "doubleFaults": 1,
           "winners": 35.3,
@@ -16478,14 +16552,14 @@ const rawTennisGames = [
           }
         }
       ],
-      "expectedFirstSetGames": 11.1,
+      "expectedFirstSetGames": 11,
       "expectedMatchGames": 39.2,
       "signalStrength": 9,
       "holdAvg": 81,
       "returnGamesAvg": 20.3,
       "returnPointsAvg": 36,
       "breakPointsSavedAvg": 0,
-      "breakPointsConvertedAvg": null,
+      "breakPointsConvertedAvg": 39.3,
       "setSamples": 53,
       "firstSetSamples": 15,
       "avgFirstSetGames": 9.8,
@@ -16503,11 +16577,11 @@ const rawTennisGames = [
         "selection": "Joao Fonseca",
         "line": null,
         "americanOdds": -210,
-        "modelPct": 52,
+        "modelPct": 57.2,
         "impliedPct": 67.7,
-        "edgePct": -15.7,
-        "evPer100": -23.2,
-        "netEvPer100": -25.2,
+        "edgePct": -10.5,
+        "evPer100": -15.6,
+        "netEvPer100": -17.6,
         "grade": "Negative EV",
         "issue": "Favorite price needs better proof",
         "reason": "FanDuel price is richer than the model; pass ML unless live state improves."
@@ -16518,15 +16592,15 @@ const rawTennisGames = [
         "selection": "Joao Fonseca",
         "line": -4.5,
         "americanOdds": -108,
-        "modelPct": 50,
+        "modelPct": 55,
         "impliedPct": 51.9,
-        "edgePct": -1.9,
-        "evPer100": -3.7,
-        "netEvPer100": -5.7,
+        "edgePct": 3.1,
+        "evPer100": 5.9,
+        "netEvPer100": 3.9,
         "expectedGames": null,
         "edgeGames": null,
-        "confidence": 50,
-        "grade": "Near fair",
+        "confidence": 55,
+        "grade": "Raw positive EV",
         "reason": "Spread is number-dependent; verify first service cycle"
       },
       {
@@ -16549,22 +16623,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Jakub Mensik 74% / Joao Fonseca 84%",
+        "selection": "Jakub Mensik 70% / Joao Fonseca 85%",
         "rows": [
           {
             "name": "Jakub Mensik",
-            "confidence": 74,
-            "modelPct": 48,
+            "confidence": 70,
+            "modelPct": 42.8,
             "label": "Live to win a set"
           },
           {
             "name": "Joao Fonseca",
-            "confidence": 84,
-            "modelPct": 52,
+            "confidence": 85,
+            "modelPct": 57.2,
             "label": "Strong set-win path"
           }
         ],
-        "confidence": 84,
+        "confidence": 85,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -16572,15 +16646,42 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Over 9.5",
-        "expectedGames": 11.1,
+        "expectedGames": 11,
         "confidence": 73,
         "tiebreakRisk": 33,
         "earlyBreakRisk": 54,
         "grade": "Actionable live watch",
-        "reason": "Expected first-set games 11.1 vs FanDuel 9.5; Over 9.5. hold avg 81%, return games won 20%, first-set sample 9.8g, 53 recent sets."
+        "reason": "Expected first-set games 11 vs FanDuel 9.5; Over 9.5. hold avg 81%, return games won 20%, first-set sample 9.8g, 53 recent sets."
       }
     ],
-    "ensembleValueCase": null,
+    "ensembleValueCase": {
+      "source": "Multimodel ensemble",
+      "selection": "Jakub Mensik",
+      "opponent": "Joao Fonseca",
+      "grade": "Watch only",
+      "riskGate": "clean enough",
+      "marketOdds": 186,
+      "fairOdds": 134,
+      "modelProbability": 42.8,
+      "dataOnlyProbability": 45.4,
+      "marketProbability": 35,
+      "marketDisagreementPct": 7.8,
+      "netEvPer100": 20.4,
+      "modelBlend": "logit_l1,random_forest,grad_boost,xgboost",
+      "headline": "Jakub Mensik is priced below the model, not guaranteed to win.",
+      "useCase": "Straight ML value only at +186 or better; fair price from the ensemble is about +134.",
+      "bullets": [
+        "Recent hold: Jakub Mensik 76.9% vs Joao Fonseca 84.7%.",
+        "Serve events: Jakub Mensik 7.1 aces / 4.8 DFs vs Joao Fonseca 4.9 aces / 1 DFs.",
+        "Serve points: Jakub Mensik 1st 74.8%, 2nd 46.9% vs Joao Fonseca 1st 70.1%, 2nd 60.9%.",
+        "Winner/error profile: Jakub Mensik 35.7 winners / 41.4 UEs vs Joao Fonseca 35.3 winners / 33 UEs."
+      ],
+      "risks": [
+        "Desk lean still has Joao Fonseca; this is a price-dislocation play, not the safest winner.",
+        "Joao Fonseca strength: protects serve well (85% hold).",
+        "Jakub Mensik risk: double-fault pressure (4.8 avg)."
+      ]
+    },
     "marketData": {
       "source": "FanDuel Sportsbook",
       "sourceDetail": "FanDuel Sportsbook event-page Chrome scrape",
@@ -16594,8 +16695,8 @@ const rawTennisGames = [
           "americanLabel": "+172",
           "impliedPct": 36.8,
           "decimalOdds": 2.72,
-          "modelPct": 48,
-          "edgePct": 11.2,
+          "modelPct": 42.8,
+          "edgePct": 6,
           "priceBand": "Underdog",
           "grossProfitPct": 172,
           "grossPayoutMultiple": 2.72,
@@ -16608,8 +16709,8 @@ const rawTennisGames = [
           "americanLabel": "-210",
           "impliedPct": 67.7,
           "decimalOdds": 1.476,
-          "modelPct": 52,
-          "edgePct": -15.7,
+          "modelPct": 57.2,
+          "edgePct": -10.5,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 47.6,
           "grossPayoutMultiple": 1.476,
@@ -16623,8 +16724,8 @@ const rawTennisGames = [
         "americanLabel": "-210",
         "impliedPct": 67.7,
         "decimalOdds": 1.476,
-        "modelPct": 52,
-        "edgePct": -15.7,
+        "modelPct": 57.2,
+        "edgePct": -10.5,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 47.6,
         "grossPayoutMultiple": 1.476,
@@ -16674,7 +16775,7 @@ const rawTennisGames = [
       "totalLean": "Over lean if both players hold early",
       "mlValue": "Jakub Mensik +172 / Joao Fonseca -210",
       "marketNote": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. FanDuel price is richer than the model; pass ML unless live state improves.",
-      "noVigNote": "Model 52% vs FanDuel implied 67.7% (-15.7 pts)."
+      "noVigNote": "Model 57.2% vs FanDuel implied 67.7% (-10.5 pts)."
     },
     "h2hUrl": "https://tennistonic.com/head-to-head-compare/Jakub-Mensik-Vs-Joao-Fonseca/",
     "players": [
@@ -16689,11 +16790,11 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/10319/jakub-mensik",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": "Jakub Mensik",
         "profile": "Live rank #27 | Czechia | age 20 | 2026 clay 7-3, 70% | adj form 77 | hold 77%",
-        "modelPct": 48,
+        "modelPct": 42.8,
         "weakness": {
           "name": "Jakub Mensik",
           "serviceHoldPct": 77,
@@ -16736,11 +16837,11 @@ const rawTennisGames = [
           "tour": "ATP",
           "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
           "profileUrl": "https://www.espn.com/tennis/player/_/id/11745/joao-fonseca",
-          "asOf": "2026-06-01"
+          "asOf": "2026-06-02"
         },
         "qualityName": "Joao Fonseca",
         "profile": "Live rank #30 | Brazil | age 19 | 2026 clay 10-6, 63% | adj form 72 | hold 85%",
-        "modelPct": 52,
+        "modelPct": 57.2,
         "weakness": {
           "name": "Joao Fonseca",
           "serviceHoldPct": 85,

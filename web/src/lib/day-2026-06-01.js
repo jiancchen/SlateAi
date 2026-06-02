@@ -5,569 +5,14 @@ import tennisWarehouseContext from './day-2026-06-01-tennis-warehouse-context.ge
 
 const rawTennisGames = [
   {
-    "id": "rg-w-anastasia-potapova-anna-kalinskaya-2026-06-01",
-    "eventId": "175554",
-    "tour": "WTA",
-    "title": "Anastasia Potapova vs Anna Kalinskaya",
-    "start": "2:00 AM",
-    "startMinutes": 120,
-    "court": "Court Suzanne-Lenglen",
-    "round": "Round 4",
-    "pickName": "Anastasia Potapova",
-    "basePickName": "Anastasia Potapova",
-    "modelSource": "Tennis multimodel ensemble",
-    "modelSplit": false,
-    "confidence": 75.3,
-    "volatility": 50,
-    "tags": [
-      "Clay",
-      "Roland Garros",
-      "WTA",
-      "Lean",
-      "Price required",
-      "WTA volatility tax",
-      "Controlled volatility"
-    ],
-    "reason": "Anastasia Potapova has the recent service-hold edge 70% to 54%. Anastasia Potapova grades 32 points better on opponent-adjusted recent form. Lean, not a chase.",
-    "totals": "Best O/U angle: no play without a posted total.",
-    "weaknessEdge": {
-      "edgeType": "Weakness edge",
-      "target": "Anna Kalinskaya",
-      "scoreGap": 18,
-      "attackingSide": "Anastasia Potapova",
-      "vulnerableSide": "Anna Kalinskaya",
-      "gameFlow": "Anastasia Potapova has a real path if Anna Kalinskaya's first two service games show the same weakness: low recent hold rate (54%); first-serve points won below comfort (57%).",
-      "liveTrigger": "Look for Anna Kalinskaya facing break points or second-serve pressure before 3-3.",
-      "spreadRead": "Anastasia Potapova spread only if the handicap is short and Anna Kalinskaya is under pressure early.",
-      "totalRead": "Avoid low unders if Anna Kalinskaya faces early break points or second-serve pressure.",
-      "pick": {
-        "name": "Anastasia Potapova",
-        "serviceHoldPct": 70,
-        "firstServeWonPct": 68,
-        "secondServeWonPct": 44,
-        "firstServePct": 60,
-        "avgAces": 3.3,
-        "avgDoubleFaults": 4.3,
-        "avgWinners": null,
-        "avgUnforcedErrors": null,
-        "avgBreakPointsFaced": null,
-        "returnPointsWonPct": null,
-        "servicePointsWonPct": 58,
-        "weakServeMatches": 0,
-        "pressureMatches": 5,
-        "matchesWithStats": 21,
-        "weaknessScore": 9,
-        "firstGameComfort": "Comfortable enough if first serve lands",
-        "liabilities": [
-          "second-serve points won are attackable (44%)",
-          "double-fault pressure (4.3 avg)"
-        ],
-        "strengths": [],
-        "gameFlowRead": "Anastasia Potapova can drop points quickly through second-serve points won are attackable (44%) and double-fault pressure (4.3 avg)."
-      },
-      "opponent": {
-        "name": "Anna Kalinskaya",
-        "serviceHoldPct": 54,
-        "firstServeWonPct": 57,
-        "secondServeWonPct": 40,
-        "firstServePct": 70,
-        "avgAces": 1.5,
-        "avgDoubleFaults": 4.5,
-        "avgWinners": null,
-        "avgUnforcedErrors": null,
-        "avgBreakPointsFaced": null,
-        "returnPointsWonPct": null,
-        "servicePointsWonPct": 52,
-        "weakServeMatches": 0,
-        "pressureMatches": 3,
-        "matchesWithStats": 10,
-        "weaknessScore": 27,
-        "firstGameComfort": "Fragile opening-service profile",
-        "liabilities": [
-          "low recent hold rate (54%)",
-          "first-serve points won below comfort (57%)",
-          "second-serve points won are attackable (40%)",
-          "double-fault pressure (4.5 avg)"
-        ],
-        "strengths": [],
-        "gameFlowRead": "Anna Kalinskaya can drop points quickly through low recent hold rate (54%) and first-serve points won below comfort (57%)."
-      }
-    },
-    "setWinProjections": [
-      {
-        "name": "Anastasia Potapova",
-        "confidence": 81,
-        "modelPct": 75.3,
-        "label": "Live to win a set"
-      },
-      {
-        "name": "Anna Kalinskaya",
-        "confidence": 37,
-        "modelPct": 24.7,
-        "label": "Thin set-win path"
-      }
-    ],
-    "valueBoard": {
-      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
-      "ml": {
-        "marketType": "ML",
-        "selection": "Anastasia Potapova",
-        "americanOdds": -220,
-        "modelPct": 75.3,
-        "impliedPct": 68.8,
-        "edgePct": 6.5,
-        "evPer100": 9.5,
-        "netEvPer100": 7.5,
-        "feePer100": 2,
-        "valueIssue": "Favorite price needs better proof",
-        "valueGrade": "Favorite price needs better proof",
-        "betGrade": false
-      },
-      "spread": {
-        "marketType": "Spread",
-        "selection": "Anastasia Potapova",
-        "line": -3.5,
-        "americanOdds": -118,
-        "modelPct": 73,
-        "impliedPct": 54.1,
-        "edgePct": 18.9,
-        "evPer100": 34.9,
-        "netEvPer100": 32.9,
-        "feePer100": 2,
-        "valueIssue": "Spread watch only",
-        "valueGrade": "Watch only",
-        "betGrade": false
-      },
-      "total": {
-        "marketType": "Total",
-        "selection": "No bet",
-        "line": 21.5,
-        "overOdds": -118,
-        "underOdds": -112,
-        "expectedGames": 21.8,
-        "valueGrade": "No direction",
-        "reason": "FanDuel total is 21.5; model did not clear a full-match over/under edge from hold, return, and set-shape data. hold avg 62%, BP saved 56%, BP converted 55%, first-set sample 9.8g, 38 recent sets.",
-        "betGrade": false
-      },
-      "firstSetTotal": {
-        "marketType": "First-set total",
-        "selection": "Under 9.5",
-        "line": 9.5,
-        "americanOdds": -128,
-        "expectedGames": 8.7,
-        "confidence": 66,
-        "tiebreakRisk": 18,
-        "earlyBreakRisk": 60,
-        "modelPct": 66,
-        "evPer100": 17.6,
-        "netEvPer100": 15.6,
-        "valueGrade": "Actionable live watch",
-        "reason": "Expected first-set games 8.7 vs FanDuel 9.5; Under 9.5. hold avg 62%, BP saved 56%, BP converted 55%, first-set sample 9.8g, 38 recent sets.",
-        "betGrade": false
-      },
-      "setWin": [
-        {
-          "name": "Anastasia Potapova",
-          "confidence": 81,
-          "modelPct": 75.3,
-          "label": "Live to win a set",
-          "marketType": "Win a set",
-          "valueGrade": "Needs posted price",
-          "betGrade": false
-        },
-        {
-          "name": "Anna Kalinskaya",
-          "confidence": 37,
-          "modelPct": 24.7,
-          "label": "Thin set-win path",
-          "marketType": "Win a set",
-          "valueGrade": "Needs posted price",
-          "betGrade": false
-        }
-      ]
-    },
-    "totalsProfile": {
-      "profiles": [
-        {
-          "name": "Anastasia Potapova",
-          "holdPct": 70,
-          "firstServeWonPct": 68,
-          "secondServeWonPct": 44,
-          "servicePointsWonPct": 58,
-          "returnPointsWonPct": null,
-          "returnGamesWonPct": null,
-          "breakPointsSavedPct": 59.1,
-          "breakPointsConvertedPct": 49.8,
-          "aces": 3.3,
-          "doubleFaults": 4.3,
-          "winners": null,
-          "unforcedErrors": null,
-          "weaknessScore": 9,
-          "weakServeMatches": 0,
-          "statMatches": 21,
-          "setShape": {
-            "completedMatches": 8,
-            "setSamples": 20,
-            "firstSetSamples": 8,
-            "avgFirstSetGames": 10.25,
-            "avgSetGames": 9.55,
-            "avgMatchGames": 23.875,
-            "avgSetsPlayed": 2.5,
-            "tiebreakRate": 0.1,
-            "extendedSetRate": 0.2,
-            "shortSetRate": 0.4
-          }
-        },
-        {
-          "name": "Anna Kalinskaya",
-          "holdPct": 54,
-          "firstServeWonPct": 57,
-          "secondServeWonPct": 40,
-          "servicePointsWonPct": 52,
-          "returnPointsWonPct": null,
-          "returnGamesWonPct": null,
-          "breakPointsSavedPct": 51.9,
-          "breakPointsConvertedPct": 59.5,
-          "aces": 1.5,
-          "doubleFaults": 4.5,
-          "winners": null,
-          "unforcedErrors": null,
-          "weaknessScore": 27,
-          "weakServeMatches": 0,
-          "statMatches": 10,
-          "setShape": {
-            "completedMatches": 8,
-            "setSamples": 18,
-            "firstSetSamples": 8,
-            "avgFirstSetGames": 9.375,
-            "avgSetGames": 9.333333333333334,
-            "avgMatchGames": 21,
-            "avgSetsPlayed": 2.25,
-            "tiebreakRate": 0.1111111111111111,
-            "extendedSetRate": 0.16666666666666666,
-            "shortSetRate": 0.3333333333333333
-          }
-        }
-      ],
-      "expectedFirstSetGames": 8.7,
-      "expectedMatchGames": 21.8,
-      "signalStrength": 8,
-      "holdAvg": 62,
-      "returnGamesAvg": null,
-      "returnPointsAvg": null,
-      "breakPointsSavedAvg": 55.5,
-      "breakPointsConvertedAvg": 54.6,
-      "setSamples": 38,
-      "firstSetSamples": 16,
-      "avgFirstSetGames": 9.8,
-      "avgSetGames": 9.4,
-      "tiebreakRate": 10.6,
-      "extendedSetRate": 18.3,
-      "shortSetRate": 36.7,
-      "reasonCore": "hold avg 62%, BP saved 56%, BP converted 55%, first-set sample 9.8g, 38 recent sets"
-    },
-    "derivativeCase": null,
-    "bettingMatrix": [
-      {
-        "marketType": "Moneyline",
-        "label": "ML value",
-        "selection": "Anastasia Potapova",
-        "line": null,
-        "americanOdds": -220,
-        "modelPct": 75.3,
-        "impliedPct": 68.8,
-        "edgePct": 6.5,
-        "evPer100": 9.5,
-        "netEvPer100": 7.5,
-        "grade": "Favorite price needs better proof",
-        "issue": "Favorite price needs better proof",
-        "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
-      },
-      {
-        "marketType": "Game spread",
-        "label": "Game spread",
-        "selection": "Anastasia Potapova",
-        "line": -3.5,
-        "americanOdds": -118,
-        "modelPct": 73,
-        "impliedPct": 54.1,
-        "edgePct": 18.9,
-        "evPer100": 34.9,
-        "netEvPer100": 32.9,
-        "expectedGames": null,
-        "edgeGames": null,
-        "confidence": 73,
-        "grade": "Watch only",
-        "reason": "Anastasia Potapova spread is playable only if early return pressure shows"
-      },
-      {
-        "marketType": "Total games",
-        "label": "O/U games",
-        "selection": "No bet",
-        "line": 21.5,
-        "americanOdds": null,
-        "modelPct": null,
-        "impliedPct": null,
-        "edgePct": null,
-        "evPer100": null,
-        "netEvPer100": null,
-        "expectedGames": null,
-        "edgeGames": null,
-        "confidence": null,
-        "grade": "No direction",
-        "reason": "Total games need expected match games vs the posted line."
-      },
-      {
-        "marketType": "Win a set",
-        "label": "Win a set %",
-        "selection": "Anastasia Potapova 81% / Anna Kalinskaya 37%",
-        "rows": [
-          {
-            "name": "Anastasia Potapova",
-            "confidence": 81,
-            "modelPct": 75.3,
-            "label": "Live to win a set"
-          },
-          {
-            "name": "Anna Kalinskaya",
-            "confidence": 37,
-            "modelPct": 24.7,
-            "label": "Thin set-win path"
-          }
-        ],
-        "confidence": 81,
-        "grade": "Price required",
-        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
-      },
-      {
-        "marketType": "First-set total games",
-        "label": "1st set O/U",
-        "selection": "Under 9.5",
-        "expectedGames": 8.7,
-        "confidence": 66,
-        "tiebreakRisk": 18,
-        "earlyBreakRisk": 60,
-        "grade": "Actionable live watch",
-        "reason": "Expected first-set games 8.7 vs FanDuel 9.5; Under 9.5. hold avg 62%, BP saved 56%, BP converted 55%, first-set sample 9.8g, 38 recent sets."
-      }
-    ],
-    "ensembleValueCase": {
-      "source": "Multimodel ensemble",
-      "selection": "Anastasia Potapova",
-      "opponent": "Anna Kalinskaya",
-      "grade": "Playable favorite",
-      "riskGate": "error-control risk, hold risk, closeout risk",
-      "marketOdds": -203,
-      "fairOdds": -304,
-      "modelProbability": 75.3,
-      "dataOnlyProbability": 78,
-      "marketProbability": 67,
-      "marketDisagreementPct": 8.3,
-      "netEvPer100": 10.3,
-      "modelBlend": "logit_l1,random_forest,grad_boost,xgboost",
-      "headline": "Anastasia Potapova is priced below the model, not guaranteed to win.",
-      "useCase": "Favorite price needs cleaner proof or derivative value; do not confuse win probability with bet value.",
-      "bullets": [
-        "Recent hold: Anastasia Potapova 69.5% vs Anna Kalinskaya 54.2%.",
-        "Serve events: Anastasia Potapova 3.3 aces / 0 DFs vs Anna Kalinskaya 1.5 aces / 0 DFs.",
-        "Serve points: Anastasia Potapova 1st 67.8%, 2nd 0% vs Anna Kalinskaya 1st 56.6%, 2nd 0%."
-      ],
-      "risks": [
-        "Anastasia Potapova risk: second-serve points won are attackable (44%)."
-      ]
-    },
-    "marketData": {
-      "source": "FanDuel Sportsbook",
-      "sourceDetail": "FanDuel Sportsbook event-page Chrome scrape",
-      "capturedAt": "2026-06-01T07:51:26.520Z",
-      "eventUrl": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/anastasia-potapova-v-anna-kalinskaya-35668143",
-      "eventId": "35668143",
-      "players": [
-        {
-          "name": "Anastasia Potapova",
-          "odds": -220,
-          "americanLabel": "-220",
-          "impliedPct": 68.8,
-          "decimalOdds": 1.455,
-          "modelPct": 75.3,
-          "edgePct": 6.5,
-          "priceBand": "Moderate favorite",
-          "grossProfitPct": 45.5,
-          "grossPayoutMultiple": 1.455,
-          "centsAtRisk": 100,
-          "centsProfitIfWin": 45.5
-        },
-        {
-          "name": "Anna Kalinskaya",
-          "odds": 180,
-          "americanLabel": "+180",
-          "impliedPct": 35.7,
-          "decimalOdds": 2.8,
-          "modelPct": 24.7,
-          "edgePct": -11,
-          "priceBand": "Underdog",
-          "grossProfitPct": 180,
-          "grossPayoutMultiple": 2.8,
-          "centsAtRisk": 100,
-          "centsProfitIfWin": 180
-        }
-      ],
-      "desk": {
-        "name": "Anastasia Potapova",
-        "odds": -220,
-        "americanLabel": "-220",
-        "impliedPct": 68.8,
-        "decimalOdds": 1.455,
-        "modelPct": 75.3,
-        "edgePct": 6.5,
-        "priceBand": "Moderate favorite",
-        "grossProfitPct": 45.5,
-        "grossPayoutMultiple": 1.455,
-        "centsAtRisk": 100,
-        "centsProfitIfWin": 45.5
-      },
-      "spread": {
-        "player": "Anastasia Potapova",
-        "spread": -3.5,
-        "odds": -118
-      },
-      "total": {
-        "side": "Over",
-        "line": 21.5,
-        "odds": -118
-      },
-      "totalOver": {
-        "side": "Over",
-        "line": 21.5,
-        "odds": -118
-      },
-      "totalUnder": {
-        "side": "Under",
-        "line": 21.5,
-        "odds": -112
-      },
-      "firstSetTotal": {
-        "side": "Over",
-        "line": 9.5,
-        "odds": -108
-      },
-      "firstSetTotalOver": {
-        "side": "Over",
-        "line": 9.5,
-        "odds": -108
-      },
-      "firstSetTotalUnder": {
-        "side": "Under",
-        "line": 9.5,
-        "odds": -128
-      },
-      "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge.",
-      "spreadValue": "Anastasia Potapova -3.5 (-118)",
-      "totalValue": "21.5 games: Over -118 / Under -112",
-      "firstSetTotalValue": "9.5 1st-set games: Over -108 / Under -128",
-      "spreadLean": "Anastasia Potapova spread is playable only if early return pressure shows",
-      "totalLean": "Total needs live serve data before entry",
-      "mlValue": "Anastasia Potapova -220 / Anna Kalinskaya +180",
-      "marketNote": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. ML is close to fair; derivative or live entry needs to carry the edge.",
-      "noVigNote": "Model 75.3% vs FanDuel implied 68.8% (+6.5 pts)."
-    },
-    "h2hUrl": "https://tennistonic.com/head-to-head-compare/Anastasia-Potapova-Vs-Anna-Kalinskaya/",
-    "players": [
-      {
-        "name": "Anastasia Potapova",
-        "ranking": {
-          "name": "Anastasia Potapova",
-          "rank": 30,
-          "points": 1470,
-          "age": 25,
-          "country": "Austria",
-          "tour": "WTA",
-          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
-          "profileUrl": "https://www.espn.com/tennis/player/_/id/2971/anastasia-potapova",
-          "asOf": "2026-06-01"
-        },
-        "qualityName": "Anastasia Potapova",
-        "profile": "Live rank #30 | Austria | age 25 | 2026 clay 17-4, 81% | adj form 97 | hold 70%",
-        "modelPct": 75.3,
-        "weakness": {
-          "name": "Anastasia Potapova",
-          "serviceHoldPct": 70,
-          "firstServeWonPct": 68,
-          "secondServeWonPct": 44,
-          "firstServePct": 60,
-          "avgAces": 3.3,
-          "avgDoubleFaults": 4.3,
-          "avgWinners": null,
-          "avgUnforcedErrors": null,
-          "avgBreakPointsFaced": null,
-          "returnPointsWonPct": null,
-          "servicePointsWonPct": 58,
-          "weakServeMatches": 0,
-          "pressureMatches": 5,
-          "matchesWithStats": 21,
-          "weaknessScore": 9,
-          "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [
-            "second-serve points won are attackable (44%)",
-            "double-fault pressure (4.3 avg)"
-          ],
-          "strengths": [],
-          "gameFlowRead": "Anastasia Potapova can drop points quickly through second-serve points won are attackable (44%) and double-fault pressure (4.3 avg)."
-        }
-      },
-      {
-        "name": "Anna Kalinskaya",
-        "ranking": {
-          "name": "Anna Kalinskaya",
-          "rank": 24,
-          "points": 1792,
-          "age": 27,
-          "country": "Russia",
-          "tour": "WTA",
-          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
-          "profileUrl": "https://www.espn.com/tennis/player/_/id/2977/anna-kalinskaya",
-          "asOf": "2026-06-01"
-        },
-        "qualityName": "Anna Kalinskaya",
-        "profile": "Live rank #24 | Russia | age 27 | 2026 clay 7-3, 70% | adj form 65 | hold 54%",
-        "modelPct": 24.7,
-        "weakness": {
-          "name": "Anna Kalinskaya",
-          "serviceHoldPct": 54,
-          "firstServeWonPct": 57,
-          "secondServeWonPct": 40,
-          "firstServePct": 70,
-          "avgAces": 1.5,
-          "avgDoubleFaults": 4.5,
-          "avgWinners": null,
-          "avgUnforcedErrors": null,
-          "avgBreakPointsFaced": null,
-          "returnPointsWonPct": null,
-          "servicePointsWonPct": 52,
-          "weakServeMatches": 0,
-          "pressureMatches": 3,
-          "matchesWithStats": 10,
-          "weaknessScore": 27,
-          "firstGameComfort": "Fragile opening-service profile",
-          "liabilities": [
-            "low recent hold rate (54%)",
-            "first-serve points won below comfort (57%)",
-            "second-serve points won are attackable (40%)",
-            "double-fault pressure (4.5 avg)"
-          ],
-          "strengths": [],
-          "gameFlowRead": "Anna Kalinskaya can drop points quickly through low recent hold rate (54%) and first-serve points won below comfort (57%)."
-        }
-      }
-    ]
-  },
-  {
     "id": "rg-m-flavio-cobolli-zachary-svajda-2026-06-01",
     "eventId": "175767",
     "tour": "ATP",
+    "bestOf": 5,
+    "surface": "Clay",
     "title": "Flavio Cobolli vs Zachary Svajda",
-    "start": "2:00 AM",
-    "startMinutes": 120,
+    "start": "2:05 AM",
+    "startMinutes": 125,
     "court": "Court Philippe-Chatrier",
     "round": "Round 4",
     "pickName": "Flavio Cobolli",
@@ -1119,12 +564,573 @@ const rawTennisGames = [
     ]
   },
   {
+    "id": "rg-w-anastasia-potapova-anna-kalinskaya-2026-06-01",
+    "eventId": "175554",
+    "tour": "WTA",
+    "bestOf": 3,
+    "surface": "Clay",
+    "title": "Anastasia Potapova vs Anna Kalinskaya",
+    "start": "2:15 AM",
+    "startMinutes": 135,
+    "court": "Court Suzanne-Lenglen",
+    "round": "Round 4",
+    "pickName": "Anastasia Potapova",
+    "basePickName": "Anastasia Potapova",
+    "modelSource": "Tennis multimodel ensemble",
+    "modelSplit": false,
+    "confidence": 75.3,
+    "volatility": 50,
+    "tags": [
+      "Clay",
+      "Roland Garros",
+      "WTA",
+      "Lean",
+      "Price required",
+      "WTA volatility tax",
+      "Controlled volatility"
+    ],
+    "reason": "Anastasia Potapova has the recent service-hold edge 70% to 54%. Anastasia Potapova grades 32 points better on opponent-adjusted recent form. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
+    "weaknessEdge": {
+      "edgeType": "Weakness edge",
+      "target": "Anna Kalinskaya",
+      "scoreGap": 18,
+      "attackingSide": "Anastasia Potapova",
+      "vulnerableSide": "Anna Kalinskaya",
+      "gameFlow": "Anastasia Potapova has a real path if Anna Kalinskaya's first two service games show the same weakness: low recent hold rate (54%); first-serve points won below comfort (57%).",
+      "liveTrigger": "Look for Anna Kalinskaya facing break points or second-serve pressure before 3-3.",
+      "spreadRead": "Anastasia Potapova spread only if the handicap is short and Anna Kalinskaya is under pressure early.",
+      "totalRead": "Avoid low unders if Anna Kalinskaya faces early break points or second-serve pressure.",
+      "pick": {
+        "name": "Anastasia Potapova",
+        "serviceHoldPct": 70,
+        "firstServeWonPct": 68,
+        "secondServeWonPct": 44,
+        "firstServePct": 60,
+        "avgAces": 3.3,
+        "avgDoubleFaults": 4.3,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 58,
+        "weakServeMatches": 0,
+        "pressureMatches": 5,
+        "matchesWithStats": 21,
+        "weaknessScore": 9,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [
+          "second-serve points won are attackable (44%)",
+          "double-fault pressure (4.3 avg)"
+        ],
+        "strengths": [],
+        "gameFlowRead": "Anastasia Potapova can drop points quickly through second-serve points won are attackable (44%) and double-fault pressure (4.3 avg)."
+      },
+      "opponent": {
+        "name": "Anna Kalinskaya",
+        "serviceHoldPct": 54,
+        "firstServeWonPct": 57,
+        "secondServeWonPct": 40,
+        "firstServePct": 70,
+        "avgAces": 1.5,
+        "avgDoubleFaults": 4.5,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 52,
+        "weakServeMatches": 0,
+        "pressureMatches": 3,
+        "matchesWithStats": 10,
+        "weaknessScore": 27,
+        "firstGameComfort": "Fragile opening-service profile",
+        "liabilities": [
+          "low recent hold rate (54%)",
+          "first-serve points won below comfort (57%)",
+          "second-serve points won are attackable (40%)",
+          "double-fault pressure (4.5 avg)"
+        ],
+        "strengths": [],
+        "gameFlowRead": "Anna Kalinskaya can drop points quickly through low recent hold rate (54%) and first-serve points won below comfort (57%)."
+      }
+    },
+    "setWinProjections": [
+      {
+        "name": "Anastasia Potapova",
+        "confidence": 81,
+        "modelPct": 75.3,
+        "label": "Live to win a set"
+      },
+      {
+        "name": "Anna Kalinskaya",
+        "confidence": 37,
+        "modelPct": 24.7,
+        "label": "Thin set-win path"
+      }
+    ],
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Anastasia Potapova",
+        "americanOdds": -220,
+        "modelPct": 75.3,
+        "impliedPct": 68.8,
+        "edgePct": 6.5,
+        "evPer100": 9.5,
+        "netEvPer100": 7.5,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Favorite price needs better proof",
+        "betGrade": false
+      },
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Anastasia Potapova",
+        "line": -3.5,
+        "americanOdds": -118,
+        "modelPct": 73,
+        "impliedPct": 54.1,
+        "edgePct": 18.9,
+        "evPer100": 34.9,
+        "netEvPer100": 32.9,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Watch only",
+        "betGrade": false
+      },
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": 21.5,
+        "overOdds": -118,
+        "underOdds": -112,
+        "expectedGames": 21.8,
+        "valueGrade": "No direction",
+        "reason": "FanDuel total is 21.5; model did not clear a full-match over/under edge from hold, return, and set-shape data. hold avg 62%, BP saved 56%, BP converted 55%, first-set sample 9.8g, 38 recent sets.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Under 9.5",
+        "line": 9.5,
+        "americanOdds": -128,
+        "expectedGames": 8.7,
+        "confidence": 66,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 60,
+        "modelPct": 66,
+        "evPer100": 17.6,
+        "netEvPer100": 15.6,
+        "valueGrade": "Actionable live watch",
+        "reason": "Expected first-set games 8.7 vs FanDuel 9.5; Under 9.5. hold avg 62%, BP saved 56%, BP converted 55%, first-set sample 9.8g, 38 recent sets.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Anastasia Potapova",
+          "confidence": 81,
+          "modelPct": 75.3,
+          "label": "Live to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Anna Kalinskaya",
+          "confidence": 37,
+          "modelPct": 24.7,
+          "label": "Thin set-win path",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "totalsProfile": {
+      "profiles": [
+        {
+          "name": "Anastasia Potapova",
+          "holdPct": 70,
+          "firstServeWonPct": 68,
+          "secondServeWonPct": 44,
+          "servicePointsWonPct": 58,
+          "returnPointsWonPct": null,
+          "returnGamesWonPct": null,
+          "breakPointsSavedPct": 59.1,
+          "breakPointsConvertedPct": 49.8,
+          "aces": 3.3,
+          "doubleFaults": 4.3,
+          "winners": null,
+          "unforcedErrors": null,
+          "weaknessScore": 9,
+          "weakServeMatches": 0,
+          "statMatches": 21,
+          "setShape": {
+            "completedMatches": 8,
+            "setSamples": 20,
+            "firstSetSamples": 8,
+            "avgFirstSetGames": 10.25,
+            "avgSetGames": 9.55,
+            "avgMatchGames": 23.875,
+            "avgSetsPlayed": 2.5,
+            "tiebreakRate": 0.1,
+            "extendedSetRate": 0.2,
+            "shortSetRate": 0.4
+          }
+        },
+        {
+          "name": "Anna Kalinskaya",
+          "holdPct": 54,
+          "firstServeWonPct": 57,
+          "secondServeWonPct": 40,
+          "servicePointsWonPct": 52,
+          "returnPointsWonPct": null,
+          "returnGamesWonPct": null,
+          "breakPointsSavedPct": 51.9,
+          "breakPointsConvertedPct": 59.5,
+          "aces": 1.5,
+          "doubleFaults": 4.5,
+          "winners": null,
+          "unforcedErrors": null,
+          "weaknessScore": 27,
+          "weakServeMatches": 0,
+          "statMatches": 10,
+          "setShape": {
+            "completedMatches": 8,
+            "setSamples": 18,
+            "firstSetSamples": 8,
+            "avgFirstSetGames": 9.375,
+            "avgSetGames": 9.333333333333334,
+            "avgMatchGames": 21,
+            "avgSetsPlayed": 2.25,
+            "tiebreakRate": 0.1111111111111111,
+            "extendedSetRate": 0.16666666666666666,
+            "shortSetRate": 0.3333333333333333
+          }
+        }
+      ],
+      "expectedFirstSetGames": 8.7,
+      "expectedMatchGames": 21.8,
+      "signalStrength": 8,
+      "holdAvg": 62,
+      "returnGamesAvg": null,
+      "returnPointsAvg": null,
+      "breakPointsSavedAvg": 55.5,
+      "breakPointsConvertedAvg": 54.6,
+      "setSamples": 38,
+      "firstSetSamples": 16,
+      "avgFirstSetGames": 9.8,
+      "avgSetGames": 9.4,
+      "tiebreakRate": 10.6,
+      "extendedSetRate": 18.3,
+      "shortSetRate": 36.7,
+      "reasonCore": "hold avg 62%, BP saved 56%, BP converted 55%, first-set sample 9.8g, 38 recent sets"
+    },
+    "derivativeCase": null,
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Anastasia Potapova",
+        "line": null,
+        "americanOdds": -220,
+        "modelPct": 75.3,
+        "impliedPct": 68.8,
+        "edgePct": 6.5,
+        "evPer100": 9.5,
+        "netEvPer100": 7.5,
+        "grade": "Favorite price needs better proof",
+        "issue": "Favorite price needs better proof",
+        "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
+      },
+      {
+        "marketType": "Game spread",
+        "label": "Game spread",
+        "selection": "Anastasia Potapova",
+        "line": -3.5,
+        "americanOdds": -118,
+        "modelPct": 73,
+        "impliedPct": 54.1,
+        "edgePct": 18.9,
+        "evPer100": 34.9,
+        "netEvPer100": 32.9,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": 73,
+        "grade": "Watch only",
+        "reason": "Anastasia Potapova spread is playable only if early return pressure shows"
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": 21.5,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "Total games need expected match games vs the posted line."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Anastasia Potapova 81% / Anna Kalinskaya 37%",
+        "rows": [
+          {
+            "name": "Anastasia Potapova",
+            "confidence": 81,
+            "modelPct": 75.3,
+            "label": "Live to win a set"
+          },
+          {
+            "name": "Anna Kalinskaya",
+            "confidence": 37,
+            "modelPct": 24.7,
+            "label": "Thin set-win path"
+          }
+        ],
+        "confidence": 81,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Under 9.5",
+        "expectedGames": 8.7,
+        "confidence": 66,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 60,
+        "grade": "Actionable live watch",
+        "reason": "Expected first-set games 8.7 vs FanDuel 9.5; Under 9.5. hold avg 62%, BP saved 56%, BP converted 55%, first-set sample 9.8g, 38 recent sets."
+      }
+    ],
+    "ensembleValueCase": {
+      "source": "Multimodel ensemble",
+      "selection": "Anastasia Potapova",
+      "opponent": "Anna Kalinskaya",
+      "grade": "Playable favorite",
+      "riskGate": "error-control risk, hold risk, closeout risk",
+      "marketOdds": -203,
+      "fairOdds": -304,
+      "modelProbability": 75.3,
+      "dataOnlyProbability": 78,
+      "marketProbability": 67,
+      "marketDisagreementPct": 8.3,
+      "netEvPer100": 10.3,
+      "modelBlend": "logit_l1,random_forest,grad_boost,xgboost",
+      "headline": "Anastasia Potapova is priced below the model, not guaranteed to win.",
+      "useCase": "Favorite price needs cleaner proof or derivative value; do not confuse win probability with bet value.",
+      "bullets": [
+        "Recent hold: Anastasia Potapova 69.5% vs Anna Kalinskaya 54.2%.",
+        "Serve events: Anastasia Potapova 3.3 aces / 0 DFs vs Anna Kalinskaya 1.5 aces / 0 DFs.",
+        "Serve points: Anastasia Potapova 1st 67.8%, 2nd 0% vs Anna Kalinskaya 1st 56.6%, 2nd 0%."
+      ],
+      "risks": [
+        "Anastasia Potapova risk: second-serve points won are attackable (44%)."
+      ]
+    },
+    "marketData": {
+      "source": "FanDuel Sportsbook",
+      "sourceDetail": "FanDuel Sportsbook event-page Chrome scrape",
+      "capturedAt": "2026-06-01T07:51:26.520Z",
+      "eventUrl": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/anastasia-potapova-v-anna-kalinskaya-35668143",
+      "eventId": "35668143",
+      "players": [
+        {
+          "name": "Anastasia Potapova",
+          "odds": -220,
+          "americanLabel": "-220",
+          "impliedPct": 68.8,
+          "decimalOdds": 1.455,
+          "modelPct": 75.3,
+          "edgePct": 6.5,
+          "priceBand": "Moderate favorite",
+          "grossProfitPct": 45.5,
+          "grossPayoutMultiple": 1.455,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 45.5
+        },
+        {
+          "name": "Anna Kalinskaya",
+          "odds": 180,
+          "americanLabel": "+180",
+          "impliedPct": 35.7,
+          "decimalOdds": 2.8,
+          "modelPct": 24.7,
+          "edgePct": -11,
+          "priceBand": "Underdog",
+          "grossProfitPct": 180,
+          "grossPayoutMultiple": 2.8,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 180
+        }
+      ],
+      "desk": {
+        "name": "Anastasia Potapova",
+        "odds": -220,
+        "americanLabel": "-220",
+        "impliedPct": 68.8,
+        "decimalOdds": 1.455,
+        "modelPct": 75.3,
+        "edgePct": 6.5,
+        "priceBand": "Moderate favorite",
+        "grossProfitPct": 45.5,
+        "grossPayoutMultiple": 1.455,
+        "centsAtRisk": 100,
+        "centsProfitIfWin": 45.5
+      },
+      "spread": {
+        "player": "Anastasia Potapova",
+        "spread": -3.5,
+        "odds": -118
+      },
+      "total": {
+        "side": "Over",
+        "line": 21.5,
+        "odds": -118
+      },
+      "totalOver": {
+        "side": "Over",
+        "line": 21.5,
+        "odds": -118
+      },
+      "totalUnder": {
+        "side": "Under",
+        "line": 21.5,
+        "odds": -112
+      },
+      "firstSetTotal": {
+        "side": "Over",
+        "line": 9.5,
+        "odds": -108
+      },
+      "firstSetTotalOver": {
+        "side": "Over",
+        "line": 9.5,
+        "odds": -108
+      },
+      "firstSetTotalUnder": {
+        "side": "Under",
+        "line": 9.5,
+        "odds": -128
+      },
+      "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge.",
+      "spreadValue": "Anastasia Potapova -3.5 (-118)",
+      "totalValue": "21.5 games: Over -118 / Under -112",
+      "firstSetTotalValue": "9.5 1st-set games: Over -108 / Under -128",
+      "spreadLean": "Anastasia Potapova spread is playable only if early return pressure shows",
+      "totalLean": "Total needs live serve data before entry",
+      "mlValue": "Anastasia Potapova -220 / Anna Kalinskaya +180",
+      "marketNote": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. ML is close to fair; derivative or live entry needs to carry the edge.",
+      "noVigNote": "Model 75.3% vs FanDuel implied 68.8% (+6.5 pts)."
+    },
+    "h2hUrl": "https://tennistonic.com/head-to-head-compare/Anastasia-Potapova-Vs-Anna-Kalinskaya/",
+    "players": [
+      {
+        "name": "Anastasia Potapova",
+        "ranking": {
+          "name": "Anastasia Potapova",
+          "rank": 30,
+          "points": 1470,
+          "age": 25,
+          "country": "Austria",
+          "tour": "WTA",
+          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/2971/anastasia-potapova",
+          "asOf": "2026-06-01"
+        },
+        "qualityName": "Anastasia Potapova",
+        "profile": "Live rank #30 | Austria | age 25 | 2026 clay 17-4, 81% | adj form 97 | hold 70%",
+        "modelPct": 75.3,
+        "weakness": {
+          "name": "Anastasia Potapova",
+          "serviceHoldPct": 70,
+          "firstServeWonPct": 68,
+          "secondServeWonPct": 44,
+          "firstServePct": 60,
+          "avgAces": 3.3,
+          "avgDoubleFaults": 4.3,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 58,
+          "weakServeMatches": 0,
+          "pressureMatches": 5,
+          "matchesWithStats": 21,
+          "weaknessScore": 9,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "second-serve points won are attackable (44%)",
+            "double-fault pressure (4.3 avg)"
+          ],
+          "strengths": [],
+          "gameFlowRead": "Anastasia Potapova can drop points quickly through second-serve points won are attackable (44%) and double-fault pressure (4.3 avg)."
+        }
+      },
+      {
+        "name": "Anna Kalinskaya",
+        "ranking": {
+          "name": "Anna Kalinskaya",
+          "rank": 24,
+          "points": 1792,
+          "age": 27,
+          "country": "Russia",
+          "tour": "WTA",
+          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+          "profileUrl": "https://www.espn.com/tennis/player/_/id/2977/anna-kalinskaya",
+          "asOf": "2026-06-01"
+        },
+        "qualityName": "Anna Kalinskaya",
+        "profile": "Live rank #24 | Russia | age 27 | 2026 clay 7-3, 70% | adj form 65 | hold 54%",
+        "modelPct": 24.7,
+        "weakness": {
+          "name": "Anna Kalinskaya",
+          "serviceHoldPct": 54,
+          "firstServeWonPct": 57,
+          "secondServeWonPct": 40,
+          "firstServePct": 70,
+          "avgAces": 1.5,
+          "avgDoubleFaults": 4.5,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 52,
+          "weakServeMatches": 0,
+          "pressureMatches": 3,
+          "matchesWithStats": 10,
+          "weaknessScore": 27,
+          "firstGameComfort": "Fragile opening-service profile",
+          "liabilities": [
+            "low recent hold rate (54%)",
+            "first-serve points won below comfort (57%)",
+            "second-serve points won are attackable (40%)",
+            "double-fault pressure (4.5 avg)"
+          ],
+          "strengths": [],
+          "gameFlowRead": "Anna Kalinskaya can drop points quickly through low recent hold rate (54%) and first-serve points won below comfort (57%)."
+        }
+      }
+    ]
+  },
+  {
     "id": "rg-w-madison-keys-diana-shnaider-2026-06-01",
     "eventId": "175540",
     "tour": "WTA",
+    "bestOf": 3,
+    "surface": "Clay",
     "title": "Madison Keys vs Diana Shnaider",
-    "start": "3:30 AM",
-    "startMinutes": 210,
+    "start": "5:30 AM",
+    "startMinutes": 330,
     "court": "Court Suzanne-Lenglen",
     "round": "Round 4",
     "pickName": "Madison Keys",
@@ -1669,9 +1675,11 @@ const rawTennisGames = [
     "id": "rg-w-maja-chwalinska-diane-parry-2026-06-01",
     "eventId": "175562",
     "tour": "WTA",
+    "bestOf": 3,
+    "surface": "Clay",
     "title": "Maja Chwalinska vs Diane Parry",
-    "start": "4:00 AM",
-    "startMinutes": 240,
+    "start": "5:50 AM",
+    "startMinutes": 350,
     "court": "Court Philippe-Chatrier",
     "round": "Round 4",
     "pickName": "Maja Chwalinska",
@@ -2215,9 +2223,11 @@ const rawTennisGames = [
     "id": "rg-m-juan-manuel-cerundolo-matteo-berrettini-2026-06-01",
     "eventId": "175756",
     "tour": "ATP",
+    "bestOf": 5,
+    "surface": "Clay",
     "title": "Juan Manuel Cerundolo vs Matteo Berrettini",
-    "start": "5:00 AM",
-    "startMinutes": 300,
+    "start": "7:40 AM",
+    "startMinutes": 460,
     "court": "Court Suzanne-Lenglen",
     "round": "Round 4",
     "pickName": "Juan Manuel Cerundolo",
@@ -2774,9 +2784,11 @@ const rawTennisGames = [
     "id": "rg-m-felix-auger-aliassime-alejandro-tabilo-2026-06-01",
     "eventId": "175746",
     "tour": "ATP",
+    "bestOf": 5,
+    "surface": "Clay",
     "title": "Felix Auger-Aliassime vs Alejandro Tabilo",
-    "start": "6:30 AM",
-    "startMinutes": 390,
+    "start": "8:10 AM",
+    "startMinutes": 490,
     "court": "Court Philippe-Chatrier",
     "round": "Round 4",
     "pickName": "Felix Auger-Aliassime",
@@ -2784,7 +2796,7 @@ const rawTennisGames = [
     "modelSource": "Tennis multimodel ensemble",
     "modelSplit": false,
     "confidence": 68,
-    "volatility": 43,
+    "volatility": 40,
     "tags": [
       "Clay",
       "Roland Garros",
@@ -2794,8 +2806,8 @@ const rawTennisGames = [
       "Men more stable",
       "Controlled volatility"
     ],
-    "reason": "Felix Auger-Aliassime has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
-    "totals": "Best O/U angle: no play without a posted total.",
+    "reason": "Recent service hold is close: Felix Auger-Aliassime 86%, Alejandro Tabilo 87%. Lean, not a chase.",
+    "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets.",
     "weaknessEdge": {
       "edgeType": "No clear weakness edge",
       "target": "Both sides",
@@ -2808,24 +2820,27 @@ const rawTennisGames = [
       "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Felix Auger-Aliassime",
-        "serviceHoldPct": null,
-        "firstServeWonPct": null,
-        "secondServeWonPct": null,
-        "firstServePct": null,
-        "avgAces": null,
-        "avgDoubleFaults": null,
+        "serviceHoldPct": 86,
+        "firstServeWonPct": 74,
+        "secondServeWonPct": 49,
+        "firstServePct": 69,
+        "avgAces": 6.9,
+        "avgDoubleFaults": 2.3,
         "avgWinners": null,
         "avgUnforcedErrors": null,
         "avgBreakPointsFaced": null,
         "returnPointsWonPct": null,
-        "servicePointsWonPct": null,
+        "servicePointsWonPct": 67,
         "weakServeMatches": 0,
         "pressureMatches": null,
-        "matchesWithStats": 0,
+        "matchesWithStats": 11,
         "weaknessScore": 0,
         "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [],
-        "strengths": [],
+        "strengths": [
+          "protects serve well (86% hold)",
+          "wins enough first-serve points (74%)"
+        ],
         "gameFlowRead": "Felix Auger-Aliassime has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
@@ -2905,9 +2920,9 @@ const rawTennisGames = [
         "line": 38.5,
         "overOdds": -112,
         "underOdds": -118,
-        "expectedGames": 38.8,
+        "expectedGames": 38.5,
         "valueGrade": "No direction",
-        "reason": "FanDuel total is 38.5; model did not clear a full-match over/under edge from hold, return, and set-shape data. hold avg 87%, BP saved 70%, BP converted 41%, first-set sample N/A, 0 recent sets.",
+        "reason": "FanDuel total is 38.5; model did not clear a full-match over/under edge from hold, return, and set-shape data. hold avg 87%, BP saved 68%, BP converted 45%, first-set sample N/A, 0 recent sets.",
         "betGrade": false
       },
       "firstSetTotal": {
@@ -2915,7 +2930,7 @@ const rawTennisGames = [
         "selection": "Over 9.5",
         "line": 9.5,
         "americanOdds": -148,
-        "expectedGames": 10.7,
+        "expectedGames": 10.6,
         "confidence": 65,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 50,
@@ -2923,7 +2938,7 @@ const rawTennisGames = [
         "evPer100": 8.9,
         "netEvPer100": 6.9,
         "valueGrade": "Actionable live watch",
-        "reason": "Expected first-set games 10.7 vs FanDuel 9.5; Over 9.5. hold avg 87%, BP saved 70%, BP converted 41%, first-set sample N/A, 0 recent sets.",
+        "reason": "Expected first-set games 10.6 vs FanDuel 9.5; Over 9.5. hold avg 87%, BP saved 68%, BP converted 45%, first-set sample N/A, 0 recent sets.",
         "betGrade": false
       },
       "setWin": [
@@ -2951,21 +2966,21 @@ const rawTennisGames = [
       "profiles": [
         {
           "name": "Felix Auger-Aliassime",
-          "holdPct": null,
-          "firstServeWonPct": null,
-          "secondServeWonPct": null,
-          "servicePointsWonPct": null,
+          "holdPct": 86,
+          "firstServeWonPct": 74,
+          "secondServeWonPct": 49,
+          "servicePointsWonPct": 67,
           "returnPointsWonPct": null,
           "returnGamesWonPct": null,
-          "breakPointsSavedPct": null,
-          "breakPointsConvertedPct": null,
-          "aces": null,
-          "doubleFaults": null,
+          "breakPointsSavedPct": 65.5,
+          "breakPointsConvertedPct": 49.2,
+          "aces": 6.9,
+          "doubleFaults": 2.3,
           "winners": null,
           "unforcedErrors": null,
           "weaknessScore": 0,
           "weakServeMatches": 0,
-          "statMatches": 0,
+          "statMatches": 11,
           "setShape": {
             "completedMatches": 0,
             "setSamples": 0,
@@ -3010,14 +3025,14 @@ const rawTennisGames = [
           }
         }
       ],
-      "expectedFirstSetGames": 10.7,
-      "expectedMatchGames": 38.8,
-      "signalStrength": 3,
-      "holdAvg": 87,
+      "expectedFirstSetGames": 10.6,
+      "expectedMatchGames": 38.5,
+      "signalStrength": 4,
+      "holdAvg": 86.5,
       "returnGamesAvg": null,
       "returnPointsAvg": null,
-      "breakPointsSavedAvg": 70.4,
-      "breakPointsConvertedAvg": 40.5,
+      "breakPointsSavedAvg": 68,
+      "breakPointsConvertedAvg": 44.9,
       "setSamples": 0,
       "firstSetSamples": 0,
       "avgFirstSetGames": null,
@@ -3025,7 +3040,7 @@ const rawTennisGames = [
       "tiebreakRate": null,
       "extendedSetRate": null,
       "shortSetRate": null,
-      "reasonCore": "hold avg 87%, BP saved 70%, BP converted 41%, first-set sample N/A, 0 recent sets"
+      "reasonCore": "hold avg 87%, BP saved 68%, BP converted 45%, first-set sample N/A, 0 recent sets"
     },
     "derivativeCase": null,
     "bettingMatrix": [
@@ -3104,12 +3119,12 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Over 9.5",
-        "expectedGames": 10.7,
+        "expectedGames": 10.6,
         "confidence": 65,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 50,
         "grade": "Actionable live watch",
-        "reason": "Expected first-set games 10.7 vs FanDuel 9.5; Over 9.5. hold avg 87%, BP saved 70%, BP converted 41%, first-set sample N/A, 0 recent sets."
+        "reason": "Expected first-set games 10.6 vs FanDuel 9.5; Over 9.5. hold avg 87%, BP saved 68%, BP converted 45%, first-set sample N/A, 0 recent sets."
       }
     ],
     "ensembleValueCase": {
@@ -3129,9 +3144,9 @@ const rawTennisGames = [
       "headline": "Felix Auger-Aliassime is priced below the model, not guaranteed to win.",
       "useCase": "Favorite price needs cleaner proof or derivative value; do not confuse win probability with bet value.",
       "bullets": [
-        "Recent hold: Felix Auger-Aliassime N/A vs Alejandro Tabilo 86.7%.",
-        "Serve events: Felix Auger-Aliassime N/A aces / 0 DFs vs Alejandro Tabilo 5.2 aces / 0 DFs.",
-        "Serve points: Felix Auger-Aliassime 1st N/A, 2nd 0% vs Alejandro Tabilo 1st 75.3%, 2nd 0%."
+        "Recent hold: Felix Auger-Aliassime 85.5% vs Alejandro Tabilo 86.7%.",
+        "Serve events: Felix Auger-Aliassime 6.9 aces / 0 DFs vs Alejandro Tabilo 5.2 aces / 0 DFs.",
+        "Serve points: Felix Auger-Aliassime 1st 74.3%, 2nd 0% vs Alejandro Tabilo 1st 75.3%, 2nd 0%."
       ],
       "risks": [
         "Alejandro Tabilo strength: protects serve well (87% hold)."
@@ -3227,7 +3242,7 @@ const rawTennisGames = [
       "totalValue": "38.5 games: Over -112 / Under -118",
       "firstSetTotalValue": "9.5 1st-set games: Over -148 / Under +106",
       "spreadLean": "Spread is number-dependent; verify first service cycle",
-      "totalLean": "Total needs live serve data before entry",
+      "totalLean": "Over lean if both players hold early",
       "mlValue": "Felix Auger-Aliassime -182 / Alejandro Tabilo +150",
       "marketNote": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. ML is close to fair; derivative or live entry needs to carry the edge.",
       "noVigNote": "Model 68% vs FanDuel implied 64.5% (+3.5 pts)."
@@ -3247,29 +3262,32 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3209/felix-auger-aliassime",
           "asOf": "2026-06-01"
         },
-        "qualityName": null,
-        "profile": "Live rank #6 | Canada | age 25",
+        "qualityName": "Felix Auger-Aliassime",
+        "profile": "Live rank #6 | Canada | age 25 | hold 86%",
         "modelPct": 68,
         "weakness": {
           "name": "Felix Auger-Aliassime",
-          "serviceHoldPct": null,
-          "firstServeWonPct": null,
-          "secondServeWonPct": null,
-          "firstServePct": null,
-          "avgAces": null,
-          "avgDoubleFaults": null,
+          "serviceHoldPct": 86,
+          "firstServeWonPct": 74,
+          "secondServeWonPct": 49,
+          "firstServePct": 69,
+          "avgAces": 6.9,
+          "avgDoubleFaults": 2.3,
           "avgWinners": null,
           "avgUnforcedErrors": null,
           "avgBreakPointsFaced": null,
           "returnPointsWonPct": null,
-          "servicePointsWonPct": null,
+          "servicePointsWonPct": 67,
           "weakServeMatches": 0,
           "pressureMatches": null,
-          "matchesWithStats": 0,
+          "matchesWithStats": 11,
           "weaknessScore": 0,
           "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [],
-          "strengths": [],
+          "strengths": [
+            "protects serve well (86% hold)",
+            "wins enough first-serve points (74%)"
+          ],
           "gameFlowRead": "Felix Auger-Aliassime has no major service weakness in the joined Flashscore sample."
         }
       },
@@ -3321,9 +3339,11 @@ const rawTennisGames = [
     "id": "rg-m-frances-tiafoe-matteo-arnaldi-2026-06-01",
     "eventId": "175751",
     "tour": "ATP",
+    "bestOf": 5,
+    "surface": "Clay",
     "title": "Frances Tiafoe vs Matteo Arnaldi",
-    "start": "7:00 AM",
-    "startMinutes": 420,
+    "start": "10:40 AM",
+    "startMinutes": 640,
     "court": "Court Suzanne-Lenglen",
     "round": "Round 4",
     "pickName": "Frances Tiafoe",
@@ -3878,9 +3898,11 @@ const rawTennisGames = [
     "id": "rg-w-aryna-sabalenka-naomi-osaka-2026-06-01",
     "eventId": "175544",
     "tour": "WTA",
+    "bestOf": 3,
+    "surface": "Clay",
     "title": "Aryna Sabalenka vs Naomi Osaka",
-    "start": "11:15 AM",
-    "startMinutes": 675,
+    "start": "11:30 AM",
+    "startMinutes": 690,
     "court": "Court Philippe-Chatrier",
     "round": "Round 4",
     "pickName": "Aryna Sabalenka",
@@ -4477,18 +4499,22 @@ const buildGame = (raw) => {
       grossProfitPct: player.grossProfitPct,
       grossPayoutMultiple: player.grossPayoutMultiple,
       centsAtRisk: player.centsAtRisk,
-      centsProfitIfWin: player.centsProfitIfWin
+      centsProfitIfWin: player.centsProfitIfWin,
+      bidPct: player.bidPct ?? null,
+      lastTradePct: player.lastTradePct ?? null,
+      openInterest: player.openInterest ?? null,
+      symbol: player.symbol ?? null
     }))
   } : null
   const predictionMarket = market ? {
     source: market.source,
     capturedAt: market.capturedAt,
-    totalVolume: null,
-    players: marketPlayers.map((player) => ({ name: player.name, probabilityPct: player.impliedPct, amount: null, americanOdds: player.odds, edgePct: player.edgePct, priceBand: player.priceBand }))
+    totalVolume: market?.totalVolume ?? null,
+    players: marketPlayers.map((player) => ({ name: player.name, probabilityPct: player.impliedPct, amount: player.openInterest ?? null, americanOdds: player.odds, edgePct: player.edgePct, priceBand: player.priceBand }))
   } : null
   const oddsMarkets = [
-    { label: 'Model fair', book: 'Tennis warehouse model', value: raw.players.map((player) => `${player.name} ${player.modelPct}%`).join(' / ') },
-    market ? { label: 'FanDuel moneyline', book: market.source, value: market.mlValue } : null,
+    { label: raw.marketOnly ? 'Prediction market' : 'Model fair', book: raw.marketOnly ? (market?.source || 'Prediction market') : 'Tennis warehouse model', value: raw.players.map((player) => `${player.name} ${player.modelPct}%`).join(' / ') },
+    market ? { label: market.source === 'Robinhood prediction market' ? 'Prediction market prices' : 'FanDuel moneyline', book: market.source, value: market.mlValue } : null,
     market?.spread ? { label: 'Game handicap', book: market.source, value: market.spreadValue } : null,
     market?.total ? { label: 'Total games', book: market.source, value: market.totalValue } : null,
     market?.firstSetTotal ? { label: '1st set total games', book: market.source, value: market.firstSetTotalValue } : null
@@ -4500,13 +4526,13 @@ const buildGame = (raw) => {
     start: raw.start,
     startMinutes: raw.startMinutes,
     title: raw.title,
-    stage: `Roland Garros ${raw.tour === 'ATP' ? 'Men' : 'Women'} | ${raw.round || 'Round 2'}`,
+    stage: raw.stage || `Roland Garros ${raw.tour === 'ATP' ? 'Men' : 'Women'} | ${raw.round || 'Round 2'}`,
     spotlight: raw.tags.includes('High confidence'),
     confidence: raw.confidence,
     volatility: raw.volatility,
     tags: raw.tags,
     matchup: players.map((player, index) => ({ side: index === 0 ? 'Player 1' : 'Player 2', name: player.name, displayName: player.name, detail: player.profile || 'Profile pending' })),
-    summary: `Our model pick: ${raw.pickName}. ${raw.reason}`,
+    summary: raw.marketOnly ? `${raw.pickName} is the current market favorite. ${raw.reason}` : `Our model pick: ${raw.pickName}. ${raw.reason}`,
     factors: [
       raw.reason,
       market?.noVigNote,
@@ -4515,9 +4541,9 @@ const buildGame = (raw) => {
       raw.totals,
       raw.modelSplit ? `Model split warning: the older score model preferred ${raw.basePickName}, but the multimodel ensemble makes ${raw.pickName} the official pick. Treat ML as pass-first unless the price and live state agree.` : null,
       'May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.',
-      market ? market.marketNote : 'No FanDuel line is stored for this match yet, so market edge is model-vs-fair only until a price is captured.'
+      raw.marketOnly ? 'Market-only Challenger row: no warehouse edge, sportsbook derivative, or service profile has been joined yet.' : market ? market.marketNote : 'No FanDuel line is stored for this match yet, so market edge is model-vs-fair only until a price is captured.'
     ].filter(Boolean),
-    lean: market?.priceAction ? `Lean ${raw.pickName}; ${market.priceAction}` : `Lean ${raw.pickName}; pass if the market price removes payout.`,
+    lean: raw.marketOnly ? `Market watch: ${raw.pickName}; do not treat as a model bet.` : market?.priceAction ? `Lean ${raw.pickName}; ${market.priceAction}` : `Lean ${raw.pickName}; pass if the market price removes payout.`,
     swing: `Risk: ${raw.tour === 'WTA' ? 'best-of-three volatility and break clusters' : 'best-of-five set extension and tiebreak variance'}.`,
     swingFactor: `Risk: ${raw.tour === 'WTA' ? 'best-of-three volatility and break clusters' : 'best-of-five set extension and tiebreak variance'}.`,
     odds: {
@@ -4527,7 +4553,7 @@ const buildGame = (raw) => {
       provider: market?.source || 'Tennis warehouse model'
     },
     tennisContext: {
-      surface: 'Clay',
+      surface: raw.surface || 'Clay',
       court: raw.court,
       h2hLeader: '',
       fatigueFlag: false,
@@ -4552,7 +4578,7 @@ const buildGame = (raw) => {
       })),
       comparisonRows: [
         { label: 'Model pick', metric: 'Fair win split', leftScore: raw.players[0].modelPct, rightScore: raw.players[1].modelPct, leftLabel: raw.players[0].name, rightLabel: raw.players[1].name, winner: raw.pickName },
-        market ? { label: 'FanDuel moneyline', metric: 'Implied price', leftScore: marketPlayers.find((player) => player.name === raw.players[0].name)?.impliedPct ?? 0, rightScore: marketPlayers.find((player) => player.name === raw.players[1].name)?.impliedPct ?? 0, leftLabel: raw.players[0].name, rightLabel: raw.players[1].name, winner: market.priceAction } : null,
+        market ? { label: market?.source === 'Robinhood prediction market' ? 'Prediction market' : 'FanDuel moneyline', metric: 'Implied price', leftScore: marketPlayers.find((player) => player.name === raw.players[0].name)?.impliedPct ?? 0, rightScore: marketPlayers.find((player) => player.name === raw.players[1].name)?.impliedPct ?? 0, leftLabel: raw.players[0].name, rightLabel: raw.players[1].name, winner: market.priceAction } : null,
         { label: 'Weakness', metric: 'Lower is cleaner', leftScore: raw.players[0].weakness?.weaknessScore ?? 0, rightScore: raw.players[1].weakness?.weaknessScore ?? 0, leftLabel: raw.players[0].name, rightLabel: raw.players[1].name, winner: raw.weaknessEdge?.edgeType || 'No clear weakness edge' },
         { label: 'Volatility', metric: 'Lower is cleaner', leftScore: raw.volatility, rightScore: 100 - raw.volatility, leftLabel: 'Risk', rightLabel: 'Stability', winner: raw.volatility <= 55 ? 'Stable enough' : 'Pass-first' }
       ].filter(Boolean),
@@ -4561,11 +4587,11 @@ const buildGame = (raw) => {
       derivativeMarketCase: raw.derivativeCase,
       valueBoard: raw.valueBoard,
       ensembleValueCase: raw.ensembleValueCase,
-      projection: { projectedWinner: raw.pickName, projectedSetLine: raw.tour === 'ATP' ? '3-1/3-2 range' : '2-0/2-1 range', setWinProjections: raw.setWinProjections, totalGames: market?.total?.line ?? null, straightSetsProbability: raw.tour === 'ATP' ? null : Math.max(48, Math.min(68, raw.confidence - 8)), upsetRisk: 100 - raw.confidence, overview: raw.weaknessEdge?.gameFlow || raw.reason, fantasy: [] },
+      projection: { projectedWinner: raw.pickName, projectedSetLine: raw.bestOf === 3 || raw.tour === 'WTA' ? '2-0/2-1 range' : '3-1/3-2 range', setWinProjections: raw.setWinProjections, totalGames: market?.total?.line ?? null, straightSetsProbability: raw.bestOf === 3 ? Math.max(48, Math.min(68, raw.confidence - 8)) : null, upsetRisk: 100 - raw.confidence, overview: raw.weaknessEdge?.gameFlow || raw.reason, fantasy: [] },
       tradePlan: { laneLabel: raw.tags.includes('High confidence') ? 'High confidence, price required' : market?.priceAction || 'Pass-first', summary: raw.weaknessEdge?.gameFlow || raw.totals, trigger: raw.weaknessEdge?.liveTrigger, headline: raw.weaknessEdge?.edgeType, exit: market?.spreadLean || raw.weaknessEdge?.spreadRead, tone: raw.tags.includes('High confidence') ? 'accent' : 'warning' },
       derivativeMarkets: [
         { label: 'ML', value: market ? `${raw.pickName} ${deskMarket?.americanLabel || ''}; ${market.noVigNote}` : 'Need market price', lean: market?.priceAction || raw.weaknessEdge?.edgeType || 'Fair only', confidence: raw.confidence, ...(raw.valueBoard?.ml || {}), tone: market?.desk?.edgePct >= 7 ? 'accent' : market?.desk?.edgePct <= -4 ? 'warning' : 'neutral', reason: market?.marketNote || raw.weaknessEdge?.gameFlow || raw.reason },
-        { label: 'Win a set', value: raw.setWinProjections?.map((entry) => entry.name + ' ' + entry.confidence + '%').join(' / ') || 'No set projection', lean: raw.setWinProjections?.find((entry) => entry.name !== raw.pickName)?.label || 'Set-win path', confidence: Math.max(...(raw.setWinProjections || []).map((entry) => Number(entry.confidence) || 0), 0), setWinRows: raw.valueBoard?.setWin || [], valueGrade: 'Needs posted price', tone: raw.tour === 'ATP' ? 'accent' : 'neutral', reason: raw.tour === 'ATP' ? 'Best-of-five gives the non-ML side more room to win a set; use this to separate upset risk from match-winner confidence.' : 'Best-of-three set-win confidence is more fragile; early service holds matter more.' },
+        { label: 'Win a set', value: raw.setWinProjections?.map((entry) => entry.name + ' ' + entry.confidence + '%').join(' / ') || 'No set projection', lean: raw.setWinProjections?.find((entry) => entry.name !== raw.pickName)?.label || 'Set-win path', confidence: Math.max(...(raw.setWinProjections || []).map((entry) => Number(entry.confidence) || 0), 0), setWinRows: raw.valueBoard?.setWin || [], valueGrade: 'Needs posted price', tone: raw.bestOf === 5 ? 'accent' : 'neutral', reason: raw.bestOf === 5 ? 'Best-of-five gives the non-ML side more room to win a set; use this to separate upset risk from match-winner confidence.' : 'Best-of-three set-win confidence is more fragile; early service holds matter more.' },
         { label: 'Spread', value: market?.spreadValue || 'Need posted game spread', lean: market?.spreadLean || raw.weaknessEdge?.spreadRead || 'Need number', confidence: Math.max(50, raw.confidence - 6), ...(raw.valueBoard?.spread || {}), tone: raw.weaknessEdge?.edgeType === 'Weakness edge' ? 'accent' : 'neutral', reason: raw.weaknessEdge?.liveTrigger || 'Wait for first service cycle.' },
         { label: 'O/U', value: market?.totalValue || 'Need posted total', lean: raw.valueBoard?.total?.selection || market?.totalLean || raw.weaknessEdge?.totalRead || raw.totals, confidence: raw.valueBoard?.total?.modelPct ?? Math.max(50, raw.confidence - 8), ...(raw.valueBoard?.total || {}), tone: raw.valueBoard?.total?.selection === 'Over' || raw.valueBoard?.total?.selection === 'Under' ? 'accent' : 'neutral', reason: raw.valueBoard?.total?.reason || raw.totals },
         { label: '1st set O/U', value: raw.valueBoard?.firstSetTotal?.line ? `Line ${raw.valueBoard.firstSetTotal.line}` : 'Need posted first-set total', lean: raw.valueBoard?.firstSetTotal?.selection || raw.valueBoard?.firstSetTotal?.lean || 'Price required', confidence: raw.valueBoard?.firstSetTotal?.confidence ?? Math.max(50, raw.confidence - 10), ...(raw.valueBoard?.firstSetTotal || {}), tone: raw.valueBoard?.firstSetTotal?.confidence >= 58 ? 'accent' : 'neutral', reason: raw.valueBoard?.firstSetTotal?.reason || 'Use expected first-set games against the posted 1st-set total.' }
@@ -4573,11 +4599,11 @@ const buildGame = (raw) => {
       marketEconomics,
       clayMatchupData: clayData,
       opponentQualityData: qualityContext,
-      researchLinks: [{ label: 'ESPN scoreboard', url: 'https://www.espn.com/tennis/scoreboard/_/date/20260601' }, { label: 'Tennistonic H2H', url: raw.h2hUrl }, ...(market?.eventUrl ? [{ label: 'FanDuel event', url: market.eventUrl }] : [])],
+      researchLinks: [{ label: 'ESPN scoreboard', url: 'https://www.espn.com/tennis/scoreboard/_/date/20260601' }, { label: 'Tennistonic H2H', url: raw.h2hUrl }, ...(market?.eventUrl ? [{ label: market.source === 'Robinhood prediction market' ? 'Robinhood market' : 'FanDuel event', url: market.eventUrl }] : [])],
       formEdgeName: raw.pickName
     },
     participants,
-    moneyline: market ? { available: true, label: 'FanDuel moneyline', provider: market.source, participants } : { available: false, label: 'Moneyline', provider: 'Tennis warehouse model', participants: [] },
+    moneyline: market ? { available: true, label: market.source === 'Robinhood prediction market' ? 'Prediction market' : 'FanDuel moneyline', provider: market.source, participants } : { available: false, label: 'Moneyline', provider: 'Tennis warehouse model', participants: [] },
     analysis: { available: true, participantId: picked.id, participant: picked, opponent, lean: `Lean ${raw.pickName}`, rationale: raw.reason, confidence: raw.confidence, volatility: raw.volatility, recommendationScore: raw.confidence - Math.round(raw.volatility / 3) + Math.round(Math.max(-8, Math.min(8, deskMarket?.edgePct ?? 0))), tier: raw.modelSplit ? 'Model split / pass ML' : raw.tags.includes('High confidence')  ? 'High confidence' : raw.tags.includes('Lean') ? 'Lean' : 'Watch', sourceLabel: raw.modelSource || 'Tennis warehouse model', modelEdge: deskMarket?.edgePct ?? 0, modelEdgeLabel: deskMarket ? `${deskMarket.edgePct > 0 ? '+' : ''}${deskMarket.edgePct} pts vs FanDuel implied` : 'Fair value only until market price is captured', marketProbability: deskMarket?.impliedPct ? deskMarket.impliedPct / 100 : null, marketProbabilityLabel: deskMarket?.impliedPct ? `${deskMarket.impliedPct}% FanDuel implied` : 'No market', inputs: [], inputsUsed: market ? 4 : 3, volatilityNotes: [] }
   }, { structuredAnalysis: true })
 }
@@ -4592,8 +4618,8 @@ export const tennisModelCartridge = {
   "entrypoint": "models/tennis/cartridges/TEN-T0/runner.mjs",
   "manifestPath": "models/tennis/cartridges/TEN-T0/manifest.json"
 }
-export const slateMeta = { title: 'June 1, 2026 Tennis Desk', date: 'June 1, 2026', isoDate: '2026-06-01', timeZone: 'America/Los_Angeles', modelCartridge: tennisModelCartridge, subtitle: 'Singles-only Roland Garros main-draw slate with weakness-edge, game-flow gates, and sportsbook/market lines where captured.', notes: ['No doubles included.', 'FanDuel ML, game handicap, and total-games lines are attached where the sportsbook board exposes a matching singles event.', 'June 1, 2026 uses live rank, clay record, opponent-adjusted recent form, and warehouse service rows where joined.'] }
+export const slateMeta = { title: 'June 1, 2026 Tennis Desk', date: 'June 1, 2026', isoDate: '2026-06-01', timeZone: 'America/Los_Angeles', modelCartridge: tennisModelCartridge, subtitle: 'Roland Garros senior singles plus Robinhood ATP Challenger prediction-market inventory; model edges only apply where warehouse context is joined.', notes: ['No doubles included.', 'FanDuel ML, game handicap, and total-games lines are attached where the sportsbook board exposes a matching singles event.', 'June 1, 2026 uses live rank, clay record, opponent-adjusted recent form, and warehouse service rows where joined.'] }
 export const filters = ['All', 'Tennis']
-export const oddsMeta = { provider: 'FanDuel Sportsbook + Tennis warehouse model', snapshot: 'June 1, 2026 Roland Garros desk', note: 'FanDuel lines are stored for priced matches; very expensive favorites are marked as low-payout or pass-first instead of automatic bets.' }
-export const sources = [{ label: 'ESPN tennis scoreboard', url: 'https://www.espn.com/tennis/scoreboard/_/date/20260601' }, { label: 'Live Tennis rankings warehouse', url: 'https://live-tennis.eu/' }, { label: 'FanDuel sportsbook tennis', url: 'https://sportsbook.fanduel.com/tennis' }]
+export const oddsMeta = { provider: 'FanDuel Sportsbook + Robinhood prediction markets + Tennis warehouse model', snapshot: 'June 1, 2026 Roland Garros desk', note: 'FanDuel lines are stored for priced matches; very expensive favorites are marked as low-payout or pass-first instead of automatic bets.' }
+export const sources = [{ label: 'ESPN tennis scoreboard', url: 'https://www.espn.com/tennis/scoreboard/_/date/20260601' }, { label: 'Live Tennis rankings warehouse', url: 'https://live-tennis.eu/' }, { label: 'FanDuel sportsbook tennis', url: 'https://sportsbook.fanduel.com/tennis' }, { label: 'Robinhood tennis prediction markets', url: 'https://robinhood.com/us/en/prediction-markets/tennis/' }]
 export const games = matches.sort((left, right) => left.startMinutes - right.startMinutes || left.title.localeCompare(right.title))

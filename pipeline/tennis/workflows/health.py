@@ -56,6 +56,26 @@ def scalar(conn: sqlite3.Connection, sql: str, params: tuple[Any, ...]) -> int:
     return int(conn.execute(sql, params).fetchone()[0] or 0)
 
 
+def core_model_match_count(conn: sqlite3.Connection, date: str) -> int:
+    """Rows where the site is expected to have full tennis model depth.
+
+    Robinhood Challenger markets can be published as market-only rows. They
+    should still have prices and value-book placeholders, but they should not
+    make the whole slate fail because SofaScore/replay/venue mappings are not
+    joined yet.
+    """
+    return scalar(
+        conn,
+        """
+        select count(*)
+        from tennis_matches
+        where slate_date = ?
+          and match_id like 'rg-%'
+        """,
+        (date,),
+    )
+
+
 def resolve_settled(date: str, explicit: bool | None) -> bool:
     if explicit is not None:
         return explicit
@@ -183,7 +203,13 @@ def check_rankings(conn: sqlite3.Connection, date: str) -> dict[str, Any]:
     }
 
 
-def check_sofascore(conn: sqlite3.Connection, date: str, match_count: int, settled: bool) -> dict[str, Any]:
+def check_sofascore(
+    conn: sqlite3.Connection,
+    date: str,
+    match_count: int,
+    settled: bool,
+    full_depth_match_count: int,
+) -> dict[str, Any]:
     mapped_matches = scalar(
         conn,
         "select count(*) from tennis_sofascore_matches where slate_date = ? and board_match_id is not null",
@@ -219,8 +245,9 @@ def check_sofascore(conn: sqlite3.Connection, date: str, match_count: int, settl
         """,
         (date,),
     )
-    mapping_ok = match_count > 0 and mapped_matches >= match_count
-    pregame_player_pages_ok = match_count > 0 and player_page_rows >= match_count * 2
+    required_matches = full_depth_match_count or match_count
+    mapping_ok = required_matches > 0 and mapped_matches >= required_matches
+    pregame_player_pages_ok = required_matches > 0 and player_page_rows >= required_matches * 2
     settled_ok = not settled or (player_stat_rows > 0 and replay_games > 0 and replay_points > 0)
     pregame_ok = mapping_ok or pregame_player_pages_ok
     ok = pregame_ok and settled_ok
@@ -228,6 +255,9 @@ def check_sofascore(conn: sqlite3.Connection, date: str, match_count: int, settl
         "ok": ok,
         "mappedMatches": mapped_matches,
         "matchCount": match_count,
+        "fullDepthMatchCount": full_depth_match_count,
+        "marketOnlyMatchCount": max(match_count - full_depth_match_count, 0),
+        "requiredPregamePlayerPages": required_matches * 2,
         "playerStatRows": player_stat_rows,
         "playerPageRows": player_page_rows,
         "replayGames": replay_games,
@@ -237,18 +267,31 @@ def check_sofascore(conn: sqlite3.Connection, date: str, match_count: int, settl
     }
 
 
-def check_kalshi(conn: sqlite3.Connection, date: str, match_count: int, settled: bool) -> dict[str, Any]:
+def check_kalshi(
+    conn: sqlite3.Connection,
+    date: str,
+    match_count: int,
+    settled: bool,
+    full_depth_match_count: int,
+) -> dict[str, Any]:
     match_markets = scalar(conn, "select count(*) from tennis_kalshi_match_markets where slate_date = ?", (date,))
     candles = scalar(conn, "select count(*) from tennis_kalshi_market_candles where slate_date = ?", (date,))
     trade_features = scalar(conn, "select count(*) from tennis_kalshi_intramatch_trade_features where slate_date = ?", (date,))
     prediction_market_rows = scalar(conn, "select count(*) from tennis_prediction_market_snapshots where slate_date = ?", (date,))
-    markets_ok = match_count > 0 and match_markets >= match_count and prediction_market_rows >= match_count * 2
+    required_kalshi_rows = (full_depth_match_count or match_count) * 2
+    markets_ok = (
+        match_count > 0
+        and prediction_market_rows >= match_count * 2
+        and (match_markets >= required_kalshi_rows or prediction_market_rows >= match_count * 2)
+    )
     settled_ok = not settled or (candles > 0 and trade_features > 0)
     ok = markets_ok and settled_ok
     return {
         "ok": ok,
         "matchMarkets": match_markets,
         "predictionMarketRows": prediction_market_rows,
+        "fullDepthMatchCount": full_depth_match_count,
+        "requiredKalshiRows": required_kalshi_rows,
         "candles": candles,
         "tradeFeatures": trade_features,
         "mode": "settled" if settled else "pregame",
@@ -256,7 +299,13 @@ def check_kalshi(conn: sqlite3.Connection, date: str, match_count: int, settled:
     }
 
 
-def check_weather(conn: sqlite3.Connection, date: str, match_count: int, settled: bool) -> dict[str, Any]:
+def check_weather(
+    conn: sqlite3.Connection,
+    date: str,
+    match_count: int,
+    settled: bool,
+    full_depth_match_count: int,
+) -> dict[str, Any]:
     if not table_exists(conn, "tennis_weather_hourly") or not table_exists(conn, "tennis_match_weather"):
         return {
             "ok": False,
@@ -280,12 +329,36 @@ def check_weather(conn: sqlite3.Connection, date: str, match_count: int, settled
         """,
         (date,),
     )
-    ok = hourly_rows > 0 and match_count > 0 and match_weather_rows >= match_count and complete_rows >= match_count
+    full_depth_complete_rows = scalar(
+        conn,
+        """
+        select count(*)
+        from tennis_match_weather weather
+        join tennis_matches matches on matches.match_id = weather.match_id
+        where weather.slate_date = ?
+          and matches.match_id like 'rg-%'
+          and weather.hourly_rows > 0
+          and weather.avg_temperature_c is not null
+          and weather.start_ts is not null
+          and weather.end_ts is not null
+        """,
+        (date,),
+    )
+    required_complete_rows = full_depth_match_count or match_count
+    ok = (
+        hourly_rows > 0
+        and match_count > 0
+        and match_weather_rows >= match_count
+        and full_depth_complete_rows >= required_complete_rows
+    )
     return {
         "ok": ok,
         "hourlyRows": hourly_rows,
         "matchWeatherRows": match_weather_rows,
         "completeRows": complete_rows,
+        "fullDepthCompleteRows": full_depth_complete_rows,
+        "fullDepthMatchCount": full_depth_match_count,
+        "marketOnlyIncompleteRows": max(match_count - complete_rows, 0),
         "matchCount": match_count,
         "mode": "settled" if settled else "pregame",
         "error": None if ok else "weather coverage is incomplete for this slate",
@@ -463,10 +536,11 @@ def run_health(date: str, db_path: Path = DEFAULT_DB, settled: bool | None = Non
     with connect(db_path) as conn:
         checks["warehouse"] = check_warehouse(conn, date)
         match_count = int(checks["warehouse"].get("matchCount") or 0)
+        full_depth_match_count = core_model_match_count(conn, date)
         checks["rankings"] = check_rankings(conn, date)
-        checks["sofascore"] = check_sofascore(conn, date, match_count, is_settled)
-        checks["kalshi"] = check_kalshi(conn, date, match_count, is_settled)
-        checks["weather"] = check_weather(conn, date, match_count, is_settled)
+        checks["sofascore"] = check_sofascore(conn, date, match_count, is_settled, full_depth_match_count)
+        checks["kalshi"] = check_kalshi(conn, date, match_count, is_settled, full_depth_match_count)
+        checks["weather"] = check_weather(conn, date, match_count, is_settled, full_depth_match_count)
         checks["resultsTraining"] = check_results_and_training(conn, date, match_count, is_settled)
     checks["published"] = check_published(date)
     checks["valueBooks"] = check_value_books(date, is_settled)

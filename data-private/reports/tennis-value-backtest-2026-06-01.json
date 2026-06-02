@@ -13,6 +13,7 @@
       "evPer100": 5.4,
       "valueGrade": "Favorite price needs better proof",
       "betGrade": false,
+      "actionable": true,
       "raw": {
         "label": "ML",
         "value": "Felix Auger-Aliassime -182; Model 68% vs FanDuel implied 64.5% (+3.5 pts).",
@@ -33,14 +34,14 @@
         "tone": "neutral",
         "reason": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. ML is close to fair; derivative or live entry needs to carry the edge."
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
-      "homeSets": 0,
+      "winner": "Felix Auger-Aliassime",
+      "homeGames": 19,
+      "awayGames": 9,
+      "homeSets": 3,
       "awaySets": 0,
-      "graded": false,
-      "hit": null,
-      "pnlPer100": null
+      "graded": true,
+      "hit": true,
+      "pnlPer100": 54.9
     },
     {
       "matchId": "rg-m-felix-auger-aliassime-alejandro-tabilo-2026-06-01",
@@ -54,6 +55,7 @@
       "evPer100": 18.4,
       "valueGrade": "Watch only",
       "betGrade": false,
+      "actionable": true,
       "raw": {
         "label": "Spread",
         "value": "Felix Auger-Aliassime -3.5 (-110)",
@@ -75,14 +77,14 @@
         "tone": "neutral",
         "reason": "Wait for a visible service-pressure split before entering."
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
-      "homeSets": 0,
+      "winner": "Felix Auger-Aliassime",
+      "homeGames": 19,
+      "awayGames": 9,
+      "homeSets": 3,
       "awaySets": 0,
-      "graded": false,
-      "hit": null,
-      "pnlPer100": null
+      "graded": true,
+      "hit": true,
+      "pnlPer100": 90.9
     },
     {
       "matchId": "rg-m-felix-auger-aliassime-alejandro-tabilo-2026-06-01",
@@ -96,6 +98,7 @@
       "evPer100": 10.8,
       "valueGrade": "No direction",
       "betGrade": false,
+      "actionable": false,
       "raw": {
         "label": "O/U",
         "value": "38.5 games: Over -112 / Under -118",
@@ -106,16 +109,16 @@
         "line": 38.5,
         "overOdds": -112,
         "underOdds": -118,
-        "expectedGames": 38.8,
+        "expectedGames": 38.5,
         "valueGrade": "No direction",
-        "reason": "FanDuel total is 38.5; model did not clear a full-match over/under edge from hold, return, and set-shape data. hold avg 87%, BP saved 70%, BP converted 41%, first-set sample N/A, 0 recent sets.",
+        "reason": "FanDuel total is 38.5; model did not clear a full-match over/under edge from hold, return, and set-shape data. hold avg 87%, BP saved 68%, BP converted 45%, first-set sample N/A, 0 recent sets.",
         "betGrade": false,
         "tone": "neutral"
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
-      "homeSets": 0,
+      "winner": "Felix Auger-Aliassime",
+      "homeGames": 19,
+      "awayGames": 9,
+      "homeSets": 3,
       "awaySets": 0,
       "graded": false,
       "hit": null,
@@ -133,6 +136,7 @@
       "evPer100": -18.4,
       "valueGrade": "Favorite tax trap",
       "betGrade": false,
+      "actionable": true,
       "raw": {
         "label": "ML",
         "value": "Flavio Cobolli -820; Model 72.7% vs FanDuel implied 89.1% (-16.4 pts).",
@@ -153,14 +157,14 @@
         "tone": "warning",
         "reason": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. ML payout is tiny; use spread/total or pass unless the number moves."
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
-      "homeSets": 0,
-      "awaySets": 0,
-      "graded": false,
-      "hit": null,
-      "pnlPer100": null
+      "winner": "Flavio Cobolli",
+      "homeGames": 25,
+      "awayGames": 18,
+      "homeSets": 3,
+      "awaySets": 1,
+      "graded": true,
+      "hit": true,
+      "pnlPer100": 12.2
     },
     {
       "matchId": "rg-m-flavio-cobolli-zachary-svajda-2026-06-01",
@@ -174,6 +178,7 @@
       "evPer100": 20.3,
       "valueGrade": "Watch only",
       "betGrade": false,
+      "actionable": true,
       "raw": {
         "label": "Spread",
         "value": "Flavio Cobolli -7.5 (-110)",
@@ -195,14 +200,14 @@
         "tone": "neutral",
         "reason": "Wait for a visible service-pressure split before entering."
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
-      "homeSets": 0,
-      "awaySets": 0,
-      "graded": false,
-      "hit": null,
-      "pnlPer100": null
+      "winner": "Flavio Cobolli",
+      "homeGames": 25,
+      "awayGames": 18,
+      "homeSets": 3,
+      "awaySets": 1,
+      "graded": true,
+      "hit": false,
+      "pnlPer100": -100.0
     },
     {
       "matchId": "rg-m-flavio-cobolli-zachary-svajda-2026-06-01",
@@ -216,6 +221,7 @@
       "evPer100": 19.5,
       "valueGrade": "No direction",
       "betGrade": false,
+      "actionable": false,
       "raw": {
         "label": "O/U",
         "value": "33.5 games: Over -112 / Under -118",
@@ -232,11 +238,11 @@
         "betGrade": false,
         "tone": "neutral"
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
-      "homeSets": 0,
-      "awaySets": 0,
+      "winner": "Flavio Cobolli",
+      "homeGames": 25,
+      "awayGames": 18,
+      "homeSets": 3,
+      "awaySets": 1,
       "graded": false,
       "hit": null,
       "pnlPer100": null
@@ -253,6 +259,7 @@
       "evPer100": 29.2,
       "valueGrade": "Favorite price needs better proof",
       "betGrade": false,
+      "actionable": true,
       "raw": {
         "label": "ML",
         "value": "Frances Tiafoe -108; Model 67.1% vs FanDuel implied 51.9% (+15.2 pts).",
@@ -273,14 +280,14 @@
         "tone": "accent",
         "reason": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. Model is meaningfully above FanDuel implied price."
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
-      "homeSets": 0,
-      "awaySets": 0,
-      "graded": false,
-      "hit": null,
-      "pnlPer100": null
+      "winner": "Matteo Arnaldi",
+      "homeGames": 29,
+      "awayGames": 29,
+      "homeSets": 2,
+      "awaySets": 3,
+      "graded": true,
+      "hit": false,
+      "pnlPer100": -100.0
     },
     {
       "matchId": "rg-m-frances-tiafoe-matteo-arnaldi-2026-06-01",
@@ -294,6 +301,7 @@
       "evPer100": 11.8,
       "valueGrade": "Watch only",
       "betGrade": false,
+      "actionable": true,
       "raw": {
         "label": "Spread",
         "value": "Frances Tiafoe +0.5 (-120)",
@@ -315,14 +323,14 @@
         "tone": "neutral",
         "reason": "Wait for a visible service-pressure split before entering."
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
-      "homeSets": 0,
-      "awaySets": 0,
-      "graded": false,
-      "hit": null,
-      "pnlPer100": null
+      "winner": "Matteo Arnaldi",
+      "homeGames": 29,
+      "awayGames": 29,
+      "homeSets": 2,
+      "awaySets": 3,
+      "graded": true,
+      "hit": true,
+      "pnlPer100": 83.3
     },
     {
       "matchId": "rg-m-frances-tiafoe-matteo-arnaldi-2026-06-01",
@@ -336,6 +344,7 @@
       "evPer100": 21.9,
       "valueGrade": "Watch only",
       "betGrade": false,
+      "actionable": true,
       "raw": {
         "label": "O/U",
         "value": "39.5 games: Over -112 / Under -118",
@@ -358,14 +367,14 @@
         "betGrade": false,
         "tone": "accent"
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
-      "homeSets": 0,
-      "awaySets": 0,
-      "graded": false,
-      "hit": null,
-      "pnlPer100": null
+      "winner": "Matteo Arnaldi",
+      "homeGames": 29,
+      "awayGames": 29,
+      "homeSets": 2,
+      "awaySets": 3,
+      "graded": true,
+      "hit": false,
+      "pnlPer100": -100.0
     },
     {
       "matchId": "rg-m-juan-manuel-cerundolo-matteo-berrettini-2026-06-01",
@@ -379,6 +388,7 @@
       "evPer100": 55,
       "valueGrade": "Model probability outside validated lane",
       "betGrade": false,
+      "actionable": true,
       "raw": {
         "label": "ML",
         "value": "Juan Manuel Cerundolo +130; Model 67.4% vs FanDuel implied 43.5% (+23.9 pts).",
@@ -399,14 +409,14 @@
         "tone": "accent",
         "reason": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. Model is meaningfully above FanDuel implied price."
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
+      "winner": "Matteo Berrettini",
+      "homeGames": 15,
+      "awayGames": 20,
       "homeSets": 0,
-      "awaySets": 0,
-      "graded": false,
-      "hit": null,
-      "pnlPer100": null
+      "awaySets": 3,
+      "graded": true,
+      "hit": false,
+      "pnlPer100": -100.0
     },
     {
       "matchId": "rg-m-juan-manuel-cerundolo-matteo-berrettini-2026-06-01",
@@ -420,6 +430,7 @@
       "evPer100": 13.6,
       "valueGrade": "Watch only",
       "betGrade": false,
+      "actionable": true,
       "raw": {
         "label": "Spread",
         "value": "Juan Manuel Cerundolo +2.5 (-116)",
@@ -441,14 +452,14 @@
         "tone": "neutral",
         "reason": "Wait for a visible service-pressure split before entering."
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
+      "winner": "Matteo Berrettini",
+      "homeGames": 15,
+      "awayGames": 20,
       "homeSets": 0,
-      "awaySets": 0,
-      "graded": false,
-      "hit": null,
-      "pnlPer100": null
+      "awaySets": 3,
+      "graded": true,
+      "hit": false,
+      "pnlPer100": -100.0
     },
     {
       "matchId": "rg-m-juan-manuel-cerundolo-matteo-berrettini-2026-06-01",
@@ -462,6 +473,7 @@
       "evPer100": 24.9,
       "valueGrade": "Watch only",
       "betGrade": false,
+      "actionable": true,
       "raw": {
         "label": "O/U",
         "value": "38.5 games: Over -118 / Under -112",
@@ -484,14 +496,14 @@
         "betGrade": false,
         "tone": "accent"
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
+      "winner": "Matteo Berrettini",
+      "homeGames": 15,
+      "awayGames": 20,
       "homeSets": 0,
-      "awaySets": 0,
-      "graded": false,
-      "hit": null,
-      "pnlPer100": null
+      "awaySets": 3,
+      "graded": true,
+      "hit": true,
+      "pnlPer100": 89.3
     },
     {
       "matchId": "rg-w-anastasia-potapova-anna-kalinskaya-2026-06-01",
@@ -505,6 +517,7 @@
       "evPer100": 9.5,
       "valueGrade": "Favorite price needs better proof",
       "betGrade": false,
+      "actionable": true,
       "raw": {
         "label": "ML",
         "value": "Anastasia Potapova -220; Model 75.3% vs FanDuel implied 68.8% (+6.5 pts).",
@@ -525,14 +538,14 @@
         "tone": "neutral",
         "reason": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. ML is close to fair; derivative or live entry needs to carry the edge."
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
-      "homeSets": 0,
-      "awaySets": 0,
-      "graded": false,
-      "hit": null,
-      "pnlPer100": null
+      "winner": "Anna Kalinskaya",
+      "homeGames": 16,
+      "awayGames": 15,
+      "homeSets": 1,
+      "awaySets": 2,
+      "graded": true,
+      "hit": false,
+      "pnlPer100": -100.0
     },
     {
       "matchId": "rg-w-anastasia-potapova-anna-kalinskaya-2026-06-01",
@@ -546,6 +559,7 @@
       "evPer100": 34.9,
       "valueGrade": "Watch only",
       "betGrade": false,
+      "actionable": true,
       "raw": {
         "label": "Spread",
         "value": "Anastasia Potapova -3.5 (-118)",
@@ -567,14 +581,14 @@
         "tone": "accent",
         "reason": "Look for Anna Kalinskaya facing break points or second-serve pressure before 3-3."
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
-      "homeSets": 0,
-      "awaySets": 0,
-      "graded": false,
-      "hit": null,
-      "pnlPer100": null
+      "winner": "Anna Kalinskaya",
+      "homeGames": 16,
+      "awayGames": 15,
+      "homeSets": 1,
+      "awaySets": 2,
+      "graded": true,
+      "hit": false,
+      "pnlPer100": -100.0
     },
     {
       "matchId": "rg-w-anastasia-potapova-anna-kalinskaya-2026-06-01",
@@ -588,6 +602,7 @@
       "evPer100": 27.4,
       "valueGrade": "No direction",
       "betGrade": false,
+      "actionable": false,
       "raw": {
         "label": "O/U",
         "value": "21.5 games: Over -118 / Under -112",
@@ -604,11 +619,11 @@
         "betGrade": false,
         "tone": "neutral"
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
-      "homeSets": 0,
-      "awaySets": 0,
+      "winner": "Anna Kalinskaya",
+      "homeGames": 16,
+      "awayGames": 15,
+      "homeSets": 1,
+      "awaySets": 2,
       "graded": false,
       "hit": null,
       "pnlPer100": null
@@ -625,6 +640,7 @@
       "evPer100": -4.4,
       "valueGrade": "Favorite tax trap",
       "betGrade": false,
+      "actionable": true,
       "raw": {
         "label": "ML",
         "value": "Aryna Sabalenka -480; Model 79.1% vs FanDuel implied 82.8% (-3.7 pts).",
@@ -645,14 +661,14 @@
         "tone": "neutral",
         "reason": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. ML payout is tiny; use spread/total or pass unless the number moves."
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
-      "homeSets": 0,
+      "winner": "Aryna Sabalenka",
+      "homeGames": 13,
+      "awayGames": 8,
+      "homeSets": 2,
       "awaySets": 0,
-      "graded": false,
-      "hit": null,
-      "pnlPer100": null
+      "graded": true,
+      "hit": true,
+      "pnlPer100": 20.8
     },
     {
       "matchId": "rg-w-aryna-sabalenka-naomi-osaka-2026-06-01",
@@ -666,6 +682,7 @@
       "evPer100": 27.5,
       "valueGrade": "Watch only",
       "betGrade": false,
+      "actionable": true,
       "raw": {
         "label": "Spread",
         "value": "Aryna Sabalenka -4.5 (-134)",
@@ -687,14 +704,14 @@
         "tone": "neutral",
         "reason": "Wait for a visible service-pressure split before entering."
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
-      "homeSets": 0,
+      "winner": "Aryna Sabalenka",
+      "homeGames": 13,
+      "awayGames": 8,
+      "homeSets": 2,
       "awaySets": 0,
-      "graded": false,
-      "hit": null,
-      "pnlPer100": null
+      "graded": true,
+      "hit": true,
+      "pnlPer100": 74.6
     },
     {
       "matchId": "rg-w-aryna-sabalenka-naomi-osaka-2026-06-01",
@@ -708,6 +725,7 @@
       "evPer100": 17.4,
       "valueGrade": "Watch only",
       "betGrade": false,
+      "actionable": true,
       "raw": {
         "label": "O/U",
         "value": "20.5 games: Over -112 / Under -118",
@@ -730,14 +748,14 @@
         "betGrade": false,
         "tone": "accent"
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
-      "homeSets": 0,
+      "winner": "Aryna Sabalenka",
+      "homeGames": 13,
+      "awayGames": 8,
+      "homeSets": 2,
       "awaySets": 0,
-      "graded": false,
-      "hit": null,
-      "pnlPer100": null
+      "graded": true,
+      "hit": false,
+      "pnlPer100": -100.0
     },
     {
       "matchId": "rg-w-madison-keys-diana-shnaider-2026-06-01",
@@ -751,6 +769,7 @@
       "evPer100": 8.8,
       "valueGrade": "Favorite price needs better proof",
       "betGrade": false,
+      "actionable": true,
       "raw": {
         "label": "ML",
         "value": "Madison Keys -156; Model 66.3% vs FanDuel implied 60.9% (+5.4 pts).",
@@ -771,14 +790,14 @@
         "tone": "neutral",
         "reason": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. ML is close to fair; derivative or live entry needs to carry the edge."
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
-      "homeSets": 0,
-      "awaySets": 0,
-      "graded": false,
-      "hit": null,
-      "pnlPer100": null
+      "winner": "Diana Shnaider",
+      "homeGames": 9,
+      "awayGames": 15,
+      "homeSets": 1,
+      "awaySets": 2,
+      "graded": true,
+      "hit": false,
+      "pnlPer100": -100.0
     },
     {
       "matchId": "rg-w-madison-keys-diana-shnaider-2026-06-01",
@@ -792,6 +811,7 @@
       "evPer100": 21.1,
       "valueGrade": "Watch only",
       "betGrade": false,
+      "actionable": true,
       "raw": {
         "label": "Spread",
         "value": "Madison Keys -2.5 (-112)",
@@ -813,14 +833,14 @@
         "tone": "accent",
         "reason": "Look for Diana Shnaider facing break points or second-serve pressure before 3-3."
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
-      "homeSets": 0,
-      "awaySets": 0,
-      "graded": false,
-      "hit": null,
-      "pnlPer100": null
+      "winner": "Diana Shnaider",
+      "homeGames": 9,
+      "awayGames": 15,
+      "homeSets": 1,
+      "awaySets": 2,
+      "graded": true,
+      "hit": false,
+      "pnlPer100": -100.0
     },
     {
       "matchId": "rg-w-madison-keys-diana-shnaider-2026-06-01",
@@ -834,6 +854,7 @@
       "evPer100": 12.3,
       "valueGrade": "No direction",
       "betGrade": false,
+      "actionable": false,
       "raw": {
         "label": "O/U",
         "value": "21.5 games: Over -126 / Under -108",
@@ -850,11 +871,11 @@
         "betGrade": false,
         "tone": "neutral"
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
-      "homeSets": 0,
-      "awaySets": 0,
+      "winner": "Diana Shnaider",
+      "homeGames": 9,
+      "awayGames": 15,
+      "homeSets": 1,
+      "awaySets": 2,
       "graded": false,
       "hit": null,
       "pnlPer100": null
@@ -871,6 +892,7 @@
       "evPer100": 10.7,
       "valueGrade": "Favorite price needs better proof",
       "betGrade": false,
+      "actionable": true,
       "raw": {
         "label": "ML",
         "value": "Maja Chwalinska -205; Model 74.4% vs FanDuel implied 67.2% (+7.2 pts).",
@@ -891,14 +913,14 @@
         "tone": "accent",
         "reason": "FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. Model is meaningfully above FanDuel implied price."
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
-      "homeSets": 0,
+      "winner": "Maja Chwalinska",
+      "homeGames": 12,
+      "awayGames": 5,
+      "homeSets": 2,
       "awaySets": 0,
-      "graded": false,
-      "hit": null,
-      "pnlPer100": null
+      "graded": true,
+      "hit": true,
+      "pnlPer100": 48.8
     },
     {
       "matchId": "rg-w-maja-chwalinska-diane-parry-2026-06-01",
@@ -912,6 +934,7 @@
       "evPer100": 25.6,
       "valueGrade": "Watch only",
       "betGrade": false,
+      "actionable": true,
       "raw": {
         "label": "Spread",
         "value": "Maja Chwalinska -3.5 (-118)",
@@ -933,14 +956,14 @@
         "tone": "neutral",
         "reason": "Wait for a visible service-pressure split before entering."
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
-      "homeSets": 0,
+      "winner": "Maja Chwalinska",
+      "homeGames": 12,
+      "awayGames": 5,
+      "homeSets": 2,
       "awaySets": 0,
-      "graded": false,
-      "hit": null,
-      "pnlPer100": null
+      "graded": true,
+      "hit": true,
+      "pnlPer100": 84.7
     },
     {
       "matchId": "rg-w-maja-chwalinska-diane-parry-2026-06-01",
@@ -954,6 +977,7 @@
       "evPer100": 21.7,
       "valueGrade": "No direction",
       "betGrade": false,
+      "actionable": false,
       "raw": {
         "label": "O/U",
         "value": "21.5 games: Over -110 / Under -120",
@@ -970,10 +994,10 @@
         "betGrade": false,
         "tone": "neutral"
       },
-      "winner": null,
-      "homeGames": null,
-      "awayGames": null,
-      "homeSets": 0,
+      "winner": "Maja Chwalinska",
+      "homeGames": 12,
+      "awayGames": 5,
+      "homeSets": 2,
       "awaySets": 0,
       "graded": false,
       "hit": null,
@@ -983,27 +1007,27 @@
   "summary": {
     "ML": {
       "rows": 8,
-      "graded": 0,
-      "hits": 0,
-      "hitRate": null,
-      "pnlPer100": 0,
-      "roi": null
+      "graded": 8,
+      "hits": 4,
+      "hitRate": 0.5,
+      "pnlPer100": -263.3,
+      "roi": -0.329
     },
     "Spread": {
       "rows": 8,
-      "graded": 0,
-      "hits": 0,
-      "hitRate": null,
-      "pnlPer100": 0,
-      "roi": null
+      "graded": 8,
+      "hits": 4,
+      "hitRate": 0.5,
+      "pnlPer100": -66.5,
+      "roi": -0.083
     },
     "O/U": {
       "rows": 8,
-      "graded": 0,
-      "hits": 0,
-      "hitRate": null,
-      "pnlPer100": 0,
-      "roi": null
+      "graded": 3,
+      "hits": 1,
+      "hitRate": 0.333,
+      "pnlPer100": -110.7,
+      "roi": -0.369
     }
   }
 }

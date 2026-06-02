@@ -1289,9 +1289,9 @@
       "court": "Court Philippe-Chatrier",
       "start": "2:00 AM",
       "pick": "Mirra Andreeva",
-      "confidence": 54,
+      "confidence": 64.8,
       "volatility": 54,
-      "tier": "Watch",
+      "tier": "Lean",
       "rationale": "Mirra Andreeva has the recent service-hold edge 81% to 75%. Mirra Andreeva grades 5 points better on opponent-adjusted recent form. Lean, not a chase.",
       "weaknessEdge": {
         "edgeType": "No clear weakness edge",
@@ -1365,14 +1365,14 @@
           "selection": "Mirra Andreeva",
           "line": null,
           "americanOdds": -196,
-          "modelPct": 54,
+          "modelPct": 64.8,
           "impliedPct": 66.2,
-          "edgePct": -12.2,
-          "evPer100": -18.4,
-          "netEvPer100": -20.4,
-          "grade": "Negative EV",
+          "edgePct": -1.4,
+          "evPer100": -2.1,
+          "netEvPer100": -4.1,
+          "grade": "Near fair",
           "issue": "Favorite price needs better proof",
-          "reason": "FanDuel price is richer than the model; pass ML unless live state improves."
+          "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
         },
         {
           "marketType": "Game spread",
@@ -1380,15 +1380,15 @@
           "selection": "Mirra Andreeva",
           "line": -3.5,
           "americanOdds": -112,
-          "modelPct": 48,
+          "modelPct": 59,
           "impliedPct": 52.8,
-          "edgePct": -4.8,
-          "evPer100": -9.1,
-          "netEvPer100": -11.1,
+          "edgePct": 6.2,
+          "evPer100": 11.7,
+          "netEvPer100": 9.7,
           "expectedGames": null,
           "edgeGames": null,
-          "confidence": 48,
-          "grade": "Negative EV",
+          "confidence": 59,
+          "grade": "Watch only",
           "reason": "Spread is number-dependent; verify first service cycle"
         },
         {
@@ -1411,22 +1411,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Mirra Andreeva 72% / Sorana Cirstea 62%",
+          "selection": "Mirra Andreeva 77% / Sorana Cirstea 51%",
           "rows": [
             {
               "name": "Mirra Andreeva",
-              "confidence": 72,
-              "modelPct": 54,
+              "confidence": 77,
+              "modelPct": 64.8,
               "label": "Live to win a set"
             },
             {
               "name": "Sorana Cirstea",
-              "confidence": 62,
-              "modelPct": 46,
-              "label": "Needs early hold pressure"
+              "confidence": 51,
+              "modelPct": 35.2,
+              "label": "Thin set-win path"
             }
           ],
-          "confidence": 72,
+          "confidence": 77,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -1434,12 +1434,12 @@
           "marketType": "First-set total games",
           "label": "1st set O/U",
           "selection": "Under 9.5",
-          "expectedGames": 8.2,
-          "confidence": 71,
+          "expectedGames": 8.1,
+          "confidence": 72,
           "tiebreakRisk": 18,
           "earlyBreakRisk": 61,
           "grade": "Actionable live watch",
-          "reason": "Expected first-set games 8.2 vs FanDuel 9.5; Under 9.5. hold avg 78%, return games won 54%, first-set sample 8.5g, 36 recent sets."
+          "reason": "Expected first-set games 8.1 vs FanDuel 9.5; Under 9.5. hold avg 78%, return games won 54%, first-set sample 8.5g, 36 recent sets."
         }
       ],
       "market": {
@@ -1450,8 +1450,8 @@
             "name": "Mirra Andreeva",
             "americanOdds": -196,
             "impliedPct": 66.2,
-            "modelPct": 54,
-            "edgePct": -12.2,
+            "modelPct": 64.8,
+            "edgePct": -1.4,
             "grossProfitPct": 51,
             "priceBand": "Moderate favorite"
           },
@@ -1459,15 +1459,15 @@
             "name": "Sorana Cirstea",
             "americanOdds": 162,
             "impliedPct": 38.2,
-            "modelPct": 46,
-            "edgePct": 7.8,
+            "modelPct": 35.2,
+            "edgePct": -3,
             "grossProfitPct": 162,
             "priceBand": "Underdog"
           }
         ],
         "spread": "Mirra Andreeva -3.5 (-112)",
         "totalGames": "21.5 games: Over -118 / Under -112",
-        "priceAction": "FanDuel price is richer than the model; pass ML unless live state improves."
+        "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge."
       }
     },
     {
@@ -4017,7 +4017,7 @@
       "court": "Court Philippe-Chatrier",
       "start": "3:30 AM",
       "pick": "Elina Svitolina",
-      "confidence": 51,
+      "confidence": 57.2,
       "volatility": 58,
       "tier": "Watch",
       "rationale": "Recent service hold is close: Elina Svitolina 73%, Marta Kostyuk 71%. Opponent-adjusted recent form is basically even: Elina Svitolina 110, Marta Kostyuk 109. Lean, not a chase.",
@@ -4095,14 +4095,14 @@
           "selection": "Elina Svitolina",
           "line": null,
           "americanOdds": 104,
-          "modelPct": 51,
+          "modelPct": 57.2,
           "impliedPct": 49,
-          "edgePct": 2,
-          "evPer100": 4,
-          "netEvPer100": 2,
-          "grade": "Raw ML edge only",
-          "issue": "Raw ML edge only",
-          "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
+          "edgePct": 8.2,
+          "evPer100": 16.7,
+          "netEvPer100": 14.7,
+          "grade": "Bet-grade value",
+          "issue": "Validated ML candidate",
+          "reason": "Model is meaningfully above FanDuel implied price."
         },
         {
           "marketType": "Game spread",
@@ -4110,14 +4110,14 @@
           "selection": "Elina Svitolina",
           "line": 1.5,
           "americanOdds": -120,
-          "modelPct": 45,
+          "modelPct": 51,
           "impliedPct": 54.5,
-          "edgePct": -9.5,
-          "evPer100": -17.5,
-          "netEvPer100": -19.5,
+          "edgePct": -3.5,
+          "evPer100": -6.5,
+          "netEvPer100": -8.5,
           "expectedGames": null,
           "edgeGames": null,
-          "confidence": 45,
+          "confidence": 51,
           "grade": "Negative EV",
           "reason": "Spread is number-dependent; verify first service cycle"
         },
@@ -4141,22 +4141,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Elina Svitolina 68% / Marta Kostyuk 64%",
+          "selection": "Elina Svitolina 71% / Marta Kostyuk 57%",
           "rows": [
             {
               "name": "Elina Svitolina",
-              "confidence": 68,
-              "modelPct": 51,
+              "confidence": 71,
+              "modelPct": 57.2,
               "label": "Live to win a set"
             },
             {
               "name": "Marta Kostyuk",
-              "confidence": 64,
-              "modelPct": 49,
+              "confidence": 57,
+              "modelPct": 42.8,
               "label": "Needs early hold pressure"
             }
           ],
-          "confidence": 68,
+          "confidence": 71,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -4164,12 +4164,12 @@
           "marketType": "First-set total games",
           "label": "1st set O/U",
           "selection": "Under 9.5",
-          "expectedGames": 8.7,
-          "confidence": 67,
+          "expectedGames": 8.5,
+          "confidence": 69,
           "tiebreakRisk": 18,
           "earlyBreakRisk": 62,
           "grade": "Actionable live watch",
-          "reason": "Expected first-set games 8.7 vs FanDuel 9.5; Under 9.5. hold avg 72%, return games won 56%, first-set sample 9.4g, 39 recent sets."
+          "reason": "Expected first-set games 8.5 vs FanDuel 9.5; Under 9.5. hold avg 72%, return games won 56%, first-set sample 9.4g, 39 recent sets."
         }
       ],
       "market": {
@@ -4180,8 +4180,8 @@
             "name": "Elina Svitolina",
             "americanOdds": 104,
             "impliedPct": 49,
-            "modelPct": 51,
-            "edgePct": 2,
+            "modelPct": 57.2,
+            "edgePct": 8.2,
             "grossProfitPct": 104,
             "priceBand": "Coinflip"
           },
@@ -4189,15 +4189,15 @@
             "name": "Marta Kostyuk",
             "americanOdds": -125,
             "impliedPct": 55.6,
-            "modelPct": 49,
-            "edgePct": -6.6,
+            "modelPct": 42.8,
+            "edgePct": -12.8,
             "grossProfitPct": 80,
             "priceBand": "Coinflip"
           }
         ],
         "spread": "Elina Svitolina +1.5 (-120)",
         "totalGames": "21.5 games: Over -122 / Under -110",
-        "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge."
+        "priceAction": "Model is meaningfully above FanDuel implied price."
       }
     },
     {
@@ -5337,9 +5337,9 @@
       "court": "Court Philippe-Chatrier",
       "start": "5:00 AM",
       "pick": "Alexander Zverev",
-      "confidence": 64,
+      "confidence": 53.4,
       "volatility": 37,
-      "tier": "Lean",
+      "tier": "Watch",
       "rationale": "Recent service hold is close: Alexander Zverev 82%, Rafael Jodar 83%. Rafael Jodar grades 21 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
       "weaknessEdge": {
         "edgeType": "Weakness edge",
@@ -5349,7 +5349,7 @@
         "vulnerableSide": "Rafael Jodar",
         "gameFlow": "Alexander Zverev has a real path if Rafael Jodar's first two service games show the same weakness: double-fault pressure (4.0 avg); 4 recent matches with serve instability.",
         "liveTrigger": "Look for Rafael Jodar facing break points or second-serve pressure before 3-3.",
-        "spreadRead": "Alexander Zverev spread only if the handicap is short and Rafael Jodar is under pressure early.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
         "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
         "pick": {
           "name": "Alexander Zverev",
@@ -5420,11 +5420,11 @@
           "selection": "Alexander Zverev",
           "line": null,
           "americanOdds": -310,
-          "modelPct": 64,
+          "modelPct": 53.4,
           "impliedPct": 75.6,
-          "edgePct": -11.6,
-          "evPer100": -15.4,
-          "netEvPer100": -17.4,
+          "edgePct": -22.2,
+          "evPer100": -29.4,
+          "netEvPer100": -31.4,
           "grade": "Negative EV",
           "issue": "Favorite price needs better proof",
           "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
@@ -5435,53 +5435,53 @@
           "selection": "Alexander Zverev",
           "line": -5.5,
           "americanOdds": -104,
-          "modelPct": 62,
+          "modelPct": 51,
           "impliedPct": 51,
-          "edgePct": 11,
-          "evPer100": 21.6,
-          "netEvPer100": 19.6,
+          "edgePct": 0,
+          "evPer100": 0,
+          "netEvPer100": -2,
           "expectedGames": null,
           "edgeGames": null,
-          "confidence": 62,
-          "grade": "Watch only",
+          "confidence": 51,
+          "grade": "Near fair",
           "reason": "Spread is number-dependent; verify first service cycle"
         },
         {
           "marketType": "Total games",
           "label": "O/U games",
-          "selection": "Under",
+          "selection": "No bet",
           "line": 37.5,
-          "americanOdds": -118,
-          "modelPct": 64,
-          "impliedPct": 54.1,
-          "edgePct": 9.9,
-          "evPer100": 18.2,
-          "netEvPer100": 16.2,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
           "expectedGames": null,
           "edgeGames": null,
-          "confidence": 64,
-          "grade": "Watch only",
+          "confidence": null,
+          "grade": "No direction",
           "reason": "Total games need expected match games vs the posted line."
         },
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Rafael Jodar 63% / Alexander Zverev 87%",
+          "selection": "Rafael Jodar 73% / Alexander Zverev 83%",
           "rows": [
             {
               "name": "Rafael Jodar",
-              "confidence": 63,
-              "modelPct": 36,
-              "label": "Needs early hold pressure"
+              "confidence": 73,
+              "modelPct": 46.6,
+              "label": "Live to win a set"
             },
             {
               "name": "Alexander Zverev",
-              "confidence": 87,
-              "modelPct": 64,
+              "confidence": 83,
+              "modelPct": 53.4,
               "label": "Strong set-win path"
             }
           ],
-          "confidence": 87,
+          "confidence": 83,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -5489,12 +5489,12 @@
           "marketType": "First-set total games",
           "label": "1st set O/U",
           "selection": "Over 9.5",
-          "expectedGames": 10.3,
-          "confidence": 67,
+          "expectedGames": 10.4,
+          "confidence": 68,
           "tiebreakRisk": 24,
           "earlyBreakRisk": 56,
           "grade": "Actionable live watch",
-          "reason": "Expected first-set games 10.3 vs FanDuel 9.5; Over 9.5. hold avg 83%, return games won 35%, first-set sample 9.5g, 49 recent sets."
+          "reason": "Expected first-set games 10.4 vs FanDuel 9.5; Over 9.5. hold avg 83%, return games won 35%, first-set sample 9.5g, 49 recent sets."
         }
       ],
       "market": {
@@ -5505,8 +5505,8 @@
             "name": "Rafael Jodar",
             "americanOdds": 245,
             "impliedPct": 29,
-            "modelPct": 36,
-            "edgePct": 7,
+            "modelPct": 46.6,
+            "edgePct": 17.6,
             "grossProfitPct": 245,
             "priceBand": "Underdog"
           },
@@ -5514,8 +5514,8 @@
             "name": "Alexander Zverev",
             "americanOdds": -310,
             "impliedPct": 75.6,
-            "modelPct": 64,
-            "edgePct": -11.6,
+            "modelPct": 53.4,
+            "edgePct": -22.2,
             "grossProfitPct": 32.3,
             "priceBand": "Low-payout favorite"
           }
@@ -6944,7 +6944,7 @@
       "court": "Court Philippe-Chatrier",
       "start": "11:15 AM",
       "pick": "Joao Fonseca",
-      "confidence": 52,
+      "confidence": 57.2,
       "volatility": 48,
       "tier": "Watch",
       "rationale": "Joao Fonseca has the recent service-hold edge 85% to 77%. Opponent-adjusted recent form is basically even: Joao Fonseca 72, Jakub Mensik 77. Lean, not a chase.",
@@ -7026,11 +7026,11 @@
           "selection": "Joao Fonseca",
           "line": null,
           "americanOdds": -210,
-          "modelPct": 52,
+          "modelPct": 57.2,
           "impliedPct": 67.7,
-          "edgePct": -15.7,
-          "evPer100": -23.2,
-          "netEvPer100": -25.2,
+          "edgePct": -10.5,
+          "evPer100": -15.6,
+          "netEvPer100": -17.6,
           "grade": "Negative EV",
           "issue": "Favorite price needs better proof",
           "reason": "FanDuel price is richer than the model; pass ML unless live state improves."
@@ -7041,15 +7041,15 @@
           "selection": "Joao Fonseca",
           "line": -4.5,
           "americanOdds": -108,
-          "modelPct": 50,
+          "modelPct": 55,
           "impliedPct": 51.9,
-          "edgePct": -1.9,
-          "evPer100": -3.7,
-          "netEvPer100": -5.7,
+          "edgePct": 3.1,
+          "evPer100": 5.9,
+          "netEvPer100": 3.9,
           "expectedGames": null,
           "edgeGames": null,
-          "confidence": 50,
-          "grade": "Near fair",
+          "confidence": 55,
+          "grade": "Raw positive EV",
           "reason": "Spread is number-dependent; verify first service cycle"
         },
         {
@@ -7072,22 +7072,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Jakub Mensik 74% / Joao Fonseca 84%",
+          "selection": "Jakub Mensik 70% / Joao Fonseca 85%",
           "rows": [
             {
               "name": "Jakub Mensik",
-              "confidence": 74,
-              "modelPct": 48,
+              "confidence": 70,
+              "modelPct": 42.8,
               "label": "Live to win a set"
             },
             {
               "name": "Joao Fonseca",
-              "confidence": 84,
-              "modelPct": 52,
+              "confidence": 85,
+              "modelPct": 57.2,
               "label": "Strong set-win path"
             }
           ],
-          "confidence": 84,
+          "confidence": 85,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -7095,12 +7095,12 @@
           "marketType": "First-set total games",
           "label": "1st set O/U",
           "selection": "Over 9.5",
-          "expectedGames": 11.1,
+          "expectedGames": 11,
           "confidence": 73,
           "tiebreakRisk": 33,
           "earlyBreakRisk": 54,
           "grade": "Actionable live watch",
-          "reason": "Expected first-set games 11.1 vs FanDuel 9.5; Over 9.5. hold avg 81%, return games won 20%, first-set sample 9.8g, 53 recent sets."
+          "reason": "Expected first-set games 11 vs FanDuel 9.5; Over 9.5. hold avg 81%, return games won 20%, first-set sample 9.8g, 53 recent sets."
         }
       ],
       "market": {
@@ -7111,8 +7111,8 @@
             "name": "Jakub Mensik",
             "americanOdds": 172,
             "impliedPct": 36.8,
-            "modelPct": 48,
-            "edgePct": 11.2,
+            "modelPct": 42.8,
+            "edgePct": 6,
             "grossProfitPct": 172,
             "priceBand": "Underdog"
           },
@@ -7120,8 +7120,8 @@
             "name": "Joao Fonseca",
             "americanOdds": -210,
             "impliedPct": 67.7,
-            "modelPct": 52,
-            "edgePct": -15.7,
+            "modelPct": 57.2,
+            "edgePct": -10.5,
             "grossProfitPct": 47.6,
             "priceBand": "Moderate favorite"
           }

@@ -139,6 +139,14 @@ def market_rows(game: dict[str, Any]) -> list[dict[str, Any]]:
         ev = entry.get("evPer100")
         if ev is None and parsed_odds is not None:
             ev = ev_per_100(entry.get("modelPct") or entry.get("confidence"), parsed_odds)
+        entry_value_grade = entry.get("valueGrade") or value_grade(edge, ev)
+        actionable = True
+        if label == "O/U" and parsed_selection not in {"Over", "Under"}:
+            actionable = False
+        if normalize(parsed_selection) in {"", "no bet", "pass"}:
+            actionable = False
+        if normalize(entry_value_grade) in {"no direction", "needs posted price"}:
+            actionable = False
         rows.append(
             {
                 "matchId": game.get("id"),
@@ -150,8 +158,9 @@ def market_rows(game: dict[str, Any]) -> list[dict[str, Any]]:
                 "modelPct": entry.get("modelPct") or entry.get("confidence"),
                 "edgePct": edge,
                 "evPer100": ev,
-                "valueGrade": entry.get("valueGrade") or value_grade(edge, ev),
+                "valueGrade": entry_value_grade,
                 "betGrade": bool(entry.get("betGrade")),
+                "actionable": actionable,
                 "raw": entry,
             }
         )
@@ -167,7 +176,9 @@ def grade_row(game: dict[str, Any], row: dict[str, Any], warehouse_context: dict
     winner = winner_from_game(game, warehouse_context)
     selection = row.get("selection")
     result = None
-    if row["market"] == "ML":
+    if not row.get("actionable", True):
+        result = None
+    elif row["market"] == "ML":
         if winner:
             result = normalize(selection) == normalize(winner)
     elif row["market"] == "Spread":

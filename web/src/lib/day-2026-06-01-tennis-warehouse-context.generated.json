@@ -1,6 +1,6 @@
 {
   "date": "2026-06-01",
-  "generatedAt": "2026-06-01T09:28:18.880691+00:00",
+  "generatedAt": "2026-06-02T00:35:31.175249+00:00",
   "source": "SQLite tennis warehouse",
   "matches": {
     "rg-m-flavio-cobolli-zachary-svajda-2026-06-01": {
@@ -9901,8 +9901,38 @@
         }
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": {
+          "period1": 6,
+          "period2": 6,
+          "period3": 6,
+          "period4": 7
+        },
+        "away": {
+          "period1": 2,
+          "period2": 3,
+          "period3": 7,
+          "period4": 6
+        }
+      },
+      "result": {
+        "home": {
+          "period1": 6,
+          "period2": 6,
+          "period3": 6,
+          "period4": 7
+        },
+        "away": {
+          "period1": 2,
+          "period2": 3,
+          "period3": 7,
+          "period4": 6
+        },
+        "winnerName": "Flavio Cobolli",
+        "winnerNormalizedName": "flavio cobolli",
+        "scoreline": "6-2 6-3 6-7(3-7) 7-6(7-5)",
+        "status": "Final",
+        "completed": true,
+        "sourceUrl": "https://www.espn.com/tennis/scoreboard/_/date/20260601"
       },
       "sofascoreSignals": null,
       "weather": {
@@ -19640,8 +19670,34 @@
         }
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": {
+          "period1": 4,
+          "period2": 6,
+          "period3": 6
+        },
+        "away": {
+          "period1": 6,
+          "period2": 2,
+          "period3": 7
+        }
+      },
+      "result": {
+        "home": {
+          "period1": 4,
+          "period2": 6,
+          "period3": 6
+        },
+        "away": {
+          "period1": 6,
+          "period2": 2,
+          "period3": 7
+        },
+        "winnerName": "Anna Kalinskaya",
+        "winnerNormalizedName": "anna kalinskaya",
+        "scoreline": "4-6 6-2 6-7(7-10)",
+        "status": "Final",
+        "completed": true,
+        "sourceUrl": "https://www.espn.com/tennis/scoreboard/_/date/20260601"
       },
       "sofascoreSignals": null,
       "weather": {
@@ -27047,8 +27103,34 @@
         }
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": {
+          "period1": 3,
+          "period2": 6,
+          "period3": 0
+        },
+        "away": {
+          "period1": 6,
+          "period2": 3,
+          "period3": 6
+        }
+      },
+      "result": {
+        "home": {
+          "period1": 3,
+          "period2": 6,
+          "period3": 0
+        },
+        "away": {
+          "period1": 6,
+          "period2": 3,
+          "period3": 6
+        },
+        "winnerName": "Diana Shnaider",
+        "winnerNormalizedName": "diana shnaider",
+        "scoreline": "3-6 6-3 0-6",
+        "status": "Final",
+        "completed": true,
+        "sourceUrl": "https://www.espn.com/tennis/scoreboard/_/date/20260601"
       },
       "sofascoreSignals": null,
       "weather": {
@@ -32113,8 +32195,30 @@
         }
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": {
+          "period1": 6,
+          "period2": 6
+        },
+        "away": {
+          "period1": 3,
+          "period2": 2
+        }
+      },
+      "result": {
+        "home": {
+          "period1": 6,
+          "period2": 6
+        },
+        "away": {
+          "period1": 3,
+          "period2": 2
+        },
+        "winnerName": "Maja Chwalinska",
+        "winnerNormalizedName": "maja chwalinska",
+        "scoreline": "6-3 6-2",
+        "status": "Final",
+        "completed": true,
+        "sourceUrl": "https://www.espn.com/tennis/scoreboard/_/date/20260601"
       },
       "sofascoreSignals": null,
       "weather": {
@@ -37202,8 +37306,34 @@
         }
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": {
+          "period1": 3,
+          "period2": 6,
+          "period3": 6
+        },
+        "away": {
+          "period1": 6,
+          "period2": 7,
+          "period3": 7
+        }
+      },
+      "result": {
+        "home": {
+          "period1": 3,
+          "period2": 6,
+          "period3": 6
+        },
+        "away": {
+          "period1": 6,
+          "period2": 7,
+          "period3": 7
+        },
+        "winnerName": "Matteo Berrettini",
+        "winnerNormalizedName": "matteo berrettini",
+        "scoreline": "3-6 6-7(2-7) 6-7(6-8)",
+        "status": "Final",
+        "completed": true,
+        "sourceUrl": "https://www.espn.com/tennis/scoreboard/_/date/20260601"
       },
       "sofascoreSignals": null,
       "weather": {
@@ -37297,10 +37427,33 @@
           "side": "home",
           "stats": {},
           "expectedStats": {
-            "source": "Flashscore recent-form metric fallback",
-            "matches": 0,
-            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
-            "stats": {}
+            "name": "Felix Auger-Aliassime",
+            "source": "SofaScore player page 2026 Clay stats",
+            "matches": 11.0,
+            "note": "Pregame expected stats from SofaScore player-page surface filter; hold is derived from first-serve-in, first-serve-won, and second-serve-won.",
+            "stats": {
+              "matches": 11.0,
+              "wins": 7.0,
+              "winPct": 63.6,
+              "holdPct": 85.5,
+              "firstServePct": 69.2,
+              "firstServeWonPct": 74.3,
+              "secondServePct": 91.5,
+              "secondServeWonPct": 49.3,
+              "aces": 6.9,
+              "avgAces": 6.9,
+              "doubleFaults": 2.3,
+              "avgDoubleFaults": 2.3,
+              "breakPointsSavedPct": 65.5,
+              "breakPointsConvertedPct": 49.2,
+              "breakPointsSaved": 36.0,
+              "breakPointsFaced": 55.0,
+              "breakPointsConverted": 30.0,
+              "breakPointsToConvert": 61.0,
+              "tiebreaksWonPct": 57.1
+            },
+            "sourceUrl": "https://www.sofascore.com/tennis/player/auger-aliassime-felix/192013#tab:statistics",
+            "surface": "Clay"
           },
           "recentFormMetrics": null
         },
@@ -37354,8 +37507,34 @@
         }
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": {
+          "period1": 6,
+          "period2": 7,
+          "period3": 6
+        },
+        "away": {
+          "period1": 3,
+          "period2": 5,
+          "period3": 1
+        }
+      },
+      "result": {
+        "home": {
+          "period1": 6,
+          "period2": 7,
+          "period3": 6
+        },
+        "away": {
+          "period1": 3,
+          "period2": 5,
+          "period3": 1
+        },
+        "winnerName": "Felix Auger-Aliassime",
+        "winnerNormalizedName": "felix auger aliassime",
+        "scoreline": "6-3 7-5 6-1",
+        "status": "Final",
+        "completed": true,
+        "sourceUrl": "https://www.espn.com/tennis/scoreboard/_/date/20260601"
       },
       "sofascoreSignals": null,
       "weather": {
@@ -37438,7 +37617,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 19,
+        "expectedStatRows": 38,
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -47334,8 +47513,42 @@
         }
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": {
+          "period1": 6,
+          "period2": 7,
+          "period3": 6,
+          "period4": 6,
+          "period5": 4
+        },
+        "away": {
+          "period1": 7,
+          "period2": 6,
+          "period3": 3,
+          "period4": 7,
+          "period5": 6
+        }
+      },
+      "result": {
+        "home": {
+          "period1": 6,
+          "period2": 7,
+          "period3": 6,
+          "period4": 6,
+          "period5": 4
+        },
+        "away": {
+          "period1": 7,
+          "period2": 6,
+          "period3": 3,
+          "period4": 7,
+          "period5": 6
+        },
+        "winnerName": "Matteo Arnaldi",
+        "winnerNormalizedName": "matteo arnaldi",
+        "scoreline": "6-7(5-7) 7-6(7-5) 6-3 6-7(3-7) 4-6",
+        "status": "Final",
+        "completed": true,
+        "sourceUrl": "https://www.espn.com/tennis/scoreboard/_/date/20260601"
       },
       "sofascoreSignals": null,
       "weather": {
@@ -57202,8 +57415,30 @@
         }
       },
       "score": {
-        "home": null,
-        "away": null
+        "home": {
+          "period1": 7,
+          "period2": 6
+        },
+        "away": {
+          "period1": 5,
+          "period2": 3
+        }
+      },
+      "result": {
+        "home": {
+          "period1": 7,
+          "period2": 6
+        },
+        "away": {
+          "period1": 5,
+          "period2": 3
+        },
+        "winnerName": "Aryna Sabalenka",
+        "winnerNormalizedName": "aryna sabalenka",
+        "scoreline": "7-5 6-3",
+        "status": "Final",
+        "completed": true,
+        "sourceUrl": "https://www.espn.com/tennis/scoreboard/_/date/20260601"
       },
       "sofascoreSignals": null,
       "weather": {

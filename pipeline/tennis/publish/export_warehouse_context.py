@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sqlite3
 import unicodedata
 from datetime import datetime, timezone
@@ -30,7 +31,7 @@ def as_json(value: str | None) -> Any:
 
 def normalize_name(value: str | None) -> str:
     ascii_value = unicodedata.normalize("NFKD", str(value or "")).encode("ascii", "ignore").decode("ascii")
-    return " ".join(ascii_value.strip().lower().split())
+    return re.sub(r"\s+", " ", re.sub(r"[^a-zA-Z0-9]+", " ", ascii_value).strip().lower())
 
 
 def stat_rows(conn: sqlite3.Connection, event_id: str, period: str = "ALL") -> list[dict[str, Any]]:
@@ -391,6 +392,75 @@ def match_weather(conn: sqlite3.Connection, match_id: str) -> dict[str, Any] | N
     }
 
 
+def match_result_for_players(
+    conn: sqlite3.Connection,
+    date: str,
+    player1_name: str | None,
+    player2_name: str | None,
+) -> sqlite3.Row | None:
+    if not player1_name or not player2_name:
+        return None
+    player1 = normalize_name(player1_name)
+    player2 = normalize_name(player2_name)
+    if not player1 or not player2:
+        return None
+    return conn.execute(
+        """
+        select *
+        from tennis_match_results
+        where slate_date = ?
+          and (
+            (player1_normalized_name = ? and player2_normalized_name = ?)
+            or (player1_normalized_name = ? and player2_normalized_name = ?)
+          )
+        order by completed desc, updated_at desc
+        limit 1
+        """,
+        (date, player1, player2, player2, player1),
+    ).fetchone()
+
+
+def parsed_result_score(
+    result_row: sqlite3.Row | None,
+    home_name: str | None,
+    away_name: str | None,
+) -> dict[str, Any] | None:
+    if result_row is None:
+        return None
+    payload = as_json(result_row["raw_json"]) or {}
+    players = payload.get("players") or []
+    by_name = {normalize_name(player.get("name")): player for player in players if player.get("name")}
+
+    def side_score(player_name: str | None) -> dict[str, int] | None:
+        player = by_name.get(normalize_name(player_name))
+        if not player:
+            return None
+        score: dict[str, int] = {}
+        for item in player.get("scores") or []:
+            try:
+                period = int(item.get("set"))
+                value = int(item.get("value"))
+            except (TypeError, ValueError):
+                continue
+            score[f"period{period}"] = value
+        return score or None
+
+    home_score = side_score(home_name)
+    away_score = side_score(away_name)
+    if not home_score or not away_score:
+        return None
+    return {
+        "home": home_score,
+        "away": away_score,
+        "winnerName": result_row["winner_name"],
+        "winnerNormalizedName": result_row["winner_normalized_name"],
+        "scoreline": result_row["scoreline"],
+        "status": result_row["status"],
+        "completed": bool(result_row["completed"]),
+        "sourceUrl": result_row["source_url"],
+    }
+
+
 def pct_from_fractional(value: Any) -> float | None:
     if not value:
         return None
@@ -513,6 +583,11 @@ def export_context(date: str) -> dict[str, Any]:
         form_metrics_by_player = recent_form_metrics(conn, row["board_match_id"])
         h2h_rows = h2h_match_rows(conn, row["board_match_id"])
         weather = match_weather(conn, row["board_match_id"])
+        result_score = parsed_result_score(
+            match_result_for_players(conn, date, row.get("home_player_name"), row.get("away_player_name")),
+            row.get("home_player_name"),
+            row.get("away_player_name"),
+        )
         season_stats = sofascore_signals.get("seasonStats") or {}
         home_season_stats = season_stats.get("home") or {}
         away_season_stats = season_stats.get("away") or {}
@@ -641,9 +716,10 @@ def export_context(date: str) -> dict[str, Any]:
                 },
             },
             "score": {
-                "home": as_json(row["home_score_json"]),
-                "away": as_json(row["away_score_json"]),
+                "home": (result_score or {}).get("home") or as_json(row["home_score_json"]),
+                "away": (result_score or {}).get("away") or as_json(row["away_score_json"]),
             },
+            "result": result_score,
             "sofascoreSignals": sofascore_signals,
             "weather": weather,
             "allStatRows": rows,
@@ -676,6 +752,11 @@ def export_context(date: str) -> dict[str, Any]:
             form_metrics_by_player = recent_form_metrics(conn, match_id)
             h2h_rows = h2h_match_rows(conn, match_id)
             weather = match_weather(conn, match_id)
+            result_score = parsed_result_score(
+                match_result_for_players(conn, date, row.get("player1_name"), row.get("player2_name")),
+                row.get("player1_name"),
+                row.get("player2_name"),
+            )
             players = []
             for side, player_name in (("home", row.get("player1_name")), ("away", row.get("player2_name"))):
                 if not player_name:
@@ -753,7 +834,11 @@ def export_context(date: str) -> dict[str, Any]:
                         "weightedRows": len([item for item in h2h_rows if isinstance(item.get("weight"), (int, float))]),
                     },
                 },
-                "score": {"home": None, "away": None},
+                "score": {
+                    "home": (result_score or {}).get("home"),
+                    "away": (result_score or {}).get("away"),
+                },
+                "result": result_score,
                 "sofascoreSignals": None,
                 "weather": weather,
                 "allStatRows": [],
