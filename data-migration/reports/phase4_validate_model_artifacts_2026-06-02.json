@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-06-02T06:03:05.516Z",
+  "phase": "4",
+  "script": "data-migration/scripts/validate_model_artifacts.mjs",
+  "sport_filter": "all",
+  "sports": [
+    {
+      "sport": "mlb",
+      "target": "data-private/warehouse/sports/mlb/sql-mlb.db",
+      "expected": {
+        "model_runs": 90,
+        "model_artifacts": 98
+      },
+      "actual": {
+        "model_runs": 90,
+        "model_artifacts": 98,
+        "hashed_artifacts": 98,
+        "phase4_migration_runs": 1
+      },
+      "model_run_dir_counts": {
+        "runs": 8,
+        "artifacts": 16
+      },
+      "prediction_artifact_counts": {
+        "runs": 82,
+        "artifacts": 82
+      },
+      "mismatches": [],
+      "ok": true
+    },
+    {
+      "sport": "tennis",
+      "target": "data-private/warehouse/sports/tennis/sql-tennis.db",
+      "expected": {
+        "model_runs": 16,
+        "model_artifacts": 23
+      },
+      "actual": {
+        "model_runs": 16,
+        "model_artifacts": 23,
+        "hashed_artifacts": 23,
+        "phase4_migration_runs": 1
+      },
+      "model_run_dir_counts": {
+        "runs": 1,
+        "artifacts": 8
+      },
+      "prediction_artifact_counts": {
+        "runs": 15,
+        "artifacts": 15
+      },
+      "mismatches": [],
+      "ok": true
+    }
+  ],
+  "ok": true
+}

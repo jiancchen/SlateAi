@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-06-02T06:01:41.354Z",
+  "phase": "4",
+  "script": "data-migration/scripts/backfill_model_artifacts.mjs",
+  "dry_run": true,
+  "selected_type": "all",
+  "sports": [
+    {
+      "sport": "mlb",
+      "target": "data-private/warehouse/sports/mlb/sql-mlb.db",
+      "dry_run": true,
+      "selected_type": "all",
+      "planned_model_runs": 90,
+      "planned_artifacts": 98,
+      "before": {
+        "model_runs": 0,
+        "model_artifacts": 0
+      },
+      "after": {
+        "model_runs": 0,
+        "model_artifacts": 0
+      },
+      "sample_model_runs": [
+        {
+          "model_run_id": "mlb-2026-05-30-MLB-W1-MLB-F0-MLB-M0-MLB-RP36-MLB-E0",
+          "model_id": "MLB-M0",
+          "run_date": "2026-05-30",
+          "run_type": "pregame",
+          "artifacts": 2
+        },
+        {
+          "model_run_id": "mlb-2026-05-31-MLB-W1-MLB-F0-MLB-M0-MLB-RP36-MLB-E0",
+          "model_id": "MLB-M0",
+          "run_date": "2026-05-31",
+          "run_type": "pregame",
+          "artifacts": 2
+        },
+        {
+          "model_run_id": "mlb-2026-06-01-MLB-W1-MLB-F0-MLB-M0-MLB-RP36-MLB-E0",
+          "model_id": "MLB-M0",
+          "run_date": "2026-06-01",
+          "run_type": "pregame",
+          "artifacts": 2
+        },
+        {
+          "model_run_id": "mlb-2026-05-30-MLB-W1-MLB-F0-MLB-M1-MLB-RP36-MLB-E0",
+          "model_id": "MLB-M1",
+          "run_date": "2026-05-30",
+          "run_type": "pregame",
+          "artifacts": 2
+        },
+        {
+          "model_run_id": "mlb-2026-05-31-MLB-W1-MLB-F0-MLB-M1-MLB-RP36-MLB-E0",
+          "model_id": "MLB-M1",
+          "run_date": "2026-05-31",
+          "run_type": "pregame",
+          "artifacts": 2
+        },
+        {
+          "model_run_id": "mlb-2026-05-31-MLB-W1-MLB-F0-MLB-M2-MLB-RP36-MLB-E0",
+          "model_id": "MLB-M2",
+          "run_date": "2026-05-31",
+          "run_type": "pregame",
+          "artifacts": 2
+        },
+        {
+          "model_run_id": "mlb-2026-06-01-MLB-W1-MLB-F0-MLB-M2-MLB-RP36-MLB-E0",
+          "model_id": "MLB-M2",
+          "run_date": "2026-06-01",
+          "run_type": "pregame",
+          "artifacts": 2
+        },
+        {
+          "model_run_id": "mlb-2026-05-31-MLB-RP36",
+          "model_id": "MLB-RP36",
+          "run_date": "2026-05-31",
+          "run_type": "relief-addendum",
+          "artifacts": 2
+        }
+      ],
+      "ok": true
+    },
+    {
+      "sport": "tennis",
+      "target": "data-private/warehouse/sports/tennis/sql-tennis.db",
+      "dry_run": true,
+      "selected_type": "all",
+      "planned_model_runs": 16,
+      "planned_artifacts": 23,
+      "before": {
+        "model_runs": 0,
+        "model_artifacts": 0
+      },
+      "after": {
+        "model_runs": 0,
+        "model_artifacts": 0
+      },
+      "sample_model_runs": [
+        {
+          "model_run_id": "tennis-2026-05-31-TEN-W1-TEN-F0-TEN-T0-TEN-E0",
+          "model_id": "TEN-T0",
+          "run_date": "2026-05-31",
+          "run_type": "pregame",
+          "artifacts": 8
+        },
+        {
+          "model_run_id": "legacy-tennis-tennis-2026-05-26-9a85514281cb",
+          "model_id": "tennis",
+          "run_date": "2026-05-26",
+          "run_type": "legacy_prediction_artifact",
+          "artifacts": 1
+        },
+        {
+          "model_run_id": "legacy-tennis-tennis-2026-05-27-cc4061a62809",
+          "model_id": "tennis",
+          "run_date": "2026-05-27",
+          "run_type": "legacy_prediction_artifact",
+          "artifacts": 1
+        },
+        {
+          "model_run_id": "legacy-tennis-tennis-2026-05-28-346ef6a516ff",
+          "model_id": "pandas-ensemble-logit-rf-gb-xgb",
+          "run_date": "2026-05-28",
+          "run_type": "legacy_prediction_artifact",
+          "artifacts": 1
+        },
+        {
+          "model_run_id": "legacy-tennis-tennis-2026-05-28-ce4f89bfe03a",
+          "model_id": "tennis",
+          "run_date": "2026-05-28",
+          "run_type": "legacy_prediction_artifact",
+          "artifacts": 1
+        },
+        {
+          "model_run_id": "legacy-tennis-tennis-2026-05-29-057162c8deef",
+          "model_id": "pandas-ensemble-logit-rf-gb-xgb",
+          "run_date": "2026-05-29",
+          "run_type": "legacy_prediction_artifact",
+          "artifacts": 1
+        },
+        {
+          "model_run_id": "legacy-tennis-tennis-2026-05-29-95bb3b8ce06e",
+          "model_id": "tennis",
+          "run_date": "2026-05-29",
+          "run_type": "legacy_prediction_artifact",
+          "artifacts": 1
+        },
+        {
+          "model_run_id": "legacy-tennis-tennis-2026-05-30-738c0a7ef011",
+          "model_id": "tennis",
+          "run_date": "2026-05-30",
+          "run_type": "legacy_prediction_artifact",
+          "artifacts": 1
+        }
+      ],
+      "ok": true
+    }
+  ],
+  "ok": true,
+  "total_model_runs": 106,
+  "total_artifacts": 121
+}
