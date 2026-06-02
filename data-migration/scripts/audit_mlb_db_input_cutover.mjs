@@ -12,6 +12,24 @@ const DEFAULT_TARGETS = [
   'pipeline/mlb'
 ]
 
+const ACTIVE_TARGETS = [
+  'models/mlb/run-cartridge.mjs',
+  'models/mlb/cartridges/MLB-M2/runner.mjs',
+  'models/mlb/cartridges/MLB-M2/workflows/pregame.mjs',
+  'models/mlb/cartridges/MLB-M2/workflows/refresh-live-board.mjs',
+  'models/mlb/cartridges/MLB-M2/workflows/followup.mjs',
+  'models/mlb/cartridges/MLB-M2/workflows/verify-refresh.mjs',
+  'models/mlb/cartridges/MLB-M2/lanes/generate-day-files.mjs',
+  'models/mlb/cartridges/MLB-M2/lanes/lineups.mjs',
+  'models/mlb/cartridges/MLB-M2/lanes/props.mjs',
+  'models/mlb/cartridges/MLB-M2/lanes/sides.mjs',
+  'models/mlb/cartridges/MLB-M2/lanes/veto.mjs',
+  'models/mlb/cartridges/MLB-M2/lanes/home-runs.mjs',
+  'models/mlb/cartridges/MLB-M2/lanes/history-journal.mjs',
+  'models/mlb/cartridges/MLB-M2/snapshot.mjs',
+  'models/mlb/cartridges/MLB-M2/snapshot-run.mjs'
+]
+
 const PATTERNS = [
   {
     key: 'legacy_sports_db',
@@ -77,7 +95,8 @@ function parseArgs() {
   const args = process.argv.slice(2)
   const options = {
     targets: [...DEFAULT_TARGETS],
-    report: 'data-migration/reports/mlb_db_input_cutover_audit_2026-06-02.json'
+    report: 'data-migration/reports/mlb_db_input_cutover_audit_2026-06-02.json',
+    profile: 'full'
   }
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index]
@@ -89,6 +108,12 @@ function parseArgs() {
       index += 1
     } else if (arg === '--report') {
       options.report = args[index + 1]
+      index += 1
+    } else if (arg === '--profile') {
+      options.profile = args[index + 1]
+      if (options.profile === 'active') {
+        options.targets = [...ACTIVE_TARGETS]
+      }
       index += 1
     }
   }
@@ -174,6 +199,7 @@ const files = scannedFiles.map(auditFile).filter(Boolean)
 const report = {
   generated_at: new Date().toISOString(),
   script: 'data-migration/scripts/audit_mlb_db_input_cutover.mjs',
+  profile: options.profile,
   targets: options.targets,
   scanned_file_count: scannedFiles.length,
   files_with_hits: files.length,
