@@ -12,10 +12,23 @@ const timestamp = new Date().toISOString();
 
 const DEFAULT_POLICIES = {
   mlb: [
-    { source_name: 'mlb_raw_daily', source_family: 'stats-api', ttl: 6, max_stale: 24, required: 1, notes: 'Schedule/live/result payloads. Force refresh for active game days.' },
-    { source_name: 'mlb_stats_api', source_family: 'stats-api', ttl: 6, max_stale: 24, required: 1, notes: 'MLB Stats API player/game source payloads.' },
-    { source_name: 'baseballsavant', source_family: 'statcast', ttl: 24, max_stale: 72, required: 1, notes: 'Player splits/profile context; can cache longer than odds.' },
+    { source_name: 'mlb_raw_daily', source_family: 'stats-api-compat', ttl: 6, max_stale: 24, required: 0, notes: 'Compatibility receipt only. Lane gates should use mlb_schedule, mlb_game_feed, mlb_lineups, and mlb_probables.' },
+    { source_name: 'mlb_stats_api', source_family: 'stats-api-compat', ttl: 6, max_stale: 24, required: 0, notes: 'Compatibility receipt only. Lane gates should use the split MLB schedule/feed/probables/player-context families.' },
+    { source_name: 'baseballsavant', source_family: 'statcast-compat', ttl: 24, max_stale: 72, required: 0, notes: 'Compatibility receipt only. Lane gates should use baseballsavant_hitter_statcast and mlb_player_context.' },
+    { source_name: 'mlb_schedule', source_family: 'schedule', ttl: 6, max_stale: 24, required: 1, notes: 'MLB schedule/game metadata source for prediction, value, and prop lanes.' },
+    { source_name: 'mlb_game_feed', source_family: 'game-feed', ttl: 6, max_stale: 24, required: 1, notes: 'MLB live/result game feed source for postgame settlement, pitch events, plate appearances, and outcomes.' },
+    { source_name: 'mlb_lineups', source_family: 'lineups', ttl: 1, max_stale: 6, required: 1, notes: 'Confirmed/projected lineup source for prediction, value, and prop lanes.' },
+    { source_name: 'mlb_probables', source_family: 'probables', ttl: 3, max_stale: 12, required: 1, notes: 'Probable pitcher source and change-monitor receipts.' },
+    { source_name: 'baseballsavant_hitter_statcast', source_family: 'statcast', ttl: 24, max_stale: 72, required: 1, notes: 'Baseball Savant hitter Statcast source for batter board, props, and HR lanes.' },
+    { source_name: 'mlb_player_context', source_family: 'player-context', ttl: 24, max_stale: 72, required: 1, notes: 'Player career, profile, split, low-sample, and identity context source.' },
+    { source_name: 'mlb_pitcher_features', source_family: 'pitcher-features', ttl: 12, max_stale: 48, required: 1, notes: 'Starter pitcher feature source for prediction, value, and prop lanes.' },
+    { source_name: 'mlb_bullpen_features', source_family: 'bullpen-features', ttl: 12, max_stale: 48, required: 1, notes: 'Relief-pitcher and bullpen feature source for late-game and component lanes.' },
+    { source_name: 'mlb_team_features', source_family: 'team-features', ttl: 12, max_stale: 48, required: 1, notes: 'Team trend and matchup feature source for prediction and value lanes.' },
+    { source_name: 'mlb_environment', source_family: 'environment', ttl: 3, max_stale: 12, required: 1, notes: 'Weather, park, roof, and sun-position source for totals, HR, and game-shape lanes.' },
     { source_name: 'mlb_odds', source_family: 'markets', ttl: 1, max_stale: 6, required: 1, notes: 'FanDuel/Kalshi/Robinhood style odds and market snapshots.' },
+    { source_name: 'mlb_props', source_family: 'props', ttl: 1, max_stale: 6, required: 1, notes: 'Player prop market source for prop and HR value boards.' },
+    { source_name: 'mlb_game_shape', source_family: 'game-shape', ttl: 12, max_stale: 48, required: 1, notes: 'Derived M2 game-shape, chaos, state-formula, and component-training source.' },
+    { source_name: 'mlb_model_artifacts', source_family: 'model-artifacts', ttl: 24, max_stale: 72, required: 1, notes: 'Model run, prediction, settlement, backtest, and cartridge metadata source.' },
   ],
   tennis: [
     { source_name: 'tennis_reference', source_family: 'match-reference', ttl: 12, max_stale: 48, required: 0, notes: 'Broad tennis reference receipt registration. Typed source-family health must use the split Flashscore/SofaScore/Livesport/odds policies.' },

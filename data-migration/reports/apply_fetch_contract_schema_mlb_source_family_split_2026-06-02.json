@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-06-02T21:28:10.183Z",
+  "dry_run": false,
+  "results": [
+    {
+      "sport": "mlb",
+      "db_path": "data-private/warehouse/sports/mlb/sql-mlb.db",
+      "dry_run": false,
+      "migration_run_id": "phase9-fetch-contract-mlb-2026-06-02T21-28-10-183Z",
+      "policy_count": 17,
+      "table_counts": {
+        "source_fetch_policies": 17,
+        "source_fetch_runs": 0,
+        "source_fetch_status": 0
+      },
+      "status": "created_or_verified"
+    }
+  ]
+}
