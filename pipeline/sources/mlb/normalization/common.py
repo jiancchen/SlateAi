@@ -226,6 +226,33 @@ class MlbIdentityResolver:
         if team:
             self.upsert_alias("team", team["team_id"], source_name, None, team_name, 0.94)
             return str(team["team_id"])
+        if key:
+            candidates = [
+                candidate
+                for candidate in self.teams_by_id.values()
+                if normalize_name(candidate.get("name")).endswith(f" {key}") or normalize_name(candidate.get("name")) == key
+            ]
+            if len(candidates) == 1:
+                self.upsert_alias("team", candidates[0]["team_id"], source_name, None, team_name, 0.90)
+                return str(candidates[0]["team_id"])
+        return None
+
+    def game_id_for_teams_date(self, source_name: str, game_date: Any, home_team: Any, away_team: Any) -> str | None:
+        home_team_id = self.team_id_by_name(source_name, home_team)
+        away_team_id = self.team_id_by_name(source_name, away_team)
+        if not game_date or not home_team_id or not away_team_id:
+            return None
+        date_text = str(game_date)[:10]
+        matches = [
+            game
+            for game in self.games_by_id.values()
+            if str(game.get("game_date"))[:10] == date_text
+            and game.get("home_team_id") == home_team_id
+            and game.get("away_team_id") == away_team_id
+        ]
+        if len(matches) == 1:
+            self.upsert_alias("game", matches[0]["game_id"], source_name, None, f"{away_team} @ {home_team} {date_text}", 0.95)
+            return str(matches[0]["game_id"])
         return None
 
     def team_id_for_payload(

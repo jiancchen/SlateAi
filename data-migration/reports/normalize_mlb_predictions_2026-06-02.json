@@ -1,0 +1,41 @@
+{
+  "date": null,
+  "dry_run": false,
+  "family": "mlb_predictions",
+  "generated_at": "2026-06-02T16:17:13.949590+00:00",
+  "inserted": {
+    "component_settlement_rows": 31,
+    "home_run_backtest_rows": 182,
+    "player_identity_backtest_rows": 12230,
+    "prediction_rows": 2271,
+    "prop_backtest_rows": 1688,
+    "side_backtest_rows": 389
+  },
+  "ok": true,
+  "parsed_rows": 16791,
+  "parser_module": "pipeline/sources/mlb/normalization/predictions.py",
+  "script": "data-migration/scripts/normalize_mlb_predictions.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_rows": 16791,
+  "source_tables": {
+    "mlb_home_run_backtests": 182,
+    "mlb_home_run_predictions": 194,
+    "mlb_player_identity_model_backtests": 12230,
+    "mlb_prop_backtests": 1688,
+    "mlb_prop_predictions": 1688,
+    "mlb_rp36_settlements": 1,
+    "mlb_rp36_team_settlements": 30,
+    "mlb_side_backtests": 389,
+    "mlb_side_predictions": 389
+  },
+  "targets": {
+    "component_settlement_rows": 31,
+    "home_run_backtest_rows": 182,
+    "player_identity_backtest_rows": 12230,
+    "prediction_rows": 2271,
+    "prop_backtest_rows": 1688,
+    "side_backtest_rows": 389
+  },
+  "unparsed_rows": 0,
+  "unresolved_rows_added": 0
+}
