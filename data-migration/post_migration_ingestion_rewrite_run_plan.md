@@ -195,6 +195,7 @@ Current status:
   - `market`: market source only, for value-board/odds freshness checks.
   - `postmatch`: required sources plus at least one replay source (`tennis_sofascore_replay` or `tennis_livesport_replay`).
 - June 2 validation: `prediction`, `market`, `value`, and `all` pass; `postmatch` blocks because no June 2 replay source has been captured yet. That is expected before postmatch replay/clutch warehousing.
+- `models/tennis/cartridges/TEN-T0/runner.mjs` now runs the value-lane preflight before generation by default. Use `--preflight-lane <lane>` to change the gate and `--skip-preflight` only for explicit legacy/backfill runs.
 
 ### Phase 9G: Export Promotion
 
