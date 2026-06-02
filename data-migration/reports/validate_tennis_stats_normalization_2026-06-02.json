@@ -1,0 +1,17 @@
+{
+  "bp_converted_with_attempts": 324,
+  "bp_saved_with_attempts": 824,
+  "date": null,
+  "duplicate_ids": 0,
+  "errors": [],
+  "generated_at": "2026-06-02T07:39:34.579135+00:00",
+  "match_stat_rows": 335138,
+  "ok": true,
+  "orphan_stats": 0,
+  "parser_module": "pipeline/sources/tennis/normalization/stats.py",
+  "script": "data-migration/scripts/validate_tennis_stats_normalization.py",
+  "service_pressure_rows": 824,
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "source_rows": 285942,
+  "unresolved_stat_entities": 250
+}

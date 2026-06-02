@@ -1,0 +1,17 @@
+{
+  "date": null,
+  "dry_run": false,
+  "family": "tennis_stats",
+  "generated_at": "2026-06-02T07:38:53.308522+00:00",
+  "inserted_match_stat_rows": 335138,
+  "inserted_service_pressure_rows": 824,
+  "ok": true,
+  "parsed_rows": 335138,
+  "parser_module": "pipeline/sources/tennis/normalization/stats.py",
+  "script": "data-migration/scripts/normalize_tennis_stats.py",
+  "service_pressure_rows": 824,
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "source_rows": 285942,
+  "unparsed_rows": 23059,
+  "unresolved_rows_added": 0
+}
