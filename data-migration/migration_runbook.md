@@ -364,18 +364,21 @@ python data-migration/scripts/validate_tennis_public_index.py
 python data-migration/scripts/export_tennis_public_from_db.py --date YYYY-MM-DD --model latest --force
 python data-migration/scripts/validate_tennis_public_export.py --date YYYY-MM-DD
 python data-migration/scripts/build_sport_duckdb.py --sport tennis
+python data-migration/scripts/validate_tennis_read_path_readiness.py --date YYYY-MM-DD
 ```
 
 Contracts:
 
 - `data-migration/contracts/tennis_public_index_contract.md`
 - `data-migration/contracts/tennis_public_export_contract.md`
+- `data-migration/contracts/tennis_read_path_readiness_contract.md`
 
 Current boundary:
 
 - The tennis index/slate export scripts write ignored previews under `data-migration/export-previews/tennis/`.
 - They may insert `export_manifests` and validation `health_checks` into `sql-tennis.db`.
 - They must not mutate `published-data/`, `web/public/data/`, `web/src/lib/`, API files, or active prediction scripts during preview mode.
+- `validate_tennis_read_path_readiness.py` is the final no-output-change gate before planning API/site read-path promotion.
 
 Exit criteria:
 
