@@ -179,6 +179,13 @@ def classify_alias(
 def classify_entity_aliases(con: sqlite3.Connection, sport: str, dry_run: bool = False) -> dict[str, Any]:
     con.row_factory = sqlite3.Row
     ensure_governance_schema(con)
+    if not dry_run:
+        con.execute(
+            """
+            delete from entity_alias_governance
+            where entity_alias_id not in (select entity_alias_id from entity_aliases)
+            """
+        )
     rows = con.execute("select * from entity_aliases order by entity_type, source_name, entity_alias_id").fetchall()
     display_index, source_id_index = conflict_indexes(rows)
     classifications: list[dict[str, Any]] = []

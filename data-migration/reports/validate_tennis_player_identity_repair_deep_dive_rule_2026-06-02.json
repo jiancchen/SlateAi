@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-06-02T18:36:55.572412+00:00",
+  "ok": true,
+  "parser_module": "pipeline/sources/tennis/normalization/player_identity_repair.py",
+  "report": {
+    "active_abbrev_stubs": 0,
+    "active_from_players": 0,
+    "active_redirects": 601,
+    "candidate_counts": {
+      "needs_deep_dive": 54,
+      "redirect_ready": 601
+    },
+    "errors": [],
+    "ok": true,
+    "orphan_redirects": 0,
+    "repair_version": "tennis-player-identity-repair-v1",
+    "sport": "tennis"
+  },
+  "script": "data-migration/scripts/validate_tennis_player_identity_repair.py"
+}

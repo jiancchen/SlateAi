@@ -64,12 +64,27 @@ def matches_abbreviated_tennis_name(display_name: Any, canonical_name: Any) -> b
     canonical_tokens = tokens(canonical_name)
     if len(canonical_tokens) <= len(surname_tokens):
         return False
-    if canonical_tokens[-len(surname_tokens):] != surname_tokens:
-        return False
-    given_tokens = canonical_tokens[:-len(surname_tokens)]
-    if len(given_tokens) < len(prefixes):
-        return False
-    return all(given_tokens[index].startswith(prefix) for index, prefix in enumerate(prefixes))
+    surname_spans = [
+        index
+        for index in range(1, len(canonical_tokens) - len(surname_tokens) + 1)
+        if canonical_tokens[index:index + len(surname_tokens)] == surname_tokens
+    ]
+    for surname_start in surname_spans:
+        given_tokens = canonical_tokens[:surname_start]
+        if len(given_tokens) < len(prefixes):
+            continue
+        cursor = 0
+        matched = True
+        for prefix in prefixes:
+            while cursor < len(given_tokens) and not given_tokens[cursor].startswith(prefix):
+                cursor += 1
+            if cursor >= len(given_tokens):
+                matched = False
+                break
+            cursor += 1
+        if matched:
+            return True
+    return False
 
 
 def exact_or_reordered(left: Any, right: Any) -> bool:

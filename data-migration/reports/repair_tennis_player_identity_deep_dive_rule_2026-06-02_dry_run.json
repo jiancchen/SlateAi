@@ -1,0 +1,451 @@
+{
+  "dry_run": true,
+  "generated_at": "2026-06-02T18:39:03.786522+00:00",
+  "ok": true,
+  "parser_module": "pipeline/sources/tennis/normalization/player_identity_repair.py",
+  "report": {
+    "active_abbrev_stubs_after": null,
+    "aliases_written": 0,
+    "apply": false,
+    "dry_run": true,
+    "family": "player_identity_repair",
+    "policy_counts": {
+      "accent_duplicate_group": 113,
+      "dominant_context_candidate": 13,
+      "multiple_live_candidates": 3,
+      "no_full_name_candidate": 51,
+      "unique_abbreviation_full_name": 475
+    },
+    "redirect_ready": 601,
+    "redirects_written": 0,
+    "repair_version": "tennis-player-identity-repair-v1",
+    "source_abbreviation_stubs": 655,
+    "sport": "tennis",
+    "status_counts": {
+      "needs_deep_dive": 54,
+      "redirect_ready": 601
+    },
+    "stubs_deactivated": 0,
+    "unresolved": 54,
+    "unresolved_samples": [
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-wessels-l",
+        "source_display_name": "Wessels L."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-lawlor-r",
+        "source_display_name": "Lawlor R."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-mathes-k",
+        "source_display_name": "Mathes K."
+      },
+      {
+        "candidate_count": 3,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "maximus jones",
+            "name": "Maximus Jones",
+            "player_id": "tennis-player-maximus-jones",
+            "reference_counts": {
+              "rankings": 1
+            },
+            "reference_score": 1
+          },
+          {
+            "active": 1,
+            "canonical_name": "miles jones",
+            "name": "Miles Jones",
+            "player_id": "tennis-player-miles-jones",
+            "reference_counts": {
+              "rankings": 1
+            },
+            "reference_score": 1
+          },
+          {
+            "active": 1,
+            "canonical_name": "makenna jones",
+            "name": "Makenna Jones",
+            "player_id": "tennis-player-makenna-jones",
+            "reference_counts": {
+              "rankings": 1
+            },
+            "reference_score": 1
+          }
+        ],
+        "evidence_policy": "multiple_live_candidates",
+        "from_player_id": "tennis-player-jones-m",
+        "source_display_name": "Jones M."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-schwaerzler-j-j",
+        "source_display_name": "Schwaerzler J. J."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-schifris-j",
+        "source_display_name": "Schifris J."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-poulsen-brostrom-o",
+        "source_display_name": "Poulsen Brostrom O."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-koenig-l",
+        "source_display_name": "Koenig L."
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "andres martin",
+            "name": "Andres Martin",
+            "player_id": "tennis-player-andres-martin",
+            "reference_counts": {
+              "market_contracts": 1,
+              "market_snapshots": 1,
+              "match_players": 1,
+              "match_stat_rows": 822,
+              "player_form_snapshots": 5,
+              "rankings": 1,
+              "recent_matches": 2,
+              "service_pressure_snapshots": 1,
+              "trusted_entity_aliases": 2
+            },
+            "reference_score": 1762
+          },
+          {
+            "active": 1,
+            "canonical_name": "andrej martin",
+            "name": "Andrej Martin",
+            "player_id": "tennis-player-andrej-martin",
+            "reference_counts": {
+              "market_contracts": 1,
+              "market_snapshots": 1,
+              "match_players": 1,
+              "match_stat_rows": 1138,
+              "player_form_snapshots": 5,
+              "rankings": 1,
+              "service_pressure_snapshots": 1,
+              "trusted_entity_aliases": 2
+            },
+            "reference_score": 2386
+          }
+        ],
+        "evidence_policy": "multiple_live_candidates",
+        "from_player_id": "tennis-player-martin-a",
+        "source_display_name": "Martin A."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-sim-s",
+        "source_display_name": "Sim S."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-hara-friend-j-d",
+        "source_display_name": "Hara Friend J. D."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-nam-ji-s",
+        "source_display_name": "Nam Ji S."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-pearson-k",
+        "source_display_name": "Pearson K."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-brown-p",
+        "source_display_name": "Brown P."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-longwe-smit-t",
+        "source_display_name": "Longwe-Smit T."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-morolli-a",
+        "source_display_name": "Morolli A."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-jianu-f-c",
+        "source_display_name": "Jianu F. C."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-malesevic-n",
+        "source_display_name": "Malesevic N."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-bobo-d",
+        "source_display_name": "Bobo D."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-zgirovsky-a",
+        "source_display_name": "Zgirovsky A."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-ambarzumjan-e",
+        "source_display_name": "Ambarzumjan E."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-chopra-k",
+        "source_display_name": "Chopra K."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-ridout-f",
+        "source_display_name": "Ridout F."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-gannon-c",
+        "source_display_name": "Gannon C."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-vujic-s",
+        "source_display_name": "Vujic S."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-reymond-a",
+        "source_display_name": "Reymond A."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-visser-m",
+        "source_display_name": "Visser M."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-lazaro-juncadella-m",
+        "source_display_name": "Lazaro Juncadella M."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-salton-d",
+        "source_display_name": "Salton D."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-shimanov-o",
+        "source_display_name": "Shimanov O."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-schlageter-j",
+        "source_display_name": "Schlageter J."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-o-connell-b",
+        "source_display_name": "O'Connell B."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-mtisi-r",
+        "source_display_name": "Mtisi R."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-lalami-laaroussi-y",
+        "source_display_name": "Lalami Laaroussi Y."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-kudernatsch-m",
+        "source_display_name": "Kudernatsch M."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-benchakroun-m",
+        "source_display_name": "Benchakroun M."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-fix-d",
+        "source_display_name": "Fix D."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-nolan-w",
+        "source_display_name": "Nolan W."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-winter-lopez-b",
+        "source_display_name": "Winter Lopez B."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-strydom-j",
+        "source_display_name": "Strydom J."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-eqbal-i",
+        "source_display_name": "Eqbal I."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-giotis-r",
+        "source_display_name": "Giotis R."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-beckles-d",
+        "source_display_name": "Beckles D."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-fita-juan-s",
+        "source_display_name": "Fita Juan S."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-van-schalkwyk-c-h",
+        "source_display_name": "van Schalkwyk C. H."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-watzka-r",
+        "source_display_name": "Watzka R."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-roothman-c",
+        "source_display_name": "Roothman C."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-host-t",
+        "source_display_name": "Host T."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-kesharwani-m",
+        "source_display_name": "Kesharwani M."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-dembo-j",
+        "source_display_name": "Dembo J."
+      }
+    ]
+  },
+  "script": "data-migration/scripts/repair_tennis_player_identity.py"
+}

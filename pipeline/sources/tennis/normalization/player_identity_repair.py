@@ -348,6 +348,63 @@ def upsert_redirect(con: sqlite3.Connection, item: dict[str, Any]) -> str:
     return redirect_id
 
 
+def upsert_repair_alias(con: sqlite3.Connection, item: dict[str, Any]) -> str:
+    source_name = "player_identity_redirect"
+    source_entity_id = item["from_player_id"]
+    source_display_name = item["source_display_name"]
+    canonical_entity_id = item["to_player_id"]
+    notes = f"G3 tennis identity repair: {item['evidence_policy']} redirect from inactive abbreviation stub."
+    existing = con.execute(
+        """
+        select entity_alias_id, canonical_entity_id, notes
+        from entity_aliases
+        where entity_type = 'player'
+          and source_name = ?
+          and source_entity_id = ?
+          and source_display_name = ?
+        """,
+        (source_name, source_entity_id, source_display_name),
+    ).fetchone()
+    if not existing or existing["canonical_entity_id"] == canonical_entity_id:
+        return upsert_alias(
+            con,
+            entity_type="player",
+            canonical_entity_id=canonical_entity_id,
+            source_name=source_name,
+            source_entity_id=source_entity_id,
+            source_display_name=source_display_name,
+            confidence=float(item["confidence"]),
+            notes=notes,
+        )
+    existing_notes = str(existing["notes"] or "")
+    if not existing_notes.startswith("G3 tennis identity repair:"):
+        raise sqlite3.IntegrityError(
+            f"Refusing to remap non-G3 alias {source_display_name} from {existing['canonical_entity_id']} to {canonical_entity_id}"
+        )
+    alias_id = stable_id(
+        "alias",
+        "player",
+        canonical_entity_id,
+        source_name,
+        source_entity_id,
+        normalize_name(source_display_name),
+    )
+    now = utc_now()
+    con.execute(
+        """
+        update entity_aliases
+        set entity_alias_id = ?,
+            canonical_entity_id = ?,
+            confidence = max(confidence, ?),
+            last_seen_at = ?,
+            notes = ?
+        where entity_alias_id = ?
+        """,
+        (alias_id, canonical_entity_id, float(item["confidence"]), now, notes, existing["entity_alias_id"]),
+    )
+    return alias_id
+
+
 def repair_tennis_player_identity(con: sqlite3.Connection, apply: bool = False, dry_run: bool = True) -> dict[str, Any]:
     con.row_factory = sqlite3.Row
     ensure_repair_schema(con)
@@ -360,25 +417,23 @@ def repair_tennis_player_identity(con: sqlite3.Connection, apply: bool = False, 
     policy_counts = Counter(item["evidence_policy"] for item in items)
     ready_items = [item for item in items if item["candidate_status"] == "redirect_ready" and item.get("to_player_id")]
     unresolved_items = [item for item in items if item["candidate_status"] != "redirect_ready"]
-    for item in items:
-        upsert_redirect_candidate(con, item)
     redirects_written = 0
     aliases_written = 0
     stubs_deactivated = 0
     if apply:
+        stub_ids = [str(stub["player_id"]) for stub in stubs]
+        if stub_ids:
+            placeholders = ",".join("?" for _ in stub_ids)
+            con.execute(
+                f"delete from player_identity_redirect_candidates where sport = 'tennis' and from_player_id in ({placeholders})",
+                stub_ids,
+            )
+        for item in items:
+            upsert_redirect_candidate(con, item)
         for item in ready_items:
             upsert_redirect(con, item)
             redirects_written += 1
-            upsert_alias(
-                con,
-                entity_type="player",
-                canonical_entity_id=item["to_player_id"],
-                source_name="player_identity_redirect",
-                source_entity_id=item["from_player_id"],
-                source_display_name=item["source_display_name"],
-                confidence=float(item["confidence"]),
-                notes=f"G3 tennis identity repair: {item['evidence_policy']} redirect from inactive abbreviation stub.",
-            )
+            upsert_repair_alias(con, item)
             aliases_written += 1
         for stub in stubs:
             con.execute("update players set active = 0 where player_id = ?", (stub["player_id"],))

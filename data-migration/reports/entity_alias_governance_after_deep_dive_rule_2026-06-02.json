@@ -1,0 +1,278 @@
+{
+  "dry_run": false,
+  "generated_at": "2026-06-02T18:34:46.022466+00:00",
+  "ok": true,
+  "parser_module": "pipeline/sources/shared/entity_alias_governance.py",
+  "reports": [
+    {
+      "alias_rows": 4163,
+      "dry_run": false,
+      "family": "entity_alias_governance",
+      "policy_counts": {
+        "display_conflict": 1401,
+        "exact_or_reordered_name": 1298,
+        "n22_vetted": 299,
+        "name_mismatch": 95,
+        "player_identity_redirect": 601,
+        "unique_abbreviation_rescue": 469
+      },
+      "quarantined_samples": [
+        {
+          "entity_alias_id": "0133bb8fefba326aae27c25d7d3ab4efbcf6270c",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "014a5774447c6b46c93fc4b16b8a21c5d573d2c4",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "0159f013a45f988abc8201d753a08d815cb29b7f",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "01b85ec690f8354352ab2cf524a573fef27ee7a1",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "01c67887d4af7df2d2372c03084e401e82932285",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "01e0eb47ea898bb6e86178f90cb2c9aee6e5f872",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "0203eaf2ce767b52b5b8cde2a12521b42c3134c8",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "0220f98ef3203885d4686c96fbde9685292ae58f",
+          "policy": "name_mismatch",
+          "reason": "Player display name does not match canonical player.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "02212d7fc688f53083b8654a3defc969f9c26ff7",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "022c9e10681e9d16ea78548dcb227da9f0c4739f",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "024d65183b064cc19cd4315de712e0dcbb7c521b",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "026c854131557f4063650f5cf808507d1b50ff84",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "02a2ad51833b83d413464b65862a9183d9c648ba",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "02c1f7a6814a7c6539441734891553b41f4aa59b",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "02eec650004d088d39924e13fdf0b63fcaae6ed4",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "0336228a2e68f1c324b1e58aca5d205c4d020546",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "033cf886cfa7bc1bcc6d88e61656bd398ac46fbb",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "03754ed0f50fa8f4aed11e9ce8ca2bb27d192c08",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "03a9cb84d7256e031aaa0be4fcdf81d6e513c29f",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "045afcc77d69be7fd96dd00b1ff8286b5b355de9",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "048b7daf36970692c44f79692c0b4bab6301b6b5",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "04c6c8c78484f8a4aabdba9d0118fe5e274b9701",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "04d2af04cc8dfb4d292e1ab38b7457176a88cb52",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "04e66af9119007f9a1de52c86f6d15727ea9f35d",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        },
+        {
+          "entity_alias_id": "04f69b11971522e0164493677fe9840242ff1b98",
+          "policy": "display_conflict",
+          "reason": "Same source display maps to multiple canonical IDs.",
+          "status": "quarantined"
+        }
+      ],
+      "resolver_version": "alias-governance-v1",
+      "source_status_counts": {
+        "FanDuel Sportsbook": {
+          "active": 95
+        },
+        "Kalshi open orderbook": {
+          "active": 32
+        },
+        "Prediction market screenshot": {
+          "active": 136
+        },
+        "Robinhood prediction market": {
+          "active": 132
+        },
+        "flashscore": {
+          "active": 469,
+          "quarantined": 1440
+        },
+        "kalshi": {
+          "active": 242,
+          "quarantined": 1
+        },
+        "livesport": {
+          "active": 2
+        },
+        "player_identity_redirect": {
+          "active": 601
+        },
+        "sofascore": {
+          "active": 486,
+          "quarantined": 53
+        },
+        "tennis_player_match_context": {
+          "active": 196,
+          "quarantined": 1
+        },
+        "tennis_recent_form_metrics": {
+          "active": 276,
+          "quarantined": 1
+        }
+      },
+      "sport": "tennis",
+      "status_counts": {
+        "active": 2667,
+        "quarantined": 1496
+      },
+      "trusted_alias_rows": 2667
+    },
+    {
+      "alias_rows": 8236,
+      "dry_run": false,
+      "family": "entity_alias_governance",
+      "policy_counts": {
+        "exact_or_reordered_name": 1175,
+        "game_context_mapping": 721,
+        "mlb_name_only_unmatched": 87,
+        "player_source_id": 6253
+      },
+      "quarantined_samples": [],
+      "resolver_version": "alias-governance-v1",
+      "source_status_counts": {
+        "mlb_bullpen_features": {
+          "active": 518
+        },
+        "mlb_hitter_features": {
+          "active": 1305
+        },
+        "mlb_lineups": {
+          "active": 804
+        },
+        "mlb_markets": {
+          "active": 313,
+          "needs_review": 29
+        },
+        "mlb_pitcher_features": {
+          "active": 895
+        },
+        "mlb_player_context": {
+          "active": 1885,
+          "needs_review": 29
+        },
+        "mlb_predictions": {
+          "active": 956,
+          "needs_review": 29
+        },
+        "mlb_props": {
+          "active": 223
+        },
+        "mlb_results": {
+          "active": 1190
+        },
+        "mlb_team_context": {
+          "active": 30
+        },
+        "mlb_team_features": {
+          "active": 30
+        }
+      },
+      "sport": "mlb",
+      "status_counts": {
+        "active": 8149,
+        "needs_review": 87
+      },
+      "trusted_alias_rows": 8149
+    }
+  ],
+  "script": "data-migration/scripts/apply_entity_alias_governance.py"
+}

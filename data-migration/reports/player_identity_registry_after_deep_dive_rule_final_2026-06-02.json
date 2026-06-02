@@ -1,0 +1,38 @@
+{
+  "dry_run": false,
+  "generated_at": "2026-06-02T18:37:42.546357+00:00",
+  "ok": true,
+  "parser_module": "pipeline/sources/shared/player_identity_registry.py",
+  "promote_rescues": true,
+  "reports": [
+    {
+      "dry_run": false,
+      "family": "player_identity_registry",
+      "inserted_registry_rows": 3016,
+      "players": 3016,
+      "promote_rescues": true,
+      "registry_rows": 3016,
+      "registry_version": "player-identity-registry-v1",
+      "rescue_report": {
+        "ambiguous_or_missing_abbreviation": 429,
+        "not_abbreviation": 65,
+        "promoted_aliases": 470,
+        "source_rows": 1493,
+        "unique_abbreviation_candidate": 999
+      },
+      "sport": "tennis"
+    },
+    {
+      "dry_run": false,
+      "family": "player_identity_registry",
+      "inserted_registry_rows": 1162,
+      "players": 1162,
+      "promote_rescues": true,
+      "registry_rows": 1162,
+      "registry_version": "player-identity-registry-v1",
+      "rescue_report": {},
+      "sport": "mlb"
+    }
+  ],
+  "script": "data-migration/scripts/refresh_player_identity_registry.py"
+}
