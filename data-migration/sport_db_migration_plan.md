@@ -4,6 +4,12 @@
 
 This plan turns the file-heavy sports warehouse into sport-specific databases without deleting or mutating the current legacy warehouse.
 
+Operational files:
+
+- `data-migration/migration_ledger.md` tracks source groups, migration scripts, target tables, validation checks, and status.
+- `data-migration/migration_runbook.md` defines the repeatable phase loop.
+- `data-migration/reports/` stores inventory and validation reports.
+
 The immediate targets are:
 
 - `data-private/warehouse/sports/mlb/mlb.db`
