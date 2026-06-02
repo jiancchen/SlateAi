@@ -85,9 +85,30 @@ export function TennisDetail(props: TennisDetailProps) {
     if (actual) return statDisplay(actual)
     return expectedStatDisplay(expectedStats, expectedKey, suffix)
   }
+  const bpStatWithExpected = (
+    actual: AnyRecord | null | undefined,
+    expectedStats: AnyRecord | null | undefined,
+    pctKey: string,
+    madeKey: string,
+    attemptsKey: string
+  ) => {
+    if (actual) return statDisplay(actual)
+    const stats = expectedStats?.stats || {}
+    const made = expectedNumber(stats, madeKey)
+    const attempts = expectedNumber(stats, attemptsKey)
+    const pct = expectedNumber(stats, pctKey)
+    if (made != null && attempts != null) {
+      const pctLabel = pct != null ? ` (${formatPercent(pct, 1)})` : ''
+      return `Exp ${formatNumber(made, 0)}/${formatNumber(attempts, 0)}${pctLabel}`
+    }
+    return expectedStatDisplay(expectedStats, pctKey, '%')
+  }
   const expectedStatsObjectForPlayer = (playerName: string) =>
     warehouseContext?.players?.find((entry: AnyRecord) => normalizeTennisName(entry.name) === normalizeTennisName(playerName))
       ?.expectedStats?.stats || null
+  const expectedStatsRecordForPlayer = (playerName: string) =>
+    warehouseContext?.players?.find((entry: AnyRecord) => normalizeTennisName(entry.name) === normalizeTennisName(playerName))
+      ?.expectedStats || null
   const expectedNumber = (stats: AnyRecord | null | undefined, key: string) => {
     const value = stats?.[key]
     if (value === null || value === undefined || value === '') return null
@@ -108,20 +129,103 @@ export function TennisDetail(props: TennisDetailProps) {
     const winFromDeuce = pointWin ** 2 / (pointWin ** 2 + q ** 2)
     return Math.max(0, Math.min(100, (preDeuce + reachDeuce * winFromDeuce) * 100))
   }
+  const fractionFromValue = (value: any) => {
+    const match = String(value || '').match(/(\d+(?:\.\d+)?)\s*\/\s*(\d+(?:\.\d+)?)/)
+    if (!match) return null
+    const made = Number(match[1])
+    const attempts = Number(match[2])
+    return Number.isFinite(made) && Number.isFinite(attempts) ? { made, attempts } : null
+  }
+  const pressureSampleFromRows = (rows: AnyRecord[]) => {
+    let bpSaved = 0
+    let bpFaced = 0
+    let bpConverted = 0
+    let bpChances = 0
+    let savedRows = 0
+    let convertedRows = 0
+    rows.forEach((row) => {
+      const saved = fractionFromValue(row?.breakPointsSaved)
+      if (saved) {
+        bpSaved += saved.made
+        bpFaced += saved.attempts
+        savedRows += 1
+      }
+      const converted = fractionFromValue(row?.breakPointsConverted)
+      if (converted) {
+        bpConverted += converted.made
+        bpChances += converted.attempts
+        convertedRows += 1
+      }
+    })
+    if (!savedRows && !convertedRows) return null
+    return {
+      matches: rows.length,
+      bpSaved,
+      bpFaced,
+      bpSavedPct: bpFaced ? (bpSaved / bpFaced) * 100 : null,
+      bpFacedPerMatch: savedRows ? bpFaced / savedRows : null,
+      bpConverted,
+      bpChances,
+      bpConvertedPct: bpChances ? (bpConverted / bpChances) * 100 : null,
+      bpChancesPerMatch: convertedRows ? bpChances / convertedRows : null
+    }
+  }
+  const serviceStatsFromRecentMetric = (match: AnyRecord) => {
+    const metric = Object.values(match?.metrics || {}).find((entry: any) => entry?.raw?.serviceStats)
+    return (metric as AnyRecord | undefined)?.raw?.serviceStats || null
+  }
+  const pressureSampleFromRecentMatches = (matches: AnyRecord[]) =>
+    pressureSampleFromRows(matches.map(serviceStatsFromRecentMetric).filter(Boolean) as AnyRecord[])
+  const tournamentAliases = () => {
+    const values = [game?.stage, warehouseContext?.tournament, warehouseContext?.surface]
+      .map((value) => String(value || '').toLowerCase())
+      .filter(Boolean)
+    const joined = values.join(' ')
+    if (joined.includes('roland') || joined.includes('french open')) return ['roland garros', 'french open']
+    const stageName = String(game?.stage || '').split('|')[0]?.toLowerCase()
+    return stageName
+      .replace(/\b(atp|wta|challenger|men|women|round|singles)\b/g, ' ')
+      .split(/\s+/)
+      .filter((token) => token.length >= 4)
+      .slice(0, 3)
+  }
+  const isCurrentTournamentRecentMatch = (match: AnyRecord) => {
+    const event = String(match?.event || '').toLowerCase()
+    if (!event) return false
+    return tournamentAliases().some((alias) => event.includes(alias))
+  }
+  const pressureLine = (sample: AnyRecord | null | undefined, type: 'save' | 'convert') => {
+    if (!sample) return 'No sample'
+    if (type === 'save') {
+      if (!Number.isFinite(Number(sample.bpFaced))) return 'No BP faced row'
+      return `${formatNumber(Number(sample.bpSaved || 0), 0)}/${formatNumber(Number(sample.bpFaced), 0)} saved · ${formatNumber(Number(sample.bpFacedPerMatch || 0), 1)} faced/match`
+    }
+    if (!Number.isFinite(Number(sample.bpChances))) return 'No BP chance row'
+    return `${formatNumber(Number(sample.bpConverted || 0), 0)}/${formatNumber(Number(sample.bpChances), 0)} converted · ${formatNumber(Number(sample.bpChancesPerMatch || 0), 1)} chances/match`
+  }
   const pressureStatsForPlayer = (player: AnyRecord) => {
-    const expectedStats = player?.warehouseStats?.expectedStats?.stats || expectedStatsObjectForPlayer(player.name)
+    const expectedRecord = player?.warehouseStats?.expectedStats || expectedStatsRecordForPlayer(player.name)
+    const expectedStats = expectedRecord?.stats || expectedStatsObjectForPlayer(player.name)
     const weakness = player?.weakness || {}
+    const recentFormMatches = player?.warehouseStats?.recentFormMetrics?.matches || []
+    const last5FromRows = pressureSampleFromRecentMatches(recentFormMatches.slice(0, 5))
+    const tournamentFromRows = pressureSampleFromRecentMatches(recentFormMatches.filter(isCurrentTournamentRecentMatch))
+    const last5 = last5FromRows || expectedRecord?.pressureSamples?.last5
+    const tournament = tournamentFromRows || expectedRecord?.pressureSamples?.tournament
+    const recent = expectedRecord?.pressureSamples?.recent
     const hold =
       expectedNumber(weakness, 'serviceHoldPct') ??
       expectedNumber(weakness, 'holdPct') ??
       derivedHoldPct(expectedStats)
     return {
       name: player.name || player.label,
-      source: player?.warehouseStats?.expectedStats?.source || 'Expected stats',
-      sample: player?.warehouseStats?.expectedStats?.matches ?? expectedNumber(expectedStats, 'matches'),
+      source: expectedRecord?.source || 'Expected stats',
+      sample: expectedRecord?.matches ?? expectedNumber(expectedStats, 'matches'),
       hold,
-      bpSaved: expectedNumber(expectedStats, 'breakPointsSavedPct') ?? expectedNumber(weakness, 'breakPointsSavedPct'),
-      bpConverted: expectedNumber(expectedStats, 'breakPointsConvertedPct') ?? expectedNumber(weakness, 'breakPointsConvertedPct')
+      bpSaved: expectedNumber(last5, 'bpSavedPct') ?? expectedNumber(recent, 'bpSavedPct') ?? expectedNumber(expectedStats, 'breakPointsSavedPct') ?? expectedNumber(weakness, 'breakPointsSavedPct'),
+      bpConverted: expectedNumber(last5, 'bpConvertedPct') ?? expectedNumber(recent, 'bpConvertedPct') ?? expectedNumber(expectedStats, 'breakPointsConvertedPct') ?? expectedNumber(weakness, 'breakPointsConvertedPct'),
+      last5,
+      tournament
     }
   }
   const fallbackQualityPlayer = (player: AnyRecord) => {
@@ -871,6 +975,24 @@ export function TennisDetail(props: TennisDetailProps) {
                     <strong>{hasNumber(player.bpConverted) ? formatPercent(player.bpConverted, 1) : 'N/A'}</strong>
                   </div>
                 </div>
+                <div className="tennis-pressure-volume">
+                  <div>
+                    <span>Last 5 save</span>
+                    <strong>{pressureLine(player.last5, 'save')}</strong>
+                  </div>
+                  <div>
+                    <span>Last 5 convert</span>
+                    <strong>{pressureLine(player.last5, 'convert')}</strong>
+                  </div>
+                  <div>
+                    <span>Tourney save</span>
+                    <strong>{pressureLine(player.tournament, 'save')}</strong>
+                  </div>
+                  <div>
+                    <span>Tourney convert</span>
+                    <strong>{pressureLine(player.tournament, 'convert')}</strong>
+                  </div>
+                </div>
               </article>
             ))}
           </div>
@@ -1201,11 +1323,11 @@ export function TennisDetail(props: TennisDetailProps) {
                       </div>
                       <div>
                         <span>BP saved</span>
-                        <strong>{statWithExpected(stats?.breakPointsSaved, expectedStats, 'breakPointsSavedPct', '%')}</strong>
+                        <strong>{bpStatWithExpected(stats?.breakPointsSaved, expectedStats, 'breakPointsSavedPct', 'breakPointsSaved', 'breakPointsFaced')}</strong>
                       </div>
                       <div>
                         <span>BP converted</span>
-                        <strong>{statWithExpected(stats?.breakPointsConverted, expectedStats, 'breakPointsConvertedPct', '%')}</strong>
+                        <strong>{bpStatWithExpected(stats?.breakPointsConverted, expectedStats, 'breakPointsConvertedPct', 'breakPointsConverted', 'breakPointsToConvert')}</strong>
                       </div>
                       <div>
                         <span>Winners</span>

@@ -129,7 +129,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-birmingham-wong-vs-tarvet-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:57",
+      "capturedAt": "2026-06-02 02:57:10",
       "surface": "Grass",
       "tournament": "ATP Challenger Birmingham",
       "category": "Tennis",
@@ -158,16 +158,53 @@
               "doubleFaults": 2.4,
               "avgDoubleFaults": 2.4,
               "breakPointsSavedPct": 68,
-              "breakPointsConvertedPct": 27.9,
-              "breakPointsSaved": 105,
-              "breakPointsFaced": 160,
-              "breakPointsConverted": 51,
-              "breakPointsToConvert": 159,
+              "breakPointsConvertedPct": 34.4,
+              "breakPointsSaved": 34,
+              "breakPointsFaced": 50,
+              "breakPointsConverted": 11,
+              "breakPointsToConvert": 32,
               "tiebreaksWonPct": 80,
               "servicePointsWonPct": 58,
               "returnPointsWonPct": 31.4,
               "winners": 29.8,
-              "unforcedErrors": 39.2
+              "unforcedErrors": 39.2,
+              "breakPointsFacedPerMatch": 10,
+              "breakPointChancesPerMatch": 6.4
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 29,
+                "bpSaved": 105,
+                "bpFaced": 160,
+                "bpSavedPct": 65.6,
+                "bpFacedPerMatch": 5.5,
+                "bpConverted": 51,
+                "bpChances": 159,
+                "bpConvertedPct": 32.1,
+                "bpChancesPerMatch": 5.5
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 34,
+                "bpFaced": 50,
+                "bpSavedPct": 68,
+                "bpFacedPerMatch": 10,
+                "bpConverted": 11,
+                "bpChances": 32,
+                "bpConvertedPct": 34.4,
+                "bpChancesPerMatch": 6.4
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 34,
+                "bpFaced": 50,
+                "bpSavedPct": 68,
+                "bpFacedPerMatch": 10,
+                "bpConverted": 11,
+                "bpChances": 32,
+                "bpConvertedPct": 34.4,
+                "bpChancesPerMatch": 6.4
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/wong-chak-lam-coleman/289106#tab:statistics",
             "surface": "All surfaces"
@@ -3835,8 +3872,38 @@
               "secondServeWonPct": 48.2,
               "servicePointsWonPct": 58.2,
               "returnPointsWonPct": 32.2,
-              "breakPointsSavedPct": 36.7,
-              "breakPointsConvertedPct": 35.5
+              "breakPointsSavedPct": 42.3,
+              "breakPointsConvertedPct": 37,
+              "breakPointsSaved": 11,
+              "breakPointsFaced": 26,
+              "breakPointsFacedPerMatch": 5.2,
+              "breakPointsConverted": 10,
+              "breakPointsToConvert": 27,
+              "breakPointChancesPerMatch": 5.4
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 11,
+                "bpFaced": 26,
+                "bpSavedPct": 42.3,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 10,
+                "bpChances": 27,
+                "bpConvertedPct": 37,
+                "bpChancesPerMatch": 5.4
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 11,
+                "bpFaced": 26,
+                "bpSavedPct": 42.3,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 10,
+                "bpChances": 27,
+                "bpConvertedPct": 37,
+                "bpChancesPerMatch": 5.4
+              }
             },
             "sourceUrl": null
           },
@@ -6937,7 +7004,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 35,
+        "expectedStatRows": 43,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -6949,7 +7016,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-birmingham-wong-vs-tarvet-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:57",
+      "capturedAt": "2026-06-02 02:57:10",
       "surface": "Grass",
       "tournament": "ATP Challenger Birmingham",
       "category": "Tennis",
@@ -6978,16 +7045,53 @@
               "doubleFaults": 2.4,
               "avgDoubleFaults": 2.4,
               "breakPointsSavedPct": 68,
-              "breakPointsConvertedPct": 27.9,
-              "breakPointsSaved": 105,
-              "breakPointsFaced": 160,
-              "breakPointsConverted": 51,
-              "breakPointsToConvert": 159,
+              "breakPointsConvertedPct": 34.4,
+              "breakPointsSaved": 34,
+              "breakPointsFaced": 50,
+              "breakPointsConverted": 11,
+              "breakPointsToConvert": 32,
               "tiebreaksWonPct": 80,
               "servicePointsWonPct": 58,
               "returnPointsWonPct": 31.4,
               "winners": 29.8,
-              "unforcedErrors": 39.2
+              "unforcedErrors": 39.2,
+              "breakPointsFacedPerMatch": 10,
+              "breakPointChancesPerMatch": 6.4
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 29,
+                "bpSaved": 105,
+                "bpFaced": 160,
+                "bpSavedPct": 65.6,
+                "bpFacedPerMatch": 5.5,
+                "bpConverted": 51,
+                "bpChances": 159,
+                "bpConvertedPct": 32.1,
+                "bpChancesPerMatch": 5.5
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 34,
+                "bpFaced": 50,
+                "bpSavedPct": 68,
+                "bpFacedPerMatch": 10,
+                "bpConverted": 11,
+                "bpChances": 32,
+                "bpConvertedPct": 34.4,
+                "bpChancesPerMatch": 6.4
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 34,
+                "bpFaced": 50,
+                "bpSavedPct": 68,
+                "bpFacedPerMatch": 10,
+                "bpConverted": 11,
+                "bpChances": 32,
+                "bpConvertedPct": 34.4,
+                "bpChancesPerMatch": 6.4
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/wong-chak-lam-coleman/289106#tab:statistics",
             "surface": "All surfaces"
@@ -10655,8 +10759,38 @@
               "secondServeWonPct": 48.2,
               "servicePointsWonPct": 58.2,
               "returnPointsWonPct": 32.2,
-              "breakPointsSavedPct": 36.7,
-              "breakPointsConvertedPct": 35.5
+              "breakPointsSavedPct": 42.3,
+              "breakPointsConvertedPct": 37,
+              "breakPointsSaved": 11,
+              "breakPointsFaced": 26,
+              "breakPointsFacedPerMatch": 5.2,
+              "breakPointsConverted": 10,
+              "breakPointsToConvert": 27,
+              "breakPointChancesPerMatch": 5.4
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 11,
+                "bpFaced": 26,
+                "bpSavedPct": 42.3,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 10,
+                "bpChances": 27,
+                "bpConvertedPct": 37,
+                "bpChancesPerMatch": 5.4
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 11,
+                "bpFaced": 26,
+                "bpSavedPct": 42.3,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 10,
+                "bpChances": 27,
+                "bpConvertedPct": 37,
+                "bpChancesPerMatch": 5.4
+              }
             },
             "sourceUrl": null
           },
@@ -13757,7 +13891,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 35,
+        "expectedStatRows": 43,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -13820,16 +13954,53 @@
               "doubleFaults": 2.4,
               "avgDoubleFaults": 2.4,
               "breakPointsSavedPct": 68,
-              "breakPointsConvertedPct": 27.9,
-              "breakPointsSaved": 105,
-              "breakPointsFaced": 160,
-              "breakPointsConverted": 51,
-              "breakPointsToConvert": 159,
+              "breakPointsConvertedPct": 34.4,
+              "breakPointsSaved": 34,
+              "breakPointsFaced": 50,
+              "breakPointsConverted": 11,
+              "breakPointsToConvert": 32,
               "tiebreaksWonPct": 80,
               "servicePointsWonPct": 58,
               "returnPointsWonPct": 31.4,
               "winners": 29.8,
-              "unforcedErrors": 39.2
+              "unforcedErrors": 39.2,
+              "breakPointsFacedPerMatch": 10,
+              "breakPointChancesPerMatch": 6.4
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 29,
+                "bpSaved": 105,
+                "bpFaced": 160,
+                "bpSavedPct": 65.6,
+                "bpFacedPerMatch": 5.5,
+                "bpConverted": 51,
+                "bpChances": 159,
+                "bpConvertedPct": 32.1,
+                "bpChancesPerMatch": 5.5
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 34,
+                "bpFaced": 50,
+                "bpSavedPct": 68,
+                "bpFacedPerMatch": 10,
+                "bpConverted": 11,
+                "bpChances": 32,
+                "bpConvertedPct": 34.4,
+                "bpChancesPerMatch": 6.4
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 34,
+                "bpFaced": 50,
+                "bpSavedPct": 68,
+                "bpFacedPerMatch": 10,
+                "bpConverted": 11,
+                "bpChances": 32,
+                "bpConvertedPct": 34.4,
+                "bpChancesPerMatch": 6.4
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/wong-chak-lam-coleman/289106#tab:statistics",
             "surface": "All surfaces"
@@ -17532,8 +17703,38 @@
               "secondServeWonPct": 48.2,
               "servicePointsWonPct": 58.2,
               "returnPointsWonPct": 32.2,
-              "breakPointsSavedPct": 36.7,
-              "breakPointsConvertedPct": 35.5
+              "breakPointsSavedPct": 42.3,
+              "breakPointsConvertedPct": 37,
+              "breakPointsSaved": 11,
+              "breakPointsFaced": 26,
+              "breakPointsFacedPerMatch": 5.2,
+              "breakPointsConverted": 10,
+              "breakPointsToConvert": 27,
+              "breakPointChancesPerMatch": 5.4
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 11,
+                "bpFaced": 26,
+                "bpSavedPct": 42.3,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 10,
+                "bpChances": 27,
+                "bpConvertedPct": 37,
+                "bpChancesPerMatch": 5.4
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 11,
+                "bpFaced": 26,
+                "bpSavedPct": 42.3,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 10,
+                "bpChances": 27,
+                "bpConvertedPct": 37,
+                "bpChancesPerMatch": 5.4
+              }
             },
             "sourceUrl": null
           },

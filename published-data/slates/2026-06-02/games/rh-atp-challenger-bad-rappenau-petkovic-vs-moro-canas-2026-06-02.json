@@ -129,7 +129,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:57",
+      "capturedAt": "2026-06-02 02:57:10",
       "surface": "Clay",
       "tournament": "ATP Challenger Bad Rappenau",
       "category": "Tennis",
@@ -878,10 +878,40 @@
               "secondServeWonPct": 53.4,
               "servicePointsWonPct": 58.8,
               "returnPointsWonPct": 40.4,
-              "breakPointsSavedPct": 56.1,
-              "breakPointsConvertedPct": 38.2,
+              "breakPointsSavedPct": 56.4,
+              "breakPointsConvertedPct": 42.5,
               "winners": 19.8,
-              "unforcedErrors": 35.2
+              "unforcedErrors": 35.2,
+              "breakPointsSaved": 22,
+              "breakPointsFaced": 39,
+              "breakPointsFacedPerMatch": 7.8,
+              "breakPointsConverted": 17,
+              "breakPointsToConvert": 40,
+              "breakPointChancesPerMatch": 8
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 22,
+                "bpFaced": 39,
+                "bpSavedPct": 56.4,
+                "bpFacedPerMatch": 7.8,
+                "bpConverted": 17,
+                "bpChances": 40,
+                "bpConvertedPct": 42.5,
+                "bpChancesPerMatch": 8
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 22,
+                "bpFaced": 39,
+                "bpSavedPct": 56.4,
+                "bpFacedPerMatch": 7.8,
+                "bpConverted": 17,
+                "bpChances": 40,
+                "bpConvertedPct": 42.5,
+                "bpChancesPerMatch": 8
+              }
             },
             "sourceUrl": null
           },
@@ -4507,7 +4537,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 14,
+        "expectedStatRows": 20,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -4519,7 +4549,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:57",
+      "capturedAt": "2026-06-02 02:57:10",
       "surface": "Clay",
       "tournament": "ATP Challenger Bad Rappenau",
       "category": "Tennis",
@@ -5268,10 +5298,40 @@
               "secondServeWonPct": 53.4,
               "servicePointsWonPct": 58.8,
               "returnPointsWonPct": 40.4,
-              "breakPointsSavedPct": 56.1,
-              "breakPointsConvertedPct": 38.2,
+              "breakPointsSavedPct": 56.4,
+              "breakPointsConvertedPct": 42.5,
               "winners": 19.8,
-              "unforcedErrors": 35.2
+              "unforcedErrors": 35.2,
+              "breakPointsSaved": 22,
+              "breakPointsFaced": 39,
+              "breakPointsFacedPerMatch": 7.8,
+              "breakPointsConverted": 17,
+              "breakPointsToConvert": 40,
+              "breakPointChancesPerMatch": 8
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 22,
+                "bpFaced": 39,
+                "bpSavedPct": 56.4,
+                "bpFacedPerMatch": 7.8,
+                "bpConverted": 17,
+                "bpChances": 40,
+                "bpConvertedPct": 42.5,
+                "bpChancesPerMatch": 8
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 22,
+                "bpFaced": 39,
+                "bpSavedPct": 56.4,
+                "bpFacedPerMatch": 7.8,
+                "bpConverted": 17,
+                "bpChances": 40,
+                "bpConvertedPct": 42.5,
+                "bpChancesPerMatch": 8
+              }
             },
             "sourceUrl": null
           },
@@ -8897,7 +8957,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 14,
+        "expectedStatRows": 20,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -9715,10 +9775,40 @@
               "secondServeWonPct": 53.4,
               "servicePointsWonPct": 58.8,
               "returnPointsWonPct": 40.4,
-              "breakPointsSavedPct": 56.1,
-              "breakPointsConvertedPct": 38.2,
+              "breakPointsSavedPct": 56.4,
+              "breakPointsConvertedPct": 42.5,
               "winners": 19.8,
-              "unforcedErrors": 35.2
+              "unforcedErrors": 35.2,
+              "breakPointsSaved": 22,
+              "breakPointsFaced": 39,
+              "breakPointsFacedPerMatch": 7.8,
+              "breakPointsConverted": 17,
+              "breakPointsToConvert": 40,
+              "breakPointChancesPerMatch": 8
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 22,
+                "bpFaced": 39,
+                "bpSavedPct": 56.4,
+                "bpFacedPerMatch": 7.8,
+                "bpConverted": 17,
+                "bpChances": 40,
+                "bpConvertedPct": 42.5,
+                "bpChancesPerMatch": 8
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 22,
+                "bpFaced": 39,
+                "bpSavedPct": 56.4,
+                "bpFacedPerMatch": 7.8,
+                "bpConverted": 17,
+                "bpChances": 40,
+                "bpConvertedPct": 42.5,
+                "bpChancesPerMatch": 8
+              }
             },
             "sourceUrl": null
           },

@@ -138,7 +138,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-bad-rappenau-mikrut-vs-marti-pujolras-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:57",
+      "capturedAt": "2026-06-02 02:57:10",
       "surface": "Clay",
       "tournament": "ATP Challenger Bad Rappenau",
       "category": "Tennis",
@@ -163,10 +163,40 @@
               "secondServeWonPct": 55.4,
               "servicePointsWonPct": 66,
               "returnPointsWonPct": 30.4,
-              "breakPointsSavedPct": 55.9,
-              "breakPointsConvertedPct": 43.3,
+              "breakPointsSavedPct": 54.2,
+              "breakPointsConvertedPct": 52.9,
               "winners": 20.5,
-              "unforcedErrors": 17.2
+              "unforcedErrors": 17.2,
+              "breakPointsSaved": 13,
+              "breakPointsFaced": 24,
+              "breakPointsFacedPerMatch": 4.8,
+              "breakPointsConverted": 9,
+              "breakPointsToConvert": 17,
+              "breakPointChancesPerMatch": 3.4
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 13,
+                "bpFaced": 24,
+                "bpSavedPct": 54.2,
+                "bpFacedPerMatch": 4.8,
+                "bpConverted": 9,
+                "bpChances": 17,
+                "bpConvertedPct": 52.9,
+                "bpChancesPerMatch": 3.4
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 13,
+                "bpFaced": 24,
+                "bpSavedPct": 54.2,
+                "bpFacedPerMatch": 4.8,
+                "bpConverted": 9,
+                "bpChances": 17,
+                "bpConvertedPct": 52.9,
+                "bpChancesPerMatch": 3.4
+              }
             },
             "sourceUrl": null
           },
@@ -3601,7 +3631,37 @@
               "breakPointsSavedPct": 50,
               "breakPointsConvertedPct": 42.9,
               "winners": 24,
-              "unforcedErrors": 26
+              "unforcedErrors": 26,
+              "breakPointsSaved": 4,
+              "breakPointsFaced": 8,
+              "breakPointsFacedPerMatch": 4,
+              "breakPointsConverted": 6,
+              "breakPointsToConvert": 14,
+              "breakPointChancesPerMatch": 7
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 4,
+                "bpFaced": 8,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 4,
+                "bpConverted": 6,
+                "bpChances": 14,
+                "bpConvertedPct": 42.9,
+                "bpChancesPerMatch": 7
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 4,
+                "bpFaced": 8,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 4,
+                "bpConverted": 6,
+                "bpChances": 14,
+                "bpConvertedPct": 42.9,
+                "bpChancesPerMatch": 7
+              }
             },
             "sourceUrl": null
           },
@@ -5349,7 +5409,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 28,
+        "expectedStatRows": 40,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -5361,7 +5421,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-bad-rappenau-mikrut-vs-marti-pujolras-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:57",
+      "capturedAt": "2026-06-02 02:57:10",
       "surface": "Clay",
       "tournament": "ATP Challenger Bad Rappenau",
       "category": "Tennis",
@@ -5386,10 +5446,40 @@
               "secondServeWonPct": 55.4,
               "servicePointsWonPct": 66,
               "returnPointsWonPct": 30.4,
-              "breakPointsSavedPct": 55.9,
-              "breakPointsConvertedPct": 43.3,
+              "breakPointsSavedPct": 54.2,
+              "breakPointsConvertedPct": 52.9,
               "winners": 20.5,
-              "unforcedErrors": 17.2
+              "unforcedErrors": 17.2,
+              "breakPointsSaved": 13,
+              "breakPointsFaced": 24,
+              "breakPointsFacedPerMatch": 4.8,
+              "breakPointsConverted": 9,
+              "breakPointsToConvert": 17,
+              "breakPointChancesPerMatch": 3.4
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 13,
+                "bpFaced": 24,
+                "bpSavedPct": 54.2,
+                "bpFacedPerMatch": 4.8,
+                "bpConverted": 9,
+                "bpChances": 17,
+                "bpConvertedPct": 52.9,
+                "bpChancesPerMatch": 3.4
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 13,
+                "bpFaced": 24,
+                "bpSavedPct": 54.2,
+                "bpFacedPerMatch": 4.8,
+                "bpConverted": 9,
+                "bpChances": 17,
+                "bpConvertedPct": 52.9,
+                "bpChancesPerMatch": 3.4
+              }
             },
             "sourceUrl": null
           },
@@ -8824,7 +8914,37 @@
               "breakPointsSavedPct": 50,
               "breakPointsConvertedPct": 42.9,
               "winners": 24,
-              "unforcedErrors": 26
+              "unforcedErrors": 26,
+              "breakPointsSaved": 4,
+              "breakPointsFaced": 8,
+              "breakPointsFacedPerMatch": 4,
+              "breakPointsConverted": 6,
+              "breakPointsToConvert": 14,
+              "breakPointChancesPerMatch": 7
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 4,
+                "bpFaced": 8,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 4,
+                "bpConverted": 6,
+                "bpChances": 14,
+                "bpConvertedPct": 42.9,
+                "bpChancesPerMatch": 7
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 4,
+                "bpFaced": 8,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 4,
+                "bpConverted": 6,
+                "bpChances": 14,
+                "bpConvertedPct": 42.9,
+                "bpChancesPerMatch": 7
+              }
             },
             "sourceUrl": null
           },
@@ -10572,7 +10692,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 28,
+        "expectedStatRows": 40,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -10635,10 +10755,40 @@
               "secondServeWonPct": 55.4,
               "servicePointsWonPct": 66,
               "returnPointsWonPct": 30.4,
-              "breakPointsSavedPct": 55.9,
-              "breakPointsConvertedPct": 43.3,
+              "breakPointsSavedPct": 54.2,
+              "breakPointsConvertedPct": 52.9,
               "winners": 20.5,
-              "unforcedErrors": 17.2
+              "unforcedErrors": 17.2,
+              "breakPointsSaved": 13,
+              "breakPointsFaced": 24,
+              "breakPointsFacedPerMatch": 4.8,
+              "breakPointsConverted": 9,
+              "breakPointsToConvert": 17,
+              "breakPointChancesPerMatch": 3.4
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 13,
+                "bpFaced": 24,
+                "bpSavedPct": 54.2,
+                "bpFacedPerMatch": 4.8,
+                "bpConverted": 9,
+                "bpChances": 17,
+                "bpConvertedPct": 52.9,
+                "bpChancesPerMatch": 3.4
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 13,
+                "bpFaced": 24,
+                "bpSavedPct": 54.2,
+                "bpFacedPerMatch": 4.8,
+                "bpConverted": 9,
+                "bpChances": 17,
+                "bpConvertedPct": 52.9,
+                "bpChancesPerMatch": 3.4
+              }
             },
             "sourceUrl": null
           },
@@ -14113,7 +14263,37 @@
               "breakPointsSavedPct": 50,
               "breakPointsConvertedPct": 42.9,
               "winners": 24,
-              "unforcedErrors": 26
+              "unforcedErrors": 26,
+              "breakPointsSaved": 4,
+              "breakPointsFaced": 8,
+              "breakPointsFacedPerMatch": 4,
+              "breakPointsConverted": 6,
+              "breakPointsToConvert": 14,
+              "breakPointChancesPerMatch": 7
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 4,
+                "bpFaced": 8,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 4,
+                "bpConverted": 6,
+                "bpChances": 14,
+                "bpConvertedPct": 42.9,
+                "bpChancesPerMatch": 7
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 4,
+                "bpFaced": 8,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 4,
+                "bpConverted": 6,
+                "bpChances": 14,
+                "bpConvertedPct": 42.9,
+                "bpChancesPerMatch": 7
+              }
             },
             "sourceUrl": null
           },

@@ -226,12 +226,82 @@ def as_number(value: Any) -> float | None:
 
 
 def pct_from_fraction_text(value: Any) -> float | None:
+    parsed = fraction_from_text(value)
+    if not parsed:
+        return None
+    made, total = parsed
+    return round(made / total * 100, 1) if total else None
+
+
+def fraction_from_text(value: Any) -> tuple[float, float] | None:
     match = re.search(r"(\d+(?:\.\d+)?)\s*/\s*(\d+(?:\.\d+)?)", str(value or ""))
     if not match:
         return None
     made = float(match.group(1))
     total = float(match.group(2))
-    return round(made / total * 100, 1) if total else None
+    return (made, total)
+
+
+def pressure_sample_from_service_stats(service_stats: list[dict[str, Any]]) -> dict[str, Any] | None:
+    if not service_stats:
+        return None
+    saved_total = 0.0
+    faced_total = 0.0
+    converted_total = 0.0
+    chances_total = 0.0
+    saved_matches = 0
+    converted_matches = 0
+    for row in service_stats:
+        saved = fraction_from_text(row.get("breakPointsSaved"))
+        if saved:
+            saved_total += saved[0]
+            faced_total += saved[1]
+            saved_matches += 1
+        converted = fraction_from_text(row.get("breakPointsConverted"))
+        if converted:
+            converted_total += converted[0]
+            chances_total += converted[1]
+            converted_matches += 1
+    if not saved_matches and not converted_matches:
+        return None
+    sample = {
+        "matches": len(service_stats),
+        "bpSaved": round(saved_total, 1),
+        "bpFaced": round(faced_total, 1),
+        "bpSavedPct": round(saved_total / faced_total * 100, 1) if faced_total else None,
+        "bpFacedPerMatch": round(faced_total / saved_matches, 1) if saved_matches else None,
+        "bpConverted": round(converted_total, 1),
+        "bpChances": round(chances_total, 1),
+        "bpConvertedPct": round(converted_total / chances_total * 100, 1) if chances_total else None,
+        "bpChancesPerMatch": round(chances_total / converted_matches, 1) if converted_matches else None,
+    }
+    return {key: value for key, value in sample.items() if value is not None}
+
+
+def complete_pressure_samples_from_stats(pressure_samples: dict[str, Any], stats: dict[str, Any]) -> dict[str, Any]:
+    if not pressure_samples:
+        return pressure_samples
+    converted = stats.get("breakPointsConverted")
+    chances = stats.get("breakPointsToConvert")
+    converted_pct = stats.get("breakPointsConvertedPct")
+    chances_per_match = stats.get("breakPointChancesPerMatch")
+    if converted is None or chances is None:
+        return pressure_samples
+    completed: dict[str, Any] = {}
+    for key, sample in pressure_samples.items():
+        if not isinstance(sample, dict):
+            completed[key] = sample
+            continue
+        if sample.get("bpChances") in (None, 0) and sample.get("bpConverted") in (None, 0):
+            sample = {
+                **sample,
+                "bpConverted": converted,
+                "bpChances": chances,
+                "bpConvertedPct": converted_pct,
+                "bpChancesPerMatch": chances_per_match,
+            }
+        completed[key] = {item_key: value for item_key, value in sample.items() if value is not None}
+    return completed
 
 
 def expected_stats_from_form_metrics(form_metrics: dict[str, Any] | None) -> dict[str, Any] | None:
@@ -283,6 +353,21 @@ def expected_stats_from_form_metrics(form_metrics: dict[str, Any] | None) -> dic
         "unforcedErrors": avg("unforcedErrors"),
         "forcedErrors": None,
     }
+    recent_pressure = pressure_sample_from_service_stats(service_stats)
+    last5_pressure = pressure_sample_from_service_stats(service_stats[:5])
+    if recent_pressure:
+        stats.update(
+            {
+                "breakPointsSaved": recent_pressure.get("bpSaved"),
+                "breakPointsFaced": recent_pressure.get("bpFaced"),
+                "breakPointsSavedPct": recent_pressure.get("bpSavedPct"),
+                "breakPointsFacedPerMatch": recent_pressure.get("bpFacedPerMatch"),
+                "breakPointsConverted": recent_pressure.get("bpConverted"),
+                "breakPointsToConvert": recent_pressure.get("bpChances"),
+                "breakPointsConvertedPct": recent_pressure.get("bpConvertedPct"),
+                "breakPointChancesPerMatch": recent_pressure.get("bpChancesPerMatch"),
+            }
+        )
     stats = {key: value for key, value in stats.items() if value is not None}
     if not stats:
         return None
@@ -291,6 +376,10 @@ def expected_stats_from_form_metrics(form_metrics: dict[str, Any] | None) -> dic
         "matches": len(service_stats),
         "note": "Pregame expected stats are averaged from Flashscore player-page recent singles matches joined to stat feeds.",
         "stats": stats,
+        "pressureSamples": {
+            "recent": recent_pressure,
+            "last5": last5_pressure,
+        },
         "sourceUrl": None,
     }
 
@@ -341,6 +430,20 @@ def expected_stats(conn: sqlite3.Connection, match_id: str) -> dict[str, dict[st
             for match in payload.get("recentMatches") or []
             if match.get("serviceStats")
         ]
+        recent_pressure = pressure_sample_from_service_stats(recent_stats)
+        last5_pressure = pressure_sample_from_service_stats(recent_stats[:5])
+        pressure_stats = {}
+        if recent_pressure:
+            pressure_stats = {
+                "breakPointsSaved": recent_pressure.get("bpSaved"),
+                "breakPointsFaced": recent_pressure.get("bpFaced"),
+                "breakPointsSavedPct": recent_pressure.get("bpSavedPct"),
+                "breakPointsFacedPerMatch": recent_pressure.get("bpFacedPerMatch"),
+                "breakPointsConverted": recent_pressure.get("bpConverted"),
+                "breakPointsToConvert": recent_pressure.get("bpChances"),
+                "breakPointsConvertedPct": recent_pressure.get("bpConvertedPct"),
+                "breakPointChancesPerMatch": recent_pressure.get("bpChancesPerMatch"),
+            }
         player_key = normalize_name(row["player_name"])
         result[player_key] = {
             "name": row["player_name"],
@@ -359,6 +462,11 @@ def expected_stats(conn: sqlite3.Connection, match_id: str) -> dict[str, dict[st
                 "winners": average([stat.get("winners") for stat in recent_stats]),
                 "unforcedErrors": average([stat.get("unforcedErrors") for stat in recent_stats]),
                 "forcedErrors": None,
+                **pressure_stats,
+            },
+            "pressureSamples": {
+                "recent": recent_pressure,
+                "last5": last5_pressure,
             },
         }
     return result
@@ -421,12 +529,29 @@ def player_page_expected_stats(conn: sqlite3.Connection, date: str) -> dict[str,
         stats = {name: value for name, value in stats.items() if value is not None}
         if not stats:
             continue
+        saved = as_number(row["break_points_saved"])
+        faced = as_number(row["break_points_faced"])
+        converted = as_number(row["break_points_converted"])
+        chances = as_number(row["break_points_to_convert"])
+        pressure_sample = {
+            "matches": row["matches_total"],
+            "bpSaved": saved,
+            "bpFaced": faced,
+            "bpSavedPct": row["break_points_saved_pct"] or (round(saved / faced * 100, 1) if saved is not None and faced else None),
+            "bpFacedPerMatch": round(faced / row["matches_total"], 1) if faced is not None and row["matches_total"] else None,
+            "bpConverted": converted,
+            "bpChances": chances,
+            "bpConvertedPct": row["break_points_converted_pct"] or (round(converted / chances * 100, 1) if converted is not None and chances else None),
+            "bpChancesPerMatch": round(chances / row["matches_total"], 1) if chances is not None and row["matches_total"] else None,
+        }
+        pressure_sample = {key: value for key, value in pressure_sample.items() if value is not None}
         expected = {
             "name": row["player_name"],
             "source": f"SofaScore player page {row['season']} {row['surface']} stats",
             "matches": row["matches_total"],
             "note": "Pregame expected stats from SofaScore player-page surface filter; hold is derived from first-serve-in, first-serve-won, and second-serve-won.",
             "stats": stats,
+            "pressureSamples": {"surface": pressure_sample} if pressure_sample else {},
             "sourceUrl": row["source_url"],
             "surface": row["surface"],
         }
@@ -759,11 +884,15 @@ def export_context(date: str) -> dict[str, Any]:
                 else page_expected.get("note")
                 or "Pregame expected stats from SofaScore tournament-season aggregate."
             )
+            pressure_samples = {}
+            for expected in (season_expected, page_expected, recent_expected, form_expected):
+                pressure_samples.update({key: value for key, value in (expected.get("pressureSamples") or {}).items() if value})
             return {
                 "source": source,
                 "matches": form_expected.get("matches") or recent_expected.get("matches") or page_expected.get("matches") or season_expected.get("matches"),
                 "note": note,
                 "stats": stats,
+                "pressureSamples": complete_pressure_samples_from_stats(pressure_samples, stats),
                 "sourceUrl": form_expected.get("sourceUrl") or recent_expected.get("sourceUrl") or page_expected.get("sourceUrl"),
             }
 
@@ -920,6 +1049,16 @@ def export_context(date: str) -> dict[str, Any]:
                             **expected_stats_non_null,
                             **form_stats_non_null,
                         },
+                        "pressureSamples": complete_pressure_samples_from_stats(
+                            {
+                                **(expected.get("pressureSamples") or {}),
+                                **(form_expected.get("pressureSamples") or {}),
+                            },
+                            {
+                                **expected_stats_non_null,
+                                **form_stats_non_null,
+                            },
+                        ),
                         "sourceUrl": expected.get("sourceUrl") or form_expected.get("sourceUrl"),
                     }
                 elif form_expected:

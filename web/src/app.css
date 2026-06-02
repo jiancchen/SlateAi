@@ -7309,6 +7309,34 @@ h3 {
   font: 850 0.86rem/1 var(--mono);
 }
 
+.tennis-pressure-volume {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.tennis-pressure-volume div {
+  min-width: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 7px;
+}
+
+.tennis-pressure-volume span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.tennis-pressure-volume strong {
+  display: block;
+  margin-top: 3px;
+  color: var(--heading);
+  font: 750 0.68rem/1.25 var(--mono);
+  overflow-wrap: anywhere;
+}
+
 .tennis-match-log-row span {
   color: var(--heading);
   font-size: 0.78rem;

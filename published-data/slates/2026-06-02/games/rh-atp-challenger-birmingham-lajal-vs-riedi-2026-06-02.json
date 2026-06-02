@@ -132,7 +132,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-birmingham-lajal-vs-riedi-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:57",
+      "capturedAt": "2026-06-02 02:57:10",
       "surface": "Grass",
       "tournament": "ATP Challenger Birmingham",
       "category": "Tennis",
@@ -160,17 +160,54 @@
               "avgAces": 2.6,
               "doubleFaults": 1.8,
               "avgDoubleFaults": 1.8,
-              "breakPointsSavedPct": 42.2,
-              "breakPointsConvertedPct": 39.4,
-              "breakPointsSaved": 93,
-              "breakPointsFaced": 140,
-              "breakPointsConverted": 55,
-              "breakPointsToConvert": 165,
+              "breakPointsSavedPct": 48.1,
+              "breakPointsConvertedPct": 37.8,
+              "breakPointsSaved": 13,
+              "breakPointsFaced": 27,
+              "breakPointsConverted": 17,
+              "breakPointsToConvert": 45,
               "tiebreaksWonPct": 50,
               "servicePointsWonPct": 62.4,
               "returnPointsWonPct": 38.2,
               "winners": 27.8,
-              "unforcedErrors": 27.5
+              "unforcedErrors": 27.5,
+              "breakPointsFacedPerMatch": 5.4,
+              "breakPointChancesPerMatch": 9
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 29,
+                "bpSaved": 93,
+                "bpFaced": 140,
+                "bpSavedPct": 66.4,
+                "bpFacedPerMatch": 4.8,
+                "bpConverted": 55,
+                "bpChances": 165,
+                "bpConvertedPct": 33.3,
+                "bpChancesPerMatch": 5.7
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 13,
+                "bpFaced": 27,
+                "bpSavedPct": 48.1,
+                "bpFacedPerMatch": 5.4,
+                "bpConverted": 17,
+                "bpChances": 45,
+                "bpConvertedPct": 37.8,
+                "bpChancesPerMatch": 9
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 13,
+                "bpFaced": 27,
+                "bpSavedPct": 48.1,
+                "bpFacedPerMatch": 5.4,
+                "bpConverted": 17,
+                "bpChances": 45,
+                "bpConvertedPct": 37.8,
+                "bpChancesPerMatch": 9
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/riedi-leandro/321788#tab:statistics",
             "surface": "All surfaces"
@@ -3753,10 +3790,40 @@
               "secondServeWonPct": 47.6,
               "servicePointsWonPct": 63.2,
               "returnPointsWonPct": 36.4,
-              "breakPointsSavedPct": 69.6,
-              "breakPointsConvertedPct": 31.7,
+              "breakPointsSavedPct": 79.6,
+              "breakPointsConvertedPct": 37,
               "winners": 19,
-              "unforcedErrors": 28.2
+              "unforcedErrors": 28.2,
+              "breakPointsSaved": 39,
+              "breakPointsFaced": 49,
+              "breakPointsFacedPerMatch": 9.8,
+              "breakPointsConverted": 10,
+              "breakPointsToConvert": 27,
+              "breakPointChancesPerMatch": 5.4
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 39,
+                "bpFaced": 49,
+                "bpSavedPct": 79.6,
+                "bpFacedPerMatch": 9.8,
+                "bpConverted": 10,
+                "bpChances": 27,
+                "bpConvertedPct": 37,
+                "bpChancesPerMatch": 5.4
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 39,
+                "bpFaced": 49,
+                "bpSavedPct": 79.6,
+                "bpFacedPerMatch": 9.8,
+                "bpConverted": 10,
+                "bpChances": 27,
+                "bpConvertedPct": 37,
+                "bpChancesPerMatch": 5.4
+              }
             },
             "sourceUrl": null
           },
@@ -7247,7 +7314,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -7259,7 +7326,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-birmingham-lajal-vs-riedi-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:57",
+      "capturedAt": "2026-06-02 02:57:10",
       "surface": "Grass",
       "tournament": "ATP Challenger Birmingham",
       "category": "Tennis",
@@ -7287,17 +7354,54 @@
               "avgAces": 2.6,
               "doubleFaults": 1.8,
               "avgDoubleFaults": 1.8,
-              "breakPointsSavedPct": 42.2,
-              "breakPointsConvertedPct": 39.4,
-              "breakPointsSaved": 93,
-              "breakPointsFaced": 140,
-              "breakPointsConverted": 55,
-              "breakPointsToConvert": 165,
+              "breakPointsSavedPct": 48.1,
+              "breakPointsConvertedPct": 37.8,
+              "breakPointsSaved": 13,
+              "breakPointsFaced": 27,
+              "breakPointsConverted": 17,
+              "breakPointsToConvert": 45,
               "tiebreaksWonPct": 50,
               "servicePointsWonPct": 62.4,
               "returnPointsWonPct": 38.2,
               "winners": 27.8,
-              "unforcedErrors": 27.5
+              "unforcedErrors": 27.5,
+              "breakPointsFacedPerMatch": 5.4,
+              "breakPointChancesPerMatch": 9
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 29,
+                "bpSaved": 93,
+                "bpFaced": 140,
+                "bpSavedPct": 66.4,
+                "bpFacedPerMatch": 4.8,
+                "bpConverted": 55,
+                "bpChances": 165,
+                "bpConvertedPct": 33.3,
+                "bpChancesPerMatch": 5.7
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 13,
+                "bpFaced": 27,
+                "bpSavedPct": 48.1,
+                "bpFacedPerMatch": 5.4,
+                "bpConverted": 17,
+                "bpChances": 45,
+                "bpConvertedPct": 37.8,
+                "bpChancesPerMatch": 9
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 13,
+                "bpFaced": 27,
+                "bpSavedPct": 48.1,
+                "bpFacedPerMatch": 5.4,
+                "bpConverted": 17,
+                "bpChances": 45,
+                "bpConvertedPct": 37.8,
+                "bpChancesPerMatch": 9
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/riedi-leandro/321788#tab:statistics",
             "surface": "All surfaces"
@@ -10880,10 +10984,40 @@
               "secondServeWonPct": 47.6,
               "servicePointsWonPct": 63.2,
               "returnPointsWonPct": 36.4,
-              "breakPointsSavedPct": 69.6,
-              "breakPointsConvertedPct": 31.7,
+              "breakPointsSavedPct": 79.6,
+              "breakPointsConvertedPct": 37,
               "winners": 19,
-              "unforcedErrors": 28.2
+              "unforcedErrors": 28.2,
+              "breakPointsSaved": 39,
+              "breakPointsFaced": 49,
+              "breakPointsFacedPerMatch": 9.8,
+              "breakPointsConverted": 10,
+              "breakPointsToConvert": 27,
+              "breakPointChancesPerMatch": 5.4
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 39,
+                "bpFaced": 49,
+                "bpSavedPct": 79.6,
+                "bpFacedPerMatch": 9.8,
+                "bpConverted": 10,
+                "bpChances": 27,
+                "bpConvertedPct": 37,
+                "bpChancesPerMatch": 5.4
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 39,
+                "bpFaced": 49,
+                "bpSavedPct": 79.6,
+                "bpFacedPerMatch": 9.8,
+                "bpConverted": 10,
+                "bpChances": 27,
+                "bpConvertedPct": 37,
+                "bpChancesPerMatch": 5.4
+              }
             },
             "sourceUrl": null
           },
@@ -14374,7 +14508,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -14436,17 +14570,54 @@
               "avgAces": 2.6,
               "doubleFaults": 1.8,
               "avgDoubleFaults": 1.8,
-              "breakPointsSavedPct": 42.2,
-              "breakPointsConvertedPct": 39.4,
-              "breakPointsSaved": 93,
-              "breakPointsFaced": 140,
-              "breakPointsConverted": 55,
-              "breakPointsToConvert": 165,
+              "breakPointsSavedPct": 48.1,
+              "breakPointsConvertedPct": 37.8,
+              "breakPointsSaved": 13,
+              "breakPointsFaced": 27,
+              "breakPointsConverted": 17,
+              "breakPointsToConvert": 45,
               "tiebreaksWonPct": 50,
               "servicePointsWonPct": 62.4,
               "returnPointsWonPct": 38.2,
               "winners": 27.8,
-              "unforcedErrors": 27.5
+              "unforcedErrors": 27.5,
+              "breakPointsFacedPerMatch": 5.4,
+              "breakPointChancesPerMatch": 9
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 29,
+                "bpSaved": 93,
+                "bpFaced": 140,
+                "bpSavedPct": 66.4,
+                "bpFacedPerMatch": 4.8,
+                "bpConverted": 55,
+                "bpChances": 165,
+                "bpConvertedPct": 33.3,
+                "bpChancesPerMatch": 5.7
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 13,
+                "bpFaced": 27,
+                "bpSavedPct": 48.1,
+                "bpFacedPerMatch": 5.4,
+                "bpConverted": 17,
+                "bpChances": 45,
+                "bpConvertedPct": 37.8,
+                "bpChancesPerMatch": 9
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 13,
+                "bpFaced": 27,
+                "bpSavedPct": 48.1,
+                "bpFacedPerMatch": 5.4,
+                "bpConverted": 17,
+                "bpChances": 45,
+                "bpConvertedPct": 37.8,
+                "bpChancesPerMatch": 9
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/riedi-leandro/321788#tab:statistics",
             "surface": "All surfaces"
@@ -18067,10 +18238,40 @@
               "secondServeWonPct": 47.6,
               "servicePointsWonPct": 63.2,
               "returnPointsWonPct": 36.4,
-              "breakPointsSavedPct": 69.6,
-              "breakPointsConvertedPct": 31.7,
+              "breakPointsSavedPct": 79.6,
+              "breakPointsConvertedPct": 37,
               "winners": 19,
-              "unforcedErrors": 28.2
+              "unforcedErrors": 28.2,
+              "breakPointsSaved": 39,
+              "breakPointsFaced": 49,
+              "breakPointsFacedPerMatch": 9.8,
+              "breakPointsConverted": 10,
+              "breakPointsToConvert": 27,
+              "breakPointChancesPerMatch": 5.4
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 39,
+                "bpFaced": 49,
+                "bpSavedPct": 79.6,
+                "bpFacedPerMatch": 9.8,
+                "bpConverted": 10,
+                "bpChances": 27,
+                "bpConvertedPct": 37,
+                "bpChancesPerMatch": 5.4
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 39,
+                "bpFaced": 49,
+                "bpSavedPct": 79.6,
+                "bpFacedPerMatch": 9.8,
+                "bpConverted": 10,
+                "bpChances": 27,
+                "bpConvertedPct": 37,
+                "bpChancesPerMatch": 5.4
+              }
             },
             "sourceUrl": null
           },

@@ -132,7 +132,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-birmingham-bellucci-vs-bolt-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:57",
+      "capturedAt": "2026-06-02 02:57:10",
       "surface": "Grass",
       "tournament": "ATP Challenger Birmingham",
       "category": "Tennis",
@@ -160,17 +160,54 @@
               "avgAces": 4.2,
               "doubleFaults": 4.2,
               "avgDoubleFaults": 4.2,
-              "breakPointsSavedPct": 63.3,
-              "breakPointsConvertedPct": 36.2,
-              "breakPointsSaved": 85,
-              "breakPointsFaced": 136,
-              "breakPointsConverted": 46,
-              "breakPointsToConvert": 122,
+              "breakPointsSavedPct": 62.5,
+              "breakPointsConvertedPct": 42.9,
+              "breakPointsSaved": 25,
+              "breakPointsFaced": 40,
+              "breakPointsConverted": 12,
+              "breakPointsToConvert": 28,
               "tiebreaksWonPct": 42.9,
               "servicePointsWonPct": 58.2,
               "returnPointsWonPct": 34,
               "winners": 26.6,
-              "unforcedErrors": 36.2
+              "unforcedErrors": 36.2,
+              "breakPointsFacedPerMatch": 8,
+              "breakPointChancesPerMatch": 5.6
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 27,
+                "bpSaved": 85,
+                "bpFaced": 136,
+                "bpSavedPct": 62.5,
+                "bpFacedPerMatch": 5,
+                "bpConverted": 46,
+                "bpChances": 122,
+                "bpConvertedPct": 37.7,
+                "bpChancesPerMatch": 4.5
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 25,
+                "bpFaced": 40,
+                "bpSavedPct": 62.5,
+                "bpFacedPerMatch": 8,
+                "bpConverted": 12,
+                "bpChances": 28,
+                "bpConvertedPct": 42.9,
+                "bpChancesPerMatch": 5.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 25,
+                "bpFaced": 40,
+                "bpSavedPct": 62.5,
+                "bpFacedPerMatch": 8,
+                "bpConverted": 12,
+                "bpChances": 28,
+                "bpConvertedPct": 42.9,
+                "bpChancesPerMatch": 5.6
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/bellucci-mattia/294337#tab:statistics",
             "surface": "All surfaces"
@@ -3838,10 +3875,40 @@
               "secondServeWonPct": 54,
               "servicePointsWonPct": 59.8,
               "returnPointsWonPct": 32.6,
-              "breakPointsSavedPct": 48,
-              "breakPointsConvertedPct": 43.4,
+              "breakPointsSavedPct": 50,
+              "breakPointsConvertedPct": 47.6,
               "winners": 23.2,
-              "unforcedErrors": 26.2
+              "unforcedErrors": 26.2,
+              "breakPointsSaved": 17,
+              "breakPointsFaced": 34,
+              "breakPointsFacedPerMatch": 6.8,
+              "breakPointsConverted": 10,
+              "breakPointsToConvert": 21,
+              "breakPointChancesPerMatch": 4.2
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 34,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 6.8,
+                "bpConverted": 10,
+                "bpChances": 21,
+                "bpConvertedPct": 47.6,
+                "bpChancesPerMatch": 4.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 34,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 6.8,
+                "bpConverted": 10,
+                "bpChances": 21,
+                "bpConvertedPct": 47.6,
+                "bpChancesPerMatch": 4.2
+              }
             },
             "sourceUrl": null
           },
@@ -7367,7 +7434,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -7379,7 +7446,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-birmingham-bellucci-vs-bolt-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:57",
+      "capturedAt": "2026-06-02 02:57:10",
       "surface": "Grass",
       "tournament": "ATP Challenger Birmingham",
       "category": "Tennis",
@@ -7407,17 +7474,54 @@
               "avgAces": 4.2,
               "doubleFaults": 4.2,
               "avgDoubleFaults": 4.2,
-              "breakPointsSavedPct": 63.3,
-              "breakPointsConvertedPct": 36.2,
-              "breakPointsSaved": 85,
-              "breakPointsFaced": 136,
-              "breakPointsConverted": 46,
-              "breakPointsToConvert": 122,
+              "breakPointsSavedPct": 62.5,
+              "breakPointsConvertedPct": 42.9,
+              "breakPointsSaved": 25,
+              "breakPointsFaced": 40,
+              "breakPointsConverted": 12,
+              "breakPointsToConvert": 28,
               "tiebreaksWonPct": 42.9,
               "servicePointsWonPct": 58.2,
               "returnPointsWonPct": 34,
               "winners": 26.6,
-              "unforcedErrors": 36.2
+              "unforcedErrors": 36.2,
+              "breakPointsFacedPerMatch": 8,
+              "breakPointChancesPerMatch": 5.6
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 27,
+                "bpSaved": 85,
+                "bpFaced": 136,
+                "bpSavedPct": 62.5,
+                "bpFacedPerMatch": 5,
+                "bpConverted": 46,
+                "bpChances": 122,
+                "bpConvertedPct": 37.7,
+                "bpChancesPerMatch": 4.5
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 25,
+                "bpFaced": 40,
+                "bpSavedPct": 62.5,
+                "bpFacedPerMatch": 8,
+                "bpConverted": 12,
+                "bpChances": 28,
+                "bpConvertedPct": 42.9,
+                "bpChancesPerMatch": 5.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 25,
+                "bpFaced": 40,
+                "bpSavedPct": 62.5,
+                "bpFacedPerMatch": 8,
+                "bpConverted": 12,
+                "bpChances": 28,
+                "bpConvertedPct": 42.9,
+                "bpChancesPerMatch": 5.6
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/bellucci-mattia/294337#tab:statistics",
             "surface": "All surfaces"
@@ -11085,10 +11189,40 @@
               "secondServeWonPct": 54,
               "servicePointsWonPct": 59.8,
               "returnPointsWonPct": 32.6,
-              "breakPointsSavedPct": 48,
-              "breakPointsConvertedPct": 43.4,
+              "breakPointsSavedPct": 50,
+              "breakPointsConvertedPct": 47.6,
               "winners": 23.2,
-              "unforcedErrors": 26.2
+              "unforcedErrors": 26.2,
+              "breakPointsSaved": 17,
+              "breakPointsFaced": 34,
+              "breakPointsFacedPerMatch": 6.8,
+              "breakPointsConverted": 10,
+              "breakPointsToConvert": 21,
+              "breakPointChancesPerMatch": 4.2
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 34,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 6.8,
+                "bpConverted": 10,
+                "bpChances": 21,
+                "bpConvertedPct": 47.6,
+                "bpChancesPerMatch": 4.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 34,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 6.8,
+                "bpConverted": 10,
+                "bpChances": 21,
+                "bpConvertedPct": 47.6,
+                "bpChancesPerMatch": 4.2
+              }
             },
             "sourceUrl": null
           },
@@ -14614,7 +14748,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -14679,17 +14813,54 @@
               "avgAces": 4.2,
               "doubleFaults": 4.2,
               "avgDoubleFaults": 4.2,
-              "breakPointsSavedPct": 63.3,
-              "breakPointsConvertedPct": 36.2,
-              "breakPointsSaved": 85,
-              "breakPointsFaced": 136,
-              "breakPointsConverted": 46,
-              "breakPointsToConvert": 122,
+              "breakPointsSavedPct": 62.5,
+              "breakPointsConvertedPct": 42.9,
+              "breakPointsSaved": 25,
+              "breakPointsFaced": 40,
+              "breakPointsConverted": 12,
+              "breakPointsToConvert": 28,
               "tiebreaksWonPct": 42.9,
               "servicePointsWonPct": 58.2,
               "returnPointsWonPct": 34,
               "winners": 26.6,
-              "unforcedErrors": 36.2
+              "unforcedErrors": 36.2,
+              "breakPointsFacedPerMatch": 8,
+              "breakPointChancesPerMatch": 5.6
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 27,
+                "bpSaved": 85,
+                "bpFaced": 136,
+                "bpSavedPct": 62.5,
+                "bpFacedPerMatch": 5,
+                "bpConverted": 46,
+                "bpChances": 122,
+                "bpConvertedPct": 37.7,
+                "bpChancesPerMatch": 4.5
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 25,
+                "bpFaced": 40,
+                "bpSavedPct": 62.5,
+                "bpFacedPerMatch": 8,
+                "bpConverted": 12,
+                "bpChances": 28,
+                "bpConvertedPct": 42.9,
+                "bpChancesPerMatch": 5.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 25,
+                "bpFaced": 40,
+                "bpSavedPct": 62.5,
+                "bpFacedPerMatch": 8,
+                "bpConverted": 12,
+                "bpChances": 28,
+                "bpConvertedPct": 42.9,
+                "bpChancesPerMatch": 5.6
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/bellucci-mattia/294337#tab:statistics",
             "surface": "All surfaces"
@@ -18392,10 +18563,40 @@
               "secondServeWonPct": 54,
               "servicePointsWonPct": 59.8,
               "returnPointsWonPct": 32.6,
-              "breakPointsSavedPct": 48,
-              "breakPointsConvertedPct": 43.4,
+              "breakPointsSavedPct": 50,
+              "breakPointsConvertedPct": 47.6,
               "winners": 23.2,
-              "unforcedErrors": 26.2
+              "unforcedErrors": 26.2,
+              "breakPointsSaved": 17,
+              "breakPointsFaced": 34,
+              "breakPointsFacedPerMatch": 6.8,
+              "breakPointsConverted": 10,
+              "breakPointsToConvert": 21,
+              "breakPointChancesPerMatch": 4.2
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 34,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 6.8,
+                "bpConverted": 10,
+                "bpChances": 21,
+                "bpConvertedPct": 47.6,
+                "bpChancesPerMatch": 4.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 34,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 6.8,
+                "bpConverted": 10,
+                "bpChances": 21,
+                "bpConvertedPct": 47.6,
+                "bpChancesPerMatch": 4.2
+              }
             },
             "sourceUrl": null
           },

@@ -132,7 +132,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:58",
+      "capturedAt": "2026-06-02 02:57:11",
       "surface": "Clay",
       "tournament": "ATP Challenger Prostejov",
       "category": "Tennis",
@@ -160,17 +160,54 @@
               "avgAces": 9,
               "doubleFaults": 2.6,
               "avgDoubleFaults": 2.6,
-              "breakPointsSavedPct": 60.9,
-              "breakPointsConvertedPct": 53.3,
-              "breakPointsSaved": 60,
-              "breakPointsFaced": 92,
-              "breakPointsConverted": 31,
-              "breakPointsToConvert": 82,
+              "breakPointsSavedPct": 53.8,
+              "breakPointsConvertedPct": 43.8,
+              "breakPointsSaved": 14,
+              "breakPointsFaced": 26,
+              "breakPointsConverted": 14,
+              "breakPointsToConvert": 32,
               "tiebreaksWonPct": 66.7,
               "servicePointsWonPct": 62.6,
               "returnPointsWonPct": 33.6,
               "winners": 31.6,
-              "unforcedErrors": 34.2
+              "unforcedErrors": 34.2,
+              "breakPointsFacedPerMatch": 5.2,
+              "breakPointChancesPerMatch": 6.4
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 16,
+                "bpSaved": 60,
+                "bpFaced": 92,
+                "bpSavedPct": 65.2,
+                "bpFacedPerMatch": 5.8,
+                "bpConverted": 31,
+                "bpChances": 82,
+                "bpConvertedPct": 37.8,
+                "bpChancesPerMatch": 5.1
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 14,
+                "bpFaced": 26,
+                "bpSavedPct": 53.8,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 14,
+                "bpChances": 32,
+                "bpConvertedPct": 43.8,
+                "bpChancesPerMatch": 6.4
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 14,
+                "bpFaced": 26,
+                "bpSavedPct": 53.8,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 14,
+                "bpChances": 32,
+                "bpConvertedPct": 43.8,
+                "bpChancesPerMatch": 6.4
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/pavlovic-luka/224534#tab:statistics",
             "surface": "Clay"
@@ -3888,10 +3925,40 @@
               "secondServeWonPct": 52.6,
               "servicePointsWonPct": 60,
               "returnPointsWonPct": 45,
-              "breakPointsSavedPct": 51.4,
-              "breakPointsConvertedPct": 38.1,
+              "breakPointsSavedPct": 50,
+              "breakPointsConvertedPct": 38.6,
               "winners": 17.6,
-              "unforcedErrors": 26.6
+              "unforcedErrors": 26.6,
+              "breakPointsSaved": 16,
+              "breakPointsFaced": 32,
+              "breakPointsFacedPerMatch": 6.4,
+              "breakPointsConverted": 22,
+              "breakPointsToConvert": 57,
+              "breakPointChancesPerMatch": 11.4
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 16,
+                "bpFaced": 32,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 6.4,
+                "bpConverted": 22,
+                "bpChances": 57,
+                "bpConvertedPct": 38.6,
+                "bpChancesPerMatch": 11.4
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 16,
+                "bpFaced": 32,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 6.4,
+                "bpConverted": 22,
+                "bpChances": 57,
+                "bpConvertedPct": 38.6,
+                "bpChancesPerMatch": 11.4
+              }
             },
             "sourceUrl": null
           },
@@ -7417,7 +7484,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -7429,7 +7496,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:58",
+      "capturedAt": "2026-06-02 02:57:11",
       "surface": "Clay",
       "tournament": "ATP Challenger Prostejov",
       "category": "Tennis",
@@ -7457,17 +7524,54 @@
               "avgAces": 9,
               "doubleFaults": 2.6,
               "avgDoubleFaults": 2.6,
-              "breakPointsSavedPct": 60.9,
-              "breakPointsConvertedPct": 53.3,
-              "breakPointsSaved": 60,
-              "breakPointsFaced": 92,
-              "breakPointsConverted": 31,
-              "breakPointsToConvert": 82,
+              "breakPointsSavedPct": 53.8,
+              "breakPointsConvertedPct": 43.8,
+              "breakPointsSaved": 14,
+              "breakPointsFaced": 26,
+              "breakPointsConverted": 14,
+              "breakPointsToConvert": 32,
               "tiebreaksWonPct": 66.7,
               "servicePointsWonPct": 62.6,
               "returnPointsWonPct": 33.6,
               "winners": 31.6,
-              "unforcedErrors": 34.2
+              "unforcedErrors": 34.2,
+              "breakPointsFacedPerMatch": 5.2,
+              "breakPointChancesPerMatch": 6.4
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 16,
+                "bpSaved": 60,
+                "bpFaced": 92,
+                "bpSavedPct": 65.2,
+                "bpFacedPerMatch": 5.8,
+                "bpConverted": 31,
+                "bpChances": 82,
+                "bpConvertedPct": 37.8,
+                "bpChancesPerMatch": 5.1
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 14,
+                "bpFaced": 26,
+                "bpSavedPct": 53.8,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 14,
+                "bpChances": 32,
+                "bpConvertedPct": 43.8,
+                "bpChancesPerMatch": 6.4
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 14,
+                "bpFaced": 26,
+                "bpSavedPct": 53.8,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 14,
+                "bpChances": 32,
+                "bpConvertedPct": 43.8,
+                "bpChancesPerMatch": 6.4
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/pavlovic-luka/224534#tab:statistics",
             "surface": "Clay"
@@ -11185,10 +11289,40 @@
               "secondServeWonPct": 52.6,
               "servicePointsWonPct": 60,
               "returnPointsWonPct": 45,
-              "breakPointsSavedPct": 51.4,
-              "breakPointsConvertedPct": 38.1,
+              "breakPointsSavedPct": 50,
+              "breakPointsConvertedPct": 38.6,
               "winners": 17.6,
-              "unforcedErrors": 26.6
+              "unforcedErrors": 26.6,
+              "breakPointsSaved": 16,
+              "breakPointsFaced": 32,
+              "breakPointsFacedPerMatch": 6.4,
+              "breakPointsConverted": 22,
+              "breakPointsToConvert": 57,
+              "breakPointChancesPerMatch": 11.4
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 16,
+                "bpFaced": 32,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 6.4,
+                "bpConverted": 22,
+                "bpChances": 57,
+                "bpConvertedPct": 38.6,
+                "bpChancesPerMatch": 11.4
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 16,
+                "bpFaced": 32,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 6.4,
+                "bpConverted": 22,
+                "bpChances": 57,
+                "bpConvertedPct": 38.6,
+                "bpChancesPerMatch": 11.4
+              }
             },
             "sourceUrl": null
           },
@@ -14714,7 +14848,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -14779,17 +14913,54 @@
               "avgAces": 9,
               "doubleFaults": 2.6,
               "avgDoubleFaults": 2.6,
-              "breakPointsSavedPct": 60.9,
-              "breakPointsConvertedPct": 53.3,
-              "breakPointsSaved": 60,
-              "breakPointsFaced": 92,
-              "breakPointsConverted": 31,
-              "breakPointsToConvert": 82,
+              "breakPointsSavedPct": 53.8,
+              "breakPointsConvertedPct": 43.8,
+              "breakPointsSaved": 14,
+              "breakPointsFaced": 26,
+              "breakPointsConverted": 14,
+              "breakPointsToConvert": 32,
               "tiebreaksWonPct": 66.7,
               "servicePointsWonPct": 62.6,
               "returnPointsWonPct": 33.6,
               "winners": 31.6,
-              "unforcedErrors": 34.2
+              "unforcedErrors": 34.2,
+              "breakPointsFacedPerMatch": 5.2,
+              "breakPointChancesPerMatch": 6.4
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 16,
+                "bpSaved": 60,
+                "bpFaced": 92,
+                "bpSavedPct": 65.2,
+                "bpFacedPerMatch": 5.8,
+                "bpConverted": 31,
+                "bpChances": 82,
+                "bpConvertedPct": 37.8,
+                "bpChancesPerMatch": 5.1
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 14,
+                "bpFaced": 26,
+                "bpSavedPct": 53.8,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 14,
+                "bpChances": 32,
+                "bpConvertedPct": 43.8,
+                "bpChancesPerMatch": 6.4
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 14,
+                "bpFaced": 26,
+                "bpSavedPct": 53.8,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 14,
+                "bpChances": 32,
+                "bpConvertedPct": 43.8,
+                "bpChancesPerMatch": 6.4
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/pavlovic-luka/224534#tab:statistics",
             "surface": "Clay"
@@ -18542,10 +18713,40 @@
               "secondServeWonPct": 52.6,
               "servicePointsWonPct": 60,
               "returnPointsWonPct": 45,
-              "breakPointsSavedPct": 51.4,
-              "breakPointsConvertedPct": 38.1,
+              "breakPointsSavedPct": 50,
+              "breakPointsConvertedPct": 38.6,
               "winners": 17.6,
-              "unforcedErrors": 26.6
+              "unforcedErrors": 26.6,
+              "breakPointsSaved": 16,
+              "breakPointsFaced": 32,
+              "breakPointsFacedPerMatch": 6.4,
+              "breakPointsConverted": 22,
+              "breakPointsToConvert": 57,
+              "breakPointChancesPerMatch": 11.4
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 16,
+                "bpFaced": 32,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 6.4,
+                "bpConverted": 22,
+                "bpChances": 57,
+                "bpConvertedPct": 38.6,
+                "bpChancesPerMatch": 11.4
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 16,
+                "bpFaced": 32,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 6.4,
+                "bpConverted": 22,
+                "bpChances": 57,
+                "bpConvertedPct": 38.6,
+                "bpChancesPerMatch": 11.4
+              }
             },
             "sourceUrl": null
           },

@@ -134,7 +134,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-birmingham-pinnington-jones-vs-vukic-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:57",
+      "capturedAt": "2026-06-02 02:57:10",
       "surface": "Grass",
       "tournament": "ATP Challenger Birmingham",
       "category": "Tennis",
@@ -159,10 +159,40 @@
               "secondServeWonPct": 47.2,
               "servicePointsWonPct": 55.2,
               "returnPointsWonPct": 37.6,
-              "breakPointsSavedPct": 60.6,
-              "breakPointsConvertedPct": 40.8,
+              "breakPointsSavedPct": 58.9,
+              "breakPointsConvertedPct": 41.3,
               "winners": 24,
-              "unforcedErrors": 39
+              "unforcedErrors": 39,
+              "breakPointsSaved": 33,
+              "breakPointsFaced": 56,
+              "breakPointsFacedPerMatch": 11.2,
+              "breakPointsConverted": 19,
+              "breakPointsToConvert": 46,
+              "breakPointChancesPerMatch": 9.2
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 33,
+                "bpFaced": 56,
+                "bpSavedPct": 58.9,
+                "bpFacedPerMatch": 11.2,
+                "bpConverted": 19,
+                "bpChances": 46,
+                "bpConvertedPct": 41.3,
+                "bpChancesPerMatch": 9.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 33,
+                "bpFaced": 56,
+                "bpSavedPct": 58.9,
+                "bpFacedPerMatch": 11.2,
+                "bpConverted": 19,
+                "bpChances": 46,
+                "bpConvertedPct": 41.3,
+                "bpChancesPerMatch": 9.2
+              }
             },
             "sourceUrl": null
           },
@@ -3782,17 +3812,54 @@
               "avgAces": 4.4,
               "doubleFaults": 2.6,
               "avgDoubleFaults": 2.6,
-              "breakPointsSavedPct": 57.5,
-              "breakPointsConvertedPct": 59.4,
-              "breakPointsSaved": 90,
-              "breakPointsFaced": 154,
-              "breakPointsConverted": 35,
-              "breakPointsToConvert": 93,
+              "breakPointsSavedPct": 56.8,
+              "breakPointsConvertedPct": 48.4,
+              "breakPointsSaved": 25,
+              "breakPointsFaced": 44,
+              "breakPointsConverted": 15,
+              "breakPointsToConvert": 31,
               "tiebreaksWonPct": 50,
               "servicePointsWonPct": 56.8,
               "returnPointsWonPct": 35.2,
               "winners": 18.4,
-              "unforcedErrors": 23
+              "unforcedErrors": 23,
+              "breakPointsFacedPerMatch": 8.8,
+              "breakPointChancesPerMatch": 6.2
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 25,
+                "bpSaved": 90,
+                "bpFaced": 154,
+                "bpSavedPct": 58.4,
+                "bpFacedPerMatch": 6.2,
+                "bpConverted": 35,
+                "bpChances": 93,
+                "bpConvertedPct": 37.6,
+                "bpChancesPerMatch": 3.7
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 25,
+                "bpFaced": 44,
+                "bpSavedPct": 56.8,
+                "bpFacedPerMatch": 8.8,
+                "bpConverted": 15,
+                "bpChances": 31,
+                "bpConvertedPct": 48.4,
+                "bpChancesPerMatch": 6.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 25,
+                "bpFaced": 44,
+                "bpSavedPct": 56.8,
+                "bpFacedPerMatch": 8.8,
+                "bpConverted": 15,
+                "bpChances": 31,
+                "bpConvertedPct": 48.4,
+                "bpChancesPerMatch": 6.2
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/vukic-aleksandar/124656#tab:statistics",
             "surface": "All surfaces"
@@ -7319,7 +7386,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -7331,7 +7398,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-birmingham-pinnington-jones-vs-vukic-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:57",
+      "capturedAt": "2026-06-02 02:57:10",
       "surface": "Grass",
       "tournament": "ATP Challenger Birmingham",
       "category": "Tennis",
@@ -7356,10 +7423,40 @@
               "secondServeWonPct": 47.2,
               "servicePointsWonPct": 55.2,
               "returnPointsWonPct": 37.6,
-              "breakPointsSavedPct": 60.6,
-              "breakPointsConvertedPct": 40.8,
+              "breakPointsSavedPct": 58.9,
+              "breakPointsConvertedPct": 41.3,
               "winners": 24,
-              "unforcedErrors": 39
+              "unforcedErrors": 39,
+              "breakPointsSaved": 33,
+              "breakPointsFaced": 56,
+              "breakPointsFacedPerMatch": 11.2,
+              "breakPointsConverted": 19,
+              "breakPointsToConvert": 46,
+              "breakPointChancesPerMatch": 9.2
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 33,
+                "bpFaced": 56,
+                "bpSavedPct": 58.9,
+                "bpFacedPerMatch": 11.2,
+                "bpConverted": 19,
+                "bpChances": 46,
+                "bpConvertedPct": 41.3,
+                "bpChancesPerMatch": 9.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 33,
+                "bpFaced": 56,
+                "bpSavedPct": 58.9,
+                "bpFacedPerMatch": 11.2,
+                "bpConverted": 19,
+                "bpChances": 46,
+                "bpConvertedPct": 41.3,
+                "bpChancesPerMatch": 9.2
+              }
             },
             "sourceUrl": null
           },
@@ -10979,17 +11076,54 @@
               "avgAces": 4.4,
               "doubleFaults": 2.6,
               "avgDoubleFaults": 2.6,
-              "breakPointsSavedPct": 57.5,
-              "breakPointsConvertedPct": 59.4,
-              "breakPointsSaved": 90,
-              "breakPointsFaced": 154,
-              "breakPointsConverted": 35,
-              "breakPointsToConvert": 93,
+              "breakPointsSavedPct": 56.8,
+              "breakPointsConvertedPct": 48.4,
+              "breakPointsSaved": 25,
+              "breakPointsFaced": 44,
+              "breakPointsConverted": 15,
+              "breakPointsToConvert": 31,
               "tiebreaksWonPct": 50,
               "servicePointsWonPct": 56.8,
               "returnPointsWonPct": 35.2,
               "winners": 18.4,
-              "unforcedErrors": 23
+              "unforcedErrors": 23,
+              "breakPointsFacedPerMatch": 8.8,
+              "breakPointChancesPerMatch": 6.2
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 25,
+                "bpSaved": 90,
+                "bpFaced": 154,
+                "bpSavedPct": 58.4,
+                "bpFacedPerMatch": 6.2,
+                "bpConverted": 35,
+                "bpChances": 93,
+                "bpConvertedPct": 37.6,
+                "bpChancesPerMatch": 3.7
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 25,
+                "bpFaced": 44,
+                "bpSavedPct": 56.8,
+                "bpFacedPerMatch": 8.8,
+                "bpConverted": 15,
+                "bpChances": 31,
+                "bpConvertedPct": 48.4,
+                "bpChancesPerMatch": 6.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 25,
+                "bpFaced": 44,
+                "bpSavedPct": 56.8,
+                "bpFacedPerMatch": 8.8,
+                "bpConverted": 15,
+                "bpChances": 31,
+                "bpConvertedPct": 48.4,
+                "bpChancesPerMatch": 6.2
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/vukic-aleksandar/124656#tab:statistics",
             "surface": "All surfaces"
@@ -14516,7 +14650,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -14578,10 +14712,40 @@
               "secondServeWonPct": 47.2,
               "servicePointsWonPct": 55.2,
               "returnPointsWonPct": 37.6,
-              "breakPointsSavedPct": 60.6,
-              "breakPointsConvertedPct": 40.8,
+              "breakPointsSavedPct": 58.9,
+              "breakPointsConvertedPct": 41.3,
               "winners": 24,
-              "unforcedErrors": 39
+              "unforcedErrors": 39,
+              "breakPointsSaved": 33,
+              "breakPointsFaced": 56,
+              "breakPointsFacedPerMatch": 11.2,
+              "breakPointsConverted": 19,
+              "breakPointsToConvert": 46,
+              "breakPointChancesPerMatch": 9.2
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 33,
+                "bpFaced": 56,
+                "bpSavedPct": 58.9,
+                "bpFacedPerMatch": 11.2,
+                "bpConverted": 19,
+                "bpChances": 46,
+                "bpConvertedPct": 41.3,
+                "bpChancesPerMatch": 9.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 33,
+                "bpFaced": 56,
+                "bpSavedPct": 58.9,
+                "bpFacedPerMatch": 11.2,
+                "bpConverted": 19,
+                "bpChances": 46,
+                "bpConvertedPct": 41.3,
+                "bpChancesPerMatch": 9.2
+              }
             },
             "sourceUrl": null
           },
@@ -18238,17 +18402,54 @@
               "avgAces": 4.4,
               "doubleFaults": 2.6,
               "avgDoubleFaults": 2.6,
-              "breakPointsSavedPct": 57.5,
-              "breakPointsConvertedPct": 59.4,
-              "breakPointsSaved": 90,
-              "breakPointsFaced": 154,
-              "breakPointsConverted": 35,
-              "breakPointsToConvert": 93,
+              "breakPointsSavedPct": 56.8,
+              "breakPointsConvertedPct": 48.4,
+              "breakPointsSaved": 25,
+              "breakPointsFaced": 44,
+              "breakPointsConverted": 15,
+              "breakPointsToConvert": 31,
               "tiebreaksWonPct": 50,
               "servicePointsWonPct": 56.8,
               "returnPointsWonPct": 35.2,
               "winners": 18.4,
-              "unforcedErrors": 23
+              "unforcedErrors": 23,
+              "breakPointsFacedPerMatch": 8.8,
+              "breakPointChancesPerMatch": 6.2
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 25,
+                "bpSaved": 90,
+                "bpFaced": 154,
+                "bpSavedPct": 58.4,
+                "bpFacedPerMatch": 6.2,
+                "bpConverted": 35,
+                "bpChances": 93,
+                "bpConvertedPct": 37.6,
+                "bpChancesPerMatch": 3.7
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 25,
+                "bpFaced": 44,
+                "bpSavedPct": 56.8,
+                "bpFacedPerMatch": 8.8,
+                "bpConverted": 15,
+                "bpChances": 31,
+                "bpConvertedPct": 48.4,
+                "bpChancesPerMatch": 6.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 25,
+                "bpFaced": 44,
+                "bpSavedPct": 56.8,
+                "bpFacedPerMatch": 8.8,
+                "bpConverted": 15,
+                "bpChances": 31,
+                "bpConvertedPct": 48.4,
+                "bpChancesPerMatch": 6.2
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/vukic-aleksandar/124656#tab:statistics",
             "surface": "All surfaces"

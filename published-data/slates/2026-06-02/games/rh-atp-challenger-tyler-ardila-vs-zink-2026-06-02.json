@@ -131,7 +131,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-tyler-ardila-vs-zink-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:58",
+      "capturedAt": "2026-06-02 02:57:11",
       "surface": "Hard",
       "tournament": "ATP Challenger Tyler",
       "category": "Tennis",
@@ -610,10 +610,40 @@
               "secondServeWonPct": 54.4,
               "servicePointsWonPct": 64,
               "returnPointsWonPct": 37.6,
-              "breakPointsSavedPct": 58,
-              "breakPointsConvertedPct": 38.3,
+              "breakPointsSavedPct": 62.1,
+              "breakPointsConvertedPct": 37.9,
               "winners": 29.5,
-              "unforcedErrors": 27
+              "unforcedErrors": 27,
+              "breakPointsSaved": 18,
+              "breakPointsFaced": 29,
+              "breakPointsFacedPerMatch": 5.8,
+              "breakPointsConverted": 11,
+              "breakPointsToConvert": 29,
+              "breakPointChancesPerMatch": 5.8
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 29,
+                "bpSavedPct": 62.1,
+                "bpFacedPerMatch": 5.8,
+                "bpConverted": 11,
+                "bpChances": 29,
+                "bpConvertedPct": 37.9,
+                "bpChancesPerMatch": 5.8
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 29,
+                "bpSavedPct": 62.1,
+                "bpFacedPerMatch": 5.8,
+                "bpConverted": 11,
+                "bpChances": 29,
+                "bpConvertedPct": 37.9,
+                "bpChancesPerMatch": 5.8
+              }
             },
             "sourceUrl": null
           },
@@ -4054,7 +4084,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 14,
+        "expectedStatRows": 20,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -4066,7 +4096,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-tyler-ardila-vs-zink-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:58",
+      "capturedAt": "2026-06-02 02:57:11",
       "surface": "Hard",
       "tournament": "ATP Challenger Tyler",
       "category": "Tennis",
@@ -4545,10 +4575,40 @@
               "secondServeWonPct": 54.4,
               "servicePointsWonPct": 64,
               "returnPointsWonPct": 37.6,
-              "breakPointsSavedPct": 58,
-              "breakPointsConvertedPct": 38.3,
+              "breakPointsSavedPct": 62.1,
+              "breakPointsConvertedPct": 37.9,
               "winners": 29.5,
-              "unforcedErrors": 27
+              "unforcedErrors": 27,
+              "breakPointsSaved": 18,
+              "breakPointsFaced": 29,
+              "breakPointsFacedPerMatch": 5.8,
+              "breakPointsConverted": 11,
+              "breakPointsToConvert": 29,
+              "breakPointChancesPerMatch": 5.8
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 29,
+                "bpSavedPct": 62.1,
+                "bpFacedPerMatch": 5.8,
+                "bpConverted": 11,
+                "bpChances": 29,
+                "bpConvertedPct": 37.9,
+                "bpChancesPerMatch": 5.8
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 29,
+                "bpSavedPct": 62.1,
+                "bpFacedPerMatch": 5.8,
+                "bpConverted": 11,
+                "bpChances": 29,
+                "bpConvertedPct": 37.9,
+                "bpChancesPerMatch": 5.8
+              }
             },
             "sourceUrl": null
           },
@@ -7989,7 +8049,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 14,
+        "expectedStatRows": 20,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -8539,10 +8599,40 @@
               "secondServeWonPct": 54.4,
               "servicePointsWonPct": 64,
               "returnPointsWonPct": 37.6,
-              "breakPointsSavedPct": 58,
-              "breakPointsConvertedPct": 38.3,
+              "breakPointsSavedPct": 62.1,
+              "breakPointsConvertedPct": 37.9,
               "winners": 29.5,
-              "unforcedErrors": 27
+              "unforcedErrors": 27,
+              "breakPointsSaved": 18,
+              "breakPointsFaced": 29,
+              "breakPointsFacedPerMatch": 5.8,
+              "breakPointsConverted": 11,
+              "breakPointsToConvert": 29,
+              "breakPointChancesPerMatch": 5.8
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 29,
+                "bpSavedPct": 62.1,
+                "bpFacedPerMatch": 5.8,
+                "bpConverted": 11,
+                "bpChances": 29,
+                "bpConvertedPct": 37.9,
+                "bpChancesPerMatch": 5.8
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 29,
+                "bpSavedPct": 62.1,
+                "bpFacedPerMatch": 5.8,
+                "bpConverted": 11,
+                "bpChances": 29,
+                "bpConvertedPct": 37.9,
+                "bpChancesPerMatch": 5.8
+              }
             },
             "sourceUrl": null
           },

@@ -133,7 +133,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-perugia-carballes-baena-vs-carboni-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:58",
+      "capturedAt": "2026-06-02 02:57:11",
       "surface": "Clay",
       "tournament": "ATP Challenger Perugia",
       "category": "Tennis",
@@ -158,10 +158,40 @@
               "secondServeWonPct": 49.8,
               "servicePointsWonPct": 63,
               "returnPointsWonPct": 43.2,
-              "breakPointsSavedPct": 54,
-              "breakPointsConvertedPct": 46.3,
+              "breakPointsSavedPct": 57.7,
+              "breakPointsConvertedPct": 34.5,
               "winners": 17.6,
-              "unforcedErrors": 22.6
+              "unforcedErrors": 22.6,
+              "breakPointsSaved": 15,
+              "breakPointsFaced": 26,
+              "breakPointsFacedPerMatch": 5.2,
+              "breakPointsConverted": 20,
+              "breakPointsToConvert": 58,
+              "breakPointChancesPerMatch": 11.6
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 15,
+                "bpFaced": 26,
+                "bpSavedPct": 57.7,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 20,
+                "bpChances": 58,
+                "bpConvertedPct": 34.5,
+                "bpChancesPerMatch": 11.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 15,
+                "bpFaced": 26,
+                "bpSavedPct": 57.7,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 20,
+                "bpChances": 58,
+                "bpConvertedPct": 34.5,
+                "bpChancesPerMatch": 11.6
+              }
             },
             "sourceUrl": null
           },
@@ -3631,17 +3661,54 @@
               "avgAces": 2,
               "doubleFaults": 2.6,
               "avgDoubleFaults": 2.6,
-              "breakPointsSavedPct": 53.7,
-              "breakPointsConvertedPct": 48.8,
-              "breakPointsSaved": 46,
-              "breakPointsFaced": 75,
-              "breakPointsConverted": 23,
-              "breakPointsToConvert": 70,
+              "breakPointsSavedPct": 54.5,
+              "breakPointsConvertedPct": 36.7,
+              "breakPointsSaved": 24,
+              "breakPointsFaced": 44,
+              "breakPointsConverted": 18,
+              "breakPointsToConvert": 49,
               "tiebreaksWonPct": 66.7,
               "servicePointsWonPct": 56,
               "returnPointsWonPct": 40.4,
               "winners": 21,
-              "unforcedErrors": 23.6
+              "unforcedErrors": 23.6,
+              "breakPointsFacedPerMatch": 8.8,
+              "breakPointChancesPerMatch": 9.8
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 11,
+                "bpSaved": 46,
+                "bpFaced": 75,
+                "bpSavedPct": 61.3,
+                "bpFacedPerMatch": 6.8,
+                "bpConverted": 23,
+                "bpChances": 70,
+                "bpConvertedPct": 32.9,
+                "bpChancesPerMatch": 6.4
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 24,
+                "bpFaced": 44,
+                "bpSavedPct": 54.5,
+                "bpFacedPerMatch": 8.8,
+                "bpConverted": 18,
+                "bpChances": 49,
+                "bpConvertedPct": 36.7,
+                "bpChancesPerMatch": 9.8
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 24,
+                "bpFaced": 44,
+                "bpSavedPct": 54.5,
+                "bpFacedPerMatch": 8.8,
+                "bpConverted": 18,
+                "bpChances": 49,
+                "bpConvertedPct": 36.7,
+                "bpChancesPerMatch": 9.8
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/carballes-baena-roberto/51141#tab:statistics",
             "surface": "Clay"
@@ -7318,7 +7385,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -7330,7 +7397,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-perugia-carballes-baena-vs-carboni-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:58",
+      "capturedAt": "2026-06-02 02:57:11",
       "surface": "Clay",
       "tournament": "ATP Challenger Perugia",
       "category": "Tennis",
@@ -7355,10 +7422,40 @@
               "secondServeWonPct": 49.8,
               "servicePointsWonPct": 63,
               "returnPointsWonPct": 43.2,
-              "breakPointsSavedPct": 54,
-              "breakPointsConvertedPct": 46.3,
+              "breakPointsSavedPct": 57.7,
+              "breakPointsConvertedPct": 34.5,
               "winners": 17.6,
-              "unforcedErrors": 22.6
+              "unforcedErrors": 22.6,
+              "breakPointsSaved": 15,
+              "breakPointsFaced": 26,
+              "breakPointsFacedPerMatch": 5.2,
+              "breakPointsConverted": 20,
+              "breakPointsToConvert": 58,
+              "breakPointChancesPerMatch": 11.6
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 15,
+                "bpFaced": 26,
+                "bpSavedPct": 57.7,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 20,
+                "bpChances": 58,
+                "bpConvertedPct": 34.5,
+                "bpChancesPerMatch": 11.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 15,
+                "bpFaced": 26,
+                "bpSavedPct": 57.7,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 20,
+                "bpChances": 58,
+                "bpConvertedPct": 34.5,
+                "bpChancesPerMatch": 11.6
+              }
             },
             "sourceUrl": null
           },
@@ -10828,17 +10925,54 @@
               "avgAces": 2,
               "doubleFaults": 2.6,
               "avgDoubleFaults": 2.6,
-              "breakPointsSavedPct": 53.7,
-              "breakPointsConvertedPct": 48.8,
-              "breakPointsSaved": 46,
-              "breakPointsFaced": 75,
-              "breakPointsConverted": 23,
-              "breakPointsToConvert": 70,
+              "breakPointsSavedPct": 54.5,
+              "breakPointsConvertedPct": 36.7,
+              "breakPointsSaved": 24,
+              "breakPointsFaced": 44,
+              "breakPointsConverted": 18,
+              "breakPointsToConvert": 49,
               "tiebreaksWonPct": 66.7,
               "servicePointsWonPct": 56,
               "returnPointsWonPct": 40.4,
               "winners": 21,
-              "unforcedErrors": 23.6
+              "unforcedErrors": 23.6,
+              "breakPointsFacedPerMatch": 8.8,
+              "breakPointChancesPerMatch": 9.8
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 11,
+                "bpSaved": 46,
+                "bpFaced": 75,
+                "bpSavedPct": 61.3,
+                "bpFacedPerMatch": 6.8,
+                "bpConverted": 23,
+                "bpChances": 70,
+                "bpConvertedPct": 32.9,
+                "bpChancesPerMatch": 6.4
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 24,
+                "bpFaced": 44,
+                "bpSavedPct": 54.5,
+                "bpFacedPerMatch": 8.8,
+                "bpConverted": 18,
+                "bpChances": 49,
+                "bpConvertedPct": 36.7,
+                "bpChancesPerMatch": 9.8
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 24,
+                "bpFaced": 44,
+                "bpSavedPct": 54.5,
+                "bpFacedPerMatch": 8.8,
+                "bpConverted": 18,
+                "bpChances": 49,
+                "bpConvertedPct": 36.7,
+                "bpChancesPerMatch": 9.8
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/carballes-baena-roberto/51141#tab:statistics",
             "surface": "Clay"
@@ -14515,7 +14649,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -14576,10 +14710,40 @@
               "secondServeWonPct": 49.8,
               "servicePointsWonPct": 63,
               "returnPointsWonPct": 43.2,
-              "breakPointsSavedPct": 54,
-              "breakPointsConvertedPct": 46.3,
+              "breakPointsSavedPct": 57.7,
+              "breakPointsConvertedPct": 34.5,
               "winners": 17.6,
-              "unforcedErrors": 22.6
+              "unforcedErrors": 22.6,
+              "breakPointsSaved": 15,
+              "breakPointsFaced": 26,
+              "breakPointsFacedPerMatch": 5.2,
+              "breakPointsConverted": 20,
+              "breakPointsToConvert": 58,
+              "breakPointChancesPerMatch": 11.6
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 15,
+                "bpFaced": 26,
+                "bpSavedPct": 57.7,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 20,
+                "bpChances": 58,
+                "bpConvertedPct": 34.5,
+                "bpChancesPerMatch": 11.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 15,
+                "bpFaced": 26,
+                "bpSavedPct": 57.7,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 20,
+                "bpChances": 58,
+                "bpConvertedPct": 34.5,
+                "bpChancesPerMatch": 11.6
+              }
             },
             "sourceUrl": null
           },
@@ -18086,17 +18250,54 @@
               "avgAces": 2,
               "doubleFaults": 2.6,
               "avgDoubleFaults": 2.6,
-              "breakPointsSavedPct": 53.7,
-              "breakPointsConvertedPct": 48.8,
-              "breakPointsSaved": 46,
-              "breakPointsFaced": 75,
-              "breakPointsConverted": 23,
-              "breakPointsToConvert": 70,
+              "breakPointsSavedPct": 54.5,
+              "breakPointsConvertedPct": 36.7,
+              "breakPointsSaved": 24,
+              "breakPointsFaced": 44,
+              "breakPointsConverted": 18,
+              "breakPointsToConvert": 49,
               "tiebreaksWonPct": 66.7,
               "servicePointsWonPct": 56,
               "returnPointsWonPct": 40.4,
               "winners": 21,
-              "unforcedErrors": 23.6
+              "unforcedErrors": 23.6,
+              "breakPointsFacedPerMatch": 8.8,
+              "breakPointChancesPerMatch": 9.8
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 11,
+                "bpSaved": 46,
+                "bpFaced": 75,
+                "bpSavedPct": 61.3,
+                "bpFacedPerMatch": 6.8,
+                "bpConverted": 23,
+                "bpChances": 70,
+                "bpConvertedPct": 32.9,
+                "bpChancesPerMatch": 6.4
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 24,
+                "bpFaced": 44,
+                "bpSavedPct": 54.5,
+                "bpFacedPerMatch": 8.8,
+                "bpConverted": 18,
+                "bpChances": 49,
+                "bpConvertedPct": 36.7,
+                "bpChancesPerMatch": 9.8
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 24,
+                "bpFaced": 44,
+                "bpSavedPct": 54.5,
+                "bpFacedPerMatch": 8.8,
+                "bpConverted": 18,
+                "bpChances": 49,
+                "bpConvertedPct": 36.7,
+                "bpChancesPerMatch": 9.8
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/carballes-baena-roberto/51141#tab:statistics",
             "surface": "Clay"
