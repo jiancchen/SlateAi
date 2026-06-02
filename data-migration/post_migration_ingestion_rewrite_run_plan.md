@@ -186,6 +186,16 @@ Current status:
 - Degraded runs must write model metadata explaining stale/missing sources.
 - Model predictions must read typed DB tables or DuckDB views by model/date/source freshness. They must not scan raw JSON folders except in explicit rebuild/backfill mode.
 
+Current status:
+
+- `data-migration/scripts/prediction_preflight.mjs` checks source freshness for a sport/date/lane from `source_fetch_policies` and `source_fetch_status`.
+- Tennis lane behavior is explicit:
+  - `prediction`: required non-market sources only (`match-stats`, `rankings`, `player-context`).
+  - `value`: required prediction sources plus `markets`.
+  - `market`: market source only, for value-board/odds freshness checks.
+  - `postmatch`: required sources plus at least one replay source (`tennis_sofascore_replay` or `tennis_livesport_replay`).
+- June 2 validation: `prediction`, `market`, `value`, and `all` pass; `postmatch` blocks because no June 2 replay source has been captured yet. That is expected before postmatch replay/clutch warehousing.
+
 ### Phase 9G: Export Promotion
 
 - Export JSON from DB after prediction rows settle.

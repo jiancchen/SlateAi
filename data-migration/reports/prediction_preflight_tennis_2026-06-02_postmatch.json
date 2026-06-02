@@ -1,0 +1,139 @@
+{
+  "generated_at": "2026-06-02T21:02:19.368Z",
+  "script": "data-migration/scripts/prediction_preflight.mjs",
+  "sport": "tennis",
+  "source_date": "2026-06-02",
+  "lane": "postmatch",
+  "degraded": false,
+  "db_path": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "required_sources_checked": 6,
+  "passed_sources": 4,
+  "stale_sources": [
+    "tennis_livesport_replay",
+    "tennis_sofascore_replay"
+  ],
+  "warnings": [],
+  "blocking_errors": [
+    "tennis_livesport_replay: Missing source_fetch_status for tennis_livesport_replay/2026-06-02",
+    "tennis_sofascore_replay: Missing source_fetch_status for tennis_sofascore_replay/2026-06-02",
+    "At least one source must pass: tennis_sofascore_replay, tennis_livesport_replay"
+  ],
+  "sources": [
+    {
+      "source_name": "tennis_flashscore_stats",
+      "source_family": "match-stats",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-02",
+        "last_status": "success",
+        "last_completeness_status": "unknown",
+        "last_success_at": "2026-06-02T20:24:17.641252+00:00",
+        "cache_valid_until": "2026-06-03 08:24:17",
+        "expected_item_count": null,
+        "actual_item_count": 610,
+        "missing_item_count": null,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"tennis_flashscore_raw_to_typed\",\"dry_run\":false,\"note\":\"Typed parse run for Flashscore raw archive. This does not perform network fetch.\",\"parsed_rows\":141700,\"report_path\":\"data-migration/reports/ingest_tennis_flashscore_raw_to_typed_2026-06-02_subsource_idempotency_rerun.json\",\"source_files\":610,\"unresolved_added\":0}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    {
+      "source_name": "tennis_livesport_replay",
+      "source_family": "replay",
+      "required_for_prediction": false,
+      "required_for_lane": true,
+      "status": null,
+      "stale": true,
+      "errors": [
+        "Missing source_fetch_status for tennis_livesport_replay/2026-06-02"
+      ],
+      "warnings": [],
+      "ok": false
+    },
+    {
+      "source_name": "tennis_odds",
+      "source_family": "markets",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-02",
+        "last_status": "success",
+        "last_completeness_status": "unknown",
+        "last_success_at": "2026-06-02T20:35:24.994042+00:00",
+        "cache_valid_until": "2026-06-02 21:35:24",
+        "expected_item_count": null,
+        "actual_item_count": 2,
+        "missing_item_count": null,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"tennis_odds_raw_to_typed\",\"dry_run\":false,\"note\":\"Typed parse run for tennis odds raw archive. This does not perform network fetch.\",\"parsed_snapshots\":180,\"report_path\":\"data-migration/reports/ingest_tennis_odds_raw_to_typed_2026-06-02_idempotency_rerun.json\",\"source_files\":2,\"unresolved_added\":0}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    {
+      "source_name": "tennis_player_context",
+      "source_family": "player-context",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-02",
+        "last_status": "success",
+        "last_completeness_status": "unknown",
+        "last_success_at": "2026-06-02T20:54:08.201408+00:00",
+        "cache_valid_until": "2026-06-03 08:54:08",
+        "expected_item_count": null,
+        "actual_item_count": 2,
+        "missing_item_count": null,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"tennis_player_context_raw_to_typed\",\"dry_run\":false,\"note\":\"Typed parse run for tennis Flashscore player context raw archive. This does not perform network fetch.\",\"parsed_player_snapshots\":260,\"report_path\":\"data-migration/reports/ingest_tennis_player_context_raw_to_typed_2026-06-02_idempotency_rerun.json\",\"source_files\":2,\"unresolved_added\":0}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    {
+      "source_name": "tennis_rankings",
+      "source_family": "rankings",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-02",
+        "last_status": "success",
+        "last_completeness_status": "unknown",
+        "last_success_at": "2026-06-02T20:47:11.863940+00:00",
+        "cache_valid_until": "2026-06-03 20:47:11",
+        "expected_item_count": null,
+        "actual_item_count": 1,
+        "missing_item_count": null,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"tennis_rankings_raw_to_typed\",\"dry_run\":false,\"note\":\"Typed parse run for tennis ranking raw archive. This does not perform network fetch.\",\"parsed_rankings\":300,\"report_path\":\"data-migration/reports/ingest_tennis_rankings_raw_to_typed_2026-06-02_idempotency_rerun.json\",\"source_files\":1,\"unresolved_added\":0}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    {
+      "source_name": "tennis_sofascore_replay",
+      "source_family": "replay",
+      "required_for_prediction": false,
+      "required_for_lane": true,
+      "status": null,
+      "stale": true,
+      "errors": [
+        "Missing source_fetch_status for tennis_sofascore_replay/2026-06-02"
+      ],
+      "warnings": [],
+      "ok": false
+    }
+  ],
+  "ok": false,
+  "publish_allowed": false
+}
