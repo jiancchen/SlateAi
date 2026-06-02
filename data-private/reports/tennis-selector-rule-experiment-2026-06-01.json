@@ -1,4 +1,94 @@
 {
+  "clayPressureSlices": {
+    "adjusted form edge <=-8": {
+      "graded": 47,
+      "hitRate": 0.511,
+      "hits": 24,
+      "pnlPer100": 0.0,
+      "roi": 0.0,
+      "rows": 47
+    },
+    "adjusted form edge >=8": {
+      "graded": 71,
+      "hitRate": 0.718,
+      "hits": 51,
+      "pnlPer100": 0.0,
+      "roi": 0.0,
+      "rows": 71
+    },
+    "clay edge <=-8%": {
+      "graded": 32,
+      "hitRate": 0.469,
+      "hits": 15,
+      "pnlPer100": 0.0,
+      "roi": 0.0,
+      "rows": 32
+    },
+    "clay edge >=8%": {
+      "graded": 88,
+      "hitRate": 0.693,
+      "hits": 61,
+      "pnlPer100": 0.0,
+      "roi": 0.0,
+      "rows": 88
+    },
+    "form score >=3 and pressure against <=1": {
+      "graded": 55,
+      "hitRate": 0.764,
+      "hits": 42,
+      "pnlPer100": 0.0,
+      "roi": 0.0,
+      "rows": 55
+    },
+    "form score >=3 but pressure against >=2": {
+      "graded": 16,
+      "hitRate": 0.625,
+      "hits": 10,
+      "pnlPer100": 0.0,
+      "roi": 0.0,
+      "rows": 16
+    },
+    "pressure against >=2": {
+      "graded": 44,
+      "hitRate": 0.545,
+      "hits": 24,
+      "pnlPer100": 0.0,
+      "roi": 0.0,
+      "rows": 44
+    },
+    "pressure against >=2 and form score <=1": {
+      "graded": 22,
+      "hitRate": 0.5,
+      "hits": 11,
+      "pnlPer100": 0.0,
+      "roi": 0.0,
+      "rows": 22
+    },
+    "pressure score >=2": {
+      "graded": 63,
+      "hitRate": 0.667,
+      "hits": 42,
+      "pnlPer100": 0.0,
+      "roi": 0.0,
+      "rows": 63
+    },
+    "recent win edge <=-12%": {
+      "graded": 47,
+      "hitRate": 0.489,
+      "hits": 23,
+      "pnlPer100": 0.0,
+      "roi": 0.0,
+      "rows": 47
+    },
+    "recent win edge >=12%": {
+      "graded": 82,
+      "hitRate": 0.732,
+      "hits": 60,
+      "pnlPer100": 0.0,
+      "roi": 0.0,
+      "rows": 82
+    }
+  },
   "compressionUnderVeto": {
     "avoidedOverMisses": 1,
     "overRowsVetoed": 1,
@@ -108,6 +198,26 @@
         "date": "2026-06-01",
         "hit": false,
         "matchId": "rg-m-frances-tiafoe-matteo-arnaldi-2026-06-01",
+        "profile": {
+          "adjFormEdge": -17.5,
+          "bpConvertedEdge": 1.5,
+          "bpSavedEdge": 3.1999999999999886,
+          "clayEdge": 0.052999999999999936,
+          "errorControlEdge": -3.7208333333333172,
+          "formAgainst": 2,
+          "formScore": 0,
+          "holdEdge": -1.7708333333333286,
+          "lateHoldEdge": 0.00877192982456132,
+          "lateReturnBreakEdge": -0.12987012987012986,
+          "longHoldEdge": 0.05555555555555558,
+          "longReturnBreakEdge": -0.18181818181818182,
+          "pressureAgainst": 3,
+          "pressureScore": 0,
+          "recentGameEdge": -0.009000000000000008,
+          "recentWinEdge": -0.25,
+          "secondServeEdge": -1.6958333333333329,
+          "tiebreakEdge": -33.3
+        },
         "risks": [
           "opponent-return-pressure",
           "opponent-tiebreak",
@@ -121,6 +231,26 @@
         "date": "2026-06-01",
         "hit": false,
         "matchId": "rg-m-juan-manuel-cerundolo-matteo-berrettini-2026-06-01",
+        "profile": {
+          "adjFormEdge": 30.599999999999994,
+          "bpConvertedEdge": 3.8999999999999986,
+          "bpSavedEdge": 5.299999999999997,
+          "clayEdge": 0.11699999999999999,
+          "errorControlEdge": 6.858333333333327,
+          "formAgainst": 0,
+          "formScore": 3,
+          "holdEdge": -2.5333333333333456,
+          "lateHoldEdge": -0.05228758169934644,
+          "lateReturnBreakEdge": 0.15789473684210525,
+          "longHoldEdge": 0.07575757575757569,
+          "longReturnBreakEdge": -0.01010101010101011,
+          "pressureAgainst": 0,
+          "pressureScore": 3,
+          "recentGameEdge": 0.04599999999999993,
+          "recentWinEdge": 0.375,
+          "secondServeEdge": -0.45000000000000284,
+          "tiebreakEdge": -3.799999999999997
+        },
         "risks": [
           "time-load"
         ],
@@ -132,6 +262,26 @@
         "date": "2026-06-01",
         "hit": false,
         "matchId": "rg-w-anastasia-potapova-anna-kalinskaya-2026-06-01",
+        "profile": {
+          "adjFormEdge": 32.400000000000006,
+          "bpConvertedEdge": -9.700000000000003,
+          "bpSavedEdge": 7.200000000000003,
+          "clayEdge": 0.1100000000000001,
+          "errorControlEdge": -0.014285714285719564,
+          "formAgainst": 0,
+          "formScore": 6,
+          "holdEdge": 10.100000000000001,
+          "lateHoldEdge": -0.09523809523809523,
+          "lateReturnBreakEdge": -0.55,
+          "longHoldEdge": -0.3,
+          "longReturnBreakEdge": -0.09999999999999998,
+          "pressureAgainst": 6,
+          "pressureScore": 2,
+          "recentGameEdge": 0.08699999999999997,
+          "recentWinEdge": 0.25,
+          "secondServeEdge": 9.755357142857143,
+          "tiebreakEdge": -33.3
+        },
         "risks": [
           "error-control",
           "favorite-tax",
@@ -150,6 +300,26 @@
         "date": "2026-06-01",
         "hit": false,
         "matchId": "rg-w-madison-keys-diana-shnaider-2026-06-01",
+        "profile": {
+          "adjFormEdge": 28.5,
+          "bpConvertedEdge": -3.0,
+          "bpSavedEdge": 8.0,
+          "clayEdge": 0.119,
+          "errorControlEdge": -19.57083333333334,
+          "formAgainst": 0,
+          "formScore": 6,
+          "holdEdge": 18.766666666666666,
+          "lateHoldEdge": -0.2857142857142857,
+          "lateReturnBreakEdge": -0.23809523809523808,
+          "longHoldEdge": 0.4,
+          "longReturnBreakEdge": -0.0714285714285714,
+          "pressureAgainst": 3,
+          "pressureScore": 3,
+          "recentGameEdge": 0.08999999999999997,
+          "recentWinEdge": 0.25,
+          "secondServeEdge": 9.133333333333333,
+          "tiebreakEdge": null
+        },
         "risks": [
           "error-control",
           "opponent-return-pressure"

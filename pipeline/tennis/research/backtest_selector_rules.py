@@ -369,6 +369,101 @@ def compression_under_signal(row: dict[str, Any]) -> dict[str, Any] | None:
     return max(sides, key=lambda item: len(item["signals"]))
 
 
+def clay_pressure_profile(row: dict[str, Any], side: int) -> dict[str, Any]:
+    profile: dict[str, Any] = {
+        "clayEdge": side_edge(row, side, "diff_clay_win_pct"),
+        "recentWinEdge": side_edge(row, side, "diff_recent_win_pct"),
+        "recentGameEdge": side_edge(row, side, "diff_recent_game_pct"),
+        "adjFormEdge": side_edge(row, side, "diff_opponent_adjusted_form_score"),
+        "holdEdge": side_edge(row, side, "diff_metric_hold"),
+        "secondServeEdge": side_edge(row, side, "diff_metric_secondServe"),
+        "bpSavedEdge": side_edge(row, side, "diff_pps_bp_saved_pct"),
+        "bpConvertedEdge": side_edge(row, side, "diff_pps_bp_converted_pct"),
+        "tiebreakEdge": side_edge(row, side, "diff_pps_tiebreaks_won_pct"),
+        "longHoldEdge": side_edge(row, side, "diff_rg_flow_long_service_hold_rate"),
+        "lateHoldEdge": side_edge(row, side, "diff_rg_flow_late_service_hold_rate"),
+        "longReturnBreakEdge": side_edge(row, side, "diff_rg_flow_long_return_break_rate"),
+        "lateReturnBreakEdge": side_edge(row, side, "diff_rg_flow_late_return_break_rate"),
+        "errorControlEdge": side_edge(row, side, "diff_metric_errorControl"),
+    }
+
+    form_score = 0
+    form_against = 0
+    for key, threshold in (
+        ("clayEdge", 0.08),
+        ("recentWinEdge", 0.12),
+        ("recentGameEdge", 0.06),
+        ("adjFormEdge", 8),
+        ("holdEdge", 5),
+        ("secondServeEdge", 4),
+    ):
+        value = profile.get(key)
+        if value is not None and value >= threshold:
+            form_score += 1
+        if value is not None and value <= -threshold:
+            form_against += 1
+
+    pressure_score = 0
+    pressure_against = 0
+    for key, threshold in (
+        ("bpConvertedEdge", 5),
+        ("bpSavedEdge", 5),
+        ("tiebreakEdge", 15),
+        ("longHoldEdge", 0.08),
+        ("lateHoldEdge", 0.08),
+        ("longReturnBreakEdge", 0.08),
+        ("lateReturnBreakEdge", 0.08),
+        ("errorControlEdge", 4),
+        ("secondServeEdge", 4),
+    ):
+        value = profile.get(key)
+        if value is not None and value >= threshold:
+            pressure_score += 1
+        if value is not None and value <= -threshold:
+            pressure_against += 1
+
+    profile["formScore"] = form_score
+    profile["formAgainst"] = form_against
+    profile["pressureScore"] = pressure_score
+    profile["pressureAgainst"] = pressure_against
+    return profile
+
+
+def clay_pressure_slices(desk_rows: list[dict[str, Any]]) -> dict[str, Any]:
+    slice_defs = {
+        "clay edge >=8%": lambda item: (item["profile"].get("clayEdge") is not None and item["profile"]["clayEdge"] >= 0.08),
+        "clay edge <=-8%": lambda item: (item["profile"].get("clayEdge") is not None and item["profile"]["clayEdge"] <= -0.08),
+        "recent win edge >=12%": lambda item: (
+            item["profile"].get("recentWinEdge") is not None and item["profile"]["recentWinEdge"] >= 0.12
+        ),
+        "recent win edge <=-12%": lambda item: (
+            item["profile"].get("recentWinEdge") is not None and item["profile"]["recentWinEdge"] <= -0.12
+        ),
+        "adjusted form edge >=8": lambda item: (
+            item["profile"].get("adjFormEdge") is not None and item["profile"]["adjFormEdge"] >= 8
+        ),
+        "adjusted form edge <=-8": lambda item: (
+            item["profile"].get("adjFormEdge") is not None and item["profile"]["adjFormEdge"] <= -8
+        ),
+        "pressure score >=2": lambda item: item["profile"]["pressureScore"] >= 2,
+        "pressure against >=2": lambda item: item["profile"]["pressureAgainst"] >= 2,
+        "pressure against >=2 and form score <=1": lambda item: (
+            item["profile"]["pressureAgainst"] >= 2 and item["profile"]["formScore"] <= 1
+        ),
+        "form score >=3 and pressure against <=1": lambda item: (
+            item["profile"]["formScore"] >= 3 and item["profile"]["pressureAgainst"] <= 1
+        ),
+        "form score >=3 but pressure against >=2": lambda item: (
+            item["profile"]["formScore"] >= 3 and item["profile"]["pressureAgainst"] >= 2
+        ),
+    }
+    output: dict[str, Any] = {}
+    for label, predicate in slice_defs.items():
+        rows = [item for item in desk_rows if predicate(item)]
+        output[label] = summarize_hits(rows)
+    return output
+
+
 def value_row_hit(row: dict[str, Any]) -> bool | None:
     if row.get("graded") is False:
         return None
@@ -399,6 +494,7 @@ def run() -> None:
                 "hit": hit,
                 "veto": veto,
                 "risks": risks,
+                "profile": clay_pressure_profile(row, side),
                 "round": round_number(row),
             }
         )
@@ -554,6 +650,7 @@ def run() -> None:
             else None,
             "samples": serve_floor[:20],
         },
+        "clayPressureSlices": clay_pressure_slices(desk_rows),
         "compressionUnderVeto": {
             "overRowsVetoed": len(compression_vetoes),
             "vetoedHitRate": summarize_hits(compression_vetoes)["hitRate"],
@@ -658,6 +755,27 @@ def run() -> None:
                 f"{output['serveFloorFlip']['graded']} ({pct(output['serveFloorFlip']['hitRate'])})."
             ),
             "- This is promising as a veto/derivative hint, but too noisy to promote as automatic ML flips.",
+            "",
+            "## Recent Clay Form And Pressure Moments",
+            "",
+            "Recent clay/form edges are useful, but they are support signals, not a guarantee.",
+            "",
+        ]
+    )
+    for label in (
+        "clay edge >=8%",
+        "recent win edge >=12%",
+        "adjusted form edge >=8",
+        "form score >=3 and pressure against <=1",
+        "form score >=3 but pressure against >=2",
+        "pressure against >=2 and form score <=1",
+    ):
+        item = output["clayPressureSlices"][label]
+        md.append(f"- {label}: {item['hits']}/{item['graded']} ({pct(item['hitRate'])}).")
+    md.extend(
+        [
+            "",
+            "Read: recent clay form should raise confidence only when pressure-against is low. If clay/form is strong but pressure-against is high, it becomes a derivative/watch profile instead of a clean ML bet.",
             "",
             "## Derivative And Data-Integrity Gates",
             "",

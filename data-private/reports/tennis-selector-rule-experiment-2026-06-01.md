@@ -34,6 +34,19 @@ Vetoed June 1 ML/value rows:
 - Serve-floor flip candidates: 9/15 (60.0%).
 - This is promising as a veto/derivative hint, but too noisy to promote as automatic ML flips.
 
+## Recent Clay Form And Pressure Moments
+
+Recent clay/form edges are useful, but they are support signals, not a guarantee.
+
+- clay edge >=8%: 61/88 (69.3%).
+- recent win edge >=12%: 60/82 (73.2%).
+- adjusted form edge >=8: 51/71 (71.8%).
+- form score >=3 and pressure against <=1: 42/55 (76.4%).
+- form score >=3 but pressure against >=2: 10/16 (62.5%).
+- pressure against >=2 and form score <=1: 11/22 (50.0%).
+
+Read: recent clay form should raise confidence only when pressure-against is low. If clay/form is strong but pressure-against is high, it becomes a derivative/watch profile instead of a clean ML bet.
+
 ## Derivative And Data-Integrity Gates
 
 - Compression-under veto saw 1 published Over rows; hit rate on vetoed Overs was 0.0%.
