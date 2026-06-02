@@ -1,0 +1,73 @@
+{
+  "after_counts": {
+    "market_contracts": 798,
+    "market_price_ticks": 798,
+    "market_snapshots": 2408,
+    "prop_market_snapshots": 2409,
+    "source_snapshots": 2251,
+    "unresolved_entities": 0
+  },
+  "before_counts": {
+    "market_contracts": 798,
+    "market_price_ticks": 798,
+    "market_snapshots": 2408,
+    "prop_market_snapshots": 2409,
+    "source_snapshots": 2251,
+    "unresolved_entities": 0
+  },
+  "by_file": {
+    "data-private/odds/kalshi/mlb/2026-05-31-kalshi-markets.json": {
+      "parsed_contracts": 378,
+      "parsed_snapshots": 378,
+      "parsed_ticks": 378,
+      "source_games": 15,
+      "source_rows": 378,
+      "unmapped_games": 0
+    },
+    "data-private/odds/robinhood/mlb/2026-05-31-robinhood-baseball-visible-markets.json": {
+      "parsed_contracts": 30,
+      "parsed_snapshots": 30,
+      "parsed_ticks": 30,
+      "source_games": 15,
+      "source_rows": 30,
+      "unmapped_games": 0
+    }
+  },
+  "date": "2026-05-31",
+  "dry_run": false,
+  "generated_at": "2026-06-02T22:19:04.503000+00:00",
+  "inserted": {
+    "market_contracts": 408,
+    "market_price_ticks": 408,
+    "market_snapshots": 408
+  },
+  "odds_completeness": "complete",
+  "odds_status": "success",
+  "ok": true,
+  "parsed_contracts": 408,
+  "parsed_snapshots": 408,
+  "parsed_ticks": 408,
+  "parser_module": "pipeline/sources/mlb/normalization/market_raw_context.py",
+  "prop_market_snapshots_for_date": 66,
+  "props_completeness": "complete",
+  "props_status": "success",
+  "row_count_delta": {
+    "market_contracts": 0,
+    "market_price_ticks": 0,
+    "market_snapshots": 0,
+    "prop_market_snapshots": 0,
+    "source_snapshots": 0,
+    "unresolved_entities": 0
+  },
+  "sample_source_snapshots": [
+    "mlb-c4d69f38f42ac3f35a222483f40a73b6",
+    "mlb-2fc9e7dbc26d8700a070fdb5be29fb25"
+  ],
+  "script": "data-migration/scripts/ingest_mlb_markets_props_raw_to_typed.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_files": 2,
+  "source_games": 30,
+  "source_rows": 408,
+  "source_snapshot_rows": 2,
+  "unmapped_games": 0
+}
