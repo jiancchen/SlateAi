@@ -1,0 +1,26 @@
+{
+  "date": null,
+  "dry_run": true,
+  "family": "mlb_lineups",
+  "generated_at": "2026-06-02T09:15:48.072977+00:00",
+  "inserted": {},
+  "ok": true,
+  "parsed_rows": 59745,
+  "parser_module": "pipeline/sources/mlb/normalization/lineups.py",
+  "script": "data-migration/scripts/normalize_mlb_lineups.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_rows": 26009,
+  "source_tables": {
+    "mlb_lineup_conversion_shape_daily": 5262,
+    "mlb_lineup_dependency_profiles": 3092,
+    "mlb_lineup_pitcher_matchup_daily": 17655
+  },
+  "targets": {
+    "lineup_matchup_snapshots": 17655,
+    "lineup_shape_snapshots": 8354,
+    "lineup_slots": 16081,
+    "lineups": 17655
+  },
+  "unparsed_rows": 0,
+  "unresolved_rows_added": 0
+}

@@ -1,0 +1,29 @@
+{
+  "batting_order_duplicates": 0,
+  "date": null,
+  "errors": [],
+  "generated_at": "2026-06-02T09:16:11.987272+00:00",
+  "ok": true,
+  "orphan_checks": {
+    "lineup_matchup_snapshots": 0,
+    "lineup_shape_snapshots": 0,
+    "lineup_slots": 0,
+    "lineups": 0
+  },
+  "parser_module": "pipeline/sources/mlb/normalization/lineups.py",
+  "script": "data-migration/scripts/validate_mlb_lineups_normalization.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_rows": 26009,
+  "source_table_counts": {
+    "mlb_lineup_conversion_shape_daily": 5262,
+    "mlb_lineup_dependency_profiles": 3092,
+    "mlb_lineup_pitcher_matchup_daily": 17655
+  },
+  "target_counts": {
+    "lineup_matchup_snapshots": 17655,
+    "lineup_shape_snapshots": 8354,
+    "lineup_slots": 14166,
+    "lineups": 1574
+  },
+  "unresolved_lineup_entities": 0
+}
