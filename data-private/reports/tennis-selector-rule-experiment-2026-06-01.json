@@ -1,0 +1,959 @@
+{
+  "compressionUnderVeto": {
+    "avoidedOverMisses": 1,
+    "overRowsVetoed": 1,
+    "removedOverWinners": 0,
+    "samples": [
+      {
+        "date": "2026-05-27",
+        "hit": false,
+        "match": "Lorenzo Sonego vs Tommy Paul",
+        "matchId": "rg-m-lorenzo-sonego-tommy-paul-2026-05-27",
+        "pnlPer100": null,
+        "selection": "Over",
+        "signal": {
+          "name": "Tommy Paul",
+          "side": 2,
+          "signals": [
+            "second-serve",
+            "return-pressure",
+            "opponent-error-risk"
+          ]
+        }
+      }
+    ],
+    "vetoedHitRate": 0.0
+  },
+  "dataIntegrityGate": {
+    "graded": 0,
+    "hitRate": null,
+    "rows": 2,
+    "samples": [
+      {
+        "date": "2026-05-31",
+        "hit": null,
+        "market": "O/U",
+        "match": "Rafael Jodar vs Pablo Carreno Busta",
+        "reason": "FanDuel total is 34.5; model did not clear a full-match over/under edge from hold, return, and set-shape data. hold avg N/A, return games won N/A, first-set sample N/A, 0 recent sets.",
+        "selection": "Under"
+      },
+      {
+        "date": "2026-06-01",
+        "hit": null,
+        "market": "O/U",
+        "match": "Felix Auger-Aliassime vs Alejandro Tabilo",
+        "reason": "FanDuel total is 38.5; model did not clear a full-match over/under edge from hold, return, and set-shape data. hold avg 87%, BP saved 68%, BP converted 45%, first-set sample N/A, 0 recent sets.",
+        "selection": "Under"
+      }
+    ]
+  },
+  "deskAfterVeto": {
+    "graded": 275,
+    "hitRate": 0.662,
+    "hits": 182,
+    "pnlPer100": 0.0,
+    "roi": 0.0,
+    "rows": 275
+  },
+  "deskBaseline": {
+    "graded": 282,
+    "hitRate": 0.649,
+    "hits": 183,
+    "pnlPer100": 0.0,
+    "roi": 0.0,
+    "rows": 282
+  },
+  "deskVetoImpact": {
+    "avoidedMisses": 6,
+    "removedWinners": 1,
+    "riskCounts": {
+      "error-control": 2,
+      "favorite-tax": 2,
+      "late-service": 2,
+      "long-service": 2,
+      "opponent-bp-conversion": 1,
+      "opponent-return-pressure": 6,
+      "opponent-tiebreak": 2,
+      "second-serve": 2,
+      "time-load": 3
+    },
+    "vetoedHitRate": 0.143,
+    "vetoedRows": 7
+  },
+  "generatedFrom": {
+    "ruleSet": "June 1 deep-dive selector gates",
+    "valueReports": "data-private/reports/tennis-value-backtest-*.json",
+    "warehouse": "data-private/warehouse/sports.db"
+  },
+  "june1Counterfactual": {
+    "compressionOverVetoes": [],
+    "deskAfterVeto": {
+      "graded": 4,
+      "hitRate": 0.75,
+      "hits": 3,
+      "pnlPer100": 0.0,
+      "roi": 0.0,
+      "rows": 4
+    },
+    "deskBaseline": {
+      "graded": 8,
+      "hitRate": 0.375,
+      "hits": 3,
+      "pnlPer100": 0.0,
+      "roi": 0.0,
+      "rows": 8
+    },
+    "deskVetoed": [
+      {
+        "date": "2026-06-01",
+        "hit": false,
+        "matchId": "rg-m-frances-tiafoe-matteo-arnaldi-2026-06-01",
+        "risks": [
+          "opponent-return-pressure",
+          "opponent-tiebreak",
+          "time-load"
+        ],
+        "round": 4,
+        "selection": "Frances Tiafoe",
+        "veto": true
+      },
+      {
+        "date": "2026-06-01",
+        "hit": false,
+        "matchId": "rg-m-juan-manuel-cerundolo-matteo-berrettini-2026-06-01",
+        "risks": [
+          "time-load"
+        ],
+        "round": 4,
+        "selection": "Juan Manuel Cerundolo",
+        "veto": true
+      },
+      {
+        "date": "2026-06-01",
+        "hit": false,
+        "matchId": "rg-w-anastasia-potapova-anna-kalinskaya-2026-06-01",
+        "risks": [
+          "error-control",
+          "favorite-tax",
+          "late-service",
+          "long-service",
+          "opponent-bp-conversion",
+          "opponent-return-pressure",
+          "opponent-tiebreak",
+          "second-serve"
+        ],
+        "round": 4,
+        "selection": "Anastasia Potapova",
+        "veto": true
+      },
+      {
+        "date": "2026-06-01",
+        "hit": false,
+        "matchId": "rg-w-madison-keys-diana-shnaider-2026-06-01",
+        "risks": [
+          "error-control",
+          "opponent-return-pressure"
+        ],
+        "round": 4,
+        "selection": "Madison Keys",
+        "veto": true
+      }
+    ],
+    "positiveMlAfterVeto": {
+      "graded": 2,
+      "hitRate": 1.0,
+      "hits": 2,
+      "pnlPer100": 103.7,
+      "roi": 0.518,
+      "rows": 2
+    },
+    "positiveMlBaseline": {
+      "graded": 6,
+      "hitRate": 0.333,
+      "hits": 2,
+      "pnlPer100": -296.3,
+      "roi": -0.494,
+      "rows": 6
+    },
+    "positiveMlVetoed": [
+      {
+        "date": "2026-06-01",
+        "evPer100": 29.2,
+        "hit": false,
+        "match": "Frances Tiafoe vs Matteo Arnaldi",
+        "matchId": "rg-m-frances-tiafoe-matteo-arnaldi-2026-06-01",
+        "pnlPer100": -100.0,
+        "risks": [
+          "opponent-return-pressure",
+          "opponent-tiebreak",
+          "time-load"
+        ],
+        "selection": "Frances Tiafoe",
+        "valueGrade": "Favorite price needs better proof",
+        "veto": true
+      },
+      {
+        "date": "2026-06-01",
+        "evPer100": 55.0,
+        "hit": false,
+        "match": "Juan Manuel Cerundolo vs Matteo Berrettini",
+        "matchId": "rg-m-juan-manuel-cerundolo-matteo-berrettini-2026-06-01",
+        "pnlPer100": -100.0,
+        "risks": [
+          "time-load"
+        ],
+        "selection": "Juan Manuel Cerundolo",
+        "valueGrade": "Model probability outside validated lane",
+        "veto": true
+      },
+      {
+        "date": "2026-06-01",
+        "evPer100": 9.5,
+        "hit": false,
+        "match": "Anastasia Potapova vs Anna Kalinskaya",
+        "matchId": "rg-w-anastasia-potapova-anna-kalinskaya-2026-06-01",
+        "pnlPer100": -100.0,
+        "risks": [
+          "error-control",
+          "favorite-tax",
+          "late-service",
+          "long-service",
+          "opponent-bp-conversion",
+          "opponent-return-pressure",
+          "opponent-tiebreak",
+          "second-serve"
+        ],
+        "selection": "Anastasia Potapova",
+        "valueGrade": "Favorite price needs better proof",
+        "veto": true
+      },
+      {
+        "date": "2026-06-01",
+        "evPer100": 8.8,
+        "hit": false,
+        "match": "Madison Keys vs Diana Shnaider",
+        "matchId": "rg-w-madison-keys-diana-shnaider-2026-06-01",
+        "pnlPer100": -100.0,
+        "risks": [
+          "error-control",
+          "opponent-return-pressure"
+        ],
+        "selection": "Madison Keys",
+        "valueGrade": "Favorite price needs better proof",
+        "veto": true
+      }
+    ],
+    "pressureDogs": [
+      {
+        "date": "2026-06-01",
+        "entryCents": 8.0,
+        "hit": false,
+        "matchId": "rg-m-flavio-cobolli-zachary-svajda-2026-06-01",
+        "pnlPerContract": -0.08,
+        "selection": "Zachary Svajda",
+        "signals": [
+          "bp-conversion",
+          "error-control"
+        ]
+      },
+      {
+        "date": "2026-06-01",
+        "entryCents": 41.0,
+        "hit": false,
+        "matchId": "rg-m-juan-manuel-cerundolo-matteo-berrettini-2026-06-01",
+        "pnlPerContract": -0.41,
+        "selection": "Juan Manuel Cerundolo",
+        "signals": [
+          "late-return-break",
+          "error-control"
+        ]
+      },
+      {
+        "date": "2026-06-01",
+        "entryCents": 31.0,
+        "hit": true,
+        "matchId": "rg-w-anastasia-potapova-anna-kalinskaya-2026-06-01",
+        "pnlPerContract": 0.69,
+        "selection": "Anna Kalinskaya",
+        "signals": [
+          "bp-conversion",
+          "tiebreak",
+          "long-return-break",
+          "late-return-break"
+        ]
+      },
+      {
+        "date": "2026-06-01",
+        "entryCents": 21.0,
+        "hit": false,
+        "matchId": "rg-w-aryna-sabalenka-naomi-osaka-2026-06-01",
+        "pnlPerContract": -0.21,
+        "selection": "Naomi Osaka",
+        "signals": [
+          "bp-conversion",
+          "tiebreak"
+        ]
+      },
+      {
+        "date": "2026-06-01",
+        "entryCents": 42.0,
+        "hit": true,
+        "matchId": "rg-w-madison-keys-diana-shnaider-2026-06-01",
+        "pnlPerContract": 0.58,
+        "selection": "Diana Shnaider",
+        "signals": [
+          "late-return-break",
+          "error-control"
+        ]
+      }
+    ],
+    "serveFloorFlips": [
+      {
+        "againstDeskPick": "Juan Manuel Cerundolo",
+        "date": "2026-06-01",
+        "hit": true,
+        "matchId": "rg-m-juan-manuel-cerundolo-matteo-berrettini-2026-06-01",
+        "selection": "Matteo Berrettini",
+        "signals": [
+          "player-page-hold",
+          "first-serve-won"
+        ]
+      }
+    ]
+  },
+  "kalshiHealth": [
+    {
+      "badCandidates": 1,
+      "badSamples": [
+        {
+          "missing": [
+            "playerFlow"
+          ],
+          "selection": "Pablo Carreno Busta",
+          "tier": "pass"
+        }
+      ],
+      "candidates": 16,
+      "date": "2026-05-29"
+    },
+    {
+      "badCandidates": 3,
+      "badSamples": [
+        {
+          "missing": [
+            "playerFlow"
+          ],
+          "selection": "Camila Osorio",
+          "tier": "pass"
+        },
+        {
+          "missing": [
+            "playerFlow"
+          ],
+          "selection": "Brandon Nakashima",
+          "tier": "watch"
+        },
+        {
+          "missing": [
+            "playerFlow"
+          ],
+          "selection": "Anastasia Potapova",
+          "tier": "watch"
+        }
+      ],
+      "candidates": 16,
+      "date": "2026-05-30"
+    },
+    {
+      "badCandidates": 1,
+      "badSamples": [
+        {
+          "missing": [
+            "playerFlow"
+          ],
+          "selection": "Pablo Carreno Busta",
+          "tier": "pass"
+        }
+      ],
+      "candidates": 8,
+      "date": "2026-05-31"
+    },
+    {
+      "badCandidates": 1,
+      "badSamples": [
+        {
+          "missing": [
+            "playerFlow"
+          ],
+          "selection": "Alejandro Tabilo",
+          "tier": "pass"
+        }
+      ],
+      "candidates": 8,
+      "date": "2026-06-01"
+    },
+    {
+      "badCandidates": 4,
+      "badSamples": [
+        {
+          "missing": [
+            "boardMatchId",
+            "boardTitle",
+            "playerFlow"
+          ],
+          "selection": "Elina Svitolina",
+          "tier": "pass"
+        },
+        {
+          "missing": [
+            "boardMatchId",
+            "boardTitle",
+            "playerFlow"
+          ],
+          "selection": "Rafael Jodar",
+          "tier": "watch"
+        },
+        {
+          "missing": [
+            "boardMatchId",
+            "boardTitle",
+            "playerFlow"
+          ],
+          "selection": "Jakub Mensik",
+          "tier": "watch"
+        },
+        {
+          "missing": [
+            "boardMatchId",
+            "boardTitle",
+            "playerFlow"
+          ],
+          "selection": "Sorana Cirstea",
+          "tier": "pass"
+        }
+      ],
+      "candidates": 4,
+      "date": "2026-06-02"
+    }
+  ],
+  "positiveMlAfterVeto": {
+    "graded": 6,
+    "hitRate": 0.667,
+    "hits": 4,
+    "pnlPer100": 43.5,
+    "roi": 0.072,
+    "rows": 6
+  },
+  "positiveMlBaseline": {
+    "graded": 10,
+    "hitRate": 0.4,
+    "hits": 4,
+    "pnlPer100": -356.5,
+    "roi": -0.356,
+    "rows": 10
+  },
+  "positiveMlVetoImpact": {
+    "avoidedMisses": 4,
+    "removedWinners": 0,
+    "vetoedHitRate": 0.0,
+    "vetoedRows": 4,
+    "vetoedSamples": [
+      {
+        "date": "2026-06-01",
+        "evPer100": 29.2,
+        "hit": false,
+        "match": "Frances Tiafoe vs Matteo Arnaldi",
+        "matchId": "rg-m-frances-tiafoe-matteo-arnaldi-2026-06-01",
+        "pnlPer100": -100.0,
+        "risks": [
+          "opponent-return-pressure",
+          "opponent-tiebreak",
+          "time-load"
+        ],
+        "selection": "Frances Tiafoe",
+        "valueGrade": "Favorite price needs better proof",
+        "veto": true
+      },
+      {
+        "date": "2026-06-01",
+        "evPer100": 55.0,
+        "hit": false,
+        "match": "Juan Manuel Cerundolo vs Matteo Berrettini",
+        "matchId": "rg-m-juan-manuel-cerundolo-matteo-berrettini-2026-06-01",
+        "pnlPer100": -100.0,
+        "risks": [
+          "time-load"
+        ],
+        "selection": "Juan Manuel Cerundolo",
+        "valueGrade": "Model probability outside validated lane",
+        "veto": true
+      },
+      {
+        "date": "2026-06-01",
+        "evPer100": 9.5,
+        "hit": false,
+        "match": "Anastasia Potapova vs Anna Kalinskaya",
+        "matchId": "rg-w-anastasia-potapova-anna-kalinskaya-2026-06-01",
+        "pnlPer100": -100.0,
+        "risks": [
+          "error-control",
+          "favorite-tax",
+          "late-service",
+          "long-service",
+          "opponent-bp-conversion",
+          "opponent-return-pressure",
+          "opponent-tiebreak",
+          "second-serve"
+        ],
+        "selection": "Anastasia Potapova",
+        "valueGrade": "Favorite price needs better proof",
+        "veto": true
+      },
+      {
+        "date": "2026-06-01",
+        "evPer100": 8.8,
+        "hit": false,
+        "match": "Madison Keys vs Diana Shnaider",
+        "matchId": "rg-w-madison-keys-diana-shnaider-2026-06-01",
+        "pnlPer100": -100.0,
+        "risks": [
+          "error-control",
+          "opponent-return-pressure"
+        ],
+        "selection": "Madison Keys",
+        "valueGrade": "Favorite price needs better proof",
+        "veto": true
+      }
+    ]
+  },
+  "pressureDog": {
+    "contractRoi": 0.098,
+    "graded": 24,
+    "hitRate": 0.375,
+    "hits": 9,
+    "rows": 24,
+    "samples": [
+      {
+        "date": "2026-05-27",
+        "entryCents": 41.0,
+        "hit": false,
+        "matchId": "rg-m-federico-cina-jesper-de-jong-2026-05-27",
+        "pnlPerContract": -0.41,
+        "selection": "Federico Cina",
+        "signals": [
+          "long-return-break",
+          "error-control"
+        ]
+      },
+      {
+        "date": "2026-05-27",
+        "entryCents": 23.0,
+        "hit": false,
+        "matchId": "rg-m-karen-khachanov-marco-trungelliti-2026-05-27",
+        "pnlPerContract": -0.23,
+        "selection": "Marco Trungelliti",
+        "signals": [
+          "long-return-break",
+          "late-return-break"
+        ]
+      },
+      {
+        "date": "2026-05-27",
+        "entryCents": 16.0,
+        "hit": false,
+        "matchId": "rg-m-lorenzo-sonego-tommy-paul-2026-05-27",
+        "pnlPerContract": -0.16,
+        "selection": "Lorenzo Sonego",
+        "signals": [
+          "late-return-break",
+          "error-control"
+        ]
+      },
+      {
+        "date": "2026-05-27",
+        "entryCents": 33.0,
+        "hit": true,
+        "matchId": "rg-w-hailey-baptiste-wang-xiyu-2026-05-27",
+        "pnlPerContract": 0.67,
+        "selection": "Wang Xiyu",
+        "signals": [
+          "error-control",
+          "return-pressure"
+        ]
+      },
+      {
+        "date": "2026-05-28",
+        "entryCents": 44.2,
+        "hit": true,
+        "matchId": "rg-m-hubert-hurkacz-frances-tiafoe-2026-05-28",
+        "pnlPerContract": 0.558,
+        "selection": "Frances Tiafoe",
+        "signals": [
+          "error-control",
+          "return-pressure"
+        ]
+      },
+      {
+        "date": "2026-05-28",
+        "entryCents": 4.0,
+        "hit": true,
+        "matchId": "rg-m-jannik-sinner-juan-manuel-cerundolo-2026-05-28",
+        "pnlPerContract": 0.96,
+        "selection": "Juan Manuel Cerundolo",
+        "signals": [
+          "long-return-break",
+          "late-return-break"
+        ]
+      },
+      {
+        "date": "2026-05-28",
+        "entryCents": 36.8,
+        "hit": true,
+        "matchId": "rg-m-raphael-collignon-ben-shelton-2026-05-28",
+        "pnlPerContract": 0.632,
+        "selection": "Raphael Collignon",
+        "signals": [
+          "long-return-break",
+          "error-control"
+        ]
+      },
+      {
+        "date": "2026-05-28",
+        "entryCents": 36.8,
+        "hit": true,
+        "matchId": "rg-w-maja-chwalinska-elise-mertens-2026-05-28",
+        "pnlPerContract": 0.632,
+        "selection": "Maja Chwalinska",
+        "signals": [
+          "error-control",
+          "return-pressure"
+        ]
+      },
+      {
+        "date": "2026-05-29",
+        "entryCents": 23.3,
+        "hit": true,
+        "matchId": "rg-m-alex-de-minaur-jakub-mensik-2026-05-29",
+        "pnlPerContract": 0.767,
+        "selection": "Jakub Mensik",
+        "signals": [
+          "late-return-break",
+          "error-control"
+        ]
+      },
+      {
+        "date": "2026-05-29",
+        "entryCents": 20.4,
+        "hit": false,
+        "matchId": "rg-m-alex-michelsen-rafael-jodar-2026-05-29",
+        "pnlPerContract": -0.204,
+        "selection": "Alex Michelsen",
+        "signals": [
+          "long-return-break",
+          "late-return-break"
+        ]
+      },
+      {
+        "date": "2026-05-29",
+        "entryCents": 29.0,
+        "hit": false,
+        "matchId": "rg-m-casper-ruud-tommy-paul-2026-05-29",
+        "pnlPerContract": -0.29,
+        "selection": "Tommy Paul",
+        "signals": [
+          "long-return-break",
+          "late-return-break"
+        ]
+      },
+      {
+        "date": "2026-05-29",
+        "entryCents": 7.9,
+        "hit": false,
+        "matchId": "rg-w-elina-svitolina-tamara-korpatsch-2026-05-29",
+        "pnlPerContract": -0.079,
+        "selection": "Tamara Korpatsch",
+        "signals": [
+          "long-return-break",
+          "late-return-break"
+        ]
+      },
+      {
+        "date": "2026-05-29",
+        "entryCents": 10.4,
+        "hit": false,
+        "matchId": "rg-w-marta-kostyuk-viktorija-golubic-2026-05-29",
+        "pnlPerContract": -0.104,
+        "selection": "Viktorija Golubic",
+        "signals": [
+          "long-return-break",
+          "error-control"
+        ]
+      },
+      {
+        "date": "2026-05-29",
+        "entryCents": 15.9,
+        "hit": false,
+        "matchId": "rg-w-mirra-andreeva-marie-bouzkova-2026-05-29",
+        "pnlPerContract": -0.159,
+        "selection": "Marie Bouzkova",
+        "signals": [
+          "late-return-break",
+          "error-control"
+        ]
+      },
+      {
+        "date": "2026-05-30",
+        "entryCents": 37.9,
+        "hit": false,
+        "matchId": "rg-m-flavio-cobolli-learner-tien-2026-05-30",
+        "pnlPerContract": -0.379,
+        "selection": "Learner Tien",
+        "signals": [
+          "long-return-break",
+          "late-return-break",
+          "return-pressure"
+        ]
+      },
+      {
+        "date": "2026-05-30",
+        "entryCents": 39.2,
+        "hit": false,
+        "matchId": "rg-m-jaime-faria-frances-tiafoe-2026-05-30",
+        "pnlPerContract": -0.392,
+        "selection": "Jaime Faria",
+        "signals": [
+          "long-return-break",
+          "late-return-break",
+          "error-control"
+        ]
+      },
+      {
+        "date": "2026-05-30",
+        "entryCents": 21.5,
+        "hit": false,
+        "matchId": "rg-m-moise-kouame-alejandro-tabilo-2026-05-30",
+        "pnlPerContract": -0.215,
+        "selection": "Moise Kouame",
+        "signals": [
+          "long-return-break",
+          "late-return-break"
+        ]
+      },
+      {
+        "date": "2026-05-31",
+        "entryCents": 41.0,
+        "hit": true,
+        "matchId": "rg-m-casper-ruud-joao-fonseca-2026-05-31",
+        "pnlPerContract": 0.59,
+        "selection": "Joao Fonseca",
+        "signals": [
+          "long-return-break",
+          "late-return-break",
+          "error-control"
+        ]
+      },
+      {
+        "date": "2026-05-31",
+        "entryCents": 40.0,
+        "hit": false,
+        "matchId": "rg-w-elina-svitolina-belinda-bencic-2026-05-31",
+        "pnlPerContract": -0.4,
+        "selection": "Belinda Bencic",
+        "signals": [
+          "late-return-break",
+          "error-control"
+        ]
+      },
+      {
+        "date": "2026-06-01",
+        "entryCents": 8.0,
+        "hit": false,
+        "matchId": "rg-m-flavio-cobolli-zachary-svajda-2026-06-01",
+        "pnlPerContract": -0.08,
+        "selection": "Zachary Svajda",
+        "signals": [
+          "bp-conversion",
+          "error-control"
+        ]
+      }
+    ]
+  },
+  "serveFloorFlip": {
+    "graded": 15,
+    "hitRate": 0.6,
+    "hits": 9,
+    "rows": 15,
+    "samples": [
+      {
+        "againstDeskPick": "Alejandro Davidovich Fokina",
+        "date": "2026-05-27",
+        "hit": true,
+        "matchId": "rg-m-alejandro-davidovich-fokina-thiago-agustin-tirante-2026-05-27",
+        "selection": "Thiago Agustin Tirante",
+        "signals": [
+          "hold",
+          "second-serve"
+        ]
+      },
+      {
+        "againstDeskPick": "Casper Ruud",
+        "date": "2026-05-27",
+        "hit": false,
+        "matchId": "rg-m-casper-ruud-hamad-medjedovic-2026-05-27",
+        "selection": "Hamad Medjedovic",
+        "signals": [
+          "hold",
+          "late-service-hold"
+        ]
+      },
+      {
+        "againstDeskPick": "Jesper de Jong",
+        "date": "2026-05-27",
+        "hit": false,
+        "matchId": "rg-m-federico-cina-jesper-de-jong-2026-05-27",
+        "selection": "Federico Cina",
+        "signals": [
+          "hold",
+          "second-serve"
+        ]
+      },
+      {
+        "againstDeskPick": "Magda Linette",
+        "date": "2026-05-27",
+        "hit": false,
+        "matchId": "rg-w-jelena-ostapenko-magda-linette-2026-05-27",
+        "selection": "Jelena Ostapenko",
+        "signals": [
+          "hold",
+          "late-service-hold"
+        ]
+      },
+      {
+        "againstDeskPick": "Wang Xinyu",
+        "date": "2026-05-27",
+        "hit": true,
+        "matchId": "rg-w-tamara-korpatsch-wang-xinyu-2026-05-27",
+        "selection": "Tamara Korpatsch",
+        "signals": [
+          "hold",
+          "second-serve"
+        ]
+      },
+      {
+        "againstDeskPick": "Learner Tien",
+        "date": "2026-05-28",
+        "hit": false,
+        "matchId": "rg-m-facundo-diaz-acosta-learner-tien-2026-05-28",
+        "selection": "Facundo Diaz Acosta",
+        "signals": [
+          "hold",
+          "second-serve"
+        ]
+      },
+      {
+        "againstDeskPick": "Luciano Darderi",
+        "date": "2026-05-28",
+        "hit": true,
+        "matchId": "rg-m-francisco-comesana-luciano-darderi-2026-05-28",
+        "selection": "Francisco Comesana",
+        "signals": [
+          "hold",
+          "second-serve",
+          "late-service-hold"
+        ]
+      },
+      {
+        "againstDeskPick": "Anna Kalinskaya",
+        "date": "2026-05-28",
+        "hit": false,
+        "matchId": "rg-w-anna-kalinskaya-alina-korneeva-2026-05-28",
+        "selection": "Alina Korneeva",
+        "signals": [
+          "hold",
+          "second-serve"
+        ]
+      },
+      {
+        "againstDeskPick": "Elise Mertens",
+        "date": "2026-05-28",
+        "hit": true,
+        "matchId": "rg-w-maja-chwalinska-elise-mertens-2026-05-28",
+        "selection": "Maja Chwalinska",
+        "signals": [
+          "second-serve",
+          "late-service-hold"
+        ]
+      },
+      {
+        "againstDeskPick": "Yuliia Starodubtseva",
+        "date": "2026-05-29",
+        "hit": true,
+        "matchId": "rg-w-wang-xiyu-yuliia-starodubtseva-2026-05-29",
+        "selection": "Wang Xiyu",
+        "signals": [
+          "hold",
+          "second-serve"
+        ]
+      },
+      {
+        "againstDeskPick": "Learner Tien",
+        "date": "2026-05-30",
+        "hit": true,
+        "matchId": "rg-m-flavio-cobolli-learner-tien-2026-05-30",
+        "selection": "Flavio Cobolli",
+        "signals": [
+          "hold",
+          "second-serve",
+          "late-service-hold"
+        ]
+      },
+      {
+        "againstDeskPick": "Frances Tiafoe",
+        "date": "2026-05-30",
+        "hit": false,
+        "matchId": "rg-m-jaime-faria-frances-tiafoe-2026-05-30",
+        "selection": "Jaime Faria",
+        "signals": [
+          "hold",
+          "second-serve"
+        ]
+      },
+      {
+        "againstDeskPick": "Maria Sakkari",
+        "date": "2026-05-30",
+        "hit": true,
+        "matchId": "rg-w-maria-sakkari-maja-chwalinska-2026-05-30",
+        "selection": "Maja Chwalinska",
+        "signals": [
+          "hold",
+          "second-serve",
+          "late-service-hold"
+        ]
+      },
+      {
+        "againstDeskPick": "Victoria Mboko",
+        "date": "2026-05-30",
+        "hit": true,
+        "matchId": "rg-w-victoria-mboko-madison-keys-2026-05-30",
+        "selection": "Madison Keys",
+        "signals": [
+          "hold",
+          "late-service-hold"
+        ]
+      },
+      {
+        "againstDeskPick": "Juan Manuel Cerundolo",
+        "date": "2026-06-01",
+        "hit": true,
+        "matchId": "rg-m-juan-manuel-cerundolo-matteo-berrettini-2026-06-01",
+        "selection": "Matteo Berrettini",
+        "signals": [
+          "player-page-hold",
+          "first-serve-won"
+        ]
+      }
+    ]
+  },
+  "settledRows": 282,
+  "trainingRows": 336
+}
