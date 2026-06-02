@@ -107,6 +107,14 @@ Sport-specific duplicate keys:
 
 ## Phase Plan
 
+### Pre-Implementation Audit
+
+See `data-migration/phase9_pipeline_preimplementation_audit.md`.
+
+Hard conclusion from the audit: do not wire active fetchers one by one. The first implementation must prove a single source family can move from raw archive/source receipts into typed DB tables, run validation, avoid duplicate row growth on rerun, and update fetch status for the same sport/date/source.
+
+The first recommended code path is `Phase 9B.1`: tennis Flashscore raw archive -> `match_stat_rows` / `service_pressure_snapshots` -> validation -> DuckDB rebuild. Public exports, site/API reads, and prediction behavior should remain untouched during this first pass.
+
 ### Phase 9A: Fetch Contract Schema
 
 - Add `source_fetch_policies`, `source_fetch_runs`, and `source_fetch_status` to both sport DBs.
