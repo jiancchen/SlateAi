@@ -1,0 +1,26 @@
+{
+  "date": null,
+  "dry_run": false,
+  "family": "mlb_game_shape",
+  "generated_at": "2026-06-02T16:26:16.039884+00:00",
+  "inserted": {
+    "state_formula_backtests": 1061,
+    "state_formula_training_rows": 7120
+  },
+  "ok": true,
+  "parsed_rows": 8181,
+  "parser_module": "pipeline/sources/mlb/normalization/game_shape.py",
+  "script": "data-migration/scripts/normalize_mlb_game_shape.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_rows": 8181,
+  "source_tables": {
+    "mlb_state_formula_backtests": 1061,
+    "mlb_state_formula_training_rows": 7120
+  },
+  "targets": {
+    "state_formula_backtests": 1061,
+    "state_formula_training_rows": 7120
+  },
+  "unparsed_rows": 0,
+  "unresolved_rows_added": 0
+}
