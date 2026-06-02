@@ -40,6 +40,68 @@ const LANE_RULES = {
     optionalSources: new Set(['tennis_sofascore_replay', 'tennis_livesport_replay']),
     requireOneOfSources: new Set(['tennis_sofascore_replay', 'tennis_livesport_replay']),
   },
+  props: {
+    includeRequiredFamilies: null,
+    excludeFamilies: new Set(),
+    optionalSources: new Set(),
+  },
+  postgame: {
+    includeRequiredFamilies: null,
+    excludeFamilies: new Set(),
+    optionalSources: new Set(),
+  },
+  m2_training: {
+    includeRequiredFamilies: null,
+    excludeFamilies: new Set(),
+    optionalSources: new Set(),
+  },
+};
+
+const SPORT_LANE_SOURCES = {
+  mlb: {
+    prediction: new Set([
+      'mlb_schedule',
+      'mlb_game_feed',
+      'mlb_lineups',
+      'mlb_probables',
+      'mlb_pitcher_features',
+      'mlb_bullpen_features',
+      'mlb_team_features',
+      'mlb_environment',
+    ]),
+    value: new Set([
+      'mlb_schedule',
+      'mlb_game_feed',
+      'mlb_lineups',
+      'mlb_probables',
+      'mlb_pitcher_features',
+      'mlb_bullpen_features',
+      'mlb_team_features',
+      'mlb_environment',
+      'mlb_odds',
+    ]),
+    props: new Set([
+      'mlb_schedule',
+      'mlb_game_feed',
+      'mlb_lineups',
+      'baseballsavant_hitter_statcast',
+      'mlb_player_context',
+      'mlb_pitcher_features',
+      'mlb_odds',
+      'mlb_props',
+    ]),
+    market: new Set(['mlb_odds', 'mlb_props']),
+    postgame: new Set(['mlb_schedule', 'mlb_game_feed', 'mlb_model_artifacts']),
+    m2_training: new Set([
+      'mlb_game_feed',
+      'mlb_lineups',
+      'mlb_pitcher_features',
+      'mlb_bullpen_features',
+      'mlb_team_features',
+      'mlb_environment',
+      'mlb_game_shape',
+    ]),
+  },
 };
 
 function parseArgs(argv) {
@@ -116,7 +178,9 @@ function loadStatuses(dbPath, sport, date) {
   return new Map(rows.map((row) => [row.source_name, row]));
 }
 
-function isPolicyInLane(policy, laneRule) {
+function isPolicyInLane(policy, laneRule, options) {
+  const sportLaneSources = SPORT_LANE_SOURCES[options.sport]?.[options.lane];
+  if (sportLaneSources) return sportLaneSources.has(policy.source_name);
   const family = policy.source_family || '';
   if (laneRule.includeRequiredFamilies && !laneRule.includeRequiredFamilies.has(family)) return false;
   if (laneRule.excludeFamilies.has(family)) return false;
@@ -191,7 +255,7 @@ function buildPreflight(options) {
   const laneRule = LANE_RULES[options.lane];
   const policies = loadPolicies(target.absoluteDbPath, options.sport);
   const statuses = loadStatuses(target.absoluteDbPath, options.sport, options.date);
-  const selectedPolicies = policies.filter((policy) => isPolicyInLane(policy, laneRule));
+  const selectedPolicies = policies.filter((policy) => isPolicyInLane(policy, laneRule, options));
   const nowMs = Date.now();
   const sourceResults = selectedPolicies.map((policy) => evaluateSource(policy, statuses.get(policy.source_name), options, nowMs, laneRule));
   const laneErrors = evaluateRequireOneOf(sourceResults, laneRule);
