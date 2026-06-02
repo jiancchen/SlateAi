@@ -109,6 +109,26 @@ def detail_json(payload: dict[str, Any]) -> str:
     return compact_json(detail)
 
 
+def source_pk_for_row(row: sqlite3.Row) -> str:
+    return str(row["source_pk"] or row["legacy_row_id"])
+
+
+def insert_value_rows(con: sqlite3.Connection, rows: Iterable[tuple[str, dict[str, Any]]]) -> dict[str, int]:
+    inserted: dict[str, int] = {}
+    for table, values in rows:
+        columns = list(values.keys())
+        placeholders = ",".join("?" for _ in columns)
+        set_clause = ", ".join(f"{column} = excluded.{column}" for column in columns[1:])
+        sql = f"""
+            insert into {table} ({", ".join(columns)})
+            values ({placeholders})
+            on conflict({columns[0]}) do update set {set_clause}
+        """
+        con.execute(sql, [values[column] for column in columns])
+        inserted[table] = inserted.get(table, 0) + 1
+    return inserted
+
+
 def add_column_if_missing(con: sqlite3.Connection, table: str, column: str, ddl: str) -> None:
     existing = {row["name"] for row in con.execute(f"pragma table_info({table})").fetchall()}
     if column not in existing:

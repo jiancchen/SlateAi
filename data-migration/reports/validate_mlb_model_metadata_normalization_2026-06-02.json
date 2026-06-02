@@ -1,0 +1,33 @@
+{
+  "date": null,
+  "errors": [],
+  "generated_at": "2026-06-02T16:11:49.950777+00:00",
+  "ok": true,
+  "orphan_checks": {
+    "model_component_runs": 0,
+    "model_run_artifacts": 0,
+    "model_run_lanes": 0
+  },
+  "parser_module": "pipeline/sources/mlb/normalization/model_metadata.py",
+  "script": "data-migration/scripts/validate_mlb_model_metadata_normalization.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_rows": 68,
+  "source_table_counts": {
+    "model_component_runs": 3,
+    "model_run_artifacts": 19,
+    "model_run_lanes": 38,
+    "model_runs": 8
+  },
+  "source_tag_counts": {
+    "model_component_runs": 3,
+    "model_run_artifacts": 19,
+    "model_run_lanes": 38,
+    "model_runs": 8
+  },
+  "target_counts": {
+    "model_component_runs": 3,
+    "model_run_artifacts": 19,
+    "model_run_lanes": 38,
+    "model_runs": 90
+  }
+}

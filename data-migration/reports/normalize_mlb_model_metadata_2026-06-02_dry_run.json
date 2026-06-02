@@ -1,0 +1,27 @@
+{
+  "date": null,
+  "dry_run": true,
+  "family": "mlb_model_metadata",
+  "generated_at": "2026-06-02T16:11:49.891347+00:00",
+  "inserted": {},
+  "ok": true,
+  "parsed_rows": 68,
+  "parser_module": "pipeline/sources/mlb/normalization/model_metadata.py",
+  "script": "data-migration/scripts/normalize_mlb_model_metadata.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_rows": 68,
+  "source_tables": {
+    "model_component_runs": 3,
+    "model_run_artifacts": 19,
+    "model_run_lanes": 38,
+    "model_runs": 8
+  },
+  "targets": {
+    "model_component_runs": 3,
+    "model_run_artifacts": 19,
+    "model_run_lanes": 38,
+    "model_runs": 8
+  },
+  "unparsed_rows": 0,
+  "unresolved_rows_added": 0
+}
