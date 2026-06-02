@@ -1,0 +1,19 @@
+{
+  "date": null,
+  "dry_run": true,
+  "family": "tennis_markets",
+  "generated_at": "2026-06-02T07:50:27.660561+00:00",
+  "inserted_contracts": 0,
+  "inserted_snapshots": 0,
+  "inserted_ticks": 0,
+  "ok": true,
+  "parsed_contracts": 824,
+  "parsed_snapshots": 1104,
+  "parsed_ticks": 131248,
+  "parser_module": "pipeline/sources/tennis/normalization/markets.py",
+  "script": "data-migration/scripts/normalize_tennis_markets.py",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "source_rows": 132072,
+  "unparsed_rows": 0,
+  "unresolved_rows_added": 187
+}
