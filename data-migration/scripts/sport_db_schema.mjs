@@ -1,0 +1,669 @@
+import { createHash } from 'node:crypto';
+import path from 'node:path';
+
+export const SPORTS = ['mlb', 'tennis'];
+
+export const DB_TARGETS = {
+  mlb: {
+    sport: 'mlb',
+    dbPath: 'data-private/warehouse/sports/mlb/sql-mlb.db',
+    migrationsDir: 'data-private/warehouse/sports/mlb/migrations',
+    checksDir: 'data-private/warehouse/sports/mlb/checks',
+  },
+  tennis: {
+    sport: 'tennis',
+    dbPath: 'data-private/warehouse/sports/tennis/sql-tennis.db',
+    migrationsDir: 'data-private/warehouse/sports/tennis/migrations',
+    checksDir: 'data-private/warehouse/sports/tennis/checks',
+  },
+};
+
+export const COMMON_TABLES = [
+  'schema_migrations',
+  'migration_runs',
+  'source_snapshots',
+  'entity_aliases',
+  'unresolved_entities',
+  'model_runs',
+  'model_artifacts',
+  'export_manifests',
+  'health_checks',
+];
+
+export const COMMON_INDEXES = [
+  'idx_source_snapshots_source_date',
+  'idx_source_snapshots_hash',
+  'idx_model_runs_date_model',
+  'idx_model_artifacts_run',
+  'idx_health_checks_run',
+  'idx_entity_aliases_lookup',
+  'idx_unresolved_entities_status',
+  'idx_export_manifests_lookup',
+];
+
+export const SPORT_TABLES = {
+  mlb: [
+    'teams',
+    'players',
+    'venues',
+    'games',
+    'starting_pitchers',
+    'lineups',
+    'lineup_slots',
+    'plate_appearances',
+    'pitch_events',
+    'game_outcomes',
+    'team_feature_snapshots',
+    'player_feature_snapshots',
+    'game_environment_snapshots',
+    'market_snapshots',
+    'prediction_rows',
+    'settlement_rows',
+  ],
+  tennis: [
+    'players',
+    'tournaments',
+    'matches',
+    'match_players',
+    'rankings',
+    'recent_matches',
+    'player_form_snapshots',
+    'match_stat_rows',
+    'service_pressure_snapshots',
+    'replay_games',
+    'replay_points',
+    'h2h_matches',
+    'market_snapshots',
+    'prediction_rows',
+    'settlement_rows',
+  ],
+};
+
+export const SPORT_INDEXES = {
+  mlb: [
+    'idx_mlb_games_date',
+    'idx_mlb_games_teams',
+    'idx_mlb_starting_pitchers_game',
+    'idx_mlb_lineups_game_team',
+    'idx_mlb_plate_appearances_game',
+    'idx_mlb_pitch_events_game',
+    'idx_mlb_market_snapshots_lookup',
+    'idx_mlb_prediction_rows_run',
+    'idx_mlb_settlement_rows_prediction',
+  ],
+  tennis: [
+    'idx_tennis_matches_date',
+    'idx_tennis_match_players_player',
+    'idx_tennis_rankings_player_date',
+    'idx_tennis_recent_matches_player_date',
+    'idx_tennis_match_stat_rows_lookup',
+    'idx_tennis_replay_points_game',
+    'idx_tennis_h2h_players',
+    'idx_tennis_market_snapshots_lookup',
+    'idx_tennis_prediction_rows_run',
+    'idx_tennis_settlement_rows_prediction',
+  ],
+};
+
+export function repoRelativeTargetForSport(sport, repoRoot) {
+  const target = DB_TARGETS[sport];
+  if (!target) throw new Error(`Unknown sport: ${sport}`);
+  return {
+    ...target,
+    absoluteDbPath: path.join(repoRoot, target.dbPath),
+    absoluteMigrationsDir: path.join(repoRoot, target.migrationsDir),
+    absoluteChecksDir: path.join(repoRoot, target.checksDir),
+  };
+}
+
+export function expectedTablesForSport(sport) {
+  return [...COMMON_TABLES, ...(SPORT_TABLES[sport] || [])];
+}
+
+export function expectedIndexesForSport(sport) {
+  return [...COMMON_INDEXES, ...(SPORT_INDEXES[sport] || [])];
+}
+
+export function schemaSqlForSport(sport) {
+  if (sport === 'mlb') return [...commonSchemaSql(), ...mlbSchemaSql()];
+  if (sport === 'tennis') return [...commonSchemaSql(), ...tennisSchemaSql()];
+  throw new Error(`Unknown sport: ${sport}`);
+}
+
+export function schemaChecksumForSport(sport) {
+  return createHash('sha256').update(schemaSqlForSport(sport).join('\n')).digest('hex');
+}
+
+function commonSchemaSql() {
+  return [
+    `pragma foreign_keys = on;`,
+    `create table if not exists schema_migrations (
+      migration_id text primary key,
+      applied_at text not null,
+      description text not null,
+      checksum text not null
+    );`,
+    `create table if not exists migration_runs (
+      migration_run_id text primary key,
+      sport text not null,
+      phase text not null,
+      script_path text not null,
+      source_ref text not null,
+      target_ref text not null,
+      status text not null,
+      dry_run integer not null default 0,
+      row_count_source integer,
+      row_count_inserted integer,
+      row_count_updated integer,
+      row_count_skipped integer,
+      checksum text,
+      report_path text,
+      started_at text not null,
+      finished_at text,
+      notes text
+    );`,
+    `create table if not exists source_snapshots (
+      source_snapshot_id text primary key,
+      source_name text not null,
+      sport text not null,
+      source_url text,
+      local_path text,
+      captured_at text,
+      source_date text,
+      content_hash text,
+      content_type text,
+      status text not null default 'captured',
+      notes text
+    );`,
+    `create table if not exists entity_aliases (
+      entity_alias_id text primary key,
+      entity_type text not null,
+      canonical_entity_id text not null,
+      source_name text not null,
+      source_entity_id text,
+      source_display_name text not null,
+      confidence real,
+      first_seen_at text,
+      last_seen_at text,
+      notes text,
+      unique (entity_type, source_name, source_entity_id, source_display_name)
+    );`,
+    `create table if not exists unresolved_entities (
+      unresolved_entity_id text primary key,
+      entity_type text not null,
+      source_name text not null,
+      source_entity_id text,
+      source_display_name text not null,
+      seen_in_source_snapshot_id text,
+      candidate_json text,
+      reason text not null,
+      status text not null default 'open',
+      created_at text not null,
+      resolved_at text
+    );`,
+    `create table if not exists model_runs (
+      model_run_id text primary key,
+      sport text not null,
+      model_id text not null,
+      model_version text,
+      run_date text not null,
+      run_type text not null,
+      status text not null,
+      cartridge_path text,
+      manifest_path text,
+      input_hash text,
+      output_hash text,
+      created_at text not null,
+      notes text
+    );`,
+    `create table if not exists model_artifacts (
+      artifact_id text primary key,
+      model_run_id text not null,
+      artifact_type text not null,
+      local_path text not null,
+      content_hash text,
+      created_at text,
+      foreign key (model_run_id) references model_runs(model_run_id)
+    );`,
+    `create table if not exists export_manifests (
+      export_manifest_id text primary key,
+      sport text not null,
+      export_type text not null,
+      export_date text,
+      model_id text,
+      source_db_path text not null,
+      source_query_hash text,
+      output_path text not null,
+      output_hash text,
+      row_count integer,
+      created_at text not null,
+      notes text
+    );`,
+    `create table if not exists health_checks (
+      health_check_id text primary key,
+      model_run_id text,
+      check_name text not null,
+      status text not null,
+      expected_count integer,
+      actual_count integer,
+      details_json text,
+      checked_at text not null
+    );`,
+    `create index if not exists idx_source_snapshots_source_date on source_snapshots (source_name, source_date);`,
+    `create index if not exists idx_source_snapshots_hash on source_snapshots (content_hash);`,
+    `create index if not exists idx_model_runs_date_model on model_runs (run_date, model_id, model_version);`,
+    `create index if not exists idx_model_artifacts_run on model_artifacts (model_run_id);`,
+    `create index if not exists idx_health_checks_run on health_checks (model_run_id, check_name);`,
+    `create index if not exists idx_entity_aliases_lookup on entity_aliases (entity_type, source_name, source_display_name);`,
+    `create index if not exists idx_unresolved_entities_status on unresolved_entities (entity_type, status);`,
+    `create index if not exists idx_export_manifests_lookup on export_manifests (sport, export_type, export_date, model_id);`,
+  ];
+}
+
+function mlbSchemaSql() {
+  return [
+    `create table if not exists teams (
+      team_id text primary key,
+      mlb_team_id integer unique,
+      name text not null,
+      abbreviation text,
+      league text,
+      division text,
+      active integer not null default 1
+    );`,
+    `create table if not exists players (
+      player_id text primary key,
+      mlb_player_id integer unique,
+      name text not null,
+      bats text,
+      throws text,
+      primary_position text,
+      birth_date text,
+      active integer not null default 1
+    );`,
+    `create table if not exists venues (
+      venue_id text primary key,
+      mlb_venue_id integer unique,
+      name text not null,
+      city text,
+      state text,
+      latitude real,
+      longitude real,
+      roof_type text,
+      orientation_degrees real
+    );`,
+    `create table if not exists games (
+      game_id text primary key,
+      mlb_game_pk integer unique,
+      game_date text not null,
+      start_time_utc text,
+      home_team_id text not null,
+      away_team_id text not null,
+      venue_id text,
+      status text,
+      series_game_number integer,
+      season integer,
+      source_snapshot_id text,
+      foreign key (home_team_id) references teams(team_id),
+      foreign key (away_team_id) references teams(team_id),
+      foreign key (venue_id) references venues(venue_id)
+    );`,
+    `create table if not exists starting_pitchers (
+      game_id text not null,
+      team_id text not null,
+      pitcher_id text not null,
+      confirmation_status text,
+      source_name text,
+      updated_at text,
+      primary key (game_id, team_id, pitcher_id)
+    );`,
+    `create table if not exists lineups (
+      lineup_id text primary key,
+      game_id text not null,
+      team_id text not null,
+      lineup_status text not null,
+      captured_at text not null,
+      source_snapshot_id text
+    );`,
+    `create table if not exists lineup_slots (
+      lineup_id text not null,
+      batting_order integer not null,
+      player_id text not null,
+      position text,
+      primary key (lineup_id, batting_order)
+    );`,
+    `create table if not exists plate_appearances (
+      plate_appearance_id text primary key,
+      game_id text not null,
+      inning integer,
+      inning_half text,
+      batter_id text,
+      pitcher_id text,
+      batting_team_id text,
+      pitching_team_id text,
+      event_type text,
+      rbi integer,
+      runs_scored integer,
+      outs_on_play integer,
+      win_expectancy_delta real,
+      source_snapshot_id text
+    );`,
+    `create table if not exists pitch_events (
+      pitch_event_id text primary key,
+      plate_appearance_id text,
+      game_id text not null,
+      pitch_number integer,
+      pitch_type text,
+      pitch_result text,
+      release_speed real,
+      zone integer,
+      launch_speed real,
+      launch_angle real,
+      hit_location text,
+      is_in_play integer,
+      source_snapshot_id text
+    );`,
+    `create table if not exists game_outcomes (
+      game_id text primary key,
+      home_runs integer,
+      away_runs integer,
+      total_runs integer,
+      f5_home_runs integer,
+      f5_away_runs integer,
+      f5_total_runs integer,
+      winner_team_id text,
+      completed_at text
+    );`,
+    `create table if not exists team_feature_snapshots (
+      feature_snapshot_id text primary key,
+      team_id text not null,
+      game_id text,
+      snapshot_date text not null,
+      feature_family text not null,
+      features_json text not null,
+      source_model text,
+      created_at text
+    );`,
+    `create table if not exists player_feature_snapshots (
+      feature_snapshot_id text primary key,
+      player_id text not null,
+      game_id text,
+      snapshot_date text not null,
+      feature_family text not null,
+      features_json text not null,
+      sample_size integer,
+      created_at text
+    );`,
+    `create table if not exists game_environment_snapshots (
+      environment_snapshot_id text primary key,
+      game_id text not null,
+      snapshot_time text,
+      weather_json text,
+      sun_visibility_json text,
+      park_factor_json text,
+      created_at text
+    );`,
+    `create table if not exists market_snapshots (
+      market_snapshot_id text primary key,
+      game_id text,
+      player_id text,
+      source_name text not null,
+      market_type text not null,
+      selection text not null,
+      line_value real,
+      odds_american integer,
+      price_cents real,
+      implied_probability real,
+      captured_at text not null,
+      raw_source_snapshot_id text
+    );`,
+    `create table if not exists prediction_rows (
+      prediction_row_id text primary key,
+      model_run_id text not null,
+      game_id text,
+      player_id text,
+      lane text not null,
+      market_type text not null,
+      selection text not null,
+      predicted_probability real,
+      projected_value real,
+      confidence real,
+      ev_cents real,
+      price_cents real,
+      odds_american integer,
+      feature_snapshot_id text,
+      rationale_json text,
+      created_at text not null,
+      foreign key (model_run_id) references model_runs(model_run_id)
+    );`,
+    `create table if not exists settlement_rows (
+      settlement_row_id text primary key,
+      prediction_row_id text not null,
+      event_id text,
+      settled_at text,
+      result_value real,
+      won integer,
+      profit_cents real,
+      settlement_notes text,
+      foreign key (prediction_row_id) references prediction_rows(prediction_row_id)
+    );`,
+    `create index if not exists idx_mlb_games_date on games (game_date, status);`,
+    `create index if not exists idx_mlb_games_teams on games (home_team_id, away_team_id, game_date);`,
+    `create index if not exists idx_mlb_starting_pitchers_game on starting_pitchers (game_id, team_id);`,
+    `create index if not exists idx_mlb_lineups_game_team on lineups (game_id, team_id, lineup_status);`,
+    `create index if not exists idx_mlb_plate_appearances_game on plate_appearances (game_id, inning, batter_id, pitcher_id);`,
+    `create index if not exists idx_mlb_pitch_events_game on pitch_events (game_id, plate_appearance_id);`,
+    `create index if not exists idx_mlb_market_snapshots_lookup on market_snapshots (game_id, player_id, source_name, market_type, captured_at);`,
+    `create index if not exists idx_mlb_prediction_rows_run on prediction_rows (model_run_id, game_id, player_id, lane);`,
+    `create index if not exists idx_mlb_settlement_rows_prediction on settlement_rows (prediction_row_id);`,
+  ];
+}
+
+function tennisSchemaSql() {
+  return [
+    `create table if not exists players (
+      player_id text primary key,
+      source_player_id text,
+      name text not null,
+      canonical_name text not null,
+      tour text,
+      country text,
+      birth_date text,
+      handedness text,
+      active integer not null default 1
+    );`,
+    `create table if not exists tournaments (
+      tournament_id text primary key,
+      name text not null,
+      tour text,
+      season integer,
+      location text,
+      surface text,
+      level text
+    );`,
+    `create table if not exists matches (
+      match_id text primary key,
+      tournament_id text,
+      match_date text not null,
+      start_time_utc text,
+      round text,
+      tour text,
+      surface text,
+      best_of integer,
+      status text,
+      source_event_id text,
+      source_snapshot_id text
+    );`,
+    `create table if not exists match_players (
+      match_id text not null,
+      player_id text not null,
+      side integer not null,
+      seed text,
+      pre_match_rank integer,
+      market_name text,
+      primary key (match_id, player_id)
+    );`,
+    `create table if not exists rankings (
+      ranking_id text primary key,
+      player_id text not null,
+      ranking_date text not null,
+      tour text not null,
+      rank integer,
+      points integer,
+      age real,
+      country text,
+      source_name text,
+      source_snapshot_id text
+    );`,
+    `create table if not exists recent_matches (
+      recent_match_id text primary key,
+      player_id text not null,
+      opponent_player_id text,
+      match_date text,
+      tournament_name text,
+      surface text,
+      round text,
+      result text,
+      score text,
+      opponent_rank integer,
+      source_name text,
+      source_snapshot_id text
+    );`,
+    `create table if not exists player_form_snapshots (
+      form_snapshot_id text primary key,
+      player_id text not null,
+      snapshot_date text not null,
+      surface text,
+      sample_size integer,
+      features_json text not null,
+      created_at text
+    );`,
+    `create table if not exists match_stat_rows (
+      stat_row_id text primary key,
+      match_id text,
+      player_id text,
+      source_name text not null,
+      stat_name text not null,
+      stat_value real,
+      stat_made real,
+      stat_attempts real,
+      stat_text text,
+      period text,
+      source_snapshot_id text
+    );`,
+    `create table if not exists service_pressure_snapshots (
+      pressure_snapshot_id text primary key,
+      player_id text not null,
+      match_id text,
+      snapshot_date text not null,
+      surface text,
+      sample_type text not null,
+      sample_size integer,
+      hold_pct real,
+      break_pct real,
+      bp_saved_made integer,
+      bp_saved_attempts integer,
+      bp_saved_pct real,
+      bp_converted_made integer,
+      bp_converted_attempts integer,
+      bp_converted_pct real,
+      deuce_hold_pct real,
+      tiebreak_record text,
+      source_name text,
+      created_at text
+    );`,
+    `create table if not exists replay_games (
+      replay_game_id text primary key,
+      match_id text not null,
+      set_number integer,
+      game_number integer,
+      server_player_id text,
+      winner_player_id text,
+      break_point_count integer,
+      deuce_count integer,
+      score_before text,
+      score_after text,
+      source_name text,
+      source_snapshot_id text
+    );`,
+    `create table if not exists replay_points (
+      replay_point_id text primary key,
+      replay_game_id text not null,
+      point_number integer,
+      server_player_id text,
+      point_winner_player_id text,
+      point_score text,
+      is_break_point integer,
+      is_deuce integer,
+      is_tiebreak integer,
+      source_name text,
+      source_snapshot_id text
+    );`,
+    `create table if not exists h2h_matches (
+      h2h_match_id text primary key,
+      player_a_id text not null,
+      player_b_id text not null,
+      match_date text,
+      tournament_name text,
+      surface text,
+      winner_player_id text,
+      score text,
+      source_name text,
+      source_snapshot_id text
+    );`,
+    `create table if not exists market_snapshots (
+      market_snapshot_id text primary key,
+      match_id text,
+      player_id text,
+      source_name text not null,
+      market_type text not null,
+      selection text not null,
+      line_value real,
+      odds_american integer,
+      price_cents real,
+      implied_probability real,
+      captured_at text not null,
+      raw_source_snapshot_id text
+    );`,
+    `create table if not exists prediction_rows (
+      prediction_row_id text primary key,
+      model_run_id text not null,
+      match_id text not null,
+      player_id text,
+      lane text not null,
+      market_type text not null,
+      selection text not null,
+      predicted_probability real,
+      projected_value real,
+      confidence real,
+      ev_cents real,
+      price_cents real,
+      odds_american integer,
+      feature_snapshot_id text,
+      rationale_json text,
+      created_at text not null,
+      foreign key (model_run_id) references model_runs(model_run_id)
+    );`,
+    `create table if not exists settlement_rows (
+      settlement_row_id text primary key,
+      prediction_row_id text not null,
+      settled_at text,
+      result_value real,
+      won integer,
+      profit_cents real,
+      settlement_notes text,
+      foreign key (prediction_row_id) references prediction_rows(prediction_row_id)
+    );`,
+    `create index if not exists idx_tennis_matches_date on matches (match_date, tour, surface, status);`,
+    `create index if not exists idx_tennis_match_players_player on match_players (player_id, match_id);`,
+    `create index if not exists idx_tennis_rankings_player_date on rankings (player_id, ranking_date, tour);`,
+    `create index if not exists idx_tennis_recent_matches_player_date on recent_matches (player_id, match_date, surface);`,
+    `create index if not exists idx_tennis_match_stat_rows_lookup on match_stat_rows (match_id, player_id, source_name, stat_name);`,
+    `create index if not exists idx_tennis_replay_points_game on replay_points (replay_game_id, point_number);`,
+    `create index if not exists idx_tennis_h2h_players on h2h_matches (player_a_id, player_b_id, match_date);`,
+    `create index if not exists idx_tennis_market_snapshots_lookup on market_snapshots (match_id, player_id, source_name, market_type, captured_at);`,
+    `create index if not exists idx_tennis_prediction_rows_run on prediction_rows (model_run_id, match_id, player_id, lane);`,
+    `create index if not exists idx_tennis_settlement_rows_prediction on settlement_rows (prediction_row_id);`,
+  ];
+}
+
