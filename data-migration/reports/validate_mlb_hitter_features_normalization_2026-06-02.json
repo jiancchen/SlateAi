@@ -1,0 +1,42 @@
+{
+  "date": null,
+  "errors": [],
+  "game_orphans": 0,
+  "generated_at": "2026-06-02T09:25:03.164213+00:00",
+  "ok": true,
+  "orphan_checks": {
+    "player_classic_stat_snapshots": 0,
+    "player_current_deviation_snapshots": 0,
+    "player_game_distribution_snapshots": 0,
+    "player_opponent_context_snapshots": 0,
+    "player_pitch_type_response_snapshots": 0,
+    "player_statcast_game_logs": 0,
+    "player_statcast_snapshots": 0,
+    "player_state_snapshots": 0
+  },
+  "parser_module": "pipeline/sources/mlb/normalization/hitter_features.py",
+  "script": "data-migration/scripts/validate_mlb_hitter_features_normalization.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_rows": 693712,
+  "source_table_counts": {
+    "mlb_hitter_classic_trend_snapshots": 25167,
+    "mlb_hitter_opponent_context_snapshots": 25167,
+    "mlb_hitter_pitch_type_response_daily": 206697,
+    "mlb_hitter_statcast_game_logs": 18004,
+    "mlb_hitter_statcast_trend_snapshots": 25797,
+    "mlb_hitter_state_snapshots": 24396,
+    "mlb_player_current_deviation_daily": 184256,
+    "mlb_player_game_distribution_daily": 184228
+  },
+  "target_counts": {
+    "player_classic_stat_snapshots": 25167,
+    "player_current_deviation_snapshots": 184256,
+    "player_game_distribution_snapshots": 184228,
+    "player_opponent_context_snapshots": 25167,
+    "player_pitch_type_response_snapshots": 206697,
+    "player_statcast_game_logs": 18004,
+    "player_statcast_snapshots": 25797,
+    "player_state_snapshots": 24396
+  },
+  "unresolved_hitter_entities": 0
+}
