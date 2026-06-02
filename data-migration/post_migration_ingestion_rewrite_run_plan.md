@@ -99,6 +99,13 @@ Prediction runs must check `source_fetch_status` before reading model inputs.
   - upsert `source_fetch_status`
 - Validate no false dashboard `N/A` when typed source rows exist.
 
+Current status:
+
+- `data-migration/scripts/run_source_fetch_contract.mjs` records the source/freshness layer for `tennis_reference`.
+- The June 2 pilot wrote both `success` and `skipped_cache` runs, then validated current status freshness.
+- Typed parser write-through from raw receipts into `match_stat_rows`, `service_pressure_snapshots`, `replay_games`, `replay_points`, rankings, and context remains the next Phase 9B substep.
+- Existing tennis normalization modules still primarily parse `legacy_table_rows`; do not mark the active ingestion rewrite complete until raw source receipts can feed typed tables directly or through a clearly declared intermediate.
+
 ### Phase 9C: Tennis Odds
 
 - Wire `tennis_odds` with short TTL.

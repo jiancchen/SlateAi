@@ -1,0 +1,90 @@
+{
+  "generated_at": "2026-06-02T19:44:24.235Z",
+  "phase": "9B",
+  "script": "data-migration/scripts/run_source_fetch_contract.mjs",
+  "result": {
+    "source": "tennis-reference",
+    "source_name": "tennis_reference",
+    "source_family": "match-reference",
+    "sport": "tennis",
+    "date": "2026-06-02",
+    "target": "data-private/warehouse/sports/tennis/sql-tennis.db",
+    "dry_run": true,
+    "run": {
+      "run_id": "source-fetch-tennis_reference-2026-06-02-2026-06-02T19-44-24-235Z",
+      "reason": "initial_refresh",
+      "cache_status": "miss",
+      "previous_success_at": null,
+      "status": "success",
+      "completeness_status": "unknown",
+      "expected_item_count": null,
+      "actual_item_count": 10,
+      "missing_item_count": null,
+      "source_snapshot_id": "tennis-537494e1d87e1726cda23237c082a907",
+      "started_at": "2026-06-02T19:44:24.235Z",
+      "finished_at": "2026-06-02T19:44:24.280Z",
+      "error_code": null,
+      "error_message": null,
+      "details": {
+        "parser_module": "pipeline/sources/tennis/{flashscore,sofascore,livesport,rankings}/parse.mjs",
+        "roots": [
+          "data-private/reference/tennis"
+        ],
+        "root_reports": [
+          {
+            "root": "data-private/reference/tennis",
+            "exists": true,
+            "file_count": 1524
+          }
+        ],
+        "total_file_count": 1524,
+        "dated_file_count": 10,
+        "undated_file_count": 1465,
+        "sample_paths": [
+          "data-private/reference/tennis/espn-scoreboard-2026-06-02.json",
+          "data-private/reference/tennis/fanduel-lines-2026-06-02.json",
+          "data-private/reference/tennis/flashscore-player-pages-2026-06-02.json",
+          "data-private/reference/tennis/flashscore-recent-match-map-2026-06-02.json",
+          "data-private/reference/tennis/player-rankings-history/2026-06-02.json",
+          "data-private/reference/tennis/robinhood-tennis-markets-2026-06-02.json",
+          "data-private/reference/tennis/robinhood-tennis-supplement-2026-06-02.json",
+          "data-private/reference/tennis/sofascore-match-data/slate-map-2026-06-02.json"
+        ],
+        "dry_run": true,
+        "force": false,
+        "disabled": false,
+        "policy": {
+          "run_rule": "fetch_if_stale",
+          "ttl_hours": 12,
+          "max_stale_hours": 48,
+          "env_ttl_key": "TENNIS_TENNIS_REFERENCE_TTL_HOURS",
+          "env_force_key": "TENNIS_TENNIS_REFERENCE_FORCE_FETCH",
+          "env_disable_key": "TENNIS_TENNIS_REFERENCE_DISABLE_FETCH"
+        },
+        "note": "Pilot fetch contract records source/cache status from the local raw archive. Typed parser wiring is the next Phase 9B substep."
+      }
+    },
+    "status": {
+      "last_attempt_at": "2026-06-02T19:44:24.280Z",
+      "last_success_at": "2026-06-02T19:44:24.280Z",
+      "last_status": "success",
+      "last_completeness_status": "unknown",
+      "cache_valid_until": "2026-06-03T07:44:24.280Z",
+      "expected_item_count": null,
+      "actual_item_count": 10,
+      "missing_item_count": null,
+      "unresolved_count": null,
+      "updated_at": "2026-06-02T19:44:24.280Z",
+      "notes": {
+        "cache_status": "miss",
+        "run_reason": "initial_refresh",
+        "parser_module": "pipeline/sources/tennis/{flashscore,sofascore,livesport,rankings}/parse.mjs",
+        "source_family": "match-reference",
+        "typed_parser_wired": false
+      }
+    },
+    "snapshots_planned": 10,
+    "ok": true
+  },
+  "ok": true
+}
