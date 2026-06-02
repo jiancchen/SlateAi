@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-06-02T06:15:34.931Z",
+  "phase": "4",
+  "script": "data-migration/scripts/validate_mlb_ml_settlement.mjs",
+  "sport": "mlb",
+  "expected_settlement_rows": 554,
+  "actual_settlement_rows": 554,
+  "linked_ml_rows": 554,
+  "orphan_rows": 0,
+  "unresolved_rows": 9,
+  "source_checksum": "5ce80ebdb05374c2cf5ecf9af2bbd781602f35e4814d2d6d3d781fa08d88c793",
+  "mismatches": [],
+  "ok": true
+}

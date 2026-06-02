@@ -1,0 +1,182 @@
+{
+  "generated_at": "2026-06-02T06:14:49.866Z",
+  "phase": "4",
+  "script": "data-migration/scripts/settle_mlb_ml_prediction_rows.mjs",
+  "dry_run": false,
+  "sport": "mlb",
+  "before_settlement_rows": 0,
+  "after_settlement_rows": 554,
+  "settled_rows": 554,
+  "unresolved_rows": 9,
+  "win_count": 301,
+  "loss_count": 253,
+  "unresolved_sample": [
+    {
+      "prediction_row_id": "pred-274b382d05241d73cec893928cadeace",
+      "game_id": "tigers-rays",
+      "selection": "Tigers",
+      "run_date": "2026-06-01",
+      "reason": "game or winner not resolved"
+    },
+    {
+      "prediction_row_id": "pred-3c8877da9aa6d23d484c69d0489003db",
+      "game_id": "mets-mariners",
+      "selection": "Mariners",
+      "run_date": "2026-06-01",
+      "reason": "game or winner not resolved"
+    },
+    {
+      "prediction_row_id": "pred-4fedefa5e56d0516ae0981d0ea437b7b",
+      "game_id": "rockies-angels",
+      "selection": "Angels",
+      "run_date": "2026-06-01",
+      "reason": "game or winner not resolved"
+    },
+    {
+      "prediction_row_id": "pred-5a4a88a23fd50a35090ff72fe48bf440",
+      "game_id": "giants-brewers",
+      "selection": "Giants",
+      "run_date": "2026-06-01",
+      "reason": "game or winner not resolved"
+    },
+    {
+      "prediction_row_id": "pred-66b628e2566e47959c10c3ae6b5cea0e",
+      "game_id": "royals-reds",
+      "selection": "Reds",
+      "run_date": "2026-06-01",
+      "reason": "game or winner not resolved"
+    },
+    {
+      "prediction_row_id": "pred-743ce0a1746278a13a65817ff12ea491",
+      "game_id": "dodgers-diamondbacks",
+      "selection": "Dodgers",
+      "run_date": "2026-06-01",
+      "reason": "game or winner not resolved"
+    },
+    {
+      "prediction_row_id": "pred-7a57a655672e50c1f1d3cfd132955e28",
+      "game_id": "marlins-nationals",
+      "selection": "Nationals",
+      "run_date": "2026-06-01",
+      "reason": "game or winner not resolved"
+    },
+    {
+      "prediction_row_id": "pred-edf2722a61f80d473b8046ba42288d05",
+      "game_id": "rangers-cardinals",
+      "selection": "Cardinals",
+      "run_date": "2026-06-01",
+      "reason": "game or winner not resolved"
+    },
+    {
+      "prediction_row_id": "pred-f74e2dd2e5c7bd61ab387968114bbcc6",
+      "game_id": "white-sox-twins",
+      "selection": "White Sox",
+      "run_date": "2026-06-01",
+      "reason": "game or winner not resolved"
+    }
+  ],
+  "sample_rows": [
+    {
+      "settlement_row_id": "settle-56ca1ecde9cb3809dcb2aa4c665dba82",
+      "prediction_row_id": "pred-00b27a9377d94929a24b654f12a8af9e",
+      "event_id": "mlb-823950",
+      "settled_at": "2026-06-02T06:14:49.866Z",
+      "result_value": null,
+      "won": 1,
+      "profit_cents": 55.25,
+      "settlement_notes": "{\"lane\":\"ml\",\"selected\":\"Los Angeles Dodgers\",\"winner\":\"Los Angeles Dodgers\",\"game_id\":\"mlb-823950\"}"
+    },
+    {
+      "settlement_row_id": "settle-31e3cbdc7b3b1093783d7b2d9ef66530",
+      "prediction_row_id": "pred-016123c772dc327f718d0eb9680d9080",
+      "event_id": "mlb-824441",
+      "settled_at": "2026-06-02T06:14:49.866Z",
+      "result_value": null,
+      "won": 1,
+      "profit_cents": 57.14,
+      "settlement_notes": "{\"lane\":\"ml\",\"selected\":\"Cleveland Guardians\",\"winner\":\"Cleveland Guardians\",\"game_id\":\"mlb-824441\"}"
+    },
+    {
+      "settlement_row_id": "settle-2da6fd646cbe29adb8d63b571e11d26b",
+      "prediction_row_id": "pred-01b04574475128ce76ff914fe2f8822c",
+      "event_id": "mlb-825011",
+      "settled_at": "2026-06-02T06:14:49.866Z",
+      "result_value": null,
+      "won": 0,
+      "profit_cents": null,
+      "settlement_notes": "{\"lane\":\"ml\",\"selected\":\"Athletics\",\"winner\":\"St. Louis Cardinals\",\"game_id\":\"mlb-825011\"}"
+    },
+    {
+      "settlement_row_id": "settle-a1890de1a53b4f61913f2ce82da0952d",
+      "prediction_row_id": "pred-032dc3e0a643080f7cc62dc7e506ac97",
+      "event_id": "mlb-823058",
+      "settled_at": "2026-06-02T06:14:49.866Z",
+      "result_value": null,
+      "won": 0,
+      "profit_cents": null,
+      "settlement_notes": "{\"lane\":\"ml\",\"selected\":\"St. Louis Cardinals\",\"winner\":\"Kansas City Royals\",\"game_id\":\"mlb-823058\"}"
+    },
+    {
+      "settlement_row_id": "settle-593c4ab24f4822df6173b328b0f186df",
+      "prediction_row_id": "pred-05126a6a542d42e86d64dac00c798b89",
+      "event_id": "mlb-825009",
+      "settled_at": "2026-06-02T06:14:49.866Z",
+      "result_value": null,
+      "won": 1,
+      "profit_cents": 73.53,
+      "settlement_notes": "{\"lane\":\"ml\",\"selected\":\"Athletics\",\"winner\":\"Athletics\",\"game_id\":\"mlb-825009\"}"
+    },
+    {
+      "settlement_row_id": "settle-2ec077e1c762392ae91cb3f38815c1ce",
+      "prediction_row_id": "pred-06700e408e5546c33f9585f9a7d8cf70",
+      "event_id": "mlb-825010",
+      "settled_at": "2026-06-02T06:14:49.866Z",
+      "result_value": null,
+      "won": 1,
+      "profit_cents": null,
+      "settlement_notes": "{\"lane\":\"ml\",\"selected\":\"Athletics\",\"winner\":\"Athletics\",\"game_id\":\"mlb-825010\"}"
+    },
+    {
+      "settlement_row_id": "settle-32f3e4539c26580a52b55b461be69651",
+      "prediction_row_id": "pred-079a46661b927887ffa7370cef4c0888",
+      "event_id": "mlb-824440",
+      "settled_at": "2026-06-02T06:14:49.866Z",
+      "result_value": null,
+      "won": 0,
+      "profit_cents": -100,
+      "settlement_notes": "{\"lane\":\"ml\",\"selected\":\"Cleveland Guardians\",\"winner\":\"Minnesota Twins\",\"game_id\":\"mlb-824440\"}"
+    },
+    {
+      "settlement_row_id": "settle-10846da8dd25be5dfadd6c0ad9454ea1",
+      "prediction_row_id": "pred-083a882230a32d4ae5d6648e50cdf8dd",
+      "event_id": "mlb-824280",
+      "settled_at": "2026-06-02T06:14:49.866Z",
+      "result_value": null,
+      "won": 0,
+      "profit_cents": -100,
+      "settlement_notes": "{\"lane\":\"ml\",\"selected\":\"Toronto Blue Jays\",\"winner\":\"Detroit Tigers\",\"game_id\":\"mlb-824280\"}"
+    },
+    {
+      "settlement_row_id": "settle-31ac776cb63f7fcfb773b7728c3b5549",
+      "prediction_row_id": "pred-0849b355f4de85f31c02e7de7bc87947",
+      "event_id": "mlb-824604",
+      "settled_at": "2026-06-02T06:14:49.866Z",
+      "result_value": null,
+      "won": 0,
+      "profit_cents": null,
+      "settlement_notes": "{\"lane\":\"ml\",\"selected\":\"Kansas City Royals\",\"winner\":\"Chicago White Sox\",\"game_id\":\"mlb-824604\"}"
+    },
+    {
+      "settlement_row_id": "settle-6d19f74f7aa442760b7e9cb0c7ee3bb1",
+      "prediction_row_id": "pred-0c2388bef6932e4df4e753cd45e1f452",
+      "event_id": "mlb-823952",
+      "settled_at": "2026-06-02T06:14:49.866Z",
+      "result_value": null,
+      "won": 1,
+      "profit_cents": null,
+      "settlement_notes": "{\"lane\":\"ml\",\"selected\":\"Los Angeles Dodgers\",\"winner\":\"Los Angeles Dodgers\",\"game_id\":\"mlb-823952\"}"
+    }
+  ],
+  "checksum": "5ce80ebdb05374c2cf5ecf9af2bbd781602f35e4814d2d6d3d781fa08d88c793",
+  "ok": true
+}
