@@ -1,0 +1,63 @@
+{
+  "date": "2026-05-31",
+  "dry_run": false,
+  "errors": [],
+  "expected_context_items": 797,
+  "generated_at": "2026-06-02T22:04:36.864033+00:00",
+  "ok": true,
+  "player_context": {
+    "career_profiles": 487,
+    "identity_profiles": 487,
+    "people": 487,
+    "source_files": 21,
+    "source_snapshot_ids": [
+      "mlb-7dd268f4b379a8db3ace7c0ea76f2826",
+      "mlb-1cb720100b568e0b8f50f7fd941cd131",
+      "mlb-ad5b4b9f8401079e22ea8c4f4cacda49",
+      "mlb-417c8f5042c28e56b482678964f41728",
+      "mlb-64da80bdb4ec198a83dd7b746a582fc3",
+      "mlb-c461e801cacd7ef141180ad79990113f",
+      "mlb-2b9ffeae1fc3a93ed441eddb0237e378",
+      "mlb-dea268d21d97b667a450e0a3b2af5b08",
+      "mlb-0cefa69b755e1f5dd0f00681ea09d402",
+      "mlb-140deeb6237d4f6a78012191c2a6de3d",
+      "mlb-9141c3669e41e813d6be9b565ddc0dde",
+      "mlb-768d852b84a2f7d61f2d809b38707f8b",
+      "mlb-9e331f8e860f03ec04423e2c527d533b",
+      "mlb-71d1c3e63cd912855813d7d1338cc2cd",
+      "mlb-90a52448cb60788f4a366e0b2a3cd827",
+      "mlb-41a987509dbf16236e3e0d38b336bc90",
+      "mlb-4823eab0d0b96f643fd68e5745e3001f",
+      "mlb-9e7d1c90d4fceef5b5cc13ae4e78eea1",
+      "mlb-758c6c785c02e679768785b11119eb9a",
+      "mlb-e496190600691b90fa5bfb3ccdbb2d71",
+      "mlb-5d9ad8a56bd5fce33e90b11b7c2394b9"
+    ],
+    "unresolved": 0
+  },
+  "row_count_delta": {
+    "health_checks": 0,
+    "player_career_profiles": 487,
+    "player_identity_profiles": 487,
+    "player_statcast_game_logs": 310,
+    "players": 0,
+    "source_fetch_runs": 2,
+    "source_fetch_status": 2,
+    "source_snapshots": 23,
+    "unresolved_entities": 0
+  },
+  "savant": {
+    "details_rows": 0,
+    "game_logs": 310,
+    "grouped_rows": 310,
+    "players": 310,
+    "source_files": 2,
+    "source_snapshot_ids": [
+      "mlb-b48ef677ca6090d2408a6dea9f0dd365",
+      "mlb-dc7e972b3be9a27b1b12e837121b9a47"
+    ],
+    "unresolved": 0
+  },
+  "script": "data-migration/scripts/ingest_mlb_player_context_raw_to_typed.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db"
+}
