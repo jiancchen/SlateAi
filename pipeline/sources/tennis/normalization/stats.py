@@ -459,6 +459,9 @@ def insert_service_pressure(con: sqlite3.Connection, snapshots: list[dict[str, A
     inserted = 0
     for row in snapshots:
         match = con.execute("select match_date, surface from matches where match_id = ?", (row["match_id"],)).fetchone()
+        snapshot_date = row.get("snapshot_date") or (match["match_date"] if match else None)
+        surface = row.get("surface") or (match["surface"] if match else None)
+        sample_type = row.get("sample_type") or "single_match"
         con.execute(
             """
             insert into service_pressure_snapshots (
@@ -466,7 +469,7 @@ def insert_service_pressure(con: sqlite3.Connection, snapshots: list[dict[str, A
               sample_size, hold_pct, break_pct, bp_saved_made, bp_saved_attempts, bp_saved_pct,
               bp_converted_made, bp_converted_attempts, bp_converted_pct, deuce_hold_pct,
               tiebreak_record, source_name, created_at
-            ) values (?, ?, ?, ?, ?, 'single_match', ?, ?, ?, ?, ?, ?, ?, ?, ?, null, null, ?, ?)
+            ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, null, null, ?, ?)
             on conflict(pressure_snapshot_id) do update set
               sample_size = excluded.sample_size,
               hold_pct = excluded.hold_pct,
@@ -483,8 +486,9 @@ def insert_service_pressure(con: sqlite3.Connection, snapshots: list[dict[str, A
                 row["pressure_snapshot_id"],
                 row["player_id"],
                 row["match_id"],
-                match["match_date"] if match else None,
-                match["surface"] if match else None,
+                snapshot_date,
+                surface,
+                sample_type,
                 row["sample_size"],
                 row["hold_pct"],
                 row["break_pct"],

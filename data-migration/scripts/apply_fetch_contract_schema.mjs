@@ -24,6 +24,7 @@ const DEFAULT_POLICIES = {
     { source_name: 'tennis_livesport_replay', source_family: 'replay', ttl: 12, max_stale: 48, required: 0, notes: 'Livesport/Flashscore feed point-by-point fallback for replay coverage when SofaScore misses.' },
     { source_name: 'tennis_odds', source_family: 'markets', ttl: 1, max_stale: 6, required: 1, notes: 'Prediction-market and sportsbook odds snapshots.' },
     { source_name: 'tennis_rankings', source_family: 'rankings', ttl: 24, max_stale: 72, required: 1, notes: 'ATP/WTA ranking snapshots with rank, points, age, country, and source URL joins.' },
+    { source_name: 'tennis_player_context', source_family: 'player-context', ttl: 12, max_stale: 48, required: 1, notes: 'Flashscore player pages and recent-match maps feeding form, recent opponents, and BP denominator context.' },
   ],
 };
 
