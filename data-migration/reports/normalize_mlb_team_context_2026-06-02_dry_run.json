@@ -1,0 +1,27 @@
+{
+  "date": null,
+  "dry_run": true,
+  "family": "mlb_team_context",
+  "generated_at": "2026-06-02T16:36:06.220575+00:00",
+  "inserted": {},
+  "ok": true,
+  "parsed_rows": 5673,
+  "parser_module": "pipeline/sources/mlb/normalization/team_context.py",
+  "script": "data-migration/scripts/normalize_mlb_team_context.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_rows": 5673,
+  "source_tables": {
+    "mlb_game_story_labels": 886,
+    "mlb_game_story_signals": 886,
+    "mlb_series_context_snapshots": 809,
+    "mlb_team_story_priors": 3092
+  },
+  "targets": {
+    "game_story_labels": 886,
+    "game_story_signals": 886,
+    "series_context_snapshots": 809,
+    "team_story_priors": 3092
+  },
+  "unparsed_rows": 0,
+  "unresolved_rows_added": 0
+}
