@@ -35,7 +35,7 @@ Rules:
 | N5 | Tennis context normalization | context/form/H2H/weather legacy tables | `player_form_snapshots`, `match_context_snapshots` | duckdb_ready | 2026-06-02 | 2026-06-02 | `validate_tennis_context_normalization_2026-06-02.json`; 2,983 player-form snapshots, 448 match-context snapshots, 0 orphans, 0 duplicate IDs | Context rows are typed enough for DuckDB queries; summary H2H/weather blobs stay out of `h2h_matches`. 1 ambiguous player mapping quarantined. |
 | N6 | Tennis DuckDB readiness | `sql-tennis.db` typed tables | `duck-tennis.duckdb` | duckdb_ready | 2026-06-02 | 2026-06-02 | `build_tennis_duckdb_after_context_normalization_2026-06-02.json`; zero count mismatches after stats, replay, market, and context normalization | Rebuild after each validated family. |
 | N7 | MLB normalization inventory | Full MLB legacy inventory | Core typed model tables, secondary feature/event tables, classified `source_*`/`context_*` leftovers | parsed | 2026-06-02 | 2026-06-02 | `mlb_normalization_inventory_2026-06-02.json`; 70 source tables, 1,206,213 rows, 0 catch-all leftovers | Broad one-pass MLB normalization: fully type core model data, normalize useful secondary data, and classify every leftover blob instead of leaving random active JSON dependencies. |
-| N8 | MLB typed schema design | MLB family inventory | MLB parser modules and target typed table contracts | not_started |  |  | pending | Lock table schemas and canonical ID rules before parser writes. |
+| N8 | MLB typed schema design | MLB family inventory | MLB parser modules and target typed table contracts | started | 2026-06-02 |  | `mlb_normalization_schema_plan.md` drafted; pending table DDL and parser validation scripts | Lock table schemas and canonical ID rules before parser writes. |
 
 ## Source Family Ledger
 
@@ -75,3 +75,4 @@ Rules:
 - 2026-06-02: Tennis context normalization completed and mirrored to DuckDB. `player_form_snapshots` now has 2,983 rows and `match_context_snapshots` has 448 rows; 1 ambiguous player mapping remains quarantined.
 - 2026-06-02: MLB normalization policy accepted. Use a full inventory/classification pass: strict schemas for core model data, typed feature/event tables for secondary data, and classified `source_*`/`context_*` tables for weird leftovers. No active MLB prediction/dashboard path should depend on random legacy JSON after promotion.
 - 2026-06-02: MLB source inventory completed. Classified 70 source tables and 1,206,213 rows across 15 families: 58 core model tables and 12 secondary feature/event tables, with 0 catch-all leftovers.
+- 2026-06-02: MLB schema design started. Added `mlb_normalization_schema_plan.md` and `pipeline/sources/mlb/normalization/` as the parser home. Next work is additive DDL plus first parser family.
