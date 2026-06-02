@@ -160,6 +160,161 @@ export const marketCoverageForDate = (date) => {
   }
 }
 
+export const startingPitchersForDate = (date) => {
+  return querySqlite(
+    `
+    select
+      sp.game_id,
+      sp.team_id,
+      teams.name as team_name,
+      players.player_id,
+      players.mlb_player_id,
+      players.name as pitcher_name,
+      players.throws,
+      sp.confirmation_status,
+      sp.source_name,
+      sp.updated_at
+    from starting_pitchers sp
+    join games g on g.game_id = sp.game_id
+    join teams on teams.team_id = sp.team_id
+    join players on players.player_id = sp.pitcher_id
+    where g.game_date like ?
+      and sp.source_name = 'mlb_probables'
+    order by g.start_time_utc, teams.name
+    `,
+    [`${date}%`]
+  )
+}
+
+export const lineupSlotsForDate = (date) => {
+  const status = queryOneSqlite(
+    `
+    select notes
+    from source_fetch_status
+    where sport = 'mlb'
+      and source_name = 'mlb_lineups'
+      and source_date = ?
+    `,
+    [date]
+  )
+  const sourceSnapshotId = parseJson(status?.notes)?.source_snapshot_id || null
+  return querySqlite(
+    `
+    select
+      l.game_id,
+      l.team_id,
+      teams.name as team_name,
+      l.lineup_id,
+      l.lineup_status,
+      slots.batting_order,
+      slots.position,
+      players.player_id,
+      players.mlb_player_id,
+      players.name as player_name,
+      players.bats,
+      players.primary_position
+    from lineups l
+    join games g on g.game_id = l.game_id
+    join teams on teams.team_id = l.team_id
+    left join lineup_slots slots on slots.lineup_id = l.lineup_id
+    left join players on players.player_id = slots.player_id
+    where g.game_date like ?
+      and (? is null or l.source_snapshot_id = ?)
+    order by g.start_time_utc, teams.name, slots.batting_order
+    `,
+    [`${date}%`, sourceSnapshotId, sourceSnapshotId]
+  )
+}
+
+export const marketContractsForDate = (date) => {
+  return querySqlite(
+    `
+    select
+      contracts.contract_id,
+      contracts.game_id,
+      contracts.source_name,
+      contracts.contract_ticker,
+      contracts.market_type,
+      contracts.market_family,
+      contracts.selection_type,
+      contracts.selection_code,
+      contracts.selection_name,
+      contracts.line_value,
+      contracts.title,
+      contracts.team_id,
+      teams.name as team_name,
+      snapshots.odds_american,
+      snapshots.price_cents,
+      snapshots.implied_probability,
+      snapshots.captured_at
+    from market_contracts contracts
+    join games g on g.game_id = contracts.game_id
+    left join teams on teams.team_id = contracts.team_id
+    left join market_snapshots snapshots on snapshots.market_snapshot_id = (
+      select snapshots2.market_snapshot_id
+      from market_snapshots snapshots2
+      where snapshots2.game_id = contracts.game_id
+        and snapshots2.source_name = contracts.source_name
+        and snapshots2.market_type = contracts.market_type
+        and snapshots2.selection = contracts.selection_name
+        and coalesce(snapshots2.line_value, -999999) = coalesce(contracts.line_value, -999999)
+      order by snapshots2.captured_at desc
+      limit 1
+    )
+    where g.game_date like ?
+    order by g.start_time_utc, contracts.market_type, contracts.selection_name
+    `,
+    [`${date}%`]
+  )
+}
+
+export const currentDayBoardForDate = (date) => {
+  const games = gamesForDate(date)
+  const lineupCoverage = lineupCoverageForDate(date)
+  const sourceStatus = sourceStatusMapForDate(date)
+  const starters = startingPitchersForDate(date)
+  const slots = lineupSlotsForDate(date)
+  const markets = marketContractsForDate(date)
+
+  const gameMap = new Map(games.map((game) => [game.game_id, { ...game, starters: [], lineups: {}, markets: [] }]))
+
+  for (const starter of starters) {
+    gameMap.get(starter.game_id)?.starters.push(starter)
+  }
+
+  for (const slot of slots) {
+    const game = gameMap.get(slot.game_id)
+    if (!game) continue
+    if (!game.lineups[slot.team_id]) {
+      game.lineups[slot.team_id] = {
+        team_id: slot.team_id,
+        team_name: slot.team_name,
+        lineup_id: slot.lineup_id,
+        lineup_status: slot.lineup_status,
+        slots: []
+      }
+    }
+    if (slot.batting_order !== null && slot.batting_order !== undefined) {
+      game.lineups[slot.team_id].slots.push(slot)
+    }
+  }
+
+  for (const market of markets) {
+    gameMap.get(market.game_id)?.markets.push(market)
+  }
+
+  return {
+    date,
+    games: [...gameMap.values()],
+    coverage: {
+      lineup: lineupCoverage,
+      starters: starters.length,
+      markets: markets.length,
+      source_status: sourceStatus
+    }
+  }
+}
+
 export const modelArtifactCoverageForDate = (date) => {
   const rows = querySqlite(
     `

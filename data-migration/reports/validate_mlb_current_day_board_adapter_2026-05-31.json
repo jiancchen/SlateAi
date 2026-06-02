@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-06-02T22:48:57.636Z",
+  "script": "data-migration/scripts/validate_mlb_current_day_board_adapter.mjs",
+  "date": "2026-05-31",
+  "counts": {
+    "games": 15,
+    "lineup_sides": 30,
+    "lineup_slots": 269,
+    "partial_lineups": 1,
+    "starters": 30,
+    "markets": 408,
+    "games_with_markets": 15
+  },
+  "sample": [
+    {
+      "game_id": "mlb-824832",
+      "away_team": "Toronto Blue Jays",
+      "home_team": "Baltimore Orioles",
+      "starters": [
+        "Kyle Bradish",
+        "Spencer Miles"
+      ],
+      "lineup_sides": [
+        {
+          "team_name": "Baltimore Orioles",
+          "lineup_status": "complete",
+          "slots": 9
+        },
+        {
+          "team_name": "Toronto Blue Jays",
+          "lineup_status": "complete",
+          "slots": 9
+        }
+      ],
+      "markets": 18
+    },
+    {
+      "game_id": "mlb-823373",
+      "away_team": "Minnesota Twins",
+      "home_team": "Pittsburgh Pirates",
+      "starters": [
+        "Zebby Matthews",
+        "Braxton Ashcraft"
+      ],
+      "lineup_sides": [
+        {
+          "team_name": "Minnesota Twins",
+          "lineup_status": "complete",
+          "slots": 9
+        },
+        {
+          "team_name": "Pittsburgh Pirates",
+          "lineup_status": "complete",
+          "slots": 9
+        }
+      ],
+      "markets": 27
+    }
+  ],
+  "checks": [
+    {
+      "name": "games_available",
+      "ok": true,
+      "details": "15 games"
+    },
+    {
+      "name": "two_lineup_sides_per_game",
+      "ok": true,
+      "details": "30/30"
+    },
+    {
+      "name": "lineup_slots_match_active_source_status",
+      "ok": true,
+      "details": "269/269"
+    },
+    {
+      "name": "partial_lineup_count_visible",
+      "ok": true,
+      "details": "1/1"
+    },
+    {
+      "name": "probables_two_per_game",
+      "ok": true,
+      "details": "30/30"
+    },
+    {
+      "name": "markets_cover_games",
+      "ok": true,
+      "details": "15/15"
+    }
+  ],
+  "ok": true
+}
