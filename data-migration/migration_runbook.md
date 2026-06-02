@@ -430,6 +430,16 @@ Run rules:
 - Write `missing` when no source payload exists for a required source/date.
 - Prediction publishing is blocked by required stale/failed/missing sources unless the run is explicitly marked degraded.
 
+Idempotency rules:
+
+- Active ingestion must tolerate refetching and rediscovering old matches, players, markets, and replay data.
+- Every raw/source receipt needs a deterministic `source_snapshot_id`.
+- Every typed row needs a deterministic primary key based on source identity and canonical IDs where available.
+- Repeated source rows must use `insert ... on conflict ... do update`, not append duplicate facts.
+- Ambiguous names/matches go to `unresolved_entities` with source/opponent/tournament context; do not guess.
+- Validators must report duplicate primary-key candidates, orphan typed rows, unresolved counts, and row-count parity.
+- Prediction publishing is blocked for a source family when duplicate/orphan validation fails.
+
 Default cache policy:
 
 - MLB schedule/live/result payloads: 6 hours, max stale 24 hours.
@@ -450,6 +460,13 @@ TTL/env override shape:
 Detailed plan:
 
 - `data-migration/post_migration_ingestion_rewrite_run_plan.md`
+
+Known not-DB-first-yet gaps:
+
+- Active fetchers do not all write DB-first.
+- Tennis raw SofaScore/Flashscore/Livesport fetch into typed tables is not fully wired.
+- Prediction scripts are not fully reading only DB inputs.
+- Public/site outputs are still generated mirrors, not DB-native read paths.
 
 Exit criteria:
 

@@ -78,6 +78,33 @@ Prediction runs must check `source_fetch_status` before reading model inputs.
 4. Odds/market sources with stale status may still allow non-market predictions, but value boards must be blocked or marked stale.
 5. Cache skips are written as `source_fetch_runs.status = skipped_cache`, so there is still an audit row for the decision not to fetch.
 
+## Idempotency And Duplicate Handling
+
+Active ingestion will repeatedly rediscover old matches, players, markets, and replay rows. That is normal, especially with Flashscore/SofaScore/Livesport recent-match pages. Duplicate discovery must become a DB update, not another fact row.
+
+Hard rules:
+
+- Every source receipt gets a deterministic `source_snapshot_id` based on sport, source name, and stable local path or source URL.
+- Every typed fact row gets a deterministic primary key from source identity plus canonical IDs where available.
+- Canonical identity is preferred, but source identity must remain in the key when the canonical mapping is still unresolved.
+- Reruns use `insert ... on conflict ... do update` for stable facts and never append duplicate match/stat/replay/market rows.
+- Ambiguous rows are quarantined in `unresolved_entities`; they are not guessed into a canonical player or match.
+- If a later run resolves an entity, the ingestion step updates the typed row and records the resolver/mapping policy, instead of leaving both old and new rows active.
+- Validators must report duplicate primary-key candidates, orphan rows, unresolved counts, and row-count parity after every source family.
+- Prediction preflight must treat duplicate/orphan validation failures as blocking for the affected source family.
+
+Sport-specific duplicate keys:
+
+- Tennis matches: source match ID when present, otherwise canonical player pair plus tournament/date/round.
+- Tennis match stats: source match ID, player/source side, stat name, and period.
+- Tennis service pressure snapshots: canonical match ID plus player ID and source family.
+- Tennis replay games/points: source match ID, set/game/point ordinal, and source family.
+- Tennis markets: contract/event ID plus side/runner; price ticks include timestamp/bid/ask/source snapshot.
+- MLB games: `game_pk`.
+- MLB pitch/plate events: `game_pk` plus play/pitch/plate-appearance identity.
+- MLB lineups: game/team/batting order/player slot.
+- MLB markets/props: source market/contract ID plus event/team/player/line/timestamp.
+
 ## Phase Plan
 
 ### Phase 9A: Fetch Contract Schema
@@ -98,6 +125,11 @@ Prediction runs must check `source_fetch_status` before reading model inputs.
   - write `source_fetch_runs`
   - upsert `source_fetch_status`
 - Validate no false dashboard `N/A` when typed source rows exist.
+- Validate duplicate safety:
+  - rerun source ingest for the same date
+  - confirm typed row counts do not inflate
+  - confirm changed source hashes update the same rows
+  - confirm unresolved rows remain quarantined
 
 Current status:
 
@@ -127,11 +159,13 @@ Current status:
 - Add a shared preflight that resolves required source statuses by sport/date/model lane.
 - Prediction scripts read DB inputs only after preflight passes.
 - Degraded runs must write model metadata explaining stale/missing sources.
+- Model predictions must read typed DB tables or DuckDB views by model/date/source freshness. They must not scan raw JSON folders except in explicit rebuild/backfill mode.
 
 ### Phase 9G: Export Promotion
 
 - Export JSON from DB after prediction rows settle.
 - `published-data` and `web/public/data` become generated caches.
+- Public/site outputs remain generated mirrors until promoted. They should be regenerated from DB and never become source truth.
 
 ## Validation
 
@@ -140,9 +174,14 @@ Current status:
 - Required source/date coverage query returns no `failed`, `missing`, or stale rows before publish.
 - DuckDB rebuilds after typed insert with zero SQLite/DuckDB count mismatches.
 - Prediction/value-board reports include source freshness metadata.
+- Re-running active ingestion for the same date/source does not increase typed fact counts unless new source facts actually appeared.
+- Raw source folders can contain repeated historical matches without creating duplicate typed rows.
 
 ## Open Technical Debt
 
 - Existing active fetch scripts still need DB-first wrappers.
+- Tennis raw SofaScore/Flashscore fetch into typed tables is not fully wired.
 - Existing prediction scripts still need preflight gates.
+- Prediction scripts are not fully reading only DB inputs.
 - Existing generated web/public JSON remains active output until promotion.
+- Public/site outputs are still generated mirrors, not DB-native read paths.
