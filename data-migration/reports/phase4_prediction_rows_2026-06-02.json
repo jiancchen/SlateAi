@@ -1,0 +1,228 @@
+{
+  "generated_at": "2026-06-02T06:08:24.721Z",
+  "phase": "4",
+  "script": "data-migration/scripts/backfill_prediction_rows_from_artifacts.mjs",
+  "dry_run": false,
+  "sports": [
+    {
+      "sport": "mlb",
+      "target": "data-private/warehouse/sports/mlb/sql-mlb.db",
+      "dry_run": false,
+      "artifact_count": 82,
+      "planned_prediction_rows": 5749,
+      "zero_row_artifacts": [
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-fitness.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-moneyline-catboost.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-moneyline-corpus-dogs.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-moneyline-corpus-favorites.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-moneyline-lightgbm.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-moneyline-xgboost.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-totals-calibration.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-totals-candidates.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-28-fitness.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-05-29-reliever-shadow.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-05-30-reliever-shadow.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-05-31-reliever-shadow.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-06-01-reliever-shadow.json",
+          "error": null
+        }
+      ],
+      "before_prediction_rows": 0,
+      "after_prediction_rows": 5749,
+      "lane_counts": {
+        "home_run": 216,
+        "player_prop": 4970,
+        "ml": 563
+      },
+      "sample_rows": [
+        {
+          "prediction_row_id": "pred-11c8c210c30578498834f61e99b0f60d",
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-15-8a420f1584c8",
+          "lane": "home_run",
+          "market_type": "home_run",
+          "selection": "Schwarber, Kyle",
+          "confidence": null
+        },
+        {
+          "prediction_row_id": "pred-6bed3e5b4c6bb20c15858bd6bff2a508",
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-15-8a420f1584c8",
+          "lane": "home_run",
+          "market_type": "home_run",
+          "selection": "Olson, Matt",
+          "confidence": null
+        },
+        {
+          "prediction_row_id": "pred-439c494d04f66e9d861a309249e5c7e7",
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-15-8a420f1584c8",
+          "lane": "home_run",
+          "market_type": "home_run",
+          "selection": "Alvarez, Yordan",
+          "confidence": null
+        },
+        {
+          "prediction_row_id": "pred-05dd62f421c4ac56949388c27b27d5ab",
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-15-8a420f1584c8",
+          "lane": "home_run",
+          "market_type": "home_run",
+          "selection": "Buxton, Byron",
+          "confidence": null
+        },
+        {
+          "prediction_row_id": "pred-08891b06114e3578d22a401d5866465d",
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-15-8a420f1584c8",
+          "lane": "home_run",
+          "market_type": "home_run",
+          "selection": "Moniak, Mickey",
+          "confidence": null
+        },
+        {
+          "prediction_row_id": "pred-569693e4cfef7432fbef80ded21a3206",
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-15-8a420f1584c8",
+          "lane": "home_run",
+          "market_type": "home_run",
+          "selection": "Murakami, Munetaka",
+          "confidence": null
+        },
+        {
+          "prediction_row_id": "pred-5eea2fd2f54c4b8a05b832a65b17c6e2",
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-15-8a420f1584c8",
+          "lane": "home_run",
+          "market_type": "home_run",
+          "selection": "Judge, Aaron",
+          "confidence": null
+        },
+        {
+          "prediction_row_id": "pred-7ba0eb11c4ef2cd8e836e39c00f948f5",
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-15-8a420f1584c8",
+          "lane": "home_run",
+          "market_type": "home_run",
+          "selection": "Wood, James",
+          "confidence": null
+        }
+      ],
+      "ok": true
+    },
+    {
+      "sport": "tennis",
+      "target": "data-private/warehouse/sports/tennis/sql-tennis.db",
+      "dry_run": false,
+      "artifact_count": 15,
+      "planned_prediction_rows": 525,
+      "zero_row_artifacts": [],
+      "before_prediction_rows": 0,
+      "after_prediction_rows": 525,
+      "lane_counts": {
+        "ml": 477,
+        "match_ou": 16,
+        "spread": 16,
+        "first_set_ou": 16
+      },
+      "sample_rows": [
+        {
+          "prediction_row_id": "pred-ad37e36d4c8aabe95d3f2592f7d16eff",
+          "model_run_id": "legacy-tennis-tennis-2026-05-26-9a85514281cb",
+          "lane": "ml",
+          "market_type": "match_winner",
+          "selection": "Emma Navarro",
+          "confidence": 64
+        },
+        {
+          "prediction_row_id": "pred-9783203fb2f90982e287b1621e977f04",
+          "model_run_id": "legacy-tennis-tennis-2026-05-26-9a85514281cb",
+          "lane": "ml",
+          "market_type": "match_winner",
+          "selection": "Iva Jovic",
+          "confidence": 57
+        },
+        {
+          "prediction_row_id": "pred-82b02b6e29db46afc9b3f146254c5d72",
+          "model_run_id": "legacy-tennis-tennis-2026-05-26-9a85514281cb",
+          "lane": "ml",
+          "market_type": "match_winner",
+          "selection": "Donna Vekic",
+          "confidence": 62
+        },
+        {
+          "prediction_row_id": "pred-96cdcff7dfd5487955c686e772cb919b",
+          "model_run_id": "legacy-tennis-tennis-2026-05-26-9a85514281cb",
+          "lane": "ml",
+          "market_type": "match_winner",
+          "selection": "Claire Liu",
+          "confidence": 55
+        },
+        {
+          "prediction_row_id": "pred-e2710d389cb7ec74d11d1f346d44a2d0",
+          "model_run_id": "legacy-tennis-tennis-2026-05-26-9a85514281cb",
+          "lane": "ml",
+          "market_type": "match_winner",
+          "selection": "Aryna Sabalenka",
+          "confidence": 82
+        },
+        {
+          "prediction_row_id": "pred-809724d86439f0be2a62b86e63b3ae41",
+          "model_run_id": "legacy-tennis-tennis-2026-05-26-9a85514281cb",
+          "lane": "ml",
+          "market_type": "match_winner",
+          "selection": "Linda Noskova",
+          "confidence": 60
+        },
+        {
+          "prediction_row_id": "pred-d72879a0e552d750e8639c5cd50dc6e9",
+          "model_run_id": "legacy-tennis-tennis-2026-05-26-9a85514281cb",
+          "lane": "ml",
+          "market_type": "match_winner",
+          "selection": "Ann Li",
+          "confidence": 61
+        },
+        {
+          "prediction_row_id": "pred-6bfeed9ef9c57def0406c95f986bee24",
+          "model_run_id": "legacy-tennis-tennis-2026-05-26-9a85514281cb",
+          "lane": "ml",
+          "market_type": "match_winner",
+          "selection": "Elsa Jacquemot",
+          "confidence": 56
+        }
+      ],
+      "ok": true
+    }
+  ],
+  "ok": true,
+  "total_prediction_rows": 6274
+}

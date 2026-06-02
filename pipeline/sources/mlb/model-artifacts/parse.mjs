@@ -5,6 +5,7 @@ export {
   inferArtifactType,
   modelRunFromManifest,
   modelRunFromPredictionArtifact,
+  predictionRowsFromArtifact,
   readJsonArtifact,
   sha256File,
   sha256Text,

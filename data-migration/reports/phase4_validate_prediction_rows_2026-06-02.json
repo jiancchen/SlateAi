@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-06-02T06:09:56.679Z",
+  "phase": "4",
+  "script": "data-migration/scripts/validate_prediction_rows.mjs",
+  "sport_filter": "all",
+  "sports": [
+    {
+      "sport": "mlb",
+      "target": "data-private/warehouse/sports/mlb/sql-mlb.db",
+      "artifact_count": 82,
+      "expected_prediction_rows": 5749,
+      "actual": {
+        "prediction_rows": 5749,
+        "phase4_prediction_row_runs": 1,
+        "lane_counts": {
+          "home_run": 216,
+          "ml": 563,
+          "player_prop": 4970
+        }
+      },
+      "expected_lane_counts": {
+        "home_run": 216,
+        "player_prop": 4970,
+        "ml": 563
+      },
+      "zero_row_artifacts": [
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-fitness.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-moneyline-catboost.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-moneyline-corpus-dogs.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-moneyline-corpus-favorites.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-moneyline-lightgbm.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-moneyline-xgboost.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-totals-calibration.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-totals-candidates.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-28-fitness.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-05-29-reliever-shadow.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-05-30-reliever-shadow.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-05-31-reliever-shadow.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-06-01-reliever-shadow.json",
+          "error": null
+        }
+      ],
+      "checksum": "1c60f854a27e9a5e8638981a0d01ef464e993f47144360a695d016f242d52961",
+      "mismatches": [],
+      "ok": true
+    },
+    {
+      "sport": "tennis",
+      "target": "data-private/warehouse/sports/tennis/sql-tennis.db",
+      "artifact_count": 15,
+      "expected_prediction_rows": 525,
+      "actual": {
+        "prediction_rows": 525,
+        "phase4_prediction_row_runs": 1,
+        "lane_counts": {
+          "first_set_ou": 16,
+          "match_ou": 16,
+          "ml": 477,
+          "spread": 16
+        }
+      },
+      "expected_lane_counts": {
+        "ml": 477,
+        "match_ou": 16,
+        "spread": 16,
+        "first_set_ou": 16
+      },
+      "zero_row_artifacts": [],
+      "checksum": "d429c5d1baa2dde05f4ffe67ffeaeb9b6a26d4b4bb1f1d04f49208d8bfa5cdf4",
+      "mismatches": [],
+      "ok": true
+    }
+  ],
+  "ok": true,
+  "total_prediction_rows": 6274
+}
