@@ -43,6 +43,22 @@ def sqlite_count(db_path: Path, table: str) -> int:
 
 
 def create_summary_views(con: duckdb.DuckDBPyConnection, sport: str) -> None:
+    table_names = {
+        row[0]
+        for row in con.execute(
+            "select table_name from information_schema.tables where table_schema = 'main'"
+        ).fetchall()
+    }
+    if {"entity_aliases", "entity_alias_governance"}.issubset(table_names):
+        con.execute(
+            """
+            create or replace view trusted_entity_aliases as
+            select a.*
+            from entity_aliases a
+            join entity_alias_governance g on g.entity_alias_id = a.entity_alias_id
+            where g.alias_status = 'active'
+            """
+        )
     con.execute(
         """
         create or replace view model_prediction_summary as

@@ -188,6 +188,18 @@ function commonSchemaSql() {
       notes text,
       unique (entity_type, source_name, source_entity_id, source_display_name)
     );`,
+    `create table if not exists entity_alias_governance (
+      entity_alias_id text primary key,
+      alias_status text not null,
+      mapping_policy text not null,
+      resolver_version text not null,
+      risk_label text,
+      reviewed_at text,
+      review_reason text,
+      source_evidence_json text,
+      created_at text not null,
+      updated_at text not null
+    );`,
     `create table if not exists unresolved_entities (
       unresolved_entity_id text primary key,
       entity_type text not null,
@@ -255,8 +267,15 @@ function commonSchemaSql() {
     `create index if not exists idx_model_artifacts_run on model_artifacts (model_run_id);`,
     `create index if not exists idx_health_checks_run on health_checks (model_run_id, check_name);`,
     `create index if not exists idx_entity_aliases_lookup on entity_aliases (entity_type, source_name, source_display_name);`,
+    `create index if not exists idx_entity_alias_governance_status on entity_alias_governance (alias_status, mapping_policy);`,
     `create index if not exists idx_unresolved_entities_status on unresolved_entities (entity_type, status);`,
     `create index if not exists idx_export_manifests_lookup on export_manifests (sport, export_type, export_date, model_id);`,
+    `drop view if exists trusted_entity_aliases;`,
+    `create view trusted_entity_aliases as
+      select a.*
+      from entity_aliases a
+      join entity_alias_governance g on g.entity_alias_id = a.entity_alias_id
+      where g.alias_status = 'active';`,
   ];
 }
 
@@ -666,4 +685,3 @@ function tennisSchemaSql() {
     `create index if not exists idx_tennis_settlement_rows_prediction on settlement_rows (prediction_row_id);`,
   ];
 }
-

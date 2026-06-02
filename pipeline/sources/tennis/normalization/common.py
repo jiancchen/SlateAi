@@ -136,12 +136,19 @@ class TennisIdentityResolver:
         self.match_aliases_by_source_entity = self._load_entity_aliases("match")
         self.player_aliases_by_source_display = self._load_player_aliases()
 
+    def _alias_source_table(self) -> str:
+        row = self.con.execute(
+            "select name from sqlite_master where type in ('table', 'view') and name = 'trusted_entity_aliases'"
+        ).fetchone()
+        return "trusted_entity_aliases" if row else "entity_aliases"
+
     def _load_entity_aliases(self, entity_type: str) -> dict[str, list[str]]:
         mapping: dict[str, list[str]] = {}
+        alias_table = self._alias_source_table()
         rows = self.con.execute(
-            """
+            f"""
             select source_entity_id, canonical_entity_id
-            from entity_aliases
+            from {alias_table}
             where entity_type = ? and source_entity_id is not null
             """,
             (entity_type,),
@@ -156,12 +163,12 @@ class TennisIdentityResolver:
 
     def _load_player_aliases(self) -> dict[tuple[str, str], list[str]]:
         mapping: dict[tuple[str, str], list[str]] = {}
+        alias_table = self._alias_source_table()
         rows = self.con.execute(
-            """
+            f"""
             select source_name, source_display_name, canonical_entity_id
-            from entity_aliases
+            from {alias_table}
             where entity_type = 'player' and source_display_name is not null
-              and notes like 'N22 tennis identity cleanup:%'
             """
         ).fetchall()
         for row in rows:
