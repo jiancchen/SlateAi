@@ -17,6 +17,8 @@ Normalization is separate from migration:
 - Use `entity_aliases` for confident source-to-canonical mappings.
 - Use `unresolved_entities` for ambiguous mappings.
 - Do not insert typed fact rows when canonical `match_id`, `player_id`, or contract mapping is ambiguous.
+- Ambiguous tennis player names must preserve match-scoped context in `unresolved_entities.candidate_json`: source match id, source label, opponent labels, board/source title, tournament/source URL, and source player label when available.
+- Do not promote abbreviated tennis labels such as `Martin A.` or `Jones M.` as global aliases unless the canonical target is unique across the active player registry. If the same source display can represent multiple players, resolve only with match-scoped evidence or leave it quarantined.
 - Each normalization family must have a reusable parser/injection module and validation report.
 - Rebuild DuckDB after each validated normalization family.
 
@@ -118,6 +120,8 @@ Each parser/injection module must:
 - Support dry-run and write mode through the calling migration script.
 - Resolve canonical IDs using existing typed tables and aliases.
 - Insert unresolved mappings into `unresolved_entities`.
+- Include enough source context in every unresolved candidate for later repair without blob-searching: source id, source display, opponent labels, tournament/source URL, source board title, and local/source match id where available.
+- Prefer exact match roster, player side, or source event mapping over global display aliases. Global display aliases are a fallback only for non-ambiguous names already trusted by governance.
 - Write deterministic IDs so reruns are idempotent.
 - Emit a compact report with source rows, parsed rows, inserted rows, skipped rows, and unresolved rows.
 

@@ -152,6 +152,77 @@ def build_reference_counts(con: sqlite3.Connection) -> dict[str, dict[str, int]]
     return {player_id: dict(table_counts) for player_id, table_counts in counts.items()}
 
 
+def safe_json_loads(value: Any) -> dict[str, Any]:
+    try:
+        parsed = json.loads(value or "{}")
+    except (TypeError, json.JSONDecodeError):
+        return {}
+    return parsed if isinstance(parsed, dict) else {}
+
+
+def player_labels_from_flashscore_payload(payload: dict[str, Any]) -> list[str]:
+    labels: list[str] = []
+    for field in ["left_player_name", "right_player_name", "leftPlayer", "rightPlayer"]:
+        if payload.get(field):
+            labels.append(str(payload[field]))
+    players = payload.get("players")
+    if isinstance(players, list):
+        labels.extend(str(player) for player in players if player)
+    flashscore_label = payload.get("flashscore_label") or payload.get("flashscoreLabel")
+    if flashscore_label and " - " in str(flashscore_label):
+        labels.extend(part.strip() for part in str(flashscore_label).split(" - ") if part.strip())
+    return list(dict.fromkeys(label for label in labels if normalize_name(label)))
+
+
+def build_source_contexts(con: sqlite3.Connection) -> dict[str, list[dict[str, Any]]]:
+    contexts: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    if not table_exists(con, "legacy_table_rows"):
+        return contexts
+    rows = con.execute(
+        """
+        select legacy_row_id, source_table, row_json
+        from legacy_table_rows
+        where sport = 'tennis'
+          and source_table in ('tennis_flashscore_match_stats', 'tennis_flashscore_recent_links')
+        """
+    ).fetchall()
+    for row in rows:
+        payload = safe_json_loads(row["row_json"])
+        raw_payload = safe_json_loads(payload.get("raw_json"))
+        merged = {**raw_payload, **payload}
+        labels = player_labels_from_flashscore_payload(merged)
+        if not labels:
+            continue
+        normalized_labels = {normalize_name(label): label for label in labels}
+        for label in labels:
+            label_key = normalize_name(label)
+            opponent_labels = [
+                original
+                for key, original in normalized_labels.items()
+                if key and key != label_key
+            ]
+            context = {
+                "legacy_row_id": row["legacy_row_id"],
+                "source_table": row["source_table"],
+                "flashscore_id": merged.get("flashscore_id") or merged.get("matchId"),
+                "flashscore_label": merged.get("flashscore_label") or merged.get("flashscoreLabel"),
+                "flashscore_tournament_url": merged.get("flashscore_tournament_url") or merged.get("flashscoreTournamentUrl"),
+                "board_match_id": merged.get("board_match_id") or merged.get("boardMatchId"),
+                "board_title": merged.get("board_title") or merged.get("boardTitle"),
+                "board_player_name": merged.get("board_player_name") or merged.get("boardPlayerName"),
+                "opponent_labels": sorted(set(opponent_labels)),
+            }
+            compact_context = {
+                key: value
+                for key, value in context.items()
+                if value not in (None, "", [])
+            }
+            bucket = contexts[label_key]
+            if compact_context and compact_context not in bucket:
+                bucket.append(compact_context)
+    return contexts
+
+
 def reference_score(ref_counts: dict[str, int]) -> int:
     return sum(REFERENCE_WEIGHTS.get(table, 1) * count for table, count in ref_counts.items())
 
@@ -192,6 +263,7 @@ def classify_stub(
     stub: dict[str, Any],
     full_players: list[dict[str, Any]],
     ref_counts: dict[str, dict[str, int]],
+    source_contexts: dict[str, list[dict[str, Any]]] | None = None,
 ) -> dict[str, Any]:
     display = str(stub.get("name") or stub.get("canonical_name") or "")
     candidates = [
@@ -206,6 +278,7 @@ def classify_stub(
         "from_player_id": stub.get("player_id"),
         "candidate_count": len(candidates),
         "candidates": summaries,
+        "source_context_samples": (source_contexts or {}).get(normalize_name(display), [])[:10],
     }
     if not candidates:
         return {
@@ -412,7 +485,8 @@ def repair_tennis_player_identity(con: sqlite3.Connection, apply: bool = False, 
     stubs = [player for player in players if is_abbreviated_player(player)]
     full_players = [player for player in players if not is_abbreviated_player(player)]
     ref_counts = build_reference_counts(con)
-    items = [classify_stub(stub, full_players, ref_counts) for stub in stubs]
+    source_contexts = build_source_contexts(con)
+    items = [classify_stub(stub, full_players, ref_counts, source_contexts) for stub in stubs]
     status_counts = Counter(item["candidate_status"] for item in items)
     policy_counts = Counter(item["evidence_policy"] for item in items)
     ready_items = [item for item in items if item["candidate_status"] == "redirect_ready" and item.get("to_player_id")]

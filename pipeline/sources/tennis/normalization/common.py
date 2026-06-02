@@ -80,6 +80,48 @@ def parse_legacy_json(row: sqlite3.Row | dict[str, Any]) -> dict[str, Any]:
     return parsed if isinstance(parsed, dict) else {}
 
 
+def source_context_from_candidate(
+    *,
+    source_name: str,
+    source_entity_id: Any,
+    source_display_name: Any,
+    candidate: dict[str, Any],
+) -> dict[str, Any]:
+    payload = candidate.get("payload")
+    payload = payload if isinstance(payload, dict) else {}
+    labels = [
+        payload.get("left_player_name"),
+        payload.get("right_player_name"),
+        payload.get("leftPlayer"),
+        payload.get("rightPlayer"),
+        payload.get("home_player_name"),
+        payload.get("away_player_name"),
+    ]
+    players = payload.get("players")
+    if isinstance(players, list):
+        labels.extend(players)
+    display_key = normalize_name(source_display_name)
+    opponent_labels = [
+        str(label)
+        for label in labels
+        if label and normalize_name(label) and normalize_name(label) != display_key
+    ]
+    context = {
+        "source_name": source_name,
+        "source_entity_id": None if source_entity_id is None else str(source_entity_id),
+        "source_display_name": None if source_display_name is None else str(source_display_name),
+        "board_match_id": payload.get("board_match_id") or payload.get("boardMatchId"),
+        "board_title": payload.get("board_title") or payload.get("boardTitle"),
+        "board_player_name": payload.get("board_player_name") or payload.get("boardPlayerName"),
+        "flashscore_id": payload.get("flashscore_id") or payload.get("flashscoreId"),
+        "flashscore_label": payload.get("flashscore_label") or payload.get("flashscoreLabel"),
+        "flashscore_tournament_url": payload.get("flashscore_tournament_url") or payload.get("flashscoreTournamentUrl"),
+        "match_id": payload.get("match_id") or payload.get("matchId"),
+        "opponent_labels": sorted(set(opponent_labels)),
+    }
+    return {key: value for key, value in context.items() if value not in (None, "", [])}
+
+
 def fetch_legacy_rows(
     con: sqlite3.Connection,
     source_tables: Iterable[str],
@@ -346,6 +388,16 @@ class TennisIdentityResolver:
         reason: str,
     ) -> None:
         display = str(source_display_name or source_entity_id or "unknown")
+        enriched_candidate = dict(candidate)
+        enriched_candidate.setdefault(
+            "source_context",
+            source_context_from_candidate(
+                source_name=source_name,
+                source_entity_id=source_entity_id,
+                source_display_name=display,
+                candidate=candidate,
+            ),
+        )
         unresolved_id = stable_id("unresolved", entity_type, source_name, source_entity_id, normalize_name(display), reason)
         self.con.execute(
             """
@@ -360,7 +412,7 @@ class TennisIdentityResolver:
                 source_name,
                 None if source_entity_id is None else str(source_entity_id),
                 display,
-                compact_json(candidate),
+                compact_json(enriched_candidate),
                 reason,
                 utc_now(),
             ),
