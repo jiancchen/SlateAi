@@ -1,0 +1,19 @@
+{
+  "date": null,
+  "duplicate_match_snapshots": 0,
+  "duplicate_player_snapshots": 0,
+  "errors": [],
+  "generated_at": "2026-06-02T07:59:04.880986+00:00",
+  "h2h_snapshots": 204,
+  "match_context_snapshots": 448,
+  "ok": true,
+  "orphan_matches": 0,
+  "orphan_players": 0,
+  "parser_module": "pipeline/sources/tennis/normalization/context.py",
+  "player_form_snapshots": 2983,
+  "script": "data-migration/scripts/validate_tennis_context_normalization.py",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "source_rows": 13966,
+  "unresolved_context_entities": 1,
+  "weather_snapshots": 244
+}
