@@ -202,8 +202,16 @@ def load_warehouse() -> dict[str, pd.DataFrame]:
                        sum(service_games) as rg_flow_service_games,
                        sum(holds) as rg_flow_holds,
                        sum(breaks_lost) as rg_flow_breaks_lost,
+                       sum(long_service_games) as rg_flow_long_service_games,
+                       sum(long_service_holds) as rg_flow_long_service_holds,
+                       sum(late_service_games) as rg_flow_late_service_games,
+                       sum(late_service_holds) as rg_flow_late_service_holds,
                        sum(return_games) as rg_flow_return_games,
                        sum(breaks_won) as rg_flow_breaks_won,
+                       sum(long_return_games) as rg_flow_long_return_games,
+                       sum(long_return_breaks_won) as rg_flow_long_return_breaks_won,
+                       sum(late_return_games) as rg_flow_late_return_games,
+                       sum(late_return_breaks_won) as rg_flow_late_return_breaks_won,
                        sum(long_games) as rg_flow_long_games
                 from (
                   select m.slate_date,
@@ -213,8 +221,16 @@ def load_warehouse() -> dict[str, pd.DataFrame]:
                          sum(case when g.serving_side = 'home' then 1 else 0 end) as service_games,
                          sum(case when g.serving_side = 'home' and g.scoring_side = 'home' then 1 else 0 end) as holds,
                          sum(case when g.serving_side = 'home' and g.scoring_side = 'away' then 1 else 0 end) as breaks_lost,
+                         sum(case when g.serving_side = 'home' and g.point_count >= 8 then 1 else 0 end) as long_service_games,
+                         sum(case when g.serving_side = 'home' and g.point_count >= 8 and g.scoring_side = 'home' then 1 else 0 end) as long_service_holds,
+                         sum(case when g.serving_side = 'home' and g.game_number >= 9 then 1 else 0 end) as late_service_games,
+                         sum(case when g.serving_side = 'home' and g.game_number >= 9 and g.scoring_side = 'home' then 1 else 0 end) as late_service_holds,
                          sum(case when g.serving_side = 'away' then 1 else 0 end) as return_games,
                          sum(case when g.serving_side = 'away' and g.scoring_side = 'home' then 1 else 0 end) as breaks_won,
+                         sum(case when g.serving_side = 'away' and g.point_count >= 8 then 1 else 0 end) as long_return_games,
+                         sum(case when g.serving_side = 'away' and g.point_count >= 8 and g.scoring_side = 'home' then 1 else 0 end) as long_return_breaks_won,
+                         sum(case when g.serving_side = 'away' and g.game_number >= 9 then 1 else 0 end) as late_return_games,
+                         sum(case when g.serving_side = 'away' and g.game_number >= 9 and g.scoring_side = 'home' then 1 else 0 end) as late_return_breaks_won,
                          sum(case when g.point_count >= 8 then 1 else 0 end) as long_games
                   from tennis_sofascore_matches m
                   join tennis_sofascore_replay_games g using(sofascore_event_id)
@@ -227,14 +243,33 @@ def load_warehouse() -> dict[str, pd.DataFrame]:
                          sum(case when g.serving_side = 'away' then 1 else 0 end) as service_games,
                          sum(case when g.serving_side = 'away' and g.scoring_side = 'away' then 1 else 0 end) as holds,
                          sum(case when g.serving_side = 'away' and g.scoring_side = 'home' then 1 else 0 end) as breaks_lost,
+                         sum(case when g.serving_side = 'away' and g.point_count >= 8 then 1 else 0 end) as long_service_games,
+                         sum(case when g.serving_side = 'away' and g.point_count >= 8 and g.scoring_side = 'away' then 1 else 0 end) as long_service_holds,
+                         sum(case when g.serving_side = 'away' and g.game_number >= 9 then 1 else 0 end) as late_service_games,
+                         sum(case when g.serving_side = 'away' and g.game_number >= 9 and g.scoring_side = 'away' then 1 else 0 end) as late_service_holds,
                          sum(case when g.serving_side = 'home' then 1 else 0 end) as return_games,
                          sum(case when g.serving_side = 'home' and g.scoring_side = 'away' then 1 else 0 end) as breaks_won,
+                         sum(case when g.serving_side = 'home' and g.point_count >= 8 then 1 else 0 end) as long_return_games,
+                         sum(case when g.serving_side = 'home' and g.point_count >= 8 and g.scoring_side = 'away' then 1 else 0 end) as long_return_breaks_won,
+                         sum(case when g.serving_side = 'home' and g.game_number >= 9 then 1 else 0 end) as late_return_games,
+                         sum(case when g.serving_side = 'home' and g.game_number >= 9 and g.scoring_side = 'away' then 1 else 0 end) as late_return_breaks_won,
                          sum(case when g.point_count >= 8 then 1 else 0 end) as long_games
                   from tennis_sofascore_matches m
                   join tennis_sofascore_replay_games g using(sofascore_event_id)
                   group by m.slate_date, m.away_normalized_name
                 )
                 group by slate_date, normalized_name
+                """,
+            ),
+            "sofascore_matches": read_sql(
+                conn,
+                """
+                select sofascore_event_id, slate_date, board_match_id,
+                       home_normalized_name, away_normalized_name,
+                       home_player_name, away_player_name, tournament_category,
+                       raw_json
+                from tennis_sofascore_matches
+                where board_match_id is not null
                 """,
             ),
             "weather": read_sql(conn, "select * from tennis_match_weather"),
@@ -301,8 +336,16 @@ def prior_replay_flow_table(matches: pd.DataFrame, replay_flow: pd.DataFrame) ->
         "rg_flow_service_games",
         "rg_flow_hold_rate",
         "rg_flow_breaks_lost_rate",
+        "rg_flow_long_service_games",
+        "rg_flow_long_service_hold_rate",
+        "rg_flow_late_service_games",
+        "rg_flow_late_service_hold_rate",
         "rg_flow_return_games",
         "rg_flow_break_rate",
+        "rg_flow_long_return_games",
+        "rg_flow_long_return_break_rate",
+        "rg_flow_late_return_games",
+        "rg_flow_late_return_break_rate",
         "rg_flow_long_game_rate",
     ]
     if matches.empty or replay_flow.empty:
@@ -313,8 +356,16 @@ def prior_replay_flow_table(matches: pd.DataFrame, replay_flow: pd.DataFrame) ->
         "rg_flow_service_games",
         "rg_flow_holds",
         "rg_flow_breaks_lost",
+        "rg_flow_long_service_games",
+        "rg_flow_long_service_holds",
+        "rg_flow_late_service_games",
+        "rg_flow_late_service_holds",
         "rg_flow_return_games",
         "rg_flow_breaks_won",
+        "rg_flow_long_return_games",
+        "rg_flow_long_return_breaks_won",
+        "rg_flow_late_return_games",
+        "rg_flow_late_return_breaks_won",
         "rg_flow_long_games",
     ]:
         flow[column] = pd.to_numeric(flow[column], errors="coerce").fillna(0)
@@ -329,6 +380,10 @@ def prior_replay_flow_table(matches: pd.DataFrame, replay_flow: pd.DataFrame) ->
             service_games = float(prior["rg_flow_service_games"].sum()) if not prior.empty else 0.0
             return_games = float(prior["rg_flow_return_games"].sum()) if not prior.empty else 0.0
             replay_games = float(prior["rg_flow_games"].sum()) if not prior.empty else 0.0
+            long_service_games = float(prior["rg_flow_long_service_games"].sum()) if not prior.empty else 0.0
+            long_return_games = float(prior["rg_flow_long_return_games"].sum()) if not prior.empty else 0.0
+            late_service_games = float(prior["rg_flow_late_service_games"].sum()) if not prior.empty else 0.0
+            late_return_games = float(prior["rg_flow_late_return_games"].sum()) if not prior.empty else 0.0
             rows.append(
                 {
                     "match_id": match.get("match_id"),
@@ -337,9 +392,108 @@ def prior_replay_flow_table(matches: pd.DataFrame, replay_flow: pd.DataFrame) ->
                     "rg_flow_service_games": service_games,
                     "rg_flow_hold_rate": float(prior["rg_flow_holds"].sum()) / service_games if service_games else np.nan,
                     "rg_flow_breaks_lost_rate": float(prior["rg_flow_breaks_lost"].sum()) / service_games if service_games else np.nan,
+                    "rg_flow_long_service_games": long_service_games,
+                    "rg_flow_long_service_hold_rate": float(prior["rg_flow_long_service_holds"].sum()) / long_service_games if long_service_games else np.nan,
+                    "rg_flow_late_service_games": late_service_games,
+                    "rg_flow_late_service_hold_rate": float(prior["rg_flow_late_service_holds"].sum()) / late_service_games if late_service_games else np.nan,
                     "rg_flow_return_games": return_games,
                     "rg_flow_break_rate": float(prior["rg_flow_breaks_won"].sum()) / return_games if return_games else np.nan,
+                    "rg_flow_long_return_games": long_return_games,
+                    "rg_flow_long_return_break_rate": float(prior["rg_flow_long_return_breaks_won"].sum()) / long_return_games if long_return_games else np.nan,
+                    "rg_flow_late_return_games": late_return_games,
+                    "rg_flow_late_return_break_rate": float(prior["rg_flow_late_return_breaks_won"].sum()) / late_return_games if late_return_games else np.nan,
                     "rg_flow_long_game_rate": float(prior["rg_flow_long_games"].sum()) / replay_games if replay_games else np.nan,
+                }
+            )
+    return pd.DataFrame(rows, columns=columns)
+
+
+def sofascore_match_minutes(raw_json: str | None) -> float | None:
+    if not raw_json:
+        return None
+    try:
+        payload = json.loads(raw_json)
+    except (TypeError, json.JSONDecodeError):
+        return None
+    event = (((payload.get("payloads") or {}).get("event") or {}).get("body") or {}).get("event") or {}
+    time_payload = event.get("time") or {}
+    seconds = 0.0
+    for key, value in time_payload.items():
+        if not str(key).startswith("period"):
+            continue
+        try:
+            number = float(value)
+        except (TypeError, ValueError):
+            continue
+        if math.isfinite(number) and number > 0:
+            seconds += number
+    if seconds <= 0:
+        return None
+    return round(seconds / 60, 2)
+
+
+def prior_time_on_court_table(matches: pd.DataFrame, sofascore_matches: pd.DataFrame) -> pd.DataFrame:
+    columns = [
+        "match_id",
+        "normalized_name",
+        "rg_time_matches",
+        "rg_time_total_minutes",
+        "rg_time_avg_minutes",
+        "rg_time_recent_avg_minutes",
+        "rg_time_max_minutes",
+        "rg_time_long_match_rate",
+        "rg_time_two_day_minutes",
+    ]
+    if matches.empty or sofascore_matches.empty:
+        return pd.DataFrame(columns=columns)
+
+    time_rows: list[dict[str, Any]] = []
+    for _, match in sofascore_matches.iterrows():
+        minutes = sofascore_match_minutes(match.get("raw_json"))
+        if minutes is None:
+            continue
+        for normalized_name in [match.get("home_normalized_name"), match.get("away_normalized_name")]:
+            if not normalized_name:
+                continue
+            time_rows.append(
+                {
+                    "slate_date": str(match.get("slate_date") or ""),
+                    "normalized_name": normalized_name,
+                    "minutes": float(minutes),
+                }
+            )
+    time_df = pd.DataFrame(time_rows)
+    if time_df.empty:
+        return pd.DataFrame(columns=columns)
+    time_df["_date"] = pd.to_datetime(time_df["slate_date"], errors="coerce")
+
+    rows: list[dict[str, Any]] = []
+    for _, match in matches.iterrows():
+        slate_date = str(match.get("slate_date") or "")
+        match_date = pd.to_datetime(slate_date, errors="coerce")
+        for normalized_name in [match.get("player1_normalized_name"), match.get("player2_normalized_name")]:
+            if not normalized_name:
+                continue
+            prior = time_df[(time_df["normalized_name"] == normalized_name) & (time_df["slate_date"] < slate_date)].sort_values("_date")
+            if prior.empty:
+                rows.append({"match_id": match.get("match_id"), "normalized_name": normalized_name})
+                continue
+            recent = prior.tail(3)
+            two_day_minutes = np.nan
+            if pd.notna(match_date):
+                two_day = prior[pd.notna(prior["_date"]) & ((match_date - prior["_date"]).dt.days.between(0, 2))]
+                two_day_minutes = float(two_day["minutes"].sum()) if not two_day.empty else 0.0
+            rows.append(
+                {
+                    "match_id": match.get("match_id"),
+                    "normalized_name": normalized_name,
+                    "rg_time_matches": int(len(prior)),
+                    "rg_time_total_minutes": round(float(prior["minutes"].sum()), 1),
+                    "rg_time_avg_minutes": round(float(prior["minutes"].mean()), 1),
+                    "rg_time_recent_avg_minutes": round(float(recent["minutes"].mean()), 1),
+                    "rg_time_max_minutes": round(float(prior["minutes"].max()), 1),
+                    "rg_time_long_match_rate": round(float((prior["minutes"] >= 150).mean()), 3),
+                    "rg_time_two_day_minutes": round(two_day_minutes, 1) if pd.notna(two_day_minutes) else np.nan,
                 }
             )
     return pd.DataFrame(rows, columns=columns)
@@ -418,12 +572,14 @@ def build_player_rows(tables: dict[str, pd.DataFrame]) -> pd.DataFrame:
     metric_df = weighted_metric_table(tables["metrics"])
     market_df = market_table(tables["markets"])
     replay_df = prior_replay_flow_table(tables["matches"], tables.get("replay_flow", pd.DataFrame()))
+    time_df = prior_time_on_court_table(tables["matches"], tables.get("sofascore_matches", pd.DataFrame()))
     page_stats_df = player_page_stats_table(tables.get("player_page_stats", pd.DataFrame()))
     ctx["name_key"] = ctx["normalized_name"].map(name_key)
     metric_df["name_key"] = metric_df["normalized_name"].map(name_key) if "normalized_name" in metric_df.columns else ""
     rows = ctx.merge(metric_df, how="left", on=["match_id", "normalized_name"])
     rows = rows.merge(market_df, how="left", on=["match_id", "normalized_name"])
     rows = rows.merge(replay_df, how="left", on=["match_id", "normalized_name"])
+    rows = rows.merge(time_df, how="left", on=["match_id", "normalized_name"])
     rows = rows.merge(page_stats_df, how="left", on=["slate_date", "normalized_name"])
 
     missing_market = rows["market_prob"].isna() if "market_prob" in rows.columns else pd.Series(False, index=rows.index)
@@ -485,9 +641,24 @@ def build_player_rows(tables: dict[str, pd.DataFrame]) -> pd.DataFrame:
         "rg_flow_service_games",
         "rg_flow_hold_rate",
         "rg_flow_breaks_lost_rate",
+        "rg_flow_long_service_games",
+        "rg_flow_long_service_hold_rate",
+        "rg_flow_late_service_games",
+        "rg_flow_late_service_hold_rate",
         "rg_flow_return_games",
         "rg_flow_break_rate",
+        "rg_flow_long_return_games",
+        "rg_flow_long_return_break_rate",
+        "rg_flow_late_return_games",
+        "rg_flow_late_return_break_rate",
         "rg_flow_long_game_rate",
+        "rg_time_matches",
+        "rg_time_total_minutes",
+        "rg_time_avg_minutes",
+        "rg_time_recent_avg_minutes",
+        "rg_time_max_minutes",
+        "rg_time_long_match_rate",
+        "rg_time_two_day_minutes",
         "pps_matches",
         "pps_win_pct",
         "pps_hold_pct",
@@ -699,9 +870,24 @@ def build_samples(tables: dict[str, pd.DataFrame]) -> pd.DataFrame:
         "rg_flow_service_games",
         "rg_flow_hold_rate",
         "rg_flow_breaks_lost_rate",
+        "rg_flow_long_service_games",
+        "rg_flow_long_service_hold_rate",
+        "rg_flow_late_service_games",
+        "rg_flow_late_service_hold_rate",
         "rg_flow_return_games",
         "rg_flow_break_rate",
+        "rg_flow_long_return_games",
+        "rg_flow_long_return_break_rate",
+        "rg_flow_late_return_games",
+        "rg_flow_late_return_break_rate",
         "rg_flow_long_game_rate",
+        "rg_time_matches",
+        "rg_time_total_minutes",
+        "rg_time_avg_minutes",
+        "rg_time_recent_avg_minutes",
+        "rg_time_max_minutes",
+        "rg_time_long_match_rate",
+        "rg_time_two_day_minutes",
         "pps_matches",
         "pps_win_pct",
         "pps_hold_pct",
@@ -729,13 +915,24 @@ def build_samples(tables: dict[str, pd.DataFrame]) -> pd.DataFrame:
 
 
 def feature_columns(df: pd.DataFrame, include_market: bool) -> list[str]:
+    experimental_prefixes = (
+        "diff_rg_flow_long_",
+        "absdiff_rg_flow_long_",
+        "diff_rg_flow_late_",
+        "absdiff_rg_flow_late_",
+        "diff_rg_time_",
+        "absdiff_rg_time_",
+    )
     columns = [
         column
         for column in df.columns
-        if column.startswith("diff_")
-        or column.startswith("absdiff_")
-        or column.startswith("weather_")
-        or column in {"is_wta", "is_atp"}
+        if (
+            column.startswith("diff_")
+            or column.startswith("absdiff_")
+            or column.startswith("weather_")
+            or column in {"is_wta", "is_atp"}
+        )
+        and not column.startswith(experimental_prefixes)
     ]
     if not include_market:
         columns = [column for column in columns if "market" not in column and "cents_" not in column]
@@ -908,10 +1105,51 @@ def pps_pressure_adjustment(row: pd.Series) -> float:
         + diff("second_serve_won_pct") * 0.001
         + diff("bp_saved_pct") * 0.00055
         + diff("bp_converted_pct") * 0.00065
+        + diff("tiebreaks_won_pct") * 0.00025
         + diff("aces") * 0.002
         - diff("double_faults") * 0.005
     )
     return float(np.clip(raw_adjustment * sample_weight, -0.06, 0.06))
+
+
+def clutch_workload_adjustment(row: pd.Series) -> float:
+    """Small prior-only adjustment for long games, late games, and workload.
+
+    Long games (8+ points) proxy deuce pressure in SofaScore replay rows. Late
+    games (game 9+) proxy closeout/set-end pressure. The signal is intentionally
+    capped because replay coverage is still incomplete before May 28.
+    """
+
+    def value(name: str) -> float:
+        raw = pd.to_numeric(pd.Series([row.get(name)]), errors="coerce").iloc[0]
+        return float(raw) if pd.notna(raw) else 0.0
+
+    def diff(name: str) -> float:
+        return value(f"diff_{name}")
+
+    long_service_sample = min(value("p1_rg_flow_long_service_games"), value("p2_rg_flow_long_service_games"))
+    long_return_sample = min(value("p1_rg_flow_long_return_games"), value("p2_rg_flow_long_return_games"))
+    late_service_sample = min(value("p1_rg_flow_late_service_games"), value("p2_rg_flow_late_service_games"))
+    flow_sample_weight = min(1.0, (long_service_sample + long_return_sample + late_service_sample) / 18.0)
+
+    flow_adjustment = (
+        diff("rg_flow_long_service_hold_rate") * 0.035
+        + diff("rg_flow_long_return_break_rate") * 0.026
+        + diff("rg_flow_late_service_hold_rate") * 0.026
+        + diff("rg_flow_late_return_break_rate") * 0.020
+        - diff("rg_flow_breaks_lost_rate") * 0.018
+    ) * flow_sample_weight
+
+    # Long prior matches can mean toughness, but tight recent clusters are more
+    # likely fatigue. Keep this small and let learned features carry the rest.
+    workload_adjustment = (
+        diff("rg_time_long_match_rate") * 0.014
+        - diff("rg_time_two_day_minutes") * 0.00008
+        - max(0.0, diff("rg_time_recent_avg_minutes") - 35.0) * 0.00005
+        + max(0.0, -diff("rg_time_recent_avg_minutes") - 35.0) * 0.00003
+    )
+
+    return float(np.clip(flow_adjustment + workload_adjustment, -0.045, 0.045))
 
 
 def upset_risk_label(row: pd.Series, pick_side: str) -> str:
@@ -933,6 +1171,12 @@ def upset_risk_label(row: pd.Series, pick_side: str) -> str:
         risks.append("closeout risk")
     if pd.notna(opp_return) and float(opp_return) >= 75:
         risks.append("opponent return pressure")
+    long_service = row.get(f"{prefix}_rg_flow_long_service_hold_rate")
+    if pd.notna(long_service) and float(long_service) < 0.55:
+        risks.append("long-game serve risk")
+    two_day_minutes = row.get(f"{prefix}_rg_time_two_day_minutes")
+    if pd.notna(two_day_minutes) and float(two_day_minutes) >= 240:
+        risks.append("time-on-court load")
     return ", ".join(risks[:3]) if risks else "clean enough"
 
 
@@ -945,7 +1189,12 @@ def run_model_chain(
     data_prob, data_parts = fit_predict_ensemble(train, test, data_features, label_col=label_col)
     out = test.copy()
     out["pressure_adjust_p1"] = out.apply(pps_pressure_adjustment, axis=1)
-    out["data_prob_p1"] = np.clip(data_prob + out["pressure_adjust_p1"].to_numpy(), 0.08, 0.92)
+    out["clutch_workload_adjust_p1"] = out.apply(clutch_workload_adjustment, axis=1)
+    out["data_prob_p1"] = np.clip(
+        data_prob + out["pressure_adjust_p1"].to_numpy(),
+        0.08,
+        0.92,
+    )
     out["market_prob_p1"] = pd.to_numeric(out.get("p1_market_prob"), errors="coerce")
     out["chain_prob_p1"] = market_adjust_probability(out["data_prob_p1"], out["market_prob_p1"])
     out["chain_models"] = ",".join(part.name for part in data_parts)
@@ -957,7 +1206,7 @@ def run_model_chain(
         "dataFeatures": len(data_features),
         "stage1": "data-only warehouse ensemble: L1 logistic + random forest + gradient boosting + XGBoost when available",
         "stage2": "market calibration only, never source-pick override",
-        "stage3": "small SofaScore player-page pressure adjustment, then upset/fragility risk gate from hold, error control, closeout, opponent return pressure, and taxed-favorite price",
+        "stage3": "small SofaScore player-page pressure adjustment plus tracked prior time-on-court/clutch-flow audit signal, then upset/fragility risk gate from hold, error control, closeout, opponent return pressure, long-game serve risk, time load, and taxed-favorite price",
         "excludedPickSources": ["tennistonic"],
     }
     return out, meta
@@ -1221,8 +1470,38 @@ def persist_training_corpus(samples: pd.DataFrame, target_date: str) -> dict[str
         "p2_rg_flow_break_rate",
         "p1_rg_flow_breaks_lost_rate",
         "p2_rg_flow_breaks_lost_rate",
+        "p1_rg_flow_long_service_games",
+        "p2_rg_flow_long_service_games",
+        "p1_rg_flow_long_service_hold_rate",
+        "p2_rg_flow_long_service_hold_rate",
+        "p1_rg_flow_late_service_games",
+        "p2_rg_flow_late_service_games",
+        "p1_rg_flow_late_service_hold_rate",
+        "p2_rg_flow_late_service_hold_rate",
+        "p1_rg_flow_long_return_games",
+        "p2_rg_flow_long_return_games",
+        "p1_rg_flow_long_return_break_rate",
+        "p2_rg_flow_long_return_break_rate",
+        "p1_rg_flow_late_return_games",
+        "p2_rg_flow_late_return_games",
+        "p1_rg_flow_late_return_break_rate",
+        "p2_rg_flow_late_return_break_rate",
         "p1_rg_flow_long_game_rate",
         "p2_rg_flow_long_game_rate",
+        "p1_rg_time_matches",
+        "p2_rg_time_matches",
+        "p1_rg_time_total_minutes",
+        "p2_rg_time_total_minutes",
+        "p1_rg_time_avg_minutes",
+        "p2_rg_time_avg_minutes",
+        "p1_rg_time_recent_avg_minutes",
+        "p2_rg_time_recent_avg_minutes",
+        "p1_rg_time_max_minutes",
+        "p2_rg_time_max_minutes",
+        "p1_rg_time_long_match_rate",
+        "p2_rg_time_long_match_rate",
+        "p1_rg_time_two_day_minutes",
+        "p2_rg_time_two_day_minutes",
         "weather_duration_minutes",
         "weather_avg_temperature_c",
         "weather_max_temperature_c",
