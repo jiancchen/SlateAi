@@ -52,6 +52,7 @@ Default TTLs are source-level policies:
 | Tennis | `tennis_sofascore_replay` | 12h | 48h | SofaScore point-by-point replay payloads for clutch, break-back, and closeout facts. |
 | Tennis | `tennis_livesport_replay` | 12h | 48h | Optional Livesport/Flashscore replay fallback when SofaScore misses. |
 | Tennis | `tennis_odds` | 1h | 6h | Prediction-market and sportsbook odds snapshots. |
+| Tennis | `tennis_rankings` | 24h | 72h | ATP/WTA ranking snapshots with rank, points, age, country, and source URL joins. |
 
 Each source policy gets env keys in this shape:
 
@@ -153,7 +154,8 @@ Current status:
 - The Livesport fallback pilot processed 1 June 1 source file, refreshed 41 replay-game rows and 213 replay-point rows, including 25 explicit break-point flags.
 - Phase 9C wired active tennis odds receipts into typed market tables: Robinhood supplement rows now feed `market_contracts`, `market_price_ticks`, and `market_snapshots`; FanDuel line captures feed derivative `market_snapshots`.
 - The June 2 odds pilot parsed 2 active odds files into 132 Robinhood contracts, 132 ticks, and 180 total snapshots, including FanDuel moneyline, game spread, match total, first-set total, and set-win rows. Rerun idempotency had zero row-count growth.
-- Typed parser write-through from raw receipts into rankings and context remains the next Phase 9B substep.
+- Phase 9D wired active ranking receipts into typed `rankings` rows. The June 2 ranking pilot parsed 300/300 ranking rows, 150 ATP and 150 WTA, with 0 unresolved mappings and zero row-count growth on rerun.
+- Typed parser write-through from raw receipts into player-page/recent-match context remains the next Phase 9B substep.
 - Existing tennis normalization modules still primarily parse `legacy_table_rows`; do not mark the active ingestion rewrite complete until raw source receipts can feed typed tables directly or through a clearly declared intermediate.
 
 ### Phase 9C: Tennis Odds
@@ -200,7 +202,7 @@ Current status:
 ## Open Technical Debt
 
 - Existing active fetch scripts still need DB-first wrappers.
-- Tennis raw Flashscore stats, SofaScore/Livesport replay, and Robinhood/FanDuel odds now feed typed tables; rankings and context still need raw-to-typed active adapters.
+- Tennis raw Flashscore stats, SofaScore/Livesport replay, Robinhood/FanDuel odds, and ranking snapshots now feed typed tables; player-page/recent-match context still needs raw-to-typed active adapters.
 - Existing prediction scripts still need preflight gates.
 - Prediction scripts are not fully reading only DB inputs.
 - Existing generated web/public JSON remains active output until promotion.

@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-06-02T20:46:12.198Z",
+  "dry_run": false,
+  "results": [
+    {
+      "sport": "tennis",
+      "db_path": "data-private/warehouse/sports/tennis/sql-tennis.db",
+      "dry_run": false,
+      "migration_run_id": "phase9-fetch-contract-tennis-2026-06-02T20-46-12-198Z",
+      "policy_count": 6,
+      "table_counts": {
+        "source_fetch_policies": 6,
+        "source_fetch_runs": 13,
+        "source_fetch_status": 5
+      },
+      "status": "created_or_verified"
+    }
+  ]
+}

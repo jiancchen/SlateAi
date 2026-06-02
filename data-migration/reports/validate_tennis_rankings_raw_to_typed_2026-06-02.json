@@ -1,0 +1,52 @@
+{
+  "date": "2026-06-02",
+  "duplicate_rankings": 0,
+  "errors": [],
+  "generated_at": "2026-06-02T20:47:11.905681+00:00",
+  "health_check": {
+    "actual_count": 300,
+    "check_name": "tennis_rankings_raw_to_typed:2026-06-02",
+    "checked_at": "2026-06-02T20:47:11.864045+00:00",
+    "details_json": "{\"after_counts\":{\"rankings\":3513,\"unresolved_entities\":438},\"alias_rows\":309,\"before_counts\":{\"rankings\":3513,\"unresolved_entities\":438},\"date\":\"2026-06-02\",\"dry_run\":false,\"generated_at\":\"2026-06-02T20:47:11.863911+00:00\",\"inserted_rankings\":300,\"ok\":true,\"parsed_rankings\":300,\"parser_module\":\"pipeline/sources/tennis/normalization/rankings.py\",\"rankings_by_tour\":{\"ATP\":150,\"WTA\":150},\"row_count_delta\":{\"rankings\":0,\"unresolved_entities\":0},\"sample_source_snapshots\":[\"tennis-061bde1525d6bc41151aff9bad0620ca\"],\"script\":\"data-migration/scripts/ingest_tennis_rankings_raw_to_typed.py\",\"source_db\":\"data-private/warehouse/sports/tennis/sql-tennis.db\",\"source_files\":1,\"source_name\":\"tennis_rankings\",\"source_rows\":300,\"source_snapshot_rows\":1,\"unparsed_rows\":0,\"unresolved_rows_added\":0}",
+    "expected_count": 300,
+    "health_check_id": "tennis-rankings-raw-to-typed:2026-06-02",
+    "model_run_id": null,
+    "status": "ok"
+  },
+  "linked_rankings": 300,
+  "ok": true,
+  "open_rankings_unresolved": 0,
+  "orphan_rankings": 0,
+  "rankings_by_tour": [
+    {
+      "row_count": 150,
+      "tour": "ATP"
+    },
+    {
+      "row_count": 150,
+      "tour": "WTA"
+    }
+  ],
+  "script": "data-migration/scripts/validate_tennis_rankings_raw_to_typed.py",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "source_fetch_status": {
+    "actual_item_count": 1,
+    "cache_valid_until": "2026-06-03 20:47:11",
+    "expected_item_count": null,
+    "last_attempt_at": "2026-06-02T20:47:11.863940+00:00",
+    "last_completeness_status": "unknown",
+    "last_fetch_run_id": "source-fetch-tennis_rankings-2026-06-02-2026-06-02T20-47-11-863940+00-00",
+    "last_status": "success",
+    "last_success_at": "2026-06-02T20:47:11.863940+00:00",
+    "missing_item_count": null,
+    "notes": "{\"adapter\":\"tennis_rankings_raw_to_typed\",\"dry_run\":false,\"note\":\"Typed parse run for tennis ranking raw archive. This does not perform network fetch.\",\"parsed_rankings\":300,\"report_path\":\"data-migration/reports/ingest_tennis_rankings_raw_to_typed_2026-06-02_idempotency_rerun.json\",\"source_files\":1,\"unresolved_added\":0}",
+    "source_date": "2026-06-02",
+    "source_family": "rankings",
+    "source_fetch_status_id": "tennis:tennis_rankings:2026-06-02",
+    "source_name": "tennis_rankings",
+    "sport": "tennis",
+    "unresolved_count": 0,
+    "updated_at": "2026-06-02T20:47:11.863940+00:00"
+  },
+  "source_files": 1
+}

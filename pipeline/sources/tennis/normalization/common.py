@@ -163,7 +163,9 @@ class TennisIdentityResolver:
             for name in [player.get("name"), player.get("canonical_name"), player.get("source_player_id")]:
                 key = normalize_name(name)
                 if key:
-                    self.players_by_name.setdefault(key, []).append(player)
+                    bucket = self.players_by_name.setdefault(key, [])
+                    if not any(existing.get("player_id") == player.get("player_id") for existing in bucket):
+                        bucket.append(player)
         self.match_players: dict[str, list[dict[str, Any]]] = {}
         rows = self.con.execute(
             """
