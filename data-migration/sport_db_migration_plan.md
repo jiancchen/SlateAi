@@ -7,6 +7,7 @@ This plan turns the file-heavy sports warehouse into sport-specific databases wi
 Operational files:
 
 - `data-migration/migration_ledger.md` tracks source groups, migration scripts, target tables, validation checks, and status.
+- `data-migration/migration_events.jsonl` is the append-only machine-readable migration event log.
 - `data-migration/migration_runbook.md` defines the repeatable phase loop.
 - `data-migration/reports/` stores inventory and validation reports.
 
@@ -97,12 +98,17 @@ data-private/
 
 ## Migration Status Ledger
 
-Every migration script should update a ledger row or a markdown row with this shape:
+Every migration script should append a JSONL event and update the markdown dashboard when useful.
+
+The markdown ledger is for humans. The JSONL event log is for scripts and Codex.
+
+Each event should include this shape:
 
 | Field | Meaning |
 |---|---|
 | `source_path_or_table` | Legacy folder/file/table being migrated |
 | `sport` | `mlb`, `tennis`, or future sport |
+| `parser_module` | Reusable source parser called by the migration script, or `none` |
 | `target_db` | Destination SQLite DB |
 | `target_table` | Destination table or group |
 | `status` | `not_started`, `backfilled`, `validated`, `promoted`, `blocked` |
@@ -112,6 +118,37 @@ Every migration script should update a ledger row or a markdown row with this sh
 | `migration_script` | Script that performed the migration |
 | `validation_query` | Query or test used to prove the backfill |
 | `notes` | Gaps, duplicates, fuzzy matching issues, or blocked rows |
+
+## Parser Registry Rule
+
+Parsers are not disposable migration code. They are reusable source modules used by both migration backfills and future ingestion.
+
+Parser modules should live under `pipeline/sources/...`, for example:
+
+```text
+pipeline/sources/mlb/stats-api/parse.mjs
+pipeline/sources/mlb/baseballsavant/parse.mjs
+pipeline/sources/mlb/fanduel/parse.mjs
+pipeline/sources/mlb/kalshi/parse.mjs
+pipeline/sources/mlb/robinhood/parse.mjs
+pipeline/sources/tennis/flashscore/parse.mjs
+pipeline/sources/tennis/sofascore/parse.mjs
+pipeline/sources/tennis/livesport/parse.mjs
+pipeline/sources/tennis/rankings/parse.mjs
+pipeline/sources/tennis/fanduel/parse.mjs
+pipeline/sources/tennis/robinhood/parse.mjs
+```
+
+Migration scripts in `data-migration/scripts/` should orchestrate backfills and DB writes. They should not embed source-specific parsing logic that future ingestion cannot reuse.
+
+Each parser should have:
+
+- fixture samples
+- shape detection
+- normalized output contract
+- unknown-shape reporting
+- source family metadata
+- tests that prevent accidental parser drift
 
 ## Shared Schema Conventions
 

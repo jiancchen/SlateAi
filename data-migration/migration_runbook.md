@@ -19,9 +19,36 @@ Legacy source DB:
 - Never move, delete, or compress source folders until the ledger row is `archive_ready`.
 - Track migration by folder/table group, not individual file.
 - Every active ledger row must name the migration script, target table/group, validation script/query, and status.
+- Every source-folder row should name the reusable parser module when parsing is required.
 - Commit after each stable phase checkpoint.
 - Generated JSON and web mirrors are export caches after migration, not source truth.
 - Keep warehouse binaries out of Git. `data-private/warehouse/` is ignored; commit scripts, schemas, reports, and ledgers instead.
+
+## Ledger Files
+
+Use two ledgers with different jobs:
+
+- `data-migration/migration_ledger.md` is the human dashboard.
+- `data-migration/migration_events.jsonl` is the append-only machine-readable event log.
+
+Markdown is not the operational source of truth for scripts. Scripts should append JSONL events and may update the Markdown dashboard for readability.
+
+Each JSONL event should include:
+
+- `event_id`
+- `timestamp`
+- `phase`
+- `area`
+- `source`
+- `target`
+- `parser_module`
+- `migration_script`
+- `validation`
+- `status_from`
+- `status_to`
+- `report_path`
+- `checksum`
+- `notes`
 
 ## Engineering Guardrails
 
@@ -38,6 +65,40 @@ Every migration script should support:
 - deterministic output ordering so report hashes are stable.
 
 Scripts should be idempotent by default. Running the same backfill twice should not duplicate rows.
+
+### Parser Contract
+
+Source parsers are reusable pipeline modules, not disposable migration helpers.
+
+Migration scripts should call parser modules from `pipeline/sources/...`, and future ingestion should call the same modules.
+
+Each parser module should provide:
+
+- source family name
+- supported file/path patterns
+- `detectShape(payloadOrPath)` or equivalent
+- `parse(payloadOrPath)` with normalized output rows
+- unknown-shape reporting
+- fixture tests
+- output contract documentation
+
+Preferred parser locations:
+
+```text
+pipeline/sources/mlb/stats-api/
+pipeline/sources/mlb/baseballsavant/
+pipeline/sources/mlb/fanduel/
+pipeline/sources/mlb/kalshi/
+pipeline/sources/mlb/robinhood/
+pipeline/sources/tennis/flashscore/
+pipeline/sources/tennis/sofascore/
+pipeline/sources/tennis/livesport/
+pipeline/sources/tennis/rankings/
+pipeline/sources/tennis/fanduel/
+pipeline/sources/tennis/robinhood/
+```
+
+Parser fixtures should live near the parser, not under one-off migration folders.
 
 ### Read/Write Scope
 
