@@ -1,0 +1,37 @@
+{
+  "board_path": "data-private/lineups/mlb/2026-05-31-lineup-board.json",
+  "date": "2026-05-31",
+  "dry_run": false,
+  "errors": [],
+  "expected_game_count": 15,
+  "generated_at": "2026-06-02T21:48:50.835557+00:00",
+  "lineup_board": {
+    "games": 15,
+    "lineup_matchup_snapshots": 269,
+    "lineup_slots": 269,
+    "lineups": 30,
+    "players": 269,
+    "probable_pitchers": 30,
+    "probables_source_snapshot_id": "mlb-90eb3d7867dbcdaba9c8289a44b0414f",
+    "source_files": 1,
+    "source_snapshot_id": "mlb-416a0145098ed95894748b38cab91341",
+    "unresolved_games": 0,
+    "unresolved_players": 0
+  },
+  "lineup_root": "data-private/lineups/mlb",
+  "ok": true,
+  "row_count_delta": {
+    "health_checks": 0,
+    "lineup_matchup_snapshots": 0,
+    "lineup_slots": 0,
+    "lineups": 0,
+    "players": 0,
+    "source_fetch_runs": 2,
+    "source_fetch_status": 0,
+    "source_snapshots": 0,
+    "starting_pitchers": 0,
+    "unresolved_entities": 0
+  },
+  "script": "data-migration/scripts/ingest_mlb_lineups_raw_to_typed.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db"
+}
