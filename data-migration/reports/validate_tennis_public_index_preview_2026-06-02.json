@@ -1,0 +1,19 @@
+{
+  "contract": "data-migration/contracts/tennis_public_index_contract.md",
+  "db_date_count": 12,
+  "db_match_count": 352,
+  "db_model_run_count": 16,
+  "db_prediction_count": 525,
+  "errors": [],
+  "export_date_count": 12,
+  "export_dir": "data-migration/export-previews/tennis/index",
+  "export_match_count": 352,
+  "export_model_run_count": 16,
+  "export_prediction_count": 525,
+  "generated_at": "2026-06-02T06:55:23.616539+00:00",
+  "index_path": "data-migration/export-previews/tennis/index/index.json",
+  "manifest_id": "9c2ea4a5c3e9ecf2fa700a91435102f5",
+  "ok": true,
+  "script": "data-migration/scripts/validate_tennis_public_index.py",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db"
+}

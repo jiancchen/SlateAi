@@ -356,6 +356,27 @@ Purpose:
 - UI/API read selected sport/date/model from sport DB or DB-derived export.
 - Public exports are generated from DB on an explicit date/model target.
 
+Tennis preview export sequence:
+
+```bash
+python data-migration/scripts/export_tennis_public_index_from_db.py --force
+python data-migration/scripts/validate_tennis_public_index.py
+python data-migration/scripts/export_tennis_public_from_db.py --date YYYY-MM-DD --model latest --force
+python data-migration/scripts/validate_tennis_public_export.py --date YYYY-MM-DD
+python data-migration/scripts/build_sport_duckdb.py --sport tennis
+```
+
+Contracts:
+
+- `data-migration/contracts/tennis_public_index_contract.md`
+- `data-migration/contracts/tennis_public_export_contract.md`
+
+Current boundary:
+
+- The tennis index/slate export scripts write ignored previews under `data-migration/export-previews/tennis/`.
+- They may insert `export_manifests` and validation `health_checks` into `sql-tennis.db`.
+- They must not mutate `published-data/`, `web/public/data/`, `web/src/lib/`, API files, or active prediction scripts during preview mode.
+
 Exit criteria:
 
 - Model/date switching does not mutate data.

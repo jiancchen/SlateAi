@@ -1,0 +1,15 @@
+{
+  "contract": "data-migration/contracts/tennis_public_index_contract.md",
+  "date_count": 12,
+  "dry_run": true,
+  "export_manifest_id": null,
+  "generated_at": "2026-06-02T06:54:54.881339+00:00",
+  "index_path": "data-migration/export-previews/tennis/index/index.json",
+  "match_count": 352,
+  "model_run_count": 16,
+  "ok": true,
+  "out_dir": "data-migration/export-previews/tennis/index",
+  "prediction_row_count": 525,
+  "script": "data-migration/scripts/export_tennis_public_index_from_db.py",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db"
+}
