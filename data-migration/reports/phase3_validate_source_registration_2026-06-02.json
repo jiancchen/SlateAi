@@ -1,0 +1,135 @@
+{
+  "generated_at": "2026-06-02T05:56:52.979Z",
+  "phase": "3",
+  "script": "data-migration/scripts/validate_source_registration.mjs",
+  "sport_filter": "all",
+  "groups": [
+    {
+      "source": "mlb-raw-daily",
+      "source_name": "mlb_raw_daily",
+      "sport": "mlb",
+      "target": "data-private/warehouse/sports/mlb/sql-mlb.db",
+      "roots": [
+        {
+          "root": "data-private/raw/mlb",
+          "exists": true,
+          "file_count": 1888
+        }
+      ],
+      "expected_count": 1888,
+      "actual_count": 1888,
+      "content_hash_count": 1888,
+      "dated_count": 1888,
+      "content_hash_coverage_checksum": "eeb1b48ec91daa92ac897acb4d7303678c33486a334ba9b403760cee359e2e92",
+      "ok": true
+    },
+    {
+      "source": "mlb-stats-api",
+      "source_name": "mlb_stats_api",
+      "sport": "mlb",
+      "target": "data-private/warehouse/sports/mlb/sql-mlb.db",
+      "roots": [
+        {
+          "root": "data-private/raw/mlb-stats-api",
+          "exists": true,
+          "file_count": 55
+        }
+      ],
+      "expected_count": 55,
+      "actual_count": 55,
+      "content_hash_count": 55,
+      "dated_count": 55,
+      "content_hash_coverage_checksum": "efcbcd115f3e8e33332823345e48a38c31b254cb8681ffbea06fc0b12d1c69be",
+      "ok": true
+    },
+    {
+      "source": "baseballsavant",
+      "source_name": "baseballsavant",
+      "sport": "mlb",
+      "target": "data-private/warehouse/sports/mlb/sql-mlb.db",
+      "roots": [
+        {
+          "root": "data-private/raw/baseballsavant",
+          "exists": true,
+          "file_count": 136
+        }
+      ],
+      "expected_count": 136,
+      "actual_count": 136,
+      "content_hash_count": 136,
+      "dated_count": 136,
+      "content_hash_coverage_checksum": "1efe10b18cb45434b5fef896151965f7c1fd38c106a479d8e7713ed74ca73e3e",
+      "ok": true
+    },
+    {
+      "source": "mlb-odds",
+      "source_name": "mlb_odds",
+      "sport": "mlb",
+      "target": "data-private/warehouse/sports/mlb/sql-mlb.db",
+      "roots": [
+        {
+          "root": "data-private/raw/odds/fanduel-research",
+          "exists": true,
+          "file_count": 128
+        },
+        {
+          "root": "data-private/odds/kalshi/mlb",
+          "exists": true,
+          "file_count": 2
+        },
+        {
+          "root": "data-private/odds/robinhood/mlb",
+          "exists": true,
+          "file_count": 1
+        }
+      ],
+      "expected_count": 131,
+      "actual_count": 131,
+      "content_hash_count": 131,
+      "dated_count": 131,
+      "content_hash_coverage_checksum": "f024a14c0d6634c880bfd1005ca2020078f6883ec0fb8e61c590125ee7b89560",
+      "ok": true
+    },
+    {
+      "source": "tennis-reference",
+      "source_name": "tennis_reference",
+      "sport": "tennis",
+      "target": "data-private/warehouse/sports/tennis/sql-tennis.db",
+      "roots": [
+        {
+          "root": "data-private/reference/tennis",
+          "exists": true,
+          "file_count": 1524
+        }
+      ],
+      "expected_count": 1524,
+      "actual_count": 1524,
+      "content_hash_count": 1524,
+      "dated_count": 59,
+      "content_hash_coverage_checksum": "c8d49c4459bef10430ad543234ef499de79f5ed67333c44183009a400e9eee15",
+      "ok": true
+    },
+    {
+      "source": "tennis-odds",
+      "source_name": "tennis_odds",
+      "sport": "tennis",
+      "target": "data-private/warehouse/sports/tennis/sql-tennis.db",
+      "roots": [
+        {
+          "root": "data-private/odds/robinhood/tennis",
+          "exists": true,
+          "file_count": 1
+        }
+      ],
+      "expected_count": 1,
+      "actual_count": 1,
+      "content_hash_count": 1,
+      "dated_count": 1,
+      "content_hash_coverage_checksum": "4f1c7c71b04a5c9d9b8239247e39a8fcad8771a34d25cd4378dde087e13fbbfc",
+      "ok": true
+    }
+  ],
+  "ok": true,
+  "total_expected_count": 3735,
+  "total_actual_count": 3735
+}

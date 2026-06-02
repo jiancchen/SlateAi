@@ -1,0 +1,180 @@
+{
+  "generated_at": "2026-06-02T05:55:48.003Z",
+  "phase": "3",
+  "script": "data-migration/scripts/register_source_folder.mjs",
+  "dry_run": false,
+  "source_filter": "all",
+  "sport_filter": "all",
+  "groups": [
+    {
+      "source": "mlb-raw-daily",
+      "source_name": "mlb_raw_daily",
+      "sport": "mlb",
+      "parser_module": "pipeline/sources/mlb/stats-api/parse.mjs",
+      "target": "data-private/warehouse/sports/mlb/sql-mlb.db",
+      "roots": [
+        {
+          "root": "data-private/raw/mlb",
+          "exists": true,
+          "file_count": 1888
+        }
+      ],
+      "dry_run": false,
+      "planned_source_snapshots": 1888,
+      "existing_before": 0,
+      "written_source_snapshots": 1888,
+      "existing_after": 1888,
+      "sample_paths": [
+        "data-private/raw/mlb/2026-03-26/games/823081-feed-live.json.gz",
+        "data-private/raw/mlb/2026-03-26/games/823081-summary.json",
+        "data-private/raw/mlb/2026-03-26/games/823163-feed-live.json.gz",
+        "data-private/raw/mlb/2026-03-26/games/823163-summary.json",
+        "data-private/raw/mlb/2026-03-26/games/823325-feed-live.json.gz"
+      ],
+      "ok": true
+    },
+    {
+      "source": "mlb-stats-api",
+      "source_name": "mlb_stats_api",
+      "sport": "mlb",
+      "parser_module": "pipeline/sources/mlb/stats-api/parse.mjs",
+      "target": "data-private/warehouse/sports/mlb/sql-mlb.db",
+      "roots": [
+        {
+          "root": "data-private/raw/mlb-stats-api",
+          "exists": true,
+          "file_count": 55
+        }
+      ],
+      "dry_run": false,
+      "planned_source_snapshots": 55,
+      "existing_before": 0,
+      "written_source_snapshots": 55,
+      "existing_after": 55,
+      "sample_paths": [
+        "data-private/raw/mlb-stats-api/hitter-career-profiles/2026-05-30/profiles-1.json",
+        "data-private/raw/mlb-stats-api/hitter-career-profiles/2026-05-30/profiles-10.json",
+        "data-private/raw/mlb-stats-api/hitter-career-profiles/2026-05-30/profiles-11.json",
+        "data-private/raw/mlb-stats-api/hitter-career-profiles/2026-05-30/profiles-12.json",
+        "data-private/raw/mlb-stats-api/hitter-career-profiles/2026-05-30/profiles-13.json"
+      ],
+      "ok": true
+    },
+    {
+      "source": "baseballsavant",
+      "source_name": "baseballsavant",
+      "sport": "mlb",
+      "parser_module": "pipeline/sources/mlb/baseballsavant/parse.mjs",
+      "target": "data-private/warehouse/sports/mlb/sql-mlb.db",
+      "roots": [
+        {
+          "root": "data-private/raw/baseballsavant",
+          "exists": true,
+          "file_count": 136
+        }
+      ],
+      "dry_run": false,
+      "planned_source_snapshots": 136,
+      "existing_before": 0,
+      "written_source_snapshots": 136,
+      "existing_after": 136,
+      "sample_paths": [
+        "data-private/raw/baseballsavant/hitter-statcast/2026-03-26/details.csv",
+        "data-private/raw/baseballsavant/hitter-statcast/2026-03-26/grouped.csv",
+        "data-private/raw/baseballsavant/hitter-statcast/2026-03-27/details.csv",
+        "data-private/raw/baseballsavant/hitter-statcast/2026-03-27/grouped.csv",
+        "data-private/raw/baseballsavant/hitter-statcast/2026-03-28/details.csv"
+      ],
+      "ok": true
+    },
+    {
+      "source": "mlb-odds",
+      "source_name": "mlb_odds",
+      "sport": "mlb",
+      "parser_module": "pipeline/sources/mlb/{fanduel,kalshi,robinhood}/parse.mjs",
+      "target": "data-private/warehouse/sports/mlb/sql-mlb.db",
+      "roots": [
+        {
+          "root": "data-private/raw/odds/fanduel-research",
+          "exists": true,
+          "file_count": 128
+        },
+        {
+          "root": "data-private/odds/kalshi/mlb",
+          "exists": true,
+          "file_count": 2
+        },
+        {
+          "root": "data-private/odds/robinhood/mlb",
+          "exists": true,
+          "file_count": 1
+        }
+      ],
+      "dry_run": false,
+      "planned_source_snapshots": 131,
+      "existing_before": 0,
+      "written_source_snapshots": 131,
+      "existing_after": 131,
+      "sample_paths": [
+        "data-private/raw/odds/fanduel-research/mlb/moneylines/2026-03-26/mlb-betting-odds-03-26-2026.json",
+        "data-private/raw/odds/fanduel-research/mlb/moneylines/2026-03-27/mlb-betting-odds-03-27-2026.json",
+        "data-private/raw/odds/fanduel-research/mlb/moneylines/2026-03-28/mlb-betting-odds-03-28-2026.json",
+        "data-private/raw/odds/fanduel-research/mlb/moneylines/2026-03-29/mlb-betting-odds-03-29-2026.json",
+        "data-private/raw/odds/fanduel-research/mlb/moneylines/2026-03-30/mlb-betting-odds-03-30-2026.json"
+      ],
+      "ok": true
+    },
+    {
+      "source": "tennis-reference",
+      "source_name": "tennis_reference",
+      "sport": "tennis",
+      "parser_module": "pipeline/sources/tennis/{flashscore,sofascore,livesport,rankings}/parse.mjs",
+      "target": "data-private/warehouse/sports/tennis/sql-tennis.db",
+      "roots": [
+        {
+          "root": "data-private/reference/tennis",
+          "exists": true,
+          "file_count": 1524
+        }
+      ],
+      "dry_run": false,
+      "planned_source_snapshots": 1524,
+      "existing_before": 0,
+      "written_source_snapshots": 1524,
+      "existing_after": 1524,
+      "sample_paths": [
+        "data-private/reference/tennis/espn-scoreboard-2026-05-21.json",
+        "data-private/reference/tennis/espn-scoreboard-2026-05-22.json",
+        "data-private/reference/tennis/espn-scoreboard-2026-05-24.json",
+        "data-private/reference/tennis/espn-scoreboard-2026-05-25.json",
+        "data-private/reference/tennis/espn-scoreboard-2026-05-26.json"
+      ],
+      "ok": true
+    },
+    {
+      "source": "tennis-odds",
+      "source_name": "tennis_odds",
+      "sport": "tennis",
+      "parser_module": "pipeline/sources/tennis/{fanduel,robinhood}/parse.mjs",
+      "target": "data-private/warehouse/sports/tennis/sql-tennis.db",
+      "roots": [
+        {
+          "root": "data-private/odds/robinhood/tennis",
+          "exists": true,
+          "file_count": 1
+        }
+      ],
+      "dry_run": false,
+      "planned_source_snapshots": 1,
+      "existing_before": 0,
+      "written_source_snapshots": 1,
+      "existing_after": 1,
+      "sample_paths": [
+        "data-private/odds/robinhood/tennis/2026-06-02-robinhood-tennis-markets.json"
+      ],
+      "ok": true
+    }
+  ],
+  "ok": true,
+  "total_source_snapshots": 3735
+}
