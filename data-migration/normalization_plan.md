@@ -86,6 +86,28 @@ Low-value leftovers still need classification. They should not stay as untracked
 
 After MLB normalization, any remaining `legacy_table_rows.row_json` usage must be documented as audit-only or blocked for follow-up.
 
+## MLB Families
+
+The first MLB inventory pass classified `70` legacy source tables and `1,206,213` legacy rows with zero catch-all leftovers. Keep the generated full source-table inventory in `data-migration/reports/mlb_normalization_inventory_2026-06-02.md`.
+
+| Family | Bucket | Source Tables | Rows | Parser Module | Target Direction |
+|---|---|---:|---:|---|---|
+| MLB hitter/batter features | `core_model_data` | 8 | 693,712 | `pipeline/sources/mlb/normalization/hitter_features.py` | Batter feature snapshots, pitch-type response, Statcast/classic trend rows, current deviation, state, and distribution rows. |
+| MLB pitcher/starter features | `core_model_data` | 6 | 149,971 | `pipeline/sources/mlb/normalization/pitcher_features.py` | Pitch mix, first-inning, mistake-shape, leash, third-time penalty, and starter form rows. |
+| MLB player career/splits/context | `secondary_feature_event` | 6 | 187,869 | `pipeline/sources/mlb/normalization/player_context.py` | Career, splits, identity curves/profiles, pitcher season value, and HR leaderboard context. |
+| MLB results/outcomes | `core_model_data` | 8 | 51,768 | `pipeline/sources/mlb/normalization/results.py` | Game outcomes, team stats, batter/pitcher outcomes, HR events, phase outcomes, and starter logs. |
+| MLB bullpen/relief shape | `core_model_data` | 5 | 29,425 | `pipeline/sources/mlb/normalization/bullpen_features.py` | Bullpen usage, bullpen mistake shape, likely relief chains, and reliever command profiles. |
+| MLB team/game-shape features | `core_model_data` | 8 | 29,692 | `pipeline/sources/mlb/normalization/team_features.py` | First-inning, rolling form, state, opponent quality, mistake, carryover, lead-surrender, and whiff-persistence rows. |
+| MLB lineup/matchup features | `core_model_data` | 3 | 26,009 | `pipeline/sources/mlb/normalization/lineups.py` | Lineups, lineup slots, lineup/pitcher matchup snapshots, conversion shape, and dependency profiles. |
+| MLB predictions/backtests | `core_model_data` | 9 | 16,791 | `pipeline/sources/mlb/normalization/predictions.py` | Prediction rows, settlement rows, component settlement rows, and lane-specific backtest rows. |
+| MLB game-shape/state formula | `core_model_data` | 2 | 8,181 | `pipeline/sources/mlb/normalization/game_shape.py` | State formula training and backtest rows. |
+| MLB team trend/context | `secondary_feature_event` | 4 | 5,673 | `pipeline/sources/mlb/normalization/team_context.py` | Story priors, story labels/signals, and series context. |
+| MLB props/odds | `core_model_data` | 1 | 2,409 | `pipeline/sources/mlb/normalization/props.py` | Prop market snapshots. |
+| MLB market/odds context | `secondary_feature_event` | 2 | 2,044 | `pipeline/sources/mlb/normalization/markets.py` | Team market context and market mispricing labels. |
+| MLB markets/odds | `core_model_data` | 2 | 2,000 | `pipeline/sources/mlb/normalization/markets.py` | Market snapshots, market contracts, and price ticks. |
+| MLB environment/sun/park | `core_model_data` | 2 | 601 | `pipeline/sources/mlb/normalization/environment.py` | Environment snapshots, sun visibility snapshots, and visibility outcomes. |
+| MLB model metadata | `core_model_data` | 4 | 68 | `pipeline/sources/mlb/normalization/model_metadata.py` | Model runs, component runs, run lanes, and run artifacts. |
+
 ## Parser Contract
 
 Each parser/injection module must:
