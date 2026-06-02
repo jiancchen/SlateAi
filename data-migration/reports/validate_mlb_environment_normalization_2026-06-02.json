@@ -1,0 +1,23 @@
+{
+  "date": null,
+  "errors": [],
+  "generated_at": "2026-06-02T09:43:42.681735+00:00",
+  "ok": true,
+  "orphan_checks": {
+    "game_sun_visibility_snapshots": 0,
+    "game_visibility_outcomes": 0
+  },
+  "parser_module": "pipeline/sources/mlb/normalization/environment.py",
+  "script": "data-migration/scripts/validate_mlb_environment_normalization.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_rows": 601,
+  "source_table_counts": {
+    "mlb_game_sun_visibility_snapshots": 306,
+    "mlb_game_visibility_outcomes": 295
+  },
+  "target_counts": {
+    "game_sun_visibility_snapshots": 306,
+    "game_visibility_outcomes": 295
+  },
+  "unresolved_environment_entities": 0
+}
