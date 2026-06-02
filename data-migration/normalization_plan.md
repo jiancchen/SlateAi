@@ -39,7 +39,52 @@ Normalization is separate from migration:
 | Stats | `tennis_flashscore_player_stat_rows`, `tennis_flashscore_stat_rows`, `tennis_sofascore_player_stat_rows`, `tennis_sofascore_stat_rows` | `match_stat_rows`, `service_pressure_snapshots` |
 | Replay | `tennis_sofascore_replay_games`, `tennis_sofascore_replay_points`, `tennis_livesport_replay_games`, `tennis_livesport_replay_points` | `replay_games`, `replay_points` |
 | Markets | `tennis_kalshi_market_candles`, `tennis_kalshi_match_markets`, `tennis_kalshi_open_orderbook_snapshots`, `tennis_prediction_market_snapshots` | `market_snapshots`, `market_contracts`, `market_price_ticks` |
-| Context | `tennis_player_match_context`, `tennis_recent_form_metrics`, `tennis_h2h_snapshots`, `tennis_match_weather` | `player_form_snapshots`, `h2h_matches`, feature snapshot rows |
+| Context | `tennis_player_match_context`, `tennis_recent_form_metrics`, `tennis_h2h_snapshots`, `tennis_match_weather` | `player_form_snapshots`, `match_context_snapshots` |
+
+## MLB Normalization Policy
+
+MLB should use a broad one-pass normalization strategy after the tennis pattern is stable. The goal is not to make every minor source family equally important; the goal is to ensure no active model/dashboard path needs to decode random legacy blobs.
+
+### Core Model Data
+
+Core model data must be fully typed now:
+
+- Pitcher and batter features
+- Lineups
+- Props
+- Markets
+- Game state
+- Weather, sun, and park context
+- Results
+- Prediction rows
+- Settlement rows
+
+These families should get strict schemas with canonical `game_id`, `team_id`, `player_id`, `market_id`, and model/run identifiers where applicable.
+
+### Secondary Useful Data
+
+Secondary data should be normalized into typed feature/event tables:
+
+- Player career, season, and split context
+- Team trends
+- Injury, role, and news-style context
+- Prop history
+- Odds snapshots
+
+These tables should preserve typed fields that are useful for DuckDB backtests and retain residual `source_detail_json` only for audit/source replay.
+
+### Low-Value Or Weird Leftovers
+
+Low-value leftovers still need classification. They should not stay as untracked blobs. Route them into typed `source_*` or `context_*` tables with:
+
+- Canonical IDs when available
+- Source table/folder
+- Source primary key or URL
+- Parsed fields where practical
+- `source_detail_json` for residual audit detail
+- Explicit unresolved mappings when canonical joins are ambiguous
+
+After MLB normalization, any remaining `legacy_table_rows.row_json` usage must be documented as audit-only or blocked for follow-up.
 
 ## Parser Contract
 
@@ -70,4 +115,3 @@ Typed rows are not promoted to active dashboards/models until:
 1. The family is validated.
 2. DuckDB rebuild passes with zero count mismatches.
 3. Dashboard/read-path checks prove the typed table can replace the legacy blob path.
-

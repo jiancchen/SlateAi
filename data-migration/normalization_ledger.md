@@ -34,7 +34,7 @@ Rules:
 | N4 | Tennis market normalization | Kalshi/Robinhood/FanDuel legacy market tables | `market_snapshots`, `market_contracts`, `market_price_ticks` | duckdb_ready | 2026-06-02 | 2026-06-02 | `validate_tennis_market_normalization_2026-06-02.json`; 824 contracts, 131,248 ticks, 1,104 snapshots, 0 orphan ticks/contracts | Added contract/tick tables and quarantined 187 ambiguous market mappings. |
 | N5 | Tennis context normalization | context/form/H2H/weather legacy tables | `player_form_snapshots`, `match_context_snapshots` | duckdb_ready | 2026-06-02 | 2026-06-02 | `validate_tennis_context_normalization_2026-06-02.json`; 2,983 player-form snapshots, 448 match-context snapshots, 0 orphans, 0 duplicate IDs | Context rows are typed enough for DuckDB queries; summary H2H/weather blobs stay out of `h2h_matches`. 1 ambiguous player mapping quarantined. |
 | N6 | Tennis DuckDB readiness | `sql-tennis.db` typed tables | `duck-tennis.duckdb` | duckdb_ready | 2026-06-02 | 2026-06-02 | `build_tennis_duckdb_after_context_normalization_2026-06-02.json`; zero count mismatches after stats, replay, market, and context normalization | Rebuild after each validated family. |
-| N7 | MLB normalization pattern | MLB legacy feature/market tables | MLB typed feature/market tables | not_started |  |  | pending | Start only after tennis pattern stabilizes. |
+| N7 | MLB normalization pattern | Full MLB legacy inventory | Core typed model tables, secondary feature/event tables, classified `source_*`/`context_*` leftovers | not_started |  |  | pending | Broad one-pass MLB normalization: fully type core model data, normalize useful secondary data, and classify every leftover blob instead of leaving random active JSON dependencies. |
 
 ## Source Family Ledger
 
@@ -52,3 +52,4 @@ Rules:
 - 2026-06-02: Tennis replay normalization completed and mirrored to DuckDB. `replay_games` now has 7,174 rows and `replay_points` has 38,959 rows with zero unresolved replay mappings.
 - 2026-06-02: Tennis market normalization completed and mirrored to DuckDB. Added typed `market_contracts` and `market_price_ticks`; 187 ambiguous market mappings remain quarantined.
 - 2026-06-02: Tennis context normalization completed and mirrored to DuckDB. `player_form_snapshots` now has 2,983 rows and `match_context_snapshots` has 448 rows; 1 ambiguous player mapping remains quarantined.
+- 2026-06-02: MLB normalization policy accepted. Use a full inventory/classification pass: strict schemas for core model data, typed feature/event tables for secondary data, and classified `source_*`/`context_*` tables for weird leftovers. No active MLB prediction/dashboard path should depend on random legacy JSON after promotion.
