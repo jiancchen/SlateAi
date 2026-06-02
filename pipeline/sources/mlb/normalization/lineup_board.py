@@ -136,7 +136,7 @@ def player_payloads(side_payload: dict[str, Any]) -> list[dict[str, Any]]:
 
 def lineup_status_for(raw_status: Any, lineup_size: int) -> str:
     if lineup_size >= 9:
-        return str(raw_status or "complete")
+        return "complete"
     if lineup_size > 0:
         return "partial"
     return "pending"

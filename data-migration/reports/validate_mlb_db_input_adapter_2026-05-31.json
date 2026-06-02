@@ -1,0 +1,152 @@
+{
+  "generated_at": "2026-06-02T22:45:57.970Z",
+  "script": "data-migration/scripts/validate_mlb_db_input_adapter.mjs",
+  "date": "2026-05-31",
+  "games": {
+    "count": 15,
+    "sample": [
+      {
+        "game_id": "mlb-824832",
+        "mlb_game_pk": 824832,
+        "game_date": "2026-05-31",
+        "start_time_utc": "2026-05-31T16:15:00Z",
+        "status": "Final",
+        "away_team": "Toronto Blue Jays",
+        "away_abbreviation": "TOR",
+        "home_team": "Baltimore Orioles",
+        "home_abbreviation": "BAL",
+        "venue_name": "Oriole Park at Camden Yards"
+      },
+      {
+        "game_id": "mlb-823373",
+        "mlb_game_pk": 823373,
+        "game_date": "2026-05-31",
+        "start_time_utc": "2026-05-31T17:35:00Z",
+        "status": "Final",
+        "away_team": "Minnesota Twins",
+        "away_abbreviation": "MIN",
+        "home_team": "Pittsburgh Pirates",
+        "home_abbreviation": "PIT",
+        "venue_name": "PNC Park"
+      },
+      {
+        "game_id": "mlb-822729",
+        "mlb_game_pk": 822729,
+        "game_date": "2026-05-31",
+        "start_time_utc": "2026-05-31T17:35:00Z",
+        "status": "Final",
+        "away_team": "San Diego Padres",
+        "away_abbreviation": "SD",
+        "home_team": "Washington Nationals",
+        "home_abbreviation": "WSH",
+        "venue_name": "Nationals Park"
+      }
+    ]
+  },
+  "source_status_count": 14,
+  "lineup": {
+    "games": 15,
+    "expected_slots": 270,
+    "lineups": 30,
+    "slots": 269,
+    "partial_lineups": 1,
+    "pending_lineups": 0,
+    "source_snapshot_id": "mlb-416a0145098ed95894748b38cab91341",
+    "source_status": {
+      "last_status": "partial",
+      "last_completeness_status": "partial",
+      "expected_item_count": 270,
+      "actual_item_count": 269,
+      "missing_item_count": 1
+    }
+  },
+  "markets": {
+    "contracts": 408,
+    "snapshots": 408,
+    "ticks": 408,
+    "games_with_contracts": 15,
+    "by_market_type": [
+      {
+        "market_type": "total",
+        "contracts": 166
+      },
+      {
+        "market_type": "first5Total",
+        "contracts": 98
+      },
+      {
+        "market_type": "winner",
+        "contracts": 60
+      },
+      {
+        "market_type": "first5Winner",
+        "contracts": 42
+      },
+      {
+        "market_type": "spread",
+        "contracts": 30
+      },
+      {
+        "market_type": "firstInning",
+        "contracts": 12
+      }
+    ]
+  },
+  "artifacts": {
+    "prediction_rows_by_lane": [
+      {
+        "lane": "player_prop",
+        "rows": 498
+      },
+      {
+        "lane": "Props",
+        "rows": 36
+      },
+      {
+        "lane": "ml",
+        "rows": 30
+      },
+      {
+        "lane": "MLB FG",
+        "rows": 15
+      },
+      {
+        "lane": "HR",
+        "rows": 12
+      },
+      {
+        "lane": "home_run",
+        "rows": 12
+      }
+    ],
+    "settlement_rows": 30
+  },
+  "checks": [
+    {
+      "name": "games_available",
+      "ok": true,
+      "details": "15 games"
+    },
+    {
+      "name": "source_status_available",
+      "ok": true,
+      "details": "14 source rows"
+    },
+    {
+      "name": "lineup_status_matches_coverage",
+      "ok": true,
+      "details": "typed slots 269/270; status 269/270"
+    },
+    {
+      "name": "markets_available",
+      "ok": true,
+      "details": "408 contracts"
+    },
+    {
+      "name": "model_artifacts_visible",
+      "ok": true,
+      "details": "6 lanes"
+    }
+  ],
+  "ok": true
+}
