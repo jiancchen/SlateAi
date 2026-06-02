@@ -151,14 +151,18 @@ Current status:
 - Phase 9B.2 split the tennis replay contract into `tennis_sofascore_replay` and optional `tennis_livesport_replay`, then wired raw replay receipts into typed `replay_games` and `replay_points`.
 - The SofaScore replay pilot processed 8 May 31 source files, refreshed 251 replay-game rows and 1,369 replay-point rows, and proved rerun idempotency with zero row-count growth.
 - The Livesport fallback pilot processed 1 June 1 source file, refreshed 41 replay-game rows and 213 replay-point rows, including 25 explicit break-point flags.
-- Typed parser write-through from raw receipts into rankings, context, and odds remains the next Phase 9B/9C substep.
+- Phase 9C wired active tennis odds receipts into typed market tables: Robinhood supplement rows now feed `market_contracts`, `market_price_ticks`, and `market_snapshots`; FanDuel line captures feed derivative `market_snapshots`.
+- The June 2 odds pilot parsed 2 active odds files into 132 Robinhood contracts, 132 ticks, and 180 total snapshots, including FanDuel moneyline, game spread, match total, first-set total, and set-win rows. Rerun idempotency had zero row-count growth.
+- Typed parser write-through from raw receipts into rankings and context remains the next Phase 9B substep.
 - Existing tennis normalization modules still primarily parse `legacy_table_rows`; do not mark the active ingestion rewrite complete until raw source receipts can feed typed tables directly or through a clearly declared intermediate.
 
 ### Phase 9C: Tennis Odds
 
-- Wire `tennis_odds` with short TTL.
-- Require contract/player mapping status for market rows.
-- Block value boards if odds are missing/stale.
+- Status: validated for the available June 2 Robinhood supplement plus FanDuel line captures.
+- `tennis_odds` has a short TTL and is required for value boards.
+- Contract/player mapping status is validated for Robinhood contracts and FanDuel derivative rows.
+- Value boards should be blocked or marked stale when `source_fetch_status` for `tennis_odds` is missing/stale.
+- The full Robinhood page dump remains a source receipt; typed contract rows should come from the normalized supplement unless a future parser maps full events cleanly.
 
 ### Phase 9D: MLB Core Sources
 
@@ -196,7 +200,7 @@ Current status:
 ## Open Technical Debt
 
 - Existing active fetch scripts still need DB-first wrappers.
-- Tennis raw Flashscore stats plus SofaScore/Livesport replay now feed typed tables; rankings, context, and odds still need raw-to-typed active adapters.
+- Tennis raw Flashscore stats, SofaScore/Livesport replay, and Robinhood/FanDuel odds now feed typed tables; rankings and context still need raw-to-typed active adapters.
 - Existing prediction scripts still need preflight gates.
 - Prediction scripts are not fully reading only DB inputs.
 - Existing generated web/public JSON remains active output until promotion.

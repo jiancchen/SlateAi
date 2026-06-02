@@ -7,6 +7,7 @@ from typing import Any
 
 from .common import (
     TennisIdentityResolver,
+    compact_json,
     fetch_legacy_rows,
     normalize_name,
     parse_legacy_json,
@@ -114,6 +115,7 @@ class ParsedTick:
     close_cents: float | None
     volume: float | None
     open_interest: float | None
+    source_snapshot_id: str | None = None
 
 
 @dataclass(frozen=True)
@@ -126,9 +128,12 @@ class ParsedMarketSnapshot:
     source_name: str
     market_type: str
     selection: str
+    line_value: float | None
+    odds_american: float | None
     price_cents: float | None
     implied_probability: float | None
     captured_at: str
+    source_snapshot_id: str | None = None
 
 
 def dollars_to_cents(value: Any) -> float | None:
@@ -149,6 +154,35 @@ def ts_to_iso(value: Any) -> str | None:
     if not text:
         return None
     return text
+
+
+def american_to_implied(value: Any) -> float | None:
+    odds = to_float(value)
+    if odds is None or odds == 0:
+        return None
+    if odds > 0:
+        return 100.0 / (odds + 100.0)
+    return abs(odds) / (abs(odds) + 100.0)
+
+
+def match_id_for_names(resolver: TennisIdentityResolver, date: str | None, player_names: list[str]) -> str | None:
+    keys = {normalize_name(name) for name in player_names if normalize_name(name)}
+    if len(keys) < 2:
+        return None
+    candidates: list[str] = []
+    for match_id, match in resolver.matches.items():
+        if date and match.get("match_date") != date:
+            continue
+        rows = resolver.match_players.get(match_id, [])
+        names = set()
+        for row in rows:
+            for key in ["market_name", "name", "canonical_name"]:
+                normalized = normalize_name(row.get(key))
+                if normalized:
+                    names.add(normalized)
+        if all(any(resolver._names_likely_match(player_key, name) for name in names) for player_key in keys):
+            candidates.append(match_id)
+    return candidates[0] if len(candidates) == 1 else None
 
 
 def source_name_for_table(table: str, payload: dict[str, Any]) -> str:
@@ -300,11 +334,203 @@ def parse_market_row(
             source_name=source_name,
             market_type="moneyline_binary",
             selection=str(selection),
+            line_value=None,
+            odds_american=None,
             price_cents=price,
             implied_probability=price / 100.0 if price is not None else None,
             captured_at=captured_at,
         )
     return contract, tick, snapshot
+
+
+def parse_robinhood_supplement_payload(
+    payload: dict[str, Any],
+    resolver: TennisIdentityResolver,
+    *,
+    source_snapshot_id: str | None = None,
+    local_path: str | None = None,
+) -> tuple[list[ParsedContract], list[ParsedTick], list[ParsedMarketSnapshot], dict[str, int]]:
+    source_name = "robinhood"
+    source_table = "tennis_robinhood_supplement"
+    captured_at = ts_to_iso(payload.get("capturedAt")) or utc_now()
+    date = payload.get("date")
+    contracts: dict[str, ParsedContract] = {}
+    ticks: list[ParsedTick] = []
+    snapshots: list[ParsedMarketSnapshot] = []
+    counts = {"source_rows": 0, "parsed_contracts": 0, "parsed_ticks": 0, "parsed_snapshots": 0, "unparsed_rows": 0}
+
+    for match_payload in payload.get("matches") or []:
+        match_id = match_payload.get("id")
+        if match_id not in resolver.matches:
+            names = [player.get("name") for player in match_payload.get("players") or [] if player.get("name")]
+            match_id = match_id_for_names(resolver, date, names)
+        if not match_id:
+            resolver.insert_unresolved(
+                "tennis_market_match",
+                source_name,
+                match_payload.get("eventId") or match_payload.get("id") or local_path,
+                match_payload.get("title") or "unknown",
+                {"local_path": local_path, "payload": match_payload},
+                "Could not confidently map Robinhood supplement match to canonical match.",
+            )
+            counts["unparsed_rows"] += 1
+            continue
+        for player_payload in match_payload.get("players") or []:
+            counts["source_rows"] += 1
+            selection = player_payload.get("name") or player_payload.get("shortName") or "Unknown selection"
+            player_id = resolver.player_id_for_match(match_id, source_name, selection)
+            if not player_id:
+                resolver.insert_unresolved(
+                    "tennis_market_player",
+                    source_name,
+                    player_payload.get("symbol") or match_payload.get("eventId") or match_id,
+                    selection,
+                    {"local_path": local_path, "match_id": match_id, "payload": player_payload},
+                    "Could not confidently map Robinhood supplement player to canonical match player.",
+                )
+            contract_ticker = player_payload.get("symbol")
+            contract_id = stable_id("market-contract", source_name, contract_ticker or match_id, player_id, normalize_name(selection))
+            legacy_row_id = stable_id("tennis", source_table, source_snapshot_id, match_id, contract_ticker, normalize_name(selection), length=64)
+            contract = ParsedContract(
+                source_table=source_table,
+                legacy_row_id=legacy_row_id,
+                contract_id=contract_id,
+                match_id=match_id,
+                player_id=player_id,
+                source_name=source_name,
+                market_type="moneyline_binary",
+                selection=str(selection),
+                contract_ticker=contract_ticker,
+                event_ticker=match_payload.get("eventId"),
+                opened_at=ts_to_iso(match_payload.get("startIso")),
+                closed_at=None,
+                status=None,
+                result=None,
+                raw_json=compact_json({"match": match_payload, "player": player_payload}),
+            )
+            contracts[contract_id] = contract
+            bid = dollars_to_cents(player_payload.get("yesBidCents") if player_payload.get("yesBidCents") is not None else player_payload.get("yesBid"))
+            ask = dollars_to_cents(player_payload.get("yesAskCents") if player_payload.get("yesAskCents") is not None else player_payload.get("yesAsk"))
+            last = dollars_to_cents(player_payload.get("lastTradeCents") if player_payload.get("lastTradeCents") is not None else player_payload.get("lastTradePrice"))
+            tick_at = ts_to_iso(player_payload.get("quoteUpdatedAt")) or captured_at
+            ticks.append(
+                ParsedTick(
+                    source_table=source_table,
+                    legacy_row_id=legacy_row_id,
+                    tick_id=stable_id("market-tick", contract_id, tick_at, source_snapshot_id),
+                    contract_id=contract_id,
+                    match_id=match_id,
+                    player_id=player_id,
+                    source_name=source_name,
+                    captured_at=tick_at,
+                    bid_cents=bid,
+                    ask_cents=ask,
+                    last_cents=last,
+                    open_cents=None,
+                    high_cents=None,
+                    low_cents=None,
+                    close_cents=None,
+                    volume=to_float(player_payload.get("volume")),
+                    open_interest=to_float(player_payload.get("openInterest")),
+                    source_snapshot_id=source_snapshot_id,
+                )
+            )
+            price = ask if ask is not None else last if last is not None else bid
+            snapshots.append(
+                ParsedMarketSnapshot(
+                    source_table=source_table,
+                    legacy_row_id=legacy_row_id,
+                    snapshot_id=stable_id("market-snapshot", source_table, source_snapshot_id, match_id, player_id, contract_ticker, "moneyline_binary"),
+                    match_id=match_id,
+                    player_id=player_id,
+                    source_name=source_name,
+                    market_type="moneyline_binary",
+                    selection=str(selection),
+                    line_value=None,
+                    odds_american=None,
+                    price_cents=price,
+                    implied_probability=price / 100.0 if price is not None else None,
+                    captured_at=captured_at,
+                    source_snapshot_id=source_snapshot_id,
+                )
+            )
+    counts["parsed_contracts"] = len(contracts)
+    counts["parsed_ticks"] = len(ticks)
+    counts["parsed_snapshots"] = len(snapshots)
+    return list(contracts.values()), ticks, snapshots, counts
+
+
+def parse_fanduel_lines_payload(
+    payload: dict[str, Any],
+    resolver: TennisIdentityResolver,
+    *,
+    source_snapshot_id: str | None = None,
+    local_path: str | None = None,
+) -> tuple[list[ParsedMarketSnapshot], dict[str, int]]:
+    source_name = "fanduel"
+    source_table = "tennis_fanduel_lines"
+    captured_at = ts_to_iso(payload.get("capturedAt")) or utc_now()
+    date = payload.get("date")
+    snapshots: list[ParsedMarketSnapshot] = []
+    counts = {"source_rows": 0, "parsed_snapshots": 0, "unparsed_rows": 0}
+
+    def add_snapshot(match_id: str, player_id: str | None, market_type: str, selection: str, line_value: float | None, odds: Any) -> None:
+        odds_number = to_float(odds)
+        snapshots.append(
+            ParsedMarketSnapshot(
+                source_table=source_table,
+                legacy_row_id=stable_id("tennis", source_table, source_snapshot_id, match_id, market_type, selection, line_value, odds_number, length=64),
+                snapshot_id=stable_id("market-snapshot", source_table, source_snapshot_id, match_id, player_id, market_type, selection, line_value, odds_number),
+                match_id=match_id,
+                player_id=player_id,
+                source_name=source_name,
+                market_type=market_type,
+                selection=selection,
+                line_value=line_value,
+                odds_american=odds_number,
+                price_cents=None,
+                implied_probability=american_to_implied(odds_number),
+                captured_at=captured_at,
+                source_snapshot_id=source_snapshot_id,
+            )
+        )
+
+    for match_payload in payload.get("matches") or []:
+        raw_title = match_payload.get("match") or ""
+        names = [part.strip() for part in raw_title.split(" vs ") if part.strip()]
+        match_id = match_id_for_names(resolver, date, names)
+        if not match_id:
+            resolver.insert_unresolved(
+                "tennis_market_match",
+                source_name,
+                match_payload.get("eventId") or local_path,
+                raw_title or "unknown",
+                {"local_path": local_path, "payload": match_payload},
+                "Could not confidently map FanDuel line match to canonical match.",
+            )
+            counts["unparsed_rows"] += 1
+            continue
+        markets = match_payload.get("markets") or {}
+        for row in markets.get("moneyline") or []:
+            counts["source_rows"] += 1
+            player = row.get("player")
+            add_snapshot(match_id, resolver.player_id_for_match(match_id, source_name, player) if player else None, "moneyline", str(player or "Unknown selection"), None, row.get("odds"))
+        for row in markets.get("gameHandicap") or []:
+            counts["source_rows"] += 1
+            player = row.get("player")
+            add_snapshot(match_id, resolver.player_id_for_match(match_id, source_name, player) if player else None, "game_spread", str(player or "Unknown selection"), to_float(row.get("spread")), row.get("odds"))
+        for row in markets.get("totalGames") or []:
+            counts["source_rows"] += 1
+            add_snapshot(match_id, None, "match_total_games", str(row.get("side") or "Unknown selection"), to_float(row.get("line")), row.get("odds"))
+        for row in markets.get("firstSetTotalGames") or []:
+            counts["source_rows"] += 1
+            add_snapshot(match_id, None, "first_set_total_games", str(row.get("side") or "Unknown selection"), to_float(row.get("line")), row.get("odds"))
+        for row in markets.get("winAtLeastOneSet") or []:
+            counts["source_rows"] += 1
+            player = row.get("player") or str(row.get("market") or "").replace(" to win at least one set", "")
+            add_snapshot(match_id, resolver.player_id_for_match(match_id, source_name, player) if player else None, "set_win", str(row.get("market") or player or "Unknown selection"), None, row.get("odds"))
+    counts["parsed_snapshots"] = len(snapshots)
+    return snapshots, counts
 
 
 def parse_market_rows(
@@ -381,7 +607,7 @@ def insert_ticks(con: sqlite3.Connection, rows: list[ParsedTick]) -> int:
               tick_id, contract_id, match_id, player_id, source_name, captured_at,
               bid_cents, ask_cents, last_cents, open_cents, high_cents,
               low_cents, close_cents, volume, open_interest, raw_source_snapshot_id
-            ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, null)
+            ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             on conflict(tick_id) do update set
               bid_cents = excluded.bid_cents,
               ask_cents = excluded.ask_cents,
@@ -391,7 +617,8 @@ def insert_ticks(con: sqlite3.Connection, rows: list[ParsedTick]) -> int:
               low_cents = excluded.low_cents,
               close_cents = excluded.close_cents,
               volume = excluded.volume,
-              open_interest = excluded.open_interest
+              open_interest = excluded.open_interest,
+              raw_source_snapshot_id = excluded.raw_source_snapshot_id
             """,
             (
                 row.tick_id,
@@ -409,6 +636,7 @@ def insert_ticks(con: sqlite3.Connection, rows: list[ParsedTick]) -> int:
                 row.close_cents,
                 row.volume,
                 row.open_interest,
+                row.source_snapshot_id,
             ),
         )
         count += 1
@@ -424,13 +652,16 @@ def insert_snapshots(con: sqlite3.Connection, rows: list[ParsedMarketSnapshot]) 
               market_snapshot_id, match_id, player_id, source_name, market_type,
               selection, line_value, odds_american, price_cents, implied_probability,
               captured_at, raw_source_snapshot_id
-            ) values (?, ?, ?, ?, ?, ?, null, null, ?, ?, ?, null)
+            ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             on conflict(market_snapshot_id) do update set
               match_id = excluded.match_id,
               player_id = excluded.player_id,
+              line_value = excluded.line_value,
+              odds_american = excluded.odds_american,
               price_cents = excluded.price_cents,
               implied_probability = excluded.implied_probability,
-              captured_at = excluded.captured_at
+              captured_at = excluded.captured_at,
+              raw_source_snapshot_id = excluded.raw_source_snapshot_id
             """,
             (
                 row.snapshot_id,
@@ -439,9 +670,12 @@ def insert_snapshots(con: sqlite3.Connection, rows: list[ParsedMarketSnapshot]) 
                 row.source_name,
                 row.market_type,
                 row.selection,
+                row.line_value,
+                row.odds_american,
                 row.price_cents,
                 row.implied_probability,
                 row.captured_at,
+                row.source_snapshot_id,
             ),
         )
         count += 1
@@ -473,4 +707,3 @@ def normalize_markets(con: sqlite3.Connection, date: str | None = None, dry_run:
     if dry_run:
         con.rollback()
     return report
-
