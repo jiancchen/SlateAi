@@ -1,0 +1,19 @@
+{
+  "date": null,
+  "dry_run": true,
+  "family": "tennis_replay",
+  "generated_at": "2026-06-02T07:45:20.055713+00:00",
+  "inserted_replay_games": 0,
+  "inserted_replay_points": 0,
+  "ok": true,
+  "parsed_games": 7174,
+  "parsed_points": 38959,
+  "parser_module": "pipeline/sources/tennis/normalization/replay.py",
+  "script": "data-migration/scripts/normalize_tennis_replay.py",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "source_game_rows": 7174,
+  "source_point_rows": 38959,
+  "unparsed_games": 0,
+  "unparsed_points": 0,
+  "unresolved_rows_added": 0
+}

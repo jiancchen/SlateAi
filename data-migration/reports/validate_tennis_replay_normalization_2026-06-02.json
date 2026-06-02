@@ -1,0 +1,20 @@
+{
+  "break_point_rows": 25,
+  "date": null,
+  "deuce_rows": 6778,
+  "duplicate_games": 0,
+  "duplicate_points": 0,
+  "errors": [],
+  "generated_at": "2026-06-02T07:46:27.257500+00:00",
+  "ok": true,
+  "orphan_games": 0,
+  "orphan_points": 0,
+  "parser_module": "pipeline/sources/tennis/normalization/replay.py",
+  "replay_games": 7174,
+  "replay_points": 38959,
+  "script": "data-migration/scripts/validate_tennis_replay_normalization.py",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "source_game_rows": 7174,
+  "source_point_rows": 38959,
+  "unresolved_replay_entities": 0
+}
