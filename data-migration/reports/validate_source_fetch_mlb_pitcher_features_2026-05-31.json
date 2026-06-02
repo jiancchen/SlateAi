@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-06-02T22:08:36.562Z",
+  "script": "data-migration/scripts/validate_source_fetch_contract.mjs",
+  "result": {
+    "sport": "mlb",
+    "source_name": "mlb_pitcher_features",
+    "source_date": "2026-05-31",
+    "db_path": "data-private/warehouse/sports/mlb/sql-mlb.db",
+    "policy": {
+      "source_fetch_policy_id": "mlb:mlb_pitcher_features",
+      "sport": "mlb",
+      "source_name": "mlb_pitcher_features",
+      "source_family": "pitcher-features",
+      "run_rule": "fetch_if_stale",
+      "default_ttl_hours": 12,
+      "max_stale_hours": 48,
+      "required_for_prediction": 1,
+      "env_ttl_key": "MLB_MLB_PITCHER_FEATURES_TTL_HOURS",
+      "env_force_key": "MLB_MLB_PITCHER_FEATURES_FORCE_FETCH",
+      "env_disable_key": "MLB_MLB_PITCHER_FEATURES_DISABLE_FETCH",
+      "config_path": "data-migration/post_migration_ingestion_rewrite_run_plan.md",
+      "created_at": "2026-06-02T21:28:10.183Z",
+      "updated_at": "2026-06-02T21:28:10.183Z",
+      "notes": "Starter pitcher feature source for prediction, value, and prop lanes."
+    },
+    "status": {
+      "source_fetch_status_id": "mlb:mlb_pitcher_features:2026-05-31",
+      "sport": "mlb",
+      "source_name": "mlb_pitcher_features",
+      "source_family": "pitcher-features",
+      "source_date": "2026-05-31",
+      "last_fetch_run_id": "source-fetch-mlb_pitcher_features-2026-05-31-2026-06-02T22-08-26-184835+00-00",
+      "last_attempt_at": "2026-06-02T22:08:26.184835+00:00",
+      "last_success_at": "2026-06-02T22:08:26.184835+00:00",
+      "last_status": "success",
+      "last_completeness_status": "complete",
+      "cache_valid_until": "2026-06-03T10:08:26.184835+00:00",
+      "expected_item_count": null,
+      "actual_item_count": 2661,
+      "missing_item_count": null,
+      "unresolved_count": 0,
+      "updated_at": "2026-06-02T22:08:26.184835+00:00",
+      "notes": "{\"adapter\":\"mlb_feature_source_status_refresh\",\"minimum_actual\":1,\"report_path\":\"data-migration/reports/refresh_mlb_feature_source_status_2026-05-31.json\",\"table_counts\":{\"pitcher_first_inning_profiles\":58,\"pitcher_mistake_shape_snapshots\":58,\"pitcher_pitch_mix_snapshots\":2458,\"starter_leash_profiles\":0,\"starter_third_time_penalty_profiles\":0,\"starting_pitcher_form_snapshots\":87}}"
+    },
+    "run_counts": [
+      {
+        "status": "success",
+        "row_count": 1
+      }
+    ],
+    "stale": false,
+    "ok": true,
+    "errors": []
+  },
+  "ok": true
+}
