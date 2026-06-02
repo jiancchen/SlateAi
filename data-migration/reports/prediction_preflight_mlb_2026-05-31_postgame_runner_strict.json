@@ -1,0 +1,84 @@
+{
+  "generated_at": "2026-06-02T22:29:24.617Z",
+  "script": "data-migration/scripts/prediction_preflight.mjs",
+  "sport": "mlb",
+  "source_date": "2026-05-31",
+  "lane": "postgame",
+  "degraded": false,
+  "db_path": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "required_sources_checked": 3,
+  "passed_sources": 3,
+  "stale_sources": [],
+  "warnings": [],
+  "blocking_errors": [],
+  "sources": [
+    {
+      "source_name": "mlb_game_feed",
+      "source_family": "game-feed",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-05-31",
+        "last_status": "success",
+        "last_completeness_status": "complete",
+        "last_success_at": "2026-06-02T21:38:46.624001+00:00",
+        "cache_valid_until": "2026-06-03T03:38:46.624001+00:00",
+        "expected_item_count": 15,
+        "actual_item_count": 15,
+        "missing_item_count": 0,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"mlb_schedule_game_feed_raw_to_typed\",\"dry_run\":false,\"feed_file_count\":15,\"missing_schedule_games\":0,\"report_path\":\"data-migration/reports/ingest_mlb_schedule_game_feed_raw_to_typed_2026-05-31_rerun_after_health_patch.json\"}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    {
+      "source_name": "mlb_model_artifacts",
+      "source_family": "model-artifacts",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-05-31",
+        "last_status": "success",
+        "last_completeness_status": "complete",
+        "last_success_at": "2026-06-02T22:25:23.954058+00:00",
+        "cache_valid_until": "2026-06-03T22:25:23.954058+00:00",
+        "expected_item_count": null,
+        "actual_item_count": 729,
+        "missing_item_count": null,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"mlb_model_source_status_refresh\",\"report_path\":\"data-migration/reports/refresh_mlb_model_source_status_2026-05-31.json\",\"table_counts\":{\"model_artifacts\":14,\"model_run_artifacts\":11,\"model_run_lanes\":18,\"model_runs\":17,\"prediction_rows\":603,\"prop_backtest_rows\":36,\"settlement_rows\":30}}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    {
+      "source_name": "mlb_schedule",
+      "source_family": "schedule",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-05-31",
+        "last_status": "success",
+        "last_completeness_status": "complete",
+        "last_success_at": "2026-06-02T21:38:46.623881+00:00",
+        "cache_valid_until": "2026-06-03T03:38:46.623881+00:00",
+        "expected_item_count": 15,
+        "actual_item_count": 15,
+        "missing_item_count": 0,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"mlb_schedule_game_feed_raw_to_typed\",\"dry_run\":false,\"report_path\":\"data-migration/reports/ingest_mlb_schedule_game_feed_raw_to_typed_2026-05-31_rerun_after_health_patch.json\",\"schedule_path\":\"data-private/raw/mlb/2026-05-31/schedule.json\"}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    }
+  ],
+  "ok": true,
+  "publish_allowed": true
+}
