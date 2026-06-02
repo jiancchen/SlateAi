@@ -219,6 +219,90 @@ create table source_snapshots (
 );
 ```
 
+### `source_fetch_policies`
+
+Stores run/cache rules per sport/source so ingestion can decide whether to fetch, skip cache, force refresh, or disable a source without burying that logic in scripts.
+
+```sql
+create table source_fetch_policies (
+  source_fetch_policy_id text primary key,
+  sport text not null,
+  source_name text not null,
+  source_family text,
+  run_rule text not null default 'fetch_if_stale',
+  default_ttl_hours real not null,
+  max_stale_hours real,
+  required_for_prediction integer not null default 1,
+  env_ttl_key text,
+  env_force_key text,
+  env_disable_key text,
+  config_path text,
+  created_at text not null,
+  updated_at text not null,
+  notes text,
+  unique (sport, source_name)
+);
+```
+
+### `source_fetch_runs`
+
+Append-only fetch attempt table. Every source fetch, failed fetch, missing-source event, partial fetch, disabled fetch, or skipped fresh-cache decision gets one row.
+
+```sql
+create table source_fetch_runs (
+  source_fetch_run_id text primary key,
+  sport text not null,
+  source_name text not null,
+  source_family text,
+  source_date text,
+  run_reason text not null,
+  requested_url text,
+  cache_status text not null,
+  cache_ttl_hours real,
+  previous_success_at text,
+  status text not null,
+  completeness_status text not null,
+  expected_item_count integer,
+  actual_item_count integer,
+  missing_item_count integer,
+  source_snapshot_id text,
+  started_at text not null,
+  finished_at text,
+  error_code text,
+  error_message text,
+  details_json text,
+  foreign key (source_snapshot_id) references source_snapshots(source_snapshot_id)
+);
+```
+
+### `source_fetch_status`
+
+Current source/date freshness and completeness rollup. Prediction preflight reads this table before publishing model/value-board outputs.
+
+```sql
+create table source_fetch_status (
+  source_fetch_status_id text primary key,
+  sport text not null,
+  source_name text not null,
+  source_family text,
+  source_date text,
+  last_fetch_run_id text,
+  last_attempt_at text,
+  last_success_at text,
+  last_status text not null,
+  last_completeness_status text not null,
+  cache_valid_until text,
+  expected_item_count integer,
+  actual_item_count integer,
+  missing_item_count integer,
+  unresolved_count integer,
+  updated_at text not null,
+  notes text,
+  unique (sport, source_name, source_date),
+  foreign key (last_fetch_run_id) references source_fetch_runs(source_fetch_run_id)
+);
+```
+
 ### `entity_aliases`
 
 Stores source-specific names and IDs for canonical entities. This keeps fuzzy matching auditable instead of hiding it in code.

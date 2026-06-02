@@ -261,7 +261,7 @@ function validateSport(sport, options) {
     result.schema_migration_count = Number(
       queryScalar(
         target.absoluteDbPath,
-        `select count(*) from schema_migrations where migration_id = 'phase1_base_schema_v1' and checksum = ${sqlString(checksum)};`,
+        `select count(*) from schema_migrations where checksum = ${sqlString(checksum)};`,
       ),
     );
   }
@@ -276,7 +276,7 @@ function validateSport(sport, options) {
 
   if (result.missing_tables.length > 0) result.errors.push(`Missing tables: ${result.missing_tables.join(', ')}`);
   if (result.missing_indexes.length > 0) result.errors.push(`Missing indexes: ${result.missing_indexes.join(', ')}`);
-  if (result.schema_migration_count < 1) result.errors.push('Missing matching phase1 schema_migrations row');
+  if (result.schema_migration_count < 1) result.errors.push('Missing matching current schema_migrations row');
   if (result.migration_run_count < 1) result.errors.push('Missing phase1 migration_runs row');
 
   if (options.phase === 'legacy-backfill') {

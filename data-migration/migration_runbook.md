@@ -404,6 +404,7 @@ Exit criteria:
 Purpose:
 
 - Change fetch/ingestion scripts to write through the new sport DBs.
+- Record fetch run rules, freshness, failure, and completeness status before prediction runs read source data.
 
 This is intentionally deferred until DB schema/backfill is stable.
 
@@ -413,11 +414,50 @@ Target ingestion flow:
 source fetch -> raw archive receipt -> sport SQLite DB -> optional DuckDB -> DB-derived export
 ```
 
+Fetch contract:
+
+- `source_fetch_policies` stores one source-level run rule per sport/source, including TTL, max stale window, required flag, and env override keys.
+- `source_fetch_runs` stores every fetch attempt, skipped fresh-cache decision, missing source event, partial fetch, or failed fetch.
+- `source_fetch_status` stores the current rollup by sport/source/date for prediction preflight and dashboard health.
+- `source_snapshots` remains the immutable receipt table for captured source payload hash/path/content metadata.
+
+Run rules:
+
+- Fetch if the source is stale, missing, forced by env/config, or required for an active changing state.
+- Skip and write `skipped_cache` if the source is fresh inside TTL.
+- Write `partial` when fetched data is usable but expected items are missing.
+- Write `failed` when a fetch attempt fails.
+- Write `missing` when no source payload exists for a required source/date.
+- Prediction publishing is blocked by required stale/failed/missing sources unless the run is explicitly marked degraded.
+
+Default cache policy:
+
+- MLB schedule/live/result payloads: 6 hours, max stale 24 hours.
+- MLB Stats API player/game payloads: 6 hours, max stale 24 hours.
+- Baseball Savant player split/profile context: 24 hours, max stale 72 hours.
+- MLB odds/markets: 1 hour, max stale 6 hours.
+- Tennis reference/stats/replay/ranking payloads: 12 hours, max stale 48 hours.
+- Tennis odds/markets: 1 hour, max stale 6 hours.
+
+TTL/env override shape:
+
+```text
+<SPORT>_<SOURCE_NAME>_TTL_HOURS
+<SPORT>_<SOURCE_NAME>_FORCE_FETCH
+<SPORT>_<SOURCE_NAME>_DISABLE_FETCH
+```
+
+Detailed plan:
+
+- `data-migration/post_migration_ingestion_rewrite_run_plan.md`
+
 Exit criteria:
 
 - MLB ingestion writes to `sql-mlb.db`.
 - Tennis ingestion writes to `sql-tennis.db`.
 - Source JSON is hashed and registered.
+- Each required source/date has a current `source_fetch_status` row.
+- Failed, incomplete, missing, and stale sources are visible before prediction publishing.
 - Prediction runs no longer scan raw JSON unless explicitly rebuilding.
 - Health checks verify date/source coverage.
 
