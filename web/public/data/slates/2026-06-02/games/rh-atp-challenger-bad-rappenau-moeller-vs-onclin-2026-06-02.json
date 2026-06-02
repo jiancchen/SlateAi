@@ -136,7 +136,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-bad-rappenau-moeller-vs-onclin-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:57",
+      "capturedAt": "2026-06-02 02:57:10",
       "surface": "Clay",
       "tournament": "ATP Challenger Bad Rappenau",
       "category": "Tennis",
@@ -162,9 +162,39 @@
               "servicePointsWonPct": 69.5,
               "returnPointsWonPct": 48.5,
               "breakPointsSavedPct": 75,
-              "breakPointsConvertedPct": 85.7,
+              "breakPointsConvertedPct": 80,
               "winners": 22.5,
-              "unforcedErrors": 21.5
+              "unforcedErrors": 21.5,
+              "breakPointsSaved": 3,
+              "breakPointsFaced": 4,
+              "breakPointsFacedPerMatch": 2,
+              "breakPointsConverted": 8,
+              "breakPointsToConvert": 10,
+              "breakPointChancesPerMatch": 5
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 3,
+                "bpFaced": 4,
+                "bpSavedPct": 75,
+                "bpFacedPerMatch": 2,
+                "bpConverted": 8,
+                "bpChances": 10,
+                "bpConvertedPct": 80,
+                "bpChancesPerMatch": 5
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 3,
+                "bpFaced": 4,
+                "bpSavedPct": 75,
+                "bpFacedPerMatch": 2,
+                "bpConverted": 8,
+                "bpChances": 10,
+                "bpConvertedPct": 80,
+                "bpChancesPerMatch": 5
+              }
             },
             "sourceUrl": null
           },
@@ -1963,10 +1993,40 @@
               "secondServeWonPct": 55,
               "servicePointsWonPct": 66.2,
               "returnPointsWonPct": 41,
-              "breakPointsSavedPct": 66.9,
-              "breakPointsConvertedPct": 30.8,
+              "breakPointsSavedPct": 61.5,
+              "breakPointsConvertedPct": 29.3,
               "winners": 23.2,
-              "unforcedErrors": 36.4
+              "unforcedErrors": 36.4,
+              "breakPointsSaved": 16,
+              "breakPointsFaced": 26,
+              "breakPointsFacedPerMatch": 5.2,
+              "breakPointsConverted": 17,
+              "breakPointsToConvert": 58,
+              "breakPointChancesPerMatch": 11.6
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 16,
+                "bpFaced": 26,
+                "bpSavedPct": 61.5,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 17,
+                "bpChances": 58,
+                "bpConvertedPct": 29.3,
+                "bpChancesPerMatch": 11.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 16,
+                "bpFaced": 26,
+                "bpSavedPct": 61.5,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 17,
+                "bpChances": 58,
+                "bpConvertedPct": 29.3,
+                "bpChancesPerMatch": 11.6
+              }
             },
             "sourceUrl": null
           },
@@ -5492,7 +5552,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 28,
+        "expectedStatRows": 40,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -5504,7 +5564,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-bad-rappenau-moeller-vs-onclin-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:57",
+      "capturedAt": "2026-06-02 02:57:10",
       "surface": "Clay",
       "tournament": "ATP Challenger Bad Rappenau",
       "category": "Tennis",
@@ -5530,9 +5590,39 @@
               "servicePointsWonPct": 69.5,
               "returnPointsWonPct": 48.5,
               "breakPointsSavedPct": 75,
-              "breakPointsConvertedPct": 85.7,
+              "breakPointsConvertedPct": 80,
               "winners": 22.5,
-              "unforcedErrors": 21.5
+              "unforcedErrors": 21.5,
+              "breakPointsSaved": 3,
+              "breakPointsFaced": 4,
+              "breakPointsFacedPerMatch": 2,
+              "breakPointsConverted": 8,
+              "breakPointsToConvert": 10,
+              "breakPointChancesPerMatch": 5
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 3,
+                "bpFaced": 4,
+                "bpSavedPct": 75,
+                "bpFacedPerMatch": 2,
+                "bpConverted": 8,
+                "bpChances": 10,
+                "bpConvertedPct": 80,
+                "bpChancesPerMatch": 5
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 3,
+                "bpFaced": 4,
+                "bpSavedPct": 75,
+                "bpFacedPerMatch": 2,
+                "bpConverted": 8,
+                "bpChances": 10,
+                "bpConvertedPct": 80,
+                "bpChancesPerMatch": 5
+              }
             },
             "sourceUrl": null
           },
@@ -7331,10 +7421,40 @@
               "secondServeWonPct": 55,
               "servicePointsWonPct": 66.2,
               "returnPointsWonPct": 41,
-              "breakPointsSavedPct": 66.9,
-              "breakPointsConvertedPct": 30.8,
+              "breakPointsSavedPct": 61.5,
+              "breakPointsConvertedPct": 29.3,
               "winners": 23.2,
-              "unforcedErrors": 36.4
+              "unforcedErrors": 36.4,
+              "breakPointsSaved": 16,
+              "breakPointsFaced": 26,
+              "breakPointsFacedPerMatch": 5.2,
+              "breakPointsConverted": 17,
+              "breakPointsToConvert": 58,
+              "breakPointChancesPerMatch": 11.6
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 16,
+                "bpFaced": 26,
+                "bpSavedPct": 61.5,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 17,
+                "bpChances": 58,
+                "bpConvertedPct": 29.3,
+                "bpChancesPerMatch": 11.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 16,
+                "bpFaced": 26,
+                "bpSavedPct": 61.5,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 17,
+                "bpChances": 58,
+                "bpConvertedPct": 29.3,
+                "bpChancesPerMatch": 11.6
+              }
             },
             "sourceUrl": null
           },
@@ -10860,7 +10980,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 28,
+        "expectedStatRows": 40,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -10923,9 +11043,39 @@
               "servicePointsWonPct": 69.5,
               "returnPointsWonPct": 48.5,
               "breakPointsSavedPct": 75,
-              "breakPointsConvertedPct": 85.7,
+              "breakPointsConvertedPct": 80,
               "winners": 22.5,
-              "unforcedErrors": 21.5
+              "unforcedErrors": 21.5,
+              "breakPointsSaved": 3,
+              "breakPointsFaced": 4,
+              "breakPointsFacedPerMatch": 2,
+              "breakPointsConverted": 8,
+              "breakPointsToConvert": 10,
+              "breakPointChancesPerMatch": 5
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 3,
+                "bpFaced": 4,
+                "bpSavedPct": 75,
+                "bpFacedPerMatch": 2,
+                "bpConverted": 8,
+                "bpChances": 10,
+                "bpConvertedPct": 80,
+                "bpChancesPerMatch": 5
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 3,
+                "bpFaced": 4,
+                "bpSavedPct": 75,
+                "bpFacedPerMatch": 2,
+                "bpConverted": 8,
+                "bpChances": 10,
+                "bpConvertedPct": 80,
+                "bpChancesPerMatch": 5
+              }
             },
             "sourceUrl": null
           },
@@ -12763,10 +12913,40 @@
               "secondServeWonPct": 55,
               "servicePointsWonPct": 66.2,
               "returnPointsWonPct": 41,
-              "breakPointsSavedPct": 66.9,
-              "breakPointsConvertedPct": 30.8,
+              "breakPointsSavedPct": 61.5,
+              "breakPointsConvertedPct": 29.3,
               "winners": 23.2,
-              "unforcedErrors": 36.4
+              "unforcedErrors": 36.4,
+              "breakPointsSaved": 16,
+              "breakPointsFaced": 26,
+              "breakPointsFacedPerMatch": 5.2,
+              "breakPointsConverted": 17,
+              "breakPointsToConvert": 58,
+              "breakPointChancesPerMatch": 11.6
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 16,
+                "bpFaced": 26,
+                "bpSavedPct": 61.5,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 17,
+                "bpChances": 58,
+                "bpConvertedPct": 29.3,
+                "bpChancesPerMatch": 11.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 16,
+                "bpFaced": 26,
+                "bpSavedPct": 61.5,
+                "bpFacedPerMatch": 5.2,
+                "bpConverted": 17,
+                "bpChances": 58,
+                "bpConvertedPct": 29.3,
+                "bpChancesPerMatch": 11.6
+              }
             },
             "sourceUrl": null
           },

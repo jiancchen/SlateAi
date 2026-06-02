@@ -135,7 +135,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-prostejov-baez-vs-gueymard-wayenburg-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:58",
+      "capturedAt": "2026-06-02 02:57:11",
       "surface": "Clay",
       "tournament": "ATP Challenger Prostejov",
       "category": "Tennis",
@@ -163,17 +163,54 @@
               "avgAces": 1.2,
               "doubleFaults": 3,
               "avgDoubleFaults": 3,
-              "breakPointsSavedPct": 55.2,
-              "breakPointsConvertedPct": 33.8,
-              "breakPointsSaved": 82,
-              "breakPointsFaced": 138,
-              "breakPointsConverted": 46,
-              "breakPointsToConvert": 109,
+              "breakPointsSavedPct": 60.3,
+              "breakPointsConvertedPct": 41.9,
+              "breakPointsSaved": 38,
+              "breakPointsFaced": 63,
+              "breakPointsConverted": 18,
+              "breakPointsToConvert": 43,
               "tiebreaksWonPct": 80,
               "servicePointsWonPct": 56.6,
               "returnPointsWonPct": 40.6,
               "winners": 23,
-              "unforcedErrors": 36.6
+              "unforcedErrors": 36.6,
+              "breakPointsFacedPerMatch": 12.6,
+              "breakPointChancesPerMatch": 8.6
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 19,
+                "bpSaved": 82,
+                "bpFaced": 138,
+                "bpSavedPct": 59.4,
+                "bpFacedPerMatch": 7.3,
+                "bpConverted": 46,
+                "bpChances": 109,
+                "bpConvertedPct": 42.2,
+                "bpChancesPerMatch": 5.7
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 38,
+                "bpFaced": 63,
+                "bpSavedPct": 60.3,
+                "bpFacedPerMatch": 12.6,
+                "bpConverted": 18,
+                "bpChances": 43,
+                "bpConvertedPct": 41.9,
+                "bpChancesPerMatch": 8.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 38,
+                "bpFaced": 63,
+                "bpSavedPct": 60.3,
+                "bpFacedPerMatch": 12.6,
+                "bpConverted": 18,
+                "bpChances": 43,
+                "bpConvertedPct": 41.9,
+                "bpChancesPerMatch": 8.6
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/baez-sebastian/221806#tab:statistics",
             "surface": "Clay"
@@ -3691,10 +3728,40 @@
               "secondServeWonPct": 56,
               "servicePointsWonPct": 63.8,
               "returnPointsWonPct": 33.8,
-              "breakPointsSavedPct": 44.9,
-              "breakPointsConvertedPct": 38.9,
+              "breakPointsSavedPct": 58.1,
+              "breakPointsConvertedPct": 34.8,
               "winners": 20,
-              "unforcedErrors": 36.6
+              "unforcedErrors": 36.6,
+              "breakPointsSaved": 18,
+              "breakPointsFaced": 31,
+              "breakPointsFacedPerMatch": 6.2,
+              "breakPointsConverted": 8,
+              "breakPointsToConvert": 23,
+              "breakPointChancesPerMatch": 4.6
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 31,
+                "bpSavedPct": 58.1,
+                "bpFacedPerMatch": 6.2,
+                "bpConverted": 8,
+                "bpChances": 23,
+                "bpConvertedPct": 34.8,
+                "bpChancesPerMatch": 4.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 31,
+                "bpSavedPct": 58.1,
+                "bpFacedPerMatch": 6.2,
+                "bpConverted": 8,
+                "bpChances": 23,
+                "bpConvertedPct": 34.8,
+                "bpChancesPerMatch": 4.6
+              }
             },
             "sourceUrl": null
           },
@@ -7270,7 +7337,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -7282,7 +7349,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-prostejov-baez-vs-gueymard-wayenburg-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:58",
+      "capturedAt": "2026-06-02 02:57:11",
       "surface": "Clay",
       "tournament": "ATP Challenger Prostejov",
       "category": "Tennis",
@@ -7310,17 +7377,54 @@
               "avgAces": 1.2,
               "doubleFaults": 3,
               "avgDoubleFaults": 3,
-              "breakPointsSavedPct": 55.2,
-              "breakPointsConvertedPct": 33.8,
-              "breakPointsSaved": 82,
-              "breakPointsFaced": 138,
-              "breakPointsConverted": 46,
-              "breakPointsToConvert": 109,
+              "breakPointsSavedPct": 60.3,
+              "breakPointsConvertedPct": 41.9,
+              "breakPointsSaved": 38,
+              "breakPointsFaced": 63,
+              "breakPointsConverted": 18,
+              "breakPointsToConvert": 43,
               "tiebreaksWonPct": 80,
               "servicePointsWonPct": 56.6,
               "returnPointsWonPct": 40.6,
               "winners": 23,
-              "unforcedErrors": 36.6
+              "unforcedErrors": 36.6,
+              "breakPointsFacedPerMatch": 12.6,
+              "breakPointChancesPerMatch": 8.6
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 19,
+                "bpSaved": 82,
+                "bpFaced": 138,
+                "bpSavedPct": 59.4,
+                "bpFacedPerMatch": 7.3,
+                "bpConverted": 46,
+                "bpChances": 109,
+                "bpConvertedPct": 42.2,
+                "bpChancesPerMatch": 5.7
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 38,
+                "bpFaced": 63,
+                "bpSavedPct": 60.3,
+                "bpFacedPerMatch": 12.6,
+                "bpConverted": 18,
+                "bpChances": 43,
+                "bpConvertedPct": 41.9,
+                "bpChancesPerMatch": 8.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 38,
+                "bpFaced": 63,
+                "bpSavedPct": 60.3,
+                "bpFacedPerMatch": 12.6,
+                "bpConverted": 18,
+                "bpChances": 43,
+                "bpConvertedPct": 41.9,
+                "bpChancesPerMatch": 8.6
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/baez-sebastian/221806#tab:statistics",
             "surface": "Clay"
@@ -10838,10 +10942,40 @@
               "secondServeWonPct": 56,
               "servicePointsWonPct": 63.8,
               "returnPointsWonPct": 33.8,
-              "breakPointsSavedPct": 44.9,
-              "breakPointsConvertedPct": 38.9,
+              "breakPointsSavedPct": 58.1,
+              "breakPointsConvertedPct": 34.8,
               "winners": 20,
-              "unforcedErrors": 36.6
+              "unforcedErrors": 36.6,
+              "breakPointsSaved": 18,
+              "breakPointsFaced": 31,
+              "breakPointsFacedPerMatch": 6.2,
+              "breakPointsConverted": 8,
+              "breakPointsToConvert": 23,
+              "breakPointChancesPerMatch": 4.6
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 31,
+                "bpSavedPct": 58.1,
+                "bpFacedPerMatch": 6.2,
+                "bpConverted": 8,
+                "bpChances": 23,
+                "bpConvertedPct": 34.8,
+                "bpChancesPerMatch": 4.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 31,
+                "bpSavedPct": 58.1,
+                "bpFacedPerMatch": 6.2,
+                "bpConverted": 8,
+                "bpChances": 23,
+                "bpConvertedPct": 34.8,
+                "bpChancesPerMatch": 4.6
+              }
             },
             "sourceUrl": null
           },
@@ -14417,7 +14551,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -14482,17 +14616,54 @@
               "avgAces": 1.2,
               "doubleFaults": 3,
               "avgDoubleFaults": 3,
-              "breakPointsSavedPct": 55.2,
-              "breakPointsConvertedPct": 33.8,
-              "breakPointsSaved": 82,
-              "breakPointsFaced": 138,
-              "breakPointsConverted": 46,
-              "breakPointsToConvert": 109,
+              "breakPointsSavedPct": 60.3,
+              "breakPointsConvertedPct": 41.9,
+              "breakPointsSaved": 38,
+              "breakPointsFaced": 63,
+              "breakPointsConverted": 18,
+              "breakPointsToConvert": 43,
               "tiebreaksWonPct": 80,
               "servicePointsWonPct": 56.6,
               "returnPointsWonPct": 40.6,
               "winners": 23,
-              "unforcedErrors": 36.6
+              "unforcedErrors": 36.6,
+              "breakPointsFacedPerMatch": 12.6,
+              "breakPointChancesPerMatch": 8.6
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 19,
+                "bpSaved": 82,
+                "bpFaced": 138,
+                "bpSavedPct": 59.4,
+                "bpFacedPerMatch": 7.3,
+                "bpConverted": 46,
+                "bpChances": 109,
+                "bpConvertedPct": 42.2,
+                "bpChancesPerMatch": 5.7
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 38,
+                "bpFaced": 63,
+                "bpSavedPct": 60.3,
+                "bpFacedPerMatch": 12.6,
+                "bpConverted": 18,
+                "bpChances": 43,
+                "bpConvertedPct": 41.9,
+                "bpChancesPerMatch": 8.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 38,
+                "bpFaced": 63,
+                "bpSavedPct": 60.3,
+                "bpFacedPerMatch": 12.6,
+                "bpConverted": 18,
+                "bpChances": 43,
+                "bpConvertedPct": 41.9,
+                "bpChancesPerMatch": 8.6
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/baez-sebastian/221806#tab:statistics",
             "surface": "Clay"
@@ -18048,10 +18219,40 @@
               "secondServeWonPct": 56,
               "servicePointsWonPct": 63.8,
               "returnPointsWonPct": 33.8,
-              "breakPointsSavedPct": 44.9,
-              "breakPointsConvertedPct": 38.9,
+              "breakPointsSavedPct": 58.1,
+              "breakPointsConvertedPct": 34.8,
               "winners": 20,
-              "unforcedErrors": 36.6
+              "unforcedErrors": 36.6,
+              "breakPointsSaved": 18,
+              "breakPointsFaced": 31,
+              "breakPointsFacedPerMatch": 6.2,
+              "breakPointsConverted": 8,
+              "breakPointsToConvert": 23,
+              "breakPointChancesPerMatch": 4.6
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 31,
+                "bpSavedPct": 58.1,
+                "bpFacedPerMatch": 6.2,
+                "bpConverted": 8,
+                "bpChances": 23,
+                "bpConvertedPct": 34.8,
+                "bpChancesPerMatch": 4.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 31,
+                "bpSavedPct": 58.1,
+                "bpFacedPerMatch": 6.2,
+                "bpConverted": 8,
+                "bpChances": 23,
+                "bpConvertedPct": 34.8,
+                "bpChancesPerMatch": 4.6
+              }
             },
             "sourceUrl": null
           },

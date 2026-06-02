@@ -71,6 +71,12 @@ const selectSlate = async () => {
 const selectPublicSlates = async (currentSlate) => {
   const manifest = await readJson(path.join(publishedRoot, 'slates', 'index.json'))
   const sorted = [...manifest].sort((left, right) => String(left.id).localeCompare(String(right.id)))
+  const windowOnly =
+    process.argv.includes('--current-window') ||
+    process.env.PUBLIC_SLATE_SCOPE === 'current-window'
+
+  if (!windowOnly) return sorted
+
   const explicitDates = [
     ...parseDateList(argValue('--include-dates')),
     ...parseDateList(process.env.PUBLIC_EXTRA_SLATE_DATES)
@@ -363,7 +369,7 @@ const main = async () => {
   )
 
   await writeJson(path.join(webPublicDataRoot, 'meta.json'), {
-    mode: 'current-day-static',
+    mode: 'all-slates-static',
     generatedAt: new Date().toISOString(),
     currentSlate: slate,
     slates: bundles.map((bundle) => bundle.slate),

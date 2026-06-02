@@ -137,7 +137,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-prostejov-sachko-vs-kumstat-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:58",
+      "capturedAt": "2026-06-02 02:57:11",
       "surface": "Clay",
       "tournament": "ATP Challenger Prostejov",
       "category": "Tennis",
@@ -162,10 +162,40 @@
               "secondServeWonPct": 47.6,
               "servicePointsWonPct": 55,
               "returnPointsWonPct": 38,
-              "breakPointsSavedPct": 53.2,
-              "breakPointsConvertedPct": 44.8,
+              "breakPointsSavedPct": 55.2,
+              "breakPointsConvertedPct": 43.9,
               "winners": 23.6,
-              "unforcedErrors": 46.6
+              "unforcedErrors": 46.6,
+              "breakPointsSaved": 32,
+              "breakPointsFaced": 58,
+              "breakPointsFacedPerMatch": 11.6,
+              "breakPointsConverted": 18,
+              "breakPointsToConvert": 41,
+              "breakPointChancesPerMatch": 8.2
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 32,
+                "bpFaced": 58,
+                "bpSavedPct": 55.2,
+                "bpFacedPerMatch": 11.6,
+                "bpConverted": 18,
+                "bpChances": 41,
+                "bpConvertedPct": 43.9,
+                "bpChancesPerMatch": 8.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 32,
+                "bpFaced": 58,
+                "bpSavedPct": 55.2,
+                "bpFacedPerMatch": 11.6,
+                "bpConverted": 18,
+                "bpChances": 41,
+                "bpConvertedPct": 43.9,
+                "bpChancesPerMatch": 8.2
+              }
             },
             "sourceUrl": null
           },
@@ -3782,10 +3812,40 @@
               "secondServeWonPct": 59,
               "servicePointsWonPct": 74,
               "returnPointsWonPct": 39,
-              "breakPointsSavedPct": 83.3,
-              "breakPointsConvertedPct": 36.5,
+              "breakPointsSavedPct": 85.7,
+              "breakPointsConvertedPct": 35.3,
               "winners": 33.5,
-              "unforcedErrors": 29.5
+              "unforcedErrors": 29.5,
+              "breakPointsSaved": 6,
+              "breakPointsFaced": 7,
+              "breakPointsFacedPerMatch": 3.5,
+              "breakPointsConverted": 6,
+              "breakPointsToConvert": 17,
+              "breakPointChancesPerMatch": 8.5
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 6,
+                "bpFaced": 7,
+                "bpSavedPct": 85.7,
+                "bpFacedPerMatch": 3.5,
+                "bpConverted": 6,
+                "bpChances": 17,
+                "bpConvertedPct": 35.3,
+                "bpChancesPerMatch": 8.5
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 6,
+                "bpFaced": 7,
+                "bpSavedPct": 85.7,
+                "bpFacedPerMatch": 3.5,
+                "bpConverted": 6,
+                "bpChances": 17,
+                "bpConvertedPct": 35.3,
+                "bpChancesPerMatch": 8.5
+              }
             },
             "sourceUrl": null
           },
@@ -5618,7 +5678,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 28,
+        "expectedStatRows": 40,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -5630,7 +5690,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-prostejov-sachko-vs-kumstat-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:58",
+      "capturedAt": "2026-06-02 02:57:11",
       "surface": "Clay",
       "tournament": "ATP Challenger Prostejov",
       "category": "Tennis",
@@ -5655,10 +5715,40 @@
               "secondServeWonPct": 47.6,
               "servicePointsWonPct": 55,
               "returnPointsWonPct": 38,
-              "breakPointsSavedPct": 53.2,
-              "breakPointsConvertedPct": 44.8,
+              "breakPointsSavedPct": 55.2,
+              "breakPointsConvertedPct": 43.9,
               "winners": 23.6,
-              "unforcedErrors": 46.6
+              "unforcedErrors": 46.6,
+              "breakPointsSaved": 32,
+              "breakPointsFaced": 58,
+              "breakPointsFacedPerMatch": 11.6,
+              "breakPointsConverted": 18,
+              "breakPointsToConvert": 41,
+              "breakPointChancesPerMatch": 8.2
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 32,
+                "bpFaced": 58,
+                "bpSavedPct": 55.2,
+                "bpFacedPerMatch": 11.6,
+                "bpConverted": 18,
+                "bpChances": 41,
+                "bpConvertedPct": 43.9,
+                "bpChancesPerMatch": 8.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 32,
+                "bpFaced": 58,
+                "bpSavedPct": 55.2,
+                "bpFacedPerMatch": 11.6,
+                "bpConverted": 18,
+                "bpChances": 41,
+                "bpConvertedPct": 43.9,
+                "bpChancesPerMatch": 8.2
+              }
             },
             "sourceUrl": null
           },
@@ -9275,10 +9365,40 @@
               "secondServeWonPct": 59,
               "servicePointsWonPct": 74,
               "returnPointsWonPct": 39,
-              "breakPointsSavedPct": 83.3,
-              "breakPointsConvertedPct": 36.5,
+              "breakPointsSavedPct": 85.7,
+              "breakPointsConvertedPct": 35.3,
               "winners": 33.5,
-              "unforcedErrors": 29.5
+              "unforcedErrors": 29.5,
+              "breakPointsSaved": 6,
+              "breakPointsFaced": 7,
+              "breakPointsFacedPerMatch": 3.5,
+              "breakPointsConverted": 6,
+              "breakPointsToConvert": 17,
+              "breakPointChancesPerMatch": 8.5
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 6,
+                "bpFaced": 7,
+                "bpSavedPct": 85.7,
+                "bpFacedPerMatch": 3.5,
+                "bpConverted": 6,
+                "bpChances": 17,
+                "bpConvertedPct": 35.3,
+                "bpChancesPerMatch": 8.5
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 6,
+                "bpFaced": 7,
+                "bpSavedPct": 85.7,
+                "bpFacedPerMatch": 3.5,
+                "bpConverted": 6,
+                "bpChances": 17,
+                "bpConvertedPct": 35.3,
+                "bpChancesPerMatch": 8.5
+              }
             },
             "sourceUrl": null
           },
@@ -11111,7 +11231,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 28,
+        "expectedStatRows": 40,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -11174,10 +11294,40 @@
               "secondServeWonPct": 47.6,
               "servicePointsWonPct": 55,
               "returnPointsWonPct": 38,
-              "breakPointsSavedPct": 53.2,
-              "breakPointsConvertedPct": 44.8,
+              "breakPointsSavedPct": 55.2,
+              "breakPointsConvertedPct": 43.9,
               "winners": 23.6,
-              "unforcedErrors": 46.6
+              "unforcedErrors": 46.6,
+              "breakPointsSaved": 32,
+              "breakPointsFaced": 58,
+              "breakPointsFacedPerMatch": 11.6,
+              "breakPointsConverted": 18,
+              "breakPointsToConvert": 41,
+              "breakPointChancesPerMatch": 8.2
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 32,
+                "bpFaced": 58,
+                "bpSavedPct": 55.2,
+                "bpFacedPerMatch": 11.6,
+                "bpConverted": 18,
+                "bpChances": 41,
+                "bpConvertedPct": 43.9,
+                "bpChancesPerMatch": 8.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 32,
+                "bpFaced": 58,
+                "bpSavedPct": 55.2,
+                "bpFacedPerMatch": 11.6,
+                "bpConverted": 18,
+                "bpChances": 41,
+                "bpConvertedPct": 43.9,
+                "bpChancesPerMatch": 8.2
+              }
             },
             "sourceUrl": null
           },
@@ -14833,10 +14983,40 @@
               "secondServeWonPct": 59,
               "servicePointsWonPct": 74,
               "returnPointsWonPct": 39,
-              "breakPointsSavedPct": 83.3,
-              "breakPointsConvertedPct": 36.5,
+              "breakPointsSavedPct": 85.7,
+              "breakPointsConvertedPct": 35.3,
               "winners": 33.5,
-              "unforcedErrors": 29.5
+              "unforcedErrors": 29.5,
+              "breakPointsSaved": 6,
+              "breakPointsFaced": 7,
+              "breakPointsFacedPerMatch": 3.5,
+              "breakPointsConverted": 6,
+              "breakPointsToConvert": 17,
+              "breakPointChancesPerMatch": 8.5
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 6,
+                "bpFaced": 7,
+                "bpSavedPct": 85.7,
+                "bpFacedPerMatch": 3.5,
+                "bpConverted": 6,
+                "bpChances": 17,
+                "bpConvertedPct": 35.3,
+                "bpChancesPerMatch": 8.5
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 6,
+                "bpFaced": 7,
+                "bpSavedPct": 85.7,
+                "bpFacedPerMatch": 3.5,
+                "bpConverted": 6,
+                "bpChances": 17,
+                "bpConvertedPct": 35.3,
+                "bpChancesPerMatch": 8.5
+              }
             },
             "sourceUrl": null
           },

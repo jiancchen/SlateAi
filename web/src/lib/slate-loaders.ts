@@ -33,9 +33,28 @@ const loadPublicDataMeta = async () => {
   return publicDataMetaPromise
 }
 
+const tryLoadPublicDataMeta = async () => {
+  try {
+    return await loadPublicDataMeta()
+  } catch {
+    return null
+  }
+}
+
+const mergeManifestEntries = (entries: SlateManifestEntry[]) => {
+  const byId = new Map<string, SlateManifestEntry>()
+  for (const entry of entries) byId.set(entry.id, entry)
+  return [...byId.values()].sort((left, right) => left.id.localeCompare(right.id))
+}
+
 const publicDataMatchesDate = async (date: string) => {
   const meta = await loadPublicDataMeta()
   return meta.currentSlate?.id === date || Boolean(meta.slates?.some((slate) => slate.id === date))
+}
+
+const publicDataMatchesDateSafe = async (date: string) => {
+  const meta = await tryLoadPublicDataMeta()
+  return Boolean(meta?.currentSlate?.id === date || meta?.slates?.some((slate) => slate.id === date))
 }
 
 const publicSlateBasePath = (date: string) => `/data/slates/${date}`
@@ -186,20 +205,23 @@ export const loadSlateManifestData = async (): Promise<SlateManifestEntry[]> => 
     return meta.slates?.length ? meta.slates : meta.currentSlate ? [meta.currentSlate] : []
   }
 
+  const publicMeta = await tryLoadPublicDataMeta()
+  const publicManifest = publicMeta?.slates?.length ? publicMeta.slates : publicMeta?.currentSlate ? [publicMeta.currentSlate] : []
+
   const apiBase = getApiBaseUrl()
 
   if (apiBase) {
     try {
       const payload = await fetchJsonWithTimeout<{ slates: SlateManifestEntry[] }>(`${apiBase}/api/slates`)
       if (Array.isArray(payload.slates) && payload.slates.length) {
-        return payload.slates
+        return mergeManifestEntries([...fallbackSlateDayManifest, ...payload.slates, ...publicManifest])
       }
     } catch (error) {
       console.warn('Slate API unavailable, falling back to static manifest.', error)
     }
   }
 
-  return fallbackSlateDayManifest
+  return mergeManifestEntries([...fallbackSlateDayManifest, ...publicManifest])
 }
 
 export const loadSlateDayData = async (id: string): Promise<LoadedSlateDay> => {
@@ -208,6 +230,14 @@ export const loadSlateDayData = async (id: string): Promise<LoadedSlateDay> => {
       throw new Error(`Public slate is not available in static mode: ${id}`)
     }
     return fetchJsonWithTimeout<LoadedSlateDay>(`${publicSlateBasePath(id)}/summary.json`, 5000)
+  }
+
+  if (await publicDataMatchesDateSafe(id)) {
+    try {
+      return await fetchJsonWithTimeout<LoadedSlateDay>(`${publicSlateBasePath(id)}/summary.json`, 5000)
+    } catch (error) {
+      console.warn(`Public slate unavailable for ${id}; falling back to API/local loader.`, error)
+    }
   }
 
   const apiBase = getApiBaseUrl()
@@ -237,6 +267,14 @@ export const loadSlateGameDetailData = async (date: string, gameId: string): Pro
     }
   }
 
+  if (await publicDataMatchesDateSafe(date)) {
+    try {
+      return await fetchJsonWithTimeout<Record<string, unknown>>(`${publicSlateBasePath(date)}/games/${gameId}.json`, 5000)
+    } catch (error) {
+      console.warn(`Public game detail unavailable for ${date}/${gameId}; falling back to API/local loader.`, error)
+    }
+  }
+
   const apiBase = getApiBaseUrl()
 
   if (apiBase) {
@@ -260,7 +298,7 @@ export const loadSlateGameDetailData = async (date: string, gameId: string): Pro
 }
 
 export const searchSlateGamesData = async (query: string, limit = 80): Promise<Record<string, unknown>[]> => {
-  if (isPublicStaticMode()) {
+  const searchPublicSlates = async () => {
     const normalizedQuery = normalizeSearchText(query)
     if (!normalizedQuery) return []
     try {
@@ -281,6 +319,16 @@ export const searchSlateGamesData = async (query: string, limit = 80): Promise<R
       console.warn(`Public slate search unavailable for ${query}.`, error)
       return []
     }
+  }
+
+  if (isPublicStaticMode()) {
+    return searchPublicSlates()
+  }
+
+  const publicMeta = await tryLoadPublicDataMeta()
+  if (publicMeta?.slates?.length || publicMeta?.currentSlate) {
+    const publicResults = await searchPublicSlates()
+    if (publicResults.length) return publicResults
   }
 
   const apiBase = getApiBaseUrl()
@@ -310,6 +358,17 @@ export const loadMlbPropBoardData = async (date: string): Promise<Record<string,
     }
   }
 
+  if (await publicDataMatchesDateSafe(date)) {
+    const availability = await publicSlateAvailability(date)
+    if (availability.hasProps) {
+      try {
+        return await fetchJsonWithTimeout<Record<string, unknown>>(`${publicSlateBasePath(date)}/props.json`, 5000)
+      } catch (error) {
+        console.warn(`Public MLB props unavailable for ${date}; falling back to API.`, error)
+      }
+    }
+  }
+
   const apiBase = getApiBaseUrl()
 
   if (apiBase) {
@@ -333,6 +392,17 @@ export const loadMlbHomeRunBoardData = async (date: string): Promise<Record<stri
     } catch (error) {
       console.warn(`Public MLB home-run board unavailable for ${date}.`, error)
       return null
+    }
+  }
+
+  if (await publicDataMatchesDateSafe(date)) {
+    const availability = await publicSlateAvailability(date)
+    if (availability.hasHomeRuns) {
+      try {
+        return await fetchJsonWithTimeout<Record<string, unknown>>(`${publicSlateBasePath(date)}/home-runs.json`, 5000)
+      } catch (error) {
+        console.warn(`Public MLB home-run board unavailable for ${date}; falling back to API.`, error)
+      }
     }
   }
 

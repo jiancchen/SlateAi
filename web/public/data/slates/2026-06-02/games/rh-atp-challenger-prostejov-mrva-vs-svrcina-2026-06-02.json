@@ -132,7 +132,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-prostejov-mrva-vs-svrcina-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:58",
+      "capturedAt": "2026-06-02 02:57:11",
       "surface": "Clay",
       "tournament": "ATP Challenger Prostejov",
       "category": "Tennis",
@@ -157,10 +157,40 @@
               "secondServeWonPct": 52.8,
               "servicePointsWonPct": 56.6,
               "returnPointsWonPct": 41,
-              "breakPointsSavedPct": 40.2,
-              "breakPointsConvertedPct": 51.1,
+              "breakPointsSavedPct": 41.5,
+              "breakPointsConvertedPct": 44.4,
               "winners": 28.6,
-              "unforcedErrors": 50.2
+              "unforcedErrors": 50.2,
+              "breakPointsSaved": 17,
+              "breakPointsFaced": 41,
+              "breakPointsFacedPerMatch": 8.2,
+              "breakPointsConverted": 20,
+              "breakPointsToConvert": 45,
+              "breakPointChancesPerMatch": 9
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 41,
+                "bpSavedPct": 41.5,
+                "bpFacedPerMatch": 8.2,
+                "bpConverted": 20,
+                "bpChances": 45,
+                "bpConvertedPct": 44.4,
+                "bpChancesPerMatch": 9
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 41,
+                "bpSavedPct": 41.5,
+                "bpFacedPerMatch": 8.2,
+                "bpConverted": 20,
+                "bpChances": 45,
+                "bpConvertedPct": 44.4,
+                "bpChancesPerMatch": 9
+              }
             },
             "sourceUrl": null
           },
@@ -3680,17 +3710,54 @@
               "avgAces": 0.2,
               "doubleFaults": 3.6,
               "avgDoubleFaults": 3.6,
-              "breakPointsSavedPct": 61.4,
-              "breakPointsConvertedPct": 60.7,
-              "breakPointsSaved": 64,
-              "breakPointsFaced": 109,
-              "breakPointsConverted": 67,
-              "breakPointsToConvert": 131,
+              "breakPointsSavedPct": 51.4,
+              "breakPointsConvertedPct": 56.8,
+              "breakPointsSaved": 18,
+              "breakPointsFaced": 35,
+              "breakPointsConverted": 25,
+              "breakPointsToConvert": 44,
               "tiebreaksWonPct": 66.7,
               "servicePointsWonPct": 58,
               "returnPointsWonPct": 48,
               "winners": 17.8,
-              "unforcedErrors": 27.8
+              "unforcedErrors": 27.8,
+              "breakPointsFacedPerMatch": 7,
+              "breakPointChancesPerMatch": 8.8
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 16,
+                "bpSaved": 64,
+                "bpFaced": 109,
+                "bpSavedPct": 58.7,
+                "bpFacedPerMatch": 6.8,
+                "bpConverted": 67,
+                "bpChances": 131,
+                "bpConvertedPct": 51.1,
+                "bpChancesPerMatch": 8.2
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 35,
+                "bpSavedPct": 51.4,
+                "bpFacedPerMatch": 7,
+                "bpConverted": 25,
+                "bpChances": 44,
+                "bpConvertedPct": 56.8,
+                "bpChancesPerMatch": 8.8
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 35,
+                "bpSavedPct": 51.4,
+                "bpFacedPerMatch": 7,
+                "bpConverted": 25,
+                "bpChances": 44,
+                "bpConvertedPct": 56.8,
+                "bpChancesPerMatch": 8.8
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/svrcina-dalibor/260122#tab:statistics",
             "surface": "Clay"
@@ -7342,7 +7409,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -7354,7 +7421,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-prostejov-mrva-vs-svrcina-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:58",
+      "capturedAt": "2026-06-02 02:57:11",
       "surface": "Clay",
       "tournament": "ATP Challenger Prostejov",
       "category": "Tennis",
@@ -7379,10 +7446,40 @@
               "secondServeWonPct": 52.8,
               "servicePointsWonPct": 56.6,
               "returnPointsWonPct": 41,
-              "breakPointsSavedPct": 40.2,
-              "breakPointsConvertedPct": 51.1,
+              "breakPointsSavedPct": 41.5,
+              "breakPointsConvertedPct": 44.4,
               "winners": 28.6,
-              "unforcedErrors": 50.2
+              "unforcedErrors": 50.2,
+              "breakPointsSaved": 17,
+              "breakPointsFaced": 41,
+              "breakPointsFacedPerMatch": 8.2,
+              "breakPointsConverted": 20,
+              "breakPointsToConvert": 45,
+              "breakPointChancesPerMatch": 9
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 41,
+                "bpSavedPct": 41.5,
+                "bpFacedPerMatch": 8.2,
+                "bpConverted": 20,
+                "bpChances": 45,
+                "bpConvertedPct": 44.4,
+                "bpChancesPerMatch": 9
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 41,
+                "bpSavedPct": 41.5,
+                "bpFacedPerMatch": 8.2,
+                "bpConverted": 20,
+                "bpChances": 45,
+                "bpConvertedPct": 44.4,
+                "bpChancesPerMatch": 9
+              }
             },
             "sourceUrl": null
           },
@@ -10902,17 +10999,54 @@
               "avgAces": 0.2,
               "doubleFaults": 3.6,
               "avgDoubleFaults": 3.6,
-              "breakPointsSavedPct": 61.4,
-              "breakPointsConvertedPct": 60.7,
-              "breakPointsSaved": 64,
-              "breakPointsFaced": 109,
-              "breakPointsConverted": 67,
-              "breakPointsToConvert": 131,
+              "breakPointsSavedPct": 51.4,
+              "breakPointsConvertedPct": 56.8,
+              "breakPointsSaved": 18,
+              "breakPointsFaced": 35,
+              "breakPointsConverted": 25,
+              "breakPointsToConvert": 44,
               "tiebreaksWonPct": 66.7,
               "servicePointsWonPct": 58,
               "returnPointsWonPct": 48,
               "winners": 17.8,
-              "unforcedErrors": 27.8
+              "unforcedErrors": 27.8,
+              "breakPointsFacedPerMatch": 7,
+              "breakPointChancesPerMatch": 8.8
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 16,
+                "bpSaved": 64,
+                "bpFaced": 109,
+                "bpSavedPct": 58.7,
+                "bpFacedPerMatch": 6.8,
+                "bpConverted": 67,
+                "bpChances": 131,
+                "bpConvertedPct": 51.1,
+                "bpChancesPerMatch": 8.2
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 35,
+                "bpSavedPct": 51.4,
+                "bpFacedPerMatch": 7,
+                "bpConverted": 25,
+                "bpChances": 44,
+                "bpConvertedPct": 56.8,
+                "bpChancesPerMatch": 8.8
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 35,
+                "bpSavedPct": 51.4,
+                "bpFacedPerMatch": 7,
+                "bpConverted": 25,
+                "bpChances": 44,
+                "bpConvertedPct": 56.8,
+                "bpChancesPerMatch": 8.8
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/svrcina-dalibor/260122#tab:statistics",
             "surface": "Clay"
@@ -14564,7 +14698,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -14626,10 +14760,40 @@
               "secondServeWonPct": 52.8,
               "servicePointsWonPct": 56.6,
               "returnPointsWonPct": 41,
-              "breakPointsSavedPct": 40.2,
-              "breakPointsConvertedPct": 51.1,
+              "breakPointsSavedPct": 41.5,
+              "breakPointsConvertedPct": 44.4,
               "winners": 28.6,
-              "unforcedErrors": 50.2
+              "unforcedErrors": 50.2,
+              "breakPointsSaved": 17,
+              "breakPointsFaced": 41,
+              "breakPointsFacedPerMatch": 8.2,
+              "breakPointsConverted": 20,
+              "breakPointsToConvert": 45,
+              "breakPointChancesPerMatch": 9
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 41,
+                "bpSavedPct": 41.5,
+                "bpFacedPerMatch": 8.2,
+                "bpConverted": 20,
+                "bpChances": 45,
+                "bpConvertedPct": 44.4,
+                "bpChancesPerMatch": 9
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 41,
+                "bpSavedPct": 41.5,
+                "bpFacedPerMatch": 8.2,
+                "bpConverted": 20,
+                "bpChances": 45,
+                "bpConvertedPct": 44.4,
+                "bpChancesPerMatch": 9
+              }
             },
             "sourceUrl": null
           },
@@ -18184,17 +18348,54 @@
               "avgAces": 0.2,
               "doubleFaults": 3.6,
               "avgDoubleFaults": 3.6,
-              "breakPointsSavedPct": 61.4,
-              "breakPointsConvertedPct": 60.7,
-              "breakPointsSaved": 64,
-              "breakPointsFaced": 109,
-              "breakPointsConverted": 67,
-              "breakPointsToConvert": 131,
+              "breakPointsSavedPct": 51.4,
+              "breakPointsConvertedPct": 56.8,
+              "breakPointsSaved": 18,
+              "breakPointsFaced": 35,
+              "breakPointsConverted": 25,
+              "breakPointsToConvert": 44,
               "tiebreaksWonPct": 66.7,
               "servicePointsWonPct": 58,
               "returnPointsWonPct": 48,
               "winners": 17.8,
-              "unforcedErrors": 27.8
+              "unforcedErrors": 27.8,
+              "breakPointsFacedPerMatch": 7,
+              "breakPointChancesPerMatch": 8.8
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 16,
+                "bpSaved": 64,
+                "bpFaced": 109,
+                "bpSavedPct": 58.7,
+                "bpFacedPerMatch": 6.8,
+                "bpConverted": 67,
+                "bpChances": 131,
+                "bpConvertedPct": 51.1,
+                "bpChancesPerMatch": 8.2
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 35,
+                "bpSavedPct": 51.4,
+                "bpFacedPerMatch": 7,
+                "bpConverted": 25,
+                "bpChances": 44,
+                "bpConvertedPct": 56.8,
+                "bpChancesPerMatch": 8.8
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 35,
+                "bpSavedPct": 51.4,
+                "bpFacedPerMatch": 7,
+                "bpConverted": 25,
+                "bpChances": 44,
+                "bpConvertedPct": 56.8,
+                "bpChancesPerMatch": 8.8
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/svrcina-dalibor/260122#tab:statistics",
             "surface": "Clay"

@@ -132,7 +132,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:57",
+      "capturedAt": "2026-06-02 02:57:10",
       "surface": "Grass",
       "tournament": "ATP Challenger Birmingham",
       "category": "Tennis",
@@ -160,17 +160,54 @@
               "avgAces": 6.2,
               "doubleFaults": 3.8,
               "avgDoubleFaults": 3.8,
-              "breakPointsSavedPct": 72.9,
-              "breakPointsConvertedPct": 56,
-              "breakPointsSaved": 131,
-              "breakPointsFaced": 180,
-              "breakPointsConverted": 46,
-              "breakPointsToConvert": 135,
+              "breakPointsSavedPct": 71.4,
+              "breakPointsConvertedPct": 53.8,
+              "breakPointsSaved": 40,
+              "breakPointsFaced": 56,
+              "breakPointsConverted": 14,
+              "breakPointsToConvert": 26,
               "tiebreaksWonPct": 50,
               "servicePointsWonPct": 64.8,
               "returnPointsWonPct": 35.8,
               "winners": 29.6,
-              "unforcedErrors": 45.6
+              "unforcedErrors": 45.6,
+              "breakPointsFacedPerMatch": 11.2,
+              "breakPointChancesPerMatch": 5.2
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 27,
+                "bpSaved": 131,
+                "bpFaced": 180,
+                "bpSavedPct": 72.8,
+                "bpFacedPerMatch": 6.7,
+                "bpConverted": 46,
+                "bpChances": 135,
+                "bpConvertedPct": 34.1,
+                "bpChancesPerMatch": 5
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 40,
+                "bpFaced": 56,
+                "bpSavedPct": 71.4,
+                "bpFacedPerMatch": 11.2,
+                "bpConverted": 14,
+                "bpChances": 26,
+                "bpConvertedPct": 53.8,
+                "bpChancesPerMatch": 5.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 40,
+                "bpFaced": 56,
+                "bpSavedPct": 71.4,
+                "bpFacedPerMatch": 11.2,
+                "bpConverted": 14,
+                "bpChances": 26,
+                "bpConvertedPct": 53.8,
+                "bpChancesPerMatch": 5.2
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/duckworth-james/39711#tab:statistics",
             "surface": "All surfaces"
@@ -3788,10 +3825,40 @@
               "secondServeWonPct": 46.8,
               "servicePointsWonPct": 58.2,
               "returnPointsWonPct": 35.4,
-              "breakPointsSavedPct": 43.2,
-              "breakPointsConvertedPct": 32.9,
+              "breakPointsSavedPct": 44.7,
+              "breakPointsConvertedPct": 27.8,
               "winners": 20.2,
-              "unforcedErrors": 38
+              "unforcedErrors": 38,
+              "breakPointsSaved": 17,
+              "breakPointsFaced": 38,
+              "breakPointsFacedPerMatch": 7.6,
+              "breakPointsConverted": 10,
+              "breakPointsToConvert": 36,
+              "breakPointChancesPerMatch": 7.2
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 38,
+                "bpSavedPct": 44.7,
+                "bpFacedPerMatch": 7.6,
+                "bpConverted": 10,
+                "bpChances": 36,
+                "bpConvertedPct": 27.8,
+                "bpChancesPerMatch": 7.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 38,
+                "bpSavedPct": 44.7,
+                "bpFacedPerMatch": 7.6,
+                "bpConverted": 10,
+                "bpChances": 36,
+                "bpConvertedPct": 27.8,
+                "bpChancesPerMatch": 7.2
+              }
             },
             "sourceUrl": null
           },
@@ -7317,7 +7384,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -7329,7 +7396,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:57",
+      "capturedAt": "2026-06-02 02:57:10",
       "surface": "Grass",
       "tournament": "ATP Challenger Birmingham",
       "category": "Tennis",
@@ -7357,17 +7424,54 @@
               "avgAces": 6.2,
               "doubleFaults": 3.8,
               "avgDoubleFaults": 3.8,
-              "breakPointsSavedPct": 72.9,
-              "breakPointsConvertedPct": 56,
-              "breakPointsSaved": 131,
-              "breakPointsFaced": 180,
-              "breakPointsConverted": 46,
-              "breakPointsToConvert": 135,
+              "breakPointsSavedPct": 71.4,
+              "breakPointsConvertedPct": 53.8,
+              "breakPointsSaved": 40,
+              "breakPointsFaced": 56,
+              "breakPointsConverted": 14,
+              "breakPointsToConvert": 26,
               "tiebreaksWonPct": 50,
               "servicePointsWonPct": 64.8,
               "returnPointsWonPct": 35.8,
               "winners": 29.6,
-              "unforcedErrors": 45.6
+              "unforcedErrors": 45.6,
+              "breakPointsFacedPerMatch": 11.2,
+              "breakPointChancesPerMatch": 5.2
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 27,
+                "bpSaved": 131,
+                "bpFaced": 180,
+                "bpSavedPct": 72.8,
+                "bpFacedPerMatch": 6.7,
+                "bpConverted": 46,
+                "bpChances": 135,
+                "bpConvertedPct": 34.1,
+                "bpChancesPerMatch": 5
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 40,
+                "bpFaced": 56,
+                "bpSavedPct": 71.4,
+                "bpFacedPerMatch": 11.2,
+                "bpConverted": 14,
+                "bpChances": 26,
+                "bpConvertedPct": 53.8,
+                "bpChancesPerMatch": 5.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 40,
+                "bpFaced": 56,
+                "bpSavedPct": 71.4,
+                "bpFacedPerMatch": 11.2,
+                "bpConverted": 14,
+                "bpChances": 26,
+                "bpConvertedPct": 53.8,
+                "bpChancesPerMatch": 5.2
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/duckworth-james/39711#tab:statistics",
             "surface": "All surfaces"
@@ -10985,10 +11089,40 @@
               "secondServeWonPct": 46.8,
               "servicePointsWonPct": 58.2,
               "returnPointsWonPct": 35.4,
-              "breakPointsSavedPct": 43.2,
-              "breakPointsConvertedPct": 32.9,
+              "breakPointsSavedPct": 44.7,
+              "breakPointsConvertedPct": 27.8,
               "winners": 20.2,
-              "unforcedErrors": 38
+              "unforcedErrors": 38,
+              "breakPointsSaved": 17,
+              "breakPointsFaced": 38,
+              "breakPointsFacedPerMatch": 7.6,
+              "breakPointsConverted": 10,
+              "breakPointsToConvert": 36,
+              "breakPointChancesPerMatch": 7.2
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 38,
+                "bpSavedPct": 44.7,
+                "bpFacedPerMatch": 7.6,
+                "bpConverted": 10,
+                "bpChances": 36,
+                "bpConvertedPct": 27.8,
+                "bpChancesPerMatch": 7.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 38,
+                "bpSavedPct": 44.7,
+                "bpFacedPerMatch": 7.6,
+                "bpConverted": 10,
+                "bpChances": 36,
+                "bpConvertedPct": 27.8,
+                "bpChancesPerMatch": 7.2
+              }
             },
             "sourceUrl": null
           },
@@ -14514,7 +14648,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -14579,17 +14713,54 @@
               "avgAces": 6.2,
               "doubleFaults": 3.8,
               "avgDoubleFaults": 3.8,
-              "breakPointsSavedPct": 72.9,
-              "breakPointsConvertedPct": 56,
-              "breakPointsSaved": 131,
-              "breakPointsFaced": 180,
-              "breakPointsConverted": 46,
-              "breakPointsToConvert": 135,
+              "breakPointsSavedPct": 71.4,
+              "breakPointsConvertedPct": 53.8,
+              "breakPointsSaved": 40,
+              "breakPointsFaced": 56,
+              "breakPointsConverted": 14,
+              "breakPointsToConvert": 26,
               "tiebreaksWonPct": 50,
               "servicePointsWonPct": 64.8,
               "returnPointsWonPct": 35.8,
               "winners": 29.6,
-              "unforcedErrors": 45.6
+              "unforcedErrors": 45.6,
+              "breakPointsFacedPerMatch": 11.2,
+              "breakPointChancesPerMatch": 5.2
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 27,
+                "bpSaved": 131,
+                "bpFaced": 180,
+                "bpSavedPct": 72.8,
+                "bpFacedPerMatch": 6.7,
+                "bpConverted": 46,
+                "bpChances": 135,
+                "bpConvertedPct": 34.1,
+                "bpChancesPerMatch": 5
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 40,
+                "bpFaced": 56,
+                "bpSavedPct": 71.4,
+                "bpFacedPerMatch": 11.2,
+                "bpConverted": 14,
+                "bpChances": 26,
+                "bpConvertedPct": 53.8,
+                "bpChancesPerMatch": 5.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 40,
+                "bpFaced": 56,
+                "bpSavedPct": 71.4,
+                "bpFacedPerMatch": 11.2,
+                "bpConverted": 14,
+                "bpChances": 26,
+                "bpConvertedPct": 53.8,
+                "bpChancesPerMatch": 5.2
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/duckworth-james/39711#tab:statistics",
             "surface": "All surfaces"
@@ -18242,10 +18413,40 @@
               "secondServeWonPct": 46.8,
               "servicePointsWonPct": 58.2,
               "returnPointsWonPct": 35.4,
-              "breakPointsSavedPct": 43.2,
-              "breakPointsConvertedPct": 32.9,
+              "breakPointsSavedPct": 44.7,
+              "breakPointsConvertedPct": 27.8,
               "winners": 20.2,
-              "unforcedErrors": 38
+              "unforcedErrors": 38,
+              "breakPointsSaved": 17,
+              "breakPointsFaced": 38,
+              "breakPointsFacedPerMatch": 7.6,
+              "breakPointsConverted": 10,
+              "breakPointsToConvert": 36,
+              "breakPointChancesPerMatch": 7.2
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 38,
+                "bpSavedPct": 44.7,
+                "bpFacedPerMatch": 7.6,
+                "bpConverted": 10,
+                "bpChances": 36,
+                "bpConvertedPct": 27.8,
+                "bpChancesPerMatch": 7.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 38,
+                "bpSavedPct": 44.7,
+                "bpFacedPerMatch": 7.6,
+                "bpConverted": 10,
+                "bpChances": 36,
+                "bpConvertedPct": 27.8,
+                "bpChancesPerMatch": 7.2
+              }
             },
             "sourceUrl": null
           },

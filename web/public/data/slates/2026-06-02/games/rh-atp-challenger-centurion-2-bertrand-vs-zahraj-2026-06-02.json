@@ -139,7 +139,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-centurion-2-bertrand-vs-zahraj-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:57",
+      "capturedAt": "2026-06-02 02:57:10",
       "surface": "Hard",
       "tournament": "ATP Challenger Centurion 2",
       "category": "Tennis",
@@ -164,10 +164,40 @@
               "secondServeWonPct": 37.5,
               "servicePointsWonPct": 48.2,
               "returnPointsWonPct": 39.2,
-              "breakPointsSavedPct": 49.7,
-              "breakPointsConvertedPct": 37.5,
+              "breakPointsSavedPct": 50,
+              "breakPointsConvertedPct": 41.7,
               "winners": 17.8,
-              "unforcedErrors": 36
+              "unforcedErrors": 36,
+              "breakPointsSaved": 22,
+              "breakPointsFaced": 44,
+              "breakPointsFacedPerMatch": 11,
+              "breakPointsConverted": 10,
+              "breakPointsToConvert": 24,
+              "breakPointChancesPerMatch": 6
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 22,
+                "bpFaced": 44,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 11,
+                "bpConverted": 10,
+                "bpChances": 24,
+                "bpConvertedPct": 41.7,
+                "bpChancesPerMatch": 6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 22,
+                "bpFaced": 44,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 11,
+                "bpConverted": 10,
+                "bpChances": 24,
+                "bpConvertedPct": 41.7,
+                "bpChancesPerMatch": 6
+              }
             },
             "sourceUrl": null
           },
@@ -3181,7 +3211,37 @@
               "breakPointsSavedPct": 45.5,
               "breakPointsConvertedPct": 25,
               "winners": 27,
-              "unforcedErrors": 74
+              "unforcedErrors": 74,
+              "breakPointsSaved": 5,
+              "breakPointsFaced": 11,
+              "breakPointsFacedPerMatch": 11,
+              "breakPointsConverted": 4,
+              "breakPointsToConvert": 16,
+              "breakPointChancesPerMatch": 16
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 5,
+                "bpFaced": 11,
+                "bpSavedPct": 45.5,
+                "bpFacedPerMatch": 11,
+                "bpConverted": 4,
+                "bpChances": 16,
+                "bpConvertedPct": 25,
+                "bpChancesPerMatch": 16
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 5,
+                "bpFaced": 11,
+                "bpSavedPct": 45.5,
+                "bpFacedPerMatch": 11,
+                "bpConverted": 4,
+                "bpChances": 16,
+                "bpConvertedPct": 25,
+                "bpChancesPerMatch": 16
+              }
             },
             "sourceUrl": null
           },
@@ -4483,7 +4543,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 28,
+        "expectedStatRows": 40,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -4495,7 +4555,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-centurion-2-bertrand-vs-zahraj-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:57",
+      "capturedAt": "2026-06-02 02:57:10",
       "surface": "Hard",
       "tournament": "ATP Challenger Centurion 2",
       "category": "Tennis",
@@ -4520,10 +4580,40 @@
               "secondServeWonPct": 37.5,
               "servicePointsWonPct": 48.2,
               "returnPointsWonPct": 39.2,
-              "breakPointsSavedPct": 49.7,
-              "breakPointsConvertedPct": 37.5,
+              "breakPointsSavedPct": 50,
+              "breakPointsConvertedPct": 41.7,
               "winners": 17.8,
-              "unforcedErrors": 36
+              "unforcedErrors": 36,
+              "breakPointsSaved": 22,
+              "breakPointsFaced": 44,
+              "breakPointsFacedPerMatch": 11,
+              "breakPointsConverted": 10,
+              "breakPointsToConvert": 24,
+              "breakPointChancesPerMatch": 6
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 22,
+                "bpFaced": 44,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 11,
+                "bpConverted": 10,
+                "bpChances": 24,
+                "bpConvertedPct": 41.7,
+                "bpChancesPerMatch": 6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 22,
+                "bpFaced": 44,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 11,
+                "bpConverted": 10,
+                "bpChances": 24,
+                "bpConvertedPct": 41.7,
+                "bpChancesPerMatch": 6
+              }
             },
             "sourceUrl": null
           },
@@ -7537,7 +7627,37 @@
               "breakPointsSavedPct": 45.5,
               "breakPointsConvertedPct": 25,
               "winners": 27,
-              "unforcedErrors": 74
+              "unforcedErrors": 74,
+              "breakPointsSaved": 5,
+              "breakPointsFaced": 11,
+              "breakPointsFacedPerMatch": 11,
+              "breakPointsConverted": 4,
+              "breakPointsToConvert": 16,
+              "breakPointChancesPerMatch": 16
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 5,
+                "bpFaced": 11,
+                "bpSavedPct": 45.5,
+                "bpFacedPerMatch": 11,
+                "bpConverted": 4,
+                "bpChances": 16,
+                "bpConvertedPct": 25,
+                "bpChancesPerMatch": 16
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 5,
+                "bpFaced": 11,
+                "bpSavedPct": 45.5,
+                "bpFacedPerMatch": 11,
+                "bpConverted": 4,
+                "bpChances": 16,
+                "bpConvertedPct": 25,
+                "bpChancesPerMatch": 16
+              }
             },
             "sourceUrl": null
           },
@@ -8839,7 +8959,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 28,
+        "expectedStatRows": 40,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -8902,10 +9022,40 @@
               "secondServeWonPct": 37.5,
               "servicePointsWonPct": 48.2,
               "returnPointsWonPct": 39.2,
-              "breakPointsSavedPct": 49.7,
-              "breakPointsConvertedPct": 37.5,
+              "breakPointsSavedPct": 50,
+              "breakPointsConvertedPct": 41.7,
               "winners": 17.8,
-              "unforcedErrors": 36
+              "unforcedErrors": 36,
+              "breakPointsSaved": 22,
+              "breakPointsFaced": 44,
+              "breakPointsFacedPerMatch": 11,
+              "breakPointsConverted": 10,
+              "breakPointsToConvert": 24,
+              "breakPointChancesPerMatch": 6
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 22,
+                "bpFaced": 44,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 11,
+                "bpConverted": 10,
+                "bpChances": 24,
+                "bpConvertedPct": 41.7,
+                "bpChancesPerMatch": 6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 22,
+                "bpFaced": 44,
+                "bpSavedPct": 50,
+                "bpFacedPerMatch": 11,
+                "bpConverted": 10,
+                "bpChances": 24,
+                "bpConvertedPct": 41.7,
+                "bpChancesPerMatch": 6
+              }
             },
             "sourceUrl": null
           },
@@ -11960,7 +12110,37 @@
               "breakPointsSavedPct": 45.5,
               "breakPointsConvertedPct": 25,
               "winners": 27,
-              "unforcedErrors": 74
+              "unforcedErrors": 74,
+              "breakPointsSaved": 5,
+              "breakPointsFaced": 11,
+              "breakPointsFacedPerMatch": 11,
+              "breakPointsConverted": 4,
+              "breakPointsToConvert": 16,
+              "breakPointChancesPerMatch": 16
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 5,
+                "bpFaced": 11,
+                "bpSavedPct": 45.5,
+                "bpFacedPerMatch": 11,
+                "bpConverted": 4,
+                "bpChances": 16,
+                "bpConvertedPct": 25,
+                "bpChancesPerMatch": 16
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 5,
+                "bpFaced": 11,
+                "bpSavedPct": 45.5,
+                "bpFacedPerMatch": 11,
+                "bpConverted": 4,
+                "bpChances": 16,
+                "bpConvertedPct": 25,
+                "bpChancesPerMatch": 16
+              }
             },
             "sourceUrl": null
           },

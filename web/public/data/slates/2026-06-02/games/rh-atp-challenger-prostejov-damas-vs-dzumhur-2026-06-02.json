@@ -134,7 +134,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-prostejov-damas-vs-dzumhur-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:58",
+      "capturedAt": "2026-06-02 02:57:11",
       "surface": "Clay",
       "tournament": "ATP Challenger Prostejov",
       "category": "Tennis",
@@ -159,10 +159,40 @@
               "secondServeWonPct": 55.4,
               "servicePointsWonPct": 53.6,
               "returnPointsWonPct": 40.2,
-              "breakPointsSavedPct": 51.1,
-              "breakPointsConvertedPct": 47.4,
+              "breakPointsSavedPct": 52,
+              "breakPointsConvertedPct": 44.4,
               "winners": 17,
-              "unforcedErrors": 35
+              "unforcedErrors": 35,
+              "breakPointsSaved": 26,
+              "breakPointsFaced": 50,
+              "breakPointsFacedPerMatch": 10,
+              "breakPointsConverted": 16,
+              "breakPointsToConvert": 36,
+              "breakPointChancesPerMatch": 7.2
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 26,
+                "bpFaced": 50,
+                "bpSavedPct": 52,
+                "bpFacedPerMatch": 10,
+                "bpConverted": 16,
+                "bpChances": 36,
+                "bpConvertedPct": 44.4,
+                "bpChancesPerMatch": 7.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 26,
+                "bpFaced": 50,
+                "bpSavedPct": 52,
+                "bpFacedPerMatch": 10,
+                "bpConverted": 16,
+                "bpChances": 36,
+                "bpConvertedPct": 44.4,
+                "bpChancesPerMatch": 7.2
+              }
             },
             "sourceUrl": null
           },
@@ -3682,17 +3712,54 @@
               "avgAces": 1,
               "doubleFaults": 1.6,
               "avgDoubleFaults": 1.6,
-              "breakPointsSavedPct": 46,
-              "breakPointsConvertedPct": 37.6,
-              "breakPointsSaved": 69,
-              "breakPointsFaced": 127,
-              "breakPointsConverted": 45,
-              "breakPointsToConvert": 128,
+              "breakPointsSavedPct": 59.3,
+              "breakPointsConvertedPct": 35.6,
+              "breakPointsSaved": 32,
+              "breakPointsFaced": 54,
+              "breakPointsConverted": 21,
+              "breakPointsToConvert": 59,
               "tiebreaksWonPct": 55.6,
               "servicePointsWonPct": 59.6,
               "returnPointsWonPct": 43.6,
               "winners": 21.4,
-              "unforcedErrors": 30.4
+              "unforcedErrors": 30.4,
+              "breakPointsFacedPerMatch": 10.8,
+              "breakPointChancesPerMatch": 11.8
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 18,
+                "bpSaved": 69,
+                "bpFaced": 127,
+                "bpSavedPct": 54.3,
+                "bpFacedPerMatch": 7.1,
+                "bpConverted": 45,
+                "bpChances": 128,
+                "bpConvertedPct": 35.2,
+                "bpChancesPerMatch": 7.1
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 32,
+                "bpFaced": 54,
+                "bpSavedPct": 59.3,
+                "bpFacedPerMatch": 10.8,
+                "bpConverted": 21,
+                "bpChances": 59,
+                "bpConvertedPct": 35.6,
+                "bpChancesPerMatch": 11.8
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 32,
+                "bpFaced": 54,
+                "bpSavedPct": 59.3,
+                "bpFacedPerMatch": 10.8,
+                "bpConverted": 21,
+                "bpChances": 59,
+                "bpConvertedPct": 35.6,
+                "bpChancesPerMatch": 11.8
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/dzumhur-damir/49172#tab:statistics",
             "surface": "Clay"
@@ -7294,7 +7361,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -7306,7 +7373,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-prostejov-damas-vs-dzumhur-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:58",
+      "capturedAt": "2026-06-02 02:57:11",
       "surface": "Clay",
       "tournament": "ATP Challenger Prostejov",
       "category": "Tennis",
@@ -7331,10 +7398,40 @@
               "secondServeWonPct": 55.4,
               "servicePointsWonPct": 53.6,
               "returnPointsWonPct": 40.2,
-              "breakPointsSavedPct": 51.1,
-              "breakPointsConvertedPct": 47.4,
+              "breakPointsSavedPct": 52,
+              "breakPointsConvertedPct": 44.4,
               "winners": 17,
-              "unforcedErrors": 35
+              "unforcedErrors": 35,
+              "breakPointsSaved": 26,
+              "breakPointsFaced": 50,
+              "breakPointsFacedPerMatch": 10,
+              "breakPointsConverted": 16,
+              "breakPointsToConvert": 36,
+              "breakPointChancesPerMatch": 7.2
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 26,
+                "bpFaced": 50,
+                "bpSavedPct": 52,
+                "bpFacedPerMatch": 10,
+                "bpConverted": 16,
+                "bpChances": 36,
+                "bpConvertedPct": 44.4,
+                "bpChancesPerMatch": 7.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 26,
+                "bpFaced": 50,
+                "bpSavedPct": 52,
+                "bpFacedPerMatch": 10,
+                "bpConverted": 16,
+                "bpChances": 36,
+                "bpConvertedPct": 44.4,
+                "bpChancesPerMatch": 7.2
+              }
             },
             "sourceUrl": null
           },
@@ -10854,17 +10951,54 @@
               "avgAces": 1,
               "doubleFaults": 1.6,
               "avgDoubleFaults": 1.6,
-              "breakPointsSavedPct": 46,
-              "breakPointsConvertedPct": 37.6,
-              "breakPointsSaved": 69,
-              "breakPointsFaced": 127,
-              "breakPointsConverted": 45,
-              "breakPointsToConvert": 128,
+              "breakPointsSavedPct": 59.3,
+              "breakPointsConvertedPct": 35.6,
+              "breakPointsSaved": 32,
+              "breakPointsFaced": 54,
+              "breakPointsConverted": 21,
+              "breakPointsToConvert": 59,
               "tiebreaksWonPct": 55.6,
               "servicePointsWonPct": 59.6,
               "returnPointsWonPct": 43.6,
               "winners": 21.4,
-              "unforcedErrors": 30.4
+              "unforcedErrors": 30.4,
+              "breakPointsFacedPerMatch": 10.8,
+              "breakPointChancesPerMatch": 11.8
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 18,
+                "bpSaved": 69,
+                "bpFaced": 127,
+                "bpSavedPct": 54.3,
+                "bpFacedPerMatch": 7.1,
+                "bpConverted": 45,
+                "bpChances": 128,
+                "bpConvertedPct": 35.2,
+                "bpChancesPerMatch": 7.1
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 32,
+                "bpFaced": 54,
+                "bpSavedPct": 59.3,
+                "bpFacedPerMatch": 10.8,
+                "bpConverted": 21,
+                "bpChances": 59,
+                "bpConvertedPct": 35.6,
+                "bpChancesPerMatch": 11.8
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 32,
+                "bpFaced": 54,
+                "bpSavedPct": 59.3,
+                "bpFacedPerMatch": 10.8,
+                "bpConverted": 21,
+                "bpChances": 59,
+                "bpConvertedPct": 35.6,
+                "bpChancesPerMatch": 11.8
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/dzumhur-damir/49172#tab:statistics",
             "surface": "Clay"
@@ -14466,7 +14600,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -14530,10 +14664,40 @@
               "secondServeWonPct": 55.4,
               "servicePointsWonPct": 53.6,
               "returnPointsWonPct": 40.2,
-              "breakPointsSavedPct": 51.1,
-              "breakPointsConvertedPct": 47.4,
+              "breakPointsSavedPct": 52,
+              "breakPointsConvertedPct": 44.4,
               "winners": 17,
-              "unforcedErrors": 35
+              "unforcedErrors": 35,
+              "breakPointsSaved": 26,
+              "breakPointsFaced": 50,
+              "breakPointsFacedPerMatch": 10,
+              "breakPointsConverted": 16,
+              "breakPointsToConvert": 36,
+              "breakPointChancesPerMatch": 7.2
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 26,
+                "bpFaced": 50,
+                "bpSavedPct": 52,
+                "bpFacedPerMatch": 10,
+                "bpConverted": 16,
+                "bpChances": 36,
+                "bpConvertedPct": 44.4,
+                "bpChancesPerMatch": 7.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 26,
+                "bpFaced": 50,
+                "bpSavedPct": 52,
+                "bpFacedPerMatch": 10,
+                "bpConverted": 16,
+                "bpChances": 36,
+                "bpConvertedPct": 44.4,
+                "bpChancesPerMatch": 7.2
+              }
             },
             "sourceUrl": null
           },
@@ -18088,17 +18252,54 @@
               "avgAces": 1,
               "doubleFaults": 1.6,
               "avgDoubleFaults": 1.6,
-              "breakPointsSavedPct": 46,
-              "breakPointsConvertedPct": 37.6,
-              "breakPointsSaved": 69,
-              "breakPointsFaced": 127,
-              "breakPointsConverted": 45,
-              "breakPointsToConvert": 128,
+              "breakPointsSavedPct": 59.3,
+              "breakPointsConvertedPct": 35.6,
+              "breakPointsSaved": 32,
+              "breakPointsFaced": 54,
+              "breakPointsConverted": 21,
+              "breakPointsToConvert": 59,
               "tiebreaksWonPct": 55.6,
               "servicePointsWonPct": 59.6,
               "returnPointsWonPct": 43.6,
               "winners": 21.4,
-              "unforcedErrors": 30.4
+              "unforcedErrors": 30.4,
+              "breakPointsFacedPerMatch": 10.8,
+              "breakPointChancesPerMatch": 11.8
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 18,
+                "bpSaved": 69,
+                "bpFaced": 127,
+                "bpSavedPct": 54.3,
+                "bpFacedPerMatch": 7.1,
+                "bpConverted": 45,
+                "bpChances": 128,
+                "bpConvertedPct": 35.2,
+                "bpChancesPerMatch": 7.1
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 32,
+                "bpFaced": 54,
+                "bpSavedPct": 59.3,
+                "bpFacedPerMatch": 10.8,
+                "bpConverted": 21,
+                "bpChances": 59,
+                "bpConvertedPct": 35.6,
+                "bpChancesPerMatch": 11.8
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 32,
+                "bpFaced": 54,
+                "bpSavedPct": 59.3,
+                "bpFacedPerMatch": 10.8,
+                "bpConverted": 21,
+                "bpChances": 59,
+                "bpConvertedPct": 35.6,
+                "bpChancesPerMatch": 11.8
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/dzumhur-damir/49172#tab:statistics",
             "surface": "Clay"

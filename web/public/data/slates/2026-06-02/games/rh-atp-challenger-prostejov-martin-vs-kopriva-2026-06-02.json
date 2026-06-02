@@ -135,7 +135,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-prostejov-martin-vs-kopriva-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:58",
+      "capturedAt": "2026-06-02 02:57:11",
       "surface": "Clay",
       "tournament": "ATP Challenger Prostejov",
       "category": "Tennis",
@@ -163,17 +163,54 @@
               "avgAces": 3.6,
               "doubleFaults": 3.2,
               "avgDoubleFaults": 3.2,
-              "breakPointsSavedPct": 39.1,
-              "breakPointsConvertedPct": 29.1,
-              "breakPointsSaved": 88,
-              "breakPointsFaced": 144,
-              "breakPointsConverted": 62,
-              "breakPointsToConvert": 149,
+              "breakPointsSavedPct": 43.9,
+              "breakPointsConvertedPct": 40,
+              "breakPointsSaved": 18,
+              "breakPointsFaced": 41,
+              "breakPointsConverted": 20,
+              "breakPointsToConvert": 50,
               "tiebreaksWonPct": 20,
               "servicePointsWonPct": 60,
               "returnPointsWonPct": 39,
               "winners": 25.8,
-              "unforcedErrors": 36.6
+              "unforcedErrors": 36.6,
+              "breakPointsFacedPerMatch": 8.2,
+              "breakPointChancesPerMatch": 10
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 24,
+                "bpSaved": 88,
+                "bpFaced": 144,
+                "bpSavedPct": 61.1,
+                "bpFacedPerMatch": 6,
+                "bpConverted": 62,
+                "bpChances": 149,
+                "bpConvertedPct": 41.6,
+                "bpChancesPerMatch": 6.2
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 41,
+                "bpSavedPct": 43.9,
+                "bpFacedPerMatch": 8.2,
+                "bpConverted": 20,
+                "bpChances": 50,
+                "bpConvertedPct": 40,
+                "bpChancesPerMatch": 10
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 41,
+                "bpSavedPct": 43.9,
+                "bpFacedPerMatch": 8.2,
+                "bpConverted": 20,
+                "bpChances": 50,
+                "bpConvertedPct": 40,
+                "bpChancesPerMatch": 10
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/kopriva-vit/199395#tab:statistics",
             "surface": "Clay"
@@ -3666,10 +3703,40 @@
               "secondServeWonPct": 60.4,
               "servicePointsWonPct": 68.2,
               "returnPointsWonPct": 42.4,
-              "breakPointsSavedPct": 50,
-              "breakPointsConvertedPct": 31.8,
+              "breakPointsSavedPct": 57.1,
+              "breakPointsConvertedPct": 28.6,
               "winners": 17.8,
-              "unforcedErrors": 22.4
+              "unforcedErrors": 22.4,
+              "breakPointsSaved": 8,
+              "breakPointsFaced": 14,
+              "breakPointsFacedPerMatch": 2.8,
+              "breakPointsConverted": 14,
+              "breakPointsToConvert": 49,
+              "breakPointChancesPerMatch": 9.8
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 8,
+                "bpFaced": 14,
+                "bpSavedPct": 57.1,
+                "bpFacedPerMatch": 2.8,
+                "bpConverted": 14,
+                "bpChances": 49,
+                "bpConvertedPct": 28.6,
+                "bpChancesPerMatch": 9.8
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 8,
+                "bpFaced": 14,
+                "bpSavedPct": 57.1,
+                "bpFacedPerMatch": 2.8,
+                "bpConverted": 14,
+                "bpChances": 49,
+                "bpConvertedPct": 28.6,
+                "bpChancesPerMatch": 9.8
+              }
             },
             "sourceUrl": null
           },
@@ -7145,7 +7212,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -7157,7 +7224,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-prostejov-martin-vs-kopriva-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:58",
+      "capturedAt": "2026-06-02 02:57:11",
       "surface": "Clay",
       "tournament": "ATP Challenger Prostejov",
       "category": "Tennis",
@@ -7185,17 +7252,54 @@
               "avgAces": 3.6,
               "doubleFaults": 3.2,
               "avgDoubleFaults": 3.2,
-              "breakPointsSavedPct": 39.1,
-              "breakPointsConvertedPct": 29.1,
-              "breakPointsSaved": 88,
-              "breakPointsFaced": 144,
-              "breakPointsConverted": 62,
-              "breakPointsToConvert": 149,
+              "breakPointsSavedPct": 43.9,
+              "breakPointsConvertedPct": 40,
+              "breakPointsSaved": 18,
+              "breakPointsFaced": 41,
+              "breakPointsConverted": 20,
+              "breakPointsToConvert": 50,
               "tiebreaksWonPct": 20,
               "servicePointsWonPct": 60,
               "returnPointsWonPct": 39,
               "winners": 25.8,
-              "unforcedErrors": 36.6
+              "unforcedErrors": 36.6,
+              "breakPointsFacedPerMatch": 8.2,
+              "breakPointChancesPerMatch": 10
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 24,
+                "bpSaved": 88,
+                "bpFaced": 144,
+                "bpSavedPct": 61.1,
+                "bpFacedPerMatch": 6,
+                "bpConverted": 62,
+                "bpChances": 149,
+                "bpConvertedPct": 41.6,
+                "bpChancesPerMatch": 6.2
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 41,
+                "bpSavedPct": 43.9,
+                "bpFacedPerMatch": 8.2,
+                "bpConverted": 20,
+                "bpChances": 50,
+                "bpConvertedPct": 40,
+                "bpChancesPerMatch": 10
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 41,
+                "bpSavedPct": 43.9,
+                "bpFacedPerMatch": 8.2,
+                "bpConverted": 20,
+                "bpChances": 50,
+                "bpConvertedPct": 40,
+                "bpChancesPerMatch": 10
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/kopriva-vit/199395#tab:statistics",
             "surface": "Clay"
@@ -10688,10 +10792,40 @@
               "secondServeWonPct": 60.4,
               "servicePointsWonPct": 68.2,
               "returnPointsWonPct": 42.4,
-              "breakPointsSavedPct": 50,
-              "breakPointsConvertedPct": 31.8,
+              "breakPointsSavedPct": 57.1,
+              "breakPointsConvertedPct": 28.6,
               "winners": 17.8,
-              "unforcedErrors": 22.4
+              "unforcedErrors": 22.4,
+              "breakPointsSaved": 8,
+              "breakPointsFaced": 14,
+              "breakPointsFacedPerMatch": 2.8,
+              "breakPointsConverted": 14,
+              "breakPointsToConvert": 49,
+              "breakPointChancesPerMatch": 9.8
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 8,
+                "bpFaced": 14,
+                "bpSavedPct": 57.1,
+                "bpFacedPerMatch": 2.8,
+                "bpConverted": 14,
+                "bpChances": 49,
+                "bpConvertedPct": 28.6,
+                "bpChancesPerMatch": 9.8
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 8,
+                "bpFaced": 14,
+                "bpSavedPct": 57.1,
+                "bpFacedPerMatch": 2.8,
+                "bpConverted": 14,
+                "bpChances": 49,
+                "bpConvertedPct": 28.6,
+                "bpChancesPerMatch": 9.8
+              }
             },
             "sourceUrl": null
           },
@@ -14167,7 +14301,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -14231,17 +14365,54 @@
               "avgAces": 3.6,
               "doubleFaults": 3.2,
               "avgDoubleFaults": 3.2,
-              "breakPointsSavedPct": 39.1,
-              "breakPointsConvertedPct": 29.1,
-              "breakPointsSaved": 88,
-              "breakPointsFaced": 144,
-              "breakPointsConverted": 62,
-              "breakPointsToConvert": 149,
+              "breakPointsSavedPct": 43.9,
+              "breakPointsConvertedPct": 40,
+              "breakPointsSaved": 18,
+              "breakPointsFaced": 41,
+              "breakPointsConverted": 20,
+              "breakPointsToConvert": 50,
               "tiebreaksWonPct": 20,
               "servicePointsWonPct": 60,
               "returnPointsWonPct": 39,
               "winners": 25.8,
-              "unforcedErrors": 36.6
+              "unforcedErrors": 36.6,
+              "breakPointsFacedPerMatch": 8.2,
+              "breakPointChancesPerMatch": 10
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 24,
+                "bpSaved": 88,
+                "bpFaced": 144,
+                "bpSavedPct": 61.1,
+                "bpFacedPerMatch": 6,
+                "bpConverted": 62,
+                "bpChances": 149,
+                "bpConvertedPct": 41.6,
+                "bpChancesPerMatch": 6.2
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 41,
+                "bpSavedPct": 43.9,
+                "bpFacedPerMatch": 8.2,
+                "bpConverted": 20,
+                "bpChances": 50,
+                "bpConvertedPct": 40,
+                "bpChancesPerMatch": 10
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 41,
+                "bpSavedPct": 43.9,
+                "bpFacedPerMatch": 8.2,
+                "bpConverted": 20,
+                "bpChances": 50,
+                "bpConvertedPct": 40,
+                "bpChancesPerMatch": 10
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/kopriva-vit/199395#tab:statistics",
             "surface": "Clay"
@@ -17773,10 +17944,40 @@
               "secondServeWonPct": 60.4,
               "servicePointsWonPct": 68.2,
               "returnPointsWonPct": 42.4,
-              "breakPointsSavedPct": 50,
-              "breakPointsConvertedPct": 31.8,
+              "breakPointsSavedPct": 57.1,
+              "breakPointsConvertedPct": 28.6,
               "winners": 17.8,
-              "unforcedErrors": 22.4
+              "unforcedErrors": 22.4,
+              "breakPointsSaved": 8,
+              "breakPointsFaced": 14,
+              "breakPointsFacedPerMatch": 2.8,
+              "breakPointsConverted": 14,
+              "breakPointsToConvert": 49,
+              "breakPointChancesPerMatch": 9.8
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 8,
+                "bpFaced": 14,
+                "bpSavedPct": 57.1,
+                "bpFacedPerMatch": 2.8,
+                "bpConverted": 14,
+                "bpChances": 49,
+                "bpConvertedPct": 28.6,
+                "bpChancesPerMatch": 9.8
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 8,
+                "bpFaced": 14,
+                "bpSavedPct": 57.1,
+                "bpFacedPerMatch": 2.8,
+                "bpConverted": 14,
+                "bpChances": 49,
+                "bpConvertedPct": 28.6,
+                "bpChancesPerMatch": 9.8
+              }
             },
             "sourceUrl": null
           },

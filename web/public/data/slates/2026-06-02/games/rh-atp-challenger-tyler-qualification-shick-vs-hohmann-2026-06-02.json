@@ -136,7 +136,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-tyler-qualification-shick-vs-hohmann-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:58",
+      "capturedAt": "2026-06-02 02:57:11",
       "surface": "Hard",
       "tournament": "ATP Challenger Tyler Qualification",
       "category": "Tennis",
@@ -162,9 +162,39 @@
               "servicePointsWonPct": 69,
               "returnPointsWonPct": 35.5,
               "breakPointsSavedPct": 0,
-              "breakPointsConvertedPct": 10,
+              "breakPointsConvertedPct": 15.4,
               "winners": 22.5,
-              "unforcedErrors": 28.5
+              "unforcedErrors": 28.5,
+              "breakPointsSaved": 0,
+              "breakPointsFaced": 4,
+              "breakPointsFacedPerMatch": 2,
+              "breakPointsConverted": 2,
+              "breakPointsToConvert": 13,
+              "breakPointChancesPerMatch": 6.5
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 4,
+                "bpSavedPct": 0,
+                "bpFacedPerMatch": 2,
+                "bpConverted": 2,
+                "bpChances": 13,
+                "bpConvertedPct": 15.4,
+                "bpChancesPerMatch": 6.5
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 4,
+                "bpSavedPct": 0,
+                "bpFacedPerMatch": 2,
+                "bpConverted": 2,
+                "bpChances": 13,
+                "bpConvertedPct": 15.4,
+                "bpChancesPerMatch": 6.5
+              }
             },
             "sourceUrl": null
           },
@@ -1988,10 +2018,40 @@
               "secondServeWonPct": 50.2,
               "servicePointsWonPct": 67.4,
               "returnPointsWonPct": 38,
-              "breakPointsSavedPct": 56.7,
-              "breakPointsConvertedPct": 58.4,
+              "breakPointsSavedPct": 46.7,
+              "breakPointsConvertedPct": 52.2,
               "winners": 24.8,
-              "unforcedErrors": 31.6
+              "unforcedErrors": 31.6,
+              "breakPointsSaved": 7,
+              "breakPointsFaced": 15,
+              "breakPointsFacedPerMatch": 3,
+              "breakPointsConverted": 12,
+              "breakPointsToConvert": 23,
+              "breakPointChancesPerMatch": 4.6
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 7,
+                "bpFaced": 15,
+                "bpSavedPct": 46.7,
+                "bpFacedPerMatch": 3,
+                "bpConverted": 12,
+                "bpChances": 23,
+                "bpConvertedPct": 52.2,
+                "bpChancesPerMatch": 4.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 7,
+                "bpFaced": 15,
+                "bpSavedPct": 46.7,
+                "bpFacedPerMatch": 3,
+                "bpConverted": 12,
+                "bpChances": 23,
+                "bpConvertedPct": 52.2,
+                "bpChancesPerMatch": 4.6
+              }
             },
             "sourceUrl": null
           },
@@ -5492,7 +5552,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 28,
+        "expectedStatRows": 40,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -5504,7 +5564,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-tyler-qualification-shick-vs-hohmann-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:58",
+      "capturedAt": "2026-06-02 02:57:11",
       "surface": "Hard",
       "tournament": "ATP Challenger Tyler Qualification",
       "category": "Tennis",
@@ -5530,9 +5590,39 @@
               "servicePointsWonPct": 69,
               "returnPointsWonPct": 35.5,
               "breakPointsSavedPct": 0,
-              "breakPointsConvertedPct": 10,
+              "breakPointsConvertedPct": 15.4,
               "winners": 22.5,
-              "unforcedErrors": 28.5
+              "unforcedErrors": 28.5,
+              "breakPointsSaved": 0,
+              "breakPointsFaced": 4,
+              "breakPointsFacedPerMatch": 2,
+              "breakPointsConverted": 2,
+              "breakPointsToConvert": 13,
+              "breakPointChancesPerMatch": 6.5
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 4,
+                "bpSavedPct": 0,
+                "bpFacedPerMatch": 2,
+                "bpConverted": 2,
+                "bpChances": 13,
+                "bpConvertedPct": 15.4,
+                "bpChancesPerMatch": 6.5
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 4,
+                "bpSavedPct": 0,
+                "bpFacedPerMatch": 2,
+                "bpConverted": 2,
+                "bpChances": 13,
+                "bpConvertedPct": 15.4,
+                "bpChancesPerMatch": 6.5
+              }
             },
             "sourceUrl": null
           },
@@ -7356,10 +7446,40 @@
               "secondServeWonPct": 50.2,
               "servicePointsWonPct": 67.4,
               "returnPointsWonPct": 38,
-              "breakPointsSavedPct": 56.7,
-              "breakPointsConvertedPct": 58.4,
+              "breakPointsSavedPct": 46.7,
+              "breakPointsConvertedPct": 52.2,
               "winners": 24.8,
-              "unforcedErrors": 31.6
+              "unforcedErrors": 31.6,
+              "breakPointsSaved": 7,
+              "breakPointsFaced": 15,
+              "breakPointsFacedPerMatch": 3,
+              "breakPointsConverted": 12,
+              "breakPointsToConvert": 23,
+              "breakPointChancesPerMatch": 4.6
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 7,
+                "bpFaced": 15,
+                "bpSavedPct": 46.7,
+                "bpFacedPerMatch": 3,
+                "bpConverted": 12,
+                "bpChances": 23,
+                "bpConvertedPct": 52.2,
+                "bpChancesPerMatch": 4.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 7,
+                "bpFaced": 15,
+                "bpSavedPct": 46.7,
+                "bpFacedPerMatch": 3,
+                "bpConverted": 12,
+                "bpChances": 23,
+                "bpConvertedPct": 52.2,
+                "bpChancesPerMatch": 4.6
+              }
             },
             "sourceUrl": null
           },
@@ -10860,7 +10980,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 28,
+        "expectedStatRows": 40,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -10924,9 +11044,39 @@
               "servicePointsWonPct": 69,
               "returnPointsWonPct": 35.5,
               "breakPointsSavedPct": 0,
-              "breakPointsConvertedPct": 10,
+              "breakPointsConvertedPct": 15.4,
               "winners": 22.5,
-              "unforcedErrors": 28.5
+              "unforcedErrors": 28.5,
+              "breakPointsSaved": 0,
+              "breakPointsFaced": 4,
+              "breakPointsFacedPerMatch": 2,
+              "breakPointsConverted": 2,
+              "breakPointsToConvert": 13,
+              "breakPointChancesPerMatch": 6.5
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 4,
+                "bpSavedPct": 0,
+                "bpFacedPerMatch": 2,
+                "bpConverted": 2,
+                "bpChances": 13,
+                "bpConvertedPct": 15.4,
+                "bpChancesPerMatch": 6.5
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 4,
+                "bpSavedPct": 0,
+                "bpFacedPerMatch": 2,
+                "bpConverted": 2,
+                "bpChances": 13,
+                "bpConvertedPct": 15.4,
+                "bpChancesPerMatch": 6.5
+              }
             },
             "sourceUrl": null
           },
@@ -12788,10 +12938,40 @@
               "secondServeWonPct": 50.2,
               "servicePointsWonPct": 67.4,
               "returnPointsWonPct": 38,
-              "breakPointsSavedPct": 56.7,
-              "breakPointsConvertedPct": 58.4,
+              "breakPointsSavedPct": 46.7,
+              "breakPointsConvertedPct": 52.2,
               "winners": 24.8,
-              "unforcedErrors": 31.6
+              "unforcedErrors": 31.6,
+              "breakPointsSaved": 7,
+              "breakPointsFaced": 15,
+              "breakPointsFacedPerMatch": 3,
+              "breakPointsConverted": 12,
+              "breakPointsToConvert": 23,
+              "breakPointChancesPerMatch": 4.6
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 7,
+                "bpFaced": 15,
+                "bpSavedPct": 46.7,
+                "bpFacedPerMatch": 3,
+                "bpConverted": 12,
+                "bpChances": 23,
+                "bpConvertedPct": 52.2,
+                "bpChancesPerMatch": 4.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 7,
+                "bpFaced": 15,
+                "bpSavedPct": 46.7,
+                "bpFacedPerMatch": 3,
+                "bpConverted": 12,
+                "bpChances": 23,
+                "bpConvertedPct": 52.2,
+                "bpChancesPerMatch": 4.6
+              }
             },
             "sourceUrl": null
           },

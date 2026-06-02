@@ -134,7 +134,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-perugia-royer-vs-alvarez-varona-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:58",
+      "capturedAt": "2026-06-02 02:57:11",
       "surface": "Clay",
       "tournament": "ATP Challenger Perugia",
       "category": "Tennis",
@@ -162,17 +162,54 @@
               "avgAces": 5.4,
               "doubleFaults": 1.6,
               "avgDoubleFaults": 1.6,
-              "breakPointsSavedPct": 53.4,
-              "breakPointsConvertedPct": 35.1,
-              "breakPointsSaved": 36,
-              "breakPointsFaced": 65,
-              "breakPointsConverted": 26,
-              "breakPointsToConvert": 65,
+              "breakPointsSavedPct": 54.3,
+              "breakPointsConvertedPct": 39.4,
+              "breakPointsSaved": 19,
+              "breakPointsFaced": 35,
+              "breakPointsConverted": 13,
+              "breakPointsToConvert": 33,
               "tiebreaksWonPct": 50,
               "servicePointsWonPct": 62.8,
               "returnPointsWonPct": 37,
               "winners": 28.2,
-              "unforcedErrors": 29.8
+              "unforcedErrors": 29.8,
+              "breakPointsFacedPerMatch": 7,
+              "breakPointChancesPerMatch": 6.6
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 12,
+                "bpSaved": 36,
+                "bpFaced": 65,
+                "bpSavedPct": 55.4,
+                "bpFacedPerMatch": 5.4,
+                "bpConverted": 26,
+                "bpChances": 65,
+                "bpConvertedPct": 40,
+                "bpChancesPerMatch": 5.4
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 19,
+                "bpFaced": 35,
+                "bpSavedPct": 54.3,
+                "bpFacedPerMatch": 7,
+                "bpConverted": 13,
+                "bpChances": 33,
+                "bpConvertedPct": 39.4,
+                "bpChancesPerMatch": 6.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 19,
+                "bpFaced": 35,
+                "bpSavedPct": 54.3,
+                "bpFacedPerMatch": 7,
+                "bpConverted": 13,
+                "bpChances": 33,
+                "bpConvertedPct": 39.4,
+                "bpChancesPerMatch": 6.6
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/royer-valentin/255449#tab:statistics",
             "surface": "Clay"
@@ -3740,10 +3777,40 @@
               "secondServeWonPct": 41,
               "servicePointsWonPct": 60.5,
               "returnPointsWonPct": 55,
-              "breakPointsSavedPct": 63.5,
-              "breakPointsConvertedPct": 52.1,
+              "breakPointsSavedPct": 62.5,
+              "breakPointsConvertedPct": 48,
               "winners": 18.5,
-              "unforcedErrors": 23
+              "unforcedErrors": 23,
+              "breakPointsSaved": 10,
+              "breakPointsFaced": 16,
+              "breakPointsFacedPerMatch": 8,
+              "breakPointsConverted": 12,
+              "breakPointsToConvert": 25,
+              "breakPointChancesPerMatch": 12.5
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 10,
+                "bpFaced": 16,
+                "bpSavedPct": 62.5,
+                "bpFacedPerMatch": 8,
+                "bpConverted": 12,
+                "bpChances": 25,
+                "bpConvertedPct": 48,
+                "bpChancesPerMatch": 12.5
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 10,
+                "bpFaced": 16,
+                "bpSavedPct": 62.5,
+                "bpFacedPerMatch": 8,
+                "bpConverted": 12,
+                "bpChances": 25,
+                "bpConvertedPct": 48,
+                "bpChancesPerMatch": 12.5
+              }
             },
             "sourceUrl": null
           },
@@ -5551,7 +5618,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -5563,7 +5630,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-perugia-royer-vs-alvarez-varona-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:58",
+      "capturedAt": "2026-06-02 02:57:11",
       "surface": "Clay",
       "tournament": "ATP Challenger Perugia",
       "category": "Tennis",
@@ -5591,17 +5658,54 @@
               "avgAces": 5.4,
               "doubleFaults": 1.6,
               "avgDoubleFaults": 1.6,
-              "breakPointsSavedPct": 53.4,
-              "breakPointsConvertedPct": 35.1,
-              "breakPointsSaved": 36,
-              "breakPointsFaced": 65,
-              "breakPointsConverted": 26,
-              "breakPointsToConvert": 65,
+              "breakPointsSavedPct": 54.3,
+              "breakPointsConvertedPct": 39.4,
+              "breakPointsSaved": 19,
+              "breakPointsFaced": 35,
+              "breakPointsConverted": 13,
+              "breakPointsToConvert": 33,
               "tiebreaksWonPct": 50,
               "servicePointsWonPct": 62.8,
               "returnPointsWonPct": 37,
               "winners": 28.2,
-              "unforcedErrors": 29.8
+              "unforcedErrors": 29.8,
+              "breakPointsFacedPerMatch": 7,
+              "breakPointChancesPerMatch": 6.6
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 12,
+                "bpSaved": 36,
+                "bpFaced": 65,
+                "bpSavedPct": 55.4,
+                "bpFacedPerMatch": 5.4,
+                "bpConverted": 26,
+                "bpChances": 65,
+                "bpConvertedPct": 40,
+                "bpChancesPerMatch": 5.4
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 19,
+                "bpFaced": 35,
+                "bpSavedPct": 54.3,
+                "bpFacedPerMatch": 7,
+                "bpConverted": 13,
+                "bpChances": 33,
+                "bpConvertedPct": 39.4,
+                "bpChancesPerMatch": 6.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 19,
+                "bpFaced": 35,
+                "bpSavedPct": 54.3,
+                "bpFacedPerMatch": 7,
+                "bpConverted": 13,
+                "bpChances": 33,
+                "bpConvertedPct": 39.4,
+                "bpChancesPerMatch": 6.6
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/royer-valentin/255449#tab:statistics",
             "surface": "Clay"
@@ -9169,10 +9273,40 @@
               "secondServeWonPct": 41,
               "servicePointsWonPct": 60.5,
               "returnPointsWonPct": 55,
-              "breakPointsSavedPct": 63.5,
-              "breakPointsConvertedPct": 52.1,
+              "breakPointsSavedPct": 62.5,
+              "breakPointsConvertedPct": 48,
               "winners": 18.5,
-              "unforcedErrors": 23
+              "unforcedErrors": 23,
+              "breakPointsSaved": 10,
+              "breakPointsFaced": 16,
+              "breakPointsFacedPerMatch": 8,
+              "breakPointsConverted": 12,
+              "breakPointsToConvert": 25,
+              "breakPointChancesPerMatch": 12.5
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 10,
+                "bpFaced": 16,
+                "bpSavedPct": 62.5,
+                "bpFacedPerMatch": 8,
+                "bpConverted": 12,
+                "bpChances": 25,
+                "bpConvertedPct": 48,
+                "bpChancesPerMatch": 12.5
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 10,
+                "bpFaced": 16,
+                "bpSavedPct": 62.5,
+                "bpFacedPerMatch": 8,
+                "bpConverted": 12,
+                "bpChances": 25,
+                "bpConvertedPct": 48,
+                "bpChancesPerMatch": 12.5
+              }
             },
             "sourceUrl": null
           },
@@ -10980,7 +11114,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -11044,17 +11178,54 @@
               "avgAces": 5.4,
               "doubleFaults": 1.6,
               "avgDoubleFaults": 1.6,
-              "breakPointsSavedPct": 53.4,
-              "breakPointsConvertedPct": 35.1,
-              "breakPointsSaved": 36,
-              "breakPointsFaced": 65,
-              "breakPointsConverted": 26,
-              "breakPointsToConvert": 65,
+              "breakPointsSavedPct": 54.3,
+              "breakPointsConvertedPct": 39.4,
+              "breakPointsSaved": 19,
+              "breakPointsFaced": 35,
+              "breakPointsConverted": 13,
+              "breakPointsToConvert": 33,
               "tiebreaksWonPct": 50,
               "servicePointsWonPct": 62.8,
               "returnPointsWonPct": 37,
               "winners": 28.2,
-              "unforcedErrors": 29.8
+              "unforcedErrors": 29.8,
+              "breakPointsFacedPerMatch": 7,
+              "breakPointChancesPerMatch": 6.6
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 12,
+                "bpSaved": 36,
+                "bpFaced": 65,
+                "bpSavedPct": 55.4,
+                "bpFacedPerMatch": 5.4,
+                "bpConverted": 26,
+                "bpChances": 65,
+                "bpConvertedPct": 40,
+                "bpChancesPerMatch": 5.4
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 19,
+                "bpFaced": 35,
+                "bpSavedPct": 54.3,
+                "bpFacedPerMatch": 7,
+                "bpConverted": 13,
+                "bpChances": 33,
+                "bpConvertedPct": 39.4,
+                "bpChancesPerMatch": 6.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 19,
+                "bpFaced": 35,
+                "bpSavedPct": 54.3,
+                "bpFacedPerMatch": 7,
+                "bpConverted": 13,
+                "bpChances": 33,
+                "bpConvertedPct": 39.4,
+                "bpChancesPerMatch": 6.6
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/royer-valentin/255449#tab:statistics",
             "surface": "Clay"
@@ -14660,10 +14831,40 @@
               "secondServeWonPct": 41,
               "servicePointsWonPct": 60.5,
               "returnPointsWonPct": 55,
-              "breakPointsSavedPct": 63.5,
-              "breakPointsConvertedPct": 52.1,
+              "breakPointsSavedPct": 62.5,
+              "breakPointsConvertedPct": 48,
               "winners": 18.5,
-              "unforcedErrors": 23
+              "unforcedErrors": 23,
+              "breakPointsSaved": 10,
+              "breakPointsFaced": 16,
+              "breakPointsFacedPerMatch": 8,
+              "breakPointsConverted": 12,
+              "breakPointsToConvert": 25,
+              "breakPointChancesPerMatch": 12.5
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 10,
+                "bpFaced": 16,
+                "bpSavedPct": 62.5,
+                "bpFacedPerMatch": 8,
+                "bpConverted": 12,
+                "bpChances": 25,
+                "bpConvertedPct": 48,
+                "bpChancesPerMatch": 12.5
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 10,
+                "bpFaced": 16,
+                "bpSavedPct": 62.5,
+                "bpFacedPerMatch": 8,
+                "bpConverted": 12,
+                "bpChances": 25,
+                "bpConvertedPct": 48,
+                "bpChancesPerMatch": 12.5
+              }
             },
             "sourceUrl": null
           },

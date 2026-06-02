@@ -133,7 +133,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-tyler-walton-vs-wu-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:58",
+      "capturedAt": "2026-06-02 02:57:11",
       "surface": "Hard",
       "tournament": "ATP Challenger Tyler",
       "category": "Tennis",
@@ -161,17 +161,54 @@
               "avgAces": 6.8,
               "doubleFaults": 1.2,
               "avgDoubleFaults": 1.2,
-              "breakPointsSavedPct": 62.8,
-              "breakPointsConvertedPct": 28.5,
-              "breakPointsSaved": 113,
-              "breakPointsFaced": 169,
-              "breakPointsConverted": 40,
-              "breakPointsToConvert": 133,
+              "breakPointsSavedPct": 69,
+              "breakPointsConvertedPct": 36.1,
+              "breakPointsSaved": 40,
+              "breakPointsFaced": 58,
+              "breakPointsConverted": 13,
+              "breakPointsToConvert": 36,
               "tiebreaksWonPct": 28.6,
               "servicePointsWonPct": 59.6,
               "returnPointsWonPct": 36.8,
               "winners": 27,
-              "unforcedErrors": 31.6
+              "unforcedErrors": 31.6,
+              "breakPointsFacedPerMatch": 11.6,
+              "breakPointChancesPerMatch": 7.2
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 28,
+                "bpSaved": 113,
+                "bpFaced": 169,
+                "bpSavedPct": 66.9,
+                "bpFacedPerMatch": 6,
+                "bpConverted": 40,
+                "bpChances": 133,
+                "bpConvertedPct": 30.1,
+                "bpChancesPerMatch": 4.8
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 40,
+                "bpFaced": 58,
+                "bpSavedPct": 69,
+                "bpFacedPerMatch": 11.6,
+                "bpConverted": 13,
+                "bpChances": 36,
+                "bpConvertedPct": 36.1,
+                "bpChancesPerMatch": 7.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 40,
+                "bpFaced": 58,
+                "bpSavedPct": 69,
+                "bpFacedPerMatch": 11.6,
+                "bpConverted": 13,
+                "bpChances": 36,
+                "bpConvertedPct": 36.1,
+                "bpChancesPerMatch": 7.2
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/walton-adam/207575#tab:statistics",
             "surface": "All surfaces"
@@ -3739,10 +3776,40 @@
               "secondServeWonPct": 58.2,
               "servicePointsWonPct": 72,
               "returnPointsWonPct": 38,
-              "breakPointsSavedPct": 77.1,
-              "breakPointsConvertedPct": 20.6,
+              "breakPointsSavedPct": 77.3,
+              "breakPointsConvertedPct": 18.5,
               "winners": 24,
-              "unforcedErrors": 29.4
+              "unforcedErrors": 29.4,
+              "breakPointsSaved": 17,
+              "breakPointsFaced": 22,
+              "breakPointsFacedPerMatch": 4.4,
+              "breakPointsConverted": 10,
+              "breakPointsToConvert": 54,
+              "breakPointChancesPerMatch": 10.8
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 22,
+                "bpSavedPct": 77.3,
+                "bpFacedPerMatch": 4.4,
+                "bpConverted": 10,
+                "bpChances": 54,
+                "bpConvertedPct": 18.5,
+                "bpChancesPerMatch": 10.8
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 22,
+                "bpSavedPct": 77.3,
+                "bpFacedPerMatch": 4.4,
+                "bpConverted": 10,
+                "bpChances": 54,
+                "bpConvertedPct": 18.5,
+                "bpChancesPerMatch": 10.8
+              }
             },
             "sourceUrl": null
           },
@@ -7268,7 +7335,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -7280,7 +7347,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-tyler-walton-vs-wu-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:58",
+      "capturedAt": "2026-06-02 02:57:11",
       "surface": "Hard",
       "tournament": "ATP Challenger Tyler",
       "category": "Tennis",
@@ -7308,17 +7375,54 @@
               "avgAces": 6.8,
               "doubleFaults": 1.2,
               "avgDoubleFaults": 1.2,
-              "breakPointsSavedPct": 62.8,
-              "breakPointsConvertedPct": 28.5,
-              "breakPointsSaved": 113,
-              "breakPointsFaced": 169,
-              "breakPointsConverted": 40,
-              "breakPointsToConvert": 133,
+              "breakPointsSavedPct": 69,
+              "breakPointsConvertedPct": 36.1,
+              "breakPointsSaved": 40,
+              "breakPointsFaced": 58,
+              "breakPointsConverted": 13,
+              "breakPointsToConvert": 36,
               "tiebreaksWonPct": 28.6,
               "servicePointsWonPct": 59.6,
               "returnPointsWonPct": 36.8,
               "winners": 27,
-              "unforcedErrors": 31.6
+              "unforcedErrors": 31.6,
+              "breakPointsFacedPerMatch": 11.6,
+              "breakPointChancesPerMatch": 7.2
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 28,
+                "bpSaved": 113,
+                "bpFaced": 169,
+                "bpSavedPct": 66.9,
+                "bpFacedPerMatch": 6,
+                "bpConverted": 40,
+                "bpChances": 133,
+                "bpConvertedPct": 30.1,
+                "bpChancesPerMatch": 4.8
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 40,
+                "bpFaced": 58,
+                "bpSavedPct": 69,
+                "bpFacedPerMatch": 11.6,
+                "bpConverted": 13,
+                "bpChances": 36,
+                "bpConvertedPct": 36.1,
+                "bpChancesPerMatch": 7.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 40,
+                "bpFaced": 58,
+                "bpSavedPct": 69,
+                "bpFacedPerMatch": 11.6,
+                "bpConverted": 13,
+                "bpChances": 36,
+                "bpConvertedPct": 36.1,
+                "bpChancesPerMatch": 7.2
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/walton-adam/207575#tab:statistics",
             "surface": "All surfaces"
@@ -10886,10 +10990,40 @@
               "secondServeWonPct": 58.2,
               "servicePointsWonPct": 72,
               "returnPointsWonPct": 38,
-              "breakPointsSavedPct": 77.1,
-              "breakPointsConvertedPct": 20.6,
+              "breakPointsSavedPct": 77.3,
+              "breakPointsConvertedPct": 18.5,
               "winners": 24,
-              "unforcedErrors": 29.4
+              "unforcedErrors": 29.4,
+              "breakPointsSaved": 17,
+              "breakPointsFaced": 22,
+              "breakPointsFacedPerMatch": 4.4,
+              "breakPointsConverted": 10,
+              "breakPointsToConvert": 54,
+              "breakPointChancesPerMatch": 10.8
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 22,
+                "bpSavedPct": 77.3,
+                "bpFacedPerMatch": 4.4,
+                "bpConverted": 10,
+                "bpChances": 54,
+                "bpConvertedPct": 18.5,
+                "bpChancesPerMatch": 10.8
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 22,
+                "bpSavedPct": 77.3,
+                "bpFacedPerMatch": 4.4,
+                "bpConverted": 10,
+                "bpChances": 54,
+                "bpConvertedPct": 18.5,
+                "bpChancesPerMatch": 10.8
+              }
             },
             "sourceUrl": null
           },
@@ -14415,7 +14549,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 37,
+        "expectedStatRows": 45,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -14477,17 +14611,54 @@
               "avgAces": 6.8,
               "doubleFaults": 1.2,
               "avgDoubleFaults": 1.2,
-              "breakPointsSavedPct": 62.8,
-              "breakPointsConvertedPct": 28.5,
-              "breakPointsSaved": 113,
-              "breakPointsFaced": 169,
-              "breakPointsConverted": 40,
-              "breakPointsToConvert": 133,
+              "breakPointsSavedPct": 69,
+              "breakPointsConvertedPct": 36.1,
+              "breakPointsSaved": 40,
+              "breakPointsFaced": 58,
+              "breakPointsConverted": 13,
+              "breakPointsToConvert": 36,
               "tiebreaksWonPct": 28.6,
               "servicePointsWonPct": 59.6,
               "returnPointsWonPct": 36.8,
               "winners": 27,
-              "unforcedErrors": 31.6
+              "unforcedErrors": 31.6,
+              "breakPointsFacedPerMatch": 11.6,
+              "breakPointChancesPerMatch": 7.2
+            },
+            "pressureSamples": {
+              "surface": {
+                "matches": 28,
+                "bpSaved": 113,
+                "bpFaced": 169,
+                "bpSavedPct": 66.9,
+                "bpFacedPerMatch": 6,
+                "bpConverted": 40,
+                "bpChances": 133,
+                "bpConvertedPct": 30.1,
+                "bpChancesPerMatch": 4.8
+              },
+              "recent": {
+                "matches": 5,
+                "bpSaved": 40,
+                "bpFaced": 58,
+                "bpSavedPct": 69,
+                "bpFacedPerMatch": 11.6,
+                "bpConverted": 13,
+                "bpChances": 36,
+                "bpConvertedPct": 36.1,
+                "bpChancesPerMatch": 7.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 40,
+                "bpFaced": 58,
+                "bpSavedPct": 69,
+                "bpFacedPerMatch": 11.6,
+                "bpConverted": 13,
+                "bpChances": 36,
+                "bpConvertedPct": 36.1,
+                "bpChancesPerMatch": 7.2
+              }
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/walton-adam/207575#tab:statistics",
             "surface": "All surfaces"
@@ -18094,10 +18265,40 @@
               "secondServeWonPct": 58.2,
               "servicePointsWonPct": 72,
               "returnPointsWonPct": 38,
-              "breakPointsSavedPct": 77.1,
-              "breakPointsConvertedPct": 20.6,
+              "breakPointsSavedPct": 77.3,
+              "breakPointsConvertedPct": 18.5,
               "winners": 24,
-              "unforcedErrors": 29.4
+              "unforcedErrors": 29.4,
+              "breakPointsSaved": 17,
+              "breakPointsFaced": 22,
+              "breakPointsFacedPerMatch": 4.4,
+              "breakPointsConverted": 10,
+              "breakPointsToConvert": 54,
+              "breakPointChancesPerMatch": 10.8
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 22,
+                "bpSavedPct": 77.3,
+                "bpFacedPerMatch": 4.4,
+                "bpConverted": 10,
+                "bpChances": 54,
+                "bpConvertedPct": 18.5,
+                "bpChancesPerMatch": 10.8
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 17,
+                "bpFaced": 22,
+                "bpSavedPct": 77.3,
+                "bpFacedPerMatch": 4.4,
+                "bpConverted": 10,
+                "bpChances": 54,
+                "bpConvertedPct": 18.5,
+                "bpChancesPerMatch": 10.8
+              }
             },
             "sourceUrl": null
           },

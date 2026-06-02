@@ -131,7 +131,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-bad-rappenau-reis-da-silva-vs-barrena-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:57",
+      "capturedAt": "2026-06-02 02:57:10",
       "surface": "Clay",
       "tournament": "ATP Challenger Bad Rappenau",
       "category": "Tennis",
@@ -156,10 +156,40 @@
               "secondServeWonPct": 51.6,
               "servicePointsWonPct": 61,
               "returnPointsWonPct": 40.4,
-              "breakPointsSavedPct": 38.3,
-              "breakPointsConvertedPct": 61.3,
+              "breakPointsSavedPct": 52.8,
+              "breakPointsConvertedPct": 59.3,
               "winners": 19.4,
-              "unforcedErrors": 31.6
+              "unforcedErrors": 31.6,
+              "breakPointsSaved": 19,
+              "breakPointsFaced": 36,
+              "breakPointsFacedPerMatch": 7.2,
+              "breakPointsConverted": 16,
+              "breakPointsToConvert": 27,
+              "breakPointChancesPerMatch": 5.4
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 19,
+                "bpFaced": 36,
+                "bpSavedPct": 52.8,
+                "bpFacedPerMatch": 7.2,
+                "bpConverted": 16,
+                "bpChances": 27,
+                "bpConvertedPct": 59.3,
+                "bpChancesPerMatch": 5.4
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 19,
+                "bpFaced": 36,
+                "bpSavedPct": 52.8,
+                "bpFacedPerMatch": 7.2,
+                "bpConverted": 16,
+                "bpChances": 27,
+                "bpConvertedPct": 59.3,
+                "bpChancesPerMatch": 5.4
+              }
             },
             "sourceUrl": null
           },
@@ -3726,10 +3756,40 @@
               "secondServeWonPct": 42,
               "servicePointsWonPct": 55.2,
               "returnPointsWonPct": 36.6,
-              "breakPointsSavedPct": 44.9,
-              "breakPointsConvertedPct": 42,
+              "breakPointsSavedPct": 47.4,
+              "breakPointsConvertedPct": 42.4,
               "winners": 17.4,
-              "unforcedErrors": 22.6
+              "unforcedErrors": 22.6,
+              "breakPointsSaved": 18,
+              "breakPointsFaced": 38,
+              "breakPointsFacedPerMatch": 7.6,
+              "breakPointsConverted": 14,
+              "breakPointsToConvert": 33,
+              "breakPointChancesPerMatch": 6.6
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 38,
+                "bpSavedPct": 47.4,
+                "bpFacedPerMatch": 7.6,
+                "bpConverted": 14,
+                "bpChances": 33,
+                "bpConvertedPct": 42.4,
+                "bpChancesPerMatch": 6.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 38,
+                "bpSavedPct": 47.4,
+                "bpFacedPerMatch": 7.6,
+                "bpConverted": 14,
+                "bpChances": 33,
+                "bpConvertedPct": 42.4,
+                "bpChancesPerMatch": 6.6
+              }
             },
             "sourceUrl": null
           },
@@ -7305,7 +7365,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 28,
+        "expectedStatRows": 40,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -7317,7 +7377,7 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-bad-rappenau-reis-da-silva-vs-barrena-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-02 02:40:57",
+      "capturedAt": "2026-06-02 02:57:10",
       "surface": "Clay",
       "tournament": "ATP Challenger Bad Rappenau",
       "category": "Tennis",
@@ -7342,10 +7402,40 @@
               "secondServeWonPct": 51.6,
               "servicePointsWonPct": 61,
               "returnPointsWonPct": 40.4,
-              "breakPointsSavedPct": 38.3,
-              "breakPointsConvertedPct": 61.3,
+              "breakPointsSavedPct": 52.8,
+              "breakPointsConvertedPct": 59.3,
               "winners": 19.4,
-              "unforcedErrors": 31.6
+              "unforcedErrors": 31.6,
+              "breakPointsSaved": 19,
+              "breakPointsFaced": 36,
+              "breakPointsFacedPerMatch": 7.2,
+              "breakPointsConverted": 16,
+              "breakPointsToConvert": 27,
+              "breakPointChancesPerMatch": 5.4
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 19,
+                "bpFaced": 36,
+                "bpSavedPct": 52.8,
+                "bpFacedPerMatch": 7.2,
+                "bpConverted": 16,
+                "bpChances": 27,
+                "bpConvertedPct": 59.3,
+                "bpChancesPerMatch": 5.4
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 19,
+                "bpFaced": 36,
+                "bpSavedPct": 52.8,
+                "bpFacedPerMatch": 7.2,
+                "bpConverted": 16,
+                "bpChances": 27,
+                "bpConvertedPct": 59.3,
+                "bpChancesPerMatch": 5.4
+              }
             },
             "sourceUrl": null
           },
@@ -10912,10 +11002,40 @@
               "secondServeWonPct": 42,
               "servicePointsWonPct": 55.2,
               "returnPointsWonPct": 36.6,
-              "breakPointsSavedPct": 44.9,
-              "breakPointsConvertedPct": 42,
+              "breakPointsSavedPct": 47.4,
+              "breakPointsConvertedPct": 42.4,
               "winners": 17.4,
-              "unforcedErrors": 22.6
+              "unforcedErrors": 22.6,
+              "breakPointsSaved": 18,
+              "breakPointsFaced": 38,
+              "breakPointsFacedPerMatch": 7.6,
+              "breakPointsConverted": 14,
+              "breakPointsToConvert": 33,
+              "breakPointChancesPerMatch": 6.6
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 38,
+                "bpSavedPct": 47.4,
+                "bpFacedPerMatch": 7.6,
+                "bpConverted": 14,
+                "bpChances": 33,
+                "bpConvertedPct": 42.4,
+                "bpChancesPerMatch": 6.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 38,
+                "bpSavedPct": 47.4,
+                "bpFacedPerMatch": 7.6,
+                "bpConverted": 14,
+                "bpChances": 33,
+                "bpConvertedPct": 42.4,
+                "bpChancesPerMatch": 6.6
+              }
             },
             "sourceUrl": null
           },
@@ -14491,7 +14611,7 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 28,
+        "expectedStatRows": 40,
         "recentMetricRows": 10,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
@@ -14550,10 +14670,40 @@
               "secondServeWonPct": 51.6,
               "servicePointsWonPct": 61,
               "returnPointsWonPct": 40.4,
-              "breakPointsSavedPct": 38.3,
-              "breakPointsConvertedPct": 61.3,
+              "breakPointsSavedPct": 52.8,
+              "breakPointsConvertedPct": 59.3,
               "winners": 19.4,
-              "unforcedErrors": 31.6
+              "unforcedErrors": 31.6,
+              "breakPointsSaved": 19,
+              "breakPointsFaced": 36,
+              "breakPointsFacedPerMatch": 7.2,
+              "breakPointsConverted": 16,
+              "breakPointsToConvert": 27,
+              "breakPointChancesPerMatch": 5.4
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 19,
+                "bpFaced": 36,
+                "bpSavedPct": 52.8,
+                "bpFacedPerMatch": 7.2,
+                "bpConverted": 16,
+                "bpChances": 27,
+                "bpConvertedPct": 59.3,
+                "bpChancesPerMatch": 5.4
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 19,
+                "bpFaced": 36,
+                "bpSavedPct": 52.8,
+                "bpFacedPerMatch": 7.2,
+                "bpConverted": 16,
+                "bpChances": 27,
+                "bpConvertedPct": 59.3,
+                "bpChancesPerMatch": 5.4
+              }
             },
             "sourceUrl": null
           },
@@ -18157,10 +18307,40 @@
               "secondServeWonPct": 42,
               "servicePointsWonPct": 55.2,
               "returnPointsWonPct": 36.6,
-              "breakPointsSavedPct": 44.9,
-              "breakPointsConvertedPct": 42,
+              "breakPointsSavedPct": 47.4,
+              "breakPointsConvertedPct": 42.4,
               "winners": 17.4,
-              "unforcedErrors": 22.6
+              "unforcedErrors": 22.6,
+              "breakPointsSaved": 18,
+              "breakPointsFaced": 38,
+              "breakPointsFacedPerMatch": 7.6,
+              "breakPointsConverted": 14,
+              "breakPointsToConvert": 33,
+              "breakPointChancesPerMatch": 6.6
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 38,
+                "bpSavedPct": 47.4,
+                "bpFacedPerMatch": 7.6,
+                "bpConverted": 14,
+                "bpChances": 33,
+                "bpConvertedPct": 42.4,
+                "bpChancesPerMatch": 6.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 18,
+                "bpFaced": 38,
+                "bpSavedPct": 47.4,
+                "bpFacedPerMatch": 7.6,
+                "bpConverted": 14,
+                "bpChances": 33,
+                "bpConvertedPct": 42.4,
+                "bpChancesPerMatch": 6.6
+              }
             },
             "sourceUrl": null
           },
