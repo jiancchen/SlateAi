@@ -1,0 +1,205 @@
+{
+  "alias_targets": {
+    "match": 297,
+    "player": 2
+  },
+  "dry_run": false,
+  "family": "tennis_identity_cleanup",
+  "generated_at": "2026-06-02T16:42:26.070824+00:00",
+  "ok": true,
+  "open_unresolved_before": 438,
+  "parser_module": "pipeline/sources/tennis/normalization/identity.py",
+  "remaining_open_estimate": 139,
+  "resolvable_rows": 299,
+  "resolved_by_type": {
+    "tennis_context_player": 1,
+    "tennis_market_match": 54,
+    "tennis_market_player": 1,
+    "tennis_stat_match": 243
+  },
+  "script": "data-migration/scripts/normalize_tennis_identity.py",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "suspicious_player_alias_count": 1635,
+  "suspicious_player_alias_samples": [
+    {
+      "canonical_entity_id": "tennis-player-wang-xiyu",
+      "canonical_name": "wang xiyu",
+      "confidence": 0.9,
+      "entity_alias_id": "bf975eff9da986788d935d8d88113728e3c2a12e",
+      "name": "Wang Xiyu",
+      "source_display_name": "Xiyu Wang",
+      "source_name": "Kalshi open orderbook"
+    },
+    {
+      "canonical_entity_id": "tennis-player-stefano-napolitano",
+      "canonical_name": "stefano napolitano",
+      "confidence": 0.95,
+      "entity_alias_id": "491b22a7c39b79a3a5bc3e5174fcd96cf1c3eb6c",
+      "name": "Stefano Napolitano",
+      "source_display_name": "Agamenone F.",
+      "source_name": "flashscore"
+    },
+    {
+      "canonical_entity_id": "tennis-player-james-watt",
+      "canonical_name": "james watt",
+      "confidence": 0.95,
+      "entity_alias_id": "fda5cc6fc2136d8532f27819313d8e30efe1c29a",
+      "name": "James Watt",
+      "source_display_name": "Agamenone F.",
+      "source_name": "flashscore"
+    },
+    {
+      "canonical_entity_id": "tennis-player-fajing-sun",
+      "canonical_name": "fajing sun",
+      "confidence": 0.95,
+      "entity_alias_id": "3bf9c2c358d3926d94902d7b12dadc0b3a61a80a",
+      "name": "Fajing Sun",
+      "source_display_name": "Aguiard E.",
+      "source_name": "flashscore"
+    },
+    {
+      "canonical_entity_id": "tennis-player-dane-sweeny",
+      "canonical_name": "dane sweeny",
+      "confidence": 0.95,
+      "entity_alias_id": "674577eed7cd9f1062f5677a45708ab1bddf4ff7",
+      "name": "Dane Sweeny",
+      "source_display_name": "Aguiard E.",
+      "source_name": "flashscore"
+    },
+    {
+      "canonical_entity_id": "tennis-player-jonas-forejtek",
+      "canonical_name": "jonas forejtek",
+      "confidence": 0.95,
+      "entity_alias_id": "0611899dfda9b50baf87e6bd0744823222570016",
+      "name": "Jonas Forejtek",
+      "source_display_name": "Ajdukovic D.",
+      "source_name": "flashscore"
+    },
+    {
+      "canonical_entity_id": "tennis-player-cezar-cretu-b-2001",
+      "canonical_name": "cezar cretu b 2001",
+      "confidence": 0.95,
+      "entity_alias_id": "9deb4ce30b91f892ef068291e1507b65c21d8df7",
+      "name": "Cezar Cretu (b. 2001)",
+      "source_display_name": "Albot R.",
+      "source_name": "flashscore"
+    },
+    {
+      "canonical_entity_id": "tennis-player-alejandro-tabilo",
+      "canonical_name": "alejandro tabilo",
+      "confidence": 0.95,
+      "entity_alias_id": "65fea5de3b8b5ff487c1e8be7d8a551c5a7ede44",
+      "name": "Alejandro Tabilo",
+      "source_display_name": "Alcaraz C.",
+      "source_name": "flashscore"
+    },
+    {
+      "canonical_entity_id": "tennis-player-arthur-fery",
+      "canonical_name": "arthur fery",
+      "confidence": 0.95,
+      "entity_alias_id": "ca159e81817fdc17da6b4774d6daf71f6c5dc2e4",
+      "name": "Arthur Fery",
+      "source_display_name": "Alexandrescou Y. T.",
+      "source_name": "flashscore"
+    },
+    {
+      "canonical_entity_id": "tennis-player-jonas-forejtek",
+      "canonical_name": "jonas forejtek",
+      "confidence": 0.95,
+      "entity_alias_id": "b40b3581973521537bd6bb75fac190769eb81ecb",
+      "name": "Jonas Forejtek",
+      "source_display_name": "Alkaya M.",
+      "source_name": "flashscore"
+    },
+    {
+      "canonical_entity_id": "tennis-player-gauthier-onclin",
+      "canonical_name": "gauthier onclin",
+      "confidence": 0.95,
+      "entity_alias_id": "2c7c0122b976a39f1751b3749c9e20b3fc010a07",
+      "name": "Gauthier Onclin",
+      "source_display_name": "Alkaya M.",
+      "source_name": "flashscore"
+    },
+    {
+      "canonical_entity_id": "tennis-player-jacob-fearnley",
+      "canonical_name": "jacob fearnley",
+      "confidence": 0.95,
+      "entity_alias_id": "64dff1a208de563573bb006097928908602ba141",
+      "name": "Jacob Fearnley",
+      "source_display_name": "Altmaier D.",
+      "source_name": "flashscore"
+    },
+    {
+      "canonical_entity_id": "tennis-player-rafael-jodar",
+      "canonical_name": "rafael jodar",
+      "confidence": 0.95,
+      "entity_alias_id": "b70b1d57fc69cdfc679388b1415bcf6d705a6be2",
+      "name": "Rafael Jodar",
+      "source_display_name": "Altmaier D.",
+      "source_name": "flashscore"
+    },
+    {
+      "canonical_entity_id": "tennis-player-raphael-collignon",
+      "canonical_name": "raphael collignon",
+      "confidence": 0.95,
+      "entity_alias_id": "e262dd1d4252bae5207dffbe97a17cf46681e744",
+      "name": "Raphael Collignon",
+      "source_display_name": "Altmaier D.",
+      "source_name": "flashscore"
+    },
+    {
+      "canonical_entity_id": "tennis-player-tommy-paul",
+      "canonical_name": "tommy paul",
+      "confidence": 0.95,
+      "entity_alias_id": "17aa911fdc80aaa19581293a15682aa0da1dc07e",
+      "name": "Tommy Paul",
+      "source_display_name": "Altmaier D.",
+      "source_name": "flashscore"
+    },
+    {
+      "canonical_entity_id": "tennis-player-marc-polmans",
+      "canonical_name": "marc polmans",
+      "confidence": 0.95,
+      "entity_alias_id": "f4050407844980720a473c7f12e5767c4f405364",
+      "name": "Marc Polmans",
+      "source_display_name": "Altmaier D.",
+      "source_name": "flashscore"
+    },
+    {
+      "canonical_entity_id": "tennis-player-gonzalo-bueno",
+      "canonical_name": "gonzalo bueno",
+      "confidence": 0.95,
+      "entity_alias_id": "0caf865f4c984b5337c1a630501cb4b180eed956",
+      "name": "Gonzalo Bueno",
+      "source_display_name": "Altmaier D.",
+      "source_name": "flashscore"
+    },
+    {
+      "canonical_entity_id": "tennis-player-marc-polmans",
+      "canonical_name": "marc polmans",
+      "confidence": 0.95,
+      "entity_alias_id": "1d3d19efa8b15ef131dc82b1f4298a8725e23587",
+      "name": "Marc Polmans",
+      "source_display_name": "Alujas R.",
+      "source_name": "flashscore"
+    },
+    {
+      "canonical_entity_id": "tennis-player-nicolas-alvarez-varona",
+      "canonical_name": "nicolas alvarez varona",
+      "confidence": 0.95,
+      "entity_alias_id": "7fbbf2867496ad49a0828a486b59d7eee73806b3",
+      "name": "Nicolas Alvarez Varona",
+      "source_display_name": "Alvarez Varona N.",
+      "source_name": "flashscore"
+    },
+    {
+      "canonical_entity_id": "tennis-player-stefano-napolitano",
+      "canonical_name": "stefano napolitano",
+      "confidence": 0.95,
+      "entity_alias_id": "f38219acca51d1341ce4336cc79b6ec328e70ed9",
+      "name": "Stefano Napolitano",
+      "source_display_name": "Ambarzumjan E.",
+      "source_name": "flashscore"
+    }
+  ]
+}

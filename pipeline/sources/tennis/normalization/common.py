@@ -133,6 +133,48 @@ class TennisIdentityResolver:
         for row in rows:
             self.match_players.setdefault(row["match_id"], []).append(dict(row))
         self.flashscore_match_map = self._load_flashscore_match_map()
+        self.match_aliases_by_source_entity = self._load_entity_aliases("match")
+        self.player_aliases_by_source_display = self._load_player_aliases()
+
+    def _load_entity_aliases(self, entity_type: str) -> dict[str, list[str]]:
+        mapping: dict[str, list[str]] = {}
+        rows = self.con.execute(
+            """
+            select source_entity_id, canonical_entity_id
+            from entity_aliases
+            where entity_type = ? and source_entity_id is not null
+            """,
+            (entity_type,),
+        ).fetchall()
+        for row in rows:
+            source_entity_id = str(row["source_entity_id"])
+            canonical_entity_id = str(row["canonical_entity_id"])
+            mapping.setdefault(source_entity_id, [])
+            if canonical_entity_id not in mapping[source_entity_id]:
+                mapping[source_entity_id].append(canonical_entity_id)
+        return mapping
+
+    def _load_player_aliases(self) -> dict[tuple[str, str], list[str]]:
+        mapping: dict[tuple[str, str], list[str]] = {}
+        rows = self.con.execute(
+            """
+            select source_name, source_display_name, canonical_entity_id
+            from entity_aliases
+            where entity_type = 'player' and source_display_name is not null
+              and notes like 'N22 tennis identity cleanup:%'
+            """
+        ).fetchall()
+        for row in rows:
+            key = normalize_name(row["source_display_name"])
+            if not key:
+                continue
+            for source_key in [str(row["source_name"] or ""), "*"]:
+                alias_key = (source_key, key)
+                mapping.setdefault(alias_key, [])
+                canonical_entity_id = str(row["canonical_entity_id"])
+                if canonical_entity_id not in mapping[alias_key]:
+                    mapping[alias_key].append(canonical_entity_id)
+        return mapping
 
     def _load_flashscore_match_map(self) -> dict[str, str]:
         mapping: dict[str, str] = {}
@@ -158,6 +200,22 @@ class TennisIdentityResolver:
         flashscore_id = payload.get("flashscore_id") or payload.get("flashscoreId")
         if flashscore_id and str(flashscore_id) in self.flashscore_match_map:
             return self.flashscore_match_map[str(flashscore_id)]
+        alias_candidates = [
+            payload.get("sofascore_event_id"),
+            payload.get("sofascoreEventId"),
+            payload.get("flashscore_id"),
+            payload.get("flashscoreId"),
+            payload.get("market_ticker"),
+            payload.get("marketTicker"),
+            payload.get("event_ticker"),
+            payload.get("eventTicker"),
+        ]
+        for candidate in alias_candidates:
+            if not candidate:
+                continue
+            match_ids = self.match_aliases_by_source_entity.get(str(candidate), [])
+            if len(match_ids) == 1 and match_ids[0] in self.matches:
+                return match_ids[0]
         return None
 
     def player_id_for_match(
@@ -201,6 +259,10 @@ class TennisIdentityResolver:
         if len(contains) == 1:
             self.upsert_alias("player", contains[0]["player_id"], source_name, None, player_name, 0.9)
             return contains[0]["player_id"]
+        alias_player_ids = self._player_alias_candidates_in_match(match_id, source_name, player_name)
+        if len(alias_player_ids) == 1:
+            self.upsert_alias("player", alias_player_ids[0], source_name, None, player_name, 0.91)
+            return alias_player_ids[0]
         return None
 
     def player_id_by_name(self, source_name: str, player_name: Any) -> str | None:
@@ -209,7 +271,27 @@ class TennisIdentityResolver:
         if len(candidates) == 1:
             self.upsert_alias("player", candidates[0]["player_id"], source_name, None, player_name, 0.9)
             return candidates[0]["player_id"]
+        for alias_key in [(source_name, key), ("*", key)]:
+            alias_candidates = self.player_aliases_by_source_display.get(alias_key, [])
+            if len(alias_candidates) == 1 and alias_candidates[0] in self.players:
+                self.upsert_alias("player", alias_candidates[0], source_name, None, player_name, 0.91)
+                return alias_candidates[0]
         return None
+
+    def _player_alias_candidates_in_match(self, match_id: str, source_name: str, player_name: Any) -> list[str]:
+        key = normalize_name(player_name)
+        if not key:
+            return []
+        match_player_ids = {player["player_id"] for player in self.match_players.get(match_id, [])}
+        for alias_key in [(source_name, key), ("*", key)]:
+            alias_candidates = [
+                player_id
+                for player_id in self.player_aliases_by_source_display.get(alias_key, [])
+                if player_id in match_player_ids
+            ]
+            if len(alias_candidates) == 1:
+                return alias_candidates
+        return []
 
     def upsert_alias(
         self,
@@ -308,4 +390,3 @@ def append_normalization_event(root: Path, event: dict[str, Any]) -> None:
 def write_report(path: Path, payload: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-

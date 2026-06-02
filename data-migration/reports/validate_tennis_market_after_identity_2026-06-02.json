@@ -1,0 +1,19 @@
+{
+  "date": null,
+  "duplicate_ticks": 0,
+  "errors": [],
+  "generated_at": "2026-06-02T16:42:53.018892+00:00",
+  "mapped_contracts": 764,
+  "mapped_players": 764,
+  "market_contracts": 824,
+  "market_price_ticks": 131248,
+  "market_snapshots": 1201,
+  "ok": true,
+  "orphan_contracts": 0,
+  "orphan_ticks": 0,
+  "parser_module": "pipeline/sources/tennis/normalization/markets.py",
+  "script": "data-migration/scripts/validate_tennis_market_normalization.py",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "source_rows": 132072,
+  "unresolved_market_entities": 187
+}
