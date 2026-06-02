@@ -1,0 +1,1022 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rg-m-rafael-jodar-alexander-zverev-2026-06-02",
+  "boardTitle": "Rafael Jodar vs Alexander Zverev",
+  "boardPlayerName": "Rafael Jodar",
+  "recentOpponentName": "Pablo Carreno-Busta",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "31 May 26",
+  "recentIsoDate": "2026-05-31",
+  "recentResult": "ESP  4-6 4-6 6-1 6-2 6-2 4th",
+  "flashscoreLabel": "Jodar R. - Carreno-Busta P.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Jodar R.",
+    "Carreno-Busta P."
+  ],
+  "generatedAt": "2026-06-01T23:52:08.129Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/O8k6Y2yR/",
+  "matchId": "O8k6Y2yR",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_O8k6Y2yR",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_O8k6Y2yR"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:58"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:52"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      },
+      {
+        "label": "Set 5",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:42"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "70%",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (67/97)",
+              "right": "61% (55/90)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (27/49)",
+              "right": "38% (15/39)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "10/14",
+              "right": "3/11",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (35/90)",
+              "right": "31% (30/97)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (24/39)",
+              "right": "45% (22/49)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "8/11",
+              "right": "4/14",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "44",
+              "right": "38",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "53",
+              "right": "60",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Net points won",
+              "left": "54% (15/28)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (94/146)",
+              "right": "54% (70/129)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (59/129)",
+              "right": "36% (52/146)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (153/275)",
+              "right": "44% (122/275)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "82% (18/22)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (8/21)",
+              "right": "18% (4/22)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (26/43)",
+              "right": "40% (17/43)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "65%",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (16/32)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "61% (11/18)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "9/11",
+              "right": "1/2",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (5/17)",
+              "right": "50% (16/32)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (3/9)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/11",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "13",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "14",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Net points won",
+              "left": "58% (7/12)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (27/50)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (8/26)",
+              "right": "46% (23/50)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (35/76)",
+              "right": "54% (41/76)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "66%",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (13/18)",
+              "right": "66% (19/29)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "1/2",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (10/29)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (9/15)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/3",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "14",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "15",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Net points won",
+              "left": "20% (1/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (16/27)",
+              "right": "57% (25/44)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (19/44)",
+              "right": "41% (11/27)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (35/71)",
+              "right": "51% (36/71)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "88%",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (13/16)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "80% (4/5)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "64% (9/14)",
+              "right": "19% (3/16)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (1/2)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "5",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "2",
+              "right": "11",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Net points won",
+              "left": "20% (1/5)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "81% (17/21)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "63% (10/16)",
+              "right": "19% (4/21)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "73% (27/37)",
+              "right": "27% (10/37)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "76%",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "92% (12/13)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (4/8)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (6/16)",
+              "right": "8% (1/13)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "100% (5/5)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "4",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "10",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (16/21)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (11/21)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "64% (27/42)",
+              "right": "36% (15/42)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 5",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "64%",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (13/18)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (5/14)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (6/8)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "10",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (18/27)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (11/22)",
+              "right": "33% (9/27)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (29/49)",
+              "right": "41% (20/49)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

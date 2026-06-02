@@ -31,6 +31,7 @@ MIGRATIONS_DIR = ROOT / "pipeline" / "tennis" / "warehouse" / "migrations"
 LEGACY_MIGRATIONS_DIR = ROOT / "pipeline" / "tennis_warehouse_migrations"
 RANKINGS_PATH = ROOT / "data-private" / "reference" / "tennis" / "player-rankings.json"
 FLASHSCORE_DIR = ROOT / "data-private" / "reference" / "tennis" / "flashscore-match-stats"
+LIVESPORT_POINT_BY_POINT_DIR = ROOT / "data-private" / "reference" / "tennis" / "livesport-point-by-point"
 SOFASCORE_DIR = ROOT / "data-private" / "reference" / "tennis" / "sofascore-match-data"
 SOFASCORE_PLAYER_STATS_DIR = ROOT / "data-private" / "reference" / "tennis" / "sofascore-player-stats"
 TENNIS_REFERENCE_DIR = ROOT / "data-private" / "reference" / "tennis"
@@ -660,6 +661,82 @@ def init_db(conn: sqlite3.Connection) -> None:
           primary key (sofascore_event_id, set_number, game_number, point_index)
         );
 
+        create table if not exists tennis_livesport_matches (
+          livesport_match_id text primary key,
+          slate_date text,
+          board_match_id text,
+          source_url text,
+          captured_at text,
+          board_title text,
+          home_player_name text,
+          away_player_name text,
+          home_normalized_name text,
+          away_normalized_name text,
+          home_slug text,
+          away_slug text,
+          home_player_slug_id text,
+          away_player_slug_id text,
+          set_count integer,
+          game_count integer,
+          point_count integer,
+          break_game_count integer,
+          break_point_count integer,
+          set_point_count integer,
+          raw_json text not null,
+          updated_at text not null default current_timestamp
+        );
+
+        create table if not exists tennis_livesport_replay_games (
+          livesport_match_id text not null,
+          slate_date text,
+          board_match_id text,
+          set_number integer not null,
+          game_number integer not null,
+          home_player_name text,
+          away_player_name text,
+          serving_side text,
+          scoring_side text,
+          serving_player_name text,
+          scoring_player_name text,
+          home_games_after integer,
+          away_games_after integer,
+          point_count integer,
+          break_point_count integer,
+          set_point_count integer,
+          deuce_count integer,
+          break_game integer,
+          raw_json text not null,
+          updated_at text not null default current_timestamp,
+          primary key (livesport_match_id, set_number, game_number)
+        );
+
+        create table if not exists tennis_livesport_replay_points (
+          livesport_match_id text not null,
+          slate_date text,
+          board_match_id text,
+          set_number integer not null,
+          game_number integer not null,
+          point_index integer not null,
+          home_player_name text,
+          away_player_name text,
+          serving_side text,
+          scoring_side text,
+          serving_player_name text,
+          scoring_player_name text,
+          point_winner_side text,
+          point_winner_player_name text,
+          home_point text,
+          away_point text,
+          break_point integer,
+          set_point integer,
+          match_point integer,
+          flags_json text,
+          raw_text text,
+          raw_json text not null,
+          updated_at text not null default current_timestamp,
+          primary key (livesport_match_id, set_number, game_number, point_index)
+        );
+
         create table if not exists tennis_kalshi_match_markets (
           market_ticker text primary key,
           event_ticker text not null,
@@ -807,6 +884,12 @@ def init_db(conn: sqlite3.Connection) -> None:
           on tennis_sofascore_replay_games(board_match_id, set_number, game_number);
         create index if not exists idx_tennis_sofascore_replay_points_board
           on tennis_sofascore_replay_points(board_match_id, set_number, game_number, point_index);
+        create index if not exists idx_tennis_livesport_matches_board
+          on tennis_livesport_matches(board_match_id);
+        create index if not exists idx_tennis_livesport_replay_games_board
+          on tennis_livesport_replay_games(board_match_id, set_number, game_number);
+        create index if not exists idx_tennis_livesport_replay_points_board
+          on tennis_livesport_replay_points(board_match_id, set_number, game_number, point_index);
         create index if not exists idx_tennis_kalshi_markets_event
           on tennis_kalshi_match_markets(event_ticker);
         create index if not exists idx_tennis_kalshi_markets_slate
@@ -2071,6 +2154,245 @@ def import_flashscore(conn: sqlite3.Connection, directory: Path = FLASHSCORE_DIR
     return counts
 
 
+def find_board_match_for_players(
+    conn: sqlite3.Connection,
+    slate_date: str | None,
+    player_a: str | None,
+    player_b: str | None,
+) -> sqlite3.Row | None:
+    if not slate_date or not player_a or not player_b:
+        return None
+    norm_a = normalize_name(player_a)
+    norm_b = normalize_name(player_b)
+    if not norm_a or not norm_b:
+        return None
+    return conn.execute(
+        """
+        select match_id, title
+        from tennis_matches
+        where slate_date = ?
+          and (
+            (player1_normalized_name = ? and player2_normalized_name = ?)
+            or (player1_normalized_name = ? and player2_normalized_name = ?)
+          )
+        limit 1
+        """,
+        (slate_date, norm_a, norm_b, norm_b, norm_a),
+    ).fetchone()
+
+
+def import_livesport_point_by_point(
+    conn: sqlite3.Connection,
+    directory: Path = LIVESPORT_POINT_BY_POINT_DIR,
+) -> dict[str, int]:
+    counts = {"matches": 0, "replay_games": 0, "replay_points": 0}
+    if not directory.exists():
+        return counts
+
+    for file_path in sorted(directory.glob("*.json")):
+        payload = read_json(file_path)
+        livesport_match_id = str(payload.get("matchId") or file_path.stem)
+        if not livesport_match_id:
+            continue
+        players = payload.get("urlPlayerMap") or []
+        home = next((player for player in players if player.get("side") == "home"), players[0] if players else {})
+        away = next((player for player in players if player.get("side") == "away"), players[1] if len(players) > 1 else {})
+        home_name = home.get("name")
+        away_name = away.get("name")
+        upsert_player(conn, home_name)
+        upsert_player(conn, away_name)
+        summary = payload.get("summary") or {}
+        inferred_board = find_board_match_for_players(conn, payload.get("slateDate"), home_name, away_name)
+        board_match_id = payload.get("boardMatchId") or (inferred_board["match_id"] if inferred_board else None)
+        board_title = payload.get("boardTitle") or (inferred_board["title"] if inferred_board else None)
+        conn.execute(
+            """
+            insert into tennis_livesport_matches(
+              livesport_match_id, slate_date, board_match_id, source_url,
+              captured_at, board_title, home_player_name, away_player_name,
+              home_normalized_name, away_normalized_name, home_slug, away_slug,
+              home_player_slug_id, away_player_slug_id, set_count, game_count,
+              point_count, break_game_count, break_point_count, set_point_count,
+              raw_json
+            )
+            values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            on conflict(livesport_match_id) do update set
+              slate_date=excluded.slate_date,
+              board_match_id=excluded.board_match_id,
+              source_url=excluded.source_url,
+              captured_at=excluded.captured_at,
+              board_title=excluded.board_title,
+              home_player_name=excluded.home_player_name,
+              away_player_name=excluded.away_player_name,
+              home_normalized_name=excluded.home_normalized_name,
+              away_normalized_name=excluded.away_normalized_name,
+              home_slug=excluded.home_slug,
+              away_slug=excluded.away_slug,
+              home_player_slug_id=excluded.home_player_slug_id,
+              away_player_slug_id=excluded.away_player_slug_id,
+              set_count=excluded.set_count,
+              game_count=excluded.game_count,
+              point_count=excluded.point_count,
+              break_game_count=excluded.break_game_count,
+              break_point_count=excluded.break_point_count,
+              set_point_count=excluded.set_point_count,
+              raw_json=excluded.raw_json,
+              updated_at=current_timestamp
+            """,
+            (
+                livesport_match_id,
+                payload.get("slateDate"),
+                board_match_id,
+                payload.get("sourceUrl"),
+                payload.get("capturedAt"),
+                board_title,
+                home_name,
+                away_name,
+                normalize_name(home_name),
+                normalize_name(away_name),
+                home.get("slug"),
+                away.get("slug"),
+                home.get("playerSlugId"),
+                away.get("playerSlugId"),
+                as_int(summary.get("setCount")),
+                as_int(summary.get("gameCount")),
+                as_int(summary.get("pointCount")),
+                as_int(summary.get("breakGameCount")),
+                as_int(summary.get("breakPointCount")),
+                as_int(summary.get("setPointCount")),
+                dumps(payload),
+            ),
+        )
+        counts["matches"] += 1
+
+        for set_payload in payload.get("sets") or []:
+            set_number = as_int(set_payload.get("setNumber"))
+            if set_number is None:
+                continue
+            for game_payload in set_payload.get("games") or []:
+                game_number = as_int(game_payload.get("gameNumber"))
+                if game_number is None:
+                    continue
+                conn.execute(
+                    """
+                    insert into tennis_livesport_replay_games(
+                      livesport_match_id, slate_date, board_match_id, set_number,
+                      game_number, home_player_name, away_player_name, serving_side,
+                      scoring_side, serving_player_name, scoring_player_name,
+                      home_games_after, away_games_after, point_count,
+                      break_point_count, set_point_count, deuce_count, break_game,
+                      raw_json
+                    )
+                    values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    on conflict(livesport_match_id, set_number, game_number) do update set
+                      slate_date=excluded.slate_date,
+                      board_match_id=excluded.board_match_id,
+                      home_player_name=excluded.home_player_name,
+                      away_player_name=excluded.away_player_name,
+                      serving_side=excluded.serving_side,
+                      scoring_side=excluded.scoring_side,
+                      serving_player_name=excluded.serving_player_name,
+                      scoring_player_name=excluded.scoring_player_name,
+                      home_games_after=excluded.home_games_after,
+                      away_games_after=excluded.away_games_after,
+                      point_count=excluded.point_count,
+                      break_point_count=excluded.break_point_count,
+                      set_point_count=excluded.set_point_count,
+                      deuce_count=excluded.deuce_count,
+                      break_game=excluded.break_game,
+                      raw_json=excluded.raw_json,
+                      updated_at=current_timestamp
+                    """,
+                    (
+                        livesport_match_id,
+                        payload.get("slateDate"),
+                        board_match_id,
+                        set_number,
+                        game_number,
+                        home_name,
+                        away_name,
+                        game_payload.get("servingSide"),
+                        game_payload.get("scoringSide"),
+                        game_payload.get("servingPlayer"),
+                        game_payload.get("scoringPlayer"),
+                        as_int(game_payload.get("homeGamesAfter")),
+                        as_int(game_payload.get("awayGamesAfter")),
+                        as_int(game_payload.get("pointCount")),
+                        as_int(game_payload.get("breakPointCount")),
+                        as_int(game_payload.get("setPointCount")),
+                        as_int(game_payload.get("deuceCount")),
+                        bool_int(game_payload.get("breakGame")),
+                        dumps(game_payload),
+                    ),
+                )
+                counts["replay_games"] += 1
+                for point_payload in game_payload.get("points") or []:
+                    point_index = as_int(point_payload.get("pointIndex"))
+                    if point_index is None:
+                        continue
+                    conn.execute(
+                        """
+                        insert into tennis_livesport_replay_points(
+                          livesport_match_id, slate_date, board_match_id, set_number,
+                          game_number, point_index, home_player_name, away_player_name,
+                          serving_side, scoring_side, serving_player_name,
+                          scoring_player_name, point_winner_side,
+                          point_winner_player_name, home_point, away_point,
+                          break_point, set_point, match_point, flags_json,
+                          raw_text, raw_json
+                        )
+                        values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        on conflict(livesport_match_id, set_number, game_number, point_index) do update set
+                          slate_date=excluded.slate_date,
+                          board_match_id=excluded.board_match_id,
+                          home_player_name=excluded.home_player_name,
+                          away_player_name=excluded.away_player_name,
+                          serving_side=excluded.serving_side,
+                          scoring_side=excluded.scoring_side,
+                          serving_player_name=excluded.serving_player_name,
+                          scoring_player_name=excluded.scoring_player_name,
+                          point_winner_side=excluded.point_winner_side,
+                          point_winner_player_name=excluded.point_winner_player_name,
+                          home_point=excluded.home_point,
+                          away_point=excluded.away_point,
+                          break_point=excluded.break_point,
+                          set_point=excluded.set_point,
+                          match_point=excluded.match_point,
+                          flags_json=excluded.flags_json,
+                          raw_text=excluded.raw_text,
+                          raw_json=excluded.raw_json,
+                          updated_at=current_timestamp
+                        """,
+                        (
+                            livesport_match_id,
+                            payload.get("slateDate"),
+                            board_match_id,
+                            set_number,
+                            game_number,
+                            point_index,
+                            home_name,
+                            away_name,
+                            point_payload.get("servingSide"),
+                            point_payload.get("gameWinnerSide"),
+                            point_payload.get("servingPlayer"),
+                            point_payload.get("gameWinnerPlayer"),
+                            point_payload.get("pointWinnerSide"),
+                            point_payload.get("pointWinnerPlayer"),
+                            point_payload.get("homePoint"),
+                            point_payload.get("awayPoint"),
+                            bool_int(point_payload.get("breakPoint")),
+                            bool_int(point_payload.get("setPoint")),
+                            bool_int(point_payload.get("matchPoint")),
+                            dumps(point_payload.get("flags") or []),
+                            point_payload.get("raw"),
+                            dumps(point_payload),
+                        ),
+                    )
+                    counts["replay_points"] += 1
+    conn.commit()
+    return counts
+
+
 def import_sofascore(conn: sqlite3.Connection, directory: Path = SOFASCORE_DIR) -> dict[str, int]:
     counts = {"matches": 0, "stat_rows": 0, "player_stat_rows": 0, "replay_games": 0, "replay_points": 0}
     if not directory.exists():
@@ -2667,6 +2989,9 @@ def print_summary(conn: sqlite3.Connection) -> None:
         "tennis_recent_matches": "select count(*) as count from tennis_recent_matches",
         "tennis_flashscore_stat_rows": "select count(*) as count from tennis_flashscore_stat_rows",
         "tennis_flashscore_player_stat_rows": "select count(*) as count from tennis_flashscore_player_stat_rows",
+        "tennis_livesport_matches": "select slate_date, count(*) as count from tennis_livesport_matches group by slate_date order by slate_date",
+        "tennis_livesport_replay_games": "select count(*) as count from tennis_livesport_replay_games",
+        "tennis_livesport_replay_points": "select count(*) as count from tennis_livesport_replay_points",
         "tennis_sofascore_matches": "select slate_date, count(*) as count from tennis_sofascore_matches group by slate_date order by slate_date",
         "tennis_sofascore_stat_rows": "select count(*) as count from tennis_sofascore_stat_rows",
         "tennis_sofascore_player_stat_rows": "select count(*) as count from tennis_sofascore_player_stat_rows",
@@ -2696,6 +3021,9 @@ def main() -> None:
 
     flashscore_parser = subparsers.add_parser("import-flashscore")
     flashscore_parser.add_argument("--dir", default=str(FLASHSCORE_DIR))
+
+    livesport_parser = subparsers.add_parser("import-livesport-point-by-point")
+    livesport_parser.add_argument("--dir", default=str(LIVESPORT_POINT_BY_POINT_DIR))
 
     sofascore_parser = subparsers.add_parser("import-sofascore")
     sofascore_parser.add_argument("--dir", default=str(SOFASCORE_DIR))
@@ -2730,6 +3058,9 @@ def main() -> None:
         print(json.dumps(counts, indent=2, sort_keys=True))
     elif args.command == "import-flashscore":
         counts = import_flashscore(conn, Path(args.dir))
+        print(json.dumps(counts, indent=2, sort_keys=True))
+    elif args.command == "import-livesport-point-by-point":
+        counts = import_livesport_point_by_point(conn, Path(args.dir))
         print(json.dumps(counts, indent=2, sort_keys=True))
     elif args.command == "import-sofascore":
         counts = import_sofascore(conn, Path(args.dir))

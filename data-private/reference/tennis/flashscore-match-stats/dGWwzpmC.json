@@ -1,0 +1,1022 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rg-m-jakub-mensik-joao-fonseca-2026-06-02",
+  "boardTitle": "Jakub Mensik vs Joao Fonseca",
+  "boardPlayerName": "Jakub Mensik",
+  "recentOpponentName": "Andrey Rublev",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "31 May 26",
+  "recentIsoDate": "2026-05-31",
+  "recentResult": "RUS  6-3 7-66 4-6 2-6 6-3 4th",
+  "flashscoreLabel": "Mensik J. - Rublev A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Mensik J.",
+    "Rublev A."
+  ],
+  "generatedAt": "2026-06-01T23:52:11.918Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/dGWwzpmC/",
+  "matchId": "dGWwzpmC",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_dGWwzpmC",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_dGWwzpmC"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 8,
+        "rightGames": 6,
+        "duration": "1:06"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      },
+      {
+        "label": "Set 5",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:48"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "13",
+              "right": "8",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "9",
+              "right": "4",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "63%",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (77/100)",
+              "right": "70% (74/105)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (23/53)",
+              "right": "49% (31/63)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "10/15",
+              "right": "14/18",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (31/105)",
+              "right": "23% (23/100)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "51% (32/63)",
+              "right": "57% (30/53)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/18",
+              "right": "5/15",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "69",
+              "right": "45",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "65",
+              "right": "36",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "76% (25/33)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (100/153)",
+              "right": "63% (105/168)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (63/168)",
+              "right": "35% (53/153)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (163/321)",
+              "right": "49% (158/321)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (20/25)",
+              "right": "83% (19/23)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (4/23)",
+              "right": "20% (5/25)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (24/48)",
+              "right": "50% (24/48)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "52%",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (17/23)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (7/14)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "3/4",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "56% (9/16)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "27% (4/15)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "0/3",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "8",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "7",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (24/37)",
+              "right": "58% (18/31)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (13/31)",
+              "right": "35% (13/37)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (37/68)",
+              "right": "46% (31/68)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "70%",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (18/23)",
+              "right": "68% (25/37)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (9/14)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "6/7",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (12/37)",
+              "right": "22% (5/23)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (9/16)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/7",
+              "right": "1/2",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "24",
+              "right": "17",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "12",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (10/14)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "73% (27/37)",
+              "right": "60% (32/53)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (21/53)",
+              "right": "27% (10/37)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (48/90)",
+              "right": "47% (42/90)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "80%",
+              "right": "73%",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (18/24)",
+              "right": "89% (17/19)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (2/6)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "0/0",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "11% (2/19)",
+              "right": "25% (6/24)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (4/7)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/5",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "6",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "4",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (20/30)",
+              "right": "77% (20/26)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (6/26)",
+              "right": "33% (10/30)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (26/56)",
+              "right": "54% (30/56)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "60%",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (6/10)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "9% (1/11)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "5/6",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (5/18)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (6/12)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/6",
+              "right": "3/3",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "6",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "4",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "33% (7/21)",
+              "right": "63% (19/30)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (11/30)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "35% (18/51)",
+              "right": "65% (33/51)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 5",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "54%",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "90% (18/20)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (4/8)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "0/1",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (3/15)",
+              "right": "10% (2/20)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "69% (9/13)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/2",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "8",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "9",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "79% (22/28)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (12/28)",
+              "right": "21% (6/28)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (34/56)",
+              "right": "39% (22/56)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Rublev A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

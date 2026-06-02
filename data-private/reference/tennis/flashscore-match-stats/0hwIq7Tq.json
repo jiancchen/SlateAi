@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rg-w-mirra-andreeva-sorana-cirstea-2026-06-02",
+  "boardTitle": "Mirra Andreeva vs Sorana Cirstea",
+  "boardPlayerName": "Mirra Andreeva",
+  "recentOpponentName": "Jil Teichmann",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "31 May 26",
+  "recentIsoDate": "2026-05-31",
+  "recentResult": "SUI  6-3 6-2 4th",
+  "flashscoreLabel": "Andreeva M. - Teichmann J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Andreeva M.",
+    "Teichmann J."
+  ],
+  "generatedAt": "2026-06-01T23:52:15.613Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/0hwIq7Tq/",
+  "matchId": "0hwIq7Tq",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_0hwIq7Tq",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_0hwIq7Tq"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:41"
+      }
+    ],
+    "totalDuration": "1:26"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "70%",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (21/34)",
+              "right": "45% (19/42)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (10/16)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "5/11",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "55% (23/42)",
+              "right": "38% (13/34)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (12/18)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/11",
+              "right": "2/4",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "16",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "38",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Net points won",
+              "left": "56% (5/9)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (31/50)",
+              "right": "42% (25/60)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "58% (35/60)",
+              "right": "38% (19/50)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (66/110)",
+              "right": "40% (44/110)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (6/8)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (6/9)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "69%",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (11/18)",
+              "right": "48% (13/27)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (4/6)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "5/8",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "52% (14/27)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (7/12)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "1/3",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "7",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "23",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Net points won",
+              "left": "40% (2/5)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (15/24)",
+              "right": "46% (18/39)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (21/39)",
+              "right": "38% (9/24)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (36/63)",
+              "right": "43% (27/63)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "71%",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (10/16)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/3",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "60% (9/15)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "83% (5/6)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "1/1",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "9",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "15",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (16/26)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "67% (14/21)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "64% (30/47)",
+              "right": "36% (17/47)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Andreeva M.",
+              "rightPlayer": "Teichmann J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

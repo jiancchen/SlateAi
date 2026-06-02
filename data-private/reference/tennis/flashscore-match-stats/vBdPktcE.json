@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rg-w-elina-svitolina-marta-kostyuk-2026-06-02",
+  "boardTitle": "Elina Svitolina vs Marta Kostyuk",
+  "boardPlayerName": "Marta Kostyuk",
+  "recentOpponentName": "Iga Swiatek",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "31 May 26",
+  "recentIsoDate": "2026-05-31",
+  "recentResult": "POL  7-5 6-1 4th",
+  "flashscoreLabel": "Kostyuk M. - Swiatek I.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Kostyuk M.",
+    "Swiatek I."
+  ],
+  "generatedAt": "2026-06-01T23:52:20.981Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/vBdPktcE/",
+  "matchId": "vBdPktcE",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_vBdPktcE",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_vBdPktcE"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:00"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:40"
+      }
+    ],
+    "totalDuration": "1:40"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "5",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "66%",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (33/51)",
+              "right": "45% (17/38)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (12/27)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/9",
+              "right": "3/9",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "55% (21/38)",
+              "right": "35% (18/51)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "65% (13/20)",
+              "right": "56% (15/27)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/9",
+              "right": "3/9",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "25",
+              "right": "13",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "27",
+              "right": "39",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Net points won",
+              "left": "70% (7/10)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (45/78)",
+              "right": "41% (24/58)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "59% (34/58)",
+              "right": "42% (33/78)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (79/136)",
+              "right": "42% (57/136)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "70% (7/10)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (6/9)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total games won",
+              "left": "68% (13/19)",
+              "right": "32% (6/19)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "69%",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (19/31)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (9/19)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/3",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "52% (13/25)",
+              "right": "39% (12/31)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "2/5",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "6",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "25",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (28/50)",
+              "right": "47% (17/36)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (19/36)",
+              "right": "44% (22/50)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (47/86)",
+              "right": "45% (39/86)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "59%",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (14/20)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "3/6",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "62% (8/13)",
+              "right": "30% (6/20)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "78% (7/9)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "1/4",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "7",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "14",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (17/28)",
+              "right": "32% (7/22)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "68% (15/22)",
+              "right": "39% (11/28)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "64% (32/50)",
+              "right": "36% (18/50)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Kostyuk M.",
+              "rightPlayer": "Swiatek I."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

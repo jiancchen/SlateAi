@@ -1,0 +1,530 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rg-w-mirra-andreeva-sorana-cirstea-2026-06-02",
+  "boardTitle": "Mirra Andreeva vs Sorana Cirstea",
+  "boardPlayerName": "Sorana Cirstea",
+  "recentOpponentName": "Xiyu Wang",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "31 May 26",
+  "recentIsoDate": "2026-05-31",
+  "recentResult": "CHN  6-3 7-64 4th",
+  "flashscoreLabel": "Cirstea S. - Wang Xiy.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/results/",
+  "players": [
+    "Cirstea S.",
+    "Wang Xiy."
+  ],
+  "generatedAt": "2026-06-01T23:52:17.385Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/lY9BTfwn/",
+  "matchId": "lY9BTfwn",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_lY9BTfwn",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_lY9BTfwn"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:47"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 4,
+        "duration": "1:10"
+      }
+    ],
+    "totalDuration": "1:57"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "81%",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (30/47)",
+              "right": "57% (33/58)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (12/27)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/10",
+              "right": "6/11",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (25/58)",
+              "right": "36% (17/47)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (10/14)",
+              "right": "56% (15/27)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/11",
+              "right": "4/10",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "26",
+              "right": "23",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "33",
+              "right": "35",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (9/12)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (42/74)",
+              "right": "51% (37/72)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (35/72)",
+              "right": "43% (32/74)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (77/146)",
+              "right": "47% (69/146)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "64% (7/11)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (5/10)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Total games won",
+              "left": "57% (12/21)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "75%",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (14/20)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (8/17)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "2/4",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (9/21)",
+              "right": "30% (6/20)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (5/7)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/5",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "9",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "15",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (22/37)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (14/28)",
+              "right": "41% (15/37)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (36/65)",
+              "right": "45% (29/65)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "84%",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (16/27)",
+              "right": "57% (21/37)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "4/7",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (16/37)",
+              "right": "41% (11/27)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (5/7)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "3/5",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "14",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "20",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (20/37)",
+              "right": "52% (23/44)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (21/44)",
+              "right": "46% (17/37)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (41/81)",
+              "right": "49% (40/81)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Cirstea S.",
+              "rightPlayer": "Wang Xiy."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

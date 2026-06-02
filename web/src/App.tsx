@@ -3569,7 +3569,7 @@ function App() {
         }
       })
 
-    const displayHitRunRbiRows = hitRunRbiRows
+    const displayHitRunRbiRows = hitRunRbiRows.length ? hitRunRbiRows : battingProductionRows
 
     const gameIdByTitle = Object.fromEntries(mlbGames.map((game: AnyRecord) => [game.title, game.id]))
     const homeRunPayloadRows = Array.isArray(activeHomeRunBoard?.picks) ? activeHomeRunBoard.picks : []

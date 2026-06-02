@@ -1,0 +1,858 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rg-m-jakub-mensik-joao-fonseca-2026-06-02",
+  "boardTitle": "Jakub Mensik vs Joao Fonseca",
+  "boardPlayerName": "Joao Fonseca",
+  "recentOpponentName": "Casper Ruud",
+  "recentIndex": 0,
+  "recentEvent": "Paris",
+  "recentDate": "31 May 26",
+  "recentIsoDate": "2026-05-31",
+  "recentResult": "NOR  7-5 7-68 5-7 6-2 4th",
+  "flashscoreLabel": "Ruud C. - Fonseca J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Ruud C.",
+    "Fonseca J."
+  ],
+  "generatedAt": "2026-06-01T23:52:13.845Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/0UhXFklC/",
+  "matchId": "0UhXFklC",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_0UhXFklC",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_0UhXFklC"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:54"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 8,
+        "rightGames": 10,
+        "duration": "1:24"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:58"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "2",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "73%",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (78/117)",
+              "right": "72% (74/103)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (22/42)",
+              "right": "61% (23/38)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "9/13",
+              "right": "7/9",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (29/103)",
+              "right": "33% (39/117)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "39% (15/38)",
+              "right": "48% (20/42)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/9",
+              "right": "4/13",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "51",
+              "right": "51",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "52",
+              "right": "52",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Net points won",
+              "left": "74% (31/42)",
+              "right": "68% (28/41)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (100/159)",
+              "right": "69% (97/141)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (44/141)",
+              "right": "37% (59/159)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (144/300)",
+              "right": "52% (156/300)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "82% (18/22)",
+              "right": "91% (20/22)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return games won",
+              "left": "9% (2/22)",
+              "right": "18% (4/22)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total games won",
+              "left": "45% (20/44)",
+              "right": "55% (24/44)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "65%",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (20/26)",
+              "right": "90% (18/20)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (6/14)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "0/0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "10% (2/20)",
+              "right": "23% (6/26)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (5/11)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/5",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "14",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "12",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (8/12)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (26/40)",
+              "right": "77% (24/31)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (7/31)",
+              "right": "35% (14/40)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (33/71)",
+              "right": "54% (38/71)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "80%",
+              "right": "73%",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (26/41)",
+              "right": "60% (24/40)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "6/7",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (16/40)",
+              "right": "37% (15/41)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (5/15)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/7",
+              "right": "1/3",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "25",
+              "right": "12",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "17",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Net points won",
+              "left": "82% (9/11)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (32/51)",
+              "right": "62% (34/55)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (21/55)",
+              "right": "37% (19/51)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (53/106)",
+              "right": "50% (53/106)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "76%",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (21/30)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (8/12)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "1/2",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (7/25)",
+              "right": "30% (9/30)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/2",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "12",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "17",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Net points won",
+              "left": "82% (9/11)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (29/42)",
+              "right": "67% (22/33)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (11/33)",
+              "right": "31% (13/42)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (40/75)",
+              "right": "47% (35/75)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "82%",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (11/20)",
+              "right": "78% (14/18)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (2/6)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "0/0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (4/18)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (1/4)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/3",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "13",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "6",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (5/8)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (13/26)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (5/22)",
+              "right": "50% (13/26)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (18/48)",
+              "right": "63% (30/48)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Ruud C.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

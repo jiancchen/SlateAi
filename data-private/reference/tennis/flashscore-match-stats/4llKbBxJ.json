@@ -1,0 +1,1001 @@
+{
+  "sourceKind": "recent-match",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rg-m-rafael-jodar-alexander-zverev-2026-06-02",
+  "boardTitle": "Rafael Jodar vs Alexander Zverev",
+  "boardPlayerName": "Rafael Jodar",
+  "recentOpponentName": "Alex Michelsen",
+  "recentIndex": 1,
+  "recentEvent": "",
+  "recentDate": "29 May 26",
+  "recentIsoDate": "2026-05-29",
+  "recentResult": "USA  7-62 6-75 4-6 6-3 6-3 3rd",
+  "flashscoreLabel": "Michelsen A. - Jodar R.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "players": [
+    "Michelsen A.",
+    "Jodar R."
+  ],
+  "generatedAt": "2026-06-01T23:52:08.353Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/4llKbBxJ/",
+  "matchId": "4llKbBxJ",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_4llKbBxJ",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_4llKbBxJ"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 7,
+        "duration": "0:54"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:04"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      },
+      {
+        "label": "Set 5",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "4:17"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "13",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "11",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "64%",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (79/124)",
+              "right": "71% (73/103)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (28/63)",
+              "right": "48% (28/58)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/16",
+              "right": "5/11",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "187 km/h",
+              "right": "187 km/h",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "158 km/h",
+              "right": "152 km/h",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (30/103)",
+              "right": "36% (45/124)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (30/58)",
+              "right": "56% (35/63)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/11",
+              "right": "8/16",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "51",
+              "right": "71",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "59",
+              "right": "48",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (32/48)",
+              "right": "70% (21/30)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (107/187)",
+              "right": "63% (101/161)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (60/161)",
+              "right": "43% (80/187)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (167/348)",
+              "right": "52% (181/348)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "69% (18/26)",
+              "right": "77% (20/26)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return games won",
+              "left": "23% (6/26)",
+              "right": "31% (8/26)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total games won",
+              "left": "46% (24/52)",
+              "right": "54% (28/52)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "71%",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "47% (9/19)",
+              "right": "62% (18/29)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (10/15)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "1/3",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (11/29)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (7/12)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "2/2",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "13",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "13",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (19/34)",
+              "right": "56% (23/41)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (18/41)",
+              "right": "44% (15/34)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (37/75)",
+              "right": "51% (38/75)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "55%",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (23/31)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (6/14)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "2/3",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (5/21)",
+              "right": "26% (8/31)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "41% (7/17)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "1/3",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "16",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "13",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (29/45)",
+              "right": "68% (26/38)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (12/38)",
+              "right": "36% (16/45)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (41/83)",
+              "right": "51% (42/83)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "61%",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (14/20)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (7/14)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "1/3",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (6/17)",
+              "right": "30% (6/20)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "1/2",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "10",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "11",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (21/34)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (12/28)",
+              "right": "38% (13/34)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (33/62)",
+              "right": "47% (29/62)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "67%",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (17/26)",
+              "right": "82% (18/22)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (3/10)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "1/1",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (4/22)",
+              "right": "35% (9/26)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (7/11)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/3",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "15",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "6",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (20/36)",
+              "right": "67% (22/33)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (11/33)",
+              "right": "44% (16/36)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (31/69)",
+              "right": "55% (38/69)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 5",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "67%",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (16/28)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "20% (2/10)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "0/1",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (4/14)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/6",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "17",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "5",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "47% (18/38)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (7/21)",
+              "right": "53% (20/38)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (25/59)",
+              "right": "58% (34/59)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Michelsen A.",
+              "rightPlayer": "Jodar R."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

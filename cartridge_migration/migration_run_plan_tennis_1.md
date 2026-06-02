@@ -550,7 +550,7 @@ Important examples:
 
 - FanDuel lines are allowed if captured before match.
 - Kalshi pre-match price is allowed if captured before match.
-- SofaScore replay game flow is not allowed for pregame prediction of the same match.
+- SofaScore or Livesport/Flashscore replay game flow is not allowed for pregame prediction of the same match.
 - Results are not allowed for pregame prediction.
 - Later replay/backtest may use settled data, but must be marked as `rerun` or `backtest`.
 
@@ -560,7 +560,7 @@ Each slate should eventually have these lifecycle records:
 
 - Pregame run: locked before matches start; uses only allowed pregame inputs.
 - Live run: optional; records live prices and score state when used, never overwrites pregame.
-- Postmatch run: imports results, SofaScore replay/stats, Kalshi candles, and grades.
+- Postmatch run: imports results, Livesport/Flashscore point-by-point replay, SofaScore replay/stats when mapped, Kalshi candles, and grades.
 - Backtest run: reruns model/evaluator on historical rows with explicit leakage mode.
 
 The postmatch run is required before trusting model-training rows for that date. It should run `npm run data:health:tennis -- --date YYYY-MM-DD --settled` and store the result in the run artifacts.

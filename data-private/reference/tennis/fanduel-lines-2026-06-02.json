@@ -1,0 +1,364 @@
+{
+  "date": "2026-06-02",
+  "source": "FanDuel Sportsbook event-page Chrome scrape",
+  "capturedAt": "2026-06-01T23:54:22.790Z",
+  "matches": [
+    {
+      "match": "Elina Svitolina vs Marta Kostyuk",
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/elina-svitolina-v-marta-kostyuk-35670937",
+      "eventId": "35670937",
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Elina Svitolina",
+            "odds": 104
+          },
+          {
+            "player": "Marta Kostyuk",
+            "odds": -125
+          }
+        ],
+        "gameHandicap": [
+          {
+            "player": "Elina Svitolina",
+            "spread": 1.5,
+            "odds": -120
+          },
+          {
+            "player": "Marta Kostyuk",
+            "spread": -1.5,
+            "odds": -110
+          }
+        ],
+        "totalGames": [
+          {
+            "side": "Over",
+            "line": 21.5,
+            "odds": -122
+          },
+          {
+            "side": "Under",
+            "line": 21.5,
+            "odds": -110
+          }
+        ],
+        "firstSetTotalGames": [
+          {
+            "side": "Over",
+            "line": 9.5,
+            "odds": -108
+          },
+          {
+            "side": "Under",
+            "line": 9.5,
+            "odds": -128
+          }
+        ],
+        "winAtLeastOneSet": [
+          {
+            "market": "Marta Kostyuk to win at least one set",
+            "player": "Marta Kostyuk",
+            "selection": "Marta Kostyuk Yes",
+            "odds": -350
+          },
+          {
+            "market": "Marta Kostyuk to win at least one set",
+            "player": "Marta Kostyuk",
+            "selection": "Marta Kostyuk No",
+            "odds": 240
+          },
+          {
+            "market": "Elina Svitolina to win at least one set",
+            "player": "Elina Svitolina",
+            "selection": "Elina Svitolina Yes",
+            "odds": -260
+          },
+          {
+            "market": "Elina Svitolina to win at least one set",
+            "player": "Elina Svitolina",
+            "selection": "Elina Svitolina No",
+            "odds": 186
+          }
+        ]
+      },
+      "capturedAt": "2026-06-01T23:53:52.633Z",
+      "source": "FanDuel Sportsbook event-page Chrome scrape"
+    },
+    {
+      "match": "Mirra Andreeva vs Sorana Cirstea",
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/mirra-andreeva-v-sorana-cirstea-35672154",
+      "eventId": "35672154",
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Mirra Andreeva",
+            "odds": -196
+          },
+          {
+            "player": "Sorana Cirstea",
+            "odds": 162
+          }
+        ],
+        "gameHandicap": [
+          {
+            "player": "Mirra Andreeva",
+            "spread": -3.5,
+            "odds": -112
+          },
+          {
+            "player": "Sorana Cirstea",
+            "spread": 3.5,
+            "odds": -118
+          }
+        ],
+        "totalGames": [
+          {
+            "side": "Over",
+            "line": 21.5,
+            "odds": -118
+          },
+          {
+            "side": "Under",
+            "line": 21.5,
+            "odds": -112
+          }
+        ],
+        "firstSetTotalGames": [
+          {
+            "side": "Over",
+            "line": 9.5,
+            "odds": -106
+          },
+          {
+            "side": "Under",
+            "line": 9.5,
+            "odds": -132
+          }
+        ],
+        "winAtLeastOneSet": [
+          {
+            "market": "Sorana Cirstea to win at least one set",
+            "player": "Sorana Cirstea",
+            "selection": "Sorana Cirstea Yes",
+            "odds": -166
+          },
+          {
+            "market": "Sorana Cirstea to win at least one set",
+            "player": "Sorana Cirstea",
+            "selection": "Sorana Cirstea No",
+            "odds": 120
+          },
+          {
+            "market": "Mirra Andreeva to win at least one set",
+            "player": "Mirra Andreeva",
+            "selection": "Mirra Andreeva Yes",
+            "odds": -600
+          },
+          {
+            "market": "Mirra Andreeva to win at least one set",
+            "player": "Mirra Andreeva",
+            "selection": "Mirra Andreeva No",
+            "odds": 370
+          }
+        ]
+      },
+      "capturedAt": "2026-06-01T23:54:02.691Z",
+      "source": "FanDuel Sportsbook event-page Chrome scrape"
+    },
+    {
+      "match": "Jakub Mensik vs Joao Fonseca",
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/jakub-mensik-v-joao-fonseca-35672751",
+      "eventId": "35672751",
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Jakub Mensik",
+            "odds": 172
+          },
+          {
+            "player": "Joao Fonseca",
+            "odds": -210
+          }
+        ],
+        "gameHandicap": [
+          {
+            "player": "Jakub Mensik",
+            "spread": 4.5,
+            "odds": -124
+          },
+          {
+            "player": "Joao Fonseca",
+            "spread": -4.5,
+            "odds": -108
+          }
+        ],
+        "totalGames": [
+          {
+            "side": "Over",
+            "line": 37.5,
+            "odds": -118
+          },
+          {
+            "side": "Under",
+            "line": 37.5,
+            "odds": -112
+          }
+        ],
+        "firstSetTotalGames": [
+          {
+            "side": "Over",
+            "line": 9.5,
+            "odds": -128
+          },
+          {
+            "side": "Under",
+            "line": 9.5,
+            "odds": -110
+          }
+        ],
+        "winAtLeastOneSet": [
+          {
+            "market": "Joao Fonseca to win at least one set",
+            "player": "Joao Fonseca",
+            "selection": "Joao Fonseca Yes",
+            "odds": -1450
+          },
+          {
+            "market": "Joao Fonseca to win at least one set",
+            "player": "Joao Fonseca",
+            "selection": "Joao Fonseca No",
+            "odds": 660
+          },
+          {
+            "market": "Jakub Mensik to win at least one set",
+            "player": "Jakub Mensik",
+            "selection": "Jakub Mensik Yes",
+            "odds": -320
+          },
+          {
+            "market": "Jakub Mensik to win at least one set",
+            "player": "Jakub Mensik",
+            "selection": "Jakub Mensik No",
+            "odds": 225
+          }
+        ]
+      },
+      "capturedAt": "2026-06-01T23:54:13.164Z",
+      "source": "FanDuel Sportsbook event-page Chrome scrape"
+    },
+    {
+      "match": "Rafael Jodar vs Alexander Zverev",
+      "href": "https://sportsbook.fanduel.com/tennis/men's-roland-garros-2026/rafael-jodar-v-alexander-zverev-35671633",
+      "eventId": "35671633",
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Rafael Jodar",
+            "odds": 245
+          },
+          {
+            "player": "Alexander Zverev",
+            "odds": -310
+          }
+        ],
+        "gameHandicap": [
+          {
+            "player": "Rafael Jodar",
+            "spread": 5.5,
+            "odds": -126
+          },
+          {
+            "player": "Alexander Zverev",
+            "spread": -5.5,
+            "odds": -104
+          }
+        ],
+        "totalGames": [
+          {
+            "side": "Over",
+            "line": 37.5,
+            "odds": -112
+          },
+          {
+            "side": "Under",
+            "line": 37.5,
+            "odds": -118
+          }
+        ],
+        "firstSetTotalGames": [
+          {
+            "side": "Over",
+            "line": 9.5,
+            "odds": -130
+          },
+          {
+            "side": "Under",
+            "line": 9.5,
+            "odds": -108
+          }
+        ],
+        "winAtLeastOneSet": [
+          {
+            "market": "Alexander Zverev to win at least one set",
+            "player": "Alexander Zverev",
+            "selection": "Alexander Zverev Yes",
+            "odds": -2000
+          },
+          {
+            "market": "Alexander Zverev to win at least one set",
+            "player": "Alexander Zverev",
+            "selection": "Alexander Zverev No",
+            "odds": 730
+          },
+          {
+            "market": "Rafael Jodar to win at least one set",
+            "player": "Rafael Jodar",
+            "selection": "Rafael Jodar Yes",
+            "odds": -250
+          },
+          {
+            "market": "Rafael Jodar to win at least one set",
+            "player": "Rafael Jodar",
+            "selection": "Rafael Jodar No",
+            "odds": 180
+          }
+        ]
+      },
+      "capturedAt": "2026-06-01T23:54:22.787Z",
+      "source": "FanDuel Sportsbook event-page Chrome scrape"
+    }
+  ],
+  "unmatched": [
+    "Alexandra Eala vs Priscilla Hon",
+    "Greet Minnen vs Alina Charaeva",
+    "Ajla Tomljanovic vs Katie Swan",
+    "Gabriela Knutson vs Joanna Garland",
+    "Mika Stojsavljevic vs Emerson Jones",
+    "Celine Naef vs Maddison Inglis",
+    "Mary Stoiana vs Lulu Sun",
+    "Nikola Bartunkova vs Harriet Dart",
+    "Ashlyn Krueger vs Himeno Sakatsume",
+    "Nao Hibino vs Janice Tjen",
+    "Kayla Day vs Hanne Vandewinkel",
+    "Tatjana Maria vs Linda Fruhvirtova",
+    "Rebeka Masarova vs Tereza Martincova",
+    "Taylah Preston vs Alicia Dudeney",
+    "Mayar Sherif vs Carlota Martinez Cirez",
+    "Leyre Romero Gormaz vs You Xiaodi",
+    "Miriana Tona vs Viola Turini",
+    "Alice Tubello vs Carole Monnet",
+    "Tatiana Prozorova vs Nuria Brancaccio",
+    "Giorgia Pedone vs Ekaterine Gorgodze",
+    "Laura Mair vs Dang Yiming",
+    "Vittoria Paganetti vs Lucia Bronzetti",
+    "Lisa Zaar vs Tyra Caterina Grant",
+    "Despina Papamichail vs Chloe Paquet",
+    "Andreea Prisacariu vs Nika Radisic",
+    "Simona Waltert vs Teodora Kostovic",
+    "Ana Konjuh vs Dominika Salkova",
+    "Sara Sorribes Tormo vs Victoria Jimenez Kasintseva",
+    "Tamara Zidansek vs Polona Hercog",
+    "Leolia Jeanjean vs Kajsa Rinaldo Persson",
+    "Miriam Bulgaru vs Noma Noha Akugue"
+  ]
+}

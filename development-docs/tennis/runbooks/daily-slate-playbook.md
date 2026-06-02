@@ -168,7 +168,7 @@ Minimum modeling inputs:
 
 - Current match winner probabilities from the ensemble, but never as the only input.
 - Recent hold, second serve, error control, return pressure, and closeout scores for both players.
-- Roland Garros replay flow: service games, hold rate, breaks lost, return games, breaks won, long-game rate, first-set shape where available.
+- Roland Garros replay flow: service games, hold rate, breaks lost, return games, breaks won, long-game rate, first-set shape where available. Prefer Livesport/Flashscore point-by-point when a match URL exists; use SofaScore replay only when event mapping is clean.
 - FanDuel `totalGames` and `gameHandicap` lines when offered.
 - Men/Women and best-of-five/best-of-three adjustment.
 - Clay form, opponent quality, H2H surface context, and current tournament fatigue.
@@ -194,7 +194,8 @@ Each singles match needs:
 - Clay record, recent record, recent opponent rank quality, and adjusted form.
 - Recent service and return metrics: hold, second serve, error control, return pressure, closeout.
 - SofaScore player-page pressure stats for the current slate: first serve in, first-serve points won, second-serve points won, break points saved %, and break points converted %. Use clay-filtered rows first; all-surface rows are fallback only.
-- Roland Garros replay flow where available: service games, holds, breaks lost, return games, breaks won, long-game rate.
+- Livesport/Flashscore point-by-point replay flow where available: service games, holds, breaks lost, return games, breaks won, break-point states, set-point states, long-game rate, and first-set shape. Store the URL player map: match id, source URL, home/away names, player slug ids, slate date, and board match id.
+- SofaScore replay flow is acceptable when mapped cleanly, but a failed SofaScore slate map cannot leave replay flow blank if a Livesport/Flashscore URL is available.
 - H2H with dates and surfaces, not just total count.
 - FanDuel or sportsbook ML/spread/total from event pages, keyed as `moneyline`, `gameHandicap`, and `totalGames`.
 - Stored derivative predictions for expected match games, first-set games, O/U, and game handicap.
