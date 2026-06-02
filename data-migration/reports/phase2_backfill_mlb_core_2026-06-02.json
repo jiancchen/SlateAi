@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-06-02T05:49:03.408Z",
+  "phase": "2",
+  "script": "data-migration/scripts/backfill_mlb_from_sports_db.mjs",
+  "sport": "mlb",
+  "dry_run": false,
+  "source_db": "data-private/warehouse/sports.db",
+  "target_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "planned_source_counts": {
+    "teams": 30,
+    "venues": 31,
+    "players": 1159,
+    "games": 899,
+    "starting_pitchers": 1776,
+    "game_outcomes": 886,
+    "plate_appearances": 67251,
+    "pitch_events": 304181
+  },
+  "target_counts_before": {
+    "teams": 0,
+    "venues": 0,
+    "players": 0,
+    "games": 0,
+    "starting_pitchers": 0,
+    "game_outcomes": 0,
+    "plate_appearances": 0,
+    "pitch_events": 0
+  },
+  "target_counts_after": {
+    "teams": 30,
+    "venues": 31,
+    "players": 1159,
+    "games": 899,
+    "starting_pitchers": 1776,
+    "game_outcomes": 886,
+    "plate_appearances": 67251,
+    "pitch_events": 304181
+  },
+  "status": "backfilled"
+}

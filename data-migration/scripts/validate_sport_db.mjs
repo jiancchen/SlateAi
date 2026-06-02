@@ -21,6 +21,7 @@ function parseArgs(argv) {
     sport: 'all',
     schemaOnly: false,
     phase: 'schema-only',
+    sourceDb: path.join(repoRoot, 'data-private/warehouse/sports.db'),
     report: path.join(repoRoot, 'data-migration/reports/phase1_validate_sport_db_2026-06-02.json'),
     noWriteHealth: false,
   };
@@ -30,6 +31,7 @@ function parseArgs(argv) {
     if (arg === '--sport') args.sport = argv[++index];
     else if (arg === '--schema-only') args.schemaOnly = true;
     else if (arg === '--phase') args.phase = argv[++index];
+    else if (arg === '--source-db') args.sourceDb = path.resolve(argv[++index]);
     else if (arg === '--report') args.report = path.resolve(argv[++index]);
     else if (arg === '--no-write-health') args.noWriteHealth = true;
     else throw new Error(`Unknown argument: ${arg}`);
@@ -38,8 +40,8 @@ function parseArgs(argv) {
   if (args.sport !== 'all' && !SPORTS.includes(args.sport)) {
     throw new Error(`--sport must be one of ${SPORTS.join(', ')} or all`);
   }
-  if (!args.schemaOnly && args.phase !== 'schema-only') {
-    throw new Error('Only schema-only validation is implemented in Phase 1');
+  if (!['schema-only', 'legacy-backfill'].includes(args.phase)) {
+    throw new Error('--phase must be schema-only or legacy-backfill');
   }
   return args;
 }
@@ -74,8 +76,9 @@ function appendMigrationEvent(event) {
   appendFileSync(eventPath, `${JSON.stringify(event)}\n`);
 }
 
-function writeHealthCheck(dbPath, sport, result, reportPath) {
-  const healthCheckId = `phase1-schema-health-${sport}-${timestamp.replaceAll(/[:.]/g, '-')}`;
+function writeHealthCheck(dbPath, sport, result, reportPath, phase) {
+  const checkName = phase === 'legacy-backfill' ? 'phase2_legacy_backfill_validation' : 'phase1_schema_validation';
+  const healthCheckId = `${checkName.replaceAll('_', '-')}-${sport}-${timestamp.replaceAll(/[:.]/g, '-')}`;
   const details = JSON.stringify({
     expected_tables: result.expected_tables.length,
     present_tables: result.present_tables.length,
@@ -85,6 +88,7 @@ function writeHealthCheck(dbPath, sport, result, reportPath) {
     missing_indexes: result.missing_indexes,
     schema_migrations: result.schema_migration_count,
     migration_runs: result.migration_run_count,
+    legacy_backfill: result.legacy_backfill ?? null,
     report_path: path.relative(repoRoot, reportPath),
   });
   runSqlite(
@@ -102,7 +106,7 @@ function writeHealthCheck(dbPath, sport, result, reportPath) {
     ) values (
       ${sqlString(healthCheckId)},
       null,
-      'phase1_schema_validation',
+      ${sqlString(checkName)},
       ${sqlString(result.ok ? 'ok' : 'failed')},
       ${result.expected_tables.length + result.expected_indexes.length},
       ${result.present_tables.length + result.present_indexes.length},
@@ -111,6 +115,102 @@ function writeHealthCheck(dbPath, sport, result, reportPath) {
     );`,
   );
   return healthCheckId;
+}
+
+function legacySourceCounts(sport, sourceDb) {
+  if (sport === 'mlb') {
+    return {
+      teams: Number(queryScalar(sourceDb, `select count(*) from (
+        select away_team as team_name from mlb_games where away_team is not null
+        union
+        select home_team as team_name from mlb_games where home_team is not null
+      );`)),
+      venues: Number(queryScalar(sourceDb, `select count(distinct venue_name) from mlb_games where venue_name is not null;`)),
+      players: Number(queryScalar(sourceDb, `select count(*) from (
+        select pitcher_id as player_id from mlb_starting_pitchers where pitcher_id is not null
+        union
+        select batter_id as player_id from mlb_plate_appearances where batter_id is not null
+        union
+        select pitcher_id as player_id from mlb_plate_appearances where pitcher_id is not null
+      );`)),
+      games: Number(queryScalar(sourceDb, `select count(*) from mlb_games;`)),
+      starting_pitchers: Number(queryScalar(sourceDb, `select count(*) from mlb_starting_pitchers where pitcher_id is not null;`)),
+      game_outcomes: Number(queryScalar(sourceDb, `select count(*) from mlb_game_outcomes;`)),
+      plate_appearances: Number(queryScalar(sourceDb, `select count(*) from mlb_plate_appearances;`)),
+      pitch_events: Number(queryScalar(sourceDb, `select count(*) from mlb_pitch_events;`)),
+    };
+  }
+  if (sport === 'tennis') {
+    return {
+      players: Number(queryScalar(sourceDb, `select count(*) from (
+        select normalized_name from tennis_players where normalized_name is not null
+        union
+        select player1_normalized_name from tennis_matches where player1_normalized_name is not null
+        union
+        select player2_normalized_name from tennis_matches where player2_normalized_name is not null
+        union
+        select normalized_name from tennis_rankings where normalized_name is not null
+        union
+        select normalized_name from tennis_recent_matches where normalized_name is not null
+        union
+        select opponent_normalized_name from tennis_recent_matches where opponent_normalized_name is not null
+      );`)),
+      tournaments: Number(queryScalar(sourceDb, `select count(*) from (
+        select distinct coalesce(slate_date, '') || '|' || coalesce(league, '') || '|' || coalesce(stage, '') as key
+        from tennis_matches
+      );`)),
+      matches: Number(queryScalar(sourceDb, `select count(*) from tennis_matches;`)),
+      match_players: Number(queryScalar(sourceDb, `select count(*) * 2 from tennis_matches;`)),
+      rankings: Number(queryScalar(sourceDb, `select count(*) from tennis_rankings;`)),
+      recent_matches: Number(queryScalar(sourceDb, `select count(*) from tennis_recent_matches;`)),
+      h2h_matches: Number(queryScalar(sourceDb, `select count(*) from tennis_h2h_matches;`)),
+    };
+  }
+  throw new Error(`Unsupported sport for legacy backfill validation: ${sport}`);
+}
+
+function targetLegacyCounts(sport, targetDb) {
+  const tables =
+    sport === 'mlb'
+      ? ['teams', 'venues', 'players', 'games', 'starting_pitchers', 'game_outcomes', 'plate_appearances', 'pitch_events']
+      : ['players', 'tournaments', 'matches', 'match_players', 'rankings', 'recent_matches', 'h2h_matches'];
+  return Object.fromEntries(tables.map((table) => [table, Number(queryScalar(targetDb, `select count(*) from ${table};`))]));
+}
+
+function validateLegacyBackfill(sport, targetDb, sourceDb) {
+  const source_counts = legacySourceCounts(sport, sourceDb);
+  const target_counts = targetLegacyCounts(sport, targetDb);
+  const mismatches = [];
+  for (const [key, sourceCount] of Object.entries(source_counts)) {
+    const targetCount = target_counts[key];
+    if (sourceCount !== targetCount) {
+      mismatches.push({
+        table: key,
+        source_count: sourceCount,
+        target_count: targetCount,
+      });
+    }
+  }
+  const phase2MigrationRuns = Number(
+    queryScalar(
+      targetDb,
+      `select count(*) from migration_runs where sport = ${sqlString(sport)} and phase = '2' and status = 'backfilled';`,
+    ),
+  );
+  if (phase2MigrationRuns < 1) {
+    mismatches.push({
+      table: 'migration_runs',
+      source_count: 1,
+      target_count: phase2MigrationRuns,
+    });
+  }
+  return {
+    source_counts,
+    target_counts,
+    phase2_migration_runs: phase2MigrationRuns,
+    mismatches,
+    ok: mismatches.length === 0,
+  };
 }
 
 function validateSport(sport, options) {
@@ -179,29 +279,42 @@ function validateSport(sport, options) {
   if (result.schema_migration_count < 1) result.errors.push('Missing matching phase1 schema_migrations row');
   if (result.migration_run_count < 1) result.errors.push('Missing phase1 migration_runs row');
 
+  if (options.phase === 'legacy-backfill') {
+    result.legacy_backfill = validateLegacyBackfill(sport, target.absoluteDbPath, options.sourceDb);
+    if (!result.legacy_backfill.ok) {
+      result.errors.push(`Legacy backfill count mismatches: ${JSON.stringify(result.legacy_backfill.mismatches)}`);
+    }
+  }
+
   result.ok = result.errors.length === 0;
 
   if (result.ok && !options.noWriteHealth) {
-    result.health_check_id = writeHealthCheck(target.absoluteDbPath, sport, result, options.report);
+    result.health_check_id = writeHealthCheck(target.absoluteDbPath, sport, result, options.report, options.phase);
   }
 
   appendMigrationEvent({
-    event_id: `phase1-schema-validation-${sport}-${timestamp.replaceAll(/[:.]/g, '-')}`,
+    event_id: `${options.phase === 'legacy-backfill' ? 'phase2-legacy-backfill-validation' : 'phase1-schema-validation'}-${sport}-${timestamp.replaceAll(/[:.]/g, '-')}`,
     timestamp,
-    phase: '1',
-    area: `empty_${sport}_db_schema_validation`,
+    phase: options.phase === 'legacy-backfill' ? '2' : '1',
+    area: options.phase === 'legacy-backfill' ? `${sport}_legacy_backfill_validation` : `empty_${sport}_db_schema_validation`,
     source: target.dbPath,
     target: path.relative(repoRoot, options.report),
     parser_module: 'none',
-    migration_script: `data-migration/scripts/validate_sport_db.mjs --schema-only --sport ${sport}`,
-    validation: result.ok ? 'schema validation passed' : result.errors.join('; '),
+    migration_script: `data-migration/scripts/validate_sport_db.mjs --phase ${options.phase} --sport ${sport}`,
+    validation: result.ok
+      ? options.phase === 'legacy-backfill'
+        ? 'legacy backfill validation passed'
+        : 'schema validation passed'
+      : result.errors.join('; '),
     status_from: 'backfilled',
     status_to: result.ok ? 'validated' : 'blocked',
     report_path: path.relative(repoRoot, options.report),
     checksum,
     notes: result.ok
-      ? 'Phase 1 schema validation passed.'
-      : 'Phase 1 schema validation failed; see validation report.',
+      ? options.phase === 'legacy-backfill'
+        ? 'Phase 2 legacy backfill validation passed.'
+        : 'Phase 1 schema validation passed.'
+      : 'Sport DB validation failed; see validation report.',
   });
 
   return result;
@@ -211,7 +324,11 @@ function writePerSportCheckReports(report) {
   for (const sportReport of report.sports) {
     const target = repoRelativeTargetForSport(sportReport.sport, repoRoot);
     mkdirSync(target.absoluteChecksDir, { recursive: true });
-    const checkPath = path.join(target.absoluteChecksDir, 'phase1_schema_validation_2026-06-02.json');
+    const reportFile =
+      report.phase === '2'
+        ? 'phase2_legacy_backfill_validation_2026-06-02.json'
+        : 'phase1_schema_validation_2026-06-02.json';
+    const checkPath = path.join(target.absoluteChecksDir, reportFile);
     writeFileSync(
       checkPath,
       `${JSON.stringify(
@@ -238,9 +355,10 @@ mkdirSync(path.dirname(options.report), { recursive: true });
 
 const report = {
   generated_at: timestamp,
-  phase: '1',
+  phase: options.phase === 'legacy-backfill' ? '2' : '1',
   script: 'data-migration/scripts/validate_sport_db.mjs',
-  schema_only: true,
+  schema_only: options.phase === 'schema-only',
+  validation_phase: options.phase,
   wrote_health_checks: !options.noWriteHealth,
   sports: sports.map((sport) => validateSport(sport, options)),
 };

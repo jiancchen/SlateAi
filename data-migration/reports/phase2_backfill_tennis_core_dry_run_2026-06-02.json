@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-06-02T05:48:53.940Z",
+  "phase": "2",
+  "script": "data-migration/scripts/backfill_tennis_from_sports_db.mjs",
+  "sport": "tennis",
+  "dry_run": true,
+  "source_db": "data-private/warehouse/sports.db",
+  "target_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "planned_source_counts": {
+    "players": 3016,
+    "tournaments": 35,
+    "matches": 352,
+    "match_players": 704,
+    "rankings": 3513,
+    "recent_matches": 2858,
+    "h2h_matches": 7
+  },
+  "target_counts_before": {
+    "players": 0,
+    "tournaments": 0,
+    "matches": 0,
+    "match_players": 0,
+    "rankings": 0,
+    "recent_matches": 0,
+    "h2h_matches": 0
+  },
+  "target_counts_after": {
+    "players": 0,
+    "tournaments": 0,
+    "matches": 0,
+    "match_players": 0,
+    "rankings": 0,
+    "recent_matches": 0,
+    "h2h_matches": 0
+  },
+  "status": "planned"
+}
