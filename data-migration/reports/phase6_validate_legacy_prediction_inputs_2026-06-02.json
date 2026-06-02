@@ -1,0 +1,1068 @@
+{
+  "generated_at": "2026-06-02T06:33:40.850005+00:00",
+  "phase": "6",
+  "script": "data-migration/scripts/validate_legacy_prediction_inputs.py",
+  "source_db": "data-private/warehouse/sports.db",
+  "sports": [
+    {
+      "sport": "mlb",
+      "target_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+      "expected_rows": 1206213,
+      "actual_rows": 1206213,
+      "table_count": 72,
+      "bad_tables": [],
+      "missing_source_date_rows": 60,
+      "tables": [
+        {
+          "source_table": "mlb_batter_game_outcomes",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 18080,
+          "actual_rows": 18080,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_bullpen_mistake_shape_daily",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 3508,
+          "actual_rows": 3508,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_bullpen_usage",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 16542,
+          "actual_rows": 16542,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_featured_market_odds_snapshots",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 1610,
+          "actual_rows": 1610,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_game_outcomes",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 886,
+          "actual_rows": 886,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_game_story_labels",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 886,
+          "actual_rows": 886,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_game_story_signals",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 886,
+          "actual_rows": 886,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_game_sun_visibility_snapshots",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 306,
+          "actual_rows": 306,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_game_team_stats",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 1776,
+          "actual_rows": 1776,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_game_visibility_outcomes",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 295,
+          "actual_rows": 295,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_hitter_career_profiles",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 493,
+          "actual_rows": 493,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_hitter_classic_trend_snapshots",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 25167,
+          "actual_rows": 25167,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_hitter_opponent_context_snapshots",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 25167,
+          "actual_rows": 25167,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_hitter_pitch_type_response_daily",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 206697,
+          "actual_rows": 206697,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_hitter_split_snapshots",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 693,
+          "actual_rows": 693,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_hitter_statcast_game_logs",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 18004,
+          "actual_rows": 18004,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_hitter_statcast_trend_snapshots",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 25797,
+          "actual_rows": 25797,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_hitter_state_snapshots",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 24396,
+          "actual_rows": 24396,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_home_run_backtests",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 182,
+          "actual_rows": 182,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_home_run_events",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 1900,
+          "actual_rows": 1900,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_home_run_predictions",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 194,
+          "actual_rows": 194,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_kalshi_market_snapshots",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 390,
+          "actual_rows": 390,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_likely_relief_chains",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 3508,
+          "actual_rows": 3508,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_lineup_conversion_shape_daily",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 5262,
+          "actual_rows": 5262,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_lineup_dependency_profiles",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 3092,
+          "actual_rows": 3092,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_lineup_pitcher_matchup_daily",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 17655,
+          "actual_rows": 17655,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_market_mispricing_labels",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 290,
+          "actual_rows": 290,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_phase_outcomes_daily",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 1772,
+          "actual_rows": 1772,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_pitcher_appearances",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 7498,
+          "actual_rows": 7498,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_pitcher_first_inning_profiles_daily",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 3024,
+          "actual_rows": 3024,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_pitcher_mistake_shape_daily",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 3024,
+          "actual_rows": 3024,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_pitcher_pitch_mix_daily",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 135153,
+          "actual_rows": 135153,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_pitcher_war_by_season",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 1527,
+          "actual_rows": 1527,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_player_current_deviation_daily",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 184256,
+          "actual_rows": 184256,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_player_game_batting",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 18080,
+          "actual_rows": 18080,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_player_game_distribution_daily",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 184228,
+          "actual_rows": 184228,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_player_identity_curves_daily",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 184256,
+          "actual_rows": 184256,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_player_identity_model_backtests",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 12230,
+          "actual_rows": 12230,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_player_identity_profiles",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 493,
+          "actual_rows": 493,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_player_prop_odds_snapshots",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 2409,
+          "actual_rows": 2409,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_prop_backtests",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 1688,
+          "actual_rows": 1688,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_prop_predictions",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 1688,
+          "actual_rows": 1688,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_reliever_first_batter_command_profiles",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 4113,
+          "actual_rows": 4113,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_rp36_settlements",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 1,
+          "actual_rows": 1,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_rp36_team_settlements",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 30,
+          "actual_rows": 30,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_series_context_snapshots",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 809,
+          "actual_rows": 809,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_side_backtests",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 389,
+          "actual_rows": 389,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_side_predictions",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 389,
+          "actual_rows": 389,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_starter_leash_profiles",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 4005,
+          "actual_rows": 4005,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_starter_third_time_penalty_profiles",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 232,
+          "actual_rows": 232,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_starting_pitcher_game_logs",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 1776,
+          "actual_rows": 1776,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_starting_pitcher_rolling_form",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 4533,
+          "actual_rows": 4533,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_state_formula_backtests",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 1061,
+          "actual_rows": 1061,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_state_formula_training_rows",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 7120,
+          "actual_rows": 7120,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_team_bullpen_shape_daily",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 1754,
+          "actual_rows": 1754,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_team_first_inning_profiles_daily",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 5262,
+          "actual_rows": 5262,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_team_form_carryover_profiles",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 3448,
+          "actual_rows": 3448,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_team_lead_surrender_profiles",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 3508,
+          "actual_rows": 3508,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_team_market_context_daily",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 1754,
+          "actual_rows": 1754,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_team_mistake_shape_daily",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 5262,
+          "actual_rows": 5262,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_team_opponent_quality_daily",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 1754,
+          "actual_rows": 1754,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_team_rolling_form",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 5196,
+          "actual_rows": 5196,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_team_state_snapshots",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 1754,
+          "actual_rows": 1754,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_team_story_priors",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 3092,
+          "actual_rows": 3092,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "mlb_team_whiff_persistence_profiles",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 3508,
+          "actual_rows": 3508,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "park_factor_snapshots",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 0,
+          "actual_rows": 0,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "statcast_hr_leaderboard_snapshots",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 407,
+          "actual_rows": 407,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "weather_observations",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 0,
+          "actual_rows": 0,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "model_component_runs",
+          "kind": "shared_model",
+          "expected_rows": 3,
+          "actual_rows": 3,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 3,
+          "ok": true
+        },
+        {
+          "source_table": "model_run_artifacts",
+          "kind": "shared_model",
+          "expected_rows": 19,
+          "actual_rows": 19,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 19,
+          "ok": true
+        },
+        {
+          "source_table": "model_run_lanes",
+          "kind": "shared_model",
+          "expected_rows": 38,
+          "actual_rows": 38,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 38,
+          "ok": true
+        },
+        {
+          "source_table": "model_runs",
+          "kind": "shared_model",
+          "expected_rows": 8,
+          "actual_rows": 8,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        }
+      ],
+      "ok": true
+    },
+    {
+      "sport": "tennis",
+      "target_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+      "expected_rows": 484024,
+      "actual_rows": 484024,
+      "table_count": 43,
+      "bad_tables": [],
+      "missing_source_date_rows": 54,
+      "tables": [
+        {
+          "source_table": "tennis_flashscore_match_stats",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 1210,
+          "actual_rows": 1210,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_flashscore_player_stat_rows",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 144510,
+          "actual_rows": 144510,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_flashscore_recent_links",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 1892,
+          "actual_rows": 1892,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_flashscore_stat_rows",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 72255,
+          "actual_rows": 72255,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_h2h_snapshots",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 204,
+          "actual_rows": 204,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_kalshi_intramatch_trade_features",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 175,
+          "actual_rows": 175,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_kalshi_market_candles",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 130968,
+          "actual_rows": 130968,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_kalshi_match_markets",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 374,
+          "actual_rows": 374,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_kalshi_open_orderbook_snapshots",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 280,
+          "actual_rows": 280,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_livesport_matches",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 1,
+          "actual_rows": 1,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_livesport_replay_games",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 41,
+          "actual_rows": 41,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_livesport_replay_points",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 213,
+          "actual_rows": 213,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_match_results",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 323,
+          "actual_rows": 323,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_match_sources",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 408,
+          "actual_rows": 408,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_match_weather",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 244,
+          "actual_rows": 244,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_model_run_calibration_buckets",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 23,
+          "actual_rows": 23,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_model_run_events",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 14,
+          "actual_rows": 14,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_model_run_files",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 40,
+          "actual_rows": 40,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_model_run_inputs",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 10,
+          "actual_rows": 10,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_model_run_lane_grades",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 48,
+          "actual_rows": 48,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_model_run_metrics",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 1,
+          "actual_rows": 1,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_model_run_outputs",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 6,
+          "actual_rows": 6,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_model_run_settlements",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 1,
+          "actual_rows": 1,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_model_run_training_rows",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 8,
+          "actual_rows": 8,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_model_runs",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 1,
+          "actual_rows": 1,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_model_training_rows",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 336,
+          "actual_rows": 336,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_player_match_context",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 358,
+          "actual_rows": 358,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_prediction_grades",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 282,
+          "actual_rows": 282,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_prediction_market_snapshots",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 450,
+          "actual_rows": 450,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_predictions",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 531,
+          "actual_rows": 531,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_recent_form_metrics",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 13160,
+          "actual_rows": 13160,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_schema_migrations",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 4,
+          "actual_rows": 4,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 4,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_sofascore_matches",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 252,
+          "actual_rows": 252,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_sofascore_player_page_stats",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 78,
+          "actual_rows": 78,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_sofascore_player_stat_rows",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 46118,
+          "actual_rows": 46118,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_sofascore_replay_games",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 7133,
+          "actual_rows": 7133,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_sofascore_replay_points",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 38746,
+          "actual_rows": 38746,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_sofascore_stat_rows",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 23059,
+          "actual_rows": 23059,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "tennis_weather_hourly",
+          "kind": "sport_or_adjacent",
+          "expected_rows": 216,
+          "actual_rows": 216,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "model_component_runs",
+          "kind": "shared_model",
+          "expected_rows": 0,
+          "actual_rows": 0,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "model_run_artifacts",
+          "kind": "shared_model",
+          "expected_rows": 50,
+          "actual_rows": 50,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 50,
+          "ok": true
+        },
+        {
+          "source_table": "model_run_lanes",
+          "kind": "shared_model",
+          "expected_rows": 0,
+          "actual_rows": 0,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        },
+        {
+          "source_table": "model_runs",
+          "kind": "shared_model",
+          "expected_rows": 1,
+          "actual_rows": 1,
+          "bad_hash_rows": 0,
+          "missing_source_date_rows": 0,
+          "ok": true
+        }
+      ],
+      "ok": true
+    }
+  ],
+  "ok": true
+}
