@@ -13,8 +13,8 @@ Operational files:
 
 The immediate targets are:
 
-- `data-private/warehouse/sports/mlb/mlb.db`
-- `data-private/warehouse/sports/tennis/tennis.db`
+- `data-private/warehouse/sports/mlb/sql-mlb.db`
+- `data-private/warehouse/sports/tennis/sql-tennis.db`
 
 The legacy DB stays untouched:
 
@@ -22,10 +22,16 @@ The legacy DB stays untouched:
 
 DuckDB analytics databases are also split by sport:
 
-- `data-private/warehouse/analytics/mlb.duckdb`
-- `data-private/warehouse/analytics/tennis.duckdb`
+- `data-private/warehouse/analytics/duck-mlb.duckdb`
+- `data-private/warehouse/analytics/duck-tennis.duckdb`
 
 No sport should require cross-sport joins. If a future sport is added, it gets its own SQLite source-of-truth DB and its own DuckDB analytics DB.
+
+Naming convention:
+
+- durable SQLite warehouses use `sql-<sport>.db`
+- rebuildable DuckDB analytics files use `duck-<sport>.duckdb`
+- legacy mixed or placeholder DB filenames keep their existing names only for historical reference
 
 ## Non-Deletion Rule
 
@@ -40,7 +46,7 @@ No sport should require cross-sport joins. If a future sport is added, it gets i
 |---|---:|---:|---:|---|
 | `data-private/warehouse/sports.db` | Legacy mixed-sport warehouse | 2.2 GB | 122 | Freeze. Use as primary backfill input. Never mutate during migration. |
 | `data-private/warehouse/snapshots/2026-05-30/sports-2026-05-30.db` | Historical snapshot | 1.6 GB | not primary | Keep as checkpoint/reference. Do not migrate from it unless `sports.db` is missing a row. |
-| `data-private/warehouse/tennis.db` | Empty current placeholder | 0 B | 0 | Ignore as source. New tennis DB should live under `warehouse/sports/tennis/`. |
+| `data-private/warehouse/tennis.db` | Empty current placeholder | 0 B | 0 | Ignore as source. New tennis DB should be `warehouse/sports/tennis/sql-tennis.db`. |
 | `data-private/tennis.db` | Empty root placeholder | 0 B | 0 | Ignore as source. Archive only after migration is complete. |
 
 ## Target DB Layout
@@ -51,16 +57,16 @@ data-private/
     sports.db                    # legacy mixed-sport DB, frozen
     sports/
       mlb/
-        mlb.db                   # new MLB source of truth
+        sql-mlb.db               # new MLB source of truth
         migrations/
         checks/
       tennis/
-        tennis.db                # new tennis source of truth
+        sql-tennis.db            # new tennis source of truth
         migrations/
         checks/
     analytics/
-      mlb.duckdb                 # MLB feature/backtest/training engine
-      tennis.duckdb              # tennis feature/backtest/training engine
+      duck-mlb.duckdb            # MLB feature/backtest/training engine
+      duck-tennis.duckdb         # tennis feature/backtest/training engine
 ```
 
 ## Current Data Folder Inventory
@@ -879,8 +885,8 @@ Exit criteria:
 
 ### Phase 1: Create Empty Sport DBs
 
-- Create `data-private/warehouse/sports/mlb/mlb.db`.
-- Create `data-private/warehouse/sports/tennis/tennis.db`.
+- Create `data-private/warehouse/sports/mlb/sql-mlb.db`.
+- Create `data-private/warehouse/sports/tennis/sql-tennis.db`.
 - Apply shared system tables.
 - Apply sport-specific base schemas.
 - Add `schema_migrations` rows.
@@ -937,8 +943,8 @@ Exit criteria:
 
 ### Phase 5: DuckDB Build
 
-- Build `mlb.duckdb` from MLB SQLite.
-- Build `tennis.duckdb` from tennis SQLite.
+- Build `duck-mlb.duckdb` from MLB SQLite.
+- Build `duck-tennis.duckdb` from tennis SQLite.
 - Create feature matrices and backtest views.
 - Keep DuckDB rebuildable from SQLite and raw references.
 

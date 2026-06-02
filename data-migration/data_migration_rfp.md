@@ -82,8 +82,8 @@ SQLite is the local source of truth for durable facts.
 
 Recommended split:
 
-- `data-private/warehouse/mlb.db`
-- `data-private/warehouse/tennis.db`
+- `data-private/warehouse/sports/mlb/sql-mlb.db`
+- `data-private/warehouse/sports/tennis/sql-tennis.db`
 - optional `data-private/warehouse/models.db`
 
 SQLite stores:
@@ -255,8 +255,8 @@ Output:
 
 Create schemas for:
 
-- `mlb.db`
-- `tennis.db`
+- `sql-mlb.db`
+- `sql-tennis.db`
 - optional `models.db`
 
 Output:

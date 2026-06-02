@@ -6,8 +6,13 @@ Move from file-first sports data to sport-owned SQLite warehouses and rebuildabl
 
 Primary durable targets:
 
-- `data-private/warehouse/sports/mlb/mlb.db`
-- `data-private/warehouse/sports/tennis/tennis.db`
+- `data-private/warehouse/sports/mlb/sql-mlb.db`
+- `data-private/warehouse/sports/tennis/sql-tennis.db`
+
+File naming convention:
+
+- SQLite warehouses: `sql-<sport>.db`
+- DuckDB analytics: `duck-<sport>.duckdb`
 
 Legacy source DB:
 
@@ -210,8 +215,8 @@ node data-migration/scripts/validate_sport_db.mjs --schema-only tennis
 
 Exit criteria:
 
-- `mlb.db` exists and opens cleanly.
-- `tennis.db` exists and opens cleanly.
+- `sql-mlb.db` exists and opens cleanly.
+- `sql-tennis.db` exists and opens cleanly.
 - `schema_migrations` rows are present.
 - `migration_runs` rows are written for schema creation.
 - alias/unresolved-entity tables exist.
@@ -354,8 +359,8 @@ source fetch -> raw archive receipt -> sport SQLite DB -> optional DuckDB -> DB-
 
 Exit criteria:
 
-- MLB ingestion writes to `mlb.db`.
-- Tennis ingestion writes to `tennis.db`.
+- MLB ingestion writes to `sql-mlb.db`.
+- Tennis ingestion writes to `sql-tennis.db`.
 - Source JSON is hashed and registered.
 - Prediction runs no longer scan raw JSON unless explicitly rebuilding.
 - Health checks verify date/source coverage.
