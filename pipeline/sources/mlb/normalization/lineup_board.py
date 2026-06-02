@@ -134,6 +134,14 @@ def player_payloads(side_payload: dict[str, Any]) -> list[dict[str, Any]]:
     return [row for row in lineup if isinstance(row, dict)]
 
 
+def lineup_status_for(raw_status: Any, lineup_size: int) -> str:
+    if lineup_size >= 9:
+        return str(raw_status or "complete")
+    if lineup_size > 0:
+        return "partial"
+    return "pending"
+
+
 def upsert_lineup_player(
     con: sqlite3.Connection,
     resolver: MlbIdentityResolver,
@@ -308,6 +316,7 @@ def upsert_lineup_board(
                 continue
 
             captured_at = board.get("snapshot") or raw_day.meta.get("snapshot") or utc_now()
+            players = player_payloads(side_payload)
             lineup_id = stable_id("lineup-board", game_id, team_id, captured_at, source_snapshot_id)
             con.execute(
                 """
@@ -325,7 +334,10 @@ def upsert_lineup_board(
                     lineup_id,
                     game_id,
                     team_id,
-                    str((board.get("status") or {}).get(side) or side_payload.get("lineupSource") or "unknown"),
+                    lineup_status_for(
+                        (board.get("status") or {}).get(side) or side_payload.get("lineupSource"),
+                        len(players),
+                    ),
                     captured_at,
                     source_snapshot_id,
                 ),
@@ -347,7 +359,7 @@ def upsert_lineup_board(
                 pitcher.get("name") if pitcher else None,
             )
 
-            for player in player_payloads(side_payload):
+            for player in players:
                 player_id = upsert_lineup_player(con, resolver, source_name=SOURCE_LINEUPS, player=player)
                 if not player_id:
                     counts["unresolved_players"] += 1

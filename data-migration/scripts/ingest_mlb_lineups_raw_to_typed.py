@@ -106,13 +106,10 @@ def dry_run_report(args: argparse.Namespace, raw_day) -> dict:
 def expected_lineup_slots(raw_day) -> int | None:
     if not raw_day.board_path:
         return None
-    expected = 0
-    for board in raw_day.boards.values():
-        for side in ("away", "home"):
-            lineup = (board.get(side) or {}).get("lineup") or {}
-            if lineup:
-                expected += 9
-    return expected
+    game_count = int(raw_day.meta.get("gameCount") or len(raw_day.boards) or 0)
+    if game_count <= 0:
+        return None
+    return game_count * 2 * 9
 
 
 def ingest(args: argparse.Namespace) -> dict:

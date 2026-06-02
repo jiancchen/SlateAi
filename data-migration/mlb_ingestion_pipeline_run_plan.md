@@ -82,7 +82,9 @@ If a lane is stale, the runner may generate a degraded research report only when
 ### Phase M9C: Lineups And Probables Adapter
 
 - Promote official MLB lineups and RotoWire supplements into `lineups`, `lineup_slots`, `lineup_matchup_snapshots`, and `lineup_shape_snapshots`.
-- Preserve status: `confirmed`, `projected`, `partial`, `pending`.
+- Enforce the lineup invariant: every complete MLB lineup has exactly 9 hitter slots. A raw board with 1-8 listed hitters is `partial`, not a valid short lineup; a missing side is `pending`.
+- Source completeness is measured against `game_count * 2 teams * 9 hitters`, so incomplete or not-yet-posted sides block strict prediction lanes.
+- Preserve status: `complete`, `partial`, `pending`, plus source labels only when they do not contradict slot coverage.
 - Upsert probable pitcher changes into the same canonical game/starter rows.
 - Validate batting-order uniqueness per team/game.
 

@@ -1,0 +1,102 @@
+{
+  "board_path": "data-private/lineups/mlb/2026-05-31-lineup-board.json",
+  "checks": [
+    {
+      "details": "{'mlb_lineups': 1, 'mlb_probables': 1}",
+      "name": "lineup_source_snapshot_exists",
+      "ok": true
+    },
+    {
+      "details": "{'mlb_lineups': 1, 'mlb_probables': 1}",
+      "name": "probables_source_snapshot_exists",
+      "ok": true
+    },
+    {
+      "details": "{'last_status': 'partial', 'last_completeness_status': 'partial', 'expected_item_count': 270, 'actual_item_count': 269, 'missing_item_count': 1, 'unresolved_count': 0, 'cache_valid_until': '2026-06-03T10:34:11.235886+00:00'}",
+      "name": "lineup_fetch_status_present",
+      "ok": true
+    },
+    {
+      "details": "{'last_status': 'success', 'last_completeness_status': 'complete', 'expected_item_count': 15, 'actual_item_count': 15, 'missing_item_count': 0, 'unresolved_count': 0, 'cache_valid_until': '2026-06-03T04:34:11.236143+00:00'}",
+      "name": "probables_fetch_status_complete",
+      "ok": true
+    },
+    {
+      "details": "15 / 15",
+      "name": "games_with_lineups_match_expected",
+      "ok": true
+    },
+    {
+      "details": "30 / 30",
+      "name": "lineups_two_per_game",
+      "ok": true
+    },
+    {
+      "details": "269 / 269",
+      "name": "slots_match_raw_board",
+      "ok": true
+    },
+    {
+      "details": "status={'last_status': 'partial', 'last_completeness_status': 'partial', 'expected_item_count': 270, 'actual_item_count': 269, 'missing_item_count': 1, 'unresolved_count': 0, 'cache_valid_until': '2026-06-03T10:34:11.235886+00:00'} raw=269 expected_complete=270",
+      "name": "lineup_fetch_status_reflects_slot_coverage",
+      "ok": true
+    },
+    {
+      "details": "269 / 269",
+      "name": "matchup_rows_cover_slots",
+      "ok": true
+    },
+    {
+      "details": "30 / 30",
+      "name": "probables_two_per_game",
+      "ok": true
+    },
+    {
+      "details": "0",
+      "name": "no_orphan_lineup_slots",
+      "ok": true
+    }
+  ],
+  "counts": {
+    "games_with_lineups": 15,
+    "lineup_matchup_missing_pitcher": 0,
+    "lineup_matchup_snapshots": 269,
+    "lineup_slots": 269,
+    "lineups": 30,
+    "orphan_lineup_slots": 0,
+    "probable_pitchers": 30
+  },
+  "date": "2026-05-31",
+  "expected_complete_slot_count": 270,
+  "expected_game_count": 15,
+  "expected_lineup_count": 30,
+  "fetch_status": {
+    "mlb_lineups": {
+      "actual_item_count": 269,
+      "cache_valid_until": "2026-06-03T10:34:11.235886+00:00",
+      "expected_item_count": 270,
+      "last_completeness_status": "partial",
+      "last_status": "partial",
+      "missing_item_count": 1,
+      "unresolved_count": 0
+    },
+    "mlb_probables": {
+      "actual_item_count": 15,
+      "cache_valid_until": "2026-06-03T04:34:11.236143+00:00",
+      "expected_item_count": 15,
+      "last_completeness_status": "complete",
+      "last_status": "success",
+      "missing_item_count": 0,
+      "unresolved_count": 0
+    }
+  },
+  "generated_at": "2026-06-02T22:34:29.519381+00:00",
+  "ok": true,
+  "raw_slot_count": 269,
+  "script": "data-migration/scripts/validate_mlb_lineups_raw_to_typed.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_snapshots": {
+    "mlb_lineups": 1,
+    "mlb_probables": 1
+  }
+}

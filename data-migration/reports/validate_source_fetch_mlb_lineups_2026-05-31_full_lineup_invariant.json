@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-06-02T22:36:43.938Z",
+  "script": "data-migration/scripts/validate_source_fetch_contract.mjs",
+  "result": {
+    "sport": "mlb",
+    "source_name": "mlb_lineups",
+    "source_date": "2026-05-31",
+    "db_path": "data-private/warehouse/sports/mlb/sql-mlb.db",
+    "policy": {
+      "source_fetch_policy_id": "mlb:mlb_lineups",
+      "sport": "mlb",
+      "source_name": "mlb_lineups",
+      "source_family": "lineups",
+      "run_rule": "fetch_if_stale",
+      "default_ttl_hours": 1,
+      "max_stale_hours": 6,
+      "required_for_prediction": 1,
+      "env_ttl_key": "MLB_MLB_LINEUPS_TTL_HOURS",
+      "env_force_key": "MLB_MLB_LINEUPS_FORCE_FETCH",
+      "env_disable_key": "MLB_MLB_LINEUPS_DISABLE_FETCH",
+      "config_path": "data-migration/post_migration_ingestion_rewrite_run_plan.md",
+      "created_at": "2026-06-02T21:28:10.183Z",
+      "updated_at": "2026-06-02T21:28:10.183Z",
+      "notes": "Confirmed/projected lineup source for prediction, value, and prop lanes."
+    },
+    "status": {
+      "source_fetch_status_id": "mlb:mlb_lineups:2026-05-31",
+      "sport": "mlb",
+      "source_name": "mlb_lineups",
+      "source_family": "lineups",
+      "source_date": "2026-05-31",
+      "last_fetch_run_id": "source-fetch-mlb_lineups-2026-05-31-2026-06-02T22-34-11-235886+00-00",
+      "last_attempt_at": "2026-06-02T22:34:11.235886+00:00",
+      "last_success_at": "2026-06-02T22:34:11.235886+00:00",
+      "last_status": "partial",
+      "last_completeness_status": "partial",
+      "cache_valid_until": "2026-06-03T10:34:11.235886+00:00",
+      "expected_item_count": 270,
+      "actual_item_count": 269,
+      "missing_item_count": 1,
+      "unresolved_count": 0,
+      "updated_at": "2026-06-02T22:34:11.235886+00:00",
+      "notes": "{\"adapter\":\"mlb_lineup_board_raw_to_typed\",\"expected_lineup_slots\":270,\"games\":15,\"lineup_matchup_snapshots\":269,\"lineup_slots\":269,\"lineups\":30,\"report_path\":\"data-migration/reports/ingest_mlb_lineups_raw_to_typed_2026-05-31_full_lineup_invariant.json\",\"source_snapshot_id\":\"mlb-416a0145098ed95894748b38cab91341\",\"unresolved_count\":0}"
+    },
+    "run_counts": [
+      {
+        "status": "partial",
+        "row_count": 2
+      },
+      {
+        "status": "success",
+        "row_count": 2
+      }
+    ],
+    "stale": false,
+    "ok": true,
+    "errors": []
+  },
+  "ok": true
+}

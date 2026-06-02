@@ -59,15 +59,12 @@ def validate(args: argparse.Namespace) -> dict:
             meta = payload.get("meta") or {}
             boards = payload.get("lineupBoardsByGameId") or {}
             expected_games = int(meta.get("gameCount") or len(boards) or 0)
-            expected_lineups = 0
+            expected_lineups = expected_games * 2 if expected_games else 0
             raw_slot_count = 0
-            expected_complete_slots = 0
+            expected_complete_slots = expected_games * 2 * 9 if expected_games else 0
             for board in boards.values():
                 for side in ("away", "home"):
                     lineup = ((board.get(side) or {}).get("lineup") or []) if isinstance(board, dict) else []
-                    if lineup:
-                        expected_lineups += 1
-                        expected_complete_slots += 9
                     raw_slot_count += len(lineup)
         except (OSError, json.JSONDecodeError, ValueError):
             expected_games = None
@@ -242,7 +239,7 @@ def validate(args: argparse.Namespace) -> dict:
     )
     check(
         "lineups_two_per_game",
-        expected_lineups is None or report["counts"]["lineups"] >= expected_lineups,
+        expected_lineups is None or report["counts"]["lineups"] == expected_lineups,
         f"{report['counts']['lineups']} / {expected_lineups}",
     )
     check(
