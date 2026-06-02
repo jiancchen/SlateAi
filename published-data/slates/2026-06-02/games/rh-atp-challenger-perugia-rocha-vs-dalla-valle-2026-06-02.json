@@ -1,1 +1,815 @@
-{"id":"rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02","eventId":"bfa93dc0-54a6-4330-886d-cf843e4e86bb","league":"Tennis","start":"1:00 AM","startMinutes":60,"title":"Henrique Rocha vs Enrico Dalla Valle","stage":"ATP Challenger Perugia | Round Of 32","spotlight":false,"confidence":69,"volatility":62,"tags":["ATP Challenger","Prediction market","Market only","No model edge","Coinflip price"],"matchup":[{"side":"Player 1","name":"Henrique Rocha","displayName":"Henrique Rocha","detail":"Live rank #119 | Portugal | age 22"},{"side":"Player 2","name":"Enrico Dalla Valle","displayName":"Enrico Dalla Valle","detail":"Rank not joined"}],"summary":"Henrique Rocha is the current market favorite. Henrique Rocha is only the current Robinhood market favorite over Enrico Dalla Valle; no warehouse service, break-point, or opponent-quality edge is joined yet.","factors":["Henrique Rocha is only the current Robinhood market favorite over Enrico Dalla Valle; no warehouse service, break-point, or opponent-quality edge is joined yet.","Prediction-market price only; no FanDuel moneyline edge calculated.","Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.","No posted sportsbook total captured for this Challenger market.","May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.","Market-only Challenger row: no warehouse edge, sportsbook derivative, or service profile has been joined yet."],"lean":"Market watch: Henrique Rocha; do not treat as a model bet.","swing":"Risk: best-of-five set extension and tiebreak variance.","swingFactor":"Risk: best-of-five set extension and tiebreak variance.","odds":{"participantOrder":[0,1],"markets":[{"label":"Prediction market","book":"Robinhood prediction market","value":"Henrique Rocha 69% / Enrico Dalla Valle 33%"},{"label":"Prediction market prices","book":"Robinhood prediction market","value":"Henrique Rocha 69c / Enrico Dalla Valle 33c"}],"note":"Robinhood prediction-market prices captured: Henrique Rocha 69c / Enrico Dalla Valle 33c. This is price context, not a sportsbook value signal.","provider":"Robinhood prediction market"},"tennisContext":{"surface":"Unknown","court":"ATP Challenger Perugia","h2hLeader":"","fatigueFlag":false,"liveDog":false,"weaknessEdge":{"edgeType":"Market-only","target":"No warehouse weakness edge","scoreGap":null,"attackingSide":null,"vulnerableSide":null,"gameFlow":"Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","liveTrigger":"Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.","spreadRead":"No spread line","totalRead":"No total line","pick":{"name":"Henrique Rocha","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."},"opponent":{"name":"Enrico Dalla Valle","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."}},"warehouseContext":{"source":"SQLite tennis warehouse fallback","eventId":"rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02","sourceUrl":null,"capturedAt":"2026-06-01 23:55:53","surface":"Clay","tournament":"Roland Garros","category":"WTA","startTimestamp":1780387200,"players":[{"name":"Henrique Rocha","side":"home","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null},{"name":"Enrico Dalla Valle","side":"away","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null}],"h2h":{"homeName":"Henrique Rocha","awayName":"Enrico Dalla Valle","homeWins":null,"awayWins":null,"draws":null,"matches":[],"coverage":{"datedRows":0,"surfaceRows":0,"weightedRows":0}},"score":{"home":null,"away":null},"result":null,"sofascoreSignals":null,"weather":{"source":"Open-Meteo","venueKey":"roland-garros","startTs":1780387200,"endTs":1780394400,"durationMinutes":120,"hourlyRows":2,"avgTemperatureC":17.05,"maxTemperatureC":17.3,"minTemperatureC":16.8,"avgApparentTemperatureC":16.05,"maxApparentTemperatureC":16.1,"avgHumidityPct":86,"totalPrecipitationMm":2.7,"avgCloudCoverPct":100,"avgWindSpeedKmh":17.55,"maxWindGustKmh":42.8,"avgShortwaveRadiationWm2":213.5,"hotMatch":false,"humidMatch":true,"windyMatch":true,"rainAffected":true,"hourly":[{"apparentTemperatureC":16.1,"gustKmh":42.8,"humidityPct":83,"overlapMinutes":60,"precipitationMm":1.1,"shortwaveWm2":254,"temperatureC":17.3,"timeLocal":"2026-06-02T10:00","timeUtc":"2026-06-02T08:00:00Z","windKmh":18.3},{"apparentTemperatureC":16,"gustKmh":41.4,"humidityPct":89,"overlapMinutes":60,"precipitationMm":1.6,"shortwaveWm2":173,"temperatureC":16.8,"timeLocal":"2026-06-02T11:00","timeUtc":"2026-06-02T09:00:00Z","windKmh":16.8}]},"allStatRows":[],"coverage":{"hasEvent":false,"hasH2h":false,"allStatRows":0,"playerStatRows":0,"liveStatRows":0,"expectedStatRows":0,"recentMetricRows":0,"seasonStatRows":0,"liveStatsStatus":null,"hasWeather":true,"isPregame":true}},"sofascoreData":{"source":"SQLite tennis warehouse fallback","eventId":"rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02","sourceUrl":null,"capturedAt":"2026-06-01 23:55:53","surface":"Clay","tournament":"Roland Garros","category":"WTA","startTimestamp":1780387200,"players":[{"name":"Henrique Rocha","side":"home","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null},{"name":"Enrico Dalla Valle","side":"away","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null}],"h2h":{"homeName":"Henrique Rocha","awayName":"Enrico Dalla Valle","homeWins":null,"awayWins":null,"draws":null,"matches":[],"coverage":{"datedRows":0,"surfaceRows":0,"weightedRows":0}},"score":{"home":null,"away":null},"result":null,"sofascoreSignals":null,"weather":{"source":"Open-Meteo","venueKey":"roland-garros","startTs":1780387200,"endTs":1780394400,"durationMinutes":120,"hourlyRows":2,"avgTemperatureC":17.05,"maxTemperatureC":17.3,"minTemperatureC":16.8,"avgApparentTemperatureC":16.05,"maxApparentTemperatureC":16.1,"avgHumidityPct":86,"totalPrecipitationMm":2.7,"avgCloudCoverPct":100,"avgWindSpeedKmh":17.55,"maxWindGustKmh":42.8,"avgShortwaveRadiationWm2":213.5,"hotMatch":false,"humidMatch":true,"windyMatch":true,"rainAffected":true,"hourly":[{"apparentTemperatureC":16.1,"gustKmh":42.8,"humidityPct":83,"overlapMinutes":60,"precipitationMm":1.1,"shortwaveWm2":254,"temperatureC":17.3,"timeLocal":"2026-06-02T10:00","timeUtc":"2026-06-02T08:00:00Z","windKmh":18.3},{"apparentTemperatureC":16,"gustKmh":41.4,"humidityPct":89,"overlapMinutes":60,"precipitationMm":1.6,"shortwaveWm2":173,"temperatureC":16.8,"timeLocal":"2026-06-02T11:00","timeUtc":"2026-06-02T09:00:00Z","windKmh":16.8}]},"allStatRows":[],"coverage":{"hasEvent":false,"hasH2h":false,"allStatRows":0,"playerStatRows":0,"liveStatRows":0,"expectedStatRows":0,"recentMetricRows":0,"seasonStatRows":0,"liveStatsStatus":null,"hasWeather":true,"isPregame":true}},"players":[{"name":"Henrique Rocha","rank":119,"label":"Henrique Rocha","form":null,"boardPct":69,"decimalOdds":null,"marketLabel":"69c / 69% implied","clayLine":"Live rank #119 | Portugal | age 22","weakness":{"name":"Henrique Rocha","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."},"warehouseStats":{"name":"Henrique Rocha","side":"home","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null},"record2026":"","notes":"Pick: model 69%","matchupNote":"Why pick: Henrique Rocha is only the current Robinhood market favorite over Enrico Dalla Valle; no warehouse service, break-point, or opponent-quality edge is joined yet."},{"name":"Enrico Dalla Valle","rank":null,"label":"Enrico Dalla Valle","form":null,"boardPct":33,"decimalOdds":null,"marketLabel":"33c / 33% implied","clayLine":"Rank not joined","weakness":{"name":"Enrico Dalla Valle","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."},"warehouseStats":{"name":"Enrico Dalla Valle","side":"away","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null},"record2026":"","notes":"Opponent case: model 31%","matchupNote":"Upset path: needs early scoreboard pressure or a market price that pays for volatility."}],"comparisonRows":[{"label":"Model pick","metric":"Fair win split","leftScore":69,"rightScore":33,"leftLabel":"Henrique Rocha","rightLabel":"Enrico Dalla Valle","winner":"Henrique Rocha"},{"label":"Prediction market","metric":"Implied price","leftScore":69,"rightScore":33,"leftLabel":"Henrique Rocha","rightLabel":"Enrico Dalla Valle","winner":"Prediction-market price captured; no sportsbook EV is inferred from this row."},{"label":"Weakness","metric":"Lower is cleaner","leftScore":0,"rightScore":0,"leftLabel":"Henrique Rocha","rightLabel":"Enrico Dalla Valle","winner":"Market-only"},{"label":"Volatility","metric":"Lower is cleaner","leftScore":62,"rightScore":38,"leftLabel":"Risk","rightLabel":"Stability","winner":"Pass-first"}],"predictionMarket":{"source":"Robinhood prediction market","capturedAt":null,"totalVolume":0,"players":[{"name":"Henrique Rocha","probabilityPct":69,"amount":398,"americanOdds":null,"edgePct":null,"priceBand":"Moderate favorite"},{"name":"Enrico Dalla Valle","probabilityPct":33,"amount":94,"americanOdds":null,"edgePct":null,"priceBand":"Underdog"}]},"bettingMatrix":[{"marketType":"Moneyline","label":"ML value","selection":"Henrique Rocha","line":null,"americanOdds":null,"modelPct":69,"impliedPct":69,"edgePct":null,"evPer100":null,"netEvPer100":null,"grade":"Near fair","issue":"Favorite price needs better proof","reason":"Prediction-market price captured; no sportsbook EV is inferred from this row."},{"marketType":"Total games","label":"O/U games","selection":"No bet","line":null,"americanOdds":null,"modelPct":null,"impliedPct":null,"edgePct":null,"evPer100":null,"netEvPer100":null,"expectedGames":null,"edgeGames":null,"confidence":null,"grade":"No direction","reason":"Total games need expected match games vs the posted line."},{"marketType":"Win a set","label":"Win a set %","selection":"Henrique Rocha 77% / Enrico Dalla Valle 53%","rows":[{"name":"Henrique Rocha","confidence":77,"modelPct":69,"label":"Market favorite to win a set"},{"name":"Enrico Dalla Valle","confidence":53,"modelPct":33,"label":"Underdog set-win path needs early holds"}],"confidence":77,"grade":"Price required","reason":"Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."},{"marketType":"First-set total games","label":"1st set O/U","selection":"Price required","expectedGames":9.8,"confidence":53,"tiebreakRisk":42,"earlyBreakRisk":58,"grade":"Needs posted first-set total","reason":"Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."}],"derivativeMarketCase":null,"valueBoard":{"note":"EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.","ml":{"marketType":"ML","selection":"Henrique Rocha","americanOdds":null,"modelPct":69,"impliedPct":69,"edgePct":null,"evPer100":null,"netEvPer100":null,"feePer100":2,"valueIssue":"Favorite price needs better proof","valueGrade":"Near fair","betGrade":false},"spread":null,"total":{"marketType":"Total","selection":"No bet","line":null,"overOdds":null,"underOdds":null,"expectedGames":null,"valueGrade":"No direction","reason":"No posted match total captured.","betGrade":false},"firstSetTotal":{"marketType":"First-set total","selection":"Price required","line":null,"americanOdds":null,"expectedGames":9.8,"confidence":53,"tiebreakRisk":42,"earlyBreakRisk":58,"modelPct":53,"evPer100":null,"netEvPer100":null,"valueGrade":"Needs posted first-set total","reason":"Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.","betGrade":false},"setWin":[{"name":"Henrique Rocha","confidence":77,"modelPct":69,"label":"Market favorite to win a set","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false},{"name":"Enrico Dalla Valle","confidence":53,"modelPct":33,"label":"Underdog set-win path needs early holds","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false}]},"ensembleValueCase":null,"projection":{"projectedWinner":"Henrique Rocha","projectedSetLine":"2-0/2-1 range","setWinProjections":[{"name":"Henrique Rocha","confidence":77,"modelPct":69,"label":"Market favorite to win a set"},{"name":"Enrico Dalla Valle","confidence":53,"modelPct":33,"label":"Underdog set-win path needs early holds"}],"totalGames":null,"straightSetsProbability":61,"upsetRisk":31,"overview":"Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","fantasy":[]},"tradePlan":{"laneLabel":"Prediction-market price captured; no sportsbook EV is inferred from this row.","summary":"Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","trigger":"Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.","headline":"Market-only","exit":"No spread line","tone":"warning"},"derivativeMarkets":[{"label":"ML","value":"Henrique Rocha 69c; Prediction-market price only; no FanDuel moneyline edge calculated.","lean":"Prediction-market price captured; no sportsbook EV is inferred from this row.","confidence":69,"marketType":"ML","selection":"Henrique Rocha","americanOdds":null,"modelPct":69,"impliedPct":69,"edgePct":null,"evPer100":null,"netEvPer100":null,"feePer100":2,"valueIssue":"Favorite price needs better proof","valueGrade":"Near fair","betGrade":false,"tone":"neutral","reason":"Robinhood prediction-market prices captured: Henrique Rocha 69c / Enrico Dalla Valle 33c. This is price context, not a sportsbook value signal."},{"label":"Win a set","value":"Henrique Rocha 77% / Enrico Dalla Valle 53%","lean":"Underdog set-win path needs early holds","confidence":77,"setWinRows":[{"name":"Henrique Rocha","confidence":77,"modelPct":69,"label":"Market favorite to win a set","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false},{"name":"Enrico Dalla Valle","confidence":53,"modelPct":33,"label":"Underdog set-win path needs early holds","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false}],"valueGrade":"Needs posted price","tone":"neutral","reason":"Best-of-three set-win confidence is more fragile; early service holds matter more."},{"label":"Spread","value":"No game spread captured","lean":"No spread line","confidence":63,"tone":"neutral","reason":"Only enter after visible first-service comfort and break-point pressure; no pre-match model edge."},{"label":"O/U","value":"No total captured","lean":"No bet","confidence":61,"marketType":"Total","selection":"No bet","line":null,"overOdds":null,"underOdds":null,"expectedGames":null,"valueGrade":"No direction","reason":"No posted match total captured.","betGrade":false,"tone":"neutral"},{"label":"1st set O/U","value":"Need posted first-set total","lean":"Price required","confidence":53,"marketType":"First-set total","selection":"Price required","line":null,"americanOdds":null,"expectedGames":9.8,"tiebreakRisk":42,"earlyBreakRisk":58,"modelPct":53,"evPer100":null,"netEvPer100":null,"valueGrade":"Needs posted first-set total","reason":"Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.","betGrade":false,"tone":"neutral"}],"marketEconomics":{"source":"Robinhood prediction market","capturedAt":null,"eventUrl":"https://robinhood.com/us/en/prediction-markets/tennis/","deskName":"Henrique Rocha","deskPricePct":69,"deskEdgePct":null,"priceAction":"Prediction-market price captured; no sportsbook EV is inferred from this row.","players":[{"name":"Henrique Rocha","americanOdds":null,"impliedPct":69,"modelPct":69,"edgePct":null,"priceBand":"Moderate favorite","grossProfitPct":31,"grossPayoutMultiple":1.449,"centsAtRisk":69,"centsProfitIfWin":31,"bidPct":67,"lastTradePct":69,"openInterest":398,"symbol":"KXATPCHALLENGERMATCH-26JUN02ROCDAL-ROC"},{"name":"Enrico Dalla Valle","americanOdds":null,"impliedPct":33,"modelPct":33,"edgePct":null,"priceBand":"Underdog","grossProfitPct":67,"grossPayoutMultiple":3.03,"centsAtRisk":33,"centsProfitIfWin":67,"bidPct":30,"lastTradePct":31,"openInterest":94,"symbol":"KXATPCHALLENGERMATCH-26JUN02ROCDAL-DAL"}]},"clayMatchupData":null,"opponentQualityData":null,"researchLinks":[{"label":"ESPN scoreboard","url":"https://www.espn.com/tennis/scoreboard/_/date/20260602"},{"label":"Tennistonic H2H","url":"https://tennistonic.com/head-to-head-compare/Henrique-Rocha-Vs-Enrico-Dalla-Valle/"},{"label":"Robinhood market","url":"https://robinhood.com/us/en/prediction-markets/tennis/"}],"formEdgeName":"Henrique Rocha"},"participants":[{"id":"rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02:0","index":0,"role":"Player 1","name":"Henrique Rocha","detail":"Live rank #119 | Portugal | age 22","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},{"id":"rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02:1","index":1,"role":"Player 2","name":"Enrico Dalla Valle","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"}],"moneyline":{"available":true,"label":"Prediction market","provider":"Robinhood prediction market","participants":[{"id":"rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02:0","index":0,"role":"Player 1","name":"Henrique Rocha","detail":"Live rank #119 | Portugal | age 22","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},{"id":"rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02:1","index":1,"role":"Player 2","name":"Enrico Dalla Valle","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"}]},"analysis":{"available":true,"participantId":"rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02:0","participant":{"id":"rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02:0","index":0,"role":"Player 1","name":"Henrique Rocha","detail":"Live rank #119 | Portugal | age 22","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},"opponent":{"id":"rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02:1","index":1,"role":"Player 2","name":"Enrico Dalla Valle","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},"lean":"Market watch: Henrique Rocha; do not treat as a model bet.","rationale":"Henrique Rocha is the current market favorite. Henrique Rocha is only the current Robinhood market favorite over Enrico Dalla Valle; no warehouse service, break-point, or opponent-quality edge is joined yet.","confidence":69,"volatility":62,"recommendationScore":54,"tier":"Watch","sourceLabel":"Robinhood prediction market","modelEdge":null,"modelEdgeLabel":"","marketProbability":0,"marketProbabilityLabel":"0.0%","inputs":[],"inputsUsed":0,"volatilityNotes":[],"indicators":{}},"metadata":{"participantCount":2,"participantNames":["Henrique Rocha","Enrico Dalla Valle"],"tagCount":5,"hasSeriesBreakdown":false,"hasMoneyline":true,"hasAnalysisPick":true,"hasStructuredInputs":false,"hasPlayerProps":false,"startMinutes":60,"spotlight":false,"league":"Tennis","oddsProvider":"Robinhood prediction market"},"detailLevel":"full","stateContext":null}
+{
+  "id": "rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02",
+  "eventId": "bfa93dc0-54a6-4330-886d-cf843e4e86bb",
+  "league": "Tennis",
+  "start": "1:00 AM",
+  "startMinutes": 60,
+  "title": "Henrique Rocha vs Enrico Dalla Valle",
+  "stage": "ATP Challenger Perugia | Round Of 32",
+  "spotlight": false,
+  "confidence": 69,
+  "volatility": 62,
+  "tags": [
+    "ATP Challenger",
+    "Clay",
+    "Prediction market",
+    "Market only",
+    "No model edge",
+    "Coinflip price"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "Henrique Rocha",
+      "displayName": "Henrique Rocha",
+      "detail": "Clay | Live rank #119 | Portugal | age 22"
+    },
+    {
+      "side": "Player 2",
+      "name": "Enrico Dalla Valle",
+      "displayName": "Enrico Dalla Valle",
+      "detail": "Clay | Rank not joined"
+    }
+  ],
+  "summary": "Henrique Rocha is the current market favorite. Henrique Rocha is only the current Robinhood market favorite over Enrico Dalla Valle; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+  "factors": [
+    "Henrique Rocha is only the current Robinhood market favorite over Enrico Dalla Valle; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+    "Prediction-market price only; no FanDuel moneyline edge calculated.",
+    "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+    "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+    "No posted sportsbook total captured for this Challenger market.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "Market-only Challenger row: no warehouse edge, sportsbook derivative, or service profile has been joined yet."
+  ],
+  "lean": "Market watch: Henrique Rocha; do not treat as a model bet.",
+  "swing": "Risk: best-of-five set extension and tiebreak variance.",
+  "swingFactor": "Risk: best-of-five set extension and tiebreak variance.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Prediction market",
+        "book": "Robinhood prediction market",
+        "value": "Henrique Rocha 69% / Enrico Dalla Valle 33%"
+      },
+      {
+        "label": "Prediction market prices",
+        "book": "Robinhood prediction market",
+        "value": "Henrique Rocha 69c / Enrico Dalla Valle 33c"
+      }
+    ],
+    "note": "Robinhood prediction-market prices captured: Henrique Rocha 69c / Enrico Dalla Valle 33c. This is price context, not a sportsbook value signal.",
+    "provider": "Robinhood prediction market"
+  },
+  "tennisContext": {
+    "surface": "Clay",
+    "court": "ATP Challenger Perugia",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "Market-only",
+      "target": "No warehouse weakness edge",
+      "scoreGap": null,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+      "spreadRead": "No spread line",
+      "totalRead": "No total line",
+      "pick": {
+        "name": "Henrique Rocha",
+        "weaknessScore": null,
+        "liabilities": [
+          "No warehouse weakness data joined yet"
+        ],
+        "strengths": [],
+        "firstGameComfort": "Market-only row; wait for serve pressure data",
+        "gameFlowRead": "No service/break profile joined yet."
+      },
+      "opponent": {
+        "name": "Enrico Dalla Valle",
+        "weaknessScore": null,
+        "liabilities": [
+          "No warehouse weakness data joined yet"
+        ],
+        "strengths": [],
+        "firstGameComfort": "Market-only row; wait for serve pressure data",
+        "gameFlowRead": "No service/break profile joined yet."
+      }
+    },
+    "warehouseContext": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Clay",
+      "tournament": "ATP Challenger Perugia",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Henrique Rocha",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Enrico Dalla Valle",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Henrique Rocha",
+        "awayName": "Enrico Dalla Valle",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "sofascoreData": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Clay",
+      "tournament": "ATP Challenger Perugia",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Henrique Rocha",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Enrico Dalla Valle",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Henrique Rocha",
+        "awayName": "Enrico Dalla Valle",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "players": [
+      {
+        "name": "Henrique Rocha",
+        "rank": 119,
+        "label": "Henrique Rocha",
+        "form": null,
+        "boardPct": 69,
+        "decimalOdds": null,
+        "marketLabel": "69c / 69% implied",
+        "clayLine": "Clay | Live rank #119 | Portugal | age 22",
+        "weakness": {
+          "name": "Henrique Rocha",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "warehouseStats": {
+          "name": "Henrique Rocha",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        "record2026": "",
+        "notes": "Pick: model 69%",
+        "matchupNote": "Why pick: Henrique Rocha is only the current Robinhood market favorite over Enrico Dalla Valle; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet."
+      },
+      {
+        "name": "Enrico Dalla Valle",
+        "rank": null,
+        "label": "Enrico Dalla Valle",
+        "form": null,
+        "boardPct": 33,
+        "decimalOdds": null,
+        "marketLabel": "33c / 33% implied",
+        "clayLine": "Clay | Rank not joined",
+        "weakness": {
+          "name": "Enrico Dalla Valle",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "warehouseStats": {
+          "name": "Enrico Dalla Valle",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        "record2026": "",
+        "notes": "Opponent case: model 31%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 69,
+        "rightScore": 33,
+        "leftLabel": "Henrique Rocha",
+        "rightLabel": "Enrico Dalla Valle",
+        "winner": "Henrique Rocha"
+      },
+      {
+        "label": "Prediction market",
+        "metric": "Implied price",
+        "leftScore": 69,
+        "rightScore": 33,
+        "leftLabel": "Henrique Rocha",
+        "rightLabel": "Enrico Dalla Valle",
+        "winner": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 0,
+        "rightScore": 0,
+        "leftLabel": "Henrique Rocha",
+        "rightLabel": "Enrico Dalla Valle",
+        "winner": "Market-only"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 62,
+        "rightScore": 38,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Pass-first"
+      }
+    ],
+    "predictionMarket": {
+      "source": "Robinhood prediction market",
+      "capturedAt": null,
+      "totalVolume": 0,
+      "players": [
+        {
+          "name": "Henrique Rocha",
+          "probabilityPct": 69,
+          "amount": 1996,
+          "americanOdds": null,
+          "edgePct": null,
+          "priceBand": "Moderate favorite"
+        },
+        {
+          "name": "Enrico Dalla Valle",
+          "probabilityPct": 33,
+          "amount": 204,
+          "americanOdds": null,
+          "edgePct": null,
+          "priceBand": "Underdog"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Henrique Rocha",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 69,
+        "impliedPct": 69,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "grade": "Near fair",
+        "issue": "Favorite price needs better proof",
+        "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "Total games need expected match games vs the posted line."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Henrique Rocha 77% / Enrico Dalla Valle 53%",
+        "rows": [
+          {
+            "name": "Henrique Rocha",
+            "confidence": 77,
+            "modelPct": 69,
+            "label": "Market favorite to win a set"
+          },
+          {
+            "name": "Enrico Dalla Valle",
+            "confidence": 53,
+            "modelPct": 33,
+            "label": "Underdog set-win path needs early holds"
+          }
+        ],
+        "confidence": 77,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Price required",
+        "expectedGames": 9.8,
+        "confidence": 53,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "grade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Henrique Rocha",
+        "americanOdds": null,
+        "modelPct": 69,
+        "impliedPct": 69,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Near fair",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "expectedGames": 9.8,
+        "confidence": 53,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "modelPct": 53,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Henrique Rocha",
+          "confidence": 77,
+          "modelPct": 69,
+          "label": "Market favorite to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Enrico Dalla Valle",
+          "confidence": 53,
+          "modelPct": 33,
+          "label": "Underdog set-win path needs early holds",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "Henrique Rocha",
+      "projectedSetLine": "2-0/2-1 range",
+      "setWinProjections": [
+        {
+          "name": "Henrique Rocha",
+          "confidence": 77,
+          "modelPct": 69,
+          "label": "Market favorite to win a set"
+        },
+        {
+          "name": "Enrico Dalla Valle",
+          "confidence": 53,
+          "modelPct": 33,
+          "label": "Underdog set-win path needs early holds"
+        }
+      ],
+      "totalGames": null,
+      "straightSetsProbability": 61,
+      "upsetRisk": 31,
+      "overview": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
+      "summary": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "trigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+      "headline": "Market-only",
+      "exit": "No spread line",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "Henrique Rocha 69c; Prediction-market price only; no FanDuel moneyline edge calculated.",
+        "lean": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
+        "confidence": 69,
+        "marketType": "ML",
+        "selection": "Henrique Rocha",
+        "americanOdds": null,
+        "modelPct": 69,
+        "impliedPct": 69,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Near fair",
+        "betGrade": false,
+        "tone": "neutral",
+        "reason": "Robinhood prediction-market prices captured: Henrique Rocha 69c / Enrico Dalla Valle 33c. This is price context, not a sportsbook value signal."
+      },
+      {
+        "label": "Win a set",
+        "value": "Henrique Rocha 77% / Enrico Dalla Valle 53%",
+        "lean": "Underdog set-win path needs early holds",
+        "confidence": 77,
+        "setWinRows": [
+          {
+            "name": "Henrique Rocha",
+            "confidence": 77,
+            "modelPct": 69,
+            "label": "Market favorite to win a set",
+            "marketType": "Win a set",
+            "valueGrade": "Needs posted price",
+            "betGrade": false
+          },
+          {
+            "name": "Enrico Dalla Valle",
+            "confidence": 53,
+            "modelPct": 33,
+            "label": "Underdog set-win path needs early holds",
+            "marketType": "Win a set",
+            "valueGrade": "Needs posted price",
+            "betGrade": false
+          }
+        ],
+        "valueGrade": "Needs posted price",
+        "tone": "neutral",
+        "reason": "Best-of-three set-win confidence is more fragile; early service holds matter more."
+      },
+      {
+        "label": "Spread",
+        "value": "No game spread captured",
+        "lean": "No spread line",
+        "confidence": 63,
+        "tone": "neutral",
+        "reason": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge."
+      },
+      {
+        "label": "O/U",
+        "value": "No total captured",
+        "lean": "No bet",
+        "confidence": 61,
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Need posted first-set total",
+        "lean": "Price required",
+        "confidence": 53,
+        "marketType": "First-set total",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "expectedGames": 9.8,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "modelPct": 53,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "betGrade": false,
+        "tone": "neutral"
+      }
+    ],
+    "marketEconomics": {
+      "source": "Robinhood prediction market",
+      "capturedAt": null,
+      "eventUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "deskName": "Henrique Rocha",
+      "deskPricePct": 69,
+      "deskEdgePct": null,
+      "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
+      "players": [
+        {
+          "name": "Henrique Rocha",
+          "americanOdds": null,
+          "impliedPct": 69,
+          "modelPct": 69,
+          "edgePct": null,
+          "priceBand": "Moderate favorite",
+          "grossProfitPct": 31,
+          "grossPayoutMultiple": 1.449,
+          "centsAtRisk": 69,
+          "centsProfitIfWin": 31,
+          "bidPct": 68,
+          "lastTradePct": 69,
+          "openInterest": 1996,
+          "symbol": "KXATPCHALLENGERMATCH-26JUN02ROCDAL-ROC"
+        },
+        {
+          "name": "Enrico Dalla Valle",
+          "americanOdds": null,
+          "impliedPct": 33,
+          "modelPct": 33,
+          "edgePct": null,
+          "priceBand": "Underdog",
+          "grossProfitPct": 67,
+          "grossPayoutMultiple": 3.03,
+          "centsAtRisk": 33,
+          "centsProfitIfWin": 67,
+          "bidPct": 31,
+          "lastTradePct": 33,
+          "openInterest": 204,
+          "symbol": "KXATPCHALLENGERMATCH-26JUN02ROCDAL-DAL"
+        }
+      ]
+    },
+    "clayMatchupData": null,
+    "opponentQualityData": null,
+    "researchLinks": [
+      {
+        "label": "ESPN scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260602"
+      },
+      {
+        "label": "Tennistonic H2H",
+        "url": "https://tennistonic.com/head-to-head-compare/Henrique-Rocha-Vs-Enrico-Dalla-Valle/"
+      },
+      {
+        "label": "Robinhood market",
+        "url": "https://robinhood.com/us/en/prediction-markets/tennis/"
+      }
+    ],
+    "formEdgeName": "Henrique Rocha"
+  },
+  "participants": [
+    {
+      "id": "rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Henrique Rocha",
+      "detail": "Clay | Live rank #119 | Portugal | age 22",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    },
+    {
+      "id": "rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Enrico Dalla Valle",
+      "detail": "Clay | Rank not joined",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "Prediction market",
+    "provider": "Robinhood prediction market",
+    "participants": [
+      {
+        "id": "rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "Henrique Rocha",
+        "detail": "Clay | Live rank #119 | Portugal | age 22",
+        "americanOdds": null,
+        "americanLabel": "0",
+        "decimalOdds": null,
+        "impliedProbability": 0,
+        "impliedProbabilityLabel": "0.0%"
+      },
+      {
+        "id": "rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Enrico Dalla Valle",
+        "detail": "Clay | Rank not joined",
+        "americanOdds": null,
+        "americanLabel": "0",
+        "decimalOdds": null,
+        "impliedProbability": 0,
+        "impliedProbabilityLabel": "0.0%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02:0",
+    "participant": {
+      "id": "rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Henrique Rocha",
+      "detail": "Clay | Live rank #119 | Portugal | age 22",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    },
+    "opponent": {
+      "id": "rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Enrico Dalla Valle",
+      "detail": "Clay | Rank not joined",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    },
+    "lean": "Market watch: Henrique Rocha; do not treat as a model bet.",
+    "rationale": "Henrique Rocha is the current market favorite. Henrique Rocha is only the current Robinhood market favorite over Enrico Dalla Valle; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+    "confidence": 69,
+    "volatility": 62,
+    "recommendationScore": 54,
+    "tier": "Watch",
+    "sourceLabel": "Robinhood prediction market",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0,
+    "marketProbabilityLabel": "0.0%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "Henrique Rocha",
+      "Enrico Dalla Valle"
+    ],
+    "tagCount": 6,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 60,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "Robinhood prediction market"
+  }
+}

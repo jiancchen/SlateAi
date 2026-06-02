@@ -15,9 +15,9 @@
       {
         "role": "model-runner",
         "path": "pipeline/tennis/publish/generate-day-module.mjs",
-        "expectedSha256": "d11cd846854204c981f69a115df14678c48de622556290f6e6f1e2b49c71cbdd",
+        "expectedSha256": "a23591fa47cdd2599b6c25f3001f34795c2aee753953bd28470e6ad8a99e47f0",
         "exists": true,
-        "sha256": "d11cd846854204c981f69a115df14678c48de622556290f6e6f1e2b49c71cbdd"
+        "sha256": "a23591fa47cdd2599b6c25f3001f34795c2aee753953bd28470e6ad8a99e47f0"
       },
       {
         "role": "source-mapping-helper",
@@ -43,7 +43,7 @@
       {
         "path": "data-private/reference/tennis/player-rankings.json",
         "exists": true,
-        "sha256": "96b12ad87a7f33e8c73e17034d78dc9df0e4d48e166449980b7cb159b07d46d5"
+        "sha256": "0ee36f9e45246a4d519974a1a4e444111326d90baea007d9157a35409aae11f4"
       },
       {
         "path": "web/src/lib/day-2026-05-31-tennis-opponent-quality.generated.json",

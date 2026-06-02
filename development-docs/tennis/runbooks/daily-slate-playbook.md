@@ -161,7 +161,7 @@ Decision rules:
 - O/U grading must use expected match games and expected first-set games, not only winner confidence.
 - Win-a-set probability must be visible for both players. It is especially important for best-of-five matches and for live hedge paths where the underdog wins early but the favorite remains likely to take a set.
 - Each match detail must show both players' pressure stats near the decision matrix: hold %, break points saved %, and break points converted %. If the warehouse lacks direct hold %, derive it from expected first-serve-in, first-serve-won, and second-serve-won so the UI does not hide serve stability.
-- SofaScore player-page stats are required pre-match for this pressure block. Pull the `Statistics` tab with the clay surface filter and store `1st serve`, `1st serve points won`, `2nd serve points won`, `BP saved`, and `BP converted`. If direct match stats are unavailable, use these player-page rows as the expected-stat fallback instead of showing N/A.
+- SofaScore player-page stats are required pre-match for this pressure block. Pull the `Statistics` tab with the match surface filter and store `1st serve`, `1st serve points won`, `2nd serve points won`, `BP saved`, and `BP converted`. If direct match stats are unavailable, use the matching-surface player-page row as the expected-stat fallback; use all-surface only when the matching surface is unavailable. Never use clay stats as the fallback for hard or grass matches.
 - Every match writeup must name the best market, not just the projected winner. "Pass" is acceptable only when all four price lanes fail.
 
 Minimum modeling inputs:
@@ -171,7 +171,7 @@ Minimum modeling inputs:
 - Roland Garros replay flow: service games, hold rate, breaks lost, return games, breaks won, long-game rate, first-set shape where available. Prefer Livesport/Flashscore point-by-point when a match URL exists; use SofaScore replay only when event mapping is clean.
 - FanDuel `totalGames` and `gameHandicap` lines when offered.
 - Men/Women and best-of-five/best-of-three adjustment.
-- Clay form, opponent quality, H2H surface context, and current tournament fatigue.
+- Surface-specific form, opponent quality, H2H surface context, and current tournament fatigue. Clay form is full-strength only for clay matches; it is context-only on hard, grass, or unknown surfaces.
 
 Required health behavior:
 
@@ -191,9 +191,9 @@ Display requirements:
 Each singles match needs:
 
 - Current ranking snapshot from Live Tennis or fallback ranking warehouse.
-- Clay record, recent record, recent opponent rank quality, and adjusted form.
+- Surface-tagged record, recent record, recent opponent rank quality, and adjusted form.
 - Recent service and return metrics: hold, second serve, error control, return pressure, closeout.
-- SofaScore player-page pressure stats for the current slate: first serve in, first-serve points won, second-serve points won, break points saved %, and break points converted %. Use clay-filtered rows first; all-surface rows are fallback only.
+- SofaScore player-page pressure stats for the current slate: first serve in, first-serve points won, second-serve points won, break points saved %, and break points converted %. Use the row matching the actual match surface first; all-surface rows are fallback only. If the match is hard or grass and only clay rows exist, mark surface pressure data incomplete instead of silently joining clay.
 - Livesport/Flashscore point-by-point replay flow where available: service games, holds, breaks lost, return games, breaks won, break-point states, set-point states, long-game rate, and first-set shape. Store the URL player map: match id, source URL, home/away names, player slug ids, slate date, and board match id.
 - SofaScore replay flow is acceptable when mapped cleanly, but a failed SofaScore slate map cannot leave replay flow blank if a Livesport/Flashscore URL is available.
 - H2H with dates and surfaces, not just total count.
@@ -202,6 +202,17 @@ Each singles match needs:
 - Kalshi contract data: entry, orderbook, candles, max bid/trade, same-favorite history, similar-entry history.
 
 If any row is missing the core hold/return/error context, mark it "data incomplete" and do not promote it above watch.
+
+## Surface And Published-Data Gate
+
+Every tennis slate must carry a surface per match before warehouse import or deploy:
+
+- Robinhood/Challenger rows must be tagged by tournament: Roland Garros/French Open, Perugia, Prostejov, and Bad Rappenau as `Clay`; Birmingham as `Grass`; Tyler and Centurion as `Hard`. Unknown events stay `Unknown`; do not default them to clay.
+- `pipeline/tennis/fetchers/scrape-robinhood-tennis-page.mjs --date YYYY-MM-DD` writes `surface` and `surfaceSource` into the Robinhood supplement.
+- `pipeline/tennis/research/multimodel_backtest.py --target-date YYYY-MM-DD` exports `surface` and `surfaceFlags` in the ensemble rows so value-board decisions can be audited.
+- `pipeline/tennis/publish/export_warehouse_context.py --date YYYY-MM-DD` must not attach Roland Garros/Paris fallback weather or clay player-page stats to non-Roland-Garros market-only rows.
+- After `generate-day-module.mjs`, run `npm run data:export:tennis-published-slate -- --date YYYY-MM-DD` before `tennis_warehouse.py import-slate`. The warehouse importer reads `published-data/slates/YYYY-MM-DD/games`, not the web day module directly.
+- Verify with `sqlite3 data-private/warehouse/sports.db "select surface, count(*) from tennis_matches where slate_date='YYYY-MM-DD' group by surface"` and make sure the counts match the Robinhood supplement surface counts plus senior slate rows.
 
 ## Prediction-Market Trade Screen
 

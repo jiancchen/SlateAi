@@ -1,1 +1,815 @@
-{"id":"rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02","eventId":"ce951214-9e0e-4f98-87d6-314bf68241f5","league":"Tennis","start":"2:10 AM","startMinutes":130,"title":"Akira Santillan vs Alexander Donski","stage":"ATP Challenger Centurion 2 | Round Of 32","spotlight":false,"confidence":66,"volatility":65,"tags":["ATP Challenger","Prediction market","Market only","No model edge","Coinflip price"],"matchup":[{"side":"Player 1","name":"Akira Santillan","displayName":"Akira Santillan","detail":"Rank not joined"},{"side":"Player 2","name":"Alexander Donski","displayName":"Alexander Donski","detail":"Rank not joined"}],"summary":"Akira Santillan is the current market favorite. Akira Santillan is only the current Robinhood market favorite over Alexander Donski; no warehouse service, break-point, or opponent-quality edge is joined yet.","factors":["Akira Santillan is only the current Robinhood market favorite over Alexander Donski; no warehouse service, break-point, or opponent-quality edge is joined yet.","Prediction-market price only; no FanDuel moneyline edge calculated.","Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.","No posted sportsbook total captured for this Challenger market.","May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.","Market-only Challenger row: no warehouse edge, sportsbook derivative, or service profile has been joined yet."],"lean":"Market watch: Akira Santillan; do not treat as a model bet.","swing":"Risk: best-of-five set extension and tiebreak variance.","swingFactor":"Risk: best-of-five set extension and tiebreak variance.","odds":{"participantOrder":[0,1],"markets":[{"label":"Prediction market","book":"Robinhood prediction market","value":"Akira Santillan 66% / Alexander Donski 37%"},{"label":"Prediction market prices","book":"Robinhood prediction market","value":"Akira Santillan 66c / Alexander Donski 37c"}],"note":"Robinhood prediction-market prices captured: Akira Santillan 66c / Alexander Donski 37c. This is price context, not a sportsbook value signal.","provider":"Robinhood prediction market"},"tennisContext":{"surface":"Unknown","court":"ATP Challenger Centurion 2","h2hLeader":"","fatigueFlag":false,"liveDog":false,"weaknessEdge":{"edgeType":"Market-only","target":"No warehouse weakness edge","scoreGap":null,"attackingSide":null,"vulnerableSide":null,"gameFlow":"Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","liveTrigger":"Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.","spreadRead":"No spread line","totalRead":"No total line","pick":{"name":"Akira Santillan","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."},"opponent":{"name":"Alexander Donski","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."}},"warehouseContext":{"source":"SQLite tennis warehouse fallback","eventId":"rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02","sourceUrl":null,"capturedAt":"2026-06-01 23:55:53","surface":"Clay","tournament":"Roland Garros","category":"WTA","startTimestamp":1780391400,"players":[{"name":"Akira Santillan","side":"home","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null},{"name":"Alexander Donski","side":"away","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null}],"h2h":{"homeName":"Akira Santillan","awayName":"Alexander Donski","homeWins":null,"awayWins":null,"draws":null,"matches":[],"coverage":{"datedRows":0,"surfaceRows":0,"weightedRows":0}},"score":{"home":null,"away":null},"result":null,"sofascoreSignals":null,"weather":{"source":"Open-Meteo","venueKey":"roland-garros","startTs":1780391400,"endTs":1780398600,"durationMinutes":120,"hourlyRows":3,"avgTemperatureC":16.47,"maxTemperatureC":16.8,"minTemperatureC":15.8,"avgApparentTemperatureC":15.53,"maxApparentTemperatureC":16,"avgHumidityPct":90.17,"totalPrecipitationMm":5.6,"avgCloudCoverPct":99.25,"avgWindSpeedKmh":17.52,"maxWindGustKmh":41.4,"avgShortwaveRadiationWm2":159.58,"hotMatch":false,"humidMatch":true,"windyMatch":true,"rainAffected":true,"hourly":[{"apparentTemperatureC":16,"gustKmh":41.4,"humidityPct":89,"overlapMinutes":50,"precipitationMm":1.6,"shortwaveWm2":173,"temperatureC":16.8,"timeLocal":"2026-06-02T11:00","timeUtc":"2026-06-02T09:00:00Z","windKmh":16.8},{"apparentTemperatureC":15.2,"gustKmh":41.4,"humidityPct":91,"overlapMinutes":60,"precipitationMm":4.1,"shortwaveWm2":156,"temperatureC":16.3,"timeLocal":"2026-06-02T12:00","timeUtc":"2026-06-02T10:00:00Z","windKmh":18.6},{"apparentTemperatureC":15.1,"gustKmh":37.8,"humidityPct":91,"overlapMinutes":10,"precipitationMm":1,"shortwaveWm2":114,"temperatureC":15.8,"timeLocal":"2026-06-02T13:00","timeUtc":"2026-06-02T11:00:00Z","windKmh":14.7}]},"allStatRows":[],"coverage":{"hasEvent":false,"hasH2h":false,"allStatRows":0,"playerStatRows":0,"liveStatRows":0,"expectedStatRows":0,"recentMetricRows":0,"seasonStatRows":0,"liveStatsStatus":null,"hasWeather":true,"isPregame":true}},"sofascoreData":{"source":"SQLite tennis warehouse fallback","eventId":"rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02","sourceUrl":null,"capturedAt":"2026-06-01 23:55:53","surface":"Clay","tournament":"Roland Garros","category":"WTA","startTimestamp":1780391400,"players":[{"name":"Akira Santillan","side":"home","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null},{"name":"Alexander Donski","side":"away","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null}],"h2h":{"homeName":"Akira Santillan","awayName":"Alexander Donski","homeWins":null,"awayWins":null,"draws":null,"matches":[],"coverage":{"datedRows":0,"surfaceRows":0,"weightedRows":0}},"score":{"home":null,"away":null},"result":null,"sofascoreSignals":null,"weather":{"source":"Open-Meteo","venueKey":"roland-garros","startTs":1780391400,"endTs":1780398600,"durationMinutes":120,"hourlyRows":3,"avgTemperatureC":16.47,"maxTemperatureC":16.8,"minTemperatureC":15.8,"avgApparentTemperatureC":15.53,"maxApparentTemperatureC":16,"avgHumidityPct":90.17,"totalPrecipitationMm":5.6,"avgCloudCoverPct":99.25,"avgWindSpeedKmh":17.52,"maxWindGustKmh":41.4,"avgShortwaveRadiationWm2":159.58,"hotMatch":false,"humidMatch":true,"windyMatch":true,"rainAffected":true,"hourly":[{"apparentTemperatureC":16,"gustKmh":41.4,"humidityPct":89,"overlapMinutes":50,"precipitationMm":1.6,"shortwaveWm2":173,"temperatureC":16.8,"timeLocal":"2026-06-02T11:00","timeUtc":"2026-06-02T09:00:00Z","windKmh":16.8},{"apparentTemperatureC":15.2,"gustKmh":41.4,"humidityPct":91,"overlapMinutes":60,"precipitationMm":4.1,"shortwaveWm2":156,"temperatureC":16.3,"timeLocal":"2026-06-02T12:00","timeUtc":"2026-06-02T10:00:00Z","windKmh":18.6},{"apparentTemperatureC":15.1,"gustKmh":37.8,"humidityPct":91,"overlapMinutes":10,"precipitationMm":1,"shortwaveWm2":114,"temperatureC":15.8,"timeLocal":"2026-06-02T13:00","timeUtc":"2026-06-02T11:00:00Z","windKmh":14.7}]},"allStatRows":[],"coverage":{"hasEvent":false,"hasH2h":false,"allStatRows":0,"playerStatRows":0,"liveStatRows":0,"expectedStatRows":0,"recentMetricRows":0,"seasonStatRows":0,"liveStatsStatus":null,"hasWeather":true,"isPregame":true}},"players":[{"name":"Akira Santillan","rank":null,"label":"Akira Santillan","form":null,"boardPct":66,"decimalOdds":null,"marketLabel":"66c / 66% implied","clayLine":"Rank not joined","weakness":{"name":"Akira Santillan","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."},"warehouseStats":{"name":"Akira Santillan","side":"home","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null},"record2026":"","notes":"Pick: model 66%","matchupNote":"Why pick: Akira Santillan is only the current Robinhood market favorite over Alexander Donski; no warehouse service, break-point, or opponent-quality edge is joined yet."},{"name":"Alexander Donski","rank":null,"label":"Alexander Donski","form":null,"boardPct":37,"decimalOdds":null,"marketLabel":"37c / 37% implied","clayLine":"Rank not joined","weakness":{"name":"Alexander Donski","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."},"warehouseStats":{"name":"Alexander Donski","side":"away","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null},"record2026":"","notes":"Opponent case: model 34%","matchupNote":"Upset path: needs early scoreboard pressure or a market price that pays for volatility."}],"comparisonRows":[{"label":"Model pick","metric":"Fair win split","leftScore":66,"rightScore":37,"leftLabel":"Akira Santillan","rightLabel":"Alexander Donski","winner":"Akira Santillan"},{"label":"Prediction market","metric":"Implied price","leftScore":66,"rightScore":37,"leftLabel":"Akira Santillan","rightLabel":"Alexander Donski","winner":"Prediction-market price captured; no sportsbook EV is inferred from this row."},{"label":"Weakness","metric":"Lower is cleaner","leftScore":0,"rightScore":0,"leftLabel":"Akira Santillan","rightLabel":"Alexander Donski","winner":"Market-only"},{"label":"Volatility","metric":"Lower is cleaner","leftScore":65,"rightScore":35,"leftLabel":"Risk","rightLabel":"Stability","winner":"Pass-first"}],"predictionMarket":{"source":"Robinhood prediction market","capturedAt":null,"totalVolume":0,"players":[{"name":"Akira Santillan","probabilityPct":66,"amount":0,"americanOdds":null,"edgePct":null,"priceBand":"Moderate favorite"},{"name":"Alexander Donski","probabilityPct":37,"amount":0,"americanOdds":null,"edgePct":null,"priceBand":"Underdog"}]},"bettingMatrix":[{"marketType":"Moneyline","label":"ML value","selection":"Akira Santillan","line":null,"americanOdds":null,"modelPct":66,"impliedPct":66,"edgePct":null,"evPer100":null,"netEvPer100":null,"grade":"Near fair","issue":"Favorite price needs better proof","reason":"Prediction-market price captured; no sportsbook EV is inferred from this row."},{"marketType":"Total games","label":"O/U games","selection":"No bet","line":null,"americanOdds":null,"modelPct":null,"impliedPct":null,"edgePct":null,"evPer100":null,"netEvPer100":null,"expectedGames":null,"edgeGames":null,"confidence":null,"grade":"No direction","reason":"Total games need expected match games vs the posted line."},{"marketType":"Win a set","label":"Win a set %","selection":"Akira Santillan 74% / Alexander Donski 56%","rows":[{"name":"Akira Santillan","confidence":74,"modelPct":66,"label":"Market favorite to win a set"},{"name":"Alexander Donski","confidence":56,"modelPct":37,"label":"Underdog set-win path needs early holds"}],"confidence":74,"grade":"Price required","reason":"Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."},{"marketType":"First-set total games","label":"1st set O/U","selection":"Price required","expectedGames":9.8,"confidence":53,"tiebreakRisk":42,"earlyBreakRisk":58,"grade":"Needs posted first-set total","reason":"Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."}],"derivativeMarketCase":null,"valueBoard":{"note":"EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.","ml":{"marketType":"ML","selection":"Akira Santillan","americanOdds":null,"modelPct":66,"impliedPct":66,"edgePct":null,"evPer100":null,"netEvPer100":null,"feePer100":2,"valueIssue":"Favorite price needs better proof","valueGrade":"Near fair","betGrade":false},"spread":null,"total":{"marketType":"Total","selection":"No bet","line":null,"overOdds":null,"underOdds":null,"expectedGames":null,"valueGrade":"No direction","reason":"No posted match total captured.","betGrade":false},"firstSetTotal":{"marketType":"First-set total","selection":"Price required","line":null,"americanOdds":null,"expectedGames":9.8,"confidence":53,"tiebreakRisk":42,"earlyBreakRisk":58,"modelPct":53,"evPer100":null,"netEvPer100":null,"valueGrade":"Needs posted first-set total","reason":"Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.","betGrade":false},"setWin":[{"name":"Akira Santillan","confidence":74,"modelPct":66,"label":"Market favorite to win a set","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false},{"name":"Alexander Donski","confidence":56,"modelPct":37,"label":"Underdog set-win path needs early holds","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false}]},"ensembleValueCase":null,"projection":{"projectedWinner":"Akira Santillan","projectedSetLine":"2-0/2-1 range","setWinProjections":[{"name":"Akira Santillan","confidence":74,"modelPct":66,"label":"Market favorite to win a set"},{"name":"Alexander Donski","confidence":56,"modelPct":37,"label":"Underdog set-win path needs early holds"}],"totalGames":null,"straightSetsProbability":58,"upsetRisk":34,"overview":"Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","fantasy":[]},"tradePlan":{"laneLabel":"Prediction-market price captured; no sportsbook EV is inferred from this row.","summary":"Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","trigger":"Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.","headline":"Market-only","exit":"No spread line","tone":"warning"},"derivativeMarkets":[{"label":"ML","value":"Akira Santillan 66c; Prediction-market price only; no FanDuel moneyline edge calculated.","lean":"Prediction-market price captured; no sportsbook EV is inferred from this row.","confidence":66,"marketType":"ML","selection":"Akira Santillan","americanOdds":null,"modelPct":66,"impliedPct":66,"edgePct":null,"evPer100":null,"netEvPer100":null,"feePer100":2,"valueIssue":"Favorite price needs better proof","valueGrade":"Near fair","betGrade":false,"tone":"neutral","reason":"Robinhood prediction-market prices captured: Akira Santillan 66c / Alexander Donski 37c. This is price context, not a sportsbook value signal."},{"label":"Win a set","value":"Akira Santillan 74% / Alexander Donski 56%","lean":"Underdog set-win path needs early holds","confidence":74,"setWinRows":[{"name":"Akira Santillan","confidence":74,"modelPct":66,"label":"Market favorite to win a set","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false},{"name":"Alexander Donski","confidence":56,"modelPct":37,"label":"Underdog set-win path needs early holds","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false}],"valueGrade":"Needs posted price","tone":"neutral","reason":"Best-of-three set-win confidence is more fragile; early service holds matter more."},{"label":"Spread","value":"No game spread captured","lean":"No spread line","confidence":60,"tone":"neutral","reason":"Only enter after visible first-service comfort and break-point pressure; no pre-match model edge."},{"label":"O/U","value":"No total captured","lean":"No bet","confidence":58,"marketType":"Total","selection":"No bet","line":null,"overOdds":null,"underOdds":null,"expectedGames":null,"valueGrade":"No direction","reason":"No posted match total captured.","betGrade":false,"tone":"neutral"},{"label":"1st set O/U","value":"Need posted first-set total","lean":"Price required","confidence":53,"marketType":"First-set total","selection":"Price required","line":null,"americanOdds":null,"expectedGames":9.8,"tiebreakRisk":42,"earlyBreakRisk":58,"modelPct":53,"evPer100":null,"netEvPer100":null,"valueGrade":"Needs posted first-set total","reason":"Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.","betGrade":false,"tone":"neutral"}],"marketEconomics":{"source":"Robinhood prediction market","capturedAt":null,"eventUrl":"https://robinhood.com/us/en/prediction-markets/tennis/","deskName":"Akira Santillan","deskPricePct":66,"deskEdgePct":null,"priceAction":"Prediction-market price captured; no sportsbook EV is inferred from this row.","players":[{"name":"Akira Santillan","americanOdds":null,"impliedPct":66,"modelPct":66,"edgePct":null,"priceBand":"Moderate favorite","grossProfitPct":34,"grossPayoutMultiple":1.515,"centsAtRisk":66,"centsProfitIfWin":34,"bidPct":63,"lastTradePct":0,"openInterest":0,"symbol":"KXATPCHALLENGERMATCH-26JUN02SANDON-SAN"},{"name":"Alexander Donski","americanOdds":null,"impliedPct":37,"modelPct":37,"edgePct":null,"priceBand":"Underdog","grossProfitPct":63,"grossPayoutMultiple":2.703,"centsAtRisk":37,"centsProfitIfWin":63,"bidPct":36,"lastTradePct":0,"openInterest":0,"symbol":"KXATPCHALLENGERMATCH-26JUN02SANDON-DON"}]},"clayMatchupData":null,"opponentQualityData":null,"researchLinks":[{"label":"ESPN scoreboard","url":"https://www.espn.com/tennis/scoreboard/_/date/20260602"},{"label":"Tennistonic H2H","url":"https://tennistonic.com/head-to-head-compare/Akira-Santillan-Vs-Alexander-Donski/"},{"label":"Robinhood market","url":"https://robinhood.com/us/en/prediction-markets/tennis/"}],"formEdgeName":"Akira Santillan"},"participants":[{"id":"rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02:0","index":0,"role":"Player 1","name":"Akira Santillan","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},{"id":"rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02:1","index":1,"role":"Player 2","name":"Alexander Donski","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"}],"moneyline":{"available":true,"label":"Prediction market","provider":"Robinhood prediction market","participants":[{"id":"rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02:0","index":0,"role":"Player 1","name":"Akira Santillan","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},{"id":"rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02:1","index":1,"role":"Player 2","name":"Alexander Donski","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"}]},"analysis":{"available":true,"participantId":"rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02:0","participant":{"id":"rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02:0","index":0,"role":"Player 1","name":"Akira Santillan","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},"opponent":{"id":"rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02:1","index":1,"role":"Player 2","name":"Alexander Donski","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},"lean":"Market watch: Akira Santillan; do not treat as a model bet.","rationale":"Akira Santillan is the current market favorite. Akira Santillan is only the current Robinhood market favorite over Alexander Donski; no warehouse service, break-point, or opponent-quality edge is joined yet.","confidence":66,"volatility":65,"recommendationScore":50,"tier":"Watch","sourceLabel":"Robinhood prediction market","modelEdge":null,"modelEdgeLabel":"","marketProbability":0,"marketProbabilityLabel":"0.0%","inputs":[],"inputsUsed":0,"volatilityNotes":[],"indicators":{}},"metadata":{"participantCount":2,"participantNames":["Akira Santillan","Alexander Donski"],"tagCount":5,"hasSeriesBreakdown":false,"hasMoneyline":true,"hasAnalysisPick":true,"hasStructuredInputs":false,"hasPlayerProps":false,"startMinutes":130,"spotlight":false,"league":"Tennis","oddsProvider":"Robinhood prediction market"},"detailLevel":"full","stateContext":null}
+{
+  "id": "rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02",
+  "eventId": "ce951214-9e0e-4f98-87d6-314bf68241f5",
+  "league": "Tennis",
+  "start": "2:10 AM",
+  "startMinutes": 130,
+  "title": "Akira Santillan vs Alexander Donski",
+  "stage": "ATP Challenger Centurion 2 | Round Of 32",
+  "spotlight": false,
+  "confidence": 64,
+  "volatility": 66,
+  "tags": [
+    "ATP Challenger",
+    "Hard",
+    "Prediction market",
+    "Market only",
+    "No model edge",
+    "Coinflip price"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "Akira Santillan",
+      "displayName": "Akira Santillan",
+      "detail": "Hard | Rank not joined"
+    },
+    {
+      "side": "Player 2",
+      "name": "Alexander Donski",
+      "displayName": "Alexander Donski",
+      "detail": "Hard | Rank not joined"
+    }
+  ],
+  "summary": "Akira Santillan is the current market favorite. Akira Santillan is only the current Robinhood market favorite over Alexander Donski; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+  "factors": [
+    "Akira Santillan is only the current Robinhood market favorite over Alexander Donski; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+    "Prediction-market price only; no FanDuel moneyline edge calculated.",
+    "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+    "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+    "No posted sportsbook total captured for this Challenger market.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "Market-only Challenger row: no warehouse edge, sportsbook derivative, or service profile has been joined yet."
+  ],
+  "lean": "Market watch: Akira Santillan; do not treat as a model bet.",
+  "swing": "Risk: best-of-five set extension and tiebreak variance.",
+  "swingFactor": "Risk: best-of-five set extension and tiebreak variance.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Prediction market",
+        "book": "Robinhood prediction market",
+        "value": "Akira Santillan 64% / Alexander Donski 37%"
+      },
+      {
+        "label": "Prediction market prices",
+        "book": "Robinhood prediction market",
+        "value": "Akira Santillan 64c / Alexander Donski 37c"
+      }
+    ],
+    "note": "Robinhood prediction-market prices captured: Akira Santillan 64c / Alexander Donski 37c. This is price context, not a sportsbook value signal.",
+    "provider": "Robinhood prediction market"
+  },
+  "tennisContext": {
+    "surface": "Hard",
+    "court": "ATP Challenger Centurion 2",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "Market-only",
+      "target": "No warehouse weakness edge",
+      "scoreGap": null,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+      "spreadRead": "No spread line",
+      "totalRead": "No total line",
+      "pick": {
+        "name": "Akira Santillan",
+        "weaknessScore": null,
+        "liabilities": [
+          "No warehouse weakness data joined yet"
+        ],
+        "strengths": [],
+        "firstGameComfort": "Market-only row; wait for serve pressure data",
+        "gameFlowRead": "No service/break profile joined yet."
+      },
+      "opponent": {
+        "name": "Alexander Donski",
+        "weaknessScore": null,
+        "liabilities": [
+          "No warehouse weakness data joined yet"
+        ],
+        "strengths": [],
+        "firstGameComfort": "Market-only row; wait for serve pressure data",
+        "gameFlowRead": "No service/break profile joined yet."
+      }
+    },
+    "warehouseContext": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Centurion 2",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Akira Santillan",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Alexander Donski",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Akira Santillan",
+        "awayName": "Alexander Donski",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "sofascoreData": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Centurion 2",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Akira Santillan",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Alexander Donski",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Akira Santillan",
+        "awayName": "Alexander Donski",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "players": [
+      {
+        "name": "Akira Santillan",
+        "rank": null,
+        "label": "Akira Santillan",
+        "form": null,
+        "boardPct": 64,
+        "decimalOdds": null,
+        "marketLabel": "64c / 64% implied",
+        "clayLine": "Hard | Rank not joined",
+        "weakness": {
+          "name": "Akira Santillan",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "warehouseStats": {
+          "name": "Akira Santillan",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        "record2026": "",
+        "notes": "Pick: model 64%",
+        "matchupNote": "Why pick: Akira Santillan is only the current Robinhood market favorite over Alexander Donski; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet."
+      },
+      {
+        "name": "Alexander Donski",
+        "rank": null,
+        "label": "Alexander Donski",
+        "form": null,
+        "boardPct": 37,
+        "decimalOdds": null,
+        "marketLabel": "37c / 37% implied",
+        "clayLine": "Hard | Rank not joined",
+        "weakness": {
+          "name": "Alexander Donski",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "warehouseStats": {
+          "name": "Alexander Donski",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        "record2026": "",
+        "notes": "Opponent case: model 36%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 64,
+        "rightScore": 37,
+        "leftLabel": "Akira Santillan",
+        "rightLabel": "Alexander Donski",
+        "winner": "Akira Santillan"
+      },
+      {
+        "label": "Prediction market",
+        "metric": "Implied price",
+        "leftScore": 64,
+        "rightScore": 37,
+        "leftLabel": "Akira Santillan",
+        "rightLabel": "Alexander Donski",
+        "winner": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 0,
+        "rightScore": 0,
+        "leftLabel": "Akira Santillan",
+        "rightLabel": "Alexander Donski",
+        "winner": "Market-only"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 66,
+        "rightScore": 34,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Pass-first"
+      }
+    ],
+    "predictionMarket": {
+      "source": "Robinhood prediction market",
+      "capturedAt": null,
+      "totalVolume": 0,
+      "players": [
+        {
+          "name": "Akira Santillan",
+          "probabilityPct": 64,
+          "amount": 0,
+          "americanOdds": null,
+          "edgePct": null,
+          "priceBand": "Moderate favorite"
+        },
+        {
+          "name": "Alexander Donski",
+          "probabilityPct": 37,
+          "amount": 129,
+          "americanOdds": null,
+          "edgePct": null,
+          "priceBand": "Underdog"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Akira Santillan",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 64,
+        "impliedPct": 64,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "grade": "Near fair",
+        "issue": "Favorite price needs better proof",
+        "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "Total games need expected match games vs the posted line."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Akira Santillan 72% / Alexander Donski 58%",
+        "rows": [
+          {
+            "name": "Akira Santillan",
+            "confidence": 72,
+            "modelPct": 64,
+            "label": "Market favorite to win a set"
+          },
+          {
+            "name": "Alexander Donski",
+            "confidence": 58,
+            "modelPct": 37,
+            "label": "Underdog set-win path needs early holds"
+          }
+        ],
+        "confidence": 72,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Price required",
+        "expectedGames": 9.8,
+        "confidence": 53,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "grade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Akira Santillan",
+        "americanOdds": null,
+        "modelPct": 64,
+        "impliedPct": 64,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Near fair",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "expectedGames": 9.8,
+        "confidence": 53,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "modelPct": 53,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Akira Santillan",
+          "confidence": 72,
+          "modelPct": 64,
+          "label": "Market favorite to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Alexander Donski",
+          "confidence": 58,
+          "modelPct": 37,
+          "label": "Underdog set-win path needs early holds",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "Akira Santillan",
+      "projectedSetLine": "2-0/2-1 range",
+      "setWinProjections": [
+        {
+          "name": "Akira Santillan",
+          "confidence": 72,
+          "modelPct": 64,
+          "label": "Market favorite to win a set"
+        },
+        {
+          "name": "Alexander Donski",
+          "confidence": 58,
+          "modelPct": 37,
+          "label": "Underdog set-win path needs early holds"
+        }
+      ],
+      "totalGames": null,
+      "straightSetsProbability": 56,
+      "upsetRisk": 36,
+      "overview": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
+      "summary": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "trigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+      "headline": "Market-only",
+      "exit": "No spread line",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "Akira Santillan 64c; Prediction-market price only; no FanDuel moneyline edge calculated.",
+        "lean": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
+        "confidence": 64,
+        "marketType": "ML",
+        "selection": "Akira Santillan",
+        "americanOdds": null,
+        "modelPct": 64,
+        "impliedPct": 64,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Near fair",
+        "betGrade": false,
+        "tone": "neutral",
+        "reason": "Robinhood prediction-market prices captured: Akira Santillan 64c / Alexander Donski 37c. This is price context, not a sportsbook value signal."
+      },
+      {
+        "label": "Win a set",
+        "value": "Akira Santillan 72% / Alexander Donski 58%",
+        "lean": "Underdog set-win path needs early holds",
+        "confidence": 72,
+        "setWinRows": [
+          {
+            "name": "Akira Santillan",
+            "confidence": 72,
+            "modelPct": 64,
+            "label": "Market favorite to win a set",
+            "marketType": "Win a set",
+            "valueGrade": "Needs posted price",
+            "betGrade": false
+          },
+          {
+            "name": "Alexander Donski",
+            "confidence": 58,
+            "modelPct": 37,
+            "label": "Underdog set-win path needs early holds",
+            "marketType": "Win a set",
+            "valueGrade": "Needs posted price",
+            "betGrade": false
+          }
+        ],
+        "valueGrade": "Needs posted price",
+        "tone": "neutral",
+        "reason": "Best-of-three set-win confidence is more fragile; early service holds matter more."
+      },
+      {
+        "label": "Spread",
+        "value": "No game spread captured",
+        "lean": "No spread line",
+        "confidence": 58,
+        "tone": "neutral",
+        "reason": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge."
+      },
+      {
+        "label": "O/U",
+        "value": "No total captured",
+        "lean": "No bet",
+        "confidence": 56,
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Need posted first-set total",
+        "lean": "Price required",
+        "confidence": 53,
+        "marketType": "First-set total",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "expectedGames": 9.8,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "modelPct": 53,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "betGrade": false,
+        "tone": "neutral"
+      }
+    ],
+    "marketEconomics": {
+      "source": "Robinhood prediction market",
+      "capturedAt": null,
+      "eventUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "deskName": "Akira Santillan",
+      "deskPricePct": 64,
+      "deskEdgePct": null,
+      "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
+      "players": [
+        {
+          "name": "Akira Santillan",
+          "americanOdds": null,
+          "impliedPct": 64,
+          "modelPct": 64,
+          "edgePct": null,
+          "priceBand": "Moderate favorite",
+          "grossProfitPct": 36,
+          "grossPayoutMultiple": 1.563,
+          "centsAtRisk": 64,
+          "centsProfitIfWin": 36,
+          "bidPct": 63,
+          "lastTradePct": 0,
+          "openInterest": 0,
+          "symbol": "KXATPCHALLENGERMATCH-26JUN02SANDON-SAN"
+        },
+        {
+          "name": "Alexander Donski",
+          "americanOdds": null,
+          "impliedPct": 37,
+          "modelPct": 37,
+          "edgePct": null,
+          "priceBand": "Underdog",
+          "grossProfitPct": 63,
+          "grossPayoutMultiple": 2.703,
+          "centsAtRisk": 37,
+          "centsProfitIfWin": 63,
+          "bidPct": 36,
+          "lastTradePct": 37,
+          "openInterest": 129,
+          "symbol": "KXATPCHALLENGERMATCH-26JUN02SANDON-DON"
+        }
+      ]
+    },
+    "clayMatchupData": null,
+    "opponentQualityData": null,
+    "researchLinks": [
+      {
+        "label": "ESPN scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260602"
+      },
+      {
+        "label": "Tennistonic H2H",
+        "url": "https://tennistonic.com/head-to-head-compare/Akira-Santillan-Vs-Alexander-Donski/"
+      },
+      {
+        "label": "Robinhood market",
+        "url": "https://robinhood.com/us/en/prediction-markets/tennis/"
+      }
+    ],
+    "formEdgeName": "Akira Santillan"
+  },
+  "participants": [
+    {
+      "id": "rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Akira Santillan",
+      "detail": "Hard | Rank not joined",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    },
+    {
+      "id": "rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Alexander Donski",
+      "detail": "Hard | Rank not joined",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "Prediction market",
+    "provider": "Robinhood prediction market",
+    "participants": [
+      {
+        "id": "rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "Akira Santillan",
+        "detail": "Hard | Rank not joined",
+        "americanOdds": null,
+        "americanLabel": "0",
+        "decimalOdds": null,
+        "impliedProbability": 0,
+        "impliedProbabilityLabel": "0.0%"
+      },
+      {
+        "id": "rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Alexander Donski",
+        "detail": "Hard | Rank not joined",
+        "americanOdds": null,
+        "americanLabel": "0",
+        "decimalOdds": null,
+        "impliedProbability": 0,
+        "impliedProbabilityLabel": "0.0%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02:0",
+    "participant": {
+      "id": "rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Akira Santillan",
+      "detail": "Hard | Rank not joined",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    },
+    "opponent": {
+      "id": "rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Alexander Donski",
+      "detail": "Hard | Rank not joined",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    },
+    "lean": "Market watch: Akira Santillan; do not treat as a model bet.",
+    "rationale": "Akira Santillan is the current market favorite. Akira Santillan is only the current Robinhood market favorite over Alexander Donski; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+    "confidence": 64,
+    "volatility": 66,
+    "recommendationScore": 48,
+    "tier": "Watch",
+    "sourceLabel": "Robinhood prediction market",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0,
+    "marketProbabilityLabel": "0.0%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "Akira Santillan",
+      "Alexander Donski"
+    ],
+    "tagCount": 6,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 130,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "Robinhood prediction market"
+  }
+}

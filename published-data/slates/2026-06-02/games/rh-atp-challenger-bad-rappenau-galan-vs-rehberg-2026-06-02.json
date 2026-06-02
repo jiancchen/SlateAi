@@ -1,0 +1,815 @@
+{
+  "id": "rh-atp-challenger-bad-rappenau-galan-vs-rehberg-2026-06-02",
+  "eventId": "11896f86-bd4a-44ac-8cea-3215f8e110fb",
+  "league": "Tennis",
+  "start": "4:50 AM",
+  "startMinutes": 290,
+  "title": "Daniel Elahi Galan vs Max Hans Rehberg",
+  "stage": "ATP Challenger Bad Rappenau | Round Of 32",
+  "spotlight": false,
+  "confidence": 57,
+  "volatility": 73,
+  "tags": [
+    "ATP Challenger",
+    "Clay",
+    "Prediction market",
+    "Market only",
+    "No model edge",
+    "Coinflip price"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "Daniel Elahi Galan",
+      "displayName": "Daniel Elahi Galan",
+      "detail": "Clay | Rank not joined"
+    },
+    {
+      "side": "Player 2",
+      "name": "Max Hans Rehberg",
+      "displayName": "Max Hans Rehberg",
+      "detail": "Clay | Rank not joined"
+    }
+  ],
+  "summary": "Daniel Elahi Galan is the current market favorite. Daniel Elahi Galan is only the current Robinhood market favorite over Max Hans Rehberg; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+  "factors": [
+    "Daniel Elahi Galan is only the current Robinhood market favorite over Max Hans Rehberg; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+    "Prediction-market price only; no FanDuel moneyline edge calculated.",
+    "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+    "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+    "No posted sportsbook total captured for this Challenger market.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "Market-only Challenger row: no warehouse edge, sportsbook derivative, or service profile has been joined yet."
+  ],
+  "lean": "Market watch: Daniel Elahi Galan; do not treat as a model bet.",
+  "swing": "Risk: best-of-five set extension and tiebreak variance.",
+  "swingFactor": "Risk: best-of-five set extension and tiebreak variance.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Prediction market",
+        "book": "Robinhood prediction market",
+        "value": "Daniel Elahi Galan 57% / Max Hans Rehberg 45%"
+      },
+      {
+        "label": "Prediction market prices",
+        "book": "Robinhood prediction market",
+        "value": "Daniel Elahi Galan 57c / Max Hans Rehberg 45c"
+      }
+    ],
+    "note": "Robinhood prediction-market prices captured: Daniel Elahi Galan 57c / Max Hans Rehberg 45c. This is price context, not a sportsbook value signal.",
+    "provider": "Robinhood prediction market"
+  },
+  "tennisContext": {
+    "surface": "Clay",
+    "court": "ATP Challenger Bad Rappenau",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "Market-only",
+      "target": "No warehouse weakness edge",
+      "scoreGap": null,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+      "spreadRead": "No spread line",
+      "totalRead": "No total line",
+      "pick": {
+        "name": "Daniel Elahi Galan",
+        "weaknessScore": null,
+        "liabilities": [
+          "No warehouse weakness data joined yet"
+        ],
+        "strengths": [],
+        "firstGameComfort": "Market-only row; wait for serve pressure data",
+        "gameFlowRead": "No service/break profile joined yet."
+      },
+      "opponent": {
+        "name": "Max Hans Rehberg",
+        "weaknessScore": null,
+        "liabilities": [
+          "No warehouse weakness data joined yet"
+        ],
+        "strengths": [],
+        "firstGameComfort": "Market-only row; wait for serve pressure data",
+        "gameFlowRead": "No service/break profile joined yet."
+      }
+    },
+    "warehouseContext": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-bad-rappenau-galan-vs-rehberg-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Clay",
+      "tournament": "ATP Challenger Bad Rappenau",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Daniel Elahi Galan",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Max Hans Rehberg",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Daniel Elahi Galan",
+        "awayName": "Max Hans Rehberg",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "sofascoreData": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-bad-rappenau-galan-vs-rehberg-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Clay",
+      "tournament": "ATP Challenger Bad Rappenau",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Daniel Elahi Galan",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Max Hans Rehberg",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Daniel Elahi Galan",
+        "awayName": "Max Hans Rehberg",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "players": [
+      {
+        "name": "Daniel Elahi Galan",
+        "rank": null,
+        "label": "Daniel Elahi Galan",
+        "form": null,
+        "boardPct": 57,
+        "decimalOdds": null,
+        "marketLabel": "57c / 57% implied",
+        "clayLine": "Clay | Rank not joined",
+        "weakness": {
+          "name": "Daniel Elahi Galan",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "warehouseStats": {
+          "name": "Daniel Elahi Galan",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        "record2026": "",
+        "notes": "Pick: model 57%",
+        "matchupNote": "Why pick: Daniel Elahi Galan is only the current Robinhood market favorite over Max Hans Rehberg; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet."
+      },
+      {
+        "name": "Max Hans Rehberg",
+        "rank": null,
+        "label": "Max Hans Rehberg",
+        "form": null,
+        "boardPct": 45,
+        "decimalOdds": null,
+        "marketLabel": "45c / 45% implied",
+        "clayLine": "Clay | Rank not joined",
+        "weakness": {
+          "name": "Max Hans Rehberg",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "warehouseStats": {
+          "name": "Max Hans Rehberg",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        "record2026": "",
+        "notes": "Opponent case: model 43%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 57,
+        "rightScore": 45,
+        "leftLabel": "Daniel Elahi Galan",
+        "rightLabel": "Max Hans Rehberg",
+        "winner": "Daniel Elahi Galan"
+      },
+      {
+        "label": "Prediction market",
+        "metric": "Implied price",
+        "leftScore": 57,
+        "rightScore": 45,
+        "leftLabel": "Daniel Elahi Galan",
+        "rightLabel": "Max Hans Rehberg",
+        "winner": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 0,
+        "rightScore": 0,
+        "leftLabel": "Daniel Elahi Galan",
+        "rightLabel": "Max Hans Rehberg",
+        "winner": "Market-only"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 73,
+        "rightScore": 27,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Pass-first"
+      }
+    ],
+    "predictionMarket": {
+      "source": "Robinhood prediction market",
+      "capturedAt": null,
+      "totalVolume": 0,
+      "players": [
+        {
+          "name": "Daniel Elahi Galan",
+          "probabilityPct": 57,
+          "amount": 0,
+          "americanOdds": null,
+          "edgePct": null,
+          "priceBand": "Coinflip"
+        },
+        {
+          "name": "Max Hans Rehberg",
+          "probabilityPct": 45,
+          "amount": 0,
+          "americanOdds": null,
+          "edgePct": null,
+          "priceBand": "Coinflip"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Daniel Elahi Galan",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 57,
+        "impliedPct": 57,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "grade": "Near fair",
+        "issue": "Favorite price needs better proof",
+        "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "Total games need expected match games vs the posted line."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Daniel Elahi Galan 65% / Max Hans Rehberg 65%",
+        "rows": [
+          {
+            "name": "Daniel Elahi Galan",
+            "confidence": 65,
+            "modelPct": 57,
+            "label": "Market favorite to win a set"
+          },
+          {
+            "name": "Max Hans Rehberg",
+            "confidence": 65,
+            "modelPct": 45,
+            "label": "Underdog set-win path needs early holds"
+          }
+        ],
+        "confidence": 65,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Price required",
+        "expectedGames": 9.8,
+        "confidence": 53,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "grade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Daniel Elahi Galan",
+        "americanOdds": null,
+        "modelPct": 57,
+        "impliedPct": 57,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Near fair",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "expectedGames": 9.8,
+        "confidence": 53,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "modelPct": 53,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Daniel Elahi Galan",
+          "confidence": 65,
+          "modelPct": 57,
+          "label": "Market favorite to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Max Hans Rehberg",
+          "confidence": 65,
+          "modelPct": 45,
+          "label": "Underdog set-win path needs early holds",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "Daniel Elahi Galan",
+      "projectedSetLine": "2-0/2-1 range",
+      "setWinProjections": [
+        {
+          "name": "Daniel Elahi Galan",
+          "confidence": 65,
+          "modelPct": 57,
+          "label": "Market favorite to win a set"
+        },
+        {
+          "name": "Max Hans Rehberg",
+          "confidence": 65,
+          "modelPct": 45,
+          "label": "Underdog set-win path needs early holds"
+        }
+      ],
+      "totalGames": null,
+      "straightSetsProbability": 49,
+      "upsetRisk": 43,
+      "overview": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
+      "summary": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "trigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+      "headline": "Market-only",
+      "exit": "No spread line",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "Daniel Elahi Galan 57c; Prediction-market price only; no FanDuel moneyline edge calculated.",
+        "lean": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
+        "confidence": 57,
+        "marketType": "ML",
+        "selection": "Daniel Elahi Galan",
+        "americanOdds": null,
+        "modelPct": 57,
+        "impliedPct": 57,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Near fair",
+        "betGrade": false,
+        "tone": "neutral",
+        "reason": "Robinhood prediction-market prices captured: Daniel Elahi Galan 57c / Max Hans Rehberg 45c. This is price context, not a sportsbook value signal."
+      },
+      {
+        "label": "Win a set",
+        "value": "Daniel Elahi Galan 65% / Max Hans Rehberg 65%",
+        "lean": "Underdog set-win path needs early holds",
+        "confidence": 65,
+        "setWinRows": [
+          {
+            "name": "Daniel Elahi Galan",
+            "confidence": 65,
+            "modelPct": 57,
+            "label": "Market favorite to win a set",
+            "marketType": "Win a set",
+            "valueGrade": "Needs posted price",
+            "betGrade": false
+          },
+          {
+            "name": "Max Hans Rehberg",
+            "confidence": 65,
+            "modelPct": 45,
+            "label": "Underdog set-win path needs early holds",
+            "marketType": "Win a set",
+            "valueGrade": "Needs posted price",
+            "betGrade": false
+          }
+        ],
+        "valueGrade": "Needs posted price",
+        "tone": "neutral",
+        "reason": "Best-of-three set-win confidence is more fragile; early service holds matter more."
+      },
+      {
+        "label": "Spread",
+        "value": "No game spread captured",
+        "lean": "No spread line",
+        "confidence": 51,
+        "tone": "neutral",
+        "reason": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge."
+      },
+      {
+        "label": "O/U",
+        "value": "No total captured",
+        "lean": "No bet",
+        "confidence": 50,
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Need posted first-set total",
+        "lean": "Price required",
+        "confidence": 53,
+        "marketType": "First-set total",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "expectedGames": 9.8,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "modelPct": 53,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "betGrade": false,
+        "tone": "neutral"
+      }
+    ],
+    "marketEconomics": {
+      "source": "Robinhood prediction market",
+      "capturedAt": null,
+      "eventUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "deskName": "Daniel Elahi Galan",
+      "deskPricePct": 57,
+      "deskEdgePct": null,
+      "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
+      "players": [
+        {
+          "name": "Daniel Elahi Galan",
+          "americanOdds": null,
+          "impliedPct": 57,
+          "modelPct": 57,
+          "edgePct": null,
+          "priceBand": "Coinflip",
+          "grossProfitPct": 43,
+          "grossPayoutMultiple": 1.754,
+          "centsAtRisk": 57,
+          "centsProfitIfWin": 43,
+          "bidPct": 54,
+          "lastTradePct": 0,
+          "openInterest": 0,
+          "symbol": "KXATPCHALLENGERMATCH-26JUN02GALREH-GAL"
+        },
+        {
+          "name": "Max Hans Rehberg",
+          "americanOdds": null,
+          "impliedPct": 45,
+          "modelPct": 45,
+          "edgePct": null,
+          "priceBand": "Coinflip",
+          "grossProfitPct": 55,
+          "grossPayoutMultiple": 2.222,
+          "centsAtRisk": 45,
+          "centsProfitIfWin": 55,
+          "bidPct": 43,
+          "lastTradePct": 0,
+          "openInterest": 0,
+          "symbol": "KXATPCHALLENGERMATCH-26JUN02GALREH-REH"
+        }
+      ]
+    },
+    "clayMatchupData": null,
+    "opponentQualityData": null,
+    "researchLinks": [
+      {
+        "label": "ESPN scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260602"
+      },
+      {
+        "label": "Tennistonic H2H",
+        "url": "https://tennistonic.com/head-to-head-compare/Daniel-Elahi-Galan-Vs-Max-Hans-Rehberg/"
+      },
+      {
+        "label": "Robinhood market",
+        "url": "https://robinhood.com/us/en/prediction-markets/tennis/"
+      }
+    ],
+    "formEdgeName": "Daniel Elahi Galan"
+  },
+  "participants": [
+    {
+      "id": "rh-atp-challenger-bad-rappenau-galan-vs-rehberg-2026-06-02:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Daniel Elahi Galan",
+      "detail": "Clay | Rank not joined",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    },
+    {
+      "id": "rh-atp-challenger-bad-rappenau-galan-vs-rehberg-2026-06-02:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Max Hans Rehberg",
+      "detail": "Clay | Rank not joined",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "Prediction market",
+    "provider": "Robinhood prediction market",
+    "participants": [
+      {
+        "id": "rh-atp-challenger-bad-rappenau-galan-vs-rehberg-2026-06-02:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "Daniel Elahi Galan",
+        "detail": "Clay | Rank not joined",
+        "americanOdds": null,
+        "americanLabel": "0",
+        "decimalOdds": null,
+        "impliedProbability": 0,
+        "impliedProbabilityLabel": "0.0%"
+      },
+      {
+        "id": "rh-atp-challenger-bad-rappenau-galan-vs-rehberg-2026-06-02:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Max Hans Rehberg",
+        "detail": "Clay | Rank not joined",
+        "americanOdds": null,
+        "americanLabel": "0",
+        "decimalOdds": null,
+        "impliedProbability": 0,
+        "impliedProbabilityLabel": "0.0%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "rh-atp-challenger-bad-rappenau-galan-vs-rehberg-2026-06-02:0",
+    "participant": {
+      "id": "rh-atp-challenger-bad-rappenau-galan-vs-rehberg-2026-06-02:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Daniel Elahi Galan",
+      "detail": "Clay | Rank not joined",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    },
+    "opponent": {
+      "id": "rh-atp-challenger-bad-rappenau-galan-vs-rehberg-2026-06-02:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Max Hans Rehberg",
+      "detail": "Clay | Rank not joined",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    },
+    "lean": "Market watch: Daniel Elahi Galan; do not treat as a model bet.",
+    "rationale": "Daniel Elahi Galan is the current market favorite. Daniel Elahi Galan is only the current Robinhood market favorite over Max Hans Rehberg; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+    "confidence": 57,
+    "volatility": 73,
+    "recommendationScore": 39,
+    "tier": "Watch",
+    "sourceLabel": "Robinhood prediction market",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0,
+    "marketProbabilityLabel": "0.0%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "Daniel Elahi Galan",
+      "Max Hans Rehberg"
+    ],
+    "tagCount": 6,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 290,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "Robinhood prediction market"
+  }
+}

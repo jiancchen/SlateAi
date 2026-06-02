@@ -11,6 +11,7 @@ from pipeline.tennis.warehouse.tennis_warehouse import (
     apply_tennis_migrations,
     import_flashscore,
     import_sofascore_player_page_stats,
+    infer_tennis_surface,
     infer_recent_map_slate_date,
     init_db,
 )
@@ -18,6 +19,24 @@ from pipeline.tennis.workflows.health import check_weather, game_value_book_miss
 
 
 class TennisWarehouseImportTest(unittest.TestCase):
+    def test_challenger_surface_inference_does_not_default_to_clay(self) -> None:
+        self.assertEqual(infer_tennis_surface("ATP Challenger Perugia"), "Clay")
+        self.assertEqual(infer_tennis_surface("ATP Challenger Prostejov"), "Clay")
+        self.assertEqual(infer_tennis_surface("ATP Challenger Bad Rappenau"), "Clay")
+        self.assertEqual(infer_tennis_surface("ATP Challenger Tyler"), "Hard")
+        self.assertEqual(infer_tennis_surface("ATP Challenger Centurion 2"), "Hard")
+        self.assertEqual(infer_tennis_surface("ATP Challenger Birmingham"), "Grass")
+        self.assertIsNone(infer_tennis_surface("ATP Challenger Unmapped Future Event"))
+
+    def test_tennis_matches_table_has_surface_column(self) -> None:
+        conn = sqlite3.connect(":memory:")
+        conn.row_factory = sqlite3.Row
+        init_db(conn)
+
+        columns = {row["name"] for row in conn.execute("pragma table_info(tennis_matches)").fetchall()}
+
+        self.assertIn("surface", columns)
+
     def test_recent_map_date_is_inferred_from_filename(self) -> None:
         self.assertEqual(
             infer_recent_map_slate_date(Path("flashscore-recent-match-map-2026-05-30.json")),
@@ -136,7 +155,7 @@ class TennisWarehouseImportTest(unittest.TestCase):
         conn = sqlite3.connect(":memory:")
         conn.row_factory = sqlite3.Row
         init_db(conn)
-        missing = check_weather(conn, "2026-05-30", match_count=1, settled=True)
+        missing = check_weather(conn, "2026-05-30", match_count=1, settled=True, full_depth_match_count=1)
         self.assertFalse(missing["ok"])
         self.assertEqual(missing["hourlyRows"], 0)
         self.assertEqual(missing["matchWeatherRows"], 0)
@@ -151,6 +170,12 @@ class TennisWarehouseImportTest(unittest.TestCase):
         )
         conn.execute(
             """
+            insert into tennis_matches(match_id, slate_date, league, title, surface, raw_json)
+            values ('rg-test-2026-05-30', '2026-05-30', 'Tennis', 'Test A vs Test B', 'Clay', '{}')
+            """
+        )
+        conn.execute(
+            """
             insert into tennis_match_weather(
               match_id, slate_date, venue_key, source_name, start_ts, end_ts,
               hourly_rows, avg_temperature_c, raw_json
@@ -159,7 +184,7 @@ class TennisWarehouseImportTest(unittest.TestCase):
                     1780142400, 1780151400, 1, 27.5, '{}')
             """
         )
-        present = check_weather(conn, "2026-05-30", match_count=1, settled=True)
+        present = check_weather(conn, "2026-05-30", match_count=1, settled=True, full_depth_match_count=1)
         self.assertTrue(present["ok"])
 
     def test_ten_w1_model_run_migration_is_idempotent(self) -> None:

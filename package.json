@@ -139,6 +139,7 @@
     "data:check:mlb-m2-warehouse": "python3 models/mlb/cartridges/MLB-M2/checks/check_warehouse_coverage.py",
     "data:train:mlb-market-models": "python3 pipeline/mlb/research/train_mlb_market_models.py",
     "data:generate:tennis-clay-context": "node pipeline/tennis/publish/generate-clay-context.mjs",
+    "data:export:tennis-published-slate": "node scripts/export-tennis-published-slate.mjs",
     "data:fetch:tennis-rankings": "node pipeline/tennis/fetchers/fetch-tennis-rankings-espn.mjs",
     "data:init:tennis": "python3 pipeline/tennis/warehouse/tennis_warehouse.py init-db",
     "data:migrate:tennis": "python3 pipeline/tennis/warehouse/tennis_warehouse.py migrate",

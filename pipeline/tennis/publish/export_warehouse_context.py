@@ -312,8 +312,6 @@ def player_page_expected_stats(conn: sqlite3.Connection, date: str) -> dict[str,
     result: dict[str, dict[str, Any]] = {}
     for row in rows:
         key = row["normalized_name"]
-        if key in result:
-            continue
         first_in = row["first_serve_pct"]
         first_won = row["first_serve_won_pct"]
         second_won = row["second_serve_won_pct"]
@@ -341,7 +339,7 @@ def player_page_expected_stats(conn: sqlite3.Connection, date: str) -> dict[str,
         stats = {name: value for name, value in stats.items() if value is not None}
         if not stats:
             continue
-        result[key] = {
+        expected = {
             "name": row["player_name"],
             "source": f"SofaScore player page {row['season']} {row['surface']} stats",
             "matches": row["matches_total"],
@@ -350,7 +348,22 @@ def player_page_expected_stats(conn: sqlite3.Connection, date: str) -> dict[str,
             "sourceUrl": row["source_url"],
             "surface": row["surface"],
         }
+        bucket = result.setdefault(key, {**expected, "surfaceRows": {}})
+        bucket.setdefault("surfaceRows", {})[row["surface"]] = expected
     return result
+
+
+def expected_stats_for_surface(page_expected: dict[str, Any] | None, surface: str | None) -> dict[str, Any] | None:
+    if not page_expected:
+        return None
+    surface = surface or "Unknown"
+    surface_rows = page_expected.get("surfaceRows") or {}
+    for candidate in (surface, "All surfaces"):
+        if surface_rows.get(candidate):
+            return surface_rows[candidate]
+    if page_expected.get("surface") in {surface, "All surfaces"}:
+        return {key: value for key, value in page_expected.items() if key != "surfaceRows"}
+    return None
 
 
 def match_weather(conn: sqlite3.Connection, match_id: str) -> dict[str, Any] | None:
@@ -617,7 +630,10 @@ def export_context(date: str) -> dict[str, Any]:
 
         def merged_expected(player_name: str | None, side: str | None) -> dict[str, Any] | None:
             recent_expected = player_expected.get(normalize_name(player_name)) or {}
-            page_expected = player_page_expected.get(normalize_name(player_name)) or {}
+            page_expected = expected_stats_for_surface(
+                player_page_expected.get(normalize_name(player_name)),
+                row.get("surface"),
+            ) or {}
             season_expected = side_expected.get(side or "") or {}
             recent_stats = {
                 key: value
@@ -752,18 +768,24 @@ def export_context(date: str) -> dict[str, Any]:
             form_metrics_by_player = recent_form_metrics(conn, match_id)
             h2h_rows = h2h_match_rows(conn, match_id)
             weather = match_weather(conn, match_id)
+            if not str(match_id).startswith("rg-") and (weather or {}).get("venueKey") == "roland-garros":
+                weather = None
             result_score = parsed_result_score(
                 match_result_for_players(conn, date, row.get("player1_name"), row.get("player2_name")),
                 row.get("player1_name"),
                 row.get("player2_name"),
             )
+            match_surface = row.get("surface") or "Unknown"
+            stage_parts = [part.strip() for part in str(row.get("stage") or "").split("|") if part.strip()]
+            tournament = stage_parts[0] if stage_parts else row.get("stage") or "Unknown tournament"
+            category = row.get("league") or "Tennis"
             players = []
             for side, player_name in (("home", row.get("player1_name")), ("away", row.get("player2_name"))):
                 if not player_name:
                     continue
                 player_key = normalize_name(player_name)
                 expected = player_expected.get(player_key)
-                page_expected = player_page_expected.get(player_key)
+                page_expected = expected_stats_for_surface(player_page_expected.get(player_key), match_surface)
                 if expected and page_expected:
                     expected_stats_non_null = {
                         key: value
@@ -816,9 +838,9 @@ def export_context(date: str) -> dict[str, Any]:
                 "eventId": row.get("match_id"),
                 "sourceUrl": None,
                 "capturedAt": row.get("updated_at"),
-                "surface": "Clay",
-                "tournament": "Roland Garros",
-                "category": "ATP" if str(match_id).startswith("rg-m-") else "WTA",
+                "surface": match_surface,
+                "tournament": tournament,
+                "category": category,
                 "startTimestamp": weather.get("startTs") if weather else None,
                 "players": players,
                 "h2h": {

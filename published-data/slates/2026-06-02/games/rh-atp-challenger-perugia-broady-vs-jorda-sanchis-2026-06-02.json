@@ -1,1 +1,815 @@
-{"id":"rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02","eventId":"ab800d71-39a2-4c5f-b20d-b84995f53f44","league":"Tennis","start":"2:10 AM","startMinutes":130,"title":"David Jorda Sanchis vs Liam Broady","stage":"ATP Challenger Perugia | Round Of 32","spotlight":false,"confidence":53,"volatility":77,"tags":["ATP Challenger","Prediction market","Market only","No model edge","Coinflip price"],"matchup":[{"side":"Player 1","name":"David Jorda Sanchis","displayName":"David Jorda Sanchis","detail":"Rank not joined"},{"side":"Player 2","name":"Liam Broady","displayName":"Liam Broady","detail":"Rank not joined"}],"summary":"David Jorda Sanchis is the current market favorite. David Jorda Sanchis is only the current Robinhood market favorite over Liam Broady; no warehouse service, break-point, or opponent-quality edge is joined yet.","factors":["David Jorda Sanchis is only the current Robinhood market favorite over Liam Broady; no warehouse service, break-point, or opponent-quality edge is joined yet.","Prediction-market price only; no FanDuel moneyline edge calculated.","Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.","No posted sportsbook total captured for this Challenger market.","May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.","Market-only Challenger row: no warehouse edge, sportsbook derivative, or service profile has been joined yet."],"lean":"Market watch: David Jorda Sanchis; do not treat as a model bet.","swing":"Risk: best-of-five set extension and tiebreak variance.","swingFactor":"Risk: best-of-five set extension and tiebreak variance.","odds":{"participantOrder":[0,1],"markets":[{"label":"Prediction market","book":"Robinhood prediction market","value":"David Jorda Sanchis 53% / Liam Broady 50%"},{"label":"Prediction market prices","book":"Robinhood prediction market","value":"David Jorda Sanchis 53c / Liam Broady 50c"}],"note":"Robinhood prediction-market prices captured: David Jorda Sanchis 53c / Liam Broady 50c. This is price context, not a sportsbook value signal.","provider":"Robinhood prediction market"},"tennisContext":{"surface":"Unknown","court":"ATP Challenger Perugia","h2hLeader":"","fatigueFlag":false,"liveDog":false,"weaknessEdge":{"edgeType":"Market-only","target":"No warehouse weakness edge","scoreGap":null,"attackingSide":null,"vulnerableSide":null,"gameFlow":"Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","liveTrigger":"Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.","spreadRead":"No spread line","totalRead":"No total line","pick":{"name":"David Jorda Sanchis","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."},"opponent":{"name":"Liam Broady","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."}},"warehouseContext":{"source":"SQLite tennis warehouse fallback","eventId":"rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02","sourceUrl":null,"capturedAt":"2026-06-01 23:55:53","surface":"Clay","tournament":"Roland Garros","category":"WTA","startTimestamp":1780391400,"players":[{"name":"David Jorda Sanchis","side":"home","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null},{"name":"Liam Broady","side":"away","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null}],"h2h":{"homeName":"David Jorda Sanchis","awayName":"Liam Broady","homeWins":null,"awayWins":null,"draws":null,"matches":[],"coverage":{"datedRows":0,"surfaceRows":0,"weightedRows":0}},"score":{"home":null,"away":null},"result":null,"sofascoreSignals":null,"weather":{"source":"Open-Meteo","venueKey":"roland-garros","startTs":1780391400,"endTs":1780398600,"durationMinutes":120,"hourlyRows":3,"avgTemperatureC":16.47,"maxTemperatureC":16.8,"minTemperatureC":15.8,"avgApparentTemperatureC":15.53,"maxApparentTemperatureC":16,"avgHumidityPct":90.17,"totalPrecipitationMm":5.6,"avgCloudCoverPct":99.25,"avgWindSpeedKmh":17.52,"maxWindGustKmh":41.4,"avgShortwaveRadiationWm2":159.58,"hotMatch":false,"humidMatch":true,"windyMatch":true,"rainAffected":true,"hourly":[{"apparentTemperatureC":16,"gustKmh":41.4,"humidityPct":89,"overlapMinutes":50,"precipitationMm":1.6,"shortwaveWm2":173,"temperatureC":16.8,"timeLocal":"2026-06-02T11:00","timeUtc":"2026-06-02T09:00:00Z","windKmh":16.8},{"apparentTemperatureC":15.2,"gustKmh":41.4,"humidityPct":91,"overlapMinutes":60,"precipitationMm":4.1,"shortwaveWm2":156,"temperatureC":16.3,"timeLocal":"2026-06-02T12:00","timeUtc":"2026-06-02T10:00:00Z","windKmh":18.6},{"apparentTemperatureC":15.1,"gustKmh":37.8,"humidityPct":91,"overlapMinutes":10,"precipitationMm":1,"shortwaveWm2":114,"temperatureC":15.8,"timeLocal":"2026-06-02T13:00","timeUtc":"2026-06-02T11:00:00Z","windKmh":14.7}]},"allStatRows":[],"coverage":{"hasEvent":false,"hasH2h":false,"allStatRows":0,"playerStatRows":0,"liveStatRows":0,"expectedStatRows":0,"recentMetricRows":0,"seasonStatRows":0,"liveStatsStatus":null,"hasWeather":true,"isPregame":true}},"sofascoreData":{"source":"SQLite tennis warehouse fallback","eventId":"rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02","sourceUrl":null,"capturedAt":"2026-06-01 23:55:53","surface":"Clay","tournament":"Roland Garros","category":"WTA","startTimestamp":1780391400,"players":[{"name":"David Jorda Sanchis","side":"home","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null},{"name":"Liam Broady","side":"away","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null}],"h2h":{"homeName":"David Jorda Sanchis","awayName":"Liam Broady","homeWins":null,"awayWins":null,"draws":null,"matches":[],"coverage":{"datedRows":0,"surfaceRows":0,"weightedRows":0}},"score":{"home":null,"away":null},"result":null,"sofascoreSignals":null,"weather":{"source":"Open-Meteo","venueKey":"roland-garros","startTs":1780391400,"endTs":1780398600,"durationMinutes":120,"hourlyRows":3,"avgTemperatureC":16.47,"maxTemperatureC":16.8,"minTemperatureC":15.8,"avgApparentTemperatureC":15.53,"maxApparentTemperatureC":16,"avgHumidityPct":90.17,"totalPrecipitationMm":5.6,"avgCloudCoverPct":99.25,"avgWindSpeedKmh":17.52,"maxWindGustKmh":41.4,"avgShortwaveRadiationWm2":159.58,"hotMatch":false,"humidMatch":true,"windyMatch":true,"rainAffected":true,"hourly":[{"apparentTemperatureC":16,"gustKmh":41.4,"humidityPct":89,"overlapMinutes":50,"precipitationMm":1.6,"shortwaveWm2":173,"temperatureC":16.8,"timeLocal":"2026-06-02T11:00","timeUtc":"2026-06-02T09:00:00Z","windKmh":16.8},{"apparentTemperatureC":15.2,"gustKmh":41.4,"humidityPct":91,"overlapMinutes":60,"precipitationMm":4.1,"shortwaveWm2":156,"temperatureC":16.3,"timeLocal":"2026-06-02T12:00","timeUtc":"2026-06-02T10:00:00Z","windKmh":18.6},{"apparentTemperatureC":15.1,"gustKmh":37.8,"humidityPct":91,"overlapMinutes":10,"precipitationMm":1,"shortwaveWm2":114,"temperatureC":15.8,"timeLocal":"2026-06-02T13:00","timeUtc":"2026-06-02T11:00:00Z","windKmh":14.7}]},"allStatRows":[],"coverage":{"hasEvent":false,"hasH2h":false,"allStatRows":0,"playerStatRows":0,"liveStatRows":0,"expectedStatRows":0,"recentMetricRows":0,"seasonStatRows":0,"liveStatsStatus":null,"hasWeather":true,"isPregame":true}},"players":[{"name":"David Jorda Sanchis","rank":null,"label":"David Jorda Sanchis","form":null,"boardPct":53,"decimalOdds":null,"marketLabel":"53c / 53% implied","clayLine":"Rank not joined","weakness":{"name":"David Jorda Sanchis","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."},"warehouseStats":{"name":"David Jorda Sanchis","side":"home","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null},"record2026":"","notes":"Pick: model 53%","matchupNote":"Why pick: David Jorda Sanchis is only the current Robinhood market favorite over Liam Broady; no warehouse service, break-point, or opponent-quality edge is joined yet."},{"name":"Liam Broady","rank":null,"label":"Liam Broady","form":null,"boardPct":50,"decimalOdds":null,"marketLabel":"50c / 50% implied","clayLine":"Rank not joined","weakness":{"name":"Liam Broady","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."},"warehouseStats":{"name":"Liam Broady","side":"away","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null},"record2026":"","notes":"Opponent case: model 47%","matchupNote":"Upset path: needs early scoreboard pressure or a market price that pays for volatility."}],"comparisonRows":[{"label":"Model pick","metric":"Fair win split","leftScore":53,"rightScore":50,"leftLabel":"David Jorda Sanchis","rightLabel":"Liam Broady","winner":"David Jorda Sanchis"},{"label":"Prediction market","metric":"Implied price","leftScore":53,"rightScore":50,"leftLabel":"David Jorda Sanchis","rightLabel":"Liam Broady","winner":"Prediction-market price captured; no sportsbook EV is inferred from this row."},{"label":"Weakness","metric":"Lower is cleaner","leftScore":0,"rightScore":0,"leftLabel":"David Jorda Sanchis","rightLabel":"Liam Broady","winner":"Market-only"},{"label":"Volatility","metric":"Lower is cleaner","leftScore":77,"rightScore":23,"leftLabel":"Risk","rightLabel":"Stability","winner":"Pass-first"}],"predictionMarket":{"source":"Robinhood prediction market","capturedAt":null,"totalVolume":0,"players":[{"name":"David Jorda Sanchis","probabilityPct":53,"amount":36,"americanOdds":null,"edgePct":null,"priceBand":"Coinflip"},{"name":"Liam Broady","probabilityPct":50,"amount":0,"americanOdds":null,"edgePct":null,"priceBand":"Coinflip"}]},"bettingMatrix":[{"marketType":"Moneyline","label":"ML value","selection":"David Jorda Sanchis","line":null,"americanOdds":null,"modelPct":53,"impliedPct":53,"edgePct":null,"evPer100":null,"netEvPer100":null,"grade":"Near fair","issue":"Favorite price needs better proof","reason":"Prediction-market price captured; no sportsbook EV is inferred from this row."},{"marketType":"Total games","label":"O/U games","selection":"No bet","line":null,"americanOdds":null,"modelPct":null,"impliedPct":null,"edgePct":null,"evPer100":null,"netEvPer100":null,"expectedGames":null,"edgeGames":null,"confidence":null,"grade":"No direction","reason":"Total games need expected match games vs the posted line."},{"marketType":"Win a set","label":"Win a set %","selection":"David Jorda Sanchis 61% / Liam Broady 69%","rows":[{"name":"David Jorda Sanchis","confidence":61,"modelPct":53,"label":"Market favorite to win a set"},{"name":"Liam Broady","confidence":69,"modelPct":50,"label":"Underdog set-win path needs early holds"}],"confidence":69,"grade":"Price required","reason":"Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."},{"marketType":"First-set total games","label":"1st set O/U","selection":"Price required","expectedGames":10.1,"confidence":53,"tiebreakRisk":42,"earlyBreakRisk":58,"grade":"Needs posted first-set total","reason":"Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."}],"derivativeMarketCase":null,"valueBoard":{"note":"EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.","ml":{"marketType":"ML","selection":"David Jorda Sanchis","americanOdds":null,"modelPct":53,"impliedPct":53,"edgePct":null,"evPer100":null,"netEvPer100":null,"feePer100":2,"valueIssue":"Favorite price needs better proof","valueGrade":"Near fair","betGrade":false},"spread":null,"total":{"marketType":"Total","selection":"No bet","line":null,"overOdds":null,"underOdds":null,"expectedGames":null,"valueGrade":"No direction","reason":"No posted match total captured.","betGrade":false},"firstSetTotal":{"marketType":"First-set total","selection":"Price required","line":null,"americanOdds":null,"expectedGames":10.1,"confidence":53,"tiebreakRisk":42,"earlyBreakRisk":58,"modelPct":53,"evPer100":null,"netEvPer100":null,"valueGrade":"Needs posted first-set total","reason":"Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.","betGrade":false},"setWin":[{"name":"David Jorda Sanchis","confidence":61,"modelPct":53,"label":"Market favorite to win a set","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false},{"name":"Liam Broady","confidence":69,"modelPct":50,"label":"Underdog set-win path needs early holds","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false}]},"ensembleValueCase":null,"projection":{"projectedWinner":"David Jorda Sanchis","projectedSetLine":"2-0/2-1 range","setWinProjections":[{"name":"David Jorda Sanchis","confidence":61,"modelPct":53,"label":"Market favorite to win a set"},{"name":"Liam Broady","confidence":69,"modelPct":50,"label":"Underdog set-win path needs early holds"}],"totalGames":null,"straightSetsProbability":48,"upsetRisk":47,"overview":"Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","fantasy":[]},"tradePlan":{"laneLabel":"Prediction-market price captured; no sportsbook EV is inferred from this row.","summary":"Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","trigger":"Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.","headline":"Market-only","exit":"No spread line","tone":"warning"},"derivativeMarkets":[{"label":"ML","value":"David Jorda Sanchis 53c; Prediction-market price only; no FanDuel moneyline edge calculated.","lean":"Prediction-market price captured; no sportsbook EV is inferred from this row.","confidence":53,"marketType":"ML","selection":"David Jorda Sanchis","americanOdds":null,"modelPct":53,"impliedPct":53,"edgePct":null,"evPer100":null,"netEvPer100":null,"feePer100":2,"valueIssue":"Favorite price needs better proof","valueGrade":"Near fair","betGrade":false,"tone":"neutral","reason":"Robinhood prediction-market prices captured: David Jorda Sanchis 53c / Liam Broady 50c. This is price context, not a sportsbook value signal."},{"label":"Win a set","value":"David Jorda Sanchis 61% / Liam Broady 69%","lean":"Underdog set-win path needs early holds","confidence":69,"setWinRows":[{"name":"David Jorda Sanchis","confidence":61,"modelPct":53,"label":"Market favorite to win a set","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false},{"name":"Liam Broady","confidence":69,"modelPct":50,"label":"Underdog set-win path needs early holds","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false}],"valueGrade":"Needs posted price","tone":"neutral","reason":"Best-of-three set-win confidence is more fragile; early service holds matter more."},{"label":"Spread","value":"No game spread captured","lean":"No spread line","confidence":50,"tone":"neutral","reason":"Only enter after visible first-service comfort and break-point pressure; no pre-match model edge."},{"label":"O/U","value":"No total captured","lean":"No bet","confidence":50,"marketType":"Total","selection":"No bet","line":null,"overOdds":null,"underOdds":null,"expectedGames":null,"valueGrade":"No direction","reason":"No posted match total captured.","betGrade":false,"tone":"neutral"},{"label":"1st set O/U","value":"Need posted first-set total","lean":"Price required","confidence":53,"marketType":"First-set total","selection":"Price required","line":null,"americanOdds":null,"expectedGames":10.1,"tiebreakRisk":42,"earlyBreakRisk":58,"modelPct":53,"evPer100":null,"netEvPer100":null,"valueGrade":"Needs posted first-set total","reason":"Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.","betGrade":false,"tone":"neutral"}],"marketEconomics":{"source":"Robinhood prediction market","capturedAt":null,"eventUrl":"https://robinhood.com/us/en/prediction-markets/tennis/","deskName":"David Jorda Sanchis","deskPricePct":53,"deskEdgePct":null,"priceAction":"Prediction-market price captured; no sportsbook EV is inferred from this row.","players":[{"name":"David Jorda Sanchis","americanOdds":null,"impliedPct":53,"modelPct":53,"edgePct":null,"priceBand":"Coinflip","grossProfitPct":47,"grossPayoutMultiple":1.887,"centsAtRisk":53,"centsProfitIfWin":47,"bidPct":50,"lastTradePct":53,"openInterest":36,"symbol":"KXATPCHALLENGERMATCH-26JUN02BROJOR-JOR"},{"name":"Liam Broady","americanOdds":null,"impliedPct":50,"modelPct":50,"edgePct":null,"priceBand":"Coinflip","grossProfitPct":50,"grossPayoutMultiple":2,"centsAtRisk":50,"centsProfitIfWin":50,"bidPct":47,"lastTradePct":0,"openInterest":0,"symbol":"KXATPCHALLENGERMATCH-26JUN02BROJOR-BRO"}]},"clayMatchupData":null,"opponentQualityData":null,"researchLinks":[{"label":"ESPN scoreboard","url":"https://www.espn.com/tennis/scoreboard/_/date/20260602"},{"label":"Tennistonic H2H","url":"https://tennistonic.com/head-to-head-compare/David-Jorda-Sanchis-Vs-Liam-Broady/"},{"label":"Robinhood market","url":"https://robinhood.com/us/en/prediction-markets/tennis/"}],"formEdgeName":"David Jorda Sanchis"},"participants":[{"id":"rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02:0","index":0,"role":"Player 1","name":"David Jorda Sanchis","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},{"id":"rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02:1","index":1,"role":"Player 2","name":"Liam Broady","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"}],"moneyline":{"available":true,"label":"Prediction market","provider":"Robinhood prediction market","participants":[{"id":"rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02:0","index":0,"role":"Player 1","name":"David Jorda Sanchis","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},{"id":"rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02:1","index":1,"role":"Player 2","name":"Liam Broady","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"}]},"analysis":{"available":true,"participantId":"rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02:0","participant":{"id":"rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02:0","index":0,"role":"Player 1","name":"David Jorda Sanchis","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},"opponent":{"id":"rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02:1","index":1,"role":"Player 2","name":"Liam Broady","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},"lean":"Market watch: David Jorda Sanchis; do not treat as a model bet.","rationale":"David Jorda Sanchis is the current market favorite. David Jorda Sanchis is only the current Robinhood market favorite over Liam Broady; no warehouse service, break-point, or opponent-quality edge is joined yet.","confidence":53,"volatility":77,"recommendationScore":34,"tier":"Watch","sourceLabel":"Robinhood prediction market","modelEdge":null,"modelEdgeLabel":"","marketProbability":0,"marketProbabilityLabel":"0.0%","inputs":[],"inputsUsed":0,"volatilityNotes":[],"indicators":{}},"metadata":{"participantCount":2,"participantNames":["David Jorda Sanchis","Liam Broady"],"tagCount":5,"hasSeriesBreakdown":false,"hasMoneyline":true,"hasAnalysisPick":true,"hasStructuredInputs":false,"hasPlayerProps":false,"startMinutes":130,"spotlight":false,"league":"Tennis","oddsProvider":"Robinhood prediction market"},"detailLevel":"full","stateContext":null}
+{
+  "id": "rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02",
+  "eventId": "ab800d71-39a2-4c5f-b20d-b84995f53f44",
+  "league": "Tennis",
+  "start": "2:10 AM",
+  "startMinutes": 130,
+  "title": "David Jorda Sanchis vs Liam Broady",
+  "stage": "ATP Challenger Perugia | Round Of 32",
+  "spotlight": false,
+  "confidence": 53,
+  "volatility": 77,
+  "tags": [
+    "ATP Challenger",
+    "Clay",
+    "Prediction market",
+    "Market only",
+    "No model edge",
+    "Coinflip price"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "David Jorda Sanchis",
+      "displayName": "David Jorda Sanchis",
+      "detail": "Clay | Rank not joined"
+    },
+    {
+      "side": "Player 2",
+      "name": "Liam Broady",
+      "displayName": "Liam Broady",
+      "detail": "Clay | Rank not joined"
+    }
+  ],
+  "summary": "David Jorda Sanchis is the current market favorite. David Jorda Sanchis is only the current Robinhood market favorite over Liam Broady; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+  "factors": [
+    "David Jorda Sanchis is only the current Robinhood market favorite over Liam Broady; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+    "Prediction-market price only; no FanDuel moneyline edge calculated.",
+    "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+    "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+    "No posted sportsbook total captured for this Challenger market.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "Market-only Challenger row: no warehouse edge, sportsbook derivative, or service profile has been joined yet."
+  ],
+  "lean": "Market watch: David Jorda Sanchis; do not treat as a model bet.",
+  "swing": "Risk: best-of-five set extension and tiebreak variance.",
+  "swingFactor": "Risk: best-of-five set extension and tiebreak variance.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Prediction market",
+        "book": "Robinhood prediction market",
+        "value": "David Jorda Sanchis 53% / Liam Broady 50%"
+      },
+      {
+        "label": "Prediction market prices",
+        "book": "Robinhood prediction market",
+        "value": "David Jorda Sanchis 53c / Liam Broady 50c"
+      }
+    ],
+    "note": "Robinhood prediction-market prices captured: David Jorda Sanchis 53c / Liam Broady 50c. This is price context, not a sportsbook value signal.",
+    "provider": "Robinhood prediction market"
+  },
+  "tennisContext": {
+    "surface": "Clay",
+    "court": "ATP Challenger Perugia",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "Market-only",
+      "target": "No warehouse weakness edge",
+      "scoreGap": null,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+      "spreadRead": "No spread line",
+      "totalRead": "No total line",
+      "pick": {
+        "name": "David Jorda Sanchis",
+        "weaknessScore": null,
+        "liabilities": [
+          "No warehouse weakness data joined yet"
+        ],
+        "strengths": [],
+        "firstGameComfort": "Market-only row; wait for serve pressure data",
+        "gameFlowRead": "No service/break profile joined yet."
+      },
+      "opponent": {
+        "name": "Liam Broady",
+        "weaknessScore": null,
+        "liabilities": [
+          "No warehouse weakness data joined yet"
+        ],
+        "strengths": [],
+        "firstGameComfort": "Market-only row; wait for serve pressure data",
+        "gameFlowRead": "No service/break profile joined yet."
+      }
+    },
+    "warehouseContext": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Clay",
+      "tournament": "ATP Challenger Perugia",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "David Jorda Sanchis",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Liam Broady",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "David Jorda Sanchis",
+        "awayName": "Liam Broady",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "sofascoreData": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Clay",
+      "tournament": "ATP Challenger Perugia",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "David Jorda Sanchis",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Liam Broady",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "David Jorda Sanchis",
+        "awayName": "Liam Broady",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "players": [
+      {
+        "name": "David Jorda Sanchis",
+        "rank": null,
+        "label": "David Jorda Sanchis",
+        "form": null,
+        "boardPct": 53,
+        "decimalOdds": null,
+        "marketLabel": "53c / 53% implied",
+        "clayLine": "Clay | Rank not joined",
+        "weakness": {
+          "name": "David Jorda Sanchis",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "warehouseStats": {
+          "name": "David Jorda Sanchis",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        "record2026": "",
+        "notes": "Pick: model 53%",
+        "matchupNote": "Why pick: David Jorda Sanchis is only the current Robinhood market favorite over Liam Broady; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet."
+      },
+      {
+        "name": "Liam Broady",
+        "rank": null,
+        "label": "Liam Broady",
+        "form": null,
+        "boardPct": 50,
+        "decimalOdds": null,
+        "marketLabel": "50c / 50% implied",
+        "clayLine": "Clay | Rank not joined",
+        "weakness": {
+          "name": "Liam Broady",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "warehouseStats": {
+          "name": "Liam Broady",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        "record2026": "",
+        "notes": "Opponent case: model 47%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 53,
+        "rightScore": 50,
+        "leftLabel": "David Jorda Sanchis",
+        "rightLabel": "Liam Broady",
+        "winner": "David Jorda Sanchis"
+      },
+      {
+        "label": "Prediction market",
+        "metric": "Implied price",
+        "leftScore": 53,
+        "rightScore": 50,
+        "leftLabel": "David Jorda Sanchis",
+        "rightLabel": "Liam Broady",
+        "winner": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 0,
+        "rightScore": 0,
+        "leftLabel": "David Jorda Sanchis",
+        "rightLabel": "Liam Broady",
+        "winner": "Market-only"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 77,
+        "rightScore": 23,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Pass-first"
+      }
+    ],
+    "predictionMarket": {
+      "source": "Robinhood prediction market",
+      "capturedAt": null,
+      "totalVolume": 0,
+      "players": [
+        {
+          "name": "David Jorda Sanchis",
+          "probabilityPct": 53,
+          "amount": 36,
+          "americanOdds": null,
+          "edgePct": null,
+          "priceBand": "Coinflip"
+        },
+        {
+          "name": "Liam Broady",
+          "probabilityPct": 50,
+          "amount": 0,
+          "americanOdds": null,
+          "edgePct": null,
+          "priceBand": "Coinflip"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "David Jorda Sanchis",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 53,
+        "impliedPct": 53,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "grade": "Near fair",
+        "issue": "Favorite price needs better proof",
+        "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "Total games need expected match games vs the posted line."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "David Jorda Sanchis 61% / Liam Broady 69%",
+        "rows": [
+          {
+            "name": "David Jorda Sanchis",
+            "confidence": 61,
+            "modelPct": 53,
+            "label": "Market favorite to win a set"
+          },
+          {
+            "name": "Liam Broady",
+            "confidence": 69,
+            "modelPct": 50,
+            "label": "Underdog set-win path needs early holds"
+          }
+        ],
+        "confidence": 69,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Price required",
+        "expectedGames": 10.1,
+        "confidence": 53,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "grade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "David Jorda Sanchis",
+        "americanOdds": null,
+        "modelPct": 53,
+        "impliedPct": 53,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Near fair",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "expectedGames": 10.1,
+        "confidence": 53,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "modelPct": 53,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "David Jorda Sanchis",
+          "confidence": 61,
+          "modelPct": 53,
+          "label": "Market favorite to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Liam Broady",
+          "confidence": 69,
+          "modelPct": 50,
+          "label": "Underdog set-win path needs early holds",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "David Jorda Sanchis",
+      "projectedSetLine": "2-0/2-1 range",
+      "setWinProjections": [
+        {
+          "name": "David Jorda Sanchis",
+          "confidence": 61,
+          "modelPct": 53,
+          "label": "Market favorite to win a set"
+        },
+        {
+          "name": "Liam Broady",
+          "confidence": 69,
+          "modelPct": 50,
+          "label": "Underdog set-win path needs early holds"
+        }
+      ],
+      "totalGames": null,
+      "straightSetsProbability": 48,
+      "upsetRisk": 47,
+      "overview": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
+      "summary": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "trigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+      "headline": "Market-only",
+      "exit": "No spread line",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "David Jorda Sanchis 53c; Prediction-market price only; no FanDuel moneyline edge calculated.",
+        "lean": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
+        "confidence": 53,
+        "marketType": "ML",
+        "selection": "David Jorda Sanchis",
+        "americanOdds": null,
+        "modelPct": 53,
+        "impliedPct": 53,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Near fair",
+        "betGrade": false,
+        "tone": "neutral",
+        "reason": "Robinhood prediction-market prices captured: David Jorda Sanchis 53c / Liam Broady 50c. This is price context, not a sportsbook value signal."
+      },
+      {
+        "label": "Win a set",
+        "value": "David Jorda Sanchis 61% / Liam Broady 69%",
+        "lean": "Underdog set-win path needs early holds",
+        "confidence": 69,
+        "setWinRows": [
+          {
+            "name": "David Jorda Sanchis",
+            "confidence": 61,
+            "modelPct": 53,
+            "label": "Market favorite to win a set",
+            "marketType": "Win a set",
+            "valueGrade": "Needs posted price",
+            "betGrade": false
+          },
+          {
+            "name": "Liam Broady",
+            "confidence": 69,
+            "modelPct": 50,
+            "label": "Underdog set-win path needs early holds",
+            "marketType": "Win a set",
+            "valueGrade": "Needs posted price",
+            "betGrade": false
+          }
+        ],
+        "valueGrade": "Needs posted price",
+        "tone": "neutral",
+        "reason": "Best-of-three set-win confidence is more fragile; early service holds matter more."
+      },
+      {
+        "label": "Spread",
+        "value": "No game spread captured",
+        "lean": "No spread line",
+        "confidence": 50,
+        "tone": "neutral",
+        "reason": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge."
+      },
+      {
+        "label": "O/U",
+        "value": "No total captured",
+        "lean": "No bet",
+        "confidence": 50,
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Need posted first-set total",
+        "lean": "Price required",
+        "confidence": 53,
+        "marketType": "First-set total",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "expectedGames": 10.1,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "modelPct": 53,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "betGrade": false,
+        "tone": "neutral"
+      }
+    ],
+    "marketEconomics": {
+      "source": "Robinhood prediction market",
+      "capturedAt": null,
+      "eventUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "deskName": "David Jorda Sanchis",
+      "deskPricePct": 53,
+      "deskEdgePct": null,
+      "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
+      "players": [
+        {
+          "name": "David Jorda Sanchis",
+          "americanOdds": null,
+          "impliedPct": 53,
+          "modelPct": 53,
+          "edgePct": null,
+          "priceBand": "Coinflip",
+          "grossProfitPct": 47,
+          "grossPayoutMultiple": 1.887,
+          "centsAtRisk": 53,
+          "centsProfitIfWin": 47,
+          "bidPct": 50,
+          "lastTradePct": 53,
+          "openInterest": 36,
+          "symbol": "KXATPCHALLENGERMATCH-26JUN02BROJOR-JOR"
+        },
+        {
+          "name": "Liam Broady",
+          "americanOdds": null,
+          "impliedPct": 50,
+          "modelPct": 50,
+          "edgePct": null,
+          "priceBand": "Coinflip",
+          "grossProfitPct": 50,
+          "grossPayoutMultiple": 2,
+          "centsAtRisk": 50,
+          "centsProfitIfWin": 50,
+          "bidPct": 47,
+          "lastTradePct": 0,
+          "openInterest": 0,
+          "symbol": "KXATPCHALLENGERMATCH-26JUN02BROJOR-BRO"
+        }
+      ]
+    },
+    "clayMatchupData": null,
+    "opponentQualityData": null,
+    "researchLinks": [
+      {
+        "label": "ESPN scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260602"
+      },
+      {
+        "label": "Tennistonic H2H",
+        "url": "https://tennistonic.com/head-to-head-compare/David-Jorda-Sanchis-Vs-Liam-Broady/"
+      },
+      {
+        "label": "Robinhood market",
+        "url": "https://robinhood.com/us/en/prediction-markets/tennis/"
+      }
+    ],
+    "formEdgeName": "David Jorda Sanchis"
+  },
+  "participants": [
+    {
+      "id": "rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "David Jorda Sanchis",
+      "detail": "Clay | Rank not joined",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    },
+    {
+      "id": "rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Liam Broady",
+      "detail": "Clay | Rank not joined",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "Prediction market",
+    "provider": "Robinhood prediction market",
+    "participants": [
+      {
+        "id": "rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "David Jorda Sanchis",
+        "detail": "Clay | Rank not joined",
+        "americanOdds": null,
+        "americanLabel": "0",
+        "decimalOdds": null,
+        "impliedProbability": 0,
+        "impliedProbabilityLabel": "0.0%"
+      },
+      {
+        "id": "rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Liam Broady",
+        "detail": "Clay | Rank not joined",
+        "americanOdds": null,
+        "americanLabel": "0",
+        "decimalOdds": null,
+        "impliedProbability": 0,
+        "impliedProbabilityLabel": "0.0%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02:0",
+    "participant": {
+      "id": "rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "David Jorda Sanchis",
+      "detail": "Clay | Rank not joined",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    },
+    "opponent": {
+      "id": "rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Liam Broady",
+      "detail": "Clay | Rank not joined",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    },
+    "lean": "Market watch: David Jorda Sanchis; do not treat as a model bet.",
+    "rationale": "David Jorda Sanchis is the current market favorite. David Jorda Sanchis is only the current Robinhood market favorite over Liam Broady; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+    "confidence": 53,
+    "volatility": 77,
+    "recommendationScore": 34,
+    "tier": "Watch",
+    "sourceLabel": "Robinhood prediction market",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0,
+    "marketProbabilityLabel": "0.0%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "David Jorda Sanchis",
+      "Liam Broady"
+    ],
+    "tagCount": 6,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 130,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "Robinhood prediction market"
+  }
+}

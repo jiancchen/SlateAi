@@ -87,6 +87,24 @@ const slug = (value) =>
 
 const isDoublesName = (value) => /[/&]/.test(String(value || ''))
 
+const SURFACE_BY_TOURNAMENT_TOKEN = [
+  [/french open|roland garros/i, 'Clay', 'Grand Slam tournament surface'],
+  [/perugia/i, 'Clay', 'ATP Challenger Perugia surface'],
+  [/prostejov/i, 'Clay', 'ATP Challenger Prostejov surface'],
+  [/bad rappenau|heilbronn|neckarcup/i, 'Clay', 'ATP Challenger Bad Rappenau surface'],
+  [/\b(birmingham|wimbledon|halle|queen)\b/i, 'Grass', 'Grass tournament surface'],
+  [/tyler/i, 'Hard', 'ATP Challenger Tyler surface'],
+  [/centurion/i, 'Hard', 'ATP Challenger Centurion surface']
+]
+
+export const inferSurface = (tournament, eventName = '') => {
+  const text = `${tournament || ''} ${eventName || ''}`
+  for (const [pattern, surface, source] of SURFACE_BY_TOURNAMENT_TOKEN) {
+    if (pattern.test(text)) return { surface, surfaceSource: source }
+  }
+  return { surface: 'Unknown', surfaceSource: 'surface not mapped from Robinhood tournament text' }
+}
+
 const eventContracts = (event, quotesById, fundamentalsById) =>
   values(event.eventContracts).map((contract) => {
     const quote = quotesById.get(contract.id) || {}
@@ -115,8 +133,8 @@ const eventContracts = (event, quotesById, fundamentalsById) =>
   })
 
 const classify = (tournament, event) => {
-  if (/French Open.*Men Singles/i.test(tournament)) return 'french_open_men_singles'
   if (/French Open.*Women Singles/i.test(tournament)) return 'french_open_women_singles'
+  if (/French Open.*Men Singles/i.test(tournament)) return 'french_open_men_singles'
   if (/ATP Challenger/i.test(tournament)) return 'atp_challenger_singles'
   if (/WTA 125K/i.test(tournament)) return 'wta_125k_singles'
   if (/ITF|^M\d+|^W\d+/i.test(tournament)) return 'itf'
@@ -156,6 +174,7 @@ const buildMarketRows = (pageProps, date) => {
 }
 
 const toSupplementMatch = (row, date) => {
+  const surfaceInfo = inferSurface(row.tournament, row.name)
   const players = row.contracts.map((contract) => ({
     name: contract.name,
     shortName: contract.shortName,
@@ -179,6 +198,8 @@ const toSupplementMatch = (row, date) => {
     tournament: row.tournament,
     category: row.category,
     round: row.round,
+    surface: surfaceInfo.surface,
+    surfaceSource: surfaceInfo.surfaceSource,
     startIso: row.eventDayTimestamp,
     eventDay: row.eventDay,
     singles: row.singles,
@@ -233,6 +254,9 @@ const main = async () => {
     }, {}),
     events: rows
   }
+  const supplementMatches = [...frenchOpenSingles, ...atpChallenger].sort(
+    (left, right) => left.startIso.localeCompare(right.startIso) || left.title.localeCompare(right.title)
+  )
   const supplement = {
     date: options.date,
     source: SOURCE,
@@ -241,9 +265,11 @@ const main = async () => {
     totalEvents: rows.length,
     atpChallengerSingles: atpChallenger.length,
     frenchOpenSingles: frenchOpenSingles.length,
-    matches: [...frenchOpenSingles, ...atpChallenger].sort(
-      (left, right) => left.startIso.localeCompare(right.startIso) || left.title.localeCompare(right.title)
-    )
+    surfaceCounts: supplementMatches.reduce((counts, row) => {
+      counts[row.surface || 'Unknown'] = (counts[row.surface || 'Unknown'] || 0) + 1
+      return counts
+    }, {}),
+    matches: supplementMatches
   }
 
   const outputRoot = path.resolve(ROOT, options.outputDir)

@@ -54,6 +54,53 @@ def name_key(value: str | None) -> str:
     return " ".join(sorted(normalized.split()))
 
 
+def surface_key(value: Any) -> str:
+    if value is None:
+        return "unknown"
+    try:
+        if pd.isna(value):
+            return "unknown"
+    except TypeError:
+        pass
+    normalized = normalize_name(str(value or ""))
+    if normalized in {"clay", "hard", "grass"}:
+        return normalized
+    if normalized in {"indoor hard", "hard indoor"}:
+        return "hard"
+    if normalized in {"all surfaces", "all"}:
+        return "all surfaces"
+    return normalized or "unknown"
+
+
+def infer_match_surface(row: pd.Series) -> str:
+    explicit = row.get("surface")
+    explicit_key = surface_key(explicit)
+    if explicit_key not in {"unknown", ""}:
+        if explicit_key == "hard":
+            return "Hard"
+        if explicit_key == "clay":
+            return "Clay"
+        if explicit_key == "grass":
+            return "Grass"
+        return str(explicit)
+    text = normalize_name(
+        " ".join(
+            str(row.get(column) or "")
+            for column in ("title", "stage", "court", "league")
+        )
+    )
+    clay_tokens = ("roland", "garros", "french open", "paris", "perugia", "prostejov", "bad rappenau")
+    hard_tokens = ("tyler", "centurion")
+    grass_tokens = ("birmingham", "wimbledon", "halle", "queens")
+    if any(token in text for token in clay_tokens):
+        return "Clay"
+    if any(token in text for token in grass_tokens):
+        return "Grass"
+    if any(token in text for token in hard_tokens):
+        return "Hard"
+    return "Unknown"
+
+
 def match_pair_key(left: str | None, right: str | None) -> str:
     names = [normalize_name(left), normalize_name(right)]
     if not all(names):
@@ -518,6 +565,7 @@ def player_page_stats_table(player_page_stats: pd.DataFrame) -> pd.DataFrame:
     columns = [
         "slate_date",
         "normalized_name",
+        "pps_surface",
         "pps_matches",
         "pps_win_pct",
         "pps_hold_pct",
@@ -533,14 +581,15 @@ def player_page_stats_table(player_page_stats: pd.DataFrame) -> pd.DataFrame:
     if player_page_stats.empty:
         return pd.DataFrame(columns=columns)
     stats = player_page_stats.copy()
-    stats["surface_priority"] = np.where(stats["surface"].astype(str).str.lower().eq("clay"), 0, 1)
-    stats = stats.sort_values(["as_of_date", "normalized_name", "surface_priority"]).drop_duplicates(
-        ["as_of_date", "normalized_name"], keep="first"
+    stats["surface_priority"] = np.where(stats["surface"].astype(str).str.lower().eq("all surfaces"), 1, 0)
+    stats = stats.sort_values(["as_of_date", "normalized_name", "surface", "surface_priority"]).drop_duplicates(
+        ["as_of_date", "normalized_name", "surface"], keep="first"
     )
     out = pd.DataFrame(
         {
             "slate_date": stats["as_of_date"].astype(str),
             "normalized_name": stats["normalized_name"].astype(str),
+            "pps_surface": stats["surface"].astype(str),
             "pps_matches": pd.to_numeric(stats.get("matches_total"), errors="coerce"),
             "pps_win_pct": pd.to_numeric(stats.get("matches_won_pct"), errors="coerce"),
             "pps_first_serve_pct": pd.to_numeric(stats.get("first_serve_pct"), errors="coerce"),
@@ -567,8 +616,26 @@ def player_page_stats_table(player_page_stats: pd.DataFrame) -> pd.DataFrame:
 def build_player_rows(tables: dict[str, pd.DataFrame]) -> pd.DataFrame:
     ctx = tables["context"].copy()
     matches = tables["matches"].copy()
-    if "slate_date" not in ctx.columns and not matches.empty and "match_id" in matches.columns:
-        ctx = ctx.merge(matches[["match_id", "slate_date"]].drop_duplicates("match_id"), how="left", on="match_id")
+    if not matches.empty and "match_id" in matches.columns:
+        match_keep = [column for column in ["match_id", "slate_date", "surface"] if column in matches.columns]
+        if match_keep:
+            match_meta = matches[match_keep].drop_duplicates("match_id")
+            for column in ("slate_date", "surface"):
+                if column in ctx.columns and column in match_meta.columns:
+                    match_meta = match_meta.rename(columns={column: f"match_{column}"})
+            ctx = ctx.merge(match_meta, how="left", on="match_id")
+            if "slate_date" not in ctx.columns and "slate_date" in match_meta.columns:
+                ctx["slate_date"] = ctx["slate_date"]
+            if "match_slate_date" in ctx.columns:
+                if "slate_date" not in ctx.columns:
+                    ctx["slate_date"] = ctx["match_slate_date"]
+                else:
+                    ctx["slate_date"] = ctx["slate_date"].combine_first(ctx["match_slate_date"])
+            if "match_surface" in ctx.columns:
+                if "surface" not in ctx.columns:
+                    ctx["surface"] = ctx["match_surface"]
+                else:
+                    ctx["surface"] = ctx["surface"].combine_first(ctx["match_surface"])
     metric_df = weighted_metric_table(tables["metrics"])
     market_df = market_table(tables["markets"])
     replay_df = prior_replay_flow_table(tables["matches"], tables.get("replay_flow", pd.DataFrame()))
@@ -580,7 +647,27 @@ def build_player_rows(tables: dict[str, pd.DataFrame]) -> pd.DataFrame:
     rows = rows.merge(market_df, how="left", on=["match_id", "normalized_name"])
     rows = rows.merge(replay_df, how="left", on=["match_id", "normalized_name"])
     rows = rows.merge(time_df, how="left", on=["match_id", "normalized_name"])
-    rows = rows.merge(page_stats_df, how="left", on=["slate_date", "normalized_name"])
+    if not page_stats_df.empty:
+        pps_value_columns = [column for column in page_stats_df.columns if column.startswith("pps_") and column != "pps_surface"]
+        rows["match_surface_key"] = rows.get("surface", pd.Series("Unknown", index=rows.index)).map(surface_key)
+        exact_stats = page_stats_df.copy()
+        exact_stats["match_surface_key"] = exact_stats["pps_surface"].map(surface_key)
+        rows = rows.merge(exact_stats, how="left", on=["slate_date", "normalized_name", "match_surface_key"])
+        all_surface_stats = page_stats_df[page_stats_df["pps_surface"].map(surface_key).eq("all surfaces")].copy()
+        all_surface_stats = all_surface_stats.drop(columns=["match_surface_key"], errors="ignore").add_suffix("_all")
+        all_surface_stats = all_surface_stats.rename(
+            columns={"slate_date_all": "slate_date", "normalized_name_all": "normalized_name"}
+        )
+        rows = rows.merge(all_surface_stats, how="left", on=["slate_date", "normalized_name"])
+        for column in pps_value_columns:
+            all_column = f"{column}_all"
+            if column in rows.columns and all_column in rows.columns:
+                rows[column] = rows[column].combine_first(rows[all_column])
+        if "pps_surface_all" in rows.columns:
+            rows["pps_surface"] = rows.get("pps_surface", pd.Series(index=rows.index)).combine_first(rows["pps_surface_all"])
+        rows = rows.drop(columns=[column for column in rows.columns if column.endswith("_all")], errors="ignore")
+    else:
+        rows = rows.merge(page_stats_df, how="left", on=["slate_date", "normalized_name"])
 
     missing_market = rows["market_prob"].isna() if "market_prob" in rows.columns else pd.Series(False, index=rows.index)
     if missing_market.any() and not market_df.empty:
@@ -839,6 +926,20 @@ def build_samples(tables: dict[str, pd.DataFrame]) -> pd.DataFrame:
         )
     ]
     df["label_p1_win"] = p1_win
+    if "surface" not in df.columns:
+        df["surface"] = np.nan
+    df["surface"] = df.apply(infer_match_surface, axis=1)
+    surface_keys = df["surface"].map(surface_key)
+    df["is_clay_match"] = surface_keys.eq("clay").astype(int)
+    df["is_hard_match"] = surface_keys.eq("hard").astype(int)
+    df["is_grass_match"] = surface_keys.eq("grass").astype(int)
+    df["surface_unknown"] = surface_keys.isin({"unknown", ""}).astype(int)
+    non_clay = ~surface_keys.eq("clay")
+    for side in ("p1", "p2"):
+        for column in ("clay_win_pct", "clay_wins", "clay_losses", "clay_match_count"):
+            full_column = f"{side}_{column}"
+            if full_column in df.columns:
+                df.loc[non_clay, full_column] = np.nan
     feature_bases = [
         "rank_quality",
         "ranking_points",
@@ -930,7 +1031,7 @@ def feature_columns(df: pd.DataFrame, include_market: bool) -> list[str]:
             column.startswith("diff_")
             or column.startswith("absdiff_")
             or column.startswith("weather_")
-            or column in {"is_wta", "is_atp"}
+            or column in {"is_wta", "is_atp", "is_clay_match", "is_hard_match", "is_grass_match", "surface_unknown"}
         )
         and not column.startswith(experimental_prefixes)
     ]
@@ -1080,11 +1181,13 @@ def market_adjust_probability(data_prob: pd.Series, market_prob: pd.Series | Non
 
 
 def pps_pressure_adjustment(row: pd.Series) -> float:
-    """Small current-slate adjustment from SofaScore player-page clay pressure stats.
+    """Small current-slate adjustment from SofaScore player-page pressure stats.
 
     These rows are new, so they are not allowed to dominate the trained model yet.
-    They are a conservative pre-match nudge for serve comfort and break-pressure
-    shape until we have enough backfilled history to learn the weights directly.
+    They are matched by surface when possible and otherwise fall back to all-surface
+    stats, then act as a conservative pre-match nudge for serve comfort and
+    break-pressure shape until we have enough backfilled history to learn the
+    weights directly.
     """
     samples = [
         pd.to_numeric(pd.Series([row.get("p1_pps_matches")]), errors="coerce").iloc[0],
@@ -1363,6 +1466,13 @@ def recommendation_rows(frame: pd.DataFrame, value_gate: dict[str, Any] | None =
                     "date": row.get("slate_date"),
                     "start": row.get("start_label"),
                     "match": row.get("title"),
+                    "surface": row.get("surface"),
+                    "surfaceFlags": {
+                        "clay": bool(row.get("is_clay_match")),
+                        "hard": bool(row.get("is_hard_match")),
+                        "grass": bool(row.get("is_grass_match")),
+                        "unknown": bool(row.get("surface_unknown")),
+                    },
                     "selection": candidate["selection"],
                     "side": candidate["side"],
                     "modelProbability": round(candidate["prob"] * 100, 1),

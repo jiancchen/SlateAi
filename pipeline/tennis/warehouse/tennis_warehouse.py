@@ -198,6 +198,7 @@ def init_db(conn: sqlite3.Connection) -> None:
           league text not null,
           title text not null,
           stage text,
+          surface text,
           court text,
           start_label text,
           start_minutes integer,
@@ -916,6 +917,12 @@ def init_db(conn: sqlite3.Connection) -> None:
     ):
         if column_name not in existing_market_columns:
             conn.execute(f"alter table tennis_prediction_market_snapshots add column {column_name} {column_type}")
+    existing_match_columns = {
+        row["name"] for row in conn.execute("pragma table_info(tennis_matches)").fetchall()
+    }
+    for column_name, column_type in (("surface", "text"),):
+        if column_name not in existing_match_columns:
+            conn.execute(f"alter table tennis_matches add column {column_name} {column_type}")
     existing_context_columns = {
         row["name"] for row in conn.execute("pragma table_info(tennis_player_match_context)").fetchall()
     }
@@ -1074,13 +1081,13 @@ def infer_tennis_surface(event: Any) -> str | None:
     text = str(event or "").lower()
     if not text:
         return None
-    if any(token in text for token in ("roland", "paris", "rome", "madrid", "hamburg", "geneva", "strasbourg", "valencia", "bordeaux", "cervia", "oeiras", "pula")):
+    if any(token in text for token in ("roland", "french open", "paris", "rome", "madrid", "hamburg", "geneva", "strasbourg", "valencia", "bordeaux", "cervia", "oeiras", "pula", "perugia", "prostejov", "bad rappenau", "heilbronn", "neckarcup")):
         return "Clay"
-    if any(token in text for token in ("grass", "halle", "queen", "s hertogenbosch", "nottingham", "wimbledon")):
+    if re.search(r"\b(grass|halle|queen|s hertogenbosch|nottingham|wimbledon|birmingham)\b", text):
         return "Grass"
     if "indoor" in text:
         return "Indoor hard"
-    if any(token in text for token in ("miami", "indian wells", "australian", "us open", "dubai", "doha")):
+    if any(token in text for token in ("miami", "indian wells", "australian", "us open", "dubai", "doha", "tyler", "centurion")):
         return "Hard"
     return None
 
@@ -1411,17 +1418,18 @@ def import_slate(conn: sqlite3.Connection, slate_date: str) -> dict[str, int]:
         conn.execute(
             """
             insert into tennis_matches(
-              match_id, slate_date, league, title, stage, court, start_label,
+              match_id, slate_date, league, title, stage, surface, court, start_label,
               start_minutes, player1_name, player2_name, player1_normalized_name,
               player2_normalized_name, desk_pick_name, desk_confidence, desk_volatility,
               desk_summary, desk_lean, source_file, raw_json
             )
-            values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             on conflict(match_id) do update set
               slate_date=excluded.slate_date,
               league=excluded.league,
               title=excluded.title,
               stage=excluded.stage,
+              surface=excluded.surface,
               court=excluded.court,
               start_label=excluded.start_label,
               start_minutes=excluded.start_minutes,
@@ -1444,6 +1452,7 @@ def import_slate(conn: sqlite3.Connection, slate_date: str) -> dict[str, int]:
                 game.get("league"),
                 game.get("title"),
                 game.get("stage"),
+                context.get("surface"),
                 context.get("court"),
                 game.get("start"),
                 game.get("startMinutes"),

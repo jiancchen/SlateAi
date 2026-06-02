@@ -70,6 +70,23 @@ const slug = (value) =>
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '')
 
+const SURFACE_BY_TOURNAMENT_TOKEN = [
+  [/french open|roland garros|paris/i, 'Clay'],
+  [/perugia|prostejov|bad rappenau|heilbronn|neckarcup/i, 'Clay'],
+  [/\b(birmingham|wimbledon|halle|queen)\b/i, 'Grass'],
+  [/tyler|centurion/i, 'Hard']
+]
+
+const inferSurface = (...values) => {
+  const text = values.filter(Boolean).join(' ')
+  for (const [pattern, surface] of SURFACE_BY_TOURNAMENT_TOKEN) {
+    if (pattern.test(text)) return surface
+  }
+  return 'Unknown'
+}
+
+const isClaySurface = (surface) => String(surface || '').toLowerCase() === 'clay'
+
 const titleDate = (date) => {
   const [year, month, day] = date.split('-').map(Number)
   return new Date(Date.UTC(year, month - 1, day)).toLocaleDateString('en-US', {
@@ -144,7 +161,8 @@ const mergeWarehouseExpectedStats = (name, qualityPlayer, warehousePlayer) => {
   }
 }
 
-const clayRecordScore = (qualityPlayer) => {
+const clayRecordScore = (qualityPlayer, surface = 'Clay') => {
+  if (!isClaySurface(surface)) return 0
   const record = qualityPlayer?.records?.clay2026
   if (!record || !Number.isFinite(Number(record.winPct)) || !Number.isFinite(Number(record.total))) return 0
   const sample = Math.min(1, Number(record.total) / 10)
@@ -579,9 +597,9 @@ const rankScore = (ranking) => {
   return -16
 }
 
-const playerScore = (ranking, qualityPlayer, isAtp) =>
+const playerScore = (ranking, qualityPlayer, isAtp, surface = 'Clay') =>
   rankScore(ranking) +
-  clayRecordScore(qualityPlayer) +
+  clayRecordScore(qualityPlayer, surface) +
   formScore(qualityPlayer) +
   serviceScore(qualityPlayer) +
   (isAtp ? 1.5 : 0) -
@@ -961,12 +979,14 @@ const buildEnsembleValueCase = ({ row, rawPickName, players, selectionQuality, o
   }
 }
 
-const formatProfile = (ranking, qualityPlayer) => {
+const formatProfile = (ranking, qualityPlayer, surface = 'Clay') => {
+  const clayRecord = qualityPlayer?.records?.clay2026
   const parts = [
     Number.isFinite(Number(ranking?.rank)) ? `Live rank #${ranking.rank}` : 'Rank not joined',
     ranking?.country ? ranking.country : null,
     Number.isFinite(Number(ranking?.age)) ? `age ${ranking.age}` : null,
-    qualityPlayer?.records?.clay2026 ? `2026 clay ${formatRecord(qualityPlayer.records.clay2026)}` : null,
+    clayRecord && isClaySurface(surface) ? `2026 clay ${formatRecord(clayRecord)}` : null,
+    clayRecord && !isClaySurface(surface) ? `${surface || 'Surface'} match; clay record context only` : null,
     Number.isFinite(Number(qualityPlayer?.recentWindow?.opponentAdjustedFormScore))
       ? `adj form ${Math.round(Number(qualityPlayer.recentWindow.opponentAdjustedFormScore))}`
       : null,
@@ -977,7 +997,7 @@ const formatProfile = (ranking, qualityPlayer) => {
   return parts.join(' | ')
 }
 
-const buildRead = ({ pick, opponent, confidence, volatility, pickQuality, oppQuality, isAtp }) => {
+const buildRead = ({ pick, opponent, confidence, volatility, pickQuality, oppQuality, isAtp, surface = 'Clay' }) => {
   const pickHold = serviceAverage(pickQuality, 'avgServiceHoldPct')
   const oppHold = serviceAverage(oppQuality, 'avgServiceHoldPct')
   const pickForm = Number(pickQuality?.recentWindow?.opponentAdjustedFormScore)
@@ -1003,7 +1023,13 @@ const buildRead = ({ pick, opponent, confidence, volatility, pickQuality, oppQua
       notes.push(`Opponent-adjusted recent form is basically even: ${pick} ${Math.round(pickForm)}, ${opponent} ${Math.round(oppForm)}.`)
     }
   }
-  if (!notes.length) notes.push(`${pick} has the cleaner composite of rank, clay record, and recent opponent quality.`)
+  if (!notes.length) {
+    notes.push(
+      isClaySurface(surface)
+        ? `${pick} has the cleaner composite of rank, clay record, and recent opponent quality.`
+        : `${pick} has the cleaner composite of rank, recent opponent quality, and joined service data; clay record is context only on ${surface || 'this surface'}.`
+    )
+  }
   const discipline =
     confidence >= 74 && volatility <= 48
       ? 'High win probability, but the ML still needs enough payout after comparing the book price to the model.'
@@ -1580,14 +1606,15 @@ const buildGame = (match, rankings, quality, warehouse, date, fanduelIndex, robi
   const idPrefix = match.raw?.lg?.includes?.('WTA') || /Women/i.test(match.raw?.league || '') ? 'w' : guessTour(a.name, b.name, rankings)
   const tour = idPrefix === 'm' ? 'ATP' : 'WTA'
   const matchId = `rg-${idPrefix}-${slug(a.name)}-${slug(b.name)}-${date}`
+  const surface = inferSurface(match.surface, match.stage, match.round, match.court, match.raw?.league, 'Roland Garros')
   const rankA = getRanking(rankings, a.name)
   const rankB = getRanking(rankings, b.name)
   const warehouseA = findWarehousePlayer(warehouse, matchId, a.name)
   const warehouseB = findWarehousePlayer(warehouse, matchId, b.name)
   const qualityA = mergeWarehouseExpectedStats(a.name, findQuality(quality, matchId, a.name), warehouseA)
   const qualityB = mergeWarehouseExpectedStats(b.name, findQuality(quality, matchId, b.name), warehouseB)
-  const scoreA = playerScore(rankA, qualityA, tour === 'ATP')
-  const scoreB = playerScore(rankB, qualityB, tour === 'ATP')
+  const scoreA = playerScore(rankA, qualityA, tour === 'ATP', surface)
+  const scoreB = playerScore(rankB, qualityB, tour === 'ATP', surface)
   const basePickA = scoreA >= scoreB
   const basePickName = basePickA ? a.name : b.name
   const baseConfidence = pctFromDelta(Math.abs(scoreA - scoreB), tour === 'ATP')
@@ -1613,10 +1640,10 @@ const buildGame = (match, rankings, quality, warehouse, date, fanduelIndex, robi
   const pickWeakness = pickA ? weaknessA : weaknessB
   const oppWeakness = pickA ? weaknessB : weaknessA
   const weaknessEdge = buildWeaknessEdge({ pickName, opponentName, pickQuality, oppQuality, pickWeakness, oppWeakness, confidence, volatility })
-  const read = buildRead({ pick: pickName, opponent: opponentName, confidence, volatility, pickQuality, oppQuality, isAtp: tour === 'ATP' })
+  const read = buildRead({ pick: pickName, opponent: opponentName, confidence, volatility, pickQuality, oppQuality, isAtp: tour === 'ATP', surface })
   const players = [
-    { name: a.name, ranking: rankA, qualityName: qualityA?.name || null, profile: formatProfile(rankA, qualityA), modelPct: Number(modelPctA.toFixed(1)), weakness: weaknessA },
-    { name: b.name, ranking: rankB, qualityName: qualityB?.name || null, profile: formatProfile(rankB, qualityB), modelPct: Number(modelPctB.toFixed(1)), weakness: weaknessB }
+    { name: a.name, ranking: rankA, qualityName: qualityA?.name || null, profile: formatProfile(rankA, qualityA, surface), modelPct: Number(modelPctA.toFixed(1)), weakness: weaknessA },
+    { name: b.name, ranking: rankB, qualityName: qualityB?.name || null, profile: formatProfile(rankB, qualityB, surface), modelPct: Number(modelPctB.toFixed(1)), weakness: weaknessB }
   ]
   const fanduel = findFanDuelLine(fanduelIndex, a.name, b.name)
   const robinhood = findRobinhoodMarket(robinhoodIndex, a.name, b.name)
@@ -1647,21 +1674,22 @@ const buildGame = (match, rankings, quality, warehouse, date, fanduelIndex, robi
     opponentWeakness: ensembleOpponentWeakness
   })
   const tags = [
-    'Clay',
+    surface,
     'Roland Garros',
     tour,
+    !isClaySurface(surface) ? 'No clay boost' : null,
     confidence >= 74 && volatility <= 48 ? 'High confidence' : confidence >= 64 ? 'Lean' : 'Watch only',
     marketData?.desk?.edgePct >= 7 ? 'Positive price edge' : confidence >= 74 ? 'Price required' : 'No blind bet',
     tour === 'ATP' ? 'Men more stable' : 'WTA volatility tax',
     volatility >= 65 ? 'High volatility' : 'Controlled volatility'
-  ]
+  ].filter(Boolean)
   if (modelSplit) tags.splice(4, 0, 'Model split - pass ML')
   return {
     id: matchId,
     eventId: match.eventId,
     tour,
     bestOf: tour === 'ATP' ? 5 : 3,
-    surface: 'Clay',
+    surface,
     title: `${a.name} vs ${b.name}`,
     start: timeLabel(match.date),
     startMinutes: startMinutes(match.date),
@@ -1706,6 +1734,7 @@ const buildSupplementGame = (match, rankings) => {
   const pickName = pickA ? a.name : b.name
   const opponentName = pickA ? b.name : a.name
   const confidence = Number(Math.max(modelPctA, modelPctB).toFixed(1))
+  const surface = match.surface || inferSurface(match.tournament, match.category, match.title)
   const rankA = getRanking(rankings, a.name)
   const rankB = getRanking(rankings, b.name)
   const players = [
@@ -1713,7 +1742,7 @@ const buildSupplementGame = (match, rankings) => {
       name: a.name,
       ranking: rankA,
       qualityName: null,
-      profile: formatProfile(rankA, null) || 'Robinhood market row; warehouse profile pending',
+      profile: `${surface} | ${formatProfile(rankA, null, surface) || 'Robinhood market row; warehouse profile pending'}`,
       modelPct: Number(modelPctA.toFixed(1)),
       weakness: {
         name: a.name,
@@ -1728,7 +1757,7 @@ const buildSupplementGame = (match, rankings) => {
       name: b.name,
       ranking: rankB,
       qualityName: null,
-      profile: formatProfile(rankB, null) || 'Robinhood market row; warehouse profile pending',
+      profile: `${surface} | ${formatProfile(rankB, null, surface) || 'Robinhood market row; warehouse profile pending'}`,
       modelPct: Number(modelPctB.toFixed(1)),
       weakness: {
         name: b.name,
@@ -1777,7 +1806,8 @@ const buildSupplementGame = (match, rankings) => {
     eventId: match.eventId,
     tour: 'ATP',
     bestOf: 3,
-    surface: 'Unknown',
+    surface,
+    surfaceSource: match.surfaceSource || 'Robinhood tournament surface inference',
     title: `${a.name} vs ${b.name}`,
     start: timeLabel(match.startIso),
     startMinutes: startMinutes(match.startIso),
@@ -1791,8 +1821,8 @@ const buildSupplementGame = (match, rankings) => {
     marketOnly: true,
     confidence,
     volatility,
-    tags: ['ATP Challenger', 'Prediction market', 'Market only', 'No model edge', confidence >= 70 ? 'Market favorite' : 'Coinflip price'],
-    reason: `${pickName} is only the current Robinhood market favorite over ${opponentName}; no warehouse service, break-point, or opponent-quality edge is joined yet.`,
+    tags: ['ATP Challenger', surface, 'Prediction market', 'Market only', 'No model edge', confidence >= 70 ? 'Market favorite' : 'Coinflip price'],
+    reason: `${pickName} is only the current Robinhood market favorite over ${opponentName}; ${surface} surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.`,
     totals: 'No posted sportsbook total captured for this Challenger market.',
     weaknessEdge,
     setWinProjections,
@@ -1901,7 +1931,7 @@ const main = async () => {
     "lean: market?.priceAction ? `Lean ${raw.pickName}; ${market.priceAction}` : `Lean ${raw.pickName}; pass if the market price removes payout.`,",
     "lean: raw.marketOnly ? `Market watch: ${raw.pickName}; do not treat as a model bet.` : market?.priceAction ? `Lean ${raw.pickName}; ${market.priceAction}` : `Lean ${raw.pickName}; pass if the market price removes payout.`,"
   )
-  moduleText = moduleText.replace("surface: 'Clay',", "surface: raw.surface || 'Clay',")
+  moduleText = moduleText.replace("surface: 'Clay',", "surface: raw.surface || 'Unknown',")
   moduleText = moduleText.replace(
     "projection: { projectedWinner: raw.pickName, projectedSetLine: raw.tour === 'ATP' ? '3-1/3-2 range' : '2-0/2-1 range', setWinProjections: raw.setWinProjections, totalGames: market?.total?.line ?? null, straightSetsProbability: raw.tour === 'ATP' ? null : Math.max(48, Math.min(68, raw.confidence - 8)), upsetRisk: 100 - raw.confidence, overview: raw.weaknessEdge?.gameFlow || raw.reason, fantasy: [] },",
     "projection: { projectedWinner: raw.pickName, projectedSetLine: raw.bestOf === 3 || raw.tour === 'WTA' ? '2-0/2-1 range' : '3-1/3-2 range', setWinProjections: raw.setWinProjections, totalGames: market?.total?.line ?? null, straightSetsProbability: raw.bestOf === 3 ? Math.max(48, Math.min(68, raw.confidence - 8)) : null, upsetRisk: 100 - raw.confidence, overview: raw.weaknessEdge?.gameFlow || raw.reason, fantasy: [] },"
@@ -1934,6 +1964,10 @@ const main = async () => {
   moduleText = moduleText.replace(
     "subtitle: 'Singles-only Roland Garros main-draw slate with weakness-edge, game-flow gates, and sportsbook/market lines where captured.'",
     "subtitle: 'Roland Garros senior singles plus Robinhood ATP Challenger prediction-market inventory; model edges only apply where warehouse context is joined.'"
+  )
+  moduleText = moduleText.replace(
+    "'${dayLabel} uses live rank, clay record, opponent-adjusted recent form, and warehouse service rows where joined.'",
+    "'${dayLabel} tags surface per match; clay record is full-strength only on clay and context-only on hard, grass, or unknown surfaces.'"
   )
   moduleText = moduleText.replace(
     "provider: 'FanDuel Sportsbook + Tennis warehouse model'",

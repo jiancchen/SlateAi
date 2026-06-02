@@ -1,17 +1,17 @@
 {
   "date": "2026-06-02",
-  "generatedAt": "2026-06-02T00:42:58.344116+00:00",
+  "generatedAt": "2026-06-02T02:18:47.270369+00:00",
   "source": "SQLite tennis warehouse",
   "matches": {
     "rh-atp-challenger-centurion-2-peliwo-vs-coulibaly-2026-06-02": {
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-centurion-2-peliwo-vs-coulibaly-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780387200,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Centurion 2",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Filip Peliwo",
@@ -57,55 +57,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780387200,
-        "endTs": 1780394400,
-        "durationMinutes": 120.0,
-        "hourlyRows": 2,
-        "avgTemperatureC": 17.05,
-        "maxTemperatureC": 17.3,
-        "minTemperatureC": 16.8,
-        "avgApparentTemperatureC": 16.05,
-        "maxApparentTemperatureC": 16.1,
-        "avgHumidityPct": 86.0,
-        "totalPrecipitationMm": 2.7,
-        "avgCloudCoverPct": 100.0,
-        "avgWindSpeedKmh": 17.55,
-        "maxWindGustKmh": 42.8,
-        "avgShortwaveRadiationWm2": 213.5,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.1,
-            "gustKmh": 42.8,
-            "humidityPct": 83.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.1,
-            "shortwaveWm2": 254.0,
-            "temperatureC": 17.3,
-            "timeLocal": "2026-06-02T10:00",
-            "timeUtc": "2026-06-02T08:00:00Z",
-            "windKmh": 18.3
-          },
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -117,7 +69,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -125,11 +77,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-centurion-2-rawat-vs-winter-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780387200,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Centurion 2",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Sidharth Rawat",
@@ -175,55 +127,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780387200,
-        "endTs": 1780394400,
-        "durationMinutes": 120.0,
-        "hourlyRows": 2,
-        "avgTemperatureC": 17.05,
-        "maxTemperatureC": 17.3,
-        "minTemperatureC": 16.8,
-        "avgApparentTemperatureC": 16.05,
-        "maxApparentTemperatureC": 16.1,
-        "avgHumidityPct": 86.0,
-        "totalPrecipitationMm": 2.7,
-        "avgCloudCoverPct": 100.0,
-        "avgWindSpeedKmh": 17.55,
-        "maxWindGustKmh": 42.8,
-        "avgShortwaveRadiationWm2": 213.5,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.1,
-            "gustKmh": 42.8,
-            "humidityPct": 83.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.1,
-            "shortwaveWm2": 254.0,
-            "temperatureC": 17.3,
-            "timeLocal": "2026-06-02T10:00",
-            "timeUtc": "2026-06-02T08:00:00Z",
-            "windKmh": 18.3
-          },
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -235,7 +139,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -243,11 +147,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-centurion-2-weightman-vs-badenhorst-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780387200,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Centurion 2",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Oscar Weightman",
@@ -293,55 +197,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780387200,
-        "endTs": 1780394400,
-        "durationMinutes": 120.0,
-        "hourlyRows": 2,
-        "avgTemperatureC": 17.05,
-        "maxTemperatureC": 17.3,
-        "minTemperatureC": 16.8,
-        "avgApparentTemperatureC": 16.05,
-        "maxApparentTemperatureC": 16.1,
-        "avgHumidityPct": 86.0,
-        "totalPrecipitationMm": 2.7,
-        "avgCloudCoverPct": 100.0,
-        "avgWindSpeedKmh": 17.55,
-        "maxWindGustKmh": 42.8,
-        "avgShortwaveRadiationWm2": 213.5,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.1,
-            "gustKmh": 42.8,
-            "humidityPct": 83.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.1,
-            "shortwaveWm2": 254.0,
-            "temperatureC": 17.3,
-            "timeLocal": "2026-06-02T10:00",
-            "timeUtc": "2026-06-02T08:00:00Z",
-            "windKmh": 18.3
-          },
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -353,7 +209,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -361,11 +217,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-perugia-bertola-vs-ratti-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780387200,
+      "tournament": "ATP Challenger Perugia",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Remy Bertola",
@@ -411,55 +267,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780387200,
-        "endTs": 1780394400,
-        "durationMinutes": 120.0,
-        "hourlyRows": 2,
-        "avgTemperatureC": 17.05,
-        "maxTemperatureC": 17.3,
-        "minTemperatureC": 16.8,
-        "avgApparentTemperatureC": 16.05,
-        "maxApparentTemperatureC": 16.1,
-        "avgHumidityPct": 86.0,
-        "totalPrecipitationMm": 2.7,
-        "avgCloudCoverPct": 100.0,
-        "avgWindSpeedKmh": 17.55,
-        "maxWindGustKmh": 42.8,
-        "avgShortwaveRadiationWm2": 213.5,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.1,
-            "gustKmh": 42.8,
-            "humidityPct": 83.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.1,
-            "shortwaveWm2": 254.0,
-            "temperatureC": 17.3,
-            "timeLocal": "2026-06-02T10:00",
-            "timeUtc": "2026-06-02T08:00:00Z",
-            "windKmh": 18.3
-          },
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -471,7 +279,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -479,11 +287,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-perugia-echargui-vs-tseng-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780387200,
+      "tournament": "ATP Challenger Perugia",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Chun Hsin Tseng",
@@ -529,55 +337,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780387200,
-        "endTs": 1780394400,
-        "durationMinutes": 120.0,
-        "hourlyRows": 2,
-        "avgTemperatureC": 17.05,
-        "maxTemperatureC": 17.3,
-        "minTemperatureC": 16.8,
-        "avgApparentTemperatureC": 16.05,
-        "maxApparentTemperatureC": 16.1,
-        "avgHumidityPct": 86.0,
-        "totalPrecipitationMm": 2.7,
-        "avgCloudCoverPct": 100.0,
-        "avgWindSpeedKmh": 17.55,
-        "maxWindGustKmh": 42.8,
-        "avgShortwaveRadiationWm2": 213.5,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.1,
-            "gustKmh": 42.8,
-            "humidityPct": 83.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.1,
-            "shortwaveWm2": 254.0,
-            "temperatureC": 17.3,
-            "timeLocal": "2026-06-02T10:00",
-            "timeUtc": "2026-06-02T08:00:00Z",
-            "windKmh": 18.3
-          },
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -589,7 +349,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -597,11 +357,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780387200,
+      "tournament": "ATP Challenger Perugia",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Henrique Rocha",
@@ -647,55 +407,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780387200,
-        "endTs": 1780394400,
-        "durationMinutes": 120.0,
-        "hourlyRows": 2,
-        "avgTemperatureC": 17.05,
-        "maxTemperatureC": 17.3,
-        "minTemperatureC": 16.8,
-        "avgApparentTemperatureC": 16.05,
-        "maxApparentTemperatureC": 16.1,
-        "avgHumidityPct": 86.0,
-        "totalPrecipitationMm": 2.7,
-        "avgCloudCoverPct": 100.0,
-        "avgWindSpeedKmh": 17.55,
-        "maxWindGustKmh": 42.8,
-        "avgShortwaveRadiationWm2": 213.5,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.1,
-            "gustKmh": 42.8,
-            "humidityPct": 83.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.1,
-            "shortwaveWm2": 254.0,
-            "temperatureC": 17.3,
-            "timeLocal": "2026-06-02T10:00",
-            "timeUtc": "2026-06-02T08:00:00Z",
-            "windKmh": 18.3
-          },
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -707,7 +419,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -715,11 +427,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-prostejov-baez-vs-gueymard-wayenburg-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780389000,
+      "tournament": "ATP Challenger Prostejov",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Sebastian Baez",
@@ -788,67 +500,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780389000,
-        "endTs": 1780396200,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 16.8,
-        "maxTemperatureC": 17.3,
-        "minTemperatureC": 16.3,
-        "avgApparentTemperatureC": 15.82,
-        "maxApparentTemperatureC": 16.1,
-        "avgHumidityPct": 88.0,
-        "totalPrecipitationMm": 4.2,
-        "avgCloudCoverPct": 100.0,
-        "avgWindSpeedKmh": 17.62,
-        "maxWindGustKmh": 42.8,
-        "avgShortwaveRadiationWm2": 189.0,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.1,
-            "gustKmh": 42.8,
-            "humidityPct": 83.0,
-            "overlapMinutes": 30.0,
-            "precipitationMm": 1.1,
-            "shortwaveWm2": 254.0,
-            "temperatureC": 17.3,
-            "timeLocal": "2026-06-02T10:00",
-            "timeUtc": "2026-06-02T08:00:00Z",
-            "windKmh": 18.3
-          },
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          },
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 30.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -860,7 +512,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -868,11 +520,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-prostejov-damas-vs-dzumhur-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780389000,
+      "tournament": "ATP Challenger Prostejov",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Miguel Damas",
@@ -941,67 +593,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780389000,
-        "endTs": 1780396200,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 16.8,
-        "maxTemperatureC": 17.3,
-        "minTemperatureC": 16.3,
-        "avgApparentTemperatureC": 15.82,
-        "maxApparentTemperatureC": 16.1,
-        "avgHumidityPct": 88.0,
-        "totalPrecipitationMm": 4.2,
-        "avgCloudCoverPct": 100.0,
-        "avgWindSpeedKmh": 17.62,
-        "maxWindGustKmh": 42.8,
-        "avgShortwaveRadiationWm2": 189.0,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.1,
-            "gustKmh": 42.8,
-            "humidityPct": 83.0,
-            "overlapMinutes": 30.0,
-            "precipitationMm": 1.1,
-            "shortwaveWm2": 254.0,
-            "temperatureC": 17.3,
-            "timeLocal": "2026-06-02T10:00",
-            "timeUtc": "2026-06-02T08:00:00Z",
-            "windKmh": 18.3
-          },
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          },
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 30.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -1013,7 +605,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -1021,11 +613,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:54",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780389000,
+      "tournament": "ATP Challenger Prostejov",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Luka Pavlovic",
@@ -1094,67 +686,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780389000,
-        "endTs": 1780396200,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 16.8,
-        "maxTemperatureC": 17.3,
-        "minTemperatureC": 16.3,
-        "avgApparentTemperatureC": 15.82,
-        "maxApparentTemperatureC": 16.1,
-        "avgHumidityPct": 88.0,
-        "totalPrecipitationMm": 4.2,
-        "avgCloudCoverPct": 100.0,
-        "avgWindSpeedKmh": 17.62,
-        "maxWindGustKmh": 42.8,
-        "avgShortwaveRadiationWm2": 189.0,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.1,
-            "gustKmh": 42.8,
-            "humidityPct": 83.0,
-            "overlapMinutes": 30.0,
-            "precipitationMm": 1.1,
-            "shortwaveWm2": 254.0,
-            "temperatureC": 17.3,
-            "timeLocal": "2026-06-02T10:00",
-            "timeUtc": "2026-06-02T08:00:00Z",
-            "windKmh": 18.3
-          },
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          },
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 30.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -1166,7 +698,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -1174,10 +706,10 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rg-w-mirra-andreeva-sorana-cirstea-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
+      "tournament": "Roland Garros Women",
+      "category": "Tennis",
       "startTimestamp": 1780390800,
       "players": [
         {
@@ -15246,11 +14778,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-centurion-2-dalmasso-vs-bittoun-kouzmine-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780391400,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Centurion 2",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Guillaume Dalmasso",
@@ -15296,67 +14828,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780391400,
-        "endTs": 1780398600,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 16.47,
-        "maxTemperatureC": 16.8,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 15.53,
-        "maxApparentTemperatureC": 16.0,
-        "avgHumidityPct": 90.17,
-        "totalPrecipitationMm": 5.6,
-        "avgCloudCoverPct": 99.25,
-        "avgWindSpeedKmh": 17.52,
-        "maxWindGustKmh": 41.4,
-        "avgShortwaveRadiationWm2": 159.58,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 50.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          },
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 10.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -15368,7 +14840,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -15376,11 +14848,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-centurion-2-montsi-vs-hemery-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780391400,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Centurion 2",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Khololwam Montsi",
@@ -15426,67 +14898,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780391400,
-        "endTs": 1780398600,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 16.47,
-        "maxTemperatureC": 16.8,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 15.53,
-        "maxApparentTemperatureC": 16.0,
-        "avgHumidityPct": 90.17,
-        "totalPrecipitationMm": 5.6,
-        "avgCloudCoverPct": 99.25,
-        "avgWindSpeedKmh": 17.52,
-        "maxWindGustKmh": 41.4,
-        "avgShortwaveRadiationWm2": 159.58,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 50.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          },
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 10.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -15498,7 +14910,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -15506,11 +14918,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780391400,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Centurion 2",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Akira Santillan",
@@ -15556,67 +14968,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780391400,
-        "endTs": 1780398600,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 16.47,
-        "maxTemperatureC": 16.8,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 15.53,
-        "maxApparentTemperatureC": 16.0,
-        "avgHumidityPct": 90.17,
-        "totalPrecipitationMm": 5.6,
-        "avgCloudCoverPct": 99.25,
-        "avgWindSpeedKmh": 17.52,
-        "maxWindGustKmh": 41.4,
-        "avgShortwaveRadiationWm2": 159.58,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 50.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          },
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 10.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -15628,7 +14980,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -15636,11 +14988,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780391400,
+      "tournament": "ATP Challenger Perugia",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "David Jorda Sanchis",
@@ -15686,67 +15038,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780391400,
-        "endTs": 1780398600,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 16.47,
-        "maxTemperatureC": 16.8,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 15.53,
-        "maxApparentTemperatureC": 16.0,
-        "avgHumidityPct": 90.17,
-        "totalPrecipitationMm": 5.6,
-        "avgCloudCoverPct": 99.25,
-        "avgWindSpeedKmh": 17.52,
-        "maxWindGustKmh": 41.4,
-        "avgShortwaveRadiationWm2": 159.58,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 50.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          },
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 10.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -15758,7 +15050,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -15766,11 +15058,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-perugia-royer-vs-alvarez-varona-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780391400,
+      "tournament": "ATP Challenger Perugia",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Valentin Royer",
@@ -15839,67 +15131,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780391400,
-        "endTs": 1780398600,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 16.47,
-        "maxTemperatureC": 16.8,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 15.53,
-        "maxApparentTemperatureC": 16.0,
-        "avgHumidityPct": 90.17,
-        "totalPrecipitationMm": 5.6,
-        "avgCloudCoverPct": 99.25,
-        "avgWindSpeedKmh": 17.52,
-        "maxWindGustKmh": 41.4,
-        "avgShortwaveRadiationWm2": 159.58,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 50.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          },
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 10.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -15911,7 +15143,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -15919,11 +15151,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-bad-rappenau-dellien-vs-schoenhaus-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780392600,
+      "tournament": "ATP Challenger Bad Rappenau",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Hugo Dellien",
@@ -15992,67 +15224,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780392600,
-        "endTs": 1780399800,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 16.3,
-        "maxTemperatureC": 16.8,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 15.38,
-        "maxApparentTemperatureC": 16.0,
-        "avgHumidityPct": 90.5,
-        "totalPrecipitationMm": 5.4,
-        "avgCloudCoverPct": 97.75,
-        "avgWindSpeedKmh": 17.18,
-        "maxWindGustKmh": 41.4,
-        "avgShortwaveRadiationWm2": 149.75,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 30.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          },
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 30.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -16064,7 +15236,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -16072,11 +15244,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780392600,
+      "tournament": "ATP Challenger Bad Rappenau",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Mika Petkovic",
@@ -16122,67 +15294,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780392600,
-        "endTs": 1780399800,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 16.3,
-        "maxTemperatureC": 16.8,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 15.38,
-        "maxApparentTemperatureC": 16.0,
-        "avgHumidityPct": 90.5,
-        "totalPrecipitationMm": 5.4,
-        "avgCloudCoverPct": 97.75,
-        "avgWindSpeedKmh": 17.18,
-        "maxWindGustKmh": 41.4,
-        "avgShortwaveRadiationWm2": 149.75,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 30.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          },
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 30.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -16194,7 +15306,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -16202,11 +15314,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-bad-rappenau-reis-da-silva-vs-barrena-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780392600,
+      "tournament": "ATP Challenger Bad Rappenau",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Joao Lucas Reis Da Silva",
@@ -16252,67 +15364,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780392600,
-        "endTs": 1780399800,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 16.3,
-        "maxTemperatureC": 16.8,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 15.38,
-        "maxApparentTemperatureC": 16.0,
-        "avgHumidityPct": 90.5,
-        "totalPrecipitationMm": 5.4,
-        "avgCloudCoverPct": 97.75,
-        "avgWindSpeedKmh": 17.18,
-        "maxWindGustKmh": 41.4,
-        "avgShortwaveRadiationWm2": 149.75,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 30.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          },
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 30.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -16324,7 +15376,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -16332,11 +15384,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-birmingham-bellucci-vs-bolt-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780392600,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Grass",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Mattia Bellucci",
@@ -16344,32 +15396,32 @@
           "stats": {},
           "expectedStats": {
             "name": "Mattia Bellucci",
-            "source": "SofaScore player page 2026 Clay stats",
-            "matches": 10.0,
+            "source": "SofaScore player page 2026 All surfaces stats",
+            "matches": 27.0,
             "note": "Pregame expected stats from SofaScore player-page surface filter; hold is derived from first-serve-in, first-serve-won, and second-serve-won.",
             "stats": {
-              "matches": 10.0,
-              "wins": 4.0,
-              "winPct": 40.0,
-              "holdPct": 73.9,
-              "firstServePct": 59.7,
-              "firstServeWonPct": 69.9,
-              "secondServePct": 86.9,
-              "secondServeWonPct": 45.7,
-              "aces": 3.5,
-              "avgAces": 3.5,
-              "doubleFaults": 3.8,
-              "avgDoubleFaults": 3.8,
-              "breakPointsSavedPct": 63.8,
-              "breakPointsConvertedPct": 38.0,
-              "breakPointsSaved": 37.0,
-              "breakPointsFaced": 58.0,
-              "breakPointsConverted": 19.0,
-              "breakPointsToConvert": 50.0,
-              "tiebreaksWonPct": 0.0
+              "matches": 27.0,
+              "wins": 12.0,
+              "winPct": 44.4,
+              "holdPct": 80.0,
+              "firstServePct": 62.1,
+              "firstServeWonPct": 72.0,
+              "secondServePct": 88.3,
+              "secondServeWonPct": 49.0,
+              "aces": 5.0,
+              "avgAces": 5.0,
+              "doubleFaults": 3.0,
+              "avgDoubleFaults": 3.0,
+              "breakPointsSavedPct": 62.5,
+              "breakPointsConvertedPct": 37.7,
+              "breakPointsSaved": 85.0,
+              "breakPointsFaced": 136.0,
+              "breakPointsConverted": 46.0,
+              "breakPointsToConvert": 122.0,
+              "tiebreaksWonPct": 42.9
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/bellucci-mattia/294337#tab:statistics",
-            "surface": "Clay"
+            "surface": "All surfaces"
           },
           "recentFormMetrics": null
         },
@@ -16405,67 +15457,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780392600,
-        "endTs": 1780399800,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 16.3,
-        "maxTemperatureC": 16.8,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 15.38,
-        "maxApparentTemperatureC": 16.0,
-        "avgHumidityPct": 90.5,
-        "totalPrecipitationMm": 5.4,
-        "avgCloudCoverPct": 97.75,
-        "avgWindSpeedKmh": 17.18,
-        "maxWindGustKmh": 41.4,
-        "avgShortwaveRadiationWm2": 149.75,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 30.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          },
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 30.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -16477,7 +15469,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -16485,11 +15477,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780392600,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Grass",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "James Duckworth",
@@ -16497,32 +15489,32 @@
           "stats": {},
           "expectedStats": {
             "name": "James Duckworth",
-            "source": "SofaScore player page 2026 Clay stats",
-            "matches": 15.0,
+            "source": "SofaScore player page 2026 All surfaces stats",
+            "matches": 27.0,
             "note": "Pregame expected stats from SofaScore player-page surface filter; hold is derived from first-serve-in, first-serve-won, and second-serve-won.",
             "stats": {
-              "matches": 15.0,
-              "wins": 11.0,
-              "winPct": 73.3,
-              "holdPct": 84.2,
-              "firstServePct": 55.0,
-              "firstServeWonPct": 75.3,
-              "secondServePct": 90.5,
-              "secondServeWonPct": 54.1,
-              "aces": 6.6,
-              "avgAces": 6.6,
-              "doubleFaults": 3.5,
-              "avgDoubleFaults": 3.5,
-              "breakPointsSavedPct": 78.1,
-              "breakPointsConvertedPct": 42.5,
-              "breakPointsSaved": 75.0,
-              "breakPointsFaced": 96.0,
-              "breakPointsConverted": 31.0,
-              "breakPointsToConvert": 73.0,
-              "tiebreaksWonPct": 57.1
+              "matches": 27.0,
+              "wins": 15.0,
+              "winPct": 55.6,
+              "holdPct": 82.5,
+              "firstServePct": 56.8,
+              "firstServeWonPct": 74.6,
+              "secondServePct": 90.4,
+              "secondServeWonPct": 51.8,
+              "aces": 7.9,
+              "avgAces": 7.9,
+              "doubleFaults": 3.4,
+              "avgDoubleFaults": 3.4,
+              "breakPointsSavedPct": 72.8,
+              "breakPointsConvertedPct": 34.1,
+              "breakPointsSaved": 131.0,
+              "breakPointsFaced": 180.0,
+              "breakPointsConverted": 46.0,
+              "breakPointsToConvert": 135.0,
+              "tiebreaksWonPct": 50.0
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/duckworth-james/39711#tab:statistics",
-            "surface": "Clay"
+            "surface": "All surfaces"
           },
           "recentFormMetrics": null
         },
@@ -16558,67 +15550,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780392600,
-        "endTs": 1780399800,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 16.3,
-        "maxTemperatureC": 16.8,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 15.38,
-        "maxApparentTemperatureC": 16.0,
-        "avgHumidityPct": 90.5,
-        "totalPrecipitationMm": 5.4,
-        "avgCloudCoverPct": 97.75,
-        "avgWindSpeedKmh": 17.18,
-        "maxWindGustKmh": 41.4,
-        "avgShortwaveRadiationWm2": 149.75,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 30.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          },
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 30.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -16630,7 +15562,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -16638,11 +15570,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-birmingham-lajal-vs-riedi-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780392600,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Grass",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Leandro Riedi",
@@ -16650,32 +15582,32 @@
           "stats": {},
           "expectedStats": {
             "name": "Leandro Riedi",
-            "source": "SofaScore player page 2026 Clay stats",
-            "matches": 7.0,
+            "source": "SofaScore player page 2026 All surfaces stats",
+            "matches": 29.0,
             "note": "Pregame expected stats from SofaScore player-page surface filter; hold is derived from first-serve-in, first-serve-won, and second-serve-won.",
             "stats": {
-              "matches": 7.0,
-              "wins": 4.0,
-              "winPct": 57.1,
-              "holdPct": 81.1,
-              "firstServePct": 63.3,
-              "firstServeWonPct": 68.1,
-              "secondServePct": 95.5,
-              "secondServeWonPct": 56.6,
-              "aces": 2.9,
-              "avgAces": 2.9,
-              "doubleFaults": 1.3,
-              "avgDoubleFaults": 1.3,
-              "breakPointsSavedPct": 54.5,
-              "breakPointsConvertedPct": 39.1,
-              "breakPointsSaved": 18.0,
-              "breakPointsFaced": 33.0,
-              "breakPointsConverted": 18.0,
-              "breakPointsToConvert": 46.0,
-              "tiebreaksWonPct": 33.3
+              "matches": 29.0,
+              "wins": 17.0,
+              "winPct": 58.6,
+              "holdPct": 81.7,
+              "firstServePct": 61.3,
+              "firstServeWonPct": 71.4,
+              "secondServePct": 93.3,
+              "secondServeWonPct": 52.9,
+              "aces": 5.0,
+              "avgAces": 5.0,
+              "doubleFaults": 1.8,
+              "avgDoubleFaults": 1.8,
+              "breakPointsSavedPct": 66.4,
+              "breakPointsConvertedPct": 33.3,
+              "breakPointsSaved": 93.0,
+              "breakPointsFaced": 140.0,
+              "breakPointsConverted": 55.0,
+              "breakPointsToConvert": 165.0,
+              "tiebreaksWonPct": 50.0
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/riedi-leandro/321788#tab:statistics",
-            "surface": "Clay"
+            "surface": "All surfaces"
           },
           "recentFormMetrics": null
         },
@@ -16711,67 +15643,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780392600,
-        "endTs": 1780399800,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 16.3,
-        "maxTemperatureC": 16.8,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 15.38,
-        "maxApparentTemperatureC": 16.0,
-        "avgHumidityPct": 90.5,
-        "totalPrecipitationMm": 5.4,
-        "avgCloudCoverPct": 97.75,
-        "avgWindSpeedKmh": 17.18,
-        "maxWindGustKmh": 41.4,
-        "avgShortwaveRadiationWm2": 149.75,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 30.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          },
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 30.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -16783,7 +15655,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -16791,11 +15663,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-perugia-cretu-vs-vasami-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780392600,
+      "tournament": "ATP Challenger Perugia",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Cezar Cretu (b. 2001)",
@@ -16841,67 +15713,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780392600,
-        "endTs": 1780399800,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 16.3,
-        "maxTemperatureC": 16.8,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 15.38,
-        "maxApparentTemperatureC": 16.0,
-        "avgHumidityPct": 90.5,
-        "totalPrecipitationMm": 5.4,
-        "avgCloudCoverPct": 97.75,
-        "avgWindSpeedKmh": 17.18,
-        "maxWindGustKmh": 41.4,
-        "avgShortwaveRadiationWm2": 149.75,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 30.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          },
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 30.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -16913,7 +15725,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -16921,11 +15733,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-prostejov-daniel-vs-forejtek-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:54",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780393200,
+      "tournament": "ATP Challenger Prostejov",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Taro Daniel",
@@ -16971,67 +15783,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780393200,
-        "endTs": 1780400400,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 16.22,
-        "maxTemperatureC": 16.8,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 15.3,
-        "maxApparentTemperatureC": 16.0,
-        "avgHumidityPct": 90.67,
-        "totalPrecipitationMm": 5.3,
-        "avgCloudCoverPct": 97.0,
-        "avgWindSpeedKmh": 17.0,
-        "maxWindGustKmh": 41.4,
-        "avgShortwaveRadiationWm2": 144.83,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 20.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          },
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 40.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -17043,7 +15795,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -17051,11 +15803,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-prostejov-martin-vs-kopriva-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:54",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780393200,
+      "tournament": "ATP Challenger Prostejov",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Vit Kopriva",
@@ -17124,67 +15876,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780393200,
-        "endTs": 1780400400,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 16.22,
-        "maxTemperatureC": 16.8,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 15.3,
-        "maxApparentTemperatureC": 16.0,
-        "avgHumidityPct": 90.67,
-        "totalPrecipitationMm": 5.3,
-        "avgCloudCoverPct": 97.0,
-        "avgWindSpeedKmh": 17.0,
-        "maxWindGustKmh": 41.4,
-        "avgShortwaveRadiationWm2": 144.83,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 20.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          },
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 40.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -17196,7 +15888,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -17204,11 +15896,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-prostejov-olivieri-vs-krumich-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:54",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780393200,
+      "tournament": "ATP Challenger Prostejov",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Genaro Alberto Olivieri",
@@ -17254,67 +15946,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780393200,
-        "endTs": 1780400400,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 16.22,
-        "maxTemperatureC": 16.8,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 15.3,
-        "maxApparentTemperatureC": 16.0,
-        "avgHumidityPct": 90.67,
-        "totalPrecipitationMm": 5.3,
-        "avgCloudCoverPct": 97.0,
-        "avgWindSpeedKmh": 17.0,
-        "maxWindGustKmh": 41.4,
-        "avgShortwaveRadiationWm2": 144.83,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.0,
-            "gustKmh": 41.4,
-            "humidityPct": 89.0,
-            "overlapMinutes": 20.0,
-            "precipitationMm": 1.6,
-            "shortwaveWm2": 173.0,
-            "temperatureC": 16.8,
-            "timeLocal": "2026-06-02T11:00",
-            "timeUtc": "2026-06-02T09:00:00Z",
-            "windKmh": 16.8
-          },
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 40.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -17326,7 +15958,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -17334,11 +15966,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-centurion-2-kimhi-vs-henning-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780395600,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Centurion 2",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Orel Kimhi",
@@ -17384,67 +16016,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780395600,
-        "endTs": 1780402800,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 16.58,
-        "maxTemperatureC": 19.5,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 15.93,
-        "maxApparentTemperatureC": 19.9,
-        "avgHumidityPct": 87.33,
-        "totalPrecipitationMm": 3.767,
-        "avgCloudCoverPct": 94.67,
-        "avgWindSpeedKmh": 16.05,
-        "maxWindGustKmh": 42.1,
-        "avgShortwaveRadiationWm2": 242.67,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 40.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          },
-          {
-            "apparentTemperatureC": 19.9,
-            "gustKmh": 42.1,
-            "humidityPct": 69.0,
-            "overlapMinutes": 20.0,
-            "precipitationMm": 0.1,
-            "shortwaveWm2": 802.0,
-            "temperatureC": 19.5,
-            "timeLocal": "2026-06-02T14:00",
-            "timeUtc": "2026-06-02T12:00:00Z",
-            "windKmh": 15.0
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -17456,7 +16028,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -17464,11 +16036,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-centurion-2-strombachs-vs-hurrion-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780395600,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Centurion 2",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Robert Strombachs",
@@ -17514,67 +16086,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780395600,
-        "endTs": 1780402800,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 16.58,
-        "maxTemperatureC": 19.5,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 15.93,
-        "maxApparentTemperatureC": 19.9,
-        "avgHumidityPct": 87.33,
-        "totalPrecipitationMm": 3.767,
-        "avgCloudCoverPct": 94.67,
-        "avgWindSpeedKmh": 16.05,
-        "maxWindGustKmh": 42.1,
-        "avgShortwaveRadiationWm2": 242.67,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 40.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          },
-          {
-            "apparentTemperatureC": 19.9,
-            "gustKmh": 42.1,
-            "humidityPct": 69.0,
-            "overlapMinutes": 20.0,
-            "precipitationMm": 0.1,
-            "shortwaveWm2": 802.0,
-            "temperatureC": 19.5,
-            "timeLocal": "2026-06-02T14:00",
-            "timeUtc": "2026-06-02T12:00:00Z",
-            "windKmh": 15.0
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -17586,7 +16098,77 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "rh-atp-challenger-perugia-basile-vs-travaglia-2026-06-02": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-perugia-basile-vs-travaglia-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Clay",
+      "tournament": "ATP Challenger Perugia",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Pierluigi Basile",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Stefano Travaglia",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Pierluigi Basile",
+        "awayName": "Stefano Travaglia",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -17594,11 +16176,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-perugia-carballes-baena-vs-carboni-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780395600,
+      "tournament": "ATP Challenger Perugia",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Lorenzo Carboni",
@@ -17667,67 +16249,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780395600,
-        "endTs": 1780402800,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 16.58,
-        "maxTemperatureC": 19.5,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 15.93,
-        "maxApparentTemperatureC": 19.9,
-        "avgHumidityPct": 87.33,
-        "totalPrecipitationMm": 3.767,
-        "avgCloudCoverPct": 94.67,
-        "avgWindSpeedKmh": 16.05,
-        "maxWindGustKmh": 42.1,
-        "avgShortwaveRadiationWm2": 242.67,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 40.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          },
-          {
-            "apparentTemperatureC": 19.9,
-            "gustKmh": 42.1,
-            "humidityPct": 69.0,
-            "overlapMinutes": 20.0,
-            "precipitationMm": 0.1,
-            "shortwaveWm2": 802.0,
-            "temperatureC": 19.5,
-            "timeLocal": "2026-06-02T14:00",
-            "timeUtc": "2026-06-02T12:00:00Z",
-            "windKmh": 15.0
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -17739,7 +16261,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -17747,10 +16269,10 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rg-w-elina-svitolina-marta-kostyuk-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
+      "tournament": "Roland Garros Women",
+      "category": "Tennis",
       "startTimestamp": 1780396200,
       "players": [
         {
@@ -32736,11 +31258,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-bad-rappenau-choinski-vs-gentzsch-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780396800,
+      "tournament": "ATP Challenger Bad Rappenau",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Jan Choinski",
@@ -32809,67 +31331,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780396800,
-        "endTs": 1780404000,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 17.12,
-        "maxTemperatureC": 19.5,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 16.72,
-        "maxApparentTemperatureC": 19.9,
-        "avgHumidityPct": 83.67,
-        "totalPrecipitationMm": 2.433,
-        "avgCloudCoverPct": 93.83,
-        "avgWindSpeedKmh": 15.45,
-        "maxWindGustKmh": 42.1,
-        "avgShortwaveRadiationWm2": 350.33,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 20.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          },
-          {
-            "apparentTemperatureC": 19.9,
-            "gustKmh": 42.1,
-            "humidityPct": 69.0,
-            "overlapMinutes": 40.0,
-            "precipitationMm": 0.1,
-            "shortwaveWm2": 802.0,
-            "temperatureC": 19.5,
-            "timeLocal": "2026-06-02T14:00",
-            "timeUtc": "2026-06-02T12:00:00Z",
-            "windKmh": 15.0
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -32881,7 +31343,77 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "rh-atp-challenger-bad-rappenau-mikrut-vs-marti-pujolras-2026-06-02": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-bad-rappenau-mikrut-vs-marti-pujolras-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Clay",
+      "tournament": "ATP Challenger Bad Rappenau",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Luka Mikrut",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Alex Marti Pujolras",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Luka Mikrut",
+        "awayName": "Alex Marti Pujolras",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -32889,11 +31421,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-birmingham-schoolkate-vs-fery-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780396800,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Grass",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Tristan Schoolkate",
@@ -32939,67 +31471,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780396800,
-        "endTs": 1780404000,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 17.12,
-        "maxTemperatureC": 19.5,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 16.72,
-        "maxApparentTemperatureC": 19.9,
-        "avgHumidityPct": 83.67,
-        "totalPrecipitationMm": 2.433,
-        "avgCloudCoverPct": 93.83,
-        "avgWindSpeedKmh": 15.45,
-        "maxWindGustKmh": 42.1,
-        "avgShortwaveRadiationWm2": 350.33,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 20.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          },
-          {
-            "apparentTemperatureC": 19.9,
-            "gustKmh": 42.1,
-            "humidityPct": 69.0,
-            "overlapMinutes": 40.0,
-            "precipitationMm": 0.1,
-            "shortwaveWm2": 802.0,
-            "temperatureC": 19.5,
-            "timeLocal": "2026-06-02T14:00",
-            "timeUtc": "2026-06-02T12:00:00Z",
-            "windKmh": 15.0
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -33011,7 +31483,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -33019,11 +31491,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-birmingham-watt-vs-wendelken-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780396800,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Grass",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "James Watt",
@@ -33069,67 +31541,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780396800,
-        "endTs": 1780404000,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 17.12,
-        "maxTemperatureC": 19.5,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 16.72,
-        "maxApparentTemperatureC": 19.9,
-        "avgHumidityPct": 83.67,
-        "totalPrecipitationMm": 2.433,
-        "avgCloudCoverPct": 93.83,
-        "avgWindSpeedKmh": 15.45,
-        "maxWindGustKmh": 42.1,
-        "avgShortwaveRadiationWm2": 350.33,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 20.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          },
-          {
-            "apparentTemperatureC": 19.9,
-            "gustKmh": 42.1,
-            "humidityPct": 69.0,
-            "overlapMinutes": 40.0,
-            "precipitationMm": 0.1,
-            "shortwaveWm2": 802.0,
-            "temperatureC": 19.5,
-            "timeLocal": "2026-06-02T14:00",
-            "timeUtc": "2026-06-02T12:00:00Z",
-            "windKmh": 15.0
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -33141,7 +31553,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -33149,11 +31561,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-prostejov-durasovic-vs-gombos-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:54",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780397400,
+      "tournament": "ATP Challenger Prostejov",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Viktor Durasovic",
@@ -33199,67 +31611,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780397400,
-        "endTs": 1780404600,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 17.38,
-        "maxTemperatureC": 19.5,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 17.11,
-        "maxApparentTemperatureC": 19.9,
-        "avgHumidityPct": 81.83,
-        "totalPrecipitationMm": 1.767,
-        "avgCloudCoverPct": 93.42,
-        "avgWindSpeedKmh": 15.15,
-        "maxWindGustKmh": 42.1,
-        "avgShortwaveRadiationWm2": 404.17,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 10.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          },
-          {
-            "apparentTemperatureC": 19.9,
-            "gustKmh": 42.1,
-            "humidityPct": 69.0,
-            "overlapMinutes": 50.0,
-            "precipitationMm": 0.1,
-            "shortwaveWm2": 802.0,
-            "temperatureC": 19.5,
-            "timeLocal": "2026-06-02T14:00",
-            "timeUtc": "2026-06-02T12:00:00Z",
-            "windKmh": 15.0
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -33271,7 +31623,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -33279,11 +31631,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-prostejov-mrva-vs-svrcina-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:54",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780397400,
+      "tournament": "ATP Challenger Prostejov",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Maxim Mrva",
@@ -33352,67 +31704,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780397400,
-        "endTs": 1780404600,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 17.38,
-        "maxTemperatureC": 19.5,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 17.11,
-        "maxApparentTemperatureC": 19.9,
-        "avgHumidityPct": 81.83,
-        "totalPrecipitationMm": 1.767,
-        "avgCloudCoverPct": 93.42,
-        "avgWindSpeedKmh": 15.15,
-        "maxWindGustKmh": 42.1,
-        "avgShortwaveRadiationWm2": 404.17,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 10.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          },
-          {
-            "apparentTemperatureC": 19.9,
-            "gustKmh": 42.1,
-            "humidityPct": 69.0,
-            "overlapMinutes": 50.0,
-            "precipitationMm": 0.1,
-            "shortwaveWm2": 802.0,
-            "temperatureC": 19.5,
-            "timeLocal": "2026-06-02T14:00",
-            "timeUtc": "2026-06-02T12:00:00Z",
-            "windKmh": 15.0
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -33424,7 +31716,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -33432,11 +31724,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-prostejov-sachko-vs-kumstat-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:54",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780397400,
+      "tournament": "ATP Challenger Prostejov",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Vitaliy Sachko",
@@ -33482,67 +31774,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780397400,
-        "endTs": 1780404600,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 17.38,
-        "maxTemperatureC": 19.5,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 17.11,
-        "maxApparentTemperatureC": 19.9,
-        "avgHumidityPct": 81.83,
-        "totalPrecipitationMm": 1.767,
-        "avgCloudCoverPct": 93.42,
-        "avgWindSpeedKmh": 15.15,
-        "maxWindGustKmh": 42.1,
-        "avgShortwaveRadiationWm2": 404.17,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 15.2,
-            "gustKmh": 41.4,
-            "humidityPct": 91.0,
-            "overlapMinutes": 10.0,
-            "precipitationMm": 4.1,
-            "shortwaveWm2": 156.0,
-            "temperatureC": 16.3,
-            "timeLocal": "2026-06-02T12:00",
-            "timeUtc": "2026-06-02T10:00:00Z",
-            "windKmh": 18.6
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          },
-          {
-            "apparentTemperatureC": 19.9,
-            "gustKmh": 42.1,
-            "humidityPct": 69.0,
-            "overlapMinutes": 50.0,
-            "precipitationMm": 0.1,
-            "shortwaveWm2": 802.0,
-            "temperatureC": 19.5,
-            "timeLocal": "2026-06-02T14:00",
-            "timeUtc": "2026-06-02T12:00:00Z",
-            "windKmh": 15.0
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -33554,7 +31786,77 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "rh-atp-challenger-bad-rappenau-squire-vs-polmans-2026-06-02": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-bad-rappenau-squire-vs-polmans-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Clay",
+      "tournament": "ATP Challenger Bad Rappenau",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Henri Squire",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Marc Polmans",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Henri Squire",
+        "awayName": "Marc Polmans",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -33562,11 +31864,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-centurion-2-bertrand-vs-zahraj-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780399800,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Centurion 2",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Robin Bertrand",
@@ -33612,67 +31914,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780399800,
-        "endTs": 1780407000,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 18.48,
-        "maxTemperatureC": 19.5,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 18.1,
-        "maxApparentTemperatureC": 19.9,
-        "avgHumidityPct": 72.5,
-        "totalPrecipitationMm": 0.65,
-        "avgCloudCoverPct": 91.0,
-        "avgWindSpeedKmh": 16.0,
-        "maxWindGustKmh": 45.4,
-        "avgShortwaveRadiationWm2": 605.25,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 30.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          },
-          {
-            "apparentTemperatureC": 19.9,
-            "gustKmh": 42.1,
-            "humidityPct": 69.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 0.1,
-            "shortwaveWm2": 802.0,
-            "temperatureC": 19.5,
-            "timeLocal": "2026-06-02T14:00",
-            "timeUtc": "2026-06-02T12:00:00Z",
-            "windKmh": 15.0
-          },
-          {
-            "apparentTemperatureC": 17.5,
-            "gustKmh": 45.4,
-            "humidityPct": 61.0,
-            "overlapMinutes": 30.0,
-            "precipitationMm": 0.1,
-            "shortwaveWm2": 703.0,
-            "temperatureC": 19.1,
-            "timeLocal": "2026-06-02T15:00",
-            "timeUtc": "2026-06-02T13:00:00Z",
-            "windKmh": 19.3
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -33684,7 +31926,357 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "rh-atp-challenger-centurion-2-mukund-vs-hussey-2026-06-02": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-centurion-2-mukund-vs-hussey-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Centurion 2",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Giles Hussey",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Sasikumar Mukund",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Giles Hussey",
+        "awayName": "Sasikumar Mukund",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "rh-atp-challenger-perugia-bueno-vs-lajovic-2026-06-02": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-perugia-bueno-vs-lajovic-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Clay",
+      "tournament": "ATP Challenger Perugia",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Dusan Lajovic",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Gonzalo Bueno",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Dusan Lajovic",
+        "awayName": "Gonzalo Bueno",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "rh-atp-challenger-bad-rappenau-galan-vs-rehberg-2026-06-02": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-bad-rappenau-galan-vs-rehberg-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Clay",
+      "tournament": "ATP Challenger Bad Rappenau",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Daniel Elahi Galan",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Max Hans Rehberg",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Daniel Elahi Galan",
+        "awayName": "Max Hans Rehberg",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "rh-atp-challenger-bad-rappenau-moeller-vs-onclin-2026-06-02": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-bad-rappenau-moeller-vs-onclin-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Clay",
+      "tournament": "ATP Challenger Bad Rappenau",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Marvin Moeller",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Gauthier Onclin",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Marvin Moeller",
+        "awayName": "Gauthier Onclin",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "rh-atp-challenger-birmingham-chidekh-vs-romano-2026-06-02": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-birmingham-chidekh-vs-romano-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Grass",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Clement Chidekh",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Filippo Romano",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Clement Chidekh",
+        "awayName": "Filippo Romano",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -33692,11 +32284,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-birmingham-wong-vs-tarvet-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780401000,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Grass",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Coleman Wong",
@@ -33704,31 +32296,32 @@
           "stats": {},
           "expectedStats": {
             "name": "Coleman Wong",
-            "source": "SofaScore player page 2026 Clay stats",
-            "matches": 6.0,
+            "source": "SofaScore player page 2026 All surfaces stats",
+            "matches": 29.0,
             "note": "Pregame expected stats from SofaScore player-page surface filter; hold is derived from first-serve-in, first-serve-won, and second-serve-won.",
             "stats": {
-              "matches": 6.0,
-              "wins": 2.0,
-              "winPct": 33.3,
-              "holdPct": 68.3,
-              "firstServePct": 63.7,
-              "firstServeWonPct": 62.9,
-              "secondServePct": 92.9,
-              "secondServeWonPct": 48.2,
-              "aces": 7.0,
-              "avgAces": 7.0,
-              "doubleFaults": 2.3,
-              "avgDoubleFaults": 2.3,
-              "breakPointsSavedPct": 68.4,
-              "breakPointsConvertedPct": 33.3,
-              "breakPointsSaved": 39.0,
-              "breakPointsFaced": 57.0,
-              "breakPointsConverted": 11.0,
-              "breakPointsToConvert": 33.0
+              "matches": 29.0,
+              "wins": 14.0,
+              "winPct": 48.3,
+              "holdPct": 81.6,
+              "firstServePct": 64.0,
+              "firstServeWonPct": 71.3,
+              "secondServePct": 93.9,
+              "secondServeWonPct": 51.6,
+              "aces": 9.8,
+              "avgAces": 9.8,
+              "doubleFaults": 1.7,
+              "avgDoubleFaults": 1.7,
+              "breakPointsSavedPct": 65.6,
+              "breakPointsConvertedPct": 32.1,
+              "breakPointsSaved": 105.0,
+              "breakPointsFaced": 160.0,
+              "breakPointsConverted": 51.0,
+              "breakPointsToConvert": 159.0,
+              "tiebreaksWonPct": 80.0
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/wong-chak-lam-coleman/289106#tab:statistics",
-            "surface": "Clay"
+            "surface": "All surfaces"
           },
           "recentFormMetrics": null
         },
@@ -33764,67 +32357,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780401000,
-        "endTs": 1780408200,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 19.02,
-        "maxTemperatureC": 19.5,
-        "minTemperatureC": 15.8,
-        "avgApparentTemperatureC": 18.5,
-        "maxApparentTemperatureC": 19.9,
-        "avgHumidityPct": 67.5,
-        "totalPrecipitationMm": 0.35,
-        "avgCloudCoverPct": 89.67,
-        "avgWindSpeedKmh": 16.77,
-        "maxWindGustKmh": 45.4,
-        "avgShortwaveRadiationWm2": 703.42,
-        "hotMatch": false,
-        "humidMatch": false,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 37.8,
-            "humidityPct": 91.0,
-            "overlapMinutes": 10.0,
-            "precipitationMm": 1.0,
-            "shortwaveWm2": 114.0,
-            "temperatureC": 15.8,
-            "timeLocal": "2026-06-02T13:00",
-            "timeUtc": "2026-06-02T11:00:00Z",
-            "windKmh": 14.7
-          },
-          {
-            "apparentTemperatureC": 19.9,
-            "gustKmh": 42.1,
-            "humidityPct": 69.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 0.1,
-            "shortwaveWm2": 802.0,
-            "temperatureC": 19.5,
-            "timeLocal": "2026-06-02T14:00",
-            "timeUtc": "2026-06-02T12:00:00Z",
-            "windKmh": 15.0
-          },
-          {
-            "apparentTemperatureC": 17.5,
-            "gustKmh": 45.4,
-            "humidityPct": 61.0,
-            "overlapMinutes": 50.0,
-            "precipitationMm": 0.1,
-            "shortwaveWm2": 703.0,
-            "temperatureC": 19.1,
-            "timeLocal": "2026-06-02T15:00",
-            "timeUtc": "2026-06-02T13:00:00Z",
-            "windKmh": 19.3
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -33832,11 +32365,11 @@
         "allStatRows": 0,
         "playerStatRows": 0,
         "liveStatRows": 0,
-        "expectedStatRows": 18,
+        "expectedStatRows": 19,
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -33844,10 +32377,10 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rg-m-rafael-jodar-alexander-zverev-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "ATP",
+      "tournament": "Roland Garros Men",
+      "category": "Tennis",
       "startTimestamp": 1780401600,
       "players": [
         {
@@ -50159,15 +48692,365 @@
         "isPregame": true
       }
     },
+    "rh-atp-challenger-birmingham-fearnley-vs-hijikata-2026-06-02": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-birmingham-fearnley-vs-hijikata-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Grass",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Jacob Fearnley",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Rinky Hijikata",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Jacob Fearnley",
+        "awayName": "Rinky Hijikata",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "rh-atp-challenger-birmingham-mcdonald-vs-budkov-kjaer-2026-06-02": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-birmingham-mcdonald-vs-budkov-kjaer-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Grass",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Mackenzie McDonald",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Nicolai Budkov Kjaer",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Mackenzie McDonald",
+        "awayName": "Nicolai Budkov Kjaer",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "rh-atp-challenger-prostejov-bautista-agut-vs-barton-2026-06-02": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-prostejov-bautista-agut-vs-barton-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Clay",
+      "tournament": "ATP Challenger Prostejov",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Hynek Barton",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Roberto Bautista Agut",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Hynek Barton",
+        "awayName": "Roberto Bautista Agut",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "rh-atp-challenger-prostejov-karol-vs-caniato-2026-06-02": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-prostejov-karol-vs-caniato-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Clay",
+      "tournament": "ATP Challenger Prostejov",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Carlo Alberto Caniato",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Milos Karol",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Carlo Alberto Caniato",
+        "awayName": "Milos Karol",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "rh-atp-challenger-prostejov-molcan-vs-piros-2026-06-02": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-prostejov-molcan-vs-piros-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Clay",
+      "tournament": "ATP Challenger Prostejov",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Zsombor Piros",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Alex Molcan",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Zsombor Piros",
+        "awayName": "Alex Molcan",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
     "rh-atp-challenger-centurion-2-duran-vs-napolitano-2026-06-02": {
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-centurion-2-duran-vs-napolitano-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780404000,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Centurion 2",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Tuncay Duran",
@@ -50213,67 +49096,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780404000,
-        "endTs": 1780411200,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 18.87,
-        "maxTemperatureC": 19.5,
-        "minTemperatureC": 18.2,
-        "avgApparentTemperatureC": 17.47,
-        "maxApparentTemperatureC": 19.9,
-        "avgHumidityPct": 63.0,
-        "totalPrecipitationMm": 0.533,
-        "avgCloudCoverPct": 74.67,
-        "avgWindSpeedKmh": 17.55,
-        "maxWindGustKmh": 50.8,
-        "avgShortwaveRadiationWm2": 637.17,
-        "hotMatch": false,
-        "humidMatch": false,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 19.9,
-            "gustKmh": 42.1,
-            "humidityPct": 69.0,
-            "overlapMinutes": 20.0,
-            "precipitationMm": 0.1,
-            "shortwaveWm2": 802.0,
-            "temperatureC": 19.5,
-            "timeLocal": "2026-06-02T14:00",
-            "timeUtc": "2026-06-02T12:00:00Z",
-            "windKmh": 15.0
-          },
-          {
-            "apparentTemperatureC": 17.5,
-            "gustKmh": 45.4,
-            "humidityPct": 61.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 0.1,
-            "shortwaveWm2": 703.0,
-            "temperatureC": 19.1,
-            "timeLocal": "2026-06-02T15:00",
-            "timeUtc": "2026-06-02T13:00:00Z",
-            "windKmh": 19.3
-          },
-          {
-            "apparentTemperatureC": 16.2,
-            "gustKmh": 50.8,
-            "humidityPct": 63.0,
-            "overlapMinutes": 40.0,
-            "precipitationMm": 0.6,
-            "shortwaveWm2": 456.0,
-            "temperatureC": 18.2,
-            "timeLocal": "2026-06-02T16:00",
-            "timeUtc": "2026-06-02T14:00:00Z",
-            "windKmh": 16.2
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -50285,7 +49108,147 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "rh-atp-challenger-centurion-2-palan-vs-beckley-2026-06-02": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-centurion-2-palan-vs-beckley-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Centurion 2",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Dominik Palan",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Alec Beckley",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Dominik Palan",
+        "awayName": "Alec Beckley",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "rh-atp-challenger-birmingham-blanchet-vs-gill-2026-06-02": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-birmingham-blanchet-vs-gill-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Grass",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Ugo Blanchet",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Felix Gill",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Ugo Blanchet",
+        "awayName": "Felix Gill",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -50293,11 +49256,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-birmingham-pinnington-jones-vs-vukic-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780405800,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Grass",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Jack Pinnington Jones",
@@ -50317,32 +49280,32 @@
           "stats": {},
           "expectedStats": {
             "name": "Aleksandar Vukic",
-            "source": "SofaScore player page 2026 Clay stats",
-            "matches": 10.0,
+            "source": "SofaScore player page 2026 All surfaces stats",
+            "matches": 25.0,
             "note": "Pregame expected stats from SofaScore player-page surface filter; hold is derived from first-serve-in, first-serve-won, and second-serve-won.",
             "stats": {
-              "matches": 10.0,
-              "wins": 2.0,
-              "winPct": 20.0,
-              "holdPct": 67.0,
-              "firstServePct": 58.9,
-              "firstServeWonPct": 64.1,
-              "secondServePct": 93.0,
-              "secondServeWonPct": 46.8,
-              "aces": 4.9,
-              "avgAces": 4.9,
-              "doubleFaults": 2.3,
-              "avgDoubleFaults": 2.3,
-              "breakPointsSavedPct": 61.0,
-              "breakPointsConvertedPct": 39.1,
-              "breakPointsSaved": 47.0,
-              "breakPointsFaced": 77.0,
-              "breakPointsConverted": 18.0,
-              "breakPointsToConvert": 46.0,
-              "tiebreaksWonPct": 33.3
+              "matches": 25.0,
+              "wins": 8.0,
+              "winPct": 32.0,
+              "holdPct": 73.5,
+              "firstServePct": 58.6,
+              "firstServeWonPct": 67.2,
+              "secondServePct": 93.2,
+              "secondServeWonPct": 49.7,
+              "aces": 5.8,
+              "avgAces": 5.8,
+              "doubleFaults": 2.1,
+              "avgDoubleFaults": 2.1,
+              "breakPointsSavedPct": 58.4,
+              "breakPointsConvertedPct": 37.6,
+              "breakPointsSaved": 90.0,
+              "breakPointsFaced": 154.0,
+              "breakPointsConverted": 35.0,
+              "breakPointsToConvert": 93.0,
+              "tiebreaksWonPct": 50.0
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/vukic-aleksandar/124656#tab:statistics",
-            "surface": "Clay"
+            "surface": "All surfaces"
           },
           "recentFormMetrics": null
         }
@@ -50366,67 +49329,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780405800,
-        "endTs": 1780413000,
-        "durationMinutes": 120.0,
-        "hourlyRows": 3,
-        "avgTemperatureC": 18.43,
-        "maxTemperatureC": 19.1,
-        "minTemperatureC": 16.5,
-        "avgApparentTemperatureC": 16.65,
-        "maxApparentTemperatureC": 17.5,
-        "avgHumidityPct": 63.58,
-        "totalPrecipitationMm": 1.083,
-        "avgCloudCoverPct": 68.75,
-        "avgWindSpeedKmh": 17.69,
-        "maxWindGustKmh": 50.8,
-        "avgShortwaveRadiationWm2": 574.08,
-        "hotMatch": false,
-        "humidMatch": false,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 17.5,
-            "gustKmh": 45.4,
-            "humidityPct": 61.0,
-            "overlapMinutes": 50.0,
-            "precipitationMm": 0.1,
-            "shortwaveWm2": 703.0,
-            "temperatureC": 19.1,
-            "timeLocal": "2026-06-02T15:00",
-            "timeUtc": "2026-06-02T13:00:00Z",
-            "windKmh": 19.3
-          },
-          {
-            "apparentTemperatureC": 16.2,
-            "gustKmh": 50.8,
-            "humidityPct": 63.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 0.6,
-            "shortwaveWm2": 456.0,
-            "temperatureC": 18.2,
-            "timeLocal": "2026-06-02T16:00",
-            "timeUtc": "2026-06-02T14:00:00Z",
-            "windKmh": 16.2
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 50.0,
-            "humidityPct": 80.0,
-            "overlapMinutes": 10.0,
-            "precipitationMm": 2.4,
-            "shortwaveWm2": 638.0,
-            "temperatureC": 16.5,
-            "timeLocal": "2026-06-02T17:00",
-            "timeUtc": "2026-06-02T15:00:00Z",
-            "windKmh": 18.6
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -50438,7 +49341,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -50446,11 +49349,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-tyler-ardila-vs-zink-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:54",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780408800,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Tyler",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Landon Ardila",
@@ -50496,55 +49399,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780408800,
-        "endTs": 1780416000,
-        "durationMinutes": 120.0,
-        "hourlyRows": 2,
-        "avgTemperatureC": 17.35,
-        "maxTemperatureC": 18.2,
-        "minTemperatureC": 16.5,
-        "avgApparentTemperatureC": 15.65,
-        "maxApparentTemperatureC": 16.2,
-        "avgHumidityPct": 71.5,
-        "totalPrecipitationMm": 3.0,
-        "avgCloudCoverPct": 75.0,
-        "avgWindSpeedKmh": 17.4,
-        "maxWindGustKmh": 50.8,
-        "avgShortwaveRadiationWm2": 547.0,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.2,
-            "gustKmh": 50.8,
-            "humidityPct": 63.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 0.6,
-            "shortwaveWm2": 456.0,
-            "temperatureC": 18.2,
-            "timeLocal": "2026-06-02T16:00",
-            "timeUtc": "2026-06-02T14:00:00Z",
-            "windKmh": 16.2
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 50.0,
-            "humidityPct": 80.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 2.4,
-            "shortwaveWm2": 638.0,
-            "temperatureC": 16.5,
-            "timeLocal": "2026-06-02T17:00",
-            "timeUtc": "2026-06-02T15:00:00Z",
-            "windKmh": 18.6
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -50556,7 +49411,77 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "rh-atp-challenger-tyler-bicknell-vs-monday-2026-06-02": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-tyler-bicknell-vs-monday-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Tyler",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Johannus Monday",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Blaise Bicknell",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Johannus Monday",
+        "awayName": "Blaise Bicknell",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -50564,11 +49489,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-tyler-butvilas-vs-svajda-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:54",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780408800,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Tyler",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Edas Butvilas",
@@ -50614,55 +49539,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780408800,
-        "endTs": 1780416000,
-        "durationMinutes": 120.0,
-        "hourlyRows": 2,
-        "avgTemperatureC": 17.35,
-        "maxTemperatureC": 18.2,
-        "minTemperatureC": 16.5,
-        "avgApparentTemperatureC": 15.65,
-        "maxApparentTemperatureC": 16.2,
-        "avgHumidityPct": 71.5,
-        "totalPrecipitationMm": 3.0,
-        "avgCloudCoverPct": 75.0,
-        "avgWindSpeedKmh": 17.4,
-        "maxWindGustKmh": 50.8,
-        "avgShortwaveRadiationWm2": 547.0,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.2,
-            "gustKmh": 50.8,
-            "humidityPct": 63.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 0.6,
-            "shortwaveWm2": 456.0,
-            "temperatureC": 18.2,
-            "timeLocal": "2026-06-02T16:00",
-            "timeUtc": "2026-06-02T14:00:00Z",
-            "windKmh": 16.2
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 50.0,
-            "humidityPct": 80.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 2.4,
-            "shortwaveWm2": 638.0,
-            "temperatureC": 16.5,
-            "timeLocal": "2026-06-02T17:00",
-            "timeUtc": "2026-06-02T15:00:00Z",
-            "windKmh": 18.6
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -50674,7 +49551,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -50682,11 +49559,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-tyler-legout-vs-andrade-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:54",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780408800,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Tyler",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Timo Legout",
@@ -50732,55 +49609,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780408800,
-        "endTs": 1780416000,
-        "durationMinutes": 120.0,
-        "hourlyRows": 2,
-        "avgTemperatureC": 17.35,
-        "maxTemperatureC": 18.2,
-        "minTemperatureC": 16.5,
-        "avgApparentTemperatureC": 15.65,
-        "maxApparentTemperatureC": 16.2,
-        "avgHumidityPct": 71.5,
-        "totalPrecipitationMm": 3.0,
-        "avgCloudCoverPct": 75.0,
-        "avgWindSpeedKmh": 17.4,
-        "maxWindGustKmh": 50.8,
-        "avgShortwaveRadiationWm2": 547.0,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.2,
-            "gustKmh": 50.8,
-            "humidityPct": 63.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 0.6,
-            "shortwaveWm2": 456.0,
-            "temperatureC": 18.2,
-            "timeLocal": "2026-06-02T16:00",
-            "timeUtc": "2026-06-02T14:00:00Z",
-            "windKmh": 16.2
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 50.0,
-            "humidityPct": 80.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 2.4,
-            "shortwaveWm2": 638.0,
-            "temperatureC": 16.5,
-            "timeLocal": "2026-06-02T17:00",
-            "timeUtc": "2026-06-02T15:00:00Z",
-            "windKmh": 18.6
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -50792,7 +49621,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -50800,11 +49629,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-tyler-martin-vs-ellis-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:54",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780408800,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Tyler",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Andres Martin",
@@ -50850,55 +49679,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780408800,
-        "endTs": 1780416000,
-        "durationMinutes": 120.0,
-        "hourlyRows": 2,
-        "avgTemperatureC": 17.35,
-        "maxTemperatureC": 18.2,
-        "minTemperatureC": 16.5,
-        "avgApparentTemperatureC": 15.65,
-        "maxApparentTemperatureC": 16.2,
-        "avgHumidityPct": 71.5,
-        "totalPrecipitationMm": 3.0,
-        "avgCloudCoverPct": 75.0,
-        "avgWindSpeedKmh": 17.4,
-        "maxWindGustKmh": 50.8,
-        "avgShortwaveRadiationWm2": 547.0,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.2,
-            "gustKmh": 50.8,
-            "humidityPct": 63.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 0.6,
-            "shortwaveWm2": 456.0,
-            "temperatureC": 18.2,
-            "timeLocal": "2026-06-02T16:00",
-            "timeUtc": "2026-06-02T14:00:00Z",
-            "windKmh": 16.2
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 50.0,
-            "humidityPct": 80.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 2.4,
-            "shortwaveWm2": 638.0,
-            "temperatureC": 16.5,
-            "timeLocal": "2026-06-02T17:00",
-            "timeUtc": "2026-06-02T15:00:00Z",
-            "windKmh": 18.6
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -50910,7 +49691,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -50918,11 +49699,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-tyler-qualification-shick-vs-hohmann-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:54",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780408800,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Tyler Qualification",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Braden Shick",
@@ -50968,55 +49749,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780408800,
-        "endTs": 1780416000,
-        "durationMinutes": 120.0,
-        "hourlyRows": 2,
-        "avgTemperatureC": 17.35,
-        "maxTemperatureC": 18.2,
-        "minTemperatureC": 16.5,
-        "avgApparentTemperatureC": 15.65,
-        "maxApparentTemperatureC": 16.2,
-        "avgHumidityPct": 71.5,
-        "totalPrecipitationMm": 3.0,
-        "avgCloudCoverPct": 75.0,
-        "avgWindSpeedKmh": 17.4,
-        "maxWindGustKmh": 50.8,
-        "avgShortwaveRadiationWm2": 547.0,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.2,
-            "gustKmh": 50.8,
-            "humidityPct": 63.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 0.6,
-            "shortwaveWm2": 456.0,
-            "temperatureC": 18.2,
-            "timeLocal": "2026-06-02T16:00",
-            "timeUtc": "2026-06-02T14:00:00Z",
-            "windKmh": 16.2
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 50.0,
-            "humidityPct": 80.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 2.4,
-            "shortwaveWm2": 638.0,
-            "temperatureC": 16.5,
-            "timeLocal": "2026-06-02T17:00",
-            "timeUtc": "2026-06-02T15:00:00Z",
-            "windKmh": 18.6
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -51028,7 +49761,77 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "rh-atp-challenger-tyler-searle-vs-krueger-2026-06-02": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-tyler-searle-vs-krueger-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Tyler",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Henry Searle",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Mitchell Krueger",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Henry Searle",
+        "awayName": "Mitchell Krueger",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -51036,11 +49839,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-tyler-shimizu-vs-sweeny-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:54",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780408800,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Tyler",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Yuta Shimizu",
@@ -51086,55 +49889,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780408800,
-        "endTs": 1780416000,
-        "durationMinutes": 120.0,
-        "hourlyRows": 2,
-        "avgTemperatureC": 17.35,
-        "maxTemperatureC": 18.2,
-        "minTemperatureC": 16.5,
-        "avgApparentTemperatureC": 15.65,
-        "maxApparentTemperatureC": 16.2,
-        "avgHumidityPct": 71.5,
-        "totalPrecipitationMm": 3.0,
-        "avgCloudCoverPct": 75.0,
-        "avgWindSpeedKmh": 17.4,
-        "maxWindGustKmh": 50.8,
-        "avgShortwaveRadiationWm2": 547.0,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.2,
-            "gustKmh": 50.8,
-            "humidityPct": 63.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 0.6,
-            "shortwaveWm2": 456.0,
-            "temperatureC": 18.2,
-            "timeLocal": "2026-06-02T16:00",
-            "timeUtc": "2026-06-02T14:00:00Z",
-            "windKmh": 16.2
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 50.0,
-            "humidityPct": 80.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 2.4,
-            "shortwaveWm2": 638.0,
-            "temperatureC": 16.5,
-            "timeLocal": "2026-06-02T17:00",
-            "timeUtc": "2026-06-02T15:00:00Z",
-            "windKmh": 18.6
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -51146,7 +49901,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -51154,11 +49909,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-tyler-sun-vs-ilagan-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:54",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780408800,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Tyler",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Fajing Sun",
@@ -51204,55 +49959,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780408800,
-        "endTs": 1780416000,
-        "durationMinutes": 120.0,
-        "hourlyRows": 2,
-        "avgTemperatureC": 17.35,
-        "maxTemperatureC": 18.2,
-        "minTemperatureC": 16.5,
-        "avgApparentTemperatureC": 15.65,
-        "maxApparentTemperatureC": 16.2,
-        "avgHumidityPct": 71.5,
-        "totalPrecipitationMm": 3.0,
-        "avgCloudCoverPct": 75.0,
-        "avgWindSpeedKmh": 17.4,
-        "maxWindGustKmh": 50.8,
-        "avgShortwaveRadiationWm2": 547.0,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.2,
-            "gustKmh": 50.8,
-            "humidityPct": 63.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 0.6,
-            "shortwaveWm2": 456.0,
-            "temperatureC": 18.2,
-            "timeLocal": "2026-06-02T16:00",
-            "timeUtc": "2026-06-02T14:00:00Z",
-            "windKmh": 16.2
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 50.0,
-            "humidityPct": 80.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 2.4,
-            "shortwaveWm2": 638.0,
-            "temperatureC": 16.5,
-            "timeLocal": "2026-06-02T17:00",
-            "timeUtc": "2026-06-02T15:00:00Z",
-            "windKmh": 18.6
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -51264,7 +49971,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -51272,11 +49979,11 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rh-atp-challenger-tyler-walton-vs-wu-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:54",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780408800,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Tyler",
+      "category": "Tennis",
+      "startTimestamp": null,
       "players": [
         {
           "name": "Adam Walton",
@@ -51284,32 +49991,32 @@
           "stats": {},
           "expectedStats": {
             "name": "Adam Walton",
-            "source": "SofaScore player page 2026 Clay stats",
-            "matches": 5.0,
+            "source": "SofaScore player page 2026 All surfaces stats",
+            "matches": 28.0,
             "note": "Pregame expected stats from SofaScore player-page surface filter; hold is derived from first-serve-in, first-serve-won, and second-serve-won.",
             "stats": {
-              "matches": 5.0,
-              "wins": 2.0,
-              "winPct": 40.0,
-              "holdPct": 65.5,
-              "firstServePct": 63.3,
-              "firstServeWonPct": 62.5,
-              "secondServePct": 98.3,
-              "secondServeWonPct": 45.8,
-              "aces": 4.6,
-              "avgAces": 4.6,
-              "doubleFaults": 0.6,
-              "avgDoubleFaults": 0.6,
-              "breakPointsSavedPct": 68.4,
-              "breakPointsConvertedPct": 36.4,
-              "breakPointsSaved": 39.0,
-              "breakPointsFaced": 57.0,
-              "breakPointsConverted": 12.0,
-              "breakPointsToConvert": 33.0,
-              "tiebreaksWonPct": 100.0
+              "matches": 28.0,
+              "wins": 13.0,
+              "winPct": 46.4,
+              "holdPct": 78.9,
+              "firstServePct": 66.4,
+              "firstServeWonPct": 68.3,
+              "secondServePct": 95.5,
+              "secondServeWonPct": 51.6,
+              "aces": 7.1,
+              "avgAces": 7.1,
+              "doubleFaults": 1.2,
+              "avgDoubleFaults": 1.2,
+              "breakPointsSavedPct": 66.9,
+              "breakPointsConvertedPct": 30.1,
+              "breakPointsSaved": 113.0,
+              "breakPointsFaced": 169.0,
+              "breakPointsConverted": 40.0,
+              "breakPointsToConvert": 133.0,
+              "tiebreaksWonPct": 28.6
             },
             "sourceUrl": "https://www.sofascore.com/tennis/player/walton-adam/207575#tab:statistics",
-            "surface": "Clay"
+            "surface": "All surfaces"
           },
           "recentFormMetrics": null
         },
@@ -51345,55 +50052,7 @@
       },
       "result": null,
       "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780408800,
-        "endTs": 1780416000,
-        "durationMinutes": 120.0,
-        "hourlyRows": 2,
-        "avgTemperatureC": 17.35,
-        "maxTemperatureC": 18.2,
-        "minTemperatureC": 16.5,
-        "avgApparentTemperatureC": 15.65,
-        "maxApparentTemperatureC": 16.2,
-        "avgHumidityPct": 71.5,
-        "totalPrecipitationMm": 3.0,
-        "avgCloudCoverPct": 75.0,
-        "avgWindSpeedKmh": 17.4,
-        "maxWindGustKmh": 50.8,
-        "avgShortwaveRadiationWm2": 547.0,
-        "hotMatch": false,
-        "humidMatch": true,
-        "windyMatch": true,
-        "rainAffected": true,
-        "hourly": [
-          {
-            "apparentTemperatureC": 16.2,
-            "gustKmh": 50.8,
-            "humidityPct": 63.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 0.6,
-            "shortwaveWm2": 456.0,
-            "temperatureC": 18.2,
-            "timeLocal": "2026-06-02T16:00",
-            "timeUtc": "2026-06-02T14:00:00Z",
-            "windKmh": 16.2
-          },
-          {
-            "apparentTemperatureC": 15.1,
-            "gustKmh": 50.0,
-            "humidityPct": 80.0,
-            "overlapMinutes": 60.0,
-            "precipitationMm": 2.4,
-            "shortwaveWm2": 638.0,
-            "temperatureC": 16.5,
-            "timeLocal": "2026-06-02T17:00",
-            "timeUtc": "2026-06-02T15:00:00Z",
-            "windKmh": 18.6
-          }
-        ]
-      },
+      "weather": null,
       "allStatRows": [],
       "coverage": {
         "hasEvent": false,
@@ -51405,7 +50064,7 @@
         "recentMetricRows": 0,
         "seasonStatRows": 0,
         "liveStatsStatus": null,
-        "hasWeather": true,
+        "hasWeather": false,
         "isPregame": true
       }
     },
@@ -51413,10 +50072,10 @@
       "source": "SQLite tennis warehouse fallback",
       "eventId": "rg-m-jakub-mensik-joao-fonseca-2026-06-02",
       "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:53",
+      "capturedAt": "2026-06-02 02:15:46",
       "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "ATP",
+      "tournament": "Roland Garros Men",
+      "category": "Tennis",
       "startTimestamp": 1780424100,
       "players": [
         {
@@ -66762,99 +65421,6 @@
         "seasonStatRows": 0,
         "liveStatsStatus": null,
         "hasWeather": true,
-        "isPregame": true
-      }
-    },
-    "rh-atp-challenger-tyler-searle-vs-krueger-2026-06-02": {
-      "source": "SQLite tennis warehouse fallback",
-      "eventId": "rh-atp-challenger-tyler-searle-vs-krueger-2026-06-02",
-      "sourceUrl": null,
-      "capturedAt": "2026-06-01 23:55:54",
-      "surface": "Clay",
-      "tournament": "Roland Garros",
-      "category": "WTA",
-      "startTimestamp": 1780445400,
-      "players": [
-        {
-          "name": "Henry Searle",
-          "side": "home",
-          "stats": {},
-          "expectedStats": {
-            "source": "Flashscore recent-form metric fallback",
-            "matches": 0,
-            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
-            "stats": {}
-          },
-          "recentFormMetrics": null
-        },
-        {
-          "name": "Mitchell Krueger",
-          "side": "away",
-          "stats": {},
-          "expectedStats": {
-            "source": "Flashscore recent-form metric fallback",
-            "matches": 0,
-            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
-            "stats": {}
-          },
-          "recentFormMetrics": null
-        }
-      ],
-      "h2h": {
-        "homeName": "Henry Searle",
-        "awayName": "Mitchell Krueger",
-        "homeWins": null,
-        "awayWins": null,
-        "draws": null,
-        "matches": [],
-        "coverage": {
-          "datedRows": 0,
-          "surfaceRows": 0,
-          "weightedRows": 0
-        }
-      },
-      "score": {
-        "home": null,
-        "away": null
-      },
-      "result": null,
-      "sofascoreSignals": null,
-      "weather": {
-        "source": "Open-Meteo",
-        "venueKey": "roland-garros",
-        "startTs": 1780445400,
-        "endTs": 1780452600,
-        "durationMinutes": 120.0,
-        "hourlyRows": 0,
-        "avgTemperatureC": null,
-        "maxTemperatureC": null,
-        "minTemperatureC": null,
-        "avgApparentTemperatureC": null,
-        "maxApparentTemperatureC": null,
-        "avgHumidityPct": null,
-        "totalPrecipitationMm": null,
-        "avgCloudCoverPct": null,
-        "avgWindSpeedKmh": null,
-        "maxWindGustKmh": null,
-        "avgShortwaveRadiationWm2": null,
-        "hotMatch": false,
-        "humidMatch": false,
-        "windyMatch": false,
-        "rainAffected": false,
-        "hourly": []
-      },
-      "allStatRows": [],
-      "coverage": {
-        "hasEvent": false,
-        "hasH2h": false,
-        "allStatRows": 0,
-        "playerStatRows": 0,
-        "liveStatRows": 0,
-        "expectedStatRows": 0,
-        "recentMetricRows": 0,
-        "seasonStatRows": 0,
-        "liveStatsStatus": null,
-        "hasWeather": false,
         "isPregame": true
       }
     }

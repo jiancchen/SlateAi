@@ -9,7 +9,7 @@
     "manifestPath": "models/tennis/cartridges/TEN-T0/manifest.json"
   },
   "source": "ESPN scoreboard + live rankings + Tennistonic/Flashscore enrichment when available",
-  "totalSingles": 50,
+  "totalSingles": 66,
   "picks": [
     {
       "rank": 1,
@@ -20,10 +20,10 @@
       "court": "ATP Challenger Perugia",
       "start": "1:00 AM",
       "pick": "Chun Hsin Tseng",
-      "confidence": 80,
+      "confidence": 81,
       "volatility": 52,
       "tier": "Watch",
-      "rationale": "Chun Hsin Tseng is only the current Robinhood market favorite over Moez Echargui; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Chun Hsin Tseng is only the current Robinhood market favorite over Moez Echargui; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -64,8 +64,8 @@
           "selection": "Chun Hsin Tseng",
           "line": null,
           "americanOdds": null,
-          "modelPct": 80,
-          "impliedPct": 80,
+          "modelPct": 81,
+          "impliedPct": 81,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -93,18 +93,18 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Chun Hsin Tseng 88% / Moez Echargui 42%",
+          "selection": "Chun Hsin Tseng 88% / Moez Echargui 41%",
           "rows": [
             {
               "name": "Chun Hsin Tseng",
               "confidence": 88,
-              "modelPct": 80,
+              "modelPct": 81,
               "label": "Market favorite to win a set"
             },
             {
               "name": "Moez Echargui",
-              "confidence": 42,
-              "modelPct": 22,
+              "confidence": 41,
+              "modelPct": 23,
               "label": "Underdog set-win path needs early holds"
             }
           ],
@@ -131,19 +131,19 @@
           {
             "name": "Chun Hsin Tseng",
             "americanOdds": null,
-            "impliedPct": 80,
-            "modelPct": 80,
+            "impliedPct": 81,
+            "modelPct": 81,
             "edgePct": null,
-            "grossProfitPct": 20,
+            "grossProfitPct": 19,
             "priceBand": "Low-payout favorite"
           },
           {
             "name": "Moez Echargui",
             "americanOdds": null,
-            "impliedPct": 22,
-            "modelPct": 22,
+            "impliedPct": 23,
+            "modelPct": 23,
             "edgePct": null,
-            "grossProfitPct": 78,
+            "grossProfitPct": 77,
             "priceBand": "Underdog"
           }
         ],
@@ -161,10 +161,10 @@
       "court": "ATP Challenger Centurion 2",
       "start": "1:00 AM",
       "pick": "Eliakim Coulibaly",
-      "confidence": 90,
-      "volatility": 45,
+      "confidence": 88,
+      "volatility": 46,
       "tier": "Watch",
-      "rationale": "Eliakim Coulibaly is only the current Robinhood market favorite over Filip Peliwo; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Eliakim Coulibaly is only the current Robinhood market favorite over Filip Peliwo; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -205,8 +205,8 @@
           "selection": "Eliakim Coulibaly",
           "line": null,
           "americanOdds": null,
-          "modelPct": 90,
-          "impliedPct": 90,
+          "modelPct": 88,
+          "impliedPct": 88,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -245,7 +245,7 @@
             {
               "name": "Eliakim Coulibaly",
               "confidence": 88,
-              "modelPct": 90,
+              "modelPct": 88,
               "label": "Market favorite to win a set"
             }
           ],
@@ -281,10 +281,10 @@
           {
             "name": "Eliakim Coulibaly",
             "americanOdds": null,
-            "impliedPct": 90,
-            "modelPct": 90,
+            "impliedPct": 88,
+            "modelPct": 88,
             "edgePct": null,
-            "grossProfitPct": 10,
+            "grossProfitPct": 12,
             "priceBand": "Very expensive favorite"
           }
         ],
@@ -305,7 +305,7 @@
       "confidence": 69,
       "volatility": 62,
       "tier": "Watch",
-      "rationale": "Henrique Rocha is only the current Robinhood market favorite over Enrico Dalla Valle; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Henrique Rocha is only the current Robinhood market favorite over Enrico Dalla Valle; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -446,7 +446,7 @@
       "confidence": 67,
       "volatility": 64,
       "tier": "Watch",
-      "rationale": "Devin Badenhorst is only the current Robinhood market favorite over Oscar Weightman; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Devin Badenhorst is only the current Robinhood market favorite over Oscar Weightman; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -521,7 +521,7 @@
             {
               "name": "Oscar Weightman",
               "confidence": 55,
-              "modelPct": 36,
+              "modelPct": 35,
               "label": "Underdog set-win path needs early holds"
             },
             {
@@ -554,10 +554,10 @@
           {
             "name": "Oscar Weightman",
             "americanOdds": null,
-            "impliedPct": 36,
-            "modelPct": 36,
+            "impliedPct": 35,
+            "modelPct": 35,
             "edgePct": null,
-            "grossProfitPct": 64,
+            "grossProfitPct": 65,
             "priceBand": "Underdog"
           },
           {
@@ -584,10 +584,10 @@
       "court": "ATP Challenger Perugia",
       "start": "1:00 AM",
       "pick": "Remy Bertola",
-      "confidence": 70,
-      "volatility": 61,
+      "confidence": 68,
+      "volatility": 62,
       "tier": "Watch",
-      "rationale": "Remy Bertola is only the current Robinhood market favorite over Lucio Ratti; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Remy Bertola is only the current Robinhood market favorite over Lucio Ratti; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -628,8 +628,8 @@
           "selection": "Remy Bertola",
           "line": null,
           "americanOdds": null,
-          "modelPct": 70,
-          "impliedPct": 70,
+          "modelPct": 68,
+          "impliedPct": 68,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -657,22 +657,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Remy Bertola 78% / Lucio Ratti 52%",
+          "selection": "Remy Bertola 76% / Lucio Ratti 54%",
           "rows": [
             {
               "name": "Remy Bertola",
-              "confidence": 78,
-              "modelPct": 70,
+              "confidence": 76,
+              "modelPct": 68,
               "label": "Market favorite to win a set"
             },
             {
               "name": "Lucio Ratti",
-              "confidence": 52,
+              "confidence": 54,
               "modelPct": 32,
               "label": "Underdog set-win path needs early holds"
             }
           ],
-          "confidence": 78,
+          "confidence": 76,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -680,10 +680,10 @@
           "marketType": "First-set total games",
           "label": "1st set O/U",
           "selection": "Price required",
-          "expectedGames": 9.2,
-          "confidence": 50,
-          "tiebreakRisk": 52,
-          "earlyBreakRisk": 48,
+          "expectedGames": 9.8,
+          "confidence": 53,
+          "tiebreakRisk": 42,
+          "earlyBreakRisk": 58,
           "grade": "Needs posted first-set total",
           "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
         }
@@ -695,11 +695,11 @@
           {
             "name": "Remy Bertola",
             "americanOdds": null,
-            "impliedPct": 70,
-            "modelPct": 70,
+            "impliedPct": 68,
+            "modelPct": 68,
             "edgePct": null,
-            "grossProfitPct": 30,
-            "priceBand": "Low-payout favorite"
+            "grossProfitPct": 32,
+            "priceBand": "Moderate favorite"
           },
           {
             "name": "Lucio Ratti",
@@ -728,7 +728,7 @@
       "confidence": 80,
       "volatility": 53,
       "tier": "Watch",
-      "rationale": "Edward Winter is only the current Robinhood market favorite over Sidharth Rawat; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Edward Winter is only the current Robinhood market favorite over Sidharth Rawat; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -866,10 +866,10 @@
       "court": "ATP Challenger Prostejov",
       "start": "1:30 AM",
       "pick": "Nikolas Sanchez Izquierdo",
-      "confidence": 56,
-      "volatility": 74,
+      "confidence": 55,
+      "volatility": 75,
       "tier": "Watch",
-      "rationale": "Nikolas Sanchez Izquierdo is only the current Robinhood market favorite over Luka Pavlovic; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Nikolas Sanchez Izquierdo is only the current Robinhood market favorite over Luka Pavlovic; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -910,8 +910,8 @@
           "selection": "Nikolas Sanchez Izquierdo",
           "line": null,
           "americanOdds": null,
-          "modelPct": 56,
-          "impliedPct": 56,
+          "modelPct": 55,
+          "impliedPct": 55,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -939,22 +939,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Luka Pavlovic 66% / Nikolas Sanchez Izquierdo 64%",
+          "selection": "Luka Pavlovic 67% / Nikolas Sanchez Izquierdo 63%",
           "rows": [
             {
               "name": "Luka Pavlovic",
-              "confidence": 66,
+              "confidence": 67,
               "modelPct": 48,
               "label": "Underdog set-win path needs early holds"
             },
             {
               "name": "Nikolas Sanchez Izquierdo",
-              "confidence": 64,
-              "modelPct": 56,
+              "confidence": 63,
+              "modelPct": 55,
               "label": "Market favorite to win a set"
             }
           ],
-          "confidence": 66,
+          "confidence": 67,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -986,10 +986,10 @@
           {
             "name": "Nikolas Sanchez Izquierdo",
             "americanOdds": null,
-            "impliedPct": 56,
-            "modelPct": 56,
+            "impliedPct": 55,
+            "modelPct": 55,
             "edgePct": null,
-            "grossProfitPct": 44,
+            "grossProfitPct": 45,
             "priceBand": "Coinflip"
           }
         ],
@@ -1010,7 +1010,7 @@
       "confidence": 75,
       "volatility": 56,
       "tier": "Watch",
-      "rationale": "Damir Dzumhur is only the current Robinhood market favorite over Miguel Damas; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Damir Dzumhur is only the current Robinhood market favorite over Miguel Damas; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -1151,7 +1151,7 @@
       "confidence": 84,
       "volatility": 48,
       "tier": "Watch",
-      "rationale": "Sebastian Baez is only the current Robinhood market favorite over Sascha Gueymard Wayenburg; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Sebastian Baez is only the current Robinhood market favorite over Sascha Gueymard Wayenburg; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -1289,7 +1289,7 @@
       "court": "Court Philippe-Chatrier",
       "start": "2:00 AM",
       "pick": "Mirra Andreeva",
-      "confidence": 64.8,
+      "confidence": 64.1,
       "volatility": 54,
       "tier": "Lean",
       "rationale": "Mirra Andreeva has the recent service-hold edge 81% to 75%. Mirra Andreeva grades 5 points better on opponent-adjusted recent form. Lean, not a chase.",
@@ -1365,11 +1365,11 @@
           "selection": "Mirra Andreeva",
           "line": null,
           "americanOdds": -196,
-          "modelPct": 64.8,
+          "modelPct": 64.1,
           "impliedPct": 66.2,
-          "edgePct": -1.4,
-          "evPer100": -2.1,
-          "netEvPer100": -4.1,
+          "edgePct": -2.1,
+          "evPer100": -3.2,
+          "netEvPer100": -5.2,
           "grade": "Near fair",
           "issue": "Favorite price needs better proof",
           "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
@@ -1380,14 +1380,14 @@
           "selection": "Mirra Andreeva",
           "line": -3.5,
           "americanOdds": -112,
-          "modelPct": 59,
+          "modelPct": 58,
           "impliedPct": 52.8,
-          "edgePct": 6.2,
-          "evPer100": 11.7,
-          "netEvPer100": 9.7,
+          "edgePct": 5.2,
+          "evPer100": 9.8,
+          "netEvPer100": 7.8,
           "expectedGames": null,
           "edgeGames": null,
-          "confidence": 59,
+          "confidence": 58,
           "grade": "Watch only",
           "reason": "Spread is number-dependent; verify first service cycle"
         },
@@ -1411,22 +1411,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Mirra Andreeva 77% / Sorana Cirstea 51%",
+          "selection": "Mirra Andreeva 76% / Sorana Cirstea 52%",
           "rows": [
             {
               "name": "Mirra Andreeva",
-              "confidence": 77,
-              "modelPct": 64.8,
+              "confidence": 76,
+              "modelPct": 64.1,
               "label": "Live to win a set"
             },
             {
               "name": "Sorana Cirstea",
-              "confidence": 51,
-              "modelPct": 35.2,
-              "label": "Thin set-win path"
+              "confidence": 52,
+              "modelPct": 35.9,
+              "label": "Needs early hold pressure"
             }
           ],
-          "confidence": 77,
+          "confidence": 76,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -1450,8 +1450,8 @@
             "name": "Mirra Andreeva",
             "americanOdds": -196,
             "impliedPct": 66.2,
-            "modelPct": 64.8,
-            "edgePct": -1.4,
+            "modelPct": 64.1,
+            "edgePct": -2.1,
             "grossProfitPct": 51,
             "priceBand": "Moderate favorite"
           },
@@ -1459,8 +1459,8 @@
             "name": "Sorana Cirstea",
             "americanOdds": 162,
             "impliedPct": 38.2,
-            "modelPct": 35.2,
-            "edgePct": -3,
+            "modelPct": 35.9,
+            "edgePct": -2.3,
             "grossProfitPct": 162,
             "priceBand": "Underdog"
           }
@@ -1479,10 +1479,10 @@
       "court": "ATP Challenger Centurion 2",
       "start": "2:10 AM",
       "pick": "Akira Santillan",
-      "confidence": 66,
-      "volatility": 65,
+      "confidence": 64,
+      "volatility": 66,
       "tier": "Watch",
-      "rationale": "Akira Santillan is only the current Robinhood market favorite over Alexander Donski; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Akira Santillan is only the current Robinhood market favorite over Alexander Donski; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -1523,8 +1523,8 @@
           "selection": "Akira Santillan",
           "line": null,
           "americanOdds": null,
-          "modelPct": 66,
-          "impliedPct": 66,
+          "modelPct": 64,
+          "impliedPct": 64,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -1552,22 +1552,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Akira Santillan 74% / Alexander Donski 56%",
+          "selection": "Akira Santillan 72% / Alexander Donski 58%",
           "rows": [
             {
               "name": "Akira Santillan",
-              "confidence": 74,
-              "modelPct": 66,
+              "confidence": 72,
+              "modelPct": 64,
               "label": "Market favorite to win a set"
             },
             {
               "name": "Alexander Donski",
-              "confidence": 56,
+              "confidence": 58,
               "modelPct": 37,
               "label": "Underdog set-win path needs early holds"
             }
           ],
-          "confidence": 74,
+          "confidence": 72,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -1590,10 +1590,10 @@
           {
             "name": "Akira Santillan",
             "americanOdds": null,
-            "impliedPct": 66,
-            "modelPct": 66,
+            "impliedPct": 64,
+            "modelPct": 64,
             "edgePct": null,
-            "grossProfitPct": 34,
+            "grossProfitPct": 36,
             "priceBand": "Moderate favorite"
           },
           {
@@ -1623,7 +1623,7 @@
       "confidence": 53,
       "volatility": 77,
       "tier": "Watch",
-      "rationale": "David Jorda Sanchis is only the current Robinhood market favorite over Liam Broady; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "David Jorda Sanchis is only the current Robinhood market favorite over Liam Broady; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -1764,7 +1764,7 @@
       "confidence": 58,
       "volatility": 72,
       "tier": "Watch",
-      "rationale": "Constantin Bittoun Kouzmine is only the current Robinhood market favorite over Guillaume Dalmasso; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Constantin Bittoun Kouzmine is only the current Robinhood market favorite over Guillaume Dalmasso; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -1905,7 +1905,7 @@
       "confidence": 66,
       "volatility": 65,
       "tier": "Watch",
-      "rationale": "Calvin Hemery is only the current Robinhood market favorite over Khololwam Montsi; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Calvin Hemery is only the current Robinhood market favorite over Khololwam Montsi; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -2043,10 +2043,10 @@
       "court": "ATP Challenger Perugia",
       "start": "2:10 AM",
       "pick": "Valentin Royer",
-      "confidence": 77,
-      "volatility": 55,
+      "confidence": 79,
+      "volatility": 53,
       "tier": "Watch",
-      "rationale": "Valentin Royer is only the current Robinhood market favorite over Nicolas Alvarez Varona; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Valentin Royer is only the current Robinhood market favorite over Nicolas Alvarez Varona; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -2087,8 +2087,8 @@
           "selection": "Valentin Royer",
           "line": null,
           "americanOdds": null,
-          "modelPct": 77,
-          "impliedPct": 77,
+          "modelPct": 79,
+          "impliedPct": 79,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -2116,22 +2116,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Valentin Royer 85% / Nicolas Alvarez Varona 45%",
+          "selection": "Valentin Royer 87% / Nicolas Alvarez Varona 43%",
           "rows": [
             {
               "name": "Valentin Royer",
-              "confidence": 85,
-              "modelPct": 77,
+              "confidence": 87,
+              "modelPct": 79,
               "label": "Market favorite to win a set"
             },
             {
               "name": "Nicolas Alvarez Varona",
-              "confidence": 45,
-              "modelPct": 26,
+              "confidence": 43,
+              "modelPct": 24,
               "label": "Underdog set-win path needs early holds"
             }
           ],
-          "confidence": 85,
+          "confidence": 87,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -2154,19 +2154,19 @@
           {
             "name": "Valentin Royer",
             "americanOdds": null,
-            "impliedPct": 77,
-            "modelPct": 77,
+            "impliedPct": 79,
+            "modelPct": 79,
             "edgePct": null,
-            "grossProfitPct": 23,
+            "grossProfitPct": 21,
             "priceBand": "Low-payout favorite"
           },
           {
             "name": "Nicolas Alvarez Varona",
             "americanOdds": null,
-            "impliedPct": 26,
-            "modelPct": 26,
+            "impliedPct": 24,
+            "modelPct": 24,
             "edgePct": null,
-            "grossProfitPct": 74,
+            "grossProfitPct": 76,
             "priceBand": "Underdog"
           }
         ],
@@ -2184,10 +2184,10 @@
       "court": "ATP Challenger Perugia",
       "start": "2:30 AM",
       "pick": "Jacopo Vasami",
-      "confidence": 58,
+      "confidence": 57,
       "volatility": 72,
       "tier": "Watch",
-      "rationale": "Jacopo Vasami is only the current Robinhood market favorite over Cezar Cretu (b. 2001); no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Jacopo Vasami is only the current Robinhood market favorite over Cezar Cretu (b. 2001); Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -2228,8 +2228,8 @@
           "selection": "Jacopo Vasami",
           "line": null,
           "americanOdds": null,
-          "modelPct": 58,
-          "impliedPct": 58,
+          "modelPct": 57,
+          "impliedPct": 57,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -2257,22 +2257,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Cezar Cretu (b. 2001) 64% / Jacopo Vasami 66%",
+          "selection": "Cezar Cretu (b. 2001) 65% / Jacopo Vasami 65%",
           "rows": [
             {
               "name": "Cezar Cretu (b. 2001)",
-              "confidence": 64,
-              "modelPct": 45,
+              "confidence": 65,
+              "modelPct": 44,
               "label": "Underdog set-win path needs early holds"
             },
             {
               "name": "Jacopo Vasami",
-              "confidence": 66,
-              "modelPct": 58,
+              "confidence": 65,
+              "modelPct": 57,
               "label": "Market favorite to win a set"
             }
           ],
-          "confidence": 66,
+          "confidence": 65,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -2295,20 +2295,20 @@
           {
             "name": "Cezar Cretu (b. 2001)",
             "americanOdds": null,
-            "impliedPct": 45,
-            "modelPct": 45,
+            "impliedPct": 44,
+            "modelPct": 44,
             "edgePct": null,
-            "grossProfitPct": 55,
-            "priceBand": "Coinflip"
+            "grossProfitPct": 56,
+            "priceBand": "Underdog"
           },
           {
             "name": "Jacopo Vasami",
             "americanOdds": null,
-            "impliedPct": 58,
-            "modelPct": 58,
+            "impliedPct": 57,
+            "modelPct": 57,
             "edgePct": null,
-            "grossProfitPct": 42,
-            "priceBand": "Moderate favorite"
+            "grossProfitPct": 43,
+            "priceBand": "Coinflip"
           }
         ],
         "spread": "No game spread captured",
@@ -2325,10 +2325,10 @@
       "court": "ATP Challenger Bad Rappenau",
       "start": "2:30 AM",
       "pick": "Hugo Dellien",
-      "confidence": 61,
-      "volatility": 69,
+      "confidence": 60,
+      "volatility": 70,
       "tier": "Watch",
-      "rationale": "Hugo Dellien is only the current Robinhood market favorite over Max Schoenhaus; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Hugo Dellien is only the current Robinhood market favorite over Max Schoenhaus; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -2369,8 +2369,8 @@
           "selection": "Hugo Dellien",
           "line": null,
           "americanOdds": null,
-          "modelPct": 61,
-          "impliedPct": 61,
+          "modelPct": 60,
+          "impliedPct": 60,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -2398,22 +2398,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Hugo Dellien 69% / Max Schoenhaus 61%",
+          "selection": "Hugo Dellien 68% / Max Schoenhaus 62%",
           "rows": [
             {
               "name": "Hugo Dellien",
-              "confidence": 69,
-              "modelPct": 61,
+              "confidence": 68,
+              "modelPct": 60,
               "label": "Market favorite to win a set"
             },
             {
               "name": "Max Schoenhaus",
-              "confidence": 61,
+              "confidence": 62,
               "modelPct": 42,
               "label": "Underdog set-win path needs early holds"
             }
           ],
-          "confidence": 69,
+          "confidence": 68,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -2436,10 +2436,10 @@
           {
             "name": "Hugo Dellien",
             "americanOdds": null,
-            "impliedPct": 61,
-            "modelPct": 61,
+            "impliedPct": 60,
+            "modelPct": 60,
             "edgePct": null,
-            "grossProfitPct": 39,
+            "grossProfitPct": 40,
             "priceBand": "Moderate favorite"
           },
           {
@@ -2466,10 +2466,10 @@
       "court": "ATP Challenger Birmingham",
       "start": "2:30 AM",
       "pick": "James Duckworth",
-      "confidence": 64,
+      "confidence": 63,
       "volatility": 67,
       "tier": "Watch",
-      "rationale": "James Duckworth is only the current Robinhood market favorite over Billy Harris; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "James Duckworth is only the current Robinhood market favorite over Billy Harris; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -2510,8 +2510,8 @@
           "selection": "James Duckworth",
           "line": null,
           "americanOdds": null,
-          "modelPct": 64,
-          "impliedPct": 64,
+          "modelPct": 63,
+          "impliedPct": 63,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -2539,22 +2539,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "James Duckworth 72% / Billy Harris 58%",
+          "selection": "James Duckworth 71% / Billy Harris 59%",
           "rows": [
             {
               "name": "James Duckworth",
-              "confidence": 72,
-              "modelPct": 64,
+              "confidence": 71,
+              "modelPct": 63,
               "label": "Market favorite to win a set"
             },
             {
               "name": "Billy Harris",
-              "confidence": 58,
+              "confidence": 59,
               "modelPct": 39,
               "label": "Underdog set-win path needs early holds"
             }
           ],
-          "confidence": 72,
+          "confidence": 71,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -2577,10 +2577,10 @@
           {
             "name": "James Duckworth",
             "americanOdds": null,
-            "impliedPct": 64,
-            "modelPct": 64,
+            "impliedPct": 63,
+            "modelPct": 63,
             "edgePct": null,
-            "grossProfitPct": 36,
+            "grossProfitPct": 37,
             "priceBand": "Moderate favorite"
           },
           {
@@ -2607,10 +2607,10 @@
       "court": "ATP Challenger Bad Rappenau",
       "start": "2:30 AM",
       "pick": "Joao Lucas Reis Da Silva",
-      "confidence": 58,
+      "confidence": 57,
       "volatility": 72,
       "tier": "Watch",
-      "rationale": "Joao Lucas Reis Da Silva is only the current Robinhood market favorite over Alex Barrena; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Joao Lucas Reis Da Silva is only the current Robinhood market favorite over Alex Barrena; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -2651,8 +2651,8 @@
           "selection": "Joao Lucas Reis Da Silva",
           "line": null,
           "americanOdds": null,
-          "modelPct": 58,
-          "impliedPct": 58,
+          "modelPct": 57,
+          "impliedPct": 57,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -2680,22 +2680,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Joao Lucas Reis Da Silva 66% / Alex Barrena 64%",
+          "selection": "Joao Lucas Reis Da Silva 65% / Alex Barrena 65%",
           "rows": [
             {
               "name": "Joao Lucas Reis Da Silva",
-              "confidence": 66,
-              "modelPct": 58,
+              "confidence": 65,
+              "modelPct": 57,
               "label": "Market favorite to win a set"
             },
             {
               "name": "Alex Barrena",
-              "confidence": 64,
-              "modelPct": 45,
+              "confidence": 65,
+              "modelPct": 44,
               "label": "Underdog set-win path needs early holds"
             }
           ],
-          "confidence": 66,
+          "confidence": 65,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -2718,20 +2718,20 @@
           {
             "name": "Joao Lucas Reis Da Silva",
             "americanOdds": null,
-            "impliedPct": 58,
-            "modelPct": 58,
+            "impliedPct": 57,
+            "modelPct": 57,
             "edgePct": null,
-            "grossProfitPct": 42,
-            "priceBand": "Moderate favorite"
+            "grossProfitPct": 43,
+            "priceBand": "Coinflip"
           },
           {
             "name": "Alex Barrena",
             "americanOdds": null,
-            "impliedPct": 45,
-            "modelPct": 45,
+            "impliedPct": 44,
+            "modelPct": 44,
             "edgePct": null,
-            "grossProfitPct": 55,
-            "priceBand": "Coinflip"
+            "grossProfitPct": 56,
+            "priceBand": "Underdog"
           }
         ],
         "spread": "No game spread captured",
@@ -2751,7 +2751,7 @@
       "confidence": 64,
       "volatility": 66,
       "tier": "Watch",
-      "rationale": "Leandro Riedi is only the current Robinhood market favorite over Mark Lajal; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Leandro Riedi is only the current Robinhood market favorite over Mark Lajal; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -2892,7 +2892,7 @@
       "confidence": 59,
       "volatility": 71,
       "tier": "Watch",
-      "rationale": "Mattia Bellucci is only the current Robinhood market favorite over Alex Bolt; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Mattia Bellucci is only the current Robinhood market favorite over Alex Bolt; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -2973,7 +2973,7 @@
             {
               "name": "Alex Bolt",
               "confidence": 63,
-              "modelPct": 44,
+              "modelPct": 43,
               "label": "Underdog set-win path needs early holds"
             }
           ],
@@ -3009,10 +3009,10 @@
           {
             "name": "Alex Bolt",
             "americanOdds": null,
-            "impliedPct": 44,
-            "modelPct": 44,
+            "impliedPct": 43,
+            "modelPct": 43,
             "edgePct": null,
-            "grossProfitPct": 56,
+            "grossProfitPct": 57,
             "priceBand": "Underdog"
           }
         ],
@@ -3030,10 +3030,10 @@
       "court": "ATP Challenger Bad Rappenau",
       "start": "2:30 AM",
       "pick": "Alejandro Moro Canas",
-      "confidence": 65,
+      "confidence": 64,
       "volatility": 66,
       "tier": "Watch",
-      "rationale": "Alejandro Moro Canas is only the current Robinhood market favorite over Mika Petkovic; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Alejandro Moro Canas is only the current Robinhood market favorite over Mika Petkovic; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -3074,8 +3074,8 @@
           "selection": "Alejandro Moro Canas",
           "line": null,
           "americanOdds": null,
-          "modelPct": 65,
-          "impliedPct": 65,
+          "modelPct": 64,
+          "impliedPct": 64,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -3103,22 +3103,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Mika Petkovic 57% / Alejandro Moro Canas 73%",
+          "selection": "Mika Petkovic 58% / Alejandro Moro Canas 72%",
           "rows": [
             {
               "name": "Mika Petkovic",
-              "confidence": 57,
-              "modelPct": 38,
+              "confidence": 58,
+              "modelPct": 37,
               "label": "Underdog set-win path needs early holds"
             },
             {
               "name": "Alejandro Moro Canas",
-              "confidence": 73,
-              "modelPct": 65,
+              "confidence": 72,
+              "modelPct": 64,
               "label": "Market favorite to win a set"
             }
           ],
-          "confidence": 73,
+          "confidence": 72,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -3141,19 +3141,19 @@
           {
             "name": "Mika Petkovic",
             "americanOdds": null,
-            "impliedPct": 38,
-            "modelPct": 38,
+            "impliedPct": 37,
+            "modelPct": 37,
             "edgePct": null,
-            "grossProfitPct": 62,
+            "grossProfitPct": 63,
             "priceBand": "Underdog"
           },
           {
             "name": "Alejandro Moro Canas",
             "americanOdds": null,
-            "impliedPct": 65,
-            "modelPct": 65,
+            "impliedPct": 64,
+            "modelPct": 64,
             "edgePct": null,
-            "grossProfitPct": 35,
+            "grossProfitPct": 36,
             "priceBand": "Moderate favorite"
           }
         ],
@@ -3171,10 +3171,10 @@
       "court": "ATP Challenger Prostejov",
       "start": "2:40 AM",
       "pick": "Martin Krumich",
-      "confidence": 59,
+      "confidence": 58,
       "volatility": 71,
       "tier": "Watch",
-      "rationale": "Martin Krumich is only the current Robinhood market favorite over Genaro Alberto Olivieri; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Martin Krumich is only the current Robinhood market favorite over Genaro Alberto Olivieri; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -3215,8 +3215,8 @@
           "selection": "Martin Krumich",
           "line": null,
           "americanOdds": null,
-          "modelPct": 59,
-          "impliedPct": 59,
+          "modelPct": 58,
+          "impliedPct": 58,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -3244,22 +3244,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Genaro Alberto Olivieri 63% / Martin Krumich 67%",
+          "selection": "Genaro Alberto Olivieri 64% / Martin Krumich 66%",
           "rows": [
             {
               "name": "Genaro Alberto Olivieri",
-              "confidence": 63,
-              "modelPct": 44,
+              "confidence": 64,
+              "modelPct": 43,
               "label": "Underdog set-win path needs early holds"
             },
             {
               "name": "Martin Krumich",
-              "confidence": 67,
-              "modelPct": 59,
+              "confidence": 66,
+              "modelPct": 58,
               "label": "Market favorite to win a set"
             }
           ],
-          "confidence": 67,
+          "confidence": 66,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -3282,19 +3282,19 @@
           {
             "name": "Genaro Alberto Olivieri",
             "americanOdds": null,
-            "impliedPct": 44,
-            "modelPct": 44,
+            "impliedPct": 43,
+            "modelPct": 43,
             "edgePct": null,
-            "grossProfitPct": 56,
+            "grossProfitPct": 57,
             "priceBand": "Underdog"
           },
           {
             "name": "Martin Krumich",
             "americanOdds": null,
-            "impliedPct": 59,
-            "modelPct": 59,
+            "impliedPct": 58,
+            "modelPct": 58,
             "edgePct": null,
-            "grossProfitPct": 41,
+            "grossProfitPct": 42,
             "priceBand": "Moderate favorite"
           }
         ],
@@ -3312,10 +3312,10 @@
       "court": "ATP Challenger Prostejov",
       "start": "2:40 AM",
       "pick": "Jonas Forejtek",
-      "confidence": 58,
-      "volatility": 72,
+      "confidence": 59,
+      "volatility": 71,
       "tier": "Watch",
-      "rationale": "Jonas Forejtek is only the current Robinhood market favorite over Taro Daniel; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Jonas Forejtek is only the current Robinhood market favorite over Taro Daniel; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -3356,8 +3356,8 @@
           "selection": "Jonas Forejtek",
           "line": null,
           "americanOdds": null,
-          "modelPct": 58,
-          "impliedPct": 58,
+          "modelPct": 59,
+          "impliedPct": 59,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -3385,22 +3385,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Taro Daniel 64% / Jonas Forejtek 66%",
+          "selection": "Taro Daniel 63% / Jonas Forejtek 67%",
           "rows": [
             {
               "name": "Taro Daniel",
-              "confidence": 64,
-              "modelPct": 44,
+              "confidence": 63,
+              "modelPct": 43,
               "label": "Underdog set-win path needs early holds"
             },
             {
               "name": "Jonas Forejtek",
-              "confidence": 66,
-              "modelPct": 58,
+              "confidence": 67,
+              "modelPct": 59,
               "label": "Market favorite to win a set"
             }
           ],
-          "confidence": 66,
+          "confidence": 67,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -3423,19 +3423,19 @@
           {
             "name": "Taro Daniel",
             "americanOdds": null,
-            "impliedPct": 44,
-            "modelPct": 44,
+            "impliedPct": 43,
+            "modelPct": 43,
             "edgePct": null,
-            "grossProfitPct": 56,
+            "grossProfitPct": 57,
             "priceBand": "Underdog"
           },
           {
             "name": "Jonas Forejtek",
             "americanOdds": null,
-            "impliedPct": 58,
-            "modelPct": 58,
+            "impliedPct": 59,
+            "modelPct": 59,
             "edgePct": null,
-            "grossProfitPct": 42,
+            "grossProfitPct": 41,
             "priceBand": "Moderate favorite"
           }
         ],
@@ -3456,7 +3456,7 @@
       "confidence": 86,
       "volatility": 47,
       "tier": "Watch",
-      "rationale": "Vit Kopriva is only the current Robinhood market favorite over Andrej Martin; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Vit Kopriva is only the current Robinhood market favorite over Andrej Martin; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -3597,7 +3597,7 @@
       "confidence": 73,
       "volatility": 59,
       "tier": "Watch",
-      "rationale": "Roberto Carballes Baena is only the current Robinhood market favorite over Lorenzo Carboni; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Roberto Carballes Baena is only the current Robinhood market favorite over Lorenzo Carboni; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -3738,7 +3738,7 @@
       "confidence": 81,
       "volatility": 51,
       "tier": "Watch",
-      "rationale": "Philip Henning is only the current Robinhood market favorite over Orel Kimhi; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Philip Henning is only the current Robinhood market favorite over Orel Kimhi; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -3813,7 +3813,7 @@
             {
               "name": "Orel Kimhi",
               "confidence": 41,
-              "modelPct": 22,
+              "modelPct": 21,
               "label": "Underdog set-win path needs early holds"
             },
             {
@@ -3846,10 +3846,10 @@
           {
             "name": "Orel Kimhi",
             "americanOdds": null,
-            "impliedPct": 22,
-            "modelPct": 22,
+            "impliedPct": 21,
+            "modelPct": 21,
             "edgePct": null,
-            "grossProfitPct": 78,
+            "grossProfitPct": 79,
             "priceBand": "Underdog"
           },
           {
@@ -3869,6 +3869,147 @@
     },
     {
       "rank": 28,
+      "match": "Pierluigi Basile vs Stefano Travaglia",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": true,
+      "court": "ATP Challenger Perugia",
+      "start": "3:20 AM",
+      "pick": "Stefano Travaglia",
+      "confidence": 79,
+      "volatility": 53,
+      "tier": "Watch",
+      "rationale": "Stefano Travaglia is only the current Robinhood market favorite over Pierluigi Basile; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "weaknessEdge": {
+        "edgeType": "Market-only",
+        "target": "No warehouse weakness edge",
+        "scoreGap": null,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+        "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+        "spreadRead": "No spread line",
+        "totalRead": "No total line",
+        "pick": {
+          "name": "Stefano Travaglia",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "opponent": {
+          "name": "Pierluigi Basile",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        }
+      },
+      "totals": "No posted sportsbook total captured for this Challenger market.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Stefano Travaglia",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": 79,
+          "impliedPct": 79,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "grade": "Near fair",
+          "issue": "Favorite price needs better proof",
+          "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": null,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "Total games need expected match games vs the posted line."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Pierluigi Basile 43% / Stefano Travaglia 87%",
+          "rows": [
+            {
+              "name": "Pierluigi Basile",
+              "confidence": 43,
+              "modelPct": 24,
+              "label": "Underdog set-win path needs early holds"
+            },
+            {
+              "name": "Stefano Travaglia",
+              "confidence": 87,
+              "modelPct": 79,
+              "label": "Market favorite to win a set"
+            }
+          ],
+          "confidence": 87,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Price required",
+          "expectedGames": 8.8,
+          "confidence": 48,
+          "tiebreakRisk": 52,
+          "earlyBreakRisk": 48,
+          "grade": "Needs posted first-set total",
+          "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        }
+      ],
+      "market": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "moneyline": [
+          {
+            "name": "Pierluigi Basile",
+            "americanOdds": null,
+            "impliedPct": 24,
+            "modelPct": 24,
+            "edgePct": null,
+            "grossProfitPct": 76,
+            "priceBand": "Underdog"
+          },
+          {
+            "name": "Stefano Travaglia",
+            "americanOdds": null,
+            "impliedPct": 79,
+            "modelPct": 79,
+            "edgePct": null,
+            "grossProfitPct": 21,
+            "priceBand": "Low-payout favorite"
+          }
+        ],
+        "spread": "No game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      }
+    },
+    {
+      "rank": 29,
       "match": "Robert Strombachs vs Millen Hurrion",
       "format": "ATP",
       "bestOf": 3,
@@ -3876,10 +4017,10 @@
       "court": "ATP Challenger Centurion 2",
       "start": "3:20 AM",
       "pick": "Robert Strombachs",
-      "confidence": 58,
+      "confidence": 57,
       "volatility": 73,
       "tier": "Watch",
-      "rationale": "Robert Strombachs is only the current Robinhood market favorite over Millen Hurrion; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Robert Strombachs is only the current Robinhood market favorite over Millen Hurrion; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -3920,8 +4061,8 @@
           "selection": "Robert Strombachs",
           "line": null,
           "americanOdds": null,
-          "modelPct": 58,
-          "impliedPct": 58,
+          "modelPct": 57,
+          "impliedPct": 57,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -3949,22 +4090,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Robert Strombachs 66% / Millen Hurrion 64%",
+          "selection": "Robert Strombachs 65% / Millen Hurrion 65%",
           "rows": [
             {
               "name": "Robert Strombachs",
-              "confidence": 66,
-              "modelPct": 58,
+              "confidence": 65,
+              "modelPct": 57,
               "label": "Market favorite to win a set"
             },
             {
               "name": "Millen Hurrion",
-              "confidence": 64,
-              "modelPct": 46,
+              "confidence": 65,
+              "modelPct": 45,
               "label": "Underdog set-win path needs early holds"
             }
           ],
-          "confidence": 66,
+          "confidence": 65,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -3987,19 +4128,19 @@
           {
             "name": "Robert Strombachs",
             "americanOdds": null,
-            "impliedPct": 58,
-            "modelPct": 58,
+            "impliedPct": 57,
+            "modelPct": 57,
             "edgePct": null,
-            "grossProfitPct": 42,
-            "priceBand": "Moderate favorite"
+            "grossProfitPct": 43,
+            "priceBand": "Coinflip"
           },
           {
             "name": "Millen Hurrion",
             "americanOdds": null,
-            "impliedPct": 46,
-            "modelPct": 46,
+            "impliedPct": 45,
+            "modelPct": 45,
             "edgePct": null,
-            "grossProfitPct": 54,
+            "grossProfitPct": 55,
             "priceBand": "Coinflip"
           }
         ],
@@ -4009,7 +4150,7 @@
       }
     },
     {
-      "rank": 29,
+      "rank": 30,
       "match": "Elina Svitolina vs Marta Kostyuk",
       "format": "WTA",
       "bestOf": 3,
@@ -4017,7 +4158,7 @@
       "court": "Court Philippe-Chatrier",
       "start": "3:30 AM",
       "pick": "Elina Svitolina",
-      "confidence": 57.2,
+      "confidence": 58.8,
       "volatility": 58,
       "tier": "Watch",
       "rationale": "Recent service hold is close: Elina Svitolina 73%, Marta Kostyuk 71%. Opponent-adjusted recent form is basically even: Elina Svitolina 110, Marta Kostyuk 109. Lean, not a chase.",
@@ -4095,11 +4236,11 @@
           "selection": "Elina Svitolina",
           "line": null,
           "americanOdds": 104,
-          "modelPct": 57.2,
+          "modelPct": 58.8,
           "impliedPct": 49,
-          "edgePct": 8.2,
-          "evPer100": 16.7,
-          "netEvPer100": 14.7,
+          "edgePct": 9.8,
+          "evPer100": 20,
+          "netEvPer100": 18,
           "grade": "Bet-grade value",
           "issue": "Validated ML candidate",
           "reason": "Model is meaningfully above FanDuel implied price."
@@ -4110,15 +4251,15 @@
           "selection": "Elina Svitolina",
           "line": 1.5,
           "americanOdds": -120,
-          "modelPct": 51,
+          "modelPct": 53,
           "impliedPct": 54.5,
-          "edgePct": -3.5,
-          "evPer100": -6.5,
-          "netEvPer100": -8.5,
+          "edgePct": -1.5,
+          "evPer100": -2.8,
+          "netEvPer100": -4.8,
           "expectedGames": null,
           "edgeGames": null,
-          "confidence": 51,
-          "grade": "Negative EV",
+          "confidence": 53,
+          "grade": "Near fair",
           "reason": "Spread is number-dependent; verify first service cycle"
         },
         {
@@ -4141,22 +4282,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Elina Svitolina 71% / Marta Kostyuk 57%",
+          "selection": "Elina Svitolina 72% / Marta Kostyuk 56%",
           "rows": [
             {
               "name": "Elina Svitolina",
-              "confidence": 71,
-              "modelPct": 57.2,
+              "confidence": 72,
+              "modelPct": 58.8,
               "label": "Live to win a set"
             },
             {
               "name": "Marta Kostyuk",
-              "confidence": 57,
-              "modelPct": 42.8,
+              "confidence": 56,
+              "modelPct": 41.2,
               "label": "Needs early hold pressure"
             }
           ],
-          "confidence": 71,
+          "confidence": 72,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -4180,8 +4321,8 @@
             "name": "Elina Svitolina",
             "americanOdds": 104,
             "impliedPct": 49,
-            "modelPct": 57.2,
-            "edgePct": 8.2,
+            "modelPct": 58.8,
+            "edgePct": 9.8,
             "grossProfitPct": 104,
             "priceBand": "Coinflip"
           },
@@ -4189,8 +4330,8 @@
             "name": "Marta Kostyuk",
             "americanOdds": -125,
             "impliedPct": 55.6,
-            "modelPct": 42.8,
-            "edgePct": -12.8,
+            "modelPct": 41.2,
+            "edgePct": -14.4,
             "grossProfitPct": 80,
             "priceBand": "Coinflip"
           }
@@ -4201,7 +4342,7 @@
       }
     },
     {
-      "rank": 30,
+      "rank": 31,
       "match": "James Watt vs Harry Wendelken",
       "format": "ATP",
       "bestOf": 3,
@@ -4209,10 +4350,10 @@
       "court": "ATP Challenger Birmingham",
       "start": "3:40 AM",
       "pick": "Harry Wendelken",
-      "confidence": 63,
-      "volatility": 66,
+      "confidence": 61,
+      "volatility": 69,
       "tier": "Watch",
-      "rationale": "Harry Wendelken is only the current Robinhood market favorite over James Watt; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Harry Wendelken is only the current Robinhood market favorite over James Watt; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -4253,8 +4394,8 @@
           "selection": "Harry Wendelken",
           "line": null,
           "americanOdds": null,
-          "modelPct": 63,
-          "impliedPct": 63,
+          "modelPct": 61,
+          "impliedPct": 61,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -4282,22 +4423,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "James Watt 59% / Harry Wendelken 71%",
+          "selection": "James Watt 61% / Harry Wendelken 69%",
           "rows": [
             {
               "name": "James Watt",
-              "confidence": 59,
-              "modelPct": 37,
+              "confidence": 61,
+              "modelPct": 41,
               "label": "Underdog set-win path needs early holds"
             },
             {
               "name": "Harry Wendelken",
-              "confidence": 71,
-              "modelPct": 63,
+              "confidence": 69,
+              "modelPct": 61,
               "label": "Market favorite to win a set"
             }
           ],
-          "confidence": 71,
+          "confidence": 69,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -4320,19 +4461,19 @@
           {
             "name": "James Watt",
             "americanOdds": null,
-            "impliedPct": 37,
-            "modelPct": 37,
+            "impliedPct": 41,
+            "modelPct": 41,
             "edgePct": null,
-            "grossProfitPct": 63,
+            "grossProfitPct": 59,
             "priceBand": "Underdog"
           },
           {
             "name": "Harry Wendelken",
             "americanOdds": null,
-            "impliedPct": 63,
-            "modelPct": 63,
+            "impliedPct": 61,
+            "modelPct": 61,
             "edgePct": null,
-            "grossProfitPct": 37,
+            "grossProfitPct": 39,
             "priceBand": "Moderate favorite"
           }
         ],
@@ -4342,7 +4483,7 @@
       }
     },
     {
-      "rank": 31,
+      "rank": 32,
       "match": "Jan Choinski vs Tom Gentzsch",
       "format": "ATP",
       "bestOf": 3,
@@ -4353,7 +4494,7 @@
       "confidence": 59,
       "volatility": 71,
       "tier": "Watch",
-      "rationale": "Jan Choinski is only the current Robinhood market favorite over Tom Gentzsch; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Jan Choinski is only the current Robinhood market favorite over Tom Gentzsch; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -4434,7 +4575,7 @@
             {
               "name": "Tom Gentzsch",
               "confidence": 63,
-              "modelPct": 44,
+              "modelPct": 43,
               "label": "Underdog set-win path needs early holds"
             }
           ],
@@ -4470,10 +4611,10 @@
           {
             "name": "Tom Gentzsch",
             "americanOdds": null,
-            "impliedPct": 44,
-            "modelPct": 44,
+            "impliedPct": 43,
+            "modelPct": 43,
             "edgePct": null,
-            "grossProfitPct": 56,
+            "grossProfitPct": 57,
             "priceBand": "Underdog"
           }
         ],
@@ -4483,7 +4624,148 @@
       }
     },
     {
-      "rank": 32,
+      "rank": 33,
+      "match": "Luka Mikrut vs Alex Marti Pujolras",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": true,
+      "court": "ATP Challenger Bad Rappenau",
+      "start": "3:40 AM",
+      "pick": "Luka Mikrut",
+      "confidence": 67,
+      "volatility": 65,
+      "tier": "Watch",
+      "rationale": "Luka Mikrut is only the current Robinhood market favorite over Alex Marti Pujolras; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "weaknessEdge": {
+        "edgeType": "Market-only",
+        "target": "No warehouse weakness edge",
+        "scoreGap": null,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+        "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+        "spreadRead": "No spread line",
+        "totalRead": "No total line",
+        "pick": {
+          "name": "Luka Mikrut",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "opponent": {
+          "name": "Alex Marti Pujolras",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        }
+      },
+      "totals": "No posted sportsbook total captured for this Challenger market.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Luka Mikrut",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": 67,
+          "impliedPct": 67,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "grade": "Near fair",
+          "issue": "Favorite price needs better proof",
+          "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": null,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "Total games need expected match games vs the posted line."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Luka Mikrut 75% / Alex Marti Pujolras 55%",
+          "rows": [
+            {
+              "name": "Luka Mikrut",
+              "confidence": 75,
+              "modelPct": 67,
+              "label": "Market favorite to win a set"
+            },
+            {
+              "name": "Alex Marti Pujolras",
+              "confidence": 55,
+              "modelPct": 38,
+              "label": "Underdog set-win path needs early holds"
+            }
+          ],
+          "confidence": 75,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Price required",
+          "expectedGames": 9.8,
+          "confidence": 53,
+          "tiebreakRisk": 42,
+          "earlyBreakRisk": 58,
+          "grade": "Needs posted first-set total",
+          "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        }
+      ],
+      "market": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "moneyline": [
+          {
+            "name": "Luka Mikrut",
+            "americanOdds": null,
+            "impliedPct": 67,
+            "modelPct": 67,
+            "edgePct": null,
+            "grossProfitPct": 33,
+            "priceBand": "Moderate favorite"
+          },
+          {
+            "name": "Alex Marti Pujolras",
+            "americanOdds": null,
+            "impliedPct": 38,
+            "modelPct": 38,
+            "edgePct": null,
+            "grossProfitPct": 62,
+            "priceBand": "Underdog"
+          }
+        ],
+        "spread": "No game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      }
+    },
+    {
+      "rank": 34,
       "match": "Tristan Schoolkate vs Arthur Fery",
       "format": "ATP",
       "bestOf": 3,
@@ -4491,10 +4773,10 @@
       "court": "ATP Challenger Birmingham",
       "start": "3:40 AM",
       "pick": "Arthur Fery",
-      "confidence": 63,
-      "volatility": 67,
+      "confidence": 62,
+      "volatility": 68,
       "tier": "Watch",
-      "rationale": "Arthur Fery is only the current Robinhood market favorite over Tristan Schoolkate; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Arthur Fery is only the current Robinhood market favorite over Tristan Schoolkate; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -4535,8 +4817,8 @@
           "selection": "Arthur Fery",
           "line": null,
           "americanOdds": null,
-          "modelPct": 63,
-          "impliedPct": 63,
+          "modelPct": 62,
+          "impliedPct": 62,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -4564,22 +4846,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Tristan Schoolkate 59% / Arthur Fery 71%",
+          "selection": "Tristan Schoolkate 60% / Arthur Fery 70%",
           "rows": [
             {
               "name": "Tristan Schoolkate",
-              "confidence": 59,
-              "modelPct": 39,
+              "confidence": 60,
+              "modelPct": 40,
               "label": "Underdog set-win path needs early holds"
             },
             {
               "name": "Arthur Fery",
-              "confidence": 71,
-              "modelPct": 63,
+              "confidence": 70,
+              "modelPct": 62,
               "label": "Market favorite to win a set"
             }
           ],
-          "confidence": 71,
+          "confidence": 70,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -4602,19 +4884,19 @@
           {
             "name": "Tristan Schoolkate",
             "americanOdds": null,
-            "impliedPct": 39,
-            "modelPct": 39,
+            "impliedPct": 40,
+            "modelPct": 40,
             "edgePct": null,
-            "grossProfitPct": 61,
+            "grossProfitPct": 60,
             "priceBand": "Underdog"
           },
           {
             "name": "Arthur Fery",
             "americanOdds": null,
-            "impliedPct": 63,
-            "modelPct": 63,
+            "impliedPct": 62,
+            "modelPct": 62,
             "edgePct": null,
-            "grossProfitPct": 37,
+            "grossProfitPct": 38,
             "priceBand": "Moderate favorite"
           }
         ],
@@ -4624,7 +4906,7 @@
       }
     },
     {
-      "rank": 33,
+      "rank": 35,
       "match": "Maxim Mrva vs Dalibor Svrcina",
       "format": "ATP",
       "bestOf": 3,
@@ -4632,10 +4914,10 @@
       "court": "ATP Challenger Prostejov",
       "start": "3:50 AM",
       "pick": "Dalibor Svrcina",
-      "confidence": 73,
+      "confidence": 74,
       "volatility": 59,
       "tier": "Watch",
-      "rationale": "Dalibor Svrcina is only the current Robinhood market favorite over Maxim Mrva; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Dalibor Svrcina is only the current Robinhood market favorite over Maxim Mrva; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -4676,8 +4958,8 @@
           "selection": "Dalibor Svrcina",
           "line": null,
           "americanOdds": null,
-          "modelPct": 73,
-          "impliedPct": 73,
+          "modelPct": 74,
+          "impliedPct": 74,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -4705,22 +4987,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Maxim Mrva 49% / Dalibor Svrcina 81%",
+          "selection": "Maxim Mrva 48% / Dalibor Svrcina 82%",
           "rows": [
             {
               "name": "Maxim Mrva",
-              "confidence": 49,
+              "confidence": 48,
               "modelPct": 31,
               "label": "Underdog set-win path needs early holds"
             },
             {
               "name": "Dalibor Svrcina",
-              "confidence": 81,
-              "modelPct": 73,
+              "confidence": 82,
+              "modelPct": 74,
               "label": "Market favorite to win a set"
             }
           ],
-          "confidence": 81,
+          "confidence": 82,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -4752,10 +5034,10 @@
           {
             "name": "Dalibor Svrcina",
             "americanOdds": null,
-            "impliedPct": 73,
-            "modelPct": 73,
+            "impliedPct": 74,
+            "modelPct": 74,
             "edgePct": null,
-            "grossProfitPct": 27,
+            "grossProfitPct": 26,
             "priceBand": "Low-payout favorite"
           }
         ],
@@ -4765,7 +5047,7 @@
       }
     },
     {
-      "rank": 34,
+      "rank": 36,
       "match": "Viktor Durasovic vs Norbert Gombos",
       "format": "ATP",
       "bestOf": 3,
@@ -4773,10 +5055,10 @@
       "court": "ATP Challenger Prostejov",
       "start": "3:50 AM",
       "pick": "Norbert Gombos",
-      "confidence": 62,
+      "confidence": 61,
       "volatility": 69,
       "tier": "Watch",
-      "rationale": "Norbert Gombos is only the current Robinhood market favorite over Viktor Durasovic; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Norbert Gombos is only the current Robinhood market favorite over Viktor Durasovic; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -4817,8 +5099,8 @@
           "selection": "Norbert Gombos",
           "line": null,
           "americanOdds": null,
-          "modelPct": 62,
-          "impliedPct": 62,
+          "modelPct": 61,
+          "impliedPct": 61,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -4846,22 +5128,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Viktor Durasovic 60% / Norbert Gombos 70%",
+          "selection": "Viktor Durasovic 61% / Norbert Gombos 69%",
           "rows": [
             {
               "name": "Viktor Durasovic",
-              "confidence": 60,
-              "modelPct": 42,
+              "confidence": 61,
+              "modelPct": 41,
               "label": "Underdog set-win path needs early holds"
             },
             {
               "name": "Norbert Gombos",
-              "confidence": 70,
-              "modelPct": 62,
+              "confidence": 69,
+              "modelPct": 61,
               "label": "Market favorite to win a set"
             }
           ],
-          "confidence": 70,
+          "confidence": 69,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -4884,19 +5166,19 @@
           {
             "name": "Viktor Durasovic",
             "americanOdds": null,
-            "impliedPct": 42,
-            "modelPct": 42,
+            "impliedPct": 41,
+            "modelPct": 41,
             "edgePct": null,
-            "grossProfitPct": 58,
+            "grossProfitPct": 59,
             "priceBand": "Underdog"
           },
           {
             "name": "Norbert Gombos",
             "americanOdds": null,
-            "impliedPct": 62,
-            "modelPct": 62,
+            "impliedPct": 61,
+            "modelPct": 61,
             "edgePct": null,
-            "grossProfitPct": 38,
+            "grossProfitPct": 39,
             "priceBand": "Moderate favorite"
           }
         ],
@@ -4906,7 +5188,7 @@
       }
     },
     {
-      "rank": 35,
+      "rank": 37,
       "match": "Vitaliy Sachko vs Jan Kumstat",
       "format": "ATP",
       "bestOf": 3,
@@ -4914,10 +5196,10 @@
       "court": "ATP Challenger Prostejov",
       "start": "3:50 AM",
       "pick": "Vitaliy Sachko",
-      "confidence": 68,
+      "confidence": 67,
       "volatility": 64,
       "tier": "Watch",
-      "rationale": "Vitaliy Sachko is only the current Robinhood market favorite over Jan Kumstat; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Vitaliy Sachko is only the current Robinhood market favorite over Jan Kumstat; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -4958,8 +5240,8 @@
           "selection": "Vitaliy Sachko",
           "line": null,
           "americanOdds": null,
-          "modelPct": 68,
-          "impliedPct": 68,
+          "modelPct": 67,
+          "impliedPct": 67,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -4987,22 +5269,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Vitaliy Sachko 76% / Jan Kumstat 54%",
+          "selection": "Vitaliy Sachko 75% / Jan Kumstat 55%",
           "rows": [
             {
               "name": "Vitaliy Sachko",
-              "confidence": 76,
-              "modelPct": 68,
+              "confidence": 75,
+              "modelPct": 67,
               "label": "Market favorite to win a set"
             },
             {
               "name": "Jan Kumstat",
-              "confidence": 54,
-              "modelPct": 36,
+              "confidence": 55,
+              "modelPct": 35,
               "label": "Underdog set-win path needs early holds"
             }
           ],
-          "confidence": 76,
+          "confidence": 75,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -5025,14 +5307,296 @@
           {
             "name": "Vitaliy Sachko",
             "americanOdds": null,
-            "impliedPct": 68,
-            "modelPct": 68,
+            "impliedPct": 67,
+            "modelPct": 67,
             "edgePct": null,
-            "grossProfitPct": 32,
+            "grossProfitPct": 33,
             "priceBand": "Moderate favorite"
           },
           {
             "name": "Jan Kumstat",
+            "americanOdds": null,
+            "impliedPct": 35,
+            "modelPct": 35,
+            "edgePct": null,
+            "grossProfitPct": 65,
+            "priceBand": "Underdog"
+          }
+        ],
+        "spread": "No game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      }
+    },
+    {
+      "rank": 38,
+      "match": "Henri Squire vs Marc Polmans",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": true,
+      "court": "ATP Challenger Bad Rappenau",
+      "start": "4:00 AM",
+      "pick": "Henri Squire",
+      "confidence": 85,
+      "volatility": 48,
+      "tier": "Watch",
+      "rationale": "Henri Squire is only the current Robinhood market favorite over Marc Polmans; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "weaknessEdge": {
+        "edgeType": "Market-only",
+        "target": "No warehouse weakness edge",
+        "scoreGap": null,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+        "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+        "spreadRead": "No spread line",
+        "totalRead": "No total line",
+        "pick": {
+          "name": "Henri Squire",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "opponent": {
+          "name": "Marc Polmans",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        }
+      },
+      "totals": "No posted sportsbook total captured for this Challenger market.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Henri Squire",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": 85,
+          "impliedPct": 85,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "grade": "Near fair",
+          "issue": "Favorite price needs better proof",
+          "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": null,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "Total games need expected match games vs the posted line."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Henri Squire 88% / Marc Polmans 37%",
+          "rows": [
+            {
+              "name": "Henri Squire",
+              "confidence": 88,
+              "modelPct": 85,
+              "label": "Market favorite to win a set"
+            },
+            {
+              "name": "Marc Polmans",
+              "confidence": 37,
+              "modelPct": 18,
+              "label": "Underdog set-win path needs early holds"
+            }
+          ],
+          "confidence": 88,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Price required",
+          "expectedGames": 8.8,
+          "confidence": 48,
+          "tiebreakRisk": 52,
+          "earlyBreakRisk": 48,
+          "grade": "Needs posted first-set total",
+          "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        }
+      ],
+      "market": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "moneyline": [
+          {
+            "name": "Henri Squire",
+            "americanOdds": null,
+            "impliedPct": 85,
+            "modelPct": 85,
+            "edgePct": null,
+            "grossProfitPct": 15,
+            "priceBand": "Very expensive favorite"
+          },
+          {
+            "name": "Marc Polmans",
+            "americanOdds": null,
+            "impliedPct": 18,
+            "modelPct": 18,
+            "edgePct": null,
+            "grossProfitPct": 82,
+            "priceBand": "Underdog"
+          }
+        ],
+        "spread": "No game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      }
+    },
+    {
+      "rank": 39,
+      "match": "Dusan Lajovic vs Gonzalo Bueno",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": true,
+      "court": "ATP Challenger Perugia",
+      "start": "4:30 AM",
+      "pick": "Dusan Lajovic",
+      "confidence": 67,
+      "volatility": 64,
+      "tier": "Watch",
+      "rationale": "Dusan Lajovic is only the current Robinhood market favorite over Gonzalo Bueno; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "weaknessEdge": {
+        "edgeType": "Market-only",
+        "target": "No warehouse weakness edge",
+        "scoreGap": null,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+        "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+        "spreadRead": "No spread line",
+        "totalRead": "No total line",
+        "pick": {
+          "name": "Dusan Lajovic",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "opponent": {
+          "name": "Gonzalo Bueno",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        }
+      },
+      "totals": "No posted sportsbook total captured for this Challenger market.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Dusan Lajovic",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": 67,
+          "impliedPct": 67,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "grade": "Near fair",
+          "issue": "Favorite price needs better proof",
+          "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": null,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "Total games need expected match games vs the posted line."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Dusan Lajovic 75% / Gonzalo Bueno 55%",
+          "rows": [
+            {
+              "name": "Dusan Lajovic",
+              "confidence": 75,
+              "modelPct": 67,
+              "label": "Market favorite to win a set"
+            },
+            {
+              "name": "Gonzalo Bueno",
+              "confidence": 55,
+              "modelPct": 36,
+              "label": "Underdog set-win path needs early holds"
+            }
+          ],
+          "confidence": 75,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Price required",
+          "expectedGames": 9.8,
+          "confidence": 53,
+          "tiebreakRisk": 42,
+          "earlyBreakRisk": 58,
+          "grade": "Needs posted first-set total",
+          "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        }
+      ],
+      "market": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "moneyline": [
+          {
+            "name": "Dusan Lajovic",
+            "americanOdds": null,
+            "impliedPct": 67,
+            "modelPct": 67,
+            "edgePct": null,
+            "grossProfitPct": 33,
+            "priceBand": "Moderate favorite"
+          },
+          {
+            "name": "Gonzalo Bueno",
             "americanOdds": null,
             "impliedPct": 36,
             "modelPct": 36,
@@ -5047,7 +5611,148 @@
       }
     },
     {
-      "rank": 36,
+      "rank": 40,
+      "match": "Giles Hussey vs Sasikumar Mukund",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": true,
+      "court": "ATP Challenger Centurion 2",
+      "start": "4:30 AM",
+      "pick": "Giles Hussey",
+      "confidence": 78,
+      "volatility": 54,
+      "tier": "Watch",
+      "rationale": "Giles Hussey is only the current Robinhood market favorite over Sasikumar Mukund; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "weaknessEdge": {
+        "edgeType": "Market-only",
+        "target": "No warehouse weakness edge",
+        "scoreGap": null,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+        "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+        "spreadRead": "No spread line",
+        "totalRead": "No total line",
+        "pick": {
+          "name": "Giles Hussey",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "opponent": {
+          "name": "Sasikumar Mukund",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        }
+      },
+      "totals": "No posted sportsbook total captured for this Challenger market.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Giles Hussey",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": 78,
+          "impliedPct": 78,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "grade": "Near fair",
+          "issue": "Favorite price needs better proof",
+          "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": null,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "Total games need expected match games vs the posted line."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Giles Hussey 86% / Sasikumar Mukund 44%",
+          "rows": [
+            {
+              "name": "Giles Hussey",
+              "confidence": 86,
+              "modelPct": 78,
+              "label": "Market favorite to win a set"
+            },
+            {
+              "name": "Sasikumar Mukund",
+              "confidence": 44,
+              "modelPct": 25,
+              "label": "Underdog set-win path needs early holds"
+            }
+          ],
+          "confidence": 86,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Price required",
+          "expectedGames": 8.8,
+          "confidence": 48,
+          "tiebreakRisk": 52,
+          "earlyBreakRisk": 48,
+          "grade": "Needs posted first-set total",
+          "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        }
+      ],
+      "market": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "moneyline": [
+          {
+            "name": "Giles Hussey",
+            "americanOdds": null,
+            "impliedPct": 78,
+            "modelPct": 78,
+            "edgePct": null,
+            "grossProfitPct": 22,
+            "priceBand": "Low-payout favorite"
+          },
+          {
+            "name": "Sasikumar Mukund",
+            "americanOdds": null,
+            "impliedPct": 25,
+            "modelPct": 25,
+            "edgePct": null,
+            "grossProfitPct": 75,
+            "priceBand": "Underdog"
+          }
+        ],
+        "spread": "No game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      }
+    },
+    {
+      "rank": 41,
       "match": "Robin Bertrand vs Patrick Zahraj",
       "format": "ATP",
       "bestOf": 3,
@@ -5058,7 +5763,7 @@
       "confidence": 62,
       "volatility": 69,
       "tier": "Watch",
-      "rationale": "Robin Bertrand is only the current Robinhood market favorite over Patrick Zahraj; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Robin Bertrand is only the current Robinhood market favorite over Patrick Zahraj; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -5188,7 +5893,148 @@
       }
     },
     {
-      "rank": 37,
+      "rank": 42,
+      "match": "Clement Chidekh vs Filippo Romano",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": true,
+      "court": "ATP Challenger Birmingham",
+      "start": "4:50 AM",
+      "pick": "Clement Chidekh",
+      "confidence": 65,
+      "volatility": 65,
+      "tier": "Watch",
+      "rationale": "Clement Chidekh is only the current Robinhood market favorite over Filippo Romano; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "weaknessEdge": {
+        "edgeType": "Market-only",
+        "target": "No warehouse weakness edge",
+        "scoreGap": null,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+        "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+        "spreadRead": "No spread line",
+        "totalRead": "No total line",
+        "pick": {
+          "name": "Clement Chidekh",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "opponent": {
+          "name": "Filippo Romano",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        }
+      },
+      "totals": "No posted sportsbook total captured for this Challenger market.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Clement Chidekh",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": 65,
+          "impliedPct": 65,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "grade": "Near fair",
+          "issue": "Favorite price needs better proof",
+          "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": null,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "Total games need expected match games vs the posted line."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Clement Chidekh 73% / Filippo Romano 57%",
+          "rows": [
+            {
+              "name": "Clement Chidekh",
+              "confidence": 73,
+              "modelPct": 65,
+              "label": "Market favorite to win a set"
+            },
+            {
+              "name": "Filippo Romano",
+              "confidence": 57,
+              "modelPct": 37,
+              "label": "Underdog set-win path needs early holds"
+            }
+          ],
+          "confidence": 73,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Price required",
+          "expectedGames": 9.8,
+          "confidence": 53,
+          "tiebreakRisk": 42,
+          "earlyBreakRisk": 58,
+          "grade": "Needs posted first-set total",
+          "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        }
+      ],
+      "market": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "moneyline": [
+          {
+            "name": "Clement Chidekh",
+            "americanOdds": null,
+            "impliedPct": 65,
+            "modelPct": 65,
+            "edgePct": null,
+            "grossProfitPct": 35,
+            "priceBand": "Moderate favorite"
+          },
+          {
+            "name": "Filippo Romano",
+            "americanOdds": null,
+            "impliedPct": 37,
+            "modelPct": 37,
+            "edgePct": null,
+            "grossProfitPct": 63,
+            "priceBand": "Underdog"
+          }
+        ],
+        "spread": "No game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      }
+    },
+    {
+      "rank": 43,
       "match": "Coleman Wong vs Oliver Tarvet",
       "format": "ATP",
       "bestOf": 3,
@@ -5199,7 +6045,7 @@
       "confidence": 59,
       "volatility": 71,
       "tier": "Watch",
-      "rationale": "Coleman Wong is only the current Robinhood market favorite over Oliver Tarvet; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Coleman Wong is only the current Robinhood market favorite over Oliver Tarvet; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -5329,7 +6175,853 @@
       }
     },
     {
-      "rank": 38,
+      "rank": 44,
+      "match": "Daniel Elahi Galan vs Max Hans Rehberg",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": true,
+      "court": "ATP Challenger Bad Rappenau",
+      "start": "4:50 AM",
+      "pick": "Daniel Elahi Galan",
+      "confidence": 57,
+      "volatility": 73,
+      "tier": "Watch",
+      "rationale": "Daniel Elahi Galan is only the current Robinhood market favorite over Max Hans Rehberg; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "weaknessEdge": {
+        "edgeType": "Market-only",
+        "target": "No warehouse weakness edge",
+        "scoreGap": null,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+        "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+        "spreadRead": "No spread line",
+        "totalRead": "No total line",
+        "pick": {
+          "name": "Daniel Elahi Galan",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "opponent": {
+          "name": "Max Hans Rehberg",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        }
+      },
+      "totals": "No posted sportsbook total captured for this Challenger market.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Daniel Elahi Galan",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": 57,
+          "impliedPct": 57,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "grade": "Near fair",
+          "issue": "Favorite price needs better proof",
+          "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": null,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "Total games need expected match games vs the posted line."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Daniel Elahi Galan 65% / Max Hans Rehberg 65%",
+          "rows": [
+            {
+              "name": "Daniel Elahi Galan",
+              "confidence": 65,
+              "modelPct": 57,
+              "label": "Market favorite to win a set"
+            },
+            {
+              "name": "Max Hans Rehberg",
+              "confidence": 65,
+              "modelPct": 45,
+              "label": "Underdog set-win path needs early holds"
+            }
+          ],
+          "confidence": 65,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Price required",
+          "expectedGames": 9.8,
+          "confidence": 53,
+          "tiebreakRisk": 42,
+          "earlyBreakRisk": 58,
+          "grade": "Needs posted first-set total",
+          "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        }
+      ],
+      "market": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "moneyline": [
+          {
+            "name": "Daniel Elahi Galan",
+            "americanOdds": null,
+            "impliedPct": 57,
+            "modelPct": 57,
+            "edgePct": null,
+            "grossProfitPct": 43,
+            "priceBand": "Coinflip"
+          },
+          {
+            "name": "Max Hans Rehberg",
+            "americanOdds": null,
+            "impliedPct": 45,
+            "modelPct": 45,
+            "edgePct": null,
+            "grossProfitPct": 55,
+            "priceBand": "Coinflip"
+          }
+        ],
+        "spread": "No game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      }
+    },
+    {
+      "rank": 45,
+      "match": "Marvin Moeller vs Gauthier Onclin",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": true,
+      "court": "ATP Challenger Bad Rappenau",
+      "start": "4:50 AM",
+      "pick": "Gauthier Onclin",
+      "confidence": 64,
+      "volatility": 66,
+      "tier": "Watch",
+      "rationale": "Gauthier Onclin is only the current Robinhood market favorite over Marvin Moeller; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "weaknessEdge": {
+        "edgeType": "Market-only",
+        "target": "No warehouse weakness edge",
+        "scoreGap": null,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+        "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+        "spreadRead": "No spread line",
+        "totalRead": "No total line",
+        "pick": {
+          "name": "Gauthier Onclin",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "opponent": {
+          "name": "Marvin Moeller",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        }
+      },
+      "totals": "No posted sportsbook total captured for this Challenger market.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Gauthier Onclin",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": 64,
+          "impliedPct": 64,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "grade": "Near fair",
+          "issue": "Favorite price needs better proof",
+          "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": null,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "Total games need expected match games vs the posted line."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Marvin Moeller 58% / Gauthier Onclin 72%",
+          "rows": [
+            {
+              "name": "Marvin Moeller",
+              "confidence": 58,
+              "modelPct": 38,
+              "label": "Underdog set-win path needs early holds"
+            },
+            {
+              "name": "Gauthier Onclin",
+              "confidence": 72,
+              "modelPct": 64,
+              "label": "Market favorite to win a set"
+            }
+          ],
+          "confidence": 72,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Price required",
+          "expectedGames": 9.8,
+          "confidence": 53,
+          "tiebreakRisk": 42,
+          "earlyBreakRisk": 58,
+          "grade": "Needs posted first-set total",
+          "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        }
+      ],
+      "market": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "moneyline": [
+          {
+            "name": "Marvin Moeller",
+            "americanOdds": null,
+            "impliedPct": 38,
+            "modelPct": 38,
+            "edgePct": null,
+            "grossProfitPct": 62,
+            "priceBand": "Underdog"
+          },
+          {
+            "name": "Gauthier Onclin",
+            "americanOdds": null,
+            "impliedPct": 64,
+            "modelPct": 64,
+            "edgePct": null,
+            "grossProfitPct": 36,
+            "priceBand": "Moderate favorite"
+          }
+        ],
+        "spread": "No game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      }
+    },
+    {
+      "rank": 46,
+      "match": "Carlo Alberto Caniato vs Milos Karol",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": true,
+      "court": "ATP Challenger Prostejov",
+      "start": "5:00 AM",
+      "pick": "Carlo Alberto Caniato",
+      "confidence": 59,
+      "volatility": 72,
+      "tier": "Watch",
+      "rationale": "Carlo Alberto Caniato is only the current Robinhood market favorite over Milos Karol; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "weaknessEdge": {
+        "edgeType": "Market-only",
+        "target": "No warehouse weakness edge",
+        "scoreGap": null,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+        "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+        "spreadRead": "No spread line",
+        "totalRead": "No total line",
+        "pick": {
+          "name": "Carlo Alberto Caniato",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "opponent": {
+          "name": "Milos Karol",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        }
+      },
+      "totals": "No posted sportsbook total captured for this Challenger market.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Carlo Alberto Caniato",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": 59,
+          "impliedPct": 59,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "grade": "Near fair",
+          "issue": "Favorite price needs better proof",
+          "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": null,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "Total games need expected match games vs the posted line."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Carlo Alberto Caniato 67% / Milos Karol 63%",
+          "rows": [
+            {
+              "name": "Carlo Alberto Caniato",
+              "confidence": 67,
+              "modelPct": 59,
+              "label": "Market favorite to win a set"
+            },
+            {
+              "name": "Milos Karol",
+              "confidence": 63,
+              "modelPct": 45,
+              "label": "Underdog set-win path needs early holds"
+            }
+          ],
+          "confidence": 67,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Price required",
+          "expectedGames": 9.8,
+          "confidence": 53,
+          "tiebreakRisk": 42,
+          "earlyBreakRisk": 58,
+          "grade": "Needs posted first-set total",
+          "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        }
+      ],
+      "market": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "moneyline": [
+          {
+            "name": "Carlo Alberto Caniato",
+            "americanOdds": null,
+            "impliedPct": 59,
+            "modelPct": 59,
+            "edgePct": null,
+            "grossProfitPct": 41,
+            "priceBand": "Moderate favorite"
+          },
+          {
+            "name": "Milos Karol",
+            "americanOdds": null,
+            "impliedPct": 45,
+            "modelPct": 45,
+            "edgePct": null,
+            "grossProfitPct": 55,
+            "priceBand": "Coinflip"
+          }
+        ],
+        "spread": "No game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      }
+    },
+    {
+      "rank": 47,
+      "match": "Hynek Barton vs Roberto Bautista Agut",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": true,
+      "court": "ATP Challenger Prostejov",
+      "start": "5:00 AM",
+      "pick": "Roberto Bautista Agut",
+      "confidence": 57,
+      "volatility": 74,
+      "tier": "Watch",
+      "rationale": "Roberto Bautista Agut is only the current Robinhood market favorite over Hynek Barton; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "weaknessEdge": {
+        "edgeType": "Market-only",
+        "target": "No warehouse weakness edge",
+        "scoreGap": null,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+        "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+        "spreadRead": "No spread line",
+        "totalRead": "No total line",
+        "pick": {
+          "name": "Roberto Bautista Agut",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "opponent": {
+          "name": "Hynek Barton",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        }
+      },
+      "totals": "No posted sportsbook total captured for this Challenger market.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Roberto Bautista Agut",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": 57,
+          "impliedPct": 57,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "grade": "Near fair",
+          "issue": "Favorite price needs better proof",
+          "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": null,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "Total games need expected match games vs the posted line."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Hynek Barton 65% / Roberto Bautista Agut 65%",
+          "rows": [
+            {
+              "name": "Hynek Barton",
+              "confidence": 65,
+              "modelPct": 47,
+              "label": "Underdog set-win path needs early holds"
+            },
+            {
+              "name": "Roberto Bautista Agut",
+              "confidence": 65,
+              "modelPct": 57,
+              "label": "Market favorite to win a set"
+            }
+          ],
+          "confidence": 65,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Price required",
+          "expectedGames": 9.8,
+          "confidence": 53,
+          "tiebreakRisk": 42,
+          "earlyBreakRisk": 58,
+          "grade": "Needs posted first-set total",
+          "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        }
+      ],
+      "market": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "moneyline": [
+          {
+            "name": "Hynek Barton",
+            "americanOdds": null,
+            "impliedPct": 47,
+            "modelPct": 47,
+            "edgePct": null,
+            "grossProfitPct": 53,
+            "priceBand": "Coinflip"
+          },
+          {
+            "name": "Roberto Bautista Agut",
+            "americanOdds": null,
+            "impliedPct": 57,
+            "modelPct": 57,
+            "edgePct": null,
+            "grossProfitPct": 43,
+            "priceBand": "Coinflip"
+          }
+        ],
+        "spread": "No game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      }
+    },
+    {
+      "rank": 48,
+      "match": "Jacob Fearnley vs Rinky Hijikata",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": true,
+      "court": "ATP Challenger Birmingham",
+      "start": "5:00 AM",
+      "pick": "Jacob Fearnley",
+      "confidence": 55,
+      "volatility": 74,
+      "tier": "Watch",
+      "rationale": "Jacob Fearnley is only the current Robinhood market favorite over Rinky Hijikata; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "weaknessEdge": {
+        "edgeType": "Market-only",
+        "target": "No warehouse weakness edge",
+        "scoreGap": null,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+        "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+        "spreadRead": "No spread line",
+        "totalRead": "No total line",
+        "pick": {
+          "name": "Jacob Fearnley",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "opponent": {
+          "name": "Rinky Hijikata",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        }
+      },
+      "totals": "No posted sportsbook total captured for this Challenger market.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Jacob Fearnley",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": 55,
+          "impliedPct": 55,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "grade": "Near fair",
+          "issue": "Favorite price needs better proof",
+          "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": null,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "Total games need expected match games vs the posted line."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Jacob Fearnley 63% / Rinky Hijikata 67%",
+          "rows": [
+            {
+              "name": "Jacob Fearnley",
+              "confidence": 63,
+              "modelPct": 55,
+              "label": "Market favorite to win a set"
+            },
+            {
+              "name": "Rinky Hijikata",
+              "confidence": 67,
+              "modelPct": 47,
+              "label": "Underdog set-win path needs early holds"
+            }
+          ],
+          "confidence": 67,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Price required",
+          "expectedGames": 10.1,
+          "confidence": 53,
+          "tiebreakRisk": 42,
+          "earlyBreakRisk": 58,
+          "grade": "Needs posted first-set total",
+          "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        }
+      ],
+      "market": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "moneyline": [
+          {
+            "name": "Jacob Fearnley",
+            "americanOdds": null,
+            "impliedPct": 55,
+            "modelPct": 55,
+            "edgePct": null,
+            "grossProfitPct": 45,
+            "priceBand": "Coinflip"
+          },
+          {
+            "name": "Rinky Hijikata",
+            "americanOdds": null,
+            "impliedPct": 47,
+            "modelPct": 47,
+            "edgePct": null,
+            "grossProfitPct": 53,
+            "priceBand": "Coinflip"
+          }
+        ],
+        "spread": "No game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      }
+    },
+    {
+      "rank": 49,
+      "match": "Mackenzie McDonald vs Nicolai Budkov Kjaer",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": true,
+      "court": "ATP Challenger Birmingham",
+      "start": "5:00 AM",
+      "pick": "Nicolai Budkov Kjaer",
+      "confidence": 52,
+      "volatility": 76,
+      "tier": "Watch",
+      "rationale": "Nicolai Budkov Kjaer is only the current Robinhood market favorite over Mackenzie McDonald; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "weaknessEdge": {
+        "edgeType": "Market-only",
+        "target": "No warehouse weakness edge",
+        "scoreGap": null,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+        "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+        "spreadRead": "No spread line",
+        "totalRead": "No total line",
+        "pick": {
+          "name": "Nicolai Budkov Kjaer",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "opponent": {
+          "name": "Mackenzie McDonald",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        }
+      },
+      "totals": "No posted sportsbook total captured for this Challenger market.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Nicolai Budkov Kjaer",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": 52,
+          "impliedPct": 52,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "grade": "Near fair",
+          "issue": "Favorite price needs better proof",
+          "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": null,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "Total games need expected match games vs the posted line."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Mackenzie McDonald 70% / Nicolai Budkov Kjaer 60%",
+          "rows": [
+            {
+              "name": "Mackenzie McDonald",
+              "confidence": 70,
+              "modelPct": 48,
+              "label": "Underdog set-win path needs early holds"
+            },
+            {
+              "name": "Nicolai Budkov Kjaer",
+              "confidence": 60,
+              "modelPct": 52,
+              "label": "Market favorite to win a set"
+            }
+          ],
+          "confidence": 70,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Price required",
+          "expectedGames": 10.1,
+          "confidence": 53,
+          "tiebreakRisk": 42,
+          "earlyBreakRisk": 58,
+          "grade": "Needs posted first-set total",
+          "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        }
+      ],
+      "market": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "moneyline": [
+          {
+            "name": "Mackenzie McDonald",
+            "americanOdds": null,
+            "impliedPct": 48,
+            "modelPct": 48,
+            "edgePct": null,
+            "grossProfitPct": 52,
+            "priceBand": "Coinflip"
+          },
+          {
+            "name": "Nicolai Budkov Kjaer",
+            "americanOdds": null,
+            "impliedPct": 52,
+            "modelPct": 52,
+            "edgePct": null,
+            "grossProfitPct": 48,
+            "priceBand": "Coinflip"
+          }
+        ],
+        "spread": "No game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      }
+    },
+    {
+      "rank": 50,
       "match": "Rafael Jodar vs Alexander Zverev",
       "format": "ATP",
       "bestOf": 5,
@@ -5337,7 +7029,7 @@
       "court": "Court Philippe-Chatrier",
       "start": "5:00 AM",
       "pick": "Alexander Zverev",
-      "confidence": 53.4,
+      "confidence": 50.1,
       "volatility": 37,
       "tier": "Watch",
       "rationale": "Recent service hold is close: Alexander Zverev 82%, Rafael Jodar 83%. Rafael Jodar grades 21 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
@@ -5420,11 +7112,11 @@
           "selection": "Alexander Zverev",
           "line": null,
           "americanOdds": -310,
-          "modelPct": 53.4,
+          "modelPct": 50.1,
           "impliedPct": 75.6,
-          "edgePct": -22.2,
-          "evPer100": -29.4,
-          "netEvPer100": -31.4,
+          "edgePct": -25.5,
+          "evPer100": -33.7,
+          "netEvPer100": -35.7,
           "grade": "Negative EV",
           "issue": "Favorite price needs better proof",
           "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
@@ -5435,15 +7127,15 @@
           "selection": "Alexander Zverev",
           "line": -5.5,
           "americanOdds": -104,
-          "modelPct": 51,
+          "modelPct": 48,
           "impliedPct": 51,
-          "edgePct": 0,
-          "evPer100": 0,
-          "netEvPer100": -2,
+          "edgePct": -3,
+          "evPer100": -5.8,
+          "netEvPer100": -7.8,
           "expectedGames": null,
           "edgeGames": null,
-          "confidence": 51,
-          "grade": "Near fair",
+          "confidence": 48,
+          "grade": "Negative EV",
           "reason": "Spread is number-dependent; verify first service cycle"
         },
         {
@@ -5466,22 +7158,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Rafael Jodar 73% / Alexander Zverev 83%",
+          "selection": "Rafael Jodar 76% / Alexander Zverev 82%",
           "rows": [
             {
               "name": "Rafael Jodar",
-              "confidence": 73,
-              "modelPct": 46.6,
+              "confidence": 76,
+              "modelPct": 49.9,
               "label": "Live to win a set"
             },
             {
               "name": "Alexander Zverev",
-              "confidence": 83,
-              "modelPct": 53.4,
+              "confidence": 82,
+              "modelPct": 50.1,
               "label": "Strong set-win path"
             }
           ],
-          "confidence": 83,
+          "confidence": 82,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -5489,12 +7181,12 @@
           "marketType": "First-set total games",
           "label": "1st set O/U",
           "selection": "Over 9.5",
-          "expectedGames": 10.4,
-          "confidence": 68,
+          "expectedGames": 10.5,
+          "confidence": 69,
           "tiebreakRisk": 24,
           "earlyBreakRisk": 56,
           "grade": "Actionable live watch",
-          "reason": "Expected first-set games 10.4 vs FanDuel 9.5; Over 9.5. hold avg 83%, return games won 35%, first-set sample 9.5g, 49 recent sets."
+          "reason": "Expected first-set games 10.5 vs FanDuel 9.5; Over 9.5. hold avg 83%, return games won 35%, first-set sample 9.5g, 49 recent sets."
         }
       ],
       "market": {
@@ -5505,8 +7197,8 @@
             "name": "Rafael Jodar",
             "americanOdds": 245,
             "impliedPct": 29,
-            "modelPct": 46.6,
-            "edgePct": 17.6,
+            "modelPct": 49.9,
+            "edgePct": 20.9,
             "grossProfitPct": 245,
             "priceBand": "Underdog"
           },
@@ -5514,8 +7206,8 @@
             "name": "Alexander Zverev",
             "americanOdds": -310,
             "impliedPct": 75.6,
-            "modelPct": 53.4,
-            "edgePct": -22.2,
+            "modelPct": 50.1,
+            "edgePct": -25.5,
             "grossProfitPct": 32.3,
             "priceBand": "Low-payout favorite"
           }
@@ -5526,7 +7218,289 @@
       }
     },
     {
-      "rank": 39,
+      "rank": 51,
+      "match": "Zsombor Piros vs Alex Molcan",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": true,
+      "court": "ATP Challenger Prostejov",
+      "start": "5:00 AM",
+      "pick": "Alex Molcan",
+      "confidence": 61,
+      "volatility": 69,
+      "tier": "Watch",
+      "rationale": "Alex Molcan is only the current Robinhood market favorite over Zsombor Piros; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "weaknessEdge": {
+        "edgeType": "Market-only",
+        "target": "No warehouse weakness edge",
+        "scoreGap": null,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+        "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+        "spreadRead": "No spread line",
+        "totalRead": "No total line",
+        "pick": {
+          "name": "Alex Molcan",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "opponent": {
+          "name": "Zsombor Piros",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        }
+      },
+      "totals": "No posted sportsbook total captured for this Challenger market.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Alex Molcan",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": 61,
+          "impliedPct": 61,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "grade": "Near fair",
+          "issue": "Favorite price needs better proof",
+          "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": null,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "Total games need expected match games vs the posted line."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Zsombor Piros 61% / Alex Molcan 69%",
+          "rows": [
+            {
+              "name": "Zsombor Piros",
+              "confidence": 61,
+              "modelPct": 42,
+              "label": "Underdog set-win path needs early holds"
+            },
+            {
+              "name": "Alex Molcan",
+              "confidence": 69,
+              "modelPct": 61,
+              "label": "Market favorite to win a set"
+            }
+          ],
+          "confidence": 69,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Price required",
+          "expectedGames": 9.8,
+          "confidence": 53,
+          "tiebreakRisk": 42,
+          "earlyBreakRisk": 58,
+          "grade": "Needs posted first-set total",
+          "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        }
+      ],
+      "market": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "moneyline": [
+          {
+            "name": "Zsombor Piros",
+            "americanOdds": null,
+            "impliedPct": 42,
+            "modelPct": 42,
+            "edgePct": null,
+            "grossProfitPct": 58,
+            "priceBand": "Underdog"
+          },
+          {
+            "name": "Alex Molcan",
+            "americanOdds": null,
+            "impliedPct": 61,
+            "modelPct": 61,
+            "edgePct": null,
+            "grossProfitPct": 39,
+            "priceBand": "Moderate favorite"
+          }
+        ],
+        "spread": "No game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      }
+    },
+    {
+      "rank": 52,
+      "match": "Dominik Palan vs Alec Beckley",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": true,
+      "court": "ATP Challenger Centurion 2",
+      "start": "5:40 AM",
+      "pick": "Alec Beckley",
+      "confidence": 64,
+      "volatility": 69,
+      "tier": "Watch",
+      "rationale": "Alec Beckley is only the current Robinhood market favorite over Dominik Palan; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "weaknessEdge": {
+        "edgeType": "Market-only",
+        "target": "No warehouse weakness edge",
+        "scoreGap": null,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+        "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+        "spreadRead": "No spread line",
+        "totalRead": "No total line",
+        "pick": {
+          "name": "Alec Beckley",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "opponent": {
+          "name": "Dominik Palan",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        }
+      },
+      "totals": "No posted sportsbook total captured for this Challenger market.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Alec Beckley",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": 64,
+          "impliedPct": 64,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "grade": "Near fair",
+          "issue": "Favorite price needs better proof",
+          "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": null,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "Total games need expected match games vs the posted line."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Dominik Palan 58% / Alec Beckley 72%",
+          "rows": [
+            {
+              "name": "Dominik Palan",
+              "confidence": 58,
+              "modelPct": 44,
+              "label": "Underdog set-win path needs early holds"
+            },
+            {
+              "name": "Alec Beckley",
+              "confidence": 72,
+              "modelPct": 64,
+              "label": "Market favorite to win a set"
+            }
+          ],
+          "confidence": 72,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Price required",
+          "expectedGames": 9.8,
+          "confidence": 53,
+          "tiebreakRisk": 42,
+          "earlyBreakRisk": 58,
+          "grade": "Needs posted first-set total",
+          "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        }
+      ],
+      "market": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "moneyline": [
+          {
+            "name": "Dominik Palan",
+            "americanOdds": null,
+            "impliedPct": 44,
+            "modelPct": 44,
+            "edgePct": null,
+            "grossProfitPct": 56,
+            "priceBand": "Underdog"
+          },
+          {
+            "name": "Alec Beckley",
+            "americanOdds": null,
+            "impliedPct": 64,
+            "modelPct": 64,
+            "edgePct": null,
+            "grossProfitPct": 36,
+            "priceBand": "Moderate favorite"
+          }
+        ],
+        "spread": "No game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      }
+    },
+    {
+      "rank": 53,
       "match": "Tuncay Duran vs Stefano Napolitano",
       "format": "ATP",
       "bestOf": 3,
@@ -5534,10 +7508,10 @@
       "court": "ATP Challenger Centurion 2",
       "start": "5:40 AM",
       "pick": "Stefano Napolitano",
-      "confidence": 76,
-      "volatility": 56,
+      "confidence": 78,
+      "volatility": 55,
       "tier": "Watch",
-      "rationale": "Stefano Napolitano is only the current Robinhood market favorite over Tuncay Duran; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Stefano Napolitano is only the current Robinhood market favorite over Tuncay Duran; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -5578,8 +7552,8 @@
           "selection": "Stefano Napolitano",
           "line": null,
           "americanOdds": null,
-          "modelPct": 76,
-          "impliedPct": 76,
+          "modelPct": 78,
+          "impliedPct": 78,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -5607,22 +7581,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Tuncay Duran 46% / Stefano Napolitano 84%",
+          "selection": "Tuncay Duran 44% / Stefano Napolitano 86%",
           "rows": [
             {
               "name": "Tuncay Duran",
-              "confidence": 46,
+              "confidence": 44,
               "modelPct": 27,
               "label": "Underdog set-win path needs early holds"
             },
             {
               "name": "Stefano Napolitano",
-              "confidence": 84,
-              "modelPct": 76,
+              "confidence": 86,
+              "modelPct": 78,
               "label": "Market favorite to win a set"
             }
           ],
-          "confidence": 84,
+          "confidence": 86,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -5654,10 +7628,10 @@
           {
             "name": "Stefano Napolitano",
             "americanOdds": null,
-            "impliedPct": 76,
-            "modelPct": 76,
+            "impliedPct": 78,
+            "modelPct": 78,
             "edgePct": null,
-            "grossProfitPct": 24,
+            "grossProfitPct": 22,
             "priceBand": "Low-payout favorite"
           }
         ],
@@ -5667,7 +7641,7 @@
       }
     },
     {
-      "rank": 40,
+      "rank": 54,
       "match": "Jack Pinnington Jones vs Aleksandar Vukic",
       "format": "ATP",
       "bestOf": 3,
@@ -5678,7 +7652,7 @@
       "confidence": 56,
       "volatility": 74,
       "tier": "Watch",
-      "rationale": "Jack Pinnington Jones is only the current Robinhood market favorite over Aleksandar Vukic; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Jack Pinnington Jones is only the current Robinhood market favorite over Aleksandar Vukic; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -5808,7 +7782,148 @@
       }
     },
     {
-      "rank": 41,
+      "rank": 55,
+      "match": "Ugo Blanchet vs Felix Gill",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": true,
+      "court": "ATP Challenger Birmingham",
+      "start": "6:10 AM",
+      "pick": "Felix Gill",
+      "confidence": 57,
+      "volatility": 74,
+      "tier": "Watch",
+      "rationale": "Felix Gill is only the current Robinhood market favorite over Ugo Blanchet; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "weaknessEdge": {
+        "edgeType": "Market-only",
+        "target": "No warehouse weakness edge",
+        "scoreGap": null,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+        "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+        "spreadRead": "No spread line",
+        "totalRead": "No total line",
+        "pick": {
+          "name": "Felix Gill",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "opponent": {
+          "name": "Ugo Blanchet",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        }
+      },
+      "totals": "No posted sportsbook total captured for this Challenger market.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Felix Gill",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": 57,
+          "impliedPct": 57,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "grade": "Near fair",
+          "issue": "Favorite price needs better proof",
+          "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": null,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "Total games need expected match games vs the posted line."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Ugo Blanchet 65% / Felix Gill 65%",
+          "rows": [
+            {
+              "name": "Ugo Blanchet",
+              "confidence": 65,
+              "modelPct": 47,
+              "label": "Underdog set-win path needs early holds"
+            },
+            {
+              "name": "Felix Gill",
+              "confidence": 65,
+              "modelPct": 57,
+              "label": "Market favorite to win a set"
+            }
+          ],
+          "confidence": 65,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Price required",
+          "expectedGames": 9.8,
+          "confidence": 53,
+          "tiebreakRisk": 42,
+          "earlyBreakRisk": 58,
+          "grade": "Needs posted first-set total",
+          "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        }
+      ],
+      "market": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "moneyline": [
+          {
+            "name": "Ugo Blanchet",
+            "americanOdds": null,
+            "impliedPct": 47,
+            "modelPct": 47,
+            "edgePct": null,
+            "grossProfitPct": 53,
+            "priceBand": "Coinflip"
+          },
+          {
+            "name": "Felix Gill",
+            "americanOdds": null,
+            "impliedPct": 57,
+            "modelPct": 57,
+            "edgePct": null,
+            "grossProfitPct": 43,
+            "priceBand": "Coinflip"
+          }
+        ],
+        "spread": "No game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      }
+    },
+    {
+      "rank": 56,
       "match": "Adam Walton vs Tung-Lin Wu",
       "format": "ATP",
       "bestOf": 3,
@@ -5816,10 +7931,10 @@
       "court": "ATP Challenger Tyler",
       "start": "7:00 AM",
       "pick": "Adam Walton",
-      "confidence": 77,
+      "confidence": 76,
       "volatility": 55,
       "tier": "Watch",
-      "rationale": "Adam Walton is only the current Robinhood market favorite over Tung-Lin Wu; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Adam Walton is only the current Robinhood market favorite over Tung-Lin Wu; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -5860,8 +7975,8 @@
           "selection": "Adam Walton",
           "line": null,
           "americanOdds": null,
-          "modelPct": 77,
-          "impliedPct": 77,
+          "modelPct": 76,
+          "impliedPct": 76,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -5889,22 +8004,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Adam Walton 85% / Tung-Lin Wu 45%",
+          "selection": "Adam Walton 84% / Tung-Lin Wu 46%",
           "rows": [
             {
               "name": "Adam Walton",
-              "confidence": 85,
-              "modelPct": 77,
+              "confidence": 84,
+              "modelPct": 76,
               "label": "Market favorite to win a set"
             },
             {
               "name": "Tung-Lin Wu",
-              "confidence": 45,
+              "confidence": 46,
               "modelPct": 25,
               "label": "Underdog set-win path needs early holds"
             }
           ],
-          "confidence": 85,
+          "confidence": 84,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -5927,10 +8042,10 @@
           {
             "name": "Adam Walton",
             "americanOdds": null,
-            "impliedPct": 77,
-            "modelPct": 77,
+            "impliedPct": 76,
+            "modelPct": 76,
             "edgePct": null,
-            "grossProfitPct": 23,
+            "grossProfitPct": 24,
             "priceBand": "Low-payout favorite"
           },
           {
@@ -5949,7 +8064,7 @@
       }
     },
     {
-      "rank": 42,
+      "rank": 57,
       "match": "Andres Martin vs Blake Ellis",
       "format": "ATP",
       "bestOf": 3,
@@ -5960,7 +8075,7 @@
       "confidence": 66,
       "volatility": 65,
       "tier": "Watch",
-      "rationale": "Andres Martin is only the current Robinhood market favorite over Blake Ellis; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Andres Martin is only the current Robinhood market favorite over Blake Ellis; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -6090,7 +8205,7 @@
       }
     },
     {
-      "rank": 43,
+      "rank": 58,
       "match": "Braden Shick vs Ronald Hohmann",
       "format": "ATP",
       "bestOf": 3,
@@ -6098,10 +8213,10 @@
       "court": "ATP Challenger Tyler Qualification",
       "start": "7:00 AM",
       "pick": "Braden Shick",
-      "confidence": 81,
+      "confidence": 84,
       "volatility": 52,
       "tier": "Watch",
-      "rationale": "Braden Shick is only the current Robinhood market favorite over Ronald Hohmann; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Braden Shick is only the current Robinhood market favorite over Ronald Hohmann; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -6142,8 +8257,8 @@
           "selection": "Braden Shick",
           "line": null,
           "americanOdds": null,
-          "modelPct": 81,
-          "impliedPct": 81,
+          "modelPct": 84,
+          "impliedPct": 84,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -6171,18 +8286,18 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Braden Shick 88% / Ronald Hohmann 41%",
+          "selection": "Braden Shick 88% / Ronald Hohmann 38%",
           "rows": [
             {
               "name": "Braden Shick",
               "confidence": 88,
-              "modelPct": 81,
+              "modelPct": 84,
               "label": "Market favorite to win a set"
             },
             {
               "name": "Ronald Hohmann",
-              "confidence": 41,
-              "modelPct": 23,
+              "confidence": 38,
+              "modelPct": 27,
               "label": "Underdog set-win path needs early holds"
             }
           ],
@@ -6209,19 +8324,19 @@
           {
             "name": "Braden Shick",
             "americanOdds": null,
-            "impliedPct": 81,
-            "modelPct": 81,
+            "impliedPct": 84,
+            "modelPct": 84,
             "edgePct": null,
-            "grossProfitPct": 19,
-            "priceBand": "Low-payout favorite"
+            "grossProfitPct": 16,
+            "priceBand": "Very expensive favorite"
           },
           {
             "name": "Ronald Hohmann",
             "americanOdds": null,
-            "impliedPct": 23,
-            "modelPct": 23,
+            "impliedPct": 27,
+            "modelPct": 27,
             "edgePct": null,
-            "grossProfitPct": 77,
+            "grossProfitPct": 73,
             "priceBand": "Underdog"
           }
         ],
@@ -6231,7 +8346,7 @@
       }
     },
     {
-      "rank": 44,
+      "rank": 59,
       "match": "Edas Butvilas vs Trevor Svajda",
       "format": "ATP",
       "bestOf": 3,
@@ -6239,10 +8354,10 @@
       "court": "ATP Challenger Tyler",
       "start": "7:00 AM",
       "pick": "Edas Butvilas",
-      "confidence": 61,
-      "volatility": 69,
+      "confidence": 59,
+      "volatility": 70,
       "tier": "Watch",
-      "rationale": "Edas Butvilas is only the current Robinhood market favorite over Trevor Svajda; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Edas Butvilas is only the current Robinhood market favorite over Trevor Svajda; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -6283,8 +8398,8 @@
           "selection": "Edas Butvilas",
           "line": null,
           "americanOdds": null,
-          "modelPct": 61,
-          "impliedPct": 61,
+          "modelPct": 59,
+          "impliedPct": 59,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -6312,22 +8427,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Edas Butvilas 69% / Trevor Svajda 61%",
+          "selection": "Edas Butvilas 67% / Trevor Svajda 63%",
           "rows": [
             {
               "name": "Edas Butvilas",
-              "confidence": 69,
-              "modelPct": 61,
+              "confidence": 67,
+              "modelPct": 59,
               "label": "Market favorite to win a set"
             },
             {
               "name": "Trevor Svajda",
-              "confidence": 61,
+              "confidence": 63,
               "modelPct": 42,
               "label": "Underdog set-win path needs early holds"
             }
           ],
-          "confidence": 69,
+          "confidence": 67,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -6350,10 +8465,10 @@
           {
             "name": "Edas Butvilas",
             "americanOdds": null,
-            "impliedPct": 61,
-            "modelPct": 61,
+            "impliedPct": 59,
+            "modelPct": 59,
             "edgePct": null,
-            "grossProfitPct": 39,
+            "grossProfitPct": 41,
             "priceBand": "Moderate favorite"
           },
           {
@@ -6372,7 +8487,7 @@
       }
     },
     {
-      "rank": 45,
+      "rank": 60,
       "match": "Fajing Sun vs Andre Ilagan",
       "format": "ATP",
       "bestOf": 3,
@@ -6383,7 +8498,7 @@
       "confidence": 55,
       "volatility": 74,
       "tier": "Watch",
-      "rationale": "Andre Ilagan is only the current Robinhood market favorite over Fajing Sun; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Andre Ilagan is only the current Robinhood market favorite over Fajing Sun; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -6458,7 +8573,7 @@
             {
               "name": "Fajing Sun",
               "confidence": 67,
-              "modelPct": 46,
+              "modelPct": 47,
               "label": "Underdog set-win path needs early holds"
             },
             {
@@ -6491,10 +8606,10 @@
           {
             "name": "Fajing Sun",
             "americanOdds": null,
-            "impliedPct": 46,
-            "modelPct": 46,
+            "impliedPct": 47,
+            "modelPct": 47,
             "edgePct": null,
-            "grossProfitPct": 54,
+            "grossProfitPct": 53,
             "priceBand": "Coinflip"
           },
           {
@@ -6513,7 +8628,289 @@
       }
     },
     {
-      "rank": 46,
+      "rank": 61,
+      "match": "Henry Searle vs Mitchell Krueger",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": true,
+      "court": "ATP Challenger Tyler",
+      "start": "7:00 AM",
+      "pick": "Henry Searle",
+      "confidence": 60,
+      "volatility": 70,
+      "tier": "Watch",
+      "rationale": "Henry Searle is only the current Robinhood market favorite over Mitchell Krueger; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "weaknessEdge": {
+        "edgeType": "Market-only",
+        "target": "No warehouse weakness edge",
+        "scoreGap": null,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+        "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+        "spreadRead": "No spread line",
+        "totalRead": "No total line",
+        "pick": {
+          "name": "Henry Searle",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "opponent": {
+          "name": "Mitchell Krueger",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        }
+      },
+      "totals": "No posted sportsbook total captured for this Challenger market.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Henry Searle",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": 60,
+          "impliedPct": 60,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "grade": "Near fair",
+          "issue": "Favorite price needs better proof",
+          "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": null,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "Total games need expected match games vs the posted line."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Henry Searle 68% / Mitchell Krueger 62%",
+          "rows": [
+            {
+              "name": "Henry Searle",
+              "confidence": 68,
+              "modelPct": 60,
+              "label": "Market favorite to win a set"
+            },
+            {
+              "name": "Mitchell Krueger",
+              "confidence": 62,
+              "modelPct": 43,
+              "label": "Underdog set-win path needs early holds"
+            }
+          ],
+          "confidence": 68,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Price required",
+          "expectedGames": 9.8,
+          "confidence": 53,
+          "tiebreakRisk": 42,
+          "earlyBreakRisk": 58,
+          "grade": "Needs posted first-set total",
+          "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        }
+      ],
+      "market": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "moneyline": [
+          {
+            "name": "Henry Searle",
+            "americanOdds": null,
+            "impliedPct": 60,
+            "modelPct": 60,
+            "edgePct": null,
+            "grossProfitPct": 40,
+            "priceBand": "Moderate favorite"
+          },
+          {
+            "name": "Mitchell Krueger",
+            "americanOdds": null,
+            "impliedPct": 43,
+            "modelPct": 43,
+            "edgePct": null,
+            "grossProfitPct": 57,
+            "priceBand": "Underdog"
+          }
+        ],
+        "spread": "No game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      }
+    },
+    {
+      "rank": 62,
+      "match": "Johannus Monday vs Blaise Bicknell",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": true,
+      "court": "ATP Challenger Tyler",
+      "start": "7:00 AM",
+      "pick": "Johannus Monday",
+      "confidence": 64,
+      "volatility": 66,
+      "tier": "Watch",
+      "rationale": "Johannus Monday is only the current Robinhood market favorite over Blaise Bicknell; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "weaknessEdge": {
+        "edgeType": "Market-only",
+        "target": "No warehouse weakness edge",
+        "scoreGap": null,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+        "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+        "spreadRead": "No spread line",
+        "totalRead": "No total line",
+        "pick": {
+          "name": "Johannus Monday",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "opponent": {
+          "name": "Blaise Bicknell",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        }
+      },
+      "totals": "No posted sportsbook total captured for this Challenger market.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Johannus Monday",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": 64,
+          "impliedPct": 64,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "grade": "Near fair",
+          "issue": "Favorite price needs better proof",
+          "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": null,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "Total games need expected match games vs the posted line."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Johannus Monday 72% / Blaise Bicknell 58%",
+          "rows": [
+            {
+              "name": "Johannus Monday",
+              "confidence": 72,
+              "modelPct": 64,
+              "label": "Market favorite to win a set"
+            },
+            {
+              "name": "Blaise Bicknell",
+              "confidence": 58,
+              "modelPct": 37,
+              "label": "Underdog set-win path needs early holds"
+            }
+          ],
+          "confidence": 72,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Price required",
+          "expectedGames": 9.8,
+          "confidence": 53,
+          "tiebreakRisk": 42,
+          "earlyBreakRisk": 58,
+          "grade": "Needs posted first-set total",
+          "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        }
+      ],
+      "market": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "moneyline": [
+          {
+            "name": "Johannus Monday",
+            "americanOdds": null,
+            "impliedPct": 64,
+            "modelPct": 64,
+            "edgePct": null,
+            "grossProfitPct": 36,
+            "priceBand": "Moderate favorite"
+          },
+          {
+            "name": "Blaise Bicknell",
+            "americanOdds": null,
+            "impliedPct": 37,
+            "modelPct": 37,
+            "edgePct": null,
+            "grossProfitPct": 63,
+            "priceBand": "Underdog"
+          }
+        ],
+        "spread": "No game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      }
+    },
+    {
+      "rank": 63,
       "match": "Landon Ardila vs Tyler Zink",
       "format": "ATP",
       "bestOf": 3,
@@ -6521,10 +8918,10 @@
       "court": "ATP Challenger Tyler",
       "start": "7:00 AM",
       "pick": "Tyler Zink",
-      "confidence": 87,
+      "confidence": 86,
       "volatility": 46,
       "tier": "Watch",
-      "rationale": "Tyler Zink is only the current Robinhood market favorite over Landon Ardila; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Tyler Zink is only the current Robinhood market favorite over Landon Ardila; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -6565,8 +8962,8 @@
           "selection": "Tyler Zink",
           "line": null,
           "americanOdds": null,
-          "modelPct": 87,
-          "impliedPct": 87,
+          "modelPct": 86,
+          "impliedPct": 86,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
@@ -6605,7 +9002,7 @@
             {
               "name": "Tyler Zink",
               "confidence": 88,
-              "modelPct": 87,
+              "modelPct": 86,
               "label": "Market favorite to win a set"
             }
           ],
@@ -6641,10 +9038,10 @@
           {
             "name": "Tyler Zink",
             "americanOdds": null,
-            "impliedPct": 87,
-            "modelPct": 87,
+            "impliedPct": 86,
+            "modelPct": 86,
             "edgePct": null,
-            "grossProfitPct": 13,
+            "grossProfitPct": 14,
             "priceBand": "Very expensive favorite"
           }
         ],
@@ -6654,7 +9051,7 @@
       }
     },
     {
-      "rank": 47,
+      "rank": 64,
       "match": "Timo Legout vs Andres Andrade",
       "format": "ATP",
       "bestOf": 3,
@@ -6665,7 +9062,7 @@
       "confidence": 72,
       "volatility": 59,
       "tier": "Watch",
-      "rationale": "Andres Andrade is only the current Robinhood market favorite over Timo Legout; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Andres Andrade is only the current Robinhood market favorite over Timo Legout; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -6795,7 +9192,7 @@
       }
     },
     {
-      "rank": 48,
+      "rank": 65,
       "match": "Yuta Shimizu vs Dane Sweeny",
       "format": "ATP",
       "bestOf": 3,
@@ -6806,7 +9203,7 @@
       "confidence": 59,
       "volatility": 71,
       "tier": "Watch",
-      "rationale": "Dane Sweeny is only the current Robinhood market favorite over Yuta Shimizu; no warehouse service, break-point, or opponent-quality edge is joined yet.",
+      "rationale": "Dane Sweeny is only the current Robinhood market favorite over Yuta Shimizu; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
       "weaknessEdge": {
         "edgeType": "Market-only",
         "target": "No warehouse weakness edge",
@@ -6936,7 +9333,7 @@
       }
     },
     {
-      "rank": 49,
+      "rank": 66,
       "match": "Jakub Mensik vs Joao Fonseca",
       "format": "ATP",
       "bestOf": 5,
@@ -6944,7 +9341,7 @@
       "court": "Court Philippe-Chatrier",
       "start": "11:15 AM",
       "pick": "Joao Fonseca",
-      "confidence": 57.2,
+      "confidence": 56.8,
       "volatility": 48,
       "tier": "Watch",
       "rationale": "Joao Fonseca has the recent service-hold edge 85% to 77%. Opponent-adjusted recent form is basically even: Joao Fonseca 72, Jakub Mensik 77. Lean, not a chase.",
@@ -7026,11 +9423,11 @@
           "selection": "Joao Fonseca",
           "line": null,
           "americanOdds": -210,
-          "modelPct": 57.2,
+          "modelPct": 56.8,
           "impliedPct": 67.7,
-          "edgePct": -10.5,
-          "evPer100": -15.6,
-          "netEvPer100": -17.6,
+          "edgePct": -10.9,
+          "evPer100": -16.2,
+          "netEvPer100": -18.2,
           "grade": "Negative EV",
           "issue": "Favorite price needs better proof",
           "reason": "FanDuel price is richer than the model; pass ML unless live state improves."
@@ -7077,13 +9474,13 @@
             {
               "name": "Jakub Mensik",
               "confidence": 70,
-              "modelPct": 42.8,
+              "modelPct": 43.2,
               "label": "Live to win a set"
             },
             {
               "name": "Joao Fonseca",
               "confidence": 85,
-              "modelPct": 57.2,
+              "modelPct": 56.8,
               "label": "Strong set-win path"
             }
           ],
@@ -7111,8 +9508,8 @@
             "name": "Jakub Mensik",
             "americanOdds": 172,
             "impliedPct": 36.8,
-            "modelPct": 42.8,
-            "edgePct": 6,
+            "modelPct": 43.2,
+            "edgePct": 6.4,
             "grossProfitPct": 172,
             "priceBand": "Underdog"
           },
@@ -7120,8 +9517,8 @@
             "name": "Joao Fonseca",
             "americanOdds": -210,
             "impliedPct": 67.7,
-            "modelPct": 57.2,
-            "edgePct": -10.5,
+            "modelPct": 56.8,
+            "edgePct": -10.9,
             "grossProfitPct": 47.6,
             "priceBand": "Moderate favorite"
           }
@@ -7129,147 +9526,6 @@
         "spread": "Joao Fonseca -4.5 (-108)",
         "totalGames": "37.5 games: Over -118 / Under -112",
         "priceAction": "FanDuel price is richer than the model; pass ML unless live state improves."
-      }
-    },
-    {
-      "rank": 50,
-      "match": "Henry Searle vs Mitchell Krueger",
-      "format": "ATP",
-      "bestOf": 3,
-      "marketOnly": true,
-      "court": "ATP Challenger Tyler",
-      "start": "5:10 PM",
-      "pick": "Henry Searle",
-      "confidence": 60,
-      "volatility": 70,
-      "tier": "Watch",
-      "rationale": "Henry Searle is only the current Robinhood market favorite over Mitchell Krueger; no warehouse service, break-point, or opponent-quality edge is joined yet.",
-      "weaknessEdge": {
-        "edgeType": "Market-only",
-        "target": "No warehouse weakness edge",
-        "scoreGap": null,
-        "attackingSide": null,
-        "vulnerableSide": null,
-        "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-        "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-        "spreadRead": "No spread line",
-        "totalRead": "No total line",
-        "pick": {
-          "name": "Henry Searle",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
-        },
-        "opponent": {
-          "name": "Mitchell Krueger",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
-        }
-      },
-      "totals": "No posted sportsbook total captured for this Challenger market.",
-      "derivativeMarketCase": null,
-      "bettingMatrix": [
-        {
-          "marketType": "Moneyline",
-          "label": "ML value",
-          "selection": "Henry Searle",
-          "line": null,
-          "americanOdds": null,
-          "modelPct": 60,
-          "impliedPct": 60,
-          "edgePct": null,
-          "evPer100": null,
-          "netEvPer100": null,
-          "grade": "Near fair",
-          "issue": "Favorite price needs better proof",
-          "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
-        },
-        {
-          "marketType": "Total games",
-          "label": "O/U games",
-          "selection": "No bet",
-          "line": null,
-          "americanOdds": null,
-          "modelPct": null,
-          "impliedPct": null,
-          "edgePct": null,
-          "evPer100": null,
-          "netEvPer100": null,
-          "expectedGames": null,
-          "edgeGames": null,
-          "confidence": null,
-          "grade": "No direction",
-          "reason": "Total games need expected match games vs the posted line."
-        },
-        {
-          "marketType": "Win a set",
-          "label": "Win a set %",
-          "selection": "Henry Searle 68% / Mitchell Krueger 62%",
-          "rows": [
-            {
-              "name": "Henry Searle",
-              "confidence": 68,
-              "modelPct": 60,
-              "label": "Market favorite to win a set"
-            },
-            {
-              "name": "Mitchell Krueger",
-              "confidence": 62,
-              "modelPct": 43,
-              "label": "Underdog set-win path needs early holds"
-            }
-          ],
-          "confidence": 68,
-          "grade": "Price required",
-          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
-        },
-        {
-          "marketType": "First-set total games",
-          "label": "1st set O/U",
-          "selection": "Price required",
-          "expectedGames": 9.8,
-          "confidence": 53,
-          "tiebreakRisk": 42,
-          "earlyBreakRisk": 58,
-          "grade": "Needs posted first-set total",
-          "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
-        }
-      ],
-      "market": {
-        "source": "Robinhood prediction market",
-        "capturedAt": null,
-        "moneyline": [
-          {
-            "name": "Henry Searle",
-            "americanOdds": null,
-            "impliedPct": 60,
-            "modelPct": 60,
-            "edgePct": null,
-            "grossProfitPct": 40,
-            "priceBand": "Moderate favorite"
-          },
-          {
-            "name": "Mitchell Krueger",
-            "americanOdds": null,
-            "impliedPct": 43,
-            "modelPct": 43,
-            "edgePct": null,
-            "grossProfitPct": 57,
-            "priceBand": "Underdog"
-          }
-        ],
-        "spread": "No game spread captured",
-        "totalGames": "No total captured",
-        "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row."
       }
     }
   ]

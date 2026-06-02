@@ -1,1 +1,815 @@
-{"id":"rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02","eventId":"be7f7fbb-bd45-4caf-878d-972266a8aeb2","league":"Tennis","start":"2:30 AM","startMinutes":150,"title":"Mika Petkovic vs Alejandro Moro Canas","stage":"ATP Challenger Bad Rappenau | Round Of 32","spotlight":false,"confidence":65,"volatility":66,"tags":["ATP Challenger","Prediction market","Market only","No model edge","Coinflip price"],"matchup":[{"side":"Player 1","name":"Mika Petkovic","displayName":"Mika Petkovic","detail":"Rank not joined"},{"side":"Player 2","name":"Alejandro Moro Canas","displayName":"Alejandro Moro Canas","detail":"Rank not joined"}],"summary":"Alejandro Moro Canas is the current market favorite. Alejandro Moro Canas is only the current Robinhood market favorite over Mika Petkovic; no warehouse service, break-point, or opponent-quality edge is joined yet.","factors":["Alejandro Moro Canas is only the current Robinhood market favorite over Mika Petkovic; no warehouse service, break-point, or opponent-quality edge is joined yet.","Prediction-market price only; no FanDuel moneyline edge calculated.","Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.","No posted sportsbook total captured for this Challenger market.","May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.","Market-only Challenger row: no warehouse edge, sportsbook derivative, or service profile has been joined yet."],"lean":"Market watch: Alejandro Moro Canas; do not treat as a model bet.","swing":"Risk: best-of-five set extension and tiebreak variance.","swingFactor":"Risk: best-of-five set extension and tiebreak variance.","odds":{"participantOrder":[0,1],"markets":[{"label":"Prediction market","book":"Robinhood prediction market","value":"Mika Petkovic 38% / Alejandro Moro Canas 65%"},{"label":"Prediction market prices","book":"Robinhood prediction market","value":"Mika Petkovic 38c / Alejandro Moro Canas 65c"}],"note":"Robinhood prediction-market prices captured: Mika Petkovic 38c / Alejandro Moro Canas 65c. This is price context, not a sportsbook value signal.","provider":"Robinhood prediction market"},"tennisContext":{"surface":"Unknown","court":"ATP Challenger Bad Rappenau","h2hLeader":"","fatigueFlag":false,"liveDog":false,"weaknessEdge":{"edgeType":"Market-only","target":"No warehouse weakness edge","scoreGap":null,"attackingSide":null,"vulnerableSide":null,"gameFlow":"Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","liveTrigger":"Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.","spreadRead":"No spread line","totalRead":"No total line","pick":{"name":"Alejandro Moro Canas","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."},"opponent":{"name":"Mika Petkovic","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."}},"warehouseContext":{"source":"SQLite tennis warehouse fallback","eventId":"rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02","sourceUrl":null,"capturedAt":"2026-06-01 23:55:53","surface":"Clay","tournament":"Roland Garros","category":"WTA","startTimestamp":1780392600,"players":[{"name":"Mika Petkovic","side":"home","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null},{"name":"Alejandro Moro Canas","side":"away","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null}],"h2h":{"homeName":"Mika Petkovic","awayName":"Alejandro Moro Canas","homeWins":null,"awayWins":null,"draws":null,"matches":[],"coverage":{"datedRows":0,"surfaceRows":0,"weightedRows":0}},"score":{"home":null,"away":null},"result":null,"sofascoreSignals":null,"weather":{"source":"Open-Meteo","venueKey":"roland-garros","startTs":1780392600,"endTs":1780399800,"durationMinutes":120,"hourlyRows":3,"avgTemperatureC":16.3,"maxTemperatureC":16.8,"minTemperatureC":15.8,"avgApparentTemperatureC":15.38,"maxApparentTemperatureC":16,"avgHumidityPct":90.5,"totalPrecipitationMm":5.4,"avgCloudCoverPct":97.75,"avgWindSpeedKmh":17.18,"maxWindGustKmh":41.4,"avgShortwaveRadiationWm2":149.75,"hotMatch":false,"humidMatch":true,"windyMatch":true,"rainAffected":true,"hourly":[{"apparentTemperatureC":16,"gustKmh":41.4,"humidityPct":89,"overlapMinutes":30,"precipitationMm":1.6,"shortwaveWm2":173,"temperatureC":16.8,"timeLocal":"2026-06-02T11:00","timeUtc":"2026-06-02T09:00:00Z","windKmh":16.8},{"apparentTemperatureC":15.2,"gustKmh":41.4,"humidityPct":91,"overlapMinutes":60,"precipitationMm":4.1,"shortwaveWm2":156,"temperatureC":16.3,"timeLocal":"2026-06-02T12:00","timeUtc":"2026-06-02T10:00:00Z","windKmh":18.6},{"apparentTemperatureC":15.1,"gustKmh":37.8,"humidityPct":91,"overlapMinutes":30,"precipitationMm":1,"shortwaveWm2":114,"temperatureC":15.8,"timeLocal":"2026-06-02T13:00","timeUtc":"2026-06-02T11:00:00Z","windKmh":14.7}]},"allStatRows":[],"coverage":{"hasEvent":false,"hasH2h":false,"allStatRows":0,"playerStatRows":0,"liveStatRows":0,"expectedStatRows":0,"recentMetricRows":0,"seasonStatRows":0,"liveStatsStatus":null,"hasWeather":true,"isPregame":true}},"sofascoreData":{"source":"SQLite tennis warehouse fallback","eventId":"rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02","sourceUrl":null,"capturedAt":"2026-06-01 23:55:53","surface":"Clay","tournament":"Roland Garros","category":"WTA","startTimestamp":1780392600,"players":[{"name":"Mika Petkovic","side":"home","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null},{"name":"Alejandro Moro Canas","side":"away","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null}],"h2h":{"homeName":"Mika Petkovic","awayName":"Alejandro Moro Canas","homeWins":null,"awayWins":null,"draws":null,"matches":[],"coverage":{"datedRows":0,"surfaceRows":0,"weightedRows":0}},"score":{"home":null,"away":null},"result":null,"sofascoreSignals":null,"weather":{"source":"Open-Meteo","venueKey":"roland-garros","startTs":1780392600,"endTs":1780399800,"durationMinutes":120,"hourlyRows":3,"avgTemperatureC":16.3,"maxTemperatureC":16.8,"minTemperatureC":15.8,"avgApparentTemperatureC":15.38,"maxApparentTemperatureC":16,"avgHumidityPct":90.5,"totalPrecipitationMm":5.4,"avgCloudCoverPct":97.75,"avgWindSpeedKmh":17.18,"maxWindGustKmh":41.4,"avgShortwaveRadiationWm2":149.75,"hotMatch":false,"humidMatch":true,"windyMatch":true,"rainAffected":true,"hourly":[{"apparentTemperatureC":16,"gustKmh":41.4,"humidityPct":89,"overlapMinutes":30,"precipitationMm":1.6,"shortwaveWm2":173,"temperatureC":16.8,"timeLocal":"2026-06-02T11:00","timeUtc":"2026-06-02T09:00:00Z","windKmh":16.8},{"apparentTemperatureC":15.2,"gustKmh":41.4,"humidityPct":91,"overlapMinutes":60,"precipitationMm":4.1,"shortwaveWm2":156,"temperatureC":16.3,"timeLocal":"2026-06-02T12:00","timeUtc":"2026-06-02T10:00:00Z","windKmh":18.6},{"apparentTemperatureC":15.1,"gustKmh":37.8,"humidityPct":91,"overlapMinutes":30,"precipitationMm":1,"shortwaveWm2":114,"temperatureC":15.8,"timeLocal":"2026-06-02T13:00","timeUtc":"2026-06-02T11:00:00Z","windKmh":14.7}]},"allStatRows":[],"coverage":{"hasEvent":false,"hasH2h":false,"allStatRows":0,"playerStatRows":0,"liveStatRows":0,"expectedStatRows":0,"recentMetricRows":0,"seasonStatRows":0,"liveStatsStatus":null,"hasWeather":true,"isPregame":true}},"players":[{"name":"Mika Petkovic","rank":null,"label":"Mika Petkovic","form":null,"boardPct":38,"decimalOdds":null,"marketLabel":"38c / 38% implied","clayLine":"Rank not joined","weakness":{"name":"Mika Petkovic","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."},"warehouseStats":{"name":"Mika Petkovic","side":"home","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null},"record2026":"","notes":"Opponent case: model 35%","matchupNote":"Upset path: needs early scoreboard pressure or a market price that pays for volatility."},{"name":"Alejandro Moro Canas","rank":null,"label":"Alejandro Moro Canas","form":null,"boardPct":65,"decimalOdds":null,"marketLabel":"65c / 65% implied","clayLine":"Rank not joined","weakness":{"name":"Alejandro Moro Canas","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."},"warehouseStats":{"name":"Alejandro Moro Canas","side":"away","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null},"record2026":"","notes":"Pick: model 65%","matchupNote":"Why pick: Alejandro Moro Canas is only the current Robinhood market favorite over Mika Petkovic; no warehouse service, break-point, or opponent-quality edge is joined yet."}],"comparisonRows":[{"label":"Model pick","metric":"Fair win split","leftScore":38,"rightScore":65,"leftLabel":"Mika Petkovic","rightLabel":"Alejandro Moro Canas","winner":"Alejandro Moro Canas"},{"label":"Prediction market","metric":"Implied price","leftScore":38,"rightScore":65,"leftLabel":"Mika Petkovic","rightLabel":"Alejandro Moro Canas","winner":"Prediction-market price captured; no sportsbook EV is inferred from this row."},{"label":"Weakness","metric":"Lower is cleaner","leftScore":0,"rightScore":0,"leftLabel":"Mika Petkovic","rightLabel":"Alejandro Moro Canas","winner":"Market-only"},{"label":"Volatility","metric":"Lower is cleaner","leftScore":66,"rightScore":34,"leftLabel":"Risk","rightLabel":"Stability","winner":"Pass-first"}],"predictionMarket":{"source":"Robinhood prediction market","capturedAt":null,"totalVolume":0,"players":[{"name":"Mika Petkovic","probabilityPct":38,"amount":63,"americanOdds":null,"edgePct":null,"priceBand":"Underdog"},{"name":"Alejandro Moro Canas","probabilityPct":65,"amount":0,"americanOdds":null,"edgePct":null,"priceBand":"Moderate favorite"}]},"bettingMatrix":[{"marketType":"Moneyline","label":"ML value","selection":"Alejandro Moro Canas","line":null,"americanOdds":null,"modelPct":65,"impliedPct":65,"edgePct":null,"evPer100":null,"netEvPer100":null,"grade":"Near fair","issue":"Favorite price needs better proof","reason":"Prediction-market price captured; no sportsbook EV is inferred from this row."},{"marketType":"Total games","label":"O/U games","selection":"No bet","line":null,"americanOdds":null,"modelPct":null,"impliedPct":null,"edgePct":null,"evPer100":null,"netEvPer100":null,"expectedGames":null,"edgeGames":null,"confidence":null,"grade":"No direction","reason":"Total games need expected match games vs the posted line."},{"marketType":"Win a set","label":"Win a set %","selection":"Mika Petkovic 57% / Alejandro Moro Canas 73%","rows":[{"name":"Mika Petkovic","confidence":57,"modelPct":38,"label":"Underdog set-win path needs early holds"},{"name":"Alejandro Moro Canas","confidence":73,"modelPct":65,"label":"Market favorite to win a set"}],"confidence":73,"grade":"Price required","reason":"Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."},{"marketType":"First-set total games","label":"1st set O/U","selection":"Price required","expectedGames":9.8,"confidence":53,"tiebreakRisk":42,"earlyBreakRisk":58,"grade":"Needs posted first-set total","reason":"Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."}],"derivativeMarketCase":null,"valueBoard":{"note":"EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.","ml":{"marketType":"ML","selection":"Alejandro Moro Canas","americanOdds":null,"modelPct":65,"impliedPct":65,"edgePct":null,"evPer100":null,"netEvPer100":null,"feePer100":2,"valueIssue":"Favorite price needs better proof","valueGrade":"Near fair","betGrade":false},"spread":null,"total":{"marketType":"Total","selection":"No bet","line":null,"overOdds":null,"underOdds":null,"expectedGames":null,"valueGrade":"No direction","reason":"No posted match total captured.","betGrade":false},"firstSetTotal":{"marketType":"First-set total","selection":"Price required","line":null,"americanOdds":null,"expectedGames":9.8,"confidence":53,"tiebreakRisk":42,"earlyBreakRisk":58,"modelPct":53,"evPer100":null,"netEvPer100":null,"valueGrade":"Needs posted first-set total","reason":"Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.","betGrade":false},"setWin":[{"name":"Mika Petkovic","confidence":57,"modelPct":38,"label":"Underdog set-win path needs early holds","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false},{"name":"Alejandro Moro Canas","confidence":73,"modelPct":65,"label":"Market favorite to win a set","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false}]},"ensembleValueCase":null,"projection":{"projectedWinner":"Alejandro Moro Canas","projectedSetLine":"2-0/2-1 range","setWinProjections":[{"name":"Mika Petkovic","confidence":57,"modelPct":38,"label":"Underdog set-win path needs early holds"},{"name":"Alejandro Moro Canas","confidence":73,"modelPct":65,"label":"Market favorite to win a set"}],"totalGames":null,"straightSetsProbability":57,"upsetRisk":35,"overview":"Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","fantasy":[]},"tradePlan":{"laneLabel":"Prediction-market price captured; no sportsbook EV is inferred from this row.","summary":"Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","trigger":"Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.","headline":"Market-only","exit":"No spread line","tone":"warning"},"derivativeMarkets":[{"label":"ML","value":"Alejandro Moro Canas 65c; Prediction-market price only; no FanDuel moneyline edge calculated.","lean":"Prediction-market price captured; no sportsbook EV is inferred from this row.","confidence":65,"marketType":"ML","selection":"Alejandro Moro Canas","americanOdds":null,"modelPct":65,"impliedPct":65,"edgePct":null,"evPer100":null,"netEvPer100":null,"feePer100":2,"valueIssue":"Favorite price needs better proof","valueGrade":"Near fair","betGrade":false,"tone":"neutral","reason":"Robinhood prediction-market prices captured: Mika Petkovic 38c / Alejandro Moro Canas 65c. This is price context, not a sportsbook value signal."},{"label":"Win a set","value":"Mika Petkovic 57% / Alejandro Moro Canas 73%","lean":"Underdog set-win path needs early holds","confidence":73,"setWinRows":[{"name":"Mika Petkovic","confidence":57,"modelPct":38,"label":"Underdog set-win path needs early holds","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false},{"name":"Alejandro Moro Canas","confidence":73,"modelPct":65,"label":"Market favorite to win a set","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false}],"valueGrade":"Needs posted price","tone":"neutral","reason":"Best-of-three set-win confidence is more fragile; early service holds matter more."},{"label":"Spread","value":"No game spread captured","lean":"No spread line","confidence":59,"tone":"neutral","reason":"Only enter after visible first-service comfort and break-point pressure; no pre-match model edge."},{"label":"O/U","value":"No total captured","lean":"No bet","confidence":57,"marketType":"Total","selection":"No bet","line":null,"overOdds":null,"underOdds":null,"expectedGames":null,"valueGrade":"No direction","reason":"No posted match total captured.","betGrade":false,"tone":"neutral"},{"label":"1st set O/U","value":"Need posted first-set total","lean":"Price required","confidence":53,"marketType":"First-set total","selection":"Price required","line":null,"americanOdds":null,"expectedGames":9.8,"tiebreakRisk":42,"earlyBreakRisk":58,"modelPct":53,"evPer100":null,"netEvPer100":null,"valueGrade":"Needs posted first-set total","reason":"Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.","betGrade":false,"tone":"neutral"}],"marketEconomics":{"source":"Robinhood prediction market","capturedAt":null,"eventUrl":"https://robinhood.com/us/en/prediction-markets/tennis/","deskName":"Alejandro Moro Canas","deskPricePct":65,"deskEdgePct":null,"priceAction":"Prediction-market price captured; no sportsbook EV is inferred from this row.","players":[{"name":"Mika Petkovic","americanOdds":null,"impliedPct":38,"modelPct":38,"edgePct":null,"priceBand":"Underdog","grossProfitPct":62,"grossPayoutMultiple":2.632,"centsAtRisk":38,"centsProfitIfWin":62,"bidPct":35,"lastTradePct":38,"openInterest":63,"symbol":"KXATPCHALLENGERMATCH-26JUN02PETMOR-PET"},{"name":"Alejandro Moro Canas","americanOdds":null,"impliedPct":65,"modelPct":65,"edgePct":null,"priceBand":"Moderate favorite","grossProfitPct":35,"grossPayoutMultiple":1.538,"centsAtRisk":65,"centsProfitIfWin":35,"bidPct":62,"lastTradePct":0,"openInterest":0,"symbol":"KXATPCHALLENGERMATCH-26JUN02PETMOR-MOR"}]},"clayMatchupData":null,"opponentQualityData":null,"researchLinks":[{"label":"ESPN scoreboard","url":"https://www.espn.com/tennis/scoreboard/_/date/20260602"},{"label":"Tennistonic H2H","url":"https://tennistonic.com/head-to-head-compare/Mika-Petkovic-Vs-Alejandro-Moro-Canas/"},{"label":"Robinhood market","url":"https://robinhood.com/us/en/prediction-markets/tennis/"}],"formEdgeName":"Alejandro Moro Canas"},"participants":[{"id":"rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02:0","index":0,"role":"Player 1","name":"Mika Petkovic","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},{"id":"rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02:1","index":1,"role":"Player 2","name":"Alejandro Moro Canas","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"}],"moneyline":{"available":true,"label":"Prediction market","provider":"Robinhood prediction market","participants":[{"id":"rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02:0","index":0,"role":"Player 1","name":"Mika Petkovic","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},{"id":"rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02:1","index":1,"role":"Player 2","name":"Alejandro Moro Canas","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"}]},"analysis":{"available":true,"participantId":"rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02:1","participant":{"id":"rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02:1","index":1,"role":"Player 2","name":"Alejandro Moro Canas","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},"opponent":{"id":"rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02:0","index":0,"role":"Player 1","name":"Mika Petkovic","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},"lean":"Market watch: Alejandro Moro Canas; do not treat as a model bet.","rationale":"Alejandro Moro Canas is the current market favorite. Alejandro Moro Canas is only the current Robinhood market favorite over Mika Petkovic; no warehouse service, break-point, or opponent-quality edge is joined yet.","confidence":65,"volatility":66,"recommendationScore":49,"tier":"Watch","sourceLabel":"Robinhood prediction market","modelEdge":null,"modelEdgeLabel":"","marketProbability":0,"marketProbabilityLabel":"0.0%","inputs":[],"inputsUsed":0,"volatilityNotes":[],"indicators":{}},"metadata":{"participantCount":2,"participantNames":["Mika Petkovic","Alejandro Moro Canas"],"tagCount":5,"hasSeriesBreakdown":false,"hasMoneyline":true,"hasAnalysisPick":true,"hasStructuredInputs":false,"hasPlayerProps":false,"startMinutes":150,"spotlight":false,"league":"Tennis","oddsProvider":"Robinhood prediction market"},"detailLevel":"full","stateContext":null}
+{
+  "id": "rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02",
+  "eventId": "be7f7fbb-bd45-4caf-878d-972266a8aeb2",
+  "league": "Tennis",
+  "start": "2:30 AM",
+  "startMinutes": 150,
+  "title": "Mika Petkovic vs Alejandro Moro Canas",
+  "stage": "ATP Challenger Bad Rappenau | Round Of 32",
+  "spotlight": false,
+  "confidence": 64,
+  "volatility": 66,
+  "tags": [
+    "ATP Challenger",
+    "Clay",
+    "Prediction market",
+    "Market only",
+    "No model edge",
+    "Coinflip price"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "Mika Petkovic",
+      "displayName": "Mika Petkovic",
+      "detail": "Clay | Rank not joined"
+    },
+    {
+      "side": "Player 2",
+      "name": "Alejandro Moro Canas",
+      "displayName": "Alejandro Moro Canas",
+      "detail": "Clay | Rank not joined"
+    }
+  ],
+  "summary": "Alejandro Moro Canas is the current market favorite. Alejandro Moro Canas is only the current Robinhood market favorite over Mika Petkovic; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+  "factors": [
+    "Alejandro Moro Canas is only the current Robinhood market favorite over Mika Petkovic; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+    "Prediction-market price only; no FanDuel moneyline edge calculated.",
+    "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+    "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+    "No posted sportsbook total captured for this Challenger market.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "Market-only Challenger row: no warehouse edge, sportsbook derivative, or service profile has been joined yet."
+  ],
+  "lean": "Market watch: Alejandro Moro Canas; do not treat as a model bet.",
+  "swing": "Risk: best-of-five set extension and tiebreak variance.",
+  "swingFactor": "Risk: best-of-five set extension and tiebreak variance.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Prediction market",
+        "book": "Robinhood prediction market",
+        "value": "Mika Petkovic 37% / Alejandro Moro Canas 64%"
+      },
+      {
+        "label": "Prediction market prices",
+        "book": "Robinhood prediction market",
+        "value": "Mika Petkovic 37c / Alejandro Moro Canas 64c"
+      }
+    ],
+    "note": "Robinhood prediction-market prices captured: Mika Petkovic 37c / Alejandro Moro Canas 64c. This is price context, not a sportsbook value signal.",
+    "provider": "Robinhood prediction market"
+  },
+  "tennisContext": {
+    "surface": "Clay",
+    "court": "ATP Challenger Bad Rappenau",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "Market-only",
+      "target": "No warehouse weakness edge",
+      "scoreGap": null,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+      "spreadRead": "No spread line",
+      "totalRead": "No total line",
+      "pick": {
+        "name": "Alejandro Moro Canas",
+        "weaknessScore": null,
+        "liabilities": [
+          "No warehouse weakness data joined yet"
+        ],
+        "strengths": [],
+        "firstGameComfort": "Market-only row; wait for serve pressure data",
+        "gameFlowRead": "No service/break profile joined yet."
+      },
+      "opponent": {
+        "name": "Mika Petkovic",
+        "weaknessScore": null,
+        "liabilities": [
+          "No warehouse weakness data joined yet"
+        ],
+        "strengths": [],
+        "firstGameComfort": "Market-only row; wait for serve pressure data",
+        "gameFlowRead": "No service/break profile joined yet."
+      }
+    },
+    "warehouseContext": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Clay",
+      "tournament": "ATP Challenger Bad Rappenau",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Mika Petkovic",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Alejandro Moro Canas",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Mika Petkovic",
+        "awayName": "Alejandro Moro Canas",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "sofascoreData": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Clay",
+      "tournament": "ATP Challenger Bad Rappenau",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Mika Petkovic",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Alejandro Moro Canas",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Mika Petkovic",
+        "awayName": "Alejandro Moro Canas",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "players": [
+      {
+        "name": "Mika Petkovic",
+        "rank": null,
+        "label": "Mika Petkovic",
+        "form": null,
+        "boardPct": 37,
+        "decimalOdds": null,
+        "marketLabel": "37c / 37% implied",
+        "clayLine": "Clay | Rank not joined",
+        "weakness": {
+          "name": "Mika Petkovic",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "warehouseStats": {
+          "name": "Mika Petkovic",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        "record2026": "",
+        "notes": "Opponent case: model 36%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      },
+      {
+        "name": "Alejandro Moro Canas",
+        "rank": null,
+        "label": "Alejandro Moro Canas",
+        "form": null,
+        "boardPct": 64,
+        "decimalOdds": null,
+        "marketLabel": "64c / 64% implied",
+        "clayLine": "Clay | Rank not joined",
+        "weakness": {
+          "name": "Alejandro Moro Canas",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "warehouseStats": {
+          "name": "Alejandro Moro Canas",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        "record2026": "",
+        "notes": "Pick: model 64%",
+        "matchupNote": "Why pick: Alejandro Moro Canas is only the current Robinhood market favorite over Mika Petkovic; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 37,
+        "rightScore": 64,
+        "leftLabel": "Mika Petkovic",
+        "rightLabel": "Alejandro Moro Canas",
+        "winner": "Alejandro Moro Canas"
+      },
+      {
+        "label": "Prediction market",
+        "metric": "Implied price",
+        "leftScore": 37,
+        "rightScore": 64,
+        "leftLabel": "Mika Petkovic",
+        "rightLabel": "Alejandro Moro Canas",
+        "winner": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 0,
+        "rightScore": 0,
+        "leftLabel": "Mika Petkovic",
+        "rightLabel": "Alejandro Moro Canas",
+        "winner": "Market-only"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 66,
+        "rightScore": 34,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Pass-first"
+      }
+    ],
+    "predictionMarket": {
+      "source": "Robinhood prediction market",
+      "capturedAt": null,
+      "totalVolume": 0,
+      "players": [
+        {
+          "name": "Mika Petkovic",
+          "probabilityPct": 37,
+          "amount": 63,
+          "americanOdds": null,
+          "edgePct": null,
+          "priceBand": "Underdog"
+        },
+        {
+          "name": "Alejandro Moro Canas",
+          "probabilityPct": 64,
+          "amount": 0,
+          "americanOdds": null,
+          "edgePct": null,
+          "priceBand": "Moderate favorite"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Alejandro Moro Canas",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 64,
+        "impliedPct": 64,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "grade": "Near fair",
+        "issue": "Favorite price needs better proof",
+        "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "Total games need expected match games vs the posted line."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Mika Petkovic 58% / Alejandro Moro Canas 72%",
+        "rows": [
+          {
+            "name": "Mika Petkovic",
+            "confidence": 58,
+            "modelPct": 37,
+            "label": "Underdog set-win path needs early holds"
+          },
+          {
+            "name": "Alejandro Moro Canas",
+            "confidence": 72,
+            "modelPct": 64,
+            "label": "Market favorite to win a set"
+          }
+        ],
+        "confidence": 72,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Price required",
+        "expectedGames": 9.8,
+        "confidence": 53,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "grade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Alejandro Moro Canas",
+        "americanOdds": null,
+        "modelPct": 64,
+        "impliedPct": 64,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Near fair",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "expectedGames": 9.8,
+        "confidence": 53,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "modelPct": 53,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Mika Petkovic",
+          "confidence": 58,
+          "modelPct": 37,
+          "label": "Underdog set-win path needs early holds",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Alejandro Moro Canas",
+          "confidence": 72,
+          "modelPct": 64,
+          "label": "Market favorite to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "Alejandro Moro Canas",
+      "projectedSetLine": "2-0/2-1 range",
+      "setWinProjections": [
+        {
+          "name": "Mika Petkovic",
+          "confidence": 58,
+          "modelPct": 37,
+          "label": "Underdog set-win path needs early holds"
+        },
+        {
+          "name": "Alejandro Moro Canas",
+          "confidence": 72,
+          "modelPct": 64,
+          "label": "Market favorite to win a set"
+        }
+      ],
+      "totalGames": null,
+      "straightSetsProbability": 56,
+      "upsetRisk": 36,
+      "overview": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
+      "summary": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "trigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+      "headline": "Market-only",
+      "exit": "No spread line",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "Alejandro Moro Canas 64c; Prediction-market price only; no FanDuel moneyline edge calculated.",
+        "lean": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
+        "confidence": 64,
+        "marketType": "ML",
+        "selection": "Alejandro Moro Canas",
+        "americanOdds": null,
+        "modelPct": 64,
+        "impliedPct": 64,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Near fair",
+        "betGrade": false,
+        "tone": "neutral",
+        "reason": "Robinhood prediction-market prices captured: Mika Petkovic 37c / Alejandro Moro Canas 64c. This is price context, not a sportsbook value signal."
+      },
+      {
+        "label": "Win a set",
+        "value": "Mika Petkovic 58% / Alejandro Moro Canas 72%",
+        "lean": "Underdog set-win path needs early holds",
+        "confidence": 72,
+        "setWinRows": [
+          {
+            "name": "Mika Petkovic",
+            "confidence": 58,
+            "modelPct": 37,
+            "label": "Underdog set-win path needs early holds",
+            "marketType": "Win a set",
+            "valueGrade": "Needs posted price",
+            "betGrade": false
+          },
+          {
+            "name": "Alejandro Moro Canas",
+            "confidence": 72,
+            "modelPct": 64,
+            "label": "Market favorite to win a set",
+            "marketType": "Win a set",
+            "valueGrade": "Needs posted price",
+            "betGrade": false
+          }
+        ],
+        "valueGrade": "Needs posted price",
+        "tone": "neutral",
+        "reason": "Best-of-three set-win confidence is more fragile; early service holds matter more."
+      },
+      {
+        "label": "Spread",
+        "value": "No game spread captured",
+        "lean": "No spread line",
+        "confidence": 58,
+        "tone": "neutral",
+        "reason": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge."
+      },
+      {
+        "label": "O/U",
+        "value": "No total captured",
+        "lean": "No bet",
+        "confidence": 56,
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Need posted first-set total",
+        "lean": "Price required",
+        "confidence": 53,
+        "marketType": "First-set total",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "expectedGames": 9.8,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "modelPct": 53,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "betGrade": false,
+        "tone": "neutral"
+      }
+    ],
+    "marketEconomics": {
+      "source": "Robinhood prediction market",
+      "capturedAt": null,
+      "eventUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "deskName": "Alejandro Moro Canas",
+      "deskPricePct": 64,
+      "deskEdgePct": null,
+      "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
+      "players": [
+        {
+          "name": "Mika Petkovic",
+          "americanOdds": null,
+          "impliedPct": 37,
+          "modelPct": 37,
+          "edgePct": null,
+          "priceBand": "Underdog",
+          "grossProfitPct": 63,
+          "grossPayoutMultiple": 2.703,
+          "centsAtRisk": 37,
+          "centsProfitIfWin": 63,
+          "bidPct": 34,
+          "lastTradePct": 38,
+          "openInterest": 63,
+          "symbol": "KXATPCHALLENGERMATCH-26JUN02PETMOR-PET"
+        },
+        {
+          "name": "Alejandro Moro Canas",
+          "americanOdds": null,
+          "impliedPct": 64,
+          "modelPct": 64,
+          "edgePct": null,
+          "priceBand": "Moderate favorite",
+          "grossProfitPct": 36,
+          "grossPayoutMultiple": 1.563,
+          "centsAtRisk": 64,
+          "centsProfitIfWin": 36,
+          "bidPct": 63,
+          "lastTradePct": 0,
+          "openInterest": 0,
+          "symbol": "KXATPCHALLENGERMATCH-26JUN02PETMOR-MOR"
+        }
+      ]
+    },
+    "clayMatchupData": null,
+    "opponentQualityData": null,
+    "researchLinks": [
+      {
+        "label": "ESPN scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260602"
+      },
+      {
+        "label": "Tennistonic H2H",
+        "url": "https://tennistonic.com/head-to-head-compare/Mika-Petkovic-Vs-Alejandro-Moro-Canas/"
+      },
+      {
+        "label": "Robinhood market",
+        "url": "https://robinhood.com/us/en/prediction-markets/tennis/"
+      }
+    ],
+    "formEdgeName": "Alejandro Moro Canas"
+  },
+  "participants": [
+    {
+      "id": "rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Mika Petkovic",
+      "detail": "Clay | Rank not joined",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    },
+    {
+      "id": "rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Alejandro Moro Canas",
+      "detail": "Clay | Rank not joined",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "Prediction market",
+    "provider": "Robinhood prediction market",
+    "participants": [
+      {
+        "id": "rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "Mika Petkovic",
+        "detail": "Clay | Rank not joined",
+        "americanOdds": null,
+        "americanLabel": "0",
+        "decimalOdds": null,
+        "impliedProbability": 0,
+        "impliedProbabilityLabel": "0.0%"
+      },
+      {
+        "id": "rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Alejandro Moro Canas",
+        "detail": "Clay | Rank not joined",
+        "americanOdds": null,
+        "americanLabel": "0",
+        "decimalOdds": null,
+        "impliedProbability": 0,
+        "impliedProbabilityLabel": "0.0%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02:1",
+    "participant": {
+      "id": "rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Alejandro Moro Canas",
+      "detail": "Clay | Rank not joined",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    },
+    "opponent": {
+      "id": "rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Mika Petkovic",
+      "detail": "Clay | Rank not joined",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    },
+    "lean": "Market watch: Alejandro Moro Canas; do not treat as a model bet.",
+    "rationale": "Alejandro Moro Canas is the current market favorite. Alejandro Moro Canas is only the current Robinhood market favorite over Mika Petkovic; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+    "confidence": 64,
+    "volatility": 66,
+    "recommendationScore": 48,
+    "tier": "Watch",
+    "sourceLabel": "Robinhood prediction market",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0,
+    "marketProbabilityLabel": "0.0%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "Mika Petkovic",
+      "Alejandro Moro Canas"
+    ],
+    "tagCount": 6,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 150,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "Robinhood prediction market"
+  }
+}

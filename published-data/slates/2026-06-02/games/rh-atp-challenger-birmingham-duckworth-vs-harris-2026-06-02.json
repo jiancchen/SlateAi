@@ -1,1 +1,884 @@
-{"id":"rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02","eventId":"d36a27b6-b643-4aa4-adca-3a08d77d981f","league":"Tennis","start":"2:30 AM","startMinutes":150,"title":"James Duckworth vs Billy Harris","stage":"ATP Challenger Birmingham | Round Of 32","spotlight":false,"confidence":64,"volatility":67,"tags":["ATP Challenger","Prediction market","Market only","No model edge","Coinflip price"],"matchup":[{"side":"Player 1","name":"James Duckworth","displayName":"James Duckworth","detail":"Live rank #82 | Australia | age 34"},{"side":"Player 2","name":"Billy Harris","displayName":"Billy Harris","detail":"Live rank #150 | Great Britain | age 31"}],"summary":"James Duckworth is the current market favorite. James Duckworth is only the current Robinhood market favorite over Billy Harris; no warehouse service, break-point, or opponent-quality edge is joined yet.","factors":["James Duckworth is only the current Robinhood market favorite over Billy Harris; no warehouse service, break-point, or opponent-quality edge is joined yet.","Prediction-market price only; no FanDuel moneyline edge calculated.","Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.","No posted sportsbook total captured for this Challenger market.","May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.","Market-only Challenger row: no warehouse edge, sportsbook derivative, or service profile has been joined yet."],"lean":"Market watch: James Duckworth; do not treat as a model bet.","swing":"Risk: best-of-five set extension and tiebreak variance.","swingFactor":"Risk: best-of-five set extension and tiebreak variance.","odds":{"participantOrder":[0,1],"markets":[{"label":"Prediction market","book":"Robinhood prediction market","value":"James Duckworth 64% / Billy Harris 39%"},{"label":"Prediction market prices","book":"Robinhood prediction market","value":"James Duckworth 64c / Billy Harris 39c"}],"note":"Robinhood prediction-market prices captured: James Duckworth 64c / Billy Harris 39c. This is price context, not a sportsbook value signal.","provider":"Robinhood prediction market"},"tennisContext":{"surface":"Unknown","court":"ATP Challenger Birmingham","h2hLeader":"","fatigueFlag":false,"liveDog":false,"weaknessEdge":{"edgeType":"Market-only","target":"No warehouse weakness edge","scoreGap":null,"attackingSide":null,"vulnerableSide":null,"gameFlow":"Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","liveTrigger":"Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.","spreadRead":"No spread line","totalRead":"No total line","pick":{"name":"James Duckworth","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."},"opponent":{"name":"Billy Harris","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."}},"warehouseContext":{"source":"SQLite tennis warehouse fallback","eventId":"rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02","sourceUrl":null,"capturedAt":"2026-06-01 23:55:53","surface":"Clay","tournament":"Roland Garros","category":"WTA","startTimestamp":1780392600,"players":[{"name":"James Duckworth","side":"home","stats":{},"expectedStats":{"name":"James Duckworth","source":"SofaScore player page 2026 Clay stats","matches":15,"note":"Pregame expected stats from SofaScore player-page surface filter; hold is derived from first-serve-in, first-serve-won, and second-serve-won.","stats":{"matches":15,"wins":11,"winPct":73.3,"holdPct":84.2,"firstServePct":55,"firstServeWonPct":75.3,"secondServePct":90.5,"secondServeWonPct":54.1,"aces":6.6,"avgAces":6.6,"doubleFaults":3.5,"avgDoubleFaults":3.5,"breakPointsSavedPct":78.1,"breakPointsConvertedPct":42.5,"breakPointsSaved":75,"breakPointsFaced":96,"breakPointsConverted":31,"breakPointsToConvert":73,"tiebreaksWonPct":57.1},"sourceUrl":"https://www.sofascore.com/tennis/player/duckworth-james/39711#tab:statistics","surface":"Clay"},"recentFormMetrics":null},{"name":"Billy Harris","side":"away","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null}],"h2h":{"homeName":"James Duckworth","awayName":"Billy Harris","homeWins":null,"awayWins":null,"draws":null,"matches":[],"coverage":{"datedRows":0,"surfaceRows":0,"weightedRows":0}},"score":{"home":null,"away":null},"result":null,"sofascoreSignals":null,"weather":{"source":"Open-Meteo","venueKey":"roland-garros","startTs":1780392600,"endTs":1780399800,"durationMinutes":120,"hourlyRows":3,"avgTemperatureC":16.3,"maxTemperatureC":16.8,"minTemperatureC":15.8,"avgApparentTemperatureC":15.38,"maxApparentTemperatureC":16,"avgHumidityPct":90.5,"totalPrecipitationMm":5.4,"avgCloudCoverPct":97.75,"avgWindSpeedKmh":17.18,"maxWindGustKmh":41.4,"avgShortwaveRadiationWm2":149.75,"hotMatch":false,"humidMatch":true,"windyMatch":true,"rainAffected":true,"hourly":[{"apparentTemperatureC":16,"gustKmh":41.4,"humidityPct":89,"overlapMinutes":30,"precipitationMm":1.6,"shortwaveWm2":173,"temperatureC":16.8,"timeLocal":"2026-06-02T11:00","timeUtc":"2026-06-02T09:00:00Z","windKmh":16.8},{"apparentTemperatureC":15.2,"gustKmh":41.4,"humidityPct":91,"overlapMinutes":60,"precipitationMm":4.1,"shortwaveWm2":156,"temperatureC":16.3,"timeLocal":"2026-06-02T12:00","timeUtc":"2026-06-02T10:00:00Z","windKmh":18.6},{"apparentTemperatureC":15.1,"gustKmh":37.8,"humidityPct":91,"overlapMinutes":30,"precipitationMm":1,"shortwaveWm2":114,"temperatureC":15.8,"timeLocal":"2026-06-02T13:00","timeUtc":"2026-06-02T11:00:00Z","windKmh":14.7}]},"allStatRows":[],"coverage":{"hasEvent":false,"hasH2h":false,"allStatRows":0,"playerStatRows":0,"liveStatRows":0,"expectedStatRows":19,"recentMetricRows":0,"seasonStatRows":0,"liveStatsStatus":null,"hasWeather":true,"isPregame":true}},"sofascoreData":{"source":"SQLite tennis warehouse fallback","eventId":"rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02","sourceUrl":null,"capturedAt":"2026-06-01 23:55:53","surface":"Clay","tournament":"Roland Garros","category":"WTA","startTimestamp":1780392600,"players":[{"name":"James Duckworth","side":"home","stats":{},"expectedStats":{"name":"James Duckworth","source":"SofaScore player page 2026 Clay stats","matches":15,"note":"Pregame expected stats from SofaScore player-page surface filter; hold is derived from first-serve-in, first-serve-won, and second-serve-won.","stats":{"matches":15,"wins":11,"winPct":73.3,"holdPct":84.2,"firstServePct":55,"firstServeWonPct":75.3,"secondServePct":90.5,"secondServeWonPct":54.1,"aces":6.6,"avgAces":6.6,"doubleFaults":3.5,"avgDoubleFaults":3.5,"breakPointsSavedPct":78.1,"breakPointsConvertedPct":42.5,"breakPointsSaved":75,"breakPointsFaced":96,"breakPointsConverted":31,"breakPointsToConvert":73,"tiebreaksWonPct":57.1},"sourceUrl":"https://www.sofascore.com/tennis/player/duckworth-james/39711#tab:statistics","surface":"Clay"},"recentFormMetrics":null},{"name":"Billy Harris","side":"away","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null}],"h2h":{"homeName":"James Duckworth","awayName":"Billy Harris","homeWins":null,"awayWins":null,"draws":null,"matches":[],"coverage":{"datedRows":0,"surfaceRows":0,"weightedRows":0}},"score":{"home":null,"away":null},"result":null,"sofascoreSignals":null,"weather":{"source":"Open-Meteo","venueKey":"roland-garros","startTs":1780392600,"endTs":1780399800,"durationMinutes":120,"hourlyRows":3,"avgTemperatureC":16.3,"maxTemperatureC":16.8,"minTemperatureC":15.8,"avgApparentTemperatureC":15.38,"maxApparentTemperatureC":16,"avgHumidityPct":90.5,"totalPrecipitationMm":5.4,"avgCloudCoverPct":97.75,"avgWindSpeedKmh":17.18,"maxWindGustKmh":41.4,"avgShortwaveRadiationWm2":149.75,"hotMatch":false,"humidMatch":true,"windyMatch":true,"rainAffected":true,"hourly":[{"apparentTemperatureC":16,"gustKmh":41.4,"humidityPct":89,"overlapMinutes":30,"precipitationMm":1.6,"shortwaveWm2":173,"temperatureC":16.8,"timeLocal":"2026-06-02T11:00","timeUtc":"2026-06-02T09:00:00Z","windKmh":16.8},{"apparentTemperatureC":15.2,"gustKmh":41.4,"humidityPct":91,"overlapMinutes":60,"precipitationMm":4.1,"shortwaveWm2":156,"temperatureC":16.3,"timeLocal":"2026-06-02T12:00","timeUtc":"2026-06-02T10:00:00Z","windKmh":18.6},{"apparentTemperatureC":15.1,"gustKmh":37.8,"humidityPct":91,"overlapMinutes":30,"precipitationMm":1,"shortwaveWm2":114,"temperatureC":15.8,"timeLocal":"2026-06-02T13:00","timeUtc":"2026-06-02T11:00:00Z","windKmh":14.7}]},"allStatRows":[],"coverage":{"hasEvent":false,"hasH2h":false,"allStatRows":0,"playerStatRows":0,"liveStatRows":0,"expectedStatRows":19,"recentMetricRows":0,"seasonStatRows":0,"liveStatsStatus":null,"hasWeather":true,"isPregame":true}},"players":[{"name":"James Duckworth","rank":82,"label":"James Duckworth","form":null,"boardPct":64,"decimalOdds":null,"marketLabel":"64c / 64% implied","clayLine":"Live rank #82 | Australia | age 34","weakness":{"name":"James Duckworth","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."},"warehouseStats":{"name":"James Duckworth","side":"home","stats":{},"expectedStats":{"name":"James Duckworth","source":"SofaScore player page 2026 Clay stats","matches":15,"note":"Pregame expected stats from SofaScore player-page surface filter; hold is derived from first-serve-in, first-serve-won, and second-serve-won.","stats":{"matches":15,"wins":11,"winPct":73.3,"holdPct":84.2,"firstServePct":55,"firstServeWonPct":75.3,"secondServePct":90.5,"secondServeWonPct":54.1,"aces":6.6,"avgAces":6.6,"doubleFaults":3.5,"avgDoubleFaults":3.5,"breakPointsSavedPct":78.1,"breakPointsConvertedPct":42.5,"breakPointsSaved":75,"breakPointsFaced":96,"breakPointsConverted":31,"breakPointsToConvert":73,"tiebreaksWonPct":57.1},"sourceUrl":"https://www.sofascore.com/tennis/player/duckworth-james/39711#tab:statistics","surface":"Clay"},"recentFormMetrics":null},"record2026":"","notes":"Pick: model 64%","matchupNote":"Why pick: James Duckworth is only the current Robinhood market favorite over Billy Harris; no warehouse service, break-point, or opponent-quality edge is joined yet."},{"name":"Billy Harris","rank":150,"label":"Billy Harris","form":null,"boardPct":39,"decimalOdds":null,"marketLabel":"39c / 39% implied","clayLine":"Live rank #150 | Great Britain | age 31","weakness":{"name":"Billy Harris","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."},"warehouseStats":{"name":"Billy Harris","side":"away","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null},"record2026":"","notes":"Opponent case: model 36%","matchupNote":"Upset path: needs early scoreboard pressure or a market price that pays for volatility."}],"comparisonRows":[{"label":"Model pick","metric":"Fair win split","leftScore":64,"rightScore":39,"leftLabel":"James Duckworth","rightLabel":"Billy Harris","winner":"James Duckworth"},{"label":"Prediction market","metric":"Implied price","leftScore":64,"rightScore":39,"leftLabel":"James Duckworth","rightLabel":"Billy Harris","winner":"Prediction-market price captured; no sportsbook EV is inferred from this row."},{"label":"Weakness","metric":"Lower is cleaner","leftScore":0,"rightScore":0,"leftLabel":"James Duckworth","rightLabel":"Billy Harris","winner":"Market-only"},{"label":"Volatility","metric":"Lower is cleaner","leftScore":67,"rightScore":33,"leftLabel":"Risk","rightLabel":"Stability","winner":"Pass-first"}],"predictionMarket":{"source":"Robinhood prediction market","capturedAt":null,"totalVolume":0,"players":[{"name":"James Duckworth","probabilityPct":64,"amount":131,"americanOdds":null,"edgePct":null,"priceBand":"Moderate favorite"},{"name":"Billy Harris","probabilityPct":39,"amount":0,"americanOdds":null,"edgePct":null,"priceBand":"Underdog"}]},"bettingMatrix":[{"marketType":"Moneyline","label":"ML value","selection":"James Duckworth","line":null,"americanOdds":null,"modelPct":64,"impliedPct":64,"edgePct":null,"evPer100":null,"netEvPer100":null,"grade":"Near fair","issue":"Favorite price needs better proof","reason":"Prediction-market price captured; no sportsbook EV is inferred from this row."},{"marketType":"Total games","label":"O/U games","selection":"No bet","line":null,"americanOdds":null,"modelPct":null,"impliedPct":null,"edgePct":null,"evPer100":null,"netEvPer100":null,"expectedGames":null,"edgeGames":null,"confidence":null,"grade":"No direction","reason":"Total games need expected match games vs the posted line."},{"marketType":"Win a set","label":"Win a set %","selection":"James Duckworth 72% / Billy Harris 58%","rows":[{"name":"James Duckworth","confidence":72,"modelPct":64,"label":"Market favorite to win a set"},{"name":"Billy Harris","confidence":58,"modelPct":39,"label":"Underdog set-win path needs early holds"}],"confidence":72,"grade":"Price required","reason":"Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."},{"marketType":"First-set total games","label":"1st set O/U","selection":"Price required","expectedGames":9.8,"confidence":53,"tiebreakRisk":42,"earlyBreakRisk":58,"grade":"Needs posted first-set total","reason":"Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."}],"derivativeMarketCase":null,"valueBoard":{"note":"EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.","ml":{"marketType":"ML","selection":"James Duckworth","americanOdds":null,"modelPct":64,"impliedPct":64,"edgePct":null,"evPer100":null,"netEvPer100":null,"feePer100":2,"valueIssue":"Favorite price needs better proof","valueGrade":"Near fair","betGrade":false},"spread":null,"total":{"marketType":"Total","selection":"No bet","line":null,"overOdds":null,"underOdds":null,"expectedGames":null,"valueGrade":"No direction","reason":"No posted match total captured.","betGrade":false},"firstSetTotal":{"marketType":"First-set total","selection":"Price required","line":null,"americanOdds":null,"expectedGames":9.8,"confidence":53,"tiebreakRisk":42,"earlyBreakRisk":58,"modelPct":53,"evPer100":null,"netEvPer100":null,"valueGrade":"Needs posted first-set total","reason":"Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.","betGrade":false},"setWin":[{"name":"James Duckworth","confidence":72,"modelPct":64,"label":"Market favorite to win a set","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false},{"name":"Billy Harris","confidence":58,"modelPct":39,"label":"Underdog set-win path needs early holds","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false}]},"ensembleValueCase":null,"projection":{"projectedWinner":"James Duckworth","projectedSetLine":"2-0/2-1 range","setWinProjections":[{"name":"James Duckworth","confidence":72,"modelPct":64,"label":"Market favorite to win a set"},{"name":"Billy Harris","confidence":58,"modelPct":39,"label":"Underdog set-win path needs early holds"}],"totalGames":null,"straightSetsProbability":56,"upsetRisk":36,"overview":"Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","fantasy":[]},"tradePlan":{"laneLabel":"Prediction-market price captured; no sportsbook EV is inferred from this row.","summary":"Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","trigger":"Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.","headline":"Market-only","exit":"No spread line","tone":"warning"},"derivativeMarkets":[{"label":"ML","value":"James Duckworth 64c; Prediction-market price only; no FanDuel moneyline edge calculated.","lean":"Prediction-market price captured; no sportsbook EV is inferred from this row.","confidence":64,"marketType":"ML","selection":"James Duckworth","americanOdds":null,"modelPct":64,"impliedPct":64,"edgePct":null,"evPer100":null,"netEvPer100":null,"feePer100":2,"valueIssue":"Favorite price needs better proof","valueGrade":"Near fair","betGrade":false,"tone":"neutral","reason":"Robinhood prediction-market prices captured: James Duckworth 64c / Billy Harris 39c. This is price context, not a sportsbook value signal."},{"label":"Win a set","value":"James Duckworth 72% / Billy Harris 58%","lean":"Underdog set-win path needs early holds","confidence":72,"setWinRows":[{"name":"James Duckworth","confidence":72,"modelPct":64,"label":"Market favorite to win a set","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false},{"name":"Billy Harris","confidence":58,"modelPct":39,"label":"Underdog set-win path needs early holds","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false}],"valueGrade":"Needs posted price","tone":"neutral","reason":"Best-of-three set-win confidence is more fragile; early service holds matter more."},{"label":"Spread","value":"No game spread captured","lean":"No spread line","confidence":58,"tone":"neutral","reason":"Only enter after visible first-service comfort and break-point pressure; no pre-match model edge."},{"label":"O/U","value":"No total captured","lean":"No bet","confidence":56,"marketType":"Total","selection":"No bet","line":null,"overOdds":null,"underOdds":null,"expectedGames":null,"valueGrade":"No direction","reason":"No posted match total captured.","betGrade":false,"tone":"neutral"},{"label":"1st set O/U","value":"Need posted first-set total","lean":"Price required","confidence":53,"marketType":"First-set total","selection":"Price required","line":null,"americanOdds":null,"expectedGames":9.8,"tiebreakRisk":42,"earlyBreakRisk":58,"modelPct":53,"evPer100":null,"netEvPer100":null,"valueGrade":"Needs posted first-set total","reason":"Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.","betGrade":false,"tone":"neutral"}],"marketEconomics":{"source":"Robinhood prediction market","capturedAt":null,"eventUrl":"https://robinhood.com/us/en/prediction-markets/tennis/","deskName":"James Duckworth","deskPricePct":64,"deskEdgePct":null,"priceAction":"Prediction-market price captured; no sportsbook EV is inferred from this row.","players":[{"name":"James Duckworth","americanOdds":null,"impliedPct":64,"modelPct":64,"edgePct":null,"priceBand":"Moderate favorite","grossProfitPct":36,"grossPayoutMultiple":1.563,"centsAtRisk":64,"centsProfitIfWin":36,"bidPct":61,"lastTradePct":64,"openInterest":131,"symbol":"KXATPCHALLENGERMATCH-26JUN02DUCHAR-DUC"},{"name":"Billy Harris","americanOdds":null,"impliedPct":39,"modelPct":39,"edgePct":null,"priceBand":"Underdog","grossProfitPct":61,"grossPayoutMultiple":2.564,"centsAtRisk":39,"centsProfitIfWin":61,"bidPct":36,"lastTradePct":0,"openInterest":0,"symbol":"KXATPCHALLENGERMATCH-26JUN02DUCHAR-HAR"}]},"clayMatchupData":null,"opponentQualityData":null,"researchLinks":[{"label":"ESPN scoreboard","url":"https://www.espn.com/tennis/scoreboard/_/date/20260602"},{"label":"Tennistonic H2H","url":"https://tennistonic.com/head-to-head-compare/James-Duckworth-Vs-Billy-Harris/"},{"label":"Robinhood market","url":"https://robinhood.com/us/en/prediction-markets/tennis/"}],"formEdgeName":"James Duckworth"},"participants":[{"id":"rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02:0","index":0,"role":"Player 1","name":"James Duckworth","detail":"Live rank #82 | Australia | age 34","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},{"id":"rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02:1","index":1,"role":"Player 2","name":"Billy Harris","detail":"Live rank #150 | Great Britain | age 31","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"}],"moneyline":{"available":true,"label":"Prediction market","provider":"Robinhood prediction market","participants":[{"id":"rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02:0","index":0,"role":"Player 1","name":"James Duckworth","detail":"Live rank #82 | Australia | age 34","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},{"id":"rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02:1","index":1,"role":"Player 2","name":"Billy Harris","detail":"Live rank #150 | Great Britain | age 31","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"}]},"analysis":{"available":true,"participantId":"rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02:0","participant":{"id":"rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02:0","index":0,"role":"Player 1","name":"James Duckworth","detail":"Live rank #82 | Australia | age 34","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},"opponent":{"id":"rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02:1","index":1,"role":"Player 2","name":"Billy Harris","detail":"Live rank #150 | Great Britain | age 31","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},"lean":"Market watch: James Duckworth; do not treat as a model bet.","rationale":"James Duckworth is the current market favorite. James Duckworth is only the current Robinhood market favorite over Billy Harris; no warehouse service, break-point, or opponent-quality edge is joined yet.","confidence":64,"volatility":67,"recommendationScore":47,"tier":"Watch","sourceLabel":"Robinhood prediction market","modelEdge":null,"modelEdgeLabel":"","marketProbability":0,"marketProbabilityLabel":"0.0%","inputs":[],"inputsUsed":0,"volatilityNotes":[],"indicators":{}},"metadata":{"participantCount":2,"participantNames":["James Duckworth","Billy Harris"],"tagCount":5,"hasSeriesBreakdown":false,"hasMoneyline":true,"hasAnalysisPick":true,"hasStructuredInputs":false,"hasPlayerProps":false,"startMinutes":150,"spotlight":false,"league":"Tennis","oddsProvider":"Robinhood prediction market"},"detailLevel":"full","stateContext":null}
+{
+  "id": "rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02",
+  "eventId": "d36a27b6-b643-4aa4-adca-3a08d77d981f",
+  "league": "Tennis",
+  "start": "2:30 AM",
+  "startMinutes": 150,
+  "title": "James Duckworth vs Billy Harris",
+  "stage": "ATP Challenger Birmingham | Round Of 32",
+  "spotlight": false,
+  "confidence": 63,
+  "volatility": 67,
+  "tags": [
+    "ATP Challenger",
+    "Grass",
+    "Prediction market",
+    "Market only",
+    "No model edge",
+    "Coinflip price"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "James Duckworth",
+      "displayName": "James Duckworth",
+      "detail": "Grass | Live rank #82 | Australia | age 34"
+    },
+    {
+      "side": "Player 2",
+      "name": "Billy Harris",
+      "displayName": "Billy Harris",
+      "detail": "Grass | Live rank #150 | Great Britain | age 31"
+    }
+  ],
+  "summary": "James Duckworth is the current market favorite. James Duckworth is only the current Robinhood market favorite over Billy Harris; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+  "factors": [
+    "James Duckworth is only the current Robinhood market favorite over Billy Harris; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+    "Prediction-market price only; no FanDuel moneyline edge calculated.",
+    "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+    "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+    "No posted sportsbook total captured for this Challenger market.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "Market-only Challenger row: no warehouse edge, sportsbook derivative, or service profile has been joined yet."
+  ],
+  "lean": "Market watch: James Duckworth; do not treat as a model bet.",
+  "swing": "Risk: best-of-five set extension and tiebreak variance.",
+  "swingFactor": "Risk: best-of-five set extension and tiebreak variance.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Prediction market",
+        "book": "Robinhood prediction market",
+        "value": "James Duckworth 63% / Billy Harris 39%"
+      },
+      {
+        "label": "Prediction market prices",
+        "book": "Robinhood prediction market",
+        "value": "James Duckworth 63c / Billy Harris 39c"
+      }
+    ],
+    "note": "Robinhood prediction-market prices captured: James Duckworth 63c / Billy Harris 39c. This is price context, not a sportsbook value signal.",
+    "provider": "Robinhood prediction market"
+  },
+  "tennisContext": {
+    "surface": "Grass",
+    "court": "ATP Challenger Birmingham",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "Market-only",
+      "target": "No warehouse weakness edge",
+      "scoreGap": null,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+      "spreadRead": "No spread line",
+      "totalRead": "No total line",
+      "pick": {
+        "name": "James Duckworth",
+        "weaknessScore": null,
+        "liabilities": [
+          "No warehouse weakness data joined yet"
+        ],
+        "strengths": [],
+        "firstGameComfort": "Market-only row; wait for serve pressure data",
+        "gameFlowRead": "No service/break profile joined yet."
+      },
+      "opponent": {
+        "name": "Billy Harris",
+        "weaknessScore": null,
+        "liabilities": [
+          "No warehouse weakness data joined yet"
+        ],
+        "strengths": [],
+        "firstGameComfort": "Market-only row; wait for serve pressure data",
+        "gameFlowRead": "No service/break profile joined yet."
+      }
+    },
+    "warehouseContext": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Grass",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "James Duckworth",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "James Duckworth",
+            "source": "SofaScore player page 2026 All surfaces stats",
+            "matches": 27,
+            "note": "Pregame expected stats from SofaScore player-page surface filter; hold is derived from first-serve-in, first-serve-won, and second-serve-won.",
+            "stats": {
+              "matches": 27,
+              "wins": 15,
+              "winPct": 55.6,
+              "holdPct": 82.5,
+              "firstServePct": 56.8,
+              "firstServeWonPct": 74.6,
+              "secondServePct": 90.4,
+              "secondServeWonPct": 51.8,
+              "aces": 7.9,
+              "avgAces": 7.9,
+              "doubleFaults": 3.4,
+              "avgDoubleFaults": 3.4,
+              "breakPointsSavedPct": 72.8,
+              "breakPointsConvertedPct": 34.1,
+              "breakPointsSaved": 131,
+              "breakPointsFaced": 180,
+              "breakPointsConverted": 46,
+              "breakPointsToConvert": 135,
+              "tiebreaksWonPct": 50
+            },
+            "sourceUrl": "https://www.sofascore.com/tennis/player/duckworth-james/39711#tab:statistics",
+            "surface": "All surfaces"
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Billy Harris",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "James Duckworth",
+        "awayName": "Billy Harris",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 19,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "sofascoreData": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Grass",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "James Duckworth",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "James Duckworth",
+            "source": "SofaScore player page 2026 All surfaces stats",
+            "matches": 27,
+            "note": "Pregame expected stats from SofaScore player-page surface filter; hold is derived from first-serve-in, first-serve-won, and second-serve-won.",
+            "stats": {
+              "matches": 27,
+              "wins": 15,
+              "winPct": 55.6,
+              "holdPct": 82.5,
+              "firstServePct": 56.8,
+              "firstServeWonPct": 74.6,
+              "secondServePct": 90.4,
+              "secondServeWonPct": 51.8,
+              "aces": 7.9,
+              "avgAces": 7.9,
+              "doubleFaults": 3.4,
+              "avgDoubleFaults": 3.4,
+              "breakPointsSavedPct": 72.8,
+              "breakPointsConvertedPct": 34.1,
+              "breakPointsSaved": 131,
+              "breakPointsFaced": 180,
+              "breakPointsConverted": 46,
+              "breakPointsToConvert": 135,
+              "tiebreaksWonPct": 50
+            },
+            "sourceUrl": "https://www.sofascore.com/tennis/player/duckworth-james/39711#tab:statistics",
+            "surface": "All surfaces"
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Billy Harris",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "James Duckworth",
+        "awayName": "Billy Harris",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 19,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "players": [
+      {
+        "name": "James Duckworth",
+        "rank": 82,
+        "label": "James Duckworth",
+        "form": null,
+        "boardPct": 63,
+        "decimalOdds": null,
+        "marketLabel": "63c / 63% implied",
+        "clayLine": "Grass | Live rank #82 | Australia | age 34",
+        "weakness": {
+          "name": "James Duckworth",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "warehouseStats": {
+          "name": "James Duckworth",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "James Duckworth",
+            "source": "SofaScore player page 2026 All surfaces stats",
+            "matches": 27,
+            "note": "Pregame expected stats from SofaScore player-page surface filter; hold is derived from first-serve-in, first-serve-won, and second-serve-won.",
+            "stats": {
+              "matches": 27,
+              "wins": 15,
+              "winPct": 55.6,
+              "holdPct": 82.5,
+              "firstServePct": 56.8,
+              "firstServeWonPct": 74.6,
+              "secondServePct": 90.4,
+              "secondServeWonPct": 51.8,
+              "aces": 7.9,
+              "avgAces": 7.9,
+              "doubleFaults": 3.4,
+              "avgDoubleFaults": 3.4,
+              "breakPointsSavedPct": 72.8,
+              "breakPointsConvertedPct": 34.1,
+              "breakPointsSaved": 131,
+              "breakPointsFaced": 180,
+              "breakPointsConverted": 46,
+              "breakPointsToConvert": 135,
+              "tiebreaksWonPct": 50
+            },
+            "sourceUrl": "https://www.sofascore.com/tennis/player/duckworth-james/39711#tab:statistics",
+            "surface": "All surfaces"
+          },
+          "recentFormMetrics": null
+        },
+        "record2026": "",
+        "notes": "Pick: model 63%",
+        "matchupNote": "Why pick: James Duckworth is only the current Robinhood market favorite over Billy Harris; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet."
+      },
+      {
+        "name": "Billy Harris",
+        "rank": 150,
+        "label": "Billy Harris",
+        "form": null,
+        "boardPct": 39,
+        "decimalOdds": null,
+        "marketLabel": "39c / 39% implied",
+        "clayLine": "Grass | Live rank #150 | Great Britain | age 31",
+        "weakness": {
+          "name": "Billy Harris",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "warehouseStats": {
+          "name": "Billy Harris",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        "record2026": "",
+        "notes": "Opponent case: model 37%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 63,
+        "rightScore": 39,
+        "leftLabel": "James Duckworth",
+        "rightLabel": "Billy Harris",
+        "winner": "James Duckworth"
+      },
+      {
+        "label": "Prediction market",
+        "metric": "Implied price",
+        "leftScore": 63,
+        "rightScore": 39,
+        "leftLabel": "James Duckworth",
+        "rightLabel": "Billy Harris",
+        "winner": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 0,
+        "rightScore": 0,
+        "leftLabel": "James Duckworth",
+        "rightLabel": "Billy Harris",
+        "winner": "Market-only"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 67,
+        "rightScore": 33,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Pass-first"
+      }
+    ],
+    "predictionMarket": {
+      "source": "Robinhood prediction market",
+      "capturedAt": null,
+      "totalVolume": 0,
+      "players": [
+        {
+          "name": "James Duckworth",
+          "probabilityPct": 63,
+          "amount": 242,
+          "americanOdds": null,
+          "edgePct": null,
+          "priceBand": "Moderate favorite"
+        },
+        {
+          "name": "Billy Harris",
+          "probabilityPct": 39,
+          "amount": 0,
+          "americanOdds": null,
+          "edgePct": null,
+          "priceBand": "Underdog"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "James Duckworth",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 63,
+        "impliedPct": 63,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "grade": "Near fair",
+        "issue": "Favorite price needs better proof",
+        "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "Total games need expected match games vs the posted line."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "James Duckworth 71% / Billy Harris 59%",
+        "rows": [
+          {
+            "name": "James Duckworth",
+            "confidence": 71,
+            "modelPct": 63,
+            "label": "Market favorite to win a set"
+          },
+          {
+            "name": "Billy Harris",
+            "confidence": 59,
+            "modelPct": 39,
+            "label": "Underdog set-win path needs early holds"
+          }
+        ],
+        "confidence": 71,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Price required",
+        "expectedGames": 9.8,
+        "confidence": 53,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "grade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "James Duckworth",
+        "americanOdds": null,
+        "modelPct": 63,
+        "impliedPct": 63,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Near fair",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "expectedGames": 9.8,
+        "confidence": 53,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "modelPct": 53,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "James Duckworth",
+          "confidence": 71,
+          "modelPct": 63,
+          "label": "Market favorite to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Billy Harris",
+          "confidence": 59,
+          "modelPct": 39,
+          "label": "Underdog set-win path needs early holds",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "James Duckworth",
+      "projectedSetLine": "2-0/2-1 range",
+      "setWinProjections": [
+        {
+          "name": "James Duckworth",
+          "confidence": 71,
+          "modelPct": 63,
+          "label": "Market favorite to win a set"
+        },
+        {
+          "name": "Billy Harris",
+          "confidence": 59,
+          "modelPct": 39,
+          "label": "Underdog set-win path needs early holds"
+        }
+      ],
+      "totalGames": null,
+      "straightSetsProbability": 55,
+      "upsetRisk": 37,
+      "overview": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
+      "summary": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "trigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+      "headline": "Market-only",
+      "exit": "No spread line",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "James Duckworth 63c; Prediction-market price only; no FanDuel moneyline edge calculated.",
+        "lean": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
+        "confidence": 63,
+        "marketType": "ML",
+        "selection": "James Duckworth",
+        "americanOdds": null,
+        "modelPct": 63,
+        "impliedPct": 63,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Near fair",
+        "betGrade": false,
+        "tone": "neutral",
+        "reason": "Robinhood prediction-market prices captured: James Duckworth 63c / Billy Harris 39c. This is price context, not a sportsbook value signal."
+      },
+      {
+        "label": "Win a set",
+        "value": "James Duckworth 71% / Billy Harris 59%",
+        "lean": "Underdog set-win path needs early holds",
+        "confidence": 71,
+        "setWinRows": [
+          {
+            "name": "James Duckworth",
+            "confidence": 71,
+            "modelPct": 63,
+            "label": "Market favorite to win a set",
+            "marketType": "Win a set",
+            "valueGrade": "Needs posted price",
+            "betGrade": false
+          },
+          {
+            "name": "Billy Harris",
+            "confidence": 59,
+            "modelPct": 39,
+            "label": "Underdog set-win path needs early holds",
+            "marketType": "Win a set",
+            "valueGrade": "Needs posted price",
+            "betGrade": false
+          }
+        ],
+        "valueGrade": "Needs posted price",
+        "tone": "neutral",
+        "reason": "Best-of-three set-win confidence is more fragile; early service holds matter more."
+      },
+      {
+        "label": "Spread",
+        "value": "No game spread captured",
+        "lean": "No spread line",
+        "confidence": 57,
+        "tone": "neutral",
+        "reason": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge."
+      },
+      {
+        "label": "O/U",
+        "value": "No total captured",
+        "lean": "No bet",
+        "confidence": 55,
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Need posted first-set total",
+        "lean": "Price required",
+        "confidence": 53,
+        "marketType": "First-set total",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "expectedGames": 9.8,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "modelPct": 53,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "betGrade": false,
+        "tone": "neutral"
+      }
+    ],
+    "marketEconomics": {
+      "source": "Robinhood prediction market",
+      "capturedAt": null,
+      "eventUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "deskName": "James Duckworth",
+      "deskPricePct": 63,
+      "deskEdgePct": null,
+      "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
+      "players": [
+        {
+          "name": "James Duckworth",
+          "americanOdds": null,
+          "impliedPct": 63,
+          "modelPct": 63,
+          "edgePct": null,
+          "priceBand": "Moderate favorite",
+          "grossProfitPct": 37,
+          "grossPayoutMultiple": 1.587,
+          "centsAtRisk": 63,
+          "centsProfitIfWin": 37,
+          "bidPct": 62,
+          "lastTradePct": 63,
+          "openInterest": 242,
+          "symbol": "KXATPCHALLENGERMATCH-26JUN02DUCHAR-DUC"
+        },
+        {
+          "name": "Billy Harris",
+          "americanOdds": null,
+          "impliedPct": 39,
+          "modelPct": 39,
+          "edgePct": null,
+          "priceBand": "Underdog",
+          "grossProfitPct": 61,
+          "grossPayoutMultiple": 2.564,
+          "centsAtRisk": 39,
+          "centsProfitIfWin": 61,
+          "bidPct": 36,
+          "lastTradePct": 0,
+          "openInterest": 0,
+          "symbol": "KXATPCHALLENGERMATCH-26JUN02DUCHAR-HAR"
+        }
+      ]
+    },
+    "clayMatchupData": null,
+    "opponentQualityData": null,
+    "researchLinks": [
+      {
+        "label": "ESPN scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260602"
+      },
+      {
+        "label": "Tennistonic H2H",
+        "url": "https://tennistonic.com/head-to-head-compare/James-Duckworth-Vs-Billy-Harris/"
+      },
+      {
+        "label": "Robinhood market",
+        "url": "https://robinhood.com/us/en/prediction-markets/tennis/"
+      }
+    ],
+    "formEdgeName": "James Duckworth"
+  },
+  "participants": [
+    {
+      "id": "rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "James Duckworth",
+      "detail": "Grass | Live rank #82 | Australia | age 34",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    },
+    {
+      "id": "rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Billy Harris",
+      "detail": "Grass | Live rank #150 | Great Britain | age 31",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "Prediction market",
+    "provider": "Robinhood prediction market",
+    "participants": [
+      {
+        "id": "rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "James Duckworth",
+        "detail": "Grass | Live rank #82 | Australia | age 34",
+        "americanOdds": null,
+        "americanLabel": "0",
+        "decimalOdds": null,
+        "impliedProbability": 0,
+        "impliedProbabilityLabel": "0.0%"
+      },
+      {
+        "id": "rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Billy Harris",
+        "detail": "Grass | Live rank #150 | Great Britain | age 31",
+        "americanOdds": null,
+        "americanLabel": "0",
+        "decimalOdds": null,
+        "impliedProbability": 0,
+        "impliedProbabilityLabel": "0.0%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02:0",
+    "participant": {
+      "id": "rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "James Duckworth",
+      "detail": "Grass | Live rank #82 | Australia | age 34",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    },
+    "opponent": {
+      "id": "rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Billy Harris",
+      "detail": "Grass | Live rank #150 | Great Britain | age 31",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    },
+    "lean": "Market watch: James Duckworth; do not treat as a model bet.",
+    "rationale": "James Duckworth is the current market favorite. James Duckworth is only the current Robinhood market favorite over Billy Harris; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+    "confidence": 63,
+    "volatility": 67,
+    "recommendationScore": 46,
+    "tier": "Watch",
+    "sourceLabel": "Robinhood prediction market",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0,
+    "marketProbabilityLabel": "0.0%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "James Duckworth",
+      "Billy Harris"
+    ],
+    "tagCount": 6,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 150,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "Robinhood prediction market"
+  }
+}

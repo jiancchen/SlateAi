@@ -1,1 +1,884 @@
-{"id":"rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02","eventId":"a575aaf0-ff35-4096-859c-e69927a4a5d1","league":"Tennis","start":"1:30 AM","startMinutes":90,"title":"Luka Pavlovic vs Nikolas Sanchez Izquierdo","stage":"ATP Challenger Prostejov | Round Of 32","spotlight":false,"confidence":56,"volatility":74,"tags":["ATP Challenger","Prediction market","Market only","No model edge","Coinflip price"],"matchup":[{"side":"Player 1","name":"Luka Pavlovic","displayName":"Luka Pavlovic","detail":"Rank not joined"},{"side":"Player 2","name":"Nikolas Sanchez Izquierdo","displayName":"Nikolas Sanchez Izquierdo","detail":"Rank not joined"}],"summary":"Nikolas Sanchez Izquierdo is the current market favorite. Nikolas Sanchez Izquierdo is only the current Robinhood market favorite over Luka Pavlovic; no warehouse service, break-point, or opponent-quality edge is joined yet.","factors":["Nikolas Sanchez Izquierdo is only the current Robinhood market favorite over Luka Pavlovic; no warehouse service, break-point, or opponent-quality edge is joined yet.","Prediction-market price only; no FanDuel moneyline edge calculated.","Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.","No posted sportsbook total captured for this Challenger market.","May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.","Market-only Challenger row: no warehouse edge, sportsbook derivative, or service profile has been joined yet."],"lean":"Market watch: Nikolas Sanchez Izquierdo; do not treat as a model bet.","swing":"Risk: best-of-five set extension and tiebreak variance.","swingFactor":"Risk: best-of-five set extension and tiebreak variance.","odds":{"participantOrder":[0,1],"markets":[{"label":"Prediction market","book":"Robinhood prediction market","value":"Luka Pavlovic 48% / Nikolas Sanchez Izquierdo 56%"},{"label":"Prediction market prices","book":"Robinhood prediction market","value":"Luka Pavlovic 48c / Nikolas Sanchez Izquierdo 56c"}],"note":"Robinhood prediction-market prices captured: Luka Pavlovic 48c / Nikolas Sanchez Izquierdo 56c. This is price context, not a sportsbook value signal.","provider":"Robinhood prediction market"},"tennisContext":{"surface":"Unknown","court":"ATP Challenger Prostejov","h2hLeader":"","fatigueFlag":false,"liveDog":false,"weaknessEdge":{"edgeType":"Market-only","target":"No warehouse weakness edge","scoreGap":null,"attackingSide":null,"vulnerableSide":null,"gameFlow":"Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","liveTrigger":"Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.","spreadRead":"No spread line","totalRead":"No total line","pick":{"name":"Nikolas Sanchez Izquierdo","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."},"opponent":{"name":"Luka Pavlovic","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."}},"warehouseContext":{"source":"SQLite tennis warehouse fallback","eventId":"rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02","sourceUrl":null,"capturedAt":"2026-06-01 23:55:54","surface":"Clay","tournament":"Roland Garros","category":"WTA","startTimestamp":1780389000,"players":[{"name":"Luka Pavlovic","side":"home","stats":{},"expectedStats":{"name":"Luka Pavlovic","source":"SofaScore player page 2026 Clay stats","matches":16,"note":"Pregame expected stats from SofaScore player-page surface filter; hold is derived from first-serve-in, first-serve-won, and second-serve-won.","stats":{"matches":16,"wins":9,"winPct":56.3,"holdPct":79.6,"firstServePct":55.3,"firstServeWonPct":76.2,"secondServePct":86.3,"secondServeWonPct":46.8,"aces":10.4,"avgAces":10.4,"doubleFaults":4.8,"avgDoubleFaults":4.8,"breakPointsSavedPct":65.2,"breakPointsConvertedPct":37.8,"breakPointsSaved":60,"breakPointsFaced":92,"breakPointsConverted":31,"breakPointsToConvert":82,"tiebreaksWonPct":66.7},"sourceUrl":"https://www.sofascore.com/tennis/player/pavlovic-luka/224534#tab:statistics","surface":"Clay"},"recentFormMetrics":null},{"name":"Nikolas Sanchez Izquierdo","side":"away","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null}],"h2h":{"homeName":"Luka Pavlovic","awayName":"Nikolas Sanchez Izquierdo","homeWins":null,"awayWins":null,"draws":null,"matches":[],"coverage":{"datedRows":0,"surfaceRows":0,"weightedRows":0}},"score":{"home":null,"away":null},"result":null,"sofascoreSignals":null,"weather":{"source":"Open-Meteo","venueKey":"roland-garros","startTs":1780389000,"endTs":1780396200,"durationMinutes":120,"hourlyRows":3,"avgTemperatureC":16.8,"maxTemperatureC":17.3,"minTemperatureC":16.3,"avgApparentTemperatureC":15.82,"maxApparentTemperatureC":16.1,"avgHumidityPct":88,"totalPrecipitationMm":4.2,"avgCloudCoverPct":100,"avgWindSpeedKmh":17.62,"maxWindGustKmh":42.8,"avgShortwaveRadiationWm2":189,"hotMatch":false,"humidMatch":true,"windyMatch":true,"rainAffected":true,"hourly":[{"apparentTemperatureC":16.1,"gustKmh":42.8,"humidityPct":83,"overlapMinutes":30,"precipitationMm":1.1,"shortwaveWm2":254,"temperatureC":17.3,"timeLocal":"2026-06-02T10:00","timeUtc":"2026-06-02T08:00:00Z","windKmh":18.3},{"apparentTemperatureC":16,"gustKmh":41.4,"humidityPct":89,"overlapMinutes":60,"precipitationMm":1.6,"shortwaveWm2":173,"temperatureC":16.8,"timeLocal":"2026-06-02T11:00","timeUtc":"2026-06-02T09:00:00Z","windKmh":16.8},{"apparentTemperatureC":15.2,"gustKmh":41.4,"humidityPct":91,"overlapMinutes":30,"precipitationMm":4.1,"shortwaveWm2":156,"temperatureC":16.3,"timeLocal":"2026-06-02T12:00","timeUtc":"2026-06-02T10:00:00Z","windKmh":18.6}]},"allStatRows":[],"coverage":{"hasEvent":false,"hasH2h":false,"allStatRows":0,"playerStatRows":0,"liveStatRows":0,"expectedStatRows":19,"recentMetricRows":0,"seasonStatRows":0,"liveStatsStatus":null,"hasWeather":true,"isPregame":true}},"sofascoreData":{"source":"SQLite tennis warehouse fallback","eventId":"rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02","sourceUrl":null,"capturedAt":"2026-06-01 23:55:54","surface":"Clay","tournament":"Roland Garros","category":"WTA","startTimestamp":1780389000,"players":[{"name":"Luka Pavlovic","side":"home","stats":{},"expectedStats":{"name":"Luka Pavlovic","source":"SofaScore player page 2026 Clay stats","matches":16,"note":"Pregame expected stats from SofaScore player-page surface filter; hold is derived from first-serve-in, first-serve-won, and second-serve-won.","stats":{"matches":16,"wins":9,"winPct":56.3,"holdPct":79.6,"firstServePct":55.3,"firstServeWonPct":76.2,"secondServePct":86.3,"secondServeWonPct":46.8,"aces":10.4,"avgAces":10.4,"doubleFaults":4.8,"avgDoubleFaults":4.8,"breakPointsSavedPct":65.2,"breakPointsConvertedPct":37.8,"breakPointsSaved":60,"breakPointsFaced":92,"breakPointsConverted":31,"breakPointsToConvert":82,"tiebreaksWonPct":66.7},"sourceUrl":"https://www.sofascore.com/tennis/player/pavlovic-luka/224534#tab:statistics","surface":"Clay"},"recentFormMetrics":null},{"name":"Nikolas Sanchez Izquierdo","side":"away","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null}],"h2h":{"homeName":"Luka Pavlovic","awayName":"Nikolas Sanchez Izquierdo","homeWins":null,"awayWins":null,"draws":null,"matches":[],"coverage":{"datedRows":0,"surfaceRows":0,"weightedRows":0}},"score":{"home":null,"away":null},"result":null,"sofascoreSignals":null,"weather":{"source":"Open-Meteo","venueKey":"roland-garros","startTs":1780389000,"endTs":1780396200,"durationMinutes":120,"hourlyRows":3,"avgTemperatureC":16.8,"maxTemperatureC":17.3,"minTemperatureC":16.3,"avgApparentTemperatureC":15.82,"maxApparentTemperatureC":16.1,"avgHumidityPct":88,"totalPrecipitationMm":4.2,"avgCloudCoverPct":100,"avgWindSpeedKmh":17.62,"maxWindGustKmh":42.8,"avgShortwaveRadiationWm2":189,"hotMatch":false,"humidMatch":true,"windyMatch":true,"rainAffected":true,"hourly":[{"apparentTemperatureC":16.1,"gustKmh":42.8,"humidityPct":83,"overlapMinutes":30,"precipitationMm":1.1,"shortwaveWm2":254,"temperatureC":17.3,"timeLocal":"2026-06-02T10:00","timeUtc":"2026-06-02T08:00:00Z","windKmh":18.3},{"apparentTemperatureC":16,"gustKmh":41.4,"humidityPct":89,"overlapMinutes":60,"precipitationMm":1.6,"shortwaveWm2":173,"temperatureC":16.8,"timeLocal":"2026-06-02T11:00","timeUtc":"2026-06-02T09:00:00Z","windKmh":16.8},{"apparentTemperatureC":15.2,"gustKmh":41.4,"humidityPct":91,"overlapMinutes":30,"precipitationMm":4.1,"shortwaveWm2":156,"temperatureC":16.3,"timeLocal":"2026-06-02T12:00","timeUtc":"2026-06-02T10:00:00Z","windKmh":18.6}]},"allStatRows":[],"coverage":{"hasEvent":false,"hasH2h":false,"allStatRows":0,"playerStatRows":0,"liveStatRows":0,"expectedStatRows":19,"recentMetricRows":0,"seasonStatRows":0,"liveStatsStatus":null,"hasWeather":true,"isPregame":true}},"players":[{"name":"Luka Pavlovic","rank":null,"label":"Luka Pavlovic","form":null,"boardPct":48,"decimalOdds":null,"marketLabel":"48c / 48% implied","clayLine":"Rank not joined","weakness":{"name":"Luka Pavlovic","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."},"warehouseStats":{"name":"Luka Pavlovic","side":"home","stats":{},"expectedStats":{"name":"Luka Pavlovic","source":"SofaScore player page 2026 Clay stats","matches":16,"note":"Pregame expected stats from SofaScore player-page surface filter; hold is derived from first-serve-in, first-serve-won, and second-serve-won.","stats":{"matches":16,"wins":9,"winPct":56.3,"holdPct":79.6,"firstServePct":55.3,"firstServeWonPct":76.2,"secondServePct":86.3,"secondServeWonPct":46.8,"aces":10.4,"avgAces":10.4,"doubleFaults":4.8,"avgDoubleFaults":4.8,"breakPointsSavedPct":65.2,"breakPointsConvertedPct":37.8,"breakPointsSaved":60,"breakPointsFaced":92,"breakPointsConverted":31,"breakPointsToConvert":82,"tiebreaksWonPct":66.7},"sourceUrl":"https://www.sofascore.com/tennis/player/pavlovic-luka/224534#tab:statistics","surface":"Clay"},"recentFormMetrics":null},"record2026":"","notes":"Opponent case: model 44%","matchupNote":"Upset path: needs early scoreboard pressure or a market price that pays for volatility."},{"name":"Nikolas Sanchez Izquierdo","rank":null,"label":"Nikolas Sanchez Izquierdo","form":null,"boardPct":56,"decimalOdds":null,"marketLabel":"56c / 56% implied","clayLine":"Rank not joined","weakness":{"name":"Nikolas Sanchez Izquierdo","weaknessScore":null,"liabilities":["No warehouse weakness data joined yet"],"strengths":[],"firstGameComfort":"Market-only row; wait for serve pressure data","gameFlowRead":"No service/break profile joined yet."},"warehouseStats":{"name":"Nikolas Sanchez Izquierdo","side":"away","stats":{},"expectedStats":{"source":"Flashscore recent-form metric fallback","matches":0,"note":"SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.","stats":{}},"recentFormMetrics":null},"record2026":"","notes":"Pick: model 56%","matchupNote":"Why pick: Nikolas Sanchez Izquierdo is only the current Robinhood market favorite over Luka Pavlovic; no warehouse service, break-point, or opponent-quality edge is joined yet."}],"comparisonRows":[{"label":"Model pick","metric":"Fair win split","leftScore":48,"rightScore":56,"leftLabel":"Luka Pavlovic","rightLabel":"Nikolas Sanchez Izquierdo","winner":"Nikolas Sanchez Izquierdo"},{"label":"Prediction market","metric":"Implied price","leftScore":48,"rightScore":56,"leftLabel":"Luka Pavlovic","rightLabel":"Nikolas Sanchez Izquierdo","winner":"Prediction-market price captured; no sportsbook EV is inferred from this row."},{"label":"Weakness","metric":"Lower is cleaner","leftScore":0,"rightScore":0,"leftLabel":"Luka Pavlovic","rightLabel":"Nikolas Sanchez Izquierdo","winner":"Market-only"},{"label":"Volatility","metric":"Lower is cleaner","leftScore":74,"rightScore":26,"leftLabel":"Risk","rightLabel":"Stability","winner":"Pass-first"}],"predictionMarket":{"source":"Robinhood prediction market","capturedAt":null,"totalVolume":0,"players":[{"name":"Luka Pavlovic","probabilityPct":48,"amount":76,"americanOdds":null,"edgePct":null,"priceBand":"Coinflip"},{"name":"Nikolas Sanchez Izquierdo","probabilityPct":56,"amount":83,"americanOdds":null,"edgePct":null,"priceBand":"Coinflip"}]},"bettingMatrix":[{"marketType":"Moneyline","label":"ML value","selection":"Nikolas Sanchez Izquierdo","line":null,"americanOdds":null,"modelPct":56,"impliedPct":56,"edgePct":null,"evPer100":null,"netEvPer100":null,"grade":"Near fair","issue":"Favorite price needs better proof","reason":"Prediction-market price captured; no sportsbook EV is inferred from this row."},{"marketType":"Total games","label":"O/U games","selection":"No bet","line":null,"americanOdds":null,"modelPct":null,"impliedPct":null,"edgePct":null,"evPer100":null,"netEvPer100":null,"expectedGames":null,"edgeGames":null,"confidence":null,"grade":"No direction","reason":"Total games need expected match games vs the posted line."},{"marketType":"Win a set","label":"Win a set %","selection":"Luka Pavlovic 66% / Nikolas Sanchez Izquierdo 64%","rows":[{"name":"Luka Pavlovic","confidence":66,"modelPct":48,"label":"Underdog set-win path needs early holds"},{"name":"Nikolas Sanchez Izquierdo","confidence":64,"modelPct":56,"label":"Market favorite to win a set"}],"confidence":66,"grade":"Price required","reason":"Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."},{"marketType":"First-set total games","label":"1st set O/U","selection":"Price required","expectedGames":10.1,"confidence":53,"tiebreakRisk":42,"earlyBreakRisk":58,"grade":"Needs posted first-set total","reason":"Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."}],"derivativeMarketCase":null,"valueBoard":{"note":"EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.","ml":{"marketType":"ML","selection":"Nikolas Sanchez Izquierdo","americanOdds":null,"modelPct":56,"impliedPct":56,"edgePct":null,"evPer100":null,"netEvPer100":null,"feePer100":2,"valueIssue":"Favorite price needs better proof","valueGrade":"Near fair","betGrade":false},"spread":null,"total":{"marketType":"Total","selection":"No bet","line":null,"overOdds":null,"underOdds":null,"expectedGames":null,"valueGrade":"No direction","reason":"No posted match total captured.","betGrade":false},"firstSetTotal":{"marketType":"First-set total","selection":"Price required","line":null,"americanOdds":null,"expectedGames":10.1,"confidence":53,"tiebreakRisk":42,"earlyBreakRisk":58,"modelPct":53,"evPer100":null,"netEvPer100":null,"valueGrade":"Needs posted first-set total","reason":"Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.","betGrade":false},"setWin":[{"name":"Luka Pavlovic","confidence":66,"modelPct":48,"label":"Underdog set-win path needs early holds","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false},{"name":"Nikolas Sanchez Izquierdo","confidence":64,"modelPct":56,"label":"Market favorite to win a set","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false}]},"ensembleValueCase":null,"projection":{"projectedWinner":"Nikolas Sanchez Izquierdo","projectedSetLine":"2-0/2-1 range","setWinProjections":[{"name":"Luka Pavlovic","confidence":66,"modelPct":48,"label":"Underdog set-win path needs early holds"},{"name":"Nikolas Sanchez Izquierdo","confidence":64,"modelPct":56,"label":"Market favorite to win a set"}],"totalGames":null,"straightSetsProbability":48,"upsetRisk":44,"overview":"Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","fantasy":[]},"tradePlan":{"laneLabel":"Prediction-market price captured; no sportsbook EV is inferred from this row.","summary":"Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.","trigger":"Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.","headline":"Market-only","exit":"No spread line","tone":"warning"},"derivativeMarkets":[{"label":"ML","value":"Nikolas Sanchez Izquierdo 56c; Prediction-market price only; no FanDuel moneyline edge calculated.","lean":"Prediction-market price captured; no sportsbook EV is inferred from this row.","confidence":56,"marketType":"ML","selection":"Nikolas Sanchez Izquierdo","americanOdds":null,"modelPct":56,"impliedPct":56,"edgePct":null,"evPer100":null,"netEvPer100":null,"feePer100":2,"valueIssue":"Favorite price needs better proof","valueGrade":"Near fair","betGrade":false,"tone":"neutral","reason":"Robinhood prediction-market prices captured: Luka Pavlovic 48c / Nikolas Sanchez Izquierdo 56c. This is price context, not a sportsbook value signal."},{"label":"Win a set","value":"Luka Pavlovic 66% / Nikolas Sanchez Izquierdo 64%","lean":"Underdog set-win path needs early holds","confidence":66,"setWinRows":[{"name":"Luka Pavlovic","confidence":66,"modelPct":48,"label":"Underdog set-win path needs early holds","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false},{"name":"Nikolas Sanchez Izquierdo","confidence":64,"modelPct":56,"label":"Market favorite to win a set","marketType":"Win a set","valueGrade":"Needs posted price","betGrade":false}],"valueGrade":"Needs posted price","tone":"neutral","reason":"Best-of-three set-win confidence is more fragile; early service holds matter more."},{"label":"Spread","value":"No game spread captured","lean":"No spread line","confidence":50,"tone":"neutral","reason":"Only enter after visible first-service comfort and break-point pressure; no pre-match model edge."},{"label":"O/U","value":"No total captured","lean":"No bet","confidence":50,"marketType":"Total","selection":"No bet","line":null,"overOdds":null,"underOdds":null,"expectedGames":null,"valueGrade":"No direction","reason":"No posted match total captured.","betGrade":false,"tone":"neutral"},{"label":"1st set O/U","value":"Need posted first-set total","lean":"Price required","confidence":53,"marketType":"First-set total","selection":"Price required","line":null,"americanOdds":null,"expectedGames":10.1,"tiebreakRisk":42,"earlyBreakRisk":58,"modelPct":53,"evPer100":null,"netEvPer100":null,"valueGrade":"Needs posted first-set total","reason":"Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.","betGrade":false,"tone":"neutral"}],"marketEconomics":{"source":"Robinhood prediction market","capturedAt":null,"eventUrl":"https://robinhood.com/us/en/prediction-markets/tennis/","deskName":"Nikolas Sanchez Izquierdo","deskPricePct":56,"deskEdgePct":null,"priceAction":"Prediction-market price captured; no sportsbook EV is inferred from this row.","players":[{"name":"Luka Pavlovic","americanOdds":null,"impliedPct":48,"modelPct":48,"edgePct":null,"priceBand":"Coinflip","grossProfitPct":52,"grossPayoutMultiple":2.083,"centsAtRisk":48,"centsProfitIfWin":52,"bidPct":45,"lastTradePct":48,"openInterest":76,"symbol":"KXATPCHALLENGERMATCH-26JUN02SAIPAV-PAV"},{"name":"Nikolas Sanchez Izquierdo","americanOdds":null,"impliedPct":56,"modelPct":56,"edgePct":null,"priceBand":"Coinflip","grossProfitPct":44,"grossPayoutMultiple":1.786,"centsAtRisk":56,"centsProfitIfWin":44,"bidPct":52,"lastTradePct":56,"openInterest":83,"symbol":"KXATPCHALLENGERMATCH-26JUN02SAIPAV-SAI"}]},"clayMatchupData":null,"opponentQualityData":null,"researchLinks":[{"label":"ESPN scoreboard","url":"https://www.espn.com/tennis/scoreboard/_/date/20260602"},{"label":"Tennistonic H2H","url":"https://tennistonic.com/head-to-head-compare/Luka-Pavlovic-Vs-Nikolas-Sanchez-Izquierdo/"},{"label":"Robinhood market","url":"https://robinhood.com/us/en/prediction-markets/tennis/"}],"formEdgeName":"Nikolas Sanchez Izquierdo"},"participants":[{"id":"rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02:0","index":0,"role":"Player 1","name":"Luka Pavlovic","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},{"id":"rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02:1","index":1,"role":"Player 2","name":"Nikolas Sanchez Izquierdo","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"}],"moneyline":{"available":true,"label":"Prediction market","provider":"Robinhood prediction market","participants":[{"id":"rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02:0","index":0,"role":"Player 1","name":"Luka Pavlovic","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},{"id":"rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02:1","index":1,"role":"Player 2","name":"Nikolas Sanchez Izquierdo","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"}]},"analysis":{"available":true,"participantId":"rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02:1","participant":{"id":"rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02:1","index":1,"role":"Player 2","name":"Nikolas Sanchez Izquierdo","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},"opponent":{"id":"rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02:0","index":0,"role":"Player 1","name":"Luka Pavlovic","detail":"Rank not joined","americanOdds":null,"americanLabel":"0","decimalOdds":null,"impliedProbability":0,"impliedProbabilityLabel":"0.0%"},"lean":"Market watch: Nikolas Sanchez Izquierdo; do not treat as a model bet.","rationale":"Nikolas Sanchez Izquierdo is the current market favorite. Nikolas Sanchez Izquierdo is only the current Robinhood market favorite over Luka Pavlovic; no warehouse service, break-point, or opponent-quality edge is joined yet.","confidence":56,"volatility":74,"recommendationScore":38,"tier":"Watch","sourceLabel":"Robinhood prediction market","modelEdge":null,"modelEdgeLabel":"","marketProbability":0,"marketProbabilityLabel":"0.0%","inputs":[],"inputsUsed":0,"volatilityNotes":[],"indicators":{}},"metadata":{"participantCount":2,"participantNames":["Luka Pavlovic","Nikolas Sanchez Izquierdo"],"tagCount":5,"hasSeriesBreakdown":false,"hasMoneyline":true,"hasAnalysisPick":true,"hasStructuredInputs":false,"hasPlayerProps":false,"startMinutes":90,"spotlight":false,"league":"Tennis","oddsProvider":"Robinhood prediction market"},"detailLevel":"full","stateContext":null}
+{
+  "id": "rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02",
+  "eventId": "a575aaf0-ff35-4096-859c-e69927a4a5d1",
+  "league": "Tennis",
+  "start": "1:30 AM",
+  "startMinutes": 90,
+  "title": "Luka Pavlovic vs Nikolas Sanchez Izquierdo",
+  "stage": "ATP Challenger Prostejov | Round Of 32",
+  "spotlight": false,
+  "confidence": 55,
+  "volatility": 75,
+  "tags": [
+    "ATP Challenger",
+    "Clay",
+    "Prediction market",
+    "Market only",
+    "No model edge",
+    "Coinflip price"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "Luka Pavlovic",
+      "displayName": "Luka Pavlovic",
+      "detail": "Clay | Rank not joined"
+    },
+    {
+      "side": "Player 2",
+      "name": "Nikolas Sanchez Izquierdo",
+      "displayName": "Nikolas Sanchez Izquierdo",
+      "detail": "Clay | Rank not joined"
+    }
+  ],
+  "summary": "Nikolas Sanchez Izquierdo is the current market favorite. Nikolas Sanchez Izquierdo is only the current Robinhood market favorite over Luka Pavlovic; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+  "factors": [
+    "Nikolas Sanchez Izquierdo is only the current Robinhood market favorite over Luka Pavlovic; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+    "Prediction-market price only; no FanDuel moneyline edge calculated.",
+    "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+    "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+    "No posted sportsbook total captured for this Challenger market.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "Market-only Challenger row: no warehouse edge, sportsbook derivative, or service profile has been joined yet."
+  ],
+  "lean": "Market watch: Nikolas Sanchez Izquierdo; do not treat as a model bet.",
+  "swing": "Risk: best-of-five set extension and tiebreak variance.",
+  "swingFactor": "Risk: best-of-five set extension and tiebreak variance.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Prediction market",
+        "book": "Robinhood prediction market",
+        "value": "Luka Pavlovic 48% / Nikolas Sanchez Izquierdo 55%"
+      },
+      {
+        "label": "Prediction market prices",
+        "book": "Robinhood prediction market",
+        "value": "Luka Pavlovic 48c / Nikolas Sanchez Izquierdo 55c"
+      }
+    ],
+    "note": "Robinhood prediction-market prices captured: Luka Pavlovic 48c / Nikolas Sanchez Izquierdo 55c. This is price context, not a sportsbook value signal.",
+    "provider": "Robinhood prediction market"
+  },
+  "tennisContext": {
+    "surface": "Clay",
+    "court": "ATP Challenger Prostejov",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "Market-only",
+      "target": "No warehouse weakness edge",
+      "scoreGap": null,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+      "spreadRead": "No spread line",
+      "totalRead": "No total line",
+      "pick": {
+        "name": "Nikolas Sanchez Izquierdo",
+        "weaknessScore": null,
+        "liabilities": [
+          "No warehouse weakness data joined yet"
+        ],
+        "strengths": [],
+        "firstGameComfort": "Market-only row; wait for serve pressure data",
+        "gameFlowRead": "No service/break profile joined yet."
+      },
+      "opponent": {
+        "name": "Luka Pavlovic",
+        "weaknessScore": null,
+        "liabilities": [
+          "No warehouse weakness data joined yet"
+        ],
+        "strengths": [],
+        "firstGameComfort": "Market-only row; wait for serve pressure data",
+        "gameFlowRead": "No service/break profile joined yet."
+      }
+    },
+    "warehouseContext": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Clay",
+      "tournament": "ATP Challenger Prostejov",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Luka Pavlovic",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Luka Pavlovic",
+            "source": "SofaScore player page 2026 Clay stats",
+            "matches": 16,
+            "note": "Pregame expected stats from SofaScore player-page surface filter; hold is derived from first-serve-in, first-serve-won, and second-serve-won.",
+            "stats": {
+              "matches": 16,
+              "wins": 9,
+              "winPct": 56.3,
+              "holdPct": 79.6,
+              "firstServePct": 55.3,
+              "firstServeWonPct": 76.2,
+              "secondServePct": 86.3,
+              "secondServeWonPct": 46.8,
+              "aces": 10.4,
+              "avgAces": 10.4,
+              "doubleFaults": 4.8,
+              "avgDoubleFaults": 4.8,
+              "breakPointsSavedPct": 65.2,
+              "breakPointsConvertedPct": 37.8,
+              "breakPointsSaved": 60,
+              "breakPointsFaced": 92,
+              "breakPointsConverted": 31,
+              "breakPointsToConvert": 82,
+              "tiebreaksWonPct": 66.7
+            },
+            "sourceUrl": "https://www.sofascore.com/tennis/player/pavlovic-luka/224534#tab:statistics",
+            "surface": "Clay"
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Nikolas Sanchez Izquierdo",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Luka Pavlovic",
+        "awayName": "Nikolas Sanchez Izquierdo",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 19,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "sofascoreData": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-02 02:15:46",
+      "surface": "Clay",
+      "tournament": "ATP Challenger Prostejov",
+      "category": "Tennis",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Luka Pavlovic",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Luka Pavlovic",
+            "source": "SofaScore player page 2026 Clay stats",
+            "matches": 16,
+            "note": "Pregame expected stats from SofaScore player-page surface filter; hold is derived from first-serve-in, first-serve-won, and second-serve-won.",
+            "stats": {
+              "matches": 16,
+              "wins": 9,
+              "winPct": 56.3,
+              "holdPct": 79.6,
+              "firstServePct": 55.3,
+              "firstServeWonPct": 76.2,
+              "secondServePct": 86.3,
+              "secondServeWonPct": 46.8,
+              "aces": 10.4,
+              "avgAces": 10.4,
+              "doubleFaults": 4.8,
+              "avgDoubleFaults": 4.8,
+              "breakPointsSavedPct": 65.2,
+              "breakPointsConvertedPct": 37.8,
+              "breakPointsSaved": 60,
+              "breakPointsFaced": 92,
+              "breakPointsConverted": 31,
+              "breakPointsToConvert": 82,
+              "tiebreaksWonPct": 66.7
+            },
+            "sourceUrl": "https://www.sofascore.com/tennis/player/pavlovic-luka/224534#tab:statistics",
+            "surface": "Clay"
+          },
+          "recentFormMetrics": null
+        },
+        {
+          "name": "Nikolas Sanchez Izquierdo",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Luka Pavlovic",
+        "awayName": "Nikolas Sanchez Izquierdo",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": null,
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 19,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "players": [
+      {
+        "name": "Luka Pavlovic",
+        "rank": null,
+        "label": "Luka Pavlovic",
+        "form": null,
+        "boardPct": 48,
+        "decimalOdds": null,
+        "marketLabel": "48c / 48% implied",
+        "clayLine": "Clay | Rank not joined",
+        "weakness": {
+          "name": "Luka Pavlovic",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "warehouseStats": {
+          "name": "Luka Pavlovic",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Luka Pavlovic",
+            "source": "SofaScore player page 2026 Clay stats",
+            "matches": 16,
+            "note": "Pregame expected stats from SofaScore player-page surface filter; hold is derived from first-serve-in, first-serve-won, and second-serve-won.",
+            "stats": {
+              "matches": 16,
+              "wins": 9,
+              "winPct": 56.3,
+              "holdPct": 79.6,
+              "firstServePct": 55.3,
+              "firstServeWonPct": 76.2,
+              "secondServePct": 86.3,
+              "secondServeWonPct": 46.8,
+              "aces": 10.4,
+              "avgAces": 10.4,
+              "doubleFaults": 4.8,
+              "avgDoubleFaults": 4.8,
+              "breakPointsSavedPct": 65.2,
+              "breakPointsConvertedPct": 37.8,
+              "breakPointsSaved": 60,
+              "breakPointsFaced": 92,
+              "breakPointsConverted": 31,
+              "breakPointsToConvert": 82,
+              "tiebreaksWonPct": 66.7
+            },
+            "sourceUrl": "https://www.sofascore.com/tennis/player/pavlovic-luka/224534#tab:statistics",
+            "surface": "Clay"
+          },
+          "recentFormMetrics": null
+        },
+        "record2026": "",
+        "notes": "Opponent case: model 45%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      },
+      {
+        "name": "Nikolas Sanchez Izquierdo",
+        "rank": null,
+        "label": "Nikolas Sanchez Izquierdo",
+        "form": null,
+        "boardPct": 55,
+        "decimalOdds": null,
+        "marketLabel": "55c / 55% implied",
+        "clayLine": "Clay | Rank not joined",
+        "weakness": {
+          "name": "Nikolas Sanchez Izquierdo",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "warehouseStats": {
+          "name": "Nikolas Sanchez Izquierdo",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "source": "Flashscore recent-form metric fallback",
+            "matches": 0,
+            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+            "stats": {}
+          },
+          "recentFormMetrics": null
+        },
+        "record2026": "",
+        "notes": "Pick: model 55%",
+        "matchupNote": "Why pick: Nikolas Sanchez Izquierdo is only the current Robinhood market favorite over Luka Pavlovic; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 48,
+        "rightScore": 55,
+        "leftLabel": "Luka Pavlovic",
+        "rightLabel": "Nikolas Sanchez Izquierdo",
+        "winner": "Nikolas Sanchez Izquierdo"
+      },
+      {
+        "label": "Prediction market",
+        "metric": "Implied price",
+        "leftScore": 48,
+        "rightScore": 55,
+        "leftLabel": "Luka Pavlovic",
+        "rightLabel": "Nikolas Sanchez Izquierdo",
+        "winner": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 0,
+        "rightScore": 0,
+        "leftLabel": "Luka Pavlovic",
+        "rightLabel": "Nikolas Sanchez Izquierdo",
+        "winner": "Market-only"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 75,
+        "rightScore": 25,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Pass-first"
+      }
+    ],
+    "predictionMarket": {
+      "source": "Robinhood prediction market",
+      "capturedAt": null,
+      "totalVolume": 0,
+      "players": [
+        {
+          "name": "Luka Pavlovic",
+          "probabilityPct": 48,
+          "amount": 76,
+          "americanOdds": null,
+          "edgePct": null,
+          "priceBand": "Coinflip"
+        },
+        {
+          "name": "Nikolas Sanchez Izquierdo",
+          "probabilityPct": 55,
+          "amount": 173,
+          "americanOdds": null,
+          "edgePct": null,
+          "priceBand": "Coinflip"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Nikolas Sanchez Izquierdo",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": 55,
+        "impliedPct": 55,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "grade": "Near fair",
+        "issue": "Favorite price needs better proof",
+        "reason": "Prediction-market price captured; no sportsbook EV is inferred from this row."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "Total games need expected match games vs the posted line."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Luka Pavlovic 67% / Nikolas Sanchez Izquierdo 63%",
+        "rows": [
+          {
+            "name": "Luka Pavlovic",
+            "confidence": 67,
+            "modelPct": 48,
+            "label": "Underdog set-win path needs early holds"
+          },
+          {
+            "name": "Nikolas Sanchez Izquierdo",
+            "confidence": 63,
+            "modelPct": 55,
+            "label": "Market favorite to win a set"
+          }
+        ],
+        "confidence": 67,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Price required",
+        "expectedGames": 10.1,
+        "confidence": 53,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "grade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Nikolas Sanchez Izquierdo",
+        "americanOdds": null,
+        "modelPct": 55,
+        "impliedPct": 55,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Near fair",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "expectedGames": 10.1,
+        "confidence": 53,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "modelPct": 53,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Luka Pavlovic",
+          "confidence": 67,
+          "modelPct": 48,
+          "label": "Underdog set-win path needs early holds",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Nikolas Sanchez Izquierdo",
+          "confidence": 63,
+          "modelPct": 55,
+          "label": "Market favorite to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "Nikolas Sanchez Izquierdo",
+      "projectedSetLine": "2-0/2-1 range",
+      "setWinProjections": [
+        {
+          "name": "Luka Pavlovic",
+          "confidence": 67,
+          "modelPct": 48,
+          "label": "Underdog set-win path needs early holds"
+        },
+        {
+          "name": "Nikolas Sanchez Izquierdo",
+          "confidence": 63,
+          "modelPct": 55,
+          "label": "Market favorite to win a set"
+        }
+      ],
+      "totalGames": null,
+      "straightSetsProbability": 48,
+      "upsetRisk": 45,
+      "overview": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
+      "summary": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "trigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+      "headline": "Market-only",
+      "exit": "No spread line",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "Nikolas Sanchez Izquierdo 55c; Prediction-market price only; no FanDuel moneyline edge calculated.",
+        "lean": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
+        "confidence": 55,
+        "marketType": "ML",
+        "selection": "Nikolas Sanchez Izquierdo",
+        "americanOdds": null,
+        "modelPct": 55,
+        "impliedPct": 55,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Near fair",
+        "betGrade": false,
+        "tone": "neutral",
+        "reason": "Robinhood prediction-market prices captured: Luka Pavlovic 48c / Nikolas Sanchez Izquierdo 55c. This is price context, not a sportsbook value signal."
+      },
+      {
+        "label": "Win a set",
+        "value": "Luka Pavlovic 67% / Nikolas Sanchez Izquierdo 63%",
+        "lean": "Underdog set-win path needs early holds",
+        "confidence": 67,
+        "setWinRows": [
+          {
+            "name": "Luka Pavlovic",
+            "confidence": 67,
+            "modelPct": 48,
+            "label": "Underdog set-win path needs early holds",
+            "marketType": "Win a set",
+            "valueGrade": "Needs posted price",
+            "betGrade": false
+          },
+          {
+            "name": "Nikolas Sanchez Izquierdo",
+            "confidence": 63,
+            "modelPct": 55,
+            "label": "Market favorite to win a set",
+            "marketType": "Win a set",
+            "valueGrade": "Needs posted price",
+            "betGrade": false
+          }
+        ],
+        "valueGrade": "Needs posted price",
+        "tone": "neutral",
+        "reason": "Best-of-three set-win confidence is more fragile; early service holds matter more."
+      },
+      {
+        "label": "Spread",
+        "value": "No game spread captured",
+        "lean": "No spread line",
+        "confidence": 50,
+        "tone": "neutral",
+        "reason": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge."
+      },
+      {
+        "label": "O/U",
+        "value": "No total captured",
+        "lean": "No bet",
+        "confidence": 50,
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Need posted first-set total",
+        "lean": "Price required",
+        "confidence": 53,
+        "marketType": "First-set total",
+        "selection": "Price required",
+        "line": null,
+        "americanOdds": null,
+        "expectedGames": 10.1,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "modelPct": 53,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Needs posted first-set total",
+        "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.",
+        "betGrade": false,
+        "tone": "neutral"
+      }
+    ],
+    "marketEconomics": {
+      "source": "Robinhood prediction market",
+      "capturedAt": null,
+      "eventUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "deskName": "Nikolas Sanchez Izquierdo",
+      "deskPricePct": 55,
+      "deskEdgePct": null,
+      "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
+      "players": [
+        {
+          "name": "Luka Pavlovic",
+          "americanOdds": null,
+          "impliedPct": 48,
+          "modelPct": 48,
+          "edgePct": null,
+          "priceBand": "Coinflip",
+          "grossProfitPct": 52,
+          "grossPayoutMultiple": 2.083,
+          "centsAtRisk": 48,
+          "centsProfitIfWin": 52,
+          "bidPct": 47,
+          "lastTradePct": 48,
+          "openInterest": 76,
+          "symbol": "KXATPCHALLENGERMATCH-26JUN02SAIPAV-PAV"
+        },
+        {
+          "name": "Nikolas Sanchez Izquierdo",
+          "americanOdds": null,
+          "impliedPct": 55,
+          "modelPct": 55,
+          "edgePct": null,
+          "priceBand": "Coinflip",
+          "grossProfitPct": 45,
+          "grossPayoutMultiple": 1.818,
+          "centsAtRisk": 55,
+          "centsProfitIfWin": 45,
+          "bidPct": 54,
+          "lastTradePct": 55,
+          "openInterest": 173,
+          "symbol": "KXATPCHALLENGERMATCH-26JUN02SAIPAV-SAI"
+        }
+      ]
+    },
+    "clayMatchupData": null,
+    "opponentQualityData": null,
+    "researchLinks": [
+      {
+        "label": "ESPN scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260602"
+      },
+      {
+        "label": "Tennistonic H2H",
+        "url": "https://tennistonic.com/head-to-head-compare/Luka-Pavlovic-Vs-Nikolas-Sanchez-Izquierdo/"
+      },
+      {
+        "label": "Robinhood market",
+        "url": "https://robinhood.com/us/en/prediction-markets/tennis/"
+      }
+    ],
+    "formEdgeName": "Nikolas Sanchez Izquierdo"
+  },
+  "participants": [
+    {
+      "id": "rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Luka Pavlovic",
+      "detail": "Clay | Rank not joined",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    },
+    {
+      "id": "rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Nikolas Sanchez Izquierdo",
+      "detail": "Clay | Rank not joined",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "Prediction market",
+    "provider": "Robinhood prediction market",
+    "participants": [
+      {
+        "id": "rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "Luka Pavlovic",
+        "detail": "Clay | Rank not joined",
+        "americanOdds": null,
+        "americanLabel": "0",
+        "decimalOdds": null,
+        "impliedProbability": 0,
+        "impliedProbabilityLabel": "0.0%"
+      },
+      {
+        "id": "rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Nikolas Sanchez Izquierdo",
+        "detail": "Clay | Rank not joined",
+        "americanOdds": null,
+        "americanLabel": "0",
+        "decimalOdds": null,
+        "impliedProbability": 0,
+        "impliedProbabilityLabel": "0.0%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02:1",
+    "participant": {
+      "id": "rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Nikolas Sanchez Izquierdo",
+      "detail": "Clay | Rank not joined",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    },
+    "opponent": {
+      "id": "rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Luka Pavlovic",
+      "detail": "Clay | Rank not joined",
+      "americanOdds": null,
+      "americanLabel": "0",
+      "decimalOdds": null,
+      "impliedProbability": 0,
+      "impliedProbabilityLabel": "0.0%"
+    },
+    "lean": "Market watch: Nikolas Sanchez Izquierdo; do not treat as a model bet.",
+    "rationale": "Nikolas Sanchez Izquierdo is the current market favorite. Nikolas Sanchez Izquierdo is only the current Robinhood market favorite over Luka Pavlovic; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+    "confidence": 55,
+    "volatility": 75,
+    "recommendationScore": 36,
+    "tier": "Watch",
+    "sourceLabel": "Robinhood prediction market",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0,
+    "marketProbabilityLabel": "0.0%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "Luka Pavlovic",
+      "Nikolas Sanchez Izquierdo"
+    ],
+    "tagCount": 6,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 90,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "Robinhood prediction market"
+  }
+}
