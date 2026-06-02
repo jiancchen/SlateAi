@@ -1,0 +1,31 @@
+{
+  "date": null,
+  "dry_run": true,
+  "family": "mlb_player_context",
+  "generated_at": "2026-06-02T16:30:19.748161+00:00",
+  "inserted": {},
+  "ok": true,
+  "parsed_rows": 187869,
+  "parser_module": "pipeline/sources/mlb/normalization/player_context.py",
+  "script": "data-migration/scripts/normalize_mlb_player_context.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_rows": 187869,
+  "source_tables": {
+    "mlb_hitter_career_profiles": 493,
+    "mlb_hitter_split_snapshots": 693,
+    "mlb_pitcher_war_by_season": 1527,
+    "mlb_player_identity_curves_daily": 184256,
+    "mlb_player_identity_profiles": 493,
+    "statcast_hr_leaderboard_snapshots": 407
+  },
+  "targets": {
+    "pitcher_season_value_snapshots": 1527,
+    "player_career_profiles": 493,
+    "player_identity_curves": 184256,
+    "player_identity_profiles": 493,
+    "player_split_snapshots": 693,
+    "statcast_hr_leaderboard_snapshots": 407
+  },
+  "unparsed_rows": 0,
+  "unresolved_rows_added": 0
+}
