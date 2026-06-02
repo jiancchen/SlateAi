@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-06-02T22:25:24.122Z",
+  "script": "data-migration/scripts/validate_source_fetch_contract.mjs",
+  "result": {
+    "sport": "mlb",
+    "source_name": "mlb_game_shape",
+    "source_date": "2026-05-31",
+    "db_path": "data-private/warehouse/sports/mlb/sql-mlb.db",
+    "policy": {
+      "source_fetch_policy_id": "mlb:mlb_game_shape",
+      "sport": "mlb",
+      "source_name": "mlb_game_shape",
+      "source_family": "game-shape",
+      "run_rule": "fetch_if_stale",
+      "default_ttl_hours": 12,
+      "max_stale_hours": 48,
+      "required_for_prediction": 1,
+      "env_ttl_key": "MLB_MLB_GAME_SHAPE_TTL_HOURS",
+      "env_force_key": "MLB_MLB_GAME_SHAPE_FORCE_FETCH",
+      "env_disable_key": "MLB_MLB_GAME_SHAPE_DISABLE_FETCH",
+      "config_path": "data-migration/post_migration_ingestion_rewrite_run_plan.md",
+      "created_at": "2026-06-02T21:28:10.183Z",
+      "updated_at": "2026-06-02T21:28:10.183Z",
+      "notes": "Derived M2 game-shape, chaos, state-formula, and component-training source."
+    },
+    "status": {
+      "source_fetch_status_id": "mlb:mlb_game_shape:2026-05-31",
+      "sport": "mlb",
+      "source_name": "mlb_game_shape",
+      "source_family": "game-shape",
+      "source_date": "2026-05-31",
+      "last_fetch_run_id": "source-fetch-mlb_game_shape-2026-05-31-2026-06-02T22-25-23-656505+00-00",
+      "last_attempt_at": "2026-06-02T22:25:23.656505+00:00",
+      "last_success_at": "2026-06-02T22:25:23.656505+00:00",
+      "last_status": "success",
+      "last_completeness_status": "complete",
+      "cache_valid_until": "2026-06-03T10:25:23.656505+00:00",
+      "expected_item_count": null,
+      "actual_item_count": 292,
+      "missing_item_count": null,
+      "unresolved_count": 0,
+      "updated_at": "2026-06-02T22:25:23.656505+00:00",
+      "notes": "{\"adapter\":\"mlb_model_source_status_refresh\",\"report_path\":\"data-migration/reports/refresh_mlb_model_source_status_2026-05-31.json\",\"table_counts\":{\"component_settlement_rows\":31,\"side_backtest_rows\":15,\"state_formula_backtests\":126,\"state_formula_training_rows\":120}}"
+    },
+    "run_counts": [
+      {
+        "status": "success",
+        "row_count": 1
+      }
+    ],
+    "stale": false,
+    "ok": true,
+    "errors": []
+  },
+  "ok": true
+}

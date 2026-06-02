@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-06-02T22:25:24.195Z",
+  "script": "data-migration/scripts/validate_source_fetch_contract.mjs",
+  "result": {
+    "sport": "mlb",
+    "source_name": "mlb_model_artifacts",
+    "source_date": "2026-05-31",
+    "db_path": "data-private/warehouse/sports/mlb/sql-mlb.db",
+    "policy": {
+      "source_fetch_policy_id": "mlb:mlb_model_artifacts",
+      "sport": "mlb",
+      "source_name": "mlb_model_artifacts",
+      "source_family": "model-artifacts",
+      "run_rule": "fetch_if_stale",
+      "default_ttl_hours": 24,
+      "max_stale_hours": 72,
+      "required_for_prediction": 1,
+      "env_ttl_key": "MLB_MLB_MODEL_ARTIFACTS_TTL_HOURS",
+      "env_force_key": "MLB_MLB_MODEL_ARTIFACTS_FORCE_FETCH",
+      "env_disable_key": "MLB_MLB_MODEL_ARTIFACTS_DISABLE_FETCH",
+      "config_path": "data-migration/post_migration_ingestion_rewrite_run_plan.md",
+      "created_at": "2026-06-02T21:28:10.183Z",
+      "updated_at": "2026-06-02T21:28:10.183Z",
+      "notes": "Model run, prediction, settlement, backtest, and cartridge metadata source."
+    },
+    "status": {
+      "source_fetch_status_id": "mlb:mlb_model_artifacts:2026-05-31",
+      "sport": "mlb",
+      "source_name": "mlb_model_artifacts",
+      "source_family": "model-artifacts",
+      "source_date": "2026-05-31",
+      "last_fetch_run_id": "source-fetch-mlb_model_artifacts-2026-05-31-2026-06-02T22-25-23-954058+00-00",
+      "last_attempt_at": "2026-06-02T22:25:23.954058+00:00",
+      "last_success_at": "2026-06-02T22:25:23.954058+00:00",
+      "last_status": "success",
+      "last_completeness_status": "complete",
+      "cache_valid_until": "2026-06-03T22:25:23.954058+00:00",
+      "expected_item_count": null,
+      "actual_item_count": 729,
+      "missing_item_count": null,
+      "unresolved_count": 0,
+      "updated_at": "2026-06-02T22:25:23.954058+00:00",
+      "notes": "{\"adapter\":\"mlb_model_source_status_refresh\",\"report_path\":\"data-migration/reports/refresh_mlb_model_source_status_2026-05-31.json\",\"table_counts\":{\"model_artifacts\":14,\"model_run_artifacts\":11,\"model_run_lanes\":18,\"model_runs\":17,\"prediction_rows\":603,\"prop_backtest_rows\":36,\"settlement_rows\":30}}"
+    },
+    "run_counts": [
+      {
+        "status": "success",
+        "row_count": 1
+      }
+    ],
+    "stale": false,
+    "ok": true,
+    "errors": []
+  },
+  "ok": true
+}
