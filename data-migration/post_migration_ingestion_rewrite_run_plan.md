@@ -49,7 +49,7 @@ Default TTLs are source-level policies:
 | MLB | `mlb_odds` | 1h | 6h | Odds and market snapshots; short TTL. |
 | Tennis | `tennis_reference` | 12h | 48h | Optional broad receipt registration only; typed family health uses the split source policies below. |
 | Tennis | `tennis_flashscore_stats` | 12h | 48h | Flashscore match-stat payloads for serve, break-pressure, and recent-match stat facts. |
-| Tennis | `tennis_sofascore_replay` | 12h | 48h | SofaScore point-by-point replay payloads for clutch, break-back, and closeout facts. |
+| Tennis | `tennis_sofascore_replay` | 12h | 48h | Optional pre-match; required by postmatch replay/clutch workflows. SofaScore point-by-point payloads feed clutch, break-back, and closeout facts. |
 | Tennis | `tennis_livesport_replay` | 12h | 48h | Optional Livesport/Flashscore replay fallback when SofaScore misses. |
 | Tennis | `tennis_odds` | 1h | 6h | Prediction-market and sportsbook odds snapshots. |
 | Tennis | `tennis_rankings` | 24h | 72h | ATP/WTA ranking snapshots with rank, points, age, country, and source URL joins. |
@@ -152,6 +152,7 @@ Current status:
 - Phase 9B.2 split the tennis replay contract into `tennis_sofascore_replay` and optional `tennis_livesport_replay`, then wired raw replay receipts into typed `replay_games` and `replay_points`.
 - The SofaScore replay pilot processed 8 May 31 source files, refreshed 251 replay-game rows and 1,369 replay-point rows, and proved rerun idempotency with zero row-count growth.
 - The Livesport fallback pilot processed 1 June 1 source file, refreshed 41 replay-game rows and 213 replay-point rows, including 25 explicit break-point flags.
+- Replay policy note: point-by-point replay is optional for pre-match prediction gates because current-day replay files may not exist until matches settle. Postmatch workflows should explicitly require SofaScore/Livesport replay freshness for the settled date.
 - Phase 9C wired active tennis odds receipts into typed market tables: Robinhood supplement rows now feed `market_contracts`, `market_price_ticks`, and `market_snapshots`; FanDuel line captures feed derivative `market_snapshots`.
 - The June 2 odds pilot parsed 2 active odds files into 132 Robinhood contracts, 132 ticks, and 180 total snapshots, including FanDuel moneyline, game spread, match total, first-set total, and set-win rows. Rerun idempotency had zero row-count growth.
 - Phase 9D wired active ranking receipts into typed `rankings` rows. The June 2 ranking pilot parsed 300/300 ranking rows, 150 ATP and 150 WTA, with 0 unresolved mappings and zero row-count growth on rerun.

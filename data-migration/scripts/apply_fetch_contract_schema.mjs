@@ -20,7 +20,7 @@ const DEFAULT_POLICIES = {
   tennis: [
     { source_name: 'tennis_reference', source_family: 'match-reference', ttl: 12, max_stale: 48, required: 0, notes: 'Broad tennis reference receipt registration. Typed source-family health must use the split Flashscore/SofaScore/Livesport/odds policies.' },
     { source_name: 'tennis_flashscore_stats', source_family: 'match-stats', ttl: 12, max_stale: 48, required: 1, notes: 'Flashscore match-stat payloads feeding serve, break pressure, and recent-match stat facts.' },
-    { source_name: 'tennis_sofascore_replay', source_family: 'replay', ttl: 12, max_stale: 48, required: 1, notes: 'SofaScore point-by-point replay payloads feeding clutch, break-back, and closeout facts.' },
+    { source_name: 'tennis_sofascore_replay', source_family: 'replay', ttl: 12, max_stale: 48, required: 0, notes: 'SofaScore point-by-point replay payloads feeding postmatch clutch, break-back, and closeout facts. Optional for pre-match prediction gates; postmatch workflows should require it explicitly.' },
     { source_name: 'tennis_livesport_replay', source_family: 'replay', ttl: 12, max_stale: 48, required: 0, notes: 'Livesport/Flashscore feed point-by-point fallback for replay coverage when SofaScore misses.' },
     { source_name: 'tennis_odds', source_family: 'markets', ttl: 1, max_stale: 6, required: 1, notes: 'Prediction-market and sportsbook odds snapshots.' },
     { source_name: 'tennis_rankings', source_family: 'rankings', ttl: 24, max_stale: 72, required: 1, notes: 'ATP/WTA ranking snapshots with rank, points, age, country, and source URL joins.' },
