@@ -90,6 +90,8 @@ After MLB normalization, any remaining `legacy_table_rows.row_json` usage must b
 
 The first MLB inventory pass classified `70` legacy source tables and `1,206,213` legacy rows with zero catch-all leftovers. Keep the generated full source-table inventory in `data-migration/reports/mlb_normalization_inventory_2026-06-02.md`.
 
+Phase 2 remaining-family execution is tracked in `data-migration/normalization_phase2_run_plan.md`. Do not wire DB-first ingestion until the remaining model metadata, prediction/backtest, market/prop, game-shape formula, player context, team context, and tennis identity cleanup rows are validated and DuckDB-ready.
+
 | Family | Bucket | Source Tables | Rows | Parser Module | Target Direction |
 |---|---|---:|---:|---|---|
 | MLB hitter/batter features | `core_model_data` | 8 | 693,712 | `pipeline/sources/mlb/normalization/hitter_features.py` | Batter feature snapshots, pitch-type response, Statcast/classic trend rows, current deviation, state, and distribution rows. |
