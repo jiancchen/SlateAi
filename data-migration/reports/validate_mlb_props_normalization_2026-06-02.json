@@ -1,0 +1,20 @@
+{
+  "date": null,
+  "errors": [],
+  "generated_at": "2026-06-02T16:22:40.514786+00:00",
+  "mapped_games": 2409,
+  "mapped_players": 2381,
+  "ok": true,
+  "orphan_checks": {
+    "games": 0,
+    "players": 0
+  },
+  "parser_module": "pipeline/sources/mlb/normalization/props.py",
+  "script": "data-migration/scripts/validate_mlb_props_normalization.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_rows": 2409,
+  "source_table_counts": {
+    "mlb_player_prop_odds_snapshots": 2409
+  },
+  "target_count": 2409
+}
