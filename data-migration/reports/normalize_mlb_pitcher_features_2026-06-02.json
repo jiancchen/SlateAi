@@ -1,0 +1,38 @@
+{
+  "date": null,
+  "dry_run": false,
+  "family": "mlb_pitcher_features",
+  "generated_at": "2026-06-02T09:30:03.422836+00:00",
+  "inserted": {
+    "pitcher_first_inning_profiles": 3024,
+    "pitcher_mistake_shape_snapshots": 3024,
+    "pitcher_pitch_mix_snapshots": 135153,
+    "starter_leash_profiles": 4005,
+    "starter_third_time_penalty_profiles": 232,
+    "starting_pitcher_form_snapshots": 4533
+  },
+  "ok": true,
+  "parsed_rows": 149971,
+  "parser_module": "pipeline/sources/mlb/normalization/pitcher_features.py",
+  "script": "data-migration/scripts/normalize_mlb_pitcher_features.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_rows": 149971,
+  "source_tables": {
+    "mlb_pitcher_first_inning_profiles_daily": 3024,
+    "mlb_pitcher_mistake_shape_daily": 3024,
+    "mlb_pitcher_pitch_mix_daily": 135153,
+    "mlb_starter_leash_profiles": 4005,
+    "mlb_starter_third_time_penalty_profiles": 232,
+    "mlb_starting_pitcher_rolling_form": 4533
+  },
+  "targets": {
+    "pitcher_first_inning_profiles": 3024,
+    "pitcher_mistake_shape_snapshots": 3024,
+    "pitcher_pitch_mix_snapshots": 135153,
+    "starter_leash_profiles": 4005,
+    "starter_third_time_penalty_profiles": 232,
+    "starting_pitcher_form_snapshots": 4533
+  },
+  "unparsed_rows": 0,
+  "unresolved_rows_added": 0
+}
