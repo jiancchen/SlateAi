@@ -1,0 +1,44 @@
+{
+  "date": null,
+  "dry_run": false,
+  "family": "mlb_results",
+  "generated_at": "2026-06-02T09:09:32.209419+00:00",
+  "inserted": {
+    "batter_game_outcomes": 18080,
+    "game_outcomes": 886,
+    "home_run_events": 1900,
+    "phase_outcomes": 1772,
+    "pitcher_appearances": 7498,
+    "player_game_batting": 18080,
+    "starting_pitcher_game_logs": 1776,
+    "team_game_stats": 1776
+  },
+  "ok": true,
+  "parsed_rows": 51768,
+  "parser_module": "pipeline/sources/mlb/normalization/results.py",
+  "script": "data-migration/scripts/normalize_mlb_results.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_rows": 51768,
+  "source_tables": {
+    "mlb_batter_game_outcomes": 18080,
+    "mlb_game_outcomes": 886,
+    "mlb_game_team_stats": 1776,
+    "mlb_home_run_events": 1900,
+    "mlb_phase_outcomes_daily": 1772,
+    "mlb_pitcher_appearances": 7498,
+    "mlb_player_game_batting": 18080,
+    "mlb_starting_pitcher_game_logs": 1776
+  },
+  "targets": {
+    "batter_game_outcomes": 18080,
+    "game_outcomes": 886,
+    "home_run_events": 1900,
+    "phase_outcomes": 1772,
+    "pitcher_appearances": 7498,
+    "player_game_batting": 18080,
+    "starting_pitcher_game_logs": 1776,
+    "team_game_stats": 1776
+  },
+  "unparsed_rows": 0,
+  "unresolved_rows_added": 0
+}
