@@ -1,0 +1,35 @@
+{
+  "errors": [],
+  "generated_at": "2026-06-02T18:14:05.115120+00:00",
+  "ok": true,
+  "parser_module": "pipeline/sources/shared/player_identity_registry.py",
+  "reports": [
+    {
+      "active_player_aliases": 2366,
+      "errors": [],
+      "ok": true,
+      "player_count": 3016,
+      "registry_active_aliases": 2366,
+      "registry_count": 3016,
+      "registry_version": "player-identity-registry-v1",
+      "review_candidate_counts": {
+        "blocked": 75,
+        "needs_review": 461,
+        "promoted": 1150
+      },
+      "sport": "tennis"
+    },
+    {
+      "active_player_aliases": 7127,
+      "errors": [],
+      "ok": true,
+      "player_count": 1162,
+      "registry_active_aliases": 7127,
+      "registry_count": 1162,
+      "registry_version": "player-identity-registry-v1",
+      "review_candidate_counts": {},
+      "sport": "mlb"
+    }
+  ],
+  "script": "data-migration/scripts/validate_player_identity_registry.py"
+}

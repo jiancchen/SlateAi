@@ -149,6 +149,8 @@ def classify_alias(
         return ("active", "n22_vetted", "low", "N22 resolver produced high-confidence match/player mapping.")
     if notes.startswith("G2 player identity registry rescue:"):
         return ("active", "unique_abbreviation_rescue", "low", "Unique source abbreviation matched exactly one canonical player.")
+    if notes.startswith("G3 tennis identity repair:"):
+        return ("active", "player_identity_redirect", "low", "Alias produced by active player identity redirect.")
     if display_conflict_count > 1 and not notes.startswith("N22 tennis identity cleanup:"):
         return ("quarantined", "display_conflict", "conflict", "Same source display maps to multiple canonical IDs.")
     if sport == "tennis":

@@ -42,30 +42,34 @@ def tokens(value: Any) -> list[str]:
 
 def parse_abbreviated_tennis_name(value: Any) -> tuple[list[str], list[str]] | None:
     text = str(value or "").strip()
-    match = re.match(r"^(.+?)\s+([A-Z](?:\.\s*)+)$", text)
+    match = re.match(r"^(.+?)\s+((?:[A-Z][a-z]?(?:-[A-Z][a-z]?)?\.)(?:\s*(?:[A-Z][a-z]?(?:-[A-Z][a-z]?)?\.))*)$", text)
     if not match:
         return None
     surname_tokens = tokens(match.group(1))
-    initials = [item.lower() for item in re.findall(r"([A-Z])\.", match.group(2))]
-    if not surname_tokens or not initials:
+    prefixes: list[str] = []
+    for chunk in re.findall(r"[A-Z][a-z]?(?:-[A-Z][a-z]?)?\.", match.group(2)):
+        for part in chunk[:-1].split("-"):
+            if part:
+                prefixes.append(part.lower())
+    if not surname_tokens or not prefixes:
         return None
-    return surname_tokens, initials
+    return surname_tokens, prefixes
 
 
 def matches_abbreviated_tennis_name(display_name: Any, canonical_name: Any) -> bool:
     parsed = parse_abbreviated_tennis_name(display_name)
     if not parsed:
         return False
-    surname_tokens, initials = parsed
+    surname_tokens, prefixes = parsed
     canonical_tokens = tokens(canonical_name)
     if len(canonical_tokens) <= len(surname_tokens):
         return False
     if canonical_tokens[-len(surname_tokens):] != surname_tokens:
         return False
     given_tokens = canonical_tokens[:-len(surname_tokens)]
-    if len(given_tokens) < len(initials):
+    if len(given_tokens) < len(prefixes):
         return False
-    return all(given_tokens[index][0] == initial for index, initial in enumerate(initials))
+    return all(given_tokens[index].startswith(prefix) for index, prefix in enumerate(prefixes))
 
 
 def exact_or_reordered(left: Any, right: Any) -> bool:
@@ -153,6 +157,10 @@ def player_name_values(player: dict[str, Any]) -> list[str]:
 def find_unique_abbreviation_candidate(display_name: str, players: list[dict[str, Any]]) -> dict[str, Any] | None:
     candidates = []
     for player in players:
+        if player.get("active") == 0:
+            continue
+        if any(parse_abbreviated_tennis_name(value) for value in player_name_values(player)):
+            continue
         if any(matches_abbreviated_tennis_name(display_name, value) for value in player_name_values(player)):
             candidates.append(player)
     return candidates[0] if len(candidates) == 1 else None
