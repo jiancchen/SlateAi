@@ -1,0 +1,770 @@
+{
+  "generated_at": "2026-06-02T05:07:11.719Z",
+  "repo_root": "/Users/jcchen/Documents/New project",
+  "db_path": "/Users/jcchen/Documents/New project/data-private/warehouse/sports.db",
+  "db_size_bytes": 2367373312,
+  "object_count": 121,
+  "table_count": 121,
+  "view_count": 0,
+  "table_inventory_hash": "f73bafeb591fbfa8dee293ac00e0c86ba330aa2363fd3e16cb347b57d59ce886",
+  "summary_by_group": {
+    "mlb": {
+      "objects": 69,
+      "tables": 69,
+      "views": 0,
+      "rows": 1579845
+    },
+    "shared_or_unknown": {
+      "objects": 4,
+      "tables": 4,
+      "views": 0,
+      "rows": 119
+    },
+    "mlb_adjacent": {
+      "objects": 3,
+      "tables": 3,
+      "views": 0,
+      "rows": 407
+    },
+    "shared_source": {
+      "objects": 1,
+      "tables": 1,
+      "views": 0,
+      "rows": 8221
+    },
+    "tennis": {
+      "objects": 44,
+      "tables": 44,
+      "views": 0,
+      "rows": 493548
+    }
+  },
+  "tables": [
+    {
+      "name": "mlb_batter_game_outcomes",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 18080
+    },
+    {
+      "name": "mlb_bullpen_mistake_shape_daily",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 3508
+    },
+    {
+      "name": "mlb_bullpen_usage",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 16542
+    },
+    {
+      "name": "mlb_featured_market_odds_snapshots",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 1610
+    },
+    {
+      "name": "mlb_game_outcomes",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 886
+    },
+    {
+      "name": "mlb_game_story_labels",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 886
+    },
+    {
+      "name": "mlb_game_story_signals",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 886
+    },
+    {
+      "name": "mlb_game_sun_visibility_snapshots",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 306
+    },
+    {
+      "name": "mlb_game_team_stats",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 1776
+    },
+    {
+      "name": "mlb_game_visibility_outcomes",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 295
+    },
+    {
+      "name": "mlb_games",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 899
+    },
+    {
+      "name": "mlb_hitter_career_profiles",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 493
+    },
+    {
+      "name": "mlb_hitter_classic_trend_snapshots",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 25167
+    },
+    {
+      "name": "mlb_hitter_opponent_context_snapshots",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 25167
+    },
+    {
+      "name": "mlb_hitter_pitch_type_response_daily",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 206697
+    },
+    {
+      "name": "mlb_hitter_split_snapshots",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 693
+    },
+    {
+      "name": "mlb_hitter_statcast_game_logs",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 18004
+    },
+    {
+      "name": "mlb_hitter_statcast_trend_snapshots",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 25797
+    },
+    {
+      "name": "mlb_hitter_state_snapshots",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 24396
+    },
+    {
+      "name": "mlb_home_run_backtests",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 182
+    },
+    {
+      "name": "mlb_home_run_events",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 1900
+    },
+    {
+      "name": "mlb_home_run_predictions",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 194
+    },
+    {
+      "name": "mlb_kalshi_market_snapshots",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 390
+    },
+    {
+      "name": "mlb_likely_relief_chains",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 3508
+    },
+    {
+      "name": "mlb_lineup_conversion_shape_daily",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 5262
+    },
+    {
+      "name": "mlb_lineup_dependency_profiles",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 3092
+    },
+    {
+      "name": "mlb_lineup_pitcher_matchup_daily",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 17655
+    },
+    {
+      "name": "mlb_market_mispricing_labels",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 290
+    },
+    {
+      "name": "mlb_phase_outcomes_daily",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 1772
+    },
+    {
+      "name": "mlb_pitch_events",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 304181
+    },
+    {
+      "name": "mlb_pitcher_appearances",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 7498
+    },
+    {
+      "name": "mlb_pitcher_first_inning_profiles_daily",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 3024
+    },
+    {
+      "name": "mlb_pitcher_mistake_shape_daily",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 3024
+    },
+    {
+      "name": "mlb_pitcher_pitch_mix_daily",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 135153
+    },
+    {
+      "name": "mlb_pitcher_war_by_season",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 1527
+    },
+    {
+      "name": "mlb_plate_appearances",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 67251
+    },
+    {
+      "name": "mlb_player_current_deviation_daily",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 184256
+    },
+    {
+      "name": "mlb_player_game_batting",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 18080
+    },
+    {
+      "name": "mlb_player_game_distribution_daily",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 184228
+    },
+    {
+      "name": "mlb_player_identity_curves_daily",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 184256
+    },
+    {
+      "name": "mlb_player_identity_model_backtests",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 12230
+    },
+    {
+      "name": "mlb_player_identity_profiles",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 493
+    },
+    {
+      "name": "mlb_player_prop_odds_snapshots",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 2409
+    },
+    {
+      "name": "mlb_prop_backtests",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 1688
+    },
+    {
+      "name": "mlb_prop_predictions",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 1688
+    },
+    {
+      "name": "mlb_reliever_first_batter_command_profiles",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 4113
+    },
+    {
+      "name": "mlb_rp36_settlements",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 1
+    },
+    {
+      "name": "mlb_rp36_team_settlements",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 30
+    },
+    {
+      "name": "mlb_series_context_snapshots",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 809
+    },
+    {
+      "name": "mlb_side_backtests",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 389
+    },
+    {
+      "name": "mlb_side_predictions",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 389
+    },
+    {
+      "name": "mlb_starter_leash_profiles",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 4005
+    },
+    {
+      "name": "mlb_starter_third_time_penalty_profiles",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 232
+    },
+    {
+      "name": "mlb_starting_pitcher_game_logs",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 1776
+    },
+    {
+      "name": "mlb_starting_pitcher_rolling_form",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 4533
+    },
+    {
+      "name": "mlb_starting_pitchers",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 1776
+    },
+    {
+      "name": "mlb_state_formula_backtests",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 1061
+    },
+    {
+      "name": "mlb_state_formula_training_rows",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 7120
+    },
+    {
+      "name": "mlb_team_bullpen_shape_daily",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 1754
+    },
+    {
+      "name": "mlb_team_first_inning_profiles_daily",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 5262
+    },
+    {
+      "name": "mlb_team_form_carryover_profiles",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 3448
+    },
+    {
+      "name": "mlb_team_lead_surrender_profiles",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 3508
+    },
+    {
+      "name": "mlb_team_market_context_daily",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 1754
+    },
+    {
+      "name": "mlb_team_mistake_shape_daily",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 5262
+    },
+    {
+      "name": "mlb_team_opponent_quality_daily",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 1754
+    },
+    {
+      "name": "mlb_team_rolling_form",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 5196
+    },
+    {
+      "name": "mlb_team_state_snapshots",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 1754
+    },
+    {
+      "name": "mlb_team_story_priors",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 3092
+    },
+    {
+      "name": "mlb_team_whiff_persistence_profiles",
+      "type": "table",
+      "sport_group": "mlb",
+      "row_count": 3508
+    },
+    {
+      "name": "model_component_runs",
+      "type": "table",
+      "sport_group": "shared_or_unknown",
+      "row_count": 3
+    },
+    {
+      "name": "model_run_artifacts",
+      "type": "table",
+      "sport_group": "shared_or_unknown",
+      "row_count": 69
+    },
+    {
+      "name": "model_run_lanes",
+      "type": "table",
+      "sport_group": "shared_or_unknown",
+      "row_count": 38
+    },
+    {
+      "name": "model_runs",
+      "type": "table",
+      "sport_group": "shared_or_unknown",
+      "row_count": 9
+    },
+    {
+      "name": "park_factor_snapshots",
+      "type": "table",
+      "sport_group": "mlb_adjacent",
+      "row_count": 0
+    },
+    {
+      "name": "source_snapshots",
+      "type": "table",
+      "sport_group": "shared_source",
+      "row_count": 8221
+    },
+    {
+      "name": "statcast_hr_leaderboard_snapshots",
+      "type": "table",
+      "sport_group": "mlb_adjacent",
+      "row_count": 407
+    },
+    {
+      "name": "tennis_flashscore_match_stats",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 1210
+    },
+    {
+      "name": "tennis_flashscore_player_stat_rows",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 144510
+    },
+    {
+      "name": "tennis_flashscore_recent_links",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 1892
+    },
+    {
+      "name": "tennis_flashscore_stat_rows",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 72255
+    },
+    {
+      "name": "tennis_h2h_matches",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 7
+    },
+    {
+      "name": "tennis_h2h_snapshots",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 204
+    },
+    {
+      "name": "tennis_kalshi_intramatch_trade_features",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 175
+    },
+    {
+      "name": "tennis_kalshi_market_candles",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 130968
+    },
+    {
+      "name": "tennis_kalshi_match_markets",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 374
+    },
+    {
+      "name": "tennis_kalshi_open_orderbook_snapshots",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 280
+    },
+    {
+      "name": "tennis_livesport_matches",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 1
+    },
+    {
+      "name": "tennis_livesport_replay_games",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 41
+    },
+    {
+      "name": "tennis_livesport_replay_points",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 213
+    },
+    {
+      "name": "tennis_match_results",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 323
+    },
+    {
+      "name": "tennis_match_sources",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 408
+    },
+    {
+      "name": "tennis_match_weather",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 244
+    },
+    {
+      "name": "tennis_matches",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 352
+    },
+    {
+      "name": "tennis_model_run_calibration_buckets",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 23
+    },
+    {
+      "name": "tennis_model_run_events",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 14
+    },
+    {
+      "name": "tennis_model_run_files",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 40
+    },
+    {
+      "name": "tennis_model_run_inputs",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 10
+    },
+    {
+      "name": "tennis_model_run_lane_grades",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 48
+    },
+    {
+      "name": "tennis_model_run_metrics",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 1
+    },
+    {
+      "name": "tennis_model_run_outputs",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 6
+    },
+    {
+      "name": "tennis_model_run_settlements",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 1
+    },
+    {
+      "name": "tennis_model_run_training_rows",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 8
+    },
+    {
+      "name": "tennis_model_runs",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 1
+    },
+    {
+      "name": "tennis_model_training_rows",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 336
+    },
+    {
+      "name": "tennis_player_match_context",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 358
+    },
+    {
+      "name": "tennis_players",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 2845
+    },
+    {
+      "name": "tennis_prediction_grades",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 282
+    },
+    {
+      "name": "tennis_prediction_market_snapshots",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 450
+    },
+    {
+      "name": "tennis_predictions",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 531
+    },
+    {
+      "name": "tennis_rankings",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 3513
+    },
+    {
+      "name": "tennis_recent_form_metrics",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 13160
+    },
+    {
+      "name": "tennis_recent_matches",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 2858
+    },
+    {
+      "name": "tennis_schema_migrations",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 4
+    },
+    {
+      "name": "tennis_sofascore_matches",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 252
+    },
+    {
+      "name": "tennis_sofascore_player_page_stats",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 78
+    },
+    {
+      "name": "tennis_sofascore_player_stat_rows",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 46118
+    },
+    {
+      "name": "tennis_sofascore_replay_games",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 7133
+    },
+    {
+      "name": "tennis_sofascore_replay_points",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 38746
+    },
+    {
+      "name": "tennis_sofascore_stat_rows",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 23059
+    },
+    {
+      "name": "tennis_weather_hourly",
+      "type": "table",
+      "sport_group": "tennis",
+      "row_count": 216
+    },
+    {
+      "name": "weather_observations",
+      "type": "table",
+      "sport_group": "mlb_adjacent",
+      "row_count": 0
+    }
+  ]
+}
