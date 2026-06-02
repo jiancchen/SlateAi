@@ -6,6 +6,7 @@ from typing import Any
 
 from .common import (
     TennisIdentityResolver,
+    compact_json,
     fetch_legacy_rows,
     parse_legacy_json,
     stable_id,
@@ -31,6 +32,7 @@ class ParsedReplayGame:
     deuce_count: int | None
     score_before: str | None
     score_after: str | None
+    source_snapshot_id: str | None = None
 
     @property
     def replay_game_id(self) -> str:
@@ -50,6 +52,7 @@ class ParsedReplayPoint:
     is_break_point: int
     is_deuce: int
     is_tiebreak: int
+    source_snapshot_id: str | None = None
 
     @property
     def replay_point_id(self) -> str:
@@ -85,6 +88,23 @@ def bool_int(value: Any) -> int:
     return 1 if str(value or "").strip().lower() in {"1", "true", "yes"} else 0
 
 
+def side_from_sofascore(code: Any) -> str | None:
+    value = to_int(code)
+    if value == 1:
+        return "home"
+    if value == 2:
+        return "away"
+    return None
+
+
+def legacy_source_pk(values: dict[str, Any]) -> str:
+    return compact_json(values)
+
+
+def legacy_row_id(source_table: str, source_pk: str) -> str:
+    return stable_id("tennis", source_table, source_pk, length=64)
+
+
 def point_score(payload: dict[str, Any]) -> str | None:
     raw = payload.get("raw_text") or payload.get("raw")
     if raw:
@@ -115,6 +135,251 @@ def is_tiebreak_score(payload: dict[str, Any]) -> int:
         except (TypeError, ValueError):
             pass
     return 1 if values and max(values) >= 6 else 0
+
+
+def payload_players(payload: dict[str, Any], provider: str) -> tuple[str | None, str | None]:
+    if provider == "sofascore":
+        event = (((payload.get("payloads") or {}).get("event") or {}).get("body") or {}).get("event") or payload.get("compactEvent") or {}
+        home = event.get("homeTeam") or {}
+        away = event.get("awayTeam") or {}
+        return home.get("name"), away.get("name")
+    players = payload.get("urlPlayerMap") or []
+    home = next((player for player in players if player.get("side") == "home"), players[0] if players else {})
+    away = next((player for player in players if player.get("side") == "away"), players[1] if len(players) > 1 else {})
+    return home.get("name"), away.get("name")
+
+
+def name_for_side(home_name: str | None, away_name: str | None, side: Any) -> str | None:
+    text = str(side or "").lower()
+    if text in {"home", "1", "left"}:
+        return home_name
+    if text in {"away", "2", "right"}:
+        return away_name
+    return None
+
+
+def parse_sofascore_raw_payload(
+    payload: dict[str, Any],
+    resolver: TennisIdentityResolver,
+    *,
+    source_snapshot_id: str | None = None,
+    local_path: str | None = None,
+) -> tuple[list[ParsedReplayGame], list[ParsedReplayPoint], dict[str, int]]:
+    source_name = "sofascore"
+    source_table_game = "tennis_sofascore_replay_games"
+    source_table_point = "tennis_sofascore_replay_points"
+    event_id = str(payload.get("eventId") or "")
+    match_id = payload.get("boardMatchId") or payload.get("board_match_id")
+    home_name, away_name = payload_players(payload, source_name)
+    counts = {"source_game_rows": 0, "source_point_rows": 0, "parsed_games": 0, "parsed_points": 0, "unparsed_games": 0, "unparsed_points": 0}
+    games: list[ParsedReplayGame] = []
+    points: list[ParsedReplayPoint] = []
+
+    if not event_id or not match_id:
+        resolver.insert_unresolved(
+            "tennis_replay_match",
+            source_name,
+            event_id or local_path,
+            payload.get("boardTitle") or local_path or "unknown",
+            {"local_path": local_path, "payload": payload},
+            "SofaScore raw replay payload missing eventId or boardMatchId.",
+        )
+        counts["unparsed_games"] += 1
+        return games, points, counts
+
+    point_by_point = (((payload.get("payloads") or {}).get("pointByPoint") or {}).get("body") or {}).get("pointByPoint") or []
+    for set_index, set_payload in enumerate(point_by_point):
+        set_number = to_int(set_payload.get("set"))
+        if set_number is None:
+            continue
+        for game_index, game_payload in enumerate(set_payload.get("games") or []):
+            game_number = to_int(game_payload.get("game"))
+            if game_number is None:
+                continue
+            counts["source_game_rows"] += 1
+            score = game_payload.get("score") or {}
+            serving_side = side_from_sofascore(score.get("serving"))
+            scoring_side = side_from_sofascore(score.get("scoring"))
+            server_name = name_for_side(home_name, away_name, serving_side)
+            winner_name = name_for_side(home_name, away_name, scoring_side)
+            server_id = resolver.player_id_for_match(match_id, source_name, server_name, serving_side) if server_name else None
+            winner_id = resolver.player_id_for_match(match_id, source_name, winner_name, scoring_side) if winner_name else None
+            if not server_id and server_name:
+                resolver.insert_unresolved(
+                    "tennis_replay_player",
+                    source_name,
+                    event_id,
+                    server_name,
+                    {"local_path": local_path, "match_id": match_id, "side": serving_side, "role": "server"},
+                    "Could not confidently map SofaScore replay server.",
+                )
+            source_pk = legacy_source_pk({"game_number": game_number, "set_number": set_number, "sofascore_event_id": event_id})
+            row_id = legacy_row_id(source_table_game, source_pk)
+            games.append(
+                ParsedReplayGame(
+                    source_table=source_table_game,
+                    legacy_row_id=row_id,
+                    source_name=source_name,
+                    match_id=str(match_id),
+                    set_number=set_number,
+                    game_number=game_number,
+                    server_player_id=server_id,
+                    winner_player_id=winner_id,
+                    break_point_count=None,
+                    deuce_count=sum(
+                        is_deuce_score(
+                            {
+                                "home_point": point.get("homePoint"),
+                                "away_point": point.get("awayPoint"),
+                            }
+                        )
+                        for point in game_payload.get("points") or []
+                    ),
+                    score_before=None,
+                    score_after=f"{score.get('homeScore', 0)}:{score.get('awayScore', 0)}",
+                    source_snapshot_id=source_snapshot_id,
+                )
+            )
+            for point_index, point_payload in enumerate(game_payload.get("points") or []):
+                counts["source_point_rows"] += 1
+                point_source_pk = legacy_source_pk(
+                    {
+                        "game_number": game_number,
+                        "point_index": point_index,
+                        "set_number": set_number,
+                        "sofascore_event_id": event_id,
+                    }
+                )
+                point_row_id = legacy_row_id(source_table_point, point_source_pk)
+                replay_game_id = stable_id("replay-game", source_name, str(match_id), set_number, game_number)
+                point_payload_for_flags = {
+                    "home_point": point_payload.get("homePoint"),
+                    "away_point": point_payload.get("awayPoint"),
+                }
+                points.append(
+                    ParsedReplayPoint(
+                        source_table=source_table_point,
+                        legacy_row_id=point_row_id,
+                        source_name=source_name,
+                        replay_game_id=replay_game_id,
+                        point_number=point_index,
+                        server_player_id=server_id,
+                        point_winner_player_id=None,
+                        point_score=point_score(point_payload_for_flags),
+                        is_break_point=0,
+                        is_deuce=is_deuce_score(point_payload_for_flags),
+                        is_tiebreak=is_tiebreak_score(point_payload_for_flags),
+                        source_snapshot_id=source_snapshot_id,
+                    )
+                )
+    counts["parsed_games"] = len(games)
+    counts["parsed_points"] = len(points)
+    return games, points, counts
+
+
+def parse_livesport_raw_payload(
+    payload: dict[str, Any],
+    resolver: TennisIdentityResolver,
+    *,
+    source_snapshot_id: str | None = None,
+    local_path: str | None = None,
+) -> tuple[list[ParsedReplayGame], list[ParsedReplayPoint], dict[str, int]]:
+    source_name = "livesport"
+    source_table_game = "tennis_livesport_replay_games"
+    source_table_point = "tennis_livesport_replay_points"
+    livesport_match_id = str(payload.get("matchId") or "")
+    match_id = payload.get("boardMatchId") or payload.get("board_match_id")
+    home_name, away_name = payload_players(payload, source_name)
+    counts = {"source_game_rows": 0, "source_point_rows": 0, "parsed_games": 0, "parsed_points": 0, "unparsed_games": 0, "unparsed_points": 0}
+    games: list[ParsedReplayGame] = []
+    points: list[ParsedReplayPoint] = []
+
+    if not livesport_match_id or not match_id:
+        resolver.insert_unresolved(
+            "tennis_replay_match",
+            source_name,
+            livesport_match_id or local_path,
+            payload.get("boardTitle") or local_path or "unknown",
+            {"local_path": local_path, "payload": payload},
+            "Livesport raw replay payload missing matchId or boardMatchId.",
+        )
+        counts["unparsed_games"] += 1
+        return games, points, counts
+
+    for set_payload in payload.get("sets") or []:
+        set_number = to_int(set_payload.get("setNumber"))
+        if set_number is None:
+            continue
+        for game_payload in set_payload.get("games") or []:
+            game_number = to_int(game_payload.get("gameNumber"))
+            if game_number is None:
+                continue
+            counts["source_game_rows"] += 1
+            serving_side = game_payload.get("servingSide")
+            scoring_side = game_payload.get("scoringSide")
+            server_name = game_payload.get("servingPlayer") or name_for_side(home_name, away_name, serving_side)
+            winner_name = game_payload.get("scoringPlayer") or name_for_side(home_name, away_name, scoring_side)
+            server_id = resolver.player_id_for_match(match_id, source_name, server_name, serving_side) if server_name else None
+            winner_id = resolver.player_id_for_match(match_id, source_name, winner_name, scoring_side) if winner_name else None
+            source_pk = legacy_source_pk({"game_number": game_number, "livesport_match_id": livesport_match_id, "set_number": set_number})
+            row_id = legacy_row_id(source_table_game, source_pk)
+            games.append(
+                ParsedReplayGame(
+                    source_table=source_table_game,
+                    legacy_row_id=row_id,
+                    source_name=source_name,
+                    match_id=str(match_id),
+                    set_number=set_number,
+                    game_number=game_number,
+                    server_player_id=server_id,
+                    winner_player_id=winner_id,
+                    break_point_count=to_int(game_payload.get("breakPointCount")),
+                    deuce_count=to_int(game_payload.get("deuceCount")),
+                    score_before=None,
+                    score_after=f"{game_payload.get('homeGamesAfter', 0)}:{game_payload.get('awayGamesAfter', 0)}",
+                    source_snapshot_id=source_snapshot_id,
+                )
+            )
+            for point_payload in game_payload.get("points") or []:
+                point_index = to_int(point_payload.get("pointIndex"))
+                if point_index is None:
+                    continue
+                counts["source_point_rows"] += 1
+                point_source_pk = legacy_source_pk(
+                    {
+                        "game_number": game_number,
+                        "livesport_match_id": livesport_match_id,
+                        "point_index": point_index,
+                        "set_number": set_number,
+                    }
+                )
+                point_row_id = legacy_row_id(source_table_point, point_source_pk)
+                replay_game_id = stable_id("replay-game", source_name, str(match_id), set_number, game_number)
+                point_winner_name = point_payload.get("pointWinnerPlayer")
+                point_winner_side = point_payload.get("pointWinnerSide")
+                point_winner_id = resolver.player_id_for_match(match_id, source_name, point_winner_name, point_winner_side) if point_winner_name else None
+                server_name_for_point = point_payload.get("servingPlayer") or server_name
+                server_side_for_point = point_payload.get("servingSide") or serving_side
+                server_id_for_point = resolver.player_id_for_match(match_id, source_name, server_name_for_point, server_side_for_point) if server_name_for_point else server_id
+                points.append(
+                    ParsedReplayPoint(
+                        source_table=source_table_point,
+                        legacy_row_id=point_row_id,
+                        source_name=source_name,
+                        replay_game_id=replay_game_id,
+                        point_number=point_index,
+                        server_player_id=server_id_for_point,
+                        point_winner_player_id=point_winner_id,
+                        point_score=point_score({"home_point": point_payload.get("homePoint"), "away_point": point_payload.get("awayPoint"), "raw": point_payload.get("raw")}),
+                        is_break_point=bool_int(point_payload.get("breakPoint")),
+                        is_deuce=is_deuce_score({"home_point": point_payload.get("homePoint"), "away_point": point_payload.get("awayPoint"), "raw": point_payload.get("raw")}),
+                        is_tiebreak=is_tiebreak_score({"home_point": point_payload.get("homePoint"), "away_point": point_payload.get("awayPoint")}),
+                        source_snapshot_id=source_snapshot_id,
+                    )
+                )
+    counts["parsed_games"] = len(games)
+    counts["parsed_points"] = len(points)
+    return games, points, counts
 
 
 def parse_game_row(
@@ -232,13 +497,14 @@ def insert_replay_games(con: sqlite3.Connection, rows: list[ParsedReplayGame]) -
               replay_game_id, match_id, set_number, game_number, server_player_id,
               winner_player_id, break_point_count, deuce_count, score_before,
               score_after, source_name, source_snapshot_id
-            ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, null)
+            ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             on conflict(replay_game_id) do update set
               server_player_id = excluded.server_player_id,
               winner_player_id = excluded.winner_player_id,
               break_point_count = excluded.break_point_count,
               deuce_count = excluded.deuce_count,
-              score_after = excluded.score_after
+              score_after = excluded.score_after,
+              source_snapshot_id = excluded.source_snapshot_id
             """,
             (
                 row.replay_game_id,
@@ -252,6 +518,7 @@ def insert_replay_games(con: sqlite3.Connection, rows: list[ParsedReplayGame]) -
                 row.score_before,
                 row.score_after,
                 row.source_name,
+                row.source_snapshot_id,
             ),
         )
         count += 1
@@ -267,14 +534,15 @@ def insert_replay_points(con: sqlite3.Connection, rows: list[ParsedReplayPoint])
               replay_point_id, replay_game_id, point_number, server_player_id,
               point_winner_player_id, point_score, is_break_point, is_deuce,
               is_tiebreak, source_name, source_snapshot_id
-            ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, null)
+            ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             on conflict(replay_point_id) do update set
               server_player_id = excluded.server_player_id,
               point_winner_player_id = excluded.point_winner_player_id,
               point_score = excluded.point_score,
               is_break_point = excluded.is_break_point,
               is_deuce = excluded.is_deuce,
-              is_tiebreak = excluded.is_tiebreak
+              is_tiebreak = excluded.is_tiebreak,
+              source_snapshot_id = excluded.source_snapshot_id
             """,
             (
                 row.replay_point_id,
@@ -287,6 +555,7 @@ def insert_replay_points(con: sqlite3.Connection, rows: list[ParsedReplayPoint])
                 row.is_deuce,
                 row.is_tiebreak,
                 row.source_name,
+                row.source_snapshot_id,
             ),
         )
         count += 1
@@ -315,4 +584,3 @@ def normalize_replay(con: sqlite3.Connection, date: str | None = None, dry_run: 
     if dry_run:
         con.rollback()
     return report
-

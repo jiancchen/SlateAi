@@ -47,7 +47,10 @@ Default TTLs are source-level policies:
 | MLB | `mlb_stats_api` | 6h | 24h | Stats API player/game payloads. |
 | MLB | `baseballsavant` | 24h | 72h | Player splits/profile context; slower moving. |
 | MLB | `mlb_odds` | 1h | 6h | Odds and market snapshots; short TTL. |
-| Tennis | `tennis_reference` | 12h | 48h | Flashscore/SofaScore/Livesport/ranking/reference payloads. |
+| Tennis | `tennis_reference` | 12h | 48h | Optional broad receipt registration only; typed family health uses the split source policies below. |
+| Tennis | `tennis_flashscore_stats` | 12h | 48h | Flashscore match-stat payloads for serve, break-pressure, and recent-match stat facts. |
+| Tennis | `tennis_sofascore_replay` | 12h | 48h | SofaScore point-by-point replay payloads for clutch, break-back, and closeout facts. |
+| Tennis | `tennis_livesport_replay` | 12h | 48h | Optional Livesport/Flashscore replay fallback when SofaScore misses. |
 | Tennis | `tennis_odds` | 1h | 6h | Prediction-market and sportsbook odds snapshots. |
 
 Each source policy gets env keys in this shape:
@@ -142,10 +145,13 @@ The first recommended code path is `Phase 9B.1`: tennis Flashscore raw archive -
 Current status:
 
 - `data-migration/scripts/run_source_fetch_contract.mjs` records the source/freshness layer for `tennis_reference`.
-- The June 2 pilot wrote both `success` and `skipped_cache` runs, then validated current status freshness.
+- The June 2 broad-reference pilot wrote both `success` and `skipped_cache` runs, then validated current status freshness. This broad policy is optional because it does not prove typed fact coverage by itself.
 - Phase 9B.1 wired Flashscore raw match-stat files into typed `match_stat_rows` and `service_pressure_snapshots` for June 2 without network access.
 - The Flashscore pilot processed 610 source files, refreshed 141,700 stat rows, refreshed 130 service-pressure rows with BP denominators, and proved rerun idempotency with zero row-count growth.
-- Typed parser write-through from raw receipts into `replay_games`, `replay_points`, rankings, and context remains the next Phase 9B substep.
+- Phase 9B.2 split the tennis replay contract into `tennis_sofascore_replay` and optional `tennis_livesport_replay`, then wired raw replay receipts into typed `replay_games` and `replay_points`.
+- The SofaScore replay pilot processed 8 May 31 source files, refreshed 251 replay-game rows and 1,369 replay-point rows, and proved rerun idempotency with zero row-count growth.
+- The Livesport fallback pilot processed 1 June 1 source file, refreshed 41 replay-game rows and 213 replay-point rows, including 25 explicit break-point flags.
+- Typed parser write-through from raw receipts into rankings, context, and odds remains the next Phase 9B/9C substep.
 - Existing tennis normalization modules still primarily parse `legacy_table_rows`; do not mark the active ingestion rewrite complete until raw source receipts can feed typed tables directly or through a clearly declared intermediate.
 
 ### Phase 9C: Tennis Odds
@@ -190,7 +196,7 @@ Current status:
 ## Open Technical Debt
 
 - Existing active fetch scripts still need DB-first wrappers.
-- Tennis raw SofaScore/Flashscore fetch into typed tables is not fully wired.
+- Tennis raw Flashscore stats plus SofaScore/Livesport replay now feed typed tables; rankings, context, and odds still need raw-to-typed active adapters.
 - Existing prediction scripts still need preflight gates.
 - Prediction scripts are not fully reading only DB inputs.
 - Existing generated web/public JSON remains active output until promotion.

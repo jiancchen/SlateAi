@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-06-02T20:25:50.338Z",
+  "script": "data-migration/scripts/validate_source_fetch_contract.mjs",
+  "result": {
+    "sport": "tennis",
+    "source_name": "tennis_reference",
+    "source_date": "2026-06-02",
+    "db_path": "data-private/warehouse/sports/tennis/sql-tennis.db",
+    "policy": {
+      "source_fetch_policy_id": "tennis:tennis_reference",
+      "sport": "tennis",
+      "source_name": "tennis_reference",
+      "source_family": "match-reference",
+      "run_rule": "fetch_if_stale",
+      "default_ttl_hours": 12,
+      "max_stale_hours": 48,
+      "required_for_prediction": 0,
+      "env_ttl_key": "TENNIS_TENNIS_REFERENCE_TTL_HOURS",
+      "env_force_key": "TENNIS_TENNIS_REFERENCE_FORCE_FETCH",
+      "env_disable_key": "TENNIS_TENNIS_REFERENCE_DISABLE_FETCH",
+      "config_path": "data-migration/post_migration_ingestion_rewrite_run_plan.md",
+      "created_at": "2026-06-02T19:25:48.673Z",
+      "updated_at": "2026-06-02T20:25:06.115Z",
+      "notes": "Broad tennis reference receipt registration. Typed source-family health must use the split Flashscore/SofaScore/Livesport/odds policies."
+    },
+    "status": {
+      "source_fetch_status_id": "tennis:tennis_reference:2026-06-02",
+      "sport": "tennis",
+      "source_name": "tennis_reference",
+      "source_family": "match-reference",
+      "source_date": "2026-06-02",
+      "last_fetch_run_id": "source-fetch-tennis_reference-2026-06-02-2026-06-02T20-25-40-627Z",
+      "last_attempt_at": "2026-06-02T20:25:40.660Z",
+      "last_success_at": "2026-06-02T20:25:40.660Z",
+      "last_status": "success",
+      "last_completeness_status": "unknown",
+      "cache_valid_until": "2026-06-03T08:25:40.660Z",
+      "expected_item_count": null,
+      "actual_item_count": 10,
+      "missing_item_count": null,
+      "unresolved_count": null,
+      "updated_at": "2026-06-02T20:25:40.660Z",
+      "notes": "{\"cache_status\":\"stale\",\"run_reason\":\"force_refresh\",\"parser_module\":\"pipeline/sources/tennis/{flashscore,sofascore,livesport,rankings}/parse.mjs\",\"source_family\":\"match-reference\",\"typed_parser_wired\":false}"
+    },
+    "run_counts": [
+      {
+        "status": "skipped_cache",
+        "row_count": 1
+      },
+      {
+        "status": "success",
+        "row_count": 4
+      }
+    ],
+    "stale": false,
+    "ok": true,
+    "errors": []
+  },
+  "ok": true
+}

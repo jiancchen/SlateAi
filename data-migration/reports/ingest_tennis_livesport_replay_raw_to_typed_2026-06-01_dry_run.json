@@ -1,0 +1,41 @@
+{
+  "after_counts": {
+    "replay_games": 7174,
+    "replay_points": 38959,
+    "unresolved_entities": 438
+  },
+  "before_counts": {
+    "replay_games": 7174,
+    "replay_points": 38959,
+    "unresolved_entities": 438
+  },
+  "date": "2026-06-01",
+  "dry_run": true,
+  "generated_at": "2026-06-02T20:18:27.241713+00:00",
+  "inserted_replay_games": 0,
+  "inserted_replay_points": 0,
+  "ok": true,
+  "parsed_games": 41,
+  "parsed_points": 213,
+  "parser_module": "pipeline/sources/tennis/normalization/replay.py",
+  "provider": "livesport",
+  "row_count_delta": {
+    "replay_games": 0,
+    "replay_points": 0,
+    "unresolved_entities": 0
+  },
+  "sample_source_snapshots": [
+    "tennis-c99e2589d048bc810ad301bb601a0516"
+  ],
+  "script": "data-migration/scripts/ingest_tennis_replay_raw_to_typed.py",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "source_dir": "data-private/reference/tennis/livesport-point-by-point",
+  "source_files": 1,
+  "source_game_rows": 41,
+  "source_name": "tennis_livesport_replay",
+  "source_point_rows": 213,
+  "source_snapshot_rows": 1,
+  "unparsed_games": 0,
+  "unparsed_points": 0,
+  "unresolved_rows_added": 0
+}

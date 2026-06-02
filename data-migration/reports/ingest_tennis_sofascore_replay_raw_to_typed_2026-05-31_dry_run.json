@@ -1,0 +1,48 @@
+{
+  "after_counts": {
+    "replay_games": 7174,
+    "replay_points": 38959,
+    "unresolved_entities": 438
+  },
+  "before_counts": {
+    "replay_games": 7174,
+    "replay_points": 38959,
+    "unresolved_entities": 438
+  },
+  "date": "2026-05-31",
+  "dry_run": true,
+  "generated_at": "2026-06-02T20:18:00.814655+00:00",
+  "inserted_replay_games": 0,
+  "inserted_replay_points": 0,
+  "ok": true,
+  "parsed_games": 251,
+  "parsed_points": 1369,
+  "parser_module": "pipeline/sources/tennis/normalization/replay.py",
+  "provider": "sofascore",
+  "row_count_delta": {
+    "replay_games": 0,
+    "replay_points": 0,
+    "unresolved_entities": 0
+  },
+  "sample_source_snapshots": [
+    "tennis-3e2edecb33459c06d450e8c44e51e10e",
+    "tennis-388a68d3bce969543d5aff2142da49cf",
+    "tennis-659f35ea2b46a7c533c2bf1c88aab421",
+    "tennis-7a481b6d07360816607101a932a52c69",
+    "tennis-f09c9cdfc3028603e70a613bedb37d5a",
+    "tennis-b3cd08768afb5237331745cb3b16c76e",
+    "tennis-8409da1605709cbcccf8897429fe195b",
+    "tennis-9750b6ed9a6c17a00db9654ad23a95a2"
+  ],
+  "script": "data-migration/scripts/ingest_tennis_replay_raw_to_typed.py",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "source_dir": "data-private/reference/tennis/sofascore-match-data",
+  "source_files": 8,
+  "source_game_rows": 251,
+  "source_name": "tennis_sofascore_replay",
+  "source_point_rows": 1369,
+  "source_snapshot_rows": 8,
+  "unparsed_games": 0,
+  "unparsed_points": 0,
+  "unresolved_rows_added": 0
+}

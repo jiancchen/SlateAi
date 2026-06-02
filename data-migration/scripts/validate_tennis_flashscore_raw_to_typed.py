@@ -19,6 +19,10 @@ from pipeline.sources.tennis.normalization.common import (
 )
 
 
+SOURCE_NAME = "tennis_flashscore_stats"
+DB_SOURCE_NAME = "flashscore"
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--date", required=True)
@@ -53,28 +57,28 @@ def validate(args: argparse.Namespace) -> dict:
             select count(*)
             from source_snapshots
             where sport = 'tennis'
-              and source_name = 'tennis_reference'
+              and source_name = ?
               and source_date = ?
               and local_path like '%/flashscore-match-stats/%'
             """,
-            (args.date,),
+            (SOURCE_NAME, args.date),
         )
         match_stat_rows = scalar(
             con,
             """
             select count(*)
             from match_stat_rows
-            where source_name = 'flashscore'
+            where source_name = ?
               and source_snapshot_id in (
                 select source_snapshot_id
                 from source_snapshots
                 where sport = 'tennis'
-                  and source_name = 'tennis_reference'
+                  and source_name = ?
                   and source_date = ?
                   and local_path like '%/flashscore-match-stats/%'
               )
             """,
-            (args.date,),
+            (DB_SOURCE_NAME, SOURCE_NAME, args.date),
         )
         pressure_rows = scalar(
             con,
@@ -82,10 +86,10 @@ def validate(args: argparse.Namespace) -> dict:
             select count(*)
             from service_pressure_snapshots sp
             join matches m on m.match_id = sp.match_id
-            where sp.source_name = 'flashscore'
+            where sp.source_name = ?
               and m.match_date = ?
             """,
-            (args.date,),
+            (DB_SOURCE_NAME, args.date),
         )
         bp_denominator_rows = scalar(
             con,
@@ -93,24 +97,24 @@ def validate(args: argparse.Namespace) -> dict:
             select count(*)
             from service_pressure_snapshots sp
             join matches m on m.match_id = sp.match_id
-            where sp.source_name = 'flashscore'
+            where sp.source_name = ?
               and m.match_date = ?
               and (
                 bp_saved_attempts is not null
                 or bp_converted_attempts is not null
               )
             """,
-            (args.date,),
+            (DB_SOURCE_NAME, args.date),
         )
         status = con.execute(
             """
             select *
             from source_fetch_status
             where sport = 'tennis'
-              and source_name = 'tennis_reference'
+              and source_name = ?
               and source_date = ?
             """,
-            (args.date,),
+            (SOURCE_NAME, args.date),
         ).fetchone()
         health = con.execute(
             """
@@ -139,18 +143,20 @@ def validate(args: argparse.Namespace) -> dict:
             from match_stat_rows ms
             left join matches m on m.match_id = ms.match_id
             left join players p on p.player_id = ms.player_id
-            where ms.source_name = 'flashscore'
+            where ms.source_name = ?
               and (m.match_id is null or p.player_id is null)
             """,
+            (DB_SOURCE_NAME,),
         )
         open_unresolved = scalar(
             con,
             """
             select count(*)
             from unresolved_entities
-            where source_name = 'flashscore'
+            where source_name = ?
               and status = 'open'
             """,
+            (DB_SOURCE_NAME,),
         )
 
     errors = []
@@ -163,7 +169,7 @@ def validate(args: argparse.Namespace) -> dict:
     if bp_denominator_rows <= 0:
         errors.append("No BP saved/converted denominator rows for dated matches.")
     if status is None:
-        errors.append("Missing source_fetch_status for tennis_reference date.")
+        errors.append(f"Missing source_fetch_status for {SOURCE_NAME} date.")
     elif status["last_status"] not in {"success", "partial", "skipped_cache"}:
         errors.append(f"Blocking source_fetch_status: {status['last_status']}")
     if health is None:

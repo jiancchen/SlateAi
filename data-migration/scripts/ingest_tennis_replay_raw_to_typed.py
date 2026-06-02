@@ -21,42 +21,54 @@ from pipeline.sources.tennis.normalization.common import (
     utc_now,
     write_report,
 )
-from pipeline.sources.tennis.normalization.stats import (
-    build_service_pressure,
-    insert_match_stat_rows,
-    insert_service_pressure,
-    parse_flashscore_raw_payload,
+from pipeline.sources.tennis.normalization.replay import (
+    insert_replay_games,
+    insert_replay_points,
+    parse_livesport_raw_payload,
+    parse_sofascore_raw_payload,
 )
 
 
-SOURCE_NAME = "tennis_flashscore_stats"
-SOURCE_FAMILY = "match-stats"
-DB_SOURCE_NAME = "flashscore"
+PROVIDERS = {
+    "sofascore": {
+        "source_name": "tennis_sofascore_replay",
+        "source_family": "replay",
+        "source_dir": ROOT / "data-private" / "reference" / "tennis" / "sofascore-match-data",
+        "db_source_name": "sofascore",
+        "parser": parse_sofascore_raw_payload,
+    },
+    "livesport": {
+        "source_name": "tennis_livesport_replay",
+        "source_family": "replay",
+        "source_dir": ROOT / "data-private" / "reference" / "tennis" / "livesport-point-by-point",
+        "db_source_name": "livesport",
+        "parser": parse_livesport_raw_payload,
+    },
+}
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--date", required=True)
+    parser.add_argument("--provider", choices=sorted(PROVIDERS), required=True)
     parser.add_argument(
         "--source-db",
         type=Path,
         default=ROOT / "data-private" / "warehouse" / "sports" / "tennis" / "sql-tennis.db",
     )
-    parser.add_argument(
-        "--source-dir",
-        type=Path,
-        default=ROOT / "data-private" / "reference" / "tennis" / "flashscore-match-stats",
-    )
+    parser.add_argument("--source-dir", type=Path)
     parser.add_argument(
         "--report",
         type=Path,
-        default=ROOT / "data-migration" / "reports" / "ingest_tennis_flashscore_raw_to_typed_2026-06-02.json",
+        default=ROOT / "data-migration" / "reports" / "ingest_tennis_replay_raw_to_typed_2026-06-02.json",
     )
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
     if not args.source_db.is_absolute():
         args.source_db = ROOT / args.source_db
-    if not args.source_dir.is_absolute():
+    if args.source_dir is None:
+        args.source_dir = PROVIDERS[args.provider]["source_dir"]
+    elif not args.source_dir.is_absolute():
         args.source_dir = ROOT / args.source_dir
     if not args.report.is_absolute():
         args.report = ROOT / args.report
@@ -75,26 +87,34 @@ def sha256_file(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def source_snapshot_id_for(local_path: str) -> str:
-    return f"tennis-{stable_id(SOURCE_NAME, local_path, length=32)}"
-
-
 def sql_path(path: Path) -> str:
     return str(path.relative_to(ROOT))
 
 
-def ensure_source_snapshot(con: sqlite3.Connection, file_path: Path, payload: dict[str, Any], date: str) -> str:
+def source_snapshot_id_for(source_name: str, local_path: str) -> str:
+    return f"tennis-{stable_id(source_name, local_path, length=32)}"
+
+
+def payload_files(source_dir: Path, date: str) -> list[tuple[Path, dict[str, Any]]]:
+    files = []
+    for file_path in sorted(source_dir.glob("*.json")):
+        payload = read_json(file_path)
+        if payload.get("slateDate") == date:
+            files.append((file_path, payload))
+    return files
+
+
+def ensure_source_snapshot(con: sqlite3.Connection, provider: dict[str, Any], file_path: Path, payload: dict[str, Any], date: str) -> str:
     local_path = sql_path(file_path)
-    snapshot_id = source_snapshot_id_for(local_path)
-    captured_at = payload.get("generatedAt") or utc_now()
-    content_hash = sha256_file(file_path)
+    source_name = provider["source_name"]
+    snapshot_id = source_snapshot_id_for(source_name, local_path)
     notes = {
-        "root": "data-private/reference/tennis",
-        "parser_module": "pipeline/sources/tennis/normalization/stats.py",
+        "root": sql_path(provider["source_dir"]),
+        "parser_module": "pipeline/sources/tennis/normalization/replay.py",
         "active_raw_to_typed_adapter": True,
+        "provider": provider["db_source_name"],
         "requested_date": date,
-        "source_kind": payload.get("sourceKind"),
-        "source_subkind": payload.get("sourceSubkind"),
+        "event_id": payload.get("eventId"),
         "match_id": payload.get("matchId"),
         "board_match_id": payload.get("boardMatchId"),
         "board_title": payload.get("boardTitle"),
@@ -117,48 +137,44 @@ def ensure_source_snapshot(con: sqlite3.Connection, file_path: Path, payload: di
         """,
         (
             snapshot_id,
-            SOURCE_NAME,
+            source_name,
             payload.get("sourceUrl"),
             local_path,
-            captured_at,
+            payload.get("capturedAt") or utc_now(),
             payload.get("slateDate") or date,
-            content_hash,
+            sha256_file(file_path),
             compact_json(notes),
         ),
     )
     return snapshot_id
 
 
-def payload_files(source_dir: Path, date: str) -> list[tuple[Path, dict[str, Any]]]:
-    files = []
-    for file_path in sorted(source_dir.glob("*.json")):
-        payload = read_json(file_path)
-        if payload.get("slateDate") == date:
-            files.append((file_path, payload))
-    return files
-
-
 def update_fetch_status(
     con: sqlite3.Connection,
     *,
+    provider: dict[str, Any],
     date: str,
     source_files: int,
-    parsed_rows: int,
+    parsed_games: int,
+    parsed_points: int,
     unresolved_added: int,
     report_path: Path,
     dry_run: bool,
 ) -> None:
     now = utc_now()
-    status = "success" if source_files > 0 and parsed_rows > 0 else "missing"
-    run_id = f"source-fetch-{SOURCE_NAME}-{date}-{now.replace(':', '-').replace('.', '-')}"
+    source_name = provider["source_name"]
+    status = "success" if source_files > 0 and (parsed_games > 0 or parsed_points > 0) else "missing"
+    run_id = f"source-fetch-{source_name}-{date}-{now.replace(':', '-').replace('.', '-')}"
     details = {
-        "adapter": "tennis_flashscore_raw_to_typed",
+        "adapter": "tennis_replay_raw_to_typed",
+        "provider": provider["db_source_name"],
         "dry_run": dry_run,
         "source_files": source_files,
-        "parsed_rows": parsed_rows,
+        "parsed_games": parsed_games,
+        "parsed_points": parsed_points,
         "unresolved_added": unresolved_added,
         "report_path": sql_path(report_path),
-        "note": "Typed parse run for Flashscore raw archive. This does not perform network fetch.",
+        "note": "Typed parse run for tennis replay raw archive. This does not perform network fetch.",
     }
     con.execute(
         """
@@ -175,10 +191,10 @@ def update_fetch_status(
         """,
         (
             run_id,
-            SOURCE_NAME,
-            SOURCE_FAMILY,
+            source_name,
+            provider["source_family"],
             date,
-            SOURCE_NAME,
+            source_name,
             date,
             status,
             source_files,
@@ -210,9 +226,9 @@ def update_fetch_status(
           notes = excluded.notes
         """,
         (
-            f"tennis:{SOURCE_NAME}:{date}",
-            SOURCE_NAME,
-            SOURCE_FAMILY,
+            f"tennis:{source_name}:{date}",
+            source_name,
+            provider["source_family"],
             date,
             run_id,
             now,
@@ -227,8 +243,9 @@ def update_fetch_status(
     )
 
 
-def insert_health_check(con: sqlite3.Connection, *, date: str, status: str, report: dict[str, Any]) -> None:
+def insert_health_check(con: sqlite3.Connection, *, provider: dict[str, Any], date: str, status: str, report: dict[str, Any]) -> None:
     now = utc_now()
+    health_id = f"tennis-{provider['db_source_name']}-replay-raw-to-typed:{date}"
     con.execute(
         """
         insert into health_checks (
@@ -243,11 +260,11 @@ def insert_health_check(con: sqlite3.Connection, *, date: str, status: str, repo
           checked_at = excluded.checked_at
         """,
         (
-            f"tennis-flashscore-raw-to-typed:{date}",
-            f"tennis_flashscore_raw_to_typed:{date}",
+            health_id,
+            f"tennis_{provider['db_source_name']}_replay_raw_to_typed:{date}",
             status,
             report["source_files"],
-            report["inserted_match_stat_rows"],
+            report["inserted_replay_points"],
             compact_json(report),
             now,
         ),
@@ -255,6 +272,8 @@ def insert_health_check(con: sqlite3.Connection, *, date: str, status: str, repo
 
 
 def ingest(args: argparse.Namespace) -> dict[str, Any]:
+    provider = dict(PROVIDERS[args.provider])
+    provider["source_dir"] = args.source_dir
     files = payload_files(args.source_dir, args.date)
     with sqlite3.connect(args.source_db) as con:
         con.row_factory = sqlite3.Row
@@ -262,102 +281,103 @@ def ingest(args: argparse.Namespace) -> dict[str, Any]:
         con.execute("begin")
         resolver = TennisIdentityResolver(con)
         before_unresolved = con.execute("select count(*) from unresolved_entities").fetchone()[0]
-        before_match_stats = con.execute("select count(*) from match_stat_rows").fetchone()[0]
-        before_pressure = con.execute("select count(*) from service_pressure_snapshots").fetchone()[0]
-
-        parsed_rows = []
+        before_games = con.execute("select count(*) from replay_games").fetchone()[0]
+        before_points = con.execute("select count(*) from replay_points").fetchone()[0]
+        parsed_games = []
+        parsed_points = []
         counts = {
-            "source_rows": 0,
-            "parsed_rows": 0,
-            "unparsed_rows": 0,
-            "skipped_rows": 0,
+            "source_game_rows": 0,
+            "source_point_rows": 0,
+            "parsed_games": 0,
+            "parsed_points": 0,
+            "unparsed_games": 0,
+            "unparsed_points": 0,
         }
         source_snapshots = []
         for file_path, payload in files:
-            snapshot_id = ensure_source_snapshot(con, file_path, payload, args.date)
+            snapshot_id = ensure_source_snapshot(con, provider, file_path, payload, args.date)
             source_snapshots.append(snapshot_id)
-            rows, row_counts = parse_flashscore_raw_payload(
+            games, points, row_counts = provider["parser"](
                 payload,
                 resolver,
                 source_snapshot_id=snapshot_id,
                 local_path=sql_path(file_path),
             )
-            parsed_rows.extend(rows)
+            parsed_games.extend(games)
+            parsed_points.extend(points)
             for key in counts:
                 counts[key] += row_counts.get(key, 0)
-
-        pressure = build_service_pressure(parsed_rows)
-        inserted_match_stat_rows = 0
-        inserted_service_pressure_rows = 0
+        inserted_games = 0
+        inserted_points = 0
         if not args.dry_run:
-            inserted_match_stat_rows = insert_match_stat_rows(con, parsed_rows)
-            inserted_service_pressure_rows = insert_service_pressure(con, pressure)
-
+            inserted_games = insert_replay_games(con, parsed_games)
+            inserted_points = insert_replay_points(con, parsed_points)
         after_unresolved = con.execute("select count(*) from unresolved_entities").fetchone()[0]
-        after_match_stats = con.execute("select count(*) from match_stat_rows").fetchone()[0]
-        after_pressure = con.execute("select count(*) from service_pressure_snapshots").fetchone()[0]
+        after_games = con.execute("select count(*) from replay_games").fetchone()[0]
+        after_points = con.execute("select count(*) from replay_points").fetchone()[0]
         unresolved_added = after_unresolved - before_unresolved
-
         report = {
             "generated_at": utc_now(),
-            "script": "data-migration/scripts/ingest_tennis_flashscore_raw_to_typed.py",
-            "parser_module": "pipeline/sources/tennis/normalization/stats.py",
+            "script": "data-migration/scripts/ingest_tennis_replay_raw_to_typed.py",
+            "parser_module": "pipeline/sources/tennis/normalization/replay.py",
             "source_db": sql_path(args.source_db),
             "source_dir": sql_path(args.source_dir),
             "date": args.date,
+            "provider": args.provider,
+            "source_name": provider["source_name"],
             "dry_run": args.dry_run,
             "source_files": len(files),
             "source_snapshot_rows": len(source_snapshots),
             **counts,
-            "service_pressure_rows": len(pressure),
-            "inserted_match_stat_rows": inserted_match_stat_rows,
-            "inserted_service_pressure_rows": inserted_service_pressure_rows,
+            "inserted_replay_games": inserted_games,
+            "inserted_replay_points": inserted_points,
             "unresolved_rows_added": unresolved_added,
             "before_counts": {
-                "match_stat_rows": before_match_stats,
-                "service_pressure_snapshots": before_pressure,
+                "replay_games": before_games,
+                "replay_points": before_points,
                 "unresolved_entities": before_unresolved,
             },
             "after_counts": {
-                "match_stat_rows": after_match_stats,
-                "service_pressure_snapshots": after_pressure,
+                "replay_games": after_games,
+                "replay_points": after_points,
                 "unresolved_entities": after_unresolved,
             },
             "row_count_delta": {
-                "match_stat_rows": after_match_stats - before_match_stats,
-                "service_pressure_snapshots": after_pressure - before_pressure,
+                "replay_games": after_games - before_games,
+                "replay_points": after_points - before_points,
                 "unresolved_entities": unresolved_added,
             },
             "sample_source_snapshots": source_snapshots[:8],
-            "ok": len(files) > 0 and len(parsed_rows) > 0,
+            "ok": len(files) > 0 and (len(parsed_games) > 0 or len(parsed_points) > 0),
         }
         health_status = "ok" if report["ok"] else "blocked"
-
         if args.dry_run:
             con.rollback()
         else:
             update_fetch_status(
                 con,
+                provider=provider,
                 date=args.date,
                 source_files=len(files),
-                parsed_rows=len(parsed_rows),
+                parsed_games=len(parsed_games),
+                parsed_points=len(parsed_points),
                 unresolved_added=unresolved_added,
                 report_path=args.report,
                 dry_run=args.dry_run,
             )
-            insert_health_check(con, date=args.date, status=health_status, report=report)
+            insert_health_check(con, provider=provider, date=args.date, status=health_status, report=report)
             con.commit()
             append_normalization_event(
                 ROOT,
                 {
-                    "event_id": f"phase9b-tennis-flashscore-raw-to-typed-{args.date}-{utc_now().replace(':', '-').replace('.', '-')}",
+                    "event_id": f"phase9b-tennis-{args.provider}-replay-raw-to-typed-{args.date}-{utc_now().replace(':', '-').replace('.', '-')}",
                     "timestamp": utc_now(),
-                    "phase": "9B.1",
-                    "area": "tennis_flashscore_raw_to_typed",
-                    "source": "data-private/reference/tennis/flashscore-match-stats",
-                    "target": "sql-tennis.db:match_stat_rows,service_pressure_snapshots,source_fetch_status",
-                    "parser_module": "pipeline/sources/tennis/normalization/stats.py",
-                    "migration_script": "data-migration/scripts/ingest_tennis_flashscore_raw_to_typed.py",
+                    "phase": "9B.2",
+                    "area": f"tennis_{args.provider}_replay_raw_to_typed",
+                    "source": sql_path(args.source_dir),
+                    "target": "sql-tennis.db:replay_games,replay_points,source_fetch_status",
+                    "parser_module": "pipeline/sources/tennis/normalization/replay.py",
+                    "migration_script": "data-migration/scripts/ingest_tennis_replay_raw_to_typed.py",
                     "validation": "pending",
                     "status_from": "started",
                     "status_to": "inserted",
@@ -366,9 +386,10 @@ def ingest(args: argparse.Namespace) -> dict[str, Any]:
                     "notes": compact_json(
                         {
                             "source_files": len(files),
-                            "parsed_rows": len(parsed_rows),
-                            "inserted_match_stat_rows": inserted_match_stat_rows,
-                            "inserted_service_pressure_rows": inserted_service_pressure_rows,
+                            "parsed_games": len(parsed_games),
+                            "parsed_points": len(parsed_points),
+                            "inserted_replay_games": inserted_games,
+                            "inserted_replay_points": inserted_points,
                             "unresolved_rows_added": unresolved_added,
                         }
                     ),
