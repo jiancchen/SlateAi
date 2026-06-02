@@ -130,6 +130,32 @@ create table schema_migrations (
 );
 ```
 
+### `migration_runs`
+
+Tracks migration script executions inside the sport DB. This is separate from the markdown ledger and gives us queryable proof of what wrote to the DB.
+
+```sql
+create table migration_runs (
+  migration_run_id text primary key,
+  sport text not null,
+  phase text not null,
+  script_path text not null,
+  source_ref text not null,
+  target_ref text not null,
+  status text not null,
+  dry_run integer not null default 0,
+  row_count_source integer,
+  row_count_inserted integer,
+  row_count_updated integer,
+  row_count_skipped integer,
+  checksum text,
+  report_path text,
+  started_at text not null,
+  finished_at text,
+  notes text
+);
+```
+
 ### `source_snapshots`
 
 Tracks raw/source payloads without forcing every payload into normalized rows immediately.
@@ -147,6 +173,46 @@ create table source_snapshots (
   content_type text,
   status text not null default 'captured',
   notes text
+);
+```
+
+### `entity_aliases`
+
+Stores source-specific names and IDs for canonical entities. This keeps fuzzy matching auditable instead of hiding it in code.
+
+```sql
+create table entity_aliases (
+  entity_alias_id text primary key,
+  entity_type text not null,
+  canonical_entity_id text not null,
+  source_name text not null,
+  source_entity_id text,
+  source_display_name text not null,
+  confidence real,
+  first_seen_at text,
+  last_seen_at text,
+  notes text,
+  unique (entity_type, source_name, source_entity_id, source_display_name)
+);
+```
+
+### `unresolved_entities`
+
+Stores source entities that could not be safely mapped. These rows are work queues, not errors to bury in logs.
+
+```sql
+create table unresolved_entities (
+  unresolved_entity_id text primary key,
+  entity_type text not null,
+  source_name text not null,
+  source_entity_id text,
+  source_display_name text not null,
+  seen_in_source_snapshot_id text,
+  candidate_json text,
+  reason text not null,
+  status text not null default 'open',
+  created_at text not null,
+  resolved_at text
 );
 ```
 
@@ -188,6 +254,27 @@ create table model_artifacts (
 );
 ```
 
+### `export_manifests`
+
+Tracks DB-derived public exports so the site can prove which sport/date/model rows produced a visible board.
+
+```sql
+create table export_manifests (
+  export_manifest_id text primary key,
+  sport text not null,
+  export_type text not null,
+  export_date text,
+  model_id text,
+  source_db_path text not null,
+  source_query_hash text,
+  output_path text not null,
+  output_hash text,
+  row_count integer,
+  created_at text not null,
+  notes text
+);
+```
+
 ### `health_checks`
 
 Stores pipeline health coverage instead of burying it in logs.
@@ -203,6 +290,21 @@ create table health_checks (
   details_json text,
   checked_at text not null
 );
+```
+
+### Required Indexes
+
+Every sport DB should include indexes for normal prediction, search, export, and settlement paths.
+
+```sql
+create index idx_source_snapshots_source_date on source_snapshots (source_name, source_date);
+create index idx_source_snapshots_hash on source_snapshots (content_hash);
+create index idx_model_runs_date_model on model_runs (run_date, model_id, model_version);
+create index idx_model_artifacts_run on model_artifacts (model_run_id);
+create index idx_health_checks_run on health_checks (model_run_id, check_name);
+create index idx_entity_aliases_lookup on entity_aliases (entity_type, source_name, source_display_name);
+create index idx_unresolved_entities_status on unresolved_entities (entity_type, status);
+create index idx_export_manifests_lookup on export_manifests (sport, export_type, export_date, model_id);
 ```
 
 ## MLB Target Schema

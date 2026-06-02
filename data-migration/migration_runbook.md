@@ -21,6 +21,75 @@ Legacy source DB:
 - Every active ledger row must name the migration script, target table/group, validation script/query, and status.
 - Commit after each stable phase checkpoint.
 - Generated JSON and web mirrors are export caches after migration, not source truth.
+- Keep warehouse binaries out of Git. `data-private/warehouse/` is ignored; commit scripts, schemas, reports, and ledgers instead.
+
+## Engineering Guardrails
+
+These rules are specifically here to save time and tokens later.
+
+### Script Contract
+
+Every migration script should support:
+
+- `--sport` when the script can run for more than one sport.
+- `--dry-run` to print planned writes without changing a DB.
+- `--report <path>` to write a compact machine-readable report.
+- `--force` only when rerunning a completed step is intentionally destructive to the target DB.
+- deterministic output ordering so report hashes are stable.
+
+Scripts should be idempotent by default. Running the same backfill twice should not duplicate rows.
+
+### Read/Write Scope
+
+Every script should print:
+
+- source path or source table group
+- target DB
+- target table group
+- rows/files read
+- rows inserted
+- rows updated
+- rows skipped
+- validation report path
+
+No migration script should scan all of `data-private/` unless it is an explicit inventory script.
+
+### Identity And Aliases
+
+Player/team/match identity problems must be captured as data, not hidden in code.
+
+Each sport DB should include alias/unresolved-entity tables so fuzzy matching can be audited later. A row with a fuzzy or unknown match should never silently overwrite a canonical entity.
+
+### Validation Before Promotion
+
+`backfilled` means rows were copied or parsed. It does not mean the new DB is trusted.
+
+`validated` requires row-count or coverage checks.
+
+`promoted` requires the active pipeline or export to read from the new DB.
+
+### Query And Token Budgets
+
+After migration, normal prediction runs should read compact DB reports and scoped DB queries, not thousands of JSON files.
+
+Any script that creates a public/export artifact should write an export manifest that says exactly which sport, date, model, and source DB rows were used.
+
+### Indexes
+
+Schema validation should confirm indexes for the common access paths:
+
+- sport/date/model run lookup
+- game or match lookup
+- player lookup
+- market source/captured time lookup
+- source snapshot hash lookup
+- settlement by prediction row
+
+### Rollback
+
+Before promotion, rollback is simple: delete the new target DB and rebuild it.
+
+After promotion, rollback means switching the read path back to legacy/export and keeping the failed DB for inspection. Do not delete the failed DB until the cause is understood.
 
 ## Normal Migration Loop
 
@@ -28,14 +97,16 @@ For each folder or table group:
 
 1. Mark the ledger row `started`.
 2. Confirm the migration script path and target table/group are named.
-3. Run the migration script.
-4. Mark the row `backfilled`.
-5. Run the validation script/query.
-6. Save the validation report.
-7. Mark the row `validated`.
-8. Run prediction/export parity checks if this source affects site output.
-9. Mark the row `promoted` only after the pipeline reads the new DB source.
-10. Mark the row `archive_ready` only when old source paths are no longer active pipeline inputs.
+3. Run the migration script with `--dry-run`.
+4. Run the migration script in write mode.
+5. Save the migration report.
+6. Mark the row `backfilled`.
+7. Run the validation script/query.
+8. Save the validation report.
+9. Mark the row `validated`.
+10. Run prediction/export parity checks if this source affects site output.
+11. Mark the row `promoted` only after the pipeline reads the new DB source.
+12. Mark the row `archive_ready` only when old source paths are no longer active pipeline inputs.
 
 ## Phase Order
 
@@ -81,6 +152,9 @@ Exit criteria:
 - `mlb.db` exists and opens cleanly.
 - `tennis.db` exists and opens cleanly.
 - `schema_migrations` rows are present.
+- `migration_runs` rows are written for schema creation.
+- alias/unresolved-entity tables exist.
+- required index checks pass.
 - Core tables exist.
 - Ledger Phase 1 rows are `validated`.
 
@@ -247,4 +321,3 @@ Example:
 ```text
 Migration: create empty sport DB schemas
 ```
-
