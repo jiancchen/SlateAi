@@ -29,6 +29,21 @@ Legacy source DB:
 - Generated JSON and web mirrors are export caches after migration, not source truth.
 - Keep warehouse binaries out of Git. `data-private/warehouse/` is ignored; commit scripts, schemas, reports, and ledgers instead.
 
+## Pre-Start Lessons
+
+These are the migration lessons to keep visible before writing Phase 1 scripts:
+
+- Names matter operationally. Use `sql-<sport>.db` for durable SQLite and `duck-<sport>.duckdb` for rebuildable analytics so legacy, durable, and temporary DBs cannot be confused.
+- Old artifacts are inspected, not trusted. A 0-byte or empty DB still gets a ledger row so nobody later wonders whether it was skipped by mistake.
+- Markdown is a dashboard, not the machine ledger. Append to `migration_events.jsonl` for script-readable history.
+- Parsers are product code. Source parsing belongs under `pipeline/sources/...` and migration scripts call it; otherwise we will rebuild ingestion twice.
+- Unknown shapes are quarantined. A parser should report unsupported payloads instead of forcing partial rows or silently dropping data.
+- Dry-run first, then write. Every migration script should be able to show intended writes before touching a DB.
+- Idempotency is mandatory. Rerunning a migration should not duplicate rows or require manual cleanup.
+- Validate before promotion. Backfilled data is not usable pipeline data until row counts, checksums, key joins, and benchmark parity pass.
+- Generated public files are never source truth again. `published-data`, `web/public/data`, and generated modules become exports only.
+- Keep each sport isolated. No cross-sport DB joins or mixed model registries unless there is a future explicit reason.
+
 ## Ledger Files
 
 Use two ledgers with different jobs:
